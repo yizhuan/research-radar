@@ -1,21 +1,21 @@
 # Research Index
 
-Generated: 2026-09-02 15:35
+Generated: 2026-09-03 04:00
 Source: `/home/yizhuan/.research`
 
 ## Ai
 
-- **Daily**: [arxiv-trending-ai-daily-2026-09-01](ai/daily/arxiv-trending-ai-daily-2026-09-01.md) — 2026-09-01
+- **Daily**: [arxiv-trending-ai-daily-2026-09-02](ai/daily/arxiv-trending-ai-daily-2026-09-02.md) — 2026-09-02
 - **Weekly**: [arxiv-trending-ai-weekly-2026-08-26](ai/weekly/arxiv-trending-ai-weekly-2026-08-26.md) — 2026-08-26
 
 ## Github
 
-- **Daily**: [github-trending-summary-daily-2026-09-01](github/daily/github-trending-summary-daily-2026-09-01.md) — 2026-09-01
+- **Daily**: [github-trending-summary-daily-2026-09-03](github/daily/github-trending-summary-daily-2026-09-03.md) — 2026-09-03
 
 ## Math
 
-- **Daily**: [arxiv-trending-math-daily-2026-09-01](math/daily/arxiv-trending-math-daily-2026-09-01.md) — 2026-09-01
+- **Daily**: [arxiv-trending-math-daily-2026-09-02](math/daily/arxiv-trending-math-daily-2026-09-02.md) — 2026-09-02
 
 ## Physics
 
-- **Daily**: [arxiv-trending-physics-daily-2026-09-01](physics/daily/arxiv-trending-physics-daily-2026-09-01.md) — 2026-09-01
+- **Daily**: [arxiv-trending-physics-daily-2026-09-03](physics/daily/arxiv-trending-physics-daily-2026-09-03.md) — 2026-09-03

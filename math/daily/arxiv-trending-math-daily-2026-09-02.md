@@ -1,127 +1,122 @@
-# arXiv Trending Mathematics (inferred) — Daily batch 2026-09-02
+# arXiv Trending Math (inferred) — daily snapshot
 
-Notable recent mathematics on arXiv (latest daily math batch) clusters strongly around geometric analysis/rigidity and around rigorous, high-dimensional PDE/control frameworks.
+Window: daily batch date 2026-09-02 (UTC) — submissions from 2026-09-02 00:00:00Z to 2026-09-03 00:00:00Z
 
-## Top papers
-1. **The circular law for non-Hermitian random band matrices: optimal bandwidth, periodic profile and discrete law**
-   - Link: https://arxiv.org/abs/2609.01295
-   - Authors: Yi Han
-   - arXiv: 2609.01295 (new)
-   - Categories: Probability (math.PR)
-   - What they prove (from abstract): We consider non-Hermitian random band matrices with growing bandwidth and study convergence of their empirical spectral distributions to the circular law. Let $N$ denote the matrix size and $W_N$ the bandwidth.
-   - Setting/assumptions (from abstract scope): Let $N$ denote the matrix size and $W_N$ the bandwidth. From a universality perspective, it is conjectured that the circular law holds whenever $W_N\to\infty$.
-   - Caveat/open-endedness: The work targets a specific conjecture; the abstract does not state broader generalizations beyond the stated setting.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-2. **Localization of Bergman Kernels and the Cheng-Yau Conjecture on Real Analytic Pseudoconvex Domains**
-   - Link: https://arxiv.org/abs/2604.05542
-   - Authors: Chin-Yu Hsiao, Xiaojun Huang, Xiaoshan Li
-   - arXiv: 2604.05542 (replace)
-   - Categories: Complex Variables (math.CV) ; Differential Geometry (math.DG)
-   - What they prove (from abstract): In this paper, we establish the localization of Bergman kernels for unbounded pseudoconvex domains near boundary points of finite D'Angelo type. This result was proved by Engliš more than twenty years ago for bounded pseudoconvex domains and had remained as an open question in the unbounded setting.
-   - Setting/assumptions (from abstract scope): This result was proved by Engliš more than twenty years ago for bounded pseudoconvex domains and had remained as an open question in the unbounded setting. Related foundational work was carried out by Fefferman, Kerzman, Boutet de Monvel--Sjöstrand, Boas, Bell, and others.
-   - Caveat/open-endedness: open question in the unbounded setting.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-3. **The lower mean curvature bound in Gromov's mean-of-the-mean-curvature conjecture**
-   - Link: https://arxiv.org/abs/2609.01189
-   - Authors: Christian Baer
-   - arXiv: 2609.01189 (new)
-   - Categories: Differential Geometry (math.DG)
-   - What they prove (from abstract): Gromov conjectured that for a compact Riemannian manifold $X$ with boundary, the total mean curvature $\int_{\partial X} H$ is bounded above by a constant depending only on the intrinsic geometry of $\partial X$ and a lower bound on the scalar curvature of $X$. Previous results towards this conjecture require, in addition, a lower bound on the mean curvature of the boundary.
-   - Setting/assumptions (from abstract scope): Previous results towards this conjecture require, in addition, a lower bound on the mean curvature of the boundary. In the present paper, we investigate whether this extra assumption is necessary.
-   - Caveat/open-endedness: The work targets a specific conjecture; the abstract does not state broader generalizations beyond the stated setting.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-4. **Rigorous Analysis of a Nonlocal Transport--Renewal System for Physiologically Structured Populations**
-   - Link: https://arxiv.org/abs/2609.00735
-   - Authors: Jiguang Yu, Louis Shuo Wang, Ye Liang
-   - arXiv: 2609.00735 (new)
-   - Categories: Analysis of PDEs (math.AP)
-   - What they prove (from abstract): We develop a rigorous analytical framework for a class of physiologically structured population models with two internal state variables, nonlocal ecological feedbacks, dynamic resources, inter-zone transfer, and selective harvesting. The full model is a coupled nonlinear PDE--ODE transport--renewal system with endogenous inflow at the recruitment boundary, a setting in which transport, nonlocal dependence, and boundary renewal interact at the same level.
-   - Setting/assumptions (from abstract scope): The full model is a coupled nonlinear PDE--ODE transport--renewal system with endogenous inflow at the recruitment boundary, a setting in which transport, nonlocal dependence, and boundary renewal interact at the same level. For this full nonautonomous multi-zone system, we prove finite-horizon well-posedness in a positive $L^{1}$-based state space, including global existence on arbitrary bounded time intervals, uniqueness, nonnegativity, and continuous dependence on initial data, environmental forcing, and harvesting effort.
-   - Caveat/open-endedness: The abstract focuses on a particular setting; concrete extensions beyond it are not specified in the abstract.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-5. **Boundary asymptotics for two-dimensional vectorial Allen-Cahn systems**
-   - Link: https://arxiv.org/abs/2609.00739
-   - Authors: Zhiyuan Dai, Haotong Fu, Huaijie Wang, Wei Wang
-   - arXiv: 2609.00739 (new)
-   - Categories: Analysis of PDEs (math.AP) ; Differential Geometry (math.DG)
-   - What they prove (from abstract): We study asymptotic properties of critical points of the two-dimensional vectorial Allen-Cahn energy with finitely many non-degenerate wells, subject to a homogeneous Neumann boundary condition. For any sequence with uniformly bounded energy, we prove that the limiting full and potential measures are supported on a closed countably 1-rectifiable set up to the boundary and satisfy the discrepancy relations.
-   - Setting/assumptions (from abstract scope): For any sequence with uniformly bounded energy, we prove that the limiting full and potential measures are supported on a closed countably 1-rectifiable set up to the boundary and satisfy the discrepancy relations. The potential measure defines a free-boundary stationary rectifiable varifold.
-   - Caveat/open-endedness: The abstract focuses on a particular setting; concrete extensions beyond it are not specified in the abstract.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-6. **Gromov-Hausdorff Stability and Rigidity of manifolds via Heisenberg-Pauli-Weyl Uncertainty Principle**
-   - Link: https://arxiv.org/abs/2609.01463
-   - Authors: Mousomi Bhakta, Debdip Ganguly, Debabrata Karmakar
-   - arXiv: 2609.01463 (new)
-   - Categories: Differential Geometry (math.DG) ; Analysis of PDEs (math.AP)
-   - What they prove (from abstract): The classical Heisenberg Pauli Weyl (HPW) inequality exhibits a strong rigidity phenomenon on Riemannian manifolds i.e. on Cartan Hadamard manifolds and those with non-negative Ricci curvature, the validity of the Euclidean HPW inequality or the existence of extremizers strictly forces the manifold to be isometric to Euclidean space, $\mathbb{R}^n$.
-   - Setting/assumptions (from abstract scope): on Cartan Hadamard manifolds and those with non-negative Ricci curvature, the validity of the Euclidean HPW inequality or the existence of extremizers strictly forces the manifold to be isometric to Euclidean space, $\mathbb{R}^n$. This geometric discrepancy motivates the study of curvature dependent corrections and their associated stability properties.
-   - Caveat/open-endedness: The abstract focuses on a particular setting; concrete extensions beyond it are not specified in the abstract.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-7. **Multiplicative comparisons of R\'enyi entropies for weighted Bernoulli sums**
-   - Link: https://arxiv.org/abs/2609.01529
-   - Authors: Jiange Li
-   - arXiv: 2609.01529 (new)
-   - Categories: Probability (math.PR) ; Information Theory (cs.IT); Combinatorics (math.CO)
-   - What they prove (from abstract): We establish improved multiplicative bounds relating the Rényi entropies of different orders for weighted sums of independent Bernoulli random variables. In particular, we prove a logarithmic bound between the zeroth-order and infinity-order Rényi entropies, which yields a polynomial improvement over the square-root bound of Jain, Sah, and Sawhney.
-   - Setting/assumptions (from abstract scope): In particular, we prove a logarithmic bound between the zeroth-order and infinity-order Rényi entropies, which yields a polynomial improvement over the square-root bound of Jain, Sah, and Sawhney. Additionally, we obtain explicit constant-factor bounds for comparisons among Rényi entropies of nonzero orders.
-   - Caveat/open-endedness: The abstract focuses on a particular setting; concrete extensions beyond it are not specified in the abstract.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-8. **Universal Approximation of Nonlinear Operators and Their Derivatives**
-   - Link: https://arxiv.org/abs/2605.15285
-   - Authors: Filippo de Feo
-   - arXiv: 2605.15285 (replace-cross)
-   - Categories: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Functional Analysis (math.FA); Numerical Analysis (math.NA); Optimization and Control (math.OC)
-   - What they prove (from abstract): Establishing Universal Approximation Theorems (UATs) for nonlinear operators and their derivatives is a foundational open problem in Operator Learning (OL) and raises delicate questions in Nonlinear Functional Analysis. We prove the first UATs for $k$-times differentiable nonlinear operators and their derivatives via OL architectures, uniformly on compact sets and in weighted Bastiani--Sobolev spaces for general finite input measures.
-   - Setting/assumptions (from abstract scope): We prove the first UATs for $k$-times differentiable nonlinear operators and their derivatives via OL architectures, uniformly on compact sets and in weighted Bastiani--Sobolev spaces for general finite input measures. In full Banach-space generality, these are the first complete generalizations of the corresponding influential classical UATs in [Hornik, 1991] to infinite-dimensional spaces and OL, {and launch Derivative-Informed Operator Learning (DIOL) (i.e.
-   - Caveat/open-endedness: The abstract focuses on a particular setting; concrete extensions beyond it are not specified in the abstract.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-9. **Localization of the Caro-Wei bound and its applications to bipartiteness**
-   - Link: https://arxiv.org/abs/2609.00210
-   - Authors: Aida Abiad, Hitesh Kumar, Shivaramakrishna Pragada
-   - arXiv: 2609.00210 (new)
-   - Categories: Combinatorics (math.CO)
-   - What they prove (from abstract): We confirm a conjecture of Brause, Randerath, Rautenbach and Schiermeyer (2016) by proving a localized lower bound on the independence number of a graph that strengthens the classical bounds of Fajtlowicz (1978) and of Caro (1979) and Wei (1981), which in turn settles a conjecture by Bertram and Horák (1996). Our proof is based on a new Motzkin--Straus-type inequality involving local clique numbers and the independence number.
-   - Setting/assumptions (from abstract scope): Our proof is based on a new Motzkin--Straus-type inequality involving local clique numbers and the independence number. We then apply the developed methods to study spectral and algebraic measures of graph bipartiteness.
-   - Caveat/open-endedness: The work targets a specific conjecture; the abstract does not state broader generalizations beyond the stated setting.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-10. **Finite-Horizon Hamilton--Jacobi--Bellman Equations with State-Dependent Diffusion in Spectral Barron Spaces**
-   - Link: https://arxiv.org/abs/2609.00529
-   - Authors: Shaolin Ji, Xianrui Wang
-   - arXiv: 2609.00529 (new)
-   - Categories: Optimization and Control (math.OC)
-   - What they prove (from abstract): We study high-dimensional finite-horizon Hamilton--Jacobi--Bellman equations for controlled diffusions with uniformly elliptic, state-dependent diffusion coefficients. Motivated by the need for a rigorous analytical framework that explains neural-network approximation in high-dimensional stochastic control, we formulate the analysis in the augmented spectral Barron space.
-   - Setting/assumptions (from abstract scope): Motivated by the need for a rigorous analytical framework that explains neural-network approximation in high-dimensional stochastic control, we formulate the analysis in the augmented spectral Barron space. For the variable-coefficient linear equation, we construct a parametrix by freezing the second-order coefficient in the Gaussian multiplier, leading to an exact Green operator and terminal propagator without requiring small spatial variation of the diffusion coefficient.
-   - Caveat/open-endedness: The abstract focuses on a particular setting; concrete extensions beyond it are not specified in the abstract.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-11. **Singular Rotational Self-Similar Tori for Odd $\sigma_k$-Curvature Flows**
-   - Link: https://arxiv.org/abs/2609.01346
-   - Authors: Haoxuan Cheng, Junqi Lai, Guoxin Wei
-   - arXiv: 2609.01346 (new)
-   - Categories: Differential Geometry (math.DG)
-   - What they prove (from abstract): For every pair of integers $3\leq k<n$ with $k$ odd, we construct a compact embedded rotational torus in $\mathbb{R}^{n+1}$ whose homothetic dilations satisfy the unnormalised $\sigma_k$-curvature flow in a Sobolev almost-everywhere sense. Its profile curve has Hölder regularity $C^{1,1/k}$ and Sobolev regularity $W^{2,p}$ for every $1\leq p<k/(k-1)$.
-   - Setting/assumptions (from abstract scope): Its profile curve has Hölder regularity $C^{1,1/k}$ and Sobolev regularity $W^{2,p}$ for every $1\leq p<k/(k-1)$. Away from two singular latitudes the torus is smooth; globally, the flow equation is interpreted using the weak shape operator of the associated Lipschitz boundary.
-   - Caveat/open-endedness: The abstract focuses on a particular setting; concrete extensions beyond it are not specified in the abstract.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
-12. **Removability of non-isolated singularities for Einstein metrics and RCD spaces**
-   - Link: https://arxiv.org/abs/2609.01464
-   - Authors: Gioacchino Antonelli, Gábor Székelyhidi
-   - arXiv: 2609.01464 (new)
-   - Categories: Differential Geometry (math.DG) ; Metric Geometry (math.MG)
-   - What they prove (from abstract): In this paper we establish removable singularities results for Einstein metrics and for metrics with Ricci curvature bounded below. Let $n\geq 2$.
-   - Setting/assumptions (from abstract scope): Let $n\geq 2$. On a closed $n$-manifold, we show that an $L^\infty$-Riemannian metric whose Ricci curvature is bounded below outside a singular set of codimension $> 3- \frac{1}{n-1}$ canonically extends to an $\mathrm{RCD}$ space.
-   - Caveat/open-endedness: The work targets a specific conjecture; the abstract does not state broader generalizations beyond the stated setting.
-   - Momentum/why it’s here: No citation-momentum signal: Semantic Scholar API requests were rate-limited (HTTP 429). Ranking used inferred signals from abstract keyword density and category breadth from arXiv RSS.
+Snapshot time (UTC): 2026-09-03T18:14:29Z
 
-## Trending mathematical themes (from the selected set)
-- Probability / random matrices & information/entropy: 2609.01295, 2609.01529
-- Geometry & curvature (incl. rigidity/singularities): 2604.05542, 2609.01189, 2609.00739, 2609.01463, 2609.01346, 2609.01464
-- Analysis / PDE & boundary asymptotics: 2609.00735, 2609.00739, 2609.01463
-- Combinatorics (graph bounds): 2609.01529, 2609.00210
-- Optimization / HJB & stochastic control: 2605.15285, 2609.00529
-- Operator learning & universal approximation: 2605.15285
+## Headline
+Yesterday’s arXiv math batch (UTC 2026-09-02) highlights probabilistic/data-constrained inversion & optimization, geometric embedding results (JL-type), and nonlinear PDE/integrable-system techniques; many items cross-list into statistics, learning, or mathematical physics. Ordering is inferred (not an official arXiv ‘trending’ chart).
+
+## Top papers (ranked; inferred order)
+
+1. Neural operators approximate strongly continuous convex monotone semigroups  
+   - Link: https://arxiv.org/abs/2609.02727v1
+   - Authors: Jonas Blessing, Philipp Schmocker, Alessandro Sgarabottolo
+   - arXiv: 2609.02727v1 (published 2026-09-02 15:38Z)
+   - Categories: math.NA, cs.LG, math.AP, math.PR, stat.ML
+   - Claimed result (from abstract): We approximate strongly continuous convex monotone semigroups by learning their Chernoff-type one-step operators with neural operators. First, we introduce the general class of so-called Chernoff-neural operators and show in a universal approximation theorem that they can approximate the Chernoff one-step operators arbitrarily well. By using stability estimates between weighted Hölder spaces, the one-step approximation error can be propagated through the iterations which yields universal approximation of the corresponding semigroup.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 5 arXiv categories + cross-listing (stat,cs). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+2. Copula Transformations for Data-Consistent Inversion  
+   - Link: https://arxiv.org/abs/2609.02832v1
+   - Authors: Troy Butler, Tianyi Jiang, João Silva, Harri Hakula +1 more
+   - arXiv: 2609.02832v1 (published 2026-09-02 17:15Z)
+   - Categories: stat.ML, math.OC, math.PR, math.ST
+   - Claimed result (from abstract): Data-consistent inversion (DCI) constructs probability measures whose push-forward distributions agree with observed data, while iterative data-consistent inversion (iDCI) extends this framework to generalized stochastic inverse problems by enforcing multiple push-forward constraints sequentially. Although iDCI avoids the direct approximation of high-dimensional joint densities, its relationship to the original joint DCI solution has remained unclear. In this work, we establish this relationship through copula theory.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 4 arXiv categories + cross-listing (stat). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+3. Exact Limits of Random Projections for Preserving Geometry: Distance Recovery, Nearest-Neighbor Rankings, and Covariance Shape in Gaussian Models  
+   - Link: https://arxiv.org/abs/2609.02155v1
+   - Authors: Piyush Sao
+   - arXiv: 2609.02155v1 (published 2026-09-02 06:12Z)
+   - Categories: cs.LG, cs.IT, math.NA, math.PR, math.ST
+   - Claimed result (from abstract): The Johnson-Lindenstrauss (JL) lemma guarantees that a random projection of $n$ points to   $m=O(\varepsilon^{-2}\log n)$ dimensions preserves pairwise squared distances within relative   error $\varepsilon$ with high probability, and this dimension order is asymptotically   optimal. In high dimensions, however, distances concentrate around a baseline while key   geometric information lies in much smaller fluctuations. We show that the JL bound can   therefore be uninformative about retained geometry: an independent Gaussian replacement map   can satisfy it even though the replacement cloud is independent of the original data.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 5 arXiv categories + cross-listing (cs). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+4. Two Adjoint Perspectives on Fokker-Planck Optimization: A Microscopic-Macroscopic Correspondence  
+   - Link: https://arxiv.org/abs/2609.02072v1
+   - Authors: Kathrin Hellmuth, Qin Li, Yunan Yang
+   - arXiv: 2609.02072v1 (published 2026-09-02 03:55Z)
+   - Categories: math.NA, math.AP, math.OC, math.PR
+   - Claimed result (from abstract): The Fokker-Planck equation admits both a macroscopic Eulerian description through probability densities and a microscopic Lagrangian description through stochastic trajectories. Consequently, optimization problems constrained by the Fokker-Planck equation can be formulated from either perspective. Surprisingly, the corresponding adjoint equations appear to be fundamentally different: the macroscopic adjoint is governed by the backward Kolmogorov equation, whereas the microscopic adjoint evolves pathwise along stochastic trajectories.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 4 arXiv categories + cross-listing (none). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+5. Inverse scattering method for nonlinear negative first order coupled Klein-Gordon equation  
+   - Link: https://arxiv.org/abs/2609.02844v1
+   - Authors: Cihan Sabaz, Ilmar Gahramanov, Mansur I. Ismailov
+   - arXiv: 2609.02844v1 (published 2026-09-02 17:29Z)
+   - Categories: nlin.SI, math-ph, math.AP, math.SP
+   - Claimed result (from abstract): The exact N-soliton solutions are derived for the coupled negative first order Klein-Gordon (CNKG) equation subject to vanishing boundary conditions by using the inverse scattering method via Gelfand-Levitan-Marchenko equation. Based on the zero-curvature representation, the conservation laws, integrals of motion, and Hamiltonian structure of the aforementioned coupled nonlinear equations are constructed. The Jost functions and their analyticity properties for the Manakov spectral problem are recalled.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 4 arXiv categories + cross-listing (math-ph). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+6. A computational approach to maximum likelihood thresholds for colored Gaussian graphical models  
+   - Link: https://arxiv.org/abs/2609.02382v1
+   - Authors: Roser Homs, Olga Kuznetsova, Bernadette J. Stolz
+   - arXiv: 2609.02382v1 (published 2026-09-02 09:57Z)
+   - Categories: stat.ML, cs.LG, math.AG, math.ST
+   - Claimed result (from abstract): Gaussian graphical models (GGMs) are essential tools for interpretable structure learning. However, in high-dimensional, small-sample regimes, the available data is often insufficient for the maximum likelihood estimator to exist. Colored Gaussian graphical models (CGGMs) mitigate this limitation by imposing symmetry constraints through graph coloring, which reduces the required sample size.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 4 arXiv categories + cross-listing (stat,cs). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+7. A simple derivation of the Kalman filter  
+   - Link: https://arxiv.org/abs/2609.02332v1
+   - Authors: Marco Chiani, Giovanni Petris, Moe Z. Win
+   - arXiv: 2609.02332v1 (published 2026-09-02 09:09Z)
+   - Categories: math.OC, eess.SP, eess.SY, math.ST, stat.ME
+   - Claimed result (from abstract): In this lecture note, we present a concise and self-contained derivation of the discrete-time Kalman filter equations that requires only a basic understanding of least squares estimation. The treatment is designed to minimize mathematical overhead while preserving both rigor and generality.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 5 arXiv categories + cross-listing (stat). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+8. Estimating the number of real zeros of linear combinations of radicals of polynomials  
+   - Link: https://arxiv.org/abs/2609.02871v1
+   - Authors: Gal Binyamini, Avner Kiro, Alexander Logunov, Dmitry Novikov +1 more
+   - arXiv: 2609.02871v1 (published 2026-09-02 17:53Z)
+   - Categories: math.CA, math.AG, math.AP
+   - Claimed result (from abstract): We obtain upper bounds for the number of real zeros of functions of the form $$ f(x) = \sum_{k=1}^{n} c_k \bigl(P_k(x)\bigr)^{α_k}, $$ where $c_k, α_k \in \mathbb{R}$ and each $P_k$ is a real polynomial of degree at most $d$ that is non-negative on an interval $I\subset \mathbb{R}$. We improve previously known exponential upper bounds for the number of roots on $I$ to bounds that are polynomial in $n$, linear in $d$, and independent of the exponents $α_k$. For linear combinations of square roots of positive quadratic polynomials on $\mathbb{R}$ we prove the linear bound $2n$, answering a question of N.~Alon.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 3 arXiv categories + cross-listing (none). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+9. Ruelle--Pollicott Theory for Metastable Systems: A Unified Framework for Tipping Transitions  
+   - Link: https://arxiv.org/abs/2609.02614v1
+   - Authors: Mickaël D. Chekroun, Valerio Lucarini
+   - arXiv: 2609.02614v1 (published 2026-09-02 13:53Z)
+   - Categories: math-ph, math.PR, math.SP, physics.ao-ph
+   - Claimed result (from abstract): Tipping points---abrupt, potentially irreversible reorganizations of a system's statistical state---are commonly anticipated through critical slowing down: recovery slows, autocorrelation and variance rise, and spectra redden. This paradigm is powerful near simple equilibrium bifurcations but is not a general theory for stochastic, multistable, or metastable systems. We develop such a theory from the Ruelle--Pollicott (RP) spectrum of Kolmogorov generators of hypoelliptic Itô diffusions.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 4 arXiv categories + cross-listing (math-ph). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+10. Most $(0,1)$-polytopes are not normal  
+   - Link: https://arxiv.org/abs/2609.02778v1
+   - Authors: Santiago Morales
+   - arXiv: 2609.02778v1 (published 2026-09-02 16:14Z)
+   - Categories: math.CO, math.AC, math.AG
+   - Claimed result (from abstract): We prove that the proportion of $0/1$-equivalence classes of $d$-dimensional $(0,1)$-polytopes that are normal tends to zero at least at a double exponential rate as $d\to\infty$. As a consequence, the same holds for any of the following classes given by the type of triangulation possible: (a) quadratic, (b) flag unimodular, (c) regular unimodular, or (d) unimodular, among others. We classify the $0/1$-equivalence classes of $d$-dimensional $(0,1)$-polytopes for $d\leq5$ according to whether they admit a unimodular, flag unimodular, or quadratic triangulation.
+   - Caveat: abstract-based summary; verify assumptions/definitions and theorem strength in the full paper.
+   - Signals used: recency within window + 3 arXiv categories + cross-listing (none). Citation-momentum via Semantic Scholar Graph API unavailable in this run (HTTP 429).
+
+## Trending mathematical themes
+- Probabilistic/data-consistent inversion and measure-constrained optimization: DCI/iDCI-style constructions and induced-measure matching (2609.02832), alongside operator/learning approximation of semigroup dynamics (2609.02727).
+- High-dimensional geometry for algorithms/learning: JL-type random projection results including optimal dimension order (2609.02155).
+- PDE, stochastic processes, and nonlinear physics: Fokker–Planck dual formulations for constrained optimization (2609.02072) and inverse-scattering derivations of solitons for coupled Klein–Gordon systems (2609.02844).
+- Combinatorial/structural phase transitions & sharp extremal statements: asymptotic normality/embedding impossibility statements for (0,1)-polytopes and metastability/statistical transitions framed via Ruelle–Pollicott theory (2609.02778, 2609.02614).
+
+## Research opportunities
+- Stability/regularization: quantify robustness of measure- or constraint-matching inversion schemes (DCI/iDCI) under noise and model mismatch; derive error bounds tied to the push-forward constraints (2609.02832).
+- From approximation to computable learning guarantees: turn Chernoff-neural/operator approximation statements into training-time or generalization bounds for learned semigroup one-step operators (2609.02727).
+- Eulerian vs Lagrangian equivalence: characterize boundary/regularity conditions under which the two Fokker–Planck perspectives lead to comparable constrained optimization formulations and discretizations (2609.02072).
+- Sharp embedding extensions: test whether analogous “best possible” dimension orders persist for structured domains (manifolds, low-doubling-dimensional sets) beyond worst-case point sets (2609.02155).
+- Robustness of integrable constructions: study perturbations and non-ideal boundary conditions for the soliton solutions/conservation laws produced by inverse scattering (2609.02844).
 
 ## Takeaway
-Because arXiv provides no official “trending” chart, and Semantic Scholar citation signals were unavailable here, this is an inferred snapshot: ordering reflects breadth of math subfields and abstract-level theorem/estimate language, not measured readership/downloads.
+This daily snapshot clusters around inference/optimization under probabilistic constraints, geometric embedding fundamentals, and nonlinear PDE/integrable methods. Treat the shortlist order as inferred from recency and cross-listing, not as a verified popularity metric, and confirm details directly from the papers.
 
 ## Method and sources
-Window/sources: arXiv Mathematics RSS (feed ‘rss/math’), latest available daily batch where RSS pubDate is 2026-09-02 (UTC). Snapshot time: 2026-09-03T00:29:21Z. Ranking: inferred from (1) keyword density in abstracts and (2) cross-category breadth from RSS categories; citation-momentum signals were not used due to Semantic Scholar API rate limiting (HTTP 429). Verification: abstracts and metadata were read from each selected arXiv abs page (title/authors/abstract/subjects).
+- Corpus: arXiv Mathematics archive (math.* via search_query=cat:math* in arXiv export API).
+- Daily window used: batch date 2026-09-02 UTC, operationalized as submissions in [2026-09-02 00:00:00Z, 2026-09-03 00:00:00Z).
+- Ranking: inferred using recency within the window + cross-listing/category breadth + lightweight keyword overlap; citation-momentum signals not used due to Semantic Scholar Graph API HTTP 429 in this run.
+- Metadata: arXiv export API (export.arxiv.org/api/query).

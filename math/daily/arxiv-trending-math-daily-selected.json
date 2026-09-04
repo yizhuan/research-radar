@@ -1,0 +1,61 @@
+{
+  "batch_date_utc": "2026-09-03T00:00:00+00:00",
+  "batch_date_label": "Thu, 3 Sep 2026",
+  "selected": [
+    {
+      "arxiv_base": "2609.02882",
+      "title": null,
+      "authors": [],
+      "categories": [],
+      "submitted": "2 Sep 2026]",
+      "revised": null,
+      "abstract": null,
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02879",
+      "title": null,
+      "authors": [],
+      "categories": [],
+      "submitted": "2 Sep 2026]",
+      "revised": null,
+      "abstract": null,
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02862",
+      "title": null,
+      "authors": [],
+      "categories": [],
+      "submitted": "2 Sep 2026]",
+      "revised": null,
+      "abstract": null,
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02884",
+      "title": null,
+      "authors": [],
+      "categories": [],
+      "submitted": "2 Sep 2026]",
+      "revised": null,
+      "abstract": null,
+      "citationCount": null,
+      "influentialCitationCount": null
+    },
+    {
+      "arxiv_base": "2609.02878",
+      "title": null,
+      "authors": [],
+      "categories": [],
+      "submitted": "2 Sep 2026]",
+      "revised": null,
+      "abstract": null,
+      "citationCount": null,
+      "influentialCitationCount": null
+    }
+  ]
+}

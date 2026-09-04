@@ -1,0 +1,99 @@
+{
+  "batch_label": "Thu, 3 Sep 2026",
+  "batch_date_utc": "2026-09-03T00:00:00+00:00",
+  "selected": [
+    {
+      "arxiv_base": "2609.02884",
+      "title": "Chebyshev's method applied to polynomials with rotational symmetry",
+      "authors": [
+        "<span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Nayak,+T\" rel=\"nofollow\">Tarakanta Nayak</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Phogat,+P\" rel=\"nofollow\">Pooja Phogat</a>"
+      ],
+      "categories": [
+        "math.DS"
+      ],
+      "submitted": "2 Sep 2026",
+      "revised": null,
+      "abstract": "We investigate the dynamics of Chebyshev's method applied to the polynomial family $p_n(z)=z(z^n-1)$ for $n>1$. The resulting map is denoted by $C_n$. It is proved that the immediate basins corresponding to the non-zero roots are unbounded and simply connected. We also show that the Julia set of $C_n$ is connected. It is proved that the immediate basin of the root at the origin exhibits a different behavior: it is unbounded for $n\\leq 16$ and bounded for $n\\geq 17$. We establish that $C_n$ is convergent whenever $n\\leq 16$ or $n$ is odd. Finally, we determine the symmetry group of $C_n$ and prove that it coincides with the symmetry group of the polynomial $p_n$, thereby confirming, for this family, a conjecture proposed by Nayak and Pal.",
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02879",
+      "title": "On the cut locus of Hamilton--Jacobi equations I: structure and propagation via the touching approach",
+      "authors": [
+        "<span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Cannarsa,+P\" rel=\"nofollow\">Piermarco Cannarsa</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Cheng,+W\" rel=\"nofollow\">Wei Cheng</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Wei,+J+H+%5C+W\" rel=\"nofollow\">Jiahui Hong \\and Wenxue Wei</a>"
+      ],
+      "categories": [
+        "math.AP"
+      ],
+      "submitted": "2 Sep 2026",
+      "revised": null,
+      "abstract": "For a semiconcave function with linear modulus, we introduce the cut locus through a touching approach and prove that it coincides with the variational cut locus defined via the Lax--Oleinik semigroup, independently of the Hamiltonian. Cut points are characterized by the emptiness of the proximal subdifferential of $\\phi$, which we use as the analytic criterion behind the touching definition. We introduce the degree of regularity $R_\\phi$, which measures the $C^{1,1}$ deviation of $\\phi$, and prove the quantitative relation $R_\\phi(x)\\sim 1/\\tau_{\\phi,H}(x)$ with the cut time function, valid pointwise up to explicit truncation constants. From this relation we derive a separation estimate for calibrated curves, showing that no conjugate points occur before the cut locus. This estimate supplies the tools for the propagation results. Cut points propagate globally along generalized characteristics for the evolutionary Hamilton--Jacobi equation, and Alexandrov points propagate forward along calibrated curves, with the second derivative satisfying a matrix Riccati equation. We also show that the cut locus is a Lebesgue null set and give a streamlined proof of Alexandrov's theorem. Finally, we give necessary and sufficient conditions for the cut locus of a weak KAM solution to be closed, in terms of the cut time function, the $C^{1,1}$ support, and the degree of regularity.",
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02871",
+      "title": "Estimating the number of real zeros of linear combinations of radicals of polynomials",
+      "authors": [
+        "<span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Binyamini,+G\" rel=\"nofollow\">Gal Binyamini</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Kiro,+A\" rel=\"nofollow\">Avner Kiro</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Logunov,+A\" rel=\"nofollow\">Alexander Logunov</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Novikov,+D\" rel=\"nofollow\">Dmitry Novikov</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Zakharov,+D\" rel=\"nofollow\">Dmitrii Zakharov</a>"
+      ],
+      "categories": [
+        "math.AG",
+        "math.AP",
+        "math.CA"
+      ],
+      "submitted": "2 Sep 2026",
+      "revised": null,
+      "abstract": "We obtain upper bounds for the number of real zeros of functions of the form $$ f(x) = \\sum_{k=1}^{n} c_k \\bigl(P_k(x)\\bigr)^{\\alpha_k}, $$ where $c_k, \\alpha_k \\in \\mathbb{R}$ and each $P_k$ is a real polynomial of degree at most $d$ that is non-negative on an interval $I\\subset \\mathbb{R}$. We improve previously known exponential upper bounds for the number of roots on $I$ to bounds that are polynomial in $n$, linear in $d$, and independent of the exponents $\\alpha_k$. For linear combinations of square roots of positive quadratic polynomials on $\\mathbb{R}$ we prove the linear bound $2n$, answering a question of N.~Alon. A modification of the argument yields a linear bound for a question of A.~Gabrielov, D.~Novikov, and B.~Shapiro related to Maxwell's conjecture. The article describes two independent approaches: an elementary ODE method in the general case, which also gives a polynomial bound for the number of critical points of one dimensional Gaussian mixtures, and a PDE method for the case of positive quadratic polynomials, which connects the problem to the number of nodal domains of solutions to $\\Delta u + \\lambda u = 0$ on the punctured hyperbolic plane. As a byproduct of the second approach, we describe a curious relation between axially symmetric harmonic functions on $\\mathbb{R}^3\\setminus\\{(x,0,0)\\}$ and Laplace-Beltrami eigenfunctions on the hyperbolic plane with eigenvalue $1/4$.",
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02858",
+      "title": "Localized Persistent Commutative Algebra",
+      "authors": [
+        "<span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=He,+K\" rel=\"nofollow\">Kaiyue He</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Suwayyid,+F\" rel=\"nofollow\">Faisal Suwayyid</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Wei,+G\" rel=\"nofollow\">Guo-Wei Wei</a>"
+      ],
+      "categories": [
+        "math.AC",
+        "math.CO"
+      ],
+      "submitted": "2 Sep 2026",
+      "revised": null,
+      "abstract": "We develop a localized persistent theory of commutative algebra for Stanley-Reisner rings, based on local cohomology supported at a coordinate prime rather than at the maximal ideal. The construction is modeled on the persistent Stanley-Reisner theory of Suwayyid and Wei ( arXiv:2503.23482 ) and its functorial development for graphs and hypergraphs ( arXiv:2512.17619 ), in which invariants of the face ring such as graded Betti numbers and f- and h-vectors are persisted across a filtration. That framework is built from the minimal free resolution and is thus Tor-theoretic; we work instead on the injective side, and the resulting modules record information localized at a single vertex, complementing the global picture given by maximal-support local cohomology. For a vertex prime $p_i = (x_j : j \\neq i)$ we prove an exact $\\mathbb{Z}^n$-graded decomposition of $H^q_{p_i}(k[\\Delta])$ into the maximal-support local cohomology of the deletion and of the link of the vertex $i$, the first in $x_i$-degree zero and the second repeated in every positive $x_i$-degree; at the level of graded dimensions this recovers the vertex-prime case of Rahimi's bigraded formula. With Hochster's formula this yields a closed combinatorial description of every multigraded piece. Building on this structure we introduce per-vertex persistent local cohomology numbers, prove a persistent links-Hochster formula, obtain interval decompositions of the resulting reversed-arrow persistence modules and a bottleneck stability theorem, retain multiplication by the uninverted variable as a morphism of persistence modules that the two barcodes alone do not determine, and extend the theory to an arbitrary coordinate prime, where the multiplication maps of the uninverted variables assemble into a commuting Boolean diagram of persistence modules.",
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02850",
+      "title": "Canonical-row Chern flow on Bott--Samelson towers: realizable-volume models for Schubert, Grothendieck, and Lascoux polynomials",
+      "authors": [
+        "<span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Nguyen-Dang,+K\" rel=\"nofollow\">Khai-Hoan Nguyen-Dang</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Wang,+Z\" rel=\"nofollow\">Zhenpeng Wang</a>"
+      ],
+      "categories": [
+        "math.CO"
+      ],
+      "submitted": "2 Sep 2026",
+      "revised": null,
+      "abstract": "We construct realizable-volume models over any field for the factorially normalized homogeneous Lascoux, Lascoux-atom, and positive Grothendieck packets. Their volume minors include normalized key polynomials, Demazure atoms, Schubert polynomials, and all sign-corrected homogeneous Grothendieck components. Over $\\mathbb C$, these polynomials are Lorentzian. As consequences, the supports of ordinary Grothendieck, Lascoux, and Lascoux-atom polynomials are $M^{\\natural}$-convex and are exactly the lattice points of their integral generalized-polymatroid Newton polytopes. This proves, in a stronger realizable-volume form, the corresponding conjectures of Huh--Matherne--Mészáros--St.~Dizier, together with the relevant saturated-Newton-polytope and Grothendieck-support conjectures of Monical--Tokcan--Yong, Mészáros--St.~Dizier, and Mészáros--Setiabrata--St.~Dizier. The maximal-degree Grothendieck component gives the Castelnuovo--Mumford support conjecture as a special case. Our method yields further packets whose finite duals are realizable-volume polynomials. More generally, over any field, factorially normalized top-degree total-Chern polynomials of globally generated bundles are realizable-volume polynomials, and the supports of our homogeneous realizations are bases of algebraic polymatroids.",
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    },
+    {
+      "arxiv_base": "2609.02845",
+      "title": "Degeneracy bounds, stability, and a sharp gap for $B$-colorings",
+      "authors": [
+        "<span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Hu,+X\" rel=\"nofollow\">Xiaoxue Hu</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Kong,+J\" rel=\"nofollow\">Jiangxu Kong</a>, <a href=\"https://arxiv.org/search/math?searchtype=author&amp;query=Wang,+Y\" rel=\"nofollow\">Yiqiao Wang</a>"
+      ],
+      "categories": [
+        "math.CO"
+      ],
+      "submitted": "2 Sep 2026",
+      "revised": null,
+      "abstract": "A $B$-coloring of a graph is a proper edge-coloring in which every $4$-cycle is rainbow, and $q_B(G)$ denotes the minimum number of colors in such a coloring. Let $\\Delta_2(G)$ denote the maximum number of common neighbors of two distinct vertices of $G$. We prove that, for integers $1\\le d\\le\\Delta$, every finite simple $d$-degenerate graph $G$ with $\\Delta(G)\\le\\Delta$ satisfies $$q_B(G)\\le \\Delta+(d-1)\\Delta_2(G)\\le d\\Delta.$$ Consequently, $d\\Delta$ is the exact maximum, with equality precisely for graphs containing $K_{d,\\Delta}$. More generally, if $q_B(G)\\ge d\\Delta-s$, where $0\\le s<\\Delta$, then $G$ contains $K_{d,\\Delta-s}$; if also $s<d$, then $G$ has at least $d-s$ vertices of degree $\\Delta$ with the same open neighborhood. For $\\Delta\\ge3$, we further show that every $K_{3,\\Delta}$-free 3-degenerate graph satisfies $q_B(G)\\le3\\Delta-2$; the example $K_{3,\\Delta-1}$ shows that this bound is best possible up to one. For loopless multigraphs, we establish a sharp gap in the possible values of $q_B(G)$. For every integer $\\Delta\\ge3$, every finite loopless multigraph $G$ with $\\Delta(G)\\le\\Delta$ satisfies $$q_B(G)\\le\\Delta(\\Delta-1)$$ unless $G$ has a component isomorphic to $K_{\\Delta,\\Delta}$, in which case $q_B(G)=\\Delta^2$. The bound $\\Delta(\\Delta-1)$ is attained by both $K_{\\Delta,\\Delta-1}$ and $K_{\\Delta,\\Delta}-e$. Consequently, among finite loopless multigraphs with maximum degree at most $\\Delta$, no value of $q_B(G)$ lies strictly between $\\Delta^2-\\Delta$ and $\\Delta^2$.",
+      "citationCount": 0,
+      "influentialCitationCount": 0
+    }
+  ]
+}

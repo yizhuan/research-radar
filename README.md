@@ -1,6 +1,6 @@
-# Research Index
+# What's trending in Github, AI, math, and physics
 
-Generated: 2026-09-04 16:21
+Generated: 2026-09-04 16:41
 Source: `/home/yizhuan/.research`
 
 ## Ai

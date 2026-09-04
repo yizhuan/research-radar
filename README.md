@@ -1,6 +1,6 @@
 # Research Index
 
-Generated: 2026-09-04 02:37
+Generated: 2026-09-04 02:42
 Source: `/home/yizhuan/.research`
 
 ## Ai
@@ -11,6 +11,7 @@ Source: `/home/yizhuan/.research`
 ## Github
 
 - **Daily**: [github-trending-summary-daily-2026-09-04](github/daily/github-trending-summary-daily-2026-09-04.md) — 2026-09-04
+- **Weekly**: [github-trending-summary-weekly-2026-09-04](github/weekly/github-trending-summary-weekly-2026-09-04.md) — 2026-09-04
 
 ## Math
 

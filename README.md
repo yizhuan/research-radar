@@ -1,6 +1,6 @@
 # Research Index
 
-Generated: 2026-09-04 02:13
+Generated: 2026-09-04 02:32
 Source: `/home/yizhuan/.research`
 
 ## Ai
@@ -19,3 +19,4 @@ Source: `/home/yizhuan/.research`
 ## Physics
 
 - **Daily**: [arxiv-trending-physics-daily-2026-09-03](physics/daily/arxiv-trending-physics-daily-2026-09-03.md) — 2026-09-03
+- **Weekly**: [arxiv-trending-physics-weekly-2026-09-04](physics/weekly/arxiv-trending-physics-weekly-2026-09-04.md) — 2026-09-04

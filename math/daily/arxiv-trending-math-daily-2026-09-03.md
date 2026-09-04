@@ -9,7 +9,7 @@ arXiv does not provide an official “trending” chart; this ordering is inferr
 Recent arXiv math submissions cluster around complex/variational analysis, real-algebra bounds, and algebraic/combinatorial structures (persistent commutative algebra, Schubert/Grothendieck-type polynomials, and extremal graph coloring).
 
 ## Top papers (ranked; inferred)
-1. Chebyshev's method applied to polynomials with rotational symmetry — Tarakanta Nayak, Pooja Phogat
+### 1. Chebyshev's method applied to polynomials with rotational symmetry — Tarakanta Nayak, Pooja Phogat
    - arXiv: 2609.02884 (v1), categories: math.DS
    - Submitted: 2 Sep 2026
    - Link: https://arxiv.org/abs/2609.02884
@@ -17,7 +17,7 @@ Recent arXiv math submissions cluster around complex/variational analysis, real-
    - Assumptions/setting (naive extract from abstract text): for $n>1$
    - Momentum signals used: Semantic Scholar influential citations=0, citations=0; plus recency from the arXiv math/recent batch.
 
-2. On the cut locus of Hamilton--Jacobi equations I: structure and propagation via the touching approach — Piermarco Cannarsa, Wei Cheng, Jiahui Hong \and Wenxue Wei
+### 2. On the cut locus of Hamilton--Jacobi equations I: structure and propagation via the touching approach — Piermarco Cannarsa, Wei Cheng, Jiahui Hong \and Wenxue Wei
    - arXiv: 2609.02879 (v1), categories: math.AP
    - Submitted: 2 Sep 2026
    - Link: https://arxiv.org/abs/2609.02879
@@ -25,7 +25,7 @@ Recent arXiv math submissions cluster around complex/variational analysis, real-
    - Assumptions/setting (naive extract from abstract text): for calibrated curves, showing that no conjugate points occur before the cut locus
    - Momentum signals used: Semantic Scholar influential citations=0, citations=0; plus recency from the arXiv math/recent batch.
 
-3. Estimating the number of real zeros of linear combinations of radicals of polynomials — Gal Binyamini, Avner Kiro, Alexander Logunov, Dmitry Novikov, Dmitrii Zakharov
+### 3. Estimating the number of real zeros of linear combinations of radicals of polynomials — Gal Binyamini, Avner Kiro, Alexander Logunov, Dmitry Novikov, Dmitrii Zakharov
    - arXiv: 2609.02871 (v1), categories: math.AG, math.AP, math.CA
    - Submitted: 2 Sep 2026
    - Link: https://arxiv.org/abs/2609.02871
@@ -33,7 +33,7 @@ Recent arXiv math submissions cluster around complex/variational analysis, real-
    - Assumptions/setting (naive extract from abstract text): for the number of real zeros of functions of the form $$ f(x) = \sum_{k=1}^{n} c_k \bigl(P_k(x)\bigr)^{\alpha_k}, $$ where $c_k, \alpha_k \in \mathbb{R}$ and each $P_k$ is a real polynomial of degree at m
    - Momentum signals used: Semantic Scholar influential citations=0, citations=0; plus recency from the arXiv math/recent batch.
 
-4. Localized Persistent Commutative Algebra — Kaiyue He, Faisal Suwayyid, Guo-Wei Wei
+### 4. Localized Persistent Commutative Algebra — Kaiyue He, Faisal Suwayyid, Guo-Wei Wei
    - arXiv: 2609.02858 (v1), categories: math.AC, math.CO
    - Submitted: 2 Sep 2026
    - Link: https://arxiv.org/abs/2609.02858
@@ -41,7 +41,7 @@ Recent arXiv math submissions cluster around complex/variational analysis, real-
    - Assumptions/setting (naive extract from abstract text): for Stanley-Reisner rings, based on local cohomology supported at a coordinate prime rather than at the maximal ideal
    - Momentum signals used: Semantic Scholar influential citations=0, citations=0; plus recency from the arXiv math/recent batch.
 
-5. Canonical-row Chern flow on Bott--Samelson towers: realizable-volume models for Schubert, Grothendieck, and Lascoux polynomials — Khai-Hoan Nguyen-Dang, Zhenpeng Wang
+### 5. Canonical-row Chern flow on Bott--Samelson towers: realizable-volume models for Schubert, Grothendieck, and Lascoux polynomials — Khai-Hoan Nguyen-Dang, Zhenpeng Wang
    - arXiv: 2609.02850 (v1), categories: math.CO
    - Submitted: 2 Sep 2026
    - Link: https://arxiv.org/abs/2609.02850
@@ -49,7 +49,7 @@ Recent arXiv math submissions cluster around complex/variational analysis, real-
    - Assumptions/setting (naive extract from abstract text): for the factorially normalized homogeneous Lascoux, Lascoux-atom, and positive Grothendieck packets
    - Momentum signals used: Semantic Scholar influential citations=0, citations=0; plus recency from the arXiv math/recent batch.
 
-6. Degeneracy bounds, stability, and a sharp gap for $B$-colorings — Xiaoxue Hu, Jiangxu Kong, Yiqiao Wang
+### 6. Degeneracy bounds, stability, and a sharp gap for $B$-colorings — Xiaoxue Hu, Jiangxu Kong, Yiqiao Wang
    - arXiv: 2609.02845 (v1), categories: math.CO
    - Submitted: 2 Sep 2026
    - Link: https://arxiv.org/abs/2609.02845

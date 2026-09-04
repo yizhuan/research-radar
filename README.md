@@ -1,11 +1,12 @@
 # Research Index
 
-Generated: 2026-09-04 02:42
+Generated: 2026-09-04 16:21
 Source: `/home/yizhuan/.research`
 
 ## Ai
 
 - **Daily**: [arxiv-trending-ai-daily-2026-09-04](ai/daily/arxiv-trending-ai-daily-2026-09-04.md) — 2026-09-04
+- **Monthly**: [arxiv-trending-ai-monthly-2026-09-04](ai/monthly/arxiv-trending-ai-monthly-2026-09-04.md) — 2026-09-04
 - **Weekly**: [arxiv-trending-ai-weekly-2026-09-04](ai/weekly/arxiv-trending-ai-weekly-2026-09-04.md) — 2026-09-04
 
 ## Github

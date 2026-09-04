@@ -1,122 +1,138 @@
-Window (UTC): 2026-08-29 00:00:00 to 2026-09-04 23:59:59
-Snapshot time (UTC): 2026-09-04 01:20:21
-Archive coverage: arXiv “math” recent listings (taken from arxiv.org/list/math/recent; selected the first 40 entries on that listing and then ranked within this pool).
+# This week's inferred arXiv mathematics highlights
 
-Important note on “hottest”: arXiv does not provide an official “trending” chart and Semantic Scholar momentum signals were unavailable from this environment (HTTP 429 “Too Many Requests”). The ordering below is therefore inferred using metadata proxies:
-- whether the preprint was revised after initial submission within the window,
-- comments length / presence of more detailed metadata,
-- cross-listed arXiv subject coverage within the math archive.
+## Headline
 
-1) Headline
-This week’s most notable math preprints cluster around (i) sharper complexity lower bounds for gradient descent under flexible step schedules, (ii) rigidity/comparison results in metric-measure geometry and Laplace eigenvalues, and (iii) “positivity/structure” theorems connecting algebraic geometry, combinatorics, and operator-algebraic approximation properties.
+The strongest apparent signals this week are unusually explicit advances or reversals on long-running questions: irrationality of Catalan's constant, a claimed resolution of the Fast Dynamo Conjecture, a new proof for the proportion of zeta zeros on the critical line, and a counterexample to McKean's entropy-convexity conjecture. A second cluster develops sharp criteria or structures in probability, geometric analysis, algebraic geometry, and fluid mechanics.
 
-2) Top papers (ranked by inferred metadata “momentum” within the selected pool)
+arXiv provides no official trending or readership chart. The ordering below is therefore inferred from the concreteness and breadth of the claimed result, independent search visibility for the paper, and cross-subfield interest—not from download counts or a complete popularity statistic.
 
-1. Improved Gradient Descent Lower Bounds Beyond Nesterov
-   - Authors: Yuhan Ye, Kaizhao Liu
-   - arXiv:2609.02855 (v1), submitted 2026-09-02, revised 2026-09-03
-   - Categories: Optimization and Control (math.OC); Machine Learning (cs.LG); Machine Learning (stat.ML)
-   - What they prove (per abstract): For smooth convex optimization, they study how well gradient descent (GD) can be accelerated by predetermined stepsizes. They prove improved non-anytime and anytime lower bounds: Ω(n^-1.6342) in the non-anytime setting and Ω(n^-1.2408) in the anytime setting, improving earlier Ω(n^-1.932) / Ω(n^-4/3) results. They also allow stepsizes to be negative, and the anytime bound shows an unattainability statement for the “non-anytime silver schedules” rate in the anytime setting.
-   - Caveat: The abstract describes the lower bounds precisely; details of the oracle model and stepsize schedule class are part of the paper’s setup.
-   - Link: https://arxiv.org/abs/2609.02855
+## Top papers (ranked)
 
-2. Canonical-row Chern flow on Bott--Samelson towers: realizable-volume models for Schubert, Grothendieck, and Lascoux polynomials
-   - Authors: Khai-Hoan Nguyen-Dang, Zhenpeng Wang
-   - arXiv:2609.02850 (v1), submitted 2026-09-02, revised 2026-09-03
-   - Categories: Combinatorics (math.CO)
-   - What they prove (per abstract): Over an arbitrary field they construct realizable-volume models for factorially normalized homogeneous Lascoux, Lascoux-atom, and positive Grothendieck packets. Over ℂ the polynomials are Lorentzian. Consequently, they identify the supports of Grothendieck/Lascoux/Lascoux-atom polynomials with lattice points of integral generalized-polymatroid Newton polytopes (in a realizable-volume form), thereby proving conjectures of Huh–Matherne–Mészáros–St. Dizier and related saturated-Newton-polytope / Grothendieck-support conjectures of other authors.
-   - Caveat: This is “over an arbitrary field” / “over ℂ” in the abstract; the exact strength depends on the packet normalization and the positivity conventions defined in the paper.
-   - Link: https://arxiv.org/abs/2609.02850
+### 1. [Catalan's constant is irrational](https://arxiv.org/abs/2609.04176)
+- **Abstract:** Zhi-Wei Sun claims to prove that Catalan's constant $G=\sum_{k\ge0}(-1)^k/(2k+1)^2$ is irrational, resolving a long-standing open problem, by introducing suitable weights.
+- **Authors:** Zhi-Wei Sun
+- **arXiv:** `2609.04176v1` (published 2026-09-03 17:55 UTC; categories: `math.GM`)
+- **Evidence for ranking:** The title announces a concrete resolution of a long-standing problem and the paper appeared prominently in exact-title web search. Semantic Scholar citation data was unavailable because the API returned rate limits; no period citation gain is claimed.
+- **Claimed result:** The author states that $G$ is irrational, using weighted identities or sums; this is an attributed preprint claim, not an independently verified theorem here.
+- **Assumptions and setting:** The object is Catalan's constant, an alternating odd reciprocal-square series; the abstract gives no detailed hypotheses for the weighting construction.
+- **Caveat:** The claim requires expert checking of the proof and of the precise convergence and irrationality argument; the abstract alone is insufficient for validation.
+- **Announcement type:** new submission, 2026-09-03 announcement batch
+- **Themes:** Algebra & number theory
 
-3. Petersson-Rigid Lattices in a Census of 100 Rank-Three Root Bases
-   - Author: Eungang Cho
-   - arXiv:2609.02843, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Number Theory (math.NT); Representation Theory (math.RT)
-   - What they prove (per abstract): After enumerating rank-three hyperbolic Cartan matrices / edits / root bases and computing the obstruction space S_{5/2}(ρ_L), they identify which lattices in the census are “Petersson-rigid” under a condition that pins down the Petersson pairing up to a scalar. They reduce the “absolutely irreducible action” condition to a small number of cases and conclude that there are three rigid lattices (with special faces “coming off”), generalizing earlier single-point invariants. The abstract emphasizes rigidity observations and the numerical checking setup.
-   - Caveat: Rigidity and the exact condition are internal to the paper’s definitions and computations; the abstract does not include the full criterion.
-   - Link: https://arxiv.org/abs/2609.02843
+### 2. [Smooth autonomous fast dynamo action on the three-torus](https://arxiv.org/abs/2609.04153)
+- **Abstract:** The authors construct a nonempty $C^k$-open family of smooth, autonomous, divergence-free flows on $\mathbb T^3$ generating fast dynamos, which they say resolves the Fast Dynamo Conjecture.
+- **Authors:** Michele Coti Zelati, Massimo Sorella, David Villringer
+- **arXiv:** `2609.04153v1` (published 2026-09-03 17:45 UTC; categories: `math.AP`, `math.DS`)
+- **Evidence for ranking:** The claimed resolution of a named longstanding conjecture produced a direct exact-title search result and spans PDE, dynamics, and dynamo theory. Citation counts were unavailable because Semantic Scholar rate-limited the lookup.
+- **Claimed result:** Starting from time-periodic stretch-fold-shear dynamos, the paper realizes the period dynamics inside a smooth autonomous flow and proves spectral instability persists under the singular perturbation $\varepsilon\Delta$ uniformly as $\varepsilon\to0$.
+- **Assumptions and setting:** The velocity fields are smooth, autonomous, divergence-free fields on the three-torus, with stability under $C^k$ perturbations for some finite $k$.
+- **Caveat:** “Resolves” is the authors' characterization; the technical construction is 69 pages and the validity and exact formulation of the conjecture need specialist review.
+- **Announcement type:** new submission, 2026-09-03 announcement batch
+- **Themes:** Analysis & PDE; Mathematical physics; Geometry & topology
 
-4. A new proof that more than 2/3 of the zeros of the Riemann zeta function are simple and on the critical line
-   - Author: Youness Lamzouri
-   - arXiv:2609.02882, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Number Theory (math.NT); Complex Variables (math.CV)
-   - What they prove (per abstract): They give an unconditional proof that over 67.25% of non-trivial ζ(s) zeros are simple and on the critical line, and that at least 83.62% are distinct. The abstract describes replacing a finite-dimensional matrix framework by a Hilbert space inequality, enabling a direct application of Montgomery’s theorem on the (unconditional) pair correlation of zeta zeros.
-   - Caveat: The quantitative percentages are as stated in the abstract; the technical transparency depends on the Hilbert space inequality and the explicit formula details.
-   - Link: https://arxiv.org/abs/2609.02882
+### 3. [A new proof that more than $2/3$ of the zeros of the Riemann zeta function are simple and on the critical line](https://arxiv.org/abs/2609.02882)
+- **Abstract:** The paper gives an unconditional proof that more than 67.25% of nontrivial zeta zeros are simple and on the critical line, and that at least 83.62% are distinct.
+- **Authors:** Youness Lamzouri
+- **arXiv:** `2609.02882v1` (published 2026-09-02 17:56 UTC; categories: `math.NT`, `math.CV`)
+- **Evidence for ranking:** The result concerns a central problem in analytic number theory, has a precise quantitative headline, and was independently surfaced in exact-title web search. Semantic Scholar reported 0 citations and 0 influential citations at lookup time; these are current totals, not weekly gains.
+- **Claimed result:** The author replaces an earlier finite-dimensional matrix argument with a Hilbert-space inequality and applies Montgomery's pair-correlation theorem in an unconditional form to recover the stated percentages.
+- **Assumptions and setting:** The claim concerns nontrivial zeros of the Riemann zeta function and uses the explicit formula, pair correlation, and a second-moment calculation.
+- **Caveat:** The percentages are preprint claims; the abstract references very recent related work and the proof should be checked line by line, especially the use of the cited pair-correlation theorem.
+- **Announcement type:** new submission, 2026-09-02 announcement batch
+- **Themes:** Algebra & number theory; Analysis & PDE
 
-5. Estimating the number of real zeros of linear combinations of radicals of polynomials
-   - Authors: Gal Binyamini, Avner Kiro, Alexander Logunov, Dmitry Novikov, Dmitrii Zakharov
-   - arXiv:2609.02871, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Classical Analysis and ODEs (math.CA); Algebraic Geometry (math.AG); Analysis of PDEs (math.AP)
-   - What they prove (per abstract): They bound the number of real zeros of functions of the form Σ c_k (P_k(x))^{α_k} where P_k are real polynomials non-negative on an interval I. They improve bounds from exponential-in-previous-work to bounds that are polynomial in n, linear in degree d, and independent of exponents α_k. They prove a linear bound (2n) for linear combinations of square roots of positive quadratic polynomials, answering a question of N. Alon, and also address a related question tied to Maxwell’s conjecture / nodal domain counts via a PDE perspective.
-   - Caveat: The dependence on the interval positivity and on the structure “positive quadratic” is explicit in the abstract.
-   - Link: https://arxiv.org/abs/2609.02871
+### 4. [A counterexample to McKean's conjecture for the Landau-Coulomb equation](https://arxiv.org/abs/2609.03847)
+- **Abstract:** The authors disprove the conjecture that entropy dissipation is nonincreasing along spatially homogeneous Landau-Coulomb solutions, using a smooth radial perturbation of a Maxwellian localized on a large annulus.
+- **Authors:** Jonathan Junné, Raphael Winter, Havva Yoldaş
+- **arXiv:** `2609.03847v1` (published 2026-09-03 13:40 UTC; categories: `math.AP`)
+- **Evidence for ranking:** It is an explicit counterexample to a named conjecture and was independently surfaced by exact-title search; the conclusion also reaches the Boltzmann equation through the grazing-collision connection. Semantic Scholar was rate-limited.
+- **Claimed result:** For a suitably chosen perturbation at scale $R\gg1$, the leading term in the derivative of entropy dissipation is positive, so entropy is not generally convex in time.
+- **Assumptions and setting:** The setting is the spatially homogeneous Landau equation with Coulomb interaction, near a Maxwellian in relative entropy and standard Sobolev norms.
+- **Caveat:** The extension from Landau-Coulomb to Boltzmann is an implication through a limiting relation and needs careful interpretation; the explicit perturbation and asymptotics require specialist verification.
+- **Announcement type:** new submission, 2026-09-03 announcement batch
+- **Themes:** Analysis & PDE; Probability & statistics; Mathematical physics
 
-6. Continuous data assimilation in steady Navier-Stokes equations with unknown viscosity: robust and efficient solvers and fast parameter recovery
-   - Authors: L. Rebholz, J. Reyes, J. Whitehead
-   - arXiv:2609.02862, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Numerical Analysis (math.NA); Analysis of PDEs (math.AP)
-   - What they prove (per abstract): They recover an unknown viscosity parameter in steady Navier–Stokes from partial incompressible flow observations using continuous data assimilation (CDA). They propose an efficient parameter-recovery algorithm and nonlinear solver (CDA-Picard + CDA-Newton), and provide analysis giving well-posedness plus quadratic convergence claims; experiments show fast parameter restoration from poor initial guesses.
-   - Caveat: The abstract focuses on “steady” NSE and on the observation model; applicability to other regimes depends on the paper’s assumptions.
-   - Link: https://arxiv.org/abs/2609.02862
+### 5. [The conformally invariant metric on CLE$_4$ I: subsequential limits of the non-simple CLE graph metric](https://arxiv.org/abs/2609.04138)
+- **Abstract:** The first paper of a three-part series constructs nontrivial subsequential limits of a renormalized graph metric on CLE$_\kappa$ loops as $\kappa\downarrow4$, obtaining a local, geodesic, conformally invariant metric on CLE$_4$ with the prescribed boundary-ball growth.
+- **Authors:** Emmanuel Kammerer, Konstantinos Kavvadias, Jason Miller, Yi Tian
+- **arXiv:** `2609.04138v1` (published 2026-09-03 17:31 UTC; categories: `math.PR`, `math-ph`, `math.CV`)
+- **Evidence for ranking:** The paper is the opening part of a coherent series addressing a major scaling-limit construction, and exact-title search surfaced it. Semantic Scholar citation data was unavailable due to rate limiting.
+- **Claimed result:** Subsequential limits exist and define a nontrivial conformally invariant local metric on CLE$_4$, with metric-ball growth matching the uniform exploration of Werner and Wu.
+- **Assumptions and setting:** The parameter is the critical CLE value $\kappa=4$; the metric is obtained by renormalizing the CLE$_\kappa$ graph metric as $\kappa$ decreases to 4.
+- **Caveat:** This part proves subsequential existence, not yet uniqueness or convergence to a true limit; the authors explicitly place those points in subsequent papers II and III.
+- **Announcement type:** new submission, 2026-09-03 announcement batch
+- **Themes:** Probability & statistics; Geometry & topology; Mathematical physics
 
-7. Localized Persistent Commutative Algebra
-   - Authors: Kaiyue He, Faisal Suwayyid, Guo-Wei Wei
-   - arXiv:2609.02858, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Commutative Algebra (math.AC); Combinatorics (math.CO)
-   - What they prove (per abstract): They build a localized persistent commutative algebra theory for Stanley–Reisner rings using local cohomology supported at a coordinate prime (not at the maximal ideal). They prove graded decompositions of H^q_{p_i}(k[Δ]) in terms of maximal-support local cohomology of deletion/link pieces, recover a vertex-prime case of Rahimi’s formula, and then develop per-vertex persistent numbers, interval decompositions, a bottleneck stability theorem, and show that multiplication by the uninverted variable is not determined by barcodes alone. They also extend to arbitrary coordinate primes.
-   - Caveat: Persistence module formalism is central; the abstract’s exact persistence-module construction details are not repeated here.
-   - Link: https://arxiv.org/abs/2609.02858
+### 6. [Oort's conjecture for split unitary Shimura varieties](https://arxiv.org/abs/2609.04072)
+- **Abstract:** The authors prove that generically on the basic stratum of split unitary Shimura varieties, the universal polarized abelian variety with endomorphisms has automorphism group $\{\pm1\}$ except in a few degenerate cases.
+- **Authors:** Paul Philippe, Fabian Schnelle, Eva Viehmann
+- **arXiv:** `2609.04072v1` (published 2026-09-03 16:43 UTC; categories: `math.AG`, `math.NT`)
+- **Evidence for ranking:** It directly addresses a named conjecture and crosses arithmetic geometry and number theory; exact-title web search returned the arXiv record. Semantic Scholar was rate-limited.
+- **Claimed result:** The paper establishes the stated generic automorphism result and computes the generic automorphism group of the universal $p$-divisible group in a basic isogeny class.
+- **Assumptions and setting:** The setting is split unitary Shimura varieties, restricted to the basic stratum and generic points, with specified endomorphism and polarization structures.
+- **Caveat:** The conclusion excludes a few degenerate cases, which the abstract does not enumerate; “Oort's conjecture” should be understood here in this stated unitary analogue.
+- **Announcement type:** new submission, 2026-09-03 announcement batch
+- **Themes:** Algebra & number theory; Geometry & topology
 
-8. Finite extensions of abelian schemes and duality for commutative group stacks
-   - Authors: Ajneet Dhillon, Brett Nasserden
-   - arXiv:2609.02826, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Algebraic Geometry (math.AG); Number Theory (math.NT)
-   - What they prove (per abstract): For a DVR R, they prove structure theorems for proper flat finitely presented commutative R-group schemes: such a group scheme P admits an exact sequence with a finite flat part E and an abelian scheme part B; for “quasiabelian” models they show normalization is abelian and the model is constructed via pushouts involving finite flat group schemes. They develop duality/duality-category results, including biduality and (when 2 is invertible) proof of Brochard’s duality conjecture in the group-stacks context. They also give derived-category equivalences via a kernel-algebra Fourier–Mukai argument.
-   - Caveat: Some results depend on “2 invertible” and on “quasiabelian” hypotheses.
-   - Link: https://arxiv.org/abs/2609.02826
+### 7. [A Critical Chemin--Lerner Regularity Criterion via One Velocity Component for the Three-Dimensional Navier--Stokes Equations](https://arxiv.org/abs/2609.03877)
+- **Abstract:** For suitable weak 3D Navier–Stokes solutions, the paper proves that a scaling-critical Besov summability condition on only the third velocity component rules out singularities.
+- **Authors:** Maotuo Guo, Wendong Wang, Shiyang Xiong
+- **arXiv:** `2609.03877v1` (published 2026-09-03 14:05 UTC; categories: `math.AP`)
+- **Evidence for ranking:** It addresses regularity in the Navier–Stokes problem through a sharp one-component criterion, and its technical abstract was independently returned by web search. Semantic Scholar was rate-limited.
+- **Claimed result:** If $u^3\in\widetilde L^p(0,T;\dot B^0_{m,1})$ with $2/p+3/m=1$, then no singularity occurs; the method uses frequency–scale matching in the local energy inequality.
+- **Assumptions and setting:** The result concerns finite-energy suitable weak solutions in $\mathbb R^3$, with $2<p<\infty$, $m=3p/(p-2)$, and a spatial-frequency $\ell^1$ Besov refinement.
+- **Caveat:** The condition is stronger than the unresolved critical $L^p_tL^m_x$ condition, so it is not a solution of the general Navier–Stokes regularity problem.
+- **Announcement type:** new submission, 2026-09-03 announcement batch
+- **Themes:** Analysis & PDE
 
-9. Actions of quantum groups on dual operator spaces and their crossed products
-   - Authors: Jason Crann, Joeri De Ro, Jacek Krajczok
-   - arXiv:2609.02822, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Operator Algebras (math.OA); Functional Analysis (math.FA)
-   - What they prove (per abstract): They study dual operator spaces with actions of locally compact quantum groups G. They show equality of the Fubini crossed product and weak* crossed product functors holds iff G has the approximation property of Haagerup and Kraus. The abstract also characterizes the approximation property via an L^1(G)-module approximation property for B(L^2(G))_* and investigates exactness of the Fubini crossed product functor in relation to amenability properties.
-   - Caveat: The operator-algebraic functor definitions and “approximation property” characterization require the paper’s technical setup.
-   - Link: https://arxiv.org/abs/2609.02822
+### 8. [A conjecture implying $\theta(p_c)=0$ for Bernoulli bond percolation on $\mathbb Z^d$](https://arxiv.org/abs/2609.03492)
+- **Abstract:** The paper proposes a finite-graph connectivity conjecture that would imply $\theta(p_c)=0$ for Bernoulli bond percolation on every $\mathbb Z^d$, proves it for a planar outer-face case, and gives a counterexample when connectivity is replaced by arbitrary increasing events.
+- **Authors:** Lucas Flammant
+- **arXiv:** `2609.03492v1` (published 2026-09-03 07:49 UTC; categories: `math.PR`)
+- **Evidence for ranking:** It links a finite-graph conjecture to the critical percolation question in all dimensions and includes both a positive planar theorem and a structural counterexample; exact-title search surfaced the paper. Semantic Scholar was rate-limited.
+- **Claimed result:** The proposed statement is proved for finite planar graphs with origin and boundary on the outer face, with explicit bound $1-2\sqrt\varepsilon$; the general implication to $\theta(p_c)=0$ is conditional on the conjecture.
+- **Assumptions and setting:** The conditional target is Bernoulli bond percolation on $\mathbb Z^d$, $d\ge2$; the proved case uses monotone connectivity events and a left-first depth-first exploration with a partial FKG inequality.
+- **Caveat:** The main all-dimensional consequence remains conjectural; the planar proof does not establish the conjecture in general.
+- **Announcement type:** new submission, 2026-09-03 announcement batch
+- **Themes:** Probability & statistics; Combinatorics & discrete mathematics
 
-10. Minimizers of Laplace eigenvalues under a lower curvature bound
-   - Author: Aditya Tiwari
-   - arXiv:2609.02808, submitted 2026-09-02, revised 2026-09-02
-   - Categories: Differential Geometry (math.DG); Spectral Theory (math.SP)
-   - What they prove (per abstract): Under a lower curvature bound in the sense of one-dimensional CD(1,2) spaces plus a convexity condition on the density, they obtain a sharp comparison of Neumann Laplace eigenvalues against the Legendre model, with Obata-type rigidity. They derive non-collapsing for minimizers of the k-th Laplace eigenvalue among closed surfaces of Gaussian curvature at least 1 (for k ≥ 2) in the measured Gromov–Hausdorff completion, and they give a variational proof that smooth minimizers are round.
-   - Caveat: The abstract’s “1-dimensional CD(1,2)” and “convexity condition on the density” are essential.
-   - Link: https://arxiv.org/abs/2609.02808
+## Trending mathematical themes
 
-3) Trending mathematical themes (evidence-tied)
-- Optimization lower bounds for first-order methods: new lower bounds that separate anytime vs non-anytime settings for gradient descent (2609.02855).
-- Metric-measure rigidity via eigenvalue comparison: sharp Neumann eigenvalue comparison, non-collapsing, and Obata-type rigidity (2609.02808).
-- “Recovery from data” in PDE parameter inference: continuous data assimilation for unknown viscosity in steady Navier–Stokes with well-posedness and quadratic convergence (2609.02862).
-- Structural positivity/realizability in algebraic combinatorics: realizable-volume models leading to Lorentzian/convex-geometric support statements and proof of multiple conjectures (2609.02850).
-- Quantitative progress on the distribution of zeta zeros: improved simple-zero and distinct-zero proportions via an alternative conceptual mechanism (2609.02882).
-- Algebraic duality and representation-theoretic rigidity: census-based identification of rigid lattices (2609.02843) and group-stack duality with Fourier–Mukai-type derived equivalences (2609.02826).
-- Persistent invariants localized at coordinate primes: per-vertex persistent cohomology, stability, and the fact that barcodes don’t determine multiplication by uninverted variables (2609.02858).
-- Operator-algebraic functoriality tied to approximation properties: equivalence of crossed-product functors and characterization of Haagerup–Kraus approximation (2609.02822).
+- **Explicit resolution or reversal of named problems:** Catalan irrationality, fast dynamos, the zeta-zero proportion, and McKean's conjecture all make unusually strong attributed claims (papers 1–4).
+- **Critical phenomena and scaling limits:** CLE$_4$ metric construction, percolation at criticality, and fast-dynamo singular limits connect probabilistic geometry, statistical mechanics, and PDE (papers 2, 5, 8).
+- **Sharp conditional regularity and structural criteria:** The Navier–Stokes one-component criterion and the percolation conjecture both turn a difficult global question into a more structured sufficient condition (papers 7–8).
+- **Arithmetic geometry and analytic number theory remain prominent:** The Shimura-variety result and zeta-zero paper address different arithmetic settings but both sharpen global information using structural or spectral tools (papers 3 and 6).
 
-4) Research opportunities (informed, not claiming “open problems”)
-- Optimization complexity: build on the anytime/non-anytime separation (2609.02855) to ask which step-schedule classes maintain provable separations for other algorithmic families (e.g., accelerated schemes or nonconvex relaxations).
-- Combinatorics–geometry bridges: extend realizable-volume / Lorentzian support technology beyond Bott–Samelson towers or beyond the specific packet families and normalizations studied in (2609.02850).
-- Quantitative zeta-zero questions: the new Hilbert-space mechanism (2609.02882) suggests retooling arguments around pair correlation; a concrete opportunity is to see how far the framework can push simple-zero proportions or adapt to related L-functions.
-- Algebraic geometry and duality: the group-stack duality and biduality package (2609.02826) points to testing how “2 invertible” enters and whether analogous statements hold under other residue-characteristic conditions.
-- Persistence modules: since barcodes don’t determine multiplication by the uninverted variable (2609.02858), a natural direction is to identify minimal additional invariants/data needed for full functorial reconstruction.
-- PDE inverse problems: the CDA-NSE solver package (2609.02862) invites extension toward noise-robust inference models, other observation regimes, or time-dependent settings.
-- Quantum groups and crossed products: once functor equality characterizes Haagerup–Kraus approximation (2609.02822), one can test whether related crossed-product variants isolate other approximation/amenability properties.
-- Eigenvalue rigidity in curvature bounds: the sharp CD(1,2) / Legendre-model comparison (2609.02808) suggests exploring similar sharp comparisons in broader curvature-dimension regimes or higher-dimensional analogues.
+## Research opportunities
 
-5) Takeaway
-Even without official “trending” statistics, this week’s cluster suggests simultaneous momentum in (a) sharper quantitative theory (lower bounds, zeta zero proportions), (b) rigidity/comparison phenomena under geometric constraints, and (c) deep structural frameworks tying together algebraic geometry, combinatorics, persistence, and operator-algebraic approximation.
+### Potential research areas
 
-6) Method and sources
-- Window definition: last 7 calendar days in UTC (start/end as listed at top).
-- Candidate pool: first 40 entries on arXiv math recent listing (arxiv.org/list/math/recent) that fall within the window by their arXiv “Submitted on” date.
-- Ranking: inferred from metadata proxies (revision timing, subject cross-coverage, comments/presentation metadata). Semantic Scholar momentum signals were not accessible (repeated HTTP 429) from this environment, so citation-based “hottest” ordering is not used.
-- Primary sources for statements: arXiv abstract pages for the selected papers (IDs listed above).
+- **Complete the CLE$_4$ metric program:** establish true-limit convergence and uniqueness in the remaining papers of the series, building on the subsequential construction (paper 5).
+- **Transfer critical-phenomena tools across models:** compare the proposed percolation connectivity principle with CLE and other planar exploration methods, while seeking higher-dimensional analogues (papers 5 and 8).
+- **Robust one-component regularity criteria:** test whether the Besov summability in the Navier–Stokes result can be weakened toward the unresolved critical Lebesgue condition (paper 7).
+
+### Unsolved problems
+
+- **Catalan's constant:** independent verification of the claimed irrationality proof remains necessary (paper 1).
+- **Percolation:** the finite-graph conjecture needed for the all-dimensional conclusion $\theta(p_c)=0$ is open beyond the proved planar configuration (paper 8).
+- **CLE$_4$:** the first paper leaves true-limit existence and uniqueness to subsequent work (paper 5).
+- **Navier–Stokes:** the general critical condition without the Besov $\ell^1$ refinement remains unresolved (paper 7).
+
+### Potential research directions
+
+- Stress-test the Catalan argument against alternative irrationality criteria and compute independently checkable finite identities for the proposed weights (paper 1).
+- Determine whether the fast-dynamo construction survives under weaker regularity, different manifolds, or physically constrained flows (paper 2).
+- Quantify how close the Landau counterexamples can remain to equilibrium under other norms and whether analogous non-convexity mechanisms persist for broader collision kernels (paper 4).
+- Identify the precise degenerate cases excluded in the unitary Shimura result and extend the generic automorphism computation to adjacent PEL settings (paper 6).
+
+## Takeaway
+
+This week's most visible mathematical papers are notable because several state theorem-level progress on named problems, but their status is still that of new arXiv preprints. The safest reading is “high-interest claims and techniques to verify,” not a settled list of accepted breakthroughs. The ranking is especially uncertain because citation and readership data were sparse or unavailable for papers published only one or two days ago.
+
+## Method and sources
+
+- **Window:** 2026-08-29 through 2026-09-04 UTC, inclusive; snapshot 2026-09-04 18:58 UTC.
+- **Corpus:** arXiv API query `cat:math.*`, sorted by submitted date; selected papers were verified against their arXiv abstract metadata and categories. Cross-listed papers are retained where mathematics is central.
+- **Announcement status:** All eight selected papers are new submissions in the 2026-09-02 or 2026-09-03 announcement batches; no revision is presented as a new paper.
+- **Ranking inference:** concrete mathematical claim, named-problem relevance, cross-subfield reach, and corroborating exact-title web-search visibility. Semantic Scholar was queried, but most requests returned HTTP 429; the one successful record reported 0 citations and 0 influential citations for `2609.02882`. No citation total is treated as a weekly gain.
+- **Primary sources:** [arXiv mathematics recent listings](https://arxiv.org/list/math/recent), the linked arXiv abstract pages above, and exact-title web-search results for corroboration. arXiv supplies no official trending chart.

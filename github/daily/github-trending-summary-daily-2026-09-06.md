@@ -1,70 +1,76 @@
-GitHub Trending Summary — Today
+# GitHub Trending Summary - Daily - 2026-09-06
 
-Snapshot: 2026-09-06 00:40 UTC
-Window: 2026-09-06 00:00 UTC through 2026-09-06 00:40 UTC
-Scope: GitHub's daily Trending repositories, checked against the GitHub REST API. Star gains are the daily Trending-page figures; total stars/languages were corroborated with the API.
+## Snapshot
 
-Headline
+| Field | Value |
+| --- | --- |
+| Snapshot time (UTC) | 2026-09-06 09:33 UTC |
+| Scope | Daily |
+| Date range | 2026-09-06 through 2026-09-06 |
+| Ranking basis | Daily Trending star gains |
 
-AI-agent development is the clear center of gravity today. Agent skills, harnesses, coding agents, local inference, and multi-agent orchestration occupy most of the top positions, while one unusually fast-rising general-purpose JavaScript project (ponytail) and a security research archive round out the list.
+## Headline
 
-Top repositories
+Agent-oriented development dominates today's snapshot: skills repositories, coding agents, agent harnesses, and local inference tooling occupy most of the top positions. The strongest individual surge is DietrichGebert/ponytail, while NousResearch/hermes-agent and anomalyco/opencode show substantial momentum among established projects.
 
-1. [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for real engineers, drawn from an agents directory.
-   Language: Shell | 2,692 stars today | 252,629 total stars
-   Why notable: The day's largest star gain and the highest total-star project in the snapshot; it shows how strongly reusable agent instructions are resonating.
+## Top Repositories
 
-2. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — A deliberately minimal AI-agent approach: avoid writing code when it is unnecessary.
-   Language: JavaScript | 2,845 stars today | 127,935 total stars
-   Why notable: The biggest one-day gain among the listed projects, suggesting broad interest in agent workflow efficiency rather than only model capability.
+1. **[mattpocock/skills - Skills for Real Engineers, drawn from the author's agents directory.](https://github.com/mattpocock/skills)**
 
-3. [affaan-m/ECC](https://github.com/affaan-m/ECC) — An agent-harness performance system covering skills, memory, security, research, and multiple coding agents.
-   Language: JavaScript | 1,314 stars today | 249,892 total stars
-   Why notable: Its cross-agent positioning and very large existing community make it one of the day's strongest ecosystem signals.
+  **Language:** Shell | **Stars gained in window:** +2,692 | **Total stars:** 253,366 | **Why notable:** A leading daily mover centered on reusable agent skills for engineering workflows.
 
-4. [blader/humanizer](https://github.com/blader/humanizer) — An agent skill intended to remove signs of AI-generated writing.
-   Language: Python | 990 stars today | 43,477 total stars
-   Why notable: It reflects a practical second-order problem around widespread AI-assisted writing: making output sound less synthetic.
+2. **[affaan-m/ECC - Agent harness performance optimization system with skills, memory, security, and research-first development.](https://github.com/affaan-m/ECC)**
 
-5. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) — 38 editorial diagram types implemented as self-contained HTML and SVG.
-   Language: HTML | 855 stars today | 31,688 total stars
-   Why notable: It connects agent workflows with a concrete design-production asset rather than another general coding harness.
+  **Language:** JavaScript | **Stars gained in window:** +1,314 | **Total stars:** 250,342 | **Why notable:** It combines agent tooling and operational practices and has the highest total-star count among today's leading entries.
 
-6. [anomalyco/opencode](https://github.com/anomalyco/opencode) — An open-source coding agent.
-   Language: TypeScript | 725 stars today | 204,674 total stars
-   Why notable: A major established project continuing to attract substantial daily attention in the open coding-agent category.
+3. **[DietrichGebert/ponytail - An AI-agent approach to avoiding unnecessary code and implementation.](https://github.com/DietrichGebert/ponytail)**
 
-7. [magnitudedev/magnitude](https://github.com/magnitudedev/magnitude) — An open-source local inference server that plugs into several existing agents.
-   Language: TypeScript | 674 stars today | 3,200 total stars
-   Why notable: It captures the push toward local model serving as an interchangeable layer beneath agent products.
+  **Language:** JavaScript | **Stars gained in window:** +2,845 | **Total stars:** 128,477 | **Why notable:** Its daily gain is the strongest acceleration shown on the Trending page.
 
-8. [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) — An agent that grows with its user.
-   Language: Python | 575 stars today | 242,003 total stars
-   Why notable: A high-total-star agent project still appearing prominently in today's momentum list, alongside the newer skills/harness wave.
+4. **[NousResearch/hermes-agent - An agent that grows with you.](https://github.com/NousResearch/hermes-agent)**
 
-9. [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's public repository for Agent Skills.
-   Language: Python | 475 stars today | 174,562 total stars
-   Why notable: Its placement reinforces that standardized, shareable agent capabilities are becoming a first-class open-source artifact.
+  **Language:** Python | **Stars gained in window:** +575 | **Total stars:** 242,174 | **Why notable:** A major daily Trending entry in the agent category, with broad interest in an extensible personal coding and research agent.
 
-10. [ruvnet/ruflo](https://github.com/ruvnet/ruflo) — A meta-harness for multi-agent swarms, autonomous workflows, memory, and RAG.
-    Language: TypeScript | 136 stars today | 70,692 total stars
-    Why notable: It represents the orchestration end of the trend: coordinating multiple agents rather than improving a single coding assistant.
+5. **[fmtlib/fmt - A modern C++ formatting library.](https://github.com/fmtlib/fmt)**
 
-Trending technologies and themes
+  **Language:** C++ | **Stars gained in window:** +134 | **Total stars:** 25,595 | **Why notable:** It is the notable non-agent infrastructure/library entry in the top five.
 
-- Agent skills and reusable instructions: mattpocock/skills, anthropics/skills, humanlayer/skills, and humanizer all point to a growing packaging layer around agent behavior.
-- Coding-agent infrastructure: ECC, opencode, hermes-agent, and ruflo focus on harnesses, memory, security, orchestration, or agent execution rather than standalone models.
-- Local and interoperable inference: magnitude positions local model serving as a backend that can plug into multiple agents.
-- JavaScript/TypeScript dominance in tooling: ECC and ponytail are JavaScript; opencode, ruflo, diagram-design's surrounding ecosystem, and magnitude are TypeScript-oriented. Python remains prominent for agent skills and automation.
-- AI-assisted creative production: diagram-design targets visual communication, while humanizer targets the presentation layer of generated text.
+6. **[anthropics/skills - Public repository for Agent Skills.](https://github.com/anthropics/skills)**
 
-Notable shift
+  **Language:** Python | **Stars gained in window:** +475 | **Total stars:** 174,699 | **Why notable:** Its appearance reinforces that portable agent skills are a central trend rather than a one-repository spike.
 
-The strongest signal is the move from “build an AI application” toward “build the operating layer around AI agents”: skills, harnesses, memory, orchestration, local inference, and output quality. Today's list is also unusually concentrated in projects that can be inserted into an existing coding-agent workflow.
+7. **[cathrynlavery/diagram-design - Editorial diagram patterns for Claude Code, Codex, and Pi using HTML and SVG.](https://github.com/cathrynlavery/diagram-design)**
 
-Sources
+  **Language:** HTML | **Stars gained in window:** +855 | **Total stars:** 31,906 | **Why notable:** It shows agent-assisted production expanding beyond code into structured visual communication.
 
-- GitHub Trending daily: https://github.com/trending?since=daily
-- GitHub REST API repository metadata: https://api.github.com/repos/{owner}/{repo}
+8. **[anomalyco/opencode - An open-source coding agent.](https://github.com/anomalyco/opencode)**
 
-Note: GitHub's Trending page is an unofficial, time-sensitive ranking. Star counts may change during the day; the listed daily gains are the values shown at snapshot time.
+  **Language:** TypeScript | **Stars gained in window:** +725 | **Total stars:** 204,865 | **Why notable:** One of the strongest established coding-agent projects by both total stars and daily gain.
+
+9. **[ruvnet/ruflo - Agent meta-harness for multi-agent swarms, autonomous workflows, memory, and RAG.](https://github.com/ruvnet/ruflo)**
+
+  **Language:** TypeScript | **Stars gained in window:** +136 | **Total stars:** 70,790 | **Why notable:** It represents the shift from single agents toward coordinated agent teams and workflow orchestration.
+
+10. **[humanlayer/skills - A TypeScript-based agent skills repository.](https://github.com/humanlayer/skills)**
+
+  **Language:** TypeScript | **Stars gained in window:** +442 | **Total stars:** 2,874 | **Why notable:** Its presence rounds out a cluster of skills-focused repositories appearing simultaneously in today's ranking.
+
+## Trending Technologies and Themes
+
+- **Agent skills and harnesses:** mattpocock/skills, affaan-m/ECC, anthropics/skills, humanlayer/skills, and WorldFlowAI/everything-claude-code all focus on making agent behavior reusable, configurable, or more reliable.
+- **Coding agents and orchestration:** NousResearch/hermes-agent, anomalyco/opencode, and ruvnet/ruflo point to continued interest in autonomous coding and multi-agent workflows.
+- **Languages:** JavaScript appears in the largest number of the top entries, followed by TypeScript and Python; Shell, C++, and HTML are also represented.
+
+## Notable Shifts
+
+The clearest shift is from standalone AI applications toward the tooling layer around agents: skills, harnesses, memory, orchestration, and agent-compatible developer workflows. The concentration of related repositories across multiple organizations suggests a broad ecosystem trend rather than a single project briefly going viral.
+
+## Takeaway
+
+GitHub's daily leaderboard is heavily concentrated around practical agent infrastructure, especially reusable skills and coding-agent harnesses. Established projects such as Hermes Agent and OpenCode are gaining alongside newer skills-focused repositories, indicating that developers are competing to make agents more capable, controllable, and easier to integrate into everyday engineering work.
+
+## Sources and Method
+
+- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily).
+- **Corroboration:** [GitHub Search API - repositories created since 2026-09-04](https://api.github.com/search/repositories?q=created:%3E=2026-09-04&sort=stars&order=desc&per_page=20) and [repositories pushed since 2026-09-05](https://api.github.com/search/repositories?q=pushed:%3E=2026-09-05&sort=stars&order=desc&per_page=20).
+- **Method note:** Rankings and stars gained come from the matching daily GitHub Trending view; the GitHub Search API was used to corroborate current repository metadata and freshness, not to replace Trending's daily star-gain figures.

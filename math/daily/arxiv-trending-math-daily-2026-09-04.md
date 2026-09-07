@@ -1,96 +1,121 @@
-# arXiv mathematics: inferred daily highlights
+# arXiv Trending Mathematics — daily snapshot
 
 ## Headline
-The strongest cluster in the latest mathematics announcement is a three-paper completion of the canonical metric program for CLE_4, alongside several high-visibility claimed resolutions or advances: Catalan's constant irrationality, a long-standing Coulomb-equilibrium finiteness conjecture, and a first level-aspect subconvexity result for a GL_3 symmetric-square L-function. This is an inferred “hot” list, not an official arXiv ranking or readership chart.
+
+The strongest inferred signals in the latest mathematics announcement batch are a three-paper CLE₄ probability/geometry series, a claimed resolution of the irrationality of Catalan's constant, and a finiteness theorem for equilibria of Coulomb fields. The batch also contains technically important advances in automorphic subconvexity and Shimura varieties. This is an inferred shortlist, not an official arXiv trending ranking: arXiv publishes no readership or popularity chart.
 
 ## Top papers (ranked)
 
 ### 1. [Catalan's constant is irrational](https://arxiv.org/abs/2609.04176)
-- **Abstract:** The paper claims to prove that Catalan's constant G = 1 - 1/3^2 + 1/5^2 - ... is irrational by using suitable weights.
+- **Abstract:** The paper claims to prove that Catalan's constant G is irrational by using suitable weights.
 - **Authors:** Zhi-Wei Sun
 - **arXiv:** `2609.04176v1` (published 2026-09-03 17:55 UTC; categories: `math.GM`)
-- **Evidence for ranking:** The abstract claims a result on a long-standing open problem, and web search found rapid independent discussion and multiple pages repeating the claim within days of submission. Semantic Scholar citation fields were unavailable because its API rate-limited this snapshot; no citation count is inferred.
-- **Claimed result:** The author claims irrationality of Catalan's constant, using weighted identities/tails; this is an author claim in a new, unrefereed preprint.
-- **Assumptions and setting:** The target is the classical Catalan constant, an alternating odd reciprocal-square series; the abstract gives no broader conditional hypotheses.
-- **Caveat:** The claim requires expert verification of the 20-page proof; online attention is not evidence that the argument is correct.
-- **Announcement type:** new submission, announcement-batch date 2026-09-04
+- **Evidence for ranking:** A direct claim on a long-standing, widely recognizable open problem gives this paper unusually high potential significance and likely attention; Google results also surface multiple prior discussions of the problem. Semantic Scholar lookup was rate-limited for this record, so citation counts are unavailable rather than treated as zero.
+- **Claimed result:** The author writes that the irrationality of G is proved using suitable weights; this is an unrefereed preprint claim.
+- **Assumptions and setting:** G is the alternating odd reciprocal-square series, equivalently Catalan's constant; the abstract gives no further hypotheses.
+- **Caveat:** The abstract does not expose the proof, and the result requires expert checking, especially because the problem has a long history of purported proofs.
+- **Announcement type:** new submission, 2026-09-04 announcement batch
 - **Themes:** Algebra & number theory
 
 ### 2. [The conformally invariant metric on CLE$_4$ III: uniqueness](https://arxiv.org/abs/2609.04140)
-- **Abstract:** The final paper in a three-part series proves uniqueness and measurability of the canonical conformally invariant local metric on CLE_4 loops and upgrades the renormalized CLE_kappa graph-metric convergence to a full limit as kappa decreases to 4.
+- **Abstract:** The third paper in a series proves uniqueness and measurability of the canonical conformally invariant local metric on CLE₄ loops and upgrades convergence as κ↓4 from subsequential to full convergence.
 - **Authors:** Emmanuel Kammerer, Konstantinos Kavvadias, Jason Miller, Yi Tian
 - **arXiv:** `2609.04140v1` (published 2026-09-03 17:32 UTC; categories: `math.PR`, `math-ph`, `math.CV`)
-- **Evidence for ranking:** It is the capstone of a tightly connected three-paper cross-listed series spanning probability, mathematical physics, and complex variables; web search surfaced the paper and the series prominently. Semantic Scholar returned 0 citations and 0 influential citations for a companion paper checked, as expected for a three-day-old submission; period citation gains are unavailable.
-- **Claimed result:** The authors claim that the metric is uniquely characterized by its properties, its geodesics are likewise characterized, and convergence occurs without passing to a subsequence.
-- **Assumptions and setting:** The setting is the critical conformal loop ensemble CLE_4; the metric is local and conformally invariant, and its boundary growth is identified with the uniform exploration of Werner and Wu.
-- **Caveat:** This is a preprint claim; the abstract does not establish how the construction interacts with later applications, and the technical proof is 107 pages.
-- **Announcement type:** new submission, announcement-batch date 2026-09-04
-- **Themes:** Probability & statistics; Mathematical physics; Geometry & topology
+- **Evidence for ranking:** It is the culmination of a highly visible three-paper program, cross-listed across probability, mathematical physics, and complex variables; independent search results prominently return the series and its PDFs. Semantic Scholar reported 0 citations and 0 influential citations at snapshot time.
+- **Claimed result:** The authors state that the metric and its geodesics are uniquely characterized, are measurable functions of CLE₄, and arise as a true renormalized limit rather than only a subsequential one.
+- **Assumptions and setting:** The setting is conformal loop ensemble CLE₄; the metric is local, conformally invariant, and tied to the uniform exploration of Werner and Wu.
+- **Caveat:** The conclusions are attributed to the preprint; the technical proof is 107 pages and has not been independently verified here.
+- **Announcement type:** new submission, 2026-09-04 announcement batch
+- **Themes:** Probability & statistics; Geometry & topology; Mathematical physics
 
-### 3. [The finiteness conjecture for equilibria of electric fields generated by point charges of one sign](https://arxiv.org/abs/2609.03965)
-- **Abstract:** The paper claims that a three-dimensional Coulomb field generated by finitely many same-sign point charges has only finitely many equilibrium points, and gives an explicit bound for mixed-sign charges away from a specified exceptional set.
+### 3. [The conformally invariant metric on CLE$_4$ I: subsequential limits of the non-simple CLE graph metric](https://arxiv.org/abs/2609.04138)
+- **Abstract:** The first paper constructs a nontrivial conformally invariant, local, geodesic metric on CLE₄ as a subsequential renormalized limit of graph metrics on CLEκ as κ↓4.
+- **Authors:** Emmanuel Kammerer, Konstantinos Kavvadias, Jason Miller, Yi Tian
+- **arXiv:** `2609.04138v1` (published 2026-09-03 17:31 UTC; categories: `math.PR`, `math-ph`, `math.CV`)
+- **Evidence for ranking:** It launches the same cross-disciplinary CLE₄ program as ranks 2 and 4 and is returned prominently by searches for the series; Semantic Scholar was rate-limited after partial querying, so no reliable citation count is reported.
+- **Claimed result:** The authors claim existence of subsequential limits defining the metric, with metric-ball growth from the boundary given by the uniform exploration of Werner and Wu.
+- **Assumptions and setting:** CLEκ approaches the critical value κ=4 from above; CLE₄ loops are simple and mutually disjoint.
+- **Caveat:** This paper proves only subsequential existence; the full-limit and uniqueness statements belong to later papers in the series and remain preprint claims.
+- **Announcement type:** new submission, 2026-09-04 announcement batch
+- **Themes:** Probability & statistics; Geometry & topology; Mathematical physics
+
+### 4. [The finiteness conjecture for equilibria of electric fields generated by point charges of one sign](https://arxiv.org/abs/2609.03965)
+- **Abstract:** The paper claims to answer a question dating to 1969 by proving that a three-dimensional Coulomb field generated by finitely many same-sign point charges has only finitely many equilibrium points, and gives an explicit bound in a more general mixed-sign region.
 - **Authors:** Alberto Enciso, Daniel Peralta-Salas
 - **arXiv:** `2609.03965v1` (published 2026-09-03 15:00 UTC; categories: `math.DS`, `math-ph`, `math.CA`)
-- **Evidence for ranking:** The abstract presents an answer to a question originating with Morse and Cairns in 1969 and later formulated as a conjecture; web search found independent indexing and discussion soon after submission. Semantic Scholar citation counts were unavailable due to API rate limiting.
-- **Claimed result:** For same-sign charges, the authors claim finiteness of all equilibria; more generally they claim an upper bound of `2^(N-4)(N-1)(9N^2+9N+10)` in the nonvanishing-S region.
-- **Assumptions and setting:** Charges lie at distinct sites in R^3; the one-sign case makes the auxiliary sum S nonzero everywhere. The proof combines algebraic geometry, complex analysis, and a Bézout count.
-- **Caveat:** Mixed-sign fields can have equilibrium curves inside the zero set of S; the claimed theorem is a preprint and the bound is not necessarily sharp.
-- **Announcement type:** new submission, announcement-batch date 2026-09-04
-- **Themes:** Analysis & PDE; Mathematical physics; Geometry & topology
+- **Evidence for ranking:** It claims a concrete resolution of a named historical question, supplies an explicit quantitative bound, and bridges dynamical systems, classical analysis, and mathematical physics; search results include the arXiv abstract, HTML, PDF, and a separate math archive listing. Semantic Scholar counts were unavailable because of rate limiting.
+- **Claimed result:** For same-sign charges, the number of equilibria is finite; for mixed signs, the paper gives the bound `2^(N-4)(N-1)(9N^2+9N+10)` where the stated nonvanishing condition holds.
+- **Assumptions and setting:** Point charges are at distinct sites in R³; the same-sign case ensures the auxiliary scalar S does not vanish everywhere.
+- **Caveat:** Mixed-sign fields can have equilibrium curves inside the zero set of S, so the general bound is explicitly restricted; the proof has not been checked here.
+- **Announcement type:** new submission, 2026-09-04 announcement batch
+- **Themes:** Dynamical systems; Mathematical physics; Analysis & PDE
 
-### 4. [The subconvexity problem for symmetric square L-functions in level aspect](https://arxiv.org/abs/2609.04155)
-- **Abstract:** For a specified class of tempered GL_2 representations of conductor p^2, the paper claims a level-aspect subconvex bound for the central value of the symmetric-square L-function.
+### 5. [The conformally invariant metric on CLE$_4$ II: existence of geodesics](https://arxiv.org/abs/2609.04139)
+- **Abstract:** The second paper proves existence of geodesics for the CLE₄ metric and establishes quantitative estimates including exponential rectangle-distance tails and multiscale SLE₄ non-intersection bounds.
+- **Authors:** Emmanuel Kammerer, Konstantinos Kavvadias, Jason Miller, Yi Tian
+- **arXiv:** `2609.04139v1` (published 2026-09-03 17:32 UTC; categories: `math.PR`, `math-ph`, `math.CV`)
+- **Evidence for ranking:** It is the middle component of the same prominent three-paper, cross-subfield series and has been independently surfaced in search results; Semantic Scholar reported 0 citations and 0 influential citations for the queried record.
+- **Claimed result:** The authors claim that geodesics between loops exist, are supported on CLE₄ loops except for a Hausdorff-dimension-zero set, and avoid the domain boundary.
+- **Assumptions and setting:** CLE₄ is at the critical parameter where loops are simple and disjoint; the metric is the conformally invariant local metric constructed in the series.
+- **Caveat:** This paper depends conceptually on the series' metric construction, and its conclusions remain unrefereed preprint claims.
+- **Announcement type:** new submission, 2026-09-04 announcement batch
+- **Themes:** Probability & statistics; Geometry & topology; Mathematical physics
+
+### 6. [The subconvexity problem for symmetric square L-functions in level aspect](https://arxiv.org/abs/2609.04155)
+- **Abstract:** For a specified class of tempered GL₂ automorphic representations, the paper claims a level-aspect subconvex bound for the central value of a symmetric-square L-function, with exponent 1/4−1/168+o(1).
 - **Authors:** Pratim Mitra
 - **arXiv:** `2609.04155v1` (published 2026-09-03 17:48 UTC; categories: `math.NT`)
-- **Evidence for ranking:** The abstract calls this the first level-aspect subconvex bound for an L-function of a GL_3(Q) automorphic representation, a concrete advance on a recognized difficult problem; web search returned the arXiv paper and related subconvexity material. Semantic Scholar citation data was unavailable in this snapshot.
-- **Claimed result:** Under the stated local conditions, the author claims `L(1/2, Sym^2 pi) << q(Sym^2 pi)^(1/4 - 1/168 + o(1))`.
-- **Assumptions and setting:** The representation is tempered and cuspidal on GL_2(Q), has conductor p^2 and a non-quadratic central character of conductor p, and its local component belongs to a class S. The method uses the delta-symbol method, hypergeometric sums, and Deligne's Weil-conjecture work.
-- **Caveat:** The result applies only to the specified local-ramification class, and the abstract does not establish a general GL_3 level-aspect theorem.
-- **Announcement type:** new submission, announcement-batch date 2026-09-04
+- **Evidence for ranking:** The abstract claims a first GL₃(Q) level-aspect subconvex bound and combines the delta-symbol method with Katz hypergeometric sums and Deligne's Weil-conjecture work; Semantic Scholar reported 0 citations and 0 influential citations.
+- **Claimed result:** Under the stated local representation condition, the author claims `L(1/2, Sym²π) ≪ q(Sym²π)^(1/4−1/168+o(1))`.
+- **Assumptions and setting:** π is tempered, cuspidal on GL₂(Q), has conductor p² and non-quadratic central character of conductor p, and its local component lies in a specified class S.
+- **Caveat:** The bound is conditional on a narrow local class and the abstract's asymptotic notation; the proof and comparison with the literature need specialist review.
+- **Announcement type:** new submission, 2026-09-04 announcement batch
 - **Themes:** Algebra & number theory
 
-### 5. [Oort's conjecture for split unitary Shimura varieties](https://arxiv.org/abs/2609.04072)
-- **Abstract:** The paper claims a generic automorphism-group result for the basic stratum of split unitary Shimura varieties, with only a few degenerate exceptions.
+### 7. [Oort's conjecture for split unitary Shimura varieties](https://arxiv.org/abs/2609.04072)
+- **Abstract:** The paper claims that generically on the basic stratum of split unitary Shimura varieties, the automorphism group of the universal polarized abelian variety with endomorphisms is {±1}, apart from degenerate cases.
 - **Authors:** Paul Philippe, Fabian Schnelle, Eva Viehmann
 - **arXiv:** `2609.04072v1` (published 2026-09-03 16:43 UTC; categories: `math.AG`, `math.NT`)
-- **Evidence for ranking:** It addresses a named conjectural analogue of Oort's automorphism question and bridges algebraic geometry and number theory; the paper was among the most prominent substantive results in the latest 50-item announcement page. Semantic Scholar reported 0 citations and 0 influential citations for this paper at the snapshot, so no citation momentum is claimed.
-- **Claimed result:** Generically on the basic stratum, the universal polarized abelian variety with endomorphism structure has automorphism group `{+/-1}`, apart from a few degenerate cases; the paper also computes the generic automorphism group of the associated universal p-divisible group.
-- **Assumptions and setting:** The setting is split unitary Shimura varieties and their basic strata, with universal abelian varieties, polarization, endomorphism structure, and a fixed basic isogeny class.
-- **Caveat:** “Generically” and the exceptional cases are essential; the abstract does not enumerate them, and the result remains an unrefereed preprint.
-- **Announcement type:** new submission, announcement-batch date 2026-09-04
+- **Evidence for ranking:** It directly targets an analogue of Oort's conjecture and crosses algebraic geometry and number theory; search results include an independent database commentary that explicitly labels the theorem unrefereed and unverified. Semantic Scholar counts were unavailable because of rate limiting.
+- **Claimed result:** The authors claim the generic automorphism group is {±1} and compute the generic automorphism group of the associated p-divisible group in a basic isogeny class.
+- **Assumptions and setting:** The setting is the basic stratum of split unitary Shimura varieties, with universal abelian varieties carrying the relevant endomorphism structure and polarization.
+- **Caveat:** The source checked outside arXiv explicitly warns that the claim remains unrefereed and unverified; degenerate cases are excluded.
+- **Announcement type:** new submission, 2026-09-04 announcement batch
 - **Themes:** Algebra & number theory; Geometry & topology
 
 ## Trending mathematical themes
 
-- Probability and mathematical physics are represented by a coherent CLE_4 series rather than isolated papers: subsequential metric limits, geodesics, and uniqueness appear together in arXiv:2609.04138–2609.04140.
-- Long-standing-problem papers are unusually visible in this batch: Catalan irrationality (2609.04176) and Coulomb-equilibrium finiteness (2609.03965) both make explicit historical claims.
-- Cross-field methods remain prominent: the CLE work links probability, complex variables, and mathematical physics; the Coulomb work links dynamical systems, complex analysis, and algebraic geometry; the L-function paper combines analytic number theory with finite-field exponential-sum technology.
+- **Critical random geometry:** The CLE₄ trilogy (2609.04138–2609.04140) develops a metric, geodesics, and uniqueness as κ approaches the critical value 4, linking probability, SLE/CLE geometry, and mathematical physics.
+- **Long-standing finiteness or irrationality questions:** The Catalan-constant paper and the Coulomb-equilibria paper both make unusually strong resolution claims, but they need independent verification before being treated as settled results.
+- **Arithmetic bounds with geometric input:** The subconvexity paper uses exponential-sum technology, while the Shimura paper studies automorphisms through p-divisible groups; both show active interaction between arithmetic geometry and analytic/representation-theoretic methods.
 
 ## Research opportunities
 
 ### Potential research areas
-- Verify and extend the weighted-tail strategy for Catalan's constant, especially by isolating the exact irrationality criterion and testing related constants; tied to 2609.04176.
-- Develop applications of the canonical CLE_4 metric and compare it with other random-geometric metrics; tied to 2609.04138–2609.04140.
-- Extend level-aspect subconvexity beyond the local representation class S and toward broader GL_3 families; tied to 2609.04155.
+
+- **CLE₄ metric geometry and scaling limits:** Extend the metric/geodesic framework to related CLE parameters, other observables, or quantitative dimension questions, building on 2609.04138–2609.04140.
+- **Verification and generalization of explicit resolution claims:** Reproduce the weighted irrationality argument for Catalan's constant and test whether the Coulomb-equilibrium method yields sharper bounds or higher-dimensional analogues (2609.04176, 2609.03965).
 
 ### Unsolved problems
-- The Catalan irrationality claim remains an author claim until independent proof checking; tied to 2609.04176.
-- Mixed-sign Coulomb fields may have equilibrium curves on S=0, so classification outside the nonvanishing-S region remains open in the scope stated by 2609.03965.
-- The exceptional and nongeneric cases in the unitary Shimura setting require separate analysis; tied to 2609.04072.
+
+- **Catalan's constant:** The abstract reports a claimed proof of irrationality, not transcendence; transcendence remains outside the stated result (2609.04176).
+- **CLE₄ and neighboring models:** The papers establish their stated CLE₄ program, but extensions beyond the critical setting and further metric observables are not settled by these abstracts (2609.04138–2609.04140).
+- **Oort-type automorphism questions:** The result excludes degenerate cases and is explicitly an unrefereed preprint claim (2609.04072).
 
 ### Potential research directions
-- Stress-test the CLE_4 metric's uniqueness and convergence under related observables or neighboring CLE parameters; tied to 2609.04138–2609.04140.
-- Seek sharper or structurally informed equilibrium bounds, and characterize when the mixed-sign exceptional curves occur; tied to 2609.03965.
-- Replace the prescribed local ramification in the subconvexity theorem with broader conductor patterns; tied to 2609.04155.
+
+- **Stress-test the number-theoretic claims:** Check every hypothesis and quantify the weights in the Catalan argument; compare the claimed Coulomb bound with configurations attaining known lower bounds (2609.04176, 2609.03965).
+- **Broaden the subconvexity regime:** Remove or weaken the prescribed local representation condition, or seek stronger exponents using the same delta-symbol and hypergeometric-sum toolkit (2609.04155).
+- **Make the CLE₄ construction computationally observable:** Develop numerical or discrete approximations that test the claimed metric convergence and geodesic structure as κ↓4 (2609.04138–2609.04140).
 
 ## Takeaway
-The most credible mathematical momentum is concentrated in concrete, high-impact claims rather than measured citation activity: the archive is too fresh for citation counts to discriminate papers. Catalan's constant is the likely attention leader, while the CLE_4 trilogy and the Coulomb finiteness result look like the most structurally significant contributions in the announcement batch. All results above are preprints and should be treated as claims pending expert verification.
+
+The batch is unusually concentrated in papers claiming sharp structural resolutions: a complete CLE₄ metric program, a finiteness theorem answering a historical question, and a possible breakthrough on Catalan's constant. Because all selected papers are very new, citation counts are mostly zero or unavailable and cannot measure actual readership; the ranking therefore emphasizes concrete claims, cross-field reach, and corroborated search visibility rather than popularity.
 
 ## Method and sources
 
-- Window: daily; latest available arXiv Mathematics announcement batch, 2026-09-04. There was no 2026-09-06 or 2026-09-05 mathematics announcement batch visible in the recent listing at the snapshot; the report therefore uses the latest batch.
-- Snapshot: 2026-09-06 00:20 UTC.
-- Scope: arXiv Mathematics recent listing, including primary `math.*` categories and cross-lists shown on each abstract page. The batch contained 322 entries; candidates were selected from the first 50 displayed entries and verified on their abstract pages.
-- Ranking: inferred from concrete claimed results, historical/conjectural significance, cross-subfield reach, and corroborating web-search attention. arXiv supplies no official trending chart; this is not a most-read or most-downloaded ranking. Semantic Scholar was queried where possible; its API rate limiting made citation signals sparse, and current totals were not treated as period gains.
-- Primary sources: [arXiv Mathematics recent submissions](https://arxiv.org/list/math/recent), and the linked arXiv abstract pages for each paper.
-- External attention checks: targeted web searches for the Catalan, CLE_4, Coulomb, and subconvexity papers. Search results corroborate discoverability, not correctness.
+- **Window:** daily; latest available arXiv Mathematics announcement batch, 2026-09-04. The run snapshot was 2026-09-07 00:20 UTC; no new Mathematics batch was shown for the weekend interval.
+- **Coverage:** arXiv `math` recent listing, including cross-listed `math-ph`, `math.CV`, and related mathematics categories shown on the abstract pages.
+- **Selection:** inferred shortlist from the 322 papers in the 2026-09-04 batch, prioritizing concrete resolution claims, cross-subfield work, series-level coherence, and independent search visibility. arXiv supplies no official trending ranking.
+- **Attention data:** Semantic Scholar Graph API was queried for the candidates; some records returned 0 citations and 0 influential citations, while other requests were rate-limited (HTTP 429). Counts are current totals, not gains during this window.
+- **Primary sources:** arXiv recent Mathematics listing: https://arxiv.org/list/math/recent ; individual abstract pages linked above. Independent search results were used only as corroboration, not as proof of correctness.

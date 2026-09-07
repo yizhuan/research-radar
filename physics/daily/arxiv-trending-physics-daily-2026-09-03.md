@@ -1,135 +1,107 @@
-Headline
+# arXiv trending physics — daily snapshot
 
-The strongest inferred signals in the latest physics announcement batch are advances that make difficult measurements or simulations more practical: a first real-time 3+1D lattice-QED string-breaking simulation, a first two-hadron form factor extracted from QCD, and interaction-enhanced nanoscale magnetometry. These are notable recent papers, not an official arXiv popularity ranking: arXiv publishes no trending chart.
+## Headline
+The strongest signal in the latest physics announcement batch is a rapid cluster around interpreting LUX-ZEPLIN's isolated 248 keV recoil, alongside advances in quantum information and integrated quantum-photon sources. This is an inferred “hot” list, not an official arXiv popularity ranking.
 
 ## Top papers (ranked)
 
-### 1. [First Two-Hadron Form Factor from QCD](https://arxiv.org/abs/2609.04142)
-- **Abstract:** The authors determine the energy-dependent electromagnetic form factor of a two-hadron scattering state for the first time from lattice QCD, using the forward π+π+ + γ → π+π+ amplitude at mπ ≈ 400 MeV and a finite-volume formalism.
-- **Authors:** Felipe G. Ortega-Gama, Raúl A. Briceño, Ivan M. Burbano, Robert G. Edwards
-- **arXiv:** `2609.04142v1` (published 2026-09-03 17:33 UTC; categories: `hep-lat`, `hep-ph`, `nucl-th`)
-- **Evidence for ranking:** The abstract claims a first-of-kind QCD determination and validation against the Ward–Takahashi identity; the paper is cross-listed across lattice, particle, and nuclear theory. Independent search results surfaced the arXiv abstract, PDF, HTML paper, and a research summary. Semantic Scholar counts were unavailable because its API rate-limited the lookup.
-- **Claimed result:** Combining finite-volume spectra and current matrix elements, the authors constrain the infinite-volume amplitude and describe it with a single real-valued energy-dependent two-hadron form factor that agrees with the Ward–Takahashi identity across the tested energies and frames.
-- **Evidence type:** Computational/theoretical; lattice-QCD three-point correlation functions, finite-volume spectra, and finite-volume matrix elements.
-- **Caveat:** The calculation uses mπ ≈ 400 MeV rather than the physical pion mass and studies the forward π+π+ channel; extension to physical masses, other channels, and resonances remains future work.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
-- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
+### 1. [Confronting the Higgsino Interpretation of the LZ Event with the High-Energy Sideband](https://arxiv.org/abs/2609.04175)
+- **Abstract:** The authors test whether a 248 keV LUX-ZEPLIN recoil can be explained by inelastic higgsino dark matter and find that the proposed thermal interpretation may overproduce events in an unreported high-energy sideband.
+- **Authors:** Nicholas L. Rodd, Benjamin R. Safdi, Tracy R. Slatyer, Weishuang Linda Xu
+- **arXiv:** `2609.04175v1` (published 2026-09-03 17:54 UTC; categories: `hep-ph`, `astro-ph.CO`)
+- **Evidence for ranking:** Substantive cross-listing between particle phenomenology and cosmology; directly addresses the contemporaneous LZ event; independent arXiv HTML/PDF indexing. Semantic Scholar citation fields were checked but rate-limited (no verified count available).
+- **Claimed result:** The paper argues that a ~1.1 TeV thermal higgsino fitting the event rate and spectrum would generally predict additional high-energy-sideband events, while a non-thermal ~500 GeV scenario may evade the constraint; the authors call for an LZ acceptance check and future heavy-target tests.
+- **Evidence type:** theoretical/phenomenological; interpretation of an LZ xenon exposure and recoil spectrum.
+- **Caveat:** The sideband acceptance is not public, so the claimed tension cannot yet be quantified definitively; the result depends on the Galactic velocity distribution and model assumptions.
+- **Announcement type:** new submission, 2026-09-03 batch
+- **Themes:** Particle, nuclear & high-energy physics; Cosmology & gravitation; Instrumentation & detectors
 
-### 2. [Real-Time String Dynamics in $3+1$D Lattice Quantum Electrodynamics](https://arxiv.org/abs/2609.04114)
-- **Abstract:** The authors present what they describe as the first real-time simulation of string breaking in 3+1D lattice QED, resolving resonant pair production and off-resonant string deformations, extensions, and flux-loop channels.
-- **Authors:** Helen Zwölfer, Giovanni Cataldi, Umberto Borla, Jad C. Halimeh
-- **arXiv:** `2609.04114v1` (published 2026-09-03 17:18 UTC; categories: `hep-lat`, `cond-mat.quant-gas`, `hep-ph`, `hep-th`, `quant-ph`)
-- **Evidence for ranking:** A first 3+1D real-time result with five physics cross-lists and direct relevance to upcoming quantum simulators; independent search results returned the arXiv paper and SciRate record. Semantic Scholar counts were unavailable because its API rate-limited the lookup.
-- **Claimed result:** Tree tensor networks reproduce quench dynamics of electric-flux strings; at strong coupling, string breaking is resonant at a sharp mass/coupling condition, while a channel-resolved perturbation theory quantitatively reproduces the dynamics and Fourier spectrum.
-- **Evidence type:** Computational; tree-tensor-network simulation of a 3+1D U(1) lattice gauge theory with dynamical matter.
-- **Caveat:** The work is a U(1) lattice-QED simulation at strong coupling, not a direct simulation of QCD; the authors present it as a benchmark for future quantum simulators rather than an experimental result.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
-- **Themes:** Particle, nuclear & high-energy physics; Quantum information; Computational & data methods
+### 2. [Quantum communication and Bell nonlocality require infinite classical communication to simulate](https://arxiv.org/abs/2609.04182)
+- **Abstract:** The authors solve finite-classical-communication simulation questions for every finite quantum dimension, finding a transition at dimension four while giving an exact 357-bit protocol for qutrit communication.
+- **Authors:** Carlos de Gois, Thyago S. R. Santos, Carlos Vieira
+- **arXiv:** `2609.04182v1` (published 2026-09-03 17:57 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** Fundamental result with a sharp qualitative claim; indexed by arXiv, PDF, and HTML; independent expert discussion was found on SciRate. Semantic Scholar was rate-limited when queried, so no citation count is asserted.
+- **Claimed result:** Exact simulation is possible with finite classical communication for qubits and qutrits—the latter using 357 bits—but no finite amount suffices for ququart communication or all two-ququart entangled correlations, even with shared randomness.
+- **Evidence type:** theoretical; explicit communication protocols and impossibility arguments.
+- **Caveat:** The conclusions concern exact simulation and finite-dimensional systems; approximate simulation, resource trade-offs, and operational relevance to noisy experiments remain separate questions.
+- **Announcement type:** new submission, 2026-09-03 batch
+- **Themes:** Quantum information
 
-### 3. [Nanoscale magnetometry via collective many-body dynamics in diamond](https://arxiv.org/abs/2609.03039)
-- **Abstract:** The authors use coherently controlled collective dynamics of about 10,000 interacting nitrogen-vacancy centres in room-temperature diamond to obtain metrological gains and detect spatially correlated magnetic noise at length scales down to 50 nm.
-- **Authors:** Haoyang Gao, Piotr Put, Nathaniel T. Leitao, Nazlı U. Köylüoğlu, Andrew Maccabe, et al.
-- **arXiv:** `2609.03039v1` (published 2026-09-02 18:09 UTC; categories: `quant-ph`, `cond-mat.dis-nn`)
-- **Evidence for ranking:** The abstract reports measured gains of 7.9(2) dB for magnetic-signal detection and 8.8(3) dB for magnetic-noise sensing, plus 50-nm spatial resolution; independent search results included the arXiv paper, HTML, PDF, and a Center for Quantum Networks record. Semantic Scholar counts were unavailable because its API rate-limited the lookup.
-- **Claimed result:** Interaction-enhanced collective control of NV spins produces practical metrological gain after experimental overheads are included and enables tunable momentum-space-resolved sensing.
-- **Evidence type:** Experimental; room-temperature diamond NV ensemble, pulsed magnetic-field gradients, and nanoscale magnetic-noise sensing.
-- **Caveat:** The abstract establishes a sensing demonstration, not a completed biological or materials-imaging application; the proposed applications require follow-up experiments in real samples.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
+### 3. [Euclid preparation. The shape of halo profiles in ΛCDM and non-standard cosmologies](https://arxiv.org/abs/2609.04192)
+- **Abstract:** The Euclid Collaboration uses cosmological N-body suites to quantify how massive neutrinos, modified gravity, and dynamical dark energy alter dark-matter halo profiles and the requirements for detecting those changes with weak lensing.
+- **Authors:** Euclid Collaboration; first five listed authors: L. Pizzuti, G. Y. Ferron, A. Ragagnin, A. M. C. Le Brun, P.-S. Corasaniti; et al.
+- **arXiv:** `2609.04192v1` (published 2026-09-03 17:59 UTC; categories: `astro-ph.CO`, `gr-qc`)
+- **Evidence for ranking:** Large collaboration release; cross-listing across cosmology and gravitation; direct relevance to Euclid systematic control; independently indexed by arXiv and INSPIRE. Citation counts were not available from Semantic Scholar because of rate limiting.
+- **Claimed result:** In simulations, modified-gravity effects reach roughly 10% in low-mass halo profiles, while neutrino and dynamical-dark-energy effects are generally a few percent; simplified Euclid forecasts require about 10^5 high-redshift haloes but only thousands at lower redshift.
+- **Evidence type:** computational/forecast; DUSTGRAIN-PF and DEMNUni N-body simulations with weak-lensing detectability estimates.
+- **Caveat:** The detectability estimates use simplified assumptions; baryonic physics, observational effects, and the full likelihood can change the practical thresholds.
+- **Announcement type:** new submission, 2026-09-03 batch
+- **Themes:** Cosmology & gravitation; Computational & data methods; Astrophysics
+
+### 4. [Twin-photon generation in a silicon nitride microresonator](https://arxiv.org/abs/2609.04171)
+- **Abstract:** The authors demonstrate frequency-degenerate twin-photon generation at telecom wavelengths in a silicon-nitride ring microresonator and also characterize the same platform as a heralded single-photon source.
+- **Authors:** Franz Pacher, Hao-Chen Yan, Alekhya Ghosh, Arghadeep Pal, Toby Bi, Hao Zhang, Li-Xing You, Hao Li, Daniela Salvoni, Shuang-You Zhang, Pascal Del’Haye
+- **arXiv:** `2609.04171v1` (published 2026-09-03 17:54 UTC; categories: `physics.optics`, `quant-ph`)
+- **Evidence for ranking:** Experimental demonstration spanning optics and quantum physics; reported performance metrics; independent indexing and an external project discussion. Semantic Scholar reports 0 citations and 0 influential citations at the snapshot, as expected for a same-day preprint.
+- **Claimed result:** Inverse four-wave mixing yields a maximum coincidence-to-accidental ratio of 5.4 ± 0.6; the platform also gives spectral purity 0.67 ± 0.05 and heralded antibunching g²h(0) = 0.0042 ± 0.0015.
+- **Evidence type:** experimental; silicon-nitride microring, inverse and spontaneous four-wave mixing at telecom wavelengths.
+- **Caveat:** The reported CAR and purity are device-specific measured values; scalability, loss budgets, and performance under networking conditions are not established by this demonstration alone.
+- **Announcement type:** new submission, 2026-09-03 batch
 - **Themes:** Quantum information; Atomic, molecular & optical physics; Instrumentation & detectors
 
-### 4. [Multi-epoch Detection of an Ultra-fast Inflow in ESP 39607: Evidence for an Accretion Cascade](https://arxiv.org/abs/2609.03019)
-- **Abstract:** Simultaneous XRISM, XMM-Newton, and NuSTAR observations of a Seyfert 2 galaxy reveal Fe absorption consistent with gas inflowing at about 0.16c across multiple epochs.
-- **Authors:** Alessandro Peca, Michael J. Koss, Roberto Serafinelli, C. Megan Urry, Claudio Ricci, et al.
-- **arXiv:** `2609.03019v1` (published 2026-09-02 18:00 UTC; categories: `astro-ph.HE`, `astro-ph.GA`)
-- **Evidence for ranking:** It combines three X-ray facilities, reports a combined 5.3σ detection across a multi-year baseline, and was independently surfaced with the related published NuSTAR result. The arXiv comment says it was resubmitted to ApJ after a positive referee report. Semantic Scholar returned zero citations and zero influential citations at lookup time.
-- **Claimed result:** The authors infer continuously replenished ultra-fast inflow at roughly 49–77 gravitational radii, with an estimated inflow rate of 0.3–1.4 solar masses per year, favoring an accretion “cascade” over one persistent cloud.
-- **Evidence type:** Observational; XRISM/Resolve, XMM-Newton, NuSTAR, and photoionization modeling.
-- **Caveat:** Individual-epoch significance is only about 3–3.7σ, and column density and inflow rate depend on assumed metallicity and continuum/model choices.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
-- **Themes:** Astrophysics; Instrumentation & detectors
+### 5. [Wavefunctions for Anyon Superconductors](https://arxiv.org/abs/2609.04187)
+- **Abstract:** The authors construct hierarchy wavefunctions for Abelian and non-Abelian anyon superconductors and connect their order parameters and residual topological order to parent quantum Hall states and moiré/Chern-band systems.
+- **Authors:** Donghae Seo, Taegon Lee, Gil Young Cho
+- **arXiv:** `2609.04187v1` (published 2026-09-03 17:58 UTC; categories: `cond-mat.str-el`, `cond-mat.mes-hall`, `cond-mat.supr-con`)
+- **Evidence for ranking:** Three-way condensed-matter cross-listing; unifies anyon condensation, superconductivity, and topological field theory; same-batch prominence in the arXiv physics pool. Semantic Scholar was rate-limited, so citation counts are not claimed.
+- **Claimed result:** A wavefunction framework is developed for several parent states, including semion, Laughlin, integer quantum Hall, and Pfaffian states; the construction is linked to ideal Chern bands and twisted-bilayer MoTe2.
+- **Evidence type:** theoretical; plasma analogy, topological field theory, and explicit many-body wavefunction constructions.
+- **Caveat:** The connection to materials is a theoretical applicability statement, not an experimental observation of anyon superconductivity in a device.
+- **Announcement type:** new submission, 2026-09-03 batch
+- **Themes:** Condensed matter & materials; Quantum information
 
-### 5. [Computing with qLDPC Codes by Climbing the Chain Map Hierarchy](https://arxiv.org/abs/2609.02999)
-- **Abstract:** The authors introduce a chain-map hierarchy that treats logical Pauli, Clifford, and non-Clifford operations in a unified homological framework for quantum low-density-parity-check codes.
-- **Authors:** Rahul Sahay, David M. Long, Vedika Khemani
-- **arXiv:** `2609.02999v1` (published 2026-09-02 18:00 UTC; categories: `quant-ph`, `cond-mat.str-el`)
-- **Evidence for ranking:** The paper proposes a unifying framework and gives explicit constant-depth Clifford and CCZ constructions across toric and other codes; independent search returned the arXiv PDF and abstract. Semantic Scholar counts were unavailable because its API rate-limited the lookup.
-- **Claimed result:** Chain maps encode logical gates and code-surgery operations up the Clifford hierarchy, yielding constant-depth implementations of the full logical Clifford group for 2D toric-code blocks and addressable logical CCZ gates for 3D toric-code blocks.
-- **Evidence type:** Theoretical; homological constructions for qLDPC and manifold codes.
-- **Caveat:** These are code-level constructions and discovery tools; the abstract does not establish fault-tolerant hardware performance under a complete noise model.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
-- **Themes:** Quantum information; Computational & data methods
-
-### 6. [Optimized Matrix-Product State Simulations of Quantum Error Correction Circuits](https://arxiv.org/abs/2609.03073)
-- **Abstract:** The authors show that optimized matrix-product-state methods can simulate many quantum-error-correction circuits with non-Clifford gates exactly, reducing bond dimensions and simulation times by orders of magnitude in selected examples.
-- **Authors:** Asier Piñeiro Orioli, Chen Zhao, Guido Masella, Tommaso Macrì, Hengyun Zhou, et al.
-- **arXiv:** `2609.03073v1` (published 2026-09-02 18:42 UTC; category: `quant-ph`)
-- **Evidence for ranking:** It reports concrete scale examples—surface-code memory to distance 11 and a 15-to-1 magic-state circuit with 187 physical qubits simulated in under 40 seconds—and addresses a bottleneck shared by fault-tolerance research. Semantic Scholar counts were unavailable because its API rate-limited the lookup.
-- **Claimed result:** Implementation choices and targeted optimizations make MPS a useful complement to near-Clifford simulators, with efficiency scaling favorably for the demonstrated circuit families.
-- **Evidence type:** Computational; exact MPS simulation of surface-code, Bell-state, magic-state-distillation, and random circuits.
-- **Caveat:** MPS efficiency is circuit- and ordering-dependent; the reported benchmarks do not imply efficient simulation of arbitrary large QEC circuits.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
-- **Themes:** Quantum information; Computational & data methods
-
-### 7. [Strong Constraints for Line Signals from Dark Matter Annihilation in Sub-halo](https://arxiv.org/abs/2609.03016)
-- **Abstract:** A nearly 15-year Fermi-LAT search finds no statistically significant monochromatic gamma-ray line from a proposed nearby dark-matter subhalo and sets 95% confidence limits on the annihilation cross section.
-- **Authors:** Asier Salces Pérez, Thong T. Q. Nguyen, Pedro De la Torre Luque, Tim Linden
-- **arXiv:** `2609.03016v1` (published 2026-09-02 18:00 UTC; categories: `hep-ph`, `astro-ph.HE`)
-- **Evidence for ranking:** It combines a long public dataset with a focused test of a proposed subhalo and translates null results into constraints on WIMP scenarios; independent search results returned the arXiv record. Semantic Scholar counts were unavailable because its API rate-limited the lookup.
-- **Claimed result:** No significant line is detected; a 2.5σ local excess near 28 GeV is not treated as evidence, while the derived limits exclude or restrict parts of previously open model parameter space.
-- **Evidence type:** Observational; Fermi-LAT Pass 8 data and sliding-window gamma-ray-line analysis.
-- **Caveat:** The constraints depend on the assumed NFW subhalo model and the candidate's astrophysical properties; the 2.5σ excess is explicitly not a detection.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
-- **Themes:** Particle, nuclear & high-energy physics; Astrophysics
-
-### 8. [The Impact of Artificial Space Objects on Optical Astronomy as Determined from 32 Million Photometric Observations](https://arxiv.org/abs/2609.02951)
-- **Abstract:** Using 32 million photometric observations, the authors quantify how satellites, rockets, and debris contaminate optical astronomy and estimate contamination probabilities for wide-field exposures.
-- **Authors:** Anthony Mallama, Sergey Karpov, Richard E. Cole
-- **arXiv:** `2609.02951v1` (published 2026-09-02 00:13 UTC; category: `astro-ph.IM`)
-- **Evidence for ranking:** The study uses an unusually large observational sample, reports concrete exposure-level probabilities, and notes review by the IAU Centre for the Protection of the Dark and Quiet Sky. Independent search found the arXiv paper/PDF. Semantic Scholar counts were unavailable because its API rate-limited the lookup.
-- **Claimed result:** For objects brighter than magnitude 7, the estimated chance of one appearing in a 10-second exposure of a 10-degree-square field is 15%; a million-spacecraft scenario could contaminate nearly every comparable image during parts of the night.
-- **Evidence type:** Observational/statistical; 32 million photometric observations and artificial-object brightness data.
-- **Caveat:** Future contamination estimates depend on launch plans, orbital populations, brightness distributions, and observing geometry; the million-spacecraft case is a scenario, not a measured future state.
-- **Announcement type:** new submission, announcement-batch date 2026-09-03
-- **Themes:** Astrophysics; Instrumentation & detectors; Computational & data methods
+### 6. [High-Throughput Computational Discovery of Inverted Resistive Switching in Two-Dimensional Materials](https://arxiv.org/abs/2609.03578)
+- **Abstract:** A combined density-functional, machine-learning molecular-dynamics, and quantum-transport workflow screens about 2,900 exfoliable monolayers and identifies 17 thermally stable candidates for two classes of vacancy-mediated resistive switching.
+- **Authors:** Sanchali Mitra, Arnab Kabiraj, Benjamin W. J. Chen, Han Zhang, Haiyu Meng, Shi-Jun Liang, C. S. Lau, Lei Shen, Lain-Jong Li, Kah-Wee Ang, Yee Sin Ang
+- **arXiv:** `2609.03578v1` (published 2026-09-03 09:27 UTC; categories: `cond-mat.mtrl-sci`)
+- **Evidence for ranking:** Large computational screen with a concrete candidate set and a new inverted-switching mechanism; method combines several independently relevant simulation layers. Semantic Scholar was rate-limited, so citation counts are not claimed.
+- **Claimed result:** The workflow finds 17 stable candidates, including GaS-type insulating-to-conducting switching and BiOCl-type inverted conducting-to-insulating switching; electrode separation is identified as a key control parameter.
+- **Evidence type:** computational; DFT, machine-learning molecular dynamics, quantum transport, and migration-barrier calculations.
+- **Caveat:** Candidate stability and switching predictions require experimental fabrication and validation; simulated interfaces and defect/adsorbate configurations may not capture device variability.
+- **Announcement type:** new submission, 2026-09-03 batch
+- **Themes:** Condensed matter & materials; Computational & data methods; Instrumentation & detectors
 
 ## Trending physics themes
-
-- First-principles and quantum-simulation scalability: papers 1, 2, 5, and 6 address ways to obtain observables or logical operations that are difficult to access by conventional computation.
-- Quantum-enhanced sensing and instrumentation: papers 3 and 8 connect physical advances to measurement capability—nanoscale magnetic noise sensing and optical-astronomy contamination characterization.
-- Multi-messenger and high-throughput astrophysical measurement: papers 4 and 8 use large or multi-instrument datasets, while paper 7 demonstrates the value of long-baseline null searches.
-- Cross-subfield methods: tensor networks appear in lattice gauge theory and quantum-error-correction simulation (papers 2 and 6), while computational methods are central to papers 1, 5, and 8.
+- **LZ recoil interpretation:** Several same-batch hep-ph papers target the isolated high-energy LZ recoil; the selected higgsino paper is notable because it proposes a falsifiable sideband check rather than treating the event as a discovery.
+- **Quantum information moving from foundations toward hardware:** The dimension-dependent simulation theorem and the silicon-nitride twin-photon experiment connect resource-theory questions with scalable photonic implementation.
+- **Model-aware precision cosmology:** The Euclid paper emphasizes that modified-gravity and neutrino signatures can be comparable to observational/systematic effects, making profile modelling part of the inference problem.
+- **Topological and computational materials design:** Anyon-superconductor wavefunctions and high-throughput atomristor screening both use structured theory/computation to propose experimentally testable states or devices.
 
 ## Research opportunities
 
 ### Potential research areas
-
-- Extend finite-volume two-hadron form-factor methods from the heavier-pion π+π+ test case toward physical masses, coupled channels, and resonance electroweak responses (paper 1).
-- Build experimentally calibrated higher-dimensional lattice-gauge-theory benchmarks connecting the string-breaking channels in paper 2 to near-term quantum simulators.
-- Combine collective NV sensing with biological or materials samples and compare the 50-nm momentum-space modality with conventional scanning probes (paper 3).
+- **Independent tests of the LZ event:** Compare the higgsino sideband prediction with the collaboration's unreleased acceptance and with alternative atmospheric-neutrino or pseudoscalar interpretations appearing in the same batch. [2609.04175]
+- **Quantum-network resource trade-offs:** Extend the exact dimension-dependent communication results to approximate, noisy, and experimentally constrained simulation protocols. [2609.04182]
+- **Integrated quantum-light engineering:** Optimize CAR, purity, coupling loss, and multiplexing on the same silicon-nitride platform. [2609.04171]
 
 ### Unsolved problems
-
-- Paper 1 leaves the physical-mass and broader-channel generalization of the validated formalism open.
-- Paper 2 must determine how the strong-coupling channel structure changes toward weaker coupling and QCD-relevant regimes.
-- Paper 4's inflow interpretation remains sensitive to continuum, metallicity, and line-significance choices; independent future epochs are needed.
-- Papers 5 and 6 do not establish performance for arbitrary qLDPC architectures or realistic hardware noise at scale.
-- Paper 8's long-term contamination forecast depends on uncertain constellation growth and object-brightness distributions.
+- The LZ sideband acceptance is not public, leaving the strength of the proposed higgsino tension unresolved. [2609.04175]
+- The anyon-superconductor constructions do not establish material realization or robustness against disorder and finite temperature. [2609.04187]
+- Euclid profile forecasts remain dependent on simplified observational assumptions and on modelling baryonic/selection effects. [2609.04192]
+- The 2D atomristor candidates still lack fabrication and experimental switching validation. [2609.03578]
 
 ### Potential research directions
-
-- Use physical-pion-mass lattice ensembles and additional moving frames to test the Ward–Takahashi-consistent form factor beyond the current benchmark (paper 1).
-- Implement the paper-2 diagnostics in programmable quantum simulators and compare tensor-network predictions with measured string decay and flux-loop production.
-- Develop adaptive MPS/code-design workflows that use the chain-map hierarchy of paper 5 and the circuit optimizations of paper 6 together.
-- Schedule coordinated XRISM/XMM-Newton/NuSTAR monitoring of ESP 39607 to distinguish a replenished inflow cascade from episodic absorbers (paper 4).
-- Pair satellite-brightness catalogs with observatory scheduling and mitigation algorithms to test the contamination probabilities in paper 8.
+- Release or reconstruct the relevant LZ acceptance and perform a joint likelihood over the signal region and high-energy sideband. [2609.04175]
+- Derive finite-error communication bounds and implement qutrit/ququart tests with photonic or superconducting platforms. [2609.04182]
+- Feed the Euclid halo-profile systematics into end-to-end weak-lensing likelihoods and quantify bias under baryonic feedback. [2609.04192]
+- Fabricate the most robust predicted GaS/BiOCl candidates and measure vacancy, adsorbate, and electrode-separation dependence. [2609.03578]
 
 ## Takeaway
-
-The latest batch is strongest in enabling methods: lattice QCD is reaching multi-hadron electromagnetic structure, tensor-network techniques are reaching higher-dimensional gauge dynamics and larger QEC circuits, and collective quantum dynamics is producing measurable sensing gains. The astrophysical papers add concrete observational constraints, but their strongest claims remain conditional on model assumptions, statistical significance, or future population scenarios. All papers are arXiv preprints; the presence of a referee comment or related journal result does not make every claim peer-reviewed consensus.
+The latest batch is not dominated by one established discovery; its clearest pattern is rapid, testable theory around a new dark-matter-detector event, paired with foundational quantum-information results and hardware-oriented quantum optics. All entries are fresh preprints, so the ordering reflects inferred momentum and scientific concreteness—not peer-reviewed consensus or measured readership.
 
 ## Method and sources
-
-- Window: daily; latest available arXiv announcement batch was Thursday, 2026-09-03. Snapshot: 2026-09-06 00:30 UTC.
-- Scope checked: latest listing pages for `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`; categories were deduplicated by versionless arXiv ID. The listing pages expose at most the first 100 entries where a category exceeded 100, so this is a notable-paper scan rather than a claim of exhaustive coverage.
-- Ranking: inferred from concrete scientific novelty, cross-list breadth, dataset/instrument or code relevance, explicit first-of-kind claims, journal/referee or independent discussion signals, and recency. arXiv supplies no official trending ranking, readership chart, or download ranking. Semantic Scholar lookups were attempted for all selected papers; the service rate-limited most requests, and the one successful lookup (2609.03019) reported 0 citations and 0 influential citations. Citation totals are not treated as period gains.
-- Primary sources: arXiv abstract/API records for all papers; independent web-search results for papers 1–4, 5, 7, and 8; Semantic Scholar Graph API lookup for 2609.03019.
+- **Window:** daily; latest available arXiv announcement batch checked was 2026-09-03, because the snapshot was 2026-09-07 00:30 UTC and no newer physics batch was available through the arXiv API.
+- **Coverage:** physics.*, astro-ph.*, cond-mat.*, gr-qc, hep-ex, hep-lat, hep-ph, hep-th, nucl-ex, nucl-th, and quant-ph; candidates were collected from the arXiv API and deduplicated by versionless ID.
+- **Snapshot:** 2026-09-07 00:30 UTC.
+- **Inference:** arXiv provides no official trending chart. Ranking used cross-listing, concrete experimental/computational results, collaboration or event relevance, independent indexing/discussion, and—where available—Semantic Scholar citation fields. Same-day citation totals are not interpreted as period gains; most Semantic Scholar queries were rate-limited, and that limitation is disclosed above.
+- **Primary sources:** arXiv abstract/API records for each linked paper; Semantic Scholar Graph API checks; web search checks for independent indexing/discussion. arXiv preprints are not peer-reviewed by arXiv.

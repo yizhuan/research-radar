@@ -1,74 +1,77 @@
-Agent-centric developer tooling (multi-agent learning, prompt/code workflows, and local model training) dominates this week’s GitHub Trending. Python and TypeScript are leading the momentum.
+# GitHub Trending Summary - Weekly - 2026-09-04
 
-Snapshot window: this week (GitHub Trending weekly; stars gained over the last 7 days), 2026-08-28 → 2026-09-04 UTC.
+## Snapshot
 
-Top repos (by stars gained on Trending weekly):
+| Field | Value |
+| --- | --- |
+| Snapshot time (UTC) | 2026-09-07 10:52 UTC |
+| Scope | Weekly |
+| Date range | 2026-08-29 through 2026-09-04 |
+| Ranking basis | Reconstructed weekly ranking from GitHub Search API activity in the exact date window; historical GitHub Trending star-gain figures were not available |
 
-1. tt-a1i/archify — Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams
-   - Link: https://github.com/tt-a1i/archify
-   - Language: JavaScript
-   - Stars gained: +24,227; total stars: 45,917
+## Headline
 
-2. bilawalsidhu/gods-eye-view — A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.
-   - Link: https://github.com/bilawalsidhu/gods-eye-view
-   - Language: JavaScript
-   - Stars gained: +10,485; total stars: 16,959
+AI-agent infrastructure and agent skills dominated the week's activity, alongside a strong burst of interest in graphics/game tooling and local-first productivity software. The fastest-growing newly created projects included Material 3/vibe-coding tooling, DLSS-related utilities, Claude commerce-agent examples, and WeChat intelligence tooling.
 
-3. THU-MAIC/OpenMAIC — Open Multi-Agent Interactive Classroom
-   - Link: https://github.com/THU-MAIC/OpenMAIC
-   - Language: TypeScript
-   - Stars gained: +10,023; total stars: 31,079
+## Top Repositories
 
-4. JetBrains/go-modern-guidelines — Help AI coding agents write modern Go
-   - Link: https://github.com/JetBrains/go-modern-guidelines
-   - Language: Go
-   - Stars gained: +1,213; total stars: 3,111
+1. **[lnkiai/m3e-canvas - Browser-based Material 3 Expressive screen design and vibe-coding prompt generation](https://github.com/lnkiai/m3e-canvas)**
 
-5. Gitlawb/openclaude — runs anywhere. uses anything
-   - Link: https://github.com/Gitlawb/openclaude
-   - Language: TypeScript
-   - Stars gained: +1,389; total stars: 32,356
+  **Language:** TypeScript | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 4,492 | **Why notable:** The highest-starred repository returned by the exact-window `created:` search, despite being created on September 2.
 
-6. K-Dense-AI/scientific-agent-skills — Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.
-   - Link: https://github.com/K-Dense-AI/scientific-agent-skills
-   - Language: Python
-   - Stars gained: +7,370; total stars: 42,387
+2. **[rakanki911/DLSS5-Swapper - Tool for installing, managing, and restoring DLSS 5 components](https://github.com/rakanki911/DLSS5-Swapper)**
 
-7. jingyaogong/minimind — 🧠 Train a 64M-parameter LLM from scratch in just 2h!
-   - Link: https://github.com/jingyaogong/minimind
-   - Language: Python
-   - Stars gained: +3,122; total stars: 58,252
+  **Language:** JavaScript | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 2,496 | **Why notable:** A newly created graphics utility that attracted unusually rapid attention during the target week.
 
-8. every-app/open-seo — Open source alternative to Semrush and Ahrefs
-   - Link: https://github.com/every-app/open-seo
-   - Language: TypeScript
-   - Stars gained: +2,941; total stars: 16,661
+3. **[anthropics/commerce-agents - Reference blueprint for shopping and merchant agents](https://github.com/anthropics/commerce-agents)**
 
-9. omacom/omarchy — Beautiful, Modern & Opinionated Linux
-   - Link: https://github.com/omacom/omarchy
-   - Language: Shell
-   - Stars gained: +5,296; total stars: 37,728
+  **Language:** Python | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 2,324 | **Why notable:** It made agentic commerce concrete through runnable reference examples rather than a general-purpose agent framework.
 
-10. google-research/timesfm — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.
-   - Link: https://github.com/google-research/timesfm
-   - Language: Python
-   - Stars gained: +2,324; total stars: 30,712
+4. **[Rion-Wu-tech/wechat-intelligence-hub - Local-first WeChat intelligence system](https://github.com/Rion-Wu-tech/wechat-intelligence-hub)**
 
-11. p-e-w/heretic — Fully automatic censorship removal for language models
-   - Link: https://github.com/p-e-w/heretic
-   - Language: Python
-   - Stars gained: +2,146; total stars: 30,322
+  **Language:** Python | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 1,565 | **Why notable:** Created on September 4 and quickly visible in the new-repository search, combining searchable chat data with agent-oriented workflows.
 
-12. freestylefly/awesome-gpt-image-2 — Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中
-   - Link: https://github.com/freestylefly/awesome-gpt-image-2
-   - Language: JavaScript
-   - Stars gained: +5,425; total stars: 27,757
+5. **[shadcn-ui/cn - Tailwind class-merging and conflict-resolution engine](https://github.com/shadcn-ui/cn)**
 
-Trending technologies/themes:
+  **Language:** TypeScript | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 1,232 | **Why notable:** The shadcn ecosystem's new low-level styling engine shows continued momentum around composable frontend tooling.
 
-- Multi-agent / “agent skills” libraries and learning environments (e.g., Open Multi-Agent Interactive Classroom; AI agent skill sets).
-- LLM training & model building momentum (e.g., small fast-from-scratch LLM training, plus large time-series foundation models like TimesFM).
-- Developer productivity via code generation & agent-assisted workflows (e.g., screenshot-to-code; Cursor plugin ecosystem; prompt-as-code).
-- Type-safe infrastructure and tooling to integrate agents into real apps (e.g., schema validation like Zod).
+6. **[2akouwu/reverify - Deterministic verification layer for AI claims](https://github.com/2akouwu/reverify)**
 
+  **Language:** Python | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 1,001 | **Why notable:** Its proposal-first, tool-verified approach reflects the week's broader shift from unconstrained generation toward auditable agents.
 
+7. **[Human-Agent-Society/reef - Continual-learning infrastructure for self-improving agents](https://github.com/Human-Agent-Society/reef)**
+
+  **Language:** Python | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 648 | **Why notable:** It targets the next layer beyond agent prompting: persistent learning and improvement infrastructure.
+
+8. **[obra/superpowers - Agentic skills framework and software-development methodology](https://github.com/obra/superpowers)**
+
+  **Language:** Shell | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 282,628 | **Why notable:** It was among the most prominent established agent-development repositories pushed during the target week.
+
+9. **[deepseek-ai/deepseek-harness - Plugin-based DeepSeek harness](https://github.com/deepseek-ai/deepseek-harness)**
+
+  **Language:** TypeScript | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 214,737 | **Why notable:** Its very large existing community and activity on September 4 made it a major established-project signal in the window.
+
+10. **[github/spec-kit - Toolkit for Spec-Driven Development](https://github.com/github/spec-kit)**
+
+  **Language:** Python | **Stars gained in window:** N/A - historical weekly gain not available from GitHub | **Total stars:** 133,795 | **Why notable:** Spec-driven development remained a significant adjacent theme to the week's agent and coding-workflow activity.
+
+## Trending Technologies and Themes
+
+- **Agent skills and development harnesses:** `anthropics/commerce-agents`, `2akouwu/reverify`, `Human-Agent-Society/reef`, `obra/superpowers`, and `deepseek-ai/deepseek-harness` all point toward more structured, verifiable, and extensible agent systems.
+- **Graphics and game tooling:** `rakanki911/DLSS5-Swapper` was joined by other DLSS-related new repositories in the exact-window search, indicating a concentrated burst around neural rendering and frame-generation tooling.
+- **Local-first personal data tools:** `Rion-Wu-tech/wechat-intelligence-hub` emphasizes local search and analysis of private chat data rather than a hosted social-data workflow.
+- **Languages:** Among the ten listed repositories, TypeScript and Python each appear three times; JavaScript, Shell, and C++-adjacent graphics tooling were secondary signals. The new-project subset leaned especially toward Python and TypeScript.
+
+## Notable Shifts
+
+The notable shift was from generic LLM demos toward operational layers around agents: skills, harnesses, deterministic verification, continual learning, and domain-specific agent blueprints. Graphics tooling was the clearest non-agent cluster, with several newly created DLSS/neural-rendering utilities appearing in the same date-window search.
+
+## Takeaway
+
+The week's strongest GitHub signal was not one model release but the infrastructure forming around AI agents: reusable skills, verification, orchestration, and domain workflows. At the same time, a short-lived but conspicuous graphics-tooling wave showed how quickly interest can concentrate around newly exposed rendering capabilities. Because GitHub does not provide historical weekly Trending star deltas through its Search API, this is a date-window reconstruction rather than a claim about the unavailable September 4 Trending ranking.
+
+## Sources and Method
+
+- **Primary source:** [GitHub Trending weekly](https://github.com/trending?since=weekly) consulted as a current reference; it does not expose a historical September 4 snapshot. Exact-window repository data came from [GitHub Search API: created 2026-08-29..2026-09-04](https://api.github.com/search/repositories?q=created:2026-08-29..2026-09-04&sort=stars&order=desc&per_page=30) and [pushed 2026-08-29..2026-09-04](https://api.github.com/search/repositories?q=pushed:2026-08-29..2026-09-04&sort=stars&order=desc&per_page=30).
+- **Corroboration:** GitHub REST Search API, unauthenticated; repository descriptions, languages, creation/push dates, and current star totals were read from the returned records.
+- **Method note:** GitHub Search does not expose historical star gains. New repositories were ranked by current stars within the exact creation window; established repositories were selected from high-star repositories pushed in the exact window, with forks and list-only repositories excluded. Therefore every historical **Stars gained in window** value is reported as unavailable rather than estimated.

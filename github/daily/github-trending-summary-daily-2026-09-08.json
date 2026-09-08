@@ -1,0 +1,24 @@
+{
+  "schema": "github-trending-summary.v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-08",
+  "title": "GitHub Trending Summary - Daily - 2026-09-08",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-08.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "sections": [
+    {"id":"repo-1","kind":"repository","title":"heygen-com/hyperframes","rank":1,"url":"https://github.com/heygen-com/hyperframes","description":"Write HTML, render video, and build video workflows for agents.","language":"TypeScript","stars_gained":2628,"total_stars":47557,"themes":["AI agents","video generation"],"authors":["heygen-com"],"refs":[]},
+    {"id":"repo-2","kind":"repository","title":"microsoft/markitdown","rank":2,"url":"https://github.com/microsoft/markitdown","description":"Convert files and office documents to Markdown with Python.","language":"Python","stars_gained":2045,"total_stars":181491,"themes":["document conversion","AI data pipelines"],"authors":["microsoft"],"refs":[]},
+    {"id":"repo-3","kind":"repository","title":"affaan-m/ECC","rank":3,"url":"https://github.com/affaan-m/ECC","description":"Agent-harness optimization with skills, memory, security, and research-first development.","language":"JavaScript","stars_gained":1426,"total_stars":254004,"themes":["AI agents","developer tooling"],"authors":["affaan-m"],"refs":[]},
+    {"id":"repo-4","kind":"repository","title":"cathrynlavery/diagram-design","rank":4,"url":"https://github.com/cathrynlavery/diagram-design","description":"Self-contained HTML and SVG editorial diagram types for coding agents.","language":"HTML","stars_gained":1020,"total_stars":34311,"themes":["AI agents","visualization"],"authors":["cathrynlavery"],"refs":[]},
+    {"id":"repo-5","kind":"repository","title":"jo-inc/camofox-browser","rank":5,"url":"https://github.com/jo-inc/camofox-browser","description":"Stealth headless browser for AI agents and browser automation.","language":"JavaScript","stars_gained":872,"total_stars":10340,"themes":["browser automation","AI agents"],"authors":["jo-inc"],"refs":[]},
+    {"id":"repo-6","kind":"repository","title":"coreyhaines31/marketingskills","rank":6,"url":"https://github.com/coreyhaines31/marketingskills","description":"Marketing skills for Claude Code and AI agents.","language":"JavaScript","stars_gained":666,"total_stars":48661,"themes":["AI agents","marketing automation"],"authors":["coreyhaines31"],"refs":[]},
+    {"id":"repo-7","kind":"repository","title":"mksglu/context-mode","rank":7,"url":"https://github.com/mksglu/context-mode","description":"Context-window optimization, session memory, and tool-output routing for coding agents.","language":"TypeScript","stars_gained":652,"total_stars":21302,"themes":["AI agents","context management"],"authors":["mksglu"],"refs":[]},
+    {"id":"repo-8","kind":"repository","title":"openai/skills","rank":8,"url":"https://github.com/openai/skills","description":"Skills catalog for Codex.","language":"Python","stars_gained":490,"total_stars":26412,"themes":["AI agents","developer tooling"],"authors":["openai"],"refs":[]},
+    {"id":"repo-9","kind":"repository","title":"The-Swarm-Corporation/AutoHedge","rank":9,"url":"https://github.com/The-Swarm-Corporation/AutoHedge","description":"Autonomous hedge-fund tooling for market analysis, risk management, and trading.","language":"Python","stars_gained":494,"total_stars":5599,"themes":["AI agents","finance"],"authors":["The-Swarm-Corporation"],"refs":[]},
+    {"id":"repo-10","kind":"repository","title":"ayghri/i-have-adhd","rank":10,"url":"https://github.com/ayghri/i-have-adhd","description":"A coding-agent skill for concise, ADHD-friendly output.","language":"Python","stars_gained":422,"total_stars":29272,"themes":["AI agents","human-computer interaction"],"authors":["ayghri"],"refs":[]},
+    {"id":"repo-11","kind":"repository","title":"obra/superpowers","rank":11,"url":"https://github.com/obra/superpowers","description":"Agentic skills framework and software-development methodology.","language":"Shell","stars_gained":446,"total_stars":283219,"themes":["AI agents","developer tooling"],"authors":["obra"],"refs":[]},
+    {"id":"repo-12","kind":"repository","title":"browser-use/browser-use","rank":12,"url":"https://github.com/browser-use/browser-use","description":"Make websites accessible to AI agents and automate online tasks.","language":"Python","stars_gained":320,"total_stars":113291,"themes":["browser automation","AI agents"],"authors":["browser-use"],"refs":[]}
+  ]
+}

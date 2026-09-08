@@ -1,0 +1,270 @@
+{
+  "schema": "arxiv-trending-physics/v1",
+  "category": "physics",
+  "window": "weekly",
+  "date": "2026-09-08",
+  "title": "This week's notable physics papers on arXiv",
+  "source_report": "/home/yizhuan/.research/physics/weekly/arxiv-trending-physics-weekly-2026-09-08.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "JWST Excludes Exomoons Down to 0.1 Earth Radii Around a Rocky, Temperate Exoplanet",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.05301",
+      "arxiv_id": "2609.05301",
+      "arxiv_version": "2609.05301v1",
+      "published": "2026-09-04T15:53:59Z",
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "authors": [
+        "David Kipping"
+      ],
+      "themes": [
+        "Astrophysics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Using twelve JWST transits of LP 890-9c, the author finds no exomoon and excludes moons larger than 0.1 Earth radii at 95% confidence across the Hill region.",
+      "claimed_result": "The paper claims the most sensitive exomoon search so far and demonstrates JWST sensitivity to moons near 0.1 Earth radii.",
+      "evidence_type": "observational",
+      "evidence_basis": "",
+      "caveat": "The close-in orbit makes large moons unlikely to survive for gigayears; one epoch had red noise.",
+      "refs": [
+        "https://arxiv.org/abs/2609.05301"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "A photonic source with half-a-GHz single-photon flux",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.05387",
+      "arxiv_id": "2609.05387",
+      "arxiv_version": "2609.05387v1",
+      "published": "2026-09-04T17:39:43Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "authors": [
+        "P. Zahalka",
+        "S. Huijser",
+        "A. Pancaldi",
+        "S. Kruger",
+        "X. Zhao",
+        "et al."
+      ],
+      "themes": [
+        "Quantum information",
+        "Atomic, molecular & optical physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "A deterministic source delivers more than 500 MHz of in-fibre single-photon flux.",
+      "claimed_result": "The source exceeds 500 MHz in-fibre flux and produces over 100 pW optical power.",
+      "evidence_type": "experimental",
+      "evidence_basis": "Deterministic optical source characterization.",
+      "caveat": "The abstract does not give the full purity-efficiency-stability tradeoff.",
+      "refs": [
+        "https://arxiv.org/abs/2609.05387"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "Microkelvin resolution thermometry at the nanometre scale",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.04907",
+      "arxiv_id": "2609.04907",
+      "arxiv_version": "2609.04907v1",
+      "published": "2026-09-04T09:09:42Z",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph",
+        "physics.ins-det"
+      ],
+      "authors": [
+        "Jack W. Hart",
+        "Soham Pal",
+        "Julien R. E. Roth",
+        "Katie Ninham",
+        "Abbie H. Aleksandrova",
+        "et al."
+      ],
+      "themes": [
+        "Quantum information",
+        "Instrumentation & detectors",
+        "Biophysics & soft matter"
+      ],
+      "abstract": "Dual-NV nanodiamonds and a quantum-sensing chip yield 682 microkelvin measurement error and below-50 mK/sqrt(Hz) sensitivity.",
+      "claimed_result": "The work improves nanoscale thermometry sensitivity by about an order of magnitude.",
+      "evidence_type": "experimental",
+      "evidence_basis": "NV nanodiamond thermometry and controlled heating tests.",
+      "caveat": "The optical probe itself heats the sample.",
+      "refs": [
+        "https://arxiv.org/abs/2609.04907"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Fast Bayesian Inference for Long-Duration Gravitational-Wave Signals in 3G detectors",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.05375",
+      "arxiv_id": "2609.05375",
+      "arxiv_version": "2609.05375v1",
+      "published": "2026-09-04T17:26:26Z",
+      "categories": [
+        "gr-qc",
+        "astro-ph.CO",
+        "astro-ph.IM"
+      ],
+      "authors": [
+        "Anand S. Sengupta"
+      ],
+      "themes": [
+        "Cosmology & gravitation",
+        "Computational & data methods",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "A decomposition and relative-binning scheme accelerates inference for a 21.3-hour signal by about four orders of magnitude.",
+      "claimed_result": "The method makes day-long 3G signal inference practical.",
+      "evidence_type": "computational",
+      "evidence_basis": "Waveform likelihood evaluation for a simulated long-duration signal.",
+      "caveat": "Broader waveform families and realistic nonstationary noise still need validation.",
+      "refs": [
+        "https://arxiv.org/abs/2609.05375"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Percent-Level Prediction of the Deuteron Magnetic Polarizability",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.04615",
+      "arxiv_id": "2609.04615",
+      "arxiv_version": "2609.04615v1",
+      "published": "2026-09-04T01:29:19Z",
+      "categories": [
+        "nucl-th",
+        "hep-ph"
+      ],
+      "authors": [
+        "Rishi Cherukuri",
+        "Jiunn-Wei Chen",
+        "Xiangdong Ji"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "An NNLO pionless-EFT calculation predicts the deuteron magnetic polarizability with 1.3% uncertainty.",
+      "claimed_result": "The result is 0.0789 +/- 0.0010 fm^3, reducing the prior uncertainty from 4.9%.",
+      "evidence_type": "theoretical",
+      "evidence_basis": "NNLO EFT calibrated with the thermal np to d gamma rate.",
+      "caveat": "It remains a theory prediction requiring independent cross-checks.",
+      "refs": [
+        "https://arxiv.org/abs/2609.04615"
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Early against Late: A contrast on dark energy in the light of DESI DR2",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.05410",
+      "arxiv_id": "2609.05410",
+      "arxiv_version": "2609.05410v1",
+      "published": "2026-09-04T17:58:04Z",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "authors": [
+        "Miguel A. Zapata",
+        "Karim Carrion",
+        "Gabriela Garcia-Arroyo"
+      ],
+      "themes": [
+        "Cosmology & gravitation",
+        "Computational & data methods"
+      ],
+      "abstract": "Bayesian comparison of early- and late-time dark-energy models against Lambda-CDM disfavors both extensions.",
+      "claimed_result": "The paper reports strong rejection of EDE with CMB data and moderate disfavoring of CPL.",
+      "evidence_type": "computational",
+      "evidence_basis": "Bayesian model comparison using DESI-era, supernova, and CMB data.",
+      "caveat": "Results depend on priors, likelihoods, and model parameterization.",
+      "refs": [
+        "https://arxiv.org/abs/2609.05410"
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "Inelastic from the Other Side: Xenon Excitation Signals in Light of the LZ High-Recoil Event",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.05291",
+      "arxiv_id": "2609.05291",
+      "arxiv_version": "2609.05291v1",
+      "published": "2026-09-04T15:44:02Z",
+      "categories": [
+        "hep-ph",
+        "hep-ex"
+      ],
+      "authors": [
+        "Guanhua Gu",
+        "Lingfeng Li",
+        "Shao-Song Tang",
+        "Yongheng Xu"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Instrumentation & detectors",
+        "Computational & data methods"
+      ],
+      "abstract": "The paper models inelastic xenon excitation accompanying dark-matter interpretations of the LZ high-recoil event.",
+      "claimed_result": "The companion rate is often about 0.1 of the elastic rate or smaller.",
+      "evidence_type": "computational",
+      "evidence_basis": "NREFT, shell-model transitions, detector simulation, and a schematic background model.",
+      "caveat": "The event is isolated and the background model is simplified; this is not a dark-matter detection.",
+      "refs": [
+        "https://arxiv.org/abs/2609.05291"
+      ]
+    },
+    {
+      "id": "paper-8",
+      "kind": "paper",
+      "title": "Higgs Boson Pair Production via Gluon Fusion: Higher-Order Corrections and Theoretical Uncertainties",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.04868",
+      "arxiv_id": "2609.04868",
+      "arxiv_version": "2609.04868v1",
+      "published": "2026-09-04T08:28:05Z",
+      "categories": [
+        "hep-ph",
+        "hep-ex"
+      ],
+      "authors": [
+        "Ajjath A H",
+        "Simone Alioli",
+        "Emanuele Bagnaschi",
+        "Arunima Bhattacharya",
+        "Huan-Yu Bi",
+        "et al."
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "An LHC Higgs Working Group report updates higher-order corrections and uncertainty recommendations for gluon-fusion Higgs-pair production.",
+      "claimed_result": "It consolidates QCD, electroweak, mass-scheme, and scale uncertainties for gg to hh predictions.",
+      "evidence_type": "theoretical",
+      "evidence_basis": "Perturbative collider calculations and uncertainty assessment.",
+      "caveat": "It is a theory update, not a new Higgs-pair observation.",
+      "refs": [
+        "https://arxiv.org/abs/2609.04868"
+      ]
+    }
+  ]
+}

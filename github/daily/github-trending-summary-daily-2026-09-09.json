@@ -5,20 +5,266 @@
   "date": "2026-09-09",
   "title": "GitHub Trending Summary - Daily - 2026-09-09",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-09.md",
-  "entry_count": 12,
+  "entry_count": 13,
   "entry_noun": "repositories",
   "sections": [
-    {"id":"ayghri-i-have-adhd","kind":"repository","title":"ayghri/i-have-adhd","rank":1,"url":"https://github.com/ayghri/i-have-adhd","description":"A skill to stop your coding agent from burying the answer. ADHD-friendly output.","language":"Python","stars_gained":4624,"total_stars":34314,"themes":["coding agents","developer experience"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"tencent-teamai-cli","kind":"repository","title":"Tencent/teamai-cli","rank":2,"url":"https://github.com/Tencent/teamai-cli","description":"Make Every Team AI Native","language":"TypeScript","stars_gained":563,"total_stars":2908,"themes":["team AI","CLI","developer tooling"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"obra-superpowers","kind":"repository","title":"obra/superpowers","rank":3,"url":"https://github.com/obra/superpowers","description":"An agentic skills framework and software development methodology that works.","language":"Shell","stars_gained":690,"total_stars":283980,"themes":["agentic skills","software development"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"pascalorg-editor","kind":"repository","title":"pascalorg/editor","rank":4,"url":"https://github.com/pascalorg/editor","description":"Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.","language":"TypeScript","stars_gained":171,"total_stars":22857,"themes":["3D","architecture","MCP"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"earthtojake-text-to-cad","kind":"repository","title":"earthtojake/text-to-cad","rank":5,"url":"https://github.com/earthtojake/text-to-cad","description":"A library of agent skills for CAD, CAE and CAM","language":"Python","stars_gained":97,"total_stars":15002,"themes":["CAD","engineering","agent skills"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"cathrynlavery-diagram-design","kind":"repository","title":"cathrynlavery/diagram-design","rank":6,"url":"https://github.com/cathrynlavery/diagram-design","description":"38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG.","language":"HTML","stars_gained":2286,"total_stars":36481,"themes":["visualization","coding agents","SVG"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"tauricresearch-tradingagents","kind":"repository","title":"TauricResearch/TradingAgents","rank":7,"url":"https://github.com/TauricResearch/TradingAgents","description":"Multi-agents LLM Financial Trading Framework","language":"Python","stars_gained":367,"total_stars":103878,"themes":["multi-agent systems","finance"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"liquidslr-system-design-notes","kind":"repository","title":"liquidslr/system-design-notes","rank":8,"url":"https://github.com/liquidslr/system-design-notes","description":"Notes of the book System Design Interview - An Insider's Guide","language":null,"stars_gained":910,"total_stars":17935,"themes":["system design","education"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"openai-plugins","kind":"repository","title":"openai/plugins","rank":9,"url":"https://github.com/openai/plugins","description":"OpenAI Plugins","language":"JavaScript","stars_gained":505,"total_stars":6158,"themes":["AI integrations","plugins"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"freestylefly-awesome-gpt-image-2","kind":"repository","title":"freestylefly/awesome-gpt-image-2","rank":10,"url":"https://github.com/freestylefly/awesome-gpt-image-2","description":"Prompt-as-code templates and examples for GPT-Image-2.","language":"JavaScript","stars_gained":612,"total_stars":29979,"themes":["image generation","prompt engineering"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"rohitg00-ai-engineering-from-scratch","kind":"repository","title":"rohitg00/ai-engineering-from-scratch","rank":11,"url":"https://github.com/rohitg00/ai-engineering-from-scratch","description":"Learn it. Build it. Ship it for others.","language":"Python","stars_gained":382,"total_stars":53630,"themes":["AI engineering","education"],"refs":["GitHub Trending daily","GitHub REST API"]},
-    {"id":"vastsa-pi-desktop","kind":"repository","title":"vastsa/PI-Desktop","rank":12,"url":"https://github.com/vastsa/PI-Desktop","description":"Local-first AI coding agent desktop with Electron, Rust, and plugins.","language":"TypeScript","stars_gained":393,"total_stars":1618,"themes":["local AI","coding agents","desktop apps"],"refs":["GitHub Trending daily","GitHub REST API"]}
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI-agent infrastructure and agent-friendly workflows dominate today's GitHub Trending list."
+    },
+    {
+      "id": "01-ayghri-i-have-adhd",
+      "kind": "repo",
+      "title": "ayghri/i-have-adhd",
+      "rank": 1,
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars_gained": 4624,
+      "total_stars": 34355,
+      "themes": [
+        "agent skills",
+        "developer experience"
+      ],
+      "refs": [
+        "ayghri/i-have-adhd"
+      ]
+    },
+    {
+      "id": "02-cathrynlavery-diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 2,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG.",
+      "language": "HTML",
+      "stars_gained": 2286,
+      "total_stars": 36495,
+      "themes": [
+        "agentic design",
+        "visualization"
+      ],
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ]
+    },
+    {
+      "id": "03-affaan-m-ECC",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 3,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system.",
+      "language": "JavaScript",
+      "stars_gained": 1151,
+      "total_stars": 255112,
+      "themes": [
+        "agent harnesses",
+        "developer tooling"
+      ],
+      "refs": [
+        "affaan-m/ECC"
+      ]
+    },
+    {
+      "id": "04-liquidslr-system-design-notes",
+      "kind": "repo",
+      "title": "liquidslr/system-design-notes",
+      "rank": 4,
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+      "language": null,
+      "stars_gained": 910,
+      "total_stars": 17943,
+      "themes": [
+        "education",
+        "software engineering"
+      ],
+      "refs": [
+        "liquidslr/system-design-notes"
+      ]
+    },
+    {
+      "id": "05-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 5,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars_gained": 690,
+      "total_stars": 283984,
+      "themes": [
+        "agent skills",
+        "software development"
+      ],
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "06-freestylefly-awesome-gpt-image-2",
+      "kind": "repo",
+      "title": "freestylefly/awesome-gpt-image-2",
+      "rank": 6,
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code GPT-Image2 templates and examples.",
+      "language": "JavaScript",
+      "stars_gained": 612,
+      "total_stars": 29985,
+      "themes": [
+        "multimodal AI",
+        "prompt engineering"
+      ],
+      "refs": [
+        "freestylefly/awesome-gpt-image-2"
+      ]
+    },
+    {
+      "id": "07-Tencent-teamai-cli",
+      "kind": "repo",
+      "title": "Tencent/teamai-cli",
+      "rank": 7,
+      "url": "https://github.com/Tencent/teamai-cli",
+      "description": "Make Every Team AI Native",
+      "language": "TypeScript",
+      "stars_gained": 563,
+      "total_stars": 2917,
+      "themes": [
+        "enterprise AI",
+        "developer tooling"
+      ],
+      "refs": [
+        "Tencent/teamai-cli"
+      ]
+    },
+    {
+      "id": "08-openai-plugins",
+      "kind": "repo",
+      "title": "openai/plugins",
+      "rank": 8,
+      "url": "https://github.com/openai/plugins",
+      "description": "OpenAI Plugins",
+      "language": "JavaScript",
+      "stars_gained": 505,
+      "total_stars": 6162,
+      "themes": [
+        "tool integration",
+        "agents"
+      ],
+      "refs": [
+        "openai/plugins"
+      ]
+    },
+    {
+      "id": "09-vastsa-PI-Desktop",
+      "kind": "repo",
+      "title": "vastsa/PI-Desktop",
+      "rank": 9,
+      "url": "https://github.com/vastsa/PI-Desktop",
+      "description": "Local-first AI coding agent desktop.",
+      "language": "TypeScript",
+      "stars_gained": 393,
+      "total_stars": 1623,
+      "themes": [
+        "coding agents",
+        "local-first"
+      ],
+      "refs": [
+        "vastsa/PI-Desktop"
+      ]
+    },
+    {
+      "id": "10-rohitg00-ai-engineering-from-scratch",
+      "kind": "repo",
+      "title": "rohitg00/ai-engineering-from-scratch",
+      "rank": 10,
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars_gained": 382,
+      "total_stars": 53637,
+      "themes": [
+        "education",
+        "AI engineering"
+      ],
+      "refs": [
+        "rohitg00/ai-engineering-from-scratch"
+      ]
+    },
+    {
+      "id": "11-TauricResearch-TradingAgents",
+      "kind": "repo",
+      "title": "TauricResearch/TradingAgents",
+      "rank": 11,
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars_gained": 367,
+      "total_stars": 103882,
+      "themes": [
+        "multi-agent systems",
+        "finance"
+      ],
+      "refs": [
+        "TauricResearch/TradingAgents"
+      ]
+    },
+    {
+      "id": "12-pascalorg-editor",
+      "kind": "repo",
+      "title": "pascalorg/editor",
+      "rank": 12,
+      "url": "https://github.com/pascalorg/editor",
+      "description": "Open-source 3D architectural editor with CLI and MCP tools.",
+      "language": "TypeScript",
+      "stars_gained": 171,
+      "total_stars": 22863,
+      "themes": [
+        "agentic design",
+        "MCP"
+      ],
+      "refs": [
+        "pascalorg/editor"
+      ]
+    },
+    {
+      "id": "13-earthtojake-text-to-cad",
+      "kind": "repo",
+      "title": "earthtojake/text-to-cad",
+      "rank": 13,
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "A library of agent skills for CAD, CAE and CAM",
+      "language": "Python",
+      "stars_gained": 97,
+      "total_stars": 15006,
+      "themes": [
+        "agentic design",
+        "engineering"
+      ],
+      "refs": [
+        "earthtojake/text-to-cad"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent harnesses and skills, AI-assisted design and multimodality, multi-agent applications; Python leads with 4 entries, followed by TypeScript and JavaScript with 3 each."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "Momentum is moving from standalone model demos toward operational agent layers and agent-native design tooling."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "GitHub momentum is concentrating on the product layer around AI models: disciplined workflows, useful artifacts, and domain-specific interfaces."
+    }
   ]
 }

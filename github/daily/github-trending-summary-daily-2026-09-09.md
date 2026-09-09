@@ -4,82 +4,86 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-09 21:47 UTC |
+| Snapshot time (UTC) | 2026-09-09 22:13 UTC |
 | Scope | Daily |
 | Date range | 2026-09-09 through 2026-09-09 |
-| Ranking basis | Daily Trending star gains |
+| Ranking basis | Daily GitHub Trending star gains |
 
 ## Headline
 
-AI-agent infrastructure dominates today's GitHub activity, spanning agent-friendly output, team automation, skills frameworks, 3D/CAD workflows, diagramming, and local coding agents. The leading repository, `ayghri/i-have-adhd`, added 4,624 stars in the daily Trending view.
+AI-agent infrastructure and agent-friendly workflows dominate today's GitHub Trending list. The strongest single signal is `ayghri/i-have-adhd` at +4,624 stars, while agent harnesses, coding agents, multimodal tooling, and AI-assisted design occupy most of the top tier.
 
 ## Top Repositories
 
-1. **[ayghri/i-have-adhd - A skill to make coding-agent output more direct and ADHD-friendly.](https://github.com/ayghri/i-have-adhd)**
+1. **[ayghri/i-have-adhd - A skill to stop coding agents from burying the answer](https://github.com/ayghri/i-have-adhd)**
 
-  **Language:** Python | **Stars gained in window:** +4,624 | **Total stars:** 34,314 | **Why notable:** The day's clear leader by star gain, illustrating demand for practical agent-interaction improvements.
+  **Language:** Python | **Stars gained in window:** +4,624 | **Total stars:** 34,355 | **Why notable:** The day's fastest-growing repository, focused on ADHD-friendly agent output.
 
-2. **[cathrynlavery/diagram-design - Editorial diagram types for Claude Code, Codex, and Pi using self-contained HTML and SVG.](https://github.com/cathrynlavery/diagram-design)**
+2. **[cathrynlavery/diagram-design - Editorial diagram types for coding agents](https://github.com/cathrynlavery/diagram-design)**
 
-  **Language:** HTML | **Stars gained in window:** +2,286 | **Total stars:** 36,481 | **Why notable:** Strong momentum at the intersection of AI-assisted development and visual communication.
+  **Language:** HTML | **Stars gained in window:** +2,286 | **Total stars:** 36,495 | **Why notable:** Brings polished, self-contained HTML/SVG diagram generation to Claude Code, Codex, and Pi.
 
-3. **[liquidslr/system-design-notes - Notes for System Design Interview.](https://github.com/liquidslr/system-design-notes)**
+3. **[affaan-m/ECC - Agent harness performance optimization system](https://github.com/affaan-m/ECC)**
 
-  **Language:** N/A - not available from GitHub | **Stars gained in window:** +910 | **Total stars:** 17,935 | **Why notable:** A durable learning resource ranked highly on daily interest despite no detected primary language.
+  **Language:** JavaScript | **Stars gained in window:** +1,151 | **Total stars:** 255,112 | **Why notable:** A large, established agent-harness project still adding substantial daily momentum.
 
-4. **[obra/superpowers - An agentic skills framework and software-development methodology.](https://github.com/obra/superpowers)**
+4. **[liquidslr/system-design-notes - System design interview notes](https://github.com/liquidslr/system-design-notes)**
 
-  **Language:** Shell | **Stars gained in window:** +690 | **Total stars:** 283,980 | **Why notable:** The largest project by total stars in this snapshot and a major signal for reusable agent workflows.
+  **Language:** N/A - not available from GitHub | **Stars gained in window:** +910 | **Total stars:** 17,943 | **Why notable:** The main non-AI learning resource in the top group, showing continued demand for practical engineering knowledge.
 
-5. **[freestylefly/awesome-gpt-image-2 - Prompt-as-code templates and reverse-engineered examples for GPT-Image-2.](https://github.com/freestylefly/awesome-gpt-image-2)**
+5. **[obra/superpowers - Agentic skills framework and development methodology](https://github.com/obra/superpowers)**
 
-  **Language:** JavaScript | **Stars gained in window:** +612 | **Total stars:** 29,979 | **Why notable:** Shows image-generation practice moving toward structured, reusable prompt engineering.
+  **Language:** Shell | **Stars gained in window:** +690 | **Total stars:** 283,984 | **Why notable:** A highly starred framework for making software-development agents more systematic.
 
-6. **[Tencent/teamai-cli - Make every team AI native.](https://github.com/Tencent/teamai-cli)**
+6. **[freestylefly/awesome-gpt-image-2 - Prompt-as-code GPT-Image2 templates](https://github.com/freestylefly/awesome-gpt-image-2)**
 
-  **Language:** TypeScript | **Stars gained in window:** +563 | **Total stars:** 2,908 | **Why notable:** A fresh team-oriented AI CLI from a major technology company gained substantial same-day attention.
+  **Language:** JavaScript | **Stars gained in window:** +612 | **Total stars:** 29,985 | **Why notable:** Captures the shift from image prompting toward reusable, industrial prompt systems.
 
-7. **[openai/plugins - OpenAI Plugins.](https://github.com/openai/plugins)**
+7. **[Tencent/teamai-cli - Make every team AI native](https://github.com/Tencent/teamai-cli)**
 
-  **Language:** JavaScript | **Stars gained in window:** +505 | **Total stars:** 6,158 | **Why notable:** Continued interest in extensible model tooling and agent integrations.
+  **Language:** TypeScript | **Stars gained in window:** +563 | **Total stars:** 2,917 | **Why notable:** A fresh enterprise-oriented CLI signal for integrating AI into team workflows.
 
-8. **[vastsa/PI-Desktop - Local-first AI coding-agent desktop built with Electron, Rust, and a plugin system.](https://github.com/vastsa/PI-Desktop)**
+8. **[openai/plugins - OpenAI Plugins](https://github.com/openai/plugins)**
 
-  **Language:** TypeScript | **Stars gained in window:** +393 | **Total stars:** 1,618 | **Why notable:** Combines local execution, a desktop shell, and installable extensions for coding agents.
+  **Language:** JavaScript | **Stars gained in window:** +505 | **Total stars:** 6,162 | **Why notable:** A legacy-looking repository receiving renewed attention amid the current agent and tool-integration cycle.
 
-9. **[rohitg00/ai-engineering-from-scratch - Learn, build, and ship AI engineering projects.](https://github.com/rohitg00/ai-engineering-from-scratch)**
+9. **[vastsa/PI-Desktop - Local-first AI coding-agent desktop](https://github.com/vastsa/PI-Desktop)**
 
-  **Language:** Python | **Stars gained in window:** +382 | **Total stars:** 53,630 | **Why notable:** Educational AI-engineering content remains a strong discovery category.
+  **Language:** TypeScript | **Stars gained in window:** +393 | **Total stars:** 1,623 | **Why notable:** Combines Electron, a Rust host core, an agent harness, and installable plugins in a local-first desktop.
 
-10. **[TauricResearch/TradingAgents - Multi-agent LLM financial-trading framework.](https://github.com/TauricResearch/TradingAgents)**
+10. **[rohitg00/ai-engineering-from-scratch - Learn, build, and ship AI engineering](https://github.com/rohitg00/ai-engineering-from-scratch)**
 
-  **Language:** Python | **Stars gained in window:** +367 | **Total stars:** 103,878 | **Why notable:** Applies multi-agent orchestration to a high-interest financial domain and has substantial existing adoption.
+  **Language:** Python | **Stars gained in window:** +382 | **Total stars:** 53,637 | **Why notable:** The educational angle remains strong as developers seek practical foundations for building AI systems.
 
-11. **[pascalorg/editor - Open-source 3D architectural editor with a local CLI, MCP tools, and workflows for humans and AI agents.](https://github.com/pascalorg/editor)**
+11. **[TauricResearch/TradingAgents - Multi-agent LLM financial trading framework](https://github.com/TauricResearch/TradingAgents)**
 
-  **Language:** TypeScript | **Stars gained in window:** +171 | **Total stars:** 22,857 | **Why notable:** Connects local tools and MCP interfaces to 3D architectural work.
+  **Language:** Python | **Stars gained in window:** +367 | **Total stars:** 103,882 | **Why notable:** Applies multi-agent orchestration to finance and remains one of the list's largest projects.
 
-12. **[earthtojake/text-to-cad - Agent skills for CAD, CAE, and CAM.](https://github.com/earthtojake/text-to-cad)**
+12. **[pascalorg/editor - Open-source 3D architectural editor](https://github.com/pascalorg/editor)**
 
-  **Language:** Python | **Stars gained in window:** +97 | **Total stars:** 15,002 | **Why notable:** Extends agent workflows from software into engineering and manufacturing design.
+  **Language:** TypeScript | **Stars gained in window:** +171 | **Total stars:** 22,863 | **Why notable:** Connects 3D design, local CLI workflows, MCP tools, and human/agent collaboration.
+
+13. **[earthtojake/text-to-cad - Agent skills for CAD, CAE, and CAM](https://github.com/earthtojake/text-to-cad)**
+
+  **Language:** Python | **Stars gained in window:** +97 | **Total stars:** 15,006 | **Why notable:** Extends agentic generation beyond software into engineering and manufacturing workflows.
 
 ## Trending Technologies and Themes
 
-- **Coding-agent skills and workflows:** `i-have-adhd`, `superpowers`, `teamai-cli`, and `PI-Desktop` all focus on making agents more usable, extensible, or deployable.
-- **Agentic creative and engineering tools:** `diagram-design`, `text-to-cad`, and `awesome-gpt-image-2` show agents moving into diagrams, CAD/CAE/CAM, and image generation.
-- **Multi-agent applications:** `TradingAgents` demonstrates continued interest in domain-specific agent orchestration.
-- **Languages:** Python appears in four of the listed repositories; TypeScript in three; JavaScript in two; Shell and HTML in one each. One repository has no primary language reported.
+- **Agent harnesses and skills:** `obra/superpowers`, `affaan-m/ECC`, `ayghri/i-have-adhd`, `Tencent/teamai-cli`, and `vastsa/PI-Desktop` show a focus on making agents usable, controllable, and embedded in real workflows.
+- **AI-assisted design and multimodality:** `cathrynlavery/diagram-design`, `freestylefly/awesome-gpt-image-2`, `pascalorg/editor`, and `earthtojake/text-to-cad` move AI from chat toward diagrams, images, architecture, and CAD.
+- **Multi-agent applications:** `TauricResearch/TradingAgents` demonstrates domain-specific orchestration in finance; the list also contains broader agent platforms and educational material.
+- **Languages:** Python leads with 4 listed repositories; TypeScript and JavaScript have 3 each; Shell and HTML have 1 each; 1 repository has no primary language reported.
 
 ## Notable Shifts
 
-The strongest shift is from general-purpose model libraries toward workflow products and skills that sit around agents: output conventions, team CLIs, local desktop runtimes, visual artifacts, and engineering design. Today's list also shows agent techniques spreading beyond coding into finance, design, and manufacturing.
+The list is shifting from standalone model demos toward operational layers around agents: skills, harnesses, memory/security/performance practices, desktop shells, and domain-specific interfaces. Design tooling is also becoming agent-native, with MCP and self-contained HTML/SVG appearing alongside conventional developer tools.
 
 ## Takeaway
 
-GitHub's daily signal is increasingly about operationalizing AI agents rather than merely hosting models. Repositories that package repeatable skills, local execution, and domain workflows are attracting attention across both developer and non-developer use cases. The breadth of the list suggests an expanding agent ecosystem, with usability and integration now competing with raw model capability as the main source of momentum.
+Today's hottest repositories suggest that GitHub momentum is concentrating on the product layer around AI models rather than on models alone. The winning pattern is an agent that can work inside a disciplined workflow, generate useful artifacts, and connect to a real domain such as software engineering, visual design, manufacturing, or finance.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending repositories today](https://github.com/trending?since=daily)
-- **Corroboration:** GitHub REST API `GET /repos/{owner}/{repo}` for all listed repositories; checked fork/archive status, current language, star count, and recent push timestamps.
-- **Method note:** Rankings and daily star gains come from the daily GitHub Trending view captured at 2026-09-09 21:47 UTC. Repository metadata was cross-checked against the public REST API; API star totals can change during the day.
+- **Primary source:** https://github.com/trending?since=daily
+- **Corroboration:** GitHub REST repository API (`GET /repos/{owner}/{repo}`) checked current star totals, primary languages, descriptions, fork status, and recent push timestamps for all 13 entries.
+- **Method note:** Entries are ranked by the daily star-gain signal displayed by GitHub Trending; current totals and metadata were corroborated through the REST API. GitHub's displayed trend values are a snapshot and may change during the day.

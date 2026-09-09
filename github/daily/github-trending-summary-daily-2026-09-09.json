@@ -5,158 +5,20 @@
   "date": "2026-09-09",
   "title": "GitHub Trending Summary - Daily - 2026-09-09",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-09.md",
-  "entry_count": 10,
+  "entry_count": 12,
   "entry_noun": "repositories",
   "sections": [
-    {
-      "id": "ayghri-i-have-adhd",
-      "kind": "repository",
-      "title": "ayghri/i-have-adhd",
-      "rank": 1,
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "description": "Star ayghri / i-have-adhd A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "language": "Python",
-      "stars_gained": "+656",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "cathrynlavery-diagram-design",
-      "kind": "repository",
-      "title": "cathrynlavery/diagram-design",
-      "rank": 2,
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "Star cathrynlavery / diagram-design 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "stars_gained": "+710",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "openai-skills",
-      "kind": "repository",
-      "title": "openai/skills",
-      "rank": 3,
-      "url": "https://github.com/openai/skills",
-      "description": "Star openai / skills Skills Catalog for Codex",
-      "language": "Python",
-      "stars_gained": "+490",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "affaan-m-ECC",
-      "kind": "repository",
-      "title": "affaan-m/ECC",
-      "rank": 4,
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "Sponsor Star affaan-m / ECC The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "stars_gained": "+1,427",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "heygen-com-hyperframes",
-      "kind": "repository",
-      "title": "heygen-com/hyperframes",
-      "rank": 5,
-      "url": "https://github.com/heygen-com/hyperframes",
-      "description": "Star heygen-com / hyperframes Write HTML. Render video. Built for agents.",
-      "language": "TypeScript",
-      "stars_gained": "+2,627",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "coreyhaines31-marketingskills",
-      "kind": "repository",
-      "title": "coreyhaines31/marketingskills",
-      "rank": 6,
-      "url": "https://github.com/coreyhaines31/marketingskills",
-      "description": "Sponsor Star coreyhaines31 / marketingskills Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-      "language": "JavaScript",
-      "stars_gained": "+666",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "obra-superpowers",
-      "kind": "repository",
-      "title": "obra/superpowers",
-      "rank": 7,
-      "url": "https://github.com/obra/superpowers",
-      "description": "Sponsor Star obra / superpowers An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars_gained": "+452",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "multica-ai-andrej-karpathy-skills",
-      "kind": "repository",
-      "title": "multica-ai/andrej-karpathy-skills",
-      "rank": 8,
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "description": "Star multica-ai / andrej-karpathy-skills A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "language": "N/A - not available from GitHub",
-      "stars_gained": "+333",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "microsoft-markitdown",
-      "kind": "repository",
-      "title": "microsoft/markitdown",
-      "rank": 9,
-      "url": "https://github.com/microsoft/markitdown",
-      "description": "Star microsoft / markitdown Python tool for converting files and office documents to Markdown.",
-      "language": "Python",
-      "stars_gained": "+2,047",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    },
-    {
-      "id": "jo-inc-camofox-browser",
-      "kind": "repository",
-      "title": "jo-inc/camofox-browser",
-      "rank": 10,
-      "url": "https://github.com/jo-inc/camofox-browser",
-      "description": "Star jo-inc / camofox-browser Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.",
-      "language": "JavaScript",
-      "stars_gained": "+871",
-      "total_stars": "N/A - not available from GitHub",
-      "themes": [
-        "AI agents",
-        "developer tooling"
-      ]
-    }
+    {"id":"ayghri-i-have-adhd","kind":"repository","title":"ayghri/i-have-adhd","rank":1,"url":"https://github.com/ayghri/i-have-adhd","description":"A skill to stop your coding agent from burying the answer. ADHD-friendly output.","language":"Python","stars_gained":4624,"total_stars":34314,"themes":["coding agents","developer experience"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"tencent-teamai-cli","kind":"repository","title":"Tencent/teamai-cli","rank":2,"url":"https://github.com/Tencent/teamai-cli","description":"Make Every Team AI Native","language":"TypeScript","stars_gained":563,"total_stars":2908,"themes":["team AI","CLI","developer tooling"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"obra-superpowers","kind":"repository","title":"obra/superpowers","rank":3,"url":"https://github.com/obra/superpowers","description":"An agentic skills framework and software development methodology that works.","language":"Shell","stars_gained":690,"total_stars":283980,"themes":["agentic skills","software development"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"pascalorg-editor","kind":"repository","title":"pascalorg/editor","rank":4,"url":"https://github.com/pascalorg/editor","description":"Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.","language":"TypeScript","stars_gained":171,"total_stars":22857,"themes":["3D","architecture","MCP"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"earthtojake-text-to-cad","kind":"repository","title":"earthtojake/text-to-cad","rank":5,"url":"https://github.com/earthtojake/text-to-cad","description":"A library of agent skills for CAD, CAE and CAM","language":"Python","stars_gained":97,"total_stars":15002,"themes":["CAD","engineering","agent skills"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"cathrynlavery-diagram-design","kind":"repository","title":"cathrynlavery/diagram-design","rank":6,"url":"https://github.com/cathrynlavery/diagram-design","description":"38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG.","language":"HTML","stars_gained":2286,"total_stars":36481,"themes":["visualization","coding agents","SVG"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"tauricresearch-tradingagents","kind":"repository","title":"TauricResearch/TradingAgents","rank":7,"url":"https://github.com/TauricResearch/TradingAgents","description":"Multi-agents LLM Financial Trading Framework","language":"Python","stars_gained":367,"total_stars":103878,"themes":["multi-agent systems","finance"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"liquidslr-system-design-notes","kind":"repository","title":"liquidslr/system-design-notes","rank":8,"url":"https://github.com/liquidslr/system-design-notes","description":"Notes of the book System Design Interview - An Insider's Guide","language":null,"stars_gained":910,"total_stars":17935,"themes":["system design","education"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"openai-plugins","kind":"repository","title":"openai/plugins","rank":9,"url":"https://github.com/openai/plugins","description":"OpenAI Plugins","language":"JavaScript","stars_gained":505,"total_stars":6158,"themes":["AI integrations","plugins"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"freestylefly-awesome-gpt-image-2","kind":"repository","title":"freestylefly/awesome-gpt-image-2","rank":10,"url":"https://github.com/freestylefly/awesome-gpt-image-2","description":"Prompt-as-code templates and examples for GPT-Image-2.","language":"JavaScript","stars_gained":612,"total_stars":29979,"themes":["image generation","prompt engineering"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"rohitg00-ai-engineering-from-scratch","kind":"repository","title":"rohitg00/ai-engineering-from-scratch","rank":11,"url":"https://github.com/rohitg00/ai-engineering-from-scratch","description":"Learn it. Build it. Ship it for others.","language":"Python","stars_gained":382,"total_stars":53630,"themes":["AI engineering","education"],"refs":["GitHub Trending daily","GitHub REST API"]},
+    {"id":"vastsa-pi-desktop","kind":"repository","title":"vastsa/PI-Desktop","rank":12,"url":"https://github.com/vastsa/PI-Desktop","description":"Local-first AI coding agent desktop with Electron, Rust, and plugins.","language":"TypeScript","stars_gained":393,"total_stars":1618,"themes":["local AI","coding agents","desktop apps"],"refs":["GitHub Trending daily","GitHub REST API"]}
   ]
 }

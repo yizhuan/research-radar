@@ -1,0 +1,162 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-09",
+  "title": "GitHub Trending Summary - Daily - 2026-09-09",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-09.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "sections": [
+    {
+      "id": "ayghri-i-have-adhd",
+      "kind": "repository",
+      "title": "ayghri/i-have-adhd",
+      "rank": 1,
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "Star ayghri / i-have-adhd A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars_gained": "+656",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "cathrynlavery-diagram-design",
+      "kind": "repository",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 2,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Star cathrynlavery / diagram-design 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars_gained": "+710",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "openai-skills",
+      "kind": "repository",
+      "title": "openai/skills",
+      "rank": 3,
+      "url": "https://github.com/openai/skills",
+      "description": "Star openai / skills Skills Catalog for Codex",
+      "language": "Python",
+      "stars_gained": "+490",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "affaan-m-ECC",
+      "kind": "repository",
+      "title": "affaan-m/ECC",
+      "rank": 4,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "Sponsor Star affaan-m / ECC The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars_gained": "+1,427",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "heygen-com-hyperframes",
+      "kind": "repository",
+      "title": "heygen-com/hyperframes",
+      "rank": 5,
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Star heygen-com / hyperframes Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars_gained": "+2,627",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "coreyhaines31-marketingskills",
+      "kind": "repository",
+      "title": "coreyhaines31/marketingskills",
+      "rank": 6,
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "description": "Sponsor Star coreyhaines31 / marketingskills Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "language": "JavaScript",
+      "stars_gained": "+666",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "obra-superpowers",
+      "kind": "repository",
+      "title": "obra/superpowers",
+      "rank": 7,
+      "url": "https://github.com/obra/superpowers",
+      "description": "Sponsor Star obra / superpowers An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars_gained": "+452",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "multica-ai-andrej-karpathy-skills",
+      "kind": "repository",
+      "title": "multica-ai/andrej-karpathy-skills",
+      "rank": 8,
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "Star multica-ai / andrej-karpathy-skills A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "N/A - not available from GitHub",
+      "stars_gained": "+333",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "microsoft-markitdown",
+      "kind": "repository",
+      "title": "microsoft/markitdown",
+      "rank": 9,
+      "url": "https://github.com/microsoft/markitdown",
+      "description": "Star microsoft / markitdown Python tool for converting files and office documents to Markdown.",
+      "language": "Python",
+      "stars_gained": "+2,047",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    },
+    {
+      "id": "jo-inc-camofox-browser",
+      "kind": "repository",
+      "title": "jo-inc/camofox-browser",
+      "rank": 10,
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "description": "Star jo-inc / camofox-browser Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.",
+      "language": "JavaScript",
+      "stars_gained": "+871",
+      "total_stars": "N/A - not available from GitHub",
+      "themes": [
+        "AI agents",
+        "developer tooling"
+      ]
+    }
+  ]
+}

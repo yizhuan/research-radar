@@ -1,17 +1,17 @@
 # What's trending in Github, AI, math, and physics - Daily updates
 
-Generated: 2026-09-08 01:40
+Generated: 2026-09-09 21:20
 Source: `/home/yizhuan/.research`
 
 ## Ai
 
-- **Daily**: [arxiv-trending-ai-daily-2026-09-04](ai/daily/arxiv-trending-ai-daily-2026-09-04.md) — 2026-09-04
-- **Monthly**: [arxiv-trending-ai-monthly-2026-09-04](ai/monthly/arxiv-trending-ai-monthly-2026-09-04.md) — 2026-09-04
+- **Daily**: [arxiv-trending-ai-daily-2026-09-07](ai/daily/arxiv-trending-ai-daily-2026-09-07.md) — 2026-09-07
+- **Monthly**: [arxiv-trending-ai-monthly-2026-09-08](ai/monthly/arxiv-trending-ai-monthly-2026-09-08.md) — 2026-09-08
 - **Weekly**: [arxiv-trending-ai-weekly-2026-09-04](ai/weekly/arxiv-trending-ai-weekly-2026-09-04.md) — 2026-09-04
 
 ## Github
 
-- **Daily**: [github-trending-summary-daily-2026-09-08](github/daily/github-trending-summary-daily-2026-09-08.md) — 2026-09-08
+- **Daily**: [github-trending-summary-daily-2026-09-09](github/daily/github-trending-summary-daily-2026-09-09.md) — 2026-09-09
 - **Monthly**: [github-trending-summary-monthly-2026-09-04](github/monthly/github-trending-summary-monthly-2026-09-04.md) — 2026-09-04
 - **Weekly**: [github-trending-summary-weekly-2026-09-04](github/weekly/github-trending-summary-weekly-2026-09-04.md) — 2026-09-04
 
@@ -25,4 +25,4 @@ Source: `/home/yizhuan/.research`
 
 - **Daily**: [arxiv-trending-physics-daily-2026-09-07](physics/daily/arxiv-trending-physics-daily-2026-09-07.md) — 2026-09-07
 - **Monthly**: [arxiv-trending-physics-monthly-2026-09-04](physics/monthly/arxiv-trending-physics-monthly-2026-09-04.md) — 2026-09-04
-- **Weekly**: [arxiv-trending-physics-weekly-2026-09-07](physics/weekly/arxiv-trending-physics-weekly-2026-09-07.md) — 2026-09-07
+- **Weekly**: [arxiv-trending-physics-weekly-2026-09-08](physics/weekly/arxiv-trending-physics-weekly-2026-09-08.md) — 2026-09-08

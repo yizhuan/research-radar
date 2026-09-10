@@ -12,7 +12,7 @@
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "AI-agent infrastructure and agent-facing workflows dominate today's list. The strongest single signal is the ADHD-friendly coding-agent skill, while diagramming, image prompting, local coding desktops, CAD, and multi-agent finance show the ecosystem expanding into specialized production tools."
+      "content": "AI-agent workflows dominate the daily list, spanning skills, team automation, visual tooling, trading, and model routing. At the same time, local inference and practical developer education remain strong secondary themes."
     },
     {
       "id": "01-ayghri-i-have-adhd",
@@ -22,171 +22,195 @@
       "url": "https://github.com/ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
-      "stars_gained": 4650,
-      "total_stars": 34594,
-      "themes": ["coding-agent ergonomics", "agent skills"],
-      "refs": ["ayghri/i-have-adhd"]
+      "stars_gained": 3854,
+      "total_stars": 38041,
+      "why_notable": "A sharp signal for agent UX and concise output control.",
+      "refs": [
+        "ayghri/i-have-adhd"
+      ]
     },
     {
-      "id": "02-cathrynlavery-diagram-design",
+      "id": "02-bilawalsidhu-gods-eye-view",
       "kind": "repo",
-      "title": "cathrynlavery/diagram-design",
+      "title": "bilawalsidhu/gods-eye-view",
       "rank": 2,
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG.",
-      "language": "HTML",
-      "stars_gained": 2249,
-      "total_stars": 36580,
-      "themes": ["agent-native design", "diagrams"],
-      "refs": ["cathrynlavery/diagram-design"]
-    },
-    {
-      "id": "03-liquidslr-system-design-notes",
-      "kind": "repo",
-      "title": "liquidslr/system-design-notes",
-      "rank": 3,
-      "url": "https://github.com/liquidslr/system-design-notes",
-      "description": "Notes of the book System Design Interview - An Insider's Guide.",
-      "language": null,
-      "stars_gained": 1397,
-      "total_stars": 17988,
-      "themes": ["developer education", "system design"],
-      "refs": ["liquidslr/system-design-notes"]
-    },
-    {
-      "id": "04-affaan-m-ecc",
-      "kind": "repo",
-      "title": "affaan-m/ECC",
-      "rank": 4,
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development.",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser using real data and a photorealistic 3D globe.",
       "language": "JavaScript",
-      "stars_gained": 1133,
-      "total_stars": 255173,
-      "themes": ["agent harnesses", "developer tooling"],
-      "refs": ["affaan-m/ECC"]
+      "stars_gained": 1588,
+      "total_stars": 23977,
+      "why_notable": "Combines browser graphics with open spatial intelligence.",
+      "refs": [
+        "bilawalsidhu/gods-eye-view"
+      ]
     },
     {
-      "id": "05-freestylefly-awesome-gpt-image-2",
-      "kind": "repo",
-      "title": "freestylefly/awesome-gpt-image-2",
-      "rank": 5,
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code and GPT-Image2 prompt templates and examples.",
-      "language": "JavaScript",
-      "stars_gained": 705,
-      "total_stars": 30028,
-      "themes": ["generative image", "prompt engineering"],
-      "refs": ["freestylefly/awesome-gpt-image-2"]
-    },
-    {
-      "id": "06-obra-superpowers",
+      "id": "03-obra-superpowers",
       "kind": "repo",
       "title": "obra/superpowers",
-      "rank": 6,
+      "rank": 3,
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework and software development methodology.",
       "language": "Shell",
-      "stars_gained": 688,
-      "total_stars": 284021,
-      "themes": ["agent skills", "software methodology"],
-      "refs": ["obra/superpowers"]
+      "stars_gained": 731,
+      "total_stars": 284665,
+      "why_notable": "Shows sustained demand for structured agent workflows.",
+      "refs": [
+        "obra/superpowers"
+      ]
     },
     {
-      "id": "07-tencent-teamai-cli",
+      "id": "04-alsk1992-cloddsbot",
+      "kind": "repo",
+      "title": "alsk1992/CloddsBot",
+      "rank": 4,
+      "url": "https://github.com/alsk1992/CloddsBot",
+      "description": "Open-source AI trading agent spanning prediction markets, crypto venues, and EVM chains.",
+      "language": "TypeScript",
+      "stars_gained": 299,
+      "total_stars": 1590,
+      "why_notable": "Pairs autonomous agents with real-time finance and execution.",
+      "refs": [
+        "alsk1992/CloddsBot"
+      ]
+    },
+    {
+      "id": "05-tencent-teamai-cli",
       "kind": "repo",
       "title": "Tencent/teamai-cli",
-      "rank": 7,
+      "rank": 5,
       "url": "https://github.com/Tencent/teamai-cli",
-      "description": "Make Every Team AI Native.",
+      "description": "Make every team AI native.",
       "language": "TypeScript",
-      "stars_gained": 556,
-      "total_stars": 2971,
-      "themes": ["team AI", "CLI tooling"],
-      "refs": ["Tencent/teamai-cli"]
+      "stars_gained": 837,
+      "total_stars": 3730,
+      "why_notable": "Enterprise-oriented team automation is drawing strong attention.",
+      "refs": [
+        "Tencent/teamai-cli"
+      ]
     },
     {
-      "id": "08-openai-plugins",
+      "id": "06-alexsjones-llmfit",
       "kind": "repo",
-      "title": "openai/plugins",
+      "title": "AlexsJones/llmfit",
+      "rank": 6,
+      "url": "https://github.com/AlexsJones/llmfit",
+      "description": "A command-line tool for finding models and providers that run on your hardware.",
+      "language": "Rust",
+      "stars_gained": 247,
+      "total_stars": 35698,
+      "why_notable": "Local model selection remains a practical deployment problem.",
+      "refs": [
+        "AlexsJones/llmfit"
+      ]
+    },
+    {
+      "id": "07-liquidslr-system-design-notes",
+      "kind": "repo",
+      "title": "liquidslr/system-design-notes",
+      "rank": 7,
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "description": "Notes for System Design Interview - An Insider's Guide.",
+      "language": "N/A - not available from GitHub",
+      "stars_gained": 891,
+      "total_stars": 18714,
+      "why_notable": "A durable learning resource is outperforming many new projects.",
+      "refs": [
+        "liquidslr/system-design-notes"
+      ]
+    },
+    {
+      "id": "08-cathrynlavery-diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
       "rank": 8,
-      "url": "https://github.com/openai/plugins",
-      "description": "OpenAI Plugins.",
-      "language": "JavaScript",
-      "stars_gained": 498,
-      "total_stars": 6191,
-      "themes": ["model integrations", "plugins"],
-      "refs": ["openai/plugins"]
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "38 editorial diagram types for Claude Code, Codex, and Pi, using self-contained HTML and SVG.",
+      "language": "HTML",
+      "stars_gained": 1287,
+      "total_stars": 37666,
+      "why_notable": "Agent-assisted visual communication is emerging as a distinct tool category.",
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ]
     },
     {
-      "id": "09-vastsa-pi-desktop",
+      "id": "09-freestylefly-awesome-gpt-image-2",
       "kind": "repo",
-      "title": "vastsa/PI-Desktop",
+      "title": "freestylefly/awesome-gpt-image-2",
       "rank": 9,
-      "url": "https://github.com/vastsa/PI-Desktop",
-      "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins.",
-      "language": "TypeScript",
-      "stars_gained": 417,
-      "total_stars": 1658,
-      "themes": ["local-first AI", "coding agents", "desktop apps"],
-      "refs": ["vastsa/PI-Desktop"]
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "A prompt-as-code library and casebook for GPT Image 2 and 2.5.",
+      "language": "JavaScript",
+      "stars_gained": 957,
+      "total_stars": 30798,
+      "why_notable": "Generative-image workflows are moving toward reusable, recorded recipes.",
+      "refs": [
+        "freestylefly/awesome-gpt-image-2"
+      ]
     },
     {
-      "id": "10-tauricresearch-tradingagents",
+      "id": "10-armory3d-armorpaint",
       "kind": "repo",
-      "title": "TauricResearch/TradingAgents",
+      "title": "armory3d/armorpaint",
       "rank": 10,
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "description": "Multi-Agents LLM Financial Trading Framework.",
-      "language": "Python",
-      "stars_gained": 367,
-      "total_stars": 103947,
-      "themes": ["multi-agent systems", "finance"],
-      "refs": ["TauricResearch/TradingAgents"]
+      "url": "https://github.com/armory3d/armorpaint",
+      "description": "Graphics creation tools.",
+      "language": "C",
+      "stars_gained": 87,
+      "total_stars": 4388,
+      "why_notable": "A smaller but notable return of interest in native creative tooling.",
+      "refs": [
+        "armory3d/armorpaint"
+      ]
     },
     {
-      "id": "11-rohitg00-ai-engineering-from-scratch",
+      "id": "11-diegosouzapw-omniroute",
       "kind": "repo",
-      "title": "rohitg00/ai-engineering-from-scratch",
+      "title": "diegosouzapw/OmniRoute",
       "rank": 11,
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "stars_gained": 343,
-      "total_stars": 53686,
-      "themes": ["AI engineering", "education"],
-      "refs": ["rohitg00/ai-engineering-from-scratch"]
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "description": "An MIT AI gateway with hundreds of providers and models, plus quota-aware fallback and agent protocols.",
+      "language": "TypeScript",
+      "stars_gained": 591,
+      "total_stars": 64167,
+      "why_notable": "The infrastructure layer around multi-provider AI is consolidating.",
+      "refs": [
+        "diegosouzapw/OmniRoute"
+      ]
     },
     {
-      "id": "12-earthtojake-text-to-cad",
+      "id": "12-justvugg-colibri",
       "kind": "repo",
-      "title": "earthtojake/text-to-cad",
+      "title": "JustVugg/colibri",
       "rank": 12,
-      "url": "https://github.com/earthtojake/text-to-cad",
-      "description": "A library of agent skills for CAD, CAE and CAM.",
-      "language": "Python",
-      "stars_gained": 124,
-      "total_stars": 15028,
-      "themes": ["CAD", "engineering agents"],
-      "refs": ["earthtojake/text-to-cad"]
+      "url": "https://github.com/JustVugg/colibri",
+      "description": "A pure-C engine for running frontier mixture-of-experts models on existing hardware.",
+      "language": "C",
+      "stars_gained": 130,
+      "total_stars": 27421,
+      "why_notable": "Efficient local inference is extending beyond conventional runtimes.",
+      "refs": [
+        "JustVugg/colibri"
+      ]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Coding-agent ergonomics and harnesses lead the list; agent-native creative and engineering tools extend into diagrams, images, architecture, and CAD; multi-agent systems appear in finance and practical AI engineering. Python is the most common language among listed entries, followed by TypeScript and JavaScript."
+      "content": "Agentic developer workflows; AI infrastructure and local inference; applied AI in trading and image generation. Languages: TypeScript 4, JavaScript 2, C 2, and one each of Python, Shell, Rust, HTML, plus one N/A."
     },
     {
       "id": "85-notable-shifts",
       "kind": "extra",
       "title": "Notable Shifts",
-      "content": "The snapshot is centered less on model releases and more on the operating layer around agents: skills, harnesses, UX conventions, local runtimes, and domain-specific interfaces."
+      "content": "The list is unusually centered on agent operating practices rather than standalone model releases, with a parallel signal for local inference."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "GitHub's strongest daily signal is the maturation of coding agents into a broader software and knowledge-work platform. Reusable skills, development methods, local runtimes, and vertical tools are attracting attention alongside core AI infrastructure."
+      "content": "GitHub is showing an ecosystem forming around AI agents: workflows, interfaces, routing, and operational safeguards. Local execution remains a practical counterweight to hosted-model enthusiasm."
     }
   ]
 }

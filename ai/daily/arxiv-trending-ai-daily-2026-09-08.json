@@ -1,0 +1,272 @@
+{
+  "schema": "arxiv-trending-ai/v1",
+  "category": "ai",
+  "window": "daily",
+  "date": "2026-09-08",
+  "title": "arXiv Trending AI — 2026-09-08 announcement batch",
+  "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-09-08.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "p1",
+      "kind": "paper",
+      "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.09153",
+      "arxiv_id": "2609.09153",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T17:59:41Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "authors": [
+        "Yuxing Lu",
+        "Yicheng Chen",
+        "Shanchan Wu",
+        "Sercan Ö. Arık"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Retrieval & knowledge",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "Self-evolving procedural graphs organize what-to-do knowledge and guide next actions.",
+      "claimed_contribution": "Consistent gains over memory baselines; self-evolution improves performance.",
+      "caveat": "Preprint evidence and task/model coverage remain limited.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09153",
+        "https://news.ycombinator.com/item?id=49629868"
+      ]
+    },
+    {
+      "id": "p2",
+      "kind": "paper",
+      "title": "ReCite: Agentic Reasoning for Faithful Citation",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.09156",
+      "arxiv_id": "2609.09156",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T17:59:50Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "authors": [
+        "Yuyang Huang",
+        "Bobo Li",
+        "Jiajia Song",
+        "Yuzhe Ding",
+        "Chong Teng",
+        "Fei Li",
+        "Donghong Ji"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Retrieval & knowledge",
+        "Safety & alignment"
+      ],
+      "abstract": "Claim-level planning, evidence checking, and reflective correction for citation recommendation.",
+      "claimed_contribution": "Reportedly exceeds large generative models on strict citation accuracy.",
+      "caveat": "Real scholarly workflows and unseen venues remain less tested.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09156",
+        "https://arxiv.org/html/2609.09156"
+      ]
+    },
+    {
+      "id": "p3",
+      "kind": "paper",
+      "title": "Copying explains the collective behavior of AI agents in the wild",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.09150",
+      "arxiv_id": "2609.09150",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T17:59:20Z",
+      "categories": [
+        "cs.MA",
+        "cond-mat.stat-mech",
+        "cs.CL"
+      ],
+      "authors": [
+        "Giordano De Marzo",
+        "Nicola Alboré",
+        "David Garcia"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Safety & alignment",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "Simple proportional-copying models explain structure in a public multi-agent wiki episode.",
+      "claimed_contribution": "Models reproduce page concentration, name construction, and local conventions.",
+      "caveat": "One unusual interaction episode may not generalize.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09150",
+        "https://www.sciencealert.com/1000-ai-agents-started-agreeing-without-anyone-telling-them-to"
+      ]
+    },
+    {
+      "id": "p4",
+      "kind": "paper",
+      "title": "Proxy Policy Steering",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.09148",
+      "arxiv_id": "2609.09148",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T17:59:03Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "authors": [
+        "Chuanruo Ning",
+        "Tianrui Wang",
+        "Wei-Chiu Ma",
+        "Kuan Fang"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Training & adaptation",
+        "Efficient inference & systems"
+      ],
+      "abstract": "Inference-time residual steering adapts a frozen robot policy.",
+      "claimed_contribution": "Reported 53-point average success lift across 12 tasks.",
+      "caveat": "Author-reported preprint results need broader deployment validation.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09148",
+        "https://proxy-policy-steering.github.io/"
+      ]
+    },
+    {
+      "id": "p5",
+      "kind": "paper",
+      "title": "SignRefine: Adapting Foundational Video Models for Sign Language Generation",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.08496",
+      "arxiv_id": "2609.08496",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T09:38:22Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": [
+        "Anton Pelykh",
+        "Edward Fish",
+        "Ozge Mercanoglu Sincan",
+        "Richard Bowden"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Data & synthetic data",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "Spatially grounded adapters and NVSign improve keypoint-conditioned sign video generation.",
+      "claimed_contribution": "Reported up to 30% hand-pose precision improvement and >80% user preference.",
+      "caveat": "User-study protocol and cross-language generality need more detail.",
+      "refs": [
+        "https://arxiv.org/abs/2609.08496",
+        "https://eccv.ecva.net/virtual/2026/poster/4976"
+      ]
+    },
+    {
+      "id": "p6",
+      "kind": "paper",
+      "title": "Temporal State Transport in Video Generation: Diagnosing and Correcting Spectral Imbalance",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.08505",
+      "arxiv_id": "2609.08505",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T09:52:10Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "authors": [
+        "Luyao Tang",
+        "Bingjun Luo",
+        "Dong Yi",
+        "Jialin Guo",
+        "Haoning Xi",
+        "Cheng Chen",
+        "Yizhou Yu",
+        "Chaoqi Chen"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Efficient inference & systems",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "Spectral Tension diagnoses temporal imbalance and a training-free regulator corrects it.",
+      "claimed_contribution": "Reported improved consistency and visual quality without fine-tuning.",
+      "caveat": "Generalization across pretrained models and domains is uncertain.",
+      "refs": [
+        "https://arxiv.org/abs/2609.08505"
+      ]
+    },
+    {
+      "id": "p7",
+      "kind": "paper",
+      "title": "Do Reviewers Still Reward Lexical Complexity? A Frozen-Rater Study of Preference Drift in 124K ICLR Reviews",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.08475",
+      "arxiv_id": "2609.08475",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T09:19:25Z",
+      "categories": [
+        "cs.CL",
+        "cs.DL",
+        "cs.LG"
+      ],
+      "authors": [
+        "Jiabin Zheng"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Safety & alignment",
+        "Training & adaptation"
+      ],
+      "abstract": "Frozen-rater analysis separates submission changes from human preference drift.",
+      "claimed_contribution": "Reports 32,638 submissions and 124,615 human reviews with placebo controls.",
+      "caveat": "ICLR-specific corpus and one frozen-rater period limit generality.",
+      "refs": [
+        "https://arxiv.org/abs/2609.08475",
+        "https://arxiv.org/html/2609.08475"
+      ]
+    },
+    {
+      "id": "p8",
+      "kind": "paper",
+      "title": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.09158",
+      "arxiv_id": "2609.09158",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T17:59:55Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "authors": [
+        "Anqi Li",
+        "Yuxin Chen",
+        "Zhaobo Li",
+        "Zhuo Cao",
+        "Junli Ren",
+        "Masayoshi Tomizuka",
+        "Dhruv Shah"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Multimodal & vision-language",
+        "Training & adaptation"
+      ],
+      "abstract": "Simulation-trained 29-DoF language-conditioned control for humanoid clutter navigation.",
+      "claimed_contribution": "Reports strong simulation results and zero-shot Unitree G1 deployment.",
+      "caveat": "Cross-embodiment and long-duration robustness are not established.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09158"
+      ]
+    }
+  ]
+}

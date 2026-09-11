@@ -1,0 +1,296 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-09-11",
+  "title": "GitHub Trending Summary - Weekly - 2026-09-11",
+  "source_report": "/home/yizhuan/.research/github/weekly/github-trending-summary-weekly-2026-09-11.md",
+  "entry_count": 15,
+  "entry_noun": "repositories",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI-agent infrastructure is dominating this week's GitHub momentum: skills, agent harnesses, context optimization, browser tooling, and agent-native media are the clearest cluster."
+    },
+    {
+      "id": "01-affaan-m-ecc",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 1,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars_gained": 9257,
+      "total_stars": 255912,
+      "themes": [
+        "agent skills",
+        "agent operations"
+      ],
+      "refs": [
+        "affaan-m/ECC"
+      ]
+    },
+    {
+      "id": "02-ayghri-i-have-adhd",
+      "kind": "repo",
+      "title": "ayghri/i-have-adhd",
+      "rank": 2,
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars_gained": 10215,
+      "total_stars": 38417,
+      "themes": [
+        "agent UX"
+      ],
+      "refs": [
+        "ayghri/i-have-adhd"
+      ]
+    },
+    {
+      "id": "03-dietrichgebert-ponytail",
+      "kind": "repo",
+      "title": "DietrichGebert/ponytail",
+      "rank": 3,
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars_gained": 11638,
+      "total_stars": 134765,
+      "themes": [
+        "agent UX"
+      ],
+      "refs": [
+        "DietrichGebert/ponytail"
+      ]
+    },
+    {
+      "id": "04-tt-a1i-archify",
+      "kind": "repo",
+      "title": "tt-a1i/archify",
+      "rank": 4,
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "JavaScript",
+      "stars_gained": 11958,
+      "total_stars": 57447,
+      "themes": [
+        "visual tooling",
+        "agent skills"
+      ],
+      "refs": [
+        "tt-a1i/archify"
+      ]
+    },
+    {
+      "id": "05-fmtlib-fmt",
+      "kind": "repo",
+      "title": "fmtlib/fmt",
+      "rank": 5,
+      "url": "https://github.com/fmtlib/fmt",
+      "description": "A modern formatting library",
+      "language": "C++",
+      "stars_gained": 920,
+      "total_stars": 25721,
+      "themes": [
+        "developer libraries"
+      ],
+      "refs": [
+        "fmtlib/fmt"
+      ]
+    },
+    {
+      "id": "06-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 6,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars_gained": 12356,
+      "total_stars": 258889,
+      "themes": [
+        "agent skills"
+      ],
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "07-openai-plugins",
+      "kind": "repo",
+      "title": "openai/plugins",
+      "rank": 7,
+      "url": "https://github.com/openai/plugins",
+      "description": "OpenAI Plugins",
+      "language": "JavaScript",
+      "stars_gained": 1018,
+      "total_stars": 6387,
+      "themes": [
+        "agent integrations"
+      ],
+      "refs": [
+        "openai/plugins"
+      ]
+    },
+    {
+      "id": "08-blader-humanizer",
+      "kind": "repo",
+      "title": "blader/humanizer",
+      "rank": 8,
+      "url": "https://github.com/blader/humanizer",
+      "description": "Agent skill that removes signs of AI-generated writing from text",
+      "language": "Python",
+      "stars_gained": 5224,
+      "total_stars": 46496,
+      "themes": [
+        "output quality"
+      ],
+      "refs": [
+        "blader/humanizer"
+      ]
+    },
+    {
+      "id": "09-mksglu-context-mode",
+      "kind": "repo",
+      "title": "mksglu/context-mode",
+      "rank": 9,
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output, persists session memory, and enforces routing across platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars_gained": 1619,
+      "total_stars": 22017,
+      "themes": [
+        "context engineering",
+        "agent operations"
+      ],
+      "refs": [
+        "mksglu/context-mode"
+      ]
+    },
+    {
+      "id": "10-openai-skills",
+      "kind": "repo",
+      "title": "openai/skills",
+      "rank": 10,
+      "url": "https://github.com/openai/skills",
+      "description": "Skills Catalog for Codex",
+      "language": "Python",
+      "stars_gained": 1490,
+      "total_stars": 26865,
+      "themes": [
+        "agent skills"
+      ],
+      "refs": [
+        "openai/skills"
+      ]
+    },
+    {
+      "id": "11-heygen-com-hyperframes",
+      "kind": "repo",
+      "title": "heygen-com/hyperframes",
+      "rank": 11,
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars_gained": 4896,
+      "total_stars": 48769,
+      "themes": [
+        "multimodal output"
+      ],
+      "refs": [
+        "heygen-com/hyperframes"
+      ]
+    },
+    {
+      "id": "12-chromedevtools-chrome-devtools-mcp",
+      "kind": "repo",
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "rank": 12,
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars_gained": 791,
+      "total_stars": 51582,
+      "themes": [
+        "browser tooling"
+      ],
+      "refs": [
+        "ChromeDevTools/chrome-devtools-mcp"
+      ]
+    },
+    {
+      "id": "13-nousresearch-hermes-agent",
+      "kind": "repo",
+      "title": "NousResearch/hermes-agent",
+      "rank": 13,
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars_gained": 3769,
+      "total_stars": 244223,
+      "themes": [
+        "personal agents",
+        "agent operations"
+      ],
+      "refs": [
+        "NousResearch/hermes-agent"
+      ]
+    },
+    {
+      "id": "14-coreyhaines31-marketingskills",
+      "kind": "repo",
+      "title": "coreyhaines31/marketingskills",
+      "rank": 14,
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "language": "JavaScript",
+      "stars_gained": 2711,
+      "total_stars": 49451,
+      "themes": [
+        "specialized workflows"
+      ],
+      "refs": [
+        "coreyhaines31/marketingskills"
+      ]
+    },
+    {
+      "id": "15-cathrynlavery-diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 15,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG.",
+      "language": "HTML",
+      "stars_gained": 7329,
+      "total_stars": 37779,
+      "themes": [
+        "visual tooling",
+        "agent skills"
+      ],
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent skills and reusable procedures; agent operations and context; developer experience and browser tooling; multimodal and specialized output. Languages in the listed set: JavaScript 5, Python 4, TypeScript 4, Shell 1, C++ 1, HTML 1."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The landscape is shifting from standalone AI applications toward the surrounding agent operating layer: skills, context control, memory, browser inspection, visual artifacts, and domain-specific workflows."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "This week points to an ecosystem-building phase for coding and personal agents. Reliable interfaces around agents—skills, context, verification, and outputs—are attracting more momentum than generic model wrappers."
+    }
+  ]
+}

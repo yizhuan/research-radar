@@ -1,0 +1,278 @@
+{
+  "schema": "arxiv-trending-physics/v1",
+  "category": "physics",
+  "window": "weekly",
+  "date": "2026-09-11",
+  "title": "arXiv trending physics — weekly report",
+  "source_report": "/home/yizhuan/.research/physics/weekly/arxiv-trending-physics-weekly-2026-09-11.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "Solid-state nuclear magnetic resonance search for axion-like dark matter with broadband SQUID magnetometry",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.07908",
+      "arxiv_id": "2609.07908",
+      "arxiv_version": "v1",
+      "published": "2026-09-07T19:20:00Z",
+      "categories": [
+        "hep-ex",
+        "cond-mat.other",
+        "physics.ins-det"
+      ],
+      "authors": [
+        "Andrew J. Winter",
+        "János Ádám",
+        "Deniz Aybas",
+        "Dmitry Budker",
+        "Derek F. Jackson Kimball",
+        "Surjeet Rajendran",
+        "Arne Wickenbrock",
+        "Alexander O. Sushkov"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "We report the results of an experimental search for ultralight axion-like dark matter in the mass ranges 19.5--20.5 and 21.5--22 neV. The Cosmic Axion Spin Precession Experiment-electric probes the axion-nuclear electric dipole moment coupling. We perform solid-state nuclear magnetic resonance on $^{207}$Pb spin ensembles which reside in a polarized ferroelectric crystal. The background axion-like dark matter field induces an oscillating torque on the $^{207}$Pb spins via the electric dipole moment coupling $g_{d}$. The experiment is calibrated with pulsed magnetic resonance measurements covering two frequency bands (4.6--5.0 and 5.2--5.3 MHz) that correspond to the axion Compton frequencies associated with the identified axion mass ranges. By sweeping the leading magnetic field applied to the sample, we are able to detect the $^{207}$Pb nuclear magnetic resonance in these frequency ranges using a superconducting quantum interference device, inductively coupled to the sample with a broadband circuit. We establish the upper bounds $|g_{d}| < 4\\times 10^{-4}$ GeV$^{-2}$ with 95% confidence in these frequency bands. Our results demonstrate the detection and small-tip angle calibration of low-field $^{207}$Pb nuclear magnetic resonance, allowing for sensitivity to axion-like dark matter in the nanoelectron-volt axion mass range.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "experimental",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.07908"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Bottomonium suppression with a machine-learning-informed Debye mass",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.09047",
+      "arxiv_id": "2609.09047",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T17:08:52Z",
+      "categories": [
+        "hep-ph",
+        "hep-ex",
+        "nucl-ex",
+        "nucl-th"
+      ],
+      "authors": [
+        "Ajaharul Islam",
+        "Shibo Chen",
+        "Fu-Peng Li",
+        "Long-Gang Pang",
+        "Guang-You Qin"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "Motivated by recent progress in data-driven approaches, we introduce a machine-learning (ML)-informed Debye mass, extracted from lattice-informed inputs, exclusively in the complex-valued heavy-quark Kent State University (KSU) potential. The resulting complex potential is used to solve the real-time Schrödinger equation within the quantum trajectories (QTraj) framework for the evolution of bottomonium in the quark-gluon plasma. We then compute the nuclear modification factors and double ratios for bottomonium $Υ(1S)$, $Υ(2S)$, and $Υ(3S)$ states in Pb-Pb collisions at $\\sqrt{s_{NN}} = 5.02$ TeV. We compare our ML-induced results with those from the original KSU model and with experimental measurements from ALICE, ATLAS, and CMS collaborations. We find that the machine-learned Debye mass leads to improved agreement with data, particularly for excited states, highlighting the utility of machine learning in modeling in-medium QCD effects.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "computational",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09047"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "Breaking binary formation mechanism degeneracies with gravitational wave clustering",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.09083",
+      "arxiv_id": "2609.09083",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T17:32:13Z",
+      "categories": [
+        "gr-qc",
+        "astro-ph.CO"
+      ],
+      "authors": [
+        "Nicola Bellomo",
+        "Michele Bosi",
+        "Sarah Libanore",
+        "Michele Liguori",
+        "Michela Mapelli",
+        "Federico Semenzato",
+        "Stefano Torniamenti"
+      ],
+      "themes": [
+        "Astrophysics",
+        "Cosmology & gravitation",
+        "Computational & data methods"
+      ],
+      "abstract": "Thanks to the almost 400 gravitational wave events detected, we are currently able to grasp the fundamental features of black hole mass, spin, and distance distributions. However, such a fast increase in the precision of the measurements does not necessarily correspond to a better theoretical understanding of gravitational wave sources, especially in current scenarios where the number of free parameters is significantly larger than the number of inferred properties of the black hole population. In this work, we showcase how the landscape of theoretical models can be chipped away by complementary data-analysis strategies, in particular by studying the statistical properties of gravitational wave anisotropic distribution. Specifically, we show how gravitational wave clustering is sensitive to two unique features of each binary formation mechanism: the time-delay distribution and the properties of the binary hosts. First, we consider a model-agnostic scenario and show the impact that different time-delay distributions have on the gravitational wave bias. Then, we consider a realistic scenario where gravitational wave events are sourced either by isolated binary evolution or dynamical processes in globular clusters, and study how the gravitational wave bias is unique sensitive to the specific properties of the environment. In both scenarios, we show how the cross-correlation between galaxy and gravitational wave catalogs is able to distinguish between models with different time delays or with different binary sub-populations originated in specific formation channels.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "forecast/proposal",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09083"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Local decoders for fault-tolerant quantum computation and translation-invariant stabilizer codes",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.11457",
+      "arxiv_id": "2609.11457",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T12:29:05Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.stat-mech",
+        "nlin.CG"
+      ],
+      "authors": [
+        "Nathaniel Selub",
+        "Aditya Bhardwaj",
+        "Ethan Lake"
+      ],
+      "themes": [
+        "Quantum information",
+        "Computational & data methods"
+      ],
+      "abstract": "We construct the first fully spatially local fault-tolerant quantum computer based on topological codes in fewer than four spatial dimensions. Our construction is a two-dimensional architecture that uses only geometrically local quantum and classical operations, bounded-speed classical communication and computation, and a constant density of quantum and classical resources. The core component is a new time-translation-invariant cellular-automaton decoder for the surface code. This decoder preserves logical information for a time stretched-exponential in the code distance and operates continuously during state injection, stabilizer-state preparation, lattice surgery, and transversal readout. We also prove that every translation-invariant topological Pauli stabilizer code is locally decodable under phenomenological noise.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "theoretical",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11457"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Revealing the Quantum Signature of Gravity via Gravitational Waves",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.09931",
+      "arxiv_id": "2609.09931",
+      "arxiv_version": "v1",
+      "published": "2026-09-09T09:22:47Z",
+      "categories": [
+        "gr-qc",
+        "hep-th",
+        "quant-ph"
+      ],
+      "authors": [
+        "Partha Nandi"
+      ],
+      "themes": [
+        "Quantum information",
+        "Cosmology & gravitation",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Can propagating gravitational waves serve as operational probes of the quantum nature of gravity? We address this question by developing a unified theoretical framework that combines spacetime geometry, quantum information, and gravitational-wave physics. Starting from the geodesic deviation equation in linearized General Relativity, we derive the effective detector Hamiltonian directly from spacetime geometry and construct the complete quantum dynamics for detector subsystems interacting with both classical and quantized propagating gravitational-wave fields. This unified formulation enables a direct comparison between classical and quantum descriptions of gravitational radiation within the same physical framework. We demonstrate that classical gravitational-wave backgrounds can induce mixedness in the detector state but cannot generate genuine quantum correlations between the detector subsystems. In contrast, quantized gravitational waves coherently mediate gravity-induced entanglement, quantum coherence, quantum memory, and nonclassical correlations, providing clear operational signatures of the quantum nature of propagating gravitational radiation. We further discuss how mesoscopic quantum mechanical oscillators offer a promising route towards experimentally probing these effects. Our results establish a geometric and quantum-information-based framework for exploring quantum gravity through propagating gravitational waves.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "theoretical",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.09931"
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Prospects for precision Higgs boson measurements at a 10 TeV muon collider",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.08392",
+      "arxiv_id": "2609.08392",
+      "arxiv_version": "v1",
+      "published": "2026-09-08T07:59:34Z",
+      "categories": [
+        "hep-ex"
+      ],
+      "authors": [
+        "Paolo Andreetto",
+        "Massimo Casarsa",
+        "Luca Castelli",
+        "Alessio Gianelle",
+        "Donatella Lucchesi",
+        "Leonardo Palombini",
+        "Imran Raghib",
+        "Lorenzo Sestini",
+        "Davide Zuliani"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "A 10 TeV muon collider offers a powerful environment for precision studies of the Higgs sector through its large vector-boson-fusion production rates. This review presents projected sensitivities to single- and double-Higgs production cross sections, the Higgs boson mass, and the trilinear Higgs self-coupling. The projections are obtained from detailed simulations of the MUSIC detector, including machine-induced background, for a baseline configuration of two experiments, each collecting an integrated luminosity of 10 $\\mathrm{ab}^{-1}$. The $H\\to b\\bar{b}$ and $H\\to WW^\\ast$ production cross sections can be measured with statistical precisions of 0.18% and 0.35%, respectively, while precisions of 2.6%, 4.2%, and 6.9% are expected for $H\\toγγ$, $H\\to ZZ^\\ast$, and $H\\toμ^+μ^-$. Combining the $H\\to b\\bar{b}$, $H\\toγγ$, and $H\\toμ^+μ^-$ channels yields an expected Higgs boson mass precision of about 19 MeV. Double-Higgs production can be measured with statistical precisions of 4.2% in the $HH\\to b\\bar{b}b\\bar{b}$ channel and 14% in the $HH\\to b\\bar{b}WW^\\ast$ channel. Using the $HH\\to b\\bar{b}b\\bar{b}$ channel, the trilinear Higgs self-coupling can be determined with an expected precision of about 5%. These results demonstrate the potential of a high-energy muon collider for precision Higgs physics.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "forecast/proposal",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.08392"
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "Expanding the scope of dark siren cosmology: Inferring the population properties of gravitational wave-hosting galaxies",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.04991",
+      "arxiv_id": "2609.04991",
+      "arxiv_version": "v1",
+      "published": "2026-09-04T10:54:04Z",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "authors": [
+        "Rachel Gray",
+        "Daniel Williams",
+        "Alexander Papadopoulos"
+      ],
+      "themes": [
+        "Cosmology & gravitation",
+        "Astrophysics",
+        "Computational & data methods"
+      ],
+      "abstract": "The field of gravitational wave \"dark siren\" cosmology is facing a number of challenges surrounding the way in which galaxy catalogue data is incorporated into the analysis. The three biggest challenges are adequately compensating for galaxy catalogue incompleteness, robust treatment of galaxy redshift and source properties, and the as-yet unknown host galaxy weighting model. We present an updated methodology for inferring cosmological parameters using dark sirens and incomplete galaxy catalogues. By switching to a sampled redshift prior, rather than one which is pre-computed on a grid, we can jointly infer parameters which describe the population of gravitational-wave hosting galaxies, alongside the gravitational wave population and cosmological model. Using the cosmological inference software gwcosmo, we reproduce a subset of GWTC-5.0 cosmology results, then extend the analysis to jointly infer the host galaxy weighting model - the first measurement of its kind to do so - leading to an updated measurement of the Hubble constant with $H_0 = {71.9}_{-7.5}^{+9.1}$ km s$^{-1}$ Mpc$^{-1}$ (median and 68% symmetric credible interval). This innovative new method opens the door to solving several of the biggest challenges currently facing the field of dark siren cosmology.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "computational/observational",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.04991"
+      ]
+    },
+    {
+      "id": "paper-8",
+      "kind": "paper",
+      "title": "Nanoscale NMR of DNA-Functionalized Diamond Using Individual NV Centers",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.05570",
+      "arxiv_id": "2609.05570",
+      "arxiv_version": "v1",
+      "published": "2026-09-04T02:06:55Z",
+      "categories": [
+        "physics.ins-det",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "authors": [
+        "Erika Janitz",
+        "Konstantin Herb",
+        "Laura A. Völker",
+        "Christian L. Degen",
+        "John M. Abendroth"
+      ],
+      "themes": [
+        "Instrumentation & detectors",
+        "Biophysics & soft matter",
+        "Quantum information"
+      ],
+      "abstract": "Nuclear magnetic resonance (NMR) spectroscopy is a powerful probe of molecular structure and dynamics but typically requires large spin ensembles. Here, we demonstrate nanoscale NMR detection of fluorinated DNA using individual near-surface nitrogen-vacancy (NV) centers in diamond nanopillar waveguides under ambient conditions. We covalently tether $^{19}$F-labeled oligonucleotides to mixed nitrogen- and oxygen-terminated surfaces, localizing target spins within the nanoscale sensing volume. Probabilistic spin simulations suggest that the measured signals are consistent with those expected from a few molecules and depend strongly on NV-molecule separation, configuration, and local surface heterogeneity. These results establish a framework for NMR of surface-tethered biomolecules and identify key challenges for single-molecule structural elucidation.",
+      "claimed_result": "See the corresponding report entry.",
+      "evidence_type": "experimental/computational",
+      "caveat": "See the corresponding report entry.",
+      "refs": [
+        "https://arxiv.org/abs/2609.05570"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schema": "arxiv-trending-ai/v1",
+  "category": "AI",
+  "window": "weekly",
+  "date": "2026-09-11",
+  "title": "This Week’s Hottest AI Papers on arXiv (inferred)",
+  "source_report": "/home/yizhuan/.research/ai/weekly/arxiv-trending-ai-weekly-2026-09-11.md",
+  "entry_count": 5,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "MAPLE: Memory-Augmented Planning with Language and Evolution",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.11636",
+      "arxiv_id": "2609.11636",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T14:44:50Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [
+        "Kesheng Chen",
+        "Yamin Hu",
+        "Wenjian Luo"
+      ],
+      "themes": "Agents & reasoning; Training & adaptation; Evaluation & benchmarks",
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11636"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.11582",
+      "arxiv_id": "2609.11582",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T14:14:12Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": [
+        "Suho Yoo",
+        "Hyunjong Ok",
+        "Jongmin Choi",
+        "Jihoo Jung",
+        "Joon Son Chung"
+      ],
+      "themes": "Efficient inference & systems; Multimodal & vision-language",
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11582"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "World in World: Explore the World with World Models",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.11548",
+      "arxiv_id": "2609.11548",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T13:42:26Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": [
+        "Chenxi Song",
+        "Yanming Yang",
+        "Chi Zhang"
+      ],
+      "themes": "Multimodal & vision-language; Efficient inference & systems",
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11548"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Beyond Confidence: Stability-Aware Test-Time Adaptation for LLM Reasoning",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.11393",
+      "arxiv_id": "2609.11393",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T11:29:18Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [
+        "Bincheng Gu",
+        "Min Gao",
+        "Zongwei Wang",
+        "Yibing Bai",
+        "Yulan He",
+        "Junliang Yu"
+      ],
+      "themes": "Agents & reasoning; Evaluation & benchmarks; Training & adaptation",
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11393"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.11638",
+      "arxiv_id": "2609.11638",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T14:46:07Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "authors": [
+        "Jintao Zhang",
+        "Kai Jiang",
+        "Jintao Chen",
+        "Xu Wang",
+        "Deyuan Liu",
+        "Jungang Li"
+      ],
+      "themes": "Multimodal & vision-language; Efficient inference & systems",
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11638"
+      ]
+    }
+  ]
+}

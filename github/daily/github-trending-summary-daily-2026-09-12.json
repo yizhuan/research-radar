@@ -1,0 +1,26 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-12",
+  "title": "GitHub Trending Summary - Daily - 2026-09-12",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-12.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "sections": [
+    {"id":"00-headline","kind":"headline","title":"Headline","content":"AI agents and agent-oriented developer workflows dominate today's GitHub momentum, while a real-time geospatial visualization project is the day's strongest non-agent breakout. The list also shows growing interest in local-first tools, persistent knowledge bases, and autonomous market/research systems."},
+    {"id":"01-ayghri-i-have-adhd","kind":"repo","title":"ayghri/i-have-adhd","rank":1,"url":"https://github.com/ayghri/i-have-adhd","description":"A skill to stop your coding agent from burying the answer. ADHD-friendly output.","language":"Python","stars_gained":3463,"total_stars":41806,"themes":["agentic developer workflows"],"refs":["ayghri/i-have-adhd"]},
+    {"id":"02-bilawalsidhu-gods-eye-view","kind":"repo","title":"bilawalsidhu/gods-eye-view","rank":2,"url":"https://github.com/bilawalsidhu/gods-eye-view","description":"A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.","language":"JavaScript","stars_gained":3680,"total_stars":27106,"themes":["geospatial visualization"],"refs":["bilawalsidhu/gods-eye-view"]},
+    {"id":"03-obra-superpowers","kind":"repo","title":"obra/superpowers","rank":3,"url":"https://github.com/obra/superpowers","description":"An agentic skills framework & software development methodology that works.","language":"Shell","stars_gained":729,"total_stars":285373,"themes":["agentic developer workflows"],"refs":["obra/superpowers"]},
+    {"id":"04-nashsu-llm-wiki","kind":"repo","title":"nashsu/llm_wiki","rank":4,"url":"https://github.com/nashsu/llm_wiki","description":"A cross-platform desktop application that turns documents into an organized, interlinked knowledge base.","language":"TypeScript","stars_gained":647,"total_stars":18730,"themes":["persistent AI knowledge systems"],"refs":["nashsu/llm_wiki"]},
+    {"id":"05-alsk1992-cloddsbot","kind":"repo","title":"alsk1992/CloddsBot","rank":5,"url":"https://github.com/alsk1992/CloddsBot","description":"Open Source AI trading agent operating across markets.","language":"TypeScript","stars_gained":626,"total_stars":2151,"themes":["domain-specific autonomy"],"refs":["alsk1992/CloddsBot"]},
+    {"id":"06-vastsa-pi-desktop","kind":"repo","title":"vastsa/PI-Desktop","rank":6,"url":"https://github.com/vastsa/PI-Desktop","description":"Local-first AI coding agent desktop with Electron, Rust host core, and plugins.","language":"TypeScript","stars_gained":552,"total_stars":2776,"themes":["local-first agents"],"refs":["vastsa/PI-Desktop"]},
+    {"id":"07-armory3d-armorpaint","kind":"repo","title":"armory3d/armorpaint","rank":7,"url":"https://github.com/armory3d/armorpaint","description":"Graphics Creation Tools.","language":"C","stars_gained":350,"total_stars":4719,"themes":["open creative software"],"refs":["armory3d/armorpaint"]},
+    {"id":"08-p1neapplexpress-openflux","kind":"repo","title":"p1neappleXpress/OpenFlux","rank":8,"url":"https://github.com/p1neappleXpress/OpenFlux","description":"Network stack research tool. TCP tunnel with pluggable transports.","language":"Go","stars_gained":198,"total_stars":1142,"themes":["networking"],"refs":["p1neappleXpress/OpenFlux"]},
+    {"id":"09-sonarr-sonarr","kind":"repo","title":"Sonarr/Sonarr","rank":9,"url":"https://github.com/Sonarr/Sonarr","description":"Smart PVR for newsgroup and bittorrent users.","language":"C#","stars_gained":191,"total_stars":15735,"themes":["self-hosting"],"refs":["Sonarr/Sonarr"]},
+    {"id":"10-jordan-gibbs-hyperresearch","kind":"repo","title":"jordan-gibbs/hyperresearch","rank":10,"url":"https://github.com/jordan-gibbs/hyperresearch","description":"Agent-driven research knowledge base.","language":"Python","stars_gained":153,"total_stars":2609,"themes":["persistent AI knowledge systems"],"refs":["jordan-gibbs/hyperresearch"]},
+    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Agentic developer workflows, persistent AI knowledge systems, domain-specific autonomy, local-first tooling, and geospatial visualization are the main signals. TypeScript leads the listed top 10 with three repositories; Python has two; JavaScript, Shell, C, Go, and C# each have one."},
+    {"id":"85-notable-shifts","kind":"extra","title":"Notable Shifts","content":"Momentum is broadening from model wrappers toward agent operating practices and durable agent infrastructure: skills, plugins, desktop hosts, research wikis, and domain-specific autonomous systems."},
+    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"The strongest pattern is the productization of agents: better workflows, local execution, persistent memory, and domain-specific autonomy. Developers are building systems that act over time and integrate with real work, research, markets, and creative tools."}
+  ]
+}

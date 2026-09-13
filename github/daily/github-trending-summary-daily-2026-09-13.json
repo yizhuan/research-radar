@@ -1,0 +1,26 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-13",
+  "title": "GitHub Trending Summary - Daily - 2026-09-13",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-13.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "sections": [
+    {"id":"00-headline","kind":"headline","title":"Headline","content":"AI-agent infrastructure dominates the current-momentum signal: coding agents, agent skills, workflow automation, and web/data tooling account for most of the standout repositories. GitHub's daily Trending page was empty at collection time, so this is an API-backed proxy rather than a verified star-gain ranking."},
+    {"id":"01-openclaw-openclaw","kind":"repo","title":"openclaw/openclaw","rank":1,"url":"https://github.com/openclaw/openclaw","description":"The AI that really does things. Any OS. Any Platform. The lobster way.","language":"TypeScript","stars_gained":null,"total_stars":389529,"themes":["AI assistants","agents"],"refs":["openclaw/openclaw"]},
+    {"id":"02-obra-superpowers","kind":"repo","title":"obra/superpowers","rank":2,"url":"https://github.com/obra/superpowers","description":"An agentic skills framework and software-development methodology that works.","language":"Shell","stars_gained":null,"total_stars":285808,"themes":["agent skills","developer workflows"],"refs":["obra/superpowers"]},
+    {"id":"03-affaan-m-ecc","kind":"repo","title":"affaan-m/ECC","rank":3,"url":"https://github.com/affaan-m/ECC","description":"The agent harness performance optimization system.","language":"JavaScript","stars_gained":null,"total_stars":257119,"themes":["agent harnesses","MCP","developer tools"],"refs":["affaan-m/ECC"]},
+    {"id":"04-nousresearch-hermes-agent","kind":"repo","title":"NousResearch/hermes-agent","rank":4,"url":"https://github.com/NousResearch/hermes-agent","description":"The agent that grows with you.","language":"Python","stars_gained":null,"total_stars":244904,"themes":["AI agents","tool integrations"],"refs":["NousResearch/hermes-agent"]},
+    {"id":"05-anomalyco-opencode","kind":"repo","title":"anomalyco/opencode","rank":5,"url":"https://github.com/anomalyco/opencode","description":"The open source coding agent.","language":"TypeScript","stars_gained":null,"total_stars":206951,"themes":["coding agents"],"refs":["anomalyco/opencode"]},
+    {"id":"06-n8n-io-n8n","kind":"repo","title":"n8n-io/n8n","rank":6,"url":"https://github.com/n8n-io/n8n","description":"Fair-code workflow automation platform with native AI capabilities.","language":"TypeScript","stars_gained":null,"total_stars":204114,"themes":["workflow automation","MCP"],"refs":["n8n-io/n8n"]},
+    {"id":"07-firecrawl-firecrawl","kind":"repo","title":"firecrawl/firecrawl","rank":7,"url":"https://github.com/firecrawl/firecrawl","description":"The context API to search, scrape, and interact with the web at scale.","language":"TypeScript","stars_gained":null,"total_stars":179595,"themes":["web data","agent context"],"refs":["firecrawl/firecrawl"]},
+    {"id":"08-langgenius-dify","kind":"repo","title":"langgenius/dify","rank":8,"url":"https://github.com/langgenius/dify","description":"Build agentic workflows and RAG pipelines with rich AI model and tool support.","language":"TypeScript","stars_gained":null,"total_stars":155552,"themes":["agentic workflows","RAG"],"refs":["langgenius/dify"]},
+    {"id":"09-langflow-ai-langflow","kind":"repo","title":"langflow-ai/langflow","rank":9,"url":"https://github.com/langflow-ai/langflow","description":"A tool for building and deploying AI-powered agents and workflows.","language":"Python","stars_gained":null,"total_stars":154678,"themes":["visual AI development","agents"],"refs":["langflow-ai/langflow"]},
+    {"id":"10-anthropics-claude-code","kind":"repo","title":"anthropics/claude-code","rank":10,"url":"https://github.com/anthropics/claude-code","description":"A terminal-based agentic coding tool.","language":"Python","stars_gained":null,"total_stars":144864,"themes":["coding agents"],"refs":["anthropics/claude-code"]},
+    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Agentic development dominates. Workflow platforms, web context, RAG, and reusable skills form the surrounding stack. TypeScript leads the listed set with 6 repositories; Python follows with 3, and Shell accounts for 1."},
+    {"id":"85-notable-shifts","kind":"extra","title":"Notable Shifts","content":"The visible shift is from standalone model libraries toward operational agent systems: skills, harnesses, coding interfaces, workflow orchestration, and context acquisition."},
+    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"Today's corroborated momentum is concentrated in the agent stack rather than in a single model release. Treat the ordering as directional because GitHub Trending exposed no entries at collection time and the API does not provide daily star gains."}
+  ]
+}

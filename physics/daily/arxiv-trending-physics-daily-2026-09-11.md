@@ -1,111 +1,106 @@
-arXiv Trending Physics — daily report
-Announcement batch: 2026-09-11 (Friday)
-Snapshot: 2026-09-12 00:30 UTC
+# arXiv Trending Physics — daily snapshot
 
-Headline
+## Headline
+The latest available arXiv physics announcement batch is dominated by ambitious platform-building and cross-subfield work: a chip-scale photonic processor reports >11,000-photon Gaussian-boson-sampling events, while new papers connect early-universe dynamics, black-hole merger geometry, and quantum materials. This is an inferred “hottest” list, not an official arXiv popularity ranking.
 
-The strongest cross-cutting signal in the 11 September batch is methodological: new physics is being pushed by better inference and calibration as much as by new phenomena. The selected papers connect precision detector control, quantum geometry, lattice/nuclear calculations, and beyond-geometric-optics theory. This is an inferred “notable papers” ranking, not an official arXiv popularity list.
+## Top papers (ranked)
 
-Top papers (ranked)
+### 1. [A Chip-scale Space-time Multiplexed Gaussian Boson Sampling Processor Beyond 10,000 Photons](https://arxiv.org/abs/2609.11922)
+- **Abstract:** The authors report a thin-film-lithium-niobate, chip-scale, space-time-multiplexed Gaussian boson sampler operating at 4 GHz with up to 11,059 detected photons in 1 ms, and demonstrate a physics-modeling application.
+- **Authors:** Yu-Xuan Fu, He-Yu Shen, Ke-Ming Hu, Jun-Jie He, Yun-Long Nie, et al.
+- **arXiv:** `2609.11922v1` (published 2026-09-10 17:58 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** Strongest external attention signal found in the search: arXiv abstract, HTML, PDF, and independent arXiv-news coverage all surfaced prominently; the paper is exceptionally recent and reports a clear scale milestone. Semantic Scholar lookup was rate-limited, so citation counts are unavailable.
+- **Claimed result:** The authors claim the first chip-scale space-time-multiplexed GBS system, with 11,059-photon detection events, and lower prediction error than an echo-state-network baseline in a world-model task.
+- **Evidence type:** Experimental; integrated thin-film lithium-niobate photonic hardware and a classical-baseline comparison.
+- **Caveat:** The abstract says the results validate feasibility and pave a way toward scalable systems; it does not establish general-purpose quantum computational advantage over classical computation.
+- **Announcement type:** new submission, latest announcement batch 2026-09-11.
+- **Themes:** Quantum information; Instrumentation & detectors; Computational & data methods.
 
-### 1. [The NOvA Test Beam Experiment](https://arxiv.org/abs/2609.10804)
-- **Abstract:** The NOvA Collaboration reports on a 30-ton test-beam detector, operated at Fermilab from 2019–2022, to constrain detector response, energy calibration, and hadronic/electromagnetic energy resolution for long-baseline neutrino analyses.
-- **Authors:** NOvA Collaboration; first five: S. Abubakar, M. A. Acero, B. Acharya, P. Adamson, N. Anfimov; 111 additional authors.
-- **arXiv:** `2609.10804v1` (published 2026-09-09 20:13 UTC; categories: `hep-ex`)
-- **Evidence for ranking:** Large established experimental collaboration; direct relevance to neutrino oscillation systematics; Fermilab test-beam data and a substantial calibration program. Citation/attention signals were not yet available for this new submission.
-- **Claimed result:** The test-beam data improve understanding of the dominant detector-response and energy-scale uncertainties in NOvA analyses, according to the collaboration’s abstract.
-- **Evidence type:** Experimental; tagged p-Cu collision products with 0.4–1.5 GeV/c beams in a detector functionally matching NOvA’s near and far detectors.
-- **Caveat:** The abstract describes calibration and uncertainty reduction, not a new oscillation measurement or discovery.
-- **Announcement type:** New submission, 2026-09-11 batch.
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
+### 2. [High-Temperature ferromagnetism from site-selective filling in (Fe,Ni)$_{6-δ}$GeTe$_2$](https://arxiv.org/abs/2609.11862)
+- **Abstract:** Coordinated structural/electronic measurements and calculations attribute a record 478 K Curie temperature to a strain-stabilized Fe$_6$GeTe$_2$ nano-precipitate whose localized moments and spin-polarized itinerant carriers produce the high-temperature phase.
+- **Authors:** Tyler L. Werner, Jonathan T. Reichanadter, Xiang Chen, Pranab K. Nag, Luna Y. Liu, et al.
+- **arXiv:** `2609.11862v1` (published 2026-09-10 17:41 UTC; categories: `cond-mat.mtrl-sci`, `cond-mat.str-el`)
+- **Evidence for ranking:** Prominent early search placement; unusually large collaboration spanning Yale, Berkeley, Cornell, national laboratories, synchrotron facilities, and ARPES; concrete 478 K materials milestone. Semantic Scholar reports 0 citations and 0 influential citations at snapshot time.
+- **Claimed result:** Nickel substitution enhances ferromagnetism indirectly by favoring a clean, strain-stabilized Fe$_6$GeTe$_2$ nano-precipitate rather than homogeneous substitution.
+- **Evidence type:** Experimental plus theoretical; structural/electronic characterization, spin- and angle-resolved photoemission, and first-principles calculations.
+- **Caveat:** The mechanism is inferred from a structurally complex, compositionally heterogeneous material; reproducibility and device-level performance remain open.
+- **Announcement type:** new submission, latest announcement batch 2026-09-11.
+- **Themes:** Condensed matter & materials; Instrumentation & detectors.
 
-### 2. [Island of Inversion in neutron-rich cobalt isotopes revealed from mass measurements](https://arxiv.org/abs/2609.10754)
-- **Abstract:** Penning-trap masses and nuclear-structure calculations establish the ordering of low- and high-spin states in neutron-rich cobalt and show an inversion in `70Co` as intruder states descend beyond `N=40`.
-- **Authors:** M. Flayol, P. Ascher, D.D. Dao, M. Gerbaux, S. Grévy, F. Nowacki, A. de Roubin, D. Atanasov, D. Blank, et al.
-- **arXiv:** `2609.10754v1` (published 2026-09-09 18:56 UTC; categories: `nucl-ex`)
-- **Evidence for ranking:** New precision mass measurements resolve previously conflicting interpretations; the result is supported by two shell-model approaches and directly informs the N≈40 island of inversion. Citation/attention signals were not yet available.
-- **Claimed result:** The authors report a gradual lowering of intruder states culminating in an inversion in `70Co`, and find induced effective three-nucleon forces important for binding-energy calculations.
-- **Evidence type:** Experimental plus computational; JYFLTRAP/IGISOL Penning-trap measurements compared with shell-model calculations.
-- **Caveat:** The structural interpretation remains model-assisted, and the abstract does not provide a complete uncertainty budget for every inferred state assignment.
-- **Announcement type:** New submission, 2026-09-11 batch.
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
+### 3. [Universal Structure of Horizon Formation in Generic Binary Black Hole Mergers](https://arxiv.org/abs/2609.11819)
+- **Abstract:** The authors derive a local square-root law for the first common apparent horizon in generic binary-black-hole mergers and recover the predicted scaling in three simulations, including eccentric, precessing, unequal-mass binaries.
+- **Authors:** Yu-Cun Xie, Vaishak Prasad
+- **arXiv:** `2609.11819v1` (published 2026-09-10 17:12 UTC; categories: `gr-qc`)
+- **Evidence for ranking:** Cross-subfield relevance to merger waveforms and numerical relativity; the abstract reports quantitative agreement to within 0.5% on the exponent and formation-time diagnostics agreeing within 5×10⁻⁵ M. Semantic Scholar was rate-limited; citation counts unavailable.
+- **Claimed result:** A universal local geometry governs common-horizon formation, with horizon-branch separation scaling as (t−t*)$^{1/2}$ and a possible short merger-waveform signature through horizon shear/news correlation.
+- **Evidence type:** Theoretical plus computational; stability-operator analysis, Lyapunov–Schmidt reduction, and three binary-black-hole simulations.
+- **Caveat:** The waveform connection is a correlation and proposed signature, not a demonstrated observational extraction method.
+- **Announcement type:** new submission, latest announcement batch 2026-09-11.
+- **Themes:** Cosmology & gravitation; Computational & data methods.
 
-### 3. [Generating is not discovering: a pre-registered physics judge for AI-proposed superconductors, calibrated on six known superconductors and one negative control](https://arxiv.org/abs/2609.10614)
-- **Abstract:** A preregistered DFT/Wannier/RPA pipeline tests whether AI-generated materials are not only stable but have a superconducting pairing mechanism, a defined gap symmetry, and plausible manufacturability.
-- **Authors:** Reinaldo Inácio
-- **arXiv:** `2609.10614v1` (published 2026-09-08 15:27 UTC; categories: `cond-mat.supr-con`, `cond-mat.mtrl-sci`)
-- **Evidence for ranking:** Public preregistrations and data; calibration on six known superconductors plus a negative control; audit of 1,248 MatterGen structures and 47,893 compounds. These are methodological signals, not popularity metrics.
-- **Claimed result:** The judge recovers the expected classes for the six known superconductors, rejects the tested ruthenium analogue under the reported criterion, and finds no candidate that is simultaneously new, stable, and carries the tested pairing motif in the MatterGen audit.
-- **Evidence type:** Computational; DFT+U, gated Wannier modeling, RPA susceptibility, gap-equation analysis, and a manufacturability funnel.
-- **Caveat:** The abstract acknowledges a post-hoc choice between absolute-`U` and equal-`alpha` resolution; the pipeline’s conclusions depend on its physical model and preregistered criteria.
-- **Announcement type:** New submission, 2026-09-11 batch.
-- **Themes:** Condensed matter & materials; Computational & data methods
+### 4. [A Multi-Axion Ladder Across Cosmic History: From Inflation, BBN, and Early Dark Energy to Late-Time Accelerated Expansion](https://arxiv.org/abs/2609.11907)
+- **Abstract:** A homogeneous multi-axion cosmology is constructed with transient scalar-field contributions during nucleosynthesis and before recombination, plus a late-time field supplying today’s dark energy.
+- **Authors:** Amartya Sengupta, Dejan Stojkovic, Adam G. Riess
+- **arXiv:** `2609.11907v1` (published 2026-09-10 17:56 UTC; categories: `astro-ph.CO`, `hep-ph`)
+- **Evidence for ranking:** Cross-listed between cosmology and phenomenology; includes explicit benchmark fractions at multiple epochs and appeared prominently in independent search results. Semantic Scholar was rate-limited; citation counts unavailable.
+- **Claimed result:** The benchmark reaches about 0.99% during BBN, 9.7% combined early-dark-energy fraction near z≈10³–10⁴, and 0.685 late-time dark-energy fraction, while proposing searches for transient expansion-rate contributions.
+- **Evidence type:** Theoretical/computational; numerical evolution of four fields in a common Friedmann background using Planck 2018 reference densities.
+- **Caveat:** This is a model benchmark and proposal for constraints, not evidence that recurrent dark energy exists.
+- **Announcement type:** new submission, latest announcement batch 2026-09-11.
+- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics; Computational & data methods.
 
-### 4. [Geometric Ginzburg-Landau theory of charge ordering and commensurability](https://arxiv.org/abs/2609.10678)
-- **Abstract:** The authors extend Ginzburg–Landau theory with quantum-geometric contributions and derive a criterion for charge-density-wave formation and commensurability transitions.
-- **Authors:** Aneesh Agarwal, Rutvij Gholap, Mohammad Saeed Bahramy, Robert-Jan Slager
-- **arXiv:** `2609.10678v1` (published 2026-09-09 18:00 UTC; categories: `cond-mat.str-el`, `cond-mat.mes-hall`, `cond-mat.mtrl-sci`, `quant-ph`)
-- **Evidence for ranking:** Cross-listed across four physics areas; offers a general criterion and benchmarks it on transition-metal dichalcogenides while addressing a stated ordering-wavevector puzzle. Citation/attention signals were not yet available.
-- **Claimed result:** Quantum geometry can enhance or suppress CDW formation and commensurability through electronic effects, beyond purely kinetic criteria, according to the authors.
-- **Evidence type:** Theoretical; effective theory benchmarked against model/material classes.
-- **Caveat:** The result is a framework and benchmark, not a new experimental observation; quantitative transfer to specific materials requires further validation.
-- **Announcement type:** New submission, 2026-09-11 batch.
-- **Themes:** Condensed matter & materials; Quantum information
+### 5. [The Mysterious Inspiral of WASP-12b: Why Obliquity Tides Cannot Drive Orbital Decay](https://arxiv.org/abs/2609.11925)
+- **Abstract:** Reanalysis of WASP-12b finds that a proposed companion capable of sustaining the planet’s obliquity would need to exceed about 65 Earth masses, and radial velocities rule out such a companion within 3 AU at 95% confidence.
+- **Authors:** Caleb Lammers, Yubo Su, Joshua N. Winn
+- **arXiv:** `2609.11925v1` (published 2026-09-10 17:59 UTC; categories: `astro-ph.EP`)
+- **Evidence for ranking:** Very recent paper with accepted-for-ApJL status, prominent exact-title search results, and a clean observational constraint on a long-standing orbital-decay puzzle. Semantic Scholar reports 0 citations and 0 influential citations at snapshot time.
+- **Claimed result:** The nearby-companion mechanism cannot explain the observed inspiral under the tested hypothesis; the cause of the decay remains unknown.
+- **Evidence type:** Observational/theoretical analysis; radial-velocity constraints and tidal/orbital modeling.
+- **Caveat:** Ruling out this mechanism does not identify the true cause of orbital decay.
+- **Announcement type:** new submission, latest announcement batch 2026-09-11.
+- **Themes:** Astrophysics; Instrumentation & detectors.
 
-### 5. [Wave optical imaging of an oscillating electric dipole orbiting a black hole](https://arxiv.org/abs/2609.10689)
-- **Abstract:** A first-principles Kerr-spacetime calculation produces wave-optical images of an orbiting oscillating dipole, including relativistic beaming, lensing, Einstein rings, and helicity-dependent polarization effects.
-- **Authors:** Filipe Nazaré, João S. Santos, Vitor Cardoso, José Natário
-- **arXiv:** `2609.10689v1` (published 2026-09-09 18:00 UTC; categories: `gr-qc`, `astro-ph.HE`, `physics.class-ph`)
-- **Evidence for ranking:** Cross-subfield relevance and a concrete imaging benchmark for beyond-geometric-optics effects in Kerr spacetime; citation/attention signals were not yet available.
-- **Claimed result:** Opposite dipole helicities produce a relative image displacement that roughly scales inversely with radiation frequency, as expected for a wave-optical effect.
-- **Evidence type:** Theoretical/computational; black-hole perturbation theory and wave-optical ray/image calculations.
-- **Caveat:** This is a benchmark calculation, not an observation of a black-hole dipole; detectability and astrophysical source realism remain open.
-- **Announcement type:** New submission, 2026-09-11 batch.
-- **Themes:** Cosmology & gravitation; Astrophysics; Computational & data methods
+### 6. [Might the radiation era extend back to the Big Bang? On dark matter production and the relic graviton background in quadratic gravity](https://arxiv.org/abs/2609.11750)
+- **Abstract:** In quadratic gravity, extending the radiation era back to the Big Bang yields a relation between the Weyl-squared coupling and dark-matter mass, while relic gravitons could constrain the model through future CMB measurements.
+- **Authors:** Latham Boyle, Neil Turok, Vatsalya Vaibhav
+- **arXiv:** `2609.11750v1` (published 2026-09-10 16:06 UTC; categories: `hep-ph`, `astro-ph.CO`, `gr-qc`, `hep-th`)
+- **Evidence for ranking:** Broadest cross-listing in the selected set and a direct link between dark-matter production and a future relic-graviton observable; prominent search placement. Semantic Scholar was rate-limited; citation counts unavailable.
+- **Claimed result:** The authors propose gravitational production of dark matter, including stable right-handed neutrinos, and identify future CMB sensitivity to parameters f₀ and f₂.
+- **Evidence type:** Theoretical/forecast; quadratic-gravity cosmology and projected CMB constraints.
+- **Caveat:** The central conclusion is conditional on the radiation era extending back to the bang and is not an observational detection.
+- **Announcement type:** new submission, latest announcement batch 2026-09-11.
+- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics.
 
-### 6. [Emergence of Gravity's Dynamical and Topological Sectors from Pre-geometry](https://arxiv.org/abs/2609.10619)
-- **Abstract:** A pre-geometric `SO(1,4)` or `SO(2,3)` gauge construction is proposed whose five irreducible building blocks generate Einstein–Hilbert dynamics, a cosmological term, and four-dimensional topological invariants after symmetry breaking.
-- **Authors:** Andrea Addazi, Giuseppe Meluccio
-- **arXiv:** `2609.10619v1` (published 2026-09-08 18:32 UTC; categories: `gr-qc`)
-- **Evidence for ranking:** The arXiv record marks the manuscript “Version accepted in PRD” and supplies a DOI; it proposes a unified formal structure connecting gravity and topological sectors. This is an expert-interest signal, not evidence of broad popularity.
-- **Claimed result:** The authors identify a minimal generating set for their pre-geometric action and derive relations involving the Planck mass, cosmological constant, topological couplings, and Barbero–Immirzi parameter.
-- **Evidence type:** Theoretical.
-- **Caveat:** The claims are framework-dependent and require consistency checks, phenomenological constraints, and comparison with competing quantum-gravity constructions.
-- **Announcement type:** New submission, 2026-09-11 batch.
-- **Themes:** Cosmology & gravitation
+## Trending physics themes
+- **Scalable quantum hardware:** The GBS processor couples integrated photonics, high-rate time multiplexing, and machine-learning-style physical modeling (2609.11922).
+- **Materials-by-structure engineering:** The Fe–Ni–Ge–Te study treats nanoscale precipitation and site-selective electronic structure as a route to high-temperature 2D magnetism (2609.11862).
+- **Black holes as precision systems:** Horizon-formation scaling and proposed waveform correlations extend numerical-relativity structure into potentially observable merger signatures (2609.11819).
+- **Early-universe model–observable links:** Multi-axion histories and quadratic-gravity cosmology both turn otherwise speculative dynamics into possible BBN, CMB, or expansion-history tests (2609.11907, 2609.11750).
+- **Negative results as progress:** The WASP-12b analysis sharply narrows one proposed explanation without resolving the inspiral mechanism (2609.11925).
 
-Trending physics themes
+## Research opportunities
 
-- Precision infrastructure is itself a major result: NOvA’s test beam targets systematics, while the cobalt work uses precision mass data to settle a nuclear-structure ambiguity.
-- Quantum geometry is moving from a unifying language to concrete criteria for phases and ordering: the CDW paper links it to commensurability, while the AI-superconductor paper asks for physically testable pairing rather than structural generation alone.
-- Beyond-standard descriptions remain active but preliminary: pre-geometric gravity and wave-optical Kerr imaging offer formal or computational benchmarks, not experimental confirmation.
-- Cross-listing is unusually informative in this batch: the CDW paper spans condensed matter, materials, and quantum physics; the Kerr paper spans gravity, high-energy astrophysics, and classical physics.
+### Potential research areas
+- **Integrated photonic quantum systems:** Test whether the reported chip architecture can maintain sampling fidelity and useful advantage as loss, mode count, and programmability scale (2609.11922).
+- **Atomic engineering of vdW magnets:** Reproduce the nano-precipitate mechanism across compositions and determine whether the 478 K phase can be stabilized reproducibly in devices (2609.11862).
+- **Merger-horizon observables:** Develop waveform-analysis pipelines to test the proposed shear/news signature in numerical-relativity injections and real detector data (2609.11819).
 
-Research opportunities
+### Unsolved problems
+- The physical cause of WASP-12b’s orbital decay remains unidentified after the tested companion scenario is ruled out (2609.11925).
+- The multi-axion and quadratic-gravity scenarios require observational tests; their benchmark histories are not evidence for recurrent dark energy or a pre-Big-Bang radiation era (2609.11907, 2609.11750).
+- For chip-scale GBS, the abstract establishes a hardware milestone but leaves the robustness of quantum advantage under realistic classical comparison and scaling conditions open (2609.11922).
 
-Potential research areas
-- Build open, preregistered benchmarks for AI-generated quantum materials that include gap symmetry, interaction strength, manufacturability, and blind hold-outs (2609.10614).
-- Test quantum-geometric CDW criteria against new spectroscopic and transport measurements in transition-metal dichalcogenides and related flat-band systems (2609.10678).
-- Develop calibration-to-analysis pipelines that propagate test-beam response uncertainties into long-baseline neutrino oscillation fits (2609.10804).
+### Potential research directions
+- Combine long-baseline radial velocities, transit-timing data, and stellar-tide modeling to discriminate remaining WASP-12b explanations (2609.11925).
+- Use BBN, CMB, large-scale-structure, and expansion-history likelihoods jointly to test the transient energy fractions in the multi-axion benchmark (2609.11907).
+- Search CMB limits on ΔN_eff and future polarization data for the relic-graviton imprint predicted conditionally by quadratic gravity (2609.11750).
 
-Unsolved problems
-- Whether the proposed CDW quantum-geometric criterion remains quantitatively predictive outside the benchmark material classes (2609.10678).
-- Which parts of the pre-geometric gravity construction survive quantum consistency and observational constraints (2609.10619).
-- Whether wave-optical helicity-dependent image shifts could be measurable for realistic electromagnetic sources near compact objects (2609.10689).
-- How induced three-nucleon forces and state mixing should be systematized across the N≈40 island of inversion (2609.10754).
+## Takeaway
+The strongest inferred signal is a convergence of physics toward testable scale: scalable photonic hardware, nanoscale control of magnetic phases, and quantitative black-hole/cosmology predictions. Because all selected works are new submissions from the latest batch, citation-based popularity signals are necessarily sparse; treat this as a transparent notable-paper shortlist, not a measured readership chart.
 
-Potential research directions
-- Release raw/processed test-beam calibration products and perform joint nuisance-parameter fits for NOvA-like detectors (2609.10804).
-- Extend the superconductor judge to independent candidate lists and blinded experimental outcomes before scoring (2609.10614).
-- Combine Penning-trap masses, spectroscopy, and ab initio calculations for neighboring Co/Ni/Fe isotopes (2609.10754).
-- Add finite-source, plasma, and detector models to the Kerr wave-optics benchmark (2609.10689).
-
-Takeaway
-
-The most defensible “hot” signal is not a single headline discovery but a concentration of work that makes physics claims more testable: controlled detector response, precision nuclear masses, preregistered materials screening, and explicit wave-optics or geometric criteria. All six are preprints; even the accepted-PRD entry should not be treated as settled consensus, and arXiv provides no official trending chart.
-
-Method and sources
-
-Window: latest daily arXiv announcement batch, 2026-09-11; snapshot 2026-09-12 00:30 UTC. I checked new-submission pages for physics, astro-ph, cond-mat, gr-qc, hep-ex, hep-lat, hep-ph, hep-th, nucl-ex, nucl-th, and quant-ph, then verified the selected abstract pages and submission histories. arXiv does not publish an official trending ranking. The ordering above is inferred from cross-listing, collaboration/data/instrument signals, accepted/journal metadata, concrete claimed results, and methodological relevance; same-day citation and readership signals were sparse or unavailable. “Hottest” therefore means notable recent papers, not most-read or most-downloaded papers.
-
-Sources: arXiv listing pages and abstract pages linked in each entry; arXiv DOI links are included on the records. Semantic Scholar citation checks were not used because same-day records did not provide a reliable comparative signal.
+## Method and sources
+- **Window:** daily; 2026-09-10 through 2026-09-11 UTC for the latest available announcement batch. There was no newer arXiv announcement batch on Sunday 2026-09-13; arXiv’s recent pages showed 2026-09-11 as the latest batch.
+- **Snapshot:** 2026-09-13 00:30 UTC.
+- **Coverage:** arXiv recent pages for physics, astro-ph, cond-mat, gr-qc, hep-ph, and quant-ph; cross-listed physics papers were deduplicated by arXiv ID. This is a broad but not exhaustive scan of every configured archive.
+- **Ranking:** inferred from cross-listing, concrete quantitative results, journal/accepted-status metadata, independent search visibility, and recency. arXiv supplies no official trending chart; no paper is described as most read or most downloaded.
+- **Sources:** arXiv abstract pages linked above; arXiv recent-list pages; Semantic Scholar Graph API lookups where available (all returned zero citations for the two successful lookups; other requests were rate-limited); independent web-search results for corroboration.

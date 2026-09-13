@@ -1,18 +1,169 @@
 {
-  "schema": "hermes.arxiv-trending-physics.v1",
+  "schema": "arxiv-trending-physics.v1",
   "category": "physics",
   "window": "daily",
   "date": "2026-09-11",
-  "title": "arXiv Trending Physics — daily report",
+  "title": "arXiv Trending Physics — daily snapshot",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-09-11.md",
   "entry_count": 6,
   "entry_noun": "papers",
   "sections": [
-    {"id":"paper-1","kind":"paper","title":"The NOvA Test Beam Experiment","rank":1,"url":"https://arxiv.org/abs/2609.10804","arxiv_id":"2609.10804","arxiv_version":"v1","published":"2026-09-09T20:13:22Z","categories":["hep-ex"],"authors":"NOvA Collaboration","themes":["Particle, nuclear & high-energy physics","Instrumentation & detectors"],"abstract":"The NOvA Collaboration reports on a 30-ton test-beam detector, operated at Fermilab from 2019–2022, to constrain detector response, energy calibration, and hadronic/electromagnetic energy resolution for long-baseline neutrino analyses.","claimed_result":"The test-beam data improve understanding of dominant detector-response and energy-scale uncertainties in NOvA analyses.","evidence_type":"experimental","caveat":"Calibration result, not a new oscillation measurement or discovery.","refs":["https://arxiv.org/abs/2609.10804"]},
-    {"id":"paper-2","kind":"paper","title":"Island of Inversion in neutron-rich cobalt isotopes revealed from mass measurements","rank":2,"url":"https://arxiv.org/abs/2609.10754","arxiv_id":"2609.10754","arxiv_version":"v1","published":"2026-09-09T18:56:30Z","categories":["nucl-ex"],"authors":"M. Flayol et al.","themes":["Particle, nuclear & high-energy physics","Instrumentation & detectors"],"abstract":"Penning-trap masses and nuclear-structure calculations establish the ordering of low- and high-spin states in neutron-rich cobalt and show an inversion in 70Co as intruder states descend beyond N=40.","claimed_result":"The authors report a gradual lowering of intruder states culminating in an inversion in 70Co, with induced effective three-nucleon forces important for binding-energy calculations.","evidence_type":"experimental; computational","caveat":"The structural interpretation is model-assisted.","refs":["https://arxiv.org/abs/2609.10754"]},
-    {"id":"paper-3","kind":"paper","title":"Generating is not discovering: a pre-registered physics judge for AI-proposed superconductors, calibrated on six known superconductors and one negative control","rank":3,"url":"https://arxiv.org/abs/2609.10614","arxiv_id":"2609.10614","arxiv_version":"v1","published":"2026-09-08T15:27:06Z","categories":["cond-mat.supr-con","cond-mat.mtrl-sci"],"authors":"Reinaldo Inácio","themes":["Condensed matter & materials","Computational & data methods"],"abstract":"A preregistered DFT/Wannier/RPA pipeline tests whether AI-generated materials are stable, superconducting, and plausibly manufacturable.","claimed_result":"The judge recovers known classes and finds no MatterGen candidate simultaneously new, stable, and carrying the tested pairing motif in the reported audit.","evidence_type":"computational","caveat":"Conclusions depend on model choices; the abstract reports a post-hoc resolution of one criterion issue.","refs":["https://arxiv.org/abs/2609.10614"]},
-    {"id":"paper-4","kind":"paper","title":"Geometric Ginzburg-Landau theory of charge ordering and commensurability","rank":4,"url":"https://arxiv.org/abs/2609.10678","arxiv_id":"2609.10678","arxiv_version":"v1","published":"2026-09-09T18:00:01Z","categories":["cond-mat.str-el","cond-mat.mes-hall","cond-mat.mtrl-sci","quant-ph"],"authors":"Aneesh Agarwal et al.","themes":["Condensed matter & materials","Quantum information"],"abstract":"The authors extend Ginzburg–Landau theory with quantum-geometric contributions and derive a criterion for charge-density-wave formation and commensurability transitions.","claimed_result":"Quantum geometry can enhance or suppress CDW formation and commensurability through electronic effects.","evidence_type":"theoretical","caveat":"Framework and benchmark, not a new experimental observation.","refs":["https://arxiv.org/abs/2609.10678"]},
-    {"id":"paper-5","kind":"paper","title":"Wave optical imaging of an oscillating electric dipole orbiting a black hole","rank":5,"url":"https://arxiv.org/abs/2609.10689","arxiv_id":"2609.10689","arxiv_version":"v1","published":"2026-09-09T18:00:04Z","categories":["gr-qc","astro-ph.HE","physics.class-ph"],"authors":"Filipe Nazaré et al.","themes":["Cosmology & gravitation","Astrophysics","Computational & data methods"],"abstract":"A first-principles Kerr-spacetime calculation produces wave-optical images of an orbiting oscillating dipole, including relativistic beaming, lensing, Einstein rings, and helicity-dependent polarization effects.","claimed_result":"Opposite dipole helicities produce a relative image displacement that roughly scales inversely with radiation frequency.","evidence_type":"theoretical; computational","caveat":"Benchmark calculation, not an observation; realistic-source detectability remains open.","refs":["https://arxiv.org/abs/2609.10689"]},
-    {"id":"paper-6","kind":"paper","title":"Emergence of Gravity's Dynamical and Topological Sectors from Pre-geometry","rank":6,"url":"https://arxiv.org/abs/2609.10619","arxiv_id":"2609.10619","arxiv_version":"v1","published":"2026-09-08T18:32:41Z","categories":["gr-qc"],"authors":"Andrea Addazi; Giuseppe Meluccio","themes":["Cosmology & gravitation"],"abstract":"A pre-geometric gauge construction is proposed whose five irreducible building blocks generate Einstein–Hilbert dynamics, a cosmological term, and four-dimensional topological invariants after symmetry breaking.","claimed_result":"The authors identify a minimal generating set for their pre-geometric action and derive relations involving gravitational and topological couplings.","evidence_type":"theoretical","caveat":"Framework-dependent claims require consistency checks and phenomenological constraints.","refs":["https://arxiv.org/abs/2609.10619"]}
+    {
+      "id": "0",
+      "kind": "paper",
+      "title": "A Chip-scale Space-time Multiplexed Gaussian Boson Sampling Processor Beyond 10,000 Photons",
+      "rank": 0,
+      "url": "https://arxiv.org/abs/2609.11922",
+      "arxiv_id": "2609.11922",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T17:58:13Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": "Yu-Xuan Fu et al.",
+      "themes": [
+        "Quantum information",
+        "Instrumentation & detectors",
+        "Computational & data methods"
+      ],
+      "abstract": "Chip-scale GBS at 4 GHz with up to 11,059 detected photons in 1 ms and a world-model application.",
+      "claimed_result": "The authors claim the first chip-scale space-time-multiplexed GBS system.",
+      "evidence_type": "experimental",
+      "caveat": "Quantum advantage is not established by the abstract alone.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11922"
+      ]
+    },
+    {
+      "id": "1",
+      "kind": "paper",
+      "title": "High-Temperature ferromagnetism from site-selective filling in (Fe,Ni)6-deltaGeTe2",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.11862",
+      "arxiv_id": "2609.11862",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T17:41:10Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "authors": "Tyler L. Werner et al.",
+      "themes": [
+        "Condensed matter & materials",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "A Fe6GeTe2 nano-precipitate is linked to a 478 K Curie temperature.",
+      "claimed_result": "The authors attribute the high-TC phase to strain-stabilized precipitation and site-specific electronic structure.",
+      "evidence_type": "experimental + theoretical",
+      "caveat": "Device reproducibility remains open.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11862"
+      ]
+    },
+    {
+      "id": "2",
+      "kind": "paper",
+      "title": "The Mysterious Inspiral of WASP-12b",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.11925",
+      "arxiv_id": "2609.11925",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T17:59:00Z",
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "authors": "Caleb Lammers et al.",
+      "themes": [
+        "Astrophysics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Radial velocities rule out a sufficiently massive companion as the tested explanation for orbital decay.",
+      "claimed_result": "The companion hypothesis cannot explain the inspiral under the tested scenario.",
+      "evidence_type": "observational/theoretical",
+      "caveat": "The true cause remains unknown.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11925"
+      ]
+    },
+    {
+      "id": "3",
+      "kind": "paper",
+      "title": "A Multi-Axion Ladder Across Cosmic History",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.11907",
+      "arxiv_id": "2609.11907",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T17:56:27Z",
+      "categories": [
+        "astro-ph.CO",
+        "hep-ph"
+      ],
+      "authors": "Amartya Sengupta et al.",
+      "themes": [
+        "Cosmology & gravitation",
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "A multi-axion model gives transient energy components at BBN, before recombination, and late times.",
+      "claimed_result": "The authors provide benchmark fractions and possible expansion-history tests.",
+      "evidence_type": "theoretical/computational",
+      "caveat": "A model benchmark is not evidence for recurrent dark energy.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11907"
+      ]
+    },
+    {
+      "id": "4",
+      "kind": "paper",
+      "title": "Universal Structure of Horizon Formation in Generic Binary Black Hole Mergers",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.11819",
+      "arxiv_id": "2609.11819",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T17:12:52Z",
+      "categories": [
+        "gr-qc"
+      ],
+      "authors": "Yu-Cun Xie; Vaishak Prasad",
+      "themes": [
+        "Cosmology & gravitation",
+        "Computational & data methods"
+      ],
+      "abstract": "A square-root horizon-branch scaling is derived and recovered in three merger simulations.",
+      "claimed_result": "The authors claim a universal local structure and a possible waveform signature.",
+      "evidence_type": "theoretical/computational",
+      "caveat": "The observational waveform connection is not demonstrated.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11819"
+      ]
+    },
+    {
+      "id": "5",
+      "kind": "paper",
+      "title": "Might the radiation era extend back to the Big Bang?",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.11750",
+      "arxiv_id": "2609.11750",
+      "arxiv_version": "v1",
+      "published": "2026-09-10T16:06:11Z",
+      "categories": [
+        "hep-ph",
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "authors": "Latham Boyle et al.",
+      "themes": [
+        "Cosmology & gravitation",
+        "Particle, nuclear & high-energy physics"
+      ],
+      "abstract": "Quadratic gravity links dark-matter production to a coupling and predicts possible relic-graviton constraints.",
+      "claimed_result": "The authors propose gravitational dark-matter production and future CMB tests.",
+      "evidence_type": "theoretical/forecast",
+      "caveat": "The result is conditional on the radiation era extending to the bang.",
+      "refs": [
+        "https://arxiv.org/abs/2609.11750"
+      ]
+    }
   ]
 }

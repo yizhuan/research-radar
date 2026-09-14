@@ -5,14 +5,14 @@
   "date": "2026-09-14",
   "title": "GitHub Trending Summary - Daily - 2026-09-14",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-14.md",
-  "entry_count": 10,
+  "entry_count": 12,
   "entry_noun": "repositories",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Today’s GitHub signal is led by local AI infrastructure, agent skill systems, and multimodal production tools. The largest gains also show that visually distinctive geospatial and voice applications can attract attention beyond core model repositories."
+      "content": "Local AI is the dominant signal today: inference, code review, agent connectivity, voice, music, and trading are all represented, while privacy-oriented utilities and sensing remain strong secondary themes."
     },
     {
       "id": "01-justvugg-colibri",
@@ -22,201 +22,195 @@
       "url": "https://github.com/JustVugg/colibri",
       "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
       "language": "C",
-      "stars_gained": 868,
-      "total_stars": 30751,
-      "themes": [],
+      "stars_gained": 2233,
+      "total_stars": 31434,
+      "why_notable": "Run frontier MoE inference on consumer hardware with a tiny dependency-free engine.",
       "refs": [
         "JustVugg/colibri"
       ]
     },
     {
-      "id": "02-ever-co-ever-gauzy",
+      "id": "02-alibaba-open-code-review",
       "kind": "repo",
-      "title": "ever-co/ever-gauzy",
+      "title": "alibaba/open-code-review",
       "rank": 2,
-      "url": "https://github.com/ever-co/ever-gauzy",
-      "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM)",
-      "language": "TypeScript",
-      "stars_gained": 191,
-      "total_stars": 5564,
-      "themes": [],
-      "refs": [
-        "ever-co/ever-gauzy"
-      ]
-    },
-    {
-      "id": "03-bilawalsidhu-gods-eye-view",
-      "kind": "repo",
-      "title": "bilawalsidhu/gods-eye-view",
-      "rank": 3,
-      "url": "https://github.com/bilawalsidhu/gods-eye-view",
-      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "language": "JavaScript",
-      "stars_gained": 2680,
-      "total_stars": 32700,
-      "themes": [],
-      "refs": [
-        "bilawalsidhu/gods-eye-view"
-      ]
-    },
-    {
-      "id": "04-tech-leads-club-agent-skills",
-      "kind": "repo",
-      "title": "tech-leads-club/agent-skills",
-      "rank": 4,
-      "url": "https://github.com/tech-leads-club/agent-skills",
-      "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.",
-      "language": "TypeScript",
-      "stars_gained": 265,
-      "total_stars": 5854,
-      "themes": [],
-      "refs": [
-        "tech-leads-club/agent-skills"
-      ]
-    },
-    {
-      "id": "05-melgarafael-deskcommcrm",
-      "kind": "repo",
-      "title": "melgarafael/DeskcommCRM",
-      "rank": 5,
-      "url": "https://github.com/melgarafael/DeskcommCRM",
-      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
-      "language": "TypeScript",
-      "stars_gained": 432,
-      "total_stars": 2392,
-      "themes": [],
-      "refs": [
-        "melgarafael/DeskcommCRM"
-      ]
-    },
-    {
-      "id": "06-calesthio-openmontage",
-      "kind": "repo",
-      "title": "calesthio/OpenMontage",
-      "rank": 6,
-      "url": "https://github.com/calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files.",
-      "language": "Python",
-      "stars_gained": 380,
-      "total_stars": 58867,
-      "themes": [],
-      "refs": [
-        "calesthio/OpenMontage"
-      ]
-    },
-    {
-      "id": "07-asgeirtj-system_prompts_leaks",
-      "kind": "repo",
-      "title": "asgeirtj/system_prompts_leaks",
-      "rank": 7,
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic, OpenAI, Google, xAI, Cursor, Kimi and more; updated regularly.",
-      "language": "JavaScript",
-      "stars_gained": 706,
-      "total_stars": 66379,
-      "themes": [],
-      "refs": [
-        "asgeirtj/system_prompts_leaks"
-      ]
-    },
-    {
-      "id": "08-vxcontrol-pentagi",
-      "kind": "repo",
-      "title": "vxcontrol/pentagi",
-      "rank": 8,
-      "url": "https://github.com/vxcontrol/pentagi",
-      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars_gained": 590,
-      "total_stars": 24283,
-      "themes": [],
+      "stars_gained": 1796,
+      "total_stars": 24938,
+      "why_notable": "Combines deterministic checks and LLM review into a production-oriented developer tool.",
       "refs": [
-        "vxcontrol/pentagi"
+        "alibaba/open-code-review"
       ]
     },
     {
-      "id": "09-multimodal-art-projection-yue",
+      "id": "03-multimodal-art-projection-yue",
       "kind": "repo",
       "title": "multimodal-art-projection/YuE",
-      "rank": 9,
+      "rank": 3,
       "url": "https://github.com/multimodal-art-projection/YuE",
       "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
       "language": "Python",
-      "stars_gained": 487,
-      "total_stars": 7995,
-      "themes": [],
+      "stars_gained": 578,
+      "total_stars": 8167,
+      "why_notable": "Shows agentic and structured-planning approaches moving into music generation.",
       "refs": [
         "multimodal-art-projection/YuE"
       ]
     },
     {
-      "id": "10-debpalash-voicestudio",
+      "id": "04-debpalash-voicestudio",
       "kind": "repo",
       "title": "debpalash/VoiceStudio",
-      "rank": 10,
+      "rank": 4,
       "url": "https://github.com/debpalash/VoiceStudio",
-      "description": "Open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation in 646 languages.",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars_gained": 2632,
-      "total_stars": 27870,
-      "themes": [],
+      "stars_gained": 2774,
+      "total_stars": 28593,
+      "why_notable": "Its large daily gain signals strong interest in private, local multimodal voice tooling.",
       "refs": [
         "debpalash/VoiceStudio"
+      ]
+    },
+    {
+      "id": "05-666ghj-mirofish",
+      "kind": "repo",
+      "title": "666ghj/MiroFish",
+      "rank": 5,
+      "url": "https://github.com/666ghj/MiroFish",
+      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+      "language": "Python",
+      "stars_gained": 524,
+      "total_stars": 72948,
+      "why_notable": "A high-star-count project extending agent and swarm ideas toward prediction.",
+      "refs": [
+        "666ghj/MiroFish"
+      ]
+    },
+    {
+      "id": "06-panniantong-agent-reach",
+      "kind": "repo",
+      "title": "Panniantong/Agent-Reach",
+      "rank": 6,
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "stars_gained": 640,
+      "total_stars": 80952,
+      "why_notable": "Targets broad agent web access without per-service API fees.",
+      "refs": [
+        "Panniantong/Agent-Reach"
+      ]
+    },
+    {
+      "id": "07-localsend-localsend",
+      "kind": "repo",
+      "title": "localsend/localsend",
+      "rank": 7,
+      "url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "language": "Dart",
+      "stars_gained": 213,
+      "total_stars": 91095,
+      "why_notable": "A mature privacy-friendly utility remains active and highly visible beyond the AI cluster.",
+      "refs": [
+        "localsend/localsend"
+      ]
+    },
+    {
+      "id": "08-dani-garcia-vaultwarden",
+      "kind": "repo",
+      "title": "dani-garcia/vaultwarden",
+      "rank": 8,
+      "url": "https://github.com/dani-garcia/vaultwarden",
+      "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+      "language": "Rust",
+      "stars_gained": 110,
+      "total_stars": 67448,
+      "why_notable": "Represents durable self-hosted security infrastructure among today’s movers.",
+      "refs": [
+        "dani-garcia/vaultwarden"
+      ]
+    },
+    {
+      "id": "09-tauricresearch-tradingagents",
+      "kind": "repo",
+      "title": "TauricResearch/TradingAgents",
+      "rank": 9,
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars_gained": 756,
+      "total_stars": 105816,
+      "why_notable": "Applies multi-agent orchestration to financial research and trading workflows.",
+      "refs": [
+        "TauricResearch/TradingAgents"
+      ]
+    },
+    {
+      "id": "10-ruvnet-ruview",
+      "kind": "repo",
+      "title": "ruvnet/RuView",
+      "rank": 10,
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "stars_gained": 370,
+      "total_stars": 93702,
+      "why_notable": "Combines sensing, privacy, and edge intelligence without camera data.",
+      "refs": [
+        "ruvnet/RuView"
+      ]
+    },
+    {
+      "id": "11-tech-leads-club-agent-skills",
+      "kind": "repo",
+      "title": "tech-leads-club/agent-skills",
+      "rank": 11,
+      "url": "https://github.com/tech-leads-club/agent-skills",
+      "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.",
+      "language": "TypeScript",
+      "stars_gained": 506,
+      "total_stars": 5940,
+      "why_notable": "Signals an emerging ecosystem layer for portable, validated coding-agent capabilities.",
+      "refs": [
+        "tech-leads-club/agent-skills"
+      ]
+    },
+    {
+      "id": "12-openbmb-voxcpm",
+      "kind": "repo",
+      "title": "OpenBMB/VoxCPM",
+      "rank": 12,
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+      "language": "Python",
+      "stars_gained": 204,
+      "total_stars": 37255,
+      "why_notable": "Adds tokenizer-free multilingual speech generation and voice design to the local AI wave.",
+      "refs": [
+        "OpenBMB/VoxCPM"
       ]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Agentic software; local and multimodal AI; Python, TypeScript, JavaScript, Go, and C language mix.",
-      "refs": [
-        "JustVugg/colibri",
-        "ever-co/ever-gauzy",
-        "bilawalsidhu/gods-eye-view",
-        "tech-leads-club/agent-skills",
-        "melgarafael/DeskcommCRM",
-        "calesthio/OpenMontage",
-        "asgeirtj/system_prompts_leaks",
-        "vxcontrol/pentagi",
-        "multimodal-art-projection/YuE",
-        "debpalash/VoiceStudio"
-      ]
+      "content": "- **Local and agentic AI:** colibri, open-code-review, Agent-Reach, MiroFish, TradingAgents, and agent-skills all focus on running, extending, or operationalizing AI agents and models.\n- **Local multimodal generation:** VoiceStudio, YuE, and VoxCPM cover voice, music, cloning, and editing with an emphasis on local or open implementations.\n- **Privacy and self-hosting:** localsend, vaultwarden, and RuView foreground private transfer, credential hosting, or camera-free sensing.\n- **Languages:** Python leads the listed set (7 repositories), followed by Rust (2), with C, Go, Dart, and TypeScript represented once each."
     },
     {
       "id": "85-notable-shifts",
       "kind": "extra",
       "title": "Notable Shifts",
-      "content": "Agentic patterns are spreading from coding assistants into local runtimes, CRM, media production, security, voice, and music.",
-      "refs": [
-        "JustVugg/colibri",
-        "ever-co/ever-gauzy",
-        "bilawalsidhu/gods-eye-view",
-        "tech-leads-club/agent-skills",
-        "melgarafael/DeskcommCRM",
-        "calesthio/OpenMontage",
-        "asgeirtj/system_prompts_leaks",
-        "vxcontrol/pentagi",
-        "multimodal-art-projection/YuE",
-        "debpalash/VoiceStudio"
-      ]
+      "content": "The clearest shift is from standalone models toward usable agent infrastructure: internet access, skill registries, code review, and multi-agent workflows sit alongside model and media projects. C and Rust projects also show that efficient local execution and privacy-preserving systems are gaining attention beyond the Python ecosystem."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "The common thread is practical AI systems that users can run, extend, or embed in workflows, with product experience still visible in the strongest non-agent gains.",
-      "refs": [
-        "JustVugg/colibri",
-        "ever-co/ever-gauzy",
-        "bilawalsidhu/gods-eye-view",
-        "tech-leads-club/agent-skills",
-        "melgarafael/DeskcommCRM",
-        "calesthio/OpenMontage",
-        "asgeirtj/system_prompts_leaks",
-        "vxcontrol/pentagi",
-        "multimodal-art-projection/YuE",
-        "debpalash/VoiceStudio"
-      ]
+      "content": "Today’s list is less about one breakthrough framework than about turning AI capabilities into local, composable products. The strongest momentum is around agents that can act across the web or software lifecycle, paired with open voice and media tools; mature self-hosted utilities provide a counterweight to the AI-heavy trend."
     }
   ]
 }

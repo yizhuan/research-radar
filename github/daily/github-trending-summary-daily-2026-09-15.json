@@ -4,23 +4,243 @@
   "window": "daily",
   "date": "2026-09-15",
   "title": "GitHub Trending Summary - Daily - 2026-09-15",
-  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-15.md",
-  "entry_count": 10,
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-15.md",
+  "entry_count": 14,
   "entry_noun": "repositories",
   "sections": [
-    {"id":"00-headline","kind":"headline","title":"Headline","content":"AI-native developer infrastructure dominates today's list: code review, local model inference, research agents, and multi-agent source control all appear among the fastest-growing repositories. The strongest individual gain is VoiceStudio, while colibri shows unusually strong interest in running frontier MoE models on commodity hardware."},
-    {"id":"01-alibaba-open-code-review","kind":"repo","title":"alibaba/open-code-review","rank":1,"url":"https://github.com/alibaba/open-code-review","description":"Hybrid, agent-assisted code review at Alibaba scale.","language":"Go","stars_gained":1571,"total_stars":27099,"themes":["agent-native developer tooling","AI code review"],"refs":["alibaba/open-code-review"]},
-    {"id":"02-justvugg-colibri","kind":"repo","title":"JustVugg/colibri","rank":2,"url":"https://github.com/JustVugg/colibri","description":"A zero-dependency C engine for running frontier MoE models from disk.","language":"C","stars_gained":2173,"total_stars":33020,"themes":["local inference","efficient AI"],"refs":["JustVugg/colibri"]},
-    {"id":"03-ever-co-ever-gauzy","kind":"repo","title":"ever-co/ever-gauzy","rank":3,"url":"https://github.com/ever-co/ever-gauzy","description":"Open business-management software spanning ERP, CRM, HRM, ATS, and project management.","language":"TypeScript","stars_gained":1130,"total_stars":6289,"themes":["open business software"],"refs":["ever-co/ever-gauzy"]},
-    {"id":"04-debpalash-voicestudio","kind":"repo","title":"debpalash/VoiceStudio","rank":4,"url":"https://github.com/debpalash/VoiceStudio","description":"A fully local voice-cloning, dubbing, transcription, and audiobook toolkit.","language":"Python","stars_gained":2776,"total_stars":30186,"themes":["local AI","voice and media"],"refs":["debpalash/VoiceStudio"]},
-    {"id":"05-homebrew-brewui","kind":"repo","title":"Homebrew/BrewUI","rank":5,"url":"https://github.com/Homebrew/BrewUI","description":"Homebrew's official macOS graphical interface.","language":"Swift","stars_gained":388,"total_stars":1028,"themes":["developer tooling","macOS"],"refs":["Homebrew/BrewUI"]},
-    {"id":"06-melgarafael-deskcommcrm","kind":"repo","title":"melgarafael/DeskcommCRM","rank":6,"url":"https://github.com/melgarafael/DeskcommCRM","description":"Self-hosted AI sales CRM with WhatsApp integration and MCP support.","language":"TypeScript","stars_gained":408,"total_stars":2593,"themes":["AI business software","MCP"],"refs":["melgarafael/DeskcommCRM"]},
-    {"id":"07-alphaxiv-openresearch","kind":"repo","title":"alphaXiv/OpenResearch","rank":7,"url":"https://github.com/alphaXiv/OpenResearch","description":"Tools for turning coding agents into research agents.","language":"Rust","stars_gained":568,"total_stars":2885,"themes":["research agents"],"refs":["alphaXiv/OpenResearch"]},
-    {"id":"08-nationalsecurityagency-ghidra","kind":"repo","title":"NationalSecurityAgency/ghidra","rank":8,"url":"https://github.com/NationalSecurityAgency/ghidra","description":"A software reverse-engineering framework.","language":"Java","stars_gained":700,"total_stars":76245,"themes":["security","reverse engineering"],"refs":["NationalSecurityAgency/ghidra"]},
-    {"id":"09-danny-avila-librechat","kind":"repo","title":"danny-avila/LibreChat","rank":9,"url":"https://github.com/danny-avila/LibreChat","description":"Self-hosted ChatGPT-style platform with agents, MCP, model switching, and integrations.","language":"TypeScript","stars_gained":286,"total_stars":43622,"themes":["self-hosted AI","agents","MCP"],"refs":["danny-avila/LibreChat"]},
-    {"id":"10-pacifio-atlas","kind":"repo","title":"pacifio/atlas","rank":10,"url":"https://github.com/pacifio/atlas","description":"Source control and coordination for multiple coding agents.","language":"Rust","stars_gained":1091,"total_stars":4455,"themes":["agent-native developer tooling","multi-agent workflows"],"refs":["pacifio/atlas"]},
-    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Agent-native developer tooling; local and private AI; AI entering established workflows; TypeScript leads with 3 repositories, Rust has 2, and Go, C, Python, Swift, and Java each have 1."},
-    {"id":"85-notable-shifts","kind":"extra","title":"Notable Shifts","content":"The clearest shift is from standalone AI demos toward operational infrastructure: review pipelines, agent source control, research loops, self-hosted chat, and business software."},
-    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"Today's list points to an AI tooling market moving up the stack. The most visible opportunities are the control planes, integrations, and local runtimes that make agents useful inside real engineering and business workflows."}
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI-agent infrastructure dominates today’s GitHub momentum: code review, research, source control, reusable skills, and local model runtimes all appear among the leading repositories. Local-first speech and inference are also prominent, while a few established security and desktop projects provide continuity beyond the agent wave."
+    },
+    {
+      "id": "01-alibaba-open-code-review",
+      "kind": "repo",
+      "title": "alibaba/open-code-review",
+      "rank": 1,
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Fast, efficient, battle-tested hybrid code review using deterministic pipelines plus LLM agents.",
+      "language": "Go",
+      "stars_gained": 2751,
+      "total_stars": 27687,
+      "why_notable": "LLM-augmented developer tooling with security-oriented checks.",
+      "refs": [
+        "alibaba/open-code-review"
+      ]
+    },
+    {
+      "id": "02-justvugg-colibri",
+      "kind": "repo",
+      "title": "JustVugg/colibri",
+      "rank": 2,
+      "url": "https://github.com/JustVugg/colibri",
+      "description": "Run frontier mixture-of-experts models on local hardware with a pure-C, zero-dependency engine.",
+      "language": "C",
+      "stars_gained": 2035,
+      "total_stars": 33297,
+      "why_notable": "Local inference is attracting unusually strong attention, especially with resource-efficient runtimes.",
+      "refs": [
+        "JustVugg/colibri"
+      ]
+    },
+    {
+      "id": "03-ever-co-ever-gauzy",
+      "kind": "repo",
+      "title": "ever-co/ever-gauzy",
+      "rank": 3,
+      "url": "https://github.com/ever-co/ever-gauzy",
+      "description": "Open business-management platform spanning ERP, CRM, HRM, ATS, and project management.",
+      "language": "TypeScript",
+      "stars_gained": 632,
+      "total_stars": 6395,
+      "why_notable": "Shows AI-era momentum is extending into broad, self-hostable business software.",
+      "refs": [
+        "ever-co/ever-gauzy"
+      ]
+    },
+    {
+      "id": "04-debpalash-voicestudio",
+      "kind": "repo",
+      "title": "debpalash/VoiceStudio",
+      "rank": 4,
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "Fully local ElevenLabs alternative for voice cloning, design, dubbing, dictation, transcription, and audiobooks.",
+      "language": "Python",
+      "stars_gained": 2081,
+      "total_stars": 30473,
+      "why_notable": "Combines local AI, speech, and privacy into a polished end-user application.",
+      "refs": [
+        "debpalash/VoiceStudio"
+      ]
+    },
+    {
+      "id": "05-homebrew-brewui",
+      "kind": "repo",
+      "title": "Homebrew/BrewUI",
+      "rank": 5,
+      "url": "https://github.com/Homebrew/BrewUI",
+      "description": "Homebrew's official macOS graphical interface.",
+      "language": "Swift",
+      "stars_gained": 388,
+      "total_stars": 1154,
+      "why_notable": "A non-AI utility stands out amid the day’s heavily AI-centered list.",
+      "refs": [
+        "Homebrew/BrewUI"
+      ]
+    },
+    {
+      "id": "06-melgarafael-deskcommcrm",
+      "kind": "repo",
+      "title": "melgarafael/DeskcommCRM",
+      "rank": 6,
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "description": "Self-hosted AI sales OS with native agents, WhatsApp integration, MCP support, and multi-tenant operation.",
+      "language": "TypeScript",
+      "stars_gained": 205,
+      "total_stars": 2667,
+      "why_notable": "Connects agent capabilities to a concrete customer-support and sales workflow.",
+      "refs": [
+        "melgarafael/DeskcommCRM"
+      ]
+    },
+    {
+      "id": "07-alphaxiv-openresearch",
+      "kind": "repo",
+      "title": "alphaXiv/OpenResearch",
+      "rank": 7,
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "description": "Turns coding agents into research agents.",
+      "language": "Rust",
+      "stars_gained": 593,
+      "total_stars": 3054,
+      "why_notable": "Agent expansion is moving from code generation toward research automation.",
+      "refs": [
+        "alphaXiv/OpenResearch"
+      ]
+    },
+    {
+      "id": "08-nationalsecurityagency-ghidra",
+      "kind": "repo",
+      "title": "NationalSecurityAgency/ghidra",
+      "rank": 8,
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Software reverse-engineering framework.",
+      "language": "Java",
+      "stars_gained": 755,
+      "total_stars": 76449,
+      "why_notable": "Security and reverse engineering remain durable sources of developer interest.",
+      "refs": [
+        "NationalSecurityAgency/ghidra"
+      ]
+    },
+    {
+      "id": "09-danny-avila-librechat",
+      "kind": "repo",
+      "title": "danny-avila/LibreChat",
+      "rank": 9,
+      "url": "https://github.com/danny-avila/LibreChat",
+      "description": "Self-hostable ChatGPT-style platform with agents, MCP, skills, many model providers, and tools.",
+      "language": "TypeScript",
+      "stars_gained": 261,
+      "total_stars": 43686,
+      "why_notable": "Represents the fast-growing open-source multi-model assistant stack.",
+      "refs": [
+        "danny-avila/LibreChat"
+      ]
+    },
+    {
+      "id": "10-pacifio-atlas",
+      "kind": "repo",
+      "title": "pacifio/atlas",
+      "rank": 10,
+      "url": "https://github.com/pacifio/atlas",
+      "description": "Source control for agents that tracks and queries changes across multiple coding agents.",
+      "language": "Rust",
+      "stars_gained": 102,
+      "total_stars": 4509,
+      "why_notable": "Treats agent work as a versioned, inspectable engineering artifact.",
+      "refs": [
+        "pacifio/atlas"
+      ]
+    },
+    {
+      "id": "11-mg1937-asc",
+      "kind": "repo",
+      "title": "MG1937/ASC",
+      "rank": 11,
+      "url": "https://github.com/MG1937/ASC",
+      "description": "Fast Android decompiler front-end designed for agents and mobile researchers.",
+      "language": "Python",
+      "stars_gained": 122,
+      "total_stars": 1059,
+      "why_notable": "Applies agent-assisted workflows to mobile reverse engineering.",
+      "refs": [
+        "MG1937/ASC"
+      ]
+    },
+    {
+      "id": "12-addyosmani-agent-skills",
+      "kind": "repo",
+      "title": "addyosmani/agent-skills",
+      "rank": 12,
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars_gained": 354,
+      "total_stars": 94587,
+      "why_notable": "The strongest total-star signal in the list for reusable agent engineering practices.",
+      "refs": [
+        "addyosmani/agent-skills"
+      ]
+    },
+    {
+      "id": "13-tonhowtf-omniget",
+      "kind": "repo",
+      "title": "tonhowtf/omniget",
+      "rank": 13,
+      "url": "https://github.com/tonhowtf/omniget",
+      "description": "Cross-platform desktop downloader and media/course library powered by yt-dlp.",
+      "language": "Rust",
+      "stars_gained": 318,
+      "total_stars": 12595,
+      "why_notable": "Rust is also powering practical cross-platform desktop utilities.",
+      "refs": [
+        "tonhowtf/omniget"
+      ]
+    },
+    {
+      "id": "14-earendil-works-pi",
+      "kind": "repo",
+      "title": "earendil-works/pi",
+      "rank": 14,
+      "url": "https://github.com/earendil-works/pi",
+      "description": "AI-agent toolkit with a unified LLM API, agent loop, TUI, and coding-agent CLI.",
+      "language": "TypeScript",
+      "stars_gained": 437,
+      "total_stars": 105530,
+      "why_notable": "A mature, high-star foundation for building and operating coding agents.",
+      "refs": [
+        "earendil-works/pi"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agentic developer tooling:** open-code-review, OpenResearch, atlas, agent-skills, and pi all focus on making coding or research agents more capable, controllable, or reusable.\n- **Local AI and inference:** colibri and VoiceStudio emphasize running model-powered workloads locally, with privacy and hardware efficiency as selling points.\n- **AI in business workflows:** ever-gauzy, DeskcommCRM, and LibreChat apply agents or model integrations to operational software and self-hosted assistants.\n- **Languages:** TypeScript leads the listed set (5 repositories), followed by Rust (4), Python (2), and one each in Go, C, Swift, Java, and JavaScript.\n- **Security and reverse engineering:** ghidra and ASC show continued interest in analysis tooling, including agent-assisted mobile research."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The clearest shift is from standalone chat interfaces toward agent infrastructure: repositories increasingly manage agent loops, skills, source-control state, research tasks, and specialized workflows. Rust appears repeatedly in both local inference and agent-control tooling, while TypeScript remains strong for full-stack and assistant platforms."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today’s hottest repositories suggest that the GitHub center of gravity is moving toward operationalizing agents rather than merely accessing models. The strongest opportunities are in reliable agent tooling, local execution, and domain-specific integrations; traditional security and developer utilities remain relevant alongside that trend."
+    }
   ]
 }

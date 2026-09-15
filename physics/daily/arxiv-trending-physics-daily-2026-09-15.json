@@ -1,0 +1,262 @@
+{
+  "schema": "arxiv-trending-physics.v1",
+  "category": "physics",
+  "window": "daily",
+  "date": "2026-09-15",
+  "title": "arXiv Trending Physics — 15 September 2026",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-09-15.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "2609.15968",
+      "kind": "paper",
+      "title": "Direct observation of electron shedding from a laser-plasma accelerator",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.15968",
+      "arxiv_id": "2609.15968",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "physics.plasm-ph",
+        "physics.acc-ph"
+      ],
+      "authors": [
+        "Sheroy Tata",
+        "Salome Benracassa",
+        "Heychal Davidovich",
+        "Aaron Liberman",
+        "Anton Golovanov",
+        "et al."
+      ],
+      "themes": [
+        "Plasma & fluid physics",
+        "Instrumentation & detectors",
+        "Computational & data methods"
+      ],
+      "abstract": "The authors report direct observation of a high-charge electron bunch expanding after laser-plasma acceleration and progressively shedding electrons during extraction.",
+      "claimed_result": "Collective extraction dynamics transfer energy into a low-energy tail and reduce useful peak charge density.",
+      "evidence_type": "experimental",
+      "caveat": "The abstract does not quantify generality across accelerator regimes.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15968"
+      ]
+    },
+    {
+      "id": "2609.15970",
+      "kind": "paper",
+      "title": "Less isn't more: Cosmological bounds on the neutrino masses are robust to changes in the neutrino abundance",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.15970",
+      "arxiv_id": "2609.15970",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "astro-ph.CO",
+        "hep-ph"
+      ],
+      "authors": [
+        "Sebastian J. Figueroa",
+        "Alexander C. Sobotka",
+        "Adrienne L. Erickcek"
+      ],
+      "themes": [
+        "Cosmology & gravitation",
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "MCMC analyses find altered neutrino abundance changes cosmological neutrino-mass limits only modestly.",
+      "claimed_result": "The reported 95% degenerate-ordering limit spans 0.0652–0.0724 eV across tested scenarios.",
+      "evidence_type": "observational/computational",
+      "caveat": "The result depends on cosmological parameterization, data combination, and assumed mass splittings.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15970"
+      ]
+    },
+    {
+      "id": "2609.15958",
+      "kind": "paper",
+      "title": "Stripe-Like Superconducting Enhancement and Coexisting Magnetic Texture in an Infinite Layer Nickelate",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.15958",
+      "arxiv_id": "2609.15958",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "authors": [
+        "Ryan Laing",
+        "Dung Vu",
+        "Jacob Pfund",
+        "Wenzheng Wei",
+        "Frederick J. Walker",
+        "et al."
+      ],
+      "themes": [
+        "Condensed matter & materials"
+      ],
+      "abstract": "Scanning SQUID imaging reveals magnetic texture coexisting with superconductivity and stripe-like enhancement near the transition.",
+      "claimed_result": "A competing magnetic phase may contribute to broad transitions in nickelate films.",
+      "evidence_type": "experimental",
+      "caveat": "The abstract reports correlation, not proof of causation, and the result is sample-specific.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15958"
+      ]
+    },
+    {
+      "id": "2609.15931",
+      "kind": "paper",
+      "title": "Distinguishing cosmology, astrophysics and systematics: the Bayesian search for a primordial gravitational-wave background in next-generation observatories",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.15931",
+      "arxiv_id": "2609.15931",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "gr-qc",
+        "astro-ph.HE"
+      ],
+      "authors": [
+        "Teagan A. Clarke",
+        "Sylvia Biscoveanu",
+        "Carl-Johan Haster"
+      ],
+      "themes": [
+        "Cosmology & gravitation",
+        "Astrophysics",
+        "Instrumentation & detectors",
+        "Computational & data methods"
+      ],
+      "abstract": "Simulations show Cosmic Explorer can recover a cosmological background amid binary-black-hole foregrounds, but waveform systematics can bias inference.",
+      "claimed_result": "A signal-to-noise 5 background is recovered in one simulated day; low-frequency mismatch can create a false background.",
+      "evidence_type": "computational/forecast",
+      "caveat": "This is a simulation forecast, not a detection.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15931"
+      ]
+    },
+    {
+      "id": "2609.15935",
+      "kind": "paper",
+      "title": "Strong-coupling quantum optics in free space with holes in a Fermi sea",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.15935",
+      "arxiv_id": "2609.15935",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": [
+        "Hao Wang",
+        "Hayden C. Orth",
+        "Duo Xu",
+        "Emily J. Davis"
+      ],
+      "themes": [
+        "Atomic, molecular & optical physics",
+        "Quantum information"
+      ],
+      "abstract": "The authors propose a wavepacket antenna that produces directional free-space atom–light coupling.",
+      "claimed_result": "Predicted single-atom cooperativity can approach cavity/waveguide-QED performance.",
+      "evidence_type": "theoretical/forecast",
+      "caveat": "Required motional-state control and scattering geometry remain to be demonstrated.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15935"
+      ]
+    },
+    {
+      "id": "2609.15655",
+      "kind": "paper",
+      "title": "First Observation and Dynamical Study of the Ds to f0(980) mu nu Decay",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.15655",
+      "arxiv_id": "2609.15655",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "hep-ex"
+      ],
+      "authors": [
+        "BESIII Collaboration"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "BESIII reports the first observation of the semileptonic decay and a lepton-flavor-universality-consistent ratio.",
+      "claimed_result": "Using 7.33 fb^-1, it measures the branching fraction as (1.59±0.18_stat±0.11_syst)×10^-3.",
+      "evidence_type": "experimental",
+      "caveat": "The form-factor extraction depends on a pole parametrization and external |Vcs| input.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15655"
+      ]
+    },
+    {
+      "id": "2609.15966",
+      "kind": "paper",
+      "title": "Shot noise signatures of Majorana-assisted transport in an Aharonov-Bohm interferometer",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.15966",
+      "arxiv_id": "2609.15966",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.other"
+      ],
+      "authors": [
+        "Ignacio Román-Pérez",
+        "Juan Pablo Ramos-Andrade",
+        "Pedro Orellana",
+        "Luis Rosales"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Quantum information"
+      ],
+      "abstract": "Nonequilibrium calculations predict current, shot-noise, and Fano-factor signatures of Majorana-assisted transport.",
+      "claimed_result": "Half-flux destructive interference can enhance visibility of the predicted signal.",
+      "evidence_type": "theoretical/computational",
+      "caveat": "The indirect signatures can be mimicked by non-Majorana mechanisms.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15966"
+      ]
+    },
+    {
+      "id": "2609.15856",
+      "kind": "paper",
+      "title": "Neutron Skin Effects on Particle Emission in Heavy-Ion Collisions: A Topic Review with Astrophysical and Nuclear Structure Connections",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.15856",
+      "arxiv_id": "2609.15856",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "nucl-th",
+        "astro-ph.HE",
+        "hep-ph",
+        "nucl-ex"
+      ],
+      "authors": [
+        "Bao-Jun Cai",
+        "De-Qing Fang",
+        "Yu-Gang Ma"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Astrophysics",
+        "Computational & data methods"
+      ],
+      "abstract": "The review connects neutron-skin structure to heavy-ion observables, symmetry energy, nuclear measurements, and neutron stars.",
+      "claimed_result": "It argues that joint reaction, nuclear-structure, and astrophysical information is needed to constrain symmetry energy.",
+      "evidence_type": "review",
+      "caveat": "The synthesis is model-sensitive and presents no new measurement.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15856"
+      ]
+    }
+  ]
+}

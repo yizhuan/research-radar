@@ -1,6 +1,6 @@
 # What's trending in Github, AI, math, and physics - Daily updates
 
-Generated: 2026-09-15 16:11
+Generated: 2026-09-15 16:26
 Source: `/home/yizhuan/.research`
 
 ## Ai
@@ -17,7 +17,7 @@ Source: `/home/yizhuan/.research`
 
 ## Math
 
-- **Daily**: [arxiv-trending-math-daily-2026-09-11](math/daily/arxiv-trending-math-daily-2026-09-11.md) — 2026-09-11
+- **Daily**: [arxiv-trending-math-daily-2026-09-15](math/daily/arxiv-trending-math-daily-2026-09-15.md) — 2026-09-15
 - **Monthly**: [arxiv-trending-math-monthly-2026-09-04](math/monthly/arxiv-trending-math-monthly-2026-09-04.md) — 2026-09-04
 - **Weekly**: [arxiv-trending-math-weekly-2026-09-11](math/weekly/arxiv-trending-math-weekly-2026-09-11.md) — 2026-09-11
 

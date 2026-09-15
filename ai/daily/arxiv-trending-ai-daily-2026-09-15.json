@@ -1,0 +1,166 @@
+{
+  "schema": "arxiv-trending-ai-v1",
+  "category": "AI",
+  "window": "daily",
+  "date": "2026-09-15",
+  "title": "arXiv Trending AI — 2026-09-15",
+  "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-09-15.md",
+  "entry_count": 6,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "rank-1",
+      "kind": "paper",
+      "title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.15983",
+      "arxiv_id": "2609.15983",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "authors": [],
+      "themes": [
+        "Agents & reasoning",
+        "Evaluation & benchmarks",
+        "Training & adaptation"
+      ],
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15983"
+      ]
+    },
+    {
+      "id": "rank-2",
+      "kind": "paper",
+      "title": "OpenAI4S: Code as Action, Science as Sessions",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.15096",
+      "arxiv_id": "2609.15096",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "authors": [],
+      "themes": [
+        "Agents & reasoning",
+        "Efficient inference & systems",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15096"
+      ]
+    },
+    {
+      "id": "rank-3",
+      "kind": "paper",
+      "title": "HazardAuditor: From Executable Threats to Safer Computer-Use Agents",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.15134",
+      "arxiv_id": "2609.15134",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [],
+      "themes": [
+        "Safety & alignment",
+        "Agents & reasoning",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15134"
+      ]
+    },
+    {
+      "id": "rank-4",
+      "kind": "paper",
+      "title": "AlgoEvo: Self-Evolving Agentic Search for Automated Algorithm Discovery",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.15820",
+      "arxiv_id": "2609.15820",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [],
+      "themes": [
+        "Agents & reasoning",
+        "Training & adaptation",
+        "Efficient inference & systems"
+      ],
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15820"
+      ]
+    },
+    {
+      "id": "rank-5",
+      "kind": "paper",
+      "title": "NoteVQA: Benchmarking VLMs on Real-Life Questions from Human Communities",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.15695",
+      "arxiv_id": "2609.15695",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [],
+      "themes": [
+        "Multimodal & vision-language",
+        "Evaluation & benchmarks",
+        "Retrieval & knowledge"
+      ],
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15695"
+      ]
+    },
+    {
+      "id": "rank-6",
+      "kind": "paper",
+      "title": "LongAgent: History-Guided Agentic Search for Longitudinal Outcome Prediction",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.15859",
+      "arxiv_id": "2609.15859",
+      "arxiv_version": "v1",
+      "published": "2026-09-14",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [],
+      "themes": [
+        "Agents & reasoning",
+        "Retrieval & knowledge",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "See source report.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.15859"
+      ]
+    }
+  ]
+}

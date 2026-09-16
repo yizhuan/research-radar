@@ -1,119 +1,108 @@
-# arXiv Trending Physics — 15 September 2026
+# arXiv Trending Physics — 2026-09-15 batch
 
-## Headline
-Today's physics announcement batch is unusually cross-disciplinary: several papers target measurement bottlenecks rather than headline discoveries. The clearest signals are improved control of high-charge laser-plasma beams, robustness checks on cosmological neutrino-mass bounds, and new probes of quantum and superconducting transport.
+Snapshot: 2026-09-16 15:30 UTC. Window: papers first submitted on 2026-09-15 UTC. The latest available arXiv announcement batch is used. arXiv provides no official trending or readership chart; this is an inferred ranking from cross-listing, concrete result, breadth, dataset/instrument relevance, and corroborating search visibility. Semantic Scholar records were found for the selected papers, but citation fields were unavailable because the API returned rate limits; no citation momentum is claimed.
 
-This is an inferred “hottest” list, not an official arXiv ranking: arXiv publishes no trending, readership, or download chart.
+The 2026-09-15 batch contained 151 records across the configured physics archives (including cross-listed records). The list below is a curated, not comprehensive, selection of papers with unusually broad potential relevance or concrete technical advances.
 
 ## Top papers (ranked)
 
-### 1. [Direct observation of electron shedding from a laser-plasma accelerator](https://arxiv.org/abs/2609.15968)
-- **Abstract:** The authors report direct observation of a high-charge electron bunch expanding after laser-plasma acceleration and progressively shedding electrons during extraction.
-- **Authors:** Sheroy Tata, Salome Benracassa, Heychal Davidovich, Aaron Liberman, Anton Golovanov, et al.
-- **arXiv:** `2609.15968v1` (published 2026-09-14 17:54 UTC; categories: `physics.plasm-ph`, `physics.acc-ph`)
-- **Evidence for ranking:** Same-day primary physics submission with a direct experimental observation, femtosecond relativistic electron microscopy, and supporting particle-in-cell simulations; citation and influential-citation counts are not yet informative for a one-day-old preprint.
-- **Claimed result:** The authors identify collective extraction dynamics that transfer energy into a low-energy tail, reduce useful peak charge density, and lower accelerator efficiency.
-- **Evidence type:** experimental; femtosecond relativistic electron microscopy plus particle-in-cell simulations.
-- **Caveat:** The abstract does not quantify how broadly the effect generalizes across accelerator operating regimes; the simulations and observed beam conditions remain model- and setup-dependent.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Plasma & fluid physics; Instrumentation & detectors; Computational & data methods
+### 1. [Beyond Hardware: Adaptive Algorithmic Control by State-Proxy Equalization](https://arxiv.org/abs/2609.17497)
+- **Abstract:** The authors introduce Adaptive Algorithmic Control, which allocates computational effort according to a state-derived proxy for evolving quantum difficulty rather than physical time.
+- **Authors:** Jianlong Lu, Hongrui Zhang, Vishal Sharathchandra Bajpe, Thorsten Koch, Ying Chen
+- **arXiv:** `2609.17497v1` (published 2026-09-15 17:37 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** Concrete algorithmic proposal spanning exact simulation, supercomputer calculations, and IBM hardware; the abstract reports tests up to 156 qubits and large claimed sampling gains. Independent attention was not found beyond the arXiv record; Semantic Scholar citation counts were unavailable due to rate limiting.
+- **Claimed result:** The authors report 22% to more than 100,000% improvements in low-energy sampling probabilities under matched depth and measurement budgets, attributed to adaptive resource allocation.
+- **Evidence type:** computational and experimental; exact simulations, large-scale supercomputer computations, and IBM quantum hardware experiments.
+- **Caveat:** The reported gains are benchmark- and proxy-dependent; the abstract does not establish broad superiority across quantum algorithms or hardware platforms.
+- **Announcement type:** new submission, 2026-09-15 batch
+- **Themes:** Quantum information; Computational & data methods
 
-### 2. [Less isn't more: Cosmological bounds on the neutrino masses are robust to changes in the neutrino abundance](https://arxiv.org/abs/2609.15970)
-- **Abstract:** MCMC analyses using Planck, ACT lensing, and DESI BAO data find that allowing altered neutrino abundance changes the cosmological neutrino-mass upper bound only modestly.
-- **Authors:** Sebastian J. Figueroa, Alexander C. Sobotka, Adrienne L. Erickcek
-- **arXiv:** `2609.15970v1` (published 2026-09-14 17:55 UTC; categories: `astro-ph.CO`, `hep-ph`)
-- **Evidence for ranking:** Cross-listed cosmology/phenomenology result with explicit numerical constraints and direct relevance to the neutrino-mass tension; citation signals are sparse because it is newly submitted.
-- **Claimed result:** For the degenerate ordering, the reported 95% limit ranges from 0.0652 eV in a photon-injection scenario to 0.0724 eV under model-agnostic neutrino-to-photon changes, rather than becoming substantially weaker.
-- **Evidence type:** observational/computational; MCMC fits to Planck CMB, Planck/ACT lensing, and DESI BAO data.
-- **Caveat:** The result depends on the chosen cosmological parameterization, data combination, and assumed mass splittings; it is a preprint rather than a consensus constraint.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics; Computational & data methods
+### 2. [Nonlinear electron-phonon interactions from first principles](https://arxiv.org/abs/2609.17433)
+- **Abstract:** The paper presents a first-principles method for arbitrary-order nonlinear electron-phonon coupling and demonstrates second-order effects in diamond, lithium fluoride, and graphite.
+- **Authors:** Zhenbang Dai, Feliciano Giustino
+- **arXiv:** `2609.17433v1` (published 2026-09-15 16:43 UTC; categories: `cond-mat.mtrl-sci`, `cond-mat.str-el`, `cond-mat.supr-con`, `quant-ph`)
+- **Evidence for ranking:** Four-way cross-listing, a DOI/journal record, and a reusable method aimed at transport, superconductivity, polarons, and ultrafast dynamics. Search results independently surfaced the APS record and HTML/PDF versions; citation counts were unavailable.
+- **Claimed result:** The authors show that second-order couplings materially improve polaron formation energies and hopping barriers relative to linear-coupling treatments.
+- **Evidence type:** theoretical and computational; ab initio calculations in three representative materials.
+- **Caveat:** The demonstrations are proof-of-concept examples; applicability and cost for higher orders and larger materials remain to be established.
+- **Announcement type:** new submission, 2026-09-15 batch
+- **Themes:** Condensed matter & materials; Computational & data methods
 
-### 3. [Stripe-Like Superconducting Enhancement and Coexisting Magnetic Texture in an Infinite Layer Nickelate](https://arxiv.org/abs/2609.15958)
-- **Abstract:** Scanning SQUID imaging of optimally doped nickelate films reveals weak magnetic texture coexisting with superconductivity and a non-uniform, stripe-like enhancement near the transition.
-- **Authors:** Ryan Laing, Dung Vu, Jacob Pfund, Wenzheng Wei, Frederick J. Walker, et al.
-- **arXiv:** `2609.15958v1` (published 2026-09-14 17:51 UTC; categories: `cond-mat.supr-con`, `cond-mat.str-el`)
-- **Evidence for ranking:** High-interest superconductivity topic, local imaging rather than bulk averaging, and a concrete proposed explanation for broadened transitions; citation counts are not yet meaningful.
-- **Claimed result:** The authors argue that a competing magnetic phase may contribute substantially to broad superconducting transitions in Nd1-xEuxNiO2 films and that the spatially resolved enhancement could inform routes to higher transition temperatures.
-- **Evidence type:** experimental; scanning SQUID microscopy on molecular-beam-epitaxy-grown nickelate thin films.
-- **Caveat:** The abstract reports correlation and interpretation, not proof that the magnetic texture causes the transition broadening or raises Tc; the result is sample-specific.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Condensed matter & materials
+### 3. [The Equivalence Principle in the Dark Sector in light of DESI](https://arxiv.org/abs/2609.17423)
+- **Abstract:** The authors fit a dark-sector equivalence-principle violation to DESI and CMB data, finding a possible long-range dark force at roughly 2.5–3 sigma depending on the data combination.
+- **Authors:** Andrea Clini, Pierre Zhang, Emanuele Castorina, Maria Archidiacono
+- **arXiv:** `2609.17423v1` (published 2026-09-15 16:40 UTC; categories: `astro-ph.CO`, `hep-ph`)
+- **Evidence for ranking:** Direct connection to DESI DR1/DR2 and CMB tensions, two-way cross-listing, and independent search visibility on arXiv's cosmology listing. Citation counts were unavailable.
+- **Claimed result:** A best fit suggests a dark-sector force with strength about 0.5% of gravity, with evidence rising from approximately 2.5 sigma to approximately 3 sigma in a preliminary combined analysis.
+- **Evidence type:** observational and computational; cosmological parameter fits to CMB, DESI BAO, and full-shape data.
+- **Caveat:** This is a statistical tension, not a discovery; the preliminary combination ignores an as-yet unavailable cross-correlation between datasets and remains model-dependent.
+- **Announcement type:** new submission, 2026-09-15 batch
+- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics
 
-### 4. [Distinguishing cosmology, astrophysics and systematics: the Bayesian search for a primordial gravitational-wave background in next-generation observatories](https://arxiv.org/abs/2609.15931)
-- **Abstract:** Simulations for Cosmic Explorer show that a Gaussian cosmological background can be recovered amid binary-black-hole foregrounds, but waveform systematics can bias the inference and create a false background.
-- **Authors:** Teagan A. Clarke, Sylvia Biscoveanu, Carl-Johan Haster
-- **arXiv:** `2609.15931v1` (published 2026-09-14 17:38 UTC; categories: `gr-qc`, `astro-ph.HE`)
-- **Evidence for ranking:** Cross-field relevance to gravitational-wave cosmology and a sharp, actionable systematic warning; no useful citation momentum is available yet.
-- **Claimed result:** In simulated data, a primordial background with signal-to-noise 5 is recovered in one day, while low-frequency waveform mismatches below 20 Hz can bias parameters or falsely imply a background when none exists.
-- **Evidence type:** computational/forecast; Bayesian inference on simulated Cosmic Explorer data.
-- **Caveat:** This is a forecast based on simulated signals and assumed waveform errors, not a detection or measurement of a primordial background.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Cosmology & gravitation; Astrophysics; Instrumentation & detectors; Computational & data methods
+### 4. [Cosmological Constrained Axion-Portal Inelastic Dark Matter for the LZ Event](https://arxiv.org/abs/2609.17412)
+- **Abstract:** This study tracks two-state inelastic dark matter coupled through an axion-like particle and shows how early-Universe evolution can produce recoil spectra near the 250 keV LZ candidate event.
+- **Authors:** Haipeng An, Fei Gao, Jia Liu, Minghao Liu, Changlong Xu
+- **arXiv:** `2609.17412v1` (published 2026-09-15 16:37 UTC; categories: `hep-ph`, `astro-ph.CO`, `hep-ex`)
+- **Evidence for ranking:** Three-way cross-listing and direct relevance to a current detector event, with a concrete collider and annual-modulation test pathway. Citation counts were unavailable.
+- **Claimed result:** Scalar and pseudoscalar ALP couplings lead to different surviving excited-state fractions and endo-/exothermic recoil regimes, all capable of peaking near the reported recoil energy.
+- **Evidence type:** theoretical and computational; cosmological evolution and benchmark direct-detection spectra.
+- **Caveat:** The paper interprets a candidate event rather than an established dark-matter signal; benchmarks require confirmation with more LZ data and complementary searches.
+- **Announcement type:** new submission, 2026-09-15 batch
+- **Themes:** Particle, nuclear & high-energy physics; Cosmology & gravitation; Instrumentation & detectors
 
-### 5. [Strong-coupling quantum optics in free space with holes in a Fermi sea](https://arxiv.org/abs/2609.15935)
-- **Abstract:** The authors propose using an atom's center-of-mass wavefunction as a free-space antenna to obtain strong atom–light coupling and directional scattering without a cavity or waveguide.
-- **Authors:** Hao Wang, Hayden C. Orth, Duo Xu, Emily J. Davis
-- **arXiv:** `2609.15935v1` (published 2026-09-14 17:43 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** Broad quantum-optics implications, a concrete proposed architecture, and predictions spanning single-atom mirrors, long-range collective effects, and directional emission; citation signals are unavailable at this age.
-- **Claimed result:** The predicted single-atom cooperativity can approach current cavity/waveguide-QED performance, with possible sub- and superradiance at spacings much larger than the optical wavelength.
-- **Evidence type:** theoretical/forecast; light–matter modeling of trapped-atom wavepacket antennas and emitter arrays.
-- **Caveat:** The abstract presents predictions; realizing the required motional-state control and scattering geometry experimentally remains to be demonstrated.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Atomic, molecular & optical physics; Quantum information
+### 5. [A Fully Analytic Expression for the 2PN N-Body Hamiltonian](https://arxiv.org/abs/2609.17510)
+- **Abstract:** The authors evaluate the remaining integral in the general nonspinning 2PN ADM N-body Hamiltonian, producing a closed-form expression and numerically checking it against the integral representation.
+- **Authors:** Felix M. Heinze, Gerhard Schäfer, Bernd Brügmann
+- **arXiv:** `2609.17510v1` (published 2026-09-15 17:47 UTC; categories: `gr-qc`)
+- **Evidence for ranking:** Resolves a specific analytic bottleneck in a foundational relativistic few-/many-body calculation and includes numerical validation. Citation counts and independent coverage were unavailable.
+- **Claimed result:** A fully explicit closed-form general 2PN N-body Hamiltonian is obtained in ADM gauge for nonspinning point particles.
+- **Evidence type:** theoretical and computational; analytic derivation with direct numerical comparisons.
+- **Caveat:** The authors state that version 1 gives an outline and that a complete derivation will appear in an extended version; spin and higher-PN effects are outside scope.
+- **Announcement type:** new submission, 2026-09-15 batch
+- **Themes:** Cosmology & gravitation; Computational & data methods
 
-### 6. [First Observation and Dynamical Study of the $D^+_s\to f_0(980)\mu^+\nu_\mu$ Decay](https://arxiv.org/abs/2609.15655)
-- **Abstract:** BESIII reports the first observation of this semileptonic decay, measures its branching fraction, and finds the muon/electron ratio consistent with lepton-flavor universality.
-- **Authors:** BESIII Collaboration: M. Ablikim, M. N. Achasov, P. Adlarson, K. X. Ai, R. Aliberti, et al.
-- **arXiv:** `2609.15655v1` (published 2026-09-14 14:38 UTC; categories: `hep-ex`)
-- **Evidence for ranking:** First observation by a major experiment, a measured branching fraction with statistical and systematic uncertainties, and a form-factor determination; citations are not yet informative.
-- **Claimed result:** Using 7.33 fb$^{-1}$, BESIII measures the branching fraction as $(1.59\pm0.18_{stat}\pm0.11_{syst})\times10^{-3}$ and obtains a form factor $f_+^{f_0}(0)=0.514\pm0.017_{stat}\pm0.021_{syst}$.
-- **Evidence type:** experimental; BESIII $e^+e^-$ data at 4.128–4.226 GeV.
-- **Caveat:** The form-factor extraction depends on the pole parametrization and external CKMfitter $|V_{cs}|$ input; the lepton-universality comparison has non-negligible uncertainty.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
+### 6. [Evaluating Verified Autonomy in Quantum Engineering](https://arxiv.org/abs/2609.17439)
+- **Abstract:** The authors introduce Quantum-Harbor and QIQCBench, a virtual laboratory and 49-task benchmark for verifying agent actions and conclusions across quantum engineering.
+- **Authors:** Naixu Guo, Changhao Li, Siyu Cheng, Qicheng Tang, Binzhao Luo, et al.
+- **arXiv:** `2609.17439v1` (published 2026-09-15 16:46 UTC; categories: `quant-ph`, `cs.AI`)
+- **Evidence for ranking:** Cross-field quant-ph/AI scope, a named benchmark with 49 expert-authored tasks, and evaluation across 17 agentic systems. Citation counts were unavailable.
+- **Claimed result:** The benchmark reveals wide variation in verified performance and a substantial gap between demonstrating capability and operating reliably.
+- **Evidence type:** computational and benchmark study; virtual laboratory tasks spanning calibration, control, error correction, compilation, sensing, and networking.
+- **Caveat:** Benchmark performance may not predict reliability on physical hardware or unseen laboratory workflows; the abstract does not give task-level scores.
+- **Announcement type:** new submission, 2026-09-15 batch
+- **Themes:** Quantum information; Instrumentation & detectors; Computational & data methods
 
-### 7. [Shot noise signatures of Majorana-assisted transport in an Aharonov-Bohm interferometer](https://arxiv.org/abs/2609.15966)
-- **Abstract:** Nonequilibrium calculations predict that Majorana end states produce distinctive current, shot-noise, and Fano-factor signatures in a two-dot Aharonov–Bohm interferometer.
-- **Authors:** Ignacio Román-Pérez, Juan Pablo Ramos-Andrade, Pedro Orellana, Luis Rosales
-- **arXiv:** `2609.15966v1` (published 2026-09-14 17:54 UTC; categories: `cond-mat.mes-hall`, `cond-mat.other`)
-- **Evidence for ranking:** Combines Majorana physics with a measurable noise observable and identifies a half-flux regime that enhances contrast; it is theory-only and has no current citation momentum.
-- **Claimed result:** The model predicts enhanced visibility of Majorana-assisted transport at half flux, where destructive interference suppresses conventional background transport.
-- **Evidence type:** theoretical/computational; nonequilibrium Green's functions with an equation-of-motion treatment of a Kitaev-chain device model.
-- **Caveat:** Majorana signatures are indirect in this proposal and can be mimicked by non-Majorana mechanisms; the predictions require experimental validation beyond the chosen approximation.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Condensed matter & materials; Quantum information
-
-### 8. [Neutron Skin Effects on Particle Emission in Heavy-Ion Collisions: A Topic Review with Astrophysical and Nuclear Structure Connections](https://arxiv.org/abs/2609.15856)
-- **Abstract:** This review connects neutron-skin structure to particle emission and collective dynamics in heavy-ion collisions, symmetry energy, nuclear measurements, and neutron-star observables.
-- **Authors:** Bao-Jun Cai, De-Qing Fang, Yu-Gang Ma
-- **arXiv:** `2609.15856v1` (published 2026-09-14 16:49 UTC; categories: `nucl-th`, `astro-ph.HE`, `hep-ph`, `nucl-ex`)
-- **Evidence for ranking:** Four-way cross-listing and a broad synthesis linking nuclear experiments, transport modeling, and astrophysics; as a same-day review, citation counts cannot establish momentum.
-- **Claimed result:** The review argues that combining reaction systems and observables with nuclear-structure and astrophysical information is needed to constrain neutron skins and the density dependence of the symmetry energy.
-- **Evidence type:** review; comparison of collision observables, nuclear-structure probes, transport calculations, and astrophysical connections.
-- **Caveat:** It synthesizes existing work rather than presenting a new measurement, and the highlighted observables remain sensitive to deformation, clustering, surface diffuseness, and model choices.
-- **Announcement type:** new submission, 2026-09-15 batch.
-- **Themes:** Particle, nuclear & high-energy physics; Astrophysics; Computational & data methods
+### 7. [Query-optimal quantum simulation of Lindblad evolution](https://arxiv.org/abs/2609.17490)
+- **Abstract:** The paper closes a query-complexity gap for general Lindblad simulation by achieving additive dependence on evolution time and precision in the block-encoding model.
+- **Authors:** Chunhao Wang, Christopher Ye
+- **arXiv:** `2609.17490v1` (published 2026-09-15 17:32 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** Resolves an explicitly stated open complexity question and separates optimal oracle-query complexity from the still-unresolved gate-complexity problem. Citation counts and independent coverage were unavailable.
+- **Claimed result:** The authors give an algorithm with optimal additive query dependence on time and inverse precision for Lindblad evolution.
+- **Evidence type:** theoretical; block-encoding and transducer-based quantum algorithm analysis.
+- **Caveat:** The additional gate complexity is higher than existing algorithms, so optimal query complexity does not yet imply an optimal practical simulator.
+- **Announcement type:** new submission, 2026-09-15 batch
+- **Themes:** Quantum information; Computational & data methods
 
 ## Trending Research Themes
 
-- **Systematics are becoming first-class physics results.** The gravitational-wave forecast identifies waveform mismatch as a possible false-positive source, while the cosmology paper tests how neutrino-abundance assumptions move mass bounds (2609.15931, 2609.15970).
-- **Spatially and fluctuation-resolved probes are replacing bulk signatures.** Scanning SQUID maps nickelate inhomogeneity, shot noise targets Majorana transport, and electron microscopy follows beam evolution after acceleration (2609.15958, 2609.15966, 2609.15968).
-- **Cross-scale nuclear inference is tightening.** The BESIII decay measurement constrains charm form factors and lepton-flavor universality, while the neutron-skin review links heavy-ion observables to symmetry energy and neutron-star physics (2609.15655, 2609.15856).
-- **Engineered light–matter coupling remains active.** The free-space antenna proposal and the laser-plasma observation both seek control of light/electron flow without relying solely on conventional cavities or accelerator geometries (2609.15935, 2609.15968).
+- Quantum computation is prominent, but the emphasis is shifting from abstract speedups to operational bottlenecks: adaptive resource allocation, open-system simulation, verified autonomy, and error-aware engineering (2609.17497, 2609.17490, 2609.17439).
+- Physics software and reusable computational methods are central: nonlinear electron-phonon matrix elements, closed-form post-Newtonian dynamics, and benchmarkable quantum workflows (2609.17433, 2609.17510, 2609.17439).
+- Cosmology and particle phenomenology are tightly coupled to current surveys and detectors: DESI/CMB fits and LZ recoil interpretation provide distinct examples of model-building around new data (2609.17423, 2609.17412).
+- The batch contains several cross-listed papers, but cross-listing is treated as a relevance signal, not as evidence of popularity.
 
 ## Open Problems and Research Directions
 
-- **Waveform robustness:** The authors of 2609.15931 identify low-frequency waveform mismatch as a source of false primordial-background inference. Follow-up work should validate the proposed bias diagnostic against broader waveform families and real detector nonstationarity.
-- **Neutrino-mass model dependence:** 2609.15970 leaves the remaining cosmology–oscillation tension dependent on radiation history and data combination. Future analyses can combine additional lensing, BAO, and laboratory constraints while testing more general early-universe sectors.
-- **Nickelate causality:** 2609.15958 observes magnetic texture and stripe-like superconducting enhancement but does not establish causation. Temperature-, field-, and doping-dependent local imaging on multiple films could test whether the texture controls transition broadening or enhancement.
-- **Majorana specificity:** 2609.15966 proposes shot noise as an indirect probe. Experiments should compare the predicted half-flux Fano-factor pattern against disorder, Andreev-bound-state, and ordinary interference backgrounds.
-- **Beam extraction control:** 2609.15968 shows electron shedding can reduce useful charge density. Controlled variation of bunch charge, plasma density, and extraction optics can determine operating boundaries and mitigation strategies.
-- **Symmetry-energy identifiability:** 2609.15856 highlights degeneracies among neutron skins, deformation, clustering, and transport models. Joint Bayesian analyses of complementary reaction observables and independent nuclear-structure/neutron-star data are a concrete next step.
+- Test the dark-force interpretation of DESI tensions with the missing cross-correlations and future DESI releases; the present significance is explicitly preliminary (2609.17423).
+- Determine whether the LZ candidate persists and whether annual modulation or collider data distinguish the ALP inelastic-scattering benchmarks (2609.17412).
+- Extend nonlinear electron-phonon calculations to higher orders, larger systems, and superconducting or ultrafast observables, while quantifying computational scaling (2609.17433).
+- Supply the full derivation and extend the analytic N-body Hamiltonian beyond the stated nonspinning 2PN setting (2609.17510).
+- Reduce the gate overhead of the query-optimal Lindblad algorithm and validate its advantage on realistic hardware (2609.17490).
+- Compare Adaptive Algorithmic Control and Quantum-Harbor results across independent algorithms, hardware, and out-of-distribution tasks before treating the reported gains as general (2609.17497, 2609.17439).
 
 ## Takeaway
-The strongest emerging pattern is methodological: today’s notable papers make hidden structure—beam tails, spatial superconducting texture, noise statistics, waveform bias, or model assumptions—measurable. None of the list constitutes a new discovery of a primordial gravitational-wave background or Majorana particle; several are forecasts, simulations, or preliminary preprints and need independent validation.
+
+The strongest recurring pattern in this batch is physics becoming more dependent on verified computational infrastructure: new methods target nonlinear materials interactions, relativistic dynamics, open-system quantum simulation, and trustworthy quantum automation. The most attention-worthy phenomenology is the DESI dark-sector fit and the LZ-motivated dark-matter model, but both are preliminary inference or interpretation rather than discoveries.
 
 ## Method and sources
 
-Window: daily, arXiv announcement batch dated 2026-09-15; snapshot 2026-09-15 15:30 UTC. The batch lists papers first submitted on 2026-09-14 because arXiv announcements follow its submission schedule. Core archive coverage checked: `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`; the selected entries were deduplicated by versionless arXiv ID. Abstracts and submission metadata were read from the canonical arXiv abstract pages linked above. arXiv supplies no official trending chart; ordering is inferred from same-day scientific salience, cross-listing, concrete measurements or testable predictions, and methodological reach. Semantic Scholar citation and influential-citation signals were sparse/unavailable for these newly posted papers, so no numeric citation ranking is claimed.
+Window: 2026-09-15 00:00–23:59 UTC; snapshot: 2026-09-16 15:30 UTC. Archives queried: physics, astro-ph, cond-mat, gr-qc, hep-ex, hep-lat, hep-ph, hep-th, nucl-ex, nucl-th, and quant-ph; 151 returned records including cross-lists. Primary source: arXiv API and abstract pages. Corroboration: Semantic Scholar lookup (paper records found, citation fields rate-limited) and web search for selected titles. Ranking is inferred, not an official arXiv ranking and not a most-read/downloaded list. All entries are new submissions in the selected batch; no revisions were included.

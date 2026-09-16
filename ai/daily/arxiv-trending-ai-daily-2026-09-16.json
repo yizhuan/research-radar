@@ -1,0 +1,257 @@
+{
+  "schema": "arxiv-trending-ai/v1",
+  "category": "AI",
+  "window": "daily",
+  "date": "2026-09-16",
+  "title": "arXiv Trending AI — 2026-09-16",
+  "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-09-16.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "1",
+      "kind": "paper",
+      "title": "Agentic Societies Need a Social Harness",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.17527",
+      "arxiv_id": "2609.17527",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.NI"
+      ],
+      "authors": [
+        "Tapan Chugh",
+        "Vidushi Singh",
+        "Krish Jain",
+        "Arvind Krishnamurthy",
+        "Ratul Mahajan"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Safety & alignment",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17527"
+      ]
+    },
+    {
+      "id": "2",
+      "kind": "paper",
+      "title": "Modality-Autoregressive World-Action Models",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.17524",
+      "arxiv_id": "2609.17524",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.RO"
+      ],
+      "authors": [
+        "Adam Hung",
+        "Bardienus P. Duisterhof",
+        "Deva Ramanan",
+        "Jeffrey Ichnowski"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Multimodal & vision-language",
+        "Training & adaptation"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17524"
+      ]
+    },
+    {
+      "id": "3",
+      "kind": "paper",
+      "title": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.17523",
+      "arxiv_id": "2609.17523",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "authors": [
+        "Shuhan Xue",
+        "Jianyuan Zhong",
+        "Ziyuan Nan",
+        "Wenbin Li",
+        "Zhaochen Yu"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Training & adaptation",
+        "Data & synthetic data"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17523"
+      ]
+    },
+    {
+      "id": "4",
+      "kind": "paper",
+      "title": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.17516",
+      "arxiv_id": "2609.17516",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "authors": [
+        "Ali Şenol"
+      ],
+      "themes": [
+        "Safety & alignment",
+        "Evaluation & benchmarks",
+        "Agents & reasoning"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17516"
+      ]
+    },
+    {
+      "id": "5",
+      "kind": "paper",
+      "title": "JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.17475",
+      "arxiv_id": "2609.17475",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.AI",
+        "cs.PF"
+      ],
+      "authors": [
+        "Yuhua Chen"
+      ],
+      "themes": [
+        "Efficient inference & systems",
+        "Training & adaptation"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17475"
+      ]
+    },
+    {
+      "id": "6",
+      "kind": "paper",
+      "title": "LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.17184",
+      "arxiv_id": "2609.17184",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "authors": [
+        "SangLyul Cho",
+        "Langqing Cui",
+        "Sehoon Kim",
+        "Dongsu Han",
+        "Insu Han"
+      ],
+      "themes": [
+        "Efficient inference & systems",
+        "Training & adaptation"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17184"
+      ]
+    },
+    {
+      "id": "7",
+      "kind": "paper",
+      "title": "PhysStream: Streaming Physics-Grounded Video Generation with Structured Scene Memory and Fine-Grained Motion Control",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.17521",
+      "arxiv_id": "2609.17521",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "authors": [
+        "Chuhao Chen",
+        "Peter Wonka",
+        "Chaoyang Wang",
+        "Chen Wang",
+        "Qiao Feng"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Robotics & control",
+        "Training & adaptation"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17521"
+      ]
+    },
+    {
+      "id": "8",
+      "kind": "paper",
+      "title": "ENCP: Episode-Normalized Conformal Prediction for Vision-and-Language Navigation",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.17499",
+      "arxiv_id": "2609.17499",
+      "arxiv_version": "1",
+      "published": "2026-09-15",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "authors": [
+        "Vicky Feliren",
+        "A. Taufiq Asyhari",
+        "Muhamad Risqi U. Saputra"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Safety & alignment",
+        "Robotics & control"
+      ],
+      "abstract": "See source report for faithful abstract summary.",
+      "claimed_contribution": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.17499"
+      ]
+    }
+  ]
+}

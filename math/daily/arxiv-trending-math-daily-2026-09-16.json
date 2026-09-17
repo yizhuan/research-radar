@@ -1,1 +1,219 @@
-{"schema":"arxiv-trending-math-v1","category":"math","window":"daily","date":"2026-09-16","title":"arXiv Trending Mathematics — 2026-09-16","source_report":"/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-09-16.md","entry_count":8,"entry_noun":"papers","sections":[{"id":"2609.17390","kind":"paper","title":"Improved bounds for Szpiro's conjecture","rank":1,"url":"https://arxiv.org/abs/2609.17390v1","arxiv_id":"2609.17390","arxiv_version":"v1","published":"2026-09-15T16:27:32Z","categories":["math.NT"],"authors":["Hector Pasten"],"themes":["Algebra & number theory"],"abstract":"Improves the unconditional elliptic-curve bound from log Delta << N log N to log Delta << N log log N and proves log Delta << N for semistable curves.","claimed_result":"The author claims these stronger unconditional bounds using methods related to Shimura curves and the abc conjecture.","assumptions_and_setting":"Elliptic curves over Q; Delta is the minimal discriminant and N the conductor; semistability is required for the linear bound.","caveat":"Fresh arXiv preprint; proof and relation to the abc approach require expert checking.","refs":["https://arxiv.org/abs/2609.17390v1"]},{"id":"2609.17506","kind":"paper","title":"Proof of the singularity conjecture for discrete subgroups of SL_2(R)","rank":2,"url":"https://arxiv.org/abs/2609.17506v1","arxiv_id":"2609.17506","arxiv_version":"v1","published":"2026-09-15T17:45:15Z","categories":["math.DS"],"authors":["Timothée Bénard"],"themes":["Geometry & topology","Probability & statistics","Algebra & number theory"],"abstract":"Proves singularity of the stationary measure on P^1(R) relative to SO(2)-invariant measure in the discrete Zariski-dense SL_2(R) setting.","claimed_result":"The author claims the conjecture using winding variances on finite covers of a closed hyperbolic surface and a topological obstruction.","assumptions_and_setting":"Finitely supported measure whose support generates a Zariski-dense discrete subgroup.","caveat":"The conclusion is limited to the stated discrete Zariski-dense hypotheses.","refs":["https://arxiv.org/abs/2609.17506v1"]},{"id":"2609.17529","kind":"paper","title":"An Alon-Boppana Bound for the Non-Backtracking Operator","rank":3,"url":"https://arxiv.org/abs/2609.17529v1","arxiv_id":"2609.17529","arxiv_version":"v1","published":"2026-09-15T17:57:58Z","categories":["math.PR","math.CO","math.ST"],"authors":["Theo McKenzie"],"themes":["Probability & statistics","Combinatorics & discrete mathematics"],"abstract":"Gives a lower bound on fixed-index non-backtracking eigenvalue moduli for graph families with a unimodular Galton-Watson local limit and proves a conjecture for Erdős-Rényi graphs.","claimed_result":"Under local convergence and an exponential-moment condition, |lambda_k(B)| >= sqrt(kappa)-o_N(1), via Bethe-Hessian and effective-conductance arguments.","assumptions_and_setting":"kappa=E[D(D-1)]/E[D] > 1; N is the vertex count.","caveat":"Finite-size constants and extensions beyond the stated degree-tail assumptions are not given in the abstract.","refs":["https://arxiv.org/abs/2609.17529v1"]},{"id":"2609.17410","kind":"paper","title":"Uncountably many local isomorphism types of compactly generated simple groups","rank":4,"url":"https://arxiv.org/abs/2609.17410v1","arxiv_id":"2609.17410","arxiv_version":"v1","published":"2026-09-15T16:37:08Z","categories":["math.GR"],"authors":["Ilaria Castellano","Jorge Fariña-Asategui","Mikel Eguzki Garciarena","Bianca Marchionna","Martyn Quick","Colin D. Reid","Simon M. Smith","Stephan Tornier","Matteo Vannacci","John S. Wilson"],"themes":["Algebra & number theory","Geometry & topology"],"abstract":"Claims continuum-many local-isomorphism classes among non-discrete compactly generated totally disconnected locally compact topologically simple groups.","claimed_result":"The authors claim 2^aleph_0 local-isomorphism classes, answering an explicitly stated open question.","assumptions_and_setting":"Groups are non-discrete, compactly generated, totally disconnected, locally compact, and topologically simple.","caveat":"This is an overview of a forthcoming paper; the full proof is important for assessment.","refs":["https://arxiv.org/abs/2609.17410v1"]},{"id":"2609.17461","kind":"paper","title":"Mass gap for the hierarchical sinh-Gordon model","rank":5,"url":"https://arxiv.org/abs/2609.17461v1","arxiv_id":"2609.17461","arxiv_version":"v1","published":"2026-09-15T17:00:45Z","categories":["math.PR","math-ph"],"authors":["Omar Abdelghani","Roland Bauerschmidt","Michael Hofstetter","Ofer Zeitouni"],"themes":["Probability & statistics","Mathematical physics"],"abstract":"Proves infinite-volume existence, a uniform log-Sobolev inequality, and a mass gap for the hierarchical sinh-Gordon model for b^2 in (0,1).","claimed_result":"The authors claim these results, with a simpler regime for b^2 in (0,1/2), and raise questions about physics conjectures.","assumptions_and_setting":"Hierarchical massless Gaussian free field with cosh interaction, parameterized by b^2.","caveat":"Hierarchical results do not automatically establish corresponding continuum-field claims.","refs":["https://arxiv.org/abs/2609.17461v1"]},{"id":"2609.17520","kind":"paper","title":"Renormalizing small ball events for branching random walk","rank":6,"url":"https://arxiv.org/abs/2609.17520v1","arxiv_id":"2609.17520","arxiv_version":"v1","published":"2026-09-15T17:55:12Z","categories":["math.PR","cond-mat.stat-mech","math-ph"],"authors":["Vilas Winstein"],"themes":["Probability & statistics","Mathematical physics"],"abstract":"Shows that small-ball conditioning of branching random walk yields endpoint correlation length O(r), using renormalization-group analysis.","claimed_result":"The author claims the optimal O(r) bound and applications to sinh-Gordon and generalized phi^4 models.","assumptions_and_setting":"Depth-n branching random walk with standard Gaussian increments conditioned on endpoints lying in an interval of radius r.","caveat":"Applications depend on the relevant confining-potential hypotheses.","refs":["https://arxiv.org/abs/2609.17520v1"]},{"id":"2609.17362","kind":"paper","title":"Global existence and vanishing viscosity limit of the compressible Navier-Stokes-Vlasov-Fokker-Planck system in critical spaces","rank":7,"url":"https://arxiv.org/abs/2609.17362v1","arxiv_id":"2609.17362","arxiv_version":"v1","published":"2026-09-15T16:01:44Z","categories":["math.AP"],"authors":["Hai-Liang Li","Ling-Yun Shou"],"themes":["Analysis & PDE","Numerical analysis & computation"],"abstract":"Claims global strong solutions near equilibrium and a global-in-time vanishing-viscosity limit for coupled fluid-particle systems in critical Besov spaces.","claimed_result":"The authors claim uniform estimates for viscosity epsilon and convergence at rate O(epsilon), plus decay estimates.","assumptions_and_setting":"Near-equilibrium critical Besov data, with an additional lower-order Besov assumption for optimal decay.","caveat":"Near-equilibrium and regularity assumptions exclude an automatic large-data conclusion.","refs":["https://arxiv.org/abs/2609.17362v1"]},{"id":"2609.17513","kind":"paper","title":"Chern bounds and tangent geometry of polarized Calabi-Yau threefolds","rank":8,"url":"https://arxiv.org/abs/2609.17513v1","arxiv_id":"2609.17513","arxiv_version":"v1","published":"2026-09-15T17:50:18Z","categories":["math.AG","hep-th","math.CV"],"authors":["Atsushi Kanazawa"],"themes":["Geometry & topology","Algebra & number theory"],"abstract":"Uses jet bundles, tangent geometry, and projective duality to derive improved bounds for polarized Calabi-Yau threefolds.","claimed_result":"Claims a Chern-number inequality, improved Hodge-number bounds, a P^6 degree bound of 39, and tangent-variety normalization for m>=2.","assumptions_and_setting":"Calabi-Yau threefold X with very ample polarization H; d=H^3; P^6 result concerns nondegenerate embeddings.","caveat":"Tangent degree 1 for m=1 is conjectural and verified only for several families.","refs":["https://arxiv.org/abs/2609.17513v1"]}]}
+{
+  "schema": "arxiv-trending-math/v1",
+  "category": "math",
+  "window": "daily",
+  "date": "2026-09-16",
+  "title": "arXiv Trending Mathematics — Daily",
+  "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-09-16.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "2609.19126",
+      "kind": "paper",
+      "title": "Beyond Sendov's conjecture: the quadratic Tang--Zhang inequality",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.19126",
+      "arxiv_id": "2609.19126",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "math.CV"
+      ],
+      "authors": [
+        "Teng Zhang"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.19126"
+      ]
+    },
+    {
+      "id": "2609.19123",
+      "kind": "paper",
+      "title": "A proof of Chvátal's conjecture via a sharp correlation inequality",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.19123",
+      "arxiv_id": "2609.19123",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "math.CO",
+        "math.FA",
+        "math.PR"
+      ],
+      "authors": [
+        "Fan Chang",
+        "Hong Liu",
+        "Miao Liu"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.19123"
+      ]
+    },
+    {
+      "id": "2609.19115",
+      "kind": "paper",
+      "title": "Singularity of harmonic measure for finitely supported random walks",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.19115",
+      "arxiv_id": "2609.19115",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "math.DS",
+        "math.PR"
+      ],
+      "authors": [
+        "Petr Kosenko",
+        "Giulio Tiozzo"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.19115"
+      ]
+    },
+    {
+      "id": "2609.18934",
+      "kind": "paper",
+      "title": "A uniform effective André--Oort result",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.18934",
+      "arxiv_id": "2609.18934",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "math.NT",
+        "math.AG"
+      ],
+      "authors": [
+        "Guy Fowler"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.18934"
+      ]
+    },
+    {
+      "id": "2609.18919",
+      "kind": "paper",
+      "title": "Wehrl-type entropy problem for compact connected semisimple Lie groups",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.18919",
+      "arxiv_id": "2609.18919",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "math-ph",
+        "math.FA",
+        "math.RT"
+      ],
+      "authors": [
+        "Haonan Zhang"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.18919"
+      ]
+    },
+    {
+      "id": "2609.18913",
+      "kind": "paper",
+      "title": "A Walk From Free Probability to Matrix Discrepancy II: Weaver's Problem and the Kadison-Singer Conjecture",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.18913",
+      "arxiv_id": "2609.18913",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "cs.DS",
+        "math.FA"
+      ],
+      "authors": [
+        "Tarun Kathuria"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.18913"
+      ]
+    },
+    {
+      "id": "2609.19114",
+      "kind": "paper",
+      "title": "Hamiltonicity in graphs defined by primes and primitive elements",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.19114",
+      "arxiv_id": "2609.19114",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Yue-Feng She"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.19114"
+      ]
+    },
+    {
+      "id": "2609.19121",
+      "kind": "paper",
+      "title": "The non-spherical sup-norm problem for GL(n) and generalized spherical functions",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.19121",
+      "arxiv_id": "2609.19121",
+      "arxiv_version": "v1",
+      "published": "2026-09-16",
+      "categories": [
+        "math.NT",
+        "math.RT",
+        "math.SP"
+      ],
+      "authors": [
+        "Valentin Blomer",
+        "Gergely Harcos",
+        "Péter Maga",
+        "Djordje Milićević"
+      ],
+      "themes": [],
+      "abstract": "See source report.",
+      "claimed_result": "See source report.",
+      "assumptions_and_setting": "See source report.",
+      "caveat": "See source report.",
+      "refs": [
+        "https://arxiv.org/abs/2609.19121"
+      ]
+    }
+  ]
+}

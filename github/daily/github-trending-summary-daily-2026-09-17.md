@@ -4,84 +4,82 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-17 09:30 UTC |
+| Snapshot time (UTC) | 2026-09-17 15:40 UTC |
 | Scope | Daily |
 | Date range | 2026-09-17 through 2026-09-17 |
-| Ranking basis | Daily GitHub Trending star gains |
+| Ranking basis | Daily GitHub Trending star gains, ordered by stars gained in the window |
 
 ## Headline
 
-AI-agent infrastructure dominates today's GitHub momentum: code review, security auditing, agent skills, knowledge work, and research workflows all appear near the top. The second strong signal is practical local AI, from running MoE models on commodity hardware to generating voice and music.
+AI-agent infrastructure dominates today's list: security auditing, code review, browser control, research, knowledge work, and coding assistants occupy most of the high-momentum slots. The strongest non-agent signals are reverse engineering, local inference, desktop utilities, and AI voice tooling.
 
 ## Top Repositories
 
-1. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review) - Hybrid deterministic and LLM-agent code review built for Alibaba-scale use.**
+1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.**
 
-  **Language:** Go | **Stars gained in window:** +3,231 | **Total stars:** 33,242 | **Why notable:** The day's largest visible star gain, combining deterministic checks with line-level agent comments.
+  **Language:** JavaScript | **Stars gained in window:** +3,606 | **Total stars:** 9,787 | **Why notable:** Security auditing for coding agents.
 
-2. **[JustVugg/colibri](https://github.com/JustVugg/colibri) - Runs frontier mixture-of-experts models locally in pure C with zero dependencies.**
+2. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review) - A hybrid deterministic-plus-LLM code review tool with precise line-level comments and multi-language security rules.**
 
-  **Language:** C | **Stars gained in window:** +1,546 | **Total stars:** 35,340 | **Why notable:** It makes local inference on existing hardware the day's clearest systems-level trend.
+  **Language:** Go | **Stars gained in window:** +3,290 | **Total stars:** 34,058 | **Why notable:** Agentic code review and application security.
 
-3. **[Tencent/WeKnora](https://github.com/Tencent/WeKnora) - An LLM knowledge platform for RAG, autonomous reasoning, and self-maintaining wikis.**
+3. **[Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill) - CLI and extension that lets AI agents operate a real, logged-in browser without interrupting the user.**
 
-  **Language:** Go | **Stars gained in window:** +1,197 | **Total stars:** 25,828 | **Why notable:** It represents the move from document search toward agent-managed knowledge systems.
+  **Language:** TypeScript | **Stars gained in window:** +1,350 | **Total stars:** 3,850 | **Why notable:** Browser-use infrastructure for agents.
 
-4. **[abue-ammar/tinycast](https://github.com/abue-ammar/tinycast) - Native macOS launcher with hotkeys and clipboard history.**
+4. **[Tencent/WeKnora](https://github.com/Tencent/WeKnora) - An open LLM knowledge platform combining document RAG, autonomous reasoning, and a self-maintaining wiki.**
 
-  **Language:** Swift | **Stars gained in window:** +1,179 | **Total stars:** 5,857 | **Why notable:** A non-AI utility breaks into the top tier, showing continued demand for focused native desktop tools.
+  **Language:** Go | **Stars gained in window:** +1,123 | **Total stars:** 26,116 | **Why notable:** RAG and knowledge agents.
 
-5. **[NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) - Software reverse-engineering framework.**
+5. **[alphaXiv/OpenResearch](https://github.com/alphaXiv/OpenResearch) - Turns coding agents into research agents.**
 
-  **Language:** Java | **Stars gained in window:** +1,059 | **Total stars:** 78,123 | **Why notable:** Mature security tooling is surging alongside the new generation of agent-based audit tools.
+  **Language:** Rust | **Stars gained in window:** +940 | **Total stars:** 4,958 | **Why notable:** Agentic research workflows.
 
-6. **[alphaXiv/OpenResearch](https://github.com/alphaXiv/OpenResearch) - Turns coding agents into research agents.**
+6. **[NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) - A software reverse-engineering framework.**
 
-  **Language:** Rust | **Stars gained in window:** +1,017 | **Total stars:** 4,757 | **Why notable:** It extends the coding-agent pattern into literature and research workflows.
+  **Language:** Java | **Stars gained in window:** +912 | **Total stars:** 78,296 | **Why notable:** Security and reverse engineering.
 
-7. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - Multi-phase security audits with independently verified, machine-readable findings.**
+7. **[JustVugg/colibri](https://github.com/JustVugg/colibri) - A tiny pure-C engine that runs frontier mixture-of-experts models by streaming experts from disk.**
 
-  **Language:** JavaScript | **Stars gained in window:** +927 | **Total stars:** 8,595 | **Why notable:** Security auditing is being packaged as a reusable, verifiable agent skill rather than an opaque prompt.
+  **Language:** C | **Stars gained in window:** +872 | **Total stars:** 35,531 | **Why notable:** Local inference on constrained hardware.
 
-8. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents.**
+8. **[abue-ammar/tinycast](https://github.com/abue-ammar/tinycast) - A native macOS launcher with hotkeys and clipboard history.**
 
-  **Language:** JavaScript | **Stars gained in window:** +658 | **Total stars:** 95,716 | **Why notable:** Its momentum reflects a shift toward reusable operational playbooks for coding agents.
+  **Language:** Swift | **Stars gained in window:** +738 | **Total stars:** 5,999 | **Why notable:** Focused desktop productivity tooling.
 
-9. **[jamiepine/voicebox](https://github.com/jamiepine/voicebox) - Open-source AI voice studio for cloning, dictation, and creation.**
+9. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents.**
 
-  **Language:** TypeScript | **Stars gained in window:** +417 | **Total stars:** 54,659 | **Why notable:** Local and open creative AI remains a major adjacent growth area beyond coding.
+  **Language:** JavaScript | **Stars gained in window:** +680 | **Total stars:** 95,931 | **Why notable:** Reusable agent skills and workflows.
 
-10. **[multimodal-art-projection/YuE](https://github.com/multimodal-art-projection/YuE) - Music generation with symbolic planning, zero-shot covers, and agentic editing.**
+10. **[jamiepine/voicebox](https://github.com/jamiepine/voicebox) - An open-source AI voice studio for cloning, dictation, and creation.**
 
-  **Language:** Python | **Stars gained in window:** +332 | **Total stars:** 9,532 | **Why notable:** It shows agentic control moving into multimodal music production.
+  **Language:** TypeScript | **Stars gained in window:** +665 | **Total stars:** 54,806 | **Why notable:** Generative audio tooling.
 
-11. **[roboflow/supervision](https://github.com/roboflow/supervision) - Reusable computer-vision tools.**
+11. **[anthropics/claude-code](https://github.com/anthropics/claude-code) - An agentic coding tool in the terminal for codebase work, routine tasks, explanations, and Git workflows.**
 
-  **Language:** Python | **Stars gained in window:** +260 | **Total stars:** N/A - not available from GitHub in this snapshot | **Why notable:** Computer vision remains represented, but its momentum trails the agent and local-inference cluster.
+  **Language:** TypeScript | **Stars gained in window:** +538 | **Total stars:** 145,841 | **Why notable:** Terminal coding agents.
 
-12. **[anthropics/claude-code](https://github.com/anthropics/claude-code) - Agentic coding tool that works from the terminal and handles routine development workflows.**
+12. **[anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) - Open-source plugins primarily intended for knowledge workers using Claude Cowork.**
 
-  **Language:** TypeScript | **Stars gained in window:** +165 | **Total stars:** 145,728 | **Why notable:** Even with a smaller daily gain than newer projects, it is the largest established coding-agent repository in the list.
+  **Language:** Python | **Stars gained in window:** +287 | **Total stars:** 24,466 | **Why notable:** Agent plugins for knowledge work.
 
 ## Trending Technologies and Themes
 
-- **Coding-agent infrastructure:** Alibaba Open Code Review, Anthropic Claude Code, Cline, and Addy Osmani's Agent Skills show that the ecosystem is moving from chat interfaces toward executable workflows, reusable skills, and repository-aware automation.
-- **Security as an agent workflow:** Cloudflare's Security Audit Skill and NSA Ghidra put independently checkable auditing and reverse engineering at the center of today's security signal.
-- **Local and efficient inference:** Colibri's pure-C, zero-dependency MoE runtime is the strongest evidence that developers want capable models to run on hardware they already own.
-- **Knowledge and research agents:** Tencent WeKnora and alphaXiv OpenResearch apply agents to RAG, wikis, and research rather than only code generation.
-- **Creative AI:** Voicebox and YuE extend the same open-source momentum into voice and music creation.
-- **Languages:** Among the 12 listed repositories: TypeScript 3, Go 2, Python 2, JavaScript 2, and one each in C, Swift, Rust, and Java (counts overlap only where a repository has one primary language; the listed total is 12).
+- **Coding agents and agent infrastructure:** Six of the 12 listed repositories directly target coding agents, agent skills, browser use, research, or knowledge-work plugins: cloudflare/security-audit-skill, Tencent/BrowserSkill, alphaXiv/OpenResearch, addyosmani/agent-skills, anthropics/claude-code, and anthropics/knowledge-work-plugins.
+- **Security and correctness:** alibaba/open-code-review, cloudflare/security-audit-skill, and NationalSecurityAgency/ghidra show security moving into both AI-assisted development and established reverse-engineering workflows.
+- **Knowledge and local AI:** Tencent/WeKnora brings RAG and autonomous reasoning together, while JustVugg/colibri emphasizes running MoE models on existing hardware.
+- **Languages:** TypeScript 3, Go 3, JavaScript 2, and Rust, Java, C, Swift, and Python 1 each among the 12 entries.
 
 ## Notable Shifts
 
-The notable shift is from individual AI applications toward agent operating infrastructure: skills, audit protocols, research loops, and code-review systems. At the same time, Colibri and the creative repositories show a parallel push to make advanced AI local, efficient, and usable outside hosted chat products.
+The notable shift is from standalone AI applications toward operational layers around agents: auditable skills, code-review pipelines, browser control, research workflows, and plugins. Local inference and security remain visible, but today's momentum is concentrated in making agents useful and governable inside existing developer workflows.
 
 ## Takeaway
 
-Today's list suggests GitHub's hottest activity is concentrated in the layer around AI models: agents that execute work, skills that constrain and verify them, and runtimes that make inference cheaper or local. Security and knowledge management are especially prominent application areas, while voice and music indicate the pattern is spreading beyond software engineering.
+GitHub's daily signal is less about one new model than about the surrounding agent stack. Teams are competing to make agents safer, more connected to real tools and browsers, and more capable of handling specialized workflows; the continued appearance of Ghidra, local inference, and desktop utilities suggests the broader developer ecosystem is still active beyond AI agents.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - today](https://github.com/trending?since=daily).
-- **Corroboration:** GitHub REST API repository metadata for the listed repositories, queried at `https://api.github.com/repos/{owner}/{repo}`.
-- **Method note:** Ranking and daily star gains come from the matching GitHub Trending daily view captured at 2026-09-17 09:30 UTC. Total-star counts and descriptions were corroborated with the GitHub REST API; values unavailable in the returned metadata are labeled accordingly.
+- **Primary source:** https://github.com/trending?since=daily
+- **Corroboration:** GitHub REST API repository metadata for each listed repository (`GET https://api.github.com/repos/{owner}/{repo}`), retrieved at 2026-09-17 15:40 UTC.
+- **Method note:** The daily star-gain values and ordering come from GitHub's matching daily Trending view; current total stars, descriptions, languages, and fork status were corroborated with the REST API. Forks, mirrors, courses, and list-only repositories were excluded.

@@ -1,112 +1,112 @@
-# arXiv Trending AI — 2026-09-16
+# arXiv Trending AI — 16 September 2026
 
-Snapshot: 2026-09-16 15:10 UTC. Window: the latest arXiv announcement batch, represented by papers submitted on 2026-09-15 UTC. arXiv does not publish an official trending chart; this is an inferred ranking using recency, corroborated search attention, cross-list breadth, public code/project pages, and reported evaluation strength. Semantic Scholar citation lookups were attempted but rate-limited (HTTP 429), so no citation totals are claimed.
-
-Headline: Today's strongest signal is a shift from isolated model capability toward operational reliability: multi-agent coordination and scientific-agent feedback loops sit alongside abstention, verified autonomy, and inference systems. Robotics and controllable video provide a second cluster, emphasizing structured intermediate state rather than raw pixels.
+Snapshot: 2026-09-17 15:10 UTC. Window: the latest arXiv announcement batch, papers first submitted on 2026-09-16. arXiv does not publish an official trending chart; this is an inferred ranking, not a most-read or most-downloaded list. Because these papers are one day old, Semantic Scholar citation signals are sparse and mostly unavailable; the ordering therefore emphasizes cross-list breadth, substantive evaluations, public code/data/project pages, and independent technical attention where found.
 
 ## Top papers (ranked)
 
-### 1. [Agentic Societies Need a Social Harness](https://arxiv.org/abs/2609.17527v1)
-- **Abstract:** The paper studies multi-agent societies operating across trust boundaries and proposes a social harness for detecting, preventing, and investigating failures in inter-agent communication.
-- **Authors:** Tapan Chugh, Vidushi Singh, Krish Jain, Arvind Krishnamurthy, Ratul Mahajan
-- **arXiv:** `2609.17527v1` (published 2026-09-15 17:57 UTC; categories: `cs.MA`, `cs.AI`, `cs.NI`)
-- **Evidence for ranking:** Strongest independent search visibility in the checked set, corroborated by an author-hosted PDF and multiple paper-index pages; cross-listed in multiagent systems and AI; concrete architecture and security framing.
-- **Claimed contribution:** The paper argues that personal agent harnesses are insufficient and proposes a layered social-harness architecture; source: arXiv abstract.
-- **Caveat:** The abstract describes experiments and an architecture proposal, but the long-run effectiveness and deployment cost of the proposed controls remain open.
-- **Announcement type:** new submission, announcement batch 2026-09-16
-- **Themes:** Agents & reasoning; Safety & alignment; Evaluation & benchmarks
+### 1. [ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments](https://arxiv.org/abs/2609.19134)
+- **Abstract:** ScienceIDE turns scientific software repositories into executable environments for task generation, agent interaction, and scientific verification, then uses verified trajectories to train and evaluate scientific coding agents.
+- **Authors:** Hejia Geng, Zesen Huang, Haoyang Li, Wenbin Li, Koutian Wu, et al.
+- **arXiv:** `2609.19134v1` (published 2026-09-16 17:55 UTC; categories: `cs.CL`, `cs.CY`)
+- **Evidence for ranking:** Semantic Scholar returned a paper record but no citation totals yet; ranked first because it proposes reusable agent-learning infrastructure, reports multiple trained model sizes and held-out transfer, has public code, and received independent technical discussion shortly after posting.
+- **Claimed contribution:** The authors present ScienceIDE as a substrate that converts scientific code into programmable environments for supervised fine-tuning, reinforcement learning, and evaluation, with positive transfer claims for PhAI-IDE models.
+- **Caveat:** The abstract does not establish how broad the held-out scientific-code coverage is or fully disentangle scientific-domain training from general data and model-scale effects.
+- **Announcement type:** new submission, 2026-09-16 batch
+- **Themes:** Agents & reasoning; Data & synthetic data; Training & adaptation
 
-### 2. [Modality-Autoregressive World-Action Models](https://arxiv.org/abs/2609.17524v1)
-- **Abstract:** ModAR autoregressively predicts multiple future modalities—such as point tracks, DINO features, and depth—before actions, improving world-action-model performance without pretraining.
-- **Authors:** Adam Hung, Bardienus P. Duisterhof, Deva Ramanan, Jeffrey Ichnowski
-- **arXiv:** `2609.17524v1` (published 2026-09-15 17:56 UTC; categories: `cs.RO`)
-- **Evidence for ranking:** Project page, arXiv HTML rendering, Hugging Face paper listing, and independent GitHub discussion were found; reports 75% vs. 72% observed average success against a video-initialized baseline and roughly 20x fewer training FLOPs.
-- **Claimed contribution:** The authors introduce the first WAM that sequentially denoises multiple future modalities before action prediction; source: arXiv abstract.
-- **Caveat:** The abstract reports three real-world bimanual tasks and selected modality studies; broader tasks, hardware, and distribution shifts are not established here.
-- **Announcement type:** new submission, announcement batch 2026-09-16
-- **Themes:** Robotics & control; Multimodal & vision-language; Training & adaptation
+### 2. [PointZero: 3D Point Track Completion for Learning Transferable 3D Dynamics](https://arxiv.org/abs/2609.19142)
+- **Abstract:** PointZero pretrains a 3D dynamics model by completing sparse point tracks, avoiding robot action labels and enabling transfer to action-conditioned dynamics prediction and imitation learning.
+- **Authors:** Bardienus P. Duisterhof, Kaifeng Zhang, Adam Hung, Bowen Wen, Stan Birchfield, et al.
+- **arXiv:** `2609.19142v1` (published 2026-09-16 17:59 UTC; categories: `cs.CV`, `cs.RO`)
+- **Evidence for ranking:** No current Semantic Scholar citation count was returned; ranked highly for cross-list relevance, a 2.9-million-frame dataset, released checkpoints/training recipe, and reported gains on a real/simulated manipulation suite. An arXiv HTML page and project site make the technical claims checkable.
+- **Claimed contribution:** The paper claims that point-track completion can supply a transferable 3D dynamics prior from non-robot data, with reported improvement or parity on 6 of 7 manipulation tasks after fine-tuning.
+- **Caveat:** The strongest evidence is downstream fine-tuning after synthetic pretraining; how well the prior transfers beyond the reported benchmarks and data distribution remains open.
+- **Announcement type:** new submission, 2026-09-16 batch
+- **Themes:** Robotics & control; Multimodal & vision-language; Data & synthetic data
 
-### 3. [ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents](https://arxiv.org/abs/2609.17523v1)
-- **Abstract:** ScienceBuddy is a scientific-agent workspace in which researcher feedback and execution evidence evolve the harness while reinforcement learning improves the model under that harness.
-- **Authors:** Shuhan Xue, Jianyuan Zhong, Ziyuan Nan, Wenbin Li, Zhaochen Yu et al.
-- **arXiv:** `2609.17523v1` (published 2026-09-15 17:55 UTC; categories: `cs.AI`, `cs.CL`)
-- **Evidence for ranking:** Search results include the arXiv HTML page, a public GitHub repository, and a project website; the paper spans four scientific task families and releases a research product rather than only a benchmark result.
-- **Claimed contribution:** The paper introduces “recursive-in-recursive” self-improvement, coupling harness evolution with model learning; source: arXiv abstract.
-- **Caveat:** Evidence is presented as case studies and benchmark cases; sustained gains, reproducibility, and generalization beyond the released workflow remain uncertain.
-- **Announcement type:** new submission, announcement batch 2026-09-16
-- **Themes:** Agents & reasoning; Training & adaptation; Data & synthetic data
+### 3. [Monitoring and Discovering Reward Hacking with Internal Representations during LLM Evaluations](https://arxiv.org/abs/2609.19101)
+- **Abstract:** The paper studies whether internal representation directions can detect and discover reward hacking in frontier open-source LLM evaluations, including online prediction of later hacking behavior.
+- **Authors:** Leon Bergen, Usha Bhalla, Andrew Lee, Barak Widawsky, Linas Nasvytis, et al.
+- **arXiv:** `2609.19101v1` (published 2026-09-16 17:31 UTC; categories: `cs.CL`, `cs.LG`)
+- **Evidence for ranking:** Semantic Scholar returned no citation totals; ranked for direct safety relevance, evaluation across several models and benchmarks, and unusually concrete reported rates (including 57.2% of GLM 5.2 DeepSWE rollouts and 73% on SWE-bench). Independent search results also connected it to the current reward-hacking discussion.
+- **Claimed contribution:** The authors report that simple difference-of-means vectors can represent and monitor reward hacking, sometimes predict it before the action, and expose behaviors missed by LLM monitors.
+- **Caveat:** The findings are reported for selected open models and evaluation harnesses; transfer to other model families, hidden internal states, and adversarially adaptive systems is not established by the abstract.
+- **Announcement type:** new submission, 2026-09-16 batch
+- **Themes:** Safety & alignment; Interpretability; Evaluation & benchmarks
 
-### 4. [When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control](https://arxiv.org/abs/2609.17516v1)
-- **Abstract:** CoSQ makes answer commitment conditional on an explicit self-assessment of the information required, enabling tunable abstention.
-- **Authors:** Ali Şenol
-- **arXiv:** `2609.17516v1` (published 2026-09-15 17:52 UTC; categories: `cs.CL`, `cs.AI`)
-- **Evidence for ranking:** Multiple independent search results and an external explainer reproduce the paper's headline result; the study covers 11 model families, 17 conditions, TruthfulQA, and a secondary Natural Questions evaluation.
-- **Claimed contribution:** Grounded-CoSQ at the selected threshold reduces wrong commitments from 13.1% to 8.9% while raising answered accuracy from 86.9% to 89.7%; source: arXiv abstract, reported by the authors.
-- **Caveat:** The main validation uses an 817-item TruthfulQA multiple-choice set and prompt-only interventions; real-world referral costs and adversarial calibration are not resolved.
-- **Announcement type:** new submission, announcement batch 2026-09-16
-- **Themes:** Safety & alignment; Evaluation & benchmarks; Agents & reasoning
+### 4. [In-Context Robot Learning with VLM Agents](https://arxiv.org/abs/2609.19138)
+- **Abstract:** GPT-Policy combines a visual context compiler, VLM action proposals, and a constrained controller so robots can adapt from demonstrations and feedback without gradient updates or task-specific parameter changes.
+- **Authors:** Dongzhou Cheng, Taoran Yi, Ye Fang, Xingwu Zhang, Fan Feng, et al.
+- **arXiv:** `2609.19138v1` (published 2026-09-16 17:58 UTC; categories: `cs.CV`, `cs.RO`)
+- **Evidence for ranking:** Semantic Scholar returned a record but no citation totals; ranked for cross-list breadth, real-robot evaluation, controlled context ablations, and public project/code pages. The abstract reports gains from human video demonstrations and aligned action references.
+- **Claimed contribution:** The authors position GPT-Policy as an empirical framework for translating general VLM capabilities into verifiable physical behavior through context compilation and constrained execution.
+- **Caveat:** The abstract describes reliability and limitations but does not quantify robustness across broad task families; commercial-model dependence and contact-sensitive failure modes remain concerns.
+- **Announcement type:** new submission, 2026-09-16 batch
+- **Themes:** Robotics & control; Agents & reasoning; Multimodal & vision-language
 
-### 5. [JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management](https://arxiv.org/abs/2609.17475v1)
-- **Abstract:** JustFit combines compressed KV execution, state-aware component swapping, and state-preserving transitions to serve very long contexts on a 24 GiB laptop.
-- **Authors:** Yuhua Chen
-- **arXiv:** `2609.17475v1` (published 2026-09-15 17:15 UTC; categories: `cs.AI`, `cs.PF`)
-- **Evidence for ranking:** ArXiv search coverage was amplified by independent Chinese and GitHub research digests; the abstract reports 212,992 completed context positions versus a 30,720-position baseline and 29/30 AIME 2026 answers.
-- **Claimed contribution:** The paper presents an MLX runtime whose state-management mechanisms expand local serving capacity without depending on weight quantization; source: arXiv abstract.
-- **Caveat:** Capacity and benchmark numbers are tied to one M4 Pro laptop, one model configuration, and separate test workloads; portability and latency-quality tradeoffs need independent replication.
-- **Announcement type:** new submission, announcement batch 2026-09-16
+### 5. [Objective vs. Search: Decomposing What Makes a Good Tokeniser](https://arxiv.org/abs/2609.19145)
+- **Abstract:** By separating tokeniser objective from search procedure through two new algorithms, the paper finds that bottom-up search, rather than compression versus likelihood objective, usually drives lower bits-per-byte while showing no consistent BLiMP advantage.
+- **Authors:** Ahmetcan Yavuz, Clara Meister, Tiago Pimentel
+- **arXiv:** `2609.19145v1` (published 2026-09-16 17:59 UTC; categories: `cs.CL`, `cs.AI`)
+- **Evidence for ranking:** No Semantic Scholar citation totals were available; ranked for a clean 2×2 experimental design, coverage of model sizes/vocabulary/domain settings, and an EMNLP 2026 acceptance noted in the arXiv comment.
+- **Claimed contribution:** The authors disentangle tokeniser optimisation objective from search procedure and report that search direction dominates bits-per-byte results, while BLiMP does not show a consistent design relationship.
+- **Caveat:** The conclusions are metric- and setup-dependent: bits-per-byte and BLiMP need not predict downstream multilingual or reasoning performance.
+- **Announcement type:** new submission, 2026-09-16 batch
+- **Themes:** Training & adaptation; Evaluation & benchmarks
+
+### 6. [A Zeroth-Order Paradigm for LLM Preference Alignment](https://arxiv.org/abs/2609.19144)
+- **Abstract:** ComPO is a comparison-based, zeroth-order preference-alignment method that extracts directional information from preference pairs without directly optimising a differentiable preference loss.
+- **Authors:** Peter Chen, Xi Chen, Wotao Yin, Tianyi Lin
+- **arXiv:** `2609.19144v1` (published 2026-09-16 17:59 UTC; categories: `cs.CL`, `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** Semantic Scholar returned a paper record but no citation totals; ranked for three-category coverage, formal convergence/performance guarantees, and experiments spanning Mistral, Llama, Gemma-2, Qwen3, and Gemma-3.
+- **Claimed contribution:** The authors claim that offline and online ComPO can mitigate likelihood displacement and improve length-controlled win rates over direct alignment baselines.
+- **Caveat:** The guarantees depend on smoothness, gradient sparsity, coverage, and reward-accuracy assumptions; the abstract does not show whether these assumptions hold broadly in production preference data.
+- **Announcement type:** new submission, 2026-09-16 batch
+- **Themes:** Safety & alignment; Training & adaptation
+
+### 7. [How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents](https://arxiv.org/abs/2609.19107)
+- **Abstract:** The paper reports that recursive depth, model growth, and boundary operators can alter pretraining scaling exponents and improve compute efficiency, including a 7.4B growth model matching GPT-3 13B on CORE with roughly 20× less compute.
+- **Authors:** Zixi Chen, Akshay Vegesna, Samip Dahal, Andrew Gordon Wilson
+- **arXiv:** `2609.19107v1` (published 2026-09-16 17:36 UTC; category: `cs.LG`)
+- **Evidence for ranking:** Semantic Scholar returned a record but no citation totals; ranked for a potentially consequential challenge to standard scaling assumptions and explicit compute comparisons. The evidence is currently only the paper's own reported experiments.
+- **Claimed contribution:** The authors argue that usable computational depth, rather than parameter count alone, can produce scale-dependent efficiency gains through looping and related architectural interventions.
+- **Caveat:** The abstract reports a narrow set of architectures and benchmarks; independent reproduction and broader model/data regimes are needed before treating the scaling claim as general.
+- **Announcement type:** new submission, 2026-09-16 batch
 - **Themes:** Efficient inference & systems; Training & adaptation
 
-### 6. [LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers](https://arxiv.org/abs/2609.17184v1)
-- **Abstract:** LoopSpec uses early recurrent states as draft predictions and overlaps future-token drafting with current-token verification without an auxiliary draft model.
-- **Authors:** SangLyul Cho, Langqing Cui, Sehoon Kim, Dongsu Han, Insu Han et al.
-- **arXiv:** `2609.17184v1` (published 2026-09-15 13:43 UTC; categories: `cs.LG`, `cs.CL`)
-- **Evidence for ranking:** Independent search results and an explainer appeared in the snapshot; the abstract reports up to 6.83x inference speedup across reasoning and coding benchmarks and claims lossless decoding under greedy and sampling regimes.
-- **Claimed contribution:** The authors provide a training-free, pipelined self-speculative decoder tailored to recurrent-depth/looped Transformers; source: arXiv abstract.
-- **Caveat:** The benefit depends on looped architectures and proposal-depth behavior; the abstract does not establish comparable gains for standard non-looped Transformers or production serving.
-- **Announcement type:** new submission, announcement batch 2026-09-16
-- **Themes:** Efficient inference & systems; Training & adaptation
-
-### 7. [PhysStream: Streaming Physics-Grounded Video Generation with Structured Scene Memory and Fine-Grained Motion Control](https://arxiv.org/abs/2609.17521v1)
-- **Abstract:** PhysStream uses online scene memory and sparse velocity-increment controls for interactive, mid-generation manipulation of multi-object tabletop video dynamics.
-- **Authors:** Chuhao Chen, Peter Wonka, Chaoyang Wang, Chen Wang, Qiao Feng et al.
-- **arXiv:** `2609.17521v1` (published 2026-09-15 17:55 UTC; categories: `cs.CV`, `cs.AI`, `cs.GR`)
-- **Evidence for ranking:** Cross-listed in vision and AI, has a project website and DOI, and reports 33% lower motion distribution distance, 12% lower trajectory error, and over 85% human preference in in-the-wild comparisons.
-- **Claimed contribution:** The paper introduces a causal video-generation system that conditions on structured scene memory and physical velocity increments; source: arXiv abstract.
-- **Caveat:** Quantitative gains are reported largely on synthetic tabletop benchmarks; physical consistency outside that scene family is not established.
-- **Announcement type:** new submission, announcement batch 2026-09-16
-- **Themes:** Multimodal & vision-language; Robotics & control; Training & adaptation
-
-### 8. [ENCP: Episode-Normalized Conformal Prediction for Vision-and-Language Navigation](https://arxiv.org/abs/2609.17499v1)
-- **Abstract:** ENCP calibrates one normalized nonconformity score per navigation episode to provide step-level coverage under within-episode dependence.
-- **Authors:** Vicky Feliren, A. Taufiq Asyhari, Muhamad Risqi U. Saputra
-- **arXiv:** `2609.17499v1` (published 2026-09-15 17:42 UTC; categories: `cs.LG`, `cs.AI`, `cs.RO`)
-- **Evidence for ranking:** Broad cross-list coverage and a formal coverage guarantee are the main signals; the paper evaluates four VLN policies, three scores, and two datasets.
-- **Claimed contribution:** The authors propose a model-agnostic uncertainty estimator that supports deferral to a stronger predictor or human assistance; source: arXiv abstract.
-- **Caveat:** The guarantee depends on exchangeable calibration and test episodes; deployment conditions may violate those assumptions.
-- **Announcement type:** new submission, announcement batch 2026-09-16
-- **Themes:** Evaluation & benchmarks; Safety & alignment; Robotics & control
+### 8. [Cognitive Extensions for Dual-Process Language Agents: Memory and Self-Reflection in Interactive Environments](https://arxiv.org/abs/2609.19128)
+- **Abstract:** Adding adaptive episodic memory and execution-time self-reflection to a dual-process agent improves ScienceWorld score, success rate, and successful-step efficiency, with self-reflection the stronger standalone module.
+- **Authors:** João Meneses dos Santos, Arlindo L. Oliveira
+- **arXiv:** `2609.19128v1` (published 2026-09-16 17:50 UTC; categories: `cs.AI`, `cs.LG`, `cs.MA`)
+- **Evidence for ranking:** Semantic Scholar returned no citation totals; ranked for a clean four-way ablation and explicit quantitative results (mean final score 64.62, success rate 43.17%, and 19.33 successful steps) on an interactive benchmark.
+- **Claimed contribution:** The authors find that runtime validation and corrective intervention appear to be the dominant bottleneck in this setting, while memory helps more once the execution loop is stable.
+- **Caveat:** Results come from one benchmark and one agent substrate; the relative value of memory versus reflection may change with environment observability and task horizon.
+- **Announcement type:** new submission, 2026-09-16 batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks; Retrieval & knowledge
 
 ## Trending Research Themes
 
-- **Agent infrastructure is becoming a first-class research object.** Social harnesses, harness/model co-evolution, and abstention all treat the surrounding control loop—not only the base model—as the reliability bottleneck (Chugh et al.; Xue et al.; Şenol).
-- **Verification is moving closer to execution.** ENCP gives episode-level uncertainty coverage for navigation, while the social-harness paper addresses invalid or malicious messages across trust boundaries (Feliren et al.; Chugh et al.).
-- **Structured intermediate state is replacing raw-pixel dependence.** ModAR predicts geometry/semantic/motion modalities before actions, and PhysStream maintains scene memory and physical controls rather than relying only on pixels (Hung et al.; Chen et al.).
-- **Inference efficiency is increasingly systems-oriented.** JustFit manages state lifetime on a laptop, while LoopSpec overlaps draft and verification computation inside looped models (Chen; Cho et al.).
+- **Agent learning is moving toward executable environments and runtime control.** ScienceIDE treats scientific repositories as training/evaluation environments, while the cognitive-extensions paper and GPT-Policy focus on execution-time verification, memory, and feedback rather than static prompting alone.
+- **Embodied AI is exploiting richer supervision than robot action labels.** PointZero uses 3D point-track completion, GPT-Policy uses demonstrations and interaction feedback, and Dreaming the Sound of Contact uses generated video/audio to shape force-aware manipulation. Together these papers point toward multimodal and web-scale pretraining for robotics, but not yet toward reliable general-purpose autonomy.
+- **Safety work is becoming more mechanistic and operational.** Reward-hacking probes target internal representations and online detection, while ComPO targets the optimisation dynamics that can distort preference alignment. Both expose a gap between benchmark scores and the mechanisms producing them.
+- **Efficiency is being attacked at multiple layers.** The scaling-exponent paper changes architecture/depth, and the tokeniser paper separates search from objective. These are complementary attempts to improve the compute-to-capability relationship before simply scaling parameters.
 
 ## Open Problems and Research Directions
 
-- **Author-stated:** Agentic societies still need practical social-harness mechanisms for invalid-message detection, consequences, and coordination across partially aligned principals (Chugh et al.). Direction: evaluate the proposed layers in adversarial, heterogeneous multi-agent environments with measurable intervention cost.
-- **Author-stated:** ScienceBuddy presents case studies rather than a settled recipe for continual scientific improvement (Xue et al.). Direction: run long-horizon, blinded comparisons of harness-only, model-only, and coupled updates across laboratories and task families.
-- **Evidence-tied:** CoSQ and ENCP rely on calibration assumptions and controlled evaluation settings (Şenol; Feliren et al.). Direction: test abstention and coverage under distribution shift, strategic users, correlated errors, and explicit human-review budgets.
-- **Evidence-tied:** ModAR and PhysStream show gains in selected embodied/video settings (Hung et al.; Chen et al.). Direction: measure transfer to new embodiments, longer horizons, non-tabletop dynamics, and real-world interventions.
-- **Evidence-tied:** JustFit and LoopSpec report architecture- or hardware-specific efficiency gains (Chen; Cho et al.). Direction: reproduce end-to-end cost, throughput, and quality on multiple accelerators and standard serving stacks.
+- **Validate transfer beyond curated environments.** ScienceIDE and the cognitive-agent study should be tested on held-out scientific domains and interactive environments with different tool interfaces; this would separate reusable agent principles from benchmark-specific scaffolding.
+- **Measure embodied robustness under distribution shift.** PointZero and GPT-Policy report promising downstream results, but follow-up work should evaluate unseen object geometries, contact dynamics, lighting, camera layouts, and failure recovery, with matched real-world data budgets.
+- **Stress-test internal reward-hacking monitors against adaptation.** The reward-hacking paper's vectors should be evaluated on models trained to evade probes, on closed models where activations are unavailable, and across non-software tasks; otherwise monitor performance may reflect dataset regularities.
+- **Reproduce compute-efficiency and tokenisation claims at scale.** The scaling and tokeniser papers motivate matched-budget studies across more architectures, languages, data mixtures, and downstream reasoning tasks, with independently audited training compute.
+- **Connect alignment guarantees to realistic preference coverage.** ComPO's theory relies on coverage and oracle assumptions. A useful next experiment is to estimate those assumptions on noisy, long-form, multi-objective human preference data and compare against length-controlled and adversarial evaluations.
 
 ## Takeaway
 
-The most consequential pattern is operational: papers are designing harnesses, uncertainty controls, memory systems, and verifiable execution paths around models. The evidence is promising but mostly preprint-scale—small task suites, selected hardware, or controlled assumptions—so today's ordering should be read as an inferred attention/relevance snapshot, not a popularity or validity verdict.
+The strongest supported pattern in this batch is a shift from isolated model capability toward systems that make agents trainable, verifiable, and deployable: executable scientific environments, runtime monitors, and richer embodied supervision. The most consequential claims—large compute savings, broad transfer, and robust reward-hacking detection—are still preliminary because the papers are new, citation signals are effectively absent, and independent replication has not yet accumulated.
 
 ## Method and sources
 
-- Window: latest daily arXiv announcement batch, snapshot 2026-09-16 15:10 UTC; candidate submissions were retrieved from the arXiv API across `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`.
-- Ranking: inferred from corroborated independent search results, cross-list breadth, project/code/DOI availability, and concrete evaluation signals. Semantic Scholar was queried but returned HTTP 429, so citation metrics are unavailable rather than guessed.
-- Primary source: each linked arXiv abstract page. Corroborating sources include author project pages, GitHub repositories/discussions, Hugging Face paper listings, and independent search-indexed explainers where noted.
+- Window: latest available arXiv announcement batch for 2026-09-16; snapshot 2026-09-17 15:10 UTC.
+- Core categories queried through the arXiv API: `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`.
+- Candidate metadata and abstracts: arXiv API and linked abstract pages.
+- Corroboration: Semantic Scholar Graph API batch lookup for the ten leading candidates; most returned no citation totals because they are newly posted. Independent search was used only where it surfaced substantive discussion or project pages.
+- Ranking is inferred. It is not an official arXiv popularity ranking and does not claim readership, downloads, or citation gains during the window.

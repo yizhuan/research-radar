@@ -1,98 +1,100 @@
 # arXiv Trending Physics — 17 September 2026
 
-Headline: Today's strongest inferred signals cluster around experimentally actionable infrastructure: JWST imaging, quantum/classical fiber networks, high-power laser secondary beams, and detector-background control. The most consequential claims remain preliminary because this is a fresh announcement batch and arXiv supplies no official trending or readership chart.
+## Headline
+
+The strongest pattern in the latest announcement batch is physics moving toward scalable, data-intensive experiments and computation: Euclid cluster finding, low-power semiconductor qubits, photonic tests of quantum resources, solar-wind microphysics, and neural surrogates for fluid dynamics. This is an inferred shortlist of notable papers, not an official arXiv popularity ranking.
 
 ## Top papers (ranked)
 
-### 1. [Entanglement swapping across a five-node relay in a multiplexed quantum-classical network](https://arxiv.org/abs/2609.18899)
-- **Abstract:** The authors report entanglement swapping across a five-node relay connected by four 10-km fibers while carrying 10-Gbps classical data on the same fibers.
-- **Authors:** Andrew R. Cameron, Jordan M. Thomas, Alexandru Macridin, Si Xie, Raju Valivarthi, et al.
-- **arXiv:** `2609.18899v1` (published 16 September 2026 16:38 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** No citation counts are yet meaningful for this v1. Ranked highly because the abstract reports a concrete multi-node demonstration, simultaneous quantum/classical transmission, four long-distance fiber segments, and a Fermilab report number.
-- **Claimed result:** Entanglement swapping was demonstrated over a maximum 40 km total fiber length while simultaneously transmitting 10-Gbps classical data; the authors characterize the fidelity–Raman-noise trade-off.
-- **Evidence type:** experimental; time-bin entangled photons, dense-wavelength-division multiplexing, four 10-km fibers, and a five-node relay.
-- **Caveat:** The abstract reports a demonstration and noise characterization, not a deployed repeater network or fault-tolerant quantum communication.
+### 1. [Euclid: Galaxy cluster detection through the weak lensing effect - algorithm assessment and selection](https://arxiv.org/abs/2609.20571)
+- **Abstract:** A blind comparison of nine weak-lensing cluster-finding algorithms on 1,200 deg² of Euclid-like simulations selects four complementary methods whose combination is projected to detect about 2,500 clusters in Euclid Data Release 1.
+- **Authors:** A. Manjón-García, G. Leroy, S. Pires, J. M. Diego, C. Giocoli, et al. (Euclid Collaboration)
+- **arXiv:** `2609.20571v1` (published 2026-09-17 15:30 UTC; categories: `astro-ph.CO`)
+- **Evidence for ranking:** Large Euclid collaboration, direct relevance to an imminent survey data release, explicit algorithm benchmark, and independent search visibility; Semantic Scholar citation counts were unavailable because its API rate-limited the lookup.
+- **Claimed result:** Individual methods reach about 10% completeness at 90% purity in the stated selection, while their combination exceeds 70% completeness for low-redshift, high-mass clusters; the authors extrapolate roughly 2,500 detections for Euclid DR1.
+- **Evidence type:** Computational/forecast; DEMNUni-Cov simulations designed to mimic Euclid weak-lensing data.
+- **Caveat:** Performance is simulation-based and depends on the adopted signal-to-noise, redshift-mass selection, matching procedures, and extrapolation to real survey systematics.
 - **Announcement type:** new submission, 17 September 2026 batch.
-- **Themes:** Quantum information; Instrumentation & detectors; Computational & data methods
+- **Themes:** Cosmology & gravitation; Instrumentation & detectors; Computational & data methods
 
-### 2. [A Binary Flux Calibrator Reveals the Scientific Potential of Short-integration JWST MIRI Imaging to Directly Detect sub-Jupiter Exoplanets](https://arxiv.org/abs/2609.19133)
-- **Abstract:** Short, noncoronagraphic JWST MIRI exposures detected a companion to the flux calibrator HD 101452 and imply that 17–42-second observations could detect some sub-Jupiter planets at Solar-System-like separations.
-- **Authors:** Rachel Bowens-Rubin, Mary Anne Limbach, Alexander Venner, Kyle Franson, Emily K. Pass, et al.
-- **arXiv:** `2609.19133v1` (published 16 September 2026 17:55 UTC; categories: `astro-ph.EP`, `astro-ph.SR`)
-- **Evidence for ranking:** No established citation momentum for this new v1. Ranked for a direct JWST detection, a calibration-program data reuse, cross-listing across exoplanet and stellar astrophysics, and a specific observing-efficiency implication.
-- **Claimed result:** A companion was detected in four MIRI filters at 1.3 arcsec separation; measured contrast curves suggest short integrations may reach sub-Jupiter masses for a subset of nearby bright stars.
-- **Evidence type:** observational; JWST MIRI 15–25.5 μm imaging and PSF subtraction with a flux-matched reference.
-- **Caveat:** The planet-sensitivity conclusion is a prediction based on measured contrast curves and a subset of favorable nearby systems, not a direct detection of a sub-Jupiter planet.
+### 2. [Experimental certification of the nonlocal advantages of quantum imaginarity](https://arxiv.org/abs/2609.19625)
+- **Abstract:** Photonic two-qubit experiments observe violations of an l1-norm imaginarity inequality, experimentally certifying a nonlocal advantage of quantum imaginarity and comparing its state region with quantum-coherence and Bell-nonlocality criteria.
+- **Authors:** Jian-Hao Wu, Kai-Yu Yuan, Yun-Xiang Tian, Hao-Ran Tan, Yan-Xin Rong, et al.
+- **arXiv:** `2609.19625v1` (published 2026-09-17 03:16 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** Experimental result on a distinct quantum-information resource, clear inequality violation, and independent search visibility; Semantic Scholar reported 0 citations and 0 influential citations at the snapshot.
+- **Claimed result:** Using polarization-encoded photonic qubits, the authors report clear violations of the imaginarity inequality and find for the tested Werner states that the NAQC-violating region is contained in the NAQI-violating region, which is contained in the Bell-nonlocal region.
+- **Evidence type:** Experimental; polarization-encoded photonic two-qubit states, with a hybrid genetic/sequential-quadratic optimization of measurements.
+- **Caveat:** The conclusions concern the tested two-qubit photonic states and witness inequalities; they do not establish a universal ordering for all states or platforms.
 - **Announcement type:** new submission, 17 September 2026 batch.
-- **Themes:** Astrophysics; Instrumentation & detectors
+- **Themes:** Quantum information; Instrumentation & detectors
 
-### 3. [Kilojoule-scale laser acceleration enabling efficient generation of electron-positron and muon beams](https://arxiv.org/abs/2609.18775)
-- **Abstract:** Quasi-3D PIC and Geant4 simulations propose a kilojoule-class direct-laser-acceleration regime producing high-charge pair beams and up to 6.5×10^5 Bethe–Heitler muons per shot.
-- **Authors:** R. Babjak, M. Pouyez, C. Badiali, T. Grismayer, M. Vranic
-- **arXiv:** `2609.18775v1` (published 16 September 2026 14:58 UTC; categories: `physics.plasm-ph`)
-- **Evidence for ranking:** No citation counts are available for this v1. Ranked for a quantitative near-term-facility proposal, cross-cutting relevance to pair plasmas and muon sources, and explicit simulation-based scaling claims.
-- **Claimed result:** The authors estimate up to 3×10^12 positrons and 6.5×10^5 muons per shot, and report simulated current-filamentation growth in a pair beam propagating through background gas.
-- **Evidence type:** computational; quasi-3D particle-in-cell and Geant4 simulations, with comparison to a scaling law.
-- **Caveat:** These are simulation and scaling results; target performance, beam transport, and instability observation still require experimental validation.
+### 3. [Coherent and ultra-low-power EDSR with a flopping-mode spin qubit in germanium](https://arxiv.org/abs/2609.20775)
+- **Abstract:** A germanium flopping-mode hole-spin qubit combines charge-noise protection with electric control, reaching 99.76% single-qubit fidelity at 5 mT while using -52 dBm drive power.
+- **Authors:** Alexei Orekhov, Wonjin Jang, Pan Zhang, Konstantinos Tsoukalas, Fabian Oppliger, et al.
+- **arXiv:** `2609.20775v1` (published 2026-09-17 17:47 UTC; categories: `cond-mat.mes-hall`, `quant-ph`)
+- **Evidence for ranking:** Cross-listed condensed-matter/quantum-information experiment, unusually concrete coherence and fidelity metrics, and direct relevance to scaling; Semantic Scholar lookup was rate-limited after one successful query and no reliable citation total was available.
+- **Claimed result:** The device reaches T2* = 1.4 μs, Hahn-echo T2 = 11.5 μs, CPMG32 T2 = 130 μs, T1 = 226 μs, and up to 99.76% gate fidelity for an 88 ns Xπ gate at only -52 dBm device power.
+- **Evidence type:** Experimental; planar germanium double quantum dot and spin-qubit control/readout.
+- **Caveat:** The work demonstrates single-qubit operations; multi-qubit fidelity, uniformity, wiring overhead, and long-term operation remain untested here. The proposed two-photon Orbach relaxation mechanism also needs further optimization and validation.
 - **Announcement type:** new submission, 17 September 2026 batch.
-- **Themes:** Plasma & fluid physics; Instrumentation & detectors; Computational & data methods
+- **Themes:** Quantum information; Condensed matter & materials; Instrumentation & detectors
 
-### 4. [Massive Galaxy Halos Contain Less Inner Dark Matter Than Predicted](https://arxiv.org/abs/2609.19132)
-- **Abstract:** Combining MaNGA stellar kinematics, ALFALFA H I measurements, and SDSS group halo masses, the authors find lower inner dark-matter content in massive galaxies than predicted by IllustrisTNG and EAGLE.
-- **Authors:** Yu-Chen Wang, Yingjie Peng, Xiaohu Yang, Luis C. Ho, Dingyi Zhao, et al.
-- **arXiv:** `2609.19132v1` (published 16 September 2026 17:53 UTC; categories: `astro-ph.GA`)
-- **Evidence for ranking:** No citation momentum is available for this v1. Ranked for the combination of three survey inputs, a stated roughly 4σ difference in population-scatter units, and a direct comparison with major hydrodynamical simulations.
-- **Claimed result:** Massive observed halos have lower dynamical masses at the H I radius, lower inner dark-matter masses, and lower central dark-matter fractions at fixed total halo mass; the inferred profiles remain broadly NFW-like but less concentrated.
-- **Evidence type:** observational; MaNGA, ALFALFA, SDSS group calibration, and simulation comparison.
-- **Caveat:** The proposed baryonic-heating explanation is plausible but model-dependent; the abstract also warns that H I alone does not reliably determine total halo mass.
+### 4. [Microphysical Diversity in Two Very Closely Spaced Magnetic Switchbacks Observed by Parker Solar Probe](https://arxiv.org/abs/2609.20760)
+- **Abstract:** Parker Solar Probe measurements of two nearby magnetic switchbacks show Alfvénic flow in both events but different temperatures, spectra, intermittency, and current-sheet populations, indicating non-uniform near-Sun plasma heating.
+- **Authors:** Dipali Vadher, Ankush Bhaskar, Smitha Thampi, Kamlesh Pathak
+- **arXiv:** `2609.20760v1` (published 2026-09-17 17:43 UTC; categories: `physics.space-ph`, `astro-ph.SR`)
+- **Evidence for ranking:** Direct spacecraft observations, a cross-listed solar/space-physics result, and a concrete contrast between closely spaced events; no verified citation momentum was available for this same-day paper.
+- **Claimed result:** One switchback has higher proton temperature, larger fluctuations, more current-sheet-like structures, a steeper perpendicular spectrum, and a transient beta > 1 excursion, supporting localized dissipation as a plausible heating source.
+- **Evidence type:** Observational; high-cadence Parker Solar Probe magnetic and plasma measurements from 24 January 2020, with spectral and PVI analyses.
+- **Caveat:** This is a two-event case study, so the inferred heating mechanism and prevalence of the reported microphysical diversity require a larger event sample.
 - **Announcement type:** new submission, 17 September 2026 batch.
-- **Themes:** Astrophysics; Cosmology & gravitation; Computational & data methods
+- **Themes:** Astrophysics; Plasma & fluid physics
 
-### 5. [On the importance of cosmic-ray background in the Atomki anomaly](https://arxiv.org/abs/2609.18383)
-- **Abstract:** Geant4 simulations show that cosmic-muon coincidences can generate opening-angle peaks resembling features previously associated with a possible 17 MeV boson in Atomki geometries.
-- **Authors:** Hicham Benmansour, Gianluigi Boca, Gianluca Cavoto, Marco Chiappini, Elia G. Grandoni, et al.
-- **arXiv:** `2609.18383v1` (published 16 September 2026 09:38 UTC; categories: `physics.ins-det`, `hep-ex`, `nucl-ex`)
-- **Evidence for ranking:** No citation counts are available for this v1. Ranked for three-way cross-listing, explicit detector-geometry simulation, and direct relevance to a high-profile anomaly claim.
-- **Claimed result:** Simulated cosmic backgrounds reproduce peaks near 140° and 120° in selected 8Be and 4He windows; under typical running conditions the cosmic-to-internal-pair-conversion ratio can exceed one in the signal window.
-- **Evidence type:** computational; Geant4 simulations of five-arm and six-arm pair spectrometers with detector and scintillator geometries.
-- **Caveat:** The authors explicitly do not settle the origin of the Atomki excesses; the result calls for a detailed beam-off background treatment.
+### 5. [How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?](https://arxiv.org/abs/2609.20814)
+- **Abstract:** Pretraining on 254,909 RANS airfoil solutions reduces target-data requirements, but the size and direction of the benefit depend on target-data budget, geometric coverage, and whether the modeled physics changes.
+- **Authors:** Pochinapeddi Sai Bhargav, Nithin Somasekharan, Rohit Sunil Kanchi, Sicheng He, Shaowu Pan
+- **arXiv:** `2609.20814v1` (published 2026-09-17 17:59 UTC; categories: `physics.comp-ph`, `cs.LG`, `physics.flu-dyn`)
+- **Evidence for ranking:** Cross-field computational-physics/ML contribution with a large stated training corpus and quantitative sample-efficiency comparisons; no verified citation count was available for the new submission.
+- **Claimed result:** At 1,000 target samples, pretraining matches scratch accuracy using 3.25 times as many samples for unchanged Spalart–Allmaras modeling and 2.58 times as many when transition modeling is added; at 5,000 samples the relative ordering reverses.
+- **Evidence type:** Computational; neural surrogate trained on RANS solutions and fine-tuned across airfoil families and turbulence-model settings.
+- **Caveat:** The conclusions are tied to the selected airfoil families, flow ranges, and RANS models; they do not establish transfer performance for other geometries, regimes, or higher-fidelity solvers.
 - **Announcement type:** new submission, 17 September 2026 batch.
-- **Themes:** Instrumentation & detectors; Particle, nuclear & high-energy physics; Computational & data methods
+- **Themes:** Computational & data methods; Plasma & fluid physics
 
-### 6. [Asymmetric Inelastic Dark Matter and the LUX-ZEPLIN event](https://arxiv.org/abs/2609.18564)
-- **Abstract:** The authors propose an asymmetric singlet–doublet dark-matter model that can accommodate a candidate near 250 keV in LUX-ZEPLIN while suppressing solar-annihilation constraints from IceCube.
-- **Authors:** Natsumi Nagata, Tsutomu T. Yanagida
-- **arXiv:** `2609.18564v1` (published 16 September 2026 12:23 UTC; categories: `hep-ph`)
-- **Evidence for ranking:** No citation momentum is available for this v1. Ranked for its direct response to a named detector event, connection to IceCube and collider/precision tests, and a parameterized prediction rather than an unsupported discovery claim.
-- **Claimed result:** A predominantly singlet Dirac fermion with a weakly mixed near-degenerate doublet can fit the event for masses of a few hundred GeV to 1 TeV, splittings of a few hundred keV, and mixing below O(10^-2).
-- **Evidence type:** theoretical; dark-sector model building and phenomenological constraints from LZ, IceCube, direct detection, colliders, and precision experiments.
-- **Caveat:** The LZ event is described as an intriguing candidate, not a confirmed dark-matter detection; the interpretation is model-dependent and awaits more data.
+### 6. [Blind Quantum Computation with a Small Quantum Server](https://arxiv.org/abs/2609.20729)
+- **Abstract:** A Pauli-based blind-quantum-computation protocol makes the server size depend on the non-Clifford gate count rather than total computation size and supplies a lower-cost entanglement-based dual protocol.
+- **Authors:** Daniel Lovsted, Filipa C. R. Peres, Joshua Nevin, Selman Ipek, Anne Broadbent
+- **arXiv:** `2609.20729v1` (published 2026-09-17 17:21 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** A concrete architecture-level result addressing a recognized implementation bottleneck, with fault-tolerance and qubit-virtualization implications; no verified citation momentum was available for this same-day paper.
+- **Claimed result:** The authors show that classical-client blind quantum computation is possible without classical simulability, with server resources controlled by non-Clifford complexity, and propose an entanglement-based protocol with substantially reduced execution cost.
+- **Evidence type:** Theoretical; protocol construction and resource analysis using Pauli-based computation.
+- **Caveat:** The paper establishes protocol resource scaling, not an experimental demonstration under realistic noise, communication, or fault-tolerance overheads.
 - **Announcement type:** new submission, 17 September 2026 batch.
-- **Themes:** Particle, nuclear & high-energy physics; Cosmology & gravitation
+- **Themes:** Quantum information; Computational & data methods
 
 ## Trending Research Themes
 
-- **Quantum networking on conventional infrastructure:** Paper 1 targets the practical coexistence of quantum repeaters and ordinary data traffic, with Raman noise as the central engineering constraint.
-- **Making scarce instruments more efficient:** Papers 1 and 2 turn existing fiber and JWST calibration infrastructure into platforms for quantum networking and exoplanet discovery rather than requiring wholly new facilities.
-- **Simulation-to-experiment pipelines:** Papers 3 and 5 use detailed particle/detector simulations to identify experimentally testable regimes, while Paper 4 links survey data to hydrodynamical simulations.
-- **Dark matter as an interpretation problem:** Papers 4 and 6 connect astrophysical or direct-detection observations to model-dependent inferences; neither constitutes a dark-matter discovery.
+- **Scaling quantum hardware through lower control and server costs.** The germanium experiment targets power, heating, and crosstalk in physical qubits, while Lovsted et al. target resource scaling in delegated computation. These are complementary hardware- and protocol-level approaches, not independent demonstrations of a complete scalable machine.
+- **Operational quantum resources are becoming experimentally testable.** Wu et al. turn quantum imaginarity into an experimentally witnessed nonlocal advantage, linking it to coherence and Bell-nonlocality criteria.
+- **Survey and spacecraft data are being converted into physical inference pipelines.** The Euclid work benchmarks cluster detection before large releases; the Parker Solar Probe study uses spectral and intermittency diagnostics to connect magnetic structure to heating.
+- **Physics-informed machine learning is being evaluated under distribution shift rather than only in-distribution accuracy.** The neural-PDE paper explicitly separates geometry shift, data coverage, and modeled-physics shift.
 
 ## Open Problems and Research Directions
 
-- **Quantum networking:** Paper 1 leaves the scaling of fidelity and Raman noise beyond 40 km and five nodes open. Follow-up work should test longer deployed fibers, more nodes, and repeater-relevant rates under realistic traffic.
-- **Exoplanet imaging:** Paper 2's sub-Jupiter reach is a forecast. Targeted short MIRI observations of the favorable nearby systems identified by the contrast-curve analysis could test it.
-- **Laser pair and muon sources:** Paper 3 requires experimental validation of charge, divergence, target conversion, and instability growth at kilojoule-class facilities; beamline designs should test the predicted energy-delivery scaling.
-- **Atomki background control:** Paper 5 identifies cosmic-ray modeling and beam-off characterization as unresolved necessities. Independent background measurements using the actual detector configurations would discriminate simulation artifacts from a physical excess.
-- **Dark-matter halo modeling:** Paper 4's lower concentrations need tests across independent group-mass calibrations and galaxy samples, with baryonic-feedback systematics propagated explicitly.
-- **LUX-ZEPLIN interpretation:** Paper 6 predicts correlated elastic/inelastic and collider signatures. Future high-recoil data and complementary searches can test whether the candidate persists without invoking a finely tuned model.
+- **Euclid reality gap:** Test the four selected weak-lensing pipelines on commissioning and early survey data, quantifying blending, masking, shear calibration, photometric-redshift, and line-of-sight projection systematics (Manjón-García et al.).
+- **Switchback statistics:** Extend the two-event Parker analysis to a population study across heliocentric distance and solar-wind conditions to determine whether localized current-sheet dissipation explains a substantial fraction of switchback heating (Vadher et al.).
+- **Qubit scaling:** Measure two-qubit gates, crosstalk, yield, and relaxation across devices for the flopping-mode germanium architecture; test the proposed Orbach-relaxation interpretation as fields and temperatures vary (Orekhov et al.).
+- **Quantum-resource generality:** Repeat the imaginarity experiment with more state families, loophole-aware measurement protocols, and other platforms to establish how robust the NAQI/NAQC/Bell region ordering is beyond the tested Werner-state setting (Wu et al.).
+- **Surrogate transfer limits:** Evaluate the neural-PDE conclusions on genuinely different geometries, Reynolds numbers, solver fidelities, and experimental data, with uncertainty calibration rather than sample count alone (Bhargav et al.).
+- **Blind-computation overheads:** Compile the proposed protocols into fault-tolerant architectures and quantify communication, magic-state, and noise overheads before treating the asymptotic server-size advantage as an implementation gain (Lovsted et al.).
 
 ## Takeaway
 
-The day's most actionable papers are less about a single new discovery than about pushing existing platforms into new regimes: quantum links over live telecom-style channels, rapid JWST companion searches, laser-generated secondary beams, and background-controlled anomaly searches. The ranking is an inference from recency, cross-field reach, concrete measurements or simulations, and experimental relevance; it is not an official arXiv popularity ranking, and all six works are fresh preprints.
+The batch is notable less for one headline discovery than for a shared emphasis on scalable inference and control: extracting robust science from large surveys and spacecraft, and reducing the cost of quantum control and delegation. Because the papers are new, citation and readership signals are sparse; the ordering is therefore an evidence-based editorial shortlist, not a measured popularity list.
 
 ## Method and sources
 
-- Window: daily; latest arXiv announcement batch dated 17 September 2026. Snapshot: 17 September 2026, 15:30 UTC.
-- Archive coverage checked: `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-ph`, and `quant-ph` recent listings, with cross-listed papers deduplicated by arXiv ID. The selected set emphasizes the strongest concrete cross-field signals in the checked batch rather than claiming comprehensive coverage of all physics.
-- arXiv supplies no official trending chart. Citation counts and independent attention signals were sparse or unavailable because the selected papers were newly submitted; ordering is therefore inferred from concrete results, cross-listing, facility/data relevance, and testability.
-- Primary sources: the linked arXiv abstract pages and the arXiv recent-list pages for physics, astrophysics, condensed matter, high-energy physics, and quantum physics.
+- **Window:** daily; papers first submitted in the latest available announcement batch, 17 September 2026 UTC. Snapshot taken 18 September 2026 at 15:30 UTC.
+- **Scope:** arXiv physics-focused records sampled from `physics.*`, `astro-ph.*`, `cond-mat.*`, `quant-ph`, and related cross-lists. The shortlist emphasizes the latest batch and is not a claim of exhaustive coverage of every physics archive.
+- **Ranking:** inferred from concrete result quality, experimental/observational or computational evidence, cross-list relevance, collaboration or facility significance, and independent search visibility. arXiv provides no official trending chart; no paper is described as most read or most downloaded.
+- **Sources:** arXiv API metadata and abstracts for all six papers; Semantic Scholar Graph API lookup where available; web search used as an independent attention check for the Euclid and quantum-imaginarity entries.

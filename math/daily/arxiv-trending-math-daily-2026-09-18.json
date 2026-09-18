@@ -1,0 +1,158 @@
+{
+  "schema": "arxiv-trending-math-v1",
+  "category": "math",
+  "window": "daily",
+  "date": "2026-09-18",
+  "title": "arXiv Trending Mathematics — 18 September 2026",
+  "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-09-18.md",
+  "entry_count": 5,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "Proof of the Pach-Tardos conjecture",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.20726",
+      "arxiv_id": "2609.20726",
+      "arxiv_version": "2609.20726v1",
+      "published": "2026-09-17T17:19:03Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Lior Gishboliner",
+        "Xiangyu Li"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The authors state that every acyclic matrix pattern has Ex(n,P) ≤ n^{1+O_P(1/log log n)}.",
+      "claimed_result": "The authors state that every acyclic matrix pattern has Ex(n,P) ≤ n^{1+O_P(1/log log n)}.",
+      "assumptions_and_setting": "Extremal functions for acyclic matrix patterns; the O-term may depend on P.",
+      "caveat": "New unrefereed preprint; proof details and sharpness need expert review.",
+      "refs": [
+        "https://arxiv.org/abs/2609.20726"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "A counterexample to the quantum Hedetniemi conjecture",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.20690",
+      "arxiv_id": "2609.20690",
+      "arxiv_version": "2609.20690v1",
+      "published": "2026-09-17T16:57:12Z",
+      "categories": [
+        "math.CO",
+        "quant-ph"
+      ],
+      "authors": [
+        "Julius A. Zeiss"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Mathematical physics"
+      ],
+      "abstract": "Explicit graphs satisfy χ(G×H) ≤ 1538 < 1539 = min(χ_q(G),χ_q(H)), with failures for several variants.",
+      "claimed_result": "Explicit graphs satisfy χ(G×H) ≤ 1538 < 1539 = min(χ_q(G),χ_q(H)), with failures for several variants.",
+      "assumptions_and_setting": "Finite graphs, categorical products, projection-valued quantum colorings, and nonzero unital C*-algebras.",
+      "caveat": "Preprint claim; graph constructions and Lean certificates remain to be independently checked.",
+      "refs": [
+        "https://arxiv.org/abs/2609.20690"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "Universal completeness of exponentials",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.20805",
+      "arxiv_id": "2609.20805",
+      "arxiv_version": "2609.20805v1",
+      "published": "2026-09-17T17:58:15Z",
+      "categories": [
+        "math.CA"
+      ],
+      "authors": [
+        "Susanna Bertolini",
+        "Enric Florit-Simon",
+        "Lukas Liehr",
+        "Mitchell A. Taylor"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Logic & foundations"
+      ],
+      "abstract": "Constructs universal exponential systems at density one and density v under the stated L^p and measure thresholds, and reports sharpness of α>1/2.",
+      "claimed_result": "Constructs universal exponential systems at density one and density v under the stated L^p and measure thresholds, and reports sharpness of α>1/2.",
+      "assumptions_and_setting": "Uniformly discrete frequency sets in R; 1≤p<∞ and measurable sets below the density threshold.",
+      "caveat": "Abstract-level summary; Lean code availability is reported but not audited.",
+      "refs": [
+        "https://arxiv.org/abs/2609.20805"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Stationary varifolds with singularities II",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.20647",
+      "arxiv_id": "2609.20647",
+      "arxiv_version": "2609.20647v1",
+      "published": "2026-09-17T16:26:42Z",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "authors": [
+        "Camillo De Lellis",
+        "Jonas Hirsch",
+        "Zachary Lihn",
+        "Luca Spolaor"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Analysis & PDE"
+      ],
+      "abstract": "For every m≥3, constructs a stationary integral varifold with a multiplicity-two flat tangent plane, smoothness off one point, and infinite local topology.",
+      "claimed_result": "For every m≥3, constructs a stationary integral varifold with a multiplicity-two flat tangent plane, smoothness off one point, and infinite local topology.",
+      "assumptions_and_setting": "Smooth ambient Riemannian metric; integral m-varifold stationary in an open set.",
+      "caveat": "The abstract reports correction of an earlier error; the construction needs independent review.",
+      "refs": [
+        "https://arxiv.org/abs/2609.20647"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Markovian renormalisation for percolation in high-dimension: Semi-decidability of mean field behavior",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.20764",
+      "arxiv_id": "2609.20764",
+      "arxiv_version": "2609.20764v1",
+      "published": "2026-09-17T17:44:19Z",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.MP"
+      ],
+      "authors": [
+        "Arthur Blanc-Renaudie"
+      ],
+      "themes": [
+        "Probability & statistics",
+        "Mathematical physics",
+        "Logic & foundations"
+      ],
+      "abstract": "Develops a Markov-chain renormalisation approach for d>6 and claims asymptotics, a local CLT, and semi-decidability of critical mean-field behavior.",
+      "claimed_result": "Develops a Markov-chain renormalisation approach for d>6 and claims asymptotics, a local CLT, and semi-decidability of critical mean-field behavior.",
+      "assumptions_and_setting": "Bernoulli percolation in dimensions d>6, with p approaching p_c from below.",
+      "caveat": "Long high-dimensional preprint; practical effectiveness and proof verification remain open.",
+      "refs": [
+        "https://arxiv.org/abs/2609.20764"
+      ]
+    }
+  ]
+}

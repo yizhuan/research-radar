@@ -1,0 +1,166 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-09-18",
+  "title": "GitHub Trending Summary - Weekly - 2026-09-18",
+  "source_report": "~/.research/github/weekly/github-trending-summary-weekly-2026-09-18.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI-agent infrastructure dominates this week's GitHub attention: coding-agent skills, context management, worktree orchestration, and agent-facing internet access occupy much of the top tier. A second cluster applies the same agent/RAG trend to code review, knowledge management, and geospatial visualization."
+    },
+    {
+      "id": "01-bilawalsidhu-gods-eye-view",
+      "kind": "repo",
+      "title": "bilawalsidhu/gods-eye-view",
+      "rank": 1,
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A browser-based spy-satellite simulator built around real data and a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars_gained": 14460,
+      "total_stars": 37569,
+      "themes": ["interactive visualization", "geospatial", "browser applications"],
+      "refs": ["bilawalsidhu/gods-eye-view"]
+    },
+    {
+      "id": "02-alibaba-open-code-review",
+      "kind": "repo",
+      "title": "alibaba/open-code-review",
+      "rank": 2,
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "A hybrid deterministic-plus-LLM code-review system with line-level comments and multilingual security rules.",
+      "language": "Go",
+      "stars_gained": 11489,
+      "total_stars": 36401,
+      "themes": ["AI code review", "security", "developer tooling"],
+      "refs": ["alibaba/open-code-review"]
+    },
+    {
+      "id": "03-ayghri-i-have-adhd",
+      "kind": "repo",
+      "title": "ayghri/i-have-adhd",
+      "rank": 3,
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "An agent skill designed to keep coding-agent output concise and answer-focused.",
+      "language": "Python",
+      "stars_gained": 10800,
+      "total_stars": 47891,
+      "themes": ["agent skills", "human-agent interaction", "productivity"],
+      "refs": ["ayghri/i-have-adhd"]
+    },
+    {
+      "id": "04-affaan-m-ecc",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 4,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "An agent-harness optimization system covering skills, memory, security, and research-first development.",
+      "language": "JavaScript",
+      "stars_gained": 5607,
+      "total_stars": 261740,
+      "themes": ["agent orchestration", "memory", "security"],
+      "refs": ["affaan-m/ECC"]
+    },
+    {
+      "id": "05-stablyai-orca",
+      "kind": "repo",
+      "title": "stablyai/orca",
+      "rank": 5,
+      "url": "https://github.com/stablyai/orca",
+      "description": "An application development environment for running fleets of parallel coding agents across desktop, mobile, and remote runtimes.",
+      "language": "TypeScript",
+      "stars_gained": 5305,
+      "total_stars": 71731,
+      "themes": ["parallel agents", "agent runtimes", "developer tooling"],
+      "refs": ["stablyai/orca"]
+    },
+    {
+      "id": "06-tencent-weknora",
+      "kind": "repo",
+      "title": "Tencent/WeKnora",
+      "rank": 6,
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "An open-source LLM knowledge platform combining document RAG, autonomous reasoning, and a self-maintaining wiki.",
+      "language": "Go",
+      "stars_gained": 3982,
+      "total_stars": 26877,
+      "themes": ["RAG", "knowledge systems", "autonomous agents"],
+      "refs": ["Tencent/WeKnora"]
+    },
+    {
+      "id": "07-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 7,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software-development methodology.",
+      "language": "Shell",
+      "stars_gained": 3821,
+      "total_stars": 288438,
+      "themes": ["agent skills", "software methodology", "developer tooling"],
+      "refs": ["obra/superpowers"]
+    },
+    {
+      "id": "08-panniantong-agent-reach",
+      "kind": "repo",
+      "title": "Panniantong/Agent-Reach",
+      "rank": 8,
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "A CLI that gives agents access to major social, video, code, and web sources without paid APIs.",
+      "language": "Python",
+      "stars_gained": 3670,
+      "total_stars": 83055,
+      "themes": ["agent retrieval", "web access", "multi-source data"],
+      "refs": ["Panniantong/Agent-Reach"]
+    },
+    {
+      "id": "09-blader-humanizer",
+      "kind": "repo",
+      "title": "blader/humanizer",
+      "rank": 9,
+      "url": "https://github.com/blader/humanizer",
+      "description": "An agent skill for removing common signs of AI-generated writing.",
+      "language": "Python",
+      "stars_gained": 3235,
+      "total_stars": 49857,
+      "themes": ["writing quality", "agent skills", "human-in-the-loop"],
+      "refs": ["blader/humanizer"]
+    },
+    {
+      "id": "10-addyosmani-agent-skills",
+      "kind": "repo",
+      "title": "addyosmani/agent-skills",
+      "rank": 10,
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars_gained": 2560,
+      "total_stars": 96235,
+      "themes": ["agent skills", "software engineering", "developer tooling"],
+      "refs": ["addyosmani/agent-skills"]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Coding-agent infrastructure dominates: ECC, superpowers, agent-skills, context management, worktree management, and parallel-agent runtimes. Agent-enabled code review, RAG knowledge systems, and broad web retrieval form adjacent clusters. Among the ten selected repositories, Python and JavaScript each appear three times, TypeScript twice, Go twice, and Rust and Shell once each."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The center of gravity is moving from standalone model wrappers to agent operating infrastructure: reusable skills, constrained context, persistent memory, safe parallelism, and access to real software and information systems. The strong performance of gods-eye-view also shows that distinctive visual applications remain capable of breakout attention."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "This week's signal is less about a new model and more about making agents dependable inside real workflows. The opportunity is shifting toward the surrounding runtime and experience layer, while novel visual products remain a viable source of breakout interest."
+    }
+  ]
+}

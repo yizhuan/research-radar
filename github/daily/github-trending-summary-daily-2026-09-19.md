@@ -4,81 +4,82 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-19 09:30 UTC |
+| Snapshot time (UTC) | 2026-09-19 15:40 UTC |
 | Scope | Daily |
 | Date range | 2026-09-19 through 2026-09-19 |
-| Ranking basis | Daily GitHub Trending star gains |
+| Ranking basis | Daily Trending star gains |
 
 ## Headline
 
-AI-agent infrastructure dominates today's list: security auditing, coding assistants, browser control, code review, and agent skills occupy most of the top slots.
+AI-agent infrastructure dominates today's GitHub momentum: security-audit skills, computer-use tooling, coding-agent skills, agent workspaces, and terminal coding tools occupy the leading positions. The strongest secondary signals are open ML infrastructure, document-to-GenAI pipelines, and small-device inference.
 
 ## Top Repositories
 
-1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)  - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings**
+1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.**
 
-  **Language:** JavaScript | **Stars gained in window:** +3,006 | **Total stars:** 14,661 | **Why notable:** Ranked #1 on GitHub's daily Trending page by today's star velocity.
+  **Language:** JavaScript | **Stars gained in window:** +3,162 | **Total stars:** 15,524 | **Why notable:** The day's clear leader, combining security automation with agent-native workflows.
 
-2. **[anthropics/claude-code](https://github.com/anthropics/claude-code)  - Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.**
+2. **[trycua/cua](https://github.com/trycua/cua) - Open-source drivers, fleets, and benchmarks for computer-use systems.**
 
-  **Language:** TypeScript | **Stars gained in window:** +444 | **Total stars:** 146,471 | **Why notable:** Ranked #2 on GitHub's daily Trending page by today's star velocity.
+  **Language:** HTML | **Stars gained in window:** +383 | **Total stars:** 24,031 | **Why notable:** Shows continued interest in scaling computer-use agents beyond single-machine demos.
 
-3. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review)  - Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.**
+3. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents.**
 
-  **Language:** Go | **Stars gained in window:** +2,704 | **Total stars:** 37,068 | **Why notable:** Ranked #3 on GitHub's daily Trending page by today's star velocity.
+  **Language:** JavaScript | **Stars gained in window:** +547 | **Total stars:** 96,800 | **Why notable:** A large existing audience is still adding momentum to reusable agent capability packages.
 
-4. **[affaan-m/ECC](https://github.com/affaan-m/ECC)  - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.**
+4. **[coder/coder](https://github.com/coder/coder) - Secure environments for developers and their agents.**
 
-  **Language:** JavaScript | **Stars gained in window:** +958 | **Total stars:** 262,397 | **Why notable:** Ranked #4 on GitHub's daily Trending page by today's star velocity.
+  **Language:** Go | **Stars gained in window:** +406 | **Total stars:** 15,495 | **Why notable:** Connects agent adoption to reproducible, isolated developer workspaces.
 
-5. **[Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill)  - Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.**
+5. **[anthropics/claude-code](https://github.com/anthropics/claude-code) - An agentic coding tool that works from the terminal and handles codebase and Git workflows.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,306 | **Total stars:** 5,543 | **Why notable:** Ranked #5 on GitHub's daily Trending page by today's star velocity.
+  **Language:** TypeScript | **Stars gained in window:** +482 | **Total stars:** 146,583 | **Why notable:** Terminal-first coding agents remain one of GitHub's strongest durable categories.
 
-6. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)  - Production-grade engineering skills for AI coding agents.**
+6. **[Open-Dev-Society/OpenStock](https://github.com/Open-Dev-Society/OpenStock) - An open-source alternative to paid market platforms with prices, alerts, and company insights.**
 
-  **Language:** JavaScript | **Stars gained in window:** +675 | **Total stars:** 96,601 | **Why notable:** Ranked #6 on GitHub's daily Trending page by today's star velocity.
+  **Language:** TypeScript | **Stars gained in window:** +477 | **Total stars:** 15,810 | **Why notable:** A notable non-agent breakout applying open-source product tooling to market data.
 
-7. **[TencentCloud/Octop](https://github.com/TencentCloud/Octop)  - A smarter, self-hosted AI assistant — multi-user, multi-agent.**
+7. **[higgsfield-ai/higgsfield](https://github.com/higgsfield-ai/higgsfield) - Fault-tolerant GPU orchestration and ML infrastructure for very large models.**
 
-  **Language:** Python | **Stars gained in window:** +569 | **Total stars:** 4,072 | **Why notable:** Ranked #7 on GitHub's daily Trending page by today's star velocity.
+  **Language:** Jupyter Notebook | **Stars gained in window:** +325 | **Total stars:** 4,793 | **Why notable:** Reflects demand for practical scaling infrastructure behind frontier-model training.
 
-8. **[Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)  - Spec-driven development (SDD) for AI coding assistants.**
+8. **[docling-project/docling](https://github.com/docling-project/docling) - Tools for preparing documents for generative AI.**
 
-  **Language:** TypeScript | **Stars gained in window:** +296 | **Total stars:** 69,496 | **Why notable:** Ranked #8 on GitHub's daily Trending page by today's star velocity.
+  **Language:** Python | **Stars gained in window:** +94 | **Total stars:** 66,826 | **Why notable:** Document parsing remains foundational to retrieval and enterprise GenAI pipelines.
 
-9. **[ankitects/anki](https://github.com/ankitects/anki)  - Anki is a smart spaced repetition flashcard program**
+9. **[asciimoo/hister](https://github.com/asciimoo/hister) - A personal search engine.**
 
-  **Language:** Rust | **Stars gained in window:** +174 | **Total stars:** 31,287 | **Why notable:** Ranked #9 on GitHub's daily Trending page by today's star velocity.
+  **Language:** Go | **Stars gained in window:** +430 | **Total stars:** 5,134 | **Why notable:** Its high daily gain is a reminder that focused, self-hostable developer tools can still break out.
 
-10. **[anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)  - Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork**
+10. **[anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) - Open-source plugins for knowledge workers using Claude Cowork.**
 
-  **Language:** Python | **Stars gained in window:** +299 | **Total stars:** 24,963 | **Why notable:** Ranked #10 on GitHub's daily Trending page by today's star velocity.
+  **Language:** Python | **Stars gained in window:** +280 | **Total stars:** 25,024 | **Why notable:** Extends the agent trend from coding into packaged workflows for knowledge work.
 
-11. **[supermemoryai/supermemory](https://github.com/supermemoryai/supermemory)  - Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.**
+11. **[cactus-compute/needle](https://github.com/cactus-compute/needle) - A tiny automation foundation model for devices from phones to microcontrollers.**
 
-  **Language:** TypeScript | **Stars gained in window:** +140 | **Total stars:** 30,455 | **Why notable:** Ranked #11 on GitHub's daily Trending page by today's star velocity.
+  **Language:** Python | **Stars gained in window:** +207 | **Total stars:** 11,481 | **Why notable:** Brings tool calling, extraction, and embeddings into a constrained-device footprint.
 
-12. **[tradesdontlie/tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp)  - AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation**
+12. **[yynxxxxx/Codex-X](https://github.com/yynxxxxx/Codex-X) - A cross-platform visual manager for OpenAI Codex desktop/CLI workflows.**
 
-  **Language:** JavaScript | **Stars gained in window:** +79 | **Total stars:** 6,541 | **Why notable:** Ranked #12 on GitHub's daily Trending page by today's star velocity.
+  **Language:** Rust | **Stars gained in window:** +64 | **Total stars:** 3,346 | **Why notable:** Signals an emerging ecosystem around provider switching, Skills, MCP, and agent-session management.
 
 ## Trending Technologies and Themes
 
-- **AI coding agents and agent operations:** cloudflare/security-audit-skill, anthropics/claude-code, affaan-m/ECC, addyosmani/agent-skills, and Fission-AI/OpenSpec all target agent-assisted development, evaluation, or workflow structure.
-- **Developer automation and review:** alibaba/open-code-review and Tencent/BrowserSkill extend agents into code-review and real-browser workflows.
-- **Languages:** TypeScript leads the 12 listed repositories (4), followed by JavaScript (3), Python (2), Go (2), and Rust (2); counts overlap because the list has 12 entries and some language tallies are based on GitHub primary-language metadata.
+- **Coding-agent ecosystems:** `security-audit-skill`, `agent-skills`, `coder`, `claude-code`, `knowledge-work-plugins`, and `Codex-X` all point to agents becoming composable products with skills, plugins, sessions, and controlled environments.
+- **Computer use and automation:** `cua` and `needle` cover two ends of the spectrum: fleet-scale computer-use infrastructure and tiny-device automation models.
+- **AI data and infrastructure:** `higgsfield` targets GPU-scale training, while `docling` targets document preparation for GenAI; together they represent both compute and input-data layers.
+- **Languages:** JavaScript/TypeScript appear in 4 listed repositories, Python in 3, Go in 2, Rust in 1, HTML in 1, and Jupyter Notebook in 1. The list is therefore polyglot, but agent tooling spans the JavaScript/TypeScript, Python, Go, and Rust ecosystems.
 
 ## Notable Shifts
 
-The strongest shift is from standalone AI applications toward operational tooling for coding agents: security, browser access, memory, plugins, specifications, and isolated developer environments. Traditional infrastructure remains present through RustFS, Supabase, and Coder, but it is framed around AI-enabled development.
+The daily chart is unusually concentrated around agent operationalization rather than base models: security verification, reusable skills, sandboxed workspaces, plugins, computer-use fleets, and client management all rank highly. At the same time, the appearance of tiny-device inference and open market software shows the trend is spreading into edge computing and specialized end-user products.
 
 ## Takeaway
 
-Today's ranking suggests GitHub attention is concentrating on the control plane around AI software development rather than only on models. The common pattern is practical integration: make agents safer, give them tools and context, and fit them into review, deployment, and developer workflows.
+Today's signal is less “a new model won” and more “the agent stack is being productized.” Developers are building the surrounding control plane—skills, plugins, security checks, workspaces, benchmarks, and interfaces—while also pushing GenAI into documents, markets, and constrained hardware.
 
 ## Sources and Method
 
-- **Primary source:** https://github.com/trending?since=daily
-- **Corroboration:** GitHub REST API `GET /repos/{owner}/{repo}` for current primary language and star totals.
-- **Method note:** Daily gains come from the matching GitHub Trending view captured at the snapshot time; API values corroborate current repository metadata.
+- **Primary source:** [GitHub Trending](https://github.com/trending?since=daily).
+- **Corroboration:** GitHub REST repository API (`GET /repos/{owner}/{repo}`) for descriptions, languages, total stars, fork status, and update timestamps.
+- **Method note:** Ranking and stars gained come from the daily GitHub Trending view captured on 2026-09-19 UTC. Obvious list/course-style repositories were excluded; the remaining entries were deduplicated by `owner/name` and checked as non-forks/non-archived repositories through the API.

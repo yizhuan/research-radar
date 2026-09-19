@@ -1,0 +1,216 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-19",
+  "title": "GitHub Trending Summary - Daily - 2026-09-19",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-19.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI-agent infrastructure dominates today's list: security auditing, coding assistants, browser control, code review, and agent skills occupy most of the top slots."
+    },
+    {
+      "id": "01-cloudflare-security-audit-skill",
+      "kind": "repo",
+      "title": "cloudflare/security-audit-skill",
+      "rank": 1,
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars_gained": 3006,
+      "total_stars": 14661,
+      "themes": [],
+      "refs": [
+        "cloudflare/security-audit-skill"
+      ]
+    },
+    {
+      "id": "02-anthropics-claude-code",
+      "kind": "repo",
+      "title": "anthropics/claude-code",
+      "rank": 2,
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "TypeScript",
+      "stars_gained": 444,
+      "total_stars": 146471,
+      "themes": [],
+      "refs": [
+        "anthropics/claude-code"
+      ]
+    },
+    {
+      "id": "03-alibaba-open-code-review",
+      "kind": "repo",
+      "title": "alibaba/open-code-review",
+      "rank": 3,
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars_gained": 2704,
+      "total_stars": 37068,
+      "themes": [],
+      "refs": [
+        "alibaba/open-code-review"
+      ]
+    },
+    {
+      "id": "04-affaan-m-ecc",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 4,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars_gained": 958,
+      "total_stars": 262397,
+      "themes": [],
+      "refs": [
+        "affaan-m/ECC"
+      ]
+    },
+    {
+      "id": "05-tencent-browserskill",
+      "kind": "repo",
+      "title": "Tencent/BrowserSkill",
+      "rank": 5,
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "language": "TypeScript",
+      "stars_gained": 1306,
+      "total_stars": 5543,
+      "themes": [],
+      "refs": [
+        "Tencent/BrowserSkill"
+      ]
+    },
+    {
+      "id": "06-addyosmani-agent-skills",
+      "kind": "repo",
+      "title": "addyosmani/agent-skills",
+      "rank": 6,
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars_gained": 675,
+      "total_stars": 96601,
+      "themes": [],
+      "refs": [
+        "addyosmani/agent-skills"
+      ]
+    },
+    {
+      "id": "07-tencentcloud-octop",
+      "kind": "repo",
+      "title": "TencentCloud/Octop",
+      "rank": 7,
+      "url": "https://github.com/TencentCloud/Octop",
+      "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+      "language": "Python",
+      "stars_gained": 569,
+      "total_stars": 4072,
+      "themes": [],
+      "refs": [
+        "TencentCloud/Octop"
+      ]
+    },
+    {
+      "id": "08-fission-ai-openspec",
+      "kind": "repo",
+      "title": "Fission-AI/OpenSpec",
+      "rank": 8,
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "description": "Spec-driven development (SDD) for AI coding assistants.",
+      "language": "TypeScript",
+      "stars_gained": 296,
+      "total_stars": 69496,
+      "themes": [],
+      "refs": [
+        "Fission-AI/OpenSpec"
+      ]
+    },
+    {
+      "id": "09-ankitects-anki",
+      "kind": "repo",
+      "title": "ankitects/anki",
+      "rank": 9,
+      "url": "https://github.com/ankitects/anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
+      "language": "Rust",
+      "stars_gained": 174,
+      "total_stars": 31287,
+      "themes": [],
+      "refs": [
+        "ankitects/anki"
+      ]
+    },
+    {
+      "id": "10-anthropics-knowledge-work-plugins",
+      "kind": "repo",
+      "title": "anthropics/knowledge-work-plugins",
+      "rank": 10,
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars_gained": 299,
+      "total_stars": 24963,
+      "themes": [],
+      "refs": [
+        "anthropics/knowledge-work-plugins"
+      ]
+    },
+    {
+      "id": "11-supermemoryai-supermemory",
+      "kind": "repo",
+      "title": "supermemoryai/supermemory",
+      "rank": 11,
+      "url": "https://github.com/supermemoryai/supermemory",
+      "description": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
+      "language": "TypeScript",
+      "stars_gained": 140,
+      "total_stars": 30455,
+      "themes": [],
+      "refs": [
+        "supermemoryai/supermemory"
+      ]
+    },
+    {
+      "id": "12-tradesdontlie-tradingview-mcp",
+      "kind": "repo",
+      "title": "tradesdontlie/tradingview-mcp",
+      "rank": 12,
+      "url": "https://github.com/tradesdontlie/tradingview-mcp",
+      "description": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
+      "language": "JavaScript",
+      "stars_gained": 79,
+      "total_stars": 6541,
+      "themes": [],
+      "refs": [
+        "tradesdontlie/tradingview-mcp"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **AI coding agents and agent operations:** cloudflare/security-audit-skill, anthropics/claude-code, affaan-m/ECC, addyosmani/agent-skills, and Fission-AI/OpenSpec all target agent-assisted development, evaluation, or workflow structure.\n- **Developer automation and review:** alibaba/open-code-review and Tencent/BrowserSkill extend agents into code-review and real-browser workflows.\n- **Languages:** TypeScript leads the 12 listed repositories (4), followed by JavaScript (3), Python (2), Go (2), and Rust (2); counts overlap because the list has 12 entries and some language tallies are based on GitHub primary-language metadata."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The strongest shift is from standalone AI applications toward operational tooling for coding agents: security, browser access, memory, plugins, specifications, and isolated developer environments. Traditional infrastructure remains present through RustFS, Supabase, and Coder, but it is framed around AI-enabled development."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today's ranking suggests GitHub attention is concentrating on the control plane around AI software development rather than only on models. The common pattern is practical integration: make agents safer, give them tools and context, and fit them into review, deployment, and developer workflows."
+    }
+  ]
+}

@@ -1,158 +1,102 @@
 {
-  "schema": "arxiv-trending-math-v1",
+  "schema": "arxiv-trending-math.v1",
   "category": "math",
   "window": "daily",
   "date": "2026-09-18",
-  "title": "arXiv Trending Mathematics — 18 September 2026",
+  "title": "arXiv Trending Mathematics — 2026-09-18 batch",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-09-18.md",
   "entry_count": 5,
   "entry_noun": "papers",
   "sections": [
     {
-      "id": "paper-1",
+      "id": "2609.22035",
       "kind": "paper",
-      "title": "Proof of the Pach-Tardos conjecture",
+      "title": "Kakeya and Furstenberg problems for sticky sets of tubes",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2609.20726",
-      "arxiv_id": "2609.20726",
-      "arxiv_version": "2609.20726v1",
-      "published": "2026-09-17T17:19:03Z",
-      "categories": [
-        "math.CO"
-      ],
-      "authors": [
-        "Lior Gishboliner",
-        "Xiangyu Li"
-      ],
-      "themes": [
-        "Combinatorics & discrete mathematics"
-      ],
-      "abstract": "The authors state that every acyclic matrix pattern has Ex(n,P) ≤ n^{1+O_P(1/log log n)}.",
-      "claimed_result": "The authors state that every acyclic matrix pattern has Ex(n,P) ≤ n^{1+O_P(1/log log n)}.",
-      "assumptions_and_setting": "Extremal functions for acyclic matrix patterns; the O-term may depend on P.",
-      "caveat": "New unrefereed preprint; proof details and sharpness need expert review.",
-      "refs": [
-        "https://arxiv.org/abs/2609.20726"
-      ]
+      "url": "https://arxiv.org/abs/2609.22035",
+      "arxiv_id": "2609.22035",
+      "arxiv_version": "v1",
+      "published": "2026-09-18T17:28:26Z",
+      "categories": ["math.CA"],
+      "authors": ["Hong Wang", "Dmitrii Zakharov"],
+      "themes": ["Analysis & PDE", "Geometry & topology"],
+      "abstract": "The authors prove a sharp Furstenberg estimate in R^3 and the Kakeya set conjecture in R^4 for sticky tube configurations satisfying convex Wolff axioms.",
+      "claimed_result": "For sticky sets of tubes obeying convex Wolff axioms, the authors claim the sharp three-dimensional Furstenberg estimate and the four-dimensional Kakeya conjecture in this restricted setting.",
+      "assumptions_and_setting": "Sticky tube families satisfying convex Wolff axioms; this is not the unrestricted Kakeya conjecture in R^4.",
+      "caveat": "The theorem is restricted to the sticky case and remains a new preprint claim.",
+      "refs": ["https://arxiv.org/html/2609.22035", "https://pith.science/paper/2609.22035"]
     },
     {
-      "id": "paper-2",
+      "id": "2609.21680",
       "kind": "paper",
-      "title": "A counterexample to the quantum Hedetniemi conjecture",
+      "title": "Stable De Giorgi conjecture of the Allen–Cahn equation in R^3",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2609.20690",
-      "arxiv_id": "2609.20690",
-      "arxiv_version": "2609.20690v1",
-      "published": "2026-09-17T16:57:12Z",
-      "categories": [
-        "math.CO",
-        "quant-ph"
-      ],
-      "authors": [
-        "Julius A. Zeiss"
-      ],
-      "themes": [
-        "Combinatorics & discrete mathematics",
-        "Mathematical physics"
-      ],
-      "abstract": "Explicit graphs satisfy χ(G×H) ≤ 1538 < 1539 = min(χ_q(G),χ_q(H)), with failures for several variants.",
-      "claimed_result": "Explicit graphs satisfy χ(G×H) ≤ 1538 < 1539 = min(χ_q(G),χ_q(H)), with failures for several variants.",
-      "assumptions_and_setting": "Finite graphs, categorical products, projection-valued quantum colorings, and nonzero unital C*-algebras.",
-      "caveat": "Preprint claim; graph constructions and Lean certificates remain to be independently checked.",
-      "refs": [
-        "https://arxiv.org/abs/2609.20690"
-      ]
+      "url": "https://arxiv.org/abs/2609.21680",
+      "arxiv_id": "2609.21680",
+      "arxiv_version": "v1",
+      "published": "2026-09-18T12:15:46Z",
+      "categories": ["math.AP", "math.DG"],
+      "authors": ["Yong Liu", "Tianci Luo", "Kelei Wang", "Juncheng Wei", "Yong Wei", "Ke Wu"],
+      "themes": ["Analysis & PDE", "Geometry & topology"],
+      "abstract": "The authors claim that every bounded stable entire Allen–Cahn solution in R^3 is one-dimensional, yielding the full De Giorgi conjecture in R^4.",
+      "claimed_result": "One-dimensionality of bounded stable entire solutions in three dimensions, with the full monotone-solution De Giorgi conjecture in four dimensions as a consequence.",
+      "assumptions_and_setting": "Bounded, entire, stable solutions of the Allen–Cahn equation; the approach uses geometry of the zero set.",
+      "caveat": "The result does not resolve the general bounded non-stable problem and remains a preprint claim.",
+      "refs": ["https://arxiv.org/html/2609.21680", "https://pith.science/paper/2609.21680"]
     },
     {
-      "id": "paper-3",
+      "id": "2609.22058",
       "kind": "paper",
-      "title": "Universal completeness of exponentials",
+      "title": "Lyapunov stability of polynomial vector fields is undecidable",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2609.20805",
-      "arxiv_id": "2609.20805",
-      "arxiv_version": "2609.20805v1",
-      "published": "2026-09-17T17:58:15Z",
-      "categories": [
-        "math.CA"
-      ],
-      "authors": [
-        "Susanna Bertolini",
-        "Enric Florit-Simon",
-        "Lukas Liehr",
-        "Mitchell A. Taylor"
-      ],
-      "themes": [
-        "Analysis & PDE",
-        "Logic & foundations"
-      ],
-      "abstract": "Constructs universal exponential systems at density one and density v under the stated L^p and measure thresholds, and reports sharpness of α>1/2.",
-      "claimed_result": "Constructs universal exponential systems at density one and density v under the stated L^p and measure thresholds, and reports sharpness of α>1/2.",
-      "assumptions_and_setting": "Uniformly discrete frequency sets in R; 1≤p<∞ and measurable sets below the density threshold.",
-      "caveat": "Abstract-level summary; Lean code availability is reported but not audited.",
-      "refs": [
-        "https://arxiv.org/abs/2609.20805"
-      ]
+      "url": "https://arxiv.org/abs/2609.22058",
+      "arxiv_id": "2609.22058",
+      "arxiv_version": "v1",
+      "published": "2026-09-18T17:50:07Z",
+      "categories": ["math.DS", "math.CA", "math.OC"],
+      "authors": ["Milan Korda"],
+      "themes": ["Optimization & control", "Logic & foundations"],
+      "abstract": "For some fixed dimension and odd degree, no algorithm can decide Lyapunov stability from rational coefficients of a homogeneous polynomial vector field.",
+      "claimed_result": "There exist fixed N and odd D for which stability is undecidable for homogeneous degree-D polynomial vector fields in dimension N.",
+      "assumptions_and_setting": "Rational coefficients, homogeneous polynomial vector fields, and a fixed but large and unoptimized dimension and degree.",
+      "caveat": "The theorem gives no optimized parameters and does not make every individual stability instance undecidable.",
+      "refs": ["https://arxiv.org/html/2609.22058", "https://www.arxivnews.org/en/articles/ddec4118-80c4-430f-8ad5-c47ee2fb0ec9"]
     },
     {
-      "id": "paper-4",
+      "id": "2609.22077",
       "kind": "paper",
-      "title": "Stationary varifolds with singularities II",
+      "title": "Energy minimization for eight points on the sphere",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2609.20647",
-      "arxiv_id": "2609.20647",
-      "arxiv_version": "2609.20647v1",
-      "published": "2026-09-17T16:26:42Z",
-      "categories": [
-        "math.DG",
-        "math.AP"
-      ],
-      "authors": [
-        "Camillo De Lellis",
-        "Jonas Hirsch",
-        "Zachary Lihn",
-        "Luca Spolaor"
-      ],
-      "themes": [
-        "Geometry & topology",
-        "Analysis & PDE"
-      ],
-      "abstract": "For every m≥3, constructs a stationary integral varifold with a multiplicity-two flat tangent plane, smoothness off one point, and infinite local topology.",
-      "claimed_result": "For every m≥3, constructs a stationary integral varifold with a multiplicity-two flat tangent plane, smoothness off one point, and infinite local topology.",
-      "assumptions_and_setting": "Smooth ambient Riemannian metric; integral m-varifold stationary in an open set.",
-      "caveat": "The abstract reports correction of an earlier error; the construction needs independent review.",
-      "refs": [
-        "https://arxiv.org/abs/2609.20647"
-      ]
+      "url": "https://arxiv.org/abs/2609.22077",
+      "arxiv_id": "2609.22077",
+      "arxiv_version": "v1",
+      "published": "2026-09-18T17:58:32Z",
+      "categories": ["math.MG"],
+      "authors": ["Liudmyla Kryvonos", "Lukas Liehr", "Mitchell A. Taylor"],
+      "themes": ["Geometry & topology", "Numerical analysis & computation"],
+      "abstract": "For eight points on the unit sphere, the unique logarithmic- and Coulomb-energy minimizer up to congruence is a square antiprism; the paper also studies Riesz and other completely monotone energies.",
+      "claimed_result": "The square antiprism with height determined by a unique stationarity equation is the unique global minimizer for logarithmic and Coulomb energies, with Lean-verified and computer-assisted components.",
+      "assumptions_and_setting": "Exactly eight points on the unit sphere; the optimizer depends on the potential.",
+      "caveat": "The square antiprism is not universal for all completely monotone potentials, and some conclusions are computer-assisted.",
+      "refs": ["https://arxiv.org/html/2609.22077", "https://pith.science/paper/2609.22077"]
     },
     {
-      "id": "paper-5",
+      "id": "2609.21689",
       "kind": "paper",
-      "title": "Markovian renormalisation for percolation in high-dimension: Semi-decidability of mean field behavior",
+      "title": "On low-discrepancy sequences and Poissonian pair correlation",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2609.20764",
-      "arxiv_id": "2609.20764",
-      "arxiv_version": "2609.20764v1",
-      "published": "2026-09-17T17:44:19Z",
-      "categories": [
-        "math.PR",
-        "math-ph",
-        "math.MP"
-      ],
-      "authors": [
-        "Arthur Blanc-Renaudie"
-      ],
-      "themes": [
-        "Probability & statistics",
-        "Mathematical physics",
-        "Logic & foundations"
-      ],
-      "abstract": "Develops a Markov-chain renormalisation approach for d>6 and claims asymptotics, a local CLT, and semi-decidability of critical mean-field behavior.",
-      "claimed_result": "Develops a Markov-chain renormalisation approach for d>6 and claims asymptotics, a local CLT, and semi-decidability of critical mean-field behavior.",
-      "assumptions_and_setting": "Bernoulli percolation in dimensions d>6, with p approaching p_c from below.",
-      "caveat": "Long high-dimensional preprint; practical effectiveness and proof verification remain open.",
-      "refs": [
-        "https://arxiv.org/abs/2609.20764"
-      ]
+      "url": "https://arxiv.org/abs/2609.21689",
+      "arxiv_id": "2609.21689",
+      "arxiv_version": "v1",
+      "published": "2026-09-18T12:25:00Z",
+      "categories": ["math.NT", "math.PR"],
+      "authors": ["Hannah Porath"],
+      "themes": ["Algebra & number theory", "Probability & statistics"],
+      "abstract": "The author constructs a sequence with both optimal-order low discrepancy and Poissonian pair correlation.",
+      "claimed_result": "Existence of a low-discrepancy sequence with Poissonian pair correlation, showing the two properties are compatible.",
+      "assumptions_and_setting": "Sequences in the unit interval; discrepancy measures global uniformity and pair correlation measures local gap statistics.",
+      "caveat": "The abstract establishes existence, not a canonical or classical construction.",
+      "refs": ["https://arxiv.org/pdf/2609.21689", "https://arxiv.org/abs/2609.21689"]
     }
   ]
 }

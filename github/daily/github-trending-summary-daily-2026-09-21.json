@@ -4,25 +4,237 @@
   "window": "daily",
   "date": "2026-09-21",
   "title": "GitHub Trending Summary - Daily - 2026-09-21",
-  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-21.md",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-21.md",
   "entry_count": 12,
   "entry_noun": "repositories",
   "sections": [
-    {"id":"00-headline","kind":"headline","title":"Headline","content":"AI-agent infrastructure dominates today's list: frameworks, computer-use tooling, agent memory, and secure agent workspaces occupy the top tier. The list also shows strong practical demand for open finance, offline knowledge, media automation, and security tooling."},
-    {"id":"01-open-dev-society-openstock","kind":"repo","title":"Open-Dev-Society/OpenStock","rank":1,"url":"https://github.com/Open-Dev-Society/OpenStock","description":"An open-source alternative to paid market platforms with real-time prices, alerts, and company insights.","language":"TypeScript","stars_gained":843,"total_stars":17334,"themes":["open finance","TypeScript"]},
-    {"id":"02-trycua-cua","kind":"repo","title":"trycua/cua","rank":2,"url":"https://github.com/trycua/cua","description":"Open-source drivers, fleets, and benchmarks for scaling computer-use systems.","language":"HTML","stars_gained":609,"total_stars":25506,"themes":["computer use","agent infrastructure"]},
-    {"id":"03-ruanyf-weekly","kind":"repo","title":"ruanyf/weekly","rank":3,"url":"https://github.com/ruanyf/weekly","description":"A Chinese-language weekly publication for technology enthusiasts.","language":null,"stars_gained":621,"total_stars":103810,"themes":["technology media"]},
-    {"id":"04-builderio-agent-native","kind":"repo","title":"BuilderIO/agent-native","rank":4,"url":"https://github.com/BuilderIO/agent-native","description":"A framework for building agentic applications.","language":"TypeScript","stars_gained":607,"total_stars":5628,"themes":["agent frameworks","TypeScript"]},
-    {"id":"05-coder-coder","kind":"repo","title":"coder/coder","rank":5,"url":"https://github.com/coder/coder","description":"Secure environments for developers and their agents.","language":"Go","stars_gained":461,"total_stars":16280,"themes":["developer environments","agent security"]},
-    {"id":"06-zhouxiaoka-autoclip","kind":"repo","title":"zhouxiaoka/autoclip","rank":6,"url":"https://github.com/zhouxiaoka/autoclip","description":"AI-powered video clipping and highlight generation.","language":"Python","stars_gained":395,"total_stars":8033,"themes":["media automation","Python"]},
-    {"id":"07-crosstalk-solutions-project-nomad","kind":"repo","title":"Crosstalk-Solutions/project-nomad","rank":7,"url":"https://github.com/Crosstalk-Solutions/project-nomad","description":"An offline-first knowledge and education server with optional local AI.","language":"TypeScript","stars_gained":360,"total_stars":37621,"themes":["offline-first","local AI"]},
-    {"id":"08-anthropics-financial-services","kind":"repo","title":"anthropics/financial-services","rank":8,"url":"https://github.com/anthropics/financial-services","description":null,"language":"Python","stars_gained":425,"total_stars":35645,"themes":["financial services","Python"]},
-    {"id":"09-cloudflare-quiche","kind":"repo","title":"cloudflare/quiche","rank":9,"url":"https://github.com/cloudflare/quiche","description":"A Rust implementation of QUIC and HTTP/3.","language":"Rust","stars_gained":242,"total_stars":12181,"themes":["networking","Rust"]},
-    {"id":"10-yynxxxxx-codex-x","kind":"repo","title":"yynxxxxx/Codex-X","rank":10,"url":"https://github.com/yynxxxxx/Codex-X","description":"A cross-platform visual manager for OpenAI Codex desktop/CLI workflows, providers, sessions, skills, MCP, and TOML configuration.","language":"Rust","stars_gained":210,"total_stars":3599,"themes":["agent tooling","Rust"]},
-    {"id":"11-mvt-project-mvt","kind":"repo","title":"mvt-project/mvt","rank":11,"url":"https://github.com/mvt-project/mvt","description":"A toolkit for mobile-device forensics and compromise detection.","language":"Python","stars_gained":177,"total_stars":13393,"themes":["security","forensics","Python"]},
-    {"id":"12-akitaonrails-ai-memory","kind":"repo","title":"akitaonrails/ai-memory","rank":12,"url":"https://github.com/akitaonrails/ai-memory","description":"Long-term memory for agent coding CLIs and handoff between agent vendors.","language":"Rust","stars_gained":114,"total_stars":7457,"themes":["agent memory","Rust"]},
-    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Agent application infrastructure; local and offline computing; practical AI applications in finance and media. Language tally: Rust 3, TypeScript 3, Python 3, Go 1, HTML 1, and one unavailable."},
-    {"id":"85-notable-shifts","kind":"extra","title":"Notable Shifts","content":"The daily list is less about standalone model releases and more about the operational layer around agents: computer-use fleets, memory, secure workspaces, configuration, and application frameworks."},
-    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"Today's strongest GitHub signal is the maturation of agentic software into a product and infrastructure ecosystem. Developers are building execution, memory, security, configuration, and domain applications around agents."}
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent infrastructure dominates today's GitHub snapshot: OpenStock leads the displayed star-gain signal, while computer-use, agent-native application frameworks, agent memory, and secure agent environments fill much of the list."
+    },
+    {
+      "id": "01-builderio-agent-native",
+      "kind": "repo",
+      "title": "BuilderIO/agent-native",
+      "rank": 1,
+      "url": "https://github.com/BuilderIO/agent-native",
+      "description": "A framework for building agentic apps",
+      "language": "TypeScript",
+      "stars_gained": 607,
+      "total_stars": 5689,
+      "themes": [
+        "agent development infrastructure"
+      ],
+      "refs": [
+        "BuilderIO/agent-native"
+      ]
+    },
+    {
+      "id": "02-trycua-cua",
+      "kind": "repo",
+      "title": "trycua/cua",
+      "rank": 2,
+      "url": "https://github.com/trycua/cua",
+      "description": "Open-source infrastructure for computer-use drivers, cross-OS fleets, benchmarks, training, evaluation, and data generation.",
+      "language": "HTML",
+      "stars_gained": 609,
+      "total_stars": 25555,
+      "themes": [
+        "computer use"
+      ],
+      "refs": [
+        "trycua/cua"
+      ]
+    },
+    {
+      "id": "03-open-dev-society-openstock",
+      "kind": "repo",
+      "title": "Open-Dev-Society/OpenStock",
+      "rank": 3,
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "description": "An open-source alternative to commercial market platforms with prices, alerts, and company insights.",
+      "language": "TypeScript",
+      "stars_gained": 843,
+      "total_stars": 17426,
+      "themes": [
+        "applied AI products"
+      ],
+      "refs": [
+        "Open-Dev-Society/OpenStock"
+      ]
+    },
+    {
+      "id": "04-akitaonrails-ai-memory",
+      "kind": "repo",
+      "title": "akitaonrails/ai-memory",
+      "rank": 4,
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Long-term memory for agent coding CLIs and handoff between agent vendors.",
+      "language": "Rust",
+      "stars_gained": 217,
+      "total_stars": 7504,
+      "themes": [
+        "agent development infrastructure"
+      ],
+      "refs": [
+        "akitaonrails/ai-memory"
+      ]
+    },
+    {
+      "id": "05-coder-coder",
+      "kind": "repo",
+      "title": "coder/coder",
+      "rank": 5,
+      "url": "https://github.com/coder/coder",
+      "description": "Secure environments for developers and their agents.",
+      "language": "Go",
+      "stars_gained": 461,
+      "total_stars": 16312,
+      "themes": [
+        "agent development infrastructure"
+      ],
+      "refs": [
+        "coder/coder"
+      ]
+    },
+    {
+      "id": "06-anthropics-financial-services",
+      "kind": "repo",
+      "title": "anthropics/financial-services",
+      "rank": 6,
+      "url": "https://github.com/anthropics/financial-services",
+      "description": "A financial-services project from Anthropic.",
+      "language": "Python",
+      "stars_gained": 425,
+      "total_stars": 35678,
+      "themes": [
+        "applied AI products"
+      ],
+      "refs": [
+        "anthropics/financial-services"
+      ]
+    },
+    {
+      "id": "07-cloudflare-quiche",
+      "kind": "repo",
+      "title": "cloudflare/quiche",
+      "rank": 7,
+      "url": "https://github.com/cloudflare/quiche",
+      "description": "Savoury implementation of QUIC and HTTP/3.",
+      "language": "Rust",
+      "stars_gained": 69,
+      "total_stars": 12227,
+      "themes": [
+        "networking infrastructure"
+      ],
+      "refs": [
+        "cloudflare/quiche"
+      ]
+    },
+    {
+      "id": "08-mvt-project-mvt",
+      "kind": "repo",
+      "title": "mvt-project/mvt",
+      "rank": 8,
+      "url": "https://github.com/mvt-project/mvt",
+      "description": "Mobile forensics tooling for finding signs of device compromise.",
+      "language": "Python",
+      "stars_gained": 177,
+      "total_stars": 13429,
+      "themes": [
+        "security"
+      ],
+      "refs": [
+        "mvt-project/mvt"
+      ]
+    },
+    {
+      "id": "09-zhouxiaoka-autoclip",
+      "kind": "repo",
+      "title": "zhouxiaoka/autoclip",
+      "rank": 9,
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "description": "AI-powered video clipping and highlight generation.",
+      "language": "Python",
+      "stars_gained": 266,
+      "total_stars": 8078,
+      "themes": [
+        "applied AI products"
+      ],
+      "refs": [
+        "zhouxiaoka/autoclip"
+      ]
+    },
+    {
+      "id": "10-ruanyf-weekly",
+      "kind": "repo",
+      "title": "ruanyf/weekly",
+      "rank": 10,
+      "url": "https://github.com/ruanyf/weekly",
+      "description": "A weekly technology-interest publication.",
+      "language": "N/A - not available from GitHub",
+      "stars_gained": 221,
+      "total_stars": 103842,
+      "themes": [
+        "technology community"
+      ],
+      "refs": [
+        "ruanyf/weekly"
+      ]
+    },
+    {
+      "id": "11-crosstalk-solutions-project-nomad",
+      "kind": "repo",
+      "title": "Crosstalk-Solutions/project-nomad",
+      "rank": 11,
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "description": "Offline-first knowledge and education server with optional local AI.",
+      "language": "TypeScript",
+      "stars_gained": 360,
+      "total_stars": 37671,
+      "themes": [
+        "self-hosted and offline AI"
+      ],
+      "refs": [
+        "Crosstalk-Solutions/project-nomad"
+      ]
+    },
+    {
+      "id": "12-yynxxxxx-codex-x",
+      "kind": "repo",
+      "title": "yynxxxxx/Codex-X",
+      "rank": 12,
+      "url": "https://github.com/yynxxxxx/Codex-X",
+      "description": "Cross-platform visual management for OpenAI Codex desktop/CLI workflows.",
+      "language": "Rust",
+      "stars_gained": 79,
+      "total_stars": 3628,
+      "themes": [
+        "agent development infrastructure"
+      ],
+      "refs": [
+        "yynxxxxx/Codex-X"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent infrastructure, self-hosted/offline AI, applied AI products, and a balanced TypeScript/Rust/Python language mix."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The snapshot emphasizes the surrounding agent stack—memory, computer-use evaluation, secure execution, configuration, and domain-specific applications—alongside offline-first infrastructure."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "GitHub is in an ecosystem-building phase for AI agents, with investment moving into persistence, security, deployment, and workflow integration."
+    }
   ]
 }

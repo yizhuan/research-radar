@@ -1,99 +1,88 @@
 # arXiv Trending Physics — daily snapshot
 
-## Headline
-The latest Friday announcement batch is led by cross-field work connecting new observational reach (Rubin LSST DP2), dark-matter/neutrino phenomenology, quantum-computing verification and acceleration, and compact-object theory. arXiv provides no official trending chart; this is an inferred ranking of notable papers in the latest batch, using cross-list breadth, concrete data/code or instrument links, journal/publication signals, and the specificity of the reported result—not a readership or download ranking.
+Headline: The latest physics announcement batch is unusually concentrated around precision inference and extreme astrophysical systems: JWST atmospheric retrievals, LUX-ZEPLIN dark-matter interpretation, AGN black-hole dynamics, and fast cosmological emulation. A second thread is methodological—rigorous or quantum-enhanced tools for extracting physical information. This is an inferred “hot” list, not an official arXiv popularity ranking.
+
+The current UTC date is 2026-09-21, but Monday’s arXiv feed has no new daily batch at the snapshot time; this report therefore uses the most recent batch, announced 2026-09-18.
 
 ## Top papers (ranked)
 
-### 1. [Rubin LSST DP2 unveils almost-dark galaxies in the Virgo Cluster](https://arxiv.org/abs/2609.19246)
-- **Abstract:** The authors report seven extremely low-surface-brightness, almost-dark galaxies around M49 in the Virgo Cluster from Rubin Legacy Survey Data Preview 2, with properties analogous to the faintest Local Group satellites.
-- **Authors:** Minh Ngoc Le, Johan H. Knapen, Željko Ivezić, Junais, Aaron Watkins, et al.
-- **arXiv:** `2609.19246v1` (published 2026-09-18; categories: `astro-ph.GA`)
-- **Evidence for ranking:** Concrete new survey result tied to Rubin LSST DP2; broad collaboration and direct relevance to the faint-end galaxy luminosity function and dark-matter models; public survey data context. Citation and independent-media signals were not available for this same-day paper.
-- **Claimed result:** Seven Virgo objects have central g-band surface brightnesses of 26.9–28.5 mag arcsec⁻², half-light radii of 0.6–4.6 kpc, and stellar masses of 10⁶–10⁷ solar masses, demonstrating that Rubin can find such systems beyond the Local Group.
-- **Evidence type:** Observational; Rubin LSST Data Preview 2 imaging and follow-up analysis.
-- **Caveat:** The sample is only seven objects and the paper is a submission; larger, homogeneous samples and completeness characterization are needed before constraining the faint-end population or dark matter.
-- **Announcement type:** new submission, Friday 2026-09-18 batch
-- **Themes:** Astrophysics; Cosmology & gravitation; Computational & data methods
+### 1. [JWST MEP - A World Under Spotty Starlight: Detection of CO2 and H2O in the Hot Saturn WASP-52b with JWST NIRSpec G395H](https://arxiv.org/abs/2609.21810)
+- **Abstract:** JWST/NIRSpec transmission spectroscopy detects CO2 and confirms H2O in WASP-52b while modeling contamination from stellar spots and inhomogeneous clouds.
+- **Authors:** JWST GO 3969 Team; Yanbo Pan; Ryan J. MacDonald; Néstor Espinoza; Bibiana Prinoth; et al.
+- **arXiv:** `2609.21810v1` (published 2026-09-18 14:20 UTC; categories: `astro-ph.EP`, `astro-ph.SR`)
+- **Evidence for ranking:** Direct JWST observation; CO2 is reported at >10σ and H2O at approximately 3–4σ; the paper reports an ApJL acceptance comment and a DOI. Semantic Scholar returned the paper record but no citation totals, consistent with a very recent preprint. Independent search results verified the arXiv record.
+- **Claimed result:** The authors report the first CO2 detection for WASP-52b, confirmation of H2O, and evidence that starspots and high-altitude patchy clouds shape the spectrum; they infer a highly uncertain atmospheric metallicity.
+- **Evidence type:** observational; JWST NIRSpec G395H transmission spectrum from the JWST Morning/Evening Program.
+- **Caveat:** Composition, clouds, and stellar spots are degenerate: molecular abundances have order-of-magnitude uncertainties, and the cloud-coverage signal is only about 2.5σ.
+- **Announcement type:** new submission, announcement-batch date 2026-09-18
+- **Themes:** Astrophysics; Instrumentation & detectors; Computational & data methods
 
-### 2. [Testing Higgs-Coupled Minimal Dark Matter with Solar Neutrinos after the LZ High-Recoil Event](https://arxiv.org/abs/2609.19174)
-- **Abstract:** This phenomenological study tests whether a reported high-recoil LZ candidate can be explained by Higgs-coupled inelastic dark matter while remaining compatible with solar-neutrino limits from IceCube.
-- **Authors:** Mattia Di Mauro
-- **arXiv:** `2609.19174v1` (published 2026-09-18; categories: `hep-ph`, `astro-ph.HE`, `hep-th`)
-- **Evidence for ranking:** Three-way cross-listing and a direct connection between a terrestrial recoil claim and an independent solar-neutrino test; detailed nuclear, thermal, orbital-cooling, and detector-response treatment. Citation/attention counts were unavailable at snapshot time.
-- **Claimed result:** Several thermal benchmarks that fit the LZ event predict solar annihilation signals in strong tension with the IceCube response mapping, while the heaviest benchmarks become response-dependent or fall below the extrapolated sensitivity.
-- **Evidence type:** Computational/theoretical phenomenology; nuclear form factors, inelastic kinematics, solar capture and IceCube response calculations.
-- **Caveat:** The conclusion depends on interpreting the LZ event as a dark-matter candidate and, for masses above the published grid, on response extrapolation; the abstract does not establish a detection or exclusion independent of those assumptions.
-- **Announcement type:** new submission, Friday 2026-09-18 batch
+### 2. [LUX-ZEPLIN's Stairway to Heaνen: limits on elastic scatters of dark matter from solar capture](https://arxiv.org/abs/2609.21823)
+- **Abstract:** The authors reinterpret the reported approximately 248 keV LUX-ZEPLIN recoil under elastic dark-matter operators and use solar capture plus neutrino observations to constrain those explanations.
+- **Authors:** Debajit Bose; Akash Kumar Saha; Nirmal Raj; Tarak Nath Maity; Ranjan Laha
+- **arXiv:** `2609.21823v1` (published 2026-09-18 14:26 UTC; categories: `hep-ph`)
+- **Evidence for ranking:** Strong independent attention signal: arXiv HTML and an external technical reading both foreground the paper’s treatment of the recent LZ event. The paper directly engages a timely experimental result and connects direct detection to IceCube/Super-Kamiokande constraints. Semantic Scholar returned no citation totals yet.
+- **Claimed result:** Under the paper’s elastic-scattering fits to the LZ event, solar capture and neutrino-flux data rule out broad weak-scale dark-matter mass ranges, with the strongest limits for annihilation directly to neutrino–antineutrino pairs.
+- **Evidence type:** theoretical/computational; reconstructed LZ likelihood fits combined with solar-capture calculations and IceCube/Super-Kamiokande measurements.
+- **Caveat:** The conclusions depend on reverse-engineering the LZ best-fit Wilson coefficients and on the assumption that captured dark matter self-annihilates to the standard final states considered.
+- **Announcement type:** new submission, announcement-batch date 2026-09-18
 - **Themes:** Particle, nuclear & high-energy physics; Astrophysics; Computational & data methods
 
-### 3. [AlchemQ: Proof-Carrying Quantum Circuit Optimization with Per-Result Equivalence Certificates](https://arxiv.org/abs/2609.19160)
-- **Abstract:** AlchemQ couples an untrusted quantum-circuit optimizer to machine-checkable certificates that verify equivalence, detect mutations, and expose numerical or platform-dependent failures.
-- **Authors:** Adam Laabs
-- **arXiv:** `2609.19160v1` (published 2026-09-18; categories: `quant-ph`)
-- **Evidence for ranking:** Open certificate specification, reference verifier, benchmark/data artifacts, 2,998-test suite, and a pilot on IBM Heron hardware; the paper also reports cross-platform certificate validation. Citation signals were unavailable for this same-day submission.
-- **Claimed result:** On 100 circuits, all 400 returned optimizations were certified and mutations detected; the IBM Heron pilot produced a circuit 78% shallower with 65% fewer two-qubit gates, though its output-quality advantage was not significant at 1,024 shots.
-- **Evidence type:** Computational; ZX-calculus and numeric equivalence checks, benchmark corpus, and IBM Heron pilot data.
-- **Caveat:** The engine is proprietary, the hardware study is a pilot with limited shots, and floating-point/BLAS dependence caused certificate failures before fixes; state-of-practice generality remains untested.
-- **Announcement type:** new submission, Friday 2026-09-18 batch
-- **Themes:** Quantum information; Computational & data methods; Instrumentation & detectors
+### 3. [The AGN Channel in 3D: Scattering Belts and the Importance of Eccentricity in the Black Hole Population](https://arxiv.org/abs/2609.22074)
+- **Abstract:** Three-dimensional hybrid N-body simulations of black holes in AGN disks show that direct binary encounters broaden merger formation around migration traps and that initial eccentricity can suppress mergers by roughly an order of magnitude.
+- **Authors:** Connar Rowan; Martin E. Pessah
+- **arXiv:** `2609.22074v1` (published 2026-09-18 17:57 UTC; categories: `astro-ph.GA`, `astro-ph.HE`)
+- **Evidence for ranking:** Cross-listed between galaxy and high-energy astrophysics; independent search results surfaced both the arXiv abstract and HTML/PDF paper, emphasizing its direct treatment of binary-single and binary-binary scatterings. The paper gives a concrete gravitational-wave merger-rate estimate and Semantic Scholar returned no citation totals yet.
+- **Claimed result:** The authors find a “scattering belt” around the migration trap, hierarchical mergers producing black holes up to 10²–10³ solar masses, and an approximate rate of 2–12 Gpc⁻³ yr⁻¹ under their modeled conditions.
+- **Evidence type:** computational; three-dimensional hybrid N-body simulations using the AGNBI code in development.
+- **Caveat:** The rate and mass distribution are model-dependent, and the simulation strategy isolates dominant encounters rather than resolving every interaction in a full AGN population.
+- **Announcement type:** new submission, announcement-batch date 2026-09-18
+- **Themes:** Astrophysics; Cosmology & gravitation; Computational & data methods
 
-### 4. [Qupertino: Pure MLX Array Kernels versus Hand-Tuned Metal Shaders for Quantum Circuit Simulation on Apple Silicon](https://arxiv.org/abs/2609.19147)
-- **Abstract:** The paper presents an Apple-Silicon quantum-circuit simulator and benchmarks pure MLX kernels against hand-written Metal shaders across structured circuit workloads.
-- **Authors:** Shlomo Kashani
-- **arXiv:** `2609.19147v1` (published 2026-09-18; categories: `quant-ph`)
-- **Evidence for ranking:** Open-source implementation, 29-workload benchmark, explicit correctness tests, and large measured speedups on a widely available accelerator platform; citation signals unavailable at snapshot time.
-- **Claimed result:** On an M1 Max, the shader tier was fastest in all 18 comparison cells; at 25 qubits, reported mean times were 0.0591 s for gate-stream QFT and 0.495 s for TFIM Trotter evolution, with the stated comparisons favoring the shader tier.
-- **Evidence type:** Computational; measured simulator benchmarks, parity tests, complex128 checks, and exact-diagonalization comparison.
-- **Caveat:** State-vector memory remains exponential, and the headline speedups are hardware-, workload-, and baseline-specific; the preliminary MPS result is limited to low-entanglement workloads.
-- **Announcement type:** new submission, Friday 2026-09-18 batch
-- **Themes:** Quantum information; Computational & data methods
+### 4. [A computer assisted existence proof for a non-Schwarzschild black hole in Einstein--Weyl gravity](https://arxiv.org/abs/2609.21797)
+- **Abstract:** A computer-assisted interval-arithmetic argument certifies the existence of a regular, asymptotically flat non-Schwarzschild black-hole solution in four-dimensional Einstein–Weyl gravity.
+- **Authors:** Kevin Goldstein; Vishnu Jejjala
+- **arXiv:** `2609.21797v1` (published 2026-09-18 14:12 UTC; categories: `gr-qc`, `hep-th`)
+- **Evidence for ranking:** Cross-listing across general relativity and high-energy theory; the result upgrades a previously numerical branch to a rigorous existence statement for one solution. Independent search results verified the arXiv record and linked prior literature on non-Schwarzschild solutions. Semantic Scholar returned no citation totals.
+- **Claimed result:** The authors certify a matching zero with a regular nondegenerate horizon, no additional exterior horizon, zero Ricci scalar, and nonzero Ricci tensor.
+- **Evidence type:** theoretical/computational; computer-assisted proof using convergent series, directed rounding, stable-manifold analysis, and the Poincaré–Miranda theorem.
+- **Caveat:** The proof establishes existence but not uniqueness; it also concerns a particular parameter regime and does not by itself establish physical stability or astrophysical formation.
+- **Announcement type:** new submission, announcement-batch date 2026-09-18
+- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics; Computational & data methods
 
-### 5. [Bosonic stars with dark electroweak fields](https://arxiv.org/abs/2609.19273)
-- **Abstract:** The authors construct regular, asymptotically flat bosonic-star solutions in an Einstein–Weinberg–Salam model and interpret them as macroscopic objects only after rescaling to a dark electroweak sector.
-- **Authors:** Etevaldo dos Santos Costa Filho, Romain Gervalle
-- **arXiv:** `2609.19273v1` (published 2026-09-18; categories: `gr-qc`, `hep-th`)
-- **Evidence for ranking:** Cross-listing between general relativity and high-energy theory; connects Standard-Model field structure to compact-object phenomenology and explicitly relates an ultralight-vector benchmark to the GW190521 bosonic-star interpretation. No same-day citation or independent-attention signal was available.
-- **Claimed result:** Regular spherical condensates of massive W and Z fields exist in the model; for an ultralight vector mass of 8.7×10⁻¹³ eV, the solutions can reach intermediate-mass-black-hole scales.
-- **Evidence type:** Theoretical; nonlinear Einstein–matter field solutions and dark-sector parameter scaling.
-- **Caveat:** The physical electroweak mass scale gives microscopic objects, so the astrophysical interpretation requires a dark-sector rescaling; observational viability is not established by the construction.
-- **Announcement type:** new submission, Friday 2026-09-18 batch
-- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics; Astrophysics
-
-### 6. [Femtoscopic Correlation Functions in Density Operator Representation](https://arxiv.org/abs/2609.19161)
-- **Abstract:** This work reformulates femtoscopic correlation functions using a reduced density operator and an effective measurement operator, recovering the Koonin–Pratt form under four reductions.
-- **Authors:** Hao-Nan Liu, Duo-Lun Ge, Zhi-Wei Liu, Jun-Xu Lu, Li-Sheng Geng
-- **arXiv:** `2609.19161v1` (published 2026-09-18; categories: `quant-ph`, `hep-ex`, `hep-ph`, `nucl-ex`, `nucl-th`)
-- **Evidence for ranking:** Five-way cross-listing and a formal bridge between quantum measurement language and hadron/nuclear femtoscopy; it proposes an operational source–interaction matching convention for cross-system predictions. Citation signals were unavailable at snapshot time.
-- **Claimed result:** The operator-level formulation makes source-side and interaction-side consistency explicit and motivates using a measured reference correlation to define a compatible pairing for predictions involving other particle pairs.
-- **Evidence type:** Theoretical/formal; density-operator and effective-measurement-operator derivation.
-- **Caveat:** The abstract presents a formal framework rather than a new experimental measurement; its predictive utility depends on validating the proposed matching convention against data.
-- **Announcement type:** new submission, Friday 2026-09-18 batch
-- **Themes:** Quantum information; Particle, nuclear & high-energy physics; Computational & data methods
+### 5. [FLUMEN: Neural Emulator of an Advanced Stochastic Weak Lensing Model](https://arxiv.org/abs/2609.21806)
+- **Abstract:** FLUMEN is a conditional normalizing-flow emulator for full weak-lensing magnification distributions, including low-mass halos, subhalos, filaments, and large-scale clustering across source redshift and cosmological parameters.
+- **Authors:** Galymzhan Baltabay; Ville Vaskonen
+- **arXiv:** `2609.21806v1` (published 2026-09-18 14:18 UTC; categories: `astro-ph.CO`)
+- **Evidence for ranking:** The paper reports a concrete public code artifact in its arXiv comment (`github.com/baltabaygal/flumen`), a cross-cutting cosmology/data-method contribution, and a very low held-out median KL divergence of 0.0048. Independent search results verified the arXiv entry; Semantic Scholar returned no citation totals.
+- **Claimed result:** The emulator reproduces Monte Carlo magnification distributions at negligible inference cost while enforcing the empty-beam cutoff and fold-caustic tail analytically, enabling use in standard-siren and supernova analyses.
+- **Evidence type:** computational; Monte Carlo lensing model, conditional normalizing flow, and held-out cosmologies.
+- **Caveat:** The emulator inherits the assumptions and finite-resolution limitations of the underlying lensing model; the abstract notes disagreement between its scatter and finite-box N-body ray tracing that must be resolved in downstream analyses.
+- **Announcement type:** new submission, announcement-batch date 2026-09-18
+- **Themes:** Cosmology & gravitation; Computational & data methods
 
 ## Trending Research Themes
 
-- **New low-surface-brightness discovery space:** Rubin DP2 is already exposing almost-dark Virgo satellites, while the authors frame the ten-year LSST survey as a route to statistical tests of the faint-end galaxy population (2609.19246).
-- **Cross-checking dark matter with multiple messengers:** The LZ high-recoil interpretation is tested against solar capture and IceCube neutrino sensitivity rather than treated as a standalone recoil claim (2609.19174).
-- **Verification and reproducibility for quantum computation:** AlchemQ makes equivalence certificates and failure modes first-class artifacts, while Qupertino emphasizes reproducible correctness tests alongside accelerator-specific performance (2609.19160, 2609.19147).
-- **Bridging quantum formalism and high-energy/nuclear observables:** Density-operator language is used to clarify femtoscopic correlation functions, with cross-lists spanning quantum information, collider physics, and nuclear theory/experiment (2609.19161).
-- **Field-theory structure in compact-object models:** Bosonic-star solutions connect gravitational configurations to electroweak-like dark sectors, but the astrophysical interpretation is explicitly model-dependent (2609.19273).
+- **Precision inference under astrophysical nuisance effects:** WASP-52b combines molecular retrieval with stellar-spot and cloud modeling; FLUMEN similarly targets a full distribution rather than a simplified mean signal.
+- **Connecting observations to indirect constraints:** The LZ paper turns a direct-detection recoil into solar-capture and neutrino constraints, while the AGN paper maps simulated black-hole dynamics to gravitational-wave populations.
+- **Computational methods becoming part of the physical result:** The black-hole existence proof, FLUMEN normalizing-flow emulator, and AGNBI simulations are not merely implementation details; they determine what can be certified, forecast, or inferred.
+- **Cross-listing as a signal of active interfaces:** The selected papers span astrophysics, cosmology, high-energy physics, general relativity, and machine-learning/data methods. This is a thematic signal, not evidence of independent confirmation.
 
 ## Open Problems and Research Directions
 
-- **Rubin completeness and dark-matter inference:** Determine the selection function and contamination rate for the seven Virgo candidates, then expand to a statistically complete sample across cluster environments (2609.19246). This is an evidence-tied follow-up, not a claim that the current sample already constrains dark matter.
-- **Independent tests of the LZ interpretation:** Recompute the solar-neutrino prediction under alternative halo, nuclear-response, and detector-response assumptions, and compare with future direct-detection and neutrino data (2609.19174).
-- **Hardware-independent quantum certificates:** Test AlchemQ's certificate protocol on additional vendor backends, shot budgets, compiler stacks, and numerical libraries, especially where floating-point conventions differ (2609.19160).
-- **Scaling beyond state vectors:** Establish where Qupertino's structured kernels cease to help and compare against tensor-network and distributed simulators at larger qubit counts and higher entanglement (2609.19147).
-- **Observational signatures of dark electroweak stars:** Map stability, formation channels, lensing, and gravitational-wave signatures for the rescaled solutions, rather than inferring observability from mass range alone (2609.19273).
-- **Data validation of operator-level femtoscopy:** Fit the proposed density-operator convention to measured reference and target-pair correlations and quantify the systematic error from source–interaction mismatch (2609.19161).
+- **Separate atmospheric composition from stellar contamination and clouds.** WASP-52b leaves order-of-magnitude abundance uncertainty because of retrieval degeneracies. Follow-up multi-epoch, multi-instrument spectra and jointly constrained stellar activity models could test the claimed chemistry.
+- **Test the LZ recoil interpretation with independent channels.** The dark-matter limits rely on reconstructed elastic fits and annihilation assumptions. Future LZ exposure, direct-detection targets with different nuclei, and updated solar-neutrino analyses can distinguish elastic, inelastic, and background explanations.
+- **Establish the robustness of AGN merger rates.** The AGN study finds strong sensitivity to eccentricity and encounter dynamics. Larger ensembles spanning disk structure, black-hole velocity distributions, and binary hardening prescriptions could quantify the uncertainty in the 2–12 Gpc⁻³ yr⁻¹ estimate.
+- **Move beyond existence for Einstein–Weyl black holes.** The rigorous result does not prove uniqueness, stability, or formation. Linear perturbation calculations and global parameter continuation are the immediate theory tests suggested by the paper’s limitation.
+- **Validate FLUMEN against converged ray tracing and real standard-siren data.** The emulator is fast, but its fidelity is bounded by the underlying lensing model and simulation resolution. Higher-resolution, larger-volume simulations and end-to-end cosmological inference would test whether the distribution changes parameter posteriors materially.
 
 ## Takeaway
-The strongest same-day pattern is not one confirmed breakthrough but a movement toward cross-validation: Rubin expands the observational sample space, dark-matter models are tested across detectors, and quantum-computing papers package performance claims with artifacts and certificates. Because this is a same-day preprint snapshot, citation momentum is necessarily sparse and all results remain preliminary until independently reproduced or peer reviewed.
+
+The hottest inferred papers in the latest batch are less about a single headline discovery than about extracting more reliable information from difficult signals: active-star contamination, ambiguous dark-matter events, many-body black-hole dynamics, modified-gravity solutions, and weak-lensing scatter. Most are new preprints with effectively zero citation history, so the ordering reflects scientific salience, cross-listing, direct observational or computational artifacts, and independent search corroboration—not measured readership.
 
 ## Method and sources
 
-- **Window:** daily; latest arXiv announcement batch available at snapshot time, Friday 2026-09-18. There was no new batch on Saturday 2026-09-19 when checked; snapshot: 2026-09-19 15:30 UTC.
-- **Archive coverage checked:** physics, astro-ph, cond-mat, quant-ph, hep-ph, and gr-qc new-submission pages; the selected set includes cross-listed records and was deduplicated by arXiv ID. The report is a curated sample, not a complete census of every physics archive.
-- **Inference method:** rank by concrete result, cross-list breadth, survey/instrument or code/data artifact, journal/publication context, and relevance across physics subfields. Same-day Semantic Scholar citation counts and independent-attention signals were unavailable or too sparse to support a measured popularity ranking.
-- **Primary sources:** arXiv announcement pages and canonical abstract pages linked in each entry. arXiv does not publish an official trending chart; ordering is inferred and must not be read as most-read or most-downloaded.
+- **Window:** daily; latest available arXiv announcement batch, 2026-09-18, because no newer batch was available at 2026-09-21 15:30 UTC.
+- **Scope checked:** arXiv physics group and major physics archives: `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`, using the arXiv API’s newest cross-archive pool and category recent feeds.
+- **Ranking:** inferred from concrete result significance, cross-listing, reported data/code or proof artifacts, journal/acceptance metadata, and corroborating web search. arXiv supplies no official trending chart; no claim is made about most-read or most-downloaded papers. Semantic Scholar checks were made for the six initial candidates; no citation totals were returned for these newly posted records.
+- **Primary sources:** arXiv abstract pages linked in each entry; arXiv API feed; Semantic Scholar Graph API metadata; independent web-search results for the LZ, AGN, black-hole-proof, FLUMEN, and JWST records.

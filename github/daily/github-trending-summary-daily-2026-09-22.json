@@ -5,190 +5,168 @@
   "date": "2026-09-22",
   "title": "GitHub Trending Summary - Daily - 2026-09-22",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-22.md",
-  "entry_count": 9,
+  "entry_count": 8,
   "entry_noun": "repositories",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "AI agent infrastructure dominates today's signal: web agents, agent orchestration, local decision models, and parallel coding-agent runtimes occupy most of the leading positions. The strongest individual momentum is concentrated in fast-moving Python and Go projects, while TypeScript remains prominent in production-oriented agent tooling."
+      "content": "AI-agent infrastructure dominates today's GitHub Trending list. Google/ax is the clear momentum leader at +2,324 stars, while the rest of the leading set clusters around agent runtimes, tool registries, agent-ready office software, and coding-agent media workflows."
     },
     {
-      "id": "01-nandhakishorm-laya",
-      "kind": "repo",
-      "title": "NandhaKishorM/laya",
-      "rank": 1,
-      "url": "https://github.com/NandhaKishorM/laya",
-      "description": "Fast web agent focused on speed and low cost.",
-      "language": "Python",
-      "stars_gained": 3792,
-      "total_stars": 13235,
-      "themes": [
-        "web agents",
-        "local inference"
-      ],
-      "refs": [
-        "NandhaKishorM/laya"
-      ]
-    },
-    {
-      "id": "02-google-ax",
+      "id": "01-google-ax",
       "kind": "repo",
       "title": "google/ax",
-      "rank": 2,
+      "rank": 1,
       "url": "https://github.com/google/ax",
       "description": "Google's open agentic orchestration runtime.",
       "language": "Go",
-      "stars_gained": 2792,
-      "total_stars": 6601,
+      "stars_gained": 2324,
+      "total_stars": 7128,
       "themes": [
-        "agent orchestration"
+        "agent runtimes"
       ],
       "refs": [
         "google/ax"
       ]
     },
     {
-      "id": "03-eternity4719-howtolivebetter",
+      "id": "02-agent-substrate-substrate",
       "kind": "repo",
-      "title": "eternity4719/HowToLiveBetter",
+      "title": "agent-substrate/substrate",
+      "rank": 2,
+      "url": "https://github.com/agent-substrate/substrate",
+      "description": "Agent Substrate: the core system",
+      "language": "Go",
+      "stars_gained": 498,
+      "total_stars": 2807,
+      "themes": [
+        "agent runtimes"
+      ],
+      "refs": [
+        "agent-substrate/substrate"
+      ]
+    },
+    {
+      "id": "03-mvt-project-mvt",
+      "kind": "repo",
+      "title": "mvt-project/mvt",
       "rank": 3,
-      "url": "https://github.com/eternity4719/HowToLiveBetter",
-      "description": "Evidence-oriented Chinese-language life guide covering health, finance, law, work, and family topics.",
-      "language": "HTML",
-      "stars_gained": 2378,
-      "total_stars": 11947,
+      "url": "https://github.com/mvt-project/mvt",
+      "description": "Mobile forensics tooling for finding signs of device compromise.",
+      "language": "Python",
+      "stars_gained": 441,
+      "total_stars": 13853,
       "themes": [
-        "reference content"
+        "security"
       ],
       "refs": [
-        "eternity4719/HowToLiveBetter"
+        "mvt-project/mvt"
       ]
     },
     {
-      "id": "04-mizorewww-laya-mlx",
+      "id": "04-anthropics-financial-services",
       "kind": "repo",
-      "title": "mizorewww/laya-mlx",
+      "title": "anthropics/financial-services",
       "rank": 4,
-      "url": "https://github.com/mizorewww/laya-mlx",
-      "description": "Native MLX runtime for Laya typed decision models, targeting low-latency local inference on Apple silicon.",
+      "url": "https://github.com/anthropics/financial-services",
+      "description": "An Anthropic project for financial-services use cases.",
       "language": "Python",
-      "stars_gained": 2176,
-      "total_stars": 4657,
+      "stars_gained": 436,
+      "total_stars": 36150,
       "themes": [
-        "local inference",
-        "Apple silicon"
+        "domain AI"
       ],
       "refs": [
-        "mizorewww/laya-mlx"
+        "anthropics/financial-services"
       ]
     },
     {
-      "id": "05-albert-weasker-niubigeo",
+      "id": "05-dream-num-univer",
       "kind": "repo",
-      "title": "Albert-Weasker/niubigeo",
+      "title": "dream-num/univer",
       "rank": 5,
-      "url": "https://github.com/Albert-Weasker/niubigeo",
-      "description": "Open-source AI brand-visibility and competitor-reporting tooling.",
+      "url": "https://github.com/dream-num/univer",
+      "description": "An office harness for AI agents spanning spreadsheets, docs, slides, canvas, relational tables, and PDF.",
       "language": "TypeScript",
-      "stars_gained": 2162,
-      "total_stars": 4814,
+      "stars_gained": 202,
+      "total_stars": 15093,
       "themes": [
-        "AI visibility"
+        "agent applications"
       ],
       "refs": [
-        "Albert-Weasker/niubigeo"
+        "dream-num/univer"
       ]
     },
     {
-      "id": "06-jaredpalmer-kev",
+      "id": "06-superdesigndev-treg",
       "kind": "repo",
-      "title": "jaredpalmer/kev",
+      "title": "superdesigndev/treg",
       "rank": 6,
-      "url": "https://github.com/jaredpalmer/kev",
-      "description": "Small decision-model family built on Qwen3.5 that can be trained and run locally.",
+      "url": "https://github.com/superdesigndev/treg",
+      "description": "An OpenRouter-like layer for agent tools.",
       "language": "Python",
-      "stars_gained": 1450,
-      "total_stars": 2892,
+      "stars_gained": 197,
+      "total_stars": 2055,
       "themes": [
-        "local inference",
-        "decision models"
-      ],
-      "refs": [
-        "jaredpalmer/kev"
-      ]
-    },
-    {
-      "id": "07-deepseek-ai-deepseek-harness",
-      "kind": "repo",
-      "title": "deepseek-ai/deepseek-harness",
-      "rank": 7,
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "description": "Plugin-oriented harness for building and extending agent systems.",
-      "language": "TypeScript",
-      "stars_gained": 1097,
-      "total_stars": 232884,
-      "themes": [
-        "agent tooling",
-        "plugins"
-      ],
-      "refs": [
-        "deepseek-ai/deepseek-harness"
-      ]
-    },
-    {
-      "id": "08-stablyai-orca",
-      "kind": "repo",
-      "title": "stablyai/orca",
-      "rank": 8,
-      "url": "https://github.com/stablyai/orca",
-      "description": "Development environment for running fleets of parallel coding agents across desktop, mobile, and remote runtimes.",
-      "language": "TypeScript",
-      "stars_gained": 1069,
-      "total_stars": 75064,
-      "themes": [
-        "parallel agents",
         "agent tooling"
       ],
       "refs": [
-        "stablyai/orca"
+        "superdesigndev/treg"
       ]
     },
     {
-      "id": "09-mak5er-aircard",
+      "id": "07-browser-use-video-use",
       "kind": "repo",
-      "title": "Mak5er/AirCard",
-      "rank": 9,
-      "url": "https://github.com/Mak5er/AirCard",
-      "description": "Apple Wallet card customization tool for iOS 18+ without a jailbreak.",
-      "language": "Swift",
-      "stars_gained": 873,
-      "total_stars": 2342,
+      "title": "browser-use/video-use",
+      "rank": 7,
+      "url": "https://github.com/browser-use/video-use",
+      "description": "Edit videos with coding agents.",
+      "language": "Python",
+      "stars_gained": 155,
+      "total_stars": 25632,
       "themes": [
-        "iOS tooling"
+        "agent applications"
       ],
       "refs": [
-        "Mak5er/AirCard"
+        "browser-use/video-use"
+      ]
+    },
+    {
+      "id": "08-davila7-claude-code-templates",
+      "kind": "repo",
+      "title": "davila7/claude-code-templates",
+      "rank": 8,
+      "url": "https://github.com/davila7/claude-code-templates",
+      "description": "A CLI tool for configuring and monitoring Claude Code.",
+      "language": "Python",
+      "stars_gained": 33,
+      "total_stars": 30985,
+      "themes": [
+        "agent tooling"
+      ],
+      "refs": [
+        "davila7/claude-code-templates"
       ]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Agent runtimes and orchestration dominate; local and efficient inference is a secondary cluster; AI visibility is an emerging applied-tooling category. Python and TypeScript each appear in three of nine entries; Go, HTML, and Swift appear once."
+      "content": "Agent runtimes and substrates, agent tooling and operations, agents in work applications, Python-led applied automation, and domain-specific security/financial systems."
     },
     {
       "id": "85-notable-shifts",
       "kind": "extra",
       "title": "Notable Shifts",
-      "content": "The list is shifting from standalone chat or model repositories toward operational infrastructure: orchestration runtimes, parallel-agent environments, plugin systems, and specialized decision models."
+      "content": "The strongest shift is from standalone model demos toward operational agent stacks: orchestration runtimes, substrates, tool registries, configuration, and agent-mediated work applications."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "Today's snapshot is primarily an agent-engineering snapshot. The strongest themes are orchestration, local inference, and practical evaluation or visibility tooling."
+      "content": "GitHub momentum is accruing around the connective tissue that makes agents useful in real workflows, not only around models themselves. Go is gaining visibility in foundational runtimes, while Python remains the main implementation language for applied tools and automation."
     }
   ]
 }

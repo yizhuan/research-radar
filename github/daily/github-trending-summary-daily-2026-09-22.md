@@ -4,70 +4,67 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-22 09:30 UTC |
+| Snapshot time (UTC) | 2026-09-22 15:40 UTC |
 | Scope | Daily |
 | Date range | 2026-09-22 through 2026-09-22 |
-| Ranking basis | Daily trending star gains from the captured daily trend snapshot |
+| Ranking basis | Daily Trending star gains |
 
 ## Headline
 
-AI agent infrastructure dominates today's signal: web agents, agent orchestration, local decision models, and parallel coding-agent runtimes occupy most of the leading positions. The strongest individual momentum is concentrated in fast-moving Python and Go projects, while TypeScript remains prominent in production-oriented agent tooling.
+AI-agent infrastructure dominates today's GitHub Trending list. Google/ax is the clear momentum leader at +2,324 stars, while the rest of the leading set clusters around agent runtimes, tool registries, agent-ready office software, and coding-agent media workflows.
 
 ## Top Repositories
 
-1. **[NandhaKishorM/laya](https://github.com/NandhaKishorM/laya)  - Fast web agent focused on speed and low cost.**
+1. **[google/ax](https://github.com/google/ax) - Google's open agentic orchestration runtime.**
 
-  **Language:** Python | **Stars gained in window:** +3,792 | **Total stars:** 13,235 | **Why notable:** It leads the captured daily ranking and is the clearest signal for browser/web-agent interest.
+  **Language:** Go | **Stars gained in window:** +2,324 | **Total stars:** 7,128 | **Why notable:** It has the largest daily star gain in this snapshot and represents growing interest in production-oriented agent orchestration.
 
-2. **[google/ax](https://github.com/google/ax)  - Google's open agentic orchestration runtime.**
+2. **[agent-substrate/substrate](https://github.com/agent-substrate/substrate) - Agent Substrate: the core system.**
 
-  **Language:** Go | **Stars gained in window:** +2,792 | **Total stars:** 6,601 | **Why notable:** Strong momentum around an open runtime suggests agent coordination is becoming a platform concern, not just an application feature.
+  **Language:** Go | **Stars gained in window:** +498 | **Total stars:** 2,807 | **Why notable:** Its rapid daily growth points to demand for foundational systems beneath agent applications.
 
-3. **[eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter)  - Evidence-oriented Chinese-language life guide covering health, finance, law, work, and family topics.**
+3. **[mvt-project/mvt](https://github.com/mvt-project/mvt) - Mobile forensics tooling for finding signs of device compromise.**
 
-  **Language:** HTML | **Stars gained in window:** +2,378 | **Total stars:** 11,947 | **Why notable:** It is the main non-AI outlier in the top tier, showing that practical, source-backed reference content can also generate strong daily attention.
+  **Language:** Python | **Stars gained in window:** +441 | **Total stars:** 13,853 | **Why notable:** Security and mobile-forensics interest is a notable counterweight to the agent-heavy trend.
 
-4. **[mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx)  - Native MLX runtime for Laya typed decision models, targeting low-latency local inference on Apple silicon.**
+4. **[anthropics/financial-services](https://github.com/anthropics/financial-services) - An Anthropic project for financial-services use cases.**
 
-  **Language:** Python | **Stars gained in window:** +2,176 | **Total stars:** 4,657 | **Why notable:** It connects the leading web-agent project to efficient, local, hardware-specific inference.
+  **Language:** Python | **Stars gained in window:** +436 | **Total stars:** 36,150 | **Why notable:** It combines a large existing audience with strong same-day momentum and reinforces the shift toward domain-specific AI tooling.
 
-5. **[Albert-Weasker/niubigeo](https://github.com/Albert-Weasker/niubigeo)  - Open-source AI brand-visibility and competitor-reporting tooling.**
+5. **[dream-num/univer](https://github.com/dream-num/univer) - An office harness for AI agents spanning spreadsheets, docs, slides, canvas, relational tables, and PDF.**
 
-  **Language:** TypeScript | **Stars gained in window:** +2,162 | **Total stars:** 4,814 | **Why notable:** The project reflects growing interest in measuring how brands appear in AI-generated answers, an emerging developer and marketing category.
+  **Language:** TypeScript | **Stars gained in window:** +202 | **Total stars:** 15,093 | **Why notable:** It shows agents moving beyond chat into structured, multi-format work environments.
 
-6. **[jaredpalmer/kev](https://github.com/jaredpalmer/kev)  - Small decision-model family built on Qwen3.5 that can be trained and run locally.**
+6. **[superdesigndev/treg](https://github.com/superdesigndev/treg) - An OpenRouter-like layer for agent tools.**
 
-  **Language:** Python | **Stars gained in window:** +1,450 | **Total stars:** 2,892 | **Why notable:** Its momentum reinforces the shift toward compact, trainable, locally runnable models rather than cloud-only systems.
+  **Language:** Python | **Stars gained in window:** +197 | **Total stars:** 2,055 | **Why notable:** Tool discovery, proxying, credentials, and MCP-related plumbing are emerging as their own product layer.
 
-7. **[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)  - Plugin-oriented harness for building and extending agent systems.**
+7. **[browser-use/video-use](https://github.com/browser-use/video-use) - Edit videos with coding agents.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,097 | **Total stars:** 232,884 | **Why notable:** A large installed base combined with continued daily attention makes extensible agent harnesses a durable trend, not merely a launch spike.
+  **Language:** Python | **Stars gained in window:** +155 | **Total stars:** 25,632 | **Why notable:** It extends coding-agent workflows into multimodal creative production.
 
-8. **[stablyai/orca](https://github.com/stablyai/orca)  - Development environment for running fleets of parallel coding agents across desktop, mobile, and remote runtimes.**
+8. **[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) - A CLI tool for configuring and monitoring Claude Code.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,069 | **Total stars:** 75,064 | **Why notable:** It represents the operational side of the agent wave: coordinating many agents, worktrees, and runtimes.
-
-9. **[Mak5er/AirCard](https://github.com/Mak5er/AirCard)  - Apple Wallet card customization tool for iOS 18+ without a jailbreak.**
-
-  **Language:** Swift | **Stars gained in window:** +873 | **Total stars:** 2,342 | **Why notable:** It is the leading mobile/platform utility in the captured list and the clearest non-agent software-tooling counterpoint.
+  **Language:** Python | **Stars gained in window:** +33 | **Total stars:** 30,985 | **Why notable:** Its lower daily gain but high total star count suggests an established ecosystem around agent configuration and operations.
 
 ## Trending Technologies and Themes
 
-- **Agent runtimes and orchestration:** laya, google/ax, deepseek-harness, and stablyai/orca show demand across the full agent stack, from web interaction to plugins and multi-agent operations.
-- **Local and efficient inference:** laya-mlx and kev point to typed decision models, Apple-silicon acceleration, Qwen3.5-based models, and locally runnable systems.
-- **AI visibility and applied tooling:** niubigeo extends the trend beyond model building into measurement of AI-generated brand visibility and competitive positioning.
-- **Languages:** Python leads the listed entries with three repositories; TypeScript follows with three; Go, HTML, and Swift contribute one each. This is a tooling-heavy mix rather than a framework-only trend.
+- **Agent runtimes and substrates:** google/ax and agent-substrate/substrate place orchestration and core agent systems at the top of the daily ranking.
+- **Agent tooling and operations:** superdesigndev/treg and davila7/claude-code-templates focus on tool access, configuration, monitoring, registries, and credentials.
+- **Agents in work applications:** dream-num/univer applies agents to office and document workflows, while browser-use/video-use targets video editing.
+- **Languages:** Python leads the listed set with 5 of 8 repositories; Go appears in 2 and TypeScript in 1.
+- **Security and domain applications:** mvt-project/mvt and anthropics/financial-services show demand for applied, domain-specific systems alongside general agent infrastructure.
 
 ## Notable Shifts
 
-The notable shift is from standalone chat or model repositories toward operational infrastructure: orchestration runtimes, parallel-agent environments, plugin systems, and specialized decision models. The list also shows AI adoption spreading into web automation, brand analytics, and practical reference content rather than remaining confined to model research.
+The strongest shift is from standalone model demos toward operational agent stacks: orchestration runtimes, substrates, tool registries, configuration, and agent-mediated work applications. The list is still not exclusively AI—mobile security remains a meaningful high-ranking theme—but agent infrastructure is the dominant pattern.
 
 ## Takeaway
 
-Today's snapshot is primarily an agent-engineering snapshot. The highest momentum is around making agents fast, cheap, local, composable, and manageable at fleet scale. For developers choosing where to investigate, the strongest themes are orchestration, local inference, and practical evaluation or visibility tooling.
+Today's snapshot suggests that GitHub momentum is accruing around the connective tissue that makes agents useful in real workflows, not only around models themselves. Go is gaining visibility in foundational runtimes, while Python remains the main implementation language for applied tools and automation. For developers, the most durable opportunity appears to be in orchestration, tool access, and domain-specific execution layers.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily).
-- **Corroboration:** [GitTrend daily rankings](https://gittrend.io/) for the captured daily star-gain ordering; GitHub REST API `GET /repos/{owner}/{repo}` for current repository metadata and total stars.
-- **Method note:** The ranking uses the daily star-gain snapshot captured on 2026-09-22. Total-star counts and descriptions were checked against GitHub's REST API; star gains are window values from the captured daily trend source and can differ from later API totals as stars arrive during the day. The direct GitHub HTML response exposed only one rendered trend article in this fetch, so the daily ordering was cross-checked against the GitTrend daily view rather than treated as a single-scrape ground truth.
+- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily)
+- **Corroboration:** GitHub REST API repository metadata for each listed repository, including total stars, language, description, and freshness fields.
+- **Method note:** Repositories were taken from the daily GitHub Trending view and ranked by the displayed daily star-gain signal; REST API metadata was used to corroborate repository identity and totals. Snapshot reflects a 2026-09-22 UTC retrieval and may change later in the day.

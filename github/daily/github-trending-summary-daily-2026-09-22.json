@@ -1,0 +1,194 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-22",
+  "title": "GitHub Trending Summary - Daily - 2026-09-22",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-22.md",
+  "entry_count": 9,
+  "entry_noun": "repositories",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI agent infrastructure dominates today's signal: web agents, agent orchestration, local decision models, and parallel coding-agent runtimes occupy most of the leading positions. The strongest individual momentum is concentrated in fast-moving Python and Go projects, while TypeScript remains prominent in production-oriented agent tooling."
+    },
+    {
+      "id": "01-nandhakishorm-laya",
+      "kind": "repo",
+      "title": "NandhaKishorM/laya",
+      "rank": 1,
+      "url": "https://github.com/NandhaKishorM/laya",
+      "description": "Fast web agent focused on speed and low cost.",
+      "language": "Python",
+      "stars_gained": 3792,
+      "total_stars": 13235,
+      "themes": [
+        "web agents",
+        "local inference"
+      ],
+      "refs": [
+        "NandhaKishorM/laya"
+      ]
+    },
+    {
+      "id": "02-google-ax",
+      "kind": "repo",
+      "title": "google/ax",
+      "rank": 2,
+      "url": "https://github.com/google/ax",
+      "description": "Google's open agentic orchestration runtime.",
+      "language": "Go",
+      "stars_gained": 2792,
+      "total_stars": 6601,
+      "themes": [
+        "agent orchestration"
+      ],
+      "refs": [
+        "google/ax"
+      ]
+    },
+    {
+      "id": "03-eternity4719-howtolivebetter",
+      "kind": "repo",
+      "title": "eternity4719/HowToLiveBetter",
+      "rank": 3,
+      "url": "https://github.com/eternity4719/HowToLiveBetter",
+      "description": "Evidence-oriented Chinese-language life guide covering health, finance, law, work, and family topics.",
+      "language": "HTML",
+      "stars_gained": 2378,
+      "total_stars": 11947,
+      "themes": [
+        "reference content"
+      ],
+      "refs": [
+        "eternity4719/HowToLiveBetter"
+      ]
+    },
+    {
+      "id": "04-mizorewww-laya-mlx",
+      "kind": "repo",
+      "title": "mizorewww/laya-mlx",
+      "rank": 4,
+      "url": "https://github.com/mizorewww/laya-mlx",
+      "description": "Native MLX runtime for Laya typed decision models, targeting low-latency local inference on Apple silicon.",
+      "language": "Python",
+      "stars_gained": 2176,
+      "total_stars": 4657,
+      "themes": [
+        "local inference",
+        "Apple silicon"
+      ],
+      "refs": [
+        "mizorewww/laya-mlx"
+      ]
+    },
+    {
+      "id": "05-albert-weasker-niubigeo",
+      "kind": "repo",
+      "title": "Albert-Weasker/niubigeo",
+      "rank": 5,
+      "url": "https://github.com/Albert-Weasker/niubigeo",
+      "description": "Open-source AI brand-visibility and competitor-reporting tooling.",
+      "language": "TypeScript",
+      "stars_gained": 2162,
+      "total_stars": 4814,
+      "themes": [
+        "AI visibility"
+      ],
+      "refs": [
+        "Albert-Weasker/niubigeo"
+      ]
+    },
+    {
+      "id": "06-jaredpalmer-kev",
+      "kind": "repo",
+      "title": "jaredpalmer/kev",
+      "rank": 6,
+      "url": "https://github.com/jaredpalmer/kev",
+      "description": "Small decision-model family built on Qwen3.5 that can be trained and run locally.",
+      "language": "Python",
+      "stars_gained": 1450,
+      "total_stars": 2892,
+      "themes": [
+        "local inference",
+        "decision models"
+      ],
+      "refs": [
+        "jaredpalmer/kev"
+      ]
+    },
+    {
+      "id": "07-deepseek-ai-deepseek-harness",
+      "kind": "repo",
+      "title": "deepseek-ai/deepseek-harness",
+      "rank": 7,
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "description": "Plugin-oriented harness for building and extending agent systems.",
+      "language": "TypeScript",
+      "stars_gained": 1097,
+      "total_stars": 232884,
+      "themes": [
+        "agent tooling",
+        "plugins"
+      ],
+      "refs": [
+        "deepseek-ai/deepseek-harness"
+      ]
+    },
+    {
+      "id": "08-stablyai-orca",
+      "kind": "repo",
+      "title": "stablyai/orca",
+      "rank": 8,
+      "url": "https://github.com/stablyai/orca",
+      "description": "Development environment for running fleets of parallel coding agents across desktop, mobile, and remote runtimes.",
+      "language": "TypeScript",
+      "stars_gained": 1069,
+      "total_stars": 75064,
+      "themes": [
+        "parallel agents",
+        "agent tooling"
+      ],
+      "refs": [
+        "stablyai/orca"
+      ]
+    },
+    {
+      "id": "09-mak5er-aircard",
+      "kind": "repo",
+      "title": "Mak5er/AirCard",
+      "rank": 9,
+      "url": "https://github.com/Mak5er/AirCard",
+      "description": "Apple Wallet card customization tool for iOS 18+ without a jailbreak.",
+      "language": "Swift",
+      "stars_gained": 873,
+      "total_stars": 2342,
+      "themes": [
+        "iOS tooling"
+      ],
+      "refs": [
+        "Mak5er/AirCard"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent runtimes and orchestration dominate; local and efficient inference is a secondary cluster; AI visibility is an emerging applied-tooling category. Python and TypeScript each appear in three of nine entries; Go, HTML, and Swift appear once."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The list is shifting from standalone chat or model repositories toward operational infrastructure: orchestration runtimes, parallel-agent environments, plugin systems, and specialized decision models."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today's snapshot is primarily an agent-engineering snapshot. The strongest themes are orchestration, local inference, and practical evaluation or visibility tooling."
+    }
+  ]
+}

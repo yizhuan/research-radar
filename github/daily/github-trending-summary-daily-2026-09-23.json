@@ -4,170 +4,189 @@
   "window": "daily",
   "date": "2026-09-23",
   "title": "GitHub Trending Summary - Daily - 2026-09-23",
-  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-23.md",
-  "entry_count": 8,
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-23.md",
+  "entry_count": 12,
   "entry_noun": "repositories",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Agent infrastructure dominates today's visible GitHub Trending snapshot: Google's open orchestration runtime leads with +2,305 stars, while coding-agent applications span office productivity, video editing, tool routing, and financial-services workflows. Security remains present through a mobile-forensics toolkit."
+      "content": "AI-agent infrastructure dominates today's GitHub momentum: orchestration runtimes, agent-native application frameworks, skills, harnesses, and tool routers occupy most of the top positions. The strongest individual gain is google/ax at +1,542 stars today, while several projects are turning ordinary software into agent-operable systems."
     },
     {
-      "id": "01-google-ax",
-      "kind": "repo",
-      "title": "google/ax",
-      "rank": 1,
-      "url": "https://github.com/google/ax",
-      "description": "Google's open agentic orchestration runtime.",
-      "language": "Go",
-      "stars_gained": 2305,
-      "total_stars": 8162,
-      "themes": [
-        "agent orchestration"
-      ],
-      "refs": [
-        "google/ax"
-      ]
-    },
-    {
-      "id": "02-mvt-project-mvt",
-      "kind": "repo",
-      "title": "mvt-project/mvt",
-      "rank": 2,
-      "url": "https://github.com/mvt-project/mvt",
-      "description": "Mobile forensics tooling for finding signs of device compromise.",
-      "language": "Python",
-      "stars_gained": 441,
-      "total_stars": 14287,
-      "themes": [
-        "security"
-      ],
-      "refs": [
-        "mvt-project/mvt"
-      ]
-    },
-    {
-      "id": "03-anthropics-financial-services",
+      "id": "01-anthropics-financial-services",
       "kind": "repo",
       "title": "anthropics/financial-services",
-      "rank": 3,
+      "rank": 1,
       "url": "https://github.com/anthropics/financial-services",
-      "description": "Anthropic's financial-services-focused repository and workflow examples.",
+      "description": "Financial-services resources and tooling from Anthropic.",
       "language": "Python",
-      "stars_gained": 438,
-      "total_stars": 36634,
-      "themes": [
-        "domain-specific agents",
-        "finance"
-      ],
-      "refs": [
-        "anthropics/financial-services"
-      ]
+      "stars_gained": 665,
+      "total_stars": 36784,
+      "themes": ["domain applications", "AI resources"],
+      "refs": ["anthropics/financial-services"]
     },
     {
-      "id": "04-dream-num-univer",
+      "id": "02-google-ax",
       "kind": "repo",
-      "title": "dream-num/univer",
-      "rank": 4,
-      "url": "https://github.com/dream-num/univer",
-      "description": "An office harness for AI agents covering spreadsheets, docs, slides, canvas, relational tables, and PDF.",
-      "language": "TypeScript",
-      "stars_gained": 255,
-      "total_stars": 15969,
-      "themes": [
-        "agents in work software"
-      ],
-      "refs": [
-        "dream-num/univer"
-      ]
-    },
-    {
-      "id": "05-agent-substrate-substrate",
-      "kind": "repo",
-      "title": "agent-substrate/substrate",
-      "rank": 5,
-      "url": "https://github.com/agent-substrate/substrate",
-      "description": "Agent Substrate: the core system.",
+      "title": "google/ax",
+      "rank": 2,
+      "url": "https://github.com/google/ax",
+      "description": "Google's open agentic orchestration runtime",
       "language": "Go",
-      "stars_gained": 245,
-      "total_stars": 3183,
-      "themes": [
-        "agent substrate"
-      ],
-      "refs": [
-        "agent-substrate/substrate"
-      ]
+      "stars_gained": 1542,
+      "total_stars": 8607,
+      "themes": ["agent orchestration", "runtime infrastructure"],
+      "refs": ["google/ax"]
     },
     {
-      "id": "06-superdesigndev-treg",
-      "kind": "repo",
-      "title": "superdesigndev/treg",
-      "rank": 6,
-      "url": "https://github.com/superdesigndev/treg",
-      "description": "An OpenRouter-style layer for agent tools.",
-      "language": "Python",
-      "stars_gained": 230,
-      "total_stars": 2408,
-      "themes": [
-        "tool routing"
-      ],
-      "refs": [
-        "superdesigndev/treg"
-      ]
-    },
-    {
-      "id": "07-browser-use-video-use",
-      "kind": "repo",
-      "title": "browser-use/video-use",
-      "rank": 7,
-      "url": "https://github.com/browser-use/video-use",
-      "description": "Edit videos with coding agents.",
-      "language": "Python",
-      "stars_gained": 191,
-      "total_stars": 26169,
-      "themes": [
-        "creative agents"
-      ],
-      "refs": [
-        "browser-use/video-use"
-      ]
-    },
-    {
-      "id": "08-davila7-claude-code-templates",
+      "id": "03-davila7-claude-code-templates",
       "kind": "repo",
       "title": "davila7/claude-code-templates",
-      "rank": 8,
+      "rank": 3,
       "url": "https://github.com/davila7/claude-code-templates",
-      "description": "A CLI tool for configuring and monitoring Claude Code.",
+      "description": "CLI tool for configuring and monitoring Claude Code",
       "language": "Python",
-      "stars_gained": 64,
-      "total_stars": 31281,
-      "themes": [
-        "agent operations"
-      ],
-      "refs": [
-        "davila7/claude-code-templates"
-      ]
+      "stars_gained": 393,
+      "total_stars": 31378,
+      "themes": ["coding-agent workflows", "developer tooling"],
+      "refs": ["davila7/claude-code-templates"]
+    },
+    {
+      "id": "04-builderio-agent-native",
+      "kind": "repo",
+      "title": "BuilderIO/agent-native",
+      "rank": 4,
+      "url": "https://github.com/BuilderIO/agent-native",
+      "description": "A framework for building agentic apps",
+      "language": "TypeScript",
+      "stars_gained": 609,
+      "total_stars": 6427,
+      "themes": ["agent-native applications", "TypeScript"],
+      "refs": ["BuilderIO/agent-native"]
+    },
+    {
+      "id": "05-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 5,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software-development methodology that works.",
+      "language": "Shell",
+      "stars_gained": 528,
+      "total_stars": 290514,
+      "themes": ["agent skills", "software development methodology"],
+      "refs": ["obra/superpowers"]
+    },
+    {
+      "id": "06-dream-num-univer",
+      "kind": "repo",
+      "title": "dream-num/univer",
+      "rank": 6,
+      "url": "https://github.com/dream-num/univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "language": "TypeScript",
+      "stars_gained": 1140,
+      "total_stars": 16144,
+      "themes": ["agent-native software", "productivity"],
+      "refs": ["dream-num/univer"]
+    },
+    {
+      "id": "07-open-dev-society-openstock",
+      "kind": "repo",
+      "title": "Open-Dev-Society/OpenStock",
+      "rank": 7,
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "description": "An open-source alternative to expensive market platforms.",
+      "language": "TypeScript",
+      "stars_gained": 832,
+      "total_stars": 18641,
+      "themes": ["finance", "open-source applications"],
+      "refs": ["Open-Dev-Society/OpenStock"]
+    },
+    {
+      "id": "08-agent-substrate-substrate",
+      "kind": "repo",
+      "title": "agent-substrate/substrate",
+      "rank": 8,
+      "url": "https://github.com/agent-substrate/substrate",
+      "description": "Agent Substrate: the core system",
+      "language": "Go",
+      "stars_gained": 560,
+      "total_stars": 3334,
+      "themes": ["agent infrastructure", "Go"],
+      "refs": ["agent-substrate/substrate"]
+    },
+    {
+      "id": "09-strands-agents-harness-sdk",
+      "kind": "repo",
+      "title": "strands-agents/harness-sdk",
+      "rank": 9,
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "description": "Open-source SDK for production AI agents in Python and TypeScript.",
+      "language": "Python",
+      "stars_gained": 96,
+      "total_stars": 7691,
+      "themes": ["agent harnesses", "production AI"],
+      "refs": ["strands-agents/harness-sdk"]
+    },
+    {
+      "id": "10-hkuds-cli-anything",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "rank": 10,
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "CLI-Anything: Making ALL Software Agent-Native",
+      "language": "Python",
+      "stars_gained": 41,
+      "total_stars": 49790,
+      "themes": ["agent-native tools", "CLI"],
+      "refs": ["HKUDS/CLI-Anything"]
+    },
+    {
+      "id": "11-superdesigndev-treg",
+      "kind": "repo",
+      "title": "superdesigndev/treg",
+      "rank": 11,
+      "url": "https://github.com/superdesigndev/treg",
+      "description": "OpenRouter for agent tools.",
+      "language": "Python",
+      "stars_gained": 502,
+      "total_stars": 2557,
+      "themes": ["tool routing", "agent infrastructure"],
+      "refs": ["superdesigndev/treg"]
+    },
+    {
+      "id": "12-pbakaus-impeccable",
+      "kind": "repo",
+      "title": "pbakaus/impeccable",
+      "rank": 12,
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "JavaScript",
+      "stars_gained": 287,
+      "total_stars": 70157,
+      "themes": ["design tooling", "AI harnesses"],
+      "refs": ["pbakaus/impeccable"]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Agent orchestration and substrate layers; agents embedded in work and creative software; agent tool routing and operations. Python leads with 5 of 8 listed repositories; Go has 2, and TypeScript has 1."
+      "content": "Agent orchestration and runtimes lead the list; agent-native software and tools are widespread; coding-agent workflows are gaining structure; domain applications extend the trend into finance and productivity. Languages among the 12 entries: Python 5, TypeScript 3, Go 2, Shell 1, JavaScript 1."
     },
     {
       "id": "85-notable-shifts",
       "kind": "extra",
       "title": "Notable Shifts",
-      "content": "The strongest visible shift is from standalone model demos toward agent systems that orchestrate tools and operate inside concrete domains."
+      "content": "The list is less about standalone model releases and more about the surrounding operating layer: orchestration, harnesses, skills, tool routing, and agent-native interfaces. Office, finance, and design projects show the trend broadening into complete software surfaces."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "GitHub's daily signal is heavily concentrated on making agents usable, governable, and domain-specific. The most consequential momentum is around orchestration infrastructure, while the fastest-growing applications turn agents into interfaces for existing work products and creative tools."
+      "content": "The leading signal is a maturing agent ecosystem. Developers are investing in the connective tissue that lets agents use tools, follow workflows, and operate inside real applications, with Go, Python, and TypeScript dividing infrastructure, automation, and integration roles."
     }
   ]
 }

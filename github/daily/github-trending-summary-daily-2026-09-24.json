@@ -4,23 +4,243 @@
   "window": "daily",
   "date": "2026-09-24",
   "title": "GitHub Trending Summary - Daily - 2026-09-24",
-  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-24.md",
-  "entry_count": 10,
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-24.md",
+  "entry_count": 14,
   "entry_noun": "repositories",
   "sections": [
-    {"id":"00-headline","kind":"headline","title":"Headline","content":"Agent-native software dominates today's front page: orchestration runtimes, coding-agent skills, harnesses, and interfaces for turning existing software into agent tools occupy most of the top positions."},
-    {"id":"01-anthropics-financial-services","kind":"repo","title":"anthropics/financial-services","rank":1,"url":"https://github.com/anthropics/financial-services","description":"Anthropic's Python financial-services repository, aimed at applying its tooling to finance workflows.","language":"Python","stars_gained":664,"total_stars":37158,"themes":["domain-specific AI","financial services"],"refs":["anthropics/financial-services"]},
-    {"id":"02-google-ax","kind":"repo","title":"google/ax","rank":2,"url":"https://github.com/google/ax","description":"Google's open agentic orchestration runtime.","language":"Go","stars_gained":1543,"total_stars":9576,"themes":["agent orchestration","runtime infrastructure"],"refs":["google/ax"]},
-    {"id":"03-davila7-claude-code-templates","kind":"repo","title":"davila7/claude-code-templates","rank":3,"url":"https://github.com/davila7/claude-code-templates","description":"A CLI tool for configuring and monitoring Claude Code.","language":"Python","stars_gained":389,"total_stars":31660,"themes":["coding-agent operations"],"refs":["davila7/claude-code-templates"]},
-    {"id":"04-builderio-agent-native","kind":"repo","title":"BuilderIO/agent-native","rank":4,"url":"https://github.com/BuilderIO/agent-native","description":"A framework for building agentic apps.","language":"TypeScript","stars_gained":87,"total_stars":6717,"themes":["agent-native applications"],"refs":["BuilderIO/agent-native"]},
-    {"id":"05-obra-superpowers","kind":"repo","title":"obra/superpowers","rank":5,"url":"https://github.com/obra/superpowers","description":"An agentic skills framework and software-development methodology.","language":"Shell","stars_gained":474,"total_stars":290931,"themes":["agent skills","development methodology"],"refs":["obra/superpowers"]},
-    {"id":"06-dream-num-univer","kind":"repo","title":"dream-num/univer","rank":6,"url":"https://github.com/dream-num/univer","description":"An office runtime for AI agents covering spreadsheets, documents, slides, canvas, tables, and PDF.","language":"TypeScript","stars_gained":1142,"total_stars":16591,"themes":["agent-native work surfaces","productivity"],"refs":["dream-num/univer"]},
-    {"id":"07-open-dev-society-openstock","kind":"repo","title":"Open-Dev-Society/OpenStock","rank":7,"url":"https://github.com/Open-Dev-Society/OpenStock","description":"An open-source market platform with real-time prices, alerts, and company insights.","language":"TypeScript","stars_gained":344,"total_stars":19055,"themes":["open data products","finance"],"refs":["Open-Dev-Society/OpenStock"]},
-    {"id":"08-agent-substrate-substrate","kind":"repo","title":"agent-substrate/substrate","rank":8,"url":"https://github.com/agent-substrate/substrate","description":"The core system for Agent Substrate.","language":"Go","stars_gained":558,"total_stars":3655,"themes":["agent infrastructure"],"refs":["agent-substrate/substrate"]},
-    {"id":"09-strands-agents-harness-sdk","kind":"repo","title":"strands-agents/harness-sdk","rank":9,"url":"https://github.com/strands-agents/harness-sdk","description":"An open-source SDK for building and controlling production AI-agent harnesses across models and clouds.","language":"Python","stars_gained":115,"total_stars":8024,"themes":["agent harnesses","multi-model infrastructure"],"refs":["strands-agents/harness-sdk"]},
-    {"id":"10-hkuds-cli-anything","kind":"repo","title":"HKUDS/CLI-Anything","rank":10,"url":"https://github.com/HKUDS/CLI-Anything","description":"A project for making software agent-native through command-line interfaces.","language":"Python","stars_gained":57,"total_stars":50107,"themes":["agent-native interfaces","CLI tooling"],"refs":["HKUDS/CLI-Anything"]},
-    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Agent orchestration and runtime infrastructure, agent-native software interfaces, coding-agent operations and methodology. Languages: Python 4, TypeScript 3, Go 2, Shell 1."},
-    {"id":"85-notable-shifts","kind":"extra","title":"Notable Shifts","content":"Momentum is shifting from model-centric projects toward orchestration, harnesses, skills, CLIs, and agent-compatible work surfaces."},
-    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"GitHub momentum is concentrated in the infrastructure needed to make agents reliable participants in real software workflows. The key product boundary is the harness, interface, skill system, and domain application around the model."}
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI-agent infrastructure dominates today's GitHub attention: memory, orchestration, agent-native CLIs, skills, and production harnesses occupy most of the leading slots. The strongest individual signal is vectorize-io/hindsight at +1,607 stars, while google/ax and dream-num/univer also cleared 1,000 daily stars."
+    },
+    {
+      "id": "01-rohitg00-ai-engineering-from-scratch",
+      "kind": "repo",
+      "title": "rohitg00/ai-engineering-from-scratch",
+      "rank": 1,
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars_gained": 310,
+      "total_stars": 56146,
+      "themes": [],
+      "refs": [
+        "rohitg00/ai-engineering-from-scratch"
+      ]
+    },
+    {
+      "id": "02-vectorize-io-hindsight",
+      "kind": "repo",
+      "title": "vectorize-io/hindsight",
+      "rank": 2,
+      "url": "https://github.com/vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "language": "Python",
+      "stars_gained": 1607,
+      "total_stars": 27229,
+      "themes": [],
+      "refs": [
+        "vectorize-io/hindsight"
+      ]
+    },
+    {
+      "id": "03-dream-num-univer",
+      "kind": "repo",
+      "title": "dream-num/univer",
+      "rank": 3,
+      "url": "https://github.com/dream-num/univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "language": "TypeScript",
+      "stars_gained": 1060,
+      "total_stars": 17266,
+      "themes": [],
+      "refs": [
+        "dream-num/univer"
+      ]
+    },
+    {
+      "id": "04-google-ax",
+      "kind": "repo",
+      "title": "google/ax",
+      "rank": 4,
+      "url": "https://github.com/google/ax",
+      "description": "Google's open agentic orchestration runtime",
+      "language": "Go",
+      "stars_gained": 1376,
+      "total_stars": 9903,
+      "themes": [],
+      "refs": [
+        "google/ax"
+      ]
+    },
+    {
+      "id": "05-nvidia-model-optimizer",
+      "kind": "repo",
+      "title": "NVIDIA/Model-Optimizer",
+      "rank": 5,
+      "url": "https://github.com/NVIDIA/Model-Optimizer",
+      "description": "A unified library of SOTA model optimization techniques including quantization, distillation, pruning, neural architecture search, and speculative decoding.",
+      "language": "Python",
+      "stars_gained": 22,
+      "total_stars": 3940,
+      "themes": [],
+      "refs": [
+        "NVIDIA/Model-Optimizer"
+      ]
+    },
+    {
+      "id": "06-fxembed-fxembed",
+      "kind": "repo",
+      "title": "FxEmbed/FxEmbed",
+      "rank": 6,
+      "url": "https://github.com/FxEmbed/FxEmbed",
+      "description": "Fix X/Twitter and Bluesky embeds with multiple images, videos, polls, and translations.",
+      "language": "TypeScript",
+      "stars_gained": 165,
+      "total_stars": 5303,
+      "themes": [],
+      "refs": [
+        "FxEmbed/FxEmbed"
+      ]
+    },
+    {
+      "id": "07-anthropics-financial-services",
+      "kind": "repo",
+      "title": "anthropics/financial-services",
+      "rank": 7,
+      "url": "https://github.com/anthropics/financial-services",
+      "description": "Financial-services resources from Anthropic.",
+      "language": "Python",
+      "stars_gained": 510,
+      "total_stars": 37253,
+      "themes": [],
+      "refs": [
+        "anthropics/financial-services"
+      ]
+    },
+    {
+      "id": "08-hkuds-cli-anything",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "rank": 8,
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "CLI-Anything: Making ALL Software Agent-Native.",
+      "language": "Python",
+      "stars_gained": 415,
+      "total_stars": 50203,
+      "themes": [],
+      "refs": [
+        "HKUDS/CLI-Anything"
+      ]
+    },
+    {
+      "id": "09-mvt-project-mvt",
+      "kind": "repo",
+      "title": "mvt-project/mvt",
+      "rank": 9,
+      "url": "https://github.com/mvt-project/mvt",
+      "description": "MVT helps conduct forensics of mobile devices and find signs of potential compromise.",
+      "language": "Python",
+      "stars_gained": 275,
+      "total_stars": 14637,
+      "themes": [],
+      "refs": [
+        "mvt-project/mvt"
+      ]
+    },
+    {
+      "id": "10-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 10,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software development methodology.",
+      "language": "Shell",
+      "stars_gained": 606,
+      "total_stars": 291062,
+      "themes": [],
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "11-strands-agents-harness-sdk",
+      "kind": "repo",
+      "title": "strands-agents/harness-sdk",
+      "rank": 11,
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "description": "Open-source SDK for production AI agents in Python and TypeScript.",
+      "language": "Python",
+      "stars_gained": 463,
+      "total_stars": 8136,
+      "themes": [],
+      "refs": [
+        "strands-agents/harness-sdk"
+      ]
+    },
+    {
+      "id": "12-julyx10-lap",
+      "kind": "repo",
+      "title": "julyx10/lap",
+      "rank": 12,
+      "url": "https://github.com/julyx10/lap",
+      "description": "An offline-first photo manager for large local libraries.",
+      "language": "Vue",
+      "stars_gained": 71,
+      "total_stars": 2743,
+      "themes": [],
+      "refs": [
+        "julyx10/lap"
+      ]
+    },
+    {
+      "id": "13-superdesigndev-treg",
+      "kind": "repo",
+      "title": "superdesigndev/treg",
+      "rank": 13,
+      "url": "https://github.com/superdesigndev/treg",
+      "description": "OpenRouter for agent tools.",
+      "language": "Python",
+      "stars_gained": 470,
+      "total_stars": 3025,
+      "themes": [],
+      "refs": [
+        "superdesigndev/treg"
+      ]
+    },
+    {
+      "id": "14-leejet-stable-diffusion-cpp",
+      "kind": "repo",
+      "title": "leejet/stable-diffusion.cpp",
+      "rank": 14,
+      "url": "https://github.com/leejet/stable-diffusion.cpp",
+      "description": "Diffusion model inference in pure C/C++.",
+      "language": "C++",
+      "stars_gained": 33,
+      "total_stars": 7181,
+      "themes": [],
+      "refs": [
+        "leejet/stable-diffusion.cpp"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent infrastructure; AI-native productivity; efficient/local inference. Python leads 8 of 14 listed repositories."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The daily list is unusually concentrated in the agent operating layer, from memory and orchestration to tools, skills, and harnesses."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "GitHub momentum is clustering around the infrastructure required to make AI agents useful inside real software and workflows, with local inference and security as durable secondary themes."
+    }
   ]
 }

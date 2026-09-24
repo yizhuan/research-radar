@@ -1,0 +1,26 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-24",
+  "title": "GitHub Trending Summary - Daily - 2026-09-24",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-24.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "sections": [
+    {"id":"00-headline","kind":"headline","title":"Headline","content":"Agent-native software dominates today's front page: orchestration runtimes, coding-agent skills, harnesses, and interfaces for turning existing software into agent tools occupy most of the top positions."},
+    {"id":"01-anthropics-financial-services","kind":"repo","title":"anthropics/financial-services","rank":1,"url":"https://github.com/anthropics/financial-services","description":"Anthropic's Python financial-services repository, aimed at applying its tooling to finance workflows.","language":"Python","stars_gained":664,"total_stars":37158,"themes":["domain-specific AI","financial services"],"refs":["anthropics/financial-services"]},
+    {"id":"02-google-ax","kind":"repo","title":"google/ax","rank":2,"url":"https://github.com/google/ax","description":"Google's open agentic orchestration runtime.","language":"Go","stars_gained":1543,"total_stars":9576,"themes":["agent orchestration","runtime infrastructure"],"refs":["google/ax"]},
+    {"id":"03-davila7-claude-code-templates","kind":"repo","title":"davila7/claude-code-templates","rank":3,"url":"https://github.com/davila7/claude-code-templates","description":"A CLI tool for configuring and monitoring Claude Code.","language":"Python","stars_gained":389,"total_stars":31660,"themes":["coding-agent operations"],"refs":["davila7/claude-code-templates"]},
+    {"id":"04-builderio-agent-native","kind":"repo","title":"BuilderIO/agent-native","rank":4,"url":"https://github.com/BuilderIO/agent-native","description":"A framework for building agentic apps.","language":"TypeScript","stars_gained":87,"total_stars":6717,"themes":["agent-native applications"],"refs":["BuilderIO/agent-native"]},
+    {"id":"05-obra-superpowers","kind":"repo","title":"obra/superpowers","rank":5,"url":"https://github.com/obra/superpowers","description":"An agentic skills framework and software-development methodology.","language":"Shell","stars_gained":474,"total_stars":290931,"themes":["agent skills","development methodology"],"refs":["obra/superpowers"]},
+    {"id":"06-dream-num-univer","kind":"repo","title":"dream-num/univer","rank":6,"url":"https://github.com/dream-num/univer","description":"An office runtime for AI agents covering spreadsheets, documents, slides, canvas, tables, and PDF.","language":"TypeScript","stars_gained":1142,"total_stars":16591,"themes":["agent-native work surfaces","productivity"],"refs":["dream-num/univer"]},
+    {"id":"07-open-dev-society-openstock","kind":"repo","title":"Open-Dev-Society/OpenStock","rank":7,"url":"https://github.com/Open-Dev-Society/OpenStock","description":"An open-source market platform with real-time prices, alerts, and company insights.","language":"TypeScript","stars_gained":344,"total_stars":19055,"themes":["open data products","finance"],"refs":["Open-Dev-Society/OpenStock"]},
+    {"id":"08-agent-substrate-substrate","kind":"repo","title":"agent-substrate/substrate","rank":8,"url":"https://github.com/agent-substrate/substrate","description":"The core system for Agent Substrate.","language":"Go","stars_gained":558,"total_stars":3655,"themes":["agent infrastructure"],"refs":["agent-substrate/substrate"]},
+    {"id":"09-strands-agents-harness-sdk","kind":"repo","title":"strands-agents/harness-sdk","rank":9,"url":"https://github.com/strands-agents/harness-sdk","description":"An open-source SDK for building and controlling production AI-agent harnesses across models and clouds.","language":"Python","stars_gained":115,"total_stars":8024,"themes":["agent harnesses","multi-model infrastructure"],"refs":["strands-agents/harness-sdk"]},
+    {"id":"10-hkuds-cli-anything","kind":"repo","title":"HKUDS/CLI-Anything","rank":10,"url":"https://github.com/HKUDS/CLI-Anything","description":"A project for making software agent-native through command-line interfaces.","language":"Python","stars_gained":57,"total_stars":50107,"themes":["agent-native interfaces","CLI tooling"],"refs":["HKUDS/CLI-Anything"]},
+    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Agent orchestration and runtime infrastructure, agent-native software interfaces, coding-agent operations and methodology. Languages: Python 4, TypeScript 3, Go 2, Shell 1."},
+    {"id":"85-notable-shifts","kind":"extra","title":"Notable Shifts","content":"Momentum is shifting from model-centric projects toward orchestration, harnesses, skills, CLIs, and agent-compatible work surfaces."},
+    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"GitHub momentum is concentrated in the infrastructure needed to make agents reliable participants in real software workflows. The key product boundary is the harness, interface, skill system, and domain application around the model."}
+  ]
+}

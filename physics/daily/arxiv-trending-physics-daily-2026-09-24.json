@@ -1,0 +1,219 @@
+{
+  "schema": "arxiv-trending-physics.v1",
+  "category": "physics",
+  "window": "daily",
+  "date": "2026-09-24",
+  "title": "arXiv Trending Physics — Daily",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-09-24.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "Discovery of an unexpectedly light and narrow beauty-strange state",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.25178",
+      "arxiv_id": "2609.25178",
+      "arxiv_version": "1",
+      "published": "2026-09-21T14:48:13Z",
+      "categories": [
+        "hep-ex"
+      ],
+      "authors": "LHCb collaboration: R. Aaij, M. Abdelfatah, A.S.W. Abdelmotteleb, C. Abellan Beteta, A. F. Abudinén et al.",
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "The LHCb Collaboration reports a new beauty-strange resonance with global significance above seven standard deviations, a narrow width, and a mass substantially below conventional quark-model expectations.",
+      "claimed_result": "The authors claim the first observation of a nonconventional single-beauty hadron and interpret it as evidence bearing on chiral dynamics and heavy-quark spin symmetry.",
+      "evidence_type": "experimental",
+      "caveat": "The paper is a fresh preprint; the resonance interpretation and implications for exotic dynamics require independent scrutiny and further measurements.",
+      "refs": [
+        "https://arxiv.org/abs/2609.25178"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Search for dark matter particle interactions in an extended nuclear recoil energy window with the LUX-ZEPLIN (LZ) experiment",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.02823",
+      "arxiv_id": "2609.02823",
+      "arxiv_version": "1",
+      "published": "2026-09-02T17:11:17Z",
+      "categories": [
+        "hep-ex"
+      ],
+      "authors": "D.S. Akerib, A.K. Al Musalhi, B.J. Almquist, C.S. Amarasinghe, A. Ames et al.",
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Cosmology & gravitation",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "LZ analyzes 2.84 tonne-years of xenon data at recoil energies up to about 270 keV, finding one event consistent with a 248 ± 23(stat) ± 23(sys) keV nuclear recoil and a 2.6σ global tension with the background-only hypothesis.",
+      "claimed_result": "The authors report a candidate event relevant to effective-field-theory and inelastic dark-matter models, while quantifying its global significance after look-elsewhere effects.",
+      "evidence_type": "experimental",
+      "caveat": "The global significance is 2.6σ, not a discovery; rare background topologies and model dependence remain central.",
+      "refs": [
+        "https://arxiv.org/abs/2609.02823"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "JWST evidence for a sharp \"Cosmic Daybreak\" at z = 15",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.28257",
+      "arxiv_id": "2609.28257",
+      "arxiv_version": "1",
+      "published": "2026-09-23T15:19:43Z",
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.GA"
+      ],
+      "authors": "Jiashuo Zhang, Tom Broadhurst, Tzihong Chiueh, Keiichi Umetsu, Hsi-Yu Schive et al.",
+      "themes": [
+        "Cosmology & gravitation",
+        "Astrophysics",
+        "Computational & data methods"
+      ],
+      "abstract": "The authors argue that JWST galaxy ages and luminosities converge toward a sharp onset of luminous galaxies near z=15 and interpret this as support for wave dark matter with boson mass about 2.2×10^-22 eV.",
+      "claimed_result": "The authors claim a sharp “Cosmic Daybreak” near z=15 and say it is consistent with wave dark matter Jeans-scale suppression.",
+      "evidence_type": "observational",
+      "caveat": "The conclusion is model-dependent and depends on sparse, difficult high-redshift spectroscopy and stellar-population inference.",
+      "refs": [
+        "https://arxiv.org/abs/2609.28257"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Tension between MiniBooNE and MicroBooNE within a 3+1 Sterile Neutrino Framework using Simulation-Based Inference",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.26965",
+      "arxiv_id": "2609.26965",
+      "arxiv_version": "1",
+      "published": "2026-09-22T18:56:45Z",
+      "categories": [
+        "hep-ph",
+        "hep-ex"
+      ],
+      "authors": "Julia P. Woodward, Austin Schneider, Joshua Villarreal, John Hardin, Janet Conrad",
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "A joint simulation-based analysis finds that MicroBooNE reduces the MiniBooNE preference for sterile-neutrino oscillations, leaving a trials-based 2.7σ preference and at least 2.5σ parameter-goodness-of-fit tension.",
+      "claimed_result": "The authors claim residual tension between MiniBooNE and MicroBooNE within the 3+1 sterile-neutrino model, not a sterile-neutrino discovery.",
+      "evidence_type": "computational",
+      "caveat": "The preference is only 2.7σ after trials, and the result is framework- and calibration-dependent.",
+      "refs": [
+        "https://arxiv.org/abs/2609.26965"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Broadband Quantum Optical Storage with Chemically Engineered Molecular Eu3+ Complex",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.28271",
+      "arxiv_id": "2609.28271",
+      "arxiv_version": "1",
+      "published": "2026-09-23T15:26:22Z",
+      "categories": [
+        "quant-ph",
+        "physics.chem-ph"
+      ],
+      "authors": "Yisheng Lei, Senthil Kumar Kuppusamy, Idris Tlemsani, Suma Al-Hunaishi, Pengrui Jiao et al.",
+      "themes": [
+        "Quantum information",
+        "Atomic, molecular & optical physics",
+        "Condensed matter & materials"
+      ],
+      "abstract": "The authors experimentally demonstrate a molecular Eu3+ quantum-memory protocol with 14.9% storage efficiency and 200 MHz bandwidth, designed to scale toward a few GHz.",
+      "claimed_result": "The authors claim a chemically engineered Eu3+ complex enables HAGEM quantum optical storage broader-band than existing Eu3+ solid-state materials.",
+      "evidence_type": "experimental",
+      "caveat": "The demonstrated bandwidth and efficiency do not by themselves establish network-scale operation.",
+      "refs": [
+        "https://arxiv.org/abs/2609.28271"
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Observation of the orbital Nernst effect",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.27604",
+      "arxiv_id": "2609.27604",
+      "arxiv_version": "1",
+      "published": "2026-09-23T09:25:54Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "authors": "Yuto Masuda, Takamasa Hirai, Daegeun Jo, Naoki Yano, Peter M. Oppeneer et al.",
+      "themes": [
+        "Condensed matter & materials",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Measurements in titanium with nickel electrodes report a temperature-gradient-driven transverse signal attributed to orbital rather than anomalous or spin Nernst transport.",
+      "claimed_result": "The authors claim observation of thermally driven orbital transport in Ti.",
+      "evidence_type": "experimental",
+      "caveat": "Attribution relies on material controls and scaling behavior; separating orbital, spin, and anomalous contributions remains the key systematic issue.",
+      "refs": [
+        "https://arxiv.org/abs/2609.27604"
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "Disentangling spin polarization from driven circular ionic motion in EuTiO3",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.28214",
+      "arxiv_id": "2609.28214",
+      "arxiv_version": "1",
+      "published": "2026-09-23T14:49:39Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "authors": "Clifford J. Allington, Matthew J. Lutz, Enoch (Sin-Hang) Ho, Fabian Graf, Martina Basini et al.",
+      "themes": [
+        "Condensed matter & materials",
+        "Atomic, molecular & optical physics"
+      ],
+      "abstract": "Ultrafast X-ray diffraction and XMCD find large driven circular ionic motion in EuTiO3 without detectable transient spin polarization.",
+      "claimed_result": "The authors claim circular ionic motion is not accompanied by detectable spin polarization in this system.",
+      "evidence_type": "experimental",
+      "caveat": "The null result is material- and sensitivity-dependent.",
+      "refs": [
+        "https://arxiv.org/abs/2609.28214"
+      ]
+    },
+    {
+      "id": "paper-8",
+      "kind": "paper",
+      "title": "Achieving 5-angstrom-resolution diffraction contrast with an uncorrected electron probe and nanosized defect characterizations",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.28096",
+      "arxiv_id": "2609.28096",
+      "arxiv_version": "1",
+      "published": "2026-09-23T13:28:34Z",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "authors": "Yao Li, Austin C. Houston, Ziang Yu, Zehui Qi, Siwei Chen et al.",
+      "themes": [
+        "Condensed matter & materials",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "The authors report improving TEM diffraction-contrast resolution from about 5 nm to 0.5 nm using an equal-s condition.",
+      "claimed_result": "The authors claim the equal-s condition can largely replace the classical two-beam condition for defect studies.",
+      "evidence_type": "experimental",
+      "caveat": "The method’s generality across materials, geometries, and defect classes remains to be established.",
+      "refs": [
+        "https://arxiv.org/abs/2609.28096"
+      ]
+    }
+  ]
+}

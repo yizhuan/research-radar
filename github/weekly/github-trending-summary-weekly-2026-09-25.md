@@ -4,94 +4,82 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-25 14:23 UTC |
+| Snapshot time (UTC) | 2026-09-25 16:00 UTC |
 | Scope | Weekly |
-| Date range | 2026-09-18 through 2026-09-25 |
-| Ranking basis | Weekly GitHub Trending star gains |
+| Date range | 2026-09-19 through 2026-09-25 |
+| Ranking basis | Weekly GitHub Trending ordering and star gains shown by GitHub |
 
 ## Headline
 
-AI-agent infrastructure dominated GitHub's weekly chart: security-audit skills, agent harnesses, parallel-agent runtimes, memory systems, and agent-native tooling all occupied the top tier. The strongest individual surge was cloudflare/security-audit-skill at +11,262 stars, while the broader list shows the trend moving from chat interfaces toward repeatable engineering workflows.
+AI-agent infrastructure dominates this week's GitHub Trending page: security-audit skills, agent harnesses, coding agents, agent memory, and agent-native tooling occupy most of the leading positions. The strongest individual momentum is Cloudflare's security-audit-skill at +11,262 stars, followed by agent orchestration and developer-workflow projects.
 
 ## Top Repositories
 
 1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.**
 
-  **Language:** JavaScript | **Stars gained in window:** +11,262 | **Total stars:** 21,502 | **Why notable:** It was the week's clear star-gain leader and connects coding agents with verifiable security review.
+  **Language:** JavaScript | **Stars gained in window:** +11,262 | **Total stars:** 21,527 | **Why notable:** The week's largest visible star gain combines the coding-agent wave with security automation and verifiable findings.
 
-2. **[affaan-m/ECC](https://github.com/affaan-m/ECC) - An agent-harness performance optimization system covering skills, memory, security, and research-first development.**
+2. **[anthropics/financial-services](https://github.com/anthropics/financial-services) - Anthropic's financial-services knowledge-work plugins and workflows.**
 
-  **Language:** JavaScript | **Stars gained in window:** +6,193 | **Total stars:** 267,272 | **Why notable:** Its unusually large existing community and continued weekly acceleration signal sustained interest in agent engineering practices.
+  **Language:** Python | **Stars gained in window:** +2,382 | **Total stars:** 37,502 | **Why notable:** It shows the shift from general agents toward domain-specific, reusable knowledge-work tooling.
 
-3. **[stablyai/orca](https://github.com/stablyai/orca) - An ADE for working with a fleet of parallel agents across desktop, mobile, and remote runtimes.**
+3. **[anthropics/claude-code](https://github.com/anthropics/claude-code) - An agentic coding tool that operates in the terminal and helps with codebases and Git workflows.**
 
-  **Language:** TypeScript | **Stars gained in window:** +6,547 | **Total stars:** 77,982 | **Why notable:** It reflects a shift toward coordinating multiple coding agents rather than using a single assistant.
+  **Language:** TypeScript | **Stars gained in window:** +2,384 | **Total stars:** 148,052 | **Why notable:** A large, established developer tool continues to attract strong weekly momentum as agentic coding becomes mainstream infrastructure.
 
-4. **[Tencent/WeKnora](https://github.com/Tencent/WeKnora) - An open-source LLM knowledge platform for RAG, autonomous reasoning, and self-maintaining wikis.**
+4. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review) - A hybrid deterministic-pipeline and LLM-agent code-review system with multi-language rules.**
 
-  **Language:** Go | **Stars gained in window:** +3,749 | **Total stars:** 29,940 | **Why notable:** It combines retrieval, agents, and knowledge maintenance in one deployable platform.
+  **Language:** Go | **Stars gained in window:** +6,920 | **Total stars:** 41,189 | **Why notable:** Its combination of conventional static checks and LLM review reflects production teams' preference for hybrid quality gates.
 
-5. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) - Agent memory that learns.**
+5. **[affaan-m/ECC](https://github.com/affaan-m/ECC) - An agent-harness performance optimization system covering skills, memory, security, and research-first development.**
 
-  **Language:** Python | **Stars gained in window:** +3,363 | **Total stars:** 28,713 | **Why notable:** Persistent, adaptive memory is emerging as a distinct infrastructure layer for agents.
+  **Language:** JavaScript | **Stars gained in window:** +6,193 | **Total stars:** 267,304 | **Why notable:** It is the most-starred repository in this snapshot and packages operational practices for several coding-agent ecosystems.
 
-6. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents.**
+6. **[Tencent/WeKnora](https://github.com/Tencent/WeKnora) - An open-source LLM knowledge platform for RAG, autonomous reasoning, and self-maintaining wikis.**
 
-  **Language:** JavaScript | **Stars gained in window:** +3,345 | **Total stars:** 98,991 | **Why notable:** It packages practical engineering behaviors as reusable agent capabilities.
+  **Language:** Go | **Stars gained in window:** +3,749 | **Total stars:** 29,977 | **Why notable:** It represents the convergence of document retrieval, agent reasoning, and continuously maintained knowledge systems.
 
-7. **[anthropics/claude-code](https://github.com/anthropics/claude-code) - An agentic coding tool that operates in the terminal and handles coding and git workflows through natural language.**
+7. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents.**
 
-  **Language:** TypeScript | **Stars gained in window:** +2,384 | **Total stars:** 148,042 | **Why notable:** The continued growth of a mature coding agent shows that the category is broadening beyond early adopters.
+  **Language:** JavaScript | **Stars gained in window:** +3,345 | **Total stars:** 99,005 | **Why notable:** The popularity of skills as a distribution format suggests that agent capability is increasingly being modularized and shared.
 
-8. **[anthropics/financial-services](https://github.com/anthropics/financial-services) - An open-source Claude Cowork plugin repository for financial-services workflows.**
+8. **[stablyai/orca](https://github.com/stablyai/orca) - An ADE for running a fleet of parallel coding agents across desktop, mobile, and remote runtimes.**
 
-  **Language:** Python | **Stars gained in window:** +2,382 | **Total stars:** 37,492 | **Why notable:** Domain-specific plugins indicate agent adoption is moving into professional workflows.
+  **Language:** TypeScript | **Stars gained in window:** +6,547 | **Total stars:** 78,077 | **Why notable:** Its momentum points to orchestration and parallel execution as the next layer above individual coding assistants.
 
-9. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip) - An open-source app for managing agents at work.**
+9. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) - Agent memory that learns.**
 
-  **Language:** TypeScript | **Stars gained in window:** +2,321 | **Total stars:** 83,740 | **Why notable:** It targets operational coordination and management, not only model interaction.
+  **Language:** Python | **Stars gained in window:** +3,363 | **Total stars:** 28,969 | **Why notable:** Persistent, adaptive memory is becoming a distinct infrastructure category rather than an incidental feature of agents.
 
-10. **[Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) - Spec-driven development for AI coding assistants.**
+10. **[anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) - Open-source plugins primarily intended for knowledge workers using Claude Cowork.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,415 | **Total stars:** 70,314 | **Why notable:** It represents a push to make agent-generated changes more structured and reviewable.
+  **Language:** Python | **Stars gained in window:** +1,118 | **Total stars:** 25,590 | **Why notable:** It extends the agent trend beyond software development into repeatable professional workflows.
 
-11. **[superdesigndev/treg](https://github.com/superdesigndev/treg) - An OpenRouter for agent tools.**
+11. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip) - An open-source app for managing agents at work.**
 
-  **Language:** Python | **Stars gained in window:** +1,406 | **Total stars:** 3,314 | **Why notable:** Tool routing and interoperability are becoming their own product layer.
+  **Language:** TypeScript | **Stars gained in window:** +2,321 | **Total stars:** 83,971 | **Why notable:** Agent management is emerging as its own application layer, including coordination and workplace operations.
 
 12. **[TencentCloud/Octop](https://github.com/TencentCloud/Octop) - A smarter, self-hosted, multi-user, multi-agent AI assistant.**
 
-  **Language:** Python | **Stars gained in window:** +1,608 | **Total stars:** 4,914 | **Why notable:** It brings multi-agent assistants into self-hosted and collaborative deployments.
-
-13. **[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) - A project to make all software agent-native through command-line interfaces.**
-
-  **Language:** Python | **Stars gained in window:** +964 | **Total stars:** 50,490 | **Why notable:** It frames CLIs as a universal control surface for software-operating agents.
-
-14. **[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) - A CLI tool for configuring and monitoring Claude Code.**
-
-  **Language:** Python | **Stars gained in window:** +965 | **Total stars:** 31,777 | **Why notable:** Configuration and observability are becoming necessary as agent deployments grow more complex.
-
-15. **[cloudflare/quiche](https://github.com/cloudflare/quiche) - A Rust implementation of QUIC and HTTP/3.**
-
-  **Language:** Rust | **Stars gained in window:** +741 | **Total stars:** 12,592 | **Why notable:** It is the main non-agent infrastructure outlier in this snapshot, representing continued interest in high-performance networking.
+  **Language:** Python | **Stars gained in window:** +1,608 | **Total stars:** 4,922 | **Why notable:** Its self-hosted and multi-user positioning highlights demand for controllable agent deployments outside hosted products.
 
 ## Trending Technologies and Themes
 
-- **Agent engineering infrastructure:** ECC, agent-skills, OpenSpec, claude-code-templates, and security-audit-skill treat skills, specs, security, and operations as first-class components around coding agents.
-- **Multi-agent orchestration:** Orca, Paperclip, Octop, and treg focus on fleets, workplace management, multi-user assistants, or tool routing rather than one-off prompting.
-- **Memory and knowledge systems:** Hindsight and WeKnora emphasize durable memory, RAG, autonomous reasoning, and self-maintaining knowledge bases.
-- **Languages:** Among the 15 listed repositories, Python leads with 6 entries, followed by TypeScript with 4, JavaScript with 3, Go with 2, and Rust with 1; the language mix favors fast-moving AI tooling while retaining Go and Rust for infrastructure.
+- **Coding-agent infrastructure:** security-audit-skill, claude-code, ECC, agent-skills, orca, and paperclip all focus on making agents safer, more capable, more parallel, or easier to manage.
+- **Agent memory and knowledge:** WeKnora, hindsight, and knowledge-work-plugins connect agents to retrieval, persistent memory, and domain workflows.
+- **Production safeguards:** open-code-review and security-audit-skill emphasize deterministic checks, machine-readable findings, and security review alongside LLM behavior.
+- **Languages:** Among these 12 entries, Python appears 4 times, JavaScript 3 times, TypeScript 3 times, and Go 2 times; Python remains prominent in knowledge/AI systems while JavaScript/TypeScript dominate agent tooling and interfaces.
 
 ## Notable Shifts
 
-The notable shift is from model-facing applications to agent-operating systems: reusable skills, verifiable security audits, specifications, memory, orchestration, and workplace management all appear among the leading gainers. The chart also shows domain packaging, such as financial-services plugins, alongside general-purpose agent platforms.
+The week's leading projects suggest a move up the stack: attention is shifting from standalone models and chat interfaces toward the operational layer around agents—skills, memory, security, orchestration, review, and domain-specific plugins. The presence of multiple fast-growing repositories from Anthropic, Tencent, Cloudflare, Alibaba, and independent maintainers also points to a broadening ecosystem rather than a single-vendor trend.
 
 ## Takeaway
 
-This week's GitHub signal is less about a single model and more about the software layer required to make agents dependable and useful in production. Teams are investing in control planes, memory, tool interfaces, security checks, and domain workflows. The practical opportunity is shifting toward infrastructure that constrains, observes, and composes agents.
+GitHub's strongest weekly signal is not simply “more AI apps”; it is the construction of an agent software stack. Developers are investing in the components that make agents deployable in real work: repeatable skills, persistent context, parallel execution, domain workflows, and verifiable safeguards. Projects that combine agent flexibility with conventional engineering controls appear especially well positioned.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending repositories this week](https://github.com/trending?since=weekly).
-- **Corroboration:** GitHub REST API repository endpoints at `https://api.github.com/repos/{owner}/{repo}` were queried for current total stars, primary language, description, URL, and fork status.
-- **Method note:** Weekly star-gain figures come from the matching GitHub Trending view captured on 2026-09-25 UTC; total-star and metadata fields were corroborated through the GitHub REST API. The ranking above is ordered by the displayed weekly star-gain signal.
+- **Primary source:** [GitHub Trending - this week](https://github.com/trending?since=weekly).
+- **Corroboration:** GitHub REST repository API requests to `GET /repos/{owner}/{repo}` for the listed repositories, confirming current total stars, primary language, fork status, archive status, and recent push timestamps.
+- **Method note:** This weekly report uses the matching GitHub Trending view's displayed ordering and star-gain figures. The snapshot was collected at 2026-09-25 16:00 UTC; GitHub Trending is a live page, so values may change after capture.

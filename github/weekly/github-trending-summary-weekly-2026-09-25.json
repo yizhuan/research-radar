@@ -1,0 +1,295 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-09-25",
+  "title": "GitHub Trending Summary - Weekly - 2026-09-25",
+  "source_report": "/home/yizhuan/.research/github/weekly/github-trending-summary-weekly-2026-09-25.md",
+  "entry_count": 15,
+  "entry_noun": "repositories",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "AI-agent infrastructure dominated GitHub's weekly chart, with security, orchestration, memory, and agent-native tooling leading the gains."
+    },
+    {
+      "id": "01-cloudflare-security-audit-skill",
+      "kind": "repo",
+      "title": "cloudflare/security-audit-skill",
+      "rank": 1,
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars_gained": 11262,
+      "total_stars": 21502,
+      "themes": [
+        "agent security",
+        "coding agents"
+      ],
+      "refs": [
+        "cloudflare/security-audit-skill"
+      ]
+    },
+    {
+      "id": "02-stablyai-orca",
+      "kind": "repo",
+      "title": "stablyai/orca",
+      "rank": 2,
+      "url": "https://github.com/stablyai/orca",
+      "description": "ADE for working with a fleet of parallel agents",
+      "language": "TypeScript",
+      "stars_gained": 6547,
+      "total_stars": 77982,
+      "themes": [
+        "multi-agent",
+        "orchestration"
+      ],
+      "refs": [
+        "stablyai/orca"
+      ]
+    },
+    {
+      "id": "03-affaan-m-ecc",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 3,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system",
+      "language": "JavaScript",
+      "stars_gained": 6193,
+      "total_stars": 267272,
+      "themes": [
+        "agent engineering",
+        "orchestration"
+      ],
+      "refs": [
+        "affaan-m/ECC"
+      ]
+    },
+    {
+      "id": "04-tencent-weknora",
+      "kind": "repo",
+      "title": "Tencent/WeKnora",
+      "rank": 4,
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform for RAG and autonomous reasoning",
+      "language": "Go",
+      "stars_gained": 3749,
+      "total_stars": 29940,
+      "themes": [
+        "RAG",
+        "knowledge systems"
+      ],
+      "refs": [
+        "Tencent/WeKnora"
+      ]
+    },
+    {
+      "id": "05-vectorize-io-hindsight",
+      "kind": "repo",
+      "title": "vectorize-io/hindsight",
+      "rank": 5,
+      "url": "https://github.com/vectorize-io/hindsight",
+      "description": "Agent Memory That Learns",
+      "language": "Python",
+      "stars_gained": 3363,
+      "total_stars": 28713,
+      "themes": [
+        "agent memory"
+      ],
+      "refs": [
+        "vectorize-io/hindsight"
+      ]
+    },
+    {
+      "id": "06-addyosmani-agent-skills",
+      "kind": "repo",
+      "title": "addyosmani/agent-skills",
+      "rank": 6,
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents",
+      "language": "JavaScript",
+      "stars_gained": 3345,
+      "total_stars": 98991,
+      "themes": [
+        "agent skills"
+      ],
+      "refs": [
+        "addyosmani/agent-skills"
+      ]
+    },
+    {
+      "id": "07-anthropics-claude-code",
+      "kind": "repo",
+      "title": "anthropics/claude-code",
+      "rank": 7,
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Agentic coding tool for terminal-based coding and git workflows",
+      "language": "TypeScript",
+      "stars_gained": 2384,
+      "total_stars": 148042,
+      "themes": [
+        "coding agents"
+      ],
+      "refs": [
+        "anthropics/claude-code"
+      ]
+    },
+    {
+      "id": "08-anthropics-financial-services",
+      "kind": "repo",
+      "title": "anthropics/financial-services",
+      "rank": 8,
+      "url": "https://github.com/anthropics/financial-services",
+      "description": "Open-source Claude Cowork plugins for financial-services workflows",
+      "language": "Python",
+      "stars_gained": 2382,
+      "total_stars": 37492,
+      "themes": [
+        "domain agents"
+      ],
+      "refs": [
+        "anthropics/financial-services"
+      ]
+    },
+    {
+      "id": "09-paperclipai-paperclip",
+      "kind": "repo",
+      "title": "paperclipai/paperclip",
+      "rank": 9,
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "Open-source app for managing agents at work",
+      "language": "TypeScript",
+      "stars_gained": 2321,
+      "total_stars": 83740,
+      "themes": [
+        "agent operations"
+      ],
+      "refs": [
+        "paperclipai/paperclip"
+      ]
+    },
+    {
+      "id": "10-tencentcloud-octop",
+      "kind": "repo",
+      "title": "TencentCloud/Octop",
+      "rank": 10,
+      "url": "https://github.com/TencentCloud/Octop",
+      "description": "Self-hosted multi-user, multi-agent AI assistant",
+      "language": "Python",
+      "stars_gained": 1608,
+      "total_stars": 4914,
+      "themes": [
+        "multi-agent"
+      ],
+      "refs": [
+        "TencentCloud/Octop"
+      ]
+    },
+    {
+      "id": "11-fission-ai-openspec",
+      "kind": "repo",
+      "title": "Fission-AI/OpenSpec",
+      "rank": 11,
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "description": "Spec-driven development for AI coding assistants",
+      "language": "TypeScript",
+      "stars_gained": 1415,
+      "total_stars": 70314,
+      "themes": [
+        "spec-driven development"
+      ],
+      "refs": [
+        "Fission-AI/OpenSpec"
+      ]
+    },
+    {
+      "id": "12-superdesigndev-treg",
+      "kind": "repo",
+      "title": "superdesigndev/treg",
+      "rank": 12,
+      "url": "https://github.com/superdesigndev/treg",
+      "description": "OpenRouter for agent tools",
+      "language": "Python",
+      "stars_gained": 1406,
+      "total_stars": 3314,
+      "themes": [
+        "tool routing"
+      ],
+      "refs": [
+        "superdesigndev/treg"
+      ]
+    },
+    {
+      "id": "13-davila7-claude-code-templates",
+      "kind": "repo",
+      "title": "davila7/claude-code-templates",
+      "rank": 13,
+      "url": "https://github.com/davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "language": "Python",
+      "stars_gained": 965,
+      "total_stars": 31777,
+      "themes": [
+        "agent operations"
+      ],
+      "refs": [
+        "davila7/claude-code-templates"
+      ]
+    },
+    {
+      "id": "14-hkuds-cli-anything",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "rank": 14,
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "Making all software agent-native through CLIs",
+      "language": "Python",
+      "stars_gained": 964,
+      "total_stars": 50490,
+      "themes": [
+        "agent-native tools"
+      ],
+      "refs": [
+        "HKUDS/CLI-Anything"
+      ]
+    },
+    {
+      "id": "15-cloudflare-quiche",
+      "kind": "repo",
+      "title": "cloudflare/quiche",
+      "rank": 15,
+      "url": "https://github.com/cloudflare/quiche",
+      "description": "Rust implementation of QUIC and HTTP/3",
+      "language": "Rust",
+      "stars_gained": 741,
+      "total_stars": 12592,
+      "themes": [
+        "networking"
+      ],
+      "refs": [
+        "cloudflare/quiche"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent engineering infrastructure, multi-agent orchestration, memory and knowledge systems dominate; Python leads the listed languages with 6 entries, followed by TypeScript (4), JavaScript (3), Go (2), and Rust (1)."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The ecosystem is shifting from model-facing applications toward agent-operating systems: skills, specifications, security, memory, orchestration, and workplace management."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The leading opportunity is infrastructure that makes agents dependable: control planes, memory, tool interfaces, security checks, and domain workflows."
+    }
+  ]
+}

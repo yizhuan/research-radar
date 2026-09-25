@@ -4,25 +4,243 @@
   "window": "daily",
   "date": "2026-09-25",
   "title": "GitHub Trending Summary - Daily - 2026-09-25",
-  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-25.md",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-25.md",
   "entry_count": 12,
   "entry_noun": "repositories",
   "sections": [
-    {"id":"00-headline","kind":"headline","title":"Headline","content":"Agent infrastructure dominates today's GitHub momentum: memory, orchestration, agent-native CLIs, harnesses, and software-development skills occupy much of the top tier. Python is the leading language in the snapshot, while TypeScript and Go show up in supporting application and orchestration layers."},
-    {"id":"01-rohitg00-ai-engineering-from-scratch","kind":"repo","title":"rohitg00/ai-engineering-from-scratch","rank":1,"url":"https://github.com/rohitg00/ai-engineering-from-scratch","description":"Learn it. Build it. Ship it for others.","language":"Python","stars_gained":347,"total_stars":56983,"themes":["AI engineering","education"],"refs":["rohitg00/ai-engineering-from-scratch"]},
-    {"id":"02-vectorize-io-hindsight","kind":"repo","title":"vectorize-io/hindsight","rank":2,"url":"https://github.com/vectorize-io/hindsight","description":"Hindsight: Agent Memory That Learns","language":"Python","stars_gained":1668,"total_stars":28403,"themes":["agent memory","AI infrastructure"],"refs":["vectorize-io/hindsight"]},
-    {"id":"03-dream-num-univer","kind":"repo","title":"dream-num/univer","rank":3,"url":"https://github.com/dream-num/univer","description":"The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.","language":"TypeScript","stars_gained":1082,"total_stars":18052,"themes":["productivity","agent applications"],"refs":["dream-num/univer"]},
-    {"id":"04-google-ax","kind":"repo","title":"google/ax","rank":4,"url":"https://github.com/google/ax","description":"Google's open agentic orchestration runtime","language":"Go","stars_gained":1373,"total_stars":10943,"themes":["agent orchestration","AI infrastructure"],"refs":["google/ax"]},
-    {"id":"05-nvidia-model-optimizer","kind":"repo","title":"NVIDIA/Model-Optimizer","rank":5,"url":"https://github.com/NVIDIA/Model-Optimizer","description":"A unified library of model optimization techniques.","language":"Python","stars_gained":44,"total_stars":4210,"themes":["model optimization","inference"],"refs":["NVIDIA/Model-Optimizer"]},
-    {"id":"06-fxembed-fxembed","kind":"repo","title":"FxEmbed/FxEmbed","rank":6,"url":"https://github.com/FxEmbed/FxEmbed","description":"Fix X/Twitter and Bluesky embeds.","language":"TypeScript","stars_gained":182,"total_stars":5416,"themes":["social integrations","developer tooling"],"refs":["FxEmbed/FxEmbed"]},
-    {"id":"07-anthropics-financial-services","kind":"repo","title":"anthropics/financial-services","rank":7,"url":"https://github.com/anthropics/financial-services","description":null,"language":"Python","stars_gained":509,"total_stars":37453,"themes":["domain AI","financial services"],"refs":["anthropics/financial-services"]},
-    {"id":"08-hkuds-cli-anything","kind":"repo","title":"HKUDS/CLI-Anything","rank":8,"url":"https://github.com/HKUDS/CLI-Anything","description":"CLI-Anything: Making ALL Software Agent-Native.","language":"Python","stars_gained":413,"total_stars":50453,"themes":["agent-native software","CLI"],"refs":["HKUDS/CLI-Anything"]},
-    {"id":"09-mvt-project-mvt","kind":"repo","title":"mvt-project/mvt","rank":9,"url":"https://github.com/mvt-project/mvt","description":"Mobile Verification Toolkit for mobile-device forensics.","language":"Python","stars_gained":272,"total_stars":14780,"themes":["security","forensics"],"refs":["mvt-project/mvt"]},
-    {"id":"10-obra-superpowers","kind":"repo","title":"obra/superpowers","rank":10,"url":"https://github.com/obra/superpowers","description":"An agentic skills framework & software development methodology that works.","language":"Shell","stars_gained":611,"total_stars":291369,"themes":["agent skills","software development"],"refs":["obra/superpowers"]},
-    {"id":"11-strands-agents-harness-sdk","kind":"repo","title":"strands-agents/harness-sdk","rank":11,"url":"https://github.com/strands-agents/harness-sdk","description":"An open-source SDK for controlling production AI agents end to end.","language":"Python","stars_gained":455,"total_stars":8361,"themes":["agent harnesses","production AI"],"refs":["strands-agents/harness-sdk"]},
-    {"id":"12-julyx10-lap","kind":"repo","title":"julyx10/lap","rank":12,"url":"https://github.com/julyx10/lap","description":"An offline-first photo manager for large local libraries.","language":"Vue","stars_gained":122,"total_stars":2991,"themes":["local-first","photo management"],"refs":["julyx10/lap"]},
-    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Agent infrastructure, AI engineering and deployment, productivity surfaces, and cross-platform developer tooling dominate. Python appears in 7 of 12 repositories; TypeScript in 2; Go, Shell, and Vue in 1 each."},
-    {"id":"85-notable-shifts","kind":"extra","title":"Notable Shifts","content":"The strongest shift is toward agent systems as software infrastructure rather than isolated model demos: memory, harnesses, orchestration runtimes, agent-native CLIs, and development methodologies occupy the leading positions."},
-    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"GitHub attention is concentrating on the operational layer around AI agents: making them remember, coordinate, use existing software, and ship reliably. The signal is more about agent-enabling tooling than a single new model."}
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent infrastructure dominates today's list: orchestration, memory, plugins, skills, and agent-native office tooling occupy most of the top positions."
+    },
+    {
+      "id": "01-paperclipai-paperclip",
+      "kind": "repo",
+      "title": "paperclipai/paperclip",
+      "rank": 1,
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "An open-source app for managing agents at work.",
+      "language": "TypeScript",
+      "stars_gained": 1853,
+      "total_stars": 83847,
+      "themes": [
+        "agent platforms",
+        "agent-native applications"
+      ],
+      "refs": [
+        "paperclipai/paperclip"
+      ]
+    },
+    {
+      "id": "02-anthropics-claude-plugins-official",
+      "kind": "repo",
+      "title": "anthropics/claude-plugins-official",
+      "rank": 2,
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Anthropic's directory of Claude Code plugins.",
+      "language": "Python",
+      "stars_gained": 62,
+      "total_stars": 36785,
+      "themes": [
+        "plugins",
+        "skills"
+      ],
+      "refs": [
+        "anthropics/claude-plugins-official"
+      ]
+    },
+    {
+      "id": "03-vectorize-io-hindsight",
+      "kind": "repo",
+      "title": "vectorize-io/hindsight",
+      "rank": 3,
+      "url": "https://github.com/vectorize-io/hindsight",
+      "description": "Agent memory that learns.",
+      "language": "Python",
+      "stars_gained": 1652,
+      "total_stars": 28761,
+      "themes": [
+        "memory"
+      ],
+      "refs": [
+        "vectorize-io/hindsight"
+      ]
+    },
+    {
+      "id": "04-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 4,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software-development methodology.",
+      "language": "Shell",
+      "stars_gained": 465,
+      "total_stars": 291488,
+      "themes": [
+        "skills",
+        "workflow"
+      ],
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "05-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 5,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Practical skills from an agents directory.",
+      "language": "Shell",
+      "stars_gained": 671,
+      "total_stars": 269499,
+      "themes": [
+        "skills"
+      ],
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "06-dream-num-univer",
+      "kind": "repo",
+      "title": "dream-num/univer",
+      "rank": 6,
+      "url": "https://github.com/dream-num/univer",
+      "description": "An office runtime spanning spreadsheets, docs, slides, canvas, tables, and PDF.",
+      "language": "TypeScript",
+      "stars_gained": 1048,
+      "total_stars": 18194,
+      "themes": [
+        "agent-native applications",
+        "office"
+      ],
+      "refs": [
+        "dream-num/univer"
+      ]
+    },
+    {
+      "id": "07-anthropics-skills",
+      "kind": "repo",
+      "title": "anthropics/skills",
+      "rank": 7,
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills.",
+      "language": "Python",
+      "stars_gained": 155,
+      "total_stars": 178122,
+      "themes": [
+        "skills"
+      ],
+      "refs": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "id": "08-androoAGI-starnet",
+      "kind": "repo",
+      "title": "androoAGI/starnet",
+      "rank": 8,
+      "url": "https://github.com/androoAGI/starnet",
+      "description": "A local-first desktop agent harness.",
+      "language": "JavaScript",
+      "stars_gained": 113,
+      "total_stars": 336,
+      "themes": [
+        "agent platforms",
+        "local-first"
+      ],
+      "refs": [
+        "androoAGI/starnet"
+      ]
+    },
+    {
+      "id": "09-derv82-wifit3",
+      "kind": "repo",
+      "title": "derv82/wifit3",
+      "rank": 9,
+      "url": "https://github.com/derv82/wifit3",
+      "description": "A USB-only, cross-platform version of Wifite.",
+      "language": "Python",
+      "stars_gained": 168,
+      "total_stars": 750,
+      "themes": [
+        "security"
+      ],
+      "refs": [
+        "derv82/wifit3"
+      ]
+    },
+    {
+      "id": "10-rohitg00-ai-engineering-from-scratch",
+      "kind": "repo",
+      "title": "rohitg00/ai-engineering-from-scratch",
+      "rank": 10,
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn, build, and ship AI engineering projects.",
+      "language": "Python",
+      "stars_gained": 1181,
+      "total_stars": 57209,
+      "themes": [
+        "AI engineering"
+      ],
+      "refs": [
+        "rohitg00/ai-engineering-from-scratch"
+      ]
+    },
+    {
+      "id": "11-shy3130-tick-stock-panel",
+      "kind": "repo",
+      "title": "shy3130/tick-stock-panel",
+      "rank": 11,
+      "url": "https://github.com/shy3130/tick-stock-panel",
+      "description": "Self-hosted A-share screening, monitoring, and backtesting workbench with LLM support.",
+      "language": "Python",
+      "stars_gained": 31,
+      "total_stars": 5069,
+      "themes": [
+        "quantitative finance",
+        "agent-native applications"
+      ],
+      "refs": [
+        "shy3130/tick-stock-panel"
+      ]
+    },
+    {
+      "id": "12-google-ax",
+      "kind": "repo",
+      "title": "google/ax",
+      "rank": 12,
+      "url": "https://github.com/google/ax",
+      "description": "Google's open agentic orchestration runtime",
+      "language": "Go",
+      "stars_gained": 1386,
+      "total_stars": 11183,
+      "themes": [
+        "orchestration"
+      ],
+      "refs": [
+        "google/ax"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent platforms and orchestration; skills, plugins, and memory; agent-native office and quantitative applications. Python leads the selected list with 6 of 12 repositories."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The list is unusually concentrated around the operational layer of AI agents rather than model training: memory, skills, plugins, orchestration, and workplace harnesses."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The strongest daily signal is the infrastructure that makes agents useful, repeatable, and deployable. Durable opportunities appear to be in interoperability, memory, workflow composition, and observability."
+    }
   ]
 }

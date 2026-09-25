@@ -4,82 +4,82 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-25 09:30 UTC |
+| Snapshot time (UTC) | 2026-09-25 15:05 UTC |
 | Scope | Daily |
 | Date range | 2026-09-25 through 2026-09-25 |
 | Ranking basis | Daily Trending star gains |
 
 ## Headline
 
-Agent infrastructure dominates today's GitHub momentum: memory, orchestration, agent-native CLIs, harnesses, and software-development skills occupy much of the top tier. Python is the leading language in the snapshot, while TypeScript and Go show up in supporting application and orchestration layers.
+Agent infrastructure dominates today's list: orchestration, memory, plugins, skills, and agent-native office tooling occupy most of the top positions. The strongest single signal is paperclipai/paperclip, with 1,853 stars gained today, while Google, NVIDIA, and an A-share quant tool show the trend extending into runtime, inference, and applied software.
 
 ## Top Repositories
 
-1. **[rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) - A practical guide to learning, building, and shipping AI engineering projects.**
+1. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip) - An open-source app for managing agents at work.**
 
-  **Language:** Python | **Stars gained in window:** +347 | **Total stars:** 56,983 | **Why notable:** It is today's top-listed repository and packages AI engineering education into a highly discoverable, hands-on format.
+  **Language:** TypeScript | **Stars gained in window:** +1,853 | **Total stars:** 83,847 | **Why notable:** The day's top-ranked repository and the clearest signal for agent operations moving into workplace software.
 
-2. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) - Agent memory that learns.**
+2. **[anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) - Anthropic's directory of Claude Code plugins.**
 
-  **Language:** Python | **Stars gained in window:** +1,668 | **Total stars:** 28,403 | **Why notable:** It records the largest displayed daily gain, signaling strong interest in persistent and adaptive memory for agents.
+  **Language:** Python | **Stars gained in window:** +62 | **Total stars:** 36,785 | **Why notable:** It represents the emerging distribution layer for reusable coding-agent capabilities.
 
-3. **[dream-num/univer](https://github.com/dream-num/univer) - An office-style runtime for AI agents spanning spreadsheets, documents, slides, canvas, relational tables, and PDF.**
+3. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) - Agent memory that learns.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,082 | **Total stars:** 18,052 | **Why notable:** It extends agent automation into rich office and productivity surfaces rather than chat alone.
+  **Language:** Python | **Stars gained in window:** +1,652 | **Total stars:** 28,761 | **Why notable:** A large daily jump highlights memory as a core differentiator for persistent agents.
 
-4. **[google/ax](https://github.com/google/ax) - Google's open agentic orchestration runtime.**
+4. **[obra/superpowers](https://github.com/obra/superpowers) - An agentic skills framework and software-development methodology.**
 
-  **Language:** Go | **Stars gained in window:** +1,373 | **Total stars:** 10,943 | **Why notable:** It combines the strongest institutional signal in the list with a large daily gain around agent orchestration.
+  **Language:** Shell | **Stars gained in window:** +465 | **Total stars:** 291,488 | **Why notable:** Its sustained popularity shows demand for opinionated agent workflows, not only raw model access.
 
-5. **[NVIDIA/Model-Optimizer](https://github.com/NVIDIA/Model-Optimizer) - A library for quantization, distillation, pruning, neural architecture search, and speculative decoding.**
+5. **[mattpocock/skills](https://github.com/mattpocock/skills) - Practical skills from an agents directory.**
 
-  **Language:** Python | **Stars gained in window:** +44 | **Total stars:** 4,210 | **Why notable:** It represents the deployment side of the AI stack, optimizing models for TensorRT-LLM, vLLM, and related runtimes.
+  **Language:** Shell | **Stars gained in window:** +671 | **Total stars:** 269,499 | **Why notable:** The momentum reinforces skills as a reusable packaging format for engineering agents.
 
-6. **[FxEmbed/FxEmbed](https://github.com/FxEmbed/FxEmbed) - Richer X/Twitter and Bluesky embeds for Discord, Telegram, and other platforms.**
+6. **[dream-num/univer](https://github.com/dream-num/univer) - An office runtime spanning spreadsheets, docs, slides, canvas, tables, and PDF.**
 
-  **Language:** TypeScript | **Stars gained in window:** +182 | **Total stars:** 5,416 | **Why notable:** It is a focused interoperability tool showing that practical social-media plumbing remains a source of daily interest.
+  **Language:** TypeScript | **Stars gained in window:** +1,048 | **Total stars:** 18,194 | **Why notable:** It connects agent capabilities with structured office workloads rather than chat alone.
 
-7. **[anthropics/financial-services](https://github.com/anthropics/financial-services) - N/A - not available from GitHub.**
+7. **[anthropics/skills](https://github.com/anthropics/skills) - Public repository for Agent Skills.**
 
-  **Language:** Python | **Stars gained in window:** +509 | **Total stars:** 37,453 | **Why notable:** Its high total-star base and sizable daily gain make it one of the snapshot's most visible domain-specific AI repositories.
+  **Language:** Python | **Stars gained in window:** +155 | **Total stars:** 178,122 | **Why notable:** A high-star foundation repository confirms that the skills ecosystem is becoming a major software layer.
 
-8. **[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) - A project aimed at making all software agent-native through command-line interfaces.**
+8. **[androoAGI/starnet](https://github.com/androoAGI/starnet) - A local-first desktop agent harness presented as a living pixel-art station.**
 
-  **Language:** Python | **Stars gained in window:** +413 | **Total stars:** 50,453 | **Why notable:** It turns the CLI into an agent integration surface and connects directly to the day's broader agent-native tooling theme.
+  **Language:** JavaScript | **Stars gained in window:** +113 | **Total stars:** 336 | **Why notable:** It is a small but distinctive example of local-first, observable multi-agent interfaces.
 
-9. **[mvt-project/mvt](https://github.com/mvt-project/mvt) - Mobile forensics tooling for finding signs of potential device compromise.**
+9. **[derv82/wifit3](https://github.com/derv82/wifit3) - A USB-only, cross-platform version of Wifite.**
 
-  **Language:** Python | **Stars gained in window:** +272 | **Total stars:** 14,780 | **Why notable:** It is the clearest security-focused outlier among an otherwise agent-heavy top list.
+  **Language:** Python | **Stars gained in window:** +168 | **Total stars:** 750 | **Why notable:** It is the day's clearest security-focused outlier outside the agent cluster.
 
-10. **[obra/superpowers](https://github.com/obra/superpowers) - An agentic skills framework and software-development methodology.**
+10. **[rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) - Learn, build, and ship AI engineering projects.**
 
-  **Language:** Shell | **Stars gained in window:** +611 | **Total stars:** 291,369 | **Why notable:** Its very large installed-interest base and continued daily growth show demand for repeatable agent-assisted development workflows.
+  **Language:** Python | **Stars gained in window:** +1,181 | **Total stars:** 57,209 | **Why notable:** The high daily gain shows continued appetite for practical, end-to-end AI engineering education.
 
-11. **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) - An open-source SDK for controlling production AI agents end to end.**
+11. **[shy3130/tick-stock-panel](https://github.com/shy3130/tick-stock-panel) - Self-hosted A-share screening, monitoring, and backtesting workbench with LLM support.**
 
-  **Language:** Python | **Stars gained in window:** +455 | **Total stars:** 8,361 | **Why notable:** It targets production harnesses across Python, TypeScript, models, and clouds, reinforcing the shift from demos to operational agents.
+  **Language:** Python | **Stars gained in window:** +31 | **Total stars:** 5,069 | **Why notable:** It demonstrates agent tooling moving into domain-specific quantitative workflows.
 
-12. **[julyx10/lap](https://github.com/julyx10/lap) - An offline-first photo manager for large local libraries.**
+12. **[google/ax](https://github.com/google/ax) - Google's open agentic orchestration runtime.**
 
-  **Language:** Vue | **Stars gained in window:** +122 | **Total stars:** 2,991 | **Why notable:** It provides a consumer-focused, local-first counterpoint to the dominant AI infrastructure trend.
+  **Language:** Go | **Stars gained in window:** +1,386 | **Total stars:** 11,183 | **Why notable:** A strong daily jump from Google validates orchestration runtimes as a key battleground.
 
 ## Trending Technologies and Themes
 
-- **Agent infrastructure:** Hindsight, Google AX, CLI-Anything, Superpowers, and Harness SDK all focus on memory, orchestration, agent-native interfaces, skills, or control loops.
-- **AI engineering and deployment:** ai-engineering-from-scratch and NVIDIA Model-Optimizer span learning and model optimization, covering both how systems are built and how they are served efficiently.
-- **Productivity and application surfaces:** Univer brings agents into office-style documents and tables, while FxEmbed focuses on cross-platform media embeds.
-- **Languages:** Python appears in 7 of the 12 listed repositories; TypeScript in 2; Go, Shell, and Vue in 1 each.
+- **Agent platforms and orchestration:** paperclip, google/ax, and starnet point to a shift from standalone assistants toward runtimes that schedule, observe, and manage agents.
+- **Skills, plugins, and memory:** claude-plugins-official, anthropics/skills, mattpocock/skills, superpowers, and hindsight show an ecosystem forming around composable capabilities and persistent context.
+- **Agent-native applications:** univer and tick-stock-panel apply agents to office productivity and quantitative finance, suggesting domain workflows are becoming the next adoption surface.
+- **Languages:** Python leads the listed repositories (6 of 12), followed by TypeScript (2), Shell (2), JavaScript (1), and Go (1); the mix combines AI experimentation with production runtimes and developer tooling.
 
 ## Notable Shifts
 
-The strongest shift is toward agent systems as software infrastructure rather than isolated model demos: memory, harnesses, orchestration runtimes, agent-native CLIs, and development methodologies collectively occupy the leading positions. Local-first and security tooling remain present, but are secondary to the agent-platform wave in this daily snapshot.
+Today's list is unusually concentrated around the operational layer of AI agents: memory, skills, plugins, orchestration, and workplace harnesses. Compared with a generic software-trending list, model-training infrastructure is less prominent than the packaging and deployment of agent behavior; NVIDIA/Model-Optimizer was visible immediately below the selected 12 with +360 stars and remains a notable adjacent signal.
 
 ## Takeaway
 
-Today's list suggests that GitHub attention is concentrating on the operational layer around AI agents: making them remember, coordinate, use existing software, and ship reliably. The market signal is less about a single new model and more about the tooling needed to turn agents into durable developer and productivity systems.
+GitHub's strongest daily signal is not a new model but the infrastructure that makes agents useful, repeatable, and deployable. The combination of large incumbents (Anthropic, Google, NVIDIA) and fast-rising independent projects suggests agent ecosystems are broadening from coding assistants into office software, local desktop environments, security, and finance. The most durable opportunities are likely in interoperability, memory, workflow composition, and observability.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Today](https://github.com/trending?since=daily)
-- **Corroboration:** GitHub REST repository endpoints, for example [GET /repos/google/ax](https://api.github.com/repos/google/ax), used to confirm names, descriptions, languages, star totals, fork status, and recent update timestamps.
-- **Method note:** Daily star gains come from GitHub's matching daily Trending view. Repositories were deduplicated by `owner/name` and obvious forks/mirrors were excluded; the list contains 12 current entries.
+- **Primary source:** https://github.com/trending (GitHub Trending, repositories, date range Today).
+- **Corroboration:** GitHub REST API repository metadata at https://api.github.com/repos/{owner}/{repo} for the listed repositories.
+- **Method note:** Star gains come from the matching GitHub Trending daily view captured at 2026-09-25 15:05 UTC; total stars, descriptions, languages, and repository freshness were corroborated with GitHub REST metadata. Obvious tutorial/list-only noise was excluded from the 12-entry briefing.

@@ -1,100 +1,97 @@
-# arXiv Trending Physics — 2026-09-25
+# Today's hottest physics papers on arXiv
 
-## Headline
-Today's strongest inferred cluster is the interface between quantum many-body physics and usable quantum technology: an experimental observation of hierarchical relaxation, a review unifying deep thermalization, and new high-rate error-correcting-code designs. In parallel, twisted graphene links incipient superconductivity to tunable Chern topology, while compact-star phase transitions offer a multi-messenger gravitational-wave/neutrino target.
-
-This is an inferred ranking, not an official arXiv popularity chart: arXiv does not publish a daily trending, readership, or download ranking.
+Snapshot: 2026-09-26 15:30 UTC. Daily window: the latest arXiv announcement batch, Friday 2026-09-25; the papers below were submitted on 2026-09-24 and appeared in that batch. arXiv provides no official trending chart, readership ranking, or download leaderboard, so this is an inferred ranking based on cross-list breadth, experimental or observational relevance, concrete results, journal/analysis context, and limited Semantic Scholar checks. Citation totals are not period gains.
 
 ## Top papers (ranked)
 
-### 1. [Observation of universal hierarchical relaxation in a quantum simulator](https://arxiv.org/abs/2609.29817)
-- **Abstract:** The authors use a trapped-ion quantum simulator to demonstrate the theoretically predicted relaxation-overlap inequality and its hierarchy of relaxation exponents in the diffusive regime, extending the theory to multiple conservation laws.
-- **Authors:** Jiaozi Wang, Manoj K. Joshi, Luca Capizzi, Rainer Blatt, Christian F. Roos, Leonardo Mazza, Dario Poletti
-- **arXiv:** `2609.29817v1` (published 2026-09-24 13:53 UTC; categories: `cond-mat.stat-mech`, `quant-ph`)
-- **Evidence for ranking:** Semantic Scholar returned 0 citations and 0 influential citations at the snapshot, expected for a same-day preprint. Ranked first because it reports an experimental test in a trapped-ion simulator, connects eigenstate thermalization to hydrodynamics, and is cross-listed between statistical mechanics and quantum physics.
-- **Claimed result:** The authors claim an experimental demonstration of the relaxation-overlap inequality in the diffusive regime, with a multiple-conservation-law extension.
-- **Evidence type:** experimental; trapped-ion quantum simulator and autocorrelation measurements.
-- **Caveat:** The abstract specifies the diffusive regime and does not establish universality beyond the studied simulator/model class; the result remains a preprint.
-- **Announcement type:** new submission, 2026-09-25 announcement batch.
-- **Themes:** Quantum information; Condensed matter & materials
+### 1. [Incipient superconductivity and tunable Chern insulators in twisted Bernal bilayer-trilayer graphene](https://arxiv.org/abs/2609.30202)
+- **Abstract:** The authors report a gate-tunable twisted graphene platform combining Chern-insulator states with pockets of incipient, phase-coherent superconductivity.
+- **Authors:** Derek Waleffe, Aryana Bhattacharyya, Manish Kumar, Eric Maginnis, Anna Okounkova et al.
+- **arXiv:** `2609.30202v1` (published 2026-09-24 17:37 UTC; categories: `cond-mat.mes-hall`, `cond-mat.str-el`, `cond-mat.supr-con`)
+- **Evidence for ranking:** Broad condensed-matter relevance; reports a concrete device-scale result rather than a proposal; tunable Chern numbers up to |C|=3; critical-current and Fraunhofer-like signatures; Semantic Scholar currently reports 0 citations and 0 influential citations, as expected for a new preprint.
+- **Claimed result:** Across twist angles 1.05°–1.50°, electron doping produces integer and fractional Chern insulators, while displacement-field control produces an incipient-superconductivity pocket near an insulating state; the resistance does not reach zero, so the authors do not claim bulk zero-resistance superconductivity.
+- **Evidence type:** Experimental; twisted Bernal bilayer-trilayer graphene encapsulated in hexagonal boron nitride, with transport versus twist angle, doping, displacement field, and magnetic field.
+- **Caveat:** The reported superconductivity is explicitly incipient: resistance does not fall to zero, and the interpretation relies on transport signatures of pairing and phase coherence.
+- **Announcement type:** new submission, 2026-09-25 announcement batch
+- **Themes:** Condensed matter & materials; Quantum information; Instrumentation & detectors
 
-### 2. [Deep thermalization and Hilbert space ergodicity](https://arxiv.org/abs/2609.30248)
-- **Abstract:** This review presents deep thermalization and Hilbert-space ergodicity as forms of maximally random quantum-state distributions and develops a maximum-entropy framework connecting them to irreversible statistical mechanics from reversible unitary dynamics.
-- **Authors:** Daniel K. Mark, Manuel Endres, Matteo Ippoliti, Wen Wei Ho, Soonwon Choi
-- **arXiv:** `2609.30248v1` (published 2026-09-24 17:58 UTC; categories: `quant-ph`, `cond-mat.stat-mech`)
-- **Evidence for ranking:** Semantic Scholar reported 0 citations and 0 influential citations. Ranked highly because it is a focused review by a multi-institution author team, cross-links quantum information and statistical mechanics, and explicitly identifies active questions and applications to benchmarking and tomography.
-- **Claimed result:** The authors claim a unifying framework for different forms of ergodicity under physical constraints, not a new experimental detection.
-- **Evidence type:** review; synthesis of recent theory and quantum-information results.
-- **Caveat:** As a review, its importance depends on whether the proposed unification and open directions withstand follow-up work; it supplies no new direct measurement in the abstract.
-- **Announcement type:** new submission, 2026-09-25 announcement batch.
+### 2. [Observation of universal hierarchical relaxation in a quantum simulator](https://arxiv.org/abs/2609.29817)
+- **Abstract:** A trapped-ion quantum simulator experimentally demonstrates a predicted hierarchy of relaxation exponents for autocorrelators in the diffusive regime.
+- **Authors:** Jiaozi Wang, Manoj K. Joshi, Luca Capizzi, Rainer Blatt, Christian F. Roos et al.
+- **arXiv:** `2609.29817v1` (published 2026-09-24 13:53 UTC; categories: `cond-mat.stat-mech`, `quant-ph`)
+- **Evidence for ranking:** Direct experiment connecting quantum simulation, hydrodynamics, and eigenstate thermalization; cross-listed between statistical mechanics and quantum physics; Semantic Scholar reports 0 citations and 0 influential citations at the snapshot.
+- **Claimed result:** The authors extend the relaxation-overlap inequality to multiple conservation laws and observe the predicted hierarchical relaxation behavior in a trapped-ion simulator operating in the diffusive regime.
+- **Evidence type:** Experimental; trapped-ion quantum simulator and measured autocorrelation functions.
+- **Caveat:** The result is demonstrated in the diffusive regime and for the simulator's accessible operators and conservation laws; extension to other regimes and systems remains open.
+- **Announcement type:** new submission, 2026-09-25 announcement batch
 - **Themes:** Quantum information; Condensed matter & materials; Computational & data methods
 
-### 3. [Incipient superconductivity and tunable Chern insulators in twisted Bernal bilayer-trilayer graphene](https://arxiv.org/abs/2609.30202)
-- **Abstract:** Experiments on twisted Bernal bilayer-trilayer graphene report Chern insulators with tunable Chern numbers and a gate-controlled pocket of incipient superconductivity whose critical current shows phase-coherent pairing signatures.
-- **Authors:** Derek Waleffe, Aryana Bhattacharyya, Manish Kumar, Eric Maginnis, Anna Okounkova, et al.
-- **arXiv:** `2609.30202v1` (published 2026-09-24 17:37 UTC; categories: `cond-mat.mes-hall`, `cond-mat.str-el`, `cond-mat.supr-con`)
-- **Evidence for ranking:** Semantic Scholar queries after the first successful request were rate-limited; no reliable citation total was available. Ranked highly on a concrete experimental result, three condensed-matter cross-lists, tunable topology, a stated critical current, Fraunhofer-like modulation, and a claimed persistence beyond four times the weak-coupling Pauli limit.
-- **Claimed result:** The authors claim incipient superconductivity and tunable Chern insulators in one gate-controlled graphene platform; they report a nonzero-resistance superconducting-like transition rather than zero-resistance superconductivity.
-- **Evidence type:** experimental; twisted graphene devices, transport, magnetic-field and displacement-field tuning.
-- **Caveat:** The abstract explicitly says resistance does not fall to zero, so the superconductivity claim is preliminary and requires independent confirmation and fuller characterization.
-- **Announcement type:** new submission, 2026-09-25 announcement batch.
-- **Themes:** Condensed matter & materials; Quantum information
-
-### 4. [Design Principles for Ultra-High-Rate Quantum Codes](https://arxiv.org/abs/2609.30069)
-- **Abstract:** The authors develop construction principles for compact ultra-high-rate quantum error-correcting codes and identify code families with favorable rate, distance, check-weight, and blocklength tradeoffs at a stated physical error rate of 0.1%.
-- **Authors:** Jong Yeon Lee, Koki Okada, Nishad Maskara, Kenta Kasai, Hengyun Zhou
-- **arXiv:** `2609.30069v1` (published 2026-09-24 16:26 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** Semantic Scholar was rate-limited after one successful lookup, so no reliable citation total was available. Ranked on concrete code parameters— including `[[90,21,11]]`, `[[140,31,15]]`, and `[[200,43,20]]` non-CSS constructions—plus a systematic design framework and the explicit statement that it subsumes an earlier preprint.
-- **Claimed result:** The authors claim design strategies for navigating the Pareto frontier of ultra-high-rate codes and compact constructions with improved parameters.
-- **Evidence type:** theoretical/computational; code-construction analysis and ensemble-based parameter study.
-- **Caveat:** The performance claims are parameterized by a physical error rate and heavier checks; hardware implementation cost and decoding performance are not settled by the abstract.
-- **Announcement type:** new submission, 2026-09-25 announcement batch.
-- **Themes:** Quantum information; Computational & data methods
-
-### 5. [Multi-messenger and multi-band signal from first-order phase transitions in proto-neutron stars](https://arxiv.org/abs/2609.29761)
-- **Abstract:** Using model-agnostic equations of state, the authors model accretion-driven first-order phase transitions in proto-neutron stars and predict correlated kHz and MHz gravitational-wave emission accompanied by a delayed neutrino burst.
+### 3. [Multi-messenger and multi-band signal from first-order phase transitions in proto-neutron stars](https://arxiv.org/abs/2609.29761)
+- **Abstract:** Model-agnostic proto-neutron-star calculations predict correlated kHz and MHz gravitational-wave emission plus a delayed neutrino burst from an accretion-driven first-order phase transition.
 - **Authors:** Christian Ecker, Mauro Giliberti, Luciano Rezzolla
 - **arXiv:** `2609.29761v1` (published 2026-09-24 13:12 UTC; categories: `gr-qc`, `astro-ph.HE`, `hep-ph`, `nucl-th`)
-- **Evidence for ranking:** Semantic Scholar was rate-limited after the first lookup; no reliable citation total was available. Ranked for four-way cross-listing, a concrete multi-messenger prediction, and a proposed correlation between kHz and MHz signals that could constrain dense-matter physics.
-- **Claimed result:** The authors claim that a first-order transition can generate correlated multi-band gravitational waves and a delayed neutrino signal, with the delay tied to transition details.
-- **Evidence type:** computational/forecast; proto-neutron-star evolution with constrained, model-agnostic equations of state.
-- **Caveat:** This is a forecast dependent on the assumed transition and equation-of-state ensemble; MHz gravitational-wave detectability is not demonstrated.
-- **Announcement type:** new submission, 2026-09-25 announcement batch.
-- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics; Instrumentation & detectors
+- **Evidence for ranking:** One of the batch's widest cross-field papers, spanning relativity, astrophysics, particle phenomenology, and nuclear theory; offers a falsifiable multi-messenger signature and a clear observational program; Semantic Scholar reports 0 citations and 0 influential citations.
+- **Claimed result:** A first-order transition grows a quark-matter core globally and produces microscopic bubble collisions, yielding correlated kHz/MHz gravitational-wave signals; a delayed neutrino burst may encode the transition timescale.
+- **Evidence type:** Computational/theoretical; accretion-driven proto-neutron-star evolution using a constrained ensemble of model-agnostic equations of state.
+- **Caveat:** The signal is a forecast dependent on the equation-of-state ensemble, transition dynamics, and detectability in the kHz/MHz and neutrino channels; it is not an observation.
+- **Announcement type:** new submission, 2026-09-25 announcement batch
+- **Themes:** Astrophysics; Cosmology & gravitation; Particle, nuclear & high-energy physics
 
-### 6. [Stress-testing the spatially flat Universe: nonparametric spatial curvature determination from DESI DR2](https://arxiv.org/abs/2609.22470)
-- **Abstract:** Combining Type Ia supernovae with DESI DR2 BAO or cosmic-chronometer data under a Gaussian-process prior, the authors find mildly positive estimates of spatial curvature while avoiding CMB data and a parametric dark-energy model.
-- **Authors:** Hannah C. Turner, Suhail Dhawan, Sunny Vagnozzi, Alice Townsend, Peter Massey
-- **arXiv:** `2609.22470v1` (published 2026-09-18 18:29 UTC; categories: `astro-ph.CO`, `gr-qc`, `hep-ph`, `hep-th`)
-- **Evidence for ranking:** Semantic Scholar was rate-limited after the first lookup; no reliable citation total was available. Included as the strongest older-window signal because it uses DESI DR2 plus multiple supernova samples, is cross-listed across cosmology and gravity, and reports a potentially consequential departure from flatness while explicitly stress-testing the result.
-- **Claimed result:** The authors report baseline estimates such as `ΩK = 0.219 +0.110/-0.111` for PantheonPlus+BAO, mildly favoring an open universe under their nonparametric analysis.
-- **Evidence type:** observational; DESI DR2 BAO, Type Ia supernovae, cosmic chronometers, and Gaussian-process inference.
-- **Caveat:** The uncertainties include zero and the estimates depend on the smoothness prior, supernova sample, and redshift selection; this is not evidence that spatial curvature has been detected.
-- **Announcement type:** new submission, prior announcement batch 2026-09-18; included for corroborated cross-field momentum, not as a same-day paper.
-- **Themes:** Cosmology & gravitation; Computational & data methods
+### 4. [Two-rung ladder: H₀ from Tip of the Red Giant Branch and geometric anchors alone](https://arxiv.org/abs/2609.29996)
+- **Abstract:** A TRGB distance ladder calibrated with the Large Magellanic Cloud and NGC 4258 gives H₀ estimates whose uncertainty is dominated by local velocity-field reconstruction rather than TRGB calibration.
+- **Authors:** Richard Stiskalek, Harry Desmond, Guilhem Lavaux
+- **arXiv:** `2609.29996v1` (published 2026-09-24 15:44 UTC; categories: `astro-ph.CO`, `astro-ph.GA`)
+- **Evidence for ranking:** Addresses the high-profile Hubble-tension question with about 400 hosts and an explicit treatment of selection, density, and peculiar velocities; submitted to MNRAS; Semantic Scholar reports 0 citations and 0 influential citations.
+- **Claimed result:** Equal weighting of 80 local-field realizations gives H₀ = 68.4 ± 5.9 km/s/Mpc, while evidence weighting gives 72.3 ± 2.6 km/s/Mpc; the latter is driven by one high-evidence realization, so the ladder cannot yet arbitrate the tension.
+- **Evidence type:** Observational/data analysis; Extragalactic Distance Database TRGB hosts, geometric anchors, redshifts, and reconstructed local density/velocity fields.
+- **Caveat:** Field-to-field scatter is 5.2 km/s/Mpc, and the evidence-weighted value is sensitive to finite sampling of the reconstruction posterior; the authors call for more distant TRGB hosts and improved local-Universe reconstructions.
+- **Announcement type:** new submission, 2026-09-25 announcement batch
+- **Themes:** Cosmology & gravitation; Astrophysics; Computational & data methods
+
+### 5. [A Narrow Neutrino Window for the LZ Event](https://arxiv.org/abs/2609.30255)
+- **Abstract:** The authors propose a two-step atmospheric-neutrino upscattering mechanism that could explain LZ's 248 keV recoil while avoiding constraints from lighter-target neutrino experiments.
+- **Authors:** Vedran Brdar, Dibya S. Chattopadhyay
+- **arXiv:** `2609.30255v1` (published 2026-09-24 17:59 UTC; categories: `hep-ph`, `hep-ex`)
+- **Evidence for ranking:** Directly addresses a newly reported LZ anomaly and connects dark-sector model building to neutrino and xenon constraints; cross-listed in phenomenology and experiment; Semantic Scholar returned a rate-limit response for this identifier, so citation signals are unavailable.
+- **Claimed result:** Atmospheric neutrinos could first produce a nearly monoenergetic N₁ and then upscatter to N₂ in xenon, with N₂ around 250 MeV; a dark-matter-induced parametric resonance and gauged U(1)B interaction are proposed to produce O(1) LZ events.
+- **Evidence type:** Theoretical/forecast; kinematic analysis and a model proposal tested against LZ and other neutrino-experiment constraints.
+- **Caveat:** This is a model explanation for one event, not a detection; it requires a narrow energy window, a specific two-step mechanism, and an interaction stronger than the weak interaction.
+- **Announcement type:** new submission, 2026-09-25 announcement batch
+- **Themes:** Particle, nuclear & high-energy physics; Cosmology & gravitation
+
+### 6. [Limits on Primordial Black Hole Evaporation from LUX-ZEPLIN](https://arxiv.org/abs/2609.29462)
+- **Abstract:** The paper argues that Hawking-boosted dark matter from evaporating primordial black holes would overproduce low-energy recoils, converting LZ's null low-energy search into stringent PBH abundance limits.
+- **Authors:** Jitumani Kalita
+- **arXiv:** `2609.29462v1` (published 2026-09-24 12:22 UTC; categories: `astro-ph.CO`, `gr-qc`, `hep-ph`)
+- **Evidence for ranking:** Cross-links the LZ anomaly, primordial-black-hole evaporation, effective field theory, and cosmology; reports a quantitative 90% confidence bound; Semantic Scholar returned a rate-limit response, so citation signals are unavailable.
+- **Claimed result:** For PBH masses around 2 × 10¹¹ g, the analysis excludes an abundance fraction f_PBH ≳ 10⁻⁶ at 90% confidence because the thermal Hawking spectrum inevitably creates too many low-energy recoils.
+- **Evidence type:** Theoretical/computational; LZ recoil constraints interpreted with heavy non-relativistic EFT operators and endothermic inelastic transitions.
+- **Caveat:** The bound depends on the assumed scattering operators, PBH evaporation flux, and interpretation of the singular 248 keV event plus the low-energy null region; it is not a direct PBH observation.
+- **Announcement type:** new submission, 2026-09-25 announcement batch
+- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics; Astrophysics
 
 ## Trending Research Themes
 
-- **Quantum dynamics moving from theory to controlled tests:** the trapped-ion study tests a relaxation hierarchy, while the deep-thermalization review frames ergodicity through quantum-information principles (2609.29817, 2609.30248).
-- **Fault tolerance as an engineering trade space:** ultra-high-rate code design emphasizes the rate–distance–check-weight–blocklength frontier rather than a single record metric (2609.30069).
-- **Programmable topology and pairing in moiré materials:** twisted multilayer graphene is presented as a platform where Chern number and pairing can be tuned in the same device (2609.30202).
-- **Multi-messenger dense-matter inference:** the proto-neutron-star forecast connects a phase transition to gravitational-wave bands and neutrino timing, while the cosmology paper uses DESI-era data to test a foundational geometric assumption (2609.29761, 2609.22470).
+- **LZ's 248 keV recoil is concentrating model-building attention.** One paper tries to explain it with a narrow two-step neutrino channel, while another uses the low-energy null result to constrain Hawking-boosted dark matter from evaporating PBHs (2609.30255, 2609.29462). Neither establishes that the event is new physics.
+- **Quantum matter is being treated as both a laboratory and a controllable information system.** The twisted-graphene work combines topology and pairing in one tunable platform, while the trapped-ion experiment tests a hydrodynamic relaxation hierarchy (2609.30202, 2609.29817).
+- **Cross-scale, multi-messenger predictions remain prominent.** Proto-neutron-star phase transitions are framed through correlated gravitational waves and neutrinos, while the H₀ paper shows how local velocity fields can dominate a cosmological inference (2609.29761, 2609.29996).
+- **Theory papers are increasingly paired with concrete observables.** The strongest candidates in this batch connect abstract mechanisms to recoil spectra, transport signatures, distance-ladder likelihoods, or future GW/neutrino observations rather than claiming immediate detection.
 
 ## Open Problems and Research Directions
 
-- **Open problem — scope of hierarchical relaxation:** 2609.29817 demonstrates the inequality in a diffusive trapped-ion setting. Follow-up experiments should vary conservation laws, transport regimes, system size, and observables to test how broadly the exponent hierarchy survives.
-- **Open problem — operational meaning of deep thermalization:** 2609.30248 identifies phase-transition and ergodicity-breaking questions. Concrete directions include finite-size scaling, mixed-state generalizations, and benchmark/tomography protocols that can distinguish the proposed forms experimentally.
-- **Open problem — superconductivity claim in twisted graphene:** 2609.30202 reports incipient superconductivity without zero resistance. Independent devices, phase-sensitive probes, zero-resistance tests, and disorder/contact controls would test whether the pairing signatures represent a bulk superconducting phase.
-- **Open problem — code practicality:** 2609.30069 trades heavier checks for distance. Decoder benchmarks, circuit-level noise studies, and hardware-aware syndrome-extraction experiments are needed to evaluate whether the proposed Pareto improvements survive implementation overhead.
-- **Open problem — detectability of compact-star forecasts:** 2609.29761 predicts correlated kHz/MHz gravitational waves and delayed neutrinos. Detector sensitivity studies and simulations spanning broader equations of state and transition kinetics could determine which parts of the signal are realistically testable.
-- **Open problem — robustness of curvature hints:** 2609.22470 finds prior- and sample-dependent positive curvature estimates. Independent supernova calibrations, alternative nonparametric priors, and future BAO/chronometer releases can test whether the preference persists.
+- **LZ event origin (author- and analysis-tied):** Determine whether the 248 keV event survives larger exposure and independent detector/background studies; test the narrow neutrino mechanism against oxygen, carbon, and other target data, and test the PBH scenario against the full recoil spectrum (2609.30255, 2609.29462).
+- **Superconductivity in twisted graphene:** Establish whether the incipient state develops zero resistance and independently characterize its phase stiffness, pairing symmetry, and relationship to the adjacent Chern insulators (2609.30202).
+- **Universal relaxation:** Test the relaxation-overlap hierarchy outside the diffusive regime, with more conservation laws and different quantum simulators or condensed-matter platforms (2609.29817).
+- **Proto-neutron-star phase transitions:** Quantify detector sensitivity to the predicted kHz/MHz gravitational-wave correlation and delayed neutrino burst, and narrow the equation-of-state and transition-model dependence (2609.29761).
+- **Hubble tension:** Extend TRGB hosts beyond roughly 1000 km/s and improve the local density/peculiar-velocity reconstruction so that field-to-field scatter falls below the current 5.2 km/s/Mpc (2609.29996).
 
 ## Takeaway
-The most coherent signal in this batch is a convergence of quantum simulation, quantum information, and many-body physics: experiments are beginning to test abstract relaxation structures while theorists optimize the resources needed for scalable quantum computation. The other high-interest results are promising but preliminary—especially the graphene pairing claim, compact-star forecast, and curvature preference—and none should be treated as established consensus from an arXiv preprint alone.
+
+The batch's clearest pattern is the coupling of ambitious physics questions to experimentally testable signatures: transport and critical-current features in moiré graphene, trapped-ion relaxation data, LZ recoil spectra, and multi-messenger compact-star signals. The ordering is inferred rather than measured, and all six papers are new preprints with little or no citation history; several of the most exciting claims are forecasts or interpretations that require follow-up data.
 
 ## Method and sources
 
-- **Window:** latest arXiv announcement batch dated 2026-09-25; snapshot at 2026-09-25 15:30 UTC. The batch lists papers submitted on 2026-09-24 and earlier material in the rolling recent pages.
-- **Scope checked:** arXiv recent listings for `physics`, `quant-ph`, `astro-ph`, `cond-mat`, `gr-qc`, and `hep-ph`, including cross-lists visible in those listings. This is a focused cross-archive scan, not a claim of exhaustive coverage of every physics subarchive.
-- **Inference method:** candidates were selected using cross-listing, experimental/observational concreteness, journal or review status where visible, code/data or parameter artifacts, and scientific relevance. Same-day Semantic Scholar citation counts are expected to be sparse; one paper returned 0 citations and 0 influential citations, while later requests were rate-limited. No official arXiv trending metric exists.
-- **Primary sources:** the linked arXiv abstract pages and their submission histories; Semantic Scholar Graph API for the citation check on 2609.30248.
+- Window: latest daily announcement batch, 2026-09-25; snapshot 2026-09-26 15:30 UTC.
+- Coverage checked: recent listings for hep-ph, quant-ph, astro-ph.CO, and cond-mat, with cross-listed gr-qc, astro-ph.HE, hep-ex, nucl-th, and related physics categories. This is a focused daily scan, not a claim of exhaustive coverage of every physics archive.
+- Ranking: inferred from cross-list breadth, concrete experimental/observational relevance, quantitative results, journal/analysis context, and Semantic Scholar metadata where available. arXiv supplies no official trending chart.
+- Primary sources: arXiv abstract pages for each linked paper; arXiv recent category listings; Semantic Scholar Graph API checks for citation and influential-citation metadata.

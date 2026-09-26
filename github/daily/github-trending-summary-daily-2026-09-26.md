@@ -4,94 +4,94 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-26 09:30 UTC |
+| Snapshot time (UTC) | 2026-09-26 15:05 UTC |
 | Scope | Daily |
 | Date range | 2026-09-26 through 2026-09-26 |
-| Ranking basis | Daily GitHub Trending star gains |
+| Ranking basis | Daily Trending star gains |
 
 ## Headline
 
-Today's list is dominated by the operational layer around AI agents: orchestration, reusable skills, memory, plugins, and agent-facing productivity software. The strongest individual momentum is paperclipai/paperclip (+2,109 stars today), followed by Hindsight, Google AX, and AI-engineering-from-scratch.
+Agent infrastructure dominates today’s GitHub Trending page: Paperclip and Hindsight lead by a wide margin, while office automation, MCP, and inference optimization extend the same agent-centered wave. Established foundations such as TensorFlow, VS Code, LLVM, and Next.js remain present but show smaller daily gains.
 
 ## Top Repositories
 
-1. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip) - The open-source app everyone uses to manage agents at work.**
+1. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip)  - The open-source app everyone uses to manage agents at work**
 
-  **Language:** TypeScript | **Stars gained in window:** +2,109 | **Total stars:** 85,691 | **Why notable:** Agent operations is the day’s strongest signal, with the largest reported gain.
+  **Language:** TypeScript | **Stars gained in window:** +2,589 | **Total stars:** 86,309 | **Why notable:** Agent orchestration and workplace automation.
 
-2. **[anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) - Official, Anthropic-managed directory of high quality Claude Code Plugins.**
+2. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)  - Hindsight: Agent Memory That Learns**
 
-  **Language:** Python | **Stars gained in window:** +83 | **Total stars:** 37,018 | **Why notable:** A concrete distribution channel for Claude Code extensions.
+  **Language:** Python | **Stars gained in window:** +2,152 | **Total stars:** 31,027 | **Why notable:** Agent memory is attracting unusually strong daily demand.
 
-3. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) - Hindsight: Agent Memory That Learns.**
+3. **[NVIDIA/Model-Optimizer](https://github.com/NVIDIA/Model-Optimizer)  - A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.**
 
-  **Language:** Python | **Stars gained in window:** +1,653 | **Total stars:** 30,402 | **Why notable:** Agent memory is attracting unusually strong momentum.
+  **Language:** Python | **Stars gained in window:** +354 | **Total stars:** 4,638 | **Why notable:** Inference optimization is trending alongside agent software.
 
-4. **[obra/superpowers](https://github.com/obra/superpowers) - An agentic skills framework and software development methodology that works.**
+4. **[dream-num/univer](https://github.com/dream-num/univer)  - The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.**
 
-  **Language:** Shell | **Stars gained in window:** +468 | **Total stars:** 291,802 | **Why notable:** A mature, highly starred workflow framework continues to gain attention.
+  **Language:** TypeScript | **Stars gained in window:** +845 | **Total stars:** 19,018 | **Why notable:** AI is moving into structured office and productivity workflows.
 
-5. **[mattpocock/skills](https://github.com/mattpocock/skills) - Skills for Real Engineers, straight from an .agents directory.**
+5. **[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)  - An Open Source Machine Learning Framework for Everyone**
 
-  **Language:** Shell | **Stars gained in window:** +583 | **Total stars:** 269,918 | **Why notable:** The skills pattern is spreading from individual workflows into reusable tooling.
+  **Language:** C++ | **Stars gained in window:** +31 | **Total stars:** 200,369 | **Why notable:** A mature ML foundation still appears among today’s leaders.
 
-6. **[dream-num/univer](https://github.com/dream-num/univer) - The Office Harness for AI Agents: spreadsheets, docs, slides, canvas, relational tables, and PDF in one runtime.**
+6. **[rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch)  - Learn it. Build it. Ship it for others.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,050 | **Total stars:** 18,882 | **Why notable:** AI-native productivity infrastructure is one of the day’s largest gainers.
+  **Language:** Python | **Stars gained in window:** +828 | **Total stars:** 58,048 | **Why notable:** Practical AI-engineering education is drawing substantial attention.
 
-7. **[anthropics/skills](https://github.com/anthropics/skills) - Public repository for Agent Skills.**
+7. **[openbao/openbao](https://github.com/openbao/openbao)  - OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.**
 
-  **Language:** Python | **Stars gained in window:** +189 | **Total stars:** 178,462 | **Why notable:** A high-star-count skills repository reinforces the agent-tooling cluster.
+  **Language:** Go | **Stars gained in window:** +360 | **Total stars:** 7,910 | **Why notable:** Open-source secrets infrastructure provides the security counterweight to the AI-heavy list.
 
-8. **[androoAGI/starnet](https://github.com/androoAGI/starnet) - A living pixel-art station where real AI agents do real work; a local-first desktop agent harness.**
+8. **[block/buzz](https://github.com/block/buzz)  - A hive mind communication platform**
 
-  **Language:** JavaScript | **Stars gained in window:** +93 | **Total stars:** 578 | **Why notable:** It pairs a visual interface with a local-first agent runtime.
+  **Language:** Rust | **Stars gained in window:** +175 | **Total stars:** 34,743 | **Why notable:** Rust-powered collaboration infrastructure is a notable non-AI entrant.
 
-9. **[derv82/wifit3](https://github.com/derv82/wifit3) - Wifite but USB-only and cross-platform.**
+9. **[microsoft/vscode](https://github.com/microsoft/vscode)  - Visual Studio Code**
 
-  **Language:** Python | **Stars gained in window:** +183 | **Total stars:** 1,070 | **Why notable:** Security tooling is a smaller but distinct part of today’s list.
+  **Language:** TypeScript | **Stars gained in window:** +78 | **Total stars:** 192,993 | **Why notable:** The dominant developer editor remains a steady ecosystem anchor.
 
-10. **[kelseyhightower/kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) - Bootstrap Kubernetes the hard way, with no scripts.**
+10. **[zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill)  - Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients**
 
-  **Language:** N/A - not available from GitHub | **Stars gained in window:** +119 | **Total stars:** 50,177 | **Why notable:** A durable infrastructure-learning project remains discoverable amid the AI surge.
+  **Language:** PowerShell | **Stars gained in window:** +409 | **Total stars:** 37,810 | **Why notable:** Security research workflows are being packaged for AI coding clients.
 
-11. **[rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) - Learn it. Build it. Ship it for others.**
+11. **[llvm/llvm-project](https://github.com/llvm/llvm-project)  - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.**
 
-  **Language:** Python | **Stars gained in window:** +1,177 | **Total stars:** 57,813 | **Why notable:** Practical AI-engineering education is drawing substantial daily interest.
+  **Language:** LLVM | **Stars gained in window:** +29 | **Total stars:** 40,700 | **Why notable:** Compiler infrastructure remains a durable systems foundation.
 
-12. **[shy3130/tick-stock-panel](https://github.com/shy3130/tick-stock-panel) - Self-hosted, zero-operations A-share stock selection, monitoring, and backtesting workbench with LLM-assisted strategy analysis.**
+12. **[anthropics/claude-code-action](https://github.com/anthropics/claude-code-action)  - N/A - not available from GitHub**
 
-  **Language:** Python | **Stars gained in window:** +44 | **Total stars:** 5,207 | **Why notable:** It shows the trend reaching domain-specific finance and quant tooling.
+  **Language:** TypeScript | **Stars gained in window:** +15 | **Total stars:** 9,005 | **Why notable:** The repository connects Claude Code capabilities to GitHub Actions automation.
 
-13. **[google/ax](https://github.com/google/ax) - Google's open agentic orchestration runtime.**
+13. **[actions/runner-images](https://github.com/actions/runner-images)  - GitHub Actions runner images**
 
-  **Language:** Go | **Stars gained in window:** +1,379 | **Total stars:** 11,711 | **Why notable:** One of the strongest gains points to production-grade agent orchestration.
+  **Language:** PowerShell | **Stars gained in window:** +13 | **Total stars:** 13,229 | **Why notable:** CI infrastructure remains visible despite lower daily star gains.
 
-14. **[NVIDIA/Model-Optimizer](https://github.com/NVIDIA/Model-Optimizer) - A unified library for quantization, distillation, pruning, neural architecture search, speculative decoding, and related model optimization.**
+14. **[mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp)  - Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)**
 
-  **Language:** Python | **Stars gained in window:** +359 | **Total stars:** 4,567 | **Why notable:** Inference efficiency and deployment optimization remain active beneath the agent layer.
+  **Language:** TypeScript | **Stars gained in window:** +143 | **Total stars:** 7,140 | **Why notable:** MCP is extending agent control into mobile automation and testing.
 
-15. **[pbakaus/impeccable](https://github.com/pbakaus/impeccable) - The design language that makes your AI harness better at design.**
+15. **[vercel/next.js](https://github.com/vercel/next.js)  - The React Framework**
 
-  **Language:** JavaScript | **Stars gained in window:** +306 | **Total stars:** 71,363 | **Why notable:** Design tooling is being adapted specifically for AI harnesses.
+  **Language:** JavaScript | **Stars gained in window:** +31 | **Total stars:** 142,494 | **Why notable:** A foundational web framework continues to receive steady attention.
 
 ## Trending Technologies and Themes
 
-- **Agent infrastructure and workflows:** paperclip, Hindsight, Superpowers, mattpocock/skills, Anthropic Skills, and Google AX cluster around running, extending, remembering, or orchestrating agents.
-- **AI-native productivity and interfaces:** Univer, Starnet, and Impeccable apply agents to office work, desktop interaction, and design systems.
-- **Model deployment efficiency:** NVIDIA Model Optimizer represents the lower-level optimization layer supporting faster and smaller inference.
-- **Languages:** Python leads the selected list with 7 repositories; Shell and JavaScript have 2 each; TypeScript and Go have 2 each; Kubernetes the Hard Way reports no primary language in the fetched GitHub metadata.
+- **Agent platforms and memory:** paperclipai/paperclip and vectorize-io/hindsight occupy the top two positions, while anthropics/claude-code-action and zhaoxuya520/reverse-skill apply agents to automation and security workflows.
+- **AI-native productivity and interfaces:** dream-num/univer targets office artifacts, and mobile-next/mobile-mcp brings MCP to mobile devices.
+- **Inference and ML foundations:** NVIDIA/Model-Optimizer, tensorflow/tensorflow, and rohitg00/ai-engineering-from-scratch cover optimization, core ML, and practical engineering.
+- **Languages:** TypeScript leads the listed set (paperclip, univer, VS Code, Claude Code Action, mobile-mcp), followed by Python (Hindsight, Model-Optimizer, AI Engineering) and smaller Go, Rust, C++, LLVM, PowerShell, and JavaScript representation.
 
 ## Notable Shifts
 
-The notable shift is from model-centric repositories toward the surrounding agent operating system: skills directories, plugin ecosystems, memory, orchestration, and work applications. The list also shows agent concepts moving into design, office software, desktop environments, finance, and security.
+The clearest shift is from standalone model tooling toward agent operating layers: memory, workplace orchestration, structured-document execution, mobile control, and CI integration. Security and infrastructure projects remain part of the same movement, suggesting that deployment and governance concerns are rising alongside agent capability.
 
 ## Takeaway
 
-GitHub's daily momentum is currently rewarding practical agent infrastructure more than standalone model releases. The common pattern is composability: repositories expose skills, plugins, memory, orchestration, or domain interfaces that make agents useful in real workflows. The breadth of the list suggests this is becoming a platform layer rather than a single application trend.
+Today’s list is less about a single model release than about the surrounding software stack needed to make AI agents useful. The strongest momentum is in orchestration, memory, productivity surfaces, and tool connectivity, while mature developer and ML foundations provide the base layer.
 
 ## Sources and Method
 
-- **Primary source:** https://github.com/trending?since=daily
-- **Corroboration:** GitHub REST API `GET /repos/{owner}/{repo}` for all listed repositories, fetched at 2026-09-26 09:30 UTC; it confirmed current star totals, languages, and that the repositories were not forks or archived.
-- **Method note:** Repositories are ordered by the matching GitHub Trending daily page's reported star gains. GitHub's live totals can move after collection, so the snapshot time governs the figures.
+- **Primary source:** https://github.com/trending
+- **Corroboration:** GitHub REST API repository metadata for each listed repository (https://api.github.com/repos/<owner>/<repo>).
+- **Method note:** Daily star-gain figures come from GitHub’s matching Trending view captured on 2026-09-26; total-star and freshness fields were corroborated against the public REST API.

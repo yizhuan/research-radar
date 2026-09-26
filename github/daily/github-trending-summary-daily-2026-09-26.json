@@ -7,13 +7,12 @@
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-26.md",
   "entry_count": 15,
   "entry_noun": "repositories",
-  "snapshot_time_utc": "2026-09-26 09:30 UTC",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Today's list is dominated by the operational layer around AI agents: orchestration, reusable skills, memory, plugins, and agent-facing productivity software. The strongest individual momentum is paperclipai/paperclip (+2,109 stars today), followed by Hindsight, Google AX, and AI-engineering-from-scratch."
+      "content": "Agent infrastructure dominates today’s GitHub Trending page: Paperclip and Hindsight lead by a wide margin, while office automation, MCP, and inference optimization extend the same agent-centered wave. Established foundations such as TensorFlow, VS Code, LLVM, and Next.js remain present but show smaller daily gains."
     },
     {
       "id": "01-paperclipai-paperclip",
@@ -21,242 +20,257 @@
       "title": "paperclipai/paperclip",
       "rank": 1,
       "url": "https://github.com/paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work.",
+      "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "stars_gained": 2109,
-      "total_stars": 85691,
-      "why_notable": "Agent operations is the day’s strongest signal, with the largest reported gain.",
+      "stars_gained": 2589,
+      "total_stars": 86309,
+      "themes": [],
       "refs": [
         "paperclipai/paperclip"
-      ]
+      ],
+      "why_notable": "Agent orchestration and workplace automation."
     },
     {
-      "id": "02-anthropics-claude-plugins-official",
-      "kind": "repo",
-      "title": "anthropics/claude-plugins-official",
-      "rank": 2,
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "stars_gained": 83,
-      "total_stars": 37018,
-      "why_notable": "A concrete distribution channel for Claude Code extensions.",
-      "refs": [
-        "anthropics/claude-plugins-official"
-      ]
-    },
-    {
-      "id": "03-vectorize-io-hindsight",
+      "id": "02-vectorize-io-hindsight",
       "kind": "repo",
       "title": "vectorize-io/hindsight",
-      "rank": 3,
+      "rank": 2,
       "url": "https://github.com/vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns.",
+      "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "stars_gained": 1653,
-      "total_stars": 30402,
-      "why_notable": "Agent memory is attracting unusually strong momentum.",
+      "stars_gained": 2152,
+      "total_stars": 31027,
+      "themes": [],
       "refs": [
         "vectorize-io/hindsight"
-      ]
+      ],
+      "why_notable": "Agent memory is attracting unusually strong daily demand."
     },
     {
-      "id": "04-obra-superpowers",
+      "id": "03-nvidia-model-optimizer",
       "kind": "repo",
-      "title": "obra/superpowers",
-      "rank": 4,
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework and software development methodology that works.",
-      "language": "Shell",
-      "stars_gained": 468,
-      "total_stars": 291802,
-      "why_notable": "A mature, highly starred workflow framework continues to gain attention.",
+      "title": "NVIDIA/Model-Optimizer",
+      "rank": 3,
+      "url": "https://github.com/NVIDIA/Model-Optimizer",
+      "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
+      "language": "Python",
+      "stars_gained": 354,
+      "total_stars": 4638,
+      "themes": [],
       "refs": [
-        "obra/superpowers"
-      ]
+        "NVIDIA/Model-Optimizer"
+      ],
+      "why_notable": "Inference optimization is trending alongside agent software."
     },
     {
-      "id": "05-mattpocock-skills",
-      "kind": "repo",
-      "title": "mattpocock/skills",
-      "rank": 5,
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers, straight from an .agents directory.",
-      "language": "Shell",
-      "stars_gained": 583,
-      "total_stars": 269918,
-      "why_notable": "The skills pattern is spreading from individual workflows into reusable tooling.",
-      "refs": [
-        "mattpocock/skills"
-      ]
-    },
-    {
-      "id": "06-dream-num-univer",
+      "id": "04-dream-num-univer",
       "kind": "repo",
       "title": "dream-num/univer",
-      "rank": 6,
+      "rank": 4,
       "url": "https://github.com/dream-num/univer",
-      "description": "The Office Harness for AI Agents: spreadsheets, docs, slides, canvas, relational tables, and PDF in one runtime.",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
       "language": "TypeScript",
-      "stars_gained": 1050,
-      "total_stars": 18882,
-      "why_notable": "AI-native productivity infrastructure is one of the day’s largest gainers.",
+      "stars_gained": 845,
+      "total_stars": 19018,
+      "themes": [],
       "refs": [
         "dream-num/univer"
-      ]
+      ],
+      "why_notable": "AI is moving into structured office and productivity workflows."
     },
     {
-      "id": "07-anthropics-skills",
+      "id": "05-tensorflow-tensorflow",
       "kind": "repo",
-      "title": "anthropics/skills",
-      "rank": 7,
-      "url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills.",
-      "language": "Python",
-      "stars_gained": 189,
-      "total_stars": 178462,
-      "why_notable": "A high-star-count skills repository reinforces the agent-tooling cluster.",
+      "title": "tensorflow/tensorflow",
+      "rank": 5,
+      "url": "https://github.com/tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "language": "C++",
+      "stars_gained": 31,
+      "total_stars": 200369,
+      "themes": [],
       "refs": [
-        "anthropics/skills"
-      ]
+        "tensorflow/tensorflow"
+      ],
+      "why_notable": "A mature ML foundation still appears among today’s leaders."
     },
     {
-      "id": "08-androoagi-starnet",
-      "kind": "repo",
-      "title": "androoAGI/starnet",
-      "rank": 8,
-      "url": "https://github.com/androoAGI/starnet",
-      "description": "A living pixel-art station where real AI agents do real work; a local-first desktop agent harness.",
-      "language": "JavaScript",
-      "stars_gained": 93,
-      "total_stars": 578,
-      "why_notable": "It pairs a visual interface with a local-first agent runtime.",
-      "refs": [
-        "androoAGI/starnet"
-      ]
-    },
-    {
-      "id": "09-derv82-wifit3",
-      "kind": "repo",
-      "title": "derv82/wifit3",
-      "rank": 9,
-      "url": "https://github.com/derv82/wifit3",
-      "description": "Wifite but USB-only and cross-platform.",
-      "language": "Python",
-      "stars_gained": 183,
-      "total_stars": 1070,
-      "why_notable": "Security tooling is a smaller but distinct part of today’s list.",
-      "refs": [
-        "derv82/wifit3"
-      ]
-    },
-    {
-      "id": "10-kelseyhightower-kubernetes-the-hard-way",
-      "kind": "repo",
-      "title": "kelseyhightower/kubernetes-the-hard-way",
-      "rank": 10,
-      "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
-      "description": "Bootstrap Kubernetes the hard way, with no scripts.",
-      "language": "N/A - not available from GitHub",
-      "stars_gained": 119,
-      "total_stars": 50177,
-      "why_notable": "A durable infrastructure-learning project remains discoverable amid the AI surge.",
-      "refs": [
-        "kelseyhightower/kubernetes-the-hard-way"
-      ]
-    },
-    {
-      "id": "11-rohitg00-ai-engineering-from-scratch",
+      "id": "06-rohitg00-ai-engineering-from-scratch",
       "kind": "repo",
       "title": "rohitg00/ai-engineering-from-scratch",
-      "rank": 11,
+      "rank": 6,
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars_gained": 1177,
-      "total_stars": 57813,
-      "why_notable": "Practical AI-engineering education is drawing substantial daily interest.",
+      "stars_gained": 828,
+      "total_stars": 58048,
+      "themes": [],
       "refs": [
         "rohitg00/ai-engineering-from-scratch"
-      ]
+      ],
+      "why_notable": "Practical AI-engineering education is drawing substantial attention."
     },
     {
-      "id": "12-shy3130-tick-stock-panel",
+      "id": "07-openbao-openbao",
       "kind": "repo",
-      "title": "shy3130/tick-stock-panel",
-      "rank": 12,
-      "url": "https://github.com/shy3130/tick-stock-panel",
-      "description": "Self-hosted, zero-operations A-share stock selection, monitoring, and backtesting workbench with LLM-assisted strategy analysis.",
-      "language": "Python",
-      "stars_gained": 44,
-      "total_stars": 5207,
-      "why_notable": "It shows the trend reaching domain-specific finance and quant tooling.",
-      "refs": [
-        "shy3130/tick-stock-panel"
-      ]
-    },
-    {
-      "id": "13-google-ax",
-      "kind": "repo",
-      "title": "google/ax",
-      "rank": 13,
-      "url": "https://github.com/google/ax",
-      "description": "Google's open agentic orchestration runtime.",
+      "title": "openbao/openbao",
+      "rank": 7,
+      "url": "https://github.com/openbao/openbao",
+      "description": "OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.",
       "language": "Go",
-      "stars_gained": 1379,
-      "total_stars": 11711,
-      "why_notable": "One of the strongest gains points to production-grade agent orchestration.",
+      "stars_gained": 360,
+      "total_stars": 7910,
+      "themes": [],
       "refs": [
-        "google/ax"
-      ]
+        "openbao/openbao"
+      ],
+      "why_notable": "Open-source secrets infrastructure provides the security counterweight to the AI-heavy list."
     },
     {
-      "id": "14-nvidia-model-optimizer",
+      "id": "08-block-buzz",
       "kind": "repo",
-      "title": "NVIDIA/Model-Optimizer",
+      "title": "block/buzz",
+      "rank": 8,
+      "url": "https://github.com/block/buzz",
+      "description": "A hive mind communication platform",
+      "language": "Rust",
+      "stars_gained": 175,
+      "total_stars": 34743,
+      "themes": [],
+      "refs": [
+        "block/buzz"
+      ],
+      "why_notable": "Rust-powered collaboration infrastructure is a notable non-AI entrant."
+    },
+    {
+      "id": "09-microsoft-vscode",
+      "kind": "repo",
+      "title": "microsoft/vscode",
+      "rank": 9,
+      "url": "https://github.com/microsoft/vscode",
+      "description": "Visual Studio Code",
+      "language": "TypeScript",
+      "stars_gained": 78,
+      "total_stars": 192993,
+      "themes": [],
+      "refs": [
+        "microsoft/vscode"
+      ],
+      "why_notable": "The dominant developer editor remains a steady ecosystem anchor."
+    },
+    {
+      "id": "10-zhaoxuya520-reverse-skill",
+      "kind": "repo",
+      "title": "zhaoxuya520/reverse-skill",
+      "rank": 10,
+      "url": "https://github.com/zhaoxuya520/reverse-skill",
+      "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients",
+      "language": "PowerShell",
+      "stars_gained": 409,
+      "total_stars": 37810,
+      "themes": [],
+      "refs": [
+        "zhaoxuya520/reverse-skill"
+      ],
+      "why_notable": "Security research workflows are being packaged for AI coding clients."
+    },
+    {
+      "id": "11-llvm-llvm-project",
+      "kind": "repo",
+      "title": "llvm/llvm-project",
+      "rank": 11,
+      "url": "https://github.com/llvm/llvm-project",
+      "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
+      "language": "LLVM",
+      "stars_gained": 29,
+      "total_stars": 40700,
+      "themes": [],
+      "refs": [
+        "llvm/llvm-project"
+      ],
+      "why_notable": "Compiler infrastructure remains a durable systems foundation."
+    },
+    {
+      "id": "12-anthropics-claude-code-action",
+      "kind": "repo",
+      "title": "anthropics/claude-code-action",
+      "rank": 12,
+      "url": "https://github.com/anthropics/claude-code-action",
+      "description": "N/A - not available from GitHub",
+      "language": "TypeScript",
+      "stars_gained": 15,
+      "total_stars": 9005,
+      "themes": [],
+      "refs": [
+        "anthropics/claude-code-action"
+      ],
+      "why_notable": "The repository connects Claude Code capabilities to GitHub Actions automation."
+    },
+    {
+      "id": "13-actions-runner-images",
+      "kind": "repo",
+      "title": "actions/runner-images",
+      "rank": 13,
+      "url": "https://github.com/actions/runner-images",
+      "description": "GitHub Actions runner images",
+      "language": "PowerShell",
+      "stars_gained": 13,
+      "total_stars": 13229,
+      "themes": [],
+      "refs": [
+        "actions/runner-images"
+      ],
+      "why_notable": "CI infrastructure remains visible despite lower daily star gains."
+    },
+    {
+      "id": "14-mobile-next-mobile-mcp",
+      "kind": "repo",
+      "title": "mobile-next/mobile-mcp",
       "rank": 14,
-      "url": "https://github.com/NVIDIA/Model-Optimizer",
-      "description": "A unified library for quantization, distillation, pruning, neural architecture search, speculative decoding, and related model optimization.",
-      "language": "Python",
-      "stars_gained": 359,
-      "total_stars": 4567,
-      "why_notable": "Inference efficiency and deployment optimization remain active beneath the agent layer.",
+      "url": "https://github.com/mobile-next/mobile-mcp",
+      "description": "Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)",
+      "language": "TypeScript",
+      "stars_gained": 143,
+      "total_stars": 7140,
+      "themes": [],
       "refs": [
-        "NVIDIA/Model-Optimizer"
-      ]
+        "mobile-next/mobile-mcp"
+      ],
+      "why_notable": "MCP is extending agent control into mobile automation and testing."
     },
     {
-      "id": "15-pbakaus-impeccable",
+      "id": "15-vercel-next.js",
       "kind": "repo",
-      "title": "pbakaus/impeccable",
+      "title": "vercel/next.js",
       "rank": 15,
-      "url": "https://github.com/pbakaus/impeccable",
-      "description": "The design language that makes your AI harness better at design.",
+      "url": "https://github.com/vercel/next.js",
+      "description": "The React Framework",
       "language": "JavaScript",
-      "stars_gained": 306,
-      "total_stars": 71363,
-      "why_notable": "Design tooling is being adapted specifically for AI harnesses.",
+      "stars_gained": 31,
+      "total_stars": 142494,
+      "themes": [],
       "refs": [
-        "pbakaus/impeccable"
-      ]
+        "vercel/next.js"
+      ],
+      "why_notable": "A foundational web framework continues to receive steady attention."
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "- **Agent infrastructure and workflows:** paperclip, Hindsight, Superpowers, mattpocock/skills, Anthropic Skills, and Google AX cluster around running, extending, remembering, or orchestrating agents.\n- **AI-native productivity and interfaces:** Univer, Starnet, and Impeccable apply agents to office work, desktop interaction, and design systems.\n- **Model deployment efficiency:** NVIDIA Model Optimizer represents the lower-level optimization layer supporting faster and smaller inference.\n- **Languages:** Python leads the selected list with 7 repositories; Shell and JavaScript have 2 each; TypeScript and Go have 2 each; Kubernetes the Hard Way reports no primary language in the fetched GitHub metadata."
+      "content": "- **Agent platforms and memory:** paperclipai/paperclip and vectorize-io/hindsight occupy the top two positions, while anthropics/claude-code-action and zhaoxuya520/reverse-skill apply agents to automation and security workflows.\n- **AI-native productivity and interfaces:** dream-num/univer targets office artifacts, and mobile-next/mobile-mcp brings MCP to mobile devices.\n- **Inference and ML foundations:** NVIDIA/Model-Optimizer, tensorflow/tensorflow, and rohitg00/ai-engineering-from-scratch cover optimization, core ML, and practical engineering.\n- **Languages:** TypeScript leads the listed set (paperclip, univer, VS Code, Claude Code Action, mobile-mcp), followed by Python (Hindsight, Model-Optimizer, AI Engineering) and smaller Go, Rust, C++, LLVM, PowerShell, and JavaScript representation."
     },
     {
       "id": "85-notable-shifts",
       "kind": "extra",
       "title": "Notable Shifts",
-      "content": "The notable shift is from model-centric repositories toward the surrounding agent operating system: skills directories, plugin ecosystems, memory, orchestration, and work applications. The list also shows agent concepts moving into design, office software, desktop environments, finance, and security."
+      "content": "The clearest shift is from standalone model tooling toward agent operating layers: memory, workplace orchestration, structured-document execution, mobile control, and CI integration. Security and infrastructure projects remain part of the same movement, suggesting that deployment and governance concerns are rising alongside agent capability."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "GitHub's daily momentum is currently rewarding practical agent infrastructure more than standalone model releases. The common pattern is composability: repositories expose skills, plugins, memory, orchestration, or domain interfaces that make agents useful in real workflows. The breadth of the list suggests this is becoming a platform layer rather than a single application trend."
+      "content": "Today’s list is less about a single model release than about the surrounding software stack needed to make AI agents useful. The strongest momentum is in orchestration, memory, productivity surfaces, and tool connectivity, while mature developer and ML foundations provide the base layer."
     }
   ]
 }

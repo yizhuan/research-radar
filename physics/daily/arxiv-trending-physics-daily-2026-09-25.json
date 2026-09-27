@@ -1,18 +1,144 @@
 {
-  "schema": "arxiv-trending-physics.v1",
+  "schema": "arxiv-trending-physics/v1",
   "category": "physics",
   "window": "daily",
   "date": "2026-09-25",
-  "title": "Today's hottest physics papers on arXiv",
+  "title": "arXiv Trending Physics — daily snapshot",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-09-25.md",
-  "entry_count": 6,
+  "entry_count": 5,
   "entry_noun": "papers",
   "sections": [
-    {"id":"2609.30202","kind":"paper","title":"Incipient superconductivity and tunable Chern insulators in twisted Bernal bilayer-trilayer graphene","rank":1,"url":"https://arxiv.org/abs/2609.30202","arxiv_id":"2609.30202","arxiv_version":"v1","published":"2026-09-24T17:37:46Z","categories":["cond-mat.mes-hall","cond-mat.str-el","cond-mat.supr-con"],"authors":["Derek Waleffe","Aryana Bhattacharyya","Manish Kumar","Eric Maginnis","Anna Okounkova","Tobias Faehndrich","Kenji Watanabe","Takashi Taniguchi","Joshua Folk","Matthew Yankowitz"],"themes":["Condensed matter & materials","Quantum information","Instrumentation & detectors"],"abstract":"The authors report a gate-tunable twisted graphene platform combining Chern-insulator states with pockets of incipient, phase-coherent superconductivity.","claimed_result":"Chern insulators coexist with an incipient-superconductivity pocket whose critical-current signatures are tunable by displacement field and magnetic field.","evidence_type":"experimental; twisted Bernal bilayer-trilayer graphene transport","caveat":"Resistance does not reach zero, so the result does not establish bulk zero-resistance superconductivity.","refs":["https://arxiv.org/abs/2609.30202"]},
-    {"id":"2609.29817","kind":"paper","title":"Observation of universal hierarchical relaxation in a quantum simulator","rank":2,"url":"https://arxiv.org/abs/2609.29817","arxiv_id":"2609.29817","arxiv_version":"v1","published":"2026-09-24T13:53:07Z","categories":["cond-mat.stat-mech","quant-ph"],"authors":["Jiaozi Wang","Manoj K. Joshi","Luca Capizzi","Rainer Blatt","Christian F. Roos","Leonardo Mazza","Dario Poletti"],"themes":["Quantum information","Condensed matter & materials","Computational & data methods"],"abstract":"A trapped-ion quantum simulator experimentally demonstrates a predicted hierarchy of relaxation exponents for autocorrelators in the diffusive regime.","claimed_result":"The relaxation-overlap inequality is extended to multiple conservation laws and its predicted hierarchy is observed in a trapped-ion simulator.","evidence_type":"experimental; trapped-ion quantum simulator and autocorrelation measurements","caveat":"The demonstration is limited to the diffusive regime and the simulator's accessible operators and conservation laws.","refs":["https://arxiv.org/abs/2609.29817"]},
-    {"id":"2609.29761","kind":"paper","title":"Multi-messenger and multi-band signal from first-order phase transitions in proto-neutron stars","rank":3,"url":"https://arxiv.org/abs/2609.29761","arxiv_id":"2609.29761","arxiv_version":"v1","published":"2026-09-24T13:12:24Z","categories":["gr-qc","astro-ph.HE","hep-ph","nucl-th"],"authors":["Christian Ecker","Mauro Giliberti","Luciano Rezzolla"],"themes":["Astrophysics","Cosmology & gravitation","Particle, nuclear & high-energy physics"],"abstract":"Model-agnostic proto-neutron-star calculations predict correlated kHz and MHz gravitational-wave emission plus a delayed neutrino burst from an accretion-driven first-order phase transition.","claimed_result":"A first-order transition can produce correlated multi-band gravitational waves and a delayed neutrino burst whose timing probes transition physics.","evidence_type":"computational/theoretical; proto-neutron-star evolution with a constrained equation-of-state ensemble","caveat":"The signal is a forecast dependent on the equation-of-state ensemble, transition dynamics, and channel detectability.","refs":["https://arxiv.org/abs/2609.29761"]},
-    {"id":"2609.29996","kind":"paper","title":"Two-rung ladder: H0 from Tip of the Red Giant Branch and geometric anchors alone","rank":4,"url":"https://arxiv.org/abs/2609.29996","arxiv_id":"2609.29996","arxiv_version":"v1","published":"2026-09-24T15:44:11Z","categories":["astro-ph.CO","astro-ph.GA"],"authors":["Richard Stiskalek","Harry Desmond","Guilhem Lavaux"],"themes":["Cosmology & gravitation","Astrophysics","Computational & data methods"],"abstract":"A TRGB distance ladder calibrated with the Large Magellanic Cloud and NGC 4258 gives H0 estimates whose uncertainty is dominated by local velocity-field reconstruction rather than TRGB calibration.","claimed_result":"Equal weighting gives H0 = 68.4 ± 5.9 km/s/Mpc, while evidence weighting gives 72.3 ± 2.6 km/s/Mpc; the ladder cannot yet arbitrate the Hubble tension.","evidence_type":"observational/data analysis; TRGB hosts, geometric anchors, redshifts, and local velocity fields","caveat":"The result is sensitive to field-to-field scatter and finite sampling of the reconstruction posterior.","refs":["https://arxiv.org/abs/2609.29996"]},
-    {"id":"2609.30255","kind":"paper","title":"A Narrow Neutrino Window for the LZ Event","rank":5,"url":"https://arxiv.org/abs/2609.30255","arxiv_id":"2609.30255","arxiv_version":"v1","published":"2026-09-24T17:59:02Z","categories":["hep-ph","hep-ex"],"authors":["Vedran Brdar","Dibya S. Chattopadhyay"],"themes":["Particle, nuclear & high-energy physics","Cosmology & gravitation"],"abstract":"The authors propose a two-step atmospheric-neutrino upscattering mechanism that could explain LZ's 248 keV recoil while avoiding constraints from lighter-target neutrino experiments.","claimed_result":"A narrow two-step nu-to-N1-to-N2 process could yield an O(1) LZ event while kinematically evading other neutrino targets.","evidence_type":"theoretical/forecast; kinematic analysis and dark-sector model proposal","caveat":"This is a model explanation for one event, not a detection, and requires a narrow energy window and specific interactions.","refs":["https://arxiv.org/abs/2609.30255"]},
-    {"id":"2609.29462","kind":"paper","title":"Limits on Primordial Black Hole Evaporation from LUX-ZEPLIN","rank":6,"url":"https://arxiv.org/abs/2609.29462","arxiv_id":"2609.29462","arxiv_version":"v1","published":"2026-09-24T12:22:13Z","categories":["astro-ph.CO","gr-qc","hep-ph"],"authors":["Jitumani Kalita"],"themes":["Cosmology & gravitation","Particle, nuclear & high-energy physics","Astrophysics"],"abstract":"The paper argues that Hawking-boosted dark matter from evaporating primordial black holes would overproduce low-energy recoils, converting LZ's null low-energy search into stringent PBH abundance limits.","claimed_result":"For PBH masses around 2 × 10^11 g, f_PBH greater than about 10^-6 is excluded at 90% confidence under the paper's assumptions.","evidence_type":"theoretical/computational; LZ recoil constraints with EFT operators and inelastic transitions","caveat":"The bound depends on the assumed scattering operators, evaporation flux, and interpretation of the LZ event and null region.","refs":["https://arxiv.org/abs/2609.29462"]}
+    {
+      "id": "2609.30202",
+      "kind": "paper",
+      "title": "Incipient superconductivity and tunable Chern insulators in twisted Bernal bilayer-trilayer graphene",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.30202",
+      "arxiv_id": "2609.30202",
+      "arxiv_version": "v1",
+      "published": "2026-09-24T17:37:46Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "authors": "Derek Waleffe et al.",
+      "themes": [
+        "Condensed matter & materials",
+        "Quantum information",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "The authors report incipient superconductivity and tunable Chern insulators in twisted Bernal bilayer-trilayer graphene.",
+      "claimed_result": "The authors report incipient superconductivity and tunable Chern insulators in twisted Bernal bilayer-trilayer graphene.",
+      "evidence_type": "experimental",
+      "caveat": "“Incipient” superconductivity is not a demonstrated zero-resistance bulk state.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30202"
+      ]
+    },
+    {
+      "id": "2609.29736",
+      "kind": "paper",
+      "title": "100 million photons per second from a single organic molecule",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.29736",
+      "arxiv_id": "2609.29736",
+      "arxiv_version": "v1",
+      "published": "2026-09-24T12:54:40Z",
+      "categories": [
+        "quant-ph",
+        "physics.optics"
+      ],
+      "authors": "Siwei Luo et al.",
+      "themes": [
+        "Quantum information",
+        "Atomic, molecular & optical physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "A cryogenic antenna yields 100 million photons/s with 97% collection efficiency.",
+      "claimed_result": "A cryogenic antenna yields 100 million photons/s with 97% collection efficiency.",
+      "evidence_type": "experimental",
+      "caveat": "Scaling beyond the demonstrated molecule and cryogenic geometry remains open.",
+      "refs": [
+        "https://arxiv.org/abs/2609.29736"
+      ]
+    },
+    {
+      "id": "2609.30069",
+      "kind": "paper",
+      "title": "Design Principles for Ultra-High-Rate Quantum Codes",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.30069",
+      "arxiv_id": "2609.30069",
+      "arxiv_version": "v1",
+      "published": "2026-09-24T16:26:34Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": "Jong Yeon Lee et al.",
+      "themes": [
+        "Quantum information",
+        "Computational & data methods"
+      ],
+      "abstract": "The paper develops compact high-rate code constructions and identifies rate-distance-check-weight tradeoffs.",
+      "claimed_result": "The paper develops compact high-rate code constructions and identifies rate-distance-check-weight tradeoffs.",
+      "evidence_type": "theoretical/computational",
+      "caveat": "Hardware, decoder, and measurement overheads are not experimentally established.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30069"
+      ]
+    },
+    {
+      "id": "2609.29890",
+      "kind": "paper",
+      "title": "Syndrome measurements enable deterministic fault-tolerant T gates",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.29890",
+      "arxiv_id": "2609.29890",
+      "arxiv_version": "v1",
+      "published": "2026-09-24T14:36:49Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": "Kishor Bharti et al.",
+      "themes": [
+        "Quantum information",
+        "Computational & data methods"
+      ],
+      "abstract": "The authors propose deterministic logical T gates mediated by syndrome measurement and feed-forward.",
+      "claimed_result": "The authors propose deterministic logical T gates mediated by syndrome measurement and feed-forward.",
+      "evidence_type": "theoretical/computational",
+      "caveat": "Claims depend on specified code constructions and circuit/noise models.",
+      "refs": [
+        "https://arxiv.org/abs/2609.29890"
+      ]
+    },
+    {
+      "id": "2609.30255",
+      "kind": "paper",
+      "title": "A Narrow Neutrino Window for the LZ Event",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.30255",
+      "arxiv_id": "2609.30255",
+      "arxiv_version": "v1",
+      "published": "2026-09-24T17:59:02Z",
+      "categories": [
+        "hep-ph",
+        "hep-ex"
+      ],
+      "authors": "Vedran Brdar, Dibya S. Chattopadhyay",
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Cosmology & gravitation",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "The paper proposes a two-step atmospheric-neutrino upscattering explanation for a 248 keV LZ recoil.",
+      "claimed_result": "The paper proposes a two-step atmospheric-neutrino upscattering explanation for a 248 keV LZ recoil.",
+      "evidence_type": "forecast/proposal",
+      "caveat": "This is not evidence that the event has a neutrino or dark-sector origin.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30255"
+      ]
+    }
   ]
 }

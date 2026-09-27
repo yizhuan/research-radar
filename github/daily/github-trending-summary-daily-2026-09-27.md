@@ -4,75 +4,70 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-27 09:30 UTC |
+| Snapshot time (UTC) | 2026-09-27 15:05 UTC |
 | Scope | Daily |
 | Date range | 2026-09-27 through 2026-09-27 |
-| Ranking basis | GitHub daily Trending star gains, corroborated with GitHub REST repository metadata |
+| Ranking basis | Daily Trending star gains |
 
 ## Headline
 
-AI-agent infrastructure dominates today's GitHub Trending page: agent management, learned memory, model optimization, and AI-facing office automation occupy four of the top five positions. The broader list still includes foundational ML, developer tooling, security research, secrets management, and mobile automation.
+AI-agent infrastructure dominates today's GitHub Trending page: agent management, long-term memory, multi-agent execution, and agent-facing office runtimes occupy much of the top tier. Local-first media tooling is the other strong cluster, led by VoiceStudio's voice and transcription stack.
 
 ## Top Repositories
 
-1. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip) - The open-source app everyone uses to manage agents at work.**
+1. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) - Hindsight: Agent Memory That Learns**
 
-  **Language:** TypeScript | **Stars gained in window:** +2,608 | **Total stars:** 88,176 | **Why notable:** The day's clear leader, signaling strong interest in operational control planes for coding and workplace agents.
+  **Language:** Python | **Stars gained in window:** +4,463 | **Total stars:** 35,826 | **Why notable:** It is today's biggest star gainer in the fetched Trending view, putting persistent memory at the center of agent infrastructure.
 
-2. **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) - Hindsight: Agent Memory That Learns.**
+2. **[debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) - VoiceStudio is the open-source, fully-local ElevenLabs alternative - voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.**
 
-  **Language:** Python | **Stars gained in window:** +2,147 | **Total stars:** 34,517 | **Why notable:** Its second-place surge highlights memory and continuous learning as a core layer of agent systems.
+  **Language:** Python | **Stars gained in window:** +3,060 | **Total stars:** 39,011 | **Why notable:** Its combination of local voice generation, cloning, dubbing, and transcription makes multimodal creator tooling a major daily signal.
 
-3. **[NVIDIA/Model-Optimizer](https://github.com/NVIDIA/Model-Optimizer) - A unified library for quantization, distillation, pruning, neural architecture search, and speculative decoding.**
+3. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip) - The open-source app everyone uses to manage agents at work**
 
-  **Language:** Python | **Stars gained in window:** +357 | **Total stars:** 4,859 | **Why notable:** It connects current model-compression research to practical TensorRT-LLM, TensorRT, and vLLM deployment.
+  **Language:** TypeScript | **Stars gained in window:** +2,527 | **Total stars:** 88,843 | **Why notable:** It is the most-starred repository in this snapshot and a fast-growing example of operational tooling for teams of agents.
 
-4. **[dream-num/univer](https://github.com/dream-num/univer) - An office runtime for AI agents spanning spreadsheets, docs, slides, canvas, relational tables, and PDF.**
+4. **[dream-num/univer](https://github.com/dream-num/univer) - The Office Harness for AI Agents - Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.**
 
-  **Language:** TypeScript | **Stars gained in window:** +849 | **Total stars:** 19,794 | **Why notable:** It points to agents moving beyond chat into structured, multi-format workspaces.
+  **Language:** TypeScript | **Stars gained in window:** +920 | **Total stars:** 19,956 | **Why notable:** It applies agent orchestration to a broad office suite rather than a single document or spreadsheet surface.
 
-5. **[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) - An open-source machine-learning framework.**
+5. **[rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) - Learn it. Build it. Ship it for others.**
 
-  **Language:** C++ | **Stars gained in window:** +46 | **Total stars:** 200,527 | **Why notable:** The mature platform's appearance provides a baseline for enduring ML infrastructure amid the agent-heavy list.
+  **Language:** Python | **Stars gained in window:** +848 | **Total stars:** 58,894 | **Why notable:** The educational, build-oriented repository shows that practical AI engineering learning remains a durable source of community momentum.
 
-6. **[rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) - Learn it. Build it. Ship it for others.**
+6. **[willfaust/Madeira](https://github.com/willfaust/Madeira) - Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT**
 
-  **Language:** Python | **Stars gained in window:** +827 | **Total stars:** 58,648 | **Why notable:** Its strong daily gain reflects demand for practical, end-to-end AI engineering education and implementation patterns.
+  **Language:** C | **Stars gained in window:** +171 | **Total stars:** 722 | **Why notable:** It is a distinctly systems-oriented outlier, bringing Windows game compatibility work to constrained iOS environments.
 
-7. **[openbao/openbao](https://github.com/openbao/openbao) - Software for managing, storing, and distributing secrets, certificates, and keys.**
+7. **[InfinityLoop1308/PipePipe](https://github.com/InfinityLoop1308/PipePipe) - An open-source Android app to let you browse YouTube and other services freely.**
 
-  **Language:** Go | **Stars gained in window:** +364 | **Total stars:** 8,081 | **Why notable:** Secure secret and key management remains an important companion to increasingly autonomous software.
+  **Language:** Shell | **Stars gained in window:** +139 | **Total stars:** 6,435 | **Why notable:** The project represents user-controlled, open-source access to popular media services outside the dominant client stack.
 
-8. **[block/buzz](https://github.com/block/buzz) - A hive mind communication platform.**
+8. **[mvschwarz/openrig](https://github.com/mvschwarz/openrig) - Multi-agent harness that runs Claude Code and Codex together as one system**
 
-  **Language:** Rust | **Stars gained in window:** +339 | **Total stars:** 34,916 | **Why notable:** A Rust-based communication project is a notable non-AI application in an otherwise agent-centric top tier.
+  **Language:** TypeScript | **Stars gained in window:** +114 | **Total stars:** 700 | **Why notable:** It makes multi-model coding-agent coordination explicit, reflecting a shift from single-agent assistants toward agent harnesses.
 
-9. **[microsoft/vscode](https://github.com/microsoft/vscode) - Visual Studio Code.**
+9. **[vercel-labs/scriptc](https://github.com/vercel-labs/scriptc) - TypeScript-to-Native Compiler**
 
-  **Language:** TypeScript | **Stars gained in window:** +95 | **Total stars:** 193,137 | **Why notable:** Its continued activity underscores the IDE's role as the host environment for modern developer agents and extensions.
-
-10. **[zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) - An AI-powered skill router and toolchain bootstrapper for authorized reverse engineering, penetration testing, and security research.**
-
-  **Language:** PowerShell | **Stars gained in window:** +361 | **Total stars:** 38,198 | **Why notable:** It shows agent-style routing and self-evolving knowledge bases expanding into security workflows; use only for authorized work.
+  **Language:** TypeScript | **Stars gained in window:** +76 | **Total stars:** 5,263 | **Why notable:** It adds a performance and deployment angle to the TypeScript ecosystem through native compilation.
 
 ## Trending Technologies and Themes
 
-- **Agent operations and memory:** paperclipai/paperclip and vectorize-io/hindsight lead the snapshot, covering agent management and learned memory respectively.
-- **AI-native workspaces:** dream-num/univer brings agents into spreadsheets, documents, slides, relational tables, and PDFs rather than limiting them to chat or code.
-- **Inference efficiency:** NVIDIA/Model-Optimizer centers quantization, pruning, distillation, speculative decoding, and deployment across TensorRT and vLLM ecosystems.
-- **Developer and security tooling:** vscode, reverse-skill, and openbao show the surrounding toolchain: coding environments, authorized security automation, and secrets management.
-- **Languages:** TypeScript leads the listed repositories (paperclip, univer, and VS Code); Python follows (Hindsight, Model-Optimizer, and ai-engineering-from-scratch). C++, Go, Rust, and PowerShell each appear once.
+- **Agent infrastructure:** Hindsight, Paperclip, openrig, and Univer collectively cover memory, workplace management, multi-agent execution, and agent-facing productivity surfaces.
+- **Local and multimodal AI:** VoiceStudio shows strong interest in self-hosted voice cloning, speech, dubbing, and transcription rather than API-only media workflows.
+- **Languages:** TypeScript leads the listed repositories with 4 entries; Python follows with 3; C and Shell contribute 1 each. The ranking is therefore split between web/runtime tooling and Python-centered AI systems.
+- **Open alternatives and portability:** PipePipe and Madeira point to continued interest in user-controlled clients and compatibility layers for platforms with tighter distribution constraints.
 
 ## Notable Shifts
 
-The strongest shift is from standalone models toward the systems around them: agent control planes, persistent memory, structured workspaces, deployment optimization, and security boundaries. Today's list also mixes very new repositories with established infrastructure, suggesting that novelty is being rewarded when it addresses practical agent adoption rather than only model research.
+The clearest shift is from model demos toward the surrounding agent operating layer: memory, orchestration, workplace management, and office-computer interaction. At the same time, the list retains a strong local-first instinct in voice tooling and platform portability, suggesting that deployment control is part of the current appeal.
 
 ## Takeaway
 
-Today's trending signal is a systems story: the GitHub community is investing in making agents operational, stateful, useful across office workflows, and deployable at lower cost. The continued presence of TensorFlow, VS Code, OpenBao, and other infrastructure shows that the agent wave is layering onto—rather than replacing—the established software stack.
+Today's list is primarily an infrastructure story for agents, not a single-model launch story. Projects that make agents remember, coordinate, act in familiar work surfaces, or run locally are attracting the strongest daily attention, while systems projects provide a smaller but visible countertrend.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending repositories for today](https://github.com/trending)
-- **Corroboration:** GitHub REST API repository metadata for [paperclipai/paperclip](https://api.github.com/repos/paperclipai/paperclip), [vectorize-io/hindsight](https://api.github.com/repos/vectorize-io/hindsight), [NVIDIA/Model-Optimizer](https://api.github.com/repos/NVIDIA/Model-Optimizer), [dream-num/univer](https://api.github.com/repos/dream-num/univer), [tensorflow/tensorflow](https://api.github.com/repos/tensorflow/tensorflow), [rohitg00/ai-engineering-from-scratch](https://api.github.com/repos/rohitg00/ai-engineering-from-scratch), [openbao/openbao](https://api.github.com/repos/openbao/openbao), [block/buzz](https://api.github.com/repos/block/buzz), [microsoft/vscode](https://api.github.com/repos/microsoft/vscode), and [zhaoxuya520/reverse-skill](https://api.github.com/repos/zhaoxuya520/reverse-skill)
-- **Method note:** Repositories are ranked by the star-gain figures shown in GitHub's daily Trending view. Total-star counts, descriptions, languages, and freshness were corroborated against GitHub's REST API; counts can change during the day.
+- **Primary source:** [GitHub Trending daily](https://github.com/trending?since=daily).
+- **Corroboration:** GitHub REST repository API (`GET /repos/{owner}/{repo}`) for repository identity, descriptions, primary languages, total stars, fork status, and recent push timestamps.
+- **Method note:** Star-gain figures and ranking come from the matching daily GitHub Trending view captured on 2026-09-27; repository metadata was corroborated separately through the GitHub REST API. Forks were excluded; none of the nine selected entries was marked as a fork by the API.

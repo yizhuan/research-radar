@@ -3,101 +3,245 @@
   "category": "math",
   "window": "daily",
   "date": "2026-09-25",
-  "title": "arXiv Trending Mathematics — Daily Report",
+  "title": "arXiv Trending Mathematics — daily report",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-09-25.md",
-  "entry_count": 5,
+  "entry_count": 8,
   "entry_noun": "papers",
-  "snapshot_utc": "2026-09-26T15:20:09Z",
   "sections": [
     {
-      "id": "2609.30209",
+      "id": "1",
+      "kind": "paper",
+      "title": "Thinning and sprinkling: from robust sampling to almost Hamiltonicity",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.30165",
+      "arxiv_id": "2609.30165",
+      "arxiv_version": "2609.30165v1",
+      "published": "2026-09-24T17:19:59Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Micha Christoph",
+        "Zach Hunter",
+        "Benny Sudakov"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Probability & statistics"
+      ],
+      "abstract": "The authors develop thinning–sprinkling for robust sampling and almost-Hamiltonicity.",
+      "claimed_result": "Almost-spanning cycles in tough, vertex-transitive, and nearly regular expander graphs under polylogarithmic hypotheses.",
+      "assumptions_and_setting": "Finite graph settings with stated connectivity, toughness, degree, or expansion assumptions.",
+      "caveat": "Asymptotic preprint claim; full hypotheses require checking.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30165"
+      ]
+    },
+    {
+      "id": "2",
       "kind": "paper",
       "title": "Localization near the edge for the lattice Anderson-Bernoulli model on general dimension",
-      "rank": 1,
+      "rank": 2,
       "url": "https://arxiv.org/abs/2609.30209",
       "arxiv_id": "2609.30209",
-      "arxiv_version": "v1",
+      "arxiv_version": "2609.30209v1",
       "published": "2026-09-24T17:42:14Z",
-      "categories": ["math-ph", "math.AP", "math.DS", "math.PR", "math.SP"],
-      "authors": ["Linjun Li", "Shihe Liu", "Lingfu Zhang"],
-      "themes": ["Mathematical physics", "Analysis & PDE", "Probability & statistics"],
-      "abstract": "The paper proves Anderson localization near the bottom of the spectrum for the lattice Anderson model with Bernoulli potential in every dimension d≥2, completing a problem left open by Bourgain and Kenig.",
-      "claimed_result": "The authors claim localization near the spectral edge for Bernoulli disorder in all dimensions d≥2 using a probabilistic discrete unique-continuation principle.",
-      "assumptions_and_setting": "The lattice Anderson tight-binding model with Bernoulli potential on Z^d at the lower spectral edge, d≥2.",
-      "caveat": "New unrefereed preprint; the proof and the precise relation to the Bourgain–Kenig problem require expert checking.",
-      "refs": ["https://arxiv.org/abs/2609.30209"]
+      "categories": [
+        "math-ph",
+        "math.AP",
+        "math.DS",
+        "math.PR",
+        "math.SP"
+      ],
+      "authors": [
+        "Linjun Li",
+        "Shihe Liu",
+        "Lingfu Zhang"
+      ],
+      "themes": [
+        "Mathematical physics",
+        "Analysis & PDE",
+        "Probability & statistics"
+      ],
+      "abstract": "Anderson localization near the spectral edge for Bernoulli disorder in all dimensions d≥2.",
+      "claimed_result": "Edge localization using probabilistic discrete unique continuation.",
+      "assumptions_and_setting": "Lattice Anderson model with Bernoulli potential near the bottom of the spectrum.",
+      "caveat": "Preprint claim; proof details require full-paper review.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30209"
+      ]
     },
     {
-      "id": "2609.30194",
+      "id": "3",
       "kind": "paper",
       "title": "Stable solutions of the Allen–Cahn equation in dimension three are one-dimensional",
-      "rank": 2,
+      "rank": 3,
       "url": "https://arxiv.org/abs/2609.30194",
       "arxiv_id": "2609.30194",
-      "arxiv_version": "v1",
+      "arxiv_version": "2609.30194v1",
       "published": "2026-09-24T17:34:08Z",
-      "categories": ["math.AP"],
-      "authors": ["Hardy Chan", "Xavier Fernández-Real", "Alessio Figalli", "Enric Florit-Simon", "Joaquim Serra"],
-      "themes": ["Analysis & PDE", "Geometry & topology"],
-      "abstract": "The authors claim that every bounded stable solution of the Allen–Cahn equation in R^3 is one-dimensional, implying De Giorgi's conjecture for monotone solutions in dimension four.",
-      "claimed_result": "Every bounded stable solution in three dimensions is one-dimensional, with the stated dimension-four consequence.",
-      "assumptions_and_setting": "Bounded stable Allen–Cahn solutions on R^3; the consequence concerns monotone solutions in dimension four.",
-      "caveat": "The abstract does not expose the proof's quantitative estimates; this remains a preprint claim.",
-      "refs": ["https://arxiv.org/abs/2609.30194"]
+      "categories": [
+        "math.AP"
+      ],
+      "authors": [
+        "Hardy Chan",
+        "Xavier Fernández-Real",
+        "Alessio Figalli",
+        "Enric Florit-Simon",
+        "Joaquim Serra"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Geometry & topology"
+      ],
+      "abstract": "Every bounded stable Allen–Cahn solution in R3 is claimed to be one-dimensional.",
+      "claimed_result": "The result implies De Giorgi’s conjecture for monotone solutions in dimension four.",
+      "assumptions_and_setting": "Bounded stable solutions on R3.",
+      "caveat": "Abstract-level evidence only; details of the classification proof remain unchecked.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30194"
+      ]
     },
     {
-      "id": "2609.30103",
-      "kind": "paper",
-      "title": "Bounded-orbit wandering domains do not exist",
-      "rank": 3,
-      "url": "https://arxiv.org/abs/2609.30103",
-      "arxiv_id": "2609.30103",
-      "arxiv_version": "v1",
-      "published": "2026-09-24T16:46:35Z",
-      "categories": ["math.DS"],
-      "authors": ["Kostiantyn Drach", "Leticia Pardo-Simón", "Beno Učakar"],
-      "themes": ["Geometry & topology", "Mathematical physics"],
-      "abstract": "The paper claims that transcendental entire functions have no wandering Fatou components with bounded forward orbit, and gives a stronger meromorphic statement.",
-      "claimed_result": "Bounded-orbit wandering domains do not occur for transcendental entire functions; every point in a meromorphic wandering domain has an unbounded orbit, according to the authors.",
-      "assumptions_and_setting": "Transcendental entire or meromorphic functions and their Fatou components.",
-      "caveat": "Independent verification remains important; a checked MathDB result labels the new claim unverified.",
-      "refs": ["https://arxiv.org/abs/2609.30103"]
-    },
-    {
-      "id": "2609.30228",
+      "id": "4",
       "kind": "paper",
       "title": "Global well-posedness and scattering for the three-dimensional focusing energy-critical NLS",
       "rank": 4,
       "url": "https://arxiv.org/abs/2609.30228",
       "arxiv_id": "2609.30228",
-      "arxiv_version": "v1",
+      "arxiv_version": "2609.30228v1",
       "published": "2026-09-24T17:51:01Z",
-      "categories": ["math.AP"],
-      "authors": ["Qingtang Su", "Zehua Zhao"],
-      "themes": ["Analysis & PDE", "Mathematical physics"],
-      "abstract": "The authors claim global well-posedness and scattering below the ground-state energy and gradient thresholds for the three-dimensional focusing energy-critical NLS.",
-      "claimed_result": "The paper claims to confirm the dimension-three threshold conjecture using frequency-localized L^4 estimates and an adapted interaction Morawetz identity.",
-      "assumptions_and_setting": "The focusing energy-critical NLS in three spatial dimensions below both stated thresholds.",
-      "caveat": "The frequency-truncation estimates and exact threshold formulation need full-proof checking.",
-      "refs": ["https://arxiv.org/abs/2609.30228"]
+      "categories": [
+        "math.AP"
+      ],
+      "authors": [
+        "Qingtang Su",
+        "Zehua Zhao"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Mathematical physics"
+      ],
+      "abstract": "Global well-posedness and scattering below ground-state energy and gradient thresholds.",
+      "claimed_result": "A claimed confirmation of the three-dimensional threshold conjecture.",
+      "assumptions_and_setting": "Focusing energy-critical NLS in three dimensions under both threshold conditions.",
+      "caveat": "Preprint claim; threshold and error estimates need independent verification.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30228"
+      ]
     },
     {
-      "id": "2609.30165",
+      "id": "5",
       "kind": "paper",
-      "title": "Thinning and sprinkling: from robust sampling to almost Hamiltonicity",
+      "title": "A 1/64 spectral gap for surfaces with δ=1/2",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2609.30165",
-      "arxiv_id": "2609.30165",
-      "arxiv_version": "v1",
-      "published": "2026-09-24T17:19:59Z",
-      "categories": ["math.CO"],
-      "authors": ["Micha Christoph", "Zach Hunter", "Benny Sudakov"],
-      "themes": ["Combinatorics & discrete mathematics", "Probability & statistics"],
-      "abstract": "The paper develops a thinning–sprinkling method for robustness under random vertex sampling and derives almost-Hamiltonicity results for several graph classes.",
-      "claimed_result": "The authors claim cycles of length (1-o(1))n in stated polylogarithmic regimes, giving asymptotic solutions to the cited Chvátal and Lovász conjectures.",
-      "assumptions_and_setting": "Tough graphs, connected vertex-transitive graphs, nearly regular sublinear expanders, and k-connected graphs with k=ω(log n).",
-      "caveat": "Almost-spanning cycles are weaker than full Hamilton cycles; the exact hypotheses and ranges require careful reading.",
-      "refs": ["https://arxiv.org/abs/2609.30165"]
+      "url": "https://arxiv.org/abs/2609.30261",
+      "arxiv_id": "2609.30261",
+      "arxiv_version": "2609.30261v1",
+      "published": "2026-09-24T17:59:34Z",
+      "categories": [
+        "math.AP",
+        "math.SP"
+      ],
+      "authors": [
+        "Alex Cohen",
+        "Semyon Dyatlov"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Geometry & topology"
+      ],
+      "abstract": "An explicit essential spectral gap is proved for convex co-compact hyperbolic surfaces.",
+      "claimed_result": "The gap is 1/64−ε at δ=1/2, via a new fractal uncertainty principle.",
+      "assumptions_and_setting": "Convex co-compact hyperbolic surfaces with δ in (2/5,14/27).",
+      "caveat": "Sharpness and dependence on the cited Furstenberg theorem are open from the abstract.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30261"
+      ]
+    },
+    {
+      "id": "6",
+      "kind": "paper",
+      "title": "A Peterson program for general Schubert varieties and mirror symmetry",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.30242",
+      "arxiv_id": "2609.30242",
+      "arxiv_version": "2609.30242v1",
+      "published": "2026-09-24T17:56:53Z",
+      "categories": [
+        "math.AG"
+      ],
+      "authors": [
+        "Changzheng Li",
+        "Konstanze Rietsch",
+        "Mingzhi Yang"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "A generalized Peterson variety and mirror-symmetric superpotential are constructed for arbitrary Schubert varieties.",
+      "claimed_result": "The quantum-cohomology correspondence is conjectured and verified in selected type-A cases.",
+      "assumptions_and_setting": "Schubert varieties in partial/full flag varieties, especially smooth Fano cases.",
+      "caveat": "Central identifications are conjectural beyond verified cases.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30242"
+      ]
+    },
+    {
+      "id": "7",
+      "kind": "paper",
+      "title": "Diophantine approximation by primes and Landau–Siegel zeros",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2609.30207",
+      "arxiv_id": "2609.30207",
+      "arxiv_version": "2609.30207v1",
+      "published": "2026-09-24T17:41:46Z",
+      "categories": [
+        "math.NT"
+      ],
+      "authors": [
+        "Sun-Kai Leung",
+        "Stelios Sachpazis"
+      ],
+      "themes": [
+        "Algebra & number theory"
+      ],
+      "abstract": "Conditional on Siegel-zero hypotheses, infinitely many primes yield explicit Diophantine approximations.",
+      "claimed_result": "Bounds near p^(−1/3) are obtained under two strengths of the hypothesis.",
+      "assumptions_and_setting": "α irrational of finite type, β real, and the stated conditional zero assumptions.",
+      "caveat": "The main conclusions are conditional on unresolved hypotheses.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30207"
+      ]
+    },
+    {
+      "id": "8",
+      "kind": "paper",
+      "title": "The Dynamical Radius of Comparison for C*-Dynamical Systems",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2609.30211",
+      "arxiv_id": "2609.30211",
+      "arxiv_version": "2609.30211v1",
+      "published": "2026-09-24T17:42:58Z",
+      "categories": [
+        "math.OA"
+      ],
+      "authors": [
+        "M. Ali Asadi-Vasfi",
+        "N. Christopher Phillips"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Logic & foundations"
+      ],
+      "abstract": "A dynamical radius of comparison is introduced for C*-dynamical systems.",
+      "claimed_result": "Structural properties, separating examples, and dynamical-comparison criteria are proved.",
+      "assumptions_and_setting": "Unital C*-algebras and group actions under varying finiteness and Rokhlin-type hypotheses.",
+      "caveat": "Behavior outside the listed regimes remains unclear from the abstract.",
+      "refs": [
+        "https://arxiv.org/abs/2609.30211"
+      ]
     }
   ]
 }

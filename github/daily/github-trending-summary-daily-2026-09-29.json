@@ -5,14 +5,20 @@
   "date": "2026-09-29",
   "title": "GitHub Trending Summary - Daily - 2026-09-29",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-09-29.md",
-  "entry_count": 8,
+  "entry_count": 10,
   "entry_noun": "repositories",
   "sections": [
+    {
+      "id": "10-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Daily GitHub Trending snapshot at 2026-09-29 15:05 UTC; date range 2026-09-29 through 2026-09-29; ranked by daily Trending star gains."
+    },
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Agent infrastructure is the strongest signal in today’s list: memory, orchestration, coding-agent composition, and agent-native office software occupy half of the entries. Local voice AI is the day’s top-ranked project, while a radar system and systems-programming textbook add meaningful non-AI variety."
+      "content": "Agent infrastructure is the clearest cluster today: memory, safe runtimes, orchestration, coding harnesses, and office workflows all appear among the leaders. The biggest single spike is VoiceStudio, suggesting strong demand for local voice-generation and media workflows alongside agent tooling."
     },
     {
       "id": "01-debpalash-voicestudio",
@@ -20,137 +26,213 @@
       "title": "debpalash/VoiceStudio",
       "rank": 1,
       "url": "https://github.com/debpalash/VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "description": "Open-source, fully local voice-cloning, voice-design, dubbing, dictation, transcription, and audiobook toolkit supporting 646 languages.",
       "language": "Python",
-      "stars_gained": 3221,
-      "total_stars": 45872,
-      "why_notable": "Local multimodal voice tooling led the snapshot by a wide margin.",
+      "stars_gained": 4712,
+      "total_stars": 46899,
+      "themes": [
+        "local voice AI",
+        "audio tooling"
+      ],
+      "why_notable": "It led the daily list by a wide margin, with local speech generation and editing as its standout use case.",
       "refs": [
         "debpalash/VoiceStudio"
       ]
     },
     {
-      "id": "02-paperclipai-paperclip",
-      "kind": "repo",
-      "title": "paperclipai/paperclip",
-      "rank": 2,
-      "url": "https://github.com/paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "language": "TypeScript",
-      "stars_gained": 3197,
-      "total_stars": 93723,
-      "why_notable": "Agent operations and coordination are attracting exceptional daily momentum.",
-      "refs": [
-        "paperclipai/paperclip"
-      ]
-    },
-    {
-      "id": "03-vectorize-io-hindsight",
+      "id": "02-vectorize-io-hindsight",
       "kind": "repo",
       "title": "vectorize-io/hindsight",
-      "rank": 3,
+      "rank": 2,
       "url": "https://github.com/vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
+      "description": "An agent-memory system designed to learn from experience.",
       "language": "Python",
-      "stars_gained": 4561,
-      "total_stars": 41787,
-      "why_notable": "It had the largest reported daily gain, highlighting demand for persistent agent memory.",
+      "stars_gained": 2541,
+      "total_stars": 42253,
+      "themes": [
+        "agent memory",
+        "AI infrastructure"
+      ],
+      "why_notable": "Its second-place daily gain underscores strong interest in persistent, adaptive memory for agents.",
       "refs": [
         "vectorize-io/hindsight"
       ]
     },
     {
-      "id": "04-nawfalmotii79-plfm-radar",
+      "id": "03-paperclipai-paperclip",
       "kind": "repo",
-      "title": "NawfalMotii79/PLFM_RADAR",
+      "title": "paperclipai/paperclip",
+      "rank": 3,
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "An open-source application for managing AI agents at work.",
+      "language": "TypeScript",
+      "stars_gained": 2412,
+      "total_stars": 94081,
+      "themes": [
+        "agent orchestration",
+        "AI applications"
+      ],
+      "why_notable": "It combines agent orchestration with a workplace management interface and ranked among the day's top gainers.",
+      "refs": [
+        "paperclipai/paperclip"
+      ]
+    },
+    {
+      "id": "04-nvidia-openshell",
+      "kind": "repo",
+      "title": "NVIDIA/OpenShell",
       "rank": 4,
-      "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
-      "description": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
-      "language": "PLSQL",
-      "stars_gained": 158,
-      "total_stars": 25975,
-      "why_notable": "A hardware and radio project provides a sharp break from the dominant AI theme.",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "A safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars_gained": 978,
+      "total_stars": 10159,
+      "themes": [
+        "agent security",
+        "AI infrastructure"
+      ],
+      "why_notable": "Its Rust-based sandbox/runtime framing brings security and privacy directly into the agent stack.",
       "refs": [
-        "NawfalMotii79/PLFM_RADAR"
+        "NVIDIA/OpenShell"
       ]
     },
     {
-      "id": "05-cs341-illinois-coursebook",
+      "id": "05-vectifyai-pageindex",
       "kind": "repo",
-      "title": "cs341-illinois/coursebook",
+      "title": "VectifyAI/PageIndex",
       "rank": 5,
-      "url": "https://github.com/cs341-illinois/coursebook",
-      "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
-      "language": "TeX",
-      "stars_gained": 195,
-      "total_stars": 2721,
-      "why_notable": "Open educational systems material is one of the strongest non-agent entries.",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "description": "A document indexing system for vectorless, reasoning-based retrieval-augmented generation (RAG).",
+      "language": "Python",
+      "stars_gained": 822,
+      "total_stars": 36914,
+      "themes": [
+        "RAG",
+        "document retrieval"
+      ],
+      "why_notable": "It is a notable alternative RAG approach among today's fastest-rising projects.",
       "refs": [
-        "cs341-illinois/coursebook"
+        "VectifyAI/PageIndex"
       ]
     },
     {
-      "id": "06-byoungd-up",
-      "kind": "repo",
-      "title": "byoungd/up",
-      "rank": 6,
-      "url": "https://github.com/byoungd/up",
-      "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 离谱的人生 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
-      "language": "JavaScript",
-      "stars_gained": 327,
-      "total_stars": 65288,
-      "why_notable": "A broad Chinese-language learning and self-improvement guide shows continued audience pull for practical AI education.",
-      "refs": [
-        "byoungd/up"
-      ]
-    },
-    {
-      "id": "07-mvschwarz-openrig",
+      "id": "06-mvschwarz-openrig",
       "kind": "repo",
       "title": "mvschwarz/openrig",
-      "rank": 7,
+      "rank": 6,
       "url": "https://github.com/mvschwarz/openrig",
-      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+      "description": "A multi-agent harness that runs Claude Code and Codex together as one system.",
       "language": "TypeScript",
-      "stars_gained": 734,
-      "total_stars": 2002,
-      "why_notable": "It directly reflects the emerging pattern of composing multiple coding agents.",
+      "stars_gained": 733,
+      "total_stars": 2173,
+      "themes": [
+        "coding agents",
+        "agent orchestration"
+      ],
+      "why_notable": "It makes cross-agent coding workflows a concrete developer tool rather than a model-only feature.",
       "refs": [
         "mvschwarz/openrig"
       ]
     },
     {
-      "id": "08-dream-num-univer",
+      "id": "07-dream-num-univer",
       "kind": "repo",
       "title": "dream-num/univer",
-      "rank": 8,
+      "rank": 7,
       "url": "https://github.com/dream-num/univer",
-      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "description": "An office runtime for agents spanning spreadsheets, documents, slides, canvas, relational tables, and PDF.",
       "language": "TypeScript",
-      "stars_gained": 1099,
-      "total_stars": 21538,
-      "why_notable": "Agent-native office and document infrastructure expands the trend beyond coding assistants.",
+      "stars_gained": 692,
+      "total_stars": 21674,
+      "themes": [
+        "agent applications",
+        "office tooling"
+      ],
+      "why_notable": "It applies agent integration to familiar office and structured-data workflows.",
       "refs": [
         "dream-num/univer"
+      ]
+    },
+    {
+      "id": "08-oblien-openship",
+      "kind": "repo",
+      "title": "oblien/openship",
+      "rank": 8,
+      "url": "https://github.com/oblien/openship",
+      "description": "A self-hosted deployment platform.",
+      "language": "TypeScript",
+      "stars_gained": 436,
+      "total_stars": 13637,
+      "themes": [
+        "self-hosting",
+        "deployment"
+      ],
+      "why_notable": "It is the day's clearest conventional self-hosted deployment project in a list otherwise heavy on AI.",
+      "refs": [
+        "oblien/openship"
+      ]
+    },
+    {
+      "id": "09-willfaust-madeira",
+      "kind": "repo",
+      "title": "willfaust/Madeira",
+      "rank": 9,
+      "url": "https://github.com/willfaust/Madeira",
+      "description": "Runs x86-64 Windows PC games on jailed iOS using FEX-Emu, Wine, and DXMT.",
+      "language": "C",
+      "stars_gained": 229,
+      "total_stars": 1039,
+      "themes": [
+        "compatibility",
+        "systems"
+      ],
+      "why_notable": "It stands out as a systems/compatibility project outside the dominant agent and AI cluster.",
+      "refs": [
+        "willfaust/Madeira"
+      ]
+    },
+    {
+      "id": "10-averygan-reclip",
+      "kind": "repo",
+      "title": "averygan/reclip",
+      "rank": 10,
+      "url": "https://github.com/averygan/reclip",
+      "description": "A lightweight self-hosted media downloader with a web interface.",
+      "language": "HTML",
+      "stars_gained": 114,
+      "total_stars": 9893,
+      "themes": [
+        "media tooling",
+        "self-hosting"
+      ],
+      "why_notable": "It brings a practical media utility into the daily Trending set, though its API metadata shows its last push was in July.",
+      "refs": [
+        "averygan/reclip"
       ]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "- **Agent infrastructure and orchestration:** paperclipai/paperclip, mvschwarz/openrig, and dream-num/univer focus on managing agents, combining coding agents, or giving agents office-style work surfaces.\n- **Persistent and multimodal AI:** vectorize-io/hindsight targets agent memory, while debpalash/VoiceStudio targets local voice cloning, dubbing, transcription, and audiobook workflows.\n- **Languages:** TypeScript leads with 3 of 8 repositories; Python has 2; JavaScript, PLSQL, and TeX contribute one each.\n- **Practical learning and open hardware:** cs341-illinois/coursebook and NawfalMotii79/PLFM_RADAR show that educational and physical-computing projects still break through alongside the AI wave."
+      "content": "- **Agent infrastructure and orchestration:** Hindsight, OpenShell, Paperclip, and OpenRig cover memory, runtime safety, management, and multi-agent coding.\n- **Local AI and retrieval:** VoiceStudio leads the daily gains; PageIndex represents reasoning-based, vectorless document RAG.\n- **Practical developer and user tools:** Univer, OpenShip, Reclip, and Madeira span office workflows, self-hosted deployment, media downloads, and iOS compatibility.\n- **Languages:** TypeScript 4, Python 3, Rust 1, C 1, HTML 1 among these 10 repositories."
     },
     {
       "id": "85-notable-shifts",
       "kind": "extra",
       "title": "Notable Shifts",
-      "content": "The clearest shift is from standalone model demos toward operational layers around agents: memory, management, multi-agent execution, and office/document integration. The list is not exclusively AI, however; radar hardware and systems-programming education remain visible outliers."
+      "content": "This single-day snapshot is notably concentrated in agent infrastructure and agent-facing applications, while the leading repo is a local voice/media suite rather than an agent framework. It also includes a smaller but varied tail of practical self-hosted and systems tools. No prior-period comparison was used, so this describes today's mix rather than a measured week-over-week shift."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "Today’s momentum is concentrated around making agents useful in real workflows rather than merely improving chat interfaces. The combination of memory, orchestration, local voice capability, and agent-native productivity suggests an ecosystem moving toward persistent, multimodal, and task-oriented software."
+      "content": "The strongest shared bet is making agents usable in real workflows: give them memory, constrain their execution, coordinate them, and connect them to office or coding environments. VoiceStudio's much larger daily gain is a separate signal that local audio capabilities are attracting substantial attention. Daily star gains are momentum, not proof of long-term adoption."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "**Primary source:** https://github.com/trending?since=daily\n**Corroboration:** GitHub REST repository metadata for the listed repositories and GitHub Search API query `stars:>100 pushed:>=2026-09-27` (sorted by update time; used as an activity cross-check, not as the ranking source).\n**Method note:** The ordering uses each repository's stars gained shown on GitHub Trending's daily view. Total-star counts, primary languages, and freshness were cross-checked through the GitHub REST API. An uncorroborated Trending entry (`t8y2/db`, 404) and obvious educational/course repositories were omitted; one listed repo, Reclip, has an older last-push date noted above."
     }
   ]
 }

@@ -1,0 +1,140 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-09-29",
+  "title": "GitHub Trending Summary - Daily - 2026-09-29",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-09-29.md",
+  "entry_count": 8,
+  "entry_noun": "repositories",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent infrastructure and local AI applications dominate today's GitHub activity. Hindsight, VoiceStudio, Paperclip, Univer, and OpenRIG point to a strong push toward persistent agent memory, autonomous work management, local voice AI, and agent-operated productivity software."
+    },
+    {
+      "id": "01-vectorize-io-hindsight",
+      "kind": "repo",
+      "title": "vectorize-io/hindsight",
+      "rank": 1,
+      "url": "https://github.com/vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "language": "Python",
+      "stars_gained": 4561,
+      "total_stars": 41734,
+      "themes": ["agent infrastructure", "memory"],
+      "refs": ["vectorize-io/hindsight"]
+    },
+    {
+      "id": "02-debpalash-voicestudio",
+      "kind": "repo",
+      "title": "debpalash/VoiceStudio",
+      "rank": 2,
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "Open-source, fully-local ElevenLabs alternative for voice cloning, voice design, video dubbing, dictation, transcription, and audiobook creation.",
+      "language": "Python",
+      "stars_gained": 3221,
+      "total_stars": 45725,
+      "themes": ["local AI", "voice", "multimodal AI"],
+      "refs": ["debpalash/VoiceStudio"]
+    },
+    {
+      "id": "03-paperclipai-paperclip",
+      "kind": "repo",
+      "title": "paperclipai/paperclip",
+      "rank": 3,
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "stars_gained": 3197,
+      "total_stars": 93652,
+      "themes": ["agent management", "developer tooling"],
+      "refs": ["paperclipai/paperclip"]
+    },
+    {
+      "id": "04-dream-num-univer",
+      "kind": "repo",
+      "title": "dream-num/univer",
+      "rank": 4,
+      "url": "https://github.com/dream-num/univer",
+      "description": "Office harness for AI agents: spreadsheets, docs, slides, canvas, relational tables, and PDF.",
+      "language": "TypeScript",
+      "stars_gained": 1099,
+      "total_stars": 21518,
+      "themes": ["AI productivity", "office runtime"],
+      "refs": ["dream-num/univer"]
+    },
+    {
+      "id": "05-mvschwarz-openrig",
+      "kind": "repo",
+      "title": "mvschwarz/openrig",
+      "rank": 5,
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+      "language": "TypeScript",
+      "stars_gained": 734,
+      "total_stars": 1982,
+      "themes": ["multi-agent orchestration", "coding agents"],
+      "refs": ["mvschwarz/openrig"]
+    },
+    {
+      "id": "06-byoungd-up",
+      "kind": "repo",
+      "title": "byoungd/up",
+      "rank": 6,
+      "url": "https://github.com/byoungd/up",
+      "description": "Personal-development and AI-learning guide",
+      "language": "JavaScript",
+      "stars_gained": 327,
+      "total_stars": 65232,
+      "themes": ["education", "AI learning"],
+      "refs": ["byoungd/up"]
+    },
+    {
+      "id": "07-cs341-illinois-coursebook",
+      "kind": "repo",
+      "title": "cs341-illinois/coursebook",
+      "rank": 7,
+      "url": "https://github.com/cs341-illinois/coursebook",
+      "description": "Open-source introductory systems-programming textbook",
+      "language": "TeX",
+      "stars_gained": 195,
+      "total_stars": 2704,
+      "themes": ["systems education"],
+      "refs": ["cs341-illinois/coursebook"]
+    },
+    {
+      "id": "08-nawfalmotii79-plfm-radar",
+      "kind": "repo",
+      "title": "NawfalMotii79/PLFM_RADAR",
+      "rank": 8,
+      "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
+      "description": "Open-source, low-cost 10.5 GHz PLFM phased-array RADAR system",
+      "language": "PLSQL",
+      "stars_gained": 158,
+      "total_stars": 25950,
+      "themes": ["hardware", "RF", "radar"],
+      "refs": ["NawfalMotii79/PLFM_RADAR"]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent infrastructure leads: Hindsight, Paperclip, and OpenRIG cover memory, work management, and multi-agent orchestration. VoiceStudio supplies a local multimodal AI signal. Univer extends agents into office productivity. Python leads the AI-oriented entries, while TypeScript dominates agent and productivity tooling."
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "extra",
+      "title": "Notable Shifts",
+      "content": "The list is shifting from standalone model demos toward operational layers around agents: memory, coordination, management, and interfaces where agents can perform office work."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today's momentum is around making AI systems useful, persistent, and deployable. GitHub attention is moving up the application and infrastructure layer, especially around memory, orchestration, agent management, and local multimodal execution."
+    }
+  ]
+}

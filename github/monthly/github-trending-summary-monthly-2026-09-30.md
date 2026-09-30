@@ -4,83 +4,70 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-09-30 02:40 UTC |
+| Snapshot time (UTC) | 2026-09-30 11:06 UTC |
 | Scope | Monthly |
 | Date range | 2026-09-01 through 2026-09-30 |
-| Ranking basis | Inferred monthly ranking from GitHub Search: current stars among repositories created this month, with recent push activity used as a freshness signal |
+| Ranking basis | GitHub's monthly Trending order, corroborated against current repository metadata and default-branch commits |
 
 ## Headline
 
-September’s standout signal is a fast-rising family of typed-decision models and tools built around Laya/Jev, appearing in model runtimes, coding-agent context management, and a phone assistant. A non-software evidence-based life guide also amassed a comparable star count, while new coding and design tools round out the month’s breakouts.
+AI-agent infrastructure and agent-ready workflows dominate this month's leaders: coding harnesses, tool routing, agent-oriented code review, and interactive diagramming all appear near the top. The strongest individual signals are Archify and God's-Eye-View, each showing more than 33,000 stars gained this month on GitHub's monthly Trending page.
 
 ## Top Repositories
 
-1. **[eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter)  - An evidence-based Chinese-language practical life guide covering health, finance, law, work, and family topics.**
+1. **[bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) - A browser-based, real-data spatial-intelligence globe and satellite-style simulator.**
 
-  **Language:** HTML | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 28812 | **Why notable:** It led the month-created search results by current stars and was still being updated on September 30; it is a knowledge resource rather than a conventional software tool.
+  **Language:** JavaScript | **Stars gained in window:** +33,308 | **Total stars:** 45,326 | **Why notable:** It leads this snapshot with unusually strong interest in an interactive open-source geospatial visualization product.
 
-2. **[NandhaKishorM/laya](https://github.com/NandhaKishorM/laya)  - A multilingual, non-autoregressive decision engine for typed choices, scores, and yes/no decisions.**
+2. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review) - An AI-powered code-review CLI combining deterministic checks with an LLM agent.**
 
-  **Language:** Python | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 28685 | **Why notable:** Its unusually high current star count in under two weeks, alongside active pushes through September 29, makes it the clearest model/research breakout.
+  **Language:** Go | **Stars gained in window:** +21,236 | **Total stars:** 42,771 | **Why notable:** It brings enterprise-scale defect-review workflows into an open-source tool, with line-level comments and multi-language rules.
 
-3. **[browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast)  - A web-agent project focused on speed and low cost.**
+3. **[affaan-m/ECC](https://github.com/affaan-m/ECC) - A performance and workflow harness for coding agents across several popular coding environments.**
 
-  **Language:** Python | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 21419 | **Why notable:** It connects the emerging Jev decision-model interest to browser automation and was updated on September 30.
+  **Language:** JavaScript | **Stars gained in window:** +26,837 | **Total stars:** 269,889 | **Why notable:** Its large existing audience and sustained monthly growth point to demand for reusable skills, memory, security, and agent-development workflows.
 
-4. **[lnkiai/m3e-canvas](https://github.com/lnkiai/m3e-canvas)  - A browser-based tool for sketching Material 3 Expressive screens and generating prompts for AI-assisted coding.**
+4. **[tt-a1i/archify](https://github.com/tt-a1i/archify) - An agent skill that turns prompts into interactive, verifiable diagrams in standalone HTML.**
 
-  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 8464 | **Why notable:** It is one of the month’s strongest non-model-specific developer/design tools, with recent updates on September 27.
+  **Language:** JavaScript | **Stars gained in window:** +45,168 | **Total stars:** 74,788 | **Why notable:** It tops this snapshot's displayed monthly gain and exemplifies the move from coding-agent output toward inspectable visual artifacts.
 
-5. **[jaredpalmer/kev](https://github.com/jaredpalmer/kev)  - A family of trainable, locally runnable Jev-like decision models built on Qwen models.**
+5. **[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) - A coding-agent skill for clearer, more concise, easier-to-scan responses.**
 
-  **Language:** Python | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 7904 | **Why notable:** It shows the typed-decision idea extending into alternative open model implementations; it was updated on September 29.
+  **Language:** Python | **Stars gained in window:** +26,845 | **Total stars:** 52,285 | **Why notable:** Its momentum highlights UX and response discipline as practical customization targets for agent users.
 
-6. **[tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction)  - A Claude Code plugin that uses Jev decisions to select or trim stale tool context while preserving retained content.**
+6. **[Tencent/WeKnora](https://github.com/Tencent/WeKnora) - An LLM knowledge platform for document understanding, retrieval, reasoning, and wiki-style knowledge organization.**
 
-  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 7206 | **Why notable:** It applies the decision-model approach to a concrete coding-agent bottleneck: context compaction.
+  **Language:** Go | **Stars gained in window:** +10,525 | **Total stars:** 31,410 | **Why notable:** Its shared knowledge base for RAG, multi-step agents, and wiki workflows represents a broader enterprise knowledge-system pattern.
 
-7. **[zai-org/ZCode](https://github.com/zai-org/ZCode)  - Z.ai’s extensible coding-agent harness.**
+7. **[superdesigndev/treg](https://github.com/superdesigndev/treg) - A unified gateway and catalog for tools used by AI agents.**
 
-  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 7182 | **Why notable:** It is a high-profile new entrant in the coding-agent harness space, with pushes through September 29.
+  **Language:** Python | **Stars gained in window:** +3,121 | **Total stars:** 3,885 | **Why notable:** It targets tool discovery and provider access—the integration layer between an agent and the services it can call.
 
-8. **[jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis)  - An Android conversation assistant that reads on-screen chats and offers suggested replies for the user to insert.**
+8. **[THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC) - An open multi-agent interactive classroom for immersive learning experiences.**
 
-  **Language:** Kotlin | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 7115 | **Why notable:** It demonstrates the Jev/typed-decision wave moving from developer workflows into a mobile assistant use case.
+  **Language:** TypeScript | **Stars gained in window:** +18,126 | **Total stars:** 39,631 | **Why notable:** It applies coordinated agents to a user-facing education experience rather than only developer tooling.
 
-9. **[mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx)  - A native Apple MLX runtime for Laya decision models, targeting local low-latency inference.**
+9. **[anthropics/financial-services](https://github.com/anthropics/financial-services) - Reference agents, skills, and data connectors for common financial-services workflows.**
 
-  **Language:** Python | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 6635 | **Why notable:** It adds an Apple Silicon/local-inference deployment path to the Laya ecosystem.
+  **Language:** Python | **Stars gained in window:** +3,705 | **Total stars:** 38,309 | **Why notable:** Its plugins and managed-agent templates package domain workflows; its README explicitly positions outputs for qualified human review, not autonomous decisions.
 
-10. **[robbietilton/Compositor](https://github.com/robbietilton/Compositor)  - A native macOS image editor positioned as a Photoshop alternative.**
+10. **[fmtlib/fmt](https://github.com/fmtlib/fmt) - A fast, safe C++ formatting library and alternative to C stdio and iostreams.**
 
-  **Language:** Swift | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 6518 | **Why notable:** It is a standout consumer desktop application among the month’s otherwise AI-heavy breakouts.
-
-11. **[Mak5er/AirCard](https://github.com/Mak5er/AirCard)  - An iOS utility for customizing Apple Wallet card appearances without a jailbreak.**
-
-  **Language:** Swift | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 5045 | **Why notable:** It is another unusually popular native Apple-platform utility created in September.
-
-12. **[Albert-Weasker/niubigeo](https://github.com/Albert-Weasker/niubigeo)  - An open-source tool for AI brand-visibility and competitor reporting.**
-
-  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 4861 | **Why notable:** It reflects demand for practical AI-search visibility and marketing analytics tools, beyond model and agent infrastructure.
+  **Language:** C++ | **Stars gained in window:** +2,109 | **Total stars:** 25,845 | **Why notable:** This established systems library is a useful counterpoint to the AI-heavy list, showing that foundational developer infrastructure also remains visible.
 
 ## Trending Technologies and Themes
 
-- **Typed decisions and the Laya/Jev ecosystem:** Laya, kev, fast-jev-compaction, jev-chat-jarvis, and laya-mlx show interest spanning model checkpoints, local inference, agent context management, and mobile assistance.
-- **Coding agents and harnesses:** jev-ultrafast and ZCode target agent execution and orchestration, while fast-jev-compaction focuses on managing agent context.
-- **AI-assisted design and marketing:** m3e-canvas turns UI sketches into coding prompts; niubigeo targets AI-search brand visibility.
-- **Non-AI utilities and content:** HowToLiveBetter, Compositor, and AirCard show that practical reference material and polished native apps also earned significant attention.
-- **Languages:** Python and TypeScript lead this selected set with four repositories each; Swift has two, while HTML and Kotlin have one each. This is a count of these 12 repositories, not all September GitHub activity.
-
-## Notable Shifts
-
-The sharpest pattern is the quick translation of a new decision-model idea into surrounding products: local runtimes, coding-agent plugins, web agents, and mobile assistants. At the same time, attention is not exclusively going to AI infrastructure: a Chinese-language life guide and native Mac/iOS utilities appear among the month’s most-starred new repositories.
+- **Agent tooling and workflow systems:** ECC, Open Code Review, Archify, i-have-adhd, and treg address agent harnesses, code review, visual artifacts, output style, and tool access, respectively.
+- **Knowledge and applied multi-agent products:** WeKnora and OpenMAIC extend agent use into document knowledge work and interactive education; Anthropic's financial-services repo packages domain-specific workflows with human oversight.
+- **Interactive data visualization:** God's-Eye-View's real-data 3D globe is the clearest non-agent outlier among the leaders.
+- **Languages:** JavaScript and Python lead with three repositories each; Go has two; TypeScript and C++ have one each.
 
 ## Takeaway
 
-September’s repository-level momentum points to developer interest in smaller, typed decisions as a complement to full text generation, especially where latency and context costs matter. The ecosystem is still early, and current star totals do not establish adoption or quality; the cross-project spread is the signal to watch. Practical knowledge repositories and native desktop/mobile utilities also remain capable of breaking through.
+The month’s strongest cluster is not just “more AI repos,” but the tooling around making agents usable: repeatable workflows, safer code review, tool access, and outputs people can inspect. Knowledge work and education are visible application areas, while the geospatial globe is a striking consumer-facing outlier. Monthly stars are a snapshot signal, not evidence of quality or long-term adoption.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Search: repositories created in September with more than 100 stars](https://github.com/search?q=created%3A2026-09-01..2026-09-30+stars%3A%3E100&type=repositories); [GitHub REST Search API query](https://api.github.com/search/repositories?q=created%3A2026-09-01..2026-09-30+stars%3A%3E100&sort=stars&order=desc&per_page=100).
-- **Corroboration:** GitHub REST Search API queries for repositories pushed since September 1 with more than 500 and more than 2,000 stars; individual GitHub REST repository records verified the listed projects’ descriptions, languages, creation/push dates, current star totals, and fork status.
-- **Method note:** GitHub does not provide a monthly Trending view or monthly star-gain totals through these queries. This is an inferred ranking of highly starred repositories created during September, using current total stars as the main signal and recent pushes as a freshness check. Star totals are snapshot values, not September gains. Obvious duplicates/list-style noise and forks were excluded where identified; the list is a curated snapshot, not a complete census.
+- **Primary source:** [GitHub Trending repositories this month](https://github.com/trending?since=monthly), including its displayed “stars this month” values.
+- **Corroboration:** GitHub REST API repository records and current default-branch commit endpoints for all ten entries; current README pages reviewed for the leading projects and theme interpretation.
+- **Method note:** Ranked in the order shown by GitHub's monthly Trending page at the snapshot time; the monthly star-gain values are copied from that page, not inferred from current totals. Total stars, language, and commit SHAs were checked against the GitHub REST API. The ranking is a platform snapshot and may change during the month.

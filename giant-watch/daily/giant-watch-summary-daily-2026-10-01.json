@@ -1,0 +1,44 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-10-01",
+  "title": "Giant Watch Summary - Daily - 2026-10-01",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-10-01.md",
+  "entry_count": 1,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "The search results did not establish a major AI-organization announcement published on Oct 1. The clearest recent media signal was coverage of OpenAI DevDay; it should be treated as event coverage, not a confirmed new development today."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "openai_devday_recent_coverage",
+      "title": "OpenAI DevDay 2026 coverage (recent media signal)",
+      "organizations": ["OpenAI"],
+      "status": "verified",
+      "content": "CNBC's search result describes live coverage of Sam Altman's keynote and developer announcements and was marked “1 day ago.” The linked page URL is dated 2026/09/29, so this is recent coverage of DevDay rather than evidence that the event or announcements occurred on Oct 1.",
+      "significance": "The search set surfaced recent coverage of a major developer event, but does not establish a new Oct 1 announcement.",
+      "refs": ["https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html"],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "80-coverage-gaps",
+      "kind": "context",
+      "title": "Coverage Gaps",
+      "content": "The fixed search set returned no clearly dated, verifiable Oct 1 announcement for the other tracked organizations. This is a limitation of the retrieved results, not evidence that no activity occurred. Other snippets lacked clear dates or pointed to older material, so they are not presented as today's events."
+    },
+    {
+      "id": "90-method",
+      "kind": "method",
+      "title": "Sources and Method",
+      "content": "Daily window: 2026-10-01. Based on the fixed web-search result set; no paid X API used. Dates and event timing are distinguished where the search-result age and linked page date differ."
+    }
+  ]
+}

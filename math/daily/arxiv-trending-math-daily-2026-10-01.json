@@ -1,0 +1,186 @@
+{
+  "schema": "research-radar-sectioned-report/v1",
+  "category": "math",
+  "window": "daily",
+  "date": "2026-10-01",
+  "title": "arXiv Mathematics — 1 October 2026 announcement batch",
+  "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-10-01.md",
+  "entry_count": 6,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv provides no official trending chart. This inferred shortlist is based on explicit claimed results and mathematical scope, not readership; new papers have limited usable citation and independent-discussion evidence.",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "Vector balancing in convex order",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2609.38228",
+      "arxiv_id": "2609.38228",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T04:00:00Z (announcement); first submitted 2026-09-28",
+      "categories": [
+        "math.GM"
+      ],
+      "authors": [
+        "Eren Ercan"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Probability & statistics",
+        "Optimization & control"
+      ],
+      "abstract": "Constructs balanced signing laws with hard discrepancy limits and convex-order guarantees, and reports resolutions of several named conjectures across discrepancy, matrix inequalities, probability, and information theory.",
+      "claimed_result": "The author’s Theorem 1.1 gives, for real matrices with column Euclidean norms at most one, a signing law with outcome-wise discrepancy below 6.8383231851485 and a joint convex-order comparison; the abstract also claims several named conjecture resolutions.",
+      "assumptions_and_setting": "Explicit discrepancy theorem: real matrices with Euclidean column norms at most one; other abstract claims have their own settings and hypotheses.",
+      "unique_caveat": "Broad single-author preprint with many substantial claims that need expert proof review; its explicit bound is not universal across all discrepancy problems.",
+      "refs": [
+        "https://arxiv.org/abs/2609.38228",
+        "https://arxiv.org/html/2609.38228v1"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Strong Artin Conjecture for Generalized Octahedral Representations in GL₃",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2609.38231",
+      "arxiv_id": "2609.38231",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T04:00:00Z (announcement); first submitted 2026-09-28",
+      "categories": [
+        "math.NT"
+      ],
+      "authors": [
+        "Junwu Wang"
+      ],
+      "themes": [
+        "Algebra & number theory"
+      ],
+      "abstract": "Proves automorphy for three-dimensional Artin representations with projective image C₃² ⋊ SL(2,3), and derives the strong Artin conjecture for all six-dimensional primitive solvable Artin representations.",
+      "claimed_result": "The author proves automorphy for generalized octahedral representations with projective image C₃² ⋊ SL(2,3), using a new automorphic-induction/base-change case for non-Galois quartic extensions, and deduces the stated six-dimensional result.",
+      "assumptions_and_setting": "Irreducible Artin representations in the specified projective-image class; secondary consequence for primitive solvable representations of dimension six.",
+      "unique_caveat": "Settles the stated solvable case, not all three-dimensional Artin representations; other projective-image cases remain outside this result.",
+      "refs": [
+        "https://arxiv.org/abs/2609.38231",
+        "https://arxiv.org/html/2609.38231v1"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "Positive-temperature spin-glass order on the three-dimensional Migdal–Kadanoff lattice",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.38220",
+      "arxiv_id": "2609.38220",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T04:00:00Z (announcement); first submitted 2026-09-27",
+      "categories": [
+        "math.PR",
+        "cond-mat.dis-nn"
+      ],
+      "authors": [
+        "Yan Ru Pei"
+      ],
+      "themes": [
+        "Probability & statistics",
+        "Mathematical physics"
+      ],
+      "abstract": "Proves positive-temperature spin-glass order on diamond hierarchical lattices, including the n=4 Migdal–Kadanoff lattice used as a three-dimensional analogue, with explicit computer-assisted Gaussian-coupling cases.",
+      "claimed_result": "For bounded-density coupling laws and n≥4, the author proves low-temperature ordering uniformly over lattice level; computer-assisted arguments cover stated Gaussian temperatures for n=3,4,5,7,8 and larger n under the paper’s conditions.",
+      "assumptions_and_setting": "Ising spin glass on a diamond hierarchical lattice with independent identically distributed couplings; n=4 is a Migdal–Kadanoff three-dimensional analogue, not the cubic lattice Z³ itself.",
+      "unique_caveat": "The paper explicitly leaves positive-temperature ordering for the Edwards–Anderson model on Z³ open; the hierarchical result does not settle it.",
+      "refs": [
+        "https://arxiv.org/abs/2609.38220",
+        "https://arxiv.org/html/2609.38220v1"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Half-space KPZ equation from a class of nonlinear SPDEs",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2609.40352",
+      "arxiv_id": "2609.40352",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T04:00:00Z (announcement); first submitted 2026-09-30",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.AP"
+      ],
+      "authors": [
+        "Kevin Yang"
+      ],
+      "themes": [
+        "Probability & statistics",
+        "Mathematical physics",
+        "Analysis & PDE"
+      ],
+      "abstract": "Derives the half-space KPZ equation as a continuum limit of a class of Ginzburg–Landau SPDEs under weak-nonlinearity scaling; authors characterize it as first beyond integrable models.",
+      "claimed_result": "The author derives the half-space KPZ equation from a class of Ginzburg–Landau stochastic PDEs in the weak-nonlinearity limit.",
+      "assumptions_and_setting": "Specified class of Ginzburg–Landau SPDEs and weak-nonlinearity scaling; abstract does not enumerate detailed hypotheses.",
+      "unique_caveat": "The “first” and universality characterizations are the author’s framing; abstract alone does not expose precise admissible SPDE class or boundary-parameter range.",
+      "refs": [
+        "https://arxiv.org/abs/2609.40352"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Symmetric-determinant apolarity in odd characteristic",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2609.38212",
+      "arxiv_id": "2609.38212",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T04:00:00Z (announcement); first submitted 2026-09-25",
+      "categories": [
+        "math.AC",
+        "math.AG"
+      ],
+      "authors": [
+        "Ying Xie"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "Determines the apolar ideal of the generic symmetric-matrix determinant over fields of odd characteristic and gives exact thresholds for weak and strong Lefschetz properties.",
+      "claimed_result": "The author gives generators for the apolar ideal and proves weak Lefschetz exactly when N≤2p−2, and strong Lefschetz exactly when N<p.",
+      "assumptions_and_setting": "Generic symmetric N×N matrix determinant; differential operators act by ordinary differentiation over a field of odd characteristic p.",
+      "unique_caveat": "Explicitly restricted to odd characteristic; characteristic two is outside the stated result.",
+      "refs": [
+        "https://arxiv.org/abs/2609.38212"
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "H-principle for corank two distributions of odd rank and maximal first Kronecker index",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2609.38214",
+      "arxiv_id": "2609.38214",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T04:00:00Z (announcement); first submitted 2026-09-25",
+      "categories": [
+        "math.DG",
+        "math.OC",
+        "math.SG"
+      ],
+      "authors": [
+        "Milan Jovanovic",
+        "Igor Zelenko"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Optimization & control"
+      ],
+      "abstract": "Establishes an h-principle and a topological existence characterization for a constrained class of corank-two distributions of odd rank with maximal first Kronecker index.",
+      "claimed_result": "The authors prove ampleness of the differential relation and deduce a complete criterion for a (2N+3)-dimensional manifold to admit the specified distribution.",
+      "assumptions_and_setting": "Corank two, odd rank 2N+1, and associated pencil of skew forms in the generic orbit/maximal-first-Kronecker-index class.",
+      "unique_caveat": "The theorem concerns this restricted class, not arbitrary corank-two distributions; for N≥2 it is a proper subclass of a broader class.",
+      "refs": [
+        "https://arxiv.org/abs/2609.38214"
+      ]
+    }
+  ]
+}

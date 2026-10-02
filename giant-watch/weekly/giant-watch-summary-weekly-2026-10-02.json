@@ -1,0 +1,61 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "weekly",
+  "date": "2026-10-02",
+  "title": "Giant Watch Summary - Weekly - 2026-10-02",
+  "source_report": "/home/yizhuan/.research/giant-watch/weekly/giant-watch-summary-weekly-2026-10-02.md",
+  "entry_count": 2,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Window: 2026-09-26 through 2026-10-02 (last seven calendar days). The clearest moves were OpenAI's September 29 DevDay, with a new GPT-6.1 Sol model and more than 20 product and developer announcements, and Google's September 30 launch of Gemini 4 Argon. Coverage in the collected results was concentrated on these two US labs; recent-looking index pages for other organizations mostly surfaced older announcements, so they are not presented as this week's events."
+    },
+    {
+      "id": "01-openai-devday-gpt-6-1-sol",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "openai-devday-gpt-6-1-sol",
+      "title": "OpenAI unveils GPT-6.1 Sol at DevDay",
+      "organizations": ["OpenAI"],
+      "status": "corroborated event; model name reported by CNBC",
+      "content": "OpenAI's official recap describes DevDay 2026 (September 29) as its biggest yet, with more than 20 announcements spanning ChatGPT, Codex, models, and new ways of working with AI. CNBC's same-day live coverage names the model introduced as GPT-6.1 Sol.",
+      "significance": "The event signals a broad product and developer push rather than a single model-only release. The supplied sources do not provide enough detail to assess GPT-6.1 Sol's capabilities or independent performance.",
+      "refs": [
+        "https://openai.com/index/devday-2026-recap/",
+        "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html"
+      ],
+      "related_event_ids": ["google-gemini-4-argon-launch"]
+    },
+    {
+      "id": "02-google-gemini-4-argon-launch",
+      "kind": "event",
+      "rank": 2,
+      "event_id": "google-gemini-4-argon-launch",
+      "title": "Google launches Gemini 4 Argon",
+      "organizations": ["Google"],
+      "status": "reported; single-source in collected results",
+      "content": "TechCrunch reported on September 30 that Google launched Gemini 4 Argon, describing it as a model for coding, research, and writing, with a particular focus on cybersecurity according to Google.",
+      "significance": "The reported launch puts cybersecurity forward as a differentiating use case in Google's latest model positioning. The collected results did not include a Google first-party announcement.",
+      "refs": [
+        "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+      ],
+      "related_event_ids": ["openai-devday-gpt-6-1-sol"]
+    },
+    {
+      "id": "80-coverage-notes",
+      "kind": "coverage-notes",
+      "title": "Coverage Notes",
+      "content": "OpenAI received first-party event recap and same-day business-press coverage. Google's launch was surfaced in technology press without first-party corroboration in the collected results. Searches for Anthropic, Meta, DeepSeek, Qwen, GLM/Z.ai, Kimi/Moonshot AI, and xAI did not yield a clearly dated, concrete event within this window in the retained results."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "This week's strongest signal is a close product cadence between OpenAI and Google: a large developer event with a named model release, followed the next day by Google's cybersecurity-positioned model launch. The evidence supports the announcements and their stated positioning, not comparative capability claims; Google's launch in particular needs first-party or independent corroboration."
+    }
+  ]
+}

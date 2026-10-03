@@ -1,0 +1,42 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-10-03",
+  "title": "Giant Watch Summary - Daily - 2026-10-03",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-10-03.md",
+  "entry_count": 1,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Anthropic commits $100 million to train 10,000 engineers, targeting the enterprise AI talent gap. The move positions workforce development, not just model capability, as the next competitive front among frontier labs."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "anthropic-100m-engineer-training",
+      "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "organizations": [
+        "Anthropic"
+      ],
+      "status": "verified",
+      "content": "Anthropic announced a $100 million investment to train 10,000 engineers, framed as an effort to close the enterprise AI talent gap. The announcement is listed on Anthropic's newsroom with an October 2, 2026 date.",
+      "significance": "A first-party, dated commitment of capital and headcount-scale training from a frontier lab, signaling that enterprise adoption constraints are being addressed through workforce development rather than model releases alone.",
+      "refs": [
+        "https://www.anthropic.com/news"
+      ],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Watch for follow-through details on how the $100 million is deployed and whether other labs respond with comparable talent programs, which would confirm workforce capacity as a shared industry bottleneck."
+    }
+  ]
+}

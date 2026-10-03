@@ -1,143 +1,134 @@
-# Physics — latest arXiv announcement batch: Thu, 1 Oct 2026
+# arXiv Trending Physics — latest batch, 1 October 2026
 
-Eight notable new papers point to two especially lively intersections: precision optical/quantum phenomena and cosmological inference from multiple survey probes. Quick agenda: a terahertz route to Hall quantization, electrically switchable topological polaritons, then DESI/JWST/CMB and dark-matter tests. Snapshot: 2026-10-02 00:17:55 UTC; the Oct 2 batch had not yet appeared, so this uses the latest batch, Oct 1. This is an inferred selection, not an official arXiv trending chart; the papers are very fresh, so citation/popularity evidence is sparse and the ordering is not a measured readership ranking.
+Eight notable papers selected from 481 unique papers in the latest available physics-group batch, spanning precision collider theory, quantum materials and astrophysical measurements. The clearest common thread is better-calibrated inference and simulation, rather than one shared discovery. Below: the ranked picks, recurring themes, then open questions and follow-ups. arXiv has no official trending chart; this is an inferred editorial ranking, and the newest papers have little citation history, so it is not a popularity or readership ranking.
+
+Snapshot: 2026-10-03 00:21:56 UTC. The latest available batch is the arXiv batch dated 2026-10-01; the selected Atom entries span 2026-09-30 18:00:00 through 2026-10-01 17:59:59 UTC. This uses the prior batch because no later batch appeared in the checked archive at snapshot time.
 
 ## Top papers (ranked)
 
-### 1. [Quantization through Dissipation and the Optical Quantum Hall Effect](https://arxiv.org/abs/2609.40337)
-- **Abstract:** The authors combine terahertz Faraday-rotation measurements and numerical analysis to argue that a low-frequency dissipative contribution from impurity states is needed to recover quantized Hall response from the finite-frequency spectrum.[12]
-- **Authors:** Zhenisbek Tagay, Ahmed Abouelkomsan, Yugo Onishi, Adbhut Gupta, Loren Pfeiffer et al.
-- **arXiv:** `2609.40337v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `cond-mat.mes-hall`)
-- **Evidence for ranking:** A direct high-precision THz Faraday-rotation experiment is paired with numerical tests of the proposed mechanism; the paper gives a concrete bridge between optical-frequency response and DC Hall quantization.[12][20]
-- **Claimed result:** In two GaAs/AlGaAs two-dimensional electron-gas samples, the cyclotron-resonance spectrum alone does not reproduce quantized plateaus under a Kramers–Kronig transform; adding a faint, low-frequency impurity-state contribution does.[20]
-- **Evidence type:** Experimental and computational; THz Faraday rotation and DC transport on two GaAs/AlGaAs 2DEGs, supported by numerical analysis.[20]
-- **Caveat:** The measurements cover two samples and specific temperatures/disorder conditions; the proposed mechanism's generality beyond these 2DEGs remains to be tested.[20]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Condensed matter & materials; Instrumentation & detectors
+### 1. [Drell-Yan lepton pair production from low to high transverse momentum](https://arxiv.org/abs/2610.02169)
+- **Abstract:** The authors present particle-level Drell–Yan predictions combining N$^3$LO fixed-order accuracy, approximate N$^4$LL′ resummation at low-to-moderate transverse momentum, multi-jet precision, and lattice-QCD input for the Collins–Soper kernel.[1]
+- **Authors:** Benoît Assi, Enrico Bothmann, John Campbell, Christian Gütschow, Stefan Höche et al.[1]
+- **arXiv:** `2610.02169v1` (published 2026-10-01 17:56:04 UTC; categories: `hep-ph`, `hep-ex`, `hep-lat`)[1]
+- **Evidence for ranking:** Cross-listed across phenomenology, experiment, and lattice subfields; combines high-order QCD predictions with a continuum-limit lattice input, and the HTML paper says the event-weight program is publicly available.[1]
+- **Claimed result:** The authors construct strictly positive event weights that transfer high-precision theory predictions into particle-level simulations; the abstract specifies tree-level accuracy for Z+4–6 jets and approximate NLO electroweak accuracy at high transverse momentum.[1]
+- **Evidence type:** Theoretical; perturbative QCD calculation combined with continuum-limit lattice-QCD input and event-generator weighting.[1]
+- **Caveat:** The precision is regime-dependent, with approximate resummation/electroweak components and tree-level multi-jet accuracy; the paper also fits a non-perturbative width to LHC data.[1]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[1]
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods[1]
 
-### 2. [Topological Fermi-polaron Polaritons with Electrically Invertible Topology](https://arxiv.org/abs/2609.39791)
-- **Abstract:** The authors report a gate-controlled semiconductor–photonic-crystal platform in which Fermi-polaron interactions create topological polariton bands whose gap and topology can be electrically tuned and inverted.[13]
-- **Authors:** Xin Xie, Chenxi Liu, Yuze Liu, Lingxiao Zhou, Chulwon Lee et al.
-- **arXiv:** `2609.39791v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `physics.optics`, `cond-mat.mes-hall`, `cond-mat.other`)
-- **Evidence for ranking:** The abstract claims an experimental demonstration and the work is cross-listed across optics and two condensed-matter categories; full text reports a gap up to about 4 meV at 7 T and gate-driven topology inversion without reversing the magnetic field.[13][21]
-- **Claimed result:** In a gated MoSe2 monolayer coupled to a symmetry-engineered photonic crystal, the authors demonstrate electrically invertible topological gaps, Berry curvature and Chern number, with interaction-enhanced time-reversal-symmetry breaking.[13][21]
-- **Evidence type:** Experimental; gate-controlled MoSe2/photonic-crystal device with optical measurements of polariton bands.[21]
-- **Caveat:** This is a platform demonstration in a particular material/device architecture; robustness, scaling and useful chiral-edge transport in larger circuits remain open.[21]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Condensed matter & materials; Atomic, molecular & optical physics
+### 2. [Strongly coupled ultracompressed self-cavity plasmon polaritons at millikelvin temperatures](https://arxiv.org/abs/2610.00473)
+- **Abstract:** The authors demonstrate a superconducting self-cavity platform with electromagnetic-volume compression of order 10$^7$ and observe graphene cavity plasmon polaritons down to 0.04 THz at millikelvin temperatures.[2]
+- **Authors:** Luojia Zhang, Andrew T. Pierce, Xuepeng Wang, Simon Reinhardt, Kenji Watanabe et al.[2]
+- **arXiv:** `2610.00473v1` (published 2026-09-30 18:00:05 UTC; categories: `cond-mat.mes-hall`)[2]
+- **Evidence for ranking:** A concrete experimental platform and spectrometer are reported, with avoided crossings between measured plasmon-polariton and cavity modes; the full text identifies simultaneous transport/spectroscopy as a capability to pursue.[2]
+- **Claimed result:** The authors observe underdamped graphene cavity plasmon polaritons and avoided crossings in superconducting self-cavities, using a superconducting-circuit sub-THz spectrometer.[2]
+- **Evidence type:** Experimental; graphene/van der Waals heterostructures and millikelvin sub-THz spectroscopy.[2]
+- **Caveat:** This establishes the measurement platform and hybrid modes, not a cavity-induced change to a material phase; the authors leave correlated transport and cavity response for future work and note model discrepancies tied to coupler-property uncertainty.[2]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[2]
+- **Themes:** Condensed matter & materials; Instrumentation & detectors[2]
 
-### 3. [Is DESI Seeing Dynamical Dark Energy, or a Cosmic Glitch in Gravity?](https://arxiv.org/abs/2609.40176)
-- **Abstract:** Combining DESI DR2 baryon-acoustic-oscillation and CMB data, the authors find that a one-parameter model with weaker cosmological gravity fits at least as well as a two-parameter dynamical-dark-energy model.[14]
-- **Authors:** Robin Y. Wen, Lukas Tobias Hergt, Niayesh Afshordi, Douglas Scott
-- **arXiv:** `2609.40176v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `astro-ph.CO`)
-- **Evidence for ranking:** It reports a quantitative 3.3σ parameter preference and tests adding CMB lensing and supernova data; the full text identifies the combined Planck, ACT, SPT and DESI DR2 likelihood basis.[14][22]
-- **Claimed result:** The fitted ratio is `G_cosmo/G_N = 0.9920 ± 0.0025`; the authors say the one-parameter model predicts DESI distances when fit to CMB data alone, unlike their `w0wa`CDM comparison.[14]
-- **Evidence type:** Observational-data analysis and theoretical model comparison; Planck, ACT, SPT, DESI DR2, with additional CMB-lensing and supernova tests.[22]
-- **Caveat:** A 3.3σ preference within a specified model/data analysis is not a discovery of modified gravity; the conclusion remains conditional on the model, likelihoods and dataset treatment.[14][22]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Cosmology & gravitation
+### 3. [The star formation history of Orion is structured and episodic](https://arxiv.org/abs/2610.00481)
+- **Abstract:** Using an age map of 47 co-moving Orion groups, the authors find four star-formation peaks roughly 5 Myr apart, with only the two younger peaks robust to resampling and age-fitting changes.[3]
+- **Authors:** Alena Rottensteiner, João Alves, Stefan Meingast, Sebastian Hutschenreuter, Núria Miret-Roig et al.[3]
+- **arXiv:** `2610.00481v1` (published 2026-09-30 18:00:12 UTC; categories: `astro-ph.GA`, `astro-ph.SR`)[3]
+- **Evidence for ranking:** The paper combines a 47-group age map with explicit resampling and age-model checks; it reports that the two better-supported peaks contain about 59% of the stars and compares the pattern with Scorpius–Centaurus.[3]
+- **Claimed result:** The authors infer stronger star-formation episodes at 6.4 and 11.3 Myr ago and weaker features near 16.2 and 21.4 Myr, with an approximately 5 Myr spacing also seen in Sco-Cen.[3]
+- **Evidence type:** Observational; Gaia-based stellar-group census and age estimates, analyzed with statistical tests and resampling.[3]
+- **Caveat:** The two older peaks are not robust across resamples; absolute ages depend on isochrone and fitting choices at roughly the 1–3 Myr level, and the paper says the physical cause of the spacing remains unresolved.[3]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[3]
+- **Themes:** Astrophysics[3]
 
-### 4. [Improved Constraints on Cosmic Microwave Background Circular Polarization with CLASS](https://arxiv.org/abs/2609.40125)
-- **Abstract:** Using CLASS measurements at 90, 150 and 220 GHz alongside prior 40 GHz data, the team tightens CMB circular-polarization limits and reports the first limits on the temperature–circular-polarization spectrum.[15]
-- **Authors:** Thomas Essinger-Hileman, Caleigh Ryan, Yunyang Li, Matthew A. Petroff, John W. Appel et al.
-- **arXiv:** `2609.40125v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `astro-ph.CO`)
-- **Evidence for ranking:** The CLASS collaboration extends a multi-frequency measurement beyond its earlier 40 GHz-only result, improving the largest-scale upper limits by about fivefold and adding a new `TV` spectrum constraint.[15]
-- **Claimed result:** Both `VV` and `TV` spectra are consistent with zero; the paper gives 95% upper limits of `5.4×10^-3 μK_CMB^2` for `VV` at `10<ℓ<30` and `5.8×10^-1 μK_CMB^2` for `TV` at `30<ℓ<50`.[15]
-- **Evidence type:** Observational; CLASS 40, 90, 150 and 220 GHz data, combined with Planck temperature data for `TV`.[15]
-- **Caveat:** These are upper limits, not a detection; the analysis explicitly compares the atmospheric circular-polarization spectrum, so residual atmosphere and instrumental systematics remain relevant.[15]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Cosmology & gravitation; Instrumentation & detectors
+### 4. [Inferring radio beams from sparse sampling patterns: a case study with the Murchison Widefield Array](https://arxiv.org/abs/2610.00466)
+- **Abstract:** Reprocessed satellite measurements and two Bayesian models yield repeatable 137-MHz zenith-beam reconstructions for the Murchison Widefield Array, including departures from nominal simulations.[4]
+- **Authors:** Michael J. Wilensky, Aman Chokshi[4]
+- **arXiv:** `2610.00466v1` (published 2026-09-30 18:00:02 UTC; categories: `astro-ph.IM`, `astro-ph.CO`)[4]
+- **Evidence for ranking:** The authors compare a dipole-variation model with a hierarchical spline model and report consistent null/sidelobe morphology in four separate 20-day subsets; the work addresses calibration errors relevant to 21-cm cosmology.[4]
+- **Claimed result:** The reconstructed beams show shallower, displaced nulls and coherent sidelobe deformations relative to nominal electromagnetic simulations; the authors find satellite transmissions can support repeatable beam reconstruction.[4]
+- **Evidence type:** Observational; reprocessed satellite observations, analyzed with Bayesian beam models.[4]
+- **Caveat:** The demonstrated result is a 137-MHz zenith-pointed power beam; the authors identify chromatic and phase-referenced measurements of the full Jones response as follow-up work.[4]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[4]
+- **Themes:** Astrophysics; Instrumentation & detectors; Cosmology & gravitation[4]
 
-### 5. [Probing the Reionization History and Bubble Sizes with JWST Lyman-α Fraction Measurements](https://arxiv.org/abs/2609.40363)
-- **Abstract:** The authors compare JWST Lyman-α emitter fractions at redshifts roughly 6–14 with THESAN simulations and semi-analytic transmission models to constrain reionization and ionized-bubble sizes.[16]
-- **Authors:** Aritra Kundu, Adam Lidz, Guochao Sun
-- **arXiv:** `2609.40363v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `astro-ph.GA`, `astro-ph.CO`)
-- **Evidence for ranking:** It combines current JWST observations with two complementary modeling frameworks, and provides redshift-dependent neutral-hydrogen estimates; it is cross-listed in galaxy astrophysics and cosmology.[16]
-- **Claimed result:** The authors report good fit to current JWST fractions and infer mass-weighted neutral fractions at `z≈7, 8, 11`; depending on the Lyman-α equivalent-width threshold, central estimates range from 0.38/0.52 at `z≈7` to 0.93/0.89 at `z≈11`.[16]
-- **Evidence type:** Observational-data interpretation plus computational modeling; JWST Lyman-α fractions compared with THESAN and semi-analytic transmission calculations.[16]
-- **Caveat:** Inferences are model-dependent and calibrated using empirical intrinsic Lyman-α equivalent-width distributions near `z≈6`; the reported 1σ intervals are broad and asymmetric, especially at lower redshift.[16]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Astrophysics; Cosmology & gravitation
+### 5. [How eccentric is the debris disk of epsilon Eridani? ALMA reveals a near-circular belt](https://arxiv.org/abs/2610.00462)
+- **Abstract:** A reanalysis of ALMA Band 6 data places tight limits on the eccentricity of ε Eridani’s debris belt and reports tentative evidence for a small forced eccentricity, while combining the disk fit with Spitzer and JWST data to constrain additional planets.[5]
+- **Authors:** Oto Ulrich, Joshua B. Lovell, David J. Wilner, Antranik A. Sefilian, Mark Booth[5]
+- **arXiv:** `2610.00462v1` (published 2026-09-30 18:00:01 UTC; categories: `astro-ph.EP`, `astro-ph.SR`)[5]
+- **Evidence for ranking:** The arXiv record says accepted for publication in ApJ; the study reports 99.7th-percentile eccentricity limits and combines ALMA with Spitzer and JWST constraints.[5]
+- **Claimed result:** The authors give upper limits of 2.6% for forced eccentricity and 6.8% for proper eccentricity, alongside a tentative 1.62% forced eccentricity estimate; their combined analysis constrains possible outer planets over roughly 6–60 au.[5]
+- **Evidence type:** Observational; ALMA 1.29-mm imaging plus Spitzer/IRAC and JWST/NIRCam and MIRI data, interpreted with disk models.[5]
+- **Caveat:** The nonzero forced eccentricity is explicitly tentative and model-dependent; the limits constrain the disk and allowed architectures rather than detecting an additional planet.[5]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[5]
+- **Themes:** Astrophysics[5]
 
-### 6. [When Streams Curve Away: a Test of Dark Matter from Extragalactic Stellar Stream Populations](https://arxiv.org/abs/2609.40057)
-- **Abstract:** The authors propose a geometry-only diagnostic of projected stellar streams that could statistically distinguish halo-shape populations expected under collisionless cold dark matter and self-interacting dark matter.[17]
-- **Authors:** Nathaniel Starkman, Jacob Nibauer, Sarah Pearson, Sirui Wu, Lina Necib
-- **arXiv:** `2609.40057v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `astro-ph.GA`, `astro-ph.CO`)
-- **Evidence for ranking:** The paper offers an observable requiring only projected stream tracks and host centers, and cross-lists its proposed dark-matter test between galaxy astrophysics and cosmology.[17]
-- **Claimed result:** The authors forecast that survey-scale catalogs of stream morphology could separate CDM and SIDM predictions at up to 5σ using the rate of segments whose curvature points away from the host center.[17]
-- **Evidence type:** Theoretical and computational forecast; geometric diagnostic and projected stellar-stream populations.[17]
-- **Caveat:** The 5σ figure is a forecast, not a present measurement; it depends on future survey-scale samples and on controlling projection, selection and halo-model effects.[17]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Astrophysics; Cosmology & gravitation; Computational & data methods
+### 6. [Polynomial-time classical and quantum simulation of quantum impurity models](https://arxiv.org/abs/2610.02167)
+- **Abstract:** The authors prove polynomial-time classical algorithms for static impurity-model properties while showing that dynamical quantities can encode problems as hard as general quantum computation.[6]
+- **Authors:** Jiaqing Jiang, Nathan Ju, Ojas Parekh, Chaithanya Rayudu, Andrew Zhao[6]
+- **arXiv:** `2610.02167v1` (published 2026-10-01 17:55:25 UTC; categories: `quant-ph`, `cond-mat.str-el`, `cs.CC`, `cs.DS`, `physics.chem-ph`)[6]
+- **Evidence for ranking:** The work bridges quantum information, correlated matter, chemistry, and computational complexity; it sharpens the static-versus-dynamical boundary with stated polynomial guarantees.[6]
+- **Claimed result:** For the model class studied, the authors give polynomial-time classical estimates of ground-state energy and thermal partition functions, but show nonequilibrium Green’s functions can capture the full power of quantum computation.[6]
+- **Evidence type:** Theoretical; rigorous computational-complexity analysis and algorithm construction.[6]
+- **Caveat:** These are complexity guarantees for a defined impurity-model setting, not a benchmark of practical runtimes or evidence of an experimental quantum advantage.[6]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[6]
+- **Themes:** Quantum information; Condensed matter & materials; Computational & data methods[6]
 
-### 7. [Interpreting the High-Recoil LUX-ZEPLIN Event with Bino-/Singlino-like and Higgsino Dark Matter](https://arxiv.org/abs/2609.40234)
-- **Abstract:** The authors examine two supersymmetric dark-matter explanations for a reported LZ nuclear-recoil candidate near 248 keV and derive distinct recoil-spectrum expectations.[18]
-- **Authors:** Subhojit Roy, Pedro Schwaller, Carlos E. M. Wagner
-- **arXiv:** `2609.40234v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `hep-ph`, `astro-ph.CO`, `hep-ex`)
-- **Evidence for ranking:** It is cross-listed across phenomenology, cosmology and experiment and makes the competing model interpretations testable through their predicted recoil spectra.[18]
-- **Claimed result:** The paper presents elastic bino/singlino-like and inelastic Higgsino scenarios for the candidate; its example NMSSM benchmark lies below current LZ limits.[18]
-- **Evidence type:** Theoretical phenomenology; model calculations for supersymmetric neutralinos, relic abundance and direct-detection recoil spectra.[18]
-- **Caveat:** This is a model interpretation of a single candidate event, not evidence that dark matter has been detected; the authors note strong constraints on the minimal thermal inelastic realization from solar-neutrino searches.[18]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Particle, nuclear & high-energy physics; Cosmology & gravitation
+### 7. [Hyperbolic lattices with mass disorder: Phases and phase transitions](https://arxiv.org/abs/2610.02192)
+- **Abstract:** Numerical tight-binding calculations find distinct disorder-driven transitions in three hyperbolic-lattice models, including a Dirac-liquid semimetal-to-metal transition followed by an Anderson transition.[7]
+- **Authors:** Sheersh Sen, Christopher A. Leong, Bitan Roy[7]
+- **arXiv:** `2610.02192v1` (published 2026-10-01 17:59:37 UTC; categories: `cond-mat.dis-nn`, `cond-mat.mes-hall`, `cond-mat.stat-mech`)[7]
+- **Evidence for ranking:** It is cross-listed across three condensed-matter categories and compares three lattice geometries using average and typical density-of-states calculations with the kernel polynomial method.[7]
+- **Claimed result:** The authors report that weak mass disorder leaves the hyperbolic Dirac liquid stable, with a semimetal-to-metal transition at moderate disorder and a metal-to-insulator transition at stronger disorder; the other two models show only the latter transition.[7]
+- **Evidence type:** Computational; numerical tight-binding models on hyperbolic lattices using the kernel polynomial method.[7]
+- **Caveat:** The conclusions are for idealized nearest-neighbor models with open boundaries; the abstract does not establish these phases in a specific material.[7]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[7]
+- **Themes:** Condensed matter & materials; Computational & data methods[7]
 
-### 8. [All Unitaries Have Constant Depth Quantum Circuits](https://arxiv.org/abs/2609.40351)
-- **Abstract:** The authors show that any n-qubit unitary can be approximated in polynomial circuit depth using exponentially many ancillas, or in constant depth when unbounded-fan-out gates are allowed.[19]
-- **Authors:** Barak Nehoran, Henry Yuen
-- **arXiv:** `2609.40351v1` (published: UTC clock time not exposed; submitted 2026-09-30, announced 2026-10-01; categories: `quant-ph`)
-- **Evidence for ranking:** The paper states a sharp theoretical result on parallelizing general unitary synthesis and connects the construction to locally decodable codes and private information retrieval.[19]
-- **Claimed result:** For error ε, the authors give one- and two-qubit circuits of depth `poly(n, log(1/ε))` using `2^O(n)` ancillas; unbounded fan-out reduces the depth further to constant.[19]
-- **Evidence type:** Theoretical; circuit-complexity construction and proof.[19]
-- **Caveat:** The depth reduction trades against exponential ancilla count, and the constant-depth version assumes an unbounded-fan-out gate model; this is not a practical near-term circuit claim.[19]
-- **Announcement type:** New submission, 1 Oct 2026 announcement batch.
-- **Themes:** Quantum information; Computational & data methods
+### 8. [Leading gravitational dressing of operators and states in de Sitter space](https://arxiv.org/abs/2610.02209)
+- **Abstract:** At leading nontrivial order in Newton’s constant, the authors construct gravitationally dressed, de Sitter-invariant observables on a time-symmetric slice and test a two-scalar example against linearized Schwarzschild–de Sitter behavior.[8]
+- **Authors:** Steven B. Giddings, Zi-Yue Wang[8]
+- **arXiv:** `2610.02209v1` (published 2026-10-01 17:59:58 UTC; categories: `hep-th`)[8]
+- **Evidence for ranking:** The paper supplies an explicit Green-function construction and an example with a correlator check against a linearized gravitational solution, rather than only proposing a formal framework.[8]
+- **Claimed result:** The authors show dressability requires the underlying field-theory observable to be de Sitter invariant and explicitly construct the dressing for a two-particle scalar state in the large-mass limit.[8]
+- **Evidence type:** Theoretical; perturbative construction and correlator analysis in de Sitter space.[8]
+- **Caveat:** The construction is only to leading nontrivial order in Newton’s constant and is conditional on de Sitter-invariant observables; the authors leave questions about a more complete construction open.[8]
+- **Announcement type:** new submission, 2026-10-01 announcement batch[8]
+- **Themes:** Cosmology & gravitation[8]
 
 ## Trending Research Themes
 
-- **Optical and topological response:** Two distinct platforms probe ways topology appears in optical response: impurity-state dissipation in a quantum Hall electron gas and electrically tunable Chern polaritons in a semiconductor–photonic crystal.[12][13][20]
-- **Cosmological inference from complementary probes:** DESI/CMB fits, JWST Lyman-α transmission and projected stellar-stream morphologies use different observables to constrain gravity, reionization and dark-matter halo structure; these are complementary methods, not independent confirmations of one signal.[14][16][17]
-- **Limits rather than detections:** CLASS tightens polarization upper limits, while the LZ paper explores explanations of one candidate recoil; neither establishes a new signal.[15][18]
-- **Resource trade-offs in quantum physics:** The unitary-synthesis result reduces depth by spending exponentially many ancillas, making hardware resources—not depth alone—the key follow-up question.[19]
+- **More reliable inference from imperfect observations.** Orion’s Gaia-based age reconstruction tests whether star-formation peaks survive resampling and age-model changes; the MWA study uses Bayesian beam inference to correct sparse satellite sampling; the ε Eridani analysis combines ALMA imaging with infrared constraints.[3][4][5] These are related methodological moves, not independent confirmations of one physical result.
+- **Bridging calculations to usable simulation or measurement.** The Drell–Yan work converts high-order theory into positive event weights and reports public software, while the impurity-model paper separates classical tractability of equilibrium properties from quantum-hard dynamics.[1][6]
+- **New access to coupled light–matter response.** The millikelvin graphene/superconducting-cavity experiment demonstrates ultracompressed sub-THz polariton spectroscopy; connecting it to transport and material phases remains a next step.[2]
+- **Isolated theory signals.** The hyperbolic-lattice disorder phase diagram and the de Sitter dressing construction are technically distinct single-paper contributions in this batch, not evidence of a broader surge by themselves.[7][8]
 
 ## Open Problems and Research Directions
 
-- **Optical Hall mechanism — open problem:** Can the low-frequency impurity-state contribution be isolated and measured across a wider range of disorder, temperatures and materials? **Direction (synthesis):** repeat THz/DC comparisons across systematically varied 2DEG samples and quantify the uncertainty of the Kramers–Kronig reconstruction.[20]
-- **Topological polaritons — open problem:** Does electrically inverted topology yield robust, controllable edge transport beyond the demonstrated device? **Direction (synthesis):** map edge-mode propagation, losses and switching repeatability across gate voltage and magnetic field, then test device-to-device reproducibility.[21]
-- **DESI gravity interpretation — open problem:** Is the inferred parameter preference stable under alternative likelihood choices, model extensions and independent low-redshift probes? **Direction (synthesis):** compare blinded or independently implemented analyses of DESI DR2, CMB lensing and supernova data against both gravity-glitch and evolving-dark-energy models.[14][22]
-- **Reionization — open problem:** How much do intrinsic Lyman-α equivalent-width assumptions drive the neutral-fraction bounds? **Direction (synthesis):** obtain larger JWST samples and improve direct constraints on intrinsic line distributions at redshifts above six.[16]
-- **Stellar-stream dark-matter test — open problem:** Can survey samples control projection and selection biases well enough for the forecast discrimination? **Direction (synthesis):** validate the convex-segment statistic on mock catalogs with realistic stream detection, host-center errors and halo populations before applying it to complete surveys.[17]
-- **LZ candidate — open problem:** Does the candidate's recoil spectrum persist in follow-up data, and can the proposed scenarios be separated? **Direction (synthesis):** publish event-level likelihoods and compare future recoil spectra with the distinct elastic/inelastic predictions and solar-neutrino constraints.[18]
-- **Quantum circuit synthesis — open problem:** What depth–ancilla trade-offs remain possible under realistic gate sets and bounded-fan-out hardware? **Direction (synthesis):** seek constructions with fewer ancillas and lower-bound results that make resource costs explicit.[19]
+- **Cavity back-action:** The experiment’s mode model has discrepancies associated with uncertain coupler properties, and the authors leave simultaneous transport/spectroscopy for future work. A follow-up could improve coupler characterization and test for cavity-induced changes in electronic response in the same device.[2]
+- **Orion’s older peaks and clock:** Only the two younger peaks are robust; the authors report 1–3 Myr age-model sensitivity and say the approximately 5 Myr spacing needs further study. Better ages for embedded young stars and an independent comparison across other star-forming complexes could test whether the spacing is physical.[3]
+- **Radio-beam chromaticity:** The MWA result covers a 137-MHz zenith power beam, while the authors call for chromatic and phase-referenced full-Jones measurements. Extending the satellite-based approach across frequency and beam direction would test its utility for precision 21-cm analyses.[4]
+- **ε Eridani’s architecture:** The forced eccentricity is tentative and the planet constraints are inferred jointly with disk models. Deeper imaging or additional astrometry could test whether an outer planet is needed to explain the belt’s structure.[5]
+- **Precision Drell–Yan inputs:** The event-weight approach depends partly on fitted non-perturbative modeling. More precise lattice constraints and comparisons to differential LHC measurements could test how robust the gains remain across kinematic regimes.[1]
+- **Impurity-model dynamics:** The paper’s results identify dynamical observables as the hard boundary for classical simulation. A concrete next step is to quantify resource requirements for representative nonequilibrium Green’s-function calculations and compare classical approximations with quantum algorithms.[6]
 
 ## Takeaway
 
-The strongest immediate experimental stories are in optical/quantum matter: one paper argues that impurity-state dissipation completes the optical account of Hall quantization, while another reports gate-switchable topological polaritons. Cosmology papers extract meaningful constraints and forecasts from DESI, JWST, CMB and stellar-stream data, but the dark-energy preference is not a discovery, stream discrimination is prospective, and the LZ interpretation remains conditional on a single candidate.
+The strongest batch signals are methodological: improved precision and calibration across collider theory, low-temperature spectroscopy, and astronomical inference. Several findings are promising but bounded by model dependence, limited measurement regimes, or incomplete age/systematic control; the batch does not support claims of an emerging single discovery.
 
 ## Method and sources
 
-Daily window: the latest arXiv announcement batch dated 1 Oct 2026; submissions shown on the selected abstract pages were dated 30 Sep 2026. Snapshot: 2026-10-02 00:17:55 UTC. All 11 configured physics-group archives were checked. The latest batch header appeared in physics, astro-ph and cond-mat [1][2][3]. It also appeared in gr-qc, hep-ex and hep-lat [4][5][6]. Hep-ph, hep-th and nucl-ex show it as well [7][8][9]. Nucl-th and quant-ph likewise show the Oct 1 batch [10][11]. Cross-lists were treated as one work. Abstract pages were checked for all eight selections; HTML full text was checked for the first three. The source pages expose submission dates but not UTC clock times. Selection and ordering are inferred from directness of evidence, quantitative claims, cross-subfield relevance and stated tests/resources; this is not a popularity metric, and no citation totals are used.
+- **Window:** daily, latest batch dated 2026-10-01; submitted-record timestamps span 2026-09-30 18:00:00–2026-10-01 17:59:59 UTC. Snapshot: 2026-10-03 00:21:56 UTC. This is the previous batch at snapshot time.
+- **Coverage:** one grouped arXiv API query checked the configured physics archives `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. It returned 481 unique eligible batch papers; cross-lists were deduplicated. `quant-ph` was the largest primary-category group (134 records).
+- **Selection and ranking:** the ranking is inferred, not supplied by arXiv. Since these papers are newly announced, citation momentum is not a useful discriminator: Semantic Scholar returned an indexed record for only one selected paper, with zero citations. Selection instead weighs concrete results, cross-listing, methods/data artifacts, and publication-status comments where present; recency breaks ties. The ordering is not a claim about readership.
+- **Reading and retrieval:** every selected paper’s version, publication timestamp, categories, authors, and abstract were checked against the arXiv Atom API and abstract record. The top three were additionally inspected in arXiv HTML for methods/results/caveats. The configured `web_extract` backend was search-only and could not extract pages, so direct arXiv API and HTML retrieval were used instead. The arXiv record marks the ε Eridani paper accepted for ApJ and Orion as submitted to A&A Letters; neither statement is treated as peer-review consensus beyond the record.
+- **Sources:** arXiv abstract pages linked in each entry; Semantic Scholar Graph API queried for citation metadata. Citation totals, where available, are current counts, not gains during this window.
 
 ## Sources
 
-[1] https://arxiv.org/list/physics/recent?show=2000
-[2] https://arxiv.org/list/astro-ph/recent?show=2000
-[3] https://arxiv.org/list/cond-mat/recent?show=2000
-[4] https://arxiv.org/list/gr-qc/recent?show=2000
-[5] https://arxiv.org/list/hep-ex/recent?show=2000
-[6] https://arxiv.org/list/hep-lat/recent?show=2000
-[7] https://arxiv.org/list/hep-ph/recent?show=2000
-[8] https://arxiv.org/list/hep-th/recent?show=2000
-[9] https://arxiv.org/list/nucl-ex/recent?show=2000
-[10] https://arxiv.org/list/nucl-th/recent?show=2000
-[11] https://arxiv.org/list/quant-ph/recent?show=2000
-[12] https://arxiv.org/abs/2609.40337
-[13] https://arxiv.org/abs/2609.39791
-[14] https://arxiv.org/abs/2609.40176
-[15] https://arxiv.org/abs/2609.40125
-[16] https://arxiv.org/abs/2609.40363
-[17] https://arxiv.org/abs/2609.40057
-[18] https://arxiv.org/abs/2609.40234
-[19] https://arxiv.org/abs/2609.40351
-[20] https://arxiv.org/html/2609.40337
-[21] https://arxiv.org/html/2609.39791
-[22] https://arxiv.org/html/2609.40176
+[1] https://arxiv.org/abs/2610.02169
+[2] https://arxiv.org/abs/2610.00473
+[3] https://arxiv.org/abs/2610.00481
+[4] https://arxiv.org/abs/2610.00466
+[5] https://arxiv.org/abs/2610.00462
+[6] https://arxiv.org/abs/2610.02167
+[7] https://arxiv.org/abs/2610.02192
+[8] https://arxiv.org/abs/2610.02209

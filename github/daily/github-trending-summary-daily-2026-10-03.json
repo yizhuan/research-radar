@@ -1,0 +1,482 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-03",
+  "snapshot_time_utc": "2026-10-03 00:24 UTC",
+  "title": "GitHub Trending Summary - Daily - 2026-10-03",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-03.md",
+  "entry_count": 15,
+  "entry_noun": "repositories",
+  "ranking_basis": "GitHub Trending daily star gains",
+  "ranking_explanation": "Repositories from the live GitHub Trending daily view were ordered by the displayed stars-today figures; 15 highest-gain entries are included.",
+  "global_caveat": "A daily stars-gained figure is a transient platform signal, not independent evidence of software quality, adoption, or durability. Read README claims, including claimed benchmarks, as project-authored unless independently reproduced.",
+  "themes": [
+    {
+      "id": "agent-skills",
+      "title": "Agent skills and workflow packaging",
+      "supporting_repo_ids": [
+        "01-DietrichGebert-ponytail",
+        "02-mattpocock-skills",
+        "03-pbakaus-impeccable",
+        "09-obra-superpowers",
+        "12-cursor-plugins",
+        "13-coreyhaines31-marketingskills"
+      ],
+      "content": "Skills are the dominant pattern: projects package repeatable engineering, design, and marketing workflows as agent-native commands or plugins. Ponytail, mattpocock/skills, Impeccable, Superpowers, Cursor plugins, and marketingskills anchor the theme."
+    },
+    {
+      "id": "agent-infrastructure",
+      "title": "Agent infrastructure: connectivity, runtime, orchestration",
+      "supporting_repo_ids": [
+        "04-Panniantong-Agent-Reach",
+        "05-mvschwarz-openrig",
+        "07-NVIDIA-OpenShell"
+      ],
+      "content": "The stack is broadening from prompts to systems: Agent Reach connects agents to web sources, OpenRig coordinates persistent teams across harnesses, and NVIDIA OpenShell positions a private runtime for autonomous agents."
+    },
+    {
+      "id": "agent-context",
+      "title": "Context efficiency and repository memory",
+      "supporting_repo_ids": [
+        "10-mksglu-context-mode",
+        "11-JuliusBrussee-caveman",
+        "14-colbymchenry-codegraph"
+      ],
+      "content": "Context management is a distinct optimization layer: Context Mode routes and sandboxes tools, Caveman compresses agent-facing language, and CodeGraph pre-indexes local code structure."
+    },
+    {
+      "id": "agent-media",
+      "title": "Agent-directed media production",
+      "supporting_repo_ids": [
+        "08-heygen-com-hyperframes",
+        "06-pablostanley-yoinks"
+      ],
+      "content": "Video creation appears in two forms: HyperFrames targets agent-authored HTML-to-video workflows, while Yoinks offers a terminal-first video utility."
+    },
+    {
+      "id": "developer-tools",
+      "title": "General developer tooling remains present",
+      "supporting_repo_ids": [
+        "06-pablostanley-yoinks",
+        "15-Effect-TS-effect"
+      ],
+      "content": "The list is not exclusively agent infrastructure: Yoinks and Effect-TS represent practical CLI and application-library work."
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent tooling dominates today's list, but the emphasis is shifting from prompt tricks alone toward packaged skills, safer runtimes, persistent multi-agent teams, external-data access, and context management. Ponytail leads the displayed entries in daily star gain."
+    },
+    {
+      "id": "01-DietrichGebert-ponytail",
+      "kind": "repo",
+      "title": "DietrichGebert/ponytail",
+      "rank": 1,
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "content": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. Why notable: Leads today's listed repos by star gain; it turns restraint into an agent skill that favors native, smaller implementations over unnecessary dependencies.",
+      "language": "JavaScript",
+      "stars_gained": 1435,
+      "total_stars": 151787,
+      "default_branch_commit": "dd12b12e738ebc0e1fbbf31c4b26dddbf3ce67fb",
+      "why_notable": "Leads today's listed repos by star gain; it turns restraint into an agent skill that favors native, smaller implementations over unnecessary dependencies.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Ponytail",
+      "unique_caveat": "Its README's stronger benchmark claims are specific to 12 feature tasks on one FastAPI/React template with Haiku 4.5; treat them as task-bound, not universal.",
+      "enrichment": null,
+      "refs": [
+        "DietrichGebert/ponytail"
+      ]
+    },
+    {
+      "id": "02-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 2,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "content": "Skills for Real Engineers. Straight from my .agents directory. Why notable: Second-highest daily gain; its README emphasizes small, composable skills that users can adapt rather than adopting a process-heavy framework wholesale.",
+      "language": "Shell",
+      "stars_gained": 955,
+      "total_stars": 274700,
+      "default_branch_commit": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+      "why_notable": "Second-highest daily gain; its README emphasizes small, composable skills that users can adapt rather than adopting a process-heavy framework wholesale.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Matt Pocock's Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "03-pbakaus-impeccable",
+      "kind": "repo",
+      "title": "pbakaus/impeccable",
+      "rank": 3,
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "content": "The design language that makes your AI harness better at design. Why notable: A design-focused agent workflow ranks third by daily gains; it combines 24 design commands with deterministic frontend checks and browser iteration.",
+      "language": "JavaScript",
+      "stars_gained": 722,
+      "total_stars": 74317,
+      "default_branch_commit": "508d7e8955de3b3caf2d8676e85206723d41a887",
+      "why_notable": "A design-focused agent workflow ranks third by daily gains; it combines 24 design commands with deterministic frontend checks and browser iteration.",
+      "theme_ids": [
+        "agent-skills",
+        "frontend-design"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Impeccable",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "pbakaus/impeccable"
+      ]
+    },
+    {
+      "id": "04-Panniantong-Agent-Reach",
+      "kind": "repo",
+      "title": "Panniantong/Agent-Reach",
+      "rank": 4,
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "content": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. Why notable: Its broad adapter pitch and fourth-place star gain make agent access to real-world web/social sources one of today's standout signals.",
+      "language": "Python",
+      "stars_gained": 696,
+      "total_stars": 88611,
+      "default_branch_commit": "a19a171fa980a0785849596492e0af4db800c82f",
+      "why_notable": "Its broad adapter pitch and fourth-place star gain make agent access to real-world web/social sources one of today's standout signals.",
+      "theme_ids": [
+        "agent-infrastructure",
+        "agent-connectivity"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Agent Reach",
+      "unique_caveat": "Its README distinguishes zero-configuration sources from services needing user-side accounts, cookies, or setup; don't interpret every listed source as universally plug-and-play.",
+      "enrichment": null,
+      "refs": [
+        "Panniantong/Agent-Reach"
+      ]
+    },
+    {
+      "id": "05-mvschwarz-openrig",
+      "kind": "repo",
+      "title": "mvschwarz/openrig",
+      "rank": 5,
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+      "content": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work. Why notable: A smaller but fast-rising project proposes persistent multi-agent teams, shared context, and role-based work across coding harnesses.",
+      "language": "TypeScript",
+      "stars_gained": 683,
+      "total_stars": 4302,
+      "default_branch_commit": "073b93a92d4b6f6ae6b559254cee1650f36b77bc",
+      "why_notable": "A smaller but fast-rising project proposes persistent multi-agent teams, shared context, and role-based work across coding harnesses.",
+      "theme_ids": [
+        "agent-infrastructure",
+        "agent-orchestration"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "OpenRig",
+      "unique_caveat": "Its README says native Windows is unsupported and WSL2 is untested; it also documents setup changes to provider hooks and trust settings.",
+      "enrichment": null,
+      "refs": [
+        "mvschwarz/openrig"
+      ]
+    },
+    {
+      "id": "06-pablostanley-yoinks",
+      "kind": "repo",
+      "title": "pablostanley/yoinks",
+      "rank": 6,
+      "url": "https://github.com/pablostanley/yoinks",
+      "description": "yoink any video from your terminal. no shady ads.",
+      "content": "yoink any video from your terminal. no shady ads. Why notable: A compact terminal video utility is a useful non-agent counterpoint among today's AI-heavy leaders, with more than 600 daily stars.",
+      "language": "TypeScript",
+      "stars_gained": 623,
+      "total_stars": 3497,
+      "default_branch_commit": "6f03720813c22f907d3fb9ba98567f2169446b82",
+      "why_notable": "A compact terminal video utility is a useful non-agent counterpoint among today's AI-heavy leaders, with more than 600 daily stars.",
+      "theme_ids": [
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 6,
+      "spoken_name": "Yoinks",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "pablostanley/yoinks"
+      ]
+    },
+    {
+      "id": "07-NVIDIA-OpenShell",
+      "kind": "repo",
+      "title": "NVIDIA/OpenShell",
+      "rank": 7,
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "content": "OpenShell is the safe, private runtime for autonomous AI agents. Why notable: NVIDIA's Rust project signals interest in a controlled, privacy-oriented runtime layer for autonomous agents.",
+      "language": "Rust",
+      "stars_gained": 594,
+      "total_stars": 14427,
+      "default_branch_commit": "48d9ab3d0d9a343365dea1b0cd87565050ac658e",
+      "why_notable": "NVIDIA's Rust project signals interest in a controlled, privacy-oriented runtime layer for autonomous agents.",
+      "theme_ids": [
+        "agent-infrastructure",
+        "agent-runtime-security"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "NVIDIA OpenShell",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "NVIDIA/OpenShell"
+      ]
+    },
+    {
+      "id": "08-heygen-com-hyperframes",
+      "kind": "repo",
+      "title": "heygen-com/hyperframes",
+      "rank": 8,
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "content": "Write HTML. Render video. Built for agents. Why notable: It brings agent-friendly authoring into video production by using HTML as the composition surface.",
+      "language": "TypeScript",
+      "stars_gained": 580,
+      "total_stars": 55895,
+      "default_branch_commit": "01c6f6004a00ecfa6e77ab4025b47a46a5e925fc",
+      "why_notable": "It brings agent-friendly authoring into video production by using HTML as the composition surface.",
+      "theme_ids": [
+        "agent-media"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "HyperFrames",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "heygen-com/hyperframes"
+      ]
+    },
+    {
+      "id": "09-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 9,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "content": "An agentic skills framework & software development methodology that works. Why notable: Despite its large installed attention, it still draws over 500 stars today, reinforcing demand for packaged agent skills and development process.",
+      "language": "Shell",
+      "stars_gained": 556,
+      "total_stars": 294456,
+      "default_branch_commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "why_notable": "Despite its large installed attention, it still draws over 500 stars today, reinforcing demand for packaged agent skills and development process.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "Superpowers",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "10-mksglu-context-mode",
+      "kind": "repo",
+      "title": "mksglu/context-mode",
+      "rank": 10,
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "content": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. Why notable: It targets a concrete coding-agent bottleneck—context consumption—using sandboxed tool output, memory, and MCP/hooks routing.",
+      "language": "TypeScript",
+      "stars_gained": 282,
+      "total_stars": 25030,
+      "default_branch_commit": "9f3ecc8b0aafd25d3592ffc31e4b02b1767f6089",
+      "why_notable": "It targets a concrete coding-agent bottleneck—context consumption—using sandboxed tool output, memory, and MCP/hooks routing.",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Context Mode",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mksglu/context-mode"
+      ]
+    },
+    {
+      "id": "11-JuliusBrussee-caveman",
+      "kind": "repo",
+      "title": "JuliusBrussee/caveman",
+      "rank": 11,
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "content": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. Why notable: A deliberately terse prompting/proxy approach connects token efficiency with the wider agent-skills wave.",
+      "language": "Go",
+      "stars_gained": 209,
+      "total_stars": 109095,
+      "default_branch_commit": "b39c90862855ad2f0813ce775b8bf07a9d6d2a50",
+      "why_notable": "A deliberately terse prompting/proxy approach connects token efficiency with the wider agent-skills wave.",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "Caveman",
+      "unique_caveat": "The advertised 65% token reduction is the project's claim, not independently reproduced here.",
+      "enrichment": null,
+      "refs": [
+        "JuliusBrussee/caveman"
+      ]
+    },
+    {
+      "id": "12-cursor-plugins",
+      "kind": "repo",
+      "title": "cursor/plugins",
+      "rank": 12,
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "content": "Cursor plugin specification and official plugins Why notable: A vendor-maintained plugin catalog points to ecosystem packaging and extension surfaces becoming a product-level priority for coding agents.",
+      "language": "TypeScript",
+      "stars_gained": 163,
+      "total_stars": 9499,
+      "default_branch_commit": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+      "why_notable": "A vendor-maintained plugin catalog points to ecosystem packaging and extension surfaces becoming a product-level priority for coding agents.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "Cursor Plugins",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "cursor/plugins"
+      ]
+    },
+    {
+      "id": "13-coreyhaines31-marketingskills",
+      "kind": "repo",
+      "title": "coreyhaines31/marketingskills",
+      "rank": 13,
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "content": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering. Why notable: It extends the agent-skill format beyond software engineering into marketing work such as CRO, SEO, and analytics.",
+      "language": "JavaScript",
+      "stars_gained": 140,
+      "total_stars": 52411,
+      "default_branch_commit": "7350b6994610e7a4790c86325757c02454741d26",
+      "why_notable": "It extends the agent-skill format beyond software engineering into marketing work such as CRO, SEO, and analytics.",
+      "theme_ids": [
+        "agent-skills",
+        "domain-specific-agents"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 13,
+      "spoken_name": "Marketing Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "coreyhaines31/marketingskills"
+      ]
+    },
+    {
+      "id": "14-colbymchenry-codegraph",
+      "kind": "repo",
+      "title": "colbymchenry/codegraph",
+      "rank": 14,
+      "url": "https://github.com/colbymchenry/codegraph",
+      "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "content": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local Why notable: A local code knowledge graph illustrates a parallel push to improve repository understanding while reducing repeated context transfer.",
+      "language": "C",
+      "stars_gained": 98,
+      "total_stars": 72957,
+      "default_branch_commit": "70fe0ecc52751c5a3f8a0912388411bd61e5de13",
+      "why_notable": "A local code knowledge graph illustrates a parallel push to improve repository understanding while reducing repeated context transfer.",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 14,
+      "spoken_name": "CodeGraph",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "colbymchenry/codegraph"
+      ]
+    },
+    {
+      "id": "15-Effect-TS-effect",
+      "kind": "repo",
+      "title": "Effect-TS/effect",
+      "rank": 15,
+      "url": "https://github.com/Effect-TS/effect",
+      "description": "Build production-ready applications in TypeScript",
+      "content": "Build production-ready applications in TypeScript Why notable: A mature TypeScript application library provides a conventional software-engineering counterpoint to the dominant agent tooling.",
+      "language": "TypeScript",
+      "stars_gained": 80,
+      "total_stars": 16545,
+      "default_branch_commit": "f79b23118bce44696c044bf7b1141ec55fece216",
+      "why_notable": "A mature TypeScript application library provides a conventional software-engineering counterpoint to the dominant agent tooling.",
+      "theme_ids": [
+        "developer-tools"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "brief",
+      "narration_priority": 15,
+      "spoken_name": "Effect",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "Effect-TS/effect"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agent skills and workflow packaging:** Skills are the dominant pattern: projects package repeatable engineering, design, and marketing workflows as agent-native commands or plugins. Ponytail, mattpocock/skills, Impeccable, Superpowers, Cursor plugins, and marketingskills anchor the theme.\n- **Agent infrastructure: connectivity, runtime, orchestration:** The stack is broadening from prompts to systems: Agent Reach connects agents to web sources, OpenRig coordinates persistent teams across harnesses, and NVIDIA OpenShell positions a private runtime for autonomous agents.\n- **Context efficiency and repository memory:** Context management is a distinct optimization layer: Context Mode routes and sandboxes tools, Caveman compresses agent-facing language, and CodeGraph pre-indexes local code structure.\n- **Agent-directed media production:** Video creation appears in two forms: HyperFrames targets agent-authored HTML-to-video workflows, while Yoinks offers a terminal-first video utility.\n- **General developer tooling remains present:** The list is not exclusively agent infrastructure: Yoinks and Effect-TS represent practical CLI and application-library work.\n- **Languages:** Python 1, Go 1, Shell 2, JavaScript 3, Rust 1, TypeScript 6, and C 1 among the 15 listed repositories. TypeScript is the largest single-language group; language counts describe this selected list, not all of GitHub."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today's strongest signal is the productization of AI coding agents: reusable skills are complemented by runtimes, multi-agent orchestration, external-data connectors, and context-saving layers. At the same time, agent-oriented video and ordinary developer tools are gaining attention. The snapshot is a one-day popularity signal, not a measure of adoption, quality, or long-term traction."
+    }
+  ]
+}

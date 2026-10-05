@@ -1,0 +1,62 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-10-05",
+  "title": "Giant Watch Summary - Daily - 2026-10-05",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-10-05.md",
+  "entry_count": 2,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Two fresh signals stand out: a Google News item reports Moonshot AI released Kimi K3, while The Next Web reports SpaceXAI was subpoenaed to testify at New York City’s October 5 AI-safety hearing. Both reports need stronger independent or primary-source confirmation."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "evt_kimi_k3_launch",
+      "title": "Moonshot AI releases Kimi K3, billed as the world's largest open-source model",
+      "organizations": [
+        "Kimi",
+        "Moonshot AI"
+      ],
+      "status": "unverified",
+      "content": "A Google News aggregation item dated roughly 12 hours before the briefing reports that Chinese startup Moonshot AI released the Kimi K3 model, described as the 'world's largest open-source model,' with WAIC spotlighting Chinese AI capabilities. No parameter counts, benchmark results, or independent corroboration are provided in the supplied snippet.",
+      "significance": "The only supplied signal whose underlying event falls inside the daily window, and the only fresh frontier-model release in the material. It positions Moonshot as a headline competitor in open-weight models, though the claim rests on a single aggregator page.",
+      "refs": [
+        "https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lNMDRITkVSRkU4ZEZYbUJubHBDZ0FQAQ?hl=en-IN&gl=IN&ceid=IN:en"
+      ],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "02-event",
+      "kind": "event",
+      "rank": 2,
+      "event_id": "evt_spacexai_nyc_hearing",
+      "title": "SpaceXAI subpoenaed for New York City AI-safety hearing",
+      "organizations": [
+        "xAI",
+        "SpaceXAI"
+      ],
+      "status": "unverified",
+      "content": "The Next Web reports that New York City Council subpoenaed SpaceXAI to testify at its October 5 AI-safety hearing, and describes SpaceXAI as the company formed when SpaceX merged with xAI. The supplied snippet does not confirm whether the hearing or testimony took place.",
+      "significance": "A governance and accountability story involving xAI, distinct from the model-launch news; the supplied coverage indicates a scheduled hearing, not its outcome.",
+      "refs": [
+        "https://thenextweb.com/news/nyc-council-subpoena-spacexai-ai-safety-hearing"
+      ],
+      "related_event_ids": [],
+      "transition_hint": "Unlike Moonshot’s model launch, this concerns public oversight of an xAI-linked company."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Check for primary documentation or independent benchmarking of Kimi K3, and confirmation or an outcome report for the October 5 hearing. The other retrieved lab coverage was mostly older announcements or recaps, not newly dated developments."
+    }
+  ]
+}

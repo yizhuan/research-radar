@@ -1,98 +1,232 @@
 {
-  "schema": "research-radar/v1",
-  "category": "daily",
-  "window": "Latest arXiv announcement batch: 2026-10-02; snapshot 2026-10-04T00:10:11Z",
+  "schema": "arxiv-trending-ai.v1",
+  "category": "AI (cs.AI, cs.LG, stat.ML, cs.CL, cs.CV, cs.RO, cs.NE, cs.MA)",
+  "window": "daily",
   "date": "2026-10-02",
-  "title": "arXiv AI: latest batch — Friday, 2 October 2026",
+  "title": "AI papers — arXiv announcement batch, 2 October 2026",
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-10-02.md",
-  "entry_count": 5,
+  "entry_count": 6,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; the ordering is inferred, and citation/attention evidence is thin because papers are only days old. This is a notable-paper shortlist, not a popularity ranking.",
+  "global_caveat": "arXiv has no official trending chart. This is an inferred relevance/notability order, not a popularity ranking; papers are very recent and citation-based momentum is sparse.",
   "sections": [
+    {
+      "id": "2610.02202",
+      "kind": "paper",
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.02202",
+      "arxiv_id": "2610.02202",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T17:59:47Z",
+      "announcement_batch": "2026-10-02",
+      "announcement_type": "new submission",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "authors": [
+        "Sohyeon Kim",
+        "Yoonho Lee",
+        "Bo Liu",
+        "Dayoon Ko",
+        "Rulin Shao",
+        "Seungone Kim",
+        "Graham Neubig",
+        "Pang Wei Koh",
+        "Aakanksha Chowdhery",
+        "Akari Asai",
+        "Omar Khattab",
+        "Yejin Choi",
+        "Gunhee Kim",
+        "Chelsea Finn"
+      ],
+      "themes": [
+        "Retrieval & knowledge",
+        "Evaluation & benchmarks",
+        "Agents & reasoning"
+      ],
+      "abstract": "ScholarCatalyst collects author judgments on research-inspiring papers and finds that current retrieval systems recover only about half of those papers in their top 20, with LLM search agents not outperforming embedding retrieval.",
+      "claimed_contribution": "The authors introduce a benchmark from 184 lead authors covering 207 recent computer-science projects, with 894 research questions and a 191K-paper retrieval corpus; they report strongest Recall@20 of 0.48 and an agent result of 0.42 when using the same retriever.",
+      "unique_caveat": "The authors note that the corpus covers 2025–2026 computer-science papers with uneven subfield representation, and that retrospective author judgments are subject to hindsight.",
+      "refs": [
+        "https://pith.science/paper/2610.02202",
+        "https://huggingface.co/datasets/ScholarCatalyst/ScholarCatalyst"
+      ]
+    },
     {
       "id": "2610.02206",
       "kind": "paper",
       "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
-      "rank": 1,
+      "rank": 2,
       "url": "https://arxiv.org/abs/2610.02206",
       "arxiv_id": "2610.02206",
       "arxiv_version": "v1",
       "published": "2026-10-01T17:59:55Z",
-      "categories": ["cs.CL", "cs.AI", "cs.CR"],
-      "authors": ["Pengfei Li", "Naufal Suryanto", "Sicheng Zhang", "Muzammal Naseer"],
-      "themes": ["Evaluation & benchmarks", "Agents & reasoning", "Safety & alignment"],
-      "abstract": "Introduces a benchmark of 8,504 natural-language-to-command examples across 1,642 Kali Linux tools and reports that no tested open-weight model exceeded 42% exact-command accuracy in the unrestricted setting.",
-      "claimed_contribution": "The authors combine canonicalized command evaluation, sandboxed execution and human review, then use the resulting checks to construct runtime-free verifiable rewards; they report gains from SFT and RLVR for an 8B model.",
-      "unique_caveat": "The paper identifies single-turn command generation and documentation-grounded data as limitations; multi-step workflows and environment-aware use remain open.",
-      "refs": ["https://arxiv.org/abs/2610.02206"]
+      "announcement_batch": "2026-10-02",
+      "announcement_type": "new submission",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "authors": [
+        "Pengfei Li",
+        "Naufal Suryanto",
+        "Sicheng Zhang",
+        "Muzammal Naseer"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Safety & alignment",
+        "Training & adaptation"
+      ],
+      "abstract": "KaliBench evaluates natural-language-to-command generation across Kali Linux tools and reports that no tested open-weight model exceeds 42% exact-command accuracy in the unrestricted setting; training with its rewards improves an 8B model.",
+      "claimed_contribution": "The authors provide 8,504 query-command pairs across 1,642 tools, with manuscript-grounded validation and deterministic scoring, and report fine-tuning gains that bring an 8B model to performance comparable to a 685B MoE model on their evaluation.",
+      "unique_caveat": "The authors note that tool manuals and flags change, documentation can be inconsistent, and alias extraction and automated verification are imperfect.",
+      "refs": [
+        "https://github.com/RISys-Lab/KaliBench",
+        "https://huggingface.co/papers/2610.02206"
+      ]
     },
     {
       "id": "2610.02200",
       "kind": "paper",
       "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
-      "rank": 2,
+      "rank": 3,
       "url": "https://arxiv.org/abs/2610.02200",
       "arxiv_id": "2610.02200",
       "arxiv_version": "v1",
       "published": "2026-10-01T17:59:45Z",
-      "categories": ["cs.AI", "cs.CV"],
-      "authors": ["Qiushi Han", "Keya Hu", "Linlu Qiu", "Cathy Wu", "Kaiming He"],
-      "themes": ["Multimodal & vision-language", "Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "Presents a visual harness that lets a multimodal model retain, retrieve, and reorganize original visual observations for long-horizon interaction; the authors report improved results on ARC-AGI-3 and three other game/puzzle benchmarks.",
-      "claimed_contribution": "The authors attribute the gains to lossless visual memory and active retrieval, reporting a Relative Human Action Efficiency score rising from 40.68 to 100 for Claude Opus 5.0 on ARC-AGI-3.",
-      "unique_caveat": "The paper calls for evaluation on more complex, realistic tasks, including embodied settings; current evidence centers on games and puzzles.",
-      "refs": ["https://arxiv.org/abs/2610.02200", "https://vista-research.github.io/"]
-    },
-    {
-      "id": "2610.02202",
-      "kind": "paper",
-      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
-      "rank": 3,
-      "url": "https://arxiv.org/abs/2610.02202",
-      "arxiv_id": "2610.02202",
-      "arxiv_version": "v1",
-      "published": "2026-10-01T17:59:47Z",
-      "categories": ["cs.AI", "cs.CL", "cs.IR"],
-      "authors": ["Sohyeon Kim", "Yoonho Lee", "Bo Liu", "Dayoon Ko", "Rulin Shao", "Seungone Kim", "Graham Neubig", "Pang Wei Koh", "Aakanksha Chowdhery", "Akari Asai", "Omar Khattab", "Yejin Choi", "Gunhee Kim", "Chelsea Finn"],
-      "themes": ["Retrieval & knowledge", "Evaluation & benchmarks", "Agents & reasoning"],
-      "abstract": "Builds a research-paper retrieval benchmark from judgments by 184 lead authors on 207 projects, and finds that agentic search does not outperform embedding retrieval at Recall@20 in the reported setup.",
-      "claimed_contribution": "The authors introduce author-provided catalyst-paper judgments and report Recall@20 of 0.42 for agentic search versus 0.48 for embedding retrieval, with their strongest tested agent at 0.51.",
-      "unique_caveat": "The paper says its 2025–2026 computer-science projects are unevenly represented across areas and that retrospective author labels are subject to hindsight.",
-      "refs": ["https://arxiv.org/abs/2610.02202"]
-    },
-    {
-      "id": "2610.02122",
-      "kind": "paper",
-      "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2610.02122",
-      "arxiv_id": "2610.02122",
-      "arxiv_version": "v1",
-      "published": "2026-10-01T17:35:44Z",
-      "categories": ["cs.CL", "cs.AI", "cs.DB"],
-      "authors": ["Gabriel Tomitsuka", "Arman Raayatsanati", "Emma Xing", "Duke Gand", "Joseph J Ma"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks", "Retrieval & knowledge"],
-      "abstract": "Introduces 210 data-science and analytics tasks in a simulated enterprise warehouse with 235 tables and 7.5 billion rows, grading agents on downstream actions as well as analysis; the strongest of 14 tested models averages 59.5 points.",
-      "claimed_contribution": "The authors build a simulated New York food-delivery company and score actions against hidden simulator state; they report that only 34.8% of tasks receive a score of at least 95 from the strongest model.",
-      "unique_caveat": "The evaluation is based on a constructed food-delivery scenario and simulated warehouse, so transfer to live enterprise systems is not established by this benchmark alone.",
-      "refs": ["https://arxiv.org/abs/2610.02122"]
+      "announcement_batch": "2026-10-02",
+      "announcement_type": "new submission",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "authors": [
+        "Qiushi Han",
+        "Keya Hu",
+        "Linlu Qiu",
+        "Cathy Wu",
+        "Kaiming He"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Agents & reasoning",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "VISTA gives a multimodal model long-horizon access to raw visual observations through a retrievable, lossless visual memory; the authors report a perfect score on the 25 public ARC-AGI-3 games and gains on three other visual benchmarks.",
+      "claimed_contribution": "The authors report that Claude Opus 5.0 with VISTA raises ARC-AGI-3 Relative Human Action Efficiency from 40.68 to 100 and completes all 25 public games using 57.4% fewer actions than first-time human participants.",
+      "unique_caveat": "The authors cannot rule out benchmark exposure in the models’ training data because the models post-date public benchmark release; they point to evaluation on private or novel games as a stronger generalization test.",
+      "refs": [
+        "https://github.com/joshhhhhan/VISTA"
+      ]
     },
     {
       "id": "2610.02204",
       "kind": "paper",
       "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
-      "rank": 5,
+      "rank": 4,
       "url": "https://arxiv.org/abs/2610.02204",
       "arxiv_id": "2610.02204",
       "arxiv_version": "v1",
       "published": "2026-10-01T17:59:50Z",
-      "categories": ["cs.RO", "cs.AI", "eess.SY"],
-      "authors": ["Yen-Jen Wang", "Haozhe Jiang", "Shuying Deng", "Haoru Xue", "Weirui Ye", "Rocky Duan", "Nika Haghtalab", "S. Shankar Sastry", "Pieter Abbeel", "Haozhi Qi"],
-      "themes": ["Robotics & control", "Agents & reasoning", "Training & adaptation"],
-      "abstract": "Proposes a weight-frozen robot-improvement loop that diagnoses offline data, practices related skills in simulation, and revises reusable skills and prompts; the authors report results on 22 manipulation tasks and 30 physical trials.",
-      "claimed_contribution": "The authors report increasing success on 22 held-out manipulation tasks from 28.6% after the first practice round to 95.0% after 15 rounds, then success in 30 physical trials across three tasks.",
-      "unique_caveat": "Physical validation is limited to 30 trials on three tasks; broader hardware, task, and environment generalization remains unshown in the abstract.",
-      "refs": ["https://arxiv.org/abs/2610.02204"]
+      "announcement_batch": "2026-10-02",
+      "announcement_type": "new submission",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "authors": [
+        "Yen-Jen Wang",
+        "Haozhe Jiang",
+        "Shuying Deng",
+        "Haoru Xue",
+        "Weirui Ye",
+        "Rocky Duan",
+        "Nika Haghtalab",
+        "S. Shankar Sastry",
+        "Pieter Abbeel",
+        "Haozhi Qi"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Agents & reasoning",
+        "Training & adaptation"
+      ],
+      "abstract": "RPG iteratively improves a robot’s shared symbolic skills and system prompt through simulation practice without weight updates, reporting 95% success on 22 simulated manipulation tasks after 15 rounds and success on all 30 physical trials across three tasks.",
+      "claimed_contribution": "The authors combine offline-data task selection, simulation-based practice, execution and video-based failure diagnosis, reusable skill revision, and cross-task regression checks; they report improvement from 28.6% to 95.0% success across practice rounds.",
+      "unique_caveat": "Physical evidence is 30 trials over three tasks after calibration. The paper also reports failure on its challenging towel-folding setting, indicating that its reusable procedural skills do not yet solve deformable-object state and contact estimation.",
+      "refs": [
+        "https://arxiv.org/html/2610.02204"
+      ]
+    },
+    {
+      "id": "2610.01618",
+      "kind": "paper",
+      "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.01618",
+      "arxiv_id": "2610.01618",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T12:55:07Z",
+      "announcement_batch": "2026-10-02",
+      "announcement_type": "new submission",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [
+        "Luis Wiedmann",
+        "Leander Girrbach",
+        "Cordelia Schmid",
+        "Zeynep Akata"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Agents & reasoning",
+        "Safety & alignment"
+      ],
+      "abstract": "Across four scientific tasks, the study varies agent configuration and finds substantial run-to-run outcome variation, with task information affecting results more than time budget or model size in its experiments.",
+      "claimed_contribution": "The authors study five configuration dimensions and report that about 54% of outcome variance comes from repeating the same configuration; they also find a dedicated verification tool changes behavior more than a prompt asking for verification.",
+      "unique_caveat": "The authors limit their study to four tasks across two scientific domains; memory and multi-agent coordination are not varied, and the prompting-versus-system-design result is demonstrated for verification only.",
+      "refs": [
+        "https://www.bloss0m.com/en/paper-reading/83-agents-are-systems-not-models-agentic-evaluation/"
+      ]
+    },
+    {
+      "id": "2610.02163",
+      "kind": "paper",
+      "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.02163",
+      "arxiv_id": "2610.02163",
+      "arxiv_version": "v1",
+      "published": "2026-10-01T17:54:34Z",
+      "announcement_batch": "2026-10-02",
+      "announcement_type": "new submission",
+      "categories": [
+        "cs.CL"
+      ],
+      "authors": [
+        "Xuan Zhang",
+        "Longtao Zheng",
+        "Cunxiao Du",
+        "Bo An",
+        "Xin Dong"
+      ],
+      "themes": [
+        "Efficient inference & systems",
+        "Agents & reasoning",
+        "Training & adaptation"
+      ],
+      "abstract": "AutoCompact trains coding agents to decide when and how to compact context, reporting absolute pass-rate improvements of 9.2% on SWE-bench Verified and 5.0% on SWE-PolyBench Verified over its base model.",
+      "claimed_contribution": "The authors train context compaction as part of an agent policy using supervised fine-tuning and reinforcement learning, and report gains across evaluated inference budgets with a 256K context window that does not overflow.",
+      "unique_caveat": "The authors use 32K-token sequences for reinforcement-learning training, shorter than the 256K evaluation window, and study model-harness co-design within a single scaffold.",
+      "refs": [
+        "https://arxiv.org/html/2610.02163"
+      ]
     }
   ]
 }

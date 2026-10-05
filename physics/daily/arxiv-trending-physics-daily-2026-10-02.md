@@ -1,159 +1,136 @@
-# Physics on arXiv — Friday, 2 October 2026: 9 notable new papers
+# arXiv Physics — Friday, 2 October 2026
 
-The batch spans collider searches, quantum and condensed-matter theory, solar-flare modeling, lattice QCD, and photonics. A short agenda: first the LHC searches, then methods spanning simulation and astrophysics, and finally photonic devices and new theoretical regimes. This is an inferred notable-paper shortlist, not an official arXiv trend chart: arXiv publishes no trending ranking, and citation evidence is limited for papers announced so recently.
+Eight notable papers from the latest announcement batch; the strongest pattern is collider searches and lattice-enabled precision calculations, alongside new results in quantum materials, solar physics, and gravity.[1][3][4]
+In brief: collider constraints, lattice methods, then materials and theory.[2][3][8]
+arXiv publishes no official trending chart, so this ordering is inferred from checkable scientific and cross-field signals; citation evidence is especially limited for papers only days old.
 
 ## Top papers (ranked)
 
 ### 1. [Search for dark matter produced in association with a low-multiplicity jet in proton-proton collisions at √s = 13 TeV](https://arxiv.org/abs/2610.00995)
-- **Abstract:** CMS reports the first LHC search using a low-multiplicity jet signature, finding no excess and setting dark-matter production limits with 138 fb⁻¹ of 13 TeV data.[13]
-- **Authors:** CMS Collaboration[13]
-- **arXiv:** `2610.00995v1` (published 2026-10-01; exact time not shown on abstract page; categories: `hep-ex`)
-- **Evidence for ranking:** A new search channel identified by the collaboration as the first of its kind at the LHC, based on the full 2016–2018 dataset and submitted to Physical Review D.[5][13]
-- **Claimed result:** The authors observe no excess and exclude mediator masses up to 4.25 TeV for a dark-matter mass near 150 GeV in the stated simplified models.[13]
-- **Evidence type:** experimental; CMS 13 TeV proton-proton collision data, 138 fb⁻¹, with supervised machine learning for sensitivity.
-- **Caveat:** Limits are conditional on the simplified vector/axial-vector mediator models; the search finds no dark-matter signal.[13]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
+- **Abstract:** CMS presents its first LHC search using a low-multiplicity jet plus missing transverse momentum, finding no excess and setting limits on vector- and axial-vector-mediator dark-matter models.[2]
+- **Authors:** CMS Collaboration
+- **arXiv:** `2610.00995v1` (published 2026-10-01 03:30:52 UTC; categories: `hep-ex`)
+- **Evidence for ranking:** First LHC use of this signature, a full 138 fb⁻¹ CMS dataset, and explicit 95% CL exclusions; cross-checked against the CMS abstract and full-text HTML.[2]
+- **Claimed result:** CMS reports no excess; for dark-matter masses near 150 (550) GeV, mediator masses up to 4250 (3500) GeV are excluded at 95% CL in the stated simplified models.[2]
+- **Evidence type:** Experimental; 2016–2018, 13 TeV CMS proton-proton data, supervised machine learning, and simulated signal/background samples.[2]
+- **Caveat:** The limits depend on the simplified vector/axial-vector mediator models and their parameter choices; they do not establish or exclude dark matter generically.[2]
+- **Announcement type:** new submission, 2026-10-02 batch
 - **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors; Computational & data methods
 
 ### 2. [Search for charged-lepton-flavour violating eμtq interactions at √s = 13 TeV with the ATLAS detector](https://arxiv.org/abs/2610.01308)
-- **Abstract:** Using 140 fb⁻¹ of 13 TeV ATLAS data, the collaboration finds no significant deviation from the Standard Model and sets 95% confidence limits on six effective-field-theory coefficients and related top-decay branching fractions.[12]
-- **Authors:** ATLAS Collaboration[12]
-- **arXiv:** `2610.01308v1` (published 2026-10-01; exact time not shown on abstract page; categories: `hep-ex`)
-- **Evidence for ranking:** A large-collaboration result using the full stated 140 fb⁻¹ sample, with explicit EFT constraints, and submitted to JHEP.[5][12]
-- **Claimed result:** The authors report branching-ratio upper bounds spanning 6 × 10⁻⁹ to 2.7 × 10⁻⁷ for the specified eμu/eμc top-decay couplings.[12]
-- **Evidence type:** experimental; ATLAS proton-proton collision data at the LHC, interpreted in an effective field theory framework.
-- **Caveat:** No signal is observed; the quoted limits depend on the EFT interpretation and the analyzed 13 TeV dataset.[12]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
+- **Abstract:** ATLAS searches for charged-lepton-flavour violation in top-quark production and decay using three-electron/muon final states, observes no significant deviation, and constrains six effective-field-theory coefficients.[1]
+- **Authors:** ATLAS Collaboration
+- **arXiv:** `2610.01308v1` (published 2026-10-01 08:40:00 UTC; categories: `hep-ex`)
+- **Evidence for ranking:** A full 140 fb⁻¹ ATLAS analysis with quantitative Wilson-coefficient and branching-ratio limits; the paper is submitted to JHEP.[1]
+- **Claimed result:** The authors set 95% CL limits on six EFT coefficients and report branching-ratio limits spanning B(t → eμu) < 6×10⁻⁹ to B(t → eμc) < 2.7×10⁻⁷ for the specified couplings.[1]
+- **Evidence type:** Experimental; 13 TeV proton-proton collision data recorded by ATLAS at the LHC.[1]
+- **Caveat:** The limits are interpreted within an EFT framework and apply to the analyzed top-quark channels and dataset; no signal is observed.[1]
+- **Announcement type:** new submission, 2026-10-02 batch
 - **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
 
-### 3. [A New Framework for Modeling Solar Flares from MHD to Kinetic Processes](https://arxiv.org/abs/2610.02149)
-- **Abstract:** The authors link three specialized models to simulate flare initiation, particle acceleration and transport, atmospheric heating, and emission, reporting simulated white-light emission heights consistent with observations.[15]
-- **Authors:** Joel C. Allred, Graham S. Kerr, Silvina E. Guidoni, Joel T. Dahlin, Marc Swisdak et al.[15]
-- **arXiv:** `2610.02149v1` (published 2026-10-01; exact time not shown on abstract page; categories: `astro-ph.SR`)
-- **Evidence for ranking:** The authors present an integrated ARMS–kglobal–RADYN+FP pipeline, report acceptance for publication in the Astrophysical Journal, and connect modeled emission heights with observations.[2][15]
-- **Claimed result:** The paper demonstrates a detailed simulation tracking nonthermal electrons and protons in the same reconnected loop and produces white-light emission heights consistent with observations.[15]
-- **Evidence type:** computational; coupled 2.5D MHD, kinetic particle-acceleration, and radiative-hydrodynamic simulations.
-- **Caveat:** The authors describe this as a first step toward a fully 3D framework; the result is a model-to-observation consistency, not a new observation.[15]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
-- **Themes:** Astrophysics; Computational & data methods
+### 3. [Drell-Yan lepton pair production from low to high transverse momentum](https://arxiv.org/abs/2610.02169)
+- **Abstract:** The authors combine high-order perturbative predictions across transverse-momentum regimes, a Collins–Soper kernel from continuum-limit lattice QCD, and a maximum-entropy construction of positive event weights.[8]
+- **Authors:** Benoît Assi, Enrico Bothmann, John Campbell, Christian Gütschow, Stefan Höche, Wan-Li Ju, Max Knobbe, Marek Schönherr, Jesse Thaler, Michael L. Wagman
+- **arXiv:** `2610.02169v1` (published 2026-10-01 17:56:04 UTC; categories: `hep-ph`, `hep-ex`, `hep-lat`)
+- **Evidence for ranking:** Cross-listed across three high-energy archives and reports N³LO plus approximate N⁴LL′ precision at low/moderate transverse momentum, with stated extensions to multijet and high-momentum regimes.[8]
+- **Claimed result:** The paper presents a particle-level calculation with the accuracy mix described in its abstract and uses an information-theoretic method to recast results into strictly positive event weights.[8]
+- **Evidence type:** Computational/theoretical; perturbative QCD predictions with a nonperturbative Collins–Soper input from continuum-limit lattice QCD.[8]
+- **Caveat:** The stated accuracies are regime-dependent and include approximate rather than exact higher-order terms; the method relies on the lattice-derived kernel.[8]
+- **Announcement type:** new submission, 2026-10-02 batch
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
 
-### 4. [Polynomial-time classical and quantum simulation of quantum impurity models](https://arxiv.org/abs/2610.02167)
-- **Abstract:** The authors prove polynomial-time classical algorithms for static impurity-model properties, while showing that nonequilibrium Green’s functions capture quantum-computational power.[19]
-- **Authors:** Jiaqing Jiang, Nathan Ju, Ojas Parekh, Chaithanya Rayudu, Andrew Zhao[19]
-- **arXiv:** `2610.02167v1` (published 2026-10-01; exact time not shown on abstract page; categories: `quant-ph`, `cond-mat.str-el`, `cs.CC`, `cs.DS`, `physics.chem-ph`)
-- **Evidence for ranking:** Cross-listed across quantum physics, strongly correlated electrons, computational complexity, algorithms, and chemical physics; the abstract states explicit polynomial-time bounds for equilibrium quantities.[11][19]
-- **Claimed result:** The authors improve ground-state-energy estimation from quasipolynomial to polynomial time and establish polynomial-time guarantees for thermal equilibrium; they show dynamical simulation can encode the full power of quantum computation.[19]
-- **Evidence type:** theoretical; computational-complexity results and algorithms for impurity models.
-- **Caveat:** These are complexity-theoretic results for the stated impurity-model setting; they do not establish practical runtime advantages on a particular device.[19]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
-- **Themes:** Quantum information; Condensed matter & materials; Computational & data methods
-
-### 5. [Programmable nonlinearity within nanophotonic waveguides](https://arxiv.org/abs/2610.02024)
-- **Abstract:** By optically programming χ² patterns in waveguides after fabrication, the authors demonstrate reconfigurable quasi-phase matching, in-situ optimization, and device diagnostics.[18]
-- **Authors:** Benjamin A. Ash, Ryotatsu Yanagimoto, Mandar M. Sohoni, Yang Xu, Yiqi Zhao et al.[18]
-- **arXiv:** `2610.02024v1` (published 2026-10-01; exact time not shown on abstract page; categories: `physics.optics`, `physics.app-ph`)
-- **Evidence for ranking:** The reported experiment demonstrates post-fabrication reconfiguration in about one second and several concrete functions, including phase-mismatch compensation and on-chip diagnostics.[18]
-- **Claimed result:** The authors use structured illumination and photoconductive electrodes to program effective χ² patterns for spectral, modal, and polarization control of three-wave mixing.[18]
-- **Evidence type:** experimental; nonlinear nanophotonic waveguides with optically induced nonlinearity and closed-loop optimization.
-- **Caveat:** The abstract demonstrates the method in specific waveguide structures; broader performance and scalable cascaded systems remain prospective.[18]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
-- **Themes:** Atomic, molecular & optical physics; Instrumentation & detectors; Computational & data methods
-
-### 6. [Thermal axion production in QCD from the lattice](https://arxiv.org/abs/2610.01925)
-- **Abstract:** The authors show that weighted light-cone integrals relevant to thermal axion production can be computed from Euclidean lattice QCD without analytic continuation, and test feasibility in pure-glue QCD.[14]
-- **Authors:** Luis Neubauer, Guy D. Moore[14]
-- **arXiv:** `2610.01925v1` (published 2026-10-01; exact time not shown on abstract page; categories: `hep-lat`)
-- **Evidence for ranking:** A new lattice-based route addresses a key early-Universe production quantity without analytic continuation; the abstract reports a feasibility test at 1.5 T₍c₎.[6][14]
-- **Claimed result:** In pure-glue QCD at 1.5 T₍c₎, the authors find it feasible to extract at least one, and possibly two, finite weighted momentum integrals of the production rate.[14]
-- **Evidence type:** computational; Euclidean lattice-QCD calculations in pure-glue QCD.
-- **Caveat:** The feasibility study is in pure-glue QCD; application to full QCD near and above the crossover is a prospective next step, not a result already obtained.[14]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
+### 4. [Thermal axion production in QCD from the lattice](https://arxiv.org/abs/2610.01925)
+- **Abstract:** Neubauer and Moore show how Euclidean lattice-QCD correlators can yield weighted integrals of the axion production spectrum without analytic continuation, and demonstrate feasibility in pure-glue QCD at 1.5 T₍c₎.[3]
+- **Authors:** Luis Neubauer, Guy D. Moore
+- **arXiv:** `2610.01925v1` (published 2026-10-01 15:58:34 UTC; categories: `hep-lat`)
+- **Evidence for ranking:** A concrete route around a central analytic-continuation difficulty, a numerical proof of principle, and ancillary analysis scripts/data files listed on the arXiv record.[3]
+- **Claimed result:** Their test extracts the n=0 and n=1 weighted integrals with good signal-to-noise and finds the n=2 integral feasible with marginal signal-to-noise.[3]
+- **Evidence type:** Computational; finite-temperature pure-glue lattice-QCD calculations at one temperature, T = 1.5 T₍c₎.[3]
+- **Caveat:** This is a pure-glue proof of principle at a single lattice spacing and temperature, not yet a full-QCD determination of the momentum-resolved production rate; the authors identify extension to full QCD as the next step.[3]
+- **Announcement type:** new submission, 2026-10-02 batch
 - **Themes:** Particle, nuclear & high-energy physics; Cosmology & gravitation; Computational & data methods
 
-### 7. [Thin-capping layer epitaxial quantum dots for near-field quantum photonics](https://arxiv.org/abs/2610.02080)
-- **Abstract:** Optical characterization of InAs/GaAs quantum dots with thinner capping layers finds up to five-times-narrower emission linewidths than previously reported while preserving excitonic lifetimes.[17]
-- **Authors:** Yuting Guo, Jonathan Bar-David, Pasquale Cilibrizzi, Sung-Yul L. Park, Jin Dong Song, Luca Sapienza[17]
-- **arXiv:** `2610.02080v1` (published 2026-10-01; exact time not shown on abstract page; categories: `physics.optics`, `cond-mat.mes-hall`, `cond-mat.mtrl-sci`, `physics.app-ph`, `quant-ph`)
-- **Evidence for ranking:** A cross-listed materials/optics/quantum-photonics experiment gives a quantitative linewidth comparison and tests three capping thicknesses.[3][17]
-- **Claimed result:** The authors report that 10 nm and 20 nm capped dots retain optical quality, including unperturbed excitonic lifetimes, while placing emitters closer to surfaces for near-field coupling.[17]
-- **Evidence type:** experimental; epitaxial InAs/GaAs quantum-dot growth and optical characterization.
-- **Caveat:** The abstract establishes optical properties for the tested structures; a fully integrated near-field photonic-device demonstration is not reported there.[17]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
-- **Themes:** Quantum information; Condensed matter & materials; Atomic, molecular & optical physics
+### 5. [Magnetic Phase Diagrams and Spin Hamiltonian of Monoclinic α-RuCl₃ from Angle-Dependent Torque Studies](https://arxiv.org/abs/2610.02006)
+- **Abstract:** Torque measurements on small monoclinic α-RuCl₃ crystals map field-angle-dependent magnetic phases and show differences from larger rhombohedral samples, which the authors compare with mean-field spin-Hamiltonian calculations.[4]
+- **Authors:** Daniel Antoniou, Danrui Ni, John S. Pearce, Robert J. Cava, Amalia I. Coldea, Radu Coldea
+- **arXiv:** `2610.02006v1` (published 2026-10-01 16:35:27 UTC; categories: `cond-mat.str-el`)
+- **Evidence for ranking:** Extensive angle- and field-dependent torque data across three crystallographic planes, fields up to 16 T, and explicit comparison with candidate spin Hamiltonians.[4]
+- **Claimed result:** The authors report reduced rotational symmetry, higher fields needed to suppress magnetic order, and distinct field-induced phases in small crystals that remain monoclinic.[4]
+- **Evidence type:** Experimental, with theoretical comparison; piezo-cantilever torque measurements on sub-100 μm crystals plus mean-field calculations.[4]
+- **Caveat:** The samples are unusually small, and the authors discuss size- or strain-related suppression of the structural transition as a possible explanation; the proposed minimal models are not a unique microscopic identification.[4]
+- **Announcement type:** new submission, 2026-10-02 batch
+- **Themes:** Condensed matter & materials
 
-### 8. [Hyperbolic lattices with mass disorder: Phases and phase transitions](https://arxiv.org/abs/2610.02192)
-- **Abstract:** Numerical tight-binding calculations show how mass disorder changes phases and drives metal–insulator transitions on three specified hyperbolic lattices.[20]
-- **Authors:** Sheersh Sen, Christopher A. Leong, Bitan Roy[20]
-- **arXiv:** `2610.02192v1` (published 2026-10-01; exact time not shown on abstract page; categories: `cond-mat.dis-nn`, `cond-mat.mes-hall`, `cond-mat.stat-mech`)
-- **Evidence for ranking:** The paper spans three condensed-matter categories and reports multiple disorder-driven transitions with computed critical exponents.[3][20]
-- **Claimed result:** The authors find the hyperbolic Dirac liquid survives weak mass disorder, then undergoes semimetal-to-metal and, at stronger disorder, Anderson metal-to-insulator transitions; the other two lattice models show only the latter transition.[20]
-- **Evidence type:** computational; tight-binding models on {10,3}, {8,3}, and {8,4} hyperbolic lattices, analyzed with the kernel polynomial method.
-- **Caveat:** Results are numerical for the specified lattice geometries, nearest-neighbor models, and disorder scheme; they are not an experimental observation.[20]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
-- **Themes:** Condensed matter & materials; Computational & data methods
+### 6. [A New Framework for Modeling Solar Flares from MHD to Kinetic Processes](https://arxiv.org/abs/2610.02149)
+- **Abstract:** Allred and colleagues link magnetohydrodynamic flare evolution, kinetic particle acceleration, and particle transport/atmospheric radiation in a coupled simulation framework.[5]
+- **Authors:** Joel C. Allred, Graham S. Kerr, Silvina E. Guidoni, Joel T. Dahlin, Marc Swisdak, Judith T. Karpen, Valeriy Tenishev
+- **arXiv:** `2610.02149v1` (published 2026-10-01 17:49:55 UTC; categories: `astro-ph.SR`)
+- **Evidence for ranking:** The linked ARMS, kglobal, and RADYN+FP models follow a flare from energy release through particle heating; authors call it the first detailed RADYN+FP simulation tracking nonthermal electrons and protons in the same loop, and the paper is accepted for ApJ.[5]
+- **Claimed result:** The modeled white-light flare emission height is consistent with observations, according to the authors; this is a simulation result, not a new observation.[5]
+- **Evidence type:** Computational; a 2.5D ARMS MHD simulation coupled to kinetic particle distributions and RADYN+FP atmospheric modeling.[5]
+- **Caveat:** The framework is not yet fully three-dimensional, which the authors describe as future work; agreement in emission height does not by itself validate every modeled process.[5]
+- **Announcement type:** new submission, 2026-10-02 batch
+- **Themes:** Astrophysics; Computational & data methods
 
-### 9. [Analytic Metric for Rotating Black Holes in Higher-Derivative Gravity](https://arxiv.org/abs/2610.02004)
-- **Abstract:** The authors introduce an analytic metric-reconstruction method and construct a rotating black-hole solution in parity-even cubic gravity at linear order in the coupling.[16]
-- **Authors:** Jierui Hu, Dongjun Li, Nicolás Yunes[16]
-- **arXiv:** `2610.02004v1` (published 2026-10-01; exact time not shown on abstract page; categories: `gr-qc`)
-- **Evidence for ranking:** The paper claims a new analytic spinning solution without spin or weak-field expansions and reports validation against field equations and independent horizon predictions.[4][16]
-- **Claimed result:** In parity-even cubic gravity, the authors construct an analytic rotating black-hole metric at linear order in the coupling and reproduce independent analytic predictions for horizon properties.[16]
-- **Evidence type:** theoretical; analytic metric reconstruction and field-equation validation.
-- **Caveat:** The demonstrated solution is for one modified-gravity theory and is linear in its coupling; the abstract does not establish a general metric for arbitrary higher-derivative theories.[16]
-- **Announcement type:** new submission, Friday 2026-10-02 announcement batch
+### 7. [Analytic Metric for Rotating Black Holes in Higher-Derivative Gravity](https://arxiv.org/abs/2610.02004)
+- **Abstract:** Hu, Li, and Yunes introduce an analytic metric-reconstruction method and construct a rotating black-hole metric in parity-even cubic gravity at linear order in the coupling, without spin or weak-field expansions.[6]
+- **Authors:** Jierui Hu, Dongjun Li, Nicolás Yunes
+- **arXiv:** `2610.02004v1` (published 2026-10-01 16:34:38 UTC; categories: `gr-qc`)
+- **Evidence for ranking:** The authors report validation against the field equations and agreement with independent analytic horizon predictions, providing a concrete new tool for beyond-GR strong-field calculations.[6]
+- **Claimed result:** The paper presents the first analytic spinning black-hole metric in the specified cubic-gravity setting and coupling order.[6]
+- **Evidence type:** Theoretical/computational; analytic metric reconstruction with field-equation and horizon-property checks.[6]
+- **Caveat:** The result is perturbative in the higher-derivative coupling; the abstract does not claim a nonperturbative solution or an observational test.[6]
+- **Announcement type:** new submission, 2026-10-02 batch
 - **Themes:** Cosmology & gravitation
+
+### 8. [Single-Particle Spectral Estimation](https://arxiv.org/abs/2610.02183)
+- **Abstract:** Chapman and colleagues formulate Hamiltonian learning for a hidden non-interacting sector, prove the task DQC1-hard, and propose SPICES to estimate its spectral distribution under stated assumptions.[7]
+- **Authors:** Adrian Chapman, Charles Derby, Steven T. Flammia, Yeongwoo Hwang, Joel Klassen, Calum McCartney
+- **arXiv:** `2610.02183v1` (published 2026-10-01 17:58:29 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** The paper combines a complexity result with a concrete estimator based on a Hadamard test and classical postprocessing, and connects quasiparticle energies to partition-function zeros.[7]
+- **Claimed result:** The authors claim efficient recovery in Wasserstein distance under natural assumptions, without reconstructing the unknown global unitary.[7]
+- **Evidence type:** Theoretical/computational; quantum-algorithm analysis and classical postprocessing, with no experimental demonstration reported in the abstract.[7]
+- **Caveat:** The efficiency guarantee is conditional on the paper’s assumptions; hardware noise and practical resource performance are not established by the abstract.[7]
+- **Announcement type:** new submission, 2026-10-02 batch
+- **Themes:** Quantum information; Computational & data methods
 
 ## Trending Research Themes
 
-- **Searches are expanding into specialized LHC signatures.** CMS tests a low-multiplicity-jet dark-matter channel, while ATLAS constrains charged-lepton-flavour-violating top interactions; both report null results with limits rather than detections.[12][13]
-- **Methods are being built to bridge otherwise difficult physics regimes.** The solar-flare work couples MHD, kinetic, and radiative modeling; the axion paper develops a lattice route avoiding analytic continuation; and the impurity-model paper separates classically tractable equilibrium quantities from hard dynamical ones.[14][15][19]
-- **Programmability and geometry are changing the questions asked of materials and devices.** Post-fabrication control of waveguide nonlinearity and near-field-capable quantum dots are experimental platform advances.[17][18]
-  Hyperbolic-lattice phases and the rotating-black-hole metric are theoretical/computational studies, not experimental validations.[16][20]
+- **Collider searches are tightening targeted constraints, not reporting discoveries.** The ATLAS top-quark flavour-violation analysis and CMS low-multiplicity-jet dark-matter search both find no significant excess and report model-specific limits; the Drell–Yan paper instead advances precision prediction and event-weight methods.[1][2][8]
+- **Lattice QCD is serving as a bridge from nonperturbative physics to observables.** The axion study targets finite-temperature production integrals; the Drell–Yan calculation imports a continuum-limit Collins–Soper kernel.[3][8]
+- **Detailed modeling is being linked more tightly to measurements.** The α-RuCl₃ work fits angle-resolved torque phase diagrams with candidate spin Hamiltonians, while the solar-flare framework connects simulated magnetic reconnection to particle transport and atmospheric emission.[4][5]
+- **Isolated signal — beyond-GR black-hole solutions.** The new analytic metric is a theoretical-method contribution in this batch rather than evidence of an observed departure from general relativity.[6]
 
 ## Open Problems and Research Directions
 
-- **Full-QCD axion rate:** The paper demonstrates feasibility in pure-glue QCD, leaving the full-QCD crossover regime as an open extension. A follow-up lattice calculation could test whether the weighted-integral method remains stable there.[14]
-- **Three-dimensional flare synthesis:** The solar-flare framework is a 2.5D integration step. Extending it to 3D and comparing predicted multiwavelength emissions against observations would test how robust the reported white-light-height agreement is.[15]
-- **Near-field device integration:** The quantum-dot paper reports optical quality at reduced capping thickness, while near-field use remains a motivation. A direct emitter–plasmonic-resonator coupling experiment could test whether the linewidth and lifetime advantages survive integration.[17]
-- **Beyond modeled lattice/disorder settings:** The hyperbolic-lattice transitions are numerical results for three geometries and a specified disorder model. Testing other lattice families, disorder types, and finite-size scaling would probe their robustness.[20]
-- **Strong-field phenomenology:** The new rotating metric is a theoretical construction at linear coupling. Computing observable signatures and comparing them with constraints on the theory would connect the solution to possible tests.[16]
+- **Model coverage in dark-matter searches (author-stated scope):** CMS interprets limits in vector/axial-vector simplified models, while ATLAS constrains specified EFT coefficients. A useful follow-up is to test complementary mediator structures and reinterpret the data in explicitly stated validity domains; neither paper reports a discovery.[1][2]
+- **From pure-glue proof of principle to physical QCD (author-stated):** the axion method has so far been tested at one temperature in pure-glue QCD. Extend it to full QCD and temperatures spanning the crossover, with lattice-spacing and finite-volume checks to quantify systematics.[3]
+- **Why monoclinic crystals behave differently (synthesis):** the torque study finds different phase diagrams and discusses sample size/strain as a possible structural factor. Matched measurements across crystal sizes and controlled strain, combined with independent structural characterization, could separate lattice-structure effects from magnetic-interaction changes.[4]
+- **Three-dimensional flare realism (author-stated):** the solar-flare framework is a step toward fully 3D modeling. A 3D implementation and systematic comparisons of predicted particle/radiative signatures with observations would test how robust the coupled 2.5D results are.[5]
+- **Domain of validity for rotating solutions (synthesis):** the black-hole metric is linear in the higher-derivative coupling. Higher-order coupling corrections and consistency checks across strong-field observables would establish where the analytic construction remains reliable.[6]
+- **Practicality of spectral estimation (synthesis):** SPICES has conditional theoretical guarantees. Quantifying sample complexity and noise tolerance in realistic quantum circuits would clarify when its promised spectral estimates are useful for materials calculations.[7]
 
 ## Takeaway
 
-This batch’s strongest shared pattern is methodological: new analysis channels, cross-scale simulations, and tunable or rigorously characterized models, rather than a single new discovery. The LHC papers report constraints without signals; several other results are promising but remain model- or platform-specific and need further validation.
+This batch’s strongest concrete signals are careful null-result collider searches and methods that make difficult QCD inputs more usable.[1][2][3]
+The materials and astrophysics papers also connect detailed modeling to new measurement regimes.[4][5]
+The gravity and quantum-information results remain theoretical proposals to be tested further.[6][7]
 
 ## Method and sources
 
-- **Window:** Daily; latest available arXiv announcement batch, Friday 2026-10-02. The request was made Sunday 2026-10-04, when the recent listings still showed the Friday batch as latest. Snapshot: 2026-10-04 00:19 UTC.
-- **Archive scope:** Checked recent listings for physics, astro-ph, and cond-mat.[1][2][3]
-  Also checked gr-qc, hep-ex, and hep-lat.[4][5][6]
-  The remaining checked listings were hep-ph, hep-th, and nucl-ex.[7][8][9]
-  Finally, nucl-th and quant-ph were checked.[10][11]
-  This is a front-page sample, not a complete crawl: several archives showed more than 50 entries in the 2 October batch, and their additional pages were not exhaustively reviewed.[3][11]
-- **Selection:** Nine notable papers were selected for concrete reported results, multi-category relevance, experimental or collaboration releases, journal-status signals, and methodological reach. This is not a readership or download ranking. Semantic Scholar citation evidence was sparse for this very new batch; citation counts were not used to imply momentum.
-- **Announcement vs. submission:** Recent-list pages show these papers in the Friday 2 October batch.[1][5][11]
-  The individual abstract pages identify the initial submission date as 1 October; see the linked records for each selected paper.[12][13][14]
-- **Sources:** Individual abstract pages are linked in each paper heading; recent archive listings and source URLs are listed below.
+- **Window:** daily; arXiv announcement batch Friday, 2026-10-02. Latest batch as of the snapshot; the current Monday batch had not yet appeared. All eight selected papers are new submissions, with their submission timestamps shown above.
+- **Snapshot:** 2026-10-05 00:17 UTC.
+- **Archive coverage:** Checked the recent-submission listings for `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. High-volume listings show more than 50 papers for some archives; this is a selective, cross-archive notable-paper report, not an exhaustive survey of every submission.
+- **Inference:** arXiv has no official trending chart. These papers were selected and ordered using concrete results/methods, cross-listing, collaboration or publication status, and available ancillary artifacts. Semantic Scholar citation lookups were rate-limited and recent-paper citation evidence is sparse, so this is a notable-recent-paper ranking, not a readership or download ranking. No citation totals are presented as period gains.
+- **Retrieval note:** Direct arXiv listing, abstract, and available HTML full-text pages were inspected for all selected papers; full text was examined for the CMS, thermal-axion, and α-RuCl₃ studies. The arXiv API and configured web-extraction backend were unavailable in this run; listing and abstract pages were accessible through the browser.
 
 ## Sources
 
-[1] https://arxiv.org/list/physics/recent
-[2] https://arxiv.org/list/astro-ph/recent
-[3] https://arxiv.org/list/cond-mat/recent
-[4] https://arxiv.org/list/gr-qc/recent
-[5] https://arxiv.org/list/hep-ex/recent
-[6] https://arxiv.org/list/hep-lat/recent
-[7] https://arxiv.org/list/hep-ph/recent
-[8] https://arxiv.org/list/hep-th/recent
-[9] https://arxiv.org/list/nucl-ex/recent
-[10] https://arxiv.org/list/nucl-th/recent
-[11] https://arxiv.org/list/quant-ph/recent
-[12] https://arxiv.org/abs/2610.01308
-[13] https://arxiv.org/abs/2610.00995
-[14] https://arxiv.org/abs/2610.01925
-[15] https://arxiv.org/abs/2610.02149
-[16] https://arxiv.org/abs/2610.02004
-[17] https://arxiv.org/abs/2610.02080
-[18] https://arxiv.org/abs/2610.02024
-[19] https://arxiv.org/abs/2610.02167
-[20] https://arxiv.org/abs/2610.02192
+[1] https://arxiv.org/abs/2610.01308 — ATLAS charged-lepton-flavour violation search
+[2] https://arxiv.org/abs/2610.00995 — CMS low-multiplicity jet dark matter search
+[3] https://arxiv.org/abs/2610.01925 — Thermal axion production in QCD from the lattice
+[4] https://arxiv.org/abs/2610.02006 — Magnetic phase diagrams of monoclinic alpha-RuCl3
+[5] https://arxiv.org/abs/2610.02149 — Solar flare modeling framework
+[6] https://arxiv.org/abs/2610.02004 — Analytic metric for rotating black holes
+[7] https://arxiv.org/abs/2610.02183 — Single-Particle Spectral Estimation
+[8] https://arxiv.org/abs/2610.02169 — Drell-Yan lepton pair production

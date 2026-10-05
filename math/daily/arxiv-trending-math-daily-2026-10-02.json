@@ -1,139 +1,188 @@
 {
-  "schema": "hermes.arxiv-trending-math.v1",
+  "schema": "research-radar.v1",
   "category": "math",
-  "window": {
-    "type": "daily",
-    "start": "2026-10-02",
-    "end": "2026-10-02",
-    "snapshot_utc": "2026-10-04T00:12:27Z",
-    "arxiv_batch_date": "2026-10-02"
-  },
+  "window": "daily",
   "date": "2026-10-02",
-  "title": "arXiv Mathematics — Friday, 2 October 2026",
-  "global_caveat": "arXiv publishes no official trending chart; ordering is inferred from mathematical claims and scope, with limited attention evidence. Semantic Scholar indexed zero citations for all six papers at the snapshot. The Math listing batch date (2 October) conflicts with the individual arXiv histories, which give earlier first-posted dates (9 July–19 September).",
+  "title": "arXiv Mathematics — daily notable papers (2 October 2026)",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-10-02.md",
   "entry_count": 6,
   "entry_noun": "papers",
+  "global_caveat": "This is an inferred editorial ranking, not an official arXiv trending chart; these papers are only days old, so citation and attention evidence is too limited to support a popularity ranking.",
   "sections": [
     {
-      "id": "paper-1",
-      "kind": "paper",
-      "title": "Parisi measure of the Sherrington-Kirkpatrick model with external field",
+      "arxiv_id": "2610.02064",
+      "arxiv_version": "v1",
+      "published": "2026-10-01",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "authors": [
+        "Paul Cahen",
+        "Christophe Garban",
+        "Avelio Sepúlveda"
+      ],
+      "themes": [
+        "Probability & statistics",
+        "Mathematical physics",
+        "Geometry & topology"
+      ],
+      "abstract": "The authors prove that the planar critical Ising magnetization scaling-limit field is measurable from the nested CLE_3 spin-interface ensemble, complementing an earlier construction from colored CLE_{16/3}.",
+      "claimed_result": "Reconstruction of the critical Ising magnetization field from nested CLE_3; the route through CLE percolation to colored CLE_{16/3} recovers the same field.",
+      "assumptions_and_setting": "Critical planar Ising scaling limits on a sufficiently regular domain; the introduction describes + boundary conditions and the nested interface limit.",
+      "unique_caveat": "The converse—that nested CLE_3 can be reconstructed from the magnetization field—is explicitly conjectured, not proved.",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2610.00127",
-      "arxiv_id": "2610.00127",
-      "arxiv_version": "v1",
-      "published": "2026-09-09T17:37:09Z",
-      "categories": ["math.PR"],
-      "authors": ["Patrick Lopatto"],
-      "themes": ["Probability & statistics", "Mathematical physics"],
-      "abstract": "The author proves connected support of the Parisi measure for the SK model at every positive temperature and positive external field; in the replica-symmetry-breaking regime, the interior density is smooth and strictly positive, with atoms at both endpoints.",
-      "claimed_result": "Support gaps are excluded and the density remains positive to both endpoints; the estimates also recover the zero-field support description and bound the upper atom mass.",
-      "assumptions_and_setting": "SK model at positive temperature and positive external field; interval-and-density statement is specified for replica-symmetry breaking.",
-      "unique_caveat": "Author-claimed preprint result; the stated positive-field theorem does not itself cover zero temperature.",
-      "evidence_for_ranking": "Concrete structural theorem on a central order parameter; Semantic Scholar reports 0 citations and 0 influential citations at snapshot, so popularity is unproven.",
-      "announcement_type": "New submission (v1 in 2 October Math listing; arXiv history says first posted 9 September 2026)",
-      "refs": ["https://arxiv.org/abs/2610.00127", "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,citationCount,influentialCitationCount,referenceCount,fieldsOfStudy,externalIds"]
+      "url": "https://arxiv.org/abs/2610.02064",
+      "id": "2610.02064",
+      "kind": "paper",
+      "title": "The critical Ising magnetization field can be reconstructed from its +/- interfaces",
+      "refs": [
+        "https://arxiv.org/abs/2610.02064"
+      ]
     },
     {
-      "id": "paper-2",
-      "kind": "paper",
-      "title": "Critical Free-Energy Variance in the Sherrington-Kirkpatrick Model",
+      "arxiv_id": "2610.02165",
+      "arxiv_version": "v1",
+      "published": "2026-10-01",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Ting-Wei Chao",
+        "Maya Sankar",
+        "Hung-Hsun Hans Yu"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "Using entropy, the authors bound the number of rainbow triangles in an r-edge-coloured graph with m edges by C_r m^(3/2), where C_r = sqrt(2(r-2)/(9r)), establish sharpness when an affine plane of order r−1 exists, and give a stability statement; they also study properly coloured larger cliques.",
+      "claimed_result": "The authors prove the stated rainbow-triangle upper bound and show near-extremizers must reflect affine-plane structure; for odd r, blowups of a properly edge-coloured K_{r+1} maximize the larger-clique count.",
+      "assumptions_and_setting": "Simple graph with m edges and r≥3 edge colours; the triangle bound is sharp under the stated affine-plane condition.",
+      "unique_caveat": "Sharpness depends on existence of the relevant plane; the abstract does not give a universal exact improvement when it does not exist.",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2610.00011",
-      "arxiv_id": "2610.00011",
-      "arxiv_version": "v1",
-      "published": "2026-07-09T17:33:48Z",
-      "categories": ["math.PR", "cond-mat.dis-nn"],
-      "authors": ["Miguel Tierz"],
-      "themes": ["Probability & statistics", "Mathematical physics"],
-      "abstract": "The author derives a finite-size variance identity for normalized SK free energy at criticality, relating the leading variance to the logarithm of spin-glass susceptibility.",
-      "claimed_result": "The author claims Var F_N(1) = (1/(2N²)) log χ_SG(N) + O(N⁻²); cited critical susceptibility scaling χ_SG(N) ≍ N^(1/3) yields the 1/6 coefficient for (log N)/N².",
-      "assumptions_and_setting": "Normalized SK free energy at (β,h)=(1,0); the 1/6 coefficient depends on the cited critical susceptibility-scaling theorem. The paper also treats fixed β<1.",
-      "unique_caveat": "The sharp numerical coefficient relies on the cited susceptibility-scaling result; the identity and its use are preprint claims.",
-      "evidence_for_ranking": "Sharp critical-regime identity and cross-listing in disordered systems; Semantic Scholar reports 0 citations and 0 influential citations.",
-      "announcement_type": "New submission (v1 in 2 October Math listing; arXiv history says first posted 9 July 2026)",
-      "refs": ["https://arxiv.org/abs/2610.00011", "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,citationCount,influentialCitationCount,referenceCount,fieldsOfStudy,externalIds"]
+      "url": "https://arxiv.org/abs/2610.02165",
+      "id": "2610.02165",
+      "kind": "paper",
+      "title": "On Colorful Kruskal--Katona Theorems",
+      "refs": [
+        "https://arxiv.org/abs/2610.02165"
+      ]
     },
     {
-      "id": "paper-3",
-      "kind": "paper",
-      "title": "A question of Ulam and a theorem of de Rham",
+      "arxiv_id": "2610.02077",
+      "arxiv_version": "v1",
+      "published": "2026-10-01",
+      "categories": [
+        "math.AP",
+        "math.OC",
+        "math.PR"
+      ],
+      "authors": [
+        "Alberto González-Sanz",
+        "Marcel Nutz"
+      ],
+      "themes": [
+        "Optimization & control",
+        "Analysis & PDE",
+        "Probability & statistics"
+      ],
+      "abstract": "For small quadratic regularization, the authors describe the support geometry and potential expansions of optimal transport couplings, and prove sharp L^p approximation rates for two estimators of the Brenier map.",
+      "claimed_result": "Under the paper’s assumptions, the support contains the Brenier-map graph for sufficiently small regularization; rescaled sections have ellipsoidal interior and half-space boundary limits, with sharp L^p rates and leading biases for two map approximations.",
+      "assumptions_and_setting": "Quadratic cost and quadratic regularization; marginals have positive C^{1,α} densities on bounded uniformly convex supports with C^{3,α} boundaries, bounded above and away from zero.",
+      "unique_caveat": "The theorems rely on substantial smoothness and uniform convexity; transfer to rough, degenerate, or nonconvex settings is not established by this paper’s stated assumptions.",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2610.00200",
-      "arxiv_id": "2610.00200",
-      "arxiv_version": "v1",
-      "published": "2026-09-19T13:06:10Z",
-      "categories": ["math.MG", "math.DG"],
-      "authors": ["Alexander Lytchak"],
-      "themes": ["Geometry & topology"],
-      "abstract": "The author extends de Rham-style factorization to proper metric spaces, proving a unique decomposition into a Euclidean factor and finite or countable pointed ℓ²-products of irreducible non-Euclidean factors.",
-      "claimed_result": "A canonical splitting is also proved for complete metric spaces and partially answers a question of Ulam.",
-      "assumptions_and_setting": "Unique irreducible-factor decomposition for proper metric spaces; complete spaces may additionally have a residual factor with no nontrivial irreducible factors.",
-      "unique_caveat": "The complete-space result does not guarantee decomposition entirely into irreducible factors; a residual factor may remain.",
-      "evidence_for_ranking": "Broad theorem scope across metric and differential geometry, with no geodesicity, curvature, or dimension restrictions stated for proper spaces; Semantic Scholar reports 0 citations.",
-      "announcement_type": "New submission (v1 in 2 October Math listing; arXiv history says first posted 19 September 2026)",
-      "refs": ["https://arxiv.org/abs/2610.00200", "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,citationCount,influentialCitationCount,referenceCount,fieldsOfStudy,externalIds"]
+      "url": "https://arxiv.org/abs/2610.02077",
+      "id": "2610.02077",
+      "kind": "paper",
+      "title": "Geometry and Convergence of Quadratically Regularized Optimal Transport II",
+      "refs": [
+        "https://arxiv.org/abs/2610.02077"
+      ]
     },
     {
-      "id": "paper-4",
-      "kind": "paper",
-      "title": "Once-reinforced random walk on ℤᵈ has range exponent at least d/(d+1)",
+      "arxiv_id": "2610.02065",
+      "arxiv_version": "v1",
+      "published": "2026-10-01",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Leandro Aurichi",
+        "Rodrigo Santos Monteiro",
+        "Caio Fernando Rodrigues"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The authors extend the linear-arboricity conjecture to infinite graphs of finite maximum degree, prove equivalence of its finite and infinite versions, and bound a related topological linear arboricity for high-girth regular graphs.",
+      "claimed_result": "The authors show finite and infinite versions of the conjecture are equivalent; their new topological variant differs from linear arboricity by at most one, and every 2k-regular graph of girth at least 2k has topological linear arboricity at most k+1.",
+      "assumptions_and_setting": "Infinite graphs are required to have finite maximum degree; the final bound assumes 2k-regularity and girth at least 2k.",
+      "unique_caveat": "The abstract does not claim an unconditional resolution of the underlying finite Linear Arboricity Conjecture; it establishes equivalence and related bounds.",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2610.00090",
-      "arxiv_id": "2610.00090",
-      "arxiv_version": "v1",
-      "published": "2026-09-07T16:29:50Z",
-      "categories": ["math.PR"],
-      "authors": ["Ahmed Bou-Rabee", "Yuval Peres"],
-      "themes": ["Probability & statistics"],
-      "abstract": "The authors prove an expected-range lower bound at scale n^(d/(d+1)) for once-reinforced random walk on ℤᵈ for every d≥2 and reinforcement parameter β≥1.",
-      "claimed_result": "The lower bound matches the predicted exponent scale across every stated dimension and reinforcement parameter.",
-      "assumptions_and_setting": "Each edge begins at weight one and changes to β≥1 after its first crossing; the result concerns ℤᵈ with d≥2.",
-      "unique_caveat": "A lower bound only; the abstract does not establish a matching upper bound or the full asymptotic order.",
-      "evidence_for_ranking": "Proves a predicted exponent lower bound across all allowed β and d≥2; abstract reports a Lean 4 formalization. Semantic Scholar reports 0 citations.",
-      "announcement_type": "New submission (v1 in 2 October Math listing; arXiv history says first posted 7 September 2026)",
-      "refs": ["https://arxiv.org/abs/2610.00090", "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,citationCount,influentialCitationCount,referenceCount,fieldsOfStudy,externalIds"]
+      "url": "https://arxiv.org/abs/2610.02065",
+      "id": "2610.02065",
+      "kind": "paper",
+      "title": "Linear arboricity conjecture for infinite graphs",
+      "refs": [
+        "https://arxiv.org/abs/2610.02065"
+      ]
     },
     {
-      "id": "paper-5",
-      "kind": "paper",
-      "title": "A counterexample to Yau's bounded-mean-curvature embedding question",
+      "arxiv_id": "2610.02127",
+      "arxiv_version": "v1",
+      "published": "2026-10-01",
+      "categories": [
+        "math.CO",
+        "cs.DM",
+        "math.MG"
+      ],
+      "authors": [
+        "Jonathan Niles-Weed",
+        "Shay Sadovsky",
+        "Jacob Shkrob"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Geometry & topology"
+      ],
+      "abstract": "The authors study vector balancing when each vector can be signed and its coordinates permuted, proving explicit bounds for the balancing and prefix problems and asymptotic optimality in dimension by a geometric method.",
+      "claimed_result": "The authors prove explicit bounds for both the signed-permutation vector-balancing problem and its prefix variant, and show the bound is asymptotically optimal in dimension.",
+      "assumptions_and_setting": "Vectors may each receive a sign and a coordinate permutation; the abstract does not specify the detailed norm or exact bound.",
+      "unique_caveat": "The abstract omits the formula and detailed hypotheses, so the constant and the precise range of the optimality statement require reading the full paper.",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2610.00153",
-      "arxiv_id": "2610.00153",
-      "arxiv_version": "v1",
-      "published": "2026-09-10T16:13:51Z",
-      "categories": ["math.DG"],
-      "authors": ["Haoxuan Cheng"],
-      "themes": ["Geometry & topology"],
-      "abstract": "The author constructs complete metrics in dimensions at least four with bounded Ricci curvature and positive injectivity radius but unbounded full curvature, forcing unbounded mean curvature for finite-dimensional Euclidean C² isometric immersions.",
-      "claimed_result": "The author claims this construction gives a counterexample to the universal bounded-mean-curvature embedding question.",
-      "assumptions_and_setting": "Smooth complete metric, bounded Ricci curvature, positive injectivity radius, dimension n≥4; in dimension four Ricci curvature may tend to zero at infinity.",
-      "unique_caveat": "Does not settle analogous cases in dimensions below four.",
-      "evidence_for_ranking": "Direct counterexample to a stated embedding question, extended to dimensions n≥4; Semantic Scholar reports 0 citations.",
-      "announcement_type": "New submission (v1 in 2 October Math listing; arXiv history says first posted 10 September 2026)",
-      "refs": ["https://arxiv.org/abs/2610.00153", "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,citationCount,influentialCitationCount,referenceCount,fieldsOfStudy,externalIds"]
+      "url": "https://arxiv.org/abs/2610.02127",
+      "id": "2610.02127",
+      "kind": "paper",
+      "title": "An optimal constant for vector balancing with permutations",
+      "refs": [
+        "https://arxiv.org/abs/2610.02127"
+      ]
     },
     {
-      "id": "paper-6",
-      "kind": "paper",
-      "title": "A Counterexample to Wormald's Conjecture",
-      "rank": 6,
-      "url": "https://arxiv.org/abs/2610.00086",
-      "arxiv_id": "2610.00086",
+      "arxiv_id": "2610.01998",
       "arxiv_version": "v1",
-      "published": "2026-09-07T02:53:28Z",
-      "categories": ["math.CO"],
-      "authors": ["James Alexander Schreib"],
-      "themes": ["Combinatorics & discrete mathematics"],
-      "abstract": "The author gives a 16-vertex cubic graph counterexample to Wormald's conjecture, extends the family to orders 16+4t, and reports Lean formalization without custom axioms.",
-      "claimed_result": "The graph has no partition of its edges into two isomorphic spanning linear forests; adjoining K₄ copies gives counterexamples at orders 16+4t.",
-      "assumptions_and_setting": "The exhibited graph is disconnected, the disjoint union of K₃,₃ and a 10-vertex bridged graph built from two subdivided copies of K₄.",
-      "unique_caveat": "The author explicitly leaves the connected case unresolved; the reported Lean formalization was not independently audited here.",
-      "evidence_for_ranking": "Concrete counterexample with reported Lean verification; Semantic Scholar reports 0 citations and 0 influential citations.",
-      "announcement_type": "New submission (v1 in 2 October Math listing; arXiv history says first posted 7 September 2026)",
-      "refs": ["https://arxiv.org/abs/2610.00086", "https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,citationCount,influentialCitationCount,referenceCount,fieldsOfStudy,externalIds"]
+      "published": "2026-10-01",
+      "categories": [
+        "math.NT"
+      ],
+      "authors": [
+        "Alberto Acosta Reche"
+      ],
+      "themes": [
+        "Algebra & number theory"
+      ],
+      "abstract": "The author reports an improved error term in the prime geodesic theorem for the modular group and extends the result to congruence subgroups of indefinite quaternion algebras over Q.",
+      "claimed_result": "The author claims an improved error term for the modular-group prime geodesic theorem, applicable more generally to congruence subgroups of indefinite quaternion algebras over Q.",
+      "assumptions_and_setting": "Prime geodesic counting for the modular group and the stated congruence subgroups of indefinite quaternion algebras over Q.",
+      "unique_caveat": "The abstract does not state the old and new error exponents, so the quantitative size of the improvement cannot be assessed from the abstract alone.",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.01998",
+      "id": "2610.01998",
+      "kind": "paper",
+      "title": "On the prime geodesic theorem",
+      "refs": [
+        "https://arxiv.org/abs/2610.01998"
+      ]
     }
   ]
 }

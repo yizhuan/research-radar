@@ -1,95 +1,100 @@
-# AI papers — arXiv announcement batch, 2 October 2026
+# arXiv AI papers — latest available batch: 2 October 2026
 
-Six notable recent papers point to a practical turn in AI: improving agent systems through memory, better evaluation, and tighter interaction with tools or environments. Today: scientific retrieval, cybersecurity tool use, visual reasoning, robot learning, and coding-agent context management. This is an inferred relevance ranking, not an official arXiv trending chart; the papers are only days old, so citation-based momentum is sparse and the ordering is not a popularity measurement.
+Six notable papers from the latest available arXiv announcement batch, led by structured 3D motion and more rigorous tests of agent capabilities. I’ll cover world-motion models, self-improving agents, dynamic-scene benchmarks, and efficient post-training. arXiv has no official trending chart; this ordering is inferred, and citation evidence is sparse for such recent papers, so treat this as a relevance-led shortlist rather than a popularity ranking.
 
 ## Top papers (ranked)
 
-### 1. [ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research](https://arxiv.org/abs/2610.02202)
-- **Abstract:** ScholarCatalyst collects author judgments on research-inspiring papers and finds that current retrieval systems recover only about half of those papers in their top 20, with LLM search agents not outperforming embedding retrieval.
-- **Authors:** Sohyeon Kim, Yoonho Lee, Bo Liu, Dayoon Ko, Rulin Shao, et al.
-- **arXiv:** `2610.02202v1` (published 2026-10-01 17:59:47 UTC; categories: `cs.AI`, `cs.CL`, `cs.IR`)
-- **Evidence for ranking:** Cross-listed across AI, language, and information retrieval; the authors link a public dataset and code, and the paper has early independent coverage on [Pith Science](https://pith.science/paper/2610.02202). It is a timely benchmark contribution, not a demonstrated citation leader.
-- **Claimed contribution:** The authors introduce a benchmark from 184 lead authors covering 207 recent computer-science projects, with 894 research questions and a 191K-paper retrieval corpus; they report strongest Recall@20 of 0.48 and an agent result of 0.42 when using the same retriever.
-- **Caveat:** The authors note that the corpus covers 2025–2026 computer-science papers with uneven subfield representation, and that retrospective author judgments are subject to hindsight.
-- **Announcement type:** new submission, announcement batch 2026-10-02
-- **Themes:** Retrieval & knowledge; Evaluation & benchmarks; Agents & reasoning
+### 1. [MoSE3: Learning World-Space SE(3) at Every Pixel](https://arxiv.org/abs/2610.03716)
+- **Abstract:** MoSE3 predicts per-pixel 6-DoF motion from monocular video using 3D point tracks and rigidity embeddings, with a new synthetic articulated-motion dataset.[1]
+- **Authors:** Jiahuan Cheng, Zhiyi Li, Tian Xia, Ruojin Cai, Yilun Du, Qianqian Wang.[1]
+- **arXiv:** `2610.03716v1` (published 2026-10-02 17:58:52 UTC; categories: `cs.CV`).[1]
+- **Evidence for ranking:** The arXiv record identifies it as a NeurIPS 2026 Spotlight; Semantic Scholar showed 0 citations at this snapshot, so the placement rests on that venue signal and the paper’s cross-benchmark results, not citation momentum.[1]
+- **Claimed contribution:** The authors introduce a feed-forward model that estimates dense world-space SE(3) transforms from monocular RGB, plus Art-Kubric; they report leading results on rigid/articulated motion and point-tracking benchmarks.[1]
+- **Caveat:** The authors say errors in the upstream π³ camera geometry propagate into motion estimates, performance degrades with poor tracks (especially fast motion), and deformable scenes are evaluated only qualitatively.[1]
+- **Announcement type:** new submission, 2 October 2026 batch
+- **Themes:** Multimodal & vision-language; Robotics & control
 
-### 2. [KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards](https://arxiv.org/abs/2610.02206)
-- **Abstract:** KaliBench evaluates natural-language-to-command generation across Kali Linux tools and reports that no tested open-weight model exceeds 42% exact-command accuracy in the unrestricted setting; training with its rewards improves an 8B model.
-- **Authors:** Pengfei Li, Naufal Suryanto, Sicheng Zhang, Muzammal Naseer
-- **arXiv:** `2610.02206v1` (published 2026-10-01 17:59:55 UTC; categories: `cs.CL`, `cs.AI`, `cs.CR`)
-- **Evidence for ranking:** Cross-listed in AI, language, and security; the arXiv record says it was accepted to the NeurIPS 2026 Evaluations and Datasets Track, and links a public [GitHub project](https://github.com/RISys-Lab/KaliBench) and [Hugging Face paper page](https://huggingface.co/papers/2610.02206). Citation momentum is not established for this new submission.
-- **Claimed contribution:** The authors provide 8,504 query-command pairs across 1,642 tools, with manuscript-grounded validation and deterministic scoring, and report fine-tuning gains that bring an 8B model to performance comparable to a 685B MoE model on their evaluation.
-- **Caveat:** The authors note that tool manuals and flags change, documentation can be inconsistent, and alias extraction and automated verification are imperfect.
-- **Announcement type:** new submission, announcement batch 2026-10-02
-- **Themes:** Evaluation & benchmarks; Safety & alignment; Training & adaptation
+### 2. [VERSE: Verified Self-Evolving Optimizer for Agent Harnesses](https://arxiv.org/abs/2610.02616)
+- **Abstract:** VERSE lets an LLM optimizer test and revise both an executor agent’s harness and its own tools and workflow, using execution checks to catch regressions.[3]
+- **Authors:** Zekai Wang, Yingqiang Ge, Zekun Wang, Hai Wang, Yuhui Xu, et al.[3]
+- **arXiv:** `2610.02616v1` (published 2026-10-02 00:16:30 UTC; categories: `cs.AI`, `cs.CL`, `cs.LG`).[3]
+- **Evidence for ranking:** It spans three configured AI categories and evaluates four harness optimizers on held-out and newer multilingual tasks; Semantic Scholar showed 0 citations at this snapshot, so this is a demonstrated-relevance signal, not popularity evidence.[3]
+- **Claimed contribution:** The authors report that adding VERSE improves all four evaluated optimizers on held-out SWE-rebench tasks and a newer out-of-distribution set across five programming languages.[3]
+- **Caveat:** The paper says the incremental benefit of self-evolution varies across optimizer hosts; its experiments use four reimplemented optimizers and benchmark task pools rather than broad live-agent deployments.[3]
+- **Announcement type:** new submission, 2 October 2026 batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
 
-### 3. [VISTA: A Visual Harness for Reasoning in an Interactive World](https://arxiv.org/abs/2610.02200)
-- **Abstract:** VISTA gives a multimodal model long-horizon access to raw visual observations through a retrievable, lossless visual memory; the authors report a perfect score on the 25 public ARC-AGI-3 games and gains on three other visual benchmarks.
-- **Authors:** Qiushi Han, Keya Hu, Linlu Qiu, Cathy Wu, Kaiming He
-- **arXiv:** `2610.02200v1` (published 2026-10-01 17:59:45 UTC; categories: `cs.AI`, `cs.CV`)
-- **Evidence for ranking:** Cross-listed in AI and computer vision, includes a linked [code repository](https://github.com/joshhhhhan/VISTA), and the arXiv comment notes an earlier blog version from August. The result is notable for the benchmark scope, but is not backed here by verified citation momentum.
-- **Claimed contribution:** The authors report that Claude Opus 5.0 with VISTA raises ARC-AGI-3 Relative Human Action Efficiency from 40.68 to 100 and completes all 25 public games using 57.4% fewer actions than first-time human participants.
-- **Caveat:** The authors cannot rule out benchmark exposure in the models’ training data because the models post-date public benchmark release; they point to evaluation on private or novel games as a stronger generalization test.
-- **Announcement type:** new submission, announcement batch 2026-10-02
-- **Themes:** Multimodal & vision-language; Agents & reasoning; Evaluation & benchmarks
+### 3. [4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)
+- **Abstract:** 4DCodeBench tests whether multimodal coding agents can turn videos into executable 3D scenes whose geometry and dynamics reproduce observed motion.[2]
+- **Authors:** Ruihong Shen, Žiga Kovačič, Peter Kulits, Xingrui Wang, Zizhang Li, et al.[2]
+- **arXiv:** `2610.03715v1` (published 2026-10-02 17:58:49 UTC; categories: `cs.CV`, `cs.AI`, `cs.GR`).[2]
+- **Evidence for ranking:** The paper is cross-listed in AI and computer vision, and reports a 200-scene benchmark plus evaluation of 18 models; those are concrete scope and utility signals, not evidence of audience popularity.[2]
+- **Claimed contribution:** The authors report that strong appearance and static-geometry reconstruction do not reliably transfer to complex dynamics, and provide a benchmark with 100 real videos and 100 synthetic scenes.[2]
+- **Caveat:** The authors note that high reconstruction scores can come from prescribed trajectories without learning the underlying physics; simulation’s generalization benefit remains untested.[2]
+- **Announcement type:** new submission, 2 October 2026 batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks; Robotics & control
 
-### 4. [Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.02204)
-- **Abstract:** RPG iteratively improves a robot’s shared symbolic skills and system prompt through simulation practice without weight updates, reporting 95% success on 22 simulated manipulation tasks after 15 rounds and success on all 30 physical trials across three tasks.
-- **Authors:** Yen-Jen Wang, Haozhe Jiang, Shuying Deng, Haoru Xue, Weirui Ye, et al.
-- **arXiv:** `2610.02204v1` (published 2026-10-01 17:59:50 UTC; categories: `cs.RO`, `cs.AI`, `eess.SY`)
-- **Evidence for ranking:** Cross-listed across robotics, AI, and control; the abstract reports simulation and hardware evaluations rather than a simulation-only result. Its placement reflects methodological relevance to embodied agents, not measured popularity.
-- **Claimed contribution:** The authors combine offline-data task selection, simulation-based practice, execution and video-based failure diagnosis, reusable skill revision, and cross-task regression checks; they report improvement from 28.6% to 95.0% success across practice rounds.
-- **Caveat:** Physical evidence is 30 trials over three tasks after calibration. The paper also reports failure on its challenging towel-folding setting, indicating that its reusable procedural skills do not yet solve deformable-object state and contact estimation.
-- **Announcement type:** new submission, announcement batch 2026-10-02
-- **Themes:** Robotics & control; Agents & reasoning; Training & adaptation
+### 4. [Lost in the Request: How Communication Variation Disrupts Retrieval and Action in Email Agents](https://arxiv.org/abs/2610.02627)
+- **Abstract:** The authors vary request style and English dialect while holding task intent fixed, finding that indirect and formal phrasing can reduce email-agent task completion.[5]
+- **Authors:** Feng Chen, Ritam Dutt, Atnaz Taheri, Alex Williams.[5]
+- **arXiv:** `2610.02627v1` (published 2026-10-02 00:35:05 UTC; categories: `cs.AI`).[5]
+- **Evidence for ranking:** The arXiv record reports acceptance to the NeurIPS 2026 Workshop on Evaluation of Interactive Agents; the study tests a RAG pipeline and two tool-using agents across multiple request variations.[5]
+- **Claimed contribution:** The authors find that verbose requests mainly hinder lexical retrieval, while indirect and dialect variants can still harm performance after relevant evidence is retrieved; agent failures more often omit required actions than add unsupported ones.[5]
+- **Caveat:** The evidence is bounded to the three evaluated systems and the paper’s five communication-style axes and four rule-based dialect conditions; it does not establish robustness across all languages or agent tasks.[5]
+- **Announcement type:** new submission, 2 October 2026 batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
 
-### 5. [Agents Are Systems, Not Models: Rethinking Agentic Evaluation](https://arxiv.org/abs/2610.01618)
-- **Abstract:** Across four scientific tasks, the study varies agent configuration and finds substantial run-to-run outcome variation, with task information affecting results more than time budget or model size in its experiments.
-- **Authors:** Luis Wiedmann, Leander Girrbach, Cordelia Schmid, Zeynep Akata
-- **arXiv:** `2610.01618v1` (published 2026-10-01 12:55:07 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** The paper provides an unusually concrete, systems-level agent evaluation, with a released benchmark and more than 18,000 trajectories according to its abstract. Independent discussion is visible in a recent [paper analysis](https://www.bloss0m.com/en/paper-reading/83-agents-are-systems-not-models-agentic-evaluation/); no citation-growth signal is claimed.
-- **Claimed contribution:** The authors study five configuration dimensions and report that about 54% of outcome variance comes from repeating the same configuration; they also find a dedicated verification tool changes behavior more than a prompt asking for verification.
-- **Caveat:** The authors limit their study to four tasks across two scientific domains; memory and multi-agent coordination are not varied, and the prompting-versus-system-design result is demonstrated for verification only.
-- **Announcement type:** new submission, announcement batch 2026-10-02
-- **Themes:** Evaluation & benchmarks; Agents & reasoning; Safety & alignment
+### 5. [LESSER: Post-Training Data Selection with Output-Layer Gradients](https://arxiv.org/abs/2610.03702)
+- **Abstract:** LESSER approximates gradient-based training-data selection from output-layer gradients, avoiding per-example backward passes while retaining batch-level alignment with full-gradient selection.[4]
+- **Authors:** Lyuxin David Zhang, Eric Wong, Surbhi Goel, Anton Xue.[4]
+- **arXiv:** `2610.03702v1` (published 2026-10-02 17:55:42 UTC; categories: `cs.LG`).[4]
+- **Evidence for ranking:** The authors report tests on both supervised fine-tuning and reinforcement-learning benchmarks, with 9.7× and 3.0× lower feature-extraction FLOPs respectively; this is practical evidence, not a readership measure.[4]
+- **Claimed contribution:** The paper presents output-layer gradients as a cheaper feature for data-selection methods and reports downstream performance tracking full-gradient selection.[4]
+- **Caveat:** The authors note that output-layer and full gradients can rank individual examples differently; their observed alignment is at the selected-batch level, and the abstract does not establish performance beyond the evaluated benchmarks.[4]
+- **Announcement type:** new submission, 2 October 2026 batch
+- **Themes:** Training & adaptation; Efficient inference & systems
 
-### 6. [AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents](https://arxiv.org/abs/2610.02163)
-- **Abstract:** AutoCompact trains coding agents to decide when and how to compact context, reporting absolute pass-rate improvements of 9.2% on SWE-bench Verified and 5.0% on SWE-PolyBench Verified over its base model.
-- **Authors:** Xuan Zhang, Longtao Zheng, Cunxiao Du, Bo An, Xin Dong
-- **arXiv:** `2610.02163v1` (published 2026-10-01 17:54:34 UTC; categories: `cs.CL`)
-- **Evidence for ranking:** This is a new core-corpus language paper with test results on two repository-level coding benchmarks and a concrete long-horizon agent systems contribution. No independent citation or attention signal was verified, so it is placed as a notable, relevant paper rather than a popularity pick.
-- **Claimed contribution:** The authors train context compaction as part of an agent policy using supervised fine-tuning and reinforcement learning, and report gains across evaluated inference budgets with a 256K context window that does not overflow.
-- **Caveat:** The authors use 32K-token sequences for reinforcement-learning training, shorter than the 256K evaluation window, and study model-harness co-design within a single scaffold.
-- **Announcement type:** new submission, announcement batch 2026-10-02
-- **Themes:** Efficient inference & systems; Agents & reasoning; Training & adaptation
+### 6. [CuBEs: Culturally-Situated Behavioral Evaluations and the Limitations of Culture-Blind LLM Judges](https://arxiv.org/abs/2610.02622)
+- **Abstract:** CuBEs evaluates LLM behaviors in culturally situated scenarios and reports that judgments and behavior patterns vary across 12 cultures, including differences missed by culture-blind tests.[6]
+- **Authors:** Hoda Ayad, Tanu Mitra, Abhishek Mukherji.[6]
+- **arXiv:** `2610.02622v1` (published 2026-10-02 00:26:55 UTC; categories: `cs.AI`).[6]
+- **Evidence for ranking:** The authors evaluate 13 open- and closed-source models and include a human-labeled dataset spanning 12 cultures; these establish a concrete evaluation contribution, not demonstrated public attention.[6]
+- **Claimed contribution:** The authors propose culturally situated behavioral evaluations and report that non-Western contexts can surface bias dimensions not captured by their culture-blind baseline.[6]
+- **Caveat:** The reported scope is the paper’s 12 cultures, tested behavior scenarios, and 13 models; broader cultural or behavioral coverage is not established by the abstract.[6]
+- **Announcement type:** new submission, 2 October 2026 batch
+- **Themes:** Safety & alignment; Evaluation & benchmarks
 
 ## Trending Research Themes
 
-- **Agents are being evaluated and improved as complete systems.** VISTA adds visual memory and reorganization; AutoCompact learns context-management behavior; “Agents Are Systems, Not Models” varies configuration rather than treating an agent as fixed. Together, these focus on harness and runtime behavior, not just backbone capability.
-- **Evaluation is moving closer to operational behavior.** KaliBench isolates exact command execution, ScholarCatalyst measures retrieval of ideas that authors say mattered, and the agent-evaluation paper tracks configuration, reliability, cost, and trajectories. These benchmarks expose failure modes that final-answer scores can hide.
-- **Embodied and interactive systems are closing the loop with experience.** RPG practices and revises skills in simulation before physical deployment, while VISTA lets a multimodal model revisit visual experience while acting. Both depend on retaining useful state, but their evidence remains bounded by the tested environments and tasks.
+- **Agents are being judged on execution, not just plausible output.** VERSE uses execution checks and regression replay; 4DCodeBench checks generated scenes against video and geometry; the email-agent study measures whether required actions were completed under varied phrasing.[2][3][5]
+- **World understanding is shifting toward structured dynamics.** MoSE3 represents motion as per-pixel rigid transforms, while 4DCodeBench tests whether agents can reconstruct dynamic scenes as executable programs; both expose a gap between static visual fit and understanding motion.[1][2]
+- **Evaluation context is becoming part of the task.** The email study varies request language, and CuBEs varies cultural context, showing why a single canonical prompt or culture-blind judge can miss failures.[5][6]
+- **Efficiency work is targeting costly steps in the training pipeline.** LESSER’s output-layer features aim to reduce gradient-extraction cost for post-training data selection; in this batch it is a distinct method rather than evidence of a broad efficiency trend.[4]
 
 ## Open Problems and Research Directions
 
-- **Open problem — retrieving useful ideas is not just semantic matching.** ScholarCatalyst reports weak topical similarity and limited top-20 recall, while labels are retrospective author judgments. **Direction:** test candidate-generation methods that combine citation structure, expert feedback, and explicit query-to-paper rationale, with held-out fields and independent annotation to measure transfer.
-- **Open problem — command correctness and documentation drift.** KaliBench reports low unrestricted exact-command accuracy, while real CLI manuals can be inconsistent and change over time. **Direction:** rerun the benchmark against versioned tool manuals and real execution environments, separating command syntax, argument semantics, and safe execution.
-- **Open problem — benchmark exposure clouds visual-agent generalization.** VISTA’s authors cannot exclude public-game exposure in model training. **Direction:** evaluate on private, procedurally varied, and physically grounded interactive environments with matched model access and action budgets.
-- **Open problem — current robot skills struggle with deformable state.** RPG reports towel-folding failure despite gains on rigid-object tasks. **Direction:** add explicit contact/layer-state estimation and expand hardware trials across more object types, tasks, and operators.
-- **Open problem — agent configuration effects may not generalize.** The agent-evaluation study covers four tasks and a limited set of system components. **Direction:** replicate configuration sweeps across domains, models, memory policies, and multi-agent settings while reporting variance and cost.
-- **Open problem — learned compaction has a train/evaluation context gap and one-scaffold evidence.** AutoCompact trains on 32K sequences and studies a single scaffold. **Direction:** test longer-sequence training and portability to independent agent frameworks, including recovery quality after compaction rather than task success alone.
+- **Physical understanding versus visual fit (author-stated):** 4DCodeBench says prescribed trajectories can score well without demonstrating learned physics. Follow-up: test interventions on initial conditions and external forces, plus longer-horizon prediction, as the authors propose.[2]
+- **Motion estimation under hard conditions (author-stated):** MoSE3’s errors inherit camera-geometry and tracking errors, and deformable motion lacks quantitative evaluation. Follow-up: benchmark fast motion and deformable scenes quantitatively, including sensitivity to camera-pose errors.[1]
+- **When self-evolution helps (author-stated boundary):** VERSE reports that the incremental benefit varies across optimizer hosts. Follow-up: replicate the verification/self-evolution ablations across more optimizer families, task domains, and deployment budgets.[3]
+- **Robustness across interaction styles (synthesis):** The email-agent results show omissions can persist even when evidence is retrieved. Follow-up: build broader multilingual and naturally occurring request-variation tests that separately score retrieval, action completion, and unsupported actions.[5]
 
 ## Takeaway
 
-The strongest common thread is systems work: remembering the right context, selecting useful prior knowledge, and making tool or environment interactions measurable. The benchmark and task-specific results are promising author-reported evidence, but independent replication and broader out-of-distribution testing are still needed.
+This batch’s clearest methodological thread is better measurement: agents are evaluated on physical dynamics, executable outcomes, and varied user context—not only static outputs. MoSE3 adds a structured motion representation, while LESSER targets a concrete post-training bottleneck. With a single recent batch and little citation history, the list signals useful work to inspect, not a reliable popularity leaderboard.
 
 ## Method and sources
 
-- **Window:** daily; latest arXiv announcement batch available at snapshot time, 2026-10-02 through 2026-10-02 UTC. The selected papers’ arXiv v1 timestamps are on 2026-10-01 UTC; the announcement listing labels the batch Friday, 2 October. No 5 October batch was present in the checked recent listings.
-- **Snapshot:** 2026-10-05 00:10:12 UTC.
-- **Scope:** recent listings for `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`; each selected record was checked on its arXiv abstract page. This is a curated notable-paper selection, not comprehensive coverage of every entry in those large categories.
-- **Inference:** no official arXiv trending chart exists. With the selected submissions only days old, citation evidence is limited; order is inferred from cross-category relevance, paper-specific evaluation/contribution, and checkable corroboration such as linked code, datasets, conference reference, or independent discussion. No downloads, reads, or bookmarks are claimed. Semantic Scholar citation metadata could not be retrieved at snapshot time, so no citation counts are reported.
-- **arXiv category listings:** [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent).
-- **Selected abstracts:** [2610.02202](https://arxiv.org/abs/2610.02202), [2610.02206](https://arxiv.org/abs/2610.02206), [2610.02200](https://arxiv.org/abs/2610.02200), [2610.02204](https://arxiv.org/abs/2610.02204), [2610.01618](https://arxiv.org/abs/2610.01618), [2610.02163](https://arxiv.org/abs/2610.02163).
-- **External corroboration:** [ScholarCatalyst on Pith Science](https://pith.science/paper/2610.02202), [KaliBench GitHub](https://github.com/RISys-Lab/KaliBench) and [Hugging Face](https://huggingface.co/papers/2610.02206), [VISTA code](https://github.com/joshhhhhan/VISTA), [agent-evaluation discussion](https://www.bloss0m.com/en/paper-reading/83-agents-are-systems-not-models-agentic-evaluation/).
-- **Retrieval note:** the Semantic Scholar Graph API did not return metadata (rate limit response); this is why citation counts and momentum are omitted.
+- **Window:** daily batch submitted 2026-10-02 (start and end: 2026-10-02); this is the prior available batch at the snapshot, not a same-day 6 October batch.
+- **Snapshot:** 2026-10-06 00:10 UTC.
+- **Corpus query:** arXiv API query across `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`, sorted by submission date; the date-bounded query returned 488 entries. Selected papers’ arXiv abstract pages were checked individually.
+- **Ranking:** arXiv has no official trending chart. Ordering is inferred from checkable venue signals where present, cross-listing, benchmark/evaluation scope, and reported technical results. Semantic Scholar indexed MoSE3 and VERSE with 0 citations at the snapshot; comparable citation evidence was unavailable for the rest, so no popularity claim is made.
+- **Sources:** arXiv abstract pages linked for every paper above; see numbered source list below.
+
+## Sources
+
+[1] https://arxiv.org/abs/2610.03716
+[2] https://arxiv.org/abs/2610.03715
+[3] https://arxiv.org/abs/2610.02616
+[4] https://arxiv.org/abs/2610.03702
+[5] https://arxiv.org/abs/2610.02627
+[6] https://arxiv.org/abs/2610.02622

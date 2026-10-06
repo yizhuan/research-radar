@@ -1,232 +1,115 @@
 {
-  "schema": "arxiv-trending-ai.v1",
-  "category": "AI (cs.AI, cs.LG, stat.ML, cs.CL, cs.CV, cs.RO, cs.NE, cs.MA)",
+  "schema": "arxiv-trending-ai-v1",
+  "category": "AI — core arXiv categories",
   "window": "daily",
   "date": "2026-10-02",
-  "title": "AI papers — arXiv announcement batch, 2 October 2026",
+  "title": "arXiv AI papers — latest available batch: 2 October 2026",
+  "global_caveat": "arXiv has no official trending chart; this ordering is inferred, and citation evidence is sparse for such recent papers, so treat this as a relevance-led shortlist rather than a popularity ranking.",
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-10-02.md",
   "entry_count": 6,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart. This is an inferred relevance/notability order, not a popularity ranking; papers are very recent and citation-based momentum is sparse.",
   "sections": [
     {
-      "id": "2610.02202",
+      "id": "2610.03716",
       "kind": "paper",
-      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "title": "MoSE3: Learning World-Space SE(3) at Every Pixel",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2610.02202",
-      "arxiv_id": "2610.02202",
+      "url": "https://arxiv.org/abs/2610.03716",
+      "arxiv_id": "2610.03716",
       "arxiv_version": "v1",
-      "published": "2026-10-01T17:59:47Z",
-      "announcement_batch": "2026-10-02",
-      "announcement_type": "new submission",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.IR"
-      ],
-      "authors": [
-        "Sohyeon Kim",
-        "Yoonho Lee",
-        "Bo Liu",
-        "Dayoon Ko",
-        "Rulin Shao",
-        "Seungone Kim",
-        "Graham Neubig",
-        "Pang Wei Koh",
-        "Aakanksha Chowdhery",
-        "Akari Asai",
-        "Omar Khattab",
-        "Yejin Choi",
-        "Gunhee Kim",
-        "Chelsea Finn"
-      ],
-      "themes": [
-        "Retrieval & knowledge",
-        "Evaluation & benchmarks",
-        "Agents & reasoning"
-      ],
-      "abstract": "ScholarCatalyst collects author judgments on research-inspiring papers and finds that current retrieval systems recover only about half of those papers in their top 20, with LLM search agents not outperforming embedding retrieval.",
-      "claimed_contribution": "The authors introduce a benchmark from 184 lead authors covering 207 recent computer-science projects, with 894 research questions and a 191K-paper retrieval corpus; they report strongest Recall@20 of 0.48 and an agent result of 0.42 when using the same retriever.",
-      "unique_caveat": "The authors note that the corpus covers 2025–2026 computer-science papers with uneven subfield representation, and that retrospective author judgments are subject to hindsight.",
-      "refs": [
-        "https://pith.science/paper/2610.02202",
-        "https://huggingface.co/datasets/ScholarCatalyst/ScholarCatalyst"
-      ]
+      "published": "2026-10-02T17:58:52Z",
+      "categories": ["cs.CV"],
+      "authors": ["Jiahuan Cheng", "Zhiyi Li", "Tian Xia", "Ruojin Cai", "Yilun Du", "Qianqian Wang"],
+      "themes": ["Multimodal & vision-language", "Robotics & control"],
+      "abstract": "MoSE3 predicts per-pixel 6-DoF motion from monocular video using 3D point tracks and rigidity embeddings, with a new synthetic articulated-motion dataset.",
+      "claimed_contribution": "The authors introduce a feed-forward model for dense world-space SE(3) motion from monocular RGB plus Art-Kubric, reporting leading rigid/articulated motion and point-tracking benchmark results.",
+      "unique_caveat": "The authors report sensitivity to upstream π³ camera geometry and track quality, especially under fast motion; deformable scenes are evaluated only qualitatively.",
+      "refs": [1]
     },
     {
-      "id": "2610.02206",
+      "id": "2610.02616",
       "kind": "paper",
-      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "title": "VERSE: Verified Self-Evolving Optimizer for Agent Harnesses",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2610.02206",
-      "arxiv_id": "2610.02206",
+      "url": "https://arxiv.org/abs/2610.02616",
+      "arxiv_id": "2610.02616",
       "arxiv_version": "v1",
-      "published": "2026-10-01T17:59:55Z",
-      "announcement_batch": "2026-10-02",
-      "announcement_type": "new submission",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CR"
-      ],
-      "authors": [
-        "Pengfei Li",
-        "Naufal Suryanto",
-        "Sicheng Zhang",
-        "Muzammal Naseer"
-      ],
-      "themes": [
-        "Evaluation & benchmarks",
-        "Safety & alignment",
-        "Training & adaptation"
-      ],
-      "abstract": "KaliBench evaluates natural-language-to-command generation across Kali Linux tools and reports that no tested open-weight model exceeds 42% exact-command accuracy in the unrestricted setting; training with its rewards improves an 8B model.",
-      "claimed_contribution": "The authors provide 8,504 query-command pairs across 1,642 tools, with manuscript-grounded validation and deterministic scoring, and report fine-tuning gains that bring an 8B model to performance comparable to a 685B MoE model on their evaluation.",
-      "unique_caveat": "The authors note that tool manuals and flags change, documentation can be inconsistent, and alias extraction and automated verification are imperfect.",
-      "refs": [
-        "https://github.com/RISys-Lab/KaliBench",
-        "https://huggingface.co/papers/2610.02206"
-      ]
+      "published": "2026-10-02T00:16:30Z",
+      "categories": ["cs.AI", "cs.CL", "cs.LG"],
+      "authors": ["Zekai Wang", "Yingqiang Ge", "Zekun Wang", "Hai Wang", "Yuhui Xu", "Joshua Frandsen", "Shancong Fu", "Ashia C. Wilson", "Chandan K. Reddy"],
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "VERSE lets an LLM optimizer test and revise both an executor agent’s harness and its own tools and workflow, using execution checks to catch regressions.",
+      "claimed_contribution": "The authors report improvements on held-out SWE-rebench tasks and newer out-of-distribution tasks in five programming languages when VERSE is added to four evaluated harness optimizers.",
+      "unique_caveat": "The paper says self-evolution’s incremental benefit varies by optimizer host; evaluation uses four reimplemented optimizers and benchmark task pools.",
+      "refs": [3]
     },
     {
-      "id": "2610.02200",
+      "id": "2610.03715",
       "kind": "paper",
-      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2610.02200",
-      "arxiv_id": "2610.02200",
+      "url": "https://arxiv.org/abs/2610.03715",
+      "arxiv_id": "2610.03715",
       "arxiv_version": "v1",
-      "published": "2026-10-01T17:59:45Z",
-      "announcement_batch": "2026-10-02",
-      "announcement_type": "new submission",
-      "categories": [
-        "cs.AI",
-        "cs.CV"
-      ],
-      "authors": [
-        "Qiushi Han",
-        "Keya Hu",
-        "Linlu Qiu",
-        "Cathy Wu",
-        "Kaiming He"
-      ],
-      "themes": [
-        "Multimodal & vision-language",
-        "Agents & reasoning",
-        "Evaluation & benchmarks"
-      ],
-      "abstract": "VISTA gives a multimodal model long-horizon access to raw visual observations through a retrievable, lossless visual memory; the authors report a perfect score on the 25 public ARC-AGI-3 games and gains on three other visual benchmarks.",
-      "claimed_contribution": "The authors report that Claude Opus 5.0 with VISTA raises ARC-AGI-3 Relative Human Action Efficiency from 40.68 to 100 and completes all 25 public games using 57.4% fewer actions than first-time human participants.",
-      "unique_caveat": "The authors cannot rule out benchmark exposure in the models’ training data because the models post-date public benchmark release; they point to evaluation on private or novel games as a stronger generalization test.",
-      "refs": [
-        "https://github.com/joshhhhhan/VISTA"
-      ]
+      "published": "2026-10-02T17:58:49Z",
+      "categories": ["cs.CV", "cs.AI", "cs.GR"],
+      "authors": ["Ruihong Shen", "Žiga Kovačič", "Peter Kulits", "Xingrui Wang", "Zizhang Li", "Joshua B. Tenenbaum", "Alan Yuille", "Jieneng Chen", "Jiajun Wu"],
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks", "Robotics & control"],
+      "abstract": "4DCodeBench tests whether multimodal coding agents can turn videos into executable 3D scenes whose geometry and dynamics reproduce observed motion.",
+      "claimed_contribution": "The authors introduce a 200-scene benchmark and report that static appearance and geometry reconstruction do not reliably transfer to complex dynamics.",
+      "unique_caveat": "The authors note that prescribed trajectories can score well without demonstrating learned physics; simulation’s generalization benefit remains untested.",
+      "refs": [2]
     },
     {
-      "id": "2610.02204",
+      "id": "2610.02627",
       "kind": "paper",
-      "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "title": "Lost in the Request: How Communication Variation Disrupts Retrieval and Action in Email Agents",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2610.02204",
-      "arxiv_id": "2610.02204",
+      "url": "https://arxiv.org/abs/2610.02627",
+      "arxiv_id": "2610.02627",
       "arxiv_version": "v1",
-      "published": "2026-10-01T17:59:50Z",
-      "announcement_batch": "2026-10-02",
-      "announcement_type": "new submission",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "eess.SY"
-      ],
-      "authors": [
-        "Yen-Jen Wang",
-        "Haozhe Jiang",
-        "Shuying Deng",
-        "Haoru Xue",
-        "Weirui Ye",
-        "Rocky Duan",
-        "Nika Haghtalab",
-        "S. Shankar Sastry",
-        "Pieter Abbeel",
-        "Haozhi Qi"
-      ],
-      "themes": [
-        "Robotics & control",
-        "Agents & reasoning",
-        "Training & adaptation"
-      ],
-      "abstract": "RPG iteratively improves a robot’s shared symbolic skills and system prompt through simulation practice without weight updates, reporting 95% success on 22 simulated manipulation tasks after 15 rounds and success on all 30 physical trials across three tasks.",
-      "claimed_contribution": "The authors combine offline-data task selection, simulation-based practice, execution and video-based failure diagnosis, reusable skill revision, and cross-task regression checks; they report improvement from 28.6% to 95.0% success across practice rounds.",
-      "unique_caveat": "Physical evidence is 30 trials over three tasks after calibration. The paper also reports failure on its challenging towel-folding setting, indicating that its reusable procedural skills do not yet solve deformable-object state and contact estimation.",
-      "refs": [
-        "https://arxiv.org/html/2610.02204"
-      ]
+      "published": "2026-10-02T00:35:05Z",
+      "categories": ["cs.AI"],
+      "authors": ["Feng Chen", "Ritam Dutt", "Atnaz Taheri", "Alex Williams"],
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "The authors vary request style and English dialect while holding task intent fixed, finding that indirect and formal phrasing can reduce email-agent task completion.",
+      "claimed_contribution": "The authors report that verbosity can hinder lexical retrieval, while indirect and dialect variants can still harm performance after relevant evidence is retrieved.",
+      "unique_caveat": "Evidence is bounded to three evaluated systems and the paper’s five communication-style axes and four rule-based dialect conditions.",
+      "refs": [5]
     },
     {
-      "id": "2610.01618",
+      "id": "2610.03702",
       "kind": "paper",
-      "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
+      "title": "LESSER: Post-Training Data Selection with Output-Layer Gradients",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2610.01618",
-      "arxiv_id": "2610.01618",
+      "url": "https://arxiv.org/abs/2610.03702",
+      "arxiv_id": "2610.03702",
       "arxiv_version": "v1",
-      "published": "2026-10-01T12:55:07Z",
-      "announcement_batch": "2026-10-02",
-      "announcement_type": "new submission",
-      "categories": [
-        "cs.AI"
-      ],
-      "authors": [
-        "Luis Wiedmann",
-        "Leander Girrbach",
-        "Cordelia Schmid",
-        "Zeynep Akata"
-      ],
-      "themes": [
-        "Evaluation & benchmarks",
-        "Agents & reasoning",
-        "Safety & alignment"
-      ],
-      "abstract": "Across four scientific tasks, the study varies agent configuration and finds substantial run-to-run outcome variation, with task information affecting results more than time budget or model size in its experiments.",
-      "claimed_contribution": "The authors study five configuration dimensions and report that about 54% of outcome variance comes from repeating the same configuration; they also find a dedicated verification tool changes behavior more than a prompt asking for verification.",
-      "unique_caveat": "The authors limit their study to four tasks across two scientific domains; memory and multi-agent coordination are not varied, and the prompting-versus-system-design result is demonstrated for verification only.",
-      "refs": [
-        "https://www.bloss0m.com/en/paper-reading/83-agents-are-systems-not-models-agentic-evaluation/"
-      ]
+      "published": "2026-10-02T17:55:42Z",
+      "categories": ["cs.LG"],
+      "authors": ["Lyuxin David Zhang", "Eric Wong", "Surbhi Goel", "Anton Xue"],
+      "themes": ["Training & adaptation", "Efficient inference & systems"],
+      "abstract": "LESSER approximates gradient-based training-data selection from output-layer gradients, avoiding per-example backward passes while retaining batch-level alignment with full-gradient selection.",
+      "claimed_contribution": "The paper presents output-layer gradients as a cheaper feature for data-selection methods and reports lower feature-extraction FLOPs on SFT and RL benchmarks.",
+      "unique_caveat": "The authors note that output-layer and full gradients can rank individual examples differently; reported alignment is at the selected-batch level and results are bounded to evaluated benchmarks.",
+      "refs": [4]
     },
     {
-      "id": "2610.02163",
+      "id": "2610.02622",
       "kind": "paper",
-      "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+      "title": "CuBEs: Culturally-Situated Behavioral Evaluations and the Limitations of Culture-Blind LLM Judges",
       "rank": 6,
-      "url": "https://arxiv.org/abs/2610.02163",
-      "arxiv_id": "2610.02163",
+      "url": "https://arxiv.org/abs/2610.02622",
+      "arxiv_id": "2610.02622",
       "arxiv_version": "v1",
-      "published": "2026-10-01T17:54:34Z",
-      "announcement_batch": "2026-10-02",
-      "announcement_type": "new submission",
-      "categories": [
-        "cs.CL"
-      ],
-      "authors": [
-        "Xuan Zhang",
-        "Longtao Zheng",
-        "Cunxiao Du",
-        "Bo An",
-        "Xin Dong"
-      ],
-      "themes": [
-        "Efficient inference & systems",
-        "Agents & reasoning",
-        "Training & adaptation"
-      ],
-      "abstract": "AutoCompact trains coding agents to decide when and how to compact context, reporting absolute pass-rate improvements of 9.2% on SWE-bench Verified and 5.0% on SWE-PolyBench Verified over its base model.",
-      "claimed_contribution": "The authors train context compaction as part of an agent policy using supervised fine-tuning and reinforcement learning, and report gains across evaluated inference budgets with a 256K context window that does not overflow.",
-      "unique_caveat": "The authors use 32K-token sequences for reinforcement-learning training, shorter than the 256K evaluation window, and study model-harness co-design within a single scaffold.",
-      "refs": [
-        "https://arxiv.org/html/2610.02163"
-      ]
+      "published": "2026-10-02T00:26:55Z",
+      "categories": ["cs.AI"],
+      "authors": ["Hoda Ayad", "Tanu Mitra", "Abhishek Mukherji"],
+      "themes": ["Safety & alignment", "Evaluation & benchmarks"],
+      "abstract": "CuBEs evaluates LLM behaviors in culturally situated scenarios and reports that judgments and behavior patterns vary across 12 cultures, including differences missed by culture-blind tests.",
+      "claimed_contribution": "The authors propose culturally situated behavioral evaluations and report that non-Western contexts can surface bias dimensions not captured by their culture-blind baseline.",
+      "unique_caveat": "The reported scope is the paper’s 12 cultures, tested behavior scenarios, and 13 models; broader coverage is not established by the abstract.",
+      "refs": [6]
     }
   ]
 }

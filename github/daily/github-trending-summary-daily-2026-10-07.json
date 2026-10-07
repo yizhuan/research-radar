@@ -1,0 +1,112 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-07",
+  "title": "GitHub Trending Summary - Daily - 2026-10-07",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-10-07.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-10-07 00:28 UTC",
+  "date_range": "2026-10-07 through 2026-10-07",
+  "ranking_basis": "GitHub Trending daily star gains",
+  "ranking_explanation": "All 12 repositories shown by the daily GitHub Trending page were included and sorted by the page's displayed stars-today counts, descending.",
+  "global_caveat": "One-day GitHub Trending snapshot, not a representative measure of all GitHub activity. Counts reflect the page at capture time; no prior-window comparison was collected.",
+  "comparison_basis": null,
+  "themes": [
+    {"id": "agent-workflows", "title": "Agent workflows", "summary": "Coding agents applied to testing, reverse engineering, CAD, and reusable task workflows.", "supporting_repository_ids": ["01-morluto-rea", "02-tester-army-e2e", "05-mattpocock-skills", "06-msitarzewski-agency-agents", "07-earthtojake-text-to-cad"]},
+    {"id": "agent-infrastructure-and-ux", "title": "Agent infrastructure and interaction design", "summary": "Persistent context, design guidance, and response-format skills extend agent usefulness beyond code generation.", "supporting_repository_ids": ["08-pbakaus-impeccable", "09-thedotmack-claude-mem", "10-ayghri-i-have-adhd", "11-cathrynlavery-diagram-design"]},
+    {"id": "non-agent-practical-software", "title": "Non-agent practical software and compute", "summary": "Platform compatibility, self-hosted personal software, and GPU kernels remain visible alongside AI tooling.", "supporting_repository_ids": ["03-duartesantos8-opengym", "04-boykopovar-anyps5", "12-deepseek-ai-deepgemm"]}
+  ],
+  "sections": [
+    {"id": "00-snapshot", "kind": "snapshot", "title": "Snapshot", "content": "Daily GitHub Trending snapshot captured 2026-10-07 00:28 UTC. Date range: 2026-10-07 through 2026-10-07. Ranking by displayed daily star gains."},
+    {"id": "00-headline", "kind": "headline", "title": "Headline", "content": "Agent-centric developer tools lead today's snapshot: REA's agent-assisted reverse engineering tops the daily gain list, alongside natural-language app testing, coding-agent skills, persistent agent memory, and CAD workflows. A few non-agent standouts—PS5 executable porting, a self-hosted fitness tracker, and DeepSeek's GPU kernels—show the list is not exclusively AI tooling."},
+    {
+      "id": "01-morluto-rea", "kind": "repo", "title": "morluto/rea", "rank": 1,
+      "url": "https://github.com/morluto/rea", "description": "Reverse engineer anything with agents, from app behavior down to native binaries.", "language": "TypeScript", "stars_gained": 2956, "total_stars": 9367,
+      "default_branch_commit": "472b72a53068a8e2ec78fe239d687023482daaa7", "default_branch": "main",
+      "why_notable": "It leads the captured daily list; its README describes a local analysis workflow spanning native binaries, JavaScript/Electron apps, .NET assemblies, and websites, with evidence and limitations attached to results.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 1, "spoken_name": "R E A", "refs": ["morluto/rea", "GitHub README"]
+    },
+    {
+      "id": "02-tester-army-e2e", "kind": "repo", "title": "tester-army/e2e", "rank": 2,
+      "url": "https://github.com/tester-army/e2e", "description": "Next generation e2e testing framework for web and mobile apps.", "language": "TypeScript", "stars_gained": 1725, "total_stars": 6312,
+      "default_branch_commit": "b7ba0097abe950b6cd3da25c45e58087fc77b668", "default_branch": "main",
+      "why_notable": "Strongest testing signal; the README says agent actions can be checked by ordinary assertions and replayed without repeated model calls until the app changes.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 2, "spoken_name": "e2e", "refs": ["tester-army/e2e", "GitHub README"]
+    },
+    {
+      "id": "03-duartesantos8-opengym", "kind": "repo", "title": "DuarteSantos8/openGym", "rank": 3,
+      "url": "https://github.com/DuarteSantos8/openGym", "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.", "language": "JavaScript", "stars_gained": 1419, "total_stars": 5677,
+      "default_branch_commit": "31c6795b40fb54130192b5016d7dc29e9f457d30", "default_branch": "main",
+      "why_notable": "The leading personal-use app in this snapshot, with workout logging, imports, and passkey login described in its GitHub listing.",
+      "theme_ids": ["non-agent-practical-software"], "signal_strength": "lead", "evidence_density": "standard", "narration_priority": 3, "spoken_name": "openGym", "refs": ["DuarteSantos8/openGym"]
+    },
+    {
+      "id": "04-boykopovar-anyps5", "kind": "repo", "title": "boykopovar/AnyPS5", "rank": 4,
+      "url": "https://github.com/boykopovar/AnyPS5", "description": "Tool for automatic PS5 executables porting to Linux and Windows", "language": "C++", "stars_gained": 949, "total_stars": 6499,
+      "default_branch_commit": "ee391a5614246338aec9cb7a3a3dd4f479aec9f3", "default_branch": "main",
+      "why_notable": "A platform-compatibility project with nearly a thousand daily stars, standing out from the agent-heavy developer-tool cluster.",
+      "theme_ids": ["non-agent-practical-software"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 4, "spoken_name": "AnyPS5", "refs": ["boykopovar/AnyPS5"]
+    },
+    {
+      "id": "05-mattpocock-skills", "kind": "repo", "title": "mattpocock/skills", "rank": 5,
+      "url": "https://github.com/mattpocock/skills", "description": "Skills for Real Engineers. Straight from my .agents directory.", "language": "Shell", "stars_gained": 889, "total_stars": 278128,
+      "default_branch_commit": "6fd947921b935b7e1e69293a200400f0fdd5c15f", "default_branch": "main",
+      "why_notable": "High absolute daily growth on an already large repo; its README emphasizes small, editable, model-agnostic agent skills rather than a single end-to-end process framework.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 5, "spoken_name": "Matt Pocock Skills", "refs": ["mattpocock/skills", "GitHub README"]
+    },
+    {
+      "id": "06-msitarzewski-agency-agents", "kind": "repo", "title": "msitarzewski/agency-agents", "rank": 6,
+      "url": "https://github.com/msitarzewski/agency-agents", "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.", "language": "Shell", "stars_gained": 623, "total_stars": 157823,
+      "default_branch_commit": "5baafd5f1452e9785c413065b033ec083ab27757", "default_branch": "main",
+      "why_notable": "Shows continued appetite for packaged, role-based agent workflows, from frontend work to community tasks.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 6, "spoken_name": "Agency Agents", "refs": ["msitarzewski/agency-agents"]
+    },
+    {
+      "id": "07-earthtojake-text-to-cad", "kind": "repo", "title": "earthtojake/text-to-cad", "rank": 7,
+      "url": "https://github.com/earthtojake/text-to-cad", "description": "Give your agent CAD superpowers.", "language": "Python", "stars_gained": 619, "total_stars": 17973,
+      "default_branch_commit": "844d039e89b0f24816ca7ce1f8838d4590317427", "default_branch": "main",
+      "why_notable": "Takes agent tooling into physical design: its README describes local generation of STEP/GLB/STL/3MF models, manufacturing checks, and drawing workflows.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 7, "spoken_name": "Text to CAD", "refs": ["earthtojake/text-to-cad", "GitHub README"]
+    },
+    {
+      "id": "08-pbakaus-impeccable", "kind": "repo", "title": "pbakaus/impeccable", "rank": 8,
+      "url": "https://github.com/pbakaus/impeccable", "description": "The design language that makes your AI harness better at design.", "language": "JavaScript", "stars_gained": 616, "total_stars": 77684,
+      "default_branch_commit": "2a26f1c50b9c4f86d10c0fec8f74cf523a2236e7", "default_branch": "main",
+      "why_notable": "Design quality is being addressed as an agent-harness problem, extending the agent tooling theme beyond code generation.",
+      "theme_ids": ["agent-infrastructure-and-ux"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 8, "spoken_name": "Impeccable", "refs": ["pbakaus/impeccable"]
+    },
+    {
+      "id": "09-thedotmack-claude-mem", "kind": "repo", "title": "thedotmack/claude-mem", "rank": 9,
+      "url": "https://github.com/thedotmack/claude-mem", "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More", "language": "TypeScript", "stars_gained": 534, "total_stars": 97166,
+      "default_branch_commit": "71ddd11735d6dc38a6356fe376921fc216f2aa38", "default_branch": "main",
+      "why_notable": "Session memory is a distinct layer of agent infrastructure; the project says it captures, compresses, and retrieves relevant context across multiple agent environments.",
+      "theme_ids": ["agent-infrastructure-and-ux"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 9, "spoken_name": "Claude Mem", "refs": ["thedotmack/claude-mem"]
+    },
+    {
+      "id": "10-ayghri-i-have-adhd", "kind": "repo", "title": "ayghri/i-have-adhd", "rank": 10,
+      "url": "https://github.com/ayghri/i-have-adhd", "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.", "language": "Python", "stars_gained": 326, "total_stars": 54398,
+      "default_branch_commit": "723af7d9afaf43eb871dbcce6129e2bf80de90d5", "default_branch": "main",
+      "why_notable": "A small, user-facing interaction preference packaged as an agent skill, rather than another agent runtime or model.",
+      "theme_ids": ["agent-infrastructure-and-ux"], "signal_strength": "brief", "evidence_density": "standard", "narration_priority": 10, "spoken_name": "I Have ADHD", "refs": ["ayghri/i-have-adhd"]
+    },
+    {
+      "id": "11-cathrynlavery-diagram-design", "kind": "repo", "title": "cathrynlavery/diagram-design", "rank": 11,
+      "url": "https://github.com/cathrynlavery/diagram-design", "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.", "language": "HTML", "stars_gained": 228, "total_stars": 44021,
+      "default_branch_commit": "d1376371965f513d99cc9ec388835d255c5c88d5", "default_branch": "main",
+      "why_notable": "Adds visual communication to the agent-tooling cluster, advertising 42 diagram types delivered as self-contained HTML and SVG.",
+      "theme_ids": ["agent-infrastructure-and-ux"], "signal_strength": "brief", "evidence_density": "standard", "narration_priority": 11, "spoken_name": "Diagram Design", "refs": ["cathrynlavery/diagram-design"]
+    },
+    {
+      "id": "12-deepseek-ai-deepgemm", "kind": "repo", "title": "deepseek-ai/DeepGEMM", "rank": 12,
+      "url": "https://github.com/deepseek-ai/DeepGEMM", "description": "DeepGEMM: clean and efficient BLAS kernel library on GPU", "language": "CUDA", "stars_gained": 199, "total_stars": 8691,
+      "default_branch_commit": "057ca5964aae0879ff2e0eb71ee05a3cb0ba3df7", "default_branch": "main",
+      "why_notable": "The systems-level counterpoint: its README describes runtime-compiled GPU kernels for dense and grouped GEMMs, with requirements centered on NVIDIA GPUs and CUDA.",
+      "theme_ids": ["non-agent-practical-software"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 12, "spoken_name": "Deep GEMM", "refs": ["deepseek-ai/DeepGEMM", "GitHub README"]
+    },
+    {"id": "80-trending-technologies-and-themes", "kind": "themes", "title": "Trending Technologies and Themes", "content": "Agent workflows are applied to testing, reverse engineering, CAD, and reusable task guidance. Agent infrastructure and UX projects focus on session memory, design quality, diagrams, and response format. Non-agent standouts include platform compatibility, self-hosted personal software, and GPU kernels. Languages: TypeScript (3), Shell (2), Python (2), JavaScript (2), C++ (1), CUDA (1), HTML (1).", "theme_ids": ["agent-workflows", "agent-infrastructure-and-ux", "non-agent-practical-software"]},
+    {"id": "90-takeaway", "kind": "takeaway", "title": "Takeaway", "content": "The clearest signal is that coding agents are being surrounded by usable layers: persistent context, skills, design conventions, and workflows that test or manipulate real applications. Meanwhile, substantial growth for AnyPS5 and openGym—and continued visibility for DeepGEMM—shows that practical non-agent projects still break through. This is a snapshot of one day's GitHub Trending page, not a broad measure of all GitHub activity."},
+    {"id": "99-sources-and-method", "kind": "sources", "title": "Sources and Method", "content": "Primary: https://github.com/trending?since=daily, captured 2026-10-07 at 00:28 UTC. Corroboration: GitHub REST API GET /repos/{owner}/{repo} and GET /repos/{owner}/{repo}/commits/{default_branch} for each listed repository. Current README content reviewed for morluto/rea, tester-army/e2e, mattpocock/skills, earthtojake/text-to-cad, and deepseek-ai/DeepGEMM. Daily gains are the page's stars-today figures; no prior-window comparison was collected."}
+  ]
+}

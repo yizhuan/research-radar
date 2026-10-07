@@ -1,0 +1,384 @@
+{
+  "organizations": {
+    "Anthropic": [
+      {
+        "title": "Newsroom \\ Anthropic",
+        "description": "Sep 1, 2026 · Date Category Title Oct 6, 2026 Announcements Expanding the Cyber Verification Program Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+        "url": "https://www.anthropic.com/news",
+        "position": 1
+      },
+      {
+        "title": "Product announcements Category | Blog | Claude by Anthropic",
+        "description": "The latest Claude news from Anthropic: product announcements, model releases, and feature updates across Claude, Claude Code, and the Claude Platform.",
+        "url": "https://claude.com/blog-category/announcements",
+        "position": 2
+      },
+      {
+        "title": "Anthropic Pauses AI Training After Claude Breach [2026]",
+        "description": "Sep 1, 2026 · Anthropic has temporarily paused parts of its AI training and cybersecurity evaluation pipeline for several weeks after Claude models reached the live internet from inside third-party test environments and took actions on real systems without authorization, according to reporting from Axios and corroborating coverage from CNET, The Economic Times, Business Insider, Cryptonomist, and ...",
+        "url": "https://tech-insider.org/anthropic-pauses-ai-training-claude-unauthorized-actions-2026/",
+        "position": 3
+      },
+      {
+        "title": "Claude Updates by Anthropic - October 2026 - Releasebot",
+        "description": "6 days ago · Browse a full list of updates made to Claude by Anthropic. Follow to get all release notes by email, RSS, and more.",
+        "url": "https://releasebot.io/updates/anthropic/claude",
+        "position": 4
+      },
+      {
+        "title": "Anthropic News: Claude, AI Safety & Research Updates",
+        "description": "6 days ago · The latest Anthropic news — Claude model releases, AI safety research, partnerships, and funding — curated in real time by Let's Data Science.",
+        "url": "https://letsdatascience.com/news/topic/anthropic",
+        "position": 5
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI will start watermarking ChatGPT's text in the EU | TechCrunch",
+        "description": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks harder to detect, it says.",
+        "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+        "position": 1
+      },
+      {
+        "title": "ChatGPT",
+        "description": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app.ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may be reviewed and used to improve our AI models.",
+        "url": "https://chatgpt.com/...",
+        "position": 2
+      },
+      {
+        "title": "OpenAI is reading ChatGPT chats, humans look at what... - India Today",
+        "description": "How ChatGPT users can stop OpenAI from reading chats. When the investigators asked OpenAI where they inform users that humans may review their chats to improve its AI models, the company did not initially provide an answer.",
+        "url": "https://www.indiatoday.in/technology/news/story/openai-is-reading-chatgpt-chats-humans-look-at-what-people-say-to-ai-2994794-2026-09-15",
+        "position": 3
+      },
+      {
+        "title": "OpenAI reveals its new \"always-on\" agents called Dots - Hypertext",
+        "description": "30th September 2026. This week, OpenAI is hosting its annual Dev Day conference, which means a flurry of new announcements have been made by the company. One of these announcements pertains to a new agentic AI product called Dots.",
+        "url": "https://htxt.co.za/2026/09/openai-reveals-its-new-always-on-agents-called-dots/",
+        "position": 4
+      },
+      {
+        "title": "PYMNTS | OpenAI Adds Virtual Try-On Feature to ChatGPT",
+        "description": "“Virtually try on clothing and accessories: A ‘Try on’ button will appear on product listings for clothes and accessories in ChatGPT,” OpenAI said in the note. “Select it, then take or upload a selfie to generate a virtual try-on with ChatGPT images.",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-adds-virtual-try-on-feature-chatgpt/",
+        "position": 5
+      }
+    ],
+    "Google": [
+      {
+        "title": "News — Google DeepMind",
+        "description": "About Google DeepMind. Responsibility. Ensuring AI safety through proactive security, even against evolving threats. News. Discover our latest AI breakthroughs, projects, and updates.",
+        "url": "https://deepmind.google/blog/",
+        "position": 1
+      },
+      {
+        "title": "Google I/O '25 Keynote - YouTube",
+        "description": "Tune in to learn the latest news, announcements, and AI updates from Google. 00:00:00 Opening00:02:17 Introduction00:19:29 Google DeepMind ...Google DeepMind + Gemini for Developers.",
+        "url": "https://www.youtube.com/watch?v=o8NiE3XMPrM",
+        "position": 2
+      },
+      {
+        "title": "Introducing Gemini 4 Argon",
+        "description": "SVP, Google DeepMind and Chief AI Architect, Google.Google’s new Gemini 4 Argon model brings advanced reasoning to complex, long-horizon professional tasks. The model features an industry-leading 1 million token limit for deep, multi-step problem solving.",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "position": 3
+      },
+      {
+        "title": "Google reshuffles DeepMind as Discovery Loop spins out",
+        "description": "Google is separating two kinds of AI work. The official message frames the change as a way to do two things at once: keep Google DeepMind moving faster on Gemini and related product work, while giving Hassabis more room to focus on AGI, science, and long-range strategy.",
+        "url": "https://theaifeed.com/en/ai-news/google-deepmind-leadership-reshuffle-discovery-loop-2026/",
+        "position": 4
+      },
+      {
+        "title": "Gemini CLI, 16–22 February 2026 · AIDRAN",
+        "description": "Product · Google DeepMind › Gemini · reading for release 2026-W08. In development Published 2 Oct 2026.News and analysis about Gemini CLI published that week, found and checked for relevance. It’s outside AIDRAN’s measurement: no figure on this page comes from it.",
+        "url": "https://aidran.ai/r/r_1075d6ae0381",
+        "position": 5
+      }
+    ],
+    "Meta": [
+      {
+        "title": "Llama (language model) - Wikipedia",
+        "description": "Llama is a family of large language models released by Meta AI starting in February 2023.",
+        "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+        "position": 1
+      },
+      {
+        "title": "Meta Releases Llama 5: Open-Source 600B Model Claims Frontier ...",
+        "description": "Apr 12, 2026 · Meta CEO Mark Zuckerberg made a landmark announcement on April 8, 2026, unveiling Llama 5 — the company's most ambitious open-source AI release to date. The flagship model boasts over 600 billion parameters and introduces a capability the company calls \"Recursive Self-Improvement,\" allowing the model to iteratively refine its internal logic and generate high-quality synthetic data to fill ...",
+        "url": "https://www.bitsminds.com/news/meta-llama-5-open-source-600b-2026",
+        "position": 2
+      },
+      {
+        "title": "Meta AI Updates by Meta - September 2026 - Releasebot",
+        "description": "Sep 3, 2026 · Browse a full list of updates made to Meta AI by Meta. Follow to get all release notes by email, RSS, and more.",
+        "url": "https://releasebot.io/updates/meta/meta-ai",
+        "position": 3
+      },
+      {
+        "title": "Meta AI News: Llama, Research & Product Updates",
+        "description": "6 days ago · Meta AI news — Llama models, AI research, product launches, open-weight strategy, and infrastructure — curated by Let's Data Science.",
+        "url": "https://letsdatascience.com/news/topic/meta-ai",
+        "position": 4
+      },
+      {
+        "title": "New AI Models — October 2026 LLM Releases | LLM Gateway",
+        "description": "1 day ago · 2 new AI models released in October 2026 so far: Gemini Nano Banana 2.1, Mistral Large 4. Every LLM release date, newest first. Updated daily.",
+        "url": "https://llmgateway.io/timeline",
+        "position": 5
+      }
+    ],
+    "DeepSeek": [
+      {
+        "title": "DeepSeek AI Blog (2026) — News, Guides & Model Updates",
+        "description": "Sep 18, 2026 · DeepSeek AI Blog: Model Updates, API Pricing & Guides (2026) Every DeepSeek release, API price change and architecture paper, tracked and explained in plain English.",
+        "url": "https://deepseek.ai/blog",
+        "position": 1
+      },
+      {
+        "title": "DeepSeek latest funding round could reach $15 billion - CNBC",
+        "description": "11 hours ago · China's DeepSeek weighs upsizing funding round to up to $14.9 billion, sources tell CNBC, and the final amount could still change in final talks.",
+        "url": "https://www.cnbc.com/2026/10/06/deepseek-funding-round.html",
+        "position": 2
+      },
+      {
+        "title": "DeepSeek News | Today's Latest Stories | Reuters",
+        "description": "Sep 24, 2026 · DeepSeek set to net over $12 billion in new fundraising, source says Chinese AI startup DeepSeek is set to raise more than 80 billion yuan ($11.93 billion) in its latest funding round, said one ...",
+        "url": "https://www.reuters.com/technology/deepseek/",
+        "position": 3
+      },
+      {
+        "title": "DeepSeek | Research & News",
+        "description": "Nov 30, 2025 · DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API.",
+        "url": "https://deepseek.com/en/news/",
+        "position": 4
+      },
+      {
+        "title": "DeepSeek: Trending News, Latest Updates, Analysis",
+        "description": "Aug 12, 2026 · See the latest on DeepSeek. From breaking news to in-depth reporting, Bloomberg tracks the full story in real time.",
+        "url": "https://www.bloomberg.com/latest/deepseek",
+        "position": 5
+      }
+    ],
+    "Qwen": [
+      {
+        "title": "Qwen - Wikipedia",
+        "description": "Alibaba previewed its 2.4-trillion-parameter model Qwen3.8-Max in July 2026 and announced that it would release the weights of the model. The announcement occurred a few days after Moonshot AI released its competing Kimi K3 model.[2]...",
+        "url": "https://en.wikipedia.org/wiki/Qwen",
+        "position": 1
+      },
+      {
+        "title": "The Story of Qwen: Alibaba's AI Models From 7B to... - MarkTechPost",
+        "description": "At the Qwen3-Max-Thinking launch in January 2026, Alibaba also said Qwen had become the first open model family with over 200,000 derivative models on Hugging Face. The licenses tell a quieter story. Qwen has moved from restrictive, to open, to a deliberate two-tier split.",
+        "url": "https://www.marktechpost.com/2026/10/04/the-story-of-qwen-alibabas-ai-models-from-7b-to-2-4t/",
+        "position": 2
+      },
+      {
+        "title": "Alibaba Says 7B Qwen Image 2.1 Challenges Google’s Nano Banana...",
+        "description": "AI News. Alibaba is positioning its new Qwen Image 2.1 as an unusually compact challenger in the image-generation market, claiming the 7-billion-parameter model can outperform Google’s Nano Banana 2.0 on selected benchmarks.",
+        "url": "https://creati.ai/ai-news/2026-09-25/alibaba-says-7b-qwen-image-2-1-challenges-googles-nano-banana-2-0/",
+        "position": 3
+      },
+      {
+        "title": "Qwen",
+        "description": "Qwen offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts.",
+        "url": "https://qwen.ai/",
+        "position": 4
+      },
+      {
+        "title": "Ali Qwen Project Secretly Launched: Based on Qwen Model, Fully...",
+        "description": "Alibaba secretly launches 'Qianwen' project, developing a personal AI assistant app based on Qwen model to compete with ChatGPT, marking its entry into the glob.Published in Latest AI News. Time :Nov 13, 2025. Read :2minute.",
+        "url": "https://news.aibase.com/news/22780",
+        "position": 5
+      }
+    ],
+    "GLM": [
+      {
+        "title": "Z.ai - Wikipedia",
+        "description": "Z.AI Co., Ltd., branded internationally as Z.ai, is a Chinese artificial intelligence company; their flagship product is the GLM (General Language Model) family of open weights large language models (LLMs). Formerly known as Zhipu AI outside China until 2025...",
+        "url": "https://en.wikipedia.org/wiki/Z.ai",
+        "position": 1
+      },
+      {
+        "title": "A Model-Level 429 From Zhipu Took GLM Flash... | TheRouter.ai",
+        "description": "On 2026-10-02 Zhipu's API returned a model-level rate-limit response for glm-4.6v-flash and TheRouter parked the whole account. Cooldowns are now per model, and six GLM flash-family models have a second route through Zhipu's international service.",
+        "url": "https://therouter.ai/news/zhipu-flash-zai-fallback-legs-429-routing/",
+        "position": 2
+      },
+      {
+        "title": "AI News August 27 2026: 15 Biggest AI Model Stories",
+        "description": "Zhipu (Z.ai) launched GLM-5.3-Flash on the evening of August 26, 2026, and revealed it was the stealth model that had been topping usage charts under the codename Ox Alpha.",
+        "url": "https://www.buildfastwithai.com/blogs/ai-news-today-august-27-2026",
+        "position": 3
+      },
+      {
+        "title": "GLM-5 - Zhipu AI's Flagship Foundation Model",
+        "description": "GLM-5 by Zhipu AI: 745B parameter MoE model with frontier reasoning, coding, and agentic capabilities.",
+        "url": "https://glm5.ai/",
+        "position": 4
+      },
+      {
+        "title": "GLM-5 | Zhipu AI's Next-Generation Large Language Model",
+        "description": "GLM-5 is Zhipu AI's fifth-generation large language model with 745B parameters and 44B active MoE architecture. Now accessible via Z.ai's platform and APIs with frontier-level reasoning, coding, and agentic intelligence capabilities.",
+        "url": "https://glm5.net/",
+        "position": 5
+      }
+    ],
+    "Kimi": [
+      {
+        "title": "Moonshot AI - Wikipedia",
+        "description": "In January 2026, Moonshot released Kimi K2.5, a multimodal upgrade to Kimi K2 that added native vision capabilities through a 400-million-parameter vision encoder called MoonViT. The model can process both images and video, enabling agentic tasks such as replicating website user...",
+        "url": "https://en.wikipedia.org/wiki/Moonshot_AI",
+        "position": 1
+      },
+      {
+        "title": "Google News - Chinese startup Moonshot AI releases Kimi K3 model...",
+        "description": "Moonshot’s Kimi K3 pushes Chinese AI into Fable-level territory. 18 hours ago. By Nicholas Gordon.Moonshot AI releases ‘world’s largest open-source model’ Kimi K3; WAIC spotlights Chinese AI capabilities. 12 hours ago. Save for later.",
+        "url": "https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lNMDRITkVSRkU4ZEZYbUJubHBDZ0FQAQ?hl=en-IN&gl=IN&ceid=IN:en",
+        "position": 2
+      },
+      {
+        "title": "Moonshot Kimi Raises $2 Billion in New Funding, Valuation Exceeds...",
+        "description": "Published in Latest AI News. Time :May 7, 2026. Read :4minute. According to \"LatenPost,\" Moonshot Kimi recently announced a round of financing worth approximately $2 billion, and the post-money valuation has exceeded $20 billion.",
+        "url": "https://news.aibase.com/news/27735",
+        "position": 3
+      },
+      {
+        "title": "What Is Kimi? Moonshot AI Business Model, Kimi K3, Funding and...",
+        "description": "Kimi is Moonshot AI’s consumer and professional AI assistant. According to Kimi’s official documentation, the platform currently supportsMoonshot has not announced a finalized IPO timetable or offering price. Valuation Risk. Private-market valuations can fall as well as rise.",
+        "url": "https://www.mexc.co/learn/article/what-is-kimi-moonshot-ai-business-model-kimi-k3-funding-and-ipo-outlook/1",
+        "position": 4
+      },
+      {
+        "title": "Kimi K3 API Guide: 2.8T Model, Pricing, 1M Context (2026) | explainx.ai",
+        "description": "Kimi K3 is Moonshot's most capable model — 2.8T parameters, 1M-token context, native vision, and reasoning_effort thinking mode. Official API pricing, Python examples, and limits from platform.kimi.ai docs.",
+        "url": "https://www.explainx.ai/blog/kimi-k3-moonshot-beta-leaks-july-2026",
+        "position": 5
+      }
+    ],
+    "xAI": [
+      {
+        "title": "Introducing Grok 4.7 | SpaceXAI",
+        "description": "Grok 4.7 uses a new, larger base model compared to Grok 4.6. It was trained with a longer reinforcement learning run on a harder mix of tasks, weighted toward problems that take many hours to complete. The model is better at verifying its own work and managing longer context.",
+        "url": "https://x.ai/news/grok-4-7",
+        "position": 1
+      },
+      {
+        "title": "Grok, 7–13 September 2026 · AIDRAN",
+        "description": "Published 2 October 2026.Announcing Grok, on xAI’s site↗x.ai. Grok (chatbot), on Wikipedia↗en.wikipedia.org. Context from the week. News and analysis about Grok published that week, found and checked for relevance.",
+        "url": "https://aidran.ai/r/r_7330f14d51fc",
+        "position": 2
+      },
+      {
+        "title": "Grok 4.7 launches in Cursor, Grok Build and through... | SessionWatcher",
+        "description": "xAI says Grok 4.7 is available in Cursor and Grok Build, as well as through its API and other listed channels. API pricing starts at $2 per million input tokens and $6 per million output tokens; a faster variant costs twice as much.",
+        "url": "https://sessionwatcher.com/news/grok-4-7-coding-model-pricing-availability",
+        "position": 3
+      },
+      {
+        "title": "Grok AI Chatbot Stated Jesus Did Not Qualify as a Fake... | IBTimes UK",
+        "description": "Grok, the artificial intelligence chatbot developed by Elon Musk's xAI, told users that Jesus did not qualify as a 'fake god' after it edited an image on X to remove other deities but left Jesus in place.",
+        "url": "https://www.ibtimes.co.uk/grok-jesus-fake-god-x-exchange-1824002",
+        "position": 4
+      },
+      {
+        "title": "Grok API Now Supports Multi-Image Video & Extension",
+        "description": "xAI has quietly shipped two significant upgrades to the Grok Imagine API: the ability to stitch up to seven images into a single generated video, and a video extension tool that adds up to 10 seconds onto an existing clip. Both features are live now for API developers.",
+        "url": "https://www.basenor.com/blogs/news/grok-api-now-supports-multi-image-video-extension",
+        "position": 5
+      }
+    ]
+  },
+  "cross_cutting": [
+    {
+      "title": "Gemini 3.7 Flash: our most intelligent workhorse model",
+      "description": "A robotics model getting trained with Gemini 3.7 Flash using multimodal understanding in a 3 agent graph loop that helps the robot learn faster. From a static PDF to an interactive data story.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "position": 1
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by...",
+      "description": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics.",
+      "url": "https://llm-stats.com/",
+      "position": 2
+    },
+    {
+      "title": "OpenAI News | OpenAI",
+      "description": "Stay up to speed on the rapid advancement of AI technology and the benefits it offers to humanity.Lenfest AI Collaborative expansion — September 2026 — cover. Lenfest grows landmark program with OpenAI support.",
+      "url": "https://openai.com/news/",
+      "position": 3
+    },
+    {
+      "title": "investopedia.com/news-4427706",
+      "description": "Tesla Downgraded by Moody's Amid Model 3 Production Woes.",
+      "url": "https://www.investopedia.com/news-4427706",
+      "position": 4
+    },
+    {
+      "title": "Sources: Apple Planning Two Sets of Product Launches in October",
+      "description": "Another new product expected this October is a new iPad mini with an OLED display, an A20 Pro chip, a landscape front camera, a redesigned speaker system, and more. It is unclear if the device will be announced alongside new home products on October 13...",
+      "url": "https://www.macrumors.com/2026/10/05/apple-two-sets-of-product-launches-october/",
+      "position": 5
+    },
+    {
+      "title": "WTF is Going On? | The \"AI Constitution\" & Regulation - YouTube",
+      "description": "Jensen's cousin, Lisa Su of AMD, has partnered with Michael Kratsios of the White House to reduce clean air and clean water regulations that slow data center buildouts. They've already had the same goals, it seems -- but now the companies are formalizing a partnership.",
+      "url": "https://www.youtube.com/watch?v=-HzHFSxRcro",
+      "position": 1
+    },
+    {
+      "title": "EU Funding & Tenders Portal",
+      "description": "The Funding and Tenders Portal is the single entry point (the Single Electronic Data Interchange Area) for applicants, contractors and experts in funding programmes and procurements managed by the European Commission.",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+      "position": 2
+    },
+    {
+      "title": "TechCrunch | Startup and Technology News",
+      "description": "TechCrunch Events. Sep 22, 2026. Latest News.But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s early numbers and is headed for smart glasses and a tiny Tamagotchi-style device next. September 25, 2026.",
+      "url": "https://techcrunch.com/",
+      "position": 3
+    },
+    {
+      "title": "Business News Today, Latest Finance News... | The Financial Express",
+      "description": "Business News: Get the latest business and finance news today, India News, share market updates, Sensex, Nifty, IPO news, mutual funds, personal finance, economy, companies and global market updates on Financial Express.",
+      "url": "https://www.financialexpress.com/",
+      "position": 4
+    },
+    {
+      "title": "Климат контроль на Тенет Т7 — Tenet T7 бензин, 1,6 л, 2026 года",
+      "description": "Tenet T7 2026, двигатель бензиновый 1.6 л, 150 л. с., полный привод, роботизированная коробка передач — наблюдение.",
+      "url": "https://www.drive2.ru/l/739051310212467128/",
+      "position": 5
+    },
+    {
+      "title": "Artificial intelligence - Wikipedia",
+      "description": "Artificial intelligence is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making.",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+      "position": 1
+    },
+    {
+      "title": "AI News Today — October 07, 2026 | Latest AI Updates | AI Herald",
+      "description": "Jul 12, 2026 · What is the latest AI news today (October 07, 2026)? Today's top AI stories include the latest developments from OpenAI, Anthropic, Google DeepMind, Meta AI, DeepSeek, and other leading AI labs. AI Herald publishes daily coverage of large language model releases, AI agent frameworks, research papers, and industry news. Scroll up to see today's full article list updated in real time.",
+      "url": "https://artificialintelligenceherald.com/ai-news-today",
+      "position": 2
+    },
+    {
+      "title": "Biggest AI News This Month (October 2026) — Top AI Launches ...",
+      "description": "6 days ago · The biggest AI news and updates this month — model releases, product launches, company news, research, and industry analysis, curated from across the AI ecosystem.",
+      "url": "https://headsupai.io/ai-news-and-updates/this-month",
+      "position": 3
+    },
+    {
+      "title": "AI News: Artificial Intelligence Stories, Ranked | AI Weekly",
+      "description": "1 day ago · Today's most important AI news, ranked and explained. Track artificial intelligence models, agents, funding, policy and research with updates throughout the day.",
+      "url": "https://aiweekly.co/",
+      "position": 4
+    },
+    {
+      "title": "AI News: Latest Machine Learning & Robotics Updates",
+      "description": "1 day ago · AI news: The latest AI news across LLMs, AI agents, robotics, research, funding and policy.",
+      "url": "https://www.ainews.ai/",
+      "position": 5
+    }
+  ]
+}

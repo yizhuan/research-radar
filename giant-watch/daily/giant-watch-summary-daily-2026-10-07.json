@@ -1,0 +1,48 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-10-07",
+  "title": "Giant Watch Summary - Daily - 2026-10-07",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-10-07.md",
+  "entry_count": 1,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "DeepSeek is reportedly weighing a funding round of up to roughly $15 billion, a scale that would make it one of the largest private raises in the AI sector. The episode's throughline is the escalating capital intensity of frontier-model competition, with Chinese labs now pursuing mega-rounds."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "deepseek_funding_round_15b",
+      "title": "DeepSeek weighs upsizing funding round to as much as $14.9 billion",
+      "organizations": [
+        "DeepSeek"
+      ],
+      "status": "unverified",
+      "content": "CNBC reports, citing sources, that China's DeepSeek is weighing upsizing its funding round to as much as $14.9 billion, with the final amount still subject to change in final talks.",
+      "significance": "If completed near the reported range, the round would rank among the largest private AI financings and signal that capital is flowing to Chinese frontier labs at a scale comparable to leading U.S. players.",
+      "refs": [
+        "https://www.cnbc.com/2026/10/06/deepseek-funding-round.html"
+      ],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "88-rumors-unverified",
+      "kind": "rumors",
+      "title": "Rumors and Unverified Claims",
+      "content": "CNBC, citing sources, reports that DeepSeek is weighing upsizing its funding round to up to $14.9 billion and that the final amount could still change in final talks. This is a sourced but unconfirmed report; no official DeepSeek announcement or independent corroboration is present in the supplied material."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The key evidence to watch is whether DeepSeek confirms the round and at what final size, since the reported figure is explicitly subject to change. A confirmed raise at this scale would sharpen the capital-intensity contest among frontier labs."
+    }
+  ]
+}

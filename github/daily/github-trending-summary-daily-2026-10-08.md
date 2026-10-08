@@ -4,82 +4,59 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-10-08 00:26 UTC |
+| Snapshot time (UTC) | 2026-10-08 16:15 UTC |
 | Scope | Daily |
 | Date range | 2026-10-08 through 2026-10-08 |
-| Ranking basis | GitHub Trending daily star gains, sorted descending |
+| Ranking basis | Daily GitHub Trending star gains, sorted descending |
 
 ## Headline
 
-Agent-oriented developer tooling dominates today's snapshot: reverse-engineering with agents is the clear leader, while reusable agent skills and workflow utilities also draw strong attention. A PS5 executable-porting project is a notable non-agent outlier.
+REA leads today with 7,744 stars gained, followed by AnyPS5 at 4,640; ArtCraft is the biggest creative-tool outlier at 2,510. The list mixes agent infrastructure with practical systems and visual tools rather than clustering around one language or framework.
 
 ## Top Repositories
 
-1. **[morluto/rea](https://github.com/morluto/rea) - An MCP-based toolkit for agent-assisted reverse engineering of apps, runtime behavior, and binaries.**
+1. **[morluto/rea](https://github.com/morluto/rea) — Reverse-engineering toolkit that connects coding agents to analysis of native binaries, JavaScript/Electron apps, .NET assemblies, and runtime behavior.**
 
-  **Language:** TypeScript | **Stars gained in window:** +4,655 | **Total stars:** 15,020 | **Why notable:** The largest daily gain by a wide margin; its README describes one investigation interface spanning application behavior and native binaries.
+  **Language:** TypeScript | **Stars gained in window:** +7,744 | **Total stars:** 20,706 | **Why notable:** Top daily gain; its evidence-oriented MCP workflow brings agent-assisted reverse engineering to multiple software formats.
+2. **[boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5) — Tool for porting PS5 executables to Linux and Windows using a relinker and project implementations of system PRX libraries, rather than emulation.**
 
-2. **[boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5) - A tool for porting PS5 executables to Linux and Windows.**
+  **Language:** C++ | **Stars gained in window:** +4,640 | **Total stars:** 14,024 | **Why notable:** Second-highest daily gain and a striking systems/interoperability project; the README documents a tested-game list and current implementation limits.
+3. **[storytold/artcraft](https://github.com/storytold/artcraft) — An IDE for interactive AI image and video creation, combining 2D compositing, 3D scene staging, and controllable visual workflows.**
 
-  **Language:** C++ | **Stars gained in window:** +2,716 | **Total stars:** 10,546 | **Why notable:** A strong non-agent spike; the project describes relinking executables and implementing system libraries rather than relying on a separate emulation runtime.
+  **Language:** Rust | **Stars gained in window:** +2,510 | **Total stars:** 6,717 | **Why notable:** Strongest creative-tool signal in the snapshot, with 2,510 stars gained today.
+4. **[mattpocock/skills](https://github.com/mattpocock/skills) — A collection of small, composable engineering and productivity skills for coding agents, designed to be adaptable across models and hosts.**
 
-3. **[DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym) - A self-hosted workout and body-weight tracker with routine planning, training logs, and imports from other fitness apps.**
+  **Language:** Shell | **Stars gained in window:** +1,770 | **Total stars:** 280,856 | **Why notable:** High momentum for reusable agent workflows: 1,770 stars gained today, with the README emphasizing small, editable skills over a monolithic process.
+5. **[cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) — A design system and agent skill for generating editorial diagrams as self-contained HTML and SVG, with many diagram grammars and static output by default.**
 
-  **Language:** JavaScript | **Stars gained in window:** +1,493 | **Total stars:** 6,885 | **Why notable:** A fast-rising personal-data app stands out among the otherwise agent-heavy list.
+  **Language:** HTML | **Stars gained in window:** +1,163 | **Total stars:** 45,875 | **Why notable:** Pairs developer agents with polished visual communication; its README describes 42 diagram types and a no-build, self-contained output approach.
+6. **[anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) — A set of role-focused Claude plugins bundling skills, commands, and tool connectors for knowledge-work tasks.**
 
-4. **[mattpocock/skills](https://github.com/mattpocock/skills) - Small, composable agent skills aimed at practical software engineering.**
+  **Language:** Python | **Stars gained in window:** +766 | **Total stars:** 27,351 | **Why notable:** Its 766 daily stars mark an official, workflow-packaged route for applying assistants to functions such as sales, support, product, legal, finance, and data.
+7. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — Persistent context tooling that captures coding-agent sessions, compresses their history, and retrieves relevant context across later sessions.**
 
-  **Language:** Shell | **Stars gained in window:** +1,403 | **Total stars:** 279,574 | **Why notable:** Its unusually large existing audience and strong daily gain underline demand for reusable, engineer-controlled agent workflows.
+  **Language:** TypeScript | **Stars gained in window:** +662 | **Total stars:** 98,211 | **Why notable:** Shows continuing demand for agent memory and cross-session continuity, despite a smaller daily gain than the leading entries.
+8. **[liquidslr/system-design-notes](https://github.com/liquidslr/system-design-notes) — Interview-preparation notes for system design, based on “System Design Interview: An Insider’s Guide.”**
 
-5. **[tester-army/e2e](https://github.com/tester-army/e2e) - An end-to-end testing framework for web and mobile applications.**
+  **Language:** N/A - not available from GitHub | **Stars gained in window:** +398 | **Total stars:** 24,355 | **Why notable:** A learning/reference project rounds out the list with 398 stars gained today; its latest push was August 12, so today’s popularity spike does not imply a fresh code release.
+9. **[EpicGames/raddebugger](https://github.com/EpicGames/raddebugger) — A native, user-mode, multi-process graphical debugger.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,390 | **Total stars:** 7,434 | **Why notable:** Testing infrastructure is a substantial secondary theme alongside agents.
-
-6. **[cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) - An agent-compatible toolkit for editorial diagrams, offering 42 diagram types in self-contained HTML and SVG.**
-
-  **Language:** HTML | **Stars gained in window:** +825 | **Total stars:** 44,953 | **Why notable:** It brings a design-quality and documentation angle to agent skills, with static output as the default.
-
-7. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-oriented engineering skills for AI coding agents.**
-
-  **Language:** JavaScript | **Stars gained in window:** +677 | **Total stars:** 102,803 | **Why notable:** Reinforces the rise of portable, task-specific agent capabilities.
-
-8. **[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) - A coding-agent skill that makes responses more concise and action-oriented.**
-
-  **Language:** Python | **Stars gained in window:** +619 | **Total stars:** 55,103 | **Why notable:** A user-experience-oriented skill is gaining traction alongside engineering-focused agent packages.
-
-9. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) - A persistent-context tool that captures, compresses, and reuses coding-agent session history.**
-
-  **Language:** TypeScript | **Stars gained in window:** +578 | **Total stars:** 97,710 | **Why notable:** Persistent memory is a distinct infrastructure layer for multi-session agent workflows.
-
-10. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A multi-phase coding-agent skill for security audits with machine-readable findings.**
-
-  **Language:** JavaScript | **Stars gained in window:** +576 | **Total stars:** 26,043 | **Why notable:** It applies agents to a high-stakes engineering task and emphasizes independently verified results.
-
-11. **[trycua/cua](https://github.com/trycua/cua) - Open-source computer-use drivers, cross-OS fleets, and benchmarks.**
-
-  **Language:** Rust | **Stars gained in window:** +228 | **Total stars:** 28,744 | **Why notable:** Computer interaction remains a smaller but visible agent-adjacent infrastructure theme.
-
-12. **[EpicGames/raddebugger](https://github.com/EpicGames/raddebugger) - A native, user-mode, multi-process graphical debugger.**
-
-  **Language:** C | **Stars gained in window:** +90 | **Total stars:** 7,856 | **Why notable:** A traditional systems-development tool provides a counterpoint to the agent-skills cluster.
-
-13. **[manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) - A Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents.**
-
-  **Language:** Swift | **Stars gained in window:** +44 | **Total stars:** 27,833 | **Why notable:** It represents interface and workspace tooling built around concurrent coding-agent use.
+  **Language:** C | **Stars gained in window:** +283 | **Total stars:** 8,023 | **Why notable:** A lower-volume but useful systems-tool counterpoint to the agent-heavy leaders; it gained 283 stars today and was pushed on October 7.
 
 ## Trending Technologies and Themes
 
-- **Coding-agent skills and workflows:** mattpocock/skills, addyosmani/agent-skills, ayghri/i-have-adhd, cathrynlavery/diagram-design, and cloudflare/security-audit-skill show packaging of agent behavior into reusable task-specific instructions.
-- **Agent infrastructure and interaction:** morluto/rea connects agents to reverse-engineering tools; thedotmack/claude-mem addresses persistent context; trycua/cua targets computer-use drivers and evaluation; manaflow-ai/cmux focuses on the agent workspace.
-- **Non-agent standouts:** boykopovar/AnyPS5 and DuarteSantos8/openGym indicate interest in compatibility engineering and self-hosted personal software; tester-army/e2e and EpicGames/raddebugger represent testing and debugging tools.
-- **Languages:** TypeScript (3) and JavaScript (3) are most common among the 13 entries; C++, Shell, HTML, Python, C, Rust, and Swift each appear once. Counts reflect GitHub's primary-language labels for this list, not overall GitHub usage.
+- **Reverse engineering and systems software:** REA, AnyPS5, and RAD Debugger point to continued interest in software inspection and lower-level tooling: agent-assisted analysis across app/binary formats, executable interoperability, and native debugging.
+- **Agent workflows and persistent context:** Reusable skills, session memory, and role-specific plugins represent three complementary layers of agent infrastructure: procedure, continuity, and packaged domain workflows.
+- **Creative and visual developer tools:** Diagram Design treats visual explanation as a developer-agent output; ArtCraft targets hands-on AI image/video creation with 2D/3D scene controls.
+- **Learning and reference material:** System Design Notes is a study/reference repository; its momentum is a popularity signal rather than evidence of recent development.
+- **Languages:** Across the nine listed repos: TypeScript (2); C++, HTML, Shell, C, Python, and Rust (1 each); one repository has no primary language listed by GitHub. This is a small snapshot, not a platform-wide measure.
 
 ## Takeaway
 
-Today's strongest signal is not simply “more AI”: it is a move toward modular agent workflows, with reusable skills, persistent context, specialist tool access, and dedicated interfaces. Still, the top list includes substantial momentum in testing, gaming compatibility, and personal self-hosted software, so the day's activity is broader than agent tooling alone.
+The strongest shared thread is packaging specialized capability into an agent-ready workflow—analysis, reusable engineering skills, persistent context, and role-specific plugins. But today’s list is not only about agents: REA, AnyPS5, and RAD Debugger show enduring interest in reverse engineering and native systems tools, while ArtCraft and Diagram Design broaden the picture toward creative and visual work.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - today](https://github.com/trending?since=daily).
-- **Corroboration:** GitHub REST API repository metadata and default-branch commit endpoints for all listed repositories; current README content checked for the leading theme examples.
-- **Method note:** Star gains are the values shown by GitHub's daily Trending view, with entries reordered by gain descending. Total stars, language, and commit SHA were checked against the GitHub API. This is a point-in-time snapshot; daily gains can change as GitHub refreshes the page.
+- **Primary source:** [GitHub Trending — daily](https://github.com/trending?since=daily), read at 2026-10-08 16:15 UTC.
+- **Corroboration:** GitHub REST repository and latest-commit endpoints for all nine entries; GitHub Search API query [AnyPS5 in:name](https://api.github.com/search/repositories?q=AnyPS5+in%3Aname) confirmed the canonical repository and freshness.
+- **Method note:** Daily gains are copied from the matching Trending view and ranked descending; total stars, repository metadata, and default-branch commit SHAs come from GitHub REST API. Counts can move during the day. Optional DeepWiki enrichment was omitted: one candidate had no archived copy and was rate-limited live; the other was available only as an August 20 snapshot indexed at commit `e02494`, which does not match the current default branch. No prior-window comparison was used, so no shift claim is made.

@@ -5,35 +5,320 @@
   "date": "2026-10-08",
   "title": "GitHub Trending Summary - Daily - 2026-10-08",
   "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-10-08.md",
-  "entry_count": 13,
+  "entry_count": 9,
   "entry_noun": "repositories",
-  "snapshot_time_utc": "2026-10-08 00:26 UTC",
-  "date_range": "2026-10-08 through 2026-10-08",
-  "ranking_basis": "GitHub Trending daily star gains, sorted descending",
-  "ranking_explanation": "Daily star-gain figures were read from GitHub Trending and entries reordered by that figure. Total stars, primary language, and default-branch commit were corroborated through the GitHub REST API.",
-  "global_caveat": "This is a point-in-time snapshot. Daily gains can change as GitHub refreshes the page; daily Trending is not a stable historical record.",
+  "ranking_basis": "Daily GitHub Trending star gains, descending",
+  "ranking_explanation": "The daily Trending page supplies stars gained today; the nine displayed repositories were sorted by that gain. REST API totals were corroboration only, not the ranking signal.",
+  "global_caveat": "GitHub Trending is a time-sensitive snapshot; daily gains and total-star counts can change during the day. REST totals were fetched shortly after the Trending page. The GH CLI token was invalid, so public unauthenticated REST endpoints were used directly. Optional DeepWiki enrichment was not included: one candidate was rate-limited and had no archive copy; the other was available only as an August 20 snapshot indexed at e02494, which does not match the current default branch.",
+  "snapshot_time_utc": "2026-10-08 16:15 UTC",
+  "date_range": {
+    "start": "2026-10-08",
+    "end": "2026-10-08"
+  },
   "themes": [
-    {"id": "agent-skills", "title": "Coding-agent skills and workflows", "supporting_repository_ids": ["01-morluto-rea", "04-mattpocock-skills", "06-cathrynlavery-diagram-design", "07-addyosmani-agent-skills", "08-ayghri-i-have-adhd", "10-cloudflare-security-audit-skill"]},
-    {"id": "agent-infrastructure", "title": "Agent infrastructure and interaction", "supporting_repository_ids": ["01-morluto-rea", "09-thedotmack-claude-mem", "11-trycua-cua", "13-manaflow-ai-cmux"]},
-    {"id": "developer-tooling", "title": "Testing, debugging, and developer tools", "supporting_repository_ids": ["05-tester-army-e2e", "12-epicgames-raddebugger"]},
-    {"id": "non-agent-software", "title": "Compatibility engineering and self-hosted apps", "supporting_repository_ids": ["02-boykopovar-anyps5", "03-duartesantos8-opengym"]}
+    {
+      "id": "reverse-engineering-and-systems",
+      "title": "Reverse engineering and systems software",
+      "supporting_repository_ids": [
+        "01-morluto-rea",
+        "02-boykopovar-anyps5",
+        "09-epicgames-raddebugger"
+      ],
+      "content": "REA, AnyPS5, and RAD Debugger point to continued interest in software inspection and lower-level tooling: agent-assisted analysis across app/binary formats, executable interoperability, and native debugging."
+    },
+    {
+      "id": "agent-workflows-and-memory",
+      "title": "Agent workflows and persistent context",
+      "supporting_repository_ids": [
+        "04-mattpocock-skills",
+        "07-thedotmack-claude-mem",
+        "06-anthropics-knowledge-work-plugins"
+      ],
+      "content": "Reusable skills, session memory, and role-specific plugins represent three complementary layers of agent infrastructure: procedure, continuity, and packaged domain workflows."
+    },
+    {
+      "id": "creative-devtools",
+      "title": "Creative and visual developer tools",
+      "supporting_repository_ids": [
+        "05-cathrynlavery-diagram-design",
+        "03-storytold-artcraft"
+      ],
+      "content": "Diagram Design treats visual explanation as a developer-agent output; ArtCraft targets hands-on AI image/video creation with 2D/3D scene controls."
+    },
+    {
+      "id": "learning-and-reference",
+      "title": "Learning and reference material",
+      "supporting_repository_ids": [
+        "08-liquidslr-system-design-notes"
+      ],
+      "content": "System Design Notes is a study/reference repository; its momentum is a popularity signal rather than evidence of recent development."
+    }
   ],
   "sections": [
-    {"id": "00-headline", "kind": "headline", "title": "Headline", "content": "Agent-oriented developer tooling dominates today's snapshot: reverse-engineering with agents is the clear leader, while reusable agent skills and workflow utilities also draw strong attention. A PS5 executable-porting project is a notable non-agent outlier."},
-    {"id": "01-morluto-rea", "kind": "repo", "title": "morluto/rea", "rank": 1, "url": "https://github.com/morluto/rea", "description": "Reverse engineer anything with agents, from app behavior down to native binaries.", "language": "TypeScript", "stars_gained": 4655, "total_stars": 15020, "default_branch_commit": "2bf3663f654386c9fd8c1437c49659df97bd4697", "why_notable": "The largest daily gain by a wide margin; its README describes one investigation interface spanning application behavior and native binaries.", "theme_ids": ["agent-skills", "agent-infrastructure"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 1, "spoken_name": "R-E-A, Reverse Engineer Anything", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit", "README.md"]},
-    {"id": "02-boykopovar-anyps5", "kind": "repo", "title": "boykopovar/AnyPS5", "rank": 2, "url": "https://github.com/boykopovar/AnyPS5", "description": "Tool for automatic PS5 executables porting to Linux and Windows.", "language": "C++", "stars_gained": 2716, "total_stars": 10546, "default_branch_commit": "df16c4c256be3c44e03eb9149a6ce5f8e8a038b2", "why_notable": "A strong non-agent spike; the project describes relinking executables and implementing system libraries rather than relying on a separate emulation runtime.", "theme_ids": ["non-agent-software"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 2, "spoken_name": "Any P-S-five", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit", "README.md"]},
-    {"id": "03-duartesantos8-opengym", "kind": "repo", "title": "DuarteSantos8/openGym", "rank": 3, "url": "https://github.com/DuarteSantos8/openGym", "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.", "language": "JavaScript", "stars_gained": 1493, "total_stars": 6885, "default_branch_commit": "ce30c7304bdeb66a6eb4a3d14821a06035523b06", "why_notable": "A fast-rising personal-data app stands out among the otherwise agent-heavy list.", "theme_ids": ["non-agent-software"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 3, "spoken_name": "openGym", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "04-mattpocock-skills", "kind": "repo", "title": "mattpocock/skills", "rank": 4, "url": "https://github.com/mattpocock/skills", "description": "Skills for Real Engineers. Straight from my .agents directory.", "language": "Shell", "stars_gained": 1403, "total_stars": 279574, "default_branch_commit": "f3fc5632f401156837ee3872f14fe33ccf1024ea", "why_notable": "Its unusually large existing audience and strong daily gain underline demand for reusable, engineer-controlled agent workflows.", "theme_ids": ["agent-skills"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 4, "spoken_name": "Matt Pocock skills", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit", "README.md"]},
-    {"id": "05-tester-army-e2e", "kind": "repo", "title": "tester-army/e2e", "rank": 5, "url": "https://github.com/tester-army/e2e", "description": "Next generation e2e testing framework for web and mobile apps.", "language": "TypeScript", "stars_gained": 1390, "total_stars": 7434, "default_branch_commit": "f1a1ac241042c089ae773213c4e4f0da34f2f3d8", "why_notable": "Testing infrastructure is a substantial secondary theme alongside agents.", "theme_ids": ["developer-tooling"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 5, "spoken_name": "tester-army E-two-E", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "06-cathrynlavery-diagram-design", "kind": "repo", "title": "cathrynlavery/diagram-design", "rank": 6, "url": "https://github.com/cathrynlavery/diagram-design", "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.", "language": "HTML", "stars_gained": 825, "total_stars": 44953, "default_branch_commit": "bd7001e0de50e08f8f13358ed084264ac17ba774", "why_notable": "It brings a design-quality and documentation angle to agent skills, with static output as the default.", "theme_ids": ["agent-skills"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 6, "spoken_name": "Diagram Design", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit", "README.md"]},
-    {"id": "07-addyosmani-agent-skills", "kind": "repo", "title": "addyosmani/agent-skills", "rank": 7, "url": "https://github.com/addyosmani/agent-skills", "description": "Production-grade engineering skills for AI coding agents.", "language": "JavaScript", "stars_gained": 677, "total_stars": 102803, "default_branch_commit": "1401c8b8030e023baeebb31781a6653fe8e93026", "why_notable": "Reinforces the rise of portable, task-specific agent capabilities.", "theme_ids": ["agent-skills"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 7, "spoken_name": "Addy Osmani agent skills", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "08-ayghri-i-have-adhd", "kind": "repo", "title": "ayghri/i-have-adhd", "rank": 8, "url": "https://github.com/ayghri/i-have-adhd", "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.", "language": "Python", "stars_gained": 619, "total_stars": 55103, "default_branch_commit": "723af7d9afaf43eb871dbcce6129e2bf80de90d5", "why_notable": "A user-experience-oriented skill is gaining traction alongside engineering-focused agent packages.", "theme_ids": ["agent-skills"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 8, "spoken_name": "I Have A-D-H-D", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit", "README.md"]},
-    {"id": "09-thedotmack-claude-mem", "kind": "repo", "title": "thedotmack/claude-mem", "rank": 9, "url": "https://github.com/thedotmack/claude-mem", "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More", "language": "TypeScript", "stars_gained": 578, "total_stars": 97710, "default_branch_commit": "71ddd11735d6dc38a6356fe376921fc216f2aa38", "why_notable": "Persistent memory is a distinct infrastructure layer for multi-session agent workflows.", "theme_ids": ["agent-infrastructure"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 9, "spoken_name": "Claude Mem", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "10-cloudflare-security-audit-skill", "kind": "repo", "title": "cloudflare/security-audit-skill", "rank": 10, "url": "https://github.com/cloudflare/security-audit-skill", "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings", "language": "JavaScript", "stars_gained": 576, "total_stars": 26043, "default_branch_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8", "why_notable": "It applies agents to a high-stakes engineering task and emphasizes independently verified results.", "theme_ids": ["agent-skills"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 10, "spoken_name": "Cloudflare security audit skill", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "11-trycua-cua", "kind": "repo", "title": "trycua/cua", "rank": 11, "url": "https://github.com/trycua/cua", "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.", "language": "Rust", "stars_gained": 228, "total_stars": 28744, "default_branch_commit": "7de3dbcfbd70bc923f170acbbe571ec5faa2f0ea", "why_notable": "Computer interaction remains a smaller but visible agent-adjacent infrastructure theme.", "theme_ids": ["agent-infrastructure"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 11, "spoken_name": "C-U-A", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "12-epicgames-raddebugger", "kind": "repo", "title": "EpicGames/raddebugger", "rank": 12, "url": "https://github.com/EpicGames/raddebugger", "description": "A native, user-mode, multi-process, graphical debugger.", "language": "C", "stars_gained": 90, "total_stars": 7856, "default_branch_commit": "b6d8c3fd9eaf7b55960d80738365742a8fba9e29", "why_notable": "A traditional systems-development tool provides a counterpoint to the agent-skills cluster.", "theme_ids": ["developer-tooling"], "signal_strength": "brief", "evidence_density": "standard", "narration_priority": 12, "spoken_name": "R-A-D debugger", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "13-manaflow-ai-cmux", "kind": "repo", "title": "manaflow-ai/cmux", "rank": 13, "url": "https://github.com/manaflow-ai/cmux", "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.", "language": "Swift", "stars_gained": 44, "total_stars": 27833, "default_branch_commit": "11bd7073493e8410687c3762760d62c5fa009c44", "why_notable": "It represents interface and workspace tooling built around concurrent coding-agent use.", "theme_ids": ["agent-infrastructure"], "signal_strength": "brief", "evidence_density": "standard", "narration_priority": 13, "spoken_name": "C-mux", "enrichment": null, "refs": ["GitHub Trending daily", "GitHub REST API repository metadata", "GitHub REST API default-branch commit"]},
-    {"id": "80-trending-technologies-and-themes", "kind": "themes", "title": "Trending Technologies and Themes", "content": "Coding-agent skills and workflows: mattpocock/skills, addyosmani/agent-skills, ayghri/i-have-adhd, cathrynlavery/diagram-design, and cloudflare/security-audit-skill show packaging of agent behavior into reusable task-specific instructions. Agent infrastructure and interaction: morluto/rea connects agents to reverse-engineering tools; thedotmack/claude-mem addresses persistent context; trycua/cua targets computer-use drivers and evaluation; manaflow-ai/cmux focuses on the agent workspace. Non-agent standouts include boykopovar/AnyPS5 and DuarteSantos8/openGym; tester-army/e2e and EpicGames/raddebugger represent testing and debugging. TypeScript (3) and JavaScript (3) are most common among these 13 entries; C++, Shell, HTML, Python, C, Rust, and Swift each appear once. Counts reflect GitHub's primary-language labels for this list, not overall GitHub usage."},
-    {"id": "90-takeaway", "kind": "takeaway", "title": "Takeaway", "content": "Today's strongest signal is not simply “more AI”: it is a move toward modular agent workflows, with reusable skills, persistent context, specialist tool access, and dedicated interfaces. Still, the top list includes substantial momentum in testing, gaming compatibility, and personal self-hosted software, so the day's activity is broader than agent tooling alone."}
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Daily snapshot taken 2026-10-08 16:15 UTC; date range 2026-10-08 through 2026-10-08; rank basis: daily Trending star gains, descending."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "REA leads today with 7,744 stars gained, followed by AnyPS5 at 4,640; ArtCraft is the biggest creative-tool outlier at 2,510. The list mixes agent infrastructure with practical systems and visual tools rather than clustering around one language or framework."
+    },
+    {
+      "id": "01-morluto-rea",
+      "kind": "repo",
+      "title": "morluto/rea",
+      "rank": 1,
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse-engineering toolkit that connects coding agents to analysis of native binaries, JavaScript/Electron apps, .NET assemblies, and runtime behavior.",
+      "language": "TypeScript",
+      "stars_gained": 7744,
+      "total_stars": 20706,
+      "default_branch_commit": "23862af1b57413e09abf394f6e4f8369f6355d5a",
+      "why_notable": "Top daily gain; its evidence-oriented MCP workflow brings agent-assisted reverse engineering to multiple software formats.",
+      "theme_ids": [
+        "agent-workflows-and-memory",
+        "reverse-engineering-and-systems"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "REA",
+      "unique_caveat": "",
+      "summary_body": "Reverse-engineering toolkit that connects coding agents to analysis of native binaries, JavaScript/Electron apps, .NET assemblies, and runtime behavior. Top daily gain; its evidence-oriented MCP workflow brings agent-assisted reverse engineering to multiple software formats.",
+      "enrichment": null,
+      "refs": [
+        "morluto/rea"
+      ]
+    },
+    {
+      "id": "02-boykopovar-anyps5",
+      "kind": "repo",
+      "title": "boykopovar/AnyPS5",
+      "rank": 2,
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for porting PS5 executables to Linux and Windows using a relinker and project implementations of system PRX libraries, rather than emulation.",
+      "language": "C++",
+      "stars_gained": 4640,
+      "total_stars": 14024,
+      "default_branch_commit": "4b005b229e24be9ec3f185def9e59cbc03aa9e4a",
+      "why_notable": "Second-highest daily gain and a striking systems/interoperability project; the README documents a tested-game list and current implementation limits.",
+      "theme_ids": [
+        "reverse-engineering-and-systems"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "AnyPS5",
+      "unique_caveat": "Compatibility depends on implemented system-library coverage and the project’s tested-game list; it is not a general PS5 emulator.",
+      "summary_body": "Tool for porting PS5 executables to Linux and Windows using a relinker and project implementations of system PRX libraries, rather than emulation. Second-highest daily gain and a striking systems/interoperability project; the README documents a tested-game list and current implementation limits.",
+      "enrichment": null,
+      "refs": [
+        "boykopovar/AnyPS5"
+      ]
+    },
+    {
+      "id": "03-storytold-artcraft",
+      "kind": "repo",
+      "title": "storytold/artcraft",
+      "rank": 3,
+      "url": "https://github.com/storytold/artcraft",
+      "description": "An IDE for interactive AI image and video creation, combining 2D compositing, 3D scene staging, and controllable visual workflows.",
+      "language": "Rust",
+      "stars_gained": 2510,
+      "total_stars": 6717,
+      "default_branch_commit": "3e5793b6934b51536606720e5d56bcfd1fe7cc2d",
+      "why_notable": "Strongest creative-tool signal in the snapshot, with 2,510 stars gained today.",
+      "theme_ids": [
+        "creative-devtools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "ArtCraft",
+      "unique_caveat": "",
+      "summary_body": "An IDE for interactive AI image and video creation, combining 2D compositing, 3D scene staging, and controllable visual workflows. Strongest creative-tool signal in the snapshot, with 2,510 stars gained today.",
+      "enrichment": null,
+      "refs": [
+        "storytold/artcraft"
+      ]
+    },
+    {
+      "id": "04-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 4,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "A collection of small, composable engineering and productivity skills for coding agents, designed to be adaptable across models and hosts.",
+      "language": "Shell",
+      "stars_gained": 1770,
+      "total_stars": 280856,
+      "default_branch_commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+      "why_notable": "High momentum for reusable agent workflows: 1,770 stars gained today, with the README emphasizing small, editable skills over a monolithic process.",
+      "theme_ids": [
+        "agent-workflows-and-memory"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Matt Pocock Skills",
+      "unique_caveat": "",
+      "summary_body": "A collection of small, composable engineering and productivity skills for coding agents, designed to be adaptable across models and hosts. High momentum for reusable agent workflows: 1,770 stars gained today, with the README emphasizing small, editable skills over a monolithic process.",
+      "enrichment": null,
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "05-cathrynlavery-diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 5,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "A design system and agent skill for generating editorial diagrams as self-contained HTML and SVG, with many diagram grammars and static output by default.",
+      "language": "HTML",
+      "stars_gained": 1163,
+      "total_stars": 45875,
+      "default_branch_commit": "f4547ee95f88e5b28a52517feff6b6c11cc657f9",
+      "why_notable": "Pairs developer agents with polished visual communication; its README describes 42 diagram types and a no-build, self-contained output approach.",
+      "theme_ids": [
+        "creative-devtools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Diagram Design",
+      "unique_caveat": "",
+      "summary_body": "A design system and agent skill for generating editorial diagrams as self-contained HTML and SVG, with many diagram grammars and static output by default. Pairs developer agents with polished visual communication; its README describes 42 diagram types and a no-build, self-contained output approach.",
+      "enrichment": null,
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ]
+    },
+    {
+      "id": "06-anthropics-knowledge-work-plugins",
+      "kind": "repo",
+      "title": "anthropics/knowledge-work-plugins",
+      "rank": 6,
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "A set of role-focused Claude plugins bundling skills, commands, and tool connectors for knowledge-work tasks.",
+      "language": "Python",
+      "stars_gained": 766,
+      "total_stars": 27351,
+      "default_branch_commit": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+      "why_notable": "Its 766 daily stars mark an official, workflow-packaged route for applying assistants to functions such as sales, support, product, legal, finance, and data.",
+      "theme_ids": [
+        "agent-workflows-and-memory"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "Knowledge Work Plugins",
+      "unique_caveat": "",
+      "summary_body": "A set of role-focused Claude plugins bundling skills, commands, and tool connectors for knowledge-work tasks. Its 766 daily stars mark an official, workflow-packaged route for applying assistants to functions such as sales, support, product, legal, finance, and data.",
+      "enrichment": null,
+      "refs": [
+        "anthropics/knowledge-work-plugins"
+      ]
+    },
+    {
+      "id": "07-thedotmack-claude-mem",
+      "kind": "repo",
+      "title": "thedotmack/claude-mem",
+      "rank": 7,
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent context tooling that captures coding-agent sessions, compresses their history, and retrieves relevant context across later sessions.",
+      "language": "TypeScript",
+      "stars_gained": 662,
+      "total_stars": 98211,
+      "default_branch_commit": "71ddd11735d6dc38a6356fe376921fc216f2aa38",
+      "why_notable": "Shows continuing demand for agent memory and cross-session continuity, despite a smaller daily gain than the leading entries.",
+      "theme_ids": [
+        "agent-workflows-and-memory"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "Claude Mem",
+      "unique_caveat": "",
+      "summary_body": "Persistent context tooling that captures coding-agent sessions, compresses their history, and retrieves relevant context across later sessions. Shows continuing demand for agent memory and cross-session continuity, despite a smaller daily gain than the leading entries.",
+      "enrichment": null,
+      "refs": [
+        "thedotmack/claude-mem"
+      ]
+    },
+    {
+      "id": "08-liquidslr-system-design-notes",
+      "kind": "repo",
+      "title": "liquidslr/system-design-notes",
+      "rank": 8,
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "description": "Interview-preparation notes for system design, based on “System Design Interview: An Insider’s Guide.”",
+      "language": "N/A - not available from GitHub",
+      "stars_gained": 398,
+      "total_stars": 24355,
+      "default_branch_commit": "9d8388721e7231442763ad37398b8d82224aa68f",
+      "why_notable": "A learning/reference project rounds out the list with 398 stars gained today; its latest push was August 12, so today’s popularity spike does not imply a fresh code release.",
+      "theme_ids": [
+        "learning-and-reference"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "sparse",
+      "narration_priority": 8,
+      "spoken_name": "System Design Notes",
+      "unique_caveat": "Latest push shown by GitHub REST was 2026-08-12; daily stars reflect attention, not release activity.",
+      "summary_body": "Interview-preparation notes for system design, based on “System Design Interview: An Insider’s Guide.” A learning/reference project rounds out the list with 398 stars gained today; its latest push was August 12, so today’s popularity spike does not imply a fresh code release.",
+      "enrichment": null,
+      "refs": [
+        "liquidslr/system-design-notes"
+      ]
+    },
+    {
+      "id": "09-epicgames-raddebugger",
+      "kind": "repo",
+      "title": "EpicGames/raddebugger",
+      "rank": 9,
+      "url": "https://github.com/EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process graphical debugger.",
+      "language": "C",
+      "stars_gained": 283,
+      "total_stars": 8023,
+      "default_branch_commit": "b6d8c3fd9eaf7b55960d80738365742a8fba9e29",
+      "why_notable": "A lower-volume but useful systems-tool counterpoint to the agent-heavy leaders; it gained 283 stars today and was pushed on October 7.",
+      "theme_ids": [
+        "reverse-engineering-and-systems"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "sparse",
+      "narration_priority": 9,
+      "spoken_name": "RAD Debugger",
+      "unique_caveat": "",
+      "summary_body": "A native, user-mode, multi-process graphical debugger. A lower-volume but useful systems-tool counterpoint to the agent-heavy leaders; it gained 283 stars today and was pushed on October 7.",
+      "enrichment": null,
+      "refs": [
+        "EpicGames/raddebugger"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Reverse engineering and systems software:** REA, AnyPS5, and RAD Debugger point to continued interest in software inspection and lower-level tooling: agent-assisted analysis across app/binary formats, executable interoperability, and native debugging.\n- **Agent workflows and persistent context:** Reusable skills, session memory, and role-specific plugins represent three complementary layers of agent infrastructure: procedure, continuity, and packaged domain workflows.\n- **Creative and visual developer tools:** Diagram Design treats visual explanation as a developer-agent output; ArtCraft targets hands-on AI image/video creation with 2D/3D scene controls.\n- **Learning and reference material:** System Design Notes is a study/reference repository; its momentum is a popularity signal rather than evidence of recent development.\n- **Languages:** Across the nine listed repos: TypeScript (2); C++, HTML, Shell, C, Python, and Rust (1 each); one repository has no primary language listed by GitHub. This is a small snapshot, not a platform-wide measure."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The strongest shared thread is packaging specialized capability into an agent-ready workflow—analysis, reusable engineering skills, persistent context, and role-specific plugins. But today’s list is not only about agents: REA, AnyPS5, and RAD Debugger show enduring interest in reverse engineering and native systems tools, while ArtCraft and Diagram Design broaden the picture toward creative and visual work."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "GitHub daily Trending page; REST repository/latest-commit endpoints for all entries; unauthenticated GitHub Search API used to corroborate canonical repo and freshness. No prior-window evidence was collected."
+    }
   ]
 }

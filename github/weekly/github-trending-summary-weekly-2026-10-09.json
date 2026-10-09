@@ -1,0 +1,362 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-10-09",
+  "title": "GitHub Trending Summary - Weekly - 2026-10-09",
+  "source_report": "/home/yizhuan/.research/github/weekly/github-trending-summary-weekly-2026-10-09.md",
+  "entry_count": 11,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-10-09 01:46 UTC",
+  "date_range": "2026-10-02 through 2026-10-09",
+  "ranking_basis": "GitHub weekly Trending star gains, descending",
+  "ranking_explanation": "Sorted the 11 repositories visible on GitHub Trending weekly by the displayed stars gained this week.",
+  "global_caveat": "Trending star gains indicate attention, not adoption, quality, or security; total stars and commit SHAs are current REST API values and can differ slightly from the trending-page capture. No prior-window evidence was gathered.",
+  "themes": [
+    {
+      "id": "console-native-tools",
+      "name": "Native and systems tools",
+      "supporting_repository_ids": [
+        "01-boykopovar-anyps5",
+        "11-epicgames-raddebugger"
+      ],
+      "summary": "AnyPS5 leads by weekly stars with PS5 executable porting; RAD Debugger supplies a native debugging counterpoint."
+    },
+    {
+      "id": "agent-workflows",
+      "name": "Agent workflow infrastructure",
+      "supporting_repository_ids": [
+        "02-mattpocock-skills",
+        "06-thedotmack-claude-mem",
+        "08-mvschwarz-openrig",
+        "10-cursor-plugins"
+      ],
+      "summary": "Composable skills, persistent context, multi-agent teams and plugins are recurring ways to make coding agents more reliable and reusable."
+    },
+    {
+      "id": "agent-capabilities",
+      "name": "Agents doing more than code",
+      "supporting_repository_ids": [
+        "03-panniantong-agent-reach",
+        "05-heygen-com-hyperframes",
+        "09-earthtojake-text-to-cad"
+      ],
+      "summary": "Internet research, deterministic video production and CAD/fabrication workflows extend agents into information gathering and tangible media/design outputs."
+    },
+    {
+      "id": "self-hosted-tools",
+      "name": "Personal data and self-hosting",
+      "supporting_repository_ids": [
+        "04-duartesantos8-opengym"
+      ],
+      "summary": "openGym is a notable non-agent project focused on self-hosted personal fitness data."
+    },
+    {
+      "id": "terminal-media-tools",
+      "name": "Focused terminal utilities",
+      "supporting_repository_ids": [
+        "07-pablostanley-yoinks"
+      ],
+      "summary": "yoinks packages media retrieval behind a terminal-first workflow."
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "GitHub trending’s strongest weekly signals mix practical agent infrastructure with usable outputs: an unusually large PS5-porting spike leads, while agent team/memory/access tools and creative CAD/video workflows fill much of the list."
+    },
+    {
+      "id": "01-boykopovar-anyps5",
+      "kind": "repo",
+      "title": "boykopovar/AnyPS5",
+      "rank": 1,
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows.",
+      "language": "C++",
+      "stars_gained": 10243,
+      "total_stars": 15943,
+      "default_branch_commit": "f145139676a48306681d3a4d5fabf83938759daf",
+      "why_notable": "PS5 executable relinking plus native PRX-library implementations target Linux/Windows without an emulation runtime; compatibility remains limited and evolving.",
+      "theme_ids": [
+        "console-native-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "AnyPS5",
+      "unique_caveat": "PS5 executable relinking plus native PRX-library implementations target Linux/Windows without an emulation runtime; compatibility remains limited and evolving.",
+      "enrichment": null,
+      "refs": [
+        "boykopovar/AnyPS5"
+      ]
+    },
+    {
+      "id": "02-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 2,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "A set of small, composable agent skills for real engineering work.",
+      "language": "Shell",
+      "stars_gained": 7448,
+      "total_stars": 281154,
+      "default_branch_commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+      "why_notable": "Its exceptionally high weekly gain reflects demand for lightweight, model-agnostic engineering workflows rather than a monolithic process framework.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "03-panniantong-agent-reach",
+      "kind": "repo",
+      "title": "Panniantong/Agent-Reach",
+      "rank": 3,
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give AI agents internet access to read/search services including X, Reddit, YouTube, GitHub, Bilibili and Xiaohongshu.",
+      "language": "Python",
+      "stars_gained": 6987,
+      "total_stars": 94181,
+      "default_branch_commit": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+      "why_notable": "One CLI aims to unify web and social-source access for agents; its README advertises zero API fees, a project claim rather than an independently verified guarantee.",
+      "theme_ids": [
+        "agent-capabilities"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Agent-Reach",
+      "unique_caveat": "One CLI aims to unify web and social-source access for agents; its README advertises zero API fees, a project claim rather than an independently verified guarantee.",
+      "enrichment": null,
+      "refs": [
+        "Panniantong/Agent-Reach"
+      ]
+    },
+    {
+      "id": "04-duartesantos8-opengym",
+      "kind": "repo",
+      "title": "DuarteSantos8/openGym",
+      "rank": 4,
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "description": "Self-hosted gym and body-weight tracker with planning, workout logs, imports and passkey login.",
+      "language": "JavaScript",
+      "stars_gained": 6086,
+      "total_stars": 8047,
+      "default_branch_commit": "f049465c1e4732c84e7077286dc99a66fdd2ed23",
+      "why_notable": "A privacy-oriented, self-hostable consumer app stands out amid the week’s agent-heavy developer tooling.",
+      "theme_ids": [
+        "self-hosted-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "openGym",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "DuarteSantos8/openGym"
+      ]
+    },
+    {
+      "id": "05-heygen-com-hyperframes",
+      "kind": "repo",
+      "title": "heygen-com/hyperframes",
+      "rank": 5,
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML and render deterministic video; designed for agent workflows.",
+      "language": "TypeScript",
+      "stars_gained": 3996,
+      "total_stars": 59218,
+      "default_branch_commit": "3aa68869f7d4cec8b37cdfcb9cd539389b63abed",
+      "why_notable": "Turns HTML, CSS, media and seekable animations into MP4, giving coding agents a declarative video-production path.",
+      "theme_ids": [
+        "agent-capabilities"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "hyperframes",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "heygen-com/hyperframes"
+      ]
+    },
+    {
+      "id": "06-thedotmack-claude-mem",
+      "kind": "repo",
+      "title": "thedotmack/claude-mem",
+      "rank": 6,
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Captures agent sessions, compresses them with AI and injects relevant context into future sessions.",
+      "language": "TypeScript",
+      "stars_gained": 3153,
+      "total_stars": 98505,
+      "default_branch_commit": "eccb15e755467a4e0697f168dd0123a6d24b2aca",
+      "why_notable": "Cross-agent persistent memory is a direct response to context loss across coding sessions; README lists support across several agent products.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "claude-mem",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "thedotmack/claude-mem"
+      ]
+    },
+    {
+      "id": "07-pablostanley-yoinks",
+      "kind": "repo",
+      "title": "pablostanley/yoinks",
+      "rank": 7,
+      "url": "https://github.com/pablostanley/yoinks",
+      "description": "Terminal video downloader for YouTube, X, Instagram, TikTok and 1,800+ other sites.",
+      "language": "TypeScript",
+      "stars_gained": 2706,
+      "total_stars": 5412,
+      "default_branch_commit": "6f03720813c22f907d3fb9ba98567f2169446b82",
+      "why_notable": "A frictionless terminal UI wrapping yt-dlp is drawing stars; the repository’s last push was 2026-07-17, so recent maintenance activity is not established.",
+      "theme_ids": [
+        "terminal-media-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "yoinks",
+      "unique_caveat": "A frictionless terminal UI wrapping yt-dlp is drawing stars; the repository’s last push was 2026-07-17, so recent maintenance activity is not established.",
+      "enrichment": null,
+      "refs": [
+        "pablostanley/yoinks"
+      ]
+    },
+    {
+      "id": "08-mvschwarz-openrig",
+      "kind": "repo",
+      "title": "mvschwarz/openrig",
+      "rank": 8,
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Build persistent teams from Claude Code, Codex and Pi agents with roles, shared context and owned work.",
+      "language": "TypeScript",
+      "stars_gained": 2693,
+      "total_stars": 6162,
+      "default_branch_commit": "aa126c74d5d1568a6091c037450720c552e50e49",
+      "why_notable": "Treats separate coding-agent harnesses as one persistent team, with a YAML-defined setup and shared context.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "openrig",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mvschwarz/openrig"
+      ]
+    },
+    {
+      "id": "09-earthtojake-text-to-cad",
+      "kind": "repo",
+      "title": "earthtojake/text-to-cad",
+      "rank": 9,
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "Give agents workflows for generating and checking CAD models.",
+      "language": "Python",
+      "stars_gained": 1898,
+      "total_stars": 18481,
+      "default_branch_commit": "523ae21341a498b7dfed8a06d004e5e34bc10c16",
+      "why_notable": "Connects agent workflows to concrete fabrication outputs—STEP, GLB, STL and 3MF—plus manufacturing checks and drawings.",
+      "theme_ids": [
+        "agent-capabilities"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": null,
+      "spoken_name": "text-to-cad",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "earthtojake/text-to-cad"
+      ]
+    },
+    {
+      "id": "10-cursor-plugins",
+      "kind": "repo",
+      "title": "cursor/plugins",
+      "rank": 10,
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins for developer tools and services.",
+      "language": "TypeScript",
+      "stars_gained": 1109,
+      "total_stars": 10403,
+      "default_branch_commit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "why_notable": "The repository’s manifest-based plugins package repeatable tool integrations and team workflows for Cursor.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "medium",
+      "narration_priority": null,
+      "spoken_name": "plugins",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "cursor/plugins"
+      ]
+    },
+    {
+      "id": "11-epicgames-raddebugger",
+      "kind": "repo",
+      "title": "EpicGames/raddebugger",
+      "rank": 11,
+      "url": "https://github.com/EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process graphical debugger.",
+      "language": "C",
+      "stars_gained": 448,
+      "total_stars": 8125,
+      "default_branch_commit": "b6d8c3fd9eaf7b55960d80738365742a8fba9e29",
+      "why_notable": "A systems-programming counterpoint to agent projects; it includes a custom debug-info format, but is currently alpha and Windows x64 focused.",
+      "theme_ids": [
+        "console-native-tools"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "medium",
+      "narration_priority": null,
+      "spoken_name": "raddebugger",
+      "unique_caveat": "A systems-programming counterpoint to agent projects; it includes a custom debug-info format, but is currently alpha and Windows x64 focused.",
+      "enrichment": null,
+      "refs": [
+        "EpicGames/raddebugger"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- Native and systems tools: AnyPS5 leads by weekly stars with PS5 executable porting; RAD Debugger supplies a native debugging counterpoint.\n- Agent workflow infrastructure: Composable skills, persistent context, multi-agent teams and plugins are recurring ways to make coding agents more reliable and reusable.\n- Agents doing more than code: Internet research, deterministic video production and CAD/fabrication workflows extend agents into information gathering and tangible media/design outputs.\n- Personal data and self-hosting: openGym is a notable non-agent project focused on self-hosted personal fitness data.\n- Focused terminal utilities: yoinks packages media retrieval behind a terminal-first workflow."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The week’s clearest story is demand for agent infrastructure—skills, memory, team orchestration and integrations—alongside tools that let agents reach the web or produce video and CAD artifacts. The leading AnyPS5 spike and the conventional debugger show that highly specific systems tools can still break through. Weekly stars measure attention, not adoption or software quality; several projects have important maturity or activity caveats."
+    }
+  ],
+  "sources": {
+    "primary": "https://github.com/trending?since=weekly",
+    "corroboration": "GitHub REST repository metadata and current default-branch commit endpoints for all 11; GitHub Search API queries for the eight highest-momentum repositories; current README files."
+  }
+}

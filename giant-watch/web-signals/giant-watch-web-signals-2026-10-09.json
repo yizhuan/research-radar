@@ -1,0 +1,384 @@
+{
+  "organizations": {
+    "Anthropic": [
+      {
+        "title": "Newsroom \\ Anthropic",
+        "url": "https://www.anthropic.com/news",
+        "description": "Sep 22, 2026 · Building on our commitment to American scientific discovery Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission Oct 6, 2026 Announcements Expanding the Cyber Verification Program Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+        "position": 1
+      },
+      {
+        "title": "AI Announcements 2026 — Every OpenAI & Anthropic Release",
+        "url": "https://valueaddvc.com/anthropic-2026",
+        "description": "Every Anthropic and OpenAI product, model, and feature ever shipped — categorized and dated. Free.",
+        "position": 2
+      },
+      {
+        "title": "Anthropic Release Notes - October 2026 Latest Updates ...",
+        "url": "https://releasebot.io/updates/anthropic",
+        "description": "2 days ago · Complete list of Anthropic latest updates for October 2026: get every product news, release note, and changelog from Anthropic summarized in one timeline.",
+        "position": 3
+      },
+      {
+        "title": "Anthropic October 2026 Update: What Changed, Why It Matters ...",
+        "url": "https://aitechmodel.com/anthropic-october-2026-update-what-changed-why-it-matters-and-what-to-watch-next/",
+        "description": "2 days ago · October 7, 2026 by Steve Levine Home › Anthropic › Anthropic October 2026 Update: What Changed, Why It Matters, and What to Watch Next Anthropic's October 2026 changes pushed Claude, its AI assistant, deeper into banks, startups and Google Workspace while adding new developer customization.",
+        "position": 4
+      },
+      {
+        "title": "October 2026: What an Anthropic IPO Actually Unlocks",
+        "url": "https://this-info.com/ai-governance/october-2026-what-an-anthropic-ipo-actually-unlocks/",
+        "description": "Jun 11, 2026 · Anthropic's planned IPO in October 2026 at a valuation near $900B marks a historic shift in AI industry dynamics, with implications for markets and competitors.",
+        "position": 5
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower... | TechCrunch",
+        "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+        "description": "OpenAI is also emphasizing big improvements in efficiency and affordability — most notably, via a substantial price drop for API access. The 6 series models will be available at half the cost of the 5.6 series of Sol and Luna, a price drop that OpenAI attributes to improvements in caching...",
+        "position": 1
+      },
+      {
+        "title": "Mathematicians still checking the Navier-Stokes proof that OpenAI...",
+        "url": "https://www.tuftsdaily.com/article/2026/09/mathematicians-still-checking-the-navier-stokes-proof-that-openai-claims-to-have-solved",
+        "description": "Where you read it first | Tuesday, October 6, 2026.The process that OpenAI followed was as interesting as the proposed solution. The company stated that its proof came from roughly 10,000 AI agents working in parallel, concluding only 88 hours after launch.",
+        "position": 2
+      },
+      {
+        "title": "OpenAI hoped for a warm welcome. Instead it's going to face a tough...",
+        "url": "https://www.abc.net.au/news/2026-10-06/openai-fronts-ai-inquiry/107230434",
+        "description": "OpenAI isn't the only AI company appearing before the committee, with Anthropic, Google and Microsoft representatives also set to appear, but it has, for better or for worse, been given the top billing. AI doom predictions not helping.",
+        "position": 3
+      },
+      {
+        "title": "OpenAI Fully Releases GPT-6: Chat Interface Now Features...",
+        "url": "https://news.aibase.com/news/31451",
+        "description": "Published in Latest AI News. Time :Oct 8, 2026. Read :6minute.OpenAI announced the release of a new Intelligent User Interface on Wednesday, launching alongside GPT-6, marking a major upgrade in ChatGPT's visual and interactive experience.",
+        "position": 4
+      },
+      {
+        "title": "AHM Statement on OpenAI’s October 6 Release of Mathematical...",
+        "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
+        "description": "Yesterday, on October 6th, 2026, OpenAI — which is currently defending lawsuits against accusations of illegal plagiarism, copyright infringement, and trademark dilution — released a repository of manuscripts purporting to contain solutions to a number of...",
+        "position": 5
+      }
+    ],
+    "Google DeepMind": [
+      {
+        "title": "Gemini (language model) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+        "description": "Google announced Gemini, a large language model (LLM) developed by subsidiary Google DeepMind, during the Google I/O keynote on May 10, 2023. It was positioned as a more powerful successor to PaLM 2, which was also unveiled at the event...",
+        "position": 1
+      },
+      {
+        "title": "Google announces Argon AI model – Atin Ito | Ontario’s First Filipino...",
+        "url": "https://www.atinitonews.com/2026/10/google-announces-argon-ai-model/",
+        "description": "SAN FRANCISCO, California — Alphabet’s Google on Wednesday announced a new top-tier artificial intelligence (AI) model to anchor its Gemini 4 generation of models in a fresh bid to catch up to rivals Anthropic and OpenAI in the AI race.",
+        "position": 2
+      },
+      {
+        "title": "News — Google DeepMind",
+        "url": "https://deepmind.google/blog/",
+        "description": "About Google DeepMind. Responsibility. Ensuring AI safety through proactive security, even against evolving threats. News. Discover our latest AI breakthroughs, projects, and updates.",
+        "position": 3
+      },
+      {
+        "title": "Google expands SynthID Detector for AI content",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "description": "VP, Science and Strategic Initiatives, Google DeepMind. Oct 07, 2026. As AI tools become better and easier to use, having clear context about the content you encounter online helps you make informed decisions about what to trust.",
+        "position": 4
+      },
+      {
+        "title": "Google DeepMind AI Search Gives Sneak Peek At Tomorrow's Ads",
+        "url": "https://www.mediapost.com/publications/article/418532/google-deepmind-ai-search-gives-sneak-peek-at-tomo.html",
+        "description": "Marketing Automotive Awards. OMMA Awards (October 7, 2026, NYC).If advertisers want to get a sneak peek at the future, they only need to look as far as Google DeepMind's multimodal AI model for on-device search introduced today.",
+        "position": 5
+      }
+    ],
+    "Meta AI": [
+      {
+        "title": "View the latest news, announcements and media resources from Meta.",
+        "url": "https://about.fb.com/news/",
+        "description": "The Biggest News From Connect 2026. Yesterday at Connect, we announced that we’re bringing Muse to our AI glasses, launched Meta VR Glasses, and more.",
+        "position": 1
+      },
+      {
+        "title": "Meta Unveils Enhanced AI Business Assistant, Automated Ad Tools",
+        "url": "https://www.mediapost.com/publications/article/418580/meta-unveils-enhanced-ai-business-assistant-autom.html",
+        "description": "Meta is continuing to build out its roster of AI-powered tools for advertisers and businesses, with enhancements planned for the company’s business assistant, as well as automated shopping, creative, and targeting capabilities.",
+        "position": 2
+      },
+      {
+        "title": "Startups Fill a Void Left by Google to Rival Meta’s Muse - Bloomberg",
+        "url": "https://www.bloomberg.com/news/newsletters/2026-10-08/startups-fill-a-void-left-by-google-to-rival-meta-s-muse",
+        "description": "The Meta AI logo on a smartphone.Photographer: Andrey Rudakov/Bloomberg. Gift this article.AI safety: OpenAI’s chatbot for under-17s poses safety risks, according to a report from Common Sense Media.",
+        "position": 3
+      },
+      {
+        "title": "Meta rolls out new AI tools to detect ads that secretly... | TechCrunch",
+        "url": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/",
+        "description": "Meta said its latest AI tools are aimed at people using ads that look harmless to send users to illegal content outside Meta’s platforms. The company has introduced a new large language model (LLM) system to detect what it calls “signposting.”",
+        "position": 4
+      },
+      {
+        "title": "Google News - Meta AI - Latest",
+        "url": "https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZ4WW1nemNHUm1jQklDWlc0b0FBUAE?hl=en-US&gl=US&ceid=US:en",
+        "description": "Announcing the AI Glasses Impact Grant Recipients: Helping People Work, Learn, and Live More Independently.Mark Zuckerberg Meta AI Predicts the Price of Solana by The End of 2026.",
+        "position": 5
+      }
+    ],
+    "DeepSeek": [
+      {
+        "title": "DeepSeek V4.1 Flash - API Pricing & Benchmarks | OpenRouter",
+        "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+        "description": "Released. Sep 10, 2026. DeepSeek: DeepSeek V4.1 Flash.Hermes Agent is an open-source, self-improving AI agent by Nous Research that runs persistently with memory across sessions, and builds reusable skills from experience.",
+        "position": 1
+      },
+      {
+        "title": "DeepSeek",
+        "url": "https://chat.deepseek.com/",
+        "description": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more.",
+        "position": 2
+      },
+      {
+        "title": "DeepSeek AI: Chat, Models & Independent Guides",
+        "url": "https://deepseek.ai/",
+        "description": "What DeepSeek is, how to use the official chat, and independent guides to the V4 models, API pricing and login — with a cross-provider cost comparator. Reviewed 9 September 2026.",
+        "position": 3
+      },
+      {
+        "title": "Если вам вдруг показалось, что в последнее время DeepSeek...",
+        "url": "https://author.today/post/939400",
+        "description": "10 сентября 2026 года DeepSeek объединил три режима — «быстрый», «экспертный» и «распознавание изображений» — в единый интеллектуальный режим. Теперь на странице нет переключателя: система сама решает, насколько «глубоко» думать над задачей.",
+        "position": 4
+      },
+      {
+        "title": "Using DeepSeek? Here's why your privacy is at stake | Proton | Proton",
+        "url": "https://proton.me/blog/deepseek",
+        "description": "DeepSeek has no choice but to comply with government demands, whether that means turning over private user data or adjusting its AI outputs to match state-approved narratives(new window). DeepSeek is already censoring information.",
+        "position": 5
+      }
+    ],
+    "Qwen Alibaba": [
+      {
+        "title": "Qwen - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Qwen",
+        "description": "Alibaba previewed its 2.4-trillion-parameter model Qwen3.8-Max in July 2026 and announced that it would release the weights of the model. The announcement occurred a few days after Moonshot AI released its competing Kimi K3 model.[2]...",
+        "position": 1
+      },
+      {
+        "title": "Alibaba Qwen 4 Apsara 2026: The Real Strategy | AI in China",
+        "url": "https://www.ainchina.com/blog/alibaba-qwen-4-apsara-roadmap-china-ai-full-stack-2026/",
+        "description": "Oct 1, 2026 · Alibaba announced Qwen 4 at Apsara 2026 with no release date, no benchmarks, and no weights — and revealed a 5-to-10-trillion-parameter roadmap stretching to Qwen 5. While the industry obsesses over the next leaderboard, Alibaba is playing a different game entirely: building the full-stack infrastructure that makes the model race almost beside the point.",
+        "position": 2
+      },
+      {
+        "title": "Alibaba Cloud’s 2026 Apsara Conference: Full-Stack AI Roadmap ...",
+        "url": "https://www.alibabagroup.com/document-2041268239081668608",
+        "description": "Sep 25, 2026 · At the 2026 Apsara Conference, Alibaba Cloud’s annual flagship technology conference, Alibaba unveiled a roadmap for its full-stack AI strategy spanning chips, cloud infrastructure, models and agents, alongside plans for its first cloud regions in Türkiye, Finland and the Netherlands and a target of more than 20 GW of global data center ...",
+        "position": 3
+      },
+      {
+        "title": "Alibaba at Apsara 2026: Qwen 4 in Training, 10T Models Next",
+        "url": "https://rits.shanghai.nyu.edu/ai/alibaba-at-apsara-2026-qwen-4-in-training-10t-models-next/",
+        "description": "Sep 22, 2026 · At its annual Apsara Conference in Hangzhou on September 22, 2026, Alibaba laid out the next stage of its model roadmap: Qwen 4 is now in training, and the Qwen 4.5 and Qwen 5 series that follow are projected to reach 5 to 10 trillion parameters. In the same keynote, Alibaba Group CEO Eddie Wu introduced the Zhenwu V900, T-Head’s next-generation AI accelerator. Wu also set a target of more ...",
+        "position": 4
+      },
+      {
+        "title": "Qwen 4: Release Date, Models and What's Confirmed (October 2026)",
+        "url": "https://aitoolsreview.co.uk/insights/qwen-4",
+        "description": "Sep 29, 2026 · Alibaba's Qwen 4 (Max, Flash, Plus, 27B) is in training with no release date or price. What's confirmed, the Qwen 5 roadmap and what a 27B model needs to run.",
+        "position": 5
+      }
+    ],
+    "GLM Zhipu Z.ai": [
+      {
+        "title": "Z.ai - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Z.ai",
+        "description": "Z.AI Co., Ltd., branded internationally as Z.ai, is a Chinese artificial intelligence company; their flagship product is the GLM (General Language Model) family of open weights large language models (LLMs). Formerly known as Zhipu AI outside China until 2025...",
+        "position": 1
+      },
+      {
+        "title": "China's Zhipu Z.AI Claims GLM-5.2 Matches Anthropic Mythos on...",
+        "url": "https://creati.ai/ai-news/2026-06-29/chinas-zhipu-z-ai-glm-52-matches-anthropic-mythos-cybersecurity-benchmarks/",
+        "description": "A New Benchmark in Global AI: Zhipu AI Unveils GLM-5.2. The landscape of generative artificial intelligence witnessed a significant shift this week as Beijing-based Zhipu AI announced the release of its latest flagship model, GLM-5.2.",
+        "position": 2
+      },
+      {
+        "title": "GLM-5.5 Leak Claims It Beats Mythos 5.1 and GPT-6 Astra",
+        "url": "https://pasqualepillitteri.it/en/news/21107/glm-5-5-leak-mythos-5-1-gpt-6-astra",
+        "description": "GLM-5.5 (GLM 5.5), the next model expected from Z.ai, the international brand of China's Zhipu, has no official announcement, model card or price yet.",
+        "position": 3
+      },
+      {
+        "title": "Zhipu GLM-5.1 in 2026: The Open Model Trained Without a",
+        "url": "https://convly.ai/zhipu-glm-explained-2026/",
+        "description": "Z.ai is the international brand of Zhipu AI, a Beijing lab spun out of Tsinghua University. The rebrand in 2026 reflects a push to serve global developers. How does the GLM Coding Plan compare to Claude Max?",
+        "position": 4
+      },
+      {
+        "title": "GLM-5.3: What the Zhipu Signals Actually Say",
+        "url": "https://kie.ai/blog/glm-5-3-zhipu-next-model",
+        "description": "On August 14, 2026, Zhipu shipped it. GLM-5.3 is now live — with an official technical blog, a full benchmark table, and API access — and the surprise is what did not change: it runs on the exact same base model as GLM-5.2, with every gain coming from post-training alone.",
+        "position": 5
+      }
+    ],
+    "Kimi Moonshot AI": [
+      {
+        "title": "Moonshot AI - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Moonshot_AI",
+        "description": "In January 2026, Moonshot released Kimi K2.5, a multimodal upgrade to Kimi K2 that added native vision capabilities through a 400-million-parameter vision encoder called MoonViT. The model can process both images and video...",
+        "position": 1
+      },
+      {
+        "title": "Google News - Chinese startup Moonshot AI releases Kimi K3 model...",
+        "url": "https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lNMDRITkVSRkU4ZEZYbUJubHBDZ0FQAQ?hl=en-IN&gl=IN&ceid=IN:en",
+        "description": "Moonshot AI releases ‘world’s largest open-source model’ Kimi K3; WAIC spotlights Chinese AI capabilities. 12 hours ago. Save for later.",
+        "position": 2
+      },
+      {
+        "title": "Moonshot AI Said to Eye Early 2027 IPO After Value Hits... - Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-06/moonshot-said-to-eye-early-2027-ipo-after-value-hits-50-billion",
+        "description": "Takeaways by Bloomberg AI. Moonshot AI has closed the final round of private fundraising at a valuation of about $50 billion and is heading toward an initial public offering in Hong Kong in the first quarter of next year, according to people familiar with the matter.",
+        "position": 3
+      },
+      {
+        "title": "Kimi K2 AI Just Crushed Every Benchmark in the Industry... - YouTube",
+        "url": "https://www.youtube.com/watch?v=qcl9gyKAK4w",
+        "description": "Moonshot’s new AI model, Kimi K Two, is a one trillion parameter agent built to complete real tasks, not just chat, and it’s open source with surprisingly low cost.",
+        "position": 4
+      },
+      {
+        "title": "Moonshot AI launches Kimi K2.5 with swarm of 100 agents",
+        "url": "https://www.testingcatalog.com/moonshot-ai-launches-kimi-k2-5-with-swarm-of-100-parallel-agents/",
+        "description": "TestingCatalog AI News. ChatGPT. Gemini.Moonshot AI has officially launched Kimi K2.5, the latest open-source multimodal language model, available to users on Kimi.com, the Kimi App, API, and Kimi Code.",
+        "position": 5
+      }
+    ],
+    "xAI": [
+      {
+        "title": "ИИтоги мая 2026 г.: AI knows best, но это не точно / Искусственный...",
+        "url": "https://3dnews.ru/1142831/iitogi-maya-2026-g-ai-knows-best-no-eto-ne-tochno",
+        "description": "(+130% от уровня I кв. 2026-го), впервые превзойдёт затраты. Иными словами, это будет первый в истории разработчика квартал, завершённый с положительным балансом в размере чуть более полумиллиарда долларов, а не с привычным убытком.",
+        "position": 1
+      },
+      {
+        "title": "AHM Statement on OpenAI’s October 6 Release of Mathematical...",
+        "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
+        "description": "Yesterday, on October 6th, 2026, OpenAI — which is currently defending lawsuits against accusations of illegal plagiarism, copyright infringement, and trademark dilution — released a repository of manuscripts purporting to contain solutions to a number of...",
+        "position": 2
+      },
+      {
+        "title": "Grok Image — генерация изображений от xAI на движке Aurora",
+        "url": "https://study24.ai/chat/grok_image",
+        "description": "Grok Image работает на движке Aurora от xAI — модели с автрегрессивной архитектурой Mixture of Experts, в отличие от стандартных диффузионных генераторов.Следи за нами в Telegram и VK. Будь в тренде и учись работать с AI быстрее.",
+        "position": 3
+      },
+      {
+        "title": "The Triple-i Initiative October 2026 - YouTube",
+        "url": "https://www.youtube.com/watch?v=LVlyMMWeXfQ",
+        "description": "The Triple-i Initiative returns with 40 announcements in 45+ minutes. No ads, no hosts - just games.Follow news and updates on The Triple-i Initiative:SteamShow recent comments, including potential spam. The Triple-i Initiative October 2026.",
+        "position": 4
+      },
+      {
+        "title": "Grok NSFW Prompts That Work in 2026 (Spicy Mode + Bypass)",
+        "url": "https://flirton.ai/blog/grok-nsfw-prompts-bypass-filters",
+        "description": "Spicy Mode in 2026: What Grok Officially Allows Now. Before going deep on bypasses, know what Grok lets you do natively in 2026. Spicy Mode is xAI's official NSFW path, gated behind SuperGrok ($30/month) or X Premium+ ($40/month).",
+        "position": 5
+      }
+    ]
+  },
+  "cross_cutting": [
+    {
+      "title": "OpenAI News | OpenAI",
+      "url": "https://openai.com/news/",
+      "description": "Stay up to speed on the rapid advancement of AI technology and the benefits it offers to humanity.A practical guide to building with GPT-6. ProductOct 2, 2026.",
+      "position": 1
+    },
+    {
+      "title": "The Triple-i Initiative October 2026 - YouTube",
+      "url": "https://www.youtube.com/watch?v=LVlyMMWeXfQ",
+      "description": "The Triple-i Initiative returns with 40 announcements in 45+ minutes.45 minutes of back-to-back game announcements with zero fluff. World premieres. Gameplay reveals. Release dates. Demos. No hosts.",
+      "position": 2
+    },
+    {
+      "title": "Press release: Nobel Prize in Physiology or Medicine 2026",
+      "url": "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
+      "description": "5 October 2026.Light-seeking algae gave us a switch for nerve cells. The Nobel Prize in Physiology or Medicine 2026 is awarded for optogenetics — a method that makes it possible to show how nerve cells shape memories, feelings and behaviours in the living brain.",
+      "position": 3
+    },
+    {
+      "title": "II Global Digital Forum — October 8–10, 2026, Moscow",
+      "url": "https://gdfconf.com/",
+      "description": "II Global Digital Forum will take place as part of the Digital Solutions forum on October 8–10, 2026 in Moscow.",
+      "position": 4
+    },
+    {
+      "title": "2026 Latest Election Polls and Political Insights | RealClearPolling",
+      "url": "https://www.realclearpolling.com/",
+      "description": "Explore up-to-date 2026/2028 election polls on RealClearPolling. Gain valuable insights into the evolving political landscape and stay ahead of the latest trends.",
+      "position": 5
+    },
+    {
+      "title": "Z.ai - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Z.ai",
+      "description": "Formerly known as Zhipu AI outside China until 2025, it is China's first major LLM company to make initial public offering, on the Hong Kong Stock Exchange in January 2026.",
+      "position": 1
+    },
+    {
+      "title": "McKinsey technology trends outlook 2026 | McKinsey",
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+      "description": "McKinsey’s Technology Trends Outlook 2026 examines 14 technology trends that define 2026, expanding our coverage from last year to include two new fast-emerging domains: agentic software development and AI for scientific discovery and engineering.",
+      "position": 2
+    },
+    {
+      "title": "47 AI statistics and trends for 2026: Latest insights and data",
+      "url": "https://www.hostinger.com/tutorials/ai-statistics/",
+      "description": "Discover the most recent AI statistics and trends for 2026. Explore key developments, industry growth, and the role of artificial intelligence across various sectors.",
+      "position": 3
+    },
+    {
+      "title": "II Global Digital Forum — October 8–10, 2026, Moscow",
+      "url": "https://gdfconf.com/",
+      "description": "II Global Digital Forum will take place within the framework of «Digital Solutions» — the major IT-event in Russia, dedicated to digital transformation and attended by Mikhail Mishustin, Prime Minister of the Russian Federation.",
+      "position": 4
+    },
+    {
+      "title": "AI News & Artificial Intelligence | TechCrunch",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "description": "Read the latest on artificial intelligence and machine learning tech, the companies that are building them, and the ethical issues AI raises today.",
+      "position": 5
+    },
+    {
+      "title": "AI News & Artificial Intelligence | TechCrunch",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "description": "News coverage on artificial intelligence and machine learning tech, the companies building them, and the ethical issues AI raises today.19 hours ago. Breakout session - a full room. TechCrunch Disrupt 2026.",
+      "position": 1
+    },
+    {
+      "title": "Key global IT trends discussed at GDF 2026 plenary session",
+      "url": "https://gdfconf.com/news/na-plenarnoy-sessii-gtsf-2026-oboznachili-klyuchevye-trendy-mirovoy-it-otrasli",
+      "description": "“Regulations apply within national borders, but AI is a technology that knows no boundaries. That is why the international community needs to develop a common approach to AI regulation.Other news. Business IT Breakfast at the GDF 2026 focuses on child safety online.",
+      "position": 2
+    },
+    {
+      "title": "Blockchain Life 2026 | December 1-2, Dubai, UAE | Top...",
+      "url": "https://blockchain-life.com/?matchtype={matchtype}",
+      "description": "Managing Partner of DWF Labs. Dmitry Fedotov. Head of EMERGING TECH at ADGM.1300+ VIP attendees and speakers. Meet crypto leaders, build new partnerships, and make friends in a relaxed atmosphere at the grand culminating point of Blockchain Life 2026.",
+      "position": 3
+    },
+    {
+      "title": "Midterm revolt, AI fears and the morality of executions - SWI swissinfo.ch",
+      "url": "https://www.swissinfo.ch/eng/various/midterm-revolt-ai-fears-and-the-morality-of-executions/92175424",
+      "description": "“Because regulating AI development is so difficult, future regulations might focus on access to and the deployment of these models. Permissible areas of application could be defined for AI agents. Certain AI queries could be blocked based on the user’s country of origin.”",
+      "position": 4
+    },
+    {
+      "title": "AI Act | Shaping Europe’s digital future",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "description": "The AI Act does not introduce rules for AI that is deemed minimal or no risk. The vast majority of AI systems currently used in the EU fall into this category. This includes applications such as AI-enabled video games or spam filters.",
+      "position": 5
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "organizations": {
+    "Anthropic": [],
+    "OpenAI": [],
+    "Google DeepMind": [],
+    "Meta AI": [],
+    "DeepSeek": [],
+    "Qwen Alibaba": [],
+    "GLM Zhipu Z.ai": [],
+    "Kimi Moonshot AI": [
+      {
+        "title": "Google News - Chinese startup Moonshot AI releases Kimi K3 model...",
+        "url": "https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lNMDRITkVSRkU4ZEZYbUJubHBDZ0FQAQ?hl=en-IN&gl=IN&ceid=IN:en",
+        "description": "Moonshot AI releases ‘world’s largest open-source model’ Kimi K3; WAIC spotlights Chinese AI capabilities. 12 hours ago. Save for later.",
+        "position": 2
+      }
+    ],
+    "xAI": []
+  },
+  "cross_cutting": []
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "weekly",
+  "date": "2026-10-09",
+  "date_range": {"start": "2026-10-03", "end": "2026-10-09"},
+  "title": "Giant Watch Summary - Weekly - 2026-10-09",
+  "source_report": "/home/yizhuan/.research/giant-watch/weekly/giant-watch-summary-weekly-2026-10-09.md",
+  "entry_count": 4,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Google launched a universal Gemini workplace agent on October 8, according to Bloomberg, escalating its competition with OpenAI and Anthropic for corporate customers; Meta's first-party newsroom announced Muse for Small Business on October 7. The week's clearest signal is major platforms extending AI agents into workplace and small-business use."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "google-gemini-workplace-agent",
+      "title": "Google launches universal Gemini workplace agent",
+      "organizations": [
+        "Google"
+      ],
+      "status": "unverified",
+      "content": "A Bloomberg report dated October 8 says Google announced a Gemini agent for the workplace, increasing competition with OpenAI, Anthropic, and Microsoft for corporate customers. The supplied search signal contained no independent or first-party corroboration.",
+      "significance": "Directly challenges OpenAI and Anthropic in the enterprise agent market and marks Google's push to make Gemini a universal workplace assistant.",
+      "refs": [
+        "https://www.bloomberg.com/news/articles/2026-10-08/google-launches-universal-gemini-ai-agent-for-workplace"
+      ],
+      "related_event_ids": [
+        "meta-muse-small-business"
+      ],
+      "transition_hint": "Meta's same-week small-business agent launch is a parallel move to push personal AI agents into everyday work."
+    },
+    {
+      "id": "02-event",
+      "kind": "event",
+      "rank": 2,
+      "event_id": "meta-muse-small-business",
+      "title": "Meta launches Muse for Small Business",
+      "organizations": [
+        "Meta"
+      ],
+      "status": "verified",
+      "content": "Meta's October 7 newsroom announcement says Muse for Small Business is launching as a personal AI agent that works in the background to help small businesses reach their goals.",
+      "significance": "Extends Meta's Muse agent beyond consumer glasses and into a commercial productivity use case, broadening its AI agent footprint.",
+      "refs": [
+        "https://about.fb.com/news/"
+      ],
+      "related_event_ids": [
+        "google-gemini-workplace-agent"
+      ],
+      "transition_hint": ""
+    },
+    {
+      "id": "03-event",
+      "kind": "event",
+      "rank": 3,
+      "event_id": "moonshot-funding-ipo-report",
+      "title": "Moonshot AI's funding and IPO plans reported",
+      "organizations": ["Kimi", "Moonshot AI"],
+      "status": "unverified",
+      "content": "Bloomberg reported on October 6 that Moonshot AI had closed its final private fundraising round at a valuation of about $50 billion and was considering a Hong Kong IPO in the first quarter of 2027, citing people familiar with the matter. No company confirmation appeared in the supplied results.",
+      "significance": "The reported valuation and IPO timetable point to a significant financing and public-market milestone for a major Chinese AI lab.",
+      "refs": ["https://www.bloomberg.com/news/articles/2026-10-06/moonshot-said-to-eye-early-2027-ipo-after-value-hits-50-billion"],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "04-event",
+      "kind": "event",
+      "rank": 4,
+      "event_id": "xai-spacexsi-rename",
+      "title": "Elon Musk to rename SpaceXAI to SpaceXSI",
+      "organizations": [
+        "xAI"
+      ],
+      "status": "unverified",
+      "content": "A report says Elon Musk plans to rename SpaceXAI to SpaceXSI, which would be the second rename for Musk's AI business in less than a year, following SpaceX's February all-stock acquisition of xAI and the July adoption of the SpaceXAI name.",
+      "significance": "Signals continued corporate churn around xAI's identity and structure, though the report is not corroborated by an official announcement.",
+      "refs": [
+        "https://teslanorth.com/2026/10/04/elon-musk-spacexai-spacexsi-rename/"
+      ],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "88-rumors-unverified",
+      "kind": "rumors",
+      "title": "Rumors and Unverified Claims",
+      "content": "A report claims Elon Musk plans to rename SpaceXAI to SpaceXSI, described as the second rename in less than a year; no official announcement or model card is cited."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The enterprise agent race is now a multi-front contest, with Google and Meta both shipping workplace-facing agents in the same week. The next evidence to watch is whether OpenAI or Anthropic respond with comparable agent products, and whether the reported SpaceXAI rename is officially confirmed."
+    }
+  ]
+}

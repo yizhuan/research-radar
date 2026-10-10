@@ -1,0 +1,58 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-10-10",
+  "title": "Giant Watch Summary - Daily - 2026-10-10",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-10-10.md",
+  "entry_count": 2,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "OpenAI's reported $70B annualized revenue target headlines a quiet daily window, with the only other fresh signal being an Axios scoop on AI companies drafting \"day after\" public-revolt scenarios. The episode's throughline is the widening gap between commercial ambition and the governance and safety friction surrounding it."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "openai-70b-revenue",
+      "title": "OpenAI reportedly expects $70B annualized revenue by end of 2026",
+      "organizations": [
+        "OpenAI"
+      ],
+      "status": "unverified",
+      "content": "Bloomberg reports that OpenAI is expecting to reach or exceed $70 billion in annualized revenue by the end of the year, according to people familiar with the matter, driven largely by growth in its enterprise business.",
+      "significance": "A reported revenue milestone of this scale would mark a step-change in the commercial scale of a frontier AI lab and would be the dominant business story of the day.",
+      "refs": [
+        "https://www.bloomberg.com/news/articles/2026-10-09/openai-expects-70-billion-in-annualized-revenue-by-end-of-2026"
+      ],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "02-event",
+      "kind": "event",
+      "rank": 2,
+      "event_id": "ai-day-after-scenarios",
+      "title": "AI companies plot \"day after\" scenarios for public revolt",
+      "organizations": [],
+      "status": "unverified",
+      "content": "An Axios scoop reports that AI companies are plotting \"day after\" scenarios for a public revolt, and notes that some proposed measures, including a required kill switch on advanced AI, have bipartisan support and even some industry buy-in, while experts have questioned the viability of trying to turn off all AI systems.",
+      "significance": "The report indicates frontier labs are actively gaming out societal backlash and shutdown contingencies, a governance signal that sits alongside the day's commercial news.",
+      "refs": [
+        "https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack"
+      ],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The day's freshest signals are both single-source reports rather than confirmed announcements, so the next evidence to watch is whether OpenAI or the companies referenced in the Axios scoop corroborate these accounts. Absent that, the window remains thin on verifiable frontier-lab news."
+    }
+  ]
+}

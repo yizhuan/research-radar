@@ -1,152 +1,111 @@
-# arXiv Mathematics — notable papers from the Fri, 9 Oct 2026 announcement batch (8 papers)
+# Mathematics on arXiv — latest batch, Friday 9 October 2026
 
-The strongest pattern today is boundary-setting mathematics: sharp constants and sample thresholds, explicit classifications, and undecidability. I’ll cover computability, random media, sharp estimates, and geometric structure. This is an inferred selection, not an official arXiv trending chart; very recent papers have little citation evidence, so the ordering is not a popularity ranking.[1]
-
-Window: latest daily batch, 2026-10-09; snapshot: 2026-10-10 00:18:55 UTC. Saturday 10 Oct has no newer batch listed, so this uses Friday’s announcement.
+Seven notable papers from the latest daily Mathematics announcement batch, spanning undecidability, sharp sampling theory, lattice minimization, hypergraph extremal problems, planar statistical mechanics, geometric inequalities, and Ramsey constructions. This is a result-led selection, not a measured popularity ranking: arXiv has no official trending chart, the batch is only two days old at the snapshot, and citation/attention evidence is too sparse to rank papers by momentum. For a quick tour, start with the stability undecidability result, the Boolean-cube sampling threshold, and the claimed completion of the Mueller–Ho conjecture.
 
 ## Top papers (ranked)
 
-### 1. [Global asymptotic stability of homogeneous polynomial vector fields is undecidable](https://arxiv.org/abs/2610.12434v1)
-- **Abstract:** For rational homogeneous polynomial vector fields, the authors reduce stability questions to cubic fields and prove global asymptotic stability is undecidable in every odd degree at sufficiently large fixed dimension.[2][3]
+### 1. [Global asymptotic stability of homogeneous polynomial vector fields is undecidable](https://arxiv.org/abs/2610.12434)
+- **Abstract:** Studies whether the origin of rational homogeneous polynomial ODEs is globally asymptotically stable and reduces this decision problem across odd degrees to the cubic case.
 - **Authors:** Ivan O. Shevchenko, Jun Liu, Xinzhi Liu
-- **arXiv:** `2610.12434v1` (published 2026-10-08 17:57:15 UTC; categories: `math.DS`, `math.CA`, `math.LO`)[2]
-- **Evidence for ranking:** A concrete many-one-completeness result across dynamics, analysis, and logic; the introduction explains how it advances prior stability undecidability results.[3]
-- **Claimed result:** The authors prove GAS is many-one complete for every odd degree ≥3 and all dimensions above a fixed threshold, hence cubic GAS is undecidable in some fixed dimension.[2][3]
-- **Assumptions and setting:** Inputs are rational-coefficient homogeneous polynomial vector fields on real Euclidean space; the dimension threshold is sufficiently large, not arbitrary.[2][3]
-- **Caveat:** The paper says its fixed dimension threshold is not computed; the result does not identify the smallest dimension where undecidability begins.[3]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
+- **arXiv:** `2610.12434v1` (published 2026-10-08 17:57:15 UTC; categories: `math.DS`, `math.CA`, `math.LO`)
+- **Evidence for ranking:** A concrete computability result with many-one completeness and a reduction to fixed-dimension cubic systems; cross-listed across dynamical systems, analysis, and logic. Its breadth and precise undecidability claim place it first in this result-led selection, not on popularity evidence.
+- **Claimed result:** The authors prove that deciding global asymptotic stability is many-one complete for every odd degree at least three in every sufficiently large dimension, and in particular is undecidable for cubic vector fields in a fixed dimension.
+- **Assumptions and setting:** Homogeneous polynomial vector fields with rational coefficients; the fixed-dimension cubic conclusion is for a dimension whose existence is established by the paper.
+- **Caveat:** The reduction is highly indirect and technical (the 50-page preprint uses polynomial encodings and theta-series machinery); the abstract does not give an explicit smallest dimension for the cubic undecidability result.
+- **Announcement type:** new submission, announcement batch 2026-10-09
 - **Themes:** Logic & foundations; Optimization & control
 
-### 2. [Anomalous scaling limit of a Brownian particle in a log-correlated potential](https://arxiv.org/abs/2610.12335v1)
-- **Abstract:** At weak disorder, the authors establish a scaling limit for a diffusion in a log-correlated Gaussian potential, with a singular path law and Gaussian-multiplicative-chaos reversible measure; in dimension two they compute the scaling exponent exactly.[4][5]
-- **Authors:** Scott Armstrong, Ahmed Bou-Rabee, Tuomo Kuusi
-- **arXiv:** `2610.12335v1` (published 2026-10-08 17:12:29 UTC; categories: `math.PR`, `math-ph`, `math.AP`)[4]
-- **Evidence for ranking:** The paper addresses a scaling-limit problem noted in its introduction, connects probability, PDE, and mathematical physics, and links a Lean formalization.[5]
-- **Claimed result:** Under the paper’s assumptions and sufficiently weak disorder, the authors prove convergence to a continuous strong Markov process with singular reversible measure and anomalous scaling.[4][5]
-- **Assumptions and setting:** Dimension `d≥2`; the random environment satisfies the paper’s stationarity, dependence, symmetry, and regularity hypotheses, with disorder below a dimension-dependent threshold.[5]
-- **Caveat:** The theorem is for weak disorder and this structured class of random fields; it does not establish the same behavior at strong disorder or for every log-correlated potential.[5]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
-- **Themes:** Probability & statistics; Analysis & PDE; Mathematical physics
-
-### 3. [Subspace Uncertainty and Sharp Sampling Thresholds on the Boolean Cube](https://arxiv.org/abs/2610.12358v1)
-- **Abstract:** For Gaussian regression on a known subspace of low-degree functions on the Boolean cube, the paper gives an exponential worst-case sample threshold and sharpens an uncertainty bound, with an Airy-kernel construction showing the `k^(1/3)` remainder is generally unavoidable.[6]
+### 2. [Subspace Uncertainty and Sharp Sampling Thresholds on the Boolean Cube](https://arxiv.org/abs/2610.12358)
+- **Abstract:** Derives worst-case noisy-regression sample thresholds for known subspaces of low-degree Boolean-cube functions by quantifying how their energy can concentrate on rarely sampled inputs.
 - **Authors:** Thomas Weinberger
-- **arXiv:** `2610.12358v1` (published 2026-10-08 17:23:25 UTC; categories: `math.PR`, `cs.IT`, `cs.LG`, `math.CO`)[6]
-- **Evidence for ranking:** A precise threshold theorem spans probability, information theory, learning theory, and combinatorics; the abstract supplies both upper and conditional matching lower bounds.[6]
-- **Claimed result:** For fixed `q₀<1/2` and `1≤k≤q₀d`, the worst-subspace sample threshold is `(m+t) exp{d Ψ(k/d)+O(k^(1/3))}`; the paper also proves a matching lower bound in specified regimes.[6]
-- **Assumptions and setting:** Squared population `L₂` loss, Gaussian regression, known `m`-dimensional subspace of degree-at-most-`k` functions on the `d`-dimensional Boolean cube; the lower bound requires `m≤binom(d, floor(k^(1/3)))` or `t≥m`.[6]
-- **Caveat:** The matching lower bound is not asserted for every feasible `m,t`; the theorem’s stated asymptotic regime and confidence conditions matter.[6]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
-- **Themes:** Probability & statistics; Combinatorics & discrete mathematics; Machine learning theory
+- **arXiv:** `2610.12358v1` (published 2026-10-08 17:23:25 UTC; categories: `math.PR`, `cs.IT`, `cs.LG`, `math.CO`)
+- **Evidence for ranking:** Gives matching-order sampling and uncertainty bounds, including a lower-order remainder shown sharp by an Airy-kernel construction; its probability, information-theory, learning, and combinatorics cross-lists mark a substantial bridge.
+- **Claimed result:** For fixed `q₀<1/2` and degree `1≤k≤q₀d`, the worst-subspace sample threshold for the stated minimax parametric error is `(m+t) exp(E_{d,k}+O(k^{1/3}))`; the authors also show that noisy estimation can cost exponentially more samples than noiseless identification.
+- **Assumptions and setting:** Gaussian regression with squared population `L₂` loss, uniform random inputs on the `d`-dimensional Boolean cube, a known `m`-dimensional subspace of degree-at-most-`k` functions, and the confidence and fixed-constant conditions stated in the abstract.
+- **Caveat:** The matching lower bound is established under the additional condition `m≤binom(d,⌊k^{1/3}⌋)` or `t≥m`; it is not claimed there for every feasible subspace dimension and confidence regime.
+- **Announcement type:** new submission, announcement batch 2026-10-09
+- **Themes:** Probability & statistics; Machine learning theory; Combinatorics & discrete mathematics
 
-### 4. [Directed fractal percolation and non-Lipschitz variants](https://arxiv.org/abs/2610.12366v1)
-- **Abstract:** In Mandelbrot fractal percolation, the authors quantify last-passage growth and construct directed paths through open sites when paths may move exponentially fast in space, defining an unrectifiable directed-percolation variant.[12]
-- **Authors:** Shirshendu Ganguly, Victor Ginsburg, Kaihao Jing
-- **arXiv:** `2610.12366v1` (published 2026-10-08 17:27:33 UTC; categories: `math.PR`, `math-ph`, `math.CA`, `math.MG`)[12]
-- **Evidence for ranking:** Four-way mathematical cross-listing and two concrete claims: an almost-polynomial gap from linear passage-time growth, and a new non-Lipschitz path model.[12]
-- **Claimed result:** The authors show high last-passage values are obstructed for Lipschitz paths, while allowing exponentially fast spatial motion yields directed paths through open sites.[12]
-- **Assumptions and setting:** The model is Mandelbrot’s scale-by-scale fractal percolation, not a theorem for general random media or Liouville quantum gravity.[12]
-- **Caveat:** The proposed non-Lipschitz variant changes the path constraint; it does not overturn the known absence of ordinary directed percolation in the basic model.[12]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
-- **Themes:** Probability & statistics; Mathematical physics; Analysis & PDE
+### 3. [A Complete Proof of Mueller--Ho Conjecture](https://arxiv.org/abs/2610.12203)
+- **Abstract:** Classifies the minimizing lattice shapes and relative shifts for a two-component Bose-gas energy built from a theta function and a shifted theta function as the interaction parameter varies.
+- **Authors:** Senping Luo, Juncheng Wei
+- **arXiv:** `2610.12203v1` (published 2026-10-08 15:56:49 UTC; categories: `math.AP`, `math-ph`, `math.NT`)
+- **Evidence for ranking:** Claims a complete parameter-regime classification for a named 2002 conjecture, connecting lattice optimization, analysis, and mathematical physics; this is a specific resolution claim rather than a popularity signal.
+- **Claimed result:** The authors prove that minimizers, up to modular equivalence, pass through specified triangular, intermediate, square, and rectangular lattice configurations with relative shifts across three interaction thresholds, thereby claiming to prove the Mueller–Ho conjecture.
+- **Assumptions and setting:** Minimize `θ(1;z)+αJ(z;a,b)` over `z` in the upper half-plane and shifts `(a,b)∈R²`, for `α∈[0,1]`; the variables model lattice shape and relative displacement in a two-component Bose gas.
+- **Caveat:** The abstract states that three ordered thresholds exist but does not provide their explicit values; the classification is for this particular theta-energy model and is an author-claimed preprint result, not a peer-reviewed verdict.
+- **Announcement type:** new submission, announcement batch 2026-10-09
+- **Themes:** Mathematical physics; Analysis & PDE; Algebra & number theory
 
-### 5. [The sharp `L²`-Michael–Simon inequality](https://arxiv.org/abs/2610.12309v1)
-- **Abstract:** For isometric immersions of `n`-manifolds into Euclidean space with `n≥3`, the authors prove the sharp Michael–Simon Sobolev constant, characterize equality, and extend the argument to conformal ambient settings.[7][8]
+### 4. [A counterexample to the Erdős--Sós bipartite-link conjecture](https://arxiv.org/abs/2610.11642)
+- **Abstract:** Constructs 3-uniform hypergraphs whose link graphs are all bipartite yet whose edge density asymptotically exceeds the conjectured one-quarter threshold.
+- **Authors:** Tianchi Yang
+- **arXiv:** `2610.11642v1` (published 2026-10-08 10:19:33 UTC; categories: `math.CO`)
+- **Evidence for ranking:** A direct counterexample to a named extremal-combinatorics conjecture, with an explicit density exceeding its proposed asymptotic bound.
+- **Claimed result:** The author claims examples with edge density at least `0.250000356 > 1/4` for all sufficiently large `n`, disproving the stated `(1/4+o(1)) binom(n,3)` upper-bound conjecture.
+- **Assumptions and setting:** `n`-vertex 3-uniform hypergraphs subject to every link graph being bipartite; the construction is asserted for all sufficiently large `n`.
+- **Caveat:** The improvement over `1/4` is numerically small, and the abstract does not specify the finite size at which the construction applies; the asymptotic counterexample does not by itself determine the optimal density.
+- **Announcement type:** new submission, announcement batch 2026-10-09
+- **Themes:** Combinatorics & discrete mathematics
+
+### 5. [Strong RSW estimates for the FK-Ising model on s-embeddings](https://arxiv.org/abs/2610.11990)
+- **Abstract:** Establishes strong Russo–Seymour–Welsh crossing estimates for the FK-Ising model on s-embeddings under a uniformly bounded geometry condition.
+- **Authors:** Dmitry Chelkak, Yanqing Wei
+- **arXiv:** `2610.11990v1` (published 2026-10-08 13:59:10 UTC; categories: `math.PR`, `math-ph`)
+- **Evidence for ranking:** Proves a reusable crossing estimate and points to consequences for arm-event quasi-multiplicativity and cluster geometry; it extends a central planar-percolation technique to a broader embedding setup.
+- **Claimed result:** Under the stated geometry condition, the authors prove crossings of rough topological quadrilaterals even with unfavorable boundary conditions, then obtain standard consequences including quasi-multiplicativity of arm events and fractal cluster properties.
+- **Assumptions and setting:** FK-Ising on s-embeddings whose relevant tangential quadrilaterals have uniformly comparable edge lengths and angles bounded below; the paper also discusses near-critical regular-grid applications below the correlation-length scale.
+- **Caveat:** The theorem depends on the uniformly bounded geometry hypothesis; its abstract does not assert the same strong estimates for arbitrary highly irregular embeddings.
+- **Announcement type:** new submission, announcement batch 2026-10-09
+- **Themes:** Probability & statistics; Mathematical physics
+
+### 6. [The sharp $L^2$-Michael--Simon inequality](https://arxiv.org/abs/2610.12309)
+- **Abstract:** Proves a sharp Sobolev-type inequality coupling the gradient and mean curvature of an immersed manifold, and characterizes equality cases.
 - **Authors:** Jeffrey S. Case, Dawit Mengesha
-- **arXiv:** `2610.12309v1` (published 2026-10-08 16:58:54 UTC; categories: `math.DG`, `math.AP`)[7]
-- **Evidence for ranking:** The full introduction states the sharp constant and equality characterization, and the result connects differential geometry with PDE/Sobolev analysis.[8]
-- **Claimed result:** For `n≥3`, the coefficient is the Aubin–Talenti constant `n(n−2) Vol(Sⁿ)^(2/n)/4`, independent of codimension; the authors characterize equality cases.[7][8]
-- **Assumptions and setting:** An isometric immersion `j:(Σⁿ,g)→Rᴺ` and test functions in `W^{1,2}(Σ)`; the paper takes manifolds to be connected.[8]
-- **Caveat:** The sharp theorem is stated for `n≥3`; equality has a specific conformal/capacity condition and is not simply a claim that every immersion attains equality.[8]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
+- **arXiv:** `2610.12309v1` (published 2026-10-08 16:58:54 UTC; categories: `math.DG`, `math.AP`)
+- **Evidence for ranking:** Supplies an explicit sharp constant and equality characterization, and reports extensions to spherical, hyperbolic, and other conformally developable ambient spaces; the differential-geometry/analysis cross-list supports its reach.
+- **Claimed result:** For `n≥3` and an isometric immersion into Euclidean space, the authors prove the stated sharp `L²` Michael–Simon inequality for all `u∈W^{1,2}(Σ)` and derive related mean-curvature/volume inequalities.
+- **Assumptions and setting:** An `n`-dimensional Riemannian manifold isometrically immersed in Euclidean space; the inequality includes the mean-curvature potential and the critical Sobolev exponent `2n/(n−2)`.
+- **Caveat:** The stated inequality is for dimensions `n≥3` and the specified isometric-immersion setting; equality and extensions beyond the stated conformal ambient settings need the paper's precise hypotheses.
+- **Announcement type:** new submission, announcement batch 2026-10-09
 - **Themes:** Geometry & topology; Analysis & PDE
 
-### 6. [The moduli space of curves of genus 16 is uniruled](https://arxiv.org/abs/2610.12364v1)
-- **Abstract:** Using non-abelian Brill–Noether theory, the authors claim that the moduli space of curves of genus 16 is uniruled, the highest genus for which they say this is known.[9]
-- **Authors:** Gavril Farkas, Alessandro Verra
-- **arXiv:** `2610.12364v1` (published 2026-10-08 17:27:14 UTC; categories: `math.AG`)[9]
-- **Evidence for ranking:** The preprint claims a record genus for uniruledness and reports a new use of non-abelian Brill–Noether theory.[9]
-- **Claimed result:** The authors prove `M₁₆` is uniruled.[9]
-- **Assumptions and setting:** The statement concerns the moduli space of curves of genus 16; the abstract does not give further technical hypotheses.[9]
-- **Caveat:** The record claim and proof details come from a new preprint; its short abstract alone does not expose the construction or establish independent expert validation.[9]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
-- **Themes:** Geometry & topology
-
-### 7. [Ordinary `G`-permutable subgroups of finite simple groups](https://arxiv.org/abs/2610.12329v1)
-- **Abstract:** The paper classifies nontrivial proper ordinary `G`-permutable subgroups of finite non-abelian simple groups and claims to solve part (a) of Problem 17.112 in the Kourovka Notebook.[10]
-- **Authors:** Shengmin Zhang
-- **arXiv:** `2610.12329v1` (published 2026-10-08 17:08:32 UTC; categories: `math.GR`)[10]
-- **Evidence for ranking:** It reports a complete classification resolving a named open problem; Semantic Scholar currently lists one citation, a very early total rather than evidence of period growth.[10][16]
-- **Claimed result:** Such subgroups occur exactly for the listed families `PSL₂(q)`, `²B₂(2^(2a+1))`, `J₁`, `Sp₄(4)`, and `PSp₄(p)` with the stated congruence restrictions; the paper also classifies them.[10]
-- **Assumptions and setting:** Finite non-abelian simple groups; “ordinary `G`-permutable” and proper, nontrivial subgroups are the specific notion and scope.[10]
-- **Caveat:** This is not a classification of every broader notion of permutability or of subgroups in arbitrary finite groups.[10]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
-- **Themes:** Algebra & number theory
-
-### 8. [Prevalence of sparsity for negatively curved metrics](https://arxiv.org/abs/2610.12351v1)
-- **Abstract:** On a closed manifold of any dimension, the authors prove that negatively curved `Cᵏ` metrics with exponentially sparse length spectra form a prevalent, hence dense, family for sufficiently large `k`.[11]
-- **Authors:** Kostiantyn Drach, Vadim Kaloshin
-- **arXiv:** `2610.12351v1` (published 2026-10-08 17:20:13 UTC; categories: `math.DG`, `math.DS`)[11]
-- **Evidence for ranking:** A prevalence-and-density theorem in differential geometry and dynamics, with a stated sublinear-in-`k` growth rate for the exponent in the sparsity bound.[11]
-- **Claimed result:** The authors establish exponential sparsity of distinct closed-geodesic lengths for a prevalent set of negatively curved metrics, with an exponent growing sublinearly in regularity `k`.[11]
-- **Assumptions and setting:** Closed manifolds of arbitrary dimension and negatively curved `Cᵏ` metrics, for sufficiently large `k`.[11]
-- **Caveat:** Prevalence and density do not mean every negatively curved metric has this property; the theorem requires sufficiently high regularity.[11]
-- **Announcement type:** new submission, 2026-10-09 announcement batch
-- **Themes:** Geometry & topology
+### 7. [Lower bounds for Ramsey numbers: $\mathrm{R}(6,8)\ge 135$ and $\mathrm{R}(8,10)\ge 345$](https://arxiv.org/abs/2610.12122)
+- **Abstract:** Gives explicit two-colourings establishing improved lower bounds for two diagonal-family Ramsey numbers, checked by two independently written exhaustive clique-verification programs.
+- **Authors:** Fritz Cremer
+- **arXiv:** `2610.12122v1` (published 2026-10-08 15:16:34 UTC; categories: `math.CO`, `cs.DM`)
+- **Evidence for ranking:** The paper provides explicit finite witnesses for two improved bounds and describes independent exhaustive verification, a concrete and checkable computational-combinatorics result.
+- **Claimed result:** The author proves `R(6,8)≥135` and `R(8,10)≥345`, improving the cited April 2026 survey bounds of 134 and 343 using colorings of `K₁₃₄` and `K₃₄₄` without the prohibited monochromatic cliques.
+- **Assumptions and setting:** Two-colour Ramsey numbers for avoiding a red `K₆` / blue `K₈`, and a red `K₈` / blue `K₁₀`; the proof rests on explicit coloring witnesses and exhaustive checks.
+- **Caveat:** The new bounds establish lower bounds only, not exact Ramsey numbers; the witnesses were discovered with local search and need their certificates/checking code to be reproducible for independent computational auditing.
+- **Announcement type:** new submission, announcement batch 2026-10-09
+- **Themes:** Combinatorics & discrete mathematics; Numerical analysis & computation
 
 ## Trending Research Themes
 
-- **Multiscale random geometry (two related but distinct papers):** the Brownian-potential result uses renormalization across scales, while the fractal-percolation paper develops a multiscale framework for passage times. They share a scale-dependent random setting, not an asserted common proof technique.[5][12]
-- **Sharp quantitative boundaries:** the Boolean-cube paper pins down an exponential sampling threshold and its remainder, while the Michael–Simon paper identifies an optimal geometric Sobolev constant and equality cases.[6][8]
-- **Isolated boundary results, not a field-wide shift:** the undecidability theorem settles a computability question for stability, and the finite-group paper gives a classification for one named problem; their mathematical mechanisms are different.[3][10]
-- **Geometry of families:** the genus-16 moduli result and prevalent sparse-length-spectrum theorem each make strong structural claims in different geometric settings; this small sample is not evidence of a broader shift.[9][11]
+- **Decision boundaries in dynamical systems:** The GAS paper turns a stability question into a computability-theoretic hardness result (2610.12434). This is a standout result in this batch, not evidence by itself of a field-wide shift.
+- **Sharpness and worst cases:** Boolean-cube regression quantifies how rare-input concentration delays parametric rates (2610.12358), while the Michael–Simon paper identifies a sharp geometric inequality and equality cases (2610.12309). The shared theme is extremal control, not a common proof technique.
+- **Conjecture tests by construction:** The Mueller–Ho preprint claims a complete minimizer classification (2610.12203); the hypergraph paper gives a counterexample (2610.11642); and the Ramsey paper supplies finite witnesses for improved lower bounds (2610.12122). These are different mathematical tasks, all centered on precise claims that can be checked against explicit hypotheses or certificates.
+- **Probability on nonstandard structures:** Strong RSW for FK-Ising on s-embeddings broadens a crossing framework under geometric regularity (2610.11990), complementing the rare-region sampling analysis on the Boolean cube (2610.12358); the two settings do not imply a shared method.
+- **A motif, not a trend:** Jacobi/theta functions appear in both the stability undecidability reduction (2610.12434) and the Bose-gas lattice energy (2610.12203), but serve different roles in the two papers.
 
 ## Open Problems and Research Directions
 
-- **Author-reported limitation:** the stability paper’s fixed dimension threshold is not computed. A follow-up could make the reduction quantitative and test whether smaller dimensions or degrees are decidable.[3]
-- **Author-reported context; proposed extension:** the Brownian paper identifies an earlier open scaling-limit problem for diffusion in a smoothed planar Gaussian free field and proves a weak-disorder result under its hypotheses. Test how far the convergence and singularity conclusions extend toward stronger disorder or broader environments.[5]
-- **Gap in stated theorem:** the Boolean-cube upper bound applies to every feasible subspace dimension, but the matching lower bound is limited to stated regimes. Establishing matching lower bounds beyond those regimes would sharpen the sample-complexity picture.[6]
-- **Synthesis:** since genus 16 is reported as the highest genus with known uniruledness, investigate what happens in higher genus to locate where the birational behavior changes.[9]
+- **Stated scope gap:** Extend the matching lower bound in the Boolean-cube regression result beyond its stated dimension/confidence regimes, or determine whether different thresholds hold there (2610.12358).
+- **Stated geometric hypothesis:** Investigate whether strong RSW estimates survive weaker geometry assumptions than uniformly bounded s-embedding geometry (2610.11990).
+- **Follow-up suggested by the result:** Determine the optimal asymptotic edge density for 3-uniform hypergraphs with bipartite links and quantify the gap above `1/4` (2610.11642).
+- **Follow-up suggested by the result:** Make the three Mueller–Ho transition thresholds explicit and test how the minimizer classification changes under broader interaction energies (2610.12203).
+- **Computational direction:** Publish independently reproducible coloring certificates and extend local-search/certification efforts to tighten the Ramsey bounds (2610.12122).
+- **Follow-up suggested by the result:** Determine explicit dimension thresholds and sharpen the reduction-size bounds for cubic GAS undecidability (2610.12434).
 
 ## Takeaway
 
-This batch is unusually rich in sharp structural claims: an undecidability theorem, a new stochastic scaling limit, optimal constants and sample thresholds, and several classifications or genericity results. These are preprint claims from a single announcement day; the ordering signals mathematical substance and cross-field reach, not measured reader attention.
+The batch's most striking claims are about limits and sharp thresholds: an algorithm cannot decide a broad stability problem, noisy prediction can incur an exponential sample penalty, and a long-standing lattice-energy conjecture is claimed proved. They are fresh preprints rather than settled community consensus; this selection reflects the specificity and mathematical reach of the stated results, not demonstrated readership or citation momentum.
 
 ## Method and sources
 
-Daily window: arXiv’s latest Mathematics announcement batch, Friday 2026-10-09 (the request date, Saturday 2026-10-10, has no newer batch listed); snapshot at 2026-10-10 00:18:55 UTC.
-
-The full batch listing reported 504 entries; candidates were taken from `math.*` and retained only when mathematics was a primary or cross-listed category.[1]
-
-Abstract pages for ranks 1–3 were checked on arXiv.[2][4][6]
-
-Abstract pages for ranks 4–6 were also checked.[7][9][12]
-
-Pages for ranks 7–8 were checked as well.[10][11]
-
-The introductions and main-result statements of the first three ranked papers were inspected in their HTML full texts.[3][5][8]
-
-Semantic Scholar currently returns zero citations for the checked genus-16, length-spectrum, and fractal-percolation records.[13][14][15]
-
-The checked finite-group record currently returns one citation; these early totals are too sparse for popularity ranking.[16]
-
-The ranking is an evidence-informed editorial selection based on the specificity of claimed results, stated assumptions, cross-list relevance, and named problems or sharp bounds.
-
-## Sources
-
-[1] https://arxiv.org/list/math/recent — arXiv Mathematics recent submissions listing
-[2] https://arxiv.org/abs/2610.12434v1 — Global asymptotic stability is undecidable
-[3] https://arxiv.org/html/2610.12434v1 — Global asymptotic stability paper full text
-[4] https://arxiv.org/abs/2610.12335v1 — Anomalous scaling limit of Brownian particle
-[5] https://arxiv.org/html/2610.12335v1 — Anomalous scaling limit paper full text
-[6] https://arxiv.org/abs/2610.12358v1 — Subspace uncertainty and sharp sampling thresholds
-[7] https://arxiv.org/abs/2610.12309v1 — Sharp L2 Michael-Simon inequality
-[8] https://arxiv.org/html/2610.12309v1 — Sharp L2 Michael-Simon paper full text
-[9] https://arxiv.org/abs/2610.12364v1 — Moduli space of curves of genus 16
-[10] https://arxiv.org/abs/2610.12329v1 — Ordinary G-permutable subgroups
-[11] https://arxiv.org/abs/2610.12351v1 — Prevalence of sparsity for negatively curved metrics
-[12] https://arxiv.org/abs/2610.12366v1 — Directed fractal percolation and non-Lipschitz variants
-[13] https://api.semanticscholar.org/graph/v1/paper/arXiv:2610.12364?fields=title,citationCount,influentialCitationCount,referenceCount — Semantic Scholar record for arXiv:2610.12364
-[14] https://api.semanticscholar.org/graph/v1/paper/arXiv:2610.12351?fields=title,citationCount,influentialCitationCount,referenceCount — Semantic Scholar record for arXiv:2610.12351
-[15] https://api.semanticscholar.org/graph/v1/paper/arXiv:2610.12366?fields=title,citationCount,influentialCitationCount,referenceCount — Semantic Scholar record for arXiv:2610.12366
-[16] https://api.semanticscholar.org/graph/v1/paper/arXiv:2610.12329?fields=title,citationCount,influentialCitationCount,referenceCount — Semantic Scholar record for arXiv:2610.12329
+- **Window:** Daily, latest available Mathematics announcement batch, Friday 2026-10-09; the preceding list batch is Thursday 2026-10-08. The selected papers were each first submitted on 2026-10-08, as shown by their arXiv records.
+- **Snapshot:** 2026-10-11 00:16 UTC.
+- **Coverage:** Screened all 504 entries in the Friday Mathematics listing; checked the arXiv abstract pages and metadata for the seven selected papers. For the three leading selections, also inspected the arXiv HTML introduction/main-results material.
+- **Selection:** ArXiv supplies no official trending chart. Exact-title searches and available Semantic Scholar metadata provided little mature independent attention evidence for this two-day-old batch, so the list is labeled notable recent papers and ordered by claimed result specificity, cross-field scope, and checkability—not popularity, downloads, or citation gains.
+- **Sources:** [arXiv Mathematics recent submissions](https://arxiv.org/list/math/recent); linked arXiv abstract pages and v1 HTML pages; arXiv API submission/update timestamps; Semantic Scholar Graph API metadata; exact-title web searches. All seven are v1 new submissions; no revisions are included.

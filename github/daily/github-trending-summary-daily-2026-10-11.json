@@ -1,0 +1,391 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-11",
+  "title": "GitHub Trending Summary - Daily - 2026-10-11",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-11.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "ranking_basis": "GitHub Trending daily stars gained, descending",
+  "ranking_explanation": "Sorted the displayed \"stars today\" values from the daily Trending page; total stars and current default-branch commits were corroborated through the GitHub REST API.",
+  "global_caveat": "A fast-moving daily snapshot; star gains measure attention, not quality, safety, maturity, or verified compatibility. REST totals were read after the Trending-page capture and may differ slightly as counts update.",
+  "themes": [
+    {
+      "id": "agent-analysis",
+      "title": "Agent-assisted reverse engineering",
+      "content": "REA applies an MCP interface to app behavior, runtime investigation, and binaries.",
+      "supporting_repository_ids": [
+        "01-morluto-rea"
+      ]
+    },
+    {
+      "id": "systems-portability",
+      "title": "Systems portability and compatibility",
+      "content": "AnyPS5 uses executable relinking and system-library implementations to target Linux and Windows.",
+      "supporting_repository_ids": [
+        "02-boykopovar-anyps5"
+      ]
+    },
+    {
+      "id": "creative-production",
+      "title": "AI-assisted creative and office production",
+      "content": "ArtCraft focuses on controlled image/video scene crafting; ppt-master generates editable PowerPoint artifacts.",
+      "supporting_repository_ids": [
+        "03-storytold-artcraft",
+        "07-hugohe3-ppt-master"
+      ]
+    },
+    {
+      "id": "agent-skills",
+      "title": "Composable agent skills and plugins",
+      "content": "Skills, diagram-design, knowledge-work-plugins, and andrej-karpathy-skills distribute focused instructions or capabilities; the cluster crosses developer and knowledge-worker tasks.",
+      "supporting_repository_ids": [
+        "04-mattpocock-skills",
+        "05-cathrynlavery-diagram-design",
+        "06-anthropics-knowledge-work-plugins",
+        "08-multica-ai-andrej-karpathy-skills"
+      ]
+    },
+    {
+      "id": "agent-infrastructure",
+      "title": "Agent context and tool-routing infrastructure",
+      "content": "Context Mode targets context-window efficiency and tool routing through MCP and hooks.",
+      "supporting_repository_ids": [
+        "09-mksglu-context-mode"
+      ]
+    },
+    {
+      "id": "ml-frameworks",
+      "title": "General-purpose model frameworks",
+      "content": "Transformers remains a high-star framework spanning text, vision, audio, and multimodal models.",
+      "supporting_repository_ids": [
+        "10-huggingface-transformers"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent-oriented tools lead today's list, but REA dominates the daily gain; creative-agent workflows and a major AnyPS5 spike are also prominent."
+    },
+    {
+      "id": "01-morluto-rea",
+      "kind": "repo",
+      "title": "morluto/rea",
+      "rank": 1,
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars_gained": 25793,
+      "total_stars": 72279,
+      "default_branch_commit": "a11fbc0df941476767d227dc79447fb676f9abcd",
+      "why_notable": "Agent-based reverse engineering across applications, runtime behavior, and binaries.",
+      "theme_ids": [
+        "agent-analysis"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "R-E-A",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "morluto/rea"
+      ]
+    },
+    {
+      "id": "02-boykopovar-anyps5",
+      "kind": "repo",
+      "title": "boykopovar/AnyPS5",
+      "rank": 2,
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars_gained": 5805,
+      "total_stars": 26817,
+      "default_branch_commit": "06da11764222fd54d43b7806c946638147c18387",
+      "why_notable": "A high-momentum systems outlier; README describes native relinking and library implementations, not emulation.",
+      "theme_ids": [
+        "systems-portability"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Any P-S-5",
+      "unique_caveat": "Compatibility remains project- and game-specific; consult its tested compatibility list.",
+      "enrichment": null,
+      "refs": [
+        "boykopovar/AnyPS5"
+      ]
+    },
+    {
+      "id": "03-storytold-artcraft",
+      "kind": "repo",
+      "title": "storytold/artcraft",
+      "rank": 3,
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars_gained": 3222,
+      "total_stars": 14468,
+      "default_branch_commit": "28a39a0de4a2fc2eccc237df2046c24245bd12ab",
+      "why_notable": "README presents an IDE for interactive AI image/video work with scene composition and deliberate control.",
+      "theme_ids": [
+        "creative-production"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "ArtCraft",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "storytold/artcraft"
+      ]
+    },
+    {
+      "id": "04-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 4,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars_gained": 1736,
+      "total_stars": 284481,
+      "default_branch_commit": "49dd158d1076134a641b33efb035946536778336",
+      "why_notable": "Promotes small, adaptable, composable skills usable across models, rather than one rigid process.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Matt Pocock Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "05-cathrynlavery-diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 5,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars_gained": 1190,
+      "total_stars": 48938,
+      "default_branch_commit": "7a2e22170ee838e859d8142ba825d83f8b6375e6",
+      "why_notable": "A design-oriented cross-agent skill producing standalone HTML/SVG diagrams; README says 44 diagram types.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Diagram Design",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ]
+    },
+    {
+      "id": "06-anthropics-knowledge-work-plugins",
+      "kind": "repo",
+      "title": "anthropics/knowledge-work-plugins",
+      "rank": 6,
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars_gained": 625,
+      "total_stars": 28818,
+      "default_branch_commit": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+      "why_notable": "An official plugin repository extending agents into knowledge-work use cases.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 6,
+      "spoken_name": "Knowledge Work Plugins",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "anthropics/knowledge-work-plugins"
+      ]
+    },
+    {
+      "id": "07-hugohe3-ppt-master",
+      "kind": "repo",
+      "title": "hugohe3/ppt-master",
+      "rank": 7,
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates.",
+      "language": "Python",
+      "stars_gained": 461,
+      "total_stars": 59434,
+      "default_branch_commit": "b4efe3ddf237a97a42880164759162f8e2412f2f",
+      "why_notable": "Turns source material into editable native PowerPoint decks with optional charts, transitions, and narration.",
+      "theme_ids": [
+        "creative-production"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 7,
+      "spoken_name": "PPT Master",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "hugohe3/ppt-master"
+      ]
+    },
+    {
+      "id": "08-multica-ai-andrej-karpathy-skills",
+      "kind": "repo",
+      "title": "multica-ai/andrej-karpathy-skills",
+      "rank": 8,
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "N/A - not available from GitHub",
+      "stars_gained": 278,
+      "total_stars": 218265,
+      "default_branch_commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "why_notable": "A compact instruction-file approach to coding-agent behavior is seeing substantial daily attention.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 8,
+      "spoken_name": "Andrej Karpathy Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "multica-ai/andrej-karpathy-skills"
+      ]
+    },
+    {
+      "id": "09-mksglu-context-mode",
+      "kind": "repo",
+      "title": "mksglu/context-mode",
+      "rank": 9,
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars_gained": 178,
+      "total_stars": 26311,
+      "default_branch_commit": "f33a26e3a40a3dcb3586378879d04cfd2eb808f7",
+      "why_notable": "Targets context efficiency and tool routing for coding agents using MCP and hooks.",
+      "theme_ids": [
+        "agent-infrastructure"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 9,
+      "spoken_name": "Context Mode",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mksglu/context-mode"
+      ]
+    },
+    {
+      "id": "10-huggingface-transformers",
+      "kind": "repo",
+      "title": "huggingface/transformers",
+      "rank": 10,
+      "url": "https://github.com/huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "language": "Python",
+      "stars_gained": 96,
+      "total_stars": 167253,
+      "default_branch_commit": "536ecc007387a50e77603bb5d92100e9b07514cc",
+      "why_notable": "A mature, broad model framework that supplies a counterpoint to the newer agent-specialist entries.",
+      "theme_ids": [
+        "ml-frameworks"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 10,
+      "spoken_name": "Hugging Face Transformers",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "huggingface/transformers"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent skills/extensions: Matt Pocock Skills, Diagram Design, Knowledge Work Plugins, Andrej Karpathy Skills, and Context Mode. Creative and office production: ArtCraft and PPT Master. Reverse engineering and portability: REA and AnyPS5. Language tally across ten entries: Python 3, TypeScript 2, C++, Rust, Shell, and HTML 1 each; one unreported.",
+      "themes": [
+        {
+          "id": "agent-analysis",
+          "title": "Agent-assisted reverse engineering",
+          "content": "REA applies an MCP interface to app behavior, runtime investigation, and binaries.",
+          "supporting_repository_ids": [
+            "01-morluto-rea"
+          ]
+        },
+        {
+          "id": "systems-portability",
+          "title": "Systems portability and compatibility",
+          "content": "AnyPS5 uses executable relinking and system-library implementations to target Linux and Windows.",
+          "supporting_repository_ids": [
+            "02-boykopovar-anyps5"
+          ]
+        },
+        {
+          "id": "creative-production",
+          "title": "AI-assisted creative and office production",
+          "content": "ArtCraft focuses on controlled image/video scene crafting; ppt-master generates editable PowerPoint artifacts.",
+          "supporting_repository_ids": [
+            "03-storytold-artcraft",
+            "07-hugohe3-ppt-master"
+          ]
+        },
+        {
+          "id": "agent-skills",
+          "title": "Composable agent skills and plugins",
+          "content": "Skills, diagram-design, knowledge-work-plugins, and andrej-karpathy-skills distribute focused instructions or capabilities; the cluster crosses developer and knowledge-worker tasks.",
+          "supporting_repository_ids": [
+            "04-mattpocock-skills",
+            "05-cathrynlavery-diagram-design",
+            "06-anthropics-knowledge-work-plugins",
+            "08-multica-ai-andrej-karpathy-skills"
+          ]
+        },
+        {
+          "id": "agent-infrastructure",
+          "title": "Agent context and tool-routing infrastructure",
+          "content": "Context Mode targets context-window efficiency and tool routing through MCP and hooks.",
+          "supporting_repository_ids": [
+            "09-mksglu-context-mode"
+          ]
+        },
+        {
+          "id": "ml-frameworks",
+          "title": "General-purpose model frameworks",
+          "content": "Transformers remains a high-star framework spanning text, vision, audio, and multimodal models.",
+          "supporting_repository_ids": [
+            "10-huggingface-transformers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Attention is clustering around packaging agent capabilities as skills, plugins, and infrastructure, plus agent-assisted creative applications. REA and AnyPS5 dominate the daily-gain chart; stars measure attention, not maturity or reliability."
+    }
+  ]
+}

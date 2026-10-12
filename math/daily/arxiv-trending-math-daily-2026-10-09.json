@@ -1,15 +1,13 @@
 {
-  "schema": "arxiv-trending-math/v1",
-  "category": "Mathematics",
+  "schema": "research-radar-section-v1",
+  "category": "math",
   "window": "daily",
   "date": "2026-10-09",
-  "title": "Mathematics on arXiv — latest batch, Friday 9 October 2026",
+  "title": "Mathematics on arXiv — latest batch: 9 October 2026",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-10-09.md",
-  "entry_count": 7,
+  "entry_count": 9,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart. This batch is only two days old at the snapshot and independent attention/citation evidence is too sparse to rank by popularity. The ordering is an inferred, result-led selection, not a readership or download ranking.",
-  "snapshot_utc": "2026-10-11T00:16:00Z",
-  "announcement_batch": "2026-10-09",
+  "global_caveat": "arXiv publishes no official trending chart; this is an editorial inference based on claimed mathematical results, scope, cross-subfield relevance and limited independent attention. Papers are only days old, so citation evidence is sparse and ordering is not a popularity measure.",
   "sections": [
     {
       "id": "2610.12434",
@@ -20,122 +18,268 @@
       "arxiv_id": "2610.12434",
       "arxiv_version": "v1",
       "published": "2026-10-08T17:57:15Z",
-      "categories": ["math.DS", "math.CA", "math.LO"],
-      "authors": ["Ivan O. Shevchenko", "Jun Liu", "Xinzhi Liu"],
-      "themes": ["Logic & foundations", "Optimization & control"],
-      "abstract": "Studies whether the origin of rational homogeneous polynomial ODEs is globally asymptotically stable and reduces this decision problem across odd degrees to the cubic case.",
-      "claimed_result": "The authors prove that deciding global asymptotic stability is many-one complete for every odd degree at least three in every sufficiently large dimension, and in particular is undecidable for cubic vector fields in a fixed dimension.",
-      "assumptions_and_setting": "Homogeneous polynomial vector fields with rational coefficients; the fixed-dimension cubic conclusion is for a dimension whose existence is established by the paper.",
-      "unique_caveat": "The reduction is highly indirect and technical; the abstract does not give an explicit smallest dimension for cubic undecidability.",
-      "refs": ["https://arxiv.org/abs/2610.12434", "https://arxiv.org/html/2610.12434v1"]
+      "categories": [
+        "math.DS",
+        "math.CA",
+        "math.LO"
+      ],
+      "authors": [
+        "Ivan O. Shevchenko",
+        "Jun Liu",
+        "Xinzhi Liu"
+      ],
+      "themes": [
+        "Dynamical systems",
+        "Logic & foundations"
+      ],
+      "abstract": "The authors study whether one can decide global asymptotic stability of the origin for homogeneous polynomial vector fields with rational coefficients and prove undecidability in fixed degree and dimension settings.",
+      "claimed_result": "The authors reduce undecidable integer-equation questions to global stability and show many-one completeness for every odd degree at least three when dimension is sufficiently large; cubic stability is undecidable in a fixed dimension.",
+      "assumptions_and_setting": "Homogeneous polynomial vector fields over rational coefficients; the theorem concerns stability of the origin. The sufficient dimension is not stated as a minimal threshold.",
+      "unique_caveat": "The fixed-dimension corollary does not identify the smallest dimension; it is a new preprint.",
+      "refs": [
+        2,
+        3,
+        10
+      ]
     },
     {
-      "id": "2610.12358",
+      "id": "2610.12047",
       "kind": "paper",
-      "title": "Subspace Uncertainty and Sharp Sampling Thresholds on the Boolean Cube",
+      "title": "Characterization and scaling limit of three-dimensional loop-erased random walk and random-walk loop-catchers",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2610.12358",
-      "arxiv_id": "2610.12358",
+      "url": "https://arxiv.org/abs/2610.12047",
+      "arxiv_id": "2610.12047",
       "arxiv_version": "v1",
-      "published": "2026-10-08T17:23:25Z",
-      "categories": ["math.PR", "cs.IT", "cs.LG", "math.CO"],
-      "authors": ["Thomas Weinberger"],
-      "themes": ["Probability & statistics", "Machine learning theory", "Combinatorics & discrete mathematics"],
-      "abstract": "Derives worst-case noisy-regression sample thresholds for known subspaces of low-degree Boolean-cube functions by quantifying how their energy can concentrate on rarely sampled inputs.",
-      "claimed_result": "For fixed q₀<1/2 and degree 1≤k≤q₀d, the worst-subspace sample threshold for the stated minimax parametric error is (m+t) exp(E_{d,k}+O(k^{1/3})); the authors also show that noisy estimation can cost exponentially more samples than noiseless identification.",
-      "assumptions_and_setting": "Gaussian regression with squared population L₂ loss, uniform random inputs on the d-dimensional Boolean cube, a known m-dimensional subspace of degree-at-most-k functions, and the confidence and fixed-constant conditions stated in the abstract.",
-      "unique_caveat": "The matching lower bound is established under the additional condition m≤binom(d,⌊k^{1/3}⌋) or t≥m; it is not claimed there for every feasible subspace dimension and confidence regime.",
-      "refs": ["https://arxiv.org/abs/2610.12358", "https://arxiv.org/html/2610.12358v1"]
+      "published": "2026-10-08T14:33:52Z",
+      "categories": [
+        "math.PR"
+      ],
+      "authors": [
+        "Gefei Cai",
+        "Xinyi Li",
+        "Daisuke Shiraishi"
+      ],
+      "themes": [
+        "Probability & statistics",
+        "Geometry & topology"
+      ],
+      "abstract": "A Brownian-loop-soup recovery property uniquely characterizes the three-dimensional loop-erased random walk (LERW) scaling limit, resolving the 3D case of a Sapozhnikov–Shiraishi conjecture, and the authors construct 3D Brownian loop-catchers.",
+      "claimed_result": "In a bounded connected Lipschitz domain in three dimensions, the intensity-one loop-soup recovery property determines a unique law, which is the scaling-limit law of LERW in the unparametrized Hausdorff trace topology; the authors also construct 3D Brownian loop-catchers.",
+      "assumptions_and_setting": "A bounded connected Lipschitz domain in R^3 containing the origin; the recovery property uses an independent intensity-one Brownian loop soup and Brownian motion stopped at the domain boundary.",
+      "unique_caveat": "The characterization and construction are for three dimensions and the stated domain/recovery setup; they do not settle analogous laws in every dimension.",
+      "refs": [
+        11,
+        12
+      ]
     },
     {
-      "id": "2610.12203",
+      "id": "2610.10603",
       "kind": "paper",
-      "title": "A Complete Proof of Mueller--Ho Conjecture",
+      "title": "The Kakeya problem for codimension-two planes in R^n",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2610.12203",
-      "arxiv_id": "2610.12203",
+      "url": "https://arxiv.org/abs/2610.10603",
+      "arxiv_id": "2610.10603",
       "arxiv_version": "v1",
-      "published": "2026-10-08T15:56:49Z",
-      "categories": ["math.AP", "math-ph", "math.NT"],
-      "authors": ["Senping Luo", "Juncheng Wei"],
-      "themes": ["Mathematical physics", "Analysis & PDE", "Algebra & number theory"],
-      "abstract": "Classifies the minimizing lattice shapes and relative shifts for a two-component Bose-gas energy built from a theta function and a shifted theta function as the interaction parameter varies.",
-      "claimed_result": "The authors prove that minimizers, up to modular equivalence, pass through specified triangular, intermediate, square, and rectangular lattice configurations with relative shifts across three interaction thresholds, thereby claiming to prove the Mueller–Ho conjecture.",
-      "assumptions_and_setting": "Minimize θ(1;z)+αJ(z;a,b) over z in the upper half-plane and shifts (a,b)∈R², for α∈[0,1]; the variables model lattice shape and relative displacement in a two-component Bose gas.",
-      "unique_caveat": "The abstract states that three ordered thresholds exist but does not provide their explicit values; the classification is for this particular theta-energy model and is an author-claimed preprint result.",
-      "refs": ["https://arxiv.org/abs/2610.12203", "https://arxiv.org/html/2610.12203v1"]
+      "published": "2026-10-07T01:44:06Z",
+      "categories": [
+        "math.CA"
+      ],
+      "authors": [
+        "Chun-Kit Lai",
+        "Yixuan Pang",
+        "Rahul Sethi",
+        "Chenjian Wang"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Geometry & topology"
+      ],
+      "abstract": "For n >= 4, the authors prove near-maximal volume bounds for unions of codimension-two plane neighborhoods satisfying convex Wolff-type nonconcentration, with an application to a curvature-restricted four-dimensional two-plane Kakeya problem.",
+      "claimed_result": "Under convex Wolff axioms the union of a sufficiently nonconcentrated and sufficiently dense family of delta-neighborhoods of (n-2)-plane segments has almost maximal volume; in n=4 this resolves Rogers' two-plane problem subject to curvature conditions.",
+      "assumptions_and_setting": "n >= 4, small scale delta, convex nonconcentration and dense shading; the four-dimensional consequence has additional curvature conditions.",
+      "unique_caveat": "This is not an unconditional resolution of all Kakeya conjectures; the result is hypothesis-dependent.",
+      "refs": [
+        4,
+        5
+      ]
     },
     {
-      "id": "2610.11642",
+      "id": "2610.10537",
       "kind": "paper",
-      "title": "A counterexample to the Erdős--Sós bipartite-link conjecture",
+      "title": "Sharp Polynomial Upper Bounds for Anticanonical Volumes",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2610.11642",
-      "arxiv_id": "2610.11642",
+      "url": "https://arxiv.org/abs/2610.10537",
+      "arxiv_id": "2610.10537",
       "arxiv_version": "v1",
-      "published": "2026-10-08T10:19:33Z",
-      "categories": ["math.CO"],
-      "authors": ["Tianchi Yang"],
-      "themes": ["Combinatorics & discrete mathematics"],
-      "abstract": "Constructs 3-uniform hypergraphs whose link graphs are all bipartite yet whose edge density asymptotically exceeds the conjectured one-quarter threshold.",
-      "claimed_result": "The author claims examples with edge density at least 0.250000356 > 1/4 for all sufficiently large n, disproving the stated (1/4+o(1)) binom(n,3) upper-bound conjecture.",
-      "assumptions_and_setting": "n-vertex 3-uniform hypergraphs subject to every link graph being bipartite; the construction is asserted for all sufficiently large n.",
-      "unique_caveat": "The improvement over 1/4 is numerically small, and the abstract does not specify the finite size at which the construction applies; the asymptotic counterexample does not by itself determine the optimal density.",
-      "refs": ["https://arxiv.org/abs/2610.11642", "https://arxiv.org/html/2610.11642v1"]
+      "published": "2026-10-07T17:59:30Z",
+      "categories": [
+        "math.AG"
+      ],
+      "authors": [
+        "Pinxian Bie",
+        "Peien Du",
+        "Zhengjie Yu"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "For every dimension n, the authors prove a polynomial upper bound for anticanonical volumes of epsilon-lc log Fano varieties with an exponent that is optimal in all dimensions n >= 2.",
+      "claimed_result": "The authors show vol(-K_X) <= C_n epsilon^-(2^n-n-1) for an n-dimensional variety with an epsilon-lc log Fano boundary; the exponent cannot be decreased for n >= 2, and the optimal fourfold exponent is 11.",
+      "assumptions_and_setting": "Varieties over C; X is normal projective Q-Gorenstein with an effective boundary making it epsilon-lc and log Fano. The constant C_n depends only on dimension.",
+      "unique_caveat": "The exponent is sharp but the leading constant is not optimized; the estimate is parameterized by epsilon and dimension.",
+      "refs": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2610.12032",
+      "kind": "paper",
+      "title": "Further bounds in the polynomial Szemerédi theorem",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.12032",
+      "arxiv_id": "2610.12032",
+      "arxiv_version": "v1",
+      "published": "2026-10-08T14:25:51Z",
+      "categories": [
+        "math.NT",
+        "math.CO"
+      ],
+      "authors": [
+        "Bartłomiej Bychawski",
+        "Bartosz Głowacki",
+        "Ivan Spyrydonov"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Algebra & number theory"
+      ],
+      "abstract": "Every sufficiently dense subset of {1,...,N} contains a nontrivial pattern (x, x+y, x+2y, x+y^3), giving a quantitative bound for a configuration of positive complexity.",
+      "claimed_result": "For some c > 0, any subset of {1,...,N} of size much larger than N/exp((log log log N)^c) contains the displayed pattern.",
+      "assumptions_and_setting": "Finite subsets of {1,...,N} with the displayed density lower bound; one specified polynomial configuration.",
+      "unique_caveat": "The abstract gives a bound for this configuration, not a general quantitative solution of the polynomial Szemeredi theorem.",
+      "refs": [
+        6
+      ]
     },
     {
       "id": "2610.11990",
       "kind": "paper",
       "title": "Strong RSW estimates for the FK-Ising model on s-embeddings",
-      "rank": 5,
+      "rank": 7,
       "url": "https://arxiv.org/abs/2610.11990",
       "arxiv_id": "2610.11990",
       "arxiv_version": "v1",
       "published": "2026-10-08T13:59:10Z",
-      "categories": ["math.PR", "math-ph"],
-      "authors": ["Dmitry Chelkak", "Yanqing Wei"],
-      "themes": ["Probability & statistics", "Mathematical physics"],
-      "abstract": "Establishes strong Russo–Seymour–Welsh crossing estimates for the FK-Ising model on s-embeddings under a uniformly bounded geometry condition.",
-      "claimed_result": "Under the stated geometry condition, the authors prove crossings of rough topological quadrilaterals even with unfavorable boundary conditions, then obtain standard consequences including quasi-multiplicativity of arm events and fractal cluster properties.",
-      "assumptions_and_setting": "FK-Ising on s-embeddings whose relevant tangential quadrilaterals have uniformly comparable edge lengths and angles bounded below; near-critical regular-grid applications below the correlation-length scale are discussed.",
-      "unique_caveat": "The theorem depends on the uniformly bounded geometry hypothesis; the abstract does not assert the same strong estimates for arbitrary highly irregular embeddings.",
-      "refs": ["https://arxiv.org/abs/2610.11990", "https://arxiv.org/html/2610.11990v1"]
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "authors": [
+        "Dmitry Chelkak",
+        "Yanqing Wei"
+      ],
+      "themes": [
+        "Probability & statistics",
+        "Mathematical physics"
+      ],
+      "abstract": "The authors prove strong Russo-Seymour-Welsh crossing estimates for FK-Ising on s-embeddings under a uniformly bounded geometry assumption.",
+      "claimed_result": "The paper adapts induction over scales for strong RSW crossings of rough topological quadrilaterals with unfavorable boundary conditions, and derives consequences such as quasi-multiplicativity of arm events.",
+      "assumptions_and_setting": "FK-Ising on s-embeddings whose tangential quadrilaterals have uniformly bounded geometry: edge lengths comparable to one and angles bounded below.",
+      "unique_caveat": "The result is conditional on uniformly bounded geometry; broader settings are not claimed.",
+      "refs": [
+        7
+      ]
+    },
+    {
+      "id": "2610.12364",
+      "kind": "paper",
+      "title": "The moduli space of curves of genus 16 is uniruled",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2610.12364",
+      "arxiv_id": "2610.12364",
+      "arxiv_version": "v1",
+      "published": "2026-10-08T17:27:14Z",
+      "categories": [
+        "math.AG"
+      ],
+      "authors": [
+        "Gavril Farkas",
+        "Alessandro Verra"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "Using non-abelian Brill-Noether theory, the authors show that the moduli space of curves of genus 16 is uniruled, the highest genus for which they say this is known.",
+      "claimed_result": "The authors establish uniruledness of the genus-16 moduli space using non-abelian Brill-Noether theory.",
+      "assumptions_and_setting": "The object is the moduli space of curves of genus 16; the abstract states no additional hypotheses.",
+      "unique_caveat": "The abstract claims uniruledness and highest-known-genus status, not a classification for all higher-genus moduli spaces.",
+      "refs": [
+        8
+      ]
     },
     {
       "id": "2610.12309",
       "kind": "paper",
-      "title": "The sharp $L^2$-Michael--Simon inequality",
-      "rank": 6,
+      "title": "The sharp L^2-Michael–Simon inequality",
+      "rank": 8,
       "url": "https://arxiv.org/abs/2610.12309",
       "arxiv_id": "2610.12309",
       "arxiv_version": "v1",
       "published": "2026-10-08T16:58:54Z",
-      "categories": ["math.DG", "math.AP"],
-      "authors": ["Jeffrey S. Case", "Dawit Mengesha"],
-      "themes": ["Geometry & topology", "Analysis & PDE"],
-      "abstract": "Proves a sharp Sobolev-type inequality coupling the gradient and mean curvature of an immersed manifold, and characterizes equality cases.",
-      "claimed_result": "For n≥3 and an isometric immersion into Euclidean space, the authors prove the stated sharp L² Michael–Simon inequality for all u∈W^{1,2}(Σ) and derive related mean-curvature/volume inequalities.",
-      "assumptions_and_setting": "An n-dimensional Riemannian manifold isometrically immersed in Euclidean space; the inequality includes the mean-curvature potential and critical Sobolev exponent 2n/(n−2).",
-      "unique_caveat": "The stated inequality is for dimensions n≥3 and the specified isometric-immersion setting; equality and extensions beyond the stated conformal ambient settings need the paper's precise hypotheses.",
-      "refs": ["https://arxiv.org/abs/2610.12309", "https://arxiv.org/html/2610.12309v1"]
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "authors": [
+        "Jeffrey S. Case",
+        "Dawit Mengesha"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Geometry & topology"
+      ],
+      "abstract": "For isometrically immersed n-manifolds in Euclidean space with n >= 3, the authors prove the sharp L^2-Michael–Simon inequality and characterize equality cases.",
+      "claimed_result": "For every isometric immersion j:(Sigma^n,g)->R^N with n >= 3, a weighted Dirichlet energy with mean-curvature term bounds the Sobolev L^(2n/(n-2)) norm using the sharp constant n(n-2)Vol(S^n)^(2/n)/4; equality cases are characterized.",
+      "assumptions_and_setting": "Isometric immersion of an n-dimensional manifold into Euclidean space, n >= 3, and u in W^{1,2}(Sigma).",
+      "unique_caveat": "The theorem concerns the stated Sobolev/mean-curvature inequality and its equality case; it does not claim a general classification of immersed submanifolds.",
+      "refs": [
+        15,
+        16
+      ]
     },
     {
-      "id": "2610.12122",
+      "id": "2610.11913",
       "kind": "paper",
-      "title": "Lower bounds for Ramsey numbers: $\\mathrm{R}(6,8)\\ge 135$ and $\\mathrm{R}(8,10)\\ge 345$",
-      "rank": 7,
-      "url": "https://arxiv.org/abs/2610.12122",
-      "arxiv_id": "2610.12122",
+      "title": "Formally Certifying the Vertex Set of a Polyhedron Faster than Informal Enumeration",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2610.11913",
+      "arxiv_id": "2610.11913",
       "arxiv_version": "v1",
-      "published": "2026-10-08T15:16:34Z",
-      "categories": ["math.CO", "cs.DM"],
-      "authors": ["Fritz Cremer"],
-      "themes": ["Combinatorics & discrete mathematics", "Numerical analysis & computation"],
-      "abstract": "Gives explicit two-colourings establishing improved lower bounds for two Ramsey numbers, checked by two independently written exhaustive clique-verification programs.",
-      "claimed_result": "The author proves R(6,8)≥135 and R(8,10)≥345, improving the cited April 2026 survey bounds of 134 and 343 using colorings of K134 and K344 without the prohibited monochromatic cliques.",
-      "assumptions_and_setting": "Two-colour Ramsey numbers avoiding a red K6 / blue K8, and a red K8 / blue K10; the proof rests on explicit coloring witnesses and exhaustive checks.",
-      "unique_caveat": "The new bounds establish lower bounds only, not exact Ramsey numbers; witnesses found with local search need certificates/checking code to be reproducible for independent computational auditing.",
-      "refs": ["https://arxiv.org/abs/2610.12122", "https://arxiv.org/html/2610.12122v1"]
+      "published": "2026-10-08T13:11:53Z",
+      "categories": [
+        "cs.LO",
+        "math.CO",
+        "math.OC"
+      ],
+      "authors": [
+        "Xavier Allamigeon",
+        "Yazid Id-Sahra",
+        "Pierre-Yves Strub"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Numerical analysis & computation"
+      ],
+      "abstract": "The authors present a proof-assistant-verified certificate for completeness of a polyhedron's vertex list and report their extracted checker is typically 1.5x to over 5x faster than lrslib on tested examples.",
+      "claimed_result": "They prove correctness of a completeness criterion based on an abstract simplicial complex and implement it in Rocq; experiments include Birkhoff polytopes, cubes and permutahedra.",
+      "assumptions_and_setting": "A proposed vertex list for a polyhedron given by linear inequalities; the proof checker verifies completeness or exactness.",
+      "unique_caveat": "The speed comparison is empirical on tested examples and is not a universal runtime guarantee.",
+      "refs": [
+        9
+      ]
     }
   ]
 }

@@ -1,156 +1,273 @@
 {
-  "schema": "research-radar-episode/v1",
+  "schema": "research-radar-episode-v1",
   "category": "AI",
-  "window": {
-    "type": "daily",
-    "start": "2026-10-09",
-    "end": "2026-10-09",
-    "snapshot_utc": "2026-10-11T00:10:15Z",
-    "announcement_batch": "2026-10-09",
-    "uses_prior_batch": true
-  },
+  "window": "daily",
   "date": "2026-10-09",
-  "title": "arXiv Trending AI — Friday, 9 October 2026",
+  "title": "arXiv AI papers — Friday, 9 October 2026",
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-10-09.md",
   "entry_count": 8,
   "entry_noun": "papers",
-  "global_caveat": "arXiv publishes no official trending chart. This is an inferred shortlist based on limited corroborating attention signals; these papers are very recent and current citation counts provide little differentiation.",
+  "global_caveat": "arXiv has no official trending chart. This is an inferred editorial selection based on paper relevance and reported evaluation, not measured popularity. Semantic Scholar showed zero citations and zero influential citations for all eight papers at the 2026-10-12 00:10 UTC snapshot.",
   "sections": [
-    {
-      "id": "2610.12242",
-      "kind": "paper",
-      "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
-      "rank": 1,
-      "url": "https://arxiv.org/abs/2610.12242",
-      "arxiv_id": "2610.12242",
-      "arxiv_version": "v1",
-      "published": "2026-10-08T16:21:50Z",
-      "categories": ["cs.CL"],
-      "authors": ["Tianyu Fu", "Tengxuan Liu", "Ruoxi Wang", "Yixin Dong", "Yi Ge", "Yichen You", "Yu Wang"],
-      "themes": ["Efficient inference & systems"],
-      "abstract": "TokenRouter restructures LLM serving around asynchronously dispatched per-model subservers and delayed batching, reporting 2.01–64.15× higher decoding throughput than existing systems across tested workloads and model pairs.",
-      "claimed_contribution": "The authors introduce a request-centric programming interface with model-centric asynchronous execution and a throughput-model-guided delayed-batching scheduler.",
-      "unique_caveat": "The headline speedups are system benchmarks under tested algorithms, workloads, and model pairs; they do not establish the same gains for every routing policy or production deployment.",
-      "refs": [10, 17, 18]
-    },
     {
       "id": "2610.12445",
       "kind": "paper",
       "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
-      "rank": 2,
+      "rank": 1,
       "url": "https://arxiv.org/abs/2610.12445",
       "arxiv_id": "2610.12445",
       "arxiv_version": "v1",
       "published": "2026-10-08T17:58:13Z",
-      "categories": ["cs.LG", "cs.AI"],
-      "authors": ["Oskar J. Hollinsworth", "Alex F. Spies", "Tigist Diriba", "Adam Gleave", "Chris Cundy"],
-      "themes": ["Safety & alignment", "Evaluation & benchmarks"],
-      "abstract": "The authors train white-box activation probes on a broad falsehood dataset and report strong detection results on agentic sabotage and hidden-goal evaluations, including 98.8% AUC on SHADE-Arena.",
-      "claimed_contribution": "The authors present FIBS and probes aggregating activation signals across layers and tokens, with tests spanning contextual falsehoods, multi-turn agent traces, and elicited hidden-goal cases.",
-      "unique_caveat": "The paper narrows its target to knowing falsehoods rather than all deceptive or misleading behavior. Its appendix also notes that most generated training completions are off-policy and one generator accounts for 47%.",
-      "refs": [9]
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "authors": [
+        "Oskar J. Hollinsworth",
+        "Alex F. Spies",
+        "Tigist Diriba",
+        "Adam Gleave",
+        "Chris Cundy"
+      ],
+      "themes": [
+        "Safety & alignment",
+        "Interpretability",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The authors train activation probes on a large falsehood dataset and report strong detection results for agentic sabotage and hidden-goal deception, including up to 98.8% AUC on SHADE-Arena and up to 99.7% in one introspective evaluation.",
+      "claimed_contribution": "The paper claims that probes aggregating signals across model layers and tokens can scale to frontier-monitoring settings and detect some deception not evident from the transcript alone.",
+      "unique_caveat": "The authors say FIBS contains little reasoning (5.5% of rows), is mostly off-policy, and is largely artificial; the reported results do not establish reliable deployment performance on naturally occurring deception.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12445"
+      ]
     },
     {
-      "id": "2610.12083",
+      "id": "2610.12375",
       "kind": "paper",
-      "title": "All Verdicts are Not Equal: Rethinking LLM Judge Reliability",
+      "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.12375",
+      "arxiv_id": "2610.12375",
+      "arxiv_version": "v1",
+      "published": "2026-10-08T17:32:08Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "authors": [
+        "Babak Barazandeh",
+        "Connor Swanson",
+        "Chinmay Kulkarni",
+        "Nikhil Mungel"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Safety & alignment",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "OnTrack compares an agent’s evolving, dependency-aware execution graph with successful reference runs, aiming to flag or stop failures online; on SWE-bench trajectories, the authors report improved early ranking of failing runs and compute savings from an abort policy.",
+      "claimed_contribution": "The authors present a streaming optimal-transport monitor that can operate with different levels of prior information, from successful reference traces down to event logs alone.",
+      "unique_caveat": "The headline outcome results are on SWE-bench trajectories; performance in other agent domains and live deployments is not established by that evaluation.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12375"
+      ]
+    },
+    {
+      "id": "2610.12409",
+      "kind": "paper",
+      "title": "Searching for “Harmful Refusal”: A Psychometric Audit of an AI Safety Benchmark",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2610.12083",
-      "arxiv_id": "2610.12083",
+      "url": "https://arxiv.org/abs/2610.12409",
+      "arxiv_id": "2610.12409",
       "arxiv_version": "v1",
-      "published": "2026-10-08T14:55:29Z",
-      "categories": ["cs.CL", "cs.AI"],
-      "authors": ["Vineet Kumar", "Darshita Rathore", "Anindya Moitra"],
-      "themes": ["Evaluation & benchmarks"],
-      "abstract": "Across six models and varied prompting, ordering, and repetition conditions, this audit finds that judge outputs can change across identical trials and response-order swaps, and proposes a trustworthy-verdict rate combining reproducibility, order invariance, and accuracy.",
-      "claimed_contribution": "The authors formalize a joint reliability metric and report that holistic rubric scoring improves trustworthiness more than single-format prompt adjustments in their tested conditions.",
-      "unique_caveat": "The audit covers six judges, four benchmarks, and the specific prompt and sampling grid studied; it does not establish reliability for every task or evaluation setup.",
-      "refs": [11, 20]
+      "published": "2026-10-08T17:46:43Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [
+        "Christopher M. Stewart",
+        "Preston Botter",
+        "Natalie Sarabosing",
+        "Muye Zhang",
+        "Rachel Phinnemore",
+        "Shalini Ghosh",
+        "Hong Shen",
+        "Hoda Heidari"
+      ],
+      "themes": [
+        "Safety & alignment",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The authors test whether HELM Safety’s harmful-refusal scores measure one coherent attribute; their analyses find saturation in three candidate datasets and evidence that HarmBench scores do not isolate a single attribute.",
+      "claimed_contribution": "The paper argues that a safety score should demonstrate construct validity before being interpreted as a measurement of one attribute or used to compare models.",
+      "unique_caveat": "The audit focuses on four HELM Safety datasets and the HarmBench analysis; its findings do not by themselves establish how every safety benchmark behaves.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12409"
+      ]
     },
     {
-      "id": "2610.12360",
+      "id": "2610.12466",
       "kind": "paper",
-      "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
+      "title": "On the estimation and validity of AI time horizons—a statistical look at the METR plot",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2610.12360",
-      "arxiv_id": "2610.12360",
+      "url": "https://arxiv.org/abs/2610.12466",
+      "arxiv_id": "2610.12466",
       "arxiv_version": "v1",
-      "published": "2026-10-08T17:25:06Z",
-      "categories": ["cs.AI", "cs.CL"],
-      "authors": ["Kaiser Sun", "Bernal Jiménez Gutiérrez", "Hongjun Liu", "Jingyu Zhang", "Jie Gao", "Mark Dredze", "Daniel Khashabi"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks", "Safety & alignment"],
-      "abstract": "The paper evaluates whether agents identify, resolve, and communicate uncertainty under evidence conflict, finding that accuracy can coexist with poor escalation and that a prompting intervention can increase humility while reducing accuracy.",
-      "claimed_contribution": "The authors define Identify–Solve–Escalate trajectory-level measures and evaluate controlled and naturally occurring knowledge conflicts across four agent systems.",
-      "unique_caveat": "The authors call ISE only one slice of epistemic humility, limit the elicitation channel to knowledge conflict, and note that their experiments do not disentangle backbone, harness, and environment effects.",
-      "refs": [12, 19, 20]
+      "published": "2026-10-08T17:59:50Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [
+        "Drew T. Nguyen",
+        "William Fithian"
+      ],
+      "themes": [
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "Using 228 software tasks and 26 AI systems, the authors refit METR time horizons with spline and item-response models, finding a nonlinear mapping between human task time and estimated AI difficulty and proposing diagnostic plots for interpreting the metric.",
+      "claimed_contribution": "The authors provide alternative time-horizon estimates and construct-validity diagnostics, and caution that equal multiplicative jumps in “human time” need not represent equal difficulty changes.",
+      "unique_caveat": "The analysis is anchored to METR’s software-engineering task set; the authors specifically recommend interpreting time horizons together with diagnostics, especially when extending the benchmark.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12466"
+      ]
     },
     {
-      "id": "2610.12458",
+      "id": "2610.12468",
       "kind": "paper",
-      "title": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
+      "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2610.12458",
-      "arxiv_id": "2610.12458",
+      "url": "https://arxiv.org/abs/2610.12468",
+      "arxiv_id": "2610.12468",
       "arxiv_version": "v1",
-      "published": "2026-10-08T17:59:21Z",
-      "categories": ["cs.CV"],
-      "authors": ["Zhongyu Yang", "Jiale Tao", "Ruitao Chen", "Zuhao Yang", "Yingfang Yuan", "Xueliang Zhao", "Auden", "Kai Wang", "Shuai Shao", "Biao Wang", "Steve Yves", "Qinglin Lu"],
-      "themes": ["Multimodal & vision-language", "Evaluation & benchmarks"],
-      "abstract": "OmniCapBench evaluates audio-visual captioning through structured, verifiable units for entities, video shots, and audio events, using 786 annotated videos to expose temporal grounding, identity, and cross-modal errors.",
-      "claimed_contribution": "The paper replaces single whole-caption scores with three tracks of atomic evaluation units, combining deterministic checks and localized semantic comparisons.",
-      "unique_caveat": "The reported benchmark concerns fine-grained audio-visual captioning on its 786-video set; it is not by itself evidence of general multimodal reasoning quality.",
-      "refs": [13, 21]
+      "published": "2026-10-08T17:59:51Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "authors": [
+        "Junyan Li",
+        "Ruizhi Li",
+        "Yu Liu",
+        "Xiangshuo Liu",
+        "Mingchao Sun",
+        "Hongyu Pan",
+        "Mu Xu",
+        "Lue Fan",
+        "Zhaoxiang Zhang"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Multimodal & vision-language",
+        "Training & adaptation"
+      ],
+      "abstract": "DreamTrue combines geometric action conditioning, counterfactual trajectory post-training, and a learned video reward model to improve robot-world-model predictions; the authors report first place in the AgiBot World Challenge 2026 world-model track and a lower human-assessed interaction-defect rate.",
+      "claimed_contribution": "The authors claim counterfactual post-training broadens the model’s action/contact coverage and improves physical plausibility without paired ground-truth futures.",
+      "unique_caveat": "The abstract’s quantitative evaluation and challenge result are tied to AgiBot; transfer to other robot platforms and broader task distributions remains to be demonstrated.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12468"
+      ]
     },
     {
-      "id": "2610.12451",
+      "id": "2610.12452",
       "kind": "paper",
-      "title": "VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation",
+      "title": "BrickBench: Evaluating Agentic Brick Design",
       "rank": 6,
-      "url": "https://arxiv.org/abs/2610.12451",
-      "arxiv_id": "2610.12451",
+      "url": "https://arxiv.org/abs/2610.12452",
+      "arxiv_id": "2610.12452",
       "arxiv_version": "v1",
-      "published": "2026-10-08T17:58:47Z",
-      "categories": ["cs.CV", "cs.RO"],
-      "authors": ["Boyao Han", "Chen Shi", "Jingjing Qian", "ZhuoTan Tian", "Li Jiang"],
-      "themes": ["Robotics & control", "Multimodal & vision-language"],
-      "abstract": "VersaCamVLA maps variable posed RGB camera sets into fixed-size scene tokens and reports stronger manipulation results across RoboTwin, LIBERO, and a real-robot platform, including unseen camera poses.",
-      "claimed_contribution": "The authors propose a camera-set-independent visual interface based on scene tokens and wrist-camera pose sampling, without requiring explicit 3D sensing or novel-view rendering.",
-      "unique_caveat": "The abstract reports results on named simulation suites and a real-robot platform but does not establish transfer across arbitrary robots, camera rigs, or manipulation tasks.",
-      "refs": [14]
+      "published": "2026-10-08T17:58:56Z",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.GR"
+      ],
+      "authors": [
+        "Peter Kulits",
+        "Yiqing Xu",
+        "R. Kenny Jones",
+        "Cordelia Schmid",
+        "Jiajun Wu"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Evaluation & benchmarks",
+        "Multimodal & vision-language"
+      ],
+      "abstract": "BrickBench evaluates text-conditioned agents that must design LEGO assemblies satisfying semantic, design, and physical-build constraints, with scores for validity, alignment, and design across three settings.",
+      "claimed_contribution": "The authors introduce BrickBench and BrickAgent, and report that current leading agents meet many verifiable requirements but remain below human designs.",
+      "unique_caveat": "The evaluation is specific to LEGO-part selection and assembly; success on this benchmark alone would not establish general physical-design competence.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12452"
+      ]
     },
     {
-      "id": "2610.12183",
+      "id": "2610.12470",
       "kind": "paper",
-      "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
+      "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
       "rank": 7,
-      "url": "https://arxiv.org/abs/2610.12183",
-      "arxiv_id": "2610.12183",
+      "url": "https://arxiv.org/abs/2610.12470",
+      "arxiv_id": "2610.12470",
       "arxiv_version": "v1",
-      "published": "2026-10-08T15:48:07Z",
-      "categories": ["cs.LG", "cs.AI", "cs.NE"],
-      "authors": ["Ming Chen", "Rong-Xi Tan", "Ke Xue", "Yu-Jie Zhou", "Taiye Lu", "Zhi-Xuan Gao", "Peng Xie", "Zijun Shen", "Chen Lu", "Haopu Shang", "Chao Qian"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "AgenticBBO-Bench unifies five expensive-optimization domains under finite budgets and reports that agentic methods beat direct LLM methods in all five and the best numerical optimizer in four, while testing tools, task information, and model roles.",
-      "claimed_contribution": "The authors provide a common finite-budget evaluation protocol and ablations separating the effects of optimization tools, task semantics, and prior knowledge.",
-      "unique_caveat": "Results depend on the benchmark’s five domains, finite-budget protocol, and the tested agent harness/model set; the paper itself reports that added numerical tools do not consistently help.",
-      "refs": [15]
+      "published": "2026-10-08T17:59:58Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "authors": [
+        "Jusuk Lee",
+        "Sungha Kim",
+        "Yeonsoo Park",
+        "Jonguk Cheon",
+        "Yoonkyo Jung",
+        "Yongjun You",
+        "H. Jin Kim",
+        "Jia-Bin Huang",
+        "Furong Huang",
+        "Youngseok Jang",
+        "Seungjae Lee"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Training & adaptation"
+      ],
+      "abstract": "Dex-One2Many turns one human video into scene-graph constraints for reinforcement learning, then transfers a simulation-trained dexterous manipulation policy zero-shot to a real multi-fingered hand; the authors evaluate five tasks and report a larger advantage in unseen configurations.",
+      "claimed_contribution": "The authors claim scene-graph constraints improve guided RL exploration while supporting generalization to unseen poses and grasps from a single human video.",
+      "unique_caveat": "The reported results cover five tasks and one real multi-fingered-hand transfer setting; broader hardware and task coverage is still needed.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12470"
+      ]
     },
     {
-      "id": "2610.12410",
+      "id": "2610.12338",
       "kind": "paper",
-      "title": "Predicting Alignment Generalization with Value Representations",
+      "title": "VFold: Symmetry-Aware Cross-Layer Value Cache Compression",
       "rank": 8,
-      "url": "https://arxiv.org/abs/2610.12410",
-      "arxiv_id": "2610.12410",
+      "url": "https://arxiv.org/abs/2610.12338",
+      "arxiv_id": "2610.12338",
       "arxiv_version": "v1",
-      "published": "2026-10-08T17:47:26Z",
-      "categories": ["cs.CL", "cs.AI", "cs.LG"],
-      "authors": ["Andy Liu", "Mehar Bhatia", "Karolina Stanczak", "Mona Diab", "Vered Shwartz", "Daniel Fried"],
-      "themes": ["Safety & alignment", "Training & adaptation"],
-      "abstract": "Studying 66 values in alignment targets, the authors find that activation-based representations predict fine-tuning generalization across held-out values more strongly than text-description baselines and explore downstream value-similarity and robustness links.",
-      "claimed_contribution": "The authors establish alignment-generalization prediction as a task, compare representational methods, and present initial evidence for a shared model-independent value space.",
-      "unique_caveat": "The claimed shared value space is described as initial evidence, and the abstract’s quantitative result is correlation on the studied value set rather than a guarantee of out-of-distribution alignment behavior.",
-      "refs": [16]
+      "published": "2026-10-08T17:14:28Z",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "authors": [
+        "Neha Verma",
+        "Sungwon Kim",
+        "Kenton Murray",
+        "Kevin Duh"
+      ],
+      "themes": [
+        "Efficient inference & systems",
+        "Training & adaptation"
+      ],
+      "abstract": "VFold merges similar value-cache states across transformer layers using symmetry-aware reparameterization, with the stated aim of reducing long-context KV-cache memory without architectural changes or major decoding overhead.",
+      "claimed_contribution": "The authors propose cross-layer value-cache merging and claim it can combine with existing compression methods to reach higher compression ratios at minimal additional cost.",
+      "unique_caveat": "The abstract does not give a concrete compression ratio or workload-level savings figure, so the practical magnitude cannot be judged from the abstract alone.",
+      "refs": [
+        "https://arxiv.org/abs/2610.12338"
+      ]
     }
   ]
 }

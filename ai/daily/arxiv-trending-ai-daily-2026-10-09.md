@@ -1,135 +1,113 @@
-# arXiv Trending AI — Friday, 9 October 2026
+# arXiv AI papers — Friday, 9 October 2026
 
-Latest batch: 9 October 2026 (the Sunday 11 October snapshot has no new daily batch). Eight papers stand out in this scan, led by token-level LLM serving, deception and judge reliability, and agent evaluation. Quick agenda: what shipped, where evidence is strongest, and what still needs testing. arXiv publishes no official trending chart; this is an inferred shortlist, not a popularity ranking, and the newest papers have almost no citation history.
+Eight notable papers from the latest AI-category announcement batch: the strongest shared thread is making agent behavior more measurable and governable, alongside progress in robot world models and inference efficiency. Quick agenda: agent monitoring and safety first, then benchmark validity, robotics, and KV-cache compression. This is an inferred editorial selection, not an official arXiv trending chart: arXiv publishes no popularity ranking, and the papers are too new for meaningful citation evidence (Semantic Scholar showed zero citations and zero influential citations for all eight at the 12 October snapshot).
+
+Today is Monday, 12 October 2026; the latest announcement batch visible across the eight configured AI categories is Friday, 9 October. The arXiv API’s `published` timestamps for these new v1 papers fall on 8 October UTC, before the Friday announcement batch.
 
 ## Top papers (ranked)
 
-### 1. [TokenRouter: Efficient Serving System for Token-Level LLM Routing](https://arxiv.org/abs/2610.12242)
-- **Abstract:** TokenRouter restructures LLM serving around asynchronously dispatched per-model subservers and delayed batching, reporting 2.01–64.15× higher decoding throughput than existing systems across tested workloads and model pairs.
-- **Authors:** Tianyu Fu, Tengxuan Liu, Ruoxi Wang, Yixin Dong, Yi Ge, Yichen You, Yu Wang[10]
-- **arXiv:** `2610.12242v1` (published 2026-10-08T16:21:50Z; categories: `cs.CL`)[10]
-- **Evidence for ranking:** The paper reports NeurIPS 2026 acceptance; its code is public, and an independent systems-oriented write-up discusses the throughput result. Semantic Scholar returned zero citations at this snapshot, so attention evidence remains early.[10][17][18]
-- **Claimed contribution:** The authors introduce a request-centric programming interface with model-centric asynchronous execution and a throughput-model-guided delayed-batching scheduler.[10]
-- **Caveat:** The headline speedups are system benchmarks under tested algorithms, workloads, and model pairs; they do not establish the same gains for every routing policy or production deployment.[10]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[10]
-- **Themes:** Efficient inference & systems[10]
+### 1. [Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception](https://arxiv.org/abs/2610.12445)
+- **Abstract:** The authors train activation probes on a large falsehood dataset and report strong detection results for agentic sabotage and hidden-goal deception, including up to 98.8% AUC on SHADE-Arena and up to 99.7% in one introspective evaluation.
+- **Authors:** Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba, Adam Gleave, Chris Cundy
+- **arXiv:** `2610.12445v1` (published 2026-10-08T17:58:13Z; categories: `cs.LG`, `cs.AI`)
+- **Evidence for ranking:** Selected first for its direct relevance to monitoring capable agents and its reported evaluations across ordinary and hidden-goal deception settings; the authors also release the FIBS dataset. No checked popularity signal distinguishes it from the other new papers.
+- **Claimed contribution:** The paper claims that probes aggregating signals across model layers and tokens can scale to frontier-monitoring settings and detect some deception not evident from the transcript alone.
+- **Caveat:** The authors say FIBS contains little reasoning (5.5% of rows), is mostly off-policy, and is largely artificial; the reported results do not establish reliable deployment performance on naturally occurring deception.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Safety & alignment; Interpretability; Evaluation & benchmarks
 
-### 2. [Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception](https://arxiv.org/abs/2610.12445)
-- **Abstract:** The authors train white-box activation probes on a broad falsehood dataset and report strong detection results on agentic sabotage and hidden-goal evaluations, including 98.8% AUC on SHADE-Arena.
-- **Authors:** Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba, Adam Gleave, Chris Cundy[9]
-- **arXiv:** `2610.12445v1` (published 2026-10-08T17:58:13Z; categories: `cs.LG`, `cs.AI`)[9]
-- **Evidence for ranking:** Broad AI/ML cross-listing, a released training dataset and code, and reported evaluations against a text-monitoring baseline make this one of the batch’s strongest safety-relevant empirical contributions. Semantic Scholar showed zero citations at the snapshot.[9]
-- **Claimed contribution:** The authors present FIBS and probes aggregating activation signals across layers and tokens, with tests spanning contextual falsehoods, multi-turn agent traces, and elicited hidden-goal cases.[9]
-- **Caveat:** The paper explicitly narrows its target to knowing falsehoods rather than all deceptive or misleading behavior. Its appendix also notes that most generated training completions are off-policy and one generator accounts for 47%.[9]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[9]
-- **Themes:** Safety & alignment; Evaluation & benchmarks[9]
+### 2. [OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport](https://arxiv.org/abs/2610.12375)
+- **Abstract:** OnTrack compares an agent’s evolving, dependency-aware execution graph with successful reference runs, aiming to flag or stop failures online; on SWE-bench trajectories, the authors report improved early ranking of failing runs and compute savings from an abort policy.
+- **Authors:** Babak Barazandeh, Connor Swanson, Chinmay Kulkarni, Nikhil Mungel
+- **arXiv:** `2610.12375v1` (published 2026-10-08T17:32:08Z; categories: `cs.AI`, `cs.CL`, `cs.CY`, `cs.LG`)
+- **Evidence for ranking:** Ranked near the top for an operational agent-safety method with an explicit low-latency claim and measured early-warning results; its cross-listing spans AI, language, and machine learning. No independent attention metric was verified.
+- **Claimed contribution:** The authors present a streaming optimal-transport monitor that can operate with different levels of prior information, from successful reference traces down to event logs alone.
+- **Caveat:** The headline outcome results are on SWE-bench trajectories; performance in other agent domains and live deployments is not established by that evaluation.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Agents & reasoning; Safety & alignment; Evaluation & benchmarks
 
-### 3. [All Verdicts are Not Equal: Rethinking LLM Judge Reliability](https://arxiv.org/abs/2610.12083)
-- **Abstract:** Across six models and varied prompting, ordering, and repetition conditions, this audit finds that judge outputs can change across identical trials and response-order swaps, and proposes a trustworthy-verdict rate combining reproducibility, order invariance, and accuracy.
-- **Authors:** Vineet Kumar, Darshita Rathore, Anindya Moitra[11]
-- **arXiv:** `2610.12083v1` (published 2026-10-08T14:55:29Z; categories: `cs.CL`, `cs.AI`)[11]
-- **Evidence for ranking:** Accepted at AACL-IJCNLP 2026; the paper has already been picked up in a same-week research roundup and surfaced in independent paper discussion/search results. Semantic Scholar returned zero citations, so this is early coverage, not mature citation momentum.[11][20]
-- **Claimed contribution:** The authors formalize a joint reliability metric and report that holistic rubric scoring improves trustworthiness more than single-format prompt adjustments in their tested conditions.[11]
-- **Caveat:** The audit covers six judges, four benchmarks, and the specific prompt and sampling grid studied; it does not establish reliability for every task or evaluation setup.[11]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[11]
-- **Themes:** Evaluation & benchmarks[11]
+### 3. [Searching for “Harmful Refusal”: A Psychometric Audit of an AI Safety Benchmark](https://arxiv.org/abs/2610.12409)
+- **Abstract:** The authors test whether HELM Safety’s harmful-refusal scores measure one coherent attribute; their analyses find saturation in three candidate datasets and evidence that HarmBench scores do not isolate a single attribute.
+- **Authors:** Christopher M. Stewart, Preston Botter, Natalie Sarabosing, Muye Zhang, Rachel Phinnemore, et al.
+- **arXiv:** `2610.12409v1` (published 2026-10-08T17:46:43Z; categories: `cs.AI`)
+- **Evidence for ranking:** Included for a concrete measurement-science challenge to how safety results are aggregated, complementing the two monitoring papers above. It is a new single-category submission; no verified attention signal supports a popularity claim.
+- **Claimed contribution:** The paper argues that a safety score should demonstrate construct validity before being interpreted as a measurement of one attribute or used to compare models.
+- **Caveat:** The audit focuses on four HELM Safety datasets and the HarmBench analysis; its findings do not by themselves establish how every safety benchmark behaves.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Safety & alignment; Evaluation & benchmarks
 
-### 4. [Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict](https://arxiv.org/abs/2610.12360)
-- **Abstract:** The paper evaluates whether agents identify, resolve, and communicate uncertainty under evidence conflict, finding that accuracy can coexist with poor escalation and that a prompting intervention can increase humility while reducing accuracy.
-- **Authors:** Kaiser Sun, Bernal Jiménez Gutiérrez, Hongjun Liu, Jingyu Zhang, Jie Gao, Mark Dredze, Daniel Khashabi[12]
-- **arXiv:** `2610.12360v1` (published 2026-10-08T17:25:06Z; categories: `cs.AI`, `cs.CL`)[12]
-- **Evidence for ranking:** EMNLP 2026 camera-ready status, AI/language cross-listing, and a same-week research roundup provide checkable signals beyond recency; a Hugging Face paper page also surfaced. Semantic Scholar showed zero citations at the snapshot.[12][19][20]
-- **Claimed contribution:** The authors define Identify–Solve–Escalate trajectory-level measures and evaluate controlled and naturally occurring knowledge conflicts across four agent systems.[12]
-- **Caveat:** The authors call ISE only one slice of epistemic humility, limit the elicitation channel to knowledge conflict, and note that their experiments do not disentangle backbone, harness, and environment effects.[12]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[12]
-- **Themes:** Agents & reasoning; Evaluation & benchmarks; Safety & alignment[12]
+### 4. [On the estimation and validity of AI time horizons—a statistical look at the METR plot](https://arxiv.org/abs/2610.12466)
+- **Abstract:** Using 228 software tasks and 26 AI systems, the authors refit METR time horizons with spline and item-response models, finding a nonlinear mapping between human task time and estimated AI difficulty and proposing diagnostic plots for interpreting the metric.
+- **Authors:** Drew T. Nguyen, William Fithian
+- **arXiv:** `2610.12466v1` (published 2026-10-08T17:59:50Z; categories: `cs.AI`)
+- **Evidence for ranking:** Included for its direct examination of a widely discussed capability metric, with a defined dataset and cross-validated scoring-rule comparisons described in the paper. No verified popularity signal separates it from its batch peers.
+- **Claimed contribution:** The authors provide alternative time-horizon estimates and construct-validity diagnostics, and caution that equal multiplicative jumps in “human time” need not represent equal difficulty changes.
+- **Caveat:** The analysis is anchored to METR’s software-engineering task set; the authors specifically recommend interpreting time horizons together with diagnostics, especially when extending the benchmark.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Evaluation & benchmarks
 
-### 5. [OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning](https://arxiv.org/abs/2610.12458)
-- **Abstract:** OmniCapBench evaluates audio-visual captioning through structured, verifiable units for entities, video shots, and audio events, using 786 annotated videos to expose temporal grounding, identity, and cross-modal errors.
-- **Authors:** Zhongyu Yang, Jiale Tao, Ruitao Chen, Zuhao Yang, Yingfang Yuan, Xueliang Zhao, Auden, Kai Wang, Shuai Shao, Biao Wang, Steve Yves, Qinglin Lu[13]
-- **arXiv:** `2610.12458v1` (published 2026-10-08T17:59:21Z; categories: `cs.CV`)[13]
-- **Evidence for ranking:** The authors report NeurIPS 2026 acceptance and release benchmark code/data; a public dataset listing independently corroborates the artifact. Semantic Scholar returned zero citations, consistent with the paper’s very recent posting.[13][21]
-- **Claimed contribution:** The paper replaces single whole-caption scores with three tracks of atomic evaluation units, combining deterministic checks and localized semantic comparisons.[13]
-- **Caveat:** The reported benchmark concerns fine-grained audio-visual captioning on its 786-video set; it is not by itself evidence of general multimodal reasoning quality.[13]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[13]
-- **Themes:** Multimodal & vision-language; Evaluation & benchmarks[13]
+### 5. [DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](https://arxiv.org/abs/2610.12468)
+- **Abstract:** DreamTrue combines geometric action conditioning, counterfactual trajectory post-training, and a learned video reward model to improve robot-world-model predictions; the authors report first place in the AgiBot World Challenge 2026 world-model track and a lower human-assessed interaction-defect rate.
+- **Authors:** Junyan Li, Ruizhi Li, Yu Liu, Xiangshuo Liu, Mingchao Sun, et al.
+- **arXiv:** `2610.12468v1` (published 2026-10-08T17:59:51Z; categories: `cs.RO`, `cs.CV`)
+- **Evidence for ranking:** Selected for its combination of action-conditioned prediction and evaluation against interaction defects, plus the paper’s stated challenge result; it brings robotics into a batch otherwise heavy on agent evaluation. The contest placement is the authors’ report, not independent validation.
+- **Claimed contribution:** The authors claim counterfactual post-training broadens the model’s action/contact coverage and improves physical plausibility without paired ground-truth futures.
+- **Caveat:** The abstract’s quantitative evaluation and challenge result are tied to AgiBot; transfer to other robot platforms and broader task distributions remains to be demonstrated.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Robotics & control; Multimodal & vision-language; Training & adaptation
 
-### 6. [VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation](https://arxiv.org/abs/2610.12451)
-- **Abstract:** VersaCamVLA maps variable posed RGB camera sets into fixed-size scene tokens and reports stronger manipulation results across RoboTwin, LIBERO, and a real-robot platform, including unseen camera poses.
-- **Authors:** Boyao Han, Chen Shi, Jingjing Qian, ZhuoTan Tian, Li Jiang[14]
-- **arXiv:** `2610.12451v1` (published 2026-10-08T17:58:47Z; categories: `cs.CV`, `cs.RO`)[14]
-- **Evidence for ranking:** NeurIPS 2026 acceptance, robotics/vision cross-listing, and reported real-robot tests distinguish it from simulation-only submissions; a public project/code page was surfaced in the search.[14]
-- **Claimed contribution:** The authors propose a camera-set-independent visual interface based on scene tokens and wrist-camera pose sampling, without requiring explicit 3D sensing or novel-view rendering.[14]
-- **Caveat:** The abstract reports results on named simulation suites and a real-robot platform but does not establish transfer across arbitrary robots, camera rigs, or manipulation tasks.[14]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[14]
-- **Themes:** Robotics & control; Multimodal & vision-language[14]
+### 6. [BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452)
+- **Abstract:** BrickBench evaluates text-conditioned agents that must design LEGO assemblies satisfying semantic, design, and physical-build constraints, with scores for validity, alignment, and design across three settings.
+- **Authors:** Peter Kulits, Yiqing Xu, R. Kenny Jones, Cordelia Schmid, Jiajun Wu
+- **arXiv:** `2610.12452v1` (published 2026-10-08T17:58:56Z; categories: `cs.AI`, `cs.CV`, `cs.GR`)
+- **Evidence for ranking:** Included as a concrete benchmark and open environment for embodied, constraint-heavy agent design; its three-category cross-listing broadens the sample beyond language-agent tasks. Search discovery is not treated as evidence of readership.
+- **Claimed contribution:** The authors introduce BrickBench and BrickAgent, and report that current leading agents meet many verifiable requirements but remain below human designs.
+- **Caveat:** The evaluation is specific to LEGO-part selection and assembly; success on this benchmark alone would not establish general physical-design competence.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Agents & reasoning; Evaluation & benchmarks; Multimodal & vision-language
 
-### 7. [A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization](https://arxiv.org/abs/2610.12183)
-- **Abstract:** AgenticBBO-Bench unifies five expensive-optimization domains under finite budgets and reports that agentic methods beat direct LLM methods in all five and the best numerical optimizer in four, while testing tools, task information, and model roles.
-- **Authors:** Ming Chen, Rong-Xi Tan, Ke Xue, Yu-Jie Zhou, Taiye Lu, et al.[15]
-- **arXiv:** `2610.12183v1` (published 2026-10-08T15:48:07Z; categories: `cs.LG`, `cs.AI`, `cs.NE`)[15]
-- **Evidence for ranking:** Three-way cross-listing across ML, AI, and neural/evolutionary computing, a five-domain benchmark, and released code make it a broadly relevant research artifact. Semantic Scholar returned zero citations at the snapshot.[15]
-- **Claimed contribution:** The authors provide a common finite-budget evaluation protocol and ablations separating the effects of optimization tools, task semantics, and prior knowledge.[15]
-- **Caveat:** Results depend on the benchmark’s five domains, finite-budget protocol, and the tested agent harness/model set; the paper itself reports that added numerical tools do not consistently help.[15]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[15]
-- **Themes:** Agents & reasoning; Evaluation & benchmarks[15]
+### 7. [Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration](https://arxiv.org/abs/2610.12470)
+- **Abstract:** Dex-One2Many turns one human video into scene-graph constraints for reinforcement learning, then transfers a simulation-trained dexterous manipulation policy zero-shot to a real multi-fingered hand; the authors evaluate five tasks and report a larger advantage in unseen configurations.
+- **Authors:** Jusuk Lee, Sungha Kim, Yeonsoo Park, Jonguk Cheon, Yoonkyo Jung, et al.
+- **arXiv:** `2610.12470v1` (published 2026-10-08T17:59:58Z; categories: `cs.RO`, `cs.CV`)
+- **Evidence for ranking:** Selected for an explicit real-robot transfer test and for addressing generalization beyond the demonstrated object poses and grasps; cross-listed in robotics and vision. No independent attention metric was verified.
+- **Claimed contribution:** The authors claim scene-graph constraints improve guided RL exploration while supporting generalization to unseen poses and grasps from a single human video.
+- **Caveat:** The reported results cover five tasks and one real multi-fingered-hand transfer setting; broader hardware and task coverage is still needed.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Robotics & control; Training & adaptation
 
-### 8. [Predicting Alignment Generalization with Value Representations](https://arxiv.org/abs/2610.12410)
-- **Abstract:** Studying 66 values in alignment targets, the authors find that activation-based representations predict fine-tuning generalization across held-out values more strongly than text-description baselines and explore downstream value-similarity and robustness links.
-- **Authors:** Andy Liu, Mehar Bhatia, Karolina Stanczak, Mona Diab, Vered Shwartz, Daniel Fried[16]
-- **arXiv:** `2610.12410v1` (published 2026-10-08T17:47:26Z; categories: `cs.CL`, `cs.AI`, `cs.LG`)[16]
-- **Evidence for ranking:** The paper spans three core AI categories and reports a sizeable 66-value analysis with quantified comparisons between activation- and text-based methods. No independent citation or discussion signal was found in the sources checked; Semantic Scholar returned zero citations.[16]
-- **Claimed contribution:** The authors establish alignment-generalization prediction as a task, compare representational methods, and present initial evidence for a shared model-independent value space.[16]
-- **Caveat:** The claimed shared value space is described as initial evidence, and the abstract’s quantitative result is correlation on the studied value set rather than a guarantee of out-of-distribution alignment behavior.[16]
-- **Announcement type:** new submission, 2026-10-09 announcement batch[16]
-- **Themes:** Safety & alignment; Training & adaptation[16]
+### 8. [VFold: Symmetry-Aware Cross-Layer Value Cache Compression](https://arxiv.org/abs/2610.12338)
+- **Abstract:** VFold merges similar value-cache states across transformer layers using symmetry-aware reparameterization, with the stated aim of reducing long-context KV-cache memory without architectural changes or major decoding overhead.
+- **Authors:** Neha Verma, Sungwon Kim, Kenton Murray, Kevin Duh
+- **arXiv:** `2610.12338v1` (published 2026-10-08T17:14:28Z; categories: `cs.CL`, `cs.LG`)
+- **Evidence for ranking:** Included as the batch’s systems-oriented entry: the method targets a concrete long-context memory bottleneck and is described as composable with cache quantization and key pruning. No verified popularity measure supports its ordering.
+- **Claimed contribution:** The authors propose cross-layer value-cache merging and claim it can combine with existing compression methods to reach higher compression ratios at minimal additional cost.
+- **Caveat:** The abstract does not give a concrete compression ratio or workload-level savings figure, so the practical magnitude cannot be judged from the abstract alone.
+- **Announcement type:** new submission, Friday 9 October 2026
+- **Themes:** Efficient inference & systems; Training & adaptation
 
 ## Trending Research Themes
 
-- **Evaluation is moving from final-answer scores toward trajectory- and structure-aware diagnosis.** The judge-reliability audit, epistemic-humility study, and OmniCapBench each test failure modes hidden by a single aggregate score.[11][12][13]
-- **Agentic capability work is increasingly paired with monitoring or explicit budgets.** Caught in the Act probes for falsehoods across agent traces, while AgenticBBO evaluates decisions under finite optimization budgets; neither by itself establishes broad autonomous reliability.[9][15]
-- **Practical systems work is addressing the gap between model-level methods and deployment constraints.** TokenRouter targets cross-model serving overhead, while VersaCamVLA tackles changing camera inputs on robot manipulation tasks.[10][14]
-- **Alignment research is probing behavior beyond static task correctness.** The humility paper measures uncertainty handling and the value-representation paper studies how fine-tuning one value generalizes to others.[12][16]
+- **Agent monitoring is moving toward intervention, not just scoring.** OnTrack proposes online alerts and blocking; Caught in the Act probes internal activations for deception signals. Both are preprints, and their claims need broader, realistic deployment tests.
+- **Evaluation validity is itself a research problem.** The METR time-horizon analysis questions the shape of the human-time scale; the harmful-refusal audit questions whether aggregate safety scores measure a single trait; BrickBench builds a more executable agent benchmark.
+- **Robotics combines learned world models with structured interaction priors.** DreamTrue uses action-conditioned counterfactuals, while Dex-One2Many uses scene graphs to guide exploration and transfer from a human video.
+- **Long-context efficiency still depends on reducing cache footprint.** VFold targets cross-layer redundancy in value states, but the abstract-level evidence does not yet quantify the practical savings.
 
 ## Open Problems and Research Directions
 
-- **Author-stated — deception probe distribution shift:** Caught in the Act notes that most generated completions are off-policy and one generator contributes 47% of completions. Test probe transfer on independently generated, genuinely on-policy agent trajectories and across more model families.[9]
-- **Author-stated — humility construct and system attribution:** Accurate but Not Humble says ISE is only one dimension and that backbone, harness, and evaluation effects are not isolated. Follow up with multi-task measures and controlled component swaps, then test whether uncertainty signaling remains useful without sacrificing task accuracy.[12]
-- **Synthesis — benchmark-to-deployment gap:** TokenRouter and VersaCamVLA report systems gains on selected workloads or robot tasks. Replicate with more serving topologies, unseen hardware, camera configurations, and longer-duration real-world operation before generalizing the claims.[10][14]
-- **Synthesis — evaluator reliability under open-ended use:** The judge audit finds reproducibility and order-bias problems in its tested grid. Extend the reliability protocol to longer-form and multimodal evaluation, with human-validated reference labels and repeated measurements.[11][13]
+- **Probe robustness outside curated deception settings (author-stated limitation):** Caught in the Act notes that FIBS has little reasoning data and is largely artificial/off-policy. A useful next test is prospective evaluation on naturally occurring, on-policy agent failures, with independent labels and distribution-shift analysis.
+- **Online-monitor generalization:** OnTrack’s reported outcome results use SWE-bench traces. Test false-positive and missed-failure rates across distinct agent workloads and under the monitor’s lower-information regimes, especially where no successful reference run exists.
+- **Measurement validity beyond one benchmark family:** The METR and harmful-refusal papers both show why a summary score can conceal nonlinear task difficulty or multiple underlying attributes. Future studies could predefine the construct, test it on independent datasets, and report diagnostic plots and subgroup/item-level behavior before publishing a single aggregate.
+- **Robot transfer under varied failures:** DreamTrue and Dex-One2Many report promising robot-task results, but their abstracts describe bounded platform/task evaluations. Evaluate under new embodiments, contact conditions, and unsuccessful interactions, and test whether gains survive real-world distribution shifts.
 
 ## Takeaway
 
-This batch’s strongest common thread is measurement: papers are asking whether agents and multimodal systems remain dependable across trajectories, conflicting evidence, evaluation protocols, and deployment conditions—not just whether they produce a correct-looking answer. TokenRouter offers the clearest systems result and several papers report conference acceptance, but the batch is too fresh for citation counts to distinguish durable influence; most claims still need independent replication.
+This batch has a practical through-line: better ways to observe, evaluate, and constrain AI systems—especially agents—rather than a single new model architecture dominating the set. The most consequential claims are also the ones that most need out-of-distribution replication: deception probes on natural behavior, agent monitors beyond SWE-bench, and robot policies beyond their reported platforms and tasks.
 
 ## Method and sources
 
-- **Window:** daily; latest arXiv announcement batch is Friday 2026-10-09. Snapshot: 2026-10-11T00:10:15Z. Since the snapshot is Sunday, this uses the prior weekday batch.
-- **Coverage:** Recent pages checked for the [AI and ML categories][1][2][3]. The [language and vision categories][4][5] were checked as well. We also checked [robotics, neural, and multiagent categories][6][7][8]. Selected papers were checked against their arXiv abstract pages and versions; full HTML text was examined for the top three entries.
-- **Ranking:** inferred, not an arXiv popularity chart. Weighed independently surfaced discussion/artifacts, conference status where stated by the paper, cross-category relevance, and concrete evaluation evidence; used recency only as context. A Semantic Scholar batch lookup returned zero citations for the selected papers at snapshot time, so citation momentum could not separate them. arXiv itself supplies no official trending or readership statistics.
-- **Retrieval note:** the broad arXiv API request was rate-limited; category listings and individual abstract pages were retrieved through arXiv’s site instead. This did not determine ranking.
-- **Sources:** See the generated source list below for category pages, selected abstracts, and corroborating artifacts.
-
-## Sources
-
-[1] https://arxiv.org/list/cs.AI/recent
-[2] https://arxiv.org/list/cs.LG/recent
-[3] https://arxiv.org/list/stat.ML/recent
-[4] https://arxiv.org/list/cs.CL/recent
-[5] https://arxiv.org/list/cs.CV/recent
-[6] https://arxiv.org/list/cs.RO/recent
-[7] https://arxiv.org/list/cs.NE/recent
-[8] https://arxiv.org/list/cs.MA/recent
-[9] https://arxiv.org/abs/2610.12445
-[10] https://arxiv.org/abs/2610.12242
-[11] https://arxiv.org/abs/2610.12083
-[12] https://arxiv.org/abs/2610.12360
-[13] https://arxiv.org/abs/2610.12458
-[14] https://arxiv.org/abs/2610.12451
-[15] https://arxiv.org/abs/2610.12183
-[16] https://arxiv.org/abs/2610.12410
-[17] https://dev.to/reidmarlow/why-token-level-llm-routers-spend-95-of-their-time-on-cache-bookkeeping-5959
-[18] https://github.com/thu-nics/TokenRouter
-[19] https://huggingface.co/papers/2610.12360
-[20] https://lonepatient.top/2026/10/09/arxiv_papers_2026-10-09
-[21] https://huggingface.co/datasets/OmniCapBench/OmniCapBench
+- **Window:** Daily; latest arXiv announcement batch visible on category recent pages, Friday 9 October 2026. Monday 12 October had no newer batch at the snapshot. The selected eight are new v1 submissions in that batch; arXiv API `published` timestamps are 8 October UTC.
+- **Snapshot:** 2026-10-12 00:10 UTC.
+- **Scope/query:** Core AI categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`; broad arXiv API query across those categories, cross-list deduplication by arXiv ID, and category-recent pages to establish the announcement date. The featured eight are a selected sample, not an exhaustive list.
+- **Ranking:** Inferred selection by specific research relevance, reported evaluation detail, and breadth across the configured corpus. Semantic Scholar batch lookup returned 0 citations and 0 influential citations for each of the eight; no valid popularity ranking can be derived from that snapshot. No downloads, reads, votes, or bookmarks were used.
+- **Primary sources:** [arXiv cs.AI recent](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent); paper abstracts linked above. Citation cross-check: [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch).

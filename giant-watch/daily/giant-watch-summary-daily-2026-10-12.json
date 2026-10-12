@@ -1,0 +1,55 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-10-12",
+  "title": "Giant Watch Summary - Daily - 2026-10-12",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-10-12.md",
+  "entry_count": 2,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Meta's Connect 2026 recap is the clearest fresh, first-party AI signal: it says Muse is coming to its AI glasses. Separately, coverage of a Moonshot Kimi K3 announcement is circulating, but the retrieved material did not include a primary announcement, so that report remains unverified."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "meta-connect-muse-glasses",
+      "title": "Meta brings Muse to AI glasses",
+      "organizations": ["Meta"],
+      "status": "verified",
+      "content": "Meta's official newsroom recap of Connect 2026 says the company is bringing its Muse personal AI agent to AI glasses; the same recap mentions Meta VR Glasses. The retrieved snippet does not specify availability or capabilities.",
+      "significance": "It connects Meta's AI-agent push with its hardware distribution.",
+      "refs": ["https://about.fb.com/news/"],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "02-event",
+      "kind": "event",
+      "rank": 2,
+      "event_id": "moonshot-kimi-k3-reports",
+      "title": "Kimi K3 launch reports circulate without primary confirmation",
+      "organizations": ["Kimi"],
+      "status": "unverified",
+      "content": "A Google News roundup surfaced coverage describing a Moonshot Kimi K3 release, and a vLLM-project LinkedIn result referred to a Kimi K3 announcement and a KDA prefix-caching contribution. The supplied search results did not include a direct Moonshot announcement or enough detail to verify timing, model claims, or release terms.",
+      "significance": "If confirmed, it could signal a new model release and inference-stack collaboration; primary-source verification remains outstanding.",
+      "refs": [
+        "https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lNMDRITkVSRkU4ZEZYbUJubHBDZ0FQAQ?hl=en-IN&gl=IN&ceid=IN:en",
+        "https://www.linkedin.com/posts/vllm-project_kimi-research-articles-technical-blogs-activity-7483606739381067776-v-g4"
+      ],
+      "related_event_ids": [],
+      "transition_hint": ""
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today's clearest signal is product distribution: Meta is putting its assistant on glasses. Watch for a primary Moonshot announcement to confirm the Kimi K3 coverage before treating it as a verified launch. This report is a manual synthesis because DEEPSEEK_API_KEY is not configured."
+    }
+  ]
+}

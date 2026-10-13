@@ -1,0 +1,329 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-13",
+  "title": "GitHub Trending Summary - Daily - 2026-10-13",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-13.md",
+  "entry_count": 9,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-10-13 00:24 UTC",
+  "date_range": "2026-10-12 through 2026-10-13",
+  "ranking_basis": "GitHub Trending daily page-reported star gains",
+  "ranking_explanation": "Repositories are ordered by the daily star-gain figures displayed on GitHub Trending, corroborated with GitHub REST API repository totals and current default-branch commits. The morluto/rea figure is a material anomaly and is explicitly caveated.",
+  "global_caveat": "Trending star gains are page-reported, not independently reconstructible from the API in this snapshot. For morluto/rea, page display showed +45,327 today while API total (156,330) was only 10 above the page total observed (156,320).",
+  "themes": [
+    {
+      "id": "agent-reverse-engineering",
+      "title": "Agentic reverse engineering",
+      "content": "REA represents coding agents as investigation front ends for understanding existing apps and binaries.",
+      "supporting_repository_ids": [
+        "morluto/rea"
+      ]
+    },
+    {
+      "id": "geospatial-live-visualization",
+      "title": "Live geospatial visualization",
+      "content": "God’s Eye View brings public live/updated feeds into an interactive 3D globe; its README distinguishes live feeds from simulated traffic and estimated camera/trajectory data.",
+      "supporting_repository_ids": [
+        "bilawalsidhu/gods-eye-view"
+      ]
+    },
+    {
+      "id": "agent-context-engineering",
+      "title": "Agent context engineering",
+      "content": "Context Mode focuses on reducing tool-output/context overhead and routing tools through MCP/hooks.",
+      "supporting_repository_ids": [
+        "mksglu/context-mode"
+      ]
+    },
+    {
+      "id": "creative-ai-workflows",
+      "title": "Creative AI workflows",
+      "content": "ArtCraft emphasizes deliberate 2D/3D staging and composition around generative image/video tools.",
+      "supporting_repository_ids": [
+        "storytold/artcraft"
+      ]
+    },
+    {
+      "id": "open-model-inference",
+      "title": "Open-model inference interfaces and efficiency",
+      "content": "Open WebUI, AirLLM, and BitNet cover, respectively, model access/UI, memory-efficient inference claims, and 1-bit inference.",
+      "supporting_repository_ids": [
+        "open-webui/open-webui",
+        "lyogavin/airllm",
+        "microsoft/BitNet"
+      ]
+    },
+    {
+      "id": "agent-design-tools",
+      "title": "Agent-produced design artifacts",
+      "content": "Diagram Design turns natural-language requests into self-contained HTML/SVG diagrams tailored to a brand.",
+      "supporting_repository_ids": [
+        "cathrynlavery/diagram-design"
+      ]
+    },
+    {
+      "id": "agent-access-and-harnesses",
+      "title": "Multi-harness coding-agent access",
+      "content": "Free Claude Code markets one access layer spanning several coding-agent tools; its offering is a project claim, not independently audited here.",
+      "supporting_repository_ids": [
+        "Alishahryar1/free-claude-code"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Today’s page is led by agent-oriented engineering and design, with additional momentum in live geospatial visualization and compact/local LLM workflows. The displayed +45,327 daily gain for morluto/rea is a major outlier: the GitHub API total was only 10 stars above the page’s displayed total during this check, so that gain is reported as shown but is not independently reconciled."
+    },
+    {
+      "id": "01-morluto-rea",
+      "kind": "repo",
+      "title": "morluto/rea",
+      "rank": 1,
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars_gained": 45327,
+      "total_stars": 156330,
+      "default_branch_commit": "c462a4ebd3a10e59253bcf38353a0914b176738b",
+      "why_notable": "Turns agents into investigators of native binaries, web apps, and runtime behavior through an MCP/tool workflow.",
+      "theme_ids": [
+        "agent-reverse-engineering"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "REA",
+      "unique_caveat": "GitHub Trending displayed +45,327 today, but API total stars were only 10 above the page total observed during this check; daily gain is unreconciled.",
+      "enrichment": null,
+      "content": "Reverse engineer anything with agents, from app behavior down to native binaries. Language: TypeScript. Trending page-reported stars today: +45,327. API total stars: 156,330. Why notable: Turns agents into investigators of native binaries, web apps, and runtime behavior through an MCP/tool workflow.",
+      "refs": [
+        "morluto/rea"
+      ]
+    },
+    {
+      "id": "02-storytold-artcraft",
+      "kind": "repo",
+      "title": "storytold/artcraft",
+      "rank": 2,
+      "url": "https://github.com/storytold/artcraft",
+      "description": "A visual creation IDE for artists, designers, and filmmakers.",
+      "language": "Rust",
+      "stars_gained": 4095,
+      "total_stars": 21970,
+      "default_branch_commit": "d4e4ac69bbd93d237eaf5d0260bc6a5ff3a5e373",
+      "why_notable": "A visual IDE for AI image/video creation that adds 2D and 3D scene composition before generation.",
+      "theme_ids": [
+        "creative-ai-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "ArtCraft",
+      "unique_caveat": "",
+      "enrichment": null,
+      "content": "A visual creation IDE for artists, designers, and filmmakers. Language: Rust. Trending page-reported stars today: +4,095. API total stars: 21,970. Why notable: A visual IDE for AI image/video creation that adds 2D and 3D scene composition before generation.",
+      "refs": [
+        "storytold/artcraft"
+      ]
+    },
+    {
+      "id": "03-cathrynlavery-diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 3,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Agent skill for editorial diagrams in self-contained HTML and SVG.",
+      "language": "HTML",
+      "stars_gained": 2081,
+      "total_stars": 52581,
+      "default_branch_commit": "356c86b8190862bcfe4137f55ae7e7296194a0cf",
+      "why_notable": "An agent skill creates brand-aligned, self-contained HTML/SVG diagrams across dozens of diagram types.",
+      "theme_ids": [
+        "agent-design-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Diagram Design",
+      "unique_caveat": "",
+      "enrichment": null,
+      "content": "Agent skill for editorial diagrams in self-contained HTML and SVG. Language: HTML. Trending page-reported stars today: +2,081. API total stars: 52,581. Why notable: An agent skill creates brand-aligned, self-contained HTML/SVG diagrams across dozens of diagram types.",
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ]
+    },
+    {
+      "id": "04-bilawalsidhu-gods-eye-view",
+      "kind": "repo",
+      "title": "bilawalsidhu/gods-eye-view",
+      "rank": 4,
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A browser-based 3D globe for live public spatial-intelligence data.",
+      "language": "JavaScript",
+      "stars_gained": 1895,
+      "total_stars": 53647,
+      "default_branch_commit": "8b8ccc9a81379e8b40d4be67610570ee5b159512",
+      "why_notable": "Combines real public signals—aircraft, ships, satellites, and more—on an explorable 3D globe.",
+      "theme_ids": [
+        "geospatial-live-visualization"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "God’s Eye View",
+      "unique_caveat": "",
+      "enrichment": null,
+      "content": "A browser-based 3D globe for live public spatial-intelligence data. Language: JavaScript. Trending page-reported stars today: +1,895. API total stars: 53,647. Why notable: Combines real public signals—aircraft, ships, satellites, and more—on an explorable 3D globe.",
+      "refs": [
+        "bilawalsidhu/gods-eye-view"
+      ]
+    },
+    {
+      "id": "05-lyogavin-airllm",
+      "kind": "repo",
+      "title": "lyogavin/airllm",
+      "rank": 5,
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "LLM inference with reduced memory requirements, according to the project.",
+      "language": "Jupyter Notebook",
+      "stars_gained": 879,
+      "total_stars": 37517,
+      "default_branch_commit": "7bb8a8600937ff15b81016f286142bcdac7ee2d2",
+      "why_notable": "Streams model layers to reduce GPU memory needs; its README reports large-model inference on constrained VRAM.",
+      "theme_ids": [
+        "open-model-inference"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "AirLLM",
+      "unique_caveat": "Memory/performance figures are stated by the project; they were not independently benchmarked for this summary.",
+      "enrichment": null,
+      "content": "LLM inference with reduced memory requirements, according to the project. Language: Jupyter Notebook. Trending page-reported stars today: +879. API total stars: 37,517. Why notable: Streams model layers to reduce GPU memory needs; its README reports large-model inference on constrained VRAM.",
+      "refs": [
+        "lyogavin/airllm"
+      ]
+    },
+    {
+      "id": "06-alishahryar1-free-claude-code",
+      "kind": "repo",
+      "title": "Alishahryar1/free-claude-code",
+      "rank": 6,
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Multi-harness access to coding agents; the repository advertises a free-token offering.",
+      "language": "Python",
+      "stars_gained": 626,
+      "total_stars": 59099,
+      "default_branch_commit": "4e99ddaa5cf453d4ef22fae7c17f7f3aacc3c52b",
+      "why_notable": "An access layer that advertises free-token use across multiple coding-agent harnesses and interfaces.",
+      "theme_ids": [
+        "agent-access-and-harnesses"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "Free Claude Code",
+      "unique_caveat": "The free-token availability/amount is a project claim and was not independently validated.",
+      "enrichment": null,
+      "content": "Multi-harness access to coding agents; the repository advertises a free-token offering. Language: Python. Trending page-reported stars today: +626. API total stars: 59,099. Why notable: An access layer that advertises free-token use across multiple coding-agent harnesses and interfaces.",
+      "refs": [
+        "Alishahryar1/free-claude-code"
+      ]
+    },
+    {
+      "id": "07-mksglu-context-mode",
+      "kind": "repo",
+      "title": "mksglu/context-mode",
+      "rank": 7,
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context-window optimization for coding agents using tool-output sandboxing, memory, and routing.",
+      "language": "TypeScript",
+      "stars_gained": 246,
+      "total_stars": 27278,
+      "default_branch_commit": "1a1bed139906ecc048233583bb2fd29290603b7a",
+      "why_notable": "Targets context-window waste with sandboxed tool output, session memory, and routing via MCP and hooks.",
+      "theme_ids": [
+        "agent-context-engineering"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 6,
+      "spoken_name": "Context Mode",
+      "unique_caveat": "",
+      "enrichment": null,
+      "content": "Context-window optimization for coding agents using tool-output sandboxing, memory, and routing. Language: TypeScript. Trending page-reported stars today: +246. API total stars: 27,278. Why notable: Targets context-window waste with sandboxed tool output, session memory, and routing via MCP and hooks.",
+      "refs": [
+        "mksglu/context-mode"
+      ]
+    },
+    {
+      "id": "08-open-webui-open-webui",
+      "kind": "repo",
+      "title": "open-webui/open-webui",
+      "rank": 8,
+      "url": "https://github.com/open-webui/open-webui",
+      "description": "A user-friendly interface for Ollama and OpenAI-compatible models.",
+      "language": "Python",
+      "stars_gained": 157,
+      "total_stars": 154981,
+      "default_branch_commit": "f8ae8a6c328946dc62cd0712961a0632574581bf",
+      "why_notable": "A widely used front end for local and hosted language models, including Ollama and OpenAI-compatible APIs.",
+      "theme_ids": [
+        "open-model-inference"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "Open WebUI",
+      "unique_caveat": "",
+      "enrichment": null,
+      "content": "A user-friendly interface for Ollama and OpenAI-compatible models. Language: Python. Trending page-reported stars today: +157. API total stars: 154,981. Why notable: A widely used front end for local and hosted language models, including Ollama and OpenAI-compatible APIs.",
+      "refs": [
+        "open-webui/open-webui"
+      ]
+    },
+    {
+      "id": "09-microsoft-bitnet",
+      "kind": "repo",
+      "title": "microsoft/BitNet",
+      "rank": 9,
+      "url": "https://github.com/microsoft/BitNet",
+      "description": "Microsoft’s inference framework for 1-bit LLMs.",
+      "language": "C++",
+      "stars_gained": 97,
+      "total_stars": 40904,
+      "default_branch_commit": "0b341e582afbf9e1011f24744b554c96a3477eb5",
+      "why_notable": "Microsoft’s framework for inference with 1-bit language models.",
+      "theme_ids": [
+        "open-model-inference"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "BitNet",
+      "unique_caveat": "",
+      "enrichment": null,
+      "content": "Microsoft’s inference framework for 1-bit LLMs. Language: C++. Trending page-reported stars today: +97. API total stars: 40,904. Why notable: Microsoft’s framework for inference with 1-bit language models.",
+      "refs": [
+        "microsoft/BitNet"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agentic reverse engineering:** REA represents coding agents as investigation front ends for understanding existing apps and binaries. Supporting repositories: morluto/rea.\n- **Live geospatial visualization:** God’s Eye View brings public live/updated feeds into an interactive 3D globe; its README distinguishes live feeds from simulated traffic and estimated camera/trajectory data. Supporting repositories: bilawalsidhu/gods-eye-view.\n- **Agent context engineering:** Context Mode focuses on reducing tool-output/context overhead and routing tools through MCP/hooks. Supporting repositories: mksglu/context-mode.\n- **Creative AI workflows:** ArtCraft emphasizes deliberate 2D/3D staging and composition around generative image/video tools. Supporting repositories: storytold/artcraft.\n- **Open-model inference interfaces and efficiency:** Open WebUI, AirLLM, and BitNet cover, respectively, model access/UI, memory-efficient inference claims, and 1-bit inference. Supporting repositories: open-webui/open-webui, lyogavin/airllm, microsoft/BitNet.\n- **Agent-produced design artifacts:** Diagram Design turns natural-language requests into self-contained HTML/SVG diagrams tailored to a brand. Supporting repositories: cathrynlavery/diagram-design.\n- **Multi-harness coding-agent access:** Free Claude Code markets one access layer spanning several coding-agent tools; its offering is a project claim, not independently audited here. Supporting repositories: Alishahryar1/free-claude-code.\n- **Languages:** TypeScript 2; Python 2; JavaScript 1; Rust 1; HTML 1; Jupyter Notebook 1; C++ 1 (counts among these nine entries)."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The strongest shared direction is software-building tools that put AI agents into concrete workflows: inspecting existing software, managing context, producing diagrams, and routing across coding harnesses. Alongside that, creative production and interactive public-data visualization are visible counterpoints; inference work spans user-facing access and low-memory/1-bit approaches. Treat the extreme REA star-gain figure cautiously because it does not reconcile with the API total observed here."
+    }
+  ]
+}

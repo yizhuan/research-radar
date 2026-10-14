@@ -1,118 +1,97 @@
-# arXiv physics — daily notable papers, Monday 12 October 2026
+# arXiv physics notable papers — announcement batch 12 October 2026
 
-Eight selected papers from the latest announcement batch, with a strong experimental thread running from quantum hardware and magnetic materials to JWST surveys and cosmological distance measurements. I’ll cover the measurements first, then the computational/theoretical work and the questions still open. arXiv has no official trending chart; this is an inferred, evidence-led selection, not a readership ranking. At the 2026-10-13 00:22 UTC snapshot, Semantic Scholar listed zero citations and zero influential citations for all eight, so popularity evidence is limited and the ordering is best read as notable recent work.
+Six notable papers from the latest available physics-group announcement batch. The selection spans collider data, quantum field theory in curved spacetime, JWST spectroscopy, superconductivity, early-universe cosmology and quantum gases. The ordering is an inferred editorial shortlist—not an official arXiv chart or a readership ranking. Citation and independent-attention evidence is especially sparse for papers only days old. In brief: a high-significance BESIII threshold structure, new lattice access to de Sitter field theory, and an intriguing but unidentified JWST line lead the list.
 
 ## Top papers (ranked)
 
-### 1. [Evolution and breakdown of chiral anomaly in Weyl semiconductor tellurium](https://arxiv.org/abs/2610.13084)
-- **Abstract:** The authors report tunable negative longitudinal magnetoresistance in doped tellurium, its persistence to ambient temperature, and a reversal under extreme quantum-limit conditions that may indicate an interaction-driven phase transition.
-- **Authors:** Zhifeng Xue, Jiaji Zhao, Yi Ji, Fuyang Chen, Nannan Tang, et al.
-- **arXiv:** `2610.13084v1` (published 2026-10-09 06:38:52 UTC; categories: `cond-mat.mtrl-sci`, `physics.app-ph`, `quant-ph`)
-- **Evidence for ranking:** The authors list a 2026 *Communications Physics* journal reference (DOI: 10.1038/s42005-026-02901-3); the work is also cross-listed across materials physics, applied physics, and quantum physics. This is a concrete transport result rather than a popularity signal.
-- **Claimed result:** The authors attribute the enhanced negative magnetoresistance to chiral anomaly as the Fermi level approaches the Weyl point; they describe the low-temperature sign reversal beyond the quantum limit as a possible field-induced collective state, not an established phase transition.
-- **Evidence type:** Experimental; magnetotransport in doped tellurium under varied Fermi-level and magnetic-field conditions.
-- **Caveat:** The proposed collective-state interpretation of the extreme-field reversal is tentative; the abstract does not identify a definitive phase diagnosis.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
-- **Themes:** Condensed matter & materials
-
-### 2. [An entangling Hubbard quasiparticle collider on a digital quantum processor](https://arxiv.org/abs/2610.13946)
-- **Abstract:** The authors collide a doublon and holon in a 21-site Fermi–Hubbard chain encoded on 42 qubits, measure quasiparticle transmission consistent with the Bethe-ansatz result, and infer collision-generated number entanglement.
-- **Authors:** Chan Bin Bark, Hanbyul Kim, Yoonil Koo, SeungBeom Hong, Seik Pak, et al.
-- **arXiv:** `2610.13946v1` (published 2026-10-09 17:59:06 UTC; categories: `quant-ph`, `cond-mat.str-el`)
-- **Evidence for ranking:** The paper reports a direct, 42-qubit hardware scattering experiment and is cross-listed between quantum physics and strongly correlated electrons; its measured transmission agrees with an exact Bethe-ansatz benchmark without fitted parameters.
-- **Claimed result:** Authors report the first hardware measurement of Hubbard-model quasiparticle transmission and use particle-number fluctuations to infer entanglement between transmitted and reflected components.
-- **Evidence type:** Experimental; 21-site/42-qubit Fermi–Hubbard simulation on the `ibm_boston` processor, compared with the Bethe-ansatz scattering matrix.
-- **Caveat:** The measured number fluctuations show the component weights but do not directly establish coherence between the transmitted and reflected branches; the authors say a later interference measurement could test that coherence.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
-- **Themes:** Quantum information; Condensed matter & materials; Computational & data methods
-
-### 3. [A Comprehensive JWST Slitless Spectroscopic Census of ∼12,000 Emission-Line Galaxies at Redshift 0∼9 in COSMOS](https://arxiv.org/abs/2610.13920)
-- **Abstract:** Using JWST/NIRCam wide-field slitless spectroscopy across 0.33 square degrees, the authors assemble 12,275 emission-line galaxy spectra over redshifts 0–9, with line fluxes, redshifts, and derived properties.
-- **Authors:** Shuqi Fu, Zijian Zhang, Danyang Jiang, Jie Chen, Linhua Jiang, et al.
-- **arXiv:** `2610.13920v1` (published 2026-10-09 17:53:18 UTC; categories: `astro-ph.GA`)
-- **Evidence for ranking:** This is a large, reusable JWST spectroscopic catalogue with a stated 3σ line-flux limit and composite spectra spanning cosmic time; the authors say it is submitted to *ApJS*.
-- **Claimed result:** The authors report a homogeneous sample of 12,275 objects and composite spectra revealing faint hydrogen-recombination, CO-absorption, and Fe II features.
-- **Evidence type:** Observational; JWST/NIRCam COSMOS-3D F444W grism data over 3.9–5.1 μm, combined with multi-band imaging; reported typical 3σ line-flux limit is 3.2×10⁻¹⁸ erg s⁻¹ cm⁻².
-- **Caveat:** Slitless-source overlap and many single-line spectra create line-identification/redshift ambiguities; the paper says some contamination requires additional inspection.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
-- **Themes:** Astrophysics; Computational & data methods
-
-### 4. [Magnetic-field-induced detwinning of orientational domains in altermagnet α-MnTe: A single-crystal neutron diffraction study](https://arxiv.org/abs/2610.13444)
-- **Abstract:** Single-crystal neutron diffraction shows that an in-plane field near 2 T prepares α-MnTe in a nearly single-orientation magnetic-domain state, with a refined domain population of 0.97:0.03:0.
-- **Authors:** Feihao Pan, Yishui Zhou, Sabreen Hammouda, Yinghao Zhu, Soohyeon Shin, et al.
-- **arXiv:** `2610.13444v1` (published 2026-10-09 11:45:01 UTC; categories: `cond-mat.mtrl-sci`, `cond-mat.str-el`)
-- **Evidence for ranking:** The authors provide a quantitative neutron-diffraction refinement using 61 nuclear and magnetic reflections, a measured field scale, and a nearly complete domain-population estimate; the result addresses domain averaging in a candidate altermagnet.
-- **Claimed result:** The authors find field-induced selection of a common Néel-vector orientation in α-MnTe and report an ordered Mn moment of 4.62(8) μB at 2 K and 2 T.
-- **Evidence type:** Experimental; single-crystal neutron diffraction at 2 K and 2 T, with refinement of 61 reflections.
-- **Caveat:** Unpolarized diffraction cannot distinguish domain repopulation from continuous Néel-vector rotation or resolve time-reversal antiphase domains; the authors therefore call it a near-single-orientation, not a true single-domain, state.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
-- **Themes:** Condensed matter & materials
-
-### 5. [Nailing down the Hubble constant value through time delay cosmography: A 3% measurement from SN Refsdal](https://arxiv.org/abs/2610.12595)
-- **Abstract:** The authors infer H₀ = 65.0⁺²·⁰₋₁·⁸ km/s/Mpc from strongly lensed supernova Refsdal, reporting 3.0% precision after adding the host galaxy’s extended surface-brightness data to a cluster-lens model.
-- **Authors:** S. Schuldt, C. Grillo, S. H. Suyu, A. Acebron, L. Bazzanini, et al.
-- **arXiv:** `2610.12595v1` (published 2026-10-08 18:18:16 UTC; categories: `astro-ph.CO`)
-- **Evidence for ranking:** The work reports a quantitative 3% constraint from a single strongly lensed supernova, compares four mass-model realizations, and is submitted to *Astronomy & Astrophysics*; it adds an independent time-delay-cosmography approach to H₀ inference.
-- **Claimed result:** Within flat ΛCDM, the authors obtain H₀ = 65.0⁺²·⁰₋₁·⁸ km/s/Mpc and Ωm = 0.30⁺⁰·⁰⁸₋₀·⁰⁹, with the H₀ result agreeing with earlier lensed-supernova estimates.
-- **Evidence type:** Observational; SN Refsdal time delays and 77,000 HST host-galaxy pixels, interpreted through cluster-lens mass models.
-- **Caveat:** The cluster’s total-mass parameterization is deliberately held fixed to enable comparison with the earlier point-image model; the authors identify lens-mass and time-delay uncertainties as comparable remaining contributors.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
-- **Themes:** Cosmology & gravitation; Astrophysics
-
-### 6. [Determination of U-spin breaking parameters with an amplitude analysis of the decay D⁰→K⁰S,Lπ⁺π⁻](https://arxiv.org/abs/2610.13101)
-- **Abstract:** A BESIII simultaneous amplitude analysis of D⁰→K⁰Sπ⁺π⁻ and D⁰→K⁰Lπ⁺π⁻ measures complex U-spin-breaking parameters using 20.3 fb⁻¹ of e⁺e⁻ collision data at 3.773 GeV.
-- **Authors:** BESIII Collaboration: M. Ablikim, M. N. Achasov, P. Adlarson, X. C. Ai, C. S. Akondi, et al.
-- **arXiv:** `2610.13101v1` (published 2026-10-09 06:55:58 UTC; categories: `hep-ex`)
-- **Evidence for ranking:** A large BESIII collaboration and a 20.3 fb⁻¹ sample underpin a simultaneous analysis of both neutral-kaon final states; the authors describe the dataset as significantly larger than in earlier work.
-- **Claimed result:** The authors report fitted U-spin-breaking parameter magnitudes from 0.62 to 4.45 and provide resonant fit fractions plus model predictions for average strong-phase parameters.
-- **Evidence type:** Experimental; BESIII e⁺e⁻ data collected at √s = 3.773 GeV, analyzed with a simultaneous amplitude fit.
-- **Caveat:** The average strong-phase parameters are model predictions from the amplitude analysis; interpretation of resonance-specific quantities depends on that model.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
+### 1. [Observation of a Threshold Enhancement in the π⁰π⁰ Mass Spectrum in ψ(3686) → π⁰π⁰J/ψ Decays](https://arxiv.org/abs/2610.13097)
+- **Abstract:** BESIII reports a greater-than-10σ neutral-pion-channel confirmation of a near-threshold enhancement in ψ(3686) decays, with a fitted mass of 274.3 MeV/c² and width of 17.1 MeV.
+- **Authors:** BESIII Collaboration: M. Ablikim, M. N. Achasov, P. Adlarson, X. C. Ai, S. C. Akondi, et al.
+- **arXiv:** `2610.13097v1` (published Not available from the sources checked; submitted 2026-10-09; categories: `hep-ex`)
+- **Evidence for ranking:** A large BESIII sample of 2.712 billion ψ(3686) events and a reported >10σ confirmation make this the clearest direct experimental result in the batch; this is a scientific-evidence signal, not a popularity measure.
+- **Claimed result:** The authors find a neutral-channel threshold enhancement consistent in mass and width with the charged-pion-channel feature; their QCD multipole-expansion model describes the full spectrum better than the tested chiral-perturbation model.
+- **Evidence type:** Experimental; BESIII ψ(3686) data and fits including final-state interactions.
+- **Caveat:** The fit significance establishes a spectral feature, not its underlying state or mechanism; the abstract reports model-dependent descriptions rather than a unique interpretation.
+- **Announcement type:** new submission, announcement-batch 2026-10-12.
 - **Themes:** Particle, nuclear & high-energy physics
 
-### 7. [Impact of ab initio E1 strength on neutron capture rates along the nickel isotopic chain](https://arxiv.org/abs/2610.13868)
-- **Abstract:** Ab initio electric-dipole strength calculations for nickel isotopes predict enhanced neutron-capture rates relevant to r-process simulations, with the size of the enhancement varying across isotopes and temperature.
-- **Authors:** Francesca Bonaiti, Joanna E. Sobczyk
-- **arXiv:** `2610.13868v1` (published 2026-10-09 17:18:37 UTC; categories: `nucl-th`, `astro-ph.HE`, `nucl-ex`)
-- **Evidence for ranking:** The work connects nuclear theory, nuclear experiment, and high-energy astrophysics; it benchmarks against measured ⁵⁸Ni photoabsorption and ⁶⁸Ni E1 strength, and explicitly identifies the dominant transform-inversion uncertainty.
-- **Claimed result:** Authors report low-lying E1 strength above neutron threshold that grows with neutron number and raises calculated capture rates for ⁶⁸–⁷⁸Ni by factors whose effects increase with temperature and neutron number; for ⁸⁰Ni the enhancement begins near 0.5 GK.
-- **Evidence type:** Theoretical and computational; Lorentz-integral-transform coupled-cluster calculations with chiral two- and three-nucleon interactions, propagated into TALYS reaction-rate calculations.
-- **Caveat:** The uncertainty is dominated by inversion of the integral transform, and most neutron-rich isotopes considered are beyond experimental reach.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Astrophysics; Computational & data methods
+### 2. [Lattice Monte Carlo of λϕ⁴ on Euclidean de Sitter](https://arxiv.org/abs/2610.12547)
+- **Abstract:** The paper introduces a spherical-harmonic spectral-lattice Monte Carlo simulation of massless λϕ⁴ theory on Euclidean de Sitter space and reports weak-coupling agreement with stochastic equilibrium plus strong-coupling saturation.
+- **Authors:** Angelo Caravano
+- **arXiv:** `2610.12547v1` (published 2026-10-08 18:00:00 UTC; categories: `hep-th`, `gr-qc`, `hep-lat`)
+- **Evidence for ranking:** A claimed first Monte Carlo treatment of quantum field theory on Euclidean de Sitter, cross-listed across theory, gravity and lattice physics, with data and code linked from the record.
+- **Claimed result:** The author reports nonperturbative support for stochastic resummation of light-scalar infrared effects in de Sitter and finds the renormalized quartic coupling saturates near the one-loop RG-flow ceiling at strong bare coupling.
+- **Evidence type:** Computational; spectral lattice on S⁴, with Monte Carlo time series and code advertised by the author.
+- **Caveat:** The abstract describes a massless λϕ⁴ setup and finite-cutoff method; the result does not by itself establish behavior for other fields or quantum-gravity theories.
+- **Announcement type:** new submission, announcement-batch 2026-10-12.
+- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics; Computational & data methods
 
-### 8. [Evidence of Taste-Symmetry restoration for Kähler-Dirac fermions on Euclidean Dynamical Triangulations](https://arxiv.org/abs/2610.13791)
-- **Abstract:** In quenched Euclidean Dynamical Triangulations, the authors find that Kähler–Dirac fermion mass splittings appear to shrink with lattice spacing, suggesting restoration of the relevant taste symmetry toward the continuum limit.
-- **Authors:** Mingwei Dai, Walter Freeman, Mason Grieb, Jack Laiho, Marc Schiffer, Judah Unmuth-Yockey
-- **arXiv:** `2610.13791v1` (published 2026-10-09 16:05:04 UTC; categories: `hep-lat`, `hep-th`)
-- **Evidence for ranking:** The paper is cross-listed between lattice and theoretical high-energy physics and tests a concrete continuum-limit property using fluctuating geometries; the authors compare the scale of symmetry breaking with the emergent de Sitter and Planck scales.
-- **Claimed result:** The authors find that unprotected bound-state mass splittings scale in a way that decreases as the lattice spacing is reduced, suggesting an analogy with staggered fermions in flat-space lattice theories.
-- **Evidence type:** Computational; two-particle bound-state spectra in quenched Euclidean Dynamical Triangulations.
-- **Caveat:** The quenched approximation omits matter back-reaction on geometry, and the continuum-restoration conclusion is an extrapolative interpretation of the observed lattice-spacing dependence.
-- **Announcement type:** new submission, 12 October 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Cosmology & gravitation; Computational & data methods
+### 3. [A Single Line-Emitter Identified in an Unbiased Search with JWST/NIRSpec: Multi-Object Coronagraphy for Slitless Spectroscopy](https://arxiv.org/abs/2610.12553)
+- **Abstract:** Using a new JWST/NIRSpec slitless-search configuration, the authors report a repeat-detected 1.60 μm emission line in the Hubble Ultra Deep Field with no known imaging counterpart and discuss possible AGN or transient origins.
+- **Authors:** Mason S. Huberty, Claudia Scarlata, Matthew J. Hayes, Alaina Henry, Danielle A. Berg, et al.
+- **arXiv:** `2610.12553v1` (published 2026-10-08 18:00:01 UTC; categories: `astro-ph.GA`)
+- **Evidence for ranking:** The authors report detection in four dither positions and two position angles, and the arXiv record says the paper is published in ApJ; this combines observational repeatability with a publication signal, not a popularity metric.
+- **Claimed result:** The measured line flux is (2.5 ± 0.3) × 10⁻¹⁸ erg s⁻¹ cm⁻² with FWHM 13.2 ± 2.0 Å; the inferred lower bound on observed-frame equivalent width is 7620 Å, making several common line identifications difficult.
+- **Evidence type:** Observational; JWST/NIRSpec G140M/F100LP spectroscopy in the Hubble Ultra Deep Field.
+- **Caveat:** It is a single-line object with no identified redshift or source class; AGN and transient explanations remain possibilities, not conclusions.
+- **Announcement type:** new submission, announcement-batch 2026-10-12.
+- **Themes:** Astrophysics; Instrumentation & detectors
+
+### 4. [Enhanced Coulomb pseudopotentials in high-pressure hydrides from first principles](https://arxiv.org/abs/2610.12563)
+- **Abstract:** First-principles calculations find substantially larger Coulomb pseudopotentials than the commonly assumed range in several superconducting hydrides, with a reported 40 K reduction in the estimated critical temperature for Mg₂IrH₆ relative to a standard parameter choice.
+- **Authors:** Kieran Bozier, Chris J. Pickard
+- **arXiv:** `2610.12563v1` (published 2026-10-08 18:00:11 UTC; categories: `cond-mat.supr-con`, `cond-mat.mtrl-sci`, `physics.comp-ph`)
+- **Evidence for ranking:** The calculations challenge a widely used input approximation in hydride Tc predictions, quantify a large example effect, and span multiple candidate materials and pressures.
+- **Claimed result:** At the random-phase-approximation level, the authors obtain μ*ME ≈ 0.39 for Mg₂IrH₆ and argue that accounting for energy-dependent density of states resolves a factor-of-two discrepancy between prior Tc estimates.
+- **Evidence type:** Computational/theoretical; first-principles screened Coulomb calculations using the Mantel code.
+- **Caveat:** These are model-based calculations; the inferred Tc shift depends on the screening approximation and material-specific electronic structure, and is not a new superconductivity measurement.
+- **Announcement type:** new submission, announcement-batch 2026-10-12.
+- **Themes:** Condensed matter & materials; Computational & data methods
+
+### 5. [A Burst of Reionization in the Dark Ages](https://arxiv.org/abs/2610.12552)
+- **Abstract:** A joint analysis of cosmological data finds a roughly 2–2.5σ preference for an early, temporary reionization contribution from small-scale primordial structure, and forecasts sensitivity for LiteBIRD and the Simons Observatory.
+- **Authors:** Neal Weiner, Soubhik Kumar, Wenzer Qin, Zilu Zhou, Yacine Ali-Haïmoud, Hector Afonso G. Cruz
+- **arXiv:** `2610.12552v1` (published 2026-10-08 18:00:01 UTC; categories: `astro-ph.CO`)
+- **Evidence for ranking:** The authors compare two Planck data reprocessings and report a similar preferred optical-depth contribution; the result connects early structure formation with upcoming CMB polarization tests. The modest significance keeps it below a detection claim.
+- **Claimed result:** The inferred burst contribution is Δτ ≈ 0.012, with a reported 95% interval of 0.001–0.022; different high-ℓ reprocessings favor different redshift eras, approximately z ≈ 45–165.
+- **Evidence type:** Observational-data analysis and forecast; cosmological data including Planck reprocessings, with future mission sensitivity projections.
+- **Caveat:** The preference is only about 2–2.5σ and the inferred epoch varies materially with the high-ℓ data processing; it is not evidence of a confirmed new reionization episode.
+- **Announcement type:** new submission, announcement-batch 2026-10-12.
+- **Themes:** Cosmology & gravitation; Astrophysics
+
+### 6. [Spinodal-controlled freeze-out and nucleation at the first-order superfluid-supersolid transition of a dipolar gas](https://arxiv.org/abs/2610.12511)
+- **Abstract:** Extended Gross–Pitaevskii simulations of dipolar ¹⁶⁴Dy predict delayed conversion across a first-order superfluid–supersolid transition, dynamical hysteresis and noise-dependent nucleation.
+- **Authors:** Wai Kui Wong
+- **arXiv:** `2610.12511v1` (published 2026-10-07 08:57:03 UTC; categories: `cond-mat.quant-gas`, `cond-mat.stat-mech`)
+- **Evidence for ranking:** The work supplies a quantitative fitted delay exponent, explores forward and reverse ramps plus thermal-noise scenarios, and is cross-listed in quantum gases and statistical mechanics.
+- **Claimed result:** For onsets during linear ramps, the simulated delay from the spinodal has exponent ζ = 0.36 ± 0.02; reverse ramps show a comparable delay, while thermal noise can trigger nucleation before the spinodal.
+- **Evidence type:** Computational; three-dimensional extended Gross–Pitaevskii equation with truncated-Wigner noise.
+- **Caveat:** Without a heat bath, effective nucleation rates depend on preparation; the authors explicitly treat a crossover time inferred from holds as an estimate, not a measured boundary for the ramp protocol.
+- **Announcement type:** new submission, announcement-batch 2026-10-12.
+- **Themes:** Condensed matter & materials; Quantum information
 
 ## Trending Research Themes
 
-- **Controlled quantum and magnetic responses:** The digital Hubbard collider changes transmission with interaction strength and infers number entanglement (2610.13946); α-MnTe’s field-prepared domain populations address domain averaging (2610.13444); doped tellurium’s magnetoresistance varies with Fermi level and field (2610.13084). These are separate systems, not independent replications of a shared result.
-- **Survey-scale astronomy and precision cosmology:** JWST/COSMOS-3D supplies a 12,275-object emission-line sample across z≈0–9 (2610.13920), while SN Refsdal’s surface-brightness lens reconstruction yields a 3% single-lens H₀ constraint (2610.12595). Both lean on richer image/spectral data to improve inference, but address different scales and systematics.
-- **Theory tied to observables:** The nickel-chain E1 calculation is benchmarked to stable/near-stable nickel data before extrapolating capture rates (2610.13868); the Kähler–Dirac study tracks lattice-spacing dependence in a gravity simulation (2610.13791). These are isolated examples in this small curated set, not evidence of a field-wide shift.
+- **Precision signatures versus interpretation:** BESIII’s neutral-channel confirmation reaches >10σ, while its underlying spectral mechanism remains model-dependent; the JWST line is repeatable but its source and redshift remain unidentified. These are different instruments and phenomena, not independent confirmations of one result.
+- **Computation as a route into inaccessible regimes:** the Euclidean-de-Sitter spectral lattice and the dipolar-gas dynamics both use simulation to expose non-equilibrium or curved-space behavior, but address distinct systems and use different approximations.
+- **Model inputs can dominate inferred physics:** the hydride study shows how Coulomb screening assumptions shift predicted Tc, while the reionization analysis finds modest evidence whose inferred epoch shifts with Planck high-ℓ processing.
 
 ## Open Problems and Research Directions
 
-- **Quantum-collider coherence (author-stated limitation):** Number fluctuations reveal the weights of transmitted and reflected components but do not directly confirm their coherence (2610.13946). An interferometric readout after the collision, at longer accessible evolution times, would test that interpretation.
-- **Magnetic-domain mechanism (author-stated limitation):** The neutron data do not separate domain repopulation from continuous Néel-vector rotation or resolve time-reversal domains (2610.13444). Polarized diffraction and field-angle/temperature-dependent measurements could distinguish these mechanisms.
-- **JWST line identification (author-stated limitation):** Overlapping traces and frequent single-line detections can leave source and redshift ambiguities (2610.13920). Independent redshift confirmation and quantified completeness/contamination tests would strengthen uses of the catalogue, especially at the highest redshifts.
-- **H₀ systematics (author-stated limitation):** The cluster total-mass parameterization remains fixed and lens-mass uncertainty is still important (2610.12595). Repeating the surface-brightness reconstruction across more flexible mass profiles and improving time-delay precision are direct follow-ups.
-- **Extrapolations beyond measured nuclei:** The neutron-capture predictions concern isotopes that are difficult or impossible to measure directly, with integral-transform inversion dominating uncertainty (2610.13868). Further benchmarks on accessible isotopes and independent rate-model sensitivity studies would test the reliability of the extrapolation.
+- **Identify the BESIII threshold structure:** determine whether a common amplitude-level explanation accounts for both charged- and neutral-pion channels, and test alternative final-state-interaction models against the measured spectrum. The current paper reports the feature and model comparison, not a unique microscopic identity. ([2610.13097](https://arxiv.org/abs/2610.13097))
+- **Classify the JWST emitter:** obtain follow-up spectroscopy over a wider wavelength range and deeper imaging to search for companion lines, variability or a host; these could distinguish the AGN and transient possibilities raised by the authors. ([2610.12553](https://arxiv.org/abs/2610.12553))
+- **Test de Sitter lattice systematics:** vary the spectral cutoff and coupling, and extend comparisons beyond massless λϕ⁴ to check which features survive continuum extrapolation and alternative observables. This is a proposed follow-up to the first simulation, not a reported result. ([2610.12547](https://arxiv.org/abs/2610.12547))
+- **Validate hydride screening predictions:** compare material-specific μ* estimates with more complete screening and electron–phonon calculations, then benchmark predicted Tc changes against measurements where suitable high-pressure phases can be characterized. ([2610.12563](https://arxiv.org/abs/2610.12563))
+- **Resolve the early-ionization preference:** test the burst scenario with independent CMB polarization data and consistent treatment of high-ℓ systematics; the mission forecasts in the paper provide possible future constraints. ([2610.12552](https://arxiv.org/abs/2610.12552))
+- **Constrain preparation dependence in supersolid nucleation:** compare ramp and hold protocols while varying initial temperature and noise, ideally against controlled experiments, to determine when the simulated spinodal delay and inferred rates are robust. ([2610.12511](https://arxiv.org/abs/2610.12511))
 
 ## Takeaway
 
-The batch is strongest where authors turn hard-to-access physics into controlled or reusable evidence: tunable transport, quasiparticle scattering on a processor, and a broad JWST spectroscopic catalogue. Several claims remain preprint-level or model-dependent, and even the sharpest numbers—especially the 3% H₀ precision and the extreme-field tellurium interpretation—need their stated systematics and assumptions kept in view.
+This batch is strongest where instruments or calculations produce testable quantitative signatures: a BESIII threshold enhancement, a candidate JWST line source, and revised superconducting input parameters. The cosmology and many-body results are promising but remain limited by modest statistical preference or simulation/model dependence.
 
 ## Method and sources
 
-- **Window:** daily; latest arXiv announcement batch dated Monday, 12 October 2026. Snapshot: 2026-10-13 00:22:35 UTC. The run was early on Tuesday UTC, so the report uses the latest available prior batch, not an October 13 batch.
-- **Coverage:** checked the current `recent` pages for all 11 configured physics archives: `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. The daily pages contained 493 archive-category appearances before cross-list deduplication; the report selects eight version-distinct papers. Each selected arXiv abstract page and metadata was checked.
-- **Ranking:** arXiv provides no official trending chart. Semantic Scholar Graph API returned 0 citations and 0 influential citations for each of the eight at the snapshot; these near-new papers therefore cannot be separated by meaningful citation momentum. The ordering emphasizes checkable cross-field relevance, concrete measurements/datasets, journal or submission status where stated, and explicit scientific results; it is a notable-paper selection, not a popularity ranking.
-- **Sources:** [arXiv Physics recent](https://arxiv.org/list/physics/recent), [Astrophysics recent](https://arxiv.org/list/astro-ph/recent), [Condensed Matter recent](https://arxiv.org/list/cond-mat/recent), [General Relativity recent](https://arxiv.org/list/gr-qc/recent), [HEP-Experiment recent](https://arxiv.org/list/hep-ex/recent), [HEP-Lattice recent](https://arxiv.org/list/hep-lat/recent), [HEP-Phenomenology recent](https://arxiv.org/list/hep-ph/recent), [HEP-Theory recent](https://arxiv.org/list/hep-th/recent), [Nuclear Experiment recent](https://arxiv.org/list/nucl-ex/recent), [Nuclear Theory recent](https://arxiv.org/list/nucl-th/recent), [Quantum Physics recent](https://arxiv.org/list/quant-ph/recent); selected canonical arXiv abstracts linked above; Semantic Scholar Graph API; [Communications Physics article record for the tellurium paper](https://www.nature.com/articles/s42005-026-02901-3).
+- **Window:** latest available daily announcement batch, 2026-10-12 (00:00–23:59 UTC); arXiv’s recent-listing pages displayed “Monday, 12 October 2026.” Snapshot: 2026-10-14 00:21:56 UTC. No newer batch was displayed at snapshot time.
+- **Coverage:** checked the arXiv new-listing pages for `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th` and `quant-ph`; selected one versionless record per paper and verified each retained paper on its abstract page. Abstracts and submission histories, rather than full-text methods/limitations, were used for this concise report; a full-text HTML inspection attempt did not complete.
+- **Ranking:** arXiv provides no official trending chart. This is an inferred shortlist ordered by concrete experimental/observational evidence, methodological reach, cross-field relevance, publication/data signals where available and recency—not downloads, reads or social popularity. The Semantic Scholar citation endpoint did not return usable citation metadata in this run, so no citation-momentum evidence is claimed. The shortlist should therefore be read as notable recent physics papers, not a measured popularity ranking.
+- **Sources:** [arXiv Physics new listings](https://arxiv.org/list/physics/new), [Astrophysics](https://arxiv.org/list/astro-ph/new), [Condensed Matter](https://arxiv.org/list/cond-mat/new), [General Relativity and Quantum Cosmology](https://arxiv.org/list/gr-qc/new), [HEP Experiment](https://arxiv.org/list/hep-ex/new), [HEP Lattice](https://arxiv.org/list/hep-lat/new), [HEP Phenomenology](https://arxiv.org/list/hep-ph/new), [HEP Theory](https://arxiv.org/list/hep-th/new), [Nuclear Experiment](https://arxiv.org/list/nucl-ex/new), [Nuclear Theory](https://arxiv.org/list/nucl-th/new), [Quantum Physics](https://arxiv.org/list/quant-ph/new), plus the six linked arXiv abstract records above.

@@ -1,0 +1,20 @@
+# Giant Watch Summary - Daily - 2026-10-14
+
+## Headline
+
+Anthropic petitioned the D.C. appeals court to rehear its Pentagon supply-chain-risk blacklisting challenge, the only concrete in-window event across the tracked organizations.
+
+## Top Developments
+
+### 1. Anthropic asks D.C. appeals court to rehear Pentagon blacklisting case (Anthropic)
+Anthropic petitioned the federal appeals court in Washington, D.C. to rehear its challenge to the Pentagon's supply-chain-risk designation, according to CNBC and Bloomberg coverage dated October 13, 2026.
+Why it matters: The petition escalates Anthropic's legal fight over a Pentagon security-risk designation, a dispute that could affect its standing as a government supplier.
+Refs: https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html, https://www.bloomberg.com/news/articles/2026-10-13/anthropic-asks-appeals-court-to-rehear-fight-over-security-risk
+
+## Takeaway
+
+Watch whether the D.C. appeals court grants the rehearing, which would signal how aggressively Anthropic intends to contest the Pentagon designation.
+
+## Sources and Method
+
+Web signal gathered via a fixed `web_search` query set (not the paid X API); DeepSeek was used only to synthesize the supplied snippets, not to recall live events from memory.

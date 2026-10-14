@@ -1,0 +1,365 @@
+{
+  "organizations": {
+    "Anthropic": [
+      {
+        "title": "In a New Anthropic Lab, A.I. Turns to Biology - The New York Times",
+        "description": "24, 2026Updated Sept. 25, 2026. Biologists at Anthropic announced on Wednesday that they had used artificial intelligence to identify genes in viruses that produce enzymes that work in a new way, the first discovery emanating from a research lab the company opened this spring.",
+        "url": "https://www.nytimes.com/2026/09/24/science/anthropic-biology-lab-enzyme.html",
+        "position": 1
+      },
+      {
+        "title": "Anthropic Sets Up First “Wet” Lab for Biological... - Alex Jones Live",
+        "description": "September 21st, 2026 8:24 AM. AI company Anthropic has established a laboratory for biological research as it seeks to branch out into the pharmaceutical industry.",
+        "url": "https://www.alexjoneslive.com/2026/09/21/anthropic-sets-up-first-wet-lab-for-biological-research/",
+        "position": 2
+      },
+      {
+        "title": "Anthropic Eyes $2T IPO Amid Call to Slow AI",
+        "description": "Anthropic is courting investors after a confidential June filing and has chosen Nasdaq, with a debut potentially as soon as next month. CEO Dario Amodei outlined a three-part plan to cool model progress \"without 'sacrificing commercial advantage or the United States' lead in AI.'\"",
+        "url": "https://www.briefs.co/news/anthropic-weighs-2-trillion-ipo-as-ceo-urges-three-step-ai-s/",
+        "position": 3
+      },
+      {
+        "title": "Anthropic, Musk Back Slower AI Development Call | Convly",
+        "description": "Home - AI News - Anthropic and Musk Back Slower AI Development Push.What Anthropic and Musk actually said about slower AI development. Why the timing of this call matters. How a slowdown could reshape API economics.",
+        "url": "https://convly.ai/anthropic-musk-slower-ai-development/",
+        "position": 4
+      },
+      {
+        "title": "AI News: Anthropic Went Crazy This Week! - YouTube",
+        "description": "Here's the AI News you probably missed this week!",
+        "url": "https://www.youtube.com/watch?v=OYyS0Gu5xj8",
+        "position": 5
+      },
+      {
+        "title": "Anthropic asks DC appeals court to rehear Pentagon blacklisting case",
+        "description": "1 day ago - Anthropic petitioned the federal appeals court in Washington, D.C. to rehear its challenge to the Pentagon's supply-chain-risk designation, according to CNBC coverage dated October 13, 2026.",
+        "url": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html",
+        "position": 6
+      },
+      {
+        "title": "Anthropic asks appeals court to rehear fight over security risk",
+        "description": "1 day ago - Bloomberg separately reported October 13, 2026 that Anthropic asked the appeals court to rehear its challenge to its security-risk designation.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-13/anthropic-asks-appeals-court-to-rehear-fight-over-security-risk",
+        "position": 7
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "Controversy erupts as OpenAI claims solution to Navier Stokes maths...",
+        "description": "OpenAI announced its proof to the Navier-Stokes problem on Tuesday morning, US time. The company said it used 10,000 AI agents, AI assistants that can go about tasks on their own, to complete the proof in about 88 hours.",
+        "url": "https://www.abc.net.au/news/2026-09-10/openai-navier-stokes-millennium-problem-claims/107132242",
+        "position": 1
+      },
+      {
+        "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower... | TechCrunch",
+        "description": "OpenAI is also emphasizing big improvements in efficiency and affordability — most notably, via a substantial price drop for API access. The 6 series models will be available at half the cost of the 5.6 series of Sol and Luna, a price drop that OpenAI attributes to improvements in caching...",
+        "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+        "position": 2
+      },
+      {
+        "title": "OpenAI Overtakes Anthropic on OpenRouter for the First Time, Price...",
+        "description": "OpenAI passed 50% of combined spend with Anthropic on OpenRouter for the first time since 2024, and list prices now match. What the data, FT run rate and IPOs say.",
+        "url": "https://pasqualepillitteri.it/en/news/21998/openai-overtakes-anthropic-openrouter-price-war-ipo",
+        "position": 3
+      },
+      {
+        "title": "OpenAI's Culture Problem Just Went Mainstream - DEV Community",
+        "description": "As of October 4, 2026, prediction markets price OpenAI's chance of holding the best AI model at the end of October at 1%. For year-end 2026, they sit at 6%. The October market has $1.17 million in liquidity and $120K in 24-hour volume.",
+        "url": "https://dev.to/max_quimby/openais-culture-problem-just-went-mainstream-2poc",
+        "position": 4
+      },
+      {
+        "title": "Those OpenAI Math Results - Daily Nous",
+        "description": "Those OpenAI Math Results. Justin Weinberg. October 7, 2026.One AI engineer on x.com put it this way: “Reasoning models are two years-old. In that time they went from incapable of basic arithmetic to solving problems humans couldn’t solve for decades.”",
+        "url": "https://dailynous.com/2026/10/07/those-openai-math-results/",
+        "position": 5
+      }
+    ],
+    "Google": [
+      {
+        "title": "deepmind gemini: Latest News & Videos, Photos about deepmind...",
+        "description": "Business News › deepmind gemini. SEARCHED FOREverything Google announced at The Android Show: Googlebook, Android 17 new features, Gemini AI and more. Google is making Android an intelligence system powered by Gemini.",
+        "url": "https://economictimes.indiatimes.com/topic/deepmind-gemini",
+        "position": 1
+      },
+      {
+        "title": "News — Google DeepMind",
+        "description": "About Google DeepMind. Responsibility. Ensuring AI safety through proactive security, even against evolving threats. News. Discover our latest AI breakthroughs, projects, and updates.",
+        "url": "https://deepmind.google/blog/",
+        "position": 2
+      },
+      {
+        "title": "Google Quietly Ruined Free Gemini - YouTube",
+        "description": "Google took away your Gemini model choice on October 9, 2026: if you don't pay for a Google AI plan, you now get Auto, which sends most prompts to Flash-Lite, and you can no longer pick Flash or Pro.",
+        "url": "https://www.youtube.com/watch?v=OgOFi-rS4HY",
+        "position": 3
+      },
+      {
+        "title": "Introducing Gemini 4 Argon",
+        "description": "SVP, Google DeepMind and Chief AI Architect, Google.Google’s new Gemini 4 Argon model brings advanced reasoning to complex, long-horizon professional tasks. The model features an industry-leading 1 million token limit for deep, multi-step problem solving.",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "position": 4
+      },
+      {
+        "title": "Google AI & Gemini News: Models, Features, Access",
+        "description": "Google's AI strategy moves fast, and Gemini sits at the center of it. Here you will find news on new Gemini models, changes to free and paid access, Google DeepMind research and how Gemini is built into Search, Workspace and Android.",
+        "url": "https://www.nowadais.com/category/google-gemini-ai-deepmind/",
+        "position": 5
+      }
+    ],
+    "Meta": [
+      {
+        "title": "Meta Llama 4: Open Source AI Guide & Benchmarks (2026)",
+        "description": "Sep 14, 2025 · Home Blog AI News Meta Llama 4: Open Source AI Gets a Major Upgrade (2026) AI News Intermediate Sep 14, 2025 19 min read Updated Oct 2, 2026",
+        "url": "https://aiagentskit.com/blog/meta-llama-4/",
+        "position": 1
+      },
+      {
+        "title": "AI News Today: Wednesday, October 14, 2026 — AIBriefs",
+        "description": "27 minutes ago · AI briefing for Wednesday, October 14, 2026: Meta launches Muse Wonder and Muse Wonder Full frontier models · Google announces Gemini 4 Argon frontier model · OpenAI releases 722 math manuscripts from internal frontier…",
+        "url": "https://aibriefs.news/ai-news-today",
+        "position": 2
+      },
+      {
+        "title": "AI Lab Model Releases & Frontier Company News: Live Tracker ...",
+        "description": "Jul 2, 2026 · This page aggregates model release announcements from OpenAI, Anthropic, Google DeepMind, Meta AI, Mistral, and xAI into a single timestamped feed — updated within hours of each official announcement, with direct links to primary sources and a comparison of what changed versus prior releases.",
+        "url": "https://news.tunx.ai/ai-lab-model-releases-frontier-company-news-live-tracker-2026/",
+        "position": 3
+      },
+      {
+        "title": "Meta AI Updates by Meta - September 2026 - Releasebot",
+        "description": "Sep 3, 2026 · Browse a full list of updates made to Meta AI by Meta. Follow to get all release notes by email, RSS, and more.",
+        "url": "https://releasebot.io/updates/meta/meta-ai",
+        "position": 4
+      },
+      {
+        "title": "Meta Llama 4: The Complete Open-Source AI Model Guide 2026",
+        "description": "Jun 27, 2026 · Complete guide to Meta Llama 4 in 2026: model family explained, Mixture of Experts architecture, running locally with Ollama, fine-tuning with LoRA, benchmarks vs GPT and Claude, and when open weights win.",
+        "url": "https://explainx.ai/blog/meta-llama-4-open-source-models-guide-2026",
+        "position": 5
+      }
+    ],
+    "DeepSeek": [
+      {
+        "title": "DeepSeek",
+        "description": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more.",
+        "url": "https://chat.deepseek.com/",
+        "position": 1
+      },
+      {
+        "title": "DeepSeek V4.1 Flash - API Pricing & Benchmarks | OpenRouter",
+        "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. $0.02 per million input tokens, $0.60 per million output tokens.",
+        "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+        "position": 2
+      },
+      {
+        "title": "DeepSeek Cuts US AI Benchmark Lead to About 3%",
+        "description": "In the October 4 snapshot, DeepSeek scored 77.3 on agentic coding, compared with 66.1 for Claude Fable 5.1 Max Effort. The US still holds the lead in this comparison. These benchmark results do not establish national AI leadership or show whether US chip export restrictions are effective.",
+        "url": "https://www.implicator.ai/deepseek-us-ai-benchmark-gap-3-percent/",
+        "position": 3
+      },
+      {
+        "title": "DeepSeek – Telegram",
+        "description": "@DeepSeek_ai. 1.44K subscribers. 52 photos. We’re phasing out V4-Pro. Starting at 04:00 UTC on Sept 14, 2026, all deepseek-v4-pro requests will route to V4.1-Flash at V4.1-Flash rates.",
+        "url": "https://t.me/s/DeepSeek_ai",
+        "position": 4
+      },
+      {
+        "title": "Using DeepSeek? Here's why your privacy is at stake | Proton | Proton",
+        "description": "Remain secretive about state-mandated data sharing. DeepSeek has no choice but to comply with government demands, whether that means turning over private user data or adjusting its AI outputs to match state-approved narratives(new window). DeepSeek is already censoring information.",
+        "url": "https://proton.me/blog/deepseek",
+        "position": 5
+      }
+    ],
+    "Qwen": [
+      {
+        "title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an... - MarkTechPost",
+        "description": "Alibaba’s Qwen team has released Qwen-Image-2.1-Turbo , an accelerated checkpoint of its open-weight Qwen-Image-2.1 model. It generates and edits images in 8 denoising steps instead of the base model’s 40-step default .",
+        "url": "https://www.marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model/",
+        "position": 1
+      },
+      {
+        "title": "Alibaba releases Qwen3 with thinking and... | Chat Overview",
+        "description": "Alibaba's Qwen team released Qwen3 with two operating modes: longer reasoning for complex questions and faster responses for simpler tasks. The launch included six dense models and two mixture-of-experts models, making the family available at several hardware scales.",
+        "url": "https://www.chatoverview.com/news/alibaba-qwen3-release/",
+        "position": 2
+      },
+      {
+        "title": "Qwen 3.8 Max: What Alibaba's 2.4T Open-Weight... - DEV Community",
+        "description": "Qwen 3.8 Max is Alibaba's 2.4-trillion-parameter open-weight flagship that claims to trail only Claude Fable 5. Here is what is verified, what it cost. Tagged with qwen38, alibaba, openweightmodels, aiagents.",
+        "url": "https://dev.to/shaam_ai/qwen-38-max-what-alibabas-24t-open-weight-model-actually-delivers-2026-5do1",
+        "position": 3
+      },
+      {
+        "title": "Alibaba Unveils New Qwen3 Models for... - Alibaba Cloud Community",
+        "description": "Alibaba unveiled its latest Qwen3 models, including Qwen3-Coder, Qwen3-235B, and Qwen-MT, advancing open-source AI capabilities in coding, complex reasoning, and machine translation.",
+        "url": "https://www.alibabacloud.com/blog/alibaba-unveils-new-qwen3-models-for-coding-complexing-reasoning-and-machine-translation_602415",
+        "position": 4
+      },
+      {
+        "title": "Reflection AI Beam: Open Model Takes on GLM-5.2 [2026]",
+        "description": "What Reflection AI Announced on October 5. Who Else Is Covering the Launch.What Reflection AI Announced on October 5. According to the announcement, Beam is an open-weight model built for business customers and developers, with a specific focus on coding and AI-agent tasks.",
+        "url": "https://shattered.io/reflection-ai-beam-vs-glm-5-2-2026/",
+        "position": 5
+      }
+    ],
+    "GLM": [
+      {
+        "title": "Z.ai - Wikipedia",
+        "description": "Z.AI Co., Ltd., branded internationally as Z.ai, is a Chinese artificial intelligence company; their flagship product is the GLM family of open weights large language models.",
+        "url": "https://en.wikipedia.org/wiki/Z.ai",
+        "position": 1
+      },
+      {
+        "title": "Zhipu Raises $5 Billion as China's AI Funding Race Widens",
+        "description": "Sep 14, 2026 · Chinese AI firm Zhipu raised about $5 billion, two months after a $4 billion share sale, as Alibaba, Tencent and ByteDance also tap outside capital.",
+        "url": "https://en.sedaily.com/international/2026/09/14/zhipu-raises-5-billion-as-chinas-ai-funding-race-widens",
+        "position": 2
+      },
+      {
+        "title": "Zhipu Teases GLM-6.0 in a Financial Filing, Revealing a Fully ...",
+        "description": "Sep 14, 2026 · Zhipu has slipped the first details of its next flagship, GLM-6.0, into a financial filing rather than a technical blog or paper, according to QbitAI. The filing points to a fully self-trained approach, while the model itself and its accompanying paper have yet to be released. PublishedSep 14, 2026, 08:30 Beijing time",
+        "url": "https://zglg.work/en/ai/news/2026-09-14-zhipu-teases-glm-6-0-in-a-financial-filing-revealing-a-fully-self-trained-app",
+        "position": 3
+      },
+      {
+        "title": "China’s GLM Maker Z.ai Raises $5 Billion to Fund AI Expansion",
+        "description": "Sep 14, 2026 · Chinese AI developer Z.ai, also known as Zhipu, has raised around $5 billion through a combination of new shares and convertible bonds as it expands",
+        "url": "https://propakistani.pk/2026/09/14/chinas-glm-maker-z-ai-raises-5-billion-to-fund-ai-expansion/",
+        "position": 4
+      },
+      {
+        "title": "Z.ai News and Press Releases | PR Newswire",
+        "description": "Dec 27, 2025 · Z.ai (formerly Zhipu) announces the open-sourcing of its 32B and 9B GLM model series, including base, reasoning, and rumination models, all under the ...",
+        "url": "https://www.prnewswire.com/news/z.ai/",
+        "position": 5
+      }
+    ],
+    "Kimi": [],
+    "xAI": [
+      {
+        "title": "SpaceXAI - Wikipedia",
+        "description": "In July 2026, xAI was rebranded as SpaceXAI.[54]. On June 16, 2026, SpaceX exercised the option and announced an all-stock acquisition of Anysphere (Cursor) for $60 billion, with closing expected in the third quarter of 2026.[55][56] The transaction closed on August 14, 2026.",
+        "url": "https://en.wikipedia.org/wiki/XAI_(company)",
+        "position": 1
+      },
+      {
+        "title": "News: Research, Product & Company Updates | SpaceXAI",
+        "description": "SpaceXAI builds Grok, an AI chatbot with voice chat, image and video generation, real-time search, and advanced reasoning.",
+        "url": "https://x.ai/news",
+        "position": 2
+      },
+      {
+        "title": "Musk's xAI Launches Grok 3: Here's What You Need to Know - CNET",
+        "description": "In addition to Grok 3, the xAI team announced DeepSearch, described as the first generation of Grok 3 agents that allow users to ask questions and receive answers. It’s referred to in the livestream as a “next-generation search engine.”",
+        "url": "https://www.cnet.com/tech/services-and-software/musks-xai-launches-grok-3-heres-what-you-need-to-know/",
+        "position": 3
+      },
+      {
+        "title": "Elon Musk Announces Grok, a ‘Rebellious’ AI With Few... | WIRED",
+        "description": "The xAI announcement says that Grok is built on top of a language model called Grok-1 that has 33 billion parameters.",
+        "url": "https://www.wired.com/story/elon-musk-announces-grok-a-rebellious-ai-without-guardrails/",
+        "position": 4
+      },
+      {
+        "title": "SpaceXAI Timeline: Grok Release History and Product Milestones",
+        "description": "Check the Grok timeline from 2023 to 2026, with SpaceXAI and xAI milestones for models, APIs, vision, voice, coding, and platform access.",
+        "url": "https://www.scriptbyai.com/spacexai-timeline-grok/",
+        "position": 5
+      }
+    ]
+  },
+  "cross_cutting": [
+    {
+      "title": "Weekly AI Dev News Digest: August 8 - 14, 2026 - AI... | EveryDev.ai",
+      "description": "August 14, 2026. Anthropic put a classifier in charge of approving what Claude Code does on a developer's machine.The policy follows the EU AI Act's Article 50 transparency code but applies worldwide. Anthropic is explicit that a detected mark is a signal, not proof of authorship.",
+      "url": "https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-august-8-14-2026",
+      "position": 1
+    },
+    {
+      "title": "Startup news and updates: Daily roundup (April 14, 2026) | YourStory",
+      "description": "PayU has launched an AI-powered outbound voice assistant to streamline merchant onboarding. The tool engages merchants in English and Hindi, guiding them through KYC and onboarding steps while capturing key business information.",
+      "url": "https://yourstory.com/2026/04/startup-news-and-updates-daily-roundup-april-14-2026",
+      "position": 2
+    },
+    {
+      "title": "Pruna AI - Performance Models",
+      "description": "Pruna API Models. Launch new fast models instantly. Access our performance models through simple APIs. No setup, no fine-tuning. Models are production-ready from the first call.",
+      "url": "https://www.pruna.ai/",
+      "position": 3
+    },
+    {
+      "title": "FreshCo Flyer (ON) October 8 - October 14, 2026",
+      "description": "Browse the Weekly Freshco Flyer Prices (Ontario area), valid October 8 – October 14, 2026.The company is a conveniently priced grocery retailer that offers a good variety of merchandise items including ethnic foods.",
+      "url": "https://www.flyerca.com/freshco-deals/",
+      "position": 4
+    },
+    {
+      "title": "Newsroom \\ Anthropic",
+      "description": "AnnouncementsSep 10, 2026. Detecting and countering misuse of AI: September 2026. Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity.",
+      "url": "https://www.anthropic.com/news",
+      "position": 5
+    },
+    {
+      "title": "AI Lawsuits: 154 Cases Against AI Companies, Tracked Live…",
+      "description": "Aug 28, 2026 · A searchable database of 154 AI lawsuits against AI companies, 152 in United States courts and 2 abroad: copyright, privacy, hiring and safety cases,…",
+      "url": "https://theworldofai.org/ai-lawsuits/",
+      "position": 1
+    },
+    {
+      "title": "AI Lawsuit Tracker: 248 Cases, 76 Companies (Oct 2026 ...",
+      "description": "3 days ago · A public database now counts 248 lawsuits against 76 AI companies across 14 jurisdictions. The AI Lawsuit Tracker, described on its page as an editorial database of AI-related lawsuits, rulings and settlements \"built from public court records,\" was last updated on October 8, 2026 and surfaced on Hacker News on October 11.",
+      "url": "https://www.explainx.ai/blog/ai-lawsuit-tracker-248-cases-76-companies-copyright-ross-third-circuit-2026",
+      "position": 2
+    },
+    {
+      "title": "AI Lawsuits Database (2026) — Filterable Tracker",
+      "description": "Sep 28, 2026 · A filterable database of AI lawsuits we track — 248 cases across copyright, privacy, biometric, and product-liability claims. Verified weekly from public court records.",
+      "url": "https://ailawsuittracker.com/cases/",
+      "position": 3
+    },
+    {
+      "title": "AI Lawsuit Tracker: 248 AI Lawsuits, Status & Rulings",
+      "description": "2 days ago · Last reviewed October 12, 2026 against the court record Every lawsuit against an AI company, and where it stands Status, court, judge and sources for each of 248 cases against 76 companies in 14 jurisdictions, checked against the court record.",
+      "url": "https://ailawsuittracker.com/",
+      "position": 4
+    },
+    {
+      "title": "AI Regulation News October 2026: EU August Reckoning & US ...",
+      "description": "Oct 1, 2026 · In-depth analysis of global AI regulation shifts in October 2026. Covers EU AI Act GPAI enforcement, US federal preemption fight, technical audits, and 15 country policies.",
+      "url": "https://cubbbix.com/blog/ai-regulation-october-2026-global-update/",
+      "position": 5
+    },
+    {
+      "title": "DeepSeek - Wikipedia",
+      "description": "Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd., doing business as DeepSeek, is a Chinese artificial intelligence company that develops open weights large language models.",
+      "url": "https://en.wikipedia.org/wiki/DeepSeek",
+      "position": 1
+    },
+    {
+      "title": "A.I.: Artificial Intelligence (2001) - Dinner Malfunction - YouTube",
+      "description": "A.I.: Artificial Intelligence - Dinner Malfunction: Martin (Jake Thomas) and David's (Haley Joel Osment) rivalry gets out of hand during dinner.BUY THE MOVIE...",
+      "url": "https://www.youtube.com/watch?v=ofzIdn6PeSc",
+      "position": 2
+    },
+    {
+      "title": "SenSys 2026",
+      "description": "May 11-14, 2026 Saint-Malo, France. Co-located with CPS-IoT Week 2026. We are excited to announce the inaugural edition of the International Conference on Embedded Artificial Intelligence and Sensing Systems (SenSys).",
+      "url": "https://sensys.acm.org/2026/",
+      "position": 3
+    },
+    {
+      "title": "In-Depth Artificial Intelligence in Food and Beverage Market Analysis...",
+      "description": "Current Market Conditions & Trends: The Artificial Intelligence in Food and Beverage Market is experiencing robust expansion, driven by urgent needs for supply chain optimization, predictive maintenance, and food safety compliance.",
+      "url": "https://www.linkedin.com/pulse/in-depth-artificial-intelligence-food-beverage-market-analysis-0lf3e",
+      "position": 4
+    },
+    {
+      "title": "What Is Artificial Intelligence (AI)? | IBM",
+      "description": "Artificial intelligence (AI) is technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision-making, creativity and autonomy.",
+      "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+      "position": 5
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-10-16",
+  "title": "GitHub Trending Summary - Weekly - 2026-10-16",
+  "source_report": "/home/yizhuan/.research/github/weekly/github-trending-summary-weekly-2026-10-16.md",
+  "entry_count": 11,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-10-16 01:35 UTC",
+  "date_range": {
+    "start": "2026-10-09",
+    "end": "2026-10-16"
+  },
+  "ranking_basis": "GitHub Trending weekly star gains, sorted descending by displayed gain",
+  "ranking_explanation": "The GitHub weekly Trending page supplied reported gains; entries are ordered from largest to smallest displayed weekly gain.",
+  "global_caveat": "GitHub REST was used to corroborate repository identity, current total stars, and default-branch commit. It does not validate weekly historical gains or star provenance. REA’s reported +239,477 weekly gain is exceptionally large and remains unverified independently.",
+  "themes": [
+    {
+      "id": "agent-skills-and-workflows",
+      "name": "Agent skills, plugins and workflow packaging",
+      "supporting_repository_ids": [
+        "repo-skills",
+        "repo-plugins",
+        "repo-swiftui-agent-skill"
+      ]
+    },
+    {
+      "id": "agent-creative-tools",
+      "name": "Agents producing visual, video and CAD artifacts",
+      "supporting_repository_ids": [
+        "repo-diagram-design",
+        "repo-hyperframes",
+        "repo-text-to-cad"
+      ]
+    },
+    {
+      "id": "agent-reverse-engineering",
+      "name": "Reverse engineering and systems interoperability",
+      "supporting_repository_ids": [
+        "repo-rea",
+        "repo-ghidra"
+      ]
+    },
+    {
+      "id": "agent-context-management",
+      "name": "Long-context agent infrastructure",
+      "supporting_repository_ids": [
+        "repo-billion-context"
+      ]
+    },
+    {
+      "id": "self-hosted-personal-software",
+      "name": "Self-hosted personal software",
+      "supporting_repository_ids": [
+        "repo-opengym"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent-oriented repositories dominate this week: REA leads GitHub Trending by a very large reported margin, while skills/plugins and agent-assisted creative tooling recur across the rest of the list. The weekly gain shown for REA is unusually high and should be read as a platform-reported signal, not independently verified organic growth."
+    },
+    {
+      "id": "repo-rea",
+      "kind": "repo",
+      "title": "morluto/rea",
+      "rank": 1,
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer apps, binaries and runtime behavior with an agent-connected MCP toolkit.",
+      "language": "TypeScript",
+      "stars_gained": 239477,
+      "total_stars": 271201,
+      "default_branch_commit": "1bd5c5c87e81b27bfb16140f71ffa03563e58477",
+      "why_notable": "GitHub Trending reported +239,477 stars for the weekly window; this repository represents agent reverse engineering.",
+      "theme_ids": [
+        "agent-reverse-engineering"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "REA (R-E-A)",
+      "unique_caveat": "The listed weekly star surge is exceptional; weekly gain is GitHub Trending’s figure, not independently validated.",
+      "enrichment": null,
+      "refs": [
+        "morluto/rea"
+      ]
+    },
+    {
+      "id": "repo-anyps5",
+      "kind": "repo",
+      "title": "boykopovar/AnyPS5",
+      "rank": 2,
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Ports PS5 executables to Linux and Windows using a relinker and system-library implementations, rather than emulation.",
+      "language": "C++",
+      "stars_gained": 25174,
+      "total_stars": 38719,
+      "default_branch_commit": "5d9dcc42d2ec5401aebd089028b8d4d7410a77b4",
+      "why_notable": "GitHub Trending reported +25,174 stars for the weekly window; this repository represents systems and compatibility.",
+      "theme_ids": [
+        "systems-and-compatibility"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Any PS5",
+      "unique_caveat": "Users remain responsible for lawful acquisition and use of any game binaries.",
+      "enrichment": null,
+      "refs": [
+        "boykopovar/AnyPS5"
+      ]
+    },
+    {
+      "id": "repo-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 3,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "A collection of small, composable engineering workflows and agent skills designed to work across models.",
+      "language": "Shell",
+      "stars_gained": 12147,
+      "total_stars": 292904,
+      "default_branch_commit": "49dd158d1076134a641b33efb035946536778336",
+      "why_notable": "GitHub Trending reported +12,147 stars for the weekly window; this repository represents agent skills and workflows.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Matt Pocock Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "repo-diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 4,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "An agent skill for producing branded, self-contained HTML/SVG diagrams across 45 diagram types.",
+      "language": "HTML",
+      "stars_gained": 10237,
+      "total_stars": 55941,
+      "default_branch_commit": "300f02264aaa449628938ef5cf634edbd79e588c",
+      "why_notable": "GitHub Trending reported +10,237 stars for the weekly window; this repository represents agent creative tools.",
+      "theme_ids": [
+        "agent-creative-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Diagram Design",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ]
+    },
+    {
+      "id": "repo-ghidra",
+      "kind": "repo",
+      "title": "NationalSecurityAgency/ghidra",
+      "rank": 5,
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "An extensible software reverse-engineering suite with disassembly, decompilation, graphing and scripting.",
+      "language": "Java",
+      "stars_gained": 6614,
+      "total_stars": 88800,
+      "default_branch_commit": "61f664ff30d9bd7d5501956751d46553728c5f6b",
+      "why_notable": "GitHub Trending reported +6,614 stars for the weekly window; this repository represents agent reverse engineering.",
+      "theme_ids": [
+        "agent-reverse-engineering"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Ghidra",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "NationalSecurityAgency/ghidra"
+      ]
+    },
+    {
+      "id": "repo-hyperframes",
+      "kind": "repo",
+      "title": "heygen-com/hyperframes",
+      "rank": 6,
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Turns HTML, CSS, media and seekable animations into deterministic MP4 video, with agent workflows.",
+      "language": "TypeScript",
+      "stars_gained": 5318,
+      "total_stars": 64586,
+      "default_branch_commit": "8e17ee9300f0142d7c01f5a670c5ed3950ceed1e",
+      "why_notable": "GitHub Trending reported +5,318 stars for the weekly window; this repository represents agent creative tools.",
+      "theme_ids": [
+        "agent-creative-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "HyperFrames",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "heygen-com/hyperframes"
+      ]
+    },
+    {
+      "id": "repo-opengym",
+      "kind": "repo",
+      "title": "DuarteSantos8/openGym",
+      "rank": 7,
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "description": "A self-hosted workout tracker for routines, training logs, muscle fatigue and imports from other trackers.",
+      "language": "JavaScript",
+      "stars_gained": 4471,
+      "total_stars": 12371,
+      "default_branch_commit": "e348fc17c42c7e9a211c5972e573ad3698190ee2",
+      "why_notable": "GitHub Trending reported +4,471 stars for the weekly window; this repository represents self hosted personal software.",
+      "theme_ids": [
+        "self-hosted-personal-software"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "brief",
+      "narration_priority": 7,
+      "spoken_name": "openGym",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "DuarteSantos8/openGym"
+      ]
+    },
+    {
+      "id": "repo-text-to-cad",
+      "kind": "repo",
+      "title": "earthtojake/text-to-cad",
+      "rank": 8,
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "Agent workflows for generating 3D CAD files and running manufacturing checks, with local execution.",
+      "language": "Python",
+      "stars_gained": 2244,
+      "total_stars": 20719,
+      "default_branch_commit": "24573128ceaab564f497d7c12f995c41784c9539",
+      "why_notable": "GitHub Trending reported +2,244 stars for the weekly window; this repository represents agent creative tools.",
+      "theme_ids": [
+        "agent-creative-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "Text to CAD",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "earthtojake/text-to-cad"
+      ]
+    },
+    {
+      "id": "repo-plugins",
+      "kind": "repo",
+      "title": "cursor/plugins",
+      "rank": 9,
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor’s plugin specification and official plugin collection.",
+      "language": "TypeScript",
+      "stars_gained": 1214,
+      "total_stars": 11651,
+      "default_branch_commit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+      "why_notable": "GitHub Trending reported +1,214 stars for the weekly window; this repository represents agent skills and workflows.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "brief",
+      "narration_priority": 9,
+      "spoken_name": "Cursor Plugins",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "cursor/plugins"
+      ]
+    },
+    {
+      "id": "repo-swiftui-agent-skill",
+      "kind": "repo",
+      "title": "twostraws/SwiftUI-Agent-Skill",
+      "rank": 10,
+      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+      "description": "SwiftUI-focused agent guidance for Claude Code, Codex and other AI tools.",
+      "language": "N/A - not available from GitHub",
+      "stars_gained": 900,
+      "total_stars": 6100,
+      "default_branch_commit": "f9800713b24580bc444931949aad4519128605e8",
+      "why_notable": "GitHub Trending reported +900 stars for the weekly window; this repository represents agent skills and workflows.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "brief",
+      "narration_priority": 10,
+      "spoken_name": "SwiftUI Agent Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "twostraws/SwiftUI-Agent-Skill"
+      ]
+    },
+    {
+      "id": "repo-billion-context",
+      "kind": "repo",
+      "title": "ranxianglei/billion-context",
+      "rank": 11,
+      "url": "https://github.com/ranxianglei/billion-context",
+      "description": "A context-compression plugin aiming to stretch smaller context windows across long-running agent sessions.",
+      "language": "TypeScript",
+      "stars_gained": 659,
+      "total_stars": 1389,
+      "default_branch_commit": "ce4d60b6002267550a6703cead6f4af08a950081",
+      "why_notable": "GitHub Trending reported +659 stars for the weekly window; this repository represents agent context management.",
+      "theme_ids": [
+        "agent-context-management"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "Billion Context",
+      "unique_caveat": "The advertised token savings and long-session capacity are project claims, not independently evaluated here.",
+      "enrichment": null,
+      "refs": [
+        "ranxianglei/billion-context"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "The list clusters around agent skills and plugins (mattpocock/skills, cursor/plugins, SwiftUI-Agent-Skill), agents that create diagrams, video and CAD (diagram-design, HyperFrames, text-to-cad), and reverse engineering or compatibility tooling (REA, Ghidra, AnyPS5). TypeScript leads among listed language-tagged repositories (4); C++, Shell, HTML, Java, JavaScript and Python each appear once, while SwiftUI-Agent-Skill has no primary language reported by GitHub."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The strongest signal is the shift from agents that only write code toward packaged workflows and tools that produce inspectable artifacts or analyze software. Creative generation, engineering skills and low-level analysis all show up together. Treat extreme weekly star-gain figures cautiously: GitHub’s view and current REST metadata corroborate the repositories and current star counts, but not the historical net additions or their provenance."
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=weekly",
+    "GitHub REST API: /repos/{owner}/{repo} and /repos/{owner}/{repo}/commits/{default_branch}"
+  ],
+  "comparison_basis": null
+}

@@ -1,0 +1,18 @@
+{
+  "organizations": {
+    "Anthropic": [
+      {"title":"Anthropic update on independent evaluators \\ Anthropic","description":"An update on independent evaluators. Oct 15, 2026.Preparing for the 2026 US midterms. Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.","url":"https://www.anthropic.com/news/an-update-on-independent-evaluators","position":1},
+      {"title":"An update on our election safeguards \\ Anthropic","description":"\"What does the current field of 2026 midterm candidates look like?\" Opus 4.7 and Sonnet 4.6 triggered web search on these types of questions 92% and 95% of the time, respectively. These results show us that users asking about the midterms are consistently routed to up-to-date information.","url":"https://www.anthropic.com/news/election-safeguards-update","position":3},
+      {"title":"Newsroom \\ Anthropic","description":"Sep 22, 2026 · News Date Category Title Oct 15, 2026 Announcements An update on independent evaluators Oct 14, 2026 Policy Preparing for the 2026 US midterms","url":"https://www.anthropic.com/news","position":3}
+    ],
+    "OpenAI": [],
+    "Google": [],
+    "Meta": [],
+    "DeepSeek": [],
+    "Qwen": [],
+    "GLM": [],
+    "Kimi": [],
+    "xAI": []
+  },
+  "cross_cutting": []
+}

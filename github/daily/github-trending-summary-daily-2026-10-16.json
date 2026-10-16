@@ -1,0 +1,397 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-16",
+  "title": "GitHub Trending Summary - Daily - 2026-10-16",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-16.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "ranking_basis": "daily GitHub Trending displayed stars gained",
+  "ranking_explanation": "The 12 repositories shown on the daily Trending page were sorted by the displayed \"stars today\" gain, descending.",
+  "global_caveat": "Trending gains and repository metadata are point-in-time values. GitHub Search API corroboration was incomplete (exact-name query did not match; retry rate-limited); repository details and commit SHAs came from GitHub REST endpoints.",
+  "snapshot_time_utc": "2026-10-16 00:29 UTC",
+  "date_range": {
+    "start": "2026-10-16",
+    "end": "2026-10-16"
+  },
+  "source_urls": [
+    "https://github.com/trending?since=daily"
+  ],
+  "themes": [
+    {
+      "id": "agent-workflows",
+      "name": "Agent workflow infrastructure",
+      "supporting_repository_ids": [
+        "morluto/rea",
+        "K-Dense-AI/scientific-agent-skills",
+        "affaan-m/ECC",
+        "mksglu/context-mode",
+        "obra/superpowers",
+        "JuliusBrussee/caveman",
+        "anthropics/claude-plugins-official",
+        "ruvnet/ruflo"
+      ]
+    },
+    {
+      "id": "reverse-engineering",
+      "name": "Reverse engineering and security tooling",
+      "supporting_repository_ids": [
+        "morluto/rea",
+        "NationalSecurityAgency/ghidra"
+      ]
+    },
+    {
+      "id": "local-ai-media",
+      "name": "Local AI media and inference",
+      "supporting_repository_ids": [
+        "debpalash/VoiceStudio",
+        "lightseekorg/tokenspeed"
+      ]
+    },
+    {
+      "id": "agent-data-retrieval",
+      "name": "Context-efficient data retrieval",
+      "supporting_repository_ids": [
+        "mksglu/context-mode",
+        "xerj-org/xerj",
+        "ruvnet/ruflo"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": ""
+    },
+    {
+      "id": "01-morluto-rea",
+      "kind": "repo",
+      "title": "morluto/rea",
+      "rank": 1,
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "content": "The largest daily star-gain signal; its README presents one MCP spanning application behavior, runtime, and binary reverse engineering.",
+      "language": "TypeScript",
+      "stars_gained": 32314,
+      "total_stars": 269798,
+      "default_branch_commit": "808339f0b1cf3837445f392b5d5f1f362d64a27d",
+      "why_notable": "The largest daily star-gain signal; its README presents one MCP spanning application behavior, runtime, and binary reverse engineering.",
+      "theme_ids": [
+        "agent-workflows",
+        "reverse-engineering"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "REA",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "morluto/rea"
+      ]
+    },
+    {
+      "id": "02-debpalash-voicestudio",
+      "kind": "repo",
+      "title": "debpalash/VoiceStudio",
+      "rank": 2,
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "content": "A large daily gain in local generative media; the README describes an on-device voice workflow with optional remote services.",
+      "language": "Python",
+      "stars_gained": 3024,
+      "total_stars": 69060,
+      "default_branch_commit": "8e0d0ce5cea5a22fbeab3f804e00d3ef871f615d",
+      "why_notable": "A large daily gain in local generative media; the README describes an on-device voice workflow with optional remote services.",
+      "theme_ids": [
+        "local-ai-media"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "VoiceStudio",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "debpalash/VoiceStudio"
+      ]
+    },
+    {
+      "id": "03-nationalsecurityagency-ghidra",
+      "kind": "repo",
+      "title": "NationalSecurityAgency/ghidra",
+      "rank": 3,
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "content": "A mature reverse-engineering framework drew a strong daily burst, illustrating renewed attention to binary analysis alongside AI agent tooling.",
+      "language": "Java",
+      "stars_gained": 1369,
+      "total_stars": 88736,
+      "default_branch_commit": "61f664ff30d9bd7d5501956751d46553728c5f6b",
+      "why_notable": "A mature reverse-engineering framework drew a strong daily burst, illustrating renewed attention to binary analysis alongside AI agent tooling.",
+      "theme_ids": [
+        "reverse-engineering"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Ghidra",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "NationalSecurityAgency/ghidra"
+      ]
+    },
+    {
+      "id": "04-k-dense-ai-scientific-agent-skills",
+      "kind": "repo",
+      "title": "K-Dense-AI/scientific-agent-skills",
+      "rank": 4,
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "content": "Brings agent skills into research workflows; its README advertises 177 skills and integrations with scientific data sources.",
+      "language": "Python",
+      "stars_gained": 1091,
+      "total_stars": 50455,
+      "default_branch_commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+      "why_notable": "Brings agent skills into research workflows; its README advertises 177 skills and integrations with scientific data sources.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Scientific Agent Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "K-Dense-AI/scientific-agent-skills"
+      ]
+    },
+    {
+      "id": "05-affaan-m-ecc",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 5,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "content": "A high-momentum agent harness focused on skills, memory, security, and development workflow optimization.",
+      "language": "JavaScript",
+      "stars_gained": 1013,
+      "total_stars": 280379,
+      "default_branch_commit": "76aaa77df6adc5b889e689007bf99b9a4f74af34",
+      "why_notable": "A high-momentum agent harness focused on skills, memory, security, and development workflow optimization.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "ECC",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "affaan-m/ECC"
+      ]
+    },
+    {
+      "id": "06-mksglu-context-mode",
+      "kind": "repo",
+      "title": "mksglu/context-mode",
+      "rank": 6,
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
+      "content": "Targets a practical coding-agent bottleneck: reducing tool-output/context load through MCP and hooks.",
+      "language": "TypeScript",
+      "stars_gained": 904,
+      "total_stars": 29793,
+      "default_branch_commit": "40813fe886798bad07c69a43d2ae00a52b4b934d",
+      "why_notable": "Targets a practical coding-agent bottleneck: reducing tool-output/context load through MCP and hooks.",
+      "theme_ids": [
+        "agent-workflows",
+        "agent-data-retrieval"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 6,
+      "spoken_name": "Context Mode",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mksglu/context-mode"
+      ]
+    },
+    {
+      "id": "07-xerj-org-xerj",
+      "kind": "repo",
+      "title": "xerj-org/xerj",
+      "rank": 7,
+      "url": "https://github.com/xerj-org/xerj",
+      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+      "content": "Pairs searchable indexing of code and documents with agent-oriented retrieval; notable as a Rust-based data/tooling counterpoint.",
+      "language": "Rust",
+      "stars_gained": 715,
+      "total_stars": 5631,
+      "default_branch_commit": "ae72eeb9453c5746de035864974959c070716f8a",
+      "why_notable": "Pairs searchable indexing of code and documents with agent-oriented retrieval; notable as a Rust-based data/tooling counterpoint.",
+      "theme_ids": [
+        "agent-data-retrieval"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "Xerj",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "xerj-org/xerj"
+      ]
+    },
+    {
+      "id": "08-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 8,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "content": "A prominent skills framework and software-development methodology, reinforcing demand for reusable agent workflows.",
+      "language": "Shell",
+      "stars_gained": 582,
+      "total_stars": 299886,
+      "default_branch_commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "why_notable": "A prominent skills framework and software-development methodology, reinforcing demand for reusable agent workflows.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "Superpowers",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "09-juliusbrussee-caveman",
+      "kind": "repo",
+      "title": "JuliusBrussee/caveman",
+      "rank": 9,
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "content": "A deliberately lightweight coding-agent skill/proxy centered on reducing token use.",
+      "language": "Go",
+      "stars_gained": 433,
+      "total_stars": 112531,
+      "default_branch_commit": "d262ab3882952a59312ff3537cd86d894523c5ab",
+      "why_notable": "A deliberately lightweight coding-agent skill/proxy centered on reducing token use.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "Caveman",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "JuliusBrussee/caveman"
+      ]
+    },
+    {
+      "id": "10-anthropics-claude-plugins-official",
+      "kind": "repo",
+      "title": "anthropics/claude-plugins-official",
+      "rank": 10,
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "content": "An official, Anthropic-managed plugin directory; signals growing distribution and standardization of coding-agent extensions.",
+      "language": "Python",
+      "stars_gained": 307,
+      "total_stars": 39080,
+      "default_branch_commit": "87bc24ab561c4876dff68bfaec4881dbc83f8250",
+      "why_notable": "An official, Anthropic-managed plugin directory; signals growing distribution and standardization of coding-agent extensions.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Claude Plugins Official",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "anthropics/claude-plugins-official"
+      ]
+    },
+    {
+      "id": "11-ruvnet-ruflo",
+      "kind": "repo",
+      "title": "ruvnet/ruflo",
+      "rank": 11,
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "content": "An agent harness emphasizing coordinated workflows, adaptive memory, and vector/RAG integrations.",
+      "language": "TypeScript",
+      "stars_gained": 147,
+      "total_stars": 75117,
+      "default_branch_commit": "1882006a02487590c8c66a7eec8d7504f6af33c3",
+      "why_notable": "An agent harness emphasizing coordinated workflows, adaptive memory, and vector/RAG integrations.",
+      "theme_ids": [
+        "agent-workflows",
+        "agent-data-retrieval"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "Ruflo",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "ruvnet/ruflo"
+      ]
+    },
+    {
+      "id": "12-lightseekorg-tokenspeed",
+      "kind": "repo",
+      "title": "lightseekorg/tokenspeed",
+      "rank": 12,
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+      "content": "A smaller but fresh signal in optimized LLM inference, distinct from the agent-framework cluster.",
+      "language": "Python",
+      "stars_gained": 30,
+      "total_stars": 2478,
+      "default_branch_commit": "4c4de244745ee60fe0f7d656e7eabc889c7c02d1",
+      "why_notable": "A smaller but fresh signal in optimized LLM inference, distinct from the agent-framework cluster.",
+      "theme_ids": [
+        "local-ai-media"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "TokenSpeed",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "lightseekorg/tokenspeed"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agent workflow infrastructure:** Eight entries cover skills, plugins, harnesses, context management, token-saving workflows, or agent-enabled reverse engineering: `morluto/rea`, `K-Dense-AI/scientific-agent-skills`, `affaan-m/ECC`, `mksglu/context-mode`, `obra/superpowers`, `JuliusBrussee/caveman`, `anthropics/claude-plugins-official`, `ruvnet/ruflo`.\n- **Reverse engineering and security tooling:** `morluto/rea` and `NationalSecurityAgency/ghidra` connect agent-assisted analysis with established software reverse engineering.\n- **Local AI media and inference:** `debpalash/VoiceStudio` emphasizes local voice/media workflows; `lightseekorg/tokenspeed` targets inference speed.\n- **Context-efficient retrieval:** `mksglu/context-mode` focuses on agent context/tool output, while `xerj-org/xerj` indexes code and documents for search and retrieval.\n- **Languages (12 listed repos):** Python (4), TypeScript (3), Go (1), Java (1), JavaScript (1), Rust (1), Shell (1)."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today’s list is less about a single model or framework and more about the tooling layer around agents: reusable skills, plugins, harnesses, context management, and research integrations. The simultaneous showing of local voice generation, inference optimization, data retrieval, and Ghidra suggests that the broader developer-tooling ecosystem—not just chat interfaces—is attracting attention."
+    }
+  ]
+}

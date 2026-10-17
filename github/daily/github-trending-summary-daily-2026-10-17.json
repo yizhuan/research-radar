@@ -1,0 +1,469 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-17",
+  "title": "GitHub Trending Summary - Daily - 2026-10-17",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-17.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-10-17 00:18 UTC",
+  "date_range": {
+    "start": "2026-10-17",
+    "end": "2026-10-17"
+  },
+  "ranking_basis": "Daily GitHub Trending stars-gained values",
+  "ranking_explanation": "Sorted the daily stars-gained figures displayed by GitHub Trending in descending order; retained Trending page order for ties.",
+  "global_caveat": "Early-UTC snapshot; daily gains and total stars are volatile. VoiceStudio total differed by two stars between Trending and REST API captures minutes apart.",
+  "themes": [
+    {
+      "id": "agent-extensions",
+      "title": "Agent extension ecosystems",
+      "supporting_repository_ids": [
+        "anthropics/claude-plugins-official",
+        "K-Dense-AI/scientific-agent-skills",
+        "cursor/plugins"
+      ],
+      "summary": "Official plugins and portable skill libraries are gaining attention, suggesting ecosystems are competing on reusable capabilities and distributions, not only model access."
+    },
+    {
+      "id": "agent-harnesses",
+      "title": "Harnesses, skills and orchestration",
+      "supporting_repository_ids": [
+        "affaan-m/ECC",
+        "obra/superpowers",
+        "ruvnet/ruflo"
+      ],
+      "summary": "Several high-star projects package memory, workflow discipline, skills and multi-agent coordination into reusable harness layers."
+    },
+    {
+      "id": "agent-data-infrastructure",
+      "title": "Agent context and retrieval infrastructure",
+      "supporting_repository_ids": [
+        "xerj-org/xerj",
+        "mksglu/context-mode"
+      ],
+      "summary": "A separate infrastructure thread focuses on making context cheaper and organizational data easier for agents to search."
+    },
+    {
+      "id": "local-creative-ai",
+      "title": "Local generative media",
+      "supporting_repository_ids": [
+        "debpalash/VoiceStudio"
+      ],
+      "summary": "VoiceStudio's daily spike highlights demand for locally run creative tools that combine generation, transcription and media workflows."
+    },
+    {
+      "id": "agent-native-tools",
+      "title": "Agent-native interfaces",
+      "supporting_repository_ids": [
+        "HKUDS/CLI-Anything"
+      ],
+      "summary": "CLI-Anything represents the push to expose existing desktop and creative software through agent-friendly command-line interfaces."
+    },
+    {
+      "id": "agent-workflows",
+      "title": "Personal workflow automation",
+      "supporting_repository_ids": [
+        "MadsLorentzen/ai-job-search"
+      ],
+      "summary": "The job-search project applies coding-agent workflows to a non-coding task with local execution and user-owned artifacts as its pitch."
+    },
+    {
+      "id": "developer-utilities",
+      "title": "Developer utilities outside the agent wave",
+      "supporting_repository_ids": [
+        "hmjz100/LinkSwift"
+      ],
+      "summary": "LinkSwift is a clear conventional utility outlier, showing the feed is not exclusively agent-focused."
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "The list is dominated by agent infrastructure: official plugins and skills, reusable harnesses, and tools that trim context or make software searchable. The largest displayed gain is VoiceStudio (+2,301), followed by Xerj (+1,648), a reminder that local media and agent-data infrastructure are also breaking through."
+    },
+    {
+      "id": "01-debpalash-voicestudio",
+      "kind": "repo",
+      "title": "debpalash/VoiceStudio",
+      "rank": 1,
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "Open-source voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation; positioned as a local alternative to hosted voice tools.",
+      "language": "Python",
+      "stars_gained": 2301,
+      "total_stars": 71166,
+      "default_branch_commit": "f47221a1f0af89df27c34747471daa30391a9487",
+      "why_notable": "Largest displayed daily gain; combines local voice generation with a broad media workflow, including API/MCP integrations.",
+      "theme_ids": [
+        "local-creative-ai"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "VoiceStudio",
+      "unique_caveat": "GitHub Trending showed 71,164 total stars while the REST repo endpoint returned 71,166; totals were captured minutes apart.",
+      "enrichment": null,
+      "refs": [
+        "debpalash/VoiceStudio"
+      ]
+    },
+    {
+      "id": "02-xerj-org-xerj",
+      "kind": "repo",
+      "title": "xerj-org/xerj",
+      "rank": 2,
+      "url": "https://github.com/xerj-org/xerj",
+      "description": "Rust-based data search/indexing for agents across code, docs, logs and PDFs, with Elasticsearch-compatible clients.",
+      "language": "Rust",
+      "stars_gained": 1648,
+      "total_stars": 6919,
+      "default_branch_commit": "928e00426c48abc2a7ef02abb31a59181c7fc933",
+      "why_notable": "Second-highest displayed daily gain and a distinctly developer-infrastructure angle: agent-ready indexing and retrieval.",
+      "theme_ids": [
+        "agent-data-infrastructure"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "standard",
+      "narration_priority": 2,
+      "spoken_name": "Xerj",
+      "unique_caveat": "Its advertised 40x token reduction is a project claim, not independently benchmarked here.",
+      "enrichment": null,
+      "refs": [
+        "xerj-org/xerj"
+      ]
+    },
+    {
+      "id": "03-anthropics-claude-plugins-official",
+      "kind": "repo",
+      "title": "anthropics/claude-plugins-official",
+      "rank": 3,
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Anthropic-managed directory of Claude Code plugins, including internal and community submissions.",
+      "language": "Python",
+      "stars_gained": 1552,
+      "total_stars": 40531,
+      "default_branch_commit": "ea10b213686c90bb1984b2016937310e05336cf3",
+      "why_notable": "Strong daily momentum around the plugin/extension layer; the README documents a standardized plugin structure and marketplace install flow.",
+      "theme_ids": [
+        "agent-extensions"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Claude Plugins Official",
+      "unique_caveat": "The README explicitly cautions that third-party plugin contents are not verified by Anthropic.",
+      "enrichment": null,
+      "refs": [
+        "anthropics/claude-plugins-official"
+      ]
+    },
+    {
+      "id": "04-k-dense-ai-scientific-agent-skills",
+      "kind": "repo",
+      "title": "K-Dense-AI/scientific-agent-skills",
+      "rank": 4,
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "A cross-agent library of scientific skills and database connections for research workflows.",
+      "language": "Python",
+      "stars_gained": 1158,
+      "total_stars": 51492,
+      "default_branch_commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+      "why_notable": "Brings agent skills into scientific work and emphasizes compatibility with the open Agent Skills standard; its README describes 177 skills and 100+ databases.",
+      "theme_ids": [
+        "agent-extensions",
+        "scientific-ai"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "K-Dense Scientific Agent Skills",
+      "unique_caveat": "Claims about adoption and breadth (including user counts) are project-reported.",
+      "enrichment": null,
+      "refs": [
+        "K-Dense-AI/scientific-agent-skills"
+      ]
+    },
+    {
+      "id": "05-affaan-m-ecc",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 5,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "An agent-harness optimization system built around skills, instincts, memory, security and research-first development.",
+      "language": "JavaScript",
+      "stars_gained": 1057,
+      "total_stars": 281495,
+      "default_branch_commit": "76aaa77df6adc5b889e689007bf99b9a4f74af34",
+      "why_notable": "Large star base and substantial daily gain point to continued demand for reusable agent workflows and persistent context.",
+      "theme_ids": [
+        "agent-harnesses"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "ECC",
+      "unique_caveat": "The project spans several coding-agent platforms; integration depth may vary by host.",
+      "enrichment": null,
+      "refs": [
+        "affaan-m/ECC"
+      ]
+    },
+    {
+      "id": "06-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 6,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software-development methodology.",
+      "language": "Shell",
+      "stars_gained": 973,
+      "total_stars": 300677,
+      "default_branch_commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "why_notable": "One of the day's strongest gains among high-star projects, reinforcing that structured skills and development process remain a central agent adoption path.",
+      "theme_ids": [
+        "agent-harnesses"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 6,
+      "spoken_name": "Superpowers",
+      "unique_caveat": "The short Trending description does not establish comparative effectiveness.",
+      "enrichment": null,
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "07-madslorentzen-ai-job-search",
+      "kind": "repo",
+      "title": "MadsLorentzen/ai-job-search",
+      "rank": 7,
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "A local-first AI job-application workflow for evaluating postings, tailoring CVs, drafting cover letters and interview preparation.",
+      "language": "Python",
+      "stars_gained": 898,
+      "total_stars": 48499,
+      "default_branch_commit": "407dc34a2c4951e4ea3b047eaccdf2e4081a139a",
+      "why_notable": "Shows coding agents being repurposed from software engineering into a personal, end-to-end job-search workflow.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "AI Job Search",
+      "unique_caveat": "The repo's local-first positioning does not by itself establish how application data is handled; check configuration before use.",
+      "enrichment": null,
+      "refs": [
+        "MadsLorentzen/ai-job-search"
+      ]
+    },
+    {
+      "id": "08-ruvnet-ruflo",
+      "kind": "repo",
+      "title": "ruvnet/ruflo",
+      "rank": 8,
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "TypeScript toolkit for coordinating agent swarms and workflows, with memory, federation and vector RAG features.",
+      "language": "TypeScript",
+      "stars_gained": 672,
+      "total_stars": 75626,
+      "default_branch_commit": "1882006a02487590c8c66a7eec8d7504f6af33c3",
+      "why_notable": "Represents the orchestration/swarms branch of agent infrastructure and lists integrations across several coding-agent environments.",
+      "theme_ids": [
+        "agent-harnesses"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "Ruflo",
+      "unique_caveat": "The broad feature set is described by the project; this snapshot does not validate its maturity or interoperability claims.",
+      "enrichment": null,
+      "refs": [
+        "ruvnet/ruflo"
+      ]
+    },
+    {
+      "id": "09-hmjz100-linkswift",
+      "kind": "repo",
+      "title": "hmjz100/LinkSwift",
+      "rank": 9,
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "JavaScript tool for obtaining direct download links from eight Chinese cloud-drive services.",
+      "language": "JavaScript",
+      "stars_gained": 538,
+      "total_stars": 23667,
+      "default_branch_commit": "88f775d84a57764def07a32da9457cf3043ad11b",
+      "why_notable": "A non-agent outlier in a heavily agent-centered daily list, with practical cross-service download automation.",
+      "theme_ids": [
+        "developer-utilities"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "LinkSwift",
+      "unique_caveat": "Compatibility and legality can depend on each provider's terms and service changes.",
+      "enrichment": null,
+      "refs": [
+        "hmjz100/LinkSwift"
+      ]
+    },
+    {
+      "id": "10-mksglu-context-mode",
+      "kind": "repo",
+      "title": "mksglu/context-mode",
+      "rank": 10,
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context-window optimization for coding agents using sandboxed tool output, session memory and MCP/hooks across multiple platforms.",
+      "language": "TypeScript",
+      "stars_gained": 449,
+      "total_stars": 30223,
+      "default_branch_commit": "5f6298a9bdc480ebc7c88a29c9fbdf38ae2f8cb6",
+      "why_notable": "Targets a concrete agent bottleneck—context consumption—rather than adding another model or agent UI.",
+      "theme_ids": [
+        "agent-data-infrastructure"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Context Mode",
+      "unique_caveat": "The advertised 98% output reduction is a project claim and depends on workload.",
+      "enrichment": null,
+      "refs": [
+        "mksglu/context-mode"
+      ]
+    },
+    {
+      "id": "11-hkuds-cli-anything",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "rank": 11,
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "A toolkit and community hub for making software usable by AI agents through generated CLIs.",
+      "language": "Python",
+      "stars_gained": 281,
+      "total_stars": 53491,
+      "default_branch_commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+      "why_notable": "The README frames the CLI as an interface between agents and existing software, with demos across creative and productivity tools.",
+      "theme_ids": [
+        "agent-native-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 11,
+      "spoken_name": "CLI Anything",
+      "unique_caveat": "The breadth of supported applications should be assessed per CLI and workflow.",
+      "enrichment": null,
+      "refs": [
+        "HKUDS/CLI-Anything"
+      ]
+    },
+    {
+      "id": "12-cursor-plugins",
+      "kind": "repo",
+      "title": "cursor/plugins",
+      "rank": 12,
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor's plugin specification and official plugins.",
+      "language": "TypeScript",
+      "stars_gained": 278,
+      "total_stars": 11942,
+      "default_branch_commit": "ac4e25a0064cd600afdd605208bad72748cb019a",
+      "why_notable": "Another first-party signal that coding-agent vendors are investing in installable extensions and shared plugin conventions.",
+      "theme_ids": [
+        "agent-extensions"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "Cursor Plugins",
+      "unique_caveat": "The Trending description is brief; it does not specify how complete the plugin catalog is.",
+      "enrichment": null,
+      "refs": [
+        "cursor/plugins"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agent extension ecosystems:** Official plugins and portable skill libraries are gaining attention, suggesting ecosystems are competing on reusable capabilities and distributions, not only model access.\n- **Harnesses, skills and orchestration:** Several high-star projects package memory, workflow discipline, skills and multi-agent coordination into reusable harness layers.\n- **Agent context and retrieval infrastructure:** A separate infrastructure thread focuses on making context cheaper and organizational data easier for agents to search.\n- **Local generative media:** VoiceStudio's daily spike highlights demand for locally run creative tools that combine generation, transcription and media workflows.\n- **Agent-native interfaces:** CLI-Anything represents the push to expose existing desktop and creative software through agent-friendly command-line interfaces.\n- **Personal workflow automation:** The job-search project applies coding-agent workflows to a non-coding task with local execution and user-owned artifacts as its pitch.\n- **Developer utilities outside the agent wave:** LinkSwift is a clear conventional utility outlier, showing the feed is not exclusively agent-focused.\n- Languages: Python 5; TypeScript 3; JavaScript 2; Shell 1; Rust 1.",
+      "themes": [
+        {
+          "id": "agent-extensions",
+          "title": "Agent extension ecosystems",
+          "supporting_repository_ids": [
+            "anthropics/claude-plugins-official",
+            "K-Dense-AI/scientific-agent-skills",
+            "cursor/plugins"
+          ],
+          "summary": "Official plugins and portable skill libraries are gaining attention, suggesting ecosystems are competing on reusable capabilities and distributions, not only model access."
+        },
+        {
+          "id": "agent-harnesses",
+          "title": "Harnesses, skills and orchestration",
+          "supporting_repository_ids": [
+            "affaan-m/ECC",
+            "obra/superpowers",
+            "ruvnet/ruflo"
+          ],
+          "summary": "Several high-star projects package memory, workflow discipline, skills and multi-agent coordination into reusable harness layers."
+        },
+        {
+          "id": "agent-data-infrastructure",
+          "title": "Agent context and retrieval infrastructure",
+          "supporting_repository_ids": [
+            "xerj-org/xerj",
+            "mksglu/context-mode"
+          ],
+          "summary": "A separate infrastructure thread focuses on making context cheaper and organizational data easier for agents to search."
+        },
+        {
+          "id": "local-creative-ai",
+          "title": "Local generative media",
+          "supporting_repository_ids": [
+            "debpalash/VoiceStudio"
+          ],
+          "summary": "VoiceStudio's daily spike highlights demand for locally run creative tools that combine generation, transcription and media workflows."
+        },
+        {
+          "id": "agent-native-tools",
+          "title": "Agent-native interfaces",
+          "supporting_repository_ids": [
+            "HKUDS/CLI-Anything"
+          ],
+          "summary": "CLI-Anything represents the push to expose existing desktop and creative software through agent-friendly command-line interfaces."
+        },
+        {
+          "id": "agent-workflows",
+          "title": "Personal workflow automation",
+          "supporting_repository_ids": [
+            "MadsLorentzen/ai-job-search"
+          ],
+          "summary": "The job-search project applies coding-agent workflows to a non-coding task with local execution and user-owned artifacts as its pitch."
+        },
+        {
+          "id": "developer-utilities",
+          "title": "Developer utilities outside the agent wave",
+          "supporting_repository_ids": [
+            "hmjz100/LinkSwift"
+          ],
+          "summary": "LinkSwift is a clear conventional utility outlier, showing the feed is not exclusively agent-focused."
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today's snapshot points to a maturing agent stack: portable capabilities, workflow/harness layers, and context or retrieval tooling are all attracting attention. At the same time, VoiceStudio's gain shows local creative AI can compete with agent tooling for developer mindshare. Because this capture is at 00:18 UTC, the daily counts are early-day and may move substantially."
+    }
+  ],
+  "sources": {
+    "primary": "https://github.com/trending?since=daily",
+    "corroboration": "GitHub REST API repository metadata and default-branch commits for the 12 listed repos; README API content reviewed for five lead/theme repositories."
+  }
+}

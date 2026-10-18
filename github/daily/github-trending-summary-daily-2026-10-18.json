@@ -1,0 +1,457 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-18",
+  "title": "GitHub Trending Summary - Daily - 2026-10-18",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-18.md",
+  "entry_count": 13,
+  "entry_noun": "repositories",
+  "ranking_basis": "GitHub Trending daily star gains, descending",
+  "ranking_explanation": "Ranked by the stars-today values displayed on GitHub Trending at 2026-10-18 00:28 UTC; current total stars and default-branch commit SHAs corroborated through GitHub REST API.",
+  "global_caveat": "Trending gains and totals are time-sensitive. Project capabilities and benchmark claims are reported from repository descriptions/READMEs; no independent product or performance testing was performed.",
+  "themes": [
+    {
+      "id": "agent-infrastructure",
+      "title": "Coding-agent infrastructure and extensions",
+      "content": "The largest cluster is infrastructure around coding agents: plugin distribution, reusable harnesses, orchestration and memory. Evidence includes anthropics/claude-plugins-official, affaan-m/ECC, stablyai/orca, ruvnet/ruflo, anomalyco/opencode, anthropics/claude-code and akitaonrails/ai-memory.",
+      "repository_ids": [
+        "02-anthropics-claude-plugins-official",
+        "05-affaan-m-ecc",
+        "07-stablyai-orca",
+        "09-anomalyco-opencode",
+        "10-ruvnet-ruflo",
+        "12-anthropics-claude-code",
+        "13-akitaonrails-ai-memory"
+      ]
+    },
+    {
+      "id": "agent-workflows",
+      "title": "Task-specific, agent-driven workflows",
+      "content": "Projects package agents around concrete jobs rather than generic chat: job applications (MadsLorentzen/ai-job-search), scientific work (K-Dense-AI/scientific-agent-skills), and software control through CLI surfaces (HKUDS/CLI-Anything).",
+      "repository_ids": [
+        "03-madslorentzen-ai-job-search",
+        "06-k-dense-ai-scientific-agent-skills",
+        "08-hkuds-cli-anything"
+      ]
+    },
+    {
+      "id": "local-ai-tools",
+      "title": "Local-first AI media and search",
+      "content": "Two high-momentum projects foreground local execution: debpalash/VoiceStudio for voice/media workflows and xerj-org/xerj for indexing and retrieval over local data. The README claims are project statements, not independent benchmark results.",
+      "repository_ids": [
+        "01-debpalash-voicestudio",
+        "04-xerj-org-xerj"
+      ]
+    },
+    {
+      "id": "languages",
+      "title": "Languages",
+      "content": "Among these 13 entries: Python 5, TypeScript 4, Rust 2, JavaScript 1 and Kotlin 1. This is a tally of GitHub’s primary-language metadata for this snapshot.",
+      "repository_ids": []
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "The daily list is led by local AI voice tooling, followed by a strong run of coding-agent plugins, harnesses and workflow products. Across the 13 entries, the signal is less “one new model” and more the growing ecosystem built around agents: integration, memory, orchestration and task-specific interfaces."
+    },
+    {
+      "id": "01-debpalash-voicestudio",
+      "kind": "repo",
+      "title": "debpalash/VoiceStudio",
+      "rank": 1,
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "content": "Local-first audio creation suite for voice cloning/design, dubbing, dictation, transcription and audiobooks. Its README says local workflows run on the user’s hardware, with remote services optional.",
+      "language": "Python",
+      "stars_gained": 2125,
+      "total_stars": 73341,
+      "default_branch": "main",
+      "default_branch_commit": "d819ff54d93017bf4a5b34b605833162163c9e3c",
+      "why_notable": "Local-first audio creation suite for voice cloning/design, dubbing, dictation, transcription and audiobooks. Its README says local workflows run on the user’s hardware, with remote services optional.",
+      "theme_ids": [
+        "local-ai-media"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "VoiceStudio",
+      "unique_caveat": "Local workflows are emphasized; optional remote services remain available.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/debpalash/VoiceStudio",
+        "https://github.com/debpalash/VoiceStudio/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-18T00:01:21Z"
+    },
+    {
+      "id": "02-anthropics-claude-plugins-official",
+      "kind": "repo",
+      "title": "anthropics/claude-plugins-official",
+      "rank": 2,
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "content": "Anthropic-managed plugin directory; its README documents a marketplace layout for internal and third-party plugins, including commands, agents, skills and optional MCP configuration.",
+      "language": "Python",
+      "stars_gained": 1397,
+      "total_stars": 41743,
+      "default_branch": "main",
+      "default_branch_commit": "ea10b213686c90bb1984b2016937310e05336cf3",
+      "why_notable": "Anthropic-managed plugin directory; its README documents a marketplace layout for internal and third-party plugins, including commands, agents, skills and optional MCP configuration.",
+      "theme_ids": [
+        "agent-extensions"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Claude Code Plugins Directory",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/anthropics/claude-plugins-official",
+        "https://github.com/anthropics/claude-plugins-official/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-17T16:41:00Z"
+    },
+    {
+      "id": "03-madslorentzen-ai-job-search",
+      "kind": "repo",
+      "title": "MadsLorentzen/ai-job-search",
+      "rank": 3,
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "content": "A personal job-application workflow built on Claude Code; README describes a /scrape → /apply → /interview pipeline and says the core fit-evaluation/drafting flow is market-agnostic.",
+      "language": "Python",
+      "stars_gained": 1365,
+      "total_stars": 50384,
+      "default_branch": "master",
+      "default_branch_commit": "5d9e0977f01465166f25abf0826bd61e7c8cac25",
+      "why_notable": "A personal job-application workflow built on Claude Code; README describes a /scrape → /apply → /interview pipeline and says the core fit-evaluation/drafting flow is market-agnostic.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "AI Job Search",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/MadsLorentzen/ai-job-search",
+        "https://github.com/MadsLorentzen/ai-job-search/blob/master/README.md"
+      ],
+      "pushed_at": "2026-10-17T18:12:49Z"
+    },
+    {
+      "id": "04-xerj-org-xerj",
+      "kind": "repo",
+      "title": "xerj-org/xerj",
+      "rank": 4,
+      "url": "https://github.com/xerj-org/xerj",
+      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep (1974 tool). One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. It’s durable and can replace ElasticSearch saving you x10 infra costs.",
+      "content": "Local search and indexing for coding agents; README describes hybrid lexical/vector retrieval and an offline lexical default. Claims about token savings are project-reported, not independently tested here.",
+      "language": "Rust",
+      "stars_gained": 1160,
+      "total_stars": 7789,
+      "default_branch": "main",
+      "default_branch_commit": "6d8ff14d0f9cce691e7310e3129b906dbfb0ccaf",
+      "why_notable": "Local search and indexing for coding agents; README describes hybrid lexical/vector retrieval and an offline lexical default. Claims about token savings are project-reported, not independently tested here.",
+      "theme_ids": [
+        "local-ai-search"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "XERJ",
+      "unique_caveat": "Project-reported performance/savings claims were not independently benchmarked.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/xerj-org/xerj",
+        "https://github.com/xerj-org/xerj/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-18T00:27:58Z"
+    },
+    {
+      "id": "05-affaan-m-ecc",
+      "kind": "repo",
+      "title": "affaan-m/ECC",
+      "rank": 5,
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "content": "A cross-tool agent harness spanning skills, memory, security and research-first development for several coding-agent clients; strong daily gain makes it a leading ecosystem signal.",
+      "language": "JavaScript",
+      "stars_gained": 1145,
+      "total_stars": 282500,
+      "default_branch": "main",
+      "default_branch_commit": "76aaa77df6adc5b889e689007bf99b9a4f74af34",
+      "why_notable": "A cross-tool agent harness spanning skills, memory, security and research-first development for several coding-agent clients; strong daily gain makes it a leading ecosystem signal.",
+      "theme_ids": [
+        "agent-infrastructure"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "ECC",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/affaan-m/ECC",
+        "https://github.com/affaan-m/ECC/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-15T19:17:01Z"
+    },
+    {
+      "id": "06-k-dense-ai-scientific-agent-skills",
+      "kind": "repo",
+      "title": "K-Dense-AI/scientific-agent-skills",
+      "rank": 6,
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "content": "A domain-specific skills library that packages scientific workflows and links to scientific databases for multiple AI-agent platforms.",
+      "language": "Python",
+      "stars_gained": 878,
+      "total_stars": 52241,
+      "default_branch": "main",
+      "default_branch_commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+      "why_notable": "A domain-specific skills library that packages scientific workflows and links to scientific databases for multiple AI-agent platforms.",
+      "theme_ids": [
+        "domain-agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 6,
+      "spoken_name": "Scientific Agent Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-15T23:57:39Z"
+    },
+    {
+      "id": "07-stablyai-orca",
+      "kind": "repo",
+      "title": "stablyai/orca",
+      "rank": 7,
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "content": "A multi-agent workspace for running and coordinating coding agents across desktop, mobile and remote runtimes.",
+      "language": "TypeScript",
+      "stars_gained": 830,
+      "total_stars": 95400,
+      "default_branch": "main",
+      "default_branch_commit": "ce2d60834c3844f65340d9068d55b6228ea42568",
+      "why_notable": "A multi-agent workspace for running and coordinating coding agents across desktop, mobile and remote runtimes.",
+      "theme_ids": [
+        "agent-orchestration"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "Orca",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/stablyai/orca",
+        "https://github.com/stablyai/orca/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-18T00:27:07Z"
+    },
+    {
+      "id": "08-hkuds-cli-anything",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "rank": 8,
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "content": "A project aimed at exposing desktop and other software through agent-usable command-line interfaces.",
+      "language": "Python",
+      "stars_gained": 574,
+      "total_stars": 54053,
+      "default_branch": "main",
+      "default_branch_commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+      "why_notable": "A project aimed at exposing desktop and other software through agent-usable command-line interfaces.",
+      "theme_ids": [
+        "agent-tooling"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "CLI-Anything",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/HKUDS/CLI-Anything",
+        "https://github.com/HKUDS/CLI-Anything/blob/main/README.md"
+      ],
+      "pushed_at": "2026-09-22T02:01:29Z"
+    },
+    {
+      "id": "09-anomalyco-opencode",
+      "kind": "repo",
+      "title": "anomalyco/opencode",
+      "rank": 9,
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "content": "An open-source coding agent, representing continued demand for model- and tool-flexible developer agents.",
+      "language": "TypeScript",
+      "stars_gained": 438,
+      "total_stars": 215305,
+      "default_branch": "dev",
+      "default_branch_commit": "e4b2afcf0c76f506811aa30c11a9339a41cf72db",
+      "why_notable": "An open-source coding agent, representing continued demand for model- and tool-flexible developer agents.",
+      "theme_ids": [
+        "coding-agents"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "OpenCode",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/anomalyco/opencode",
+        "https://github.com/anomalyco/opencode/blob/dev/README.md"
+      ],
+      "pushed_at": "2026-10-17T23:59:54Z"
+    },
+    {
+      "id": "10-ruvnet-ruflo",
+      "kind": "repo",
+      "title": "ruvnet/ruflo",
+      "rank": 10,
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "content": "Agent-swarm and workflow orchestration with memory, federation and retrieval features, according to its project description.",
+      "language": "TypeScript",
+      "stars_gained": 420,
+      "total_stars": 76061,
+      "default_branch": "main",
+      "default_branch_commit": "d30d3e3a6a22ec592b2f2719f1403a5c055f2272",
+      "why_notable": "Agent-swarm and workflow orchestration with memory, federation and retrieval features, according to its project description.",
+      "theme_ids": [
+        "agent-orchestration"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Ruflo",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/ruvnet/ruflo",
+        "https://github.com/ruvnet/ruflo/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-18T00:26:50Z"
+    },
+    {
+      "id": "11-android-skills",
+      "kind": "repo",
+      "title": "android/skills",
+      "rank": 11,
+      "url": "https://github.com/android/skills",
+      "description": "Android skills and guidance for agent-assisted Android development.",
+      "content": "Android’s repository for agent skills, bringing the broader skill-package pattern into Android development.",
+      "language": "Kotlin",
+      "stars_gained": 355,
+      "total_stars": 8422,
+      "default_branch": "main",
+      "default_branch_commit": "5bda39f154fb859a08d45e2392f3568e049f83fb",
+      "why_notable": "Android’s repository for agent skills, bringing the broader skill-package pattern into Android development.",
+      "theme_ids": [
+        "domain-agent-skills"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "Android Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/android/skills",
+        "https://github.com/android/skills/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-16T10:07:27Z"
+    },
+    {
+      "id": "12-anthropics-claude-code",
+      "kind": "repo",
+      "title": "anthropics/claude-code",
+      "rank": 12,
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "content": "Anthropic’s terminal-based agentic coding tool; remains on today’s list, though its daily star gain is lower than the other entries here.",
+      "language": "TypeScript",
+      "stars_gained": 179,
+      "total_stars": 151740,
+      "default_branch": "main",
+      "default_branch_commit": "dd6bee38458cc3e6dc5f2b16eca1f0f364619ad8",
+      "why_notable": "Anthropic’s terminal-based agentic coding tool; remains on today’s list, though its daily star gain is lower than the other entries here.",
+      "theme_ids": [
+        "coding-agents"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "Claude Code",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/anthropics/claude-code",
+        "https://github.com/anthropics/claude-code/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-17T23:14:51Z"
+    },
+    {
+      "id": "13-akitaonrails-ai-memory",
+      "kind": "repo",
+      "title": "akitaonrails/ai-memory",
+      "rank": 13,
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "content": "A Rust-based project focused on persistent memory and handoff between coding-agent CLIs and vendors.",
+      "language": "Rust",
+      "stars_gained": 178,
+      "total_stars": 9913,
+      "default_branch": "main",
+      "default_branch_commit": "995e35d5866973c3176709261e924a67e3c76158",
+      "why_notable": "A Rust-based project focused on persistent memory and handoff between coding-agent CLIs and vendors.",
+      "theme_ids": [
+        "agent-memory"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 13,
+      "spoken_name": "AI Memory",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/akitaonrails/ai-memory",
+        "https://github.com/akitaonrails/ai-memory/blob/main/README.md"
+      ],
+      "pushed_at": "2026-10-17T19:53:00Z"
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- Coding-agent infrastructure and extensions: The largest cluster is infrastructure around coding agents: plugin distribution, reusable harnesses, orchestration and memory. Evidence includes anthropics/claude-plugins-official, affaan-m/ECC, stablyai/orca, ruvnet/ruflo, anomalyco/opencode, anthropics/claude-code and akitaonrails/ai-memory.\n- Task-specific, agent-driven workflows: Projects package agents around concrete jobs rather than generic chat: job applications (MadsLorentzen/ai-job-search), scientific work (K-Dense-AI/scientific-agent-skills), and software control through CLI surfaces (HKUDS/CLI-Anything).\n- Local-first AI media and search: Two high-momentum projects foreground local execution: debpalash/VoiceStudio for voice/media workflows and xerj-org/xerj for indexing and retrieval over local data. The README claims are project statements, not independent benchmark results.\n- Languages: Among these 13 entries: Python 5, TypeScript 4, Rust 2, JavaScript 1 and Kotlin 1. This is a tally of GitHub’s primary-language metadata for this snapshot."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today’s strongest signal is the tooling layer around AI agents: reusable plugins and harnesses, multi-agent coordination, durable memory and specialized workflows. At the same time, high local-first momentum in speech and search points to interest in owning data and execution rather than depending entirely on hosted services. The daily leaderboard is a snapshot of attention, not a quality or adoption assessment."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "Primary: https://github.com/trending?since=daily. Corroboration: GitHub REST API repository and default-branch commit endpoints. Daily gains were taken from GitHub Trending and entries ranked by displayed stars gained today. Five leading README files were reviewed. Snapshot time: 2026-10-18 00:28 UTC."
+    }
+  ]
+}

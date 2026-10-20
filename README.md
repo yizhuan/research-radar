@@ -1,11 +1,11 @@
 # What's trending in Github, AI, math, and physics - Daily updates
 
-Generated: 2026-10-19 01:24
+Generated: 2026-10-20 01:14
 Source: `/home/yizhuan/.research`
 
 ## Ai
 
-- **Daily**: [arxiv-trending-ai-daily-2026-10-16](ai/daily/arxiv-trending-ai-daily-2026-10-16.md) — 2026-10-16
+- **Daily**: [arxiv-trending-ai-daily-2026-10-19](ai/daily/arxiv-trending-ai-daily-2026-10-19.md) — 2026-10-19
 - **Monthly**: [arxiv-trending-ai-monthly-2026-09-30](ai/monthly/arxiv-trending-ai-monthly-2026-09-30.md) — 2026-09-30
 - **Weekly**: [arxiv-trending-ai-weekly-2026-10-16](ai/weekly/arxiv-trending-ai-weekly-2026-10-16.md) — 2026-10-16
 

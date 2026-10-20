@@ -1,0 +1,217 @@
+{
+  "glossary": "Agent Skill（代理技能）：打包给编码智能体读取的技能；Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Pi：支持该技能的编码智能体宿主；Mermaid、draw.io、Excalidraw：图表源格式或工具；inline SVG（内联 SVG）：嵌入 HTML 的可缩放矢量图；WCAG AA：对比度无障碍标准；Playwright：用于 PNG 导出的浏览器自动化工具；MIT：宽松开源许可证。",
+  "sections": [
+    {
+      "ambiguities": [
+        "Diagram-type count: metadata says 44; README says 45 and also says gallery numbering runs 01 to 44. The authoritative count is unresolved.",
+        "Whether the README's 45 count includes named variants or is simply inconsistent is not stated.",
+        "Release evidence is empty, so release-specific changes or limitations cannot be checked."
+      ],
+      "claims": [
+        {
+          "evidence_ids": [
+            "readme",
+            "metadata"
+          ],
+          "text": "Diagram Design is an Agent Skill from cathrynlavery/diagram-design."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The maintainer describes the output as one self-contained HTML plus SVG file in the user's brand."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README describes 45 diagram types."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README describes a style with one accent color, 1px hairlines, no shadows, and coordinates divisible by 4."
+        },
+        {
+          "evidence_ids": [
+            "metadata"
+          ],
+          "text": "The metadata description names Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi."
+        },
+        {
+          "evidence_ids": [
+            "metadata"
+          ],
+          "text": "The metadata description says 44 diagram types."
+        },
+        {
+          "evidence_ids": [
+            "metadata"
+          ],
+          "text": "The metadata description says self-contained HTML plus SVG, no shadows, and “No Mermaid slop”."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says each diagram type has one number, 01 to 44."
+        },
+        {
+          "evidence_ids": [
+            "readme",
+            "metadata"
+          ],
+          "text": "The README's 45 count and metadata's 44 count conflict."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README lists Agent Skills-compatible hosts including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf, and Amp."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README gives plain-language prompt examples for architecture, quadrant, and sequence-with-token-refresh diagrams."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says the skill can redraw draw.io, Mermaid, or Excalidraw sources with format, size, detail, and audience controls."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says output is one HTML file with inline SVG that opens by double-clicking."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says motion is optional, defaults to none, and reduced-motion output shows a complete static frame."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README documents npx skills add cathrynlavery/diagram-design for Agent Skills hosts."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README documents native plugin or install commands for Claude Code, Codex, GitHub Copilot, Factory Droid, Pi, and Qoder."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README also documents Claude Cowork, Kiro, OpenCode, and editable installs."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README states official builds come only from this repository."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README states LittleMight, Cathryn Lavery's company, publishes the plugin directory listings."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says brand onboarding fetches a website homepage, extracts a dominant palette and font stack, maps values to semantic roles, shows a proposed diff, and checks WCAG AA contrast before writing tokens."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says named profiles are stored under ~/.diagram-design/profiles/ and can be selected per project with a .diagram-design marker."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README documents SVG and PNG export."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says PNG export uses Playwright and requires one-time Chromium setup."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says the default diagram loads Instrument Serif, Geist, and Geist Mono from Google Fonts, described as the only network request."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says system-font mode removes network requests."
+        },
+        {
+          "evidence_ids": [
+            "metadata"
+          ],
+          "text": "The repository metadata lists the MIT License."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says output quality depends on the model."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says the same prompt can lay out differently twice."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says the result is not an editable source format with a text diff in a pull request or a canvas to drag."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README says Mermaid is still the better fit for documentation that lives in Git and changes every sprint."
+        }
+      ],
+      "edited": "Diagram Design is an Agent Skill from cathrynlavery/diagram-design that the maintainer describes as drawing editorial diagrams as one self-contained HTML plus SVG file, in the user's brand, with 45 diagram types and an opinionated style of one accent color, hairline borders, no shadows, and a four-pixel grid [readme]. Repository metadata describes editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi, with 44 diagram types, self-contained HTML plus SVG, no shadows, and “No Mermaid slop” [metadata]. The README also says each diagram type has one number, 01 to 44, while calling the set 45 diagram types; the metadata's 44 count and the README's 45 count conflict [readme][metadata].\n\nIntended users work in Agent Skills-compatible hosts, including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf, and Amp [readme]. The skill accepts plain-language prompts for diagram types such as architecture, quadrant, and sequence with token refresh, and it can redraw draw.io, Mermaid, or Excalidraw sources with format, size, detail, and audience controls [readme]. Output is one HTML file with inline SVG that opens by double-clicking; motion is optional, defaults to none, and reduced-motion output shows a complete static frame [readme].\n\nSetup can be done with npx skills add cathrynlavery/diagram-design for Agent Skills hosts, or with native plugin or install commands for Claude Code, Codex, GitHub Copilot, Factory Droid, Pi, and Qoder; the README also documents Claude Cowork, Kiro, OpenCode, and editable installs [readme]. The README states that official builds come only from this repository and that LittleMight, Cathryn Lavery's company, publishes the plugin directory listings [readme]. Brand onboarding fetches a website homepage, extracts a dominant palette and font stack, maps values to semantic roles, shows a proposed diff, and checks WCAG AA contrast before writing tokens [readme]. Named profiles stored under ~/.diagram-design/profiles/ can be selected per project with a .diagram-design marker [readme].\n\nSVG and PNG export are documented; PNG export uses Playwright and requires one-time Chromium setup [readme]. By default a diagram loads Instrument Serif, Geist, and Geist Mono from Google Fonts, described as the only network request; system-font mode removes network requests [readme]. The license is MIT [metadata].\n\nThe maintainer notes real limitations: output quality depends on the model, the same prompt can lay out differently twice, and the result is not an editable source format with a text diff in a pull request or a canvas to drag [readme]. For documentation that lives in Git and changes every sprint, the README says Mermaid is still the better fit [readme].",
+      "notes": [
+        "Condensed the repository packet into one section and omitted host-by-host command syntax and gallery enumeration per repo-mode guidance.",
+        "Flagged the 44-versus-45 diagram-type discrepancy instead of resolving it.",
+        "Attributed style, audience, setup, and limitation claims to README or metadata; did not infer popularity or maturity from badges.",
+        "Release evidence contained no entries, so no release-specific claims were included.",
+        "Normalized 4px to four-pixel grid in spoken scripts while retaining technical terms."
+      ],
+      "scripts": {
+        "en": "Diagram Design is an Agent Skill from cathrynlavery/diagram-design. The maintainer presents it as a way to draw editorial diagrams as a single self-contained HTML file with inline SVG, in your brand. The README describes forty-five diagram types and a style with one accent color, hairline borders, no shadows, and a four-pixel grid. The repository metadata, however, says forty-four diagram types, and the README also says the gallery numbers types from zero one to forty-four, so the count is inconsistent. The skill is intended for people working in Agent Skills-compatible coding-agent hosts, including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf, Amp, Factory Droid, and Pi. You can ask in plain language for architecture, quadrant, sequence, and other diagrams, and it can redraw draw.io, Mermaid, or Excalidraw sources with controls for format, size, detail, and audience. The result is one HTML file with inline SVG that opens locally. Motion is optional, defaults to none, and reduced-motion output stays on a complete static frame. Setup can use the skills command line or native plugin or install commands for Claude Code, Codex, GitHub Copilot, Factory Droid, Pi, and Qoder; the README also covers Claude Cowork, Kiro, OpenCode, and editable installs. The README says official builds come only from this repository, and that LittleMight, Cathryn Lavery's company, publishes the plugin directory listings. Brand onboarding can fetch a website homepage, extract the palette and font stack, map values to semantic roles, show a proposed diff, and check WCAG AA contrast before writing tokens. Named profiles can be stored and selected per project. SVG and PNG export are documented; PNG export uses Playwright and needs a one-time Chromium setup. By default the diagram loads Instrument Serif, Geist, and Geist Mono from Google Fonts, described as the only network request; system-font mode removes network requests. The license is MIT. The maintainer also notes real limitations: output quality depends on the model, the same prompt can lay out differently twice, and the result is not an editable source format with a text diff or a canvas to drag. For documentation that lives in Git and changes every sprint, the README says Mermaid is still the better fit.",
+        "zh": "Diagram Design 是 cathrynlavery/diagram-design 的一个 Agent Skill。维护者把它描述为：用单个自包含的 HTML 文件加内联 SVG 来绘制编辑风格的图表，并匹配你的品牌。项目说明写到四十五种图表类型，风格使用一种强调色、细线边框、没有阴影和四像素网格。但仓库元数据写的是四十四种，项目说明里还说每种图表在展示页中编号为零一到四十四，所以图表数量并不一致。这个技能面向使用 Agent Skills 兼容编码智能体宿主的人，包括 Cursor、Claude Code、Codex、Qoder、GitHub Copilot、Gemini CLI、Cline、Windsurf、Amp、Factory Droid 和 Pi。你可以用自然语言要求架构图、象限图、带令牌刷新的时序图等，也可以重绘 draw.io、Mermaid 或 Excalidraw 源文件，并控制格式、尺寸、细节和受众。输出是一个带内联 SVG 的 HTML 文件，可在本地打开。动效可选，默认关闭，减少动态效果时显示完整的静态画面。安装可以用 skills 命令行，也可以用 Claude Code、Codex、GitHub Copilot、Factory Droid、Pi 和 Qoder 的原生插件或安装命令；项目说明还记录了 Claude Cowork、Kiro、OpenCode 和可编辑安装方式。项目说明称，官方构建只来自这个仓库，LittleMight 是 Cathryn Lavery 的公司，负责发布插件目录条目。品牌接入可以抓取网站首页，提取主色板和字体栈，映射到语义角色，显示建议差异，并在写入设计令牌前检查 WCAG AA 对比度。命名配置档案可以保存，并按项目选择。文档记录了 SVG 和 PNG 导出；PNG 导出使用 Playwright，需要一次性安装 Chromium。默认情况下，图表会从 Google Fonts 加载 Instrument Serif、Geist 和 Geist Mono，项目说明称这是唯一的网络请求；系统字体模式会移除网络请求。许可证是 MIT。维护者也说明了实际限制：输出质量取决于所用模型，同一个提示两次可能得到不同版式，结果不是可编辑的源格式，没有可在拉取请求中比较的文本差异，也没有可拖拽的画布。对于放在 Git 中并每个迭代都会变化的文档，项目说明仍认为 Mermaid 更合适。"
+      },
+      "source_ids": [
+        "cathrynlavery/diagram-design"
+      ],
+      "titles": {
+        "en": "Diagram Design: editorial diagrams for coding agents",
+        "zh": "Diagram Design：面向编码智能体的编辑风格图表"
+      }
+    }
+  ],
+  "source_language": "en",
+  "summary": "Single GitHub repository packet for Diagram Design, an Agent Skill for branded editorial diagrams in coding-agent hosts. Key facts: MIT license; self-contained HTML plus inline SVG; imports from draw.io, Mermaid, and Excalidraw; optional SVG/PNG export; brand onboarding; model-dependent output limitations; and a README-versus-metadata 45-versus-44 diagram-count discrepancy. Release evidence is empty."
+}

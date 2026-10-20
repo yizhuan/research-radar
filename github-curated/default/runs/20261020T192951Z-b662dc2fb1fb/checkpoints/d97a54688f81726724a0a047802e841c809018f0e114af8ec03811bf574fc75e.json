@@ -1,0 +1,119 @@
+{
+  "glossary": "HyperFrames: open-source HTML-native video framework. deterministic rendering: same input yields same frames and video. seekable animation: animation that can be sampled at specific time points for frame-accurate rendering. CLI: command-line interface. AI coding agent: coding assistant that can load agent skills. agent skills: installable workflow instructions for agents. PR: pull request. Git LFS: Git Large File Storage for large test assets. FFmpeg: media encoding tool. Apache-2.0: open-source license.",
+  "sections": [
+    {
+      "ambiguities": [
+        "Whether the no per-render fees or commercial-use thresholds claim covers every deployment path, including cloud or AWS Lambda rendering, is not specified.",
+        "What available but evolving means for Studio stability or feature completeness is not quantified.",
+        "Whether agents means only supported coding agents or any agent runtime is not fully defined.",
+        "The skills registry lag is described only as hours, not a precise bound."
+      ],
+      "claims": [
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README states HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos."
+        },
+        {
+          "evidence_ids": [
+            "metadata"
+          ],
+          "text": "Repository metadata identifies HyperFrames as a TypeScript project under Apache-2.0."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README states Apache 2.0 licensing with no per-render fees or commercial-use thresholds."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README positions HyperFrames for local CLI use, for AI coding agents via installable skills, and as a rendering core behind hosted authoring workflows."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README says the skills teach agents to plan the video, write valid HTML, wire seekable animations, add media, lint, preview, and render."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README documents use cases including product launch videos, PR walkthroughs, data visualizations, social videos, docs-to-video, PDF-to-video, and reusable motion graphics."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README states setup requires Node.js 22+ and FFmpeg."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README gives a basic CLI flow of npx hyperframes init my-video, then preview and render."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README states full-repository development uses Git LFS for golden regression-test baselines of about 240 MB of MP4 files."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README states source-only clones can skip LFS content."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README warns that standalone skills installed with skills add can lag main by hours."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README recommends npx hyperframes skills update when the newest copy or a non-interactive core install is needed."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "README describes Studio as available but evolving."
+        },
+        {
+          "evidence_ids": [
+            "release"
+          ],
+          "text": "Release evidence records v0.8.181, published on 2026-10-20, with fixes and performance changes."
+        }
+      ],
+      "edited": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos [readme]. The repository metadata identifies it as a TypeScript project under Apache-2.0 [metadata], and the README also states Apache 2.0 with no per-render fees or commercial-use thresholds [readme]. The README positions it for local use through a CLI, for AI coding agents via installable skills, and as a rendering core behind hosted authoring workflows [readme]. It says the skills teach agents to plan the video, write valid HTML, wire seekable animations, add media, lint, preview, and render [readme]. Documented use cases include product launch videos, PR walkthroughs, data visualizations, social videos, docs-to-video, PDF-to-video, and reusable motion graphics [readme]. Setup requires Node.js 22+ and FFmpeg; a basic CLI flow is npx hyperframes init my-video, then preview and render [readme]. Full-repository development uses Git LFS for golden regression-test baselines of about 240 MB of MP4 files, while source-only clones can skip LFS content [readme]. The README warns that standalone skills installed with skills add can lag main by hours and recommends npx hyperframes skills update when the newest copy or a non-interactive core install is needed [readme]. Studio is described as available but evolving [readme]. The release evidence records v0.8.181, published on 2026-10-20, with fixes and performance changes [release].",
+      "notes": [
+        "Curated README into a single repository overview: selected capabilities, audiences, use cases, setup and license, and caveats; omitted badges, link-only anchors, full skill catalog, package inventory, changelog details, and unverified star or maturity signals.",
+        "Kept maintainer framing by saying the README states, positions, warns, or describes claims rather than presenting them as independent verification.",
+        "Normalized units in speech: 240 MB to 240 megabytes; Node.js 22+ to Node.js 22 or later; v0.8.181 to version 0.8.181; date to October 20, 2026.",
+        "Treated the release packet as release-specific changes, not as proof of current limitations."
+      ],
+      "scripts": {
+        "en": "HyperFrames is an open-source framework for turning HTML, CSS, media, and animations that can be sampled at specific times into deterministic MP4 videos. The repository is listed as TypeScript with Apache 2.0, and the README says the license has no per-render fees or commercial-use thresholds. The README presents HyperFrames for local use through a command-line interface, for AI coding agents through installable skills, and as a rendering core behind hosted authoring workflows. It says the skills teach agents to plan a video, write valid HTML, wire seekable animations, add media, lint, preview, and render. Documented use cases include product launch videos, pull request walkthroughs, data visualizations, social videos, docs-to-video, PDF-to-video, and reusable motion graphics. Setup requires Node.js 22 or later and FFmpeg. A basic command-line flow is npx hyperframes init my-video, then preview and render. Full-repository development uses Git LFS for golden regression-test baselines of about 240 megabytes of MP4 files; source-only clones can skip LFS content. The README warns that standalone skills installed with skills add can lag the main branch by hours and recommends npx hyperframes skills update when you need the newest copy or a non-interactive core install. Studio is described as available but evolving. The release notes record version 0.8.181, published on October 20, 2026, with fixes and performance changes.",
+        "zh": "HyperFrames 是一个开源框架，用于把 HTML、CSS、媒体和可定位到任意时间点的动画转换成确定性的 MP4 视频。代码库信息显示它使用 TypeScript，许可证为 Apache 2.0；README 还表示，该许可证没有按次渲染费用，也没有商用门槛。README 将它定位为可通过命令行在本地使用、可供 AI 编程代理通过可安装技能使用，也可作为托管式创作工作流背后的渲染核心。README 说，这些技能教代理规划视频、编写有效的 HTML、接入可定位动画、添加媒体、执行检查、预览和渲染。文档列出的用例包括产品发布视频、拉取请求讲解、数据可视化、社交视频、文档转视频、PDF 转视频，以及可复用的动态图形。环境要求是 Node.js 22 或更高版本，以及 FFmpeg。基本命令行流程是运行 npx hyperframes init my-video，然后预览和渲染。完整仓库开发使用 Git LFS 保存黄金回归测试基线，约 240 MB 的 MP4 文件；如果只需要源代码，可以跳过 LFS 内容。README 提醒，使用 skills add 安装的独立技能可能比 main 分支落后数小时，并建议在需要最新副本或非交互式核心技能安装时使用 npx hyperframes skills update。Studio 被描述为可用但仍在演进。发布记录显示版本 0.8.181 于 2026 年 10 月 20 日发布，包含修复和性能变更。"
+      },
+      "source_ids": [
+        "heygen-com/hyperframes"
+      ],
+      "titles": {
+        "en": "HyperFrames Repository Overview",
+        "zh": "HyperFrames 代码库概览"
+      }
+    }
+  ],
+  "source_language": "en",
+  "summary": "Single repository packet for heygen-com/hyperframes. Evidence covers metadata, README, and the v0.8.181 release entry. Narration presents documented HTML-to-MP4 capabilities, agent-oriented workflows, setup requirements, license, and caveats without adding unverified maturity or adoption claims."
+}

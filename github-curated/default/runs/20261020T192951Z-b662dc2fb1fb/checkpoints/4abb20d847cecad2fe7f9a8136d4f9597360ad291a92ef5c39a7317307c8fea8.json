@@ -1,0 +1,152 @@
+{
+  "glossary": "MCP：智能体与工具连接的接口；Hopper、Ghidra、IDA、Kuna：调用者提供的原生分析或反编译提供方；JADX：Android 反编译工具；pwntools：用于离线 ELF 布局与已记录 Linux 崩溃的工具包；TShark：数据包分析工具；sigrok-cli：逻辑信号录制工具；Evidence：REA 记录的证据及来源/局限性；breaking changes：需重新生成保存数据或调整集成的版本变更。",
+  "sections": [
+    {
+      "ambiguities": [
+        "The packet does not state the current published npm package version or establish that every README-described target works on every operating system.",
+        "Kuna's Windows, PE, and universal Mach-O unsupported status is tied to recorded real-provider coverage in release 6.6.0; current support beyond that release is not established by this packet.",
+        "The README says REA changes quickly and recommends updating, but the packet does not establish which release is the latest published npm version.",
+        "Metadata pushed_at is 2026-10-20T19:29:33Z, while release 6.7.0 is dated 2026-10-18; the packet does not explain whether pushed_at reflects a later unpublished commit or another repository update."
+      ],
+      "claims": [
+        {
+          "evidence_ids": [
+            "metadata",
+            "readme"
+          ],
+          "text": "REA stands for Reverse Engineer Anything and is an MIT-licensed TypeScript project."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "According to the README, REA connects an agent to tools for inspecting native binaries, JavaScript and Electron applications, .NET assemblies, websites, Android APKs and devices, saved network and packet captures, firmware, model artifacts, and other targets."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README describes an MCP-based workflow in which an agent inspects a local target and receives findings with evidence and limitations."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The agent can use REA findings to explain behavior or write and test an implementation, and the same workflows are usable from a command line."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The maintainers position REA for lawful research, education, interoperability, software preservation, and analysis of software the user owns or is authorized to examine."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "According to the README, setup uses Node.js with npm and the command npx rea-agents setup."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "Setup registers REA's MCP server and matching workflow instructions, backs up existing configuration, and documents support for Claude Code, Codex, Cursor, Gemini CLI, Grok Build, and other agents."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README states REA requires Node.js 22.x at 22.19 or later, 24.x at 24.11 or later, or 26 or later."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "Native binary analysis uses caller-supplied Hopper, Ghidra, or IDA; setup can optionally install Hopper with approval."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "Static JavaScript and .NET inspection do not need a native analysis engine."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "Android APK analysis uses headless JADX and a full JDK."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "Firmware work uses Binwalk or Unblob on Linux; some other analysis workflows require caller-supplied tools for specific targets, including TShark for recorded packets and packet summaries, sigrok-cli for recorded logic signals, and pwntools for offline ELF layout and recorded Linux crashes."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "Analysis runs locally; the agent receives tool results while the model provider has its own data policy."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "On Linux, Ghidra, JADX, firmware tool launches, and static JavaScript or Electron analysis require a procps-compatible ps on PATH."
+        },
+        {
+          "evidence_ids": [
+            "release"
+          ],
+          "text": "Release 6.6.0 breaking changes state that older saved Evidence, analysis snapshots, and inventory observations are not migrated and must be regenerated."
+        },
+        {
+          "evidence_ids": [
+            "release"
+          ],
+          "text": "Release 6.6.0 described Kuna as a caller-supplied static-analysis provider; recorded real-provider coverage used Kuna 1.833 on Linux, and Windows, PE, and universal Mach-O were unsupported."
+        },
+        {
+          "evidence_ids": [
+            "release"
+          ],
+          "text": "Release 6.7.0 documents client-configuration fixes and says it includes the 6.6.0 changes."
+        },
+        {
+          "evidence_ids": [
+            "metadata",
+            "readme"
+          ],
+          "text": "REA-authored code is MIT-licensed, while third-party material retains its own licenses and notices."
+        },
+        {
+          "evidence_ids": [
+            "readme"
+          ],
+          "text": "The README states commercial tools including IDA Pro and Hex-Rays decompilers, Hopper, and JEB must be legally obtained and used under their own terms, and that REA grants no license, key, or activation entitlement for them."
+        }
+      ],
+      "edited": "REA, short for Reverse Engineer Anything, is an MIT-licensed TypeScript project; according to its README, it connects an agent to tools for inspecting native binaries, JavaScript and Electron applications, .NET assemblies, websites, Android APKs and devices, saved network and packet captures, firmware, model artifacts, and other targets [metadata][readme]. Its README describes an MCP-based workflow in which the agent inspects a local target, receives findings with evidence and limitations, and can use those results to explain behavior or write and test an implementation; the same workflows are usable from a command line [readme]. The maintainers position the project for lawful research, education, interoperability, software preservation, and analysis of software the user owns or is authorized to examine [readme].\n\nAccording to the README, setup uses Node.js with npm and the command npx rea-agents setup; it registers REA's MCP server and matching workflow instructions, backs up existing configuration, and documents support for Claude Code, Codex, Cursor, Gemini CLI, and Grok Build, among others [readme]. The README states that REA requires Node.js 22.x at 22.19 or later, 24.x at 24.11 or later, or 26 or later [readme]. Target support adds dependencies: native binary analysis uses a caller-supplied Hopper, Ghidra, or IDA, though setup can optionally install Hopper with approval; static JavaScript and .NET inspection do not need a native analysis engine; Android APK analysis uses headless JADX and a full JDK; firmware work uses Binwalk or Unblob on Linux; some other analysis workflows require caller-supplied tools, including TShark for recorded packets and packet summaries, sigrok-cli for recorded logic signals, and pwntools for offline ELF layout and recorded Linux crashes [readme].\n\nDocumented caveats include local analysis with the agent receiving tool results while the model provider's data policy remains separate; Linux workflows for Ghidra, JADX, firmware tool launches, and static JavaScript or Electron analysis require a procps-compatible ps on PATH; and the 6.6.0 breaking changes state that older saved Evidence, analysis snapshots, and inventory observations are not migrated and must be regenerated [readme][release]. Release 6.6.0 also described Kuna as a caller-supplied static-analysis provider, with recorded real-provider coverage on Linux using Kuna 1.833 and no support for Windows, PE, or universal Mach-O; those release-specific limitations should not be assumed to define all current or future support [release]. Release 6.7.0 documents client-configuration fixes and says it includes the 6.6.0 changes [release].\n\nREA-authored code is MIT-licensed, while third-party material keeps its own licenses and notices; the README states that commercial tools including IDA Pro and Hex-Rays decompilers, Hopper, and JEB must be legally obtained and used under their own terms, and that REA grants no license, key, or activation entitlement for them [metadata][readme].",
+      "notes": [
+        "Merged the single repository block across metadata, README, and release evidence into exactly one section, as required for repository mode.",
+        "Selected documented capabilities, intended lawful-use positioning, setup requirements, license terms, and caveats; did not enumerate the long release changelog.",
+        "Avoided star counts and trending badges because the task disallows unsupported trending or maturity claims; metadata language and license were retained.",
+        "Treated release entries as version-specific changes and preserved the recorded-coverage wording for Kuna rather than treating it as a universal current limitation.",
+        "Corrected the dependency summary so pwntools is tied to offline ELF layout and recorded Linux crashes, while TShark and sigrok-cli remain separate packet and signal tools."
+      ],
+      "scripts": {
+        "en": "REA, short for Reverse Engineer Anything, is an MIT-licensed TypeScript project. According to its README, it connects an agent to tools for inspecting native binaries, JavaScript and Electron applications, .NET assemblies, websites, Android apps and devices, saved captures, firmware, model artifacts, and other targets. Its README describes an MCP-based workflow: the agent inspects a local target, receives findings with evidence and limitations, and can use those results to explain behavior or write and test an implementation. The same workflows are usable from a command line. The maintainers position the project for lawful research, education, interoperability, software preservation, and analysis of software you own or are authorized to examine. According to the README, setup uses Node.js with npm and the command npx rea-agents setup. It registers REA's MCP server and matching workflow instructions, backs up existing configuration, and documents support for Claude Code, Codex, Cursor, Gemini CLI, Grok Build, and other agents. The README states REA requires Node.js 22.x, version 22.19 or later; 24.x, version 24.11 or later; or 26 or later. Target support adds dependencies: native binary analysis uses a caller-supplied Hopper, Ghidra, or IDA, though setup can optionally install Hopper with approval. Static JavaScript and .NET inspection do not need a native analysis engine. Android APK analysis uses headless JADX and a full JDK. Firmware work uses Binwalk or Unblob on Linux. Some other analysis workflows require caller-supplied tools, including TShark for recorded packets and packet summaries, sigrok-cli for recorded logic signals, and pwntools for offline ELF layout and recorded Linux crashes. Analysis runs locally; the agent receives tool results, while the model provider's data policy remains separate. On Linux, workflows for Ghidra, JADX, firmware tool launches, and static JavaScript or Electron analysis require a procps-compatible ps on PATH. Release 6.6.0 introduced breaking changes: older saved Evidence, analysis snapshots, and inventory observations are not migrated and must be regenerated. That release also described Kuna as a caller-supplied static-analysis provider, with recorded real-provider coverage on Linux using Kuna 1.833; Windows, PE, and universal Mach-O were unsupported in that coverage. Release 6.7.0 documents client-configuration fixes and says it includes the 6.6.0 changes. REA-authored code is MIT-licensed, while third-party material retains its own licenses and notices. The README states that commercial tools including IDA Pro and Hex-Rays decompilers, Hopper, and JEB must be legally obtained and used under their own terms, and that REA grants no license, key, or activation entitlement for them.",
+        "zh": "REA 是 Reverse Engineer Anything 的简称，是一个采用 MIT 许可证的 TypeScript 项目。根据项目说明，它把智能体连接到多种检查工具，用于分析原生二进制文件、JavaScript 和 Electron 应用、.NET 程序集、网站、Android 应用与设备、保存下来的抓包数据、固件、模型文件以及其他目标。项目说明描述了一种基于 MCP 的工作流：智能体检查本地目标，收到带有证据和局限性的结果，再利用这些结果解释行为，或编写并测试实现。同样的工作流也可以在命令行中使用。维护者将该项目定位为用于合法研究、教育、互操作、软件保存，以及分析自己拥有或获授权检查的软件。根据项目说明，安装使用 Node.js、npm 和命令 npx rea-agents setup。该命令会注册 REA 的 MCP 服务及配套工作流说明，备份现有配置，并记录支持 Claude Code、Codex、Cursor、Gemini CLI、Grok Build 及其他智能体。项目说明指出，REA 需要 Node.js 22.x，版本 22.19 及以上；24.x，版本 24.11 及以上；或 26 及以上。不同目标还需要额外依赖：原生二进制分析使用调用者提供的 Hopper、Ghidra 或 IDA，安装过程可在获得批准后选择安装 Hopper。静态 JavaScript 和 .NET 检查不需要原生分析引擎。Android APK 分析使用无界面的 JADX 和完整 JDK。Linux 上的固件工作使用 Binwalk 或 Unblob。部分其他分析工作流需要调用者提供的工具，包括：TShark 用于记录的数据包和包摘要，sigrok-cli 用于记录的逻辑信号，pwntools 用于离线 ELF 布局和记录的 Linux 崩溃。分析在本地运行；智能体接收工具结果，而模型提供商有自己的数据政策。Linux 上，Ghidra、JADX、固件工具启动以及静态 JavaScript 或 Electron 分析，需要 PATH 中存在兼容 procps 的 ps。6.6.0 版引入了破坏性变更：旧的已保存 Evidence、分析快照和清单观察结果不会迁移，必须重新生成。该版本还把 Kuna 描述为调用者提供的静态分析提供方；记录到的真实提供方覆盖在 Linux 上使用 Kuna 1.833，该覆盖不支持 Windows、PE 和通用 Mach-O。6.7.0 版记录了客户端配置修复，并说明包含 6.6.0 的变更。REA 编写的代码采用 MIT 许可证，第三方材料保留自己的许可证和声明。项目说明指出，包括 IDA Pro 与 Hex-Rays 反编译器、Hopper 和 JEB 在内的商业工具，必须合法获得并按其自身条款使用；REA 不授予这些工具的许可证、密钥或激活权益。"
+      },
+      "source_ids": [
+        "morluto/rea"
+      ],
+      "titles": {
+        "en": "REA: Reverse Engineer Anything with Agents",
+        "zh": "REA：用智能体逆向分析任何目标"
+      }
+    }
+  ],
+  "source_language": "en",
+  "summary": "Repository evidence for morluto/rea: metadata and README describe an MIT-licensed TypeScript MCP tool for local reverse engineering across binaries, applications, and runtime behavior, using caller-supplied analysis engines. Release notes cover 6.6.0 and 6.7.0, including breaking Evidence changes and client-configuration fixes."
+}

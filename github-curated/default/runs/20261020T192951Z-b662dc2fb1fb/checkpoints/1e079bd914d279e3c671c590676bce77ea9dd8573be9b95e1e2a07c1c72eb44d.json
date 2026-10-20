@@ -1,0 +1,5 @@
+{
+  "issues": [
+    "In the edited text and both narrations, the dependency sentence groups pwntools under “capture and signal workflows” (“部分抓包和信号工作流...pwntools”). The README supports TShark for recorded packets/packet summaries and sigrok-cli for recorded logic signals, but ties caller-supplied pwntools to offline ELF layout and recorded Linux crashes, not capture/signal workflows; reword to “some analysis workflows require…” or separate pwntools from the capture/signal tools to avoid implying a false dependency."
+  ]
+}

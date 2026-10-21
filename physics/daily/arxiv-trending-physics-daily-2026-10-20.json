@@ -1,0 +1,382 @@
+{
+  "schema": "arxiv-trending-physics.v1",
+  "category": "physics",
+  "window": "daily",
+  "date": "2026-10-20",
+  "title": "Physics on arXiv — Tuesday, 20 October 2026",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-10-20.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv publishes no official trending chart. This same-day selection is inferred from concrete results, cross-listing, and data/method breadth; attention and citation signals are too sparse to measure popularity.",
+  "snapshot_utc": "2026-10-21T00:23:27Z",
+  "submission_window_utc": {
+    "start": "2026-10-19T00:00:00Z",
+    "end_exclusive": "2026-10-20T00:00:00Z"
+  },
+  "archive_query_count": 290,
+  "sections": [
+    {
+      "id": "headline",
+      "kind": "headline",
+      "title": "Physics on arXiv — Tuesday, 20 October 2026",
+      "rank": null,
+      "url": null,
+      "content": "Eight notable papers from the announcement batch; experimental control of quantum and photonic systems alongside inference from neutron, gamma-ray, and Gaia datasets. Inferred selection, not measured popularity.",
+      "refs": [
+        "https://arxiv.org/list/physics/recent"
+      ]
+    },
+    {
+      "id": "2610.26792",
+      "kind": "paper",
+      "title": "First observation of weak magnetism in neutron decay",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.26792",
+      "arxiv_id": "2610.26792",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T17:40:03Z",
+      "categories": [
+        "hep-ph",
+        "hep-ex",
+        "nucl-ex",
+        "nucl-th"
+      ],
+      "authors": [
+        "Miriam Camarasa-Domene",
+        "Martín González-Alonso",
+        "Martín Novoa-Brunet"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics"
+      ],
+      "abstract": "Combining neutron β-asymmetry measurements with the neutron lifetime and superallowed-decay Ft values, the authors infer the weak-magnetism form factor in free-neutron decay for the first time.",
+      "claimed_result": "The authors obtain g_M = 4.47(87), consistent with their CVC value of 4.71, and report 5.0–6.1σ significance across tested neutron-data variations.",
+      "evidence_type": "theoretical; combined analysis of neutron β-asymmetry and lifetime data with superallowed 0⁺→0⁺ Ft values.",
+      "unique_caveat": "The inference inherits known internal tensions in the neutron datasets; a full energy-dependent asymmetry analysis would improve extraction by only a few percent under current conditions.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26792",
+        "https://arxiv.org/html/2610.26792v1"
+      ]
+    },
+    {
+      "id": "2610.26449",
+      "kind": "paper",
+      "title": "Two-Dimensional Quantum Droplets in a Mixture of Bose-Einstein Condensates",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.26449",
+      "arxiv_id": "2610.26449",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T14:07:02Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "physics.atom-ph"
+      ],
+      "authors": [
+        "Yue Zhang",
+        "Liangchao Chen",
+        "Wei Han",
+        "Linshan Gong",
+        "Yazhou Wang",
+        "Zekui Wang",
+        "Xinhao Liang",
+        "Wenjie Sui",
+        "Pengjun Wang",
+        "Lianghui Huang",
+        "Zengming Meng",
+        "Zhuxiong Ye",
+        "Jing Zhang"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Atomic, molecular and optical physics"
+      ],
+      "abstract": "The authors report a quasi-2D Bose-mixture experiment producing self-bound quantum droplets and Townes solitons, with droplets stable over a wider parameter range.",
+      "claimed_result": "In their quasi-2D setup, the authors observe 2D quantum droplets and Townes solitons; the droplets remain self-bound across a broader atom-number range than the solitons.",
+      "evidence_type": "experimental; ultracold Bose-Einstein-condensate mixture in a quasi-2D geometry.",
+      "unique_caveat": "The demonstration uses a quasi-2D geometry, so it is not a test of every strictly two-dimensional regime; stability is specific to the reported interaction and confinement conditions.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26449",
+        "https://arxiv.org/html/2610.26449v1"
+      ]
+    },
+    {
+      "id": "2610.26674",
+      "kind": "paper",
+      "title": "Terabit-scale wavelength-multiplexed transmitter enabled by thin-film lithium tantalate",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.26674",
+      "arxiv_id": "2610.26674",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T16:23:22Z",
+      "categories": [
+        "physics.app-ph",
+        "physics.optics"
+      ],
+      "authors": [
+        "Shivaprasad U. Hulyal",
+        "Dengyang Fang",
+        "Jiachen Cai",
+        "Xinru Ji",
+        "Alexander Kotz",
+        "Jiale Sun",
+        "Christian Koos",
+        "Tobias J. Kippenberg"
+      ],
+      "themes": [
+        "Instrumentation & detectors"
+      ],
+      "abstract": "A monolithic thin-film lithium-tantalate transmitter independently modulates eight wavelength channels and demonstrates an aggregate line rate of 1.6 Tbit/s.",
+      "claimed_result": "Measurements establish 1.6 Tbit/s aggregate line rate across eight channels; operation from a shared comb estimates 0.58 Tbit/s net across four channels.",
+      "evidence_type": "experimental; monolithic wavelength-division-multiplexed transmitter measurements.",
+      "unique_caveat": "The 10 Tbit/s figure is a scaling prospect. The shared-comb result covers four channels and is an estimated net data rate, distinct from the measured eight-channel aggregate line rate.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26674",
+        "https://arxiv.org/html/2610.26674v1"
+      ]
+    },
+    {
+      "id": "2610.26479",
+      "kind": "paper",
+      "title": "Observation and control of polariton noise in a thermal Rydberg atom electrometer",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.26479",
+      "arxiv_id": "2610.26479",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T14:25:37Z",
+      "categories": [
+        "physics.atom-ph",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "authors": [
+        "Teng Zhang",
+        "Luís Felipe Gonçalves",
+        "Alisher Duspayev",
+        "Georg Raithel",
+        "David A. Anderson"
+      ],
+      "themes": [
+        "Atomic, molecular and optical physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "The authors observe structured polariton-mediated optical noise in a thermal Rydberg vapor and use an RF field to suppress and tune that noise in an electrometer.",
+      "claimed_result": "The authors attribute structured amplification and reduction to nonlinear slow-light feedback and show that the reference RF field can tune the operating point toward high responsivity with reduced optical noise.",
+      "evidence_type": "experimental; thermal-vapor Rydberg electrometry with radio-frequency control.",
+      "unique_caveat": "The paper demonstrates an optimization knob, not attainment of a fundamental sensitivity limit; performance remains constrained by the Rydberg-polariton medium.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26479"
+      ]
+    },
+    {
+      "id": "2610.26715",
+      "kind": "paper",
+      "title": "Proximity Transient Absorption in van der Waals Heterostructures",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.26715",
+      "arxiv_id": "2610.26715",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T16:48:09Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "authors": [
+        "Neema Rafizadeh",
+        "Ting Zheng",
+        "Hui Zhao"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Atomic, molecular and optical physics"
+      ],
+      "abstract": "In graphene/hBN/WS₂ stacks, graphene photo-carriers produce a transient optical response at a WS₂ exciton even though the layers are electronically isolated by hBN.",
+      "claimed_result": "The authors show that the WS₂ exciton acts as an optical transducer of graphene carrier dynamics through Coulomb screening, with a substantial signal even for hBN separations approaching 2 nm.",
+      "evidence_type": "experimental; transient-absorption spectroscopy on graphene/hBN/WS₂ heterostructures.",
+      "unique_caveat": "The evidence is from a specific material stack; the signal weakens as the hBN spacer grows, and transfer to other materials or geometries remains to be tested.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26715"
+      ]
+    },
+    {
+      "id": "2610.26374",
+      "kind": "paper",
+      "title": "The Milky Way's Early Disk Was Built in Bursts. I. Evidence from Low-angular-momentum, High-$α$ Stars Scattered Out of the Protodisk by Merger Events",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.26374",
+      "arxiv_id": "2610.26374",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T13:30:09Z",
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "authors": [
+        "Tiancheng Sun",
+        "Maosheng Xiang",
+        "Shaolan Bi",
+        "Jifeng Liu",
+        "Meng Zhang",
+        "Yaqian Wu"
+      ],
+      "themes": [
+        "Astrophysics"
+      ],
+      "abstract": "Using Gaia DR3 subgiants, the authors identify two age–metallicity components among low-angular-momentum high-α stars and interpret them as evidence for episodic early disk growth and merger perturbations.",
+      "claimed_result": "The authors find age–metallicity peaks near 11.5 Gyr/[Fe/H] −0.59 and 12.5 Gyr/−0.86, and infer a possible substantial perturbation 10.8–11.5 billion years ago.",
+      "evidence_type": "observational; Gaia DR3 stellar ages, kinematics, and abundances, analyzed with forward modeling.",
+      "unique_caveat": "Associations with Gaia–Sausage–Enceladus and the proposed Low-energy–Kraken–Heracles events are tentative, not identified merger detections.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26374"
+      ]
+    },
+    {
+      "id": "2610.26648",
+      "kind": "paper",
+      "title": "Dark Matter Interpretations of the Galactic Center Gamma-Ray Excess with 18 Years of Fermi-LAT Data and the FL16Y Source Catalog",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2610.26648",
+      "arxiv_id": "2610.26648",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T16:08:00Z",
+      "categories": [
+        "hep-ph",
+        "astro-ph.HE"
+      ],
+      "authors": [
+        "Sang Hwan Kim",
+        "Hae Barg Kang",
+        "Seodong Shin"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Astrophysics"
+      ],
+      "abstract": "An analysis of 17.7 years of Fermi-LAT data tests dark-matter explanations of the Galactic Center excess against diffuse-emission, dwarf-galaxy, and antiproton constraints.",
+      "claimed_result": "Under the authors’ adopted models, dwarf-galaxy limits exclude several 68% confidence Galactic Center Excess regions, while some τ-rich and mediator-cascade regions remain compatible.",
+      "evidence_type": "computational; gamma-ray template analysis plus dwarf-galaxy likelihood limits and antiproton constraints.",
+      "unique_caveat": "Allowed regions depend on the adopted diffuse-emission and cosmic-ray propagation models; the paper presents model-conditioned constraints, not evidence that dark matter caused the excess.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26648"
+      ]
+    },
+    {
+      "id": "2610.26471",
+      "kind": "paper",
+      "title": "End-to-End Optimization of Partial Fault Tolerance in Neutral-Atom Arrays",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2610.26471",
+      "arxiv_id": "2610.26471",
+      "arxiv_version": "v1",
+      "published": "2026-10-19T14:18:12Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.quant-gas",
+        "physics.atom-ph"
+      ],
+      "authors": [
+        "Stefano Veroni",
+        "Aydin Deger",
+        "Andrew J. Daley"
+      ],
+      "themes": [
+        "Quantum information",
+        "Condensed matter & materials",
+        "Computational & data methods"
+      ],
+      "abstract": "The authors co-design a partially fault-tolerant quantum-computing architecture with neutral-atom hardware and estimate reduced logical error and resource overhead in circuit simulations.",
+      "claimed_result": "In circuit-level simulations, the authors estimate over an order-of-magnitude logical-error reduction versus earlier estimates and roughly an order-of-magnitude reduction in state-injection depth for partial versus full fault tolerance in their target application.",
+      "evidence_type": "computational; hardware-informed logical-noise and surface-code circuit simulations for a Fermi–Hubbard simulation target.",
+      "unique_caveat": "These are model-dependent estimates, not a hardware demonstration; the favorable regime assumes moderate physical error rates around 10⁻³ and several thousand qubits.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-10-20",
+      "refs": [
+        "https://arxiv.org/abs/2610.26471"
+      ]
+    },
+    {
+      "id": "themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": null,
+      "content": [
+        "Quantum many-body control: droplets, neutral-atom quantum simulation, and Rydberg noise control.",
+        "Photonic interfaces and optical readout: wavelength-multiplexed transmitter and proximity transient absorption.",
+        "Large datasets as physics discriminants: neutron precision data, Fermi-LAT gamma rays, and Gaia stellar populations."
+      ],
+      "refs": [
+        "https://arxiv.org/abs/2610.26449",
+        "https://arxiv.org/abs/2610.26471",
+        "https://arxiv.org/abs/2610.26479",
+        "https://arxiv.org/abs/2610.26674",
+        "https://arxiv.org/abs/2610.26715",
+        "https://arxiv.org/abs/2610.26792",
+        "https://arxiv.org/abs/2610.26374",
+        "https://arxiv.org/abs/2610.26648"
+      ]
+    },
+    {
+      "id": "open-problems",
+      "kind": "open_problems",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": null,
+      "content": [
+        "Reduce neutron-data tensions and improve independent lifetime/asymmetry inputs.",
+        "Map quantum-droplet stability across confinement and interaction regimes.",
+        "Test photonic channel scaling, package integration, power, and error performance.",
+        "Quantify proximity-spectroscopy response across spacer thicknesses and material stacks.",
+        "Improve gamma-ray foreground and cosmic-ray propagation constraints.",
+        "Validate partial-fault-tolerance noise assumptions on neutral-atom hardware."
+      ],
+      "refs": [
+        "https://arxiv.org/abs/2610.26792",
+        "https://arxiv.org/abs/2610.26449",
+        "https://arxiv.org/abs/2610.26674",
+        "https://arxiv.org/abs/2610.26715",
+        "https://arxiv.org/abs/2610.26648",
+        "https://arxiv.org/abs/2610.26471"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": null,
+      "content": "The clearest experimental advances are a quasi-2D quantum-droplet realization and a measured multi-wavelength terabit transmitter; the neutron result is a statistical claim from existing data. Quantum-computing and dark-matter conclusions remain model-conditional.",
+      "refs": [
+        "https://arxiv.org/abs/2610.26449",
+        "https://arxiv.org/abs/2610.26674",
+        "https://arxiv.org/abs/2610.26792",
+        "https://arxiv.org/abs/2610.26471",
+        "https://arxiv.org/abs/2610.26648"
+      ]
+    },
+    {
+      "id": "method",
+      "kind": "method",
+      "title": "Method and sources",
+      "rank": null,
+      "url": null,
+      "content": "Daily window: 2026-10-19 00:00 UTC through 2026-10-20 00:00 UTC; announcement batch 2026-10-20. Snapshot 2026-10-21 00:23:27 UTC. 290 distinct records retrieved across the configured physics archives. Ranking is inferred; no official arXiv trending chart and same-day citation evidence is sparse.",
+      "refs": [
+        "https://arxiv.org/list/physics/recent"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-22",
+  "title": "GitHub Trending Summary - Daily - 2026-10-22",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-10-22.md",
+  "entry_count": 13,
+  "entry_noun": "repositories",
+  "ranking_basis": "Daily GitHub Trending star gains; one newly active repo appended as a separately labelled discovery",
+  "ranking_explanation": "Trending entries ranked by displayed stars gained today; NVIDIA/flare-local-inference was found via GitHub Search for recently created and pushed repositories and is appended because GitHub does not provide its daily gain on Trending.",
+  "global_caveat": "Snapshot captured at 00:26 UTC; the daily Trending window is in progress.",
+  "themes": [],
+  "sections": [
+    {
+      "id": "01-dietrichgebert-ponytail",
+      "kind": "repo",
+      "title": "DietrichGebert/ponytail",
+      "rank": 1,
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars_gained": 2079,
+      "total_stars": 171611,
+      "default_branch_commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "why_notable": "",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "ponytail",
+      "enrichment": null
+    },
+    {
+      "id": "02-cloudflare-security-audit-skill",
+      "kind": "repo",
+      "title": "cloudflare/security-audit-skill",
+      "rank": 2,
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars_gained": 2012,
+      "total_stars": 36447,
+      "default_branch_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "why_notable": "",
+      "theme_ids": [
+        "agent-security"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "security-audit-skill",
+      "enrichment": null
+    },
+    {
+      "id": "03-stablyai-orca",
+      "kind": "repo",
+      "title": "stablyai/orca",
+      "rank": 3,
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "stars_gained": 1541,
+      "total_stars": 101225,
+      "default_branch_commit": "7a8974b7012aa177b633af045f610e058e6cb17d",
+      "why_notable": "",
+      "theme_ids": [
+        "agent-orchestration"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "orca",
+      "enrichment": null
+    },
+    {
+      "id": "04-graphify-labs-graphify",
+      "kind": "repo",
+      "title": "Graphify-Labs/graphify",
+      "rank": 4,
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "stars_gained": 1433,
+      "total_stars": 131624,
+      "default_branch_commit": "847a93f3cab5e2c82ea9170014b21cd2c52a4417",
+      "why_notable": "",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "graphify",
+      "enrichment": null
+    },
+    {
+      "id": "05-comfy-org-comfyui",
+      "kind": "repo",
+      "title": "Comfy-Org/ComfyUI",
+      "rank": 5,
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "language": "Python",
+      "stars_gained": 939,
+      "total_stars": 141504,
+      "default_branch_commit": "46aad33e4d4c0696582611bf450dd93742fa9090",
+      "why_notable": "",
+      "theme_ids": [
+        "local-generative-media"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "ComfyUI",
+      "enrichment": null
+    },
+    {
+      "id": "06-shiyu-coder-kronos",
+      "kind": "repo",
+      "title": "shiyu-coder/Kronos",
+      "rank": 6,
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars_gained": 575,
+      "total_stars": 42823,
+      "default_branch_commit": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+      "why_notable": "",
+      "theme_ids": [
+        "market-models"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "sparse",
+      "narration_priority": 6,
+      "spoken_name": "Kronos",
+      "enrichment": null
+    },
+    {
+      "id": "07-supabase-supabase",
+      "kind": "repo",
+      "title": "supabase/supabase",
+      "rank": 7,
+      "url": "https://github.com/supabase/supabase",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "language": "TypeScript",
+      "stars_gained": 504,
+      "total_stars": 112993,
+      "default_branch_commit": "d4584290813a59954d7d6f098a5fb31ff433afaa",
+      "why_notable": "",
+      "theme_ids": [
+        "developer-platforms"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "supabase",
+      "enrichment": null
+    },
+    {
+      "id": "08-headroomlabs-ai-headroom",
+      "kind": "repo",
+      "title": "headroomlabs-ai/headroom",
+      "rank": 8,
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "language": "Python",
+      "stars_gained": 474,
+      "total_stars": 77247,
+      "default_branch_commit": "e995eb9f1dacac7ed548758406de6c1508caef95",
+      "why_notable": "",
+      "theme_ids": [
+        "agent-efficiency"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "headroom",
+      "enrichment": null
+    },
+    {
+      "id": "09-vllm-project-vllm",
+      "kind": "repo",
+      "title": "vllm-project/vllm",
+      "rank": 9,
+      "url": "https://github.com/vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "language": "Python",
+      "stars_gained": 441,
+      "total_stars": 94861,
+      "default_branch_commit": "30aded62d46dfcf52c815925a8acec5a8bebddc6",
+      "why_notable": "",
+      "theme_ids": [
+        "inference-serving"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 9,
+      "spoken_name": "vllm",
+      "enrichment": null
+    },
+    {
+      "id": "10-strelov1-freehire",
+      "kind": "repo",
+      "title": "strelov1/freehire",
+      "rank": 10,
+      "url": "https://github.com/strelov1/freehire",
+      "description": "freehire — the open-source search engine for job seekers",
+      "language": "Go",
+      "stars_gained": 360,
+      "total_stars": 2378,
+      "default_branch_commit": "c2685c0c9e8cf223a591e51c86bd0964daa3651e",
+      "why_notable": "",
+      "theme_ids": [
+        "search-apps"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "sparse",
+      "narration_priority": 10,
+      "spoken_name": "freehire",
+      "enrichment": null
+    },
+    {
+      "id": "11-akitaonrails-ai-memory",
+      "kind": "repo",
+      "title": "akitaonrails/ai-memory",
+      "rank": 11,
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars_gained": 286,
+      "total_stars": 12321,
+      "default_branch_commit": "1c86aebc14addccc7ac875913d565c681bfa4a50",
+      "why_notable": "",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "sparse",
+      "narration_priority": 11,
+      "spoken_name": "ai-memory",
+      "enrichment": null
+    },
+    {
+      "id": "12-twentyhq-twenty",
+      "kind": "repo",
+      "title": "twentyhq/twenty",
+      "rank": 12,
+      "url": "https://github.com/twentyhq/twenty",
+      "description": "The open alternative to Salesforce, designed for AI.",
+      "language": "TypeScript",
+      "stars_gained": 112,
+      "total_stars": 59156,
+      "default_branch_commit": "64f3be585be5e505da76324da23a3defd0152c85",
+      "why_notable": "",
+      "theme_ids": [
+        "developer-platforms"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "sparse",
+      "narration_priority": 12,
+      "spoken_name": "twenty",
+      "enrichment": null
+    },
+    {
+      "id": "13-nvidia-flare-local-inference",
+      "kind": "repo",
+      "title": "NVIDIA/flare-local-inference",
+      "rank": 13,
+      "url": "https://github.com/NVIDIA/flare-local-inference",
+      "description": "Flare is a local inference server for NVIDIA SM120/SM121 GPUs, built for long conversations, coding agents, and repeated tool use.",
+      "language": "Python",
+      "stars_gained": null,
+      "total_stars": 504,
+      "default_branch_commit": "5f37bd14062334f7687d168d58ea00567b9aa7fe",
+      "why_notable": "",
+      "theme_ids": [
+        "inference-serving"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 13,
+      "spoken_name": "flare-local-inference",
+      "enrichment": null
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": ""
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": ""
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": ""
+    }
+  ]
+}

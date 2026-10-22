@@ -1,0 +1,273 @@
+{
+  "schema": "research-radar/arxiv-trending-physics/v1",
+  "category": "physics",
+  "window": {
+    "type": "daily",
+    "start": "2026-10-22",
+    "end": "2026-10-22",
+    "announcement_batch": "2026-10-22",
+    "snapshot_utc": "2026-10-22T16:20:55Z"
+  },
+  "date": "2026-10-22",
+  "title": "Physics on arXiv — 22 October 2026 (notable recent papers)",
+  "global_caveat": "arXiv publishes no official trending chart. This is an inferred ranking based on paper-specific scientific signals, not readership or downloads; citation evidence is limited for papers only hours old.",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-10-22.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "2610.29838",
+      "kind": "paper",
+      "title": "PSR J0653+0443: An Eclipsing Millisecond Pulsar in an Extremely Eccentric Double Neutron Star System",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.29838",
+      "arxiv_id": "2610.29838",
+      "arxiv_version": 1,
+      "published": "2026-10-21T15:00:50Z",
+      "categories": [
+        "astro-ph.HE"
+      ],
+      "authors": [
+        "Z. L. Yang",
+        "J. L. Han",
+        "L. G. Hou",
+        "Z. W. Chen",
+        "Y. G. Gong",
+        "et al."
+      ],
+      "themes": [
+        "Astrophysics",
+        "Cosmology & gravitation"
+      ],
+      "abstract": "FAST discovery of an extremely eccentric double-neutron-star binary with eccentricity 0.992387, an 85-second eclipse, and unusual pulse timing near periastron.",
+      "claimed_result": "From more than two years of FAST timing, the authors infer a nearly edge-on DNS system and constrain its non-relativistic periastron advance; population synthesis makes such systems rare.",
+      "evidence_type": "observational; FAST radio observations and phase-connected pulse-timing analysis",
+      "unique_caveat": "Formation history and rarity depend on binary-evolution and population-synthesis assumptions; one system is not a population measurement.",
+      "refs": [
+        "https://arxiv.org/abs/2610.29838"
+      ]
+    },
+    {
+      "id": "2610.29986",
+      "kind": "paper",
+      "title": "Meter-scale quantum interconnects between large quantum processors",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.29986",
+      "arxiv_id": "2610.29986",
+      "arxiv_version": 1,
+      "published": "2026-10-21T16:28:16Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": [
+        "Neereja M. Sundaresan",
+        "Nicholas Cotaj",
+        "Yadav Prasad Kandel",
+        "Eric Lewandowski",
+        "Christian Robert Longton",
+        "et al."
+      ],
+      "themes": [
+        "Quantum information",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Four superconducting-cable links connect two 120-qubit processors, with state transfer, remote CZ gates, and entanglement across modules.",
+      "claimed_result": "The authors report 99.00% mean state-transfer fidelity and 94.75% mean fidelity for distant CZ gates, with entangled states across processors.",
+      "evidence_type": "experimental; two IBM Nighthawk R1 processors and four 80-cm aluminum coaxial L-couplers",
+      "unique_caveat": "Only two modules and four links were demonstrated; link loss and cooldown reproducibility remain scale-up concerns.",
+      "refs": [
+        "https://arxiv.org/abs/2610.29986"
+      ]
+    },
+    {
+      "id": "2610.29980",
+      "kind": "paper",
+      "title": "International atomic clock comparison achieving 5×10^-18 uncertainty",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.29980",
+      "arxiv_id": "2610.29980",
+      "arxiv_version": 1,
+      "published": "2026-10-21T16:26:08Z",
+      "categories": [
+        "physics.atom-ph",
+        "quant-ph"
+      ],
+      "authors": [
+        "A. Tofful",
+        "M. Filzinger",
+        "T. Schmidt",
+        "A. Amy-Klein",
+        "E. Benkler",
+        "et al."
+      ],
+      "themes": [
+        "Atomic, molecular & optical physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Two independently developed ytterbium-ion optical clocks in the UK and Germany agree to a fractional frequency difference of 1.0(4.8)×10^-18 over a 2,220-km fiber link.",
+      "claimed_result": "The authors find no statistically significant Lorentz-violating modulation and improve the uncertainty on a Robertson–Mansouri–Sexl parameter constraint by about a factor of five.",
+      "evidence_type": "experimental; two single-ion 171Yb+ E3 clocks linked by a phase-stabilized 2,220-km optical fiber network",
+      "unique_caveat": "Relativistic redshift correction including time-varying gravity potential dominates uncertainty; this is not a redefinition of the SI second.",
+      "refs": [
+        "https://arxiv.org/abs/2610.29980"
+      ]
+    },
+    {
+      "id": "2610.29684",
+      "kind": "paper",
+      "title": "Euclid Quick Data Release (Q1). A systematic study of the intracluster light fraction at 0.2 < z < 1.5",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.29684",
+      "arxiv_id": "2610.29684",
+      "arxiv_version": 1,
+      "published": "2026-10-21T12:57:51Z",
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "authors": [
+        "Euclid Collaboration",
+        "H. Gully",
+        "N. A. Hatch",
+        "H. Gao",
+        "S. P. Bamford",
+        "et al."
+      ],
+      "themes": [
+        "Astrophysics",
+        "Computational & data methods"
+      ],
+      "abstract": "Across roughly 300 clusters, the authors estimate ICL at about 40% of BCG-plus-ICL light and 20% of total cluster stellar light, approximately stable at fixed mass over 0.2<z<1.5.",
+      "claimed_result": "The authors infer that the relative BCG/ICL/satellite partition is largely established by z~1.5, while noting the sample is not an evolutionary sequence.",
+      "evidence_type": "observational; Euclid Q1 imaging and SPT/optically selected cluster samples, compared with Hydrangea simulations",
+      "unique_caveat": "ICL fraction depends on wavelength and measurement choices; the sample cannot track evolution of individual clusters.",
+      "refs": [
+        "https://arxiv.org/abs/2610.29684"
+      ]
+    },
+    {
+      "id": "2610.29137",
+      "kind": "paper",
+      "title": "NGC 3227 Blinks: An Extreme Changing-Look Event in a Seyfert Galaxy",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.29137",
+      "arxiv_id": "2610.29137",
+      "arxiv_version": 1,
+      "published": "2026-10-21T03:18:57Z",
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.HE"
+      ],
+      "authors": [
+        "Kaiwen Zhang",
+        "Michael S. Brotherton",
+        "Pu Du",
+        "Dong-Wei Bao",
+        "Bi-Xuan Zhao",
+        "et al."
+      ],
+      "themes": [
+        "Astrophysics"
+      ],
+      "abstract": "NGC 3227 faded by over 70% in optical continuum and nearly lost broad H-beta within weeks, then recovered within two months, with X-ray hardening and persistent reverberation.",
+      "claimed_result": "The authors argue a compact Compton-thick obscurer inside the broad-line region explains the fast optical suppression while reverberation continues.",
+      "evidence_type": "observational; optical monitoring, Swift X-ray observations, reverberation mapping, and supporting variability/photoionization analyses",
+      "unique_caveat": "The obscurer interpretation is model-dependent, and one event does not establish prevalence.",
+      "refs": [
+        "https://arxiv.org/abs/2610.29137"
+      ]
+    },
+    {
+      "id": "2610.29923",
+      "kind": "paper",
+      "title": "Cosmic Ray Observations using Coincident Scintillator and Radio Signals with BEACON",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.29923",
+      "arxiv_id": "2610.29923",
+      "arxiv_version": 1,
+      "published": "2026-10-21T15:59:11Z",
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.HE"
+      ],
+      "authors": [
+        "Zachary Martin",
+        "Jackson Hinkel",
+        "Kira Perna",
+        "Andrew Zeolla",
+        "Jaime Alvarez-Muñiz",
+        "et al."
+      ],
+      "themes": [
+        "Astrophysics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "BEACON reports 22 candidate cosmic-ray events selected from coincident scintillator and radio data, with polarization consistent with geomagnetic emission.",
+      "claimed_result": "The authors report candidate cosmic-ray detections and find that simulated hybrid-instrument performance reproduces the observed rate to within an order of magnitude; this is not tau-neutrino detection.",
+      "evidence_type": "experimental; BEACON six-antenna radio prototype and scintillator-coincidence dataset, with detector simulations",
+      "unique_caveat": "Events are candidates and the quoted background comes from synthetic pairings; more exposure and independent reconstruction are needed.",
+      "refs": [
+        "https://arxiv.org/abs/2610.29923"
+      ]
+    },
+    {
+      "id": "2610.30092",
+      "kind": "paper",
+      "title": "Spatial Control of Compressible Active Fluids",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2610.30092",
+      "arxiv_id": "2610.30092",
+      "arxiv_version": 1,
+      "published": "2026-10-21T17:41:26Z",
+      "categories": [
+        "cond-mat.soft"
+      ],
+      "authors": [
+        "Yu-Chuan Cheng",
+        "Dimitris Krommydas",
+        "Seungwoo Shin",
+        "Paarth Gulati",
+        "Michael F. Hagan",
+        "et al."
+      ],
+      "themes": [
+        "Biophysics & soft matter",
+        "Plasma & fluid physics"
+      ],
+      "abstract": "Experiments and continuum theory show that patterned activity redistributes microtubules in an active fluid, with density contrast depending on wavelength and vortex structure.",
+      "claimed_result": "The authors find that nematic active stress plus isotropic active pressure reproduce observed modulation and explain suppression at short wavelengths.",
+      "evidence_type": "experimental; patterned-activity microtubule active-fluid experiments and continuum modeling",
+      "unique_caveat": "Results are tied to the tested microtubule system and sinusoidal activity patterns; generality to other active materials remains untested.",
+      "refs": [
+        "https://arxiv.org/abs/2610.30092"
+      ]
+    },
+    {
+      "id": "2610.30098",
+      "kind": "paper",
+      "title": "Pure dephasing destroys two-photon amplitude, not nonlinear phase",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2610.30098",
+      "arxiv_id": "2610.30098",
+      "arxiv_version": 1,
+      "published": "2026-10-21T17:45:34Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": [
+        "Matthew Kozma",
+        "Stephen Hughes"
+      ],
+      "themes": [
+        "Quantum information",
+        "Atomic, molecular & optical physics"
+      ],
+      "abstract": "For a chiral waveguide-emitter model, a closed-form dephased two-photon scattering calculation leaves the conditional phase at π while suppressing the amplitude carrying it.",
+      "claimed_result": "The authors find unequal attenuation of one- and two-photon channels and that standard correlator factorization misses 16–81% of pairs over the modeled dephasing range.",
+      "evidence_type": "theoretical; two-photon scattering calculation cross-checked with a Fock-state master equation",
+      "unique_caveat": "Model-based prediction, not a hardware measurement; implications depend on emitter-waveguide assumptions and dephasing regime.",
+      "refs": [
+        "https://arxiv.org/abs/2610.30098"
+      ]
+    }
+  ]
+}

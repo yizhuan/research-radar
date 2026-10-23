@@ -1,0 +1,666 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": {
+    "kind": "weekly",
+    "start": "2026-10-17",
+    "end": "2026-10-23",
+    "timezone": "UTC",
+    "snapshot_time": "2026-10-23T15:09:07Z"
+  },
+  "date": "2026-10-23",
+  "title": "Biology and Biomedicine on arXiv — weekly snapshot, 17–23 October 2026",
+  "source_report": "/home/yizhuan/.research/bio/weekly/arxiv-trending-bio-weekly-2026-10-23.md",
+  "entry_count": 11,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending ranking, citation and independent-attention evidence is sparse for this very recent set, and arXiv biomedical coverage is incomplete; this is an inferred evidence/relevance-ranked shortlist, not a popularity chart or clinical evidence review.",
+  "candidate_count": 99,
+  "new_submission_count": 60,
+  "revision_count": 39,
+  "sections": [
+    {
+      "id": "headline",
+      "kind": "headline",
+      "title": "Biology and Biomedicine on arXiv — weekly snapshot, 17–23 October 2026",
+      "rank": null,
+      "url": "",
+      "summary": "11 notable recent papers selected from 99 deduplicated date/category matches; recurring threads include experimental feedback in AI molecular design, molecular-recognition modeling, and transcriptomic robustness/privacy.",
+      "refs": []
+    },
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "Aptamers as a sandbox for lab-in-the-loop agentic molecular discovery",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.24806",
+      "arxiv_id": "2610.24806",
+      "arxiv_version": "1",
+      "published": "2026-10-17T18:21:50Z",
+      "updated": "2026-10-17T18:21:50Z",
+      "categories": {
+        "primary": "q-bio.BM",
+        "all": [
+          "q-bio.BM",
+          "cs.AI",
+          "q-bio.QM"
+        ]
+      },
+      "authors": [
+        "Zachary Cutts",
+        "John Coller",
+        "Rachel Chen",
+        "Hua Tang",
+        "Mathias Bellaiche",
+        "Ryder Easterlin",
+        "Dina Zverinski",
+        "Petar Sirkovic",
+        "Avinatan Hassidim",
+        "Yossi Matias",
+        "Pooja Rao",
+        "Annalisa Pawlosky"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "DNA & genomics",
+        "Quantitative methods"
+      ],
+      "abstract": "Despite breakthroughs in AI-driven molecular generation, existing discovery pipelines operate largely in silico, with wet-lab feedback reserved for validation rather than iterative improvement. Whether large language model (LLM)-based reasoning agents can accelerate de novo discovery by iterating with lab data remains unproven. Here we use protein-binding aptamer design as a sandbox (1-2 week cycles, \\$1-\\$3 per candidate) to demonstrate a wet lab in a closed loop with AI systems. We tasked agentic pipelines with developing aptamer binders against $α$-thrombin and myoglobin across three design-test-improve cycles ($\\sim$1,000 candidates per round; $\\sim$4,400 constructs). Statistically significant, bead-corrected on-target hit rates among new candidates rose across rounds from 0.0% in Round 1 to 26.0% in Round 2 and 42.1% in Round 3 on $α$-thrombin (37.1% excluding literature motif descendants), and from 10.2% in Round 1 to 3.7% in Round 2 and 33.5% in Round 3 on myoglobin. Single-clone bead-binding titrations of eight full-length $α$-thrombin candidates confirmed concordance with pooled sequencing enrichment (Pearson $r = 0.90$). In these assays, literature-derived motifs engineered by the agents to reduce off-target reactivity in the pooled screen reached apparent affinities of $K_D = 24.6$--$133$ nM, whereas de novo scaffolds showed low-micromolar binding ($K_D > 1\\ μ$M). We also report how our pipelines used myoglobin binding data to exploit the G-quadruplex binder space, diagnose cross-reactivity as on-target specificity dropped from 75.0% to 19.1%, and recover by developing strategies that restored specificity to 72.4%. We demonstrate that empirical lab data is more valuable than existing computational proxies, showing how iterative experimental feedback enables AI agents to diagnose assay artifacts and refine molecular designs across rounds.",
+      "claimed_contribution": "The authors report three rounds of AI-guided ssDNA aptamer design and screening against α-thrombin and myoglobin, with bead-corrected hit-rate changes and orthogonal titrations for eight thrombin candidates.",
+      "unique_caveat": "No matched-budget no-feedback or non-agent control arms isolate the contribution of agentic reasoning; assays cover two proteins and do not establish in-vivo or clinical performance.",
+      "evidence_for_ranking": "Three wet-lab rounds across about 4,400 sequenced constructs; eight-clone titration check (reported r=0.90); cross-listed in three relevant categories; author-affiliated Google Research publication/blog mention.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-17",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.24806"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.24806v1"
+        },
+        {
+          "label": "additional source",
+          "url": "https://research.google/pubs/aptamers-as-a-sandbox-for-lab-in-the-loop-agentic-molecular-discovery/"
+        },
+        {
+          "label": "additional source",
+          "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+        }
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "ProMORNA: An End-to-End Generative Framework for Full-Length mRNA Design",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2605.01513",
+      "arxiv_id": "2605.01513",
+      "arxiv_version": "2",
+      "published": "2026-05-02T16:05:51Z",
+      "updated": "2026-10-21T13:02:48Z",
+      "categories": {
+        "primary": "cs.LG",
+        "all": [
+          "cs.LG",
+          "cs.AI",
+          "q-bio.BM"
+        ]
+      },
+      "authors": [
+        "Zixi Shao",
+        "Tao Wang",
+        "Ye Shen",
+        "Tianyi Huang",
+        "Yibei Xiao"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Designing therapeutic messenger RNA (mRNA) requires generating full-length transcripts that optimally balance intracellular stability and translation efficiency. While generative models have advanced mRNA design, existing approaches rely on region-wise generation, expensive inference-time search, or target-specific model updates. To overcome these limitations, we introduce ProMORNA, a zero-shot, end-to-end generative framework for full-length mRNA design. ProMORNA aligns the design process with modern Large Language Model training pipelines: it utilizes a BART-style architecture pre-trained on over 6 million natural protein-mRNA pairs, followed by a two-stage post-training process comprising cold-start supervised fine-tuning and multi-objective reinforcement learning. By standardizing and aggregating relative advantages at the individual metric level with domain-specific stabilization, our post-training stage directly aligns the generative policy with conflicting biological constraints while avoiding direct scalarization of raw objective scores. In silico evaluations demonstrate that ProMORNA pushes the Pareto frontier of predicted stability and translation efficiency beyond standard baselines and GEMORNA, a leading state-of-the-art method. In three independent in vitro Fluc2P experiments, Candidate 2 achieved a 12-72h reporter-activity AUC 3.33 times that of the conventional Benchmark (Holm-adjusted $P=0.01285$), while its estimated 1.29-fold advantage over the reported best GEMORNA candidate remained exploratory. These results support ProMORNA as a promising framework for generating functionally active full-length mRNA candidates.",
+      "claimed_contribution": "The revised paper presents a full-length mRNA generator pretrained on over six million protein–mRNA pairs and reports predicted design trade-offs plus a small in-vitro Fluc2P reporter screen.",
+      "unique_caveat": "The prospective validation covered seven selected candidates and one reporter protein; reporter activity is not a direct measurement of stability or translation, and no animal or human validation is reported.",
+      "evidence_for_ranking": "Substantive v2 revision in-window adds in-vitro validation; three independent reporter experiments and an explicit comparator; cross-listed in cs.LG, cs.AI and q-bio.BM.",
+      "announcement_type": "revision",
+      "announcement_date": "2026-10-21",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2605.01513"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2605.01513v2"
+        }
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "RiboBridge: protein-conditioned de novo RNA binder structure design",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.30668",
+      "arxiv_id": "2610.30668",
+      "arxiv_version": "1",
+      "published": "2026-10-22T03:32:07Z",
+      "updated": "2026-10-22T03:32:07Z",
+      "categories": {
+        "primary": "cs.LG",
+        "all": [
+          "cs.LG",
+          "q-bio.BM"
+        ]
+      },
+      "authors": [
+        "Zhou Zhang",
+        "Hanqun Cao",
+        "Minghao Sun",
+        "Odin Zhang",
+        "Yang Zhang",
+        "Pheng Ann Heng",
+        "Wujun Li",
+        "Tianfan Fu"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Designing RNA molecules that bind to target protein structures requires generating both an RNA conformation and its bound complex geometry, without assuming a predefined binding site. Existing approaches generally model these coupled processes within a unified representation, entangling RNA conformation generation with protein-relative placement. In this work, we introduce RiboBridge, a structure-first framework that separates RNA conformational generation from protein--RNA assembly through cross-frame interaction geometry. RiboBridge first proposes multiple candidate RNA-binding interfaces on the protein surface, generates canonical RNA conformations within a pretrained RNA structural latent space (RiboSphere), and then predicts protein--RNA interaction constraints to bridge the independently defined RNA and protein coordinate frames. The resulting interaction geometry is converted into a geometrically consistent protein-relative pose through rigid placement. We evaluate RiboBridge on a temporally split, sequence-filtered, and redundancy-controlled benchmark of 124 protein--RNA complexes. Under post-hoc interface-correspondence evaluation, where native information is used only after generation to select among already generated predicted-pocket candidates, RiboBridge achieves the highest fNAT and DockQ and the lowest interface and ligand RMSDs among compared methods. Component ablations and stage-wise diagnostics further characterize the contributions of RNA conformational generation, interaction prediction, and rigid placement, identifying the main sources of complex-recovery error.",
+      "claimed_contribution": "RiboBridge separates RNA conformer generation from protein-relative placement and reports improved complex-recovery metrics on 124 protein–RNA complexes under post-hoc interface correspondence.",
+      "unique_caveat": "Native interface information is used after generation to select a predicted-pocket candidate; structural recovery is not evidence of binding, activity, safety, or therapeutic efficacy.",
+      "evidence_for_ranking": "124-complex temporally split, filtered benchmark; component ablations; cross-listed cs.LG/q-bio.BM; appeared in a contemporaneous paper-discovery listing (not a readership metric).",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-22",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.30668"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.30668v1"
+        },
+        {
+          "label": "additional source",
+          "url": "https://ai-papers.fareesh.com/"
+        }
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Accurate quantification of protein concentrations and state populations by 2D 1H-N Q-BEST NMR",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.26017",
+      "arxiv_id": "2610.26017",
+      "arxiv_version": "1",
+      "published": "2026-10-19T08:40:00Z",
+      "updated": "2026-10-19T08:40:00Z",
+      "categories": {
+        "primary": "q-bio.BM",
+        "all": [
+          "q-bio.BM"
+        ]
+      },
+      "authors": [
+        "Yacine Ouali",
+        "Beate Bersch",
+        "Bernhard Brutscher"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "We introduce 2D Q-BEST NMR as a quantitative approach for determining protein concentrations and relative state populations from a set of three 1 H-15 N correlation spectra. The BEST methodology ensures short overall experimental times and highest sensitivity. The method was validated using ubiquitin as a model system, where a precision of approximately 15-20% was achieved at the level of individual cross-peaks. This precision can be further improved by averaging corrected intensities of well-resolved resonances corresponding to the same protein state. The approach was subsequently applied to the quantification of protein concentrations across multiple samples and to the determination of conformational state populations in proteins exhibiting intrinsic or ligand-induced heterogeneity. In both cases, 2D Q-BEST NMR provides accurate and robust quantification of NMR-visible species, demonstrating its utility as a general spectroscopic tool for quantitative biomolecular NMR analysis.",
+      "claimed_contribution": "The authors introduce three-spectrum 2D Q-BEST NMR for estimating protein concentration and conformational-state populations, validated on ubiquitin and applied to heterogeneous protein samples.",
+      "unique_caveat": "Validation is centered on ubiquitin and NMR-visible species; the reported precision should not be generalized to all proteins or measurement conditions.",
+      "evidence_for_ranking": "arXiv metadata cites a 2026 Journal of Biomolecular NMR publication; model-protein validation and applications to multiple samples.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-19",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.26017"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.26017v1"
+        }
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "EMBER: Predicting TCR--pMHC Binding Without a Docked Complex",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.27334",
+      "arxiv_id": "2610.27334",
+      "arxiv_version": "1",
+      "published": "2026-10-19T21:55:45Z",
+      "updated": "2026-10-19T21:55:45Z",
+      "categories": {
+        "primary": "q-bio.QM",
+        "all": [
+          "q-bio.QM",
+          "cs.LG"
+        ]
+      },
+      "authors": [
+        "Lin Ha",
+        "Chen Zhou",
+        "Haozheng Luo",
+        "Han Liu",
+        "Xiaoyu Zhang",
+        "Yan Chen"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "We propose EMBER, a structure-based framework for TCR--pMHC binding prediction that eliminates the need for a predicted docked complex, and with it the placement error that dominates such predictions. Traditional structure-based predictors utilize the co-folded complex structure of the receptor and the antigen and interpret binding from its contact surface. Consequently, every downstream feature inherits any deviation the structure-prediction tool introduced. Methodologically, EMBER folds the TCR and pMHC independently, encodes them as SE(3)-invariant residue graphs, and compares their learned representations without constructing a shared coordinate frame. A relative pose is therefore not an input of the model, so placement error cannot propagate into the prediction. Computationally, EMBER preprocesses $O(N{+}M)$ monomer folds where a complex-based predictor needs $O(NM)$ operations. Experimentally, under epitope-disjoint evaluation with six retrained baselines, EMBER is first on every metric under all four folding tools, by 0.9 to 14.4% in micro-AUROC, 18.5 to 25.3% in micro-AUPRC and 10.6 to 24.1% in MCC. Its ranking is also up to 85% more stable across folding tools.",
+      "claimed_contribution": "EMBER predicts TCR–pMHC binding from independently folded partners and reports gains over six retrained baselines in epitope-disjoint evaluation.",
+      "unique_caveat": "Computational benchmark only; not a prospective binding assay or clinical-utility evaluation.",
+      "evidence_for_ranking": "Six retrained baselines, four folding tools, epitope-disjoint tests, and reported metrics across AUROC, AUPRC, MCC, and ranking stability.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-19",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.27334"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.27334v1"
+        }
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.31454",
+      "arxiv_id": "2610.31454",
+      "arxiv_version": "1",
+      "published": "2026-10-22T15:49:27Z",
+      "updated": "2026-10-22T15:49:27Z",
+      "categories": {
+        "primary": "q-bio.GN",
+        "all": [
+          "q-bio.GN"
+        ]
+      },
+      "authors": [
+        "Buse Giledereli",
+        "Basar Temiz",
+        "Amirreza Sattarzadeh Khanehbargh"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "RNA & transcriptomics",
+        "Quantitative methods"
+      ],
+      "abstract": "Synthetic single-cell RNA-seq data generation offers a promising route for privacy-aware biomedical data sharing, but donor-linked datasets require careful balancing of biological utility and privacy risk. In this work, we benchmark synthetic generation methods for the CAMDA 2026 ELSA Health Privacy Challenge using the donor-split OneK1K dataset, comparing scGFT, scLDM, and Cell2Sentence across statistical fidelity, downstream biological preservation, and membership inference vulnerability. Because full-transcriptome generation is computationally demanding, we focus generative modeling on highly variable genes and evaluate alternative strategies for reconstructing non-HVG expression. Our results show that non-HVG handling is a central determinant of privacy: directly copying non-HVG values leads to severe leakage, whereas Poisson-based reconstruction substantially reduces membership inference risk. We further find that scGFT and scLDM better preserve biological structure than an independent Poisson baseline, while maintaining near-random privacy profiles under appropriate configurations. These findings highlight the importance of evaluating synthetic single-cell data beyond marginal similarity alone, emphasizing robustness, interpretability, and privacy-conscious design choices throughout preprocessing, generation, and post-processing.",
+      "claimed_contribution": "The authors compare three synthetic single-cell RNA-seq methods on donor-split OneK1K for biological fidelity and membership-inference risk, finding non-HVG reconstruction materially affects leakage.",
+      "unique_caveat": "Results are specific to the OneK1K donor split and tested configurations/attacks; synthetic data are not automatically private or representative elsewhere.",
+      "evidence_for_ranking": "Evaluation includes fidelity, biological preservation, and membership-inference risk; arXiv comment reports presentation at CAMDA 2026 ELSA Health Privacy Challenge.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-22",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.31454"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.31454v1"
+        }
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "An autoencoder outperforms two transformers on prediction of gene expression from chromatin accessibility",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2610.28853",
+      "arxiv_id": "2610.28853",
+      "arxiv_version": "1",
+      "published": "2026-10-20T19:27:47Z",
+      "updated": "2026-10-20T19:27:47Z",
+      "categories": {
+        "primary": "q-bio.GN",
+        "all": [
+          "q-bio.GN"
+        ]
+      },
+      "authors": [
+        "Jesse G. Meyer"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Models that predict RNA abundance from chromatin accessibility are rarely compared under the same features, targets and metrics. We built one benchmark on 126,604 paired single-nucleus profiles from 19 human studies with a shared vocabulary of 50,000 peaks and 3,185 genes, ten 5x2 cross-validation folds and one scoring target, and compared seven implemented pipelines and two reference predictors across 70 trained runs; each pipeline keeps its own input normalisation and native training target. The scButterfly-B pipeline, built on dual variational autoencoders, outperformed every transformer pipeline, including an autoregressive Perceiver model (Omic Translator) and a support-free reformulation of Cisformer, on per-gene and within-cell Spearman correlation in all sixty paired fold comparisons, with 3.8 times shorter training. Transformer pipelines come within 0.02-0.04 on within-cell profile shape but lag by 0.10-0.24 on per-gene correlation. On two withheld cell types per-gene correlation is low; controls show the podocyte values are typical of within-type correlation for seen cell types of the same size, whereas Paneth values match a cell-agnostic shuffle for every Omic Translator arm. Within the transformer family, prespecified ablations show the Perceiver encoder was worth +0.0439 in within-donor per-gene correlation over full self-attention, a chromosome-aware genomic attention prior reduced it by 0.0096 (exact donor-level sign-flip test, Holm-adjusted p = 1.2e-4), and decoder output order had no detectable effect. A training-mean profile reaches 0.314 within-cell correlation with no input and a constant at the true expressed-gene positions reaches 0.996 per-gene correlation, so oracle-support protocols are reported only as diagnostics. Code, results and an audited release are provided.",
+      "claimed_contribution": "A benchmark of 126,604 paired single-nucleus profiles from 19 studies reports a dual-variational-autoencoder pipeline ahead of the tested transformer pipelines for expression prediction from accessibility.",
+      "unique_caveat": "Performance was low on two withheld cell types; pipeline-specific preprocessing and target choices limit interpretation, and prediction does not establish causal regulation.",
+      "evidence_for_ranking": "70 trained runs, ten 5×2 folds, 19 studies, paired fold comparisons, audited code/results release.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-20",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.28853"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.28853v1"
+        }
+      ]
+    },
+    {
+      "id": "paper-8",
+      "kind": "paper",
+      "title": "Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2610.28579",
+      "arxiv_id": "2610.28579",
+      "arxiv_version": "1",
+      "published": "2026-10-20T17:32:57Z",
+      "updated": "2026-10-20T17:32:57Z",
+      "categories": {
+        "primary": "q-bio.QM",
+        "all": [
+          "q-bio.QM",
+          "cs.AI"
+        ]
+      },
+      "authors": [
+        "Azim Dehghani Amirabad",
+        "Ali Khodabandeh Yalabadi",
+        "Artem Moskalev",
+        "Yun-Ching Chen",
+        "Mehdi Pirooznia",
+        "Scott Oloff",
+        "Rui Liao"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Quantitative methods"
+      ],
+      "abstract": "Cellular states are shaped by both intrinsic gene expression programs and the spatial microenvironment in which cells reside. Spatial transcriptomics makes this context measurable, but effective representation learning requires capturing both spatially informative molecular signals and intercellular organization. Existing approaches address these challenges only partially: conventional gene selection can overlook spatially structured signals, while methods for encoding cell-cell relationships often either reduce a cell's microenvironment to proximity alone, discarding direction, or rely on absolute coordinates tied to an arbitrary tissue frame. Consequently, cells with similar neighbor distances but distinct spatial organization may receive overly similar representations, despite experiencing different biological contexts that shape their cellular states. We introduce Tessera, a spatial representation learning framework that addresses both molecular selection and cellular context. Tessera combines spatially informed gene selection with a geometric inductive bias that contextualizes each cell within its local tissue environment. By modeling relative cell-cell relationships, Tessera is translation-invariant while preserving direction, allowing neighboring cells to contribute differently according to their spatial context and cellular state. Across held-out tissues and technologies, Tessera outperforms existing spatial foundation models in representation quality and generalizes zero-shot to contexts up to $16\\times$ larger than those seen during training.",
+      "claimed_contribution": "Tessera combines spatially informed gene selection with direction-sensitive, translation-invariant local context and reports improved representations across held-out tissues and technologies.",
+      "unique_caveat": "Representation-learning results do not establish biological discovery or clinical outcomes; abstract omits cohort sizes and detailed effect estimates.",
+      "evidence_for_ranking": "Cross-listed q-bio.QM/cs.AI; arXiv comment reports acceptance at NeurIPS 2026 AI4DD workshop; held-out tissue/technology evaluation.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-20",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.28579"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.28579v1"
+        }
+      ]
+    },
+    {
+      "id": "paper-9",
+      "kind": "paper",
+      "title": "Evaluating Conformal Reliability of Pathway-Level Transcriptomic Signatures Under Cross-Cohort Shift in Sepsis Mortality Prediction",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2607.17405",
+      "arxiv_id": "2607.17405",
+      "arxiv_version": "2",
+      "published": "2026-07-19T20:39:30Z",
+      "updated": "2026-10-18T19:20:09Z",
+      "categories": {
+        "primary": "q-bio.GN",
+        "all": [
+          "q-bio.GN"
+        ]
+      },
+      "authors": [
+        "Pratyush Kumar Shukla",
+        "Manveer Singh Tib",
+        "Siddhant Garg"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Blood transcriptomic profiling enables prognostic modeling by capturing the host immune response at the molecular level. Yet, the within-cohort evaluation strategies employed by many transcriptomic models inadequately reflect deployment across independent hospitals. Outside deployment scenarios introduce a cohort shift that can substantially degrade predictive performance and reliability of uncertainty estimates. We present a framework for evaluating transcriptomic sepsis mortality prediction under realistic cross-cohort deployment, systematically comparing gene-level, pathway-level and hybrid molecular representations. Four publicly available whole-blood transcriptomic cohorts consisting of 936 patients and 248 mortality events were harmonized into a shared 7,660-gene feature space and evaluated under leave-one-cohort-out validation using logistic regression, random forests, XGBoost and LightGBM. Beyond AUROC and AUPRC, model behavior was evaluated via conformal prediction, calibration analysis, selective prediction and the proposed Pathway Stability Index. Gene-level and hybrid representations were found to generally achieve the strongest discriminative performance, whereas pathway-level representations exhibited greater robustness across model families, more reliable uncertainty behavior under cross-cohort shift and stable molecular signatures enriched for immune and host-defense processes identified through Gene Ontology and KEGG enrichment analyses. These findings demonstrate that molecular representation influences not only predictive discrimination but also calibration, uncertainty reliability, biological coherence and transferability under external validation.",
+      "claimed_contribution": "The revised study compares gene-, pathway-, and hybrid-level transcriptomic models for sepsis mortality across four public cohorts totaling 936 patients and 248 events.",
+      "unique_caveat": "Retrospective model evaluation, not prospective clinical validation or evidence of improved patient outcomes; results depend on cohort harmonization and selection.",
+      "evidence_for_ranking": "In-window v2 revision; four-cohort leave-one-out evaluation; workshop acceptance reported in arXiv comment.",
+      "announcement_type": "revision",
+      "announcement_date": "2026-10-18",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2607.17405"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2607.17405v2"
+        }
+      ]
+    },
+    {
+      "id": "paper-10",
+      "kind": "paper",
+      "title": "Reading Between the Reads: A Decade On, Revisiting Sequencing Protocol Annotation in the Sequence Read Archive",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2610.27331",
+      "arxiv_id": "2610.27331",
+      "arxiv_version": "1",
+      "published": "2026-10-19T21:49:36Z",
+      "updated": "2026-10-19T21:49:36Z",
+      "categories": {
+        "primary": "q-bio.GN",
+        "all": [
+          "q-bio.GN",
+          "q-bio.QM"
+        ]
+      },
+      "authors": [
+        "Jamie J. Alnasir"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Background: Experimental metadata are essential for interpreting archived sequencing data. In 2015, Alnasir and Shanahan examined the annotation of fragmentation, adapter ligation and enrichment in the Sequence Read Archive (SRA). This study revisits those measurements using the original SQL keyword definitions on a September 2026 NCBI metadata snapshot reconstructed in the historical SRAdb schema. Results: The contemporary database contained 41,593,302 experiments, compared with 419,620 in 2013. In library_construction_protocol, the proportion matching all three historical keyword groups declined from 4.06% to 1.42%. The protocol field was NULL in 67.65% of contemporary experiments. Searching design_description alongside the protocol field increased combined three-step keyword detection to 1,197,367 experiments (2.88%), with most additional matches occurring where the protocol field was NULL. Coverage varied across sequencing library strategies, ranging from 0.26% for AMPLICON to 7.69% for RNA-Seq. Independent comparison of 150 sampled experiment records against source XML confirmed agreement in all historical keyword classifications. Conclusions: The original criteria identify a smaller proportion of experiments in the designated protocol field than a decade earlier. Additional preparation-related terminology is detectable in general experiment descriptions, exposing the limitations of searches restricted to one metadata field. Differences among sequencing strategies complicate historical comparisons as preparation methods evolve. The findings support more consistent protocol annotation and the need to distinguish keyword occurrence from the adequacy of experimental documentation.",
+      "claimed_contribution": "The author reapplies historical protocol-keyword rules to a September 2026 SRA metadata snapshot and checks 150 sampled classifications against source XML.",
+      "unique_caveat": "Keyword matches do not measure documentation adequacy; library strategies and terminology changed across the historical comparison.",
+      "evidence_for_ranking": "Audit of 41,593,302 experiments, historical comparison, and 150-record source-XML check.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-19",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.27331"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.27331v1"
+        }
+      ]
+    },
+    {
+      "id": "paper-11",
+      "kind": "paper",
+      "title": "Supercoiling Drives DNA-Protein Co-Condensation",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2610.30588",
+      "arxiv_id": "2610.30588",
+      "arxiv_version": "1",
+      "published": "2026-10-22T01:42:38Z",
+      "updated": "2026-10-22T01:42:38Z",
+      "categories": {
+        "primary": "physics.bio-ph",
+        "all": [
+          "physics.bio-ph",
+          "cond-mat.soft",
+          "q-bio.BM"
+        ]
+      },
+      "authors": [
+        "Sihan Liu",
+        "Hongbo Zhao",
+        "Andrej Košmrlj"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The co-condensation of DNA and proteins plays an important role in genome compaction, including heterochromatin formation and chromosome segregation. Meanwhile, transcription and replication continuously generate DNA supercoiling, yet how the resulting torsional stress affects co-condensation remains poorly understood. Here, by coupling DNA elasticity to a protein concentration field, we show that supercoiling acts as a topological catalyst for co-condensation through a mutually reinforcing interplay with protein wetting. Specifically, protein wetting facilitates twist-to-writhe conversion, generating highly writhed DNA conformations that in turn promote capillary collapse into a protein-rich droplet. In the absence of supercoiling, DNA remains kinetically trapped in metastable extended states within our model, whereas sufficiently strong supercoiling removes the nucleation barrier and enables spontaneous co-condensation. These results establish topology as a distinct control parameter for biomolecular condensation and provide a mechanical framework for how active genomic processes can dynamically regulate large-scale genome organization.",
+      "claimed_contribution": "A coupled DNA-elasticity/protein-concentration model predicts supercoiling can promote wetting, twist-to-writhe conversion, and DNA–protein co-condensation.",
+      "unique_caveat": "The result is theoretical/model-based and not experimental confirmation in cells.",
+      "evidence_for_ranking": "Cross-listed across biophysics, soft matter, and biomolecules; relevant mechanistic model of DNA topology and condensation.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-10-22",
+      "refs": [
+        {
+          "label": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2610.30588"
+        },
+        {
+          "label": "arXiv HTML",
+          "url": "https://arxiv.org/html/2610.30588v1"
+        }
+      ]
+    },
+    {
+      "id": "themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": "",
+      "summary": "Experimental AI design feedback; computational molecular recognition; transcriptomic robustness/privacy/transfer; measurement and data infrastructure.",
+      "refs": [
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.24806"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2605.01513"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.30668"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.27334"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.31454"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.28853"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.28579"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2607.17405"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.26017"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.27331"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.30588"
+        }
+      ]
+    },
+    {
+      "id": "open-problems",
+      "kind": "open_problems",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": "",
+      "summary": "Matched-budget controls for aptamer-agent effects; broader and direct mRNA validation; blind prospective RNA-binder functional tests; privacy/generalization stress tests; better structured sequencing protocol metadata.",
+      "refs": [
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.24806"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2605.01513"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.30668"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.31454"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.28853"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2607.17405"
+        },
+        {
+          "label": "supporting papers",
+          "url": "https://arxiv.org/abs/2610.27331"
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": "",
+      "summary": "The strongest experimental signal is closed-loop aptamer design; ProMORNA adds limited reporter evidence. Most other studies remain computational or retrospective, so this is not a popularity or clinical-readiness ranking.",
+      "refs": []
+    },
+    {
+      "id": "method",
+      "kind": "method",
+      "title": "Method and sources",
+      "rank": null,
+      "url": "",
+      "summary": "UTC window 2026-10-17 through 2026-10-23; snapshot 2026-10-23T15:09:07Z. Candidate categories: q-bio.BM, q-bio.GN, q-bio.MN, q-bio.SC, q-bio.CB, q-bio.TO, q-bio.QM, cs.BI, physics.med-ph. 99 unique matched records (60 new, 39 revisions); 11 selected. Ranking is evidence/relevance-weighted because arXiv has no official trending chart and attention evidence is sparse. Coverage excludes much work on bioRxiv and medRxiv.",
+      "refs": [
+        {
+          "label": "category listings and abstracts",
+          "url": "https://arxiv.org/list/q-bio/new"
+        },
+        {
+          "label": "Google Research aptamer publication page",
+          "url": "https://research.google/pubs/aptamers-as-a-sandbox-for-lab-in-the-loop-agentic-molecular-discovery/"
+        },
+        {
+          "label": "Google Research aptamer blog",
+          "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+        }
+      ]
+    }
+  ]
+}

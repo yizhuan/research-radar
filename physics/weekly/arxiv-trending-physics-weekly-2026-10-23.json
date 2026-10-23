@@ -1,0 +1,200 @@
+{
+  "schema": "arxiv-trending-physics/v1",
+  "category": "weekly",
+  "window": {
+    "start": "2026-10-17",
+    "end": "2026-10-23",
+    "timezone": "UTC"
+  },
+  "date": "2026-10-23",
+  "title": "arXiv physics — weekly inferred-trend report (17–23 October 2026)",
+  "source_report": "/home/yizhuan/.research/physics/weekly/arxiv-trending-physics-weekly-2026-10-23.md",
+  "entry_count": 7,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart. The ranking is inferred, and citation evidence is limited for papers only days old; it is not a readership or download ranking.",
+  "snapshot_utc": "2026-10-23T01:25:14Z",
+  "sections": [
+    {
+      "id": "2610.26792",
+      "kind": "paper",
+      "title": "First observation of weak magnetism in neutron decay",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.26792",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "published": null,
+      "categories": [],
+      "authors": [
+        ""
+      ],
+      "themes": [
+        ""
+      ],
+      "abstract": null,
+      "claimed_result": null,
+      "evidence_type": null,
+      "unique_caveat": null,
+      "announcement_type": null,
+      "evidence_for_ranking": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.26792"
+      ]
+    },
+    {
+      "id": "2610.29980",
+      "kind": "paper",
+      "title": "International atomic clock comparison achieving 5×10⁻¹⁸ uncertainty",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.29980",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "published": null,
+      "categories": [],
+      "authors": [
+        ""
+      ],
+      "themes": [
+        ""
+      ],
+      "abstract": null,
+      "claimed_result": null,
+      "evidence_type": null,
+      "unique_caveat": null,
+      "announcement_type": null,
+      "evidence_for_ranking": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.29980"
+      ]
+    },
+    {
+      "id": "2610.29863",
+      "kind": "paper",
+      "title": "A Broadband Room-Temperature Design for the Einstein Telescope",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.29863",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "published": null,
+      "categories": [],
+      "authors": [
+        ""
+      ],
+      "themes": [
+        ""
+      ],
+      "abstract": null,
+      "claimed_result": null,
+      "evidence_type": null,
+      "unique_caveat": null,
+      "announcement_type": null,
+      "evidence_for_ranking": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.29863"
+      ]
+    },
+    {
+      "id": "2610.29973",
+      "kind": "paper",
+      "title": "NTL amplification in a SuperCDMS-style detector fabricated from a University of South Dakota-grown germanium crystal",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.29973",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "published": null,
+      "categories": [],
+      "authors": [
+        ""
+      ],
+      "themes": [
+        ""
+      ],
+      "abstract": null,
+      "claimed_result": null,
+      "evidence_type": null,
+      "unique_caveat": null,
+      "announcement_type": null,
+      "evidence_for_ranking": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.29973"
+      ]
+    },
+    {
+      "id": "2610.25214",
+      "kind": "paper",
+      "title": "Lorentz-Invariance Violation with neutrinos from gamma-ray bursts using IceCube High-Energy Starting Events 12-year dataset",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.25214",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "published": null,
+      "categories": [],
+      "authors": [
+        ""
+      ],
+      "themes": [
+        ""
+      ],
+      "abstract": null,
+      "claimed_result": null,
+      "evidence_type": null,
+      "unique_caveat": null,
+      "announcement_type": null,
+      "evidence_for_ranking": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.25214"
+      ]
+    },
+    {
+      "id": "2610.26908",
+      "kind": "paper",
+      "title": "Floquet Instability of Photon-Axion Conversion",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.26908",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "published": null,
+      "categories": [],
+      "authors": [
+        ""
+      ],
+      "themes": [
+        ""
+      ],
+      "abstract": null,
+      "claimed_result": null,
+      "evidence_type": null,
+      "unique_caveat": null,
+      "announcement_type": null,
+      "evidence_for_ranking": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.26908"
+      ]
+    },
+    {
+      "id": "2610.28704",
+      "kind": "paper",
+      "title": "Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2610.28704",
+      "arxiv_id": null,
+      "arxiv_version": null,
+      "published": null,
+      "categories": [],
+      "authors": [
+        ""
+      ],
+      "themes": [
+        ""
+      ],
+      "abstract": null,
+      "claimed_result": null,
+      "evidence_type": null,
+      "unique_caveat": null,
+      "announcement_type": null,
+      "evidence_for_ranking": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.28704"
+      ]
+    }
+  ]
+}

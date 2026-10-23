@@ -1,5 +1,0 @@
-{
-  "issues": [
-    "Both English and Chinese narrations state that every platform uses ordered primary-plus-fallback backends, but the evidence's platform table/code shows several single-backend routes (web/Jina Reader, YouTube/yt-dlp, RSS/feedparser, GitHub/gh CLI); qualify this as applying to multi-backend platforms or where multiple backends exist to avoid overstating fallback coverage."
-  ]
-}

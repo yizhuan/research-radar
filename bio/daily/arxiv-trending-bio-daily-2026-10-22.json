@@ -1,0 +1,163 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": {
+    "kind": "daily",
+    "start_date": "2026-10-22",
+    "end_date": "2026-10-22",
+    "announcement_batch_date": "2026-10-22",
+    "snapshot_utc": "2026-10-23T14:29:08Z",
+    "used_prior_batch": true
+  },
+  "date": "2026-10-22",
+  "title": "Notable recent biology and biomedical papers on arXiv — 2026-10-22",
+  "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-10-22.md",
+  "entry_count": 5,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart. This is a relevance-ranked selection, not a popularity ranking; citation or download/view popularity is not established. arXiv's biomedical coverage is incomplete relative to bioRxiv, medRxiv, and the wider literature.",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "RiboBridge: protein-conditioned de novo RNA binder structure design",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.30668",
+      "arxiv_id": "2610.30668",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T03:32:07Z",
+      "categories": {
+        "primary": "cs.LG",
+        "cross_lists": ["q-bio.BM"]
+      },
+      "authors": ["Zhou Zhang", "Hanqun Cao", "Minghao Sun", "Odin Zhang", "Yang Zhang", "Pheng Ann Heng", "Wujun Li", "Tianfan Fu"],
+      "themes": ["Biochemistry & proteins", "RNA & transcriptomics", "Bioinformatics & sequence analysis"],
+      "abstract": "RiboBridge separates RNA conformation generation from protein–RNA assembly and evaluates predicted complex structures on a temporally split, filtered benchmark of 124 protein–RNA complexes.",
+      "claimed_contribution": "The authors report improved structural recovery versus compared methods, including best fNAT and DockQ and lowest interface/ligand RMSDs on their benchmark; native information is used only after generation to select among predicted-pocket candidates.",
+      "unique_caveat": "Computational structural prediction does not establish experimental binding or function. The authors identify interface-hypothesis prioritization and sequence realization as unresolved and call for functional validation.",
+      "evidence_for_ranking": "Strong molecular/RNA relevance, q-bio.BM cross-list, and a reported 124-complex benchmark with component ablations; relevance evidence, not an attention or citation signal.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.30668", "https://arxiv.org/html/2610.30668v1"]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.31454",
+      "arxiv_id": "2610.31454",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T15:49:27Z",
+      "categories": {
+        "primary": "q-bio.GN",
+        "cross_lists": []
+      },
+      "authors": ["Buse Giledereli", "Başar Temiz", "Amirreza Sattarzadeh Khanehbargh"],
+      "themes": ["Omics & single-cell methods", "RNA & transcriptomics", "Biomedical & translational medicine"],
+      "abstract": "The paper compares scGFT, scLDM, and Cell2Sentence on donor-split OneK1K single-cell RNA-seq data (633,711 training cells from 490 donors; 634,022 test cells from 491 donors) across fidelity, biological preservation, and membership-inference risk.",
+      "claimed_contribution": "The authors report that copying non-highly-variable-gene expression can expose donor membership, while Poisson-based reconstruction reduces that risk; scGFT and scLDM preserve more biological structure than an independent Poisson baseline in their tests.",
+      "unique_caveat": "Modeling is restricted to highly variable genes with reconstructed background expression; authors note dataset sparsity, metric sensitivity, and need to assess full-gene behavior. One dataset does not establish privacy in other cohorts.",
+      "evidence_for_ranking": "Direct genomics and single-cell relevance; three generators assessed on donor-split OneK1K for both biological utility and membership-inference risk; arXiv comment says presented at CAMDA 2026 ELSA Health Privacy Challenge.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31454", "https://arxiv.org/html/2610.31454v1"]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "Supercoiling Drives DNA-Protein Co-Condensation",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.30588",
+      "arxiv_id": "2610.30588",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T01:42:38Z",
+      "categories": {
+        "primary": "physics.bio-ph",
+        "cross_lists": ["cond-mat.soft", "q-bio.BM"]
+      },
+      "authors": ["Sihan Liu", "Hongbo Zhao", "Andrej Košmrlj"],
+      "themes": ["DNA & genomics", "Molecular & cell biology", "Biochemistry & proteins"],
+      "abstract": "Coupled DNA-elasticity and protein-concentration modeling suggests that supercoiling can promote DNA–protein co-condensation by coupling protein wetting to DNA twist-to-writhe conversion.",
+      "claimed_contribution": "The authors' model predicts that supercoiling can lower a nucleation barrier and enable co-condensation that otherwise remains kinetically trapped, proposing DNA topology as a control parameter.",
+      "unique_caveat": "The result is theoretical/computational, not a new cellular or biochemical demonstration; the proposed causal pathway needs targeted experimental testing.",
+      "evidence_for_ranking": "Cross-listed in biomolecular research and directly addresses genome organization; combines theoretical analysis and simulations and relates model energy scales to prior single-molecule measurements.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.30588", "https://arxiv.org/html/2610.30588v1"]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "AI Enhanced Cerenkov Luminescence Microscopy",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.31240",
+      "arxiv_id": "2610.31240",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T13:23:12Z",
+      "categories": {
+        "primary": "physics.med-ph",
+        "cross_lists": []
+      },
+      "authors": ["Stefano Pizzardi", "Lisa Alborghetti", "Caterina Lomazzi", "Antonello Enrico Spinelli"],
+      "themes": ["Medical physics & imaging", "Biomedical & translational medicine", "Quantitative methods"],
+      "abstract": "A Monte Carlo-guided image-restoration model trained on simulated tumor-spheroid images is evaluated on experimental Cerenkov luminescence microscopy images from 27 U87 spheroids.",
+      "claimed_contribution": "The authors report lower reconstruction error for CARE than Noise2Void on synthetic validation data and improved localization, contrast, and signal-to-noise measures when applying CARE to experimental images.",
+      "unique_caveat": "Paired ground truth is simulated; results on 27 spheroids do not establish diagnostic accuracy, clinical utility, or performance across scanners, tracers, and tumor models.",
+      "evidence_for_ranking": "Direct biomedical imaging application with a reported 15,360 paired synthetic images from 80 simulated geometries and an experimental-image application set of 27 spheroids.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31240"]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Direct Production of Ultra-High Radioisotopic Pure $^{64}$Cu from Natural Zinc Metal via D-D Fusion Narrowband Fast Neutron Source Irradiation",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.31340",
+      "arxiv_id": "2610.31340",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T14:24:29Z",
+      "categories": {
+        "primary": "physics.med-ph",
+        "cross_lists": []
+      },
+      "authors": ["Jeremy M. C. Brown", "Mantas Grigalavicius", "Tibor Gilinger", "Adam Kovacs", "Parvin Varmazyar", "Hsin-Hui Huang", "Saulius Juodkazis", "Mikas Vengris", "Darius Gailevicius", "Karoly Osvay"],
+      "themes": ["Biomedical & translational medicine", "Medical physics & imaging"],
+      "abstract": "The authors irradiate natural zinc with a deuterium–deuterium fusion neutron source and use time-resolved gamma spectroscopy to assess the resulting copper radioisotopes.",
+      "claimed_contribution": "The authors report no-carrier-added $^{64}$Cu from natural zinc, with $^{64}$Cu the only copper radioisotope detected in the sample and a threshold-corrected radioisotopic-purity estimate of 99.97%.",
+      "unique_caveat": "A production-method demonstration, not an efficacy or patient study; reproducibility, radiochemical labeling, batch yield, and downstream biological performance are not established by the reported experiment.",
+      "evidence_for_ranking": "Biomedical radiopharmaceutical-production relevance and direct irradiation/spectroscopy experiment; abstract specifies one-hour irradiation and 72-hour measurement.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31340"]
+    },
+    {
+      "id": "trending-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": null,
+      "content": "Structure-first RNA binder design remains bounded by experimental function (RiboBridge); synthetic single-cell data exposes a privacy-utility trade-off shaped by non-HVG handling and metric choice (OneK1K); DNA topology is modeled as a mechanism for genome organization but remains theoretical (Supercoiling); translational imaging and isotope-production studies combine simulation with limited experimental evidence and do not establish clinical benefit (Cerenkov microscopy; 64Cu production)."
+    },
+    {
+      "id": "open-problems",
+      "kind": "open_problems",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": null,
+      "content": "Follow RiboBridge structure prediction with blinded biochemical binding assays and sequence-realizability tests; test single-cell synthetic-data privacy across independent donor-held-out cohorts and full-gene settings; experimentally vary DNA supercoiling while measuring condensation thresholds and reversibility; validate Cerenkov restoration on independent image sets; and repeat 64Cu production while measuring yield and radiochemical as well as radionuclidic quality. These are proposed follow-ups, not demonstrated outcomes."
+    },
+    {
+      "id": "takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": null,
+      "content": "The most directly biology-focused work is computational RNA design, synthetic single-cell data, and a physical model of DNA condensation. Imaging and radiochemistry show early-stage technical results but no clinical validation. With no defensible attention signal for this fresh batch, these are notable recent papers rather than measured arXiv trends."
+    },
+    {
+      "id": "method-and-sources",
+      "kind": "method",
+      "title": "Method and sources",
+      "rank": null,
+      "url": null,
+      "content": "Window 2026-10-22 UTC; snapshot 2026-10-23T14:29:08Z. Category query: cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph, sorted by submitted date descending. First 200 results extended to 2026-10-05 and included 10 entries dated 2026-10-22 before any 2026-10-21 entry. Relevance and evidence type only; citation totals and citation velocity are omitted because reliable citation evidence was not available for a defensible ranking of this newly announced batch. arXiv biomedical coverage is incomplete.",
+      "refs": ["https://arxiv.org/abs/2610.30668", "https://arxiv.org/abs/2610.31454", "https://arxiv.org/abs/2610.30588", "https://arxiv.org/abs/2610.31240", "https://arxiv.org/abs/2610.31340", "https://arxiv.org/html/2610.30668v1", "https://arxiv.org/html/2610.31454v1", "https://arxiv.org/html/2610.30588v1"]
+    }
+  ]
+}

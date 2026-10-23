@@ -1,6 +1,6 @@
 # What's trending in Github, AI, math, and physics - Daily updates
 
-Generated: 2026-10-23 15:28
+Generated: 2026-10-23 15:33
 Source: `/home/yizhuan/.research`
 
 ## Ai
@@ -8,6 +8,10 @@ Source: `/home/yizhuan/.research`
 - **Daily**: [arxiv-trending-ai-daily-2026-10-22](ai/daily/arxiv-trending-ai-daily-2026-10-22.md) — 2026-10-22
 - **Monthly**: [arxiv-trending-ai-monthly-2026-09-30](ai/monthly/arxiv-trending-ai-monthly-2026-09-30.md) — 2026-09-30
 - **Weekly**: [arxiv-trending-ai-weekly-2026-10-23](ai/weekly/arxiv-trending-ai-weekly-2026-10-23.md) — 2026-10-23
+
+## Bio
+
+- **Daily**: [arxiv-trending-bio-daily-2026-10-22](bio/daily/arxiv-trending-bio-daily-2026-10-22.md) — 2026-10-22
 
 ## Giant Watch
 
@@ -20,10 +24,6 @@ Source: `/home/yizhuan/.research`
 - **Daily**: [github-trending-summary-daily-2026-10-23](github/daily/github-trending-summary-daily-2026-10-23.md) — 2026-10-23
 - **Monthly**: [github-trending-summary-monthly-2026-09-30](github/monthly/github-trending-summary-monthly-2026-09-30.md) — 2026-09-30
 - **Weekly**: [github-trending-summary-weekly-2026-10-23](github/weekly/github-trending-summary-weekly-2026-10-23.md) — 2026-10-23
-
-## Github Curated
-
-- **Default**: [edited-source](github-curated/default/runs/20261020T192951Z-b662dc2fb1fb/edited-source.md) — 2026-10-20
 
 ## Math
 

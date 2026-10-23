@@ -6,7 +6,7 @@
     "start": "2026-10-22",
     "end": "2026-10-22",
     "announcement_batch": "2026-10-22",
-    "snapshot_utc": "2026-10-22T16:20:55Z"
+    "snapshot_utc": "2026-10-23T00:22:50Z"
   },
   "date": "2026-10-22",
   "title": "Physics on arXiv — 22 October 2026 (notable recent papers)",
@@ -230,8 +230,7 @@
         "et al."
       ],
       "themes": [
-        "Biophysics & soft matter",
-        "Plasma & fluid physics"
+        "Biophysics & soft matter"
       ],
       "abstract": "Experiments and continuum theory show that patterned activity redistributes microtubules in an active fluid, with density contrast depending on wavelength and vortex structure.",
       "claimed_result": "The authors find that nematic active stress plus isotropic active pressure reproduce observed modulation and explain suppression at short wavelengths.",

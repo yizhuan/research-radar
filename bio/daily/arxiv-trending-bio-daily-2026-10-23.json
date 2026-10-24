@@ -1,108 +1,190 @@
 {
   "schema": "arxiv-trending-bio-report/v1",
   "category": "bio",
-  "window": {
-    "type": "daily",
-    "start_date": "2026-10-21",
-    "end_date": "2026-10-23",
-    "announcement_batch_date": "2026-10-23",
-    "underlying_submission_revision_dates": "2026-10-21 through 2026-10-22",
-    "snapshot_utc": "2026-10-23T16:16:31Z"
-  },
+  "window": "daily",
   "date": "2026-10-23",
-  "title": "arXiv Biology & Biomedicine — Daily batch, 23 October 2026",
+  "start_date": "2026-10-23",
+  "end_date": "2026-10-23",
+  "snapshot_utc": "2026-10-24T00:20:05Z",
+  "announcement_date": "2026-10-23",
+  "title": "arXiv Biology and Biomedicine — Daily Report, 2026-10-23",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-10-23.md",
-  "entry_count": 10,
+  "entry_count": 15,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; this is an inferred, relevance-ranked selection rather than a popularity ranking. Biomedical arXiv coverage is incomplete relative to bioRxiv, medRxiv, and the wider medical literature. The listed computational, in-vitro, and imaging findings are not clinical practice-changing evidence.",
+  "global_caveat": "ArXiv has no official trending chart; this inferred relevance ranking uses sparse attention evidence and arXiv is incomplete for biomedical research, which also appears on bioRxiv, medRxiv and elsewhere.",
+  "arxiv_query": "cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph",
   "sections": [
     {
-      "id": "headline",
+      "id": "00-headline",
       "kind": "headline",
-      "title": "Daily biology and biomedicine batch — 23 October 2026",
+      "title": "Headline",
       "rank": null,
-      "url": null,
-      "summary": "Ten notable papers; RNA design is prominent, alongside single-cell privacy methods and mechanistic biomolecular models. Ranking is inferred from relevance and reported study design, not measured popularity."
+      "url": "",
+      "content": "At the UTC snapshot on Saturday 24 October 2026, no 24 October announcement batch was available, so this report uses the prior Friday 23 October batch: 15 notable papers selected from 18 deduplicated candidates across the configured biology/biomedicine categories. The main patterns are computational RNA/protein design and prediction alongside medical-imaging and radiotherapy-planning methods. ArXiv has no official trending chart; citations and independent attention were too sparse to establish popularity, so this is an inferred relevance ranking, and arXiv omits much clinical and experimental biology published on bioRxiv, medRxiv and elsewhere. Snapshot: 2026-10-24 00:20 UTC.",
+      "source_markdown": "At the UTC snapshot on Saturday 24 October 2026, no 24 October announcement batch was available, so this report uses the prior Friday 23 October batch: 15 notable papers selected from 18 deduplicated candidates across the configured biology/biomedicine categories. The main patterns are computational RNA/protein design and prediction alongside medical-imaging and radiotherapy-planning methods. ArXiv has no official trending chart; citations and independent attention were too sparse to establish popularity, so this is an inferred relevance ranking, and arXiv omits much clinical and experimental biology published on bioRxiv, medRxiv and elsewhere. Snapshot: 2026-10-24 00:20 UTC.",
+      "refs": [],
+      "global_caveat": "ArXiv has no official trending chart; this inferred relevance ranking uses sparse attention evidence and arXiv is incomplete for biomedical research, which also appears on bioRxiv, medRxiv and elsewhere."
     },
     {
-      "id": "paper-1",
-      "kind": "paper",
-      "title": "ProMORNA: An End-to-End Generative Framework for Full-Length mRNA Design",
-      "rank": 1,
-      "url": "https://arxiv.org/abs/2605.01513",
-      "arxiv_id": "2605.01513",
-      "arxiv_version": "v2",
-      "published": "2026-10-21T13:02:48Z",
-      "first_submitted": "2026-05-02T16:05:51Z",
-      "categories": ["cs.LG", "cs.AI", "q-bio.BM"],
-      "authors": ["Zixi Shao", "Tao Wang", "Ye Shen", "Tianyi Huang", "Yibei Xiao"],
-      "themes": ["RNA & transcriptomics", "Biomedical & translational medicine", "Bioinformatics & sequence analysis"],
-      "abstract": "Protein-conditioned encoder–decoder generation of full-length mRNAs with multi-objective post-training; the authors report in-silico gains and increased Fluc2P reporter activity for selected candidates across three independent in-vitro experiments.",
-      "claimed_contribution": "Candidate 2 had 3.33× the conventional benchmark's 12–72 h reporter-activity AUC (Holm-adjusted P=0.01285); its 1.29× estimate versus the selected GEMORNA candidate remained exploratory after correction.",
-      "unique_caveat": "Fluc2P in-vitro reporter evidence does not establish therapeutic efficacy, in-vivo performance, or generalization across payloads; the GEMORNA comparison was not significant after correction.",
-      "announcement_type": "revision",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2605.01513", "https://arxiv.org/html/2605.01513v2"]
-    },
-    {
-      "id": "paper-2",
+      "id": "01-ribobridge-protein-conditioned-de-novo-rna-binder-structur",
       "kind": "paper",
       "title": "RiboBridge: protein-conditioned de novo RNA binder structure design",
-      "rank": 2,
+      "rank": 1,
       "url": "https://arxiv.org/abs/2610.30668",
       "arxiv_id": "2610.30668",
       "arxiv_version": "v1",
       "published": "2026-10-22T03:32:07Z",
-      "categories": ["cs.LG", "q-bio.BM"],
-      "authors": ["Zhou Zhang", "Hanqun Cao", "Minghao Sun", "Odin Zhang", "Yang Zhang", "Pheng Ann Heng", "Wujun Li", "Tianfan Fu"],
-      "themes": ["RNA & transcriptomics", "Biochemistry & proteins", "Bioinformatics & sequence analysis"],
-      "abstract": "RiboBridge separates RNA conformation generation from protein-relative assembly to produce candidate protein–RNA structures without a specified binding site.",
-      "claimed_contribution": "On a temporally split, sequence-filtered benchmark of 124 protein–RNA complexes, authors report top fNAT and DockQ and lowest interface/ligand RMSDs under post-hoc interface-correspondence evaluation.",
-      "unique_caveat": "Native interface information is used after generation to choose the corresponding predicted-pocket candidate; structure recovery is not evidence of binding or biological activity.",
+      "updated": "2026-10-22T03:32:07Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Zhou Zhang",
+        "Hanqun Cao",
+        "Minghao Sun",
+        "Odin Zhang",
+        "Yang Zhang",
+        "Pheng Ann Heng",
+        "Wujun Li",
+        "Tianfan Fu"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "How can a protein-binding RNA structure be generated without specifying its binding site or relative pose?",
+      "claimed_contribution": "The authors introduce a structure-first pipeline that proposes protein interfaces, generates RNA conformations in a pretrained RNA latent space, predicts cross-frame interaction constraints, and places the RNA as a rigid body. On a temporally split, sequence-filtered benchmark of 124 complexes, they report the best fNAT and DockQ and lowest interface/ligand RMSDs among compared methods; native interface correspondence is used only post hoc.",
+      "unique_caveat": "Structural-computational evidence, not experimental binding or function. The authors identify interface-hypothesis ranking and sequence realization as unresolved.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations at snapshot; cross-listed from cs.LG into q-bio.BM, directly linking structure generation to molecular biology.",
       "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.30668", "https://arxiv.org/html/2610.30668"]
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30668",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30668?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "How can a protein-binding RNA structure be generated without specifying its binding site or relative pose? Claimed contribution: The authors introduce a structure-first pipeline that proposes protein interfaces, generates RNA conformations in a pretrained RNA latent space, predicts cross-frame interaction constraints, and places the RNA as a rigid body. On a temporally split, sequence-filtered benchmark of 124 complexes, they report the best fNAT and DockQ and lowest interface/ligand RMSDs among compared methods; native interface correspondence is used only post hoc. Caveat: Structural-computational evidence, not experimental binding or function. The authors identify interface-hypothesis ranking and sequence realization as unresolved. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations at snapshot; cross-listed from cs.LG into q-bio.BM, directly linking structure generation to molecular biology."
     },
     {
-      "id": "paper-3",
+      "id": "02-benchmarking-recent-single-cell-synthetic-data-generation",
       "kind": "paper",
       "title": "Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset",
-      "rank": 3,
+      "rank": 2,
       "url": "https://arxiv.org/abs/2610.31454",
       "arxiv_id": "2610.31454",
       "arxiv_version": "v1",
       "published": "2026-10-22T15:49:27Z",
-      "categories": ["q-bio.GN"],
-      "authors": ["Buse Giledereli", "Basar Temiz", "Amirreza Sattarzadeh Khanehbargh"],
-      "themes": ["Omics & single-cell methods", "RNA & transcriptomics", "Biomedical & translational medicine"],
-      "abstract": "The authors benchmark scGFT, scLDM, and Cell2Sentence for single-cell RNA-seq utility and membership-inference privacy, finding that non-HVG reconstruction choices affect privacy leakage.",
-      "claimed_contribution": "The donor split contains 633,711 training cells from 490 donors and 634,022 test cells from 491 donors; Poisson reconstruction of non-HVG values reduces leakage in tested settings.",
-      "unique_caveat": "Generation focused mainly on highly variable genes because of compute constraints; this is one dataset and does not establish privacy across attacks or populations.",
+      "updated": "2026-10-22T15:49:27Z",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Buse Giledereli",
+        "Basar Temiz",
+        "Amirreza Sattarzadeh Khanehbargh"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Bioinformatics & sequence analysis",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "Which single-cell RNA-seq synthesis choices preserve biological structure while limiting donor-membership leakage?",
+      "claimed_contribution": "The authors compare scGFT, scLDM and Cell2Sentence on donor-split OneK1K data across fidelity, biological preservation and membership-inference risk. They report severe leakage when non-HVG values are copied, lower leakage with Poisson reconstruction, and near-random membership-inference profiles for tuned scGFT/scLDM configurations.",
+      "unique_caveat": "Generative modeling focuses on highly variable genes and reconstructs non-HVGs, reflecting stated time/computational limits. One dataset and empirical membership inference do not establish formal differential privacy or generalization.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; q-bio.GN paper whose arXiv comment notes presentation at the CAMDA 2026 ELSA Health Privacy Challenge.",
       "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.31454", "https://arxiv.org/html/2610.31454"]
+      "announcement_batch": "2026-10-23",
+      "comment": "6 pages, presented at CAMDA 2026 ELSA Health Privacy Challenge",
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.31454",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.31454?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Which single-cell RNA-seq synthesis choices preserve biological structure while limiting donor-membership leakage? Claimed contribution: The authors compare scGFT, scLDM and Cell2Sentence on donor-split OneK1K data across fidelity, biological preservation and membership-inference risk. They report severe leakage when non-HVG values are copied, lower leakage with Poisson reconstruction, and near-random membership-inference profiles for tuned scGFT/scLDM configurations. Caveat: Generative modeling focuses on highly variable genes and reconstructs non-HVGs, reflecting stated time/computational limits. One dataset and empirical membership inference do not establish formal differential privacy or generalization. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; q-bio.GN paper whose arXiv comment notes presentation at the CAMDA 2026 ELSA Health Privacy Challenge."
     },
     {
-      "id": "paper-4",
+      "id": "03-supercoiling-drives-dna-protein-co-condensation",
       "kind": "paper",
       "title": "Supercoiling Drives DNA-Protein Co-Condensation",
-      "rank": 4,
+      "rank": 3,
       "url": "https://arxiv.org/abs/2610.30588",
       "arxiv_id": "2610.30588",
       "arxiv_version": "v1",
       "published": "2026-10-22T01:42:38Z",
-      "categories": ["physics.bio-ph", "cond-mat.soft", "q-bio.BM"],
-      "authors": ["Sihan Liu", "Hongbo Zhao", "Andrej Košmrlj"],
-      "themes": ["DNA & genomics", "Biochemistry & proteins", "Molecular & cell biology"],
-      "abstract": "A coupled DNA-elasticity/protein-field model predicts that DNA supercoiling and protein wetting reinforce each other and can facilitate co-condensation.",
-      "claimed_contribution": "The authors' theoretical model predicts twist-to-writhe conversion, capillary collapse, and a lowered modeled nucleation barrier under sufficient supercoiling.",
-      "unique_caveat": "Theory and simulation only; the model uses an idealized closed DNA loop and simplified DNA–protein/solvent interactions.",
+      "updated": "2026-10-22T01:42:38Z",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.soft",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Sihan Liu",
+        "Hongbo Zhao",
+        "Andrej Košmrlj"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "How does DNA torsional stress alter protein-mediated condensation and genome compaction?",
+      "claimed_contribution": "Using a coupled DNA-elasticity/protein-concentration model and simulations, the authors propose that protein wetting promotes twist-to-writhe conversion, lowering the barrier to DNA–protein co-condensation under sufficient supercoiling.",
+      "unique_caveat": "The mechanism is theoretical/model-based, not an experimental demonstration in cells. Predictions depend on model parameters and require validation across relevant proteins and chromatin contexts.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in q-bio.BM, physics.bio-ph and cond-mat.soft.",
       "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.30588", "https://arxiv.org/html/2610.30588"]
+      "announcement_batch": "2026-10-23",
+      "comment": "12 pages, 6 figures",
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30588",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30588?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "How does DNA torsional stress alter protein-mediated condensation and genome compaction? Claimed contribution: Using a coupled DNA-elasticity/protein-concentration model and simulations, the authors propose that protein wetting promotes twist-to-writhe conversion, lowering the barrier to DNA–protein co-condensation under sufficient supercoiling. Caveat: The mechanism is theoretical/model-based, not an experimental demonstration in cells. Predictions depend on model parameters and require validation across relevant proteins and chromatin contexts. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in q-bio.BM, physics.bio-ph and cond-mat.soft."
     },
     {
-      "id": "paper-5",
+      "id": "04-shorter-but-not-more-catalytic-an-active-site-resolved-mod",
+      "kind": "paper",
+      "title": "Shorter but not more catalytic: an active-site-resolved model of how tau reshapes amyloid-$β$ secondary nucleation",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.30531",
+      "arxiv_id": "2610.30531",
+      "arxiv_version": "v1",
+      "published": "2026-10-21T23:33:32Z",
+      "updated": "2026-10-21T23:33:32Z",
+      "categories": [
+        "q-bio.SC"
+      ],
+      "authors": [
+        "Andrey V. Kuznetsov"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "Does tau-induced shortening of amyloid-β fibrils necessarily increase secondary-nucleation activity?",
+      "claimed_contribution": "The author extends a tau–amyloid-β kinetic model to track fibril number, mass and exposed catalytic sites. Simulations suggest shortening alone has little effect at matched mass; site density/exposure and the balance between elongation-driven monomer consumption and clearance control the response. Analysis includes 800 Latin-hypercube samples and modeled fibril lengths of 0.3–30 μm.",
+      "unique_caveat": "A mechanistic model, not direct measurement of fibril catalytic sites or patient biology; conclusions depend on assumptions about active-site creation, exposure and monomer clearance.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; q-bio.SC primary category and a focused molecular mechanism with parameter-sweep evidence.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30531",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30531?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Does tau-induced shortening of amyloid-β fibrils necessarily increase secondary-nucleation activity? Claimed contribution: The author extends a tau–amyloid-β kinetic model to track fibril number, mass and exposed catalytic sites. Simulations suggest shortening alone has little effect at matched mass; site density/exposure and the balance between elongation-driven monomer consumption and clearance control the response. Analysis includes 800 Latin-hypercube samples and modeled fibril lengths of 0.3–30 μm. Caveat: A mechanistic model, not direct measurement of fibril catalytic sites or patient biology; conclusions depend on assumptions about active-site creation, exposure and monomer clearance. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; q-bio.SC primary category and a focused molecular mechanism with parameter-sweep evidence."
+    },
+    {
+      "id": "05-escaping-the-phylogenetic-trap-persistent-homology-enables",
       "kind": "paper",
       "title": "Escaping the Phylogenetic Trap: Persistent Homology Enables Cross-Species Ion Channel Classification via Multimodal Graph Neural Networks",
       "rank": 5,
@@ -110,142 +192,515 @@
       "arxiv_id": "2610.30394",
       "arxiv_version": "v1",
       "published": "2026-10-21T19:59:07Z",
-      "categories": ["cs.LG", "q-bio.BM"],
-      "authors": ["Arezoo Bybordi", "Favour Achimba", "Mariam Gelashvili", "Jessy Ramirez", "Weigang Qiu", "Mandë Holford", "Anita Raja"],
-      "themes": ["Biochemistry & proteins", "Bioinformatics & sequence analysis", "Quantitative methods"],
-      "abstract": "A sequence-and-structure classifier uses persistent-homology features to improve venom-compound ion-channel target classification when entire taxa are held out.",
-      "claimed_contribution": "The paper reports 63.4% leave-one-taxon-out accuracy on 1,373 predicted venom compounds across five taxa, over eight percentage points above the next-best tested method.",
-      "unique_caveat": "Structures are ColabFold predictions and classification metrics do not demonstrate experimentally validated toxin binding or channel effects.",
+      "updated": "2026-10-21T19:59:07Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Arezoo Bybordi",
+        "Favour Achimba",
+        "Mariam Gelashvili",
+        "Jessy Ramirez",
+        "Weigang Qiu",
+        "Mandë Holford",
+        "Anita Raja"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Can structural representations improve venom-peptide ion-channel classification when entire taxa are held out?",
+      "claimed_contribution": "The authors combine ESM-2 sequence embeddings with structure-aware graph networks and compare five structural priors on 1,373 ColabFold-predicted venom compounds from five taxa. In leave-one-taxon-out evaluation, persistent homology reaches 63.4% mean accuracy, versus about 54–55% for other geometric priors and about 30% for a sequence-only baseline; ordinary random splits mask the gap.",
+      "unique_caveat": "Computational evidence based on predicted structures and five taxa; no experimental binding/activity validation. The authors flag multi-label channel promiscuity and richer structural/dynamic modeling as future work.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed from cs.LG to q-bio.BM, with a taxon-held-out validation design.",
       "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.30394"]
+      "announcement_batch": "2026-10-23",
+      "comment": "9 pages, 3 figures, 2 tables",
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30394",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30394?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can structural representations improve venom-peptide ion-channel classification when entire taxa are held out? Claimed contribution: The authors combine ESM-2 sequence embeddings with structure-aware graph networks and compare five structural priors on 1,373 ColabFold-predicted venom compounds from five taxa. In leave-one-taxon-out evaluation, persistent homology reaches 63.4% mean accuracy, versus about 54–55% for other geometric priors and about 30% for a sequence-only baseline; ordinary random splits mask the gap. Caveat: Computational evidence based on predicted structures and five taxa; no experimental binding/activity validation. The authors flag multi-label channel promiscuity and richer structural/dynamic modeling as future work. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed from cs.LG to q-bio.BM, with a taxon-held-out validation design."
     },
     {
-      "id": "paper-6",
+      "id": "06-promorna-an-end-to-end-generative-framework-for-full-lengt",
       "kind": "paper",
-      "title": "Shorter but not more catalytic: an active-site-resolved model of how tau reshapes amyloid-β secondary nucleation",
+      "title": "ProMORNA: An End-to-End Generative Framework for Full-Length mRNA Design",
       "rank": 6,
-      "url": "https://arxiv.org/abs/2610.30531",
-      "arxiv_id": "2610.30531",
-      "arxiv_version": "v1",
-      "published": "2026-10-21T23:33:32Z",
-      "categories": ["q-bio.SC"],
-      "authors": ["Andrey V. Kuznetsov"],
-      "themes": ["Biochemistry & proteins", "Molecular & cell biology", "Quantitative methods"],
-      "abstract": "An active-site-resolved kinetic model examines how tau cross-seeding affects amyloid-β42 fibrils and secondary nucleation, finding that shorter fibrils alone need not be more catalytic.",
-      "claimed_contribution": "Across 800 Latin-hypercube samples, the model predicts catalytic effects depend on active-site number/activity/exposure and the balance of monomer clearance and elongation.",
-      "unique_caveat": "Model-dependent mechanistic predictions, not new aggregation measurements or patient outcomes.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.30531"]
+      "url": "https://arxiv.org/abs/2605.01513",
+      "arxiv_id": "2605.01513",
+      "arxiv_version": "v2",
+      "published": "2026-05-02T16:05:51Z",
+      "updated": "2026-10-21T13:02:48Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Zixi Shao",
+        "Tao Wang",
+        "Ye Shen",
+        "Tianyi Huang",
+        "Yibei Xiao"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Can a generative model design full-length mRNA candidates balancing predicted stability and translation?",
+      "claimed_contribution": "The v2 paper describes a BART-style model pretrained on over six million protein–mRNA pairs, then supervised fine-tuning and multi-objective reinforcement learning. The authors report in-silico Pareto-frontier gains and three independent in-vitro Fluc2P experiments: Candidate 2 had 3.33× the conventional benchmark’s 12–72 h reporter-activity AUC (Holm-adjusted P=0.01285); its estimated 1.29× advantage over the reported best GEMORNA candidate remained exploratory.",
+      "unique_caveat": "Reporter activity is not therapeutic efficacy, in-vivo performance or clinical evidence. The GEMORNA comparison is explicitly exploratory; this is a v2 revision of a May submission, not a new paper.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; substantive v2 update in the current batch, cross-listed across cs.LG, cs.AI and q-bio.BM, with three in-vitro assays.",
+      "announcement_type": "revision",
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2605.01513",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2605.01513?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can a generative model design full-length mRNA candidates balancing predicted stability and translation? Claimed contribution: The v2 paper describes a BART-style model pretrained on over six million protein–mRNA pairs, then supervised fine-tuning and multi-objective reinforcement learning. The authors report in-silico Pareto-frontier gains and three independent in-vitro Fluc2P experiments: Candidate 2 had 3.33× the conventional benchmark’s 12–72 h reporter-activity AUC (Holm-adjusted P=0.01285); its estimated 1.29× advantage over the reported best GEMORNA candidate remained exploratory. Caveat: Reporter activity is not therapeutic efficacy, in-vivo performance or clinical evidence. The GEMORNA comparison is explicitly exploratory; this is a v2 revision of a May submission, not a new paper. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; substantive v2 update in the current batch, cross-listed across cs.LG, cs.AI and q-bio.BM, with three in-vitro assays."
     },
     {
-      "id": "paper-7",
+      "id": "07-qprotfuse-query-guided-layer-fusion-for-retrieval-augmente",
       "kind": "paper",
-      "title": "Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference",
+      "title": "QProtFuse: Query-Guided Layer Fusion for Retrieval-Augmented Protein Function Prediction",
       "rank": 7,
-      "url": "https://arxiv.org/abs/2610.30683",
-      "arxiv_id": "2610.30683",
+      "url": "https://arxiv.org/abs/2610.30180",
+      "arxiv_id": "2610.30180",
       "arxiv_version": "v1",
-      "published": "2026-10-22T03:53:06Z",
-      "categories": ["stat.ME", "eess.SY", "q-bio.QM"],
-      "authors": ["Jingsong Bai", "Ayush Pandey"],
-      "themes": ["Quantitative methods", "Molecular & cell biology", "Bioinformatics & sequence analysis"],
-      "abstract": "Posterior information from a simpler model is used to screen proposals for a more detailed model, tested on gene-expression models fitted to cell-free data.",
-      "claimed_contribution": "The authors report 8.02% and 15.21% MCMC speedups for phenomenological and mechanistic models after initial setup costs.",
-      "unique_caveat": "Tested on one gene-expression model hierarchy and cell-free data; reported gains may not transfer to other models.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.30683"]
+      "published": "2026-10-19T14:47:25Z",
+      "updated": "2026-10-19T14:47:25Z",
+      "categories": [
+        "cs.IR",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Mianzhi Pan",
+        "Peishuo Liu",
+        "Yawen Ouyang",
+        "Botian Wang",
+        "Yiming Rong",
+        "Hao Zhou",
+        "Jianbing Zhang"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Can protein-language-model features from multiple layers improve query-conditioned retrieval for protein-function descriptions?",
+      "claimed_contribution": "The authors propose query-guided fusion of protein-language-model layers with joint protein/annotation retrieval objectives. On Prot-Inst-OOD they report 16.4% Recall@1 with annotation reranking and improved LLM-as-judge scores for generated descriptions.",
+      "unique_caveat": "Retrieval and LLM-judge results are benchmark-specific and do not experimentally validate function. First submitted 2026-10-19; it appears as a q-bio.QM cross-list on 2026-10-23, not a new submission or versioned revision.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; newly surfaced in q-bio.QM from cs.IR and directly concerns protein-function retrieval.",
+      "announcement_type": "new q-bio.QM cross-list (original v1: 2026-10-19)",
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30180",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30180?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can protein-language-model features from multiple layers improve query-conditioned retrieval for protein-function descriptions? Claimed contribution: The authors propose query-guided fusion of protein-language-model layers with joint protein/annotation retrieval objectives. On Prot-Inst-OOD they report 16.4% Recall@1 with annotation reranking and improved LLM-as-judge scores for generated descriptions. Caveat: Retrieval and LLM-judge results are benchmark-specific and do not experimentally validate function. First submitted 2026-10-19; it appears as a q-bio.QM cross-list on 2026-10-23, not a new submission or versioned revision. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; newly surfaced in q-bio.QM from cs.IR and directly concerns protein-function retrieval."
     },
     {
-      "id": "paper-8",
+      "id": "08-global-convergence-of-detailed-balanced-mass-action-system",
       "kind": "paper",
-      "title": "Direct Production of Ultra-High Radioisotopic Pure ⁶⁴Cu from Natural Zinc Metal via D-D Fusion Narrowband Fast Neutron Source Irradiation",
+      "title": "Global Convergence of Detailed Balanced Mass Action Systems",
       "rank": 8,
+      "url": "https://arxiv.org/abs/2610.30808",
+      "arxiv_id": "2610.30808",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T06:33:06Z",
+      "updated": "2026-10-22T06:33:06Z",
+      "categories": [
+        "cs.LO",
+        "math.DS",
+        "q-bio.MN"
+      ],
+      "authors": [
+        "Haoran Lv",
+        "Chengjin Ni",
+        "Manqin Wang",
+        "Shenli He"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "Under what assumptions do positive trajectories in detailed-balanced mass-action systems converge to equilibrium?",
+      "claimed_contribution": "The authors prove a unique positive equilibrium in each positive stoichiometric compatibility class and convergence of every positive trajectory, alongside a Lean 4 formalization using a persistence/barrier argument, the Horn–Jackson dissipation identity and bounded-speed descent.",
+      "unique_caveat": "A mathematical theorem under finite detailed-balanced mass-action assumptions, not empirical evidence for a particular biochemical network; application depends on those assumptions holding.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in q-bio.MN, math.DS and cs.LO, with a Lean 4 formalization noted in the arXiv comment.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-23",
+      "comment": "23 pages, 1 figure. Lean 4 formalization: https://github.com/BitMiracle-AI/detailed-balance-gac (tag v1.0). Use of AI tools is described in the Acknowledgements",
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30808",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30808?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Under what assumptions do positive trajectories in detailed-balanced mass-action systems converge to equilibrium? Claimed contribution: The authors prove a unique positive equilibrium in each positive stoichiometric compatibility class and convergence of every positive trajectory, alongside a Lean 4 formalization using a persistence/barrier argument, the Horn–Jackson dissipation identity and bounded-speed descent. Caveat: A mathematical theorem under finite detailed-balanced mass-action assumptions, not empirical evidence for a particular biochemical network; application depends on those assumptions holding. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in q-bio.MN, math.DS and cs.LO, with a Lean 4 formalization noted in the arXiv comment."
+    },
+    {
+      "id": "09-direct-production-of-ultra-high-radioisotopic-pure-64-cu-f",
+      "kind": "paper",
+      "title": "Direct Production of Ultra-High Radioisotopic Pure $^{64}$Cu from Natural Zinc Metal via D-D Fusion Narrowband Fast Neutron Source Irradiation",
+      "rank": 9,
       "url": "https://arxiv.org/abs/2610.31340",
       "arxiv_id": "2610.31340",
       "arxiv_version": "v1",
       "published": "2026-10-22T14:24:29Z",
-      "categories": ["physics.med-ph"],
-      "authors": ["Jeremy M. C. Brown", "Mantas Grigalavicius", "Tibor Gilinger", "Adam Kovacs", "Parvin Varmazyar", "Hsin-Hui Huang", "Saulius Juodkazis", "Mikas Vengris", "Darius Gailevicius", "Karoly Osvay"],
-      "themes": ["Biomedical & translational medicine", "Quantitative methods"],
-      "abstract": "Natural zinc irradiated by a D-D fusion neutron source yielded no-carrier-added ⁶⁴Cu with high measured radioisotopic purity, suggesting an alternative isotope-production route.",
-      "claimed_contribution": "After one-hour irradiation and 72-hour gamma spectroscopy, the authors report 99.62% minimum and 99.97% threshold-corrected ⁶⁴Cu radioisotopic purity.",
-      "unique_caveat": "A single irradiation protocol does not demonstrate routine scale-up, cost in manufacturing, clinical availability, or patient benefit.",
+      "updated": "2026-10-22T14:24:29Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Jeremy M. C. Brown",
+        "Mantas Grigalavicius",
+        "Tibor Gilinger",
+        "Adam Kovacs",
+        "Parvin Varmazyar",
+        "Hsin-Hui Huang",
+        "Saulius Juodkazis",
+        "Mikas Vengris",
+        "Darius Gailevicius",
+        "Karoly Osvay"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Medical physics & imaging"
+      ],
+      "abstract": "Can copper-64 be produced from natural zinc using a controlled D-D fusion neutron source?",
+      "claimed_contribution": "The authors irradiated high-purity natural zinc for one hour and used gamma spectroscopy over 72 hours. They report no other copper radioisotope detected and threshold-corrected copper-64 purity estimates of 99.62% and 99.97% under two reporting thresholds.",
+      "unique_caveat": "The abstract does not establish production yield, reproducible scale-up, full radiopharmaceutical manufacture or realized cost reduction; cost savings are prospective, not clinical outcomes.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with a direct radiopharmaceutical-production question and reported irradiation/spectroscopy.",
       "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.31340"]
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.31340",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.31340?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can copper-64 be produced from natural zinc using a controlled D-D fusion neutron source? Claimed contribution: The authors irradiated high-purity natural zinc for one hour and used gamma spectroscopy over 72 hours. They report no other copper radioisotope detected and threshold-corrected copper-64 purity estimates of 99.62% and 99.97% under two reporting thresholds. Caveat: The abstract does not establish production yield, reproducible scale-up, full radiopharmaceutical manufacture or realized cost reduction; cost savings are prospective, not clinical outcomes. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with a direct radiopharmaceutical-production question and reported irradiation/spectroscopy."
     },
     {
-      "id": "paper-9",
+      "id": "10-ai-enhanced-cerenkov-luminescence-microscopy",
       "kind": "paper",
       "title": "AI Enhanced Cerenkov Luminescence Microscopy",
-      "rank": 9,
+      "rank": 10,
       "url": "https://arxiv.org/abs/2610.31240",
       "arxiv_id": "2610.31240",
       "arxiv_version": "v1",
       "published": "2026-10-22T13:23:12Z",
-      "categories": ["physics.med-ph"],
-      "authors": ["Stefano Pizzardi", "Lisa Alborghetti", "Caterina Lomazzi", "Antonello Enrico Spinelli"],
-      "themes": ["Medical physics & imaging", "Biomedical & translational medicine", "Quantitative methods"],
-      "abstract": "A Monte-Carlo-guided CARE network restores simulated Cerenkov microscopy images and is applied to experimental images of 27 ¹⁸F-FDG-treated U87 tumor spheroids.",
-      "claimed_contribution": "On synthetic validation data, the authors report MSE 0.0051 versus 0.0492 for Noise2Void and improved localization/contrast metrics on experimental spheroid images.",
-      "unique_caveat": "Quantitative ground truth is simulated and experimental application is limited to a small U87 spheroid set, not patient or clinical validation.",
+      "updated": "2026-10-22T13:23:12Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Stefano Pizzardi",
+        "Lisa Alborghetti",
+        "Caterina Lomazzi",
+        "Antonello Enrico Spinelli"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Can physics-based simulated training pairs restore spatial detail in Cerenkov luminescence microscopy of tumor spheroids?",
+      "claimed_contribution": "The authors train CARE on 15,360 Monte-Carlo-generated image pairs from 80 simulated spheroid geometries. They report lower synthetic-validation MSE than Noise2Void (0.0051 vs 0.0492) and apply the model to experimental images from 27 U87 spheroids, reporting more localized signal and higher local contrast/SNR.",
+      "unique_caveat": "Quantitative ground truth is simulated; 27 spheroids are an experimental image set, not in-vivo or patient validation. Results depend on simulator fidelity.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; direct imaging paper with simulation benchmarking and a 27-spheroid image application.",
       "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.31240"]
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.31240",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.31240?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can physics-based simulated training pairs restore spatial detail in Cerenkov luminescence microscopy of tumor spheroids? Claimed contribution: The authors train CARE on 15,360 Monte-Carlo-generated image pairs from 80 simulated spheroid geometries. They report lower synthetic-validation MSE than Noise2Void (0.0051 vs 0.0492) and apply the model to experimental images from 27 U87 spheroids, reporting more localized signal and higher local contrast/SNR. Caveat: Quantitative ground truth is simulated; 27 spheroids are an experimental image set, not in-vivo or patient validation. Results depend on simulator fidelity. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; direct imaging paper with simulation benchmarking and a 27-spheroid image application."
     },
     {
-      "id": "paper-10",
+      "id": "11-geometry-dependent-properties-of-physically-crosslinked-pp",
       "kind": "paper",
       "title": "Geometry-Dependent Properties of Physically Crosslinked PPy-PVA Hydrogels Enable Tunable Iontophoretic Drug Delivery",
-      "rank": 10,
+      "rank": 11,
       "url": "https://arxiv.org/abs/2610.31567",
       "arxiv_id": "2610.31567",
       "arxiv_version": "v1",
       "published": "2026-10-22T17:10:35Z",
-      "categories": ["cs.RO", "physics.med-ph"],
-      "authors": ["Heather Jin Hee Kim", "Mohsen Alishahi", "Kyuin Park", "Mikaila K. Roncevich", "Larissa M. Shepherd", "Cara M. Nunez"],
-      "themes": ["Biomedical & translational medicine", "Quantitative methods"],
-      "abstract": "Five PPy-PVA hydrogel geometries carrying bovine serum albumin were compared for iontophoretic transport using finite-element modeling and Franz diffusion cells with artificial membranes.",
-      "claimed_contribution": "The authors report geometry-dependent transport and mean iontophoretic permeability of (3.80 ± 1.93) × 10⁻⁵ in their artificial-membrane assay.",
-      "unique_caveat": "BSA and artificial-membrane results do not establish transport through intact human skin or clinical delivery.",
+      "updated": "2026-10-22T17:10:35Z",
+      "categories": [
+        "cs.RO",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Heather Jin Hee Kim",
+        "Mohsen Alishahi",
+        "Kyuin Park",
+        "Mikaila K. Roncevich",
+        "Larissa M. Shepherd",
+        "Cara M. Nunez"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Molecular & cell biology"
+      ],
+      "abstract": "Can hydrogel geometry tune iontophoretic transport independently of changing current density?",
+      "claimed_contribution": "The authors compare five PPy-PVA hydrogel geometries containing bovine serum albumin, characterize microstructure/electric fields, and measure transport in Franz cells with artificial membranes. They report geometry-dependent release/permeability and greater permeability under iontophoresis than passive diffusion.",
+      "unique_caveat": "Experiments use artificial membranes and a model protein, not living skin, animals or people; the DOI is a publication identifier, not evidence of clinical effectiveness.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with a DOI and geometry-controlled in-vitro membrane experiments.",
       "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-23",
-      "refs": ["https://arxiv.org/abs/2610.31567", "https://doi.org/10.1109/TBME.2026.3744496"]
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": "10.1109/TBME.2026.3744496",
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.31567",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.31567?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can hydrogel geometry tune iontophoretic transport independently of changing current density? Claimed contribution: The authors compare five PPy-PVA hydrogel geometries containing bovine serum albumin, characterize microstructure/electric fields, and measure transport in Franz cells with artificial membranes. They report geometry-dependent release/permeability and greater permeability under iontophoresis than passive diffusion. Caveat: Experiments use artificial membranes and a model protein, not living skin, animals or people; the DOI is a publication identifier, not evidence of clinical effectiveness. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with a DOI and geometry-controlled in-vitro membrane experiments."
     },
     {
-      "id": "trending-themes",
+      "id": "12-advancing-oxygen-enhanced-mri-acquisition-and-modelling-th",
+      "kind": "paper",
+      "title": "Advancing oxygen-enhanced MRI acquisition and modelling through dynamic $ΔR_{1}$ and $ΔR_2^*$ sensing",
+      "rank": 12,
+      "url": "https://arxiv.org/abs/2610.30793",
+      "arxiv_id": "2610.30793",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T06:16:41Z",
+      "updated": "2026-10-22T06:16:41Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Jorge Campos Pazmiño",
+        "Amiel Beausoleil-Morrison",
+        "Nathalie Panov",
+        "Véronique Fortier",
+        "Ives R. Levesque"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Can a reduced-acquisition fat/water MRI method quantify relaxation changes during an oxygen challenge?",
+      "claimed_contribution": "The authors introduce SR-Fat DESPOT, optimize sequence settings by Cramér–Rao analysis, and report phantom accuracy plus in-vivo measurements under 100% oxygen in one test–retest participant and a six-participant pilot. Spleen and kidney changes were statistically significant in that pilot.",
+      "unique_caveat": "The in-vivo sample is small and evaluates a gas-challenge measurement method, not a validated diagnostic or clinical outcome; larger independent cohorts are needed.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with phantom and explicitly sized in-vivo pilot evaluations.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-23",
+      "comment": null,
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30793",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30793?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can a reduced-acquisition fat/water MRI method quantify relaxation changes during an oxygen challenge? Claimed contribution: The authors introduce SR-Fat DESPOT, optimize sequence settings by Cramér–Rao analysis, and report phantom accuracy plus in-vivo measurements under 100% oxygen in one test–retest participant and a six-participant pilot. Spleen and kidney changes were statistically significant in that pilot. Caveat: The in-vivo sample is small and evaluates a gas-challenge measurement method, not a validated diagnostic or clinical outcome; larger independent cohorts are needed. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with phantom and explicitly sized in-vivo pilot evaluations."
+    },
+    {
+      "id": "13-comparing-local-and-global-optimization-reveals-untapped-h",
+      "kind": "paper",
+      "title": "Comparing local and global optimization reveals untapped hybrid potentials for machine learning-based inverse planning",
+      "rank": 13,
+      "url": "https://arxiv.org/abs/2610.30424",
+      "arxiv_id": "2610.30424",
+      "arxiv_version": "v1",
+      "published": "2026-10-21T20:33:02Z",
+      "updated": "2026-10-21T20:33:02Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Tim Ortkamp",
+        "Florian Leininger",
+        "Zhongxing Liao",
+        "Niklas Wahl",
+        "Ali Ajdari"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Medical physics & imaging",
+        "Quantitative methods"
+      ],
+      "abstract": "How do global and local optimization approaches compare when embedding complication-risk models into radiotherapy planning?",
+      "claimed_contribution": "The authors compare OptiCL and pyanno4rt across eight head-and-neck photon cases and seven lung proton cases, report broadly similar dose plans with different runtimes, and test hybrid strategies; one decision-tree-based hybrid reduces binary variables by 80% without reported plan-quality loss.",
+      "unique_caveat": "A planning comparison on 15 cases with predicted NTCP, not prospective evidence of toxicity reduction or improved patient outcomes.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph comparison with 15 defined planning cases and a hybrid-optimization result.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-23",
+      "comment": "32 pages, 8 figures, 7 tables",
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30424",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30424?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "How do global and local optimization approaches compare when embedding complication-risk models into radiotherapy planning? Claimed contribution: The authors compare OptiCL and pyanno4rt across eight head-and-neck photon cases and seven lung proton cases, report broadly similar dose plans with different runtimes, and test hybrid strategies; one decision-tree-based hybrid reduces binary variables by 80% without reported plan-quality loss. Caveat: A planning comparison on 15 cases with predicted NTCP, not prospective evidence of toxicity reduction or improved patient outcomes. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph comparison with 15 defined planning cases and a hybrid-optimization result."
+    },
+    {
+      "id": "14-liegrog-a-lie-algebra-approach-for-calibrating-grappa-oper",
+      "kind": "paper",
+      "title": "LieGROG: A Lie algebra approach for calibrating GRAPPA operators",
+      "rank": 14,
+      "url": "https://arxiv.org/abs/2610.30927",
+      "arxiv_id": "2610.30927",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T08:45:35Z",
+      "updated": "2026-10-22T08:45:35Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Tobias Wech"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Quantitative methods"
+      ],
+      "abstract": "Can Lie-algebra calibration improve GRAPPA-operator gridding for non-Cartesian MRI?",
+      "claimed_contribution": "The author estimates a joint generator for GRAPPA operators and compares LieGROG with classical calibration and NUFFT/Toeplitz references across simulations and 2D/3D MR scans. The abstract reports reduced noise amplification, similar reconstructions, 6–189× faster runtimes and 20–45% lower peak VRAM in 3D experiments.",
+      "unique_caveat": "This is reconstruction/compute benchmarking, not diagnostic accuracy or patient-outcome evidence. The arXiv comment says the work was submitted to Magnetic Resonance in Medicine, not accepted.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph method with scan comparisons and measured runtime/memory results.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-23",
+      "comment": "21 pages, 8 figures, 1 supplementary video (ancillary file). Submitted to Magnetic Resonance in Medicine",
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30927",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30927?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can Lie-algebra calibration improve GRAPPA-operator gridding for non-Cartesian MRI? Claimed contribution: The author estimates a joint generator for GRAPPA operators and compares LieGROG with classical calibration and NUFFT/Toeplitz references across simulations and 2D/3D MR scans. The abstract reports reduced noise amplification, similar reconstructions, 6–189× faster runtimes and 20–45% lower peak VRAM in 3D experiments. Caveat: This is reconstruction/compute benchmarking, not diagnostic accuracy or patient-outcome evidence. The arXiv comment says the work was submitted to Magnetic Resonance in Medicine, not accepted. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph method with scan comparisons and measured runtime/memory results."
+    },
+    {
+      "id": "15-unified-projection-domain-material-decomposition-for-energ",
+      "kind": "paper",
+      "title": "Unified Projection-Domain Material Decomposition for Energy-Integrating and Photon-Counting CT",
+      "rank": 15,
+      "url": "https://arxiv.org/abs/2610.30440",
+      "arxiv_id": "2610.30440",
+      "arxiv_version": "v1",
+      "published": "2026-10-21T20:49:51Z",
+      "updated": "2026-10-21T20:49:51Z",
+      "categories": [
+        "eess.IV",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Dale Black",
+        "Surya Naidu",
+        "Hamidreza Khodajou-Chokami",
+        "Sabee Molloi"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Quantitative methods"
+      ],
+      "abstract": "Can one projection-domain decomposition method use multiple spectral measurements across different CT acquisition systems?",
+      "claimed_contribution": "The authors formulate nested optimization for two-material decomposition from at least two spectral measurements and test energy-integrating and photon-counting CT. They report noiseless line-integral errors below 3×10⁻⁶ g/cm² and noise within 3% of the Cramér–Rao bound; four rather than two photon-counting measurements reduce iodine CRLB by 19%.",
+      "unique_caveat": "Evidence is mainly simulation and comparison with vendor reconstructions, not improved diagnosis or patient outcomes; performance depends on tested scanner models and basis assumptions.",
+      "evidence_for_ranking": "Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in eess.IV and physics.med-ph, with tests spanning three named CT systems.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-23",
+      "comment": "27 pages, 10 figures, 6 tables",
+      "doi": null,
+      "journal_ref": null,
+      "refs": [
+        "https://arxiv.org/abs/2610.30440",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30440?fields=citationCount,influentialCitationCount"
+      ],
+      "source_markdown": "Can one projection-domain decomposition method use multiple spectral measurements across different CT acquisition systems? Claimed contribution: The authors formulate nested optimization for two-material decomposition from at least two spectral measurements and test energy-integrating and photon-counting CT. They report noiseless line-integral errors below 3×10⁻⁶ g/cm² and noise within 3% of the Cramér–Rao bound; four rather than two photon-counting measurements reduce iodine CRLB by 19%. Caveat: Evidence is mainly simulation and comparison with vendor reconstructions, not improved diagnosis or patient outcomes; performance depends on tested scanner models and basis assumptions. Evidence for ranking: Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in eess.IV and physics.med-ph, with tests spanning three named CT systems."
+    },
+    {
+      "id": "80-trending-research-themes",
       "kind": "themes",
       "title": "Trending Research Themes",
       "rank": null,
-      "url": null,
-      "summary": "RNA design (ProMORNA, RiboBridge); privacy-aware single-cell and out-of-distribution evaluation (OneK1K benchmark, ion-channel classifier); mechanistic models of biomolecular state (DNA co-condensation, tau/amyloid). Several separate medical-physics proofs of concept appear, without evidence of one unified clinical trend."
+      "url": "",
+      "content": "**Molecular modeling and sequence-to-function tools.** RiboBridge, Escaping the Phylogenetic Trap, QProtFuse and the v2 ProMORNA report computational approaches spanning protein–RNA structure generation, cross-taxon peptide classification, protein-function retrieval and mRNA design. Evidence ranges from structural benchmarks to in-vitro reporter assays; these are not interchangeable levels of validation.\n\n**Molecular mechanisms and formal models.** Supercoiling Drives DNA-Protein Co-Condensation and the tau/amyloid-β model use theoretical or simulation-based accounts of condensation and nucleation; Global Convergence of Detailed Balanced Mass Action Systems contributes a formal theorem rather than an experimental pathway study. This is modeling activity in the selected batch, not evidence of a field-wide shift.\n\n**Medical imaging and treatment-planning methods.** AI Enhanced Cerenkov Luminescence Microscopy, the oxygen-enhanced MRI study, LieGROG, CT material decomposition and inverse planning address reconstruction, acquisition or optimization. Their evidence is simulation/phantom, small in-vitro/in-vivo pilot data or planning cases—not clinical benefit.\n\n**Single-cell privacy is a focused result, not a recurring theme in this small batch.** The OneK1K benchmark shows why privacy auditing must include non-HVG handling as well as fidelity (2610.31454).",
+      "source_markdown": "**Molecular modeling and sequence-to-function tools.** RiboBridge, Escaping the Phylogenetic Trap, QProtFuse and the v2 ProMORNA report computational approaches spanning protein–RNA structure generation, cross-taxon peptide classification, protein-function retrieval and mRNA design. Evidence ranges from structural benchmarks to in-vitro reporter assays; these are not interchangeable levels of validation.\n\n**Molecular mechanisms and formal models.** Supercoiling Drives DNA-Protein Co-Condensation and the tau/amyloid-β model use theoretical or simulation-based accounts of condensation and nucleation; Global Convergence of Detailed Balanced Mass Action Systems contributes a formal theorem rather than an experimental pathway study. This is modeling activity in the selected batch, not evidence of a field-wide shift.\n\n**Medical imaging and treatment-planning methods.** AI Enhanced Cerenkov Luminescence Microscopy, the oxygen-enhanced MRI study, LieGROG, CT material decomposition and inverse planning address reconstruction, acquisition or optimization. Their evidence is simulation/phantom, small in-vitro/in-vivo pilot data or planning cases—not clinical benefit.\n\n**Single-cell privacy is a focused result, not a recurring theme in this small batch.** The OneK1K benchmark shows why privacy auditing must include non-HVG handling as well as fidelity (2610.31454).",
+      "refs": [
+        "https://arxiv.org/abs/2610.30668",
+        "https://arxiv.org/abs/2610.31454",
+        "https://arxiv.org/abs/2610.30588",
+        "https://arxiv.org/abs/2610.30531",
+        "https://arxiv.org/abs/2610.30394",
+        "https://arxiv.org/abs/2605.01513",
+        "https://arxiv.org/abs/2610.30180",
+        "https://arxiv.org/abs/2610.30808",
+        "https://arxiv.org/abs/2610.31340",
+        "https://arxiv.org/abs/2610.31240",
+        "https://arxiv.org/abs/2610.31567",
+        "https://arxiv.org/abs/2610.30793",
+        "https://arxiv.org/abs/2610.30424",
+        "https://arxiv.org/abs/2610.30927",
+        "https://arxiv.org/abs/2610.30440"
+      ]
     },
     {
-      "id": "open-problems",
-      "kind": "open_problems",
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
       "title": "Open Problems and Research Directions",
       "rank": null,
-      "url": null,
-      "summary": "Test protein–RNA binders for binding and function; assess mRNA design beyond Fluc2P; evaluate synthetic-data privacy on external donors and attacks; experimentally vary DNA topology/protein affinity; extend image-restoration, hydrogel, and isotope-production validation."
+      "url": "",
+      "content": "**Model-to-experiment validation.** RiboBridge reports complex-structure recovery on 124 benchmarks but not direct binding assays. Follow-up could synthesize a blinded subset of candidates, quantify affinity and specificity, and test whether predicted interface ranking tracks activity; this addresses the authors’ stated interface-ranking and sequence-realizability limits.\n\n**Generalizable privacy evaluation.** The OneK1K study centers on one donor-split dataset and membership-inference metrics. A useful follow-up is a held-out-cohort comparison across tissues and platforms, with explicit privacy guarantees and attacks after the complete preprocessing/post-processing pipeline; distinguish formal guarantees from empirical attack resistance.\n\n**Test molecular-model predictions.** The supercoiling and tau/amyloid papers make testable predictions about condensation barriers and active-site density. Experiments could vary DNA linking density and protein concentration while measuring droplet nucleation, then compare fibrils at matched mass with direct site-counting and secondary-nucleation assays. These are informed synthesis proposals, not established mechanisms.\n\n**Validate imaging and delivery beyond proxies.** Cerenkov restoration should be tested on independent acquisition settings and reference structures; the oxygen-MRI pilot needs larger test–retest cohorts; hydrogel transport needs biological-barrier validation. CT decomposition and radiotherapy-planning methods need external-case or phantom-to-clinic validation before claims about patient outcomes.",
+      "source_markdown": "**Model-to-experiment validation.** RiboBridge reports complex-structure recovery on 124 benchmarks but not direct binding assays. Follow-up could synthesize a blinded subset of candidates, quantify affinity and specificity, and test whether predicted interface ranking tracks activity; this addresses the authors’ stated interface-ranking and sequence-realizability limits.\n\n**Generalizable privacy evaluation.** The OneK1K study centers on one donor-split dataset and membership-inference metrics. A useful follow-up is a held-out-cohort comparison across tissues and platforms, with explicit privacy guarantees and attacks after the complete preprocessing/post-processing pipeline; distinguish formal guarantees from empirical attack resistance.\n\n**Test molecular-model predictions.** The supercoiling and tau/amyloid papers make testable predictions about condensation barriers and active-site density. Experiments could vary DNA linking density and protein concentration while measuring droplet nucleation, then compare fibrils at matched mass with direct site-counting and secondary-nucleation assays. These are informed synthesis proposals, not established mechanisms.\n\n**Validate imaging and delivery beyond proxies.** Cerenkov restoration should be tested on independent acquisition settings and reference structures; the oxygen-MRI pilot needs larger test–retest cohorts; hydrogel transport needs biological-barrier validation. CT decomposition and radiotherapy-planning methods need external-case or phantom-to-clinic validation before claims about patient outcomes.",
+      "refs": [
+        "https://arxiv.org/abs/2610.30668",
+        "https://arxiv.org/abs/2610.31454",
+        "https://arxiv.org/abs/2610.30588",
+        "https://arxiv.org/abs/2610.30531",
+        "https://arxiv.org/abs/2610.30394",
+        "https://arxiv.org/abs/2605.01513",
+        "https://arxiv.org/abs/2610.31240",
+        "https://arxiv.org/abs/2610.31567",
+        "https://arxiv.org/abs/2610.30793",
+        "https://arxiv.org/abs/2610.30424",
+        "https://arxiv.org/abs/2610.30927"
+      ]
     },
     {
-      "id": "takeaway",
+      "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
       "rank": null,
-      "url": null,
-      "summary": "The fresh-batch signal is topical, not statistical: RNA design, single-cell privacy, and mechanistic biomolecular models stand out; the experimental results remain early and bounded."
-    },
-    {
-      "id": "method",
-      "kind": "method",
-      "title": "Method and sources",
-      "rank": null,
-      "url": null,
-      "summary": "Daily batch dated 23 October 2026; snapshot 2026-10-23T16:16:31Z. Broad arXiv category query plus recent listings; abstracts checked for selected papers; full HTML text reviewed for ProMORNA, RiboBridge, and OneK1K. Ranking is topical relevance and study design, not citation momentum or popularity."
+      "url": "",
+      "content": "This batch is notable for its mix of molecular-modeling papers and practical medical-physics methods, not measurable popularity: Semantic Scholar reported zero citations and zero influential citations for every selected paper at the snapshot. Evidence is mixed—mostly in-silico benchmarks, with a few in-vitro or small pilot experiments—and none alone establishes clinical effectiveness.",
+      "source_markdown": "This batch is notable for its mix of molecular-modeling papers and practical medical-physics methods, not measurable popularity: Semantic Scholar reported zero citations and zero influential citations for every selected paper at the snapshot. Evidence is mixed—mostly in-silico benchmarks, with a few in-vitro or small pilot experiments—and none alone establishes clinical effectiveness.",
+      "refs": [
+        "https://arxiv.org/abs/2610.30668",
+        "https://arxiv.org/abs/2610.31454",
+        "https://arxiv.org/abs/2610.30588",
+        "https://arxiv.org/abs/2610.30531",
+        "https://arxiv.org/abs/2610.30394",
+        "https://arxiv.org/abs/2605.01513",
+        "https://arxiv.org/abs/2610.30180",
+        "https://arxiv.org/abs/2610.30808",
+        "https://arxiv.org/abs/2610.31340",
+        "https://arxiv.org/abs/2610.31240",
+        "https://arxiv.org/abs/2610.31567",
+        "https://arxiv.org/abs/2610.30793",
+        "https://arxiv.org/abs/2610.30424",
+        "https://arxiv.org/abs/2610.30927",
+        "https://arxiv.org/abs/2610.30440"
+      ]
     }
   ]
 }

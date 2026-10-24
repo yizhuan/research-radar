@@ -1,131 +1,189 @@
-# arXiv Biology & Biomedicine — Daily batch, 23 October 2026
+# arXiv Biology and Biomedicine — Daily Report, 2026-10-23
 
-Ten notable papers from the Friday, 23 October announcement batch. The strongest cluster is RNA design—from full-length mRNA generation to protein-binding RNA structures—alongside single-cell privacy methods and mechanistic models of DNA/protein and amyloid systems. Today's agenda: what is newly testable in RNA design, where computational results stop short of biological validation, and which biomedical methods have early experimental support. This is a relevance-ranked selection, not a measured popularity chart: arXiv has no official trending chart, independent attention evidence is sparse for a fresh batch, and arXiv's biomedical coverage is incomplete relative to bioRxiv, medRxiv, and the wider medical literature.
+## Headline
 
-## Top papers (ranked)
+This daily snapshot covers the Friday 23 October 2026 announcement batch: 15 notable papers selected from 18 deduplicated candidates across the configured biology/biomedicine categories. The main patterns are computational RNA/protein design and prediction alongside medical-imaging and radiotherapy-planning methods. ArXiv has no official trending chart; citations and independent attention were too sparse to establish popularity, so this is an inferred relevance ranking, and arXiv omits much clinical and experimental biology published on bioRxiv, medRxiv and elsewhere. Snapshot: 2026-10-24 00:20 UTC.
 
-### 1. [ProMORNA: An End-to-End Generative Framework for Full-Length mRNA Design](https://arxiv.org/abs/2605.01513)
-- **Abstract:** ProMORNA uses a protein-conditioned encoder–decoder and multi-objective post-training to generate full-length mRNAs, reporting improved in-silico scores and higher Fluc2P reporter activity for selected candidates in three independent in-vitro experiments.
-- **Authors:** Zixi Shao; Tao Wang; Ye Shen; Tianyi Huang; Yibei Xiao
-- **arXiv:** `2605.01513v2` (published 2026-10-21T13:02:48Z; first submitted 2026-05-02; categories: `cs.LG`, `cs.AI`, `q-bio.BM`)
-- **Evidence for ranking:** Substantive v2 revision in this announcement batch; q-bio.BM cross-list; the revision reports three independent Fluc2P experiments. These are relevance and study-design signals, not popularity measures.
-- **Claimed contribution:** The authors report that Candidate 2's 12–72 h reporter-activity AUC was 3.33× the conventional benchmark (Holm-adjusted P=0.01285); its estimated 1.29× advantage over the selected GEMORNA candidate did not remain significant after correction.
-- **Caveat:** The experimental evidence is an in-vitro Fluc2P reporter screen, not evidence of therapeutic efficacy or generalization across payloads or in vivo settings; the GEMORNA comparison is explicitly exploratory after multiple-comparison correction.
-- **Announcement type:** revision (v2; originally submitted 2 May 2026), announcement batch 23 October 2026.
-- **Themes:** RNA & transcriptomics; Biomedical & translational medicine; Bioinformatics & sequence analysis
+## Notable recent papers
 
-### 2. [RiboBridge: protein-conditioned de novo RNA binder structure design](https://arxiv.org/abs/2610.30668)
-- **Abstract:** RiboBridge separates canonical RNA conformation generation from protein-relative assembly, using predicted interfaces and cross-frame interaction geometry to generate candidate protein–RNA structures without a specified binding site.
-- **Authors:** Zhou Zhang; Hanqun Cao; Minghao Sun; Odin Zhang; Yang Zhang; Pheng Ann Heng; Wujun Li; Tianfan Fu
-- **arXiv:** `2610.30668v1` (published 2026-10-22T03:32:07Z; categories: `cs.LG`, `q-bio.BM`)
-- **Evidence for ranking:** Direct q-bio.BM relevance and a temporally split, sequence-filtered, redundancy-controlled benchmark of 124 protein–RNA complexes; the paper includes component ablations and stage-wise diagnostics.
-- **Claimed contribution:** On that benchmark, authors report the best fNAT and DockQ and lowest interface/ligand RMSDs among compared methods under post-hoc interface-correspondence evaluation.
-- **Caveat:** Native interface information is used after generation to select the corresponding predicted-pocket candidate; the results are structural predictions, not demonstrations of binding, activity, safety, or therapeutic effect. The authors identify interface prioritization and sequence realization as limitations.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
-- **Themes:** RNA & transcriptomics; Biochemistry & proteins; Bioinformatics & sequence analysis
+### 1. [RiboBridge: protein-conditioned de novo RNA binder structure design](https://arxiv.org/abs/2610.30668)
+- **Abstract:** How can a protein-binding RNA structure be generated without specifying its binding site or relative pose?
+- **Authors:** Zhou Zhang, Hanqun Cao, Minghao Sun, Odin Zhang, Yang Zhang, Pheng Ann Heng, Wujun Li, Tianfan Fu
+- **arXiv:** `2610.30668v1` (published 2026-10-22T03:32:07Z; categories: `cs.LG, q-bio.BM`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations at snapshot; cross-listed from cs.LG into q-bio.BM, directly linking structure generation to molecular biology.
+- **Claimed contribution:** The authors introduce a structure-first pipeline that proposes protein interfaces, generates RNA conformations in a pretrained RNA latent space, predicts cross-frame interaction constraints, and places the RNA as a rigid body. On a temporally split, sequence-filtered benchmark of 124 complexes, they report the best fNAT and DockQ and lowest interface/ligand RMSDs among compared methods; native interface correspondence is used only post hoc.
+- **Caveat:** Structural-computational evidence, not experimental binding or function. The authors identify interface-hypothesis ranking and sequence realization as unresolved.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Biochemistry & proteins; RNA & transcriptomics; Bioinformatics & sequence analysis
 
-### 3. [Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset](https://arxiv.org/abs/2610.31454)
-- **Abstract:** The authors compare scGFT, scLDM, and Cell2Sentence on synthetic single-cell RNA-seq utility and membership-inference privacy, finding that how non-highly-variable genes are reconstructed strongly affects leakage.
-- **Authors:** Buse Giledereli; Basar Temiz; Amirreza Sattarzadeh Khanehbargh
+### 2. [Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset](https://arxiv.org/abs/2610.31454)
+- **Abstract:** Which single-cell RNA-seq synthesis choices preserve biological structure while limiting donor-membership leakage?
+- **Authors:** Buse Giledereli, Basar Temiz, Amirreza Sattarzadeh Khanehbargh
 - **arXiv:** `2610.31454v1` (published 2026-10-22T15:49:27Z; categories: `q-bio.GN`)
-- **Evidence for ranking:** Primary genomics category; donor-split OneK1K evaluation (633,711 training cells from 490 donors and 634,022 test cells from 491 donors); compares fidelity, downstream biological preservation, and membership inference rather than marginal similarity alone.
-- **Claimed contribution:** The authors report that copying non-HVG values can yield severe membership leakage, while Poisson reconstruction lowers risk; scGFT/scLDM preserve more biological structure than an independent Poisson baseline in tested configurations.
-- **Caveat:** Compute limits restricted generative modeling mainly to highly variable genes, and the benchmark is one dataset/split; privacy results do not establish protection against all attacks or populations.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
-- **Themes:** Omics & single-cell methods; RNA & transcriptomics; Biomedical & translational medicine
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; q-bio.GN paper whose arXiv comment notes presentation at the CAMDA 2026 ELSA Health Privacy Challenge.
+- **Claimed contribution:** The authors compare scGFT, scLDM and Cell2Sentence on donor-split OneK1K data across fidelity, biological preservation and membership-inference risk. They report severe leakage when non-HVG values are copied, lower leakage with Poisson reconstruction, and near-random membership-inference profiles for tuned scGFT/scLDM configurations.
+- **Caveat:** Generative modeling focuses on highly variable genes and reconstructs non-HVGs, reflecting stated time/computational limits. One dataset and empirical membership inference do not establish formal differential privacy or generalization.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Omics & single-cell methods; Bioinformatics & sequence analysis; Biomedical & translational medicine
 
-### 4. [Supercoiling Drives DNA-Protein Co-Condensation](https://arxiv.org/abs/2610.30588)
-- **Abstract:** A coupled DNA-elasticity/protein-field model predicts that supercoiling and protein wetting reinforce one another, helping DNA cross a kinetic barrier into a protein-rich condensed state.
-- **Authors:** Sihan Liu; Hongbo Zhao; Andrej Košmrlj
-- **arXiv:** `2610.30588v1` (published 2026-10-22T01:42:38Z; categories: `physics.bio-ph`, `cond-mat.soft`, `q-bio.BM`)
-- **Evidence for ranking:** Cross-listed in biophysics, soft matter, and biomolecules; simulations and a reduced analytical model examine a defined supercoiling/protein-concentration phase space, including biologically relevant supercoiling ranges.
-- **Claimed contribution:** The authors' model shows protein wetting can promote twist-to-writhe conversion and capillary collapse, while sufficient supercoiling lowers the modeled nucleation barrier.
-- **Caveat:** This is theory and simulation, not a direct cellular or biochemical demonstration; it assumes an idealized closed DNA loop and simplified DNA–protein/solvent interactions.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
-- **Themes:** DNA & genomics; Biochemistry & proteins; Molecular & cell biology
+### 3. [Supercoiling Drives DNA-Protein Co-Condensation](https://arxiv.org/abs/2610.30588)
+- **Abstract:** How does DNA torsional stress alter protein-mediated condensation and genome compaction?
+- **Authors:** Sihan Liu, Hongbo Zhao, Andrej Košmrlj
+- **arXiv:** `2610.30588v1` (published 2026-10-22T01:42:38Z; categories: `physics.bio-ph, cond-mat.soft, q-bio.BM`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in q-bio.BM, physics.bio-ph and cond-mat.soft.
+- **Claimed contribution:** Using a coupled DNA-elasticity/protein-concentration model and simulations, the authors propose that protein wetting promotes twist-to-writhe conversion, lowering the barrier to DNA–protein co-condensation under sufficient supercoiling.
+- **Caveat:** The mechanism is theoretical/model-based, not an experimental demonstration in cells. Predictions depend on model parameters and require validation across relevant proteins and chromatin contexts.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** DNA & genomics; Molecular & cell biology; Quantitative methods
 
-### 5. [Escaping the Phylogenetic Trap: Persistent Homology Enables Cross-Species Ion Channel Classification via Multimodal Graph Neural Networks](https://arxiv.org/abs/2610.30394)
-- **Abstract:** A multimodal sequence-and-structure classifier uses persistent-homology features to improve venom-compound ion-channel target classification when evaluation holds out entire taxa.
-- **Authors:** Arezoo Bybordi; Favour Achimba; Mariam Gelashvili; Jessy Ramirez; Weigang Qiu; Mandë Holford; Anita Raja
-- **arXiv:** `2610.30394v1` (published 2026-10-21T19:59:07Z; categories: `cs.LG`, `q-bio.BM`)
-- **Evidence for ranking:** q-bio.BM cross-list and a leave-one-taxon-out benchmark of 1,373 ColabFold-predicted venom compounds across five taxa; the paper quantifies how random splits overstate performance.
-- **Claimed contribution:** The authors report 63.4% accuracy for the persistent-homology model under taxonomic shift, more than eight percentage points above the next-best tested method; sequence-only performance fell to about 30% in that setting.
-- **Caveat:** Structural inputs are predicted rather than experimentally resolved, and classification scores do not establish toxin binding or functional effects in assays.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
-- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis; Quantitative methods
-
-### 6. [Shorter but not more catalytic: an active-site-resolved model of how tau reshapes amyloid-β secondary nucleation](https://arxiv.org/abs/2610.30531)
-- **Abstract:** An active-site-resolved kinetic model examines when tau cross-seeding changes amyloid-β42 fibril populations and secondary nucleation, concluding that shorter fibrils alone need not be more catalytic.
+### 4. [Shorter but not more catalytic: an active-site-resolved model of how tau reshapes amyloid-$β$ secondary nucleation](https://arxiv.org/abs/2610.30531)
+- **Abstract:** Does tau-induced shortening of amyloid-β fibrils necessarily increase secondary-nucleation activity?
 - **Authors:** Andrey V. Kuznetsov
 - **arXiv:** `2610.30531v1` (published 2026-10-21T23:33:32Z; categories: `q-bio.SC`)
-- **Evidence for ranking:** Direct subcellular/molecular scope; model explores 800 Latin-hypercube parameter samples and fibril lengths from 0.3 to 30 μm.
-- **Claimed contribution:** The author reports that fibril shortening increases catalytic potential only if each new fibril adds enough active sites; monomer clearance versus elongation controls the modeled direction of secondary-nucleation change.
-- **Caveat:** These are model-dependent mechanistic predictions, not new measurements of tau/amyloid aggregation or patient outcomes.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; q-bio.SC primary category and a focused molecular mechanism with parameter-sweep evidence.
+- **Claimed contribution:** The author extends a tau–amyloid-β kinetic model to track fibril number, mass and exposed catalytic sites. Simulations suggest shortening alone has little effect at matched mass; site density/exposure and the balance between elongation-driven monomer consumption and clearance control the response. Analysis includes 800 Latin-hypercube samples and modeled fibril lengths of 0.3–30 μm.
+- **Caveat:** A mechanistic model, not direct measurement of fibril catalytic sites or patient biology; conclusions depend on assumptions about active-site creation, exposure and monomer clearance.
+- **Announcement type:** new submission, 2026-10-23
 - **Themes:** Biochemistry & proteins; Molecular & cell biology; Quantitative methods
 
-### 7. [Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference](https://arxiv.org/abs/2610.30683)
-- **Abstract:** The method uses posterior information from a simpler model to screen parameter proposals for a more detailed model, and is tested on gene-expression models fitted to cell-free data.
-- **Authors:** Jingsong Bai; Ayush Pandey
-- **arXiv:** `2610.30683v1` (published 2026-10-22T03:53:06Z; categories: `stat.ME`, `eess.SY`, `q-bio.QM`)
-- **Evidence for ranking:** q-bio.QM cross-list; applied to a hierarchy of gene-expression models and reports measured inference-time changes rather than only a proposed algorithm.
-- **Claimed contribution:** Authors report 8.02% and 15.21% MCMC speedups for phenomenological and mechanistic models, respectively, after setup costs.
-- **Caveat:** Evidence is limited to one gene-expression model hierarchy and cell-free experimental data; the reported gains are modest and may not transfer to other models.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
-- **Themes:** Quantitative methods; Molecular & cell biology; Bioinformatics & sequence analysis
+### 5. [Escaping the Phylogenetic Trap: Persistent Homology Enables Cross-Species Ion Channel Classification via Multimodal Graph Neural Networks](https://arxiv.org/abs/2610.30394)
+- **Abstract:** Can structural representations improve venom-peptide ion-channel classification when entire taxa are held out?
+- **Authors:** Arezoo Bybordi, Favour Achimba, Mariam Gelashvili, Jessy Ramirez, Weigang Qiu, Mandë Holford, Anita Raja
+- **arXiv:** `2610.30394v1` (published 2026-10-21T19:59:07Z; categories: `cs.LG, q-bio.BM`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed from cs.LG to q-bio.BM, with a taxon-held-out validation design.
+- **Claimed contribution:** The authors combine ESM-2 sequence embeddings with structure-aware graph networks and compare five structural priors on 1,373 ColabFold-predicted venom compounds from five taxa. In leave-one-taxon-out evaluation, persistent homology reaches 63.4% mean accuracy, versus about 54–55% for other geometric priors and about 30% for a sequence-only baseline; ordinary random splits mask the gap.
+- **Caveat:** Computational evidence based on predicted structures and five taxa; no experimental binding/activity validation. The authors flag multi-label channel promiscuity and richer structural/dynamic modeling as future work.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis; Quantitative methods
 
-### 8. [Direct Production of Ultra-High Radioisotopic Pure ⁶⁴Cu from Natural Zinc Metal via D-D Fusion Narrowband Fast Neutron Source Irradiation](https://arxiv.org/abs/2610.31340)
-- **Abstract:** The authors irradiate natural zinc with a D-D fusion neutron source and report no-carrier-added ⁶⁴Cu with high measured radioisotopic purity, a possible route to lower-cost radiopharmaceutical isotope production.
-- **Authors:** Jeremy M. C. Brown; Mantas Grigalavicius; Tibor Gilinger; Adam Kovacs; Parvin Varmazyar; Hsin-Hui Huang; Saulius Juodkazis; Mikas Vengris; Darius Gailevicius; Karoly Osvay
+### 6. [ProMORNA: An End-to-End Generative Framework for Full-Length mRNA Design](https://arxiv.org/abs/2605.01513)
+- **Abstract:** Can a generative model design full-length mRNA candidates balancing predicted stability and translation?
+- **Authors:** Zixi Shao, Tao Wang, Ye Shen, Tianyi Huang, Yibei Xiao
+- **arXiv:** `2605.01513v2` (published 2026-05-02T16:05:51Z; updated 2026-10-21T13:02:48Z; categories: `cs.LG, cs.AI, q-bio.BM`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; substantive v2 update in the current batch, cross-listed across cs.LG, cs.AI and q-bio.BM, with three in-vitro assays.
+- **Claimed contribution:** The v2 paper describes a BART-style model pretrained on over six million protein–mRNA pairs, then supervised fine-tuning and multi-objective reinforcement learning. The authors report in-silico Pareto-frontier gains and three independent in-vitro Fluc2P experiments: Candidate 2 had 3.33× the conventional benchmark’s 12–72 h reporter-activity AUC (Holm-adjusted P=0.01285); its estimated 1.29× advantage over the reported best GEMORNA candidate remained exploratory.
+- **Caveat:** Reporter activity is not therapeutic efficacy, in-vivo performance or clinical evidence. The GEMORNA comparison is explicitly exploratory; this is a v2 revision of a May submission, not a new paper.
+- **Announcement type:** revision, 2026-10-23
+- **Themes:** RNA & transcriptomics; Bioinformatics & sequence analysis; Quantitative methods
+
+### 7. [QProtFuse: Query-Guided Layer Fusion for Retrieval-Augmented Protein Function Prediction](https://arxiv.org/abs/2610.30180)
+- **Abstract:** Can protein-language-model features from multiple layers improve query-conditioned retrieval for protein-function descriptions?
+- **Authors:** Mianzhi Pan, Peishuo Liu, Yawen Ouyang, Botian Wang, Yiming Rong, Hao Zhou, Jianbing Zhang
+- **arXiv:** `2610.30180v1` (published 2026-10-19T14:47:25Z; categories: `cs.IR, q-bio.QM`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; newly surfaced in q-bio.QM from cs.IR and directly concerns protein-function retrieval.
+- **Claimed contribution:** The authors propose query-guided fusion of protein-language-model layers with joint protein/annotation retrieval objectives. On Prot-Inst-OOD they report 16.4% Recall@1 with annotation reranking and improved LLM-as-judge scores for generated descriptions.
+- **Caveat:** Retrieval and LLM-judge results are benchmark-specific and do not experimentally validate function. First submitted 2026-10-19; it appears as a q-bio.QM cross-list on 2026-10-23, not a new submission or versioned revision.
+- **Announcement type:** new q-bio.QM cross-list (original v1: 2026-10-19), 2026-10-23
+- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis
+
+### 8. [Global Convergence of Detailed Balanced Mass Action Systems](https://arxiv.org/abs/2610.30808)
+- **Abstract:** Under what assumptions do positive trajectories in detailed-balanced mass-action systems converge to equilibrium?
+- **Authors:** Haoran Lv, Chengjin Ni, Manqin Wang, Shenli He
+- **arXiv:** `2610.30808v1` (published 2026-10-22T06:33:06Z; categories: `cs.LO, math.DS, q-bio.MN`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in q-bio.MN, math.DS and cs.LO, with a Lean 4 formalization noted in the arXiv comment.
+- **Claimed contribution:** The authors prove a unique positive equilibrium in each positive stoichiometric compatibility class and convergence of every positive trajectory, alongside a Lean 4 formalization using a persistence/barrier argument, the Horn–Jackson dissipation identity and bounded-speed descent.
+- **Caveat:** A mathematical theorem under finite detailed-balanced mass-action assumptions, not empirical evidence for a particular biochemical network; application depends on those assumptions holding.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Molecular & cell biology; Quantitative methods
+
+### 9. [Direct Production of Ultra-High Radioisotopic Pure $^{64}$Cu from Natural Zinc Metal via D-D Fusion Narrowband Fast Neutron Source Irradiation](https://arxiv.org/abs/2610.31340)
+- **Abstract:** Can copper-64 be produced from natural zinc using a controlled D-D fusion neutron source?
+- **Authors:** Jeremy M. C. Brown, Mantas Grigalavicius, Tibor Gilinger, Adam Kovacs, Parvin Varmazyar, Hsin-Hui Huang, Saulius Juodkazis, Mikas Vengris, Darius Gailevicius, Karoly Osvay
 - **arXiv:** `2610.31340v1` (published 2026-10-22T14:24:29Z; categories: `physics.med-ph`)
-- **Evidence for ranking:** Direct medical-physics/radiopharmaceutical application with a physical irradiation and 72-hour gamma-spectroscopy measurement; the paper reports threshold-corrected purity values.
-- **Claimed contribution:** Authors report 99.62% minimum and 99.97% detection-threshold-corrected ⁶⁴Cu radioisotopic purity after a one-hour irradiation of natural zinc.
-- **Caveat:** The abstract describes a single irradiation protocol, not demonstrated production scale, cost in routine manufacture, clinical availability, or patient benefit.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
-- **Themes:** Biomedical & translational medicine; Quantitative methods
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with a direct radiopharmaceutical-production question and reported irradiation/spectroscopy.
+- **Claimed contribution:** The authors irradiated high-purity natural zinc for one hour and used gamma spectroscopy over 72 hours. They report no other copper radioisotope detected and threshold-corrected copper-64 purity estimates of 99.62% and 99.97% under two reporting thresholds.
+- **Caveat:** The abstract does not establish production yield, reproducible scale-up, full radiopharmaceutical manufacture or realized cost reduction; cost savings are prospective, not clinical outcomes.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Biomedical & translational medicine; Medical physics & imaging
 
-### 9. [AI Enhanced Cerenkov Luminescence Microscopy](https://arxiv.org/abs/2610.31240)
-- **Abstract:** A Monte-Carlo-guided CARE network restores simulated Cerenkov microscopy images and is then applied to images from 27 ¹⁸F-FDG-treated U87 tumor spheroids.
-- **Authors:** Stefano Pizzardi; Lisa Alborghetti; Caterina Lomazzi; Antonello Enrico Spinelli
+### 10. [AI Enhanced Cerenkov Luminescence Microscopy](https://arxiv.org/abs/2610.31240)
+- **Abstract:** Can physics-based simulated training pairs restore spatial detail in Cerenkov luminescence microscopy of tumor spheroids?
+- **Authors:** Stefano Pizzardi, Lisa Alborghetti, Caterina Lomazzi, Antonello Enrico Spinelli
 - **arXiv:** `2610.31240v1` (published 2026-10-22T13:23:12Z; categories: `physics.med-ph`)
-- **Evidence for ranking:** Medical-imaging application; training set comprises 15,360 simulated image pairs from 80 spheroid geometries, followed by an application to experimental images from 27 spheroids.
-- **Claimed contribution:** On synthetic validation data, authors report mean-squared error 0.0051 versus 0.0492 for Noise2Void, and report improved contrast/localization metrics on the experimental spheroid images.
-- **Caveat:** The quantitative ground truth is simulated; the experimental application is a small U87 spheroid set, not validation in patients or a clinical imaging workflow.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; direct imaging paper with simulation benchmarking and a 27-spheroid image application.
+- **Claimed contribution:** The authors train CARE on 15,360 Monte-Carlo-generated image pairs from 80 simulated spheroid geometries. They report lower synthetic-validation MSE than Noise2Void (0.0051 vs 0.0492) and apply the model to experimental images from 27 U87 spheroids, reporting more localized signal and higher local contrast/SNR.
+- **Caveat:** Quantitative ground truth is simulated; 27 spheroids are an experimental image set, not in-vivo or patient validation. Results depend on simulator fidelity.
+- **Announcement type:** new submission, 2026-10-23
 - **Themes:** Medical physics & imaging; Biomedical & translational medicine; Quantitative methods
 
-### 10. [Geometry-Dependent Properties of Physically Crosslinked PPy-PVA Hydrogels Enable Tunable Iontophoretic Drug Delivery](https://arxiv.org/abs/2610.31567)
-- **Abstract:** Five polypyrrole–polyvinyl-alcohol hydrogel geometries carrying bovine serum albumin were compared for iontophoretic transport using finite-element modeling and Franz diffusion cells with artificial membranes.
-- **Authors:** Heather Jin Hee Kim; Mohsen Alishahi; Kyuin Park; Mikaila K. Roncevich; Larissa M. Shepherd; Cara M. Nunez
-- **arXiv:** `2610.31567v1` (published 2026-10-22T17:10:35Z; categories: `cs.RO`, `physics.med-ph`; DOI: [10.1109/TBME.2026.3744496](https://doi.org/10.1109/TBME.2026.3744496))
-- **Evidence for ranking:** Direct drug-delivery application; compares five fabricated geometries using measured microstructure and membrane-transport assays, with finite-element field analysis.
-- **Claimed contribution:** Authors report geometry-dependent transport and mean iontophoretic permeability of (3.80 ± 1.93) × 10⁻⁵ in the artificial-membrane assay.
-- **Caveat:** The cargo is BSA and transport was measured using artificial membranes, not intact human skin or a clinical drug-delivery study.
-- **Announcement type:** new submission, announcement batch 23 October 2026.
-- **Themes:** Biomedical & translational medicine; Quantitative methods
+### 11. [Geometry-Dependent Properties of Physically Crosslinked PPy-PVA Hydrogels Enable Tunable Iontophoretic Drug Delivery](https://arxiv.org/abs/2610.31567)
+- **Abstract:** Can hydrogel geometry tune iontophoretic transport independently of changing current density?
+- **Authors:** Heather Jin Hee Kim, Mohsen Alishahi, Kyuin Park, Mikaila K. Roncevich, Larissa M. Shepherd, Cara M. Nunez
+- **arXiv:** `2610.31567v1` (published 2026-10-22T17:10:35Z; categories: `cs.RO, physics.med-ph`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with a DOI and geometry-controlled in-vitro membrane experiments.
+- **Claimed contribution:** The authors compare five PPy-PVA hydrogel geometries containing bovine serum albumin, characterize microstructure/electric fields, and measure transport in Franz cells with artificial membranes. They report geometry-dependent release/permeability and greater permeability under iontophoresis than passive diffusion.
+- **Caveat:** Experiments use artificial membranes and a model protein, not living skin, animals or people; the DOI is a publication identifier, not evidence of clinical effectiveness.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Biomedical & translational medicine; Molecular & cell biology
+
+### 12. [Advancing oxygen-enhanced MRI acquisition and modelling through dynamic $ΔR_{1}$ and $ΔR_2^*$ sensing](https://arxiv.org/abs/2610.30793)
+- **Abstract:** Can a reduced-acquisition fat/water MRI method quantify relaxation changes during an oxygen challenge?
+- **Authors:** Jorge Campos Pazmiño, Amiel Beausoleil-Morrison, Nathalie Panov, Véronique Fortier, Ives R. Levesque
+- **arXiv:** `2610.30793v1` (published 2026-10-22T06:16:41Z; categories: `physics.med-ph`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph paper with phantom and explicitly sized in-vivo pilot evaluations.
+- **Claimed contribution:** The authors introduce SR-Fat DESPOT, optimize sequence settings by Cramér–Rao analysis, and report phantom accuracy plus in-vivo measurements under 100% oxygen in one test–retest participant and a six-participant pilot. Spleen and kidney changes were statistically significant in that pilot.
+- **Caveat:** The in-vivo sample is small and evaluates a gas-challenge measurement method, not a validated diagnostic or clinical outcome; larger independent cohorts are needed.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Medical physics & imaging; Biomedical & translational medicine; Quantitative methods
+
+### 13. [Comparing local and global optimization reveals untapped hybrid potentials for machine learning-based inverse planning](https://arxiv.org/abs/2610.30424)
+- **Abstract:** How do global and local optimization approaches compare when embedding complication-risk models into radiotherapy planning?
+- **Authors:** Tim Ortkamp, Florian Leininger, Zhongxing Liao, Niklas Wahl, Ali Ajdari
+- **arXiv:** `2610.30424v1` (published 2026-10-21T20:33:02Z; categories: `physics.med-ph`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph comparison with 15 defined planning cases and a hybrid-optimization result.
+- **Claimed contribution:** The authors compare OptiCL and pyanno4rt across eight head-and-neck photon cases and seven lung proton cases, report broadly similar dose plans with different runtimes, and test hybrid strategies; one decision-tree-based hybrid reduces binary variables by 80% without reported plan-quality loss.
+- **Caveat:** A planning comparison on 15 cases with predicted NTCP, not prospective evidence of toxicity reduction or improved patient outcomes.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Biomedical & translational medicine; Medical physics & imaging; Quantitative methods
+
+### 14. [LieGROG: A Lie algebra approach for calibrating GRAPPA operators](https://arxiv.org/abs/2610.30927)
+- **Abstract:** Can Lie-algebra calibration improve GRAPPA-operator gridding for non-Cartesian MRI?
+- **Authors:** Tobias Wech
+- **arXiv:** `2610.30927v1` (published 2026-10-22T08:45:35Z; categories: `physics.med-ph`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; physics.med-ph method with scan comparisons and measured runtime/memory results.
+- **Claimed contribution:** The author estimates a joint generator for GRAPPA operators and compares LieGROG with classical calibration and NUFFT/Toeplitz references across simulations and 2D/3D MR scans. The abstract reports reduced noise amplification, similar reconstructions, 6–189× faster runtimes and 20–45% lower peak VRAM in 3D experiments.
+- **Caveat:** This is reconstruction/compute benchmarking, not diagnostic accuracy or patient-outcome evidence. The arXiv comment says the work was submitted to Magnetic Resonance in Medicine, not accepted.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Medical physics & imaging; Quantitative methods
+
+### 15. [Unified Projection-Domain Material Decomposition for Energy-Integrating and Photon-Counting CT](https://arxiv.org/abs/2610.30440)
+- **Abstract:** Can one projection-domain decomposition method use multiple spectral measurements across different CT acquisition systems?
+- **Authors:** Dale Black, Surya Naidu, Hamidreza Khodajou-Chokami, Sabee Molloi
+- **arXiv:** `2610.30440v1` (published 2026-10-21T20:49:51Z; categories: `eess.IV, physics.med-ph`)
+- **Evidence for ranking:** Semantic Scholar Graph: 0 citations and 0 influential citations; cross-listed in eess.IV and physics.med-ph, with tests spanning three named CT systems.
+- **Claimed contribution:** The authors formulate nested optimization for two-material decomposition from at least two spectral measurements and test energy-integrating and photon-counting CT. They report noiseless line-integral errors below 3×10⁻⁶ g/cm² and noise within 3% of the Cramér–Rao bound; four rather than two photon-counting measurements reduce iodine CRLB by 19%.
+- **Caveat:** Evidence is mainly simulation and comparison with vendor reconstructions, not improved diagnosis or patient outcomes; performance depends on tested scanner models and basis assumptions.
+- **Announcement type:** new submission, 2026-10-23
+- **Themes:** Medical physics & imaging; Quantitative methods
 
 ## Trending Research Themes
 
-- **Protein-conditioned RNA design is splitting into distinct problems.** ProMORNA targets full-length mRNA sequence design and reports reporter activity, while RiboBridge targets protein–RNA structural assembly. The former has limited in-vitro functional evidence; the latter remains a structure-prediction result. Neither alone establishes a general design solution.
-- **Evaluation design matters as much as model architecture.** The OneK1K benchmark shows privacy can be compromised by non-HVG handling; the ion-channel paper shows random splits can hide taxonomic generalization failures. Both argue for explicit adversarial or out-of-distribution evaluation, but on different tasks and datasets.
-- **Mechanistic biomolecular models are probing hidden state variables.** The DNA paper models topology and wetting together; the tau paper tracks active catalytic sites rather than fibril mass alone. Both are model-based explanations, not new experimental confirmation.
-- **Biomedical translation is represented by several separate proof-of-concept methods, not one unified shift.** The batch includes isotope production (⁶⁴Cu), image restoration (Cerenkov microscopy), and membrane-based delivery (PPy-PVA hydrogels), each with different validation levels and none establishing clinical efficacy.
+**Molecular modeling and sequence-to-function tools.** RiboBridge, Escaping the Phylogenetic Trap, QProtFuse and the v2 ProMORNA report computational approaches spanning protein–RNA structure generation, cross-taxon peptide classification, protein-function retrieval and mRNA design. Evidence ranges from structural benchmarks to in-vitro reporter assays; these are not interchangeable levels of validation.
+
+**Molecular mechanisms and formal models.** Supercoiling Drives DNA-Protein Co-Condensation and the tau/amyloid-β model use theoretical or simulation-based accounts of condensation and nucleation; Global Convergence of Detailed Balanced Mass Action Systems contributes a formal theorem rather than an experimental pathway study. This is modeling activity in the selected batch, not evidence of a field-wide shift.
+
+**Medical imaging and treatment-planning methods.** AI Enhanced Cerenkov Luminescence Microscopy, the oxygen-enhanced MRI study, LieGROG, CT material decomposition and inverse planning address reconstruction, acquisition or optimization. Their evidence is simulation/phantom, small in-vitro/in-vivo pilot data or planning cases—not clinical benefit.
+
+**Single-cell privacy is a focused result, not a recurring theme in this small batch.** The OneK1K benchmark shows why privacy auditing must include non-HVG handling as well as fidelity (2610.31454).
 
 ## Open Problems and Research Directions
 
-- **Test RNA designs beyond computational or reporter proxies.** For RiboBridge, synthesize prioritized candidates and measure binding affinity, specificity, and functional activity across multiple protein targets; for ProMORNA, repeat reporter and protein-output assays on payloads beyond Fluc2P and assess stability/translation under relevant cellular conditions. These follow-ups address the papers' stated boundary between predicted structure or reporter activity and functional, generalizable designs.
-- **Stress-test privacy on independent donors and attacks.** Repeat the OneK1K-style evaluation on external cohorts, hold out cell types and donors, and compare membership inference plus reconstruction attacks while retaining full-transcriptome utility. This would test whether the observed non-HVG privacy effect generalizes.
-- **Experimentally vary DNA topology and protein affinity.** Reconstituted systems could independently vary supercoiling density, protein concentration, and DNA–protein interaction strength, then quantify condensation kinetics and hysteresis. This directly tests the model's predicted cooperative pathway against its simplified physical assumptions.
-- **Strengthen translational validation.** For Cerenkov restoration, compare against independent spatial ground truth across diverse spheroid geometries and tracer conditions; for the hydrogel study, test intact skin or a validated skin model with multiple cargos. For ⁶⁴Cu, replicate production across runs and quantify yield, impurity profiles, and scale-up behavior before making manufacturing claims.
+**Model-to-experiment validation.** RiboBridge reports complex-structure recovery on 124 benchmarks but not direct binding assays. Follow-up could synthesize a blinded subset of candidates, quantify affinity and specificity, and test whether predicted interface ranking tracks activity; this addresses the authors’ stated interface-ranking and sequence-realizability limits.
+
+**Generalizable privacy evaluation.** The OneK1K study centers on one donor-split dataset and membership-inference metrics. A useful follow-up is a held-out-cohort comparison across tissues and platforms, with explicit privacy guarantees and attacks after the complete preprocessing/post-processing pipeline; distinguish formal guarantees from empirical attack resistance.
+
+**Test molecular-model predictions.** The supercoiling and tau/amyloid papers make testable predictions about condensation barriers and active-site density. Experiments could vary DNA linking density and protein concentration while measuring droplet nucleation, then compare fibrils at matched mass with direct site-counting and secondary-nucleation assays. These are informed synthesis proposals, not established mechanisms.
+
+**Validate imaging and delivery beyond proxies.** Cerenkov restoration should be tested on independent acquisition settings and reference structures; the oxygen-MRI pilot needs larger test–retest cohorts; hydrogel transport needs biological-barrier validation. CT decomposition and radiotherapy-planning methods need external-case or phantom-to-clinic validation before claims about patient outcomes.
 
 ## Takeaway
 
-The clearest fresh-batch signal is topical rather than statistical: two complementary RNA-design papers, a substantial single-cell privacy benchmark, and molecular models that expose assumptions worth testing. ProMORNA adds early in-vitro reporter evidence, but none of these papers warrants a claim of clinical efficacy; the biomedical engineering papers remain preclinical or assay-level.
+This batch is notable for its mix of molecular-modeling papers and practical medical-physics methods, not measurable popularity: Semantic Scholar reported zero citations and zero influential citations for every selected paper at the snapshot. Evidence is mixed—mostly in-silico benchmarks, with a few in-vitro or small pilot experiments—and none alone establishes clinical effectiveness.
 
 ## Method and sources
 
-- **Window:** daily, latest available announcement batch dated Friday 23 October 2026. Underlying first-submission or revision timestamps among selected records span 21–22 October 2026; ProMORNA is a v2 revision (first submitted 2 May). Snapshot: 2026-10-23 16:16:31 UTC. The latest batch visible on the arXiv recent listings at the snapshot was dated Friday 23 October 2026.
-- **Candidate query:** `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`, sorted by submitted date descending. The broad API response was traversed until results extended beyond this daily batch; recent-list pages were checked for q-bio.BM, GN, MN, SC, CB, TO, QM, and physics.med-ph. The `cs.BI` recent-list endpoint was unavailable during this run, although it was included in the broad API query; category-level completeness is therefore not guaranteed.
-- **Ranking:** No arXiv popularity chart exists, and no defensible independent attention or citation-velocity signal was established for this very recent batch. The list is consequently titled **Notable recent papers** and ranked by direct biology/biomedicine relevance, category fit, and checkable study or validation design—not by claimed readership. The 10 entries were selected from the latest batch after topical screening and deduplication by versionless arXiv ID. Citation totals, downloads, and views are not claimed.
-- **Evidence boundary:** Abstracts were checked on the linked arXiv pages. The full HTML text was also reviewed for ProMORNA, RiboBridge, and the OneK1K benchmark; summaries distinguish author-reported in-silico, in-vitro, and imaging evidence. arXiv is not a representative biomedical index; clinical papers here are not practice-changing evidence, and this report is not medical advice.
-- **Category listings:** [q-bio.BM](https://arxiv.org/list/q-bio.BM/recent), [q-bio.GN](https://arxiv.org/list/q-bio.GN/recent), [q-bio.MN](https://arxiv.org/list/q-bio.MN/recent), [q-bio.SC](https://arxiv.org/list/q-bio.SC/recent), [q-bio.CB](https://arxiv.org/list/q-bio.CB/recent), [q-bio.TO](https://arxiv.org/list/q-bio.TO/recent), [q-bio.QM](https://arxiv.org/list/q-bio.QM/recent), [physics.med-ph](https://arxiv.org/list/physics.med-ph/recent). Each paper entry links to its verified abstract page; version and category metadata were checked against the arXiv API.
+**Window:** daily; announcement batch 2026-10-23; date range 2026-10-23 through 2026-10-23; snapshot 2026-10-24T00:20:05Z. At the UTC snapshot on Saturday 24 October, no 24 October announcement batch was available, so this daily report uses the prior Friday 23 October batch.
+**Candidate scope/query:** `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`. Category recent listings were checked for the batch; a broad arXiv API query returned 200 records and extended back to 2026-10-05, beyond the selected daily window. Cross-listed records were deduplicated by versionless arXiv ID, and all 15 retained abstract pages were verified. Eighteen distinct records appeared in the traversed listings; three peripheral items (a general AI protocol, drought-stress detection without a clear molecular/medical question, and generic dynamical inference) were excluded for scope.
+**Ranking:** arXiv publishes no official trend or readership ranking. Semantic Scholar Graph reported 0 citations and 0 influential citations for all 15 selected papers at this snapshot; citation totals are not period gains. Searches did not establish enough current independent technical discussion to rank by attention. The list is therefore titled “Notable recent papers” and ordered by direct molecular/biomedical relevance and reported evidence, using recency only as a tie-breaker. One entry is a substantive v2 revision; QProtFuse is marked as a q-bio.QM cross-list rather than a new submission. No downloads or views are inferred.
+**Coverage caveat:** arXiv is not a representative biomedical index; many experimental and clinical preprints appear on bioRxiv or medRxiv, and this report is not a survey of those repositories or the medical literature.
+**Sources:** [arXiv q-bio recent listings](https://arxiv.org/list/q-bio/recent), [cs.BI API query](https://export.arxiv.org/api/query?search_query=cat%3Acs.BI&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200), [physics.med-ph recent listing](https://arxiv.org/list/physics.med-ph/recent), [arXiv API](https://export.arxiv.org/api/query), [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.30668?fields=title,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds). Individual arXiv abstract links appear with each paper.

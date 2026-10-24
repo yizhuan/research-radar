@@ -4,38 +4,68 @@
   "window": "daily",
   "date": "2026-10-24",
   "title": "GitHub Trending Summary - Daily - 2026-10-24",
-  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-24.md",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-10-24.md",
   "entry_count": 9,
   "entry_noun": "repositories",
-  "snapshot_time_utc": "2026-10-24 00:40 UTC",
-  "date_range": "2026-10-24 through 2026-10-24 (UTC)",
-  "ranking_basis": "Daily GitHub Trending star gains for the first seven entries; newly created active repositories are appended as supplements without daily gain rankings.",
-  "ranking_explanation": "Ranks 1-7 follow the descending stars-today values displayed on GitHub Trending. Ranks 8-9 are relevant, non-fork repositories created in the last two calendar days, selected from GitHub Search by current stars and freshness; their daily star gains are unavailable and are not compared to the Trending ranks.",
-  "global_caveat": "Point-in-time snapshot captured at 00:40 UTC. GitHub star totals and default-branch commits can change. The two Search supplements have no daily gain figure in this report; the date-based Search query uses calendar-day precision. No prior-window evidence was collected, so no Notable Shifts section is claimed.",
+  "ranking_basis": "daily GitHub Trending star gains",
+  "ranking_explanation": "Repositories were sorted by the stars-today figures shown in the matching GitHub daily Trending view; GitHub REST was used to corroborate names, total stars, language, and current main-branch commit. The list-only ebook link collection was excluded.",
+  "global_caveat": "Daily star-gain figures and total stars are time-sensitive and may shift after the snapshot; this report records the values observed at the stated UTC snapshot time.",
   "themes": [
     {
       "id": "agent-security",
-      "title": "Agent security and controlled execution",
-      "content": "Security is the clearest measured signal: a multi-phase audit skill leads the Trending gain list, NVIDIA supplies an isolated policy-enforced agent runtime, and security-oriented repositories extend the pattern into skills and vulnerability detection.",
-      "supporting_repository_ids": ["10-01-cloudflare-security-audit-skill", "10-02-nvidia-openshell", "10-06-snailsploit-claude-red", "10-09-assetnote-php2shell-scanner"]
+      "title": "Agent security and containment",
+      "supporting_repository_ids": [
+        "cloudflare/security-audit-skill",
+        "NVIDIA/OpenShell"
+      ],
+      "content": "Security work is becoming agent-native in two complementary ways: Cloudflare's skill structures vulnerability discovery and adversarial validation, while NVIDIA OpenShell constrains agent execution and access at runtime."
     },
     {
-      "id": "agent-skills-and-workflows",
-      "title": "Composable agent skills and role workflows",
-      "content": "Several repositories distribute reusable capabilities as structured skills, plugins, connectors, or sub-agent workflows, targeting auditing, offensive-security research, and business roles.",
-      "supporting_repository_ids": ["10-01-cloudflare-security-audit-skill", "10-04-anthropics-knowledge-work-plugins", "10-06-snailsploit-claude-red"]
+      "id": "agent-infrastructure",
+      "title": "Agent infrastructure and runtime",
+      "supporting_repository_ids": [
+        "NVIDIA/OpenShell"
+      ],
+      "content": "OpenShell represents the control-plane layer for autonomous agents: sandboxes, explicit policies, credential mediation, and runtime enforcement."
     },
     {
-      "id": "core-runtime-infrastructure",
-      "title": "Established language and runtime infrastructure",
-      "content": "PHP's interpreter ranks third by daily gains, standing out as a mature core runtime amid the agent-heavy entries; the new PHP scanner further connects the language ecosystem to security response.",
-      "supporting_repository_ids": ["10-03-php-php-src", "10-09-assetnote-php2shell-scanner"]
+      "id": "ai-design-tooling",
+      "title": "Design-quality tooling for coding agents",
+      "supporting_repository_ids": [
+        "pbakaus/impeccable",
+        "Nutlope/hallmark"
+      ],
+      "content": "Impeccable and Hallmark both target generic AI-generated interfaces, but pair agent instructions with explicit checks, browser feedback, or task-aware design constraints."
     },
     {
-      "id": "specialized-generative-and-systems-projects",
-      "title": "Specialized generative AI and systems projects",
-      "content": "The remainder spans multilingual speech synthesis, a Chinese astrology charting/data engine, and experimental macOS-on-Snapdragon platform engineering.",
-      "supporting_repository_ids": ["10-05-renhuai123-ziwei-doushu", "10-07-openbmb-voxcpm", "10-08-snapintosh-snapintosh"]
+      "id": "agent-platforms",
+      "title": "Agent clients and cloud integrations",
+      "supporting_repository_ids": [
+        "makecindy/cindy",
+        "google-gemini/gemini-cli",
+        "aws/agent-toolkit-for-aws"
+      ],
+      "content": "Cindy unifies multiple harnesses and models in a client, Gemini CLI brings an agent to the terminal, and AWS's toolkit connects existing agents to cloud workflows."
+    },
+    {
+      "id": "physical-ai-robotics",
+      "title": "Physical AI and robotics",
+      "supporting_repository_ids": [
+        "pollen-robotics/microduck"
+      ],
+      "content": "Microduck is a hardware-focused outlier: learned movement policies are deployed in an embedded robot rather than a software-only agent."
+    },
+    {
+      "id": "agent-workflows",
+      "title": "Reusable agent workflows",
+      "supporting_repository_ids": [
+        "cloudflare/security-audit-skill",
+        "pbakaus/impeccable",
+        "makecindy/cindy",
+        "luongnv89/claude-howto",
+        "google-gemini/gemini-cli"
+      ],
+      "content": "Reusable skills, commands, multi-agent handoffs, and CLI workflows remain a visible layer across otherwise different projects."
     }
   ],
   "sections": [
@@ -43,222 +73,358 @@
       "id": "00-snapshot",
       "kind": "snapshot",
       "title": "Snapshot",
-      "content": "Daily GitHub Trending snapshot captured 2026-10-24 00:40 UTC; date range 2026-10-24 through 2026-10-24 UTC. The first seven repositories are ranked by daily Trending star gains; two new-repository supplements have no daily gain data."
+      "content": "Snapshot time: 2026-10-24 16:32 UTC; scope: daily; date range: 2026-10-24 through 2026-10-24; ranking basis: daily GitHub Trending star gains."
     },
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Security is the strongest signal: Cloudflare’s audit skill leads today’s page by a wide margin, while NVIDIA’s agent runtime and a newly created vulnerability scanner add momentum to the security-and-agent infrastructure cluster. The snapshot also has a striking incumbent-language outlier—PHP’s interpreter—and smaller spikes in role-specific agent plugins, speech generation, and a specialist Chinese astrology engine."
+      "content": "Today's GitHub trend is dominated by tools that make coding agents safer and more useful: Cloudflare's security-audit workflow leads daily gains, while NVIDIA's sandbox runtime and two design-quality toolkits reinforce the same agent-infrastructure and agent-design push."
     },
     {
-      "id": "10-01-cloudflare-security-audit-skill",
-      "kind": "repo",
-      "title": "cloudflare/security-audit-skill",
+      "id": "01-cloudflare-security-audit-skill",
       "rank": 1,
+      "name": "cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.",
-      "content": "A coding-agent skill coordinating reconnaissance, coverage-led hunting, candidate validation, independent record verification, and structured reporting. It leads the captured daily Trending page by 2,716 stars.",
       "language": "JavaScript",
-      "stars_gained": 2716,
-      "total_stars": 42137,
+      "stars_gained": 2271,
+      "total_stars": 43591,
+      "default_branch": "main",
       "default_branch_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
-      "why_notable": "Largest daily gain in the captured Trending view; its first-party README emphasizes coverage ledgers, independent verification, and schema-validated machine-readable findings.",
-      "theme_ids": ["agent-security", "agent-skills-and-workflows"],
+      "why_notable": "The day's strongest visible star-gain signal; it turns security review into a staged agent workflow with coverage tracking and independent validation.",
+      "theme_ids": [
+        "agent-security",
+        "agent-workflows"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 1,
       "spoken_name": "Cloudflare Security Audit Skill",
-      "enrichment": null,
-      "refs": ["cloudflare/security-audit-skill"]
+      "kind": "repo",
+      "title": "cloudflare/security-audit-skill",
+      "content": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings. The day's strongest visible star-gain signal; it turns security review into a staged agent workflow with coverage tracking and independent validation.",
+      "refs": [
+        "cloudflare/security-audit-skill"
+      ],
+      "enrichment": {
+        "architecture_summary": "A six-phase, agent-orchestrated security audit pipeline that keeps coverage, candidate findings, and final reports in structured artifacts.",
+        "core_components": [
+          "Reconnaissance and coverage ledger",
+          "Isolated coverage-led hunters and critics",
+          "Fresh-agent candidate validation",
+          "Schema-validated findings and independent record verification",
+          "Markdown report generation"
+        ],
+        "workflow": "Map target and coverage; hunt in isolated assignments; challenge each candidate with a fresh verifier; write structured findings; independently verify records; generate reports.",
+        "design_pattern": "Adversarial multi-agent pipeline with explicit coverage artifacts and machine-validated outputs.",
+        "source_refs": [
+          "https://github.com/cloudflare/security-audit-skill#readme",
+          "https://github.com/cloudflare/security-audit-skill/blob/main/report-schema.json"
+        ]
+      }
     },
     {
-      "id": "10-02-nvidia-openshell",
-      "kind": "repo",
-      "title": "NVIDIA/OpenShell",
+      "id": "02-NVIDIA-OpenShell",
       "rank": 2,
+      "name": "NVIDIA/OpenShell",
       "url": "https://github.com/NVIDIA/OpenShell",
-      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-      "content": "A Rust-based agent runtime with kernel-level sandbox enforcement and policy review using formal verification; it gained 1,119 stars in the daily Trending view.",
+      "description": "A safe, private runtime for autonomous AI agents.",
       "language": "Rust",
-      "stars_gained": 1119,
-      "total_stars": 18797,
-      "default_branch_commit": "f571c8e99c185804c39e837a2b70692e957de327",
-      "why_notable": "Second-largest daily gain; its policy-controlled access and credential mediation address a concrete deployment constraint for autonomous agents.",
-      "theme_ids": ["agent-security"],
+      "stars_gained": 893,
+      "total_stars": 19259,
+      "default_branch": "main",
+      "default_branch_commit": "c4688aa8715ea75d6c39fe468361dbbc16c691fa",
+      "why_notable": "A high-momentum infrastructure response to agent access risk: it combines isolated sandboxes, runtime policy enforcement, and formal review of policy changes.",
+      "theme_ids": [
+        "agent-security",
+        "agent-infrastructure"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 2,
       "spoken_name": "NVIDIA OpenShell",
-      "enrichment": null,
-      "refs": ["NVIDIA/OpenShell"]
+      "kind": "repo",
+      "title": "NVIDIA/OpenShell",
+      "content": "A safe, private runtime for autonomous AI agents. A high-momentum infrastructure response to agent access risk: it combines isolated sandboxes, runtime policy enforcement, and formal review of policy changes.",
+      "refs": [
+        "NVIDIA/OpenShell"
+      ],
+      "enrichment": {
+        "architecture_summary": "A gateway-managed agent runtime built around isolated sandboxes, kernel-level controls, policy-aware network access, and formal checking of proposed policy changes.",
+        "core_components": [
+          "Gateway and supervisor",
+          "Per-agent sandbox",
+          "Kernel-level file, syscall, and network enforcement",
+          "Credential mediation",
+          "Policy advisor and prover"
+        ],
+        "workflow": "Declare agent access in policy; run the agent in a sandbox; mediate outbound connections and credentials; check policy changes before human approval.",
+        "design_pattern": "Policy-as-control-plane with defense in depth: runtime enforcement plus pre-approval formal verification.",
+        "source_refs": [
+          "https://github.com/NVIDIA/OpenShell#readme",
+          "https://docs.nvidia.com/openshell/latest/about/architecture"
+        ]
+      }
     },
     {
-      "id": "10-03-php-php-src",
-      "kind": "repo",
-      "title": "php/php-src",
+      "id": "03-pbakaus-impeccable",
       "rank": 3,
-      "url": "https://github.com/php/php-src",
-      "description": "The PHP Interpreter.",
-      "content": "The canonical PHP interpreter source in C; its 716 daily stars make it a notable established-runtime outlier in an otherwise strongly agent-oriented list.",
-      "language": "C",
-      "stars_gained": 716,
-      "total_stars": 41563,
-      "default_branch_commit": "45869fa68a91557d4a798d8219f5b938bc21fd70",
-      "why_notable": "Third by daily gains and a meaningful counterpoint to the newer AI and agent tools; it is a foundational language project rather than a trend-specific application.",
-      "theme_ids": ["core-runtime-infrastructure"],
-      "signal_strength": "lead",
-      "evidence_density": "rich",
-      "narration_priority": 4,
-      "spoken_name": "PHP source",
-      "enrichment": null,
-      "refs": ["php/php-src"]
-    },
-    {
-      "id": "10-04-anthropics-knowledge-work-plugins",
-      "kind": "repo",
-      "title": "anthropics/knowledge-work-plugins",
-      "rank": 4,
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork.",
-      "content": "A catalog of role-focused plugins bundling skills, connectors, slash commands, and sub-agents for functions including sales, legal, finance, data, and research; it gained 635 stars today.",
-      "language": "Python",
-      "stars_gained": 635,
-      "total_stars": 32212,
-      "default_branch_commit": "33d3dea41a341b341d4f5da2e8801ae0c89be2b8",
-      "why_notable": "Its fourth-place daily gain reflects demand for assistants customized around concrete organizational roles and connected workflows.",
-      "theme_ids": ["agent-skills-and-workflows"],
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "Design guidance and tooling for AI coding agents building frontend interfaces.",
+      "language": "Rust",
+      "stars_gained": 733,
+      "total_stars": 86073,
+      "default_branch": "main",
+      "default_branch_commit": "936867543ac2576920d663cc9803597f6044f3ac",
+      "why_notable": "The third-largest daily gain among the screened repositories, with a measurable design-quality approach: reusable commands plus deterministic checks and live browser iteration.",
+      "theme_ids": [
+        "ai-design-tooling",
+        "agent-workflows"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 3,
-      "spoken_name": "Anthropic Knowledge Work Plugins",
-      "enrichment": null,
-      "refs": ["anthropics/knowledge-work-plugins"]
+      "spoken_name": "Impeccable",
+      "kind": "repo",
+      "title": "pbakaus/impeccable",
+      "content": "Design guidance and tooling for AI coding agents building frontend interfaces. The third-largest daily gain among the screened repositories, with a measurable design-quality approach: reusable commands plus deterministic checks and live browser iteration.",
+      "refs": [
+        "pbakaus/impeccable"
+      ],
+      "enrichment": {
+        "architecture_summary": "An agent-facing design skill with 24 commands, deterministic frontend-design detectors, optional LLM critique, and browser-based iteration.",
+        "core_components": [
+          "Project context initializer that records product constraints",
+          "24 design commands",
+          "62 deterministic detector rules",
+          "CLI and browser extension",
+          "Live browser iteration"
+        ],
+        "workflow": "Install the skill, initialize product context, invoke a focused design command, then inspect and refine the live interface; deterministic checks can run without an LLM/API key.",
+        "design_pattern": "Pair natural-language design direction with deterministic linting and a visual feedback loop.",
+        "source_refs": [
+          "https://github.com/pbakaus/impeccable#readme",
+          "https://impeccable.style/docs"
+        ]
+      }
     },
     {
-      "id": "10-05-renhuai123-ziwei-doushu",
+      "id": "04-Nutlope-hallmark",
+      "rank": 4,
+      "name": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "A design skill for coding agents that aims to avoid generic AI-generated web design.",
+      "language": "CSS",
+      "stars_gained": 570,
+      "total_stars": 31749,
+      "default_branch": "main",
+      "default_branch_commit": "7ec868225c6caa040558c321ee0fefa0e73f83a8",
+      "why_notable": "It gives the design-tooling theme a distinct product-design angle: theme materials, task-specific page structure, browser checks, and tiered quality gates.",
+      "theme_ids": [
+        "ai-design-tooling"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Hallmark",
       "kind": "repo",
-      "title": "Renhuai123/ziwei-doushu",
+      "title": "Nutlope/hallmark",
+      "content": "A design skill for coding agents that aims to avoid generic AI-generated web design. It gives the design-tooling theme a distinct product-design angle: theme materials, task-specific page structure, browser checks, and tiered quality gates.",
+      "refs": [
+        "Nutlope/hallmark"
+      ],
+      "enrichment": {
+        "architecture_summary": "An agent design workflow that selects from a catalog of visual themes, builds pages around their intended user action, and checks rendered output in a browser.",
+        "core_components": [
+          "48 visual themes",
+          "Task/category-specific page structure",
+          "Browser screenshot capture and lint checks",
+          "Accessibility and responsive-layout floor gates",
+          "Fresh-context review"
+        ],
+        "workflow": "Choose or request a theme; build around the page's real conversion task; capture the result in a browser; run hard-floor, default-pattern, and craft checks; revise or document justified overrides.",
+        "design_pattern": "Theme-driven generation constrained by task semantics and layered acceptance gates.",
+        "source_refs": [
+          "https://github.com/Nutlope/hallmark#readme"
+        ]
+      }
+    },
+    {
+      "id": "05-makecindy-cindy",
       "rank": 5,
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "description": "A Chinese Zi Wei Dou Shu charting engine based on the Ni Haixia Tian Ji system, with charting algorithms, transformation logic, pattern knowledge, and classical-text data.",
-      "content": "A TypeScript charting engine and data project for Chinese Zi Wei Dou Shu; its README describes a large generated interpretation dataset and clearly separates code and data licensing.",
+      "name": "makecindy/cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "description": "An open-source desktop and mobile AI-agent client that brings multiple harnesses, models, and tools together.",
       "language": "TypeScript",
-      "stars_gained": 546,
-      "total_stars": 6856,
-      "default_branch_commit": "1059c347231c636bd86ddb78fd8ed430d5de8d2a",
-      "why_notable": "Fifth by daily gains and a strong non-English, culturally specific application in the list, with unusually detailed first-party dataset and licensing documentation.",
-      "theme_ids": ["specialized-generative-and-systems-projects"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 7,
-      "spoken_name": "Zi Wei Dou Shu charting engine",
-      "enrichment": null,
-      "refs": ["Renhuai123/ziwei-doushu"]
-    },
-    {
-      "id": "10-06-snailsploit-claude-red",
-      "kind": "repo",
-      "title": "SnailSploit/Claude-Red",
-      "rank": 6,
-      "url": "https://github.com/SnailSploit/Claude-Red",
-      "description": "A curated library of offensive security skills designed for the Claude skills system.",
-      "content": "A Python repository of structured offensive-security skills covering multiple attack surfaces, distributed as load-on-demand capability files for Claude workflows.",
-      "language": "Python",
-      "stars_gained": 226,
-      "total_stars": 8487,
-      "default_branch_commit": "a8de813edc9f66f60d44cfe42d47750e89d9930b",
-      "why_notable": "Its daily gain illustrates the skills-as-agent-capability pattern extending into security research and red-team use cases.",
-      "theme_ids": ["agent-security", "agent-skills-and-workflows"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 6,
-      "spoken_name": "Claude-Red",
-      "enrichment": null,
-      "refs": ["SnailSploit/Claude-Red"]
-    },
-    {
-      "id": "10-07-openbmb-voxcpm",
-      "kind": "repo",
-      "title": "OpenBMB/VoxCPM",
-      "rank": 7,
-      "url": "https://github.com/OpenBMB/VoxCPM",
-      "description": "VoxCPM2: tokenizer-free text-to-speech for multilingual speech generation, creative voice design, and voice cloning.",
-      "content": "A Python speech-generation system using a tokenizer-free diffusion-autoregressive approach; the README highlights multilingual synthesis, voice design, controllable cloning, and high-quality audio output.",
-      "language": "Python",
-      "stars_gained": 150,
-      "total_stars": 40256,
-      "default_branch_commit": "cce58a5b59303c9bd63d12f23afe6a49a4a80c59",
-      "why_notable": "It represents a distinct generative-AI use case beyond agent workflows and remains highly starred despite a smaller daily gain than the leading entries.",
-      "theme_ids": ["specialized-generative-and-systems-projects"],
+      "stars_gained": 471,
+      "total_stars": 3899,
+      "default_branch": "main",
+      "default_branch_commit": "d85014fdf9aaaeb689f7b4140c7c9004b506a746",
+      "why_notable": "A fast-rising agent-client project that emphasizes continuity across harnesses and models, with desktop/mobile apps and local-computer automation in one monorepo.",
+      "theme_ids": [
+        "agent-platforms",
+        "agent-workflows"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 5,
-      "spoken_name": "VoxCPM",
-      "enrichment": null,
-      "refs": ["OpenBMB/VoxCPM"]
+      "spoken_name": "Cindy",
+      "kind": "repo",
+      "title": "makecindy/cindy",
+      "content": "An open-source desktop and mobile AI-agent client that brings multiple harnesses, models, and tools together. A fast-rising agent-client project that emphasizes continuity across harnesses and models, with desktop/mobile apps and local-computer automation in one monorepo.",
+      "refs": [
+        "makecindy/cindy"
+      ],
+      "enrichment": {
+        "architecture_summary": "A TypeScript/pnpm monorepo for desktop and mobile clients plus shared packages for agent orchestration, model providers, and device integration.",
+        "core_components": [
+          "Electron desktop app",
+          "Expo/React Native mobile app",
+          "Shared agent orchestration and model-provider packages",
+          "Browser/computer/phone control",
+          "Skills, memory, schedules, and MCP integrations"
+        ],
+        "workflow": "Run local agents in supported harnesses, switch harness/model while retaining workspace context, and extend capabilities through tools, skills, MCP, and scheduled work.",
+        "design_pattern": "Multi-harness client orchestration with shared task context and optional local/hosted service paths.",
+        "source_refs": [
+          "https://github.com/makecindy/cindy#readme",
+          "https://github.com/makecindy/cindy/blob/main/docs/README.md"
+        ]
+      }
     },
     {
-      "id": "10-08-snapintosh-snapintosh",
-      "kind": "repo",
-      "title": "Snapintosh/Snapintosh",
-      "rank": 8,
-      "url": "https://github.com/Snapintosh/Snapintosh",
-      "description": "EL2 hypervisor and toolchain that boots macOS on the ASUS Zenbook A16 with Snapdragon X2 Elite, including an Adreno graphics stack.",
-      "content": "A newly created, experimental platform project using an EL2 monitor, device models, and an Adreno driver stack to boot macOS on one specified Snapdragon laptop; this is a Search-discovered supplement, not a daily-gain rank.",
+      "id": "06-luongnv89-claude-howto",
+      "rank": 6,
+      "name": "luongnv89/claude-howto",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code, from fundamentals to advanced agent workflows.",
       "language": "Python",
-      "stars_gained": null,
-      "total_stars": 761,
-      "default_branch_commit": "2c60b47a950f6d98caed6b2551adc227f8ced4c9",
-      "why_notable": "Among the highest-starred non-fork repositories created in the last two calendar days; its README provides detailed architecture and status notes.",
-      "theme_ids": ["specialized-generative-and-systems-projects"],
+      "stars_gained": 442,
+      "total_stars": 44304,
+      "default_branch": "main",
+      "default_branch_commit": "188f468893231cbe4525f45e657d554746232072",
+      "why_notable": "A practical learning resource with substantial daily traction, indicating sustained developer interest in agent workflow patterns rather than only agent runtimes.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-learning"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 6,
+      "spoken_name": "Claude How-To",
+      "kind": "repo",
+      "title": "luongnv89/claude-howto",
+      "content": "A visual, example-driven guide to Claude Code, from fundamentals to advanced agent workflows. A practical learning resource with substantial daily traction, indicating sustained developer interest in agent workflow patterns rather than only agent runtimes.",
+      "refs": [
+        "luongnv89/claude-howto"
+      ],
+      "unique_caveat": "It is a guide/resource repository rather than an executable agent or toolkit.",
+      "enrichment": null
+    },
+    {
+      "id": "07-pollen-robotics-microduck",
+      "rank": 7,
+      "name": "pollen-robotics/microduck",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "description": "A tiny biped robot that moves using reinforcement-learning policies.",
+      "language": "Rust",
+      "stars_gained": 381,
+      "total_stars": 10786,
+      "default_branch": "main",
+      "default_branch_commit": "942e58e3aa6dbb28e7037203fff11866122c7567",
+      "why_notable": "A hardware counterpoint to the software-agent cluster: the repository combines an embedded Rust control system with sim-to-real learned policies.",
+      "theme_ids": [
+        "physical-ai-robotics"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
-      "narration_priority": 8,
-      "spoken_name": "Snapintosh",
-      "unique_caveat": "Experimental and limited to one specific laptop model; several hardware features remain unsupported.",
-      "enrichment": null,
-      "refs": ["Snapintosh/Snapintosh"]
+      "narration_priority": 7,
+      "spoken_name": "Microduck",
+      "kind": "repo",
+      "title": "pollen-robotics/microduck",
+      "content": "A tiny biped robot that moves using reinforcement-learning policies. A hardware counterpoint to the software-agent cluster: the repository combines an embedded Rust control system with sim-to-real learned policies.",
+      "refs": [
+        "pollen-robotics/microduck"
+      ],
+      "unique_caveat": "The project targets a specific physical robot platform, so it is not a general-purpose robotics stack.",
+      "enrichment": null
     },
     {
-      "id": "10-09-assetnote-php2shell-scanner",
-      "kind": "repo",
-      "title": "assetnote/php2shell-scanner",
-      "rank": 9,
-      "url": "https://github.com/assetnote/php2shell-scanner",
-      "description": "A high-fidelity scanner for detecting CVE-2026-109618 and CVE-2026-109619 in PHP applications.",
-      "content": "A newly created Python CLI scanner that uses differential multipart probes to identify vulnerable PHP applications; it is a Search-discovered supplement, not a daily-gain rank.",
-      "language": "Python",
-      "stars_gained": null,
-      "total_stars": 472,
-      "default_branch_commit": "96210e81e0aef84cfa81874a159d6bf512eca479",
-      "why_notable": "It is a newly created defensive security project aligned with the day's security signal, with explicit detection logic and operational notes in its README.",
-      "theme_ids": ["agent-security", "core-runtime-infrastructure"],
+      "id": "08-google-gemini-gemini-cli",
+      "rank": 8,
+      "name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "description": "An open-source terminal agent that brings Gemini capabilities to the command line.",
+      "language": "TypeScript",
+      "stars_gained": 38,
+      "total_stars": 107786,
+      "default_branch": "main",
+      "default_branch_commit": "cd1b45c2db0a5ea7b7fc3b67c1ba5879601d6005",
+      "why_notable": "A mature, widely starred CLI agent appearing in today's trend feed; it shows continued attention to terminal-native agent workflows despite lower daily momentum.",
+      "theme_ids": [
+        "agent-platforms",
+        "agent-workflows"
+      ],
       "signal_strength": "brief",
-      "evidence_density": "rich",
+      "evidence_density": "moderate",
+      "narration_priority": 8,
+      "spoken_name": "Gemini CLI",
+      "kind": "repo",
+      "title": "google-gemini/gemini-cli",
+      "content": "An open-source terminal agent that brings Gemini capabilities to the command line. A mature, widely starred CLI agent appearing in today's trend feed; it shows continued attention to terminal-native agent workflows despite lower daily momentum.",
+      "refs": [
+        "google-gemini/gemini-cli"
+      ],
+      "unique_caveat": "Its current README says Gemini CLI was replaced by Antigravity CLI for unpaid-tier and Google One users and is not optimized for the latest Gemini models.",
+      "enrichment": null
+    },
+    {
+      "id": "09-aws-agent-toolkit-for-aws",
+      "rank": 9,
+      "name": "aws/agent-toolkit-for-aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "description": "AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS.",
+      "language": "Python",
+      "stars_gained": 11,
+      "total_stars": 3029,
+      "default_branch": "main",
+      "default_branch_commit": "e8c630949189f03b3dd77388c86b06a7f2f911a9",
+      "why_notable": "A notable enterprise integration signal: it packages AWS service knowledge and tools for several existing coding-agent products, even though its observed daily gain is modest.",
+      "theme_ids": [
+        "agent-platforms",
+        "cloud-developer-tooling"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
       "narration_priority": 9,
-      "spoken_name": "Assetnote PHP2Shell Scanner",
-      "unique_caveat": "The documented probes can send about 29 MiB per tested path; scan only systems for which you have authorization.",
-      "enrichment": null,
-      "refs": ["assetnote/php2shell-scanner"]
+      "spoken_name": "AWS Agent Toolkit",
+      "kind": "repo",
+      "title": "aws/agent-toolkit-for-aws",
+      "content": "AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS. A notable enterprise integration signal: it packages AWS service knowledge and tools for several existing coding-agent products, even though its observed daily gain is modest.",
+      "refs": [
+        "aws/agent-toolkit-for-aws"
+      ],
+      "enrichment": null
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Security and controlled execution around agents dominate, with Cloudflare's multi-stage audit workflow, NVIDIA's policy-enforced sandbox, and skill-based security tools. Structured plugins and skills point to capability packaging for specific work. PHP's interpreter is the strongest established-runtime counterpoint. Other entries cover tokenizer-free multilingual speech generation, specialist Chinese charting/data software, and experimental platform engineering. Languages across the nine entries: Python 5; JavaScript 1; C 1; Rust 1; TypeScript 1."
+      "content": "- **Agent security and containment:** Security work is becoming agent-native in two complementary ways: Cloudflare's skill structures vulnerability discovery and adversarial validation, while NVIDIA OpenShell constrains agent execution and access at runtime.\n- **Agent infrastructure and runtime:** OpenShell represents the control-plane layer for autonomous agents: sandboxes, explicit policies, credential mediation, and runtime enforcement.\n- **Design-quality tooling for coding agents:** Impeccable and Hallmark both target generic AI-generated interfaces, but pair agent instructions with explicit checks, browser feedback, or task-aware design constraints.\n- **Agent clients and cloud integrations:** Cindy unifies multiple harnesses and models in a client, Gemini CLI brings an agent to the terminal, and AWS's toolkit connects existing agents to cloud workflows.\n- **Physical AI and robotics:** Microduck is a hardware-focused outlier: learned movement policies are deployed in an embedded robot rather than a software-only agent.\n- **Reusable agent workflows:** Reusable skills, commands, multi-agent handoffs, and CLI workflows remain a visible layer across otherwise different projects.\n- **Languages:** Rust leads the listed set (3 repositories); TypeScript and Python have 2 each, while JavaScript and CSS have 1 each."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "Today’s clearest thread is practical infrastructure around AI agents: auditing what they do, constraining what they can access, and packaging reusable skills for specific tasks. The strong PHP result and the variety of the remaining projects argue against reading the list as a single-theme AI wave. Two newly created projects broaden the security and systems picture, but their lifetime star totals should not be mistaken for today’s star gains."
-    },
-    {
-      "id": "95-sources-and-method",
-      "kind": "sources",
-      "title": "Sources and Method",
-      "content": "Primary: https://github.com/trending?since=daily, captured at 2026-10-24 00:40 UTC. Corroboration: GitHub REST repo and current-commit endpoints for all listed repositories; GitHub Search for repositories created 2026-10-22 through 2026-10-24 with over 100 stars. The first seven entries follow displayed daily Trending star gains; the last two are Search supplements with no available daily gain. No prior-window evidence was used."
+      "content": "Today's snapshot favors the layers around coding agents—security review, runtime containment, design guidance, and cloud integration—over a single model or framework. The leading signal is not just more agents, but more scaffolding to govern, evaluate, and shape their work; Microduck provides a notable physical-robotics counterpoint."
     }
-  ]
+  ],
+  "sources": {
+    "trending": "https://github.com/trending?since=daily",
+    "repository_api": "https://api.github.com/repos/{owner}/{repo}",
+    "commit_api": "https://api.github.com/repos/{owner}/{repo}/commits/{default_branch}",
+    "search_api": "https://api.github.com/search/repositories?q=stars%3A%3E1000%20pushed%3A%3E2026-10-22&sort=updated&order=desc&per_page=20"
+  }
 }

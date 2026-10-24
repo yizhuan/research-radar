@@ -4,67 +4,69 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-10-24 00:40 UTC |
+| Snapshot time (UTC) | 2026-10-24 16:32 UTC |
 | Scope | Daily |
-| Date range | 2026-10-24 through 2026-10-24 (UTC) |
-| Ranking basis | Daily GitHub Trending star gains; two newly created repositories are appended as unranked-by-gain supplements |
+| Date range | 2026-10-24 through 2026-10-24 |
+| Ranking basis | Daily GitHub Trending star gains |
 
 ## Headline
 
-Security is the strongest signal: Cloudflare’s audit skill leads today’s page by a wide margin, while NVIDIA’s agent runtime and a newly created vulnerability scanner add momentum to the security-and-agent infrastructure cluster. The snapshot also has a striking incumbent-language outlier—PHP’s interpreter—and smaller spikes in role-specific agent plugins, speech generation, and a specialist Chinese astrology engine.
+Today's GitHub trend is dominated by tools that make coding agents safer and more useful: Cloudflare's security-audit workflow leads daily gains, while NVIDIA's sandbox runtime and two design-quality toolkits reinforce the same agent-infrastructure and agent-design push.
 
 ## Top Repositories
 
-1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A coding-agent skill that coordinates multi-phase security audits and independently verifies structured findings.**
+1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.**
 
-  **Language:** JavaScript | **Stars gained in window:** +2,716 | **Total stars:** 42,137 | **Why notable:** It has the largest daily gain in the captured Trending view, and its coverage-led workflow treats verification and machine-readable evidence as core design features.
+  **Language:** JavaScript | **Stars gained in window:** +2,271 | **Total stars:** 43,591 | **Why notable:** The day's strongest visible star-gain signal; it turns security review into a staged agent workflow with coverage tracking and independent validation.
 
-2. **[NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) - A private, policy-enforced runtime for autonomous agents.**
+2. **[NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) - A safe, private runtime for autonomous AI agents.**
 
-  **Language:** Rust | **Stars gained in window:** +1,119 | **Total stars:** 18,797 | **Why notable:** It pairs kernel-level sandbox enforcement with formal checks on policy changes, a concrete response to giving agents useful access without unrestricted credentials or network reach.
+  **Language:** Rust | **Stars gained in window:** +893 | **Total stars:** 19,259 | **Why notable:** A high-momentum infrastructure response to agent access risk: it combines isolated sandboxes, runtime policy enforcement, and formal review of policy changes.
 
-3. **[php/php-src](https://github.com/php/php-src) - The source code for the PHP interpreter.**
+3. **[pbakaus/impeccable](https://github.com/pbakaus/impeccable) - Design guidance and tooling for AI coding agents building frontend interfaces.**
 
-  **Language:** C | **Stars gained in window:** +716 | **Total stars:** 41,563 | **Why notable:** A mature, foundational runtime is drawing unusually strong daily attention alongside newer AI tooling, making it the snapshot’s clearest non-agent outlier.
+  **Language:** Rust | **Stars gained in window:** +733 | **Total stars:** 86,073 | **Why notable:** The third-largest daily gain among the screened repositories, with a measurable design-quality approach: reusable commands plus deterministic checks and live browser iteration.
 
-4. **[anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) - Role-specific plugins that package skills, connectors, commands, and sub-agents for knowledge work.**
+4. **[Nutlope/hallmark](https://github.com/Nutlope/hallmark) - A design skill for coding agents that aims to avoid generic AI-generated web design.**
 
-  **Language:** Python | **Stars gained in window:** +635 | **Total stars:** 32,212 | **Why notable:** The repository turns general-purpose assistants into customizable team workflows across roles such as sales, legal, finance, data, and research.
+  **Language:** CSS | **Stars gained in window:** +570 | **Total stars:** 31,749 | **Why notable:** It gives the design-tooling theme a distinct product-design angle: theme materials, task-specific page structure, browser checks, and tiered quality gates.
 
-5. **[Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) - A Chinese Zi Wei Dou Shu charting engine, knowledge base, and related data project.**
+5. **[makecindy/cindy](https://github.com/makecindy/cindy) - An open-source desktop and mobile AI-agent client that brings multiple harnesses, models, and tools together.**
 
-  **Language:** TypeScript | **Stars gained in window:** +546 | **Total stars:** 6,856 | **Why notable:** Its sharp daily rise is a reminder that highly localized, culturally specific software can break into a global trend list; the project also documents substantial domain data and licensing boundaries.
+  **Language:** TypeScript | **Stars gained in window:** +471 | **Total stars:** 3,899 | **Why notable:** A fast-rising agent-client project that emphasizes continuity across harnesses and models, with desktop/mobile apps and local-computer automation in one monorepo.
 
-6. **[SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) - A library of structured offensive-security skills for Claude-based workflows.**
+6. **[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) - A visual, example-driven guide to Claude Code, from fundamentals to advanced agent workflows.**
 
-  **Language:** Python | **Stars gained in window:** +226 | **Total stars:** 8,487 | **Why notable:** It shows the skills-as-distributable-agent-capability pattern extending into security research and red-team work.
+  **Language:** Python | **Stars gained in window:** +442 | **Total stars:** 44,304 | **Why notable:** A practical learning resource with substantial daily traction, indicating sustained developer interest in agent workflow patterns rather than only agent runtimes.
 
-7. **[OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) - A tokenizer-free multilingual speech-generation system with voice design and cloning capabilities.**
+7. **[pollen-robotics/microduck](https://github.com/pollen-robotics/microduck) - A tiny biped robot that moves using reinforcement-learning policies.**
 
-  **Language:** Python | **Stars gained in window:** +150 | **Total stars:** 40,256 | **Why notable:** It represents a separate generative-AI track, emphasizing continuous-speech generation, expressive control, and multilingual output rather than text or code agents.
+  **Language:** Rust | **Stars gained in window:** +381 | **Total stars:** 10,786 | **Why notable:** A hardware counterpoint to the software-agent cluster: the repository combines an embedded Rust control system with sim-to-real learned policies.
 
-8. **[Snapintosh/Snapintosh](https://github.com/Snapintosh/Snapintosh) - An experimental EL2 hypervisor and toolchain that boots macOS on a specific Snapdragon X2 Elite laptop, including an Adreno graphics stack.**
+8. **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) - An open-source terminal agent that brings Gemini capabilities to the command line.**
 
-  **Language:** Python | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 761 | **Why notable:** GitHub Search surfaced it among the most-starred repositories created in the last two days; its README describes a highly specific but technically ambitious hardware/software port. This is a newcomer supplement, not a daily Trending rank.
+  **Language:** TypeScript | **Stars gained in window:** +38 | **Total stars:** 107,786 | **Why notable:** A mature, widely starred CLI agent appearing in today's trend feed; it shows continued attention to terminal-native agent workflows despite lower daily momentum.
 
-9. **[assetnote/php2shell-scanner](https://github.com/assetnote/php2shell-scanner) - A command-line scanner for detecting two PHP vulnerabilities.**
+9. **[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) - AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS.**
 
-  **Language:** Python | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 472 | **Why notable:** It is a fresh, defensive security project corroborating the day’s security attention. Its README notes that probes can send roughly 29 MiB per tested path, so use only on systems you are authorized to assess. This is a newcomer supplement, not a daily Trending rank.
+  **Language:** Python | **Stars gained in window:** +11 | **Total stars:** 3,029 | **Why notable:** A notable enterprise integration signal: it packages AWS service knowledge and tools for several existing coding-agent products, even though its observed daily gain is modest.
 
 ## Trending Technologies and Themes
 
-- **Agent security and controlled execution:** Cloudflare’s audit workflow and NVIDIA’s sandbox runtime lead the measured gains; Claude-Red and Assetnote’s scanner add security-oriented tooling, while Anthropic’s plugin collection shows how agent capabilities are being packaged for work.
-- **Composable agent skills and role workflows:** `security-audit-skill`, `Claude-Red`, and `knowledge-work-plugins` all distribute structured capabilities, but target distinct jobs—auditing, offensive-security research, and business functions.
-- **Established infrastructure still attracts attention:** `php-src` is third by daily gains, a counterpoint to an otherwise AI-heavy conversation and evidence that core language runtimes remain visible trend drivers.
-- **Other applied AI and domain software:** VoxCPM focuses on speech generation; `ziwei-doushu` on a specialist Chinese charting/data engine; Snapintosh on experimental platform engineering.
-- **Languages:** Python appears in five of the nine listed repositories; JavaScript, C, Rust, and TypeScript appear once each.
+- **Agent security and containment:** Security work is becoming agent-native in two complementary ways: Cloudflare's skill structures vulnerability discovery and adversarial validation, while NVIDIA OpenShell constrains agent execution and access at runtime.
+- **Agent infrastructure and runtime:** OpenShell represents the control-plane layer for autonomous agents: sandboxes, explicit policies, credential mediation, and runtime enforcement.
+- **Design-quality tooling for coding agents:** Impeccable and Hallmark both target generic AI-generated interfaces, but pair agent instructions with explicit checks, browser feedback, or task-aware design constraints.
+- **Agent clients and cloud integrations:** Cindy unifies multiple harnesses and models in a client, Gemini CLI brings an agent to the terminal, and AWS's toolkit connects existing agents to cloud workflows.
+- **Physical AI and robotics:** Microduck is a hardware-focused outlier: learned movement policies are deployed in an embedded robot rather than a software-only agent.
+- **Reusable agent workflows:** Reusable skills, commands, multi-agent handoffs, and CLI workflows remain a visible layer across otherwise different projects.
+- **Languages:** Rust leads the listed set (3 repositories); TypeScript and Python have 2 each, while JavaScript and CSS have 1 each.
 
 ## Takeaway
 
-Today’s clearest thread is practical infrastructure around AI agents: auditing what they do, constraining what they can access, and packaging reusable skills for specific tasks. The strong PHP result and the variety of the remaining projects argue against reading the list as a single-theme AI wave. Two newly created projects broaden the security and systems picture, but their lifetime star totals should not be mistaken for today’s star gains.
+Today's snapshot favors the layers around coding agents—security review, runtime containment, design guidance, and cloud integration—over a single model or framework. The leading signal is not just more agents, but more scaffolding to govern, evaluate, and shape their work; Microduck provides a notable physical-robotics counterpoint.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Daily](https://github.com/trending?since=daily), captured at 2026-10-24 00:40 UTC.
-- **Corroboration:** GitHub REST repository endpoints and current default-branch commit endpoints for all nine repositories; [GitHub Search API](https://api.github.com/search/repositories?q=created%3A2026-10-22..2026-10-24%20stars%3A%3E100&sort=stars&order=desc) for newly created candidates. First-party README files were checked for the leading theme representatives and both supplements.
-- **Method note:** The first seven entries are ordered by the star gains displayed on the daily Trending page. The last two are non-fork repositories created in the last two calendar days, selected from Search by star count and reviewed for relevance; GitHub does not provide their daily star gains here, so those values are marked unavailable. Totals and commit SHAs are point-in-time REST API values. No prior-day dataset was available to support a Notable Shifts comparison.
+- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily).
+- **Corroboration:** GitHub REST repository metadata and default-branch commit endpoints for the listed repositories; GitHub Search API freshness scan (`stars:>1000 pushed:>2026-10-22`, sorted by update time). Search was used as a secondary recency check, not as the source of the daily gain figures.
+- **Method note:** Star gains are taken from the matching daily Trending view; total stars, languages, and default-branch commits were checked against GitHub REST. The list-only ebook link collection shown on the Trending page was excluded as noise. Daily Trending and star counts can change during the day.

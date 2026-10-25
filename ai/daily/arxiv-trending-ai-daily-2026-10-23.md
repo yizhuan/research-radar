@@ -1,113 +1,86 @@
-# arXiv AI — latest announcement batch, Friday 23 October 2026
+# arXiv Trending AI — Friday, 23 October 2026
 
-Eight notable recent papers from the core AI categories. The dominant pattern is evidence-aware agent safety: several papers test whether agents verify, recover, or appropriately act on information before consequential actions. Also on the agenda: inference-time compute allocation, embodied evaluation, and dataset-use auditing. arXiv has no official trending chart; this ordering is inferred from weak, mixed signals, and citation evidence is limited for newly announced papers.
+## Headline
+
+AI categories, Friday’s 23 October announcement batch; five selected papers. The clearest pattern is agent reliability engineering: papers test whether agents recover missing evidence, preserve research integrity, or safely route work and oversight; a second strand trims reasoning compute. Spoken agenda: first safety and auditing, then efficient reasoning and runtime agent control, followed by unresolved evaluation questions. This is an inferred, curated ranking—not an official arXiv trending chart—and recent-paper citation evidence is limited, so “hottest” should not be read as a measured popularity claim. Because this snapshot is Sunday, 25 October, it uses the previous announcement batch (Friday, 23 October).
 
 ## Top papers (ranked)
 
 ### 1. [EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence](https://arxiv.org/abs/2610.31650)
-- **Abstract:** The authors introduce an executable benchmark of paired safe/unsafe tasks across six domains to measure how tool-using agents behave when safety-relevant evidence is omitted and whether they recover it appropriately.
-- **Authors:** Qijin Zhang, Hanzhen Wang, Yuehan Zhao, Haoyu Dai, Yao Shu, et al.
-- **arXiv:** `2610.31650v1` (published 2026-10-22T17:57:04Z; categories: `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** Search surfaced a dedicated secondary overview and an explainer; the paper is also cross-listed in two core AI categories. These are weak attention proxies, not readership metrics.
-- **Claimed contribution:** The authors report that omission robustness and useful evidence recovery are distinct: recovery access reduced unsafe execution across the ten evaluated models, while models differed in whether they sought and used the missing facts.
-- **Caveat:** Results come from this benchmark’s six domains and evaluated model set; the authors note that the tested model profiles do not establish general deployment behavior.
-- **Announcement type:** new submission, announcement batch 2026-10-23
+- **Abstract:** The authors introduce a benchmark of 300 matched safe/unsafe task pairs across six domains to test whether tool-using agents act safely when critical facts are omitted and whether they retrieve and use those facts appropriately.
+- **Authors:** Qijin Zhang, Hanzhen Wang, Yuehan Zhao, Haoyu Dai, Yao Shu et al.
+- **arXiv:** `2610.31650v1` (published 2026-10-22 17:57:04 UTC; categories: `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** The specific missing-evidence safety failure mode received secondary coverage in [an editorial explainer](https://agentic-design.ai/zh/news-hub/episem-bench-evaluating-safety-evidence-recovery-llm-agents-under-missing-704dd5) and [a research explainer](https://franklineh.com/learn/research/editorial-research-6b25a9795491abc6caed2f3643efc907). Its matched-world protocol and ten-model evaluation also make the result particularly relevant to agent safety and evaluation; these are relevance signals, not readership statistics.
+- **Claimed contribution:** The paper claims EpiSEM-Bench separates unsafe execution, safety boundaries, and evidence recovery; its ten-model study finds that robustness to omissions does not by itself imply useful recovery.
+- **Caveat:** The evidence is from a bounded benchmark (300 task pairs, six domains, ten model configurations, and a fixed evaluation protocol); transfer to other tools, tasks, and deployments remains to be established.
+- **Announcement type:** new submission, 23 October 2026 announcement batch
 - **Themes:** Safety & alignment; Evaluation & benchmarks; Agents & reasoning
 
-### 2. [AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack](https://arxiv.org/abs/2610.31404)
-- **Abstract:** The paper introduces an adaptive-phishing benchmark and attack-generation method to test whether LLM email agents detect persuasive phishing and refrain from complying with malicious requests.
-- **Authors:** Justin Tan, Miao Li, Ding Zhao
-- **arXiv:** `2610.31404v1` (published 2026-10-22T15:07:49Z; categories: `cs.CR`, `cs.AI`)
-- **Evidence for ranking:** Search surfaced an AI-security digest and independent paper summaries; its cross-list connects security and core AI. These are weak attention proxies, not engagement counts.
-- **Claimed contribution:** The authors report that agents safe on pre-existing phishing emails can remain vulnerable to adaptive, persuasive attacks; in their nine-agent evaluation, four had detection below 10% and malicious-request compliance above 45%.
-- **Caveat:** The authors limit the evaluation to synthetic single-message attacks and selected configurations; scores cover decisions and drafted replies, not externally executed harm.
-- **Announcement type:** new submission, announcement batch 2026-10-23
+### 2. [Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning](https://arxiv.org/abs/2610.31667)
+- **Abstract:** The authors propose selecting partial reasoning traces by directly optimizing the probability that at least one retained trace finishes correctly, balancing quality and diversity to reduce the cost of test-time scaling.
+- **Authors:** Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn
+- **arXiv:** `2610.31667v1` (published 2026-10-22 17:59:48 UTC; categories: `cs.AI`, `cs.CL`)
+- **Evidence for ranking:** The paper has a [technical summary listing](https://arxivtldr.org/abs/2610.31667), and reports comparisons on eight open-weight reasoning models, with the largest gains at moderate retained-pool sizes. That combination supports relevance to the current inference-compute question, but is not evidence of broad popularity.
+- **Claimed contribution:** The authors’ PKTP method models correlated rollout outcomes, uses a second-order submodular approximation to pass@$k$, and greedily produces nested candidate sets; their experiments report improvements over quality-only and diversity-only pruning baselines.
+- **Caveat:** The approach depends on a latent-Gaussian model of correlated rollout success and on information in partial-trace representations; the authors identify stronger representations as a direct future-work need.
+- **Announcement type:** new submission, 23 October 2026 announcement batch
+- **Themes:** Training & adaptation; Efficient inference & systems; Evaluation & benchmarks
+
+### 3. [Reliable AI-Assisted Decisions via Selective Auditing](https://arxiv.org/abs/2610.31662)
+- **Abstract:** This paper formulates online AI decision review as constrained optimization and presents auditing policies intended to limit the share of AI errors that escape expert review while minimizing how often review is needed.
+- **Authors:** Isaac Gibbs, Elise L. Han, Ryan J. Tibshirani, Tijana Zrnic
+- **arXiv:** `2610.31662v1` (published 2026-10-22 17:59:22 UTC; categories: `stat.ML`, `cs.LG`, `stat.ME`)
+- **Evidence for ranking:** The work is surfaced in a [Berkeley-hosted manuscript](https://www.stat.berkeley.edu/~ryantibs/papers/selectaudit.pdf) and a [BU CISE research profile](https://www.bu.edu/cise/tijana-zrnic/). Its provable error-control framing and evaluations in safety screening, qualitative annotation, and data labeling make it a strong reliability contribution; these institutional pages establish discoverability, not independent popularity.
+- **Claimed contribution:** The authors derive online error-control methods, including one they characterize as asymptotically optimally efficient for adversarial and i.i.d. streams, and report lower auditing effort than baselines on three task types.
+- **Caveat:** The discussion assumes auditors are correct and audits have equal cost; the authors leave noisy auditors and heterogeneous audit costs as future extensions. Their appendix also cautions that a capped variant can weaken error control when errors are rare.
+- **Announcement type:** new submission, 23 October 2026 announcement batch
 - **Themes:** Safety & alignment; Evaluation & benchmarks; Agents & reasoning
 
-### 3. [When Is a Memory Safe Enough to Act On? Action-Conditioned Verification for Long-Lived Agents](https://arxiv.org/abs/2610.31446)
-- **Abstract:** The authors formulate action-conditioned memory verification and propose a gate that decides which remembered facts to re-check, proceed, or abstain on based on the planned action and its consequences.
-- **Authors:** Yiqi Wang, Yifei Wang, Jiaqi Zhang, Zhangkai Wu, Yiqun Duan, et al.
-- **arXiv:** `2610.31446v1` (published 2026-10-22T15:43:50Z; categories: `cs.MA`)
-- **Evidence for ranking:** Search surfaced multiple paper-specific reviews/summaries; the work offers a concrete decision formulation and reports tests on ToolSandbox plus a gate-core transfer to AppWorld.
-- **Claimed contribution:** The authors report that AMV-Guard lowers verification cost on ToolSandbox while retaining safe-proceed recall, and lowers cost in a transfer evaluation with a small reduction in recall and task success.
-- **Caveat:** The paper explicitly says premise extraction is model-driven, planning is bounded to a shallow lookahead, and the simulators omit some real-world consequences; scalability and broader action-class results remain unreported.
-- **Announcement type:** new submission, announcement batch 2026-10-23
+### 4. [RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention](https://arxiv.org/abs/2610.31372)
+- **Abstract:** RIDAR combines a taxonomy of research-integrity violations, post-hoc trajectory detection, and runtime intervention; the authors report 85.2% F1 on a 60-trajectory annotated benchmark and 36.8% fewer violations remaining at task completion in their runtime evaluation.
+- **Authors:** Jiening Siow, Amy Xin, Junjie Wang, Ziyu Tang, Zijun Yao et al.
+- **arXiv:** `2610.31372v1` (published 2026-10-22 14:43:36 UTC; categories: `cs.AI`)
+- **Evidence for ranking:** A [Hugging Face Papers listing](https://huggingface.co/papers/2610.31372), a [secondary research digest](https://cctest.ai/en/articles/ridar-builds-a-research-integrity-layer-for-autonomous-agents), and the [authors’ code repository](https://github.com/THU-KEG/RIDAR) surfaced for the paper. The 14-type taxonomy and results on RIV-Gold/RIV-Wild give it clear relevance to autonomous-research reliability; repository availability is a reproducibility signal, not an attention count.
+- **Claimed contribution:** The authors claim a full-lifecycle taxonomy and paired post-hoc/runtime monitoring framework, reporting 3,964 detected violations across 300 trajectories and a reduction in remaining violations after runtime intervention.
+- **Caveat:** The reported detection and intervention results are tied to the paper’s expert-labeled set and collected trajectories; performance on other agent architectures and independently generated research workflows is not established here.
+- **Announcement type:** new submission, 23 October 2026 announcement batch
 - **Themes:** Agents & reasoning; Safety & alignment; Evaluation & benchmarks
 
-### 4. [Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning](https://arxiv.org/abs/2610.31667)
-- **Abstract:** The paper proposes pruning partial reasoning traces by directly maximizing the chance that at least one retained trace completes correctly, thereby balancing trace quality and diversity.
-- **Authors:** Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn
-- **arXiv:** `2610.31667v1` (published 2026-10-22T17:59:48Z; categories: `cs.AI`, `cs.CL`)
-- **Evidence for ranking:** Several search-indexed technical summaries discuss the method; the paper is cross-listed in AI and language, and reports comparisons across eight open-weight reasoning models. Summary coverage is a weak signal, not a readership count.
-- **Claimed contribution:** The authors report that their pass@$k$ objective outperforms the evaluated quality-only and diversity-only pruning baselines, especially when a moderate number of candidates is continued.
-- **Caveat:** Evidence is limited to the eight evaluated open-weight models and tested pruning settings; the abstract does not establish gains across all reasoning tasks or inference systems.
-- **Announcement type:** new submission, announcement batch 2026-10-23
-- **Themes:** Training & adaptation; Efficient inference & systems; Agents & reasoning
-
-### 5. [AgenticEvolve: Evolutionary Program Search with Persistent Language Model Agents that Design and Run Experiments](https://arxiv.org/abs/2610.31326)
-- **Abstract:** The authors replace one-shot evolutionary candidate generation with persistent LLM agents that run experiments between evaluations, reporting improved program-search results on heuristic-design and equation-discovery tasks.
-- **Authors:** Ze-Yu Peng, Qing-Yu Lan, Zhan-He Wang, Jun Zhang, Yun-Song Piao
-- **arXiv:** `2610.31326v1` (published 2026-10-22T14:18:21Z; categories: `cs.NE`, `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** Search surfaced paper-specific summaries; it spans three core AI categories and directly compares the agent’s experimentation loop with an otherwise matched no-analysis configuration.
-- **Claimed contribution:** The authors report better programs than No-analysis and OpenEvolve on two heuristic tasks, reaching baseline quality with fewer evaluations, and recovering more ground-truth structures on twelve equation-discovery problems.
-- **Caveat:** The reported evidence is confined to the described heuristic and equation-discovery suites and three LLMs; broader scientific-search performance is not established.
-- **Announcement type:** new submission, announcement batch 2026-10-23
-- **Themes:** Agents & reasoning; Training & adaptation; Evaluation & benchmarks
-
-### 6. [Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success](https://arxiv.org/abs/2610.31670)
-- **Abstract:** The authors introduce a training-free representation-alignment metric and report that it correlates with downstream robot task success, proposing it as a low-cost filter before closed-loop evaluation.
-- **Authors:** Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei
-- **arXiv:** `2610.31670v1` (published 2026-10-22T17:59:51Z; categories: `cs.CV`, `cs.LG`, `cs.RO`)
-- **Evidence for ranking:** It is cross-listed across three core categories spanning vision, learning, and robotics, and addresses a practical evaluation-cost bottleneck; no secondary source is used as an attention signal here.
-- **Claimed contribution:** The authors claim that sensorimotor alignment can prioritize embodied models and VLM backbones before costly closed-loop rollouts or VLA fine-tuning.
-- **Caveat:** The abstract reports correlation, not a causal guarantee or replacement for closed-loop testing; model selection still requires downstream validation.
-- **Announcement type:** new submission, announcement batch 2026-10-23
-- **Themes:** Robotics & control; Multimodal & vision-language; Evaluation & benchmarks
-
-### 7. [SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing](https://arxiv.org/abs/2610.31659)
-- **Abstract:** The authors embed a low-frequency image trace throughout a dataset and detect it in generated outputs to audit whether a text-to-image model used that collection for fine-tuning.
-- **Authors:** Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe, Huy Nghiem, Yongkyun Lee, et al.
-- **arXiv:** `2610.31659v1` (published 2026-10-22T17:59:03Z; categories: `cs.CV`, `cs.LG`)
-- **Evidence for ranking:** The paper is cross-listed in vision and learning and reports multi-dataset and multi-transformation tests; no secondary source is used as an attention signal here.
-- **Claimed contribution:** The authors report high detection rates under their evaluated transformations and datasets while preserving image similarity, with removal under their strongest tested adaptive attack causing substantial FID degradation.
-- **Caveat:** The reported robustness is bounded by the tested datasets, architectures, and adaptive attacks; it does not establish performance against every possible transformation or removal strategy.
-- **Announcement type:** new submission, announcement batch 2026-10-23
-- **Themes:** Data & synthetic data; Evaluation & benchmarks; Safety & alignment
-
-### 8. [What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models](https://arxiv.org/abs/2610.31576)
-- **Abstract:** The authors study learned token-commitment policies for masked diffusion language models and propose trajectory-contraction targets that trade policy overhead against generation speed and accuracy.
-- **Authors:** Jinya Sakurai, Xun Xu, Jaehong Yoon
-- **arXiv:** `2610.31576v1` (published 2026-10-22T17:15:04Z; categories: `cs.AI`)
-- **Evidence for ranking:** The study compares teacher labels, policy inputs, and overhead, and reports results on GSM8K, MATH-500, and HumanEval; no secondary source is used as an attention signal here.
-- **Claimed contribution:** The authors report an improved accuracy–NFE frontier and throughput on GSM8K for their policy, with competitive results at moderate targets on MATH-500 and HumanEval and transfer to Dream-7B-Instruct.
-- **Caveat:** The main reported result is on LLaDA-8B-Instruct, with transfer evidence to one additional model; the abstract does not establish broad model-family generality.
-- **Announcement type:** new submission, announcement batch 2026-10-23
-- **Themes:** Efficient inference & systems; Training & adaptation
+### 5. [Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery](https://arxiv.org/abs/2610.31461)
+- **Abstract:** The authors treat skill granularity as a runtime control decision, routing coding agents among primitive actions, macro skills, and macro-to-micro recovery when a macro fails.
+- **Authors:** Dingxuan Zhang, Yanhui Jiang, Jun Wang, Hefeng Zhou
+- **arXiv:** `2610.31461v1` (published 2026-10-22 15:55:18 UTC; categories: `cs.AI`, `cs.SE`)
+- **Evidence for ranking:** The runtime recovery idea received secondary coverage in [Nowness AI](https://nownessai.com/f/arxiv-2610-31461) and [AI Pulse](https://www.aipulsenews.co/article/arxiv-ai-1792728000000-di37bu). The paper’s verifier-defined task success and controlled failure-recovery experiments make it a concrete agent-systems contribution; its small pilot limits the strength of any broader trend claim.
+- **Claimed contribution:** The authors report that runtime routing and explicit macro-to-micro recovery improve robustness over fixed-granularity execution in their deterministic coding-agent protocol, while selective recovery avoids some unnecessary costs.
+- **Caveat:** The evaluation uses a small set of mixed coding tasks and controlled injected failures, with a few hand-written macros; the authors explicitly call for broader tasks, repositories, failure modes, and models.
+- **Announcement type:** new submission, 23 October 2026 announcement batch
+- **Themes:** Agents & reasoning; Efficient inference & systems; Evaluation & benchmarks
 
 ## Trending Research Themes
 
-- **Evidence-aware agent safety is the clearest recurring pattern.** EpiSEM-Bench tests missing evidence and recovery; AgentPhishing tests whether agents comply with adaptive malicious requests; and action-conditioned memory verification asks when stored facts need re-checking before an action. Together these papers emphasize behavior at the point of action, not just answer accuracy or static threat recognition.
-- **Inference-time compute is being allocated more selectively.** Direct Pass@$k$ prunes redundant reasoning continuations, while the diffusion-language-model study learns when to commit predicted tokens. These are distinct mechanisms, but both make quality-versus-compute trade-offs explicit.
-- **LLM agents as experimental operators are an isolated signal, not yet a corpus-wide shift.** AgenticEvolve lets persistent agents design and run experiments inside evolutionary program search; its results are promising within the paper’s limited task suites.
-- **Embodied representation metrics and training-data auditing are additional, separate directions.** Sensorimotor Alignment proposes a cheaper proxy before robot rollouts; SpectralCanary audits possible use of image collections in T2I fine-tuning. Each is a single-paper signal in this selected set, not evidence of a recurring trend.
-- **The candidate pool is category-skewed.** Among the 449 records with 2026-10-22 arXiv publication dates in the core-category query, primary categories were led by cs.CV (91), cs.LG (88), cs.AI (83), cs.CL (61), and cs.RO (52); cs.MA and cs.NE had two each. Counts are primary-category counts, not a popularity measure.
+- **Agent safety is being reframed as evidence handling and intervention, not just policy compliance.** EpiSEM-Bench tests omitted facts and recovery; RIDAR detects and intervenes on research-integrity violations; selective auditing gives a formal mechanism for escalating uncertain decisions. These are related reliability threads, not a single shared method.
+- **Evaluation is becoming more diagnostic.** EpiSEM-Bench distinguishes unsafe action from appropriate recovery; RIDAR separates detection from runtime correction; selective auditing measures the trade-off between caught errors and review load. The recurring shift is toward outcome decomposition and process-level controls.
+- **Compute and execution control are moving closer to the decision loop.** PKTP prunes reasoning traces by an estimated pass@$k$ objective, while Adaptive Skill Granularity selects action abstraction and fallback based on runtime state. Both frame resource use as a control problem, but one operates during inference and the other over tool execution.
+- **Corpus coverage is broad but uneven.** In the 449 records returned for the announcement-day query, the configured categories appear with overlapping tags: cs.AI 169, cs.LG 151, cs.CV 101, cs.CL 89, cs.RO 57, stat.ML 20, cs.MA 15, and cs.NE 2. These are not exclusive counts. The five selected papers lean toward cs.AI and agent reliability; this small selection should not be mistaken for the whole batch’s center of gravity.
 
 ## Open Problems and Research Directions
 
-- **Author-stated — adaptive agent security:** AgentPhishing identifies limits from single-message synthetic attacks, selected model configurations, scoring based on decisions/drafted replies, and model-version dependence. A follow-up could test multi-turn tool interactions and defensive interventions in a sandbox with explicit outcome and side-effect tracking. [AgentPhishing](https://arxiv.org/abs/2610.31404)
-- **Author-stated — memory verification coverage:** The memory-verification paper says model-driven premise extraction caps recall, its planner uses bounded lookahead, modeled harms omit some downstream consequences, and scalability/action-class breakdowns remain open. Evaluate premise-recall ceilings, longer verification sequences, and consequence-aware outcomes across broader environments. [When Is a Memory Safe Enough to Act On?](https://arxiv.org/abs/2610.31446)
-- **Synthesis — combine failure modes:** EpiSEM-Bench, AgentPhishing, and action-conditioned memory verification study missing evidence, adversarial content, and stale memory separately. A controlled factorial evaluation could combine these factors and test when agents should verify, recover, refuse, or proceed, while measuring both safety and legitimate task completion. [EpiSEM-Bench](https://arxiv.org/abs/2610.31650), [AgentPhishing](https://arxiv.org/abs/2610.31404), [memory verification](https://arxiv.org/abs/2610.31446)
-- **Synthesis — compare compute allocation under matched budgets:** Direct Pass@$k$ and learned diffusion unmasking use different decoding mechanisms. Compare them under matched compute, latency, and task-quality budgets, including robustness across model families and tasks. [Direct Pass@$k$](https://arxiv.org/abs/2610.31667), [learned unmasking](https://arxiv.org/abs/2610.31576)
-- **Author-stated scope / synthesis — generalize agentic search:** AgenticEvolve reports two heuristic-design tasks and twelve equation-discovery problems. Replications on held-out scientific and engineering tasks, with explicit evaluation-cost and reproducibility controls, would test how far its experimentation loop transfers. [AgenticEvolve](https://arxiv.org/abs/2610.31326)
+- **Evidence recovery without sacrificing utility — open problem (paper-reported):** EpiSEM-Bench finds that resistance to missing facts does not necessarily produce useful recovery, and reports variation by domain and task family. **Direction (synthesis):** test whether recovery policies transfer to new tool APIs and task families while jointly measuring safe restraint, legitimate task completion, and interaction cost. [EpiSEM-Bench](https://arxiv.org/abs/2610.31650)
+- **Reliable pruning with weak partial-trace signals — open problem (author-stated):** PKTP’s gains depend on useful representations of partial reasoning, and the authors identify better correctness-bearing representations as future work. **Direction (synthesis):** compare learned representations and uncertainty calibration under shifts in task type and candidate-pool size, then test whether the ranking remains robust when rollout correlations are misspecified. [Direct Pass@$k$](https://arxiv.org/abs/2610.31667)
+- **Auditing under imperfect reviewers and sparse errors — open problem (author-stated):** the selective-auditing analysis assumes correct auditors and equal costs; the appendix notes that capping can weaken error control when errors are rare. **Direction (synthesis):** evaluate noisy, differently priced reviewers and report finite-sample error bounds across sparse-error regimes, separating theory-backed settings from tuned variants. [Selective Auditing](https://arxiv.org/abs/2610.31662)
+- **Generalizing research-integrity monitoring — open problem (synthesis from study scope):** RIDAR’s reported results rely on a finite expert-labeled set and 300 recorded trajectories. **Direction:** validate taxonomy coverage, detector calibration, and intervention side effects on independent agent stacks and longer multi-stage research runs. [RIDAR](https://arxiv.org/abs/2610.31372)
+- **Choosing when to recover from a macro — open problem (author-stated):** the coding-agent study finds that recovery can rescue early failures but waste effort after late failures; the authors call for broader task and failure coverage. **Direction:** benchmark selective recovery policies across repositories and models, with realistic partial side effects and cost-sensitive verification. [Adaptive Skill Granularity](https://arxiv.org/abs/2610.31461)
 
 ## Takeaway
 
-This batch’s strongest common thread is reliable agent action under uncertainty: agents need to seek or verify evidence, distinguish permitted from prohibited actions, and resist persuasive attacks. The methods are promising but early; the batch is too recent and the attention signals too sparse to justify a confident popularity ranking or broad claims of field-wide change.
+This batch’s strongest coherent signal is not a new model architecture but more explicit control over agent failure: expose missing evidence, detect integrity violations, escalate decisions, and recover from brittle abstractions. These approaches are promising but remain early preprint evidence, with bounded evaluations and little comparable citation data; independent replication and broader deployment settings matter more than the apparent ordering here.
 
 ## Method and sources
 
-- **Window:** Daily; selected announcement batch 2026-10-23 (Friday), the most recent batch available on Saturday 2026-10-24. No newer batch was listed on the core-category recent pages. The batch covers papers first posted 2026-10-22 UTC; the requested announcement-date range is 2026-10-23 through 2026-10-23. Snapshot: 2026-10-24 16:05:09 UTC.
-- **Scope/query:** Core corpus `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, `cs.MA`, plus cross-listed papers with those categories. Exact query: `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`. A single broad arXiv API query returned 1,000 records; 449 had first-publication dates on 2026-10-22 and all eight configured categories were represented. All eight selected records are v1 first submissions; no selected item is a revision. Each selected abstract page was checked directly on arXiv. arXiv’s recent-page batch labels were used to map the 2026-10-22 submissions to the 2026-10-23 announcement batch.
-- **Inference:** arXiv provides no trending/readership ranking. Selection and ordering are an inferred “notable recent papers” list, using weak, checkable secondary coverage where found, cross-category relevance, and the concrete evaluation or methodological evidence described in the abstracts/papers. Searches did not find outside coverage for every item. Semantic Scholar Graph API was checked for all eight papers at snapshot time: citationCount and influentialCitationCount were both 0 for each. These are current totals, not citations gained during this window; the papers’ newness makes citation evidence uninformative.
-- **arXiv sources:** [cs.AI recent](https://arxiv.org/list/cs.AI/recent), [cs.LG recent](https://arxiv.org/list/cs.LG/recent), [stat.ML recent](https://arxiv.org/list/stat.ML/recent), [cs.CL recent](https://arxiv.org/list/cs.CL/recent), [cs.CV recent](https://arxiv.org/list/cs.CV/recent), [cs.RO recent](https://arxiv.org/list/cs.RO/recent), [cs.NE recent](https://arxiv.org/list/cs.NE/recent), [cs.MA recent](https://arxiv.org/list/cs.MA/recent), [availability and announcement schedule](https://info.arxiv.org/help/availability.html), and the [arXiv API query](https://export.arxiv.org/api/query?search_query=cat%3Acs.AI%2BOR%2Bcat%3Acs.LG%2BOR%2Bcat%3Astat.ML%2BOR%2Bcat%3Acs.CL%2BOR%2Bcat%3Acs.CV%2BOR%2Bcat%3Acs.RO%2BOR%2Bcat%3Acs.NE%2BOR%2Bcat%3Acs.MA&sortBy=submittedDate&sortOrder=descending&start=0&max_results=1000).
-- **Corroborating coverage checked:** [EpiSEM-Bench overview](https://agentic-design.ai/news-hub/episem-bench-evaluating-safety-evidence-recovery-llm-agents-under-missing-704dd5) and its [video explainer](https://www.youtube.com/watch?v=z53JX1Ul6V0); [AgentPhishing security digest](https://deniskim1.com/writing/ai_security_digest__october_24_2026_ai_agents__vulnerabiliti/) and [paper summary](https://www.aimodels.fyi/papers/arxiv/agentphishing-benchmark-llm-email-agents-under-adaptive); [memory-verification review](https://www.aimodels.fyi/papers/arxiv/when-is-memory-safe-enough-act-action) and [independent review](https://www.themoonlight.io/es/review/when-is-a-memory-safe-enough-to-act-on-action-conditioned-verification-for-long-lived-agents); [Direct Pass@$k$ summaries](https://www.wovepaper.com/papers/2610.31667-direct-pass-k-optimization-for-thought-pruning-balancing-quality-and-diversity) and [technical overview](https://book.st-hakky.com/en/news/direct-pass-k-optimization-for-thought-pruning); [AgenticEvolve summary](https://arxivsignals.io/papers/2610.31326). These are secondary summaries, not readership statistics.
+- **Window:** daily, Friday 23 October 2026 announcement batch; exact window start and end: 2026-10-23 to 2026-10-23. Snapshot: 2026-10-25 00:13:11 UTC. Today is Sunday, so this uses the previous arXiv batch rather than an empty same-day report.
+- **Scope/query:** core categories cs.AI, cs.LG, stat.ML, cs.CL, cs.CV, cs.RO, cs.NE, cs.MA. One date-bounded arXiv API query covered 2026-10-22 through 2026-10-24; it returned 449 matching records, all with 2026-10-22 published dates. The arXiv cs.AI recent page showed Friday, 23 October as the latest announcement batch and confirmed the selected papers within that batch. The category tags overlap.
+- **Verification:** each of the five selected arXiv abstract pages was opened and checked for title, abstract, version, and categories. The arXiv API supplied authors, exact published/updated UTC timestamps, and category metadata. For the leading three, full HTML papers were read for method, evaluation, and stated limitations.
+- **Inference method:** arXiv publishes no official trending chart. Ordering is inferred from discoverable secondary coverage, the paper-specific evidence and breadth of evaluation, and relevance to repeated themes among this curated sample. Semantic Scholar citation metadata was not available in this snapshot; citations therefore do not drive this ordering. No downloads, reads, or view counts are claimed.
+- **Primary sources:** [arXiv cs.AI recent listing](https://arxiv.org/list/cs.AI/recent); [arXiv API](https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Astat.ML+OR+cat%3Acs.CL+OR+cat%3Acs.CV+OR+cat%3Acs.RO+OR+cat%3Acs.NE+OR+cat%3Acs.MA%29+AND+submittedDate%3A%5B20261022+TO+20261024%5D&sortBy=submittedDate&sortOrder=descending&start=0&max_results=2000).
+- **Secondary sources used for discoverability/context:** [Agentic Design on EpiSEM-Bench](https://agentic-design.ai/zh/news-hub/episem-bench-evaluating-safety-evidence-recovery-llm-agents-under-missing-704dd5); [Franklineh explainer](https://franklineh.com/learn/research/editorial-research-6b25a9795491abc6caed2f3643efc907); [arXivTLDR on PKTP](https://arxivtldr.org/abs/2610.31667); [BU CISE profile](https://www.bu.edu/cise/tijana-zrnic/); [Hugging Face Papers on RIDAR](https://huggingface.co/papers/2610.31372); [RIDAR code](https://github.com/THU-KEG/RIDAR); [Nowness AI on Adaptive Skill Granularity](https://nownessai.com/f/arxiv-2610-31461); [AI Pulse on Adaptive Skill Granularity](https://www.aipulsenews.co/article/arxiv-ai-1792728000000-di37bu).
+- **Retrieval note:** arXiv’s category recent pages were inspected in the browser because the configured page extractor did not support direct URL extraction; selected abstracts were verified on arXiv itself. The Semantic Scholar endpoint did not supply usable citation metadata. These source limitations reinforce the conservative “notable recent papers” interpretation rather than a measured popularity ranking.

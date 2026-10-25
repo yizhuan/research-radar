@@ -4,67 +4,71 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-10-25 00:33 UTC |
+| Snapshot time (UTC) | 2026-10-25 17:50 UTC |
 | Scope | Daily |
 | Date range | 2026-10-25 through 2026-10-25 |
-| Ranking basis | Daily GitHub Trending star gains, sorted descending |
+| Ranking basis | Daily GitHub Trending star gains; repositories ranked by stars gained today |
 
 ## Headline
 
-Agent-focused projects dominate the daily list, led by a security-audit workflow and NVIDIA's sandbox runtime. The other strong signal is operationalizing AI output: repeatable design checks, coding-agent learning material, and a local multi-harness agent are all gaining stars.
+Coding-agent workflows dominate today's biggest gains, led by Cloudflare's security-audit skill and design-focused agent tools Hallmark and Impeccable. At the same time, VoiceStudio's local voice-production suite shows strong demand for capable, locally run generative media.
 
 ## Top Repositories
 
-1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.**
+1. **[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) - A coding-agent skill for multi-phase security audits with independently checked, structured findings.**
 
-  **Language:** JavaScript | **Stars gained in window:** +2,264 | **Total stars:** 44,546 | **Why notable:** The largest displayed daily gain; its README describes a six-phase audit workflow that separates reconnaissance, coverage-led hunting, candidate validation and independent verification.
+  **Language:** JavaScript | **Stars gained in window:** +2,874 | **Total stars:** 46,376 | **Why notable:** The day's strongest Trending gain; its staged audit, independent verification, and machine-readable evidence reflect demand for more disciplined agent security workflows. **Default-branch commit:** `c1c8a8c1471069fb0e188eeaff69b8e8db6564a8`.
 
-2. **[NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) - OpenShell is the safe, private runtime for autonomous AI agents.**
+2. **[debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) - A local-first desktop suite for voice cloning/design, dubbing, dictation, transcription, and audiobooks.**
 
-  **Language:** Rust | **Stars gained in window:** +896 | **Total stars:** 19,471 | **Why notable:** Second-highest daily gain; its README differentiates it with isolated sandboxes, runtime kernel policy checks, credential mediation and formal review of policy changes.
+  **Language:** Python | **Stars gained in window:** +1,588 | **Total stars:** 86,300 | **Why notable:** One of the day's largest gains, combining a broad speech-media workflow with local model execution and optional remote services. **Default-branch commit:** `340606c4951a78a747ee3c9eb54b308ef493d4c5`.
 
-3. **[pbakaus/impeccable](https://github.com/pbakaus/impeccable) - The design language that makes your AI harness better at design.**
+3. **[Nutlope/hallmark](https://github.com/Nutlope/hallmark) - An agent design skill that helps generate and audit distinctive, usable web pages.**
 
-  **Language:** Rust | **Stars gained in window:** +619 | **Total stars:** 86,403 | **Why notable:** A leading design-quality project by daily gain; it packages 24 design commands and 62 deterministic frontend detector rules, with optional live browser iteration.
+  **Language:** CSS | **Stars gained in window:** +1,359 | **Total stars:** 33,350 | **Why notable:** Strong daily momentum around a concrete design problem; its README describes 48 visual themes, browser-based linting, and a fresh-context review. **Default-branch commit:** `7ec868225c6caa040558c321ee0fefa0e73f83a8`.
 
-4. **[makecindy/cindy](https://github.com/makecindy/cindy) - Consider it done. The open-source AI agent that works out of the box.**
+4. **[pbakaus/impeccable](https://github.com/pbakaus/impeccable) - A design toolkit for AI coding agents, with commands and deterministic frontend checks.**
 
-  **Language:** TypeScript | **Stars gained in window:** +477 | **Total stars:** 4,094 | **Why notable:** Its daily gain puts a relatively small but rising project near the top; the README describes a local desktop/mobile client that can switch between Claude Code and Codex while keeping workspace context continuous.
+  **Language:** Rust | **Stars gained in window:** +1,113 | **Total stars:** 87,389 | **Why notable:** Another major design-agent signal; its README pairs 24 reusable design commands with 62 deterministic detector rules and browser iteration. **Default-branch commit:** `658b4ce2942171ed5b3b3bec7e9d99456ba86e5e`.
 
-5. **[Nutlope/hallmark](https://github.com/Nutlope/hallmark) - Anti-AI-slop design skill for Claude Code, Cursor, and Codex.**
+5. **[makecindy/cindy](https://github.com/makecindy/cindy) - An open-source desktop/mobile agent client that connects coding harnesses, models, tools, and workflows.**
 
-  **Language:** CSS | **Stars gained in window:** +455 | **Total stars:** 32,134 | **Why notable:** One of two design-focused entries in the top five; Hallmark uses a 48-theme catalog, browser-based checks and separate hard-floor, overridable-reflex and non-blocking-finish gates.
+  **Language:** TypeScript | **Stars gained in window:** +677 | **Total stars:** 4,677 | **Why notable:** Its gain highlights interest in persistent, cross-harness agents that can use local files, apps, memory, skills, and automation. **Default-branch commit:** `206b24ccc88ec6fab473f84040c7b23321c28e75`.
 
-6. **[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) - A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.**
+6. **[pollen-robotics/microduck](https://github.com/pollen-robotics/microduck) - A tiny bipedal duck robot project.**
 
-  **Language:** Python | **Stars gained in window:** +392 | **Total stars:** 44,556 | **Why notable:** A practical guide rather than another agent runtime; its learning path combines visual tutorials and reusable examples for skills, hooks, subagents and MCP.
+  **Language:** Rust | **Stars gained in window:** +657 | **Total stars:** 11,487 | **Why notable:** A hardware/robotics counterpoint among software-heavy trends, with a sizable daily gain for a small, tangible robot project. **Default-branch commit:** `942e58e3aa6dbb28e7037203fff11866122c7567`.
 
-7. **[pollen-robotics/microduck](https://github.com/pollen-robotics/microduck) - A tiny biped robot driven by reinforcement-learning policies.**
+7. **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) - A multi-agent LLM framework for financial trading research and analysis.**
 
-  **Language:** Rust | **Stars gained in window:** +319 | **Total stars:** 10,990 | **Why notable:** A counterpoint to the software-agent cluster: this is robot control software for a small biped, using a 50 Hz loop and reinforcement-learning policies trained in a separate MuJoCo/PPO project.
+  **Language:** Python | **Stars gained in window:** +636 | **Total stars:** 114,277 | **Why notable:** Its continued attention shows multi-agent orchestration remains a draw beyond coding, here applied to financial analysis. **Default-branch commit:** `e8f5503e9b86d5c2710b0c76b1f686703968c9df`.
 
-8. **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) - An open-source AI agent that brings the power of Gemini directly into your terminal.**
+8. **[Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) - A TypeScript Zi Wei Dou Shu charting engine with calculation logic and a knowledge base.**
 
-  **Language:** TypeScript | **Stars gained in window:** +44 | **Total stars:** 108,049 | **Why notable:** An established terminal-agent project still present in the daily view, useful as a mature counterpoint to newer tools despite a modest gain in this snapshot. Its current README says Gemini CLI was replaced by Antigravity CLI for unpaid-tier and Google One users on 2026-06-18, and is not optimized for the newest Gemini models.
+  **Language:** TypeScript | **Stars gained in window:** +255 | **Total stars:** 7,492 | **Why notable:** A specialized Chinese-language domain application breaks up the agent/tooling cluster and demonstrates appetite for culturally specific software. **Default-branch commit:** `e478393ad6c865ad6270e978a3164d2f2cb5315b`.
 
-9. **[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) - Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS.**
+9. **[coollabsio/coolify](https://github.com/coollabsio/coolify) - A self-hostable platform for deploying apps, databases, and services on your own servers.**
 
-  **Language:** Python | **Stars gained in window:** +13 | **Total stars:** 3,126 | **Why notable:** Its small gain still signals a corporate-backed toolchain for agents: the README covers AWS CLI integration, coding-agent plugins and service-specific knowledge and guardrails.
+  **Language:** PHP | **Stars gained in window:** +192 | **Total stars:** 64,086 | **Why notable:** A mature self-hosted infrastructure project remains in today's trending set, offering a counterpoint to newer agent-centric repositories. **Default-branch commit:** `834b47a85f4c27db7cbf4525abc09948c505fb34`.
+
+10. **[AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) - A broad SEO skill and agent toolkit covering technical, content, local, and emerging agent-readiness workflows.**
+
+  **Language:** Python | **Stars gained in window:** +179 | **Total stars:** 20,524 | **Why notable:** Its 26 sub-skills and 19 sub-agents extend the agent-skill trend into a specialized professional workflow. **Default-branch commit:** `6be93f45064ffbadced572b5d5c95f55fd263af0`.
 
 ## Trending Technologies and Themes
 
-- **Security and controlled agent execution:** Cloudflare's security-audit-skill and NVIDIA OpenShell emphasize auditability and restricted execution, while AWS supplies agent-specific cloud tools.
-- **Agent workflows and harnesses:** Cindy, claude-howto and Gemini CLI represent different layers—local orchestration, learning materials and a terminal interface; AWS adds cloud service integration.
-- **Design quality for AI-generated interfaces:** Hallmark and Impeccable turn design guidance into repeatable checks and reusable agent commands.
-- **Embodied AI and reinforcement learning:** Microduck is a physical-world exception, combining on-device control with learned policies.
-- **Languages:** Rust (3), TypeScript (2), Python (2), JavaScript (1), and CSS (1) among the nine listed repositories.
+- **Coding agents become workflow systems:** Cloudflare's security-audit-skill, Cindy, and claude-seo package structured multi-step work, verification, or reusable specialist capabilities rather than only chat interfaces.
+- **Design quality is being operationalized:** Hallmark and Impeccable provide reusable design guidance plus concrete browser or rule-based checks to counter generic AI-generated frontend patterns.
+- **Local generative media:** VoiceStudio emphasizes on-device speech workflows, with optional remote services, bringing voice creation and production into a single application.
+- **Beyond software agents:** TradingAgents applies multi-agent LLMs to financial research, while microduck represents a hands-on robotics project; Zi Wei Dou Shu and Coolify add domain-specific and self-hosting counterpoints.
+- **Languages:** Python leads with 3 of the 10 listed repositories; TypeScript and Rust have 2 each; JavaScript, CSS, and PHP have 1 each (using GitHub's primary-language labels).
 
 ## Takeaway
 
-The strongest daily momentum is around making AI agents safer and more dependable, not just more capable: explicit audit stages, sandbox policy, design checks and reusable workflows all feature prominently. The list is not exclusively software agents—Microduck stands out as an embodied-learning project—and the mature Gemini CLI entry shows that an established tool can still trend even when its README points users toward a successor.
+Today's clearest signal is the move from generic AI helpers toward packaged workflows: agent skills with explicit checks, persistent multi-harness clients, and specialist tools. Design quality and locally run media stand out alongside that agent wave, while robotics and self-hosting show that the daily list is not solely about LLMs. Daily star gains indicate attention, not adoption or product quality.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending, daily](https://github.com/trending?since=daily).
-- **Corroboration:** GitHub Search API exact-name queries and public REST repository and default-branch commit endpoints; current first-party README files and documentation linked from those READMEs.
-- **Method note:** Daily gains are copied from the matching GitHub Trending view and ranked descending; total stars, languages and current default-branch commit SHAs were checked with GitHub's public REST API. Star counts are a point-in-time snapshot and can change during the day. The list-only ebook collection was excluded. No prior-window comparison is claimed.
+- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily).
+- **Corroboration:** GitHub REST repository and default-branch commit endpoints were checked for all 10 entries; GitHub Search API queries were also checked for `makecindy/cindy`, `cloudflare/security-audit-skill`, and `AgriciDaniel/claude-seo`.
+- **Method note:** Ranking and stars gained come from the daily Trending view's “stars today” values, sorted descending. Total stars, primary languages, and current default-branch commit SHAs were corroborated against GitHub API data. API star totals can move during the day. No prior-window comparison was used, so no Notable Shifts section is included.

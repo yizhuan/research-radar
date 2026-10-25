@@ -6,267 +6,174 @@
     "start": "2026-10-22",
     "end": "2026-10-22",
     "announcement_batch": "2026-10-22",
-    "snapshot_utc": "2026-10-23T00:22:50Z"
+    "snapshot_utc": "2026-10-25T00:26:49Z"
   },
   "date": "2026-10-22",
-  "title": "Physics on arXiv — 22 October 2026 (notable recent papers)",
-  "global_caveat": "arXiv publishes no official trending chart. This is an inferred ranking based on paper-specific scientific signals, not readership or downloads; citation evidence is limited for papers only hours old.",
+  "title": "arXiv physics — notable papers from the 22 October 2026 batch",
+  "global_caveat": "arXiv supplies no official trending chart. This is an inferred editorial ranking based on checkable result specificity, experimental or observational basis, cross-list relevance, publication or data/code signals, and independent discussion where found. Citation evidence is limited for papers only days old; this is a notable-paper selection, not a measured popularity ranking.",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-10-22.md",
   "entry_count": 8,
   "entry_noun": "papers",
   "sections": [
     {
-      "id": "2610.29838",
+      "id": "2610.31185",
       "kind": "paper",
-      "title": "PSR J0653+0443: An Eclipsing Millisecond Pulsar in an Extremely Eccentric Double Neutron Star System",
+      "title": "Realization of a Superleak in a Quantum Gas",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2610.29838",
-      "arxiv_id": "2610.29838",
+      "url": "https://arxiv.org/abs/2610.31185",
+      "arxiv_id": "2610.31185",
       "arxiv_version": 1,
-      "published": "2026-10-21T15:00:50Z",
-      "categories": [
-        "astro-ph.HE"
-      ],
-      "authors": [
-        "Z. L. Yang",
-        "J. L. Han",
-        "L. G. Hou",
-        "Z. W. Chen",
-        "Y. G. Gong",
-        "et al."
-      ],
-      "themes": [
-        "Astrophysics",
-        "Cosmology & gravitation"
-      ],
-      "abstract": "FAST discovery of an extremely eccentric double-neutron-star binary with eccentricity 0.992387, an 85-second eclipse, and unusual pulse timing near periastron.",
-      "claimed_result": "From more than two years of FAST timing, the authors infer a nearly edge-on DNS system and constrain its non-relativistic periastron advance; population synthesis makes such systems rare.",
-      "evidence_type": "observational; FAST radio observations and phase-connected pulse-timing analysis",
-      "unique_caveat": "Formation history and rarity depend on binary-evolution and population-synthesis assumptions; one system is not a population measurement.",
-      "refs": [
-        "https://arxiv.org/abs/2610.29838"
-      ]
+      "published": "2026-10-22T12:35:00Z",
+      "categories": ["cond-mat.quant-gas", "physics.atom-ph", "quant-ph"],
+      "authors": ["Wan-Ling Yang", "Shao-Bo Liu", "Xiang Luo", "Chao Yang", "Hai-Lin Li", "et al."],
+      "themes": ["Condensed matter & materials", "Atomic, molecular & optical physics"],
+      "abstract": "The authors use an optical superlattice to let the coherent superfluid component flow much faster than the normal component, enabling repeated filtering and purification of the superfluid.",
+      "claimed_result": "The authors report dynamical superfluid-selective transport and repeated normal-component filtering in an ultracold gas, with a flow-rate contrast of 500(49) and oscillations through 100 cycles.",
+      "evidence_type": "experimental; optical-superlattice ultracold-gas transport with site-resolved population measurements and a microscopic model",
+      "unique_caveat": "Selectivity relies on slow normal-component thermalization in this low-dimensional lattice setup; equivalent performance in other quantum-fluid platforms or regimes is not established.",
+      "ranking_evidence": "Direct laboratory demonstration with quantified flow contrast and coherent cycles; cross-listed in three physics subfields.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31185"]
     },
     {
-      "id": "2610.29986",
+      "id": "2610.30638",
       "kind": "paper",
-      "title": "Meter-scale quantum interconnects between large quantum processors",
+      "title": "Experimental evidence of forward energy transfer induced by core-edge coupling in multiscale tokamak turbulence",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2610.29986",
-      "arxiv_id": "2610.29986",
+      "url": "https://arxiv.org/abs/2610.30638",
+      "arxiv_id": "2610.30638",
       "arxiv_version": 1,
-      "published": "2026-10-21T16:28:16Z",
-      "categories": [
-        "quant-ph"
-      ],
-      "authors": [
-        "Neereja M. Sundaresan",
-        "Nicholas Cotaj",
-        "Yadav Prasad Kandel",
-        "Eric Lewandowski",
-        "Christian Robert Longton",
-        "et al."
-      ],
-      "themes": [
-        "Quantum information",
-        "Instrumentation & detectors"
-      ],
-      "abstract": "Four superconducting-cable links connect two 120-qubit processors, with state transfer, remote CZ gates, and entanglement across modules.",
-      "claimed_result": "The authors report 99.00% mean state-transfer fidelity and 94.75% mean fidelity for distant CZ gates, with entangled states across processors.",
-      "evidence_type": "experimental; two IBM Nighthawk R1 processors and four 80-cm aluminum coaxial L-couplers",
-      "unique_caveat": "Only two modules and four links were demonstrated; link loss and cooldown reproducibility remain scale-up concerns.",
-      "refs": [
-        "https://arxiv.org/abs/2610.29986"
-      ]
+      "published": "2026-10-22T02:58:21Z",
+      "categories": ["physics.plasm-ph"],
+      "authors": ["F. Chen", "Z.M. Shen", "N. Sun", "P. Li", "Z.Y. Qiu", "et al."],
+      "themes": ["Plasma & fluid physics", "Instrumentation & detectors"],
+      "abstract": "Using complementary turbulence diagnostics, the authors report evidence that an edge-originating quasi-coherent mode couples to core turbulence and is associated with forward transfer across plasma scales.",
+      "claimed_result": "The authors interpret measurements as evidence for net forward energy transfer from ion to electron scales through cross-scale wave-wave interactions.",
+      "evidence_type": "experimental; combined collective Thomson scattering and Doppler backscattering diagnostics in tokamak plasma",
+      "unique_caveat": "The abstract describes evidence consistent with the mechanism; its prevalence across discharges and quantitative impact on confinement require further tests.",
+      "ranking_evidence": "Direct experimental result combining two complementary diagnostics on a fusion-relevant cross-scale transport problem.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.30638"]
     },
     {
-      "id": "2610.29980",
+      "id": "2610.31664",
       "kind": "paper",
-      "title": "International atomic clock comparison achieving 5×10^-18 uncertainty",
+      "title": "Odd radio circle J1555+2726: Observational evidence for shock re-acceleration of fossil plasma",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2610.29980",
-      "arxiv_id": "2610.29980",
+      "url": "https://arxiv.org/abs/2610.31664",
+      "arxiv_id": "2610.31664",
       "arxiv_version": 1,
-      "published": "2026-10-21T16:26:08Z",
-      "categories": [
-        "physics.atom-ph",
-        "quant-ph"
-      ],
-      "authors": [
-        "A. Tofful",
-        "M. Filzinger",
-        "T. Schmidt",
-        "A. Amy-Klein",
-        "E. Benkler",
-        "et al."
-      ],
-      "themes": [
-        "Atomic, molecular & optical physics",
-        "Instrumentation & detectors"
-      ],
-      "abstract": "Two independently developed ytterbium-ion optical clocks in the UK and Germany agree to a fractional frequency difference of 1.0(4.8)×10^-18 over a 2,220-km fiber link.",
-      "claimed_result": "The authors find no statistically significant Lorentz-violating modulation and improve the uncertainty on a Robertson–Mansouri–Sexl parameter constraint by about a factor of five.",
-      "evidence_type": "experimental; two single-ion 171Yb+ E3 clocks linked by a phase-stabilized 2,220-km optical fiber network",
-      "unique_caveat": "Relativistic redshift correction including time-varying gravity potential dominates uncertainty; this is not a redefinition of the SI second.",
-      "refs": [
-        "https://arxiv.org/abs/2610.29980"
-      ]
+      "published": "2026-10-22T17:59:32Z",
+      "categories": ["astro-ph.GA", "astro-ph.CO"],
+      "authors": ["L. Bruno", "B. Koribalski", "R. P. Norris", "A. Ivleva", "T. Venturi", "et al."],
+      "themes": ["Astrophysics"],
+      "abstract": "Multi-frequency radio maps of ORC4 show spectral structure that the authors interpret as evidence for shock re-acceleration of a pre-existing relativistic-electron population.",
+      "claimed_result": "The authors find convex spectral curvature and radial flattening that standard thermal-particle shock acceleration and ageing do not explain, and infer likely re-acceleration of a fossil relativistic reservoir.",
+      "evidence_type": "observational; LOFAR, upgraded GMRT, and MeerKAT imaging and spectral-index analysis over 50–1284 MHz, with auxiliary survey images",
+      "unique_caveat": "Fossil-electron re-acceleration is an interpretation; odd-radio-circle formation remains debated and the spectrum does not uniquely identify the source history.",
+      "ranking_evidence": "Broad frequency coverage from three radio arrays, measured spectral quantities with uncertainties, referee resubmission noted, and secondary summaries found in web search.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31664"]
     },
     {
-      "id": "2610.29684",
+      "id": "2610.31181",
       "kind": "paper",
-      "title": "Euclid Quick Data Release (Q1). A systematic study of the intracluster light fraction at 0.2 < z < 1.5",
+      "title": "A cosmological intercept tension in local distance ladders",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2610.29684",
-      "arxiv_id": "2610.29684",
+      "url": "https://arxiv.org/abs/2610.31181",
+      "arxiv_id": "2610.31181",
       "arxiv_version": 1,
-      "published": "2026-10-21T12:57:51Z",
-      "categories": [
-        "astro-ph.GA"
-      ],
-      "authors": [
-        "Euclid Collaboration",
-        "H. Gully",
-        "N. A. Hatch",
-        "H. Gao",
-        "S. P. Bamford",
-        "et al."
-      ],
-      "themes": [
-        "Astrophysics",
-        "Computational & data methods"
-      ],
-      "abstract": "Across roughly 300 clusters, the authors estimate ICL at about 40% of BCG-plus-ICL light and 20% of total cluster stellar light, approximately stable at fixed mass over 0.2<z<1.5.",
-      "claimed_result": "The authors infer that the relative BCG/ICL/satellite partition is largely established by z~1.5, while noting the sample is not an evolutionary sequence.",
-      "evidence_type": "observational; Euclid Q1 imaging and SPT/optically selected cluster samples, compared with Hydrangea simulations",
-      "unique_caveat": "ICL fraction depends on wavelength and measurement choices; the sample cannot track evolution of individual clusters.",
-      "refs": [
-        "https://arxiv.org/abs/2610.29684"
-      ]
+      "published": "2026-10-22T12:33:06Z",
+      "categories": ["astro-ph.CO"],
+      "authors": ["Haotian Dong", "Marek Biesiada", "Zhoujian Cao", "Shao-Jiang Wang"],
+      "themes": ["Cosmology & gravitation"],
+      "abstract": "Forward and backward checks using Pantheon+ supernova data find that peculiar-velocity corrections reduce, but do not remove, a discrepancy between two local-distance-ladder rungs under the adopted framework.",
+      "claimed_result": "With Manticore-Local peculiar-velocity corrections, the authors report significance falling from 6.8σ to 3.9σ in the forward check and from 7.3σ to 4.3σ in the backward check.",
+      "evidence_type": "observational; Pantheon+ Type Ia supernova samples with Planck-CMB priors and peculiar-velocity corrections",
+      "unique_caveat": "The residual depends on flat-ΛCDM, velocity reconstruction, sample selection, and calibration; the authors call for further systematic tests.",
+      "ranking_evidence": "Two-direction consistency analysis quantifies the effect of a local-velocity reconstruction on an active cosmological inference problem.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31181"]
     },
     {
-      "id": "2610.29137",
+      "id": "2610.31647",
       "kind": "paper",
-      "title": "NGC 3227 Blinks: An Extreme Changing-Look Event in a Seyfert Galaxy",
+      "title": "Magnetic Activity as a Driver of Low-gravity-like Spectral Morphology in Late-M Dwarfs",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2610.29137",
-      "arxiv_id": "2610.29137",
+      "url": "https://arxiv.org/abs/2610.31647",
+      "arxiv_id": "2610.31647",
       "arxiv_version": 1,
-      "published": "2026-10-21T03:18:57Z",
-      "categories": [
-        "astro-ph.GA",
-        "astro-ph.HE"
-      ],
-      "authors": [
-        "Kaiwen Zhang",
-        "Michael S. Brotherton",
-        "Pu Du",
-        "Dong-Wei Bao",
-        "Bi-Xuan Zhao",
-        "et al."
-      ],
-      "themes": [
-        "Astrophysics"
-      ],
-      "abstract": "NGC 3227 faded by over 70% in optical continuum and nearly lost broad H-beta within weeks, then recovered within two months, with X-ray hardening and persistent reverberation.",
-      "claimed_result": "The authors argue a compact Compton-thick obscurer inside the broad-line region explains the fast optical suppression while reverberation continues.",
-      "evidence_type": "observational; optical monitoring, Swift X-ray observations, reverberation mapping, and supporting variability/photoionization analyses",
-      "unique_caveat": "The obscurer interpretation is model-dependent, and one event does not establish prevalence.",
-      "refs": [
-        "https://arxiv.org/abs/2610.29137"
-      ]
+      "published": "2026-10-22T17:56:28Z",
+      "categories": ["astro-ph.SR"],
+      "authors": ["Chia-Lung Lin", "Daniel Apai", "Benjamin V. Rackham", "Prajwal Niraula", "Mark S. Giampapa", "et al."],
+      "themes": ["Astrophysics"],
+      "abstract": "The authors find activity indicators correlate with low-gravity-like near-infrared spectra in late-M dwarfs and propose that persistent small-scale activity can mimic low surface gravity.",
+      "claimed_result": "One-component PHOENIX/NewEra fits favor lower-gravity spectra for all targets; activity and X-ray indicators correlate with the morphology, and a simplified radiative-transfer experiment produces similar features at fixed gravity.",
+      "evidence_type": "observational and computational; JWST NIRISS/SOSS, IRTF/SpeX, flare/X-ray measurements, spectral modeling, and radiative-transfer experiment",
+      "unique_caveat": "The microflare explanation is not directly established by the two TRAPPIST-1 flare time series; primary spectral fits use a one-component atmosphere model.",
+      "ranking_evidence": "Combines TRAPPIST-1/JWST with 22 late-M dwarfs and multiple activity indicators, reports significant correlations, and received secondary astronomy-news coverage.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31647"]
     },
     {
-      "id": "2610.29923",
+      "id": "2610.30673",
       "kind": "paper",
-      "title": "Cosmic Ray Observations using Coincident Scintillator and Radio Signals with BEACON",
+      "title": "A 13 Year Black Hole Microlensing Survey in Omega Centauri",
       "rank": 6,
-      "url": "https://arxiv.org/abs/2610.29923",
-      "arxiv_id": "2610.29923",
+      "url": "https://arxiv.org/abs/2610.30673",
+      "arxiv_id": "2610.30673",
       "arxiv_version": 1,
-      "published": "2026-10-21T15:59:11Z",
-      "categories": [
-        "astro-ph.IM",
-        "astro-ph.HE"
-      ],
-      "authors": [
-        "Zachary Martin",
-        "Jackson Hinkel",
-        "Kira Perna",
-        "Andrew Zeolla",
-        "Jaime Alvarez-Muñiz",
-        "et al."
-      ],
-      "themes": [
-        "Astrophysics",
-        "Instrumentation & detectors"
-      ],
-      "abstract": "BEACON reports 22 candidate cosmic-ray events selected from coincident scintillator and radio data, with polarization consistent with geomagnetic emission.",
-      "claimed_result": "The authors report candidate cosmic-ray detections and find that simulated hybrid-instrument performance reproduces the observed rate to within an order of magnitude; this is not tau-neutrino detection.",
-      "evidence_type": "experimental; BEACON six-antenna radio prototype and scintillator-coincidence dataset, with detector simulations",
-      "unique_caveat": "Events are candidates and the quoted background comes from synthetic pairings; more exposure and independent reconstruction are needed.",
-      "refs": [
-        "https://arxiv.org/abs/2610.29923"
-      ]
+      "published": "2026-10-22T03:38:03Z",
+      "categories": ["astro-ph.GA", "astro-ph.SR"],
+      "authors": ["Zack Freeman", "Maximilian Häberle", "Anil Seth", "John Zaris", "Matthew Whitaker", "et al."],
+      "themes": ["Astrophysics", "Computational & data methods"],
+      "abstract": "A search of 13 years of Hubble imaging finds no convincing stellar-mass black-hole microlensing events in Omega Centauri; the authors release the photometric dataset.",
+      "claimed_result": "The authors find no convincing candidates and, from completeness and simulation analysis, expect no events in this dataset, contrary to earlier expectations.",
+      "evidence_type": "observational and computational; Hubble imaging, synthetic microlensing events, Omega Centauri Monte Carlo simulation, and neural-network classification",
+      "unique_caveat": "The nondetection does not establish an absence of stellar-mass black holes; interpretation depends on the assumed population simulation and survey completeness.",
+      "ranking_evidence": "Nearly 200 Hubble images spanning 13 years, validated completeness analysis, and a released photometric dataset; submitted to MNRAS.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.30673"]
     },
     {
-      "id": "2610.30092",
+      "id": "2610.31559",
       "kind": "paper",
-      "title": "Spatial Control of Compressible Active Fluids",
+      "title": "A Generalized Framework for Rapid Polarization Response Generation in Wide Field-of-View Compton Polarimeters",
       "rank": 7,
-      "url": "https://arxiv.org/abs/2610.30092",
-      "arxiv_id": "2610.30092",
+      "url": "https://arxiv.org/abs/2610.31559",
+      "arxiv_id": "2610.31559",
       "arxiv_version": 1,
-      "published": "2026-10-21T17:41:26Z",
-      "categories": [
-        "cond-mat.soft"
-      ],
-      "authors": [
-        "Yu-Chuan Cheng",
-        "Dimitris Krommydas",
-        "Seungwoo Shin",
-        "Paarth Gulati",
-        "Michael F. Hagan",
-        "et al."
-      ],
-      "themes": [
-        "Biophysics & soft matter"
-      ],
-      "abstract": "Experiments and continuum theory show that patterned activity redistributes microtubules in an active fluid, with density contrast depending on wavelength and vortex structure.",
-      "claimed_result": "The authors find that nematic active stress plus isotropic active pressure reproduce observed modulation and explain suppression at short wavelengths.",
-      "evidence_type": "experimental; patterned-activity microtubule active-fluid experiments and continuum modeling",
-      "unique_caveat": "Results are tied to the tested microtubule system and sinusoidal activity patterns; generality to other active materials remains untested.",
-      "refs": [
-        "https://arxiv.org/abs/2610.30092"
-      ]
+      "published": "2026-10-22T17:03:42Z",
+      "categories": ["astro-ph.IM", "astro-ph.HE"],
+      "authors": ["Mohamed Gamal Zaid", "Merlin Kole", "Mark McConnell", "Fabio Muleri", "Hancheng Li"],
+      "themes": ["Instrumentation & detectors", "Astrophysics", "Computational & data methods"],
+      "abstract": "The authors construct full off-axis polarization responses for planar Compton polarimeters using at least 95% fewer Monte Carlo simulations than the conventional approach.",
+      "claimed_result": "The second mode reproduces simulated azimuthal distributions to statistical noise and recovers tested polarization measurements using two polarized simulations per energy plus an unpolarized one.",
+      "evidence_type": "computational; numerical response model validated against GEANT4 simulations, with POLAR as a case study",
+      "unique_caveat": "The faster first mode underestimates polarization for the brightest GRBs; validation is against GEANT4 and tested POLAR cases, not universal instrument calibration.",
+      "ranking_evidence": "Accepted for ApJ, open-source software, GEANT4 validation, cross-listing in instrument and high-energy astrophysics; DOI 10.3847/1538-4357/aeb548.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31559", "https://doi.org/10.3847/1538-4357/aeb548"]
     },
     {
-      "id": "2610.30098",
+      "id": "2610.31660",
       "kind": "paper",
-      "title": "Pure dephasing destroys two-photon amplitude, not nonlinear phase",
+      "title": "Sound-Horizon-Agnostic Forecast for Constraints on H0 and Σmν from BAO, CMB Lensing, Supernovae and LSST-like Galaxy Lensing",
       "rank": 8,
-      "url": "https://arxiv.org/abs/2610.30098",
-      "arxiv_id": "2610.30098",
+      "url": "https://arxiv.org/abs/2610.31660",
+      "arxiv_id": "2610.31660",
       "arxiv_version": 1,
-      "published": "2026-10-21T17:45:34Z",
-      "categories": [
-        "quant-ph"
-      ],
-      "authors": [
-        "Matthew Kozma",
-        "Stephen Hughes"
-      ],
-      "themes": [
-        "Quantum information",
-        "Atomic, molecular & optical physics"
-      ],
-      "abstract": "For a chiral waveguide-emitter model, a closed-form dephased two-photon scattering calculation leaves the conditional phase at π while suppressing the amplitude carrying it.",
-      "claimed_result": "The authors find unequal attenuation of one- and two-photon channels and that standard correlator factorization misses 16–81% of pairs over the modeled dephasing range.",
-      "evidence_type": "theoretical; two-photon scattering calculation cross-checked with a Fock-state master equation",
-      "unique_caveat": "Model-based prediction, not a hardware measurement; implications depend on emitter-waveguide assumptions and dephasing regime.",
-      "refs": [
-        "https://arxiv.org/abs/2610.30098"
-      ]
+      "published": "2026-10-22T17:59:04Z",
+      "categories": ["astro-ph.CO"],
+      "authors": ["Seyed Hamidreza Mirpoorian", "Helena García Escudero", "Levon Pogosian", "Amy Wayland", "David Alonso"],
+      "themes": ["Cosmology & gravitation", "Computational & data methods"],
+      "abstract": "The authors forecast joint Hubble-constant and neutrino-mass constraints from BAO, CMB lensing, supernovae, and LSST-like lensing while treating the baryon-drag sound horizon as free.",
+      "claimed_result": "For fixed neutrino mass, the forecast gives σ(H0)≈1.5 km/s/Mpc under the least informative prior set; with variable neutrino mass it forecasts a 95% upper limit near 0.4 eV and weaker H0 constraints.",
+      "evidence_type": "forecast/proposal; LSST-like galaxy lensing and Simons-Observatory-like CMB lensing combined with DESI BAO and expanded supernova samples",
+      "unique_caveat": "Forecasts are not observations; mock tests recover unbiased H0 for modified recombination but not early dark energy, showing dependence on early-Universe assumptions.",
+      "ranking_evidence": "Combines complementary cosmological probes, marginalizes over lensing systematics, and validates the method against mocks; included as a test strategy, not a new measurement.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.31660"]
     }
   ]
 }

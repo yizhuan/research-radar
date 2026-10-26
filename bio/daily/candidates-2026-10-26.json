@@ -1,0 +1,485 @@
+[
+  {
+    "arxiv_id": "2610.32962",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32962v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32962v1",
+    "title": "Shared clones make random cell halves look reproducible in pooled screens",
+    "published": "2026-10-23T17:53:14Z",
+    "updated": "2026-10-23T17:53:14Z",
+    "authors": [
+      "Xuanrui Huang"
+    ],
+    "abstract": "Single-cell perturbation screens are used to train and evaluate models that predict perturbation effects, and model scores are judged against how reproducible the measured effects are. Reproducibility is usually judged by splitting each perturbation's cells into two random halves. This assumes that the halves are independent replicates. In pooled screens such as Perturb-seq, however, the cells carrying a guide RNA descend from a limited number of transduced cells, so two random halves contain the same clones: pseudoreplication whose unit is not marked in the data. Using perturbations that should have no effect as controls, we compared random halves with independent replicates from separate transductions, and tested directly with halves that differ only in their clones. In a genome-scale screen of primary T cells, null perturbations agreed between random halves almost always and between independent replicates only half the time, the rate expected from noise alone; measuring more cells did not remove this agreement. Splitting the cells into halves that share no clone, by the T-cell receptor constant region or by a clone barcode, largely removed the excess agreement. Its size equals the share of expression differences set by clones divided by the effective number of clones per perturbation; across 16 screens it was largest in T cells transferred into mice and in a genome-scale primary T-cell screen, one to two orders of magnitude smaller in cell lines, and smallest in non-dividing neurons. Shared clones inflate benchmark ceilings and reliability labels, and when a model's input and its scoring answer come from one transduction, published models that predict perturbation effects in a new cell state appear better than a baseline that ignores the perturbation; against cells from another transduction, most fall below it. Reproducibility should be judged across separate transductions.",
+    "categories": [
+      "q-bio.QM"
+    ],
+    "primary_category": "q-bio.QM",
+    "comment": "48 pages, 7 figures; includes Supplementary Information. Code and result files: https://github.com/xuanruihuang/random-halves-not-replicates",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.32811",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32811v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32811v1",
+    "title": "U-NeXt: General-purpose event detection for neonatal EEG",
+    "published": "2026-10-23T15:47:15Z",
+    "updated": "2026-10-23T15:47:15Z",
+    "authors": [
+      "Robert Hogan",
+      "Sean R. Mathieson",
+      "Aurel Luca",
+      "Soraia Ventura",
+      "Sean Griffin",
+      "Geraldine B. Boylan",
+      "John M. O'Toole"
+    ],
+    "abstract": "We developed U-NeXt, a general framework for neonatal electroencephalography (EEG) event detection based on semantic segmentation. Its convolutional encoder-decoder directly segments individual channels using long input segments to preserve temporal context. A shared architecture and training framework were developed using low-voltage interval, artefact, and seizure datasets containing 51, 98, and 278 neonates, respectively, comprising over 11,000 hours of EEG and 82,000 annotated events. Performance was compared with task-specific ConvNeXt classifiers. For seizure detection, we also evaluated U-NeXt+, trained on an expanded dataset. Both U-NeXt variants and the ConvNeXt baseline were evaluated on two independent held-out seizure datasets, Helsinki and Cork, comprising 130 neonates, with recordings annotated by three experts. U-NeXt improved detection across all three event types, with particular gains in sensitivity for short events. U-NeXt+ achieved Matthews correlation coefficients of 0.862 and 0.891 on Helsinki and Cork, respectively, and improved hourly seizure burden correlations by 30-40% relative to ConvNeXt. U-NeXt+ met the criterion for expert-level performance on both datasets (p < 0.001). In separate computational benchmarks, U-NeXt reduced batch inference time relative to ConvNeXt by 254-fold on a central processing unit and 200-fold on a graphics processing unit. A common segmentation framework improves detection across diverse neonatal EEG event types while substantially reducing inference time. Accurate seizure burden estimates and performance comparable to expert reviewers support its potential use in continuous monitoring and clinical decision support.",
+    "categories": [
+      "cs.LG",
+      "eess.SP",
+      "physics.med-ph"
+    ],
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.32779",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32779v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32779v1",
+    "title": "Computational De Novo Design of Miniprotein Candidate Neutralizers Targeting the IL-23 Cytokine Subunit p19",
+    "published": "2026-10-23T15:26:49Z",
+    "updated": "2026-10-23T15:26:49Z",
+    "authors": [
+      "Raghav Paladugu",
+      "Fardina Fathmiul Alam"
+    ],
+    "abstract": "Interleukin-23 (IL-23) drives T-helper-17 inflammation underlying inflammatory bowel disease and psoriasis; anti-p19 antibodies are clinically effective but large, costly, and injectable. De novo miniproteins are an attractive alternative, yet published designs target the IL-23 receptor; the IL-23 cytokine itself has not been addressed. A further obstacle is that the standard confidence score (ipTM) tracks construct length rather than interface quality. We computationally design miniprotein binders against the IL-23R-binding face of p19 (PDB 3DUH) and score every design with ipSAE, a length-robust interface metric derived from AlphaFold-initial-guess predicted aligned error. A conventional RFdiffusion/ProteinMPNN/ColabFold pipeline yields no reliable predicted interface across 972 designs (best ipSAE 0.30), and a scoring artifact, in which single-sequence ColabFold under-rates binder pLDDT by approximately 56 points, explains an earlier misleading \"binders do not fold\" signal. An interface-optimized hallucination method (BindCraft), scored identically, yields 42 of 50 designs above ipSAE 0.60 (best 0.804). An AlphaFold-independent geometric check reproduces the conventional failure: no top-ranked conventional design reaches the buried area or interface hydrogen-bond count of the weakest lead. Five all-alpha-helical leads (72-104 residues) collectively engage all six targeted hotspots; two dock within the intact p40/p19 heterodimer and all show favorable Rosetta energetics. A p40-alone counter-screen returns ipSAE 0.00 for all five, indicating no spurious p40 interface. To our knowledge, these are the first computationally proposed de novo miniprotein candidates designed to occlude the IL-23R-binding face of IL-23 p19. All results require experimental validation.",
+    "categories": [
+      "q-bio.BM"
+    ],
+    "primary_category": "q-bio.BM",
+    "comment": "Accepted as a short paper at the 2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2026)",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.32756",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32756v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32756v1",
+    "title": "Video-rate quantitative phase and polarimetric imaging (QP2I) for label-free imaging of contracting muscle cells",
+    "published": "2026-10-23T15:00:24Z",
+    "updated": "2026-10-23T15:00:24Z",
+    "authors": [
+      "Lucas Kreiss Roohian",
+      "Nachiket Pathak",
+      "David Ripp",
+      "Mitchell Harling",
+      "Nils Kronenberg",
+      "Marcel Schubert",
+      "Malte C. Gather"
+    ],
+    "abstract": "Quantitative phase imaging (QPI) has become a standard approach for label-free microscopy of transparent specimens, mapping the optical path length. However, the isotropic phase is blind to the molecular order underlying optical anisotropy. Implementations that also add quantitative contrast to birefringence, rely on multi-frame illumination or polarization-state scanning, or on dedicated interferometric hardware, that trade away acquisition speed or the simplicity of a standard microscope. We present Quantitative Phase and Polarimetric Imaging (QP2I), a computational imaging framework that converts a standard differential interference contrast (DIC) microscope with a polarization camera into a single-shot, video-rate, dual-contrast imaging system. We developed a new globally regularized phase reconstruction that eliminates artifacts of prior DIC-to-QPI approaches, providing quantitative phase information and used per-pixel Stokes-based reconstruction to obtain quantitative anisotropic retardance. We validate the approach across simulations, static reference targets, fixed muscle tissue and living dynamically moving cells. Thereby, QP2I enables to study contractile dynamics in live cardiomyocytes all-optically and label-free. It provides both structural and functional readouts at frame rates that are sufficient to temporally resolve fast cardiomyocyte contractions. While conventional fluorescent labels bleach out over time, perturb physiology, and preclude long-term monitoring, QP2I provides similar established structural readouts, such as frame-by-frame sarcomere length, as well as previously inaccessible measurements, like quantitative analysis of retardance changes during muscle contraction, as a direct optical signature of muscle photoelasticity. QP2I thus enables long-term, label-free interrogation of dynamic cellular processes at quantitative contrast.",
+    "categories": [
+      "physics.optics",
+      "q-bio.QM"
+    ],
+    "primary_category": "physics.optics",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.32620",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32620v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32620v1",
+    "title": "What Transfers Across Protein Pockets? Experience Reuse in Molecular Optimization for Agentic Structure-Based Drug Design",
+    "published": "2026-10-23T13:38:42Z",
+    "updated": "2026-10-23T13:38:42Z",
+    "authors": [
+      "Zaifei Yang",
+      "Weiyu Chen",
+      "Yaqing Wang",
+      "James Kwok"
+    ],
+    "abstract": "LLM agents optimize a ligand in a protein pocket by editing it step by step and docking each edit. Recent agents first spend extra dockings probing the complex with controlled edits; guidance induced from these probes is reported to help more than the chemical knowledge the model already carries. The probes are then discarded with the instance that produced them, so the obvious next step is to keep them in an experience base, letting a new pocket inherit what earlier ones already paid for. Such a base is read through a \\emph{key}: the record properties under which past edits are pooled and a new one is looked up. Using the full log of one such run over the CrossDocked2020 test-set pockets, we ask whether its keys recur on a pocket the base has never seen and still separate improving from worsening edits. \\crchange{Using} the contacts at the site being edited, the action, and the round as \\crchange{a} key, the base separates them sharply. Within our analysis, this separation is largely explained by how much the edit changed the molecule's size, the action, and the round, none of which describes the target. That is not because the target is irrelevant: naming it outright separates them several times more sharply. For a pocket absent from the base, transfer must rely on a description rather than its identity. Among the exact-match descriptions we evaluate, the more specific ones rarely recur, whereas the coarser ones provide little separation; the signals that do transfer primarily describe the edit and the molecule it produced rather than the target. Under the representations and lookup scheme studied here, an experience base may be more useful for prioritizing an agent's own proposals for docking than for directly prescribing what to build.",
+    "categories": [
+      "cs.AI",
+      "q-bio.BM"
+    ],
+    "primary_category": "cs.AI",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.32468",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32468v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32468v1",
+    "title": "OPTARI: An open-source software framework for clinical translation of optoacoustic imaging",
+    "published": "2026-10-23T10:35:06Z",
+    "updated": "2026-10-23T10:35:06Z",
+    "authors": [
+      "Moritz Schillinger",
+      "Maximilian Bader",
+      "Adrian Buehler",
+      "Felix Wachter",
+      "Ferdinand Knieling",
+      "Vasilis Ntziachristos",
+      "Katharina Breininger"
+    ],
+    "abstract": "Combined optoacoustic (OptA) and ultrasound imaging is a promising modality across a wide range of pathologies. Its use in clinical research, however, is limited by a lack of analysis software accessible to users without programming expertise. Existing tools are either script-based engineering frameworks or proprietary vendor applications. We present OPTARI, an open-source graphical software application to facilitate large-scale clinical optoacoustic-ultrasound (OPUS) studies. OPTARI builds on the napari image viewer and the PATATO toolkit for OptA data processing. It supports native vendor and open HDF5 data formats, aligns with the IPASC standard, and is distributed as a standalone executable. Features include region-of-interest annotation, reconstruction, chromophore unmixing, deep-learning-based tissue segmentation, and temporal and spectral analysis modules. OPTARI offers a combination of features for clinical study analysis that none of the compared tools provide. The automated tissue segmentation produced results comparable to expert labeling for muscle tissue, and batch processing reduced analysis time from minutes to under one second per scan. The tool is used in ongoing clinical OPUS studies. OPTARI connects engineering frameworks with medical research and provides an open-source basis for reproducible and standardized analysis in clinical OptA imaging studies.",
+    "categories": [
+      "cs.SE",
+      "cs.CV",
+      "physics.med-ph"
+    ],
+    "primary_category": "cs.SE",
+    "comment": "15 pages, 4 figures, 2 tables. Submitted to the Journal of Biomedical Optics. Code and documentation: https://mo-sc.github.io/OPTARI/",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.32396",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32396v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32396v1",
+    "title": "Interactive image diagnosis using test-time backpropagation from the auxiliary task",
+    "published": "2026-10-23T09:21:18Z",
+    "updated": "2026-10-23T09:21:18Z",
+    "authors": [
+      "Takuro Shimaya"
+    ],
+    "abstract": "Multi-task deep learning has been developed to ensure explainability in computer-aided diagnosis (CAD) systems. These systems simultaneously predict interpretable characteristics of findings in auxiliary tasks to help radiologists assess the reliability of the diagnostic prediction. However, the CAD's opinion would not be referred to when the auxiliary task prediction deviates from the radiologist's expectation. To further leverage CAD's knowledge in the above situation, we proposed a multi-task gradient assist (MGA) method that brings interactivity to multi-task models without additional training. MGA allows radiologists to give feedback to the CAD and ask for additional diagnostic suggestions. Using two datasets of mammography and CT, we show that MGA successfully improves diagnostic accuracy upon feedback on various auxiliary tasks. Compared to an existing method using forward propagation only, MGA performs more robustly and can be combined to further improve accuracy. Our method paves a promising way for integrating artificial intelligence into image diagnosis.",
+    "categories": [
+      "cs.CV",
+      "physics.med-ph"
+    ],
+    "primary_category": "cs.CV",
+    "comment": "8 pages, accepted to SPIE Medical Imaging 2025",
+    "journal_ref": "Proc. SPIE 13407, Medical Imaging 2025: Computer-Aided Diagnosis, 134070Y (4 Apr 2025)",
+    "doi": "10.1117/12.3040160"
+  },
+  {
+    "arxiv_id": "2610.32377",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.32377v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.32377v1",
+    "title": "Sam-Correction: Fully Adaptive Label Noise Reduction for Medical Image Segmentation",
+    "published": "2026-10-23T09:06:32Z",
+    "updated": "2026-10-23T09:06:32Z",
+    "authors": [
+      "Takuro Shimaya",
+      "Masahiro Saiko"
+    ],
+    "abstract": "The quality of the teacher label has a dramatic impact on the outcome of the machine learning process. Medical image segmentation often suffers from a noisy ground truth (GT) mask due to difficulties in consistent annotation. Although a recent study has proposed a promising method to curate the noisy GT mask, this requires additional well-curated GT masks that are not always accessible without the aid of multiple medical experts. As an alternative, we propose SAM-Correction, which utilizes a foundation model to correct the noisy GT mask in a fully adaptive manner instead of manually preparing well-curated masks. In our approach, we progressively mitigate label noise via the segment anything model (SAM), where prompts are given from another segmentation network that we train concurrently. Experiments with various types of label noise derived from actual human annotations demonstrate that SAM-C achieves precise noise reduction and high-performing segmentation models trained thereby. Our method paves the way for robust model training even when clean labels are entirely unavailable.",
+    "categories": [
+      "cs.CV",
+      "physics.med-ph"
+    ],
+    "primary_category": "cs.CV",
+    "comment": "5 pages, accepted to IEEE International Symposium on Biomedical Imaging (ISBI) 2024",
+    "journal_ref": "",
+    "doi": "10.1109/ISBI56570.2024.10635597"
+  },
+  {
+    "arxiv_id": "2610.31816",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.31816v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.31816v1",
+    "title": "TAPESTRY: an interactive resource for exploring tumor-enriched splice junctions in pediatric brain tumors",
+    "published": "2026-10-22T18:53:50Z",
+    "updated": "2026-10-22T18:53:50Z",
+    "authors": [
+      "Patricia J. Sullivan",
+      "Ryan J. Corbett",
+      "Chao Di",
+      "Alex Sickler",
+      "Aylar Babaei",
+      "Meghali Goswami",
+      "Jo Lynne Rokita"
+    ],
+    "abstract": "TAPESTRY (https://tapestry.rokitalab.com) is a database and web application for exploring recurrent tumor-enriched splice junctions (TEJs) in pediatric brain tumors, cancers that carry few protein-coding mutations and therefore few mutation-derived neoantigens. However, TEJs represent a much larger source of neoantigens as potential therapeutic targets in these tumors. TAPESTRY catalogs 45,430 recurrent TEJs across 19 histologies, identified in 1,962 RNA-seq specimens (including 1,272 independent primary tumors) from the Pediatric Brain Tumor Atlas and compared to four normal brain reference cohorts comprising adult, pediatric, developmental and cell-type-resolved tissue. Each junction is classified as tumor-specific or oncofetal; annotated for splice-event type, coding consequence, novelty relative to GENCODE v39 and overlap with Pfam and UniProt protein domains; and scored for recurrence within each histology. Users can search by gene or splicing event and filter results by histology, junction class, and annotation. Users can also generate gene-level expression heatmaps across cohorts, junction-level expression boxplots, and transcript and exon diagrams, and download all tables and figures. A documented REST API supports programmatic access, and all source code is openly available. By making tumor-selective and developmentally reactivated splicing events searchable and interpretable, TAPESTRY supports the prioritization of splice-derived targets for antibody-based, cell-based and vaccine immunotherapies in pediatric brain and central nervous system tumors.",
+    "categories": [
+      "q-bio.GN"
+    ],
+    "primary_category": "q-bio.GN",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.31788",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.31788v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.31788v1",
+    "title": "Kinetic Proofreading Activation Times Beyond the Weibull Limit",
+    "published": "2026-10-22T18:29:29Z",
+    "updated": "2026-10-22T18:29:29Z",
+    "authors": [
+      "Thomas Mourier",
+      "Cameron Hopkinson",
+      "Kenny Wong"
+    ],
+    "abstract": "T cells can detect a few foreign peptide-major histocompatibility complexes (pMHCs) among a far larger number of self pMHCs. Kinetic proofreading explains this discrimination: a receptor that has bound its ligand must complete nKP signaling steps, each at rate kp, before it activates, and dissociation at any step resets its progress. When many receptors are engaged at once, the time to the first activation has been approximated by a Weibull law taken from the short-time limit of this process. The Weibull law is convenient, but it does not contain the dissociation rate koff, even though koff is what proofreading uses to tell ligands apart. Using the exact first- passage law of the underlying continuous-time Markov chain together with stochastic simulations, we show that the relative error of the Weibull law is set by a single dimensionless number Λ, the Weibull-predicted activation time measured in units of nKP + 1 bound-state lifetimes. For Λ < 1 the first receptor to activate does so before its ligand has ever dissociated, and the Weibull law holds. As Λ grows, activation relies increasingly on repeated unbinding and rebinding. The true activation time then exceeds the Weibull prediction by up to 2900-fold on our parameter grid, and the effective Weibull shape falls to one, so activation becomes memoryless instead of timer-like. We derive a closed form that keeps koff by treating the successful pass through the proofreading chain separately from the time lost to failed attempts. It matches exact medians to within 2% in 19 of 25 parameter sets, with a worst case of about 6%, and reproduces the loss of timer-like behavior. Because Λ is computed from the Weibull prediction itself, it shows in advance how far that formula can be trusted; where it cannot, the new expression requires only a one-dimensional root find.",
+    "categories": [
+      "q-bio.QM"
+    ],
+    "primary_category": "q-bio.QM",
+    "comment": "20 pages, 4 figures, submitted to Physical Biology",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.31567",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.31567v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.31567v1",
+    "title": "Geometry-Dependent Properties of Physically Crosslinked PPy-PVA Hydrogels Enable Tunable Iontophoretic Drug Delivery",
+    "published": "2026-10-22T17:10:35Z",
+    "updated": "2026-10-22T17:10:35Z",
+    "authors": [
+      "Heather Jin Hee Kim",
+      "Mohsen Alishahi",
+      "Kyuin Park",
+      "Mikaila K. Roncevich",
+      "Larissa M. Shepherd",
+      "Cara M. Nunez"
+    ],
+    "abstract": "Objective: Iontophoretic drug delivery has primarily relied on current modulation to regulate drug transport. Here, we investigate hydrogel geometry, microstructure, and local electric fields as alternative mechanisms for controlling transdermal delivery. Methods: Bovine serum albumin (BSA) was encapsulated in polypyrrole-polyvinyl alcohol (PPy-PVA) hydrogels. Five geometries, including Hilbert curve-based designs, were fabricated to vary pore architecture and local electric field distributions. We optimized PPy content, drug loading, and current density. Electric fields were evaluated using finite element analysis, and microstructures were characterized by scanning electron microscopy. Drug transport was assessed using Franz diffusion cells with artificial membranes. Results: Hydrogel geometries exhibited distinct microstructures and electric field distributions. Iontophoresis substantially enhanced permeability compared with passive diffusion, while individual geometries produced different cumulative release, flux, and permeability profiles. The average iontophoretic permeability was (3.80 +/- 1.93) x 10^-5, exceeding previously reported values using artificial membranes. Conclusion: Geometry-driven fabrication of drug-loaded hydrogels enables tunable transport characteristics under both iontophoretic and passive conditions. Significance: Geometry-mediated control offers an alternative approach to regulating iontophoretic drug delivery without requiring individual current-density modulation.",
+    "categories": [
+      "cs.RO",
+      "physics.med-ph"
+    ],
+    "primary_category": "cs.RO",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "10.1109/TBME.2026.3744496"
+  },
+  {
+    "arxiv_id": "2610.31454",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.31454v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.31454v1",
+    "title": "Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset",
+    "published": "2026-10-22T15:49:27Z",
+    "updated": "2026-10-22T15:49:27Z",
+    "authors": [
+      "Buse Giledereli",
+      "Basar Temiz",
+      "Amirreza Sattarzadeh Khanehbargh"
+    ],
+    "abstract": "Synthetic single-cell RNA-seq data generation offers a promising route for privacy-aware biomedical data sharing, but donor-linked datasets require careful balancing of biological utility and privacy risk. In this work, we benchmark synthetic generation methods for the CAMDA 2026 ELSA Health Privacy Challenge using the donor-split OneK1K dataset, comparing scGFT, scLDM, and Cell2Sentence across statistical fidelity, downstream biological preservation, and membership inference vulnerability. Because full-transcriptome generation is computationally demanding, we focus generative modeling on highly variable genes and evaluate alternative strategies for reconstructing non-HVG expression. Our results show that non-HVG handling is a central determinant of privacy: directly copying non-HVG values leads to severe leakage, whereas Poisson-based reconstruction substantially reduces membership inference risk. We further find that scGFT and scLDM better preserve biological structure than an independent Poisson baseline, while maintaining near-random privacy profiles under appropriate configurations. These findings highlight the importance of evaluating synthetic single-cell data beyond marginal similarity alone, emphasizing robustness, interpretability, and privacy-conscious design choices throughout preprocessing, generation, and post-processing.",
+    "categories": [
+      "q-bio.GN"
+    ],
+    "primary_category": "q-bio.GN",
+    "comment": "6 pages, presented at CAMDA 2026 ELSA Health Privacy Challenge",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.31340",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.31340v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.31340v1",
+    "title": "Direct Production of Ultra-High Radioisotopic Pure $^{64}$Cu from Natural Zinc Metal via D-D Fusion Narrowband Fast Neutron Source Irradiation",
+    "published": "2026-10-22T14:24:29Z",
+    "updated": "2026-10-22T14:24:29Z",
+    "authors": [
+      "Jeremy M. C. Brown",
+      "Mantas Grigalavicius",
+      "Tibor Gilinger",
+      "Adam Kovacs",
+      "Parvin Varmazyar",
+      "Hsin-Hui Huang",
+      "Saulius Juodkazis",
+      "Mikas Vengris",
+      "Darius Gailevicius",
+      "Karoly Osvay"
+    ],
+    "abstract": "Copper-64 radiopharmaceuticals have seen limited clinical deployment primarily due to the high cost of the isotopically enriched $^{64}$Ni metal required for its production. In this work we demonstrate that ultra-high radioisotopic pure $^{64}$Cu can be directly produced in a no-carrier-added-form from natural zinc metal through irradiation with D-D fusion narrowband fast neutron sources. A highly controlled D-D fusion narrowband fast neutron source at the ELI-ALPS Laser Facility was deployed to irradiate encapsulated 99.995\\% pure natural zinc for 1 hour. Time-resolved gamma-ray spectroscopy of the irradiated sample over 72 hours was deployed to assess copper radioisotope activity. $^{64}$Cu was the only copper radioisotope detected within the irradiated sample, with a minimum and Minimum Detection Activity (MDA) threshold-corrected $^{64}$Cu radioisotopic purity of 99.62\\% and 99.97\\% respectively. Our result illustrates that highly controlled D-D fusion narrowband fast neutron sources have the potential to reduce the raw material production costs for $^{64}$Cu radiopharmaceuticals on the order of 2000 times. Cheaper $^{64}$Cu radiopharmaceuticals will increase their use in clinical practice, and, in-turn, increase outcomes for cancer patients receiving radionuclide therapy.",
+    "categories": [
+      "physics.med-ph"
+    ],
+    "primary_category": "physics.med-ph",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.31240",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.31240v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.31240v1",
+    "title": "AI Enhanced Cerenkov Luminescence Microscopy",
+    "published": "2026-10-22T13:23:12Z",
+    "updated": "2026-10-22T13:23:12Z",
+    "authors": [
+      "Stefano Pizzardi",
+      "Lisa Alborghetti",
+      "Caterina Lomazzi",
+      "Antonello Enrico Spinelli"
+    ],
+    "abstract": "Cerenkov Luminescence Microscopy (CLM) enables the visualization of radiotracer uptake in three-dimensional (3D) tumor spheroids but is limited by low photon statistics and spatial blurring caused by positron transport. Here, we present a Monte Carlo (MC)-guided deep learning framework for CLM image restoration. Using TOPAS/Geant4, we developed a physical model of heterogeneous 3D tumor spheroids to simulate positron transport, Cerenkov photon generation and optical propagation. A dataset of 15,360 paired degraded and idealized ground-truth (GT) images was generated from 80 simulated spheroid geometries and used to train a supervised Content-Aware Image Restoration (CARE) network. Compared with the self-supervised Noise2Void (N2V) denoising method, CARE achieved substantially lower reconstruction errors on synthetic validation data, reducing the mean squared error from 0.0492 to 0.0051. Training stability and noise robustness analyses further demonstrated high reproducibility of the restored images. The trained CARE model was subsequently applied to experimental CLM images acquired from 27 U87 tumor spheroids following 18F-FDG uptake. The restored images exhibited more localized intensity distributions and higher local contrast and signal-to-noise ratios compared with raw and N2V-processed images. These findings, aligned with the 3Rs principles of animal experimentation, demonstrate the potential of physics-based supervised restoration to mitigate both noise and positron-induced spatial broadening in CLM.",
+    "categories": [
+      "physics.med-ph"
+    ],
+    "primary_category": "physics.med-ph",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.30927",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.30927v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.30927v1",
+    "title": "LieGROG: A Lie algebra approach for calibrating GRAPPA operators",
+    "published": "2026-10-22T08:45:35Z",
+    "updated": "2026-10-22T08:45:35Z",
+    "authors": [
+      "Tobias Wech"
+    ],
+    "abstract": "Purpose: In multi-coil acquisitions based on non-Cartesian k-space sampling, image reconstruction using GRAPPA Operator based gridding (GROG) can provide advantages with respect to the non-uniform FFT (NUFFT): It waives both the need for calculating a density compensation function, and for transferring back and forth between Cartesian and non-Cartesian points in iterative algorithms. Non-trivial noise propagation and self-calibration limited to specific trajectories, however, have contributed to GROG being rather sparsely applied so far. Theory and Methods: The group structure of the GRAPPA Operator allows estimating its generator as a single joint fit for all k-space dimensions within the associated Lie algebra. Assuming a linear regime, the generator can be fitted using subsequent pairs of sampling points from nearly any arbitrary non-Cartesian read-out. This approach called LieGROG was evaluated against classical GROG calibration and NUFFT/Toeplitz, using simulations with an analytic ground truth and various 2D and 3D MR-scans employing typical non-Cartesian trajectories. Results: Throughout all applications, LieGROG proved to provide fast, robust and straightforward calibration of the GRAPPA Operator. It clearly outperformed the classical GROG calibration approaches in terms of noise amplification. LieGROG matched the results of the NUFFT/Toeplitz-based reference MR reconstructions closely, while being 6 to 189 times faster and reducing peak VRAM by 20 to 45% in the 3D experiments. Conclusion: LieGROG transforms GROG into a more versatile and stable tool, ultimately aligning non-Cartesian imaging with the standard, FFT-based reconstruction pipelines established for Cartesian scans.",
+    "categories": [
+      "physics.med-ph"
+    ],
+    "primary_category": "physics.med-ph",
+    "comment": "21 pages, 8 figures, 1 supplementary video (ancillary file). Submitted to Magnetic Resonance in Medicine",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.30808",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.30808v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.30808v1",
+    "title": "Global Convergence of Detailed Balanced Mass Action Systems",
+    "published": "2026-10-22T06:33:06Z",
+    "updated": "2026-10-22T06:33:06Z",
+    "authors": [
+      "Haoran Lv",
+      "Chengjin Ni",
+      "Manqin Wang",
+      "Shenli He"
+    ],
+    "abstract": "We give a self-contained proof that, for a finite detailed balanced mass-action system with positive rate constants, each positive stoichiometric compatibility class contains exactly one positive equilibrium and every positive trajectory converges to it, together with a Lean 4 formalization of the complete argument from persistence to convergence. Boundedness and persistence come from the barrier argument of OpenAI (2026) for weakly reversible systems: an arbitrary-tolerance affine approximation yields a finite-minimum barrier whose superlevel sets confine trajectories and give one logarithmic bound for all solutions from a given initial state. The Horn-Jackson dissipation identity identifies the positive equilibria as an exponential family with parameters in the orthogonal complement of the stoichiometric subspace, which gives uniqueness in each class. A bounded-speed descent argument replaces LaSalle's invariance principle; it uses neither uniqueness of solutions nor continuous dependence on initial data, and it places every cluster point in that family. The route given here is direct and elementary, and its main theorem is checked by the Lean kernel against explicit definitions. The proofs, the Lean development, and the manuscript were produced in ClawsGO Science, an agent harness that packages a complete research environment: Claude Opus 5.5 made the research decisions, GPT 6 Astra carried them out, and the Lean kernel checked every formal step.",
+    "categories": [
+      "cs.LO",
+      "math.DS",
+      "q-bio.MN"
+    ],
+    "primary_category": "cs.LO",
+    "comment": "23 pages, 1 figure. Lean 4 formalization: https://github.com/BitMiracle-AI/detailed-balance-gac (tag v1.0). Use of AI tools is described in the Acknowledgements",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.30793",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.30793v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.30793v1",
+    "title": "Advancing oxygen-enhanced MRI acquisition and modelling through dynamic $ΔR_{1}$ and $ΔR_2^*$ sensing",
+    "published": "2026-10-22T06:16:41Z",
+    "updated": "2026-10-22T06:16:41Z",
+    "authors": [
+      "Jorge Campos Pazmiño",
+      "Amiel Beausoleil-Morrison",
+      "Nathalie Panov",
+      "Véronique Fortier",
+      "Ives R. Levesque"
+    ],
+    "abstract": "Purpose: To develop a multiparametric mapping framework for quantifying fat- and water-specific longitudinal and effective transverse relaxation rates, as well as changes in these parameters induced by a gas challenge. Theory and Methods: The proposed framework, termed SR-Fat DESPOT (single-reference fat-water separated driven equilibrium single-pulse observation of $T_1$), combines a two-component signal model with a single-reference variable flip angle (SR-VFA) approach. The signal model explicitly incorporates gas challenge-induced changes in relaxation rates. The single-reference acquisition strategy reduces data acquisition requirements while preserving sensitivity to both baseline parameters and dynamic changes. Sequence parameters were optimized using Cramer-Rao lower bound theory. SR-Fat DESPOT was evaluated using a modified open-surce abdominal numerical phantom and in two in vivo experiments: a single participant test-retest experiment and a pilot study with six participants. Results: In the abdominal numerical phantom, SR-Fat DESPOT was accurate for quantification of baseline relaxation rates with a normalized median absolute error (nMedAE) <3% for signal-to-noise ratio (SNR) >30 when comparing ground truth and estimates. SR-Fat DESPOT was also able to accurately recover median changes in relaxation rates, with differences within 0.001 $s^-1$ when compared to ground truth. In vivo, SR-Fat DESPOT measured changes in relaxation rates for spleen, kidneys, liver, and muscle under 100% O2 breathing, consistent with reports in literature. Changes detected in the spleen and kidneys were statistically significant across participants. Conclusion: SR-Fat DESPOT can quantify changes in relaxation rates induced by a gas challenge while reducing data requirements compared to more conventional approaches used in MR-oximetry literature.",
+    "categories": [
+      "physics.med-ph"
+    ],
+    "primary_category": "physics.med-ph",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.30683",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.30683v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.30683v1",
+    "title": "Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference",
+    "published": "2026-10-22T03:53:06Z",
+    "updated": "2026-10-22T03:53:06Z",
+    "authors": [
+      "Jingsong Bai",
+      "Ayush Pandey"
+    ],
+    "abstract": "Bayesian parameter inference for complex nonlinear dynamical models is often limited by the cost of repeated model simulation. We present a behavioral mapping framework that uses the inferred posterior of a higher-level model to accelerate inference of a lower-level model without requiring state or parameter correspondence between them. Building on approximate simulation relations for hierarchically related models, we define the notion of behavioral compatibility and quantify the behavioral support of detailed model parameters using the reduced model posterior. We learn a level set of behavioral support using a Gaussian process and use it to filter detailed model parameter proposals before expensive simulations during Markov Chain Monte Carlo (MCMC) inference. We derive conditions under which the behavioral support level set retains all detailed model parameters that fit the experimental data within a prescribed tolerance. We apply this method to a hierarchy of gene-expression models fitted to cell-free experimental data. After initial setup costs, our approach speeds up MCMC by 8.02% for the phenomenological model and 15.21% for the mechanistic model.",
+    "categories": [
+      "stat.ME",
+      "eess.SY",
+      "q-bio.QM"
+    ],
+    "primary_category": "stat.ME",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.30668",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.30668v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.30668v1",
+    "title": "RiboBridge: protein-conditioned de novo RNA binder structure design",
+    "published": "2026-10-22T03:32:07Z",
+    "updated": "2026-10-22T03:32:07Z",
+    "authors": [
+      "Zhou Zhang",
+      "Hanqun Cao",
+      "Minghao Sun",
+      "Odin Zhang",
+      "Yang Zhang",
+      "Pheng Ann Heng",
+      "Wujun Li",
+      "Tianfan Fu"
+    ],
+    "abstract": "Designing RNA molecules that bind to target protein structures requires generating both an RNA conformation and its bound complex geometry, without assuming a predefined binding site. Existing approaches generally model these coupled processes within a unified representation, entangling RNA conformation generation with protein-relative placement. In this work, we introduce RiboBridge, a structure-first framework that separates RNA conformational generation from protein--RNA assembly through cross-frame interaction geometry. RiboBridge first proposes multiple candidate RNA-binding interfaces on the protein surface, generates canonical RNA conformations within a pretrained RNA structural latent space (RiboSphere), and then predicts protein--RNA interaction constraints to bridge the independently defined RNA and protein coordinate frames. The resulting interaction geometry is converted into a geometrically consistent protein-relative pose through rigid placement. We evaluate RiboBridge on a temporally split, sequence-filtered, and redundancy-controlled benchmark of 124 protein--RNA complexes. Under post-hoc interface-correspondence evaluation, where native information is used only after generation to select among already generated predicted-pocket candidates, RiboBridge achieves the highest fNAT and DockQ and the lowest interface and ligand RMSDs among compared methods. Component ablations and stage-wise diagnostics further characterize the contributions of RNA conformational generation, interaction prediction, and rigid placement, identifying the main sources of complex-recovery error.",
+    "categories": [
+      "cs.LG",
+      "q-bio.BM"
+    ],
+    "primary_category": "cs.LG",
+    "comment": "",
+    "journal_ref": "",
+    "doi": ""
+  },
+  {
+    "arxiv_id": "2610.30588",
+    "arxiv_version": "v1",
+    "url": "http://arxiv.org/abs/2610.30588v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.30588v1",
+    "title": "Supercoiling Drives DNA-Protein Co-Condensation",
+    "published": "2026-10-22T01:42:38Z",
+    "updated": "2026-10-22T01:42:38Z",
+    "authors": [
+      "Sihan Liu",
+      "Hongbo Zhao",
+      "Andrej Košmrlj"
+    ],
+    "abstract": "The co-condensation of DNA and proteins plays an important role in genome compaction, including heterochromatin formation and chromosome segregation. Meanwhile, transcription and replication continuously generate DNA supercoiling, yet how the resulting torsional stress affects co-condensation remains poorly understood. Here, by coupling DNA elasticity to a protein concentration field, we show that supercoiling acts as a topological catalyst for co-condensation through a mutually reinforcing interplay with protein wetting. Specifically, protein wetting facilitates twist-to-writhe conversion, generating highly writhed DNA conformations that in turn promote capillary collapse into a protein-rich droplet. In the absence of supercoiling, DNA remains kinetically trapped in metastable extended states within our model, whereas sufficiently strong supercoiling removes the nucleation barrier and enables spontaneous co-condensation. These results establish topology as a distinct control parameter for biomolecular condensation and provide a mechanical framework for how active genomic processes can dynamically regulate large-scale genome organization.",
+    "categories": [
+      "physics.bio-ph",
+      "cond-mat.soft",
+      "q-bio.BM"
+    ],
+    "primary_category": "physics.bio-ph",
+    "comment": "12 pages, 6 figures",
+    "journal_ref": "",
+    "doi": ""
+  }
+]

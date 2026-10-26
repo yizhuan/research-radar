@@ -1,0 +1,737 @@
+[
+  {
+    "paperId": "35224c54141ae536745eaff02745a4c36f7f4f0d",
+    "externalIds": {
+      "ArXiv": "2610.32962",
+      "CorpusId": 293940233
+    },
+    "title": "Shared clones make random cell halves look reproducible in pooled screens",
+    "year": 2026,
+    "referenceCount": 39,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": null,
+        "name": "Xuan-Rui Huang"
+      }
+    ]
+  },
+  {
+    "paperId": "af3f60b0b1155c843b39e97b022d0852a6fd8218",
+    "externalIds": {
+      "ArXiv": "2610.32811",
+      "CorpusId": 293940170
+    },
+    "title": "U-NeXt: General-purpose event detection for neonatal EEG",
+    "year": 2026,
+    "referenceCount": 31,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Engineering",
+      "Physics"
+    ],
+    "publicationTypes": [
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2301456439",
+        "name": "Robert Hogan"
+      },
+      {
+        "authorId": "2248764653",
+        "name": "S. Mathieson"
+      },
+      {
+        "authorId": "2301456433",
+        "name": "Aurel Luca"
+      },
+      {
+        "authorId": "1915635278",
+        "name": "S. Ventura"
+      },
+      {
+        "authorId": "2301457144",
+        "name": "Sean Griffin"
+      },
+      {
+        "authorId": "2278547865",
+        "name": "Geraldine B. Boylan"
+      },
+      {
+        "authorId": "2255857055",
+        "name": "John M. O'Toole"
+      }
+    ]
+  },
+  {
+    "paperId": "4aea2b731745702be0b3c3c30acdbe5243779c16",
+    "externalIds": {
+      "ArXiv": "2610.32779",
+      "CorpusId": 293940709
+    },
+    "title": "Computational De Novo Design of Miniprotein Candidate Neutralizers Targeting the IL-23 Cytokine Subunit p19",
+    "year": 2026,
+    "referenceCount": 20,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2517367543",
+        "name": "Raghav Paladugu"
+      },
+      {
+        "authorId": "48646706",
+        "name": "F. Alam"
+      }
+    ]
+  },
+  {
+    "paperId": "4b672c424e10145ebeeb8ae13d97ae6c82cbdfc4",
+    "externalIds": {
+      "ArXiv": "2610.32756",
+      "CorpusId": 293940167
+    },
+    "title": "Video-rate quantitative phase and polarimetric imaging (QP2I) for label-free imaging of contracting muscle cells",
+    "year": 2026,
+    "referenceCount": 35,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Physics",
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2517365369",
+        "name": "Lucas Kreiss Roohian"
+      },
+      {
+        "authorId": "2228455240",
+        "name": "Nachiket Pathak"
+      },
+      {
+        "authorId": "2399420495",
+        "name": "D. Ripp"
+      },
+      {
+        "authorId": "151116605",
+        "name": "Mitchell Harling"
+      },
+      {
+        "authorId": "8652074",
+        "name": "Nils M. Kronenberg"
+      },
+      {
+        "authorId": "2291645646",
+        "name": "Marcel Schubert"
+      },
+      {
+        "authorId": "5525797",
+        "name": "M. Gather"
+      }
+    ]
+  },
+  {
+    "paperId": "4154b7163019a95290d72af2f1ffef2610e76c1c",
+    "externalIds": {
+      "ArXiv": "2610.32620",
+      "CorpusId": 293940411
+    },
+    "title": "What Transfers Across Protein Pockets? Experience Reuse in Molecular Optimization for Agentic Structure-Based Drug Design",
+    "year": 2026,
+    "referenceCount": 17,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": null,
+        "name": "Zai-Fei Yang"
+      },
+      {
+        "authorId": null,
+        "name": "Wei-Yu Chen"
+      },
+      {
+        "authorId": null,
+        "name": "Ya-Qing Wang"
+      },
+      {
+        "authorId": "2313730122",
+        "name": "James T. Kwok"
+      }
+    ]
+  },
+  {
+    "paperId": "7af6a75bf205776b26c97b98fa089d3a5e871d6b",
+    "externalIds": {
+      "ArXiv": "2610.32468",
+      "CorpusId": 293940582
+    },
+    "title": "OPTARI: An open-source software framework for clinical translation of optoacoustic imaging",
+    "year": 2026,
+    "referenceCount": 29,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Physics"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2342230709",
+        "name": "Moritz Schillinger"
+      },
+      {
+        "authorId": "2070322622",
+        "name": "M. Bader"
+      },
+      {
+        "authorId": "2140116824",
+        "name": "A. Buehler"
+      },
+      {
+        "authorId": "2156279510",
+        "name": "Felix Wachter"
+      },
+      {
+        "authorId": "50988291",
+        "name": "F. Knieling"
+      },
+      {
+        "authorId": "2002313",
+        "name": "V. Ntziachristos"
+      },
+      {
+        "authorId": "2276427670",
+        "name": "Katharina Breininger"
+      }
+    ]
+  },
+  {
+    "paperId": "d5e783a4b1bdea807d0c46e5ab77574e13bbc3f2",
+    "externalIds": {
+      "ArXiv": "2610.32396",
+      "DOI": "10.1117/12.3040160",
+      "CorpusId": 277576086
+    },
+    "title": "Interactive image diagnosis using test-time backpropagation from the auxiliary task",
+    "year": 2025,
+    "referenceCount": 21,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Physics"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "48350362",
+        "name": "Takuro Shimaya"
+      }
+    ]
+  },
+  {
+    "paperId": "44c3c960a5b3fc17492ac19c809f203d918f1bd1",
+    "externalIds": {
+      "DBLP": "conf/isbi/ShimayaS24",
+      "ArXiv": "2610.32377",
+      "DOI": "10.1109/ISBI56570.2024.10635597",
+      "CorpusId": 271938946
+    },
+    "title": "Sam-Correction: Fully Adaptive Label Noise Reduction for Medical Image Segmentation",
+    "year": 2024,
+    "referenceCount": 12,
+    "citationCount": 3,
+    "influentialCitationCount": 1,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Physics"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "48350362",
+        "name": "Takuro Shimaya"
+      },
+      {
+        "authorId": "2800112",
+        "name": "M. Saiko"
+      }
+    ]
+  },
+  {
+    "paperId": "f2598ee70e9fd89b6a44ca4defdae03bfc4e92c6",
+    "externalIds": {
+      "ArXiv": "2610.31816",
+      "CorpusId": 293935925
+    },
+    "title": "TAPESTRY: an interactive resource for exploring tumor-enriched splice junctions in pediatric brain tumors",
+    "year": 2026,
+    "referenceCount": 19,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2382390564",
+        "name": "Patricia J. Sullivan"
+      },
+      {
+        "authorId": "2061090962",
+        "name": "Ryan J. Corbett"
+      },
+      {
+        "authorId": "2348100293",
+        "name": "Chao Di"
+      },
+      {
+        "authorId": "2292992265",
+        "name": "A. Sickler"
+      },
+      {
+        "authorId": "2398254901",
+        "name": "Aylar Babaei"
+      },
+      {
+        "authorId": "2503284852",
+        "name": "Meghali Goswami"
+      },
+      {
+        "authorId": "90546278",
+        "name": "J. L. Rokita"
+      }
+    ]
+  },
+  {
+    "paperId": "de818e4406683fad86d4f2d84c32342b79c002a0",
+    "externalIds": {
+      "ArXiv": "2610.31788",
+      "CorpusId": 293936205
+    },
+    "title": "Kinetic Proofreading Activation Times Beyond the Weibull Limit",
+    "year": 2026,
+    "referenceCount": 33,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2451565114",
+        "name": "Thomas Mourier"
+      },
+      {
+        "authorId": "2451566713",
+        "name": "Cameron Hopkinson"
+      },
+      {
+        "authorId": "2450231667",
+        "name": "Kenny Wong"
+      }
+    ]
+  },
+  {
+    "paperId": "501f40bcf4c3e641fd7b3d129b581f639797bd1a",
+    "externalIds": {
+      "ArXiv": "2610.31567",
+      "DOI": "10.1109/TBME.2026.3744496",
+      "CorpusId": 293808581,
+      "PubMed": "42895875"
+    },
+    "title": "Geometry-Dependent Properties of Physically Crosslinked PPy-PVA Hydrogels Enable Tunable Iontophoretic Drug Delivery.",
+    "year": 2026,
+    "referenceCount": 71,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Medicine",
+      "Computer Science",
+      "Physics"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2394570500",
+        "name": "Heather Jin Hee Kim"
+      },
+      {
+        "authorId": "1789749510",
+        "name": "Mohsen Alishahi"
+      },
+      {
+        "authorId": "1705197165",
+        "name": "Kyuin Park"
+      },
+      {
+        "authorId": "2447542842",
+        "name": "Mikaila K. Roncevich"
+      },
+      {
+        "authorId": "10798372",
+        "name": "Larissa M. Shepherd"
+      },
+      {
+        "authorId": "41094051",
+        "name": "Cara M. Nunez"
+      }
+    ]
+  },
+  {
+    "paperId": "bd01f77c94b9d880c4838f3884677cb51b9e744c",
+    "externalIds": {
+      "ArXiv": "2610.31454",
+      "CorpusId": 293893954
+    },
+    "title": "Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the OneK1K Dataset",
+    "year": 2026,
+    "referenceCount": 11,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2124422817",
+        "name": "Buse Giledereli"
+      },
+      {
+        "authorId": "2516886833",
+        "name": "Basar Temiz"
+      },
+      {
+        "authorId": "2516887066",
+        "name": "Amirreza Sattarzadeh Khanehbargh"
+      }
+    ]
+  },
+  {
+    "paperId": "9273fa2163d17fa4e9d964fe247c9787b92c6aeb",
+    "externalIds": {
+      "ArXiv": "2610.31340",
+      "CorpusId": 293894490
+    },
+    "title": "Direct Production of Ultra-High Radioisotopic Pure $^{64}$Cu from Natural Zinc Metal via D-D Fusion Narrowband Fast Neutron Source Irradiation",
+    "year": 2026,
+    "referenceCount": 14,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Physics"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2110862025",
+        "name": "Jeremy M. C. Brown"
+      },
+      {
+        "authorId": "4623778",
+        "name": "M. Grigalavičius"
+      },
+      {
+        "authorId": "2220946198",
+        "name": "T. Gilinger"
+      },
+      {
+        "authorId": "2481054508",
+        "name": "Á. Kovács"
+      },
+      {
+        "authorId": "103787938",
+        "name": "P. Varmazyar"
+      },
+      {
+        "authorId": "2243249227",
+        "name": "Hsin-Hui Huang"
+      },
+      {
+        "authorId": "2238102538",
+        "name": "Saulius Juodkazis"
+      },
+      {
+        "authorId": "1976993",
+        "name": "M. Vengris"
+      },
+      {
+        "authorId": "6091040",
+        "name": "D. Gailevičius"
+      },
+      {
+        "authorId": "2353829829",
+        "name": "Károly Osvay"
+      }
+    ]
+  },
+  {
+    "paperId": "3d6bc69a16556dc8ae5dd3580d4d56c94991716d",
+    "externalIds": {
+      "ArXiv": "2610.31240",
+      "CorpusId": 293893592
+    },
+    "title": "AI Enhanced Cerenkov Luminescence Microscopy",
+    "year": 2026,
+    "referenceCount": 51,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Physics"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2318876185",
+        "name": "S. Pizzardi"
+      },
+      {
+        "authorId": "2174673396",
+        "name": "L. Alborghetti"
+      },
+      {
+        "authorId": "2350543118",
+        "name": "Caterina Lomazzi"
+      },
+      {
+        "authorId": "2318776970",
+        "name": "A. Spinelli"
+      }
+    ]
+  },
+  {
+    "paperId": "b4491b24c58b386ec1b6ede8223d5610a06c4c17",
+    "externalIds": {
+      "ArXiv": "2610.30927",
+      "CorpusId": 293894482
+    },
+    "title": "LieGROG: A Lie algebra approach for calibrating GRAPPA operators",
+    "year": 2026,
+    "referenceCount": 41,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Physics"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "3361940",
+        "name": "T. Wech"
+      }
+    ]
+  },
+  {
+    "paperId": "94c960d5fbb10c6ad5f00e29a037f53a4c6b1929",
+    "externalIds": {
+      "ArXiv": "2610.30808",
+      "CorpusId": 293893288
+    },
+    "title": "Global Convergence of Detailed Balanced Mass Action Systems",
+    "year": 2026,
+    "referenceCount": 16,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics",
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2516882495",
+        "name": "Hao-Ran Lv"
+      },
+      {
+        "authorId": "2516884223",
+        "name": "Cheng-Jin Ni"
+      },
+      {
+        "authorId": "2516987532",
+        "name": "Man-Qin Wang"
+      },
+      {
+        "authorId": "2516986253",
+        "name": "Shen-Li He"
+      }
+    ]
+  },
+  {
+    "paperId": "2ea1523bd55beb6dac5df6c2a4c42cfb93ea2b33",
+    "externalIds": {
+      "ArXiv": "2610.30793",
+      "CorpusId": 293894426
+    },
+    "title": "Advancing oxygen-enhanced MRI acquisition and modelling through dynamic ${\\Delta}R_{1}$ and ${\\Delta}R_2^*$ sensing",
+    "year": 2026,
+    "referenceCount": 58,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Physics"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2229952708",
+        "name": "Jorge Campos Pazmiño"
+      },
+      {
+        "authorId": "2210907077",
+        "name": "Amiel Beausoleil-Morrison"
+      },
+      {
+        "authorId": "2135816135",
+        "name": "N. Panov"
+      },
+      {
+        "authorId": "66288846",
+        "name": "Véronique Fortier"
+      },
+      {
+        "authorId": "2318108086",
+        "name": "Ives R. Levesque"
+      }
+    ]
+  },
+  {
+    "paperId": "463faa9cddb9348b894efca6437083ed76f8cc32",
+    "externalIds": {
+      "ArXiv": "2610.30683",
+      "CorpusId": 293894378
+    },
+    "title": "Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference",
+    "year": 2026,
+    "referenceCount": 20,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Mathematics",
+      "Computer Science",
+      "Engineering",
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2513177975",
+        "name": "Jin-Song Bai"
+      },
+      {
+        "authorId": "39685357",
+        "name": "Ayush Pandey"
+      }
+    ]
+  },
+  {
+    "paperId": "336a197ac5e43c0cbbb7ced75f55cace688b316f",
+    "externalIds": {
+      "ArXiv": "2610.30668",
+      "CorpusId": 293893354
+    },
+    "title": "RiboBridge: protein-conditioned de novo RNA binder structure design",
+    "year": 2026,
+    "referenceCount": 28,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2383460779",
+        "name": "Zhou Zhang"
+      },
+      {
+        "authorId": "2114854877",
+        "name": "Hanqun Cao"
+      },
+      {
+        "authorId": "2383459435",
+        "name": "Ming-Hao Sun"
+      },
+      {
+        "authorId": "2220403357",
+        "name": "Odin Zhang"
+      },
+      {
+        "authorId": "2288655426",
+        "name": "Yang Zhang"
+      },
+      {
+        "authorId": "2317312860",
+        "name": "Pheng-Ann Heng"
+      },
+      {
+        "authorId": "2383413947",
+        "name": "Wu-Jun Li"
+      },
+      {
+        "authorId": "2359147125",
+        "name": "Tian-Fan Fu"
+      }
+    ]
+  },
+  {
+    "paperId": "01d48f69185e96957bc417fb8f9f76e3890f92b6",
+    "externalIds": {
+      "ArXiv": "2610.30588",
+      "CorpusId": 293893675
+    },
+    "title": "Supercoiling Drives DNA-Protein Co-Condensation",
+    "year": 2026,
+    "referenceCount": 53,
+    "citationCount": 0,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Physics",
+      "Biology"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2327319156",
+        "name": "Si-Han Liu"
+      },
+      {
+        "authorId": "2210692396",
+        "name": "Hong-Bo Zhao"
+      },
+      {
+        "authorId": "2240182706",
+        "name": "A. Košmrlj"
+      }
+    ]
+  }
+]

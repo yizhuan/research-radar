@@ -5,9 +5,10 @@
   "date": "2026-10-23",
   "start_date": "2026-10-23",
   "end_date": "2026-10-23",
-  "snapshot_utc": "2026-10-25T17:20:57Z",
+  "snapshot_utc": "2026-10-26T01:17:48Z",
   "announcement_date": "2026-10-23",
   "used_prior_announcement_batch": true,
+  "candidate_count": 23,
   "title": "arXiv Biology and Biomedicine — Daily Report, 2026-10-23",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-10-23.md",
   "entry_count": 15,
@@ -21,7 +22,7 @@
       "title": "Headline",
       "rank": null,
       "url": "",
-      "content": "The latest relevant announcement batch is Friday 23 October 2026: 18 unique candidates were found across the configured biology/biomedicine listings, and 15 are included here. RNA/protein design and sequence/structure evaluation recur alongside molecular-model studies and translational imaging or radiochemistry methods. The agenda is to distinguish computational predictions from biochemical, tissue, phantom and small-cohort evidence. arXiv has no official trending chart; this relevance-ranked selection is inferred from one announcement batch and incomplete arXiv biomedical coverage, not a popularity measure. Many experimental and clinical preprints appear on bioRxiv or medRxiv instead.",
+      "content": "The latest relevant announcement batch is Friday 23 October 2026: 23 unique candidates were found across the configured biology/biomedicine listings (18 new or cross-list submissions and 5 replacement submissions), and 15 are included here. RNA/protein design and sequence/structure evaluation recur alongside molecular-model studies and translational imaging or radiochemistry methods. The agenda is to distinguish computational predictions from biochemical, tissue, phantom and small-cohort evidence. arXiv has no official trending chart; this relevance-ranked selection is inferred from one announcement batch and incomplete arXiv biomedical coverage, not a popularity measure. Many experimental and clinical preprints appear on bioRxiv or medRxiv instead.",
       "refs": []
     },
     {

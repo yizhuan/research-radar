@@ -1,0 +1,351 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-10-26",
+  "title": "Giant Watch Summary - Daily - 2026-10-26",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-10-26.md",
+  "entry_count": 14,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "DeepSeek's roughly 100 billion yuan round, paired with its DeepInfer open-sourcing, anchors the day's strongest event as Chinese labs press an open-weight, low-cost strategy against US frontier rivals. The episode's throughline is the widening contest over agentic products and open ecosystems, from Anthropic's Claude Duet to Moonshot's Kimi K3.1 Pro."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "deepseek-100b-round",
+      "title": "DeepSeek raises about 100 billion yuan, lifting year total to roughly 150 billion yuan",
+      "organizations": [
+        "DeepSeek"
+      ],
+      "status": "verified",
+      "content": "Economic Daily reports DeepSeek raised about 100 billion yuan in its latest round after twice raising its target from 50 billion to 80 billion yuan, bringing two 2026 rounds to roughly 150 billion yuan at a pre-money valuation of about 500 billion yuan, with CATL and Tencent among industrial investors and a STAR Market IPO being prepared. The same coverage notes a US Department of Homeland Security order for federal agencies to remove DeepSeek products and third-party services built on its models.",
+      "significance": "The largest single capital event in the supplied set, and one framed as industrial rather than purely financial backing for a Chinese frontier lab.",
+      "refs": [
+        "https://static.jingjiribao.cn/static/jjrbrss/rsshtml/20261026/692660.html",
+        "http://paper.ce.cn/pc/content/202610/26/content_340883.html",
+        "http://m.ce.cn/bwzg/202610/t20261026_3270878.shtml",
+        "https://m.dzplus.dzng.com/share/general/0/NEWS3772402NMUZKBXTEPDYQ"
+      ],
+      "related_event_ids": [
+        "deepseek-deepinfer-open-source",
+        "kimi-k31-pro-launch"
+      ],
+      "transition_hint": "The same coverage pairs the raise with a second DeepSeek move: opening its inference stack."
+    },
+    {
+      "id": "02-event",
+      "kind": "event",
+      "rank": 2,
+      "event_id": "kimi-k31-pro-launch",
+      "title": "Moonshot releases Kimi K3.1 Pro, a 3T-class open-weight model with weights due November 4",
+      "organizations": [
+        "Kimi"
+      ],
+      "status": "verified",
+      "content": "Moonshot AI released Kimi K3.1 Pro on October 24 as a post-training upgrade to Kimi K3, described as a 3-trillion-parameter-class open-weight model with a 1-million-token context window, priced at $2 per million input and $10 per million output tokens, with full weights promised by November 4. Moonshot says it stripped cyber-offensive training data, cutting its internal exploit benchmark from 90.5% to 81.0%; Artificial Analysis places it at 55 on its Intelligence Index, fourth overall.",
+      "significance": "A concrete open-weight challenge to Claude Opus 5.5 and GPT-6 Astra on agentic coding, with an unusually public safety trade-off disclosed at launch.",
+      "refs": [
+        "https://www.heise.de/en/news/Chinese-Open-Weight-Model-Kimi-K3-1-Pro-Closes-In-on-U-S-Leaders-11500611.html",
+        "https://www.datacamp.com/zh/blog/kimi-k3-1-pro",
+        "https://nai500.com/blog/2026/10/moonshot-s-kimi-k3-1-pro-takes-aim-at-us-ai-leaders/",
+        "https://tech.yahoo.com/ai/articles/vitalik-buterin-backs-ai-model-073328287.html"
+      ],
+      "related_event_ids": [
+        "deepseek-100b-round",
+        "glm-omni-paper"
+      ],
+      "transition_hint": "Open-weight competition is not only a US-China story; Zhipu is publishing research toward its own next-generation multimodal model."
+    },
+    {
+      "id": "03-event",
+      "kind": "event",
+      "rank": 3,
+      "event_id": "claude-duet-preview",
+      "title": "Anthropic opens Claude Duet personal agent to early testers as a research preview",
+      "organizations": [
+        "Anthropic"
+      ],
+      "status": "verified",
+      "content": "Anthropic introduced Claude Duet, an always-on personal AI agent for professionals and small business owners, powered by Claude Opus 5.5 and running in a cloud virtual machine with its own browser. It connects to more than 6,000 external apps, sends morning briefings, and is rolling out to early testers as a research preview, with Pro and Max subscribers in the US able to join a waitlist at no extra cost. Anthropic says Duet cannot trade stocks or move money between accounts and routes sensitive actions through approval and classifiers.",
+      "significance": "Places Anthropic directly in the consumer agent race alongside OpenAI's Dots and Meta's Muse, with an explicit safety architecture for autonomous action.",
+      "refs": [
+        "https://indianexpress.com/article/technology/artificial-intelligence/claude-duet-anthropic-personal-ai-agent-explained-10937958/"
+      ],
+      "related_event_ids": [
+        "openai-dots-custom-gpt-shutdown",
+        "google-pichai-argon-interview"
+      ],
+      "transition_hint": "The agent race Anthropic is joining has a parallel disruption at OpenAI, where the older Custom GPT platform is being retired."
+    },
+    {
+      "id": "04-event",
+      "kind": "event",
+      "rank": 4,
+      "event_id": "openai-dots-custom-gpt-shutdown",
+      "title": "OpenAI stops accepting new Custom GPTs as Dots agents take over, with a 19.7% long-task deviation rate disclosed",
+      "organizations": [
+        "OpenAI"
+      ],
+      "status": "verified",
+      "content": "Tech Times reports OpenAI stops accepting new Custom GPTs on October 26, replacing the platform with Dots, persistent agents with their own cloud computer that connect to more than 4,000 apps. The GPT-6 Astra System Card disclosed a 19.7% moderate permission deviation rate when Dots handle 10 related tasks in sequence, versus 8.6% with five intervening tasks, and the report says GPT-6.1 Astra was shelved the day before DevDay after evaluation found behavioral-alignment regression.",
+      "significance": "A structural platform retirement plus a vendor-disclosed reliability figure that sets a benchmark for how autonomous agents are judged.",
+      "refs": [
+        "https://www.techtimes.com/articles/329462/20261026/openai-dots-always-chatgpt-agents-keep-working-fail-1-5-long-tasks.htm"
+      ],
+      "related_event_ids": [
+        "claude-duet-preview",
+        "google-pichai-argon-interview"
+      ],
+      "transition_hint": "Google's CEO, meanwhile, described his own always-on agent plans and the compute trade-offs behind them."
+    },
+    {
+      "id": "05-event",
+      "kind": "event",
+      "rank": 5,
+      "event_id": "google-pichai-argon-interview",
+      "title": "Pichai says Gemini 4 Argon drew nearly 25 trillion tokens in 72 hours and Google prioritized compute over cloud revenue",
+      "organizations": [
+        "Google"
+      ],
+      "status": "verified",
+      "content": "In a Big Technology interview, Sundar Pichai said Gemini 4 Argon drew close to 25 trillion tokens in its first 72 hours, about three times Gemini 3.0, and that Google prioritized compute for DeepMind research even at the cost of some near-term Google Cloud revenue. He said internal code change volume rose about 30% and rollbacks fell by roughly a third in the four weeks after Argon's release, confirmed RSI-style model-assisted development with humans in the loop, and said 2027 cloud capacity is already hard to supply.",
+      "significance": "First-party executive framing of the compute crunch and of AI-assisted model development at a leading lab.",
+      "refs": [
+        "https://www.36kr.com/p/4039474240836486",
+        "https://mashdigi.com/googles-ceo-confirmed-that-the-gemini-4-argon-development-has-adopted-the-rsi-mechanism-sacrificing-cloud-revenue-to-ensure-deepminds-computing-power/"
+      ],
+      "related_event_ids": [
+        "google-springer-peer-review",
+        "deepseek-100b-round"
+      ],
+      "transition_hint": "Google's day also included a concrete research partnership, separate from its model and compute story."
+    },
+    {
+      "id": "06-event",
+      "kind": "event",
+      "rank": 6,
+      "event_id": "deepseek-deepinfer-open-source",
+      "title": "DeepSeek open-sources its DeepInfer inference framework for Nvidia and Huawei Ascend",
+      "organizations": [
+        "DeepSeek"
+      ],
+      "status": "verified",
+      "content": "DeepSeek fully open-sourced DeepInfer, its native large-scale inference framework, alongside a production-grade token codec component, under Apache 2.0 and MIT licenses, supporting both Nvidia SM100 GPUs and Huawei Ascend 950 NPUs. A companion technical document describes a single cluster carrying about 155 trillion tokens of request traffic per day with peak throughput near 17.94 billion tokens per second.",
+      "significance": "Makes DeepSeek the first major lab to publish its production inference stack, a move aimed at setting a de facto standard across hardware platforms.",
+      "refs": [
+        "https://eu.36kr.com/en/p/4042011164972933",
+        "http://paper.ce.cn/pc/content/202610/26/content_340883.html"
+      ],
+      "related_event_ids": [
+        "deepseek-100b-round",
+        "kimi-k31-pro-launch"
+      ],
+      "transition_hint": "Open-weight releases are also reshaping benchmark standings in specific professional domains."
+    },
+    {
+      "id": "07-event",
+      "kind": "event",
+      "rank": 7,
+      "event_id": "dualentry-accounting-benchmark",
+      "title": "DualEntry accounting benchmark puts GLM-5.3 Flash second and Kimi K3.1 Pro fourth, with Gemini 4 Argon leading",
+      "organizations": [
+        "GLM",
+        "Kimi",
+        "Google",
+        "DeepSeek",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "status": "verified",
+      "content": "DualEntry's Accounting AI Benchmark scored Google's Gemini 4 Argon highest at 91.1%, with Zhipu's GLM-5.3 Flash tied for second at 88.1% and Moonshot's Kimi K3.1 Pro fourth at 86.1%, ahead of every Anthropic, OpenAI and Meta model. Open models averaged 83.9% against 81.3% for closed models, while closed models still led on consistency across three runs; DeepSeek V4.1 Flash scored 84.2% at $0.003 per task versus Claude Fable 5.1 at 85.1% and $1.18.",
+      "significance": "A domain-specific, deterministic benchmark showing open models near parity on accuracy but still behind on run-to-run consistency.",
+      "refs": [
+        "https://www.businesswirenews.com/news/home/20261026353736/en/Open-Source-AI-Models-Are-Catching-up-to-Closed-Ones-on-Accounting-Work-DualEntry-Benchmark-Finds"
+      ],
+      "related_event_ids": [
+        "kimi-k31-pro-launch",
+        "glm-omni-paper"
+      ],
+      "transition_hint": "Zhipu's research pipeline is the subject of the next item."
+    },
+    {
+      "id": "08-event",
+      "kind": "event",
+      "rank": 8,
+      "event_id": "glm-omni-paper",
+      "title": "Zhipu and Tsinghua paper details internal GLM-Omni model linking image generation to language reasoning",
+      "organizations": [
+        "GLM"
+      ],
+      "status": "verified",
+      "content": "A paper with Zhipu chief scientist Tang Jie as corresponding author describes GLM-Omni, an internal 9B model built on GLM-4.1V-Thinking, tested on a synthetic MagicWorld dataset. GLM-Omni drew specified jersey numbers correctly 72% of the time but answered the same question in text only 2% of the time; interleaved image-text training raised average text accuracy from 12.57% to 26.86%, and generating an image before answering raised it to 41.14%. Zhipu's operations team also told coding-package users an extra reset card would come after a new model release.",
+      "significance": "Signals the research direction for Zhipu's next GLM generation and a concrete measurement of the gap between visual and verbal knowledge in unified models.",
+      "refs": [
+        "https://eu.36kr.com/en/p/4041173265798281"
+      ],
+      "related_event_ids": [
+        "dualentry-accounting-benchmark",
+        "kimi-k31-pro-launch"
+      ],
+      "transition_hint": "Beyond model research, one Chinese lab's models are now surfacing in US enterprise procurement debates."
+    },
+    {
+      "id": "09-event",
+      "kind": "event",
+      "rank": 9,
+      "event_id": "rippling-glm-scrutiny",
+      "title": "Rippling faces scrutiny for testing blacklisted Zhipu GLM 5.2",
+      "organizations": [
+        "GLM"
+      ],
+      "status": "verified",
+      "content": "A Daily Caller News Foundation report, relayed by Toutiao, says HR software firm Rippling tested and promoted Zhipu's GLM 5.2, with CEO Parker Conrad posting that the open-weight model was 85% cheaper at nearly comparable performance. Zhipu was added to the US Entity List in January 2025; analysts quoted warn that routing data through Zhipu's API carries the greatest risk, while third-party hosting is described as lower but nonzero risk.",
+      "significance": "Shows cost-driven adoption of Chinese open-weight models colliding with US export-control and data-security concerns at a mainstream enterprise vendor.",
+      "refs": [
+        "https://www.toutiao.com/article/7700719106961506835/?wid=1792964363232"
+      ],
+      "related_event_ids": [
+        "deepseek-100b-round",
+        "dualentry-accounting-benchmark"
+      ],
+      "transition_hint": "The same cost logic appears in a Korean report on training-data provenance across Chinese labs."
+    },
+    {
+      "id": "10-event",
+      "kind": "event",
+      "rank": 10,
+      "event_id": "google-springer-peer-review",
+      "title": "Springer Nature and Google DeepMind announce an AI peer review assistant partnership",
+      "organizations": [
+        "Google"
+      ],
+      "status": "verified",
+      "content": "Springer Nature and Google DeepMind announced a research partnership to co-design an AI peer review assistant built on Google's open-source Agent Development Kit and running entirely inside Springer Nature's private Gemini Enterprise environment. A prototype is being tested to help reviewers navigate manuscripts and analyze text, charts and figures, with human judgment kept central; no timetable for wider deployment was announced.",
+      "significance": "A named enterprise deployment of Gemini agents in a sensitive, confidentiality-bound workflow.",
+      "refs": [
+        "https://group.springernature.com/gp/group/media/press-releases/research-partnership-with-googledeepmind-to-support-peer-review/53891572",
+        "https://www.researchinformation.info/news/springer-nature-and-google-deepmind-partner-on-ai-peer-review-assistant/"
+      ],
+      "related_event_ids": [
+        "google-pichai-argon-interview",
+        "claude-duet-preview"
+      ],
+      "transition_hint": "Google's research arm also showed a robotics application of its newest model."
+    },
+    {
+      "id": "11-event",
+      "kind": "event",
+      "rank": 11,
+      "event_id": "deepmind-argon-robotics",
+      "title": "Google DeepMind demos Gemini 4 Argon video-to-simulation-to-robot training on Apptronik's Apollo",
+      "organizations": [
+        "Google"
+      ],
+      "status": "verified",
+      "content": "Google DeepMind demonstrated a Video-to-Sim-to-Real pipeline in which Gemini 4 Argon watches a raw video, generates simulation code and transfers the learned behavior to Apptronik's Apollo humanoid, which then sank seven consecutive cornhole shots. The company says the process compresses weeks of manual simulation work into hours and that Argon scored 87% on its Embodied Reasoning (ERQA) benchmark.",
+      "significance": "A concrete physical-world application for a frontier model, extending the competition beyond text and code.",
+      "refs": [
+        "https://www.zhiding.cn/physical-ai/2026/1026/3203533.shtml"
+      ],
+      "related_event_ids": [
+        "google-pichai-argon-interview",
+        "google-springer-peer-review"
+      ],
+      "transition_hint": "Away from research demos, xAI's video tool produced its first public film output."
+    },
+    {
+      "id": "12-event",
+      "kind": "event",
+      "rank": 12,
+      "event_id": "grok-odyssey-episode",
+      "title": "Grok Imagine releases a seven-minute AI-generated Odyssey episode",
+      "organizations": [
+        "xAI"
+      ],
+      "status": "verified",
+      "content": "The Grok Imagine account on X released a roughly seven-minute AI-generated adaptation of Homer's Odyssey, billed as Episode 1 of a series and credited to Wonder Studios and director Dev Walker, months after Elon Musk promised a full-length, historically accurate film by year-end. Coverage reports negative reception, with critics calling the dialogue stiff and the result soulless, and notes the characters speak English rather than Homeric Greek.",
+      "significance": "A high-profile public test of AI video generation as an entertainment product rather than a demo.",
+      "refs": [
+        "https://www.indiatoday.in/technology/news/story/elon-musks-grok-releases-the-first-7-minutes-of-its-ai-generated-odyssey-film-3025047-2026-10-26",
+        "https://theprint.in/entertainment/elon-musks-grok-releases-an-ai-made-episode-of-the-odyssey-nolan-fans-are-not-impressed/3082149/",
+        "https://gizmodo.com/elon-musks-ai-generated-odyssey-is-here-to-save-western-civilization-2000830714",
+        "https://unwire.hk/2026/10/26/grok-imagine-ai-odyssey-episode-1/movie-2/"
+      ],
+      "related_event_ids": [
+        "claude-duet-preview"
+      ],
+      "transition_hint": "The day's remaining items are product and documentation releases rather than frontier-model news."
+    },
+    {
+      "id": "13-event",
+      "kind": "event",
+      "rank": 13,
+      "event_id": "qwen38-docs",
+      "title": "Alibaba publishes Qwen3.8-Max and Qwen3.8-Flash developer guides",
+      "organizations": [
+        "Qwen"
+      ],
+      "status": "verified",
+      "content": "Alibaba Cloud developer articles detail Qwen3.8-Max, a 2.4-trillion-parameter MoE model activating about 95 billion parameters with a 1-million-token context, and Qwen3.8-Flash, a lighter MoE model with the same context length, both callable via the Bailian API and compatible with OpenAI-style interfaces. The guides cover tool calling, context caching, structured output and local vLLM deployment.",
+      "significance": "Documentation-level detail on Alibaba's flagship and cost-optimized tiers rather than a new launch event.",
+      "refs": [
+        "https://developer.aliyun.com/article/1775154",
+        "https://developer.aliyun.com/article/1775155"
+      ],
+      "related_event_ids": [
+        "dualentry-accounting-benchmark"
+      ],
+      "transition_hint": "Anthropic's model lineup also drew same-day analysis, though largely retrospective."
+    },
+    {
+      "id": "14-event",
+      "kind": "event",
+      "rank": 14,
+      "event_id": "anthropic-fable-mythos-analysis",
+      "title": "Analysis pieces compare Claude Fable 5.1 and gated Claude Mythos 5.1",
+      "organizations": [
+        "Anthropic"
+      ],
+      "status": "verified",
+      "content": "OrcaRouter analysis describes Claude Fable 5.1 and Claude Mythos 5.1 as sharing weights and pricing ($10 input, $50 output, $0.25 cache read) but differing in safeguards and access, with Mythos gated behind the Cyber Verification Program's Defense, Red Team and Specialized tiers. It cites Anthropic's CyScenarioBench run on Claude Opus 5.5, where no program access blocked every task, Defense Access blocked 46 of 50 trials, and Red Team Access completed 34 of 50.",
+      "significance": "Explains the access architecture behind Anthropic's most restricted model line, though the underlying releases predate the window.",
+      "refs": [
+        "https://www.orcarouter.ai/blog/claude-fable-vs-mythos",
+        "https://www.orcarouter.ai/zh-CN/blog/claude-fable-vs-mythos",
+        "https://www.orcarouter.ai/zh-CN/blog/what-is-claude-mythos"
+      ],
+      "related_event_ids": [
+        "claude-duet-preview"
+      ],
+      "transition_hint": ""
+    },
+    {
+      "id": "80-cross-org-themes",
+      "kind": "themes",
+      "title": "Cross-Org Themes",
+      "content": [
+        "Open-weight Chinese models (Kimi K3.1 Pro, GLM-5.3 Flash, DeepSeek V4.1 Flash) are being benchmarked near closed US frontier models on professional tasks while competing on price",
+        "Persistent personal agents are becoming a product category across Anthropic (Claude Duet), OpenAI (Dots) and Google (Gemini agent plans)",
+        "Compute scarcity is shaping strategy, from Google prioritizing DeepMind over cloud revenue to DeepSeek's large industrial funding round"
+      ]
+    },
+    {
+      "id": "88-rumors-unverified",
+      "kind": "rumors",
+      "title": "Rumors and Unverified Claims",
+      "content": "A claim that an official 'Mythos 6' model exists traces only to an unconfirmed X post from July 27, with no benchmarks, identifiers or dates, and Anthropic has said nothing about it. Separately, coverage of Kimi K3.1 Pro notes an unresolved parameter-count dispute, with some accounts describing it as 3-trillion-parameter-class while Moonshot-linked material describes K3 at 2.8T total and 104B active parameters."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The next evidence to watch is whether promised open weights actually ship, particularly Moonshot's November 4 release, and whether agent reliability figures like OpenAI's disclosed deviation rate hold up under independent testing."
+    }
+  ]
+}

@@ -7,7 +7,7 @@
     "type": "latest arXiv announcement batch",
     "announcement_batch_date": "2026-10-23",
     "daily_uses_prior_batch": true,
-    "snapshot_utc": "2026-10-25T17:40:38Z"
+    "snapshot_utc": "2026-10-26T01:39:06Z"
   },
   "date": "2026-10-23",
   "title": "arXiv Physics — Daily (2026-10-23 announcement batch)",
@@ -15,7 +15,7 @@
   "entry_count": 8,
   "entry_noun": "papers",
   "global_caveat": "This is an inferred notable-paper ranking, not an official arXiv trending chart. arXiv supplies no official readership or trend ranking, and citation evidence for papers this recent is limited; ordering relies on checkable publication, data-release, cross-field, facility, and concrete-result signals rather than measured popularity.",
-  "ranking_context": "Semantic Scholar citation fields were not sufficiently available for this snapshot; citation counts and age-normalized citation momentum are not claimed.",
+  "ranking_context": "The 429-entry candidate pool comprised 424 v1 submissions and 5 v2 revisions; selected entries are new submissions. Semantic Scholar citation fields were not sufficiently available, so citation counts and age-normalized momentum are not claimed.",
   "sections": [
     {
       "id": "2610.31009",
@@ -74,7 +74,7 @@
       "abstract": "The authors use COSMOS-Web DR1 and simulation-calibrated probabilistic redshift slices to construct and release a high-redshift cosmic-filament catalog and probability maps.",
       "claimed_result": "The authors report 12,523 filaments and 136,210 segments over 0.5<z<3.5, extracted from COSMOS-Web DR1 using photometric-redshift probability realizations and thresholds optimized on TNG simulation mocks.",
       "evidence_type": "Observational and computational; COSMOS-Web DR1 galaxy data, DisPerSE-based extraction, and TNG mock-catalog calibration.",
-      "unique_caveat": "The structures are inferred from projected tomographic slices, so photometric-redshift errors and projection effects remain; the parameter calibration also depends on the chosen simulation mocks.",
+      "unique_caveat": "The catalog projects tomographic slices rather than recovering 3D structure; thresholds calibrated to TNG300-1 are not universal, and Gaussian photometric-redshift PDFs may miss non-Gaussian tails.",
       "evidence_for_ranking": "Cross-listed across cosmology, galaxy astrophysics, and instrumentation/methods; releases filament and segment catalogs plus probability maps, and the record links an A&A DOI.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-10-23",

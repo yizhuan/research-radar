@@ -7,176 +7,114 @@
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-27.md",
   "entry_count": 10,
   "entry_noun": "repositories",
-  "snapshot_time_utc": "2026-10-27 01:29 UTC",
-  "ranking_basis": "Daily GitHub Trending stars gained; top ten sorted descending.",
-  "ranking_explanation": "The official daily Trending view was captured at the stated UTC time. Its displayed “stars today” values determine the ordering; the ten highest-gain repositories from the live page are included. Total stars, language, repository status, default branch and current commit SHA were corroborated via the GitHub REST API.",
-  "global_caveat": "Daily star gains are a short-window snapshot and do not establish sustained adoption, quality or maintenance. Total stars and default-branch commit SHAs are current REST API observations at capture time.",
+  "snapshot_time_utc": "2026-10-27 17:53 UTC",
+  "ranking_basis": "Daily GitHub Trending star gains; a separately identified recent-creation candidate is appended with stars_gained null.",
+  "ranking_explanation": "Nine entries are ordered by the values displayed as “stars today” on GitHub Trending at capture time. Word Atlas was surfaced separately by the GitHub Search created-date query for 2026-10-25 through 2026-10-27 and appended after the Trending entries because no comparable daily star-gain value was available.",
+  "global_caveat": "Daily star gains are a short-window snapshot, not evidence of sustained adoption, quality or maintenance. Total-star counts and default-branch SHAs are GitHub REST observations at capture time and can change. The supplemental Word Atlas stars total must not be read as its daily gain.",
   "themes": [
-    {
-      "id": "local-speech-and-media",
-      "name": "Local speech and media workflows",
-      "observation": "VoiceStudio leads the snapshot by combining voice cloning/design, dubbing, dictation, transcription and audiobook workflows; its README says core local workflows run on the user’s hardware.",
-      "supporting_repository_ids": [
-        "repo-debpalash-voicestudio"
-      ]
-    },
     {
       "id": "agentic-design-quality",
       "name": "Design quality for coding agents",
-      "observation": "Hallmark and Impeccable turn frontend design guidance into repeatable agent workflows: curated themes and rendered checks in Hallmark, and reusable commands plus deterministic detectors in Impeccable.",
+      "observation": "Hallmark and Impeccable package visual guidance as agent workflows, with browser-based checks and deterministic detection rather than relying on prompts alone.",
       "supporting_repository_ids": [
         "repo-nutlope-hallmark",
         "repo-pbakaus-impeccable"
       ]
     },
     {
-      "id": "coding-agent-workspaces",
-      "name": "Coding-agent workspaces and harness layers",
-      "observation": "Cindy and ThinkRail add persistent client/IDE workflows around agents, while ECC packages cross-harness skills, memory and security practices.",
+      "id": "agent-workspaces-and-orchestration",
+      "name": "Persistent agent workspaces and orchestration",
+      "observation": "Cindy, ThinkRail and OpenBot build user-facing multi-agent environments; ECC and Superpowers emphasize reusable skills, durable context and structured development workflows.",
       "supporting_repository_ids": [
         "repo-makecindy-cindy",
         "repo-jetbrains-thinkrail",
-        "repo-affaan-m-ecc"
+        "repo-nightly-labs-openbot",
+        "repo-affaan-m-ecc",
+        "repo-obra-superpowers"
       ]
     },
     {
-      "id": "agent-workflow-capabilities",
-      "name": "Domain workflows and agent access",
-      "observation": "TradingAgents applies role-based orchestration to financial analysis, while Agent-Reach focuses on retrieval across online sources; Karpathy-skills represents the lighter-weight prompt/configuration end of the spectrum.",
+      "id": "domain-specific-ai-apps",
+      "name": "Domain-specific AI applications",
+      "observation": "DeepTutor focuses on personalized learning, while Postiz applies agent integrations to social publishing and analytics.",
       "supporting_repository_ids": [
-        "repo-tauricresearch-tradingagents",
-        "repo-panniantong-agent-reach",
-        "repo-multica-ai-andrej-karpathy-skills"
+        "repo-hkuds-deeptutor",
+        "repo-gitroomhq-postiz-app"
       ]
     },
     {
-      "id": "robotics",
-      "name": "Robotics as a non-agent counterpoint",
-      "observation": "Microduck is the list’s physical-computing outlier: a tiny bipedal robot project amid otherwise software-centric repositories.",
+      "id": "learning-tools-and-open-data",
+      "name": "Learning tools and open data",
+      "observation": "Word Atlas pairs illustrated vocabulary, audio and FSRS review with a downloadable dataset; it is a recent-creation supplement, not a Trending-page star-gain entry.",
       "supporting_repository_ids": [
-        "repo-pollen-robotics-microduck"
+        "repo-designfuchen-word-atlas"
       ]
     }
   ],
-  "comparison_basis": {
-    "previous_snapshot_date": "2026-10-26",
-    "previous_snapshot_time_utc": "2026-10-26 17:34 UTC",
-    "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-26.md",
-    "method": "Compare membership and themes of the selected top-ten repositories in the two saved daily snapshots; does not claim multi-day trend persistence."
-  },
-  "sources": {
-    "trending": "https://github.com/trending?since=daily",
-    "search_api_queries": [
-      "hallmark in:name user:Nutlope",
-      "TradingAgents in:name user:TauricResearch",
-      "thinkrail in:name user:JetBrains",
-      "cindy in:name user:makecindy",
-      "ECC in:name user:affaan-m"
-    ],
-    "rest_api": "https://api.github.com/repos/{owner}/{repo} and https://api.github.com/repos/{owner}/{repo}/commits/{default_branch}"
-  },
   "sections": [
     {
       "id": "00-snapshot",
       "kind": "snapshot",
       "title": "Snapshot",
-      "content": "Snapshot time (UTC): 2026-10-27 01:29 UTC. Scope: Daily. Date range: 2026-10-27 through 2026-10-27. Ranking basis: GitHub Trending daily stars gained, sorted descending."
+      "content": "Snapshot time: 2026-10-27 17:53 UTC. Scope: Daily. Date range: 2026-10-27 through 2026-10-27. Ranking basis: GitHub Trending daily star gains sorted descending; a recent-creation Search candidate is appended separately."
     },
     {
-      "id": "01-headline",
+      "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "VoiceStudio leads today’s daily gain list, followed by two agent-focused frontend design tools, Hallmark and Impeccable. The wider mix points to agent tooling moving into persistent IDE/client workflows and domain-specific work, with a small robotics project as a counterpoint."
+      "content": "Coding-agent design and workflow tools dominate the daily gain leaders: Hallmark, DeepTutor and Impeccable top the capture, while IDEs and persistent multi-agent workspaces recur further down. A separate recent-creation search also surfaced Word Atlas, a fast-rising language-learning product that broadens the snapshot beyond AI tooling."
     },
     {
-      "id": "repo-debpalash-voicestudio",
-      "kind": "repo",
-      "title": "debpalash/VoiceStudio",
-      "rank": 1,
-      "url": "https://github.com/debpalash/VoiceStudio",
-      "description": "A local-first desktop suite for voice cloning and design, video dubbing, dictation, transcription and audiobook creation, with multiple speech engines.",
-      "language": "Python",
-      "stars_gained": 2297,
-      "total_stars": 89314,
-      "default_branch_commit": "58f6960aff5c459932b29565090e0aefaa2b5515",
-      "why_notable": "Largest daily gain in this snapshot; it brings locally runnable speech workflows together in one desktop product rather than focusing on a single speech task.",
-      "theme_ids": [
-        "local-speech-and-media"
-      ],
-      "signal_strength": "lead",
-      "evidence_density": "rich",
-      "narration_priority": 1,
-      "spoken_name": "VoiceStudio",
-      "refs": [
-        "https://github.com/debpalash/VoiceStudio",
-        "https://raw.githubusercontent.com/debpalash/VoiceStudio/main/README.md"
-      ],
-      "enrichment": {
-        "source_type": "first_party_readme",
-        "source_url": "https://raw.githubusercontent.com/debpalash/VoiceStudio/main/README.md",
-        "default_branch_commit": "58f6960aff5c459932b29565090e0aefaa2b5515",
-        "retrieval_time_utc": "2026-10-27 01:29 UTC",
-        "architecture_summary": "An Electron desktop application that brings several speech engines and local workflows into one workspace; its README says remote services are optional.",
-        "core_components": [
-          "voice cloning and voice design",
-          "video dubbing",
-          "dictation and transcription",
-          "audiobook and batch workflows",
-          "speech engine/model management",
-          "local API and MCP integration"
-        ],
-        "workflow": "Choose the VoiceStudio default or another engine, install/run a desktop release, then use the relevant workspace for cloning, design, dubbing or transcription; local workflows execute on the user’s hardware.",
-        "design_pattern": "A multi-engine desktop workbench with optional local API/MCP and reusable recipes rather than a single-purpose model interface.",
-        "source_refs": [
-          "https://raw.githubusercontent.com/debpalash/VoiceStudio/main/README.md",
-          "https://github.com/debpalash/VoiceStudio/blob/main/docs/feature-catalog.md"
-        ]
-      }
+      "id": "10-top-repositories",
+      "kind": "repo_group",
+      "title": "Top Repositories",
+      "content": "Nine repositories ranked by GitHub Trending daily star gains, followed by one newly created recent-activity supplement whose daily gain is unavailable."
     },
     {
       "id": "repo-nutlope-hallmark",
       "kind": "repo",
       "title": "Nutlope/hallmark",
-      "rank": 2,
+      "rank": 1,
       "url": "https://github.com/Nutlope/hallmark",
-      "description": "A frontend-design skill for coding agents that pairs a catalog of visual themes with browser-based checks against generic or broken design patterns.",
+      "description": "An agent design skill that steers coding agents toward purpose-built pages using a catalog of visual themes, browser checks and explicit quality gates.",
       "language": "CSS",
-      "stars_gained": 2244,
-      "total_stars": 36419,
-      "default_branch_commit": "7ec868225c6caa040558c321ee0fefa0e73f83a8",
-      "why_notable": "Second-highest gain and a concrete example of design constraints becoming agent skills, themes and browser-verified quality gates.",
+      "stars_gained": 2859,
+      "total_stars": 38532,
+      "default_branch_commit": "6033bab2a8051b5454552d2e8e6cb8f27c483a42",
+      "why_notable": "The day’s largest Trending gain; README describes a concrete design workflow with 50 themes, browser-rendered checks and distinct accessibility, anti-pattern and craft gates.",
       "theme_ids": [
         "agentic-design-quality"
       ],
       "signal_strength": "lead",
       "evidence_density": "rich",
-      "narration_priority": 2,
+      "narration_priority": 1,
       "spoken_name": "Hallmark",
       "refs": [
-        "https://github.com/Nutlope/hallmark",
-        "https://raw.githubusercontent.com/Nutlope/hallmark/main/README.md"
+        "Nutlope/hallmark"
+      ]
+    },
+    {
+      "id": "repo-hkuds-deeptutor",
+      "kind": "repo",
+      "title": "HKUDS/DeepTutor",
+      "rank": 2,
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "A personalized tutoring application built around persistent learning workspaces, conversational help and study workflows.",
+      "language": "Python",
+      "stars_gained": 1587,
+      "total_stars": 45513,
+      "default_branch_commit": "a31d82624c27d75f4e771d4fcb78dce16470b383",
+      "why_notable": "Second-highest daily gain, with a product-shaped education use case rather than another general coding-agent framework; its README and linked docs describe the tutoring workflow and learning workspaces.",
+      "theme_ids": [
+        "domain-specific-ai-apps"
       ],
-      "enrichment": {
-        "source_type": "first_party_readme",
-        "source_url": "https://raw.githubusercontent.com/Nutlope/hallmark/main/README.md",
-        "default_branch_commit": "7ec868225c6caa040558c321ee0fefa0e73f83a8",
-        "retrieval_time_utc": "2026-10-27 01:29 UTC",
-        "architecture_summary": "An agent skill organizes frontend generation around a theme catalog, task-specific page structure and browser-rendered quality checks.",
-        "core_components": [
-          "48 visual themes",
-          "pre-flight project/context inspection",
-          "theme selection and page generation",
-          "real-browser lint/check gates",
-          "redesign and audit commands",
-          "fresh-context reviewer"
-        ],
-        "workflow": "Inspect project context, choose or generate a theme, build around the visitor’s task, capture the rendered page in a browser, then run quality gates and a fresh-context review.",
-        "design_pattern": "Constrain visual defaults and verify the rendered result; distinguish hard accessibility/correctness floors from overridable style reflexes and non-blocking finish checks.",
-        "source_refs": [
-          "https://raw.githubusercontent.com/Nutlope/hallmark/main/README.md",
-          "https://www.usehallmark.com"
-        ]
-      }
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Deep Tutor",
+      "refs": [
+        "HKUDS/DeepTutor"
+      ]
     },
     {
       "id": "repo-pbakaus-impeccable",
@@ -184,12 +122,12 @@
       "title": "pbakaus/impeccable",
       "rank": 3,
       "url": "https://github.com/pbakaus/impeccable",
-      "description": "A design workflow for coding agents with reusable commands, deterministic frontend checks and live browser iteration.",
+      "description": "A design workflow for coding agents with 24 commands, live browser iteration and 62 deterministic frontend detector rules.",
       "language": "Rust",
-      "stars_gained": 1506,
-      "total_stars": 89248,
-      "default_branch_commit": "414603bf14c7a344edb466bb1f85690c77ce8b7d",
-      "why_notable": "Third-highest gain; complements theme-led design with a command vocabulary and deterministic checks for common frontend anti-patterns.",
+      "stars_gained": 1458,
+      "total_stars": 90238,
+      "default_branch_commit": "d34c87e1a00989ae8dbdd7f6b30b70f23319e860",
+      "why_notable": "Third-highest gain and a strong counterpart to Hallmark: it encodes design guidance as reusable commands and no-LLM deterministic checks.",
       "theme_ids": [
         "agentic-design-quality"
       ],
@@ -198,311 +136,192 @@
       "narration_priority": 3,
       "spoken_name": "Impeccable",
       "refs": [
-        "https://github.com/pbakaus/impeccable",
-        "https://raw.githubusercontent.com/pbakaus/impeccable/main/README.md"
-      ],
-      "enrichment": {
-        "source_type": "first_party_readme",
-        "source_url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/README.md",
-        "default_branch_commit": "414603bf14c7a344edb466bb1f85690c77ce8b7d",
-        "retrieval_time_utc": "2026-10-27 01:29 UTC",
-        "architecture_summary": "A coding-agent design skill exposes a shared command vocabulary and combines deterministic frontend detectors with optional LLM critique and browser iteration.",
-        "core_components": [
-          "24 design/UX commands",
-          "PRODUCT.md durable product context",
-          "DESIGN.md visual-system context",
-          "62 deterministic detector rules",
-          "live browser variant iteration"
-        ],
-        "workflow": "Initialize product context, use focused commands to shape or revise a UI, run technical/design audits and iterate visually in the browser.",
-        "design_pattern": "Keep product truth distinct from visual direction and use deterministic checks for mechanical anti-patterns, reserving model critique for judgment calls.",
-        "source_refs": [
-          "https://raw.githubusercontent.com/pbakaus/impeccable/main/README.md",
-          "https://impeccable.style"
-        ]
-      }
-    },
-    {
-      "id": "repo-tauricresearch-tradingagents",
-      "kind": "repo",
-      "title": "TauricResearch/TradingAgents",
-      "rank": 4,
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "description": "A multi-agent LLM framework that organizes financial research and trading analysis into specialized roles.",
-      "language": "Python",
-      "stars_gained": 1395,
-      "total_stars": 116146,
-      "default_branch_commit": "e8f5503e9b86d5c2710b0c76b1f686703968c9df",
-      "why_notable": "Strong daily momentum for multi-agent orchestration outside software development, applied to financial analysis.",
-      "theme_ids": [
-        "agent-workflow-capabilities"
-      ],
-      "signal_strength": "lead",
-      "evidence_density": "rich",
-      "narration_priority": 4,
-      "spoken_name": "TradingAgents",
-      "refs": [
-        "https://github.com/TauricResearch/TradingAgents",
-        "https://raw.githubusercontent.com/TauricResearch/TradingAgents/main/README.md"
-      ],
-      "enrichment": {
-        "source_type": "first_party_readme",
-        "source_url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/main/README.md",
-        "default_branch_commit": "e8f5503e9b86d5c2710b0c76b1f686703968c9df",
-        "retrieval_time_utc": "2026-10-27 01:29 UTC",
-        "architecture_summary": "A multi-agent financial analysis framework with differentiated model tiers and specialist roles; the README highlights point-in-time data handling and backtesting.",
-        "core_components": [
-          "specialist analysts and manager roles",
-          "provider/model registry",
-          "CLI and report generation",
-          "dated analysis and backtesting paths",
-          "persistent decision logs"
-        ],
-        "workflow": "Configure a ticker/date and model providers, run the analyst/manager workflow, inspect the generated report and use date-faithful backtests to evaluate prior decisions.",
-        "design_pattern": "Role-specialized agent orchestration with explicit point-in-time constraints for historical evaluation.",
-        "source_refs": [
-          "https://raw.githubusercontent.com/TauricResearch/TradingAgents/main/README.md",
-          "https://github.com/TauricResearch/TradingAgents/blob/main/CHANGELOG.md"
-        ]
-      }
+        "pbakaus/impeccable"
+      ]
     },
     {
       "id": "repo-makecindy-cindy",
       "kind": "repo",
       "title": "makecindy/cindy",
-      "rank": 5,
+      "rank": 4,
       "url": "https://github.com/makecindy/cindy",
-      "description": "An open-source desktop and mobile agent client that coordinates coding harnesses, models, tools, memory and skills across projects.",
+      "description": "An open-source desktop and mobile AI-agent client connecting multiple coding harnesses, devices, tools and collaborative workflows.",
       "language": "TypeScript",
-      "stars_gained": 1296,
-      "total_stars": 6517,
-      "default_branch_commit": "640c61b0362ebf547801239db15e5996b6dd5ee7",
-      "why_notable": "Shows demand for a persistent agent client that brings harnesses, models, memory and tools into one local workspace.",
+      "stars_gained": 1446,
+      "total_stars": 7318,
+      "default_branch_commit": "fcd464bbd570866084a37d5ac3d5d485cd043da9",
+      "why_notable": "Near the top of the day’s gain list; the README frames it as a cross-device client that unifies existing agent harnesses and can coordinate agents on shared goals.",
       "theme_ids": [
-        "coding-agent-workspaces"
+        "agent-workspaces-and-orchestration"
       ],
-      "signal_strength": "lead",
+      "signal_strength": "standard",
       "evidence_density": "rich",
-      "narration_priority": 5,
+      "narration_priority": 4,
       "spoken_name": "Cindy",
       "refs": [
-        "https://github.com/makecindy/cindy",
-        "https://raw.githubusercontent.com/makecindy/cindy/main/README.md"
+        "makecindy/cindy"
       ],
-      "enrichment": {
-        "source_type": "first_party_readme",
-        "source_url": "https://raw.githubusercontent.com/makecindy/cindy/main/README.md",
-        "default_branch_commit": "640c61b0362ebf547801239db15e5996b6dd5ee7",
-        "retrieval_time_utc": "2026-10-27 01:29 UTC",
-        "architecture_summary": "An open-source pnpm monorepo client for desktop and mobile that can coordinate multiple coding harnesses, models, tools and shared context.",
-        "core_components": [
-          "Electron desktop app",
-          "Expo/React Native mobile app",
-          "shared orchestration/model packages",
-          "memory, skills and automation",
-          "MCP and plugins"
-        ],
-        "workflow": "Run local agents without sign-in or connect supported harnesses/models; use the client workspace, tools and schedules to plan, execute and review work.",
-        "design_pattern": "A multi-harness client keeps task context continuous while allowing different models/agents to participate; the service backend is outside this repository.",
-        "source_refs": [
-          "https://raw.githubusercontent.com/makecindy/cindy/main/README.md",
-          "https://github.com/makecindy/cindy/blob/main/docs/linux.md"
-        ]
-      },
-      "unique_caveat": "The README describes this repository as the open-source client; its backend service is maintained separately."
+      "unique_caveat": "The repository contains the desktop/mobile clients; its backend service is maintained separately, and several remote features rely on Cindy’s hosted services."
     },
     {
       "id": "repo-jetbrains-thinkrail",
       "kind": "repo",
       "title": "JetBrains/thinkrail",
-      "rank": 6,
+      "rank": 5,
       "url": "https://github.com/JetBrains/thinkrail",
-      "description": "An agentic IDE built around pi, with isolated Git-worktree workspaces, living project specs and a reviewable workbench.",
+      "description": "A lightweight agentic IDE built around the pi coding agent, isolated project workspaces and durable project specifications.",
       "language": "TypeScript",
-      "stars_gained": 1173,
-      "total_stars": 2942,
-      "default_branch_commit": "48169da05f498594e43f11a102faab97c1674d33",
-      "why_notable": "Represents the IDE/worktree approach to coding agents, with project knowledge and changes kept reviewable.",
+      "stars_gained": 1211,
+      "total_stars": 3782,
+      "default_branch_commit": "5a6f8574219cdf15e0fd5195efb39106ed7a608f",
+      "why_notable": "One of today’s strongest gains and a notable IDE-shaped alternative: the README details isolated git-worktree workspaces, persistent specs and parallel agent sessions.",
       "theme_ids": [
-        "coding-agent-workspaces"
+        "agent-workspaces-and-orchestration"
       ],
       "signal_strength": "standard",
-      "evidence_density": "standard",
-      "narration_priority": 6,
+      "evidence_density": "rich",
+      "narration_priority": 5,
       "spoken_name": "ThinkRail",
       "refs": [
-        "https://github.com/JetBrains/thinkrail",
-        "https://raw.githubusercontent.com/JetBrains/thinkrail/main/README.md"
+        "JetBrains/thinkrail"
       ],
-      "enrichment": null
+      "unique_caveat": "The README identifies this as a JetBrains incubator project; its planned extension support is described as forthcoming."
     },
     {
       "id": "repo-affaan-m-ecc",
       "kind": "repo",
       "title": "affaan-m/ECC",
-      "rank": 7,
+      "rank": 6,
       "url": "https://github.com/affaan-m/ECC",
-      "description": "A cross-agent harness toolkit combining reusable skills, memory, security and development workflows for several coding agents.",
+      "description": "A cross-harness agent optimization kit spanning skills, memory, security and research-first development workflows.",
       "language": "JavaScript",
-      "stars_gained": 896,
-      "total_stars": 289870,
+      "stars_gained": 1183,
+      "total_stars": 290612,
       "default_branch_commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
-      "why_notable": "A high-star repository packaging cross-harness skills and operating practices, pointing to a tooling layer above individual coding agents.",
+      "why_notable": "A large, established repository still drew over a thousand stars today; it represents the packaging of agent behavior, safety and reusable workflow layers across coding harnesses.",
       "theme_ids": [
-        "coding-agent-workspaces"
+        "agent-workspaces-and-orchestration"
       ],
       "signal_strength": "standard",
-      "evidence_density": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "ECC",
+      "refs": [
+        "affaan-m/ECC"
+      ]
+    },
+    {
+      "id": "repo-gitroomhq-postiz-app",
+      "kind": "repo",
+      "title": "gitroomhq/postiz-app",
+      "rank": 7,
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "description": "An open-source platform for scheduling, automating and analyzing social content, with integrations for AI agents and automation tools.",
+      "language": "TypeScript",
+      "stars_gained": 953,
+      "total_stars": 39117,
+      "default_branch_commit": "a5affe62c74e39c1e7ac960d50d8418b807d532c",
+      "why_notable": "A practical application-level counterpoint to infrastructure-heavy agent projects: the README lists publishing destinations, agent connections, an API and automation integrations.",
+      "theme_ids": [
+        "domain-specific-ai-apps"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
       "narration_priority": 7,
-      "spoken_name": "E C C",
+      "spoken_name": "Postiz",
       "refs": [
-        "https://github.com/affaan-m/ECC",
-        "https://raw.githubusercontent.com/affaan-m/ECC/main/README.md"
-      ],
-      "enrichment": null
+        "gitroomhq/postiz-app"
+      ]
     },
     {
-      "id": "repo-pollen-robotics-microduck",
+      "id": "repo-nightly-labs-openbot",
       "kind": "repo",
-      "title": "pollen-robotics/microduck",
+      "title": "nightly-labs/openbot",
       "rank": 8,
-      "url": "https://github.com/pollen-robotics/microduck",
-      "description": "A tiny bipedal duck robot project, a hardware-oriented counterpoint to the software-agent-heavy list.",
-      "language": "Rust",
-      "stars_gained": 843,
-      "total_stars": 12433,
-      "default_branch_commit": "96b89d8613f06722c1d64ce75ab0d7124fed9d8f",
-      "why_notable": "A tangible robotics counterpoint, showing attention also reaching small physical systems rather than only software agents.",
+      "url": "https://github.com/nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates, with per-agent workspaces, task queues, browser control and agent-to-agent collaboration.",
+      "language": "TypeScript",
+      "stars_gained": 794,
+      "total_stars": 2187,
+      "default_branch_commit": "ae970e7aeebe7b9170660e87ed50cd252db9de25",
+      "why_notable": "It makes the agent-workspace trend tangible with independent sessions, queues, file exchange and a persistent embedded browser in one desktop app.",
       "theme_ids": [
-        "robotics"
+        "agent-workspaces-and-orchestration"
       ],
       "signal_strength": "standard",
-      "evidence_density": "standard",
+      "evidence_density": "rich",
       "narration_priority": 8,
-      "spoken_name": "Microduck",
+      "spoken_name": "OpenBot",
       "refs": [
-        "https://github.com/pollen-robotics/microduck"
+        "nightly-labs/openbot"
       ],
-      "enrichment": null
+      "unique_caveat": "The README warns that agents currently run with broad filesystem, command, network and browser access after first-launch consent; the project is a development preview."
     },
     {
-      "id": "repo-panniantong-agent-reach",
+      "id": "repo-obra-superpowers",
       "kind": "repo",
-      "title": "Panniantong/Agent-Reach",
+      "title": "obra/superpowers",
       "rank": 9,
-      "url": "https://github.com/Panniantong/Agent-Reach",
-      "description": "A Python CLI that gives agents a single interface for reading and searching across web, social, video and code sources.",
-      "language": "Python",
-      "stars_gained": 746,
-      "total_stars": 103637,
-      "default_branch_commit": "14c213405669414492bda0f8d52cc6531d062c45",
-      "why_notable": "Highlights the integration layer agents need to retrieve information from otherwise fragmented online sources.",
+      "url": "https://github.com/obra/superpowers",
+      "description": "A composable skills framework and software-development methodology for coding agents, spanning specification, planning, TDD and subagent execution.",
+      "language": "Shell",
+      "stars_gained": 608,
+      "total_stars": 306205,
+      "default_branch_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "why_notable": "Even with a very large installed audience, it remained on the daily list; its README emphasizes a sequenced, spec-first workflow and test-driven subagent implementation.",
       "theme_ids": [
-        "agent-workflow-capabilities"
+        "agent-workspaces-and-orchestration"
       ],
       "signal_strength": "brief",
-      "evidence_density": "standard",
+      "evidence_density": "rich",
       "narration_priority": 9,
-      "spoken_name": "Agent Reach",
+      "spoken_name": "Superpowers",
       "refs": [
-        "https://github.com/Panniantong/Agent-Reach"
-      ],
-      "enrichment": null
+        "obra/superpowers"
+      ]
     },
     {
-      "id": "repo-multica-ai-andrej-karpathy-skills",
+      "id": "repo-designfuchen-word-atlas",
       "kind": "repo",
-      "title": "multica-ai/andrej-karpathy-skills",
+      "title": "designfuchen/word-atlas",
       "rank": 10,
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "description": "A compact CLAUDE.md instruction file translating Andrej Karpathy’s coding-agent observations into reusable guidance.",
-      "language": "N/A - not available from GitHub",
-      "stars_gained": 638,
-      "total_stars": 224671,
-      "default_branch_commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-      "why_notable": "A lightweight, instruction-file approach contrasts with full agent runtimes and IDEs while still drawing notable daily attention.",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "description": "An illustrated IELTS vocabulary app and open dataset with 7,298 entries, UK/US audio and FSRS spaced-repetition review.",
+      "language": "TypeScript",
+      "stars_gained": null,
+      "total_stars": 2405,
+      "default_branch_commit": "99c007673d38f02c418d8e4cd2e9ec90b5d40be5",
+      "why_notable": "A standout repository created on 2026-10-25 and recently active in the GitHub Search supplement; its README documents a local-first study app and a reusable, separately licensed vocabulary dataset.",
       "theme_ids": [
-        "agent-workflow-capabilities"
+        "learning-tools-and-open-data"
       ],
-      "signal_strength": "brief",
-      "evidence_density": "standard",
+      "signal_strength": "standard",
+      "evidence_density": "rich",
       "narration_priority": 10,
-      "spoken_name": "Karpathy skills",
+      "spoken_name": "Word Atlas",
       "refs": [
-        "https://github.com/multica-ai/andrej-karpathy-skills"
+        "designfuchen/word-atlas"
       ],
-      "enrichment": null
+      "unique_caveat": "The README notes that the online site iterates independently and may differ from the open-source repository; code and dataset use separate licenses.",
+      "ranking_note": "Created 2026-10-25; supplemental GitHub Search candidate, not ranked against daily Trending gains."
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "- **Local speech and media workflows:** VoiceStudio leads the snapshot by combining voice cloning/design, dubbing, dictation, transcription and audiobook workflows; its README says core local workflows run on the user’s hardware.\n- **Design quality for coding agents:** Hallmark and Impeccable turn frontend design guidance into repeatable agent workflows: curated themes and rendered checks in Hallmark, and reusable commands plus deterministic detectors in Impeccable.\n- **Coding-agent workspaces and harness layers:** Cindy and ThinkRail add persistent client/IDE workflows around agents, while ECC packages cross-harness skills, memory and security practices.\n- **Domain workflows and agent access:** TradingAgents applies role-based orchestration to financial analysis, while Agent-Reach focuses on retrieval across online sources; Karpathy-skills represents the lighter-weight prompt/configuration end of the spectrum.\n- **Robotics as a non-agent counterpoint:** Microduck is the list’s physical-computing outlier: a tiny bipedal robot project amid otherwise software-centric repositories.\n- **Languages:** CSS (1), JavaScript (1), Python (3), Rust (2), TypeScript (2), N/A - not available from GitHub (1).",
-      "themes": [
-        {
-          "id": "local-speech-and-media",
-          "name": "Local speech and media workflows",
-          "observation": "VoiceStudio leads the snapshot by combining voice cloning/design, dubbing, dictation, transcription and audiobook workflows; its README says core local workflows run on the user’s hardware.",
-          "supporting_repository_ids": [
-            "repo-debpalash-voicestudio"
-          ]
-        },
-        {
-          "id": "agentic-design-quality",
-          "name": "Design quality for coding agents",
-          "observation": "Hallmark and Impeccable turn frontend design guidance into repeatable agent workflows: curated themes and rendered checks in Hallmark, and reusable commands plus deterministic detectors in Impeccable.",
-          "supporting_repository_ids": [
-            "repo-nutlope-hallmark",
-            "repo-pbakaus-impeccable"
-          ]
-        },
-        {
-          "id": "coding-agent-workspaces",
-          "name": "Coding-agent workspaces and harness layers",
-          "observation": "Cindy and ThinkRail add persistent client/IDE workflows around agents, while ECC packages cross-harness skills, memory and security practices.",
-          "supporting_repository_ids": [
-            "repo-makecindy-cindy",
-            "repo-jetbrains-thinkrail",
-            "repo-affaan-m-ecc"
-          ]
-        },
-        {
-          "id": "agent-workflow-capabilities",
-          "name": "Domain workflows and agent access",
-          "observation": "TradingAgents applies role-based orchestration to financial analysis, while Agent-Reach focuses on retrieval across online sources; Karpathy-skills represents the lighter-weight prompt/configuration end of the spectrum.",
-          "supporting_repository_ids": [
-            "repo-tauricresearch-tradingagents",
-            "repo-panniantong-agent-reach",
-            "repo-multica-ai-andrej-karpathy-skills"
-          ]
-        },
-        {
-          "id": "robotics",
-          "name": "Robotics as a non-agent counterpoint",
-          "observation": "Microduck is the list’s physical-computing outlier: a tiny bipedal robot project amid otherwise software-centric repositories.",
-          "supporting_repository_ids": [
-            "repo-pollen-robotics-microduck"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "85-notable-shifts",
-      "kind": "extra",
-      "title": "Notable Shifts",
-      "content": "Compared with the saved 2026-10-26 17:34 UTC snapshot, VoiceStudio and andrej-karpathy-skills now appear in the selected top ten, while OpenBot, NVIDIA SkillSpector and Huashu Design from yesterday’s top ten do not. Hallmark and Impeccable remain central, but local speech/media takes the top gain slot in this capture."
+      "content": "- **Design quality for coding agents:** Hallmark and Impeccable package visual guidance as agent workflows, with browser-based checks and deterministic detection rather than relying on prompts alone.\n- **Persistent agent workspaces and orchestration:** Cindy, ThinkRail and OpenBot build user-facing multi-agent environments; ECC and Superpowers emphasize reusable skills, durable context and structured development workflows.\n- **Domain-specific AI applications:** DeepTutor focuses on personalized learning, while Postiz applies agent integrations to social publishing and analytics.\n- **Learning tools and open data:** Word Atlas pairs illustrated vocabulary, audio and FSRS review with a downloadable dataset; it is a recent-creation supplement, not a Trending-page star-gain entry.\n- **Languages:** TypeScript leads this set (5 of 10), followed by one each in CSS, Python, Rust, JavaScript and Shell. The count includes the appended Word Atlas supplement."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "The clearest signal is that attention is spreading from agent coding itself into the surrounding product layer: design quality, durable workspaces, reusable operating guidance and cross-source retrieval. VoiceStudio’s lead shows a parallel pull toward local, multimodal creative workflows. Daily star gains measure short-term GitHub attention, not adoption, quality or investment in maintenance."
+      "content": "The strongest signal is the shift from isolated coding-agent prompts toward durable work environments and repeatable quality systems: workspaces, specs, skills, browser checks and reviewable workflows. But the snapshot is not only about developer infrastructure—DeepTutor, Postiz and Word Atlas show continued interest in usable, domain-specific applications. Daily star velocity is a discovery signal, not proof of product quality or lasting adoption."
     },
     {
       "id": "99-sources-and-method",
-      "kind": "sources-method",
+      "kind": "sources",
       "title": "Sources and Method",
-      "content": "Primary source: https://github.com/trending?since=daily. Corroboration: GitHub REST repository metadata and default-branch commit endpoints for all listed repositories; GitHub Search API exact-name queries confirmed Hallmark, TradingAgents, ThinkRail, Cindy and ECC. Daily gains are the “stars today” values from the official daily Trending view, sorted descending. Previous-window comparison uses the saved 2026-10-26 daily report."
+      "content": "Primary source: https://github.com/trending?since=daily (captured 2026-10-27 17:53 UTC). Corroboration: GitHub REST repository and default-branch commit endpoints; GitHub Search API exact-name queries for each ranked repository; recent-creation query created:2026-10-25..2026-10-27 stars:>100. README files consulted for narration-priority repositories; no DeepWiki enrichment needed."
     }
   ]
 }

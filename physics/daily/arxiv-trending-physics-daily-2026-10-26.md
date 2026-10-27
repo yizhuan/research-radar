@@ -1,122 +1,100 @@
-# Notable new physics papers — arXiv announcement batch of 26 October 2026
+# arXiv Physics — Daily brief, Monday 26 October 2026
 
-Today's daily batch contains 8 selected papers, with a strong showing for experimental quantum control, data-driven astrophysics, and computational access to difficult physical regimes. We move from logical-qubit operations and black-hole populations to dense-QCD thermodynamics, then survey materials imaging and reusable cosmology simulations. arXiv publishes no official trending chart, so this is an inferred, evidence-weighted ranking rather than a popularity ranking; all eight selected preprints currently have zero citation and zero influential-citation totals in Semantic Scholar, leaving little citation evidence for a batch announced only today.
+Six notable recent papers show a strong mix of instrument-led astronomy, model-based inference, and quantum error correction. This brief covers logical-qubit operations, the new GWTC-5 black-hole population analysis, an extensive 3I/ATLAS monitoring campaign, JWST's early-galaxy luminosity functions, simulated explanations of the Galactic-center gamma-ray excess, and twisted graphene spectroscopy. The ordering is inferred: arXiv publishes no official trending chart, and citation evidence is limited for these very recent papers.
+
+Today is Tuesday, 27 October 2026. At the 01:24:54 UTC snapshot, the latest available announcement batch was Monday, 26 October. The daily window is exactly 2026-10-26 through 2026-10-26; it uses the prior batch because no Tuesday batch had appeared by the snapshot.
 
 ## Top papers (ranked)
 
 ### 1. [Entangled logical qubits on a superconducting quantum processor](https://arxiv.org/abs/2610.32347)
-- **Abstract:** On a 120-qubit superconducting processor, the authors report sub-1% logical error per round for distance-3 and distance-5 surface codes, logical Bell-state fidelities above 93%, three-logical-qubit teleportation, and improved stability over 170 measurement rounds.
+- **Abstract:** The authors demonstrate logical surface-code operations, entanglement, and teleportation on a 120-qubit superconducting processor using lattice surgery, fast reset, and noise-informed decoding.
 - **Authors:** Robin Harper, Xanda C. Kolesnikow, Campbell K. McLauchlan, Georgia M. Nixon, Stephen D. Bartlett, Benjamin J. Brown
 - **arXiv:** `2610.32347v1` (published 2026-10-23 08:40:47 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** A substantial hardware demonstration combines error-corrected logical entanglement, state/gate teleportation, and a long stability run, with quantitative performance reported in the paper's results and appendices.
-- **Claimed result:** The authors report lattice-surgery Bell-state fidelities above 93% and teleportation fidelities of 78–93% on the `ibm_phoenix` processor; a fast-reset stability experiment reaches an error probability near 2×10⁻⁷ after 170 rounds.
-- **Evidence type:** experimental; IBM `ibm_phoenix`, a 120-coupled-qubit superconducting processor, with surface-code experiments and lattice surgery.
-- **Caveat:** The work depends on excluding underperforming qubits and noise-informed decoding. Bell-state fidelity bounds use XX and ZZ measurements rather than full YY tomography, and selected results use post-selection.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
-- **Themes:** Quantum information
+- **Evidence for ranking:** A direct hardware demonstration extends beyond logical memory to two-logical-qubit Bell-state entanglement and three-logical-qubit teleportation on a named processor, with quantitative fidelities reported.
+- **Claimed result:** The authors report logical Bell-state fidelities above 93%, teleportation fidelities of 78%–93%, and sub-1% logical error per round for distance-3 and distance-5 surface codes.
+- **Evidence type:** experimental; 120 coupled superconducting qubits on IBM's `ibm_phoenix` processor, using surface codes and lattice surgery.
+- **Caveat:** Results rely on excluding underperforming components and noise-informed decoding on this particular device; they are not yet a demonstration of a scalable, general-purpose fault-tolerant computer.
+- **Announcement type:** new submission, announcement-batch date 2026-10-26
+- **Themes:** Quantum information; Instrumentation & detectors
 
 ### 2. [Three subpopulations of binary black holes in mass, spin magnitudes and tilts following GWTC-5](https://arxiv.org/abs/2610.32935)
-- **Abstract:** A hierarchical population analysis of 259 binaries in GWTC-5 identifies low-, medium-, and high-spin groups whose relative prevalence and inferred spin and mass-ratio properties vary with primary mass.
+- **Abstract:** Using 259 binary black holes in the fifth LIGO–Virgo–KAGRA catalog, the authors infer three mass-dependent subpopulations with distinct spin and mass-ratio distributions.
 - **Authors:** Asad Hussain, Maximiliano Isi, Aaron Zimmerman
 - **arXiv:** `2610.32935v1` (published 2026-10-23 17:31:43 UTC; categories: `astro-ph.HE`)
-- **Evidence for ranking:** The authors analyze a large gravitational-wave catalog and report a quantified population split, including a Bayes factor of about 10⁶ in favor of negligible spins for the low-spin component; the paper explicitly tests whether a fourth component is distinguishable.
-- **Claimed result:** The authors infer three black-hole binary subpopulations and find that a fourth does not yield a distinct additional mass-ratio or spin distribution under their model.
-- **Evidence type:** observational; hierarchical Bayesian population inference using the 259 binary black holes in the fifth LIGO–Virgo–KAGRA catalog (GWTC-5).
-- **Caveat:** The population structure is model-dependent; inferred components overlap, and a fourth component becomes degenerate with existing features. These are population inferences, not direct identifications of individual formation channels.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
+- **Evidence for ranking:** The analysis uses the new 259-event GWTC-5 catalog, reports a three-component population result, and introduces variance control for resolving concentrated spin features.
+- **Claimed result:** The authors infer low-, medium-, and high-spin populations whose relative contributions vary with primary mass; the high-spin component dominates above roughly 60 solar masses.
+- **Evidence type:** observational; hierarchical population inference from the LIGO–Virgo–KAGRA GWTC-5 catalog.
+- **Caveat:** Population structure and component assignments depend on the chosen mixture model; a fourth component does not resolve into a distinct distribution, and the inferred groups do not by themselves identify unique formation channels.
+- **Announcement type:** new submission, announcement-batch date 2026-10-26
 - **Themes:** Astrophysics; Cosmology & gravitation
 
-### 3. [Equation of state of hot and dense QCD using the complex Langevin equation](https://arxiv.org/abs/2610.32385)
-- **Abstract:** The authors present continuum-extrapolated lattice-QCD results for baryon density, pressure, and trace anomaly at high temperature and large baryon chemical potential, using complex-Langevin simulations at the physical pion mass.
-- **Authors:** Michael Mandl, Dénes Sexty, Daniel Unterhuber
-- **arXiv:** `2610.32385v1` (published 2026-10-23 09:14:01 UTC; categories: `hep-lat`, `hep-th`)
-- **Evidence for ranking:** The work spans lattice and theoretical high-energy physics and reports a physical-pion-mass calculation in a regime where the usual lattice sign problem obstructs standard importance sampling; the approach and its practical limits are detailed in the full text.
-- **Claimed result:** The authors report continuum-extrapolated thermodynamic observables for strangeness-neutral, charm-neutral, isospin-symmetric QCD as functions of temperature and baryon chemical potential.
-- **Evidence type:** computational; lattice simulations with complex Langevin dynamics and continuum extrapolation.
-- **Caveat:** The authors state that singularities in the complex Langevin drift currently restrict their approach to high temperatures, preventing reliable extension to lower-temperature regions.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
+### 3. [Comprehensive Visible and Near-infrared Keck and Gemini Monitoring and Characterization of Interstellar Comet 3I/ATLAS during its Encounter with the Solar System](https://arxiv.org/abs/2610.32972)
+- **Abstract:** The authors report a multi-epoch optical and near-infrared observing record of interstellar comet 3I/ATLAS, tracing its dust activity, colours, gas ratios, and infrared spectrum from 2025 July to 2026 May.
+- **Authors:** Bryce T. Bolin, Jeffrey Cooke, Brian C. Lemaux, Marco Micheli, Davide Farnocchia, et al.
+- **arXiv:** `2610.32972v1` (published 2026-10-23 17:58:04 UTC; categories: `astro-ph.EP`, `astro-ph.GA`)
+- **Evidence for ranking:** An unusually broad Keck/Gemini time series combines optical imaging and spectroscopy with near-infrared imaging and spectroscopy; it also connects planetary and galactic astrophysics.
+- **Claimed result:** The authors find different inbound and outbound dust-activity trends and report no water-ice absorption robust to their tested continuum and calibration choices.
+- **Evidence type:** observational; Keck/LRIS and MOSFIRE, Gemini/GMOS, Flamingos-2 and GNIRS observations.
+- **Caveat:** Dust-loss estimates assume grain sizes of 1 μm–1 mm and a nucleus model; the ice non-detection is conditional on the tested spectral-continuum and calibration treatments.
+- **Announcement type:** new submission, announcement-batch date 2026-10-26
+- **Themes:** Astrophysics; Instrumentation & detectors
 
-### 4. [Nano-ARPES observation of a flat band at the $\bar{M}$ point in 2.4° twisted bilayer graphene](https://arxiv.org/abs/2610.32714)
-- **Abstract:** Nano-ARPES measurements on 2.4° twisted bilayer graphene reveal a flat band at the Brillouin-zone M point, away from the more commonly studied K point.
+### 4. [Galaxy Luminosity Functions at z~7-10 from Four Years of JWST Observations](https://arxiv.org/abs/2610.32307)
+- **Abstract:** From four years of public JWST NIRCam imaging across nine fields, the authors estimate galaxy luminosity functions near redshifts 7.4 and 10, using NIRSpec confirmations to help quantify candidate contamination.
+- **Authors:** Bangzheng Sun, Haojing Yan
+- **arXiv:** `2610.32307v1` (published 2026-10-23 08:06:31 UTC; categories: `astro-ph.GA`)
+- **Evidence for ranking:** The analysis combines nine JWST fields spanning about 1,045 square arcminutes with thousands of dropout candidates and hundreds of secure NIRSpec redshifts; the preprint says it was submitted to MNRAS.
+- **Claimed result:** The authors report a Schechter-like z≈7.4 luminosity function with faint-end slope −1.70±0.16, while the z≈10 sample is better fit by a power law with slope −2.36±0.16.
+- **Evidence type:** observational; JWST public NIRCam imaging and NIRSpec spectroscopic redshifts, with statistical incompleteness and contamination corrections.
+- **Caveat:** The authors call for deeper imaging and spectroscopy near 30th magnitude to check the faint end and more bright-end spectroscopy (≲26th magnitude) to strengthen the z≈10 result.
+- **Announcement type:** new submission, announcement-batch date 2026-10-26
+- **Themes:** Astrophysics; Instrumentation & detectors
+
+### 5. [The Galactic Center Gamma-Ray Excess and the Look-Elsewhere Effect](https://arxiv.org/abs/2610.32845)
+- **Abstract:** Time-dependent cosmic-ray transport in simulated Milky Way analogues produces transient diffuse gamma-ray residuals that can resemble the spectrum and morphology of the Fermi-LAT Galactic Center Excess.
+- **Authors:** Isabel S. Sands, Philip F. Hopkins
+- **arXiv:** `2610.32845v1` (published 2026-10-23 16:19:38 UTC; categories: `astro-ph.HE`, `astro-ph.CO`, `hep-ph`)
+- **Evidence for ranking:** The work links high-energy astrophysics, cosmology, and particle phenomenology, replacing steady-state and axisymmetric simplifications with time-dependent, spectrally resolved cosmic-ray transport in full-MHD galaxy simulations.
+- **Claimed result:** The authors find simulated residuals several times larger than the Fermi excess in some snapshots and suggest that a transient stellar-source fluctuation could mimic it.
+- **Evidence type:** computational; full magnetohydrodynamic simulations of Milky Way analogues with time-dependent cosmic-ray transport.
+- **Caveat:** This is a simulation-based interpretation, not a new Fermi-LAT detection or a demonstrated explanation of the excess; it depends on the simulated galaxy and cosmic-ray transport assumptions.
+- **Announcement type:** new submission, announcement-batch date 2026-10-26
+- **Themes:** Astrophysics; Particle, nuclear & high-energy physics; Computational & data methods
+
+### 6. [Nano-ARPES observation of a flat band at the M point in 2.4° twisted bilayer graphene](https://arxiv.org/abs/2610.32714)
+- **Abstract:** Nano-ARPES measurements reveal a flat band near the M point, away from the usual K-point focus, in a 2.4° twisted bilayer graphene sample.
 - **Authors:** Giovanna Feraco, Przemysław Przybysz, Oreste De Luca, Ying Wang, Pavel Dudin, et al.
 - **arXiv:** `2610.32714v1` (published 2026-10-23 14:35:25 UTC; categories: `cond-mat.mes-hall`, `cond-mat.mtrl-sci`)
-- **Evidence for ranking:** This is a direct spectroscopic observation of an electronic feature outside the usual K-point focus, with relevance to both mesoscale physics and materials science.
-- **Claimed result:** The authors report direct angle-resolved photoemission visualization of a flat band at M in a 2.4° twisted-bilayer sample and argue that the full Brillouin zone should be probed.
-- **Evidence type:** experimental; nano-focused angle-resolved photoemission spectroscopy (nano-ARPES) on twisted bilayer graphene.
-- **Caveat:** The reported observation is for a particular twist-angle sample; structural relaxation and reconstruction can affect twist-angle control and the resulting electronic structure.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
-- **Themes:** Condensed matter & materials
-
-### 5. [Heavy Sterile Fermions from the Atmosphere: LZ Limits on Neutrino Up-Scattering](https://arxiv.org/abs/2610.32747)
-- **Abstract:** The authors use LUX-ZEPLIN nuclear-recoil data to constrain atmospheric-neutrino up-scattering into heavy sterile fermions through vector, axial-vector, scalar, and dipole interactions, and assess whether this can explain a high-energy event.
-- **Authors:** D. Aristizabal Sierra, V. De Romeri, D. K. Papoulias, I. M. Shoemaker
-- **arXiv:** `2610.32747v1` (published 2026-10-23 14:57:33 UTC; categories: `hep-ph`, `hep-ex`)
-- **Evidence for ranking:** The analysis connects a dark-matter detector dataset with particle-phenomenology models across experiment and theory, deriving constraints for four mediator cases from a 2.84 tonne-year LZ exposure.
-- **Claimed result:** The authors report new bounds for all four interaction scenarios, with competitive sensitivity above sterile-fermion masses of roughly 50 MeV, and conclude that the 248 keV event is not compellingly explained by the tested up-scattering models.
-- **Evidence type:** experimental; phenomenological reanalysis of LUX-ZEPLIN nuclear-recoil data, including the reported 248 keV event.
-- **Caveat:** The bounds depend on the assumed mediator and coupling structure; for several interactions, fitting the event requires couplings near the edge of perturbativity, while the dipole case fits poorly.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
-
-### 6. [Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces](https://arxiv.org/abs/2610.32419)
-- **Abstract:** The authors use ultrafast low-energy electron microscopy to image laser-induced gigahertz acoustic waves at surfaces, resolving picometre-scale motion and how interfaces and buried defects affect propagation.
-- **Authors:** Johannes Otto, Leon Brauns, Benjamin Schroeder, Claus Ropers
-- **arXiv:** `2610.32419v1` (published 2026-10-23 09:50:01 UTC; categories: `cond-mat.mtrl-sci`, `physics.ins-det`, `physics.optics`)
-- **Evidence for ranking:** The paper introduces a full-field, surface-sensitive imaging method and combines measured dispersion with elastodynamic modeling; it is cross-listed across materials, instrumentation, and optics, and includes supplementary videos.
-- **Claimed result:** The authors report imaging thermoelastic hypersound in a thin van der Waals material and distinguishing supported from locally detached regions, with delayed emission indicating scattering at buried mechanical defects.
-- **Evidence type:** experimental; ultrafast low-energy electron microscopy with femtosecond electron pulses, supported by elastodynamic modeling.
-- **Caveat:** The demonstration is in a thin van der Waals material; broader performance across materials and device geometries remains to be established.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
+- **Evidence for ranking:** A direct spectroscopic observation reports an unexpected band location and motivates measurements across the Brillouin zone; the paper cross-lists mesoscopic physics and materials science.
+- **Claimed result:** The authors report the first observation, in twisted bilayer graphene, of a flat band away from the K point, at M and far from the Fermi level.
+- **Evidence type:** experimental; nano-focused angle-resolved photoemission spectroscopy (nano-ARPES) on 2.4° twisted bilayer graphene.
+- **Caveat:** The reported feature is from a particular twist angle and does not itself establish a superconducting or other correlated phase; replication across samples and angles is needed to assess its generality.
+- **Announcement type:** new submission, announcement-batch date 2026-10-26
 - **Themes:** Condensed matter & materials; Instrumentation & detectors
-
-### 7. [The renormalization of the shell-model neutrinoless double-beta decay operator starting from effective field theory at next-to-next-to-leading order](https://arxiv.org/abs/2610.32947)
-- **Abstract:** Extending shell-model calculations for ⁴⁸Ca, ⁷⁶Ge, and ⁸²Se, the authors assess chiral-order corrections to neutrinoless double-beta-decay operators and include three-body-current contributions for nuclei of experimental interest.
-- **Authors:** S. L. Lyu, U. Carusone, G. De Gregorio, N. Itaco, L. Coraggio
-- **arXiv:** `2610.32947v1` (published 2026-10-23 17:40:04 UTC; categories: `nucl-th`, `hep-ex`, `hep-ph`, `nucl-ex`)
-- **Evidence for ranking:** The paper is cross-listed in four nuclear and high-energy physics areas and directly targets theoretical uncertainty in nuclear matrix elements relevant to experimental searches.
-- **Claimed result:** The authors construct effective shell-model decay operators through next-to-next-to-leading order in two-body currents and introduce next-to-next-to-next-to-leading-order three-body currents for the three candidate isotopes.
-- **Evidence type:** theoretical; shell-model calculations using chiral effective-field-theory Hamiltonians and decay operators.
-- **Caveat:** The matrix elements retain uncertainties from finite nuclear-model spaces and truncation of the chiral expansion; quantifying those uncertainties is the stated purpose, not a resolved experimental decay measurement.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
-
-### 8. [Introducing the GION Lightcone Simulation Suite for Multi-Wavelength Large-Scale Structure Cosmology](https://arxiv.org/abs/2610.32388)
-- **Abstract:** The authors release a suite of ten full-sky cosmological lightcone simulations and multi-wavelength mock observables, validated against theoretical statistics and intended for analyses of Stage-IV surveys.
-- **Authors:** Ken Osato, Satoshi Tanaka, Tomoaki Ishiyama, Hironao Miyatake, Takahiro Nishimichi, Masato Shirasaki
-- **arXiv:** `2610.32388v1` (published 2026-10-23 09:15:19 UTC; categories: `astro-ph.CO`)
-- **Evidence for ranking:** The paper describes a reusable 10-lightcone simulation suite and a public data release, including halo catalogs, mock galaxies, weak-lensing maps, and thermal/kinematic Sunyaev–Zel'dovich maps.
-- **Claimed result:** The authors report that the suite's matter/halo statistics and multi-wavelength angular power spectra agree with theoretical predictions, including weak-lensing/tSZ cross-correlations.
-- **Evidence type:** computational; ten full-sky, high-resolution GINKAKU N-body lightcone simulations extending to redshift 5, with public data at [GION_Data_Release](https://github.com/GION-simulations/GION_Data_Release).
-- **Caveat:** Validation is against theoretical predictions and internal cross-statistics, not a direct validation against survey observations; use in survey analyses still requires modeling observational systematics.
-- **Announcement type:** new submission, 26 October 2026 announcement batch
-- **Themes:** Cosmology & gravitation; Computational & data methods
 
 ## Trending Research Themes
 
-- Data-rich inference and reusable cosmology assets: the GWTC-5 analysis resolves black-hole population structure using catalog-wide hierarchical inference (Hussain et al.); GION supplies simulated lightcones and linked weak-lensing/Sunyaev–Zel'dovich observables for survey-method development (Osato et al.). These use distinct data products and are not independent confirmations of one another.
-- Quantum error correction and computation move toward logical operations: the superconducting-processor study combines surface-code memory, lattice-surgery entanglement, and teleportation (Harper et al.). It is a single hardware demonstration, not evidence of broad device-independent performance.
-- New measurement access to condensed-matter dynamics and band structure: nano-ARPES reveals a flat band at M in twisted bilayer graphene (Feraco et al.), while electron-wavefront microscopy maps hypersound and interface effects in a van der Waals material (Otto et al.). The methods and samples differ; the shared signal is broader momentum- and time-resolved access to material behavior.
-- Hard-regime calculations and uncertainty control: complex-Langevin lattice QCD reaches the physical pion mass at high temperature and density (Mandl et al.); chiral-EFT shell-model operators quantify corrections relevant to neutrinoless double-beta decay (Lyu et al.). These are distinct computational frameworks, each limited by its own approximation or convergence regime.
-- Constraints from large detector datasets: LZ recoil data constrain atmospheric-neutrino up-scattering scenarios (Aristizabal Sierra et al.), complementing catalog-level inference in gravitational-wave astronomy (Hussain et al.) without implying a shared facility or physical mechanism.
+- **Multi-instrument observations and large samples:** Keck/Gemini track 3I/ATLAS over many epochs, JWST combines nine fields and spectroscopic checks for early-galaxy luminosity functions, and GWTC-5 supports a 259-event black-hole population analysis. These are different targets and data products, not independent confirmations of one result.
+- **Forward models for interpretation:** The Galactic-center excess paper compares time-variable simulated gamma-ray emission with Fermi-LAT residuals, while the GWTC-5 study uses flexible population mixtures and likelihood-variance control. These methods address distinct questions and systematics.
+- **Logical quantum operations:** The superconducting-processor paper demonstrates lattice-surgery entanglement and teleportation beyond memory benchmarks. This is an isolated signal in this batch, not a cross-paper trend.
+- **Spectroscopy beyond conventional targets:** 3I/ATLAS is characterized across optical and near-IR bands, while nano-ARPES maps a flat band at M in twisted graphene. These are separate applications of complementary instruments, not evidence for a shared mechanism.
 
 ## Open Problems and Research Directions
 
-- **Author-stated open problem — logical operations at scale:** The processor paper frames the demonstration as a prototype and says further progress is needed before industry-relevant computation; its Bell-state analysis also bounds fidelity using XX and ZZ rather than full Y-basis tomography (Harper et al.). **Suggested direction:** repeat logical entanglement and teleportation across devices and layouts, improve readout/tomography, and test performance with reduced reliance on post-selection.
-- **Author-stated open problem — black-hole population degeneracy:** A fourth inferred subpopulation is degenerate with existing features, and the spin groups overlap in parts of parameter space (Hussain et al.). **Suggested direction:** test the inferred mixture structure against alternative population models and future GW catalogs, with explicit injection/recovery and selection-effect checks.
-- **Author-stated open problem — lower-temperature finite-density QCD:** Drift-term singularities currently restrict the complex-Langevin calculations to high temperatures (Mandl et al.). **Suggested direction:** investigate stabilization or alternative finite-density lattice methods and compare observables in overlapping regions before extending toward lower temperatures.
-- **Author-stated open problem — full momentum-space coverage:** The twisted-bilayer study argues that probing beyond K is needed to capture electronic states across the Brillouin zone (Feraco et al.). **Suggested direction:** map the full zone across multiple twist angles and structural-relaxation conditions to determine how general the M-point feature is.
-- **Author-stated open problem — nuclear matrix-element uncertainty:** Finite model-space and chiral-expansion truncations remain uncertainty sources in the double-beta-decay operators (Lyu et al.). **Suggested direction:** extend order-by-order calculations and benchmark the resulting matrix elements across the three candidate isotopes and independent nuclear methods.
-- **Synthesis — simulation-to-survey validation:** GION's reported checks are against theoretical predictions, while the LZ paper demonstrates how real detector data can constrain specific interaction models (Osato et al.; Aristizabal Sierra et al.). A concrete next step is to quantify survey selection and calibration effects using the released mocks, and to report which conclusions remain stable when those observational effects are varied.
+- **Author-stated open problem — 3I/ATLAS:** The water-ice feature is not robust to the tested continuum/calibration choices, and dust-loss conversion depends on grain and nucleus assumptions. **Follow-up synthesis:** repeat calibrated near-IR spectroscopy and multi-band monitoring, and test the inferred mass loss under alternative grain-size and nucleus models. [2610.32972]
+- **Author-stated open problem — GWTC-5:** The number and properties of inferred subpopulations are sensitive to modeling choices, while an added fourth component is degenerate. **Follow-up synthesis:** compare alternative mixture structures and selection-function treatments as additional LVK events accumulate, rather than equating current components with formation channels. [2610.32935]
+- **Author-stated open problem — JWST:** The authors request deeper imaging/spectroscopy near 30 mag and more spectroscopy at the bright end (≲26 mag). **Follow-up:** test the reported z≈7.4 faint-end slope and z≈10 bright-end behavior with those data. [2610.32307]
+- **Author-stated open problem — Galactic-center excess:** Current diffuse-emission templates may miss time-dependent cosmic-ray transport. **Follow-up synthesis:** build time-dependent Fermi-LAT templates and test whether the simulated spectral and spatial residuals remain consistent across independent Milky Way analogues. This would test a proposal, not assume the excess is explained. [2610.32845]
+- **Research-direction synthesis — logical qubits and twisted graphene:** Test logical Bell-state and teleportation performance across less selectively configured devices and larger code distances [2610.32347]; map twisted graphene across more angles and the full Brillouin zone to determine whether the M-point band is reproducible and how it evolves [2610.32714].
 
 ## Takeaway
 
-The most compelling entries today are substantial demonstrations or analysis infrastructure: logical-qubit operations, multi-population gravitational-wave inference, physical-mass finite-density QCD calculations, and an openly described cosmological simulation suite. Their scientific promise is clearer than their popularity: this is a same-day announcement snapshot, and the most important unresolved issues are model dependence, experimental systematics, and validation beyond the reported setups.
+The strongest signals in this batch are data-rich observations and experiments probing beyond established measurement baselines. The results remain constrained by model choices, calibration and sample dependence, and follow-up measurements; none should be read as a settled explanation of the Galactic-center excess, a confirmed early-universe luminosity-function shape, or scalable fault-tolerant quantum computing.
 
 ## Method and sources
 
-- **Window:** Daily, 26 October 2026 announcement batch; exact window 2026-10-26 through 2026-10-26. This is today's batch, not a prior announcement day. Snapshot: 2026-10-26 17:25:50 UTC.
-- **Archive coverage:** Checked current arXiv recent listings for physics, astro-ph, cond-mat, gr-qc, hep-ex, hep-lat, hep-ph, hep-th, nucl-ex, nucl-th, and quant-ph. The 11 pages contained 460 category appearances; deduplication by versionless arXiv ID yielded 350 unique papers. The eight retained abstracts were individually checked on arXiv; the first three full texts were inspected for methods/results and stated limitations.
-- **Ranking:** arXiv provides no official trending or readership ranking. The ordering is inferred from concrete results, dataset or method breadth, cross-listing, reusable data/code, and paper-specific evidence. Semantic Scholar's current citation and influential-citation totals are zero for all eight selected works; citations therefore do not distinguish their positions. No robust independent scientific coverage was confirmed in the title searches checked. The report calls these notable recent papers rather than measured popularity.
-- **Source and retrieval note:** Metadata and date/version records were checked against arXiv's announcement listings and Atom API; selected abstracts and full texts were checked at their linked arXiv pages. Semantic Scholar Graph API was checked for citation metadata. Title searches used web search. The configured `web_extract` backend was search-only and could not extract pages, so arXiv pages were verified directly in the browser instead.
-- **Archive listing pages:** [physics](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), [quant-ph](https://arxiv.org/list/quant-ph/recent).
+- **Window:** daily; 2026-10-26 through 2026-10-26, the Monday announcement batch only. Snapshot: 2026-10-27 01:24:54 UTC. Because the run was early Tuesday and no Tuesday batch had appeared, the prior batch was used.
+- **Archive coverage:** checked the latest pages for `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. The pages showed 458 category entries; deduplication by versionless arXiv ID yielded 348 distinct entries. Counts by archive were physics 86, astro-ph 75, cond-mat 97, gr-qc 32, hep-ex 13, hep-lat 5, hep-ph 23, hep-th 38, nucl-ex 7, nucl-th 10, and quant-ph 72. The six selected abstracts and version histories were checked on arXiv; HTML full text was inspected for the leading qubit, GWTC-5, and 3I/ATLAS papers.
+- **Inference:** these six are presented as notable recent papers, not measured popularity. Placement prioritizes concrete datasets or instrument demonstrations, cross-subfield relevance, and reported results. No numeric trend score is used.
+- **Attention evidence:** a Semantic Scholar Graph citation lookup was rate-limited (HTTP 429), so citation counts and momentum are not reported. Web search did not provide reliable independent coverage sufficient to establish a popularity ranking. Retrieval limitations are noted here, not treated as evidence for placement.
+- **Sources:** [arXiv physics recent](https://arxiv.org/list/physics/recent), [astro-ph recent](https://arxiv.org/list/astro-ph/recent), [cond-mat recent](https://arxiv.org/list/cond-mat/recent), [gr-qc recent](https://arxiv.org/list/gr-qc/recent), [hep-ex recent](https://arxiv.org/list/hep-ex/recent), [hep-lat recent](https://arxiv.org/list/hep-lat/recent), [hep-ph recent](https://arxiv.org/list/hep-ph/recent), [hep-th recent](https://arxiv.org/list/hep-th/recent), [nucl-ex recent](https://arxiv.org/list/nucl-ex/recent), [nucl-th recent](https://arxiv.org/list/nucl-th/recent), [quant-ph recent](https://arxiv.org/list/quant-ph/recent). Paper-specific sources are linked in each title; HTML full text was inspected at [2610.32347](https://arxiv.org/html/2610.32347), [2610.32935](https://arxiv.org/html/2610.32935), and [2610.32972](https://arxiv.org/html/2610.32972).

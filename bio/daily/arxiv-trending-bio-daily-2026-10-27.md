@@ -1,102 +1,94 @@
 # arXiv Biology & Biomedicine — Daily Brief (27 October 2026)
 
-Today's 27 October arXiv announcement batch yields seven notable biology/biomedicine papers in this focused selection. The strongest concentration is in computational molecular methods—protein binder design, CRISPR-screen interpretation, miRNA benchmarking, and RNA simulation data—with one externally validated medical-imaging model and one theory paper. This is a relevance-ranked selection, not a measured popularity chart: arXiv has no official trending chart, citation/attention evidence is sparse, and its biomedical coverage is incomplete relative to bioRxiv, medRxiv, and the broader medical literature. Spoken agenda: what is experimentally checked, what remains computational, and where validation is still needed.
+## Headline
+
+The latest 27 October announcement batch contains six verifiable biology and biomedical papers in the configured arXiv categories. The clearest pattern is computational methods tied to experimental or measurement work—DNA read reconstruction, label-free live-cell imaging, and radionuclide production—alongside cardiovascular and cell-growth models. Spoken agenda: what is measured versus simulated, and which validation gaps remain. This is a relevance-ranked “notable recent papers” list, not a popularity chart: arXiv has no official trending chart, and its biomedical coverage is incomplete compared with bioRxiv, medRxiv, and the wider medical literature.
 
 ## Notable recent papers
 
-Ranked by demonstrated relevance to molecular biology and biomedicine, then by the kind and breadth of reported evidence—not by presumed readership. All seven are v1 submissions listed in the 27 October batch; original submission timestamps are preserved below.
+Ranked by direct biology/biomedicine relevance and the nature of author-reported evidence, not by presumed readership. Attention signals are sparse for this very recent batch; no citation momentum or readership claim is made. New submissions and revisions are distinguished below.
 
-### 1. [Agent-guided epitope excision enables economical de novo binder design](https://arxiv.org/abs/2610.33195)
-- **Abstract:** The authors crop protein targets to local binding-site windows and combine this with an agent-guided design loop, reporting faster structure-design computation and yeast-display-enriched binders, including four tested clones with nanomolar apparent affinity.
-- **Authors:** Jun W. Kim, Artiom Myaskovsky, Oscar Donosa, Lawrence Chan, Jamie Rogers, Avinatan Hassidim, Yossi Matias, Annalisa Pawlosky
-- **arXiv:** `2610.33195v1` (published 2026-10-23 18:42:14 UTC; categories: `q-bio.BM`)
-- **Evidence for ranking:** Direct protein-design relevance; 15-target/3,666-design benchmark and wet-lab yeast-display follow-up on FAP. Semantic Scholar snapshot: 0 citations and 0 influential citations, so no citation-momentum claim.
-- **Claimed contribution:** The preprint reports a median interface Cα RMSD of 0.37 Å for cropped versus full targets and about 88% lower RFdiffusion/AlphaFold3 GPU time for one FAP epitope. At a fixed budget, the human-in-the-loop arm's computational hit rate was 9.33% versus 5.06% for the PI-alone arm; yeast display recovered enriched designs, and four representative clones showed apparent K_D values of 3.0–9.1 nM.
-- **Caveat:** Wet-lab evidence is yeast display, not in-vivo efficacy or therapeutic validation. The autonomy comparison used one large target (FAP), one backbone class, and one LLM controller; the authors identify soluble-binder characterization, FAP specificity, and inhibition assays as future work.
+### 1. [ACOR: incremental evidence accumulation towards real-time DNA storage reconstruction](https://arxiv.org/abs/2610.36500)
+- **Abstract:** ACOR incrementally accumulates evidence from sequencing reads and reconstructs DNA-storage sequences at cluster closure, with tests on simulated and real datasets including the authors’ own short-read NGS library.
+- **Authors:** Linxuan Han, Huaming Wu, Shi Jia, Guanjin Qu
+- **arXiv:** `2610.36500v1` (published 2026-10-27 01:58:03 UTC; categories: `cs.IR` (primary), `q-bio.GN`)
+- **Evidence for ranking:** Cross-listed in genomics; the paper reports real and simulated DNA-storage evaluations, including a wet-lab NGS library with 96,055 designed sequences and 17.7 million assigned read observations.
+- **Claimed contribution:** The authors report 99.9844% exact reconstruction at k=15 on their full NGS library. Their streaming design stores k-mer transition and boundary evidence before a single consensus decoding step, avoiding repeated full-cluster reconstruction as reads arrive.
+- **Caveat:** Current evaluations receive already-assigned clusters, known design lengths, and externally determined cluster closure; therefore they do not yet test an end-to-end live pipeline. The paper also identifies difficult long-sequence errors and reference-free parameter selection as open issues.
 - **Announcement type:** new submission, 27 October 2026 batch
-- **Themes:** Biochemistry & proteins; Quantitative methods
+- **Themes:** DNA & genomics; Bioinformatics & sequence analysis
 
-### 2. [Escaping cells dilute CRISPR screen responses unequally across cell types](https://arxiv.org/abs/2610.35508)
-- **Abstract:** Reanalysis of published single-cell CRISPR screens estimates the fraction of measured cells that escaped effective knockdown and argues that this cell-type-dependent fraction can dilute perturbation responses and distort cross-cell comparisons and benchmarks.
-- **Authors:** Xuanrui Huang
-- **arXiv:** `2610.35508v1` (published 2026-10-26 14:33:48 UTC; categories: `q-bio.QM`)
-- **Evidence for ranking:** A methodological result spanning published screens in 13 cell types/states, with per-perturbation estimates possible in seven datasets and checks against simulated mixtures and independent-replicate dilution. Semantic Scholar snapshot: 0 citations and 0 influential citations.
-- **Claimed contribution:** The author defines an escape fraction estimated from each cell's target-gene counts. In the reported analyses, it rose with gene essentiality and reached roughly one half in human embryonic stem cells for some essential perturbations; the estimated fraction tracked response dilution and affected a simple cross-cell transfer model and benchmark scoring.
-- **Caveat:** This is a reanalysis, not a new controlled CRISPR experiment. The inferred escape fraction is validated against simulations and measured dilution, not an independent per-cell protein-level measurement; datasets differ by study and protocol, and the paper notes limits to generalization beyond the cultured perturbation screens examined.
-- **Announcement type:** new submission, 27 October 2026 batch
-- **Themes:** Molecular & cell biology; Omics & single-cell methods; Quantitative methods
+### 2. [Video-rate quantitative phase and polarimetric imaging (QP2I) for label-free imaging of contracting muscle cells](https://arxiv.org/abs/2610.32756)
+- **Abstract:** QP2I combines quantitative phase and polarimetric imaging in a single-shot, video-rate setup based on a differential-interference-contrast microscope and polarization camera, demonstrated on reference targets, fixed tissue, and live cardiomyocytes.
+- **Authors:** Lucas Kreiss Roohian, Nachiket Pathak, David Ripp, Mitchell Harling, Nils M. Kronenberg, Marcel Schubert, Malte C. Gather
+- **arXiv:** `2610.32756v3` (published 2026-10-27 10:10:06 UTC; categories: `physics.optics` (primary), `q-bio.QM`)
+- **Evidence for ranking:** A substantive v3 revision in the batch; authors report validation on simulations, reference targets, fixed muscle tissue, and living cells, with video-rate acquisition reported up to 70 fps.
+- **Claimed contribution:** The preprint combines a regularized phase-reconstruction method with Stokes-based retardance reconstruction to provide structural and functional optical readouts, including sarcomere length and retardance changes during contraction.
+- **Caveat:** Evidence is optical-method validation and cell-level demonstration, not clinical testing. The authors note limitations including phase-gradient wrapping, ambiguities in strongly birefringent samples, and reduced effective resolution from the polarization-camera pixel arrangement.
+- **Announcement type:** revision (v3; first submitted 23 October 2026), 27 October 2026 batch
+- **Themes:** Medical physics & imaging; Molecular & cell biology; Quantitative methods
 
-### 3. [Benchmarking miRNA Target Prediction Methods](https://arxiv.org/abs/2610.33960)
-- **Abstract:** Seven miRNA–mRNA prediction tools are compared over about 59.7 million candidate pairs using an evidence-graded reference combining two validated-interaction databases with paired RNA-seq evidence from an iPSC cohort.
-- **Authors:** Congliang Jin, Weibo Niu, Zhexing Wen, Zhaohui S Qin, Ximing Ran
-- **arXiv:** `2610.33960v1` (published 2026-10-25 00:23:22 UTC; categories: `q-bio.GN`, `q-bio.QM`)
-- **Evidence for ranking:** Cross-listed in genomics and quantitative biology; accepted for presentation at IEEE BIBM 2026 per the arXiv comment. The comparison covers seven tools and 59,734,204 candidate pairs. Semantic Scholar snapshot: 0 citations and 0 influential citations.
-- **Claimed contribution:** The authors report that TargetScan and miRDB maintained Type I error below 0.05 across their settings but had limited power; mirDIP had the highest power but more false positives. No tool led on every metric, so they recommend selecting tools and cutoffs according to the intended sensitivity/specificity trade-off.
-- **Caveat:** The expression component comes from one iPSC cohort—five 22q11.2 deletion syndrome donor lines and five controls—and the reference combines incomplete databases with expression-derived evidence rather than a gold-standard assay for all pairs. Transfer to other tissues or disease contexts remains untested.
-- **Announcement type:** new submission, 27 October 2026 batch
-- **Themes:** RNA & transcriptomics; Bioinformatics & sequence analysis; Quantitative methods
-
-### 4. [mdRNAcat: A Molecular Dynamics RNA Catalog of REST2 Conformational Ensembles](https://arxiv.org/abs/2610.35204)
-- **Abstract:** The paper releases a curated all-atom molecular-dynamics dataset for 48 RNA systems, with coordinates, forces, structural annotations, and replica-exchange metadata intended for training and evaluating data-driven RNA models.
-- **Authors:** Anton E. Dorn, Emile de Bruyn, Fabrice von der Lehr, Philipp Knechtges, Stefan Kesselheim, Alexander Schug
-- **arXiv:** `2610.35204v1` (published 2026-10-26 10:56:24 UTC; categories: `q-bio.BM`, `cs.LG`, `physics.bio-ph`)
-- **Evidence for ranking:** Cross-listed across biomolecules, machine learning, and biological physics; dataset scale and downloadable HDF5-format trajectories make this a reusable molecular-method resource. Semantic Scholar snapshot: 0 citations and 0 influential citations.
-- **Claimed contribution:** The authors report REST2 simulations with 32 Hamiltonian states and 200–300 ns production per state, plus force labels evaluated at the sampled and unscaled reference Hamiltonians. They characterize sampling, exchange, base pairing, and sugar-pucker distributions.
-- **Caveat:** These are simulation ensembles, not experimental observations of RNA conformational populations. Coverage is 48 selected systems, and force-field/sampling choices bound what downstream models can learn; experimental cross-validation is needed before treating the ensembles as a complete physical reference.
-- **Announcement type:** new submission, 27 October 2026 batch
-- **Themes:** RNA & transcriptomics; Biochemistry & proteins; Bioinformatics & sequence analysis
-
-### 5. [MechGate: combining mechanism-derived measures of permeation and efflux to screen small molecule drugs targeting Escherichia coli](https://arxiv.org/abs/2610.33809)
-- **Abstract:** MechGate combines separate computational measures of porin and membrane permeation, efflux, and antibacterial activity to diagnose which modeled barrier may impede candidate small molecules against E. coli.
-- **Authors:** Lang Qin, Jagath C Rajapakse
-- **arXiv:** `2610.33809v1` (published 2026-10-24 17:14:30 UTC; categories: `q-bio.BM`)
-- **Evidence for ranking:** Mechanism-focused antibiotic screening with an external set of marketed antibacterials; the authors report precision of 0.789–0.873 for component measures and 0.92 for their combined rule, versus baselines near 0.44. Semantic Scholar snapshot: 0 citations and 0 influential citations.
-- **Claimed contribution:** The preprint presents five readouts from SMILES input and argues that separate measures make predicted failures more interpretable than a single aggregate score.
-- **Caveat:** This is computational screening, not an antibacterial efficacy experiment. The authors report that public source libraries are separable by physicochemical properties and therefore construct comparisons within each library; external validation on experimentally measured, prospectively selected compounds is still needed.
-- **Announcement type:** new submission, 27 October 2026 batch
-- **Themes:** Biochemistry & proteins; Biomedical & translational medicine; Quantitative methods
-
-### 6. [Regional prediction of hematoma expansion from non-contrast computed tomography in spontaneous intracerebral hemorrhage patients](https://arxiv.org/abs/2610.34645)
-- **Abstract:** A regional transport-based morphometry model is derived on one intracerebral-hemorrhage cohort and tested on a separate archive to predict hematoma expansion from admission CT scans.
-- **Authors:** Natasha Ironside, Hongyu Kan, Kristofor Pas, Mohammad Shifat-E-Rabbi, Benjamin Newman, Shinjini Kundu, Kareem El Naamani, Tanvir Rizvi, Andrea Becerril-Gaitan, Harrison Snyder, Aarathi Manchikalapudi, Sarah Ratcliffe, Stacie L. Demel, Carl D. Langefeld, Daniel Woo, Stephan Mayer, E. Sander Connolly, Gustavo Rohde, for the ERICH Investigators, the VISTA-ICH collaboration
-- **arXiv:** `2610.34645v1` (published 2026-10-26 00:11:24 UTC; categories: `cs.CV`, `q-bio.TO`)
-- **Evidence for ranking:** Direct biomedical imaging question and an explicit derivation/validation split: 574 ERICH patients and 196 VISTA-ICH patients. The combined regional model's reported validation AUROC was 0.787. No Semantic Scholar Graph match was returned at snapshot time.
-- **Claimed contribution:** The authors report that regional transport-based features captured size, heterogeneity, eccentricity, and peripheral density patterns, and outperformed the comparator methods they evaluated in the validation dataset.
-- **Caveat:** This is retrospective model validation, not evidence of improved clinical decisions or patient outcomes. The abstract calls the evidence preliminary; independent prospective validation, calibration, and assessment across acquisition sites would be needed before clinical-use claims.
+### 3. [Optimization of 99mTc proton-induced production by means of cross-section measurements of technetium radioisotopes from molybdenum targets](https://arxiv.org/abs/2610.36949)
+- **Abstract:** The authors measure proton-induced reaction cross-sections on solid molybdenum targets and use them to assess technetium radionuclide production and optimize a cyclotron-based route to 99mTc.
+- **Authors:** Dellepiane Gaia, D'Uva Sofia, Eggimann Lars, Gottstein Alexander, Juillerat Samuel, Kasanda Eva, Mateu Isidre, Scampoli Paola, Kadenko Ihor, Braccini Saverio
+- **arXiv:** `2610.36949v1` (published 2026-10-27 10:10:48 UTC; categories: `nucl-ex` (primary), `physics.med-ph`)
+- **Evidence for ranking:** Cross-listed in medical physics; the abstract and full paper report measured reaction cross-sections and production tests, rather than only a computational proposal.
+- **Claimed contribution:** The authors identify approximately 16 MeV protons and a roughly 0.5 mm highly enriched 100Mo target as suitable conditions. They calculate about 1.7 GBq/μA after a 10-hour irradiation while estimating radionuclidic purity within European Pharmacopoeia limits.
+- **Caveat:** The yield is calculated from the study’s measurements and the production tests are feasibility evidence; this does not establish routine-scale supply, clinical deployment, or patient outcomes.
 - **Announcement type:** new submission, 27 October 2026 batch
 - **Themes:** Biomedical & translational medicine; Medical physics & imaging; Quantitative methods
 
-### 7. [Tau creates spatially moving hotspots of amyloid-β secondary nucleation: a reaction-diffusion model](https://arxiv.org/abs/2610.33981)
-- **Abstract:** A reaction-diffusion model predicts that tau-driven amyloid-β nucleation can create a moving spatial maximum in secondary-nucleation activity as fibril growth depletes free monomer near the source.
-- **Authors:** Andrey V. Kuznetsov
-- **arXiv:** `2610.33981v1` (published 2026-10-25 01:39:16 UTC; categories: `q-bio.SC`)
-- **Evidence for ranking:** A molecular mechanism question in subcellular-processes research, with explicit transport/turnover parameters and testable spatial predictions. No Semantic Scholar Graph match was returned at snapshot time; the ranking here reflects topic relevance, not measured attention.
-- **Claimed contribution:** The author derives a condition for an interior nucleation-rate maximum and uses simulations to show a possible separation between tau burden, fibril-mass growth, and instantaneous amyloid-β secondary-nucleation activity.
-- **Caveat:** This is a theoretical model, not an experiment or clinical finding. The predicted spatial pattern depends on assumptions about oligomer transport, exchange, and site density; it should be treated as a hypothesis for spatially resolved biochemical testing.
+### 4. [Bodyseismography (BSG): Theoretical Foundation and Numerical Modeling](https://arxiv.org/abs/2610.35844)
+- **Abstract:** BSG models how cardiac excitation and body/bed transmission jointly shape contactless cardiovascular vibration measurements, with participant-specific numerical modeling and controlled stroke-volume perturbations.
+- **Authors:** WenZhan Song, Yuanyuan Zhang, Yuyan Wu, Sahas Biddappa, Yida Zhang, Jiayu Chen, Zixuan Zeng, Yixuan Li, Jiahui Li, Fei Dou, Zhenlin An, Hae Young Noh, Young Kwon
+- **arXiv:** `2610.35844v2` (published 2026-10-27 03:59:10 UTC; categories: `eess.SP` (primary), `physics.med-ph`)
+- **Evidence for ranking:** Substantive v2 revision; the numerical analysis covers 27 participants and reports matched-window waveform correlations for vertical and planar-sum channels.
+- **Claimed contribution:** The authors report median Pearson correlations of 0.865 (vertical) and 0.682 (planar-sum) for waveform reconstruction; modeled transmission reversed a vertical feature association in 8 of 27 participant-specific transfer models.
+- **Caveat:** This is a theoretical and numerical modeling study, not a prospective clinical validation of stroke volume, cardiac output, or blood-pressure measurement. The reported correlations concern waveform reconstruction in the modeled setting.
+- **Announcement type:** revision (v2; first submitted 26 October 2026), 27 October 2026 batch
+- **Themes:** Biomedical & translational medicine; Medical physics & imaging; Quantitative methods
+
+### 5. [Multiscale MIGHT: Modeling Local and Systemic Particle Transport in the Cardiovascular System](https://arxiv.org/abs/2610.35618)
+- **Abstract:** Multiscale MIGHT models signaling-molecule transport through branched local vessels and closed-loop systemic circulation, incorporating organ clearance and chemical degradation.
+- **Authors:** Theofilos Symeonidis, Timo Jakumeit, Fardad Vakilipoor, Robert Schober, Maximilian Schäfer
+- **arXiv:** `2610.35618v2` (published 2026-10-27 09:09:33 UTC; categories: `q-bio.QM`)
+- **Evidence for ranking:** Substantive v2 revision; the authors compare the closed-loop approximation against COMSOL finite-element simulations and report whole-body simulations across transmitter locations and signaling-molecule species. The arXiv comment says the work was submitted to IEEE ICC 2027.
+- **Claimed contribution:** The model joins vessel-level topology with a whole-body circulation representation. Its simulations predict that later recirculation passes become dispersed and are governed mainly by systemic organ clearance and degradation rather than local vessel geometry.
+- **Caveat:** Validation is against numerical simulation, while the whole-body examples are model-based; the paper does not report biological tracer experiments. The systemic circulation is represented with lumped organ blocks outside the detailed local network.
+- **Announcement type:** revision (v2; first submitted 26 October 2026), 27 October 2026 batch
+- **Themes:** Biomedical & translational medicine; Quantitative methods
+
+### 6. [Stationary Action Principles for Neuronal Growth](https://arxiv.org/abs/2610.36463)
+- **Abstract:** The paper develops stochastic and mechanics-based variational models for axonal growth on patterned or stiffness-varying substrates, predicting most-probable paths and turning behavior at stiffness boundaries.
+- **Authors:** Nathan Brodeur, Cristian Staii
+- **arXiv:** `2610.36463v1` (published 2026-10-27 01:15:25 UTC; categories: `q-bio.CB` (primary), `nlin.AO`, `q-bio.NC`, `q-bio.QM`)
+- **Evidence for ranking:** Cross-listed across cell behavior, quantitative biology, and neuronal research; the contribution offers explicit, testable trajectory predictions linking drift, diffusion, substrate stiffness, traction, and growth direction.
+- **Claimed contribution:** The authors derive a stochastic path action for growth on periodic micropatterns and a Fermat-like action for stiffness-dependent traction, including an approximate Snell-like relation and a critical-angle condition.
+- **Caveat:** These are theoretical/model-derived predictions, not new neuronal-growth experiments. The stochastic and quasi-static descriptions have distinct assumptions and validity regimes, so experimental agreement remains to be established.
 - **Announcement type:** new submission, 27 October 2026 batch
-- **Themes:** Biochemistry & proteins; Molecular & cell biology; Quantitative methods
+- **Themes:** Molecular & cell biology; Quantitative methods
 
 ## Trending Research Themes
 
-Within this seven-paper selection, three recurring threads stand out; they are themes in this small corpus, not proof of a field-wide shift.
+These are recurring motifs in this six-paper selection, not evidence of a field-wide shift.
 
-- **Benchmark reliability and measurement bias:** The CRISPR-screen paper identifies guide-escape and depletion as sources of attenuated perturbation effects; the miRNA benchmark makes tool rankings depend on evidence thresholds and a cohort-derived reference; MechGate reports source-library separability that can confound apparent performance. Together they emphasize checking what labels and benchmark splits actually measure.
-- **Scaling computational biology without mistaking speed for validation:** The binder-design paper reduces compute cost and adds yeast-display experiments, while mdRNAcat contributes reusable RNA simulation data. Both make computational workflows more scalable, but the evidence boundary differs: one has limited experimental binder readouts; the other is a simulation resource.
-- **A range of translational evidence levels:** The hematoma model includes a retrospective external cohort; the binder study includes yeast-display enrichment and a small clone-binding assay; MechGate and the tau study remain computational. These are distinct forms of evidence and should not be pooled as equivalent demonstrations of clinical or biological efficacy.
+- **Computation paired with measurement:** ACOR is evaluated on sequencing reads from a wet-lab DNA-storage library; QP2I is tested on fixed tissue and living cardiomyocytes; and the 99mTc paper reports cross-section measurements plus production tests. The validation types differ, from sequence reconstruction metrics to optical and radionuclide-production tests.
+- **Models connecting local measurements to system-level biology:** BSG examines how transmission affects cardiovascular vibration signals, while Multiscale MIGHT connects local vessel structure to whole-body signaling-molecule transport. Both are modeling contributions; BSG’s reported participant-specific fits and MIGHT’s COMSOL comparison are not equivalent to independent biological validation.
+- **Mechanics as a determinant of biological trajectories or signals:** BSG and Stationary Action Principles study how mechanical transmission or substrate stiffness changes observed cardiovascular signals or axonal paths. The latter remains a theoretical proposal, so this is a shared modeling lens, not a demonstrated common biological effect.
 
 ## Open Problems and Research Directions
 
-The papers support several concrete follow-ups. The binder-design authors identify soluble-expression binding characterization, FAP-domain specificity, and catalytic inhibition as next steps; expanding the comparison to more target classes and scaffold families would test whether the compute and agent-autonomy results generalize. For CRISPR screens, an intervention that prevents depletion of successfully perturbed cells, paired with direct per-cell protein/knockdown measurements and matched harvest times, could distinguish true cell-type response differences from survivor and guide-escape effects. The miRNA benchmark would benefit from independent, tissue-diverse cohorts and held-out biochemical interaction assays, while preserving strict separation between tool-development data and evaluation labels. For MechGate, prospective testing on compounds chosen before assay results—with permeability, efflux, and growth measurements separated—could reveal whether the mechanism-level scores transfer beyond the reported libraries. mdRNAcat could be compared against orthogonal experimental ensemble measurements across its RNA targets. The hematoma model needs prospective, multi-site validation with calibration and decision-impact analyses. Finally, spatially resolved experiments that vary tau and amyloid-β gradients could test whether the modeled nucleation maximum moves independently of local tau or fibril mass. These are research proposals grounded in the reported limitations, not clinical recommendations.
+Several follow-ups are supported by limitations raised in the papers or by their evidence boundaries. For ACOR, test streaming end-to-end with online read assignment and cluster closure, then evaluate reference-free parameter selection and hard nanopore error cases across independent datasets. For QP2I, characterize phase-wrap and birefringence ambiguities across a larger panel of cell types, and compare long-duration sarcomere and retardance measurements against orthogonal reference assays. For the 99mTc route, independent cyclotron/target replication could quantify variation in measured cross-sections, radionuclidic purity, and realized yield under the proposed irradiation conditions. BSG would benefit from a held-out cohort with simultaneous reference hemodynamic measurements to test whether its modeled features generalize beyond waveform reconstruction. Multiscale MIGHT’s recirculation predictions could be compared with controlled tracer-transport measurements across vessel geometries and clearance conditions. Finally, controlled stiffness-gradient experiments could test the neuronal-growth model’s predicted turning paths and critical-angle behavior. These are research proposals, not clinical recommendations.
 
 ## Takeaway
 
-The most evidence-rich work today pairs computational efficiency or large-scale analysis with a defined validation boundary: the binder study has early in-vitro follow-up, the CRISPR and miRNA papers expose benchmark assumptions, and the imaging model has a separate retrospective cohort. The RNA dataset and tau model are useful resources or hypotheses, not experimental confirmation. No paper can be called popular from the available attention signals.
+Today’s batch is notable for methods that connect computation to biological or physical measurements, but their evidence spans very different levels: wet-lab sequencing, optical cell demonstrations, production tests, numerical modeling, and theory. The most promising next step across the set is independent validation under less controlled, more complete biological conditions; none of these papers can be called popular from the available attention evidence.
 
 ## Method and sources
 
-- **Window:** daily; announcement batch 27 October 2026. Start/end dates for the batch: 2026-10-27 to 2026-10-27. Snapshot: 2026-10-27 17:22 UTC. The current day's category listing contains a batch, so this is not a prior-batch substitute. The selected v1 records' first-submission timestamps range from 2026-10-23 to 2026-10-26 UTC; those timestamps are kept distinct from the batch date.
-- **Candidate scope:** official recent listings for `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, and `physics.med-ph`; cross-listed duplicates were deduplicated by versionless arXiv ID. A date-bounded API query for `cs.BI` returned no records in this date window. Selected abstract pages were verified against arXiv; the top three papers were also read beyond the abstracts (introduction, results, discussion/limitations) from their PDFs.
-- **Category query:** `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`, submitted-date descending. Daily batch membership was checked against category listings; selection was filtered for biology/biomedicine relevance.
-- **Ranking:** arXiv publishes no official trending or readership ranking. Semantic Scholar Graph was queried for `arXiv:<id>` using citation and influential-citation totals: the five matched selected records each returned 0 citations and 0 influential citations; two had no Graph match. These are current totals, not gains during the reporting window. No reliable independent attention signal was strong enough to support a popularity ranking, so entries are ordered by demonstrated biological/medical relevance and evidence type. A conference-acceptance comment is noted only where arXiv reports it.
-- **Coverage caveat:** arXiv is not representative of biomedical preprints; many clinical and experimental biology papers instead appear on bioRxiv or medRxiv. This report is not a systematic review or clinical evidence assessment.
-- **Primary sources:** [q-bio.BM recent](https://arxiv.org/list/q-bio.BM/recent), [q-bio.GN recent](https://arxiv.org/list/q-bio.GN/recent), [q-bio.MN recent](https://arxiv.org/list/q-bio.MN/recent), [q-bio.SC recent](https://arxiv.org/list/q-bio.SC/recent), [q-bio.CB recent](https://arxiv.org/list/q-bio.CB/recent), [q-bio.TO recent](https://arxiv.org/list/q-bio.TO/recent), [q-bio.QM recent](https://arxiv.org/list/q-bio.QM/recent), [physics.med-ph recent](https://arxiv.org/list/physics.med-ph/recent), and each linked arXiv abstract page above. Corroboration: Semantic Scholar Graph API (`ARXIV:<id>`; current citation totals) and arXiv comments for the BIBM acceptance statements.
+- **Window:** daily; latest announcement batch dated 2026-10-27. Batch window: 2026-10-27 through 2026-10-27. Snapshot: 2026-10-28 01:20 UTC. This uses the latest available batch, not a prior-batch substitute. New submissions were first submitted on 27 October; revisions are labeled with their original submission dates and latest version timestamps.
+- **Candidate pool:** one descending arXiv API query across the configured corpus—`q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, `cs.BI`, and `physics.med-ph`—returned 200 records down to 9 October, extending beyond the selected batch. Records first submitted or revised on 27 October were deduplicated by versionless ID; six relevant candidates with retrievable arXiv abstract pages were retained. One API result whose purported arXiv abstract page returned “article not found” was excluded. All retained abstract pages were checked; PDFs were read for ACOR, QP2I, and the 99mTc production study.
+- **Category query:** `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`, sorted by submitted date descending. Category coverage is limited to this configured arXiv corpus; it is not representative of biomedical preprints generally.
+- **Ranking:** arXiv has no official trending or readership ranking. Because independent discussion and verified attention/citation signals were sparse for this fresh batch, the list is ranked by direct relevance and the kind of author-reported evidence, with recency used only as context. No readership, download, or citation-momentum claim is made; no citation counts are reported.
+- **Coverage caveat:** Many experimental and clinical preprints appear on bioRxiv or medRxiv instead. This report is not a comprehensive review, clinical guideline, or patient-specific advice.
+- **Primary sources:** [q-bio.BM recent](https://arxiv.org/list/q-bio.BM/recent), [q-bio.GN recent](https://arxiv.org/list/q-bio.GN/recent), [q-bio.MN recent](https://arxiv.org/list/q-bio.MN/recent), [q-bio.SC recent](https://arxiv.org/list/q-bio.SC/recent), [q-bio.CB recent](https://arxiv.org/list/q-bio.CB/recent), [q-bio.TO recent](https://arxiv.org/list/q-bio.TO/recent), [q-bio.QM recent](https://arxiv.org/list/q-bio.QM/recent), [cs.BI recent](https://arxiv.org/list/cs.BI/recent), [physics.med-ph recent](https://arxiv.org/list/physics.med-ph/recent), and the linked arXiv abstract pages above. PDFs for the three papers read in depth: [ACOR](https://arxiv.org/pdf/2610.36500), [QP2I](https://arxiv.org/pdf/2610.32756), [99mTc production](https://arxiv.org/pdf/2610.36949).

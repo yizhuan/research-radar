@@ -5,291 +5,552 @@
   "date": "2026-10-28",
   "title": "GitHub Trending Summary - Daily - 2026-10-28",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-28.md",
-  "entry_count": 11,
+  "entry_count": 13,
   "entry_noun": "repositories",
-  "snapshot_time_utc": "2026-10-28 01:42 UTC",
-  "date_range": "2026-10-28 through 2026-10-28",
-  "ranking_basis": "GitHub Trending daily star gains for ten non-noise entries, with one separately labeled supplemental repo identified by recent creation and search activity.",
-  "ranking_explanation": "Trending entries are ordered by the displayed stars gained today: 2,830, 1,598, 1,465, 1,449, 1,395, 1,204, 1,165, 951, 777, and 617. The final entry is not part of the Trending ranking; it is a repository created within the two-day search window and is appended with stars_gained=null.",
-  "global_caveat": "Snapshot captured at 01:42 UTC, so GitHub's daily gains are partial-day values. Search-derived supplemental repository is not directly comparable with the Trending star-gain ranking. No prior-window comparison was used.",
+  "ranking_basis": "GitHub Trending daily star gains; a separately labeled fresh-repository addendum follows the ranked list.",
+  "ranking_explanation": "The 12 repositories present in the Today Trending scrape are ordered by displayed stars-today values (descending). The 13th repository, created within the last two days, was discovered via GitHub Search and appended outside that ranking because no daily star-gain value was available for it.",
+  "global_caveat": "GitHub Trending counts are a point-in-time daily signal, not a verified exact UTC rolling interval. Current total stars and branch SHAs were corroborated through the GitHub REST API. The fresh-repository addition has no daily star delta.",
   "themes": [
     {
-      "id": "agent-design-quality",
-      "name": "Design systems and quality checks for AI-generated interfaces",
-      "summary": "Repositories package visual direction, reusable design skills, browser iteration, and deterministic checks to make generated interfaces less generic.",
-      "supporting_repository_ids": ["01-hallmark", "04-impeccable", "05-ai-design-skills", "06-thinkrail"]
+      "id": "cloud-download-tools",
+      "title": "Cloud-drive download tooling",
+      "content": "LinkSwift leads the daily star-gain ranking with a multi-provider cloud-drive userscript (+3,209).",
+      "supporting_repository_ids": [
+        "01-hmjz100-linkswift"
+      ]
     },
     {
-      "id": "agent-workspaces-and-orchestration",
-      "name": "Persistent agent workspaces and orchestration",
-      "summary": "Multi-device continuity, isolated project contexts, reusable harness layers, and staged software-development methods extend agents beyond one chat or editor session.",
-      "supporting_repository_ids": ["03-cindy", "06-thinkrail", "07-ecc", "09-openbot", "10-superpowers"]
+      "id": "learning-apps",
+      "title": "AI-assisted learning",
+      "content": "DeepTutor is the clearest learning-focused signal, pairing personalized tutoring with a workspace, notebooks, and narrated lessons.",
+      "supporting_repository_ids": [
+        "02-hkuds-deeptutor"
+      ]
     },
     {
-      "id": "task-specific-ai-products",
-      "name": "Task-specific AI products",
-      "summary": "Agent workflows are applied to tutoring, social publishing, and short-form digital-human video production.",
-      "supporting_repository_ids": ["02-deeptutor", "08-postiz", "11-digital-human-koubo"]
+      "id": "agentic-frontend-design",
+      "title": "Design quality for coding agents",
+      "content": "Hallmark, Impeccable, and AI Design Skills turn visual direction into reusable agent workflows; the first two add structured checks, catalogs, or browser review.",
+      "supporting_repository_ids": [
+        "03-nutlope-hallmark",
+        "04-pbakaus-impeccable",
+        "05-elayadesign-ai-design-skills"
+      ]
+    },
+    {
+      "id": "agent-skills",
+      "title": "Portable agent skills and process",
+      "content": "Superpowers, AI Design Skills, and Expo Skills package repeatable workflows as skills/rules; Superpowers foregrounds planning, TDD, and subagents.",
+      "supporting_repository_ids": [
+        "06-obra-superpowers",
+        "05-elayadesign-ai-design-skills",
+        "11-expo-skills"
+      ]
+    },
+    {
+      "id": "agent-workspaces",
+      "title": "Persistent agent workspaces and IDEs",
+      "content": "Thinkrail, OpenBot, and Macro place agents inside adaptable IDE or team-workspace surfaces rather than treating them only as chat endpoints.",
+      "supporting_repository_ids": [
+        "07-jetbrains-thinkrail",
+        "08-nightly-labs-openbot",
+        "12-macro-inc-macro"
+      ]
+    },
+    {
+      "id": "agentic-applications",
+      "title": "Packaged AI applications",
+      "content": "DeepTutor, Cindy, OpenBot, Macro, and Superpowers span tutoring, general agents, collaboration, and agent workflow products.",
+      "supporting_repository_ids": [
+        "02-hkuds-deeptutor",
+        "09-makecindy-cindy",
+        "08-nightly-labs-openbot",
+        "12-macro-inc-macro",
+        "06-obra-superpowers"
+      ]
+    },
+    {
+      "id": "wireless-sensing",
+      "title": "Non-camera sensing",
+      "content": "RuView is a notable non-agent outlier, proposing Wi-Fi-based spatial and presence sensing.",
+      "supporting_repository_ids": [
+        "10-ruvnet-ruview"
+      ]
+    },
+    {
+      "id": "visual-creation-assets",
+      "title": "Visual-reference assets and galleries",
+      "content": "The newly created AI Pose Gallery repo packages localized visual-reference data and a static gallery; its bundled image rights require attention.",
+      "supporting_repository_ids": [
+        "13-anhao-ai-pose-gallery-zh"
+      ]
     }
   ],
+  "sources": {
+    "trending": "https://github.com/trending?since=daily",
+    "rest_api": "https://api.github.com/repos/{owner}/{repo}",
+    "search_query": "https://api.github.com/search/repositories?q=created:%3E%3D2026-10-26+stars:%3E100&sort=stars&order=desc&per_page=20",
+    "snapshot_time_utc": "2026-10-28T17:36:00Z"
+  },
   "sections": [
     {
       "id": "00-snapshot",
       "kind": "snapshot",
       "title": "Snapshot",
-      "content": "Snapshot time (UTC): 2026-10-28 01:42 UTC; Scope: Daily; Date range: 2026-10-28 through 2026-10-28; Ranking basis: GitHub Trending daily star gains, plus one separately labeled newly created repository from GitHub Search."
+      "content": "Snapshot time: 2026-10-28 17:36 UTC; scope: Daily; date range: 2026-10-28 through 2026-10-28; ranking basis: GitHub Trending daily star gains, with a GitHub Search fresh-repository addendum."
     },
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "AI-assisted interface design is today's clearest breakout: Hallmark, Impeccable, and AI Design Skills are all gaining quickly by packaging visual judgment as reusable agent workflows and checks. A second cluster is turning coding agents into persistent, multi-agent workspaces, while DeepTutor, Postiz, and Digital Human Koubo show agents moving into specific end-user jobs."
+      "content": "Coding-agent design and workflow tools dominate the daily signal, while LinkSwift leads all listed repos with +3,209 stars today and DeepTutor follows at +2,376. A newly created pose-gallery repo also surfaced in the last-two-days search, but is kept separate from the Trending star-gain ranking."
     },
     {
-      "id": "10-top-repositories",
-      "kind": "repository_group",
+      "id": "20-top-repositories",
+      "kind": "repository-list",
       "title": "Top Repositories",
-      "content": "Ten non-noise repositories from GitHub Trending are ranked by displayed daily star gains; one newly created repository from a two-day GitHub Search query is appended as a supplemental signal with no daily gain claimed."
+      "content": "1. **[hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) - A JavaScript userscript that extracts direct-download links from major Chinese cloud-drive services.**\n\n  **Language:** JavaScript | **Stars gained in window:** +3,209 | **Total stars:** 34,100 | **Why notable:** The strongest daily star-gain signal (+3,209) and a high-utility browser userscript spanning multiple cloud-drive providers.\n\n2. **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) - A lifelong personalized tutoring application with learning workflows and a dedicated workspace.**\n\n  **Language:** Python | **Stars gained in window:** +2,376 | **Total stars:** 47,665 | **Why notable:** Second-highest daily gain (+2,376); its Oct. 28 v1.7.0 release expands the learning workspace, modular install, notebooks, and lesson narration.\n\n3. **[Nutlope/hallmark](https://github.com/Nutlope/hallmark) - A design skill for coding agents that aims to avoid generic, AI-generated frontend aesthetics.**\n\n  **Language:** CSS | **Stars gained in window:** +2,109 | **Total stars:** 40,368 | **Why notable:** Third-highest daily gain (+2,109); distinguishes itself with a 50-theme design catalog and browser-based review gates.\n\n4. **[pbakaus/impeccable](https://github.com/pbakaus/impeccable) - Design guidance for AI coding agents, including 24 commands and deterministic frontend checks.**\n\n  **Language:** Rust | **Stars gained in window:** +1,471 | **Total stars:** 92,151 | **Why notable:** Strong daily momentum (+1,471) in the same design-quality cluster, with a CLI and 62 deterministic detector rules.\n\n5. **[elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) - A collection of installable design skills for AI coding tools; its README currently lists a landing-page design skill.**\n\n  **Language:** N/A - not available from GitHub | **Stars gained in window:** +1,395 | **Total stars:** 10,883 | **Why notable:** Shows demand for portable, markdown-based design workflows that can be installed across coding assistants.\n\n6. **[obra/superpowers](https://github.com/obra/superpowers) - An agentic skills framework and software-development methodology for coding agents.**\n\n  **Language:** Shell | **Stars gained in window:** +1,096 | **Total stars:** 307,229 | **Why notable:** Still pulls +1,096 stars in a day at a very large installed base; its spec-to-plan, TDD, and subagent workflow is a leading agent-methodology example.\n\n7. **[JetBrains/thinkrail](https://github.com/JetBrains/thinkrail) - A lightweight IDE for vibe-coding with pi that adapts to how the developer works.**\n\n  **Language:** TypeScript | **Stars gained in window:** +1,075 | **Total stars:** 4,794 | **Why notable:** A major daily signal (+1,075) for the IDE/editor layer around coding agents rather than just another agent prompt pack.\n\n8. **[nightly-labs/openbot](https://github.com/nightly-labs/openbot) - A local-first desktop workspace for persistent AI teammates, task queues, file sharing, and browser control.**\n\n  **Language:** TypeScript | **Stars gained in window:** +1,053 | **Total stars:** 3,070 | **Why notable:** Its +1,053 daily stars underline interest in persistent, multi-agent workspaces with local-first control.\n\n9. **[makecindy/cindy](https://github.com/makecindy/cindy) - An open-source AI agent positioned as ready to use out of the box.**\n\n  **Language:** TypeScript | **Stars gained in window:** +740 | **Total stars:** 7,935 | **Why notable:** A broad agent product rather than a single-purpose skill, with +740 stars today.\n\n10. **[ruvnet/RuView](https://github.com/ruvnet/RuView) - A project that uses commodity Wi-Fi signals for spatial, presence, and vital-sign sensing without video.**\n\n  **Language:** Rust | **Stars gained in window:** +596 | **Total stars:** 100,786 | **Why notable:** An unusual counterpoint to agent-heavy trends: +596 stars for a non-camera sensing application.\n\n11. **[expo/skills](https://github.com/expo/skills) - A collection of AI-agent skills for Expo projects and Expo Application Services.**\n\n  **Language:** Shell | **Stars gained in window:** +212 | **Total stars:** 3,459 | **Why notable:** A framework-specific example of agent skills moving into established app-development ecosystems.\n\n12. **[macro-inc/macro](https://github.com/macro-inc/macro) - A unified team workspace spanning email, chat, docs, tasks, agents, calls, and CRM with shared AI memory.**\n\n  **Language:** Rust | **Stars gained in window:** +106 | **Total stars:** 5,301 | **Why notable:** A lower-gain but useful counterpoint: AI is being embedded into the shared workspace and collaboration layer.\n\n13. **[anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh) - A newly created Chinese-language static gallery for AI pose references, with search, filters, and multiple viewing angles.**\n\n  **Language:** HTML | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 1,745 | **Why notable:** A high-visibility repo created Oct. 27, surfaced by GitHub Search for repos created since Oct. 26; included as a fresh-repo signal, not ranked against Trending star gains."
     },
     {
-      "id": "01-hallmark",
+      "id": "01-hmjz100-linkswift",
       "kind": "repo",
-      "title": "Nutlope/hallmark",
+      "title": "hmjz100/LinkSwift",
       "rank": 1,
-      "url": "https://github.com/Nutlope/hallmark",
-      "description": "Design skill for Claude Code, Codex, Cursor, and OpenCode that pairs a theme catalog with browser-based quality gates.",
-      "language": "CSS",
-      "stars_gained": 2830,
-      "total_stars": 39069,
-      "default_branch_commit": "6033bab2a8051b5454552d2e8e6cb8f27c483a42",
-      "why_notable": "Largest daily gain in this snapshot; its 50 visual themes and layered lint/review workflow make design quality actionable rather than prompt-only.",
-      "theme_ids": ["agent-design-quality"],
-      "signal_strength": "lead",
-      "evidence_density": "rich",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "A JavaScript userscript that extracts direct-download links from major Chinese cloud-drive services.",
+      "language": "JavaScript",
+      "stars_gained": 3209,
+      "stars_gained_display": "+3,209",
+      "total_stars": 34100,
+      "default_branch_commit": "c62d10a3071b089c6ffef4e9fa56f05bbb03079c",
+      "why_notable": "The strongest daily star-gain signal (+3,209) and a high-utility browser userscript spanning multiple cloud-drive providers.",
+      "theme_ids": [
+        "cloud-download-tools"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
       "narration_priority": 1,
-      "spoken_name": "Hallmark",
+      "spoken_name": "LinkSwift",
+      "unique_caveat": "",
       "enrichment": null,
-      "refs": ["Nutlope/hallmark"]
+      "refs": [
+        "hmjz100/LinkSwift"
+      ]
     },
     {
-      "id": "02-deeptutor",
+      "id": "02-hkuds-deeptutor",
       "kind": "repo",
       "title": "HKUDS/DeepTutor",
       "rank": 2,
       "url": "https://github.com/HKUDS/DeepTutor",
-      "description": "Personalized AI tutoring system with study, document, and research workflows.",
+      "description": "A lifelong personalized tutoring application with learning workflows and a dedicated workspace.",
       "language": "Python",
-      "stars_gained": 1598,
-      "total_stars": 45983,
-      "default_branch_commit": "a31d82624c27d75f4e771d4fcb78dce16470b383",
-      "why_notable": "Strongest non-design daily mover, representing a move from general chat toward a persistent learning product.",
-      "theme_ids": ["task-specific-ai-products"],
+      "stars_gained": 2376,
+      "stars_gained_display": "+2,376",
+      "total_stars": 47665,
+      "default_branch_commit": "1ea7df155447f4caf0e3abc86b3ff5395479cd4a",
+      "why_notable": "Second-highest daily gain (+2,376); its Oct. 28 v1.7.0 release expands the learning workspace, modular install, notebooks, and lesson narration.",
+      "theme_ids": [
+        "learning-apps",
+        "agentic-applications"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 2,
-      "spoken_name": "DeepTutor",
-      "enrichment": null,
-      "refs": ["HKUDS/DeepTutor"]
+      "spoken_name": "Deep Tutor",
+      "unique_caveat": "First-party README describes the project and v1.7.0 release; the project’s learning outcomes are not independently evaluated here.",
+      "enrichment": {
+        "architecture_summary": "Personalized tutoring application with a modular install, learning workspace, and learning-content tools.",
+        "core_components": [
+          "tutoring workspace",
+          "block notebooks",
+          "embedding checkpoints",
+          "narrated lessons"
+        ],
+        "workflow": "Install modules, use the learning workspace and notebooks, and resume embedding/tutorial work as needed.",
+        "design_pattern": "A modular, agent-native learning workspace combining tutoring with reusable learning artifacts.",
+        "source_refs": [
+          "https://github.com/HKUDS/DeepTutor/blob/1ea7df155447f4caf0e3abc86b3ff5395479cd4a/README.md"
+        ],
+        "source_type": "first-party README",
+        "retrieved_at": "2026-10-28T17:36:00Z",
+        "verified_commit": "1ea7df155447f4caf0e3abc86b3ff5395479cd4a"
+      },
+      "refs": [
+        "HKUDS/DeepTutor"
+      ]
     },
     {
-      "id": "03-cindy",
+      "id": "03-nutlope-hallmark",
       "kind": "repo",
-      "title": "makecindy/cindy",
+      "title": "Nutlope/hallmark",
       "rank": 3,
-      "url": "https://github.com/makecindy/cindy",
-      "description": "Open-source AI agent connecting computers and phone, existing coding harnesses, and user tools.",
-      "language": "TypeScript",
-      "stars_gained": 1465,
-      "total_stars": 7496,
-      "default_branch_commit": "40bcc0fed58f33091ea3486af3d6a671a6508870",
-      "why_notable": "Combines multi-device continuity with Claude Code, Codex, and Pi, reflecting demand for agents that persist beyond a single editor session.",
-      "theme_ids": ["agent-workspaces-and-orchestration"],
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "A design skill for coding agents that aims to avoid generic, AI-generated frontend aesthetics.",
+      "language": "CSS",
+      "stars_gained": 2109,
+      "stars_gained_display": "+2,109",
+      "total_stars": 40368,
+      "default_branch_commit": "8f6969f8922caabde9de1784959eae11ddf68073",
+      "why_notable": "Third-highest daily gain (+2,109); distinguishes itself with a 50-theme design catalog and browser-based review gates.",
+      "theme_ids": [
+        "agentic-frontend-design"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 3,
-      "spoken_name": "Cindy",
-      "enrichment": null,
-      "refs": ["makecindy/cindy"]
+      "spoken_name": "Hallmark",
+      "unique_caveat": "README describes 50 themes, tiered quality gates, real-browser capture, redesign, and audit workflows.",
+      "enrichment": {
+        "architecture_summary": "Coding-agent design skill organized around material themes, project pre-flight, browser inspection, and tiered quality gates.",
+        "core_components": [
+          "50 themes",
+          "project pre-flight",
+          "real-browser capture",
+          "redesign/audit",
+          "quality gates"
+        ],
+        "workflow": "Inspect project context, select a theme, build, capture in a browser, then lint/review against design and usability checks.",
+        "design_pattern": "Constrain generic model output with themed design materials and explicit review gates.",
+        "source_refs": [
+          "https://github.com/Nutlope/hallmark/blob/8f6969f8922caabde9de1784959eae11ddf68073/README.md"
+        ],
+        "source_type": "first-party README",
+        "retrieved_at": "2026-10-28T17:36:00Z",
+        "verified_commit": "8f6969f8922caabde9de1784959eae11ddf68073"
+      },
+      "refs": [
+        "Nutlope/hallmark"
+      ]
     },
     {
-      "id": "04-impeccable",
+      "id": "04-pbakaus-impeccable",
       "kind": "repo",
       "title": "pbakaus/impeccable",
       "rank": 4,
       "url": "https://github.com/pbakaus/impeccable",
-      "description": "Design guidance, commands, and deterministic checks for AI coding agents.",
+      "description": "Design guidance for AI coding agents, including 24 commands and deterministic frontend checks.",
       "language": "Rust",
-      "stars_gained": 1449,
-      "total_stars": 90596,
-      "default_branch_commit": "d34c87e1a00989ae8dbdd7f6b30b70f23319e860",
-      "why_notable": "Its 62 deterministic frontend detector rules complement Hallmark's design workflow and reinforce the day's agent-design quality signal.",
-      "theme_ids": ["agent-design-quality"],
+      "stars_gained": 1471,
+      "stars_gained_display": "+1,471",
+      "total_stars": 92151,
+      "default_branch_commit": "7510e233b228864606888d252abacf5e7148bf87",
+      "why_notable": "Strong daily momentum (+1,471) in the same design-quality cluster, with a CLI and 62 deterministic detector rules.",
+      "theme_ids": [
+        "agentic-frontend-design"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 4,
       "spoken_name": "Impeccable",
-      "enrichment": null,
-      "refs": ["pbakaus/impeccable"]
+      "unique_caveat": "README specifies a shared design vocabulary, durable PRODUCT.md context, 24 commands, browser iteration, and 62 deterministic rules.",
+      "enrichment": {
+        "architecture_summary": "Command-driven design skill and CLI combining deterministic frontend detectors with optional LLM critique.",
+        "core_components": [
+          "24 design commands",
+          "PRODUCT.md context",
+          "62 deterministic detector rules",
+          "CLI and browser extension"
+        ],
+        "workflow": "Initialize product context, run a design command, iterate in a live browser, and audit/polish before shipping.",
+        "design_pattern": "Separate durable product facts from per-surface design choices; pair deterministic checks with critique.",
+        "source_refs": [
+          "https://github.com/pbakaus/impeccable/blob/7510e233b228864606888d252abacf5e7148bf87/README.md"
+        ],
+        "source_type": "first-party README",
+        "retrieved_at": "2026-10-28T17:36:00Z",
+        "verified_commit": "7510e233b228864606888d252abacf5e7148bf87"
+      },
+      "refs": [
+        "pbakaus/impeccable"
+      ]
     },
     {
-      "id": "05-ai-design-skills",
+      "id": "05-elayadesign-ai-design-skills",
       "kind": "repo",
       "title": "elayadesign/ai-design-skills",
       "rank": 5,
       "url": "https://github.com/elayadesign/ai-design-skills",
-      "description": "A small, installable collection of design skills for AI coding tools.",
+      "description": "A collection of installable design skills for AI coding tools; its README currently lists a landing-page design skill.",
       "language": "N/A - not available from GitHub",
       "stars_gained": 1395,
-      "total_stars": 9442,
+      "stars_gained_display": "+1,395",
+      "total_stars": 10883,
       "default_branch_commit": "ded7efc9d5c02761c41a03caf3b78f9259ab8828",
-      "why_notable": "Another high-velocity design-skill repository; its README currently lists a landing-page skill and supports multiple coding harnesses.",
-      "theme_ids": ["agent-design-quality"],
-      "signal_strength": "lead",
+      "why_notable": "Shows demand for portable, markdown-based design workflows that can be installed across coding assistants.",
+      "theme_ids": [
+        "agentic-frontend-design",
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 5,
       "spoken_name": "AI Design Skills",
-      "enrichment": null,
-      "refs": ["elayadesign/ai-design-skills"]
+      "unique_caveat": "GitHub reports no primary language; README currently lists one skill and supports several coding-tool rule formats.",
+      "enrichment": {
+        "architecture_summary": "Self-contained Markdown design skills installable into multiple coding-assistant rule/skill formats.",
+        "core_components": [
+          "landing-page-design skill",
+          "tool-specific installation",
+          "editable design values"
+        ],
+        "workflow": "Select a skill, install its Markdown file into the coding tool, then invoke it in plain language.",
+        "design_pattern": "Portable tool-agnostic skill packages rather than a language-specific runtime.",
+        "source_refs": [
+          "https://github.com/elayadesign/ai-design-skills/blob/ded7efc9d5c02761c41a03caf3b78f9259ab8828/README.md"
+        ],
+        "source_type": "first-party README",
+        "retrieved_at": "2026-10-28T17:36:00Z",
+        "verified_commit": "ded7efc9d5c02761c41a03caf3b78f9259ab8828"
+      },
+      "refs": [
+        "elayadesign/ai-design-skills"
+      ]
     },
     {
-      "id": "06-thinkrail",
-      "kind": "repo",
-      "title": "JetBrains/thinkrail",
-      "rank": 6,
-      "url": "https://github.com/JetBrains/thinkrail",
-      "description": "Agentic IDE built around isolated workspaces, living specifications, and reusable skills.",
-      "language": "TypeScript",
-      "stars_gained": 1204,
-      "total_stars": 4047,
-      "default_branch_commit": "6cd6f9054dc566f8080db1d338cb21bff0c2b7cc",
-      "why_notable": "A major IDE vendor's incubator project puts agent sessions inside a real workbench with git-worktree isolation and project knowledge that persists.",
-      "theme_ids": ["agent-design-quality", "agent-workspaces-and-orchestration"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 6,
-      "spoken_name": "ThinkRail",
-      "enrichment": null,
-      "refs": ["JetBrains/thinkrail"]
-    },
-    {
-      "id": "07-ecc",
-      "kind": "repo",
-      "title": "affaan-m/ECC",
-      "rank": 7,
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "Agent-harness optimization system spanning skills, memory, security, and research-first development.",
-      "language": "JavaScript",
-      "stars_gained": 1165,
-      "total_stars": 290919,
-      "default_branch_commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
-      "why_notable": "Cross-harness packaging and a broad tooling footprint show continued appetite for reusable operating layers around coding agents.",
-      "theme_ids": ["agent-workspaces-and-orchestration"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 7,
-      "spoken_name": "ECC",
-      "enrichment": null,
-      "refs": ["affaan-m/ECC"]
-    },
-    {
-      "id": "08-postiz",
-      "kind": "repo",
-      "title": "gitroomhq/postiz-app",
-      "rank": 8,
-      "url": "https://github.com/gitroomhq/postiz-app",
-      "description": "Open-source social-media management platform for scheduling, automating, and analyzing content.",
-      "language": "TypeScript",
-      "stars_gained": 951,
-      "total_stars": 39412,
-      "default_branch_commit": "a5affe62c74e39c1e7ac960d50d8418b807d532c",
-      "why_notable": "A practical non-coding-agent application, with self-hosting and integrations for social channels and AI agents.",
-      "theme_ids": ["task-specific-ai-products"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 8,
-      "spoken_name": "Postiz",
-      "enrichment": null,
-      "refs": ["gitroomhq/postiz-app"]
-    },
-    {
-      "id": "09-openbot",
-      "kind": "repo",
-      "title": "nightly-labs/openbot",
-      "rank": 9,
-      "url": "https://github.com/nightly-labs/openbot",
-      "description": "Local-first desktop workspace for persistent AI teammates, queues, browser control, and collaboration.",
-      "language": "TypeScript",
-      "stars_gained": 777,
-      "total_stars": 2478,
-      "default_branch_commit": "75c2800d7ba0b6ebcaad41b9e26e5eed67197ff1",
-      "why_notable": "Brings several model providers into persistent local workspaces with queues and agent collaboration.",
-      "theme_ids": ["agent-workspaces-and-orchestration"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 9,
-      "spoken_name": "OpenBot",
-      "unique_caveat": "README labels this a development preview; agents currently run with broad access after explicit first-launch consent.",
-      "enrichment": null,
-      "refs": ["nightly-labs/openbot"]
-    },
-    {
-      "id": "10-superpowers",
+      "id": "06-obra-superpowers",
       "kind": "repo",
       "title": "obra/superpowers",
-      "rank": 10,
+      "rank": 6,
       "url": "https://github.com/obra/superpowers",
-      "description": "Composable skills and a software-development methodology for coding agents.",
+      "description": "An agentic skills framework and software-development methodology for coding agents.",
       "language": "Shell",
-      "stars_gained": 617,
-      "total_stars": 306466,
+      "stars_gained": 1096,
+      "stars_gained_display": "+1,096",
+      "total_stars": 307229,
       "default_branch_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
-      "why_notable": "Largest established project in the list by total stars, with a spec-to-plan-to-subagent workflow and broad harness support.",
-      "theme_ids": ["agent-workspaces-and-orchestration"],
-      "signal_strength": "brief",
+      "why_notable": "Still pulls +1,096 stars in a day at a very large installed base; its spec-to-plan, TDD, and subagent workflow is a leading agent-methodology example.",
+      "theme_ids": [
+        "agent-skills",
+        "agentic-applications"
+      ],
+      "signal_strength": "lead",
       "evidence_density": "rich",
-      "narration_priority": 10,
+      "narration_priority": 6,
       "spoken_name": "Superpowers",
-      "enrichment": null,
-      "refs": ["obra/superpowers"]
+      "unique_caveat": "README documents a spec, reviewed plan, red/green TDD, and subagent-driven implementation workflow.",
+      "enrichment": {
+        "architecture_summary": "Composable skills-based software-development methodology for coding agents.",
+        "core_components": [
+          "specification interview",
+          "reviewed implementation plans",
+          "red/green TDD",
+          "subagent implementation"
+        ],
+        "workflow": "Clarify a spec, approve an implementation plan, execute it with tests/subagents, then inspect and review.",
+        "design_pattern": "Process-first agent orchestration with explicit approval checkpoints and test-driven execution.",
+        "source_refs": [
+          "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+        ],
+        "source_type": "first-party README",
+        "retrieved_at": "2026-10-28T17:36:00Z",
+        "verified_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b"
+      },
+      "refs": [
+        "obra/superpowers"
+      ]
     },
     {
-      "id": "11-digital-human-koubo",
+      "id": "07-jetbrains-thinkrail",
       "kind": "repo",
-      "title": "andyhuo520/digital-human-koubo",
-      "rank": 11,
-      "url": "https://github.com/andyhuo520/digital-human-koubo",
-      "description": "Agent skill for AI digital-human video production, from a photo and short brief to edited, captioned output.",
+      "title": "JetBrains/thinkrail",
+      "rank": 7,
+      "url": "https://github.com/JetBrains/thinkrail",
+      "description": "A lightweight IDE for vibe-coding with pi that adapts to how the developer works.",
       "language": "TypeScript",
-      "stars_gained": null,
-      "total_stars": 1087,
-      "default_branch_commit": "5fa9b19f52fb8920c83567468fa30e8391b8c503",
-      "why_notable": "Supplemental new-repository signal: created 2026-10-26 and found in the two-day GitHub Search window; README documents cost approval, segment checks, and creator-style packaging.",
-      "theme_ids": ["task-specific-ai-products"],
-      "signal_strength": "brief",
-      "evidence_density": "rich",
-      "narration_priority": 11,
-      "spoken_name": "Digital Human Koubo",
-      "unique_caveat": "Not present in the daily Trending ranking; no comparable daily star-gain figure is available.",
+      "stars_gained": 1075,
+      "stars_gained_display": "+1,075",
+      "total_stars": 4794,
+      "default_branch_commit": "940d15ca5fb0838b9396832befd9ad60d6e51e66",
+      "why_notable": "A major daily signal (+1,075) for the IDE/editor layer around coding agents rather than just another agent prompt pack.",
+      "theme_ids": [
+        "agent-workspaces"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "Thinkrail",
+      "unique_caveat": "",
       "enrichment": null,
-      "refs": ["andyhuo520/digital-human-koubo"]
+      "refs": [
+        "JetBrains/thinkrail"
+      ]
+    },
+    {
+      "id": "08-nightly-labs-openbot",
+      "kind": "repo",
+      "title": "nightly-labs/openbot",
+      "rank": 8,
+      "url": "https://github.com/nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates, task queues, file sharing, and browser control.",
+      "language": "TypeScript",
+      "stars_gained": 1053,
+      "stars_gained_display": "+1,053",
+      "total_stars": 3070,
+      "default_branch_commit": "41755d5f8803862f3751aff74141ad5bf059be83",
+      "why_notable": "Its +1,053 daily stars underline interest in persistent, multi-agent workspaces with local-first control.",
+      "theme_ids": [
+        "agent-workspaces",
+        "agentic-applications"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "OpenBot",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "nightly-labs/openbot"
+      ]
+    },
+    {
+      "id": "09-makecindy-cindy",
+      "kind": "repo",
+      "title": "makecindy/cindy",
+      "rank": 9,
+      "url": "https://github.com/makecindy/cindy",
+      "description": "An open-source AI agent positioned as ready to use out of the box.",
+      "language": "TypeScript",
+      "stars_gained": 740,
+      "stars_gained_display": "+740",
+      "total_stars": 7935,
+      "default_branch_commit": "788fac9292ef1016549e49339bced2832053505e",
+      "why_notable": "A broad agent product rather than a single-purpose skill, with +740 stars today.",
+      "theme_ids": [
+        "agentic-applications"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "Cindy",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "makecindy/cindy"
+      ]
+    },
+    {
+      "id": "10-ruvnet-ruview",
+      "kind": "repo",
+      "title": "ruvnet/RuView",
+      "rank": 10,
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "A project that uses commodity Wi-Fi signals for spatial, presence, and vital-sign sensing without video.",
+      "language": "Rust",
+      "stars_gained": 596,
+      "stars_gained_display": "+596",
+      "total_stars": 100786,
+      "default_branch_commit": "3686bc770f77eb6161d5379861dcd09d7d9a1e4b",
+      "why_notable": "An unusual counterpoint to agent-heavy trends: +596 stars for a non-camera sensing application.",
+      "theme_ids": [
+        "wireless-sensing"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "RuView",
+      "unique_caveat": "The sensing and vital-sign capabilities are project claims; this summary does not independently validate accuracy or suitability.",
+      "enrichment": null,
+      "refs": [
+        "ruvnet/RuView"
+      ]
+    },
+    {
+      "id": "11-expo-skills",
+      "kind": "repo",
+      "title": "expo/skills",
+      "rank": 11,
+      "url": "https://github.com/expo/skills",
+      "description": "A collection of AI-agent skills for Expo projects and Expo Application Services.",
+      "language": "Shell",
+      "stars_gained": 212,
+      "stars_gained_display": "+212",
+      "total_stars": 3459,
+      "default_branch_commit": "8a0dc4fa57ae345923c357e1451cbcd8b6f2a7db",
+      "why_notable": "A framework-specific example of agent skills moving into established app-development ecosystems.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "Expo Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "expo/skills"
+      ]
+    },
+    {
+      "id": "12-macro-inc-macro",
+      "kind": "repo",
+      "title": "macro-inc/macro",
+      "rank": 12,
+      "url": "https://github.com/macro-inc/macro",
+      "description": "A unified team workspace spanning email, chat, docs, tasks, agents, calls, and CRM with shared AI memory.",
+      "language": "Rust",
+      "stars_gained": 106,
+      "stars_gained_display": "+106",
+      "total_stars": 5301,
+      "default_branch_commit": "4b3e12e33068ee66634d5458d65b45c03aea0ec4",
+      "why_notable": "A lower-gain but useful counterpoint: AI is being embedded into the shared workspace and collaboration layer.",
+      "theme_ids": [
+        "agent-workspaces",
+        "agentic-applications"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "Macro",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "macro-inc/macro"
+      ]
+    },
+    {
+      "id": "13-anhao-ai-pose-gallery-zh",
+      "kind": "repo",
+      "title": "anhao/ai-pose-gallery-zh",
+      "rank": 13,
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "description": "A newly created Chinese-language static gallery for AI pose references, with search, filters, and multiple viewing angles.",
+      "language": "HTML",
+      "stars_gained": null,
+      "stars_gained_display": "N/A - not available from GitHub",
+      "total_stars": 1745,
+      "default_branch_commit": "072a3690af6e7e0011abbe0fa1ccc08939fbb47d",
+      "why_notable": "A high-visibility repo created Oct. 27, surfaced by GitHub Search for repos created since Oct. 26; included as a fresh-repo signal, not ranked against Trending star gains.",
+      "theme_ids": [
+        "visual-creation-assets"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 13,
+      "spoken_name": "AI Pose Gallery (Chinese)",
+      "unique_caveat": "README says the 2,878 bundled images/data originate with another creator and that the repository does not claim rights or grant commercial-use authorization; includes adult-oriented pose references.",
+      "enrichment": null,
+      "refs": [
+        "anhao/ai-pose-gallery-zh"
+      ]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Design systems and quality checks for AI-generated interfaces: Hallmark, Impeccable, and AI Design Skills package visual direction, reusable skills, and checks; ThinkRail adds a workbench perspective. Persistent agent workspaces and orchestration: Cindy, OpenBot, and ThinkRail emphasize multi-device or isolated project contexts; ECC and Superpowers provide harness layers and execution methods. Task-specific AI products: DeepTutor targets personalized learning, Postiz social publishing, and Digital Human Koubo video production. TypeScript is the most common primary language (5 of 11); CSS, Python, Rust, JavaScript, and Shell each occur once; GitHub reports no primary language for AI Design Skills."
+      "content": "- **Cloud-drive download tooling:** LinkSwift leads the daily star-gain ranking with a multi-provider cloud-drive userscript (+3,209).\n- **AI-assisted learning:** DeepTutor is the clearest learning-focused signal, pairing personalized tutoring with a workspace, notebooks, and narrated lessons.\n- **Design quality for coding agents:** Hallmark, Impeccable, and AI Design Skills turn visual direction into reusable agent workflows; the first two add structured checks, catalogs, or browser review.\n- **Portable agent skills and process:** Superpowers, AI Design Skills, and Expo Skills package repeatable workflows as skills/rules; Superpowers foregrounds planning, TDD, and subagents.\n- **Persistent agent workspaces and IDEs:** Thinkrail, OpenBot, and Macro place agents inside adaptable IDE or team-workspace surfaces rather than treating them only as chat endpoints.\n- **Packaged AI applications:** DeepTutor, Cindy, OpenBot, Macro, and Superpowers span tutoring, general agents, collaboration, and agent workflow products.\n- **Non-camera sensing:** RuView is a notable non-agent outlier, proposing Wi-Fi-based spatial and presence sensing.\n- **Visual-reference assets and galleries:** The newly created AI Pose Gallery repo packages localized visual-reference data and a static gallery; its bundled image rights require attention.\n- **Languages:** TypeScript (3), Rust (3), Shell (2), Python (1), JavaScript (1), CSS (1), HTML (1), and N/A (1), counted across all 13 listed repositories."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "The day's strongest momentum is not for a single foundation model, but for structured layers that make agents produce more reliable work: design constraints, persistent context, isolated execution, and domain-specific workflows. The especially high design-skill gains suggest that polishing agent output is becoming a distinct developer-tool category, while practical products are extending that pattern beyond coding."
+      "content": "Today’s standout is the practical packaging of AI workflows: reusable coding-agent skills, design QA, and persistent agent workspaces are drawing strong attention, alongside a strong download-utility spike. DeepTutor and the newly created gallery show separate demand in learning and visual-reference products; the latter’s README flags image-rights constraints."
     },
     {
       "id": "99-sources-and-method",
       "kind": "sources",
       "title": "Sources and Method",
-      "content": "Primary source: https://github.com/trending?since=daily, accessed 2026-10-28 01:42 UTC. Corroboration: GitHub REST API repository metadata and current default-branch commits for each listed repository; GitHub Search API query created:>=2026-10-26 stars:>400 fork:false, sorted by stars, 8 matches. Leading theme representatives and the supplemental repository were checked against current README files and first-party docs. Daily gains are partial-day values. One two-day-search repo is appended as a supplemental entry with no daily gain claimed. The jailbreak list repository was excluded as off-topic noise. No prior-window comparison was available, so Notable Shifts is omitted."
+      "content": "Primary source: GitHub Trending daily at https://github.com/trending?since=daily. Corroboration: GitHub REST API repository metadata and default-branch commit endpoints, plus GitHub Search for repositories created since 2026-10-26 with more than 100 stars; README files were checked for narration-priority projects and the fresh-repo addendum. Trending gains are the displayed daily values, not inferred from totals. The fresh-search repo has no comparable daily star-gain value. Obvious list/course entries were omitted; no prior-window evidence was used, so Notable Shifts is omitted."
     }
   ]
 }

@@ -1,133 +1,116 @@
-# arXiv Physics Daily — 2026-10-28: measurements across nuclear, quantum, and astrophysical physics
-
-Daily batch: Wednesday, 28 October 2026; 9 papers highlighted. The batch’s clearest pattern is new measurements of correlations and dynamics—from neutron-rich beta decay and light-ion collisions to free-electron beams and radio sources. Spoken agenda: nuclear weak currents, small-system QCD, electron correlations, then new astrophysical signals and a gravitational-wave forecast. Global caveat: arXiv has no official trending chart, so this is an inferred notable-paper ranking, not a popularity list; citation evidence is limited because all nine selected papers had zero Semantic Scholar citations at the snapshot.
+Daily arXiv physics · Wed 28 Oct 2026 announcement batch · 8 papers. The strongest pattern is new measurements turning quantum, nuclear and particle phenomena into testable signals; this brief moves from reactor neutrinos and small-system flow to exotic-nucleus decay, quantum networking and gravity tests. This uses the latest available batch before the 29 Oct snapshot. Caveat: arXiv provides no official trending chart, so this is an inferred notable-paper ranking, not a popularity list; citation evidence is limited for papers only announced yesterday.
 
 ## Top papers (ranked)
 
-### 1. [Beta decay of potassium-54 reveals the role of two-body currents in neutron-rich nuclei](https://arxiv.org/abs/2610.36218)
-- **Abstract:** The authors measure the beta decay of neutron-rich potassium-54 and report that state-of-the-art calculations including two-body weak currents reproduce the measured Gamow–Teller strength.
-- **Authors:** Zhengyu Xu, Robert Grzywacz, Matthias Heinz, Thomas Papenbrock, Weijia Ong, et al.
-- **arXiv:** `2610.36218v1` (published 2026-10-26T19:52:17Z; categories: `nucl-ex`, `nucl-th`)
-- **Evidence for ranking:** Accepted for publication in *Nature Communications*; the paper combines a frontier rare-isotope measurement with ab initio calculations, and its calculated results are deposited on [Zenodo](https://zenodo.org/records/22666940). These are concrete research and release signals, not citation momentum.
-- **Claimed result:** At FRIB, the authors report a dominant transition to a neutron-unbound state near 6.2 MeV and a Gamow–Teller strength B(GT)=0.26(+0.08/−0.04); they say calculations with two-body currents reproduce the measurement, supporting an important role for those currents in neutron-rich nuclei.
-- **Evidence type:** Experimental and computational; FRIB radioactive-ion-beam beta-decay measurement compared with VS-IMSRG and shell-model calculations.
-- **Caveat:** The inference is anchored in one isotope and depends on the decay-state spin assignment; raw FRIB data are available from the authors on request, while the calculation results are public.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
+### 1. [High significance measurement of reactor coherent elastic neutrino-nucleus scattering on germanium by CONUS+](https://arxiv.org/abs/2610.37318)
+- **Abstract:** The CONUS+ collaboration reports a 10.2σ reactor-antineutrino CEνNS signal from high-purity germanium detectors and a weak-mixing-angle measurement consistent with the Standard Model.
+- **Authors:** N. Ackermann, H. Bonet, C. Buck, J. Hakenmüller, G. Heusser, et al.
+- **arXiv:** `2610.37318v1` (published 2026-10-27 14:32:54 UTC; categories: `hep-ex`, `hep-ph`)
+- **Evidence for ranking:** Cross-listed across experiment and phenomenology; the paper gives a quantitative 10.2σ result from 1,296 kg·days and a blind likelihood analysis, making it one of the batch's clearest precision measurements.
+- **Claimed result:** The authors extract 1,555 ± 152 CEνNS events, consistent with 1,701 ± 198 expected, and measure sin²θW = 0.225 ± 0.022 at momentum transfer near 10 MeV.
+- **Evidence type:** Experimental; CONUS+ high-purity germanium detectors at the Leibstadt nuclear power plant, using 1,296 kg·days of reactor-on exposure.
+- **Caveat:** The authors report that the extracted signal uncertainty is predominantly statistical, while energy-scale calibration near threshold is a leading uncertainty in the Standard Model signal prediction.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
+- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
 
 ### 2. [Evidence of partonic collectivity in OO collisions through the measurement of φ, K⁰S, and Λ elliptic flow](https://arxiv.org/abs/2610.36237)
-- **Abstract:** The ALICE Collaboration reports the first identified-hadron elliptic-flow measurements in oxygen–oxygen collisions at √sNN=5.36 TeV, finding patterns consistent with collective expansion and quark recombination.
+- **Abstract:** ALICE measures elliptic flow of φ, K⁰S and Λ hadrons in 5.36 TeV oxygen–oxygen collisions, finding mass ordering at low transverse momentum and a 10σ baryon–meson split at intermediate momentum.
 - **Authors:** ALICE Collaboration
-- **arXiv:** `2610.36237v1` (published 2026-10-26T20:13:31Z; categories: `nucl-ex`, `hep-ex`)
-- **Evidence for ranking:** A first measurement in O–O collisions, a reported 10σ baryon–meson splitting, cross-listing in nuclear and high-energy physics, and an [ALICE public-results page](https://alice-publications.web.cern.ch/node/13688); the comment says it was submitted to *Physical Review Letters*.
-- **Claimed result:** ALICE measures v₂ for φ, K⁰S, and Λ/anti-Λ; above 3 GeV/c, Λ has larger v₂ than the mesons at 10σ significance, while φ follows K⁰S. The authors interpret this as support for partonic collectivity and quark recombination in a light-ion system.
-- **Evidence type:** Experimental; identified-particle flow analysis of ALICE O–O collision data at 5.36 TeV.
-- **Caveat:** The flow pattern is evidence consistent with a collectively flowing partonic medium, not by itself a unique demonstration of QGP formation; the interpretation depends on flow extraction and competing hadronization explanations.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
+- **arXiv:** `2610.36237v1` (published 2026-10-26 20:13:31 UTC; categories: `nucl-ex`, `hep-ex`)
+- **Evidence for ranking:** A large-collaboration result cross-listed in nuclear and high-energy experiment; it combines a first φ-flow measurement in a small collision system with a reported 10σ baryon–meson separation.
+- **Claimed result:** The authors say the φ meson follows the K⁰S rather than the mass-similar Λ, supporting quark recombination from a collectively flowing partonic medium in light-ion collisions.
+- **Evidence type:** Experimental; ALICE data from 5.36 TeV OO collisions, with identified-hadron v₂ measured versus transverse momentum in central and semi-central events.
+- **Caveat:** Flow patterns are indirect evidence for partonic collectivity, not direct observation of a deconfined medium; the interpretation depends on particle-species comparisons and event/centrality analysis.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
 - **Themes:** Particle, nuclear & high-energy physics
 
-### 3. [Coulomb Crystallization in Free Electron Beams](https://arxiv.org/abs/2610.37352)
-- **Abstract:** Transmission-electron-microscope measurements and many-body modelling indicate transient Coulomb ordering in freely propagating few-electron pulses, with the authors predicting ways to extend it to larger and continuous beams.
-- **Authors:** Valerio Di Giulio, Rudolf Haindl, Armin Feist, Claus Ropers
-- **arXiv:** `2610.37352v1` (published 2026-10-27T14:52:48Z; categories: `cond-mat.str-el`, `cond-mat.mes-hall`, `physics.acc-ph`)
-- **Evidence for ranking:** The work couples a direct TEM experiment to simulations and a statistical-mechanical model, spans condensed-matter and accelerator physics, and is linked to a [CLEO conference proceeding](https://doi.org/10.1364/CLEO_FS.2026.FM3E.2).
-- **Claimed result:** Number-resolved energy correlations in photoemitted pulses of up to nine electrons are consistent with transient ordering; the authors attribute confinement of inner electrons to a self-induced potential from the leading and trailing particles.
-- **Evidence type:** Experimental and computational; transmission electron microscopy, many-body simulations, and a one-dimensional statistical-mechanical model.
-- **Caveat:** The measured ordering is transient and demonstrated in few-electron pulses; larger-particle and continuous-beam crystallization are predictions requiring additional transverse guiding, not experimental demonstrations here.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Condensed matter & materials; Instrumentation & detectors
+### 3. [Beta decay of potassium-54 reveals the role of two-body currents in neutron-rich nuclei](https://arxiv.org/abs/2610.36218)
+- **Abstract:** A radioactive-ion-beam measurement of ⁵⁴K β decay, compared with ab initio calculations, supports an essential contribution from two-body weak currents in neutron-rich nuclei.
+- **Authors:** Zhengyu Xu, Robert Grzywacz, Matthias Heinz, Thomas Papenbrock, Weijia Ong, et al.
+- **arXiv:** `2610.36218v1` (published 2026-10-26 19:52:17 UTC; categories: `nucl-ex`, `nucl-th`)
+- **Evidence for ranking:** Cross-listed between nuclear experiment and theory; the paper pairs a frontier isotope measurement with state-of-the-art calculations, and its calculated results are available through a linked Zenodo record.
+- **Claimed result:** The authors measure a dominant transition to a neutron-unbound state at 6.2 MeV, with B(GT) = 0.26 (+0.08/−0.04), and report agreement with calculations that include two-body currents.
+- **Evidence type:** Experimental plus theoretical; β-decay spectroscopy at a radioactive-ion-beam facility, interpreted with VS-IMSRG and coupled-cluster calculations.
+- **Caveat:** The authors state that VS-IMSRG(2) overpredicts excitation energies; the raw experimental data are not publicly downloadable because they include large files and unpublished isotopes, and are available from the authors on request.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
+- **Themes:** Particle, nuclear & high-energy physics
 
-### 4. [Experimental evidence for quantum Brownian motion in electron-metal decoherence](https://arxiv.org/abs/2610.37293)
-- **Abstract:** The authors report tunable loss of electron diffraction coherence near a metal surface, which they interpret as experimental evidence for quantum-Brownian-motion-driven electron–metal decoherence.
+### 4. [Deployed entanglement-based BBM92 quantum key distribution using frequency-converted photons emitted by a quantum dot](https://arxiv.org/abs/2610.37268)
+- **Abstract:** The authors use frequency-converted entangled photons from a quantum dot to distribute a secure BBM92 key over a 1.59 km field-deployed fibre link, sustaining a 206 Hz secure-key rate for 19 hours.
+- **Authors:** Michal Vyvlecka, Raphael Joos, Benjamin Breiholz, Emma Marmasse, Ilenia Neureuther, et al.
+- **arXiv:** `2610.37268v1` (published 2026-10-27 14:01:58 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** The paper reports link length, operating duration and secure-key yield; a closely related earlier setup appears in a 2026 German Physical Society conference programme, an expert-discussion signal but not independent validation of this updated performance.
+- **Claimed result:** The authors report 14.2 Mbit of secure key after 19 hours over deployed fibre, using 780 nm quantum-dot photon pairs with one photon converted to the telecom band.
+- **Evidence type:** Experimental; droplet-etched GaAs quantum-dot source, quantum frequency conversion, BBM92 protocol and a deployed campus fibre network.
+- **Caveat:** This is a campus-scale, 1.59 km demonstration over a 19-hour run; the abstract does not establish long-distance or multi-site network performance.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
+- **Themes:** Quantum information; Instrumentation & detectors
+
+### 5. [Experimental evidence for quantum Brownian motion in electron-metal decoherence](https://arxiv.org/abs/2610.37293)
+- **Abstract:** The authors report tunable electron–metal decoherence signatures consistent with quantum Brownian motion, using an electron-microchannel system as an open quantum platform.
 - **Authors:** Wayne Cheng-Wei Huang, Zilin Chen, Herman Batelaan
-- **arXiv:** `2610.37293v1` (published 2026-10-27T14:15:28Z; categories: `quant-ph`, `cond-mat.mes-hall`, `physics.atom-ph`)
-- **Evidence for ranking:** The authors describe this as the first controlled observation of electron–metal decoherence and a long-sought experimental test of the Anglin–Paz–Zurek proposal; it is cross-listed across three physics subfields.
-- **Claimed result:** Electron diffraction fringes lose visibility in a gold-plated microchannel, and the visibility changes continuously with channel tilt in quantitative agreement with the authors’ decoherence model.
-- **Evidence type:** Experimental; electron diffraction with a thermionic electron beam and a gold-plated microchannel.
-- **Caveat:** The analysis models the interaction as a single bounce; surface roughness, electron loss, and the subset of electrons that reach the detector limit how broadly the measured decoherence can be generalized.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Quantum information; Atomic, molecular & optical physics
+- **arXiv:** `2610.37293v1` (published 2026-10-27 14:15:28 UTC; categories: `quant-ph`, `cond-mat.mes-hall`, `physics.atom-ph`)
+- **Evidence for ranking:** Three-way cross-listing links quantum physics, mesoscopic condensed matter and atomic physics; the authors claim a long-sought experimental realization of a specific decoherence proposal and report continuous tunability.
+- **Claimed result:** The authors say measured decoherence agrees quantitatively with theory and supports electron microchannels as a platform for testing quantum dissipation with free electrons.
+- **Evidence type:** Experimental; electron motional decoherence in an electron–metal microchannel system.
+- **Caveat:** The reported system is a specific electron–metal platform; the abstract proposes future tests of Caldeira–Leggett dissipation rather than reporting a precision test of that theory.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
+- **Themes:** Quantum information; Condensed matter & materials; Atomic, molecular & optical physics
 
-### 5. [Detection of star formation in a near-pristine pocket of the Universe](https://arxiv.org/abs/2610.36042)
-- **Abstract:** Keck/KCWI observations reveal two Lyα-emitting, star-forming sources in the environment of a chemically near-pristine damped Lyα absorber at redshift 3.078.
-- **Authors:** Louise Welsh, Ryan Cooke, Michele Fumagalli, Rajeshwari Dutta, Matteo Fossati, Valentina D'Odorico
-- **arXiv:** `2610.36042v1` (published 2026-10-26T18:00:03Z; categories: `astro-ph.GA`)
-- **Evidence for ranking:** Accepted for publication in *MNRAS* (DOI: [10.1093/mnras/stag2035](https://doi.org/10.1093/mnras/stag2035)); the result is based on spatially resolved Keck/KCWI spectroscopy and is described by the authors as the first such detection around a chemically near-pristine DLA.
-- **Claimed result:** The authors detect two Lyα sources at projected separations of 66 and 137 physical kpc from a DLA with [Fe/H] < −3.66, and set 3σ upper limits on associated He II emission.
-- **Evidence type:** Observational; Keck/KCWI integral-field spectroscopy of a quasar sightline and its surrounding field.
-- **Caveat:** The sources are in the DLA environment, not proven to be the absorber’s host; the data do not determine their metallicities, and the authors call for rest-frame optical follow-up.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Astrophysics
+### 6. [Optically gated transduction enables silicon electrical readout of mid-infrared light](https://arxiv.org/abs/2610.36475)
+- **Abstract:** The authors demonstrate room-temperature, zero-bias electrical readout of 6.8 μm mid-infrared illumination by optically gated transduction in a lanthanide-nanoparticle/silicon metasurface device.
+- **Authors:** Shutao Zhang, Jiaqing Shen, Chongwu Wang, Jiahui Xu, Wei Chen, et al.
+- **arXiv:** `2610.36475v1` (published 2026-10-27 01:33:02 UTC; categories: `physics.optics`)
+- **Evidence for ranking:** A concrete device demonstration reports a wavelength, room-temperature operation, zero-bias readout and 103 μA/W modulation responsivity; the listing is in optics, without cross-listing into another physics archive.
+- **Claimed result:** Rather than absorbing MIR photons directly in silicon, the device uses MIR-induced changes in lanthanide emission pathways and converts the optical-state change into a Schottky-junction current.
+- **Evidence type:** Experimental; Nd³⁺-doped lanthanide nanoparticles, an inverse-designed Al/p-Si metasurface and a silicon Schottky junction.
+- **Caveat:** The abstract reports performance at 6.8 μm; broader wavelength coverage, comparative sensitivity and system-level performance remain unestablished there.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
+- **Themes:** Instrumentation & detectors
 
-### 6. [Periodic radio emission from a rapidly rotating T8 ultracool dwarf](https://arxiv.org/abs/2610.36336)
-- **Abstract:** ASKAP and MeerKAT observations reveal periodic radio bursts from the T8 brown dwarf WISE J1517+05 with a 1.149±0.002-hour period, which the authors attribute to auroral electron-cyclotron maser emission.
-- **Authors:** Iris de Ruiter, Joshua Pritchard, Tara Murphy, Andrew K. Hughes, David L. Kaplan, et al.
-- **arXiv:** `2610.36336v1` (published 2026-10-26T22:04:59Z; categories: `astro-ph.SR`, `astro-ph.EP`, `astro-ph.HE`)
-- **Evidence for ranking:** Accepted for publication in *PASA*; it combines ASKAP and MeerKAT detections, spans three astrophysical subfields, and provides a [Zenodo reproducibility package](https://doi.org/10.5281/zenodo.21869650).
-- **Claimed result:** The authors report highly variable, bright, broadband bursts with a stable 1.149-hour period and low, variable circular polarization; they infer a rapidly rotating, magnetized ultracool dwarf.
-- **Evidence type:** Observational; radio observations with ASKAP and MeerKAT, supplemented by other radio data described in the paper.
-- **Caveat:** This is one object; its polarization reversal remains unexplained, and the inferred magnetic geometry assumes a dipole field with emission from one active field line.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Astrophysics
+### 7. [Improved constraints on higher-derivative effective field theory extensions of general relativity with GW230627_015337](https://arxiv.org/abs/2610.36728)
+- **Abstract:** A waveform analysis of public LIGO–Virgo–KAGRA events uses a 92-event screening and a Bayesian analysis of GW230627_015337 to constrain three higher-curvature couplings, with results consistent with general relativity.
+- **Authors:** Tao Zhu
+- **arXiv:** `2610.36728v1` (published 2026-10-27 06:48:04 UTC; categories: `gr-qc`)
+- **Evidence for ranking:** The analysis reuses a public multi-event gravitational-wave catalog and conducts a full Bayesian follow-up of the event providing the tightest Fisher forecast; it reports quantitative upper bounds rather than a detection of deviations.
+- **Claimed result:** The authors find all three couplings consistent with zero at 90% credibility and derive one-sided 90% upper limits of 17.1, 11.1 and 18.3 km on characteristic length scales.
+- **Evidence type:** Observational analysis; 92 binary-black-hole events from public LVK catalogs, using a modified SEOBNRv5HM_ROM waveform and a Bayesian analysis of GW230627_015337.
+- **Caveat:** Constraints favor GR under the adopted priors, and the authors caution that comparison with earlier bounds depends on model and analysis assumptions.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
+- **Themes:** Cosmology & gravitation; Computational & data methods
 
-### 7. [Measurement of antideuteron and net-Λ number fluctuations at the Large Hadron Collider](https://arxiv.org/abs/2610.36307)
-- **Abstract:** ALICE reports the first antideuteron–net-Λ number-correlation measurement in Pb–Pb collisions and finds it, along with a net-Λ cumulant, consistent with a statistical-hadronization model.
-- **Authors:** ALICE Collaboration
-- **arXiv:** `2610.36307v1` (published 2026-10-26T21:30:06Z; categories: `nucl-ex`, `hep-ex`)
-- **Evidence for ranking:** First measurement of this correlation, cross-listed in nuclear and high-energy physics, and submitted to *Physical Review Letters*; ALICE provides a [public-results page](https://alice-publications.web.cern.ch/node/13689).
-- **Claimed result:** The authors report that the antideuteron–net-Λ correlation and normalized second-order net-Λ cumulant agree with Thermal-FIST’s statistical-hadronization implementation, supporting a nucleosynthesis origin for the previously observed antideuteron–antiproton correlation.
-- **Evidence type:** Experimental; event-by-event particle-number correlations in ALICE Pb–Pb data, compared with the Thermal-FIST model.
-- **Caveat:** Agreement with one statistical-hadronization implementation is not a unique proof of the production mechanism; this is a distinct observable from the O–O flow result above, not an independent confirmation of it.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
-
-### 8. [ASKAP Discovery of a Giant Odd Radio Circle at z=0.15](https://arxiv.org/abs/2610.36512)
-- **Abstract:** ASKAP 856-MHz continuum data reveal a 0.63-Mpc odd radio circle around the brightest cluster galaxy of Abell 3639, among the largest single ORCs reported by the authors.
-- **Authors:** Renzhi Su, Minfeng Gu
-- **arXiv:** `2610.36512v1` (published 2026-10-27T02:16:59Z; categories: `astro-ph.GA`)
-- **Evidence for ranking:** A new ASKAP survey-data discovery with a measured size, flux, and host-galaxy association; the arXiv record has no journal reference, so its placement rests on the concrete observational result rather than external citation momentum.
-- **Claimed result:** The authors report ORC J1928−5056 at z=0.1507, with 73 mJy integrated flux after subtracting the radio nucleus, and discuss possible formation scenarios.
-- **Evidence type:** Observational; 856-MHz ASKAP FLASH continuum imaging, with higher-frequency radio and optical context for the host.
-- **Caveat:** The physical origin is unresolved and the claim is based on one source; follow-up spectral and polarization measurements are needed to distinguish formation models.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Astrophysics
-
-### 9. [Weighing dark matter particles with gravitational waves](https://arxiv.org/abs/2610.37638)
-- **Abstract:** The authors forecast that simulated LISA extreme-mass-ratio-inspiral signals could constrain ultralight-dark-matter particle masses through wave-dependent interactions with a dense dark-matter spike.
-- **Authors:** Rodrigo Vicente, Francisco Duque, Theophanes K. Karydas, Gianfranco Bertone
-- **arXiv:** `2610.37638v1` (published 2026-10-27T17:54:29Z; categories: `gr-qc`, `astro-ph.CO`, `astro-ph.GA`, `astro-ph.HE`, `hep-ph`)
-- **Evidence for ranking:** The work connects five gravitational, astrophysical, and particle-physics categories and builds a joint waveform-inference method; it is a theoretical forecast rather than a reported observation, and no journal reference is listed.
-- **Claimed result:** For simulated LISA signals from low-mass massive black holes, the authors forecast order-of-magnitude constraints on ultralight-dark-matter masses between 10⁻¹⁴ and 10⁻¹¹ eV.
-- **Evidence type:** Forecast/proposal; relativistic inspiral waveform modelling and parameter inference on simulated LISA signals.
-- **Caveat:** The forecast requires sufficiently dense dark-matter spikes and depends on the assumed spike profile and environmental accretion and dynamical-friction model; it is not a detection or a measurement with LISA data.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Cosmology & gravitation; Astrophysics; Computational & data methods
+### 8. [Search for Neutrino-Produced Long-Lived Particles Using the SBND Cosmic Ray Tagger Beam Telescope](https://arxiv.org/abs/2610.37555)
+- **Abstract:** A search using the SBND Cosmic Ray Tagger Beam Telescope data finds no significant excess of displaced electron–positron decays and sets 90% confidence-level limits on neutrino-produced long-lived particles.
+- **Authors:** R. Acciarri, L. Aliaga-Soplin, D. Andrade Aldana, C. Andreopoulos, S. Balasubramanian, et al.
+- **arXiv:** `2610.37555v1` (published 2026-10-27 17:04:41 UTC; categories: `hep-ex`)
+- **Evidence for ranking:** A large-collaboration search reuses a substantial commissioning-era beam-telescope dataset (2.95 × 10²⁰ protons on target) and reports quantitative limits over metre-scale decay lengths.
+- **Claimed result:** The authors observe no significant excess and set 90% CL upper limits on an effective production cross section at around 10⁻³⁸ cm² for laboratory decay lengths of 0.3–100 m.
+- **Evidence type:** Experimental; 2017–2018 SBND CRT Beam Telescope data from Fermilab's Booster Neutrino Beam.
+- **Caveat:** The search targets LLP decays to e⁺e⁻ and its limits are tied to that signature and the analysed standalone CRT dataset; it is not a general exclusion of LLP models.
+- **Announcement type:** new submission, 28 Oct 2026 announcement batch
+- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
 
 ## Trending Research Themes
 
-- **Heavy-ion correlations and collectivity:** ALICE’s O–O identified-particle flow and Pb–Pb antideuteron–net-Λ correlations probe different aspects of collective dynamics and hadron formation ([2](https://arxiv.org/abs/2610.36237), [7](https://arxiv.org/abs/2610.36307)). These are distinct observables from the same collaboration, not independent confirmation of one result.
-- **Electron correlations as a resource and a limit:** The TEM study finds transient Coulomb ordering in few-electron pulses, while the microchannel experiment tunes electron–metal decoherence ([3](https://arxiv.org/abs/2610.37352), [4](https://arxiv.org/abs/2610.37293)). Both concern free-electron dynamics, but use different systems and measurements.
-- **Radio observations from local substellar objects to cluster-scale structures:** ASKAP appears in the ultracool-dwarf burst study and the giant ORC discovery; MeerKAT supplements the dwarf observations ([6](https://arxiv.org/abs/2610.36336), [8](https://arxiv.org/abs/2610.36512)). They are different targets and datasets, not mutual confirmation. Keck/KCWI spectroscopy adds a separate high-redshift galaxy-environment signal ([5](https://arxiv.org/abs/2610.36042)).
-- **Neutron-rich weak interactions:** The ⁵⁴K beta-decay measurement supplies a rare-isotope benchmark for two-body weak-current calculations ([1](https://arxiv.org/abs/2610.36218)); within this selected set it is an isolated signal, not evidence of a broad field-wide shift.
-- **A cross-field gravitational-wave forecast:** The LISA EMRI analysis links dark-matter microphysics to waveform inference ([9](https://arxiv.org/abs/2610.37638)); it is a theoretical proposal, not a detected trend in observations.
+- **Low-energy weak-interaction measurements:** CONUS+ measures reactor CEνNS on germanium, while the ⁵⁴K study tests weak-current calculations in neutron-rich nuclei. These are distinct experiments and do not independently confirm one another; together they show how detector calibration and nuclear theory shape precision weak-interaction results.
+- **Collective phenomena probed through indirect observables:** ALICE uses identified-hadron elliptic flow in OO collisions to infer partonic collectivity; Huang, Chen and Batelaan use tunable decoherence in an electron–metal system to probe open-quantum-system dynamics. Their physical systems differ, but both interpret measured response patterns through collective or dissipative dynamics.
+- **Quantum systems moving toward operational interfaces:** The quantum-dot BBM92 work demonstrates deployed fibre networking, while the silicon MIR paper demonstrates optical-to-electrical readout. These are separate technology demonstrations, not evidence of a shared platform.
+- **Archival data repurposed for new-physics tests:** The GW study screens public LVK events for higher-curvature effects; SBND uses an earlier CRT commissioning dataset for an LLP search. The analyses share a reuse-of-data strategy, not a common physical signal.
 
 ## Open Problems and Research Directions
 
-- **Author-stated / nuclear:** The ⁵⁴K result is a benchmark, but broader isotope coverage is needed to test how general the two-body-current effect is. Follow-up: measure comparable transitions in other neutron-rich nuclei and make calibrated analysis products easier to reuse; the paper says raw FRIB data are available from the authors on request ([1](https://arxiv.org/abs/2610.36218)).
-- **Synthesis / heavy-ion interpretation:** The ALICE flow and particle-correlation results support different mechanisms—partonic collectivity and hadronization/nucleosynthesis—but neither alone uniquely selects a full dynamical picture. Compare both observables across centrality, collision energy, particle species, and competing transport/statistical models ([2](https://arxiv.org/abs/2610.36237), [7](https://arxiv.org/abs/2610.36307)).
-- **Author-stated / electron systems:** Few-electron ordering is measured, whereas larger and continuous Coulomb crystals remain predictions; the decoherence paper also leaves material and surface-response assumptions to test. Map ordering against particle number and guiding strength, and vary channel material/geometry to test the predicted visibility response ([3](https://arxiv.org/abs/2610.37352), [4](https://arxiv.org/abs/2610.37293)).
-- **Author-stated / early galaxies:** Rest-frame optical measurements are needed to determine the two Lyα sources’ metallicities and assess whether near-pristine DLAs reliably locate primitive galaxies. Deeper integral-field observations can test the source association and obtain those abundances ([5](https://arxiv.org/abs/2610.36042)).
-- **Author-stated / ultracool dwarf:** The polarization reversal within one burst is unexplained. Simultaneous, time-resolved multi-frequency polarimetry could distinguish intrinsic emission geometry from propagation through structured magnetospheric plasma ([6](https://arxiv.org/abs/2610.36336)).
-- **Author-stated / odd radio circle:** The source’s formation mechanism is unresolved. Deep multi-frequency imaging, polarization, and host-environment measurements could discriminate among the proposed shock, jet, and remnant scenarios ([8](https://arxiv.org/abs/2610.36512)).
-- **Synthesis / gravitational waves:** The LISA forecast depends on dense dark-matter spikes and their environmental waveform imprint. Re-run inference across alternative spike profiles, accretion/friction prescriptions, and realistic LISA noise and source populations before treating the mass reach as robust ([9](https://arxiv.org/abs/2610.37638)).
+- **Author-stated—CEνNS calibration:** CONUS+ reports statistical dominance in the extracted signal and energy-scale calibration near threshold as a leading uncertainty on the predicted signal. Follow-up work could prioritize sub-keV recoil calibration, quenching-factor measurements and active-mass calibration, as the paper suggests. [2610.37318]
+- **Author-stated—nuclear many-body energies:** The ⁵⁴K paper says VS-IMSRG(2) overpredicts excitation energies, even as calculations with two-body currents reproduce the measured decay strength. Improved many-body calculations and measurements in other neutron-rich nuclei could test how general the inferred current contribution is. [2610.36218]
+- **Synthesis—partonic interpretation:** ALICE's flow pattern supports, but does not directly observe, a collectively flowing partonic medium. Measurements across additional light-ion systems, particle species and centrality estimators could test the interpretation against alternative dynamical descriptions. [2610.36237]
+- **Synthesis—deployment scale and model robustness:** The QKD result is a 1.59 km, 19-hour campus trial; the GW limits depend on waveform/model assumptions; and the SBND result covers a specific e⁺e⁻ LLP signature. Longer-duration, longer-distance QKD tests, waveform/prior robustness studies and complementary LLP decay-channel searches would extend these respective results. [2610.37268, 2610.36728, 2610.37555]
 
 ## Takeaway
 
-This batch is strongest where new measurements constrain mechanisms: neutron-rich beta decay, identified-particle flow, and electron coherence/order. The astrophysical detections add useful targets and follow-up opportunities, while the LISA result remains a model-dependent forecast; all are fresh preprints or newly listed papers, so peer review and replication still matter.
+The batch's clearest signals are increasingly precise measurements: a 10.2σ reactor CEνNS result, identified-hadron flow in oxygen–oxygen collisions, and a rare-isotope β-decay benchmark. The quantum-network and infrared-device papers add practical demonstrations, while the gravitational-wave and SBND analyses constrain rather than reveal new physics. All eight are new v1 preprints; their striking claims remain subject to each paper's measurement and model limitations.
 
 ## Method and sources
 
-- **Window:** 2026-10-28 through 2026-10-28, daily arXiv listing for Wednesday, 2026-10-28. All eleven configured archive pages showed “new listings” for that date; this is today’s listing, not a prior announcement batch. The nine selected works are new submissions first posted 2026-10-26 or 2026-10-27; each arXiv identifier, version, timestamp, categories, and abstract were checked against the arXiv API and its HTML abstract/full-text page. Snapshot: 2026-10-28T17:24:39Z.
-- **Archive coverage:** `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. The pages contained 1,087 listing rows; deduplication by versionless arXiv ID yielded 793 works (530 new/cross-listed entries and 263 replacement entries). Cross-lists were counted once. The category listing pages are [physics](https://arxiv.org/list/physics/new), [astro-ph](https://arxiv.org/list/astro-ph/new), [cond-mat](https://arxiv.org/list/cond-mat/new), [gr-qc](https://arxiv.org/list/gr-qc/new), [hep-ex](https://arxiv.org/list/hep-ex/new), [hep-lat](https://arxiv.org/list/hep-lat/new), [hep-ph](https://arxiv.org/list/hep-ph/new), [hep-th](https://arxiv.org/list/hep-th/new), [nucl-ex](https://arxiv.org/list/nucl-ex/new), [nucl-th](https://arxiv.org/list/nucl-th/new), and [quant-ph](https://arxiv.org/list/quant-ph/new).
-- **Ranking method:** The ordering prioritizes independently checkable journal/proceedings status, public data or reproducibility artifacts, first measurements, cross-field relevance, and concrete results; recency is only a tie-breaker. Semantic Scholar Graph API metadata were checked for citation and influential-citation counts; each selected paper had 0 for both at the snapshot, so citation momentum was not a useful discriminator. Counts are current totals, not gains during the window.
-- **Reading and retrieval:** The arXiv HTML full text was inspected for the top three where practical, in addition to all nine abstract pages. The configured `web_extract` backend was unavailable in this runtime; direct arXiv HTML/API retrieval was used instead. Independent web searches corroborated the Zenodo calculation record for [1], the CLEO proceeding for [3], and the journal record for [5]; other ranking signals are cited at the paper entries.
+- **Window:** Daily batch dated 2026-10-28 only; snapshot taken 2026-10-29 01:36:40 UTC. This is the latest available announcement batch and is the prior batch relative to the snapshot date.
+- **Coverage:** Checked recent listings for physics, astro-ph, cond-mat, gr-qc, hep-ex, hep-lat, hep-ph, hep-th, nucl-ex, nucl-th and quant-ph. The first listed batch was 28 Oct in ten archives; astro-ph's latest listed batch was Fri 23 Oct, so no astro-ph papers were eligible for the 28 Oct batch. Candidates were deduplicated by versionless arXiv ID. Every selected abstract page was checked; the top three full-text HTML versions were inspected for methods/results/limitations.
+- **Inference:** No official arXiv trending chart exists. The shortlist is ordered using checkable signals—reported result strength and specificity, physics cross-listing, collaboration/data artifacts, an expert conference-program listing where found, and recency as a tie-breaker. It is not a popularity or download ranking. Semantic Scholar Graph lookups were rate-limited, so no citation-count or age-normalized citation signal is used.
+- **Sources:** arXiv recent listings: [physics](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), [quant-ph](https://arxiv.org/list/quant-ph/recent). Paper metadata/abstracts: linked arXiv abstract pages above; full text inspected for [CONUS+](https://arxiv.org/html/2610.37318v1), [ALICE](https://arxiv.org/html/2610.36237v1), and [⁵⁴K decay](https://arxiv.org/html/2610.36218v1). Additional context: [Zenodo calculations for ⁵⁴K](https://zenodo.org/records/22666940), [DPG 2026 quantum-technology programme](https://www.dpg-verhandlungen.de/year/2026/conference/mainz/part/q/session/59), and [GWOSC event record for GW230627_015337](https://gwosc.org/eventapi/html/GWTC-4.1/GW230627_015337/v2/).

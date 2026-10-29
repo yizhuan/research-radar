@@ -4,81 +4,80 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-10-29 01:41 UTC |
+| Snapshot time (UTC) | 2026-10-29 17:48 UTC |
 | Scope | Daily |
 | Date range | 2026-10-29 through 2026-10-29 |
-| Ranking basis | Daily GitHub Trending star gains |
+| Ranking basis | GitHub Trending daily star gains for the first 10 entries; two newly created, recently active repositories are appended as supplementary signals |
 
 ## Headline
 
-Agentic development is the clearest cluster today, especially tools that make design quality and repeatable coding workflows explicit. DeepTutor leads the daily star-gain list, while several design-agent projects occupy the next highest positions.
+AI coding-agent infrastructure dominates today's GitHub momentum: design-quality controls, durable context, agent workspaces, and repeatable engineering workflows account for most of the ranked repos. Personalized tutoring and document OCR provide notable non-coding-agent counterpoints; two projects created within the last two days add fresh signals beyond the Trending list.
 
 ## Top Repositories
 
-1. **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)  - DeepTutor: Lifelong Personalized Tutoring.**
+1. **[pbakaus/impeccable](https://github.com/pbakaus/impeccable) - A portable set of coding-agent commands and deterministic checks for improving and reviewing interface design.**
 
-  **Language:** Python | **Stars gained in window:** +2,371 | **Total stars:** 48,066 | **Why notable:** Led the daily list by star gain and pairs personalized tutoring with a recently released, modular learning workspace.
+  **Language:** Rust | **Stars gained in window:** +2,881 | **Total stars:** 94,882 | **Why notable:** It leads the selected list by daily star gain and pairs agent-directed design commands with a no-LLM, 62-rule UI quality detector.
 
-2. **[elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills)  - A collection of design skills for AI coding tools, including Claude Code, Cursor, Codex, and Windsurf.**
+2. **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) - An agent-native learning workspace combining tutoring, research, problem solving, quizzes, and mastery practice.**
 
-  **Language:** N/A - not available from GitHub | **Stars gained in window:** +2,139 | **Total stars:** 11,171 | **Why notable:** Second-highest daily star gain; the README describes individually installable, markdown-based design skills portable across multiple coding agents.
+  **Language:** Python | **Stars gained in window:** +1,926 | **Total stars:** 49,580 | **Why notable:** It is the strongest non-coding-agent project by today's gain and unifies multiple learning modes around shared runtime and learner context.
 
-3. **[Nutlope/hallmark](https://github.com/Nutlope/hallmark)  - Anti-AI-slop design skill for Claude Code, Cursor, and Codex.**
+3. **[milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) - A local-first, open-source multi-agent chat workspace for running AI bots as teammates.**
 
-  **Language:** CSS | **Stars gained in window:** +2,110 | **Total stars:** 40,771 | **Why notable:** One of the three largest daily gainers; its README details themed page generation, browser-based lint checks, and a fresh-context review step.
+  **Language:** TypeScript | **Stars gained in window:** +1,190 | **Total stars:** 7,276 | **Why notable:** Its momentum reflects demand for multi-agent products that combine familiar chat, individual bot environments, and user approval controls.
 
-4. **[hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift)  - A JavaScript utility for obtaining direct download links from eight Chinese cloud-drive services.**
+4. **[elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) - A small, portable library of design skills for AI coding tools.**
 
-  **Language:** JavaScript | **Stars gained in window:** +1,616 | **Total stars:** 34,827 | **Why notable:** A non-agent utility among the day’s strongest gainers, representing practical cloud-drive tooling rather than the dominant agent/design cluster.
+  **Language:** N/A - not available from GitHub | **Stars gained in window:** +1,178 | **Total stars:** 11,934 | **Why notable:** A single focused landing-page skill is gaining quickly, showing interest in reusable design guidance that can move across coding agents.
 
-5. **[pbakaus/impeccable](https://github.com/pbakaus/impeccable)  - A design vocabulary for coding agents, with commands for steering, critique, audit, and polish.**
+5. **[JetBrains/thinkrail](https://github.com/JetBrains/thinkrail) - An agentic IDE built around the pi coding agent, isolated workspaces, and durable project knowledge.**
 
-  **Language:** Rust | **Stars gained in window:** +1,472 | **Total stars:** 92,769 | **Why notable:** README documents 24 focused agent commands and deterministic design checks; it is the most mature-looking representative of the design-quality cluster by total stars.
+  **Language:** TypeScript | **Stars gained in window:** +1,116 | **Total stars:** 5,859 | **Why notable:** It turns agent sessions into reviewable, parallel development work through git-worktree workspaces, living specs, and a full IDE surface.
 
-6. **[obra/superpowers](https://github.com/obra/superpowers)  - An agentic skills framework and software-development methodology.**
+6. **[obra/superpowers](https://github.com/obra/superpowers) - An agent skills framework that codifies software-development methods and workflows.**
 
-  **Language:** Shell | **Stars gained in window:** +1,095 | **Total stars:** 307,481 | **Why notable:** A high-gain entry with a large established audience; its README emphasizes specification, planning, test-driven implementation, and review through composable skills.
+  **Language:** Shell | **Stars gained in window:** +1,037 | **Total stars:** 308,253 | **Why notable:** Its strong daily gain reinforces sustained interest in procedural guardrails such as test-first work, debugging, and code review; the API shows its latest push was October 23.
 
-7. **[JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)  - A lightweight agentic IDE built around pi, with project-customized workflows.**
+7. **[nightly-labs/openbot](https://github.com/nightly-labs/openbot) - A local-first desktop workspace for persistent AI teammates, task queues, files, and browser control.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,068 | **Total stars:** 5,107 | **Why notable:** The README describes a real IDE around pi with isolated git-worktree workspaces, durable project specs, and parallel agent sessions.
+  **Language:** TypeScript | **Stars gained in window:** +705 | **Total stars:** 3,734 | **Why notable:** It represents the desktop/workspace branch of the agent trend, with persistent teammates and collaboration rather than a single chat interface.
 
-8. **[nightly-labs/openbot](https://github.com/nightly-labs/openbot)  - A local-first desktop workspace for persistent AI teammates, queues, file sharing, browser control, and agent collaboration.**
+8. **[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) - A game-development workflow kit organizing agents, skills, and project rules around studio roles.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,054 | **Total stars:** 3,283 | **Why notable:** Shows the local-first multi-agent desktop pattern: independent workspaces, queues, persistent conversations, and inter-agent messaging.
+  **Language:** Shell | **Stars gained in window:** +538 | **Total stars:** 28,910 | **Why notable:** It applies agent orchestration to a concrete vertical—game development—with engine-specific rules, validation hooks, and workflow modes.
 
-9. **[makecindy/cindy](https://github.com/makecindy/cindy)  - An open-source AI agent positioned as ready to use out of the box.**
+9. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) - A cross-session memory system that summarizes agent work and injects relevant context into later sessions.**
 
-  **Language:** TypeScript | **Stars gained in window:** +728 | **Total stars:** 8,124 | **Why notable:** Adds a general-purpose, out-of-the-box agent to a daily mix otherwise weighted toward specialized coding workflows and design skills.
+  **Language:** TypeScript | **Stars gained in window:** +459 | **Total stars:** 104,479 | **Why notable:** Durable memory remains a distinct layer in the agent stack, with configurable storage, context injection, and multi-harness support.
 
-10. **[ruvnet/RuView](https://github.com/ruvnet/RuView)  - Uses commodity Wi-Fi signals for spatial intelligence, vital-sign monitoring, and presence detection without video.**
+10. **[CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) - An open-source AI-coworker platform giving agents a browser, files, and tools under explicit governance.**
 
-  **Language:** Rust | **Stars gained in window:** +557 | **Total stars:** 101,077 | **Why notable:** A distinct sensing/edge-AI outlier in the list, applying wireless signal processing to presence and vital-sign use cases.
+  **Language:** TypeScript | **Stars gained in window:** +240 | **Total stars:** 7,963 | **Why notable:** It is a useful governance-oriented counterpoint: actions are bounded and recorded, and deployments can keep credentials and agent computers under operator control.
 
-11. **[macro-inc/macro](https://github.com/macro-inc/macro)  - A unified team workspace spanning email, chat, documents, tasks, agents, calls, and CRM.**
+11. **[OpenBMB/MiniCPM-OCR](https://github.com/OpenBMB/MiniCPM-OCR) - A compact document OCR and parsing model family with a separate correctness-scoring model.**
 
-  **Language:** Rust | **Stars gained in window:** +117 | **Total stars:** 5,439 | **Why notable:** A broader productivity-suite counterpoint: it brings communication, work tracking, and shared AI memory into one workspace.
+  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 490 | **Why notable:** Created October 27 and pushed today, it is a newly active two-day repo; README materials describe Chinese/English document parsing, local inference backends, and OCR-result quality scoring.
 
-12. **[expo/skills](https://github.com/expo/skills)  - A collection of AI-agent skills for Expo projects and Expo Application Services.**
+12. **[MiniMax-AI/mcode-stack](https://github.com/MiniMax-AI/mcode-stack) - A collection of engineering skills, workflows, and checklists used by the MiniMax Code team.**
 
-  **Language:** Shell | **Stars gained in window:** +90 | **Total stars:** 3,596 | **Why notable:** A framework-specific skills collection, indicating that agent extensions are being packaged for established developer ecosystems.
+  **Language:** Python | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 403 | **Why notable:** Created October 28 and pushed today, it extends the day's workflow trend with installable stacks for code review, context management, experiments, and agent operations.
 
 ## Trending Technologies and Themes
 
-- **Design skills and quality gates for coding agents:** Three of the top five by daily star gain—AI Design Skills, Hallmark, and Impeccable—focus on steering coding agents toward more deliberate interfaces and adding review or lint gates.
-- **Agent workflows are becoming products, not just prompts:** Superpowers, ThinkRail, OpenBot, Cindy, and Expo Skills span reusable methods, IDE workspaces, persistent desktop teammates, general-purpose agents, and framework-specific skills.
-- **AI-assisted learning:** DeepTutor is the largest daily gainer, bringing personalized tutoring and a learning workspace into the AI application mix.
-- **Cloud-drive utility tooling:** LinkSwift is a sizeable outlier: its stated purpose is direct-link retrieval for eight Chinese cloud-drive services, not agent development.
-- **Wi-Fi sensing and spatial inference:** RuView represents a distinct signal-processing use case, claiming spatial, presence, and vital-sign inference from commodity Wi-Fi rather than video.
-- **Unified team workspaces:** Macro points toward bundling communications and work management with shared AI memory in one workspace.
-- **Languages:** TypeScript 3, Rust 3, Shell 2, and one each of Python, CSS, and JavaScript; one repo has no primary language listed by GitHub.
+- **Agentic engineering workflows:** obra/superpowers, MiniMax-AI/mcode-stack, and Donchitos/Claude-Code-Game-Studios package development practices as reusable skills, checklists, or coordinated role-based systems.
+- **Agent IDEs and persistent workspaces:** JetBrains/thinkrail, nightly-labs/openbot, milind-soni/OpenMausBot, and CopilotKit/OpenBot move beyond one-shot chat toward isolated work, persistent teammates, computer access, and governance.
+- **Design quality for AI-built interfaces:** pbakaus/impeccable and elayadesign/ai-design-skills focus on stronger design direction and repeatable evaluation rather than generic code generation.
+- **Persistent context and learning:** thedotmack/claude-mem treats memory as agent infrastructure, while HKUDS/DeepTutor applies shared context and agent workflows to personalized education.
+- **Document intelligence beyond code:** OpenBMB/MiniCPM-OCR joins OCR parsing with correctness assessment for scanned and difficult documents.
+- **Languages:** TypeScript leads the listed set (6 repositories), followed by Python (2) and Shell (2); Rust appears once, and one repo has no primary language reported by GitHub. The skew reflects the UI and orchestration-heavy agent tooling in today's sample.
 
 ## Takeaway
 
-Today’s GitHub attention favors applied AI tooling over a single model or framework: coding agents are being wrapped in IDEs, reusable procedures, and design review systems. The list is not exclusively agent-centric, however—DeepTutor, LinkSwift, RuView, and Macro show continued interest in education, regional utility software, sensing, and integrated workspaces.
+The most visible trend is not merely “more coding agents,” but an emerging support layer around them: repeatable workflows, lasting project context, safer computer access, and design/review quality controls. Today's fastest-growing list is heavily AI-tooling-centered, while tutoring and document OCR show that the same agent and model infrastructure is spreading into learning and information processing. The two extra new-repository signals are ranked separately from Trending because GitHub Search does not provide their daily star gains.
 
 ## Sources and Method
 
-- **Primary source:** https://github.com/trending?since=daily
-- **Corroboration:** GitHub REST repository metadata and current default-branch commits for all 12 repositories; GitHub Search API exact-name checks for 10/12. Two Search API requests were rate-limited, so REST metadata was used for those entries.
-- **Method note:** Daily gains come from the matching GitHub Trending view; total stars and default-branch SHAs come from GitHub REST checks. README details were reviewed for seven narration-priority repositories. No prior-window comparison was used, so no Notable Shifts section is included. Noise filters removed a jailbreak list and a self-teaching/course-style repository.
+- **Primary source:** [GitHub Trending repositories - daily](https://github.com/trending?since=daily), captured 2026-10-29 at 17:48 UTC.
+- **Corroboration:** GitHub REST API repository and branch endpoints for descriptions, primary languages, current total stars, default branches, and commit SHAs; GitHub Search API query `created:2026-10-27..2026-10-29 stars:>25` for newly created additions.
+- **Method note:** The first 10 entries are the meaningful non-list daily Trending repositories sorted by the page's displayed “stars today” values; the list-only `togg53192-cmd/jailbreaks` was excluded as noise. Two recently created and pushed repos, OpenBMB/MiniCPM-OCR and MiniMax-AI/mcode-stack, are appended as supplementary signals; their daily star gains are unavailable and are not inferred from current total stars. Total stars and commit SHAs were checked against GitHub REST API responses. No prior-window comparison was used, so no Notable Shifts section is included.

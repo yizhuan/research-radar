@@ -1,0 +1,437 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-29",
+  "title": "GitHub Trending Summary - Daily - 2026-10-29",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-10-29.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "ranking_basis": "Daily GitHub Trending star gains",
+  "ranking_explanation": "Repositories were sorted in descending order by the “stars today” count shown on GitHub Trending (daily). Obvious list/course-style and jailbreak-list noise was excluded; 12 remaining repositories are reported. Total stars and current default-branch SHAs were corroborated via GitHub REST.",
+  "global_caveat": "Trending gains are a point-in-time daily page signal and can change; current total-star counts and commits were fetched at 2026-10-29 01:41 UTC. Two GitHub Search API checks were rate-limited, but REST metadata and commit checks succeeded for all entries. No prior-window evidence was collected, so no shift comparison is claimed.",
+  "themes": [
+    {
+      "id": "agent-design",
+      "title": "Design skills and quality gates for coding agents",
+      "repo_ids": [
+        "02-elayadesign-ai-design-skills",
+        "03-nutlope-hallmark",
+        "05-pbakaus-impeccable"
+      ],
+      "observation": "Three of the top five by daily star gain—AI Design Skills, Hallmark, and Impeccable—focus on steering coding agents toward more deliberate interfaces and adding review or lint gates."
+    },
+    {
+      "id": "agent-workflows",
+      "title": "Agent workflows are becoming products, not just prompts",
+      "repo_ids": [
+        "06-obra-superpowers",
+        "07-jetbrains-thinkrail",
+        "08-nightly-labs-openbot",
+        "09-makecindy-cindy",
+        "12-expo-skills"
+      ],
+      "observation": "Superpowers, ThinkRail, OpenBot, Cindy, and Expo Skills span reusable methods, IDE workspaces, persistent desktop teammates, general-purpose agents, and framework-specific skills."
+    },
+    {
+      "id": "ai-learning",
+      "title": "AI-assisted learning",
+      "repo_ids": [
+        "01-hkuds-deeptutor"
+      ],
+      "observation": "DeepTutor is the largest daily gainer, bringing personalized tutoring and a learning workspace into the AI application mix."
+    },
+    {
+      "id": "cloud-drive-tools",
+      "title": "Cloud-drive utility tooling",
+      "repo_ids": [
+        "04-hmjz100-linkswift"
+      ],
+      "observation": "LinkSwift is a sizeable outlier: its stated purpose is direct-link retrieval for eight Chinese cloud-drive services, not agent development."
+    },
+    {
+      "id": "wifi-sensing",
+      "title": "Wi-Fi sensing and spatial inference",
+      "repo_ids": [
+        "10-ruvnet-ruview"
+      ],
+      "observation": "RuView represents a distinct signal-processing use case, claiming spatial, presence, and vital-sign inference from commodity Wi-Fi rather than video."
+    },
+    {
+      "id": "team-workspaces",
+      "title": "Unified team workspaces",
+      "repo_ids": [
+        "11-macro-inc-macro"
+      ],
+      "observation": "Macro points toward bundling communications and work management with shared AI memory in one workspace."
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "extra",
+      "title": "Snapshot",
+      "content": "Snapshot time: 2026-10-29 01:41 UTC; scope: Daily; date range: 2026-10-29 through 2026-10-29; ranking basis: GitHub Trending daily star gains."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agentic development is the clearest cluster today, especially tools that make design quality and repeatable coding workflows explicit. DeepTutor leads the daily star-gain list, while several design-agent projects occupy the next highest positions."
+    },
+    {
+      "id": "01-hkuds-deeptutor",
+      "kind": "repo",
+      "title": "HKUDS/DeepTutor",
+      "rank": 1,
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring.",
+      "language": "Python",
+      "stars_gained": 2371,
+      "total_stars": 48066,
+      "default_branch_commit": "1ea7df155447f4caf0e3abc86b3ff5395479cd4a",
+      "why_notable": "Led the daily list by star gain and pairs personalized tutoring with a recently released, modular learning workspace.",
+      "theme_ids": [
+        "ai-learning"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "DeepTutor",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A personalized tutoring application with a learning workspace, modular installation, and learning-oriented tools, as described in its README and linked docs.",
+      "content": "DeepTutor: Lifelong Personalized Tutoring. Led the daily list by star gain and pairs personalized tutoring with a recently released, modular learning workspace.",
+      "refs": [
+        "HKUDS/DeepTutor",
+        "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "02-elayadesign-ai-design-skills",
+      "kind": "repo",
+      "title": "elayadesign/ai-design-skills",
+      "rank": 2,
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "description": "A collection of design skills for AI coding tools, including Claude Code, Cursor, Codex, and Windsurf.",
+      "language": null,
+      "stars_gained": 2139,
+      "total_stars": 11171,
+      "default_branch_commit": "ded7efc9d5c02761c41a03caf3b78f9259ab8828",
+      "why_notable": "Second-highest daily star gain; the README describes individually installable, markdown-based design skills portable across multiple coding agents.",
+      "theme_ids": [
+        "agent-design"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "AI Design Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A collection organized as self-contained markdown skill folders with tool-specific installation paths.",
+      "content": "A collection of design skills for AI coding tools, including Claude Code, Cursor, Codex, and Windsurf. Second-highest daily star gain; the README describes individually installable, markdown-based design skills portable across multiple coding agents.",
+      "refs": [
+        "elayadesign/ai-design-skills",
+        "https://github.com/elayadesign/ai-design-skills/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "03-nutlope-hallmark",
+      "kind": "repo",
+      "title": "Nutlope/hallmark",
+      "rank": 3,
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars_gained": 2110,
+      "total_stars": 40771,
+      "default_branch_commit": "8f6969f8922caabde9de1784959eae11ddf68073",
+      "why_notable": "One of the three largest daily gainers; its README details themed page generation, browser-based lint checks, and a fresh-context review step.",
+      "theme_ids": [
+        "agent-design"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Hallmark",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A design skill that applies themed page systems and uses tiered gates, rendered multi-width linting, and independent review.",
+      "content": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. One of the three largest daily gainers; its README details themed page generation, browser-based lint checks, and a fresh-context review step.",
+      "refs": [
+        "Nutlope/hallmark",
+        "https://github.com/Nutlope/hallmark/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "04-hmjz100-linkswift",
+      "kind": "repo",
+      "title": "hmjz100/LinkSwift",
+      "rank": 4,
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "A JavaScript utility for obtaining direct download links from eight Chinese cloud-drive services.",
+      "language": "JavaScript",
+      "stars_gained": 1616,
+      "total_stars": 34827,
+      "default_branch_commit": "c62d10a3071b089c6ffef4e9fa56f05bbb03079c",
+      "why_notable": "A non-agent utility among the day’s strongest gainers, representing practical cloud-drive tooling rather than the dominant agent/design cluster.",
+      "theme_ids": [
+        "cloud-drive-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "LinkSwift",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A JavaScript tool to resolve download links across supported cloud-drive services, per the GitHub description.",
+      "content": "A JavaScript utility for obtaining direct download links from eight Chinese cloud-drive services. A non-agent utility among the day’s strongest gainers, representing practical cloud-drive tooling rather than the dominant agent/design cluster.",
+      "refs": [
+        "hmjz100/LinkSwift",
+        "https://github.com/hmjz100/LinkSwift/blob/dev/README.md"
+      ]
+    },
+    {
+      "id": "05-pbakaus-impeccable",
+      "kind": "repo",
+      "title": "pbakaus/impeccable",
+      "rank": 5,
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "A design vocabulary for coding agents, with commands for steering, critique, audit, and polish.",
+      "language": "Rust",
+      "stars_gained": 1472,
+      "total_stars": 92769,
+      "default_branch_commit": "5e745ace7e151feb2a93d360d0281fe39448b857",
+      "why_notable": "README documents 24 focused agent commands and deterministic design checks; it is the most mature-looking representative of the design-quality cluster by total stars.",
+      "theme_ids": [
+        "agent-design"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Impeccable",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A command-oriented skill and CLI workflow: initialize project context, steer named UI targets, and run deterministic quality checks.",
+      "content": "A design vocabulary for coding agents, with commands for steering, critique, audit, and polish. README documents 24 focused agent commands and deterministic design checks; it is the most mature-looking representative of the design-quality cluster by total stars.",
+      "refs": [
+        "pbakaus/impeccable",
+        "https://github.com/pbakaus/impeccable/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "06-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 6,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software-development methodology.",
+      "language": "Shell",
+      "stars_gained": 1095,
+      "total_stars": 307481,
+      "default_branch_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "why_notable": "A high-gain entry with a large established audience; its README emphasizes specification, planning, test-driven implementation, and review through composable skills.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Superpowers",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A composable skills framework that sequences specification, planning, implementation, and review across supported coding-agent harnesses.",
+      "content": "An agentic skills framework and software-development methodology. A high-gain entry with a large established audience; its README emphasizes specification, planning, test-driven implementation, and review through composable skills.",
+      "refs": [
+        "obra/superpowers",
+        "https://github.com/obra/superpowers/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "07-jetbrains-thinkrail",
+      "kind": "repo",
+      "title": "JetBrains/thinkrail",
+      "rank": 7,
+      "url": "https://github.com/JetBrains/thinkrail",
+      "description": "A lightweight agentic IDE built around pi, with project-customized workflows.",
+      "language": "TypeScript",
+      "stars_gained": 1068,
+      "total_stars": 5107,
+      "default_branch_commit": "940d15ca5fb0838b9396832befd9ad60d6e51e66",
+      "why_notable": "The README describes a real IDE around pi with isolated git-worktree workspaces, durable project specs, and parallel agent sessions.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "ThinkRail",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A pi-powered IDE with isolated worktree workspaces, persistent project specifications, concurrent sessions, and integrated review tools.",
+      "content": "A lightweight agentic IDE built around pi, with project-customized workflows. The README describes a real IDE around pi with isolated git-worktree workspaces, durable project specs, and parallel agent sessions.",
+      "refs": [
+        "JetBrains/thinkrail",
+        "https://github.com/JetBrains/thinkrail/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "08-nightly-labs-openbot",
+      "kind": "repo",
+      "title": "nightly-labs/openbot",
+      "rank": 8,
+      "url": "https://github.com/nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates, queues, file sharing, browser control, and agent collaboration.",
+      "language": "TypeScript",
+      "stars_gained": 1054,
+      "total_stars": 3283,
+      "default_branch_commit": "c389f4404256e754214b6982503381778d80ed35",
+      "why_notable": "Shows the local-first multi-agent desktop pattern: independent workspaces, queues, persistent conversations, and inter-agent messaging.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "OpenBot",
+      "unique_caveat": "README calls it a development preview and warns that agents run with broad access and no per-action approvals after first-launch consent.",
+      "enrichment": null,
+      "architecture_summary": "A desktop workspace coordinating persistent agent sessions, local queues and workspaces, browser access, and agent-to-agent messaging.",
+      "content": "A local-first desktop workspace for persistent AI teammates, queues, file sharing, browser control, and agent collaboration. Shows the local-first multi-agent desktop pattern: independent workspaces, queues, persistent conversations, and inter-agent messaging.",
+      "refs": [
+        "nightly-labs/openbot",
+        "https://github.com/nightly-labs/openbot/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "09-makecindy-cindy",
+      "kind": "repo",
+      "title": "makecindy/cindy",
+      "rank": 9,
+      "url": "https://github.com/makecindy/cindy",
+      "description": "An open-source AI agent positioned as ready to use out of the box.",
+      "language": "TypeScript",
+      "stars_gained": 728,
+      "total_stars": 8124,
+      "default_branch_commit": "513d17de3e60b3cfc735bcba9eecdd8ac064e753",
+      "why_notable": "Adds a general-purpose, out-of-the-box agent to a daily mix otherwise weighted toward specialized coding workflows and design skills.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "Cindy",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "An open-source general-purpose AI agent, according to its GitHub description.",
+      "content": "An open-source AI agent positioned as ready to use out of the box. Adds a general-purpose, out-of-the-box agent to a daily mix otherwise weighted toward specialized coding workflows and design skills.",
+      "refs": [
+        "makecindy/cindy",
+        "https://github.com/makecindy/cindy/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "10-ruvnet-ruview",
+      "kind": "repo",
+      "title": "ruvnet/RuView",
+      "rank": 10,
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "Uses commodity Wi-Fi signals for spatial intelligence, vital-sign monitoring, and presence detection without video.",
+      "language": "Rust",
+      "stars_gained": 557,
+      "total_stars": 101077,
+      "default_branch_commit": "3686bc770f77eb6161d5379861dcd09d7d9a1e4b",
+      "why_notable": "A distinct sensing/edge-AI outlier in the list, applying wireless signal processing to presence and vital-sign use cases.",
+      "theme_ids": [
+        "wifi-sensing"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "RuView",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A Wi-Fi-sensing project for spatial and presence signals, per the GitHub description.",
+      "content": "Uses commodity Wi-Fi signals for spatial intelligence, vital-sign monitoring, and presence detection without video. A distinct sensing/edge-AI outlier in the list, applying wireless signal processing to presence and vital-sign use cases.",
+      "refs": [
+        "ruvnet/RuView",
+        "https://github.com/ruvnet/RuView/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "11-macro-inc-macro",
+      "kind": "repo",
+      "title": "macro-inc/macro",
+      "rank": 11,
+      "url": "https://github.com/macro-inc/macro",
+      "description": "A unified team workspace spanning email, chat, documents, tasks, agents, calls, and CRM.",
+      "language": "Rust",
+      "stars_gained": 117,
+      "total_stars": 5439,
+      "default_branch_commit": "c5b49d5a7b4bf4a2c5699602cb7961c657cc749c",
+      "why_notable": "A broader productivity-suite counterpoint: it brings communication, work tracking, and shared AI memory into one workspace.",
+      "theme_ids": [
+        "team-workspaces"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Macro",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "An integrated workspace combining team communication, work objects, agents, and shared memory, per the GitHub description.",
+      "content": "A unified team workspace spanning email, chat, documents, tasks, agents, calls, and CRM. A broader productivity-suite counterpoint: it brings communication, work tracking, and shared AI memory into one workspace.",
+      "refs": [
+        "macro-inc/macro",
+        "https://github.com/macro-inc/macro/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "12-expo-skills",
+      "kind": "repo",
+      "title": "expo/skills",
+      "rank": 12,
+      "url": "https://github.com/expo/skills",
+      "description": "A collection of AI-agent skills for Expo projects and Expo Application Services.",
+      "language": "Shell",
+      "stars_gained": 90,
+      "total_stars": 3596,
+      "default_branch_commit": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "why_notable": "A framework-specific skills collection, indicating that agent extensions are being packaged for established developer ecosystems.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "Expo Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A collection of AI-agent skills focused on Expo and Expo Application Services, per the GitHub description.",
+      "content": "A collection of AI-agent skills for Expo projects and Expo Application Services. A framework-specific skills collection, indicating that agent extensions are being packaged for established developer ecosystems.",
+      "refs": [
+        "expo/skills",
+        "https://github.com/expo/skills/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Design skills and quality gates for coding agents: Three of the top five by daily star gain—AI Design Skills, Hallmark, and Impeccable—focus on steering coding agents toward more deliberate interfaces and adding review or lint gates. Supporting repositories: 02-elayadesign-ai-design-skills, 03-nutlope-hallmark, 05-pbakaus-impeccable.\nAgent workflows are becoming products, not just prompts: Superpowers, ThinkRail, OpenBot, Cindy, and Expo Skills span reusable methods, IDE workspaces, persistent desktop teammates, general-purpose agents, and framework-specific skills. Supporting repositories: 06-obra-superpowers, 07-jetbrains-thinkrail, 08-nightly-labs-openbot, 09-makecindy-cindy, 12-expo-skills.\nAI-assisted learning: DeepTutor is the largest daily gainer, bringing personalized tutoring and a learning workspace into the AI application mix. Supporting repositories: 01-hkuds-deeptutor.\nCloud-drive utility tooling: LinkSwift is a sizeable outlier: its stated purpose is direct-link retrieval for eight Chinese cloud-drive services, not agent development. Supporting repositories: 04-hmjz100-linkswift.\nWi-Fi sensing and spatial inference: RuView represents a distinct signal-processing use case, claiming spatial, presence, and vital-sign inference from commodity Wi-Fi rather than video. Supporting repositories: 10-ruvnet-ruview.\nUnified team workspaces: Macro points toward bundling communications and work management with shared AI memory in one workspace. Supporting repositories: 11-macro-inc-macro.\nLanguages in the listed repositories: TypeScript 3, Rust 3, Shell 2, and one each of Python, CSS, and JavaScript; one repository has no primary language listed."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today’s GitHub attention favors applied AI tooling over a single model or framework: coding agents are being wrapped in IDEs, reusable procedures, and design review systems. The list is not exclusively agent-centric, however—DeepTutor, LinkSwift, RuView, and Macro show continued interest in education, regional utility software, sensing, and integrated workspaces."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "extra",
+      "title": "Sources and Method",
+      "content": "Primary source: https://github.com/trending?since=daily. Corroboration: GitHub REST repository and default-branch commit endpoints for all 12 listed repositories; GitHub Search API exact-name results for 10 of 12 (the remaining two Search API queries were rate-limited; REST metadata and commit checks succeeded). README enrichment: current READMEs for DeepTutor, AI Design Skills, Hallmark, Impeccable, Superpowers, ThinkRail, and OpenBot. Method note: star gains are the values shown on the matching daily Trending page; total stars and default-branch commits were checked through GitHub REST and may change after this snapshot. Obvious list/course and jailbreak-list noise was excluded."
+    }
+  ]
+}

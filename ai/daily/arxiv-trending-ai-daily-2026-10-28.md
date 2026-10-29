@@ -1,84 +1,132 @@
-# arXiv AI daily — 28 October 2026: five notable papers on agent reasoning and evaluation
+## Headline
 
-The latest AI-category announcement batch highlights agents acting in worlds, groups, and evidence-rich tasks; one compact time-series model is a distinct systems result. I’ll cover the papers with the strongest checkable signals, then the recurring themes and open tests. arXiv has no official trending chart: this inferred shortlist is drawn from a 200-record recency sample, all five were less than two days old with zero Semantic Scholar citations at snapshot, and Hugging Face upvotes are a narrow platform-specific attention signal rather than a readership measure.
+AI across the arXiv core categories — Wednesday, 28 October 2026 announcement batch; 10 papers. The attention signal is led by vision, multimodal representation learning, and interactive world models, with robot dynamics and inference efficiency also prominent. Spoken agenda: what the most-upvoted papers claim, how they evaluate visual/world understanding, and what remains untested. arXiv has no official trending chart; this ordering is inferred from Hugging Face Papers upvotes among 38 listed papers in a 468-record candidate pool, an inherently platform-specific measure, and these very recent papers have limited citation evidence, so it is not a general readership or popularity ranking. The latest batch available at the 29 October snapshot is the prior batch dated 28 October.
 
 ## Top papers (ranked)
 
-### 1. [ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning](https://arxiv.org/abs/2610.37666)
-- **Abstract:** ThinkWorld represents actions as discrete Chains-of-Dynamics and uses predicted-versus-observed future states to train vision-language-action reasoning from robot demonstrations and videos without action labels.
+### 1. [PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations](https://arxiv.org/abs/2610.37381)
+- **Abstract:** PDRVLA learns compact physical-dynamics tokens from future RGB, depth, and optical-flow features to condition robot action generation without running a video world model online; the authors report strong results on four simulation benchmarks.
+- **Authors:** Hanqing Wang, Zhaotian Cai, Ruichuan An, Bohan Zeng, Tao Zhang, et al.
+- **arXiv:** `2610.37381v1` (published 2026-10-27T15:09:10Z; categories: `cs.RO`, `cs.CV`, `cs.LG`)
+- **Evidence for ranking:** Hugging Face Papers showed 146 upvotes at the snapshot, the highest of the 38 candidate papers with a listed page; the paper reports results on four robot simulation benchmarks ([Hugging Face](https://huggingface.co/papers/2610.37381)).
+- **Claimed contribution:** The authors report 99.3% success on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin 2.0, and 81.5% on SimplerEnv, attributing the results to physical-token prediction and supervision from a frozen video world model.
+- **Caveat:** The reported main results are simulation-based; the authors identify object-centric geometry, contact states, and material properties as future predictive targets beyond the RGB, depth, and optical-flow features tested.
+- **Announcement type:** new submission, 2026-10-28 announcement batch
+- **Themes:** Robotics & control; Efficient inference & systems
+
+### 2. [Hy-Nomas: Towards Free-form Interactive World Generation](https://arxiv.org/abs/2610.36729)
+- **Abstract:** Hy-Nomas is an 8B diffusion video world model that supports free-form text commands and continuous camera control over multiple turns using cached history, structured captions, and action-aware causal attention.
+- **Authors:** Qiaoling Chen, Jiaxiang Cheng, Xueqing Deng, Tiankai Hang, Ji Hou, et al.
+- **arXiv:** `2610.36729v1` (published 2026-10-27T06:48:59Z; categories: `cs.CV`)
+- **Evidence for ranking:** Hugging Face Papers showed 114 upvotes, second among the 38 listed candidates; the authors report releasing model weights, code, and benchmarks ([Hugging Face](https://huggingface.co/papers/2610.36729), [arXiv HTML](https://arxiv.org/html/2610.36729v1)).
+- **Claimed contribution:** The authors report superior human-evaluation results over existing world models on multi-turn text interaction, camera control, interleaved control, and spatial-memory tasks.
+- **Caveat:** Although Hy-Nomas leads on several interaction benchmarks, the authors report that it still trails Genie 3 in long-term spatial consistency; they identify robotic adaptation as requiring videos paired with robot actions and task-success evaluation.
+- **Announcement type:** new submission, 2026-10-28 announcement batch
+- **Themes:** Multimodal & vision-language; Agents & reasoning
+
+### 3. [Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?](https://arxiv.org/abs/2610.37662)
+- **Abstract:** The authors argue that effective bit budget, rather than feature-reconstruction error, better predicts downstream visual understanding and introduce Factorized Vector Quantization (FVQ) to sustain gains as the token budget grows.
+- **Authors:** Jialv Zou, Xiaotong Li, Zhengrong Yue, Xu Huang, Yaxin Luo, et al.
+- **arXiv:** `2610.37662v1` (published 2026-10-27T17:59:22Z; categories: `cs.CV`)
+- **Evidence for ranking:** Hugging Face Papers showed 91 upvotes, third among the 38 listed candidates; the authors link both a project page and code/model resources ([Hugging Face](https://huggingface.co/papers/2610.37662), [project page](https://doctor-james.github.io/FVQ-Page/), [GitHub](https://github.com/hustvl/FVQ)).
+- **Claimed contribution:** The authors report that their industrial-scale FVQ model matches continuous representations on multimodal understanding and outperforms UniAR and Emu3-Chat by 22.8% and 59.2% on a nine-metric average, respectively.
+- **Caveat:** The state-of-the-art claim is scoped to the reported comparisons and metrics; the authors also identify saturation in existing multi-codebook quantizers, which FVQ is designed to mitigate rather than a settled limit for all discrete representations.
+- **Announcement type:** new submission, 2026-10-28 announcement batch
+- **Themes:** Multimodal & vision-language; Training & adaptation
+
+### 4. [ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning](https://arxiv.org/abs/2610.37666)
+- **Abstract:** ThinkWorld represents actions as discrete chains of world dynamics and uses predicted future states to learn action reasoning from robot demonstrations and unlabeled human videos.
 - **Authors:** Chaehyun Kim, Chi-Pin Huang, Jisoo Kim, Min-Hung Chen, Yu-Chiang Frank Wang, et al.
 - **arXiv:** `2610.37666v1` (published 2026-10-27T17:59:52Z; categories: `cs.RO`, `cs.AI`, `cs.CV`)
-- **Evidence for ranking:** The Hugging Face Papers page displayed 48 upvotes at the snapshot, the highest among these five checked pages. The paper is cross-listed across robotics, AI, and vision and reports simulation and real-robot evaluations.
-- **Claimed contribution:** The authors propose a shared motion-token reasoning space and consequence-grounded reinforcement learning, using future-state prediction to extend action supervision to unlabeled human videos; they report transfer to robots and generalization to unseen tasks and environments.
-- **Caveat:** The authors report a single training seed, so episode-level confidence intervals do not measure variation across independently trained checkpoints; latency also depends on the stated hardware and input setup.
+- **Evidence for ranking:** Hugging Face Papers showed 52 upvotes, fourth among the 38 listed candidates; an author project page and OpenReview-hosted manuscript provide additional checkable technical material ([Hugging Face](https://huggingface.co/papers/2610.37666), [project](https://thinkworld-project.github.io/), [OpenReview PDF](https://openreview.net/pdf?id=XXmuTLinUV)).
+- **Claimed contribution:** The authors report simulation and real-robot experiments showing human-to-robot transfer and generalization to unseen tasks and environments using shared Chain-of-Dynamics representations and reinforcement learning from imagined futures.
+- **Caveat:** The authors state that training results use a single seed, so episode-level confidence intervals do not capture variation across independently trained checkpoints.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Robotics & control; Multimodal & vision-language; Training & adaptation
+- **Themes:** Robotics & control; Agents & reasoning
 
-### 2. [Can LLMs Uncover Hidden Physical Laws through Free Exploration?](https://arxiv.org/abs/2610.37649)
-- **Abstract:** LongChang tests whether LLM agents can investigate simulated worlds with altered physics and discover the hidden laws without being given research questions; only one of twelve evaluated models achieves a non-zero discovery rate.
-- **Authors:** Zhen Yang, Wen Wang, Xander Xu, Ying-Cong Chen
-- **arXiv:** `2610.37649v1` (published 2026-10-27T17:57:00Z; categories: `cs.CL`, `cs.AI`, `cs.MA`)
-- **Evidence for ranking:** The Hugging Face Papers page displayed 7 upvotes at the snapshot. The paper is cross-listed in language, AI, and multiagent categories, and its project page provides a checkable research artifact.
-- **Claimed contribution:** The authors introduce LongChang, an automated altered-physics world and exploration-evaluation loop; their full results separate supported observations from correct law discovery, finding 97.6% evidence support but only 19.0% law correctness for the one model with discoveries.
-- **Caveat:** The authors explicitly limit the study to simulated worlds with known altered laws and say extending it to unresolved real-world science requires further research; most evaluated models did not discover a law.
+### 5. [CodeCap-Bench: Can Code Serve as a Good Video Caption?](https://arxiv.org/abs/2610.37341)
+- **Abstract:** CodeCap-Bench tests executable code as a compact representation of video, using 323 videos across five structured-2D categories to measure caption faithfulness through question answering and reconstruction.
+- **Authors:** Jiafu Tang, Yifan Xu, Eric Tang, Junjie Zhao, Shipeng Luo, et al.
+- **arXiv:** `2610.37341v1` (published 2026-10-27T14:47:31Z; categories: `cs.CV`)
+- **Evidence for ranking:** Hugging Face Papers showed 50 upvotes, fifth among the 38 listed candidates; the paper contributes a benchmark with fine-grained annotations and a multi-level evaluation framework ([Hugging Face](https://huggingface.co/papers/2610.37341)).
+- **Claimed contribution:** The authors report that code captions improve downstream reasoning accuracy and video-reconstruction fidelity over natural-language captions, while current models still miss complex temporal dynamics.
+- **Caveat:** The benchmark is restricted to structured 2D content in five categories; the paper's results do not establish that code captions work as well for unrestricted natural video.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Agents & reasoning; Evaluation & benchmarks
+- **Themes:** Multimodal & vision-language; Evaluation & benchmarks
 
-### 3. [Timestral](https://arxiv.org/abs/2610.37585)
-- **Abstract:** The authors introduce four probabilistic time-series foundation models from 5M to 209M parameters and report top results on GIFT-Eval, TIME, and fev-bench.
-- **Authors:** Adrien Petralia, Alexandre Gavaudan, Artjom Joosen, Etienne Goffinet, Richard Kurle, et al.
-- **arXiv:** `2610.37585v1` (published 2026-10-27T17:25:43Z; categories: `cs.AI`)
-- **Evidence for ranking:** The Hugging Face Papers page displayed 6 upvotes at the snapshot. The paper reports results on three forecasting benchmarks, provides model weights and inference code, and gives a concrete efficiency claim: forecasts up to 1,024 steps are produced in one forward pass.
-- **Claimed contribution:** The authors combine Decoupled Horizon Forecasting, role-aware treatment of known-future covariates, and synthetic pretraining followed by mixed real-and-synthetic post-training; they report Timestral-209M ranking first among evaluated competitors on all three named suites.
-- **Caveat:** The ranking is based on the paper’s evaluation of three public suites and its selected comparator set; it is not evidence of performance across all forecasting workloads or independent deployments.
+### 6. [LociArt: A Unified Paradigm for Free-Style Local Video Stylization](https://arxiv.org/abs/2610.36456)
+- **Abstract:** LociArt combines mask-conditioned local video stylization with a 100K-pair training set and benchmark for regional style quality, preservation of non-target regions, and temporal consistency.
+- **Authors:** Yuxuan Chen, Feng Xie, Jiagao Hu, Fuhao Li, Zepeng Wang, et al.
+- **arXiv:** `2610.36456v1` (published 2026-10-27T01:04:39Z; categories: `cs.CV`, `cs.AI`, `cs.MM`)
+- **Evidence for ranking:** Hugging Face Papers showed 44 upvotes, sixth among the 38 listed candidates; the authors link a project page and describe a public dataset and evaluation benchmark ([Hugging Face](https://huggingface.co/papers/2610.36456), [project](https://higherhu.github.io/lociart/)).
+- **Claimed contribution:** The authors report improved regional style quality and spatial control with temporal consistency, and show qualitative multi-region editing despite training on single-region, single-style pairs.
+- **Caveat:** Quantitative evaluation uses 80 source videos, 84 target masks, and 168 foreground/background cases; the more complex multi-region behavior is described qualitatively.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Training & adaptation; Efficient inference & systems; Data & synthetic data
+- **Themes:** Multimodal & vision-language; Training & adaptation
 
-### 4. [Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions](https://arxiv.org/abs/2610.37624)
-- **Abstract:** On a controlled 480-task benchmark, rarity- and relevance-based memory filters fail under different distributions of supporting and decoy facts, while attribution tags can induce social-proof errors in the final decision model.
-- **Authors:** Anouar Imel, Imad Charradi, Abderrahman Sghir, Khalil El Khammar
-- **arXiv:** `2610.37624v1` (published 2026-10-27T17:49:39Z; categories: `cs.AI`, `cs.CL`, `cs.MA`, `cs.SI`)
-- **Evidence for ranking:** The Hugging Face Papers page displayed 5 upvotes at the snapshot. The paper is cross-listed across three core AI categories and introduces a 60-template benchmark that separates fact ownership from fact content.
-- **Claimed contribution:** The authors introduce CrossProfile and report that relevance filters can admit on-topic decoys, rarity-first selection is not better than random on average, and removing or randomizing agent-attribution tags can improve accuracy in the classic hidden-profile configuration.
-- **Caveat:** The findings are bounded by the controlled hidden-profile benchmark, its four tested model families, and its fixed task construction; they do not establish how the same effects scale to arbitrary group discussions.
+### 7. [Zooming without Zooming v2: From Seeing Details to Connecting Evidence for Generalizable Multimodal Perception](https://arxiv.org/abs/2610.37037)
+- **Abstract:** EvidenceConnect synthesizes visual questions that require connecting information across zoomed image regions, then uses the data for RLVR training of a model called Zooming without Zooming v2.
+- **Authors:** Lai Wei, Yatai Li, Liangbo He, Jun Lan, Renjie Gu, et al.
+- **arXiv:** `2610.37037v1` (published 2026-10-27T11:11:53Z; categories: `cs.CV`, `cs.AI`, `cs.CL`, `cs.LG`)
+- **Evidence for ranking:** Hugging Face Papers showed 28 upvotes, seventh among the 38 listed candidates; the paper reports improvements across spatial, long-context, embodied, and general visual-reasoning evaluations ([Hugging Face](https://huggingface.co/papers/2610.37037)).
+- **Claimed contribution:** The authors claim that training on synthesized evidence-connection examples transfers to downstream benchmarks that were not used to tailor the synthetic data.
+- **Caveat:** The data-generation pipeline filters examples using agreement among independent VLMs and region-ablation tests, so evaluation outcomes remain dependent on those model-based selection checks and the reported benchmark suite.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Agents & reasoning; Evaluation & benchmarks
+- **Themes:** Multimodal & vision-language; Data & synthetic data; Training & adaptation
 
-### 5. [TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information](https://arxiv.org/abs/2610.37571)
-- **Abstract:** TeamGym evaluates and trains language-model teams on decisions built from legal, finance, medical, and software corpora, measuring how distributing pivotal evidence affects communication and retrieval.
-- **Authors:** Chanwoo Park, Jaywoong Jeong, Zachary Wojtowicz, Yubin Kim, Taekyun Lee, et al.
-- **arXiv:** `2610.37571v1` (published 2026-10-27T17:15:54Z; categories: `cs.AI`)
-- **Evidence for ranking:** The Hugging Face Papers page displayed 1 upvote at the snapshot. Its 8-model, 12-corpus study and controlled separation of communication from retrieval provide strong evidence of research relevance, despite a small observed platform vote count.
-- **Claimed contribution:** The authors define pivotal information and a configurable team benchmark; they report average success-rate drops of 22.9 percentage points when pivotal information is distributed across participants and a further 19.9 points when participants must retrieve it from source material, while two policy-training experiments improve coordination and final decisions.
-- **Caveat:** Results are benchmark-based across the tested models and source corpora; transfer to live teams and other task distributions is not established.
+### 8. [EmbeddingGemma 2: Unified and Efficient Multimodal Representations](https://arxiv.org/abs/2610.37364)
+- **Abstract:** EmbeddingGemma 2 maps text, images, audio, video, and mixed inputs into a shared embedding space and offers modality-selective loading, adjustable vision-token budgets, truncated dimensions, and quantized weights.
+- **Authors:** Henrique Schechter Vera, Sahil Dua, Jovan Andonov, Sara Smoot, Sebastian Russo, et al.
+- **arXiv:** `2610.37364v1` (published 2026-10-27T15:00:42Z; categories: `cs.LG`, `cs.CL`, `cs.CV`, `cs.SD`)
+- **Evidence for ranking:** Hugging Face Papers showed 26 upvotes, eighth among the 38 listed candidates; the authors provide model availability and describe cross-modal benchmark evaluations ([Hugging Face](https://huggingface.co/papers/2610.37364), [model](https://huggingface.co/google/embeddinggemma-2)).
+- **Claimed contribution:** The authors report a Pareto frontier across multimodal embedding benchmarks, outperforming specialist models and models two to twelve times larger on their evaluation suite.
+- **Caveat:** The performance claims are benchmark-bound and depend on the selected modality mix, encoder-loading choices, and embedding dimensions; deployment trade-offs are not established for every retrieval workload.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Agents & reasoning; Evaluation & benchmarks
+- **Themes:** Multimodal & vision-language; Efficient inference & systems
+
+### 9. [Nemotron-Labs-Diffusion-Uni: Elastic Self-Refining Unified Diffusion LLM with Cross-Paradigm On-Policy Distillation](https://arxiv.org/abs/2610.36466)
+- **Abstract:** NLD-Uni transfers visual-understanding and image-generation capabilities into a unified discrete diffusion language model through cross-paradigm on-policy distillation and progressive self-refinement.
+- **Authors:** Shufan Li, Hanrong Ye, Greg Heinrich, Yonggan Fu, Haotian Zhang, et al.
+- **arXiv:** `2610.36466v1` (published 2026-10-27T01:21:26Z; categories: `cs.CV`)
+- **Evidence for ranking:** Hugging Face Papers showed 25 upvotes, ninth among the 38 listed candidates; its abstract reports evaluations spanning visual question answering, multimodal reasoning, grounding, generation, and editing ([Hugging Face](https://huggingface.co/papers/2610.36466)).
+- **Claimed contribution:** The authors report state-of-the-art results among unified discrete diffusion LLMs across the listed understanding and generation tasks.
+- **Caveat:** The state-of-the-art claim is explicitly relative to unified discrete diffusion LLMs and the paper's evaluated tasks; it does not establish superiority over all autoregressive or continuous-diffusion systems.
+- **Announcement type:** new submission, 2026-10-28 announcement batch
+- **Themes:** Multimodal & vision-language; Training & adaptation
+
+### 10. [Channel Selection for Mixture-of-Experts Decoding Needs No Calibration Data](https://arxiv.org/abs/2610.37386)
+- **Abstract:** The authors show that top-k channel selection can avoid offline threshold calibration for routed-expert decoding and introduce a weight-derived reader that reduces expert reads while preserving most evaluated accuracy.
+- **Authors:** Geunhyoung Kim, Sung Ju Hwang
+- **arXiv:** `2610.37386v1` (published 2026-10-27T15:11:35Z; categories: `cs.LG`, `cs.AI`)
+- **Evidence for ranking:** Hugging Face Papers showed 21 upvotes, tenth among the 38 listed candidates; the authors link implementation code and report measurements on three post-trained MoE models ([Hugging Face](https://huggingface.co/papers/2610.37386), [GitHub](https://github.com/AidenGeunGeun/calibration-free-moe)).
+- **Claimed contribution:** The authors report retaining 98.1% of full-model accuracy at 17.8% of routed-expert reads and MoE-block speedups of 1.60–1.90× at batch one on their Triton kernels.
+- **Caveat:** The results cover three post-trained MoE models and depend on the reported kernels and hardware; they do not establish the same speedups on other model architectures or serving stacks.
+- **Announcement type:** new submission, 2026-10-28 announcement batch
+- **Themes:** Efficient inference & systems
 
 ## Trending Research Themes
 
-- **Agent capability is being tested in interaction, not only single-turn answers.** ThinkWorld studies action reasoning grounded in predicted consequences; LongChang tests self-directed investigation; CrossProfile and TeamGym examine how groups preserve, retrieve, and combine evidence. These are related evaluation targets, not one shared method or proof of a field-wide breakthrough.
-- **Evidence handling is a recurring evaluation lens.** CrossProfile manipulates who holds supporting and decoy facts, while TeamGym separates communication failures from retrieval failures. Both indicate that successful final answers can hide distinct failures in the path to a decision.
-- **Synthetic data and training objectives remain active levers.** ThinkWorld uses imagined future states to supervise action reasoning from unlabeled video, while Timestral uses synthetic pretraining plus mixed-data post-training for forecasting. The tasks and approaches differ; the common signal is deliberate training-data/objective design.
-- **The shortlist is concentrated in agent-related work:** four of five entries concern agents or group decision-making. This describes this selected shortlist, not the full announcement batch; Timestral is a separate forecasting and inference-efficiency signal.
+- **Vision and multimodal work dominates this attention-ranked slice:** six of ten papers have primary category `cs.CV`, with several other selections cross-listed there. The tasks range from interactive video worlds (Hy-Nomas) and video caption representations (CodeCap-Bench) to tokenization (FVQ), localized generation (LociArt), evidence synthesis (Zooming without Zooming v2), and multimodal embeddings (EmbeddingGemma 2). This is category concentration in this selected slice, not a claim about all arXiv AI research.
+- **World models are being tied more directly to action and interaction.** PDRVLA and ThinkWorld encode or predict physical consequences for robot action, while Hy-Nomas generates a visual environment that responds over multiple turns. Their evaluations and mechanisms differ; this is a recurring direction, not evidence of one settled method.
+- **Representation choices are being tested through downstream behavior.** FVQ studies discrete visual token bit budgets, CodeCap-Bench tests executable descriptions of video, and EmbeddingGemma 2 targets a unified cross-modal embedding space. Across these papers, reconstruction or representation format is assessed through downstream tasks rather than solely by representation loss.
+- **Efficiency is a practical thread across model families:** PDRVLA avoids online video-world-model inference, EmbeddingGemma 2 offers selective modality and dimension controls, and Channel Selection reduces routed-expert reads. These are distinct optimizations and should not be treated as directly comparable speed claims.
 
 ## Open Problems and Research Directions
 
-- **Open problem (author-stated):** LongChang finds that supported observations do not reliably become correct scientific laws, and its authors limit the current study to simulated worlds with known answers. **Research direction:** test staged discovery benchmarks that score hypothesis formation, discriminating experiment design, and law identification separately, then expand toward real domains with expert-verified outcomes (LongChang).
-- **Open problem (reported by the authors):** TeamGym measures communication and retrieval gaps, while CrossProfile shows that memory selection and agent attribution can distort decisions. **Research direction:** evaluate provenance-preserving memory and retrieval interventions across varying team sizes, communication budgets, and held-out corpora, with errors decomposed into retrieval, communication, and decision stages (TeamGym; CrossProfile).
-- **Open problem (author-stated):** ThinkWorld’s reported training used a single seed. **Research direction:** repeat training across independent seeds and additional embodiments, then report checkpoint-level uncertainty alongside physical-trial variability (ThinkWorld).
-- **Research direction (suggested by the paper):** Timestral identifies larger models and use of context representations for classification or anomaly detection as follow-up possibilities. Evaluate those tasks separately from forecasting and test whether the stated accuracy/size trade-off persists outside the three reported suites (Timestral).
+- **Open problem (authors' stated):** PDRVLA's evaluated predictive cues are RGB, depth, and optical flow; the authors identify object-centric geometry, contact, and material properties as future targets. **Direction (proposed synthesis):** test whether adding those cues improves transfer to real-robot contact-rich tasks without increasing action latency. [PDRVLA](https://arxiv.org/abs/2610.37381)
+- **Open problem (authors' stated):** Hy-Nomas still trails Genie 3 in long-term spatial consistency, and its authors say robotics adaptation needs videos paired with robot actions and task-success evaluation. **Direction (proposed synthesis):** measure long-horizon state persistence and action consequences under controlled perturbations, alongside human preference. [Hy-Nomas](https://arxiv.org/abs/2610.36729)
+- **Open problem (authors' stated):** FVQ is motivated by saturation in existing multi-codebook quantizers, while its own performance is reported for a specific training recipe and nine-metric suite. **Direction (proposed synthesis):** vary bit budget, visual backbone, and data scale independently to test how far the reported discrete/continuous parity generalizes. [FVQ](https://arxiv.org/abs/2610.37662)
+- **Open problem (authors' reported):** CodeCap-Bench finds that open-source MLLMs lag on faithful code captioning and that models still struggle with complex temporal dynamics. **Direction (proposed synthesis):** expand evaluations from structured 2D content to natural videos and test whether temporal program representations improve both caption faithfulness and reconstruction. [CodeCap-Bench](https://arxiv.org/abs/2610.37341)
+- **Open problem (method boundary):** Channel Selection reports speedups for three MoE models using a particular Triton implementation. **Direction (proposed synthesis):** reproduce the read/accuracy/latency trade-off across hardware, serving stacks, and MoE routing patterns, including end-to-end throughput and tail latency. [Channel Selection](https://arxiv.org/abs/2610.37386)
 
 ## Takeaway
 
-The clearest shared pattern is agent evaluation under information constraints: papers test how models reason about consequences, discover rules, and preserve evidence across a group. Hugging Face upvotes provide some visible attention evidence, led by ThinkWorld, but the papers are extremely recent and the small sampled set cannot establish a comprehensive arXiv popularity ranking.
+The strongest visible attention signal in this batch clusters around multimodal and visual systems, especially interactive world models and discrete visual representations. The reported results are promising but mostly benchmark-bound; real-world transfer, longer-horizon consistency, and hardware-independent efficiency remain uncertain.
 
 ## Method and sources
 
-- **Window:** Daily arXiv announcement batch dated 2026-10-28; exact report window 2026-10-28 through 2026-10-28. This is the latest batch, not a fallback to a prior batch. The selected version-1 records carry first-submission timestamps on 2026-10-27. arXiv’s `cs.AI` recent page lists the batch as Wed, 28 Oct 2026.
-- **Snapshot:** 2026-10-29T01:16:36.984Z (UTC).
-- **Scope and candidate pool:** Core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`, including cross-lists. One broad arXiv API query sorted by submitted date returned 200 recent candidates and included records from all eight core categories; it is a recency sample, not a complete ordering of every paper in the batch. Query: `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`.
-- **Inference:** arXiv has no official trending chart. The five-paper ordering follows displayed Hugging Face Papers upvotes at snapshot (48, 7, 6, 5, 1), with category breadth and reported evaluation scope used as corroboration. Semantic Scholar Graph lists 0 citationCount and 0 influentialCitationCount for all five; these are current totals, not citations gained during the window. Vote counts are platform-specific, and the list should be read as an inferred shortlist, not a comprehensive popularity ranking.
-- **Primary sources:** [arXiv recent AI list](https://arxiv.org/list/cs.AI/recent); [arXiv API](https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG+OR+cat:stat.ML+OR+cat:cs.CL+OR+cat:cs.CV+OR+cat:cs.RO+OR+cat:cs.NE+OR+cat:cs.MA&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200); each linked arXiv abstract page; [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.37666?fields=title%2CcitationCount%2CinfluentialCitationCount).
-- **Semantic Scholar records:** [ThinkWorld](https://www.semanticscholar.org/paper/63159b00120d1888f81fafe04f18224b85843d95), [LongChang](https://www.semanticscholar.org/paper/23c097ac0301de98b5c1de1378c2ecdbc4709827), [Timestral](https://www.semanticscholar.org/paper/5453b58be7f4c9f26cb85fcfe286d329d080a8c3), [CrossProfile](https://www.semanticscholar.org/paper/efc89ea82ffaadd3a0cedbf5e49ece5c1716a5f7), [TeamGym](https://www.semanticscholar.org/paper/eb58bae977c43b1476d8d91399af1b892af4af07).
-- **Attention sources:** [ThinkWorld](https://huggingface.co/papers/2610.37666), [LongChang](https://huggingface.co/papers/2610.37649), [Timestral](https://huggingface.co/papers/2610.37585), [CrossProfile](https://huggingface.co/papers/2610.37624), [TeamGym](https://huggingface.co/papers/2610.37571) Hugging Face Papers pages, with displayed upvotes recorded at the stated snapshot. Authors’ additional resources: [ThinkWorld project page](https://thinkworld-project.github.io/), [LongChang project page](https://zhenyangcs.github.io/LongChang-website/), and [Timestral weights and code](https://mistral.ai/news/timestral).
-- **Full-text review:** arXiv HTML introductions/results/limitations were checked for the top three papers. The configured `web_extract` backend was unavailable, so arXiv abstracts were verified through live browser pages and the arXiv Atom feed; the full-text review used arXiv HTML.
+- **Window:** daily; arXiv's latest available announcement batch at the snapshot was Wednesday 2026-10-28, so the report covers 2026-10-28 through 2026-10-28. This is the prior batch relative to the 2026-10-29 snapshot; arXiv API publication timestamps for the batch entries fall on 27 October UTC. Snapshot time: 2026-10-29 17:11:24 UTC.
+- **Corpus:** core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`. The broad query `(cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA) AND submittedDate:[202610270000 TO 202610272359]` returned 468 unique versionless records spanning all configured categories. Primary-category counts were `cs.LG` 107, `cs.CV` 107, `cs.AI` 71, `cs.RO` 66, `cs.CL` 44, `stat.ML` 10, `cs.MA` 5, and `cs.NE` 1; records may also be cross-listed.
+- **Ranking:** All 10 selected arXiv abstract pages were verified; each is a new v1 submission in the 28 October batch. Hugging Face Papers returned a listed record for 38 of the 468 candidates; the ten papers above are ordered by their visible upvote totals within that subset (146, 114, 91, 52, 50, 44, 28, 26, 25, 21). Counts are current platform-specific totals captured at the stated snapshot, not arXiv readership or downloads. The ranking is inferred; Semantic Scholar citation totals were not available from the sources checked and were not used.
+- **Sources:** [cs.AI recent](https://arxiv.org/list/cs.AI/recent), [cs.LG recent](https://arxiv.org/list/cs.LG/recent), [stat.ML recent](https://arxiv.org/list/stat.ML/recent), [cs.CL recent](https://arxiv.org/list/cs.CL/recent), [cs.CV recent](https://arxiv.org/list/cs.CV/recent), [cs.RO recent](https://arxiv.org/list/cs.RO/recent), [cs.NE recent](https://arxiv.org/list/cs.NE/recent), [cs.MA recent](https://arxiv.org/list/cs.MA/recent); all linked arXiv abstract pages; the Hugging Face Papers pages and any project/code resources cited per entry.
+- **Full-text review:** arXiv HTML was checked for PDRVLA, Hy-Nomas, and FVQ; the remaining entries were summarized from their verified arXiv abstracts and author-linked resources where available.

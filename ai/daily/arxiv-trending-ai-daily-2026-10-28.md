@@ -1,93 +1,84 @@
-# arXiv AI daily — 28 October 2026: six notable papers on agent teams, data scaling, and grounded evaluation
+# arXiv AI daily — 28 October 2026: five notable papers on agent reasoning and evaluation
 
-The latest daily batch across arXiv’s core AI categories contains six selected papers here, with recurring work on agent collaboration, synthetic training environments, and evidence-grounded evaluation; I’ll cover those first, then an embodied-learning paper and a pretraining-dynamics study. arXiv has no official trending chart, so this ordering is inferred from checkable signals and research relevance; citation evidence is especially limited for papers announced today.
+The latest AI-category announcement batch highlights agents acting in worlds, groups, and evidence-rich tasks; one compact time-series model is a distinct systems result. I’ll cover the papers with the strongest checkable signals, then the recurring themes and open tests. arXiv has no official trending chart: this inferred shortlist is drawn from a 200-record recency sample, all five were less than two days old with zero Semantic Scholar citations at snapshot, and Hugging Face upvotes are a narrow platform-specific attention signal rather than a readership measure.
 
 ## Top papers (ranked)
 
-### 1. [TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information](https://arxiv.org/abs/2610.37571)
-- **Abstract:** TeamGym evaluates and trains language-model teams on decisions built from legal, finance, medical, and software corpora, and reports substantial communication and retrieval gaps when pivotal evidence is distributed among agents.
-- **Authors:** Chanwoo Park, Jaywoong Jeong, Zachary Wojtowicz, Yubin Kim, Taekyun Lee, et al.
-- **arXiv:** `2610.37571v1` (published 2026-10-27 17:15:54 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** The paper’s 8-model, 12-corpus evaluation and controlled separation of communication from retrieval make it directly relevant to multi-agent capability measurement; an OpenReview listing provides a second checkable record. The arXiv batch page also places it among the day’s AI submissions. These are scope and discoverability signals, not readership statistics.
-- **Claimed contribution:** The authors introduce pivotal information units and a configurable team benchmark, then report average success-rate drops of 22.9 percentage points from distributing pivotal evidence and another 19.9 points when teams must retrieve it from source material; two policy-training experiments improve final decisions and induce coordination.
-- **Caveat:** The authors report one training run for each policy-training demonstration; on held-out MAUD problems, coordination patterns transfer more clearly than final-decision quality. Transfer to live teams and other task distributions is not established here.
+### 1. [ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning](https://arxiv.org/abs/2610.37666)
+- **Abstract:** ThinkWorld represents actions as discrete Chains-of-Dynamics and uses predicted-versus-observed future states to train vision-language-action reasoning from robot demonstrations and videos without action labels.
+- **Authors:** Chaehyun Kim, Chi-Pin Huang, Jisoo Kim, Min-Hung Chen, Yu-Chiang Frank Wang, et al.
+- **arXiv:** `2610.37666v1` (published 2026-10-27T17:59:52Z; categories: `cs.RO`, `cs.AI`, `cs.CV`)
+- **Evidence for ranking:** The Hugging Face Papers page displayed 48 upvotes at the snapshot, the highest among these five checked pages. The paper is cross-listed across robotics, AI, and vision and reports simulation and real-robot evaluations.
+- **Claimed contribution:** The authors propose a shared motion-token reasoning space and consequence-grounded reinforcement learning, using future-state prediction to extend action supervision to unlabeled human videos; they report transfer to robots and generalization to unseen tasks and environments.
+- **Caveat:** The authors report a single training seed, so episode-level confidence intervals do not measure variation across independently trained checkpoints; latency also depends on the stated hardware and input setup.
+- **Announcement type:** new submission, 2026-10-28 announcement batch
+- **Themes:** Robotics & control; Multimodal & vision-language; Training & adaptation
+
+### 2. [Can LLMs Uncover Hidden Physical Laws through Free Exploration?](https://arxiv.org/abs/2610.37649)
+- **Abstract:** LongChang tests whether LLM agents can investigate simulated worlds with altered physics and discover the hidden laws without being given research questions; only one of twelve evaluated models achieves a non-zero discovery rate.
+- **Authors:** Zhen Yang, Wen Wang, Xander Xu, Ying-Cong Chen
+- **arXiv:** `2610.37649v1` (published 2026-10-27T17:57:00Z; categories: `cs.CL`, `cs.AI`, `cs.MA`)
+- **Evidence for ranking:** The Hugging Face Papers page displayed 7 upvotes at the snapshot. The paper is cross-listed in language, AI, and multiagent categories, and its project page provides a checkable research artifact.
+- **Claimed contribution:** The authors introduce LongChang, an automated altered-physics world and exploration-evaluation loop; their full results separate supported observations from correct law discovery, finding 97.6% evidence support but only 19.0% law correctness for the one model with discoveries.
+- **Caveat:** The authors explicitly limit the study to simulated worlds with known altered laws and say extending it to unresolved real-world science requires further research; most evaluated models did not discover a law.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
 - **Themes:** Agents & reasoning; Evaluation & benchmarks
 
-### 2. [Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis](https://arxiv.org/abs/2610.37648)
-- **Abstract:** Across 458,752 synthetic tasks and 849 models of four sizes, the authors vary tool, task, and database diversity and report that scaling environment diversity and complexity can generalize better than simply adding tasks.
-- **Authors:** Andrew Szot, Samira Abnar, Omar Attia, Abbas Kazerouni, Michael Kirchhof, et al.
-- **arXiv:** `2610.37648v1` (published 2026-10-27 17:56:46 UTC; categories: `cs.LG`)
-- **Evidence for ranking:** AITOP published a separate technical write-up of the SynthAPI findings, and the paper reports a large controlled study with four downstream evaluation benchmarks. Its scale and independent technical mention support placing it high for relevance; they do not establish popularity.
-- **Claimed contribution:** The authors introduce SynthAPI and an environment-composition scaling law; they report improved generalization when the synthetic-data budget favors broader tools and database states, and benchmark gains over prior synthesis approaches.
-- **Caveat:** The authors state that SynthAPI has no user-in-the-loop interactions, underrepresents long-document retrieval, and validates its scaling law on only one data pipeline; they do not claim transfer to other pipelines or training settings.
+### 3. [Timestral](https://arxiv.org/abs/2610.37585)
+- **Abstract:** The authors introduce four probabilistic time-series foundation models from 5M to 209M parameters and report top results on GIFT-Eval, TIME, and fev-bench.
+- **Authors:** Adrien Petralia, Alexandre Gavaudan, Artjom Joosen, Etienne Goffinet, Richard Kurle, et al.
+- **arXiv:** `2610.37585v1` (published 2026-10-27T17:25:43Z; categories: `cs.AI`)
+- **Evidence for ranking:** The Hugging Face Papers page displayed 6 upvotes at the snapshot. The paper reports results on three forecasting benchmarks, provides model weights and inference code, and gives a concrete efficiency claim: forecasts up to 1,024 steps are produced in one forward pass.
+- **Claimed contribution:** The authors combine Decoupled Horizon Forecasting, role-aware treatment of known-future covariates, and synthetic pretraining followed by mixed real-and-synthetic post-training; they report Timestral-209M ranking first among evaluated competitors on all three named suites.
+- **Caveat:** The ranking is based on the paper’s evaluation of three public suites and its selected comparator set; it is not evidence of performance across all forecasting workloads or independent deployments.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Agents & reasoning; Data & synthetic data
-
-### 3. [ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning](https://arxiv.org/abs/2610.37666)
-- **Abstract:** ThinkWorld represents actions as discrete Chains-of-Dynamics and uses predicted-versus-observed future states to train VLA action reasoning from both robot demonstrations and videos without action labels.
-- **Authors:** Chaehyun Kim, Chi-Pin Huang, Jisoo Kim, Min-Hung Chen, Yu-Chiang Frank Wang, et al.
-- **arXiv:** `2610.37666v1` (published 2026-10-27 17:59:52 UTC; categories: `cs.RO`, `cs.AI`, `cs.CV`)
-- **Evidence for ranking:** It is cross-listed across robotics, AI, and computer vision, and reports simulation plus real-robot evaluations; the authors also provide a project page. The breadth and concrete embodied-learning evidence make it a strong relevance pick, though not an external popularity signal.
-- **Claimed contribution:** The authors propose a shared motion-token reasoning space and consequence-grounded reinforcement learning, using future-state agreement to extend action supervision to unlabeled human videos; they report human-to-robot transfer and generalization to unseen tasks and environments.
-- **Caveat:** The authors report training from a single seed, so their episode-level confidence intervals do not measure variation across independently trained checkpoints; inference latency also depends on the stated hardware and input setup.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Robotics & control; Multimodal & vision-language
+- **Themes:** Training & adaptation; Efficient inference & systems; Data & synthetic data
 
 ### 4. [Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions](https://arxiv.org/abs/2610.37624)
 - **Abstract:** On a controlled 480-task benchmark, rarity- and relevance-based memory filters fail under different distributions of supporting and decoy facts, while attribution tags can induce social-proof errors in the final decision model.
 - **Authors:** Anouar Imel, Imad Charradi, Abderrahman Sghir, Khalil El Khammar
-- **arXiv:** `2610.37624v1` (published 2026-10-27 17:49:39 UTC; categories: `cs.AI`, `cs.CL`, `cs.MA`, `cs.SI`)
-- **Evidence for ranking:** The paper spans three core AI categories and isolates memory selection from evidence ownership using 60 templates and four model families; it is also listed in the Hugging Face Papers index. Those are breadth and discoverability signals, not evidence of readership.
-- **Claimed contribution:** The authors introduce CrossProfile, which crosses ownership of supporting, decoy, and irrelevant facts while holding their text fixed; they report that neither rarest-first nor relevance-first selection is reliably better than random, and that removing or randomizing agent-attribution tags can improve accuracy in the classic hidden-profile setup.
-- **Caveat:** The benchmark’s controlled discussions and fixed four-agent setup isolate specific failure mechanisms; the authors note that group-size effects are not varied, and the natural-discussion experiment is narrower than the controlled benchmark.
+- **arXiv:** `2610.37624v1` (published 2026-10-27T17:49:39Z; categories: `cs.AI`, `cs.CL`, `cs.MA`, `cs.SI`)
+- **Evidence for ranking:** The Hugging Face Papers page displayed 5 upvotes at the snapshot. The paper is cross-listed across three core AI categories and introduces a 60-template benchmark that separates fact ownership from fact content.
+- **Claimed contribution:** The authors introduce CrossProfile and report that relevance filters can admit on-topic decoys, rarity-first selection is not better than random on average, and removing or randomizing agent-attribution tags can improve accuracy in the classic hidden-profile configuration.
+- **Caveat:** The findings are bounded by the controlled hidden-profile benchmark, its four tested model families, and its fixed task construction; they do not establish how the same effects scale to arbitrary group discussions.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
 - **Themes:** Agents & reasoning; Evaluation & benchmarks
 
-### 5. [RubricAtlas: Mining Type-Level Rubrics from Expert Reports to Evaluate Deep Research Agents](https://arxiv.org/abs/2610.36878)
-- **Abstract:** RubricAtlas derives reusable analytical requirements from expert financial reports and evaluates deep-research reports through evidence-linked checkpoints, with completeness scored separately from argument validity.
-- **Authors:** Delin Wang, Sinuo Wang, Rui Sun, Beidi Luan, Qiming Shi, et al.
-- **arXiv:** `2610.36878v1` (published 2026-10-27 09:18:00 UTC; categories: `cs.AI`, `cs.CL`)
-- **Evidence for ranking:** The study covers 3,079 reports, 99 research types, and ten agents; an independent SignalFieldNotes article discusses the work. Cross-category relevance and a checkable secondary discussion support its place among notable new papers, not a popularity claim.
-- **Claimed contribution:** The authors build type-level rubrics from multiple expert reports and report checkpoint agreement of κ=0.71 and agent-ranking agreement of Kendall τ=0.87 across two judge pipelines; controlled deletions lower scores on affected analyses.
-- **Caveat:** The authors say their first-author audit is not independent expert validation, their source corpus is Chinese financial research, and generic argument-validity rules show limited judge agreement; completeness should not be read as correctness.
+### 5. [TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information](https://arxiv.org/abs/2610.37571)
+- **Abstract:** TeamGym evaluates and trains language-model teams on decisions built from legal, finance, medical, and software corpora, measuring how distributing pivotal evidence affects communication and retrieval.
+- **Authors:** Chanwoo Park, Jaywoong Jeong, Zachary Wojtowicz, Yubin Kim, Taekyun Lee, et al.
+- **arXiv:** `2610.37571v1` (published 2026-10-27T17:15:54Z; categories: `cs.AI`)
+- **Evidence for ranking:** The Hugging Face Papers page displayed 1 upvote at the snapshot. Its 8-model, 12-corpus study and controlled separation of communication from retrieval provide strong evidence of research relevance, despite a small observed platform vote count.
+- **Claimed contribution:** The authors define pivotal information and a configurable team benchmark; they report average success-rate drops of 22.9 percentage points when pivotal information is distributed across participants and a further 19.9 points when participants must retrieve it from source material, while two policy-training experiments improve coordination and final decisions.
+- **Caveat:** Results are benchmark-based across the tested models and source corpora; transfer to live teams and other task distributions is not established.
 - **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Evaluation & benchmarks; Agents & reasoning
-
-### 6. [What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models](https://arxiv.org/abs/2610.37631)
-- **Abstract:** Using six point-in-time model families and six benchmarks, the authors define a temporal variability score for item likelihoods and report that high-variability items improve faster later in pretraining, leading low-variability items in 34 of 36 final model-benchmark settings.
-- **Authors:** Chang Su, Bin Wu, Emine Yilmaz, Yao Lu
-- **arXiv:** `2610.37631v1` (published 2026-10-27 17:52:38 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** The arXiv record says the paper was accepted to AACL 2026, and its reported comparison spans six benchmarks and six models; it is included for direct relevance to training dynamics, not as a claim of unusual readership.
-- **Claimed contribution:** The authors define temporal variability score (TVS) from item-level negative log-likelihood variation across point-in-time models and report a 7.3-point average chance-normalized accuracy advantage for high-TVS items at the end of training, with the effect strongest on knowledge-intensive tasks.
-- **Caveat:** The authors limit the evidence to likelihood-ranked multiple-choice benchmarks and a single-size PIT-4B model series covering web crawls from 2017–2024; contamination checks do not cover all evaluated models’ pretraining corpora.
-- **Announcement type:** new submission, 2026-10-28 announcement batch
-- **Themes:** Training & adaptation; Evaluation & benchmarks
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
 
 ## Trending Research Themes
 
-- **Agent teams as evidence-processing systems:** TeamGym separates the communication gap from the retrieval gap, while Rare, Relevant, and Still Wrong shows that memory selection and attribution can independently distort group decisions. Together, these papers move evaluation beyond whether a single model can answer a question to how teams preserve and combine evidence.
-- **More discriminating evaluation, not just more scores:** TeamGym controls who holds pivotal information; CrossProfile independently varies fact ownership and usefulness; RubricAtlas tests whether reports cover recurring analyses; and What Improves During Pretraining tracks item-level learning trajectories. This is a recurring emphasis on diagnosis and measurement, not evidence that any single benchmark is definitive.
-- **Training-data composition and knowledge acquisition:** Scaling Laws for Tool-Use Agents studies how synthetic environment diversity changes downstream generalization, while What Improves During Pretraining asks which knowledge items improve later. The shared focus is on the structure and timing of training data; the methods and targets differ substantially.
-- **Embodied world-dynamics reasoning — isolated signal:** ThinkWorld is the batch’s clearest example of using predicted consequences to shape VLA action reasoning, including from unlabeled video. One paper is not enough to infer a field-wide shift.
-- **Corpus concentration:** The current recent lists show 254 cs.AI and 237 cs.LG entries in the 28 October batch. This report’s six-paper selection also includes robotics and language categories, but it is selective rather than a census of the day’s submissions.
+- **Agent capability is being tested in interaction, not only single-turn answers.** ThinkWorld studies action reasoning grounded in predicted consequences; LongChang tests self-directed investigation; CrossProfile and TeamGym examine how groups preserve, retrieve, and combine evidence. These are related evaluation targets, not one shared method or proof of a field-wide breakthrough.
+- **Evidence handling is a recurring evaluation lens.** CrossProfile manipulates who holds supporting and decoy facts, while TeamGym separates communication failures from retrieval failures. Both indicate that successful final answers can hide distinct failures in the path to a decision.
+- **Synthetic data and training objectives remain active levers.** ThinkWorld uses imagined future states to supervise action reasoning from unlabeled video, while Timestral uses synthetic pretraining plus mixed-data post-training for forecasting. The tasks and approaches differ; the common signal is deliberate training-data/objective design.
+- **The shortlist is concentrated in agent-related work:** four of five entries concern agents or group decision-making. This describes this selected shortlist, not the full announcement batch; Timestral is a separate forecasting and inference-efficiency signal.
 
 ## Open Problems and Research Directions
 
-- **Transfer of synthetic tool-use scaling laws:** The SynthAPI authors explicitly note the absence of user-in-the-loop interactions and limited long-document retrieval, and that the scaling law is validated on one pipeline. A useful next test is to reproduce the composition law on an independently built environment pipeline with clarification turns, long documents, and held-out tools (Scaling Laws for Tool-Use Agents).
-- **Separate retrieval, communication, and decision errors in teams:** TeamGym reports distinct retrieval and communication gaps; Rare, Relevant, and Still Wrong finds that evidence can already be lost in natural discussion before compression. Follow-up work could vary team size and communication budget, then compare provenance-aware memory and retrieval interventions on held-out corpora (TeamGym; Rare, Relevant, and Still Wrong).
-- **Validate report quality beyond completeness:** RubricAtlas reports that its first-author audit is not independent expert validation and that generic validity rules have limited agreement. Independent expert audits, non-financial and non-Chinese report domains, and stronger tests of argument validity could test how far type-level rubrics generalize (RubricAtlas).
-- **Test temporal variability beyond likelihood-ranked multiple choice:** The authors of What Improves During Pretraining limit TVS evidence to a single-size PIT-4B series and multiple-choice benchmarks. Replications across model sizes and corpora, with broader generation or open-response tasks and stronger contamination checks, could determine whether the pattern generalizes (What Improves During Pretraining).
-- **Measure robustness of world-imagination training:** ThinkWorld reports a single training seed. Replicated training runs, more embodiments, and broader held-out human-video sources would test whether its reported transfer is stable beyond the current simulation and real-robot evaluations (ThinkWorld).
+- **Open problem (author-stated):** LongChang finds that supported observations do not reliably become correct scientific laws, and its authors limit the current study to simulated worlds with known answers. **Research direction:** test staged discovery benchmarks that score hypothesis formation, discriminating experiment design, and law identification separately, then expand toward real domains with expert-verified outcomes (LongChang).
+- **Open problem (reported by the authors):** TeamGym measures communication and retrieval gaps, while CrossProfile shows that memory selection and agent attribution can distort decisions. **Research direction:** evaluate provenance-preserving memory and retrieval interventions across varying team sizes, communication budgets, and held-out corpora, with errors decomposed into retrieval, communication, and decision stages (TeamGym; CrossProfile).
+- **Open problem (author-stated):** ThinkWorld’s reported training used a single seed. **Research direction:** repeat training across independent seeds and additional embodiments, then report checkpoint-level uncertainty alongside physical-trial variability (ThinkWorld).
+- **Research direction (suggested by the paper):** Timestral identifies larger models and use of context representations for classification or anomaly detection as follow-up possibilities. Evaluate those tasks separately from forecasting and test whether the stated accuracy/size trade-off persists outside the three reported suites (Timestral).
 
 ## Takeaway
 
-This batch’s most concrete common thread is measurement: several papers build controlled ways to expose where agents lose, mis-rank, or fail to integrate evidence, while another studies how synthetic-data composition affects tool use. The results are promising but remain preprints with bounded benchmarks, models, and training setups; the evidence supports a set of notable directions, not a reliable popularity ranking or a settled field-wide shift.
+The clearest shared pattern is agent evaluation under information constraints: papers test how models reason about consequences, discover rules, and preserve evidence across a group. Hugging Face upvotes provide some visible attention evidence, led by ThinkWorld, but the papers are extremely recent and the small sampled set cannot establish a comprehensive arXiv popularity ranking.
 
 ## Method and sources
 
-- **Window:** Daily arXiv announcement batch dated 2026-10-28 (start date 2026-10-28; end date 2026-10-28). The selected version-1 submissions have first-submission timestamps on 2026-10-27. The category recent pages identify the current batch as Wed, 28 Oct 2026.
-- **Snapshot:** 2026-10-28 17:07:38 UTC.
-- **Scope:** Core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`; cross-listed papers were included. Broad arXiv API query: `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`, sorted by last-updated date; the retrieved pool contained 782 records updated 2026-10-27 and represented all eight core categories. The official recent lists checked were [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), and [cs.RO](https://arxiv.org/list/cs.RO/recent).
-- **Inference:** arXiv supplies no trending or readership chart. Ranking here is an inferred, relevance-led ordering informed by category breadth, reported evaluation scope, venue/secondary technical records, and independent discussion where found. Semantic Scholar Graph data checked at the snapshot showed 0 citationCount and 0 influentialCitationCount for each selected paper; these are current totals, not citations gained during the batch. Because attention evidence is sparse, the list should be read as notable recent papers rather than a popularity ranking.
-- **Paper sources:** Each linked arXiv abstract page is the primary source. The top three papers were also reviewed in arXiv HTML for method, results, and author-stated limitations. Additional checkable sources: [AITOP coverage of SynthAPI](https://aitop.news/item/50529), [TeamGym OpenReview listing](https://openreview.net/forum?id=TRVP5LTMC9), [ThinkWorld project page](https://thinkworld-project.github.io/), [Hugging Face Papers listing for CrossProfile](https://huggingface.co/papers/2610.37624), [SignalFieldNotes discussion of RubricAtlas](https://signalfieldnotes.com/articles/46057), and the arXiv record for What Improves During Pretraining, which notes AACL 2026 acceptance.
+- **Window:** Daily arXiv announcement batch dated 2026-10-28; exact report window 2026-10-28 through 2026-10-28. This is the latest batch, not a fallback to a prior batch. The selected version-1 records carry first-submission timestamps on 2026-10-27. arXiv’s `cs.AI` recent page lists the batch as Wed, 28 Oct 2026.
+- **Snapshot:** 2026-10-29T01:16:36.984Z (UTC).
+- **Scope and candidate pool:** Core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`, including cross-lists. One broad arXiv API query sorted by submitted date returned 200 recent candidates and included records from all eight core categories; it is a recency sample, not a complete ordering of every paper in the batch. Query: `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`.
+- **Inference:** arXiv has no official trending chart. The five-paper ordering follows displayed Hugging Face Papers upvotes at snapshot (48, 7, 6, 5, 1), with category breadth and reported evaluation scope used as corroboration. Semantic Scholar Graph lists 0 citationCount and 0 influentialCitationCount for all five; these are current totals, not citations gained during the window. Vote counts are platform-specific, and the list should be read as an inferred shortlist, not a comprehensive popularity ranking.
+- **Primary sources:** [arXiv recent AI list](https://arxiv.org/list/cs.AI/recent); [arXiv API](https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG+OR+cat:stat.ML+OR+cat:cs.CL+OR+cat:cs.CV+OR+cat:cs.RO+OR+cat:cs.NE+OR+cat:cs.MA&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200); each linked arXiv abstract page; [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.37666?fields=title%2CcitationCount%2CinfluentialCitationCount).
+- **Semantic Scholar records:** [ThinkWorld](https://www.semanticscholar.org/paper/63159b00120d1888f81fafe04f18224b85843d95), [LongChang](https://www.semanticscholar.org/paper/23c097ac0301de98b5c1de1378c2ecdbc4709827), [Timestral](https://www.semanticscholar.org/paper/5453b58be7f4c9f26cb85fcfe286d329d080a8c3), [CrossProfile](https://www.semanticscholar.org/paper/efc89ea82ffaadd3a0cedbf5e49ece5c1716a5f7), [TeamGym](https://www.semanticscholar.org/paper/eb58bae977c43b1476d8d91399af1b892af4af07).
+- **Attention sources:** [ThinkWorld](https://huggingface.co/papers/2610.37666), [LongChang](https://huggingface.co/papers/2610.37649), [Timestral](https://huggingface.co/papers/2610.37585), [CrossProfile](https://huggingface.co/papers/2610.37624), [TeamGym](https://huggingface.co/papers/2610.37571) Hugging Face Papers pages, with displayed upvotes recorded at the stated snapshot. Authors’ additional resources: [ThinkWorld project page](https://thinkworld-project.github.io/), [LongChang project page](https://zhenyangcs.github.io/LongChang-website/), and [Timestral weights and code](https://mistral.ai/news/timestral).
+- **Full-text review:** arXiv HTML introductions/results/limitations were checked for the top three papers. The configured `web_extract` backend was unavailable, so arXiv abstracts were verified through live browser pages and the arXiv Atom feed; the full-text review used arXiv HTML.

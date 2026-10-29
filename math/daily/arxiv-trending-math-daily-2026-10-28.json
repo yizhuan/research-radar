@@ -5,452 +5,125 @@
     "type": "daily",
     "start": "2026-10-28",
     "end": "2026-10-28",
-    "announcement_batch_date": "2026-10-28"
+    "announcement_batch_date": "2026-10-28",
+    "snapshot_utc": "2026-10-29T01:29:38Z"
   },
   "date": "2026-10-28",
-  "title": "arXiv Mathematics — daily notable papers — 28 October 2026",
+  "title": "arXiv mathematics — Wednesday, 28 October 2026",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-10-28.md",
   "entry_count": 11,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; this inferred ordering is based on mathematical results and sparse corroborating signals, not measured readership, and citation evidence is limited for papers less than a day old.",
+  "global_caveat": "arXiv supplies no official trending chart; the ordering is inferred from checkable mathematical claims and cross-field relevance, not measured readership. Recent attention and citation evidence is limited.",
   "sections": [
     {
-      "id": "paper-1",
-      "kind": "paper",
-      "title": "Nonuniqueness of Solutions to 2D Incompressible Euler Equations with Unbounded Vorticity",
-      "rank": 1,
-      "url": "https://arxiv.org/abs/2610.37653",
-      "arxiv_id": "2610.37653",
-      "arxiv_version": 1,
-      "published": "2026-10-27 17:58:26 UTC",
-      "categories": [
-        "math.AP"
-      ],
-      "authors": [
-        "Hyungjun Choi"
-      ],
-      "themes": [
-        "Analysis & PDE",
-        "Mathematical physics"
-      ],
-      "abstract": "Constructs two distinct 2D incompressible Euler solutions with the same compactly supported, mean-zero initial vorticity in every finite $L^p$, using an infinite-scale cascade of quadrupole transitions.",
-      "claimed_result": "Theorem 1.1 in the paper constructs two distinct renormalized vorticity solutions with identical initial data, each preserving all finite-$L^p$ vorticity norms, and with velocities in $C([0,\\infty);L^2)$.",
-      "assumptions_and_setting": "Two-dimensional whole-space incompressible Euler; the common vorticity is compactly supported, mean-zero, and belongs to $\\bigcap_{1\\le p<\\infty}L^p(\\mathbb R^2)$.",
-      "unique_caveat": "The construction is in an unbounded-vorticity class and does not establish nonuniqueness for bounded vorticity or for arbitrary initial data.",
-      "evidence_for_ranking": "A concrete nonuniqueness construction in a central PDE uniqueness question, with compact support and finite-energy velocity; the arXiv comment says a Lean formalisation is forthcoming.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37653"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/53d2af31ef0ddf646edcd0bae4210189a90f6181"
-        }
-      ]
+      "id": "paper-1", "kind": "paper", "title": "Nonuniqueness of Solutions to 2D Incompressible Euler Equations with Unbounded Vorticity", "rank": 1, "url": "https://arxiv.org/abs/2610.37653",
+      "arxiv_id": "2610.37653", "arxiv_version": 1, "published": "2026-10-27T17:58:26Z", "categories": ["math.AP"], "authors": ["Hyungjun Choi"], "themes": ["Analysis & PDE"],
+      "abstract": "The author constructs two distinct finite-energy weak solutions of planar incompressible Euler from the same compactly supported, mean-zero vorticity lying in every finite Lp, using a cascade of quadrupole transitions across infinitely many scales.",
+      "claimed_result": "The author proves existence of two distinct global renormalized vorticity-transport solutions, also weak momentum solutions, with the same initial vorticity in every finite Lp and velocities continuous in L2; the solutions differ at time 1.",
+      "assumptions_and_setting": "Two-dimensional unforced Euler on R2; initial vorticity is compactly supported, mean zero, and belongs to the intersection of all finite Lp spaces; bounded vorticity is not asserted.",
+      "unique_caveat": "The paper notes that its constructed Lp-norm growth does not establish sharpness of the Yudovich uniqueness condition.",
+      "evidence_for_ranking": "Concrete nonuniqueness result in a central PDE problem; introduction and theorem statement checked. Placement reflects potential mathematical significance rather than measured readership.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract and HTML full text", "url": "https://arxiv.org/abs/2610.37653"}]
     },
     {
-      "id": "paper-2",
-      "kind": "paper",
-      "title": "Hodge–Riemann relations for nef bundles",
-      "rank": 2,
-      "url": "https://arxiv.org/abs/2610.37650",
-      "arxiv_id": "2610.37650",
-      "arxiv_version": 1,
-      "published": "2026-10-27 17:57:36 UTC",
-      "categories": [
-        "math.AG",
-        "math.CO"
-      ],
-      "authors": [
-        "Enhan Li",
-        "Weizhe Zheng"
-      ],
-      "themes": [
-        "Geometry & topology",
-        "Combinatorics & discrete mathematics"
-      ],
-      "abstract": "Develops a Lefschetz framework for nef classes and vector bundles and proves Hodge–Riemann relations for specified products of Chern and derived Schur classes under a Hall–Rado-type condition.",
-      "claimed_result": "The abstract and Theorem 1.4 establish Hodge–Riemann relations for products of top Chern classes and, in suitable bidegrees, derived Schur classes of nef twisted vector bundles, subject to stated Lefschetz/Hall–Rado hypotheses.",
-      "assumptions_and_setting": "Compact Kähler manifolds, nef twisted vector bundles, and the specified $(m,p,q)$-Lefschetz or Hall–Rado-type conditions; some formal analogues are for projective-bundle modules.",
-      "unique_caveat": "The positivity conclusions are conditional on these geometric and Lefschetz hypotheses; they are not asserted for arbitrary bundles or classes.",
-      "evidence_for_ranking": "Cross-listed between algebraic geometry and combinatorics; the abstract states a framework, positivity relations, an equivalence for products of nef $(1,1)$-classes, and an extension of the descent lemma.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37650"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/1ddad09bc933974468c6f1033de3769c98c904fc"
-        }
-      ]
+      "id": "paper-2", "kind": "paper", "title": "Sharp approximations for the stationary measures of the open ASEP I: The shock region", "rank": 2, "url": "https://arxiv.org/abs/2610.37639",
+      "arxiv_id": "2610.37639", "arxiv_version": 1, "published": "2026-10-27T17:54:37Z", "categories": ["math.PR", "math-ph"], "authors": ["Dominik Schmid", "Zongrui Yang"], "themes": ["Probability & statistics", "Mathematical physics"],
+      "abstract": "The authors interpret the Bryc polynomial in open ASEP through a birth–death Markov chain and obtain sharp total-variation approximations by Bernoulli product measures in the high- and low-density phases of the shock region, with moderate-deviation applications.",
+      "claimed_result": "The authors establish the stated total-variation approximations and derive moderate-deviation estimates for the stationary measure and asymptotic results for open ASEP with light particles.",
+      "assumptions_and_setting": "Open asymmetric simple exclusion process with boundary interactions, in the high- and low-density phases of the shock region.",
+      "unique_caveat": "The sharp Bernoulli approximations are restricted to the shock region’s high- and low-density phases.",
+      "evidence_for_ranking": "First installment of a three-paper result series; combines a probabilistic representation with sharp stationary-law estimates and is cross-listed in probability and mathematical physics.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.37639"}]
     },
     {
-      "id": "paper-3",
-      "kind": "paper",
-      "title": "Local Law and Eigenvector Delocalization for Random Lifts",
-      "rank": 3,
-      "url": "https://arxiv.org/abs/2610.37463",
-      "arxiv_id": "2610.37463",
-      "arxiv_version": 1,
-      "published": "2026-10-27 16:00:41 UTC",
-      "categories": [
-        "math.PR",
-        "math-ph",
-        "math.CO",
-        "math.SP"
-      ],
-      "authors": [
-        "Jiaoyang Huang",
-        "Ruizhe Xu"
-      ],
-      "themes": [
-        "Probability & statistics",
-        "Mathematical physics",
-        "Combinatorics & discrete mathematics"
-      ],
-      "abstract": "Proves a quantitative Green-function local law for random lifts of a fixed graph and derives high-probability eigenvector delocalization away from singular energies.",
-      "claimed_result": "For random $N$-lifts of the stated base graph, the authors obtain entrywise Green-function estimates down to $(\\log N)^C/N$ and complete eigenvector delocalization away from the universal-cover spectrum’s singular energies.",
-      "assumptions_and_setting": "The base is a fixed finite connected simple graph of minimum degree at least three; the estimates hold with high probability and exclude singular energies by a fixed positive margin.",
-      "unique_caveat": "The singular energies are explicitly excluded, and the logarithmic exponent and constants are not specified in the abstract.",
-      "evidence_for_ranking": "A precise quantitative result spanning probability, mathematical physics, combinatorics, and spectral theory; it reaches spectral scales $(\\log N)^C/N$ and yields a sup-norm eigenvector bound.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37463"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/ef4cc87841717f5458e7d80e368536a260b851c3"
-        }
-      ]
+      "id": "paper-3", "kind": "paper", "title": "Sharp approximations for the stationary measures of the open ASEP II: The coexistence line", "rank": 3, "url": "https://arxiv.org/abs/2610.37636",
+      "arxiv_id": "2610.37636", "arxiv_version": 1, "published": "2026-10-27T17:54:05Z", "categories": ["math.PR", "math-ph"], "authors": ["Dominik Schmid", "Zongrui Yang"], "themes": ["Probability & statistics", "Mathematical physics"],
+      "abstract": "For open ASEP on the coexistence line, the authors identify an observable shock location, show its law is close in total variation to the uniform lattice law, and approximate occupation variables away from the shock by Bernoulli product measures conditional on that location.",
+      "claimed_result": "The authors prove the shock-location approximation and conditional product-measure approximation, yielding fluctuation limits, moderate-deviation bounds for particle density, and correlation-function limits.",
+      "assumptions_and_setting": "Stationary open ASEP on its coexistence line; occupation variables are approximated away from the identified shock, conditional on its location.",
+      "unique_caveat": "The result is tied to the coexistence line and does not by itself cover the shock or fan regimes treated in companion papers.",
+      "evidence_for_ranking": "Extends the cross-listed ASEP series with a precise shock-location law, optimal total-variation bounds, and stated fluctuation and correlation applications.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.37636"}]
     },
     {
-      "id": "paper-4",
-      "kind": "paper",
-      "title": "Sharp approximations for the stationary measures of the open ASEP I: The shock region",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2610.37639",
-      "arxiv_id": "2610.37639",
-      "arxiv_version": 1,
-      "published": "2026-10-27 17:54:37 UTC",
-      "categories": [
-        "math.PR",
-        "math-ph"
-      ],
-      "authors": [
-        "Dominik Schmid",
-        "Zongrui Yang"
-      ],
-      "themes": [
-        "Probability & statistics",
-        "Mathematical physics"
-      ],
-      "abstract": "Interprets the Bryc polynomial in the open ASEP stationary-measure representation through a birth–death-type chain and obtains sharp total-variation approximations in the shock region’s high- and low-density phases.",
-      "claimed_result": "The abstract gives a probabilistic birth–death-chain interpretation of the Bryc polynomial and sharp total-variation approximation by Bernoulli product measures in the shock region, with moderate-deviation applications.",
-      "assumptions_and_setting": "Open ASEP on a finite one-dimensional lattice, under the paper’s boundary-rate/Liggett conditions and in the high- or low-density shock phases.",
-      "unique_caveat": "This installment addresses the shock region; its approximation statements are phase- and parameter-dependent and are not a single approximation for all stationary regimes.",
-      "evidence_for_ranking": "First of a coordinated three-paper treatment of distinct open-ASEP regimes; cross-listed in probability and mathematical physics. Semantic Scholar currently lists 1 citation, including 1 influential citation, and 45 references; these are current totals, not period gains.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37639"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/4bec39745827c75504c6426a221069b9d020d036"
-        }
-      ]
+      "id": "paper-4", "kind": "paper", "title": "Sharp approximations for the stationary measures of the open ASEP III: The fan region", "rank": 4, "url": "https://arxiv.org/abs/2610.37620",
+      "arxiv_id": "2610.37620", "arxiv_version": 1, "published": "2026-10-27T17:47:34Z", "categories": ["math.PR", "math-ph"], "authors": ["Dominik Schmid", "Zongrui Yang"], "themes": ["Probability & statistics", "Mathematical physics"],
+      "abstract": "In the fan region of open ASEP, the authors obtain discrete Brownian-excursion/meander counterparts and Bernoulli product approximations, and prove moderate-deviation bounds for particle counts using path estimates and negative correlations.",
+      "claimed_result": "The authors prove total-variation approximations by lazy-random-walk excursions and meanders away from boundaries, exponentially accurate Bernoulli approximations in high- and low-density phases, and moderate deviations in the maximal-current phase and its fan-region boundaries.",
+      "assumptions_and_setting": "Open ASEP with general boundary rates, in specified fan-region phases; excursion/meander approximation is stated away from boundaries.",
+      "unique_caveat": "The estimates are phase- and location-specific and do not assert one approximation uniformly across every regime.",
+      "evidence_for_ranking": "Completes the three-part, probability/mathematical-physics series and treats a distinct stationary phase with explicit approximation and concentration results.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.37620"}]
     },
     {
-      "id": "paper-5",
-      "kind": "paper",
-      "title": "Sharp approximations for the stationary measures of the open ASEP III: The fan region",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2610.37620",
-      "arxiv_id": "2610.37620",
-      "arxiv_version": 1,
-      "published": "2026-10-27 17:47:34 UTC",
-      "categories": [
-        "math.PR",
-        "math-ph"
-      ],
-      "authors": [
-        "Dominik Schmid",
-        "Zongrui Yang"
-      ],
-      "themes": [
-        "Probability & statistics",
-        "Mathematical physics"
-      ],
-      "abstract": "Establishes total-variation approximations for open-ASEP configurations in the fan region by random-walk excursions, meanders, or Bernoulli product configurations, depending on phase.",
-      "claimed_result": "In the maximal-current phase and its fan-region boundaries, occupation variables are approximated by configurations built from lazy-walk excursions/meanders; in high- and low-density phases, Bernoulli product approximations have exponentially decaying errors away from the relevant boundary.",
-      "assumptions_and_setting": "Open ASEP in the fan region, with general boundary rates; separate claims apply to the maximal-current, boundary, and high-/low-density phases.",
-      "unique_caveat": "The approximation changes with the phase and location; it does not cover arbitrary regimes or claim identical fluctuation laws throughout the phase diagram.",
-      "evidence_for_ranking": "Completes a three-paper, regime-based open-ASEP program and supplies discrete fluctuation counterparts plus moderate-deviation estimates. Semantic Scholar currently lists 2 citations and 0 influential citations; these are current totals, not period gains.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37620"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/10f28553590772cd233bc8da7a33fc79a26dde98"
-        }
-      ]
+      "id": "paper-5", "kind": "paper", "title": "Stationary measures of the open KPZ equation: A short proof", "rank": 5, "url": "https://arxiv.org/abs/2610.37618",
+      "arxiv_id": "2610.37618", "arxiv_version": 1, "published": "2026-10-27T17:47:13Z", "categories": ["math.PR"], "authors": ["Dominik Schmid", "Zongrui Yang"], "themes": ["Probability & statistics", "Mathematical physics"],
+      "abstract": "The authors give a probabilistic proof of the two-layer Brownian representation for the stationary measure of open KPZ on a finite interval with arbitrary Neumann boundary parameters, using open-ASEP representations and weakly asymmetric limits.",
+      "claimed_result": "The authors give a short probabilistic derivation of the stationary two-layer Brownian representation using martingale estimates for Bryc polynomials and known convergence from open ASEP to open KPZ.",
+      "assumptions_and_setting": "Open KPZ on a finite interval with arbitrary Neumann boundary parameters; derivation uses weakly asymmetric scaling and existing ASEP-to-KPZ convergence results.",
+      "unique_caveat": "This is a new proof of a representation already established by other authors, not a claim to be the first proof or a new general existence theorem.",
+      "evidence_for_ranking": "Direct bridge from the same day’s ASEP series to KPZ; the abstract says the proof recovers a representation recently established in full generality.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.37618"}]
     },
     {
-      "id": "paper-6",
-      "kind": "paper",
-      "title": "Sharp approximations for the stationary measures of the open ASEP II: The coexistence line",
-      "rank": 6,
-      "url": "https://arxiv.org/abs/2610.37636",
-      "arxiv_id": "2610.37636",
-      "arxiv_version": 1,
-      "published": "2026-10-27 17:54:05 UTC",
-      "categories": [
-        "math.PR",
-        "math-ph"
-      ],
-      "authors": [
-        "Dominik Schmid",
-        "Zongrui Yang"
-      ],
-      "themes": [
-        "Probability & statistics",
-        "Mathematical physics"
-      ],
-      "abstract": "On the open ASEP coexistence line, identifies the shock location and approximates its distribution by a uniform lattice law, with conditional product-measure approximations away from the shock.",
-      "claimed_result": "The authors prove that the shock location’s law is close in total variation to the uniform lattice law and, conditional on that location, the occupation variables away from the shock are close to Bernoulli product measures with different left/right densities.",
-      "assumptions_and_setting": "The open ASEP on the coexistence line, using the two-layer representation and birth–death-chain characterization developed in Part I.",
-      "unique_caveat": "The result is specific to the coexistence line and relies on the representation established in the companion work.",
-      "evidence_for_ranking": "Adds an explicit shock-location observable and optimal total-variation bounds within the same three-part probability/statistical-physics series. Semantic Scholar currently lists 2 citations and 0 influential citations; these are current totals, not period gains.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37636"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/a0b98815c2f766bc832c8c7d8f8800861baf2420"
-        }
-      ]
+      "id": "paper-6", "kind": "paper", "title": "Sharp Stability of Brenier Potentials and its Link to Poincaré Inequalities", "rank": 6, "url": "https://arxiv.org/abs/2610.37659",
+      "arxiv_id": "2610.37659", "arxiv_version": 1, "published": "2026-10-27T17:59:00Z", "categories": ["math.FA", "math.AP", "math.MG", "math.PR"], "authors": ["Cyril Letrouit", "Tudor Manole"], "themes": ["Analysis & PDE", "Probability & statistics", "Optimization & control"],
+      "abstract": "The authors prove a functional inequality bounding the variance of differences of convex functions by Wasserstein distance between their gradient pushforwards, yielding sharp stability of Brenier potentials for uniformly log-concave sources.",
+      "claimed_result": "The authors prove the variance is at most kappa inverse times squared 2-Wasserstein distance between gradient pushforwards for a kappa-uniformly log-concave probability measure and convex potentials with gradients in L2.",
+      "assumptions_and_setting": "A fixed uniformly log-concave source probability measure on R-d; both potentials are convex and their gradients are square-integrable under the source.",
+      "unique_caveat": "Uniform log-concavity is substantive: the paper also gives log-concave measures for which the stronger Brenier stability inequality fails despite finite Poincaré constants.",
+      "evidence_for_ranking": "Four-subfield cross-listing and checked main theorem connect functional inequalities, optimal transport, metric geometry, and probability; a sharp constant is proved under uniform log-concavity.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract and HTML full text", "url": "https://arxiv.org/abs/2610.37659"}]
     },
     {
-      "id": "paper-7",
-      "kind": "paper",
-      "title": "Sharp Bounds for Toral Eigenfunctions and Threefold Additive Energy on Circles",
-      "rank": 7,
-      "url": "https://arxiv.org/abs/2610.37423",
-      "arxiv_id": "2610.37423",
-      "arxiv_version": 1,
-      "published": "2026-10-27 15:36:50 UTC",
-      "categories": [
-        "math.AP",
-        "math.CO",
-        "math.NT",
-        "math.SP"
-      ],
-      "authors": [
-        "Guiyu Xie",
-        "Cheng Zhang"
-      ],
-      "themes": [
-        "Analysis & PDE",
-        "Combinatorics & discrete mathematics",
-        "Mathematical physics"
-      ],
-      "abstract": "Proves an optimal cubic bound for threefold additive energy on lattice circles and a uniform weak-$L^6$ estimate for normalized square-torus eigenfunctions, with further nodal and convergence applications.",
-      "claimed_result": "For $P_n=\\{z\\in\\mathbb Z^2:|z|^2=n\\}$, the authors prove $J_3(P_n)\\le C|P_n|^3$ and a uniform weak-$L^6$ bound, implying uniform $L^p$ bounds for $1\\le p<6$.",
-      "assumptions_and_setting": "Lattice points on circles and $L^2$-normalized eigenfunctions of the square torus; the weak endpoint is $p=6$.",
-      "unique_caveat": "The endpoint claim is weak-$L^6$, not a strong-$L^6$ estimate.",
-      "evidence_for_ranking": "The abstract identifies the additive-energy bound as optimal and links it to a weak-$L^6$ eigenfunction estimate; it is cross-listed across four mathematical areas.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37423"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/cea0187e92f5b3b852d7d85e68147a7225c975ef"
-        }
-      ]
+      "id": "paper-7", "kind": "paper", "title": "Hodge--Riemann relations for nef bundles", "rank": 7, "url": "https://arxiv.org/abs/2610.37650",
+      "arxiv_id": "2610.37650", "arxiv_version": 1, "published": "2026-10-27T17:57:36Z", "categories": ["math.AG", "math.CO"], "authors": ["Enhan Li", "Weizhe Zheng"], "themes": ["Algebra & number theory", "Combinatorics & discrete mathematics"],
+      "abstract": "The authors introduce an (m,p,q)-Lefschetz framework and prove Hodge–Riemann relations for products of top Chern and derived Schur classes of nef bundles under Hall–Rado-type conditions, with applications to tautological classes and matroid Chow rings.",
+      "claimed_result": "The authors establish the stated Hodge–Riemann relations and extend the descent lemma to Schur classes of nef vector bundles; for products of nef (1,1)-classes, they characterize simultaneous Hodge–Riemann relations via a Hall–Rado-type condition.",
+      "assumptions_and_setting": "Compact Kähler manifolds and nef, possibly twisted, vector bundles; principal bundle-class results assume specified Hall–Rado-type or (m,p,q)-Lefschetz conditions.",
+      "unique_caveat": "Conclusions are conditional, not a blanket Hodge–Riemann theorem for arbitrary nef bundles without the stated positivity assumptions.",
+      "evidence_for_ranking": "Checked introduction connects an extension of Hodge theory to algebraic geometry and combinatorics, including applications to matroid Chow rings.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract and HTML full text", "url": "https://arxiv.org/abs/2610.37650"}]
     },
     {
-      "id": "paper-8",
-      "kind": "paper",
-      "title": "Enumeration of zero-sum subsequences: A proof of Bialostocki-Lotspeich conjecture",
-      "rank": 8,
-      "url": "https://arxiv.org/abs/2610.37125",
-      "arxiv_id": "2610.37125",
-      "arxiv_version": 1,
-      "published": "2026-10-27 12:24:34 UTC",
-      "categories": [
-        "math.CO",
-        "math.NT"
-      ],
-      "authors": [
-        "Guoqing Wang",
-        "Xiangneng Zeng"
-      ],
-      "themes": [
-        "Combinatorics & discrete mathematics",
-        "Algebra & number theory"
-      ],
-      "abstract": "Proves the 1992 Bialostocki–Lotspeich lower bound for the number of $n$-element zero-sum subsequences in a sequence over the cyclic group of order $n$.",
-      "claimed_result": "For a sequence $S$ over $C_n$, the authors prove $\\mathsf N_0^n(S)\\ge\\binom{\\lfloor |S|/2\\rfloor}{n}+\\binom{\\lceil |S|/2\\rceil}{n}$, the conjectured bound.",
-      "assumptions_and_setting": "Finite sequences with repetitions allowed in the cyclic group $C_n$, for $n\\ge2$; the counted subsequences have exactly $n$ terms.",
-      "unique_caveat": "The stated theorem concerns cyclic groups of order equal to the subsequence length; it does not by itself establish the analogous bound for arbitrary finite abelian groups.",
-      "evidence_for_ranking": "The abstract states a complete proof of a named conjecture, with a natural bridge between additive combinatorics and number theory.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37125"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/a4d9aae942a7ee9248738dfafab849ea39611535"
-        }
-      ]
+      "id": "paper-8", "kind": "paper", "title": "Local Law and Eigenvector Delocalization for Random Lifts", "rank": 8, "url": "https://arxiv.org/abs/2610.37463",
+      "arxiv_id": "2610.37463", "arxiv_version": 1, "published": "2026-10-27T16:00:41Z", "categories": ["math.PR", "math-ph", "math.CO", "math.SP"], "authors": ["Jiaoyang Huang", "Ruizhe Xu"], "themes": ["Probability & statistics", "Combinatorics & discrete mathematics", "Mathematical physics"],
+      "abstract": "For random N-lifts of a fixed finite connected simple graph of minimum degree at least three, the authors prove a high-probability entrywise Green-function local law down to near-1/N scales away from singular energies and deduce complete eigenvector delocalization there.",
+      "claimed_result": "The authors obtain entrywise Green-function estimates to spectral scales (log N)^C/N in the bulk and near regular edges and cusps, then prove an eigenvector sup-norm bound of (log N)^C/sqrt(N) with high probability.",
+      "assumptions_and_setting": "Random lifts of a fixed finite connected simple graph with minimum degree at least three; eigenvalues must stay a fixed positive distance from singular energies.",
+      "unique_caveat": "Singular energies are excluded, and the bounds retain logarithmic losses.",
+      "evidence_for_ranking": "Quantitative theorem cross-listed in probability, mathematical physics, combinatorics, and spectral theory; states both a local law and a delocalization consequence.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.37463"}]
     },
     {
-      "id": "paper-9",
-      "kind": "paper",
-      "title": "High-dimensional critical percolation and critical Branching random walks are intersection equivalent",
-      "rank": 9,
-      "url": "https://arxiv.org/abs/2610.37133",
-      "arxiv_id": "2610.37133",
-      "arxiv_version": 1,
-      "published": "2026-10-27 12:28:31 UTC",
-      "categories": [
-        "math.PR"
-      ],
-      "authors": [
-        "Bruno Schapira"
-      ],
-      "themes": [
-        "Probability & statistics",
-        "Combinatorics & discrete mathematics"
-      ],
-      "abstract": "Shows that, in dimensions above six under a standard two-point/Green-function comparability assumption, distant finite sets are hit with comparable probabilities by a critical percolation cluster and a critical branching random walk.",
-      "claimed_result": "The abstract proves two-sided comparison up to positive multiplicative constants of the hit probabilities for any finite set sufficiently far from the origin relative to its diameter.",
-      "assumptions_and_setting": "Critical percolation and critical branching random walk on $\\mathbb Z^d$, $d>6$, assuming their two-point function and the Green function have the same order.",
-      "unique_caveat": "The comparison is only established in the stated high-dimensional regime and for sets satisfying the far-from-origin versus diameter condition.",
-      "evidence_for_ranking": "States a direct comparison between two canonical critical random structures and provides an explicit approximate-last-passage/equilibrium-measure method.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37133"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/79adba37da178a042f7d3a1fa8166301f01dd8a4"
-        }
-      ]
+      "id": "paper-9", "kind": "paper", "title": "Escape of mass for finite-area hyperbolic surfaces", "rank": 9, "url": "https://arxiv.org/abs/2610.37573",
+      "arxiv_id": "2610.37573", "arxiv_version": 1, "published": "2026-10-27T17:18:11Z", "categories": ["math.SP", "math.AP", "math.DS"], "authors": ["Alex Cohen", "Zhenhao Li", "Zhongkai Tao"], "themes": ["Analysis & PDE", "Geometry & topology"],
+      "abstract": "The authors prove a lower bound for the L2 mass of eigenfunctions and Eisenstein series in a compact part of a noncompact finite-area hyperbolic surface, extending a result to the nonarithmetic setting.",
+      "claimed_result": "The authors establish the compact-region lower bound using a long-time Egorov theorem for this setting, a nonlinear uncertainty principle, and Weyl’s method for exponential sums.",
+      "assumptions_and_setting": "Noncompact finite-area hyperbolic surfaces; eigenfunctions and Eisenstein series; the lower bound concerns their L2 norm on a compact part.",
+      "unique_caveat": "The abstract states a lower bound, not full equidistribution; the proof depends on the cited uncertainty principle and exponential-sum estimates.",
+      "evidence_for_ranking": "Cross-listed across spectral theory, PDE, and dynamics; abstract identifies an extension beyond the arithmetic setting.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.37573"}]
     },
     {
-      "id": "paper-10",
-      "kind": "paper",
-      "title": "Sharp Stability of Brenier Potentials and its Link to Poincaré Inequalities",
-      "rank": 10,
-      "url": "https://arxiv.org/abs/2610.37659",
-      "arxiv_id": "2610.37659",
-      "arxiv_version": 1,
-      "published": "2026-10-27 17:59:00 UTC",
-      "categories": [
-        "math.FA",
-        "math.AP",
-        "math.MG",
-        "math.PR"
-      ],
-      "authors": [
-        "Cyril Letrouit",
-        "Tudor Manole"
-      ],
-      "themes": [
-        "Analysis & PDE",
-        "Geometry & topology",
-        "Probability & statistics"
-      ],
-      "abstract": "Proves a functional inequality stronger than Poincaré for uniformly log-concave measures and uses it to give sharp stability of Brenier potentials under target-measure variation.",
-      "claimed_result": "The abstract’s inequality controls the variance of differences of convex functions and yields a sharp stability bound for Brenier potentials; its Gaussian application recovers equivalence of Bures–Wasserstein and Frobenius distances between positive-semidefinite matrix square roots.",
-      "assumptions_and_setting": "A fixed uniformly log-concave source measure and changes in the target measure; the proof uses linearization of the quadratic-transport Monge–Ampère equation.",
-      "unique_caveat": "The stated stability theory assumes uniform log-concavity of the source and does not cover arbitrary source measures.",
-      "evidence_for_ranking": "Connects optimal transport, functional inequalities, and metric geometry, and gives a Gaussian-matrix application; it is cross-listed in four math subjects.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37659"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/2a976f48939fc052e0f0a0055d6f88fbcd0cb4b1"
-        }
-      ]
+      "id": "paper-10", "kind": "paper", "title": "Fuglede's conjecture holds in eight dimensions over the field with two elements", "rank": 10, "url": "https://arxiv.org/abs/2610.36417",
+      "arxiv_id": "2610.36417", "arxiv_version": 1, "published": "2026-10-26T23:53:56Z", "categories": ["math.CO"], "authors": ["Samuel J. Ferguson", "Joshua Iosevich"], "themes": ["Combinatorics & discrete mathematics"],
+      "abstract": "The authors prove Fuglede’s spectral-set/tiling equivalence in F2^8, show every spectral set and tile there has a linear-subspace tiling complement, and include exact finite verification data.",
+      "claimed_result": "The authors prove the conjecture in dimension eight over F2 and derive a subspace-complement result; they also give a dimension-nine spectral example obstructing this Fourier-support approach at eighth density.",
+      "assumptions_and_setting": "Nonempty subsets of finite vector spaces over F2; the equivalence is established in dimension eight with finite verification data.",
+      "unique_caveat": "Dimension nine remains unresolved over F2; the authors state the current Fourier-support method cannot resolve it as it stands.",
+      "evidence_for_ranking": "Concrete conjecture resolution in a finite group, supported by ancillary programs, data, certificates, and verification logs; included in the 28 October batch despite a 26 October submission timestamp.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.36417"}]
     },
     {
-      "id": "paper-11",
-      "kind": "paper",
-      "title": "The Assouad Dimension of Graphs: An Affirmative Answer to Fraser's Question",
-      "rank": 11,
-      "url": "https://arxiv.org/abs/2610.37477",
-      "arxiv_id": "2610.37477",
-      "arxiv_version": 1,
-      "published": "2026-10-27 16:06:51 UTC",
-      "categories": [
-        "math.DS",
-        "math.CA",
-        "math.CO"
-      ],
-      "authors": [
-        "Binyan Yu",
-        "Bilel Selmi",
-        "Jia Liu",
-        "Yongshun Liang"
-      ],
-      "themes": [
-        "Geometry & topology",
-        "Analysis & PDE",
-        "Combinatorics & discrete mathematics"
-      ],
-      "abstract": "Studies Assouad dimensions of graphs of continuous functions, deriving level-set bounds and a partial positive answer to questions of Fraser and Yu, with examples including Weierstrass- and Takagi-type functions.",
-      "claimed_result": "The abstract proves a lower bound for the Assouad dimension of graphs of count-Hölder continuous functions in terms of the supremum of upper box dimensions of level sets, and shows that this lower bound is sharp in the stated sense.",
-      "assumptions_and_setting": "Graphs of continuous functions on a compact interval under the paper’s count-Hölder hypotheses; the paper also treats specified Weierstrass-type and self-affine examples.",
-      "unique_caveat": "The authors describe their answer to Fraser’s question as partial, not a complete resolution of every formulation.",
-      "evidence_for_ranking": "Addresses named dimension questions and links fractal geometry of function graphs to level-set and box-dimension estimates; it has three math-subfield listings.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-10-28",
-      "refs": [
-        {
-          "source": "arXiv abstract",
-          "url": "https://arxiv.org/abs/2610.37477"
-        },
-        {
-          "source": "Semantic Scholar",
-          "url": "https://www.semanticscholar.org/paper/2defdc09fc51d22d3258fbe98c7d0393607c4fe1"
-        }
-      ]
+      "id": "paper-11", "kind": "paper", "title": "Sharp well-posedness and soliton resolution for the half-wave maps equation in H1/2", "rank": 11, "url": "https://arxiv.org/abs/2610.36676",
+      "arxiv_id": "2610.36676", "arxiv_version": 1, "published": "2026-10-27T05:46:58Z", "categories": ["math.AP"], "authors": ["Fei Tang", "Shou-Fu Tian"], "themes": ["Analysis & PDE", "Mathematical physics"],
+      "abstract": "The authors prove optimal-threshold global well-posedness and, under a spectral assumption satisfied by a dense set of energy-space data, soliton resolution for half-wave maps on the real line, extending the results to complex Grassmannian targets.",
+      "claimed_result": "The authors prove global well-posedness in H1/2, ill-posedness in every Hs for s below 1/2, and asymptotic decoupling into an infinite soliton superposition under their spectral assumption.",
+      "assumptions_and_setting": "Half-wave maps on R; soliton resolution requires the stated spectral assumption on initial data, which the authors say holds for a dense set in the energy space.",
+      "unique_caveat": "Soliton resolution is conditional on the spectral assumption and is not stated for every energy-space datum.",
+      "evidence_for_ranking": "Abstract claims a sharp regularity threshold, infinite-soliton asymptotic description, and target-space extension; placement is based on concrete scope rather than attention metrics.",
+      "announcement_type": "new submission", "announcement_batch_date": "2026-10-28", "refs": [{"source": "arXiv abstract", "url": "https://arxiv.org/abs/2610.36676"}]
     }
   ]
 }

@@ -1,155 +1,154 @@
-# arXiv Mathematics — daily notable papers — 28 October 2026
+# arXiv mathematics — Wednesday, 28 October 2026
 
-Today’s batch contains 477 entries in the Mathematics recent listing. This report selects 11 papers, with a recurring emphasis on sharp quantitative estimates and a three-paper open-ASEP series. In brief: nonuniqueness for 2D Euler, Hodge–Riemann theory, random spectra, stationary particle systems, and additive combinatorics. arXiv has no official trending chart; this is an inferred ordering, and the papers are too recent for citation evidence to measure readership reliably.
+Latest announcement batch: 28 October 2026; 477 papers. The standout mathematical signals are a new nonuniqueness construction for 2D Euler and a coordinated set of sharp stationary-law results for open ASEP, alongside advances in geometric inequalities, spectral theory, and finite-group tiling. Spoken agenda: first the PDE and ASEP results, then the bridges to geometry, probability, and combinatorics. This is an inferred ranking, not an official arXiv trending chart; very recent papers have little citation history, so popularity evidence is limited and the ordering emphasizes checkable mathematical results and cross-field relevance.
 
 ## Top papers (ranked)
 
 ### 1. [Nonuniqueness of Solutions to 2D Incompressible Euler Equations with Unbounded Vorticity](https://arxiv.org/abs/2610.37653)
-- **Abstract:** Constructs two distinct 2D incompressible Euler solutions with the same compactly supported, mean-zero initial vorticity in every finite $L^p$, using an infinite-scale cascade of quadrupole transitions.
+- **Abstract:** The author constructs two distinct finite-energy weak solutions of planar incompressible Euler from the same compactly supported, mean-zero vorticity lying in every finite $L^p(\mathbb R^2)$, using a cascade of quadrupole transitions across infinitely many scales.
 - **Authors:** Hyungjun Choi
-- **arXiv:** `2610.37653v1` (published 2026-10-27 17:58:26 UTC; categories: `math.AP`)
-- **Evidence for ranking:** A concrete nonuniqueness construction in a central PDE uniqueness question, with compact support and finite-energy velocity; the arXiv comment says a Lean formalisation is forthcoming.
-- **Claimed result:** Theorem 1.1 in the paper constructs two distinct renormalized vorticity solutions with identical initial data, each preserving all finite-$L^p$ vorticity norms, and with velocities in $C([0,\infty);L^2)$.
-- **Assumptions and setting:** Two-dimensional whole-space incompressible Euler; the common vorticity is compactly supported, mean-zero, and belongs to $\bigcap_{1\le p<\infty}L^p(\mathbb R^2)$.
-- **Caveat:** The construction is in an unbounded-vorticity class and does not establish nonuniqueness for bounded vorticity or for arbitrary initial data.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Analysis & PDE; Mathematical physics
+- **arXiv:** `2610.37653v1` (published 2026-10-27T17:58:26Z; categories: `math.AP`)
+- **Evidence for ranking:** A concrete nonuniqueness result in a central PDE problem, with the introduction and theorem statement checked; its placement reflects potential mathematical significance, not measured readership. No cross-listing or independent expert discussion was found in the sources checked.
+- **Claimed result:** The author proves existence of two distinct global renormalized vorticity-transport solutions, also weak momentum solutions, with the same initial vorticity in every finite $L^p$, and velocities continuous in $L^2$; the solutions differ at time 1.
+- **Assumptions and setting:** Two-dimensional unforced Euler on $\mathbb R^2$; initial vorticity is compactly supported, mean zero, and belongs to $\bigcap_{1\le p<\infty}L^p$; the result does not assert bounded vorticity.
+- **Caveat:** The paper notes that its constructed $L^p$-norm growth does not establish sharpness of the Yudovich uniqueness condition; this is an author-stated limitation, not a resolution for bounded-vorticity data.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Analysis & PDE
 
-### 2. [Hodge–Riemann relations for nef bundles](https://arxiv.org/abs/2610.37650)
-- **Abstract:** Develops a Lefschetz framework for nef classes and vector bundles and proves Hodge–Riemann relations for specified products of Chern and derived Schur classes under a Hall–Rado-type condition.
-- **Authors:** Enhan Li, Weizhe Zheng
-- **arXiv:** `2610.37650v1` (published 2026-10-27 17:57:36 UTC; categories: `math.AG`, `math.CO`)
-- **Evidence for ranking:** Cross-listed between algebraic geometry and combinatorics; the abstract states a framework, positivity relations, an equivalence for products of nef $(1,1)$-classes, and an extension of the descent lemma.
-- **Claimed result:** The abstract and Theorem 1.4 establish Hodge–Riemann relations for products of top Chern classes and, in suitable bidegrees, derived Schur classes of nef twisted vector bundles, subject to stated Lefschetz/Hall–Rado hypotheses.
-- **Assumptions and setting:** Compact Kähler manifolds, nef twisted vector bundles, and the specified $(m,p,q)$-Lefschetz or Hall–Rado-type conditions; some formal analogues are for projective-bundle modules.
-- **Caveat:** The positivity conclusions are conditional on these geometric and Lefschetz hypotheses; they are not asserted for arbitrary bundles or classes.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Geometry & topology; Combinatorics & discrete mathematics
-
-### 3. [Local Law and Eigenvector Delocalization for Random Lifts](https://arxiv.org/abs/2610.37463)
-- **Abstract:** Proves a quantitative Green-function local law for random lifts of a fixed graph and derives high-probability eigenvector delocalization away from singular energies.
-- **Authors:** Jiaoyang Huang, Ruizhe Xu
-- **arXiv:** `2610.37463v1` (published 2026-10-27 16:00:41 UTC; categories: `math.PR`, `math-ph`, `math.CO`, `math.SP`)
-- **Evidence for ranking:** A precise quantitative result spanning probability, mathematical physics, combinatorics, and spectral theory; it reaches spectral scales $(\log N)^C/N$ and yields a sup-norm eigenvector bound.
-- **Claimed result:** For random $N$-lifts of the stated base graph, the authors obtain entrywise Green-function estimates down to $(\log N)^C/N$ and complete eigenvector delocalization away from the universal-cover spectrum’s singular energies.
-- **Assumptions and setting:** The base is a fixed finite connected simple graph of minimum degree at least three; the estimates hold with high probability and exclude singular energies by a fixed positive margin.
-- **Caveat:** The singular energies are explicitly excluded, and the logarithmic exponent and constants are not specified in the abstract.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Probability & statistics; Mathematical physics; Combinatorics & discrete mathematics
-
-### 4. [Sharp approximations for the stationary measures of the open ASEP I: The shock region](https://arxiv.org/abs/2610.37639)
-- **Abstract:** Interprets the Bryc polynomial in the open ASEP stationary-measure representation through a birth–death-type chain and obtains sharp total-variation approximations in the shock region’s high- and low-density phases.
+### 2. [Sharp approximations for the stationary measures of the open ASEP I: The shock region](https://arxiv.org/abs/2610.37639)
+- **Abstract:** The authors interpret the Bryc polynomial in open ASEP through a birth–death Markov chain and obtain sharp total-variation approximations by Bernoulli product measures in the high- and low-density phases of the shock region, with moderate-deviation applications.
 - **Authors:** Dominik Schmid, Zongrui Yang
-- **arXiv:** `2610.37639v1` (published 2026-10-27 17:54:37 UTC; categories: `math.PR`, `math-ph`)
-- **Evidence for ranking:** First of a coordinated three-paper treatment of distinct open-ASEP regimes; cross-listed in probability and mathematical physics. Semantic Scholar currently lists 1 citation, including 1 influential citation, and 45 references; these are current totals, not period gains.
-- **Claimed result:** The abstract gives a probabilistic birth–death-chain interpretation of the Bryc polynomial and sharp total-variation approximation by Bernoulli product measures in the shock region, with moderate-deviation applications.
-- **Assumptions and setting:** Open ASEP on a finite one-dimensional lattice, under the paper’s boundary-rate/Liggett conditions and in the high- or low-density shock phases.
-- **Caveat:** This installment addresses the shock region; its approximation statements are phase- and parameter-dependent and are not a single approximation for all stationary regimes.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
+- **arXiv:** `2610.37639v1` (published 2026-10-27T17:54:37Z; categories: `math.PR`, `math-ph`)
+- **Evidence for ranking:** First installment of a three-paper result series; it combines a probabilistic representation with sharp stationary-law estimates and is cross-listed in probability and mathematical physics.
+- **Claimed result:** The authors establish the stated total-variation approximations and derive moderate-deviation estimates for the stationary measure and asymptotic results for open ASEP with light particles.
+- **Assumptions and setting:** Open asymmetric simple exclusion process with boundary interactions, in the high-/low-density phases of the shock region; the approximation is not claimed for all parameter regimes.
+- **Caveat:** The abstract restricts the sharp Bernoulli approximations to the shock region’s high- and low-density phases; conclusions outside those regimes are not implied.
+- **Announcement type:** new submission, 2026-10-28 batch
 - **Themes:** Probability & statistics; Mathematical physics
 
-### 5. [Sharp approximations for the stationary measures of the open ASEP III: The fan region](https://arxiv.org/abs/2610.37620)
-- **Abstract:** Establishes total-variation approximations for open-ASEP configurations in the fan region by random-walk excursions, meanders, or Bernoulli product configurations, depending on phase.
+### 3. [Sharp approximations for the stationary measures of the open ASEP II: The coexistence line](https://arxiv.org/abs/2610.37636)
+- **Abstract:** For open ASEP on the coexistence line, the authors identify an observable shock location, show its law is close in total variation to the uniform lattice law, and approximate occupation variables away from the shock by Bernoulli product measures conditional on that location.
 - **Authors:** Dominik Schmid, Zongrui Yang
-- **arXiv:** `2610.37620v1` (published 2026-10-27 17:47:34 UTC; categories: `math.PR`, `math-ph`)
-- **Evidence for ranking:** Completes a three-paper, regime-based open-ASEP program and supplies discrete fluctuation counterparts plus moderate-deviation estimates. Semantic Scholar currently lists 2 citations and 0 influential citations; these are current totals, not period gains.
-- **Claimed result:** In the maximal-current phase and its fan-region boundaries, occupation variables are approximated by configurations built from lazy-walk excursions/meanders; in high- and low-density phases, Bernoulli product approximations have exponentially decaying errors away from the relevant boundary.
-- **Assumptions and setting:** Open ASEP in the fan region, with general boundary rates; separate claims apply to the maximal-current, boundary, and high-/low-density phases.
-- **Caveat:** The approximation changes with the phase and location; it does not cover arbitrary regimes or claim identical fluctuation laws throughout the phase diagram.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
+- **arXiv:** `2610.37636v1` (published 2026-10-27T17:54:05Z; categories: `math.PR`, `math-ph`)
+- **Evidence for ranking:** Extends the new, cross-listed ASEP series with a precise shock-location law and optimal total-variation bounds, plus stated fluctuation and correlation applications.
+- **Claimed result:** The authors prove the shock-location approximation and conditional product-measure approximation, yielding fluctuation limits, moderate-deviation bounds for particle density, and correlation-function limits.
+- **Assumptions and setting:** Stationary open ASEP on its coexistence line; occupation variables are approximated away from the identified shock, conditional on its location.
+- **Caveat:** The result is tied to the coexistence line and does not by itself cover the shock or fan regimes treated in the companion papers.
+- **Announcement type:** new submission, 2026-10-28 batch
 - **Themes:** Probability & statistics; Mathematical physics
 
-### 6. [Sharp approximations for the stationary measures of the open ASEP II: The coexistence line](https://arxiv.org/abs/2610.37636)
-- **Abstract:** On the open ASEP coexistence line, identifies the shock location and approximates its distribution by a uniform lattice law, with conditional product-measure approximations away from the shock.
+### 4. [Sharp approximations for the stationary measures of the open ASEP III: The fan region](https://arxiv.org/abs/2610.37620)
+- **Abstract:** In the fan region of open ASEP, the authors obtain discrete Brownian-excursion/meander counterparts and Bernoulli product approximations, and prove moderate-deviation bounds for particle counts using path estimates and negative correlations.
 - **Authors:** Dominik Schmid, Zongrui Yang
-- **arXiv:** `2610.37636v1` (published 2026-10-27 17:54:05 UTC; categories: `math.PR`, `math-ph`)
-- **Evidence for ranking:** Adds an explicit shock-location observable and optimal total-variation bounds within the same three-part probability/statistical-physics series. Semantic Scholar currently lists 2 citations and 0 influential citations; these are current totals, not period gains.
-- **Claimed result:** The authors prove that the shock location’s law is close in total variation to the uniform lattice law and, conditional on that location, the occupation variables away from the shock are close to Bernoulli product measures with different left/right densities.
-- **Assumptions and setting:** The open ASEP on the coexistence line, using the two-layer representation and birth–death-chain characterization developed in Part I.
-- **Caveat:** The result is specific to the coexistence line and relies on the representation established in the companion work.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
+- **arXiv:** `2610.37620v1` (published 2026-10-27T17:47:34Z; categories: `math.PR`, `math-ph`)
+- **Evidence for ranking:** Completes the three-part, probability/mathematical-physics series and treats a distinct stationary phase with several explicit approximation and concentration results.
+- **Claimed result:** The authors prove total-variation approximations by lazy-random-walk excursions and meanders on intervals away from boundaries, exponentially accurate Bernoulli approximations in high-/low-density phases, and moderate deviations in the maximal-current phase and its fan-region boundaries.
+- **Assumptions and setting:** Open ASEP with general boundary rates, in the specified fan-region phases; the excursion/meander approximation is stated away from boundaries.
+- **Caveat:** The estimates are phase- and location-specific; the abstract does not claim one approximation uniformly across every boundary and bulk regime.
+- **Announcement type:** new submission, 2026-10-28 batch
 - **Themes:** Probability & statistics; Mathematical physics
 
-### 7. [Sharp Bounds for Toral Eigenfunctions and Threefold Additive Energy on Circles](https://arxiv.org/abs/2610.37423)
-- **Abstract:** Proves an optimal cubic bound for threefold additive energy on lattice circles and a uniform weak-$L^6$ estimate for normalized square-torus eigenfunctions, with further nodal and convergence applications.
-- **Authors:** Guiyu Xie, Cheng Zhang
-- **arXiv:** `2610.37423v1` (published 2026-10-27 15:36:50 UTC; categories: `math.AP`, `math.CO`, `math.NT`, `math.SP`)
-- **Evidence for ranking:** The abstract identifies the additive-energy bound as optimal and links it to a weak-$L^6$ eigenfunction estimate; it is cross-listed across four mathematical areas.
-- **Claimed result:** For $P_n=\{z\in\mathbb Z^2:|z|^2=n\}$, the authors prove $J_3(P_n)\le C|P_n|^3$ and a uniform weak-$L^6$ bound, implying uniform $L^p$ bounds for $1\le p<6$.
-- **Assumptions and setting:** Lattice points on circles and $L^2$-normalized eigenfunctions of the square torus; the weak endpoint is $p=6$.
-- **Caveat:** The endpoint claim is weak-$L^6$, not a strong-$L^6$ estimate.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Analysis & PDE; Combinatorics & discrete mathematics; Mathematical physics
+### 5. [Stationary measures of the open KPZ equation: A short proof](https://arxiv.org/abs/2610.37618)
+- **Abstract:** The authors give a probabilistic proof of the two-layer Brownian representation for the stationary measure of the open KPZ equation on a finite interval with arbitrary Neumann boundary parameters, using open-ASEP representations and weakly asymmetric limits.
+- **Authors:** Dominik Schmid, Zongrui Yang
+- **arXiv:** `2610.37618v1` (published 2026-10-27T17:47:13Z; categories: `math.PR`)
+- **Evidence for ranking:** Provides a direct mathematical bridge from the same day’s ASEP series to KPZ; the abstract says the proof recovers a representation recently established in full generality.
+- **Claimed result:** The authors give a short probabilistic derivation of the stationary two-layer Brownian representation, using martingale estimates for Bryc polynomials and known convergence from open ASEP to open KPZ.
+- **Assumptions and setting:** Open KPZ on a finite interval with arbitrary Neumann boundary parameters; the derivation uses weakly asymmetric scaling and existing ASEP-to-KPZ convergence results.
+- **Caveat:** This is a new proof of a representation already established by other authors, not a claim to be the first proof or a new general existence theorem.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Probability & statistics; Mathematical physics
 
-### 8. [Enumeration of zero-sum subsequences: A proof of Bialostocki-Lotspeich conjecture](https://arxiv.org/abs/2610.37125)
-- **Abstract:** Proves the 1992 Bialostocki–Lotspeich lower bound for the number of $n$-element zero-sum subsequences in a sequence over the cyclic group of order $n$.
-- **Authors:** Guoqing Wang, Xiangneng Zeng
-- **arXiv:** `2610.37125v1` (published 2026-10-27 12:24:34 UTC; categories: `math.CO`, `math.NT`)
-- **Evidence for ranking:** The abstract states a complete proof of a named conjecture, with a natural bridge between additive combinatorics and number theory.
-- **Claimed result:** For a sequence $S$ over $C_n$, the authors prove $\mathsf N_0^n(S)\ge\binom{\lfloor |S|/2\rfloor}{n}+\binom{\lceil |S|/2\rceil}{n}$, the conjectured bound.
-- **Assumptions and setting:** Finite sequences with repetitions allowed in the cyclic group $C_n$, for $n\ge2$; the counted subsequences have exactly $n$ terms.
-- **Caveat:** The stated theorem concerns cyclic groups of order equal to the subsequence length; it does not by itself establish the analogous bound for arbitrary finite abelian groups.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Combinatorics & discrete mathematics; Algebra & number theory
-
-### 9. [High-dimensional critical percolation and critical Branching random walks are intersection equivalent](https://arxiv.org/abs/2610.37133)
-- **Abstract:** Shows that, in dimensions above six under a standard two-point/Green-function comparability assumption, distant finite sets are hit with comparable probabilities by a critical percolation cluster and a critical branching random walk.
-- **Authors:** Bruno Schapira
-- **arXiv:** `2610.37133v1` (published 2026-10-27 12:28:31 UTC; categories: `math.PR`)
-- **Evidence for ranking:** States a direct comparison between two canonical critical random structures and provides an explicit approximate-last-passage/equilibrium-measure method.
-- **Claimed result:** The abstract proves two-sided comparison up to positive multiplicative constants of the hit probabilities for any finite set sufficiently far from the origin relative to its diameter.
-- **Assumptions and setting:** Critical percolation and critical branching random walk on $\mathbb Z^d$, $d>6$, assuming their two-point function and the Green function have the same order.
-- **Caveat:** The comparison is only established in the stated high-dimensional regime and for sets satisfying the far-from-origin versus diameter condition.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Probability & statistics; Combinatorics & discrete mathematics
-
-### 10. [Sharp Stability of Brenier Potentials and its Link to Poincaré Inequalities](https://arxiv.org/abs/2610.37659)
-- **Abstract:** Proves a functional inequality stronger than Poincaré for uniformly log-concave measures and uses it to give sharp stability of Brenier potentials under target-measure variation.
+### 6. [Sharp Stability of Brenier Potentials and its Link to Poincaré Inequalities](https://arxiv.org/abs/2610.37659)
+- **Abstract:** The authors prove a functional inequality bounding the variance of differences of convex functions by Wasserstein distance between their gradient pushforwards, yielding sharp stability of Brenier potentials for uniformly log-concave sources.
 - **Authors:** Cyril Letrouit, Tudor Manole
-- **arXiv:** `2610.37659v1` (published 2026-10-27 17:59:00 UTC; categories: `math.FA`, `math.AP`, `math.MG`, `math.PR`)
-- **Evidence for ranking:** Connects optimal transport, functional inequalities, and metric geometry, and gives a Gaussian-matrix application; it is cross-listed in four math subjects.
-- **Claimed result:** The abstract’s inequality controls the variance of differences of convex functions and yields a sharp stability bound for Brenier potentials; its Gaussian application recovers equivalence of Bures–Wasserstein and Frobenius distances between positive-semidefinite matrix square roots.
-- **Assumptions and setting:** A fixed uniformly log-concave source measure and changes in the target measure; the proof uses linearization of the quadratic-transport Monge–Ampère equation.
-- **Caveat:** The stated stability theory assumes uniform log-concavity of the source and does not cover arbitrary source measures.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Analysis & PDE; Geometry & topology; Probability & statistics
+- **arXiv:** `2610.37659v1` (published 2026-10-27T17:59:00Z; categories: `math.FA`, `math.AP`, `math.MG`, `math.PR`)
+- **Evidence for ranking:** The four-subfield cross-listing and checked main theorem connect functional inequalities, optimal transport, metric geometry, and probability; the authors also give a sharp constant under uniform log-concavity.
+- **Claimed result:** The authors prove $\operatorname{Var}_\rho(\phi_1-\phi_0)\le \kappa^{-1}W_2^2((\nabla\phi_0)_\#\rho,(\nabla\phi_1)_\#\rho)$ for a $\kappa$-uniformly log-concave probability measure and convex potentials with gradients in $L^2(\rho)$.
+- **Assumptions and setting:** A fixed uniformly log-concave source probability measure on $\mathbb R^d$; both potentials are convex and their gradients are square-integrable under the source.
+- **Caveat:** Uniform log-concavity is substantive: the paper also gives log-concave measures for which the stronger Brenier stability inequality fails, despite finite Poincaré constants.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Analysis & PDE; Probability & statistics; Optimization & control
 
-### 11. [The Assouad Dimension of Graphs: An Affirmative Answer to Fraser's Question](https://arxiv.org/abs/2610.37477)
-- **Abstract:** Studies Assouad dimensions of graphs of continuous functions, deriving level-set bounds and a partial positive answer to questions of Fraser and Yu, with examples including Weierstrass- and Takagi-type functions.
-- **Authors:** Binyan Yu, Bilel Selmi, Jia Liu, Yongshun Liang
-- **arXiv:** `2610.37477v1` (published 2026-10-27 16:06:51 UTC; categories: `math.DS`, `math.CA`, `math.CO`)
-- **Evidence for ranking:** Addresses named dimension questions and links fractal geometry of function graphs to level-set and box-dimension estimates; it has three math-subfield listings.
-- **Claimed result:** The abstract proves a lower bound for the Assouad dimension of graphs of count-Hölder continuous functions in terms of the supremum of upper box dimensions of level sets, and shows that this lower bound is sharp in the stated sense.
-- **Assumptions and setting:** Graphs of continuous functions on a compact interval under the paper’s count-Hölder hypotheses; the paper also treats specified Weierstrass-type and self-affine examples.
-- **Caveat:** The authors describe their answer to Fraser’s question as partial, not a complete resolution of every formulation.
-- **Announcement type:** new submission, announcement-batch date 2026-10-28
-- **Themes:** Geometry & topology; Analysis & PDE; Combinatorics & discrete mathematics
+### 7. [Hodge--Riemann relations for nef bundles](https://arxiv.org/abs/2610.37650)
+- **Abstract:** The authors introduce an $(m,p,q)$-Lefschetz framework and prove Hodge–Riemann relations for products of top Chern and derived Schur classes of nef bundles under Hall–Rado-type conditions, with applications to tautological classes and matroid Chow rings.
+- **Authors:** Enhan Li, Weizhe Zheng
+- **arXiv:** `2610.37650v1` (published 2026-10-27T17:57:36Z; categories: `math.AG`, `math.CO`)
+- **Evidence for ranking:** The checked introduction connects an extension of Hodge theory to algebraic geometry and combinatorics, including applications to matroid Chow rings; the main results require explicit positivity/Lefschetz hypotheses.
+- **Claimed result:** The authors establish the stated Hodge–Riemann relations and extend the descent lemma to Schur classes of nef vector bundles; for products of nef $(1,1)$-classes, they characterize simultaneous Hodge–Riemann relations via a Hall–Rado-type condition.
+- **Assumptions and setting:** Compact Kähler manifolds and nef (possibly twisted) vector bundles; principal bundle-class results assume the specified Hall–Rado-type or $(m,p,q)$-Lefschetz conditions.
+- **Caveat:** The conclusions are conditional, not a blanket Hodge–Riemann theorem for arbitrary nef bundles without the paper’s positivity assumptions.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
+
+### 8. [Local Law and Eigenvector Delocalization for Random Lifts](https://arxiv.org/abs/2610.37463)
+- **Abstract:** For random $N$-lifts of a fixed finite connected simple graph of minimum degree at least three, the authors prove a high-probability entrywise Green-function local law down to near-$1/N$ scales away from singular energies and deduce complete eigenvector delocalization there.
+- **Authors:** Jiaoyang Huang, Ruizhe Xu
+- **arXiv:** `2610.37463v1` (published 2026-10-27T16:00:41Z; categories: `math.PR`, `math-ph`, `math.CO`, `math.SP`)
+- **Evidence for ranking:** A quantitative theorem with four-category cross-listing bridges random graph combinatorics, probability, mathematical physics, and spectral theory; the abstract states both a local law and a delocalization consequence.
+- **Claimed result:** The authors obtain entrywise Green-function estimates to spectral scales $(\log N)^C/N$ in the bulk and near regular edges and cusps, then prove $\|u\|_\infty\le (\log N)^C/\sqrt N$ for the specified eigenvectors with high probability.
+- **Assumptions and setting:** Random lifts of a fixed finite connected simple graph with minimum degree at least three; eigenvalues must stay a fixed positive distance from singular energies.
+- **Caveat:** Singular energies are excluded, and the bounds retain logarithmic losses; the abstract does not claim the result at every spectral energy.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Probability & statistics; Combinatorics & discrete mathematics; Mathematical physics
+
+### 9. [Escape of mass for finite-area hyperbolic surfaces](https://arxiv.org/abs/2610.37573)
+- **Abstract:** The authors prove a lower bound for the $L^2$ mass of eigenfunctions and Eisenstein series in a compact part of a noncompact finite-area hyperbolic surface, extending a result to the nonarithmetic setting.
+- **Authors:** Alex Cohen, Zhenhao Li, Zhongkai Tao
+- **arXiv:** `2610.37573v1` (published 2026-10-27T17:18:11Z; categories: `math.SP`, `math.AP`, `math.DS`)
+- **Evidence for ranking:** Cross-listed across spectral theory, PDE, and dynamics; its abstract identifies an extension beyond the arithmetic setting and names a nonlinear-uncertainty input.
+- **Claimed result:** The authors establish the stated compact-region lower bound, using a long-time Egorov theorem for this setting, a nonlinear uncertainty principle, and Weyl’s method for exponential sums.
+- **Assumptions and setting:** Noncompact finite-area hyperbolic surfaces; the objects are eigenfunctions and Eisenstein series, and the bound concerns their $L^2$ norm on a compact part.
+- **Caveat:** The abstract states a lower bound, not a full equidistribution result; its proof depends on the cited uncertainty principle and exponential-sum estimates.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Analysis & PDE; Geometry & topology
+
+### 10. [Fuglede's conjecture holds in eight dimensions over the field with two elements](https://arxiv.org/abs/2610.36417)
+- **Abstract:** The authors prove Fuglede’s spectral-set/tiling equivalence in $\mathbb F_2^8$, show every spectral set and tile there has a linear-subspace tiling complement, and include exact finite verification data.
+- **Authors:** Samuel J. Ferguson, Joshua Iosevich
+- **arXiv:** `2610.36417v1` (published 2026-10-26T23:53:56Z; categories: `math.CO`)
+- **Evidence for ranking:** A concrete conjecture resolution in a finite group, supported by ancillary programs, data, certificates, and verification logs; its announcement was in the latest batch despite a 26 October first-submission timestamp.
+- **Claimed result:** The authors prove the conjecture in dimension eight over $\mathbb F_2$ and derive a subspace-complement result; their abstract also gives an elementary dimension-nine spectral example obstructing this Fourier-support approach at eighth density.
+- **Assumptions and setting:** Nonempty subsets of finite vector spaces over $\mathbb F_2$; the equivalence is established in dimension eight, with computationally checked finite cases in the proof.
+- **Caveat:** Dimension nine remains unresolved over $\mathbb F_2$; the authors state that the current Fourier-support method cannot resolve it as it stands.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Combinatorics & discrete mathematics
+
+### 11. [Sharp well-posedness and soliton resolution for the half-wave maps equation in $H^{1/2}_\bullet$](https://arxiv.org/abs/2610.36676)
+- **Abstract:** The authors prove optimal-threshold global well-posedness and, under a spectral assumption satisfied by a dense set of energy-space data, soliton resolution for half-wave maps on the real line, extending the results to complex Grassmannian targets.
+- **Authors:** Fei Tang, Shou-Fu Tian
+- **arXiv:** `2610.36676v1` (published 2026-10-27T05:46:58Z; categories: `math.AP`)
+- **Evidence for ranking:** The abstract claims both a sharp regularity threshold and an infinite-soliton asymptotic description, plus a target-space extension; placement is based on this concrete scope rather than attention metrics.
+- **Claimed result:** The authors prove global well-posedness in $H^{1/2}_\bullet$, ill-posedness in every $H^s_\bullet$ for $s<1/2$, and asymptotic decoupling into an infinite soliton superposition under their spectral assumption.
+- **Assumptions and setting:** Half-wave maps on $\mathbb R$; the soliton-resolution conclusion requires the stated spectral assumption on initial data, which the authors say holds for a dense set in the energy space.
+- **Caveat:** The soliton-resolution claim is conditional on that spectral assumption and is not stated for every energy-space datum.
+- **Announcement type:** new submission, 2026-10-28 batch
+- **Themes:** Analysis & PDE; Mathematical physics
 
 ## Trending Research Themes
 
-- **Open ASEP stationary measures:** Schmid and Yang’s three papers divide the problem into shock, coexistence, and fan regimes, using total-variation approximations and particle/path representations. These are three related submissions, not evidence of an archive-wide shift (2610.37639, 2610.37636, 2610.37620).
-- **Quantitative control of random structures:** The random-lift local law and the high-dimensional percolation/branching-walk comparison each turn a difficult random object into a sharp estimate or comparator; their proof tools differ, so the connection is about the kind of result rather than a shared method (2610.37463, 2610.37133).
-- **Additive structure with analytic consequences:** The zero-sum subsequence conjecture and lattice-circle additive-energy bound deliver explicit combinatorial inequalities, while the latter feeds into toral eigenfunction estimates (2610.37125, 2610.37423).
-- **Geometry through positivity and dimension:** The nef-bundle Hodge–Riemann framework and the Assouad-dimension bounds address different geometric objects, but both make hypotheses on positivity or level-set structure central to the conclusion (2610.37650, 2610.37477).
-- **Isolated PDE signals:** The Euler nonuniqueness construction and Brenier-potential stability are distinct fresh results in analysis; they should not be read as a common field-wide trend (2610.37653, 2610.37659).
+- **Sharp quantitative control across different settings.** The Brenier-potential inequality gives stability under uniform log-concavity; the random-lift paper gives Green-function and eigenvector bounds; the hyperbolic-surface paper controls mass escape. These use distinct methods, not one shared technique.
+- **Stationary stochastic systems and scaling limits.** The three open-ASEP papers split shock, coexistence, and fan regimes, while the open-KPZ note connects the ASEP representation to a Brownian stationary-measure formula. These four submissions form the clearest coordinated cluster in this batch.
+- **Nonuniqueness, thresholds, and long-time PDE structure.** The Euler paper constructs branching weak solutions; the half-wave maps paper establishes a sharp regularity threshold and conditional soliton resolution. This juxtaposition does not imply a shared mechanism.
+- **Positivity and finite algebraic structure.** The Hodge–Riemann paper extends positivity statements for nef bundles and links to matroid Chow rings; the finite-group Fuglede result resolves a specific dimension-eight case. These are isolated contributions, not evidence of a field-wide shift.
 
 ## Open Problems and Research Directions
 
-- **Author-stated boundary/limitation:** The local-law result excludes singular energies; the percolation comparison assumes $d>6$ and two-point/Green-function comparability; and the Assouad paper gives only a partial positive answer to the cited question. These are explicit scope boundaries, not claims that the papers themselves state each extension as an open conjecture (2610.37463, 2610.37133, 2610.37477).
-- **Proposed directions:** Test whether the local law can be extended toward singular energies, and whether the percolation comparison persists in lower-dimensional or differently controlled regimes (2610.37463, 2610.37133).
-- **Proposed directions:** For the ASEP series, quantify crossover behavior near the shock/coexistence/fan boundaries and test which of the phase-specific approximations persist for observables beyond those treated (2610.37639, 2610.37636, 2610.37620).
-- **Proposed directions:** Explore weaker source assumptions in Brenier stability and weaker positivity conditions in the nef-bundle Hodge–Riemann results; these would test how essential the current uniform log-concavity and Hall–Rado/Lefschetz hypotheses are (2610.37659, 2610.37650).
-- **Proposed directions:** Study whether the cyclic-group zero-sum bound admits analogues for other finite abelian groups, and whether the toral eigenfunction estimate can be strengthened at the weak-$L^6$ endpoint (2610.37125, 2610.37423).
-- **Proposed direction:** Once available, independently check or formalize the Euler construction’s Lean artifact; the arXiv comment says formalisation is forthcoming, not that it is already complete (2610.37653).
+- **Author-stated open issue — Euler uniqueness threshold:** Choi notes that the constructed vorticity norms do not establish sharpness of the Yudovich uniqueness condition. A follow-up could test whether the multiscale mechanism adapts to weaker norm growth or more restrictive initial-vorticity classes. [2610.37653]
+- **Author-stated open problem — Fuglede in dimension nine:** The conjecture remains unresolved over $\mathbb F_2^9$, and the paper gives a density-one-eighth example showing why its current Fourier-support argument does not extend directly. A concrete direction is to seek a different structural invariant or a refined finite classification. [2610.36417]
+- **Author-stated scope gap — Brenier stability beyond uniform log-concavity:** The authors exhibit log-concave measures for which the stability constant is infinite. Characterizing intermediate assumptions that recover finite stability, and quantifying stability for bounded convex supports, would test the theorem’s boundary. [2610.37659]
+- **Proposed synthesis — ASEP regime boundaries:** Since the trilogy treats shock, coexistence, and fan regimes with different approximating laws, one concrete extension is to track how finite-size error bounds behave near the interfaces between regimes. This is a suggested direction, not an author-stated open problem. [2610.37639, 2610.37636, 2610.37620]
+- **Author-stated hypothesis to relax — half-wave-map soliton resolution:** The resolution theorem assumes a spectral condition satisfied on a dense set. It is natural to test whether that condition can be removed, weakened, or characterized directly from initial data; the abstract does not claim resolution for all energy-space data. [2610.36676]
 
 ## Takeaway
 
-The clearest structured program in today’s selected batch is the three-paper open-ASEP treatment, while several individual preprints state sharp bounds or concrete existence/nonuniqueness results across geometry, probability, PDE, and combinatorics. The preprint claims still merit specialist scrutiny, and this selective shortlist is not a census of today’s batch.
+The batch’s strongest signals are a new 2D Euler nonuniqueness construction and a tightly connected ASEP/KPZ cluster, with additional sharp-constant and structural results in geometry, spectral theory, and combinatorics. Because these papers were announced only one or two days before the snapshot and citation evidence is sparse, this is a significance-led shortlist of notable new work, not a measure of readership or community-wide popularity.
 
 ## Method and sources
 
-- **Window:** Daily; the latest Mathematics announcement batch shown at snapshot was Wednesday 2026-10-28. The batch listing showed 477 entries. Exact selected window: announcement batch dated 2026-10-28 (not the prior batch).
-- **Snapshot:** 2026-10-28 17:19:38 UTC.
-- **Coverage:** Full `math/recent` listing traversed through the 477-entry 2026-10-28 batch; the report retains papers listed in the Mathematics archive, preserving primary and cross-list arXiv categories. Eleven selected abstracts were checked on their arXiv abstract pages. The top three papers’ introductions/main-result statements were inspected in arXiv HTML; no proofs were independently checked.
-- **Inference:** arXiv does not supply an official trending or readership ranking. Selection and ordering use transparent signals: concrete stated results, cross-listing, linked/forthcoming proof artifacts, and Semantic Scholar citation/influential-citation totals as current snapshot totals. Since this batch is less than a day old, citation momentum is not a reliable popularity measure. Exact-title web searches for Euler, Hodge–Riemann, and random lifts surfaced arXiv records but no independent seminar/expert discussion in the results checked.
-- **Sources:** [Mathematics recent listing](https://arxiv.org/list/math/recent); the 11 linked arXiv abstract pages; arXiv Atom API metadata; [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.37653); arXiv HTML versions for 2610.37653, 2610.37639, and 2610.37650. The configured `web_extract` backend was unavailable in this run, so arXiv pages and Atom metadata were retrieved directly over HTTP.
+- **Window:** daily batch dated 2026-10-28 (start and end: 2026-10-28 to 2026-10-28); the current day, 2026-10-29, had no newer math batch in the listing, so this is the prior announcement batch. Snapshot: 2026-10-29T01:29:38Z.
+- **Coverage:** Traversed the complete arXiv Mathematics recent listing for the 28 October batch: 477 entries across the `math.*` archive and its listed cross-categories. The 11 ranked entries are a curated subset, not a representative sample by subfield volume.
+- **Metadata and abstracts:** Verified the selected arXiv abstract pages and queried the arXiv API for version, UTC submission/update timestamp, categories, and available comments. The first three papers’ introductions and main-result statements were inspected in arXiv HTML; no proof was independently checked.
+- **Ranking:** arXiv supplies no official trending chart. The ordering is inferred from checkable mathematical claims, cross-subfield listings, and connections within this batch; it is labeled “notable recent papers” because recent attention data is sparse. Citation counts, where available, would be current totals, not gains during the window.
+- **Attention checks and limitations:** Semantic Scholar citation metadata could not be obtained during this check, and web searches surfaced arXiv records or mirrors rather than independent expert/seminar discussion. This report makes no claim about most-read, most-downloaded, or measured popularity.
+- **Sources:** [arXiv mathematics recent listing](https://arxiv.org/list/math/recent); [arXiv API](https://export.arxiv.org/api/query); selected abstract pages linked in each heading; selected HTML full texts for 2610.37653, 2610.37659, and 2610.37650.

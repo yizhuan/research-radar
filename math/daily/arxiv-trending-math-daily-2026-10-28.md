@@ -146,7 +146,7 @@ The batch’s strongest signals are a new 2D Euler nonuniqueness construction an
 
 ## Method and sources
 
-- **Window:** daily batch dated 2026-10-28 (start and end: 2026-10-28 to 2026-10-28); the current day, 2026-10-29, had no newer math batch in the listing, so this is the prior announcement batch. Snapshot: 2026-10-29T01:29:38Z.
+- **Window:** daily batch dated 2026-10-28 (start and end: 2026-10-28 to 2026-10-28); the current day, 2026-10-29, had no newer math batch in the listing, so this is the prior announcement batch. Snapshot: 2026-10-29T17:38:29Z.
 - **Coverage:** Traversed the complete arXiv Mathematics recent listing for the 28 October batch: 477 entries across the `math.*` archive and its listed cross-categories. The 11 ranked entries are a curated subset, not a representative sample by subfield volume.
 - **Metadata and abstracts:** Verified the selected arXiv abstract pages and queried the arXiv API for version, UTC submission/update timestamp, categories, and available comments. The first three papers’ introductions and main-result statements were inspected in arXiv HTML; no proof was independently checked.
 - **Ranking:** arXiv supplies no official trending chart. The ordering is inferred from checkable mathematical claims, cross-subfield listings, and connections within this batch; it is labeled “notable recent papers” because recent attention data is sparse. Citation counts, where available, would be current totals, not gains during the window.

@@ -1,0 +1,444 @@
+{
+  "schema": "arxiv-trending-math/v1",
+  "category": "math.*",
+  "window": {
+    "type": "weekly",
+    "start": "2026-10-24",
+    "end": "2026-10-30",
+    "inclusive": true,
+    "timezone": "UTC"
+  },
+  "date": "2026-10-30",
+  "title": "Mathematics on arXiv — weekly notable papers (24–30 October 2026)",
+  "source_report": "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-10-30.md",
+  "entry_count": 10,
+  "entry_noun": "papers",
+  "snapshot_utc": "2026-10-30T02:42:35Z",
+  "global_caveat": "arXiv supplies no official trending chart; this ordering is inferred from claimed mathematical results, cross-listing, and sparse attention evidence. Citation totals are current totals, not gains during the window.",
+  "sections": [
+    {
+      "id": "paper-01",
+      "kind": "paper",
+      "title": "On a Conjecture of Fiedorowicz",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.38760",
+      "arxiv_id": "2610.38760",
+      "arxiv_version": "v1",
+      "published": "2026-10-28T19:40:57Z",
+      "updated": "2026-10-28T19:40:57Z",
+      "categories": [
+        "math.AT",
+        "math.GR",
+        "math.RA"
+      ],
+      "primary_category": "math.AT",
+      "authors": [
+        "Oren Ben-Bassat"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Algebra & number theory"
+      ],
+      "abstract": "The author proves that every finite simply connected CW complex is homotopy equivalent to the classifying space of a finite monoid, using a mapping-cone construction and giving a 1,795-element example for the complex projective plane.",
+      "claimed_result": "The author claims every finite simply connected CW complex has the homotopy type of the classifying space of an aperiodic finite monoid; the paper realizes mapping cones to construct such monoids. The introduction states the aperiodicity strengthening.",
+      "assumptions_and_setting": "The realized space is a finite, path-connected CW complex with trivial fundamental group; the constructed monoid is finite.",
+      "unique_caveat": "The theorem does not cover arbitrary non-simply-connected finite complexes; the paper notes that a finite monoid classifying space has finite fundamental group.",
+      "evidence_for_ranking": "The author states a resolution of Fiedorowicz’s conjecture, and the introduction says the construction uses aperiodic finite monoids; the paper spans algebraic topology, group theory, and rings/algebras.",
+      "announcement_type": "new submission",
+      "announcement_batch": null,
+      "comment": "19 pages",
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.38760",
+        "pdf": "https://arxiv.org/pdf/2610.38760v1",
+        "arxiv_doi": "10.48550/arXiv.2610.38760",
+        "semantic_scholar": null
+      }
+    },
+    {
+      "id": "paper-02",
+      "kind": "paper",
+      "title": "Primitive flag-transitive generalized quadrangles",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.38819",
+      "arxiv_id": "2610.38819",
+      "arxiv_version": "v1",
+      "published": "2026-10-28T20:15:15Z",
+      "updated": "2026-10-28T20:15:15Z",
+      "categories": [
+        "math.CO",
+        "math.GR"
+      ],
+      "primary_category": "math.CO",
+      "authors": [
+        "Timothy C. Burness",
+        "Tao Feng",
+        "Jianbing Lu"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Algebra & number theory"
+      ],
+      "abstract": "The authors resolve Kantor’s classification conjecture for finite thick generalized quadrangles when a flag-transitive automorphism group acts primitively on both points and lines, treating all almost simple groups of Lie type.",
+      "claimed_result": "The authors claim that Kantor’s conjecture holds for all generalized quadrangles in this setting, resolving the cases where the acting almost simple group has Lie-type socle of any Lie rank.",
+      "assumptions_and_setting": "The quadrangle is finite and thick; its flag-transitive group acts primitively on both the point set and line set.",
+      "unique_caveat": "This theorem covers the primitive point-and-line action case, not every flag-transitive action covered by the broadest formulation of Kantor’s conjecture.",
+      "evidence_for_ranking": "This is a claimed completion of the conjecture in the stated primitive-action case, bridging finite incidence geometry and group theory. The 97-page preprint states its scope explicitly.",
+      "announcement_type": "new submission",
+      "announcement_batch": null,
+      "comment": "97 pages",
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.38819",
+        "pdf": "https://arxiv.org/pdf/2610.38819v1",
+        "arxiv_doi": "10.48550/arXiv.2610.38819",
+        "semantic_scholar": null
+      }
+    },
+    {
+      "id": "paper-03",
+      "kind": "paper",
+      "title": "The Borisov--Nuer conjecture and root decompositions in even unimodular Lorentzian lattices",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.38414",
+      "arxiv_id": "2610.38414",
+      "arxiv_version": "v1",
+      "published": "2026-10-28T08:00:56Z",
+      "updated": "2026-10-28T08:00:56Z",
+      "categories": [
+        "math.NT",
+        "math.AG"
+      ],
+      "primary_category": "math.NT",
+      "authors": [
+        "Haowu Wang",
+        "Shaoyun Yi"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "The authors classify when every vector in the even unimodular Lorentzian lattices II_{8n+1,1} is a sum of two roots, settling the Borisov–Nuer conjecture and deriving an Ulrich-line-bundle consequence for unnodal Enriques surfaces.",
+      "claimed_result": "The authors prove that every vector of II_{8n+1,1} is a sum of two roots exactly for n=1 or n=2; they derive the stated Ulrich existence result for every very ample polarization on a complex unnodal Enriques surface.",
+      "assumptions_and_setting": "The lattice is even, unimodular, and of signature (8n+1,1), with n≥1; the geometric consequence assumes a complex unnodal Enriques surface and a very ample polarization.",
+      "unique_caveat": "For n≥3 universal representability fails; finer criteria for negative-norm vectors distinguish sufficiently large norms and specific lattice conditions rather than asserting universal representation.",
+      "evidence_for_ranking": "The authors claim to settle a named lattice conjecture and connect the classification to algebraic geometry; the abstract describes a theta-series method for root counts.",
+      "announcement_type": "new submission",
+      "announcement_batch": null,
+      "comment": "29 pages",
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.38414",
+        "pdf": "https://arxiv.org/pdf/2610.38414v1",
+        "arxiv_doi": "10.48550/arXiv.2610.38414",
+        "semantic_scholar": null
+      }
+    },
+    {
+      "id": "paper-04",
+      "kind": "paper",
+      "title": "Extended weak order in all rank three Coxeter groups",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.38849",
+      "arxiv_id": "2610.38849",
+      "arxiv_version": "v1",
+      "published": "2026-10-28T20:32:59Z",
+      "updated": "2026-10-28T20:32:59Z",
+      "categories": [
+        "math.CO",
+        "math.GR"
+      ],
+      "primary_category": "math.CO",
+      "authors": [
+        "Grant Barkley",
+        "Colin Defant",
+        "Patricia Hersh",
+        "Jon McCammond",
+        "Thomas McConville",
+        "David E Speyer"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Algebra & number theory"
+      ],
+      "abstract": "The authors prove that extended weak order is a lattice for every rank-three Coxeter group and deduce Dyer’s Conjecture A for these groups, using cleanliness of the associated Coxeter arrangements.",
+      "claimed_result": "The authors claim extended weak order is a lattice for every rank-three Coxeter group and that cover relations are single-root toggles, as asserted by Dyer’s Conjecture A.",
+      "assumptions_and_setting": "The result concerns Coxeter groups of rank three and their Coxeter arrangements; the arrangement property used is that every biclosed set is hyperplane-separated from its complement.",
+      "unique_caveat": "The theorem is rank-specific; it does not establish the corresponding lattice and cover-relation statements in higher rank.",
+      "evidence_for_ranking": "The abstract claims a result for all rank-three Coxeter groups and a linked conjecture consequence; the paper spans combinatorics and group theory.",
+      "announcement_type": "new submission",
+      "announcement_batch": null,
+      "comment": "28 pages, 13 figures",
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.38849",
+        "pdf": "https://arxiv.org/pdf/2610.38849v1",
+        "arxiv_doi": "10.48550/arXiv.2610.38849",
+        "semantic_scholar": null
+      }
+    },
+    {
+      "id": "paper-05",
+      "kind": "paper",
+      "title": "Sharp Bounds for Toral Eigenfunctions and Threefold Additive Energy on Circles",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.37423",
+      "arxiv_id": "2610.37423",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T15:36:50Z",
+      "updated": "2026-10-27T15:36:50Z",
+      "categories": [
+        "math.AP",
+        "math.CO",
+        "math.NT",
+        "math.SP"
+      ],
+      "primary_category": "math.AP",
+      "authors": [
+        "Guiyu Xie",
+        "Cheng Zhang"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The authors prove an optimal-order upper bound for threefold additive energy on lattice circles and a uniform weak L6 bound for normalized square-torus eigenfunctions, with consequences for arithmetic random-wave nodal lengths.",
+      "claimed_result": "For P_n={z∈Z²: |z|²=n}, the authors prove J_3(P_n)≤C|P_n|³; they also prove a uniform weak L6 estimate and uniform Lp bounds for every 1≤p<6.",
+      "assumptions_and_setting": "The arithmetic set is the integer lattice circle; the eigenfunctions are L²-normalized eigenfunctions on the square torus.",
+      "unique_caveat": "The stated endpoint is weak L6; the abstract does not claim a uniform strong L6 bound.",
+      "evidence_for_ranking": "Four mathematics categories connect PDE, combinatorics, number theory, and spectral theory; the authors claim an optimal additive-energy bound and Bourgain’s eigenfunction bounds for 1≤p<6.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-28",
+      "comment": null,
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.37423",
+        "pdf": "https://arxiv.org/pdf/2610.37423v1",
+        "arxiv_doi": "10.48550/arXiv.2610.37423",
+        "semantic_scholar": {
+          "citation_count": 0,
+          "influential_citation_count": 0,
+          "reference_count": 25
+        }
+      }
+    },
+    {
+      "id": "paper-06",
+      "kind": "paper",
+      "title": "Minimal acceleration and the topology of premonotonic cocycles",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.37479",
+      "arxiv_id": "2610.37479",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T16:07:08Z",
+      "updated": "2026-10-27T16:07:08Z",
+      "categories": [
+        "math.DS",
+        "math.SP"
+      ],
+      "primary_category": "math.DS",
+      "authors": [
+        "Xu Xia",
+        "Jiahao Xu"
+      ],
+      "themes": [
+        "Dynamical systems & spectral theory"
+      ],
+      "abstract": "The authors answer Avila’s acceleration question for real-analytic SL(2,R) cocycles over every irrational circle rotation, relating the lower bound by topological degree to premonotonicity and proving path-connectedness of the nonzero-degree premonotonic locus.",
+      "claimed_result": "For every irrational frequency, the authors affirm the acceleration lower bound by the absolute topological degree and characterize equality at nonzero degree by premonotonicity; they also prove path-connectedness of the stated locus.",
+      "assumptions_and_setting": "The objects are real-analytic SL(2,R) cocycles over irrational rotations; the additional characterization of uniform hyperbolicity is discussed in the positive Lyapunov exponent regime.",
+      "unique_caveat": "The conclusions concern this one-frequency analytic cocycle setting; the additional characterization in the positive Lyapunov exponent regime is not a statement about all cocycles or spectral models.",
+      "evidence_for_ranking": "The paper states an affirmative answer to a named question without arithmetic restrictions and links dynamical and spectral theory; its path-connectedness result adds a concrete structural consequence.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-28",
+      "comment": null,
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.37479",
+        "pdf": "https://arxiv.org/pdf/2610.37479v1",
+        "arxiv_doi": "10.48550/arXiv.2610.37479",
+        "semantic_scholar": {
+          "citation_count": 0,
+          "influential_citation_count": 0,
+          "reference_count": 18
+        }
+      }
+    },
+    {
+      "id": "paper-07",
+      "kind": "paper",
+      "title": "Local Law and Eigenvector Delocalization for Random Lifts",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2610.37463",
+      "arxiv_id": "2610.37463",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T16:00:41Z",
+      "updated": "2026-10-27T16:00:41Z",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.CO",
+        "math.SP"
+      ],
+      "primary_category": "math.PR",
+      "authors": [
+        "Jiaoyang Huang",
+        "Ruizhe Xu"
+      ],
+      "themes": [
+        "Probability & statistics",
+        "Combinatorics & discrete mathematics",
+        "Mathematical physics"
+      ],
+      "abstract": "For random lifts of a fixed finite graph, the authors prove high-probability Green-function estimates down to spectral scales away from singular energies, implying a logarithmic-scale sup-norm bound for eigenvectors in that region.",
+      "claimed_result": "For random N-lifts, the authors claim entrywise Green-function estimates at scales (log N)^C/N and, as a consequence, ||u||∞≤(log N)^C/√N with high probability for the specified eigenvectors.",
+      "assumptions_and_setting": "The base is a fixed finite connected simple graph of minimum degree at least three; eigenvalues must remain a fixed positive distance from singular energies of the universal-cover spectrum.",
+      "unique_caveat": "Singular energies are excluded, and the stated base-graph hypothesis does not cover every finite graph.",
+      "evidence_for_ranking": "Four categories tie probability, combinatorics, spectral theory, and mathematical physics; the abstract gives a quantitative local law and concrete delocalization consequence.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-28",
+      "comment": "70 pages; 9 figures",
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.37463",
+        "pdf": "https://arxiv.org/pdf/2610.37463v1",
+        "arxiv_doi": "10.48550/arXiv.2610.37463",
+        "semantic_scholar": {
+          "citation_count": 0,
+          "influential_citation_count": 0,
+          "reference_count": 0
+        }
+      }
+    },
+    {
+      "id": "paper-08",
+      "kind": "paper",
+      "title": "Sharp Stability of Brenier Potentials and its Link to Poincaré Inequalities",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2610.37659",
+      "arxiv_id": "2610.37659",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T17:59:00Z",
+      "updated": "2026-10-27T17:59:00Z",
+      "categories": [
+        "math.FA",
+        "math.AP",
+        "math.MG",
+        "math.PR"
+      ],
+      "primary_category": "math.FA",
+      "authors": [
+        "Cyril Letrouit",
+        "Tudor Manole"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Probability & statistics",
+        "Optimization & control"
+      ],
+      "abstract": "The authors prove a functional inequality stronger than Poincaré for uniformly log-concave measures, yielding sharp stability of quadratic-transport Brenier potentials and a Gaussian matrix-distance comparison.",
+      "claimed_result": "For uniformly log-concave measures, the authors establish a variance bound for differences of convex functions that gives a sharp stability estimate for Brenier potentials as the target varies; for Gaussians, they recover equivalence of the Bures–Wasserstein and square-root Frobenius distances.",
+      "assumptions_and_setting": "The source measure is fixed and uniformly log-concave; transport is quadratic and the result concerns variation of the target.",
+      "unique_caveat": "The stated theorem relies on uniform log-concavity and concerns quadratic optimal transport; the abstract does not assert the same estimate for arbitrary source measures or costs.",
+      "evidence_for_ranking": "Four mathematics categories and the stated link between functional inequalities, optimal transport, and probability provide corroborating scope signals.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-28",
+      "comment": null,
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.37659",
+        "pdf": "https://arxiv.org/pdf/2610.37659v1",
+        "arxiv_doi": "10.48550/arXiv.2610.37659",
+        "semantic_scholar": {
+          "citation_count": 0,
+          "influential_citation_count": 0,
+          "reference_count": 58
+        }
+      }
+    },
+    {
+      "id": "paper-09",
+      "kind": "paper",
+      "title": "A logarithmic error term for subset sums of zero-sum-free sets",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2610.38373",
+      "arxiv_id": "2610.38373",
+      "arxiv_version": "v1",
+      "published": "2026-10-28T07:12:26Z",
+      "updated": "2026-10-28T07:12:26Z",
+      "categories": [
+        "math.CO",
+        "math.NT"
+      ],
+      "primary_category": "math.CO",
+      "authors": [
+        "Chao Liu"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Algebra & number theory"
+      ],
+      "abstract": "The author proves a near-quadratic lower bound, with logarithmic error, on the number of distinct nonempty subset sums of a zero-sum-free set in any finite abelian group, obtaining the optimal leading coefficient and an Olson-constant consequence.",
+      "claimed_result": "The author proves f(k)≥k²/2−13k log(k+1)−116k, hence f(k)=k²/2+O(k log k), and derives Ol(G)≤√(2|G|)+O(log|G|) for every finite abelian group.",
+      "assumptions_and_setting": "The set has k elements and is zero-sum-free; the lower bound ranges over all finite abelian groups, with no order or stabilizer restriction.",
+      "unique_caveat": "The asymptotic error remains O(k log k); this is not an exact formula for each group or k.",
+      "evidence_for_ranking": "The paper gives a uniform quantitative improvement across finite abelian groups and links additive combinatorics with number theory.",
+      "announcement_type": "new submission",
+      "announcement_batch": null,
+      "comment": null,
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.38373",
+        "pdf": "https://arxiv.org/pdf/2610.38373v1",
+        "arxiv_doi": "10.48550/arXiv.2610.38373",
+        "semantic_scholar": {
+          "citation_count": 0,
+          "influential_citation_count": 0,
+          "reference_count": 14
+        }
+      }
+    },
+    {
+      "id": "paper-10",
+      "kind": "paper",
+      "title": "No Connectedness Lemma for Alexandrov spaces",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2610.37476",
+      "arxiv_id": "2610.37476",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T16:05:52Z",
+      "updated": "2026-10-27T16:05:52Z",
+      "categories": [
+        "math.MG",
+        "math.DG"
+      ],
+      "primary_category": "math.MG",
+      "authors": [
+        "Jan Nienhaus",
+        "Dennis Wulle"
+      ],
+      "themes": [
+        "Geometry & topology"
+      ],
+      "abstract": "The authors construct Alexandrov-space counterexamples to both the ordinary and dual forms of Wilking’s Connectedness Lemma, answering a question posed in 2007.",
+      "claimed_result": "The authors exhibit counterexamples to the ordinary and dual Connectedness Lemma within the class of Alexandrov spaces.",
+      "assumptions_and_setting": "The counterexamples lie in Alexandrov spaces; the paper follows prior extensions of the lemma from positively curved manifolds to orbifolds.",
+      "unique_caveat": "The counterexamples delimit the Alexandrov-space setting and do not by themselves refute the lemma for positively curved smooth manifolds or orbifolds.",
+      "evidence_for_ranking": "The six-page note claims counterexamples to both formulations and an answer to a long-standing question, linking metric and differential geometry.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-28",
+      "comment": "6 pages",
+      "journal_ref": "Not available from the sources checked",
+      "refs": {
+        "abstract": "https://arxiv.org/abs/2610.37476",
+        "pdf": "https://arxiv.org/pdf/2610.37476v1",
+        "arxiv_doi": "10.48550/arXiv.2610.37476",
+        "semantic_scholar": {
+          "citation_count": 0,
+          "influential_citation_count": 0,
+          "reference_count": 11
+        }
+      }
+    }
+  ]
+}

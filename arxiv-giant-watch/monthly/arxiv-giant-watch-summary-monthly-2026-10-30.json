@@ -1,0 +1,283 @@
+{
+  "schema": "arxiv-giant-watch-report/v1",
+  "category": "arxiv-giant-watch",
+  "window": "monthly",
+  "date": "2026-10-30",
+  "title": "arXiv Giant Watch - Monthly - 2026-10-30",
+  "source_report": "/home/yizhuan/.research/arxiv-giant-watch/monthly/arxiv-giant-watch-summary-monthly-2026-10-30.md",
+  "entry_count": 5,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "This month's notable papers span agentic geospatial reasoning, lab-in-the-loop molecular design, hardware-diverse AI training, and verification-driven or streaming agentic systems. Google, Meta, and Alibaba/Qwen each contribute work with verified affiliations."
+    },
+    {
+      "id": "01-paper",
+      "kind": "paper",
+      "rank": 1,
+      "title": "Google Earth AI Geospatial Reasoning Agent: Capabilities and a Systematic Evaluation",
+      "arxiv_id": "2610.15750",
+      "authors": [
+        "Noam Slonim",
+        "Aviv Slobodkin",
+        "Gil Fidel",
+        "Gal Moshitch",
+        "Mimi Sun",
+        "Lily Mihalkova",
+        "Joydeep Paul",
+        "Per Bjornsson",
+        "Sydney Lin",
+        "Jamie McPike",
+        "Samapriya Roy",
+        "Utkarsh Patel",
+        "Gia Jung",
+        "Zachary Luna",
+        "Allison Berman",
+        "William Cai",
+        "Xiao Wu",
+        "Mohit Agarwal",
+        "Mandar Sharma",
+        "Aliza Hoffman",
+        "Mark Young",
+        "Rama Pasumarthi",
+        "Roy Lee",
+        "Ruth Alcantara",
+        "Luke Barrington",
+        "Aaron Bell",
+        "Reuven Sayag",
+        "Avinatan Hassidim",
+        "Yossi Matias",
+        "Tyler McHenry",
+        "Ronald Ho",
+        "Christopher Haire",
+        "Oliver Guinan",
+        "Niv Efron",
+        "Tim Thelin",
+        "Gautam Prasad",
+        "Shravya Shetty"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google Research",
+        "Google Geo"
+      ],
+      "problem": "Answering complex geospatial questions requires combining data, foundation models, tools, and planning, but systematic evaluation of such agents is limited.",
+      "method": "Introduces GeoExpertQueries and GeoKTools and compares a standalone LLM, basic tools, GRA tools without upfront planning, and full GRA using Gemini 3.1 Pro and Gemini 3.8 Flash.",
+      "key_result": "GRA performs well on templated and open-ended problems; domain tools and skills provide the largest gain, and planning further improves open-ended performance enough for Flash to match or exceed Pro at lower cost.",
+      "caveat": "Benchmark limitations include evolving ground truth and tool/data access differences.",
+      "why_it_matters": "Provides a systematic evaluation framework and shows that tools, skills, and planning can let a cheaper model match or exceed a stronger one on open-ended geospatial tasks.",
+      "refs": [
+        "2610.15750"
+      ]
+    },
+    {
+      "id": "02-paper",
+      "kind": "paper",
+      "rank": 2,
+      "title": "Aptamers as a sandbox for lab-in-the-loop agentic molecular discovery",
+      "arxiv_id": "2610.24806",
+      "authors": [
+        "Zachary Cutts",
+        "John Coller",
+        "Rachel Chen",
+        "Hua Tang",
+        "Mathias Bellaiche",
+        "Ryder Easterlin",
+        "Dina Zverinski",
+        "Petar Sirkovic",
+        "Avinatan Hassidim",
+        "Yossi Matias",
+        "Pooja Rao",
+        "Annalisa Pawlosky"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google Research",
+        "Google Cloud",
+        "Google DeepMind"
+      ],
+      "problem": "Tests whether LLM-based agents can improve biomolecular design through iterative wet-lab feedback.",
+      "method": "Three design-test-improve cycles for DNA aptamer binders to alpha-thrombin and myoglobin, with about 4,400 sequenced constructs.",
+      "key_result": "Bead-corrected on-target hit rates rose to 42.1% and 33.5% in round three; agents diagnosed cross-reactivity and changed strategies, restoring myoglobin specificity to 72.4%; orthogonal titrations agreed with pooled enrichment (Pearson r=0.90).",
+      "caveat": "Strictly de novo scaffolds remained low-micromolar binders, while preliminary nanomolar affinities involved literature-derived motifs; empirical lab feedback was more useful than computational proxies in this setting.",
+      "why_it_matters": "Demonstrates a closed-loop agentic discovery workflow where wet-lab feedback drives strategy changes, while carefully separating de novo from literature-derived performance.",
+      "refs": [
+        "2610.24806"
+      ]
+    },
+    {
+      "id": "03-paper",
+      "kind": "paper",
+      "rank": 3,
+      "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
+      "arxiv_id": "2610.22230",
+      "authors": [
+        "Haoyu Zhang",
+        "Arshad Rahman",
+        "Adnan Aziz",
+        "Ajith Prabhudev",
+        "Amin Farmahini",
+        "Ben Rhoads",
+        "Benson Ma",
+        "Brian Shi",
+        "Cen Zhao",
+        "CK Luk",
+        "Dingming Wu",
+        "Emad El-Haraty",
+        "Eric Chen",
+        "Frank Li",
+        "Gary Huang",
+        "Gefei Zuo",
+        "Haoran Zhang",
+        "Hiwot Kassa",
+        "Hongyi Zeng",
+        "Jack Taylor",
+        "Jeremy Hadidjojo",
+        "John Donati",
+        "Jonathan Sheffield",
+        "Julio Machado Silva",
+        "Karthik Ganesan",
+        "Kent Russell",
+        "KR Kishore",
+        "Lei Tian",
+        "Liu Ke",
+        "Muhammad Osama",
+        "Peng Chen",
+        "Rakesh Hemnani",
+        "Ryan Swann",
+        "Saleel Kudchadker",
+        "Shankar Yanamandram",
+        "Shobhit Kanaujia",
+        "Shucai Xiao",
+        "Srinath Bayareddy",
+        "Srinivas Vaidyanathan",
+        "Sudharssun Subramanian",
+        "Supadchaya Puangpontip",
+        "Taylor Robie",
+        "Tianhao Huang",
+        "Tyler Hart",
+        "Viswesh Sankaran",
+        "Weijun Jiang",
+        "Wenkai Du",
+        "Xiaodong Wang",
+        "Xiaohu Guo",
+        "Yao Rong",
+        "Yinbin Ma",
+        "Yue Dong",
+        "Yuzhen Huang",
+        "Yvonne Liu",
+        "Zhan Shu",
+        "Dan Rabinovitsj",
+        "Ajit Mathews",
+        "Chunqiang Tang"
+      ],
+      "organizations": [
+        "Meta"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Meta"
+      ],
+      "problem": "Studies production training of recommendation models on AMD MI350X versus NVIDIA B200.",
+      "method": "Combines hardware-model co-design, Origami analytical kernel selection, and agentic workflows for kernel optimization and portability.",
+      "key_result": "Across production workloads MI350X reaches a geometric-mean throughput of 101% of the B200 baseline; compared with a directly ported baseline, the methods deliver up to 1.5x end-to-end throughput; Origami predicts optimal kernels with 93% accuracy.",
+      "caveat": "Remaining GEMM performance gaps and a focus on DLRMs rather than a full LLM-specific study.",
+      "why_it_matters": "Shows end-to-end co-design can make AMD GPUs competitive with NVIDIA for production recommendation-model training, while flagging remaining gaps and scope limits.",
+      "refs": [
+        "2610.22230"
+      ]
+    },
+    {
+      "id": "04-paper",
+      "kind": "paper",
+      "rank": 4,
+      "title": "ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation",
+      "arxiv_id": "2610.32120",
+      "authors": [
+        "Shuo Han",
+        "Zhilin Wang",
+        "Peng Ling",
+        "Wenjia Gong",
+        "Yang Liu",
+        "Guanjun Jiang",
+        "Yukun Cao",
+        "Xike Xie"
+      ],
+      "organizations": [
+        "Qwen"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Qwen Business Unit of Alibaba",
+        "Alibaba Token Hub"
+      ],
+      "problem": "Improving agentic image generation without updating the underlying generator.",
+      "method": "Keeps the generator frozen and combines five-dimensional verification and repair, a cross-task experience library admitted only after paired A/B validation, and offline judge updating with SFT and GRPO.",
+      "key_result": "On ImageReq-Bench (961 requests) reaches 65.66% Checklist Strict Accuracy, 9.28 percentage points above the strongest baseline; on MindBench reaches 52.6%, 10.2 points above the strongest baseline.",
+      "caveat": "Evaluation depends on checklist/judge quality and the benchmark setup, and the generator itself is not updated.",
+      "why_it_matters": "Shows verification-driven self-improvement can raise agentic image-generation accuracy while keeping the generator frozen, with explicit dependence on judge quality.",
+      "refs": [
+        "2610.32120"
+      ]
+    },
+    {
+      "id": "05-paper",
+      "kind": "paper",
+      "rank": 5,
+      "title": "SyncPro: Synchronous Reasoning and Responding for Proactive Streaming Video Understanding",
+      "arxiv_id": "2610.32132",
+      "authors": [
+        "Xueyun Tian",
+        "Bingbing Xu",
+        "Jiaming Liu",
+        "Jinpeng Yu",
+        "Yang Shi",
+        "Yu Zhao",
+        "Ruihua Huang",
+        "Yuanzhuo Wang",
+        "Huawei Shen"
+      ],
+      "organizations": [
+        "Qwen"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Qwen Business Unit of Alibaba"
+      ],
+      "problem": "Proactive streaming video understanding requires reasoning and responding to proceed concurrently.",
+      "method": "Dual-stream system with separate inner reasoning and user-facing response branches sharing causal history and activating independently; trained on 189K dual-stream examples using supervised fine-tuning and trajectory-level reinforcement learning.",
+      "key_result": "On StreamingBench achieves 41.2% accuracy within a two-second response window, 3.2 points above the strongest compared baseline; also reports gains on OVO-Bench and ProactiveVideoQA.",
+      "caveat": "Benchmark-specific evaluation and code not yet released at submission.",
+      "why_it_matters": "Introduces a concurrent reasoning-and-response architecture for proactive streaming video, with gains reported across multiple streaming benchmarks.",
+      "refs": [
+        "2610.32132"
+      ]
+    },
+    {
+      "id": "80-research-themes",
+      "kind": "themes",
+      "title": "Research Themes",
+      "content": [
+        "Agentic systems with verification and iterative feedback loops",
+        "Tool use and planning as drivers of agent performance",
+        "Closed-loop integration of agents with external environments (geospatial tools, wet labs, hardware kernels)",
+        "Benchmark-specific evaluation with explicit caveats about ground truth and judge quality"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The selected papers center on agentic systems that improve through verification, planning, and external feedback rather than model updates alone. Google, Meta, and Alibaba/Qwen contributions all carry verified affiliations, and each paper states its own evaluation caveats. No temporal comparison is supported by the supplied metadata, so no portfolio shift is claimed."
+    }
+  ]
+}

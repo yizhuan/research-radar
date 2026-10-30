@@ -1,0 +1,562 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "monthly",
+  "date": "2026-10-30",
+  "title": "Monthly arXiv biology & biomedicine — October 2026",
+  "source_report": "/home/yizhuan/.research/bio/monthly/arxiv-trending-bio-monthly-2026-10-30.md",
+  "entry_count": 11,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart; this relevance-ranked report reflects an incomplete biomedical corpus and does not measure readership or research validity. Most clinical and experimental biology preprints are outside arXiv, including bioRxiv and medRxiv.",
+  "date_range_start": "2026-10-01",
+  "date_range_end": "2026-10-30",
+  "snapshot_utc": "2026-10-30T03:31:50Z",
+  "announcement_batch_latest": "2026-10-29",
+  "category_query": "cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph",
+  "ranking_method": "Topical relevance and reported evidence type/category breadth; attention evidence sparse, so not a popularity ranking. Semantic Scholar current citationCount 4 for STRAND only; total, not October gain.",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "rank": null,
+      "url": null,
+      "text": "Window: 1–30 October 2026 UTC; snapshot 2026-10-30T03:31:50Z. The latest candidate update present in arXiv’s API index was 29 October. Eleven notable papers are selected. The dominant pattern is computational modeling across transcriptomes, genomic data, RNA/protein structure and molecular dynamics, alongside a smaller set of papers with direct antibody or spatial-proteomics experiments. Agenda: antibody discovery, tumor spatial proteomics, then single-cell and molecular-modeling methods. arXiv has no official trending chart; this is a relevance-ranked snapshot of an incomplete biomedical corpus, not a measure of readership. Most clinical and experimental biology preprints appear outside arXiv, including bioRxiv and medRxiv."
+    },
+    {
+      "id": "01-multimodal-reasoning-for-broadly-neutralizing-antibody-discovery-from-",
+      "kind": "paper",
+      "title": "Multimodal reasoning for broadly neutralizing antibody discovery from label-free human B cell repertoires across virus families",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.03160",
+      "arxiv_id": "2610.03160",
+      "arxiv_version": "v1",
+      "published": "2026-10-02T11:35:34Z",
+      "first_submitted": "2026-10-02T11:35:34Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.CE",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Hantao Lou",
+        "Jianqing Zheng",
+        "Can Yue",
+        "Meihan Zhang",
+        "Yuanchao Bao",
+        "Yu Chen",
+        "Mengting Huang",
+        "Yupeng Yang",
+        "Qianyu Pan",
+        "Nana Fu",
+        "Yansong Shi",
+        "Hongli Li",
+        "Yangyang Chai",
+        "Ruyi Chen",
+        "Wansheng Li",
+        "Zhu Liang",
+        "Rongmei Yao",
+        "Yuanhan Mo",
+        "Lei Wang",
+        "Chunmei Wang",
+        "Yun Quan",
+        "Qiong Zhang",
+        "Xiangxi Wang",
+        "Xuetao Cao"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine",
+        "Omics & single-cell methods"
+      ],
+      "abstract": "Discovering broadly neutralizing antibodies (bnAbs) from human natural immune repertoires remains a fundamental challenge in immunology, hindered by: the extreme rarity of bnAb, incomplete understanding of their cellular origins across pathogens, and the inability of existing computational tools to generalize across emerging viral threats. Here we present ImmuneAgent, a closed-loop AI system that integrates multimodal reasoning with continual meta-learning and wet-lab feedback to overcome these barriers. Applied to screen the natural BCR repertoires from vaccinated or infected cohorts, the system achieves a ~55% neutralization antibody discovery rate (60 of 110 cloned candidates) and a ~11% bnAb yield (12 of 110), substantially outperforming a state-of-the-art sequence-based neutralization predictor or cofolding models evaluated at the same cloning budget. Five ImmuneAgent-discovered antibodies conferred 100% in vivo protection against lethal influenza challenge, comparable to the clinical-stage therapeutic MEDI8852. The system recovered the cellular and structural determinants of bnAb activity and identified FCRL5+CD27+ atypical memory B cells as a conserved bnAb reservoir and hydrophobic interface enrichment as a cross-viral structural signature, which generalized to unseen antigens, discovering human metapneumovirus (hMPV) cross-neutralizing and human papillomavirus (HPV)-neutralizing antibodies without antigen-specific sorting. These results validate that ImmuneAgent is a generalizable framework for rapid therapeutic antibody discovery against emerging viral threats.",
+      "abstract_summary": "The authors describe a closed-loop AI system for screening unsorted human B-cell repertoires and report antibody discovery assays plus protective activity for selected antibodies in a mouse influenza challenge.",
+      "claimed_contribution": "The authors claim ImmuneAgent combines repertoire, sequence, structure and experimental feedback to prioritize broadly neutralizing antibodies; among 110 cloned candidates, they report 60 neutralizing antibodies and 12 broadly neutralizing antibodies, with five tested antibodies protecting mice in a lethal influenza challenge.",
+      "unique_caveat": "This is preclinical evidence: 110 cloned candidates and five antibodies in the mouse challenge, not a human trial; the authors state the experiment was not powered to establish equivalence to the comparator.",
+      "evidence_for_ranking": "Direct immunology relevance, cross-listed in q-bio.CB and AI/computation, and the abstract reports cloning/neutralization assays plus an animal challenge; ranked for relevance and evidence type, not popularity.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-02",
+      "comment": "",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.03160",
+        "https://arxiv.org/pdf/2610.03160"
+      ],
+      "latest_revision": "2026-10-02T11:35:34Z",
+      "doi": "10.48550/arXiv.2610.03160"
+    },
+    {
+      "id": "02-ai-guided-deep-visual-proteomics-reveals-recurrence-associated-morpho-",
+      "kind": "paper",
+      "title": "AI-guided deep visual proteomics reveals recurrence-associated morpho-molecular signatures within triple-negative breast cancers",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2608.03145",
+      "arxiv_id": "2608.03145",
+      "arxiv_version": "v3",
+      "published": "2026-10-27T06:22:13Z",
+      "first_submitted": "2026-08-04T05:19:35Z",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Yesung Cho",
+        "Ji Hwan Park",
+        "Chan Il Kim",
+        "Hyewon Kim",
+        "Honglan Li",
+        "Yumin Lee",
+        "Geongyu Lee",
+        "Sujeong Hong",
+        "Seong Min Park",
+        "Yoonyoung Lee",
+        "Hee Sool Rho",
+        "Sumin Lee",
+        "Amos Chungwon Lee",
+        "Changhwan Lee",
+        "Hwanyoung Shim",
+        "Hyunwook Kim",
+        "Hyeji Shin",
+        "Sanha Park",
+        "Jihoon Yu",
+        "Yoon Hee Shin",
+        "Sooheon Kim",
+        "Hyunjin Park",
+        "Seung Min Park",
+        "Sangwan Kim",
+        "Yujung Kim",
+        "Jinwon Jeong",
+        "Sung-Im Do",
+        "Eun-Young Kim",
+        "Dongmyung Shin",
+        "Ingu Do",
+        "Jongbae Park"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine",
+        "Omics & single-cell methods"
+      ],
+      "abstract": "Outcome informed AI can localize prognostically relevant regions in digital pathology, but directly characterizing the molecular basis of these spatial predictions remains challenging. Here, we developed an outcome informed, AI-guided deep visual proteomics framework that uses recurrence-risk heatmaps to guide physical tissue sampling and mass spectrometry-based spatial proteomics in triple-negative breast cancer (TNBC). In 156 patients, high- and low-risk regions coexisted within the tumor compartment and showed distinct nuclear and architectural features, indicating intratumoral variation beyond broad tissue identity. Guided by these maps, we physically isolated and profiled 46 AI-defined high- and low-risk tumor regions from two recurrent cases. High-risk regions were enriched for mitotic programs, whereas low-risk regions showed immune- and antigen-presentation-associated programs. We used proteins that consistently differed between high- and low-risk regions to construct a 13-protein composite. The composite showed a significant effect to discriminate highly recurrent patients from less recurrent patients in an expanded TNBC cohort, while the corresponding transcript-based score showed a similar trend in METABRIC. Integrating the protein composite with the H&E-derived risk score improved out-of-bag discrimination, increasing the C-index from 0.679 to 0.739 and the 5-year time-dependent AUC from 0.675 to 0.770. These findings establish outcome-informed H&E risk maps as spatial guides for molecular discovery, extending prognostic AI from prediction toward direct biological interrogation of recurrence-associated tissue states.",
+      "abstract_summary": "The authors use recurrence-risk heatmaps to guide spatial proteomics in triple-negative breast cancer and report molecular differences between AI-defined high- and low-risk tumor regions.",
+      "claimed_contribution": "The authors report mass-spectrometry profiling of 46 AI-selected regions from two recurrent cases and derive a 13-protein composite; in an expanded TNBC cohort, combining it with the H&E score raises out-of-bag C-index from 0.679 to 0.739 and 5-year time-dependent AUC from 0.675 to 0.770.",
+      "unique_caveat": "The spatial discovery set comprised only two selected recurrence cases; the authors call the regional programs recurrence-associated rather than causal and note that independent TNBC cohorts with more recurrence events are needed.",
+      "evidence_for_ranking": "Substantive revisions v2 (23 Oct) and v3 (27 Oct) within the window, direct protein-level tissue measurements, and a larger patient-level evaluation; q-bio.QM cross-list.",
+      "announcement_type": "revision",
+      "announcement_batch": "2026-10-27",
+      "comment": "Triple-negative breast cancer (TNBC), Recurrence, Digital pathology, Artificial intelligence, Spatial proteomics, Tumor microenvironment",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2608.03145",
+        "https://arxiv.org/pdf/2608.03145"
+      ],
+      "latest_revision": "2026-10-27T06:22:13Z",
+      "doi": "10.48550/arXiv.2608.03145"
+    },
+    {
+      "id": "03-panoramic-modelling-of-single-cell-transcriptomes-at-scale-with-cellne",
+      "kind": "paper",
+      "title": "Panoramic modelling of single-cell transcriptomes at scale with CellNet",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.21943",
+      "arxiv_id": "2610.21943",
+      "arxiv_version": "v1",
+      "published": "2026-10-15T14:17:14Z",
+      "first_submitted": "2026-10-15T14:17:14Z",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Xiaoqing Lian",
+        "Pei Liu",
+        "Jiahui Tan",
+        "Luoda Tan",
+        "Chaoyi Li",
+        "Quan Zou",
+        "Chen Lin",
+        "Xiangxiang Zeng"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Comprehensively characterizing cellular diversity is critical for understanding tissue development, identifying disease-associated populations and investigating gene programmes linked to specialized functions. Advances in single-cell profiling reveal additional cell-specific transcripts and molecular associations, yet many foundation models represent only a restricted portion of this increasingly rich molecular information. Here we present CellNet, which enables panoramic modelling of single-cell transcriptomes by integrating DNA-derived gene identities and measured RNA expression in a shared image representation. Pretrained on 231 million cell profiles spanning 40 species, CellNet improves rare-population and condition-associated state recognition in evaluated cohorts while retaining competitive general cell representations. It predicts withheld coding-gene expression and selected non-coding targets in total-RNA data, and recovers lineage-specific expression patterns in spatial measurements. Prediction also extends across species, including to targets without expression-pretraining exposure. Its gene representations retrieve known non-coding modules and developmental or neural programmes, including from sparsely detected RNA queries. Together, these results establish CellNet as a scalable framework for interpreting cellular diversity through increasingly comprehensive transcriptomic measurements.",
+      "abstract_summary": "CellNet represents single-cell transcriptomes using DNA-derived gene identities and expression, with the authors reporting pretraining on 231 million profiles across 40 species and evaluations of cell-state and gene-expression prediction.",
+      "claimed_contribution": "The authors claim the image-based model supports broader coding and non-coding RNA coverage; reported evaluations include rare-cell/state recognition, withheld-gene prediction, cross-species transfer and retrieval of known molecular modules.",
+      "unique_caveat": "The paper is computational; performance varies for sparsely detected non-coding RNAs, and its discussion says inferred gene associations need independent functional validation.",
+      "evidence_for_ranking": "Core q-bio.GN fit and unusually broad transcriptomic resource (231 million profiles, 40 species); selected for scope and evaluated breadth, not for measured readership.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-15",
+      "comment": "",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.21943",
+        "https://arxiv.org/html/2610.21943",
+        "https://arxiv.org/pdf/2610.21943"
+      ],
+      "latest_revision": "2026-10-15T14:17:14Z",
+      "doi": "10.48550/arXiv.2610.21943"
+    },
+    {
+      "id": "04-cohort-effects-not-treatment-response-dominate-public-immunotherapy-co",
+      "kind": "paper",
+      "title": "Cohort Effects, Not Treatment Response, Dominate Public Immunotherapy Cohorts: Evidence from Microbiome and Tumor Genomic Data",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.33010",
+      "arxiv_id": "2610.33010",
+      "arxiv_version": "v1",
+      "published": "2026-10-08T01:32:17Z",
+      "first_submitted": "2026-10-08T01:32:17Z",
+      "categories": [
+        "q-bio.QM",
+        "q-bio.GN",
+        "stat.AP"
+      ],
+      "authors": [
+        "Amey Garg"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Omics & single-cell methods",
+        "Quantitative methods"
+      ],
+      "abstract": "Researchers often pool public gut microbiome datasets from immunotherapy studies to get around small sample sizes, assuming that adding cohorts adds statistical power faster than it adds differences between studies. We test that assumption. We processed four public shotgun metagenomic cohorts of patients receiving immune checkpoint blockade through one pipeline and pooled them step by step, from 39 to 283 patients. Because the PERMANOVA effect size R^2 is above zero even when there is no real effect, we compared every result with its exact chance expectation. Measured as raw variance explained, cohort membership accounted for 8 to 27 times more variance than treatment response, although much of that ratio comes from sample size alone. At every pooling step, treatment response explained no more variance than chance (within 0.2 percentage points) and was never significant, while cohort membership explained 6.0 to 9.5 percentage points beyond chance (p = 0.001 each time). Classification stayed at chance across three model types, none of six leak-free batch-correction strategies recovered signal, and no genus reached significance in a random-effects meta-analysis. The largest single cohort (n = 165) was also non-significant, although simulation shows it had at least 90% power to detect an effect at its own 95% upper bound; within it, recruiting site alone explained 7.0 percentage points beyond chance. In three tumor genomic cohorts (n = 223), a small but real response effect sat next to a cohort effect about eighteen times larger, so the problem is not specific to microbiome data. We release batch_detector, an open tool that reports chance-corrected cohort and response effects before pooling, and test it on an independent colorectal cancer meta-analysis.",
+      "abstract_summary": "The authors test pooled immunotherapy microbiome and tumor-genomic cohorts and report that cohort/site differences can exceed treatment-response signals in these public datasets.",
+      "claimed_contribution": "Across four public microbiome cohorts (39–283 patients), the authors report response effects at chance level while cohort effects remain; in three tumor-genomic cohorts (n=223), they report a small response signal beside a much larger cohort effect, and provide a chance-correction tool.",
+      "unique_caveat": "The negative microbiome result applies to the four analyzed cohorts and their response definitions; the authors note that other public cohorts were not analyzed, so it does not establish that microbiome-response associations are absent in general.",
+      "evidence_for_ranking": "Cross-listed in q-bio.GN and q-bio.QM; arXiv comment says an extended version was accepted to the IEEE BIBM 2026 Workshop Proceedings; code and a Zenodo record are linked.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-08",
+      "comment": "14 pages, 7 figures, 13 tables. Extended version of a paper accepted to the IEEE BIBM 2026 Workshop Proceedings. Code: https://github.com/ames943/batch_detector",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.33010",
+        "https://github.com/ames943/batch_detector",
+        "https://doi.org/10.5281/zenodo.23484819"
+      ],
+      "latest_revision": "2026-10-08T01:32:17Z",
+      "doi": "10.48550/arXiv.2610.33010"
+    },
+    {
+      "id": "05-strand-sequence-conditioned-transport-for-single-cell-perturbations",
+      "kind": "paper",
+      "title": "STRAND: Sequence-Conditioned Transport for Single-Cell Perturbations",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2602.10156",
+      "arxiv_id": "2602.10156",
+      "arxiv_version": "v2",
+      "published": "2026-10-27T17:50:07Z",
+      "first_submitted": "2026-02-10T00:57:38Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.LG",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Boyang Fu",
+        "Sameer Gabbita",
+        "George Dasoulas",
+        "Xiang Lin",
+        "Shanghua Gao",
+        "Xiaorui Su",
+        "Soumya Ghosh",
+        "Marinka Zitnik"
+      ],
+      "themes": [
+        "Gene regulation & epigenetics",
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Prediction of the transcriptional response of a cell to a genetic perturbation is a central problem in the computational modeling of gene regulation. Perturbations of the same gene can produce different transcriptional responses depending on the targeted locus, such as an alternative transcription start site or a distal regulatory element, and gene-level perturbation models represent these distinct interventions with a single gene identifier. We introduce STRAND, a generative model that encodes the regulatory DNA sequence at the perturbation locus and uses this encoding to parameterize a conditional transport process from control to perturbed single-cell states. Sequence conditioning enables zero-shot prediction for perturbation targets absent from training and supports locus-resolved inputs at 128 bp model resolution within a 524 kb sequence window. On CRISPRi screens in K562, Jurkat, and RPE1 cells, STRAND achieves the best average rank on few-shot and unseen-gene benchmarks, with gains of up to 33% in perturbation discrimination, and improves transfer to held-out cell lines by up to 0.12 in $Δ$Pearson. Ablation studies attribute these gains to sequence conditioning and to conditional transport. At the locus level, STRAND distinguishes alternative transcription start sites and validated regulatory elements that gene-identifier models represent as a single perturbation. STRAND is available at https://github.com/mims-harvard/STRAND.",
+      "abstract_summary": "STRAND conditions single-cell perturbation-response predictions on the regulatory DNA sequence at the targeted locus, rather than representing an intervention only by a gene identifier.",
+      "claimed_contribution": "On CRISPRi screens in K562, Jurkat and RPE1 cells, the authors report improved few-shot/unseen-gene benchmarks and held-out-cell-line transfer, with up to 33% improvement in perturbation discrimination and up to 0.12 gain in held-out-cell-line ΔPearson.",
+      "unique_caveat": "These are predictions evaluated against existing CRISPRi measurements; the work does not show that prospective STRAND-selected perturbations have been experimentally validated.",
+      "evidence_for_ranking": "Substantive v2 revision on 27 Oct, relevant q-bio.GN/q-bio.CB cross-lists, NeurIPS 2026 journal reference, and four total Semantic Scholar citations at the snapshot (a current total, not monthly gains).",
+      "announcement_type": "revision",
+      "announcement_batch": "2026-10-27",
+      "comment": "10 pages for main draft, 5 main figures",
+      "journal_ref": "Advances in Neural Information Processing Systems (NeurIPS 2026)",
+      "refs": [
+        "https://arxiv.org/abs/2602.10156",
+        "https://github.com/mims-harvard/STRAND",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2602.10156?fields=citationCount%2CinfluentialCitationCount"
+      ],
+      "latest_revision": "2026-10-27T17:50:07Z",
+      "doi": "10.48550/arXiv.2602.10156"
+    },
+    {
+      "id": "06-a-unified-coarse-grained-neural-network-potential-for-the-dynamics-of-",
+      "kind": "paper",
+      "title": "A unified coarse-grained neural network potential for the dynamics of biomolecular complexes",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.37606",
+      "arxiv_id": "2610.37606",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T17:37:10Z",
+      "first_submitted": "2026-10-27T17:37:10Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Antonio Mirarchi",
+        "Stephen E. Farr",
+        "Adrià Peréz",
+        "Gianni De Fabritiis"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The behavior of biomolecular complexes is governed by chemically specific interactions and often involves rare events that atomistic molecular dynamics struggle to capture within accessible timescales. Here we introduce AMARO v2.0, a coarse-grained neural network potential that retains all heavy atoms and treats solvent implicitly. Hydrogen-aware bead types and total-charge conditioning provide a shared representation for proteins, drug-like molecules, and their complexes, including ternary protein-protein-ligand systems. The model preserves folded proteins and captures key features of protein conformational free-energy landscapes. Across 262 complexes spanning 11 targets, the learned potential retains most ligand poses, although quaternary structure reorientation is observed for the HIF2A ternary complex. In targeted case studies, AMARO v2.0 distinguishes the two protonation states of trypsin-benzamidine and reaches the crystal binding pose in 3.3-fold more trajectories than all-atom molecular mechanics at a fixed estimated GPU-time budget. The same framework also recovers a reference binding pose in TYK2 and supports binding free-energy estimation for both trypsin-benzamidine and TYK2-EJM31, although the resulting values are more energetically favorable than the experimental references. SHP2 and CDK8 systems expose remaining limitations in binding-pose recovery and site specificity, respectively. Together, these results support AMARO v2.0 as a shared heavy-atom potential for biomolecular complex dynamics.",
+      "abstract_summary": "AMARO v2.0 is presented as a heavy-atom coarse-grained neural potential for protein, drug-like molecule and complex dynamics, with tests on 262 complexes across 11 targets.",
+      "claimed_contribution": "The authors report ligand-pose retention and improved recovery of a trypsin–benzamidine crystal pose per estimated GPU-time versus atomistic molecular mechanics, plus case studies on TYK2, SHP2 and CDK8.",
+      "unique_caveat": "This is computational molecular simulation, not experimental binding evidence; the authors report overly favorable binding free energies and pose/site-specificity failures in some systems.",
+      "evidence_for_ranking": "New q-bio.BM submission on 27 Oct; the paper directly addresses biomolecular-complex dynamics and benchmarks 262 complexes across 11 targets.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-27",
+      "comment": "",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.37606",
+        "https://arxiv.org/pdf/2610.37606"
+      ],
+      "latest_revision": "2026-10-27T17:37:10Z",
+      "doi": "10.48550/arXiv.2610.37606"
+    },
+    {
+      "id": "07-reducing-double-dipping-in-single-cell-topic-models-with-three-way-cou",
+      "kind": "paper",
+      "title": "Reducing double-dipping in single-cell topic models with three-way count splitting",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2610.24130",
+      "arxiv_id": "2610.24130",
+      "arxiv_version": "v1",
+      "published": "2026-10-16T19:02:33Z",
+      "first_submitted": "2026-10-16T19:02:33Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.LG"
+      ],
+      "authors": [
+        "Zheng Qu"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Quantitative methods"
+      ],
+      "abstract": "Topic models learn gene programs from single-cell RNA sequencing (scRNA-seq) data, and the same counts are then used to test which genes and donors are associated with those programs. Count splitting is the standard remedy for this reuse, but it has not been tested when an encoder reads each cell's counts. On a 104,400-cell lupus cohort with 300 permuted null genes per run, naive tests rejected 36% of null gene-topic pairs at a nominal 5% level, and the usual two-way split rejected 38%, because the encoder sees the tested gene's own held-out count. Encoding topic usage on a separate third of the counts, with beta-binomial thinning, lowered this to 7.7% (6.7% for genes outside the model); for two other models, LDVAE and scETM, the rate was 7.0-7.3% (naive 51-59%). A label-free interferon program shifts in held-out counts in the lupus cohort and in a pre-specified COVID-19 cohort, and donor-level topic usage predicts disease (AUROC 0.96) beyond cell-type proportions (0.86 and 0.58 in the two cohorts). Calibration and prediction did not depend on the model. We do not claim better clustering, prediction or topic stability. Code, figures and result tables are public (MIT license; DOI 10.5281/zenodo.23307193).",
+      "abstract_summary": "The authors propose three-way count splitting for single-cell topic models to reduce false discoveries caused when a model uses the same counts later used for gene-topic inference.",
+      "claimed_contribution": "On a 104,400-cell lupus cohort with permuted null genes, the authors report that three-way splitting reduced nominal 5% null rejection to 7.7%, versus 36% for naive tests and 38% for the usual two-way split; they also report related results for LDVAE/scETM and a pre-specified COVID-19 cohort.",
+      "unique_caveat": "The paper is a statistical-method evaluation, not evidence that topic models improve clinical prediction; it explicitly does not claim better clustering, prediction or topic stability.",
+      "evidence_for_ranking": "New q-bio.GN/cs.LG submission; the evaluated 104,400-cell cohort and null/permutation tests directly address a common inference failure in single-cell analysis; code and results are public.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-16",
+      "comment": "16 pages, 4 figures. Code: https://github.com/quz2004/topic-model-count-splitting",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.24130",
+        "https://github.com/quz2004/topic-model-count-splitting",
+        "https://doi.org/10.5281/zenodo.23307193"
+      ],
+      "latest_revision": "2026-10-16T19:02:33Z",
+      "doi": "10.48550/arXiv.2610.24130"
+    },
+    {
+      "id": "08-rnagenscape-property-guided-optimized-generation-of-mrna-sequences-wit",
+      "kind": "paper",
+      "title": "RNAGenScape: Property-Guided, Optimized Generation of mRNA Sequences with Manifold Langevin Dynamics",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2510.24736",
+      "arxiv_id": "2510.24736",
+      "arxiv_version": "v5",
+      "published": "2026-10-19T04:16:21Z",
+      "first_submitted": "2025-10-14T19:55:41Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Danqi Liao",
+        "Chen Liu",
+        "Xingzhi Sun",
+        "Dié Tang",
+        "Haochen Wang",
+        "Scott Youlten",
+        "Srikar Krishna Gopinath",
+        "Haejeong Lee",
+        "Ethan C. Strayer",
+        "Antonio J. Giraldez",
+        "Smita Krishnaswamy"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Generating property-optimized mRNA sequences is central to applications such as vaccine design and protein replacement therapy, but remains challenging due to limited data, complex sequence-function relationships, and the narrow space of biologically viable sequences. Generative methods that drift away from the data manifold can yield sequences that fail to fold, translate poorly, or are otherwise nonfunctional. We present RNAGenScape, a property-guided manifold Langevin dynamics framework for mRNA sequence generation that operates on a learned manifold of real data. By performing iterative local optimization constrained to this manifold, RNAGenScape preserves favorable computational viability proxies, accesses reliable guidance, and discourages excursions into regions poorly supported by the training data. The framework integrates three components: (1) an autoencoder jointly trained with a property predictor to learn a property-organized latent manifold, (2) a denoising autoencoder that projects updates back onto the manifold, and (3) a property-guided Langevin dynamics procedure that performs optimization along the manifold. Across three real-world mRNA datasets spanning two orders of magnitude in size, RNAGenScape increases median oracle-predicted property gain by up to 267% and success rate by up to 31%, while maintaining good biological viability proxy measures and achieving competitive inference efficiency compared to existing generative approaches.",
+      "abstract_summary": "RNAGenScape constrains property-guided mRNA sequence generation to a learned data manifold; across three datasets, the authors report gains in oracle-predicted properties and viability proxies.",
+      "claimed_contribution": "The authors report up to 267% higher median oracle-predicted property gain and up to 31% higher success rate than compared generative methods while maintaining computational viability proxies.",
+      "unique_caveat": "The gains are based on computational oracles and proxies; the abstract does not report wet-lab translation, protein-expression or vaccine efficacy validation.",
+      "evidence_for_ranking": "Substantive v4/v5 revisions on 10 and 19 Oct, q-bio.BM and cs.LG cross-lists, NeurIPS 2026 comment, and evaluation across three real-world mRNA datasets.",
+      "announcement_type": "revision",
+      "announcement_batch": "2026-10-19",
+      "comment": "NeurIPS 2026",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2510.24736",
+        "https://arxiv.org/html/2510.24736"
+      ],
+      "latest_revision": "2026-10-19T04:16:21Z",
+      "doi": "10.48550/arXiv.2510.24736"
+    },
+    {
+      "id": "09-leveraging-secondary-structure-information-for-accurate-nucleic-acid-s",
+      "kind": "paper",
+      "title": "Leveraging secondary-structure information for accurate nucleic acid structure prediction with OFoldNA",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2609.37414",
+      "arxiv_id": "2609.37414",
+      "arxiv_version": "v2",
+      "published": "2026-10-08T07:49:40Z",
+      "first_submitted": "2026-09-29T12:45:24Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Valhalla Team"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "RNA & transcriptomics",
+        "Quantitative methods"
+      ],
+      "abstract": "Recent advances in biomolecular structure prediction have enabled accurate modelling of increasingly complex molecular systems. However, nucleic acid structure prediction remains challenging because of conformational flexibility and the limited availability of high-quality 3D structural data. Secondary structure (SS) provides a more readily available layer of structural information that captures base-pairing relationships and folding topology. Here we present OFoldNA, an all-atom diffusion model that incorporates SS information into nucleic acid folding and protein--nucleic acid co-folding. Without external SS information, OFoldNA achieved leading performance on FoldBench for both nucleic acid monomer folding and protein--nucleic acid co-folding, with particularly strong performance on DNA monomers and protein--DNA interfaces involving longer nucleic acid chains. When accurate base-pairing information was provided, OFoldNA-SS2TS further improved both folding and co-folding accuracy, while partial SS information also yielded consistent gains. The same auxiliary branch can also be used for RNA SS prediction as OFoldNA-SS, which achieved the best out-of-distribution performance on CHANRG. Together, these results show that intermediate structural information such as nucleic acid SS can be leveraged to improve all-atom 3D modelling, providing a general direction for incorporating complementary structural modalities into molecular structure prediction and design.",
+      "abstract_summary": "OFoldNA adds secondary-structure information to all-atom nucleic-acid folding and protein–nucleic-acid co-folding; the authors report benchmark improvements when secondary-structure information is available.",
+      "claimed_contribution": "The authors report leading FoldBench results for nucleic-acid monomer and protein–nucleic-acid co-folding without external secondary structure, further gains with accurate or partial base-pairing inputs, and out-of-distribution RNA secondary-structure performance on CHANRG.",
+      "unique_caveat": "Reported outcomes are structure-prediction benchmarks; they do not establish experimental structures, binding, or function, and gains with supplied secondary structure depend on the quality of that input.",
+      "evidence_for_ranking": "A v2 revision on 8 Oct falls inside the window; directly relevant q-bio.BM paper focused on DNA/RNA structure and benchmarked on FoldBench/CHANRG.",
+      "announcement_type": "revision",
+      "announcement_batch": "2026-10-08",
+      "comment": "",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2609.37414",
+        "https://arxiv.org/html/2609.37414"
+      ],
+      "latest_revision": "2026-10-08T07:49:40Z",
+      "doi": "10.48550/arXiv.2609.37414"
+    },
+    {
+      "id": "10-helics-biobank-scale-conditional-synthetic-genome-generation-via-laten",
+      "kind": "paper",
+      "title": "HELICS: Biobank-scale Conditional Synthetic Genome Generation via Latent Flow Matching",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2610.36361",
+      "arxiv_id": "2610.36361",
+      "arxiv_version": "v1",
+      "published": "2026-10-26T22:25:36Z",
+      "first_submitted": "2026-10-26T22:25:36Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.LG"
+      ],
+      "authors": [
+        "Ahmad Abdel-Azim",
+        "Xihong Lin"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Individual-level genotype data underpin genetic discovery, disease-risk modeling, and therapeutic development, yet many critical settings remain data-limited, including underrepresented ancestries, rare or imbalanced disease cohorts, and restricted-access biobanks. Conditional synthetic genome generation would support privacy-aware benchmarking, simulation, and data augmentation, but requires learning an ultra-high-dimensional discrete distribution over hundreds of thousands to tens of millions of correlated single-nucleotide polymorphisms (SNPs), or sites of DNA variation. We introduce HELICS: High-fidelity gEneration via Latent Interpolant Conditional Synthesis, a phasing-free latent flow matching framework for genome-wide SNP-level generation from biobank-scale genotype data. HELICS tokenizes chromosomes with convolutional autoencoders, reducing >600K SNPs to 4,096 continuous latent tokens, and trains a transformer parameterized conditional flow matching model over the concatenated multi-chromosome latent representation. Trained on over 417K genomes in the UK Biobank, HELICS generates genome-wide common-variant synthetic cohorts without haplotype phasing and achieves stronger fidelity to real genotypes than existing haplotype-based simulators, including high allele-frequency agreement in external evaluation and superior preservation of local and long-range SNP correlation structure. Conditioning on ancestry and genetic liability summaries enables targeted generation across genetic risk profiles; in perturbation analyses, by increasing the conditioned disease trait liability, HELICS induces SNP-level dosage changes in generated genomes that are highly correlated with published association weights. HELICS provides a scalable generative modeling framework for SNP-level genome data and a path toward conditional synthetic cohorts for data-limited genetic studies.",
+      "abstract_summary": "HELICS generates conditional synthetic genome-wide SNP profiles using latent flow matching, with training on more than 417,000 UK Biobank genomes and external genotype-fidelity evaluation.",
+      "claimed_contribution": "The authors report better fidelity than compared haplotype-based simulators for common-variant data, including allele-frequency agreement and local/long-range SNP correlation preservation, and demonstrate conditioning on ancestry and genetic-liability summaries.",
+      "unique_caveat": "The reported fidelity is not proof of privacy protection, clinical validity or causal effects; training/evaluation are centered on UK Biobank and common variants, limiting straightforward generalization to other ancestries and rare variants.",
+      "evidence_for_ranking": "New q-bio.GN/cs.LG submission on 26 Oct; arXiv comment names NeurIPS 2026; reported training scale exceeds 417,000 genomes.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-26",
+      "comment": "NeurIPS 2026",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.36361",
+        "https://arxiv.org/pdf/2610.36361"
+      ],
+      "latest_revision": "2026-10-26T22:25:36Z",
+      "doi": "10.48550/arXiv.2610.36361"
+    },
+    {
+      "id": "11-ribobridge-protein-conditioned-de-novo-rna-binder-structure-design",
+      "kind": "paper",
+      "title": "RiboBridge: protein-conditioned de novo RNA binder structure design",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2610.30668",
+      "arxiv_id": "2610.30668",
+      "arxiv_version": "v1",
+      "published": "2026-10-22T03:32:07Z",
+      "first_submitted": "2026-10-22T03:32:07Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Zhou Zhang",
+        "Hanqun Cao",
+        "Minghao Sun",
+        "Odin Zhang",
+        "Yang Zhang",
+        "Pheng Ann Heng",
+        "Wujun Li",
+        "Tianfan Fu"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Designing RNA molecules that bind to target protein structures requires generating both an RNA conformation and its bound complex geometry, without assuming a predefined binding site. Existing approaches generally model these coupled processes within a unified representation, entangling RNA conformation generation with protein-relative placement. In this work, we introduce RiboBridge, a structure-first framework that separates RNA conformational generation from protein--RNA assembly through cross-frame interaction geometry. RiboBridge first proposes multiple candidate RNA-binding interfaces on the protein surface, generates canonical RNA conformations within a pretrained RNA structural latent space (RiboSphere), and then predicts protein--RNA interaction constraints to bridge the independently defined RNA and protein coordinate frames. The resulting interaction geometry is converted into a geometrically consistent protein-relative pose through rigid placement. We evaluate RiboBridge on a temporally split, sequence-filtered, and redundancy-controlled benchmark of 124 protein--RNA complexes. Under post-hoc interface-correspondence evaluation, where native information is used only after generation to select among already generated predicted-pocket candidates, RiboBridge achieves the highest fNAT and DockQ and the lowest interface and ligand RMSDs among compared methods. Component ablations and stage-wise diagnostics further characterize the contributions of RNA conformational generation, interaction prediction, and rigid placement, identifying the main sources of complex-recovery error.",
+      "abstract_summary": "RiboBridge separates RNA conformation generation from protein–RNA assembly and evaluates predicted binder structures on a temporally split benchmark of 124 protein–RNA complexes.",
+      "claimed_contribution": "The authors report improved complex-structure recovery against compared methods using a structure-first pipeline that proposes protein-surface interfaces and bridges RNA/protein coordinate frames.",
+      "unique_caveat": "This is computational structure generation, not proof of RNA–protein binding or activity; the authors state that post-hoc native information selects among generated candidate pockets and that functional validation remains future work.",
+      "evidence_for_ranking": "New q-bio.BM/cs.LG cross-listed submission on 22 Oct; evaluates 124 complexes with redundancy/temporal controls, making it directly relevant to molecular design methods.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-10-22",
+      "comment": "",
+      "journal_ref": "",
+      "refs": [
+        "https://arxiv.org/abs/2610.30668",
+        "https://arxiv.org/html/2610.30668"
+      ],
+      "latest_revision": "2026-10-22T03:32:07Z",
+      "doi": "10.48550/arXiv.2610.30668"
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": null,
+      "text": "• Multimodal and foundation-style modeling of molecular information: CellNet broadens single-cell RNA representation; STRAND conditions perturbation predictions on regulatory DNA; HELICS generates synthetic genotypes; RNAGenScape optimizes mRNA; OFoldNA and RiboBridge address nucleic-acid folding/design; AMARO models biomolecular complexes. These are diverse methods, not independent evidence of a single validated biological discovery.\n• AI-guided experimental interrogation: ImmuneAgent reports cloned antibody assays and a mouse challenge, while the TNBC visual-proteomics study uses image-derived risk maps to select tissue regions for mass spectrometry. These are the clearest direct experimental components in this selected set, but neither is a human clinical validation.\n• Evaluation and study-design safeguards: the cohort-effects paper quantifies site/cohort confounding in public immunotherapy omics; the three-way count-splitting paper tests false discoveries in single-cell topic models; STRAND and CellNet report held-out settings. Together these papers emphasize that cross-cohort calibration, leakage control and independent validation matter as much as headline benchmark scores."
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": null,
+      "text": "• Independent validation of designed biomolecules. RNAGenScape reports oracle-predicted mRNA property gains, RiboBridge reports structure recovery, OFoldNA reports structural benchmarks, and AMARO reports simulation outcomes. Follow-up could test blinded designs with cell-free translation/ expression assays, binding/activity assays, and prospective structure measurements; computational scores should be calibrated against these assays.\n• Generalizability and privacy of synthetic or predicted omics. HELICS is trained on UK Biobank and reports genotype fidelity, while CellNet and STRAND evaluate cross-species or held-out-cell settings. Follow-up could use ancestry-balanced external biobanks, donor/site-held-out tests, rare-variant strata and explicit membership-inference/privacy audits before synthetic data are treated as safe to share.\n• Replication of spatial and immune findings. The TNBC spatial discovery profiled 46 regions from two recurrent cases and calls the signals associative; ImmuneAgent reports 110 cloned candidates but only five antibodies tested in the mouse challenge, which was not powered for equivalence. Larger independent TNBC cohorts with prespecified recurrence horizons and prospectively blinded antibody selection/animal studies would test reproducibility; neither result is clinical efficacy evidence.\n• Cohort harmonization in translational omics. The cohort-effects paper analyzed four microbiome cohorts and three tumor-genomic cohorts, leaving additional public cohorts untested. A follow-up could harmonize collection, sequencing and response definitions across the remaining datasets, then prospectively test whether chance-corrected response signals replicate within sites and across sites."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": null,
+      "text": "October’s selected arXiv biology/biomedicine papers are method-heavy: generative and foundation models are being applied to genomes, RNA, proteins and spatial omics, while a few studies connect models to tissue or animal experiments. The strongest next test is external, prospectively designed validation. No entry here should be read as a clinical recommendation or practice-changing evidence."
+    }
+  ]
+}

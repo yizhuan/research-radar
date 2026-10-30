@@ -1,0 +1,120 @@
+{
+  "2510.24736": {
+    "error": "HTTP Error 429: "
+  },
+  "2602.10156": {
+    "paperId": "fb20c1c3822b450743ac2f87b676fc7c27378b3c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2602-10156",
+      "ArXiv": "2602.10156",
+      "DOI": "10.48550/arXiv.2602.10156",
+      "CorpusId": 285470193
+    },
+    "title": "STRAND: Sequence-Conditioned Transport for Single-Cell Perturbations",
+    "year": 2026,
+    "referenceCount": 81,
+    "citationCount": 4,
+    "influentialCitationCount": 0,
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Biology"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2052628663",
+        "name": "Bo Fu"
+      },
+      {
+        "authorId": "2282475765",
+        "name": "Sameer Gabbita"
+      },
+      {
+        "authorId": "2303258306",
+        "name": "George Dasoulas"
+      },
+      {
+        "authorId": "2307476848",
+        "name": "Xiang Lin"
+      },
+      {
+        "authorId": "2269765109",
+        "name": "Shanghua Gao"
+      },
+      {
+        "authorId": "2325854342",
+        "name": "Xiao-Rui Su"
+      },
+      {
+        "authorId": "2392225456",
+        "name": "Soumya Ghosh"
+      },
+      {
+        "authorId": "2095762",
+        "name": "M. Zitnik"
+      }
+    ]
+  },
+  "2608.03145": {
+    "error": "HTTP Error 429: "
+  },
+  "2604.19718": {
+    "error": "HTTP Error 429: "
+  },
+  "2601.14969": {
+    "error": "HTTP Error 429: "
+  },
+  "2609.37414": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.31454": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.21943": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.30668": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.28697": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.30588": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.37606": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.36361": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.15182": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.07712": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.03978": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.24130": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.01891": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.03160": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.33010": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.04763": {
+    "error": "HTTP Error 429: "
+  },
+  "2610.36226": {
+    "error": "HTTP Error 429: "
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-10-30",
+  "title": "GitHub Trending Summary - Daily - 2026-10-30",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-10-30.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "ranking_basis": "Daily GitHub Trending star gains; descending order.",
+  "ranking_explanation": "Captured the GitHub Trending daily view at 2026-10-30 01:34 UTC, removed the list-only jailbreaks entry, and sorted the remaining repositories by the displayed stars gained today.",
+  "global_caveat": "Early-UTC snapshot; daily star gains and total star counts can change after capture. GitHub Trending is a point-in-time ranking signal, not a measure of sustained adoption. No prior-window comparison was collected.",
+  "themes": [
+    {
+      "id": "coding-agent-workflows",
+      "name": "Structured coding-agent workflows",
+      "supporting_repo_ids": [
+        "repo-01-impeccable",
+        "repo-04-ai-design-skills",
+        "repo-05-thinkrail",
+        "repo-06-superpowers",
+        "repo-08-claude-code-game-studios"
+      ],
+      "observation": "Skills, reusable commands, review loops, and specialized agent roles are prominent in Impeccable, AI Design Skills, ThinkRail, Superpowers, and Claude Code Game Studios."
+    },
+    {
+      "id": "agentic-desktop-workspaces",
+      "name": "Agentic desktop workspaces",
+      "supporting_repo_ids": [
+        "repo-03-openmausbot",
+        "repo-05-thinkrail",
+        "repo-07-openbot",
+        "repo-10-openbot"
+      ],
+      "observation": "OpenMausBot, ThinkRail, nightly-labs/openbot, and CopilotKit/OpenBot wrap agents in persistent, user-facing workspaces with tools, files, or coordination."
+    },
+    {
+      "id": "agent-design-quality",
+      "name": "Design quality for AI-built interfaces",
+      "supporting_repo_ids": [
+        "repo-01-impeccable",
+        "repo-04-ai-design-skills"
+      ],
+      "observation": "Impeccable emphasizes design steering plus critique/audits and deterministic checks; AI Design Skills packages portable design guidance for coding tools."
+    },
+    {
+      "id": "agent-memory",
+      "name": "Continuity and memory",
+      "supporting_repo_ids": [
+        "repo-09-claude-mem",
+        "repo-05-thinkrail"
+      ],
+      "observation": "Claude Mem foregrounds cross-session context; ThinkRail’s living specs preserve project intent outside an individual agent chat."
+    },
+    {
+      "id": "personalized-learning",
+      "name": "Personalized learning applications",
+      "supporting_repo_ids": [
+        "repo-02-deeptutor"
+      ],
+      "observation": "DeepTutor is a distinct education-focused signal, describing a personalized tutoring workspace with modular learning features."
+    },
+    {
+      "id": "multi-language",
+      "name": "Language mix",
+      "supporting_repo_ids": [
+        "repo-01-impeccable",
+        "repo-02-deeptutor",
+        "repo-03-openmausbot",
+        "repo-04-ai-design-skills",
+        "repo-05-thinkrail",
+        "repo-06-superpowers",
+        "repo-07-openbot",
+        "repo-08-claude-code-game-studios",
+        "repo-09-claude-mem",
+        "repo-10-openbot"
+      ],
+      "observation": "Among the 10 listed repositories, GitHub reports TypeScript for 5, Shell for 2, Rust for 1, Python for 1, and no primary language for 1."
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time: 2026-10-30 01:34 UTC. Scope: daily. Date range: 2026-10-30 through 2026-10-30."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent infrastructure and interfaces dominate today’s leaders: Impeccable adds 2,870 stars in GitHub Trending, while tutoring software is the clearest non-coding outlier. The list favors reusable workflows, agentic workspaces, and design/context layers over model runtimes."
+    },
+    {
+      "id": "repo-01-impeccable",
+      "kind": "repo",
+      "title": "pbakaus/impeccable",
+      "rank": 1,
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "Adds a command-based design vocabulary for coding agents, including visual steering, critique, accessibility and quality audits, and deterministic design checks.",
+      "language": "Rust",
+      "stars_gained": 2870,
+      "total_stars": 95405,
+      "default_branch_commit": "02523aec3e4c4580102d996d1b6a71fbe062e03f",
+      "why_notable": "It leads today’s list by a wide margin and turns subjective UI direction into repeatable agent commands and deterministic checks.",
+      "theme_ids": [
+        "agent-design-quality",
+        "coding-agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Impeccable",
+      "refs": [
+        "pbakaus/impeccable"
+      ]
+    },
+    {
+      "id": "repo-02-deeptutor",
+      "kind": "repo",
+      "title": "HKUDS/DeepTutor",
+      "rank": 2,
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "Personalized tutoring software combining an interactive learning workspace with modular study and explanation tools.",
+      "language": "Python",
+      "stars_gained": 1930,
+      "total_stars": 50136,
+      "default_branch_commit": "1ea7df155447f4caf0e3abc86b3ff5395479cd4a",
+      "why_notable": "Its strong daily gain makes education a notable counterweight to the coding-agent-heavy list; its README highlights modular installation, block notebooks, and narrated video lessons.",
+      "theme_ids": [
+        "personalized-learning",
+        "agentic-applications"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "DeepTutor",
+      "refs": [
+        "HKUDS/DeepTutor"
+      ]
+    },
+    {
+      "id": "repo-03-openmausbot",
+      "kind": "repo",
+      "title": "milind-soni/OpenMausBot",
+      "rank": 3,
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "A local-first desktop chat workspace for teams of AI bots, using agents such as Claude or Codex through local command-line tools.",
+      "language": "TypeScript",
+      "stars_gained": 1199,
+      "total_stars": 7501,
+      "default_branch_commit": "0213b7435fc83a936f77c18475ba2a0d7b7c2de4",
+      "why_notable": "It is among the day’s fastest risers and packages multiple agent identities, models, and connected apps in a messaging-style desktop interface.",
+      "theme_ids": [
+        "agentic-desktop-workspaces",
+        "coding-agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Open Maus Bot",
+      "refs": [
+        "milind-soni/OpenMausBot"
+      ]
+    },
+    {
+      "id": "repo-04-ai-design-skills",
+      "kind": "repo",
+      "title": "elayadesign/ai-design-skills",
+      "rank": 4,
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "description": "A growing collection of design skills for AI coding tools, distributed as portable Markdown rule files.",
+      "language": "N/A - not available from GitHub",
+      "stars_gained": 1187,
+      "total_stars": 12189,
+      "default_branch_commit": "ded7efc9d5c02761c41a03caf3b78f9259ab8828",
+      "why_notable": "Its momentum reinforces the design-for-agents theme; the README documents cross-tool installation and a self-contained landing-page design skill.",
+      "theme_ids": [
+        "agent-design-quality",
+        "coding-agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "AI Design Skills",
+      "refs": [
+        "elayadesign/ai-design-skills"
+      ],
+      "unique_caveat": "The README currently lists one skill (landing-page-design), so the collection is still small."
+    },
+    {
+      "id": "repo-05-thinkrail",
+      "kind": "repo",
+      "title": "JetBrains/thinkrail",
+      "rank": 5,
+      "url": "https://github.com/JetBrains/thinkrail",
+      "description": "An agentic IDE built around the pi coding agent, with isolated workspaces, living project specs, reusable skills, and a rich workbench.",
+      "language": "TypeScript",
+      "stars_gained": 1117,
+      "total_stars": 6032,
+      "default_branch_commit": "df7cb6d2dd5fafbc6ed8eea721f16e54f09e38fc",
+      "why_notable": "It brings established IDE engineering to the agentic-workbench trend, including git-worktree isolation and project knowledge that persists as specs.",
+      "theme_ids": [
+        "agentic-desktop-workspaces",
+        "coding-agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "ThinkRail",
+      "refs": [
+        "JetBrains/thinkrail"
+      ]
+    },
+    {
+      "id": "repo-06-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 6,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software-development methodology for coding agents.",
+      "language": "Shell",
+      "stars_gained": 1034,
+      "total_stars": 308586,
+      "default_branch_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "why_notable": "It combines substantial existing adoption with another four-digit daily gain, signaling continued demand for structured agent workflows.",
+      "theme_ids": [
+        "coding-agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 6,
+      "spoken_name": "Superpowers",
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "repo-07-openbot",
+      "kind": "repo",
+      "title": "nightly-labs/openbot",
+      "rank": 7,
+      "url": "https://github.com/nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates, with task queues, shared files, browser control, and agent collaboration.",
+      "language": "TypeScript",
+      "stars_gained": 709,
+      "total_stars": 3902,
+      "default_branch_commit": "f3e3f8ade9c146e96d9d68d65770d2a9126a7856",
+      "why_notable": "It represents the multi-agent desktop workspace pattern, adding coordination and browser/file access around several coding agents.",
+      "theme_ids": [
+        "agentic-desktop-workspaces"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 7,
+      "spoken_name": "Nightly OpenBot",
+      "refs": [
+        "nightly-labs/openbot"
+      ]
+    },
+    {
+      "id": "repo-08-claude-code-game-studios",
+      "kind": "repo",
+      "title": "Donchitos/Claude-Code-Game-Studios",
+      "rank": 8,
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "description": "A game-development workflow for Claude Code organized as a studio hierarchy of agents and skills.",
+      "language": "Shell",
+      "stars_gained": 353,
+      "total_stars": 29236,
+      "default_branch_commit": "05ad7c8a5b8aa2aa86bbd3439ae7cf7295cac418",
+      "why_notable": "It applies agent orchestration to a focused vertical—game development—rather than offering a general-purpose coding assistant.",
+      "theme_ids": [
+        "coding-agent-workflows",
+        "vertical-agent-teams"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 8,
+      "spoken_name": "Claude Code Game Studios",
+      "refs": [
+        "Donchitos/Claude-Code-Game-Studios"
+      ]
+    },
+    {
+      "id": "repo-09-claude-mem",
+      "kind": "repo",
+      "title": "thedotmack/claude-mem",
+      "rank": 9,
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent context across sessions for coding agents, capturing, compressing, and surfacing relevant prior work.",
+      "language": "TypeScript",
+      "stars_gained": 336,
+      "total_stars": 104831,
+      "default_branch_commit": "325afb60108d4ab04e24d715f244bd591ca33fbe",
+      "why_notable": "Its cross-agent context layer shows that memory and continuity remain valuable infrastructure alongside agent interfaces and workflows.",
+      "theme_ids": [
+        "agent-memory"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 9,
+      "spoken_name": "Claude Mem",
+      "refs": [
+        "thedotmack/claude-mem"
+      ]
+    },
+    {
+      "id": "repo-10-openbot",
+      "kind": "repo",
+      "title": "CopilotKit/OpenBot",
+      "rank": 10,
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "description": "An open-source AI-coworker environment that gives agents a browser, files, and tools, with actions decided before execution and recorded afterward.",
+      "language": "TypeScript",
+      "stars_gained": 247,
+      "total_stars": 8173,
+      "default_branch_commit": "ab9855c19848378c90a806426130d86699cc798c",
+      "why_notable": "It is a useful counterpoint focused on controlled computer access and auditable actions, rather than only agent-to-agent collaboration.",
+      "theme_ids": [
+        "agentic-desktop-workspaces",
+        "agent-safety-and-audit"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 10,
+      "spoken_name": "CopilotKit OpenBot",
+      "refs": [
+        "CopilotKit/OpenBot"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Structured coding-agent workflows:** Skills, reusable commands, review loops, and specialized agent roles are prominent in Impeccable, AI Design Skills, ThinkRail, Superpowers, and Claude Code Game Studios.\n- **Agentic desktop workspaces:** OpenMausBot, ThinkRail, nightly-labs/openbot, and CopilotKit/OpenBot wrap agents in persistent, user-facing workspaces with tools, files, or coordination.\n- **Design quality for AI-built interfaces:** Impeccable emphasizes design steering plus critique/audits and deterministic checks; AI Design Skills packages portable design guidance for coding tools.\n- **Continuity and memory:** Claude Mem foregrounds cross-session context; ThinkRail’s living specs preserve project intent outside an individual agent chat.\n- **Personalized learning applications:** DeepTutor is a distinct education-focused signal, describing a personalized tutoring workspace with modular learning features.\n- **Languages:** TypeScript leads (5 of 10 listed repositories), followed by Shell (2); Rust and Python account for one each, and one repo has no primary language reported."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today’s signal is about making agents usable and dependable: structured workflows, persistent workspaces, design guidance, and memory are recurring layers. DeepTutor shows that the same momentum can also support focused applications beyond developer tooling."
+    }
+  ]
+}

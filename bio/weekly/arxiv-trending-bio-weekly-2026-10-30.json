@@ -1,0 +1,593 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "weekly",
+  "date": "2026-10-30",
+  "title": "arXiv Trending Biology and Biomedicine — Weekly, 2026-10-30",
+  "source_report": "/home/yizhuan/.research/bio/weekly/arxiv-trending-bio-weekly-2026-10-30.md",
+  "entry_count": 15,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart; ranking is inferred from checkable but sparse evidence and relevance. arXiv’s biomedical corpus is incomplete and does not represent the full biomedical literature or bioRxiv/medRxiv.",
+  "date_range": {
+    "start_utc": "2026-10-23T00:00:00Z",
+    "end_utc": "2026-10-30T02:41:12Z"
+  },
+  "snapshot_utc": "2026-10-30T02:41:12Z",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "rank": null,
+      "url": "",
+      "source_markdown": "This week’s 15 notable arXiv biology and biomedical papers cluster around model validation in molecular design and perturbation screens, with additional work on proteomics, synthetic genomes, and transcriptomics. Attention evidence is sparse, so this is a relevance-ranked selection rather than a popularity chart. arXiv has no official trending chart and biomedical preprint coverage is incomplete.",
+      "global_caveat": "arXiv has no official trending chart; ranking is inferred from checkable but sparse evidence and relevance. arXiv’s biomedical corpus is incomplete and does not represent the full biomedical literature or bioRxiv/medRxiv."
+    },
+    {
+      "id": "01-shared-clones-make-random-cell-halves-look-reproducible",
+      "kind": "paper",
+      "rank": 1,
+      "title": "Shared clones make random cell halves look reproducible in pooled screens",
+      "url": "https://arxiv.org/abs/2610.329622",
+      "arxiv_id": "2610.32962",
+      "arxiv_version": "v2",
+      "published": "2026-10-23T17:53:14Z",
+      "updated": "2026-10-26T15:27:25Z",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Xuanrui Huang"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Quantitative methods",
+        "Molecular & cell biology"
+      ],
+      "abstract": "Single-cell perturbation screens are used to train and evaluate models of perturbation effects, and model scores are judged against the reproducibility of the measured effects. Reproducibility is usually judged by splitting each perturbation's cells into two random halves, assumed to be independent replicates. In pooled screens such as Perturb-seq, the cells carrying a guide RNA descend from a limited number of transduced cells, so two random halves contain the same clones: pseudoreplication whose unit is not marked in the data. Using null perturbations (no expected effect) as controls, we compared random halves with independent replicates from separate transductions, and tested directly with halves that differ only in their clones. In a genome-scale screen of primary T cells, null perturbations agreed between random halves almost always and between independent replicates only half the time, the rate expected from noise alone; more cells did not remove it. With halves that share no clone, split by the T-cell receptor constant region or by a clone barcode, the excess agreement largely disappeared. Under a simple model, consistent with a screen that recorded clones, its size equals the share of expression differences set by clones divided by the effective number of clones per perturbation; in cell lines an upper bound on it was small. In the T-cell screen, shared clones inflated benchmark ceilings and reliability labels, the more so in donors with fewer effective clones, and when a model's input and scoring answer come from one transduction, published models that predict effects in a new cell state scored well even on perturbations with no expected effect; for the model tested (STATE), the gain vanished with the same guide from another transduction as answer. Reproducibility is better judged across separate transductions than between random halves.",
+      "claimed_contribution": "The preprint compares random halves with independent transductions and clone-separated partitions across 16 screens. In a genome-scale primary T-cell screen, null perturbations agreed almost always across random halves but only about half the time across independent replicates; clone-separated splits largely removed the excess agreement.",
+      "unique_caveat": "The authors say the direct clone-strength relation was tested in only one clone-recording screen, and the 16 datasets differ in cell type, perturbation, and sequencing. The results concern benchmark reliability, not a reanalysis overturning the original biological findings.",
+      "refs": [
+        "https://arxiv.org/abs/2610.32962v2",
+        "https://github.com/xuanruihuang/random-halves-not-replicates"
+      ],
+      "source_markdown": "Abstract: Single-cell perturbation screens are used to train and evaluate models of perturbation effects, and model scores are judged against the reproducibility of the measured effects. Reproducibility is usually judged by splitting each perturbation's cells into two random halves, assumed to be independent replicates. In pooled screens such as Perturb-seq, the cells carrying a guide RNA descend from a limited number of transduced cells, so two random halves contain the same clones: pseudoreplication whose unit is not marked in the data. Using null perturbations (no expected effect) as controls, we compared random halves with independent replicates from separate transductions, and tested directly with halves that differ only in their clones. In a genome-scale screen of primary T cells, null perturbations agreed between random halves almost always and between independent replicates only half the time, the rate expected from noise alone; more cells did not remove it. With halves that share no clone, split by the T-cell receptor constant region or by a clone barcode, the excess agreement largely disappeared. Under a simple model, consistent with a screen that recorded clones, its size equals the share of expression differences set by clones divided by the effective number of clones per perturbation; in cell lines an upper bound on it was small. In the T-cell screen, shared clones inflated benchmark ceilings and reliability labels, the more so in donors with fewer effective clones, and when a model's input and scoring answer come from one transduction, published models that predict effects in a new cell state scored well even on perturbations with no expected effect; for the model tested (STATE), the gain vanished with the same guide from another transduction as answer. Reproducibility is better judged across separate transductions than between random halves.\nAuthors: Xuanrui Huang\narXiv: 2610.32962v2 (first submitted 2026-10-23T17:53:14Z; categories: q-bio.QM)\nEvidence for ranking: Semantic Scholar current citations 1; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The preprint compares random halves with independent transductions and clone-separated partitions across 16 screens. In a genome-scale primary T-cell screen, null perturbations agreed almost always across random halves but only about half the time across independent replicates; clone-separated splits largely removed the excess agreement.\nCaveat: The authors say the direct clone-strength relation was tested in only one clone-recording screen, and the 16 datasets differ in cell type, perturbation, and sequencing. The results concern benchmark reliability, not a reanalysis overturning the original biological findings.\nAnnouncement type: revision, 2026-10-26\nThemes: Omics & single-cell methods; Quantitative methods; Molecular & cell biology"
+    },
+    {
+      "id": "02-agent-guided-epitope-excision-enables-economical-de-nov",
+      "kind": "paper",
+      "rank": 2,
+      "title": "Agent-guided epitope excision enables economical de novo binder design",
+      "url": "https://arxiv.org/abs/2610.331951",
+      "arxiv_id": "2610.33195",
+      "arxiv_version": "v1",
+      "published": "2026-10-23T18:42:14Z",
+      "updated": "2026-10-23T18:42:14Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Jun W. Kim",
+        "Artiom Myaskovsky",
+        "Oscar Donosa",
+        "Lawrence Chan",
+        "Jamie Rogers",
+        "Avinatan Hassidim",
+        "Yossi Matias",
+        "Annalisa Pawlosky"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "De novo protein design campaigns remain bottlenecked by the inference compute time required to generate and rank candidates, limiting wider functional exploration. Here, we introduce and evaluate an epitope excision approach that truncates targets to local interface windows to accelerate both backbone diffusion and structure prediction. Across 15 targets and 3,666 designs, excised windows closely reproduced full-target binding interfaces (median CαRMSD of 0.37 Å) and made it practical to design binders against the 719-residue extracellular domain of fibroblast activation protein alpha (FAP) by cutting RFdiffusion and AlphaFold3 GPU time by ~ 88% in one of the epitopes. Pairing this workflow with an agentic optimization loop allowed the system to autonomously identify catalytic-site targeting strategies. Under a fixed compute budget, a human-in-the-loop (HITL) workflow raised the computational hit rate from 5.06% to 9.33% while further cutting GPU hours by ~ 42%. We also found that omitting target multiple sequence alignments during refolding roughly substantially increased the apparent yield. Wet-lab validation with yeast display identified nanomolar binders from the generated designs with the HITL and the fully autonomous agent (human-out-of-the-loop, HOOTL) arms recovering more enriched designs than the PI-alone baseline. Together, target excision and agent-guided search offer a practical way to scale de novo binder design to large, therapeutically relevant proteins.",
+      "claimed_contribution": "The preprint reports a median interface RMSD of 0.37 Å for excised windows and up to about 88% lower GPU time in one FAP epitope. In a fixed-budget comparison, the human-in-the-loop arm raised the computational hit rate from 5.06% to 9.33%; yeast display detected nanomolar binders among designs from agent-driven arms.",
+      "unique_caveat": "Most claims are computational; yeast-display enrichment is not evidence of therapeutic efficacy or in-vivo performance. The paper also reports that omitting target MSAs can change apparent yield and that agent choices were tested on one main target campaign.",
+      "refs": [
+        "https://arxiv.org/abs/2610.33195v1",
+        "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+      ],
+      "source_markdown": "Abstract: De novo protein design campaigns remain bottlenecked by the inference compute time required to generate and rank candidates, limiting wider functional exploration. Here, we introduce and evaluate an epitope excision approach that truncates targets to local interface windows to accelerate both backbone diffusion and structure prediction. Across 15 targets and 3,666 designs, excised windows closely reproduced full-target binding interfaces (median CαRMSD of 0.37 Å) and made it practical to design binders against the 719-residue extracellular domain of fibroblast activation protein alpha (FAP) by cutting RFdiffusion and AlphaFold3 GPU time by ~ 88% in one of the epitopes. Pairing this workflow with an agentic optimization loop allowed the system to autonomously identify catalytic-site targeting strategies. Under a fixed compute budget, a human-in-the-loop (HITL) workflow raised the computational hit rate from 5.06% to 9.33% while further cutting GPU hours by ~ 42%. We also found that omitting target multiple sequence alignments during refolding roughly substantially increased the apparent yield. Wet-lab validation with yeast display identified nanomolar binders from the generated designs with the HITL and the fully autonomous agent (human-out-of-the-loop, HOOTL) arms recovering more enriched designs than the PI-alone baseline. Together, target excision and agent-guided search offer a practical way to scale de novo binder design to large, therapeutically relevant proteins.\nAuthors: Jun W. Kim, Artiom Myaskovsky, Oscar Donosa, Lawrence Chan, Jamie Rogers, Avinatan Hassidim, Yossi Matias, Annalisa Pawlosky\narXiv: 2610.33195v1 (first submitted 2026-10-23T18:42:14Z; categories: q-bio.BM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The preprint reports a median interface RMSD of 0.37 Å for excised windows and up to about 88% lower GPU time in one FAP epitope. In a fixed-budget comparison, the human-in-the-loop arm raised the computational hit rate from 5.06% to 9.33%; yeast display detected nanomolar binders among designs from agent-driven arms.\nCaveat: Most claims are computational; yeast-display enrichment is not evidence of therapeutic efficacy or in-vivo performance. The paper also reports that omitting target MSAs can change apparent yield and that agent choices were tested on one main target campaign.\nAnnouncement type: new submission, 2026-10-23\nThemes: Biochemistry & proteins; Biomedical & translational medicine; Quantitative methods"
+    },
+    {
+      "id": "03-ai-guided-deep-visual-proteomics-reveals-recurrence-ass",
+      "kind": "paper",
+      "rank": 3,
+      "title": "AI-guided deep visual proteomics reveals recurrence-associated morpho-molecular signatures within triple-negative breast cancers",
+      "url": "https://arxiv.org/abs/2608.031453",
+      "arxiv_id": "2608.03145",
+      "arxiv_version": "v3",
+      "published": "2026-08-04T05:19:35Z",
+      "updated": "2026-10-27T06:22:13Z",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Yesung Cho",
+        "Ji Hwan Park",
+        "Chan Il Kim",
+        "Hyewon Kim",
+        "Honglan Li",
+        "Yumin Lee",
+        "Geongyu Lee",
+        "Sujeong Hong",
+        "Seong Min Park",
+        "Yoonyoung Lee",
+        "Hee Sool Rho",
+        "Sumin Lee",
+        "Amos Chungwon Lee",
+        "Changhwan Lee",
+        "Hwanyoung Shim",
+        "Hyunwook Kim",
+        "Hyeji Shin",
+        "Sanha Park",
+        "Jihoon Yu",
+        "Yoon Hee Shin",
+        "Sooheon Kim",
+        "Hyunjin Park",
+        "Seung Min Park",
+        "Sangwan Kim",
+        "Yujung Kim",
+        "Jinwon Jeong",
+        "Sung-Im Do",
+        "Eun-Young Kim",
+        "Dongmyung Shin",
+        "Ingu Do",
+        "Jongbae Park"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Biomedical & translational medicine",
+        "Molecular & cell biology"
+      ],
+      "abstract": "Outcome informed AI can localize prognostically relevant regions in digital pathology, but directly characterizing the molecular basis of these spatial predictions remains challenging. Here, we developed an outcome informed, AI-guided deep visual proteomics framework that uses recurrence-risk heatmaps to guide physical tissue sampling and mass spectrometry-based spatial proteomics in triple-negative breast cancer (TNBC). In 156 patients, high- and low-risk regions coexisted within the tumor compartment and showed distinct nuclear and architectural features, indicating intratumoral variation beyond broad tissue identity. Guided by these maps, we physically isolated and profiled 46 AI-defined high- and low-risk tumor regions from two recurrent cases. High-risk regions were enriched for mitotic programs, whereas low-risk regions showed immune- and antigen-presentation-associated programs. We used proteins that consistently differed between high- and low-risk regions to construct a 13-protein composite. The composite showed a significant effect to discriminate highly recurrent patients from less recurrent patients in an expanded TNBC cohort, while the corresponding transcript-based score showed a similar trend in METABRIC. Integrating the protein composite with the H&E-derived risk score improved out-of-bag discrimination, increasing the C-index from 0.679 to 0.739 and the 5-year time-dependent AUC from 0.675 to 0.770. These findings establish outcome-informed H&E risk maps as spatial guides for molecular discovery, extending prognostic AI from prediction toward direct biological interrogation of recurrence-associated tissue states.",
+      "claimed_contribution": "In 156 patients, the authors report high- and low-risk regions within tumors; they profiled 46 AI-selected regions from two recurrent cases, formed a 13-protein composite, and report improved out-of-bag discrimination when combined with an H&E-derived score (C-index 0.679 to 0.739; five-year AUC 0.675 to 0.770). A transcript score showed a similar trend in METABRIC.",
+      "unique_caveat": "Deep spatial profiling covered only 46 regions from two recurrent cases. The retrospective association and out-of-bag metrics do not establish prospective clinical utility; the expanded-cohort size is not stated in the abstract.",
+      "refs": [
+        "https://arxiv.org/abs/2608.03145v3"
+      ],
+      "source_markdown": "Abstract: Outcome informed AI can localize prognostically relevant regions in digital pathology, but directly characterizing the molecular basis of these spatial predictions remains challenging. Here, we developed an outcome informed, AI-guided deep visual proteomics framework that uses recurrence-risk heatmaps to guide physical tissue sampling and mass spectrometry-based spatial proteomics in triple-negative breast cancer (TNBC). In 156 patients, high- and low-risk regions coexisted within the tumor compartment and showed distinct nuclear and architectural features, indicating intratumoral variation beyond broad tissue identity. Guided by these maps, we physically isolated and profiled 46 AI-defined high- and low-risk tumor regions from two recurrent cases. High-risk regions were enriched for mitotic programs, whereas low-risk regions showed immune- and antigen-presentation-associated programs. We used proteins that consistently differed between high- and low-risk regions to construct a 13-protein composite. The composite showed a significant effect to discriminate highly recurrent patients from less recurrent patients in an expanded TNBC cohort, while the corresponding transcript-based score showed a similar trend in METABRIC. Integrating the protein composite with the H&E-derived risk score improved out-of-bag discrimination, increasing the C-index from 0.679 to 0.739 and the 5-year time-dependent AUC from 0.675 to 0.770. These findings establish outcome-informed H&E risk maps as spatial guides for molecular discovery, extending prognostic AI from prediction toward direct biological interrogation of recurrence-associated tissue states.\nAuthors: Yesung Cho, Ji Hwan Park, Chan Il Kim, Hyewon Kim, Honglan Li, Yumin Lee, Geongyu Lee, Sujeong Hong, Seong Min Park, Yoonyoung Lee, Hee Sool Rho, Sumin Lee, Amos Chungwon Lee, Changhwan Lee, Hwanyoung Shim, Hyunwook Kim, Hyeji Shin, Sanha Park, Jihoon Yu, Yoon Hee Shin, Sooheon Kim, Hyunjin Park, Seung Min Park, Sangwan Kim, Yujung Kim, Jinwon Jeong, Sung-Im Do, Eun-Young Kim, Dongmyung Shin, Ingu Do, Jongbae Park\narXiv: 2608.03145v3 (first submitted 2026-08-04T05:19:35Z; categories: cs.AI, q-bio.QM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: In 156 patients, the authors report high- and low-risk regions within tumors; they profiled 46 AI-selected regions from two recurrent cases, formed a 13-protein composite, and report improved out-of-bag discrimination when combined with an H&E-derived score (C-index 0.679 to 0.739; five-year AUC 0.675 to 0.770). A transcript score showed a similar trend in METABRIC.\nCaveat: Deep spatial profiling covered only 46 regions from two recurrent cases. The retrospective association and out-of-bag metrics do not establish prospective clinical utility; the expanded-cohort size is not stated in the abstract.\nAnnouncement type: revision, 2026-10-27\nThemes: Omics & single-cell methods; Biomedical & translational medicine; Molecular & cell biology"
+    },
+    {
+      "id": "04-a-unified-coarse-grained-neural-network-potential-for-t",
+      "kind": "paper",
+      "rank": 4,
+      "title": "A unified coarse-grained neural network potential for the dynamics of biomolecular complexes",
+      "url": "https://arxiv.org/abs/2610.376061",
+      "arxiv_id": "2610.37606",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T17:37:10Z",
+      "updated": "2026-10-27T17:37:10Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Antonio Mirarchi",
+        "Stephen E. Farr",
+        "Adrià Peréz",
+        "Gianni De Fabritiis"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The behavior of biomolecular complexes is governed by chemically specific interactions and often involves rare events that atomistic molecular dynamics struggle to capture within accessible timescales. Here we introduce AMARO v2.0, a coarse-grained neural network potential that retains all heavy atoms and treats solvent implicitly. Hydrogen-aware bead types and total-charge conditioning provide a shared representation for proteins, drug-like molecules, and their complexes, including ternary protein-protein-ligand systems. The model preserves folded proteins and captures key features of protein conformational free-energy landscapes. Across 262 complexes spanning 11 targets, the learned potential retains most ligand poses, although quaternary structure reorientation is observed for the HIF2A ternary complex. In targeted case studies, AMARO v2.0 distinguishes the two protonation states of trypsin-benzamidine and reaches the crystal binding pose in 3.3-fold more trajectories than all-atom molecular mechanics at a fixed estimated GPU-time budget. The same framework also recovers a reference binding pose in TYK2 and supports binding free-energy estimation for both trypsin-benzamidine and TYK2-EJM31, although the resulting values are more energetically favorable than the experimental references. SHP2 and CDK8 systems expose remaining limitations in binding-pose recovery and site specificity, respectively. Together, these results support AMARO v2.0 as a shared heavy-atom potential for biomolecular complex dynamics.",
+      "claimed_contribution": "The preprint reports pose retention across most complexes and 3.3-fold more trajectories reaching the trypsin–benzamidine crystal pose than all-atom molecular mechanics at a fixed estimated GPU-time budget. It also reports recovery of a reference pose in TYK2.",
+      "unique_caveat": "These are simulation results, not experimental binding assays. The authors report more favorable-than-experimental free-energy estimates and limitations in SHP2 pose recovery, CDK8 site specificity, and HIF2A complex orientation.",
+      "refs": [
+        "https://arxiv.org/abs/2610.37606v1"
+      ],
+      "source_markdown": "Abstract: The behavior of biomolecular complexes is governed by chemically specific interactions and often involves rare events that atomistic molecular dynamics struggle to capture within accessible timescales. Here we introduce AMARO v2.0, a coarse-grained neural network potential that retains all heavy atoms and treats solvent implicitly. Hydrogen-aware bead types and total-charge conditioning provide a shared representation for proteins, drug-like molecules, and their complexes, including ternary protein-protein-ligand systems. The model preserves folded proteins and captures key features of protein conformational free-energy landscapes. Across 262 complexes spanning 11 targets, the learned potential retains most ligand poses, although quaternary structure reorientation is observed for the HIF2A ternary complex. In targeted case studies, AMARO v2.0 distinguishes the two protonation states of trypsin-benzamidine and reaches the crystal binding pose in 3.3-fold more trajectories than all-atom molecular mechanics at a fixed estimated GPU-time budget. The same framework also recovers a reference binding pose in TYK2 and supports binding free-energy estimation for both trypsin-benzamidine and TYK2-EJM31, although the resulting values are more energetically favorable than the experimental references. SHP2 and CDK8 systems expose remaining limitations in binding-pose recovery and site specificity, respectively. Together, these results support AMARO v2.0 as a shared heavy-atom potential for biomolecular complex dynamics.\nAuthors: Antonio Mirarchi, Stephen E. Farr, Adrià Peréz, Gianni De Fabritiis\narXiv: 2610.37606v1 (first submitted 2026-10-27T17:37:10Z; categories: q-bio.BM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The preprint reports pose retention across most complexes and 3.3-fold more trajectories reaching the trypsin–benzamidine crystal pose than all-atom molecular mechanics at a fixed estimated GPU-time budget. It also reports recovery of a reference pose in TYK2.\nCaveat: These are simulation results, not experimental binding assays. The authors report more favorable-than-experimental free-energy estimates and limitations in SHP2 pose recovery, CDK8 site specificity, and HIF2A complex orientation.\nAnnouncement type: new submission, 2026-10-27\nThemes: Biochemistry & proteins; Quantitative methods"
+    },
+    {
+      "id": "05-accurate-structural-modelling-of-protein-glycan-recogni",
+      "kind": "paper",
+      "rank": 5,
+      "title": "Accurate structural modelling of protein-glycan recognition with GlycoWeave",
+      "url": "https://arxiv.org/abs/2610.374101",
+      "arxiv_id": "2610.37410",
+      "arxiv_version": "v1",
+      "published": "2026-10-27T15:27:09Z",
+      "updated": "2026-10-27T15:27:09Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Huifeng Zhao",
+        "Jintu Zhang",
+        "Yifei Xiao",
+        "Youqiao Qian",
+        "Silong Zhai",
+        "Zichang Jin",
+        "Li Wang",
+        "Yuchao Wang",
+        "Hang Dong",
+        "Yifan Zhao",
+        "Zhenxing Wu",
+        "Hongyan Du",
+        "Yuansheng Huang",
+        "Bowei Zhao",
+        "Xiaorui Wang",
+        "Shukai Gu",
+        "Jike Wang",
+        "Zhongjun Li",
+        "Zhongtang Li",
+        "Tingjun Hou",
+        "Yu Kang"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Protein-glycan recognition underlies diverse biological processes, yet accurate prediction of protein-glycan complex structures remains challenging owing to the chemical diversity, conformational flexibility and sparse experimental structural coverage of glycans. Here we present GlycoWeave, a glycan-specific diffusion framework that integrates chemically constrained conformational sampling, multiscale molecular representations and multi-source learning. By operating in internal-coordinate space, GlycoWeave preserves glycan connectivity and stereochemistry while efficiently exploring bound conformations. A heterogeneous equivariant network couples atom-level interaction geometry with monosaccharide-level structural context, whereas multi-source, multi-head training integrates experimental complexes with structures refined using classical and quantum mechanics-informed potentials. On a benchmark of 698 protein-glycan complexes, GlycoWeave achieves a 71.9% Top-25 high-quality success rate, compared with 19.2% for AlphaFold 3, while requiring only 0.34 s per sampled pose. GlycoWeave further preserves glycan structural validity, recovers native protein-glycan interactions and reproduces linkage-specific conformational preferences, maintaining high accuracy across diverse glycan architectures and protein environments. These results establish GlycoWeave as an accurate, efficient and chemically faithful framework for modelling protein-glycan recognition. GlycoWeave is freely available at https://cadd.zju.edu.cn/glycoweave.",
+      "claimed_contribution": "The authors report a 71.9% Top-25 high-quality success rate versus 19.2% for AlphaFold 3, with a mean sampling time of 0.34 seconds per pose, while evaluating stereochemistry and interaction recovery.",
+      "unique_caveat": "The reported evidence is benchmark-based structural prediction, not prospective biochemical binding validation. The benchmark’s performance does not establish accuracy for all glycan classes or experimental settings.",
+      "refs": [
+        "https://arxiv.org/abs/2610.37410v1",
+        "https://cadd.zju.edu.cn/glycoweave"
+      ],
+      "source_markdown": "Abstract: Protein-glycan recognition underlies diverse biological processes, yet accurate prediction of protein-glycan complex structures remains challenging owing to the chemical diversity, conformational flexibility and sparse experimental structural coverage of glycans. Here we present GlycoWeave, a glycan-specific diffusion framework that integrates chemically constrained conformational sampling, multiscale molecular representations and multi-source learning. By operating in internal-coordinate space, GlycoWeave preserves glycan connectivity and stereochemistry while efficiently exploring bound conformations. A heterogeneous equivariant network couples atom-level interaction geometry with monosaccharide-level structural context, whereas multi-source, multi-head training integrates experimental complexes with structures refined using classical and quantum mechanics-informed potentials. On a benchmark of 698 protein-glycan complexes, GlycoWeave achieves a 71.9% Top-25 high-quality success rate, compared with 19.2% for AlphaFold 3, while requiring only 0.34 s per sampled pose. GlycoWeave further preserves glycan structural validity, recovers native protein-glycan interactions and reproduces linkage-specific conformational preferences, maintaining high accuracy across diverse glycan architectures and protein environments. These results establish GlycoWeave as an accurate, efficient and chemically faithful framework for modelling protein-glycan recognition. GlycoWeave is freely available at https://cadd.zju.edu.cn/glycoweave.\nAuthors: Huifeng Zhao, Jintu Zhang, Yifei Xiao, Youqiao Qian, Silong Zhai, Zichang Jin, Li Wang, Yuchao Wang, Hang Dong, Yifan Zhao, Zhenxing Wu, Hongyan Du, Yuansheng Huang, Bowei Zhao, Xiaorui Wang, Shukai Gu, Jike Wang, Zhongjun Li, Zhongtang Li, Tingjun Hou, Yu Kang\narXiv: 2610.37410v1 (first submitted 2026-10-27T15:27:09Z; categories: q-bio.BM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The authors report a 71.9% Top-25 high-quality success rate versus 19.2% for AlphaFold 3, with a mean sampling time of 0.34 seconds per pose, while evaluating stereochemistry and interaction recovery.\nCaveat: The reported evidence is benchmark-based structural prediction, not prospective biochemical binding validation. The benchmark’s performance does not establish accuracy for all glycan classes or experimental settings.\nAnnouncement type: new submission, 2026-10-27\nThemes: Biochemistry & proteins; Quantitative methods"
+    },
+    {
+      "id": "06-helics-biobank-scale-conditional-synthetic-genome-gener",
+      "kind": "paper",
+      "rank": 6,
+      "title": "HELICS: Biobank-scale Conditional Synthetic Genome Generation via Latent Flow Matching",
+      "url": "https://arxiv.org/abs/2610.363611",
+      "arxiv_id": "2610.36361",
+      "arxiv_version": "v1",
+      "published": "2026-10-26T22:25:36Z",
+      "updated": "2026-10-26T22:25:36Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.LG"
+      ],
+      "authors": [
+        "Ahmad Abdel-Azim",
+        "Xihong Lin"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Individual-level genotype data underpin genetic discovery, disease-risk modeling, and therapeutic development, yet many critical settings remain data-limited, including underrepresented ancestries, rare or imbalanced disease cohorts, and restricted-access biobanks. Conditional synthetic genome generation would support privacy-aware benchmarking, simulation, and data augmentation, but requires learning an ultra-high-dimensional discrete distribution over hundreds of thousands to tens of millions of correlated single-nucleotide polymorphisms (SNPs), or sites of DNA variation. We introduce HELICS: High-fidelity gEneration via Latent Interpolant Conditional Synthesis, a phasing-free latent flow matching framework for genome-wide SNP-level generation from biobank-scale genotype data. HELICS tokenizes chromosomes with convolutional autoencoders, reducing >600K SNPs to 4,096 continuous latent tokens, and trains a transformer parameterized conditional flow matching model over the concatenated multi-chromosome latent representation. Trained on over 417K genomes in the UK Biobank, HELICS generates genome-wide common-variant synthetic cohorts without haplotype phasing and achieves stronger fidelity to real genotypes than existing haplotype-based simulators, including high allele-frequency agreement in external evaluation and superior preservation of local and long-range SNP correlation structure. Conditioning on ancestry and genetic liability summaries enables targeted generation across genetic risk profiles; in perturbation analyses, by increasing the conditioned disease trait liability, HELICS induces SNP-level dosage changes in generated genomes that are highly correlated with published association weights. HELICS provides a scalable generative modeling framework for SNP-level genome data and a path toward conditional synthetic cohorts for data-limited genetic studies.",
+      "claimed_contribution": "The preprint reports stronger allele-frequency agreement and preservation of local and long-range SNP correlations than the compared haplotype-based simulators. Conditional generation follows ancestry and genetic-liability summaries; dosage shifts correlate with published association weights in perturbation analyses.",
+      "unique_caveat": "Fidelity and association-weight correlation do not establish privacy protection, especially against membership inference. The authors focus on common variants; rare variants and performance in underrepresented populations need separate evaluation.",
+      "refs": [
+        "https://arxiv.org/abs/2610.36361v1"
+      ],
+      "source_markdown": "Abstract: Individual-level genotype data underpin genetic discovery, disease-risk modeling, and therapeutic development, yet many critical settings remain data-limited, including underrepresented ancestries, rare or imbalanced disease cohorts, and restricted-access biobanks. Conditional synthetic genome generation would support privacy-aware benchmarking, simulation, and data augmentation, but requires learning an ultra-high-dimensional discrete distribution over hundreds of thousands to tens of millions of correlated single-nucleotide polymorphisms (SNPs), or sites of DNA variation. We introduce HELICS: High-fidelity gEneration via Latent Interpolant Conditional Synthesis, a phasing-free latent flow matching framework for genome-wide SNP-level generation from biobank-scale genotype data. HELICS tokenizes chromosomes with convolutional autoencoders, reducing >600K SNPs to 4,096 continuous latent tokens, and trains a transformer parameterized conditional flow matching model over the concatenated multi-chromosome latent representation. Trained on over 417K genomes in the UK Biobank, HELICS generates genome-wide common-variant synthetic cohorts without haplotype phasing and achieves stronger fidelity to real genotypes than existing haplotype-based simulators, including high allele-frequency agreement in external evaluation and superior preservation of local and long-range SNP correlation structure. Conditioning on ancestry and genetic liability summaries enables targeted generation across genetic risk profiles; in perturbation analyses, by increasing the conditioned disease trait liability, HELICS induces SNP-level dosage changes in generated genomes that are highly correlated with published association weights. HELICS provides a scalable generative modeling framework for SNP-level genome data and a path toward conditional synthetic cohorts for data-limited genetic studies.\nAuthors: Ahmad Abdel-Azim, Xihong Lin\narXiv: 2610.36361v1 (first submitted 2026-10-26T22:25:36Z; categories: q-bio.GN, cs.LG)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The preprint reports stronger allele-frequency agreement and preservation of local and long-range SNP correlations than the compared haplotype-based simulators. Conditional generation follows ancestry and genetic-liability summaries; dosage shifts correlate with published association weights in perturbation analyses.\nCaveat: Fidelity and association-weight correlation do not establish privacy protection, especially against membership inference. The authors focus on common variants; rare variants and performance in underrepresented populations need separate evaluation.\nAnnouncement type: new submission, 2026-10-26\nThemes: DNA & genomics; Bioinformatics & sequence analysis; Quantitative methods"
+    },
+    {
+      "id": "07-escaping-cells-dilute-crispr-screen-responses-unequally",
+      "kind": "paper",
+      "rank": 7,
+      "title": "Escaping cells dilute CRISPR screen responses unequally across cell types",
+      "url": "https://arxiv.org/abs/2610.355081",
+      "arxiv_id": "2610.35508",
+      "arxiv_version": "v1",
+      "published": "2026-10-26T14:33:48Z",
+      "updated": "2026-10-26T14:33:48Z",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Xuanrui Huang"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "Single-cell CRISPR screens run in many cell types are used to compare how cell types respond to perturbation, to train models that transfer effects between them and to score such models. These uses assume that cells carrying a guide RNA had their target knocked down. Yet cells grow for days before sequencing: when an essential gene is knocked down, knocked-down cells are depleted or stop dividing while cells that escaped knockdown keep growing, and the measured response, an average over all cells carrying the guide, is diluted. We define the escape fraction of a perturbation as the share of its measured cells whose target was not effectively knocked down, and estimate it from each cell's counts of the targeted gene with a two-group mixture that recovers known fractions in simulated mixtures. In most cell types the escape fraction rises with how essential the gene is, it is higher in a later screen of the same cells, and it reaches about half of the measured cells in human embryonic stem cells (hESCs). It predicts how much each response is diluted: the response size falls to (1 - e)^2 of that of the knocked-down cells. Because the escape fraction differs between cell types, it changes all three uses: hESCs respond like K562 cells unless knockdown depletes them, the coefficient a simple transfer model learns is lowered by the dilution of the cell type it predicts, and a benchmark scored on all cells rewards predictions shrunk towards no change, partly because that ground truth is itself diluted. Where cells stop dividing instead, the response also contains expression differences between cell-cycle stages. Response sizes should be compared on knocked-down cells or corrected for the escape fraction.",
+      "claimed_contribution": "The preprint reports that escape fractions rise with gene essentiality in most examined cell types, reaching about half of measured cells for the most essential perturbations in human embryonic stem cells. The estimated fraction predicts dilution of response size and affects cell-type transfer coefficients and benchmark scores.",
+      "unique_caveat": "The estimator is based on target-transcript counts, not an independent protein-level knockdown measurement. Only seven cell types had enough cells for the core per-perturbation estimate, and screen timing and protocols vary.",
+      "refs": [
+        "https://arxiv.org/abs/2610.35508v1",
+        "https://github.com/xuanruihuang/which-cells-are-measured"
+      ],
+      "source_markdown": "Abstract: Single-cell CRISPR screens run in many cell types are used to compare how cell types respond to perturbation, to train models that transfer effects between them and to score such models. These uses assume that cells carrying a guide RNA had their target knocked down. Yet cells grow for days before sequencing: when an essential gene is knocked down, knocked-down cells are depleted or stop dividing while cells that escaped knockdown keep growing, and the measured response, an average over all cells carrying the guide, is diluted. We define the escape fraction of a perturbation as the share of its measured cells whose target was not effectively knocked down, and estimate it from each cell's counts of the targeted gene with a two-group mixture that recovers known fractions in simulated mixtures. In most cell types the escape fraction rises with how essential the gene is, it is higher in a later screen of the same cells, and it reaches about half of the measured cells in human embryonic stem cells (hESCs). It predicts how much each response is diluted: the response size falls to (1 - e)^2 of that of the knocked-down cells. Because the escape fraction differs between cell types, it changes all three uses: hESCs respond like K562 cells unless knockdown depletes them, the coefficient a simple transfer model learns is lowered by the dilution of the cell type it predicts, and a benchmark scored on all cells rewards predictions shrunk towards no change, partly because that ground truth is itself diluted. Where cells stop dividing instead, the response also contains expression differences between cell-cycle stages. Response sizes should be compared on knocked-down cells or corrected for the escape fraction.\nAuthors: Xuanrui Huang\narXiv: 2610.35508v1 (first submitted 2026-10-26T14:33:48Z; categories: q-bio.QM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The preprint reports that escape fractions rise with gene essentiality in most examined cell types, reaching about half of measured cells for the most essential perturbations in human embryonic stem cells. The estimated fraction predicts dilution of response size and affects cell-type transfer coefficients and benchmark scores.\nCaveat: The estimator is based on target-transcript counts, not an independent protein-level knockdown measurement. Only seven cell types had enough cells for the core per-perturbation estimate, and screen timing and protocols vary.\nAnnouncement type: new submission, 2026-10-26\nThemes: Omics & single-cell methods; Molecular & cell biology; Quantitative methods"
+    },
+    {
+      "id": "08-mechgate-combining-mechanism-derived-measures-of-permea",
+      "kind": "paper",
+      "rank": 8,
+      "title": "MechGate: combining mechanism-derived measures of permeation and efflux to screen small molecule drugs targeting Escherichia coli",
+      "url": "https://arxiv.org/abs/2610.338091",
+      "arxiv_id": "2610.33809",
+      "arxiv_version": "v1",
+      "published": "2026-10-24T17:14:30Z",
+      "updated": "2026-10-24T17:14:30Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Lang Qin",
+        "Jagath C Rajapakse"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Most antibiotic molecules must cross the cell membrane and escape efflux pumps before hitting their targets. For de novo antibiotic design, very few of the in-silico-generated drug molecules can successfully pass these two steps. Existing evaluations of generated molecules do not separate these steps. Therefore, we introduce MechGate, a mechanism-resolved screening tool evaluating small drug molecules against E. coli, measuring permeation, efflux and antibacterial activity. After SMILES input, five measures are reported side by side: two for permeation via porins, one for permeation via the phospholipid membrane, one for efflux and one for activity. Each measure is read on its own, so a molecule that fails can be traced to the step that stops it. All features are taken from papers that state their mechanism rather than selected by importance ranking. On an external set of marketed antibacterials the measures give a precision of 0.789 to 0.873 against baselines near 0.44, and combining them the way the mechanism predicts raises precision to 0.92. We also find that the four public source libraries are separable from one another using physicochemical features alone; every measure here therefore draws both classes from a single library. All code is open-source and requires no commercial software.",
+      "claimed_contribution": "The authors report precision of 0.789–0.873 for individual measures against baselines near 0.44, and 0.92 when combined according to the proposed mechanism. The tool returns five diagnostic measures without ranking molecules.",
+      "unique_caveat": "This is computational screening against curated endpoints, not a wet-lab antibiotic discovery or permeability experiment. The authors note that public source libraries can be separated by physicochemical features, which complicates validation.",
+      "refs": [
+        "https://arxiv.org/abs/2610.33809v1",
+        "https://github.com/qinlang0008-blip/mechgate"
+      ],
+      "source_markdown": "Abstract: Most antibiotic molecules must cross the cell membrane and escape efflux pumps before hitting their targets. For de novo antibiotic design, very few of the in-silico-generated drug molecules can successfully pass these two steps. Existing evaluations of generated molecules do not separate these steps. Therefore, we introduce MechGate, a mechanism-resolved screening tool evaluating small drug molecules against E. coli, measuring permeation, efflux and antibacterial activity. After SMILES input, five measures are reported side by side: two for permeation via porins, one for permeation via the phospholipid membrane, one for efflux and one for activity. Each measure is read on its own, so a molecule that fails can be traced to the step that stops it. All features are taken from papers that state their mechanism rather than selected by importance ranking. On an external set of marketed antibacterials the measures give a precision of 0.789 to 0.873 against baselines near 0.44, and combining them the way the mechanism predicts raises precision to 0.92. We also find that the four public source libraries are separable from one another using physicochemical features alone; every measure here therefore draws both classes from a single library. All code is open-source and requires no commercial software.\nAuthors: Lang Qin, Jagath C Rajapakse\narXiv: 2610.33809v1 (first submitted 2026-10-24T17:14:30Z; categories: q-bio.BM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The authors report precision of 0.789–0.873 for individual measures against baselines near 0.44, and 0.92 when combined according to the proposed mechanism. The tool returns five diagnostic measures without ranking molecules.\nCaveat: This is computational screening against curated endpoints, not a wet-lab antibiotic discovery or permeability experiment. The authors note that public source libraries can be separated by physicochemical features, which complicates validation.\nAnnouncement type: new submission, 2026-10-24\nThemes: Biochemistry & proteins; Biomedical & translational medicine; Bioinformatics & sequence analysis"
+    },
+    {
+      "id": "09-benchmarking-mirna-target-prediction-methods",
+      "kind": "paper",
+      "rank": 9,
+      "title": "Benchmarking miRNA Target Prediction Methods",
+      "url": "https://arxiv.org/abs/2610.339601",
+      "arxiv_id": "2610.33960",
+      "arxiv_version": "v1",
+      "published": "2026-10-25T00:23:22Z",
+      "updated": "2026-10-25T00:23:22Z",
+      "categories": [
+        "q-bio.GN",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Congliang Jin",
+        "Weibo Niu",
+        "Zhexing Wen",
+        "Zhaohui S Qin",
+        "Ximing Ran"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Background: MicroRNAs (miRNAs) regulate gene expression by binding to target mRNAs. Although many tools predict miRNA-target interactions, predictions show limited concordance, and benchmarks relying on curated databases may be biased by overlap with tool-development data. Methods: We benchmarked seven tools (TargetScan, miRDB, miRmap, DIANA-microT, RNA22, miRWalk, and mirDIP) across approximately 59.7 million candidate miRNA-mRNA pairs. Each pair received an evidence-graded reference score (0-3) combining validated interactions from miRTarBase and TarBase with expression-derived evidence from paired miRNA-seq and mRNA-seq data in an induced pluripotent stem cell (iPSC) cohort of 22q11.2 deletion syndrome and control lines. Performance was evaluated using Type I error, statistical power, and false discovery proportion (FDP). Robustness was assessed by increasing reference-score stringency (truth signal) and including progressively lower-confidence predictions (model signal). Optimal cutoffs maximized Youden's J statistic. Results: Rankings were largely consistent across settings. TargetScan and miRDB maintained Type I error rates below 0.05, with TargetScan showing the lowest FDP, but both had limited power. mirDIP achieved the highest power at the cost of the highest Type I error rate. At optimal cutoffs, mirDIP best balanced sensitivity and specificity (Youden's J = 0.566), followed by DIANA-microT (J = 0.481); miRWalk and RNA22 had FDPs near the random-prediction baseline. No tool was optimal across all metrics; tool and cutoff selection should reflect whether sensitivity or specificity is prioritized.\"\"\"",
+      "claimed_contribution": "The preprint finds no tool is optimal across error control, power, and false-discovery proportion: TargetScan has the lowest FDP, while mirDIP is more sensitive but has the highest Type I error. The authors recommend selecting tools and cutoffs according to the application’s error trade-off.",
+      "unique_caveat": "Its evidence-graded reference is not a definitive ground truth, and expression-derived support does not prove direct molecular binding. The paired iPSC cohort is one biological context.",
+      "refs": [
+        "https://arxiv.org/abs/2610.33960v1"
+      ],
+      "source_markdown": "Abstract: Background: MicroRNAs (miRNAs) regulate gene expression by binding to target mRNAs. Although many tools predict miRNA-target interactions, predictions show limited concordance, and benchmarks relying on curated databases may be biased by overlap with tool-development data. Methods: We benchmarked seven tools (TargetScan, miRDB, miRmap, DIANA-microT, RNA22, miRWalk, and mirDIP) across approximately 59.7 million candidate miRNA-mRNA pairs. Each pair received an evidence-graded reference score (0-3) combining validated interactions from miRTarBase and TarBase with expression-derived evidence from paired miRNA-seq and mRNA-seq data in an induced pluripotent stem cell (iPSC) cohort of 22q11.2 deletion syndrome and control lines. Performance was evaluated using Type I error, statistical power, and false discovery proportion (FDP). Robustness was assessed by increasing reference-score stringency (truth signal) and including progressively lower-confidence predictions (model signal). Optimal cutoffs maximized Youden's J statistic. Results: Rankings were largely consistent across settings. TargetScan and miRDB maintained Type I error rates below 0.05, with TargetScan showing the lowest FDP, but both had limited power. mirDIP achieved the highest power at the cost of the highest Type I error rate. At optimal cutoffs, mirDIP best balanced sensitivity and specificity (Youden's J = 0.566), followed by DIANA-microT (J = 0.481); miRWalk and RNA22 had FDPs near the random-prediction baseline. No tool was optimal across all metrics; tool and cutoff selection should reflect whether sensitivity or specificity is prioritized.\"\"\"\nAuthors: Congliang Jin, Weibo Niu, Zhexing Wen, Zhaohui S Qin, Ximing Ran\narXiv: 2610.33960v1 (first submitted 2026-10-25T00:23:22Z; categories: q-bio.GN, q-bio.QM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The preprint finds no tool is optimal across error control, power, and false-discovery proportion: TargetScan has the lowest FDP, while mirDIP is more sensitive but has the highest Type I error. The authors recommend selecting tools and cutoffs according to the application’s error trade-off.\nCaveat: Its evidence-graded reference is not a definitive ground truth, and expression-derived support does not prove direct molecular binding. The paired iPSC cohort is one biological context.\nAnnouncement type: new submission, 2026-10-25\nThemes: RNA & transcriptomics; Bioinformatics & sequence analysis; Quantitative methods"
+    },
+    {
+      "id": "10-enhancing-clinical-classifier-robustness-with-deep-repr",
+      "kind": "paper",
+      "rank": 10,
+      "title": "Enhancing Clinical Classifier Robustness with Deep Representation Learning Based OOD Detection on DNA Methylation Data",
+      "url": "https://arxiv.org/abs/2610.363441",
+      "arxiv_id": "2610.36344",
+      "arxiv_version": "v1",
+      "published": "2026-10-26T22:11:07Z",
+      "updated": "2026-10-26T22:11:07Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": [
+        "Md Zahangir Alom",
+        "Quynh T. Tran",
+        "Breuer Alexandar",
+        "Brent A. Orr"
+      ],
+      "themes": [
+        "Gene regulation & epigenetics",
+        "Bioinformatics & sequence analysis",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "DNA methylation (DNAM) array-based tumor classification is a powerful clinical diagnostic tool, but models trained on fixed reference cohorts can produce faulty predictions for tumor types not represented in the training distribution. We propose an end-to-end deep representation learning-based out-of-distribution (OOD) detection framework for DNAm array data. Deep neural network (DNN) classifiers were trained on public sarcoma (SARC) (GSE140686) and brain tumor (BT) (GSE90496) cohorts, and feature vectors were extracted from bottleneck layers. Five OOD methods, including 1dimension (1D)-Subspace Analysis (1D-SSA), K-Nearest Neighbors (KNN), Ridge Regression, Mahalanobis Distance (MD), and Sum of Squared Distances (SSD), were explored with 200 and 500-dimensional embeddings. Spectral discrepancy was used to discriminate in-distribution (IND) from OOD samples. Performance was measured via cross-validation, holdout samples, and an independent clinical dataset. 1D-SSA was the most effective approach. In the sarcoma-IND/brain tumor-OOD setting, the framework achieved an AUROC of 0.975 and True Negative Rate (TNR)@95TPR of 0.930, and an AUROC of 0.9569 and TNR@95TPR of 0.8660 for the brain tumor-IND/sarcoma-OOD setting. On the independent clinical test set, the method yielded a mean AUROC of 0.976, a DE of 0.032, an FPR@95TPR of 0.065, and a TNR@95TPR of 0.935. These results show deep representation-based OOD detection as a practical quality-control layer for clinical-grade methylation-based tumor classification systems.",
+      "claimed_contribution": "The authors report that 1D-SSA was their strongest tested OOD method, with AUROC 0.975 in one sarcoma-in-distribution/brain-tumor-out setting and mean AUROC 0.976 on the independent clinical test set.",
+      "unique_caveat": "The abstract does not state the independent test-set sample size. This is retrospective model evaluation, not prospective evidence that OOD detection improves clinical decisions or patient outcomes.",
+      "refs": [
+        "https://arxiv.org/abs/2610.36344v1"
+      ],
+      "source_markdown": "Abstract: DNA methylation (DNAM) array-based tumor classification is a powerful clinical diagnostic tool, but models trained on fixed reference cohorts can produce faulty predictions for tumor types not represented in the training distribution. We propose an end-to-end deep representation learning-based out-of-distribution (OOD) detection framework for DNAm array data. Deep neural network (DNN) classifiers were trained on public sarcoma (SARC) (GSE140686) and brain tumor (BT) (GSE90496) cohorts, and feature vectors were extracted from bottleneck layers. Five OOD methods, including 1dimension (1D)-Subspace Analysis (1D-SSA), K-Nearest Neighbors (KNN), Ridge Regression, Mahalanobis Distance (MD), and Sum of Squared Distances (SSD), were explored with 200 and 500-dimensional embeddings. Spectral discrepancy was used to discriminate in-distribution (IND) from OOD samples. Performance was measured via cross-validation, holdout samples, and an independent clinical dataset. 1D-SSA was the most effective approach. In the sarcoma-IND/brain tumor-OOD setting, the framework achieved an AUROC of 0.975 and True Negative Rate (TNR)@95TPR of 0.930, and an AUROC of 0.9569 and TNR@95TPR of 0.8660 for the brain tumor-IND/sarcoma-OOD setting. On the independent clinical test set, the method yielded a mean AUROC of 0.976, a DE of 0.032, an FPR@95TPR of 0.065, and a TNR@95TPR of 0.935. These results show deep representation-based OOD detection as a practical quality-control layer for clinical-grade methylation-based tumor classification systems.\nAuthors: Md Zahangir Alom, Quynh T. Tran, Breuer Alexandar, Brent A. Orr\narXiv: 2610.36344v1 (first submitted 2026-10-26T22:11:07Z; categories: q-bio.GN, cs.AI, cs.LG)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The authors report that 1D-SSA was their strongest tested OOD method, with AUROC 0.975 in one sarcoma-in-distribution/brain-tumor-out setting and mean AUROC 0.976 on the independent clinical test set.\nCaveat: The abstract does not state the independent test-set sample size. This is retrospective model evaluation, not prospective evidence that OOD detection improves clinical decisions or patient outcomes.\nAnnouncement type: new submission, 2026-10-26\nThemes: Gene regulation & epigenetics; Bioinformatics & sequence analysis; Biomedical & translational medicine"
+    },
+    {
+      "id": "11-probe-before-you-edit-probing-guided-molecular-optimiza",
+      "kind": "paper",
+      "rank": 11,
+      "title": "Probe Before You Edit: Probing-Guided Molecular Optimization for LLM Agents in Structure-Based Drug Design",
+      "url": "https://arxiv.org/abs/2606.005553",
+      "arxiv_id": "2606.00555",
+      "arxiv_version": "v3",
+      "published": "2026-05-30T06:06:51Z",
+      "updated": "2026-10-23T13:42:47Z",
+      "categories": [
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Zaifei Yang",
+        "Weiyu Chen",
+        "Yaqing Wang",
+        "James Kwok"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Structure-based drug design increasingly employs LLM agents to iteratively refine ligands against a target pocket, yet a viable ligand must satisfy two often-conflicting objectives---binding affinity and druggability---which single optimization steps rarely improve together. To quantify this difficulty, we introduce two diagnostic metrics: the first measures how often a single edit improves both objectives, and the second measures how often a gain on one objective comes with a loss on the other. Applying these diagnostics to current LLM-agent pipelines exposes a consistent failure mode: the agent performs molecular editing without knowing how the pocket-ligand complex responds to local modifications, thus rarely achieving joint improvement. Inspired by medicinal chemists, who probe the pocket-ligand complex with controlled analog edits before choosing an optimization direction, we propose \\textbf{PROBE}, an optimization framework built around edit--response probing. PROBE first decomposes the ligand into editable sites and builds a pocket-specific \\textbf{site map} that flags where joint gains are plausible, where the two objectives are likely in tension, and where liability substructures should be changed; it then performs controlled probe edits whose responses are distilled into an \\textbf{EditManual}. Guided by the site map and EditManual, PROBE runs an iterative multi-agent optimization loop. On the CrossDocked2020 benchmark, PROBE achieves state-of-the-art performance and substantially mitigates the failure modes exposed by our diagnostics metrics. Codes are in https://github.com/yzf-code/PROBE/tree/main",
+      "claimed_contribution": "The preprint proposes site maps and an edit-response manual to help an agent navigate affinity–druggability trade-offs, and reports state-of-the-art performance on its benchmark plus improved results on its diagnostic metrics.",
+      "unique_caveat": "Evidence is benchmark and computational optimization, not measured binding affinity, pharmacokinetics, safety, or efficacy. Results may depend on the benchmark’s docking and scoring assumptions.",
+      "refs": [
+        "https://arxiv.org/abs/2606.00555v3",
+        "https://github.com/yzf-code/PROBE"
+      ],
+      "source_markdown": "Abstract: Structure-based drug design increasingly employs LLM agents to iteratively refine ligands against a target pocket, yet a viable ligand must satisfy two often-conflicting objectives---binding affinity and druggability---which single optimization steps rarely improve together. To quantify this difficulty, we introduce two diagnostic metrics: the first measures how often a single edit improves both objectives, and the second measures how often a gain on one objective comes with a loss on the other. Applying these diagnostics to current LLM-agent pipelines exposes a consistent failure mode: the agent performs molecular editing without knowing how the pocket-ligand complex responds to local modifications, thus rarely achieving joint improvement. Inspired by medicinal chemists, who probe the pocket-ligand complex with controlled analog edits before choosing an optimization direction, we propose \\textbf{PROBE}, an optimization framework built around edit--response probing. PROBE first decomposes the ligand into editable sites and builds a pocket-specific \\textbf{site map} that flags where joint gains are plausible, where the two objectives are likely in tension, and where liability substructures should be changed; it then performs controlled probe edits whose responses are distilled into an \\textbf{EditManual}. Guided by the site map and EditManual, PROBE runs an iterative multi-agent optimization loop. On the CrossDocked2020 benchmark, PROBE achieves state-of-the-art performance and substantially mitigates the failure modes exposed by our diagnostics metrics. Codes are in https://github.com/yzf-code/PROBE/tree/main\nAuthors: Zaifei Yang, Weiyu Chen, Yaqing Wang, James Kwok\narXiv: 2606.00555v3 (first submitted 2026-05-30T06:06:51Z; categories: cs.AI, q-bio.BM)\nEvidence for ranking: Semantic Scholar current citations 1; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The preprint proposes site maps and an edit-response manual to help an agent navigate affinity–druggability trade-offs, and reports state-of-the-art performance on its benchmark plus improved results on its diagnostic metrics.\nCaveat: Evidence is benchmark and computational optimization, not measured binding affinity, pharmacokinetics, safety, or efficacy. Results may depend on the benchmark’s docking and scoring assumptions.\nAnnouncement type: revision, 2026-10-23\nThemes: Biochemistry & proteins; Quantitative methods"
+    },
+    {
+      "id": "12-pytransrate-reference-free-quality-assessment-of-de-nov",
+      "kind": "paper",
+      "rank": 12,
+      "title": "pyTransRate: reference-free quality assessment of de novo transcriptome assemblies with current aligners and quantifiers",
+      "url": "https://arxiv.org/abs/2610.370312",
+      "arxiv_id": "2610.37031",
+      "arxiv_version": "v2",
+      "published": "2026-10-27T11:08:52Z",
+      "updated": "2026-10-28T10:54:25Z",
+      "categories": [
+        "q-bio.GN",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Matthew MacManes"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Summary: The original software TransRate scores a de novo transcriptome assembly by mapping the reads it was built from back to it, with no reference required. Its last release (1.0.3) depends on Ruby 2.2 and on aligner and quantifier versions that can no longer be installed on most systems. pyTransRate is a Python reimplementation of the TransRate method built on snap-aligner 2.0.5 and salmon 2.7.0. In 5,031 paired comparisons (39 assembly-level metrics on each of 129 public assemblies), it reproduces the original sequence metrics and read counts exactly and ranks assemblies consistently with 1.0.3 (Spearman rho = 0.94 for assembly score, 0.98 for good-mapping rate), although its read-based scores are not numerically interchangeable with the original. It also reads gzip- and bgzip-compressed input directly. Availability and Implementation: pyTransRate is implemented in Python 3 and is freely available under the MIT license at https://github.com/macmanes-lab/pytransrate. It runs on Linux and macOS; snap-aligner and salmon are installed from Bioconda. Supplementary information: Supplementary data are available online. Supplementary Table S1 lists the assembly and read accessions for every assembly analyzed; Supplementary Table S2 gives per-assembly values from both implementations.",
+      "claimed_contribution": "The author reports exact reproduction of sequence metrics and read counts, with strong rank agreement for assembly score (Spearman ρ=0.94) and good-mapping rate (ρ=0.98) against TransRate 1.0.3.",
+      "unique_caveat": "Read-based scores are not numerically interchangeable with the original, despite rank consistency. The study evaluates reimplementation agreement, not a biological gold standard for assembly completeness.",
+      "refs": [
+        "https://arxiv.org/abs/2610.37031v2",
+        "https://github.com/macmanes-lab/pytransrate"
+      ],
+      "source_markdown": "Abstract: Summary: The original software TransRate scores a de novo transcriptome assembly by mapping the reads it was built from back to it, with no reference required. Its last release (1.0.3) depends on Ruby 2.2 and on aligner and quantifier versions that can no longer be installed on most systems. pyTransRate is a Python reimplementation of the TransRate method built on snap-aligner 2.0.5 and salmon 2.7.0. In 5,031 paired comparisons (39 assembly-level metrics on each of 129 public assemblies), it reproduces the original sequence metrics and read counts exactly and ranks assemblies consistently with 1.0.3 (Spearman rho = 0.94 for assembly score, 0.98 for good-mapping rate), although its read-based scores are not numerically interchangeable with the original. It also reads gzip- and bgzip-compressed input directly. Availability and Implementation: pyTransRate is implemented in Python 3 and is freely available under the MIT license at https://github.com/macmanes-lab/pytransrate. It runs on Linux and macOS; snap-aligner and salmon are installed from Bioconda. Supplementary information: Supplementary data are available online. Supplementary Table S1 lists the assembly and read accessions for every assembly analyzed; Supplementary Table S2 gives per-assembly values from both implementations.\nAuthors: Matthew MacManes\narXiv: 2610.37031v2 (first submitted 2026-10-27T11:08:52Z; categories: q-bio.GN, q-bio.QM)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The author reports exact reproduction of sequence metrics and read counts, with strong rank agreement for assembly score (Spearman ρ=0.94) and good-mapping rate (ρ=0.98) against TransRate 1.0.3.\nCaveat: Read-based scores are not numerically interchangeable with the original, despite rank consistency. The study evaluates reimplementation agreement, not a biological gold standard for assembly completeness.\nAnnouncement type: revision, 2026-10-28\nThemes: RNA & transcriptomics; Bioinformatics & sequence analysis; Quantitative methods"
+    },
+    {
+      "id": "13-mdrnacat-a-molecular-dynamics-rna-catalog-of-rest2-conf",
+      "kind": "paper",
+      "rank": 13,
+      "title": "mdRNAcat: A Molecular Dynamics RNA Catalog of REST2 Conformational Ensembles",
+      "url": "https://arxiv.org/abs/2610.352042",
+      "arxiv_id": "2610.35204",
+      "arxiv_version": "v2",
+      "published": "2026-10-26T10:56:24Z",
+      "updated": "2026-10-27T10:19:38Z",
+      "categories": [
+        "q-bio.BM",
+        "cs.LG",
+        "physics.bio-ph"
+      ],
+      "authors": [
+        "Anton E. Dorn",
+        "Emile de Bruyn",
+        "Fabrice von der Lehr",
+        "Philipp Knechtges",
+        "Stefan Kesselheim",
+        "Alexander Schug"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Learning molecular models of RNA requires simulation data that capture conformational variability and provide consistent physical training signals. Here, we introduce mdRNAcat, a curated dataset of all-atom molecular dynamics (MD) simulations of 48 RNA systems selected to promote sequence diversity. Each system is simulated using replica-exchange with solute scaling (REST2), with 32 Hamiltonian states and production lengths of 200-300 ns per state. The dataset provides atomic coordinates, instantaneous forces, and forces reevaluated under the unscaled reference Hamiltonian, together with structural annotations and replica-exchange metadata. Coordinates and forces are available at 1 ps intervals for the reference state and 100 ps intervals across all states in a standardized HDF5 format. We characterize conformational sampling, exchange behavior, base pairing, and sugar-pucker distributions to document the properties of the simulated ensembles. mdRNAcat provides a reusable resource for developing and evaluating data-driven RNA models, including coarse-grained force fields.",
+      "claimed_contribution": "The authors provide coordinates, instantaneous and reference-Hamiltonian forces, structural annotations, and replica-exchange metadata, with 200–300 ns production per state, to support training and evaluating RNA models.",
+      "unique_caveat": "This is a simulation dataset; coverage and conformational populations depend on force-field and sampling choices and are not equivalent to experimentally measured ensembles. The 48 systems do not represent all RNA classes.",
+      "refs": [
+        "https://arxiv.org/abs/2610.35204v2",
+        "https://huggingface.co/datasets/HelmholtzAI-FZJ/mdRNAcat"
+      ],
+      "source_markdown": "Abstract: Learning molecular models of RNA requires simulation data that capture conformational variability and provide consistent physical training signals. Here, we introduce mdRNAcat, a curated dataset of all-atom molecular dynamics (MD) simulations of 48 RNA systems selected to promote sequence diversity. Each system is simulated using replica-exchange with solute scaling (REST2), with 32 Hamiltonian states and production lengths of 200-300 ns per state. The dataset provides atomic coordinates, instantaneous forces, and forces reevaluated under the unscaled reference Hamiltonian, together with structural annotations and replica-exchange metadata. Coordinates and forces are available at 1 ps intervals for the reference state and 100 ps intervals across all states in a standardized HDF5 format. We characterize conformational sampling, exchange behavior, base pairing, and sugar-pucker distributions to document the properties of the simulated ensembles. mdRNAcat provides a reusable resource for developing and evaluating data-driven RNA models, including coarse-grained force fields.\nAuthors: Anton E. Dorn, Emile de Bruyn, Fabrice von der Lehr, Philipp Knechtges, Stefan Kesselheim, Alexander Schug\narXiv: 2610.35204v2 (first submitted 2026-10-26T10:56:24Z; categories: q-bio.BM, cs.LG, physics.bio-ph)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The authors provide coordinates, instantaneous and reference-Hamiltonian forces, structural annotations, and replica-exchange metadata, with 200–300 ns production per state, to support training and evaluating RNA models.\nCaveat: This is a simulation dataset; coverage and conformational populations depend on force-field and sampling choices and are not equivalent to experimentally measured ensembles. The 48 systems do not represent all RNA classes.\nAnnouncement type: revision, 2026-10-27\nThemes: RNA & transcriptomics; Biochemistry & proteins; Quantitative methods"
+    },
+    {
+      "id": "14-omicslm-a-multimodal-large-language-model-for-multi-sam",
+      "kind": "paper",
+      "rank": 14,
+      "title": "OmicsLM: A Multimodal Large Language Model for Multi-Sample Omics Reasoning",
+      "url": "https://arxiv.org/abs/2605.067282",
+      "arxiv_id": "2605.06728",
+      "arxiv_version": "v2",
+      "published": "2026-05-07T11:27:11Z",
+      "updated": "2026-10-25T08:32:57Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Maciej Sypetkowski",
+        "Łukasz Smoliński",
+        "Remigiusz Kinas",
+        "Joanna Krawczyk",
+        "Bartłomiej Hofman",
+        "Aleksandra Możwiłło",
+        "Michał Pikusa",
+        "Tomasz Jetka",
+        "Rafał Powalski"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Large language models can reason over biological knowledge, but they are not naturally equipped to work with quantitative omics measurements. Existing approaches either convert expression profiles into long textual representations, often losing quantitative information, or connect omics encoders to language models for narrow tasks. We introduce OmicsLM, a 9B multimodal language model that represents each bulk or single-cell transcriptome as a compact continuous embedding that can be interleaved with natural-language instructions and with other samples in the same context. An key contribution is a training corpus that connects experimental measurements with biological knowledge and task supervision. We combine templates linking transcriptomic profiles to annotations and experimental outcomes, reasoning examples connecting evidence across sources, and LLM-generated supervision with task-specific quality checks. The instruction-tuning corpus spans 157 biological and general-purpose task groups. Training includes continued pretraining on 20 billion tokens and supervised fine-tuning on 5.21 million conversations. We further introduce GEO-OmicsQA, a publication-disjoint benchmark of 3,000 questions requiring models to interpret and compare expression profiles from real GEO studies. OmicsLM achieves the best results among the evaluated models on three of four held-out annotation tasks and on all six GEO-OmicsQA variants, and the best average performance among compared methods on PerturbQA perturbation-response prediction. Ablations show a clear advantage for continuous omics representations over a text-only gene-list representation. Together, these results show that quantitative transcriptomic measurements and biological language can be integrated within a general conversational model, enabling both predictive tasks and language-guided interpretation of experimental samples.",
+      "claimed_contribution": "The authors report that a 9B model trained with continuous omics representations leads the compared systems on three of four held-out annotation tasks, six GEO-OmicsQA variants, and the average PerturbQA result.",
+      "unique_caveat": "These are model benchmark results, not experimental validation of inferred biology. The training corpus includes LLM-generated supervision, so evaluation leakage, task coverage, and answer grounding remain relevant checks.",
+      "refs": [
+        "https://arxiv.org/abs/2605.06728v2"
+      ],
+      "source_markdown": "Abstract: Large language models can reason over biological knowledge, but they are not naturally equipped to work with quantitative omics measurements. Existing approaches either convert expression profiles into long textual representations, often losing quantitative information, or connect omics encoders to language models for narrow tasks. We introduce OmicsLM, a 9B multimodal language model that represents each bulk or single-cell transcriptome as a compact continuous embedding that can be interleaved with natural-language instructions and with other samples in the same context. An key contribution is a training corpus that connects experimental measurements with biological knowledge and task supervision. We combine templates linking transcriptomic profiles to annotations and experimental outcomes, reasoning examples connecting evidence across sources, and LLM-generated supervision with task-specific quality checks. The instruction-tuning corpus spans 157 biological and general-purpose task groups. Training includes continued pretraining on 20 billion tokens and supervised fine-tuning on 5.21 million conversations. We further introduce GEO-OmicsQA, a publication-disjoint benchmark of 3,000 questions requiring models to interpret and compare expression profiles from real GEO studies. OmicsLM achieves the best results among the evaluated models on three of four held-out annotation tasks and on all six GEO-OmicsQA variants, and the best average performance among compared methods on PerturbQA perturbation-response prediction. Ablations show a clear advantage for continuous omics representations over a text-only gene-list representation. Together, these results show that quantitative transcriptomic measurements and biological language can be integrated within a general conversational model, enabling both predictive tasks and language-guided interpretation of experimental samples.\nAuthors: Maciej Sypetkowski, Łukasz Smoliński, Remigiusz Kinas, Joanna Krawczyk, Bartłomiej Hofman, Aleksandra Możwiłło, Michał Pikusa, Tomasz Jetka, Rafał Powalski\narXiv: 2605.06728v2 (first submitted 2026-05-07T11:27:11Z; categories: q-bio.GN, cs.AI, q-bio.CB)\nEvidence for ranking: Semantic Scholar current citations 1; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The authors report that a 9B model trained with continuous omics representations leads the compared systems on three of four held-out annotation tasks, six GEO-OmicsQA variants, and the average PerturbQA result.\nCaveat: These are model benchmark results, not experimental validation of inferred biology. The training corpus includes LLM-generated supervision, so evaluation leakage, task coverage, and answer grounding remain relevant checks.\nAnnouncement type: revision, 2026-10-25\nThemes: Omics & single-cell methods; RNA & transcriptomics; Bioinformatics & sequence analysis"
+    },
+    {
+      "id": "15-label-free-cell-counting-and-viability-prediction-with",
+      "kind": "paper",
+      "rank": 15,
+      "title": "Label-free cell counting and viability prediction with brightfield imaging and deep learning",
+      "url": "https://arxiv.org/abs/2610.104732",
+      "arxiv_id": "2610.10473",
+      "arxiv_version": "v2",
+      "published": "2026-10-07T17:34:54Z",
+      "updated": "2026-10-27T12:26:43Z",
+      "categories": [
+        "cs.CV",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Amir Reza Vazifeh",
+        "Christian Zeigler",
+        "Sornanathan Meyyappan",
+        "Richard Jeske",
+        "Jason W. Fleischer"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "Cell viability assessment is a core requirement in cell culture systems, with critical applications in biopharmaceutical manufacturing and drug development. Conventionally, it is measured by adding membrane-impermeable dyes to a sample (a process called staining), which allows compromised cell membranes to be distinguished from intact ones. However, staining has several limitations: (a) chemical agents can perturb normal cellular processes of the cells being measured, (b) it is often ambiguous to assign viability to individual cells whose membrane integrity is only partially compromised, (c) photobleaching can undermine measurement accuracy over time when using fluorescent stains, and (d) staining cannot be performed in situ or in real time. Here, we show that (1) stained cells captured under brightfield imaging contain sufficient information to distinguish live and dead cells, and (2) cells captured under unstained brightfield imaging exhibit similar image features to their stained counterparts, enabling models trained on stained cells to generalize to unstained ones. We then report the development and validation of ViabiLens, an AI-assisted software tool for label-free cell viability analysis. ViabiLens combines a cell detection model for localizing individual cells with a convolutional neural network (CNN) classifier for live/dead prediction, paired with an interactive UMAP-based viewer for visualizing and exploring individual cells across the sample. Evaluated on Chinese Hamster Ovary (CHO) cells spanning a wide range of viability conditions, ViabiLens achieves a mean absolute error of 2.33\\% on unstained samples against fluorescence-based reference measurements. The demo of ViabiLens software is available at https://amirrezavazifeh.github.io/ViabiLens-Project-Page/.",
+      "claimed_contribution": "The authors report a mean absolute error of 2.33% for viability estimates on unstained CHO-cell samples and provide an interactive analysis tool.",
+      "unique_caveat": "Validation is specific to CHO cells and the reported imaging/reference setup. It does not establish performance across other cell types, instruments, or clinical specimens.",
+      "refs": [
+        "https://arxiv.org/abs/2610.10473v2",
+        "https://amirrezavazifeh.github.io/ViabiLens-Project-Page/"
+      ],
+      "source_markdown": "Abstract: Cell viability assessment is a core requirement in cell culture systems, with critical applications in biopharmaceutical manufacturing and drug development. Conventionally, it is measured by adding membrane-impermeable dyes to a sample (a process called staining), which allows compromised cell membranes to be distinguished from intact ones. However, staining has several limitations: (a) chemical agents can perturb normal cellular processes of the cells being measured, (b) it is often ambiguous to assign viability to individual cells whose membrane integrity is only partially compromised, (c) photobleaching can undermine measurement accuracy over time when using fluorescent stains, and (d) staining cannot be performed in situ or in real time. Here, we show that (1) stained cells captured under brightfield imaging contain sufficient information to distinguish live and dead cells, and (2) cells captured under unstained brightfield imaging exhibit similar image features to their stained counterparts, enabling models trained on stained cells to generalize to unstained ones. We then report the development and validation of ViabiLens, an AI-assisted software tool for label-free cell viability analysis. ViabiLens combines a cell detection model for localizing individual cells with a convolutional neural network (CNN) classifier for live/dead prediction, paired with an interactive UMAP-based viewer for visualizing and exploring individual cells across the sample. Evaluated on Chinese Hamster Ovary (CHO) cells spanning a wide range of viability conditions, ViabiLens achieves a mean absolute error of 2.33\\% on unstained samples against fluorescence-based reference measurements. The demo of ViabiLens software is available at https://amirrezavazifeh.github.io/ViabiLens-Project-Page/.\nAuthors: Amir Reza Vazifeh, Christian Zeigler, Sornanathan Meyyappan, Richard Jeske, Jason W. Fleischer\narXiv: 2610.10473v2 (first submitted 2026-10-07T17:34:54Z; categories: cs.CV, q-bio.CB)\nEvidence for ranking: Semantic Scholar current citations 0; 0 influential citations; relevance and study-specific validation described in the report.\nClaimed contribution: The authors report a mean absolute error of 2.33% for viability estimates on unstained CHO-cell samples and provide an interactive analysis tool.\nCaveat: Validation is specific to CHO cells and the reported imaging/reference setup. It does not establish performance across other cell types, instruments, or clinical specimens.\nAnnouncement type: revision, 2026-10-27\nThemes: Molecular & cell biology; Quantitative methods; Biomedical & translational medicine"
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": "",
+      "source_markdown": "Benchmark validity in perturbation biology: shared clones and escaping cells can distort apparent reproducibility and effect sizes. Structure-aware molecular design and simulation span binders, glycan complexes, molecular dynamics, ligand optimization, and screening. Omics models and reusable resources cover genotypes, transcriptomes, RNA, and sequence analysis. Human-sample and cell-culture studies remain study-specific evaluations rather than broad clinical validation."
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": "",
+      "source_markdown": "Follow-up directions: prospectively test structure/design predictions with blinded targets, experimental structures or binding assays, and report failures; combine independent transductions, clone barcodes, target-protein measurements, matched harvest times, and null controls to test perturbation estimates across donors; stress-test synthetic genomes for privacy, rare variants, and ancestry-stratified fidelity, and evaluate omics models with publication-disjoint expert-curated or experimentally validated answers; compare simulated RNA ensembles with independent structural or biophysical measurements."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": "",
+      "source_markdown": "This week’s strongest pattern is methodological: data generation and benchmark design can shape apparent biological performance as much as the model. Promising computational and study-specific results still need external replication and experiment before supporting broader biological claims."
+    }
+  ]
+}

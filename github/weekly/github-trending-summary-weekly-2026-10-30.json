@@ -1,0 +1,514 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-10-30",
+  "title": "GitHub Trending Summary - Weekly - 2026-10-30",
+  "source_report": "~/.research/github/weekly/github-trending-summary-weekly-2026-10-30.md",
+  "entry_count": 13,
+  "entry_noun": "repositories",
+  "ranking_basis": "Weekly GitHub Trending star gains for the first 12 entries; a newly created Search API discovery is appended separately.",
+  "ranking_explanation": "The GitHub Trending weekly view’s displayed stars-this-week figures determine ranks 1–12 in descending order. unclebob/ub-mode was discovered in a GitHub Search API creation-date query and is supplemental at rank 13; it has no comparable weekly gain metric.",
+  "global_caveat": "Star counts are point-in-time GitHub values. Weekly gains are available only for repositories listed in the weekly Trending view; the supplemental newly created repository reports current total stars, not a weekly delta. Languages marked null were unavailable from GitHub metadata.",
+  "themes": [
+    {
+      "id": "agent-engineering-methods",
+      "title": "Agent engineering workflows and guardrails",
+      "summary": "Reusable skills and methodology are a dominant pattern, ranging from phased security audits and TDD/subagent workflows to lightweight coding principles and deterministic quality gates.",
+      "supporting_repo_ids": [
+        "01-cloudflare-security-audit-skill",
+        "05-obra-superpowers",
+        "07-multica-ai-andrej-karpathy-skills",
+        "09-anthropics-knowledge-work-plugins",
+        "10-ruvnet-ruflo",
+        "13-unclebob-ub-mode"
+      ]
+    },
+    {
+      "id": "design-agents-quality",
+      "title": "Design quality for generated interfaces",
+      "summary": "Three repositories focus on making agent-produced interfaces more intentional: design vocabulary and deterministic checks, art direction with browser review, and reusable UI skills.",
+      "supporting_repo_ids": [
+        "02-pbakaus-impeccable",
+        "06-leonxlnx-taste-skill",
+        "11-jakubkrehel-skills"
+      ]
+    },
+    {
+      "id": "domain-specialist-agent-products",
+      "title": "Agents applied to professional deliverables",
+      "summary": "Specialized agent workflows target financial research, SEO audits, native PowerPoint authoring and knowledge work rather than generic chat alone.",
+      "supporting_repo_ids": [
+        "03-tauricresearch-tradingagents",
+        "04-hugohe3-ppt-master",
+        "08-agricidaniel-claude-seo",
+        "09-anthropics-knowledge-work-plugins"
+      ]
+    },
+    {
+      "id": "multi-agent-orchestration",
+      "title": "Multi-agent orchestration",
+      "summary": "Several leaders distribute work across specialized or isolated agents, then use debate, verification or review before producing an output.",
+      "supporting_repo_ids": [
+        "01-cloudflare-security-audit-skill",
+        "03-tauricresearch-tradingagents",
+        "05-obra-superpowers",
+        "08-agricidaniel-claude-seo",
+        "10-ruvnet-ruflo"
+      ]
+    },
+    {
+      "id": "established-core-infrastructure",
+      "title": "Established core software remains visible",
+      "summary": "PHP’s C-based interpreter is the traditional infrastructure counterpoint in an otherwise agent-heavy list.",
+      "supporting_repo_ids": [
+        "12-php-php-src"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time (UTC): 2026-10-30 02:58 UTC | Scope: Weekly | Date range: 2026-10-23 through 2026-10-30 | Ranking basis: Weekly GitHub Trending star gains; one newly created repository is appended as a clearly marked Search API supplement."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "The strongest signal is the agent workflow layer: security auditing, interface design and structured coding workflows lead the weekly gains, while domain-specific agents are spreading into trading, SEO and presentation work. Cloudflare’s security-audit-skill tops the captured Trending view with 14,320 stars gained."
+    },
+    {
+      "id": "01-cloudflare-security-audit-skill",
+      "kind": "repo",
+      "title": "cloudflare/security-audit-skill",
+      "rank": 1,
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.",
+      "language": "JavaScript",
+      "stars_gained": 14320,
+      "total_stars": 52953,
+      "default_branch_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "why_notable": "It led the weekly Trending sample by a wide margin and turns agent-led vulnerability work into a phased, coverage-tracked process with independent candidate verification and structured findings.",
+      "theme_ids": [
+        "agent-engineering-methods",
+        "multi-agent-orchestration"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Cloudflare Security Audit Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/cloudflare/security-audit-skill",
+        "https://api.github.com/repos/cloudflare/security-audit-skill"
+      ],
+      "content": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings. Language: JavaScript. Stars gained in window: +14,320. Total stars: 52,953. Why notable: It led the weekly Trending sample by a wide margin and turns agent-led vulnerability work into a phased, coverage-tracked process with independent candidate verification and structured findings."
+    },
+    {
+      "id": "02-pbakaus-impeccable",
+      "kind": "repo",
+      "title": "pbakaus/impeccable",
+      "rank": 2,
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design vocabulary for coding agents: steer interfaces, critique and audit them, and catch common AI-generated design patterns.",
+      "language": "Rust",
+      "stars_gained": 9713,
+      "total_stars": 95565,
+      "default_branch_commit": "02523aec3e4c4580102d996d1b6a71fbe062e03f",
+      "why_notable": "Its strong second-place weekly gain reflects demand for a design-specific agent layer; its README distinguishes prompt playbooks from a deterministic 62-rule detector and technical audits.",
+      "theme_ids": [
+        "design-agents-quality"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Impeccable",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/pbakaus/impeccable",
+        "https://api.github.com/repos/pbakaus/impeccable"
+      ],
+      "content": "The design vocabulary for coding agents: steer interfaces, critique and audit them, and catch common AI-generated design patterns. Language: Rust. Stars gained in window: +9,713. Total stars: 95,565. Why notable: Its strong second-place weekly gain reflects demand for a design-specific agent layer; its README distinguishes prompt playbooks from a deterministic 62-rule detector and technical audits."
+    },
+    {
+      "id": "03-tauricresearch-tradingagents",
+      "kind": "repo",
+      "title": "TauricResearch/TradingAgents",
+      "rank": 3,
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "A multi-agent LLM financial trading research framework.",
+      "language": "Python",
+      "stars_gained": 5557,
+      "total_stars": 118371,
+      "default_branch_commit": "c4544913a14ed3df5f1ed7b9e8483270ce20682a",
+      "why_notable": "It applies role-based agents—analysts, bull/bear researchers, trader, risk team and portfolio manager—to trading research; its 5,557 weekly gains make it the leading domain-specific agent example here.",
+      "theme_ids": [
+        "domain-specialist-agent-products",
+        "multi-agent-orchestration"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Trading Agents",
+      "unique_caveat": "The project labels itself research software, not financial or investment advice; results depend on model, data and evaluation choices.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/TauricResearch/TradingAgents",
+        "https://api.github.com/repos/TauricResearch/TradingAgents"
+      ],
+      "content": "A multi-agent LLM financial trading research framework. Language: Python. Stars gained in window: +5,557. Total stars: 118,371. Why notable: It applies role-based agents—analysts, bull/bear researchers, trader, risk team and portfolio manager—to trading research; its 5,557 weekly gains make it the leading domain-specific agent example here."
+    },
+    {
+      "id": "04-hugohe3-ppt-master",
+      "kind": "repo",
+      "title": "hugohe3/ppt-master",
+      "rank": 4,
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "Turns documents or topics into native, editable PowerPoint decks with shapes, charts, tables, animations, narration and template support.",
+      "language": "Python",
+      "stars_gained": 4980,
+      "total_stars": 70906,
+      "default_branch_commit": "15baa7c570f12c78cd9ac6ead897724571e32e87",
+      "why_notable": "It moves beyond slide images and text boxes toward editable PowerPoint objects and a local, agent-driven document-to-deck workflow; it ranked fourth by weekly gains.",
+      "theme_ids": [
+        "domain-specialist-agent-products"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "PPT Master",
+      "unique_caveat": "README cautions that output quality depends on the selected model and expects human polishing.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/hugohe3/ppt-master",
+        "https://api.github.com/repos/hugohe3/ppt-master"
+      ],
+      "content": "Turns documents or topics into native, editable PowerPoint decks with shapes, charts, tables, animations, narration and template support. Language: Python. Stars gained in window: +4,980. Total stars: 70,906. Why notable: It moves beyond slide images and text boxes toward editable PowerPoint objects and a local, agent-driven document-to-deck workflow; it ranked fourth by weekly gains."
+    },
+    {
+      "id": "05-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 5,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework and software-development methodology for coding agents.",
+      "language": "Shell",
+      "stars_gained": 4894,
+      "total_stars": 308664,
+      "default_branch_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "why_notable": "A high-volume workflow framework: it elicits a spec, gets design approval, plans test-first implementation and delegates tasks to subagents with review.",
+      "theme_ids": [
+        "agent-engineering-methods",
+        "multi-agent-orchestration"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Superpowers",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/obra/superpowers",
+        "https://api.github.com/repos/obra/superpowers"
+      ],
+      "content": "An agentic skills framework and software-development methodology for coding agents. Language: Shell. Stars gained in window: +4,894. Total stars: 308,664. Why notable: A high-volume workflow framework: it elicits a spec, gets design approval, plans test-first implementation and delegates tasks to subagents with review."
+    },
+    {
+      "id": "06-leonxlnx-taste-skill",
+      "kind": "repo",
+      "title": "Leonxlnx/taste-skill",
+      "rank": 6,
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "Agent skills that give coding agents art direction, reference images and browser checks instead of generic-looking pages.",
+      "language": "JavaScript",
+      "stars_gained": 4359,
+      "total_stars": 105628,
+      "default_branch_commit": "12af471f627f866411b4bd785b19646d3672784c",
+      "why_notable": "Its weekly gain places it among the strongest design-agent signals, pairing art direction and visual references with an in-browser review loop.",
+      "theme_ids": [
+        "design-agents-quality"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 6,
+      "spoken_name": "Taste Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/Leonxlnx/taste-skill",
+        "https://api.github.com/repos/Leonxlnx/taste-skill"
+      ],
+      "content": "Agent skills that give coding agents art direction, reference images and browser checks instead of generic-looking pages. Language: JavaScript. Stars gained in window: +4,359. Total stars: 105,628. Why notable: Its weekly gain places it among the strongest design-agent signals, pairing art direction and visual references with an in-browser review loop."
+    },
+    {
+      "id": "07-multica-ai-andrej-karpathy-skills",
+      "kind": "repo",
+      "title": "multica-ai/andrej-karpathy-skills",
+      "rank": 7,
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file of coding-agent guidance inspired by Andrej Karpathy’s observations on LLM coding pitfalls.",
+      "language": null,
+      "stars_gained": 4250,
+      "total_stars": 226484,
+      "default_branch_commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "why_notable": "A lightweight counterpoint to elaborate agent frameworks: its four principles emphasize clarifying assumptions, simplicity, surgical edits and verifiable goals.",
+      "theme_ids": [
+        "agent-engineering-methods"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "Karpathy-Inspired Claude Code Guidelines",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/multica-ai/andrej-karpathy-skills",
+        "https://api.github.com/repos/multica-ai/andrej-karpathy-skills"
+      ],
+      "content": "A single CLAUDE.md file of coding-agent guidance inspired by Andrej Karpathy’s observations on LLM coding pitfalls. Language: N/A - not available from GitHub. Stars gained in window: +4,250. Total stars: 226,484. Why notable: A lightweight counterpoint to elaborate agent frameworks: its four principles emphasize clarifying assumptions, simplicity, surgical edits and verifiable goals."
+    },
+    {
+      "id": "08-agricidaniel-claude-seo",
+      "kind": "repo",
+      "title": "AgriciDaniel/claude-seo",
+      "rank": 8,
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "description": "A Claude Code SEO toolkit spanning technical audits, content, structured data, AI search, local and ecommerce SEO, and reporting.",
+      "language": "Python",
+      "stars_gained": 4110,
+      "total_stars": 24041,
+      "default_branch_commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "why_notable": "It packages a specialist workflow as 26 sub-skills and 19 agents, including parallel website audits and AI-search readiness; its 4,110 gains show domain-specific agent products extending beyond code generation.",
+      "theme_ids": [
+        "domain-specialist-agent-products",
+        "multi-agent-orchestration"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "Claude SEO",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/AgriciDaniel/claude-seo",
+        "https://api.github.com/repos/AgriciDaniel/claude-seo"
+      ],
+      "content": "A Claude Code SEO toolkit spanning technical audits, content, structured data, AI search, local and ecommerce SEO, and reporting. Language: Python. Stars gained in window: +4,110. Total stars: 24,041. Why notable: It packages a specialist workflow as 26 sub-skills and 19 agents, including parallel website audits and AI-search readiness; its 4,110 gains show domain-specific agent products extending beyond code generation."
+    },
+    {
+      "id": "09-anthropics-knowledge-work-plugins",
+      "kind": "repo",
+      "title": "anthropics/knowledge-work-plugins",
+      "rank": 9,
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open-source plugins primarily intended for knowledge workers using Claude Cowork.",
+      "language": "Python",
+      "stars_gained": 2504,
+      "total_stars": 33868,
+      "default_branch_commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
+      "why_notable": "It broadens the week’s agent ecosystem from software development into knowledge-work plugins, backed by Anthropic as the publisher.",
+      "theme_ids": [
+        "agent-engineering-methods",
+        "domain-specialist-agent-products"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "Anthropic Knowledge Work Plugins",
+      "unique_caveat": "The repository description is broad; this snapshot does not assess individual plugin maturity.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/anthropics/knowledge-work-plugins",
+        "https://api.github.com/repos/anthropics/knowledge-work-plugins"
+      ],
+      "content": "Open-source plugins primarily intended for knowledge workers using Claude Cowork. Language: Python. Stars gained in window: +2,504. Total stars: 33,868. Why notable: It broadens the week’s agent ecosystem from software development into knowledge-work plugins, backed by Anthropic as the publisher."
+    },
+    {
+      "id": "10-ruvnet-ruflo",
+      "kind": "repo",
+      "title": "ruvnet/ruflo",
+      "rank": 10,
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "An agent harness for coordinating swarms and autonomous workflows, with adaptive memory, federation and vector RAG integration.",
+      "language": "TypeScript",
+      "stars_gained": 1854,
+      "total_stars": 80158,
+      "default_branch_commit": "d000e27e82c783a5a188abb01d89b8ccbc12b271",
+      "why_notable": "It represents the infrastructure side of the agent theme—swarm coordination and memory/RAG—and the Search API also showed it among repositories pushed during the seven-day window.",
+      "theme_ids": [
+        "agent-engineering-methods",
+        "multi-agent-orchestration"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Ruflo",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/ruvnet/ruflo",
+        "https://api.github.com/repos/ruvnet/ruflo"
+      ],
+      "content": "An agent harness for coordinating swarms and autonomous workflows, with adaptive memory, federation and vector RAG integration. Language: TypeScript. Stars gained in window: +1,854. Total stars: 80,158. Why notable: It represents the infrastructure side of the agent theme—swarm coordination and memory/RAG—and the Search API also showed it among repositories pushed during the seven-day window."
+    },
+    {
+      "id": "11-jakubkrehel-skills",
+      "kind": "repo",
+      "title": "jakubkrehel/skills",
+      "rank": 11,
+      "url": "https://github.com/jakubkrehel/skills",
+      "description": "A collection of agent skills for building interfaces.",
+      "language": "Markdown",
+      "stars_gained": 980,
+      "total_stars": 9194,
+      "default_branch_commit": "592aedc44d7d5b3e29740984252902f3e5402a1c",
+      "why_notable": "A smaller but on-theme signal for reusable, interface-focused agent skills; it records 980 stars gained in the Trending weekly view.",
+      "theme_ids": [
+        "design-agents-quality"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "Jakub Krehel Skills",
+      "unique_caveat": "This is a skill collection rather than a standalone application.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/jakubkrehel/skills",
+        "https://api.github.com/repos/jakubkrehel/skills"
+      ],
+      "content": "A collection of agent skills for building interfaces. Language: Markdown. Stars gained in window: +980. Total stars: 9,194. Why notable: A smaller but on-theme signal for reusable, interface-focused agent skills; it records 980 stars gained in the Trending weekly view."
+    },
+    {
+      "id": "12-php-php-src",
+      "kind": "repo",
+      "title": "php/php-src",
+      "rank": 12,
+      "url": "https://github.com/php/php-src",
+      "description": "The PHP interpreter.",
+      "language": "C",
+      "stars_gained": 960,
+      "total_stars": 41725,
+      "default_branch_commit": "82b01e22298a49033f4c651ed60a73b7bb4986c9",
+      "why_notable": "The established-language outlier: the interpreter source itself entered this week’s trending sample, showing that the snapshot is not exclusively about AI tooling.",
+      "theme_ids": [
+        "established-core-infrastructure"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 12,
+      "spoken_name": "PHP Source",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/php/php-src",
+        "https://api.github.com/repos/php/php-src"
+      ],
+      "content": "The PHP interpreter. Language: C. Stars gained in window: +960. Total stars: 41,725. Why notable: The established-language outlier: the interpreter source itself entered this week’s trending sample, showing that the snapshot is not exclusively about AI tooling."
+    },
+    {
+      "id": "13-unclebob-ub-mode",
+      "kind": "repo",
+      "title": "unclebob/ub-mode",
+      "rank": 13,
+      "url": "https://github.com/unclebob/ub-mode",
+      "description": "An agent skill for disciplined software engineering, paired with deterministic quality-gate tools.",
+      "language": null,
+      "stars_gained": null,
+      "total_stars": 4782,
+      "default_branch_commit": "57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f",
+      "why_notable": "A newly created (2026-10-25) repository found through the seven-day GitHub Search signal, not the Trending page; it combines agent guidance with complexity, duplication and mutation-testing gates.",
+      "theme_ids": [
+        "agent-engineering-methods"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 13,
+      "spoken_name": "UB Mode",
+      "unique_caveat": "Not present in the weekly Trending view; a comparable seven-day star-gain figure is unavailable, so its 4,782 is current total stars only.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/unclebob/ub-mode",
+        "https://api.github.com/repos/unclebob/ub-mode"
+      ],
+      "content": "An agent skill for disciplined software engineering, paired with deterministic quality-gate tools. Language: N/A - not available from GitHub. Stars gained in window: N/A - not available from GitHub Trending. Total stars: 4,782. Why notable: A newly created (2026-10-25) repository found through the seven-day GitHub Search signal, not the Trending page; it combines agent guidance with complexity, duplication and mutation-testing gates."
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agent engineering workflows and guardrails:** Reusable skills and methodology are a dominant pattern, ranging from phased security audits and TDD/subagent workflows to lightweight coding principles and deterministic quality gates. Supporting repositories: 01-cloudflare-security-audit-skill, 05-obra-superpowers, 07-multica-ai-andrej-karpathy-skills, 09-anthropics-knowledge-work-plugins, 10-ruvnet-ruflo, 13-unclebob-ub-mode.\n- **Design quality for generated interfaces:** Three repositories focus on making agent-produced interfaces more intentional: design vocabulary and deterministic checks, art direction with browser review, and reusable UI skills. Supporting repositories: 02-pbakaus-impeccable, 06-leonxlnx-taste-skill, 11-jakubkrehel-skills.\n- **Agents applied to professional deliverables:** Specialized agent workflows target financial research, SEO audits, native PowerPoint authoring and knowledge work rather than generic chat alone. Supporting repositories: 03-tauricresearch-tradingagents, 04-hugohe3-ppt-master, 08-agricidaniel-claude-seo, 09-anthropics-knowledge-work-plugins.\n- **Multi-agent orchestration:** Several leaders distribute work across specialized or isolated agents, then use debate, verification or review before producing an output. Supporting repositories: 01-cloudflare-security-audit-skill, 03-tauricresearch-tradingagents, 05-obra-superpowers, 08-agricidaniel-claude-seo, 10-ruvnet-ruflo.\n- **Established core software remains visible:** PHP’s C-based interpreter is the traditional infrastructure counterpoint in an otherwise agent-heavy list. Supporting repositories: 12-php-php-src.\n- Languages: Among the 13 listed repositories: Python 4, JavaScript 2, Rust 1, Shell 1, TypeScript 1, Markdown 1, C 1, and N/A 2.",
+      "themes": [
+        {
+          "id": "agent-engineering-methods",
+          "title": "Agent engineering workflows and guardrails",
+          "summary": "Reusable skills and methodology are a dominant pattern, ranging from phased security audits and TDD/subagent workflows to lightweight coding principles and deterministic quality gates.",
+          "supporting_repo_ids": [
+            "01-cloudflare-security-audit-skill",
+            "05-obra-superpowers",
+            "07-multica-ai-andrej-karpathy-skills",
+            "09-anthropics-knowledge-work-plugins",
+            "10-ruvnet-ruflo",
+            "13-unclebob-ub-mode"
+          ]
+        },
+        {
+          "id": "design-agents-quality",
+          "title": "Design quality for generated interfaces",
+          "summary": "Three repositories focus on making agent-produced interfaces more intentional: design vocabulary and deterministic checks, art direction with browser review, and reusable UI skills.",
+          "supporting_repo_ids": [
+            "02-pbakaus-impeccable",
+            "06-leonxlnx-taste-skill",
+            "11-jakubkrehel-skills"
+          ]
+        },
+        {
+          "id": "domain-specialist-agent-products",
+          "title": "Agents applied to professional deliverables",
+          "summary": "Specialized agent workflows target financial research, SEO audits, native PowerPoint authoring and knowledge work rather than generic chat alone.",
+          "supporting_repo_ids": [
+            "03-tauricresearch-tradingagents",
+            "04-hugohe3-ppt-master",
+            "08-agricidaniel-claude-seo",
+            "09-anthropics-knowledge-work-plugins"
+          ]
+        },
+        {
+          "id": "multi-agent-orchestration",
+          "title": "Multi-agent orchestration",
+          "summary": "Several leaders distribute work across specialized or isolated agents, then use debate, verification or review before producing an output.",
+          "supporting_repo_ids": [
+            "01-cloudflare-security-audit-skill",
+            "03-tauricresearch-tradingagents",
+            "05-obra-superpowers",
+            "08-agricidaniel-claude-seo",
+            "10-ruvnet-ruflo"
+          ]
+        },
+        {
+          "id": "established-core-infrastructure",
+          "title": "Established core software remains visible",
+          "summary": "PHP’s C-based interpreter is the traditional infrastructure counterpoint in an otherwise agent-heavy list.",
+          "supporting_repo_ids": [
+            "12-php-php-src"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "GitHub’s weekly breakout is increasingly about making agents reliable and useful inside concrete workflows: security findings, code changes and visual interfaces are being organized through skills, specialized roles and deterministic checks. The same pattern is expanding into professional tasks, while PHP’s appearance is a reminder that conventional core software still attracts attention."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "Primary: https://github.com/trending?since=weekly. Corroboration: GitHub REST repository/default-branch commit endpoints and GitHub Search API. First 12 entries ranked by weekly Trending gains; unclebob/ub-mode is an appended newly created repository from Search API and has no comparable weekly gain. No prior-window comparison was collected."
+    }
+  ]
+}

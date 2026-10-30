@@ -1,0 +1,189 @@
+{
+  "schema": "arxiv-trending-physics.v1",
+  "category": "daily",
+  "window": {
+    "start": "2026-10-29",
+    "end": "2026-10-29",
+    "announcement_batch_date": "2026-10-30",
+    "snapshot_utc": "2026-10-30T17:25:05Z",
+    "description": "Latest daily arXiv announcement batch; retained papers were first submitted during the previous UTC calendar day."
+  },
+  "date": "2026-10-30",
+  "title": "arXiv Physics Daily — Friday, 30 October 2026",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-10-30.md",
+  "entry_count": 6,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv supplies no official trending chart; this is an inferred notable-paper ranking. Citation evidence is limited for papers only announced today, and no citation-momentum estimate was available at snapshot time.",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "High-Fidelity Universal Quantum Gates in a Cryogenic Atom Array",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.40329",
+      "arxiv_id": "2610.40329",
+      "arxiv_version": 1,
+      "published": "2026-10-29T15:57:06Z",
+      "categories": ["physics.atom-ph", "quant-ph"],
+      "authors": ["Junlan Jin", "Donghyuk Seo", "Yue Shi", "Yukai Lu", "Jeff D. Thompson", "Waseem S. Bakr"],
+      "themes": ["Quantum information", "Atomic, molecular & optical physics"],
+      "abstract": "The authors demonstrate a universal gate set in a cryogenic cesium atom array, measuring 99.970(2)% single-qubit and 99.76(8)% raw two-qubit gate fidelities with errors dominated by atomic motion.",
+      "claimed_result": "The authors report the first universal gate set in a cryogenic atom array, including a single-photon Rydberg entangling gate; they attribute the dominant measured infidelity to atomic motion, not Rydberg decay.",
+      "evidence_type": "Experimental; randomized-benchmarking measurements on a cryogenic 133Cs optical-tweezer array.",
+      "unique_caveat": "The reported two-qubit fidelity is 99.76(8)%; reaching the paper's projected 99.97% requires improved cooling and other modeled upgrades, not yet demonstrated here.",
+      "evidence_for_ranking": "Cross-listed between atomic and quantum physics; the paper reports measured single- and two-qubit fidelities and an explicit experimental error budget, making it a concrete platform result rather than a projected performance claim.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.40329", "https://arxiv.org/html/2610.40329v1"]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Complex Organic Molecules in Protostars with ALMA Spectral Surveys (COMPASS) VIII. First interstellar detection of fully deuterated methyl cyanide",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.40365",
+      "arxiv_id": "2610.40365",
+      "arxiv_version": 1,
+      "published": "2026-10-29T16:15:59Z",
+      "categories": ["astro-ph.GA"],
+      "authors": ["A. Belloche", "J. K. Jørgensen", "M. N. Drozdovskaya", "S. Spezzano", "A. Coutens", "J.-E. Lee", "F. Cruz-Sáenz de Miera", "D. Harsono", "J.-H. Jeong", "S. Maret", "B. A. McGuire", "P. Nazari", "A. L. Plunkett", "Y.-L. Yang", "H.-S. Yun"],
+      "themes": ["Astrophysics"],
+      "abstract": "ALMA observations of L1551 IRS5 detect all three deuterated methyl-cyanide isotopologs, including the first interstellar detection of CD3CN, with a deuteration pattern that constrains—but does not uniquely determine—its formation pathway.",
+      "claimed_result": "The authors report seven detected CD3CN lines and infer a D/H progression consistent with cold grain-surface formation, while the roughly factor-two difference from methanol leaves room for warm gas-phase chemistry or earlier formation.",
+      "evidence_type": "Observational; ALMA 12-m-array spectral survey and LTE radiative-transfer modeling of the protostellar binary L1551 IRS5.",
+      "unique_caveat": "CD3CN has limited signal-to-noise and its population diagram is poorly constrained; derived column densities depend on the assumed emission size and LTE modeling, and existing astrochemical models do not include its full deuteration sequence.",
+      "evidence_for_ranking": "The arXiv record says accepted for publication in Astronomy & Astrophysics; the authors report a first interstellar detection from the ALMA COMPASS Large Program and compare its isotopolog ratios with competing chemical pathways.",
+      "announcement_type": "new submission",
+      "journal_status": "Accepted for publication in Astronomy and Astrophysics",
+      "refs": ["https://arxiv.org/abs/2610.40365", "https://arxiv.org/html/2610.40365v1"]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "PRISMS GHZ8: Evidence for a Young Burst and Potential Merger Activity at z=10.23",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.40633",
+      "arxiv_id": "2610.40633",
+      "arxiv_version": 1,
+      "published": "2026-10-29T17:58:09Z",
+      "categories": ["astro-ph.GA"],
+      "authors": ["Ruqiu Lin", "Jorge Zavala", "Javier Álvarez-Márquez", "Luis Colina", "Marco Castellano", "Adriano Fontana", "Paola Santini", "Lorenzo Napolitano", "Sarah Kendrew", "Alejandro Crespo Gómez", "Victoria Salazar", "Abdurro'uf", "Stefano Carniani", "Tiger Hsiao", "Yuichi Harikane", "Mahmoud Hamed", "Takuya Hashimoto", "Akio Inoue", "Danial Langeroodi", "Rui Marques-Chaves", "Ikki Mitsuhashi", "Yurina Nakazato", "Borja Pérez-Díaz", "Pierluigi Rinaldi", "Carlota Prieto-Jiménez", "Ana Varo-O'Ferrall", "Fang-Ting Yuan", "Shuairu Zhu", "Zhen-Ya Zheng"],
+      "themes": ["Astrophysics"],
+      "abstract": "JWST spectroscopy and imaging of GHZ8 at z=10.23 reveal optical emission lines and two nearby UV components, which the authors interpret as evidence for recent bursty star formation and a possible—but unconfirmed—merger.",
+      "claimed_result": "The authors infer a young, high-escape-fraction southeastern component and a recent or declining star-formation episode in GHZ8-main; they describe merger-driven activity as a possibility, not a confirmed event.",
+      "evidence_type": "Observational; JWST/MIRI LRS spectroscopy, NIRCam imaging, and spectrophotometric SED fitting.",
+      "unique_caveat": "The southeastern component lacks an independent spectroscopic redshift and resolved kinematics, so merger versus in-situ clump formation remains unresolved; its UV slope also depends on image decomposition and SED assumptions.",
+      "evidence_for_ranking": "Combines JWST/MIRI spectroscopy with NIRCam morphology at very high redshift; the paper quantifies line detections at about 5σ and 4σ and reports resolved properties for two components.",
+      "announcement_type": "new submission",
+      "refs": ["https://arxiv.org/abs/2610.40633", "https://arxiv.org/html/2610.40633v1"]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "The δ Scuti instability strip and period-luminosity relation as seen by TESS and Gaia DR3",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.40656",
+      "arxiv_id": "2610.40656",
+      "arxiv_version": 1,
+      "published": "2026-10-29T17:59:55Z",
+      "categories": ["astro-ph.SR", "astro-ph.GA"],
+      "authors": ["Daniel Hey", "Simon Murphy", "Timothy R. Bedding", "Anuj Gautam", "Daniel Huber", "Yaguang Li", "Ian Berry", "Hyde Kenney", "Prasad Mani", "Tom Love", "Mykyta Kliapets"],
+      "themes": ["Astrophysics"],
+      "abstract": "A TESS and Gaia DR3 survey of 1.53 million A- and F-type stars identifies 156,706 δ Scuti pulsators, maps their instability strip, and proposes a cluster-age indicator based on mean pulsation frequency.",
+      "claimed_result": "The authors find that detection sensitivity explains much, but not all, of the apparent instability-strip impurity and report a correlation between cluster age and mean δ Scuti pulsation frequency.",
+      "evidence_type": "Observational; TESS 10-minute cadence photometry, Gaia DR3 parallaxes, archival photometry, and a positive-unlabelled classifier.",
+      "unique_caveat": "Classification and pulsator fractions depend on detection sensitivity and sample brightness; the proposed age indicator is a correlation from a cross-matched open-cluster sample, not yet a general-purpose calibrated chronometer.",
+      "evidence_for_ranking": "Cross-listed in stellar and galactic astrophysics; unusually broad TESS/Gaia sample, a revised period-density relation, and the arXiv comment reports resubmission to ApJ following a positive report.",
+      "announcement_type": "new submission",
+      "journal_status": "arXiv comment: Re-submitted to ApJ following positive report",
+      "refs": ["https://arxiv.org/abs/2610.40656", "https://arxiv.org/html/2610.40656v1"]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Polarization and Burst Properties of the Repeating FRB 20240209A in a Quiescent Elliptical Host",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.40326",
+      "arxiv_id": "2610.40326",
+      "arxiv_version": 1,
+      "published": "2026-10-29T15:56:14Z",
+      "categories": ["astro-ph.HE"],
+      "authors": ["Yong-Kun Zhang", "Yi Feng", "Di Li", "Jin-Tao Xie", "Chao-Wei Tsai", "Pei Wang", "Meng-Yao Xue"],
+      "themes": ["Astrophysics"],
+      "abstract": "Green Bank Telescope polarimetry of three bursts from FRB 20240209A finds frequency-dependent depolarization and a low rotation measure, suggesting that repeaters in old and star-forming hosts can both have complex magneto-ionic environments.",
+      "claimed_result": "The authors detect three bursts, resolve eight drifting components in the brightest, and find polarization behavior consistent with an RM scatter of about 3.5 rad m⁻².",
+      "evidence_type": "Observational; Green Bank Telescope observations at L band and 800 MHz.",
+      "unique_caveat": "The inference about multiple FRB formation channels is drawn from one source and three observed bursts; it does not establish a distinct progenitor population.",
+      "evidence_for_ranking": "Accepted for publication in ApJ with a DOI; it adds new polarimetric observations of a repeating FRB associated with an old, quiescent elliptical host, relevant to the question of whether repeaters have multiple formation channels.",
+      "announcement_type": "new submission",
+      "journal_status": "Accepted for publication in ApJ",
+      "doi": "10.3847/1538-4357/aeb940",
+      "refs": ["https://arxiv.org/abs/2610.40326"]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Six New Eclipsing AM CVn Binaries from the Zwicky Transient Facility",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.40346",
+      "arxiv_id": "2610.40346",
+      "arxiv_version": 1,
+      "published": "2026-10-29T16:06:24Z",
+      "categories": ["astro-ph.SR"],
+      "authors": ["Aaron Householder", "Kevin B. Burdge", "Yapeng Zhang", "Emma Chickles", "Jan van Roestel", "Matthew J. Green", "Kaley Brauer", "Joheen Chakraborty", "Jack Dinsmore", "Gabor Furesz", "Juliana García-Mejía", "Matthew J. Graham", "Aurora Y. Kesseli", "Shrinivas R. Kulkarni", "Christopher Layden", "Geoffrey Mo", "David Osip", "Roger W. Romani", "Andrew Vanderburg"],
+      "themes": ["Astrophysics"],
+      "abstract": "A search of Zwicky Transient Facility photometry, followed by Keck spectroscopy, identifies six eclipsing helium-accreting AM CVn binaries with orbital periods of 39.3–59.9 minutes.",
+      "claimed_result": "The authors confirm helium emission and no detectable hydrogen in all six systems, establishing their AM CVn classification and identifying targets for binary-parameter measurements.",
+      "evidence_type": "Observational; GPU-accelerated search of ZTF photometry plus Keck I/LRIS spectroscopy.",
+      "unique_caveat": "High-speed photometric follow-up is still needed to determine component mass ratios, inclinations, and radii; population-evolution constraints therefore remain prospective.",
+      "evidence_for_ranking": "Reports six new systems verified spectroscopically and raises the count of deeply eclipsing AM CVn systems from 11 to 17; the arXiv record says submitted to ApJ.",
+      "announcement_type": "new submission",
+      "journal_status": "Submitted to ApJ",
+      "refs": ["https://arxiv.org/abs/2610.40346"]
+    }
+  ],
+  "trending_themes": [
+    {
+      "title": "Facility-backed astrophysical measurements",
+      "text": "JWST resolves GHZ8; ALMA detects CD3CN in L1551 IRS5; TESS/Gaia expands the δ Scuti census; Green Bank characterizes FRB 20240209A; and ZTF/Keck adds six AM CVn binaries. These are distinct studies, not independent confirmations of one result.",
+      "refs": ["paper-2", "paper-3", "paper-4", "paper-5", "paper-6"]
+    },
+    {
+      "title": "Survey discovery followed by validation",
+      "text": "TESS/Gaia supplies a wide-area δ Scuti sample, while ZTF discovery photometry plus Keck spectroscopy validates new AM CVn systems. This is a method parallel, not evidence of a shared astrophysical population.",
+      "refs": ["paper-4", "paper-6"]
+    },
+    {
+      "title": "Cryogenic neutral-atom gates",
+      "text": "Cryogenic operation suppresses blackbody-radiation transitions in a cesium-array gate experiment; the link to fault-tolerant computing is a proposed engineering benefit, not a demonstrated logical-qubit result. This is an isolated signal in today's batch.",
+      "refs": ["paper-1"]
+    }
+  ],
+  "open_problems": [
+    {
+      "kind": "author-stated open problem",
+      "text": "Extend low-mass protostellar chemical networks to CH2DCN, CHD2CN, and CD3CN and compare predicted ratios across sources to test grain-surface and warm gas-phase pathways.",
+      "refs": ["paper-2"]
+    },
+    {
+      "kind": "author-stated open problem",
+      "text": "Deeper imaging and higher-resolution spectroscopy could resolve whether GHZ8's two components share a velocity structure, testing merger versus in-situ clump formation and refining the escape-fraction inference.",
+      "refs": ["paper-3"]
+    },
+    {
+      "kind": "author-stated open problem",
+      "text": "Improved cooling is the immediate experimental test of the motion-dominated gate-error budget; projected higher fidelities remain model outputs until measured.",
+      "refs": ["paper-1"]
+    },
+    {
+      "kind": "author-stated open problem",
+      "text": "High-speed photometry of the six AM CVn binaries is needed to infer mass ratios, inclinations, and radii and improve tests of formation and evolution models.",
+      "refs": ["paper-6"]
+    },
+    {
+      "kind": "synthesis",
+      "text": "Comparable-band polarimetry of more repeaters across host types could test whether the magneto-ionic diversity inferred from a single source reflects a population-wide pattern.",
+      "refs": ["paper-5"]
+    }
+  ],
+  "takeaway": "Today's clearest signals are measured results across quantum hardware and astrophysical observations. Their broader implications remain conditional on follow-up measurements and improved models."
+}

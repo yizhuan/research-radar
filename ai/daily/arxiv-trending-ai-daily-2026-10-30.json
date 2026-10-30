@@ -1,0 +1,157 @@
+{
+  "schema": "research-radar-report-v1",
+  "category": "daily",
+  "window": {
+    "kind": "daily",
+    "start_date": "2026-10-30",
+    "end_date": "2026-10-30",
+    "announcement_batch_date": "2026-10-30",
+    "submission_date": "2026-10-29",
+    "snapshot_utc": "2026-10-30T17:07:53Z"
+  },
+  "date": "2026-10-30",
+  "title": "Daily AI papers — arXiv announcement batch 2026-10-30",
+  "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-10-30.md",
+  "entry_count": 7,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart. The ordering is inferred from corroborated indexing and discussion signals, not readership; citation evidence is limited for papers announced this recently.",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "DynaRev: Benchmarking Web Agents under Dynamic Goal Revision",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.40133",
+      "arxiv_id": "2610.40133",
+      "arxiv_version": "1",
+      "published": "2026-10-29T14:25:54Z",
+      "categories": ["cs.AI"],
+      "authors": ["Shiqi Zhang", "Guochen Zhou", "Zesheng Wei", "Hai Zhao", "Zhisong Zhang"],
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "Introduces a 181-task benchmark that revises web-agent goals at task-defined milestones and finds that five evaluated models often meet only part of the changed requirements.",
+      "claimed_contribution": "The authors introduce DynaRev with additive, override, and runtime-conditioned goal changes, scoring correctness, responsiveness, and efficiency from agent trajectories.",
+      "unique_caveat": "The authors note that tasks are static web tasks, milestone/evaluation decisions rely on imperfect LLM semantic judgments, and meaningful milestones may be hard to identify for tasks with highly diverse successful trajectories.",
+      "refs": [
+        {"title": "DeepPaper DynaRev record", "url": "https://arxiv.deeppaper.ai/papers/2610.40133v1"},
+        {"title": "Fugu-MT DynaRev record", "url": "https://fugumt.com/fugumt/paper_check/2610.40133v1"}
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2610.40614",
+      "arxiv_id": "2610.40614",
+      "arxiv_version": "1",
+      "published": "2026-10-29T17:54:42Z",
+      "categories": ["cs.CV"],
+      "authors": ["Jinhyeok Choi", "JoungBin Lee", "Jongmin Lee", "Minkyeong Jeon", "Jiyoung Kim", "Kaeun Han", "Yoonjin Yoon", "Seungryong Kim"],
+      "themes": ["Multimodal & vision-language", "Efficient inference & systems"],
+      "abstract": "Proposes a video world model that updates a persistent latent 3D Gaussian memory as it generates new views, aiming to preserve spatial consistency while keeping memory growth tied to explored scene extent rather than stream length.",
+      "claimed_contribution": "The authors' L3G memory stores VAE latent features in 3D Gaussians and renders them directly into the video model's latent space; their experiments report improved long-horizon consistency and faster memory operations.",
+      "unique_caveat": "The authors explicitly note that the current memory is designed mainly for static scenes; moving-object separation, very large explorations, and error propagation remain limitations.",
+      "refs": [
+        {"title": "Papers with Code 2026 archive", "url": "https://paperswithcode.co/papers/archive/2026"},
+        {"title": "L3G-World project page", "url": "https://cvlab-kaist.github.io/L3G-World/"}
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.40647",
+      "arxiv_id": "2610.40647",
+      "arxiv_version": "1",
+      "published": "2026-10-29T17:59:21Z",
+      "categories": ["cs.CV", "cs.AI", "cs.LG", "cs.NE"],
+      "authors": ["Jiongfan Yang", "Weichen Fan", "Haiwen Diao", "Zhongang Cai", "Ziwei Liu"],
+      "themes": ["Multimodal & vision-language", "Efficient inference & systems"],
+      "abstract": "Presents SpecSlot, which assigns pixel-space generation tokens distinct spatial and frequency roles so fine detail can be represented without sending every token through global attention.",
+      "claimed_contribution": "The authors' SpecSlot allocates DCT frequency bands to local slots and reserves global attention for low-frequency carriers; in their reported tests it improves FID over a FLOPs-matched JiT control on ImageNet-512 and reduces forward cost relative to JiT-B/8 on DPG-Bench.",
+      "unique_caveat": "Evidence is limited to the reported ImageNet and DPG-Bench settings; these results do not establish performance across other image distributions or generation tasks.",
+      "refs": [
+        {"title": "Papers with Code 2026 archive", "url": "https://paperswithcode.co/papers/archive/2026"},
+        {"title": "SpecSlot on Papers.cool", "url": "https://papers.cool/arxiv/2610.40647"}
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.40350",
+      "arxiv_id": "2610.40350",
+      "arxiv_version": "1",
+      "published": "2026-10-29T16:07:10Z",
+      "categories": ["cs.CL"],
+      "authors": ["Zheng Zhu", "Xiaozhuan Liang", "Xi Chen", "Bei Yu", "Jiaya Jia"],
+      "themes": ["Agents & reasoning", "Efficient inference & systems"],
+      "abstract": "Proposes CORAL, which lets an LLM agent checkpoint progress and verified facts, then reset cluttered context to continue long tasks with fewer input tokens.",
+      "claimed_contribution": "The authors report 42.8% average accuracy for an 8B model on GAIA while using 6–7× fewer input tokens than a ReAct agent, with further evaluations on multi-hop QA and BrowseComp.",
+      "unique_caveat": "The reported headline result is benchmark-specific and uses an 8B model; the abstract does not establish that the same gains transfer to deployed agents or other model scales.",
+      "refs": [
+        {"title": "Week 44 AI Research Radar", "url": "https://researchradar.org/weekly/ai-research-radar"}
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.40565",
+      "arxiv_id": "2610.40565",
+      "arxiv_version": "1",
+      "published": "2026-10-29T17:42:32Z",
+      "categories": ["cs.RO", "cs.AI", "cs.LG"],
+      "authors": ["Pranjal Aggarwal", "Sean Welleck"],
+      "themes": ["Robotics & control", "Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "Introduces a coding-agent pipeline for constructing and auditing robot simulations, and releases RoboWorld, a 25-simulation benchmark where the best tested frontier models average 0.06 reward on its test tasks.",
+      "claimed_contribution": "The authors use coding agents to build simulations and adversarial audit agents to check them, selecting candidate tasks using U.S. economic and time-use data; the paper reports 25 built simulations out of 120 selected action groups.",
+      "unique_caveat": "The work evaluates simulations and simulated learning; it does not demonstrate transfer of the full benchmark to physical robots, and only 25 of 120 selected simulation targets are built in this release.",
+      "refs": [
+        {"title": "Gym-Anything project and benchmark page", "url": "https://gym-anything.github.io/robotics"}
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.40589",
+      "arxiv_id": "2610.40589",
+      "arxiv_version": "1",
+      "published": "2026-10-29T17:47:50Z",
+      "categories": ["cs.AI", "cs.MA", "quant-ph"],
+      "authors": ["El Mustapha Mansouri", "Eikichi Kimura", "Masato Koga", "Keigo Arai"],
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "Demonstrates LLM-based agents that formulate and challenge a quantum-spin research question, check a prediction computationally, and revise an experiment after detecting measurement drift.",
+      "claimed_contribution": "The authors report a laboratory workflow where agents assess one another's work, computationally check a derived calibration result, and redesign measurements after a drifting signal made the first experiment inconclusive.",
+      "unique_caveat": "This is a demonstration on ensembles of solid-state quantum spins and a defined family of microwave pulse sequences; it does not establish general autonomous research capability across fields.",
+      "refs": [
+        {"title": "Week 44 AI Research Radar", "url": "https://researchradar.org/weekly/ai-research-radar"},
+        {"title": "AI Paper Digest, 2026-10-29", "url": "https://amarcu.github.io/ai-paper-digest/"}
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2610.39302",
+      "arxiv_id": "2610.39302",
+      "arxiv_version": "1",
+      "published": "2026-10-29T03:49:53Z",
+      "categories": ["cs.AI", "cs.CV", "stat.ML"],
+      "authors": ["Randall Balestriero", "Yann LeCun"],
+      "themes": ["Training & adaptation", "Multimodal & vision-language"],
+      "abstract": "Gives a theorem about when separately trained JEPAs can align representations across modalities and reports empirical alignment experiments from caption datasets through text associated with 940 million web images.",
+      "claimed_contribution": "The authors prove a Platonic Representation Theorem under stated positive-pair assumptions, argue that next-token prediction supplies poorer alignment views, and report alignment and captioning experiments.",
+      "unique_caveat": "The reported evidence concerns cross-modal representation alignment and selected zero-shot/captioning evaluations; it does not establish general superiority of JEPAs across AI tasks.",
+      "refs": [
+        {"title": "ArcXiv JEPA record", "url": "https://arcxiv.org/abs/2610.39302"}
+      ]
+    }
+  ]
+}

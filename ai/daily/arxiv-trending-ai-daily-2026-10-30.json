@@ -3,269 +3,313 @@
   "category": "AI",
   "window": {
     "kind": "daily",
-    "start_date": "2026-10-29",
+    "start_date": "2026-10-30",
     "end_date": "2026-10-30",
     "announcement_batch_date": "2026-10-30",
     "submission_date": "2026-10-29",
-    "snapshot_utc": "2026-10-31T01:13:30Z"
+    "snapshot_utc": "2026-10-31T17:13:49Z"
   },
   "date": "2026-10-30",
-  "title": "AI on arXiv — Friday, 30 October 2026",
+  "title": "arXiv AI — Friday, 30 October 2026",
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-10-30.md",
-  "entry_count": 8,
+  "entry_count": 10,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart or readership ranking. The ordering is inferred from the breadth and concreteness of reported research evidence, cross-category scope, and available artifacts, not measured popularity. Citation evidence is limited because the batch is recent; Semantic Scholar's current citationCount is zero for all eight selected papers and these totals are not citations gained in the window.",
+  "global_caveat": "arXiv has no official trending chart; this ordering is inferred. Citation evidence is sparse for most recent papers, and citation totals are current snapshots rather than gains during the announcement batch.",
   "candidate_pool": {
-    "eligible_entries": 508,
-    "primary_category_counts": {"cs.CV": 126, "cs.LG": 103, "cs.AI": 77, "cs.RO": 62, "cs.CL": 43, "stat.ML": 12, "cs.NE": 4, "cs.MA": 4},
-    "selection_note": "The eight-paper shortlist is deliberately agent/evaluation-heavy and is not representative of the batch primary-category distribution."
+    "unique_versionless_ids": 1003,
+    "new_submissions_in_api_window": 595,
+    "category_page_counts_including_updates_and_crosslists": {
+      "cs.AI": 392,
+      "cs.LG": 372,
+      "stat.ML": 54,
+      "cs.CL": 175,
+      "cs.CV": 233,
+      "cs.RO": 129,
+      "cs.NE": 12,
+      "cs.MA": 33
+    },
+    "selection_note": "Category listings overlap because of cross-listing and include revisions. The shortlist is relevance-focused and not a popularity or frequency ranking."
   },
   "themes": [
     {
-      "title": "From outcome scoring to evidence-based agent evaluation",
-      "summary": "VeriCUA gathers supporting evidence, Prefix Executability checks intermediate tool-call validity, EnvOS audits dynamic changes and graders, and DynaRev tests adaptation when goals change. These papers make trajectory, evidence, and environment state part of the evaluation target, not just the final answer.",
-      "refs": ["2610.40578", "2610.40444", "2610.40246", "2610.40133"]
+      "title": "Agents are being made inspectable",
+      "summary": "VeriCUA gathers evidence, the quantum-spin study uses cross-checks and experimental challenge, and FARMS links mathematical statements to context and Lean-checked implications.",
+      "refs": ["2610.40578", "2610.40589", "2610.40560"]
     },
     {
-      "title": "Agents operating in changing environments",
-      "summary": "EnvOS studies stale information, DynaRev revises goals mid-task, and VeriCUA verifies actions across online and recorded contexts. This is a recurring problem pattern in this batch, not proof of a field-wide methodological breakthrough.",
-      "refs": ["2610.40246", "2610.40133", "2610.40578"]
+      "title": "Intermediate behavior and oversight",
+      "summary": "Pre-Crime probes for impending disclosure, Efficient Scalable Oversight formalizes verifier interaction, and the self-learning study makes knowledge acquisition an explicit sequence of actions.",
+      "refs": ["2610.40588", "2610.40535", "2610.39671"]
     },
     {
-      "title": "Agentic construction of research environments",
-      "summary": "Gym-Anything applies coding agents and independent audits to build robotics simulations, while the quantum-spin study uses collaborating agents to formulate, check, and experimentally challenge a scientific result. Their generality remains open.",
-      "refs": ["2610.40565", "2610.40589"]
-    },
-    {
-      "title": "Learning from internal state",
-      "summary": "EpiAgent trains belief updates from interaction histories; the multi-hop retriever trains on states it visits, including error-containing states. The methods address different settings: strategic interaction and retrieval.",
-      "refs": ["2610.40227", "2610.40409"]
+      "title": "Retrieval as an agent-system design problem",
+      "summary": "Retrieval as Traversal studies persistent local search, while the self-learning work gives models textbook-navigation actions and trains selection of source material.",
+      "refs": ["2610.40545", "2610.39671"]
     }
   ],
   "open_problems": [
     {
       "kind": "author-reported problem and synthesized direction",
-      "title": "Experimental reliability",
-      "problem": "In the quantum-spin study, repeated references revealed signal drift and invalidated the first apparent agreement.",
-      "direction": "Replicate the preregistered protocol across additional instruments, pulse families, and independent operators while retaining the same rejection criteria.",
+      "title": "Reduce false alarms in agent oversight",
+      "problem": "Pre-Crime reports short-range warnings, flags some permitted disclosures, and says an alarm-only halt would stop most benign episodes.",
+      "direction": "Evaluate selective interventions that distinguish authorized disclosure from collusion and measure warning lead time and benign-task cost across more agents and scenarios.",
+      "refs": ["2610.40588"]
+    },
+    {
+      "kind": "author-reported problem and synthesized direction",
+      "title": "Validate evidence-based completion across changing interfaces",
+      "problem": "VeriCUA is marked work in progress and its abstract reports relative agreement improvements without absolute effect sizes.",
+      "direction": "Publish calibrated results by platform and observation modality, including dynamic pages, inaccessible state, and misleading completion signals.",
+      "refs": ["2610.40578"]
+    },
+    {
+      "kind": "author-reported problem and synthesized direction",
+      "title": "Test autonomous research beyond one experiment",
+      "problem": "The quantum-spin study's first run was inconclusive because of drift and required a revised protocol.",
+      "direction": "Preregister multi-run replications with predefined stopping criteria, then test whether agents identify confounds across instruments and scientific domains.",
       "refs": ["2610.40589"]
     },
     {
       "kind": "author-reported problem and synthesized direction",
-      "title": "Evidence coverage and verification cost",
-      "problem": "VeriCUA can abstain when recordings lack evidence and requires many tool/model calls; adjacent verifier methods rely on checkable schemas, state, or audited graders.",
-      "direction": "Compare cost, abstention, false acceptance, and error localization on the same tasks under matched observation and tool budgets.",
-      "refs": ["2610.40578", "2610.40444", "2610.40246"]
+      "title": "Test the full retrieval hypothesis",
+      "problem": "Retrieval as Traversal evaluates only fixed geometry and does not test learned geometry or repeated retrieval.",
+      "direction": "Compare learned and fixed indexes under repeated, changing retrieval needs and report both task performance and access cost.",
+      "refs": ["2610.40545"]
     },
     {
       "kind": "author-reported problem and synthesized direction",
-      "title": "Dynamic task adaptation",
-      "problem": "EnvOS finds model/interface-dependent responses to stale values, while DynaRev reports partial fulfillment under mid-task revisions.",
-      "direction": "Vary change timing, notification, interface persistence, and revision semantics in a shared benchmark; report final completion and evidence that the updated requirement was followed.",
-      "refs": ["2610.40246", "2610.40133"]
+      "title": "Check scalable oversight beyond preliminary experiments",
+      "problem": "Efficient Scalable Oversight reports a preliminary MNIST experiment and gives a scoped theoretical construction.",
+      "direction": "Evaluate larger computations and test how robustness assumptions affect runtime and verifier error as prover capability grows.",
+      "refs": ["2610.40535"]
+    },
+    {
+      "kind": "synthesized direction tied to reported setup",
+      "title": "Establish transfer and checker reliability for self-learning",
+      "problem": "The self-learning results use textbook-based proof tasks and an LLM judge.",
+      "direction": "Replicate across model families and non-mathematical long-form corpora, and compare judge scores with independent formal or expert verification.",
+      "refs": ["2610.39671"]
     },
     {
       "kind": "author-reported problem and synthesized direction",
-      "title": "Simulation realism and coverage",
-      "problem": "Gym-Anything reports strong difficulty on its generated test tasks and calls for broader coverage of physical work; simulation results alone do not establish transfer.",
-      "direction": "Independently audit a wider set of generated tasks and compare simulation-trained policies with real-robot performance on matched tasks.",
-      "refs": ["2610.40565"]
-    },
-    {
-      "kind": "synthesized direction tied to reported failure modes",
-      "title": "Recoverability after early errors",
-      "problem": "Prefix Executability shows that final success can hide invalid prefixes; the on-policy retrieval study reports that early wrong passages degrade later retrieval.",
-      "direction": "Measure uninterrupted success, recovery after first error, and final outcome across longer tool-use and retrieval chains.",
-      "refs": ["2610.40444", "2610.40409"]
+      "title": "Broaden embedding interpretation beyond proof of concept",
+      "problem": "NeurEO calls for larger and more diverse data and comparisons across embedding models.",
+      "direction": "Repeat analyses across regions, seasons, and architectures, then test whether discovered tuning patterns predict downstream reliability.",
+      "refs": ["2610.40137"]
     }
   ],
   "sections": [
     {
-      "id": "2610.40589",
+      "id": "2610.39551",
       "kind": "paper",
-      "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+      "title": "Comprehensive empirical evaluation of feature extractors in computer vision",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2610.40589",
-      "arxiv_id": "2610.40589",
+      "url": "https://arxiv.org/abs/2610.39551",
+      "arxiv_id": "2610.39551",
       "arxiv_version": "v1",
-      "published": "2026-10-29T17:47:50Z",
-      "categories": ["cs.AI", "cs.MA", "quant-ph"],
-      "primary_category": "cs.AI",
-      "cross_lists": ["cs.MA", "quant-ph"],
-      "authors": ["El Mustapha Mansouri", "Eikichi Kimura", "Masato Koga", "Keigo Arai"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "The authors present collaborating LLM-based research agents that formulate and check a quantum-spin calibration result, then design and revise physical experiments when controls reveal signal drift.",
-      "evidence_for_ranking": "Combines theoretical and computational checks with a physical quantum-spin experiment; three-category scope spans AI, multi-agent systems, and quantum physics.",
-      "claimed_contribution": "The authors claim to demonstrate an agent laboratory that selects research questions, derives theoretical results, and tests predictions experimentally; agents treated a drift-affected run as inconclusive and revised the protocol.",
-      "unique_caveat": "The first apparently agreeing run was inconclusive after repeated reference measurements exposed drift; the revised result is one investigation on a specific quantum-spin platform, not evidence of general autonomous-science capability.",
+      "published": "2026-10-29T07:50:32Z",
+      "categories": ["cs.CV", "cs.LG"],
+      "authors": ["Murat Isik"],
+      "themes": ["Evaluation & benchmarks"],
+      "abstract": "The study compares 11 traditional feature detectors and descriptors over more than two million image-matching comparisons, finding different methods best for speed and for particular image transformations.",
+      "evidence_for_ranking": "Semantic Scholar lists 19 citations at the snapshot, the largest checked count in this shortlist, and the paper has a PeerJ Computer Science journal reference and DOI. It is a 2024 journal paper newly deposited on arXiv, so citations predate this batch.",
+      "claimed_contribution": "The paper reports a consistent evaluation on the Image Matching Challenge Photo Tourism 2020 dataset, identifying FAST with ORB/BF as its fastest combination and AKAZE as robust to several distortions.",
+      "unique_caveat": "The authors note that their dataset may not cover real-world diversity and that runtime was measured on one hardware configuration; the journal paper dates to 2024.",
       "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40589"},
-        {"title": "arXiv full text", "url": "https://arxiv.org/html/2610.40589v1"},
-        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40589?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.39551"},
+        {"title": "PeerJ Computer Science DOI", "url": "https://doi.org/10.7717/peerj-cs.2415"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.39551?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
       ]
     },
     {
-      "id": "2610.40565",
+      "id": "2610.40137",
       "kind": "paper",
-      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "title": "NeurEO: dissecting Earth observation embeddings with computational neuroscience",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2610.40565",
-      "arxiv_id": "2610.40565",
+      "url": "https://arxiv.org/abs/2610.40137",
+      "arxiv_id": "2610.40137",
       "arxiv_version": "v1",
-      "published": "2026-10-29T17:42:32Z",
-      "categories": ["cs.RO", "cs.AI", "cs.LG"],
-      "primary_category": "cs.RO",
-      "cross_lists": ["cs.AI", "cs.LG"],
-      "authors": ["Pranjal Aggarwal", "Sean Welleck"],
-      "themes": ["Robotics & control", "Agents & reasoning", "Data & synthetic data"],
-      "abstract": "The authors use coding agents and an adversarial creation-audit loop to build RoboWorld, a robotics simulation suite, and report that frontier models struggle on its test tasks while several privileged-learning approaches improve performance.",
-      "evidence_for_ranking": "A concrete research artifact plus evaluation across 25 simulations and 200 RL environments; cross-category coverage links robotics, AI, and machine learning.",
-      "claimed_contribution": "The authors introduce a framework for coding agents to create and audit robotics simulations and report RoboWorld results, including improvements from privileged-state teaching and code-generated demonstrations.",
-      "unique_caveat": "The reported results are in generated simulation environments; the paper's benchmark evidence does not establish sim-to-real transfer. Broader coverage of physical work remains open.",
+      "published": "2026-10-29T14:28:26Z",
+      "categories": ["cs.CV"],
+      "authors": ["Thijs L van der Plas", "Jacob JW Bakermans", "Ioannis N Athanasiadis"],
+      "themes": ["Interpretability"],
+      "abstract": "The authors adapt neuroscience-inspired analyses to interpret AlphaEarth geospatial embeddings, finding multi-scale structure and feature tuning to land cover and elevation.",
+      "evidence_for_ranking": "Semantic Scholar lists 2 citations at the snapshot; the arXiv record says the work was originally published at the EurIPS 2025 REO workshop. Citation count is a current total, not a gain during this batch.",
+      "claimed_contribution": "The paper applies correlational, tuning-surface, and dimensionality analyses to AlphaEarth embeddings to expose interpretable geographic structure.",
+      "unique_caveat": "The authors call this a small proof of concept using 100 UK locations and say larger, more diverse data and comparisons with other embedding models are needed.",
       "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40565"},
-        {"title": "arXiv full text", "url": "https://arxiv.org/html/2610.40565v1"},
-        {"title": "Project and benchmark page", "url": "https://gym-anything.github.io/robotics"},
-        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40565?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40137"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40137?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+      ]
+    },
+    {
+      "id": "2610.39671",
+      "kind": "paper",
+      "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.39671",
+      "arxiv_id": "2610.39671",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T09:21:26Z",
+      "categories": ["cs.CL"],
+      "authors": ["Lingkai Kong", "Yuzhe Gu", "Haiteng Zhao", "Zijian Wu", "Youqing Fang", "Zhouqi Hua", "Yanan Sun", "Kai Chen", "Wenwei Zhang"],
+      "themes": ["Agents & reasoning", "Training & adaptation", "Retrieval & knowledge"],
+      "abstract": "The work trains LLMs to navigate textbooks, learn material, and solve mathematical proofs, reporting gains on held-out books and subjects as well as two external long-context benchmarks.",
+      "evidence_for_ranking": "Semantic Scholar lists 1 citation at the snapshot; placement also reflects reported transfer experiments and relevance to agentic learning. Citation is a current total, not a period gain.",
+      "claimed_contribution": "The authors introduce BookNavigator and fine-grained reinforcement-learning rewards; on their textbook-based task they report Intern-S2-Preview-35B proof accuracy rising from 51.5% to 79.5%.",
+      "unique_caveat": "Evidence is centered on mathematical proof tasks and a particular model/training setup; the correctness signal uses an LLM judge, so broader transfer and judge reliability remain open.",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.39671"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.39671?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+      ]
+    },
+    {
+      "id": "2610.39839",
+      "kind": "paper",
+      "title": "Exploring the Potential of Symbolic Regression in Precision Livestock Farming",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.39839",
+      "arxiv_id": "2610.39839",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T11:17:21Z",
+      "categories": ["cs.LG", "cs.AI"],
+      "authors": ["Elisabeth Mayrhuber", "Maciej Oczak", "Michael Iwersen", "David Brunner", "Viktoria Dorfer", "Stephan Winkler"],
+      "themes": ["Interpretability", "Evaluation & benchmarks"],
+      "abstract": "Using sow-activity sensor data, the study combines nest-building detection with symbolic regression to predict time to farrowing, reporting a 9.28-hour mean absolute error.",
+      "evidence_for_ranking": "Semantic Scholar lists 1 citation at the snapshot; the paper is cross-listed in machine learning and AI. It is included as a narrow applied signal, not evidence of broad popularity.",
+      "claimed_contribution": "The paper reports that symbolic regression achieved 9.28 hours MAE for time-to-farrowing and was more interpretable while outperforming the compared SVR and ANN models in this study.",
+      "unique_caveat": "The evaluation concerns one task and sensor setup, with 180 sows; performance outside this dataset and setting is not established.",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.39839"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.39839?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+      ]
+    },
+    {
+      "id": "2610.40545",
+      "kind": "paper",
+      "title": "Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.40545",
+      "arxiv_id": "2610.40545",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T17:37:21Z",
+      "categories": ["cs.AI"],
+      "authors": ["Daniel Strauß", "Zhenshan Bing", "Alois Knoll"],
+      "themes": ["Retrieval & knowledge", "Agents & reasoning"],
+      "abstract": "The paper proposes persistent local traversal through value-indexed memory and reports a proof-of-principle MiniGrid result for a fixed-geometry variant.",
+      "evidence_for_ranking": "The arXiv record reports acceptance at the NeurIPS 2026 Workshop on Long-Context Foundation Models; Semantic Scholar lists 0 citations at the snapshot. Its position reflects workshop evidence and topic relevance rather than citation momentum.",
+      "claimed_contribution": "The authors formulate retrieval as persistent address-space traversal, separating memory content from address geometry and regularizing for information value and access cost.",
+      "unique_caveat": "The paper explicitly tests only the simplest fixed-geometry case on MiniGrid; it does not test learned geometry or repeated retrieval and says further experiments are needed.",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40545"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40545?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+      ]
+    },
+    {
+      "id": "2610.40535",
+      "kind": "paper",
+      "title": "Efficient Scalable Oversight via Rewinding",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2610.40535",
+      "arxiv_id": "2610.40535",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T17:34:28Z",
+      "categories": ["cs.AI", "cs.CC", "cs.CR"],
+      "authors": ["Ziyi Guan", "Yael Tauman Kalai", "Ron Rothblum", "Zoe Xi"],
+      "themes": ["Safety & alignment", "Evaluation & benchmarks"],
+      "abstract": "The authors introduce rewindable interactive proofs, where a verifier can restore a prover's earlier model state, and construct an oversight protocol for computations robust to a small fraction of changed oracle answers.",
+      "evidence_for_ranking": "Cross-listed across AI, computational complexity, and security; reports protocol implementation and preliminary MNIST experiment. Semantic Scholar lists 0 citations; placement is relevance-based.",
+      "claimed_contribution": "The authors claim their relativizing proof construction is more efficient than prior approaches that do not assume a truthful prover, without using cryptography.",
+      "unique_caveat": "The guarantee applies to a scoped class of computations, and the paper describes its empirical experiment as preliminary.",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40535"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40535?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
       ]
     },
     {
       "id": "2610.40578",
       "kind": "paper",
       "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
-      "rank": 3,
+      "rank": 7,
       "url": "https://arxiv.org/abs/2610.40578",
       "arxiv_id": "2610.40578",
       "arxiv_version": "v1",
       "published": "2026-10-29T17:45:26Z",
       "categories": ["cs.AI", "cs.CL", "cs.CV"],
-      "primary_category": "cs.AI",
-      "cross_lists": ["cs.CL", "cs.CV"],
       "authors": ["Qiushi Sun", "Da Yu", "Alexander Knop", "Amer Sinha", "Lingpeng Kong", "Ben Kao", "Ravi Kumar", "Pritish Kamath"],
       "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "VeriCUA treats task verification as active evidence gathering, selecting GUI or code checks to assess unresolved requirements across online and recorded computer-use-agent trajectories.",
-      "evidence_for_ranking": "Three-category scope and comparative evaluations across platforms and online/offline settings; the authors report higher agreement with reference labels and fewer false completion claims online.",
-      "claimed_contribution": "The authors propose a platform-agnostic verifier that inspects context, builds a task rubric, and adaptively combines GUI and code evidence under explicit rules.",
-      "unique_caveat": "The authors report tens of tool and model calls per trajectory—about an order of magnitude more than a single-call judge—and note that recorded trajectories must abstain when evidence is absent.",
+      "abstract": "VeriCUA actively gathers GUI or code evidence against task-specific rubrics to verify computer-using agents, with the authors reporting better agreement with reference labels than compared baselines.",
+      "evidence_for_ranking": "Cross-listed in AI, language, and vision and addresses verification for desktop, mobile, and web agents. Semantic Scholar lists 0 citations; the arXiv comment labels the work in progress.",
+      "claimed_contribution": "The paper presents one platform-agnostic procedure for constructing a rubric, selecting unresolved checks, and combining evidence under explicit rules.",
+      "unique_caveat": "The arXiv record calls this work in progress; the abstract reports relative agreement improvements but does not give absolute effect sizes.",
       "refs": [
         {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40578"},
-        {"title": "arXiv full text", "url": "https://arxiv.org/html/2610.40578v1"},
         {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40578?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
       ]
     },
     {
-      "id": "2610.40444",
+      "id": "2610.40589",
       "kind": "paper",
-      "title": "Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2610.40444",
-      "arxiv_id": "2610.40444",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T16:58:04Z",
-      "categories": ["cs.AI", "cs.CL"],
-      "primary_category": "cs.AI",
-      "cross_lists": ["cs.CL"],
-      "authors": ["Amir H. Rezaeian", "Weiyi Sun", "Yassine Benajiba", "Dan Roth"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "The paper proposes measuring whether every prefix of a tool-use trajectory remains executable, and reports that this exposes reliability failures hidden by final-success scores across several agent benchmarks.",
-      "evidence_for_ranking": "Tests an evaluation intervention on BFCL-v3, ToolSandbox, and τ³-bench; defines trajectory-level measures and reports divergence between final-success and executable-prefix rankings.",
-      "claimed_contribution": "The authors introduce Prefix Executability Curves, First-Error Depth, Trajectory Executability Rate, and related measures for diagnosing invalid tool calls and recovery.",
-      "unique_caveat": "The protocol measures executability against represented tool schemas, preconditions, and dependencies; by itself, that does not certify semantic correctness or safety.",
-      "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40444"},
-        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40444?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
-      ]
-    },
-    {
-      "id": "2610.40246",
-      "kind": "paper",
-      "title": "EnvOS: Auditing Computer-Use Agents When the World Moves On : Phenomenon-Based Task Construction, Certification, and Evidence-Based Evaluation",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2610.40246",
-      "arxiv_id": "2610.40246",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T15:14:16Z",
-      "categories": ["cs.AI", "cs.HC"],
-      "primary_category": "cs.AI",
-      "cross_lists": ["cs.HC"],
-      "authors": ["Ankush Kadu", "Athira Gopal", "Niharika Singh", "Arpit Jain", "Aswanth Krishnan"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "EnvOS certifies environments with mid-task changes and audits evidence-based grading; in stale-information tasks, the authors report that performance depended on whether agents received updated information and on the model and interface.",
-      "evidence_for_ranking": "Combines environment/grader certification with post-run evidence checks, reports clinic-booking and insurance-approval experiments, and tests grading on corrupted episodes.",
-      "claimed_contribution": "The authors propose a framework for constructing and auditing dynamic computer-use-agent environments, with separate checks of environment changes, solvability, and verdicts.",
-      "unique_caveat": "The reported agent study focuses on stale information in two task settings; some insurance-task significance did not survive correction for multiple tests.",
-      "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40246"},
-        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40246?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
-      ]
-    },
-    {
-      "id": "2610.40133",
-      "kind": "paper",
-      "title": "DynaRev: Benchmarking Web Agents under Dynamic Goal Revision",
-      "rank": 6,
-      "url": "https://arxiv.org/abs/2610.40133",
-      "arxiv_id": "2610.40133",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T14:25:54Z",
-      "categories": ["cs.AI"],
-      "primary_category": "cs.AI",
-      "cross_lists": [],
-      "authors": ["Shiqi Zhang", "Guochen Zhou", "Zesheng Wei", "Hai Zhao", "Zhisong Zhang"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "DynaRev is a 181-task benchmark for web agents whose users change requirements mid-task; five-model evaluations find partial completion and performance differences across revision types and task sources.",
-      "evidence_for_ranking": "A defined 181-task benchmark and five-model evaluation directly test an interaction condition usually absent from fixed-goal tasks; the authors report contrasting effects from browser resets and instruction rewriting.",
-      "claimed_contribution": "The authors introduce semantic-milestone delivery of additive, overriding, and runtime-conditioned goal revisions, with trajectory-grounded measures of correctness, responsiveness, and efficiency.",
-      "unique_caveat": "Evidence is from the benchmark's 181 tasks and five tested models; results vary by source and revision type, so performance in broader live web workflows remains unestablished.",
-      "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40133"},
-        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40133?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
-      ]
-    },
-    {
-      "id": "2610.40409",
-      "kind": "paper",
-      "title": "Retrieving from Your Own Mistakes: On-Policy Training of Embedding Models for Multi-Hop Retrieval-Augmented Generation",
-      "rank": 7,
-      "url": "https://arxiv.org/abs/2610.40409",
-      "arxiv_id": "2610.40409",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T16:40:02Z",
-      "categories": ["cs.AI"],
-      "primary_category": "cs.AI",
-      "cross_lists": [],
-      "authors": ["Chenjie Qiu", "Zixuan Zeng", "Shaobin Shi", "Bingfeng Chen", "Dongsheng Luo", "Boyan Xu"],
-      "themes": ["Retrieval & knowledge", "Training & adaptation"],
-      "abstract": "The authors train a chain retriever on states produced by its own earlier retrievals, including mistaken passages, and report improved complete-evidence retrieval and recovery on multi-hop QA benchmarks.",
-      "evidence_for_ranking": "A targeted training change is supported by controlled comparisons attributing gains to on-policy states and reported transfer to harder HotpotQA and 2WikiMultiHopQA variants.",
-      "claimed_contribution": "The authors propose on-policy state training that labels the next missing gold passage in the retriever's own visited states, including states containing earlier retrieval errors.",
-      "unique_caveat": "Evidence is for multi-hop QA retrieval and constructed harder variants; transfer to unrelated retrieval domains or general-purpose RAG workflows is not established here.",
-      "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40409"},
-        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40409?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
-      ]
-    },
-    {
-      "id": "2610.40227",
-      "kind": "paper",
-      "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
+      "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
       "rank": 8,
-      "url": "https://arxiv.org/abs/2610.40227",
-      "arxiv_id": "2610.40227",
+      "url": "https://arxiv.org/abs/2610.40589",
+      "arxiv_id": "2610.40589",
       "arxiv_version": "v1",
-      "published": "2026-10-29T15:05:08Z",
-      "categories": ["cs.AI", "cs.CL", "cs.MA"],
-      "primary_category": "cs.AI",
-      "cross_lists": ["cs.CL", "cs.MA"],
-      "authors": ["Xuanfa Jin", "Xinyu Cui", "Zhijian Ma", "Xue Yan", "Jian Zhao", "Haifeng Zhang", "Jun Wang"],
-      "themes": ["Agents & reasoning", "Training & adaptation"],
-      "abstract": "EpiAgent adds a learnable belief state about other agents' private information and trains belief updating and action planning together through self-play, with reported gains over prompting and RL baselines in mixed and competitive scenarios.",
-      "evidence_for_ranking": "Connects explicit belief tracking with bi-level self-play, reports prompting and RL comparisons, and spans AI, language, and multi-agent categories.",
-      "claimed_contribution": "The authors propose an epistemic layer that updates beliefs from interaction histories and conditions action planning on those beliefs, optimized with an intrinsic prediction reward.",
-      "unique_caveat": "The abstract reports mixed and competitive interaction scenarios; it does not establish generalization to broader strategic environments.",
+      "published": "2026-10-29T17:47:50Z",
+      "categories": ["cs.AI", "cs.MA", "quant-ph"],
+      "authors": ["El Mustapha Mansouri", "Eikichi Kimura", "Masato Koga", "Keigo Arai"],
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "A team of LLM agents formulates and challenges research claims, then tests them in a quantum-spin experiment; the authors report that the agents detected signal drift, revised the protocol, and obtained a result meeting their criteria.",
+      "evidence_for_ranking": "Cross-listed in AI and multi-agent systems and quantum physics, with a code link in the arXiv comment. Semantic Scholar lists 0 citations; inclusion is based on the concrete experimental workflow, not popularity.",
+      "claimed_contribution": "The authors demonstrate agents that generate and reject questions, demand separate theoretical checks, and design experiments intended to discriminate competing predictions.",
+      "unique_caveat": "The demonstration is one quantum-spin research case; an initial measurement was inconclusive because the signal drifted, requiring a revised protocol.",
       "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40227"},
-        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40227?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40589"},
+        {"title": "Code repository", "url": "https://github.com/E-zClap/auctopus"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40589?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+      ]
+    },
+    {
+      "id": "2610.40588",
+      "kind": "paper",
+      "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2610.40588",
+      "arxiv_id": "2610.40588",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T17:47:40Z",
+      "categories": ["cs.AI"],
+      "authors": ["Leonidas Raghav"],
+      "themes": ["Safety & alignment", "Interpretability", "Agents & reasoning"],
+      "abstract": "In controlled multi-agent scenarios, an activation probe detects impending secret disclosure before generation, but also flags permitted disclosures and has a short warning horizon.",
+      "evidence_for_ranking": "Reports evaluation across six scenarios and links a code repository. Semantic Scholar lists 0 citations; placement reflects a concrete multi-agent safety evaluation, not external popularity.",
+      "claimed_contribution": "On held-out Qwen3-32B episodes, the authors report 82% detection of leaking calls at a threshold flagging 5% of benign calls, compared with 26% for their zero-shot decision-model monitor.",
+      "unique_caveat": "The authors state that the warning is short-range, permitted disclosures are also flagged, and halting on any alarm would stop most benign episodes; a bag-of-words classifier comes close to the probe.",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40588"},
+        {"title": "Code repository", "url": "https://github.com/leonidas1712/precrime-agents"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40588?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
+      ]
+    },
+    {
+      "id": "2610.40560",
+      "kind": "paper",
+      "title": "FARMS: A Verifiable Foundation for Automated Computational Science",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2610.40560",
+      "arxiv_id": "2610.40560",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T17:40:57Z",
+      "categories": ["cs.AI", "cs.LO"],
+      "authors": ["Di Wu", "Ling Liang", "Haizhao Yang"],
+      "themes": ["Evaluation & benchmarks", "Agents & reasoning"],
+      "abstract": "FARMS turns computational-mathematics sources into structured, AI-ready knowledge with explicit guarantees; its pipeline accepted 157 of 171 targets across two technical areas.",
+      "evidence_for_ranking": "Cross-listed in AI and logic and reports a quantitative source-processing evaluation with Lean-checked examples. Semantic Scholar lists 0 citations; inclusion is relevance-based.",
+      "claimed_contribution": "The authors propose linking formal statements to source context, algorithmic meaning, and quantitative guarantees, with examples of Lean-checked implications connected to computational skills.",
+      "unique_caveat": "The reported targets are from randomized numerical linear algebra and numerical PDEs; the abstract does not establish coverage of computational science generally.",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40560"},
+        {"title": "Semantic Scholar Graph record", "url": "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2610.40560?fields=title%2Cauthors%2Cyear%2CcitationCount%2CinfluentialCitationCount%2CreferenceCount%2CpublicationTypes%2CfieldsOfStudy%2CexternalIds"}
       ]
     }
   ]

@@ -5,416 +5,384 @@
   "date": "2026-10-31",
   "title": "GitHub Trending Summary - Daily - 2026-10-31",
   "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-10-31.md",
-  "entry_count": 15,
+  "entry_count": 12,
   "entry_noun": "repositories",
-  "snapshot_time_utc": "2026-10-31 01:34 UTC",
+  "snapshot_time_utc": "2026-10-31 17:45 UTC",
   "date_range": {
     "start": "2026-10-31",
     "end": "2026-10-31"
   },
-  "ranking_basis": "GitHub Trending daily star gains for ranks 1-11; four recently created/active repositories from GitHub Search are appended separately and are not directly comparable.",
-  "ranking_explanation": "The first eleven entries are ordered by the `stars today` values shown on GitHub Trending at capture time. Newly created/active search candidates are appended after them, ordered by current stars; daily star gain is unavailable for these four.",
-  "global_caveat": "Trending-page star-gain values and REST API total stars were captured from different requests and may differ slightly as stars change. The four search additions use current star totals and must not be interpreted as ranked by daily gain. No prior-window comparison was gathered, so no Notable Shifts section is claimed.",
+  "ranking_basis": "Daily GitHub Trending star gains",
+  "ranking_explanation": "Ordered by stars gained in the live daily GitHub Trending view; top 12 eligible repositories from 14 rows. The course-like DevOps interview-exercise repository was filtered; the remaining lower-gain OpenMAIC row fell outside the top 12.",
+  "global_caveat": "GitHub Trending gains and star totals are volatile point-in-time values. Daily star gains are copied from the live Trending display, while total stars and current default-branch commit SHAs are corroborated via GitHub REST.",
+  "primary_source": "https://github.com/trending?since=daily",
+  "corroboration": [
+    "GitHub REST GET /repos/{owner}/{repo} for all listed repositories",
+    "GitHub REST GET /repos/{owner}/{repo}/commits/{default_branch} for all listed repositories",
+    "GitHub Search API exact-name queries for the five narration-priority repositories",
+    "Current GitHub README files for repository purpose and workflow"
+  ],
   "themes": [
     {
-      "id": "agent-skills-workflows",
-      "title": "Agent skills and repeatable workflows",
-      "summary": "Impeccable, Superpowers, and mattpocock/skills package reusable instructions, critique, and development methods for coding agents.",
-      "repository_ids": ["01-pbakaus-impeccable", "03-obra-superpowers", "08-mattpocock-skills"]
+      "id": "agent-workflows",
+      "title": "Agent skills, memory and structured development",
+      "content": "Five repositories span persistent memory and reusable process/design guidance: claude-mem, Claude-Code-Game-Studios, impeccable, mattpocock/skills and superpowers. The pattern is to make coding agents more dependable by adding retained context, specialist roles, task-specific vocabulary, checks and repeatable workflows.",
+      "supporting_repository_ids": [
+        "repo-01",
+        "repo-02",
+        "repo-03",
+        "repo-10",
+        "repo-11"
+      ]
     },
     {
-      "id": "agent-memory-workspaces",
-      "title": "Agent memory and persistent workspaces",
-      "summary": "Claude-Mem and ThinkRail address persistent context; OpenMausBot and OpenBot give agents ongoing workspaces, tools, or computers.",
-      "repository_ids": ["04-thedotmack-claude-mem", "07-milind-soni-openmausbot", "09-jetbrains-thinkrail", "10-copilotkit-openbot"]
+      "id": "local-agent-interfaces",
+      "title": "Local-first and cross-device agent workspaces",
+      "content": "OpenMausBot, t3code and Orkas move beyond a single prompt box: they expose agents through chat or desktop task interfaces, let users reuse locally installed agents, and add control, coordination or ongoing project context.",
+      "supporting_repository_ids": [
+        "repo-04",
+        "repo-05",
+        "repo-06"
+      ]
     },
     {
-      "id": "agent-control-ides",
-      "title": "Agentic IDEs and remote control",
-      "summary": "T3 Code and ThinkRail explore interfaces for directing and supervising local coding agents across devices and workspaces.",
-      "repository_ids": ["06-pingdotgg-t3code", "09-jetbrains-thinkrail"]
+      "id": "specialized-infrastructure",
+      "title": "Purpose-built automation infrastructure",
+      "content": "Lightpanda/browser represents a lower layer of the agent stack: a Zig-based headless browser aimed at automation and AI workloads.",
+      "supporting_repository_ids": [
+        "repo-09"
+      ]
     },
     {
-      "id": "ai-interface-design",
-      "title": "Design quality for AI-generated software",
-      "summary": "Impeccable and unslop focus on reviewing and improving generated interfaces rather than relying on generation alone.",
-      "repository_ids": ["01-pbakaus-impeccable", "14-heydamir-unslop"]
-    },
-    {
-      "id": "agent-execution-infrastructure",
-      "title": "Agent execution infrastructure",
-      "summary": "Lightpanda proposes a purpose-built headless browser; OpenBot describes isolated browser and file environments for coworkers.",
-      "repository_ids": ["10-copilotkit-openbot", "11-lightpanda-io-browser"]
-    },
-    {
-      "id": "applied-ai-learning",
-      "title": "Applied AI for learning and tutoring",
-      "summary": "DeepTutor brings personalized AI tutoring to the leading daily-gain group.",
-      "repository_ids": ["02-hkuds-deeptutor"]
-    },
-    {
-      "id": "mobile-agent",
-      "title": "On-device mobile agents",
-      "summary": "Mika is an early Android project for operating apps and the web from a user request.",
-      "repository_ids": ["13-wangzan101-mika"]
-    },
-    {
-      "id": "specialized-applied-projects",
-      "title": "Specialized applied projects beyond agent tooling",
-      "summary": "The list also includes a Chinese astrology charting engine, a game recompilation effort, and an AI fashion-reference/try-on project.",
-      "repository_ids": ["05-renhuai123-ziwei-doushu", "12-valentderah-totk-pc-recomp", "15-paipiange-nvzhuang"]
+      "id": "application-breadth",
+      "title": "Specialized apps beyond coding",
+      "content": "DeepTutor targets learning, ziwei-doushu focuses on a traditional Chinese charting domain, and vorssaint-utils packages native macOS utilities. These are narrower user-facing products, not a single generic agent category.",
+      "supporting_repository_ids": [
+        "repo-07",
+        "repo-08",
+        "repo-12"
+      ]
     }
   ],
   "sections": [
     {
-      "id": "00-snapshot",
-      "kind": "snapshot",
-      "title": "Snapshot",
-      "content": "Daily GitHub Trending snapshot captured 2026-10-31 01:34 UTC; date range 2026-10-31 through 2026-10-31. Ranks 1-11 use daily Trending star gains, with four recent-repository Search results appended separately."
-    },
-    {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Agent workflows dominate today's visible momentum: agent memory, skill-based development methods, agent-first IDEs, and design review are all represented among the highest daily gainers. A second signal is practical agent infrastructure—from private computer-use workspaces to a faster headless browser—alongside a handful of very new projects with strong early interest."
+      "content": "Today’s strongest signal is the move from coding-agent prompts toward durable workflows and products: persistent memory, specialist skills, design checks, local agent workspaces and remote control all feature prominently. The top gain was claude-mem (+1,723 stars in GitHub’s daily view), with game-development coordination and agent-oriented design tools close behind."
     },
     {
-      "id": "01-pbakaus-impeccable",
+      "id": "repo-01",
       "kind": "repo",
-      "title": "pbakaus/impeccable",
+      "title": "thedotmack/claude-mem",
       "rank": 1,
-      "url": "https://github.com/pbakaus/impeccable",
-      "description": "A design vocabulary and review toolkit that helps coding agents build and critique more distinctive interfaces.",
-      "language": "Rust",
-      "stars_gained": 2300,
-      "total_stars": 97100,
-      "default_branch": "main",
-      "default_branch_commit": "df3a4abe7d0840d5f60324812c432e00b66a4e75",
-      "why_notable": "The day's largest listed gain; its README describes reusable design playbooks, deterministic UI checks, and critique/audit workflows.",
-      "theme_ids": ["agent-skills-workflows", "ai-interface-design"],
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent cross-session memory for coding agents: lifecycle hooks capture session activity and a local worker provides searchable context for later sessions.",
+      "content": "Persistent cross-session memory for coding agents: lifecycle hooks capture session activity and a local worker provides searchable context for later sessions. Why notable: Largest daily gain in the live Trending view; it targets the increasingly important continuity gap between agent sessions.",
+      "language": "TypeScript",
+      "stars_gained": 1723,
+      "total_stars": 107440,
+      "default_branch_commit": "70aa40042cfb8157a0d84954b9c0d2b30b50af80",
+      "why_notable": "Largest daily gain in the live Trending view; it targets the increasingly important continuity gap between agent sessions.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 1,
-      "spoken_name": "Impeccable",
+      "spoken_name": "Claude Mem",
       "enrichment": null,
-      "refs": ["pbakaus/impeccable"]
+      "refs": [
+        "thedotmack/claude-mem"
+      ]
     },
     {
-      "id": "02-hkuds-deeptutor",
+      "id": "repo-02",
       "kind": "repo",
-      "title": "HKUDS/DeepTutor",
+      "title": "Donchitos/Claude-Code-Game-Studios",
       "rank": 2,
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "description": "An open-source personalized tutoring system that uses AI to support ongoing learning.",
-      "language": "Python",
-      "stars_gained": 2282,
-      "total_stars": 51799,
-      "default_branch": "main",
-      "default_branch_commit": "1ea7df155447f4caf0e3abc86b3ff5395479cd4a",
-      "why_notable": "Nearly matches the top daily gain, putting AI tutoring alongside agent tooling as a major demand signal.",
-      "theme_ids": ["applied-ai-learning"],
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "description": "A Claude Code game-development workspace organized as a studio hierarchy, with specialist agents, workflow skills, hooks, rules and templates.",
+      "content": "A Claude Code game-development workspace organized as a studio hierarchy, with specialist agents, workflow skills, hooks, rules and templates. Why notable: Second-highest daily gain; it applies explicit roles, escalation paths and quality gates to a complex creative workflow.",
+      "language": "Shell",
+      "stars_gained": 1347,
+      "total_stars": 30951,
+      "default_branch_commit": "05ad7c8a5b8aa2aa86bbd3439ae7cf7295cac418",
+      "why_notable": "Second-highest daily gain; it applies explicit roles, escalation paths and quality gates to a complex creative workflow.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 2,
-      "spoken_name": "DeepTutor",
+      "spoken_name": "Claude Code Game Studios",
       "enrichment": null,
-      "refs": ["HKUDS/DeepTutor"]
+      "refs": [
+        "Donchitos/Claude-Code-Game-Studios"
+      ]
     },
     {
-      "id": "03-obra-superpowers",
+      "id": "repo-03",
       "kind": "repo",
-      "title": "obra/superpowers",
+      "title": "pbakaus/impeccable",
       "rank": 3,
-      "url": "https://github.com/obra/superpowers",
-      "description": "A composable skill framework and software-development methodology for coding agents.",
-      "language": "Shell",
-      "stars_gained": 1259,
-      "total_stars": 309450,
-      "default_branch": "main",
-      "default_branch_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
-      "why_notable": "Strong daily acceleration for a process-oriented toolkit whose documented workflow moves from specification to planning, testing, and subagent implementation.",
-      "theme_ids": ["agent-skills-workflows"],
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "A design vocabulary and review toolkit for coding agents, combining targeted UI commands with accessibility, responsive and visual-quality checks.",
+      "content": "A design vocabulary and review toolkit for coding agents, combining targeted UI commands with accessibility, responsive and visual-quality checks. Why notable: Third-highest daily gain; design-specific agent guidance and deterministic checks stand out within the larger skills-and-harness trend.",
+      "language": "Rust",
+      "stars_gained": 1339,
+      "total_stars": 98006,
+      "default_branch_commit": "d79ce9bd055737a5527ac0bef34b5d2655d54fd0",
+      "why_notable": "Third-highest daily gain; design-specific agent guidance and deterministic checks stand out within the larger skills-and-harness trend.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 3,
-      "spoken_name": "Superpowers",
+      "spoken_name": "Impeccable",
       "enrichment": null,
-      "refs": ["obra/superpowers"]
+      "refs": [
+        "pbakaus/impeccable"
+      ]
     },
     {
-      "id": "04-thedotmack-claude-mem",
+      "id": "repo-04",
       "kind": "repo",
-      "title": "thedotmack/claude-mem",
+      "title": "milind-soni/OpenMausBot",
       "rank": 4,
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Persistent agent context that captures, compresses, and retrieves information across sessions.",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "A local-first desktop chat interface for a team of AI bots, each with its own model, memory, computer and connected apps.",
+      "content": "A local-first desktop chat interface for a team of AI bots, each with its own model, memory, computer and connected apps. Why notable: Strong daily momentum and a distinct agent UX: agents are presented as chat contacts, while a local harness owns execution.",
       "language": "TypeScript",
-      "stars_gained": 1140,
-      "total_stars": 106288,
-      "default_branch": "main",
-      "default_branch_commit": "70aa40042cfb8157a0d84954b9c0d2b30b50af80",
-      "why_notable": "Reinforces durable memory as a core agent layer; its README describes searchable session context and memory compression.",
-      "theme_ids": ["agent-memory-workspaces"],
+      "stars_gained": 1304,
+      "total_stars": 9390,
+      "default_branch_commit": "8c663d2b7647dcea04a2278dd0f794f591ae95e0",
+      "why_notable": "Strong daily momentum and a distinct agent UX: agents are presented as chat contacts, while a local harness owns execution.",
+      "theme_ids": [
+        "local-agent-interfaces"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 4,
-      "spoken_name": "Claude-Mem",
+      "spoken_name": "Open Maus Bot",
       "enrichment": null,
-      "refs": ["thedotmack/claude-mem"]
+      "refs": [
+        "milind-soni/OpenMausBot"
+      ]
     },
     {
-      "id": "05-renhuai123-ziwei-doushu",
-      "kind": "repo",
-      "title": "Renhuai123/ziwei-doushu",
-      "rank": 5,
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "description": "An open-source Chinese astrology charting engine with algorithms and a knowledge base.",
-      "language": "TypeScript",
-      "stars_gained": 1126,
-      "total_stars": 11230,
-      "default_branch": "main",
-      "default_branch_commit": "495b79ecb3524b20b2edc026067d7d0b0f407319",
-      "why_notable": "A notable non-agent, culturally specific application among the day's leading gainers, with a substantial data and interpretation component described in its README.",
-      "theme_ids": ["specialized-applied-projects"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 7,
-      "spoken_name": "Ziwei Doushu",
-      "enrichment": null,
-      "refs": ["Renhuai123/ziwei-doushu"]
-    },
-    {
-      "id": "06-pingdotgg-t3code",
+      "id": "repo-05",
       "kind": "repo",
       "title": "pingdotgg/t3code",
-      "rank": 6,
+      "rank": 5,
       "url": "https://github.com/pingdotgg/t3code",
-      "description": "An open, remote-ready control surface for coding agents running on a developer's machines.",
+      "description": "A mobile, web and desktop control surface for coding agents running on the user’s machine, including Claude Code, Codex and other supported CLIs.",
+      "content": "A mobile, web and desktop control surface for coding agents running on the user’s machine, including Claude Code, Codex and other supported CLIs. Why notable: One of the day’s fastest risers; it packages remote control of existing local agents as a cross-device developer interface.",
       "language": "TypeScript",
-      "stars_gained": 930,
-      "total_stars": 32758,
-      "default_branch": "main",
-      "default_branch_commit": "5b0cf58f682d8887397bab2a184578c99705e631",
-      "why_notable": "Its mobile, web, and desktop clients point to growing interest in supervising local coding agents from multiple devices.",
-      "theme_ids": ["agent-control-ides"],
+      "stars_gained": 1148,
+      "total_stars": 34604,
+      "default_branch_commit": "15fe2832727893cbdd2214383f9f971474849695",
+      "why_notable": "One of the day’s fastest risers; it packages remote control of existing local agents as a cross-device developer interface.",
+      "theme_ids": [
+        "local-agent-interfaces"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 5,
       "spoken_name": "T3 Code",
       "enrichment": null,
-      "refs": ["pingdotgg/t3code"]
+      "refs": [
+        "pingdotgg/t3code"
+      ],
+      "unique_caveat": "GitHub’s repository description is blank; this summary uses the current README."
     },
     {
-      "id": "07-milind-soni-openmausbot",
+      "id": "repo-06",
       "kind": "repo",
-      "title": "milind-soni/OpenMausBot",
-      "rank": 7,
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "description": "An open-source workspace for running and coordinating personal AI bots.",
-      "language": "TypeScript",
-      "stars_gained": 895,
-      "total_stars": 8677,
-      "default_branch": "main",
-      "default_branch_commit": "7de00e425848d5f1a2a845cb4784851b87d8cad2",
-      "why_notable": "The README emphasizes local-first, bring-your-own-agent bots with separate personalities, models, and connected apps.",
-      "theme_ids": ["agent-memory-workspaces"],
+      "title": "Orkas-AI/Orkas",
+      "rank": 6,
+      "url": "https://github.com/Orkas-AI/Orkas",
+      "description": "A local-first desktop AI team that turns goals into to-dos, coordinates specialist and external agents, and supports scheduled automations.",
+      "content": "A local-first desktop AI team that turns goals into to-dos, coordinates specialist and external agents, and supports scheduled automations. Why notable: Adds a persistent project-and-task layer to the agent-workspace trend, rather than treating each request as a one-off chat.",
+      "language": "JavaScript",
+      "stars_gained": 1118,
+      "total_stars": 6006,
+      "default_branch_commit": "53894cf1b849e39dcdd975c7ef82ee341d7e0ad2",
+      "why_notable": "Adds a persistent project-and-task layer to the agent-workspace trend, rather than treating each request as a one-off chat.",
+      "theme_ids": [
+        "local-agent-interfaces"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 6,
-      "spoken_name": "OpenMausBot",
+      "spoken_name": "Orkas",
       "enrichment": null,
-      "refs": ["milind-soni/OpenMausBot"]
+      "refs": [
+        "Orkas-AI/Orkas"
+      ]
     },
     {
-      "id": "08-mattpocock-skills",
+      "id": "repo-07",
       "kind": "repo",
-      "title": "mattpocock/skills",
+      "title": "Renhuai123/ziwei-doushu",
+      "rank": 7,
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "description": "An open-source Chinese Zi Wei Dou Shu charting engine with calculation algorithms, transformation systems, reference texts and an interpretation dataset.",
+      "content": "An open-source Chinese Zi Wei Dou Shu charting engine with calculation algorithms, transformation systems, reference texts and an interpretation dataset. Why notable: A strong non-general-purpose application in today’s list, pairing a specialized cultural knowledge domain with an open implementation.",
+      "language": "TypeScript",
+      "stars_gained": 1093,
+      "total_stars": 12194,
+      "default_branch_commit": "495b79ecb3524b20b2edc026067d7d0b0f407319",
+      "why_notable": "A strong non-general-purpose application in today’s list, pairing a specialized cultural knowledge domain with an open implementation.",
+      "theme_ids": [
+        "application-breadth"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "Ziwei Doushu",
+      "enrichment": null,
+      "refs": [
+        "Renhuai123/ziwei-doushu"
+      ]
+    },
+    {
+      "id": "repo-08",
+      "kind": "repo",
+      "title": "HKUDS/DeepTutor",
       "rank": 8,
-      "url": "https://github.com/mattpocock/skills",
-      "description": "A collection of small, composable engineering skills for AI agents.",
-      "language": "Shell",
-      "stars_gained": 876,
-      "total_stars": 307500,
-      "default_branch": "main",
-      "default_branch_commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
-      "why_notable": "Its gain supports the shift toward reusable, adaptable skills rather than one all-encompassing development process.",
-      "theme_ids": ["agent-skills-workflows"],
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "A personalized learning workspace connecting tutoring, research, creation and practice in shared sessions and learning context.",
+      "content": "A personalized learning workspace connecting tutoring, research, creation and practice in shared sessions and learning context. Why notable: A clear AI application beyond coding agents, with a unified workspace spanning several learning modes.",
+      "language": "Python",
+      "stars_gained": 1035,
+      "total_stars": 52561,
+      "default_branch_commit": "f7aed0744c36c5afef16a4261c31ebee1208cac2",
+      "why_notable": "A clear AI application beyond coding agents, with a unified workspace spanning several learning modes.",
+      "theme_ids": [
+        "application-breadth"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 8,
-      "spoken_name": "Matt Pocock's Skills",
+      "spoken_name": "DeepTutor",
       "enrichment": null,
-      "refs": ["mattpocock/skills"]
+      "refs": [
+        "HKUDS/DeepTutor"
+      ]
     },
     {
-      "id": "09-jetbrains-thinkrail",
+      "id": "repo-09",
       "kind": "repo",
-      "title": "JetBrains/thinkrail",
+      "title": "lightpanda-io/browser",
       "rank": 9,
-      "url": "https://github.com/JetBrains/thinkrail",
-      "description": "An agentic IDE built around the pi coding agent, isolated workspaces, and project knowledge.",
-      "language": "TypeScript",
-      "stars_gained": 722,
-      "total_stars": 6593,
-      "default_branch": "main",
-      "default_branch_commit": "ec2f2db511c4d5c2a7c3690bf418917d7ea3a29d",
-      "why_notable": "A major IDE vendor's experimental project is applying living specs and reusable skills to personalize an agentic development environment.",
-      "theme_ids": ["agent-memory-workspaces", "agent-control-ides"],
+      "url": "https://github.com/lightpanda-io/browser",
+      "description": "A headless browser written in Zig and designed specifically for web automation and AI workloads.",
+      "content": "A headless browser written in Zig and designed specifically for web automation and AI workloads. Why notable: Represents infrastructure beneath agent workflows: a browser focused on automation rather than general-purpose end-user browsing.",
+      "language": "Zig",
+      "stars_gained": 929,
+      "total_stars": 39011,
+      "default_branch_commit": "97c67d4ba672a9d96acfcd04d6b10a7bc6a43139",
+      "why_notable": "Represents infrastructure beneath agent workflows: a browser focused on automation rather than general-purpose end-user browsing.",
+      "theme_ids": [
+        "specialized-infrastructure"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 9,
-      "spoken_name": "ThinkRail",
+      "spoken_name": "Lightpanda Browser",
       "enrichment": null,
-      "refs": ["JetBrains/thinkrail"]
+      "refs": [
+        "lightpanda-io/browser"
+      ]
     },
     {
-      "id": "10-copilotkit-openbot",
+      "id": "repo-10",
       "kind": "repo",
-      "title": "CopilotKit/OpenBot",
+      "title": "mattpocock/skills",
       "rank": 10,
-      "url": "https://github.com/CopilotKit/OpenBot",
-      "description": "A self-hosted template for AI coworkers with individual browsers, files, and controlled tools.",
-      "language": "TypeScript",
-      "stars_gained": 706,
-      "total_stars": 8809,
-      "default_branch": "main",
-      "default_branch_commit": "743649efc3f21d7bf0badbe6af2bcd5daedd97ce",
-      "why_notable": "It makes agent action review and a dedicated computer environment explicit design choices; the project describes itself as an early template, not a hosted product.",
-      "theme_ids": ["agent-memory-workspaces", "agent-execution-infrastructure"],
+      "url": "https://github.com/mattpocock/skills",
+      "description": "A set of small, editable and composable engineering skills for coding agents, designed to work across models.",
+      "content": "A set of small, editable and composable engineering skills for coding agents, designed to work across models. Why notable: Its high daily gain reinforces demand for lightweight, adaptable agent guidance rather than only large all-in-one frameworks.",
+      "language": "Shell",
+      "stars_gained": 882,
+      "total_stars": 308133,
+      "default_branch_commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "why_notable": "Its high daily gain reinforces demand for lightweight, adaptable agent guidance rather than only large all-in-one frameworks.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 10,
-      "spoken_name": "OpenBot",
-      "unique_caveat": "The README labels it beta and describes it as a template to clone and customize, not a hosted service.",
+      "spoken_name": "Matt Pocock Skills",
       "enrichment": null,
-      "refs": ["CopilotKit/OpenBot"]
+      "refs": [
+        "mattpocock/skills"
+      ]
     },
     {
-      "id": "11-lightpanda-io-browser",
+      "id": "repo-11",
       "kind": "repo",
-      "title": "lightpanda-io/browser",
+      "title": "obra/superpowers",
       "rank": 11,
-      "url": "https://github.com/lightpanda-io/browser",
-      "description": "A headless browser written in Zig and designed for AI agents and automation.",
-      "language": "Zig",
-      "stars_gained": 626,
-      "total_stars": 38419,
-      "default_branch": "main",
-      "default_branch_commit": "56980afdec3ad177072e7a180cb05da838bc1744",
-      "why_notable": "A distinct infrastructure bet in a list otherwise dominated by agent applications and workflows: a browser built from scratch rather than a Chromium fork.",
-      "theme_ids": ["agent-execution-infrastructure"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 11,
-      "spoken_name": "Lightpanda Browser",
-      "enrichment": null,
-      "refs": ["lightpanda-io/browser"]
-    },
-    {
-      "id": "12-valentderah-totk-pc-recomp",
-      "kind": "repo",
-      "title": "valentderah/totk-pc-recomp",
-      "rank": 12,
-      "url": "https://github.com/valentderah/totk-pc-recomp",
-      "description": "A static recompilation project targeting a native Windows version of Tears of the Kingdom.",
-      "language": "C",
-      "stars_gained": null,
-      "total_stars": 1607,
-      "default_branch": "main",
-      "default_branch_commit": "c3b9a4e7f6ec3d1f0a8c84b66b1703b15639a784",
-      "why_notable": "Created on 2026-10-29 and surfaced in recent-repository search with substantial early stars; GitHub Trending did not supply its daily gain in this capture.",
-      "theme_ids": ["specialized-applied-projects"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 12,
-      "spoken_name": "TotK Recomp",
-      "unique_caveat": "The README says game files are not included, users need their own legally obtained copy, and the project is in early development with visual bugs and crashes expected.",
-      "enrichment": null,
-      "refs": ["valentderah/totk-pc-recomp"]
-    },
-    {
-      "id": "13-wangzan101-mika",
-      "kind": "repo",
-      "title": "wangzan101/Mika",
-      "rank": 13,
-      "url": "https://github.com/wangzan101/Mika",
-      "description": "An on-device Android agent that operates apps and the web to carry out user requests.",
-      "language": "Kotlin",
-      "stars_gained": null,
-      "total_stars": 1381,
-      "default_branch": "main",
-      "default_branch_commit": "688f59d5a18d99d0231504598da4059f3feb226e",
-      "why_notable": "A newly created mobile-agent project with early traction, using a background screen so users can continue using their phone.",
-      "theme_ids": ["mobile-agent"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 5,
-      "spoken_name": "Mika",
-      "unique_caveat": "The README specifies Android 13 or later and an arm64 device/sandbox.",
-      "enrichment": null,
-      "refs": ["wangzan101/Mika"]
-    },
-    {
-      "id": "14-heydamir-unslop",
-      "kind": "repo",
-      "title": "heydamir/unslop",
-      "rank": 14,
-      "url": "https://github.com/heydamir/unslop",
-      "description": "A Claude skill that reviews and redesigns generic-looking AI-generated interfaces.",
-      "language": "JavaScript",
-      "stars_gained": null,
-      "total_stars": 1310,
-      "default_branch": "main",
-      "default_branch_commit": "4652254daff586ff4739849395a127b56f7f8cc7",
-      "why_notable": "Created on 2026-10-29; it joins the design-tooling signal with a concrete audit-before-edit workflow.",
-      "theme_ids": ["ai-interface-design"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 12,
-      "spoken_name": "Unslop",
-      "unique_caveat": "The README documents it as a Claude skill; broader harness support was not established from the README reviewed.",
-      "enrichment": null,
-      "refs": ["heydamir/unslop"]
-    },
-    {
-      "id": "15-paipiange-nvzhuang",
-      "kind": "repo",
-      "title": "paipiange/nvzhuang",
-      "rank": 15,
-      "url": "https://github.com/paipiange/nvzhuang",
-      "description": "A bilingual AI fashion-reference gallery with an optional virtual try-on backend.",
-      "language": "Go",
-      "stars_gained": null,
-      "total_stars": 1209,
-      "default_branch": "main",
-      "default_branch_commit": "b3ecccd54edb8e4c72221ab01a0f22b3369cf0d4",
-      "why_notable": "A recently created, fast-starred applied-AI project outside the coding-agent cluster, combining image discovery with optional model-powered try-on.",
-      "theme_ids": ["specialized-applied-projects"],
+      "url": "https://github.com/obra/superpowers",
+      "description": "A composable software-development methodology for coding agents, with skills that guide work from requirements and design into implementation.",
+      "content": "A composable software-development methodology for coding agents, with skills that guide work from requirements and design into implementation. Why notable: A mature, heavily starred framework still gaining attention; its structured process complements the smaller skill collections in the list.",
+      "language": "Shell",
+      "stars_gained": 663,
+      "total_stars": 309895,
+      "default_branch_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "why_notable": "A mature, heavily starred framework still gaining attention; its structured process complements the smaller skill collections in the list.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
       "signal_strength": "brief",
       "evidence_density": "rich",
-      "narration_priority": 13,
-      "spoken_name": "Nvzhuang / AI Fashion Reference Gallery",
-      "unique_caveat": "The README says the try-on feature needs a self-hosted backend and the user's own model API key; the gallery itself is static.",
+      "narration_priority": 11,
+      "spoken_name": "Superpowers",
       "enrichment": null,
-      "refs": ["paipiange/nvzhuang"]
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "repo-12",
+      "kind": "repo",
+      "title": "vorssaint/vorssaint-utils",
+      "rank": 12,
+      "url": "https://github.com/vorssaint/vorssaint-utils",
+      "description": "A modular open-source macOS menu-bar toolkit that lets users install only the system-monitoring and utility features they need.",
+      "content": "A modular open-source macOS menu-bar toolkit that lets users install only the system-monitoring and utility features they need. Why notable: A useful non-agent counterpoint: it shows sustained attention to focused, native desktop utilities alongside AI tooling.",
+      "language": "Swift",
+      "stars_gained": 499,
+      "total_stars": 31732,
+      "default_branch_commit": "a5da7633e09d0ebbf5b5607c0434ded28a239469",
+      "why_notable": "A useful non-agent counterpoint: it shows sustained attention to focused, native desktop utilities alongside AI tooling.",
+      "theme_ids": [
+        "application-breadth"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 12,
+      "spoken_name": "Vorssaint Utils",
+      "enrichment": null,
+      "refs": [
+        "vorssaint/vorssaint-utils"
+      ]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Agent skills and repeatable workflows (Impeccable, Superpowers, mattpocock/skills); memory and persistent agent workspaces (claude-mem, ThinkRail, OpenMausBot, OpenBot); agentic IDEs and remote control (T3 Code, ThinkRail); design quality for AI-generated software (Impeccable, unslop); agent execution infrastructure (Lightpanda, OpenBot); applied AI learning (DeepTutor); mobile agents (Mika); specialized applied projects (TotK recompilation, ziwei-doushu, nvzhuang). Language tally across the 15 entries: TypeScript 6, Shell 2, and Rust, Python, Zig, C, Kotlin, JavaScript, and Go one each."
+      "content": "- Agent skills, memory and structured development: Five repositories span persistent memory and reusable process/design guidance: claude-mem, Claude-Code-Game-Studios, impeccable, mattpocock/skills and superpowers. The pattern is to make coding agents more dependable by adding retained context, specialist roles, task-specific vocabulary, checks and repeatable workflows.\n- Local-first and cross-device agent workspaces: OpenMausBot, t3code and Orkas move beyond a single prompt box: they expose agents through chat or desktop task interfaces, let users reuse locally installed agents, and add control, coordination or ongoing project context.\n- Purpose-built automation infrastructure: Lightpanda/browser represents a lower layer of the agent stack: a Zig-based headless browser aimed at automation and AI workloads.\n- Specialized apps beyond coding: DeepTutor targets learning, ziwei-doushu focuses on a traditional Chinese charting domain, and vorssaint-utils packages native macOS utilities. These are narrower user-facing products, not a single generic agent category.\nLanguages: TypeScript (4), Shell (3), Rust (1), JavaScript (1), Zig (1), Python (1), Swift (1)."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "Today's strongest signal is the operational layer around coding agents: persistent memory, reusable engineering skills, agent-aware IDEs, design critique, and controllable execution environments. The recent-repository search broadens that picture with an on-device Android agent and a pair of new, focused design/media tools, but their current star totals are not comparable to the Trending page's daily-gain figures. Together, the list suggests developers are investing not only in agent capability, but in making agent work persistent, reviewable, and usable in real workflows."
-    },
-    {
-      "id": "99-sources-and-method",
-      "kind": "sources",
-      "title": "Sources and Method",
-      "content": "Primary source: https://github.com/trending (captured 2026-10-31 01:34 UTC). Corroboration: GitHub REST repository and default-branch-ref endpoints for selected repositories; GitHub Search query created:2026-10-29..2026-10-31 pushed:>=2026-10-29 stars:>1000 for fresh candidates; selected first-party READMEs checked. Ranks 1-11 follow daily stars today; four recent Search results appended separately with unavailable daily gains. No prior-window comparison was gathered."
+      "content": "GitHub’s daily list is still heavily shaped by coding agents, but the interesting shift within today’s snapshot is toward the infrastructure and interfaces that make agents usable over time: memory, guardrails, repeatable workflows and local control. Learning, traditional-domain software and native macOS utilities provide smaller but notable counterpoints."
     }
   ]
 }

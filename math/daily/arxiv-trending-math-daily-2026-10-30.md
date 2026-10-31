@@ -1,109 +1,129 @@
-# arXiv mathematics — daily notable papers, 30 October 2026
+# arXiv Mathematics — daily notable papers — Friday, 30 October 2026
 
-**Headline.** Seven selected papers from the latest Mathematics announcement batch (Friday, 30 October 2026; there was no 31 October batch). The most striking pattern is sharp structural results: asymptotic enumeration in tropical geometry, probabilistic scaling limits, and uniqueness/nonuniqueness theorems for PDE. In this briefing: the tropical counting result, random geometric limits, and two contrasting PDE advances. This is an inferred notable-paper ordering, not an official arXiv trending chart; citation evidence for papers this new is limited (the checked Semantic Scholar records had zero citations, and searches mainly surfaced arXiv records or automated mirrors rather than independent expert discussion).
+Nine papers from the latest Mathematics announcement batch stand out for concrete conjecture resolutions, a claimed counterexample to a long-standing module-theory conjecture, and rigorous constructions bridging neighboring fields. Spoken agenda: three headline claims, then probability, geometry, quantum symmetry, and the limits still open. This is an inferred ranking—not an official arXiv trending chart—and citation evidence is limited for papers announced so recently; treat it as a notable-paper selection, not a popularity measurement.
 
 ## Top papers (ranked)
 
-### 1. [The Number of Tropical Order Types and Coherent Matching Fields](https://arxiv.org/abs/2610.40622)
-- **Abstract:** The authors count tropical matching fields and hyperplane-sequence types, derive first-order asymptotics for regular triangulations of products of simplices, and compare the order-type expressivity of linear programs and mean-payoff games.
-- **Authors:** Xavier Allamigeon, Yiyuan Chen, Stéphane Gaubert, Xavier Goaoc
-- **arXiv:** `2610.40622v1` (published 2026-10-29 17:56 UTC; categories: `math.CO`, cross-lists `math.AG`, `math.OC`)
-- **Evidence for ranking:** Its three mathematical classifications connect combinatorial enumeration, tropical/algebraic geometry, and optimization; the abstract states a first-order asymptotic answering a question of Santos. This is a concrete result and cross-field relevance, not an attention-based placement.
-- **Claimed result:** The authors prove that, for fixed rank parameter r, the relevant counts grow as n^((r−1)^2 n+o(n)); this yields the same asymptotic for regular triangulations of Δ^(n−1)×Δ^(r−1), answering Santos's question. They also compare real and signed-tropical order types and show a collapse for the parity-game double-tropicalization class.
-- **Assumptions and setting:** As n tends to infinity with r fixed; the structures are max-plus tropical hyperplane sequences, coherent matching fields, and associated labeled order types.
-- **Caveat:** The headline enumeration is first-order asymptotic rather than an exact count, and its implications concern structural expressivity, not a direct algorithmic complexity improvement.
+### 1. [A counterexample to the pure semisimplicity conjecture](https://arxiv.org/abs/2610.39883)
+- **Abstract:** The paper constructs a division-ring extension yielding a triangular ring that is right pure semisimple but neither left pure semisimple nor of finite representation type, contradicting the pure semisimplicity conjecture.
+- **Authors:** Junpeng Ren
+- **arXiv:** `2610.39883v1` (published 2026-10-29T11:58:26Z; categories: `math.RA` primary; no cross-lists)
+- **Evidence for ranking:** A concrete counterexample to a long-standing conjecture, an accompanying Lean 4 formalization linked from the arXiv comments, and early external coverage by MathWorld and AI Proof Watch. These are attention/checkability signals, not peer review; no journal reference was listed in the sources checked.
+- **Claimed result:** The author proves that the triangular ring built from the specified division-ring extension is right pure semisimple, but not left pure semisimple and not of finite representation type; this would refute the conjecture.
+- **Assumptions and setting:** The construction uses a division ring T formed from fraction division rings of nearest-neighbour quantum Laurent algebras with parameter 1/2, and a subring H with right dimension sequence (1,2,2,…).
+- **Caveat:** This is a preprint claim. The arXiv comment says the Lean development corresponds to an earlier manuscript snapshot, so it does not alone certify the current version.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Combinatorics & discrete mathematics; Geometry & topology; Optimization & control
+- **Themes:** Algebra & number theory
 
-### 2. [JT gravity as a conformal scaling limit of random flat combinatorial disks](https://arxiv.org/abs/2610.40645)
-- **Abstract:** The author proves a conformal scaling limit from a Boltzmann ensemble of rectilinear combinatorial disks to a random flat surface prescribed by a path-integral formulation of JT gravity, and gives an exploration-based convergence criterion.
-- **Authors:** Morris Ang
-- **arXiv:** `2610.40645v1` (published 2026-10-29 17:59 UTC; categories: `math.PR`, cross-list `math-ph`)
-- **Evidence for ranking:** Probability and mathematical physics cross-listing, a proved scaling limit for a specified disk ensemble, and a general criterion based on branching explorations make this a concrete bridge between discrete random geometry and continuum gravity.
-- **Claimed result:** The author proves convergence in law, after rescaling as the distinguished base length tends to infinity, of the critical Boltzmann rectilinear disk to a flat JT-gravity surface; the conformal factor converges on compact subsets under the stated uniformization. The paper also gives a criterion for other discrete models.
-- **Assumptions and setting:** The explicit model is a critical Boltzmann ensemble of rectilinear disks with a long distinguished side. The general criterion requires an exploration with a Markov property, tightness, and joint convergence of the length process and associated data.
-- **Caveat:** The criterion does not itself establish convergence for every proposed disk model; those applications still require the exploration and tightness hypotheses. The construction also uses a conformal-welding theorem from a companion paper.
+### 2. [A proof of the Murty--Simon conjecture on diameter-2-critical graphs](https://arxiv.org/abs/2610.39032)
+- **Abstract:** The authors prove that every finite n-vertex diameter-2-critical graph has at most floor(n²/4) edges, with equality only for the balanced complete bipartite graph, for every n.
+- **Authors:** Sanjana Das, Jacob Fox
+- **arXiv:** `2610.39032v1` (published 2026-10-28T23:04:24Z; categories: `math.CO` primary; no cross-lists)
+- **Evidence for ranking:** The claimed result closes the all-n conjecture, including its equality case; a public Lean 4/Mathlib formalization was independently located and checked. This is a theorem-and-verifiability basis for placement, not a citation-based popularity signal.
+- **Claimed result:** The paper proves the Murty--Simon edge bound and uniqueness of the extremal graph for every n≥3; its introduction reduces the proof to a maximal-matching inequality and a characterization of equality.
+- **Assumptions and setting:** Finite diameter-2-critical graphs: every vertex pair is at distance at most 2, and deleting any edge destroys that property.
+- **Caveat:** The authors state that AI first found the edge-bound proof; they simplified it and developed the equality-case argument themselves. This remains a preprint claim requiring mathematical review.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Probability & statistics; Mathematical physics
+- **Themes:** Combinatorics & discrete mathematics
 
 ### 3. [Nonuniqueness of the 2D Euler Evolutions with L¹∩Lᵖ Vorticity](https://arxiv.org/abs/2610.40553)
-- **Abstract:** For every fixed 1<p<∞, the authors construct compactly supported L¹∩Lᵖ initial vorticity for which the unforced two-dimensional Euler equation has two distinct, exactly transported Lagrangian evolutions on [0,1].
+- **Abstract:** For each fixed 1<p<∞, the authors construct one compactly supported initial vorticity in L¹∩Lᵖ that has two distinct, exactly transported evolutions of the unforced planar Euler equation on [0,1].
 - **Authors:** Thomas Y. Hou, Xiang Qin, Peicong Song, Wenhan Zhang
-- **arXiv:** `2610.40553v1` (published 2026-10-29 17:39 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The abstract states a precise nonuniqueness result while retaining strong continuity, exact vorticity transport, and regular Lagrangian flows; it is a substantial PDE claim supported by a detailed construction described by the authors.
-- **Claimed result:** The authors construct two distinct evolutions from the same limiting datum by cascading unstable four-vortex configurations across scales, with a difference persisting at positive time and detectable by a smooth observable.
-- **Assumptions and setting:** Unforced 2D incompressible Euler on [0,1]; for each prescribed finite p>1, the compactly supported initial vorticity lies in L¹(R²)∩Lᵖ(R²), and both evolutions are strongly continuous there and transported by their own measure-preserving regular Lagrangian flows.
-- **Caveat:** The construction parameters and initial datum may depend on p, so the result does not supply one datum working simultaneously for every p. The claim is a new preprint result and warrants expert scrutiny.
+- **arXiv:** `2610.40553v1` (published 2026-10-29T17:39:32Z; categories: `math.AP` primary; no cross-lists)
+- **Evidence for ranking:** The introduction states a precise theorem for every finite p, with both evolutions strongly continuous in the stated norms and transported by regular Lagrangian flows. The authors also identify a contemporaneous independent construction using essentially the same core mechanism.
+- **Claimed result:** The authors prove nonuniqueness by coupling unstable four-vortex configurations across infinitely many scales so a vanishing initial perturbation leaves a detectable difference at positive time.
+- **Assumptions and setting:** Unforced two-dimensional incompressible Euler; the datum is real and compactly supported, and may depend on the prescribed finite exponent p. Each flow is almost-everywhere invertible and measure-preserving.
+- **Caveat:** The construction does not claim nonuniqueness at p=∞; the authors distinguish finite-Lᵖ membership from stronger quantitative control as p grows. They also cite Choi's independently developed work using essentially the same mechanism.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
 - **Themes:** Analysis & PDE
 
-### 4. [Global Well-Posedness of Landau Equation in Bounded Domains](https://arxiv.org/abs/2610.40517)
-- **Abstract:** The authors prove global well-posedness near a Maxwellian in bounded C³ domains for the Landau equation with in-flow or diffuse-reflection boundary conditions, including Coulomb interactions.
-- **Authors:** Zhimeng Ouyang, Lei Wu
-- **arXiv:** `2610.40517v1` (published 2026-10-29 17:26 UTC; categories: `math.AP`)
-- **Evidence for ranking:** It states global existence, uniqueness, and continuous dependence in a bounded-domain kinetic PDE setting, including the Coulomb case; the 98-page manuscript signals a technically extensive proof, not external validation.
-- **Claimed result:** The authors claim global strong solutions from small compatible Gaussian perturbations and uniqueness and continuous dependence among weak solutions for −3≤γ≤1.
-- **Assumptions and setting:** Perturbations are small and compatible with a Maxwellian; the spatial domain is bounded and C³, with either in-flow or diffuse-reflection boundary conditions.
-- **Caveat:** The theorem is perturbative and tied to the stated boundary and regularity assumptions; the abstract does not assert large-data well-posedness.
+### 4. [JT gravity as a conformal scaling limit of random flat combinatorial disks](https://arxiv.org/abs/2610.40645)
+- **Abstract:** The paper proves a criterion based on branching explorations and applies it to a Boltzmann ensemble of rectilinear-boundary combinatorial disks, whose rescaled surfaces converge to the continuum random surface prescribed by flat JT gravity.
+- **Authors:** Morris Ang
+- **arXiv:** `2610.40645v1` (published 2026-10-29T17:59:13Z; categories: `math.PR` primary, `math-ph` cross-list)
+- **Evidence for ranking:** Cross-listed in probability and mathematical physics; the abstract states a scaling-limit theorem and a branching-exploration criterion, with a conformal-welding theorem supplied by a companion paper. Semantic Scholar reports 0 citations at the snapshot; that is a current total, not a period gain.
+- **Claimed result:** As a distinguished boundary side tends to infinite length, the rescaled disk converges in law, in the stated interior conformal-factor topology, to the flat JT-gravity surface; under a tightness condition the criterion extends to discrete disks.
+- **Assumptions and setting:** The worked example is a Boltzmann ensemble of disks with rectilinear boundary; the limit uses uniformization in a fixed domain and a branching exploration with conditioned Cauchy-process lengths.
+- **Caveat:** The theorem is established for the stated ensemble and criterion; other natural disk models are proposed as applications, not proved scaling limits here.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Analysis & PDE; Mathematical physics
+- **Themes:** Probability & statistics; Mathematical physics
 
-### 5. [A self-normalized law of the iterated logarithm for Rademacher random multiplicative functions](https://arxiv.org/abs/2610.40605)
-- **Abstract:** For a squarefree-supported Rademacher random multiplicative function, the authors prove an almost-sure two-sided law of the iterated logarithm for its partial sums when normalized by the full predictable quadratic variation.
+### 5. [An Adian-Rabin theorem for quantum automorphism groups of graphs](https://arxiv.org/abs/2610.40590)
+- **Abstract:** The authors prove that many properties of graph quantum-automorphism groups—including having quantum symmetries and having a nontrivial discrete quantum automorphism group—are undecidable.
+- **Authors:** Josse van Dobben de Bruyn, William Slofstra
+- **arXiv:** `2610.40590v1` (published 2026-10-29T17:48:22Z; categories: `math.QA` primary; `math.CO`, `math.GR`, `math.OA` cross-lists)
+- **Evidence for ranking:** It is cross-listed across four mathematical subjects and gives explicit undecidability results; Semantic Scholar currently lists 1 citation and 0 influential citations, a current total rather than a period gain.
+- **Claimed result:** The authors establish an Adian-Rabin theorem for quantum automorphism groups of graphs and for solution groups associated with linear-system nonlocal games.
+- **Assumptions and setting:** The objects are graph quantum-automorphism algebras and their discrete quantum groups; the method reduces questions to solution groups of linear-system games.
+- **Caveat:** Undecidability rules out a general decision procedure but does not classify the quantum symmetries of any particular graph.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics; Mathematical physics
+
+### 6. [Serre's conjectures for Q(√13)](https://arxiv.org/abs/2610.38884)
+- **Abstract:** Assuming GRH and a minor technical result, the authors claim to prove Serre's conjectures for Q(√13) and establish a reduction-to-level-1 result for real quadratic fields with narrow class number one.
+- **Authors:** Luis Dieulefait, Ariel Pacetti
+- **arXiv:** `2610.38884v1` (published 2026-10-28T20:48:06Z; categories: `math.NT` primary; no cross-lists)
+- **Evidence for ranking:** The abstract combines a named conjecture for a specific field with a reduction theorem over a broader class of real quadratic fields; the result is explicitly conditional rather than an unconditional resolution.
+- **Claimed result:** The authors prove the conjectures for Q(√13) under the stated assumptions and a reduction-to-level-1 theorem for every real quadratic field of narrow class number one.
+- **Assumptions and setting:** GRH and one minor technical result are assumed; the field-specific base cases are established only for Q(√13).
+- **Caveat:** The argument is conditional, and the authors say they cannot yet establish the needed base cases for other fields.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Algebra & number theory
+
+### 7. [A complete solution to the reverse isoperimetric problem for λ-convex bodies](https://arxiv.org/abs/2610.40291)
+- **Abstract:** For λ>0, the authors show that among λ-convex bodies in Euclidean space with fixed surface area, the intersection of two radius-1/λ balls minimizes volume, confirming Borisenko's conjecture in every dimension n≥2.
+- **Authors:** Kostiantyn Drach, Kateryna Tatarko
+- **arXiv:** `2610.40291v1` (published 2026-10-29T15:41:08Z; categories: `math.MG` primary, `math.DG` cross-list)
+- **Evidence for ranking:** The abstract claims a complete all-dimensions resolution and extends the inequality to all constant-curvature model spaces; cross-listed in metric and differential geometry.
+- **Claimed result:** The λ-convex lens minimizes volume at fixed surface area in Rⁿ, and the authors extend the reverse inequality to constant-curvature model spaces in arbitrary dimension and for every λ>0.
+- **Assumptions and setting:** λ-convex means an intersection of balls of radius 1/λ; λ is positive and surface area is fixed.
+- **Caveat:** The result concerns this constrained class and the stated constant-curvature model spaces, not arbitrary convex bodies in arbitrary ambient geometries.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Geometry & topology
+
+### 8. [A self-normalized law of the iterated logarithm for Rademacher random multiplicative functions](https://arxiv.org/abs/2610.40605)
+- **Abstract:** For a squarefree-supported Rademacher random multiplicative function, the authors prove a two-sided law of the iterated logarithm normalized by its full predictable quadratic variation, with almost-sure cluster set [-1,1].
 - **Authors:** Dariusz Buraczewski, Alexander Iksanov
-- **arXiv:** `2610.40605v1` (published 2026-10-29 17:52 UTC; categories: `math.PR`, cross-list `math.NT`)
-- **Evidence for ranking:** The result links probability and number theory and gives an explicit almost-sure limit and cluster set for a classical random multiplicative model; the abstract also isolates a further unresolved fluctuation alternative.
-- **Claimed result:** The authors prove limsup and liminf equal to +1 and −1 after normalization by √(2Q(x)log log x), with the same result using log log Q(x), and identify the normalized cluster set as [−1,1].
-- **Assumptions and setting:** f is a Rademacher random multiplicative function supported on squarefree integers; M(x) is its partial sum and Q(x) is the full predictable quadratic variation of the prime-revealing martingale.
-- **Caveat:** The authors leave open which of two alternatives holds for the limsup normalized instead by √x(log log x)^(1/4): a finite positive nondegenerate random variable or infinity almost surely.
+- **arXiv:** `2610.40605v1` (published 2026-10-29T17:52:57Z; categories: `math.PR` primary, `math.NT` cross-list)
+- **Evidence for ranking:** A precise almost-sure limit theorem and an explicit probability/number-theory bridge; the abstract also isolates a remaining growth dichotomy rather than claiming it is settled.
+- **Claimed result:** The normalized partial sums have limsup 1, liminf -1, and cluster set [-1,1]; moreover, no positive deterministic q makes Q(x)/q(x) converge in probability to 1.
+- **Assumptions and setting:** f is a Rademacher random multiplicative function supported on squarefree integers, and Q is the full predictable quadratic variation of the prime-revealing martingale.
+- **Caveat:** The authors do not decide whether a second limsup, normalized by √x(log log x)^(1/4), is finite and positive with a nondegenerate law or infinite almost surely.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
 - **Themes:** Probability & statistics; Algebra & number theory
 
-### 6. [Multicomplexes in Action: Strong Formality of Compact Hyperkähler Manifolds](https://arxiv.org/abs/2610.40639)
-- **Abstract:** The author proves bigraded strong formality for compact hyperkähler manifolds and develops algebraic formality tools for multicomplexes and commutative n-differential graded algebras.
+### 9. [Multicomplexes in Action: Strong Formality of Compact Hyperkähler Manifolds](https://arxiv.org/abs/2610.40639)
+- **Abstract:** The author proves that every compact hyperkähler manifold is bigraded strongly formal in the sense of Milivojević and Stelzig, using algebraic formality results for multicomplexes and commutative n-differential graded algebras.
 - **Authors:** Antonio Pio Contrò
-- **arXiv:** `2610.40639v1` (published 2026-10-29 17:58 UTC; categories: `math.AT`, cross-lists `math.AG`, `math.DG`)
-- **Evidence for ranking:** Three mathematical categories meet in a stated formality theorem for all compact hyperkähler manifolds; the abstract also describes a generalized ∂∂̄-lemma and an algebraic theorem supporting the geometric claim.
-- **Claimed result:** The author establishes that compact hyperkähler manifolds are bigraded strongly formal in the sense of Milivojević and Stelzig, and proves an algebraic formality theorem for the stated multicomplex setting.
-- **Assumptions and setting:** The geometric statement is for compact hyperkähler manifolds and the specified pluripotential-homotopy notion of bigraded strong formality; the algebraic framework uses objects with multiple differentials.
-- **Caveat:** The claim concerns this particular strong-formality notion and homotopy-theoretic setting; it should not be read as an unrestricted equivalence of all invariants with those of compact Kähler manifolds.
+- **arXiv:** `2610.40639v1` (published 2026-10-29T17:58:39Z; categories: `math.AT` primary; `math.AG`, `math.DG` cross-lists)
+- **Evidence for ranking:** Cross-listed across algebraic topology, algebraic geometry, and differential geometry; the abstract states a general algebraic theorem and a geometric application. No citation or independent discussion signal was available in the sources checked.
+- **Claimed result:** The author establishes a generalized ∂∂̄-lemma and an algebraic formality theorem for the stated multicomplex setting, yielding strong formality for compact hyperkähler manifolds.
+- **Assumptions and setting:** The geometric conclusion is for compact hyperkähler manifolds; the algebraic framework is categories of multicomplexes and commutative n-differential graded algebras.
+- **Caveat:** The abstract does not claim the same conclusion for broader classes of non-Kähler manifolds.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Geometry & topology; Algebra & number theory
-
-### 7. [Singular value decompositions over *-algebras with applications to tensor decompositions](https://arxiv.org/abs/2610.40450)
-- **Abstract:** The authors characterize finite-dimensional *-algebras admitting singular value decompositions and extend SVD-based low-rank tensor formats, with quasi-optimality guarantees depending on commutativity.
-- **Authors:** Paulina Hoyos, Joe Kileel
-- **arXiv:** `2610.40450v1` (published 2026-10-29 17:00 UTC; categories: `math.NA`)
-- **Evidence for ranking:** The paper combines an algebraic characterization, an explicit ordered-SVD algorithm, and tensor-decomposition guarantees; its applications make the abstract method computationally testable.
-- **Claimed result:** The authors characterize which finite-dimensional *-algebras K admit an SVD for every matrix and which inner products yield Eckart–Young optimality. They claim TT-SVD remains quasi-optimal for every such K, while HOSVD, ST-HOSVD, and TTN-SVD retain that guarantee when K is commutative.
-- **Assumptions and setting:** Matrices and tensors are over a finite-dimensional *-algebra with the specified compatible inner products; the stated stronger tensor guarantees depend on whether the algebra is commutative.
-- **Caveat:** The quasi-optimality result is not uniform across all tensor formats and algebras; the abstract's empirical compression examples do not establish lower error for every data set.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Numerical analysis & computation; Optimization & control
+- **Themes:** Geometry & topology
 
 ## Trending Research Themes
 
-- **Tropical geometry as a language for comparing optimization and games.** Allamigeon, Chen, Gaubert, and Goaoc connect coherent matching fields, regular triangulations, and order types to the expressivity of linear programs and mean-payoff/parity games ([2610.40622](https://arxiv.org/abs/2610.40622)). This is a focused bridge in this batch, not evidence of a field-wide shift.
-- **Random objects described by explicit limiting structures.** Ang's disk model converges to a continuum random surface ([2610.40645]); Buraczewski and Iksanov identify the almost-sure normalized fluctuation set for a multiplicative random sum ([2610.40605]). These are separate results, not a shared technique, but both make the limiting object or fluctuation range explicit.
-- **PDE results at opposite ends of uniqueness.** Hou, Qin, Song, and Zhang claim nonuniqueness for rough finite-Lᵖ Euler vorticity ([2610.40553]), while Ouyang and Wu prove perturbative global well-posedness for the Landau equation in bounded domains ([2610.40517]). Their hypotheses and equations differ; the contrast is useful, not a contradiction.
-- **Two isolated structural extensions.** Contrò's multicomplex formalism yields a strong-formality theorem for compact hyperkähler manifolds ([2610.40639]); Hoyos and Kileel generalize SVD and tensor truncation to finite-dimensional *-algebras ([2610.40450]). These are distinct algebraic extensions rather than one recurring method.
+- **Conjecture resolution and counterexample construction are a visible, but not field-wide, pattern in this batch:** Ren's proposed counterexample to pure semisimplicity [1], Das–Fox's all-n proof of Murty--Simon [2], and Drach–Tatarko's confirmation of Borisenko's conjecture [7] make distinct kinds of global claims.
+- **Several papers make explicit bridges across mathematical areas:** random multiplicative functions connect probability and number theory [8]; JT gravity links random-disk explorations to continuum mathematical physics [4]; and quantum graph symmetries connect quantum algebra, combinatorics, group theory, and operator algebras [5]. These are distinct bridges, not evidence of a shared technique.
+- **Constructive and auditability signals recur in a few entries:** the pure-semisimplicity and Murty--Simon papers have Lean artifacts [1, 2], while the Euler result relies on exact vortex-patch constructions [3]. The proofs and formalization scopes still need independent mathematical scrutiny.
+- The papers do not establish a single dominant method or a field-wide shift. The small daily sample contains very different objects and hypotheses.
 
 ## Open Problems and Research Directions
 
-- **Author-stated unresolved alternative:** Buraczewski and Iksanov do not determine whether the √x(log log x)^(1/4)-normalized limsup is finite and nondegenerate or infinite almost surely ([2610.40605]). A concrete next step is to sharpen bounds on Q(x) and relate them to the two alternatives without assuming a deterministic equivalent, which the paper rules out in probability.
-- **Generalizing the random-disk limit:** Ang's criterion requires Markov exploration, tightness, and joint convergence; the author expects analogous recursions for flat triangulations and quadrangulations but does not prove those cases here ([2610.40645]). One direction is to verify each hypothesis for a specific alternative ensemble and determine whether its boundary normalization gives the same JT limit.
-- **Scope of Euler nonuniqueness:** The construction may depend on p ([2610.40553]). It would test the strength of the mechanism to seek a single initial datum producing distinct evolutions for a range of finite p values, or to identify what changes at endpoint regularity; these are proposed extensions, not claims made by the theorem.
-- **Optimization of the SVD guarantees:** The paper's quasi-optimality guarantee for HOSVD, ST-HOSVD, and TTN-SVD requires commutative K, unlike its TT-SVD result ([2610.40450]). A follow-up is to find counterexamples or additional algebraic hypotheses that recover comparable guarantees for noncommutative algebras, and to test the bounds on the scientific data formats used in the paper.
-- **Beyond near-equilibrium kinetic solutions:** Ouyang and Wu treat small compatible Gaussian perturbations and specified boundary conditions ([2610.40517]). Studying weaker perturbation regularity or broader boundary geometries would clarify which ingredients are essential; this is a proposed direction, not an open problem explicitly stated in the abstract.
+- **Author-stated unresolved question — [8]:** Determine which alternative holds for the limsup normalized by √x(log log x)^(1/4): a finite positive nondegenerate random limit superior, or infinity almost surely. A follow-up could seek sharper tail or distributional estimates for Q(x) and M(x).
+- **Author-stated limitation — [6]:** The reduction-to-level-1 theorem covers real quadratic fields with narrow class number one, but the necessary base cases are supplied only for Q(√13), under GRH and a minor technical assumption. Establishing or testing those base cases for other fields is a natural extension; this is a proposed direction, not a claim of novelty or tractability.
+- **Synthesis from the hypotheses — [3]:** Since the constructed datum and parameters depend on each finite p, a useful next question is how this nonuniqueness result fits alongside known uniqueness regimes under stronger vorticity controls, and how the boundary between those function-space assumptions can be described. The paper itself also notes a contemporaneous construction with a similar core mechanism.
+- **Validation direction — [1, 2]:** The two conjecture-level claims merit independent proof review; for [1], the Lean snapshot is explicitly earlier than the submitted manuscript, while [2] reports AI assistance in the initial proof. Comparing the formal artifacts against the exact submitted arguments is a concrete check, not a statement that either claim is incorrect.
 
 ## Takeaway
 
-This batch has several precise, technically ambitious claims, particularly the tropical enumeration and two contrasting PDE results. Because the papers are newly announced and external attention signals are sparse, read the ordering as a transparent shortlist for inspection rather than as a measure of community popularity or validation.
+The batch's strongest mathematical stories are several sharply stated conjecture-level claims and constructions whose hypotheses matter: the pure-semisimplicity counterexample, the all-n Murty--Simon proof, and Euler nonuniqueness in every finite Lᵖ class. They are striking author claims in fresh preprints, not settled community consensus; conditional assumptions, formalization scope, and independent proof review remain central uncertainties.
 
 ## Method and sources
 
-- **Window:** daily; selected announcement batch 2026-10-30 through 2026-10-30. The snapshot was taken at 2026-10-31 01:23:21 UTC. Since 31 October had no announcement batch, the report uses the prior batch dated 30 October.
-- **Coverage:** arXiv Mathematics recent listing, all Mathematics subject classes and cross-listed records in the selected batch; the batch contained 874 entries. The complete batch was traversed across the listing pages; each selected abstract page was checked for title, authors, version, submission time, and categories. The arXiv HTML versions of the leading three were inspected for their introductions and main-result statements; this was not a proof review.
-- **Selection:** seven entries are ranked as notable recent papers, not as measured popularity. The ordering favors explicit mathematical claims with cross-subfield relevance; recency only identifies the selected batch. No numeric trend score was calculated. Semantic Scholar Graph records were checked for the selected candidates; citationCount and influentialCitationCount were zero in the returned records. Exact-title web searches were used as a limited check for independent discussion.
-- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); individual arXiv abstract pages linked above; [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch).
-- **Retrieval note:** the configured `web_extract` backend could not extract pages, so the arXiv listing and abstract pages were read in a real browser instead.
+- **Window:** daily; the exact announcement-batch window is 2026-10-30 through 2026-10-30. The latest Mathematics listing showed Friday, 30 October 2026, with 874 entries in that batch; the full batch was screened. Saturday, 31 October had no batch, so this uses the prior batch. Snapshot time: 2026-10-31T17:33:37Z.
+- **Coverage:** arXiv Mathematics (`math`) recent listing, retaining its subject categories and cross-lists. Each selected abstract page and submission history was checked live; the top three papers' introductions/main-result statements were inspected in arXiv HTML. The arXiv API XML was used to cross-check versions, UTC timestamps, authors, categories, abstracts, and comments. The configured `web_extract` service could not extract URLs, so the browser and arXiv API were used instead.
+- **Ranking:** qualitative and inferred from concrete claims, cross-listing, linked proof artifacts, and early external coverage, with recency only a tie-breaker. There is no official arXiv trend ranking. Semantic Scholar returned records for only two selected papers: the JT-gravity paper had 0 current citations; the quantum-automorphism paper had 1 current citation and 0 influential citations. These are current totals, not gains in this window; evidence is too sparse to measure popularity. Web searches found no independent seminar discussion for the selected papers.
+- **Sources:** [Mathematics recent listing](https://arxiv.org/list/math/recent); the nine linked arXiv abstracts above; [Semantic Scholar Graph API record for 2610.40645](https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.40645?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds) and [2610.40590](https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.40590?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds); [MathWorld on pure semisimplicity](https://mathworld.wolfram.com/PureSemisimplicityConjecture.html); [AI Proof Watch coverage](https://aiproofwatch.com/updates/a-counterexample-to-the-pure-semisimplicity-conjecture-ff5b8d97); [Murty--Simon Lean formalization](https://github.com/jtraverso/murty-simon-conjecture).

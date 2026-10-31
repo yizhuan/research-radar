@@ -1,104 +1,113 @@
-# Daily AI papers — arXiv announcement batch 2026-10-30
+# AI on arXiv — Friday, 30 October 2026
 
-Seven selected papers from today's batch point to two visible threads: making interactive visual/robotic worlds more persistent and scalable, and evaluating agents under conditions closer to changing real-world tasks. Today's quick tour: dynamic-goal web agents, persistent 3D world memory, efficient pixel-space generation, and agent-built robot simulations. This is a notable-paper shortlist, not a popularity leaderboard: arXiv has no official trending chart, the ordering is inferred from corroborated indexing and discussion signals, and citation evidence is limited for papers announced this recently.
+Eight notable papers from the latest AI announcement batch. The clearest shared thread is making agents more dependable in settings where actions, evidence, or task requirements can change; the batch also includes a lab-science demonstration and agent-built robotics simulations. Brief agenda: autonomous research, embodied simulation, and the new emphasis on trajectory-level verification. arXiv has no official trending chart: this is an inferred, relevance-ranked selection, not a popularity ranking, and citation evidence is especially limited for papers announced yesterday.
 
 ## Top papers (ranked)
 
-### 1. [DynaRev: Benchmarking Web Agents under Dynamic Goal Revision](https://arxiv.org/abs/2610.40133)
-- **Abstract:** Introduces a 181-task benchmark that revises web-agent goals at task-defined milestones and finds that five evaluated models often meet only part of the changed requirements.
-- **Authors:** Shiqi Zhang, Guochen Zhou, Zesheng Wei, Hai Zhao, Zhisong Zhang
-- **arXiv:** `2610.40133v1` (published 2026-10-29T14:25:54Z; categories: `cs.AI`)
-- **Evidence for ranking:** Surfaced in several third-party paper summaries/indexes checked for this batch, including DeepPaper and Fugu-MT; this is cross-indexing evidence, not a readership measure. No citation-momentum signal was available.
-- **Claimed contribution:** The authors introduce DynaRev with additive, override, and runtime-conditioned goal changes, scoring correctness, responsiveness, and efficiency from agent trajectories.
-- **Caveat:** The authors note that tasks are static web tasks, milestone/evaluation decisions rely on imperfect LLM semantic judgments, and meaningful milestones may be hard to identify for tasks with highly diverse successful trajectories.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Agents & reasoning; Evaluation & benchmarks
+Ordering reflects the breadth and concreteness of reported research evidence, not measured popularity. Semantic Scholar reported zero current citations for each selected paper at the snapshot; these are current totals, not citations gained in this window.
 
-### 2. [L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory](https://arxiv.org/abs/2610.40614)
-- **Abstract:** Proposes a video world model that updates a persistent latent 3D Gaussian memory as it generates new views, aiming to preserve spatial consistency while keeping memory growth tied to explored scene extent rather than stream length.
-- **Authors:** Jinhyeok Choi, JoungBin Lee, Jongmin Lee, Minkyeong Jeon, Jiyoung Kim, et al.
-- **arXiv:** `2610.40614v1` (published 2026-10-29T17:54:42Z; categories: `cs.CV`)
-- **Evidence for ranking:** Listed in the Papers with Code 2026 paper archive and has a linked project page with method details and results; these confirm external indexing and technical material, not measured popularity. The abstract reports up to 38.6× fewer 3D primitives and real-time generation at 9 FPS against the stated prior-memory comparisons.
-- **Claimed contribution:** The authors' L3G memory stores VAE latent features in 3D Gaussians and renders them directly into the video model's latent space; their experiments report improved long-horizon consistency and faster memory operations.
-- **Caveat:** The authors explicitly note that the current memory is designed mainly for static scenes; moving-object separation, very large explorations, and error propagation remain limitations.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Multimodal & vision-language; Efficient inference & systems
-
-### 3. [Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers](https://arxiv.org/abs/2610.40647)
-- **Abstract:** Presents SpecSlot, which assigns pixel-space generation tokens distinct spatial and frequency roles so fine detail can be represented without sending every token through global attention.
-- **Authors:** Jiongfan Yang, Weichen Fan, Haiwen Diao, Zhongang Cai, Ziwei Liu
-- **arXiv:** `2610.40647v1` (published 2026-10-29T17:59:21Z; categories: `cs.CV`, `cs.AI`, `cs.LG`, `cs.NE`)
-- **Evidence for ranking:** Appears in the Papers with Code 2026 archive and the Papers.cool paper index; its cross-listing spans four configured AI categories. These are corroborating discovery/indexing signals, not evidence of readership. The paper reports a FLOPs-matched ImageNet comparison and a text-to-image result on DPG-Bench.
-- **Claimed contribution:** The authors' SpecSlot allocates DCT frequency bands to local slots and reserves global attention for low-frequency carriers; in their reported tests it improves FID over a FLOPs-matched JiT control on ImageNet-512 and reduces forward cost relative to JiT-B/8 on DPG-Bench.
-- **Caveat:** Evidence is limited to the reported ImageNet and DPG-Bench settings; these results do not establish performance across other image distributions or generation tasks.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Multimodal & vision-language; Efficient inference & systems
-
-### 4. [Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation](https://arxiv.org/abs/2610.40350)
-- **Abstract:** Proposes CORAL, which lets an LLM agent checkpoint progress and verified facts, then reset cluttered context to continue long tasks with fewer input tokens.
-- **Authors:** Zheng Zhu, Xiaozhuan Liang, Xi Chen, Bei Yu, Jiaya Jia
-- **arXiv:** `2610.40350v1` (published 2026-10-29T16:07:10Z; categories: `cs.CL`)
-- **Evidence for ranking:** Selected as a highlight by the Week 44 AI Research Radar; the arXiv comment also reports acceptance at COLM 2026. These are editorial and venue signals, not popularity statistics.
-- **Claimed contribution:** The authors report 42.8% average accuracy for an 8B model on GAIA while using 6–7× fewer input tokens than a ReAct agent, with further evaluations on multi-hop QA and BrowseComp.
-- **Caveat:** The reported headline result is benchmark-specific and uses an 8B model; the abstract does not establish that the same gains transfer to deployed agents or other model scales.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Agents & reasoning; Efficient inference & systems
-
-### 5. [Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)
-- **Abstract:** Introduces a coding-agent pipeline for constructing and auditing robot simulations, and releases RoboWorld, a 25-simulation benchmark where the best tested frontier models average 0.06 reward on its test tasks.
-- **Authors:** Pranjal Aggarwal, Sean Welleck
-- **arXiv:** `2610.40565v1` (published 2026-10-29T17:42:32Z; categories: `cs.RO`, `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** The paper is surfaced in the current arXiv AI paper discovery results and has a public project/benchmark page; its cross-listing spans robotics, AI, and machine learning. The ranking signal is discoverability plus scope, not a measured attention count.
-- **Claimed contribution:** The authors use coding agents to build simulations and adversarial audit agents to check them, selecting candidate tasks using U.S. economic and time-use data; the paper reports 25 built simulations out of 120 selected action groups.
-- **Caveat:** The work evaluates simulations and simulated learning; it does not demonstrate transfer of the full benchmark to physical robots, and only 25 of 120 selected simulation targets are built in this release.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Robotics & control; Agents & reasoning; Evaluation & benchmarks
-
-### 6. [Collaborative AI agents for autonomous experimental research with solid-state quantum spins](https://arxiv.org/abs/2610.40589)
-- **Abstract:** Demonstrates LLM-based agents that formulate and challenge a quantum-spin research question, check a prediction computationally, and revise an experiment after detecting measurement drift.
+### 1. [Collaborative AI agents for autonomous experimental research with solid-state quantum spins](https://arxiv.org/abs/2610.40589)
+- **Abstract:** The authors present collaborating LLM-based research agents that formulate and check a quantum-spin calibration result, then design and revise physical experiments when controls reveal signal drift.
 - **Authors:** El Mustapha Mansouri, Eikichi Kimura, Masato Koga, Keigo Arai
 - **arXiv:** `2610.40589v1` (published 2026-10-29T17:47:50Z; categories: `cs.AI`, `cs.MA`, `quant-ph`)
-- **Evidence for ranking:** Included in the Week 44 AI Research Radar and the October 29 AI Paper Digest, both independent research roundups. Cross-listing in multiagent systems adds a second relevant category signal; no citation momentum was available.
-- **Claimed contribution:** The authors report a laboratory workflow where agents assess one another's work, computationally check a derived calibration result, and redesign measurements after a drifting signal made the first experiment inconclusive.
-- **Caveat:** This is a demonstration on ensembles of solid-state quantum spins and a defined family of microwave pulse sequences; it does not establish general autonomous research capability across fields.
+- **Evidence for ranking:** Strong empirical range in this selection: the paper combines theoretical and computational checks with a physical quantum-spin experiment, and its three-category listing spans AI, multi-agent systems, and quantum physics. Placement reflects concrete validation, not an attention count.
+- **Claimed contribution:** The authors claim to demonstrate an agent laboratory that selects research questions, derives theoretical results, and tests predictions experimentally; the study reports that agents treated a drift-affected run as inconclusive and revised the protocol.
+- **Caveat:** The authors' first apparently agreeing run was inconclusive after repeated reference measurements exposed drift; the revised result is one investigation on a specific quantum-spin platform, not evidence of general autonomous-science capability.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
 - **Themes:** Agents & reasoning; Evaluation & benchmarks
 
-### 7. [Proving and Improving the Platonic Representation Hypothesis with JEPAs](https://arxiv.org/abs/2610.39302)
-- **Abstract:** Gives a theorem about when separately trained JEPAs can align representations across modalities and reports empirical alignment experiments from caption datasets through text associated with 940 million web images.
-- **Authors:** Randall Balestriero, Yann LeCun
-- **arXiv:** `2610.39302v1` (published 2026-10-29T03:49:53Z; categories: `cs.AI`, `cs.CV`, `stat.ML`)
-- **Evidence for ranking:** Appeared in an independent technical paper-discovery result, and its cross-listing covers AI, vision, and statistical machine learning. This is a weaker attention signal than the multiply indexed items above; the paper is included for its breadth and theoretical-plus-empirical scope, not author identity.
-- **Claimed contribution:** The authors prove a Platonic Representation Theorem under stated positive-pair assumptions, argue that next-token prediction supplies poorer alignment views, and report alignment and captioning experiments.
-- **Caveat:** The reported evidence concerns cross-modal representation alignment and selected zero-shot/captioning evaluations; it does not establish general superiority of JEPAs across AI tasks.
+### 2. [Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)
+- **Abstract:** The authors use coding agents and an adversarial creation-audit loop to build RoboWorld, a robotics simulation suite, and report that frontier models struggle on its test tasks while several privileged-learning approaches improve performance.
+- **Authors:** Pranjal Aggarwal, Sean Welleck
+- **arXiv:** `2610.40565v1` (published 2026-10-29T17:42:32Z; categories: `cs.RO`, `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** A concrete research artifact plus evaluation across 25 simulations and 200 RL environments; three-category coverage links robotics, AI, and machine learning. The reported difficulty of RoboWorld test tasks makes the benchmark's challenge explicit.
+- **Claimed contribution:** The authors introduce a framework for coding agents to create and audit robotics simulations and report RoboWorld results, including improvements from privileged-state teaching and code-generated demonstrations.
+- **Caveat:** The reported results are in generated simulation environments; the paper's benchmark evidence does not establish sim-to-real transfer. The suite spans 25 simulations, so broader coverage of physical work remains open.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Training & adaptation; Multimodal & vision-language
+- **Themes:** Robotics & control; Agents & reasoning; Data & synthetic data
+
+### 3. [VeriCUA: Verification as Agentic Exploration for Computer-Using Agents](https://arxiv.org/abs/2610.40578)
+- **Abstract:** VeriCUA treats task verification as active evidence gathering, selecting GUI or code checks to assess unresolved requirements across online and recorded computer-use-agent trajectories.
+- **Authors:** Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong et al.
+- **arXiv:** `2610.40578v1` (published 2026-10-29T17:45:26Z; categories: `cs.AI`, `cs.CL`, `cs.CV`)
+- **Evidence for ranking:** Three-category scope and comparative evaluations across platforms and online/offline settings; the authors report higher agreement with reference labels and fewer false completion claims online. The full paper also reports the trade-off between evidence gathering and cost.
+- **Claimed contribution:** The authors propose a platform-agnostic verifier that inspects context, builds a task rubric, and adaptively combines GUI and code evidence under explicit rules.
+- **Caveat:** The authors report tens of tool and model calls per trajectory—about an order of magnitude more than a single-call judge—and note that recorded trajectories must abstain when evidence is absent.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
+
+### 4. [Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success](https://arxiv.org/abs/2610.40444)
+- **Abstract:** The paper proposes measuring whether every prefix of a tool-use trajectory remains executable, and reports that this exposes reliability failures hidden by final-success scores across several agent benchmarks.
+- **Authors:** Amir H. Rezaeian, Weiyi Sun, Yassine Benajiba, Dan Roth
+- **arXiv:** `2610.40444v1` (published 2026-10-29T16:58:04Z; categories: `cs.AI`, `cs.CL`)
+- **Evidence for ranking:** The work tests a clear evaluation intervention on BFCL-v3, ToolSandbox, and τ³-bench, defines several trajectory-level measures, and reports cases where final-success and executable-prefix rankings diverge.
+- **Claimed contribution:** The authors introduce Prefix Executability Curves, First-Error Depth, Trajectory Executability Rate, and related measures for diagnosing invalid tool calls and recovery.
+- **Caveat:** The protocol measures executability against represented tool schemas, preconditions, and dependencies; by itself, that does not certify that an action is semantically correct or safe.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
+
+### 5. [EnvOS: Auditing Computer-Use Agents When the World Moves On : Phenomenon-Based Task Construction, Certification, and Evidence-Based Evaluation](https://arxiv.org/abs/2610.40246)
+- **Abstract:** EnvOS certifies environments with mid-task changes and audits evidence-based grading; in stale-information tasks, the authors report that performance depended on whether agents received updated information and on the model and interface.
+- **Authors:** Ankush Kadu, Athira Gopal, Niharika Singh, Arpit Jain, Aswanth Krishnan
+- **arXiv:** `2610.40246v1` (published 2026-10-29T15:14:16Z; categories: `cs.AI`, `cs.HC`)
+- **Evidence for ranking:** The paper combines pre-run environment and grader certification with post-run evidence checks, reports task-level experiments in clinic booking and insurance approval, and tests its grading pipeline on corrupted episodes.
+- **Claimed contribution:** The authors propose a framework for constructing and auditing dynamic computer-use-agent environments, with separately checked environment changes, solvability, and verdicts.
+- **Caveat:** The reported agent study focuses on stale information in two task settings; some insurance-task significance did not survive correction for multiple tests, limiting broad conclusions from these results.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
+
+### 6. [DynaRev: Benchmarking Web Agents under Dynamic Goal Revision](https://arxiv.org/abs/2610.40133)
+- **Abstract:** DynaRev is a 181-task benchmark for web agents whose users change requirements mid-task; five-model evaluations find partial completion and performance differences across revision types and task sources.
+- **Authors:** Shiqi Zhang, Guochen Zhou, Zesheng Wei, Hai Zhao, Zhisong Zhang
+- **arXiv:** `2610.40133v1` (published 2026-10-29T14:25:54Z; categories: `cs.AI`)
+- **Evidence for ranking:** A defined 181-task benchmark and a five-model evaluation directly test an interaction condition usually absent from fixed-goal tasks; the authors also report that browser resets and instruction rewriting have contrasting effects.
+- **Claimed contribution:** The authors introduce semantic-milestone delivery of additive, overriding, and runtime-conditioned goal revisions, with trajectory-grounded measures of correctness, responsiveness, and efficiency.
+- **Caveat:** The evidence is from the benchmark's 181 tasks and five tested models; results vary by source and revision type, so performance in broader live web workflows remains unestablished.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
+
+### 7. [Retrieving from Your Own Mistakes: On-Policy Training of Embedding Models for Multi-Hop Retrieval-Augmented Generation](https://arxiv.org/abs/2610.40409)
+- **Abstract:** The authors train a chain retriever on states produced by its own earlier retrievals, including mistaken passages, and report improved complete-evidence retrieval and recovery on multi-hop QA benchmarks.
+- **Authors:** Chenjie Qiu, Zixuan Zeng, Shaobin Shi, Bingfeng Chen, Dongsheng Luo, Boyan Xu
+- **arXiv:** `2610.40409v1` (published 2026-10-29T16:40:02Z; categories: `cs.AI`)
+- **Evidence for ranking:** A targeted training change is supported by controlled comparisons attributing gains to on-policy states, plus reported transfer to harder variants of HotpotQA and 2WikiMultiHopQA.
+- **Claimed contribution:** The authors propose on-policy state training that labels the next missing gold passage in the retriever's own visited states, including states containing earlier retrieval errors.
+- **Caveat:** The reported evidence is for multi-hop QA retrieval and constructed harder variants; transfer to unrelated retrieval domains or general-purpose RAG workflows is not established here.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Retrieval & knowledge; Training & adaptation
+
+### 8. [EpiAgent: Epistemic Self-Play for LLM Agents](https://arxiv.org/abs/2610.40227)
+- **Abstract:** EpiAgent adds a learnable belief state about other agents' private information and trains belief updating and action planning together through self-play, with reported gains over prompting and RL baselines in mixed and competitive scenarios.
+- **Authors:** Xuanfa Jin, Xinyu Cui, Zhijian Ma, Xue Yan, Jian Zhao et al.
+- **arXiv:** `2610.40227v1` (published 2026-10-29T15:05:08Z; categories: `cs.AI`, `cs.CL`, `cs.MA`)
+- **Evidence for ranking:** The paper connects explicit belief tracking with a bi-level self-play method, reports comparisons against prompting and RL baselines, and spans AI, language, and multi-agent categories.
+- **Claimed contribution:** The authors propose an epistemic layer that updates beliefs from interaction histories and conditions action planning on those beliefs, optimized with an intrinsic prediction reward.
+- **Caveat:** The abstract reports mixed and competitive interaction scenarios; it does not establish that the approach generalizes to broader strategic environments.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Agents & reasoning; Training & adaptation
 
 ## Trending Research Themes
 
-- Persistent visual world models pair 3D scene state with generated video: L3G-World keeps a latent Gaussian memory across generated chunks, while SpecSlot reallocates global communication to the image structure it claims benefits from it. The shared direction is architectural separation of persistent or global structure from local detail; these are distinct methods, not yet a settled design pattern.
-- Agent evaluation is moving toward stateful tasks and recoverable work. DynaRev changes user goals during web tasks, CORAL carries verified state across long contexts, and the quantum-spin laboratory lets agents stop or revise an experiment when evidence is inconclusive. These papers test different settings, but each makes intermediate state and evidence part of the evaluation story.
-- Robotics work connects agentic software generation with embodied control: Gym-Anything uses coding agents to build and audit simulation environments, while the quantum-spin study is an isolated laboratory demonstration of collaborative agents. It is too early to infer that agent-built simulations reliably transfer to physical robots.
-- The selected batch skews toward computer vision, machine learning, AI, and robotics: the 508 unique entries in the date-filtered core-category query have primary categories led by cs.CV (126), cs.LG (103), cs.AI (77), and cs.RO (62). This is a corpus composition observation, not evidence that those categories were more popular.
+- **From outcome scoring to evidence-based agent evaluation.** VeriCUA gathers supporting evidence instead of relying on a single judge; Prefix Executability checks intermediate tool-call validity; EnvOS audits whether dynamic changes and graders behave as intended; DynaRev tests adaptation when goals change. Together these papers make trajectory, evidence, and environment state part of the evaluation target—not just the final answer.
+- **Agents operating in changing environments.** EnvOS studies stale information, DynaRev revises goals mid-task, and VeriCUA verifies actions across online and recorded contexts. This is a recurring problem pattern in this batch, not proof of a field-wide methodological breakthrough.
+- **Agentic construction of research environments.** Gym-Anything applies coding agents and independent audits to build robotics simulations, while the quantum-spin study uses collaborating agents to formulate, check, and experimentally challenge a scientific result. These are two concrete examples of agents creating and testing the conditions of their own work; their generality remains open.
+- **Learning from internal state, not only ideal demonstrations.** EpiAgent trains belief updates from interaction histories; the multi-hop retriever trains on the states it actually visits, including error-containing states. Both expose an explicit intermediate state to optimization, but in different settings—strategic interaction versus retrieval.
 
 ## Open Problems and Research Directions
 
-- **Author-stated open problem — dynamic memory and long-horizon error:** L3G-World says its memory does not yet explicitly separate independently moving objects, can still grow during very large explorations, and may propagate errors through autoregressive updates. Follow-up experiments could add dynamic-object memory, hierarchical pruning, and long-run tests that track consistency/error accumulation as the explored area grows. ([L3G-World](https://arxiv.org/abs/2610.40614))
-- **Evidence-supported gap — benchmark-to-robot transfer:** Gym-Anything releases 25 of 120 selected simulation targets and evaluates the benchmark in simulation. A concrete next step is to validate a subset against real physical measurements and robot trials, reporting which simulator checks predict sim-to-real performance. ([Gym-Anything](https://arxiv.org/abs/2610.40565))
-- **Author-stated open problem — dynamic-goal benchmark validity:** DynaRev's authors flag static source tasks, imperfect LLM-based milestone/evaluation judgments, and the assumption that meaningful stages can be identified despite trajectory diversity. A next study could use live or human-authored revisions, compare LLM milestone triggers against expert labels, and measure how robust conclusions are when successful task paths differ. ([DynaRev](https://arxiv.org/abs/2610.40133))
-- **Evidence-supported gap — generation quality versus resource cost:** SpecSlot reports gains on ImageNet and DPG-Bench, while L3G-World reports speed and memory improvements for its evaluated world-generation setup. Test whether these efficiency/quality trade-offs persist across additional datasets, resolutions, prompts, and longer interactive rollouts, including failure rates rather than only aggregate quality. ([SpecSlot](https://arxiv.org/abs/2610.40647); [L3G-World](https://arxiv.org/abs/2610.40614))
-- **Synthesis — scientific-agent reliability outside a single case:** The quantum-spin study shows why an inconclusive measurement should trigger protocol revision rather than relaxed acceptance criteria. Replicate the workflow across independent experiments and domains, preregistering stopping rules and human audit criteria to test which parts generalize. ([Collaborative AI agents](https://arxiv.org/abs/2610.40589))
+- **Author-reported problem — experimental reliability:** In the quantum-spin study, repeated references revealed signal drift and invalidated the first apparent agreement. **Follow-up direction (synthesis):** replicate the preregistered protocol across additional instruments, pulse families, and independent operators while retaining the same rejection criteria. [Quantum-spin study](https://arxiv.org/abs/2610.40589)
+- **Author-reported problem — evidence coverage and cost:** VeriCUA can abstain when recordings lack evidence and requires many tool/model calls; Prefix Executability and EnvOS also depend on checkable schemas, state, or audited graders. **Follow-up direction (synthesis):** compare cost, abstention, false acceptance, and error localization on the same tasks under matched observation and tool budgets. [VeriCUA](https://arxiv.org/abs/2610.40578), [Prefix Executability](https://arxiv.org/abs/2610.40444), [EnvOS](https://arxiv.org/abs/2610.40246)
+- **Author-reported problem — dynamic task adaptation:** EnvOS finds model/interface-dependent responses to stale values, while DynaRev reports partial fulfillment under mid-task revisions. **Follow-up direction (synthesis):** test agents on a shared benchmark that independently varies change timing, notification, interface persistence, and revision semantics, then report both final task completion and evidence that the updated requirement was followed. [EnvOS](https://arxiv.org/abs/2610.40246), [DynaRev](https://arxiv.org/abs/2610.40133)
+- **Author-reported problem — realism and coverage:** Gym-Anything reports strong difficulty on its generated test tasks and calls for broader coverage of physical work; simulation outcomes alone do not establish transfer. **Follow-up direction (synthesis):** independently audit a wider set of generated tasks and compare simulation-trained policies with real-robot performance on matched tasks. [Gym-Anything](https://arxiv.org/abs/2610.40565)
+- **Author-reported problem — recoverability after early errors:** Prefix Executability shows that final success can hide invalid prefixes; on-policy retrieval work likewise reports that early wrong passages degrade later retrieval. **Follow-up direction (synthesis):** evaluate recovery interventions while separately measuring uninterrupted success, recovery after first error, and final outcome across longer tool and retrieval chains. [Prefix Executability](https://arxiv.org/abs/2610.40444), [On-policy retrieval](https://arxiv.org/abs/2610.40409)
 
 ## Takeaway
 
-Today's strongest recurring signal is not a single new model family but an emphasis on persistent state: visual worlds keep spatial memory, agents keep verified task state, and experimental agents keep evidence and acceptance criteria. These are promising, concrete evaluations, but this batch is too recent for dependable citation-based momentum, and the reported results remain preprint claims tied to specific benchmarks and demonstrations.
+This batch's strongest common signal is methodological: evaluate what agents did, what evidence they used, and whether the environment or goal changed—not only whether they eventually produced a successful answer. The quantum-spin and robotics-simulation papers make ambitious claims with concrete artifacts or experiments, but the evidence is still one announcement batch and does not settle generalization, operational cost, or real-world transfer.
 
 ## Method and sources
 
-- **Window:** daily; latest arXiv announcement batch dated 2026-10-30 (Friday). It is today's batch, not a prior-day fallback. The indexed entries in this batch have first-submission timestamps on 2026-10-29 UTC; the date-filtered API pool spans 2026-10-29T00:00:46Z through 2026-10-29T17:59:53Z.
-- **Snapshot:** 2026-10-30 17:07:53 UTC.
-- **Scope/query:** one broad arXiv API query over `cs.AI OR cs.LG OR stat.ML OR cs.CL OR cs.CV OR cs.RO OR cs.NE OR cs.MA`, sorted by submitted date descending, with the API capped at 1,000 entries. The returned pool contained 508 unique papers first published on 2026-10-29; all eight configured categories were represented among primary categories or cross-lists. The latest pages for all eight categories showed the Friday 2026-10-30 announcement batch. Duplicate IDs were removed; revisions were not observed among these selected v1 submissions.
-- **Selection and ranking:** Seven notable papers were selected from that 508-paper batch. The ordering uses checkable third-party indexing/roundup mentions, cross-list breadth, and the specificity of reported evidence. This is an inferred ordering, not an arXiv ranking; it does not measure reads, downloads, or bookmarks. Semantic Scholar citation fields could not be retrieved in this run because the Graph API returned a rate-limit response, so no citation totals or velocity were used.
-- **Primary sources:** arXiv abstract pages linked in each entry; category recent pages: [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent).
-- **Corroborating discovery sources:** [Papers with Code 2026 archive](https://paperswithcode.co/papers/archive/2026); [L3G-World project page](https://cvlab-kaist.github.io/L3G-World/); [SpecSlot on Papers.cool](https://papers.cool/arxiv/2610.40647); [Week 44 AI Research Radar](https://researchradar.org/weekly/ai-research-radar); [AI Paper Digest, 2026-10-29](https://amarcu.github.io/ai-paper-digest/); [DeepPaper DynaRev record](https://arxiv.deeppaper.ai/papers/2610.40133v1); [Fugu-MT DynaRev record](https://fugumt.com/fugumt/paper_check/2610.40133v1); [ArcXiv JEPA record](https://arcxiv.org/abs/2610.39302).
-- **Reading:** arXiv pages were verified for all seven entries. PDFs for DynaRev, L3G-World, SpecSlot, and Gym-Anything were read for their introductions, reported evaluations, and limitation/boundary evidence. Other entries are summarized from their verified arXiv abstracts and the linked secondary sources.
+- **Window:** daily; submission-date coverage 2026-10-29, latest announcement batch 2026-10-30. The arXiv category recent pages list Fri, 30 Oct 2026; the selected papers are new submissions, not revisions. Snapshot time: 2026-10-31 01:13:30 UTC.
+- **Categories:** `cs.AI OR cs.LG OR stat.ML OR cs.CL OR cs.CV OR cs.RO OR cs.NE OR cs.MA`. The expanded arXiv API query returned 1,000 entries: 508 dated 2026-10-29, 327 dated 2026-10-28, and 165 dated 2026-10-27; all eight configured categories appeared in the returned pool. In the 508-paper batch, primary categories were concentrated in cs.CV (126), cs.LG (103), cs.AI (77), and cs.RO (62). This eight-paper shortlist is deliberately agent/evaluation-heavy rather than representative of that category mix. The eight selected abstract pages were checked on arXiv.
+- **Inference:** arXiv supplies no trending or readership ranking. Semantic Scholar Graph citation counts for the eight selected papers were all current zero totals at snapshot time; independent discussion results did not provide a robust, checkable attention signal. I therefore call these notable recent papers and order them by the breadth and concreteness of their reported evidence, cross-category scope, and available artifacts—not by popularity. Citation totals are not period gains.
+- **Sources:** [arXiv cs.AI recent list](https://arxiv.org/list/cs.AI/recent); [cs.LG](https://arxiv.org/list/cs.LG/recent); [stat.ML](https://arxiv.org/list/stat.ML/recent); [cs.CL](https://arxiv.org/list/cs.CL/recent); [cs.CV](https://arxiv.org/list/cs.CV/recent); [cs.RO](https://arxiv.org/list/cs.RO/recent); [cs.NE](https://arxiv.org/list/cs.NE/recent); [cs.MA](https://arxiv.org/list/cs.MA/recent). Paper abstracts and full text: the linked arXiv pages above. Citation corroboration: Semantic Scholar Graph API, queried by arXiv ID on 2026-10-31.

@@ -2,83 +2,93 @@
 
 ## Headline
 
-DeepSeek 发布 Super-agent 架构，让 AI 指挥 AI 干活，成为当日最强事件；当日主线是各家把竞争重心从模型能力转向智能体编排、订阅额度与分发入口。
+DeepSeek open-sourced a Router-Worker "Super-agent" prototype aimed squarely at Anthropic's Claude Code, while OpenAI moved to pool ChatGPT and Codex usage into a single token budget from December. The day's throughline is vendors re-architecting the layer around the model — orchestration, metering and compliance — rather than shipping new flagship weights.
 
 ## Top Developments
 
-### 1. DeepSeek Harness 团队公开 Super-agent 智能体架构 (DeepSeek)
-10 月 31 日晚，DeepSeek Harness 团队发表技术文章《Super-agent 设计探索：迈向更自主的 Agent 系统》，公开一套由 Router 与 Worker 两层组成的智能体架构：Router 统一接收群聊、GitHub、邮件等平台消息并分配任务，Worker 各自持有独立上下文，分别负责问题复现、代码审查与功能开发，必要时调用 Subagent。系统支持事件驱动与两级过滤，可在无人 @ 的情况下主动识别缺陷并在后台复现修复；采用存算分离与独立 Watchdog 支撑长期运行。相关原型已开源，内部实例已在 DeepSeek 日常研发中运行。团队强调这是工程架构探讨，并非现有产品功能介绍，实验也未评估真实编码质量。
-Why it matters: 把竞争焦点从单模型能力推向多智能体调度与人类注意力瓶颈，且以开源原型和内部自用实例给出可检验的落地样本。
-Refs: https://news.ycwb.com/ikimvjjtkj/content_54335947.htm, https://baijiahao.baidu.com/s?id=1880607661543975215, https://tech.udn.com/tech/story/123454/9849672, https://36kr.com/newsflashes/4050491685507971?f=rss, https://w.geekpark.net/news/373243#comment
+### 1. DeepSeek Harness team publishes and open-sources Super-agent architecture (DeepSeek)
+On the evening of Oct 31 the DeepSeek Harness team published a technical article, "Super-agent design exploration: toward a more autonomous agent system," and released an open-source prototype. The design uses a Router that ingests group chat, GitHub and email channels and dispatches work to Workers that each hold independent context and can call Subagents; event-driven, two-level filtering lets the system spot defects in group chats without being @-mentioned and attempt background reproduction and fixes. DeepSeek says an internal instance already runs in daily R&D, and stresses the post is an engineering architecture discussion, not a description of existing product features.
+Why it matters: A Chinese lab publishing a multi-agent orchestration design explicitly framed by coverage as competing with Claude Code and Codex shifts the agent race from model quality to system architecture, and the open prototype gives outside teams something to test against.
+Refs: https://finance.sina.com.cn/roll/2026-11-01/doc-inixeyiz3146996.shtml, https://baijiahao.baidu.com/s?id=1880587307431893778&wfr=spider&for=pc, https://www.toutiao.com/article/7703023092108362283/?wid=1793500128269, https://www.scmp.com/tech/article/3372884/deepseek-unveils-ai-super-agent-coding-race-openai-anthropic?module=AI_Recommended_for_you_In-house&pgtype=section, https://www.digitaltoday.co.kr/en/view/122265/deepseek-unveils-super-agent-autonomous-coding-agent-targeting-claude-code
 
-### 2. 智谱认领匿名模型 Ox Alpha，确认即 GLM-5.3-Flash (GLM)
-智谱正式确认，此前在开发者社区引发热议的匿名模型 Ox Alpha（中文社区称“牛来”）就是其最新发布的 GLM-5.3-Flash。该模型测试期间每日 100 万亿 token 流量全部由超过 10 万张国产芯片承载，智谱称其硬件效率与单 token 成本已达到与主流英伟达 GPU 相当的水平。模型为 320B 总参数、18B 激活参数，定价每百万 token 输入 0.8 元、输出 2.8 元，上线前两周半价。消息公布后智谱港股盘初一度大涨逾 7%。
-Why it matters: 以国产芯片集群承载前沿规模流量并低价切入涨价后的市场，直接考验 CUDA 生态护城河与国产算力的成本叙事。
-Refs: https://blog.9nn.cn/newsflashes/6883.html
+### 2. OpenAI to merge ChatGPT and Codex usage into one token-based allowance from December (OpenAI)
+OpenAI's help documentation, as reported Oct 31–Nov 1, says Plus, Pro and Business plans will draw ChatGPT and Codex from a single shared token allowance starting in December, when the agentic features of ChatGPT Work (built on Codex) fold into the main ChatGPT experience. Ordinary chats currently meter by message count per model; after the switch each request is priced by tokens. Instant chat is excluded from the shared pool, and users can view combined remaining allowance and reset time under Settings > Usage. No exact December date is given.
+Why it matters: Pooling coding and chat budgets changes the economics for dual-use subscribers and signals that agentic capability is being consolidated into the core product with cost control attached.
+Refs: https://airebao.com/item/51636, https://zhuanlan.zhihu.com/p/2100195358156513424
 
-### 3. 阿里千问接入 Apple 智能，随 iOS 面向中国用户开放 (Qwen)
-10 月 31 日，阿里巴巴官宣与 Apple 达成合作，将千问（Qwen）集成至 Apple 智能。中国用户可在 Siri、系统级写作工具与视觉智能中直接调用千问的文本与图像理解、内容生成能力。相关功能 11 月 4 日起随 iOS 开发者 Beta 开放测试，12 月随 iOS 27.3 正式上线。报道称 Siri 会在请求发出前征得用户同意，用户请求与生成回复不会被阿里巴巴用于模型训练。
-Why it matters: 国产模型首次作为系统级能力嵌入全球主流手机生态，分发入口的意义大于单点功能。
-Refs: https://zhuanlan.zhihu.com/p/2100141645266273073
+### 3. ChatGPT Pro and Business subscriptions begin bundling monthly OpenAI API credits (OpenAI)
+Per a write-up citing OpenAI's Oct 28 release notes and help pages read Nov 1, ChatGPT Pro plans now include monthly API credits equal to plan price ($100/$200/$500), and Business workspaces get $20 per Standard seat and $100 per Premium seat pooled to a $500 monthly cap; annual workspaces get a year up front capped at $6,000. Plus, free trials, Enterprise, Edu and legacy Codex seats are not listed as eligible. Credits do not roll over, do not raise ChatGPT or signed-in Codex limits, and exclude Codex via API keys. The author notes the structure mirrors an Anthropic credits offer launched about three weeks earlier.
+Why it matters: Bundling API spend into consumer and SMB subscriptions is a direct bid for builders against Anthropic, and the exclusions define exactly which workloads the credit does not cover.
+Refs: https://justinmckelvey.com/blog/openai-api-credits
 
-### 4. Meta 发布 Muse Wonder 系列，称重返前沿 (Meta)
-Meta 表示 Muse Wonder 系列（含 Muse Wonder Full）具备前沿能力，将通过 API 与 Muse Code 提供，最强版本将支撑包括 Muse 个人智能体在内的多项平台功能。公司称按 Artificial Analysis Intelligence Index，最大版本超过 Anthropic 的 Claude Fable 5.1，仅次于 Claude Opus 5.5；在部分专门基准上称超过 GPT-6 Astra。新模型加入 Active Memory 与 Active Focus 两项功能，用于让智能体持续锁定目标。Meta 未披露模型的构建与训练细节，也未说明测试中智能体是否出现失范行为。
-Why it matters: Meta 在连续几代模型不及预期后重新进入前沿竞争，并直接以竞品模型作为对标坐标。
-Refs: https://www.waender.com/news/muse-wonder-puts-meta-back-at-the-ai-frontier-13179/
+### 4. Custom GPT retirement set for Dec 11, with custom actions excluded from migration (OpenAI)
+A migration runbook published Nov 1, citing OpenAI's retirement FAQ and migration guide, says Custom GPTs become inaccessible on Dec 11, 2026 (Feb 11, 2027 for FedRAMP and approved deferrals), with new GPT creation already ended for affected Enterprise workspaces on Oct 26. Instructions, knowledge files and connected apps move to plugins, but custom actions do not transfer and must be rebuilt on a supported app or custom MCP server; selected model and sharing settings also do not carry over. The article notes OpenAI's help center returned a 403 to a scripted fetch on Nov 1, so dates come from write-ups citing it, and that the FAQ calls dates "subject to change."
+Why it matters: For enterprise builders, the forced migration converts working API-connected GPTs into new MCP servers with separate permissions and ownership — a concrete, dated workload with a security-review tail.
+Refs: https://www.beri.net/article/custom-gpt-retirement-december-11-plugin-migration-custom-actions-mcp-enterprise-deferral
 
-### 5. OpenAI 将 ChatGPT 与 Codex 额度合并，并上调 Pro 档额度 (OpenAI)
-OpenAI 更新帮助文档，宣布自 12 月起 Plus 与 Pro 订阅用户的 ChatGPT 聊天与 Codex 编程用量合并为同一额度池，统一按 Token 计费，模型越高级、任务越复杂扣减越多，仅基础 Instant 聊天模式仍可无限免费使用。另有报道称，10 月 30 日 OpenAI 产品负责人 Tibo 宣布提高 ChatGPT Pro 系列与 Business Premium 额度，部分套餐翻倍并即日生效，同时撤销此前 Pro 200 额度下调计划；Pro 500 档可使用 GPT-6 Astra 与 GPT-6.1 Sol 的 Ultrafast 模式，Plus 用户不在调整名单内。
-Why it matters: 直接改变千万级付费用户的用量规则与付费价值感知，反映算力成本压力下的商业化转向。
-Refs: https://wqu.guru/i/01M6A98HQE382GZ7GHM7K605RJ, https://fluxbbs.com/chatgpt-pro-quota-doubled-pro-500-gpt-6-astra-20261030/, https://readmusk.com/digests/2026-11-01
-
-### 6. 19 岁学生服药过量死亡案诉讼要求暂停 ChatGPT Health (OpenAI)
-报道称，19 岁的加州大学默塞德分校学生 Sam Nelson 在与 ChatGPT 讨论药物混用后于 2025 年 5 月 31 日去世，死因为酒精、Xanax 与 Kratom 共同导致的呼吸抑制。其父母于 2026 年 5 月 12 日在旧金山高等法院起诉 OpenAI 及其 CEO，指控 ChatGPT 充当了“用药教练”，除索赔外还要求暂停 OpenAI 今年 1 月推出的 ChatGPT Health，直至通过严格科学测试与独立监督。OpenAI 回应称相关互动发生在一个早已不再提供的旧版本上，并强调 ChatGPT 不能替代医疗或心理健康护理。报道还提到西奈山伊坎医学院对 ChatGPT Health 的独立测试中，真急症被漏掉一半。
-Why it matters: 把通用模型的“顺从”倾向与医疗场景的致命风险直接挂钩，并把监管与独立测试推到产品发布的前置条件位置。
-Refs: https://weibo.com/2/detail/5360316904898919
-
-### 7. Grok API 文本输出将默认嵌入隐形水印 (xAI)
-SpaceXAI（原 xAI）宣布，自 2026 年 11 月 7 日起，Grok API 的文本输出将默认嵌入不可见水印，覆盖 grok-4.7、grok-4.6、grok-4.5、grok-4.3 及 grok-4.20 的多个版本，适用于所有文本生成端点。该水印在生成过程中微调 token 选择，不增加字符或标记，也不影响质量与速度。公司称此举是为遵守欧盟《人工智能法案》第 50 条透明度规则。
-Why it matters: 合规要求首次以默认开启的生成层改动形式落到开发者 API 上，影响所有调用方。
-Refs: https://readmusk.com/digests/2026-11-01, https://readmusk.com/zh-hant/digests/2026-11-01
-
-### 8. 联邦法官驳回 SpaceXAI 撤诉动议，NAACP 空气污染诉讼继续 (xAI)
-美国联邦法官驳回 SpaceXAI（原 xAI）要求撤销 NAACP 诉讼的动议。该诉讼由南方环境法律中心代表 NAACP 提起，指控 SpaceXAI 在孟菲斯郊外的 Colossus 数据中心安装并运行至少 35 台燃气轮机，却未取得《清洁空气法》要求的建设或运营空气许可。SpaceXAI 曾主张这些轮机属移动源可豁免许可、且原告无起诉资格，均未被法官采纳。
-Why it matters: 将检验 AI 数据中心在《清洁空气法》下的许可义务边界，并可能影响其孟菲斯站点的扩张节奏。
-Refs: https://readmusk.com/digests/2026-11-01, https://readmusk.com/zh-hant/digests/2026-11-01
-
-### 9. SpaceX 在 Colossus 2 新增两座 AI 超算集群 (xAI)
-SpaceX 在 Colossus 2 新增两个 AI 超算集群：Gun Range 配置约 22 万块英伟达 GB300、面向训练，预计 11 月底投运；Spam 约 20 万块 GB300、面向推理，计划 12 月上线。马斯克称年底该站点 Blackwell 系列芯片总量将达约 120 万块。报道同时提到，Anthropic 的 IPO 文件显示其承诺到 2029 年最多向 SpaceX 采购 1205 亿美元算力。
-Why it matters: 集群规模与长期算力采购承诺共同勾勒出对外出租 AI 算力的商业模式轮廓。
-Refs: https://readmusk.com/digests/2026-11-01, https://readmusk.com/zh-hant/digests/2026-11-01
-
-### 10. Google DeepMind 公布 Genie 4 实时世界模型研究预览 (Google)
-Google DeepMind 公布 Genie 4，一个可实时生成并运行交互式世界的实验模型：用户可用自然语言移动镜头、改变天气或引入人物与物体，Gemini Omni 负责锚定场景外观与行为，其他 Gemini 模型提供保持连续性的推理。Genie 4 是该公司首个原生生成音频的实时世界模型，可包含环境音、音乐与交互对话。该模型以受限研究预览形式开放给少量可信测试者，计划面向 Google AI Ultra 订阅者与早期访问伙伴；DeepMind 称长会话中视觉细节与物体恒常性可能漂移，复杂物理交互、实时音频与长期一致性仍是研究问题，生成内容将带 SynthID 水印。
-Why it matters: 把语言推理、视觉模拟与音频生成整合进可交互环境，同时以受限预览和明确缺陷清单界定预期。
+### 5. Google DeepMind unveils Genie 4 real-time world model with native audio (Google)
+DeepMind announced Genie 4, an experimental model that generates and runs interactive worlds in real time, steered by natural-language instructions, combining Gemini models (including Gemini Omni for scene anchoring) with a world simulator. It is described as DeepMind's first real-time world model to generate audio natively, covering ambient sound, music and interactive dialogue. Access is a research preview for trusted testers, with planned availability to Google AI Ultra subscribers via Project Genie and to early-access partners through the Gemini API and AI Studio. DeepMind acknowledges drift in visual detail and object permanence over long sessions and lists physics, audio accuracy and spatial consistency as open problems; outputs carry SynthID.
+Why it matters: A restricted but concrete step toward simulation environments usable for agent and robotics training, with explicit limitations disclosed rather than a general-availability launch.
 Refs: https://www.innoparkit.com/google-deepmind-unveils-genie-4-real-time-world-model-native-audio
 
-### 11. 智谱 ZCode 升级，引入目标模式与子智能体 (GLM)
-智谱 AI 的编码工具 ZCode 发布重大更新，引入目标模式（Goal mode）、子智能体（Subagents）、远程控制（Remote Control）与空闲任务（Idle Task）。目标模式允许开发者设定可验证目标，由 ZCode 自动完成任务分解、代码修改、测试与迭代优化；子智能体支持并行多智能体协作；远程控制可通过微信、飞书等移动端访问桌面工作区。报道称其针对 GLM 优化上下文缓存复用，实现 98.10% 缓存命中率，并将 GLM 有效令牌数量提升约 30%；内部基准显示 ZCode 配合 GLM-5.2 的任务通过率比使用 Claude Code 高 2.39%。为庆祝用户数突破百万，ZCode 重置了所有用户的 GLM 编码计划配额。
-Why it matters: 编码智能体从“编程辅助”向“自主交付”推进，并以缓存与配额手段争夺开发者。
-Refs: https://xix.ai/zh-tw/ainews/zcode-upgraded-to-glm-cache-hit-rate-surpasses-98.html, https://xix.ai/zh/ainews/zcode-upgraded-to-glm-cache-hit-rate-surpasses-98.html, https://xix.ai/ainews/zcode-upgraded-to-glm-cache-hit-rate-surpasses-98.html
+### 6. Gemini-powered PlanAssist expands to 12 more English planning authorities (Google)
+Google DeepMind said PlanAssist, a Gemini-built planning-support tool, will be made available to 12 additional local planning authorities in England after early pilots in Barnet, Camden and Dorset. The company reports the tool cut the average time officers spent on householder assessment tasks by up to 58%; the source explicitly notes this measures assessment time, not approval speed. Officers retain final decision-making on every application, and wider-deployment results are not yet established.
+Why it matters: A measurable public-sector deployment of Gemini with a named metric and a human-in-the-loop safeguard — the kind of reference case enterprise and government buyers ask for.
+Refs: https://aipricedb.com/en/ai-news/google-deepmind-to-expand-gemini-powered-planassist-to-12-more-english-planning-authorities-545c0196?topic=product
 
-### 12. 模型目录站点收录 Kimi K3.1 Pro 规格与价格 (Kimi)
-模型目录站点 cnaihot 更新了 MoonshotAI Kimi K3.1 Pro 的条目，标注厂商为月之暗面，上下文 1.05M（1,048,576 tokens），参考价格每百万 token 输入 2 美元、输出 10 美元，数据日期为 2026-11-01，并称其为 Kimi K3 的后训练继任旗舰多模态推理模型。该页面同时标注综合榜未上榜、可信度覆盖为 0 个来源，且未记录已核验的调用渠道。
-Why it matters: 仅反映第三方目录的规格与定价记录，缺乏厂商侧发布信息支撑。
-Refs: https://cnaihot.com/ai-models/moonshotai--kimi-k3.1-pro/
+### 7. Meta launches Muse Wonder model family, claiming return to the frontier (Meta)
+Meta said its Muse Wonder series, including Muse Wonder Full, has frontier capabilities and marks its next step toward "personal superintelligence." The models will be available through the API and Muse Code, with the strongest version powering features including the Muse personal agent. According to the Artificial Analysis Intelligence Index cited in coverage, the largest Muse Wonder version surpasses Anthropic's Claude Fable 5.1 and trails only Claude Opus 5.5; Meta claims wins over OpenAI's GPT-6 Astra and both Claude models on some specialized benchmarks, notably legal documents and software development. New Active Memory and Active Focus features aim to keep agents on goal. Meta did not disclose training details or whether Muse Wonder-driven agents showed misbehavior in testing.
+Why it matters: If the cited index placement holds, Meta re-enters the top tier after a stretch of underperforming Llama generations — a competitive reset for the frontier-model ranking.
+Refs: https://www.waender.com/news/muse-wonder-puts-meta-back-at-the-ai-frontier-13179/
+
+### 8. Meta AI-training copyright cases get May 3, 2027 trial date; acquisition, not fair use, is the fight (Meta)
+A joint case management statement filed Oct 27, 2026 in the Northern District of California sets a May 3, 2027 trial for Kadrey v. Meta and Entrepreneur Media, with three publisher cases queued behind it in filing order. The dispute recorded is about how books were acquired: plaintiffs say a former Meta employee testified he torrented and distributed Books3, while Meta disputes the characterization and says the deleted copy sat on a personal computer years after he left. Entrepreneur Media must file an amended complaint by Nov 6, 2026, expected to add 400+ books and 140+ magazine issues identified from Meta's interrogatory responses and a plaintiffs' expert report. Meta is pressing for registration and chain-of-title documentation for each asserted work.
+Why it matters: The case is being decided on provenance, discovery timing and registration paperwork rather than the fair-use merits — a template for how AI-training copyright exposure will actually be litigated.
+Refs: https://www.perspireip.com/news/meta-books3-ai-training-copyright-trial-may-2027-kadrey-entrepreneur/
+
+### 9. Z.ai confirms anonymous "Ox Alpha" model as GLM-5.3-Flash, served on 100,000+ domestic chips (GLM)
+Z.ai (Zhipu) confirmed that the anonymous model tested on OpenRouter and OpenCode as Ox Alpha is its GLM-5.3-Flash. The company says test-period traffic reached 100 trillion tokens per day, cumulatively over 50 trillion tokens in five days, served by a cluster of more than 100,000 domestic chips, and claims hardware efficiency and per-token cost on par with mainstream Nvidia GPUs. The model is 320B total / 18B active parameters, priced at 0.8 yuan input and 2.8 yuan output per million tokens (half price for the first two weeks), which the report frames as roughly 1/40 the price of Claude Opus 4.8. Z.ai shares reportedly rose over 7% intraday in Hong Kong.
+Why it matters: A large-scale inference deployment on non-Nvidia silicon with aggressive pricing is a direct test of whether domestic chip stacks can carry frontier-adjacent serving economics.
+Refs: https://blog.9nn.cn/newsflashes/6883.html
+
+### 10. Z.ai co-founder Tang Jie calls recursive self-improvement the main AGI problem, urges shared safety effort (GLM)
+Speaking at the World Laureates Forum in Shanghai on Saturday, Tsinghua professor and Z.ai co-founder Tang Jie said recursive self-improvement is "the main research problem" for AGI and represents a new R&D paradigm, while calling for researchers to be "humble" and for the world to organize shared safety guarantees. He did not disclose how much of Z.ai's R&D is AI-performed. Coverage notes Z.ai previously said GLM-5.3 helped optimize its own inference infrastructure for Chinese chips, and that Anthropic reported AI leading 26% of its internal AI R&D in August, up from about 1% in March.
+Why it matters: A prominent Chinese lab leader publicly aligning with the RSI framing already used by OpenAI and Anthropic, and attaching a governance ask rather than only a capability claim.
+Refs: https://www.scmp.com/tech/tech-trends/article/3372834/self-improving-ai-key-step-towards-agi-safety-key-zai-founder?module=latest&pgtype=homepage
+
+### 11. Alibaba's Qwen3.8 series opens flagship weights for the first time (Qwen)
+A Nov 1 roundup says Alibaba released multiple Qwen3.8 models between August and October 2026 across flagship, mid-size dense and lightweight tiers. Qwen3.8-Max is described as a sparse MoE with roughly 2.4 trillion total parameters and about 95 billion active per token, a 1M context window and native multimodality — the first time Qwen has opened flagship-scale weights. Qwen3.8-27B is a dense model under Apache 2.0 aimed at local deployment, and Qwen3.8-Flash is 125B total / 6B active with API pricing cited at 1 yuan input and 3 yuan output per million tokens.
+Why it matters: Opening flagship weights changes the self-hosting calculus for teams with data-residency constraints and intensifies the open-weight price competition with Meta and Mistral.
+Refs: https://www.exb1.com/news/10503.html
+
+### 12. Alibaba says Qwen will power Apple Intelligence features in China (Qwen)
+Alibaba announced on Oct 31 a partnership integrating Qwen into Apple Intelligence for Chinese users, covering Siri, system writing tools and visual intelligence for text and image understanding and generation. The post says features open in iOS developer beta from Nov 4 and ship with iOS 27.3 in December, that Siri seeks user consent before sending content to Qwen, and that requests and responses will not be used by Alibaba for model training. It also states Apple Intelligence passed generative-AI service filing with the Cyberspace Administration of China on July 15.
+Why it matters: A system-level placement inside iOS is a distribution win no app-store ranking matches, and it makes Qwen the default Chinese-language intelligence layer on a major global handset.
+Refs: https://zhuanlan.zhihu.com/p/2100141645266273073
+
+### 13. Moonshot closes Kimi K2 to new users, plans full retirement by end of December (Kimi)
+Moonshot's API docs, per multiple Nov 1 write-ups, state that from Oct 31, 2026 the K2 series (kimi-k2.6, kimi-k2.7-code and its highspeed variant) is unavailable to newly registered users, with existing accounts unaffected, and that all K2 models are planned for retirement by end of December 2026. The named migration target is kimi-k3.1-pro, which has a 1,048,576-token context versus 262,144 for K2. Migration notes flag that K3 fixes several sampling parameters, removes the K2 thinking switch, and adds a reasoning_effort field defaulting to "max," so a bare model-string swap raises cost; third-party pricing lists K3.1 Pro at $2 input / $10 output per million tokens versus $0.95/$4 for K2.7 Code.
+Why it matters: A dated deprecation with a cost-changing default is the kind of API churn that forces engineering teams to re-baseline budgets and test suites before year-end.
+Refs: https://dev.to/ai_maya_063fc568e157562fd/kimi-k2-closes-in-december-what-moving-to-k31-pro-changes-and-what-the-default-reasoning-effort-fld#comments, https://appauxin.com/kimi-k2-api-retirement-migration/, https://www.wsisp.com/helps/120858.html
+
+### 14. xAI to add invisible watermarks to Grok text output from Nov 7, citing EU AI Act (xAI)
+An "Output Watermarking" page on docs.x.ai, last updated Oct 31, 2026, says that from Nov 7 supported Grok models will embed an invisible statistical watermark applied during generation, affecting token selection rather than adding characters or metadata. It covers grok-4.7, grok-4.6, grok-4.5, grok-4.3 and three grok-4.20 variants across all API endpoints, requires no request changes, and adds an x-watermark response header; a separate detection API is available on application. Team admins can opt out per model in the console after confirming a legal exception applies, and opt-outs are logged. The page attributes the change to EU AI Act compliance and uses "SpaceXSI" throughout; xAI's claims that quality and speed are unaffected are not independently verified.
+Why it matters: A concrete, dated compliance change from a major API provider that developers can verify themselves via response headers after Nov 7 — and a template for how AI Act transparency obligations reach API surfaces.
+Refs: https://hub-assets-cache.baai.ac.cn/view/59240, https://www.ithome.com/1/020/721.htm, https://tech.ifeng.com/c/8xhL6mziJzv
 
 ## Cross-Org Themes
 
-- 智能体编排成为共同战场：DeepSeek 的 Super-agent、智谱 ZCode 的子智能体与目标模式、Meta 的 Active Memory/Active Focus 都指向让系统而非人管理多任务
-- 订阅与配额规则集中调整：OpenAI 合并 ChatGPT 与 Codex 额度、智谱重置并临时提升 ZCode 配额，开发者与付费用户的使用成本结构同时被改写
-- 合规与安全以具体技术改动落地：Grok API 默认嵌入水印、ChatGPT Health 面临暂停诉求、Genie 4 输出带 SynthID 水印
+- Vendors are competing on the layer around the model — orchestration, metering, migration tooling and compliance — rather than on new flagship weights alone
+- Chinese labs are pushing open weights and aggressive pricing (Qwen3.8, GLM-5.3-Flash) while US labs restructure subscriptions and deprecate builder surfaces
+- Dated deprecations and forced migrations (Custom GPTs, Kimi K2) are creating near-term engineering work for API and platform customers
 
 ## Rumors and Unverified Claims
 
-模型目录站点 cnaihot 将 Kimi K3.1 Pro 记为月之暗面旗舰多模态推理模型，给出 1.05M 上下文与每百万 token 输入 2 美元、输出 10 美元的参考价，但该页面自标 0 个来源、综合榜未上榜且无已核验调用渠道，未见厂商侧发布信息。另有报道称 Meta 与中国企业傅利叶合作打造名为 Max 的人形机器人原型，并称 Meta 与傅利叶均未确定推出时间，该说法来自单一媒体转述。
+A Wccftech report relayed by a Nov 1 analysis claims a personality-index comparison links Kimi K3.1 Pro to GPT-6 Astra and GLM-5.3 to Anthropic's Claude 5 series, suggesting distillation; the analysis itself calls this circumstantial and notes no on-record response from OpenAI, DeepSeek, Moonshot, Z.ai or Anthropic. The same report teases an unannounced GPT-6.1 Astra and an internal "GPT-6.2 Betelgeuse" codename with no official OpenAI confirmation. A forum post claims Fable 5.5 and GPT-6.2 Astra are in gray testing and may launch next week. Separately, a report says Meta built a humanoid robot prototype "Max" with China's Fourier using Nvidia Jetson Thor and Muse AI, with a second-generation "Max 2" started in September; Meta's response, as quoted, was that the work is internal research with no plans to sell the units.
 
 ## Takeaway
 
-当日信号显示，头部厂商的差异化正从“谁的模型更强”转向“谁能把智能体、额度与合规约束组织成可交付的系统”。接下来值得盯的是 DeepSeek 开源原型的真实编码质量评估、12 月 OpenAI 新额度规则落地后的用户反应，以及 Grok 水印与 ChatGPT Health 诉讼在监管层面的实际处置。
+The next evidence to watch is whether these architectural and pricing bets hold up under real usage: DeepSeek's Super-agent prototype under production load, whether OpenAI's shared token pool actually lands in December as described, and whether xAI's watermark header appears as promised on Nov 7.
 
 ## Sources and Method
 

@@ -1,135 +1,134 @@
-# arXiv AI — Friday, 30 October 2026
+# arXiv Trending AI — Friday 30 October 2026 batch
 
-Latest available batch: 10 selected papers from the 30 October AI-category announcement; no 31 October batch was listed, so this uses the prior batch. The dominant pattern in this shortlist is agentic work made more verifiable—through evidence-gathering, oversight, memory, and autonomous experiments. I’ll cover the ranked papers, the recurring themes, and the most concrete open questions. Important caveat: arXiv publishes no official trending chart, so this ordering is inferred; citation evidence is sparse for most very recent papers, and this is a notable-paper shortlist rather than a defensible popularity ranking.
+Headline — Core AI categories, 30 October 2026 announcement batch; 10 papers. The shortlist is led by agent verification and evaluation, with robotics simulation and resource-aware model/system design also visible. Brief agenda: tool-agent reliability, embodied simulation, multi-agent systems, then training and inference trade-offs. Caveat: arXiv has no official trending chart; this ordering is inferred, and citation evidence is limited for papers only days old.
 
 ## Top papers (ranked)
 
-### 1. [Comprehensive empirical evaluation of feature extractors in computer vision](https://arxiv.org/abs/2610.39551)
-- **Abstract:** The study compares 11 traditional feature detectors and descriptors over more than two million image-matching comparisons, finding different methods best for speed and for particular image transformations.
-- **Authors:** Murat Isik
-- **arXiv:** `2610.39551v1` (published 2026-10-29 07:50:32 UTC; categories: `cs.CV`, `cs.LG`)
-- **Evidence for ranking:** Semantic Scholar lists 19 citations at the 2026-10-31 snapshot, the largest checked count in this shortlist, and the paper has a PeerJ Computer Science journal reference and DOI. This is a 2024 journal paper newly deposited on arXiv, so its citation total is not evidence of attention gained in this announcement window.
-- **Claimed contribution:** The paper reports a consistent evaluation on the Image Matching Challenge Photo Tourism 2020 dataset, identifying FAST with ORB/BF as its fastest combination and AKAZE as robust to several distortions.
-- **Caveat:** The authors note that their dataset may not cover real-world diversity and that runtime was measured on one hardware configuration.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Evaluation & benchmarks
-
-### 2. [NeurEO: dissecting Earth observation embeddings with computational neuroscience](https://arxiv.org/abs/2610.40137)
-- **Abstract:** The authors adapt neuroscience-inspired analyses to interpret AlphaEarth geospatial embeddings, finding multi-scale structure and feature tuning to land cover and elevation.
-- **Authors:** Thijs L van der Plas, Jacob JW Bakermans, Ioannis N Athanasiadis
-- **arXiv:** `2610.40137v1` (published 2026-10-29 14:28:26 UTC; categories: `cs.CV`)
-- **Evidence for ranking:** Semantic Scholar lists 2 citations at the snapshot; the arXiv record says the work was originally published at the EurIPS 2025 REO workshop. Citation count is a current total, not a gain during this batch.
-- **Claimed contribution:** The paper applies correlational, tuning-surface, and dimensionality analyses to AlphaEarth embeddings to expose interpretable geographic structure.
-- **Caveat:** The authors call this a small proof of concept using 100 UK locations and say larger, more diverse data and comparisons with other embedding models are needed.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Interpretability
-
-### 3. [Incentivizing Self-Learning in Large Language Models via Reinforcement Learning](https://arxiv.org/abs/2610.39671)
-- **Abstract:** The work trains LLMs to navigate textbooks, learn material, and solve mathematical proofs, reporting gains on held-out books and subjects as well as two external long-context benchmarks.
-- **Authors:** Lingkai Kong, Yuzhe Gu, Haiteng Zhao, Zijian Wu, Youqing Fang, et al.
-- **arXiv:** `2610.39671v1` (published 2026-10-29 09:21:26 UTC; categories: `cs.CL`)
-- **Evidence for ranking:** Semantic Scholar lists 1 citation at the snapshot. Its position reflects the reported transfer experiments and relevance to current agentic-learning research; the citation is a current total, not a period gain.
-- **Claimed contribution:** The authors introduce BookNavigator and fine-grained reinforcement-learning rewards; on their textbook-based task they report Intern-S2-Preview-35B proof accuracy rising from 51.5% to 79.5%.
-- **Caveat:** Evidence is centered on mathematical proof tasks and a particular model/training setup; the correctness signal uses an LLM judge, so broader transfer and judge reliability remain open.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Agents & reasoning; Training & adaptation; Retrieval & knowledge
-
-### 4. [Exploring the Potential of Symbolic Regression in Precision Livestock Farming](https://arxiv.org/abs/2610.39839)
-- **Abstract:** Using sow-activity sensor data, the study combines nest-building detection with symbolic regression to predict time to farrowing, reporting a 9.28-hour mean absolute error.
-- **Authors:** Elisabeth Mayrhuber, Maciej Oczak, Michael Iwersen, David Brunner, Viktoria Dorfer, Stephan Winkler
-- **arXiv:** `2610.39839v1` (published 2026-10-29 11:17:21 UTC; categories: `cs.LG`, `cs.AI`)
-- **Evidence for ranking:** Semantic Scholar lists 1 citation at the snapshot; the paper is cross-listed in both machine learning and AI. It is included as a narrow applied signal, not as evidence of broad field-wide popularity.
-- **Claimed contribution:** The paper reports that symbolic regression achieved 9.28 hours MAE for time-to-farrowing and was more interpretable while outperforming the compared SVR and ANN models in this study.
-- **Caveat:** The evaluation concerns one task and sensor setup, with 180 sows; performance outside this dataset and setting is not established.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Interpretability; Evaluation & benchmarks
-
-### 5. [Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents](https://arxiv.org/abs/2610.40545)
-- **Abstract:** The paper proposes persistent local traversal through value-indexed memory and reports a proof-of-principle MiniGrid result for a fixed-geometry variant.
-- **Authors:** Daniel Strauß, Zhenshan Bing, Alois Knoll
-- **arXiv:** `2610.40545v1` (published 2026-10-29 17:37:21 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** The arXiv record reports acceptance at the NeurIPS 2026 Workshop on Long-Context Foundation Models; Semantic Scholar lists 0 citations at the snapshot. Placement after papers with citation evidence reflects the workshop record and topical relevance, not demonstrated citation momentum.
-- **Claimed contribution:** The authors formulate retrieval as persistent address-space traversal, separating memory content from address geometry and regularizing for information value and access cost.
-- **Caveat:** The paper explicitly tests only the simplest fixed-geometry case on MiniGrid; it does not test learned geometry or repeated retrieval and says further experiments are needed.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Retrieval & knowledge; Agents & reasoning
-
-### 6. [Efficient Scalable Oversight via Rewinding](https://arxiv.org/abs/2610.40535)
-- **Abstract:** The authors introduce rewindable interactive proofs, where a verifier can restore a prover's earlier model state, and construct an oversight protocol for computations robust to a small fraction of changed oracle answers.
-- **Authors:** Ziyi Guan, Yael Tauman Kalai, Ron Rothblum, Zoe Xi
-- **arXiv:** `2610.40535v1` (published 2026-10-29 17:34:28 UTC; categories: `cs.AI`, `cs.CC`, `cs.CR`)
-- **Evidence for ranking:** The paper is cross-listed across AI, computational complexity, and security, and reports a protocol implementation plus a preliminary MNIST experiment. Semantic Scholar lists 0 citations at the snapshot; its rank is based on methodological relevance, not measured attention.
-- **Claimed contribution:** The authors claim their relativizing proof construction is more efficient than prior approaches that do not assume a truthful prover, without using cryptography.
-- **Caveat:** The guarantee applies to a scoped class of computations, and the paper describes its empirical experiment as preliminary.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Safety & alignment; Evaluation & benchmarks
-
-### 7. [VeriCUA: Verification as Agentic Exploration for Computer-Using Agents](https://arxiv.org/abs/2610.40578)
-- **Abstract:** VeriCUA actively gathers GUI or code evidence against task-specific rubrics to verify computer-using agents, with the authors reporting better agreement with reference labels than compared baselines.
-- **Authors:** Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong, et al.
-- **arXiv:** `2610.40578v1` (published 2026-10-29 17:45:26 UTC; categories: `cs.AI`, `cs.CL`, `cs.CV`)
-- **Evidence for ranking:** It is cross-listed in AI, language, and vision, and addresses verification for desktop, mobile, and web agents. Semantic Scholar lists 0 citations; the record labels the work “Work in progress,” so its placement reflects relevance, not established attention.
-- **Claimed contribution:** The paper presents one platform-agnostic procedure for constructing a rubric, selecting unresolved checks, and combining evidence under explicit rules.
-- **Caveat:** The arXiv record calls this work in progress; the abstract reports relative agreement improvements but does not give absolute effect sizes.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Agents & reasoning; Evaluation & benchmarks
-
-### 8. [Collaborative AI agents for autonomous experimental research with solid-state quantum spins](https://arxiv.org/abs/2610.40589)
-- **Abstract:** A team of LLM agents formulates and challenges research claims, then tests them in a quantum-spin experiment; the authors report that the agents detected signal drift, revised the protocol, and obtained a result meeting their criteria.
-- **Authors:** El Mustapha Mansouri, Eikichi Kimura, Masato Koga, Keigo Arai
-- **arXiv:** `2610.40589v1` (published 2026-10-29 17:47:50 UTC; categories: `cs.AI`, `cs.MA`, `quant-ph`)
-- **Evidence for ranking:** The paper is cross-listed in AI and multi-agent systems, as well as quantum physics, and provides a code link in its arXiv comment. Semantic Scholar lists 0 citations at the snapshot; inclusion is based on the concrete experimental workflow, not a popularity claim.
-- **Claimed contribution:** The authors demonstrate agents that generate and reject questions, demand separate theoretical checks, and design experiments intended to discriminate competing predictions.
-- **Caveat:** The demonstration is one quantum-spin research case; an initial measurement was inconclusive because the signal drifted, requiring a revised protocol.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Agents & reasoning; Evaluation & benchmarks
-
-### 9. [Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In](https://arxiv.org/abs/2610.40588)
-- **Abstract:** In controlled multi-agent scenarios, an activation probe detects impending secret disclosure before generation, but also flags permitted disclosures and has a short warning horizon.
-- **Authors:** Leonidas Raghav
-- **arXiv:** `2610.40588v1` (published 2026-10-29 17:47:40 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** The paper reports evaluation across six scenarios and links a code repository; Semantic Scholar lists 0 citations at the snapshot. Its placement reflects a concrete multi-agent safety evaluation, not an external popularity signal.
-- **Claimed contribution:** On held-out Qwen3-32B episodes, the authors report 82% detection of leaking calls at a threshold flagging 5% of benign calls, compared with 26% for their zero-shot decision-model monitor.
-- **Caveat:** The authors state that the warning is short-range, permitted disclosures are also flagged, and halting on any alarm would stop most benign episodes; a bag-of-words classifier comes close to the probe.
-- **Announcement type:** new submission, 2026-10-30 announcement batch
-- **Themes:** Safety & alignment; Interpretability; Agents & reasoning
-
-### 10. [FARMS: A Verifiable Foundation for Automated Computational Science](https://arxiv.org/abs/2610.40560)
-- **Abstract:** FARMS turns computational-mathematics sources into structured, AI-ready knowledge with explicit guarantees; its pipeline accepted 157 of 171 targets across two technical areas.
-- **Authors:** Di Wu, Ling Liang, Haizhao Yang
-- **arXiv:** `2610.40560v1` (published 2026-10-29 17:40:57 UTC; categories: `cs.AI`, `cs.LO`)
-- **Evidence for ranking:** The paper is cross-listed in AI and logic and reports a quantitative source-processing evaluation with Lean-checked examples. Semantic Scholar lists 0 citations at the snapshot; this is a relevance-based inclusion, not evidence of popularity.
-- **Claimed contribution:** The authors propose linking formal statements to source context, algorithmic meaning, and quantitative guarantees, with examples of Lean-checked implications connected to computational skills.
-- **Caveat:** The reported targets are from randomized numerical linear algebra and numerical PDEs; the abstract does not establish coverage of computational science generally.
+### 1. [Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success](https://arxiv.org/abs/2610.40444)
+- **Abstract:** Proposes trajectory-level metrics for whether tool-call prefixes remain executable, and finds that final-success rankings can hide invalid intermediate execution while plan checking can improve prefix reliability.
+- **Authors:** Amir H. Rezaeian; Weiyi Sun; Yassine Benajiba; Dan Roth
+- **arXiv:** `2610.40444v1` (published 2026-10-29T16:58:04Z; categories: `cs.AI`, `cs.CL`)
+- **Evidence for ranking:** The manuscript identifies NeurIPS 2026, Datasets and Benchmarks Track; a matching NeurIPS poster and an independent technical explainer are checkable external signals. Its two-category placement and three-benchmark audit strengthen its relevance to agent evaluation.
+- **Claimed contribution:** The authors introduce Prefix Executability Curves, First-Error Depth, Trajectory Executability Rate, AUC-PEC, and Recovery Rate to evaluate trajectory validity beyond terminal success.
+- **Caveat:** The authors describe this as an audit, not a complete leaderboard: BFCL-v3 and ToolSandbox each use 200 sampled tasks, and τ³ coverage is limited to Airline/Retail base splits. The metrics assume explicit schemas and benchmark-visible state and do not certify semantic correctness, safety, privacy, or fairness.
 - **Announcement type:** new submission, 2026-10-30 announcement batch
 - **Themes:** Evaluation & benchmarks; Agents & reasoning
 
+### 2. [VeriCUA: Verification as Agentic Exploration for Computer-Using Agents](https://arxiv.org/abs/2610.40578)
+- **Abstract:** Introduces a platform-agnostic computer-use-agent verifier that actively gathers GUI or code evidence and reports improved agreement with reference labels across offline and online evaluations.
+- **Authors:** Qiushi Sun; Da Yu; Alexander Knop; Amer Sinha; Lingpeng Kong; et al.
+- **arXiv:** `2610.40578v1` (published 2026-10-29T17:45:26Z; categories: `cs.AI`, `cs.CL`, `cs.CV`)
+- **Evidence for ranking:** Cross-listed across three core AI categories; the paper reports offline and online tests across platforms, and an independent arXiv TL;DR page also summarizes the work. Ranked for this breadth and concrete evaluation evidence, not for presumed readership.
+- **Claimed contribution:** The authors use rubric-guided exploration and explicit evidence rules to verify tasks from retained trajectories or accessible post-execution state.
+- **Caveat:** The authors report that verification can require tens of tool and model calls per trajectory—about an order of magnitude more than a one-call judge. Offline verification abstains when recordings lack evidence, while online access helps only in instrumentable environments.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
+
+### 3. [Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)
+- **Abstract:** Presents a framework in which coding agents build and audit realistic robot simulations, yielding RoboWorld and several learning approaches that improve performance on its tasks.
+- **Authors:** Pranjal Aggarwal; Sean Welleck
+- **arXiv:** `2610.40565v1` (published 2026-10-29T17:42:32Z; categories: `cs.RO`, `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** Cross-listed across robotics, AI, and machine learning; the paper reports 25 simulations and 200 train/test environments, and a public project site provides the benchmark and code. The category breadth and reproducible artifact are the main placement signals.
+- **Claimed contribution:** The authors automate simulation creation through a coding-agent creation/audit loop and report that privileged-state teaching, repeated attempts, and generated demonstrations improve simulated-task performance.
+- **Caveat:** The evidence is on the paper's 25-simulation RoboWorld suite; real-world transfer is a motivation, not established by these experiments. The paper also says its current coverage should be broadened.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Robotics & control; Agents & reasoning; Evaluation & benchmarks
+
+### 4. [TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races](https://arxiv.org/abs/2610.40613)
+- **Abstract:** Presents a watermark designed to retain detection under speculative decoding without changing the target-model output distribution, with improved detection over two comparators in the reported tests.
+- **Authors:** Tom Sander; Pierre Fernandez; Itai Gat; Haiming Bao; Jiaxin Shi; et al.
+- **arXiv:** `2610.40613v1` (published 2026-10-29T17:54:12Z; categories: `cs.CR`, `cs.AI`, `cs.CL`)
+- **Evidence for ranking:** Three-category cross-listing spans AI, language, and security; the abstract gives controlled comparisons at matched diversity and speculative-decoding acceptance rates, evaluated on three LLMs.
+- **Claimed contribution:** The authors combine watermark keys through a Gaussian-copula construction and use memoryless exponential races to preserve the watermark through speculative decoding.
+- **Caveat:** The reported evaluation uses three LLMs; the abstract does not establish that the same detection gains hold across a broader range of models and deployment settings.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Safety & alignment; Efficient inference & systems
+
+### 5. [EpiAgent: Epistemic Self-Play for LLM Agents](https://arxiv.org/abs/2610.40227)
+- **Abstract:** Proposes LLM agents with a learnable belief layer and alternating self-play optimization, reporting gains over prompting and reinforcement-learning baselines in mixed and competitive scenarios.
+- **Authors:** Xuanfa Jin; Xinyu Cui; Zhijian Ma; Xue Yan; Jian Zhao; et al.
+- **arXiv:** `2610.40227v1` (published 2026-10-29T15:05:08Z; categories: `cs.AI`, `cs.CL`, `cs.MA`)
+- **Evidence for ranking:** It is cross-listed in three core categories, including multi-agent systems, and reports comparisons across both mixed and competitive interactions plus analyses of belief accuracy and action planning.
+- **Claimed contribution:** The authors separate belief updating from action planning and jointly optimize them through epistemic self-play using prediction of later observations as an intrinsic reward.
+- **Caveat:** The abstract's empirical claims concern the paper's mixed and competitive scenarios; broad transfer to other strategic settings or opponent populations is not established there.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Agents & reasoning; Training & adaptation
+
+### 6. [world2vec: Mechanistic world models through latent dynamics learning](https://arxiv.org/abs/2610.40637)
+- **Abstract:** Introduces reward-free latent-dynamics learning intended to make world models more faithful and interpretable, reporting continuous pixel-control results and system identification over 71 attractors with fewer parameters than three named baselines.
+- **Authors:** Tobias Schmidt; Rodrigo Gonzalez Laiz; Krisztián Szuppinger; Steffen Schneider
+- **arXiv:** `2610.40637v1` (published 2026-10-29T17:58:23Z; categories: `cs.LG`)
+- **Evidence for ranking:** The abstract reports a 71-attractor system-identification benchmark and comparisons with DreamerV3, TD-MPC2, and LeWM, including a claimed order-of-magnitude parameter reduction; this is a technically concrete signal despite single-category placement.
+- **Claimed contribution:** The authors train a mechanistic latent dynamics model directly from observations and actions without reward information.
+- **Caveat:** Reported evidence focuses on continuous pixel-control environments and the 71-attractor benchmark; generality beyond these task families is not established by the abstract.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Robotics & control; Interpretability
+
+### 7. [EnvOS: Auditing Computer-Use Agents When the World Moves On : Phenomenon-Based Task Construction, Certification, and Evidence-Based Evaluation](https://arxiv.org/abs/2610.40246)
+- **Abstract:** Introduces a framework for generating and certifying software environments that change during agent tasks, and evaluates how agents respond to stale information while auditing the graders themselves.
+- **Authors:** Ankush Kadu; Athira Gopal; Niharika Singh; Arpit Jain; Aswanth Krishnan
+- **arXiv:** `2610.40246v1` (published 2026-10-29T15:17:29Z; categories: `cs.AI`, `cs.HC`)
+- **Evidence for ranking:** The authors test environment changes, task solvability, and grader quality, reporting controlled clinic-booking and insurance scenarios and a separate corrupted-episode audit. The paper supplies a distinct stress test for computer-use-agent evaluation.
+- **Claimed contribution:** EnvOS certifies mid-task changes before execution and independently rechecks episode verdicts against archived evidence.
+- **Caveat:** The abstract focuses on stale-information changes. It reports that the insurance-claim improvement for one model was not significant after correcting for all tests, so those results are scenario- and model-dependent.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Evaluation & benchmarks; Agents & reasoning
+
+### 8. [How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference](https://arxiv.org/abs/2610.40325)
+- **Abstract:** Studies weight sharing through repeated transformer loops across models up to 1B parameters and 155B training tokens, finding that benefits depend on compute constraints and that looping can slow decoding unless parallel designs preserve quality.
+- **Authors:** Chanakya Ekbote; Artidoro Pagnoni; Devendra Singh Sachan; Shruti Bhosale; Mike Lewis; et al.
+- **arXiv:** `2610.40325v1` (published 2026-10-29T15:56:09Z; categories: `cs.LG`, `cs.AI`)
+- **Evidence for ranking:** The paper covers two core categories and provides unusually broad scale comparisons—up to 1B parameters, 155B tokens, and 32 loops—across model-size, training-compute, and inference constraints.
+- **Claimed contribution:** The authors compare loop placement and information flow, test loop-specific low-rank adapters, and propose a parallel-loop design whose quality improves when current-token and previous-token states are normalized separately.
+- **Caveat:** The authors report that added loops can saturate, reverse, or become unstable; their original parallel formulation does not consistently retain ordinary-loop quality gains.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Training & adaptation; Efficient inference & systems
+
+### 9. [MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Collaboration Workloads](https://arxiv.org/abs/2610.40293)
+- **Abstract:** Introduces a benchmark that models collaboration patterns as configurable multi-agent serving workloads and links realized operations to latency and hardware behavior.
+- **Authors:** Shengxuan Qiu; Haochen Huang; Shuzhang Zhong; Zizhuo Fu; Zebin Yang; et al.
+- **arXiv:** `2610.40293v1` (published 2026-10-29T15:42:15Z; categories: `cs.MA`)
+- **Evidence for ranking:** This is a focused contribution in the configured multi-agent category. Its composable workload stages and hierarchical traces target a concrete gap between isolated request benchmarks and dependent agent workflows; the abstract links the benchmark to GPU/NPU measurements and reproducible comparisons.
+- **Claimed contribution:** The authors make collaboration structure a configurable benchmark dimension and connect task completion measurements to serving execution and hardware behavior.
+- **Caveat:** The benchmark is built around documented multi-agent workflows; conclusions about workloads outside those configurations require further coverage.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Efficient inference & systems; Agents & reasoning; Evaluation & benchmarks
+
+### 10. [Rethinking Pre-pretraining](https://arxiv.org/abs/2610.40051)
+- **Abstract:** Reports that four synthetic pre-pretraining curricula do not beat compute-matched natural-language training across three tested regimes, while some gains under extra compute persist only at small natural-language budgets.
+- **Authors:** Alexander Stern; Tim Rocktäschel; Acyr Locatelli; Laura Ruis
+- **arXiv:** `2610.40051v1` (published 2026-10-29T13:45:58Z; categories: `cs.CL`, `cs.AI`)
+- **Evidence for ranking:** The authors test four synthetic curricula under three compute/data regimes and probe initialization sensitivity, forgetting, and interleaving; this broad controlled comparison makes it a useful counterpoint to positive synthetic-data claims.
+- **Claimed contribution:** The paper argues that synthetic pre-pretraining as a distinct compute-sharing stage has limited benefit in its matched experiments and examines how initialization and later natural-language training affect reported gains.
+- **Caveat:** The result is bounded by the four curricula and model/training regimes studied; the paper itself reports residual gains when extra compute is allocated at small natural-language budgets.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Training & adaptation; Data & synthetic data
+
 ## Trending Research Themes
 
-- **Agents are being made inspectable, not just more capable.** VeriCUA treats task completion as evidence gathering; Collaborative AI agents uses cross-checking and experimental challenge; FARMS attaches formal statements to source context and Lean-checked implications. Together these are separate approaches to making agentic outputs auditable, not proof of one converged architecture.
-- **Safety work is shifting toward intervention before or during generation.** Pre-Crime probes for an impending disclosure, while Efficient Scalable Oversight formalizes interaction with a powerful prover and the self-learning paper inserts structured study actions into model behavior. The methods and threat models differ; this is a recurring interest in controlling intermediate behavior rather than judging only final outputs.
-- **Memory and retrieval are becoming an explicit systems design problem.** Retrieval as Traversal separates content value from address geometry and tests local persistent search. The self-learning work instead gives models textbook-navigation tools and trains them to select material. Both make information access part of the policy, but only Retrieval as Traversal evaluates persistent local traversal.
-- **Trustworthy results still depend on evaluation boundaries.** The traditional-feature comparison (a 2024 journal paper newly on arXiv), symbolic livestock prediction, VeriCUA, and the quantum-spin lab all report results in specific datasets or task settings. NeurEO likewise studies a small proof-of-concept sample. Generalization beyond those settings remains unproven.
-- **A single-batch caution:** these papers are spread across AI, language, vision, learning, multi-agent systems, logic, complexity, and security. The selected sample is an editorial shortlist, not a frequency-weighted measure of the entire arXiv corpus.
+- **Agent verification is becoming trajectory- and evidence-centric.** Prefix Executability checks whether intermediate tool-call states remain executable; VeriCUA gathers evidence rather than trusting a final answer; EnvOS tests whether agents notice mid-task changes and whether graders are sound. These papers share an evaluation focus, not a demonstrated common architecture.
+- **Multi-agent work is connecting strategic reasoning to serving systems.** EpiAgent learns beliefs about other agents for action planning, while MAServeBench models collaboration-generated workloads for inference hardware. The pair points to both policy-level and infrastructure-level questions, not a single established method.
+- **Embodied research is probing both simulation scale and model fidelity.** Gym-Anything uses coding agents to create and audit physical simulations; world2vec targets latent dynamics that better reflect underlying systems. Together they highlight benchmark construction and mechanistic modeling, but do not establish real-world transfer.
+- **Resource-aware design is an explicit experimental variable.** The looped-transformer study reports trade-offs across model size, training compute, and decoding; TextSeal2 evaluates watermark detection under speculative decoding; Rethinking Pre-pretraining tests compute-matched alternatives. This is a recurring measurement pattern, not evidence of one field-wide shift.
 
 ## Open Problems and Research Directions
 
-- **Reduce false alarms in agent oversight.** Author-stated: Pre-Crime reports short-range warnings, flags some permitted disclosures, and says an alarm-only halt would stop most benign episodes. Follow-up: evaluate selective interventions that distinguish authorized disclosure from collusion and measure warning lead time and benign-task cost across more agents and scenarios. [Pre-Crime](https://arxiv.org/abs/2610.40588)
-- **Validate evidence-based completion across changing interfaces.** Author-stated: VeriCUA is work in progress, and its abstract reports relative agreement improvements without absolute effect sizes. Follow-up: publish calibrated results by platform and observation modality, including dynamic pages, inaccessible state, and adversarially misleading completion signals. [VeriCUA](https://arxiv.org/abs/2610.40578)
-- **Test autonomous research beyond a single experiment.** Author-stated: the quantum-spin study's first run was inconclusive because of drift, and required a revised protocol. Follow-up: preregister multi-run replications with predefined stopping and acceptance criteria, then test whether agents reliably identify confounds across different instruments and scientific domains. [Collaborative AI agents](https://arxiv.org/abs/2610.40589)
-- **Test the full retrieval hypothesis.** Author-stated: Retrieval as Traversal evaluates only fixed geometry and does not test learned geometry or repeated retrieval. Follow-up: compare learned and fixed indexes under repeated, changing retrieval needs and report both task performance and access cost. [Retrieval as Traversal](https://arxiv.org/abs/2610.40545)
-- **Check scalable oversight beyond the preliminary demonstration.** Author-stated: Efficient Scalable Oversight reports a preliminary MNIST experiment and gives a scoped theoretical construction. Follow-up: evaluate larger computations and test how robustness assumptions affect runtime and verifier error as prover capability grows. [Efficient Scalable Oversight](https://arxiv.org/abs/2610.40535)
-- **Establish transfer and checker reliability for self-learning.** The self-learning results use textbook-based proof tasks and an LLM judge. Follow-up: replicate across model families and non-mathematical long-form corpora, and compare judge-based scores with independent formal or expert verification. [Incentivizing Self-Learning](https://arxiv.org/abs/2610.39671)
-- **Broaden embedding interpretation beyond the proof of concept.** Author-stated: NeurEO calls for larger and more diverse data and comparisons across embedding models. Follow-up: repeat its analyses across regions, seasons, and model architectures, then test whether the discovered tuning patterns predict downstream reliability. [NeurEO](https://arxiv.org/abs/2610.40137)
+- **Author-stated — executable prefixes under partial observability:** Prefix Executability assumes schemas, preconditions, and benchmark-visible state, and the authors say it does not certify semantic correctness or safety. A follow-up could test learned state estimation, matched schema-constrained decoding, repair controls, and repeated seeds across more domains. [Prefix Executability](https://arxiv.org/abs/2610.40444)
+- **Author-stated — verifier cost and missing evidence:** VeriCUA's authors report high tool/model-call cost and abstention when recordings do not contain the needed evidence. Measure accuracy–coverage–cost curves under fixed budgets, then test which lightweight instrumentation reduces abstention without creating false confidence. [VeriCUA](https://arxiv.org/abs/2610.40578)
+- **Author-stated / synthesis — simulation breadth and transfer:** Gym-Anything identifies broader physical-work coverage as future work; the current evaluation is simulated. Expand held-out material/task families and test policies on corresponding real tasks to quantify whether audited simulation gains transfer. [Gym-Anything](https://arxiv.org/abs/2610.40565)
+- **Author-stated — dynamic environment robustness:** EnvOS focuses on stale information, and its results vary by model and interface; one reported insurance result is not significant after multiple-test correction. Larger balanced studies could vary change type, timing, notice, and interface while preregistering correction-aware comparisons. [EnvOS](https://arxiv.org/abs/2610.40246)
+- **Synthesis — strategic generalization:** EpiAgent reports gains in mixed and competitive scenarios, but the abstract does not establish transfer across unseen opponents or information structures. Test held-out game rules and opponent populations, measuring belief calibration as well as task reward. [EpiAgent](https://arxiv.org/abs/2610.40227)
 
 ## Takeaway
 
-The clearest common thread is a move toward agents whose intermediate actions can be checked: gathering evidence, retrieving knowledge, exposing unsafe trajectories, or validating experiments. Yet most relevant submissions have little citation evidence, and the strongest reported results are bounded to specific benchmarks, models, or scientific settings; treat these as research directions to test, not settled capabilities.
+This batch's clearest shared thread is reliability: tool agents are being judged on evidence, valid intermediate actions, and changing environments, not only final task success. Robotics simulation and system-level efficiency are also active, but the shortlist is an inferred, evidence-limited snapshot; benchmark breadth and real-world transfer remain open.
 
 ## Method and sources
 
-- **Window:** the 2026-10-30 arXiv announcement batch (start date 2026-10-30; end date 2026-10-30 UTC). It was the latest batch shown when checked on 2026-10-31; no 2026-10-31 batch was listed. Snapshot time: 2026-10-31 17:13:49 UTC.
-- **Scope/query:** `cs.AI OR cs.LG OR stat.ML OR cs.CL OR cs.CV OR cs.RO OR cs.NE OR cs.MA`. Current-batch category pages were checked for all eight categories; their overlapping listings yielded 1,003 unique versionless arXiv IDs. A date-bounded arXiv API query returned 595 new submissions; the category-page union also includes revisions. Category page counts were cs.AI 392, cs.LG 372, stat.ML 54, cs.CL 175, cs.CV 233, cs.RO 129, cs.NE 12, and cs.MA 33; counts overlap because of cross-listing and include updates.
-- **Selection/ranking:** deduplicated on versionless arXiv ID and retained the latest metadata. Semantic Scholar Graph fields checked included citationCount, influentialCitationCount, referenceCount, publicationTypes, fieldsOfStudy, and externalIds. Citation counts are snapshot totals, not gains during the batch. Signals are sparse, so the list is explicitly notable recent papers, ordered first by checkable citation/venue evidence and then by category breadth and substantive relevance; no numeric trend score is used. No download or view metrics were available or inferred.
-- **Reading:** all selected arXiv abstract pages were checked directly. The PDFs of the first three ranked papers were also reviewed for methods/results and limitations.
-- **Sources:** [arXiv cs.AI recent](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent); [arXiv API query](https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Astat.ML%20OR%20cat%3Acs.CL%20OR%20cat%3Acs.CV%20OR%20cat%3Acs.RO%20OR%20cat%3Acs.NE%20OR%20cat%3Acs.MA%29%20AND%20submittedDate%3A%5B202610281750%20TO%20202610291750%5D&sortBy=submittedDate&sortOrder=descending&start=0&max_results=2000); [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/ARXIV:2610.39551?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds). Paper-specific citations and journal/workshop references appear in each entry above.
+- **Window:** daily; 2026-10-30 through 2026-10-30. This Sunday 2026-11-01 report uses the prior Friday 2026-10-30 arXiv announcement batch; no newer batch was available at snapshot time. The selected papers were first submitted on 2026-10-29; all ten are v1 new submissions.
+- **Snapshot:** 2026-11-01 01:10:10 UTC.
+- **Categories queried:** `cs.AI OR cs.LG OR stat.ML OR cs.CL OR cs.CV OR cs.RO OR cs.NE OR cs.MA`.
+- **Collection:** Current-batch category pages were checked for all eight categories; their overlapping listings contain 1,003 unique versionless arXiv IDs. The category counts are cs.AI 392, cs.LG 372, stat.ML 54, cs.CL 175, cs.CV 233, cs.RO 129, cs.NE 12, and cs.MA 33. A date-bounded arXiv API query returned 595 new submissions in its queried interval; the category-page union also includes revisions. Counts overlap because of cross-listing. Each selected arXiv abstract page was opened and verified; the PDFs for the first three papers were checked for introduction, results, and author-stated limitations.
+- **Inference:** arXiv does not provide a popularity ranking. Placement favors independently checkable technical discussion/conference signals, then cross-category relevance, empirical scope, and public artifacts; recency is only a tie-breaker. No view, download, or bookmark metrics were used. Semantic Scholar Graph showed zero citationCount and influentialCitationCount for the ten selected papers at the snapshot.
+- **Sources:** [arXiv cs.AI recent](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent), and the ten linked arXiv abstract pages above.
+- **Corroborating sources:** [NeurIPS poster for Prefix Executability](https://neurips.cc/virtual/2026/poster/139170); [independent technical explainer](https://learnaivisually.com/ai-explained/prefix-executability-first-invalid-tool-call); [VeriCUA arXiv TL;DR](https://arxivtldr.org/abs/2610.40578); [Gym-Anything project and benchmark](https://gym-anything.github.io/robotics/).

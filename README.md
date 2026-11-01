@@ -1,6 +1,6 @@
 # What's trending in Github, AI, math, and physics - Daily updates
 
-Generated: 2026-11-01 01:52
+Generated: 2026-11-01 17:11
 Source: `/home/yizhuan/.research`
 
 ## Ai

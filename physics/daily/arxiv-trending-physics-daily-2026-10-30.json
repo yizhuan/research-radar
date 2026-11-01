@@ -6,14 +6,14 @@
     "end": "2026-10-30",
     "announcement_batch_date": "2026-10-30",
     "batch_is_prior_calendar_day": true,
-    "snapshot_utc": "2026-10-31T17:42:51Z"
+    "snapshot_utc": "2026-11-01T01:46:54Z"
   },
   "date": "2026-10-30",
   "title": "Daily arXiv Physics — Friday, 30 October 2026 announcement batch",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-10-30.md",
   "entry_count": 9,
   "entry_noun": "papers",
-  "global_caveat": "This is an inferred ordering, not an official arXiv trending chart. Citation evidence is sparse for papers announced about a day ago, so these are notable recent papers rather than measured popularity leaders.",
+  "global_caveat": "This is an inferred ordering, not an official arXiv trending chart. Citation evidence is sparse for papers announced only days ago, so these are notable recent papers rather than measured popularity leaders. Sunday 2026-11-01 had no regular batch, so the report uses the prior Friday batch.",
   "sections": [
     {
       "id": "paper-1",

@@ -4,79 +4,85 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-02 01:36 UTC |
+| Snapshot time (UTC) | 2026-11-02 17:37 UTC |
 | Scope | Daily |
 | Date range | 2026-11-02 through 2026-11-02 |
-| Ranking basis | Daily GitHub Trending star gains, ranked after filtering obvious list-only and tutorial/course noise |
+| Ranking basis | Daily GitHub Trending stars-today gains for 12 entries; one separately labeled fresh-repository Search supplement |
 
 ## Headline
 
-Agent tooling dominates the strongest momentum: t3code leads with +3,094 stars today, followed by claude-mem (+1,526) and Hex (+1,179). Alongside agent workbenches, the list shows demand for local-first speech and inference, AI security operations, and purpose-built browser automation.
+Agent infrastructure is the clearest signal today: T3 Code, Agent Desktop, and Claude-Mem lead the captured daily star-gain list, while local inference and specialist developer tools provide strong secondary currents.
 
 ## Top Repositories
 
-1. **[pingdotgg/t3code](https://github.com/pingdotgg/t3code) - A cross-platform control surface for coding agents running in the environment that owns the workspace.**
+1. **[pingdotgg/t3code](https://github.com/pingdotgg/t3code)  - An open-source agent-harness control surface that lets users operate local coding agents through mobile, web, and desktop clients.**
 
-  **Language:** TypeScript | **Stars gained in window:** +3,094 | **Total stars:** 38,088 | **Why notable:** The day's largest gain; its remote-ready clients control multiple installed agent providers through a shared server/runtime boundary.
+  **Language:** TypeScript | **Stars gained in window:** +3,216 | **Total stars:** 40,965 | **Why notable:** The strongest daily star-gain signal in the snapshot; its cross-client control surface sits at the intersection of agent tools and developer UX.
 
-2. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) - Captures, compresses, and retrieves agent-session context for use in later sessions.**
+2. **[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)  - A Rust-based CLI and C library for agents to inspect and operate desktop apps through OS accessibility trees and stable element references.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,526 | **Total stars:** 109,340 | **Why notable:** A strong second-place daily gain and the largest total-star base among the selected repos, reflecting sustained interest in persistent agent memory.
+  **Language:** Rust | **Stars gained in window:** +2,243 | **Total stars:** 8,803 | **Why notable:** Second-highest daily gain and a concrete alternative to screenshot-only computer use, with cross-platform CLI/C interfaces.
 
-3. **[anomalyco/hex](https://github.com/anomalyco/hex) - Offline, on-device voice dictation for macOS, Windows, and Linux.**
+3. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)  - Persistent context for coding agents: captures session work, compresses it, and injects relevant memories into later sessions.**
 
-  **Language:** Rust | **Stars gained in window:** +1,179 | **Total stars:** 3,307 | **Why notable:** One of today's fastest risers; transcription happens locally and the app pastes the result into the active application.
+  **Language:** TypeScript | **Stars gained in window:** +1,799 | **Total stars:** 110,469 | **Why notable:** Strong daily momentum around a practical bottleneck in agent workflows: carrying useful context across sessions.
 
-4. **[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) - A structured game-development workflow built around specialist Claude Code agents, skills, and quality gates.**
+4. **[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)  - A Claude Code configuration that organizes game development as a coordinated AI studio with specialist agents, skills, hooks, and rules.**
 
-  **Language:** Shell | **Stars gained in window:** +967 | **Total stars:** 32,330 | **Why notable:** Shows the appeal of packaging agent roles and process into a ready-to-use domain workflow. The repository's last reported push was 2026-10-19, so today's star surge is not evidence of a fresh code release.
+  **Language:** Shell | **Stars gained in window:** +1,380 | **Total stars:** 33,282 | **Why notable:** A high-gain example of domain-specific agent orchestration rather than a general-purpose coding assistant.
 
-5. **[Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) - An open-source Chinese Zi Wei Dou Shu chart engine with calculation logic and related data.**
+5. **[mattpocock/skills](https://github.com/mattpocock/skills)  - A set of small, composable engineering skills for coding agents, intended to be adaptable and usable across models.**
 
-  **Language:** TypeScript | **Stars gained in window:** +941 | **Total stars:** 13,166 | **Why notable:** A non-agent counterpoint with strong daily momentum; its README describes a specialized calculation engine and a large, versioned interpretation dataset.
+  **Language:** Shell | **Stars gained in window:** +970 | **Total stars:** 309,988 | **Why notable:** Shows demand for reusable agent workflows and human-editable skills rather than monolithic process frameworks.
 
-6. **[milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) - An open-source chat-style workspace for separate AI agents, with their own models, tools, and connected apps.**
+6. **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)  - A Python web-scraping framework spanning single requests through full crawls, with adaptive parsing and browser-backed workflows.**
 
-  **Language:** TypeScript | **Stars gained in window:** +922 | **Total stars:** 10,564 | **Why notable:** Extends the agent trend from developer tooling into a multi-agent desktop/chat experience, with local Claude or Codex processes described in its README.
+  **Language:** Python | **Stars gained in window:** +858 | **Total stars:** 92,522 | **Why notable:** A notable non-agent developer-tool signal with substantial daily gains, extending the snapshot beyond the agent wave.
 
-7. **[lightpanda-io/browser](https://github.com/lightpanda-io/browser) - A headless browser written from scratch in Zig for AI agents and automation.**
+7. **[shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos)  - A foundation model project for learning the language of financial markets, with pretrained models and evaluation materials.**
 
-  **Language:** Zig | **Stars gained in window:** +825 | **Total stars:** 40,172 | **Why notable:** A high-momentum infrastructure project that challenges the default Chromium-based approach with a purpose-built automation browser.
+  **Language:** Python | **Stars gained in window:** +855 | **Total stars:** 45,874 | **Why notable:** A domain-specific ML project among the top daily gainers, showing investor attention to specialized time-series models.
 
-8. **[shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) - A family of foundation models trained on financial candlestick sequences.**
+8. **[JustVugg/colibri](https://github.com/JustVugg/colibri)  - A dependency-light C inference engine that streams mixture-of-experts model weights from disk to run large models on local hardware.**
 
-  **Language:** Python | **Stars gained in window:** +630 | **Total stars:** 45,418 | **Why notable:** Its two-stage OHLCV tokenization and transformer design stands out as a domain-specific model rather than a general-purpose LLM. The API reports its last push as 2026-04-13, so the star gain signals attention, not current release activity.
+  **Language:** C | **Stars gained in window:** +655 | **Total stars:** 46,369 | **Why notable:** A fast-rising example of low-level, local inference engineering rather than hosted-model access.
 
-9. **[beenuar/AiSOC](https://github.com/beenuar/AiSOC) - A self-hosted security-operations stack that normalizes telemetry, investigates incidents with auditable agents, and proposes human-approved responses.**
+9. **[FlashML-org/FreeToken](https://github.com/FlashML-org/FreeToken)  - An edge-native MoE serving engine that combines GPU, CPU, memory, and interconnect resources to run large open models locally.**
 
-  **Language:** Python | **Stars gained in window:** +446 | **Total stars:** 6,239 | **Why notable:** Its event-to-incident workflow, replayable agent decisions, and human approval step give the agent trend a concrete security-operations use case.
+  **Language:** Python | **Stars gained in window:** +654 | **Total stars:** 15,899 | **Why notable:** Pairs with Colibri as a distinct approach to consumer-scale inference, emphasizing adaptive CPU–GPU serving and caching.
 
-10. **[cjpais/Handy](https://github.com/cjpais/Handy) - A cross-platform speech-to-text app that transcribes locally and pastes into any text field.**
+10. **[hyprwm/Hyprland](https://github.com/hyprwm/Hyprland)  - An independent, customizable dynamic tiling Wayland compositor focused on modern features and visual polish.**
 
-  **Language:** Rust | **Stars gained in window:** +339 | **Total stars:** 36,586 | **Why notable:** Reinforces the privacy-first local speech theme; its README describes local Whisper and Parakeet transcription options.
+  **Language:** C++ | **Stars gained in window:** +508 | **Total stars:** 39,769 | **Why notable:** A mature Linux desktop project in the daily list provides a useful counterpoint to the agent-heavy cohort.
 
-11. **[FlashML-org/FreeToken](https://github.com/FlashML-org/FreeToken) - An edge-native serving engine for running large Mixture-of-Experts models on consumer hardware.**
+11. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip)  - An open-source application for coordinating and managing AI agents at work.**
 
-  **Language:** Python | **Stars gained in window:** +242 | **Total stars:** 15,428 | **Why notable:** Represents the push to bring large-model inference to personal machines using adaptive CPU/GPU execution and memory management.
+  **Language:** TypeScript | **Stars gained in window:** +451 | **Total stars:** 110,234 | **Why notable:** Adds an organization/management layer to the agent trend, complementary to tools that execute coding tasks directly.
 
-12. **[CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) - A self-hosted template that turns AG-UI agents into AI coworkers with browser, file, and tool access.**
+12. **[kornia/kornia](https://github.com/kornia/kornia)  - A Python geometric computer-vision library for spatial AI and differentiable vision workflows.**
 
-  **Language:** TypeScript | **Stars gained in window:** +175 | **Total stars:** 9,540 | **Why notable:** Adds an enterprise/self-hosted angle to the agent-workbench cluster, emphasizing per-action decisions and an audit trail. Its README labels the project beta and a template to customize, not a hosted product.
+  **Language:** Python | **Stars gained in window:** +412 | **Total stars:** 12,060 | **Why notable:** A long-running computer-vision library still drawing daily attention, offering a data/ML counterpoint to coding agents.
+
+13. **[deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype)  - A proactive coding agent for one GitHub repository, packaged for DeepSeek Harness; it listens to GitHub and optionally Feishu, acts on authorized requests or team rules, and can return results such as pull requests.**
+
+  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 12,444 | **Why notable:** A newly created repository (2026-10-31) surfaced in the corroborating GitHub Search query with 12,444 stars; it illustrates autonomous, event-triggered coding agents. It was not on the captured daily Trending page, so no comparable daily star gain is available.
 
 ## Trending Technologies and Themes
 
-- **Agent workbenches and persistent context:** t3code, claude-mem, Claude-Code-Game-Studios, OpenMausBot, and OpenBot cover agent control, memory, structured workflows, and coworker-style interfaces. This cluster accounts for the strongest headline signals.
-- **Local-first AI and speech:** Hex and Handy keep voice transcription on-device, while FreeToken targets local serving of large MoE models on consumer hardware.
-- **Automation and security infrastructure:** Lightpanda targets agent-oriented browser automation; AiSOC applies auditable AI investigation to security telemetry and incident response.
-- **Specialized domain systems:** Kronos focuses on financial time-series modeling, while ziwei-doushu packages a traditional Chinese chart-calculation system and associated data.
-- **Languages:** TypeScript 5, Python 3, Rust 2, Zig 1, and Shell 1 among these 12 repositories.
+- **Agent control planes and orchestration:** Several entries are moving beyond one-shot code generation toward running, routing, or coordinating agents: T3 Code exposes local agents across clients; Paperclip manages agents at work; the DeepSeek prototype reacts to authorized repository events; and Game Studios composes specialist roles. Agent Desktop supplies the computer-use interface layer.
+- **Persistent context and reusable agent skills:** Claude-Mem addresses cross-session context, while mattpocock/skills packages small, composable engineering procedures. Both focus on making agent work repeatable across sessions rather than merely adding another model.
+- **Local inference for large mixture-of-experts models:** FreeToken emphasizes edge-native CPU–GPU co-execution and caching; colibri streams expert weights from disk in a lightweight C runtime. The shared theme is using consumer hardware more efficiently, with distinct runtime designs.
+- **Automation and developer infrastructure beyond agents:** Scrapling’s scraper framework stands out as a conventional developer-tool project with strong daily gain, showing the snapshot is not exclusively about AI agents.
+- **Specialized ML and computer vision:** Kronos targets financial-market time series, while Kornia provides geometric computer-vision building blocks. These are narrower ML domains rather than general coding-agent infrastructure.
+- **Linux desktop systems:** Hyprland remains a high-visibility Wayland compositor alongside the new agent-facing desktop automation represented by Agent Desktop; they address different layers of desktop use.
+- **Languages:** 4 TypeScript, 4 Python, 2 Shell, and 1 each Rust, C, and C++, across the 13 listed repositories.
 
 ## Takeaway
 
-Today's strongest signal is not just more AI repos; it is the productization of agents into durable, controlled workflows—with remote control, persistent context, specialist roles, and auditable actions. Offline speech and local inference form a parallel privacy-and-cost story, while Lightpanda and AiSOC show infrastructure being rebuilt around automation and operational trust. Daily star gains measure attention, not adoption or software quality.
+The strongest common thread is the move from isolated coding assistants to systems that control desktop surfaces, retain context, and coordinate multi-step work. At the same time, two very different local MoE runtimes and a strong scraping project show continued appetite for practical infrastructure. The DeepSeek prototype is a notable fresh Search discovery, but its README warns that it is research code and its stars cannot be compared directly with the daily Trending gains.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Today](https://github.com/trending?since=daily)
-- **Corroboration:** GitHub REST repository and branch endpoints checked descriptions, languages, total stars, push recency, default branches, and current branch commit SHAs for all 12 entries. GitHub Search API query `pushed:>2026-10-31 stars:>100` was also used; AiSOC appeared among the returned recently pushed repositories.
-- **Method note:** Star gains are the values shown in GitHub's daily Trending view at the snapshot time. Repositories were re-ranked by those gains after excluding obvious list-only and tutorial/course entries. Total-star counts are the values shown in the same Trending snapshot; commit SHAs and push dates were checked against the GitHub REST API. No prior-window comparison was collected, so no Notable Shifts section is claimed.
+- **Primary source:** https://github.com/trending?since=daily
+- **Corroboration:** GitHub REST API repository metadata and default-branch commit endpoints for listed repositories; GitHub Search API query for recently created repositories: https://api.github.com/search/repositories?q=created%3A2026-10-31..2026-11-02+stars%3A%3E50&sort=stars&order=desc&per_page=30. Current README files and first-party documentation were checked for the narrative-priority projects.
+- **Method note:** The first 12 entries are ordered by the stars-today values in the captured daily Trending view. The DeepSeek superagent prototype is appended as a separate Search-discovered repository created within the 2-day freshness window; GitHub does not provide a comparable daily Trending star gain for it. The Trending page is a live snapshot rather than a guaranteed midnight-to-midnight event ledger.

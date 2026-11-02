@@ -5,49 +5,87 @@
   "date": "2026-11-02",
   "title": "GitHub Trending Summary - Daily - 2026-11-02",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-02.md",
-  "entry_count": 12,
+  "entry_count": 13,
   "entry_noun": "repositories",
-  "ranking_basis": "Daily GitHub Trending star gains, ranked descending after excluding obvious list-only and tutorial/course entries.",
-  "ranking_explanation": "The gain values are the figures displayed on GitHub Trending at 2026-11-02 01:36 UTC. The Trending page itself was not ordered by those values, so this report sorts its eligible repositories by the displayed daily gains. Current default-branch commits and push timestamps were checked separately through the GitHub REST API.",
-  "global_caveat": "Daily stars measure attention in a point-in-time window, not adoption, software quality, or sustained momentum. Total stars are point-in-time Trending values. No comparable prior-window evidence was gathered, so this report makes no shift-over-time claim.",
+  "snapshot_time_utc": "2026-11-02 17:37 UTC",
+  "date_range": {
+    "start": "2026-11-02",
+    "end": "2026-11-02"
+  },
+  "ranking_basis": "Daily GitHub Trending stars-today counts, with one separately labeled GitHub Search supplement",
+  "ranking_explanation": "Ranks 1-12 are sorted by the daily star-gain values on the captured GitHub Trending page. Rank 13 is not a comparable trend rank: it is a new repo discovered by the supplementary created-date Search query; its daily star gain is unavailable from GitHub.",
+  "global_caveat": "GitHub Trending is a live snapshot and its stars-today counts may change during the day. Search-discovered supplemental repositories do not have comparable daily star-gain values.",
   "themes": [
     {
-      "id": "agent-workbenches",
-      "title": "Agent workbenches and persistent context",
-      "content": "Agent control, memory, structured specialist workflows, and coworker-style interfaces are prominent in the strongest daily gains.",
-      "supporting_repository_ids": ["01-pingdotgg-t3code", "02-thedotmack-claude-mem", "04-donchitos-claude-code-game-studios", "06-milind-soni-openmausbot", "12-copilotkit-openbot"]
+      "id": "agent-control",
+      "title": "Agent control planes and orchestration",
+      "summary": "Several entries are moving beyond one-shot code generation toward running, routing, or coordinating agents: T3 Code exposes local agents across clients; Paperclip manages agents at work; the DeepSeek prototype reacts to authorized repository events; and Game Studios composes specialist roles. Agent Desktop supplies the computer-use interface layer.",
+      "supporting_repository_ids": [
+        "01-pingdotgg-t3code",
+        "02-vercel-labs-agent-desktop",
+        "04-donchitos-claude-code-game-studios",
+        "11-paperclipai-paperclip",
+        "13-deepseek-ai-dsh-superagent-prototype"
+      ]
     },
     {
-      "id": "local-first-ai",
-      "title": "Local-first AI and speech",
-      "content": "On-device transcription and consumer-hardware model inference provide privacy- and cost-oriented alternatives to cloud-only workflows.",
-      "supporting_repository_ids": ["03-anomalyco-hex", "10-cjpais-handy", "11-flashml-org-freetoken"]
+      "id": "agent-memory",
+      "title": "Persistent context and reusable agent skills",
+      "summary": "Claude-Mem addresses cross-session context, while mattpocock/skills packages small, composable engineering procedures. Both focus on making agent work repeatable across sessions rather than merely adding another model.",
+      "supporting_repository_ids": [
+        "03-thedotmack-claude-mem",
+        "05-mattpocock-skills"
+      ]
     },
     {
-      "id": "automation-security-infrastructure",
-      "title": "Automation and security infrastructure",
-      "content": "Purpose-built browser automation and auditable AI-assisted incident response apply agentic systems to operational infrastructure.",
-      "supporting_repository_ids": ["07-lightpanda-io-browser", "09-beenuar-aisoc"]
+      "id": "local-inference",
+      "title": "Local inference for large mixture-of-experts models",
+      "summary": "FreeToken emphasizes edge-native CPU–GPU co-execution and caching; colibri streams expert weights from disk in a lightweight C runtime. The shared theme is using consumer hardware more efficiently, with distinct runtime designs.",
+      "supporting_repository_ids": [
+        "08-justvugg-colibri",
+        "09-flashml-org-freetoken"
+      ]
     },
     {
-      "id": "domain-specific-systems",
-      "title": "Specialized domain systems",
-      "content": "Kronos applies foundation-model methods to financial candlesticks, while ziwei-doushu packages a traditional Chinese chart-calculation system and related data.",
-      "supporting_repository_ids": ["05-renhuai123-ziwei-doushu", "08-shiyu-coder-kronos"]
+      "id": "developer-tools",
+      "title": "Automation and developer infrastructure beyond agents",
+      "summary": "Scrapling’s scraper framework stands out as a conventional developer-tool project with strong daily gain, showing the snapshot is not exclusively about AI agents.",
+      "supporting_repository_ids": [
+        "06-d4vinci-scrapling"
+      ]
+    },
+    {
+      "id": "domain-ml",
+      "title": "Specialized ML and computer vision",
+      "summary": "Kronos targets financial-market time series, while Kornia provides geometric computer-vision building blocks. These are narrower ML domains rather than general coding-agent infrastructure.",
+      "supporting_repository_ids": [
+        "07-shiyu-coder-kronos",
+        "12-kornia-kornia"
+      ]
+    },
+    {
+      "id": "desktop-linux",
+      "title": "Linux desktop systems",
+      "summary": "Hyprland remains a high-visibility Wayland compositor alongside the new agent-facing desktop automation represented by Agent Desktop; they address different layers of desktop use.",
+      "supporting_repository_ids": [
+        "10-hyprwm-hyprland",
+        "02-vercel-labs-agent-desktop"
+      ]
     }
   ],
+  "comparison_basis": null,
   "sections": [
     {
       "id": "00-snapshot",
       "kind": "snapshot",
       "title": "Snapshot",
-      "content": "Snapshot time (UTC): 2026-11-02 01:36 UTC. Scope: Daily. Date range: 2026-11-02 through 2026-11-02. Ranking basis: daily GitHub Trending star gains, ranked after filtering obvious list-only and tutorial/course noise."
+      "content": "Snapshot time 2026-11-02 17:37 UTC; daily view captured on 2026-11-02. Date range 2026-11-02 through 2026-11-02."
     },
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Agent tooling dominates the strongest momentum: t3code leads with +3,094 stars today, followed by claude-mem (+1,526) and Hex (+1,179). Alongside agent workbenches, the list shows demand for local-first speech and inference, AI security operations, and purpose-built browser automation."
+      "content": "Agent infrastructure is the clearest signal today: T3 Code, Agent Desktop, and Claude-Mem lead the captured daily star-gain list, while local inference and specialist developer tools provide strong secondary currents."
     },
     {
       "id": "01-pingdotgg-t3code",
@@ -55,68 +93,77 @@
       "title": "pingdotgg/t3code",
       "rank": 1,
       "url": "https://github.com/pingdotgg/t3code",
-      "description": "A cross-platform control surface for coding agents running in the environment that owns the workspace.",
-      "content": "A cross-platform control surface for coding agents running in the environment that owns the workspace.",
+      "description": "An open-source agent-harness control surface that lets users operate local coding agents through mobile, web, and desktop clients.",
       "language": "TypeScript",
-      "stars_gained": 3094,
-      "total_stars": 38088,
-      "default_branch": "main",
-      "default_branch_commit": "e6e2ab05cceb3f8245e87f8499d4891f27de33cb",
-      "pushed_at": "2026-11-02T01:33:07Z",
-      "why_notable": "The day's largest gain; its remote-ready clients control multiple installed agent providers through a shared server/runtime boundary.",
-      "theme_ids": ["agent-workbenches"],
+      "stars_gained": 3216,
+      "total_stars": 40965,
+      "default_branch_commit": "8657eecb28bc8c767510cc6b9d852b628047c604",
+      "why_notable": "The strongest daily star-gain signal in the snapshot; its cross-client control surface sits at the intersection of agent tools and developer UX.",
+      "theme_ids": [
+        "agent-control"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 1,
       "spoken_name": "T3 Code",
+      "unique_caveat": "The README describes the project as very early-stage.",
       "enrichment": null,
-      "refs": ["https://github.com/pingdotgg/t3code", "https://github.com/pingdotgg/t3code/blob/main/docs/internals/overview.md"]
+      "refs": [
+        "pingdotgg/t3code"
+      ],
+      "pushed_at": "2026-11-02T17:36:19Z"
     },
     {
-      "id": "02-thedotmack-claude-mem",
+      "id": "02-vercel-labs-agent-desktop",
       "kind": "repo",
-      "title": "thedotmack/claude-mem",
+      "title": "vercel-labs/agent-desktop",
       "rank": 2,
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Captures, compresses, and retrieves agent-session context for use in later sessions.",
-      "content": "Captures, compresses, and retrieves agent-session context for use in later sessions.",
-      "language": "TypeScript",
-      "stars_gained": 1526,
-      "total_stars": 109340,
-      "default_branch": "main",
-      "default_branch_commit": "c239a048a8a07607148f4c1f26b258ccfb28b80d",
-      "pushed_at": "2026-11-01T21:01:59Z",
-      "why_notable": "A strong second-place daily gain and the largest total-star base among the selected repos, reflecting sustained interest in persistent agent memory.",
-      "theme_ids": ["agent-workbenches"],
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "description": "A Rust-based CLI and C library for agents to inspect and operate desktop apps through OS accessibility trees and stable element references.",
+      "language": "Rust",
+      "stars_gained": 2243,
+      "total_stars": 8803,
+      "default_branch_commit": "9eb9b296192fcb70bda25e918cd6dd66abfa3d0d",
+      "why_notable": "Second-highest daily gain and a concrete alternative to screenshot-only computer use, with cross-platform CLI/C interfaces.",
+      "theme_ids": [
+        "computer-use"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 2,
-      "spoken_name": "Claude Mem",
+      "spoken_name": "Agent Desktop",
+      "unique_caveat": "Desktop access requires OS/session permissions; snapshots and command output can expose private screen content.",
       "enrichment": null,
-      "refs": ["https://github.com/thedotmack/claude-mem"]
+      "refs": [
+        "vercel-labs/agent-desktop"
+      ],
+      "pushed_at": "2026-11-02T09:39:59Z"
     },
     {
-      "id": "03-anomalyco-hex",
+      "id": "03-thedotmack-claude-mem",
       "kind": "repo",
-      "title": "anomalyco/hex",
+      "title": "thedotmack/claude-mem",
       "rank": 3,
-      "url": "https://github.com/anomalyco/hex",
-      "description": "Offline, on-device voice dictation for macOS, Windows, and Linux.",
-      "content": "Offline, on-device voice dictation for macOS, Windows, and Linux.",
-      "language": "Rust",
-      "stars_gained": 1179,
-      "total_stars": 3307,
-      "default_branch": "dev",
-      "default_branch_commit": "a47ba5632ae7bd305a6358eaf0ab117ec7142e4a",
-      "pushed_at": "2026-11-02T00:43:24Z",
-      "why_notable": "One of today's fastest risers; transcription happens locally and the app pastes the result into the active application.",
-      "theme_ids": ["local-first-ai"],
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent context for coding agents: captures session work, compresses it, and injects relevant memories into later sessions.",
+      "language": "TypeScript",
+      "stars_gained": 1799,
+      "total_stars": 110469,
+      "default_branch_commit": "f0ef294c0df730157428835f01fe0f3f801416ec",
+      "why_notable": "Strong daily momentum around a practical bottleneck in agent workflows: carrying useful context across sessions.",
+      "theme_ids": [
+        "agent-memory"
+      ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 3,
-      "spoken_name": "Hex",
+      "spoken_name": "Claude Mem",
+      "unique_caveat": "The README presents Claude Code as its core use case even while advertising compatibility with other agents; check current integrations.",
       "enrichment": null,
-      "refs": ["https://github.com/anomalyco/hex", "https://github.com/anomalyco/hex/blob/dev/docs/README.md"]
+      "refs": [
+        "thedotmack/claude-mem"
+      ],
+      "pushed_at": "2026-11-02T17:15:36Z"
     },
     {
       "id": "04-donchitos-claude-code-game-studios",
@@ -124,229 +171,278 @@
       "title": "Donchitos/Claude-Code-Game-Studios",
       "rank": 4,
       "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-      "description": "A structured game-development workflow built around specialist Claude Code agents, skills, and quality gates.",
-      "content": "A structured game-development workflow built around specialist Claude Code agents, skills, and quality gates.",
+      "description": "A Claude Code configuration that organizes game development as a coordinated AI studio with specialist agents, skills, hooks, and rules.",
       "language": "Shell",
-      "stars_gained": 967,
-      "total_stars": 32330,
-      "default_branch": "main",
+      "stars_gained": 1380,
+      "total_stars": 33282,
       "default_branch_commit": "05ad7c8a5b8aa2aa86bbd3439ae7cf7295cac418",
-      "pushed_at": "2026-10-19T02:43:42Z",
-      "why_notable": "Shows the appeal of packaging agent roles and process into a ready-to-use domain workflow.",
-      "theme_ids": ["agent-workbenches"],
-      "signal_strength": "standard",
-      "evidence_density": "moderate",
-      "narration_priority": 6,
-      "spoken_name": "Claude Code Game Studios",
-      "unique_caveat": "The last reported push was 2026-10-19; today's star surge is not evidence of a fresh code release.",
-      "enrichment": null,
-      "refs": ["https://github.com/Donchitos/Claude-Code-Game-Studios"]
-    },
-    {
-      "id": "05-renhuai123-ziwei-doushu",
-      "kind": "repo",
-      "title": "Renhuai123/ziwei-doushu",
-      "rank": 5,
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "description": "An open-source Chinese Zi Wei Dou Shu chart engine with calculation logic and related data.",
-      "content": "An open-source Chinese Zi Wei Dou Shu chart engine with calculation logic and related data.",
-      "language": "TypeScript",
-      "stars_gained": 941,
-      "total_stars": 13166,
-      "default_branch": "main",
-      "default_branch_commit": "495b79ecb3524b20b2edc026067d7d0b0f407319",
-      "pushed_at": "2026-10-31T00:10:01Z",
-      "why_notable": "A non-agent counterpoint with strong daily momentum; its README describes a specialized calculation engine and a large, versioned interpretation dataset.",
-      "theme_ids": ["domain-specific-systems"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 7,
-      "spoken_name": "Ziwei Doushu",
-      "enrichment": null,
-      "refs": ["https://github.com/Renhuai123/ziwei-doushu"]
-    },
-    {
-      "id": "06-milind-soni-openmausbot",
-      "kind": "repo",
-      "title": "milind-soni/OpenMausBot",
-      "rank": 6,
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "description": "An open-source chat-style workspace for separate AI agents, with their own models, tools, and connected apps.",
-      "content": "An open-source chat-style workspace for separate AI agents, with their own models, tools, and connected apps.",
-      "language": "TypeScript",
-      "stars_gained": 922,
-      "total_stars": 10564,
-      "default_branch": "main",
-      "default_branch_commit": "6e32504b9d08674834bef034d76787751f39d9a3",
-      "pushed_at": "2026-11-01T19:48:30Z",
-      "why_notable": "Extends the agent trend from developer tooling into a multi-agent desktop/chat experience, with local Claude or Codex processes described in its README.",
-      "theme_ids": ["agent-workbenches"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 8,
-      "spoken_name": "OpenMausBot",
-      "enrichment": null,
-      "refs": ["https://github.com/milind-soni/OpenMausBot"]
-    },
-    {
-      "id": "07-lightpanda-io-browser",
-      "kind": "repo",
-      "title": "lightpanda-io/browser",
-      "rank": 7,
-      "url": "https://github.com/lightpanda-io/browser",
-      "description": "A headless browser written from scratch in Zig for AI agents and automation.",
-      "content": "A headless browser written from scratch in Zig for AI agents and automation.",
-      "language": "Zig",
-      "stars_gained": 825,
-      "total_stars": 40172,
-      "default_branch": "main",
-      "default_branch_commit": "5f70b9972f3085d4b0a975ab8db28b1e437d60e2",
-      "pushed_at": "2026-11-02T01:06:21Z",
-      "why_notable": "A high-momentum infrastructure project that challenges the default Chromium-based approach with a purpose-built automation browser.",
-      "theme_ids": ["automation-security-infrastructure"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 4,
-      "spoken_name": "Lightpanda",
-      "enrichment": null,
-      "refs": ["https://github.com/lightpanda-io/browser"]
-    },
-    {
-      "id": "08-shiyu-coder-kronos",
-      "kind": "repo",
-      "title": "shiyu-coder/Kronos",
-      "rank": 8,
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "A family of foundation models trained on financial candlestick sequences.",
-      "content": "A family of foundation models trained on financial candlestick sequences.",
-      "language": "Python",
-      "stars_gained": 630,
-      "total_stars": 45418,
-      "default_branch": "master",
-      "default_branch_commit": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
-      "pushed_at": "2026-04-13T12:38:49Z",
-      "why_notable": "Its two-stage OHLCV tokenization and transformer design stands out as a domain-specific model rather than a general-purpose LLM.",
-      "theme_ids": ["domain-specific-systems"],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 9,
-      "spoken_name": "Kronos",
-      "unique_caveat": "The last reported push was 2026-04-13; today's star gain signals attention, not current release activity.",
-      "enrichment": null,
-      "refs": ["https://github.com/shiyu-coder/Kronos"]
-    },
-    {
-      "id": "09-beenuar-aisoc",
-      "kind": "repo",
-      "title": "beenuar/AiSOC",
-      "rank": 9,
-      "url": "https://github.com/beenuar/AiSOC",
-      "description": "A self-hosted security-operations stack that normalizes telemetry, investigates incidents with auditable agents, and proposes human-approved responses.",
-      "content": "A self-hosted security-operations stack that normalizes telemetry, investigates incidents with auditable agents, and proposes human-approved responses.",
-      "language": "Python",
-      "stars_gained": 446,
-      "total_stars": 6239,
-      "default_branch": "main",
-      "default_branch_commit": "acb398be4c9e95aa034987a2e1c5f44f02ff3741",
-      "pushed_at": "2026-11-02T00:39:20Z",
-      "why_notable": "Its event-to-incident workflow, replayable agent decisions, and human approval step give the agent trend a concrete security-operations use case.",
-      "theme_ids": ["automation-security-infrastructure"],
+      "why_notable": "A high-gain example of domain-specific agent orchestration rather than a general-purpose coding assistant.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 5,
-      "spoken_name": "AiSOC",
+      "spoken_name": "Claude Code Game Studios",
+      "unique_caveat": "Trending text says 72 skills while the current README lists 74, indicating fast-changing counts.",
       "enrichment": null,
-      "refs": ["https://github.com/beenuar/AiSOC", "https://github.com/beenuar/AiSOC/blob/main/docs/architecture/README.md"]
+      "refs": [
+        "Donchitos/Claude-Code-Game-Studios"
+      ],
+      "pushed_at": "2026-10-19T02:43:42Z"
     },
     {
-      "id": "10-cjpais-handy",
+      "id": "05-mattpocock-skills",
       "kind": "repo",
-      "title": "cjpais/Handy",
-      "rank": 10,
-      "url": "https://github.com/cjpais/Handy",
-      "description": "A cross-platform speech-to-text app that transcribes locally and pastes into any text field.",
-      "content": "A cross-platform speech-to-text app that transcribes locally and pastes into any text field.",
-      "language": "Rust",
-      "stars_gained": 339,
-      "total_stars": 36586,
-      "default_branch": "main",
-      "default_branch_commit": "0ed36e112a1791f544f69dbf81da2c7385203b57",
-      "pushed_at": "2026-11-02T01:10:59Z",
-      "why_notable": "Reinforces the privacy-first local speech theme; its README describes local Whisper and Parakeet transcription options.",
-      "theme_ids": ["local-first-ai"],
-      "signal_strength": "brief",
+      "title": "mattpocock/skills",
+      "rank": 5,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "A set of small, composable engineering skills for coding agents, intended to be adaptable and usable across models.",
+      "language": "Shell",
+      "stars_gained": 970,
+      "total_stars": 309988,
+      "default_branch_commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "why_notable": "Shows demand for reusable agent workflows and human-editable skills rather than monolithic process frameworks.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
       "evidence_density": "rich",
-      "narration_priority": 10,
-      "spoken_name": "Handy",
+      "narration_priority": 6,
+      "spoken_name": "Matt Pocock Skills",
+      "unique_caveat": "This is a skills collection, not a standalone agent or application.",
       "enrichment": null,
-      "refs": ["https://github.com/cjpais/Handy"]
+      "refs": [
+        "mattpocock/skills"
+      ],
+      "pushed_at": "2026-11-01T11:42:33Z"
     },
     {
-      "id": "11-flashml-org-freetoken",
+      "id": "06-d4vinci-scrapling",
+      "kind": "repo",
+      "title": "D4Vinci/Scrapling",
+      "rank": 6,
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "A Python web-scraping framework spanning single requests through full crawls, with adaptive parsing and browser-backed workflows.",
+      "language": "Python",
+      "stars_gained": 858,
+      "total_stars": 92522,
+      "default_branch_commit": "95cf9019ab5a5d6f3e9654b7ef1c6a26e29dc5c0",
+      "why_notable": "A notable non-agent developer-tool signal with substantial daily gains, extending the snapshot beyond the agent wave.",
+      "theme_ids": [
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "Scrapling",
+      "unique_caveat": "Scraping behavior remains subject to target-site terms and access controls.",
+      "enrichment": null,
+      "refs": [
+        "D4Vinci/Scrapling"
+      ],
+      "pushed_at": "2026-11-02T14:39:57Z"
+    },
+    {
+      "id": "07-shiyu-coder-kronos",
+      "kind": "repo",
+      "title": "shiyu-coder/Kronos",
+      "rank": 7,
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "A foundation model project for learning the language of financial markets, with pretrained models and evaluation materials.",
+      "language": "Python",
+      "stars_gained": 855,
+      "total_stars": 45874,
+      "default_branch_commit": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+      "why_notable": "A domain-specific ML project among the top daily gainers, showing investor attention to specialized time-series models.",
+      "theme_ids": [
+        "domain-ml"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "Kronos",
+      "unique_caveat": "The default branch was last pushed on 2026-04-13; today’s star gain is not evidence of a same-day code release.",
+      "enrichment": null,
+      "refs": [
+        "shiyu-coder/Kronos"
+      ],
+      "pushed_at": "2026-04-13T12:38:49Z"
+    },
+    {
+      "id": "08-justvugg-colibri",
+      "kind": "repo",
+      "title": "JustVugg/colibri",
+      "rank": 8,
+      "url": "https://github.com/JustVugg/colibri",
+      "description": "A dependency-light C inference engine that streams mixture-of-experts model weights from disk to run large models on local hardware.",
+      "language": "C",
+      "stars_gained": 655,
+      "total_stars": 46369,
+      "default_branch_commit": "0a5504a1dc64f86fcd0fe7db298b0448c730e7e6",
+      "why_notable": "A fast-rising example of low-level, local inference engineering rather than hosted-model access.",
+      "theme_ids": [
+        "local-inference"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 9,
+      "spoken_name": "Colibri",
+      "unique_caveat": "Supported model families and practical performance depend on hardware and model-specific engines.",
+      "enrichment": null,
+      "refs": [
+        "JustVugg/colibri"
+      ],
+      "pushed_at": "2026-11-02T16:13:44Z"
+    },
+    {
+      "id": "09-flashml-org-freetoken",
       "kind": "repo",
       "title": "FlashML-org/FreeToken",
-      "rank": 11,
+      "rank": 9,
       "url": "https://github.com/FlashML-org/FreeToken",
-      "description": "An edge-native serving engine for running large Mixture-of-Experts models on consumer hardware.",
-      "content": "An edge-native serving engine for running large Mixture-of-Experts models on consumer hardware.",
+      "description": "An edge-native MoE serving engine that combines GPU, CPU, memory, and interconnect resources to run large open models locally.",
       "language": "Python",
-      "stars_gained": 242,
-      "total_stars": 15428,
-      "default_branch": "main",
-      "default_branch_commit": "ee43b2a11345d056ba349d22ee073c6828b1364b",
-      "pushed_at": "2026-11-02T00:36:31Z",
-      "why_notable": "Represents the push to bring large-model inference to personal machines using adaptive CPU/GPU execution and memory management.",
-      "theme_ids": ["local-first-ai"],
-      "signal_strength": "brief",
+      "stars_gained": 654,
+      "total_stars": 15899,
+      "default_branch_commit": "ea2916d31cf17f13c3d74edcc3683a73fca9ce39",
+      "why_notable": "Pairs with Colibri as a distinct approach to consumer-scale inference, emphasizing adaptive CPU–GPU serving and caching.",
+      "theme_ids": [
+        "local-inference"
+      ],
+      "signal_strength": "standard",
       "evidence_density": "rich",
-      "narration_priority": 11,
+      "narration_priority": 4,
       "spoken_name": "FreeToken",
+      "unique_caveat": "The README’s documented native GPU support centers on NVIDIA RTX 30/40/50 series; verify current device compatibility.",
       "enrichment": null,
-      "refs": ["https://github.com/FlashML-org/FreeToken"]
+      "refs": [
+        "FlashML-org/FreeToken"
+      ],
+      "pushed_at": "2026-11-02T16:58:54Z"
     },
     {
-      "id": "12-copilotkit-openbot",
+      "id": "10-hyprwm-hyprland",
       "kind": "repo",
-      "title": "CopilotKit/OpenBot",
-      "rank": 12,
-      "url": "https://github.com/CopilotKit/OpenBot",
-      "description": "A self-hosted template that turns AG-UI agents into AI coworkers with browser, file, and tool access.",
-      "content": "A self-hosted template that turns AG-UI agents into AI coworkers with browser, file, and tool access.",
-      "language": "TypeScript",
-      "stars_gained": 175,
-      "total_stars": 9540,
-      "default_branch": "main",
-      "default_branch_commit": "c396a5f68c817043846f1ca3c2b42061ee73ceb5",
-      "pushed_at": "2026-11-01T18:47:13Z",
-      "why_notable": "Adds an enterprise/self-hosted angle to the agent-workbench cluster, emphasizing per-action decisions and an audit trail.",
-      "theme_ids": ["agent-workbenches"],
+      "title": "hyprwm/Hyprland",
+      "rank": 10,
+      "url": "https://github.com/hyprwm/Hyprland",
+      "description": "An independent, customizable dynamic tiling Wayland compositor focused on modern features and visual polish.",
+      "language": "C++",
+      "stars_gained": 508,
+      "total_stars": 39769,
+      "default_branch_commit": "e0e9c84375f660aee18c26e5cf23688540457481",
+      "why_notable": "A mature Linux desktop project in the daily list provides a useful counterpoint to the agent-heavy cohort.",
+      "theme_ids": [
+        "desktop-linux"
+      ],
       "signal_strength": "brief",
       "evidence_density": "rich",
       "narration_priority": 12,
-      "spoken_name": "OpenBot",
-      "unique_caveat": "The README labels it beta and a template to customize, not a hosted product.",
+      "spoken_name": "Hyprland",
+      "unique_caveat": "It targets Linux systems using Wayland.",
       "enrichment": null,
-      "refs": ["https://github.com/CopilotKit/OpenBot"]
+      "refs": [
+        "hyprwm/Hyprland"
+      ],
+      "pushed_at": "2026-11-02T15:28:58Z"
+    },
+    {
+      "id": "11-paperclipai-paperclip",
+      "kind": "repo",
+      "title": "paperclipai/paperclip",
+      "rank": 11,
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "An open-source application for coordinating and managing AI agents at work.",
+      "language": "TypeScript",
+      "stars_gained": 451,
+      "total_stars": 110234,
+      "default_branch_commit": "40b807591618c0291369ada779c93da6ad4bfc7f",
+      "why_notable": "Adds an organization/management layer to the agent trend, complementary to tools that execute coding tasks directly.",
+      "theme_ids": [
+        "agent-control"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 10,
+      "spoken_name": "Paperclip",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "paperclipai/paperclip"
+      ],
+      "pushed_at": "2026-11-02T17:35:34Z"
+    },
+    {
+      "id": "12-kornia-kornia",
+      "kind": "repo",
+      "title": "kornia/kornia",
+      "rank": 12,
+      "url": "https://github.com/kornia/kornia",
+      "description": "A Python geometric computer-vision library for spatial AI and differentiable vision workflows.",
+      "language": "Python",
+      "stars_gained": 412,
+      "total_stars": 12060,
+      "default_branch_commit": "64e2ca9918083642641042920099e43bce65766f",
+      "why_notable": "A long-running computer-vision library still drawing daily attention, offering a data/ML counterpoint to coding agents.",
+      "theme_ids": [
+        "domain-ml"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 11,
+      "spoken_name": "Kornia",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "kornia/kornia"
+      ],
+      "pushed_at": "2026-11-02T17:08:49Z"
+    },
+    {
+      "id": "13-deepseek-ai-dsh-superagent-prototype",
+      "kind": "repo",
+      "title": "deepseek-ai/dsh-superagent-prototype",
+      "rank": 13,
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "description": "A proactive coding agent for one GitHub repository, packaged for DeepSeek Harness; it listens to GitHub and optionally Feishu, acts on authorized requests or team rules, and can return results such as pull requests.",
+      "language": "TypeScript",
+      "stars_gained": null,
+      "total_stars": 12444,
+      "default_branch_commit": "6337fc823ce20251c8de8085948165c81aaa701e",
+      "why_notable": "A newly created repository (2026-10-31) surfaced in the corroborating GitHub Search query with 12,444 stars; it illustrates autonomous, event-triggered coding agents. It was not on the captured daily Trending page, so no comparable daily star gain is available.",
+      "theme_ids": [
+        "agent-control"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 13,
+      "spoken_name": "DeepSeek Superagent Prototype",
+      "unique_caveat": "The README explicitly labels it a research prototype, not an official DeepSeek product or production-ready system, and says it differs from the accompanying paper.",
+      "enrichment": null,
+      "refs": [
+        "deepseek-ai/dsh-superagent-prototype"
+      ],
+      "pushed_at": "2026-10-31T12:05:51Z",
+      "created_at": "2026-10-31T09:32:46Z"
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Agent workbenches and persistent context: t3code, claude-mem, Claude-Code-Game-Studios, OpenMausBot, and OpenBot cover agent control, memory, specialist workflows, and coworker interfaces. Local-first AI and speech: Hex and Handy keep transcription on-device, while FreeToken targets consumer-hardware MoE serving. Automation and security: Lightpanda targets agent-oriented browser automation; AiSOC applies auditable AI investigation to security events. Specialized domain systems: Kronos models financial candlesticks; ziwei-doushu packages a traditional Chinese chart-calculation system and related data. Languages among the 12 entries: TypeScript 5, Python 3, Rust 2, Zig 1, Shell 1.",
-      "theme_ids": ["agent-workbenches", "local-first-ai", "automation-security-infrastructure", "domain-specific-systems"],
-      "language_tally": {"TypeScript": 5, "Python": 3, "Rust": 2, "Zig": 1, "Shell": 1}
+      "content": "- **Agent control planes and orchestration:** Several entries are moving beyond one-shot code generation toward running, routing, or coordinating agents: T3 Code exposes local agents across clients; Paperclip manages agents at work; the DeepSeek prototype reacts to authorized repository events; and Game Studios composes specialist roles. Agent Desktop supplies the computer-use interface layer.\n- **Persistent context and reusable agent skills:** Claude-Mem addresses cross-session context, while mattpocock/skills packages small, composable engineering procedures. Both focus on making agent work repeatable across sessions rather than merely adding another model.\n- **Local inference for large mixture-of-experts models:** FreeToken emphasizes edge-native CPU–GPU co-execution and caching; colibri streams expert weights from disk in a lightweight C runtime. The shared theme is using consumer hardware more efficiently, with distinct runtime designs.\n- **Automation and developer infrastructure beyond agents:** Scrapling’s scraper framework stands out as a conventional developer-tool project with strong daily gain, showing the snapshot is not exclusively about AI agents.\n- **Specialized ML and computer vision:** Kronos targets financial-market time series, while Kornia provides geometric computer-vision building blocks. These are narrower ML domains rather than general coding-agent infrastructure.\n- **Linux desktop systems:** Hyprland remains a high-visibility Wayland compositor alongside the new agent-facing desktop automation represented by Agent Desktop; they address different layers of desktop use.\n- **Languages:** 4 TypeScript, 4 Python, 2 Shell, and 1 each Rust, C, and C++; this is based on the 13 listed repositories, including one supplemental Search result."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "Today's strongest signal is the productization of agents into durable, controlled workflows—with remote control, persistent context, specialist roles, and auditable actions. Offline speech and local inference form a parallel privacy-and-cost story, while Lightpanda and AiSOC show infrastructure being rebuilt around automation and operational trust. Daily star gains measure attention, not adoption or software quality."
+      "content": "The strongest common thread is the move from isolated coding assistants to systems that control desktop surfaces, retain context, and coordinate multi-step work. At the same time, two very different local MoE runtimes and a strong scraping project show continued appetite for practical infrastructure. The DeepSeek prototype is a notable fresh Search discovery, but its README warns that it is research code and its stars cannot be compared directly with the daily Trending gains."
     },
     {
       "id": "99-sources-and-method",
       "kind": "sources",
       "title": "Sources and Method",
-      "content": "Primary source: https://github.com/trending?since=daily. Corroboration: GitHub REST repository and branch endpoints checked descriptions, languages, total stars, push recency, default branches, and current branch commit SHAs for all 12 entries. GitHub Search API query pushed:>2026-10-31 stars:>100 was also used; AiSOC appeared among the returned recently pushed repositories. Daily star gains are the values shown in GitHub Trending at 2026-11-02 01:36 UTC; total-star values are from that same snapshot. Repositories were ranked by displayed daily gains after filtering obvious list-only and tutorial/course noise. No prior-window evidence was gathered, so there is no Notable Shifts section."
+      "content": "Primary source: https://github.com/trending?since=daily\nCorroboration: GitHub REST API repository metadata and default-branch commit endpoints for listed repos; Search API query https://api.github.com/search/repositories?q=created%3A2026-10-31..2026-11-02+stars%3A%3E50&sort=stars&order=desc&per_page=30 for the supplemental new-repository signal. README files were read for narration-priority repositories.\nMethod note: The 12 primary entries are sorted by the stars-today counts on the captured daily Trending view. The DeepSeek prototype is appended as a clearly marked Search-discovered supplement; GitHub does not provide a comparable daily Trending gain for it. Total stars and default-branch commit SHAs were corroborated via REST API. The Trending page is a live snapshot, not a guaranteed midnight-to-midnight event ledger."
     }
   ]
 }

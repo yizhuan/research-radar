@@ -1,132 +1,87 @@
 # arXiv Mathematics — Friday, 30 October 2026 announcement batch
 
-Latest batch: Friday 30 October 2026 (the prior batch is used because Sunday 1 November has no new batch). Nine notable papers; the clearest pattern is a cluster of precise theorem-level advances—conjecture resolution, quantitative bounds, scaling limits, and PDE uniqueness results. Spoken agenda: an extremal graph conjecture, quantitative self-avoiding walk, 2D Euler, then algebraic geometry, random surfaces, and kinetic equations. arXiv publishes no official trending chart, so this ordering is inferred from checkable mathematical results, cross-listing, and sparse external signals; these very recent papers have little usable citation history, so this is a notable-recent-papers selection rather than measured popularity.
+Latest available daily batch at the 2026-11-02 snapshot: Friday 30 October 2026 (the prior announcement batch; no 2 November batch was yet listed). Five notable recent papers; the strongest pattern is sharp, quantitative statements—an asymptotic resolving a counting question, a uniqueness threshold, and explicit bounds. Spoken agenda: tropical combinatorics, Euler dynamics, self-avoiding walks, then divisor correlations and kinetic equations. arXiv has no official trending chart, and this inferred ordering has little citation evidence for papers only days old; read it as a shortlist of notable new work, not measured popularity.
 
 ## Top papers (ranked)
 
-### 1. [A proof of the Murty--Simon conjecture on diameter-$2$-critical graphs](https://arxiv.org/abs/2610.39032)
-- **Abstract:** The authors prove the Murty--Simon conjecture for every $n$-vertex diameter-2-critical graph: it has at most $\lfloor n^2/4\rfloor$ edges, with equality only for the balanced complete bipartite graph.
-- **Authors:** Sanjana Das, Jacob Fox
-- **arXiv:** `2610.39032v1` (published 2026-10-28 23:04:24 UTC; categories: `math.CO`)
-- **Evidence for ranking:** A precise all-$n$ resolution of a long-standing extremal graph conjecture, including the equality case; the authors contrast this with the earlier result for sufficiently large $n$ only. The placement reflects the result's scope, not measured readership.
-- **Claimed result:** The authors' Theorem 1.1 proves the $\lfloor n^2/4\rfloor$ edge bound for every $n\ge3$ and identifies the unique equality graph.
-- **Assumptions and setting:** Finite simple graphs on $n\ge3$ vertices that have diameter 2 and lose that property after deletion of any edge.
-- **Caveat:** The manuscript says AI found the initial proof of the edge bound; the authors report simplifying it and extending it to prove the full conjecture. This preprint's proof has not been independently verified here.
+### 1. [The Number of Tropical Order Types and Coherent Matching Fields](https://arxiv.org/abs/2610.40622)
+- **Abstract:** The authors count tropical matching fields and hyperplane-sequence types, deriving the same first-order asymptotic for regular triangulations of products of simplices and comparing real and tropical order types.
+- **Authors:** Xavier Allamigeon, Yiyuan Chen, Stéphane Gaubert, Xavier Goaoc
+- **arXiv:** `2610.40622v1` (published 2026-10-29T17:56:09Z; categories: `math.CO`, `math.AG`, `math.OC`)
+- **Evidence for ranking:** The introduction identifies the regular-triangulation estimate as answering a question of Santos; the paper also bridges combinatorics, tropical/algebraic geometry, and optimization. Semantic Scholar recorded 0 citations at the snapshot, so this placement reflects the explicit result and cross-field scope, not observed uptake.
+- **Claimed result:** For each fixed integer `r`, the authors show the number of regular triangulations of `Δ^{n−1}×Δ^{r−1}` is `n^{(r−1)^2 n+o(n)}` as `n→∞`; the paper also establishes first-order counting comparisons for associated tropical order types.
+- **Assumptions and setting:** The stated asymptotics hold with `r` fixed as `n` tends to infinity; the objects include coherent matching fields, tropical hyperplane-sequence types, and regular triangulations.
+- **Caveat:** The fixed-`r` asymptotic is not a uniform two-parameter estimate when `r` grows with `n`; it does not by itself settle algorithmic complexity questions for linear programs or games.
 - **Announcement type:** new submission, Friday 30 October 2026 announcement batch
-- **Themes:** Combinatorics & discrete mathematics
+- **Themes:** Combinatorics & discrete mathematics; Geometry & topology; Optimization & control
 
-### 2. [Quantitative sub-ballisticity of self-avoiding walk on $\mathbb{Z}^d$](https://arxiv.org/abs/2610.40520)
-- **Abstract:** For $d\ge2$, the authors give an explicit exponential upper bound on the probability that an $n$-step self-avoiding walk reaches distance at least $vn$, yielding a high-probability displacement bound of order $n/\exp(c\log^* n)$.
+### 2. [A Sharp Uniqueness-Nonuniqueness Dichotomy for Neutral Vortex Arrays in 2D Euler Equations](https://arxiv.org/abs/2610.40552)
+- **Abstract:** For stationary arrays of disjoint neutral vortices, the authors give a sharp integral criterion, based on an envelope of vorticity `L^p` norms, separating unique from nonunique Euler evolution.
+- **Authors:** Thomas Y. Hou, Xiang Qin, Peicong Song, Wenhan Zhang
+- **arXiv:** `2610.40552v1` (published 2026-10-29T17:39:18Z; categories: `math.AP`)
+- **Evidence for ranking:** The authors state both directions of a sharp criterion for every finite nondecreasing envelope, rather than only an example or a one-sided sufficient condition. Semantic Scholar recorded 0 citations at the snapshot, and the searches checked did not surface independent expert discussion; the placement is based on the theorem's precise scope and content.
+- **Claimed result:** Writing `I_Θ=∫_{p₀}^{∞} Θ(p)⁻¹ dp`, the authors prove uniqueness for every array in their class when `I_Θ` diverges, even among bounded energy-admissible weak velocity solutions; when it converges, they construct an array with two distinct unforced Lagrangian evolutions from the same data.
+- **Assumptions and setting:** The dichotomy concerns a specified class of stationary arrays of disjoint, compactly supported neutral vortices and a finite nondecreasing envelope `Θ` controlling vorticity `L^p` norms.
+- **Caveat:** The authors explicitly note that this does not settle sharpness of the classical Yudovich criterion for general unbounded vorticities; the result is limited to the stated neutral-array class.
+- **Announcement type:** new submission, Friday 30 October 2026 announcement batch
+- **Themes:** Analysis & PDE
+
+### 3. [Quantitative sub-ballisticity of self-avoiding walk on `ℤ^d`](https://arxiv.org/abs/2610.40520)
+- **Abstract:** For `d≥2`, the authors give an explicit exponential upper bound on the probability that an `n`-step self-avoiding walk reaches distance at least `vn`, yielding a high-probability displacement bound of order `n/exp(c log* n)`.
 - **Authors:** Ekin Arikök, Christoforos Panagiotis, Nicholas Pischke, Thomas Powell
-- **arXiv:** `2610.40520v1` (published 2026-10-29 17:28:11 UTC; categories: `math.PR`, `math.LO`)
-- **Evidence for ranking:** It upgrades the cited qualitative sub-ballisticity result to an explicit rate, and its proof-theoretic approach is cross-listed between probability and logic. The authors also derive a quantitative bridge-partition estimate.
-- **Claimed result:** The authors bound the probability of linear displacement by $\exp(-n/T(v))$ for explicit $T(v)$ and sufficiently large $n$, and derive the stated $n/\exp(c\log^* n)$ displacement scale with very high probability.
-- **Assumptions and setting:** The uniform law on length-$n$ self-avoiding walks starting at the origin in the hypercubic lattice $\mathbb{Z}^d$, for each fixed $d\ge2$.
-- **Caveat:** The paper says the precise asymptotic of its improved connective-constant error term is beyond scope; stronger displacement bounds would follow if the bridge partition function had the expected polynomial decay.
+- **arXiv:** `2610.40520v1` (published 2026-10-29T17:28:11Z; categories: `math.PR`, `math.LO`)
+- **Evidence for ranking:** It makes a previously qualitative sub-ballisticity result quantitative, derives a bridge-partition estimate, and is cross-listed between probability and logic because of its proof-theoretic analysis. Semantic Scholar recorded 0 citations at the snapshot; no independent expert discussion was found in the searches checked.
+- **Claimed result:** The authors bound the probability of linear displacement by `exp(−n/T(v))` for an explicit function `T` and sufficiently large `n`; they derive displacement at most `n/exp(c log* n)` with very high probability.
+- **Assumptions and setting:** The uniform law on length-`n` self-avoiding walks starting at the origin in the hypercubic lattice `ℤ^d`, for each fixed `d≥2`.
+- **Caveat:** The resulting displacement scale is a quantitative improvement, not a sharp asymptotic; the paper says a stronger bound would follow if the normalized bridge partition function had the expected polynomial decay, which is not proved here.
 - **Announcement type:** new submission, Friday 30 October 2026 announcement batch
 - **Themes:** Probability & statistics; Logic & foundations
 
-### 3. [Nonuniqueness of the $2$D Euler Evolutions with $L^1\cap L^p$ Vorticity](https://arxiv.org/abs/2610.40553)
-- **Abstract:** For every prescribed $1<p<\infty$, the authors construct compactly supported planar vorticity in $L^1\cap L^p$ that has two distinct exact Lagrangian evolutions under the unforced two-dimensional incompressible Euler equation.
-- **Authors:** Thomas Y. Hou, Xiang Qin, Peicong Song, Wenhan Zhang
-- **arXiv:** `2610.40553v1` (published 2026-10-29 17:39:32 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The paper gives a concrete nonuniqueness construction while retaining strong $L^1\cap L^p$ continuity and exact transport by measure-preserving regular Lagrangian flows; this is more specific than a generic weak-solution nonuniqueness claim.
-- **Claimed result:** The authors construct two evolutions from the same datum that remain distinct at a positive time, detected by a fixed smooth observable.
-- **Assumptions and setting:** Unforced 2D incompressible Euler on $[0,1]$; for each finite $p>1$, the compactly supported initial vorticity and construction parameters may depend on $p$.
-- **Caveat:** The construction establishes existence for selected data, not nonuniqueness for every $L^1\cap L^p$ datum. The introduction notes an independently developed manuscript using essentially the same core mechanism.
-- **Announcement type:** new submission, Friday 30 October 2026 announcement batch
-- **Themes:** Analysis & PDE
-
-### 4. [A Sharp Uniqueness-Nonuniqueness Dichotomy for Neutral Vortex Arrays in $2$D Euler Equations](https://arxiv.org/abs/2610.40552)
-- **Abstract:** For stationary arrays of disjoint neutral vortices, the authors give a sharp integral criterion in terms of an envelope of vorticity $L^p$ norms that separates uniqueness from nonuniqueness.
-- **Authors:** Thomas Y. Hou, Xiang Qin, Peicong Song, Wenhan Zhang
-- **arXiv:** `2610.40552v1` (published 2026-10-29 17:39:18 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The abstract states a two-way criterion for every finite nondecreasing envelope, rather than only an example or one-sided sufficient condition; it is a companion result to the same team's Euler construction above.
-- **Claimed result:** If $I_\Theta=\int_{p_0}^{\infty}\Theta(p)^{-1}\,dp$ diverges, every array in the specified class has a unique evolution, even among bounded energy-admissible weak velocity solutions; if it converges, an array with two distinct unforced Lagrangian Euler evolutions exists.
-- **Assumptions and setting:** The criterion is within a class of stationary arrays of disjoint neutral vortices and an arbitrary finite, nondecreasing envelope $\Theta$ for vorticity $L^p$ norms.
-- **Caveat:** The sharp dichotomy is not claimed for arbitrary initial vorticities or all Euler solution classes; its stated scope is the neutral-array class.
-- **Announcement type:** new submission, Friday 30 October 2026 announcement batch
-- **Themes:** Analysis & PDE
-
-### 5. [The Kawatani--Okawa conjecture in dimensions three and four](https://arxiv.org/abs/2610.39838)
-- **Abstract:** The authors prove that a smooth projective threefold or fourfold whose bounded derived category has no nontrivial semiorthogonal decomposition has nef canonical divisor, confirming the Kawatani--Okawa conjecture in those dimensions.
-- **Authors:** Dongjian Wu, Nantao Zhang
-- **arXiv:** `2610.39838v1` (published 2026-10-29 11:16:35 UTC; categories: `math.AG`)
-- **Evidence for ranking:** A clearly scoped conjecture result in two dimensions, supported by a stated combination of extremal-contraction classification and admissible-subcategory constructions.
-- **Claimed result:** For smooth projective threefolds and fourfolds under the no-nontrivial-semiorthogonal-decomposition hypothesis, the canonical divisor is nef.
-- **Assumptions and setting:** Smooth projective varieties of dimension 3 or 4; the hypothesis concerns the bounded derived category.
-- **Caveat:** The theorem is limited to dimensions three and four; it does not establish the corresponding statement in higher dimensions.
-- **Announcement type:** new submission, Friday 30 October 2026 announcement batch
-- **Themes:** Geometry & topology
-
-### 6. [JT gravity as a conformal scaling limit of random flat combinatorial disks](https://arxiv.org/abs/2610.40645)
-- **Abstract:** The authors prove that a Boltzmann ensemble of random rectilinear combinatorial disks, with a distinguished side length tending to infinity, converges after rescaling to a continuum random surface described by flat Jackiw--Teitelboim gravity.
-- **Authors:** Morris Ang
-- **arXiv:** `2610.40645v1` (published 2026-10-29 17:59:13 UTC; categories: `math.PR`, `math-ph`)
-- **Evidence for ranking:** A precise conformal scaling-limit theorem bridges discrete random geometry, probability, and mathematical physics; an independent secondary write-up also appeared shortly after the preprint.
-- **Claimed result:** The authors establish convergence of the rescaled conformal factors on compact interior subsets and give a branching-exploration criterion for analogous discrete models.
-- **Assumptions and setting:** The proved example is the Boltzmann ensemble of rectilinear disks; the criterion requires a Markov exploration, tightness, and convergence of the relevant length process and associated data.
-- **Caveat:** The extension to other natural models, such as flat triangulations or quadrangulations, is presented as an expectation and route for future work, not as a proved universality theorem.
-- **Announcement type:** new submission, Friday 30 October 2026 announcement batch
-- **Themes:** Probability & statistics; Mathematical physics
-
-### 7. [Convergence of a drainage network model with branching to the Brownian net](https://arxiv.org/abs/2610.40555)
-- **Abstract:** For a branching version of a long-range-dependent drainage network, the authors prove that its scaling limit is the Brownian net, resolving a conjecture for this model and examining a broader range of scaling regimes.
-- **Authors:** Krishnamurthi Ravishankar, Kumarjit Saha
-- **arXiv:** `2610.40555v1` (published 2026-10-29 17:40:22 UTC; categories: `math.PR`)
-- **Evidence for ranking:** The authors explicitly identify the Brownian-net limit as a conjecture from prior work and state that they prove it; the paper also appeared in an external probability-paper listing.
-- **Claimed result:** The authors prove convergence to the Brownian net for the stated branching drainage-network model and extend the scaling-regime analysis beyond the earlier treatment.
-- **Assumptions and setting:** Coalescing random walks with long-range dependence before coalescence, with branching probabilities that are small and vary with the scaling parameter.
-- **Caveat:** This resolves the limit question for the model and regimes treated; it does not classify scaling limits for arbitrary drainage networks or branching rules.
-- **Announcement type:** new submission, Friday 30 October 2026 announcement batch
-- **Themes:** Probability & statistics
-
-### 8. [Global Well-Posedness of Landau Equation in Bounded Domains](https://arxiv.org/abs/2610.40517)
-- **Abstract:** The authors prove global well-posedness near a Maxwellian for the Landau equation in bounded $C^3$ domains with in-flow or diffuse-reflection boundary conditions, covering $-3\le\gamma\le1$ including Coulomb interactions.
+### 4. [Global Well-Posedness of Landau Equation in Bounded Domains](https://arxiv.org/abs/2610.40517)
+- **Abstract:** The authors prove global well-posedness near a Maxwellian for the Landau equation in bounded `C^3` domains with in-flow or diffuse-reflection boundary conditions, covering `−3≤γ≤1` including Coulomb interactions.
 - **Authors:** Zhimeng Ouyang, Lei Wu
-- **arXiv:** `2610.40517v1` (published 2026-10-29 17:26:36 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The stated global strong-solution result covers the full listed interaction range, including Coulomb, while treating bounded domains and two specified boundary conditions; it is a substantial theorem-level PDE signal.
-- **Claimed result:** Small compatible Gaussian perturbations generate global strong solutions, with uniqueness and continuous dependence among weak solutions.
-- **Assumptions and setting:** Initial data are small compatible Gaussian perturbations of a Maxwellian; the domain is bounded and $C^3$, with in-flow or diffuse-reflection boundaries.
-- **Caveat:** This is a near-equilibrium theorem under compatibility and boundary regularity assumptions, not a large-data global result.
+- **arXiv:** `2610.40517v1` (published 2026-10-29T17:26:36Z; categories: `math.AP`)
+- **Evidence for ranking:** The claimed global strong-solution result spans the full stated interaction range, including Coulomb, and treats two boundary laws in bounded domains. Semantic Scholar recorded 0 citations at the snapshot, with no independent expert discussion surfaced by the searches checked; ranking rests on the theorem's scope, not measured attention.
+- **Claimed result:** The authors show that small compatible Gaussian perturbations generate global strong solutions, with uniqueness and continuous dependence among weak solutions.
+- **Assumptions and setting:** Perturbations are small and compatible with a Maxwellian; the spatial domain is bounded with `C^3` boundary, and the boundary condition is either in-flow or diffuse reflection.
+- **Caveat:** This is a near-equilibrium theorem under compatibility and boundary-regularity assumptions, not a large-data global result.
 - **Announcement type:** new submission, Friday 30 October 2026 announcement batch
 - **Themes:** Analysis & PDE; Mathematical physics
 
-### 9. [Multicomplexes in Action: Strong Formality of Compact Hyperkähler Manifolds](https://arxiv.org/abs/2610.40639)
-- **Abstract:** The authors show that every compact hyperkähler manifold is bigraded strongly formal in the sense of Milivojević and Stelzig, deriving the result from algebraic formality theorems for multicomplexes and commutative $n$-differential graded algebras.
-- **Authors:** Antonio Pio Contrò
-- **arXiv:** `2610.40639v1` (published 2026-10-29 17:58:39 UTC; categories: `math.AT`, `math.AG`, `math.DG`)
-- **Evidence for ranking:** The paper combines a universal statement for compact hyperkähler manifolds with an explicit algebraic framework and is cross-listed across algebraic topology, algebraic geometry, and differential geometry.
-- **Claimed result:** The authors establish a model-category structure for the relevant multicomplexes, generalize the $\partial\bar\partial$-lemma, and prove an algebraic formality theorem that yields strong formality for compact hyperkähler manifolds.
-- **Assumptions and setting:** Compact hyperkähler manifolds and the pluripotential homotopy theory / multicomplex setting specified by the authors.
-- **Caveat:** The conclusion is the stated bigraded strong-formality property; it should not be read as a claim about arbitrary compact complex manifolds.
+### 5. [Shifted convolutions of divisor functions](https://arxiv.org/abs/2610.40439)
+- **Abstract:** For fixed positive integers `k,l` and a nonzero fixed shift `h`, the author proves a power-saving asymptotic for a smooth weighted correlation of the `k`- and `l`-fold divisor functions at `n` and `n+h`.
+- **Authors:** Miguel N. Walsh
+- **arXiv:** `2610.40439v1` (published 2026-10-29T16:56:28Z; categories: `math.NT`)
+- **Evidence for ranking:** The introduction says the all-`k,l` theorem supplies cases with `k,l≥3` not previously known, extending a classical shifted-correlation problem. Semantic Scholar recorded 0 citations at the snapshot; a general number-theory paper-list post surfaced, but not independent mathematical analysis, so attention evidence remains slight.
+- **Claimed result:** The author establishes a main term with singular series `𝔖_{k,l}(h)(k−1)!(l−1)! x(log x)^{k+l−2}∫Φ`, with a power-saving error, for the weighted sum specified in Theorem 1.1.
+- **Assumptions and setting:** Fixed integers `k,l≥1`, fixed nonzero `h`, a smooth compactly supported weight `Φ` on `(0,∞)`, and the asymptotic as `x→∞`.
+- **Caveat:** The stated theorem does not assert uniformity as `h`, `k`, or `l` vary with `x`; the result is a preprint claim and its proof has not been independently checked here.
 - **Announcement type:** new submission, Friday 30 October 2026 announcement batch
-- **Themes:** Geometry & topology
+- **Themes:** Algebra & number theory
 
 ## Trending Research Themes
 
-- **Sharper finite and quantitative conclusions.** The Murty--Simon paper replaces a sufficiently-large-$n$ result with an all-$n$ theorem; the self-avoiding-walk paper makes a previously qualitative sub-ballistic bound explicit; and the Kawatani--Okawa paper proves the conjecture in dimensions three and four. These are separate arguments, not a shared method.
-- **Scaling limits and continuum objects.** The JT-gravity paper and the drainage-network paper both identify continuum limits of discrete/random models. Their objects and techniques differ: conformal geometry and branching explorations for the former, interacting walks and branching for the latter.
-- **Existence, uniqueness, and stability for nonlinear PDE.** The two 2D Euler papers give related, same-team results on nonuniqueness and a criterion within a special vortex-array class; the Landau paper proves a distinct near-equilibrium global well-posedness theorem. This is a small cluster in this batch, not evidence of a field-wide shift.
-- **Categorical structure in geometry.** The hyperkähler formality result and the Kawatani--Okawa derived-category result are isolated algebraic-geometric signals in this selection; no common new technique is claimed.
+- **Sharper quantitative conclusions.** The tropical-counting paper and the divisor-correlation paper both give explicit asymptotics for large combinatorial/arithmetic families; the self-avoiding-walk paper turns a qualitative displacement conclusion into an explicit rate. These are parallel signals in this batch, not a shared technique or evidence of a field-wide shift.
+- **Uniqueness and global behavior for nonlinear equations.** The Euler paper gives a sharp uniqueness/nonuniqueness boundary within a structured vorticity class, while the Landau paper proves global well-posedness near equilibrium under specified boundary conditions. Both are analysis/PDE contributions, but their equations, solution classes, and methods differ.
+- **A probability–logic bridge.** The self-avoiding-walk work uses proof-theoretic ideas to quantify an existing probabilistic argument. This is a cross-field connection in one selected paper, not a repeated method across the batch.
+- **Tropical geometry as a bridge to optimization.** The tropical order-type paper links combinatorial counting to regular triangulations and comparisons between linear programs and mean-payoff games; this is a distinct intersection rather than a trend corroborated by multiple papers.
 
 ## Open Problems and Research Directions
 
-- **Author-stated expectation —** The self-avoiding-walk paper says polynomial decay of the normalized bridge counts is expected and that such decay would improve its displacement estimate. A concrete follow-up is to quantify that decay and feed it through the authors' proof to test whether an $O(n/(\log n)^\varepsilon)$ scale follows; see [the paper](https://arxiv.org/abs/2610.40520).
-- **Scope gap —** The Euler dichotomy is proved for stationary neutral-vortex arrays, not arbitrary data. Extending either direction of the integral criterion to broader vorticity classes, or finding counterexamples at the boundary between classes, is a proposed direction; see [the criterion paper](https://arxiv.org/abs/2610.40552) and [the nonuniqueness construction](https://arxiv.org/abs/2610.40553).
-- **Author-identified extension —** The JT paper expects its exploration criterion to apply to other discrete flat-disk models. Checking the Markov, tightness, and length-process hypotheses for flat triangulations or quadrangulations would test that proposed universality; see [the paper](https://arxiv.org/abs/2610.40645).
-- **Scope gap —** The Kawatani--Okawa result covers dimensions three and four. Extending the derived-category argument to smooth projective varieties in higher dimensions is a natural follow-up, not a result claimed by the authors; see [the paper](https://arxiv.org/abs/2610.39838).
-- **Proof-validation direction —** Since the Murty--Simon preprint reports that AI found the initial edge-bound proof and the authors then simplified and extended it, independent verification or formalization of the full argument would be a useful check; see [the paper](https://arxiv.org/abs/2610.39032).
-- **Scope gap —** The Landau theorem is perturbative around a Maxwellian. Larger perturbations, different boundary conditions, and weaker boundary regularity are possible follow-up settings, without assuming that the current method extends; see [the paper](https://arxiv.org/abs/2610.40517).
+- **Author-stated limitation:** The Euler authors say their criterion does not settle sharpness of the classical Yudovich condition for general unbounded vorticities. A follow-up could test whether related thresholds persist beyond stationary neutral arrays, or identify which parts fail for broader data classes; see [the Euler dichotomy](https://arxiv.org/abs/2610.40552).
+- **Author-stated expectation:** The self-avoiding-walk paper says polynomial decay of normalized bridge counts is expected; it is not established there. Proving a decay rate and tracing its effect through their argument could test whether a stronger displacement scale follows; see [the self-avoiding-walk paper](https://arxiv.org/abs/2610.40520).
+- **Scope-derived direction:** The tropical counting theorem fixes `r` while `n` grows. Investigating regimes where `r` also grows would test how far the asymptotic and the comparison among regular triangulations, order types, and game/LP structures extend; see [the tropical order-type paper](https://arxiv.org/abs/2610.40622).
+- **Author-identified extension:** The divisor-correlation introduction says its methods may extend to other shifted convolution problems. Testing which related arithmetic functions or shift ranges retain a power-saving error is a concrete extension, not a claim made by the theorem; see [the divisor-functions paper](https://arxiv.org/abs/2610.40439).
+- **Scope-derived direction:** The Landau result is perturbative around a Maxwellian in `C^3` bounded domains. Larger perturbations, weaker boundary regularity, or other boundary laws are possible test settings, without assuming the current proof extends; see [the Landau paper](https://arxiv.org/abs/2610.40517).
 
 ## Takeaway
 
-The batch contains unusually crisp theorem statements: a full extremal graph conjecture proof, explicit probabilistic bounds, a Brownian-net limit, and strong PDE results under precise hypotheses. Because the papers are only days old and independent mathematical attention is sparse, the ordering should be read as a transparent shortlist of potentially important new work—not a readership ranking or a judgment that the claims have completed peer review.
+This batch offers several clean theorem-level advances: a fixed-dimension asymptotic answering a triangulation-count question, a two-sided Euler uniqueness criterion, a new quantitative self-avoiding-walk bound, and broad but perturbative PDE results. Since these preprints are only days old and external attention evidence is sparse, the ordering is best treated as an informed shortlist, not a popularity ranking or a substitute for expert review.
 
 ## Method and sources
 
-- **Window:** Daily; exact announcement-batch date 2026-10-30 (start=end: 2026-10-30 announcement batch). This is the latest arXiv Mathematics batch available at the snapshot; Sunday 2026-11-01 had no new batch. Snapshot: 2026-11-01 17:24:14 UTC.
-- **Coverage:** The full Mathematics recent listing was loaded with the `show=2000` view; the latest batch contained 874 entries. Candidate selection was drawn from the full batch, not just the first 50. Every selected abstract was checked against its arXiv abstract page; the first three papers' introductions and main-results statements were also inspected in the arXiv HTML versions.
-- **Ranking method:** No official arXiv trending chart exists. Ordering uses explicit theorem/conjecture resolution, quantitative improvements, scope, cross-listing, and limited independent discoverability signals; no numeric score was invented. Semantic Scholar records retrieved for seven selected papers had current citation and influential-citation totals of zero; a later lookup for the two added candidates was unavailable, so citations did not determine their placement. No citation totals are treated as gains during the window.
-- **Attention checks:** Web searches found a secondary write-up for the JT paper and a probability-paper listing for the Brownian-net paper, but no independent expert/seminar discussion establishing wider uptake. These listings are weak discoverability signals, not endorsements.
-- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); the nine linked arXiv abstract pages above; [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1); [secondary JT write-up](https://www.arxivnews.org/en/articles/15e4b785-097b-488c-b9ff-29e56feb4829); [Probability Papers listing](https://teapawt.org/NHWK).
+- **Window:** Daily announcement batch, 2026-10-30 through 2026-10-30; the latest available batch at the snapshot, so this is the prior batch relative to 2026-11-02. The batch listing's selected entries show first-submission timestamps on 2026-10-29 UTC; all five are v1 new submissions, not revisions. Snapshot time: 2026-11-02T01:22:41Z.
+- **Coverage:** Reviewed the full arXiv Mathematics recent-listing segment for Friday 30 October (874 entries) and selected candidates from that batch; verified all five abstracts on their arXiv abstract pages and checked the arXiv API metadata for IDs, versions, dates, authors, categories, and abstracts. Read the introductions/main-result statements of the selected papers in arXiv HTML; no proof was independently verified. The configured `web_extract` backend could not extract pages, so the arXiv browser pages and API were used instead.
+- **Ranking method:** arXiv provides no official trend or popularity ranking. This inferred ordering prioritizes concrete claimed results, scope, and cross-listing, then recency; it is not a readership estimate. Semantic Scholar Graph API current citation and influential-citation totals were 0 for each of these five papers as of the snapshot. These are current totals, not gains during the window, and the age of the papers makes citation evidence uninformative.
+- **Attention checks:** Searches for independent expert or seminar discussion did not surface such coverage for these five papers. A general number-theory paper-list post surfaced for the divisor-correlation paper; it is a weak discoverability signal, not an endorsement.
+- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); the five linked arXiv abstract pages and their HTML versions; arXiv Atom API records; Semantic Scholar Graph API metadata; [general number-theory listing post](https://x.com/PQBW/status/2116398997996736836).

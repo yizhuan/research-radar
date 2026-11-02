@@ -1,110 +1,87 @@
-## Headline
+# arXiv Physics Daily — Friday, 30 October 2026
 
-Daily arXiv Physics — Friday, 30 October 2026 announcement batch; 7 notable papers selected from 894 unique listings. The clearest cluster is quantum information moving between resource estimates and hardware tests, with additional results in acoustic topology, low-energy QED, and neutrino interactions. Spoken agenda: start with cat-qubit estimates and three quantum-hardware milestones, then turn to an XFEL search, SBND cross sections, and scale-free acoustic modes. arXiv has no official trending chart; this ordering is inferred from SciRate's community-curated feed, outside discussion, and concrete cross-subfield results. Citation evidence is limited for papers announced only days ago, so this is a notable-paper roundup rather than a measured popularity list. Sunday 1 November had no newer regular batch; this uses the prior Friday batch. Snapshot: 2026-11-01 17:34:18 UTC.
+Snapshot: 2026-11-02 01:27:20 UTC. The latest available announcement batch was Friday 30 October; no Monday 2 November batch had appeared by the snapshot. This report selects five notable papers from that batch. The strongest shared pattern is quantum-computing scale-up, spanning fault-tolerant algorithm resource estimates and cryogenic atom-array gates. Agenda: the hardware-cost estimate, the new gate experiment, then a Hubbard-model superconductivity result, a CMB clustering analysis, and neutrino constraints from XENONnT. Global caveat: arXiv publishes no official trending chart; this ordering is inferred from limited community-attention and curation signals plus paper-specific results, with little usable citation evidence for such recent submissions—it is not a readership or download ranking.
 
 ## Top papers (ranked)
 
 ### 1. [Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days](https://arxiv.org/abs/2610.37839)
-- **Abstract:** The authors compile Shor's algorithm into superconducting cat-qubit architectures and estimate resources for RSA-2048 and discrete-log benchmarks.
-- **Authors:** Axel Pappalardo, Dahmun Goudarzi, Victor Hertz, Hugo Jacinto, Larissa Kroell, et al.
+- **Abstract:** The authors give end-to-end physical-resource estimates for compiling Shor's algorithm onto two superconducting cat-qubit architectures, including layouts and schedules for RSA-2048 and related discrete-log benchmarks.
+- **Authors:** Axel Pappalardo, Dahmun Goudarzi, Victor Hertz, Hugo Jacinto, Larissa Kroell et al.
 - **arXiv:** `2610.37839v1` (published 2026-10-27 18:52:22 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** It leads SciRate's current “Top arXiv papers” feed, a checkable community-attention signal; the paper also provides an unusually complete physical-level circuit, layout, and schedule estimate.
-- **Claimed result:** The authors estimate 22,593 cat qubits and 3.14 days for a full RSA-2048 compilation, assuming a 1 μs error-correction cycle, 10 μs decoder reaction, phase-flip probability 5×10⁻⁴, and no bit flips during the computation. Their less complete ECDLP/FFDLP estimates reuse compiled operations.
-- **Evidence type:** computational; end-to-end circuit compilation, physical-qubit layout, scheduling, and resource estimation—not a hardware demonstration.
-- **Caveat:** The headline estimate depends on an idealized no-bit-flip assumption equivalent to roughly a 100-year bit-flip time. The authors estimate about 45,000 cat qubits if a one-hour bit-flip time is protected by an added code layer; the other cryptographic instances are less completely compiled.
-- **Announcement type:** new submission, announcement-batch date 30 October 2026.
+- **Evidence for ranking:** SciRate's “Top arXiv papers” feed surfaced it among its leading entries at the snapshot, a qualitative community-attention signal; no numerical score is used.
+- **Claimed result:** The authors estimate RSA-2048 factoring at 22,593 cat qubits and 3.14 days under their stated hardware and noise assumptions; the RSA circuit is compiled in full, while related estimates reuse its operations.
+- **Evidence type:** computational; circuit compilation, error-correction resource modeling, physical-qubit layouts, and schedules.
+- **Caveat:** The headline estimate assumes a 1 μs error-correction cycle, 10 μs decoder reaction, phase-flip probability 5×10⁻⁴, and no bit flips—roughly a 100-year bit-flip time. The authors give a higher-cost alternative when bit flips are included; this is a resource estimate, not a demonstration of a working machine.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
 - **Themes:** Quantum information; Computational & data methods
 
 ### 2. [High-Fidelity Universal Quantum Gates in a Cryogenic Atom Array](https://arxiv.org/abs/2610.40329)
-- **Abstract:** The authors demonstrate a universal gate set in a cryogenic cesium atom array, reporting 99.970(2)% single-qubit fidelity and 99.76(8)% raw two-qubit entangling-gate fidelity.
+- **Abstract:** The authors demonstrate a universal gate set in a cryogenic ¹³³Cs tweezer array, reporting 99.970(2)% single-qubit fidelity and 99.76(8)% raw two-qubit entangling-gate fidelity using direct single-photon Rydberg excitation.
 - **Authors:** Junlan Jin, Donghyuk Seo, Yue Shi, Yukai Lu, Jeff D. Thompson, Waseem S. Bakr
 - **arXiv:** `2610.40329v1` (published 2026-10-29 15:57:06 UTC; categories: `physics.atom-ph`, `quant-ph`)
-- **Evidence for ranking:** Surfaced in SciRate's current Top arXiv feed and separately discussed by [Quantum Crier](https://quantumcrier.com/posts/bfd9bbe5.html) and the [Quantum Research Center](https://quantumresearch.center/news/papers/). Its atomic-physics/quantum-information cross-list and quantified gate benchmark are concrete signals; the coverage is not independent experimental replication.
-- **Claimed result:** The authors measure 99.970(2)% single-qubit Clifford fidelity and 99.76(8)% raw CZ fidelity in a cryogenic ¹³³Cs array, using direct single-photon excitation to a Rydberg P state. Their error model attributes the remaining dominant infidelity to atomic motion, with Rydberg-decay error below 3×10⁻⁴.
-- **Evidence type:** experimental; randomized and stabilizer benchmarking in a 4 K optical-tweezer atom array.
-- **Caveat:** These are physical-gate results, not logical or fault-tolerant computation. Atomic motion currently dominates; the higher fidelity projected with improved cooling and other upgrades is a model prediction, not the measured result.
-- **Announcement type:** new submission, announcement-batch date 30 October 2026.
+- **Evidence for ranking:** A community-maintained quantum-experiment index opened a paper-addition issue on 30 October; the paper is also cross-listed between atomic physics and quantum physics, and reports measured gate benchmarks.
+- **Claimed result:** The authors report a complete universal gate set in a cryogenic atom array; their error analysis attributes most measured two-qubit infidelity to atomic motion, with the Rydberg-decay contribution below 3×10⁻⁴.
+- **Evidence type:** experimental; cryogenic optical-tweezer array of ¹³³Cs atoms, with single- and two-qubit gate benchmarking.
+- **Caveat:** Atomic motion remains the dominant error in the measured gate, so the higher fidelities projected from suppressing Rydberg decay require improved cooling and further experimental validation.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
 - **Themes:** Quantum information; Atomic, molecular & optical physics
 
-### 3. [Experimental Observation of Error-Resilience Phase Transition on Superconducting Quantum Processor](https://arxiv.org/abs/2610.38148)
-- **Abstract:** The authors test a predicted error-resilience transition on a superconducting processor, using fidelity, Rényi-2 entanglement, and stabilizer Rényi-2 entropy for circuits up to 26 qubits.
-- **Authors:** Emanuel Dallas, Mario Morford-Oberst, Eric Weine
-- **arXiv:** `2610.38148v1` (published 2026-10-28 01:31:09 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** Appears in SciRate's current Top arXiv feed and reports a hardware study of a theoretically predicted transition using three observables, alongside noiseless simulations of the same circuit family.
-- **Claimed result:** On IBM's ibm_pittsburgh Heron r3, the authors infer a finite-size critical noise angle near 1.01; noiseless simulation of their implemented circuit ensemble gives about 1.05, while the Haar-random model predicts about 1.14. They attribute the shift to circuits too shallow to be truly Haar-random.
-- **Evidence type:** experimental; IBM superconducting processor, randomized measurements, zero-noise extrapolation, M3 readout mitigation, and Gaussian-process finite-size analysis.
-- **Caveat:** The transition is identified only after error mitigation and finite-size modelling; raw unmitigated data do not support the fit. The observed critical angle is not the thermodynamic Haar-random value.
-- **Announcement type:** new submission, announcement-batch date 30 October 2026.
-- **Themes:** Quantum information; Computational & data methods
-
-### 4. [Individually Addressed Logical Pauli Measurements by QLDPC Surgery on a Trapped Ion Quantum Computer](https://arxiv.org/abs/2610.39067)
-- **Abstract:** The authors implement QLDPC surgery on a trapped-ion processor to measure selected logical Pauli operators while preserving a spectator logical qubit.
-- **Authors:** Surabhi Luthra, Alex Owens
-- **arXiv:** `2610.39067v1` (published 2026-10-28 23:55:04 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** Surfaced in SciRate's current Top arXiv feed; it is a direct hardware test of a logical-operation primitive needed by low-overhead QLDPC architectures, with reported error intervals.
-- **Claimed result:** On Quantinuum's H2-2, a single-round measurement of X̄₁ on a [[10,2,3]] generalized bicycle code has a reported 0.72% error (95% credible interval 0.32–1.41%); three-round decoding reduces the gadget-measurement error below 0.26%. The authors also demonstrate sequential X̄₁ and Z̄₂ measurements while reusing gadget qubits.
-- **Evidence type:** experimental; trapped-ion processor, QLDPC surgery gadgets, and three rounds of syndrome extraction.
-- **Caveat:** This validates a primitive on a small, distance-3 code; it does not establish scalable or fault-tolerant operation at larger code distance.
-- **Announcement type:** new submission, announcement-batch date 30 October 2026.
-- **Themes:** Quantum information
-
-### 5. [Dark-field Search for Quantum Vacuum Signals in the Low-Energy Regime](https://arxiv.org/abs/2610.39867)
-- **Abstract:** The authors describe a European XFEL/ReLaX dark-field search that sees no excess light-by-light scattering and derives a 95% upper bound at 116 eV.
-- **Authors:** Aimé Matheron, Michal Šmíd, Felix Karbstein, Sebastian Göde, Willi Hippler, et al.
-- **arXiv:** `2610.39867v1` (published 2026-10-29 11:41:38 UTC; categories: `hep-ex`, `physics.optics`)
-- **Evidence for ranking:** A concrete rare-signal search at the European XFEL combines a high-energy-physics/optics cross-list with a quantified limit from 2,751 pump–probe collisions. This is a notable experimental constraint, not a detection.
-- **Claimed result:** The authors report no excess above background and derive a 95% confidence upper limit on the low-energy light-by-light cross section of 7×10⁴ times the QED prediction. The paper details the apparatus and analysis; it identifies the result as also reported in a companion Letter.
-- **Evidence type:** experimental; European XFEL HED instrument, the 300-TW ReLaX laser, polarization filtering, and start-to-end simulations at a 116 eV center-of-mass photon energy.
-- **Caveat:** This first implementation is background-limited, with sensitivity constrained by beamline geometry, laser performance, and imperfect correlation between diagnostics and detector counts; the bound is not evidence of a quantum-vacuum signal.
-- **Announcement type:** new submission, announcement-batch date 30 October 2026.
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
-
-### 6. [Measurements of transverse kinematic imbalance in muon neutrino charged-current interactions on argon with a single proton and no pions in the final state with SBND](https://arxiv.org/abs/2610.39042)
-- **Abstract:** The SBND collaboration reports its first neutrino–argon differential cross sections for muon-neutrino events with one proton and no pions, using 12,804 selected candidates.
-- **Authors:** R. Acciarri, L. Aliaga-Soplin, D. Andrade Aldana, C. Andreopoulos, A. Antonakis, et al.
-- **arXiv:** `2610.39042v1` (published 2026-10-28 23:15:33 UTC; categories: `hep-ex`)
-- **Evidence for ranking:** The first SBND cross-section measurement uses a substantial Run 1 sample and provides a checkable comparison of neutrino event-generator predictions; this is a notable facility result rather than a popularity signal.
-- **Claimed result:** From 8.8×10¹⁹ protons-on-target, the authors select 12,804 signal candidates at 91% purity and extract flux-averaged cross sections versus three transverse-kinematic-imbalance variables. None of the compared generators describes all three, with the largest mismatch in transverse missing momentum.
-- **Evidence type:** experimental; SBND liquid-argon detector at Fermilab, Run 1 data, flux prediction, detector-response simulation, and unfolded cross-section analysis.
-- **Caveat:** Flux, interaction modelling, secondary interactions, detector response, and unfolding contribute systematic/model dependence; the disagreement is with tested generator predictions, not a model-independent discovery.
-- **Announcement type:** new submission, announcement-batch date 30 October 2026.
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
-
-### 7. [Scale-free wave localization at topological multicriticality](https://arxiv.org/abs/2610.40125)
-- **Abstract:** The authors combine catastrophe-theory analysis with acoustic metamaterial experiments to show a topological boundary mode with linear, rather than exponential, spatial decay at tricriticality.
-- **Authors:** Zhijie Xue, Yuan Tian, Nanyu Chen, Xiujuan Zhang, Tao Li, et al.
-- **arXiv:** `2610.40125v1` (published 2026-10-29 14:20:33 UTC; categories: `physics.optics`, `cond-mat.mes-hall`)
-- **Evidence for ranking:** The optics/condensed-matter cross-list connects a mathematical bulk–boundary result to a directly measured real-space signature in a tunable acoustic metamaterial; included for scientific reach, not a measured attention score.
-- **Claimed result:** The authors prove that an n-th-order topological multicritical point can enforce a boundary-mode envelope proportional to the (n−1)th power of distance, and experimentally demonstrate linear decay in a one-dimensional acoustic platform at a tricritical point. They also generalize the construction to two-dimensional corner modes.
-- **Evidence type:** experimental and theoretical; acoustic metamaterial measurements in 1D plus singularity-theory and spatial-transfer-matrix analysis.
-- **Caveat:** The reported experimental demonstration is one-dimensional and requires tricritical tuning; the two-dimensional result is presented as a generalization, not as an independent experimental confirmation in this report.
-- **Announcement type:** new submission, announcement-batch date 30 October 2026.
+### 3. [A $B_{1g}$ phonon unlocks $d$-wave superconductivity in the repulsive Hubbard model](https://arxiv.org/abs/2610.37746)
+- **Abstract:** Finite-temperature quantum Monte Carlo calculations find a $d$-wave superconducting dome when a $B_{1g}$ phonon couples to the doped repulsive $t$-$t'$ Hubbard model, with the authors reporting cooperative enhancement beyond either interaction alone.
+- **Authors:** Wen O. Wang, Tianshu Li, Xiaoyue Ma, Rong Zhang, Lei Zhang et al.
+- **arXiv:** `2610.37746v1` (published 2026-10-27 18:00:00 UTC; categories: `cond-mat.supr-con`, `cond-mat.str-el`)
+- **Evidence for ranking:** Its cross-listing links superconductivity and strongly correlated electrons, and the paper reports finite-temperature numerical evidence for a concrete pairing mechanism. No paper-specific citation or independent discussion signal was found in the sources checked, so its placement reflects the result rather than measured attention.
+- **Claimed result:** The authors infer a transition scale near $T_c/t≈0.04$ at $U/t=1$ and density 0.8, with a doping dome; this establishes a result in the simulated model, not in a material sample.
+- **Evidence type:** computational; numerically exact determinant quantum Monte Carlo on doped Hubbard-model lattices.
+- **Caveat:** The fermion sign problem limits access to lower temperatures at stronger repulsion and prevents equally direct checks on the largest lattices; finite-size and extrapolation limits therefore remain relevant.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
 - **Themes:** Condensed matter & materials
+
+### 4. [Disentangling constraints on $S_8$ from the high and low redshift CMB](https://arxiv.org/abs/2610.37752)
+- **Abstract:** A principal-component analysis separates primordial-CMB and CMB-lensing contributions to clustering constraints, finding a primordial-CMB $S_8$ value compatible with DES while the lensing-inferred clustering is higher.
+- **Authors:** Joann Jones, Ualype de Andrade Uchôa, Scott Dodelson
+- **arXiv:** `2610.37752v1` (published 2026-10-27 18:00:00 UTC; categories: `astro-ph.CO`)
+- **Evidence for ranking:** The work appears in multiple third-party daily arXiv listings, including DailyArXiV and Academus, and combines Planck, ACT, and SPT data with an explicit comparison to DES.
+- **Claimed result:** The authors obtain $S_8=0.795±0.022$ from the primordial CMB, consistent with their cited DES value of $0.789±0.012$; the size of the lensing excess and the comparison depend on the prior for summed neutrino mass.
+- **Evidence type:** observational; reanalysis of Planck 2018, ACT DR6, and SPT-3G D1 CMB data, compared with Dark Energy Survey results.
+- **Caveat:** This is a data-analysis separation, not evidence that a cosmological tension is resolved; the authors report sensitivity to the neutrino-mass prior and lensing treatment.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Cosmology & gravitation; Computational & data methods
+
+### 5. [Neutrino electromagnetic properties after the first $pp$ solar neutrino observation at XENONnT](https://arxiv.org/abs/2610.38734)
+- **Abstract:** The authors analyze XENONnT's reported low-energy solar-neutrino scattering data to infer the $pp$ flux and low-momentum-transfer weak mixing angle, and to constrain several neutrino electromagnetic interactions.
+- **Authors:** Valentina De Romeri, Dimitrios K. Papoulias, Federica Pompa, Christoph A. Ternes
+- **arXiv:** `2610.38734v1` (published 2026-10-28 19:27:50 UTC; categories: `hep-ph`)
+- **Evidence for ranking:** A curated 30 October neutrino/particle-physics arXiv digest selected the work; it links a newly available low-energy detector data set to several beyond-Standard-Model constraints.
+- **Claimed result:** The authors derive bounds on neutrino charge radii, magnetic moments, millicharges, and a sterile-neutrino dipole portal from the published XENONnT data; they specifically test how the mild $pp$-flux excess is affected by the $^{14}$C background.
+- **Evidence type:** observational; phenomenological fit to the XENONnT collaboration's reported neutrino-electron scattering result, not a new detector measurement.
+- **Caveat:** The mild flux excess and the $^{14}$C background treatment affect the fitted quantities, so the inferred constraints depend on the background model and data interpretation.
+- **Announcement type:** new submission, 2026-10-30 announcement batch
+- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
 
 ## Trending Research Themes
 
-- **Quantum computing is being approached from both the algorithm/resource side and the device side.** The cat-qubit study estimates a full RSA-2048 circuit under explicit noise assumptions [1], while the cryogenic atom-array gates [2], processor transition experiment [3], and trapped-ion QLDPC surgery [4] report separate hardware results. These systems and experiments are complementary, not independent replications of one result.
-- **Error correction is shifting from abstract code proposals toward tested operations and explicit overheads.** QLDPC surgery tests one logical measurement primitive [4]; the cat-qubit paper supplies a resource estimate [1]. Neither alone establishes a scalable fault-tolerant machine.
-- **Precision measurements remain constrained by modelling and instrument systematics.** The EuXFEL dark-field search reports a background-limited null bound [5], while SBND's neutrino–argon distributions discriminate among event generators [6]. They use unrelated facilities and probe different physics; one is not confirmation of the other.
-- **Topology is being tied to spatial mode profiles.** The acoustic metamaterial study reports linear boundary decay at tricriticality and links the signature to catastrophe theory [7]. This is a single-paper signal in the selected set, not evidence that the whole physics corpus is trending toward acoustic topological systems.
+- **Quantum-computing scale-up (two-paper pattern):** Pappalardo et al. estimate the physical resources and schedules for fault-tolerant Shor computation on cat qubits, while Jin et al. experimentally benchmark a universal gate set in a cryogenic neutral-atom array. These address complementary layers—logical resource accounting and physical gate performance—not a shared platform or a demonstrated end-to-end computer.
+- **Correlated-electron pairing (isolated signal):** Wang et al. use determinant QMC to test cooperation between a symmetry-specific phonon and Hubbard repulsion. The shared scientific thread is an interaction mechanism for $d$-wave pairing; the result remains model-based rather than a measurement of a cuprate.
+- **Precision inference from existing data (two distinct isolated signals):** Jones et al. separate primordial and lensing contributions in CMB constraints using Planck/ACT/SPT, while De Romeri et al. reinterpret XENONnT's low-energy solar-neutrino data. These are complementary analysis strategies, not independent confirmations of one another or of a new detection.
 
 ## Open Problems and Research Directions
 
-- **Realistic cat-qubit noise (author-stated limitation; [1]):** The RSA-2048 headline assumes no bit flips, while the required bit-flip lifetime is far beyond demonstrated hardware. A useful follow-up is to benchmark full schedules under measured bit-flip rates, correlated errors, and decoder delays, then compare resource costs across cat-code architectures.
-- **Scaling cryogenic gates (author-stated limitation; [2]):** Atomic motion dominates the measured CZ infidelity, and the present optical field of view limits array size. Better cooling and larger-array gate benchmarking could test the projected fidelity gains and whether cryogenic suppression also reduces correlated errors during parallel operations.
-- **Finite-size critical behaviour (author-stated limitation; [3]):** The experimental circuits are too shallow to be Haar-random, and mitigation/measurement overhead is substantial. Larger and deeper circuit families with improved shot allocation could test how the effective critical angle approaches its large-system limit.
-- **Background-limited low-energy light-by-light search (author-stated limitation; [5]):** The authors identify constrained lens placement, sub-specification laser operation, and imperfect diagnostic/background correlation. Optimizing the beamline and repeating the measurement with improved diagnostics could test whether sensitivity can move from the present bound toward the QED-scale signal.
-- **Neutrino–argon interaction modelling (author-stated result; [6]):** No tested generator describes all three reported imbalance distributions. New measurements with improved flux constraints and detector-response control, together with nuclear-model updates, could identify which interaction ingredients drive the transverse-momentum discrepancy.
-- **Dimensional extension of scale-free modes (author-stated extension; [7]):** The experiment establishes the linear envelope in 1D; the 2D corner-mode construction is a generalization. Direct 2D measurements across controlled perturbations could test whether the predicted orthogonal linear decays survive realistic disorder and imperfect tricritical tuning.
+- **Realistic fault-tolerant resource assumptions — paper 1 (authors' stated assumption):** The no-bit-flip baseline requires an approximately century-long bit-flip time. A useful next step is a full resource sweep using measured, correlated error channels and decoder latency from a specified device, comparing the paper's concatenated-code alternative with the baseline.
+- **Cryogenic gate infidelity — paper 2 (authors' error budget):** Atomic motion dominates the measured error. Improved cooling and repeated benchmarking across atom-pair geometries could test how much of the projected fidelity gain survives in a larger, repeatedly operated array.
+- **Finite-temperature limits on the pairing result — paper 3 (authors' stated limitation):** The sign problem restricts stronger-coupling, low-temperature simulations and the largest-lattice checks. Follow-up work could improve controlled thermodynamic extrapolations or use complementary unbiased methods, then compare the predicted phonon-frequency and doping dependence with spectroscopy and pairing measurements in candidate materials.
+- **CMB lensing and neutrino-prior dependence — paper 4 (authors' stated model dependence):** Independent likelihood analyses that vary neutrino-mass priors and lensing systematics, and add newer CMB/lensing data, could determine which part of the inferred $S_8$ difference is robust to those choices.
+- **XENONnT $^{14}$C-background sensitivity — paper 5 (authors' stated issue):** Refit the solar-neutrino spectrum with independently constrained $^{14}$C contamination and additional exposure, then propagate that background uncertainty through the electromagnetic-property limits. This would test the robustness of the interpretation without treating the mild excess as a discovery.
 
 ## Takeaway
 
-The batch's strongest community-attention signal is quantum information, where a resource estimate sits alongside three distinct hardware demonstrations. The headline estimates and observed transitions remain conditional on demanding noise models, finite-size analysis, and error mitigation; the EuXFEL and SBND papers likewise sharpen measurement constraints without claiming detections beyond their evidence.
+The most visible signal in this batch is a two-sided push on quantum computing: realistic algorithm-level resource accounting and improved physical gate benchmarks. Alongside it, a numerical superconductivity result and two data-reanalysis papers offer testable leads, but they remain conditional on model, noise, prior, or background assumptions; none alone establishes broad consensus or a new discovery.
 
 ## Method and sources
 
-- **Window and snapshot:** daily; exact window 2026-10-30 through 2026-10-30, corresponding to the latest arXiv announcement batch dated Friday 30 October 2026. The run was on Sunday 1 November, with no newer regular batch. Snapshot time: 2026-11-01 17:34:18 UTC.
-- **Archive coverage:** checked the latest-batch listings for `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. The 11 archive pages contained 1,178 listings before cross-list deduplication; the arXiv API returned metadata for 894 unique IDs. All seven selected records are v1 new submissions in the batch; no revision is presented as a new paper.
-- **Ranking inference:** arXiv supplies no official trending chart. SciRate describes its service as showing the highest-ranked new papers; its live [Top arXiv papers](https://scirate.com/) feed supplied the community-attention signal for the first four entries. The cryogenic-gate paper also received separate discussion at [Quantum Crier](https://quantumcrier.com/posts/bfd9bbe5.html) and the [Quantum Research Center](https://quantumresearch.center/news/papers/). The remaining entries were included for concrete measurements, explicit constraints, and/or cross-subfield relevance; no numeric trend score was constructed.
-- **Citation evidence:** Semantic Scholar citation metadata were not used: the Graph API request was rate-limited (HTTP 429), so citation totals and age-normalized momentum could not be checked. The configured `web_extract` backend was unavailable; arXiv metadata and abstracts were therefore checked with the arXiv API and direct abstract pages. Full text was inspected for the top three (PDF for [2610.37839](https://arxiv.org/pdf/2610.37839v1), HTML for [2610.40329](https://arxiv.org/html/2610.40329v1) and [2610.38148](https://arxiv.org/html/2610.38148v1)); all selected abstract pages were directly checked.
-- **Sources:** arXiv recent listings ([physics](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), [quant-ph](https://arxiv.org/list/quant-ph/recent)); paper-specific abstract links above; [SciRate about](https://scirate.com/about); [SciRate feed](https://scirate.com/); [Quantum Crier](https://quantumcrier.com/posts/bfd9bbe5.html); [Quantum Research Center](https://quantumresearch.center/news/papers/).
+- **Window:** daily, 2026-10-30 through 2026-10-30. Snapshot: 2026-11-02 01:27:20 UTC. Because no 2 November announcement was available at the snapshot, the report uses the preceding Friday batch. All selected papers were new submissions in that batch, not revisions.
+- **Archive coverage:** checked the official arXiv “new” pages for `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`, including cross-submission sections. The pages contained 830 new-submission placements and 348 cross-list placements; after deduplication, 894 versionless IDs remained. Replacement entries were excluded. Category pages: [physics](https://arxiv.org/list/physics/new), [astro-ph](https://arxiv.org/list/astro-ph/new), [cond-mat](https://arxiv.org/list/cond-mat/new), [gr-qc](https://arxiv.org/list/gr-qc/new), [hep-ex](https://arxiv.org/list/hep-ex/new), [hep-lat](https://arxiv.org/list/hep-lat/new), [hep-ph](https://arxiv.org/list/hep-ph/new), [hep-th](https://arxiv.org/list/hep-th/new), [nucl-ex](https://arxiv.org/list/nucl-ex/new), [nucl-th](https://arxiv.org/list/nucl-th/new), [quant-ph](https://arxiv.org/list/quant-ph/new).
+- **Verification and ranking:** selected IDs, v1 versions, UTC timestamps, categories, authors, abstracts, and canonical links were checked against arXiv's Atom API and each official abstract page. The top three papers' full text was inspected where practical: the 128-page Shor paper via PDF text extraction, and the cryogenic-gate and Hubbard papers via arXiv HTML. Ranking signals were the SciRate community listing, a GitHub experiment-index addition, third-party daily arXiv curation, cross-listing, and concrete result types. No citation totals are reported; a usable Semantic Scholar citation snapshot was unavailable, so citation momentum did not influence the order. `web_extract` was unavailable in this runtime; direct official arXiv pages/API and full-text routes were used instead.
+- **Attention and curation sources:** [SciRate Top arXiv papers](https://scirate.com/); [quantum-experiment index issue #590](https://github.com/francois-marie/awesome-quantum-computing-experiments/issues/590); [DailyArXiV, 30 October](https://rhysyt.github.io/DailyArXiV/Main.html); [Academus astrophysics listings](https://academ.us/list/astro-ph/); [Antonio Marrone's 30 October neutrino digest](https://home.ba.infn.it/~marrone/highlights/2026-10-30.html).
+- **Selected arXiv records:** [2610.37839](https://arxiv.org/abs/2610.37839), [2610.40329](https://arxiv.org/abs/2610.40329), [2610.37746](https://arxiv.org/abs/2610.37746), [2610.37752](https://arxiv.org/abs/2610.37752), [2610.38734](https://arxiv.org/abs/2610.38734).
+- **Interpretation:** “Notable recent papers” is more accurate than a measured popularity ranking for most entries. The external lists and digest are evidence of curation, not independent scientific validation. The date labels in the arXiv API are first-submission timestamps; the batch date comes from the official `new` listings.

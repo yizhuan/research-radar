@@ -8,289 +8,191 @@
     "announcement_batch_date": "2026-10-30",
     "uses_prior_announcement_batch": true,
     "submission_date": "2026-10-29",
-    "snapshot_utc": "2026-11-01T01:10:10Z"
+    "snapshot_utc": "2026-11-02T01:12:21Z"
   },
   "date": "2026-10-30",
   "title": "arXiv AI — Friday, 30 October 2026",
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-10-30.md",
-  "entry_count": 10,
+  "entry_count": 5,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; this ordering is inferred. Citation evidence is limited for these very recent papers. Semantic Scholar Graph showed zero citationCount and influentialCitationCount for the ten selected papers at the snapshot.",
+  "global_caveat": "arXiv has no official trending chart; this ordering is inferred from limited independent discussion, venue/artifact signals, cross-category relevance, and reported evaluation scope. Citation evidence is sparse for papers this recent, and no citation totals or velocities were used.",
   "candidate_pool": {
-    "unique_versionless_ids": 1003,
-    "new_submissions_in_api_window": 595,
-    "category_page_counts_including_updates_and_crosslists": {
-      "cs.AI": 392,
-      "cs.LG": 372,
-      "stat.ML": 54,
-      "cs.CL": 175,
-      "cs.CV": 233,
-      "cs.RO": 129,
-      "cs.NE": 12,
-      "cs.MA": 33
-    },
+    "api_max_results": 200,
+    "candidate_pool_complete": false,
     "category_query": "cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA",
-    "selection_note": "Category listings overlap through cross-listing and include revisions. The shortlist is relevance-focused and not a popularity or frequency ranking."
+    "core_categories_present": ["cs.AI", "cs.LG", "stat.ML", "cs.CL", "cs.CV", "cs.RO", "cs.NE", "cs.MA"],
+    "selection_note": "One broad query returned the 200 newest entries and included all eight configured categories, but it is recency-truncated rather than a complete enumeration of the announcement batch. Each selected abstract page was verified."
   },
   "themes": [
     {
-      "title": "Agent verification is trajectory- and evidence-centric",
-      "summary": "Prefix Executability checks intermediate tool-call validity; VeriCUA gathers evidence; EnvOS tests response to mid-task changes and grader soundness. This is a shared evaluation focus, not one common architecture.",
-      "refs": ["2610.40444", "2610.40578", "2610.40246"]
+      "title": "Agent evaluation is shifting from final answers toward process evidence",
+      "summary": "VeriCUA gathers evidence about task completion, while Prefix Executability checks validity of intermediate tool actions. This is a recurring evaluation concern, not proof of one shared method.",
+      "refs": ["2610.40578", "2610.40444"]
     },
     {
-      "title": "Multi-agent reasoning meets serving systems",
-      "summary": "EpiAgent studies beliefs about other agents for action planning; MAServeBench models collaboration-generated workloads for serving hardware.",
+      "title": "Multi-agent systems are studied at decision and infrastructure levels",
+      "summary": "EpiAgent models beliefs about other agents for action selection; MAServeBench studies how collaboration changes serving workloads and hardware demand.",
       "refs": ["2610.40227", "2610.40293"]
     },
     {
-      "title": "Embodied work spans simulation scale and model fidelity",
-      "summary": "Gym-Anything uses coding agents to build and audit robot simulations; world2vec learns latent dynamics intended to capture system behavior more faithfully.",
-      "refs": ["2610.40565", "2610.40637"]
-    },
-    {
-      "title": "Resource constraints are explicit experimental variables",
-      "summary": "The looped-transformer study tests model size, training compute, and decoding; TextSeal2 evaluates watermark detection under speculative decoding; Rethinking Pre-pretraining compares compute-matched training choices.",
-      "refs": ["2610.40325", "2610.40613", "2610.40051"]
+      "title": "Confidence enters the reinforcement-learning signal",
+      "summary": "SCARL adjusts RLVR advantages to account for confidence/outcome mismatch; this is an isolated signal in the selected set rather than a corpus-wide shift.",
+      "refs": ["2610.40407"]
     }
   ],
   "open_problems": [
     {
       "kind": "author-stated limitation and synthesized direction",
-      "title": "Executable prefixes under partial observability",
-      "problem": "Prefix Executability assumes explicit schemas, preconditions, and benchmark-visible state, and does not certify semantic correctness or safety.",
-      "direction": "Test learned state estimation, matched schema-constrained decoding and repair controls, repeated seeds, and additional domains.",
-      "refs": ["2610.40444"]
-    },
-    {
-      "kind": "author-stated limitation and synthesized direction",
-      "title": "Verifier cost and missing evidence",
-      "problem": "VeriCUA reports high tool/model-call cost and abstention when recordings do not contain the needed evidence.",
-      "direction": "Measure accuracy–coverage–cost curves under fixed budgets and test lightweight instrumentation that reduces abstention without creating false confidence.",
+      "title": "Verification under partial observability",
+      "problem": "VeriCUA can be costly and abstains when recorded evidence is missing.",
+      "direction": "Measure accuracy–coverage–cost trade-offs under fixed budgets and test whether lightweight instrumentation reduces abstention without making unsupported verdicts more confident.",
       "refs": ["2610.40578"]
     },
     {
       "kind": "author-stated limitation and synthesized direction",
-      "title": "Simulation breadth and real-world transfer",
-      "problem": "Gym-Anything identifies broader physical-work coverage as future work; the current evaluation is simulated.",
-      "direction": "Expand held-out material/task families and test policies on corresponding real tasks to measure transfer from audited simulation.",
-      "refs": ["2610.40565"]
+      "title": "Limits of executable-prefix checks",
+      "problem": "Prefix Executability can miss hidden-state constraints and underspecified intent, reject executable alternatives, and incur validation cost.",
+      "direction": "Test with hidden state, varied schemas, repair policies, and cost-matched baselines across additional environments.",
+      "refs": ["2610.40444"]
     },
     {
       "kind": "author-stated limitation and synthesized direction",
-      "title": "Dynamic environment robustness",
-      "problem": "EnvOS focuses on stale information, results vary by model and interface, and one reported insurance result is not significant after multiple-test correction.",
-      "direction": "Run larger balanced studies varying change type, timing, notice, and interface with preregistered correction-aware comparisons.",
-      "refs": ["2610.40246"]
+      "title": "Production serving coverage",
+      "problem": "MAServeBench identifies multi-replica and disaggregated serving as extensions beyond the evaluated workflows and setups.",
+      "direction": "Add placement, routing, queueing, and state-transfer effects while measuring complete-task deadlines as well as request-level throughput.",
+      "refs": ["2610.40293"]
     },
     {
       "kind": "synthesized direction tied to reported setup",
       "title": "Strategic generalization",
-      "problem": "EpiAgent reports gains in mixed and competitive scenarios, but the abstract does not establish transfer to unseen opponents or information structures.",
-      "direction": "Test held-out game rules and opponent populations, measuring belief calibration as well as task reward.",
+      "problem": "EpiAgent's reported experiments center on Bargaining and Kuhn Poker; transfer across unseen rules or opponents is not established.",
+      "direction": "Test held-out rules and opponent populations, reporting belief calibration alongside task reward.",
       "refs": ["2610.40227"]
+    },
+    {
+      "kind": "author-stated limitation and synthesized direction",
+      "title": "Broader RLVR regimes",
+      "problem": "SCARL has not tested shaped or continuous rewards, larger backbones, or inference-time use of its confidence signal.",
+      "direction": "Replicate on non-mathematical tasks and larger models, then test whether confidence helps abstention or sample selection.",
+      "refs": ["2610.40407"]
     }
   ],
   "sections": [
     {
-      "id": "2610.40444",
-      "kind": "paper",
-      "title": "Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success",
-      "rank": 1,
-      "url": "https://arxiv.org/abs/2610.40444",
-      "arxiv_id": "2610.40444",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T16:58:04Z",
-      "categories": ["cs.AI", "cs.CL"],
-      "authors": ["Amir H. Rezaeian", "Weiyi Sun", "Yassine Benajiba", "Dan Roth"],
-      "themes": ["Evaluation & benchmarks", "Agents & reasoning"],
-      "abstract": "Proposes trajectory-level metrics for whether tool-call prefixes remain executable, and finds that final-success rankings can hide invalid intermediate execution while plan checking can improve prefix reliability.",
-      "evidence_for_ranking": "The manuscript identifies NeurIPS 2026, Datasets and Benchmarks Track; a matching NeurIPS poster and an independent technical explainer are checkable external signals. Its two-category placement and three-benchmark audit strengthen its relevance to agent evaluation.",
-      "claimed_contribution": "The authors introduce Prefix Executability Curves, First-Error Depth, Trajectory Executability Rate, AUC-PEC, and Recovery Rate to evaluate trajectory validity beyond terminal success.",
-      "unique_caveat": "The authors describe this as an audit, not a complete leaderboard: BFCL-v3 and ToolSandbox each use 200 sampled tasks, and tau-cubed coverage is limited to Airline/Retail base splits. The metrics assume explicit schemas and benchmark-visible state and do not certify semantic correctness, safety, privacy, or fairness.",
-      "announcement_type": "new submission",
-      "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40444"},
-        {"title": "NeurIPS poster", "url": "https://neurips.cc/virtual/2026/poster/139170"},
-        {"title": "Independent technical explainer", "url": "https://learnaivisually.com/ai-explained/prefix-executability-first-invalid-tool-call"}
-      ]
-    },
-    {
       "id": "2610.40578",
       "kind": "paper",
       "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
-      "rank": 2,
+      "rank": 1,
       "url": "https://arxiv.org/abs/2610.40578",
       "arxiv_id": "2610.40578",
       "arxiv_version": "v1",
       "published": "2026-10-29T17:45:26Z",
+      "announcement_batch_date": "2026-10-30",
       "categories": ["cs.AI", "cs.CL", "cs.CV"],
       "authors": ["Qiushi Sun", "Da Yu", "Alexander Knop", "Amer Sinha", "Lingpeng Kong", "Ben Kao", "Ravi Kumar", "Pritish Kamath"],
       "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "Introduces a platform-agnostic computer-use-agent verifier that actively gathers GUI or code evidence and reports improved agreement with reference labels across offline and online evaluations.",
-      "evidence_for_ranking": "Cross-listed across three core AI categories; the paper reports offline and online tests across platforms, and an independent arXiv TL;DR page also summarizes the work. Ranked for this breadth and concrete evaluation evidence, not for presumed readership.",
-      "claimed_contribution": "The authors use rubric-guided exploration and explicit evidence rules to verify tasks from retained trajectories or accessible post-execution state.",
-      "unique_caveat": "The authors report that verification can require tens of tool and model calls per trajectory—about an order of magnitude more than a one-call judge. Offline verification abstains when recordings lack evidence, while online access helps only in instrumentable environments.",
+      "abstract": "Introduces a platform-agnostic verifier that actively gathers GUI or code evidence to assess computer-using-agent task completion, reporting improved agreement with reference labels across offline and online settings.",
+      "evidence_for_ranking": "An independent practitioner explainer appeared on 2026-10-31, and a separate GitHub harness explicitly implements offline grading for VeriCUA; its three-way core-category cross-listing reinforces topical breadth.",
+      "claimed_contribution": "The authors combine rubric-guided exploration, GUI/code checks, and explicit evidence rules in a shared online/offline verification procedure.",
+      "unique_caveat": "The authors report tens of tool and model calls per trajectory—about an order of magnitude more than a single-call judge. Offline verification abstains when recordings lack evidence, and online checks require instrumentable environments.",
       "announcement_type": "new submission",
       "refs": [
         {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40578"},
-        {"title": "arXiv TL;DR", "url": "https://arxivtldr.org/abs/2610.40578"}
+        {"title": "Independent practitioner explainer", "url": "https://sentx.ai/blog/daily-2026-10-31-how-do-i-verify-what-my-computer-using-agent-actually-did-not-just-whether-/"},
+        {"title": "Offline grading harness", "url": "https://github.com/tatra-labs/done-or-not"}
       ]
-    },
-    {
-      "id": "2610.40565",
-      "kind": "paper",
-      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
-      "rank": 3,
-      "url": "https://arxiv.org/abs/2610.40565",
-      "arxiv_id": "2610.40565",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T17:42:32Z",
-      "categories": ["cs.RO", "cs.AI", "cs.LG"],
-      "authors": ["Pranjal Aggarwal", "Sean Welleck"],
-      "themes": ["Robotics & control", "Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "Presents a framework in which coding agents build and audit realistic robot simulations, yielding RoboWorld and several learning approaches that improve performance on its tasks.",
-      "evidence_for_ranking": "Cross-listed across robotics, AI, and machine learning; the paper reports 25 simulations and 200 train/test environments, and a public project site provides the benchmark and code. The category breadth and reproducible artifact are the main placement signals.",
-      "claimed_contribution": "The authors automate simulation creation through a coding-agent creation/audit loop and report that privileged-state teaching, repeated attempts, and generated demonstrations improve simulated-task performance.",
-      "unique_caveat": "The evidence is on the paper's 25-simulation RoboWorld suite; real-world transfer is a motivation, not established by these experiments. The paper also says its current coverage should be broadened.",
-      "announcement_type": "new submission",
-      "refs": [
-        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40565"},
-        {"title": "Project and benchmark", "url": "https://gym-anything.github.io/robotics/"}
-      ]
-    },
-    {
-      "id": "2610.40613",
-      "kind": "paper",
-      "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2610.40613",
-      "arxiv_id": "2610.40613",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T17:54:12Z",
-      "categories": ["cs.CR", "cs.AI", "cs.CL"],
-      "authors": ["Tom Sander", "Pierre Fernandez", "Itai Gat", "Haiming Bao", "Jiaxin Shi", "Jason Park", "Valeriu Lacatusu", "Sylvestre-Alvise Rebuffi", "Hongyan Chang", "Hady Elsahar", "Tomáš Souček", "Tuan Tran", "Surya Parimi", "Alexandre Mourachko"],
-      "themes": ["Safety & alignment", "Efficient inference & systems"],
-      "abstract": "Presents a watermark designed to retain detection under speculative decoding without changing the target-model output distribution, with improved detection over two comparators in the reported tests.",
-      "evidence_for_ranking": "Three-category cross-listing spans AI, language, and security; the abstract gives controlled comparisons at matched diversity and speculative-decoding acceptance rates, evaluated on three LLMs.",
-      "claimed_contribution": "The authors combine watermark keys through a Gaussian-copula construction and use memoryless exponential races to preserve the watermark through speculative decoding.",
-      "unique_caveat": "The reported evaluation uses three LLMs; the abstract does not establish that the same detection gains hold across a broader range of models and deployment settings.",
-      "announcement_type": "new submission",
-      "refs": [{"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40613"}]
-    },
-    {
-      "id": "2610.40227",
-      "kind": "paper",
-      "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2610.40227",
-      "arxiv_id": "2610.40227",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T15:05:08Z",
-      "categories": ["cs.AI", "cs.CL", "cs.MA"],
-      "authors": ["Xuanfa Jin", "Xinyu Cui", "Zhijian Ma", "Xue Yan", "Jian Zhao", "Haifeng Zhang", "Jun Wang"],
-      "themes": ["Agents & reasoning", "Training & adaptation"],
-      "abstract": "Proposes LLM agents with a learnable belief layer and alternating self-play optimization, reporting gains over prompting and reinforcement-learning baselines in mixed and competitive scenarios.",
-      "evidence_for_ranking": "It is cross-listed in three core categories, including multi-agent systems, and reports comparisons across both mixed and competitive interactions plus analyses of belief accuracy and action planning.",
-      "claimed_contribution": "The authors separate belief updating from action planning and jointly optimize them through epistemic self-play using prediction of later observations as an intrinsic reward.",
-      "unique_caveat": "The abstract's empirical claims concern the paper's mixed and competitive scenarios; broad transfer to other strategic settings or opponent populations is not established there.",
-      "announcement_type": "new submission",
-      "refs": [{"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40227"}]
-    },
-    {
-      "id": "2610.40637",
-      "kind": "paper",
-      "title": "world2vec: Mechanistic world models through latent dynamics learning",
-      "rank": 6,
-      "url": "https://arxiv.org/abs/2610.40637",
-      "arxiv_id": "2610.40637",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T17:58:23Z",
-      "categories": ["cs.LG"],
-      "authors": ["Tobias Schmidt", "Rodrigo Gonzalez Laiz", "Krisztián Szuppinger", "Steffen Schneider"],
-      "themes": ["Robotics & control", "Interpretability"],
-      "abstract": "Introduces reward-free latent-dynamics learning intended to make world models more faithful and interpretable, reporting continuous pixel-control results and system identification over 71 attractors with fewer parameters than three named baselines.",
-      "evidence_for_ranking": "The abstract reports a 71-attractor system-identification benchmark and comparisons with DreamerV3, TD-MPC2, and LeWM, including a claimed order-of-magnitude parameter reduction; this is a technically concrete signal despite single-category placement.",
-      "claimed_contribution": "The authors train a mechanistic latent dynamics model directly from observations and actions without reward information.",
-      "unique_caveat": "Reported evidence focuses on continuous pixel-control environments and the 71-attractor benchmark; generality beyond these task families is not established by the abstract.",
-      "announcement_type": "new submission",
-      "refs": [{"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40637"}]
-    },
-    {
-      "id": "2610.40246",
-      "kind": "paper",
-      "title": "EnvOS: Auditing Computer-Use Agents When the World Moves On : Phenomenon-Based Task Construction, Certification, and Evidence-Based Evaluation",
-      "rank": 7,
-      "url": "https://arxiv.org/abs/2610.40246",
-      "arxiv_id": "2610.40246",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T15:17:29Z",
-      "categories": ["cs.AI", "cs.HC"],
-      "authors": ["Ankush Kadu", "Athira Gopal", "Niharika Singh", "Arpit Jain", "Aswanth Krishnan"],
-      "themes": ["Evaluation & benchmarks", "Agents & reasoning"],
-      "abstract": "Introduces a framework for generating and certifying software environments that change during agent tasks, and evaluates how agents respond to stale information while auditing the graders themselves.",
-      "evidence_for_ranking": "The authors test environment changes, task solvability, and grader quality, reporting controlled clinic-booking and insurance scenarios and a separate corrupted-episode audit. The paper supplies a distinct stress test for computer-use-agent evaluation.",
-      "claimed_contribution": "EnvOS certifies mid-task changes before execution and independently rechecks episode verdicts against archived evidence.",
-      "unique_caveat": "The abstract focuses on stale-information changes. It reports that the insurance-claim improvement for one model was not significant after correcting for all tests, so those results are scenario- and model-dependent.",
-      "announcement_type": "new submission",
-      "refs": [{"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40246"}]
-    },
-    {
-      "id": "2610.40325",
-      "kind": "paper",
-      "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
-      "rank": 8,
-      "url": "https://arxiv.org/abs/2610.40325",
-      "arxiv_id": "2610.40325",
-      "arxiv_version": "v1",
-      "published": "2026-10-29T15:56:09Z",
-      "categories": ["cs.LG", "cs.AI"],
-      "authors": ["Chanakya Ekbote", "Artidoro Pagnoni", "Devendra Singh Sachan", "Shruti Bhosale", "Mike Lewis", "Maryam Fazel-Zarandi", "Shashank Rajput", "Sujan Kumar Gonugondla"],
-      "themes": ["Training & adaptation", "Efficient inference & systems"],
-      "abstract": "Studies weight sharing through repeated transformer loops across models up to 1B parameters and 155B training tokens, finding that benefits depend on compute constraints and that looping can slow decoding unless parallel designs preserve quality.",
-      "evidence_for_ranking": "The paper covers two core categories and provides broad scale comparisons—up to 1B parameters, 155B tokens, and 32 loops—across model-size, training-compute, and inference constraints.",
-      "claimed_contribution": "The authors compare loop placement and information flow, test loop-specific low-rank adapters, and propose a parallel-loop design whose quality improves when current-token and previous-token states are normalized separately.",
-      "unique_caveat": "The authors report that added loops can saturate, reverse, or become unstable; their original parallel formulation does not consistently retain ordinary-loop quality gains.",
-      "announcement_type": "new submission",
-      "refs": [{"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40325"}]
     },
     {
       "id": "2610.40293",
       "kind": "paper",
       "title": "MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Collaboration Workloads",
-      "rank": 9,
+      "rank": 2,
       "url": "https://arxiv.org/abs/2610.40293",
       "arxiv_id": "2610.40293",
       "arxiv_version": "v1",
       "published": "2026-10-29T15:42:15Z",
+      "announcement_batch_date": "2026-10-30",
       "categories": ["cs.MA"],
       "authors": ["Shengxuan Qiu", "Haochen Huang", "Shuzhang Zhong", "Zizhuo Fu", "Zebin Yang", "Jianming Tong", "Meng Li"],
-      "themes": ["Efficient inference & systems", "Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "Introduces a benchmark that models collaboration patterns as configurable multi-agent serving workloads and links realized operations to latency and hardware behavior.",
-      "evidence_for_ranking": "This is a focused contribution in the configured multi-agent category. Its composable workload stages and hierarchical traces target a concrete gap between isolated request benchmarks and dependent agent workflows; the abstract links the benchmark to GPU/NPU measurements and reproducible comparisons.",
-      "claimed_contribution": "The authors make collaboration structure a configurable benchmark dimension and connect task completion measurements to serving execution and hardware behavior.",
-      "unique_caveat": "The benchmark is built around documented multi-agent workflows; conclusions about workloads outside those configurations require further coverage.",
+      "themes": ["Efficient inference & systems", "Evaluation & benchmarks", "Agents & reasoning"],
+      "abstract": "Presents a benchmark that makes multi-agent collaboration patterns configurable as serving workloads and links their realized operations to serving and GPU/NPU behavior.",
+      "evidence_for_ranking": "An independent Agents Watch research roundup discussed the paper on 2026-10-30, and the authors provide benchmark code. The work addresses a concrete gap between isolated request traces and dependency-structured agent workloads.",
+      "claimed_contribution": "The authors introduce composable collaboration stages and dependency-preserving traces for controlled comparisons, connecting serving execution to task completion and hardware measurements.",
+      "unique_caveat": "The evaluation is based on documented workflows and reported serving/hardware setups; the authors frame multi-replica and disaggregated production serving as a future extension.",
       "announcement_type": "new submission",
-      "refs": [{"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40293"}]
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40293"},
+        {"title": "Agents Watch roundup", "url": "https://agentswatch.dev/daily/2026-10-30/"},
+        {"title": "Benchmark code", "url": "https://github.com/ShengxuanQiu/MAServeBench"}
+      ]
     },
     {
-      "id": "2610.40051",
+      "id": "2610.40444",
       "kind": "paper",
-      "title": "Rethinking Pre-pretraining",
-      "rank": 10,
-      "url": "https://arxiv.org/abs/2610.40051",
-      "arxiv_id": "2610.40051",
+      "title": "Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2610.40444",
+      "arxiv_id": "2610.40444",
       "arxiv_version": "v1",
-      "published": "2026-10-29T13:45:58Z",
-      "categories": ["cs.CL", "cs.AI"],
-      "authors": ["Alexander Stern", "Tim Rocktäschel", "Acyr Locatelli", "Laura Ruis"],
-      "themes": ["Training & adaptation", "Data & synthetic data"],
-      "abstract": "Reports that four synthetic pre-pretraining curricula do not beat compute-matched natural-language training across three tested regimes, while some gains under extra compute persist only at small natural-language budgets.",
-      "evidence_for_ranking": "The authors test four synthetic curricula under three compute/data regimes and probe initialization sensitivity, forgetting, and interleaving; this broad controlled comparison makes it a useful counterpoint to positive synthetic-data claims.",
-      "claimed_contribution": "The paper argues that synthetic pre-pretraining as a distinct compute-sharing stage has limited benefit in its matched experiments and examines how initialization and later natural-language training affect reported gains.",
-      "unique_caveat": "The result is bounded by the four curricula and model/training regimes studied; the paper itself reports residual gains when extra compute is allocated at small natural-language budgets.",
+      "published": "2026-10-29T16:58:04Z",
+      "announcement_batch_date": "2026-10-30",
+      "categories": ["cs.AI", "cs.CL"],
+      "authors": ["Amir H. Rezaeian", "Weiyi Sun", "Yassine Benajiba", "Dan Roth"],
+      "themes": ["Evaluation & benchmarks", "Agents & reasoning"],
+      "abstract": "Defines trajectory-level measures for whether every prefix of a tool-call sequence remains executable, showing that final-success rankings can conceal invalid intermediate actions and that plan checking can improve prefix reliability.",
+      "evidence_for_ranking": "The arXiv record says the paper was accepted to NeurIPS 2026; it evaluates the protocol across BFCL-v3, ToolSandbox, and selected tau-cubed-bench splits. The venue signal and multi-benchmark relevance support its placement, though neither is a readership measure.",
+      "claimed_contribution": "The authors propose Prefix Executability Curves, First-Error Depth, Trajectory Executability Rate, normalized AUC-PEC, and Recovery Rate to complement terminal task success.",
+      "unique_caveat": "The authors note that the verifier can miss hidden-state constraints or underspecified intent, reject executable alternatives, and add inference cost; results also depend on benchmark/environment configuration.",
       "announcement_type": "new submission",
-      "refs": [{"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40051"}]
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40444"}
+      ]
+    },
+    {
+      "id": "2610.40227",
+      "kind": "paper",
+      "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2610.40227",
+      "arxiv_id": "2610.40227",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T15:05:08Z",
+      "announcement_batch_date": "2026-10-30",
+      "categories": ["cs.AI", "cs.CL", "cs.MA"],
+      "authors": ["Xuanfa Jin", "Xinyu Cui", "Zhijian Ma", "Xue Yan", "Jian Zhao", "Haifeng Zhang", "Jun Wang"],
+      "themes": ["Agents & reasoning", "Training & adaptation"],
+      "abstract": "Gives LLM agents a learnable layer for beliefs about other agents' private information and alternates belief updating with action planning through self-play, reporting gains over prompting and RL baselines in mixed and competitive settings.",
+      "evidence_for_ranking": "It is cross-listed in three core AI categories, including multi-agent systems, and tests explicit belief learning in both mixed and competitive interactions. Independent attention signals were not established in the sources checked, so it is included as a relevant recent contribution rather than a popularity claim.",
+      "claimed_contribution": "The authors formulate belief updating and action planning as coupled stages, optimized by epistemic self-play with an intrinsic reward for predicting subsequent observations.",
+      "unique_caveat": "Full-text experiments center on Bargaining and Kuhn Poker; transfer to broader strategic environments, unseen opponent populations, or real-world interactions is not established.",
+      "announcement_type": "new submission",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40227"},
+        {"title": "arXiv PDF", "url": "https://arxiv.org/pdf/2610.40227"}
+      ]
+    },
+    {
+      "id": "2610.40407",
+      "kind": "paper",
+      "title": "SCARL: Sequence Confidence-Aligned Reinforcement Learning",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2610.40407",
+      "arxiv_id": "2610.40407",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T16:38:11Z",
+      "announcement_batch_date": "2026-10-30",
+      "categories": ["cs.LG", "cs.AI"],
+      "authors": ["Zhenghong Ke", "Jingbo Zhou", "Hua Wu"],
+      "themes": ["Training & adaptation", "Evaluation & benchmarks"],
+      "abstract": "Reshapes group-relative RLVR advantages according to sequence confidence, reporting improved Pass@32 and gains in 14 of 16 tested estimator/backbone settings while preserving policy entropy.",
+      "evidence_for_ranking": "The authors report comparisons against nine compute-matched methods and unchanged transfer across four estimators and four backbones, with code linked from the abstract. The breadth of controlled experiments makes it a technically notable inclusion; independent attention evidence was not found in the sources checked.",
+      "claimed_contribution": "SCARL adjusts—but does not reverse—sample advantages using a group-relative confidence/outcome alignment gap, aiming to improve confidence calibration and reduce entropy collapse without extra model passes.",
+      "unique_caveat": "The authors limit experiments to competition mathematics with binary verifiable rewards and backbones no larger than 4B parameters; shaped rewards and inference-time uses of the confidence signal remain unexplored.",
+      "announcement_type": "new submission",
+      "refs": [
+        {"title": "arXiv abstract", "url": "https://arxiv.org/abs/2610.40407"},
+        {"title": "Code", "url": "https://github.com/kezhh163/scarl"}
+      ]
     }
   ]
 }

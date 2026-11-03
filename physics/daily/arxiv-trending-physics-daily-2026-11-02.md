@@ -1,144 +1,122 @@
-# arXiv Physics — 2 November 2026
+# arXiv physics daily — latest announcement batch: 2 November 2026
 
-Ten notable papers from the 2 November announcement batch, led by new neutrino and particle-physics constraints, driven and interacting quantum materials, and precision instrumentation. The agenda: start with the CMS long-lived-neutrino search and a light-induced graphene gap, then move through neutrino modeling, neutron-star inference, detector advances, and theory proposals. This is an inferred evidence-weighted ranking: arXiv supplies no official trending chart, and same-batch citation evidence is limited; it is not a readership or download ranking.
+Eight notable papers from the latest available batch, led by programmable quantum hardware and precision measurement. Spoken agenda: a fractional Chern insulator on a processor, silicon-qubit control/noise, a magnetic-noise validation, then optics, particle physics, and detector/quantum-platform results. This is an inferred ranking: arXiv publishes no official trending chart, and citation evidence is limited for such recent papers; this is not a most-read or most-downloaded list.
+
+Window: 2026-11-02 through 2026-11-02. The run snapshot was 2026-11-03 01:25:10 UTC. The latest arXiv recent pages still showed the 2 November announcement batch, so this daily report uses the prior batch.
 
 ## Top papers (ranked)
 
-### 1. [Search for long-lived heavy neutral leptons in signatures with one prompt muon and a secondary vertex formed by two non-prompt muons in proton-proton collisions at $\sqrt{s}$ = 13 and 13.6 TeV](https://arxiv.org/abs/2610.40911)
-- **Abstract:** CMS searches for heavy neutral leptons in W-boson decays using one prompt and two displaced muons in 13 and 13.6 TeV proton collisions; it finds no excess and sets mixing limits under the Majorana hypothesis.
-- **Authors:** CMS Collaboration
-- **arXiv:** `2610.40911v1` (published 2026-10-29T19:30:10Z; categories: `hep-ex`)
-- **Evidence for ranking:** Featured in Antonio Marrone’s 2 November arXiv digest; a CMS-collaboration search combines 2016–2018 and 2022 data and targets a long-lifetime, low-mass region with muon-system displaced vertices.
-- **Claimed result:** CMS reports no significant deviation from its control-sample background prediction and sets 95% confidence-level Majorana-HNL mixing limits for masses 1–5 GeV, with improved sensitivity at 2.5–4.2 GeV.
-- **Evidence type:** Experimental; CMS LHC proton-proton data totaling 138 fb$^{-1}$ at 13 TeV and 34.6 fb$^{-1}$ at 13.6 TeV.
-- **Caveat:** The quoted exclusion assumes Majorana HNLs; background transfer-factor uncertainties are sizable, especially for the 2022 sample.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
+### 1. [Preparation of a Laughlin-like fractional Chern insulator on a superconducting quantum processor](https://arxiv.org/abs/2610.41017)
+- **Abstract:** The authors prepare a bosonic Laughlin-like fractional Chern insulator and a two-quasihole state on an IBM superconducting processor, finding measured densities, correlations, and chiral currents consistent with the target states.
+- **Authors:** Kamil Dutkiewicz, Bárbara Andrade, Geza Giedke, Tobias Grass
+- **arXiv:** `2610.41017v1` (published 2026-10-29 21:56:38 UTC; categories: `quant-ph` (primary), `cond-mat.mes-hall`, `cond-mat.quant-gas`)
+- **Evidence for ranking:** Cross-listed across quantum information and two condensed-matter categories; the hardware demonstration also drew a topic-specific [Quantum Physics Papers X post](https://x.com/QuantumPapers/status/2117339972072063455). The post is an attention signal, not scientific validation.
+- **Claimed result:** The authors report preparation on an IBM Nighthawk 4×4 qubit patch of a four-boson FCI state and a three-boson state with two quasiholes; density/correlation measurements and reconstructed currents show the expected chiral pattern.
+- **Evidence type:** Experimental; quantum-circuit execution on IBM Nighthawk, with exact diagonalization and classical variational circuit optimization.
+- **Caveat:** The target states remain classically accessible at this 4×4 size, and the authors identify classical target-state preparation as a scalability limitation; this is not a demonstration of anyon braiding.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
+- **Themes:** Quantum information; Condensed matter & materials
 
-### 2. [Observation of light-induced Haldane gap in graphene](https://arxiv.org/abs/2610.42115)
-- **Abstract:** Time- and angle-resolved photoemission spectroscopy observes a Dirac gap in monolayer graphene only during circularly polarized driving, which the authors associate with a light-induced Haldane mass using Floquet theory.
-- **Authors:** Fei Wang, Xuanxi Cai, Wanying Chen, Xiao Tang, Jinze Li, et al.
-- **arXiv:** `2610.42115v1` (published 2026-10-30T17:49:52Z; categories: `cond-mat.mes-hall`)
-- **Evidence for ranking:** The paper reports a direct spectroscopic signature under circular, but not other, optical driving and combines time-resolved measurements with Floquet calculations; the full text describes its gap extraction and systematic estimate.
-- **Claimed result:** The authors report that the Dirac gap appears synchronously with the optical field and only under circular polarization; calculations associate it with dynamical time-reversal-symmetry breaking and Floquet Chern topology.
-- **Evidence type:** Experimental; time- and angle-resolved photoemission spectroscopy (TrARPES), interpreted with Floquet electronic-structure calculations.
-- **Caveat:** The directly measured quantity is the transient spectral gap; the Berry curvature and Chern characterization are inferred from Floquet calculations, and the gap uncertainty includes a momentum-window systematic.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Condensed matter & materials
+### 2. [Control-Noise Trade-offs in Industrially Integrated $^{28}$Si/SiGe Spin-1/2 Qubits](https://arxiv.org/abs/2610.41890)
+- **Abstract:** The authors compare industry-fabricated silicon spin qubits with a research-cleanroom reference and report near-99.99% primitive π/2-gate fidelities alongside a micromagnet-placement trade-off between noise sensitivity and drive efficiency.
+- **Authors:** Leon C. Camenzind, Ik Kyeong Jin, Yi-Hsien Wu, Akito Noiri, Kenta Takeda, et al.
+- **arXiv:** `2610.41890v1` (published 2026-10-30 15:33:36 UTC; categories: `quant-ph` (primary), `cond-mat.mes-hall`)
+- **Evidence for ranking:** Cross-listing bridges quantum information and mesoscopic physics; a [field-specific preprint meeting listing](https://preprints.kavlimeetings.org/2026/10/30/all/nano/delft/265383/) and the quantified gate/control results provide corroborating visibility and a concrete technical result.
+- **Claimed result:** The authors report primitive π/2-gate fidelities near 99.99% in Intel 300 mm-process devices, with reduced low-frequency noise and variability but weaker electrically driven spin-resonance gradients than the RIKEN reference.
+- **Evidence type:** Experimental; measurements on two nominally similar three-qubit Intel Si/SiGe devices, compared with a research-cleanroom reference device.
+- **Caveat:** The comparison covers a small device sample, not a processor-scale array; the paper also finds drive-dependent errors at lower Rabi frequencies, so the reported primitive-gate fidelity is not fault-tolerant processor performance.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
+- **Themes:** Quantum information; Condensed matter & materials
 
-### 3. [Phenomenological Chiral Effective Field Theory for Neutrino Event Generators](https://arxiv.org/abs/2610.40866)
-- **Abstract:** The authors build a gauge-invariant chiral effective-field-theory model for single-pion production and automate its path from Lagrangian to event generation, validating it against photoproduction and existing neutrino and electron-scattering data.
-- **Authors:** Zara Graham-Jones, Mareen Hoppe, Joshua Isaacson, Shirley Weishi Li, Miša Toman
-- **arXiv:** `2610.40866v1` (published 2026-10-29T18:41:31Z; categories: `hep-ph`)
-- **Evidence for ranking:** Featured in the 2 November arXiv digest; the work supplies an automated FeynRules/UFO/Sherpa pipeline and compares with multiple bubble-chamber, MINERvA, T2K, MicroBooNE, MiniBooNE, and electron-carbon datasets.
-- **Claimed result:** The authors present a systematically extendable resonance-region model with consistent spin-3/2 and gauge-invariant couplings, implemented from Lagrangian to simulated events.
-- **Evidence type:** Theoretical and computational; phenomenological chiral EFT implemented with FeynRules, UFO 2.0, and Sherpa and compared with existing scattering data.
-- **Caveat:** This is a model and validation exercise, not a new cross-section measurement; the authors note that nuclear single-pion datasets disagree in normalization beyond quoted uncertainties and no event generator describes them all together. Some low-statistics comparison data also have unassessed systematics.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
+### 3. [Magnetic Johnson noise from arbitrarily shaped conductors: experimental validation of the fluctuation-dissipation finite-element method](https://arxiv.org/abs/2610.42113)
+- **Abstract:** Using a SQUID gradiometer array, the authors find that a fluctuation-dissipation finite-element calculation reproduces measured magnetic Johnson-noise amplitudes and frequency dependence for conductors with complex shapes.
+- **Authors:** S. M. Clayton, Y. J. Kim, T. E. Chupp, A. Epstein, J. M. Feltman, et al.
+- **arXiv:** `2610.42113v1` (published 2026-10-30 17:49:20 UTC; categories: `physics.app-ph` (primary), `nucl-ex`, `physics.atom-ph`, `physics.bio-ph`, `physics.ins-det`)
+- **Evidence for ranking:** Cross-listed in five physics categories spanning applied physics, nuclear experiment, atomic physics, biological physics, and detectors; a [third-party technical summary](https://gist.science/paper/2610.42113) also surfaced. The breadth reflects method relevance, not independent confirmations.
+- **Claimed result:** The authors report agreement between SQUID-array measurements and COMSOL finite-element calculations for complex conductors, including noise amplitude and spectral shape; agreement at high frequency is weaker for a combined-gradiometer comparison.
+- **Evidence type:** Experimental; SQUID gradiometer measurements compared with COMSOL calculations for an aluminum plate and a commercial aluminum corner bracket.
+- **Caveat:** The sample temperature was not measured and typical conductivities were assumed; the combined-gradiometer comparison retains an unresolved high-frequency discrepancy.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
+- **Themes:** Instrumentation & detectors; Atomic, molecular & optical physics
 
-### 4. [A multi-wavelength view of PSR J0437-4715 with NICER and other missions: Radius measurements from far-ultraviolet to hard X-ray pulse profile modeling](https://arxiv.org/abs/2610.41846)
-- **Abstract:** Broadband pulse-profile modeling of PSR J0437−4715 using NICER and other observatories yields updated mass and radius estimates, which the authors combine with other pulsar measurements to constrain the dense-matter equation of state.
-- **Authors:** Pierre Stammler, Sebastien Guillot, Denis González-Caniulef, Isak Svensson, Anna L. Watts, et al.
-- **arXiv:** `2610.41846v1` (published 2026-10-30T15:01:07Z; categories: `astro-ph.HE`)
-- **Evidence for ranking:** The inference combines 2.56 Ms of NICER data with XMM-Newton, NuSTAR, Hubble far-UV observations, and radio-timing priors, producing a tightly stated mass-radius result with direct EOS relevance.
-- **Claimed result:** The authors report $M=1.377^{+0.038}_{-0.034}M_\odot$ and equatorial radius $R_{eq}=11.35^{+0.40}_{-0.39}$ km (68% credible intervals); combined with other pulsars, their inference excludes EOS models predicting radii above 12 km for all neutron-star masses at the 68% level.
-- **Evidence type:** Observational; Bayesian pulse-profile modeling of NICER, XMM-Newton, NuSTAR, and HST data with radio-timing priors.
-- **Caveat:** The inferred radius depends on the hot-spot, warm-surface, and non-thermal emission models and on informative mass, distance, and inclination priors; the authors discuss sensitivity to emission-model choices.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Astrophysics
+### 4. [Field-resolved observation and quantification of the instantaneous Kerr response in semiconductors](https://arxiv.org/abs/2610.42098)
+- **Abstract:** Field-resolved pump-probe measurements of germanium at 5 μm yield an instantaneous Kerr response and a nonlinear refractive index of $n_2=(0.87\pm0.16)\times10^{-17}$ m²/W.
+- **Authors:** Haifeng Lin, Hannes Kempf, Hinduja Bhuvanendran, Aitor De Andrés, Markus Ludwig, Nicolò Maccaferri
+- **arXiv:** `2610.42098v1` (published 2026-10-30 17:42:49 UTC; categories: `physics.optics` (primary), `cond-mat.mtrl-sci`)
+- **Evidence for ranking:** Cross-listed between optics and materials science, with a [topic-specific optics X post](https://x.com/ACWX/status/2117275203709350230); the directly time-resolved measurement and reported uncertainty provide a checkable result.
+- **Claimed result:** The authors find that the measured cross-phase modulation follows the pump envelope and disappears when pump and probe cease to overlap, supporting an instantaneous Kerr response under their conditions.
+- **Evidence type:** Experimental; field-resolved degenerate pump-probe spectroscopy of germanium at 5 μm.
+- **Caveat:** The result establishes the dominant contribution only for the tested germanium sample and experimental conditions; it does not establish the same balance of instantaneous and delayed effects in other semiconductors or regimes.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
+- **Themes:** Condensed matter & materials; Atomic, molecular & optical physics
 
-### 5. [The Yottascale at Tera-$Z$: Petascale SUSY?](https://arxiv.org/abs/2610.40821)
-- **Abstract:** The authors examine how future Tera-$Z$ gauge-coupling precision and proton-decay constraints affect minimal supersymmetric SU(5), finding markedly different implications at two and three loops.
-- **Authors:** Lukas Allwicher, Francisco N. C. Dahab, Christophe Grojean, Gabriel M. Salla, Lucine Tabatt
-- **arXiv:** `2610.40821v1` (published 2026-10-29T18:04:53Z; categories: `hep-ph`)
-- **Evidence for ranking:** Featured in the 2 November arXiv digest; it connects projected FCC-ee/Tera-$Z$ precision to GUT-scale running and exposes a sharp loop-order dependence in a defined minimal-SU(5) scenario.
-- **Claimed result:** In the authors’ nearly degenerate SUSY-spectrum scenario, the two-loop analysis points to a SUSY scale near 1 PeV, while the three-loop analysis appears to exclude the minimal model because the color-triplet Higgs mass is fixed by infrared parameters at one-loop GUT-threshold order.
-- **Evidence type:** Theoretical; renormalization-group and threshold calculations using present data and projected Tera-$Z$ and proton-decay constraints.
-- **Caveat:** These are conditional model projections, not measurements; conclusions depend on minimal SU(5), the assumed spectrum, and treatment of higher-loop and GUT-threshold corrections.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
-
-### 6. [Magnetic scattering experiments with an ultrashort pulsed soft X-ray source using iLGADs](https://arxiv.org/abs/2610.41611)
-- **Abstract:** The authors test iLGAD hybrid-pixel detectors with a laser-driven soft X-ray source and demonstrate time-synchronized magnetic small-angle X-ray scattering of a FeGd heterostructure, with higher photon-detection efficiency than a standard silicon sensor in the comparison.
-- **Authors:** L. Lunin, S. Li, A. Bergamaschi, P. Wernicke, D. Schick, et al.
-- **arXiv:** `2610.41611v1` (published 2026-10-30T11:48:50Z; categories: `physics.ins-det`)
-- **Evidence for ranking:** Quantitative detector performance is tied to a completed magnetic-scattering demonstration using few-picosecond X-ray pulses, rather than only a proposed sensor concept.
-- **Claimed result:** In the reported comparison, iLGAD sensors provide higher photon-detection efficiency and sensitivity than standard silicon sensors, and the experiment probes magnetic domains in FeGd; the abstract also reports single-photon detection at 400 eV with SNR above 5 and quantum efficiency above 85% at 250 eV.
-- **Evidence type:** Experimental; laser-driven soft X-ray measurements with iLGADs bump-bonded to MÖNCH readout chips, including a magnetic SAXS test.
-- **Caveat:** The scattering demonstration is a detector/source test on a FeGd heterostructure over a limited energy range, not a broad survey of detector performance across facilities or samples.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Instrumentation & detectors; Condensed matter & materials
-
-### 7. [Neutrino Oscillation in a Static Dihole Geometry](https://arxiv.org/abs/2610.41960)
-- **Abstract:** A two-flavor calculation in an equal-mass Majumdar–Papapetrou dihole spacetime finds that interference between neutrino paths can introduce sensitivity to individual masses and mass ordering for nonmaximal mixing.
-- **Authors:** Rogério Capobianco, Rafael C. R. de Lima
-- **arXiv:** `2610.41960v1` (published 2026-10-30T16:12:25Z; categories: `gr-qc`, `hep-ph`)
-- **Evidence for ranking:** Featured in the 2 November arXiv digest and cross-listed between gravitation and particle phenomenology; it makes a concrete, testable-in-principle prediction about how multiple lensed trajectories alter the oscillation phase.
-- **Claimed result:** Within the null approximation and symmetry-plane setup, the authors find path interference can make transition probabilities depend on individual neutrino masses and ordering, beyond the usual mass-squared-difference dependence for nonmaximal mixing.
-- **Evidence type:** Theoretical and computational; leading-order phase calculation and numerical geodesic integrals in an idealized two-black-hole geometry.
-- **Caveat:** The result depends on an equal-mass static dihole, a null-propagation approximation, two flavors, and selected source-detector paths; it is not a prediction for an observed astrophysical neutrino signal.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Cosmology & gravitation; Particle, nuclear & high-energy physics
-
-### 8. [A first look at strange-quark polarization in top-quark decays with CMS Open Data](https://arxiv.org/abs/2610.42143)
-- **Abstract:** Using 16.39 fb$^{-1}$ of public CMS data, the author makes a first end-to-end measurement of Lambda-baryon polarization in strange jets from semileptonic top-pair events; the limited-precision result is consistent with zero and with the LEP-inferred transfer.
+### 5. [A first look at strange-quark polarization in top-quark decays with CMS Open Data](https://arxiv.org/abs/2610.42143)
+- **Abstract:** An analysis of 16.39 fb⁻¹ of public 13 TeV CMS data measures longitudinal Λ polarization in strange jets from semileptonic top-pair events, but the result is consistent with both zero and the LEP-inferred transfer.
 - **Authors:** Yevgeny Kats
-- **arXiv:** `2610.42143v1` (published 2026-10-30T17:59:10Z; categories: `hep-ex`, `hep-ph`)
-- **Evidence for ranking:** A first realization of strange-quark polarimetry on open collider data, with a specified public dataset and a concrete analysis chain; the paper also identifies what higher-statistics Run-2/Run-3 measurements would need to control.
-- **Claimed result:** The paper reports longitudinal Lambda polarization $P_{\parallel}=+0.04\pm0.45\,({stat})\pm0.06\,({syst})$ for the $z>0.3$ region, consistent with zero and with the transfer inferred from LEP but not precise enough to test it.
-- **Evidence type:** Experimental; 2016 CMS Open Data from 13 TeV proton collisions, 16.39 fb$^{-1}$, in semileptonic $t\bar{t}$ events.
-- **Caveat:** Statistical uncertainty dominates and the result cannot yet resolve the polarization-transfer question; acceptance correction, backgrounds, and baryon/antibaryon effects need stronger control.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
+- **arXiv:** `2610.42143v1` (published 2026-10-30 17:59:10 UTC; categories: `hep-ex` (primary), `hep-ph`)
+- **Evidence for ranking:** Cross-listing links collider experiment and phenomenology; the analysis uses the public CMS collision-data release and opens a direct route to follow-up with larger Run-2/Run-3 samples. Search also surfaced an [arXiv hep-ex feed post](https://deer.social/profile/did:plc:nsyo6uqrblbqirbzjkg2ag3a).
+- **Claimed result:** The author reports $P_{\parallel}=+0.04\pm0.45\,\text{(stat.)}\pm0.06\,\text{(syst.)}$ for the high-momentum-fraction sample, consistent with zero and with the transfer inferred from LEP; the paper presents it as a first analysis-chain realization, not a resolved polarization measurement.
+- **Evidence type:** Observational; analysis of 2016 CMS Open Data from 13 TeV proton-proton collisions, using 16.39 fb⁻¹.
+- **Caveat:** Statistical precision is insufficient to test the polarization transfer; the paper identifies background and acceptance systematics that need data-driven treatment in a higher-statistics measurement.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
 - **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
 
-### 9. [Charge Pumping Leptogenesis from the Symmetric Mass Generation Phase on a Four-Leg Ladder Lattice](https://arxiv.org/abs/2610.42103)
-- **Abstract:** DMRG simulations of a four-leg chiral-fermion ladder find quantized charge pumping across gapless and gapped boundary phases, while the spatial charge distribution changes; the authors propose an analogy to topological leptogenesis.
-- **Authors:** Runze Chi, Meng Zeng, Tao Xiang, Yi-Zhuang You, Bertrand I. Halperin, Juven Wang
-- **arXiv:** `2610.42103v1` (published 2026-10-30T17:44:53Z; categories: `cond-mat.str-el`, `quant-ph`)
-- **Evidence for ranking:** Featured in the 2 November digest and cross-listed between strongly correlated matter and quantum physics; the simulations compare weak-, intermediate-, and strong-coupling boundary regimes and report a common quantized pumped charge.
-- **Claimed result:** The authors find an intermediate symmetric-mass-generation edge phase that is fully gapped, yet charge pumped per flux quantum remains quantized across all three boundary phases; the proposed leptogenesis connection is an analogy, not a cosmological result.
-- **Evidence type:** Computational; density-matrix renormalization-group simulations of a four-leg quasi-(2+1)-dimensional 3-4-5-0 lattice chiral-fermion model.
-- **Caveat:** The evidence is from a finite-width lattice simulation; the proposed link to Standard Model leptogenesis is conceptual and does not establish a mechanism in the early universe.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Condensed matter & materials; Particle, nuclear & high-energy physics
+### 6. [Vacuum amplification across a programmable bosonic Bogoliubov stability boundary in a trapped-ion chain](https://arxiv.org/abs/2610.41033)
+- **Abstract:** The authors tune two motional-mode couplings in a trapped-ion chain and observe bounded phonon occupation below a programmable stability threshold and exponential amplification above it, including resonant single-mode squeezing.
+- **Authors:** Lu Qi, Duanyang Wang, Kenneth R. Brown
+- **arXiv:** `2610.41033v1` (published 2026-10-29 22:25:50 UTC; categories: `quant-ph` (primary), `physics.atom-ph`)
+- **Evidence for ranking:** Cross-listed across quantum and atomic physics; this is an experimental test of a programmable threshold rather than only a proposed analogue, making the controlled two-mode result a concrete signal in the batch.
+- **Claimed result:** The authors report independent control of pair creation and mode splitting and demonstrate that the amplification threshold can be moved, including a resonant regime where one mode is amplified into a squeezed vacuum.
+- **Evidence type:** Experimental; motional modes of a trapped-ion chain, initialized near the motional ground state.
+- **Caveat:** The demonstration concerns a controlled two-mode system; proposed connections to particle creation and driven-device operation remain applications, not observations of those phenomena in other systems.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
+- **Themes:** Quantum information; Atomic, molecular & optical physics
 
-### 10. [First Light with the Dark100 Array of PANOSETI Telescopes at Palomar Observatory](https://arxiv.org/abs/2610.41775)
-- **Abstract:** This status report describes the first phase of the seven-telescope Dark100/PANOSETI array for ultra-high-energy gamma-ray observations and ultra-heavy dark-matter searches, with more than 100 hours of observations collected during commissioning.
-- **Authors:** Nikolas Korzoun, Aaron Brown, Stephen Fegan, Luca Fiedler, Benjamin Godfrey, et al.
-- **arXiv:** `2610.41775v1` (published 2026-10-30T14:15:02Z; categories: `astro-ph.IM`, `astro-ph.HE`)
-- **Evidence for ranking:** The paper reports an instrument entering operation, concrete observing time on established targets, and an expansion from optical-transient instrumentation into UHE gamma-ray astronomy; it is an isolated instrumentation/status signal in this selection.
-- **Claimed result:** The authors describe the first four installed telescopes, over 100 hours of three-telescope data on sources including the Crab Nebula and Markarian 421, and the planned completion of a seven-telescope array.
-- **Evidence type:** Observational and instrumentation; commissioning observations and array-performance simulations.
-- **Caveat:** This is not a source or dark-matter detection; the array is incomplete, and the abstract reports status rather than a final gamma-ray measurement.
-- **Announcement type:** new submission, 2026-11-02 announcement batch
-- **Themes:** Astrophysics; Instrumentation & detectors
+### 7. [Soft X-Ray Detection Down to the Nitrogen K-Edge Using a Pixelated iLGAD Sensor](https://arxiv.org/abs/2610.42064)
+- **Abstract:** Pixelated inverse low-gain avalanche-diode sensors with a thin entrance window resolve single soft-X-ray photons down to 390 eV, below the nitrogen K-edge, with a reported signal-to-noise ratio of 5.
+- **Authors:** Shuqi Li, Anna Bergamaschi, Ashish Bisht, Maurizio Boscardin, Martin Brückner, et al.
+- **arXiv:** `2610.42064v1` (published 2026-10-30 17:25:31 UTC; categories: `physics.ins-det` (primary))
+- **Evidence for ranking:** A quantified low-energy single-photon threshold and a comparison of standard versus shallow gain-layer designs provide a concrete instrumentation result; it is retained as a notable detector paper despite having no cross-list in the checked metadata.
+- **Claimed result:** The authors report single-photon resolution to 390 eV and use the observed double-peak response to fit effective entrance-layer and gain-layer depths.
+- **Evidence type:** Experimental; spectral characterization of two iLGAD gain-layer designs across photon energies and operating temperatures.
+- **Caveat:** The study characterizes sensor designs rather than demonstrating a large-area, high-frame-rate detector in a beamline experiment; those application-level performance claims remain prospective.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
+- **Themes:** Instrumentation & detectors
+
+### 8. [Gapless and Non-Equilibrium Topology in Blockaded Ladders](https://arxiv.org/abs/2610.40771)
+- **Abstract:** The authors propose constrained multi-leg models with gapless topological order and long-lived post-quench string order, supported by tensor-network simulations and a classical stochastic approximation.
+- **Authors:** Ramanjit Sohal, Hannes Bernien, Ruben Verresen
+- **arXiv:** `2610.40771v1` (published 2026-10-29 18:00:08 UTC; categories: `cond-mat.str-el` (primary), `cond-mat.quant-gas`, `physics.atom-ph`, `quant-ph`)
+- **Evidence for ranking:** Cross-listed across four physics categories and connects constrained many-body theory with candidate Rydberg/dipolar-atom simulator platforms; the result is a theoretically grounded platform proposal, not an experimental detection.
+- **Claimed result:** The authors argue that blockade constraints can produce gapless topological ground states and preserve string order for parametrically long post-quench times in two-leg models; three-leg models yield a multicomponent Luttinger liquid.
+- **Evidence type:** Theoretical and computational; tensor-network simulations and a classical stochastic approximation to the dynamics.
+- **Caveat:** The proposed mechanism and dynamical signatures have not been experimentally established in a Rydberg or dipolar-atom platform.
+- **Announcement type:** new submission, 2 November 2026 announcement batch
+- **Themes:** Condensed matter & materials; Quantum information; Computational & data methods
 
 ## Trending Research Themes
 
-- **Neutrino physics from constraints to analysis infrastructure:** CMS’s long-lived-HNL search [1] probes a long-lifetime parameter region, while the chiral EFT event-generator work [3] targets resonance-region modeling for accelerator experiments; the dihole calculation [7] links neutrino phase evolution to curved-space trajectories. These are complementary experimental, computational, and theoretical efforts—not independent confirmations of one result.
-- **Quantum topology beyond equilibrium:** TrARPES in graphene [2] reports an optically driven Dirac gap, while four-leg-ladder DMRG [9] studies quantized pumping through an interacting gapped boundary. The shared interest is dynamical/topological response; the materials and evidence types differ.
-- **Precision inference depends on measurement systems and model control:** The NICER multi-wavelength pulse-profile analysis [4] combines X-ray and UV instruments to infer neutron-star structure, and iLGAD testing [6] targets time-resolved soft-X-ray sensitivity. Dark100 [10] is an emerging UHE instrument, but its paper reports commissioning rather than a source detection.
-- **High-energy theory is increasingly tied to future measurement precision:** The Tera-$Z$/minimal-SU(5) study [5] compares loop-level predictions under projected coupling and proton-decay constraints, while the CMS open-data polarization study [8] demonstrates a present-day route to measuring spin transfer. These are distinct efforts, not a shared dataset or result.
+- **Programmable quantum hardware meets many-body physics:** The FCI preparation on IBM Nighthawk (paper 1), silicon spin-qubit control (paper 2), and trapped-ion threshold control (paper 6) show distinct approaches to state preparation, control, and dynamics. These are separate platform results, not independent confirmations of one another.
+- **Precision measurement is becoming a co-design problem:** The magnetic-noise FEM validation (paper 3), field-resolved Kerr measurement (paper 4), and low-energy iLGAD characterization (paper 7) each target a measurement bottleneck—background noise, time-resolved nonlinear response, or low-energy photon detection—using different instruments and physical regimes.
+- **Data and models meet in particle and many-body physics:** The CMS Open Data polarimetry analysis (paper 5) explicitly demonstrates an analysis chain while remaining statistics-limited; the FCI and blockaded-ladder studies (papers 1 and 8) use classical computation to guide quantum-state preparation or infer many-body behavior. These are isolated links across the selected papers, not a corpus-wide trend estimate.
 
 ## Open Problems and Research Directions
 
-- **Author-stated — neutrino resonance modeling:** The authors report that nuclear single-pion datasets disagree in normalization beyond quoted uncertainties, no event generator describes them all together, and some low-statistics data lack assessed systematics [3]. **Follow-up synthesis:** test higher-order operators and refitted couplings against future data, propagating nuclear-model and generator uncertainties jointly.
-- **Author-stated — polarization precision:** The CMS open-data result [8] is statistically limited and the paper identifies acceptance/background control for larger samples. **Follow-up synthesis:** repeat the analysis with full Run-2/Run-3 data, fit right- and wrong-sign samples jointly, and test flavor-specific spin transfer.
-- **Author-stated — topology and driven-gap systematics:** The graphene study [2] estimates gap uncertainty from fitting and momentum-window variation. **Follow-up synthesis:** independent transport or edge-sensitive probes during synchronized circular driving would test whether the spectroscopic gap carries the predicted topological response.
-- **Author-stated — neutron-star emission modeling:** The PSR J0437-4715 inference [4] relies on multi-component hot-spot, warm-surface, and non-thermal emission models and compares alternative modeling choices. **Follow-up synthesis:** test the inferred radius against independent pulse-profile analyses and improved cross-instrument calibration, while varying spot geometry and priors.
-- **Author-stated — Dark100 commissioning:** The array paper [10] describes an incomplete array and commissioning observations. **Follow-up synthesis:** complete the seven-telescope deployment, validate the upgraded analysis pipeline on calibrated data, and report source significance before interpreting UHE or dark-matter sensitivity.
-- **Author-stated — Majorana assumption and displaced-muon backgrounds:** CMS’s HNL limits [1] are given under the Majorana hypothesis, with background-transfer uncertainties reported. **Follow-up synthesis:** test complementary HNL hypotheses and mixing flavors, and validate low-mass long-lifetime backgrounds with enlarged data samples.
+- **Scale topological-state preparation beyond classically accessible targets (author-stated limitation):** Paper 1 relies on classical target-state preparation at 4×4. Follow-up work could test larger patches with preparation strategies that do not require exact diagonalization, then measure topological invariants and quasihole exchange signatures; braiding remains a proposed extension, not a result here.
+- **Co-design micromagnets and dense routing (author-stated trade-off):** Paper 2 links micromagnet distance to reduced charge-noise conversion but weaker drive gradients. A systematic device/layout sweep across larger arrays could measure whether alternative micromagnet levels or localized structures retain high-fidelity control as routing density grows.
+- **Resolve the high-frequency gradiometer mismatch (author-stated discrepancy):** Paper 3 reports an unresolved high-frequency discrepancy for the combined-gradiometer comparison and assumes sample conductivity and temperature. Measuring those material parameters directly and independently characterizing correlated sensor response would test whether the mismatch is model, geometry, or sensor related.
+- **Turn the CMS pilot into a discriminating polarization measurement (author-stated limitation):** Paper 5's uncertainty is much larger than the expected signal. Larger Run-2/Run-3 samples, data-driven background estimates, and validated acceptance corrections could test the spin-transfer interpretation without treating the present result as a detection.
+- **Test material and detector operating envelopes:** Paper 4 measures germanium at 5 μm under one experimental regime; varying wavelength, pump intensity, and delay would probe when delayed carrier effects become important. Paper 7's 390 eV threshold motivates follow-up measurements of large-area efficiency, rate capability, and temperature dependence in a beamline-like setup.
+- **Test predicted quantum dynamics in analogue platforms (author-stated platform connection):** Paper 8 proposes Rydberg-tweezer and dipolar-atom realizations of blockaded ladders. Experiments measuring string order before and after quenches could test the tensor-network and stochastic predictions; paper 6 separately suggests extending programmable amplification to more modes and larger ion chains.
 
 ## Takeaway
 
-This batch combines concrete measurements and limits—especially in displaced-particle searches, driven graphene, and neutron-star inference—with methods intended to improve future neutrino, collider, and UHE observations. Several of the most interesting implications remain model-dependent or statistically preliminary, so their value lies as much in defining what the next datasets must resolve as in the headline claims.
+The batch's clearest pattern is measurement-driven quantum hardware and instrumentation: several papers report concrete control or sensing advances, while CMS polarimetry and the FCI/topology proposals remain limited by statistics or scale. The ordering is a transparent, qualitative inference from cross-listing, specific results, and a small number of surfaced discussion signals—not a measure of readership, downloads, or field-wide consensus.
 
 ## Method and sources
 
-- **Window:** daily announcement batch dated 2026-11-02 (start and end date: 2026-11-02); this is the current batch, not a prior one. The ten selected papers were first submitted on 2026-10-29 or 2026-10-30 UTC and appeared in this batch as v1 new submissions.
-- **Snapshot:** 2026-11-02T17:36:30Z.
-- **Archive coverage:** checked the daily arXiv listings/RSS for `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. Across the 11 feeds, 905 category records deduplicated to 659 arXiv IDs: 399 with a new announcement, 233 replacement-only IDs, and 27 cross-list-only IDs; 112 IDs appeared as both new and cross-listed. All ten retained abstracts were verified against canonical arXiv abstract pages; top-three full-text checks used arXiv HTML.
-- **Inference:** arXiv does not publish a popularity ranking. Placement uses a subject-focused independent digest where it covered a paper, specific experimental/observational results, cross-listing, reusable data or methods, and instrument/dataset evidence; recency was a tie-breaker. Raw arXiv listing order was not used as a trend score.
-- **Citation evidence:** Semantic Scholar Graph API was queried for the requested citation and field metadata, but the service returned HTTP 429; no citation totals or momentum were used. The configured `web_extract` service was unavailable in this runtime, so canonical arXiv abstract pages were fetched directly and checked against arXiv API metadata.
-- **Sources:** arXiv daily category listings at `https://arxiv.org/list/<archive>/new` and `https://export.arxiv.org/rss/<archive>`; selected paper pages linked above; Antonio Marrone’s 2 November arXiv digest at https://home.ba.infn.it/~marrone/highlights/2026-11-02.html.
+- **Window and snapshot:** Daily window 2026-11-02–2026-11-02; snapshot 2026-11-03 01:25:10 UTC. The latest available arXiv announcement batch was 2 November 2026, so this uses the prior batch for the run date.
+- **Archive coverage:** Checked the current recent listings for `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. The pages contained 567 archive placements, representing 426 distinct arXiv IDs after deduplication; every retained paper was checked against its arXiv record. The selection is not comprehensive coverage of physics.
+- **Inference:** arXiv supplies no official trending chart. Papers were selected and ordered using surfaced independent discussion/listing signals, cross-listing across distinct physics subfields, data or hardware basis, and concrete measurements or methods; recency was only a tie-breaker. Citation counts and age-normalized citation rates were not used because no usable Semantic Scholar records were obtained for this snapshot. The resulting list is therefore “notable recent papers,” not measured popularity.
+- **Abstracts and full text:** Metadata and abstracts were checked against arXiv records. The introductions, methods/results, and discussion/limitations were inspected from arXiv HTML for the top three papers. Direct `web_extract` was unavailable in this environment, so arXiv recent pages and the arXiv API were used as the retrieval path instead.
+- **Sources:** [arXiv recent physics](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), and [quant-ph](https://arxiv.org/list/quant-ph/recent); each paper's linked arXiv abstract page; and the external discussion/listing links cited in the relevant entries.

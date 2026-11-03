@@ -4,108 +4,82 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-03 01:35 UTC |
+| Snapshot time (UTC) | 2026-11-03 17:30 UTC |
 | Scope | Daily |
 | Date range | 2026-11-03 through 2026-11-03 |
-| Ranking basis | Daily GitHub Trending star gains, ordered descending |
+| Ranking basis | Daily GitHub Trending stars gained, ordered descending |
 
 ## Headline
 
-Today’s list is led by agent control and workflow infrastructure: T3 Code, Agent Desktop, Claude Mem, and Claude Code Game Studios occupy the top four positions when ranked by the daily star gains shown on GitHub Trending. Local model serving and non-agent engineering tools also make a visible showing.
+Computer-use tooling, web scraping, and coordinated coding-agent workflows lead today's displayed star gains. The snapshot also highlights local inference, financial models, and established developer tools.
 
 ## Top Repositories
 
-1. **[pingdotgg/t3code](https://github.com/pingdotgg/t3code) — The remote-ready control surface for locally running coding agents recorded the day’s largest star gain (+3,229). Its mobile, web, and desktop clients share an environment-owning server and provider-adapter design.**
+1. **[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)  - A computer-use CLI that lets AI agents inspect and operate desktop apps.**
 
-  **Language:** TypeScript | **Stars gained in window:** +3229 | **Total stars:** 42,005 | **Why notable:** It had the largest daily gain in the scraped Trending set (+3,229), placing a multi-client interface for coding agents at the top.
+  **Language:** Rust | **Stars gained in window:** +3,792 | **Total stars:** 12,155 | **Why notable:** It has the largest displayed daily gain in this snapshot, and its accessibility-tree approach is a concrete alternative to brittle pixel-based UI control.
 
-  **Caveat:** The README describes the project as very early and warns users to expect bugs.
+2. **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)  - A Python web-scraping framework spanning single requests through larger crawls.**
 
-2. **[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) — A computer-use CLI that observes and operates desktop applications through OS accessibility trees rather than pixel matching. It was the second-largest daily gainer.**
+  **Language:** Python | **Stars gained in window:** +1,658 | **Total stars:** 94,202 | **Why notable:** It has the second-largest daily gain shown here, pointing to persistent interest in robust data collection and crawling tools.
 
-  **Language:** Rust | **Stars gained in window:** +2275 | **Total stars:** 9,805 | **Why notable:** It gained 2,275 stars and makes accessibility-tree-based computer use, rather than pixel guessing, its core design.
+3. **[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)  - A Claude Code setup organized as a game-development studio, with multiple agents and workflow skills.**
 
-  **Caveat:** Actions depend on OS accessibility support and permissions; snapshots, screenshots, and command output may contain private desktop data.
+  **Language:** Shell | **Stars gained in window:** +1,181 | **Total stars:** 34,428 | **Why notable:** Its sizable daily gain illustrates the shift from single-agent prompting toward role-based, coordinated agent workflows.
 
-3. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — A persistent-memory system that captures agent activity, summarizes it, and progressively retrieves useful context across sessions; it ranked third by daily stars gained.**
+4. **[mattpocock/skills](https://github.com/mattpocock/skills)  - A collection of engineering-focused skills for AI coding agents.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1803 | **Total stars:** 110,768 | **Why notable:** It gained 1,803 stars, signaling demand for persistent, selectively retrieved context across agent sessions.
+  **Language:** Shell | **Stars gained in window:** +1,164 | **Total stars:** 311,122 | **Why notable:** It pairs a high daily gain with the largest existing community in this list, reflecting demand for repeatable agent workflows.
 
-  **Caveat:** Its README calls it a memory system built for Claude Code; other harness integrations and memory-provider options involve their own setup.
+5. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)  - Persistent context for coding agents, capturing and compressing session activity for later retrieval.**
 
-4. **[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — A Claude Code project template that organizes game development around specialized agents, skills, hooks, rules, and staged quality gates; fourth by daily gains.**
+  **Language:** TypeScript | **Stars gained in window:** +1,138 | **Total stars:** 111,586 | **Why notable:** It pairs a substantial daily gain with the agent-memory theme and claims compatibility across several major coding-agent harnesses.
 
-  **Language:** Shell | **Stars gained in window:** +1379 | **Total stars:** 33,578 | **Why notable:** It gained 1,379 stars by packaging agent orchestration as a structured, domain-specific game-development workflow.
+6. **[JustVugg/colibri](https://github.com/JustVugg/colibri)  - A C inference engine that streams mixture-of-experts model data across disk, memory, and available compute.**
 
-  **Caveat:** It is a customizable project template, not a repository of finished games.
+  **Language:** C | **Stars gained in window:** +803 | **Total stars:** 47,098 | **Why notable:** Its memory-tiered design makes frontier-scale local inference a prominent counterpoint to cloud-first agent tooling.
 
-5. **[mattpocock/skills](https://github.com/mattpocock/skills) — An agent-skill collection for engineering workflows, with the day’s fifth-highest star gain and the largest total star count among this snapshot’s entries.**
+7. **[p-e-w/heretic](https://github.com/p-e-w/heretic)  - A training-free tool for modifying language-model behavior.**
 
-  **Language:** Shell | **Stars gained in window:** +858 | **Total stars:** 310,257 | **Why notable:** It gained 858 stars and has the largest total star count among these 15 repositories (310,257 at API capture).
+  **Language:** Python | **Stars gained in window:** +699 | **Total stars:** 38,603 | **Why notable:** It brings model behavior modification into the day's local-model and inference conversation; its stated aim is not a general-purpose model-serving stack.
 
-6. **[shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) — A foundation-model family for financial candlestick sequences, using a specialized tokenizer and autoregressive transformer; it gained 857 stars.**
+8. **[floci-io/floci](https://github.com/floci-io/floci)  - A lightweight alternative for emulating AWS services locally.**
 
-  **Language:** Python | **Stars gained in window:** +857 | **Total stars:** 46,020 | **Why notable:** Its 857-star gain is a high signal for specialist financial time-series models outside the agent-tooling cluster.
+  **Language:** Java | **Stars gained in window:** +679 | **Total stars:** 28,486 | **Why notable:** Its momentum shows that established cloud-development workflows remain part of today's activity alongside AI projects.
 
-  **Caveat:** GitHub reports the default branch was last pushed on 2026-04-13, so today’s star gain does not imply recent code activity.
+9. **[shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos)  - A foundation model project for financial-market candlestick data.**
 
-7. **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) — A Python web-scraping framework that spans simple requests through full crawls, with adaptive element tracking and a spider workflow; seventh by daily gains.**
+  **Language:** Python | **Stars gained in window:** +503 | **Total stars:** 46,385 | **Why notable:** It represents a specialized application of foundation models to structured market data, rather than general chat or code generation.
 
-  **Language:** Python | **Stars gained in window:** +706 | **Total stars:** 92,926 | **Why notable:** It gained 706 stars, showing sustained developer interest in adaptable web collection tooling.
+10. **[max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)  - A CLI that simplifies Git worktrees for parallel AI-agent workflows.**
 
-8. **[JustVugg/colibri](https://github.com/JustVugg/colibri) — A dependency-light C runtime that streams mixture-of-experts model weights from disk, aiming to run large open models on consumer hardware; it gained 675 stars.**
+  **Language:** Rust | **Stars gained in window:** +437 | **Total stars:** 10,361 | **Why notable:** It targets the practical workspace coordination bottleneck created when developers run several coding agents at once.
 
-  **Language:** C | **Stars gained in window:** +675 | **Total stars:** 46,570 | **Why notable:** It gained 675 stars and exemplifies CPU-/disk-oriented local serving for large mixture-of-experts models.
+11. **[anomalyco/hex](https://github.com/anomalyco/hex)  - A local voice-dictation application for macOS, Windows, and Linux.**
 
-  **Caveat:** The README lists minimum local storage and memory requirements; feasible model size depends on the machine and model.
+  **Language:** Rust | **Stars gained in window:** +410 | **Total stars:** 4,388 | **Why notable:** It extends the snapshot beyond coding agents into local-first voice input and desktop productivity.
 
-9. **[FlashML-org/FreeToken](https://github.com/FlashML-org/FreeToken) — An edge-oriented mixture-of-experts serving engine for local hardware, with OpenAI- and Anthropic-compatible APIs and coding-agent integrations; ninth by daily gains.**
+12. **[Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor)  - A Chinese-language Playwright and AI-based monitor for Xianyu listings, with scheduled or real-time monitoring and a web UI.**
 
-  **Language:** Python | **Stars gained in window:** +653 | **Total stars:** 16,080 | **Why notable:** Its 653-star gain adds a second distinct local MoE-serving approach, with API compatibility for agent clients.
+  **Language:** Python | **Stars gained in window:** +204 | **Total stars:** 16,287 | **Why notable:** It is a region- and marketplace-specific application of browser automation and AI analysis rather than a general agent framework.
 
-  **Caveat:** Performance and model support depend on compatible hardware and checkpoints; the README lists supported GPU families.
+13. **[spotify/portal-ai-plugins](https://github.com/spotify/portal-ai-plugins)  - A TypeScript repository from Spotify; the Trending card did not provide a project description.**
 
-10. **[hyprwm/Hyprland](https://github.com/hyprwm/Hyprland) — An independent Wayland compositor with dynamic tiling, configurable layouts, plugins, socket IPC, and visual effects, intended for a highly customizable Linux desktop.**
-
-  **Language:** C++ | **Stars gained in window:** +509 | **Total stars:** 39,942 | **Why notable:** It gained 509 stars and is a clear non-AI outlier: customizable Wayland desktop infrastructure.
-
-11. **[p-e-w/heretic](https://github.com/p-e-w/heretic) — A training-free language-model modification tool that uses configurable scorers and mathematical steering techniques to alter behaviors such as refusal, sycophancy, and verbosity.**
-
-  **Language:** Python | **Stars gained in window:** +420 | **Total stars:** 38,113 | **Why notable:** It gained 420 stars and represents model-behavior modification rather than a new agent wrapper.
-
-  **Caveat:** The repository’s claims about behavior changes are project claims, not independent evaluation results.
-
-12. **[paperclipai/paperclip](https://github.com/paperclipai/paperclip) — An open-source application for coordinating and managing agents at work; it adds an organization-level view to the agent-heavy trend.**
-
-  **Language:** TypeScript | **Stars gained in window:** +412 | **Total stars:** 110,404 | **Why notable:** Its 412-star gain reflects interest in managing agents at team or organization scale.
-
-13. **[kornia/kornia](https://github.com/kornia/kornia) — A differentiable computer-vision library built on PyTorch, with batched geometric transforms, camera models, feature matching, robust solvers, and GPU-capable operators.**
-
-  **Language:** Python | **Stars gained in window:** +412 | **Total stars:** 12,135 | **Why notable:** Its 412-star gain places a mature computer-vision toolkit among the day’s active themes.
-
-14. **[karpathy/nanochat](https://github.com/karpathy/nanochat) — A compact, end-to-end project for building and training a ChatGPT-like model, from tokenizer and pretraining through inference.**
-
-  **Language:** Python | **Stars gained in window:** +321 | **Total stars:** 59,904 | **Why notable:** It gained 321 stars for a compact, end-to-end model-building project rather than a hosted chatbot product.
-
-15. **[max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) — A Git-worktree CLI aimed at keeping parallel AI-agent development workflows manageable.**
-
-  **Language:** Rust | **Stars gained in window:** +77 | **Total stars:** 10,047 | **Why notable:** It gained 77 stars; its place in the list is a smaller but relevant signal for worktree-based parallel agent development.
+  **Language:** TypeScript | **Stars gained in window:** +94 | **Total stars:** 2,965 | **Why notable:** It is the day's visible enterprise-publisher entry, though public trend metadata offers less context than for the other projects.
 
 ## Trending Technologies and Themes
 
-- **Agent control, memory, skills, and orchestration:** The strongest cluster: T3 Code controls locally installed agents from mobile, web, and desktop; Agent Desktop exposes OS accessibility interfaces; Claude Mem persists and retrieves context; Game Studios and Matt Pocock’s skills package agent workflows; Paperclip moves coordination toward teams; Worktrunk handles parallel worktrees.
-- **Local and edge model serving:** Colibrì streams MoE experts from disk in a C runtime, while FreeToken targets edge-native MoE serving with CPU/GPU resource management and agent-facing APIs. Together they show interest in running large open models on locally owned hardware, with materially different architectures.
-- **Specialist models and ML infrastructure:** Kronos models financial candlestick sequences; Heretic explores training-free model modification; Kornia supplies geometric computer-vision operations; Nanochat offers an end-to-end small-model training/building path. The list spans finance, model behavior, vision, and hands-on LLM training.
-- **Developer and desktop tooling:** Beyond agent-specific utilities, Hyprland and Worktrunk anchor the snapshot in practical desktop and Git workflow tooling; language distribution is led by Python and TypeScript.
-- **Web data collection:** Scrapling is the list’s direct web-collection framework, covering the span from basic extraction through crawling.
-- **Languages:** Languages among the 15 repositories: Python 6, TypeScript 3, Rust 2, Shell 2, C 1, and C++ 1.
+- **Agent interaction and workflow infrastructure:** vercel-labs/agent-desktop brings agents into desktop apps through accessibility data; thedotmack/claude-mem focuses on persistent context; max-sixty/worktrunk and mattpocock/skills address parallel workspaces and repeatable engineering practices; Donchitos/Claude-Code-Game-Studios packages role-based orchestration.
+- **Local model control and inference:** JustVugg/colibri emphasizes memory-tiered inference for large MoE models, while p-e-w/heretic focuses on training-free model behavior modification.
+- **Data collection and specialized AI:** D4Vinci/Scrapling represents adaptable web crawling; shiyu-coder/Kronos applies foundation-model methods to financial candle sequences; Usagi-org/ai-goofish-monitor applies AI-assisted monitoring to a specific marketplace.
+- **Languages:** Python appears in 4 of 13 listed repositories; Rust in 3; TypeScript and Shell in 2 each; C and Java in 1 each. This is a tally of the displayed repositories, not a claim about GitHub as a whole.
 
 ## Takeaway
 
-The strongest day-level signal is not a single model release but a growing stack around coding agents: interfaces, desktop control, durable memory, reusable skills, and team coordination. Local MoE serving is the clearest infrastructure complement, while Kronos, Scrapling, Hyprland, and Kornia show that GitHub’s daily attention is not exclusively AI-agent projects.
+Today's strongest signal is an expanding layer of infrastructure around AI coding agents: desktop access, persistent memory, skills, and parallel execution all appear prominently. At the same time, local inference and task-specific data tools show that activity is not limited to agent frameworks. Star gains are a one-day snapshot and can move during the day; the ranking and totals here are timestamped observations, not a forecast of sustained adoption.
 
 ## Sources and Method
 
-- Primary source: https://github.com/trending?since=daily
-- Corroboration: GitHub REST repository metadata and default-branch endpoints for the 15 listed repositories; GitHub Search API query `stars:>1000 pushed:>=2026-11-01` used as a broad freshness cross-check, not as a ranking source.
-- Method note: Daily star gains were read from the matching GitHub Trending page and used as the primary ranking signal; repositories are ordered by displayed daily gains descending. Total stars, primary languages, and default-branch commit SHAs were captured from GitHub REST. Search results are broad and noisy, so were not substituted for Trending. Capabilities are summarized from repository READMEs and first-party docs where inspected; they are not independent quality evaluations.
+- **Primary source:** [GitHub Trending repositories, daily](https://github.com/trending?since=daily), captured 2026-11-03 at 17:30 UTC.
+- **Corroboration:** GitHub Search API repository lookups for representative projects (for example, [agent-desktop](https://api.github.com/search/repositories?q=agent-desktop%20in%3Aname%20user%3Avercel-labs)); GitHub REST repository and default-branch commit endpoints were queried for all 13 entries to confirm repository identity, current stars/language metadata, freshness, and commit SHA. A dated [GitStock daily archive](https://gitstock.org/trending/2026-11-03) provided an independent comparison of the daily list; counts and order can differ by capture time.
+- **Method note:** Entries are ordered by the daily star gains displayed on GitHub Trending, descending. “Stars gained in window” is the figure displayed by that view; GitHub REST metadata and commit SHAs are corroboration, not replacements for the Trending-page gain signal. The daily range is the GitHub “Today” view for 2026-11-03; the page does not state a precise timezone boundary.

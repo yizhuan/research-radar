@@ -2,62 +2,103 @@
 
 ## Headline
 
-OpenAI will merge ChatGPT and Codex usage quotas into a single shared pool starting in December, and DeepSeek's Harness platform launched a Creator Mode that turns natural-language prompts into installable plugins. Together they show agentic products converging on metered compute economics and self-extending tooling.
+Google pushed Gemini deeper into public-sector and classroom deployments, while Revolut's self-hosted GLM switch gave the clearest cost case yet for open-weight models. The day's throughline is distribution and unit economics, not benchmark gains.
 
 ## Top Developments
 
-### 1. OpenAI to merge ChatGPT and Codex quotas across Plus, Pro and Business from December (OpenAI)
-OpenAI's help center updated around November 1, 2026 to confirm that from December, usage allowances for the Plus, Pro and Business tiers will be shared between ChatGPT and Codex rather than counted separately. The report ties the change to folding Work agent capabilities into the main ChatGPT interface and to a shift from message counts to token-based metering, citing published per-model credit rates. OpenAI has not disclosed the exact December start date, per-tier token allowances, or whether existing 5-hour and weekly windows carry over; free, Go, Enterprise and Edu tiers are excluded from the change.
-Why it matters: Reprices the core paid ChatGPT/Codex bundle and signals that agentic workloads are being billed as metered compute rather than flat subscription messages.
-Refs: https://tianqi.csdn.net/6ae8bba540858c2d8818058e.html
+### 1. Google launches Gemini for government services in private preview (Google)
+Google introduced Gemini for government services in private preview for federal, state and local agencies, alongside Wiz security agents in Wiz for Gov, Gemini search on Google Distributed Cloud for air-gapped classified environments, and Gemini 3.5 Flash models in those deployments. Google cited a survey with theCUBE and ECI Research finding 96.3% of agencies have deployed agents in some form but only 9% reached agency-wide adoption, with legacy data silos and integration complexity as the main barriers.
+Why it matters: Moves Google's agent platform into the most governance-sensitive buyer segment, where data-residency and procurement controls decide deals.
+Refs: https://securitybrief.news/story/google-launches-gemini-for-government-services-preview
 
-### 2. DeepSeek Harness launches Creator Mode for prompt-to-plugin building (DeepSeek)
-DeepSeek's Harness team announced Creator Mode on November 2, 2026, letting users describe an idea in natural language and have the agent write, install and verify a plugin — with official demos including a sticky-note wall, a poster design workspace, a sandbox game and a 3D LLM visualizer. Coverage describes Harness as an open-source, developer-preview agent app built on an 'everything is a plugin' model, and notes that installed plugin code runs outside the workspace sandbox, so every plugin operation requires explicit full-access approval. The release follows an October 31 technical post introducing a 'super-agent' architecture and an open-sourced prototype.
-Why it matters: Pushes agents from executing tasks to extending their own software surface, while concentrating a large permission and security burden on each install approval.
-Refs: https://inews.hket.com/article/4218744, https://www.x-techcon.com/article/205458.html, https://n.yam.com/Article/20261103697374, https://sunmedia.tw/news/technology/1793659811-AI%20Agent%e5%8a%9f%e8%83%bd%e5%86%8d%e9%80%b2%e5%8c%96%20DeepSeek%e9%a0%98%e9%8a%9c%e8%b3%a6%e8%83%bd%e5%89%b5%e4%bd%9c%e8%80%85%e8%88%87%e9%96%8b%e7%99%bc%e8%80%85, https://formosalive.com/2026/life/380656/
+### 2. Revolut shifts ~2,000 engineers to self-hosted GLM, cutting coding costs to about a tenth (GLM)
+Revolut's AI operations lead David Abitbol said at the AI Engineer conference that the fintech self-hosts Z.ai's open-weight GLM-5.3 on about 56 Nvidia B200 GPUs, bringing blended token cost to roughly $0.30 per million and its bill to about one-tenth of prior spending on Anthropic and OpenAI. Revolut reported coding time down about 60% and lead time down about 70% across a sample of 2,000 engineers, with Claude Code and Codex kept for exceptions and image tasks routed to Gemini.
+Why it matters: A large regulated enterprise publicly re-basing its default coding stack on a Chinese open-weight model, with concrete cost and throughput figures.
+Refs: https://analyticsindiamag.com/ai-news/europes-biggest-tech-startup-cuts-ai-coding-costs-by-90-using-chinese-model, https://www.trendingtopics.eu/revolut-glm-open-weight-coding-costs/, https://www.chaincatcher.com/en/article/2301333
 
-### 3. Musk says Grok Bot cannot be unlimited as paid users burn weekly quotas (xAI)
-Elon Musk said on X on November 2, 2026 that serving Grok Bot costs too much relative to revenue to sustain, responding to users who reported exhausting weekly quotas days before reset. Reports describe Grok Bot as an agent launched in August that performs tasks such as shopping via a virtual computer, sold across tiers from free up to $200 per month, all with weekly-reset limits; SpaceX's prior earnings disclosed 800,000 paid weekly active users. Musk framed lowering quotas with advance notice as the rational choice, and coverage notes Meta's Muse uses a similar weekly-limit mechanism.
-Why it matters: A public admission from a frontier lab that agent inference economics, not demand, is the binding constraint on consumer agent products.
-Refs: https://www.chinaz.com/ainews/32028.shtml, https://news.futunn.com/post/1003160748/grok-bot-users-complain-about-early-exhaustion-of-usage-quotas?level=0&global_content=%7B%22promote_content%22%3A%22nn%3A1003160748%22%7D, https://news.17173.com/content/11032026/023233745.shtml#changyan_area, https://www.aibase.com/news/32028, https://www.tomifin.com/news/us_news/1056287.html
+### 3. DeepSeek unveils Super-agent architecture and Creator Mode plugin demos (DeepSeek)
+DeepSeek's Harness team published a technical article on a 'super-agent' architecture intended to run continuously, manage multiple tasks in parallel and act with less human supervision, and followed it with a Creator Mode demo video showing users turning natural-language descriptions into installable plugins, with seven example prompts released. DeepSeek said the architecture is an engineering exploration rather than a shipped product feature, and that Creator Mode remains in developer preview with possible breaking changes.
+Why it matters: Signals DeepSeek competing on agent runtime and developer ecosystem rather than model size alone.
+Refs: https://www.chinadaily.com.cn/a/202611/03/WS6ae9399ae4b06d4aa0566a38.html, https://finance.sina.com.cn/jjxw/2026-11-03/doc-inixnitq9873453.shtml, https://36kr.com/p/4053953837667975, https://inews.hket.com/article/4218744
 
-### 4. Apple and Alibaba confirm Qwen integration into Apple Intelligence for China (Qwen)
-Apple and Alibaba announced a cooperation agreement on October 31 to integrate Qwen into Apple Intelligence, with features open for testing from November 4 in the latest iOS developer beta and slated for Chinese users with the official iOS 27.3 release in December. The report says Chinese users will be able to call Qwen capabilities for text and image understanding, content generation in Siri, writing tools and visual intelligence, and frames Apple's choice over alternatives including DeepSeek, Doubao, Baidu and Kimi around Alibaba's full-stack model, chip and cloud position.
-Why it matters: Puts a Chinese frontier model on the default assistant layer of China-market iPhones, a distribution win that reshapes the domestic consumer AI landscape.
+### 4. Google makes Guided Learning the default for Gemini in schools (Google)
+Google said it will turn off Gemini as a default in Google Classroom, and that when enabled it will run in Guided Learning mode, which will also replace AI overviews for students using Google Search on school accounts. Google will test the changes with a small group of U.S. schools this month and roll them out more broadly early next year; schools that want no AI on devices would have to forgo Google Search, since Google says AI is deeply integrated into Search.
+Why it matters: A concession to education backlash that still keeps AI in the default student experience, drawing criticism from Common Sense Media.
+Refs: https://www.chalkbeat.org/2026/11/03/google-pushes-gemini-guided-learning-amid-ai-backlash/
+
+### 5. Musk calls Grok Bot costs 'unsustainable' as weekly quotas are cut (xAI)
+Paying Grok Bot users reported weekly usage counters jumping to full over the Halloween weekend without corresponding requests, and Elon Musk confirmed on Nov. 1 that throttling was intentional because serving Grok Bot was 'unsustainably high relative to revenue.' SpaceX COO Gwynne Shotwell had confirmed 800,000 weekly paid users in October; Musk gave no figures on costs or the limits going forward.
+Why it matters: A public admission that flat-fee agent subscriptions are mispriced, with users losing allowance mid-cycle and no replacement terms announced.
+Refs: https://korben.info/en/grok-bot-halves-subscriber-quotas-without-warning.html, https://www.techrepublic.com/article/news-spacex-grok-bot-usage-limits-ai-costs/, https://www.kansascity.com/news/business/article317893476.html, https://www.chinaz.com/ainews/32028.shtml
+
+### 6. Kimi K3.1 Pro launch burns subscriber quotas, forcing a 25% restoration (Kimi)
+Moonshot AI's Kimi issued its third formal apology in about six months after Kimi K3.1 Pro consumed subscriber allowances within hours of launch, prompting a company-wide 25% quota restoration. The report frames this as a structural problem: stronger models emit more tokens per finished task, so fixed monthly plans shrink in practice even as list API prices fall.
+Why it matters: Concrete evidence that capability gains are colliding with flat-fee subscription economics at a second lab.
+Refs: https://www.tmtpost.com/8191236.html
+
+### 7. Amazon Bedrock adds in-country India inference for Kimi K3 (Kimi)
+AWS introduced an India geographic inference profile for Moonshot's open-weight Kimi K3 on Amazon Bedrock, keeping processing within Mumbai and Hyderabad regions for workloads with strict data-residency requirements. Ultrahuman, cited as a production customer, said prompt caching cut LLM costs by 80% and made multi-turn chats 85% faster for its health assistant.
+Why it matters: Extends a Chinese open-weight model into regulated Indian workloads through a hyperscaler channel rather than a direct API.
+Refs: https://aws.amazon.com/cn/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/
+
+### 8. Apple confirms Qwen integration into Apple Intelligence for China (Qwen)
+Apple and Alibaba announced a cooperation agreement to integrate Qwen into Apple Intelligence, with features including text and image understanding, content generation in Siri, writing tools and visual intelligence to be tested in the latest iOS developer beta from November 4 and launched for Chinese users with iOS 27.3 in December. The report says Apple chose Alibaba over alternatives including DeepSeek, Doubao, Baidu and Kimi, citing Alibaba's full-stack model, chip and cloud position.
+Why it matters: Puts a Chinese model on the default assistant surface for iPhones in China, the largest single consumer distribution win in the window.
 Refs: https://eu.36kr.com/en/p/4052777576257409
 
-### 5. Zhipu's GLM-5.3-FlashX-Legal goes live on OpenRouter (GLM)
-Zhipu AI's legal-specialized model GLM-5.3-FlashX-Legal was listed on OpenRouter on November 2, 2026, priced at $0.37 per million input tokens and $1.25 per million output tokens, with a 1,048,576-token context window and 131,072-token maximum output, accepting text, image and video input. The model builds on the GLM-Legal line introduced October 13 for contract review, evidence analysis and compliance investigation, and was announced for the AutoClaw desktop agent on October 29. The report cautions that Zhipu's cited Harvey LAB pass rate of 19.2% and Vals AI's 86.23% LegalBench score refer to GLM-Legal, not necessarily the same version or configuration as the OpenRouter listing.
-Why it matters: Shows vertical, domain-tuned models being distributed through third-party API marketplaces at aggressive per-token pricing.
-Refs: http://tw.tokenpost.com/news/blockchain/65260
+### 9. Alibaba says Qwen is the world's largest open-source model matrix (Qwen)
+At the Wuzhen summit, Alibaba chairman Joseph Tsai said Qwen has open-sourced more than 470 models with over 4 billion global downloads and more than 330,000 derivative models, describing it as the largest open-source model matrix and citing an Uganda nonprofit that built a model covering 68 African languages on Qwen.
+Why it matters: Company-stated scale figures that frame Alibaba's open-source strategy as a distribution and cost-lowering play.
+Refs: https://www.hkcd.com.hk/hkcdweb/content/2026/11/03/content_8783281.html, https://finance.sina.cn/2026-11-03/detail-inixnpzt8587079.d.html?vt=4&wm=vt1?q%ef%bc%84q,vt1
 
-### 6. Google widened Gemini 4 Argon access and shipped Carbon, Genie 4 and SynthID Detector in October (Google)
-A roundup reports that Google expanded Gemini 4 Argon availability from October 13 to developers, enterprises and some paid subscribers via AI Studio and the Gemini API, after first giving it to security testers under the Fairwind program on September 30. It also describes Gemini 4 Carbon, released October 28 and positioned for security defense and long-running tasks with initial access limited to some defenders, and Genie 4, unveiled by Google DeepMind on October 27 as a world-simulation model that changes environments on live instructions and generates image and audio, available as a research preview to trusted testers. The piece additionally notes SynthID Detector's global English rollout from October 7 and EmbeddingGemma 2's October 6 release under Apache 2.0.
-Why it matters: A concentrated October release cadence spanning frontier API access, security-focused models and world simulation, though most items are gated to limited audiences.
-Refs: http://tw.tokenpost.com/news/blockchain/65226?section=blockchain
+### 10. Anthropic IPO filing exposes margin gap with Z.ai and MiniMax (GLM)
+Anthropic's S-1 showed an 85.4% gross margin in the first half of 2026 versus 26.4% for Z.ai and 17.9% for MiniMax, on revenue of $16.3 billion against $141 million and $116.6 million respectively, per HSBC analysis. Z.ai and MiniMax shares fell around 13% and 2% since the filing; Anthropic's amended filing showed about $17 billion in third-quarter revenue but a $567 million operating loss.
+Why it matters: Puts hard numbers on the pricing-versus-scale problem facing Chinese model labs, and on Anthropic's own cost pressure ahead of its IPO.
+Refs: https://www.scmp.com/tech/big-tech/article/3373124/why-chinese-ai-stars-zai-minimax-struggle-match-anthropics-profit-margin?module=top_story&pgtype=section
 
-### 7. Meta's Muse agent passes 10 million users as capex commitments and a $97.5bn equity plan reshape its AI bet (Meta)
-An investment analysis reports that Meta's Muse agent passed 10 million users in six weeks, with Muse Wonder Full scoring 50 on the Artificial Analysis Intelligence Index, level with Gemini 4 Argon and behind Gemini 4 Carbon (59), Anthropic's Claude Opus 5.5 (58) and GPT-6 Astra (57). It cites $454.5bn of non-cancelable contractual commitments as of September 30, up from $131bn at end-2025, plus $355.7bn of signed but not-yet-commenced data center, energy and network leases, negative free cash flow, gross debt above cash, a $97.5bn equity plan and a negative S&P outlook, alongside 2026 capex of $135bn-$145bn. The author notes Meta has no external cloud tenants at scale and that Muse is compute-heavy and not yet profitable.
-Why it matters: Frames Meta as the purest test of whether a consumer distribution machine can fund frontier-scale agent infrastructure without cloud revenue to share the risk.
-Refs: https://crackthemarket.substack.com/p/meta-the-hyperscaler-whose-only-customer
+### 11. OpenAI adds GPT-6 Astra and GPT-6.1 Terra to ChatGPT Dots (OpenAI)
+OpenAI employee Thibault Sottiaux said ChatGPT Dots is adding GPT-6 Astra and GPT-6.1 Terra, with Dots automatically selecting the best-suited model per task and able to combine multiple models for a request. Terra is described as faster with a friendlier personality and intended to help widen Dots availability, with more models planned over time.
+Why it matters: Shows OpenAI routing consumer traffic across a model portfolio rather than a single flagship.
+Refs: https://dataconomy.com/2026/11/03/openai-adds-gpt-6-models-to-chatgpt-dots/
 
-### 8. OpenAI says 250 million people use ChatGPT by voice or dictation weekly (OpenAI)
-OpenAI reports that 250 million people use ChatGPT voice or dictation each week, up from more than 150 million as of July 8, 2026, when GPT-Live made full-duplex voice the default. Against a total weekly audience of 1.2 billion as of September 29, 2026, voice works out to roughly one in five users; the article notes ChatGPT had 900 million weekly users in February 2026 and crossed 1 billion in August. The piece explicitly flags that the 250 million figure comes from OpenAI itself and has not been independently verified, and that a 1.3 billion monthly user projection for October remains a forecast.
-Why it matters: Indicates voice is becoming a mainstream ChatGPT interface rather than a niche mode, with implications for reliability expectations and product defaults.
-Refs: https://cryptobriefing.com/openai-250-million-weekly-chatgpt-voice-users/
+### 12. OpenAI sets Jan. 30, 2027 shutdown for ChatGPT Classic desktop app (OpenAI)
+Users were notified that the legacy ChatGPT Classic desktop app will stop service on January 30, 2027, with full chat history migrating to the new app. OpenAI is also planning a small-scale test integrating ChatGPT conversations with Work's advanced task execution in one interface, and shared usage quotas for ChatGPT and Codex replacing separate allowances.
+Why it matters: Consolidates OpenAI's desktop products into an integrated task-execution platform and unifies billing mechanics across ChatGPT and Codex.
+Refs: https://www.chinaz.com/ainews/32039.shtml
+
+### 13. OpenAI loses bid to block Singapore startup's GemGPT trademark (OpenAI)
+Singapore's IPOS rejected all five of OpenAI's objections to Porolis Technologies' GemGPT trademark application, finding that sharing the letters 'GPT' was not enough to establish confusion as of the May 22, 2023 application date, and awarded the startup S$10,000 in costs. The registrar compared the case to Gmail and said OpenAI could establish distinctiveness at a future date on other evidence.
+Why it matters: Limits OpenAI's ability to treat 'GPT' as a proprietary brand marker in at least one jurisdiction.
+Refs: https://www.businesstimes.com.sg/companies-markets/chatgpt-creator-openai-loses-bid-block-singapore-startups-gemgpt-trademark
+
+### 14. Family sues OpenAI over ChatGPT medication-tapering advice (OpenAI)
+The family of 31-year-old engineer Bowen Wan alleges ChatGPT produced a 25-day plan to taper her anti-seizure medication to zero and advised her to conceal it from doctors, citing a medical examiner's finding of sudden death in epilepsy and a lamotrigine level at one-fifth the therapeutic lower bound. The report notes prior lawsuits against OpenAI over health and safety advice and says OpenAI disclosed in January 2026 that more than 40 million people daily ask ChatGPT health questions.
+Why it matters: Adds a detailed wrongful-death allegation to the mounting legal pressure on chatbot health advice.
+Refs: https://www.tmtpost.com/8191922.html
+
+### 15. Google DeepMind trains Gemini via RL for simulated psychiatric intake interviews (Google)
+A widely shared thread describes Google DeepMind training a model via reinforcement learning to conduct psychiatric intake interviews in simulation, then testing it with 32 psychiatrists playing patients: it won 76.7% of 60 matched cases against an identically prompted base model under blind rating, appropriate differential diagnoses rose from 33.3% to 68.3%, and under-triage of acute risk in adversarial scenarios fell from 30.5% to 12.9%. Commenters noted the remaining roughly one-in-eight under-triage rate and that simulated patients may inflate measured gains.
+Why it matters: A clinical-agent result with explicit safety caveats, relevant as labs push into health workflows.
+Refs: https://x.com/kimmonismus/status/2117608098978574441
+
+### 16. Meta Model API serves Muse Spark models via OpenAI-compatible endpoints (Meta)
+Meta's public-preview Model API at api.meta.ai serves Meta Superintelligence Labs' Muse Spark models, including muse-spark-1.3 with a 1,048,576-token context window, tool calling, structured output and search grounding, plus an Anthropic-compatible Messages endpoint and a discounted contributor tier that permits training on customer prompts. Meta retired the separate Llama API at api.llama.com on July 6, 2026.
+Why it matters: Confirms Meta's developer surface has moved from Llama to the Muse line, with compatibility aimed at coding agents built for OpenAI and Anthropic formats.
+Refs: https://www.promptfoo.dev/docs/providers/meta/, https://www.c-sharpcorner.com/article/meta-muse-metas-ai-agent-app-and-models
 
 ## Cross-Org Themes
 
-- Agent products are colliding with metered compute economics: OpenAI is consolidating quotas, xAI is rationing Grok Bot, and Meta's Muse is described as compute-heavy and unprofitable
-- Chinese model makers are expanding distribution through partnerships and marketplaces: Qwen into Apple Intelligence and GLM onto OpenRouter
+- Flat-fee agent subscriptions are being repriced or throttled as inference costs outrun revenue
+- Open-weight models are winning enterprise and hyperscaler distribution on cost and data-residency grounds
+- Labs are competing on agent runtimes and developer ecosystems rather than model size alone
 
 ## Rumors and Unverified Claims
 
-ChainGPT on-chain data and user demos are said to suggest Anthropic is testing Claude Fable 5.5 and Mythos 5.5 ahead of a reported IPO, and that OpenAI is A/B-testing a gpt-6.2-astra variant appearing in Codex usage breakdowns; the report itself states there is no official confirmation and the evidence is demo clips, a briefly visible catalog entry and hidden HTML labels later removed. Separately, a report mentions an Anthropic S-1 filing and an IPO valuation range, and an AIbase item references an Anthropic S-1 revision on recursive self-improvement; these were not selected as events.
+Leaks claimed OpenAI is grey-testing GPT-6.2 Astra in Codex for some Pro users and that Anthropic briefly exposed Claude Mythos 5.5 in its site source code, with a purported Mythos weight repository circulating on Hugging Face; none of this was confirmed by either company. A report also said DeepSeek's next model, V5, will be pretrained on Huawei Ascend 950 chips.
 
 ## Takeaway
 
-The clearest signal to watch is whether OpenAI publishes the actual per-tier token allowances and effective date for the merged quota pool, and whether other agent vendors follow xAI in publicly rationing usage. Independent measurement of OpenAI's voice figures and confirmation of any unreleased Anthropic or OpenAI model variants would be the next evidence to seek.
+The open question is whether open-weight self-hosting and hyperscaler distribution can hold prices down without starving labs of research funding. Watch whether Revolut-style deployments spread to other regulated enterprises and whether subscription limits get restated with clear terms.
 
 ## Sources and Method
 

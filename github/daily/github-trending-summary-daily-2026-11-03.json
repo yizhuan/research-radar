@@ -1,0 +1,483 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-11-03",
+  "title": "GitHub Trending Summary - Daily - 2026-11-03",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-03.md",
+  "entry_count": 15,
+  "entry_noun": "repositories",
+  "ranking_basis": "Daily GitHub Trending star gains, ordered descending",
+  "ranking_explanation": "The daily Trending page was scraped and the 15 returned repositories were independently corroborated through GitHub REST repository metadata and current default-branch commit endpoints. The list is ordered by stars gained today as displayed on the Trending page, descending. The GitHub Search API query was used only as a broad freshness check, not for ranks.",
+  "global_caveat": "Daily star gains are a point-in-time signal and can change during the UTC day. Stars and repository descriptions indicate attention, not software quality or independent validation of project claims. Current total stars and commits were captured shortly after the Trending scrape.",
+  "themes": [
+    {
+      "id": "agentic-workflows",
+      "title": "Agent control, memory, skills, and orchestration",
+      "supporting_repository_ids": [
+        "01-pingdotgg-t3code",
+        "02-vercel-labs-agent-desktop",
+        "03-thedotmack-claude-mem",
+        "04-donchitos-claude-code-game-studios",
+        "05-mattpocock-skills",
+        "12-paperclipai-paperclip",
+        "15-max-sixty-worktrunk"
+      ],
+      "content": "The strongest cluster: T3 Code controls locally installed agents from mobile, web, and desktop; Agent Desktop exposes OS accessibility interfaces; Claude Mem persists and retrieves context; Game Studios and Matt Pocock’s skills package agent workflows; Paperclip moves coordination toward teams; Worktrunk handles parallel worktrees."
+    },
+    {
+      "id": "local-model-inference",
+      "title": "Local and edge model serving",
+      "supporting_repository_ids": [
+        "08-justvugg-colibri",
+        "09-flashml-org-freetoken"
+      ],
+      "content": "Colibrì streams MoE experts from disk in a C runtime, while FreeToken targets edge-native MoE serving with CPU/GPU resource management and agent-facing APIs. Together they show interest in running large open models on locally owned hardware, with materially different architectures."
+    },
+    {
+      "id": "data-ml",
+      "title": "Specialist models and ML infrastructure",
+      "supporting_repository_ids": [
+        "06-shiyu-coder-kronos",
+        "11-p-e-w-heretic",
+        "13-kornia-kornia",
+        "14-karpathy-nanochat"
+      ],
+      "content": "Kronos models financial candlestick sequences; Heretic explores training-free model modification; Kornia supplies geometric computer-vision operations; Nanochat offers an end-to-end small-model training/building path. The list spans finance, model behavior, vision, and hands-on LLM training."
+    },
+    {
+      "id": "developer-tooling",
+      "title": "Developer and desktop tooling",
+      "supporting_repository_ids": [
+        "01-pingdotgg-t3code",
+        "02-vercel-labs-agent-desktop",
+        "05-mattpocock-skills",
+        "10-hyprwm-hyprland",
+        "15-max-sixty-worktrunk"
+      ],
+      "content": "Beyond agent-specific utilities, Hyprland and Worktrunk anchor the snapshot in practical desktop and Git workflow tooling; language distribution is led by Python and TypeScript."
+    },
+    {
+      "id": "web-data-collection",
+      "title": "Web data collection",
+      "supporting_repository_ids": [
+        "07-d4vinci-scrapling"
+      ],
+      "content": "Scrapling is the list’s direct web-collection framework, covering the span from basic extraction through crawling."
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time (UTC): 2026-11-03 01:35 UTC; Scope: Daily; Date range: 2026-11-03 through 2026-11-03; Ranking basis: GitHub Trending daily star gains, ordered descending."
+    },
+    {
+      "id": "01-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Today’s list is led by agent control and workflow infrastructure: T3 Code, Agent Desktop, Claude Mem, and Claude Code Game Studios occupy the top four positions when ranked by the daily star gains shown on GitHub Trending. Local model serving and non-agent engineering tools also make a visible showing."
+    },
+    {
+      "id": "01-pingdotgg-t3code",
+      "kind": "repo",
+      "title": "pingdotgg/t3code",
+      "rank": 1,
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "The remote-ready control surface for locally running coding agents recorded the day’s largest star gain (+3,229). Its mobile, web, and desktop clients share an environment-owning server and provider-adapter design.",
+      "language": "TypeScript",
+      "stars_gained": 3229,
+      "total_stars": 42005,
+      "default_branch_commit": "6a61904f609b1ab3387668de35996e8657cd4103",
+      "why_notable": "It had the largest daily gain in the scraped Trending set (+3,229), placing a multi-client interface for coding agents at the top.",
+      "theme_ids": [
+        "agentic-workflows",
+        "developer-tooling"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "T3 Code",
+      "unique_caveat": "The README describes the project as very early and warns users to expect bugs.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/pingdotgg/t3code/blob/main/README.md",
+        "https://github.com/pingdotgg/t3code/blob/main/docs/internals/overview.md"
+      ]
+    },
+    {
+      "id": "02-vercel-labs-agent-desktop",
+      "kind": "repo",
+      "title": "vercel-labs/agent-desktop",
+      "rank": 2,
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "description": "A computer-use CLI that observes and operates desktop applications through OS accessibility trees rather than pixel matching. It was the second-largest daily gainer.",
+      "language": "Rust",
+      "stars_gained": 2275,
+      "total_stars": 9805,
+      "default_branch_commit": "060c83af4be63096de33fc22d79fb9c4d02f528e",
+      "why_notable": "It gained 2,275 stars and makes accessibility-tree-based computer use, rather than pixel guessing, its core design.",
+      "theme_ids": [
+        "agentic-workflows",
+        "developer-tooling"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Agent Desktop",
+      "unique_caveat": "Actions depend on OS accessibility support and permissions; snapshots, screenshots, and command output may contain private desktop data.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/vercel-labs/agent-desktop/blob/main/README.md",
+        "https://github.com/vercel-labs/agent-desktop/blob/main/docs/json-output.md"
+      ]
+    },
+    {
+      "id": "03-thedotmack-claude-mem",
+      "kind": "repo",
+      "title": "thedotmack/claude-mem",
+      "rank": 3,
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "A persistent-memory system that captures agent activity, summarizes it, and progressively retrieves useful context across sessions; it ranked third by daily stars gained.",
+      "language": "TypeScript",
+      "stars_gained": 1803,
+      "total_stars": 110768,
+      "default_branch_commit": "02584c4ac9d92fea45adf5c61e22c546b5738621",
+      "why_notable": "It gained 1,803 stars, signaling demand for persistent, selectively retrieved context across agent sessions.",
+      "theme_ids": [
+        "agentic-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Claude Mem",
+      "unique_caveat": "Its README calls it a memory system built for Claude Code; other harness integrations and memory-provider options involve their own setup.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/thedotmack/claude-mem/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "04-donchitos-claude-code-game-studios",
+      "kind": "repo",
+      "title": "Donchitos/Claude-Code-Game-Studios",
+      "rank": 4,
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "description": "A Claude Code project template that organizes game development around specialized agents, skills, hooks, rules, and staged quality gates; fourth by daily gains.",
+      "language": "Shell",
+      "stars_gained": 1379,
+      "total_stars": 33578,
+      "default_branch_commit": "05ad7c8a5b8aa2aa86bbd3439ae7cf7295cac418",
+      "why_notable": "It gained 1,379 stars by packaging agent orchestration as a structured, domain-specific game-development workflow.",
+      "theme_ids": [
+        "agentic-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Claude Code Game Studios",
+      "unique_caveat": "It is a customizable project template, not a repository of finished games.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "05-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 5,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "An agent-skill collection for engineering workflows, with the day’s fifth-highest star gain and the largest total star count among this snapshot’s entries.",
+      "language": "Shell",
+      "stars_gained": 858,
+      "total_stars": 310257,
+      "default_branch_commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "why_notable": "It gained 858 stars and has the largest total star count among these 15 repositories (310,257 at API capture).",
+      "theme_ids": [
+        "agentic-workflows",
+        "developer-tooling"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 5,
+      "spoken_name": "Matt Pocock Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/mattpocock/skills"
+      ]
+    },
+    {
+      "id": "06-shiyu-coder-kronos",
+      "kind": "repo",
+      "title": "shiyu-coder/Kronos",
+      "rank": 6,
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "A foundation-model family for financial candlestick sequences, using a specialized tokenizer and autoregressive transformer; it gained 857 stars.",
+      "language": "Python",
+      "stars_gained": 857,
+      "total_stars": 46020,
+      "default_branch_commit": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+      "why_notable": "Its 857-star gain is a high signal for specialist financial time-series models outside the agent-tooling cluster.",
+      "theme_ids": [
+        "data-ml"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 6,
+      "spoken_name": "Kronos",
+      "unique_caveat": "GitHub reports the default branch was last pushed on 2026-04-13, so today’s star gain does not imply recent code activity.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/shiyu-coder/Kronos/blob/master/README.md"
+      ]
+    },
+    {
+      "id": "07-d4vinci-scrapling",
+      "kind": "repo",
+      "title": "D4Vinci/Scrapling",
+      "rank": 7,
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "A Python web-scraping framework that spans simple requests through full crawls, with adaptive element tracking and a spider workflow; seventh by daily gains.",
+      "language": "Python",
+      "stars_gained": 706,
+      "total_stars": 92926,
+      "default_branch_commit": "95cf9019ab5a5d6f3e9654b7ef1c6a26e29dc5c0",
+      "why_notable": "It gained 706 stars, showing sustained developer interest in adaptable web collection tooling.",
+      "theme_ids": [
+        "web-data-collection"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "Scrapling",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/D4Vinci/Scrapling/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "08-justvugg-colibri",
+      "kind": "repo",
+      "title": "JustVugg/colibri",
+      "rank": 8,
+      "url": "https://github.com/JustVugg/colibri",
+      "description": "A dependency-light C runtime that streams mixture-of-experts model weights from disk, aiming to run large open models on consumer hardware; it gained 675 stars.",
+      "language": "C",
+      "stars_gained": 675,
+      "total_stars": 46570,
+      "default_branch_commit": "0a5504a1dc64f86fcd0fe7db298b0448c730e7e6",
+      "why_notable": "It gained 675 stars and exemplifies CPU-/disk-oriented local serving for large mixture-of-experts models.",
+      "theme_ids": [
+        "local-model-inference"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "Colibrì",
+      "unique_caveat": "The README lists minimum local storage and memory requirements; feasible model size depends on the machine and model.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/JustVugg/colibri/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "09-flashml-org-freetoken",
+      "kind": "repo",
+      "title": "FlashML-org/FreeToken",
+      "rank": 9,
+      "url": "https://github.com/FlashML-org/FreeToken",
+      "description": "An edge-oriented mixture-of-experts serving engine for local hardware, with OpenAI- and Anthropic-compatible APIs and coding-agent integrations; ninth by daily gains.",
+      "language": "Python",
+      "stars_gained": 653,
+      "total_stars": 16080,
+      "default_branch_commit": "3d23551c5b43b61ef26e24cb86a22ff550e502a3",
+      "why_notable": "Its 653-star gain adds a second distinct local MoE-serving approach, with API compatibility for agent clients.",
+      "theme_ids": [
+        "local-model-inference"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 9,
+      "spoken_name": "FreeToken",
+      "unique_caveat": "Performance and model support depend on compatible hardware and checkpoints; the README lists supported GPU families.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/FlashML-org/FreeToken/blob/main/README.md",
+        "https://github.com/FlashML-org/FreeToken/blob/main/docs/quickstart.md"
+      ]
+    },
+    {
+      "id": "10-hyprwm-hyprland",
+      "kind": "repo",
+      "title": "hyprwm/Hyprland",
+      "rank": 10,
+      "url": "https://github.com/hyprwm/Hyprland",
+      "description": "An independent Wayland compositor with dynamic tiling, configurable layouts, plugins, socket IPC, and visual effects, intended for a highly customizable Linux desktop.",
+      "language": "C++",
+      "stars_gained": 509,
+      "total_stars": 39942,
+      "default_branch_commit": "e93501dd1bfeabf6206cdaebd853008d47a7dcc1",
+      "why_notable": "It gained 509 stars and is a clear non-AI outlier: customizable Wayland desktop infrastructure.",
+      "theme_ids": [
+        "developer-tooling"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 10,
+      "spoken_name": "Hyprland",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/hyprwm/Hyprland/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "11-p-e-w-heretic",
+      "kind": "repo",
+      "title": "p-e-w/heretic",
+      "rank": 11,
+      "url": "https://github.com/p-e-w/heretic",
+      "description": "A training-free language-model modification tool that uses configurable scorers and mathematical steering techniques to alter behaviors such as refusal, sycophancy, and verbosity.",
+      "language": "Python",
+      "stars_gained": 420,
+      "total_stars": 38113,
+      "default_branch_commit": "0db5c31e10ecc426440b6fb0ce4bf85352faf1a7",
+      "why_notable": "It gained 420 stars and represents model-behavior modification rather than a new agent wrapper.",
+      "theme_ids": [
+        "data-ml"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 11,
+      "spoken_name": "Heretic",
+      "unique_caveat": "The repository’s claims about behavior changes are project claims, not independent evaluation results.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/p-e-w/heretic/blob/master/README.md"
+      ]
+    },
+    {
+      "id": "12-paperclipai-paperclip",
+      "kind": "repo",
+      "title": "paperclipai/paperclip",
+      "rank": 12,
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "An open-source application for coordinating and managing agents at work; it adds an organization-level view to the agent-heavy trend.",
+      "language": "TypeScript",
+      "stars_gained": 412,
+      "total_stars": 110404,
+      "default_branch_commit": "40ea7a9b8994e9bdb3d13794b5847388be0f7a92",
+      "why_notable": "Its 412-star gain reflects interest in managing agents at team or organization scale.",
+      "theme_ids": [
+        "agentic-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "Paperclip",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/paperclipai/paperclip"
+      ]
+    },
+    {
+      "id": "13-kornia-kornia",
+      "kind": "repo",
+      "title": "kornia/kornia",
+      "rank": 13,
+      "url": "https://github.com/kornia/kornia",
+      "description": "A differentiable computer-vision library built on PyTorch, with batched geometric transforms, camera models, feature matching, robust solvers, and GPU-capable operators.",
+      "language": "Python",
+      "stars_gained": 412,
+      "total_stars": 12135,
+      "default_branch_commit": "a733fe3b6248652b0a509d002cf452b2167965f0",
+      "why_notable": "Its 412-star gain places a mature computer-vision toolkit among the day’s active themes.",
+      "theme_ids": [
+        "data-ml"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 13,
+      "spoken_name": "Kornia",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/kornia/kornia/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "14-karpathy-nanochat",
+      "kind": "repo",
+      "title": "karpathy/nanochat",
+      "rank": 14,
+      "url": "https://github.com/karpathy/nanochat",
+      "description": "A compact, end-to-end project for building and training a ChatGPT-like model, from tokenizer and pretraining through inference.",
+      "language": "Python",
+      "stars_gained": 321,
+      "total_stars": 59904,
+      "default_branch_commit": "92d63d4e8bb4df75c3b71618f31ddde2378b2bcd",
+      "why_notable": "It gained 321 stars for a compact, end-to-end model-building project rather than a hosted chatbot product.",
+      "theme_ids": [
+        "data-ml"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 14,
+      "spoken_name": "Nanochat",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/karpathy/nanochat"
+      ]
+    },
+    {
+      "id": "15-max-sixty-worktrunk",
+      "kind": "repo",
+      "title": "max-sixty/worktrunk",
+      "rank": 15,
+      "url": "https://github.com/max-sixty/worktrunk",
+      "description": "A Git-worktree CLI aimed at keeping parallel AI-agent development workflows manageable.",
+      "language": "Rust",
+      "stars_gained": 77,
+      "total_stars": 10047,
+      "default_branch_commit": "f478bb3885b2c40120d511a0b3dfd1d14ba36bb7",
+      "why_notable": "It gained 77 stars; its place in the list is a smaller but relevant signal for worktree-based parallel agent development.",
+      "theme_ids": [
+        "developer-tooling",
+        "agentic-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 15,
+      "spoken_name": "Worktrunk",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/max-sixty/worktrunk"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agent control, memory, skills, and orchestration:** The strongest cluster: T3 Code controls locally installed agents from mobile, web, and desktop; Agent Desktop exposes OS accessibility interfaces; Claude Mem persists and retrieves context; Game Studios and Matt Pocock’s skills package agent workflows; Paperclip moves coordination toward teams; Worktrunk handles parallel worktrees.\n- **Local and edge model serving:** Colibrì streams MoE experts from disk in a C runtime, while FreeToken targets edge-native MoE serving with CPU/GPU resource management and agent-facing APIs. Together they show interest in running large open models on locally owned hardware, with materially different architectures.\n- **Specialist models and ML infrastructure:** Kronos models financial candlestick sequences; Heretic explores training-free model modification; Kornia supplies geometric computer-vision operations; Nanochat offers an end-to-end small-model training/building path. The list spans finance, model behavior, vision, and hands-on LLM training.\n- **Developer and desktop tooling:** Beyond agent-specific utilities, Hyprland and Worktrunk anchor the snapshot in practical desktop and Git workflow tooling; language distribution is led by Python and TypeScript.\n- **Web data collection:** Scrapling is the list’s direct web-collection framework, covering the span from basic extraction through crawling.\n- **Languages:** Languages among the 15 repositories: Python 6, TypeScript 3, Rust 2, Shell 2, C 1, and C++ 1."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The strongest day-level signal is not a single model release but a growing stack around coding agents: interfaces, desktop control, durable memory, reusable skills, and team coordination. Local MoE serving is the clearest infrastructure complement, while Kronos, Scrapling, Hyprland, and Kornia show that GitHub’s daily attention is not exclusively AI-agent projects."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources_and_method",
+      "title": "Sources and Method",
+      "content": "- Primary source: https://github.com/trending?since=daily\n- Corroboration: GitHub REST repository metadata and default-branch endpoints for the 15 listed repositories; GitHub Search API query `stars:>1000 pushed:>=2026-11-01` used as a broad freshness cross-check, not as a ranking source.\n- Method note: Daily star gains were read from the matching GitHub Trending page and used as the primary ranking signal; repositories are ordered by displayed daily gains descending. Total stars, primary languages, and default-branch commit SHAs were captured from GitHub REST. Search results are broad and noisy, so were not substituted for Trending. Capabilities are summarized from repository READMEs and first-party docs where inspected; they are not independent quality evaluations."
+    }
+  ]
+}

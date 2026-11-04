@@ -5,15 +5,16 @@
     "start": "2026-11-02",
     "end": "2026-11-03",
     "announcement_batch_date": "2026-11-03",
+    "prior_announcement_batch": true,
     "submission_date_window_utc": "2026-11-02 00:00:00–23:59:59 UTC",
-    "snapshot_utc": "2026-11-03T17:27:57Z"
+    "snapshot_utc": "2026-11-04T01:25:03Z"
   },
   "date": "2026-11-03",
   "title": "arXiv Physics — Tuesday, 3 November 2026",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-03.md",
   "entry_count": 9,
   "entry_noun": "papers",
-  "global_caveat": "This is an inferred notable-paper ordering, not an official arXiv trending chart; arXiv publishes no trending ranking, and citation evidence for same-day papers is limited.",
+  "global_caveat": "This is an inferred notable-paper ordering, not an official arXiv trending chart; arXiv publishes no trending ranking, and citation evidence for very recent papers is limited.",
   "sections": [
     {
       "id": "paper-01",

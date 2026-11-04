@@ -5,14 +5,14 @@
   "date": "2026-11-03",
   "window_start": "2026-11-03",
   "window_end": "2026-11-03",
-  "snapshot_utc": "2026-11-03T17:10:39Z",
+  "snapshot_utc": "2026-11-04T01:17:47Z",
   "announcement_batch_date": "2026-11-03",
-  "used_prior_announcement_batch": false,
+  "used_prior_announcement_batch": true,
   "title": "Notable recent papers: biology and biomedicine arXiv — 2026-11-03",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-03.md",
-  "entry_count": 12,
+  "entry_count": 13,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart. Attention evidence for this just-announced batch is sparse, so this is an inferred relevance ranking rather than a popularity ranking. arXiv covers only part of biomedical research; much experimental and clinical preprint work appears on bioRxiv or medRxiv.",
+  "global_caveat": "arXiv has no official trending chart; this is an inferred, relevance-ranked selection from an incomplete biomedical corpus, not a popularity ranking. Much experimental and clinical preprint research appears on bioRxiv or medRxiv instead.",
   "sections": [
     {
       "id": "00-headline",
@@ -20,90 +20,163 @@
       "title": "Headline",
       "rank": null,
       "url": null,
-      "text": "Today's latest arXiv biology and biomedicine announcement batch contains 12 selected papers from 48 unique candidates. The strongest patterns are peptide and protein property prediction, cancer and variant genomics, and single-cell or multimodal biological data methods. The agenda is to compare each claim with its reported evidence and identify what's still untested. arXiv has no official trending chart, attention evidence is sparse, and its biomedical coverage is incomplete; this is an inferred relevance ranking, not a popularity ranking."
+      "text": "The latest visible daily batch is Tuesday, 3 November 2026: 13 selected papers, with protein/peptide design, single-cell RNA inference, and evidence-aware evaluation among the strongest threads. Spoken agenda: what these methods claim, what data support them, and what still needs biological or external validation. arXiv has no official trending chart; this is an inferred, relevance-ranked selection from an incomplete biomedical corpus, not a popularity ranking. Much experimental and clinical preprint research appears on bioRxiv or medRxiv instead.",
+      "global_caveat": "arXiv has no official trending chart; this is an inferred, relevance-ranked selection from an incomplete biomedical corpus, not a popularity ranking. Much experimental and clinical preprint research appears on bioRxiv or medRxiv instead.",
+      "refs": []
     },
     {
-      "id": "01-peptsol-protected-peptide-solubility-benchmark",
-      "kind": "paper",
-      "title": "PeptSol: A Translational Benchmark for Protected-Peptide Solubility in Drug Manufacturing",
-      "rank": 1,
-      "url": "https://arxiv.org/abs/2611.00749",
-      "arxiv_id": "2611.00749",
-      "arxiv_version": "v1",
-      "published": "2026-10-31T08:56:07Z",
-      "categories": ["cs.LG", "physics.chem-ph", "q-bio.BM"],
-      "authors": ["Alexander Arjun Lobo", "Marc Saouda", "Urvi Awasthi", "Leonid Zhukov"],
-      "themes": ["Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "PeptSol benchmarks prediction of protected-peptide solubility relevant to liquid-phase peptide synthesis, using 1,388 curated measurements and chemistry-aware train/test splits.",
-      "claimed_contribution": "The authors report a best macro-F1 of 0.843 for binary solubility in the historical subset, but no foundation model consistently beats a fingerprint-plus-descriptor baseline across tasks and splits.",
-      "unique_caveat": "The 1,388 records cover 84 parent sequences and 101 protected structures, with 92.5% from one historical programme. Retrospective solubility prediction does not establish coupling yield, recovery, or process performance.",
-      "evidence_for_ranking": "Direct peptide-manufacturing relevance; arXiv says accepted at the NeurIPS 2026 AI for Drug Discovery workshop; compares seven molecular encoders on a source-curated benchmark.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.00749", "https://arxiv.org/html/2611.00749v1"]
-    },
-    {
-      "id": "02-evolutionary-characterization-whole-genome-doubling-cancers",
-      "kind": "paper",
-      "title": "Evolutionary characterization of whole-genome doubling across human cancers",
-      "rank": 2,
-      "url": "https://arxiv.org/abs/2611.01897",
-      "arxiv_id": "2611.01897",
-      "arxiv_version": "v1",
-      "published": "2026-11-01T13:39:58Z",
-      "categories": ["q-bio.GN", "q-bio.PE"],
-      "authors": ["Yangyang Zhang", "Haiming Li", "Xiaoyu Zhao", "Zilong Wang", "Yongqi Chen", "Sumeng Yang", "Shaocong Mo", "Jinming Li", "Xiaohua Wu", "Xu Wang", "Shuo Wang", "Qinhao Guo"],
-      "themes": ["DNA & genomics", "Gene regulation & epigenetics", "Biomedical & translational medicine"],
-      "abstract": "The authors integrate genomic, evolutionary-timing, and multi-omic analyses to characterize whole-genome doubling across 41,332 tumours from 12 cancer types.",
-      "claimed_contribution": "The authors report that driver mutations often precede WGD and that post-WGD chromosome-arm losses are less cancer-type-dependent; WGD-positive tumours also show reduced interferon and HLA-presentation programmes linked to epigenetic remodelling.",
-      "unique_caveat": "These are analyses of tumour datasets and associations, not intervention-based proof that WGD causes the reported immune changes or clinical outcomes.",
-      "evidence_for_ranking": "Large multi-cancer genomic analysis with explicit timing and multi-omic evidence; directly in genomics and population/evolution categories.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.01897"]
-    },
-    {
-      "id": "03-rangefinder-ligand-property-ranges-protein-pockets",
+      "id": "01-rangefinder-predicting-ligand-property-ranges-from-protein-p",
       "kind": "paper",
       "title": "RangeFinder: Predicting Ligand Property Ranges from Protein Pockets",
-      "rank": 3,
+      "rank": 1,
       "url": "https://arxiv.org/abs/2611.03379",
       "arxiv_id": "2611.03379",
       "arxiv_version": "v1",
       "published": "2026-11-02T16:21:09Z",
-      "categories": ["cs.LG", "q-bio.BM"],
-      "authors": ["Alan Nadelsticher Ruvalcaba", "Chris Alvin", "Supratik Mukhopadhyay", "Adam Bess"],
-      "themes": ["Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "RangeFinder predicts ranges for nine ligand physicochemical properties from protein-pocket structure, chemistry, and evolutionary context to help narrow molecular search.",
-      "claimed_contribution": "The authors propose pocket-level property-range prediction as a complement to proposing or scoring individual ligands and report 12.2 ms inference per pocket.",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Alan Nadelsticher Ruvalcaba",
+        "Chris Alvin",
+        "Supratik Mukhopadhyay",
+        "Adam Bess"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "RangeFinder uses an SE(3)-equivariant model to predict ranges for nine ligand properties from protein-pocket structure, chemistry, and evolutionary context, aiming to narrow molecular search.",
+      "claimed_contribution": "The authors propose pocket-level property-range prediction as a complement to generating or scoring individual ligands and report 12.2 ms inference per pocket.",
       "unique_caveat": "Evaluation is limited to pockets with at least three known ligands; the authors note possible homology overlap across UniProt-based splits. Prospective ligand discovery or binding has not been demonstrated.",
-      "evidence_for_ranking": "Direct protein–ligand relevance and q-bio.BM cross-list; arXiv says accepted at the NeurIPS 2026 AI for Drug Discovery workshop; BioLiP2 evaluation reports range-IoU 0.464 ± 0.002 and Reduction-Recall F-score 0.543 ± 0.011 against deployable baselines.",
-      "announcement_type": "new submission",
+      "evidence_for_ranking": "Direct protein–ligand relevance, q-bio.BM cross-list, and an arXiv comment recording acceptance at the NeurIPS 2026 AI for Drug Discovery workshop; BioLiP2 evaluation reports range-IoU 0.464 ± 0.002 and Reduction-Recall F-score 0.543 ± 0.011.",
+      "announcement_type": "new submission, cross-listed into q-bio.BM in the 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.03379", "https://arxiv.org/html/2611.03379v1"]
+      "comment": "Accepted at the AI for Drug Discovery workshop --- NeurIPS 2026",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.03379",
+        "https://arxiv.org/pdf/2611.03379v1",
+        "https://arxiv.org/html/2611.03379v1"
+      ]
     },
     {
-      "id": "04-v2g-auditable-variant-to-gene-prioritisation",
+      "id": "02-peptsol-a-translational-benchmark-for-protected-peptide-solu",
       "kind": "paper",
-      "title": "An auditable agentic pipeline for variant-to-gene prioritisation, validated against orthogonal functional evidence",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2611.01461",
-      "arxiv_id": "2611.01461",
+      "title": "PeptSol: A Translational Benchmark for Protected-Peptide Solubility in Drug Manufacturing",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.00749",
+      "arxiv_id": "2611.00749",
       "arxiv_version": "v1",
-      "published": "2026-11-01T02:48:40Z",
-      "categories": ["q-bio.GN", "cs.AI"],
-      "authors": ["Shakuntala Baichoo", "Sohail (Neel) Sarkar", "Bo Wang"],
-      "themes": ["DNA & genomics", "Bioinformatics & sequence analysis", "Biomedical & translational medicine"],
-      "abstract": "V2G records evidence retrieval and ranks candidate genes for GWAS loci; the authors test whether a language model's reranking gains actually depend on the retrieved evidence.",
-      "claimed_contribution": "On 135 loci with successful retrieval, model reranking improves Precision@1 over the evidence ordering, but the authors find no detected difference from Open Targets L2G or training-membership baselines; their controls indicate the gain reflects recall of known genes more than use of the presented evidence.",
-      "unique_caveat": "The paper reports train/test overlap and retrieval-conditioned subsets; an auditable evidence trail is not proof that an agent reasoned from that evidence.",
-      "evidence_for_ranking": "Direct variant-to-gene genomics task; frozen benchmark and reproduction code are reported; the abstract quantifies results on held-out loci and explicitly tests evidence-row shuffling and known-gene recall.",
-      "announcement_type": "new submission",
+      "published": "2026-10-31T08:56:07Z",
+      "categories": [
+        "cs.LG",
+        "physics.chem-ph",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Alexander Arjun Lobo",
+        "Marc Saouda",
+        "Urvi Awasthi",
+        "Leonid Zhukov"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "PeptSol benchmarks prediction of protected-peptide solubility relevant to liquid-phase peptide synthesis, using 1,388 curated measurements and chemistry-aware splits.",
+      "claimed_contribution": "The authors report best macro-F1 of 0.843 for binary solubility in the historical subset, but no foundation model consistently beats a fingerprint-plus-descriptor baseline across tasks and splits.",
+      "unique_caveat": "The measurements cover 84 parent sequences and 101 protected structures, with 92.5% from one historical programme. Retrospective solubility prediction does not establish synthesis yield, recovery, or process performance.",
+      "evidence_for_ranking": "Direct peptide-manufacturing relevance; an arXiv comment records acceptance at the NeurIPS 2026 AI for Drug Discovery workshop; compares seven molecular encoders on a source-curated benchmark.",
+      "announcement_type": "new submission, cross-listed into q-bio.BM in the 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.01461"]
+      "comment": "15 pages, 1 figure, 19 tables. Accepted at the AI for Drug Discovery workshop, NeurIPS 2026",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.00749",
+        "https://arxiv.org/pdf/2611.00749v1",
+        "https://arxiv.org/html/2611.00749v1"
+      ]
     },
     {
-      "id": "05-manifoldvelo-rna-kinetics-continuous-expression-manifolds",
+      "id": "03-automatic-generation-of-novel-highly-functional-molecular-se",
+      "kind": "paper",
+      "title": "Automatic Generation of Novel Highly-Functional Molecular Sequences",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.03603",
+      "arxiv_id": "2611.03603",
+      "arxiv_version": "v1",
+      "published": "2026-11-02T18:41:20Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Vincent R. Ragusa",
+        "Chrisoph Adami"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "DNA & genomics",
+        "Quantitative methods"
+      ],
+      "abstract": "On two complete fitness landscapes, the authors compare a position-probability “biased typewriter” generator with a variational autoencoder and report that the better search method depends on landscape and training-set size.",
+      "claimed_contribution": "The authors propose training-free sequence search and report a sample-size- and landscape-dependent comparison: the biased typewriter is more efficient on DHFR and low-data settings, while the autoencoder can do better on Avida at larger sample sizes, with signs of overfitting.",
+      "unique_caveat": "The comparison is computational on existing DHFR and Avida landscapes; the paper does not report synthesis or antimicrobial and cytotoxicity assays of generated peptides. Selective antibacterial peptides are a proposed application, not a demonstrated result.",
+      "evidence_for_ranking": "Direct biomolecular sequence-design fit and first-listed in the focused biomolecules category; the abstract reports evaluation on two complete landscapes.",
+      "announcement_type": "new submission, 2026-11-03 batch",
+      "announcement_batch_date": "2026-11-03",
+      "comment": "24 pages, 5 figures",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.03603",
+        "https://arxiv.org/pdf/2611.03603v1",
+        "https://arxiv.org/html/2611.03603v1"
+      ]
+    },
+    {
+      "id": "04-can-agents-reliably-design-therapeutic-antibodies",
+      "kind": "paper",
+      "title": "Can agents reliably design therapeutic antibodies?",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.00558",
+      "arxiv_id": "2611.00558",
+      "arxiv_version": "v1",
+      "published": "2026-10-31T02:35:17Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "authors": [
+        "Asli Alpman",
+        "Nick Bhattacharya",
+        "Aaron Solomon",
+        "Hunter Elliott"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors evaluate agentic antibody design under instruction-following and black-box optimization settings, finding trade-offs among tool use, design history, exploration, and optimization.",
+      "claimed_contribution": "The authors report that tools improve instruction following and sequence exploration but reduce optimization performance, while design history improves optimization at the expense of exploration.",
+      "unique_caveat": "Reported optimization is in silico; the paper does not establish experimental binding affinity or therapeutic activity of newly designed antibodies.",
+      "evidence_for_ranking": "Direct antibody-design focus and q-bio.QM placement; tests ten expert-validated affinity-improvement tasks and compares an in-silico optimizer with Bayesian optimization.",
+      "announcement_type": "new submission, 2026-11-03 batch",
+      "announcement_batch_date": "2026-11-03",
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.00558",
+        "https://arxiv.org/pdf/2611.00558v1"
+      ]
+    },
+    {
+      "id": "05-coupling-cellular-trajectories-and-rna-kinetics-on-continuou",
       "kind": "paper",
       "title": "Coupling cellular trajectories and RNA kinetics on continuous expression manifolds with ManifoldVelo",
       "rank": 5,
@@ -111,139 +184,288 @@
       "arxiv_id": "2611.03056",
       "arxiv_version": "v1",
       "published": "2026-11-02T12:49:50Z",
-      "categories": ["q-bio.QM"],
-      "authors": ["Zhen Zhou", "Jiachen Li", "Yuan Liu", "Xiaoyong Pan", "Hong-Bin Shen"],
-      "themes": ["RNA & transcriptomics", "Omics & single-cell methods", "Quantitative methods"],
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Zhen Zhou",
+        "Jiachen Li",
+        "Yuan Liu",
+        "Xiaoyong Pan",
+        "Hong-Bin Shen"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Quantitative methods"
+      ],
       "abstract": "ManifoldVelo jointly fits pseudotime, continuous spliced/unspliced RNA trajectories, and kinetic dynamics, with tests on simulated cyclic and branching processes and real single-cell datasets.",
-      "claimed_contribution": "The authors report improved pseudotime and velocity comparisons on selected benchmarks and transfer of temporal and velocity predictions to new cells using spliced RNA with a fixed reference.",
-      "unique_caveat": "Inferred pseudotime and RNA velocity are computational estimates; agreement with marker or stage patterns is not direct time-resolved validation of every cell's trajectory.",
-      "evidence_for_ranking": "Direct RNA/transcriptomics relevance; comparisons span cyclic and branching simulations plus real-data analyses; arXiv comment links code and numerical source tables.",
-      "announcement_type": "new submission",
+      "claimed_contribution": "The authors report improved pseudotime and velocity comparisons on selected benchmarks and transfer of predictions to new cells using spliced RNA with a fixed reference.",
+      "unique_caveat": "Pseudotime and RNA velocity are computational estimates; agreement with marker or stage patterns is not direct time-resolved validation of every inferred trajectory.",
+      "evidence_for_ranking": "Direct RNA/transcriptomics relevance; comparisons span cyclic and branching simulations plus real-data analyses; the arXiv comment links code and numerical source tables.",
+      "announcement_type": "new submission, 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.03056", "https://arxiv.org/html/2611.03056v1"]
+      "comment": "32 pages, 8 figures and 6 tables. Numerical source tables are provided as ancillary files. Code: https://github.com/ZHOUZHEN2002/ManifoldVelo",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.03056",
+        "https://arxiv.org/pdf/2611.03056v1",
+        "https://arxiv.org/html/2611.03056v1"
+      ]
     },
     {
-      "id": "06-automatic-generation-highly-functional-molecular-sequences",
+      "id": "06-an-auditable-agentic-pipeline-for-variant-to-gene-prioritisa",
       "kind": "paper",
-      "title": "Automatic Generation of Novel Highly-Functional Molecular Sequences",
+      "title": "An auditable agentic pipeline for variant-to-gene prioritisation, validated against orthogonal functional evidence",
       "rank": 6,
-      "url": "https://arxiv.org/abs/2611.03603",
-      "arxiv_id": "2611.03603",
+      "url": "https://arxiv.org/abs/2611.01461",
+      "arxiv_id": "2611.01461",
       "arxiv_version": "v1",
-      "published": "2026-11-02T18:41:20Z",
-      "categories": ["q-bio.BM"],
-      "authors": ["Vincent R. Ragusa", "Chrisoph Adami"],
-      "themes": ["Biochemistry & proteins", "DNA & genomics", "Quantitative methods"],
-      "abstract": "The authors compare sequence-generation strategies on two complete fitness landscapes and report that a training-free information-theoretic method finds rare high-fitness sequences more effectively than the tested variational autoencoders.",
-      "claimed_contribution": "The authors claim a faster, training-free information-theoretic search can outperform tested ML/AI generation methods at finding rare high-fitness sequences; antimicrobial peptide selectivity is discussed as an application, not demonstrated as a wet-lab result here.",
-      "unique_caveat": "The second landscape is digital life, and the paper does not report synthesis or antimicrobial/cytotoxicity assays of generated peptides.",
-      "evidence_for_ranking": "Direct biomolecular sequence-design fit; tests against two complete landscapes, including an experimentally assayed DHFR landscape; first-listed in the focused biomolecules category.",
-      "announcement_type": "new submission",
+      "published": "2026-11-01T02:48:40Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI"
+      ],
+      "authors": [
+        "Shakuntala Baichoo",
+        "Sohail (Neel) Sarkar",
+        "Bo Wang"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "V2G records evidence retrieval and ranks candidate genes for GWAS loci; the authors test whether language-model reranking gains depend on the retrieved evidence.",
+      "claimed_contribution": "On 135 loci with successful retrieval, reranking improves Precision@1 over the evidence ordering, but the authors find no detected difference from Open Targets L2G or training-membership baselines; controls suggest the gain reflects recall of known genes more than use of presented evidence.",
+      "unique_caveat": "The paper reports train/test overlap and retrieval-conditioned subsets; an auditable evidence trail is not proof that an agent reasoned from that evidence.",
+      "evidence_for_ranking": "Direct variant-to-gene genomics task; the abstract quantifies held-out results and tests evidence-row shuffling and known-gene recall.",
+      "announcement_type": "new submission, 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.03603", "https://arxiv.org/html/2611.03603v1"]
+      "comment": "21 pages of main manuscript including References, 4 figures, 11 supplementary tables, 2 main tables",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.01461",
+        "https://arxiv.org/pdf/2611.01461v1"
+      ]
     },
     {
-      "id": "07-dynacell-dynamic-3d-virtual-staining-live-cells",
-      "kind": "paper",
-      "title": "The DynaCell Evaluation Suite for Dynamic 3D Virtual Staining of Live Cells",
-      "rank": 7,
-      "url": "https://arxiv.org/abs/2611.02324",
-      "arxiv_id": "2611.02324",
-      "arxiv_version": "v1",
-      "published": "2026-11-02T00:16:20Z",
-      "categories": ["cs.CV", "q-bio.QM"],
-      "authors": ["Alexandr A. Kalinin", "Dihan Zheng", "Taylla Milena Theodoro", "Ivan Ivanov", "Eduardo Hirata-Miyasaki", "See-Chi Lee", "Aofei Liu", "Sricharan Reddy Varra", "Talon Chandler", "Soorya Pradeep", "Chad Liu", "Manuel D. Leonetti", "Carolina Arias", "Bo Huang", "Shalin B. Mehta"],
-      "themes": ["Molecular & cell biology", "Biomedical & translational medicine", "Quantitative methods"],
-      "abstract": "DynaCell provides paired 3D live-cell imaging data, baseline virtual-staining models, and multi-level metrics to compare image fidelity, organelle segmentation, and cell-phenotype similarity over time.",
-      "claimed_contribution": "The authors find regression baselines better localize organelles while a generative baseline better captures phenotype distributions, showing that one metric can hide different model strengths.",
-      "unique_caveat": "Benchmark results do not validate virtual staining as a replacement for fluorescence in biological experiments; temporal consistency and broader paired data remain important follow-up areas.",
-      "evidence_for_ranking": "Cross-listed in quantitative biology; arXiv says accepted to the NeurIPS 2026 Evaluations and Datasets Track; benchmark spans three cell types, two microscopes, four organelles, and three perturbation states, and releases data/code/checkpoints.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.02324"]
-    },
-    {
-      "id": "08-histotx-early-fusion-spatial-transcriptomics",
+      "id": "07-histotx-early-fusion-of-h-e-images-and-spatial-transcriptomi",
       "kind": "paper",
       "title": "HistoTx: Early fusion of H&E images and spatial transcriptomics at varying spatial transcriptomics resolution with self-supervised learning",
-      "rank": 8,
+      "rank": 7,
       "url": "https://arxiv.org/abs/2611.02681",
       "arxiv_id": "2611.02681",
       "arxiv_version": "v1",
       "published": "2026-11-02T07:36:09Z",
-      "categories": ["cs.LG", "cs.AI", "q-bio.GN", "q-bio.QM"],
-      "authors": ["Alice Driessen", "Emil Malmsten", "Steffen Wolf", "Bernd Illing", "Isinsu Katircioglu", "Adriano Martinelli", "Rolf Stahel", "Solange Peters", "Enriqueta Felip", "Sanjay Popat", "Krisztian Homicsko", "Raphael Gottardo", "Marianna Rapsomaniki", "Fei Tang"],
-      "themes": ["DNA & genomics", "RNA & transcriptomics", "Omics & single-cell methods"],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.GN",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Alice Driessen",
+        "Emil Malmsten",
+        "Steffen Wolf",
+        "Bernd Illing",
+        "Isinsu Katircioglu",
+        "Adriano Martinelli",
+        "Rolf Stahel",
+        "Solange Peters",
+        "Enriqueta Felip",
+        "Sanjay Popat",
+        "Krisztian Homicsko",
+        "Raphael Gottardo",
+        "Marianna Rapsomaniki",
+        "Fei Tang"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Molecular & cell biology"
+      ],
       "abstract": "HistoTx fuses histology-image and spatial-transcriptomic tokens in a shared transformer and evaluates image-only and multimodal inference across gene-expression and pathology tasks.",
-      "claimed_contribution": "The authors report stronger gene-expression prediction than image-only baselines on several benchmarks and additional gains when transcript data are provided at inference.",
-      "unique_caveat": "The authors also report drops on some image-only cancer-subtype classification tasks; benchmark gains do not establish clinical utility or robust transfer to new institutions.",
-      "evidence_for_ranking": "Cross-listed in genomics and quantitative biology; arXiv says presented at the ICML 2026 multimodal life-sciences workshop; evaluated on spatial-transcriptomics and pathology benchmarks.",
-      "announcement_type": "new submission",
+      "claimed_contribution": "The authors report stronger gene-expression prediction than image-only baselines on several benchmarks and further gains when transcript data are provided at inference.",
+      "unique_caveat": "The full text notes that increased HEST image exposure during continued pretraining may partly explain gains; a task-specific supervised baseline outperforms HistoTx on one BEAT prediction task. Benchmark results do not establish clinical utility or transfer to new institutions.",
+      "evidence_for_ranking": "Cross-listed in genomics and quantitative biology; an arXiv comment records presentation at the ICML 2026 multimodal life-sciences workshop; evaluated on spatial-transcriptomics and pathology benchmarks.",
+      "announcement_type": "new submission, cross-listed into q-bio.GN and q-bio.QM in the 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.02681"]
+      "comment": "Presented at 3rd Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences (ICML 2026)",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.02681",
+        "https://arxiv.org/pdf/2611.02681v1",
+        "https://arxiv.org/html/2611.02681v1"
+      ]
     },
     {
-      "id": "09-agentic-therapeutic-antibody-design",
+      "id": "08-cell-lines-that-share-a-well-are-not-independent-observation",
       "kind": "paper",
-      "title": "Can agents reliably design therapeutic antibodies?",
+      "title": "Cell lines that share a well are not independent observations in the Tahoe-100M drug screen",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.01604",
+      "arxiv_id": "2611.01604",
+      "arxiv_version": "v1",
+      "published": "2026-11-01T05:42:09Z",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Xuanrui Huang"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors test whether pooled cell lines in the same well share expression effects that invalidate treating each line as an independent observation in drug-screen evaluation.",
+      "claimed_contribution": "The authors report that within-well dependence can inflate predictive scores and significance tests, and argue that the well should be treated as the experimental unit.",
+      "unique_caveat": "Findings concern the Tahoe-100M pooled-screen setting; extension to other pooled assays and independent datasets needs checking.",
+      "evidence_for_ranking": "Directly relevant to drug-screen experimental design; reports analyses of 13 plates, replicate wells, and well-by-well repeated plates, with code and results linked in the arXiv comment.",
+      "announcement_type": "new submission, 2026-11-03 batch",
+      "announcement_batch_date": "2026-11-03",
+      "comment": "31 pages, 4 figures, 1 supplementary figure, 9 supplementary tables. Code and result files: https://github.com/xuanruihuang/well-is-the-unit",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.01604",
+        "https://arxiv.org/pdf/2611.01604v1"
+      ]
+    },
+    {
+      "id": "09-the-dynacell-evaluation-suite-for-dynamic-3d-virtual-stainin",
+      "kind": "paper",
+      "title": "The DynaCell Evaluation Suite for Dynamic 3D Virtual Staining of Live Cells",
       "rank": 9,
-      "url": "https://arxiv.org/abs/2611.00558",
-      "arxiv_id": "2611.00558",
+      "url": "https://arxiv.org/abs/2611.02324",
+      "arxiv_id": "2611.02324",
       "arxiv_version": "v1",
-      "published": "2026-10-31T02:35:17Z",
-      "categories": ["q-bio.QM", "cs.LG"],
-      "authors": ["Asli Alpman", "Nick Bhattacharya", "Aaron Solomon", "Hunter Elliott"],
-      "themes": ["Biochemistry & proteins", "Bioinformatics & sequence analysis", "Quantitative methods"],
-      "abstract": "The authors evaluate agentic antibody design under instruction-following and black-box optimization settings, finding trade-offs among tool use, design history, exploration, and optimization.",
-      "claimed_contribution": "The authors report that tools improve instruction following and sequence exploration but reduce optimization performance, while design history improves optimization at the cost of exploration.",
-      "unique_caveat": "All reported optimization is in silico; the paper does not establish experimental binding affinity or therapeutic activity of newly designed antibodies.",
-      "evidence_for_ranking": "Direct antibody-design focus and q-bio.QM cross-list; tests ten expert-validated affinity-improvement tasks and compares its in-silico optimizer with Bayesian optimization.",
-      "announcement_type": "new submission",
+      "published": "2026-11-02T00:16:20Z",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Alexandr A. Kalinin",
+        "Dihan Zheng",
+        "Taylla Milena Theodoro",
+        "Ivan Ivanov",
+        "Eduardo Hirata-Miyasaki",
+        "See-Chi Lee",
+        "Aofei Liu",
+        "Sricharan Reddy Varra",
+        "Talon Chandler",
+        "Soorya Pradeep",
+        "Chad Liu",
+        "Manuel D. Leonetti",
+        "Carolina Arias",
+        "Bo Huang",
+        "Shalin B. Mehta"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "DynaCell provides paired 3D live-cell imaging data, baseline virtual-staining models, and multi-level metrics for image fidelity, organelle segmentation, and cell-phenotype similarity over time.",
+      "claimed_contribution": "The authors find regression baselines better localize organelles while a generative baseline better captures phenotype distributions, showing that one metric can hide different model strengths.",
+      "unique_caveat": "Benchmark results do not validate virtual staining as a replacement for fluorescence in biological experiments; the tested cell types and imaging settings are limited.",
+      "evidence_for_ranking": "Cross-listed in quantitative biology; an arXiv comment records acceptance to the NeurIPS 2026 Evaluations and Datasets Track; the benchmark spans three cell types, two microscopes, four organelles, and three perturbation states.",
+      "announcement_type": "new submission, cross-listed into q-bio.QM in the 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.00558"]
+      "comment": "64 pages: 10-page main text with 4 figures and 1 table, plus references and a 49-page appendix with 15 figures and 25 tables. Accepted at NeurIPS 2026, Track on Evaluations and Datasets",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.02324",
+        "https://arxiv.org/pdf/2611.02324v1"
+      ]
     },
     {
-      "id": "10-hemoglobin-oxygen-equilibrium-cooperativity",
-      "kind": "paper",
-      "title": "Canonic hemoglobin-oxygen equilibrium: Reassessing the role of cooperativity",
-      "rank": 10,
-      "url": "https://arxiv.org/abs/2611.00824",
-      "arxiv_id": "2611.00824",
-      "arxiv_version": "v1",
-      "published": "2026-10-31T11:09:28Z",
-      "categories": ["physics.bio-ph", "cond-mat.soft", "cond-mat.stat-mech", "q-bio.BM"],
-      "authors": ["A. E. Allahverdyan", "S. G. Gevorkian", "A. Harutyunyan", "Y. Sh. Mamasakhlisov", "V. Stepanyan"],
-      "themes": ["Biochemistry & proteins", "Molecular & cell biology", "Quantitative methods"],
-      "abstract": "The authors reformulate hemoglobin–oxygen equilibrium in a canonical model of the red-cell environment and predict lower cooperative interaction energies than grand-canonical treatments.",
-      "claimed_contribution": "The authors argue that a canonical red-cell model predicts smaller oxygen-binding fluctuations and that large cooperative energies can produce unstable oxygen release within that model.",
-      "unique_caveat": "This is a theoretical reformulation; the abstract does not report new red-cell experiments testing the predicted oxygen hopping or instability.",
-      "evidence_for_ranking": "Cross-listed in biomolecules and biological physics; arXiv lists a Journal of Chemical Physics reference and DOI; the paper directly revisits a classic biochemical binding model.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.00824"]
-    },
-    {
-      "id": "11-attribution-diagnostics-single-cell-foundation-models",
+      "id": "10-attribution-based-diagnostics-for-single-cell-foundation-mod",
       "kind": "paper",
       "title": "Attribution-based diagnostics for single-cell foundation models",
-      "rank": 11,
+      "rank": 10,
       "url": "https://arxiv.org/abs/2611.02335",
       "arxiv_id": "2611.02335",
       "arxiv_version": "v1",
       "published": "2026-11-02T00:32:31Z",
-      "categories": ["cs.LG", "q-bio.QM"],
-      "authors": ["Farnoush Rezaei Jafari", "Tristan Lazard", "Kenza Bouzid", "Shruthi Bannur", "Jeremiah Wander", "Ashley Mae Conard", "Stephanie Hyland", "Lorin Crawford", "Daniel Coelho de Castro"],
-      "themes": ["RNA & transcriptomics", "Omics & single-cell methods", "Bioinformatics & sequence analysis"],
-      "abstract": "The authors use post-hoc attribution to inspect whether single-cell RNA foundation models rely on biologically meaningful features across cell annotation and perturbation-prediction tasks.",
-      "claimed_contribution": "The authors report that attribution can expose feature use and model behavior missed by predictive metrics alone, while showing that interpretation depends on the chosen reference, baseline, and null model.",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Farnoush Rezaei Jafari",
+        "Tristan Lazard",
+        "Kenza Bouzid",
+        "Shruthi Bannur",
+        "Jeremiah Wander",
+        "Ashley Mae Conard",
+        "Stephanie Hyland",
+        "Lorin Crawford",
+        "Daniel Coelho de Castro"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "The authors use post-hoc attribution to inspect whether single-cell RNA foundation models rely on biologically meaningful features across cell-annotation and perturbation-prediction tasks.",
+      "claimed_contribution": "The authors report that attribution can expose feature use and model behavior missed by predictive metrics alone, while showing that interpretation depends on the selected reference, baseline, and null model.",
       "unique_caveat": "The perturbation analysis uses a controlled synthetic setting; attribution patterns are not themselves proof of causal gene regulation.",
       "evidence_for_ranking": "Direct single-cell RNA focus and q-bio.QM cross-list; tests Cell2Sentence and scGPT annotation and scGPT+STATE perturbation prediction, including a synthetic regulatory-ground-truth setting.",
-      "announcement_type": "new submission",
+      "announcement_type": "new submission, cross-listed into q-bio.QM in the 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.02335"]
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.02335",
+        "https://arxiv.org/pdf/2611.02335v1"
+      ]
     },
     {
-      "id": "12-findings-aware-ct-volume-pretraining-filip",
+      "id": "11-in-depth-data-movement-characterization-of-dna-read-mapping",
+      "kind": "paper",
+      "title": "In-depth data movement characterization of DNA read mapping algorithms",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2611.03400",
+      "arxiv_id": "2611.03400",
+      "arxiv_version": "v1",
+      "published": "2026-11-02T16:31:32Z",
+      "categories": [
+        "cs.AR",
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Berkan Şahin",
+        "Ecem İlgün",
+        "Klea Zambaku",
+        "Can Alkan"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors profile read-mapping implementations across sequencing technologies to identify memory bottlenecks and opportunities for hardware optimization.",
+      "claimed_contribution": "The authors report Minimap2 fastest for long-read scenarios but weaker on whole-genome alignment due to multithreading, and identify memory-bound tools whose cache use could be improved.",
+      "unique_caveat": "Results depend on the selected workloads, tools, and hardware; simulated processing-in-memory gains are not a deployment demonstration.",
+      "evidence_for_ranking": "Cross-listed in genomics; compares named short-read, long-read, and whole-genome alignment tools using VTune and a data-movement simulator.",
+      "announcement_type": "new submission, cross-listed into q-bio.GN in the 2026-11-03 batch",
+      "announcement_batch_date": "2026-11-03",
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.03400",
+        "https://arxiv.org/pdf/2611.03400v1"
+      ]
+    },
+    {
+      "id": "12-findings-aware-language-image-pretraining-for-ct-volume-inte",
       "kind": "paper",
       "title": "Findings-aware Language-Image Pretraining for CT Volume Interpretation",
       "rank": 12,
@@ -251,16 +473,77 @@
       "arxiv_id": "2611.02327",
       "arxiv_version": "v1",
       "published": "2026-11-02T00:21:07Z",
-      "categories": ["cs.CV", "physics.med-ph"],
-      "authors": ["Takuro Shimaya", "Junya Inoh", "Masahiro Saiko"],
-      "themes": ["Medical physics & imaging", "Biomedical & translational medicine", "Quantitative methods"],
-      "abstract": "FiLIP uses report-derived abnormal-finding phrases to supervise CT-volume representations and evaluates zero-shot finding classification and radiology report generation.",
+      "categories": [
+        "cs.CV",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Takuro Shimaya",
+        "Junya Inoh",
+        "Masahiro Saiko"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "FiLIP uses report-derived abnormal-finding phrases to supervise CT-volume representations and evaluates zero-shot finding classification and radiology-report generation.",
       "claimed_contribution": "The authors report improved multi-label zero-shot finding classification over weakly supervised approaches and utility after fine-tuning for report generation.",
-      "unique_caveat": "The abstract does not state cohort sizes or external-site details; classification and report-generation benchmark performance do not establish clinical benefit.",
-      "evidence_for_ranking": "Direct medical-imaging focus; arXiv says accepted to WACV 2027; abstract reports in-domain and external-domain evaluations.",
-      "announcement_type": "new submission",
+      "unique_caveat": "The abstract does not state cohort sizes or external-site details; classification and report-generation benchmarks do not establish clinical benefit.",
+      "evidence_for_ranking": "Direct medical-imaging focus; an arXiv comment records acceptance to WACV 2027; the abstract reports in-domain and external-domain evaluations.",
+      "announcement_type": "new submission, cross-listed into physics.med-ph in the 2026-11-03 batch",
       "announcement_batch_date": "2026-11-03",
-      "refs": ["https://arxiv.org/abs/2611.02327"]
+      "comment": "10+2 pages, accepted to WACV2027",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.02327",
+        "https://arxiv.org/pdf/2611.02327v1"
+      ]
+    },
+    {
+      "id": "13-a-scientific-claim-stability-framework-for-evaluating-mri-mo",
+      "kind": "paper",
+      "title": "A Scientific Claim Stability Framework for Evaluating MRI Morphometry Pipelines",
+      "rank": 13,
+      "url": "https://arxiv.org/abs/2611.02413",
+      "arxiv_id": "2611.02413",
+      "arxiv_version": "v1",
+      "published": "2026-11-02T02:35:45Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM",
+        "stat.ME"
+      ],
+      "authors": [
+        "Duy-Cat Can",
+        "Dang-Duat Tran",
+        "Anh-Khang Nguyen",
+        "Quoc-Bao Tran",
+        "Trung-Hieu Do",
+        "Van-Tu Nguyen",
+        "Duy-Thanh Vu",
+        "Oliver Y. Chén",
+        "Hoang-Quynh Le"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Scientific Claim Stability converts MRI morphometry tables into auditable claims and tests whether those claims persist across datasets, cohorts, pipelines, atlases, and covariate choices.",
+      "claimed_contribution": "The authors report 2,783 claim cards and 89 claim-family comparisons, finding that evidence concordance and anatomical-support overlap can diverge across FreeSurfer and FastSurfer analyses.",
+      "unique_caveat": "Pipeline disagreement is an audit of evidential stability, not proof that one pipeline is clinically correct or that the findings predict patient outcomes.",
+      "evidence_for_ranking": "Cross-listed in quantitative biology; an arXiv comment records acceptance at NeurIPS 2026 (Evaluations and Datasets Track); evaluates 10,370 MRI scans from three datasets and five cohorts.",
+      "announcement_type": "new submission, cross-listed into q-bio.QM in the 2026-11-03 batch",
+      "announcement_batch_date": "2026-11-03",
+      "comment": "44 pages, 4 figures. Accepted at NeurIPS 2026 (Evaluations and Datasets Track)",
+      "journal_ref": "",
+      "doi": "",
+      "refs": [
+        "https://arxiv.org/abs/2611.02413",
+        "https://arxiv.org/pdf/2611.02413v1"
+      ]
     },
     {
       "id": "80-trending-research-themes",
@@ -268,7 +551,8 @@
       "title": "Trending Research Themes",
       "rank": null,
       "url": null,
-      "text": "Modeling and narrowing molecular search spaces (PeptSol, RangeFinder, Automatic Generation); genomic interpretation and auditing (WGD, V2G); single-cell and multimodal biological evaluation (ManifoldVelo, HistoTx, DynaCell, Attribution-based diagnostics). These papers report complementary methods, not a validated end-to-end discovery or clinical pipeline."
+      "text": "- **Molecular search and developability:** RangeFinder predicts pocket-compatible property ranges; PeptSol benchmarks protected-peptide solubility; the sequence-generation paper compares landscape search; and the antibody-agent paper studies in-silico optimization. These are complementary computational approaches, not a validated end-to-end drug-discovery pipeline.\n- **Single-cell and multimodal inference:** ManifoldVelo couples RNA kinetics to cell trajectories, HistoTx combines histology with spatial transcriptomics, DynaCell evaluates dynamic virtual staining, and the attribution paper probes how single-cell foundation models make predictions. Their different tasks and datasets make their metrics non-interchangeable.\n- **Evaluation and evidence quality:** V2G tests whether reranking uses retrieved evidence; the Tahoe-100M paper challenges the experimental unit in pooled screens; and Scientific Claim Stability asks whether MRI conclusions persist across analysis choices. All emphasize that benchmark accuracy alone can conceal fragile evidence.\n- **Genomic and biomedical computation:** DNA mapper profiling identifies hardware bottlenecks, while FiLIP evaluates report-guided CT representation learning. Both are computational evaluations, not evidence of improved patient outcomes.",
+      "refs": []
     },
     {
       "id": "81-open-problems-and-research-directions",
@@ -276,7 +560,8 @@
       "title": "Open Problems and Research Directions",
       "rank": null,
       "url": null,
-      "text": "Prospectively test whether PeptSol guidance improves manufacturing yield and recovery; separate V2G evidence use from known-gene recall on independent functional assays; validate molecule-design predictions with synthesis and binding/activity assays; and test cell-dynamics and virtual-staining methods on independent time courses, donors, cell types, and microscopes."
+      "text": "- **Prospective molecular validation:** RangeFinder, PeptSol, sequence generation, and antibody design all leave a gap between prediction and practical function. A blinded follow-up could freeze model predictions, synthesize or select matched candidates, measure binding/activity or peptide solubility and process recovery, and compare against baseline-selected molecules. For PeptSol, independent programmes and broader protected scaffolds would address the source concentration noted by the authors.\n- **Separate evidence use from memorized association:** V2G's controls suggest that reranking gains may reflect known-gene recall rather than the retrieved evidence. Test on loci with independently generated functional assays and minimal reference overlap, with evidence ablation and provenance-preserving controls.\n- **Validate inferred cell dynamics and multimodal transfer:** ManifoldVelo could be tested on independent, densely sampled perturbation time courses with held-out donors or plates. HistoTx needs external-institution and assay/platform evaluation, while DynaCell's virtual stains should be tested on new cell types and microscopes with prespecified temporal and phenotype endpoints before use as a fluorescence substitute.\n- **Check generality of evaluation warnings:** Replicate the Tahoe-100M well-level dependence analysis in independent pooled screens, and compare MRI claim stability across additional acquisition protocols and prespecified covariate sets. These studies would establish how broadly the reported evaluation risks apply.",
+      "refs": []
     },
     {
       "id": "90-takeaway",
@@ -284,7 +569,8 @@
       "title": "Takeaway",
       "rank": null,
       "url": null,
-      "text": "The batch is notable for peptide and protein-design benchmarks, large-scale cancer genomics, and rigorous scrutiny of AI systems used for biological inference. It is too new for a measured popularity ranking; prospective experiments and external validation remain the clearest next steps."
+      "text": "This batch is most notable for molecular-design benchmarks, RNA and spatial-omics methods, and work that audits how biomedical AI evidence is generated. Workshop or conference acceptance and broad benchmark coverage are checkable signals of relevance, not popularity or biological validity. Prospective experiments, independent datasets, and external validation remain the key gaps; no clinical recommendation follows from these preprints.",
+      "refs": []
     }
   ]
 }

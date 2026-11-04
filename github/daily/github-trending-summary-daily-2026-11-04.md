@@ -4,91 +4,95 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-04 01:31 UTC |
+| Snapshot time (UTC) | 2026-11-04 17:29 UTC |
 | Scope | Daily |
 | Date range | 2026-11-04 through 2026-11-04 |
-| Ranking basis | Daily Trending star gains; two newly created agent projects are appended as discovery signals |
+| Ranking basis | GitHub Trending daily star gains; one separately labeled GitHub Search freshness signal is appended, not ranked by gains |
 
 ## Headline
 
-Agent-workflow infrastructure leads today's signal: Vercel's agent-desktop gained 3,791 stars, with Scrapling, skills/memory projects, and agent orchestration also drawing strong attention. Local inference and specialized ML remain visible in colibri and Kronos, while a two-day GitHub Search scan surfaced two additional new agent harnesses.
+Agent interfaces and workflow infrastructure dominate today’s strongest signals: accessibility-tree computer use, semantic data grounding, web extraction, and persistent agent memory lead the Trending gains. A fresh automation project and an optical-disc design tool add distinct signals beyond the coding-agent cluster.
 
 ## Top Repositories
 
-1. **[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) - A computer-use CLI that lets agents inspect and operate desktop apps through the operating system's accessibility tree rather than pixel matching.**
+1. **[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)  - Computer-use CLI that exposes desktop apps through OS accessibility trees, returning actionable element refs rather than relying on screenshots or pixel matching.**
 
-  **Language:** Rust | **Stars gained in window:** +3,791 | **Total stars:** 12,832 | **Why notable:** The day's strongest star-gain signal, paired with a concrete, cross-platform agent interaction primitive.
+  **Language:** Rust | **Stars gained in window:** +2,463 | **Total stars:** 14,542 | **Why notable:** Why notable: Computer-use CLI that exposes desktop apps through OS accessibility trees, returning actionable element refs rather than relying on screenshots or pixel matching.
 
-2. **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) - A Python scraping framework spanning fast HTTP requests, browser rendering, parsing, and concurrent crawls.**
+2. **[NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology)  - A service that compiles database metadata into a reviewed semantic ontology so agents can ground business terms, relationships, and SQL instead of inferring them from raw schemas.**
 
-  **Language:** Python | **Stars gained in window:** +1,658 | **Total stars:** 94,900 | **Why notable:** One of the day's largest gains; its first-party docs describe reusable sessions, proxy rotation, retries, pause/resume, and agent/MCP access.
+  **Language:** Python | **Stars gained in window:** +2,053 | **Total stars:** 4,387 | **Why notable:** Why notable: A service that compiles database metadata into a reviewed semantic ontology so agents can ground business terms, relationships, and SQL instead of inferring them from raw schemas.
 
-3. **[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) - A set of agents, skills, and coordination workflows intended to turn Claude Code into a game-development studio.**
+3. **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)  - A Python web-scraping framework spanning individual requests through full crawls, with first-party docs describing modern-site handling and agent-facing integrations.**
 
-  **Language:** Shell | **Stars gained in window:** +1,182 | **Total stars:** 34,690 | **Why notable:** Signals demand for packaged multi-agent workflows applied to a specific production domain.
+  **Language:** Python | **Stars gained in window:** +2,006 | **Total stars:** 96,152 | **Why notable:** Why notable: A Python web-scraping framework spanning individual requests through full crawls, with first-party docs describing modern-site handling and agent-facing integrations.
 
-4. **[mattpocock/skills](https://github.com/mattpocock/skills) - A collection of agent skills described by its maintainer as “Skills for Real Engineers.”**
+4. **[JiaFeiMiao-K-Cat/DiscImageStudio](https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio)  - A cross-platform tool that turns images into optical-disc data for visible artwork on CD, DVD, and single-layer Blu-ray media.**
 
-  **Language:** Shell | **Stars gained in window:** +1,164 | **Total stars:** 311,497 | **Why notable:** High daily momentum for reusable, task-specific agent instructions rather than a standalone agent product.
+  **Language:** C# | **Stars gained in window:** +1,792 | **Total stars:** 6,276 | **Why notable:** Why notable: A cross-platform tool that turns images into optical-disc data for visible artwork on CD, DVD, and single-layer Blu-ray media.
 
-5. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) - A persistent context system that captures tool-use observations, summarizes them, and makes them searchable across sessions.**
+5. **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)  - Persistent agent-session memory that captures and compresses session context, then retrieves it in later sessions across several coding-agent integrations.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,139 | **Total stars:** 111,938 | **Why notable:** Strong signal for memory and continuity becoming infrastructure around coding agents.
+  **Language:** TypeScript | **Stars gained in window:** +1,165 | **Total stars:** 112,609 | **Why notable:** Why notable: Persistent agent-session memory that captures and compresses session context, then retrieves it in later sessions across several coding-agent integrations.
 
-6. **[JustVugg/colibri](https://github.com/JustVugg/colibri) - A C inference engine that runs large mixture-of-experts models by keeping active experts in memory and streaming others from disk.**
+6. **[floci-io/floci](https://github.com/floci-io/floci)  - An open-source local AWS emulator aimed at development, tests, and CI, designed to work with existing AWS SDKs, CLI, and infrastructure tools.**
 
-  **Language:** C | **Stars gained in window:** +802 | **Total stars:** 47,261 | **Why notable:** Its RAM/GPU/NVMe hierarchy makes local execution of much larger models the central draw.
+  **Language:** Java | **Stars gained in window:** +1,082 | **Total stars:** 29,427 | **Why notable:** Why notable: An open-source local AWS emulator aimed at development, tests, and CI, designed to work with existing AWS SDKs, CLI, and infrastructure tools.
 
-7. **[p-e-w/heretic](https://github.com/p-e-w/heretic) - A training-free toolkit for modifying language-model behavior.**
+7. **[github/spec-kit](https://github.com/github/spec-kit)  - An open-source toolkit for applying spec-driven development and other structured processes with coding agents, using reusable templates, extensions, presets, and workflows.**
 
-  **Language:** Python | **Stars gained in window:** +701 | **Total stars:** 38,813 | **Why notable:** A distinct model-control theme alongside the broader push toward agent tooling.
+  **Language:** Python | **Stars gained in window:** +810 | **Total stars:** 147,135 | **Why notable:** Why notable: An open-source toolkit for applying spec-driven development and other structured processes with coding agents, using reusable templates, extensions, presets, and workflows.
 
-8. **[shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) - A family of foundation models and tools for financial-market candlestick sequences.**
+8. **[harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)  - An AI-assisted workflow for generating short videos from a topic or keyword.**
 
-  **Language:** Python | **Stars gained in window:** +503 | **Total stars:** 46,530 | **Why notable:** Shows continued interest in domain-specific time-series modeling beyond general-purpose language models.
+  **Language:** Python | **Stars gained in window:** +615 | **Total stars:** 138,767 | **Why notable:** Why notable: An AI-assisted workflow for generating short videos from a topic or keyword.
 
-9. **[floci-io/floci](https://github.com/floci-io/floci) - A local emulator for AWS services.**
+9. **[max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)  - A Rust CLI that simplifies Git worktree management for parallel coding-agent runs, with commands, hooks, and build-cache conveniences.**
 
-  **Language:** Java | **Stars gained in window:** +482 | **Total stars:** 28,813 | **Why notable:** A strong infrastructure-testing project among today's application- and agent-heavy trends.
+  **Language:** Rust | **Stars gained in window:** +524 | **Total stars:** 10,895 | **Why notable:** Why notable: A Rust CLI that simplifies Git worktree management for parallel coding-agent runs, with commands, hooks, and build-cache conveniences.
 
-10. **[max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) - A Git worktree-management CLI designed for parallel AI-agent workflows.**
+10. **[FareedKhan-dev/kimi-k3-in-c](https://github.com/FareedKhan-dev/kimi-k3-in-c)  - A portable C99 project claiming to run Kimi K3 inference on a CPU with a small memory footprint, without BLAS, a framework, or a GPU.**
 
-  **Language:** Rust | **Stars gained in window:** +438 | **Total stars:** 10,512 | **Why notable:** Treats parallel agent work as a repository/workspace management problem, not just a prompting problem.
+  **Language:** C | **Stars gained in window:** +351 | **Total stars:** 10,118 | **Why notable:** Why notable: A portable C99 project claiming to run Kimi K3 inference on a CPU with a small memory footprint, without BLAS, a framework, or a GPU.
 
-11. **[anomalyco/hex](https://github.com/anomalyco/hex) - Local voice dictation software for macOS, Windows, and Linux.**
+11. **[garrytan/gstack](https://github.com/garrytan/gstack)  - A TypeScript collection of opinionated Claude Code tools organized around software-team roles such as design, engineering management, release, documentation, and QA.**
 
-  **Language:** Rust | **Stars gained in window:** +410 | **Total stars:** 4,603 | **Why notable:** Adds a local-first voice input angle to the day's desktop and developer-tool activity.
+  **Language:** TypeScript | **Stars gained in window:** +285 | **Total stars:** 139,171 | **Why notable:** Why notable: A TypeScript collection of opinionated Claude Code tools organized around software-team roles such as design, engineering management, release, documentation, and QA.
 
-12. **[Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) - A Playwright- and AI-based system for scheduled or live Xianyu marketplace monitoring and analysis.**
+12. **[The-PR-Agent/pr-agent](https://github.com/The-PR-Agent/pr-agent)  - An open-source coding assistant focused on automated pull-request review.**
 
-  **Language:** Python | **Stars gained in window:** +228 | **Total stars:** 16,424 | **Why notable:** An applied example of task automation and analysis for a specific consumer marketplace.
+  **Language:** Python | **Stars gained in window:** +279 | **Total stars:** 14,626 | **Why notable:** Why notable: An open-source coding assistant focused on automated pull-request review.
 
-13. **[spotify/portal-ai-plugins](https://github.com/spotify/portal-ai-plugins) - Spotify's repository for Portal AI plugins.**
+13. **[scenario-labs/skills](https://github.com/scenario-labs/skills)  - Agent skills and integrations for generating or editing images, video, audio, and 3D content, with model selection and cost-oriented workflow support.**
 
-  **Language:** TypeScript | **Stars gained in window:** +91 | **Total stars:** 3,049 | **Why notable:** A smaller signal that established developer platforms are also exposing plugin surfaces for AI tooling.
+  **Language:** Python | **Stars gained in window:** +224 | **Total stars:** 2,253 | **Why notable:** Why notable: Agent skills and integrations for generating or editing images, video, audio, and 3D content, with model selection and cost-oriented workflow support.
 
-14. **[Balanov/shim](https://github.com/Balanov/shim) - A small, local-first Go harness for connecting models, MCP servers, and agent skills through a CLI.**
+14. **[Thysrael/Horizon](https://github.com/Thysrael/Horizon)  - A Python-based personal news radar that produces daily briefings in English and Chinese.**
 
-  **Language:** Go | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 436 | **Why notable:** A newly created repository found in the last-two-days Search scan; its README emphasizes a single static binary, local configuration, and confirmation for mutating commands.
+  **Language:** Python | **Stars gained in window:** +121 | **Total stars:** 12,392 | **Why notable:** Why notable: A Python-based personal news radar that produces daily briefings in English and Chinese.
 
-15. **[KKKKhazix/agent-autoloop](https://github.com/KKKKhazix/agent-autoloop) - A plugin-based local automation layer that dispatches tasks to CLI agents and asks a person to decide when needed.**
+15. **[KKKKhazix/agent-autoloop](https://github.com/KKKKhazix/agent-autoloop)  - A newly created (2026-11-03) plugin-oriented local automation hub that dispatches work to command-line agents and asks for human decisions only when needed.**
 
-  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 349 | **Why notable:** A newly created agent-orchestration project found by GitHub Search; it describes event-driven jobs, resumable work, and human approval for uncertain or risky actions.
+  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 2,334 | **Why notable:** Freshness signal: GitHub Search found the repo created on 2026-11-03 with recent pushes; not included in Trending star-gain ranking.
 
 ## Trending Technologies and Themes
 
-- **Agent workflow infrastructure:** agent-desktop, claude-mem, worktrunk, mattpocock/skills, Claude-Code-Game-Studios, shim, and agent-autoloop cover computer interaction, persistent context, parallel workspaces, reusable skills, orchestration, and human checkpoints. The common thread is tooling around agents' operating environment and lifecycle.
-- **Local inference and model control:** colibri's hierarchical MoE inference and heretic's training-free model modification point to interest in running or shaping models locally; hex adds local voice input at the application layer.
-- **Automation and data access:** Scrapling combines browser/HTTP scraping with crawling and agent interfaces; ai-goofish-monitor applies automation to marketplace listings, while floci focuses on local cloud-service testing.
-- **Domain-specific ML:** Kronos targets financial candlestick data with a specialized tokenizer and autoregressive model, rather than treating market sequences as ordinary text.
-- **Languages:** Python leads this 15-repository set (4), followed by Rust and TypeScript (3 each), Shell (2), and C, Go, and Java (1 each). This is a count of listed projects, not a platform-wide language share.
+- **Agent computer use:** vercel-labs/agent-desktop approaches GUI automation through accessibility-tree snapshots and stable element references, with the agent managing its own action loop.
+- **Persistent agent context:** thedotmack/claude-mem makes cross-session memory a standalone integration layer, responding to the need to preserve useful context across agent runs.
+- **Agent workflow infrastructure:** github/spec-kit, max-sixty/worktrunk, garrytan/gstack, The-PR-Agent/pr-agent, and the newly created KKKKhazix/agent-autoloop span structured development, parallel worktrees, role-based tools, PR review, and unattended task orchestration.
+- **Grounded data access:** NVIDIA/auto-ontology emphasizes reviewed semantic definitions and answerability checks to keep data agents from improvising business meaning and SQL.
+- **Local developer infrastructure:** floci-io/floci provides an AWS-shaped local emulator for development and CI; the signal is practical reproducibility rather than cloud provisioning.
+- **Web data extraction:** D4Vinci/Scrapling is the day’s prominent focused developer library, covering web scraping from single requests to crawling workflows.
+- **Media workflows and a hardware outlier:** scenario-labs/skills packages agent access to generative media tools, while DiscImageStudio is a high-momentum non-AI outlier for creating visible artwork on optical discs.
+- **Other focused projects:** MoneyPrinterTurbo and Horizon apply AI to short-video generation and bilingual news briefings; kimi-k3-in-c explores CPU inference in portable C, with its performance claims unverified here.
+- **Languages:** Python (7), TypeScript (3), Rust (2), Java (1), C (1), C# (1) across the 15 listed repositories. Agent-autoloop is the supplemental Search result; among the 14 Trending entries, TypeScript is 2.
 
 ## Takeaway
 
-Today's strongest pattern is a shift from standalone assistants toward the infrastructure that makes agents persistent, operable, and coordinated: memory, skills, desktop control, worktrees, and approval loops. At the same time, local inference and domain-specific data projects show that the trend is not confined to coding agents. The two newly created repositories are Search-discovered additions, not entries with a reported daily Trending star delta.
+Today’s repo-level momentum is concentrated in practical agent infrastructure: agents that can operate desktop apps, retain context, work in parallel, and follow structured processes. The concurrent rise of semantic data grounding and local developer tooling points to a focus on making agent workflows more dependable and easier to run. Treat performance and product claims as project descriptions, not independent validation.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Today](https://github.com/trending?since=daily).
-- **Corroboration:** GitHub REST repository and default-branch commit endpoints for all listed repositories; GitHub Search API query `created:2026-11-02..2026-11-04 stars:>50` to identify newly created projects, with obvious spam/noise excluded.
-- **Method note:** The first 13 entries are ordered by the daily star-gain figures shown on GitHub Trending. Current total stars, language, and default-branch commit SHAs were checked through GitHub REST during this snapshot. The two Search-discovered repositories were created within the last two days and are appended after the Trending-ranked entries; GitHub did not provide a comparable daily star-gain figure for them. No prior-day comparison was available, so no Notable Shifts section is included.
+- **Primary source:** https://github.com/trending?since=daily (GitHub Trending, Today).
+- **Corroboration:** GitHub REST API repository metadata and default-branch commits; GitHub Search API query `created:2026-11-02..2026-11-04 stars:>100`, sorted by stars, plus current README files for selected repositories.
+- **Method note:** Trending star gains are taken from the daily Trending page; current total stars and commit SHAs were corroborated through the REST API. The supplemental agent-autoloop entry was discovered via Search and has no comparable daily Trending gain figure. Obvious list-only/learning repositories were filtered. No prior-window evidence was collected, so no Notable Shifts section is claimed.

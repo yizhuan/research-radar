@@ -3,212 +3,353 @@
   "category": "bio",
   "window": "daily",
   "date": "2026-11-04",
-  "window_start_date": "2026-11-04",
-  "window_end_date": "2026-11-04",
-  "snapshot_utc": "2026-11-05T01:16:27Z",
+  "date_range": {
+    "start": "2026-11-04",
+    "end": "2026-11-04"
+  },
+  "snapshot_utc": "2026-11-05T17:11:39Z",
   "announcement_batch_date": "2026-11-04",
-  "uses_prior_batch": true,
-  "title": "Notable recent biology and biomedical papers — arXiv announcement batch, 4 November 2026",
+  "title": "arXiv Biology & Biomedicine — latest announcement batch, 2026-11-04",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-04.md",
   "entry_count": 8,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance-ranked selection from incomplete biomedical coverage, not a readership ranking or comprehensive view of biology and medicine. Computational, simulated, retrospective, and experimental evidence are distinguished.",
+  "global_caveat": "arXiv has no official trending chart; the ranking is inferred from relevance and reported evidence because independent attention signals are sparse. arXiv is an incomplete index of biomedical research, and this report does not cover bioRxiv, medRxiv, or the wider medical literature.",
+  "category_query": "cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
       "rank": null,
-      "url": null,
-      "content": "Latest available batch: 4 November 2026; eight papers selected. Protein design and conformational modelling dominate, alongside a DNA-model benchmark, regulatory-network software, and early intraoperative imaging. Attention evidence is sparse, so entries are ranked by relevance and evidence type, not popularity.",
-      "refs": ["https://arxiv.org/list/q-bio.BM/recent", "https://arxiv.org/list/q-bio.GN/recent", "https://arxiv.org/list/q-bio.MN/recent", "https://arxiv.org/list/q-bio.QM/recent", "https://arxiv.org/list/physics.med-ph/recent"]
+      "url": "",
+      "content": "The latest available arXiv announcement batch is 2026-11-04. Eight relevant papers span single-cell perturbation prediction, protein modeling, gene-expression noise, tumor and reaction-network theory, and medical physics. Attention evidence is sparse; this is a relevance-ranked selection, not an official popularity chart, and arXiv biomedical coverage is incomplete.",
+      "global_caveat": "arXiv has no official trending chart; this inferred relevance ranking is based on a limited arXiv category corpus, which does not represent biomedical research as a whole and omits much of bioRxiv and medRxiv."
     },
     {
-      "id": "01-proteocraft-protein-design-as-proposal-verification-search",
+      "id": "01-cellcanon-agentic-cellular-world-model",
       "kind": "paper",
+      "title": "CellCanon: An Agentic Cellular World Model for Prediction, Explanation, and Observation-Driven Updating",
       "rank": 1,
-      "title": "ProteoCraft: Protein Design as Proposal-Verification Search",
-      "url": "https://arxiv.org/abs/2611.03963",
-      "arxiv_id": "2611.03963",
+      "url": "https://arxiv.org/abs/2611.05890",
+      "arxiv_id": "2611.05890",
       "arxiv_version": "v1",
-      "published": "2026-11-02T21:03:10Z",
-      "categories": ["cs.CE", "cs.AI", "q-bio.BM"],
-      "authors": ["Fang Wu", "Hongbin Lin", "Bingchen Duan", "Yuchen Wang", "Li Erran Li", "Yanjie Huang", "Mingxuan Cao", "Yijun Ma", "Yunxiang Mo", "Yanchao Li", "Kuan Pang", "Juangui Xu", "Hanqun Cao", "Dongwei Jiang", "Xinyue Xu", "Xiangru Tang", "Zehong Wang", "Jian Ma", "Kejun Ying", "Guanlue Li", "Mingran Cao", "Fanjin Wang", "Tianfan Fu", "Shuangjia Zheng", "Yao Shu", "Jure Leskovec", "Yejin Choi"],
-      "themes": ["Biochemistry & proteins", "Bioinformatics & sequence analysis"],
-      "abstract": "ProteoCraft uses tree search guided by approximate structure-prediction gradients to propose protein sequences and separately verifies candidates with stricter structure-based scoring.",
-      "claimed_contribution": "The authors report improved design quality across 14 settings and prospective binding experiments: an 82.9% PD-L1 miniprotein hit rate, best measured KD 0.879 nM, and binding of a designed IFNAR2 VHH.",
-      "unique_caveat": "Experimental results cover selected targets and designs; broad performance, specificity, and therapeutic utility are not established.",
-      "evidence_for_ranking": "Direct protein-interaction design relevance, three-category cross-listing, and author-reported prospective binding measurements; indexed Semantic Scholar record had 0 current citations and 0 influential citations.",
+      "published": "2026-11-04T03:29:21Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI"
+      ],
+      "authors": [
+        "Zhaokang Liang",
+        "Shuyang Zhuang",
+        "Xiaoran Jiao",
+        "Hao Chen"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Quantitative methods"
+      ],
+      "abstract": "CellCanon combines single-cell expression prediction, source-grounded explanations, and observation-driven updating; on 339 held-out SciPlex3 drug–cell conditions across three cell lines, the authors report improved differential-expression metrics over their best baselines.",
+      "claimed_contribution": "The authors report DE AUPRC and Macro-F1 gains of 63.3% and 17.3% over the best baseline, respectively, plus updating from simulated feedback using measurements withheld from the same dataset.",
+      "unique_caveat": "Evaluation is on SciPlex3 and simulated measurement feedback, not prospective experiments or an external perturbation cohort; benchmark gains do not establish biological or clinical validity.",
+      "evidence_for_ranking": "Direct single-cell perturbation relevance; the abstract reports 339 held-out conditions in three cell lines and benchmark comparisons.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.03963", "https://github.com/smiles724/ProteoCraft_v1"]
+      "refs": [
+        "https://arxiv.org/abs/2611.05890"
+      ]
     },
     {
-      "id": "02-igc-antibody-optimization-via-reinforcement-learning-over-a-learned-somatic-hypermutation-prior",
+      "id": "02-discrete-backbone-elasticity",
       "kind": "paper",
+      "title": "Discrete Backbone Elasticity and Curvature-Dependent Torsion Statistics in Proteins",
       "rank": 2,
-      "title": "iGC: Antibody Optimization via Reinforcement Learning over a Learned Somatic Hypermutation Prior",
-      "url": "https://arxiv.org/abs/2611.05270",
-      "arxiv_id": "2611.05270",
+      "url": "https://arxiv.org/abs/2611.06363",
+      "arxiv_id": "2611.06363",
       "arxiv_version": "v1",
-      "published": "2026-11-03T17:55:25Z",
-      "categories": ["cs.LG", "q-bio.BM"],
-      "authors": ["Thao Nguyen", "Robert G. Alberstein", "Ewa Nowara", "Homa MohammadiPeyhani", "Holly R. Steach", "Sarah A. Robinson", "Yuval Shechter", "Donald W. Lee", "Jason A. Vander Heiden", "Franziska Seeger", "Andrew Leaver-Fay", "Richard Bonneau", "Joshua Yao-Yu Lin"],
-      "themes": ["Biochemistry & proteins", "Bioinformatics & sequence analysis"],
-      "abstract": "iGC combines a learned somatic-hypermutation prior with reinforcement learning to propose antigen-specific antibody sequence changes while penalizing reward exploitation.",
-      "claimed_contribution": "The authors report that the learned mutation prior more than doubled the strongest baseline on mutation-site prediction and that optimization retained sequence patterns associated with SHM.",
-      "unique_caveat": "Generated candidates were evaluated using DMS-derived rewards rather than direct experimental measurements; wet-lab affinity improvement is not established.",
-      "evidence_for_ranking": "Direct antibody-maturation relevance, biomolecules/ML cross-listing, and evaluations of mutation prediction, SHM consistency, reward, and diversity.",
+      "published": "2026-11-04T11:25:47Z",
+      "categories": [
+        "q-bio.BM",
+        "cond-mat.soft",
+        "math-ph",
+        "physics.bio-ph",
+        "physics.chem-ph"
+      ],
+      "authors": [
+        "Yiquan Wang",
+        "Mingyu Bian",
+        "Jiayuan Ma"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The paper derives a local elastic statistical model linking neighboring protein-backbone bends to torsion distributions and tests it against protein structures and molecular-dynamics trajectories.",
+      "claimed_contribution": "The authors report that the six-parameter baseline lowers negative log-density loss from 1.490 to 1.160 nats and improves torsion-sign and helix-fraction errors; a two-state extension further lowers test loss to 0.790 nats.",
+      "unique_caveat": "Results are statistical predictions against structural and simulation references, not experimental validation of folding or conformational kinetics. The discussion notes force-field and starting-state dependence and remaining errors associated with atomic context.",
+      "evidence_for_ranking": "Model fitting on 194 ATLAS chains, testing on 1,744 sequence-nonredundant proteins, and transfer checks on 72 peptide/miniprotein trajectories.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.05270"]
+      "refs": [
+        "https://arxiv.org/abs/2611.06363"
+      ]
     },
     {
-      "id": "03-predicting-protein-structures-at-any-folding-stage-from-sequence",
+      "id": "03-prompt-gamma-time-imaging",
       "kind": "paper",
+      "title": "Experimental Assessment of Prompt Gamma Time Imaging in Complex Anatomy",
       "rank": 3,
-      "title": "Predicting protein structures at any folding stage from sequence",
-      "url": "https://arxiv.org/abs/2611.04287",
-      "arxiv_id": "2611.04287",
+      "url": "https://arxiv.org/abs/2611.06683",
+      "arxiv_id": "2611.06683",
       "arxiv_version": "v1",
-      "published": "2026-11-03T04:15:20Z",
-      "categories": ["q-bio.BM", "cs.AI"],
-      "authors": ["Lisheng Zhang", "Qingsong Li", "Zinan Xie", "Yanting Yang", "Qikui Yang", "Peng Lu", "Zhican Fu", "Wentao Cui", "Runtong Hou", "Zhengwei Xie"],
-      "themes": ["Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "FoldScape generates sequence-conditioned Cα conformational ensembles at specified folding fractions, aiming to represent intermediate as well as near-native states.",
-      "claimed_contribution": "The authors report broader folding-coordinate coverage than seed-varied AlphaFold 3 ensembles on 20 human proteins at matched sample size, while AlphaFold 3 better covers the immediate native vicinity.",
-      "unique_caveat": "The paper notes single trajectories for some protein-speed conditions and calls for more protein coverage and replicate trajectories; intermediate-state properties are not experimentally validated across the full set.",
-      "evidence_for_ranking": "Direct protein-structure relevance, biomolecules/AI cross-listing, and a 20-protein comparison with an explicit baseline.",
+      "published": "2026-11-04T15:52:06Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Pavel Kavrigin",
+        "Alicia Garnier",
+        "Adélie André",
+        "Chaima Abid",
+        "Yannick Boursier",
+        "Mathieu Dupont",
+        "Giuseppe Fanciulli",
+        "Laurent Gallin Martel",
+        "Marie-Laure Gallin Martel",
+        "Christophe Hoarau",
+        "Christian Morel",
+        "Jean-François Muraz",
+        "Maxime Pinson",
+        "Dimitrios Psarras",
+        "Nicola Toschi",
+        "Daniel Maneval",
+        "Sara Marcatili"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "Prompt-Gamma Time Imaging jointly reconstructs proton velocity and gamma-emission profiles from multi-detector time-of-flight data, tested experimentally in an anthropomorphic head phantom.",
+      "claimed_contribution": "The authors report recovering material sequence and proton range from the phantom measurements, extending prompt-gamma timing beyond indirect range verification.",
+      "unique_caveat": "This is a phantom demonstration in two configurations, not patient testing. The paper notes limited sensitivity for materials with similar densities and material misclassification in some bins.",
+      "evidence_for_ranking": "Eight detector modules; 100 MeV protons in two anatomical phantom configurations; approximately 1 mm range difference in the reported example.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.04287"]
+      "refs": [
+        "https://arxiv.org/abs/2611.06683"
+      ]
     },
     {
-      "id": "04-empirical-bayes-flow-matching-for-continuous-cryo-em-heterogeneity",
+      "id": "04-modeling-gene-expression-noise",
       "kind": "paper",
+      "title": "Modeling Gene Expression Noise: From Transcriptional Dynamics to Cell Growth and Division",
       "rank": 4,
-      "title": "Empirical Bayes Flow Matching for Continuous Cryo-EM Heterogeneity",
-      "url": "https://arxiv.org/abs/2611.05202",
-      "arxiv_id": "2611.05202",
+      "url": "https://arxiv.org/abs/2611.06537",
+      "arxiv_id": "2611.06537",
       "arxiv_version": "v1",
-      "published": "2026-11-03T16:51:30Z",
-      "categories": ["cs.LG", "q-bio.BM"],
-      "authors": ["Daniel Aibinder", "Azmi Haider", "Dan Rosenbaum"],
-      "themes": ["Biochemistry & proteins", "Quantitative methods", "Medical physics & imaging"],
-      "abstract": "EB-FM learns a generative prior over protein conformations directly from noisy observations using an empirical-Bayes flow-matching procedure.",
-      "claimed_contribution": "The authors report recovery of continuous conformational distributions from simulated cryo-EM observations without pretraining on clean structures.",
-      "unique_caveat": "Experiments assume known poses, underestimate conformational spread, and remain computationally expensive; real data with unknown poses are future work.",
-      "evidence_for_ranking": "Molecular-imaging relevance and biomolecules/ML cross-listing; evaluated on controlled inverse problems and simulated cryo-EM. arXiv comment reports NeurIPS 2026 acceptance; indexed Semantic Scholar record had 0 current citations and 0 influential citations.",
+      "published": "2026-11-04T14:07:17Z",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "authors": [
+        "Augustinas Sukys",
+        "Lucy Ham",
+        "Kaan Öcal",
+        "James Holehouse",
+        "Ramon Grima"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Gene regulation & epigenetics",
+        "Quantitative methods"
+      ],
+      "abstract": "This review synthesizes stochastic gene-expression models that account for cell growth, DNA replication, cell-cycle variation, and division, including how these processes affect single-cell measurements and parameter inference.",
+      "claimed_contribution": "The authors argue that static-cell telegraph/bursty models can misattribute noise when growth and division matter, and outline cell-cycle-resolved measurements and models needed for better inference.",
+      "unique_caveat": "This is a review, not a new experimental dataset or systematic evidence appraisal; its conclusions depend on the underlying studies and their measurement designs.",
+      "evidence_for_ranking": "The review covers modeling assumptions, inference strategies, and explicit open questions about cell-cycle-aware single-cell measurements.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.05202"]
+      "refs": [
+        "https://arxiv.org/abs/2611.06537"
+      ]
     },
     {
-      "id": "05-ablating-design-choices-for-protein-ensemble-generators-across-structural-regimes",
+      "id": "05-system-theoretic-cellular-potts",
       "kind": "paper",
+      "title": "System-Theoretic Analysis of Extended Cellular Potts Models for Tumor Invasion",
       "rank": 5,
-      "title": "Ablating Design Choices for Protein Ensemble Generators Across Structural Regimes",
-      "url": "https://arxiv.org/abs/2611.05055",
-      "arxiv_id": "2611.05055",
+      "url": "https://arxiv.org/abs/2611.06690",
+      "arxiv_id": "2611.06690",
       "arxiv_version": "v1",
-      "published": "2026-11-03T15:20:50Z",
-      "categories": ["q-bio.BM", "cs.LG"],
-      "authors": ["Eoin Quinn", "Oliver Bent"],
-      "themes": ["Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "The authors ablate protein-ensemble model and training choices across ordered, disordered, multidomain, and transitional proteins, comparing outputs against SAXS and NMR chemical-shift data.",
-      "claimed_contribution": "The authors report that training-source choices affected agreement more than several architecture choices; fragment-assembled ensembles improve chemical-shift agreement with a SAXS trade-off.",
-      "unique_caveat": "Agreement on selected observables does not establish recovery of all biological states or dynamics.",
-      "evidence_for_ranking": "Biomolecules/ML cross-listing and comparisons to experimental SAXS and NMR across multiple structural regimes.",
+      "published": "2026-11-04T15:55:57Z",
+      "categories": [
+        "eess.SY",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Andrea Tramaloni",
+        "Simone Baroncini",
+        "Sofia Avnet",
+        "Nicola Baldini",
+        "Giuseppe Notarstefano"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors formulate an extended Cellular Potts model coupling interacting tumor cells to extracellular-matrix degradation and derive convergence and invasion-time results.",
+      "claimed_contribution": "The authors derive asymptotic ECM behavior, transition-probability bounds, convergence results, and closed-form invasion-time probabilities in one-dimensional settings.",
+      "unique_caveat": "Evidence is mathematical analysis and simulation of a model, not validation against tumor experiments or patient data; the closed-form invasion results are restricted to one dimension.",
+      "evidence_for_ranking": "Direct tumor-invasion and cell-microenvironment relevance; formal stochastic/dynamical analysis and numerical simulation checks.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.05055"]
+      "refs": [
+        "https://arxiv.org/abs/2611.06690"
+      ]
     },
     {
-      "id": "06-bend-2-0-benchmarking-the-capabilities-needed-to-design-dna",
+      "id": "06-ventilation-perfusion-difference-spect",
       "kind": "paper",
+      "title": "Ventilation Perfusion Functional Difference Images in Lung SPECT: a linear and symmetrical scale as an alternative to the Ventilation Perfusion Ratio",
       "rank": 6,
-      "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
-      "url": "https://arxiv.org/abs/2611.03806",
-      "arxiv_id": "2611.03806",
+      "url": "https://arxiv.org/abs/2611.06390",
+      "arxiv_id": "2611.06390",
       "arxiv_version": "v1",
-      "published": "2026-11-02T19:00:07Z",
-      "categories": ["q-bio.GN", "cs.LG", "q-bio.QM"],
-      "authors": ["Andreas Bjerregaard", "Rachael DeVries", "Dionysia Danai Brilli", "Panagiotis Antoniadis", "Yan Li", "Anders Krogh", "Wouter Boomsma", "Ole Winther", "Frederikke Isa Marin"],
-      "themes": ["DNA & genomics", "Bioinformatics & sequence analysis"],
-      "abstract": "BEND 2.0 evaluates genomic models on predicting DNA-change effects and guiding sequence design across eight tasks built from five experimental datasets.",
-      "claimed_contribution": "The authors report that frozen-representation linear readouts can match or exceed native model outputs, while post-training improves some capabilities; context-specific and combined-mutation effects remain harder.",
-      "unique_caveat": "Retrospective benchmark performance does not demonstrate successful prospective DNA design; context-specific and multi-cell objectives remain unsaturated.",
-      "evidence_for_ranking": "Direct genomics focus, three-category cross-listing, and an eight-task/five-dataset benchmark with cross-assay and gene-transfer tests.",
+      "published": "2026-11-04T11:55:50Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Robin de Nijs",
+        "Ronan M. G. Berg",
+        "Sofie Lindskov Hansen",
+        "Jann Mortensen"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "The paper evaluates a bounded, symmetric ventilation–perfusion difference scale as an alternative to ratio images for displaying mismatches in lung SPECT.",
+      "claimed_contribution": "The authors propose that a relative VQ-difference scale is symmetric and bounded from −1 to +1, and report deriving image thresholds from their patient examples.",
+      "unique_caveat": "The cohort is ten patients and results are shown for three; diagnostic benefit is proposed rather than established by an external or outcome-based validation study.",
+      "evidence_for_ranking": "Ten-patient investigation; the arXiv record reports an existing Physica Medica 2024 reference and DOI 10.1016/j.ejmp.2024.103306; the arXiv announcement itself is a new submission.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.03806", "https://github.com/machinelearninglifescience/BEND2"]
+      "refs": [
+        "https://arxiv.org/abs/2611.06390",
+        "https://doi.org/10.1016/j.ejmp.2024.103306"
+      ]
     },
     {
-      "id": "07-ginsim-3-1-qualitative-modelling-and-dynamical-analysis-of-logical-regulatory-networks",
+      "id": "07-self-sustaining-chemical-network",
       "kind": "paper",
+      "title": "Can a self-sustaining chemical network emerge due to just a few catalysts?",
       "rank": 7,
-      "title": "GINsim 3.1: Qualitative modelling and dynamical analysis of logical regulatory networks",
-      "url": "https://arxiv.org/abs/2611.04109",
-      "arxiv_id": "2611.04109",
+      "url": "https://arxiv.org/abs/2611.06033",
+      "arxiv_id": "2611.06033",
       "arxiv_version": "v1",
-      "published": "2026-11-03T00:34:22Z",
-      "categories": ["q-bio.MN"],
-      "authors": ["Laurent Tichit", "Dominique Benielli", "Olivier Chabrol", "Denis Thieffry", "Claudine Chaouiya", "Pedro T. Monteiro"],
-      "themes": ["Gene regulation & epigenetics", "Molecular & cell biology", "Quantitative methods"],
-      "abstract": "GINsim 3.1 adds symbolic trap-space computation, Booleanisation and dynamics reversal, and extends reachability and model-reduction analyses for qualitative regulatory networks.",
-      "claimed_contribution": "The authors report new qualitative analyses and CoLoMoTo interoperability, illustrated on a multilevel mammalian cell-cycle regulatory model; the software is GPL-3.0.",
-      "unique_caveat": "The illustration is model-based and depends on the supplied network and qualitative assumptions; it does not experimentally confirm cell-cycle mechanisms.",
-      "evidence_for_ranking": "Direct q-bio.MN software contribution and illustrative cell-cycle model; indexed Semantic Scholar record had 0 current citations and 0 influential citations.",
+      "published": "2026-11-04T06:38:47Z",
+      "categories": [
+        "q-bio.MN",
+        "math.PR"
+      ],
+      "authors": [
+        "Jinsu Kim",
+        "Ercan Sönmez"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods",
+        "Chemical reaction networks"
+      ],
+      "abstract": "A stochastic mathematical model examines when heterogeneous catalytic activity and reaction compatibility permit reflexively autocatalytic, food-generated chemical networks to form.",
+      "claimed_contribution": "The authors show mathematically that reaction-dependent catalysis can alter classical RAF phase-transition criteria and that heavy-tailed catalytic weights may permit RAF formation even as catalytic intensity tends to zero.",
+      "unique_caveat": "This is a theoretical random-network result; it does not demonstrate that such a network forms in a laboratory or occurs in a prebiotic environment.",
+      "evidence_for_ranking": "Direct relevance to catalytic networks and chemical origins-of-life theory; derived formation/nonformation criteria and a heavy-tailed-weight phase transition.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.04109", "https://ginsim.github.io/"]
+      "refs": [
+        "https://arxiv.org/abs/2611.06033"
+      ]
     },
     {
-      "id": "08-perioperative-shear-wave-elastography-for-evaluation-of-spinal-cord-release-in-pediatric-dysraphism",
+      "id": "08-vhee-beam-parameters",
       "kind": "paper",
+      "title": "Estimation of Very High Energy Electron (VHEE) beam parameters using an in-air screen",
       "rank": 8,
-      "title": "Perioperative shear wave elastography for the evaluation of spinal cord release in pediatric dysraphism: first experience in 21 patients",
-      "url": "https://arxiv.org/abs/2611.04746",
-      "arxiv_id": "2611.04746",
+      "url": "https://arxiv.org/abs/2611.05973",
+      "arxiv_id": "2611.05973",
       "arxiv_version": "v1",
-      "published": "2026-11-03T12:01:54Z",
-      "categories": ["physics.med-ph"],
-      "authors": ["Mathilde Gaume", "Lou Richard", "Claudio Vergari", "Eleonore Blondiaux", "Marius Buffard", "Raphael Vialle", "Timothée de Saint-Denis"],
-      "themes": ["Biomedical & translational medicine", "Medical physics & imaging"],
-      "abstract": "This retrospective, single-centre feasibility study measured spinal-cord stiffness before and after detethering surgery in 21 pediatric patients using intraoperative shear-wave elastography.",
-      "claimed_contribution": "The authors report a significant pre/post stiffness decrease (25.2 to 11.2 kPa; p=0.018) and describe measurement as feasible in this cohort.",
-      "unique_caveat": "Single-centre retrospective data from 21 patients; no established pediatric reference values and limited clinical interpretability. The study does not show improved surgical outcomes or support practice recommendations.",
-      "evidence_for_ranking": "Human feasibility cohort with a reported sample size and analyzability endpoint; the arXiv record cites a 2026 Journal of Neurosurgery: Spine article.",
+      "published": "2026-11-04T05:07:26Z",
+      "categories": [
+        "physics.med-ph",
+        "physics.acc-ph"
+      ],
+      "authors": [
+        "Joel Valerian",
+        "Paul Giansiracusa",
+        "Vincent Lu",
+        "Paarangat Pushkarna",
+        "Roger Rassool",
+        "Suzie Lyn Sheehy",
+        "Yaw-Ren Eugene Tan",
+        "Matteo Volpi"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors develop a scattering-corrected method for estimating very-high-energy electron beam parameters from quadrupole scans and in-air screen measurements, motivated by radiotherapy.",
+      "claimed_contribution": "The authors report a multiple-scattering correction that recovers simulated beam parameters and yields experimental estimates within expected ranges after fitting correction factors.",
+      "unique_caveat": "The study concerns accelerator beam characterization, not patient treatment or clinical outcomes; the authors call for more work to improve consistency and reliability of experimental estimates.",
+      "evidence_for_ranking": "Monte Carlo validation and measurements at the PEER end station; abstract reports parameter errors and experimental emittance ranges.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-04",
-      "refs": ["https://arxiv.org/abs/2611.04746"]
+      "refs": [
+        "https://arxiv.org/abs/2611.05973"
+      ]
     },
     {
       "id": "80-trending-research-themes",
       "kind": "themes",
       "title": "Trending Research Themes",
       "rank": null,
-      "url": null,
-      "content": "Protein sequence-to-structure design and conformational sampling recur across ProteoCraft, iGC, FoldScape, EB-FM, and the protein-ensemble ablation study, with evidence ranging from computational scoring to reported binding experiments. BEND 2.0 and the protein-ensemble study examine generalization across biological contexts. The elastography cohort is a feasibility study whose authors note that missing pediatric reference values limit interpretation.",
-      "refs": ["https://arxiv.org/abs/2611.03963", "https://arxiv.org/abs/2611.05270", "https://arxiv.org/abs/2611.04287", "https://arxiv.org/abs/2611.05202", "https://arxiv.org/abs/2611.05055", "https://arxiv.org/abs/2611.03806", "https://arxiv.org/abs/2611.04746"]
+      "url": "",
+      "content": "Computational representations: CellCanon and the protein-backbone model apply different learned/mathematical approaches, not independent biological validation. Cell-history-aware expression modeling: the review highlights growth, division, and measurement design. Tumor and chemical-network dynamics: the Cellular Potts and RAF papers are theoretical/modeling studies without direct experimental confirmation. Medical physics: PGTI is phantom-tested, VQ-difference uses a small human cohort, and VHEE measures accelerator beam parameters; validation levels differ.",
+      "refs": [
+        "2611.05890",
+        "2611.06363",
+        "2611.06537",
+        "2611.06690",
+        "2611.06033",
+        "2611.06683",
+        "2611.06390",
+        "2611.05973"
+      ]
     },
     {
       "id": "81-open-problems-and-research-directions",
       "kind": "opportunities",
       "title": "Open Problems and Research Directions",
       "rank": null,
-      "url": null,
-      "content": "Test protein binders in blinded, prospective comparisons across targets and report expression, binding, specificity, and developability; synthesize iGC candidates and compare measured binding with DMS rewards. For FoldScape and EB-FM, add replicate trajectories, broader protein coverage, real cryo-EM data with unknown poses, and independent structural measurements. For BEND 2.0, test paired and combinatorial edits in held-out genes and matched cellular contexts. For elastography, conduct multicentre repeatability work, age-stratified reference measurements, and blinded associations with independent surgical outcomes before inferring clinical utility.",
-      "refs": ["https://arxiv.org/abs/2611.03963", "https://arxiv.org/abs/2611.05270", "https://arxiv.org/abs/2611.04287", "https://arxiv.org/abs/2611.05202", "https://arxiv.org/abs/2611.03806", "https://arxiv.org/abs/2611.04746"]
+      "url": "",
+      "content": "Prospective, external perturbation-screen tests for CellCanon; independent experimental conformational ensembles and contextual extensions for the protein model; larger heterogeneous phantom and patient cohorts with locked settings for PGTI/VQ-difference; lineage-resolved matched cell-age/size, nascent/mature RNA, and protein measurements to test cell-cycle noise models.",
+      "refs": [
+        "2611.05890",
+        "2611.06363",
+        "2611.06537",
+        "2611.06683",
+        "2611.06390"
+      ]
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
       "rank": null,
-      "url": null,
-      "content": "Protein design and conformational ensembles dominate this batch, with a DNA-design benchmark and early intraoperative imaging study broadening the scope. Only some papers report experiments; the clinical imaging result remains cohort-limited. This is a relevance-ranked snapshot, not a measured popularity chart.",
-      "refs": ["https://arxiv.org/abs/2611.03963", "https://arxiv.org/abs/2611.05270", "https://arxiv.org/abs/2611.04287", "https://arxiv.org/abs/2611.05202", "https://arxiv.org/abs/2611.05055", "https://arxiv.org/abs/2611.03806", "https://arxiv.org/abs/2611.04109", "https://arxiv.org/abs/2611.04746"]
+      "url": "",
+      "content": "This batch mixes computational models, a review, phantom imaging, and small-cohort imaging. Benchmark and phantom results are promising within their reported settings, but they are not clinical validation or evidence of field-wide popularity."
     }
   ]
 }

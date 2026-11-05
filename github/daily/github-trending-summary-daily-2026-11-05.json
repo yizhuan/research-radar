@@ -5,53 +5,41 @@
   "date": "2026-11-05",
   "title": "GitHub Trending Summary - Daily - 2026-11-05",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-05.md",
-  "entry_count": 13,
+  "entry_count": 14,
   "entry_noun": "repositories",
-  "ranking_basis": "Daily GitHub Trending star gains for ranks 1–12, plus a GitHub Search newly-active supplement with unavailable daily gain",
-  "ranking_explanation": "The first 12 entries are ranked descending by stars-today values on the matching GitHub Trending daily page. A 13th, explicitly labeled newly-active supplement was found with GitHub Search for repos created 2026-11-03 through 2026-11-05; its daily Trending gain is unavailable. Current total stars and default-branch commit SHAs were corroborated via GitHub sources.",
-  "global_caveat": "GitHub Trending daily star gains are point-in-time displayed values; API star totals and the Trending scrape can differ slightly. The newly-active supplement is not on the Trending page and has no comparable daily gain. Repository README claims were not independently benchmarked.",
+  "ranking_basis": "GitHub Trending daily star gains for the 12 primary entries; two newly created repositories appended separately as freshness supplements.",
+  "ranking_explanation": "Ranks 1-12 are ordered by the stars-today values shown in the GitHub Trending daily view, independently of that page's display order. Ranks 13-14 are not daily-gain ranks: they are newly created, recently active repositories found with GitHub Search, appended in descending current star total. Their daily gains are unavailable and explicitly null/N/A.",
+  "global_caveat": "Daily star gains are point-in-time values from GitHub Trending. Total-star counts and default-branch commit SHAs were corroborated through GitHub REST where available; later unauthenticated REST reads hit the rate limit for a few repositories, so their totals use the refreshed Trending page or earlier successful API reads. Newly active supplements are not comparable by daily gain. No prior-window evidence was gathered, so no Notable Shifts section is included.",
   "themes": [
     {
-      "id": "agent-workflows",
-      "title": "Agent operating environments and reusable workflows",
-      "summary": "The leading signal is tooling around how agents act and work: accessibility-based desktop control, persistent memory, composable skills, structured specs, Git worktrees, role-based engineering workflows, and a newly created event-driven agent orchestrator.",
-      "supporting_repository_ids": [
-        "repo-01",
-        "repo-05",
-        "repo-06",
-        "repo-08",
-        "repo-10",
-        "repo-12",
-        "repo-13"
-      ]
+      "id": "agent-context-computer-use",
+      "title": "Agent context and computer use",
+      "summary": "Agent systems are gaining richer context and more direct computer interaction: NVIDIA's semantic layer grounds analytics in business definitions, while Vercel's CLI and terminal-mac approach computer use through accessibility trees or a separate virtual macOS guest.",
+      "supporting_repository_ids": ["repo-01", "repo-02", "repo-14"]
     },
     {
-      "id": "grounded-agent-data",
-      "title": "Grounded agent context and data acquisition",
-      "summary": "NVIDIA Auto Ontology focuses on governed semantic context for analytics agents, while Scrapling supplies the web-data acquisition layer; together they emphasize better inputs and traceable answers rather than only model capability.",
-      "supporting_repository_ids": [
-        "repo-02",
-        "repo-03"
-      ]
+      "id": "agent-skills-and-workflows",
+      "title": "Skills and packaged workflows",
+      "summary": "Reusable skills and explicit engineering roles package agent know-how for installation across tasks and tools; several entries extend this model into creative software or scheduled agent work.",
+      "supporting_repository_ids": ["repo-03", "repo-07", "repo-08", "repo-12", "repo-13"]
     },
     {
-      "id": "local-dev-inference",
-      "title": "Local and reproducible developer infrastructure",
-      "summary": "Floci emulates AWS locally, Worktrunk supports parallel worktrees, and kimi-k3-in-c explores CPU-only inference; each makes local execution or parallel development a core proposition.",
-      "supporting_repository_ids": [
-        "repo-07",
-        "repo-10",
-        "repo-11"
-      ]
+      "id": "parallel-agent-infrastructure",
+      "title": "Parallel-agent developer infrastructure",
+      "summary": "Worktrunk simplifies isolated Git worktrees for parallel agents, while Agent Autoloop adds event-driven scheduling, plugin routing, and human approval checkpoints.",
+      "supporting_repository_ids": ["repo-09", "repo-13"]
     },
     {
-      "id": "specialist-workflows",
-      "title": "Purpose-built creative and media utilities",
-      "summary": "Disc Image Studio and MoneyPrinterTurbo show that specialized creative production tools also earn significant daily attention outside the coding-agent cluster.",
-      "supporting_repository_ids": [
-        "repo-04",
-        "repo-09"
-      ]
+      "id": "automation-data-and-local-cloud",
+      "title": "Automation, data access, and local cloud",
+      "summary": "Scrapling and the Xianyu monitor automate web data collection; Floci supplies a local AWS-shaped endpoint for development, testing, and CI.",
+      "supporting_repository_ids": ["repo-04", "repo-06", "repo-10"]
+    },
+    {
+      "id": "specialist-tools",
+      "title": "Specialist utilities beyond agent tooling",
+      "summary": "Optical-disc image authoring and voice AI provide distinct non-agent or adjacent-AI signals in the daily set.",
+      "supporting_repository_ids": ["repo-05", "repo-11"]
     }
   ],
   "sections": [
@@ -59,358 +47,334 @@
       "id": "00-snapshot",
       "kind": "snapshot",
       "title": "Snapshot",
-      "content": "Snapshot time (UTC): 2026-11-05 01:38 UTC. Scope: Daily. Date range: 2026-11-04 through 2026-11-05. Ranking basis: Daily Trending star gains for ranks 1–12 plus a newly-active GitHub Search supplement; total stars and current commits corroborated via GitHub sources."
+      "content": "Snapshot time (UTC): 2026-11-05 17:39 UTC. Scope: Daily. Date range: 2026-11-05 through 2026-11-05. Ranking basis: GitHub Trending daily star gains; two newly created repositories are appended separately as freshness supplements."
     },
     {
       "id": "01-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "AI-agent tooling dominates today: accessibility-based computer use leads, with semantic context, persistent memory, reusable workflows, and parallel-agent development also drawing strong attention. A newly created event-driven agent orchestrator adds an early high-star signal. Practical local infrastructure—from AWS emulation to CPU inference—joins standout scraping and creative-production utilities."
+      "content": "Agent infrastructure dominates today's strongest momentum: NVIDIA's semantic context layer and Vercel's desktop computer-use CLI lead the daily star-gain field. A parallel wave of agent skills and workflow tooling is joined by a few distinct outliers in scraping, local AWS emulation, optical-disc authoring, and voice AI."
+    },
+    {
+      "id": "02-top-repositories",
+      "kind": "repo_list",
+      "title": "Top Repositories",
+      "content": "The first 12 repositories are ranked by daily Trending star gains; the final two are separately labeled newly active supplements with no comparable daily-gain figure.",
+      "refs": ["repo-01", "repo-02", "repo-03", "repo-04", "repo-05", "repo-06", "repo-07", "repo-08", "repo-09", "repo-10", "repo-11", "repo-12", "repo-13", "repo-14"]
     },
     {
       "id": "repo-01",
       "kind": "repo",
-      "title": "vercel-labs/agent-desktop",
+      "title": "NVIDIA/auto-ontology",
       "rank": 1,
-      "url": "https://github.com/vercel-labs/agent-desktop",
-      "description": "Computer-use CLI for AI agents; operates desktop apps through accessibility-tree references rather than screenshot/pixel matching.",
-      "language": "Rust",
-      "stars_gained": 2470,
-      "total_stars": 15173,
-      "default_branch_commit": "d83bfafdc900be497450baf40098f8b6d843c5db",
-      "why_notable": "Leads today with +2,470 stars and represents a concrete shift from screenshot-driven computer use to structured accessibility-tree interaction.",
-      "theme_ids": [
-        "agent-workflows"
-      ],
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "description": "A semantic graph and context layer that grounds LLM and agent analytics in enterprise data definitions and provenance.",
+      "language": "Python",
+      "stars_gained": 2707,
+      "total_stars": 6866,
+      "default_branch_commit": "c4495670947eb7b4616f0dd9900e5ced2a48ca1e",
+      "why_notable": "Highest daily gain on the snapshot; its README documents semantic context served to agent harnesses through MCP, CLI, and API.",
+      "theme_ids": ["agent-context-computer-use"],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 1,
-      "spoken_name": "Agent Desktop",
+      "spoken_name": "NVIDIA Auto Ontology",
       "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "vercel-labs/agent-desktop"
-      ]
+      "refs": ["NVIDIA/auto-ontology"]
     },
     {
       "id": "repo-02",
       "kind": "repo",
-      "title": "NVIDIA/auto-ontology",
+      "title": "vercel-labs/agent-desktop",
       "rank": 2,
-      "url": "https://github.com/NVIDIA/auto-ontology",
-      "description": "Builds a semantic context layer from enterprise metadata so agents can ground analytics in governed metrics, entities, relationships, and provenance.",
-      "language": "Python",
-      "stars_gained": 2050,
-      "total_stars": 5101,
-      "default_branch_commit": "2a24f5d34ef6b6e168a7f22d308504d3ab36a198",
-      "why_notable": "Second by daily gain (+2,050); the repo frames reliable agentic analytics as a semantic context and provenance problem.",
-      "theme_ids": [
-        "grounded-agent-data"
-      ],
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "description": "A cross-platform computer-use CLI that lets agents inspect and operate apps through native accessibility trees.",
+      "language": "Rust",
+      "stars_gained": 2173,
+      "total_stars": 16519,
+      "default_branch_commit": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+      "why_notable": "Second-highest daily gain; the observe-by-accessibility-tree approach avoids screenshot and pixel matching loops.",
+      "theme_ids": ["agent-context-computer-use"],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 2,
-      "spoken_name": "NVIDIA Auto Ontology",
+      "spoken_name": "Agent Desktop",
       "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "NVIDIA/auto-ontology"
-      ]
+      "refs": ["vercel-labs/agent-desktop"]
     },
     {
       "id": "repo-03",
       "kind": "repo",
-      "title": "D4Vinci/Scrapling",
+      "title": "mattpocock/skills",
       "rank": 3,
-      "url": "https://github.com/D4Vinci/Scrapling",
-      "description": "Python web-scraping framework intended to scale from individual requests to full crawls.",
-      "language": "Python",
-      "stars_gained": 2005,
-      "total_stars": 96598,
-      "default_branch_commit": "3a4bb5b0a008233c85269a0a38a6d08edd4ce329",
-      "why_notable": "Third by daily gain (+2,005), showing strong demand for practical web-data acquisition tooling.",
-      "theme_ids": [
-        "grounded-agent-data"
-      ],
+      "url": "https://github.com/mattpocock/skills",
+      "description": "A collection of small, composable engineering skills for coding agents.",
+      "language": "Shell",
+      "stars_gained": 2053,
+      "total_stars": 314733,
+      "default_branch_commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "why_notable": "One of the day's largest surges; its README emphasizes editable, composable skills designed to work across models and agent tools.",
+      "theme_ids": ["agent-skills-and-workflows"],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 3,
-      "spoken_name": "Scrapling",
+      "spoken_name": "Matt Pocock Skills",
       "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "D4Vinci/Scrapling"
-      ]
+      "refs": ["mattpocock/skills"]
     },
     {
       "id": "repo-04",
       "kind": "repo",
-      "title": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "title": "D4Vinci/Scrapling",
       "rank": 4,
-      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
-      "description": "Cross-platform disc-image design and burning tool that converts artwork into visible CD/DVD/single-layer Blu-ray surface patterns.",
-      "language": "C#",
-      "stars_gained": 1778,
-      "total_stars": 6633,
-      "default_branch_commit": "3a5cde635c182d6a7e01ff99c2cc1be2ac3ab668",
-      "why_notable": "Fourth by daily gain (+1,778), a high-momentum specialist utility outside the dominant agent-tool cluster.",
-      "theme_ids": [
-        "specialist-workflows"
-      ],
-      "signal_strength": "standard",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "A Python framework spanning targeted web extraction through full-site crawling.",
+      "language": "Python",
+      "stars_gained": 1661,
+      "total_stars": 97685,
+      "default_branch_commit": "3a4bb5b0a008233c85269a0a38a6d08edd4ce329",
+      "why_notable": "Strong momentum reflects demand for resilient web data collection; the repository also publishes an agent skill and extensive documentation.",
+      "theme_ids": ["automation-data-and-local-cloud"],
+      "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 4,
-      "spoken_name": "Disc Image Studio",
+      "spoken_name": "Scrapling",
       "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "JiaFeiMiao-K-Cat/DiscImageStudio"
-      ]
+      "refs": ["D4Vinci/Scrapling"]
     },
     {
       "id": "repo-05",
       "kind": "repo",
-      "title": "mattpocock/skills",
+      "title": "JiaFeiMiao-K-Cat/DiscImageStudio",
       "rank": 5,
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Composable engineering-focused agent skills, designed to be adapted and used across coding models.",
-      "language": "Shell",
-      "stars_gained": 1379,
-      "total_stars": 313356,
-      "default_branch_commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
-      "why_notable": "+1,379 stars; its model-agnostic, composable engineering skills illustrate the packaging of development practice as reusable agent workflows.",
-      "theme_ids": [
-        "agent-workflows"
-      ],
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "description": "A cross-platform tool for converting images into visible patterns on recordable CD, DVD, and single-layer Blu-ray discs.",
+      "language": "C#",
+      "stars_gained": 977,
+      "total_stars": 7133,
+      "default_branch_commit": "b86404fef9111d418b234449a6d5c7839ae03542",
+      "why_notable": "A niche but unusually specific hardware-software project among the day's high-gain repositories.",
+      "theme_ids": ["specialist-tools"],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 5,
-      "spoken_name": "Matt Pocock Skills",
-      "unique_caveat": "",
+      "spoken_name": "Disc Image Studio",
+      "unique_caveat": "Immediate disc burning is marked experimental in the README.",
       "enrichment": null,
-      "refs": [
-        "mattpocock/skills"
-      ]
+      "refs": ["JiaFeiMiao-K-Cat/DiscImageStudio"]
     },
     {
       "id": "repo-06",
       "kind": "repo",
-      "title": "thedotmack/claude-mem",
+      "title": "floci-io/floci",
       "rank": 6,
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Persistent memory for coding agents, capturing session activity, compressing it, and retrieving relevant context in later sessions.",
-      "language": "TypeScript",
-      "stars_gained": 1172,
-      "total_stars": 112882,
-      "default_branch_commit": "d8bf121ae98063e5e3158befff33a9d635c0246b",
-      "why_notable": "+1,172 stars; persistent cross-session context is another major agent infrastructure signal.",
-      "theme_ids": [
-        "agent-workflows"
-      ],
+      "url": "https://github.com/floci-io/floci",
+      "description": "A local AWS emulator for development, testing, and CI.",
+      "language": "Java",
+      "stars_gained": 784,
+      "total_stars": 30197,
+      "default_branch_commit": "918ce95b53eaa2758a92a2b6f18ce868c8d11d17",
+      "why_notable": "Provides an AWS-shaped local endpoint compatible with common SDK, CLI, and infrastructure workflows.",
+      "theme_ids": ["automation-data-and-local-cloud"],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 6,
-      "spoken_name": "Claude-Mem",
+      "spoken_name": "Floci",
       "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "thedotmack/claude-mem"
-      ]
+      "refs": ["floci-io/floci"]
     },
     {
       "id": "repo-07",
       "kind": "repo",
-      "title": "floci-io/floci",
+      "title": "scenario-labs/skills",
       "rank": 7,
-      "url": "https://github.com/floci-io/floci",
-      "description": "Local AWS emulator for development, testing, and CI, designed to work with standard AWS SDKs and tooling.",
-      "language": "Java",
-      "stars_gained": 1090,
-      "total_stars": 29648,
-      "default_branch_commit": "4abccec0c80cb15175a09316a41bb0f16772e881",
-      "why_notable": "+1,090 stars; local cloud emulation continues to attract attention as a reproducible developer/testing workflow.",
-      "theme_ids": [
-        "local-dev-inference"
-      ],
+      "url": "https://github.com/scenario-labs/skills",
+      "description": "Agent skills for production-ready image, video, audio, and 3D generation, with additional creative-software workflows.",
+      "language": "Python",
+      "stars_gained": 674,
+      "total_stars": 2900,
+      "default_branch_commit": "340a715e3424c54b46a799980ee80f3075530fea",
+      "why_notable": "Extends agent skills beyond code into multimodal production via Scenario MCP and specialist skills for installed creative applications.",
+      "theme_ids": ["agent-skills-and-workflows"],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 7,
-      "spoken_name": "Floci",
-      "unique_caveat": "",
+      "spoken_name": "Scenario Agent Skills",
+      "unique_caveat": "Most Scenario production skills require Scenario MCP; the expert DCC/game-engine skills require the corresponding software installed locally.",
       "enrichment": null,
-      "refs": [
-        "floci-io/floci"
-      ]
+      "refs": ["scenario-labs/skills"]
     },
     {
       "id": "repo-08",
       "kind": "repo",
-      "title": "github/spec-kit",
+      "title": "garrytan/gstack",
       "rank": 8,
-      "url": "https://github.com/github/spec-kit",
-      "description": "Toolkit for spec-driven development and other structured coding-agent processes, with reusable processes, templates, and extensions.",
-      "language": "Python",
-      "stars_gained": 808,
-      "total_stars": 147327,
-      "default_branch_commit": "ec9a6f3b94c0aa856f77e550785a1ddde1993de1",
-      "why_notable": "+808 stars; a prominent formalization of spec-driven and process-driven coding-agent work.",
-      "theme_ids": [
-        "agent-workflows"
-      ],
+      "url": "https://github.com/garrytan/gstack",
+      "description": "A role-based coding-agent toolkit spanning product thinking, engineering, review, QA, security, and release.",
+      "language": "TypeScript",
+      "stars_gained": 608,
+      "total_stars": 139795,
+      "default_branch_commit": "37d55328b0a8fbd3e738f6a246f360f34e4865bf",
+      "why_notable": "Packages an engineering workflow as explicit agent roles and slash commands.",
+      "theme_ids": ["agent-skills-and-workflows"],
       "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 8,
-      "spoken_name": "Spec Kit",
-      "unique_caveat": "",
+      "spoken_name": "gstack",
+      "unique_caveat": "Claude Code is the fully certified host; other host integrations have varying maturity.",
       "enrichment": null,
-      "refs": [
-        "github/spec-kit"
-      ]
+      "refs": ["garrytan/gstack"]
     },
     {
       "id": "repo-09",
       "kind": "repo",
-      "title": "harry0703/MoneyPrinterTurbo",
+      "title": "max-sixty/worktrunk",
       "rank": 9,
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "description": "Automates short-video creation from a topic or keyword, including script, media matching, subtitles, music, and rendering.",
-      "language": "Python",
-      "stars_gained": 617,
-      "total_stars": 138999,
-      "default_branch_commit": "c8dbf96e9dfee43b30f7c3f440175d6bd4de61de",
-      "why_notable": "+617 stars; a full content-production workflow broadens the snapshot beyond coding agents.",
-      "theme_ids": [
-        "specialist-workflows"
-      ],
-      "signal_strength": "brief",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "description": "A Rust CLI that simplifies Git worktrees for parallel AI-agent tasks.",
+      "language": "Rust",
+      "stars_gained": 546,
+      "total_stars": 11397,
+      "default_branch_commit": "79f19f6407b63044fe7da2d4f3ad4cb9f6adc3a9",
+      "why_notable": "Addresses a practical developer bottleneck as multiple agents work in isolated repositories at once.",
+      "theme_ids": ["parallel-agent-infrastructure"],
+      "signal_strength": "standard",
       "evidence_density": "rich",
       "narration_priority": 9,
-      "spoken_name": "MoneyPrinter Turbo",
+      "spoken_name": "Worktrunk",
       "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "harry0703/MoneyPrinterTurbo"
-      ]
+      "refs": ["max-sixty/worktrunk"]
     },
     {
       "id": "repo-10",
       "kind": "repo",
-      "title": "max-sixty/worktrunk",
+      "title": "Usagi-org/ai-goofish-monitor",
       "rank": 10,
-      "url": "https://github.com/max-sixty/worktrunk",
-      "description": "Rust CLI for Git worktree management, including parallel AI-agent workflows.",
-      "language": "Rust",
-      "stars_gained": 531,
-      "total_stars": 11057,
-      "default_branch_commit": "3bf9166a6e3b74db0de25c2a1f9aeeae54d2873a",
-      "why_notable": "+531 stars; worktrees are explicitly positioned for parallel AI-agent workflows.",
-      "theme_ids": [
-        "agent-workflows",
-        "local-dev-inference"
-      ],
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "description": "A Playwright-and-AI monitoring system for scheduled or real-time Xianyu marketplace listings.",
+      "language": "Python",
+      "stars_gained": 242,
+      "total_stars": 17450,
+      "default_branch_commit": "77f8d75869acd65f9dba72731b95c7c49ea67bdf",
+      "why_notable": "A concrete agentic monitoring application rather than a general-purpose agent framework.",
+      "theme_ids": ["automation-data-and-local-cloud"],
       "signal_strength": "brief",
-      "evidence_density": "rich",
+      "evidence_density": "metadata",
       "narration_priority": 10,
-      "spoken_name": "Worktrunk",
-      "unique_caveat": "",
+      "spoken_name": "AI Goofish Monitor",
+      "unique_caveat": "Focused on Xianyu, the Chinese second-hand marketplace.",
       "enrichment": null,
-      "refs": [
-        "max-sixty/worktrunk"
-      ]
+      "refs": ["Usagi-org/ai-goofish-monitor"]
     },
     {
       "id": "repo-11",
       "kind": "repo",
-      "title": "FareedKhan-dev/kimi-k3-in-c",
+      "title": "microsoft/VibeVoice",
       "rank": 11,
-      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
-      "description": "Portable C99 inference engine; its README claims a 2.78T-parameter model can run on CPU with 8.24 GB peak RSS (not independently benchmarked here).",
-      "language": "C",
-      "stars_gained": 351,
-      "total_stars": 10321,
-      "default_branch_commit": "81bb6c23ccee2154bc35cad922588ab66494a9a9",
-      "why_notable": "+351 stars; unusually ambitious CPU-only local inference claim, but performance and model-equivalence figures are repository claims rather than independently tested here.",
-      "theme_ids": [
-        "local-dev-inference"
-      ],
+      "url": "https://github.com/microsoft/VibeVoice",
+      "description": "Microsoft's open-source voice-AI project.",
+      "language": "Python",
+      "stars_gained": 214,
+      "total_stars": 55605,
+      "default_branch_commit": "16fb2cb1217c9934a886e1948ffb06120caa2df5",
+      "why_notable": "Voice generation remains a visible adjacent-AI theme, though its daily gain trails the leading agent tools.",
+      "theme_ids": ["specialist-tools"],
       "signal_strength": "brief",
-      "evidence_density": "rich",
+      "evidence_density": "metadata",
       "narration_priority": 11,
-      "spoken_name": "Kimi K3 in C",
-      "unique_caveat": "README performance figures are repository claims and were not independently benchmarked.",
+      "spoken_name": "VibeVoice",
+      "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "FareedKhan-dev/kimi-k3-in-c"
-      ]
+      "refs": ["microsoft/VibeVoice"]
     },
     {
       "id": "repo-12",
       "kind": "repo",
-      "title": "garrytan/gstack",
+      "title": "google/skills",
       "rank": 12,
-      "url": "https://github.com/garrytan/gstack",
-      "description": "Role-based Claude Code workflows for product framing, architecture, review, QA, security, and release.",
-      "language": "TypeScript",
-      "stars_gained": 290,
-      "total_stars": 139360,
-      "default_branch_commit": "6bdafb2cf5acf05e6e9ab23a74e682e155d1fdde",
-      "why_notable": "+290 stars; role-specialized agent workflows show a team/process metaphor gaining traction.",
-      "theme_ids": [
-        "agent-workflows"
-      ],
+      "url": "https://github.com/google/skills",
+      "description": "Agent skills for Google products and technologies.",
+      "language": "Python",
+      "stars_gained": 199,
+      "total_stars": 22234,
+      "default_branch_commit": "59af7f346dbfa578ba2ad44fa237acfcb6a7e2a8",
+      "why_notable": "A major-vendor entry in the growing skills-as-distribution layer for agents.",
+      "theme_ids": ["agent-skills-and-workflows"],
       "signal_strength": "brief",
-      "evidence_density": "rich",
+      "evidence_density": "sparse",
       "narration_priority": 12,
-      "spoken_name": "gstack",
+      "spoken_name": "Google Agent Skills",
       "unique_caveat": "",
       "enrichment": null,
-      "refs": [
-        "garrytan/gstack"
-      ]
+      "refs": ["google/skills"]
     },
     {
       "id": "repo-13",
       "kind": "repo",
       "title": "KKKKhazix/agent-autoloop",
       "rank": 13,
-      "rank_type": "newly-active supplement",
+      "ranking_group": "newly_active_supplement",
       "url": "https://github.com/KKKKhazix/agent-autoloop",
-      "description": "A newly created, self-hosted event-driven automation hub that routes scheduled or external events to CLI agents, pauses for human decisions when needed, then resumes work.",
+      "description": "A local, plugin-based service that schedules CLI agents, routes events, and asks for human approval only when needed.",
       "language": "TypeScript",
       "stars_gained": null,
-      "total_stars": 2557,
-      "default_branch_commit": "1e04f73df61e3bcbf21dab3c4ce85f05433355eb",
-      "why_notable": "Created on 2026-11-03 and surfaced near the top of GitHub Search for repositories created through 2026-11-05; plugin-based, human-approval-aware agent orchestration is a strong newly active signal, but its daily gain is not directly comparable to Trending entries.",
-      "theme_ids": [
-        "agent-workflows"
-      ],
+      "total_stars": 3173,
+      "default_branch_commit": "9bddfa4c2bc1218b92cf59f6377864031c8517b4",
+      "why_notable": "Created on 2026-11-03 and active today; its event/agent/notification plugins and approval-card loop make it a strong fresh signal. Its current star total is not a daily-gain rank.",
+      "theme_ids": ["agent-skills-and-workflows", "parallel-agent-infrastructure"],
       "signal_strength": "standard",
       "evidence_density": "rich",
-      "narration_priority": 4,
+      "narration_priority": 13,
       "spoken_name": "Agent Autoloop",
-      "unique_caveat": "README lists macOS and Linux support; Windows is not yet available. Not present on the daily Trending view, so daily star gain is unavailable.",
+      "unique_caveat": "The README says Windows support is not ready; current support is macOS and Linux. Not present on the daily Trending view, so daily star gain is unavailable.",
       "enrichment": null,
-      "refs": [
-        "KKKKhazix/agent-autoloop"
-      ]
+      "refs": ["KKKKhazix/agent-autoloop"]
+    },
+    {
+      "id": "repo-14",
+      "kind": "repo",
+      "title": "govijr/terminal-mac",
+      "rank": 14,
+      "ranking_group": "newly_active_supplement",
+      "url": "https://github.com/govijr/terminal-mac",
+      "description": "A virtual macOS desktop for computer-use agents, viewed and controlled from a terminal.",
+      "language": "Swift",
+      "stars_gained": null,
+      "total_stars": 1881,
+      "default_branch_commit": "cdad51fdb7faafc1761a2595823da96b83afde03",
+      "why_notable": "Created on 2026-11-03 and active today; it isolates agent computer use in a real macOS guest rather than the host desktop. Its star count is not a daily-gain rank.",
+      "theme_ids": ["agent-context-computer-use"],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 14,
+      "spoken_name": "Terminal Mac",
+      "unique_caveat": "An early release candidate for Apple silicon; the README says live guest acceptance on a clean Mac is still pending. Not present on the daily Trending view, so daily star gain is unavailable.",
+      "enrichment": null,
+      "refs": ["govijr/terminal-mac"]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Agent operating environments and reusable workflows: The leading signal is tooling around how agents act and work: accessibility-based desktop control, persistent memory, composable skills, structured specs, Git worktrees, role-based engineering workflows, and a newly created event-driven agent orchestrator. Supporting repositories: repo-01, repo-05, repo-06, repo-08, repo-10, repo-12, repo-13.\nGrounded agent context and data acquisition: NVIDIA Auto Ontology focuses on governed semantic context for analytics agents, while Scrapling supplies the web-data acquisition layer; together they emphasize better inputs and traceable answers rather than only model capability. Supporting repositories: repo-02, repo-03.\nLocal and reproducible developer infrastructure: Floci emulates AWS locally, Worktrunk supports parallel worktrees, and kimi-k3-in-c explores CPU-only inference; each makes local execution or parallel development a core proposition. Supporting repositories: repo-07, repo-10, repo-11.\nPurpose-built creative and media utilities: Disc Image Studio and MoneyPrinterTurbo show that specialized creative production tools also earn significant daily attention outside the coding-agent cluster. Supporting repositories: repo-04, repo-09.\nLanguages: Python (4), TypeScript (3), Rust (2), C (1), C# (1), Java (1), Shell (1)."
+      "content": "Agent context and computer use: NVIDIA/auto-ontology grounds questions in business metadata and lineage; vercel-labs/agent-desktop operates native apps through accessibility APIs; newly active terminal-mac uses a separate virtual Mac. Supporting repositories: repo-01, repo-02, repo-14.\nSkills and packaged workflows: mattpocock/skills, google/skills, scenario-labs/skills, and garrytan/gstack turn reusable instructions or role-based procedures into installable agent capabilities. Supporting repositories: repo-03, repo-07, repo-08, repo-12, repo-13.\nParallel-agent developer infrastructure: max-sixty/worktrunk makes isolated worktrees easier, while KKKKhazix/agent-autoloop schedules work, connects event sources, and routes approval requests. Supporting repositories: repo-09, repo-13.\nAutomation and data access: D4Vinci/Scrapling targets robust web extraction; Usagi-org/ai-goofish-monitor applies browser automation and AI to marketplace monitoring; floci-io/floci provides local cloud-service emulation for test workflows. Supporting repositories: repo-04, repo-06, repo-10.\nSpecialist utilities: Disc Image Studio and VibeVoice are distinct optical-media and voice-AI signals. Supporting repositories: repo-05, repo-11.\nLanguages: Among the 12 daily Trending entries, Python leads with 6, Rust has 2, and Shell, TypeScript, C#, and Java have 1 each. Fresh supplements add TypeScript and Swift."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "Today’s strongest shared pattern is the engineering of agent workflows around context, tools, and repeatable process—not just model wrappers. The list is not exclusively AI: scraping, local cloud emulation, disc imaging, and automated video creation show meaningful demand for sharply scoped utilities as well."
+      "content": "Today's strongest signal is the tooling layer around agents: reliable context, native computer interaction, reusable skills, and infrastructure for parallel or unattended work. The fresh-repository search reinforces that pattern with Agent Autoloop, while the daily Trending list also shows room for specialized projects such as disc authoring and local cloud emulation. Daily star-gain figures apply only to GitHub Trending entries; the two fresh additions are separate discovery signals, not comparable daily-gain ranks."
     },
     {
       "id": "99-sources-and-method",
       "kind": "sources",
       "title": "Sources and Method",
-      "content": "Primary: GitHub Trending daily. Corroboration: REST repository and default-branch commits for 12 daily Trending entries; GitHub Search API checks for two leading repos. A created-date GitHub Search from 2026-11-03 through 2026-11-05 identified Agent Autoloop; the repository page confirmed creation date, current stars, default branch, and commit. Current repository READMEs were consulted. Daily Trending gains rank the first 12; Agent Autoloop is an explicitly labeled newly-active supplement with unavailable daily gain."
+      "content": "Primary source: https://github.com/trending?since=daily, refreshed at 2026-11-05 17:38 UTC. Corroboration: GitHub REST repository and default-branch commit endpoints; GitHub Search API query for repositories created and pushed from 2026-11-03 through 2026-11-05 with more than 50 stars, sorted by stars. README content checked for principal momentum signals and both fresh additions. Daily Trending entries are ordered by displayed stars-today values. Two fresh-search supplements are appended separately with null daily gains. Some late REST calls hit GitHub's unauthenticated rate limit; their totals are from the refreshed Trending page or earlier successful API reads."
     }
   ]
 }

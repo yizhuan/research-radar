@@ -1,6 +1,6 @@
 # arXiv Mathematics — Daily report for 4 November 2026
 
-Seven papers from today's 423-paper Mathematics announcement batch, led by new sharp-exponent results and structural bounds across probability, combinatorics, number theory, and PDE. Listen for how spectral operators and random-walk geometry turn hard connectivity questions into quantitative laws. No official arXiv trending chart exists; this is an inferred ranking, and citation evidence is limited for such new papers.
+Seven papers from the latest 423-paper Mathematics announcement batch (Wed 4 Nov 2026), led by new sharp-exponent results and structural bounds across probability, combinatorics, number theory, and PDE. This is the most recent batch at the 5 Nov UTC snapshot. Listen for how spectral operators and random-walk geometry turn hard connectivity questions into quantitative laws. No official arXiv trending chart exists; this is an inferred ranking, and citation evidence is limited for such new papers.
 
 ## Top papers (ranked)
 
@@ -105,7 +105,7 @@ Today's most compelling mathematical signals are precise probability exponents a
 
 ## Method and sources
 
-- **Window:** Daily announcement batch 2026-11-04 (start and end date: 2026-11-04). The arXiv recent listing identifies 423 Mathematics entries in this batch; the selected papers' first-version timestamps are on 2026-11-03 UTC. Snapshot: 2026-11-04 17:16:50 UTC.
+- **Window:** Daily announcement batch 2026-11-04 (start and end date: 2026-11-04), the latest available batch at the snapshot time 2026-11-05 01:26:25 UTC; it is a prior batch relative to the snapshot date. The arXiv recent listing identifies 423 Mathematics entries in this batch; the selected papers' first-version timestamps are on 2026-11-03 UTC.
 - **Coverage:** Full arXiv Mathematics recent listing for the 4 November batch (`math`), including subject classes across the archive. The seven selected papers retain their specific primary and cross-list categories.
 - **Selection:** Seven papers ranked by concrete stated results, breadth of setting, cross-list relevance, and clear scope; recency served only as a tie-breaker. No independent expert discussion was verified. Citation and influential-citation totals could not be corroborated from the sources checked, so this is a notable-recent-paper shortlist rather than evidence of readership momentum.
 - **Retrieval note:** The configured `web_extract` route did not support URL extraction in this session; the complete listing and selected abstract pages were read in the browser, and the top three introductions/main-result statements were inspected in arXiv HTML. Semantic Scholar citation fields were not available from the sources checked.

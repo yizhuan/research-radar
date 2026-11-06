@@ -1,165 +1,131 @@
 # arXiv Physics — Thursday, 5 November 2026
 
-Twelve notable papers from the latest physics announcement batch, including one fresh gravitational-wave bound, atom-array and photonic experiments, new astrophysical mass measurements, and two updated preprints. Spoken agenda: start with gravity and Rydberg arrays, then compare astrophysical and nuclear measurements before turning to quantum methods, instrumentation, and materials. This ordering is inferred—not an official arXiv trending chart—and citation evidence is limited for a batch this recent.
+Nine notable papers from the latest announced physics batch, led by experiments and methods that connect quantum-information theory to hardware, alongside new superconductivity and heavy-ion results. Spoken agenda: start with the quantum demonstrations, compare the material and collider measurements, then finish with dark-matter and FRB inference. This is an inferred ordering, not an official arXiv trending chart; same-day citation evidence is sparse, so it should not be read as measured popularity.
 
 ## Top papers (ranked)
 
-### 1. [Gravitational-Wave Constraints on $R^2$ Gravity](https://arxiv.org/abs/2611.06902)
-- **Abstract:** The authors derive a theory-specific inspiral-waveform correction for quadratic $f(R)$ gravity and use two binary-neutron-star events to constrain its curvature coupling.
-- **Authors:** Pawan Kumar Gupta, Laura Sagunski
-- **arXiv:** `2611.06902v1` (published 2026-11-04T18:49:50Z; categories: `gr-qc`, `astro-ph.HE`, `hep-th`)
-- **Evidence for ranking:** Cross-listed in three physics archives; its two-event constraint links gravitational-wave data to modified-gravity theory. Two separate secondary synopsis pages also surfaced for this result, a weak attention signal rather than expert validation.
-- **Claimed result:** The authors report a combined 90%-credibility bound $a\lesssim6.2\times10^6\,\mathrm{m}^2$ (equivalently $m_s\gtrsim3.2\times10^{-11}$ eV), about five orders of magnitude tighter than the previous best astrophysical bound.
-- **Evidence type:** Observational; Bayesian waveform analyses of GW170817 and GW190425.
-- **Caveat:** The authors do not include the $R^2$-induced changes to neutron-star structure in this analysis; they identify this as future work, so the constraint depends on the waveform and stellar-structure assumptions used.
+### 1. [Non-Unitary Quantum Butterfly Effect: Theory and Experiment](https://arxiv.org/abs/2611.08152)
+- **Abstract:** The authors calculate how local measurements alter out-of-time-order correlators in random circuits and demonstrate the resulting scrambling patterns with quantum simulation and a trapped-ion processor.
+- **Authors:** Paul Argyle, Djamil Lakhdar-Hamina, Sarah H. Miller, Victor Galitski
+- **arXiv:** `2611.08152v1` (published 2026-11-05T15:11:05Z; categories: `quant-ph`, `cond-mat.other`)
+- **Evidence for ranking:** It combines analytical and Monte Carlo results with a Quantinuum H2 demonstration, and was surfaced near the top of current quantum-paper discovery listings (papers.cool and SciRate); those are weak visibility signals, not readership counts.
+- **Claimed result:** The authors find that sparse measurements preserve a causal scrambling front while erasing the OTOC signal within it; the trapped-ion results resolve this qualitative behavior.
+- **Evidence type:** Theoretical and computational, with an experimental quantum-simulation demonstration on Quantinuum's H2 trapped-ion processor.
+- **Caveat:** Hardware results use only 8 qubits; the in-cone attenuation and front broadening cannot be cleanly separated into finite-sampling fluctuations and device errors.
 - **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Cosmology & gravitation; Astrophysics
+- **Themes:** Quantum information; Condensed matter & materials
 
-### 2. [Cryogenic suppression of correlated loss in Rydberg atom arrays](https://arxiv.org/abs/2611.06613)
-- **Abstract:** In Rydberg atom arrays, the authors compare room-temperature and cryogenic operation and find that suppressing blackbody radiation suppresses avalanche-driven correlated atom loss.
-- **Authors:** Zhenpu Zhang, Brendan P. Marsh, Ting You Tan, Quinn Manning, Daniel H. Slichter et al.
-- **arXiv:** `2611.06613v1` (published 2026-11-04T15:00:48Z; categories: `physics.atom-ph`, `cond-mat.quant-gas`, `quant-ph`)
-- **Evidence for ranking:** Three-archive cross-listing and a controlled experimental comparison with arrays up to 70 atoms; the authors also test a quantitative rate model against measured loss.
-- **Claimed result:** The authors report that a 45 K radiation shield suppresses blackbody-driven decay by up to 30–50% (effective radiation temperature about 190 K) and lowers avalanche rates by up to 22% for the tested Rydberg states.
-- **Evidence type:** Experimental; cryogenic/room-temperature Rydberg atom arrays, lifetime and correlated-loss measurements, and a rate model.
-- **Caveat:** The demonstrated arrays contain at most 70 atoms, and the shield's effective blackbody temperature is about 190 K; further suppression toward 45 K is projected, not demonstrated here. Photoionization and laser phase noise are additional avalanche contributions.
+### 2. [Correlations and fluctuations of flow with event shape engineering in Pb-Pb and Xe-Xe collisions at the LHC](https://arxiv.org/abs/2611.08473)
+- **Abstract:** The ALICE Collaboration measures correlations and fluctuations of anisotropic-flow harmonics in Pb-Pb and Xe-Xe collisions and separates linear and nonlinear contributions to the fourth harmonic.
+- **Authors:** ALICE Collaboration
+- **arXiv:** `2611.08473v1` (published 2026-11-05T18:56:11Z; categories: `nucl-ex`)
+- **Evidence for ranking:** Large collaboration data release across two collision systems; it reports first direct event-shape-dependent measurements of linear/nonlinear v4 components in both systems and is marked submitted to Physics Letters B.
+- **Claimed result:** The authors find the nonlinear v4 component rises with q2 while the linear component changes little, with a stronger q2 sensitivity in Xe-Xe; the chi4,22 coefficient is mostly stable except in the most central Pb-Pb events.
+- **Evidence type:** Experimental; ALICE measurements of 5.02 TeV Pb-Pb and 5.44 TeV Xe-Xe collisions using Event Shape Engineering and multiparticle correlations.
+- **Caveat:** Event-shape selection can also bias flow fluctuations; reported systematic uncertainties reach about 10% for Pb-Pb v4 and 11% for Xe-Xe v4 in some bins.
 - **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Atomic, molecular & optical physics; Quantum information
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
 
-### 3. [The M87 Black Hole Mass from JWST and Keck Stellar Kinematics Spanning 10 pc to 10 kpc](https://arxiv.org/abs/2611.05486)
-- **Abstract:** The authors combine JWST NIRSpec and Keck KCWI stellar-kinematics maps with triaxial orbit modeling to infer the mass of M87's central black hole across a wide radial range.
-- **Authors:** Emily R. Liepold, Chung-Pei Ma, Refa M. Al-Amri, Jonelle L. Walsh
-- **arXiv:** `2611.05486v1` (published 2026-11-03T19:00:06Z; categories: `astro-ph.GA`)
-- **Evidence for ranking:** Two observatories provide contiguous kinematic coverage; the analysis fits about 5,000 kinematic constraints and compares the inferred mass-to-distance ratio with independent EHT results.
-- **Claimed result:** The authors infer $M_{\rm BH}=(5.38\pm0.13\pm0.22)\times10^9\,M_\odot$ and report a mass-to-distance ratio whose 90% credible interval overlaps the multi-epoch EHT interval.
-- **Evidence type:** Observational; JWST NIRSpec and Keck KCWI stellar kinematics analyzed with triaxial Schwarzschild orbit models.
-- **Caveat:** The statistical uncertainty is smaller than the systematic uncertainty from M87's adopted distance; the EHT comparison uses existing EHT results and is not a new EHT measurement.
-- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Astrophysics
-
-### 4. [New Neutron Polarizabilities from Deuterium Compton Scattering at HI$\gamma$S](https://arxiv.org/abs/2611.06609)
-- **Abstract:** A 61 MeV deuterium Compton-scattering measurement at HI$\gamma$S, analyzed with chiral effective field theory, yields updated neutron electric and magnetic scalar polarizabilities.
-- **Authors:** D. Godagama, M. W. Ahmed, B. Crowe, G. Feldman, F. Friesen et al.
-- **arXiv:** `2611.06609v1` (published 2026-11-04T14:58:24Z; categories: `nucl-ex`)
-- **Evidence for ranking:** New facility-based cross-section measurements with separated elastic and inelastic events produce explicit polarizability estimates and uncertainty components; the work is from the Compton@HI$\gamma$S collaboration.
-- **Claimed result:** The authors obtain $\alpha^n_{E1}=12.25\pm1.1\,\text{(stat)}\pm0.3\,\text{(BSR)}\pm0.8\,\text{(th)}$ and $\beta^n_{M1}=2.95\mp1.1\,\text{(stat)}\mp0.3\,\text{(BSR)}\mp0.8\,\text{(th)}$ in units of $10^{-4}\,\mathrm{fm}^3$, reducing statistical uncertainty by 12% relative to the prior extraction.
-- **Evidence type:** Experimental; 61 MeV quasi-monoenergetic photons on liquid deuterium at HI$\gamma$S, with NaI(Tl) detectors, analyzed using $\chi$EFT.
-- **Caveat:** The extracted values depend on the $\chi$EFT analysis and Baldin sum-rule constraint; the quoted theoretical uncertainty is $0.8\times10^{-4}\,\mathrm{fm}^3$, and the result is statistically consistent with the previous extraction.
-- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
-
-### 5. [DESI DR2 Results III: The Mass of the Milky Way](https://arxiv.org/abs/2611.05518)
-- **Abstract:** The DESI Collaboration applies four dynamical methods to 10,036 halo stars in DR2 and combines mock-calibrated estimates of the Milky Way's mass.
-- **Authors:** DESI Collaboration, C. Aganze, J. Aguilar, S. Ahlen, C. Allende Prieto et al.
-- **arXiv:** `2611.05518v1` (published 2026-11-03T19:15:56Z; categories: `astro-ph.GA`, `astro-ph.CO`)
-- **Evidence for ranking:** A DESI Collaboration key-project analysis combines the largest RRL/BHB halo-star samples of their kind in the authors' account, compares four methods on mock surveys, and explicitly models residual method correlations.
-- **Claimed result:** The authors estimate $M(<80\,\mathrm{kpc})=6.36^{+0.53}_{-0.48}\times10^{11}\,M_\odot$ and virial mass $M_{200c}=1.19^{+0.14}_{-0.12}\times10^{12}\,M_\odot$.
-- **Evidence type:** Observational and computational; DESI DR2 six-dimensional halo-star data calibrated with cosmological mock surveys.
-- **Caveat:** The correction depends on mock-based treatments of disequilibrium, selection functions, and method- and tracer-specific biases.
-- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Astrophysics; Computational & data methods
-
-### 6. [Experimental activation of hidden metrological steerability in quantum channels via stochastic filtering](https://arxiv.org/abs/2611.06668)
-- **Abstract:** The authors demonstrate that stochastic pre- and post-filtering can restore violation of a metrological steering inequality in a photonic amplitude-damping channel.
-- **Authors:** H. S. Karthik, J. Bermúdez, D. Montoya, J. Parra-Pastén, F. M. Quinteros et al.
-- **arXiv:** `2611.06668v1` (published 2026-11-04T15:44:19Z; categories: `quant-ph`)
-- **Evidence for ranking:** Direct photonic experiment with a quantified change in the noise threshold; the method extends stochastic filtering to an operational metrological-steering witness.
-- **Claimed result:** The authors raise the critical amplitude-damping parameter for violating the metrological steering inequality from about 0.5 to about 0.75 at the strongest tested filter setting.
-- **Evidence type:** Experimental; polarization qubits in a two-path Sagnac amplitude-damping channel, with stochastic filtering via Brewster-angle glass plates.
-- **Caveat:** The advantage is conditional on probabilistic filtering, which lowers the success probability; the demonstration tests amplitude damping rather than arbitrary noise channels.
-- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Quantum information; Atomic, molecular & optical physics
-
-### 7. [Search for GeV-scale axion-like particles in PbPb collisions](https://arxiv.org/abs/2611.00135)
-- **Abstract:** The LHCb Collaboration updates its search for axion-like particles produced by exclusive photon fusion in forward PbPb collision data and reports limits across 3–10 GeV.
-- **Authors:** LHCb Collaboration, R. Aaij, M. Abdelfatah, A. S. W. Abdelmotteleb, C. Abellan Beteta et al.
-- **arXiv:** `2611.00135v2` (published 2026-10-29T18:32:11Z; categories: `hep-ex`, `nucl-ex`)
-- **Evidence for ranking:** A v2 replacement was announced in this batch; the authors describe the channel as the first forward search for exclusive $\gamma\gamma\to a\to\gamma\gamma$ and give explicit mass/coupling reach.
-- **Claimed result:** Using 0.228 nb$^{-1}$ of PbPb data at $\sqrt{s_{NN}}=5.02$ TeV, the collaboration probes masses down to 3.0 GeV and couplings down to $3.2\times10^{-4}$ GeV$^{-1}$, with strongest limits from 3 to 5 GeV.
-- **Evidence type:** Experimental; LHCb forward-detector analysis of PbPb collision data.
-- **Caveat:** This is a search limit, not a detection; the sensitivity is specific to the recorded luminosity, forward acceptance, and assumed exclusive production and decay channel.
-- **Announcement type:** revision, Thu 5 Nov 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
-
-### 8. [Near-Quantum-Limited Readout for the Princeton Axion Search using a sub-GHz Kinetic Inductance Traveling Wave Parametric Amplifier](https://arxiv.org/abs/2611.06761)
-- **Abstract:** The authors characterize a kinetic-inductance traveling-wave parametric amplifier for low-noise readout between 300 and 700 MHz, a band with fewer near-quantum-limited amplifier demonstrations.
-- **Authors:** Joe Wiedemann, Roman Kolevatov, Jianyang Fu, Joelle-Marie Begin, Nate Otto et al.
-- **arXiv:** `2611.06761v1` (published 2026-11-04T16:39:54Z; categories: `quant-ph`, `astro-ph.IM`, `hep-ex`)
-- **Evidence for ranking:** Cross-listed across quantum physics, astrophysical instrumentation, and experiment; it gives gain and noise measurements in a sub-GHz band intended for precision readout, including axion-search use.
-- **Claimed result:** The authors report over 30 dB gain at 300–700 MHz with a few hundred nanowatts of pump power and measured system noise of 2.5–3.5 quanta.
-- **Evidence type:** Experimental; kinetic-inductance traveling-wave amplifier characterization with a variable-temperature noise source.
-- **Caveat:** This is an amplifier-performance study, not an axion detection; performance is established for the reported band and measurement configuration.
-- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Instrumentation & detectors; Particle, nuclear & high-energy physics; Quantum information
-
-### 9. [Euclid Quick Data Release (Q1). Refining the strong lens sample with Space Warps crowd-sourced science](https://arxiv.org/abs/2611.06667)
-- **Abstract:** Using Euclid Q1 lens candidates, the authors assess whether volunteers can grade strong-lens candidates into confidence classes comparably to researchers and how calibrated volunteer probabilities could refine future samples.
-- **Authors:** Euclid Collaboration, P. Holloway, A. Verma, T. E. Collett, N. E. P. Lines et al.
-- **arXiv:** `2611.06667v1` (published 2026-11-04T15:43:33Z; categories: `astro-ph.GA`)
-- **Evidence for ranking:** Euclid collaboration data, a manuscript submitted to A&A, and a quantified citizen-science classification analysis with implications for the Q1 lens sample.
-- **Claimed result:** The authors find volunteer grading can be calibrated against researchers; in a conditional rerun of the Q1 search, Grades A+B could reach 79% completeness and 41% purity before researcher inspection.
-- **Evidence type:** Observational; Euclid Q1 strong-lens candidate images classified by Space Warps volunteers and researchers.
-- **Caveat:** The 79% completeness and 41% purity figures are conditional rerun estimates, not a realized release result; the paper reports substantial disagreement for intermediate-grade candidates.
-- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Astrophysics; Cosmology & gravitation; Computational & data methods
-
-### 10. [Simulating a chiral gauge theory](https://arxiv.org/abs/2611.06880)
-- **Abstract:** The authors construct a finite-dimensional, gauge-invariant lattice formulation for 1+1-dimensional Abelian chiral gauge theories and use infinite matrix product states to simulate the 34-50 model.
-- **Authors:** Laurens Lootens, Hersh Singh
-- **arXiv:** `2611.06880v1` (published 2026-11-04T18:36:32Z; categories: `hep-lat`, `cond-mat.str-el`, `hep-th`)
-- **Evidence for ranking:** Three-archive cross-listing and a computational method that preserves a discrete chiral symmetry and anomaly, with simulated infrared properties compared against analytic predictions.
-- **Claimed result:** The authors report that a finite local Hilbert space with $N=6$ reproduces the expected infrared $c=1$ behavior of the 34-50 model in their thermodynamic-limit simulation.
-- **Evidence type:** Computational; clock-and-shift qudit lattice model simulated with infinite matrix product states, with analytic benchmarks.
-- **Caveat:** The demonstration is for 1+1-dimensional Abelian theories and a finite-$N$ lattice construction; extension to higher dimensions, non-Abelian theories, or real-time dynamics is not demonstrated.
-- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods; Quantum information
-
-### 11. [Quantum Noise Spectroscopy of Criticality in an Atomically Thin Magnet](https://arxiv.org/abs/2407.05614)
-- **Abstract:** In a v3 replacement, the authors use nitrogen-vacancy-center spin-decoherence noise magnetometry on trilayer CrSBr to measure critical fluctuations and infer dynamical and correlation-length exponents.
-- **Authors:** Mark E. Ziffer, Francisco Machado, Benedikt Ursprung, Artur Lozovoi, Aya Batoul Tazi et al.
-- **arXiv:** `2407.05614v3` (published 2024-07-08T05:00:12Z; categories: `cond-mat.mes-hall`, `quant-ph`)
-- **Evidence for ranking:** The v3 replacement was announced in this batch; the paper combines NV-center noise measurements with simulations and quantitative critical-exponent estimates, cross-listed in condensed matter and quantum physics.
-- **Claimed result:** The authors report Ising-like critical behavior in trilayer CrSBr that deviates from short-range Ising and XY predictions, and attribute the deviation to long-range dipolar interactions and easy-axis anisotropy.
-- **Evidence type:** Experimental and computational; NV-center $T_2$ noise magnetometry on trilayer CrSBr interpreted with simulated noise models.
-- **Caveat:** The universality-class interpretation depends on the noise model and one material/thickness; tests across samples and control parameters are needed.
-- **Announcement type:** revision, Thu 5 Nov 2026 announcement batch
-- **Themes:** Condensed matter & materials; Instrumentation & detectors
-
-### 12. [Hall-Density Collapse as Direct Evidence for Percolative Conduction Onset in Monolayer MoS$_2$ Transistors](https://arxiv.org/abs/2611.06815)
-- **Abstract:** Temperature-dependent transport and Hall measurements on monolayer MoS$_2$ transistors with amorphous HfO$_2$ dielectrics are presented as evidence that disorder-driven percolation explains conduction onset.
-- **Authors:** R. V. Upadya, M. Introna, X. Wu, C. J. L. de la Rosa, K. Banerjee et al.
-- **arXiv:** `2611.06815v1` (published 2026-11-04T17:29:48Z; categories: `cond-mat.mes-hall`)
-- **Evidence for ranking:** The authors report two complementary transport signatures, address a debated interpretation of apparent metal-insulator transitions, and note submission to Physical Review Letters.
-- **Claimed result:** The authors identify a temperature-independent Hall-density collapse and vanishing activation energy at a characteristic carrier density as signatures of a classical percolation threshold in the studied devices.
-- **Evidence type:** Experimental; temperature-dependent transport and Hall measurements on monolayer MoS$_2$ field-effect transistors.
-- **Caveat:** The conclusion is tied to the studied MoS$_2$/amorphous-HfO$_2$ device system; the abstract does not establish that the same mechanism dominates other two-dimensional electron systems.
+### 3. [Experimental Evidence for Type-I Superconductivity in $\mathrm{OsB_2}$](https://arxiv.org/abs/2611.08239)
+- **Abstract:** The author presents three experimental signatures—AC-susceptibility response, field-dependent specific heat, and magnetic hysteresis—as evidence that osmium diboride is a Type-I rather than previously classified Type-II superconductor.
+- **Authors:** Yogesh Singh
+- **arXiv:** `2611.08239v1` (published 2026-11-05T16:19:24Z; categories: `cond-mat.supr-con`, `cond-mat.mtrl-sci`)
+- **Evidence for ranking:** Three distinct measurement signatures support one concrete reclassification, and the paper is cross-listed across superconductivity and materials physics.
+- **Claimed result:** The author interprets a differential-paramagnetic-effect peak, a field-induced divergent first-order specific-heat transition, and field-ramp hysteresis as evidence for an intermediate state and Type-I behavior.
+- **Evidence type:** Experimental; AC susceptibility, specific heat, and field-ramped transition measurements on OsB2.
+- **Caveat:** This is a short, single-author preprint with no journal reference listed; independent replication and fuller uncertainty reporting would strengthen the proposed reclassification.
 - **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
 - **Themes:** Condensed matter & materials
 
+### 4. [Provable circuit-level thresholds for non-abelian topological phases](https://arxiv.org/abs/2611.08488)
+- **Abstract:** The authors construct syndrome-extraction circuits and an online decoder for quantum memories in two-dimensional non-chiral topological orders, proving a threshold under circuit-level stochastic noise.
+- **Authors:** Yuanjie Ren, Margarita Davydova, Shankar Balasubramanian, Andreas Bauer
+- **arXiv:** `2611.08488v1` (published 2026-11-05T18:59:44Z; categories: `quant-ph`, `cond-mat.str-el`, `math-ph`)
+- **Evidence for ranking:** A rigorous threshold result and explicit decoder bridge topological phases, quantum error correction, and statistical physics; the work also appeared in current quantum-paper discovery results.
+- **Claimed result:** The authors prove their Turaev–Viro-based memory scheme has a threshold under a local stochastic circuit-level noise model and outline a route to logical gates.
+- **Evidence type:** Theoretical and computational; proof, syndrome-extraction construction, and classical decoding algorithm.
+- **Caveat:** The guarantee is conditional on the specified local stochastic noise model and non-chiral topological setting; it is not a hardware demonstration.
+- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
+- **Themes:** Quantum information; Condensed matter & materials; Computational & data methods
+
+### 5. [First broadband search for fixed-polarization dark photon dark matter with GigaBREAD](https://arxiv.org/abs/2611.07426)
+- **Abstract:** The authors reanalyze GigaBREAD broadband data with a time-dependent polarization-matched likelihood, finding no fixed-polarization dark-photon signal and setting limits in the 44–52 μeV mass interval.
+- **Authors:** Jialin Yu, Stefan Knirck, Gabe Hoshino, Rakshya Khatiwada, Alex Lapuente et al.
+- **arXiv:** `2611.07426v1` (published 2026-11-05T04:20:25Z; categories: `hep-ex`, `astro-ph.IM`, `hep-ph`, `physics.ins-det`)
+- **Evidence for ranking:** First search under the fixed-polarization assumption, reanalysis of two detector orientations, four-archive cross-listing, and a quantified improvement over a naive rescaling of the previous limit.
+- **Claimed result:** The authors report 90% upper limits around kinetic mixing $\chi\sim10^{-12}$ over 44–52 μeV, about 20% stronger than the naive fixed-polarization rescaling; no signal is found.
+- **Evidence type:** Experimental; polarization-aware reanalysis of GigaBREAD broadband dish-antenna data from two observing runs.
+- **Caveat:** The result is a null search and depends on the assumed fixed-polarization signal model; the analysis applies a 23% frequency-dependent systematic uncertainty to power limits.
+- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
+- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
+
+### 6. [Observation of Inter-Transition Interference](https://arxiv.org/abs/2611.07768)
+- **Abstract:** Microwave-reflection spectra from a driven superconducting artificial atom show interference between nearly degenerate transitions that is explained by dissipative coupling between their coherences.
+- **Authors:** Toyofumi Ishikawa, Shumpei Masuda, Akiyoshi Tomonaga, Kosuke Mizuno, Kunihiro Inomata
+- **arXiv:** `2611.07768v1` (published 2026-11-05T10:06:09Z; categories: `quant-ph`)
+- **Evidence for ranking:** The authors report an experimental observation of a distinct interference mechanism and compare measured lineshapes against both independent-transition and dissipatively coupled models.
+- **Claimed result:** The measured spectral dip near transition degeneracy is sharper and deeper than an independent-transition model predicts, while calculations including dissipative coherence coupling reproduce the main features.
+- **Evidence type:** Experimental; coherent microwave reflection spectroscopy of a strongly driven Kerr parametric oscillator, supported by theoretical modeling.
+- **Caveat:** The evidence comes from a single artificial-atom platform and a particular driven near-degeneracy regime; it does not establish how broadly the effect appears in other open quantum systems.
+- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
+- **Themes:** Quantum information; Atomic, molecular & optical physics
+
+### 7. [Negligible Kitaev interaction in the van der Waals antiferromagnet NiBr$_2$ revealed by neutron spectroscopy](https://arxiv.org/abs/2611.07597)
+- **Abstract:** Time-of-flight neutron spectra of NiBr2 are reproduced by a Heisenberg-dominated spin-wave model without a resolvable Kitaev term, supporting weaker ligand-mediated exchange than in NiI2.
+- **Authors:** Hao Xu, Shufan Cheng, Yanyan Shangguan, Song Bao, Junbo Liao et al.
+- **arXiv:** `2611.07597v1` (published 2026-11-05T07:45:18Z; categories: `cond-mat.str-el`, `cond-mat.mtrl-sci`)
+- **Evidence for ranking:** Broad energy/momentum neutron spectroscopy, comparison to a quantitative spin-wave model, and a journal reference in Physical Review B (114, 264402, 2026; DOI: 10.1103/xpcs-4726).
+- **Claimed result:** The authors find well-defined magnon dispersions consistent with Heisenberg exchange and single-ion anisotropy; any Kitaev interaction is too weak to resolve within their sensitivity.
+- **Evidence type:** Experimental; time-of-flight inelastic neutron spectroscopy and magnetization/magnetic-structure constraints, analyzed with linear spin-wave theory.
+- **Caveat:** A weak Kitaev term may be obscured by experimental broadening and correlated with the fitted nearest-neighbor exchange, so “negligible” means not resolved as an appreciable contribution in this bulk sample.
+- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
+- **Themes:** Condensed matter & materials
+
+### 8. [Signature of charge-3e tunneling in twisted cuprate Josephson junctions](https://arxiv.org/abs/2611.07708)
+- **Abstract:** The authors report an unusual Shapiro-step sequence in twisted cuprate Josephson junctions that they interpret as tunneling with an effective charge of three electron charges.
+- **Authors:** Yuying Zhu, Heng Wang, Zechao Wang, Zhiyuan Sun, Qi-Kun Xue, Ding Zhang
+- **arXiv:** `2611.07708v1` (published 2026-11-05T09:27:48Z; categories: `cond-mat.supr-con`)
+- **Evidence for ranking:** A striking, directly testable transport signature in a twisted superconducting junction; the reported microwave-frequency, power, temperature, and current-annealing dependencies all support the same $hf/3e$ step assignment.
+- **Claimed result:** The authors identify a new $nhf/3e$ Shapiro sequence, which they attribute to a Josephson tunneling process involving three electrons.
+- **Evidence type:** Experimental; microwave-driven Shapiro-step measurements in twisted cuprate Josephson junctions.
+- **Caveat:** The step sequence is evidence for an effective 3e tunneling channel, not by itself proof of a stable charge-3e condensate; the mechanism and its reproducibility need independent tests.
+- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
+- **Themes:** Condensed matter & materials
+
+### 9. [Joint analysis of the Macquart relation and the dispersion measure power spectrum: cross-covariance and redshift self-calibration](https://arxiv.org/abs/2611.08481)
+- **Abstract:** The authors derive and simulate the cross-covariance between fast-radio-burst dispersion-measure observables, then forecast how combining them with weak lensing can improve cosmological and host-galaxy constraints.
+- **Authors:** Amy Wayland, Robert Reischke
+- **arXiv:** `2611.08481v1` (published 2026-11-05T18:59:19Z; categories: `astro-ph.CO`)
+- **Evidence for ranking:** The paper supplies a halo-model covariance calculation, validates it against $10^4$ log-normal FRB simulations, and quantifies the gain in an LSST-like joint forecast; the arXiv comment says submitted to JCAP.
+- **Claimed result:** The authors find the two FRB observables are nearly independent for wide surveys and forecast 32% tighter physical-baryon-density constraints and a 4.1-fold reduction in uncertainty on the mean host contribution when adding the Macquart relation.
+- **Evidence type:** Computational and forecast; halo-model derivation, log-normal forward simulations, and an LSST-like weak-lensing forecast.
+- **Caveat:** These are model-based forecasts, not constraints from a completed joint survey; a 20% error in the mean FRB relation can bias the DM power spectrum by up to 2σ per band in their large-catalogue example.
+- **Announcement type:** new submission, Thu 5 Nov 2026 announcement batch
+- **Themes:** Astrophysics; Cosmology & gravitation; Computational & data methods
+
 ## Trending Research Themes
 
-- Precision probes recur across different settings: binary-neutron-star waveforms constrain $R^2$ gravity (Gupta & Sagunski), stellar kinematics constrain M87's black-hole mass (Liepold et al.), DESI halo stars constrain the Milky Way's mass (DESI Collaboration), and deuterium Compton scattering refines neutron polarizabilities (Godagama et al.). These use distinct data and are not independent confirmations of one result.
-- Low-noise quantum measurement connects atom-array loss control and photonic metrological steering (Zhang et al.; Karthik et al.), sub-GHz axion-search amplifier characterization (Wiedemann et al.), and NV-center criticality spectroscopy in CrSBr (Ziffer et al.). The papers address different mechanisms and platforms; there is no shared experiment.
-- Astronomical surveys and human-in-the-loop analysis meet in the Euclid lens-grading study, while DESI uses mock-calibrated dynamical models for the Milky Way mass (Euclid Collaboration et al.; DESI Collaboration). These are separate data products and methods, not cross-validation of one astrophysical result.
-- A distinct theory/computation signal is the finite-dimensional lattice construction for chiral gauge theories (Lootens & Singh); this is a single selected paper, not evidence of a wider trend by itself.
-- One isolated materials result in this selection is the proposed percolative conduction onset in MoS$_2$/HfO$_2$ transistors (Upadya et al.); it should not be read as a field-wide consensus.
+- **Quantum dynamics meets real hardware:** The monitored-circuit OTOC study and inter-transition-interference experiment both show how non-unitary coupling changes quantum signals, but use different systems; the topological-memory paper is a theoretical error-correction counterpart, not an experimental confirmation (2611.08152, 2611.07768, 2611.08488).
+- **Materials claims tied to spectral or transport signatures:** OsB2’s proposed Type-I classification rests on three thermodynamic/magnetic signatures; NiBr2’s interaction model is tested against neutron spectra; the twisted-cuprate paper interprets an anomalous Josephson step sequence as 3e tunneling. These concern separate materials and do not mutually confirm one another (2611.08239, 2611.07597, 2611.07708).
+- **Search sensitivity and inference assumptions:** GigaBREAD revisits dark-photon limits under a fixed-polarization model, while the FRB paper quantifies covariance and redshift-calibration biases in forecasts. Both show that signal/model assumptions matter, but one is a null experimental search and the other a statistical forecast (2611.07426, 2611.08481).
+- **Heavy-ion geometry as a controlled analysis axis:** ALICE uses event-shape selection to separate initial-geometry effects from the linear and nonlinear components of flow; this is a strong isolated signal in the selected set, not evidence of a multi-paper facility trend (2611.08473).
 
 ## Open Problems and Research Directions
 
-- **Author-stated open problem — gravity:** The $R^2$ waveform analysis omits changes to neutron-star structure induced by the theory (Gupta & Sagunski). A follow-up could include equation-of-state-dependent stellar structure in waveform inference and test whether the coupling bound remains stable.
-- **Author-stated open problem — Rydberg arrays:** Photoionization and laser phase noise contribute to avalanche loss, and stronger blackbody shielding is projected to help (Zhang et al.). Follow-up measurements could vary trap depth and shield temperature independently, then test whether lower loss persists as arrays grow beyond the demonstrated 70 atoms.
-- **Author-stated limitation — M87:** The statistical uncertainty is now below the systematic uncertainty in M87's distance (Liepold et al.). Refining the distance and testing the mass against additional stellar-dynamical models would clarify the remaining uncertainty.
-- **Author-stated limitation — neutron structure:** The neutron polarizabilities depend on the $\chi$EFT extraction and Baldin sum-rule input, with a stated theoretical uncertainty (Godagama et al.). Additional high-precision angular/energy measurements and comparisons across light-nucleus targets could test extraction stability.
-- **Author-stated open problem — lens grading:** Volunteers and researchers disagree substantially for intermediate-grade Euclid lens candidates (Euclid Collaboration et al.). Calibrated probabilistic volunteer labels could be tested against expert adjudication on a held-out candidate sample before use in a future release.
-- **Author-stated scope — CrSBr:** The criticality interpretation relies on a noise model and a trilayer sample (Ziffer et al.). Measurements across thickness, field, and temperature, compared with an independent probe, could test the inferred exponents and long-range-interaction explanation.
+- **Open problem (authors’ stated limitation):** In the monitored-circuit experiment, finite sampling and hardware-induced errors cannot be cleanly disentangled, and current hardware data are limited to 8 qubits (2611.08152). **Direction (synthesis):** repeat with larger registers, calibrated mid-circuit readout/reset, and independent estimates of spectator dephasing and crosstalk.
+- **Open problem (authors’ stated limitation):** Event-shape selection can modify flow fluctuations, and the largest quoted systematic uncertainties for higher harmonics reach roughly 10–11% in some bins (2611.08473). **Direction (synthesis):** test selection-bias corrections with independent event-shape estimators and compare higher-statistics Pb-Pb and Xe-Xe data.
+- **Open problem (synthesis from the new claim):** The OsB2 reclassification is supported by several signatures in one preprint but has no independent replication in the sources checked (2611.08239). **Direction:** repeat susceptibility, calorimetry, and field-sweep measurements on independently prepared samples and quantify sample/domain dependence.
+- **Open problem (authors’ stated limitation):** GigaBREAD’s fixed-polarization constraints carry a 23% frequency-dependent power systematic and depend on polarization geometry (2611.07426). **Direction:** apply the likelihood to additional observing orientations and independent broadband data to test the modulation model and reduce calibration sensitivity.
+- **Open problem (authors’ stated model dependence):** In NiBr2, a weak Kitaev contribution can be hidden by spectral broadening and correlated exchange parameters (2611.07597). **Direction:** improve energy resolution and fit joint spectra across temperature/field and related NiX2 compounds to separate weak anisotropic exchange from Heisenberg terms.
+- **Open problem (authors’ stated forecast sensitivity):** A 20% error in the mean FRB DM-redshift relation can induce up to a 2σ-per-band bias in the paper’s large-catalogue example (2611.08481). **Direction:** prioritize host-redshift calibration and jointly test the relation against angular-DM statistics and weak-lensing data as catalogues grow.
 
 ## Takeaway
 
-This batch's strongest checkable signals are new measurement leverage and analysis methods: a gravitational-wave bound in a modified-gravity model, cryogenic suppression of correlated Rydberg loss, combined JWST/Keck black-hole kinematics, and new nuclear and survey constraints. All remain preprint claims; systematics, model choices, channel coverage, and limited citation evidence should temper claims about their reach.
+The clearest research pattern is not one shared discovery but a push to make quantum and astrophysical signals more diagnostic: controlled measurements, model comparison, and explicit uncertainty budgets. The most consequential claims—Type-I OsB2, 3e tunneling, and measured non-unitary scrambling—remain preliminary and need replication or better-resolved systematics; the ranking is a research-news snapshot, not a popularity table.
 
 ## Method and sources
 
-- **Window:** Daily announcement batch dated Thu 5 Nov 2026 (selected date 2026-11-05). Snapshot: 2026-11-06T01:36:37Z. No 6 Nov batch was listed at the snapshot, so this uses the prior batch. arXiv's `published` timestamp is the first-submission time, not announcement time; selected first versions were submitted Nov 3–4 UTC, while the two replacements were updated Nov 3 UTC and announced in the Nov 5 batch.
-- **Archive coverage:** Checked the full New submissions, Cross submissions, and Replacement submissions sections on the announcement pages for all 11 configured archives: `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. The pages contained 921 archive appearances and 694 unique versionless IDs: 437 new/cross-list works and 257 replacement records; 170 unique IDs appeared in more than one configured archive. Selected abstracts were checked on arXiv; PDFs for the first three papers were inspected for methods, results, and limitations.
-- **Inference:** arXiv supplies no official trending chart, readership, or download ranking. This is an inferred notable-paper ordering based on cross-archive relevance, concrete measurements or methods, research/instrumentation signals, a substantive update where applicable, and limited independent discussion. The batch is too recent for useful age-normalized citation momentum; citation totals are not represented as period gains. Semantic Scholar citation evidence was unavailable at the snapshot and was not treated as zero.
-- **Sources:** [arXiv physics new](https://arxiv.org/list/physics/new), [astro-ph new](https://arxiv.org/list/astro-ph/new), [cond-mat new](https://arxiv.org/list/cond-mat/new), [gr-qc new](https://arxiv.org/list/gr-qc/new), [hep-ex new](https://arxiv.org/list/hep-ex/new), [hep-lat new](https://arxiv.org/list/hep-lat/new), [hep-ph new](https://arxiv.org/list/hep-ph/new), [hep-th new](https://arxiv.org/list/hep-th/new), [nucl-ex new](https://arxiv.org/list/nucl-ex/new), [nucl-th new](https://arxiv.org/list/nucl-th/new), [quant-ph new](https://arxiv.org/list/quant-ph/new); [arXiv API](https://export.arxiv.org/api/query). Secondary synopses checked for rank 1: [Cosmos Week](https://www.cosmosweek.com/en/news/gravitational-wave-constraints-on-r-2-gravity/) and [AstroGroot](https://astrogroot.org/detail?type=arxiv&id=2611.06902).
+- **Window:** Latest announced daily batch labelled Thu 5 Nov 2026; eligible submission date 2026-11-05 through 2026-11-05 UTC. Snapshot: 2026-11-06T17:29:35Z. The Friday 6 Nov batch was not yet due for release at the snapshot: arXiv says submissions received by 14:00 Eastern are generally made available at 20:00 Eastern. Thus this is the prior batch for the current calendar day.
+- **Coverage:** Queried 334 unique arXiv records submitted on 5 Nov across all 11 configured groups: `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`; cross-listed works were deduplicated by arXiv ID. By primary category, `quant-ph` had 60/334 records, ahead of `hep-ph` (26) and `physics.optics` (18); cross-list appearances overlap. All nine selected abstract pages were verified on arXiv. The configured web-extraction backend was unavailable, so arXiv API/HTML were fetched directly. PDFs for the first three selected papers were inspected for methods, results, and limitations.
+- **Inference:** arXiv publishes no official trending, reading, or download chart. Because citations are not yet informative for same-day papers and Semantic Scholar citation metadata was unavailable at this snapshot, this is labelled “notable recent papers”; ordering emphasizes checkable discovery-list visibility where found, cross-subfield relevance, concrete results, collaboration/data or code signals, and stated limitations—not submission order or claimed popularity. No citation counts are represented as period gains.
+- **Sources:** [arXiv submission/availability schedule](https://info.arxiv.org/help/submit/index.html); [arXiv API](https://export.arxiv.org/api/query); archive recent pages: [physics](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), [quant-ph](https://arxiv.org/list/quant-ph/recent). Discovery surfaces checked: [papers.cool quantum list](https://papers.cool/arxiv/quant-ph), [SciRate](https://scirate.com/); journal record for NiBr2: [Physical Review B](https://doi.org/10.1103/xpcs-4726).

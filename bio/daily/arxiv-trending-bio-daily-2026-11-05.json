@@ -1,0 +1,440 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "daily",
+  "date": "2026-11-05",
+  "title": "arXiv Trending Biology and Biomedicine — 5 November 2026",
+  "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-05.md",
+  "entry_count": 10,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart; ranking is inferred from incomplete biomedical coverage and is not a measure of readership, downloads, validity, or clinical impact.",
+  "announcement_batch_date": "2026-11-05",
+  "window_start": "2026-11-05",
+  "window_end": "2026-11-05",
+  "snapshot_utc": "2026-11-06T01:26:12Z",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "rank": 0,
+      "url": "",
+      "abstract": ""
+    },
+    {
+      "id": "01-biotram-biochemistry-informed-transformer-for-relative-abundance-via-m",
+      "kind": "paper",
+      "title": "BIOTRAM: Biochemistry-informed Transformer for Relative Abundance via Metabarcoding",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.05418",
+      "arxiv_id": "2611.05418",
+      "arxiv_version": "v1",
+      "published": "2026-11-01T00:00:00Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.LG"
+      ],
+      "authors": [
+        "Boehly, Emma",
+        "Lowe, Scott C.",
+        "Thompson, Ken A.",
+        "Fuller, Anthony",
+        "Armstrong, Will",
+        "Zarubiieva, Iuliia",
+        "Madan, Neelu",
+        "Gao, Tiancheng",
+        "Padhye, Sameer",
+        "Sones, Jayme",
+        "Perez, Kate H. J.",
+        "Hardwick, Bess",
+        "Furneaux, Brendan",
+        "Zakharov, Evgeny V.",
+        "Steinke, Dirk",
+        "deWaard, Jeremy R.",
+        "deWaard, Stephanie L.",
+        "McKeown, Jaclyn",
+        "Monkhouse, Norman",
+        "Pace, Cole",
+        "Ratnasingham, Sujeevan",
+        "Schmuck, Raina",
+        "Thompson, Amy",
+        "León-Cortés, Jorge L.",
+        "Cagnolo, Luciano",
+        "Arena, Julieta Soledad",
+        "Masciale, Jeremías Domínguez",
+        "Douwes, Errol",
+        "Groner, Elli",
+        "Ishihara, Masae Iwamoto",
+        "Matsuoka, Shunsuke",
+        "Gonzalez, Mailyn A.",
+        "Antonelli, Alexandre",
+        "Sousa-Lima, Renata S.",
+        "Niessner, Armin",
+        "Guedes, Patrícia",
+        "Biro, Elizabeth G.",
+        "Colón-Piñeiro, Zuania",
+        "Huber, Dezene P. W.",
+        "Mazumdar, Santosh",
+        "Kharrat, Magda Bou Dagher",
+        "Mondejar, Eddie P.",
+        "Tubaro, Pablo Luis",
+        "Marais, Eugene",
+        "Maggia, Marie-Eugénie",
+        "Lijtmaer, Darío Alejandro",
+        "Prosser, Sean W. J.",
+        "Murillo-Vázquez, Andrea",
+        "Pulido-Santacruz, Paola",
+        "Leitman, Paula",
+        "Dorigo, Thiago Arnt",
+        "Ito, Nao",
+        "Knoops, Paul",
+        "Kuzmina, Maria L.",
+        "Morishita, Hikaru",
+        "Kimoto, Keishi",
+        "Raharinjanahary, Dimby",
+        "Smith, Rhian J.",
+        "Adalsteinsson, Solny A.",
+        "Borja-Acosta, Kevin G.",
+        "Amouroux, Paul",
+        "Mendoza-Henao, Angela M.",
+        "Diaz-Pulido, Angélica",
+        "Molin, Anamaria Dal",
+        "Powell, Luke L.",
+        "Inclan, Diego",
+        "Calvente, Alice",
+        "Dunson, David",
+        "Fisher, Brian",
+        "Roslin, Tomas",
+        "Ovaskainen, Otso",
+        "Hebert, Paul D. N.",
+        "Taylor, Graham W."
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Arthropod monitoring at scale begins with metabarcoding of bulk samples: trap collections of hundreds to thousands of specimens processed as one unit, extraction of DNA from the bulked specimens, then sequencing of the DNA from all specimens together. Metabarcoding reveals which taxa such a sample contains, but due to factors such as differing DNA amplification rates and body sizes, its read counts do not neatly correspond to how abundant the different taxa are relative to one another. This lack of relative abundance limits the data's utility for the multitude of ecological analyses that depend on it. We propose BIOTRAM: a neural network that estimates per-taxon specimen counts by dividing the observed read counts by a learned read yield per specimen, which it factors into the DNA each specimen contributes and how efficiently that DNA is amplified. On a paired dataset of 1,188 bottles (800 k specimens) processed both by metabarcoding and by comprehensive individual barcoding for ground-truthing, BIOTRAM reduces the Jensen-Shannon divergence between the estimated and the true composition from 0.3586 for raw read proportions (the usual proxy for abundance) to 0.1200. Trained on the same objective and inputs as four generic deep architectures, all with tuned loss weights, it reaches a count error 3.2% below that of the strongest of them and the lowest composition divergence. It also generalizes to out-of-domain data better, beating all baselines on bottles from unseen regions, later collection dates and unseen sequencing batches, and transferring to data from an unseen laboratory. Structuring the mapping from reads to counts around the steps of the experimental pipeline thus yields more accurate abundance estimates than leaving that mapping unconstrained.",
+      "claimed_contribution": "Uses a biochemistry-informed neural model to estimate per-taxon specimen counts from bulk-metabarcoding reads by modeling DNA contribution and amplification efficiency.",
+      "unique_caveat": "The paper reports substantial degradation under spatial, temporal, and sequencing-batch shift; body size and amplification are only partly identifiable, and most evaluations concern arthropod metabarcoding.",
+      "refs": [
+        "https://arxiv.org/abs/2611.05418"
+      ]
+    },
+    {
+      "id": "02-cellcanon-an-agentic-cellular-world-model-for-prediction-explanation-a",
+      "kind": "paper",
+      "title": "CellCanon: An Agentic Cellular World Model for Prediction, Explanation, and Observation-Driven Updating",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.05890",
+      "arxiv_id": "2611.05890",
+      "arxiv_version": "v1",
+      "published": "2026-11-04T00:00:00Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI"
+      ],
+      "authors": [
+        "Liang, Zhaokang",
+        "Zhuang, Shuyang",
+        "Jiao, Xiaoran",
+        "Chen, Hao"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Biological discovery requires using molecular knowledge and new measurements to infer responses beyond the conditions already observed. We introduce CellCanon, the first agentic cellular world model to unify single-cell expression prediction, evidence-grounded explanation, and observation-driven updating. Its predictive core reuses condition-level biological evidence across gene-specific numerical readouts to guide single-cell expression generation. A shared world state links predictions, acquired measurements, and source-linked claims, supporting explanation and revision. On 339 held-out SciPlex3 conditions across three cell lines, CellCanon improves differential-expression AUPRC and Macro-F1 over the best baseline for each metric by 63.3% and 17.3%, respectively, and direction Macro-F1 by 7.2%. Relative to gene-wise reasoning on matched drug-cell cohorts, measured language-model token use falls by 99.77% for Predict and 98.41% for Explain. On the source-grounded benchmark, Explain correctly answers all answerable questions with supporting proofs and identifies all insufficient-evidence cases. In simulated experimental feedback, Update uses one measured source context per drug to exceed the best fine-tuned baselines in differential-expression AUPRC and Macro-F1 without changing model weights. Together, these capabilities support a cumulative account of cellular responses, with predictions and biological judgments that can be revised as evidence accumulates.",
+      "claimed_contribution": "Introduces an agentic cellular world model that combines single-cell perturbation prediction, source-grounded explanations, and observation-driven updating in a shared cellular state.",
+      "unique_caveat": "The update evaluation is simulated from existing SciPlex3 measurements rather than a prospective experiment, and the model does not establish clinical utility.",
+      "refs": [
+        "https://arxiv.org/abs/2611.05890"
+      ]
+    },
+    {
+      "id": "03-venusgenome-genome-aware-masked-autoencoding-for-microbial-genome-repr",
+      "kind": "paper",
+      "title": "VenusGenome: Genome-Aware Masked Autoencoding for Microbial Genome Representation Learning",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.05405",
+      "arxiv_id": "2611.05405",
+      "arxiv_version": "v1",
+      "published": "2026-10-20T00:00:00Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": [
+        "Liang, Zhang",
+        "Yukun, Zhang",
+        "Yang, Tan",
+        "Fan, Jiang",
+        "Bozitao, Zhong",
+        "Xiaoran, Cheng",
+        "Liang, Hong",
+        "Mingchen, Li",
+        "Yuanxi, Yu"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Omics & single-cell methods"
+      ],
+      "abstract": "Genomic-context models have shown that contextualizing protein embeddings can improve predictions of microbial function. We observe that a gene's protein embedding is partially predictable from the embeddings of neighboring genes in the genome, motivating high-ratio masking that requires reconstruction from sparser genomic context. Genomic modeling must also distinguish biological relationships from assembly conventions, since the ordering of separate contigs does not imply adjacency and strand labels depend on the reference orientation. We therefore introduce VenusGenome, a gene-resolution masked autoencoder that combines visible-only encoding with genome-aware attention incorporating contig boundaries, relative strand orientations, and gene positions. We pretrain this model on a curated corpus of over 1.7 million microbial genome assemblies from isolate and metagenomic sources, using frozen protein embeddings as gene-level inputs. Across genome-level phenotype prediction and gene-level tasks, the resulting frozen representations achieve the highest mean performance among the evaluated models on nine of eleven primary metrics. An exploratory gene-input perturbation analysis further links representation sensitivity to experimentally measured fitness defects. Ablations support the contribution of genome-aware attention and show the benefits of masked autoencoding over BERT-style masked modeling, with further gains from higher masking ratios.",
+      "claimed_contribution": "Presents a genome-aware masked autoencoder that contextualizes frozen protein embeddings using contig boundaries, strand relationships, and gene positions.",
+      "unique_caveat": "The inputs are frozen protein embeddings, the fitness analysis is exploratory and averages across assayed conditions, and long assemblies are processed in independently encoded windows.",
+      "refs": [
+        "https://arxiv.org/abs/2611.05405"
+      ]
+    },
+    {
+      "id": "04-rethinking-one-gene-one-token-transcriptome-aware-tokenization-for-sin",
+      "kind": "paper",
+      "title": "Rethinking One Gene, One Token: Transcriptome-Aware Tokenization for Single-Cell Foundation Models",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.05410",
+      "arxiv_id": "2611.05410",
+      "arxiv_version": "v1",
+      "published": "2026-10-21T00:00:00Z",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Xiong, Jiaqi",
+        "Li, Jiaying",
+        "Zheng, Yu",
+        "Zhou, Xiang",
+        "Wang, Ziteng",
+        "Hu, Xinting",
+        "Qi, Jiaxin"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Quantitative methods"
+      ],
+      "abstract": "Single-cell foundation models typically treat each gene as a token, which is both costly and wasteful. A cell can express thousands of genes, so one token per gene makes self-attention expensive, yet many of these genes are detected at low levels and carry too little signal to deserve a token of their own. Genes that are expressed together could instead share a token, leaving separate tokens for genes that stand out. We introduce scTAT (Transcriptome-Aware Tokenization), which pairs a gene-set vocabulary with a per-cell tokenizer. The vocabulary holds overlapping gene sets that recur with stable relative expression across the pretraining corpus. Using these sets raises two difficulties. First, which genes should share a token depends on the cell, whereas existing multi-gene tokens fix the grouping in advance. Second, gene sets of different sizes must be compared with single genes on a common scale. The tokenizer therefore decides per cell, letting gene sets and single genes compete for token positions under an expression score normalized by the square root of set size. Training still reconstructs individual genes, so predictions stay at gene resolution. In frozen-embedding cell-type annotation, scTAT matches the strongest one-gene-per-token model with half the token budget. Its advantage over one-gene-per-token models at the same budget grows as the budget shrinks and the tokenizer assigns more positions to gene sets. Encoding the same genes with gene-set tokens also nearly halves the Transformer's matrix-multiplication cost. These results show that a token need not hold exactly one gene: when the tokenizer decides per cell which genes share a token, a fixed budget covers more of each transcriptome at no cost in annotation accuracy.",
+      "claimed_contribution": "Introduces scTAT, a per-cell tokenizer that lets recurrently co-expressed gene sets compete with individual genes for token positions while retaining gene-level reconstruction.",
+      "unique_caveat": "The reported evidence is primarily representation and annotation benchmarking; it does not show improved biological discovery or experimental validation across tissues.",
+      "refs": [
+        "https://arxiv.org/abs/2611.05410"
+      ]
+    },
+    {
+      "id": "05-a-training-free-socket-for-dna-in-frozen-language-models",
+      "kind": "paper",
+      "title": "A Training-Free Socket for DNA in Frozen Language Models",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.05401",
+      "arxiv_id": "2611.05401",
+      "arxiv_version": "v1",
+      "published": "2026-10-16T00:00:00Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI"
+      ],
+      "authors": [
+        "Fatehi, Arash"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "Connecting a DNA foundation model to a large language model (LLM) usually requires training a connector, and often the LLM too. We show that a closed-form map is enough for gene-level questions. Our method, the socket, fits one ridge regression (the plug) from frozen Evo 2 features to the host LLM's own representation of the gene's symbol, name, and description at an early layer. The plug's output replaces the hidden state at placeholder positions, and no gradient passes through the host. We test it on GeneHop, a five-way multiple-choice benchmark split by homology. In a single run on the held-out test set, under a frozen analysis plan, real DNA beats shuffled DNA on all four hosts: by +22.2 points [19.8, 25.0] on Qwen3.5-4B, +26.1 [24.3, 27.9] on Qwen3.6-27B, +16.7 [14.2, 19.7] on Mistral-7B, and +18.4 [16.2, 21.0] on OLMo-2-7B. All four survive Holm correction, every null control stays within two points of the sham level, and the development results agree within 2.3 points. A layer rule that uses no task items was selected on three hosts; it predicted the working layer of the fourth before any DNA-plug scoring on it. A text-only linear map lets one plug feed any other host, at a cost of at most 0.9 points on test. The socket conveys gene identity: nearest-neighbour retrieval recovers 72-84% of the effect, but the plug beats it on every host by 3.0-5.2 points and keeps most of its effect without training homologs.",
+      "claimed_contribution": "Maps frozen DNA-model features into a frozen language model with a single ridge-regression plug, avoiding joint connector or host-model training.",
+      "unique_caveat": "GeneHop is a gene-level multiple-choice benchmark; the method does not by itself demonstrate general genomic reasoning or experimental biological utility.",
+      "refs": [
+        "https://arxiv.org/abs/2611.05401"
+      ]
+    },
+    {
+      "id": "06-predicting-protein-structures-at-any-folding-stage-from-sequence",
+      "kind": "paper",
+      "title": "Predicting protein structures at any folding stage from sequence",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.04287",
+      "arxiv_id": "2611.04287",
+      "arxiv_version": "v2",
+      "published": "2026-11-03T00:00:00Z",
+      "categories": [
+        "q-bio.BM",
+        "cs.AI"
+      ],
+      "authors": [
+        "Zhang, Lisheng",
+        "Li, Qingsong",
+        "Xie, Zinan",
+        "Yang, Yanting",
+        "Yang, Qikui",
+        "Lu, Peng",
+        "Fu, Zhican",
+        "Cui, Wentao",
+        "Hou, Runtong",
+        "Xie, Zhengwei"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Protein structure prediction has largely focused on native conformations, leaving the continuum of unfolded states, folding intermediates, and native structures difficult to access. We present FoldScape, a sequence-conditioned deep learning framework for generating protein conformational ensembles at specified folding fractions $Q$. Trained on approximately one million conformations from 10,000 protein sequences, FoldScape combines coarse-grained folding and all-atom mechanical-unfolding trajectories. It reconstructs three-dimensional $C_\\alpha$ chains through hierarchical sliding-window regressions of inter-residue distances, chain-level assembly, and a rectified-flow decoder. By conditioning on folding progress, FoldScape generates conformations from unfolded states through intermediates to native-state structures without protein-specific molecular dynamics at inference. In matched-sample comparisons, FoldScape achieves median conformational-space coverage of 0.989, 0.722, and 0.877 along radius of gyration, fraction of native contacts $Q$, and secondary-structure fraction, respectively, versus 0.05, 0.05, and 0.10 for seed-varied AlphaFold 3 ensembles. Coverage advantages are consistent across the evaluated proteins and robust to binning choices. Reconstruction accuracy remains approximately stable across the evaluated stages of a folding trajectory, and stride-one crop-and-superpose inference extends predictions to chains several times longer than the single-pass limit. Analyses of mechanical-unfolding trajectories show residue-resolved pathways, reproducible extension-conditioned observables across pulling velocities, and geometrically coherent segments in partially unfolded chains. FoldScape extends sequence-based structure prediction beyond a single folded endpoint to controllable conformational-ensemble generation across protein folding.",
+      "claimed_contribution": "Presents FoldScape, a sequence-conditioned model for generating protein conformational ensembles from unfolded states through intermediates to native-like structures at a specified folding fraction.",
+      "unique_caveat": "The evidence is computational and trajectory-based; generated conformations are not equivalent to experimentally observed folding pathways or validated functional states.",
+      "refs": [
+        "https://arxiv.org/abs/2611.04287"
+      ]
+    },
+    {
+      "id": "07-discrete-backbone-elasticity-and-curvature-dependent-torsion-statistic",
+      "kind": "paper",
+      "title": "Discrete Backbone Elasticity and Curvature-Dependent Torsion Statistics in Proteins",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.06363",
+      "arxiv_id": "2611.06363",
+      "arxiv_version": "v1",
+      "published": "2026-11-04T00:00:00Z",
+      "categories": [
+        "q-bio.BM",
+        "physics.bio-ph",
+        "physics.chem-ph"
+      ],
+      "authors": [
+        "Wang, Yiquan",
+        "Bian, Mingyu",
+        "Ma, Jiayuan"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Coarse-grained models of protein conformational dynamics use $\\mathrm{C}_\\alpha$ geometry to describe the probabilities of regular helices, ordered turns and disordered conformations. To test how much of this order arises from local chain elasticity, we connect discrete Hasimoto frame transport to neighboring bending mismatch, deriving a curvature-product torsion interaction and a six-parameter generalized von Mises density. Fitted on 194 chains from the ATLAS molecular dynamics database and tested on 1744 sequence-nonredundant proteins, this baseline reduces negative log-density loss from 1.490 to 1.160 nats, torsion-sign error from 12.26 to 2.15 percentage points, and helix-fraction error from 21.84 to 10.41 points. Ablations and circular-moment projections against reference generative models motivate extensions to anisotropic stiffness and two partition-function-weighted elastic states, further lowering test loss to 0.790 nats and helix error to 1.65 points. The fixed hierarchy also improves predictions across 72 trajectories of peptides $\\mathrm{Fs}$ and $(\\mathrm{AAQAA})_3$ and miniprotein $\\mathrm{HP35}$ spanning varied starting conformations and force fields. Remaining angular errors in these trajectories are associated with atomic context at shared bends, as bend-matched peptide frames adopt opposite torsion signs with distinct hydrogen-bond patterns and a proline-containing $\\mathrm{HP35}$ turn remains at negative torsion. Introducing a bilinearly coupled $\\mathrm{C}_\\alpha$--$\\mathrm{N}$ orientation angle largely reparameterizes the existing bend-dependent harmonics, with an empirical $L^2$ Gram projection placing 96.7\\% to 99.6\\% of its added coefficient-function squared norm within the original six-function span. These results link discrete Hasimoto elasticity to statistical backbone potentials and clarify the scope and limits of local $\\mathrm{C}_\\alpha$ geometry.",
+      "claimed_contribution": "Derives a discrete-elasticity statistical model linking local C-alpha geometry to protein backbone torsion distributions and conformational order.",
+      "unique_caveat": "The model is a coarse-grained statistical baseline and leaves angular errors associated with atomic context at bends; it does not replace atomistic simulation or experimental structure determination.",
+      "refs": [
+        "https://arxiv.org/abs/2611.06363"
+      ]
+    },
+    {
+      "id": "08-morpheus-ai-agents-autonomously-generate-execute-and-refine-virtual-ti",
+      "kind": "paper",
+      "title": "Morpheus.AI: agents autonomously generate, execute and refine virtual tissue models",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.05413",
+      "arxiv_id": "2611.05413",
+      "arxiv_version": "v1",
+      "published": "2026-10-29T00:00:00Z",
+      "categories": [
+        "q-bio.QM",
+        "q-bio.CB",
+        "q-bio.TO"
+      ],
+      "authors": [
+        "Chandratre, Prerana",
+        "Sharma, Anjali",
+        "Michaelis, Justin Bürger",
+        "Jahn, Diego",
+        "Starruß, Jörn",
+        "Brusch, Lutz",
+        "Syga, Simon"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "Virtual tissue models link observations to mechanistic hypotheses, but building them demands expertise in biology, mathematics and programming. Here, large language model (LLM) agents paired with the simulator Morpheus ( this http URL ) autonomously built such models from fifteen benchmark studies, five without a published model. With a frontier LLM, agents that ran their simulations met 83-86% of study-specific criteria in under two hours and for under US\\$4 per model. Such agents could make in silico modeling routine.",
+      "claimed_contribution": "Tests LLM agents that generate, run, and refine virtual tissue models in the Morpheus simulator from benchmark studies.",
+      "unique_caveat": "This is evaluation of in-silico model construction against benchmark criteria, not evidence that the generated models predict tissue behavior prospectively or clinically.",
+      "refs": [
+        "https://arxiv.org/abs/2611.05413"
+      ]
+    },
+    {
+      "id": "09-can-a-self-sustaining-chemical-network-emerge-due-to-just-a-few-cataly",
+      "kind": "paper",
+      "title": "Can a self-sustaining chemical network emerge due to just a few catalysts?",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.06033",
+      "arxiv_id": "2611.06033",
+      "arxiv_version": "v1",
+      "published": "2026-11-04T00:00:00Z",
+      "categories": [
+        "q-bio.MN",
+        "math.PR"
+      ],
+      "authors": [
+        "Kim, Jinsu",
+        "Sönmez, Ercan"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "Understanding how self-sustaining chemical reaction networks can emerge from simple molecules is an important question in chemical approaches to the origin of life. Reflexively autocatalytic and food-generated (RAF) sets provide a mathematical framework for investigating this question. This line of research goes back to the early work of Kauffman on autocatalytic reaction networks and was subsequently developed through the probabilistic framework of Mossel and Steel. Further contributions by Hordijk, Steel, and collaborators extended the theory to more heterogeneous forms of catalysis, including reaction-dependent probabilities or power-law distributions of catalytic activity. We introduce a stochastic model that combines heterogeneous molecular catalytic activity with reaction-dependent molecule-reaction compatibility. By assigning random catalytic weights to molecules and incorporating compatibility through an explicit formulation of catalysis probabilities, our model provides a concrete and flexible setting that captures both sources of heterogeneity while remaining mathematically tractable. We establish novel and general criteria for RAF formation and nonformation. We further demonstrate that classical phase-transition criteria need not remain valid in the presence of reaction-dependent catalysis. For heavy-tailed catalytic weights, we identify and rigorously quantify an additional phase transition. In models with finite-mean catalytic weights, RAF formation and nonformation are governed by a catalytic intensity parameter. For infinite-mean weights, however, we show that RAFs may emerge with probability tending to one even when the catalytic intensity parameter tends to zero.",
+      "claimed_contribution": "Develops a stochastic RAF-network model combining heterogeneous catalytic weights with reaction-dependent molecule–reaction compatibility.",
+      "unique_caveat": "These are probabilistic model results about abstract reaction networks, not an experimental demonstration of abiogenesis or a biochemical system.",
+      "refs": [
+        "https://arxiv.org/abs/2611.06033"
+      ]
+    },
+    {
+      "id": "10-system-theoretic-analysis-of-extended-cellular-potts-models-for-tumor-",
+      "kind": "paper",
+      "title": "System-Theoretic Analysis of Extended Cellular Potts Models for Tumor Invasion",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.06690",
+      "arxiv_id": "2611.06690",
+      "arxiv_version": "v1",
+      "published": "2026-11-04T00:00:00Z",
+      "categories": [
+        "eess.SY",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Tramaloni, Andrea",
+        "Baroncini, Simone",
+        "Avnet, Sofia",
+        "Baldini, Nicola",
+        "Notarstefano, Giuseppe"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "The Cellular Potts Model has emerged as a standard framework for modeling multicellular systems and metastatic progression. Yet, computational extensions incorporating cell movement within spatial gradients of Extracellular Matrix (ECM), an important element of the tissue microenvironment, lack theoretical foundations. This work provides a system-theoretic formulation and analysis of Extended Cellular Potts Models (ECPMs) that explicitly couple tumor dynamics with ECM degradation. We reformulate the ECPM as an interconnected dynamical system: a stochastic process describing a network of locally interacting tumor cells coupled to a jump-linear system describing ECM evolution. By exploiting the sparse energy structure of the model, we characterize asymptotic ECM behavior, transition probabilities with uniform bounds, and global system convergence. In one-dimensional settings, we derive closed-form expressions for invasion time probabilities, revealing how mean invasion time depends on local ECM gradients, number of cells and their tendency to maintain a target volume. Numerical simulations validate theoretical predictions, establishing a principled foundation for analyzing haptotaxis-driven invasion in Potts-based models.",
+      "claimed_contribution": "Recasts an extended Cellular Potts model with ECM degradation as an interconnected stochastic/jump-linear dynamical system and analyzes invasion behavior.",
+      "unique_caveat": "The model is theoretical and simulated; it does not provide patient data, experimental tumor validation, or treatment evidence.",
+      "refs": [
+        "https://arxiv.org/abs/2611.06690"
+      ]
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": 80,
+      "url": "",
+      "abstract": "Biology-aware representation learning; single-cell and tissue-scale world modeling; mechanistic and physically constrained modeling."
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": 81,
+      "url": "",
+      "abstract": "Prospective validation under distribution shift; condition-specific microbial biology; experimental tests of agentic predictions; physical validation of computational conformations."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": 90,
+      "url": "",
+      "abstract": "The strongest evidence is methodological: biology-aware inductive biases are being paired with larger and shifted evaluations, but clinical and experimental claims remain unestablished."
+    }
+  ]
+}

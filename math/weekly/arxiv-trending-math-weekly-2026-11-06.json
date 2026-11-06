@@ -1,0 +1,478 @@
+{
+  "schema": "arxiv-trending-math/v1",
+  "category": "math",
+  "window": {
+    "type": "weekly",
+    "start_date": "2026-10-31",
+    "end_date": "2026-11-06",
+    "snapshot_utc": "2026-11-06T02:26:01Z",
+    "latest_posted_announcement_batch": "2026-11-05"
+  },
+  "date": "2026-11-06",
+  "title": "Mathematics arXiv weekly report — 31 Oct–6 Nov 2026",
+  "source_report": "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-06.md",
+  "entry_count": 12,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv supplies no official trending chart; ordering is inferred from explicit mathematical claims, cross-listing, available formal/computational artifacts and sparse attention evidence. Eight selected papers had zero current Semantic Scholar citations; citation records for four latest selections were unavailable, so popularity cannot be measured reliably.",
+  "sections": [
+    {
+      "id": "2611.04599",
+      "kind": "paper",
+      "title": "Kaplansky's conjectures fail for torsion-free hyperbolic groups in positive characteristic",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.04599",
+      "arxiv_id": "2611.04599",
+      "arxiv_version": "1",
+      "published": "2026-11-03T09:53:55Z",
+      "updated": "2026-11-03T09:53:55Z",
+      "categories": [
+        "math.GR",
+        "math.RA"
+      ],
+      "authors": [
+        "Nidhal Mghirbi",
+        "Seth Douglas"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "The authors construct, for every prime characteristic, a finitely presented torsion-free word-hyperbolic group whose group algebra has a one-sided inverse, yielding counterexamples to all four Kaplansky conjectures in positive characteristic.",
+      "arxiv_abstract": "Do Kaplansky's group-ring conjectures hold for torsion-free word-hyperbolic groups? We show that all four fail in positive characteristic. For every prime $p$ there is a finitely presented, torsion-free, word-hyperbolic group $G$ with a finite two-dimensional classifying space and $a,b\\in\\mathbb{F}_p[G]$ with $ab=1\\neq ba$. So, over every field of characteristic $p$, the group algebra of $G$ is not directly finite and has a non-trivial idempotent, zero divisor and unit, and $G$ is neither sofic nor surjunctive. For $p=2$, $G$, $a$ and $b$ come from OpenAI's random construction, and we add that $G$ is hyperbolic with probability $1-o(1)$, as are OpenAI's zero-divisor groups. For odd $p$ the groups are new: they adapt OpenAI's direct-finiteness construction with a signed cancellation, found first by S. V. Ivanov and independently by us, via an exact solution of a colour-balance problem and a Perron certificate. As far as we know, they are the first torsion-free counterexamples to direct finiteness and to the idempotent conjecture in odd characteristic. Hyperbolicity comes from one deterministic criterion: if a labelled graph is pattern-free, the group obtained by coning off its components is aspherical and has a linear isoperimetric inequality. We prove it by running OpenAI's exclusion of reduced spheres on van Kampen discs, an accounting OpenAI used for another complex. For every prime $p$, the existence of $G$, $a$ and $b$ and the failure of all four conjectures are formalized in Lean 4, including existence forms of the random-graph estimates used. In characteristic zero, where the idempotent and direct-finiteness conjectures hold for torsion-free hyperbolic groups, we show that no cancellation built into the vertex types survives the decay estimate that makes the groups torsion-free. OpenAI's characteristic-two counterexample with torsion is a CAT(0) group.",
+      "claimed_result": "The authors prove that for every prime p there is such a group G and a,b in F_p[G] with ab=1 but ba≠1; they derive failure of direct finiteness, idempotent, zero-divisor, and unit conjectures over every field of characteristic p.",
+      "assumptions_and_setting": "The counterexamples are torsion-free word-hyperbolic groups with finite two-dimensional classifying spaces; the construction is characteristic-dependent.",
+      "unique_caveat": "The result is for positive characteristic. The authors state that direct finiteness and idempotent conjectures hold in characteristic zero for torsion-free hyperbolic groups, while the unit and zero-divisor cases remain open; their construction also rules out one proposed route to characteristic-zero cancellation.",
+      "evidence_for_ranking": "A concrete counterexample to four group-ring conjectures across group and ring theory; the arXiv comment links a Lean 4 formalization and the authors' public project contains it.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-04",
+      "comment": "52 pages, 1 figure, 3 tables. First released on Zenodo on 14 October 2026 (v1.0.0, doi:10.5281/zenodo.23374264); this is v1.0.3 (all versions: doi:10.5281/zenodo.23374263). Lean 4 formalization of the Main Theorem for every prime p: https://github.com/Apsiape/kaplansky-conjectures-hyperbolic-groups/tree/v1.0.3/lean/KaplanskyLean",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.04599",
+      "refs": [
+        "https://arxiv.org/abs/2611.04599",
+        "https://github.com/Apsiape/kaplansky-conjectures-hyperbolic-groups/tree/v1.0.3/lean/KaplanskyLean"
+      ]
+    },
+    {
+      "id": "2611.02043",
+      "kind": "paper",
+      "title": "A proof of the sharpness conjectures for all saturated fusion systems",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.02043",
+      "arxiv_id": "2611.02043",
+      "arxiv_version": "1",
+      "published": "2026-11-01T16:42:53Z",
+      "updated": "2026-11-01T16:42:53Z",
+      "categories": [
+        "math.GR",
+        "math.AT",
+        "math.CT",
+        "math.RT"
+      ],
+      "authors": [
+        "Baoyu Zhang",
+        "Shengmin Zhang"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "For every saturated fusion system over a finite p-group, the authors prove vanishing of positive-degree higher limits for the contravariant part of every Mackey functor over the p-local integers, implying sharp subgroup and normaliser decompositions.",
+      "arxiv_abstract": "We prove the Díaz$\\unicode[Arial]{x2013}$Park conjecture for sharpness of saturated fusion systems. More generally, for every saturated fusion system $\\mathcal F$ over a finite $p$-group and every Mackey functor for $\\mathcal F$ over the localisation $\\mathbb{Z}_{(p)}$ of the integers at $p$, the higher limits of its contravariant part over the centric orbit category vanish in all positive degrees. In particular, the subgroup and normaliser decompositions of every $p$-local finite group $(S,\\mathcal F,\\mathcal L)$ over the $\\mathcal F$-centric subgroups are sharp. This answers in the affirmative a question in the list of important open problems in [M. Aschbacher, R. Kessar and B. Oliver, Fusion Systems in Algebra and Topology, Cambridge Univ. Press (2011)], and proves the sharpness conjecture stated in [M. Aschbacher and B. Oliver, Fusion systems, Bull. Amer. Math. Soc. (2016)] and Conjecture 1.2 of [E. Yalç$\\unicode[Arial]{x131}$n, Higher limits over the fusion orbit category, Adv. Math. (2022)]. The proof is algebraic and does not rely on the classification of finite simple groups.",
+      "claimed_result": "The authors prove that the positive-degree higher limits vanish for every Mackey functor over Z_(p), establishing sharpness of subgroup and normaliser decompositions for every p-local finite group.",
+      "assumptions_and_setting": "The category is a saturated fusion system over a finite p-group; coefficients are Mackey functors over Z_(p), and higher limits are over the centric orbit category.",
+      "unique_caveat": "This is about the stated centric-orbit-category higher limits and coefficient systems, not a classification of finite groups. The Lean and Rocq formalizations are reported by the authors and were not independently audited here.",
+      "evidence_for_ranking": "Resolves named sharpness conjectures and an open question, with relevance across four math categories. The arXiv comment reports unconditional Lean and Rocq formalizations.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-03",
+      "comment": "Lean and Rocq unconditional formalisations (about 62,000 and 100,000 lines of project source). Compilation on personal laptop took about 2.7 hours for Lean under Windows and 3.4 hours for Rocq under Linux. There is a report that describes the details of the formalisations and the underlying theories. See the acknowledgemets for more details",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.02043",
+      "refs": [
+        "https://arxiv.org/abs/2611.02043"
+      ]
+    },
+    {
+      "id": "2611.00629",
+      "kind": "paper",
+      "title": "Multivariate diagonal harmonics: character polynomials and proofs of two conjectures of Bergeron",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.00629",
+      "arxiv_id": "2611.00629",
+      "arxiv_version": "1",
+      "published": "2026-10-31T04:54:46Z",
+      "updated": "2026-10-31T04:54:46Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Eren Ercan"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Algebra & number theory"
+      ],
+      "abstract": "The paper proves Bergeron's Hook-Components and Coefficient-Length conjectures for diagonal harmonics and derives character and dimension formulas, stability thresholds, and related results for several algebraic models.",
+      "arxiv_abstract": "We prove Bergeron's Hook-Components and Coefficient-Length conjectures for the Vandermonde polarization module and full diagonal harmonics in every rank and number of alphabets. Hook-label characters are elementary skewings of the alternating character, and the maximal Schur length in label $μ$ is $n-μ_1$. We compute character and dimension polynomials of diagonal coinvariants in every bosonic--fermionic superspace for $D\\ge3$, $n\\ge\\max\\{D,2D-6\\}$, answering Church--Ellenberg--Farb's character and dimension questions. For augmented commutative algebras in characteristic zero, we construct natural two-Schur presentations and filtered free resolutions with one Schur generator in each homological degree. For polynomial algebras, specialization to orthogonal idempotents identifies the first unstable correction for every nonempty tail $τ$ and degree $D>|τ|$. The stable threshold $n\\ge D+τ_1$ is sharp when the row dimension is at least $\\ell(τ)$. First parabolic algebras recover finite jets, their multiplication and their maps. Selected-label lifts give uniform Vandermonde generation through degree $D$ for $D\\ge3$, $n\\ge2D-3$, and disjoint-label products generate every first occurrence for positive integral row weights. Constructive degree reflection determines all two-column moment homology and generates its first syzygies from degree $n+1$; two-column Vandermonde generation reduces to degree $n-1$. Invariants and harmonics separate through the character range and through degree $n$ in two alphabets. The hook identities also give the fully graded sign component of the $t=0$, $(1,2)$-superspace Theta conjecture.",
+      "claimed_result": "The author proves the hook-component and coefficient-length identities for the Vandermonde polarization module and full diagonal harmonics, and gives character/dimension polynomials in the stated degree range.",
+      "assumptions_and_setting": "The principal character-polynomial result assumes degree D≥3 and n≥max(D,2D−6); other theorems have separate ranges. Schur presentations and resolutions are over characteristic-zero augmented commutative algebras.",
+      "unique_caveat": "The abstract reports the fully graded sign component of the t=0, (1,2)-superspace Theta conjecture, not the full Theta conjecture in all components or parameters.",
+      "evidence_for_ranking": "Two named conjectures are proved, alongside answers to character and dimension questions and explicit sharp stability ranges.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-03",
+      "comment": "65 pages; no figures",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.00629",
+      "refs": [
+        "https://arxiv.org/abs/2611.00629"
+      ]
+    },
+    {
+      "id": "2611.01503",
+      "kind": "paper",
+      "title": "A general framework for universal bounds on the analytic functional calculus",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.01503",
+      "arxiv_id": "2611.01503",
+      "arxiv_version": "1",
+      "published": "2026-11-01T03:36:51Z",
+      "updated": "2026-11-01T03:36:51Z",
+      "categories": [
+        "math.FA",
+        "math.CA",
+        "math.CV",
+        "math.OA",
+        "math.SP"
+      ],
+      "authors": [
+        "Mihai Putinar",
+        "Georgios Tsikalas"
+      ],
+      "themes": [
+        "Analysis & PDE"
+      ],
+      "abstract": "The authors give a flexible Hilbert-space method for dimension-independent bounds on matrix-valued analytic functional calculus and apply it to spectral sets, sectors, and analytic Jordan domains.",
+      "arxiv_abstract": "We establish a general principle for bounding the matrix-valued analytic functional calculus $F\\mapsto F(T)$ of a Hilbert space operator $T$, independently of the matrix size. It rests on two properties of an auxiliary Hilbert space of holomorphic functions: the accretivity of its moment map at $T$ and a uniform bound for its multipliers. The mechanism of OpenAI's direct proof of the complete Crouzeix conjecture is the instance in which these properties come from the positivity of the double-layer potential and from norm estimates for Faber series of a convex domain. The main advantage of our method is that the auxiliary space can be chosen freely, to fit the class of operators, and a well-chosen space can give sharp constants, also on domains that are not convex, simply connected or bounded. On every intersection of two disks of the Riemann sphere, for operators with both closed disks as spectral sets, we obtain a complete bound independent of the two disks, which is sharp for the quantum annulus and the strip. For operators, bounded or m-sectorial, with numerical range in a sector, our bounds improve on the complete Crouzeix inequality for every opening; they are optimal for the right angle, answering a question of Crouzeix, and nearly optimal for acute angles. On Jordan domains with regular real-analytic boundary, a space built from the exterior conformal map and the Faber polynomials of the domain gives complete bounds for operators whose double-layer potential is bounded below. They are optimal for the disk, recover the complete Crouzeix inequality on convex domains, and improve on earlier bounds, including bounds of Crouzeix and Greenbaum, also on nonconvex domains.",
+      "claimed_result": "The authors establish complete functional-calculus bounds under accretivity and multiplier hypotheses, including improved sector bounds and bounds on regular real-analytic Jordan domains; the right-angle sector case is claimed optimal.",
+      "assumptions_and_setting": "The bound depends on an auxiliary holomorphic-function Hilbert space meeting accretivity and multiplier conditions. Applications assume spectral-set disks, numerical range in a sector, or a regular real-analytic boundary with a lower bound on its double-layer potential.",
+      "unique_caveat": "These are conditional bounds for specified operator/domain classes, not a universal bound for arbitrary operators and spectral sets.",
+      "evidence_for_ranking": "Five math categories, a reusable framework, and explicit sharp or improved bounds including a sharp right-angle sector result.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-03",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.01503",
+      "refs": [
+        "https://arxiv.org/abs/2611.01503"
+      ]
+    },
+    {
+      "id": "2611.01703",
+      "kind": "paper",
+      "title": "Transfer of similarity to Hilbert space contractions through inner functions: a proof of Douglas's conjecture",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.01703",
+      "arxiv_id": "2611.01703",
+      "arxiv_version": "1",
+      "published": "2026-11-01T08:44:04Z",
+      "updated": "2026-11-01T08:44:04Z",
+      "categories": [
+        "math.FA",
+        "math.CV",
+        "math.OA"
+      ],
+      "authors": [
+        "Catalin Badea"
+      ],
+      "themes": [
+        "Analysis & PDE"
+      ],
+      "abstract": "For a bounded Hilbert-space operator, the author proves that similarity to a contraction is preserved and reflected by applying a nonconstant inner function when the operator's spectrum avoids the function's reflected singularities.",
+      "arxiv_abstract": "Let $A$ be a bounded operator on a Hilbert space and let $u$ be a non-constant Blaschke product, finite or infinite. We prove that if the spectrum of $A$ does not meet the closure of the set of poles of $u$, then $u(A)$ is similar to a contraction if and only if $A$ is. This settles a conjecture of R.G. Douglas. For infinite products $u$, no additional condition on the zeros beyond the Blaschke condition is required. We also show that '$u(A)$ is similar to a contraction if and only if $A$ is' for all non-constant inner functions $u$ whose reflected singularity set, the closure of the set of poles together with the singular support, avoids the spectrum of $A$. We also prove a weighted resolvent version of the theorem, which allows the poles to accumulate on the spectrum to a limited extent; a column criterion for partial products, which is shown to force their norm convergence; and a simultaneous version for commuting tuples of operators tested by separated inner functions sharing one Lyapunov operator. For finite Blaschke products we obtain a polynomial form of the Lyapunov operator, which gives an estimate for the similarity constants. We also characterise the tuples of finite Blaschke products that form a uniform strong test collection: they are exactly the tuples that are injective, with non-vanishing joint derivative, on the closed disc. Finally, we show by examples that the separation hypothesis cannot be replaced by the existence of a bounded $H^\\infty$ calculus, by the existence of a norm radial limit, or by the strong convergence of the partial products, even for Ritt operators.",
+      "claimed_result": "The author proves Douglas's conjecture for finite or infinite Blaschke products under spectral separation, and extends the equivalence to inner functions whose reflected singularity set avoids the spectrum.",
+      "assumptions_and_setting": "A is a bounded operator on a Hilbert space; the central hypothesis is that its spectrum misses the closure of the poles of the Blaschke product. The broader inner-function version excludes the reflected singularity set.",
+      "unique_caveat": "The spectral-separation condition is central; examples show several proposed weaker substitutes do not suffice, even for Ritt operators.",
+      "evidence_for_ranking": "A named conjecture is settled, with extensions to infinite Blaschke products, commuting tuples, and weighted resolvents across three math categories.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-03",
+      "comment": "20 pages",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.01703",
+      "refs": [
+        "https://arxiv.org/abs/2611.01703"
+      ]
+    },
+    {
+      "id": "2611.00890",
+      "kind": "paper",
+      "title": "The covering radius of the first-order Reed-Muller code in nine variables is 242",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.00890",
+      "arxiv_id": "2611.00890",
+      "arxiv_version": "1",
+      "published": "2026-10-31T12:48:41Z",
+      "updated": "2026-10-31T12:48:41Z",
+      "categories": [
+        "math.NT",
+        "cs.IT",
+        "math.CO"
+      ],
+      "authors": [
+        "Yi Li"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Numerical analysis & computation"
+      ],
+      "abstract": "The author proves that binary first-order Reed-Muller code RM(1,9) has covering radius 242, equivalently that the maximum nonlinearity of a Boolean function of nine variables is 242.",
+      "arxiv_abstract": "We prove that the covering radius of the binary first-order Reed-Muller code RM(1,9) is exactly 242. Equivalently, the maximum nonlinearity of a Boolean function in nine variables is 242. Our proof combines a one-point rigidity theorem with a spectral and computational exclusion of the two larger candidate nonlinearities. We first show that every nine-variable Boolean function of nonlinearity 243 admits a unique one-point modification that raises its nonlinearity to 244: the point to be changed is the vector sum of its support. This part uses exact Walsh-update identities, integer interpolation, rigidity of a quadratic residue, and a sharp Walsh l1 estimate for cubic Boolean functions. To exclude nonlinearity 244, we use Parseval's identity and congruences of integral Walsh coefficients to force an exceptionally restricted spectrum. An associated cubic residue phase must attain the extremal Walsh l1 bound 10240. We eliminate one equality spectrum by hyperplane slicing; the other forces the original Boolean function from the signs of the cubic phase and yields a double-complement-pairing identity for its cubic top part. The classification of alternating trilinear forms over F2, an exact filter of their representatives, and two exhaustive enumerations of 218 quadratic supplements then rule out every remaining candidate. Together with the known construction attaining nonlinearity 242, these arguments establish the asserted covering radius.",
+      "claimed_result": "The author proves the exact covering radius by ruling out nonlinearities 243 and 244, together with the known construction attaining 242.",
+      "assumptions_and_setting": "The result concerns the binary first-order Reed-Muller code in nine variables; the proof uses exact Walsh identities, classification of alternating trilinear forms, and exhaustive finite enumerations.",
+      "unique_caveat": "This is a specific code-parameter result, and the exclusion step depends on finite exact computations whose completeness is part of the proof burden; it does not establish covering radii in general dimensions.",
+      "evidence_for_ranking": "An exact parameter is determined across coding theory and combinatorics using a rigidity theorem and finite spectral/computational exclusions.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-03",
+      "comment": "28 pages",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.00890",
+      "refs": [
+        "https://arxiv.org/abs/2611.00890"
+      ]
+    },
+    {
+      "id": "2611.03295",
+      "kind": "paper",
+      "title": "A height transportation approach to the quantitative Prékopa--Leindler inequality",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.03295",
+      "arxiv_id": "2611.03295",
+      "arxiv_version": "1",
+      "published": "2026-11-02T15:32:14Z",
+      "updated": "2026-11-02T15:32:14Z",
+      "categories": [
+        "math.FA",
+        "math.AP",
+        "math.PR"
+      ],
+      "authors": [
+        "João Miguel Machado",
+        "João P. G. Ramos"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Probability & statistics"
+      ],
+      "abstract": "The authors provide a height-transport proof of sharp stability for Prékopa--Leindler and derive optimal-exponent stability consequences for log-Sobolev and Talagrand inequalities.",
+      "arxiv_abstract": "We give a new, simpler proof of sharp stability for the Prékopa--Leindler inequality. In contrast to the main arguments from Figalli, van Hintum and Tiba~\\cite{FigalliVanHintumTibaPL}, our proof hinges mostly on the sharp stability theory for the Brunn--Minkowski problem, developed by the same authors \\cite{figalli2024BM}, and on the idea of using a height transportation approach in order to match level sets. As a by-product of our techniques, we are able to prove the sharp dependency on $τ= \\min\\{λ,1-λ\\}$ in the Prékopa--Leindler stability constant whenever one of the inputs is logarithmically concave, producing a new, simplified proof of two of the main results from~\\cite{FigalliVanHintumTibaPL}. Finally, in the same fashion as Kristály and Pîrvuceanu \\cite{kristaly2026quantitative}, we are able to obtain new stability results for the Bakry-Emery log-Sobolev inequality and for the Talagrand inequality. Due to the sharpness of the inputs, these results are optimal in terms of exponents. We moreover show that the $L^1$ nature of the distance in such results \\emph{cannot} in general be improved to any other $L^p$ distance, where $p>1.$",
+      "claimed_result": "The authors prove sharp stability for Prékopa--Leindler with improved dependence on τ=min(λ,1−λ) when one input is log-concave, and obtain optimal-exponent stability results for Bakry--Émery log-Sobolev and Talagrand inequalities.",
+      "assumptions_and_setting": "The sharp τ-dependence application assumes one input is logarithmically concave; the stability distances and hypotheses are those of the stated inequalities.",
+      "unique_caveat": "The authors show that the L1 distance cannot generally be replaced by Lp for p>1; stronger metric conclusions need additional hypotheses.",
+      "evidence_for_ranking": "Cross-listed in analysis, PDE, and probability; supplies a simpler proof of sharp stability and sharp τ-dependence in a log-concave-input case.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-03",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.03295",
+      "refs": [
+        "https://arxiv.org/abs/2611.03295"
+      ]
+    },
+    {
+      "id": "2611.04851",
+      "kind": "paper",
+      "title": "Pseudo-Einstein Structures on Links of Isolated Singularities",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.04851",
+      "arxiv_id": "2611.04851",
+      "arxiv_version": "1",
+      "published": "2026-11-03T13:15:23Z",
+      "updated": "2026-11-03T13:15:23Z",
+      "categories": [
+        "math.DG",
+        "math.AG",
+        "math.CV"
+      ],
+      "authors": [
+        "Yoshinori Gongyo",
+        "Kengo Hirachi",
+        "Shuya Matsumoto",
+        "Yuya Takeuchi"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Analysis & PDE"
+      ],
+      "abstract": "The authors construct links violating a pseudo-Einstein existence conjecture and characterize the condition for links of isolated log-canonical singularities in complex dimension at least three.",
+      "arxiv_abstract": "We study Jack Lee's conjecture that, for a compact strictly pseudoconvex CR manifold $M$, the condition $c_1(T^{1,0}M)=0$ in $H^2(M,\\mathbb{R})$ implies the existence of a pseudo-Einstein structure. For links of isolated singularities, we construct counterexamples in every odd dimension at least three, with $c_1(T^{1,0}M)=0$ in $H^2(M,\\mathbb{Z})$ and $b_1(M)=0$. For isolated algebraic singularities of log canonical type and complex dimension at least three, we prove that the real Chern class condition is equivalent to $\\mathbb{Q}$-Cartierness of the canonical divisor, log canonicity, and the existence of a pseudo-Einstein structure. Finally, we construct a Du Bois threefold singularity whose link satisfies the real Chern class condition but admits no pseudo-Einstein structure. The initial versions of the proofs were generated with AI assistance and were subsequently revised and verified by the authors.",
+      "claimed_result": "The authors construct counterexamples to Jack Lee's conjecture on links of isolated singularities in every odd dimension at least three; for isolated log-canonical singularities of complex dimension at least three, they prove equivalence among the real Chern-class condition, Q-Cartierness, log-canonicity, and existence of a pseudo-Einstein structure.",
+      "assumptions_and_setting": "The setting is compact strictly pseudoconvex CR manifolds arising as links of isolated algebraic singularities; the characterization is restricted to log-canonical singularities of complex dimension at least three.",
+      "unique_caveat": "The abstract says initial proof versions used AI assistance and were subsequently revised and verified by the authors; this report has not independently checked the proofs.",
+      "evidence_for_ranking": "A concrete counterexample and a positive characterization bridge CR geometry, algebraic geometry, and complex analysis.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-04",
+      "comment": "25 pages",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.04851",
+      "refs": [
+        "https://arxiv.org/abs/2611.04851"
+      ]
+    },
+    {
+      "id": "2611.07451",
+      "kind": "paper",
+      "title": "Branched Covers and Fiberwise Degeneration along Weak Kähler Geodesics",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.07451",
+      "arxiv_id": "2611.07451",
+      "arxiv_version": "1",
+      "published": "2026-11-05T04:53:47Z",
+      "updated": "2026-11-05T04:53:47Z",
+      "categories": [
+        "math.DG"
+      ],
+      "authors": [
+        "Wenjiong Guo",
+        "Zekun Sheng"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Analysis & PDE"
+      ],
+      "abstract": "The authors construct weak Kähler geodesics with prescribed fiberwise degeneracy, disproving a uniform nondegeneracy expectation for Monge--Ampère approximations and producing higher-dimensional rank-drop examples.",
+      "arxiv_abstract": "On the projective line, we construct a pair of smooth Kähler potentials whose weak geodesic has isolated quadratic zeros of the fiber form at two fixed points throughout an interior time interval. The geodesic is smooth near these zeros, and its space-time form has constant rank one there. For the same fixed endpoints, the minimum fiber eigenvalue of the nondegenerate Monge-Ampère approximations tends to zero, answering AIMPL Problem 2.5 in the negative. The construction works on every compact connected Riemann surface with a prescribed Kähler form and realizes any positive even order of vanishing. Taking products yields higher-dimensional examples in which the fiber rank drops by one along a smooth hypersurface while the space-time form retains maximal rank nearby. The proof starts from a semipositive model built from a branched cover. We make its endpoints strictly positive by local corrections and use comparison along holomorphic curves to prove that the weak geodesic still agrees with the model on an explicit interior region. There a ramification point of local degree $m$ gives a fiber zero of order exactly $2m-2$.",
+      "claimed_result": "The authors answer AIMPL Problem 2.5 in the negative, realizing fiber zeros of order 2m−2 on compact connected Riemann surfaces and rank drops along smooth hypersurfaces in higher-dimensional product examples.",
+      "assumptions_and_setting": "The construction starts on the projective line with smooth endpoint potentials, extends to compact connected Riemann surfaces with prescribed Kähler form, and uses branched covers and products for the stated examples.",
+      "unique_caveat": "These are constructed examples and do not classify degeneracy for arbitrary weak geodesics or endpoint data.",
+      "evidence_for_ranking": "The authors tie an explicit branched-cover construction to a named AIMPL open problem, independently confirmed by the problem listing. Very recent single-category result; citation momentum unavailable.",
+      "announcement_type": "new submission; batch not yet listed at snapshot",
+      "announcement_batch": null,
+      "comment": "16 pages",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.07451",
+      "refs": [
+        "https://arxiv.org/abs/2611.07451",
+        "http://aimpl.org/nonlinpdegeom/2/"
+      ]
+    },
+    {
+      "id": "2611.07439",
+      "kind": "paper",
+      "title": "Cells, cacti, and the asymptotic algebra",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.07439",
+      "arxiv_id": "2611.07439",
+      "arxiv_version": "1",
+      "published": "2026-11-05T04:38:37Z",
+      "updated": "2026-11-05T04:38:37Z",
+      "categories": [
+        "math.RT"
+      ],
+      "authors": [
+        "F. Dos Santos",
+        "J. Parkinson"
+      ],
+      "themes": [
+        "Algebra & number theory"
+      ],
+      "abstract": "The authors realize a cactus-group action on the asymptotic algebra of a Hecke algebra, proving a conjecture of Rouquier and White under Lusztig's conjectures P1--P15.",
+      "arxiv_abstract": "We prove that the action of the cactus group on a Coxeter group defined by Losev and Bonnafé can be realised as an action on the asymptotic algebra of the Hecke algebra, thus resolving a conjecture of Rouquier and White. We prove this in the setting of general (potentially unequal) parameters, conditional on Lusztig's conjectures P1-P15, which are known to hold in the equal parameter case.",
+      "claimed_result": "The authors prove that the Losev--Bonnafé cactus-group action on a Coxeter group is realized on the Hecke algebra's asymptotic algebra, conditional on P1--P15 in the unequal-parameter setting.",
+      "assumptions_and_setting": "The result concerns Coxeter groups and Hecke algebras; Lusztig's P1--P15 are assumed for general parameters and are known in the equal-parameter case.",
+      "unique_caveat": "The unequal-parameter theorem is conditional; the stated assumptions are known in the equal-parameter case but are not asserted for all unequal parameters.",
+      "evidence_for_ranking": "Resolves a named conjecture in representation theory with a conditional extension to unequal parameters; new submission and no citation momentum available at snapshot.",
+      "announcement_type": "new submission; batch not yet listed at snapshot",
+      "announcement_batch": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.07439",
+      "refs": [
+        "https://arxiv.org/abs/2611.07439"
+      ]
+    },
+    {
+      "id": "2611.07402",
+      "kind": "paper",
+      "title": "Holomorphic sectional curvature and the Calabi operator on Kähler C-spaces",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2611.07402",
+      "arxiv_id": "2611.07402",
+      "arxiv_version": "1",
+      "published": "2026-11-05T03:54:55Z",
+      "updated": "2026-11-05T03:54:55Z",
+      "categories": [
+        "math.DG"
+      ],
+      "authors": [
+        "Xiaolong Li",
+        "Peter Petersen"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Analysis & PDE"
+      ],
+      "abstract": "The authors establish curvature and spectral bounds for homogeneous Kähler metrics on generalized flag manifolds, prove conjectures of Ni and Zheng, and give nonhomogeneous examples with related spectral properties.",
+      "arxiv_abstract": "We study holomorphic sectional curvature and the Calabi curvature operator on compact Kähler manifolds. First we show that every homogeneous Kähler metric on a generalized flag manifold has positive holomorphic sectional curvature. For the standard homogeneous Kähler-Einstein metric with Einstein constant 2, it is shown that the spectrum of the Calabi operator lies in $(-2,2]$. We determine its sharp upper bound in terms of the anticanonical degrees and characterize the 2-eigenspace. The spectral bounds imply nonnegative cross quadratic bisectional curvature and positive dual cross quadratic bisectional curvature, proving conjectures of Ni and Zheng. We also show that these conditions do not characterize homogeneity: we construct a nonhomogeneous Kähler-Einstein 13-fold whose Calabi spectrum lies strictly inside $(-2,2)$ after the same normalization, as well as nonhomogeneous examples in dimensions 4 and 5. The proofs involve an integral identity for holomorphic sectional curvature, projective embeddings, root-space estimates, and explicit metrics on projective bundles.",
+      "claimed_result": "The authors prove positivity of holomorphic sectional curvature for homogeneous Kähler metrics on generalized flag manifolds, bound the Calabi operator spectrum for a normalized homogeneous Kähler--Einstein metric, prove conjectures of Ni and Zheng, and construct nonhomogeneous Kähler--Einstein examples.",
+      "assumptions_and_setting": "The spectral interval and sharp upper bound are for the standard homogeneous Kähler--Einstein metric on generalized flag manifolds with Einstein constant 2; examples are in dimensions 4, 5, and 13.",
+      "unique_caveat": "The sharp spectral theorem is tied to the stated homogeneous setting; examples show the spectral conditions do not characterize homogeneity.",
+      "evidence_for_ranking": "Includes a sharp spectral bound and explicit counterexamples to a homogeneity characterization, connecting Kähler curvature and operator spectrum. Very recent; citation momentum unavailable at snapshot.",
+      "announcement_type": "new submission; batch not yet listed at snapshot",
+      "announcement_batch": null,
+      "comment": "57 pages; comments are welcome",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.07402",
+      "refs": [
+        "https://arxiv.org/abs/2611.07402"
+      ]
+    },
+    {
+      "id": "2611.07262",
+      "kind": "paper",
+      "title": "Higher Noncommutative Motives and Higher K-theory",
+      "rank": 12,
+      "url": "https://arxiv.org/abs/2611.07262",
+      "arxiv_id": "2611.07262",
+      "arxiv_version": "1",
+      "published": "2026-11-05T00:30:16Z",
+      "updated": "2026-11-05T00:30:16Z",
+      "categories": [
+        "math.KT",
+        "math.AT",
+        "math.CT"
+      ],
+      "authors": [
+        "Hisato Matsukawa"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "The author constructs higher additive motives for stable (∞,n)-categories, with universal properties and higher K-theory as their iterated Hom objects.",
+      "arxiv_abstract": "We construct higher additive noncommutative motives of stable $(\\infty,n)$-categories, extending the additive motives of Blumberg, Gepner, and Tabuada and the secondary theory of Mazel-Gee and Stern. We formulate a notion of exact sequences and establish the universal property of the resulting additive motives. We give two equivalent constructions: a localization of enriched presheaves and a weighted Waldhausen $S$-construction on complete exact flags. We then compute their Hom objects, obtaining ordinary K-theory at the first level and lower additive motives recursively at higher levels. Our results recover the classical and secondary theories, provide coherent multiplicative structures, and yield an endofunctor on the category of Stefanich rings. In short, higher motives are higher K-theory.",
+      "claimed_result": "The author defines higher additive noncommutative motives for stable (∞,n)-categories, proves a universal property, gives presheaf-localization and weighted Waldhausen S-construction models, and identifies their Hom objects with iterated K-theoretic information.",
+      "assumptions_and_setting": "The construction is for stable (∞,n)-categories with the paper's notion of exact sequences; it extends additive and secondary theories rather than claiming a classification of all noncommutative invariants.",
+      "unique_caveat": "The abstract describes a framework and its universal property; it does not by itself establish computational consequences for particular categories beyond the stated recoveries.",
+      "evidence_for_ranking": "A broad categorical construction cross-listed in K-theory, algebraic topology, and category theory, with two constructions and recovery of classical and secondary theories. Very recent; citation momentum unavailable at snapshot.",
+      "announcement_type": "new submission; batch not yet listed at snapshot",
+      "announcement_batch": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.07262",
+      "refs": [
+        "https://arxiv.org/abs/2611.07262"
+      ]
+    }
+  ]
+}

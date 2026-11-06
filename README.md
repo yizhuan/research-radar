@@ -12,6 +12,7 @@ Source: `/home/yizhuan/.research`
 ## Arxiv Giant Watch
 
 - **Monthly**: [arxiv-giant-watch-summary-monthly-2026-10-30](arxiv-giant-watch/monthly/arxiv-giant-watch-summary-monthly-2026-10-30.md) — 2026-10-30
+- **Weekly**: [arxiv-giant-watch-summary-weekly-2026-11-06](arxiv-giant-watch/weekly/arxiv-giant-watch-summary-weekly-2026-11-06.md) — 2026-11-06
 
 ## Bio
 

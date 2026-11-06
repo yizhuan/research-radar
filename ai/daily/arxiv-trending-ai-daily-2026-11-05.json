@@ -6,8 +6,8 @@
     "start_date": "2026-11-05",
     "end_date": "2026-11-05",
     "announcement_date": "2026-11-05",
-    "uses_prior_batch": false,
-    "snapshot_utc": "2026-11-05T17:05:09Z",
+    "uses_prior_batch": true,
+    "snapshot_utc": "2026-11-06T01:15:25Z",
     "categories": ["cs.AI", "cs.LG", "stat.ML", "cs.CL", "cs.CV", "cs.RO", "cs.NE", "cs.MA"]
   },
   "date": "2026-11-05",
@@ -15,7 +15,7 @@
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-05.md",
   "entry_count": 8,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking, not a readership ranking. These newly announced papers have little verifiable citation or independent attention evidence.",
+  "global_caveat": "arXiv has no official trending chart; this ordering is inferred from checkable venue/artifact signals, independent technical discussion, cross-listing and reported evaluation, with limited citation evidence for this very recent batch. Treat it as notable recent papers, not a readership or popularity ranking.",
   "sections": [
     {
       "id": "2611.06911",
@@ -29,34 +29,33 @@
       "categories": ["cs.AI"],
       "authors": "Fei Lin, Tengchao Zhang, Ziyang Gong, Xiaotong Yu, Bohan Zhang et al.",
       "themes": ["Evaluation & benchmarks", "Multimodal & vision-language", "Robotics & control"],
-      "abstract": "BEAKER is an expert-authored 1,000-question image/video benchmark for testing whether multimodal models can ground laboratory perception in actionable, safe, and procedurally coherent chemical-experiment judgments.",
-      "claimed_contribution": "The authors introduce an offline benchmark spanning actionability, laboratory knowledge, experimentation, and reasoning, and report an execution gap between coarse procedure following and precise action grounding.",
-      "unique_caveat": "The authors state that BEAKER is single-turn and offline, does not measure closed-loop device operation, and has no reported correlation between benchmark scores and real-robot success.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06911",
-        "https://neurips.cc/virtual/2026/poster/139293",
-        "https://huggingface.co/datasets/HydroSophyTech/BEAKER"
-      ]
+      "abstract": "BEAKER is an expert-authored benchmark of 1,000 image/video question-answer samples across 11 tasks, testing whether multimodal models can ground laboratory perception in actionable, safe and procedurally coherent chemical-experiment judgments.",
+      "claimed_contribution": "The authors introduce an offline benchmark spanning actionability, laboratory knowledge, experimentation and reasoning; their evaluation reports a gap between coarse procedure following and precise action grounding.",
+      "unique_caveat": "The authors state that BEAKER is offline, single-turn QA and does not measure closed-loop device operation or establish correlation with real-robot success; source-level overlap with model pretraining cannot be fully excluded.",
+      "evidence_for_ranking": "The arXiv record says accepted as a NeurIPS 2026 Evaluations and Datasets Spotlight; the official NeurIPS poster page and public benchmark release corroborate this. The paper evaluates 28 models across 11 tasks.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06911", "https://neurips.cc/virtual/2026/poster/139293", "https://huggingface.co/datasets/HydroSophyTech/BEAKER"]
     },
     {
-      "id": "2611.06910",
+      "id": "2611.06856",
       "kind": "paper",
-      "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+      "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2611.06910",
-      "arxiv_id": "2611.06910",
+      "url": "https://arxiv.org/abs/2611.06856",
+      "arxiv_id": "2611.06856",
       "arxiv_version": "v1",
-      "published": "2026-11-04T18:56:22Z",
-      "categories": ["cs.AI"],
-      "authors": "Bingran You, Wenjun Ke, Ria Rosenauer, Bo Liu, Wenbo Chen et al.",
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "FrontierPhysics evaluates end-to-end physics research by having agents carry out 56 expert-designed research tasks across nine domains and finds that even the tested frontier configurations pass fewer than 46 of 168 rollouts.",
-      "claimed_contribution": "The authors combine deterministic result checks with expert rubrics to assess both correctness and research quality in literature review, planning, experimentation, and scientific writing.",
-      "unique_caveat": "The paper's conclusion calls for more open-ended research tasks and evaluation that can credit partial progress and unexpected findings; its evidence is currently a benchmark study in nine physics domains.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06910",
-        "https://huggingface.co/papers/2611.06910"
-      ]
+      "published": "2026-11-04T18:11:56Z",
+      "categories": ["cs.CV", "cs.CL"],
+      "authors": "Haoxiang Cao, Yuxuan Zhang, Penghui Du, Bo Li, Jiajiong Cao et al.",
+      "themes": ["Evaluation & benchmarks", "Multimodal & vision-language", "Agents & reasoning"],
+      "abstract": "LongBanana evaluates image synthesis from many references by testing retrieval of dispersed visual evidence, rejection of distractors, entity/relation binding and satisfaction of dense composition constraints.",
+      "claimed_contribution": "The authors introduce LongBanana-Bench and an agent-harness framework, reporting that harnesses improve over direct generation with gains that depend on the workflow.",
+      "unique_caveat": "The authors say the benchmark does not cover video generation, 3D scene composition or unrestricted multimodal planning; its dense expert annotation is costly.",
+      "evidence_for_ranking": "The arXiv record lists the NeurIPS 2026 Evaluations and Datasets Track; the work is cross-listed across vision and language and has a public project/dataset release. It includes 90 tasks and 4,670 expert-specified evaluation items.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06856", "https://github.com/TIGER-AI-Lab/LongBanana"]
     },
     {
       "id": "2611.06905",
@@ -69,20 +68,40 @@
       "published": "2026-11-04T18:52:28Z",
       "categories": ["cs.LG", "cs.RO"],
       "authors": "Michal Korniak, Marco Bagatella, Ralf Römer, Michal Nauman, Yarden As et al.",
-      "themes": ["Robotics & control", "Training & adaptation", "Agents & reasoning"],
+      "themes": ["Robotics & control", "Training & adaptation"],
       "abstract": "The authors compare online adaptation recipes for generalist robot policies and report that value-based reinforcement learning across diverse manipulation tasks can improve performance on some held-out tasks.",
-      "claimed_contribution": "The authors report that critic-guided policy improvement and sufficient diversity in training tasks are important for generalization beyond the tasks used during online training.",
-      "unique_caveat": "The authors limit the large-scale evaluation to simulated manipulation and note that locomotion, whole-body control, and real-hardware testing remain outside its scope.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06905",
-        "https://arxiv.org/html/2611.06905"
-      ]
+      "claimed_contribution": "The authors report that critic-guided RL—especially value-based policy extraction—and diverse training tasks support improvement beyond tasks used during online training.",
+      "unique_caveat": "The authors limit their large-scale evaluation to simulated manipulation and identify real-hardware, locomotion-manipulation and whole-body-control studies as future work.",
+      "evidence_for_ranking": "Cross-listed in machine learning and robotics, with a public project/code repository and a public OpenReview record. It compares multiple policy-improvement approaches as task diversity increases.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06905", "https://github.com/lasgroup/generalist-improvement", "https://openreview.net/forum?id=b231qZbJbm"]
+    },
+    {
+      "id": "2611.06876",
+      "kind": "paper",
+      "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.06876",
+      "arxiv_id": "2611.06876",
+      "arxiv_version": "v1",
+      "published": "2026-11-04T18:34:41Z",
+      "categories": ["cs.CL"],
+      "authors": "Yulu An, Yifei Feng, Xiangyang Yin",
+      "themes": ["Efficient inference & systems", "Agents & reasoning"],
+      "abstract": "SpecCompact drafts structured memory slots in parallel with a small model and has a target model verify or repair them, reporting faster agent-context compaction with model- and task-dependent downstream trade-offs.",
+      "claimed_contribution": "The authors combine slot-parallel drafting, line-level semantic verification and local repair with serving optimizations, and report 2.04–5.63× speedups over Hermes-style summarization.",
+      "unique_caveat": "The authors state that SpecCompact does not consistently improve accuracy over target-model summarization; downstream effects vary by model and task.",
+      "evidence_for_ranking": "An independent technical breakdown discusses the measured AppWorld/τ³ latency results. The authors report 2.04–5.63× compaction speedups and an 8.68× median speedup in a native-agent user study.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06876", "https://www.aiagentsinfo.com/research/speccompact-agent-context-compaction"]
     },
     {
       "id": "2611.06627",
       "kind": "paper",
       "title": "Interactive World Simulation with Cosmos for Physical AI",
-      "rank": 4,
+      "rank": 5,
       "url": "https://arxiv.org/abs/2611.06627",
       "arxiv_id": "2611.06627",
       "arxiv_version": "v1",
@@ -90,40 +109,39 @@
       "categories": ["cs.AI", "cs.CV", "cs.LG", "cs.RO"],
       "authors": "NVIDIA: Anis Ahmad, Jon Allen, Malik Aqeel Anwar, Jesse Archer, Maciej Bala et al.",
       "themes": ["Multimodal & vision-language", "Robotics & control", "Efficient inference & systems"],
-      "abstract": "The paper adapts Cosmos world foundation models to stream visual observations conditioned on actions or scene controls, demonstrating interactive simulation examples in robot manipulation, camera navigation, controllable video transfer, and autonomous driving.",
-      "claimed_contribution": "The authors present a shared interactive-simulation framework that can either predict visual consequences of actions or render observations from physical state maintained by an external simulator.",
-      "unique_caveat": "The reported evidence is a set of demonstrations; in the simulator-conditioned mode, physical state remains external, and the abstract does not establish transfer fidelity on real-world deployments.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06627",
-        "https://research.nvidia.com/labs/cosmos-lab/cosmos-simulation/"
-      ]
+      "abstract": "The paper adapts Cosmos world models to stream visual observations in response to actions or scene controls, demonstrating interactive simulation for camera navigation, robot manipulation, video transfer and autonomous driving.",
+      "claimed_contribution": "The authors present a shared interactive-simulation framework that either predicts visual consequences of actions or renders observations from physical state maintained by an external simulator.",
+      "unique_caveat": "The reported evidence consists of demonstrations; in simulator-conditioned mode the physical state remains external, and the abstract does not establish transfer fidelity in real deployments.",
+      "evidence_for_ranking": "It spans four configured AI categories and its arXiv record links public code, model checkpoints and a project website. Cross-domain examples and released artifacts are the checkable signals used here.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06627", "https://research.nvidia.com/labs/cosmos-lab/cosmos-simulation/"]
     },
     {
-      "id": "2611.06856",
+      "id": "2611.06910",
       "kind": "paper",
-      "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2611.06856",
-      "arxiv_id": "2611.06856",
+      "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.06910",
+      "arxiv_id": "2611.06910",
       "arxiv_version": "v1",
-      "published": "2026-11-04T18:11:56Z",
-      "categories": ["cs.CV", "cs.CL"],
-      "authors": "Haoxiang Cao, Yuxuan Zhang, Penghui Du, Bo Li, Jiajiong Cao et al.",
-      "themes": ["Evaluation & benchmarks", "Multimodal & vision-language", "Agents & reasoning"],
-      "abstract": "LongBanana benchmarks image-generation systems on 90 expert-designed tasks requiring them to retrieve dispersed visual evidence, preserve entity relations, and satisfy dense constraints across many reference images.",
-      "claimed_contribution": "The authors introduce an auditable evaluation design and LongBanana-Gen, reporting that agent harnesses can improve results over direct generation, with gains varying by harness and workflow.",
-      "unique_caveat": "The authors say the benchmark does not cover video generation, 3D composition, or unrestricted multimodal planning; its high-density expert annotation is costly.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06856",
-        "https://github.com/TIGER-AI-Lab/LongBanana",
-        "https://huggingface.co/datasets/KlingTeam/LongBanana"
-      ]
+      "published": "2026-11-04T18:56:22Z",
+      "categories": ["cs.AI"],
+      "authors": "Bingran You, Wenjun Ke, Ria Rosenauer, Bo Liu, Wenbo Chen et al.",
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "FrontierPhysics evaluates agents on 56 physicist-authored tasks across nine physics domains, requiring literature review, planning, research and scientific writing; the authors report that no tested configuration passed more than 46 of 168 rollouts.",
+      "claimed_contribution": "The authors combine deterministic result checks and expert rubrics to assess correctness and research quality across literature review, planning, experimentation and scientific writing.",
+      "unique_caveat": "The authors call for more open-ended research tasks and evaluation that can credit exploration, partial progress and unexpected findings; the current evidence is a benchmark study across nine physics domains.",
+      "evidence_for_ranking": "The paper evaluates 22 models in 26 configurations and has an expert-authored task design. No verified cross-list or independent-attention signal was found in this snapshot, so it ranks below entries with stronger external corroboration.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06910", "https://arxiv.org/html/2611.06910"]
     },
     {
       "id": "2611.06839",
       "kind": "paper",
       "title": "Before You Continue: Evaluating Time-Sensitive Safety Awareness in Conversational Assistants",
-      "rank": 6,
+      "rank": 7,
       "url": "https://arxiv.org/abs/2611.06839",
       "arxiv_id": "2611.06839",
       "arxiv_version": "v1",
@@ -131,19 +149,19 @@
       "categories": ["cs.CL"],
       "authors": "Peidi Dong, Yunze Xiao, Yu-Lin Tsai, Yichen Zheng, Heyuan Huang et al.",
       "themes": ["Safety & alignment", "Evaluation & benchmarks", "Agents & reasoning"],
-      "abstract": "TASC tests whether conversational assistants apply elapsed-time constraints from prior context when advising users, finding that models often calculate elapsed time correctly but still fail to act on the relevant rule.",
-      "claimed_contribution": "The authors introduce a temporal-safety benchmark and report that models catch only 30.5% of violations in the main condition, while explicitly supplying timing repairs fewer than half of missed interventions.",
-      "unique_caveat": "The authors identify sampled rather than fully crossed factors, English-only inputs, and authored single-reply evaluation as boundaries on generalization to real conversations.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06839",
-        "https://arxiv.org/html/2611.06839"
-      ]
+      "abstract": "TASC tests whether assistants apply elapsed-time constraints from prior conversation when advising users, finding that models often calculate elapsed time correctly but still fail to act on the relevant rule.",
+      "claimed_contribution": "The authors introduce a temporal-safety benchmark and report that assistants account for time-dependent rules in only 30.5% of violating-action cases; explicit timing resolves only about half of missed interventions.",
+      "unique_caveat": "The authors identify sampled rather than fully crossed factors, English-only inputs and authored single-reply evaluation as boundaries on generalization to real conversations.",
+      "evidence_for_ranking": "The authors test 13 models on 3,418 inputs from 128 templates plus a separate 33-scenario set, and quantify the gap between duration calculation and safety-aware advice. No outside discussion or cross-list was verified.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06839", "https://arxiv.org/html/2611.06839"]
     },
     {
       "id": "2611.06687",
       "kind": "paper",
       "title": "LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks",
-      "rank": 7,
+      "rank": 8,
       "url": "https://arxiv.org/abs/2611.06687",
       "arxiv_id": "2611.06687",
       "arxiv_version": "v1",
@@ -151,33 +169,13 @@
       "categories": ["cs.AI"],
       "authors": "Jenny Yang, Elizabeth Proehl, Anjan Bharadwaj, Emily Fan, Charlotte Cole et al.",
       "themes": ["Agents & reasoning", "Evaluation & benchmarks", "Retrieval & knowledge"],
-      "abstract": "LifeVal constructs personalized agent-evaluation tasks across 148 consumer activity categories, weighting activities with a new survey and using real user context, expert rubrics, and repeated human quality checks.",
-      "claimed_contribution": "The authors present a benchmark prioritized by stated willingness to pay and use personalized ChatGPT histories, reference files, and rubrics to assess task completion.",
-      "unique_caveat": "The authors note that willingness-to-pay is a self-reported proxy, the survey is US-centered and English-only, historical time-use inputs end in 2021, and some web-dependent tasks can vary across runs.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06687",
-        "https://arxiv.org/html/2611.06687"
-      ]
-    },
-    {
-      "id": "2611.06876",
-      "kind": "paper",
-      "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
-      "rank": 8,
-      "url": "https://arxiv.org/abs/2611.06876",
-      "arxiv_id": "2611.06876",
-      "arxiv_version": "v1",
-      "published": "2026-11-04T18:34:41Z",
-      "categories": ["cs.CL"],
-      "authors": "Yulu An, Yifei Feng, Xiangyang Yin",
-      "themes": ["Efficient inference & systems", "Agents & reasoning", "Training & adaptation"],
-      "abstract": "SpecCompact speeds up agent-history summarization by drafting structured summary slots in parallel with a smaller model and having the target model verify and repair proposed lines.",
-      "claimed_contribution": "The authors combine slot-parallel drafting, semantic verification, and system optimizations, while reporting model- and task-dependent downstream trade-offs.",
-      "unique_caveat": "The authors explicitly state that the method does not deliver a consistent accuracy advantage over target-model summarization.",
-      "refs": [
-        "https://arxiv.org/abs/2611.06876",
-        "https://arxiv.org/html/2611.06876"
-      ]
+      "abstract": "LifeVal evaluates personalized assistant tasks across 148 consumer activity categories, using a willingness-to-pay survey, real user context, expert rubrics and repeated human quality checks.",
+      "claimed_contribution": "The authors present a benchmark weighted by stated willingness to pay and use real user context and experienced task creators to score personalized task completion.",
+      "unique_caveat": "The authors note that willingness-to-pay is a self-reported proxy, the survey is US-centered and English-only, historical time-use inputs end in 2021, and web-dependent tasks can vary across runs.",
+      "evidence_for_ranking": "The benchmark draws on a survey of more than 3,800 consumers and evaluates personalized consumer workflows using histories, reference files and task-specific rubrics. No independent discussion or cross-list was verified.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-05",
+      "refs": ["https://arxiv.org/abs/2611.06687", "https://arxiv.org/html/2611.06687"]
     }
   ]
 }

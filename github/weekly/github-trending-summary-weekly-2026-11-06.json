@@ -1,0 +1,430 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-11-06",
+  "title": "GitHub Trending Summary - Weekly - 2026-11-06",
+  "source_report": "/home/yizhuan/.research/github/weekly/github-trending-summary-weekly-2026-11-06.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "ranking_basis": "GitHub Trending weekly star gains, descending",
+  "ranking_explanation": "Ranked by stars gained in the matching GitHub Trending weekly view; the top 12 visible repositories were selected. Current star totals and commit SHAs were corroborated through GitHub REST API.",
+  "global_caveat": "GitHub Trending exposes a rolling “this week” view without an exact start-hour boundary. Star-gain figures are the values displayed at capture time and can change. Current totals are API snapshots; one repository’s language is not reported. No prior-window comparison dataset was available.",
+  "themes": [
+    {
+      "id": "agent-workflows",
+      "title": "Agent workflows and persistent context",
+      "content": "Six repositories in the selected top 12 address agent execution, memory, or reusable instructions: t3code, claude-mem, OpenMausBot, superpowers, andrej-karpathy-skills, and anthropics/skills. The range runs from a multi-device control surface through persistent memory and development methodology to lightweight skill packages.",
+      "supporting_repo_ids": [
+        "repo-01",
+        "repo-02",
+        "repo-06",
+        "repo-08",
+        "repo-10",
+        "repo-11"
+      ]
+    },
+    {
+      "id": "design-quality",
+      "title": "Design quality as agent tooling",
+      "content": "Four entries—impeccable, hallmark, taste-skill, and jakubkrehel/skills—focus on design guidance or evaluation. README evidence for the first three emphasizes operational guardrails: reusable design commands, a theme catalog, real assets, and browser-based checks rather than prompt-only styling advice.",
+      "supporting_repo_ids": [
+        "repo-03",
+        "repo-04",
+        "repo-07",
+        "repo-12"
+      ]
+    },
+    {
+      "id": "learning-knowledge",
+      "title": "Personalized learning workspace",
+      "content": "DeepTutor is the standout education-focused repository, combining tutoring, reading, practice, research, and persistent learner context in one extensible workspace.",
+      "supporting_repo_ids": [
+        "repo-05"
+      ]
+    },
+    {
+      "id": "creative-production",
+      "title": "Agentic creative production",
+      "content": "OpenMontage applies agent workflows to video creation, showing that this week’s trend is not limited to code-writing and developer productivity.",
+      "supporting_repo_ids": [
+        "repo-09"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time: 2026-11-06 02:43 UTC. GitHub’s weekly Trending filter is rolling; its page does not expose the precise start hour. Date range shown as 2026-10-30 through 2026-11-06."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Coding-agent infrastructure and agent-oriented design tools dominate this week’s list. T3 Code leads the visible repositories with 16,235 stars gained, while memory, workflow skills, and several tools for making generated interfaces more distinctive also draw strong interest."
+    },
+    {
+      "id": "01-pingdotgg-t3code",
+      "kind": "repo",
+      "title": "pingdotgg/t3code",
+      "rank": 1,
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "An open-source, remote-ready control surface for running coding agents from desktop, web, or mobile apps.",
+      "language": "TypeScript",
+      "stars_gained": 16235,
+      "total_stars": 48451,
+      "default_branch_commit": "c52df24d285a072ad9c3f7ab5b3656c0be1cb0f5",
+      "why_notable": "It leads this weekly list by a wide margin and makes multi-agent orchestration accessible across desktop, web, and mobile.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "T3 Code",
+      "unique_caveat": "The project describes itself as early-stage and warns users to expect bugs.",
+      "enrichment": null,
+      "refs": [
+        "pingdotgg/t3code"
+      ]
+    },
+    {
+      "id": "02-thedotmack-claude-mem",
+      "kind": "repo",
+      "title": "thedotmack/claude-mem",
+      "rank": 2,
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent memory for coding agents: captures tool observations, compresses them into summaries, and surfaces relevant context in later sessions.",
+      "language": "TypeScript",
+      "stars_gained": 9318,
+      "total_stars": 113592,
+      "default_branch_commit": "89b97644e39d75b395824a22be38150deba4b8cb",
+      "why_notable": "Strong weekly growth reflects demand for cross-session memory; the README describes a worker-backed capture, summarization, and retrieval workflow with multiple harness integrations.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Claude Mem",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "thedotmack/claude-mem"
+      ]
+    },
+    {
+      "id": "03-pbakaus-impeccable",
+      "kind": "repo",
+      "title": "pbakaus/impeccable",
+      "rank": 3,
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "A design vocabulary and review toolkit for coding agents, with interface commands, accessibility and quality audits, and deterministic checks.",
+      "language": "Rust",
+      "stars_gained": 9303,
+      "total_stars": 104011,
+      "default_branch_commit": "c3bb418ee38ee49a6b999b7752c1368f3123a2bd",
+      "why_notable": "Nearly matches the second-place weekly gain while turning subjective frontend quality into reusable commands and browser-based review.",
+      "theme_ids": [
+        "design-quality"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Impeccable",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "pbakaus/impeccable"
+      ]
+    },
+    {
+      "id": "04-Nutlope-hallmark",
+      "kind": "repo",
+      "title": "Nutlope/hallmark",
+      "rank": 4,
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "A design skill for coding agents that builds and audits websites using a catalog of visual themes and browser checks.",
+      "language": "CSS",
+      "stars_gained": 6994,
+      "total_stars": 48833,
+      "default_branch_commit": "407fa689f4a276f2fd389208d271d0fef08f5058",
+      "why_notable": "Its momentum reinforces the design-agent cluster; its README details themed page generation, responsive browser linting, and checks against missing functionality and accessibility regressions.",
+      "theme_ids": [
+        "design-quality"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Hallmark",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "Nutlope/hallmark"
+      ]
+    },
+    {
+      "id": "05-HKUDS-DeepTutor",
+      "kind": "repo",
+      "title": "HKUDS/DeepTutor",
+      "rank": 5,
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "An agent-native personalized learning workspace combining tutoring, research, reading, practice, and persistent learning context.",
+      "language": "Python",
+      "stars_gained": 6229,
+      "total_stars": 55503,
+      "default_branch_commit": "f7aed0744c36c5afef16a4261c31ebee1208cac2",
+      "why_notable": "It is the strongest non-coding-agent domain entry here, with recent releases expanding its learning modes, CLI, and extensible knowledge workflows.",
+      "theme_ids": [
+        "learning-knowledge"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Deep Tutor",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "HKUDS/DeepTutor"
+      ]
+    },
+    {
+      "id": "06-milind-soni-OpenMausBot",
+      "kind": "repo",
+      "title": "milind-soni/OpenMausBot",
+      "rank": 6,
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "An open-source, local-first team of AI bots presented through a chat app, with agent-specific models, memory, computers, and connected apps.",
+      "language": "TypeScript",
+      "stars_gained": 5580,
+      "total_stars": 13513,
+      "default_branch_commit": "083fd7b51405e6d0c01e189b2f65ab0322509b5a",
+      "why_notable": "Its substantial weekly gain points to interest in multi-agent interfaces and user-controlled, local-first agent setups.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "Open Maus Bot",
+      "unique_caveat": "The README explicitly says it is an independent project, not affiliated with xAI, Meta, OpenAI, or Manus.",
+      "enrichment": null,
+      "refs": [
+        "milind-soni/OpenMausBot"
+      ]
+    },
+    {
+      "id": "07-Leonxlnx-taste-skill",
+      "kind": "repo",
+      "title": "Leonxlnx/taste-skill",
+      "rank": 7,
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "An agent skill for designing polished company websites with a defined design system, real assets, and automated browser checks.",
+      "language": "JavaScript",
+      "stars_gained": 5426,
+      "total_stars": 110715,
+      "default_branch_commit": "9b4bf937a1f69348126959c15d2f99a73e65699b",
+      "why_notable": "It is another high-momentum design-agent project, distinguished by structured page planning and real-browser checks across desktop and mobile widths.",
+      "theme_ids": [
+        "design-quality"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "Taste Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "Leonxlnx/taste-skill"
+      ]
+    },
+    {
+      "id": "08-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 8,
+      "url": "https://github.com/obra/superpowers",
+      "description": "A composable skills framework and software-development methodology for coding agents, centered on spec-first planning, TDD, and reviewed implementation.",
+      "language": "Shell",
+      "stars_gained": 5131,
+      "total_stars": 313059,
+      "default_branch_commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "why_notable": "It combines a large installed base with strong weekly momentum and a clear methodology spanning specification, implementation planning, tests, and subagents.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "Superpowers",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "obra/superpowers"
+      ]
+    },
+    {
+      "id": "09-calesthio-OpenMontage",
+      "kind": "repo",
+      "title": "calesthio/OpenMontage",
+      "rank": 9,
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "An agentic video-production system that packages production pipelines, tools, and skills for creative workflows.",
+      "language": "Python",
+      "stars_gained": 4132,
+      "total_stars": 77224,
+      "default_branch_commit": "d21f5d4eaa08422b09c7091757a05affcbabb35b",
+      "why_notable": "It extends agent tooling beyond software development into video production, with the project describing multiple end-to-end pipelines and reusable production knowledge.",
+      "theme_ids": [
+        "creative-production"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 9,
+      "spoken_name": "Open Montage",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "calesthio/OpenMontage"
+      ]
+    },
+    {
+      "id": "10-multica-ai-andrej-karpathy-skills",
+      "kind": "repo",
+      "title": "multica-ai/andrej-karpathy-skills",
+      "rank": 10,
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A compact CLAUDE.md guidance file intended to steer Claude Code away from common LLM coding pitfalls.",
+      "language": null,
+      "stars_gained": 3713,
+      "total_stars": 229907,
+      "default_branch_commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "why_notable": "It gained thousands of stars this week despite its default branch last being pushed months ago, making it a notable example of a lightweight, shareable agent-instruction artifact.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "metadata-only",
+      "narration_priority": 10,
+      "spoken_name": "Andrej Karpathy Skills",
+      "unique_caveat": "The repository API reports its latest push as 2026-04-20, so its star surge is not evidence of recent code activity.",
+      "enrichment": null,
+      "refs": [
+        "multica-ai/andrej-karpathy-skills"
+      ]
+    },
+    {
+      "id": "11-anthropics-skills",
+      "kind": "repo",
+      "title": "anthropics/skills",
+      "rank": 11,
+      "url": "https://github.com/anthropics/skills",
+      "description": "Anthropic’s public repository of reusable Agent Skills.",
+      "language": "Python",
+      "stars_gained": 3072,
+      "total_stars": 187790,
+      "default_branch_commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "why_notable": "Its continued weekly growth shows that packaged, portable skill collections remain a central distribution format for agent workflows.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "metadata-only",
+      "narration_priority": 11,
+      "spoken_name": "Anthropic Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "id": "12-jakubkrehel-skills",
+      "kind": "repo",
+      "title": "jakubkrehel/skills",
+      "rank": 12,
+      "url": "https://github.com/jakubkrehel/skills",
+      "description": "A collection of agent skills focused on building better interfaces.",
+      "language": "Markdown",
+      "stars_gained": 1840,
+      "total_stars": 11050,
+      "default_branch_commit": "60bf140e43c98b248e6594487384ec967e89d98a",
+      "why_notable": "It adds another independently maintained design-skill collection to the week’s clear frontend-quality cluster.",
+      "theme_ids": [
+        "design-quality"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "metadata-only",
+      "narration_priority": 12,
+      "spoken_name": "Jakub Krehel Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "jakubkrehel/skills"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- Agent workflows and persistent context: Six repositories in the selected top 12 address agent execution, memory, or reusable instructions: t3code, claude-mem, OpenMausBot, superpowers, andrej-karpathy-skills, and anthropics/skills. The range runs from a multi-device control surface through persistent memory and development methodology to lightweight skill packages.\n- Design quality as agent tooling: Four entries—impeccable, hallmark, taste-skill, and jakubkrehel/skills—focus on design guidance or evaluation. README evidence for the first three emphasizes operational guardrails: reusable design commands, a theme catalog, real assets, and browser-based checks rather than prompt-only styling advice.\n- Personalized learning workspace: DeepTutor is the standout education-focused repository, combining tutoring, reading, practice, research, and persistent learner context in one extensible workspace.\n- Agentic creative production: OpenMontage applies agent workflows to video creation, showing that this week’s trend is not limited to code-writing and developer productivity.\nLanguages: TypeScript 3, Python 3, Rust 1, CSS 1, JavaScript 1, Shell 1, Markdown 1, and 1 unreported.",
+      "themes": [
+        {
+          "id": "agent-workflows",
+          "title": "Agent workflows and persistent context",
+          "content": "Six repositories in the selected top 12 address agent execution, memory, or reusable instructions: t3code, claude-mem, OpenMausBot, superpowers, andrej-karpathy-skills, and anthropics/skills. The range runs from a multi-device control surface through persistent memory and development methodology to lightweight skill packages.",
+          "supporting_repo_ids": [
+            "repo-01",
+            "repo-02",
+            "repo-06",
+            "repo-08",
+            "repo-10",
+            "repo-11"
+          ]
+        },
+        {
+          "id": "design-quality",
+          "title": "Design quality as agent tooling",
+          "content": "Four entries—impeccable, hallmark, taste-skill, and jakubkrehel/skills—focus on design guidance or evaluation. README evidence for the first three emphasizes operational guardrails: reusable design commands, a theme catalog, real assets, and browser-based checks rather than prompt-only styling advice.",
+          "supporting_repo_ids": [
+            "repo-03",
+            "repo-04",
+            "repo-07",
+            "repo-12"
+          ]
+        },
+        {
+          "id": "learning-knowledge",
+          "title": "Personalized learning workspace",
+          "content": "DeepTutor is the standout education-focused repository, combining tutoring, reading, practice, research, and persistent learner context in one extensible workspace.",
+          "supporting_repo_ids": [
+            "repo-05"
+          ]
+        },
+        {
+          "id": "creative-production",
+          "title": "Agentic creative production",
+          "content": "OpenMontage applies agent workflows to video creation, showing that this week’s trend is not limited to code-writing and developer productivity.",
+          "supporting_repo_ids": [
+            "repo-09"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The week’s signal is less “one new model” than a growing software layer around agents: ways to coordinate them, preserve their context, teach them repeatable methods, and assess the output. Frontend design quality is a particularly visible specialization, while DeepTutor and OpenMontage show the same agent pattern spreading into education and media production."
+    }
+  ],
+  "sources": {
+    "primary": "https://github.com/trending?since=weekly",
+    "corroboration": [
+      "GitHub REST API repository and default-branch commit endpoints for each entry",
+      "https://api.github.com/search/repositories?q=t3code"
+    ]
+  }
+}

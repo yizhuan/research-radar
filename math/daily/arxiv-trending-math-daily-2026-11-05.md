@@ -1,129 +1,131 @@
-# Mathematics on arXiv — 5 November 2026 announcement batch
+# arXiv Trending Math — Thursday, 5 November 2026
 
-9 notable recent papers; the clearest concentration is graph theory moving from conjectural structure to sharper quantitative bounds, alongside a few major-looking classification, probability, and PDE claims. I’ll go from graph bounds to random structures and geometry, then close on the most delicate analytical result. This is an inferred ranking: arXiv supplies no official trending chart, and citation evidence is limited for papers this recent.
+Latest daily mathematics announcement batch: 9 notable papers. The clearest pattern in this selection is structural mathematics sharpening bounds or proving rigidity—especially graph coloring, extremal combinatorics, and geometric energy minimization—with probability and analysis supplying cross-field results. Agenda: the coloring-bound advance, several classification and asymptotic results, then the open ends they leave. arXiv publishes no official trending chart, so this ordering is inferred from mathematical claims and scope rather than measured popularity; citation evidence for papers this recent is limited.
 
 ## Top papers (ranked)
 
-### 1. [A Viscous Cascade Construction of Nonunique Leray--Hopf Solutions to the Unforced 3D Navier--Stokes Equations](https://arxiv.org/abs/2611.06117)
-- **Abstract:** The authors construct a continuum of distinct suitable Leray--Hopf solutions to unforced 3D Navier--Stokes from one nonzero finite-energy datum, with strong L2 trace and global and local energy equalities.
-- **Authors:** Thomas Y. Hou, Xiang Qin, Peicong Song, Wenhan Zhang
-- **arXiv:** `2611.06117v1` (published 2026-11-04T08:01:00Z; categories: `math.AP`)
-- **Evidence for ranking:** The abstract makes a precise, theorem-scale claim of nonuniqueness inside the suitable Leray--Hopf class, including equality in both energy balances; that is a potentially consequential result, but remains an author-claimed preprint result.
-- **Claimed result:** The authors claim a continuum of pairwise distinct suitable Leray--Hopf solutions for one initial datum, with all stated energy equalities and simultaneous mixed-norm bounds on the strict supercritical side.
-- **Assumptions and setting:** Unforced incompressible Navier--Stokes on R^3; the datum is axisymmetric, divergence-free, smooth away from the origin, in L2 and every Lq for 1≤q<3, but not in L3; solutions also lie in L∞_t L^{3,∞}_x.
-- **Caveat:** The example uses data outside strong L3, so it does not contradict uniqueness results under stronger L3 or Prodi--Serrin hypotheses; the long analytic construction remains a preprint claim requiring expert scrutiny.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Analysis & PDE
-
-### 2. [Off-Diagonal Induced Ramsey Numbers](https://arxiv.org/abs/2611.06886)
-- **Abstract:** For graphs F and H, the authors prove a polynomial upper bound in v(H) for the induced Ramsey number when F is fixed, with an exponent bounded by an absolute constant times v(F)^2.
-- **Authors:** Bruno Andrades, Marcelo Campos, Rafael Filipe, Anastasiia Kats
-- **arXiv:** `2611.06886v1` (published 2026-11-04T18:40:56Z; categories: `math.CO`)
-- **Evidence for ranking:** The paper claims a proof of the Kohayakawa--Prömel--Rödl conjecture; its introduction reports that a different proof was posted by Zhong, Kashima, and Mao on 21 October 2026, providing an independent-convergence signal.
-- **Claimed result:** The authors prove r_ind(F,H) ≤ v(H)^{C v(F)^2} for all graphs F,H, for an absolute C, and also give a multicolour extension.
-- **Assumptions and setting:** Finite simple graphs; the main theorem is uniform over F and H, with polynomial dependence on v(H) for each fixed F.
-- **Caveat:** The exponent’s quadratic dependence on v(F) is not optimized; the authors explicitly ask whether it can be reduced to linear dependence.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Combinatorics & discrete mathematics
-
-### 3. [Polylogarithmic bound for the Gyárfás-Sumner conjecture](https://arxiv.org/abs/2611.06699)
-- **Abstract:** For every fixed tree T and clique bound k, the authors improve the known subpolynomial chromatic-number estimate for induced-T-free graphs to an explicit polylogarithmic bound.
+### 1. [Polylogarithmic bound for the Gyárfás-Sumner conjecture](https://arxiv.org/abs/2611.06699)
+- **Abstract:** For graphs excluding a fixed forest as an induced subgraph and with bounded clique number, the authors improve the known subpolynomial chromatic-number bound to a polylogarithmic one.
 - **Authors:** Martin Bierbaumer, Matija Bucić
 - **arXiv:** `2611.06699v1` (published 2026-11-04T16:01:51Z; categories: `math.CO`)
-- **Evidence for ranking:** The full paper gives χ(G) ≤ C_{T,k}(log |G|)^{14k}, sharpening a recent |G|^{o(1)} bound while retaining a direct link to the long-standing Gyárfás--Sumner conjecture.
-- **Claimed result:** For every fixed tree T and positive integer k, the authors prove χ(G) ≤ C_{T,k}(log |G|)^{14k} whenever G is induced-T-free and has clique number at most k.
-- **Assumptions and setting:** Finite graphs with |G|≥2; T and the clique-number bound k are fixed, and the constant C_{T,k} depends on both.
-- **Caveat:** This is a polylogarithmic bound, not the conjectured bound independent of |G|; the authors state that removing the residual polylog factor remains open.
-- **Announcement type:** new submission, 5 November 2026 batch
+- **Evidence for ranking:** The introduction states an explicit improvement over the recent `|G|^{o(1)}` bound, with theorem `χ(G) ≤ C_{T,k}(log |G|)^{14k}`; this is the strongest explicit bound improvement in the selected batch.
+- **Claimed result:** Bierbaumer and Bucić prove that for every fixed tree `T` and positive integer `k`, every `T`-induced-free graph `G` with clique number at most `k` and at least two vertices satisfies `χ(G) ≤ C_{T,k}(log |G|)^{14k}` (arXiv introduction, Theorem 1).
+- **Assumptions and setting:** `T` and `k` are fixed; the graph is finite, contains no induced copy of `T`, and has clique number at most `k`.
+- **Caveat:** This improves the asymptotic bound but does not establish the conjectured bound on chromatic number independent of graph size.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
 - **Themes:** Combinatorics & discrete mathematics
 
-### 4. [Gaussian free field limit for the Airy_β line ensemble](https://arxiv.org/abs/2611.05852)
-- **Abstract:** The centered height function of the Airy_β line ensemble converges, after rescaling space and time, to the Gaussian free field in the half-plane for every β>0.
-- **Authors:** Vadim Gorin, Lingfu Zhang
-- **arXiv:** `2611.05852v1` (published 2026-11-04T02:43:23Z; categories: `math.PR` ; cross-lists: `math-ph`)
-- **Evidence for ranking:** The paper bridges a random-matrix line ensemble and a two-dimensional random field, and is cross-listed in probability and mathematical physics; the stated result covers every β>0.
-- **Claimed result:** The authors prove the rescaled centered height-function limit is the half-plane Gaussian free field, with spatial coordinate x↦√(-x) and β-dependence isolated by a √β field rescaling.
-- **Assumptions and setting:** Airy_β line ensemble for β>0; the limit is in the specified half-plane scaling and conformal coordinate.
-- **Caveat:** The result concerns this ensemble and scaling regime; the proof uses asymptotic expansions for Laplace-transform moments developed in earlier work with Xu.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Probability & statistics, Mathematical physics
-
-### 5. [Representation embeddings and the third Brauer--Thrall conjecture](https://arxiv.org/abs/2611.06325)
-- **Abstract:** For a representation-infinite finite-dimensional algebra over an algebraically closed field, the authors construct an indecomposable module of every infinite cardinal dimension, settling Simson’s third Brauer--Thrall conjecture in that setting.
-- **Authors:** Haruhisa Enomoto
-- **arXiv:** `2611.06325v1` (published 2026-11-04T10:57:46Z; categories: `math.RT` ; cross-lists: `math.RA`)
-- **Evidence for ranking:** The abstract claims resolution of a named conjecture and the arXiv comment links a full Lean formalization of the main results; it is cross-listed in representation theory and rings/algebras.
-- **Claimed result:** The author extends a representation embedding so that every infinite cardinal κ occurs as the dimension of an indecomposable module over the given algebra.
-- **Assumptions and setting:** A finite-dimensional representation-infinite algebra A over an algebraically closed field k; the conclusion concerns infinite cardinal dimensions of indecomposable A-modules.
-- **Caveat:** The theorem is stated over algebraically closed fields and for finite-dimensional representation-infinite algebras; it does not by itself cover other base-field or categorical settings.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Algebra & number theory, Logic & foundations
-
-### 6. [Linear-length cycles in the supercritical percolated hypercube](https://arxiv.org/abs/2611.05634)
-- **Abstract:** For edge-percolation on the d-dimensional hypercube with p=(1+ε)/d and sufficiently small fixed ε>0, the authors prove that the longest cycle has length Θ(ε²2^d) with high probability.
-- **Authors:** Michael Anastos
-- **arXiv:** `2611.05634v1` (published 2026-11-03T21:20:51Z; categories: `math.CO` ; cross-lists: `math.PR`)
-- **Evidence for ranking:** The paper confirms a long-standing folklore prediction about cycles appearing with the giant component and identifies the optimal order in ε up to constants; it is cross-listed in combinatorics and probability.
-- **Claimed result:** The author proves that near the threshold p=(1+ε)/d the longest cycle has length Θ(ε²2^d) with high probability, with the ε-dependence optimal up to constant factors.
-- **Assumptions and setting:** Each edge of the binary d-cube is retained independently; ε is a sufficiently small positive constant and the probability statement is asymptotic in d.
-- **Caveat:** The theorem is near the critical threshold for sufficiently small fixed ε; it gives order up to constants rather than an exact leading constant or full finite-d distribution.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Probability & statistics, Combinatorics & discrete mathematics
-
-### 7. [Pointless K3 surfaces over finite fields](https://arxiv.org/abs/2611.06366)
-- **Abstract:** The authors give an algorithm for ordinary K3 surfaces over finite fields, prove that no K3 surface is pointless for prime powers q≥13, and exhibit pointless examples for q≤11.
-- **Authors:** Simon Brandhorst, Yuta Takada
-- **arXiv:** `2611.06366v1` (published 2026-11-04T11:26:36Z; categories: `math.AG`)
-- **Evidence for ranking:** The paper combines an enumerative algorithm with a geometric proof for elliptic K3 surfaces and supplies an explicit threshold/classification statement over finite fields.
-- **Claimed result:** The authors claim nonexistence of K3 surfaces without F_q-rational points for every prime power q≥13 and explicit pointless K3 surfaces for every prime power q≤11.
-- **Assumptions and setting:** K3 surfaces over finite fields F_q; the enumeration algorithm concerns ordinary K3 surfaces, and the abstract highlights a computer-free geometric proof for elliptic K3 surfaces.
-- **Caveat:** The finite-field and K3 hypotheses are essential; the algorithmic enumeration applies to ordinary surfaces, while the abstract’s nonexistence claim is broader and uses an additional elliptic argument.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Algebra & number theory, Geometry & topology
-
-### 8. [Floer theory on based loops and fundamental groups of Lagrangians in C^n](https://arxiv.org/abs/2611.06574)
-- **Abstract:** Using Floer theory on the based loop space, the author derives topological constraints on Lagrangians in C^n and rules out embeddings of certain even-dimensional connected sums.
-- **Authors:** Shuhao Li
-- **arXiv:** `2611.06574v1` (published 2026-11-04T14:34:06Z; categories: `math.SG` ; cross-lists: `math.AT`, `math.GT`)
-- **Evidence for ranking:** The result generalizes a theorem of Fukaya--Irie and is cross-listed across symplectic, algebraic, and geometric topology; the abstract gives a concrete embedding obstruction.
-- **Claimed result:** The author proves that non-trivial connected sums of closed, spin, aspherical manifolds of even dimensions do not admit Lagrangian embeddings into C^n.
-- **Assumptions and setting:** Lagrangian submanifolds of standard symplectic C^n; the excluded manifolds are closed, spin, aspherical, even-dimensional non-trivial connected sums.
-- **Caveat:** The obstruction applies only to the stated spin, aspherical, even-dimensional connected-sum class; it is not a classification of all Lagrangian embeddings.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Geometry & topology
-
-### 9. [Uniqueness of the hexagonal lattice's universal optimality](https://arxiv.org/abs/2611.06278)
-- **Abstract:** Building on recent universal optimality of the planar hexagonal lattice, the authors prove it is the only periodic configuration with that property, up to Euclidean motion.
+### 2. [Uniqueness of the hexagonal lattice's universal optimality](https://arxiv.org/abs/2611.06278)
+- **Abstract:** Building on a recent proof of universal optimality, the authors show that the planar hexagonal lattice is the only periodic point configuration with that property, up to Euclidean motion.
 - **Authors:** Markus Faulhuber, Philipp Petersen
 - **arXiv:** `2611.06278v1` (published 2026-11-04T10:20:41Z; categories: `math.MG`)
-- **Evidence for ranking:** The paper strengthens an existing planar optimality theorem to a uniqueness/classification statement; the authors identify the periodic restriction as the meaningful uniqueness class.
-- **Claimed result:** The authors claim that among periodic point configurations of density one, the hexagonal lattice is, up to Euclidean motion, the unique minimizer for every Gaussian energy, with a corresponding result for completely monotone potentials.
-- **Assumptions and setting:** Periodic point configurations in R² of fixed density; energy comparisons concern all Gaussian potentials, with an extension to completely monotone potentials under finite-energy assumptions.
-- **Caveat:** Uniqueness is restricted to periodic configurations: deleting finitely many points preserves density and Gaussian energy, so uniqueness cannot hold literally among arbitrary point configurations.
-- **Announcement type:** new submission, 5 November 2026 batch
-- **Themes:** Geometry & topology
+- **Evidence for ranking:** The paper adds a uniqueness theorem to the recent universal-optimality result and treats every periodic configuration at fixed density, not just lattices; its potential extension reaches all completely monotone potentials of squared distance with finite hexagonal-lattice energy.
+- **Claimed result:** Faulhuber and Petersen state that for every periodic `C ⊂ R²` of density one, the hexagonal lattice minimizes every Gaussian energy, and equality for even one Gaussian parameter implies congruence to the hexagonal lattice (arXiv HTML, Theorem 1.2).
+- **Assumptions and setting:** Periodic configurations in the plane at density one; the uniqueness statement is up to Euclidean motion. The paper also gives a corresponding result for nonzero completely monotone potentials when the reference energy is finite.
+- **Caveat:** The uniqueness claim is deliberately restricted to periodic configurations; arbitrary configurations can be made noncongruent by deleting finitely many lattice points without changing density or the limiting energy.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Geometry & topology; Optimization & control
+
+### 3. [Proof of two conjectures on the log-concavity of partition ranks and cranks](https://arxiv.org/abs/2611.06757)
+- **Abstract:** The authors prove two conjectures asserting log-concavity of the partition-crank and partition-rank counting sequences over specified ranges of the statistic.
+- **Authors:** Jianxi Mao, Wenle Shi, Bao-Xuan Zhu
+- **arXiv:** `2611.06757v1` (published 2026-11-04T16:35:58Z; categories: `math.CO`, `math.NT`)
+- **Evidence for ranking:** The authors prove two named conjectures and obtain strict log-concavity for both classical partition statistics; the work connects combinatorics with number theory.
+- **Claimed result:** Mao, Shi, and Zhu prove `A_k(m,n)^2 > A_k(m−1,n)A_k(m+1,n)` for `k∈{1,2}`, `n≥72`, and `|m|≤n−k−71`, where `A_1=M` is the crank count and `A_2=N` the rank count (arXiv HTML, Theorem 1.3).
+- **Assumptions and setting:** The inequalities hold for integer partition size `n` and statistic index `m` in the stated ranges; the rank case starts at `n≥73` because of the range condition.
+- **Caveat:** The theorem covers the conjectured ranges, not every boundary value in the full support of each rank or crank sequence.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
+
+### 4. [On Diameter Graphs Problems: A proof of Brass's Conjecture](https://arxiv.org/abs/2611.05631)
+- **Abstract:** For diameter graphs of finite point sets in three-dimensional space, the authors prove Brass's conjecture by showing that removing at most one point suffices to make the remaining graph 3-colorable.
+- **Authors:** Gyivan Lopez-Campos
+- **arXiv:** `2611.05631v1` (published 2026-11-03T21:19:45Z; categories: `math.CO`, `math.MG`)
+- **Evidence for ranking:** The abstract claims a resolution of a named conjecture with the strong explicit bound of one deleted point, and cross-lists the result between combinatorics and metric geometry.
+- **Claimed result:** Lopez-Campos proves that in every finite `S ⊂ R³`, deleting at most one vertex from its diameter graph leaves a 3-colorable induced subgraph; the paper also answers a question of Dol'nikov (arXiv abstract).
+- **Assumptions and setting:** Finite point sets in `R³`; adjacency means that two points are at distance equal to the diameter of the set.
+- **Caveat:** The conjecture proved here is the specific three-dimensional, three-color case; it does not settle the analogous question for arbitrary dimension and color number.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Combinatorics & discrete mathematics; Geometry & topology
+
+### 5. [Certified Collision Exclusion and an Unconditional Upper Bound Λ<0.156821 for the de Bruijn--Newman Constant](https://arxiv.org/abs/2611.06245)
+- **Abstract:** The authors describe a computer-assisted collision-exclusion proof yielding the unconditional bound `Λ < 0.156821` in the Polymath normalization.
+- **Authors:** Michel Planat, Dale James Raymond
+- **arXiv:** `2611.06245v1` (published 2026-11-04T09:51:08Z; categories: `math.NT`)
+- **Evidence for ranking:** The preprint states a specific unconditional bound for a constant tied to the zeros of the Riemann xi-function and describes a finite, auditable certificate with 44,182 torus boxes and additional separator data.
+- **Claimed result:** Planat and Raymond claim `Λ < 156821/10^6`, combining a finite-height verification with a continuation argument, certified exclusions, and a uniform barrier at infinity (arXiv abstract).
+- **Assumptions and setting:** The normalization is that of Polymath; the conclusion concerns the transition parameter beyond which all zeros of the heat-deformed Riemann xi-function are real.
+- **Caveat:** This is a computer-assisted preprint claim whose correctness depends on the certificate and its proof-to-computation interface; this report has not independently verified either.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Algebra & number theory; Numerical analysis & computation
+
+### 6. [Gaussian free field limit for the Airy_β line ensemble](https://arxiv.org/abs/2611.05852)
+- **Abstract:** For every `β>0`, the authors prove that a rescaled centered height function of the Airy_β line ensemble converges to the Gaussian free field in the half-plane.
+- **Authors:** Vadim Gorin, Lingfu Zhang
+- **arXiv:** `2611.05852v1` (published 2026-11-04T02:43:23Z; categories: `math.PR`, `math-ph`)
+- **Evidence for ranking:** The claimed limit holds for every positive `β` and links a family of random line ensembles to a two-dimensional field; the paper is cross-listed in probability and mathematical physics.
+- **Claimed result:** Gorin and Zhang claim convergence of the centered Airy_β height function to the half-plane Gaussian free field after rescaling, with spatial coordinate `x ↦ √(-x)` and `β` entering through a `√β` field rescaling (arXiv abstract).
+- **Assumptions and setting:** The statement is for each fixed `β>0` under the paper's specified space-time and field rescalings.
+- **Caveat:** The abstract does not specify the precise mode of convergence; the theorem's topology and test-function assumptions must be taken from the paper before applying the limit.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Probability & statistics; Mathematical physics
+
+### 7. [Almost All 3-uniform Hypergraphs are Class 1](https://arxiv.org/abs/2611.05622)
+- **Abstract:** For a stated range of edge probabilities, the authors prove that a random 3-uniform binomial hypergraph has chromatic index equal to its maximum degree with high probability, and they contrast this with higher uniformities.
+- **Authors:** Arnab Chaterjee, Asaf Ferber, Marcelo Sales, Mason Shurman
+- **arXiv:** `2611.05622v1` (published 2026-11-03T21:07:43Z; categories: `math.CO`, `cs.DM`)
+- **Evidence for ranking:** This extends the familiar almost-everywhere Class 1 result from ordinary random graphs to 3-uniform random hypergraphs, while also identifying a contrasting obstruction for higher uniformities; it is cross-listed with discrete mathematics.
+- **Claimed result:** Chaterjee, Ferber, Sales, and Shurman claim that `H ~ H^{(3)}_{n,p}` is Class 1 with high probability when `n^{-2/3-1/200} ≤ p ≤ 0.99`; they also state non-Class-1 results for a broad range when uniformity `k≥4` and `k` does not divide `n` (arXiv abstract).
+- **Assumptions and setting:** The random model is the binomial `k`-uniform hypergraph; the 3-uniform assertion has the explicit probability interval above, and the higher-uniformity contrast is restricted as stated by the authors.
+- **Caveat:** The result is asymptotic and probabilistic; it does not assert that every 3-uniform hypergraph in the range is Class 1.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Combinatorics & discrete mathematics; Probability & statistics
+
+### 8. [Matching Random Point Sets with Minimum Distortion](https://arxiv.org/abs/2611.06845)
+- **Abstract:** For two independent uniform samples of `n` points from `[0,1]`, the authors show that the typical minimum distortion of a bijection between the samples is `n^{2/3}` up to polylogarithmic factors.
+- **Authors:** Itai Benjamini, Mark Braverman, Elad Tzalik, Georgii Zakharov
+- **arXiv:** `2611.06845v1` (published 2026-11-04T18:02:57Z; categories: `math.PR`, `math.CO`, `math.MG`)
+- **Evidence for ranking:** The work gives matching upper- and lower-bound mechanisms for a nontrivial distortion exponent and spans probability, combinatorics, and metric geometry.
+- **Claimed result:** Benjamini, Braverman, Tzalik, and Zakharov claim that the two independent samples from the uniform interval have distortion `n^{2/3}` up to polylogarithmic factors with high probability, using a multiscale construction for the upper bound (arXiv abstract).
+- **Assumptions and setting:** Two independent `n`-point samples from `[0,1]` equipped with uniform measure; distortion is measured for a bijection between the induced finite metric spaces.
+- **Caveat:** The stated exponent is established for this one-dimensional uniform model, not for arbitrary metric-measure spaces.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Probability & statistics; Combinatorics & discrete mathematics; Geometry & topology
+
+### 9. [Uniqueness of Ricci flows from singular initial data](https://arxiv.org/abs/2611.06814)
+- **Abstract:** The authors establish uniqueness for Ricci flows with nonnegative sectional curvature and scaling-invariant curvature bounds when their induced distances converge, up to isometry, to the same initial distance function.
+- **Authors:** Laura Flower, Man-Chun Lee, Felix Schulze
+- **arXiv:** `2611.06814v1` (published 2026-11-04T17:26:38Z; categories: `math.DG`, `math.AP`)
+- **Evidence for ranking:** The result addresses uniqueness from singular initial data and is cross-listed between differential geometry and analysis of PDEs; its hypotheses make a precise claim in an active geometric-flow setting.
+- **Claimed result:** Flower, Lee, and Schulze claim uniqueness under nonnegative sectional curvature and scaling-invariant curvature bounds when the induced distance functions converge to the same initial metric up to isometry; a compact-case variant is also stated (arXiv abstract).
+- **Assumptions and setting:** The main statement assumes nonnegative sectional curvature, scaling-invariant curvature bounds, and convergence of distance functions to a common initial distance function up to isometry.
+- **Caveat:** The compact-case extension is described only as requiring a restricted singular-set size and suitable weaker conditions in the abstract; those precise conditions need to be read from the paper.
+- **Announcement type:** new submission, announcement-batch date 2026-11-05
+- **Themes:** Geometry & topology; Analysis & PDE
 
 ## Trending Research Themes
 
-- **Quantitative graph structure and induced patterns:** The Gyárfás--Sumner paper improves a near-polynomial chromatic bound to a polylogarithmic one, while the induced Ramsey paper proves polynomial dependence for fixed F; both use distinct structural arguments (block systems versus geometric random constructions and containers). The percolated-hypercube result adds a separate probabilistic cycle-length theorem, not a shared method. [2611.06699](https://arxiv.org/abs/2611.06699), [2611.06886](https://arxiv.org/abs/2611.06886), [2611.05634](https://arxiv.org/abs/2611.05634).
-- **Probability and large-scale limits:** The Airy_β result identifies a Gaussian-free-field limit for a rescaled line ensemble, whereas hypercube percolation quantifies the longest cycle just above a threshold. These are two distinct instances of asymptotic structure, not evidence of a field-wide method shift. [2611.05852](https://arxiv.org/abs/2611.05852), [2611.05634](https://arxiv.org/abs/2611.05634).
-- **Geometric classification and obstruction:** The K3 paper gives a finite-field rational-point threshold; the hexagonal-lattice paper upgrades energy optimality to uniqueness among periodic configurations; the Floer paper uses loop-space Floer theory to obstruct a specified class of Lagrangian embeddings. The settings and methods differ. [2611.06366](https://arxiv.org/abs/2611.06366), [2611.06278](https://arxiv.org/abs/2611.06278), [2611.06574](https://arxiv.org/abs/2611.06574).
-- **Isolated PDE signal:** The Navier--Stokes preprint claims nonuniqueness in the suitable Leray--Hopf class for a carefully specified datum outside L³; one paper is not enough to infer a broader shift in PDE research. [2611.06117](https://arxiv.org/abs/2611.06117).
+- **Sharper structural bounds in combinatorics.** The Gyárfás-Sumner paper improves a chromatic-number bound, the partition paper proves two log-concavity conjectures, and the diameter-graph and random-hypergraph papers prove coloring or extremal statements in specific settings (papers 1, 3, 4, and 7). These are distinct arguments, not evidence of one shared technique or a field-wide shift.
+- **Rigidity and uniqueness in geometric settings.** The hexagonal-lattice paper turns energy minimality into a uniqueness statement for periodic configurations; the Ricci-flow paper proves uniqueness under curvature and metric-convergence hypotheses, while the random-point matching paper quantifies the distortion needed between two samples (papers 2, 8, and 9). The common feature is a focus on structural constraints, not a shared method.
+- **Probability connecting discrete models to analytic limits.** The Airy_β result identifies a Gaussian free field scaling limit, the hypergraph paper gives high-probability edge-coloring behavior, and random-point matching gives a high-probability distortion scale (papers 6–8). This is a recurring topic among this selection, not evidence of a broader archive-wide change.
 
 ## Open Problems and Research Directions
 
-- **Author-stated open problem — Gyárfás--Sumner:** Remove the remaining polylogarithmic factor to obtain the conjectured bounded chromatic number; the authors also identify removing the dependence of the exponent on clique bound k as an intermediate target. A concrete test is to seek a linear-size independent set or improve their `14k` exponent. [2611.06699](https://arxiv.org/abs/2611.06699).
-- **Author-stated direction — induced Ramsey:** The authors ask whether the exponent’s quadratic dependence on v(F) can be reduced to linear. Compare their geometric/container proof with the alternative proof they cite, tracking which part controls the F-dependence. [2611.06886](https://arxiv.org/abs/2611.06886).
-- **Synthesis — Navier--Stokes endpoint:** The construction separates weak-L³ from strong-L³ uniqueness regimes. A natural follow-up is to identify additional smallness, localization, or initial-trace conditions at the weak-L³ endpoint that restore uniqueness, while preserving the exact energy-class requirements. This is a proposed direction based on the paper’s stated function-space boundary, not an author claim. [2611.06117](https://arxiv.org/abs/2611.06117).
-- **Synthesis — periodic versus general configurations:** Since finite point deletions prevent literal uniqueness for arbitrary configurations, investigate whether an energy-minimizer classification can be formulated modulo zero-density changes, or for broader nonperiodic classes with an explicit equivalence notion. [2611.06278](https://arxiv.org/abs/2611.06278).
+- **Open problem — author-stated:** The full Gyárfás-Sumner conjecture still predicts a chromatic bound independent of graph size for every fixed forest and clique bound; the new polylogarithmic estimate stops short of that conclusion (paper 1). **Research direction — synthesis:** Test whether the exponent or constants can be reduced for special tree families before seeking the full constant bound.
+- **Open problem — paper limitation:** The hexagonal-lattice uniqueness result is for periodic configurations; the authors note that unrestricted uniqueness fails after deleting finitely many points (paper 2). **Research direction — synthesis:** Study uniqueness modulo finite defects or within explicitly broader classes where density and energy are defined compatibly.
+- **Open problem — paper range:** The proven rank/crank inequalities cover the stated ranges of `m` and `n`, not the full support boundary (paper 3). **Research direction — synthesis:** Analyze the remaining edge terms and determine whether strict log-concavity persists or changes form there.
+- **Open problem — verification gap:** The de Bruijn-Newman bound depends on a large computer certificate and an interface from the certificate to the analytic proof (paper 5). **Research direction — synthesis:** Independently reproduce the certificate and test the stability of the claimed endpoint under alternative interval or precision choices.
+- **Research direction — synthesis:** Extend the `n^{2/3}` distortion analysis from uniform samples on `[0,1]` to other one-dimensional densities and then to higher-dimensional or non-Euclidean metric-measure spaces (paper 8).
+- **Open problem — paper hypotheses:** The Ricci-flow abstract leaves the exact compact-case weaker conditions and singular-set restriction to the paper (paper 9). **Research direction — synthesis:** Map which singular-set sizes and curvature assumptions are essential by comparing borderline cases against the main uniqueness theorem.
 
 ## Takeaway
 
-Today’s batch contains several concrete advances in graph bounds and a striking set of classification and limit theorems, but the ordering is a map of mathematically notable claims rather than measured readership. The Navier--Stokes nonuniqueness result is the highest-stakes claim here and should be treated as provisional until independent expert scrutiny.
+This batch's clearest theorem-scale advances are the polylogarithmic Gyárfás-Sumner bound, hexagonal-lattice uniqueness, and partition log-concavity. The de Bruijn-Newman bound is especially delicate because it depends on a substantial computer certificate that still needs independent verification.
 
 ## Method and sources
 
-- **Window:** daily announcement batch dated 2026-11-05; start date 2026-11-05, end date 2026-11-05. The latest batch was used (not a prior batch). Snapshot: 2026-11-05 17:16:08 UTC.
-- **Coverage:** arXiv Mathematics archive (`math`); traversed all 364 entries in the 2026-11-05 announcement batch, retained nine new submissions, and verified their abstract pages. Categories are preserved as arXiv subject classes.
-- **Inference:** no official arXiv trending ranking exists. Selection/ordering emphasizes concrete theorem-level claims, sharper bounds or classifications, cross-listing, proof artifacts, and the paper authors’ report of an independent proof where available; recency is only a tie-breaker. Citation totals were not used.
-- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); each linked arXiv abstract page above; arXiv HTML full text for the three leading graph/PDE papers. The configured `web_extract` backend could not extract pages, so the listing and abstracts were checked directly in the browser. Semantic Scholar Graph citation data could not be retrieved in this snapshot; citation and influential-citation evidence are therefore unavailable.
+- **Window:** Daily; latest mathematics announcement batch listed by arXiv as Thursday, 5 November 2026. Window start and end: 2026-11-05 through 2026-11-05. The listing contains no 6 November batch, so this report uses the prior/latest 5 November batch. The selected papers' original submission timestamps range from 2026-11-03 to 2026-11-04 UTC; the announcement-batch date follows the arXiv recent listing.
+- **Snapshot:** 2026-11-06 01:32:58 UTC.
+- **Coverage:** Traversed the full 364-entry batch on `https://arxiv.org/list/math/recent`; the mathematics archive was the core, retaining neighboring classes only for papers cross-listed in mathematics. Nine papers were selected for concrete mathematical results and cross-subfield reach. Selected abstract pages were checked directly on arXiv; introductions and main-result statements were inspected for papers 1–3. No proof was independently verified.
+- **Inference:** Recent-paper citation and independent-attention signals were too sparse to support popularity-based ordering; selection emphasizes concrete claimed results and scope, with cross-listing as corroboration and recency only as a tie-breaker. Citation counts are not represented as gains during the window.
+- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); selected arXiv abstracts: [2611.06699](https://arxiv.org/abs/2611.06699), [2611.06278](https://arxiv.org/abs/2611.06278), [2611.06757](https://arxiv.org/abs/2611.06757), [2611.05631](https://arxiv.org/abs/2611.05631), [2611.06245](https://arxiv.org/abs/2611.06245), [2611.05852](https://arxiv.org/abs/2611.05852), [2611.05622](https://arxiv.org/abs/2611.05622), [2611.06845](https://arxiv.org/abs/2611.06845), and [2611.06814](https://arxiv.org/abs/2611.06814). The configured `web_extract` backend was unavailable, so abstract and HTML pages were verified using live arXiv pages instead. Semantic Scholar citation metadata was not available for this snapshot and was not used to rank.

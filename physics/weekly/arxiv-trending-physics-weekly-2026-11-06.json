@@ -1,0 +1,164 @@
+{
+  "schema": "arxiv-trending-physics/v1",
+  "category": "weekly",
+  "window": {
+    "start": "2026-10-30T02:40:41Z",
+    "end": "2026-11-06T02:40:41Z",
+    "timezone": "UTC"
+  },
+  "date": "2026-11-06",
+  "title": "Weekly arXiv physics — 2026-10-30 to 2026-11-06 UTC: 7 notable recent papers",
+  "source_report": "/home/yizhuan/.research/physics/weekly/arxiv-trending-physics-weekly-2026-11-06.md",
+  "entry_count": 7,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv provides no official trending or readership chart; ordering is inferred from checkable attention and research signals. Citation evidence is limited for papers only days old, and Semantic Scholar citation fields could not be retrieved for this snapshot.",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "Observation of light-induced Haldane gap in graphene",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2610.42115",
+      "arxiv_id": "2610.42115",
+      "arxiv_version": 1,
+      "published": "2026-10-30T17:49:52Z",
+      "categories": ["cond-mat.mes-hall"],
+      "authors": ["Fei Wang", "Xuanxi Cai", "Wanying Chen", "Xiao Tang", "Jinze Li", "et al."],
+      "themes": ["Condensed matter & materials"],
+      "abstract": "The authors report a transient Dirac gap in monolayer graphene that appears only under circularly polarized driving, identifying it with a light-induced Haldane mass and Floquet topology.",
+      "claimed_result": "The authors report a 203 ± 30 meV light-induced Dirac gap under circularly polarized mid-infrared pumping, absent under linear polarization; time-resolved spectra and Floquet calculations link it to dynamical time-reversal-symmetry breaking.",
+      "evidence_type": "Experimental; time- and angle-resolved photoemission spectroscopy on monolayer graphene, interpreted with Floquet calculations.",
+      "unique_caveat": "The effect is transient and measured in a particular pump–probe regime on monolayer graphene; the topological Berry-curvature/Chern interpretation is supported by calculations rather than a transport measurement of a quantized response.",
+      "refs": [
+        "https://themachinepress.com/story/mp-2026-11-02-012/circular-light-opens-graphene-s-haldane-gap",
+        "https://arxivtldr.org/category/condensed-matter",
+        "https://info.phys.tsinghua.edu.cn/zhou/ZhouLab_Publication%20list.html"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Probing the charm-quark dead cone effect in heavy ion collisions",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.01285",
+      "arxiv_id": "2611.01285",
+      "arxiv_version": 1,
+      "published": "2026-10-31T21:38:03Z",
+      "categories": ["nucl-ex", "hep-ex"],
+      "authors": ["CMS Collaboration"],
+      "themes": ["Particle, nuclear & high-energy physics"],
+      "abstract": "The CMS authors measure late, collinear jet emissions in PbPb collisions and find a suppression of small-angle emissions in prompt-D⁰-tagged jets consistent with the charm-quark dead-cone effect.",
+      "claimed_result": "CMS reports that D⁰-tagged jets have fewer small-angle splittings than inclusive jets in PbPb data, consistent with the charm dead cone; its PbPb-to-pp comparison disfavors scenarios with strong filling of that cone by medium-induced radiation.",
+      "evidence_type": "Experimental; 2018 CMS PbPb collisions at √sNN = 5.02 TeV, with 1.7 nb⁻¹ integrated luminosity and late-kT jet grooming.",
+      "unique_caveat": "Within the measured kinematic range and precision, the PbPb-versus-pp comparison shows no significant difference and has limited power to distinguish the jet-medium models considered by the authors.",
+      "refs": [
+        "https://arxiv.org/abs/2611.01285",
+        "https://cms-results.web.cern.ch/cms-results/public-results/publications/HIN-25-013/"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "A search for sterile neutrinos at ultrahigh energies at the Pierre Auger Observatory",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.06284",
+      "arxiv_id": "2611.06284",
+      "arxiv_version": 1,
+      "published": "2026-11-04T10:23:29Z",
+      "categories": ["astro-ph.HE", "hep-ph"],
+      "authors": ["The Pierre Auger Collaboration", "A. Abdul Halim", "P. Abreu", "M. Aglietta", "M. Ahmed", "et al."],
+      "themes": ["Particle, nuclear & high-energy physics", "Astrophysics"],
+      "abstract": "The Pierre Auger authors model Earth-skimming and upward-going air showers to set limits on ultrahigh-energy fluxes of MeV–100 MeV sterile neutrinos mixing mainly with tau neutrinos, and derive benchmark constraints for superheavy dark matter decays.",
+      "claimed_result": "For an E⁻² spectrum and sin²θN ≲ 10⁻¹, the authors derive a 90% confidence upper limit of approximately E²ΦN ≤ 2 × 10⁻⁹ sin⁻²θN GeV cm⁻² sr⁻¹ s⁻¹ over 0.3–200 EeV; the paper also gives benchmark dark-matter-decay constraints.",
+      "evidence_type": "Computational; Monte Carlo exposure calculation for the Pierre Auger Observatory using observed air-shower event samples.",
+      "unique_caveat": "The limits are sensitivity constraints, not evidence of a signal; the authors' benchmark sterile-neutrino fluxes lie several orders below current sensitivity, and tau-lepton energy-loss modeling contributes a dominant +34%/−28% exposure uncertainty.",
+      "refs": [
+        "https://home.ba.infn.it/~marrone/highlights/2026-11-05.html",
+        "https://arxiv.org/abs/2611.06284"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "DESI DR2 Results III: The Mass of the Milky Way",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.05518",
+      "arxiv_id": "2611.05518",
+      "arxiv_version": 1,
+      "published": "2026-11-03T19:15:56Z",
+      "categories": ["astro-ph.GA", "astro-ph.CO"],
+      "authors": ["DESI Collaboration", "C. Aganze", "J. Aguilar", "S. Ahlen", "C. Allende Prieto", "et al."],
+      "themes": ["Astrophysics"],
+      "abstract": "The DESI authors combine four mock-calibrated dynamical methods applied to DR2 halo-star data to estimate the Milky Way's mass and quantify method-dependent biases and correlations.",
+      "claimed_result": "From 10,036 RR Lyrae and blue-horizontal-branch stars, the authors report a joint mass within 80 kpc of 6.36⁺⁰·⁵³₋₀·⁴⁸ × 10¹¹ M☉ and a virial M200c of 1.19⁺⁰·¹⁴₋₀·¹² × 10¹² M☉ after mock-based corrections.",
+      "evidence_type": "Observational; DESI DR2 six-dimensional halo-star data, calibrated against cosmological mock surveys and Gaia DR3-like uncertainties.",
+      "unique_caveat": "The estimates depend on mock calibration, selection-function assumptions, and residual correlations among methods; the authors note that method-specific results can differ despite the joint estimate.",
+      "refs": [
+        "https://rhysyt.github.io/DailyArXiV/Priority.html",
+        "https://arxiv.org/abs/2611.05518"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "A multiprobe ΛCDM consistency analysis with gravitational-wave standard sirens",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.00415",
+      "arxiv_id": "2611.00415",
+      "arxiv_version": 1,
+      "published": "2026-10-30T22:04:20Z",
+      "categories": ["astro-ph.CO"],
+      "authors": ["T. M. C. Abbott", "M. Aguena", "F. Andrade-Oliveira", "S. Avila", "D. Bacon", "et al."],
+      "themes": ["Cosmology & gravitation", "Astrophysics"],
+      "abstract": "The authors combine LVK GWTC-5.0 standard sirens with DES, DESI, supernova, and CMB measurements to assess ΛCDM consistency and the H₀ and S₈ tensions.",
+      "claimed_result": "Adding standard sirens improves the Ωm–S₈ constraints by about 30% and yields a 6.2% H₀ constraint in the authors' analysis, while neither the S₈ discrepancy nor the H₀ tension is materially reduced at current GW sensitivity.",
+      "evidence_type": "Observational; LVK GWTC-5.0, DES Year 6 lensing and clustering, DESI BAO, Type Ia supernovae, and Planck/ACT/SPT CMB data combined with normalizing flows.",
+      "unique_caveat": "The present standard-siren precision is not enough to resolve either tension; the inferred constraints remain conditional on the adopted joint-probe analysis and its common priors.",
+      "refs": [
+        "https://inspirehep.net/literature/3221853",
+        "https://arxiv.org/abs/2611.00415"
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Latest νs from the Earliest Galaxies: Probing neutrino self-interactions with JWST",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.07013",
+      "arxiv_id": "2611.07013",
+      "arxiv_version": 1,
+      "published": "2026-11-04T19:00:02Z",
+      "categories": ["astro-ph.CO", "hep-ph"],
+      "authors": ["Ranjini Mondol", "Priyank Parashari", "Anirban Das", "Vera Gluscevic", "Ranjan Laha"],
+      "themes": ["Cosmology & gravitation", "Particle, nuclear & high-energy physics"],
+      "abstract": "The authors use high-redshift JWST ultraviolet luminosity-function data together with Planck CMB data to constrain beyond-Standard-Model neutrino self-interactions.",
+      "claimed_result": "The authors report 95% upper limits on log₁₀(Geff/MeV⁻²) of about −2.75 for one interacting neutrino flavor and ≲−3.41 when all three flavors interact, stronger than their Planck-only constraints.",
+      "evidence_type": "Observational; cosmological inference combining Planck CMB and JWST high-redshift UV luminosity-function measurements.",
+      "unique_caveat": "These are model-dependent parameter constraints, not a detection of neutrino self-interactions; they depend on the assumed neutrino-interaction scenario and interpretation of the high-redshift galaxy luminosity function.",
+      "refs": [
+        "https://arxiv.org/abs/2611.07013"
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "Constraining tau-sterile neutrino mixing with high-energy astrophysical neutrinos",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.05170",
+      "arxiv_id": "2611.05170",
+      "arxiv_version": 1,
+      "published": "2026-11-03T16:38:30Z",
+      "categories": ["hep-ph"],
+      "authors": ["Mauricio Bustamante", "Qinrui Liu"],
+      "themes": ["Particle, nuclear & high-energy physics", "Astrophysics"],
+      "abstract": "The authors use IceCube's measured neutrino flavor composition to constrain tau–sterile mixing and project the reach of future neutrino telescopes.",
+      "claimed_result": "Fitting IceCube flavor-composition data while leaving the source composition free, the authors obtain |Uτ4|² < 0.88 at 90% confidence; their projected combined sensitivity reaches 0.24–0.29 by 2040 and 0.12–0.14 by 2050 under the stated future-instrument assumptions.",
+      "evidence_type": "Observational; inference from IceCube flavor-composition measurements, followed by future-sensitivity forecasts.",
+      "unique_caveat": "The present bound is weak, and projected improvement depends on future detector performance and flavor-composition assumptions; these forecasts are not future measurements.",
+      "refs": [
+        "https://global-nu.org/digest.html",
+        "https://arxiv.org/abs/2611.05170"
+      ]
+    }
+  ]
+}

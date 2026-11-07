@@ -7,47 +7,568 @@
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-07.md",
   "entry_count": 15,
   "entry_noun": "repositories",
-  "snapshot_time_utc": "2026-11-07T01:43:00Z",
-  "date_range": "GitHub Trending daily: 2026-11-07; new repository search: 2026-11-05 through 2026-11-07 UTC",
-  "ranking_basis": "Daily GitHub Trending star gains, with one independently identified recent-created repository appended as a freshness signal.",
-  "ranking_explanation": "Entries 1-14 follow the daily Trending page's displayed star-gain order. majorminorlabs/hermes-voice is appended as entry 15 because GitHub Search confirms creation within the two-day discovery window; its daily gain is unavailable and it is not compared against the Trending ranking.",
-  "global_caveat": "Trending star gains are a snapshot from GitHub's daily Trending page. Total star counts and default-branch commits were checked through GitHub REST and can change after capture. No prior-window comparison was collected.",
+  "snapshot_time_utc": "2026-11-07T17:30:00Z",
+  "date_range": "2026-11-07 through 2026-11-07 UTC",
+  "ranking_basis": "Daily GitHub Trending star gains for 14 repositories, descending; one recent-created repository is appended as an unranked freshness signal.",
+  "ranking_explanation": "The first 14 entries follow the daily Trending page by displayed stars gained, descending; ties retain page order. voyager-so/vork is appended as a recently created and pushed project from GitHub Search and is not compared against Trending gains.",
+  "global_caveat": "Trending gains are time-sensitive snapshot values. Total stars and current default-branch commits were checked through GitHub REST at capture time. The final entry was found through recent-created repository search and has no comparable daily star-gain figure. No prior-window comparison is claimed.",
   "themes": [
-    {"id":"agent-security","title":"Agent security workflows","summary":"Agent skills make structured, coverage-aware, independently checked security review reusable.","supporting_repository_ids":["01-cloudflare-security-audit-skill"]},
-    {"id":"agent-workflows","title":"Composable agent skills and voice","summary":"Reusable skills and a voice interface connect agent capabilities to developer and home-automation workflows.","supporting_repository_ids":["01-cloudflare-security-audit-skill","02-mattpocock-skills","04-google-skills","15-hermes-voice"]},
-    {"id":"grounded-data-ai","title":"Grounded, explainable agentic analytics","summary":"Semantic metadata, certified definitions, validation, and provenance are used to improve agent answers over enterprise data.","supporting_repository_ids":["03-nvidia-auto-ontology"]},
-    {"id":"developer-tooling","title":"Editors, shells, and language tooling","summary":"The list spans code editors, a structured-data shell, the Rust compiler, and Python tooling implemented in Rust.","supporting_repository_ids":["05-zed","06-vscode","08-rust","09-ruff","13-nushell"]},
-    {"id":"web-platform","title":"Web application platforms","summary":"Mature frontend libraries and frameworks remain active alongside the newer agent-focused repositories.","supporting_repository_ids":["07-react","11-rails","12-angular"]},
-    {"id":"observability-infrastructure","title":"Observability and distributed infrastructure","summary":"Monitoring and distributed key-value infrastructure remain visible daily signals.","supporting_repository_ids":["10-prometheus","14-etcd"]}
+    {
+      "id": "agent-skills",
+      "title": "Reusable agent skills and workflow packs",
+      "summary": "Security, engineering, and vendor-specific skill repositories package agent procedures as reusable instructions.",
+      "supporting_repository_ids": [
+        "01-cloudflare-security-audit-skill",
+        "05-mattpocock-skills",
+        "06-google-skills",
+        "07-anthropics-skills"
+      ]
+    },
+    {
+      "id": "security-workflows",
+      "title": "Auditable agentic security work",
+      "summary": "The leading repo makes agent-assisted security review structured through coverage tracking, candidate validation, and machine-readable findings.",
+      "supporting_repository_ids": [
+        "01-cloudflare-security-audit-skill"
+      ]
+    },
+    {
+      "id": "agent-apps",
+      "title": "Agents with interfaces, tools, and context management",
+      "summary": "Desktop agent orchestration, browser control, agent-ready design systems, and context compression appear across the repo list.",
+      "supporting_repository_ids": [
+        "02-milind-soni-openmausbot",
+        "10-meta-astryx",
+        "11-ranxianglei-billion-context",
+        "14-vercel-labs-agent-browser"
+      ]
+    },
+    {
+      "id": "developer-tooling",
+      "title": "Developer environments and tools",
+      "summary": "Editors, a Python linter, frontend framework, and agent-facing CLI show continued demand for core developer tooling.",
+      "supporting_repository_ids": [
+        "04-zed-industries-zed",
+        "05-mattpocock-skills",
+        "08-astral-sh-ruff",
+        "13-tailwindlabs-tailwindcss",
+        "14-vercel-labs-agent-browser"
+      ]
+    },
+    {
+      "id": "local-first-tools",
+      "title": "Local-first software and privacy",
+      "summary": "A local-first multi-agent desktop app and cloud-free home-automation integration make local control visible.",
+      "supporting_repository_ids": [
+        "02-milind-soni-openmausbot",
+        "12-mbillow-localthings"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure and operations",
+      "summary": "Prometheus observability and GPU Kubernetes management represent ongoing infrastructure work.",
+      "supporting_repository_ids": [
+        "09-prometheus-prometheus"
+      ]
+    },
+    {
+      "id": "frontend-design",
+      "title": "Agent-ready frontend design",
+      "summary": "Meta Astryx explicitly positions its customizable design system as agent-ready; Tailwind CSS remains a frontend foundation.",
+      "supporting_repository_ids": [
+        "10-meta-astryx",
+        "13-tailwindlabs-tailwindcss"
+      ]
+    },
+    {
+      "id": "privacy-and-search",
+      "title": "Identity search utilities",
+      "summary": "Sherlock is a high-momentum, established utility for username-based account discovery across social networks.",
+      "supporting_repository_ids": [
+        "03-sherlock-project-sherlock"
+      ]
+    },
+    {
+      "id": "agent-creative-rendering",
+      "title": "Agent-native creative rendering",
+      "summary": "A headless GPU 3D/VFX pipeline lets agents write scene code, render previews, inspect results, and revise.",
+      "supporting_repository_ids": [
+        "15-voyager-so-vork"
+      ]
+    },
+    {
+      "id": "agent-creative-rendering",
+      "title": "Agent-native creative rendering",
+      "summary": "A headless GPU 3D/VFX pipeline lets agents write scene code, render previews, inspect results, and revise.",
+      "supporting_repository_ids": [
+        "15-voyager-so-vork"
+      ]
+    }
   ],
   "sections": [
-    {"id":"00-snapshot","kind":"snapshot","title":"Snapshot","content":"Snapshot time: 2026-11-07 01:43 UTC. Scope: Daily. GitHub Trending date: 2026-11-07. Recent-created repository search window: 2026-11-05 through 2026-11-07 UTC. Ranking basis: daily Trending star gains, with one recent-created repository appended as a freshness signal."},
-    {"id":"00-headline","kind":"headline","title":"Headline","content":"Agent-oriented skills and security workflows dominate the strongest daily spikes: Cloudflare's security-audit skill, Matt Pocock's engineering skills, and NVIDIA's Auto Ontology lead GitHub Trending. Alongside them, established editors, language tooling, frameworks, and infrastructure projects show broad developer-tool interest rather than a single-category surge."},
     {
-      "id":"01-cloudflare-security-audit-skill","kind":"repo","title":"cloudflare/security-audit-skill","rank":1,"url":"https://github.com/cloudflare/security-audit-skill","description":"A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.","content":"A coding-agent skill that coordinates multi-phase security audits and independently verified, structured findings.","language":"JavaScript","stars_gained":2548,"total_stars":64080,"default_branch":"main","default_branch_commit":"c1c8a8c1471069fb0e188eeaff69b8e8db6564a8","why_notable":"It leads the daily list and exemplifies security review becoming a structured, auditable agent workflow.","theme_ids":["agent-security","agent-workflows"],"signal_strength":"lead","evidence_density":"rich","narration_priority":1,"spoken_name":"Cloudflare Security Audit Skill","unique_caveat":"The README calls for an OS-enforced sandbox with network restrictions and resource limits before executing target-controlled code.","enrichment":{"source":"Current repository README","observed_commit":"c1c8a8c1471069fb0e188eeaff69b8e8db6564a8","retrieved_at":"2026-11-07T01:44Z","architecture_summary":"An agent-orchestrated, six-phase audit pipeline builds a deterministic architecture and coverage ledger, dispatches isolated hunting agents, independently validates candidates and final source claims, and derives reports from structured findings.","core_components":["reconnaissance and coverage ledger","isolated coverage-led hunting","candidate validation","schema-validated findings","independent record verification","target-neutral reporting"],"workflow":"Reconnaissance -> coverage-led hunting -> candidate validation -> structured findings -> independent verification -> report generation.","design_pattern":"Adversarial verification with coverage tracking and machine-readable findings; confirmed, unresolved, and rejected candidates remain distinct.","source_refs":["https://github.com/cloudflare/security-audit-skill/blob/main/README.md"]},"refs":["cloudflare/security-audit-skill"]
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time: 2026-11-07 17:30 UTC. Scope: Daily. Date range: 2026-11-07 through 2026-11-07. Ranking basis: daily GitHub Trending star gains, descending; ties retain page order."
     },
     {
-      "id":"02-mattpocock-skills","kind":"repo","title":"mattpocock/skills","rank":2,"url":"https://github.com/mattpocock/skills","description":"Skills for Real Engineers. Straight from my .agents directory.","content":"A collection of small, composable agent skills for practical software engineering.","language":"Shell","stars_gained":2070,"total_stars":316750,"default_branch":"main","default_branch_commit":"4ae2317ddb22b046e26455e4f9c9b3aaaf62212d","why_notable":"Its second-place daily gain signals strong demand for reusable, model-agnostic engineering workflows rather than one monolithic agent process.","theme_ids":["agent-workflows","developer-tooling"],"signal_strength":"lead","evidence_density":"rich","narration_priority":2,"spoken_name":"Matt Pocock Skills","unique_caveat":"The README notes installation/update behavior differs by agent; some integrations update automatically while others require manual refresh.","enrichment":{"source":"Current repository README","observed_commit":"4ae2317ddb22b046e26455e4f9c9b3aaaf62212d","retrieved_at":"2026-11-07T01:44Z","architecture_summary":"A repository of small, editable and composable engineering/productivity skills intended to be adapted and used across multiple coding agents.","core_components":["agent-specific plugin installation paths","skills for engineering and productivity","one-time per-repository setup skill","manual install/update path for other agents"],"workflow":"Install the collection through an agent plugin or skills.sh, run setup in each repository, then invoke task-focused skills such as grilling or documentation workflows.","design_pattern":"Composable prompt/workflow modules instead of a single prescriptive end-to-end development process.","source_refs":["https://github.com/mattpocock/skills/blob/main/README.md"]},"refs":["mattpocock/skills"]
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent skills and agent-facing applications dominate today’s strongest momentum: a security-audit workflow, multi-agent desktop bot, and social-account finder lead the list. The top 15 gathered repositories span practical agent workflows alongside enduring developer infrastructure and local-first tools."
     },
     {
-      "id":"03-nvidia-auto-ontology","kind":"repo","title":"NVIDIA/auto-ontology","rank":3,"url":"https://github.com/NVIDIA/auto-ontology","description":"A Python framework for building semantic, graph-based reasoning layers over data for LLM and agent workflows.","content":"A semantic context layer that grounds data and agent queries in enterprise metadata and certified definitions.","language":"Python","stars_gained":2015,"total_stars":9080,"default_branch":"main","default_branch_commit":"c447003f72a822301e927196a4ecb5b597c308d5","why_notable":"Its rapid rise points to a practical focus on trustworthy agentic analytics, provenance, and query validation.","theme_ids":["grounded-data-ai"],"signal_strength":"lead","evidence_density":"rich","narration_priority":3,"spoken_name":"NVIDIA Auto Ontology","unique_caveat":"The README states that external contributions are not currently being accepted.","enrichment":{"source":"Current repository README","observed_commit":"c447003f72a822301e927196a4ecb5b597c308d5","retrieved_at":"2026-11-07T01:44Z","architecture_summary":"An ontology and semantic catalog sits over relational sources in Postgres; a Next.js frontend, FastAPI services, ingestion worker, vector storage, and configurable NVIDIA NIM endpoints provide the application and model pipeline.","core_components":["Next.js frontend and API gateway","FastAPI chat/catalog/data-source backend","FastAPI ingestion worker","Postgres and pgvector catalog/ontology store","optional Vault credentials","NVIDIA NIM inference, embedding, and reranking endpoints"],"workflow":"Generate or connect semantic context from enterprise metadata, resolve metrics/entities, translate natural-language questions into SQL, validate against certified definitions and lineage, and return provenance; expose context via MCP, CLI, and API.","design_pattern":"A semantic/ontology layer supplements existing customer-owned semantic models and exposes validated context to different agent harnesses.","source_refs":["https://github.com/NVIDIA/auto-ontology/blob/main/README.md"]},"refs":["NVIDIA/auto-ontology"]
+      "id": "01-cloudflare-security-audit-skill",
+      "kind": "repo",
+      "title": "cloudflare/security-audit-skill",
+      "rank": 1,
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings.",
+      "content": "A staged security-audit workflow with coverage tracking, independent candidate verification, and machine-readable reports.",
+      "language": "JavaScript",
+      "stars_gained": 2088,
+      "total_stars": 65258,
+      "default_branch": "main",
+      "default_branch_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "why_notable": "Its 2,088-star gain led the daily snapshot; the README describes coverage-led hunting and independent verification rather than free-form findings.",
+      "theme_ids": [
+        "agent-skills",
+        "security-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Cloudflare Security Audit Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "cloudflare/security-audit-skill"
+      ]
     },
     {
-      "id":"04-google-skills","kind":"repo","title":"google/skills","rank":4,"url":"https://github.com/google/skills","description":"Agent Skills for Google products and technologies.","content":"Agent Skills for Google products and technologies.","language":"Python","stars_gained":534,"total_stars":22849,"default_branch":"main","default_branch_commit":"993b979cf055de97dd15d4d5751d2672de561679","why_notable":"It adds a major vendor's broad product and cloud knowledge to the same skills-distribution trend.","theme_ids":["agent-workflows","developer-tooling"],"signal_strength":"standard","evidence_density":"rich","narration_priority":4,"spoken_name":"Google Agent Skills","unique_caveat":"The repository is a broad catalog of product-specific skills; setup requires selecting relevant skills and target agents.","enrichment":{"source":"Current repository README","observed_commit":"993b979cf055de97dd15d4d5751d2672de561679","retrieved_at":"2026-11-07T01:44Z","architecture_summary":"A browsable catalog of Google product and technology Agent Skills organized by product/domain directories and installed via the skills CLI.","core_components":["skills.sh installation entry point","product-specific skill directories","cloud, AI/ML, infrastructure, and developer-product guidance"],"workflow":"Install the repository through npx skills, choose skills, target agent and scope, then update installed skills with the skills CLI.","design_pattern":"Vendor-maintained, task-specific skill catalog distributed as agent-readable instructions rather than a single application.","source_refs":["https://github.com/google/skills/blob/main/README.md"]},"refs":["google/skills"]
+      "id": "02-milind-soni-openmausbot",
+      "kind": "repo",
+      "title": "milind-soni/OpenMausBot",
+      "rank": 2,
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use.",
+      "content": "A local-first desktop chat app for running a roster of agents through existing CLI tools.",
+      "language": "TypeScript",
+      "stars_gained": 1986,
+      "total_stars": 16662,
+      "default_branch": "main",
+      "default_branch_commit": "d818c28aa80686dc1d7db64ebeffa2a9dc468762",
+      "why_notable": "Its 1,986-star gain makes it one of the strongest movers; its README frames the product as a messaging interface for local, user-controlled agents.",
+      "theme_ids": [
+        "agent-apps",
+        "local-first-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "OpenMausBot",
+      "unique_caveat": "Ubuntu Wayland host control remains disabled while the README-referenced issue is resolved.",
+      "enrichment": null,
+      "refs": [
+        "milind-soni/OpenMausBot"
+      ]
     },
-    {"id":"05-zed","kind":"repo","title":"zed-industries/zed","rank":5,"url":"https://github.com/zed-industries/zed","description":"Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.","content":"A high-performance, multiplayer code editor built in Rust.","language":"Rust","stars_gained":306,"total_stars":93651,"default_branch":"main","default_branch_commit":"9a8ab54db4f9f9af4dc6efb42b304c55c6a62bd3","why_notable":"The editor remains a strong conventional developer-tool signal in a list led by agent workflows.","theme_ids":["developer-tooling"],"signal_strength":"standard","evidence_density":"rich","narration_priority":5,"spoken_name":"Zed","unique_caveat":"The README says web is not yet an available platform.","enrichment":{"source":"Current repository README","observed_commit":"9a8ab54db4f9f9af4dc6efb42b304c55c6a62bd3","retrieved_at":"2026-11-07T01:44Z","architecture_summary":"A high-performance, multiplayer code editor implemented primarily in Rust, with platform-specific installation and development workflows documented for macOS, Linux, and Windows.","core_components":["Rust editor codebase","platform-specific build documentation","Tree-sitter integration lineage","license and dependency compliance automation"],"workflow":"Install a platform build or package, or develop from source using the operating-system-specific build guide.","design_pattern":"Native, performance-oriented editor with multiplayer collaboration and a cross-platform desktop focus.","source_refs":["https://github.com/zed-industries/zed/blob/main/README.md"]},"refs":["zed-industries/zed"]},
-    {"id":"06-vscode","kind":"repo","title":"microsoft/vscode","rank":6,"url":"https://github.com/microsoft/vscode","description":"Visual Studio Code.","content":"Visual Studio Code, the extensible source-code editor.","language":"TypeScript","stars_gained":301,"total_stars":195031,"default_branch":"main","default_branch_commit":"fde6187a02fc9e24a94947feadc1c2c38f04be22","why_notable":"Its daily gain underscores the continued centrality of the general-purpose editor ecosystem.","theme_ids":["developer-tooling"],"signal_strength":"standard","evidence_density":"standard","narration_priority":6,"spoken_name":"Visual Studio Code","unique_caveat":"","enrichment":null,"refs":["microsoft/vscode"]},
-    {"id":"07-react","kind":"repo","title":"react/react","rank":7,"url":"https://github.com/react/react","description":"The library for web and native user interfaces.","content":"The library for web and native user interfaces.","language":"JavaScript","stars_gained":248,"total_stars":252262,"default_branch":"main","default_branch_commit":"d71b537241d26861df496413db2142c7ba192c25","why_notable":"A mature UI framework still attracts substantial daily attention, balancing the newer agent-related projects.","theme_ids":["web-platform"],"signal_strength":"standard","evidence_density":"standard","narration_priority":7,"spoken_name":"React","unique_caveat":"","enrichment":null,"refs":["react/react"]},
-    {"id":"08-rust","kind":"repo","title":"rust-lang/rust","rank":8,"url":"https://github.com/rust-lang/rust","description":"Empowering everyone to build reliable and efficient software.","content":"The Rust language and its compiler toolchain.","language":"Rust","stars_gained":192,"total_stars":121463,"default_branch":"main","default_branch_commit":"c6ac6ea53f6c8234fd06ddf0b88d89fe8b46edf5","why_notable":"Rust's compiler repository and several Rust-based tools on this list reinforce its ongoing systems-tooling footprint.","theme_ids":["developer-tooling"],"signal_strength":"standard","evidence_density":"standard","narration_priority":8,"spoken_name":"Rust","unique_caveat":"","enrichment":null,"refs":["rust-lang/rust"]},
-    {"id":"09-ruff","kind":"repo","title":"astral-sh/ruff","rank":9,"url":"https://github.com/astral-sh/ruff","description":"An extremely fast Python linter and code formatter, written in Rust.","content":"A fast Python linter and formatter implemented in Rust.","language":"Rust","stars_gained":169,"total_stars":50702,"default_branch":"main","default_branch_commit":"5fd37cea5d171dd3862bda0472f54a3f1abd3aeb","why_notable":"It represents the cross-language tooling pattern: Rust implementation with direct value to Python developers.","theme_ids":["developer-tooling"],"signal_strength":"standard","evidence_density":"standard","narration_priority":9,"spoken_name":"Ruff","unique_caveat":"","enrichment":null,"refs":["astral-sh/ruff"]},
-    {"id":"10-prometheus","kind":"repo","title":"prometheus/prometheus","rank":10,"url":"https://github.com/prometheus/prometheus","description":"The Prometheus monitoring system and time series database.","content":"The Prometheus monitoring system and time-series database.","language":"Go","stars_gained":148,"total_stars":67192,"default_branch":"main","default_branch_commit":"dd7aa6b0f19f4e952a55cbebd6e15458fe0ad9c6","why_notable":"Its presence shows observability infrastructure remains a durable, active category beyond the day's AI-heavy leaders.","theme_ids":["observability-infrastructure"],"signal_strength":"brief","evidence_density":"standard","narration_priority":10,"spoken_name":"Prometheus","unique_caveat":"","enrichment":null,"refs":["prometheus/prometheus"]},
-    {"id":"11-rails","kind":"repo","title":"rails/rails","rank":11,"url":"https://github.com/rails/rails","description":"Ruby on Rails.","content":"The Ruby on Rails web application framework.","language":"Ruby","stars_gained":142,"total_stars":59032,"default_branch":"main","default_branch_commit":"f4a33dbbd3e38d6def4f776cb6b60eb4070a9aff","why_notable":"A long-established framework continues to draw daily interest alongside newer agent and data projects.","theme_ids":["web-platform"],"signal_strength":"brief","evidence_density":"standard","narration_priority":11,"spoken_name":"Ruby on Rails","unique_caveat":"","enrichment":null,"refs":["rails/rails"]},
-    {"id":"12-angular","kind":"repo","title":"angular/angular","rank":12,"url":"https://github.com/angular/angular","description":"Deliver web apps with confidence.","content":"The Angular framework for building web applications.","language":"TypeScript","stars_gained":135,"total_stars":101369,"default_branch":"main","default_branch_commit":"26f22e5423a062edc89c0675372f54a1cfc1262b","why_notable":"It adds a second major web framework signal and reflects broad ongoing frontend activity.","theme_ids":["web-platform"],"signal_strength":"brief","evidence_density":"standard","narration_priority":12,"spoken_name":"Angular","unique_caveat":"","enrichment":null,"refs":["angular/angular"]},
-    {"id":"13-nushell","kind":"repo","title":"nushell/nushell","rank":13,"url":"https://github.com/nushell/nushell","description":"A new type of shell.","content":"A modern shell built around structured data.","language":"Rust","stars_gained":131,"total_stars":40992,"default_branch":"main","default_branch_commit":"192e5533546f89eddbb65cc73359aca1598a3076","why_notable":"It combines Rust systems engineering with a distinct, data-oriented command-line interface.","theme_ids":["developer-tooling"],"signal_strength":"brief","evidence_density":"standard","narration_priority":13,"spoken_name":"Nushell","unique_caveat":"","enrichment":null,"refs":["nushell/nushell"]},
-    {"id":"14-etcd","kind":"repo","title":"etcd-io/etcd","rank":14,"url":"https://github.com/etcd-io/etcd","description":"Distributed reliable key-value store for the most critical data of a distributed system.","content":"A distributed key-value store for critical distributed systems.","language":"Go","stars_gained":128,"total_stars":52617,"default_branch":"main","default_branch_commit":"d622ec57cf46c119f1a550343c34b26327cead0f","why_notable":"Its gain is tied near the bottom of this selection, but it represents active interest in foundational infrastructure.","theme_ids":["observability-infrastructure"],"signal_strength":"brief","evidence_density":"standard","narration_priority":14,"spoken_name":"etcd","unique_caveat":"","enrichment":null,"refs":["etcd-io/etcd"]},
-    {"id":"15-hermes-voice","kind":"repo","title":"majorminorlabs/hermes-voice","rank":null,"display_order":15,"url":"https://github.com/majorminorlabs/hermes-voice","description":"Talk to a Hermes Agent profile through Home Assistant Assist.","content":"A Home Assistant Assist integration for talking to a Hermes Agent profile through voice.","language":"Python","stars_gained":null,"stars_gained_note":"N/A - not available from GitHub; appended as a recent-created repository, not ranked against Trending star gains","total_stars":442,"default_branch":"main","default_branch_commit":"0c3eea33bbc09006964be001efb4fbfb2983b57d","created_at":"2026-11-05T05:28:37Z","pushed_at":"2026-11-06T21:59:50Z","why_notable":"GitHub Search confirms it was created on 2026-11-05 and recently pushed; it is included as a new-repository signal, not ranked against Trending's daily star gains.","theme_ids":["agent-workflows"],"signal_strength":"brief","evidence_density":"rich","narration_priority":15,"spoken_name":"Hermes Voice","unique_caveat":"The README says the v0.1 integration does not expose Home Assistant device-control tools by default.","enrichment":{"source":"Current repository README","observed_commit":"0c3eea33bbc09006964be001efb4fbfb2983b57d","retrieved_at":"2026-11-07T01:44Z","architecture_summary":"A Home Assistant custom conversation integration forwards messages to a selected Hermes profile's OpenAI-compatible API while Home Assistant handles speech recognition and synthesis; an Echo Show companion screen and wake-word pipeline are also provided.","core_components":["Home Assistant hermes_voice conversation integration","Hermes profile HTTP API","stable session ID handling","streamed response and speech cleanup","Echo Show screen and Android screen app","wake-word model and training pipeline"],"workflow":"Echo satellite audio enters a Home Assistant Assist pipeline; speech is transcribed, sent to the selected Hermes profile with a stable session identifier, streamed back, and spoken by the configured TTS engine.","design_pattern":"Thin Home Assistant conversation adapter that preserves profile identity and conversation history while leaving device-control tools opt-in and separate.","source_refs":["https://github.com/majorminorlabs/hermes-voice/blob/main/README.md"]},"refs":["majorminorlabs/hermes-voice"]},
-    {"id":"80-trending-technologies-and-themes","kind":"themes","title":"Trending Technologies and Themes","content":"Composable agent skills and security workflows are represented by Cloudflare's audit skill, Matt Pocock's collection, and Google's product skills. NVIDIA Auto Ontology foregrounds grounded data and provenance for agentic analytics. Editors, shells, Rust and Python tooling, web frameworks, observability, and distributed infrastructure add a broad conventional developer-tool base. Language tally for the 15 entries: Python 4; Rust 3; JavaScript 2; TypeScript 2; Go 2; Ruby 1; Shell 1.","theme_ids":["agent-security","agent-workflows","grounded-data-ai","developer-tooling","web-platform","observability-infrastructure"]},
-    {"id":"90-takeaway","kind":"takeaway","title":"Takeaway","content":"Today's clearest pulse is the packaging of agent expertise into reusable skills, especially for security and data-grounded work. But the rest of the list is not a wholesale shift away from conventional development: editors, language tools, web frameworks, and core infrastructure retain meaningful daily momentum. The newly created Hermes Voice project is an additional early signal for voice interfaces around agent profiles, not a daily star-gain leader."},
-    {"id":"99-sources-and-method","kind":"method","title":"Sources and Method","content":"Primary source: https://github.com/trending?since=daily, captured 2026-11-07 01:43 UTC. Corroboration: GitHub REST repository and default-branch commit endpoints for each listed repository; GitHub Search API query created:>=2026-11-05 stars:>=50 for recent-created projects; Hermes Voice metadata and README checked directly. Daily gains come from the matching Trending page; repository totals and current default-branch commit SHAs were cross-checked through REST. The recent-created Hermes Voice entry has no available daily gain figure. No prior-window comparison was collected, so no Notable Shifts section is included."}
-  ]
+    {
+      "id": "03-sherlock-project-sherlock",
+      "kind": "repo",
+      "title": "sherlock-project/sherlock",
+      "rank": 3,
+      "url": "https://github.com/sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks.",
+      "content": "A command-line tool for searching social networks for accounts matching a username.",
+      "language": "Python",
+      "stars_gained": 1819,
+      "total_stars": 100006,
+      "default_branch": "master",
+      "default_branch_commit": "c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+      "why_notable": "A mature, non-agent project is among the day’s largest gainers, providing a counterpoint to the concentration of agent-related repositories.",
+      "theme_ids": [
+        "privacy-and-search"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "standard",
+      "narration_priority": 3,
+      "spoken_name": "Sherlock",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "sherlock-project/sherlock"
+      ]
+    },
+    {
+      "id": "04-zed-industries-zed",
+      "kind": "repo",
+      "title": "zed-industries/zed",
+      "rank": 4,
+      "url": "https://github.com/zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "content": "A high-performance, multiplayer code editor.",
+      "language": "Rust",
+      "stars_gained": 1119,
+      "total_stars": 94156,
+      "default_branch": "main",
+      "default_branch_commit": "b5cd310b3b54dfc659fcc06453e6358843dfe216",
+      "why_notable": "Its daily pickup shows that established editor tooling remains a major strand alongside agent projects.",
+      "theme_ids": [
+        "developer-tooling"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Zed",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "zed-industries/zed"
+      ]
+    },
+    {
+      "id": "05-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 5,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "content": "A collection of small, composable skills for practical software engineering with coding agents.",
+      "language": "Shell",
+      "stars_gained": 1111,
+      "total_stars": 317430,
+      "default_branch": "main",
+      "default_branch_commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "why_notable": "The README emphasizes editable, composable workflows that can be used across agent products; it had 1,111 stars today.",
+      "theme_ids": [
+        "agent-skills",
+        "developer-tooling"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Matt Pocock Skills",
+      "unique_caveat": "Installation and update behavior varies across supported agents.",
+      "enrichment": null,
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "06-google-skills",
+      "kind": "repo",
+      "title": "google/skills",
+      "rank": 6,
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies.",
+      "content": "Agent skills for Google products and technologies, including Google Cloud.",
+      "language": "Python",
+      "stars_gained": 449,
+      "total_stars": 23204,
+      "default_branch": "main",
+      "default_branch_commit": "2194d3b8b1f31975fef2f1a0ae6b9ab55bd7ceee",
+      "why_notable": "Adds a vendor-maintained product and cloud skills catalog to the same strong reusable-instructions signal.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "Google Agent Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "google/skills"
+      ]
+    },
+    {
+      "id": "07-anthropics-skills",
+      "kind": "repo",
+      "title": "anthropics/skills",
+      "rank": 7,
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills.",
+      "content": "Anthropic’s public repository for Agent Skills.",
+      "language": "Python",
+      "stars_gained": 386,
+      "total_stars": 188540,
+      "default_branch": "main",
+      "default_branch_commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "why_notable": "Continued daily gain for a first-party skills collection reinforces the rise of reusable agent capability packs.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "Anthropic Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "id": "08-astral-sh-ruff",
+      "kind": "repo",
+      "title": "astral-sh/ruff",
+      "rank": 8,
+      "url": "https://github.com/astral-sh/ruff",
+      "description": "An extremely fast Python linter and code formatter, written in Rust.",
+      "content": "A fast Python linter and formatter implemented in Rust.",
+      "language": "Rust",
+      "stars_gained": 350,
+      "total_stars": 50890,
+      "default_branch": "main",
+      "default_branch_commit": "0762f103a985fc0426f7c7e0d1dc09936a274af2",
+      "why_notable": "A mature, performance-focused developer tool remains a visible mover beside newer agent infrastructure.",
+      "theme_ids": [
+        "developer-tooling"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 8,
+      "spoken_name": "Ruff",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "astral-sh/ruff"
+      ]
+    },
+    {
+      "id": "09-prometheus-prometheus",
+      "kind": "repo",
+      "title": "prometheus/prometheus",
+      "rank": 9,
+      "url": "https://github.com/prometheus/prometheus",
+      "description": "The Prometheus monitoring system and time series database.",
+      "content": "The Prometheus monitoring system and time-series database.",
+      "language": "Go",
+      "stars_gained": 325,
+      "total_stars": 67362,
+      "default_branch": "main",
+      "default_branch_commit": "dd7aa6b0f19f4e952a55cbebd6e15458fe0ad9c6",
+      "why_notable": "Its gain highlights durable observability and infrastructure interest beyond the agent-heavy leaders.",
+      "theme_ids": [
+        "infrastructure"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "Prometheus",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "prometheus/prometheus"
+      ]
+    },
+    {
+      "id": "10-meta-astryx",
+      "kind": "repo",
+      "title": "meta/astryx",
+      "rank": 10,
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "content": "An open-source design system built to be customizable and agent-ready.",
+      "language": "TypeScript",
+      "stars_gained": 185,
+      "total_stars": 14284,
+      "default_branch": "main",
+      "default_branch_commit": "71ade25a1ae517a4f5785a091569620f9040f0d8",
+      "why_notable": "It connects design-system work with agent-oriented interface workflows.",
+      "theme_ids": [
+        "agent-apps",
+        "frontend-design"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Meta Astryx",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "meta/astryx"
+      ]
+    },
+    {
+      "id": "11-ranxianglei-billion-context",
+      "kind": "repo",
+      "title": "ranxianglei/billion-context",
+      "rank": 11,
+      "url": "https://github.com/ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions, small context windows and token savings.",
+      "content": "A context-compression plugin aimed at sustaining very long agent sessions with smaller context windows.",
+      "language": "TypeScript",
+      "stars_gained": 185,
+      "total_stars": 4518,
+      "default_branch": "master",
+      "default_branch_commit": "cda6e73501e7c29b6e88f657003514987e464f79",
+      "why_notable": "Represents the context-management layer of the agent stack, with an explicit focus on long sessions and token efficiency.",
+      "theme_ids": [
+        "agent-apps"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "Billion Context",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "ranxianglei/billion-context"
+      ]
+    },
+    {
+      "id": "12-mbillow-localthings",
+      "kind": "repo",
+      "title": "mbillow/localthings",
+      "rank": 12,
+      "url": "https://github.com/mbillow/localthings",
+      "description": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account.",
+      "content": "A Home Assistant integration for controlling Samsung appliances locally, without a cloud account.",
+      "language": "Python",
+      "stars_gained": 184,
+      "total_stars": 996,
+      "default_branch": "main",
+      "default_branch_commit": "1e633ca795f7e615d163f4f775cb7bdf138ccef2",
+      "why_notable": "A small privacy-oriented home-automation project shows continued interest in local control beyond AI tooling.",
+      "theme_ids": [
+        "local-first-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 12,
+      "spoken_name": "LocalThings",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mbillow/localthings"
+      ]
+    },
+    {
+      "id": "13-tailwindlabs-tailwindcss",
+      "kind": "repo",
+      "title": "tailwindlabs/tailwindcss",
+      "rank": 13,
+      "url": "https://github.com/tailwindlabs/tailwindcss",
+      "description": "A utility-first CSS framework for rapid UI development.",
+      "content": "A utility-first CSS framework for building user interfaces.",
+      "language": "TypeScript",
+      "stars_gained": 181,
+      "total_stars": 98325,
+      "default_branch": "main",
+      "default_branch_commit": "9b2c925c19aae46ff4f9cf54a2fa6d2dbac7fa19",
+      "why_notable": "A major frontend framework maintains daily visibility as a conventional web-development counterweight.",
+      "theme_ids": [
+        "developer-tooling",
+        "frontend-design"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 13,
+      "spoken_name": "Tailwind CSS",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "tailwindlabs/tailwindcss"
+      ]
+    },
+    {
+      "id": "14-vercel-labs-agent-browser",
+      "kind": "repo",
+      "title": "vercel-labs/agent-browser",
+      "rank": 14,
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents.",
+      "content": "A Rust CLI that lets AI agents browse and interact with web pages.",
+      "language": "Rust",
+      "stars_gained": 180,
+      "total_stars": 46621,
+      "default_branch": "main",
+      "default_branch_commit": "d44f6989bf5e9a9a1c6dd6d97175f8c33b138eca",
+      "why_notable": "Its compact command-by-command browser control loop is a concrete example of tool access for agents.",
+      "theme_ids": [
+        "agent-apps",
+        "developer-tooling"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 14,
+      "spoken_name": "Agent Browser",
+      "unique_caveat": "Element references are snapshots and must be refreshed after navigation or DOM changes.",
+      "enrichment": null,
+      "refs": [
+        "vercel-labs/agent-browser"
+      ]
+    },
+    {
+      "id": "15-voyager-so-vork",
+      "kind": "repo",
+      "title": "voyager-so/vork",
+      "display_order": 15,
+      "url": "https://github.com/voyager-so/vork",
+      "description": "Headless 3D and VFX engine for agents. Research preview.",
+      "content": "A headless 3D and VFX engine built for agents to create, render, inspect, and revise scenes.",
+      "language": "Rust",
+      "stars_gained": null,
+      "stars_gained_note": "N/A - not available from GitHub; discovered via recent-created repository search and not ranked against Trending star gains",
+      "total_stars": 759,
+      "default_branch": "main",
+      "default_branch_commit": "44188baab29ad1c174c9e949c982d9edb45308fc",
+      "created_at": "2026-11-05T22:37:07Z",
+      "pushed_at": "2026-11-07T03:34:18Z",
+      "why_notable": "GitHub Search identifies it as created on 2026-11-05 and recently pushed; its README describes a research-preview GPU renderer with a render-inspect-revise workflow. It is appended as a fresh-project signal, not compared with Trending daily star gains.",
+      "theme_ids": [
+        "agent-creative-rendering",
+        "agent-apps"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 15,
+      "spoken_name": "Vork",
+      "unique_caveat": "The README labels it a research preview; its black-hole example is described as a numerical approximation, not an exact relativistic solver.",
+      "enrichment": null,
+      "refs": [
+        "voyager-so/vork"
+      ],
+      "rank": null
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Reusable agent skills and security workflows are represented by Cloudflare’s audit skill, Matt Pocock’s collection, Google’s product skills, and Anthropic’s skills. Multi-agent desktop use, browser control, agent-ready UI, and context management appear in OpenMausBot, agent-browser, meta/astryx, and billion-context. Established tooling (Zed, Ruff, Tailwind CSS) and infrastructure (Prometheus) remain visible. Recent-created repository search surfaced Vork, a headless GPU renderer for agent-authored 3D/VFX scenes. Language tally for the selected 15: Python 4; Rust 4; TypeScript 4; Go 1; JavaScript 1; Shell 1.",
+      "theme_ids": [
+        "agent-skills",
+        "security-workflows",
+        "agent-apps",
+        "developer-tooling",
+        "local-first-tools",
+        "infrastructure",
+        "frontend-design",
+        "privacy-and-search",
+        "agent-creative-rendering"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today’s clearest signal is the move from general-purpose coding agents toward reusable, inspectable workflows and the tools around them. Security auditing, multi-agent desktop use, and portable engineering skills are the strongest daily gainers, while mature developer infrastructure and local-first projects remain part of the mix."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "method",
+      "title": "Sources and Method",
+      "content": "Primary source: https://github.com/trending?since=daily, captured 2026-11-07 at 17:30 UTC. Corroboration: GitHub REST repository and default-branch commit endpoints were checked for all listed repositories; GitHub Search API query pushed:2026-11-06..2026-11-07 stars:>100 was used as an additional recency cross-check and not to rank the Trending list. Ranking follows the daily Trending page’s displayed star gains, descending, with ties retaining page order. Total stars and commit SHAs are REST values checked at capture time. Trending is a time-sensitive snapshot, not a final full-day total."
+    }
+  ],
+  "sources": {
+    "primary": "https://github.com/trending?since=daily",
+    "corroboration": "GitHub REST repository and default-branch commit endpoints for all 15 entries; GitHub Search API query pushed:2026-11-06..2026-11-07 stars:>100, used only as a recency cross-check.",
+    "recent_created_search": "https://api.github.com/search/repositories?q=created%3A2026-11-05..2026-11-07+stars%3A%3E%3D50&sort=stars&order=desc&per_page=20",
+    "recency_crosscheck": "https://api.github.com/search/repositories?q=pushed%3A2026-11-06..2026-11-07+stars%3A%3E100&sort=stars&order=desc&per_page=10"
+  }
 }

@@ -7,29 +7,178 @@
     "end": "2026-11-06",
     "announcement_batch": "2026-11-06",
     "uses_prior_batch": true,
-    "snapshot_utc": "2026-11-07T01:32:33Z"
+    "snapshot_utc": "2026-11-07T17:21:44Z"
   },
   "date": "2026-11-06",
   "title": "arXiv Mathematics — Friday, 6 November 2026",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-06.md",
-  "entry_count": 12,
+  "entry_count": 5,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; this is an inferred reading order, not a popularity ranking. The papers are very recent, citation evidence is immature, and only one selected paper yielded an independent quantitative attention signal.",
+  "global_caveat": "arXiv publishes no official trending chart, so this is an inferred order; the papers are very new and citation evidence is limited.",
   "sections": [
-    {"id":"paper-1","kind":"paper","title":"Quadratic Extractors","rank":1,"url":"https://arxiv.org/abs/2611.07266","arxiv_id":"2611.07266","arxiv_version":1,"published":"2026-11-05T00:36:24Z","categories":["cs.CC","cs.CR","math.CO"],"authors":["Gautam Chandrasekaran","Jesse Goodman","David Zuckerman"],"themes":["Combinatorics & discrete mathematics"],"abstract":"For quadratic sources over F_2^n, the authors give an explicit extractor whose min-entropy requirement is polylogarithmic in n, far below the previous roughly n-sqrt(log n) requirement.","claimed_result":"Theorem 1.3 gives an explicit extractor for quadratic sources at min-entropy at least log^C n, with error n^-Omega(1); the authors describe it as the first construction beyond the sumset-extractor barrier.","assumptions_and_setting":"The source is the image of hidden uniform bits under a map of n quadratic polynomials over F_2; this is a structured-source result, not an extractor for arbitrary weak sources.","unique_caveat":"The theorem is limited to quadratic sources and does not remove the impossibility for unrestricted weak sources.","evidence_for_ranking":"A parameter breakthrough across complexity, cryptography, and combinatorics. Independent ECCC report TR26-303 displayed 146 downloads when checked; this is an ECCC report count, not arXiv downloads or citations.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.07266","https://eccc.weizmann.ac.il/report/2026/303/"]},
-    {"id":"paper-2","kind":"paper","title":"Pointless K3 surfaces over finite fields","rank":2,"url":"https://arxiv.org/abs/2611.08356","arxiv_id":"2611.08356","arxiv_version":1,"published":"2026-11-05T17:36:46Z","categories":["math.NT","math.AG"],"authors":["Asher Auel","Philip Engel","Kiran S. Kedlaya","Sair Shaikh"],"themes":["Algebra & number theory","Geometry & topology"],"abstract":"The authors prove that a K3 surface without an F_q-rational point exists exactly when q<=11, using lattice bounds, the Artin-Tate formula, and Niemeier-lattice embeddings.","claimed_result":"Theorem 1 proves existence of pointless K3 surfaces over F_q if and only if q<=11.","assumptions_and_setting":"Smooth K3 surfaces over finite fields; the statement concerns existence of at least one surface for each field size.","unique_caveat":"The proof uses numerical computations, with code and data linked by the authors; they note an independent proof and leave the relation between approaches unexplored.","evidence_for_ranking":"A sharp iff cutoff across arithmetic geometry and number theory, with a stated downstream improvement to a rational-point bound for threefold results.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.08356"]},
-    {"id":"paper-3","kind":"paper","title":"Resolving Tusnády's Problem","rank":3,"url":"https://arxiv.org/abs/2611.06998","arxiv_id":"2611.06998","arxiv_version":1,"published":"2026-11-04T18:58:56Z","categories":["math.CA","cs.CG","cs.DS","math.CO"],"authors":["Nicola Wengiel"],"themes":["Combinatorics & discrete mathematics"],"abstract":"The paper proves the missing higher-dimensional lower bound for combinatorial discrepancy of axis-parallel boxes, which with the known upper bound and planar result gives the sharp order in every fixed dimension d>=2.","claimed_result":"Theorem 1.1 gives Omega_d((log N)^(d-1/2)) for anchored-box discrepancy for fixed d>=3; with Nikolov's upper bound and Wei's planar result, the authors conclude Theta_d((log N)^(d-1/2)) for boxes for every fixed d>=2.","assumptions_and_setting":"Worst-case discrepancy of finite N-point sets, with dimension fixed as N grows; constants and threshold may depend on dimension.","unique_caveat":"The new lower-bound theorem is for fixed d>=3; constants are not optimized or uniform in dimension, and the full conclusion uses prior upper and planar bounds.","evidence_for_ranking":"The authors claim to close a longstanding logarithmic-factor gap; the paper is cross-listed in analysis, computational geometry, algorithms, and combinatorics.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.06998"]},
-    {"id":"paper-4","kind":"paper","title":"Tusnády's problem and online two-sample thinning","rank":4,"url":"https://arxiv.org/abs/2611.08455","arxiv_id":"2611.08455","arxiv_version":1,"published":"2026-11-05T18:47:43Z","categories":["math.CO","cs.DS","math.PR"],"authors":["Yuhao Lei"],"themes":["Probability & statistics","Combinatorics & discrete mathematics"],"abstract":"The paper proves the sharp fixed-dimensional Tusnády discrepancy order, a robust random-sample lower bound, and minimax rates for online thinning of two samples from an unknown common distribution.","claimed_result":"For fixed dimension k and expected deletion budget rho*n, 0<rho<2, the authors obtain minimax expected prefix discrepancy Theta_(k,rho)((log n)^(k+1/2)); in one dimension the optimal terminal rate is Theta_rho((log log n)^(3/2)).","assumptions_and_setting":"Two independent size-n samples from the same unknown distribution; keep/discard decisions are online and irrevocable.","unique_caveat":"For k>=2, terminal upper and lower bounds differ by a factor log n. Its sharp Tusnády theorem also appears independently in paper 3 of this batch.","evidence_for_ranking":"Cross-listed across discrepancy, algorithms, and probability; it adds online prefix and terminal guarantees under a deletion budget to the sharp-box result.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.08455","https://arxiv.org/abs/2611.06998"]},
-    {"id":"paper-5","kind":"paper","title":"Rational Turán exponents of a single k-uniform hypergraph","rank":5,"url":"https://arxiv.org/abs/2611.07290","arxiv_id":"2611.07290","arxiv_version":1,"published":"2026-11-05T01:12:41Z","categories":["math.CO"],"authors":["Chang Liu","Jue Dai"],"themes":["Combinatorics & discrete mathematics"],"abstract":"For every integer k>=2 and rational r in [0,1], the authors construct a single forbidden k-uniform hypergraph with extremal number of order n^(k-r), and give an obstruction for part of the larger-exponent range.","claimed_result":"For rational r in [0,1], there is F_(k,r) with ex_k(n,F_(k,r))=Theta(n^(k-r)); for k>=4 and ceil(k/2)<r<=k-1, a single-F realization is impossible.","assumptions_and_setting":"Fixed uniformity k, rational exponent, and the standard extremal number for avoiding one finite hypergraph.","unique_caveat":"The Lean 4 formalization is conditional on two stated axioms; positive realization is shown for r in [0,1], with nonexistence proved only on the stated higher range.","evidence_for_ranking":"Extends rational-exponent realization from graphs to uniform hypergraphs in the single-forbidden-object setting, with linked formalization.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.07290"]},
-    {"id":"paper-6","kind":"paper","title":"Weak uniqueness for the stochastic heat equation with nondegenerate diffusion: the full Hölder regime","rank":6,"url":"https://arxiv.org/abs/2611.07310","arxiv_id":"2611.07310","arxiv_version":1,"published":"2026-11-05T01:55:58Z","categories":["math.PR"],"authors":["Yi Han"],"themes":["Analysis & PDE","Probability & statistics"],"abstract":"For scalar stochastic heat equations on the one-dimensional torus, the authors prove weak well-posedness for uniformly nondegenerate diffusion coefficients of every positive Hölder order and extend results to measurable drifts of linear growth.","claimed_result":"Theorem 1.1 proves existence and uniqueness in law for bounded, uniformly nondegenerate Hölder diffusion at every exponent beta>0; Theorem 1.2 treats measurable linear-growth drifts and certain unbounded diffusions.","assumptions_and_setting":"Scalar equation driven by space-time white noise on the one-dimensional torus; the main theorem assumes deterministic L2 initial data and diffusion bounded above and away from zero.","unique_caveat":"This is weak uniqueness, not pathwise uniqueness; the stated unbounded-diffusion extension uses bounded initial data.","evidence_for_ranking":"Closes the positive-Hölder range left by the author's earlier result and links a Lean formalization.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.07310","https://github.com/hanyi162013-Yihan/scalar-she-lean"]},
-    {"id":"paper-7","kind":"paper","title":"On do Carmo's Question: The Properly Embedded Case","rank":7,"url":"https://arxiv.org/abs/2611.08454","arxiv_id":"2611.08454","arxiv_version":1,"published":"2026-11-05T18:47:40Z","categories":["math.DG","math.AP"],"authors":["Gongping Niu"],"themes":["Geometry & topology","Analysis & PDE"],"abstract":"Every complete noncompact, two-sided, properly embedded constant-mean-curvature hypersurface of finite Morse index in Euclidean space is shown to be minimal, in every dimension.","claimed_result":"The author proves that a complete, noncompact, two-sided, properly embedded CMC hypersurface of finite Morse index in Euclidean space has zero mean curvature.","assumptions_and_setting":"Euclidean ambient space of arbitrary dimension; completeness, noncompactness, two-sidedness, proper embeddedness, and finite Morse index are required.","unique_caveat":"The theorem is for properly embedded hypersurfaces, not general immersed or non-proper hypersurfaces.","evidence_for_ranking":"A claimed all-dimensions resolution of the properly embedded finite-index case without curvature or volume-growth bounds; cross-listed in geometry and PDE.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.08454"]},
-    {"id":"paper-8","kind":"paper","title":"Gelfand numbers of Schatten class embeddings in the quasi-Banach range","rank":8,"url":"https://arxiv.org/abs/2611.08448","arxiv_id":"2611.08448","arxiv_version":1,"published":"2026-11-05T18:43:22Z","categories":["math.FA"],"authors":["Joscha Prochno"],"themes":["Analysis & PDE"],"abstract":"The paper proves a 2022 conjectured lower bound for finite-dimensional Schatten-class embeddings when 0<p<=1, yielding exact asymptotic orders in the previously unresolved range.","claimed_result":"Proves Conjecture 1.4 of Prochno and Strzelecki for indices proportionally separated from ambient dimension, uniformly for 2<=q<=infinity; with known upper estimates this yields the exact order.","assumptions_and_setting":"Gelfand numbers of embeddings between finite-dimensional Schatten classes in the quasi-Banach range 0<p<=1, target exponent q>=2.","unique_caveat":"The new lower bound has the stated proportional separation from ambient dimension; the all-index conclusion combines prior estimates.","evidence_for_ranking":"Resolves a named conjecture and completes the all-index asymptotic description together with earlier upper estimates.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.08448"]},
-    {"id":"paper-9","kind":"paper","title":"Exotic smooth structures on complex projective spaces","rank":9,"url":"https://arxiv.org/abs/2611.08406","arxiv_id":"2611.08406","arxiv_version":1,"published":"2026-11-05T18:13:47Z","categories":["math.AT"],"authors":["Yueshi Hou","Hana Jia Kong","Zhouli Xu"],"themes":["Geometry & topology"],"abstract":"The authors give evidence for the conjecture that every CP^n, n>3, admits an exotic smooth structure: the dimensions with such structures have natural density one, and 266 residue classes modulo 288 are covered.","claimed_result":"Proves density one of complex dimensions admitting an exotic smooth structure and identifies 266 congruence classes modulo 288, covering more than 92% of dimensions n>3.","assumptions_and_setting":"Smooth structures on the topological manifold underlying complex projective space for n>3; proof uses stable cohomotopy and height-two chromatic computations.","unique_caveat":"The conjecture for every dimension n>3 remains open; density one and the listed residue classes do not settle exceptional dimensions.","evidence_for_ranking":"A density-one theorem and large explicit congruence-class construction give a quantified partial classification.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.08406"]},
-    {"id":"paper-10","kind":"paper","title":"Two-row Schur times Schubert via parallel classes of positroid varieties","rank":10,"url":"https://arxiv.org/abs/2611.07351","arxiv_id":"2611.07351","arxiv_version":1,"published":"2026-11-05T02:39:18Z","categories":["math.CO","math.AG"],"authors":["Tianyi Yu"],"themes":["Geometry & topology","Combinatorics & discrete mathematics"],"abstract":"The author gives a positive combinatorial formula for Schubert structure constants when one indexing partition has two rows, using increasing chains and parallel classes of positroid varieties.","claimed_result":"The paper expresses the relevant two-row coefficients through Kostka numbers and combinatorial data from increasing chains and positroid parallel classes.","assumptions_and_setting":"Schubert structure constants for complete flag varieties, with the second partition index restricted to two rows.","unique_caveat":"The result addresses the two-row case, not a general positive formula for arbitrary indexing partitions.","evidence_for_ranking":"Resolves a specifically identified next case in positive Schubert-calculus formulas and is cross-listed in combinatorics and algebraic geometry.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.07351"]},
-    {"id":"paper-11","kind":"paper","title":"Bergman Kernel Zeros on Rational Hartogs Triangles","rank":11,"url":"https://arxiv.org/abs/2611.07480","arxiv_id":"2611.07480","arxiv_version":1,"published":"2026-11-05T05:38:43Z","categories":["math.CV"],"authors":["Guantie Deng","Qian Fu"],"themes":["Analysis & PDE"],"abstract":"For relatively prime positive integers m>n, the authors prove the Edholm-Mathew polynomial nonvanishing conjecture and characterize exactly when the associated rational Hartogs triangle has a zero-free Bergman kernel.","claimed_result":"Proves strict positivity of the associated trigonometric polynomial, deduces exactly m-n zeros in the punctured unit disc, and shows the Hartogs triangle has zero-free Bergman kernel precisely when its exponent is a reciprocal of a positive integer.","assumptions_and_setting":"Rational Hartogs triangles parameterized by relatively prime positive integers m>n; zeros are counted with multiplicity.","unique_caveat":"The criterion is for this rational family and does not establish a classification for more general domains.","evidence_for_ranking":"Resolves a named conjecture with a positivity bound and an iff classification for the rational family.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.07480"]},
-    {"id":"paper-12","kind":"paper","title":"An Accelerated Proximal Gradient Method for Bures-Wasserstein Space","rank":12,"url":"https://arxiv.org/abs/2611.08468","arxiv_id":"2611.08468","arxiv_version":1,"published":"2026-11-05T18:55:10Z","categories":["math.OC"],"authors":["Jakob Nylöf","Sloan Nietert","Julien Pallage","Giancarlo Ferrari-Trecate","Daniel Kuhn","John Lygeros"],"themes":["Optimization & control"],"abstract":"By lifting suitable composite optimization problems on Bures-Wasserstein space to Euclidean affine-transport maps, the authors obtain an accelerated method with O(k^-2) objective-gap rate.","claimed_result":"Under convex smooth/proximable affine-lift assumptions, BW-FISTA achieves O(k^-2); for Gaussian variational inference with a log-concave, log-smooth target, the authors improve the stated rate from O(k^-1) to O(k^-2).","assumptions_and_setting":"Composite optimization over Gaussian measures in Bures-Wasserstein space with convexity and affine-lift regularity; the variational-inference application assumes a log-concave, log-smooth target.","unique_caveat":"The guarantees depend on the stated lift and regularity conditions; numerical experiments reported in the abstract are synthetic.","evidence_for_ranking":"The arXiv comment reports acceptance to a NeurIPS 2026 workshop; the paper states a minimax-optimal rate for a defined class and an improved Gaussian variational-inference rate.","announcement_type":"new submission; announcement batch 2026-11-06","refs":["https://arxiv.org/abs/2611.08468"]},
-    {"id":"trending-themes","kind":"themes","title":"Trending Research Themes","rank":null,"url":"","text":["Two independent papers in the same batch state the sharp fixed-dimensional Tusnady discrepancy order; one extends to robust random samples and online thinning, using a different proof route.","The quadratic-extractor, rational-Turan, and exotic-CP^n papers give explicit parameter thresholds in different mathematical settings, not a shared technique.","The stochastic-heat and Turan papers link Lean formalizations (the latter conditional on two axioms); the K3 paper supplies numerical code/data. These are distinct proof artifacts, not interchangeable certification guarantees."],"refs":["https://arxiv.org/abs/2611.06998","https://arxiv.org/abs/2611.08455","https://arxiv.org/abs/2611.07266","https://arxiv.org/abs/2611.07290","https://arxiv.org/abs/2611.08406","https://arxiv.org/abs/2611.07310","https://arxiv.org/abs/2611.08356"]},
-    {"id":"open-problems","kind":"open_problems","title":"Open Problems and Research Directions","rank":null,"url":"","text":["Author-stated gap: online terminal discrepancy bounds for dimension k>=2 differ by log n; seek a matching algorithm or lower bound. [2611.08455]","Author-stated conjecture: every CP^n, n>3, admits an exotic smooth structure; uncovered residue classes remain. [2611.08406]","Author-stated discussion: the K3 paper leaves unexplained the apparent relation between its Artin-Tate/lattice argument and an independent proof. [2611.08356]","Author-stated boundary: single-hypergraph Turan exponents are realized for r in [0,1], while impossibility is shown for k>=4 and ceil(k/2)<r<=k-1; remaining ranges can be tested. [2611.07290]","Synthesis: test whether the two-row Schubert formula extends to three-row partitions. [2611.07351]"],"refs":["https://arxiv.org/abs/2611.08455","https://arxiv.org/abs/2611.08406","https://arxiv.org/abs/2611.08356","https://arxiv.org/abs/2611.07290","https://arxiv.org/abs/2611.07351"]},
-    {"id":"takeaway","kind":"takeaway","title":"Takeaway","rank":null,"url":"","text":"This batch's strongest stories are claimed sharp discrepancy bounds, a q=11 cutoff for pointless K3 surfaces, and major parameter refinements for structured extraction and hypergraph extremal numbers. Ordering is an inferred shortlist, not measured popularity; recent-paper citation evidence is immature and the preprints need expert review.","refs":["https://arxiv.org/list/math/recent"]}
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "Tusnády’s problem and online two-sample thinning",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.08455",
+      "arxiv_id": "2611.08455",
+      "arxiv_version": 1,
+      "published": "2026-11-05T18:47:43Z",
+      "categories": ["math.CO", "cs.DS", "math.PR"],
+      "authors": ["Yuhao Lei"],
+      "themes": ["Combinatorics & discrete mathematics", "Probability & statistics"],
+      "abstract": "The author proves the sharp fixed-dimension Tusnády discrepancy order, a robust lower bound for random samples, and minimax online-thinning rates for two samples from an unknown common distribution.",
+      "claimed_result": "The author proves box discrepancy is Θ_d((log N)^(d−1/2)) for every fixed d≥2. For online thinning with fixed k≥1 and expected deletion budget ρn, 0<ρ<2, minimax expected prefix discrepancy is Θ_(k,ρ)((log n)^(k+1/2)); in one dimension the terminal rate is Θ_ρ((log log n)^(3/2)).",
+      "assumptions_and_setting": "The discrepancy order holds with dimension fixed. Thinning concerns two independent size-n samples from the same unknown Borel distribution; keep/discard choices are online and irrevocable.",
+      "unique_caveat": "For k≥2, the paper's terminal upper and lower bounds still differ by a factor of log n.",
+      "evidence_for_ranking": "A dedicated Polymath Hub discussion is an independent attention signal; the result also links combinatorial discrepancy, algorithms, and probability and claims a sharp order.",
+      "announcement_type": "new submission; announcement batch 2026-11-06",
+      "refs": [
+        "https://arxiv.org/abs/2611.08455",
+        "https://pol.polaimath.com/science/21906-tusnadys-problem-and-online-two-sample-thinning/"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Pointless K3 surfaces over finite fields",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.08356",
+      "arxiv_id": "2611.08356",
+      "arxiv_version": 1,
+      "published": "2026-11-05T17:36:46Z",
+      "categories": ["math.NT", "math.AG"],
+      "authors": ["Asher Auel", "Philip Engel", "Kiran S. Kedlaya", "Sair Shaikh"],
+      "themes": ["Algebra & number theory", "Geometry & topology"],
+      "abstract": "The authors prove that a K3 surface without an F_q-rational point exists if and only if q≤11, using lattice bounds, the Artin–Tate formula, and embeddings into Niemeier lattices.",
+      "claimed_result": "The authors’ Theorem 1 establishes existence of pointless K3 surfaces over F_q exactly for prime powers q≤11, sharpening the general Weil-bound cutoff and improving a bound used in related threefold results.",
+      "assumptions_and_setting": "Smooth K3 surfaces over finite fields; the theorem concerns existence of at least one pointless surface for each field size.",
+      "unique_caveat": "The proof uses numerical linear-programming certificates and lattice computations; the authors provide code/data and describe a separate proof of the same cutoff.",
+      "evidence_for_ranking": "The exact cutoff is independently reached in another recent arXiv paper by Brandhorst and Takada using a different approach; this convergence and number-theory/algebraic-geometry link are checkable signals.",
+      "announcement_type": "new submission; announcement batch 2026-11-06",
+      "refs": [
+        "https://arxiv.org/abs/2611.08356",
+        "https://arxiv.org/abs/2611.06366",
+        "https://x.com/PQBW/status/2118761240629518730"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "On do Carmo’s Question: The Properly Embedded Case",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.08454",
+      "arxiv_id": "2611.08454",
+      "arxiv_version": 1,
+      "published": "2026-11-05T18:47:40Z",
+      "categories": ["math.DG", "math.AP"],
+      "authors": ["Gongping Niu"],
+      "themes": ["Geometry & topology", "Analysis & PDE"],
+      "abstract": "The author proves that every complete, noncompact, two-sided, properly embedded constant-mean-curvature hypersurface of finite Morse index in Euclidean space is minimal, in every dimension.",
+      "claimed_result": "The author's main theorem says the mean curvature must vanish under the stated hypotheses. The proof uses the inscribed-ball radius to build a weight, combines a weighted-volume estimate with stability outside a compact set, and derives a contradiction if mean curvature is nonzero.",
+      "assumptions_and_setting": "Smooth connected hypersurfaces without boundary in Euclidean space, arbitrary dimension; completeness, noncompactness, two-sidedness, proper embeddedness, and finite Morse index are required.",
+      "unique_caveat": "Proper embeddedness is essential to the presented argument; the broader finite-index question for general immersed hypersurfaces remains open.",
+      "evidence_for_ranking": "A differential-geometry papers account independently highlighted it; the result is cross-listed in geometry and geometric PDE and removes curvature and volume-growth bounds in its stated setting.",
+      "announcement_type": "new submission; announcement batch 2026-11-06",
+      "refs": [
+        "https://arxiv.org/abs/2611.08454",
+        "https://x.com/GeometryPapers/status/2118783855498760536"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Improved Index and Intersection bounds for Min-Max Geodesics",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.08450",
+      "arxiv_id": "2611.08450",
+      "arxiv_version": 1,
+      "published": "2026-11-05T18:44:58Z",
+      "categories": ["math.DG"],
+      "authors": ["Lorenzo Sarnataro", "Douglas Stryker", "Jared Marx-Kuo"],
+      "themes": ["Geometry & topology"],
+      "abstract": "The authors improve a bound for geodesics realizing the p-widths of a closed surface, showing that the sum of their Morse indices and a count of their intersections is at most p.",
+      "claimed_result": "Theorem 1.2 bounds the sum of the Morse indices plus the sum, over intersection vertices, of squared vertex orders by p, for a collection of closed immersed geodesics realizing the p-width of a closed Riemannian surface.",
+      "assumptions_and_setting": "Closed Riemannian surfaces and geodesic unions arising as p-width limits; the theorem also applies to the Allen–Cahn limit-varifold setting described by the authors.",
+      "unique_caveat": "The stated min-max application is for surfaces and geodesics realizing p-widths; it does not establish analogous bounds in higher ambient dimensions.",
+      "evidence_for_ranking": "Included in a public differential-geometry papers roundup and improves the authors’ previous bound; the proof combines Jacobi-field variations with localized variations near intersection vertices.",
+      "announcement_type": "new submission; announcement batch 2026-11-06",
+      "refs": [
+        "https://arxiv.org/abs/2611.08450",
+        "https://x.com/mathDGb/status/2118575565804392664"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "A stability order barrier and SSP bound for Runge–Kutta methods with non-negative coefficients: AI-assisted proofs",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.07981",
+      "arxiv_id": "2611.07981",
+      "arxiv_version": 1,
+      "published": "2026-11-05T13:12:03Z",
+      "categories": ["math.NA"],
+      "authors": ["Sigal Gottlieb", "Zachary Grant", "Lior Horesh", "Lajos Lóczi", "Avraham Shinnar", "Barry Trager"],
+      "themes": ["Numerical analysis & computation"],
+      "abstract": "The authors prove SSP-coefficient bounds for implicit Runge–Kutta methods with non-negative coefficients, settle a conjecture at order two, and show that third-order methods with non-negative A and b cannot be algebraically stable.",
+      "claimed_result": "For every s-stage implicit Runge–Kutta method of order at least two with non-negative coefficients, the SSP coefficient is at most 2s, sharply attained at order two; the paper also gives a bound for order at least three and rules out third-order algebraic stability when A and b are entrywise non-negative.",
+      "assumptions_and_setting": "Implicit Runge–Kutta methods with non-negative coefficients; the claims have the distinct order and coefficient hypotheses stated in the paper.",
+      "unique_caveat": "The authors report Lean verification for elementary components and reductions, not the entire paper as a formal proof; results are restricted to the specified non-negative-coefficient classes.",
+      "evidence_for_ranking": "A named conjecture is claimed settled; the paper documents a mathematical bridge from SSP conditions to phase-type distributions and reports partial Lean verification.",
+      "announcement_type": "new submission; announcement batch 2026-11-06",
+      "refs": ["https://arxiv.org/abs/2611.07981"]
+    },
+    {
+      "id": "trending-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": "",
+      "text": [
+        "Discrepancy and online algorithms: Lei proves the fixed-dimensional sharp Tusnády order and extends it to two-sample thinning; Wengiel’s separate recent preprint also claims the sharp order. The papers use different routes.",
+        "Finite-field K3 cutoff: Auel–Engel–Kedlaya–Shaikh and Brandhorst–Takada independently give the q≤11 cutoff with differing methods; this is concentrated convergence, not evidence of a wider shift.",
+        "Separate geometric-analysis results: Niu treats finite-index CMC hypersurfaces, while Sarnataro–Stryker–Marx-Kuo improve a min-max geodesic bound on surfaces; they do not establish a shared technique.",
+        "The Runge–Kutta paper’s AI-assisted proof process and partial Lean verification are an isolated signal, not evidence of a field-wide shift."
+      ],
+      "refs": [
+        "https://arxiv.org/abs/2611.08455",
+        "https://arxiv.org/abs/2611.06998",
+        "https://arxiv.org/abs/2611.08356",
+        "https://arxiv.org/abs/2611.06366",
+        "https://arxiv.org/abs/2611.08454",
+        "https://arxiv.org/abs/2611.08450",
+        "https://arxiv.org/abs/2611.07981"
+      ]
+    },
+    {
+      "id": "open-problems",
+      "kind": "open_problems",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": "",
+      "text": [
+        "Author-stated gap: terminal online-thinning bounds for dimensions k≥2 differ by log n; seek a matching terminal algorithm or lower bound. [2611.08455]",
+        "Author-stated open case: the finite-index result for general immersed CMC hypersurfaces would follow if an appropriate positive weight could be constructed without proper embeddedness. [2611.08454]",
+        "Author-stated connection: the K3 paper leaves unexplained the relation between its Artin–Tate/lattice proof and the independent Brandhorst–Takada proof. [2611.08356, 2611.06366]",
+        "Synthesis: test whether min-max index/vertex bounds extend from surfaces to higher-dimensional minimal hypersurfaces. [2611.08450]"
+      ],
+      "refs": [
+        "https://arxiv.org/abs/2611.08455",
+        "https://arxiv.org/abs/2611.08454",
+        "https://arxiv.org/abs/2611.08356",
+        "https://arxiv.org/abs/2611.06366",
+        "https://arxiv.org/abs/2611.08450"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": "",
+      "text": "The clearest attention signal is the sharp discrepancy result and its online-thinning extension; the other strong entries are theorem-led, with an independent two-paper convergence on the K3 cutoff. The ordering is a qualitative inference from discussion and mathematical signals, not measured readership, and these preprints’ claims still require expert scrutiny.",
+      "refs": ["https://arxiv.org/list/math/recent"]
+    }
   ]
 }

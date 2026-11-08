@@ -1,88 +1,124 @@
-# arXiv Mathematics — Friday, 6 November 2026
+# Mathematics — Friday, 6 November 2026 arXiv announcement batch — 8 notable recent papers
 
-## Headline
-
-Latest available daily announcement batch: Friday, 6 November 2026; 5 notable papers selected from 409 entries. The strongest pattern is precise theorem-making—sharp discrepancy rates, finite-field classification, and geometric bounds—with a smaller proof-method signal in AI-assisted numerical analysis. Spoken agenda: discrepancy and online thinning, K3 rational points, geometric rigidity, and proof verification. arXiv publishes no official trending chart, so this is an inferred order; the papers are very new and citation evidence is limited.
+The strongest pattern is sharp asymptotic bounds and classifications, led by two papers on Tusnády’s discrepancy problem; the agenda moves from combinatorics to high-dimensional percolation, stochastic PDE, arithmetic geometry, and conformal bootstrap. This is an inferred ordering of notable recent work, not an official arXiv trending chart; citation evidence is limited for papers this recent.
 
 ## Top papers (ranked)
 
-### 1. [Tusnády’s problem and online two-sample thinning](https://arxiv.org/abs/2611.08455)
-- **Abstract:** The author proves the sharp fixed-dimension Tusnády discrepancy order, a robust lower bound for random samples, and minimax online-thinning rates for two samples from an unknown common distribution.
+### 1. [Resolving Tusnády's Problem](https://arxiv.org/abs/2611.06998)
+- **Abstract:** For each fixed dimension $d\ge3$, the authors prove an anchored-box discrepancy lower bound of order $(\log N)^{d-1/2}$, which together with known upper and planar lower bounds yields the sharp order for all fixed $d\ge2$.
+- **Authors:** Nicola Wengiel
+- **arXiv:** `2611.06998v1` (published 2026-11-04 18:58:56 UTC; categories: `math.CA` (primary), `cs.CG`, `cs.DS`, `math.CO`)
+- **Evidence for ranking:** A concrete lower bound closes the dimension-at-least-three gap in a longstanding discrepancy problem; the result connects classical analysis, combinatorics, and computational geometry, and its conclusion is explicitly combined with Nikolov’s upper bound and Wei’s planar result.
+- **Claimed result:** The author proves $\Omega_d((\log N)^{d-1/2})$ for anchored boxes when fixed $d\ge3$; with the cited matching upper bound and planar lower bound, this gives $\Theta_d((\log N)^{d-1/2})$ for axis-parallel boxes in every fixed $d\ge2$ (arXiv abstract and Theorem 1.1).
+- **Assumptions and setting:** Worst-case combinatorial discrepancy of finite $N$-point sets in fixed-dimensional Euclidean space; constants may depend on dimension.
+- **Caveat:** The new lower-bound proof is for $d\ge3$; the two-dimensional lower bound and the matching upper bound are prior results used to complete the stated conclusion.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
+- **Themes:** Combinatorics & discrete mathematics
+
+### 2. [Tusnády's problem and online two-sample thinning](https://arxiv.org/abs/2611.08455)
+- **Abstract:** The author obtains the sharp fixed-dimensional order for Tusnády discrepancy, a robust deletion lower bound, and minimax bounds for online thinning of two samples, including a sharp one-dimensional separation between prefix and terminal objectives.
 - **Authors:** Yuhao Lei
-- **arXiv:** `2611.08455v1` (published 2026-11-05T18:47:43Z; categories: `math.CO` (primary), `cs.DS`, `math.PR`)
-- **Evidence for ranking:** A dedicated Polymath Hub discussion is an independent attention signal; the result also links combinatorial discrepancy, algorithms, and probability. The paper claims a sharp order and gives explicit online prefix/terminal guarantees.
-- **Claimed result:** The author proves that box discrepancy is \(\Theta_d((\log N)^{d-1/2})\) for every fixed \(d\ge2\). For online thinning with fixed \(k\ge1\) and expected deletion budget \(\rho n\), \(0<\rho<2\), the minimax expected prefix discrepancy is \(\Theta_{k,\rho}((\log n)^{k+1/2})\); in one dimension the terminal rate is \(\Theta_\rho((\log\log n)^{3/2})\).
-- **Assumptions and setting:** The discrepancy order holds with dimension fixed. Thinning concerns two independent size-\(n\) samples from the same unknown Borel distribution; keep/discard choices are online and irrevocable.
-- **Caveat:** For \(k\ge2\), the paper's terminal upper and lower bounds still differ by a factor of \(\log n\).
-- **Announcement type:** new submission, announcement-batch 2026-11-06
+- **arXiv:** `2611.08455v1` (published 2026-11-05 18:47:43 UTC; categories: `math.CO` (primary), `cs.DS`, `math.PR`)
+- **Evidence for ranking:** It combines the sharp discrepancy order with a high-probability robustness statement and a separate online sampling application; the cross-listing spans combinatorics, algorithms, and probability.
+- **Claimed result:** The author proves the $\Theta_d((\log N)^{d-1/2})$ discrepancy order for fixed $d\ge2$, and for online thinning with fixed $k$ and expected deletion budget $\rho n$, $0<\rho<2$, obtains minimax expected prefix discrepancy $\Theta_{k,\rho}((\log n)^{k+1/2})$; for $k=1$, terminal discrepancy is $\Theta_\rho((\log\log n)^{3/2})$ (arXiv abstract).
+- **Assumptions and setting:** Two independent size-$n$ samples from an unknown common distribution; observations must be kept or deleted on arrival, with fixed dimension and stated expected deletion budget. The discrepancy result is for fixed dimension and axis-parallel boxes.
+- **Caveat:** For online terminal discrepancy in dimensions $k\ge2$, the paper reports bounds still differing by a factor of $\log n$.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
 - **Themes:** Combinatorics & discrete mathematics; Probability & statistics
 
-### 2. [Pointless K3 surfaces over finite fields](https://arxiv.org/abs/2611.08356)
-- **Abstract:** The authors prove that a K3 surface without an \(\mathbb F_q\)-rational point exists if and only if \(q\le11\), using lattice bounds, the Artin–Tate formula, and embeddings into Niemeier lattices.
+### 3. [On the critical value of void percolation in high dimensions](https://arxiv.org/abs/2611.07196)
+- **Abstract:** For the random Lorentz gas, the authors prove that the void-percolation threshold grows linearly with dimension, with explicit sufficiently-large-dimension bounds between $d/2$ and $5d$.
+- **Authors:** Patrick Charbonneau, Marcus Michelen
+- **arXiv:** `2611.07196v1` (published 2026-11-04 22:37:38 UTC; categories: `cond-mat.dis-nn` (primary), `cond-mat.stat-mech`, `math.PR`)
+- **Evidence for ranking:** The theorem determines the scaling where prior bounds left even the order unresolved; probability and disordered-systems cross-listing reflects the mathematical-physics setting.
+- **Claimed result:** The authors prove $\Phi_{\rm p}(d)=\Theta(d)$ and, for all sufficiently large $d$, $\tfrac12 d\le\Phi_{\rm p}(d)\le5d$ (arXiv abstract; introduction and main results).
+- **Assumptions and setting:** A point tracer moves among spherical obstacles centered on a Poisson point process in $\mathbb{R}^d$; the threshold concerns loss of percolation of the vacant region as obstacle density increases.
+- **Caveat:** The constants are not sharp and the bounds apply only for sufficiently large $d$; the exact leading coefficient is not determined.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
+- **Themes:** Probability & statistics; Mathematical physics
+
+### 4. [Pointless K3 surfaces over finite fields](https://arxiv.org/abs/2611.08356)
+- **Abstract:** The authors prove that a K3 surface with no rational point over $\mathbb{F}_q$ exists exactly when the finite-field size satisfies $q\le11$, using lattice bounds and the Artin–Tate formula.
 - **Authors:** Asher Auel, Philip Engel, Kiran S. Kedlaya, Sair Shaikh
-- **arXiv:** `2611.08356v1` (published 2026-11-05T17:36:46Z; categories: `math.NT` (primary), `math.AG`)
-- **Evidence for ranking:** The exact cutoff is independently reached in another recent arXiv paper, by Brandhorst and Takada, using a different approach; this convergence and the number-theory/algebraic-geometry link are checkable signals. A public mathematics account also highlighted the submission. This paper itself notes that the relation between the two proofs is not yet understood.
-- **Claimed result:** The authors’ Theorem 1 establishes existence of pointless K3 surfaces over \(\mathbb F_q\) exactly for prime powers \(q\le11\), sharpening the general Weil-bound cutoff and improving a bound used in related threefold results.
-- **Assumptions and setting:** Smooth K3 surfaces over finite fields; the theorem concerns existence of at least one pointless surface for each field size.
-- **Caveat:** The proof uses numerical linear-programming certificates and lattice computations; the authors provide code/data and describe a separate proof of the same cutoff.
-- **Announcement type:** new submission, announcement-batch 2026-11-06
+- **arXiv:** `2611.08356v1` (published 2026-11-05 17:36:46 UTC; categories: `math.NT` (primary), `math.AG`)
+- **Evidence for ranking:** A sharp if-and-only-if classification with a concrete boundary at $q=11$; the argument bridges arithmetic geometry and lattice optimization, and the authors note another proof of the same classification.
+- **Claimed result:** The authors prove that pointless K3 surfaces over $\mathbb{F}_q$ exist if and only if $q\le11$ (arXiv abstract and Theorem 1).
+- **Assumptions and setting:** Smooth K3 surfaces over finite fields, with $q$ a prime power; “pointless” means having no $\mathbb{F}_q$-rational points.
+- **Caveat:** This classifies rational-point existence for K3 surfaces, not for arbitrary varieties; the paper notes that the relationship between its lattice argument and the other proof remains unexplored.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
 - **Themes:** Algebra & number theory; Geometry & topology
 
-### 3. [On do Carmo’s Question: The Properly Embedded Case](https://arxiv.org/abs/2611.08454)
-- **Abstract:** The author proves that every complete, noncompact, two-sided, properly embedded constant-mean-curvature hypersurface of finite Morse index in Euclidean space is minimal, in every dimension.
-- **Authors:** Gongping Niu
-- **arXiv:** `2611.08454v1` (published 2026-11-05T18:47:40Z; categories: `math.DG` (primary), `math.AP`)
-- **Evidence for ranking:** A differential-geometry papers account independently highlighted it, and the result connects differential geometry with geometric PDE. The claimed theorem removes curvature and volume-growth bounds in the properly embedded finite-index case.
-- **Claimed result:** The author’s main theorem says the mean curvature must vanish under the stated hypotheses. The proof uses the inscribed-ball radius to build a weight, combines a weighted-volume estimate with stability outside a compact set, and derives a contradiction if the mean curvature is nonzero.
-- **Assumptions and setting:** Smooth connected hypersurfaces without boundary in Euclidean space, arbitrary dimension; completeness, noncompactness, two-sidedness, proper embeddedness, and finite Morse index are required.
-- **Caveat:** Proper embeddedness is essential to the presented argument; the broader finite-index question for general immersed hypersurfaces remains open.
-- **Announcement type:** new submission, announcement-batch 2026-11-06
-- **Themes:** Geometry & topology; Analysis & PDE
+### 5. [Weak uniqueness for the stochastic heat equation with nondegenerate diffusion: the full Hölder regime](https://arxiv.org/abs/2611.07310)
+- **Abstract:** For the scalar stochastic heat equation on the one-dimensional torus, the author proves weak well-posedness for uniformly nondegenerate diffusion coefficients of every positive Hölder order and gives extensions with measurable drift.
+- **Authors:** Yi Han
+- **arXiv:** `2611.07310v1` (published 2026-11-05 01:55:58 UTC; categories: `math.PR` (primary))
+- **Evidence for ranking:** It resolves the stated weak-uniqueness question across the full positive Hölder range and includes an associated Lean formalization; it is a substantial probability result with an explicit stochastic-PDE setting.
+- **Claimed result:** For bounded uniformly nondegenerate Hölder diffusion, the author proves existence and uniqueness in law for the scalar equation at every positive Hölder exponent; a second theorem treats measurable drifts of linear growth under additional alternatives (arXiv abstract and Theorems 1.1–1.2).
+- **Assumptions and setting:** One-dimensional torus, scalar equation driven by space-time white noise, deterministic initial data in $L^2$ for the bounded-diffusion theorem, and diffusion bounded above and away from zero with positive Hölder regularity.
+- **Caveat:** The theorem is weak uniqueness in this scalar model, not pathwise uniqueness; the unbounded-diffusion extension uses bounded initial data, a restriction the author identifies as a possible future relaxation.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
+- **Themes:** Probability & statistics; Analysis & PDE
 
-### 4. [Improved Index and Intersection bounds for Min-Max Geodesics](https://arxiv.org/abs/2611.08450)
-- **Abstract:** The authors improve a bound for geodesics realizing the \(p\)-widths of a closed surface, showing that the sum of their Morse indices and a count of their intersections is at most \(p\).
-- **Authors:** Lorenzo Sarnataro, Douglas Stryker, Jared Marx-Kuo
-- **arXiv:** `2611.08450v1` (published 2026-11-05T18:44:58Z; categories: `math.DG` (primary))
-- **Evidence for ranking:** It was included in a public differential-geometry papers roundup and gives a concrete improvement over the authors’ previous bound. Its method combines geodesic Jacobi-field variations with localized variations near intersection vertices.
-- **Claimed result:** Theorem 1.2 bounds the sum of the Morse indices plus the sum, over intersection vertices, of squared vertex orders by \(p\), for a collection of closed immersed geodesics realizing the \(p\)-width of a closed Riemannian surface.
-- **Assumptions and setting:** Closed Riemannian surfaces and geodesic unions arising as \(p\)-width limits; the theorem also applies to the Allen–Cahn limit-varifold setting described by the authors.
-- **Caveat:** The stated min-max application is for surfaces and geodesics realizing \(p\)-widths; it does not establish analogous bounds in higher ambient dimensions.
-- **Announcement type:** new submission, announcement-batch 2026-11-06
+### 6. [Exotic smooth structures on complex projective spaces](https://arxiv.org/abs/2611.08406)
+- **Abstract:** The authors show that dimensions admitting exotic smooth structures on $\mathbb{CP}^n$ have natural density one and identify 266 residue classes modulo 288, covering over 92% of dimensions, where such structures exist for $n>3$.
+- **Authors:** Yueshi Hou, Hana Jia Kong, Zhouli Xu
+- **arXiv:** `2611.08406v1` (published 2026-11-05 18:13:47 UTC; categories: `math.AT` (primary))
+- **Evidence for ranking:** It gives both an asymptotic density theorem and an explicit modular classification, and links smoothing theory to stable cohomotopy and chromatic homotopy theory.
+- **Claimed result:** The authors prove density one of dimensions admitting an exotic smoothing and exhibit 266 congruence classes modulo 288, covering $266/288>92\%$, for which $\mathbb{CP}^n$ has an exotic smooth structure when $n>3$ (arXiv abstract and Theorems B–C).
+- **Assumptions and setting:** Smooth manifolds homeomorphic but not diffeomorphic to complex projective space; the explicit residue-class result concerns complex dimensions $n\ge4$.
+- **Caveat:** The conjecture that every $n\ge4$ works remains open; density one and more than 92% residue coverage do not settle the remaining dimensions.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
 - **Themes:** Geometry & topology
 
-### 5. [A stability order barrier and SSP bound for Runge–Kutta methods with non-negative coefficients: AI-assisted proofs](https://arxiv.org/abs/2611.07981)
-- **Abstract:** The authors prove SSP-coefficient bounds for implicit Runge–Kutta methods with non-negative coefficients, settle a conjecture at order two, and show that third-order methods with non-negative \(A\) and \(b\) cannot be algebraically stable.
-- **Authors:** Sigal Gottlieb, Zachary Grant, Lior Horesh, Lajos Lóczi, Avraham Shinnar, Barry Trager
-- **arXiv:** `2611.07981v1` (published 2026-11-05T13:12:03Z; categories: `math.NA` (primary))
-- **Evidence for ranking:** A named conjecture is claimed settled, and the paper documents an unusual mathematical bridge from SSP conditions to phase-type distributions. Its introduction says elementary proof components and reductions were machine-verified in Lean 4; that is a proof artifact, not a measure of popularity.
-- **Claimed result:** For every \(s\)-stage implicit Runge–Kutta method of order at least two with non-negative coefficients, the SSP coefficient is at most \(2s\), sharply attained at order two; the paper also gives a bound for order at least three and rules out third-order algebraic stability when \(A\) and \(b\) are entrywise non-negative.
-- **Assumptions and setting:** Implicit Runge–Kutta methods with non-negative coefficients; the three claims have the distinct order and coefficient hypotheses stated above.
-- **Caveat:** The authors report Lean verification for elementary components and reductions, not the entire paper as a formal proof; the results are restricted to the specified non-negative-coefficient classes.
-- **Announcement type:** new submission, announcement-batch 2026-11-06
-- **Themes:** Numerical analysis & computation
+### 7. [Conformal Bootstrap Unblocked](https://arxiv.org/abs/2611.07004)
+- **Abstract:** The authors formulate a conformal-bootstrap hierarchy using reflection-positive Gram matrices, conformal symmetry, and crossing, without taking the operator product expansion or conformal blocks as inputs, and demonstrate bounds in one to three dimensions.
+- **Authors:** Li-Yuan Chiang, David Poland
+- **arXiv:** `2611.07004v1` (published 2026-11-04 19:00:01 UTC; categories: `hep-th` (primary), `cond-mat.stat-mech`, `hep-lat`, `math-ph`)
+- **Evidence for ranking:** It proposes a distinct mathematical-physics method and reports recovery of generalized-free-field behavior and characteristic two- and three-dimensional Ising kinks; the mathematical-physics cross-list makes the archive inclusion explicit.
+- **Claimed result:** The authors construct a hierarchy of semidefinite programs from Gram-matrix positivity and show that it yields correlator and spectral bounds, including the stated Ising features, without explicitly using conformal blocks (arXiv abstract and Sections 2–5).
+- **Assumptions and setting:** Conformal field theory constraints from conformal symmetry, reflection positivity, crossing, and any added spectral assumptions; demonstrations cover dimensions one through three.
+- **Caveat:** The authors report rapidly growing Gram-matrix sizes and leave open whether the hierarchy becomes equivalent to the conventional conformal-block bootstrap at infinite truncation.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
+- **Themes:** Mathematical physics
+
+### 8. [Gradient higher integrability for a general class of degenerate parabolic double phase systems](https://arxiv.org/abs/2611.08291)
+- **Abstract:** The authors prove local higher-integrability estimates for weak solutions of generalized double-phase parabolic systems, under structural conditions on the growth functions and the continuity modulus of the phase coefficient.
+- **Authors:** Bogi Kim, Jehan Oh, Abhrojyoti Sen
+- **arXiv:** `2611.08291v1` (published 2026-11-05 16:54:36 UTC; categories: `math.AP` (primary))
+- **Evidence for ranking:** The result extends power-growth gap conditions to general Young-function growth and continuity moduli, with a 54-page argument combining intrinsic stopping times and reverse-Hölder estimates.
+- **Claimed result:** For solutions in $L^\infty(0,T;L^s)$, $2\le s<\infty$, the authors establish $\Psi(\cdot,|Du|)\in L^{1+\varepsilon}_{\rm loc}$ for some $\varepsilon>0$ under their stated modulus-to-growth condition (arXiv abstract).
+- **Assumptions and setting:** Degenerate parabolic systems with $\Psi(z,\kappa)=G(\kappa)+a(z)H(\kappa)$, Young functions $G,H$ satisfying structural assumptions, nonnegative $a$ with concave parabolic modulus $\omega$, and the explicit limsup condition given in the abstract.
+- **Caveat:** The higher-integrability conclusion is conditional on the growth and modulus hypotheses; it is not a general estimate for all degenerate parabolic systems.
+- **Announcement type:** new submission, announcement-batch Friday 6 November 2026
+- **Themes:** Analysis & PDE
 
 ## Trending Research Themes
 
-- **Discrepancy meets online algorithms:** Lei’s paper proves the fixed-dimensional sharp Tusnády order and extends it to two-sample thinning. A separate recent preprint by Wengiel also claims the sharp discrepancy order, so there is a concentrated burst of work on this problem; the papers use different routes, not one shared method. [Lei](https://arxiv.org/abs/2611.08455); [Wengiel](https://arxiv.org/abs/2611.06998).
-- **A finite-field K3 cutoff, independently established:** Auel–Engel–Kedlaya–Shaikh and Brandhorst–Takada both give the cutoff \(q\le11\) for pointless K3 surfaces, with differing methods. The first paper explicitly leaves the relationship between the approaches open; this is a focused convergence, not evidence of a wider shift in arithmetic geometry. [Auel et al.](https://arxiv.org/abs/2611.08356); [Brandhorst–Takada](https://arxiv.org/abs/2611.06366).
-- **Two separate geometric-analysis results:** Niu treats finite-index CMC hypersurfaces, while Sarnataro–Stryker–Marx-Kuo improve a min-max geodesic bound on surfaces. Both sharpen geometric structure statements, but they address distinct settings and do not establish a shared technique. [Niu](https://arxiv.org/abs/2611.08454); [Sarnataro et al.](https://arxiv.org/abs/2611.08450).
-- **Proof methods as a single-paper signal:** The Runge–Kutta paper connects SSP theory with phase-type distributions and reports partial Lean verification. This is an interesting isolated signal, not enough to infer a field-wide shift toward AI-assisted proofs. [Gottlieb et al.](https://arxiv.org/abs/2611.07981).
+- **Discrepancy meets online sampling:** The two Tusnády papers (2611.06998, 2611.08455) share the sharp fixed-dimensional order $\Theta_d((\log N)^{d-1/2})$. The first supplies the new $d\ge3$ lower bound used with prior results; the second adds robustness to deleting a small fraction of a sample and online thinning guarantees.
+- **Sharp quantitative thresholds across different models:** Void percolation (2611.07196) pins down linear-in-$d$ scaling after the order itself was unknown, while the K3 classification (2611.08356) turns a rational-point question into an exact finite-field cutoff. These are separate techniques, but both replace broad prior uncertainty with explicit boundaries.
+- **Geometry translated into algebraic invariants:** The K3 result (2611.08356) uses zeta-function and lattice constraints; exotic smoothings of $\mathbb{CP}^n$ (2611.08406) use stable cohomotopy and chromatic homotopy. Both connect geometric existence questions to computable algebraic structures, without implying a shared proof method.
+- **A direct-positivity route for conformal bootstrap:** Chiang and Poland (2611.07004) build semidefinite constraints from Gram positivity and crossing rather than starting from conformal blocks. This is an isolated methodological signal in this batch, not evidence of a field-wide shift.
+- **Regularity and uniqueness remain hypothesis-sensitive:** The stochastic heat result (2611.07310) and double-phase estimates (2611.08291) establish progress under carefully stated coefficient and growth assumptions; their settings and proof techniques differ, so the common pattern is conditional sharpness rather than a common method.
 
 ## Open Problems and Research Directions
 
-- **Author-stated gap:** In online thinning for dimensions \(k\ge2\), terminal discrepancy bounds differ by a factor of \(\log n\). A direct next test is whether an improved terminal algorithm or a stronger lower bound closes the gap without changing the already sharp prefix rate. [Lei](https://arxiv.org/abs/2611.08455).
-- **Author-stated open case:** Niu notes that the finite-index result for general immersed CMC hypersurfaces would follow if one could construct an appropriate positive weight without proper embeddedness. Constructing such a weight, or finding an obstruction to it, would address the larger version of do Carmo’s question. [Niu](https://arxiv.org/abs/2611.08454).
-- **Author-stated connection:** The K3 paper says the relation between its Artin–Tate/lattice proof and the independent Brandhorst–Takada proof is not worked out. Comparing their intermediate lattice constraints could clarify which parts yield reusable rational-point bounds. [Auel et al.](https://arxiv.org/abs/2611.08356); [Brandhorst–Takada](https://arxiv.org/abs/2611.06366).
-- **Research direction (synthesis):** The min-max index/vertex estimate is formulated on surfaces; testing whether analogous combined bounds hold for higher-dimensional minimal hypersurfaces would probe the role of vertex desingularization and Jacobi-field variations. This is a proposed extension, not a claim of the paper. [Sarnataro et al.](https://arxiv.org/abs/2611.08450).
+- **Author-stated — Tusnády online terminal bounds:** For dimensions $k\ge2$, the terminal-discrepancy bounds in 2611.08455 still differ by $\log n$. Closing this factor, or finding an example showing it is necessary, directly tests the remaining gap.
+- **Synthesis — dimension dependence in discrepancy:** The results in 2611.06998 and 2611.08455 are for fixed dimension with dimension-dependent constants. Tracking those constants as $d$ grows could clarify whether any useful uniform regime is available.
+- **Synthesis — void-percolation constant:** The bounds in 2611.07196 leave a wide interval between $d/2$ and $5d$. Sharpening it or establishing whether $\Phi_{\rm p}(d)/d$ converges would test the paper’s numerical comparison; the reported numerical value is not a proof of a limit.
+- **Author-stated — K3 proof comparison:** The authors of 2611.08356 note that the relationship between their Artin–Tate/lattice approach and another proof based on Frobenius actions has not been worked out. Comparing the two may simplify the remaining lattice constraints.
+- **Author-stated — exotic projective spaces:** The conjecture in 2611.08406 that every $\mathbb{CP}^n$ for $n\ge4$ admits an exotic smoothing remains open. The unclassified residue dimensions are a concrete target for extending the stable-homotopy calculations.
+- **Author-stated — conformal bootstrap hierarchy:** Chiang and Poland (2611.07004) identify both numerical efficiency and equivalence with the conventional conformal-block bootstrap in the infinite-truncation limit as unresolved. Testing sparsity-aware Gram matrices and more effective probe states is a direct follow-up.
+- **Author-stated — unbounded diffusion at lower initial regularity:** The discussion in 2611.07310 suggests that a finer near-zero-time argument might replace the $L^\infty$ initial-data condition in its unbounded-diffusion theorem with $L^2$ data.
 
 ## Takeaway
 
-The clearest attention signal is the sharp discrepancy result and its online-thinning extension; the other strong entries are theorem-led, with an independent two-paper convergence on the K3 cutoff. The ordering is a qualitative inference from discussion and mathematical signals, not measured readership, and these preprints’ claims still require expert scrutiny.
+This batch’s clearest headline is mathematical sharpening: a long-standing discrepancy order is settled in higher dimensions, and a high-dimensional percolation threshold is shown to be linear. Alongside those are exact arithmetic-geometric classifications and method advances in stochastic PDE and conformal bootstrap; because attention metrics are sparse for such recent submissions, this ordering should be read as evidence-informed notability, not measured popularity.
 
 ## Method and sources
 
-- **Window:** Daily, 2026-11-06 through 2026-11-06; the latest batch available on Saturday 2026-11-07 was Friday’s announcement batch, so this is a prior batch. Snapshot time: 2026-11-07 17:21:44 UTC.
-- **Coverage:** Traversed the complete Friday Mathematics recent-listing block (409 entries). Scope is the arXiv `math` archive, retaining neighboring-category cross-lists only for mathematics papers. The five selected entries are all new submissions; the report is a selective digest, not a comprehensive survey.
-- **Ranking:** Labeled “notable recent papers” in substance because the new batch is too young for a useful citation-momentum ranking. Relative order weighs independent discussion or convergence first, then concrete theorem/conjecture resolution, cross-subfield relevance, and proof artifacts; no popularity inference is drawn from arXiv order. Semantic Scholar citation data was not usable for this snapshot (the Graph API returned HTTP 429), so no citation totals are used.
-- **Reading and verification:** Each selected arXiv abstract page was checked for version, authors, categories, and submission timestamp. The introductions and main-result statements were inspected for the leading papers; the do Carmo introduction was extracted from the arXiv PDF. Proofs were not independently verified.
-- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); selected arXiv abstract pages linked above; [Polymath Hub discussion of Tusnády’s problem](https://pol.polaimath.com/science/21906-tusnadys-problem-and-online-two-sample-thinning/); [K3 discussion mention](https://x.com/PQBW/status/2118761240629518730); [differential-geometry paper roundup](https://x.com/mathDGb/status/2118575565804392664); [do Carmo discussion mention](https://x.com/GeometryPapers/status/2118783855498760536).
+- **Window:** daily announcement batch, 2026-11-06 through 2026-11-06 UTC. Sunday 2026-11-08 had no newer batch in the listing, so Friday 6 November is the selected prior batch.
+- **Snapshot:** 2026-11-08 01:25:21 UTC.
+- **Coverage:** the full Mathematics recent listing for Friday 6 November showed 409 of 409 entries. Titles and subject categories were traversed across the complete batch; the eight retained abstracts and metadata were checked against their arXiv abstract pages and API records. For the top three, the arXiv HTML paper text was inspected for introductions and main-result statements; no proof was independently verified.
+- **Ranking:** inferred from concrete mathematical claims, cross-listing, explicitly described prior gaps, and identifiable connections or extensions. The ordering is not an arXiv popularity ranking. Independent discussion signals were sparse; searches mostly returned primary records and related prior work.
+- **Attention data:** citation and influential-citation evidence could not be obtained from Semantic Scholar in this run. The papers are only a few days old, so this report uses “notable recent papers” rather than implying measured popularity.
+- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent?skip=0&show=500); the linked arXiv abstract pages in each entry; top-three full texts at [2611.06998](https://arxiv.org/html/2611.06998v1), [2611.07196](https://arxiv.org/html/2611.07196v1), and [2611.07004](https://arxiv.org/html/2611.07004v1); and targeted web searches for independent discussion and contextual checks.

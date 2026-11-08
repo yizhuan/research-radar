@@ -5,16 +5,16 @@
   "date": "2026-11-06",
   "window_start": "2026-11-06",
   "window_end": "2026-11-06",
-  "snapshot_utc": "2026-11-07T17:12:39Z",
+  "snapshot_utc": "2026-11-08T01:19:00Z",
   "announcement_batch_date": "2026-11-06",
   "announcement_release_utc": null,
   "used_prior_batch": true,
   "title": "Daily arXiv Biology and Biomedicine — 2026-11-06",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-06.md",
-  "entry_count": 5,
+  "entry_count": 7,
   "entry_noun": "papers",
   "candidate_pool_count": 15,
-  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity ranking, and arXiv coverage of biomedical research is incomplete. Much experimental and clinical biology preprint research appears on bioRxiv or medRxiv.",
+  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity ranking, and arXiv’s biomedical coverage is incomplete. Many clinical and experimental biology preprints appear on bioRxiv or medRxiv.",
   "sections": [
     {
       "id": "00-headline",
@@ -22,9 +22,9 @@
       "title": "Headline",
       "rank": 0,
       "url": null,
-      "summary": "Friday’s 6 November 2026 arXiv biology/biomedicine batch yielded five notable papers from 15 eligible announcement records (14 new submissions and one revision). The strongest pattern is more rigorous evaluation of biological AI, alongside agent-assisted drug discovery with author-reported wet-lab follow-up. Spoken agenda: drug discovery, protein design, single-cell genomics, docking, and intracellular reaction networks.",
-      "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity ranking, and arXiv coverage of biomedical research is incomplete.",
-      "refs": []
+      "summary": "Friday’s 6 November 2026 arXiv biology/biomedicine batch yielded seven notable papers from 15 eligible announcement records (14 new submissions and one revision). The dominant pattern is biological AI being evaluated against harder benchmarks, with one drug-discovery system reporting human-run experimental follow-up. Spoken agenda: agent-assisted drug discovery, protein design, single-cell genomics, docking, colorectal-risk prediction, MRI harmonization, and intracellular reaction networks.",
+      "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity ranking, and arXiv’s biomedical coverage is incomplete.",
+      "refs": ["https://arxiv.org/list/q-bio/new"]
     },
     {
       "id": "01-pharmagents2-towards-autonomous-end-to-end-drug-discovery",
@@ -38,14 +38,13 @@
       "categories": ["cs.AI", "q-bio.QM"],
       "authors": ["Haichuan Tan", "Bowen Gao", "Tao Huang", "Jiaxin Tan", "Xin Hong", "Baoguo Yao", "Yifei Wang", "Zhichao Deng", "Hanji Du", "Dapeng Jiang", "Yiheng Li", "Weiwei Ma", "Xin Ma", "Yuqi Shi", "Zixiang Wang", "Kelin Wu", "Tianxiang Wu", "Wenxuan Xie", "Jie Zang", "Huiyu Zhang", "Mojia Zhang", "Yuying Zhang", "Ya-Qin Zhang", "Wei-Ying Ma", "Yanyan Lan"],
       "themes": ["Biomedical & translational medicine", "Biochemistry & proteins"],
-      "abstract": "PharmAgents2 combines literature-derived decision knowledge and parallel agent exploration to produce drug-discovery candidates, with the authors reporting follow-up experiments for three discovery tasks.",
-      "claimed_contribution": "The authors report a 121-question benchmark and three research scenarios. They say 63 purchased compounds yielded an LpxH hit with enzyme-inhibition and biophysical binding evidence; 34 candidates were tested in two JAK1-related cytokine-signalling assays; and SPR supported binding of a proposed secondary target.",
-      "unique_caveat": "The authors say the LpxH binding site/mechanism and JAK1 selectivity/binding modes still need validation; these assays do not establish therapeutic efficacy or safety. The system-level study also does not isolate which agent component caused each outcome.",
+      "abstract": "PharmAgents2 combines extracted scientific decision knowledge with parallel agents for drug-discovery planning; its authors report three candidate-generation studies followed by human-executed experiments.",
+      "claimed_contribution": "The authors report a 121-question benchmark and three end-to-end tasks. Follow-up included 63 purchased LpxH candidates, 34 JAK1 candidates tested in cytokine-signalling assays, and SPR evidence supporting binding of a proposed secondary target for another molecule.",
+      "unique_caveat": "Experiments were executed by human researchers, not autonomously. The proposed LpxH site and mechanism remain under validation; the findings do not establish therapeutic efficacy, safety, or clinical utility.",
       "announcement_type": "new submission",
-      "evidence_for_ranking": "Strong direct molecular-medicine relevance and author-reported biochemical, cellular, and binding-assay follow-up; these are relevance/contribution signals, not popularity measures.",
-      "journal_ref": "",
-      "comment": "30 pages, 5 figures; includes references, appendices, and the NeurIPS checklist",
-      "refs": ["https://arxiv.org/abs/2611.07653"]
+      "announcement_batch_date": "2026-11-06",
+      "evidence_for_ranking": "Direct drug-discovery relevance and author-reported biochemical, cellular, and binding-assay follow-up in three studies; relevance and contribution signals, not popularity measures.",
+      "refs": ["https://arxiv.org/abs/2611.07653", "https://arxiv.org/html/2611.07653"]
     },
     {
       "id": "02-static-recovery-is-not-dynamic-stability-dynamics-aware-benchmarking-of-protein-motif-scaffolding",
@@ -59,14 +58,14 @@
       "categories": ["cs.LG", "q-bio.BM"],
       "authors": ["Emile de Bruyn", "Moritz Schäffler", "Jannik Schneider", "Sebastian R. Schmidt", "Chanwoong Hwang", "Aleena Siji", "Utkarsh Upadhyay", "Stefan Bauer", "Alexander Schug", "Stefan Kesselheim", "Artur Yakimovich", "Alina Bazarova"],
       "themes": ["Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "BILBY adds a larger PROSITE-derived motif-scaffolding benchmark and molecular-dynamics checks to test whether static protein-motif recovery corresponds to dynamical stability.",
-      "claimed_contribution": "The authors introduce BILBY-PRO (220 cases from 174 PROSITE motif-pattern entries) and BILBY-MD. Among 55 static successes assessed with MD, 31 met their MD-supported criterion and 8 passed all checks; they conclude static refolding alone does not establish scaffold dynamical fidelity.",
-      "unique_caveat": "MD support thresholds are heuristic, and 200 ns design trajectories may miss slower instabilities. BILBY-MD was applied to designs from the original MotifBench panel, not exhaustively to all BILBY-PRO cases; this is computational, not experimental functional validation.",
+      "abstract": "BILBY adds a PROSITE-derived motif-scaffolding benchmark and molecular-dynamics checks to test whether static protein-motif recovery corresponds to dynamical stability.",
+      "claimed_contribution": "The authors introduce BILBY-PRO with 220 cases from 174 PROSITE motif-pattern entries and BILBY-MD. Of 55 statically solved pairs assessed with MD, 31 met the MD-supported criterion and 8 passed all checks.",
+      "unique_caveat": "The MD-support thresholds are heuristic and 200 ns design trajectories may miss slower instabilities; the evaluation is computational, not experimental functional validation.",
       "announcement_type": "new submission",
-      "evidence_for_ranking": "Direct protein-design relevance; accepted at NeurIPS 2026 (Evaluations & Datasets Track). The authors report a 220-case benchmark and a dynamics evaluation on 55 statically solved pairs.",
-      "journal_ref": "",
-      "comment": "Accepted at NeurIPS 2026 (Evaluations & Datasets Track). 23 pages, 10 figures, including supplementary material.",
-      "refs": ["https://arxiv.org/abs/2611.07723", "https://nips.cc/virtual/2026/poster/139733"]
+      "announcement_batch_date": "2026-11-06",
+      "evidence_for_ranking": "Accepted at NeurIPS 2026 (Evaluations & Datasets Track); reports a 220-case benchmark and dynamics evaluation on 55 statically solved model–problem pairs.",
+      "comment": "Accepted at NeurIPS 2026 (Evaluations & Datasets Track).",
+      "refs": ["https://arxiv.org/abs/2611.07723", "https://arxiv.org/html/2611.07723"]
     },
     {
       "id": "03-muss-a-multi-scale-and-sequence-based-model-for-single-cell-gene-regulation",
@@ -80,14 +79,14 @@
       "categories": ["cs.AI", "q-bio.GN"],
       "authors": ["Kangjie Zheng", "Amirhossein Vahidi", "Liying Jin", "Joseph Clarke", "Vijaya Baskar MS", "Connor Rogerson", "Mengji Zhang", "Muzlifah Haniffa", "Anshul Kundaje", "Mo Lotfollahi"],
       "themes": ["DNA & genomics", "Gene regulation & epigenetics", "Omics & single-cell methods"],
-      "abstract": "MUSS combines DNA-sequence representations, chromatin accessibility, and paired single-cell expression data to model regulatory patterns at cell and sequence scales.",
-      "claimed_contribution": "The authors report performance against sequence and single-cell baselines on expression prediction, enhancer–gene linking, motif-guided prioritization, and zero-shot cell clustering, including expression prediction for genes/peaks unseen during task training.",
-      "unique_caveat": "Results are computational; scores are not causal or clinical evidence. The authors note dependence on a substantial frozen sequence encoder and paired multi-omic data, quadratic attention cost, limited unseen-link evaluation, and single-run estimates for some expression outcomes.",
+      "abstract": "MUSS integrates DNA-sequence representations with chromatin accessibility and paired single-cell expression data to model gene regulation across sequence and cell scales.",
+      "claimed_contribution": "The authors report results against sequence and single-cell baselines for expression prediction, enhancer–gene linking, motif-guided prioritization, and zero-shot cell clustering, including tests on unseen genes and peaks.",
+      "unique_caveat": "Results are computational, not causal or experimental validation. The authors note reliance on a frozen sequence encoder and paired multi-omic data, quadratic attention cost, and single-run estimates for some expression outcomes.",
       "announcement_type": "new submission",
-      "evidence_for_ranking": "Strong genomics fit and q-bio.GN cross-listing; the arXiv record lists NeurIPS 2026, and a NeurIPS program entry and project code are publicly available. No verified citation-momentum signal was used.",
+      "announcement_batch_date": "2026-11-06",
+      "evidence_for_ranking": "Direct genomics fit and q-bio.GN cross-list; the arXiv record gives NeurIPS 2026 as publication venue; evaluated across four paired single-cell datasets.",
       "journal_ref": "NeurIPS 2026",
-      "comment": "30 pages, 5 figures; includes references, appendices, and the NeurIPS checklist",
-      "refs": ["https://arxiv.org/abs/2611.08086", "https://nips.cc/virtual/2026/poster/150251", "https://github.com/Lotfollahi-lab/MUSS_neurips26"]
+      "refs": ["https://arxiv.org/abs/2611.08086", "https://arxiv.org/html/2611.08086"]
     },
     {
       "id": "04-geometric-relevance-is-not-sufficient-evaluating-focused-post-training-supervision-in-diffusion-docking",
@@ -101,19 +100,63 @@
       "categories": ["cs.LG", "q-bio.BM"],
       "authors": ["Michael Brown", "Maryam Rahimimovassagh", "Mehdi Yazdani-Jahromi", "Sanjeda Sara Jennifer", "Ivan Garibay"],
       "themes": ["Biochemistry & proteins", "Biomedical & translational medicine", "Quantitative methods"],
-      "abstract": "A fixed-budget DiffDock study compares broad continuation training with focused torsional supervision and finds no consistent advantage for the focused strategies on the reported docking endpoints.",
-      "claimed_contribution": "On a 99-complex evaluation with three training seeds, broad continuation had the highest mean trained-policy Top-1 success below 5 Å; focused or mixed supervision showed no consistent improvement over broad continuation under the tested budget.",
-      "unique_caveat": "This is a computational result for one architecture, one test set, and a five-epoch budget. The authors note that the confidence selector underperformed a uniform-random reference in the evaluated setting and that external/physical confirmation remains future work.",
+      "abstract": "A fixed-budget DiffDock study compares broad continuation with focused torsional supervision and finds no consistent advantage for focused strategies on the reported docking endpoints.",
+      "claimed_contribution": "In an evaluation of 99 complexes with three training seeds, broad continuation had the highest mean trained-policy Top-1 success below 5 Å; focused or mixed supervision did not consistently improve on broad continuation within the tested budget.",
+      "unique_caveat": "This is a computational result for one architecture, one test set, a five-epoch budget, and one sampling seed. Confidence selection and physical/external confirmation remain unresolved.",
       "announcement_type": "new submission",
-      "evidence_for_ranking": "Direct molecular-docking relevance; accepted at the NeurIPS 2026 AI4DD Workshop. The paper separates score fidelity, generated-pose recovery, best-of-10 recovery, and confidence-selected Top-1 performance.",
-      "journal_ref": "",
-      "comment": "17 pages, 5 figures; accepted at the NeurIPS 2026 AI4DD Workshop",
-      "refs": ["https://arxiv.org/abs/2611.08249"]
+      "announcement_batch_date": "2026-11-06",
+      "evidence_for_ranking": "Direct molecular-docking relevance; accepted at the NeurIPS 2026 AI4DD Workshop; evaluates score fidelity, pose recovery, best-of-10 sampling, and Top-1 selection separately.",
+      "comment": "Accepted at the NeurIPS 2026 AI4DD Workshop.",
+      "refs": ["https://arxiv.org/abs/2611.08249", "https://arxiv.org/html/2611.08249"]
     },
     {
-      "id": "05-accelerating-reaction-network-identification-via-frequency-domain-analysis",
+      "id": "05-how-deep-is-the-signal-time-context-up-to-30-years-for-colorectal-cancer-prediction-in-a-primary-care-ehr-model",
       "kind": "paper",
       "rank": 5,
+      "title": "How Deep is the Signal? Time-Context up to 30 Years for Colorectal Cancer Prediction in a Primary-Care EHR Model",
+      "url": "https://arxiv.org/abs/2611.07265",
+      "arxiv_id": "2611.07265",
+      "arxiv_version": "v1",
+      "published": "2026-11-05T00:34:47Z",
+      "categories": ["cs.LG", "cs.AI", "q-bio.QM"],
+      "authors": ["Achille Raviez", "Lan Wang", "Brendan Delaney"],
+      "themes": ["Biomedical & translational medicine", "Quantitative methods"],
+      "abstract": "This study tests how far back a primary-care EHR model needs to look to predict incident colorectal cancer using nested calendar-time lookback windows.",
+      "claimed_contribution": "The authors report AUROC rising from 0.551 with a two-year lookback to 0.590 at 18 years before plateauing; XGBoost reached a similar peak of 0.589. They propose calendar-time context as a distinct EHR model-design variable.",
+      "unique_caveat": "This retrospective prediction study uses one North West London health system and reports modest discrimination without prospective or clinical-utility evaluation; it is not evidence of a validated screening test.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-06",
+      "evidence_for_ranking": "Accepted at Machine Learning for Health 2026 (Findings Track); frozen cohort of 1,008 cases and 9,582 matched controls, pretrained on 3.6 million primary-care patients.",
+      "journal_ref": "Machine Learning for Health (ML4H) 2026, Findings Track",
+      "refs": ["https://arxiv.org/abs/2611.07265", "https://arxiv.org/html/2611.07265"]
+    },
+    {
+      "id": "06-resampling-based-batch-reweighting-for-combat-harmonization-of-mri-radiomic-features-in-a-multi-scanner-glioma-cohort",
+      "kind": "paper",
+      "rank": 6,
+      "title": "Resampling-based batch reweighting for ComBat harmonization of MRI radiomic features in a multi-scanner glioma cohort",
+      "url": "https://arxiv.org/abs/2611.02156",
+      "arxiv_id": "2611.02156",
+      "arxiv_version": "v2",
+      "published": "2026-11-01T19:43:22Z",
+      "updated": "2026-11-05T13:40:38Z",
+      "categories": ["eess.IV", "physics.med-ph"],
+      "authors": ["Rifa Sajda Tasnim", "Yushuf Sharker", "Md Forhad Hossain", "Rakibur Rahman", "Enamul Hoque Bhuiyan"],
+      "themes": ["Biomedical & translational medicine", "Quantitative methods"],
+      "abstract": "A revised study tests whether reweighting underrepresented scanner batches before ComBat estimation reduces residual scanner effects in glioma MRI radiomic features.",
+      "claimed_contribution": "In a retrospective, single-centre Erasmus Glioma Database cohort of 733 patients across nine scanner configurations, the authors report 13/428 features with significant residual scanner association after standard ComBat versus 8/428 with batch-augmented ComBat.",
+      "unique_caveat": "This remains a single-centre radiomics harmonization analysis; the reported reduction does not establish external generalization or improved patient outcomes.",
+      "announcement_type": "revision",
+      "announcement_batch_date": "2026-11-06",
+      "evidence_for_ranking": "Substantive v2 revision in the latest announcement batch and direct medical-imaging relevance; the arXiv record says the article was submitted to the Journal of Magnetic Resonance Imaging.",
+      "comment": "Original article. Submitted to Journal of Magnetic Resonance Imaging (JMRI).",
+      "journal_ref": "55e56c54-8774-4c97-bd43-1f7b8ac9dd2b. Journal of Magnetic Resonance Imaging (JMRI), 2026",
+      "refs": ["https://arxiv.org/abs/2611.02156", "https://arxiv.org/html/2611.02156"]
+    },
+    {
+      "id": "07-accelerating-reaction-network-identification-via-frequency-domain-analysis",
+      "kind": "paper",
+      "rank": 7,
       "title": "Accelerating reaction network identification via frequency-domain analysis",
       "url": "https://arxiv.org/abs/2611.07684",
       "arxiv_id": "2611.07684",
@@ -123,13 +166,12 @@
       "authors": ["Zhou Fang", "Wenying Sun", "Xiaoyu Zhang", "Mustafa Khammash"],
       "themes": ["Molecular & cell biology", "Quantitative methods"],
       "abstract": "The authors report that Fourier-domain measurements can make likelihoods approximately Gaussian in some intracellular reaction systems, enabling faster Bayesian network inference in an illustrative transcription example.",
-      "claimed_contribution": "The authors identify a numerical condition under which a Fourier transform approximately Gaussianizes the measurement likelihood and use it to construct an accelerated Bayesian inference algorithm.",
-      "unique_caveat": "The abstract reports an illustrative gene-transcription example, not broad experimental validation across biological systems; the approximation is stated to apply only to certain systems.",
+      "claimed_contribution": "The authors identify a condition under which a Fourier transform approximately Gaussianizes the measurement likelihood and use it to construct an accelerated Bayesian inference algorithm.",
+      "unique_caveat": "The abstract reports one illustrative example, not broad experimental validation; the approximation is stated to apply only to certain systems.",
       "announcement_type": "new submission",
-      "evidence_for_ranking": "Direct molecular-network and intracellular-reaction relevance; primary category q-bio.MN. The abstract describes a gene-transcription example and a proposed acceleration over particle-filtering approaches.",
-      "journal_ref": "",
-      "comment": "",
-      "refs": ["https://arxiv.org/abs/2611.07684"]
+      "announcement_batch_date": "2026-11-06",
+      "evidence_for_ranking": "Primary category q-bio.MN and direct relevance to intracellular reaction-network inference; the abstract illustrates the approach with gene transcription.",
+      "refs": ["https://arxiv.org/abs/2611.07684", "https://arxiv.org/html/2611.07684"]
     },
     {
       "id": "80-trending-research-themes",
@@ -137,8 +179,8 @@
       "title": "Trending Research Themes",
       "rank": 0,
       "url": null,
-      "summary": "Evaluation beyond one score or static structure recurs in BILBY and the DiffDock study. MUSS and the reaction-network paper contribute computational models spanning sequence, cell-level assays, and intracellular dynamics; neither establishes causality. PharmAgents2 reports human-executed assay follow-up for candidate generation, a single-paper observation rather than evidence of a field-wide trend.",
-      "refs": ["https://arxiv.org/abs/2611.07723", "https://arxiv.org/abs/2611.08249", "https://arxiv.org/abs/2611.08086", "https://arxiv.org/abs/2611.07684", "https://arxiv.org/abs/2611.07653"]
+      "summary": "The selected papers repeatedly emphasize evaluation beyond single proxy metrics: BILBY contrasts static recovery with MD-supported dynamics, while the docking paper separates score fidelity, pose recovery, and confidence selection. MUSS models relationships between sequence and cell-level regulation; PharmAgents2 organizes decisions across discovery workflows and reports human-run assay follow-up. The colorectal EHR and glioma MRI papers evaluate retrospective models on clinical data but do not establish prospective clinical utility. These observations describe this small selected batch, not a field-wide shift.",
+      "refs": ["https://arxiv.org/abs/2611.07723", "https://arxiv.org/abs/2611.08249", "https://arxiv.org/abs/2611.08086", "https://arxiv.org/abs/2611.07653", "https://arxiv.org/abs/2611.07265", "https://arxiv.org/abs/2611.02156", "https://arxiv.org/abs/2611.07684"]
     },
     {
       "id": "81-open-problems-and-research-directions",
@@ -146,8 +188,8 @@
       "title": "Open Problems and Research Directions",
       "rank": 0,
       "url": null,
-      "summary": "PharmAgents2's candidate activity and binding reports need orthogonal replication, selectivity panels, and further mechanism testing. BILBY motivates longer/replicate simulations and experimental stability/function checks. MUSS needs held-out cell types and perturbation tests; reaction-network inference needs comparisons across measured systems and noise regimes. Docking requires separate assessment of generation, confidence ranking, and external structural or binding validation.",
-      "refs": ["https://arxiv.org/abs/2611.07653", "https://arxiv.org/abs/2611.07723", "https://arxiv.org/abs/2611.08086", "https://arxiv.org/abs/2611.07684", "https://arxiv.org/abs/2611.08249"]
+      "summary": "PharmAgents2 motivates independent replication and orthogonal tests of target engagement and LpxH mechanism; BILBY motivates longer or replicated dynamics simulations plus experimental stability/activity assays. MUSS needs independent tissue, assay, and perturbation tests. The EHR and MRI studies need external temporal/geographic cohort or scanner-site validation before utility claims. The reaction-network approximation should be tested against particle-filtering and independent measurements across additional topologies, noise levels, and cell systems.",
+      "refs": ["https://arxiv.org/abs/2611.07653", "https://arxiv.org/abs/2611.07723", "https://arxiv.org/abs/2611.08086", "https://arxiv.org/abs/2611.07265", "https://arxiv.org/abs/2611.02156", "https://arxiv.org/abs/2611.07684"]
     },
     {
       "id": "90-takeaway",
@@ -155,8 +197,8 @@
       "title": "Takeaway",
       "rank": 0,
       "url": null,
-      "summary": "The batch’s clearest signal is methodological: biological AI claims need evaluation beyond static prediction metrics. PharmAgents2 reports early experimental follow-up, not clinical validation. Popularity cannot be measured reliably from this small, very recent arXiv batch.",
-      "refs": ["https://arxiv.org/abs/2611.07653", "https://arxiv.org/abs/2611.07723", "https://arxiv.org/abs/2611.08249"]
+      "summary": "The batch’s clearest contribution is methodological: biological AI systems need evaluation against dynamic, held-out, or externally measured outcomes, not only convenient proxy metrics. PharmAgents2 reports human-executed assays, which are early discovery findings rather than clinical validation; the other selected studies remain computational or retrospective and are bounded by their validation designs.",
+      "refs": ["https://arxiv.org/abs/2611.07653", "https://arxiv.org/abs/2611.07723", "https://arxiv.org/abs/2611.08086", "https://arxiv.org/abs/2611.08249"]
     }
   ]
 }

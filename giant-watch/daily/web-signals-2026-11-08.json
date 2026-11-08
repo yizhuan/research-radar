@@ -1,0 +1,84 @@
+{
+  "window": "daily",
+  "date": "2026-11-08",
+  "organizations": {
+    "Anthropic": [],
+    "OpenAI": [],
+    "Google": [],
+    "Meta": [],
+    "DeepSeek": [],
+    "Qwen": [],
+    "GLM": [],
+    "Kimi": [],
+    "xAI": []
+  },
+  "cross_cutting": [],
+  "gathering": {
+    "provider": "DeepSeek Search and Fetch",
+    "window_start": "2026-11-08",
+    "queries": [
+      {
+        "target": "Anthropic",
+        "query": "Anthropic Claude AI after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "OpenAI",
+        "query": "OpenAI ChatGPT GPT AI after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "Google",
+        "query": "Google DeepMind Gemini AI after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "Meta",
+        "query": "Meta AI Llama after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "DeepSeek",
+        "query": "DeepSeek AI after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "Qwen",
+        "query": "Alibaba Qwen Tongyi after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "GLM",
+        "query": "Zhipu Z.ai GLM after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "Kimi",
+        "query": "Moonshot Kimi AI after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "xAI",
+        "query": "xAI Grok after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "AI model release launch",
+        "query": "AI model release launch after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "AI agent product launch",
+        "query": "AI agent product launch after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      },
+      {
+        "target": "AI infrastructure partnership",
+        "query": "AI infrastructure partnership after:2026-11-08 lang:en,zh",
+        "result_count": 0
+      }
+    ],
+    "fetched_pages": 0,
+    "fetch_failures": []
+  }
+}

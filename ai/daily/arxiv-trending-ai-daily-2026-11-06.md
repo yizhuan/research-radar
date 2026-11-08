@@ -1,114 +1,91 @@
 # arXiv AI papers — Friday, 6 November 2026 announcement batch
 
-Eight notable recent papers; research agents and checkable evaluations dominate, with efficient test-time reasoning and multimodal agent security also prominent. This briefing covers the agentic-science, benchmark, reasoning, safety and robotics signals. arXiv has no official trending chart: this ordering is inferred from independently surfaced technical discussion, cross-list breadth and reported evaluation evidence; Semantic Scholar citation evidence is limited for such recent work (all selected papers had zero citations at the snapshot).
+Six notable recent papers span physical-AI planning, agent reliability, and compute-aware reasoning; the agenda is to look at what is getting community attention, what the papers actually demonstrate, and what still needs testing. Sunday, 8 November has no newer announcement batch, so this report uses Friday's batch. arXiv has no official trending chart: the order is inferred from limited independent attention signals, while citation evidence for these very recent papers remains sparse.
 
 ## Top papers (ranked)
 
-### 1. [SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization](https://arxiv.org/abs/2611.08483)
-- **Abstract:** SwarmEvolve coordinates hundreds of latent-space LLM agents through KV-cache sharing and reports faster, higher-scoring program search than three text-based frameworks on 21 mathematical and scientific-computing problems.
-- **Authors:** Qile Jiang, George Em Karniadakis
-- **arXiv:** `2611.08483v1` (published 2026-11-05T18:59:29Z; categories: `cs.AI` (primary), `cs.NE`)
-- **Evidence for ranking:** Several technical writeups surfaced independently, including [OpenTrain](https://www.opentrain.ai/papers/swarmevolve-latent-agent-swarms-for-evolutionary-discovery-and-optimization--arxiv-2611.08483/) and [AGI Hunt](https://agihunt.info/en/papers/2611.08483); the paper also spans AI and neural/evolutionary computing and reports a multi-baseline, 21-problem evaluation. These are discussion signals, not readership counts.
-- **Claimed contribution:** The authors introduce a latent-agent evolutionary-search framework using hidden-state novelty filtering and KV-cache crossover; on their benchmark, it reaches baseline 60-minute scores in a median 3–8 minutes.
-- **Caveat:** Evidence is limited to 21 selected tasks and Qwen3 8B/14B/32B-FP8 comparisons under the paper's one-GPU, 60-minute setup; performance on other models and search workloads is not established here.
+### 1. [VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding](https://arxiv.org/abs/2611.08449)
+- **Abstract:** VFlash predicts structured visual plans such as points, boxes, and trajectories in parallel; the authors report lower prediction errors, preliminary single-rollout speedups for 3D motion forecasting, and higher robot-task success when a world-action model uses its plans.
+- **Authors:** Yu-Cheng Chou, Shihao Wang, Jin Huang, Chi-Pin Huang, Chiao-An Yang, et al.
+- **arXiv:** `2611.08449v1` (published 2026-11-05T18:44:43Z; categories: `cs.RO` (primary), `cs.CV`)
+- **Evidence for ranking:** The [Hugging Face paper page](https://huggingface.co/papers/2611.08449) displayed 100 community upvotes at the snapshot, the highest directly observed Hugging Face total among papers with an available page; comparable counts were unavailable for the other shortlisted papers. This is a current total, not votes gained during the announcement window. Semantic Scholar listed 0 citations and 0 influential citations.
+- **Claimed contribution:** The authors introduce Flash Primitive Decoding, a lightweight drafter that predicts a visual primitive jointly rather than token by token; they report 70.2% average success across four MolmoSpaces suites versus 62.6% for their baseline.
+- **Caveat:** The authors label the roughly 25× 3D-motion generation result preliminary and based on single-rollout measurements; robot-task evidence is from four MolmoSpaces suites, so broader deployment transfer is not established.
 - **Announcement type:** new submission, 2026-11-06 announcement batch
-- **Themes:** Agents & reasoning; Efficient inference & systems
+- **Themes:** Multimodal & vision-language; Robotics & control; Efficient inference & systems
 
-### 2. [TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research](https://arxiv.org/abs/2611.07962)
-- **Abstract:** TCSExam evaluates agents on theorem proving, solver engineering, constructions and open-conjecture tasks, with Lean or executable checking, and reports independently verified special cases and bounds from some attempts.
-- **Authors:** Yifan Luo, Zhengying Liu, Yang Yuan, Zhilin Yang, Andrew Chi-Chih Yao
-- **arXiv:** `2611.07962v1` (published 2026-11-05T12:58:43Z; categories: `cs.AI` (primary), `cs.CL`)
-- **Evidence for ranking:** The benchmark drew substantive external discussion from [Crashtech](https://crashtech.in/articles/tcsexam-frontier-theory-computer-science/) and [AIModeling](https://www.aimodeling.com/en/news/slug/tcsexam-lean-verified-tcs-benchmark); its two-category listing and four distinct, checkable task tracks add technical relevance beyond a leaderboard mention.
-- **Claimed contribution:** The authors contribute a 100-task Full suite and a 20-task Lite suite covering four kinds of TCS output; in the reported runs, Full and Lite rankings agreed strongly across eight shared agents (Spearman ρ=0.93).
-- **Caveat:** The capability claims are bounded by the authors' curated 100-task suite, its task-specific scoring and selected evaluated agents; the suite cannot by itself establish performance across all theoretical-computer-science research.
+### 2. [SLA: Scaling Spatial-Language-Action Model via Continual Pre-training](https://arxiv.org/abs/2611.08373)
+- **Abstract:** SLA adds spatial-representation alignment to continual pre-training and downstream post-training of a pretrained vision-language-action policy, using heterogeneous robot data and a frozen 3D teacher; the authors report gains across simulation and real-robot evaluations.
+- **Authors:** Fuhao Li, Wenxuan Song, Qizhou Huang, Ziyang Zhou, Jingbo Wang, et al.
+- **arXiv:** `2611.08373v1` (published 2026-11-05T17:52:16Z; categories: `cs.RO` (primary))
+- **Evidence for ranking:** The [Hugging Face paper page](https://huggingface.co/papers/2611.08373) displayed 81 community upvotes at the snapshot, a high directly checked attention signal; this is a current total, not votes gained during the window. The paper's project page and benchmark results provide further checkable context; Semantic Scholar listed 0 citations and 0 influential citations.
+- **Claimed contribution:** The authors report improvements over the initialized π0.5 policy across eight real-world deployment conditions, averaging 24.0 percentage points in success rate, while removing the auxiliary teacher and alignment components at inference.
+- **Caveat:** Evidence is limited to the reported simulation benchmarks and eight deployment conditions; transfer to other robot platforms, camera arrangements, and data distributions is not established by these evaluations.
 - **Announcement type:** new submission, 2026-11-06 announcement batch
-- **Themes:** Evaluation & benchmarks; Agents & reasoning
+- **Themes:** Robotics & control; Multimodal & vision-language; Training & adaptation
 
-### 3. [StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning](https://arxiv.org/abs/2611.08403)
-- **Abstract:** StepBack preserves a draft's earlier reasoning and resamples from an estimated first-error step; the authors report average accuracy matching self-consistency across seven math and multi-hop QA benchmarks with up to 41.26% fewer generated tokens.
+### 3. [MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents](https://arxiv.org/abs/2611.07689)
+- **Abstract:** MCPHallu builds four controlled failure triggers into 358 tasks across 36 MCP servers and reports that 14 evaluated agents often fail to recognize unreachable goals, with model rankings changing substantially across failure subtypes.
+- **Authors:** Yizhen Jiang, Haowei Guo, Tianyi Bai, Zengjie Hu, Lu Ma, et al.
+- **arXiv:** `2611.07689v1` (published 2026-11-05T09:14:26Z; categories: `cs.AI` (primary))
+- **Evidence for ranking:** The paper received independent technical discussion from [Agents Watch](https://agentswatch.dev/daily/2026-11-06/items/mcphallu-hallucination-subtypes), [The Agent Times](https://theagenttimes.com/articles/mcphallu-finds-23-2-percent-of-unreachable-goal-runs-pass-818ad01b), and a [Chinese-language technical analysis](https://clawpk.net/articles/2194-mcphallu-mcp-agent-hallucination-benchmark-2611-07689). These are discussion signals rather than readership statistics; Semantic Scholar listed 0 citations and 0 influential citations.
+- **Claimed contribution:** The authors introduce a subtype-diagnostic benchmark and report 5,012 trajectories, a mean score of 0.642, and a 23.2% pass rate on Unreachable Goal tasks.
+- **Caveat:** The authors state that the four triggerable subtypes are not exhaustive; included services are English-language and mainly Western SaaS, and dynamic server changes are not evaluated.
+- **Announcement type:** new submission, 2026-11-06 announcement batch
+- **Themes:** Evaluation & benchmarks; Agents & reasoning; Safety & alignment
+
+### 4. [StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning](https://arxiv.org/abs/2611.08403)
+- **Abstract:** StepBack estimates the first erroneous reasoning step in a small set of draft trajectories and resamples only that step and its suffix; the authors report average accuracy matching self-consistency across seven math and multi-hop QA benchmarks with up to 41.26% fewer tokens.
 - **Authors:** Yang Ouyang, Jung-Eun Kim
 - **arXiv:** `2611.08403v1` (published 2026-11-05T18:12:49Z; categories: `cs.AI` (primary), `cs.CL`, `cs.LG`)
-- **Evidence for ranking:** Recent technical discussion appeared in [Ken Ashe's analysis](https://kenashe.ai/blog/2026-11-06-stepback-targets-the-first-bad-reasoning-step-instead-of-rerunning-the-whole/) and [GlobalTechDigest](https://globaltechdigest.blogspot.com/2026/11/stepback-step-level-error-localized.html); the paper also has three core-category listings and a NeurIPS 2026 comment on arXiv.
-- **Claimed contribution:** The authors propose rollback-point selection using step-level negative log-likelihood or process-reward-model signals, followed by suffix resampling and standard majority voting.
-- **Caveat:** The authors say their experiments mainly cover mathematical reasoning and multi-hop QA and use two localization signals; generalization to code generation and long-context summarization remains untested.
+- **Evidence for ranking:** It is listed as accepted at NeurIPS 2026 and has an [official NeurIPS poster page](https://neurips.cc/virtual/2026/poster/149117), alongside independent technical discussion from [OpenTrain](https://www.opentrain.ai/papers/stepback-step-level-error-localized-resampling-for-efficient-test-time-reasoning--arxiv-2611.08403/) and [Franklin He](https://franklineh.com/learn/research/editorial-research-87e46cba70795c2e41f1df593b9b6ef3). Semantic Scholar listed 0 citations and 0 influential citations.
+- **Claimed contribution:** The authors use negative-log-likelihood or process-reward signals to choose a rollback point, then resample the suffix and vote over final answers.
+- **Caveat:** The authors say their experiments mainly cover math and multi-hop question answering and test two localization signals; generalization to code generation and long-context summarization remains open.
 - **Announcement type:** new submission, 2026-11-06 announcement batch
 - **Themes:** Agents & reasoning; Efficient inference & systems
 
-### 4. [Agent-R²: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis](https://arxiv.org/abs/2611.08219)
-- **Abstract:** Agent-R² synthesizes productivity-agent training tasks from real occupational seeds, workflow evidence and web-sourced files, then reports results for a 4B model trained on 4,000 rubric-scored instances.
-- **Authors:** Teng Pan, Zixuan Wang, Yuchen Yan, Qifei Wu, Yao Chen, et al.
-- **arXiv:** `2611.08219v1` (published 2026-11-05T16:08:05Z; categories: `cs.CL` (primary))
-- **Evidence for ranking:** The paper received rapid indexed coverage on [ModelScope](https://www.modelscope.cn/papers/2611.08219) and [ArXivSignals](https://arxivsignals.io/papers/2611.08219); the concrete comparison spans both GDPval and OfficeQA, while the reported data pipeline targets realistic multi-file work rather than a single narrow task.
-- **Claimed contribution:** The authors report that Agent-R²-4B, trained with supervised fine-tuning and rubric-based reinforcement learning, scored 51.0% on GDPval and 14.8% on OfficeQA, above the named Qwen3-235B-A22B-Thinking-2507 baseline on those reported metrics.
-- **Caveat:** The evidence is for one 4B model and two benchmark suites, using 4,000 synthesized training instances; results do not establish transfer to other workflows, file collections or evaluation rubrics.
+### 5. [TriAttention: Unified Sparse Mixed-Precision Attention for Long-Context LLM Inference](https://arxiv.org/abs/2611.07256)
+- **Abstract:** TriAttention assigns attention tiles to skipping, 4-bit, or 8-bit computation based on calibrated sensitivity and reuses a compressed KV cache; the authors report faster generation while maintaining comparable quality on their tested tasks.
+- **Authors:** Hanzhi Zhang, Qiao Zhang, Qinglei Cao, Heng Fan, Yan Huang, et al.
+- **arXiv:** `2611.07256v1` (published 2026-11-05T00:14:13Z; categories: `cs.LG` (primary), `cs.AI`)
+- **Evidence for ranking:** The method drew independent technical coverage from [Chiosa](https://chiosa.app/papers/triattention-unified-sparse-mixed-precision-attention-for-long-context-llm-inference-2611-07256) and [The 8088](https://the8088.com/story/triattention-unified-sparse-mixed-precision-attention-for-long-context-llm-infer-138482/); its AI/ML cross-list and evaluated GPU implementation add concrete relevance. Semantic Scholar listed 0 citations and 0 influential citations.
+- **Claimed contribution:** The authors report up to 7.88× generation speedup over Torch attention and 2.65× over a BF16 baseline, with comparable quality on selected general-purpose and long-context evaluations.
+- **Caveat:** The results depend on offline calibration and are reported for selected checkpoints, tasks, and GPU types; the paper does not establish that the speed/quality trade-off transfers unchanged to arbitrary models or workloads.
 - **Announcement type:** new submission, 2026-11-06 announcement batch
-- **Themes:** Agents & reasoning; Data & synthetic data; Training & adaptation
+- **Themes:** Efficient inference & systems; Training & adaptation
 
-### 5. [Scientist World: Grow a Research World for AI-Scientists](https://arxiv.org/abs/2611.08478)
-- **Abstract:** Scientist World turns research papers into executable environments and reports 1,000 verified environments, 6,400 research-trace hours, and gains for agents evaluated against reproduced author methods.
-- **Authors:** Taiming Lu, Sachin Konan, Zhuang Liu
-- **arXiv:** `2611.08478v1` (published 2026-11-05T18:58:17Z; categories: `cs.AI` (primary), `cs.CL`, `cs.LG`)
-- **Evidence for ranking:** Multiple technical writeups appeared quickly, including [Franklin He](https://franklineh.com/learn/research/editorial-research-9e9abb9325c39a4adbda1fb3e62ef62e) and [AIModels.fyi](https://www.aimodels.fyi/papers/arxiv/scientist-world-grow-research-world-ai-scientists); its three-category cross-list and training/evaluation corpus make it one of the batch's broadest research-agent contributions.
-- **Claimed contribution:** The authors provide a pipeline that extracts a paper's question, reproduces its method as a baseline and records agent experiments; they report frontier agents exceeding the reproduced human baseline in 74% of evaluations.
-- **Caveat:** The reported comparison depends on the fidelity of automated environment construction and reproduction of each paper's method; outperforming that baseline is not equivalent to independently validating the scientific significance of an agent's result.
+### 6. [Binding Paraphrased Instructions to Encountered Objects in sLLM Agents under Partial Observability](https://arxiv.org/abs/2611.07599)
+- **Abstract:** The authors introduce ALFWorld-Para and BINDIntent to measure and improve how smaller embodied agents bind paraphrased object references to observed entities, reporting large recovery in success without extra training or model calls.
+- **Authors:** Chanyoung Kim, Harim Song, Byoungchan Ko, Keonyoung Lee, Myungwon Lee, Dahuin Jung
+- **arXiv:** `2611.07599v1` (published 2026-11-05T07:46:55Z; categories: `cs.LG` (primary))
+- **Evidence for ranking:** The work received a technical write-up from [SyncAI News](https://syncai.news/article/binding-paraphrased-instructions-to-encountered-objects-in-sllm-agents-under-par-52df9d) and was indexed by [Papers Cool](https://papers.cool/arxiv/2611.07599). Its ranking is lower because the checked independent discussion is thinner than for the entries above; Semantic Scholar listed 0 citations and 0 influential citations.
+- **Claimed contribution:** The authors report that BINDIntent improves synonym-paraphrase success by 17.5–49.1 percentage points with 0.4 ms CPU overhead per step, and raises GiGPO-7B's overall success rate from 61.8% to 77.4% in their evaluation.
+- **Caveat:** Evaluation centers on the authors' controlled ALFWorld-Para embodied setting; transfer to other environments, languages, and instruction distributions is not established.
 - **Announcement type:** new submission, 2026-11-06 announcement batch
-- **Themes:** Agents & reasoning; Evaluation & benchmarks; Training & adaptation
-
-### 6. [Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks](https://arxiv.org/abs/2611.08417)
-- **Abstract:** The authors propose continuous benchmark validation and report that their Terminal-Bench 2.0 audit found issues in roughly 30% of tasks, with repairs changing accuracy and some leaderboard positions.
-- **Authors:** E. Kelly Buchanan, Crystal Zhou, Scott W. Linderman, Christopher Ré
-- **arXiv:** `2611.08417v1` (published 2026-11-05T18:18:39Z; categories: `cs.AI` (primary))
-- **Evidence for ranking:** The work was discussed by [Agentic Design](https://agentic-design.ai/news-hub/benchmarks-software-terminal-bench-case-continuous-benchmarks-01fe67) and is linked to a [Terminal-Bench 2.1 release note](https://www.tbench.ai/news/terminal-bench-2-1); it also has a public [OpenReview record](https://openreview.net/forum?id=waLyaPFdwc), so its ideas were visible beyond the new arXiv listing.
-- **Claimed contribution:** The authors combine community reports, task artifacts, agent traces, oracle checks and human-gated repairs, and argue that time/resource budgets should be maintained as part of benchmark specifications.
-- **Caveat:** The reported 30% issue rate and score changes concern Terminal-Bench 2.0 and this audit workflow; they should not be generalized to all agent benchmarks.
-- **Announcement type:** new submission, 2026-11-06 announcement batch
-- **Themes:** Evaluation & benchmarks; Agents & reasoning
-
-### 7. [Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks](https://arxiv.org/abs/2611.08281)
-- **Abstract:** Multimodal-SEA presents 608 simulated social-engineering tasks and reports that multimodal content raised attack success against seven evaluated models from 19.9% to 29.2%, with some safety settings also causing excessive refusal.
-- **Authors:** Zhitao He, Chi Him Zhang, Chengru Han, Yi R Fung
-- **arXiv:** `2611.08281v1` (published 2026-11-05T16:46:31Z; categories: `cs.CL` (primary))
-- **Evidence for ranking:** Rapid coverage appeared on [OpenTrain](https://www.opentrain.ai/papers/multimodal-sea-benchmarking-ai-agent-security-under-multimodal-social-engineerin--arxiv-2611.08281/) and [ModelScope](https://www.modelscope.cn/papers/2611.08281); the task count, bilingual scenario framing and measurable security/usability trade-off make it a concrete safety-evaluation contribution.
-- **Claimed contribution:** The authors introduce an interactive benchmark with 608 tasks across 14 domains and 152 attack scenarios, using simulated applications and tool-execution logs to assess agent security.
-- **Caveat:** The evaluations use simulated applications and a designed set of fraud scenarios; real-world attack prevalence and transfer to deployed agents are not measured by this benchmark alone.
-- **Announcement type:** new submission, 2026-11-06 announcement batch
-- **Themes:** Safety & alignment; Multimodal & vision-language; Evaluation & benchmarks
-
-### 8. [RoboARCade: Benchmarking Agentic Robot Control](https://arxiv.org/abs/2611.08209)
-- **Abstract:** RoboARCade evaluates long-horizon manipulation across three simulated embodiments and reports that leading agents still fail many subtasks, including frequent false claims of success.
-- **Authors:** Satvik Sharma, Hengyuan Hu, Mihika Kamat, Dorsa Sadigh, Jeannette Bohg
-- **arXiv:** `2611.08209v1` (published 2026-11-05T16:00:16Z; categories: `cs.RO` (primary))
-- **Evidence for ranking:** The paper was picked up by [EmergentMind](https://www.emergentmind.com/papers/2611.08209) and [Oscholar](https://oscholar.net/paper/3251282); its 22-task, five-seed-per-task simulation evaluation gives a concrete robotics signal, though external discussion was thinner than for the higher-ranked papers.
-- **Claimed contribution:** The authors release a MuJoCo benchmark and report that the strongest tested configuration achieved 49.8% subtask success; they identify strategy choice, execution precision and incorrect success claims as recurring failure modes.
-- **Caveat:** Results are from simulation, and the self-improvement findings include a five-task subset; physical-robot transfer and wider long-horizon generalization remain to be tested.
-- **Announcement type:** new submission, 2026-11-06 announcement batch
-- **Themes:** Robotics & control; Evaluation & benchmarks; Agents & reasoning
+- **Themes:** Robotics & control; Agents & reasoning; Evaluation & benchmarks
 
 ## Trending Research Themes
 
-- **Research agents are moving toward executable, inspectable work.** Scientist World creates paper-derived environments; SwarmEvolve uses latent swarms for program search; TCSExam scores verifiable proofs, solvers and constructions. Together these papers emphasize reproducible artifacts and measurable intermediate outputs, but do not yet establish autonomous scientific discovery at field scale.
-- **Evaluation itself is becoming a systems problem.** TCSExam, Terminal-Bench, RoboARCade and Multimodal-SEA use formal checks, benchmark repair, simulated interaction or execution logs to make outcomes less dependent on free-form judge scores. This is a recurring design choice in this batch, not evidence that one evaluation approach has won.
-- **Efficiency work targets different points in the agent loop.** StepBack reduces repeated reasoning tokens by reusing a trajectory prefix; SwarmEvolve reduces text-generation overhead through latent coordination and KV-cache sharing. Their methods are complementary, but they were evaluated on different task families.
-- **Realistic tasks expose reliability and safety failures.** Agent-R² tests file-grounded productivity work, Multimodal-SEA tests deceptive multimodal inputs, and RoboARCade exposes control precision and false completion reports. These papers suggest that useful agent capability must be assessed alongside grounding, action verification and refusal behavior.
-- **Category balance:** this selection is intentionally not proportional to the 445-paper AI-corpus candidate pool. It leans toward `cs.AI`/`cs.CL` agent and evaluation work; robotics is represented by one notable paper, and there are no selected `cs.CV`- or `stat.ML`-primary papers.
+- **Physical-AI representations are becoming more explicit and trainable.** VFlash predicts spatial plans as structured primitives, while SLA adds spatial alignment to robot-policy pre-training; BINDIntent tests whether language instructions bind reliably to objects under partial observability. These are related but distinct forms of grounding, not evidence of one unified method.
+- **Reliability is being evaluated at the failure-mode level.** MCPHallu separates tool reasoning, execution, and memory failures, while BINDIntent isolates instruction/object binding failures in embodied tasks. Together they show how aggregate task success can hide specific breakdowns.
+- **Efficiency work is moving from whole-run sampling to selective computation.** StepBack resamples a likely erroneous reasoning suffix, whereas TriAttention selectively skips or lowers precision for attention regions. Both target wasted computation, but their evaluations and accuracy measures are not directly comparable.
+- **Category balance:** this is an attention-signal shortlist, not a category-proportional sample of arXiv. The selected papers emphasize machine learning, AI agents, and robotics; `stat.ML`, `cs.NE`, and `cs.MA` are not represented among selected primary categories.
 
 ## Open Problems and Research Directions
 
-- **Open problem — research-agent results may remain benchmark-bound.** The selected papers report results on curated tasks or reproduced baselines (TCSExam, Scientist World, SwarmEvolve). **Direction:** evaluate on held-out problem families and independently chosen questions, retaining machine-checkable outputs while having domain experts assess whether improvements matter beyond the suite.
-- **Open problem — error localization may fail outside tested reasoning tasks.** StepBack's authors explicitly leave code generation and long-context summarization for future evaluation. **Direction:** test its NLL/PRM rollback signals on those tasks and measure both error-localization accuracy and end-to-end cost/quality against full resampling.
-- **Open problem — safety gains can trade against legitimate task completion.** Multimodal-SEA reports vulnerability under multimodal attacks and excessive refusal for some models; its simulated applications do not establish deployment behavior. **Direction:** test adaptive attacks and benign lookalikes in controlled real-workflow pilots, reporting both attack success and legitimate-completion rates.
-- **Open problem — simulated robot success does not guarantee safe physical control or honest reporting.** RoboARCade identifies precision errors and false success claims in simulation. **Direction:** transfer a subset to physical robots, add independent state-based completion checks, and evaluate whether the agent calibrates its own success claims.
-- **Open problem — synthetic productivity training may not cover unseen documents and workflows.** Agent-R² reports gains from 4,000 real-source-derived instances on GDPval and OfficeQA. **Direction:** use contamination-resistant, newly collected file bundles and external rubrics to test transfer across occupations, formats and longer workflows.
+- **Author-stated open problem — transfer beyond current robot settings.** SLA evaluates selected simulated and real deployments, while VFlash labels its large 3D speedup preliminary. **Research direction (synthesis):** test both methods under held-out camera calibrations, unseen robot embodiments, and varied latency budgets, reporting motion quality and task success separately.
+- **Author-stated open problem — MCP failure coverage and deployment scope.** MCPHallu notes that its four triggerable subtypes are not exhaustive and that dynamic server changes and non-English or regional services are outside its current scope. **Research direction (synthesis):** extend the benchmark with dynamic tool inventories and multilingual/regional MCP servers, then compare human or open-weight judging against the current labeling pipeline.
+- **Author-stated open problem — StepBack's domain generalization.** Its authors identify code generation and long-context summarization as untested. **Research direction:** measure error-localization precision and end-to-end token/latency trade-offs on those tasks, including lighter-weight signals beyond NLL and process-reward scores.
+- **Open problem — instruction grounding under broader ambiguity.** BINDIntent's reported gains are on controlled object paraphrases in ALFWorld-Para. **Research direction (synthesis):** stress-test unseen synonyms, multiple plausible referents, multilingual phrasing, and changing object visibility in physical or varied simulated environments.
 
 ## Takeaway
 
-The strongest recurring signal is a push to make agent work executable and auditable—from latent program search and formal TCS tasks to office workflows, security scenarios and robot actions. Results are promising within the reported suites, but external validity, task selection and real-world transfer remain the main uncertainties; the ranking is an evidence-based snapshot, not an arXiv popularity chart.
+The strongest visible pattern is a practical turn toward grounded and auditable AI: spatially structured robot plans, benchmarked tool-use failures, and selective computation at inference time. Community votes and independent discussion help identify papers to watch, but all six remain very recent, Semantic Scholar citation counts are zero, and the reported results are author evaluations rather than settled evidence of general capability.
 
 ## Method and sources
 
-- **Window:** daily, arXiv announcement batch dated 2026-11-06 (Friday); included papers were first submitted 2026-11-05. This is the latest batch before the 2026-11-07 snapshot, so the report uses the prior announcement batch. Snapshot: 2026-11-07 17:05:10 UTC.
-- **Scope/query:** core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, `cs.MA`; arXiv API date-limited query `submittedDate:[202611050000 TO 202611052359] AND (cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA)`. The date-limited result returned 445 unique candidates, with representation from every configured category. The arXiv [cs.AI recent list](https://arxiv.org/list/cs.AI/recent) confirms the Friday, 6 November announcement batch.
-- **Selection:** deduplicated by versionless arXiv ID; kept new v1 submissions from the batch; selected eight papers based on surfaced technical discussion, cross-list breadth where applicable, and the specificity/inspectability of reported evidence. The order is inferred, not an official ranking. Semantic Scholar Graph API totals at snapshot: 0 citations and 0 influential citations for each selected paper; these are current totals, not citation gains during the window, and provide no positive citation-velocity signal.
-- **Primary sources:** each linked arXiv abstract page was checked for ID, version, authors, date and categories; the top three papers' arXiv HTML full text was inspected for method, results and limitations/caveats. PDF links are available from each abstract page.
-- **Corroborating discussion:** [OpenTrain on SwarmEvolve](https://www.opentrain.ai/papers/swarmevolve-latent-agent-swarms-for-evolutionary-discovery-and-optimization--arxiv-2611.08483/), [Crashtech on TCSExam](https://crashtech.in/articles/tcsexam-frontier-theory-computer-science/), [Ken Ashe on StepBack](https://kenashe.ai/blog/2026-11-06-stepback-targets-the-first-bad-reasoning-step-instead-of-rerunning-the-whole/), [Agentic Design on continuous benchmarks](https://agentic-design.ai/news-hub/benchmarks-software-terminal-bench-case-continuous-benchmarks-01fe67), and the linked per-paper coverage in ranking evidence.
-- **Retrieval note:** the configured `web_extract` backend was unavailable, so arXiv abstract and HTML full-text verification was done directly in the browser; no unverified RSS snippet was used.
+- **Window:** daily, 2026-11-06 through 2026-11-06; latest arXiv announcement batch was Friday, 6 November. Sunday, 8 November had no newer batch, so this is a prior-batch report. Snapshot: 2026-11-08 01:13:26 UTC.
+- **Scope/query:** core AI categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`. The intended broad arXiv query was `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`, ordered by newest submission; the API endpoint returned a rate-limit response, so the official category recent pages were checked instead: [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), and [cs.MA](https://arxiv.org/list/cs.MA/recent). The shortlist is not a claim of comprehensive field coverage.
+- **Inference and ranking:** arXiv has no official trending chart. Papers were deduplicated by versionless arXiv ID and ranked using observed community upvotes where available, independent technical discussion, conference status/cross-list relevance, and inspectability of reported evaluations; recency was only a tie-breaker. The Hugging Face vote totals (VFlash 100; SLA 81) are current totals checked at the snapshot, not gains during the window. Semantic Scholar Graph metadata returned 0 citation and 0 influential-citation totals for each selected paper; these are current totals, not window gains. Citation evidence is therefore limited, and upvotes/discussion are imperfect attention proxies.
+- **Primary sources:** every selected arXiv abstract page was checked for ID, version, authors, submitted timestamp, categories, and abstract: [VFlash](https://arxiv.org/abs/2611.08449), [SLA](https://arxiv.org/abs/2611.08373), [MCPHallu](https://arxiv.org/abs/2611.07689), [StepBack](https://arxiv.org/abs/2611.08403), [TriAttention](https://arxiv.org/abs/2611.07256), and [BINDIntent](https://arxiv.org/abs/2611.07599). The full HTML texts for VFlash, SLA, MCPHallu, and StepBack were checked for contributions, evaluation evidence, and paper-specific caveats.
+- **Corroborating sources:** [Hugging Face Daily Papers](https://huggingface.co/papers/date/2026-11-06) and the VFlash/SLA paper pages for community votes; [NeurIPS poster listing for StepBack](https://neurips.cc/virtual/2026/poster/149117); [Agents Watch on MCPHallu](https://agentswatch.dev/daily/2026-11-06/items/mcphallu-hallucination-subtypes); [Chiosa on TriAttention](https://chiosa.app/papers/triattention-unified-sparse-mixed-precision-attention-for-long-context-llm-inference-2611-07256); and [SyncAI News on BINDIntent](https://syncai.news/article/binding-paraphrased-instructions-to-encountered-objects-in-sllm-agents-under-par-52df9d), with additional citations in the paper entries.

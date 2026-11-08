@@ -2,103 +2,134 @@
 
 ## Headline
 
-Friday’s 6 November 2026 arXiv biology/biomedicine batch yielded seven notable papers from 15 eligible announcement records (14 new submissions and one revision). The dominant pattern is biological AI being evaluated against harder benchmarks, with one drug-discovery system reporting human-run experimental follow-up. Spoken agenda: agent-assisted drug discovery, protein design, single-cell genomics, docking, colorectal-risk prediction, MRI harmonization, and intracellular reaction networks. arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity ranking, and arXiv’s biomedical coverage is incomplete.
+The latest arXiv biology and biomedicine announcement batch, Friday 6 November 2026, contributes 10 notable papers selected from 22 eligible records (14 new submissions and 8 revisions). Single-cell genomics and computational discovery dominate, alongside protein-model evaluation and retrospective clinical prediction. Spoken agenda: drug-discovery agents, gene regulation, single-cell benchmarks, tissue and drug-response prediction, protein scaffolding, docking, and EHR/imaging methods. This is an inferred relevance ranking, not a popularity chart: arXiv has no official trending chart, and its biomedical coverage is incomplete. Sunday 8 November had no newer batch.
 
 ## Notable recent papers (ranked by relevance)
 
 ### 1. [PharmAgents2: Towards Autonomous End-to-End Drug Discovery](https://arxiv.org/abs/2611.07653)
-- **Abstract:** PharmAgents2 combines extracted scientific decision knowledge with parallel agents for drug-discovery planning; its authors report three candidate-generation studies followed by human-executed experiments.
+- **Abstract:** PharmAgents2 combines literature-derived decision skills and parallel agents for drug-discovery investigations; the authors report three investigations with findings subsequently tested in human-executed experiments.
 - **Authors:** Haichuan Tan, Bowen Gao, Tao Huang, Jiaxin Tan, Xin Hong, Baoguo Yao, Yifei Wang, Zhichao Deng, Hanji Du, Dapeng Jiang, Yiheng Li, Weiwei Ma, Xin Ma, Yuqi Shi, Zixiang Wang, Kelin Wu, Tianxiang Wu, Wenxuan Xie, Jie Zang, Huiyu Zhang, Mojia Zhang, Yuying Zhang, Ya-Qin Zhang, Wei-Ying Ma, Yanyan Lan
 - **arXiv:** `2611.07653v1` (published 2026-11-05T08:39:19Z; categories: `cs.AI`, `q-bio.QM`)
-- **Evidence for ranking:** Strong direct drug-discovery relevance; the authors report biochemical, cellular, and binding-assay follow-up in three studies. These are contribution and relevance signals, not popularity measures.
-- **Claimed contribution:** The authors report a 121-question benchmark and three end-to-end tasks. In follow-up, 63 purchased LpxH candidates yielded an inhibitor with enzyme-inhibition and biophysical binding evidence; 34 JAK1 candidates were tested in cytokine-signalling assays; and SPR supported binding of a proposed secondary target for another molecule.
-- **Caveat:** These were experiments executed by human researchers, not autonomous lab work. The paper says the proposed LpxH site and mechanism remain under validation; the findings do not establish therapeutic efficacy, safety, or clinical utility.
+- **Evidence for ranking:** Direct drug-discovery relevance and three author-reported experimental follow-ups; these support relevance, not measured popularity.
+- **Claimed contribution:** The authors introduce a 121-question benchmark and three end-to-end tasks. They report experimental follow-up for an LpxH inhibitor scaffold, JAK1 inhibitor candidates, and a proposed secondary target for a known bioactive molecule.
+- **Caveat:** Human researchers performed the experiments. The findings concern early discovery assays and do not establish clinical efficacy, safety, or therapeutic utility.
 - **Announcement type:** new submission, 2026-11-06 batch
 - **Themes:** Biomedical & translational medicine; Biochemistry & proteins
 
-### 2. [Static Recovery Is Not Dynamic Stability: Dynamics-Aware Benchmarking of Protein Motif Scaffolding](https://arxiv.org/abs/2611.07723)
-- **Abstract:** BILBY adds a PROSITE-derived motif-scaffolding benchmark and molecular-dynamics checks to test whether static protein-motif recovery corresponds to dynamical stability.
-- **Authors:** Emile de Bruyn, Moritz Schäffler, Jannik Schneider, Sebastian R. Schmidt, Chanwoong Hwang, Aleena Siji, Utkarsh Upadhyay, Stefan Bauer, Alexander Schug, Stefan Kesselheim, Artur Yakimovich, Alina Bazarova
-- **arXiv:** `2611.07723v1` (published 2026-11-05T09:38:23Z; categories: `cs.LG`, `q-bio.BM`)
-- **Evidence for ranking:** Accepted at NeurIPS 2026 (Evaluations & Datasets Track); reports a 220-case benchmark and a dynamics evaluation on 55 statically solved model–problem pairs.
-- **Claimed contribution:** The authors introduce BILBY-PRO (220 cases from 174 PROSITE motif-pattern entries) and BILBY-MD. Of 55 statically solved pairs assessed with MD, 31 met the authors’ MD-supported criterion and 8 passed all checks; they argue static refolding does not establish full-scaffold dynamical fidelity.
-- **Caveat:** The MD-support thresholds are heuristic, and the 200 ns design trajectories may miss slower instabilities. The dynamics evaluation is computational, not experimental functional validation.
-- **Announcement type:** new submission, 2026-11-06 batch
-- **Themes:** Biochemistry & proteins; Quantitative methods
-
-### 3. [MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation](https://arxiv.org/abs/2611.08086)
-- **Abstract:** MUSS integrates DNA-sequence representations with chromatin accessibility and paired single-cell expression data to model gene regulation across sequence and cell scales.
+### 2. [MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation](https://arxiv.org/abs/2611.08086)
+- **Abstract:** MUSS joins DNA-sequence-derived representations with chromatin accessibility and paired single-cell expression data to model gene regulation across scales.
 - **Authors:** Kangjie Zheng, Amirhossein Vahidi, Liying Jin, Joseph Clarke, Vijaya Baskar MS, Connor Rogerson, Mengji Zhang, Muzlifah Haniffa, Anshul Kundaje, Mo Lotfollahi
 - **arXiv:** `2611.08086v1` (published 2026-11-05T14:34:07Z; categories: `cs.AI`, `q-bio.GN`)
-- **Evidence for ranking:** Direct genomics fit and a `q-bio.GN` cross-list; the arXiv record gives NeurIPS 2026 as the publication venue. The paper evaluates across four paired single-cell datasets and several task types.
-- **Claimed contribution:** The authors report competitive or leading results against sequence and single-cell baselines for expression prediction, enhancer–gene linking, motif-guided prioritization, and zero-shot cell clustering, including tests on unseen genes and peaks.
-- **Caveat:** Results are computational, not causal or experimental validation. The authors note reliance on a frozen sequence encoder and paired multi-omic data, quadratic attention cost, and single-run estimates for some expression outcomes.
+- **Evidence for ranking:** Direct genomics fit; the arXiv record lists NeurIPS 2026. The paper evaluates four paired single-cell datasets and several downstream tasks.
+- **Claimed contribution:** The authors report performance against sequence and single-cell baselines for expression prediction, enhancer–gene linking, motif-guided prioritization, and zero-shot clustering, including tests involving unseen genes and peaks.
+- **Caveat:** Results are computational, not causal evidence. The authors note dependence on a frozen sequence encoder and paired multi-omic data, quadratic attention cost, and limitations in unseen-link evaluation.
 - **Announcement type:** new submission, 2026-11-06 batch
 - **Themes:** DNA & genomics; Gene regulation & epigenetics; Omics & single-cell methods
 
-### 4. [Geometric Relevance Is Not Sufficient: Evaluating Focused Post-Training Supervision in Diffusion Docking](https://arxiv.org/abs/2611.08249)
-- **Abstract:** A fixed-budget DiffDock study compares broad continuation with focused torsional supervision and finds no consistent advantage for the focused strategies on the reported docking endpoints.
-- **Authors:** Michael Brown, Maryam Rahimimovassagh, Mehdi Yazdani-Jahromi, Sanjeda Sara Jennifer, Ivan Garibay
-- **arXiv:** `2611.08249v1` (published 2026-11-05T16:26:44Z; categories: `cs.LG`, `q-bio.BM`)
-- **Evidence for ranking:** Direct molecular-docking relevance; accepted at the NeurIPS 2026 AI4DD Workshop. The study separates score fidelity, generated-pose recovery, best-of-10 sampling, and confidence-selected Top-1 performance.
-- **Claimed contribution:** In the authors’ 99-complex evaluation with three training seeds, broad continuation had the highest mean trained-policy Top-1 success below 5 Å; focused or mixed supervision did not consistently improve on broad continuation within the tested budget.
-- **Caveat:** This is a computational result for one architecture, one test set, a five-epoch budget, and one sampling seed. The authors note that confidence selection and physical/external confirmation remain unresolved.
+### 3. [Static Recovery Is Not Dynamic Stability: Dynamics-Aware Benchmarking of Protein Motif Scaffolding](https://arxiv.org/abs/2611.07723)
+- **Abstract:** BILBY adds a PROSITE-derived protein-motif benchmark and molecular-dynamics checks to test whether static motif recovery predicts dynamic scaffold behavior.
+- **Authors:** Emile de Bruyn, Moritz Schäffler, Jannik Schneider, Sebastian R. Schmidt, Chanwoong Hwang, Aleena Siji, Utkarsh Upadhyay, Stefan Bauer, Alexander Schug, Stefan Kesselheim, Artur Yakimovich, Alina Bazarova
+- **arXiv:** `2611.07723v1` (published 2026-11-05T09:38:23Z; categories: `cs.LG`, `q-bio.BM`)
+- **Evidence for ranking:** Accepted at NeurIPS 2026 (Evaluations & Datasets Track); reports a 220-case benchmark and molecular-dynamics assessment of 55 statically solved model–problem pairs.
+- **Claimed contribution:** The authors report that 31/55 designs met their MD-supported criterion and 8/55 passed all checks, indicating that static refolding does not establish full-scaffold dynamical fidelity.
+- **Caveat:** The MD thresholds are heuristic; 200 ns design trajectories may miss slower instabilities. The study is computational and does not establish biochemical function.
 - **Announcement type:** new submission, 2026-11-06 batch
-- **Themes:** Biochemistry & proteins; Biomedical & translational medicine; Quantitative methods
+- **Themes:** Biochemistry & proteins; Quantitative methods
 
-### 5. [How Deep is the Signal? Time-Context up to 30 Years for Colorectal Cancer Prediction in a Primary-Care EHR Model](https://arxiv.org/abs/2611.07265)
-- **Abstract:** This study tests how far back a primary-care EHR model needs to look to predict incident colorectal cancer, using nested calendar-time lookback windows.
+### 4. [One Method Does Not Fit All: A Large-Scale Benchmark of Imputation Methods for Single-Cell RNA Sequencing Data](https://arxiv.org/abs/2603.24626)
+- **Abstract:** This revised benchmark compares 16 single-cell RNA-seq imputation methods across protocols, downstream tasks, and datasets, finding that rankings depend on the task and data.
+- **Authors:** Yuichiro Iwashita, Ahtisham Fazeel Abbasi, Koichi Kise, Andreas Dengel, Muhammad Nabeel Asim
+- **arXiv:** `2603.24626v3` (published 2026-03-25T02:46:51Z; updated 2026-11-05T14:26:36Z; categories: `q-bio.GN`, `cs.LG`, `stat.ML`)
+- **Evidence for ranking:** v3 revision in the batch; broad evaluation across 16 methods, 10 protocols, 6 downstream tasks, and 30 benchmark datasets.
+- **Claimed contribution:** The authors report that traditional methods are often more consistent across tasks, while strong numerical recovery does not necessarily improve downstream biological interpretation.
+- **Caveat:** Benchmark outcomes depend on dataset, protocol, and analytical goal; the authors find no universally best method. The conclusions are comparative, not a demonstration that imputation recovers true expression in every setting.
+- **Announcement type:** revision, 2026-11-06 batch
+- **Themes:** RNA & transcriptomics; Omics & single-cell methods; Quantitative methods
+
+### 5. [Querying Counterfactuals on Tissue Graphs with Supervised Disentanglement](https://arxiv.org/abs/2606.08493)
+- **Abstract:** Cellina models in-silico tissue-neighborhood interventions by separating a cell’s intrinsic state from its spatial context.
+- **Authors:** Abdul Moeed, Stefan Schrod, Martin Rohbeck, Marc Jan Bonder, Pavlo Lutsik, Oliver Stegle, Daniel Dimitrov
+- **arXiv:** `2606.08493v4` (published 2026-06-07T07:41:00Z; updated 2026-11-05T09:36:28Z; categories: `q-bio.GN`, `cs.LG`, `stat.ML`)
+- **Evidence for ranking:** v4 revision in the batch; evaluated in observational and interventional screens spanning more than 2.5 million spatially resolved cells.
+- **Claimed contribution:** The authors report stronger in-silico perturbation predictions than spatial and non-spatial competitors and use the model to identify cancer subdomains with distinct predicted signaling programs.
+- **Caveat:** Counterfactual outputs are model predictions, not newly performed interventions; performance across the reported benchmarks does not establish causal validity in other tissues.
+- **Announcement type:** revision, 2026-11-06 batch
+- **Themes:** Molecular & cell biology; Omics & single-cell methods; Quantitative methods
+
+### 6. [Thalamus-Reasoning: A Multimodal Large Language Model for Multi-Sample Omics Reasoning](https://arxiv.org/abs/2605.06728)
+- **Abstract:** Thalamus-Reasoning represents bulk or single-cell transcriptomes as continuous embeddings that can be combined with language instructions and other samples.
+- **Authors:** Maciej Sypetkowski, Łukasz Smoliński, Remigiusz Kinas, Joanna Krawczyk, Bartłomiej Hofman, Aleksandra Możwiłło, Michał Pikusa, Tomasz Jetka, Rafał Powalski
+- **arXiv:** `2605.06728v3` (published 2026-05-07T11:27:11Z; updated 2026-11-05T15:18:38Z; categories: `q-bio.GN`, `cs.AI`, `q-bio.CB`)
+- **Evidence for ranking:** v3 revision in the batch; includes GEO-OmicsQA, a publication-disjoint benchmark of 3,000 questions, and evaluations on held-out annotation and perturbation-response tasks.
+- **Claimed contribution:** The authors report leading results among tested models on multiple held-out annotation tasks and GEO-OmicsQA variants, and better average performance on PerturbQA than the compared methods.
+- **Caveat:** The benchmark measures model performance on curated tasks, not experimental discovery. Some training supervision is LLM-generated with task-specific quality checks; no new biological experiments are reported.
+- **Announcement type:** revision, 2026-11-06 batch
+- **Themes:** RNA & transcriptomics; Omics & single-cell methods; Bioinformatics & sequence analysis
+
+### 7. [scTREAT: Latent Diffusion for Single-Cell Drug-Response Prediction](https://arxiv.org/abs/2510.11726)
+- **Abstract:** scTREAT uses latent diffusion with explicit cell-state, drug-identity, and dose conditioning to predict single-cell drug-response profiles.
+- **Authors:** Zhaokang Liang, Shuyang Zhuang, Xiaoran Jiao, Weian Mao, Hao Chen, Chunhua Shen
+- **arXiv:** `2510.11726v3` (published 2025-10-08T16:17:39Z; updated 2026-11-05T09:23:34Z; categories: `q-bio.QM`, `cs.LG`)
+- **Evidence for ranking:** v3 revision in the batch; evaluated on condition-level pseudobulk profiles from the Tahoe-100M atlas for unseen cell-line–drug combinations and unseen drugs.
+- **Claimed contribution:** The authors report best scores on 10/12 metrics for unseen combinations and 11/12 for unseen drugs among the compared methods.
+- **Caveat:** The benchmark is computational and uses condition-level pseudobulk profiles; predicted responses need independent experimental validation and should not be treated as treatment evidence.
+- **Announcement type:** revision, 2026-11-06 batch
+- **Themes:** RNA & transcriptomics; Biomedical & translational medicine; Quantitative methods
+
+### 8. [How Deep is the Signal? Time-Context up to 30 Years for Colorectal Cancer Prediction in a Primary-Care EHR Model](https://arxiv.org/abs/2611.07265)
+- **Abstract:** This study tests how far back a primary-care EHR model needs to look to predict incident colorectal cancer using nested calendar-time windows.
 - **Authors:** Achille Raviez, Lan Wang, Brendan Delaney
 - **arXiv:** `2611.07265v1` (published 2026-11-05T00:34:47Z; categories: `cs.LG`, `cs.AI`, `q-bio.QM`)
-- **Evidence for ranking:** Accepted at Machine Learning for Health 2026 (Findings Track); the authors evaluate a frozen cohort of 1,008 cases and 9,582 matched controls after pretraining on 3.6 million primary-care patients.
-- **Claimed contribution:** The authors report AUROC rising from 0.551 with a two-year lookback to 0.590 at 18 years before plateauing; XGBoost reached a similar peak of 0.589. They propose calendar-time context as a distinct design variable for EHR models.
-- **Caveat:** This is a retrospective prediction study in one North West London health system, with modest discrimination and no prospective or clinical-utility evaluation. It is not evidence of a validated screening test.
+- **Evidence for ranking:** Accepted at Machine Learning for Health 2026 (Findings Track); evaluates a frozen cohort of 1,008 cases and 9,582 matched controls, after pretraining on 3.6 million primary-care patients.
+- **Claimed contribution:** The authors report AUROC rising from 0.551 at a two-year lookback to 0.590 at 18 years before plateauing; XGBoost reached a similar peak of 0.589.
+- **Caveat:** Retrospective prediction in one North West London health system with modest discrimination; no prospective utility is shown, so this is not a validated screening test.
 - **Announcement type:** new submission, 2026-11-06 batch
 - **Themes:** Biomedical & translational medicine; Quantitative methods
 
-### 6. [Resampling-based batch reweighting for ComBat harmonization of MRI radiomic features in a multi-scanner glioma cohort](https://arxiv.org/abs/2611.02156)
-- **Abstract:** A revised study tests whether reweighting underrepresented scanner batches before ComBat estimation reduces residual scanner effects in glioma MRI radiomic features.
+### 9. [Resampling-based batch reweighting for ComBat harmonization of MRI radiomic features in a multi-scanner glioma cohort](https://arxiv.org/abs/2611.02156)
+- **Abstract:** This revised MRI study tests whether reweighting underrepresented scanner batches before ComBat estimation reduces residual scanner effects in glioma radiomic features.
 - **Authors:** Rifa Sajda Tasnim, Yushuf Sharker, Md Forhad Hossain, Rakibur Rahman, Enamul Hoque Bhuiyan
 - **arXiv:** `2611.02156v2` (published 2026-11-01T19:43:22Z; updated 2026-11-05T13:40:38Z; categories: `eess.IV`, `physics.med-ph`)
-- **Evidence for ranking:** Substantive v2 revision in the latest announcement batch; direct medical-imaging relevance. The arXiv record says the article was submitted to the Journal of Magnetic Resonance Imaging.
-- **Claimed contribution:** In a retrospective, single-centre Erasmus Glioma Database cohort of 733 patients across nine scanner configurations, the authors report that batch-augmented ComBat reduced features with significant residual scanner association from 13/428 with standard ComBat to 8/428.
-- **Caveat:** This remains a single-centre radiomics harmonization analysis; the reported reduction does not establish external generalization or improved patient outcomes.
+- **Evidence for ranking:** v2 revision in the batch; retrospective Erasmus Glioma Database cohort of 733 patients, one center, nine scanner configurations; arXiv comments say submitted to JMRI.
+- **Claimed contribution:** The authors report significant residual scanner association in 13/428 features after standard ComBat versus 8/428 after batch-augmented ComBat.
+- **Caveat:** Single-center radiomics harmonization; reduced scanner association does not establish external generalization or improved patient outcomes.
 - **Announcement type:** revision, 2026-11-06 batch
-- **Themes:** Biomedical & translational medicine; Quantitative methods
+- **Themes:** Medical physics & imaging; Biomedical & translational medicine; Quantitative methods
 
-### 7. [Accelerating reaction network identification via frequency-domain analysis](https://arxiv.org/abs/2611.07684)
-- **Abstract:** The authors report that Fourier-domain measurements can make likelihoods approximately Gaussian in some intracellular reaction systems, enabling faster Bayesian network inference in an illustrative transcription example.
-- **Authors:** Zhou Fang, Wenying Sun, Xiaoyu Zhang, Mustafa Khammash
-- **arXiv:** `2611.07684v1` (published 2026-11-05T09:11:41Z; categories: `q-bio.MN`)
-- **Evidence for ranking:** Primary category `q-bio.MN` and direct relevance to intracellular reaction-network inference; the abstract describes an illustrative gene-transcription example.
-- **Claimed contribution:** The authors identify a condition under which a Fourier transform approximately Gaussianizes the measurement likelihood and use it to construct an accelerated Bayesian inference algorithm.
-- **Caveat:** The abstract reports one illustrative example, not broad experimental validation; the approximation is stated to apply only to certain systems.
+### 10. [Geometric Relevance Is Not Sufficient: Evaluating Focused Post-Training Supervision in Diffusion Docking](https://arxiv.org/abs/2611.08249)
+- **Abstract:** A fixed-budget DiffDock study compares broad continuation with focused torsional supervision and finds no consistent advantage for focused strategies on its reported docking endpoints.
+- **Authors:** Michael Brown, Maryam Rahimimovassagh, Mehdi Yazdani-Jahromi, Sanjeda Sara Jennifer, Ivan Garibay
+- **arXiv:** `2611.08249v1` (published 2026-11-05T16:26:44Z; categories: `cs.LG`, `q-bio.BM`)
+- **Evidence for ranking:** Direct molecular-docking relevance; accepted at the NeurIPS 2026 AI4DD Workshop. Evaluation separates score fidelity, generated-pose quality, best-of-10 sampling, and confidence-selected Top-1 performance.
+- **Claimed contribution:** The authors report that broad continuation had the highest mean trained-policy Top-1 success below 5 Å; focused or mixed supervision did not consistently improve success under the tested budget.
+- **Caveat:** This is a computational result for DiffDock under one fixed training budget; it does not establish improved docking in prospective or experimental settings.
 - **Announcement type:** new submission, 2026-11-06 batch
-- **Themes:** Molecular & cell biology; Quantitative methods
+- **Themes:** Biochemistry & proteins; Quantitative methods
 
 ## Trending Research Themes
 
-- **Evaluation beyond a single proxy:** BILBY separates static motif recovery from MD-supported dynamics; the docking study separately evaluates score fidelity, pose recovery, and confidence-selected ranking. These are methodological findings in two selected papers, not proof of a field-wide shift.
-- **AI models that connect biological scales:** MUSS links DNA sequence to cell-specific chromatin and expression, while PharmAgents2 organizes decisions across drug-discovery workflows. Both are computational systems; only PharmAgents2 reports human-run experimental follow-up.
-- **Prediction in real clinical data and imaging pipelines:** The colorectal EHR paper studies long calendar-time context, and the glioma MRI revision studies scanner-batch harmonization. Neither reports prospective clinical utility; the MRI study is a single-centre retrospective analysis.
-- **Mechanistic inference remains model-dependent:** The reaction-network paper uses one transcription example to illustrate a frequency-domain approximation; broader biological validation is still needed.
+- **Single-cell genomics meets learned representations:** MUSS, Cellina, Thalamus-Reasoning, scTREAT, and the imputation benchmark all model or evaluate links among expression, regulatory context, or drug response. Their tasks and validation differ; most outputs are predictive rather than causal.
+- **Evaluation is becoming more task- and context-specific within this batch:** The imputation benchmark spans 30 datasets and six tasks; BILBY tests molecular dynamics beyond static recovery; the docking paper separates pose quality from score fidelity; and the EHR study varies calendar-time context. These examples do not establish a field-wide shift.
+- **Computational discovery paired with downstream checks:** PharmAgents2 reports human-run biochemical, cellular, and binding assays. By contrast, MUSS, Cellina, Thalamus-Reasoning, scTREAT, and docking primarily report computational benchmarks; they should not be described as experimentally validated biology.
+- **Clinical prediction and imaging remain retrospective:** The colorectal EHR analysis is from one health system, and the MRI harmonization study is from one center. Neither demonstrates prospective clinical utility.
 
 ## Open Problems and Research Directions
 
-- **Replicate agent-generated findings and resolve mechanisms:** PharmAgents2 reports experimental activity and binding for candidate compounds, while its LpxH site/mechanism remains under validation. Independent, blinded replication and orthogonal target-engagement or mutational studies could test those claims; broader selectivity and pharmacology panels would be needed before any therapeutic inference.
-- **Connect protein-design benchmarks to function:** BILBY shows that static structural recovery is not equivalent to simulated dynamical support. Longer or replicated trajectories and experimental stability/activity assays on a preselected subset could test how these computational criteria relate to function.
-- **Test genomic models beyond benchmark datasets:** MUSS could be assessed on independent tissues, assays, and held-out regulatory elements, followed by perturbation experiments for prespecified enhancer–gene predictions. This would address generalization and causal evidence separately.
-- **Evaluate clinical models externally:** The EHR and MRI papers motivate temporal/geographic cohort validation for colorectal prediction and scanner/site validation for radiomics harmonization. Prospective utility and patient outcomes remain untested in these reports.
-- **Stress-test reaction-network assumptions:** Compare the frequency-domain inference method against particle-filtering and independent measurements across reaction topologies, noise levels, and additional cell systems before generalizing beyond the transcription example.
+- **Test predicted biology experimentally:** For MUSS enhancer–gene links, Cellina tissue-neighborhood counterfactuals, and scTREAT drug responses, pre-register predictions and test them with perturbation assays across independent cell types. Separate agreement with expression benchmarks from causal evidence.
+- **Establish robustness beyond the training and benchmark settings:** Extend the scRNA-seq imputation comparisons and Thalamus-Reasoning evaluations to additional protocols, tissues, and independent cohorts; report uncertainty and task-specific errors rather than a single aggregate score.
+- **Replicate agent-generated chemistry:** PharmAgents2 reports three human-executed experimental follow-ups. Independent, blinded replication, orthogonal target-engagement assays, and selectivity/toxicity panels would help determine which findings persist; none would by itself establish clinical benefit.
+- **Validate clinical-data pipelines externally:** Test colorectal prediction across health systems and time periods, and MRI harmonization across independent hospitals and scanners. Prospective utility, calibration, and patient outcomes remain open.
+- **Tie structural benchmarks to function:** BILBY motivates longer or replicated dynamics simulations and biochemical activity/stability assays for selected designs, since the reported MD support is not equivalent to experimental function.
 
 ## Takeaway
 
-The batch’s clearest contribution is methodological: biological AI systems need evaluation against dynamic, held-out, or externally measured outcomes, not only convenient proxy metrics. PharmAgents2 provides the strongest translational bridge in this selection because it reports human-executed assays, but these are early discovery findings—not clinical validation. The other papers are computational or retrospective studies whose claims remain bounded by their datasets and validation designs.
+This batch is notable for how many papers make evaluation design central: results vary by cell type, task, dataset, temporal context, or physical criterion. PharmAgents2 provides the clearest experimental bridge, but only at early discovery-assay level. The rest are computational or retrospective findings, and the list is ranked by relevance rather than measured attention.
 
 ## Method and sources
 
-- **Window:** daily announcement batch dated 2026-11-06 (Friday). The current date, 2026-11-08, has no newer announcement batch, so this uses the most recent prior batch. Announcement window: 2026-11-06 through 2026-11-06. New submissions were first submitted on 2026-11-05 UTC; the included revision was updated on 2026-11-05. Snapshot: 2026-11-08 01:19:00 UTC.
-- **Candidate query:** arXiv API query over `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, `cs.BI`, and `physics.med-ph`, sorted by submitted date. The first 200 results included all 14 new-submission records dated 2026-11-05 and extended back to 2026-10-21; version metadata added one eligible revision, `2611.02156v2`. All 15 eligible announcement records’ abstract pages were checked; the seven selected papers’ versions, authors, categories, and metadata were verified. The top three papers were read in full-text HTML for methods, results, and limitations/caveats.
-- **Ranking:** Papers are ordered by relevance to molecular biology and biomedicine and strength/type of reported evidence, using venue/status or substantive revision as checkable supporting signals where present. No numeric trend score is assigned.
-- **Coverage:** This is not a comprehensive survey of biomedical research. Many clinical and experimental biology preprints appear on bioRxiv or medRxiv, and purely computational/retrospective results here are not practice-changing evidence.
-- **Sources:** [arXiv quantitative biology new listings](https://arxiv.org/list/q-bio/new); [category query](https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200); [PharmAgents2](https://arxiv.org/abs/2611.07653); [BILBY](https://arxiv.org/abs/2611.07723); [MUSS](https://arxiv.org/abs/2611.08086); [DiffDock post-training](https://arxiv.org/abs/2611.08249); [colorectal EHR model](https://arxiv.org/abs/2611.07265); [MRI harmonization revision](https://arxiv.org/abs/2611.02156); [reaction-network inference](https://arxiv.org/abs/2611.07684).
+- **Window:** Daily announcement batch dated 2026-11-06 (Friday), the latest batch available on 2026-11-08; no Sunday batch. Exact announcement window: 2026-11-06 through 2026-11-06. The new submissions and revisions included here were submitted or updated on 2026-11-05 UTC. Snapshot: 2026-11-08T17:13:04Z.
+- **Candidate pool:** The configured categories were `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, `cs.BI`, and `physics.med-ph`. The descending submitted-date query returned 200 records and extended through 2026-10-21; a second descending last-updated-date query returned 200 records and extended through 2026-10-28. Together these captured 14 first submissions and 8 revisions dated 2026-11-05. Selected papers were checked on their arXiv abstract pages; the three lead papers were also read in PDF text for methods, results, and limitations.
+- **Category query:** `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`. Results were sorted by submitted date and last-updated date, descending, with `max_results=200`.
+- **Ranking:** Attention evidence is sparse, so the papers are labeled notable recent papers and ordered by biological/biomedical relevance and the scope/type of reported evidence. Semantic Scholar citation counts for the newest submissions were zero at this snapshot; venue status and revision status are stated where present. No downloads or views are inferred.
+- **Coverage:** arXiv is an incomplete biomedical index; many clinical and experimental biology preprints appear on bioRxiv or medRxiv. This is not a systematic review or clinical evidence assessment.
+- **Sources:** [arXiv q-bio.BM recent listings](https://arxiv.org/list/q-bio.BM/recent), [q-bio.GN](https://arxiv.org/list/q-bio.GN/recent), [q-bio.MN](https://arxiv.org/list/q-bio.MN/recent), [q-bio.SC](https://arxiv.org/list/q-bio.SC/recent), [q-bio.CB](https://arxiv.org/list/q-bio.CB/recent), [q-bio.TO](https://arxiv.org/list/q-bio.TO/recent), [q-bio.QM](https://arxiv.org/list/q-bio.QM/recent), [physics.med-ph](https://arxiv.org/list/physics.med-ph/recent); arXiv API query over the categories above; Semantic Scholar Graph API metadata queried for citation corroboration. Individual arXiv abstract links are provided in each entry.

@@ -1,0 +1,67 @@
+{
+  "schema": "giant-watch-report/v2",
+  "category": "giant-watch",
+  "window": "daily",
+  "date": "2026-11-09",
+  "title": "Giant Watch Summary - Daily - 2026-11-09",
+  "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-11-09.md",
+  "entry_count": 2,
+  "entry_noun": "events",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Zhipu's GLM models are being folded into China Mobile's model service system under a strategic partnership signed November 6, while OpenAI's in-window signal is limited to ChatGPT Edu product pages. The day's episode is about distribution channels, not new model capability."
+    },
+    {
+      "id": "01-event",
+      "kind": "event",
+      "rank": 1,
+      "event_id": "evt-001",
+      "title": "China Mobile and Zhipu sign strategic AI partnership; GLM models join carrier model service system",
+      "organizations": [
+        "GLM"
+      ],
+      "status": "verified",
+      "content": "China Mobile and Zhipu (Z.ai) signed a cooperation agreement on November 6, with Zhipu CEO Zhang Peng and China Mobile Cloud general manager Sun Shaoling signing, as reported by The Paper. The partnership covers domestic compute adaptation, token production efficiency, AI coding products, and finance and government applications, and folds the GLM model family into China Mobile's model service system to speed industry-scale adoption.",
+      "significance": "Gives Zhipu a carrier-grade distribution path to enterprise and government customers and strengthens China Mobile's model supply layer, making GLM call volumes on China Mobile Cloud and delivery speed of joint finance/government solutions the metrics to watch.",
+      "refs": [
+        "https://www.ninezenith.com/en/insights/aiapp-chinamobile-zhipu.html",
+        "https://www.ninezenith.com/insights/aiapp-chinamobile-zhipu.html"
+      ],
+      "related_event_ids": [
+        "evt-002"
+      ],
+      "transition_hint": "The other in-window signal comes from a different vendor and a different kind of channel: education rather than telecom."
+    },
+    {
+      "id": "02-event",
+      "kind": "event",
+      "rank": 2,
+      "event_id": "evt-002",
+      "title": "OpenAI ChatGPT Edu pages position GPT-5 for campus-wide deployment",
+      "organizations": [
+        "OpenAI"
+      ],
+      "status": "verified",
+      "content": "OpenAI's ChatGPT Edu pages, dated November 8, describe an education offering for universities covering students, faculty, researchers, and campus administrators, with message limits far above free ChatGPT and GPT-5 described as the flagship model. The pages list no-training-on-data commitments, SAML SSO and domain verification, custom retention, SOC 2 Type 2 and ISO certifications, SCIM, group permissions, and admin analytics, and include a customer quote on student privacy and research IP protection.",
+      "significance": "Signals OpenAI's continued push into institutional education distribution with compliance and admin controls as the selling points; the supplied material is product-page content rather than a dated launch announcement.",
+      "refs": [
+        "https://chatgpt.com/zh-Hant-HK/business/education/?openaicom_referred=true",
+        "https://chatgpt.com/zh-Hans-CN/business/education/?openaicom_referred=true",
+        "https://chatgpt.com/zh-Hant/business/education/?openaicom_referred=true"
+      ],
+      "related_event_ids": [
+        "evt-001"
+      ],
+      "transition_hint": ""
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Watch whether the China Mobile–Zhipu partnership produces measurable GLM usage and shipped finance/government solutions, and whether OpenAI's education pages are followed by an actual dated institutional rollout; the supplied material shows channel positioning more than product news."
+    }
+  ]
+}

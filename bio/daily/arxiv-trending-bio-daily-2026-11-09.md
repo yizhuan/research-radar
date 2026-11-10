@@ -1,165 +1,189 @@
-# Notable biology and biomedical papers — arXiv batch of 9 November 2026
+# arXiv Trending Biology and Biomedicine — Daily — 2026-11-09
 
-Daily snapshot: 2026-11-10 01:25:17 UTC. The latest available announcement batch is Monday, 9 November (today's Tuesday batch had not appeared at snapshot time). Thirteen papers are relevance-ranked below. The recurring agenda is computational biology with stronger data/validation settings, alongside translational imaging methods. arXiv has no official trending chart; this is an inferred relevance-and-evidence ranking, not a popularity ranking. Biomedical coverage on arXiv is incomplete: much clinical and experimental biology preprinting appears on bioRxiv or medRxiv.
+## Headline
 
-No checkable popularity signal was strong enough to call these the “hottest” papers, so this report is titled Notable recent papers. Some entries were cross-listed into a relevant arXiv category in the 9 November batch; their original submission timestamps are shown separately. No revisions are included.
+Latest arXiv biology/biomedicine batch (Monday, 9 November 2026): 15 notable papers selected. This uses the prior announcement batch; the 10 November batch was not yet announced at snapshot time. The clearest cluster is computational protein and genome modeling alongside single-cell analysis; two papers also test AI-guided experimental workflows against biological recordings or organoid assays. Today’s agenda: protein ensembles and design, genome and transcriptome efficiency, evaluation integrity, and the boundary between model predictions and experiments. arXiv has no official trending chart; this is an inferred relevance ranking from one batch and reported evidence, not popularity. Its biomedical coverage is incomplete.
 
-## Notable recent papers (relevance-ranked)
+## Notable recent papers (ranked by relevance)
 
-### 1. [Synchronized Optimal Transport Reconstructs Coupled Transcriptomic and Chromatin Dynamics](https://arxiv.org/abs/2611.08853)
-- **Abstract:** COATI models RNA and ATAC developmental trajectories in separate spaces and is evaluated on synthetic data and four developmental datasets, including held-out-stage reconstruction.
-- **Authors:** Jingfeng Wang; Yanxiang Zhao; Qing Nie; Zixuan Cang
-- **arXiv:** `2611.08853v1` (published 2026-11-06T01:19:41Z; categories: `q-bio.GN`, `math.OC`)
-- **Evidence for ranking:** Close fit to the requested RNA/genomics focus; the authors report four developmental datasets, held-out-stage tests, and agreement of inferred lineage responses with independent CRISPR perturbation and epigenetic results.
-- **Claimed contribution:** The authors say synchronized unbalanced optimal transport improves held-out population reconstruction and preserves chromatin heterogeneity and developmental lineage relationships.
-- **Caveat:** Trajectories are inferred from destructive snapshots, not tracked individual cells; results depend on a pretrained RNA-to-ATAC map and do not establish true lineage paths.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** RNA & transcriptomics; Gene regulation & epigenetics; Omics & single-cell methods
+### 1. [BioMARS 2.0: a robotic biologist for formulating and adapting biological experiments](https://arxiv.org/abs/2611.12139)
+- **Abstract:** A human-in-the-loop robotic system links literature-grounded protocol generation, phenotype-guided retinal-organoid culture optimization, and researcher-led testing of six nominated drug candidates.
+- **Authors:** Yibo Qiu, Zan Huang, Yilin Qiao, Ziyang Ling, Yi Wang, Zhengyang Lu, Hangke Peng, Haoliang Ye, Ao Tian, Shu'ang Sun, Handi Liu, Yuqing Long, Mohan Yang, Kan Ding, Zhenzhen Zhou, Di Wu, Yu Xiong, Yaxuan Han, Jun'ao Song, Haoran Zhang, Ronald X Xu, Mingzhai Sun
+- **arXiv:** `2611.12139v1` (published 2026-11-09 09:51:45 UTC; categories: `cs.RO`, `q-bio.QM`)
+- **Evidence for ranking:** Authors report expert-reviewed protocol scoring across four model backends, three rounds of robotic retinal-organoid condition selection, and six candidates advanced to wet-lab screening; this is unusually direct experimental feedback in the selected batch.
+- **Claimed contribution:** The authors say BioMARS connects experiment formulation, culture adaptation and intervention selection in one workflow; the evidence comprises separate protocol, organoid-culture and drug-screen studies in the preprint.
+- **Caveat:** The organoid work is a specific culture-optimization demonstration, and candidate screening is preliminary ATP-based in-vitro evidence; it establishes neither general laboratory autonomy nor therapeutic efficacy.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Molecular & cell biology, Quantitative methods
 
-### 2. [Health-System-Wide Mapping of Demographic Information in Routine Clinical Histopathology](https://arxiv.org/abs/2611.09851)
-- **Abstract:** An analysis of 1.3 million H&E slides from 257,322 patients across 25 organs found that models could recover sex, age group, and self-reported race from histology, with performance varying by organ and label.
-- **Authors:** Shengjia Chen; Ruchika Verma; Kevin Clare; Paula Restrepo; Jannes Jegminat; Eugenia Alleva; Kuan-lin Huang; Aryeh Stock; Brandon Veremis; Thomas Fuchs; Gabriele Campanella
-- **arXiv:** `2611.09851v1` (published 2026-11-06T18:34:51Z; categories: `cs.CV`, `q-bio.QM`)
-- **Evidence for ranking:** Direct biomedical relevance and unusually broad cohort scale: 1.3 million slides, 257,322 patients, 25 organs, and 69 organ-demographic combinations in the authors' analysis.
-- **Claimed contribution:** The authors provide a systematic map of demographic-associated information in routine histopathology and identify possible implications for shortcut learning; explanations for the signals remain hypotheses.
-- **Caveat:** Predictability does not identify its biological or social source. This is a retrospective single-health-system analysis; diagnosis grouping is not external replication or causal evidence.
-- **Announcement type:** New submission, cross-listed into q-bio.QM; announcement-batch date 2026-11-09.
-- **Themes:** Biomedical & translational medicine; Quantitative methods
+### 2. [Toward Controlling Biology with Language: Offline Learning of Prompt-Conditioned Interventions for Cells, Organoids, and Biobots](https://arxiv.org/abs/2610.02247)
+- **Abstract:** The revised study reanalyzes 155 archived xenobot recordings and trains a prompt-to-intervention model to map natural-language requests to electrical-pulse durations for behaviors that the pulse can control.
+- **Authors:** Nam H. Le, Douglas Blackiston, Michael Levin, Josh Bongard
+- **arXiv:** `2610.02247v2` (published 2026-09-30 16:49:01 UTC; updated 2026-11-09 17:09:57 UTC; categories: `q-bio.QM`, `cs.AI`, `cs.CV`, `cs.NE`, `cs.RO`)
+- **Evidence for ranking:** The v2 update reports a full reanalysis with two independent trackers, eight measured behaviors, 176 instructions, and tests on unseen instructions and bots; stopping within ten minutes rose from 0/22 at pulses ≤30 seconds to 17/19 above 220 seconds.
+- **Claimed contribution:** The authors report that an archive can support a calibrated language interface for three dose-responsive behaviors, while the model declines to claim control over behaviors not associated with pulse duration.
+- **Caveat:** There is no sham-control group, only pulse duration is varied, and the results are associations and predictions from archived xenobot recordings—not causal evidence in human cells or a general language-to-biology interface.
+- **Announcement type:** revision, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Molecular & cell biology, Quantitative methods
 
-### 3. [Personalized health coaching via coachable health age and counterfactual wearable trajectories](https://arxiv.org/abs/2611.08568)
-- **Abstract:** The authors combine a wearable-derived health-age metric with a model trained on over 2.2 million person-weeks to forecast responses to lifestyle changes and generate counterfactual coaching plans, evaluated across three cohorts and by expert reviewers.
-- **Authors:** Simon A. Lee; Zeinab Esmaeilpour; Menglian Zhou; Marius Guerard; Sohrab Sidhu; Alexandru Solot; Hamid Palangi; Pramod Rudrapatna; Ming-Zher Poh; Max A. Xu; Daniel McDuff; Dimitrios Antos; Yuzhe Yang; Jeffrey N. Chiang; Anthony Z. Faranesh; Lindsey Sunden; Mark Malhotra; Shwetak Patel; A. Ali Heydari; Ahmed A. Metwally
-- **arXiv:** `2611.08568v1` (published 2026-11-05T17:52:57Z; categories: `q-bio.QM`, `cs.LG`)
-- **Evidence for ranking:** The paper reports cohorts of 2,780, 22,748, and 1,464 participants, SensorWM pretraining on about 100,000 people, and blinded coach/clinician review of generated plans.
-- **Claimed contribution:** The authors report improved prognostic discrimination over age, sex, and BMI, multi-week response forecasts, and higher expert preference for counterfactual-grounded plans.
-- **Caveat:** Forecast accuracy and expert review do not show that plans change behavior or health outcomes; the abstract reports no prospective intervention.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** Biomedical & translational medicine; Quantitative methods
+### 3. [OriDynamics: Towards a World Model for Biomolecular Dynamics](https://arxiv.org/abs/2611.11958)
+- **Abstract:** OriDynamics generates all-atom ensembles for proteins and protein–ligand or protein–protein complexes, aiming to model alternative conformations and coordinated atomic fluctuations.
+- **Authors:** Jiahao Yang, Dong Liu, Hongliang Li, Ji Chen, Yuehua Liu, Daoyun Ding, Duo An, Jun Li, Jiahua Rao, Ziqiao Zhang, Peicong Lin, Shuangjia Zheng
+- **arXiv:** `2611.11958v1` (published 2026-11-09 06:20:58 UTC; categories: `q-bio.BM`)
+- **Evidence for ranking:** The preprint reports comparisons on protein and complex benchmarks for conformational coverage, fluctuation fidelity and interaction geometry, plus application analyses of alternative states, partner effects and ligand dissociation.
+- **Claimed contribution:** The authors propose latent ensemble decomposition with ensemble-level supervision of means, fluctuation amplitudes and coordinate covariance as a computational route to context-dependent biomolecular ensembles.
+- **Caveat:** Evidence is computational benchmark and case-study performance; generated ensembles are not direct biochemical measurements, and the paper’s “world model” language is an aspiration rather than demonstrated experimental utility.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Biochemistry & proteins
 
-### 4. [Navigating Selection Bias in Genome-wide Association Studies (GWAS)](https://arxiv.org/abs/2611.09429)
-- **Abstract:** This methods review organizes ten ways to diagnose or correct GWAS selection bias by available data and selection mechanism, with R implementations for nine methods and simulated examples.
-- **Authors:** Ciarrah-Jane S Barry; Tahereh Gholipourshahraki; Zoltán Kutalik; Bjarni J Vilhjálmsson; Esben Agerbo
-- **arXiv:** `2611.09429v1` (published 2026-11-06T13:00:13Z; categories: `stat.ME`, `q-bio.GN`, `q-bio.QM`)
-- **Evidence for ranking:** Broad relevance to human genetics and biobank inference; the authors compare ten methods, state assumptions and data needs, and provide code plus worked simulations.
-- **Claimed contribution:** The review offers a decision framework for participation, case-control, index-event, sex-differential, and survival-related selection bias.
-- **Caveat:** This is a methods synthesis, not new population-scale validation; every correction remains conditional on its assumptions and required data.
-- **Announcement type:** New submission, cross-listed into q-bio.GN/QM; announcement-batch date 2026-11-09.
-- **Themes:** DNA & genomics; Quantitative methods
+### 4. [scBIG++: Learning Across Genes and Cells to Predict Single-Cell Perturbation Responses](https://arxiv.org/abs/2611.11217)
+- **Abstract:** scBIG++ predicts single-cell transcriptional perturbation responses over all retained measured protein-coding genes using expression-adaptive gene modules and population-conditioned generation.
+- **Authors:** Jiafa Ruan, Zican Qiao, Zongxin Yang, Ruijie Quan, Yi Yang
+- **arXiv:** `2611.11217v1` (published 2026-11-08 08:08:31 UTC; categories: `cs.LG`, `cs.AI`, `q-bio.GN`)
+- **Evidence for ranking:** Authors evaluate six genetic and chemical settings spanning 6,539–19,451 genes, including unseen targets and combinations, cross-cell-line transfer and held-out compounds; they report gains over scBIG on all three Norman protocols.
+- **Claimed contribution:** The preprint claims that cell-adaptive gene grouping and exchange of information across control cells improve full-gene perturbation prediction and reconstruction.
+- **Caveat:** This is retrospective computational evaluation of existing perturbation data, not a validation that the generated profiles reproduce new biological responses; rare states and diverse contexts remain open.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** RNA & transcriptomics, Omics & single-cell methods, Bioinformatics & sequence analysis
 
-### 5. [Dual-energy cardiac DSA imaging using a dual-layer flat-panel detector: in vivo validation study](https://arxiv.org/abs/2611.08820)
-- **Abstract:** A dual-energy material-decomposition method using a dual-layer detector is evaluated with simulations and preliminary in-vivo swine cardiac angiography; the authors report improved vessel contrast and reduced scatter effects.
-- **Authors:** Yuhang Tan; Jiongtao Zhu; Xin Zhang; Haodi Wu; Xiao Xuan; Mang Feng; Mingzhi Cui; Hairong Zheng; Dong Liang; Yongshuai Ge
-- **arXiv:** `2611.08820v1` (published 2026-11-06T00:22:13Z; categories: `physics.med-ph`)
-- **Evidence for ranking:** Direct imaging validation: Monte Carlo simulations and in-vivo swine experiments on a clinical DSA system; the authors report over 80% lower scatter impact in simulation.
-- **Claimed contribution:** The authors propose temporally subtracted low/high-energy projections with penalized-likelihood decomposition to improve cardiac vessel visualization without requiring precise scatter correction.
-- **Caveat:** Preliminary animal validation is not human clinical evidence; broader motion and multi-material performance remain to be tested.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** Medical physics & imaging; Biomedical & translational medicine
+### 5. [HyPLM Technical Report](https://arxiv.org/abs/2611.12000)
+- **Abstract:** HyPLM-Flash is a 650-million-parameter protein language model and inference engine designed to reduce protein-sequence modeling cost while retaining benchmark performance.
+- **Authors:** Haowei Lin, Cai Zhou, Xiangxin Zhou
+- **arXiv:** `2611.12000v1` (published 2026-11-09 07:37:34 UTC; categories: `cs.LG`, `q-bio.BM`)
+- **Evidence for ranking:** The technical report compares 28 public checkpoints on 32 tasks, reports ProteinGym zero-shot Spearman 0.409, long-range contact precision 0.650 at L/5, and about 130,000 residues per second on one NVIDIA H20 (1.9–2.7× its compared 600M-class encoders).
+- **Claimed contribution:** The authors claim a favorable accuracy–compute trade-off against the evaluated public models; these are benchmark results reported in the technical report.
+- **Caveat:** The evidence is benchmark-based and hardware-specific; contact and fitness scores do not establish experimental protein function, and independent reproduction is not reported here.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Biochemistry & proteins, Bioinformatics & sequence analysis
 
-### 6. [KineCouple: Substrate-conditioned residual readout for enzyme kinetic prediction](https://arxiv.org/abs/2611.09377)
-- **Abstract:** KineCouple uses substrate-conditioned cross-attention over residue features to predict enzyme kcat and Km, reporting small pooled out-of-fold improvements over reproduced CataPro results.
-- **Authors:** Chun Kang; Yunbo Zhang; Fanhu Zeng; Jian Liu; Siwei Deng; Lei Sha
-- **arXiv:** `2611.09377v1` (published 2026-11-06T12:17:54Z; categories: `cs.AI`, `q-bio.QM`)
-- **Evidence for ranking:** Direct enzyme-kinetics relevance and a benchmark comparison; reported kcat RMSE/PCC move from 1.333/0.492 to 1.330/0.496, and Km from 0.998/0.633 to 0.997/0.634.
-- **Claimed contribution:** The authors condition residue-level aggregation on substrate features while keeping ProtT5 and MolT5 encoders frozen.
-- **Caveat:** Metric gains are small; repeated-run variability and matched controls are needed, and attention weights do not establish physical catalytic contacts.
-- **Announcement type:** New submission, cross-listed into q-bio.QM; announcement-batch date 2026-11-09.
-- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis; Quantitative methods
+### 6. [GeneZip: Region-Aware Compression for Long Context DNA Modeling](https://arxiv.org/abs/2602.17739)
+- **Abstract:** GeneZip allocates a limited token budget adaptively across DNA regions, compressing redundant sequence more strongly while preserving predictive information in functionally dense regions.
+- **Authors:** Jianan Zhao, Xixian Liu, Zhihao Zhan, Xinyu Yuan, Hongyu Guo, Jian Tang
+- **arXiv:** `2602.17739v4` (published 2026-02-19 09:53:35 UTC; updated 2026-11-09 03:04:05 UTC; categories: `q-bio.GN`, `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** The v4 record reports 137.6-fold compression with a 0.31 validation-perplexity increase versus uncompressed Mamba2-84M, best average rank among leakage-controlled compression models on four DNA-long-context tasks, and 36.1× throughput on 450-kb inputs.
+- **Claimed contribution:** The authors say region-aware compression can lower long-context DNA modeling cost and report that repeat-aware allocation also transfers to a nine-species panel.
+- **Caveat:** These are computational language-model benchmarks; region labels guide training, and no downstream experimental genomics outcome is demonstrated in the abstract.
+- **Announcement type:** revision, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** DNA & genomics, Bioinformatics & sequence analysis
 
-### 7. [Smart Spectral Doppler Ultrasound Imaging using Motion Tracking based on Wide-beam transmission and Neural Networks: Preliminary Results](https://arxiv.org/abs/2611.09002)
-- **Abstract:** A single-transmit wide-beam Doppler method tracks vessel motion and updates the sample volume; simulations and in-vivo carotid-artery and hepatic-vein demonstrations report improved spectral signal-to-noise under tissue motion.
-- **Authors:** Jihye Baek; Allison Lee; Jinbum Kang; Yangmo Yoo
-- **arXiv:** `2611.09002v1` (published 2026-11-06T05:18:42Z; categories: `physics.med-ph`)
-- **Evidence for ranking:** The authors report Field II simulations plus in-vivo demonstrations in two vessels, with spectral-SNR gains of 9.3 dB and 4.5 dB respectively.
-- **Claimed contribution:** Wide-beam transmission aims to preserve pulse-repetition frequency while a lightweight tracker follows motion and repositions the Doppler sample volume.
-- **Caveat:** In-vivo evidence is limited to two demonstrations; performance across patients, pathologies, and routine clinical workflows is not established.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** Medical physics & imaging; Biomedical & translational medicine
+### 7. [AI-based characterization of lymphoid structures and the tumor microenvironment reveals lower mature tertiary lymphoid structures, lymph-node follicles, and plasma cells after neoadjuvant therapy in lung squamous cell carcinoma](https://arxiv.org/abs/2611.12855)
+- **Abstract:** A computational histology analysis compares lymphoid structures and immune-cell distributions in neoadjuvant-treated versus therapy-naive lung squamous cell carcinoma and tests prognostic associations in a separate cohort.
+- **Authors:** Arne Schmidt, Justin Nieder, Cornelius Boehm, Julika Ribbat-Idel, Marius Teodorescu, Marie-Lisa Eich, Simon Schallenberg, Gabriel Dernbach, Katja Lingelbach, Miriam Haegele, Timo Milbich, Adam Narai, Maria Stoelben, Hans Pinckaers, Lukas Ruff, Kai Standvoss, Christian Watermann, Christiane Kuempers, Sven Perner, Verena Sailer, Jasmin Tiebach, Torsten Goldmann, Sebastian Marwitz, Johannes Braegelmann, Frederick Klauschen, Marija Pezer, Rosemarie Krupar
+- **arXiv:** `2611.12855v1` (published 2026-11-09 18:45:06 UTC; categories: `cs.CV`, `q-bio.QM`)
+- **Evidence for ranking:** The authors report matched cohorts of 20 treated and 20 untreated patients, pathologist-annotated model validation, and an independent cohort of 458 (46 treated); stromal plasma-cell density and co-localization were associated with longer survival in that validation cohort.
+- **Claimed contribution:** The preprint reports treatment-associated differences in mature lymphoid structures and a candidate prognostic immune-cell axis, not a treatment effect or validated clinical biomarker.
+- **Caveat:** The cohort comparison is observational and small in the treated group; residual confounding and prospective external validation are needed before prognostic or clinical use can be inferred.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Biomedical & translational medicine, Molecular & cell biology
 
-### 8. [SmartBloch-Agent: An Agentic Framework for Automated MRI Sequence Design and Optimization](https://arxiv.org/abs/2611.09413)
-- **Abstract:** SmartBloch-Agent uses an AI agent and an in-house Bloch simulator to turn natural-language imaging objectives into MRI sequence designs, simulations, reconstructions, and optimization feedback.
-- **Authors:** Jiakai Yang; Haoye Zheng; Yixiao Yue; Qinqin Yang; Zhong Chen; Shuhui Cai; Congbo Cai
-- **arXiv:** `2611.09413v1` (published 2026-11-06T12:44:55Z; categories: `physics.med-ph`, `cs.AI`, `eess.IV`)
-- **Evidence for ranking:** Cross-listed across medical physics, AI, and imaging; the authors report automated experiments across varied objectives and improved parameter-estimation and quantitative-reconstruction metrics.
-- **Claimed contribution:** The framework links sequence construction, physical simulation, parameter search, reconstruction, and evaluation into an agent-driven research loop.
-- **Caveat:** Reported evidence is computational; scanner deployment and independent validation on acquired patient data are not established.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** Medical physics & imaging; Quantitative methods
+### 8. [When gene summaries reveal the answers: Gene Ontology circularity in gene embedding benchmarks](https://arxiv.org/abs/2611.11118)
+- **Abstract:** The study tests whether generated gene summaries expose Gene Ontology labels to text-embedding benchmarks, inflating apparent gene-function prediction performance.
+- **Authors:** Jiawei Wu, Huishu Wang, Junlin Chen, Hongyi Wang
+- **arXiv:** `2611.11118v1` (published 2026-11-08 04:05:52 UTC; categories: `cs.LG`, `q-bio.GN`)
+- **Evidence for ranking:** Generated summaries covered 6,172 of 19,256 human protein-coding genes; removing them lowered per-gene AUROC by 0.078 (95% bootstrap interval 0.072–0.084) for a linear probe among genes with 1–10 linked papers, with related effects in mouse and yeast.
+- **Claimed contribution:** The authors argue that benchmark inputs can leak evaluation annotations through generated summaries and introduce GeneProv for matched-text and alternative-endpoint evaluation.
+- **Caveat:** The authors state the historical GO scorer mishandled ties and original predictions are unavailable for rescoring, limiting how precisely the earlier benchmark results can be corrected.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** DNA & genomics, Bioinformatics & sequence analysis
 
-### 9. [Pangenome Peeling: Decomposing Weighted Adjacencies into Path-Forest Genomes](https://arxiv.org/abs/2611.09533)
-- **Abstract:** The authors define an inverse pangenome problem that reconstructs constituent linear genomes from weighted adjacency graphs and compare two algorithms on simulated data.
-- **Authors:** Alitzel López Sánchez; Jiazhen Leng; Natasha Ivanova; Lingling Jin; David Sankoff
-- **arXiv:** `2611.09533v1` (published 2026-11-06T14:45:32Z; categories: `cs.DM`, `q-bio.GN`)
-- **Evidence for ranking:** Direct genomics application, a formal problem definition and lower-bound result, and a simulation comparison using genome similarity and matching criteria.
-- **Claimed contribution:** The maximum-spanning-tree path decomposition reportedly recovers simulated constituent genomes more faithfully than sequential edge addition as genome size grows.
-- **Caveat:** Evaluation is simulation-based; performance on real, noisy pangenome graphs and ancestral genomes remains unshown.
-- **Announcement type:** New submission, cross-listed into q-bio.GN; announcement-batch date 2026-11-09.
-- **Themes:** DNA & genomics; Bioinformatics & sequence analysis
+### 9. [Co-folding model guided by structural proteomics](https://arxiv.org/abs/2605.26192)
+- **Abstract:** AIMS-Fold guides a pretrained co-folding model using both attractive and repulsive structural-proteomics constraints to predict proximity-inducing drug complexes without retraining.
+- **Authors:** Alon Shtrikman, Sagie Brodsky, Michal Ran Shchory, Nitzan Simchi, Yaron Ben Shoshan-Galeczki, Eran Seger, Kirill Pevzner
+- **arXiv:** `2605.26192v2` (published 2026-05-25 14:54:08 UTC; updated 2026-11-09 09:37:15 UTC; categories: `cs.LG`, `cs.AI`, `q-bio.BM`)
+- **Evidence for ranking:** The v2 report tests 28 PROTAC, glue and antibody complexes that Boltz-2 fails on; for 100 generated models across 20 seeds it reports 86% correct conformations with guidance versus 14% unguided.
+- **Claimed contribution:** The authors report that using negative as well as positive structural-proteomics evidence can improve in-silico complex-geometry recovery.
+- **Caveat:** The reported endpoint is structural-model recovery, not compound activity, degradation, binding or therapeutic efficacy; the evaluated complex set is limited.
+- **Announcement type:** revision, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Biochemistry & proteins, Biomedical & translational medicine
 
-### 10. [Protein B-factor modeling with local magnitude](https://arxiv.org/abs/2611.08832)
-- **Abstract:** A local geometric descriptor for protein structures modestly improves B-factor prediction across protein benchmarks while reducing feature-extraction cost for large structures.
-- **Authors:** Wanying Bi; Jian Liu; Hongsong Feng
-- **arXiv:** `2611.08832v1` (published 2026-11-06T00:39:33Z; categories: `q-bio.BM`)
-- **Evidence for ranking:** The authors use 364 proteins in fitting analyses and 345 in blind prediction across three validation protocols; local-feature gains are consistent but small.
-- **Claimed contribution:** Nearest-neighbor local magnitude features preserve residue-level structural information and have lower asymptotic factorization cost than global magnitude for large structures.
-- **Caveat:** Predictive gains are modest and experiments use a single-seed configuration; faster extraction is not universal for small proteins.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** Biochemistry & proteins; Quantitative methods
+### 10. [Efficient and Accurate Zero Shot Generation of Symmetric Protein Complexes](https://arxiv.org/abs/2611.10424)
+- **Abstract:** ZeUS uses symmetry-aware generation to convert existing equivariant backbones into efficient zero-shot generators of symmetric protein assemblies.
+- **Authors:** Rory Gao, Yuanzhou Chen, Prajit Rajkumar, Wei Wang
+- **arXiv:** `2611.10424v1` (published 2026-11-07 02:59:07 UTC; categories: `q-bio.BM`)
+- **Evidence for ranking:** The preprint applies its method to FrameDiff, FoldFlow and RFdiffusion, reports minimal degradation in generation quality, and demonstrates computational generation of assemblies exceeding 10,000 residues; arXiv lists it as a NeurIPS 2026 conference paper.
+- **Claimed contribution:** The authors use a quotient-space formulation and canonical-subunit inference to reduce memory and runtime with no retraining.
+- **Caveat:** Evidence concerns generated structures and computational efficiency; the paper does not establish that the designed assemblies express, fold or assemble experimentally.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Biochemistry & proteins
 
-### 11. [Hybrid Quantum-Classical Annealing for Protein Side-Chain Optimization: A Feasibility Study](https://arxiv.org/abs/2611.08696)
-- **Abstract:** A hybrid annealer is compared with Gurobi on 40 side-chain optimization instances derived from 20 experimentally determined protein structures; the authors report competitive or lower-energy solutions on larger instances.
-- **Authors:** Valeria B. C. Visani; Simone Reale; Alfonso Gautieri; Elisabetta Di Nitto
-- **arXiv:** `2611.08696v1` (published 2026-11-05T20:52:29Z; categories: `cs.ET`, `q-bio.BM`, `quant-ph`)
-- **Evidence for ranking:** A direct protein-design optimization task, 40 instances from 20 structures, and comparisons with a commercial solver at multiple runtime budgets.
-- **Claimed contribution:** The authors argue that side-chain optimization is a suitable binary-quadratic problem for testing hybrid annealing and report reaching certified optima when available.
-- **Caveat:** This is a feasibility study, not experimental protein-design validation; comparisons with heuristics tailored to side-chain optimization are still needed.
-- **Announcement type:** New submission, cross-listed into q-bio.BM; announcement-batch date 2026-11-09.
-- **Themes:** Biochemistry & proteins; Quantitative methods
+### 11. [KineCouple: Substrate-conditioned residual readout for enzyme kinetic prediction](https://arxiv.org/abs/2611.09377)
+- **Abstract:** KineCouple uses substrate-conditioned attention over residue features to predict enzyme kcat and Km values from sequence and substrate representations.
+- **Authors:** Chun Kang, Yunbo Zhang, Fanhu Zeng, Jian Liu, Siwei Deng, Lei Sha
+- **arXiv:** `2611.09377v2` (published 2026-11-06 12:17:54 UTC; updated 2026-11-09 12:46:02 UTC; categories: `cs.AI`, `q-bio.QM`)
+- **Evidence for ranking:** The v2 update reports pooled out-of-fold CataPro results with small improvements over reproduced CataPro: kcat RMSE 1.333→1.330 and PCC 0.492→0.496; Km RMSE 0.998→0.997 and PCC 0.633→0.634.
+- **Claimed contribution:** The authors propose substrate-conditioned residue weighting as a modest improvement to computational enzyme-kinetics prediction.
+- **Caveat:** The reported gains are small and benchmark-based; no new enzyme kinetics measurements or independent wet-lab validation are described in the abstract.
+- **Announcement type:** revision, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Biochemistry & proteins, Quantitative methods
 
-### 12. [Medical Radioisotopes: Clinical Demand, Production Physics, and Untapped Pathways](https://arxiv.org/abs/2611.08727)
-- **Abstract:** This review maps more than 40 medical radioisotopes across established, underused, and emerging groups, connecting clinical applications with production routes and radiochemical constraints.
-- **Authors:** Jarrett Moon; Claire Huchthausen; Jose R Alonso; Shadi A Esfahani; Faraz Farhadi; David McClain; Hamid Sabet; Pedram Heidari; Janet M Conrad; Daniel Winklehner
-- **arXiv:** `2611.08727v1` (published 2026-11-05T21:20:35Z; categories: `physics.med-ph`)
-- **Evidence for ranking:** Broad cross-disciplinary coverage of clinical demand and production constraints across 40+ isotopes; included for direct medical-physics relevance, not popularity.
-- **Claimed contribution:** The authors identify production-side bottlenecks and underused isotopes that could merit further assessment for clinical access.
-- **Caveat:** This is a review, not a trial or new evidence that expanding production changes patient outcomes.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** Biomedical & translational medicine; Medical physics & imaging
+### 12. [stMIND: Learning multiscale interaction dynamics from spatial-temporal transcriptomics](https://arxiv.org/abs/2611.12228)
+- **Abstract:** stMIND infers local and long-range cell-interaction dynamics from spatial-temporal transcriptomic snapshots, jointly modeling molecular state, position and proliferation.
+- **Authors:** Longquan Li, Lin Wan
+- **arXiv:** `2611.12228v1` (published 2026-11-09 11:22:30 UTC; categories: `q-bio.QM`)
+- **Evidence for ranking:** Authors report benchmark performance on axolotl and zebrafish datasets, ablation support for combining local and nonlocal operators, and an inferred axolotl telencephalon regenerative transition 10–15 days after injury.
+- **Claimed contribution:** The authors interpret the model’s inferred drift components as scale-specific interactions and describe developmental and regenerative trajectories from snapshots.
+- **Caveat:** Because sequencing samples different cells at each time point, inferred trajectories and interactions are model-based rather than direct tracking or causal perturbation evidence.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** RNA & transcriptomics, Omics & single-cell methods, Quantitative methods
 
-### 13. [Medical Radioisotopes: Supply-chain Resilience, Distributed Production, and Access](https://arxiv.org/abs/2611.08734)
-- **Abstract:** A review pairs literature analysis with expert interviews to assess isotope supply disruptions and argues for regional accelerator centers alongside centralized reactor production.
-- **Authors:** David McClain; Daniel Winklehner; Faraz Farhadi; Jose R Alonso; Shadi A Esfahani; Claire Huchthausen; Jarrett Moon; Hamid Sabet; Pedram Heidari; Janet M Conrad
-- **arXiv:** `2611.08734v1` (published 2026-11-05T21:33:33Z; categories: `physics.med-ph`)
-- **Evidence for ranking:** Direct relevance to access and resilience of nuclear-medicine isotopes; the authors combine 2025–2026 supply-chain cases with expert interviews.
-- **Claimed contribution:** The authors argue that regional accelerator production could complement aging centralized reactors and reduce single-point and cross-border vulnerabilities.
-- **Caveat:** The proposal is a literature- and interview-based analysis; the effects of regional centers on access and patient outcomes are not evaluated.
-- **Announcement type:** New submission; announcement-batch date 2026-11-09.
-- **Themes:** Biomedical & translational medicine; Medical physics & imaging
+### 13. [Rethinking One Gene, One Token: Transcriptome-Aware Tokenization for Single-Cell Foundation Models](https://arxiv.org/abs/2611.05410)
+- **Abstract:** scTAT assigns variable token slots to recurring gene sets or individual genes on a per-cell basis, aiming to reduce compute without losing cell-type annotation quality.
+- **Authors:** Jiaqi Xiong, Jiaying Li, Yu Zheng, Xiang Zhou, Ziteng Wang, Xinting Hu, Jiaxin Qi
+- **arXiv:** `2611.05410v2` (published 2026-10-21 08:29:29 UTC; updated 2026-11-09 06:27:56 UTC; categories: `q-bio.GN`)
+- **Evidence for ranking:** The v2 update reports matching a strong one-gene-per-token model in frozen-embedding cell-type annotation with half the token budget and nearly halving transformer matrix-multiplication cost.
+- **Claimed contribution:** The authors argue that transcriptome-aware grouping can improve token efficiency while retaining gene-resolution reconstruction.
+- **Caveat:** Reported benefits are benchmark and computational outcomes; robustness across tissues, protocols and downstream biological tasks needs independent assessment.
+- **Announcement type:** revision, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** RNA & transcriptomics, Omics & single-cell methods
+
+### 14. [Pruning DNA Sequence](https://arxiv.org/abs/2611.10386)
+- **Abstract:** Sequence Pruning dynamically drops genomic sequences that become easy for a DNA language model to predict, reducing pretraining work without a separate scoring pass.
+- **Authors:** Faias Satter, Shaker Islam, Aminul Islam
+- **arXiv:** `2611.10386v1` (published 2026-11-07 01:42:12 UTC; categories: `cs.LG`, `q-bio.GN`)
+- **Evidence for ranking:** The authors evaluate five pretraining settings across two corpora, three model families and two objectives, plus five genomic benchmarks; they report up to 96% less data processing and little loss at 4% of baseline GPU hours.
+- **Claimed contribution:** The preprint claims dynamic sequence-level pruning can lower DNA-model training cost and sometimes improve downstream benchmark scores.
+- **Caveat:** The efficiency/performance claims are tied to the evaluated training and genomic benchmarks; broad transfer to other genomes, objectives and experimental tasks remains untested.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** DNA & genomics, Bioinformatics & sequence analysis
+
+### 15. [ProtLink: Sequence and Multispecies Graph Context for Protein Interaction Prediction](https://arxiv.org/abs/2611.11017)
+- **Abstract:** ProtLink combines frozen protein-sequence embeddings with human and multispecies interaction-network context to predict protein–protein interactions.
+- **Authors:** Xingyuan Zhang
+- **arXiv:** `2611.11017v1` (published 2026-11-07 23:32:13 UTC; categories: `cs.LG`, `q-bio.MN`)
+- **Evidence for ranking:** In controlled three-seed comparisons, the authors report AP 0.9701±0.0022 for a full multispecies graph model versus 0.9435±0.0094 for orthogroup-only; for held-out proteins, multispecies HGT reaches 0.8335±0.0094 versus 0.6482±0.0052 for a sequence-only pair model.
+- **Claimed contribution:** The preprint reports that multispecies graph context can help PPI prediction, with benefits depending on message-passing depth and evaluation split.
+- **Caveat:** Average precision depends on the negative-sampling protocol, and predicted held-out edges or proteins are not direct experimental interaction measurements.
+- **Announcement type:** new submission, announcement batch 2026-11-09 (US Eastern)
+- **Themes:** Biochemistry & proteins, Molecular & cell biology
 
 ## Trending Research Themes
 
-- **Multimodal and population-level inference:** COATI couples RNA and chromatin trajectories; the histopathology study maps demographic-associated signals across organs; the GWAS review organizes corrections for biased genetic samples. These papers ask different questions and do not by themselves establish a field-wide shift.
-- **Computational protein biology:** KineCouple predicts enzyme kinetics, local magnitude models protein B-factors, and hybrid annealing tests side-chain optimization. Each is a computational result, with distinct benchmark limits; none demonstrates experimental protein engineering outcomes.
-- **Translation through imaging and infrastructure:** DSA and Doppler report animal/in-vivo imaging demonstrations, SmartBloch-Agent is simulation-based, and the two radioisotope reviews analyze production and supply. Their evidence ranges from technical experiments to synthesis and expert interviews, not clinical effectiveness.
-- **Predictive health models remain pre-intervention:** The wearable coaching paper reports cohort prediction and expert review of plans, not observed behavior change or health benefit.
+The selected batch clusters around model-building and evaluation rather than a single new experimental theme. Protein structure and function methods recur in OriDynamics (conformational ensembles), HyPLM (sequence representations), ZeUS (symmetric assembly generation), AIMS-Fold (constraint-guided co-folding), KineCouple (enzyme kinetics) and ProtLink (interaction prediction). These are distinct computational tasks, not independent experimental confirmation.
+
+A second strand targets the efficiency and fidelity of genome- and transcriptome-scale computation: GeneZip and Sequence Pruning reduce DNA-model sequence/training cost; scBIG++ predicts perturbation responses across measured genes; scTAT changes single-cell tokenization; and the Gene Ontology circularity paper shows how input provenance can inflate benchmark scores.
+
+Two papers put more weight on biological feedback or measurements: BioMARS links a robotic organoid workflow to human-run screening, while the revised xenobot study audits archived pulse-response recordings. The lung-cancer histology analysis and stMIND add observational tissue and snapshot-derived spatial dynamics, respectively; neither alone establishes causal mechanisms or clinical utility.
 
 ## Open Problems and Research Directions
 
-- **Establish where histology signals come from:** The pathology authors treat tissue and context explanations as hypotheses. Multi-health-system replication with site/acquisition controls, blinded pathology review, and subgroup calibration could separate tissue-associated information from case mix and technical artifacts.
-- **Test inferred developmental paths directly:** COATI reports agreement with perturbation and epigenetic data, but cannot track the same cells through destructive sampling. Independent lineage-tracing or perturbation datasets, denser stages, and sensitivity to the pretrained RNA-to-ATAC map would sharpen the evidence.
-- **Measure robustness of small model gains:** For KineCouple and local-magnitude prediction, repeated seeds, paired out-of-fold errors, and matched-compute baselines would clarify stability. Pangenome peeling needs tests on noisy real graphs and known-truth simulated ancestries.
-- **Expand imaging validation:** The cardiac DSA and Doppler studies could be tested across broader motion regimes and acquisition settings, with failure cases reported; animal feasibility should remain distinct from human performance.
-- **Evaluate translation prospectively:** Wearable coaching requires prospective studies measuring adherence and health outcomes; SmartBloch requires real-scanner evaluation. For isotope production proposals, scenario analyses and real-world access measures would test whether distributed capacity addresses documented shortages.
+Biological validation for computational predictions. OriDynamics, HyPLM, ZeUS, AIMS-Fold, KineCouple and ProtLink report structural, sequence or interaction benchmarks. Follow-up work could test preregistered predictions with matched biochemical binding/kinetics assays, expression and assembly checks, and hard negative controls, using held-out targets not used in model development. This would separate improved benchmark fit from experimentally useful prediction.
+
+Robustness across experimental contexts. BioMARS and the xenobot revision demonstrate feedback or reanalysis in particular settings; proposed follow-ups include multi-lab replication across cell types and batches. For pulse-to-behavior claims, add sham stimulation and vary control parameters independently. For scBIG++, scTAT and stMIND, test donors, tissues, rare states and perturbations outside training distributions, then compare predictions with new single-cell measurements.
+
+Benchmark provenance and clinical translation. The Gene Ontology circularity study motivates matched-input, time-separated and non-GO endpoint evaluation for gene models. The lung-cancer paper’s candidate prognostic axis could be assessed in a prospectively specified, independent cohort with treatment and stage confounders addressed; the present observational associations do not establish a clinical biomarker.
 
 ## Takeaway
 
-The most evidence-rich papers in this snapshot combine computational methods with broad cohorts, multiple developmental datasets, or explicit animal/in-vivo imaging tests. Others are reviews or simulations. The ranking is relevance-led because the batch is too new for robust attention evidence; none of these preprints alone supports a change in clinical practice.
+This batch is notable for computational tools that model protein structure, sequence and cell-state responses, with a smaller but important set of studies connecting algorithms to organoid or archived biological measurements. The strongest next evidence would be blinded, out-of-distribution replication and direct assays. The ordering is inferred by relevance and reported study design—not official arXiv popularity—and the corpus misses much biomedical preprint activity.
 
 ## Method and sources
 
-- **Window:** Daily, 2026-11-09 to 2026-11-09. Latest available announcement batch: Monday 2026-11-09; no Tuesday batch had appeared at the 2026-11-10T01:25:17Z snapshot. This is not a prior-batch substitution.
-- **Snapshot:** 2026-11-10T01:25:17Z.
-- **Candidate discovery:** The arXiv q-bio combined recent listing showed 20 entries for 9 November; the physics.med-ph listing showed five new submissions. Cross-listed records were deduplicated by versionless arXiv ID. Thirteen relevant papers are selected. The standalone cs.BI listing could not be independently confirmed, so papers found only there may be missing; this should not be read as an exhaustive survey of the configured corpus.
-- **Configured category query:** `https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200`
-- **Ranking:** arXiv publishes no trend/readership statistics. With attention evidence sparse for this new batch, papers are ordered by fit to biochemistry, DNA/RNA, genomics, and medicine; breadth and type of author-reported evidence; and cross-list breadth where applicable. Recency is only a tie-breaker. No views, downloads, citation gains, or popularity claims are used.
-- **Primary sources:** [q-bio recent listing](https://arxiv.org/list/q-bio/recent), [physics.med-ph new submissions](https://arxiv.org/list/physics.med-ph/new), and the linked arXiv abstract pages for all selected papers. Full-text checks for the top three: [2611.08853 PDF](https://arxiv.org/pdf/2611.08853), [2611.09851 PDF](https://arxiv.org/pdf/2611.09851), and [2611.08568 PDF](https://arxiv.org/pdf/2611.08568).
+Window: daily; announcement batch dated 2026-11-09 (US Eastern), released by the 2026-11-10 UTC snapshot. The batch covers first submissions from 2026-11-06 19:00:00 UTC through 2026-11-09 19:00:00 UTC; revisions are included when the latest version was updated in that period. Snapshot: 2026-11-10 17:14:51 UTC. This is the prior announcement batch; the 2026-11-10 batch was not yet announced by the snapshot.
+
+Candidate discovery used the configured categories `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, `cs.BI`, and `physics.med-ph`, plus cross-listed records. The broad newest-first query returned 200 records back to 2026-10-27, beyond the selected batch; a separate last-updated scan returned 200 records back to 2026-10-31, beyond the update window. Cross-listed IDs were deduplicated. Fifteen papers were chosen from the relevant candidate pool; this is a selection, not an exhaustive daily feed. Every selected arXiv abstract page was checked; the first three entries were also read in PDF for study design, results and limitations.
+
+Ranking is explicitly relevance-led because there is no dependable attention signal for this very recent batch. Signals are the reported evaluation design, biological fit, category breadth, and substantive update status where applicable. No download/view claims or period citation gains are inferred. Semantic Scholar citation momentum and independent discussion are not used as evidence here. All results and limitations are attributed to the preprints; computational predictions, in-vitro assays, observational cohorts and clinical evidence are distinguished.
+
+Category query: `https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200`.
+
+Sources: each linked arXiv abstract page is the primary source; PDF links are available from those records. arXiv listing/API metadata supplied version, author, date, category, comments and revision information. The ranking is not an official arXiv list and does not cover bioRxiv, medRxiv or the biomedical literature as a whole.

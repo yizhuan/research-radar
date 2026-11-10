@@ -6,14 +6,14 @@
     "start": "2026-11-09",
     "end": "2026-11-09",
     "announcement_batch": "2026-11-09",
-    "snapshot_utc": "2026-11-09T17:33:45Z"
+    "snapshot_utc": "2026-11-10T01:34:31Z"
   },
   "date": "2026-11-09",
   "title": "Mathematics — notable papers from the 2026-11-09 arXiv announcement batch",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-09.md",
-  "entry_count": 10,
+  "entry_count": 12,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart. Ordering is inferred from stated results, cross-subfield relevance, and artifacts; attention/citation evidence is sparse for these new papers, so the list is notable recent papers rather than a measured popularity ranking.",
+  "global_caveat": "arXiv has no official trending chart. Ordering is inferred from stated results, cross-subfield relevance, and artifacts; Semantic Scholar currently records zero citations and zero influential citations for all selected papers, so the list is notable recent papers rather than a measured popularity ranking.",
   "sections": [
     {
       "id": "paper-2611.09237",
@@ -224,6 +224,50 @@
       "announcement_type": "new submission",
       "announcement_batch": "2026-11-09",
       "refs": ["https://arxiv.org/abs/2611.09716"]
+    },
+    {
+      "id": "paper-2611.09823",
+      "kind": "paper",
+      "title": "Regular multi-types and the Bloom conjecture II",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2611.09823",
+      "arxiv_id": "2611.09823",
+      "arxiv_version": 1,
+      "published": "2026-11-06T18:10:14Z",
+      "categories": ["math.CV"],
+      "primary_category": "math.CV",
+      "authors": ["Jiaqing Chen", "Xiaojun Huang", "Wanke Yin", "Pingsan Yuan"],
+      "themes": ["Analysis & PDE", "Geometry & topology"],
+      "abstract": "For smooth pseudoconvex real hypersurfaces in complex dimension at least two, the authors claim equality of regular contact, commutator, and Levi types at every point for every rank, and equality of commutator and Levi types for each smooth subbundle.",
+      "claimed_result": "The authors claim that for every smooth pseudoconvex hypersurface in C^n, every point, and each 1≤s≤n−1, the three multiregular types coincide; for each rank-s subbundle, its commutator and Levi types also coincide.",
+      "assumptions_and_setting": "Smooth pseudoconvex real hypersurface M⊂C^n; local invariants are evaluated at points of M and the theorem uses pseudoconvexity.",
+      "unique_caveat": "The result does not assert the same equivalence for non-pseudoconvex hypersurfaces; the paper recalls examples where equality fails without pseudoconvexity.",
+      "evidence_for_ranking": "The authors claim a resolution of Bloom's conjecture in all dimensions and an affirmative answer to the generalized D'Angelo conjecture for every allowed rank; Semantic Scholar currently records 0 citations and 0 influential citations.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-09",
+      "refs": ["https://arxiv.org/abs/2611.09823", "https://arxiv.org/html/2611.09823v1", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.09823"]
+    },
+    {
+      "id": "paper-2611.09776",
+      "kind": "paper",
+      "title": "The Localization Scale of the Block Anderson Model in One Dimension at Arbitrary Coupling and Volume",
+      "rank": 12,
+      "url": "https://arxiv.org/abs/2611.09776",
+      "arxiv_id": "2611.09776",
+      "arxiv_version": 1,
+      "published": "2026-11-06T17:38:17Z",
+      "categories": ["math.PR", "math-ph", "math.SP"],
+      "primary_category": "math.PR",
+      "authors": ["Jun Yin"],
+      "themes": ["Probability & statistics", "Mathematical physics"],
+      "abstract": "For a one-dimensional block Anderson model with independent GUE block potentials and deterministic nearest-neighbor hopping, the author identifies the bulk localization length up to arbitrarily small powers of block width, uniformly in coupling and cycle length, with high-probability eigenvector-mass bounds.",
+      "claimed_result": "The author claims the bulk localization length is, up to an arbitrarily small power of W, min{N,max{W,W^2g^2}}, with eigenvector-mass estimates for large W.",
+      "assumptions_and_setting": "One-dimensional cyclic block model with L≥3, total dimension N=WL, independent W×W GUE potentials, deterministic nearest-neighbor hopping, and a selected bulk energy interval; asymptotic regime W→∞.",
+      "unique_caveat": "The stated model uses GUE disorder and one-dimensional block geometry; the abstract does not claim the same scale for other potential laws or higher-dimensional systems.",
+      "evidence_for_ranking": "The abstract claims a scale formula uniform over all deterministic couplings and cycle lengths, with explicit high-probability statements; the listing links a Lean formalization repository. Semantic Scholar currently records 0 citations and 0 influential citations.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-09",
+      "refs": ["https://arxiv.org/abs/2611.09776", "https://arxiv.org/html/2611.09776v1", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.09776", "https://github.com/JYin80/Lean-LSBA1d"]
     }
   ]
 }

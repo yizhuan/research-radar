@@ -1,6 +1,6 @@
 # Mathematics — Monday, 9 November 2026
 
-Daily window: the latest Mathematics announcement batch, 2026-11-09 (one-day window); the selected papers were first submitted on 2026-11-06. This report selects 10 notable papers from the 346-entry batch. The recurring pattern is sharp theorem-making—conjecture resolutions, exact thresholds, and improved asymptotics. Brief agenda: algebraic geometry and combinatorics first, then probability, analysis, and a matrix-multiplication result. This is an inferred ordering, not an official arXiv trending chart; citation evidence for papers only days old is limited, so these are notable recent papers rather than measured popularity leaders.
+Daily window: the latest Mathematics announcement batch, 2026-11-09 (one-day window); the selected papers were first submitted on 2026-11-06. This report selects 12 notable papers from the 346-entry batch. The recurring pattern is sharp theorem-making—conjecture resolutions, exact thresholds, and improved asymptotics. Brief agenda: algebraic geometry and combinatorics first, then probability, analysis, operator localization, and a matrix-multiplication result. This is an inferred ordering, not an official arXiv trending chart; citation evidence for papers only days old is limited, so these are notable recent papers rather than measured popularity leaders.
 
 ## Top papers (ranked)
 
@@ -114,13 +114,36 @@ Daily window: the latest Mathematics announcement batch, 2026-11-09 (one-day win
 - **Announcement type:** new submission, announcement-batch date 2026-11-09
 - **Themes:** Combinatorics & discrete mathematics; Algebra & number theory
 
+### 11. [Regular multi-types and the Bloom conjecture II](https://arxiv.org/abs/2611.09823)
+- **Abstract:** For smooth pseudoconvex real hypersurfaces in complex dimension at least two, the authors claim equality of regular contact, commutator, and Levi types at every point for every rank, and equality of commutator and Levi types for each smooth subbundle.
+- **Authors:** Jiaqing Chen, Xiaojun Huang, Wanke Yin, Pingsan Yuan
+- **arXiv:** `2611.09823v1` (published 2026-11-06 18:10:14 UTC; categories: `math.CV` [primary])
+- **Evidence for ranking:** The authors claim a resolution of Bloom's conjecture in all dimensions and an affirmative answer to the generalized D'Angelo conjecture for every allowed rank; Semantic Scholar currently records 0 citations and 0 influential citations.
+- **Claimed result:** The authors claim that for every smooth pseudoconvex hypersurface in C^n, every point, and each 1 ≤ s ≤ n−1, the three multiregular types coincide; for each rank-s subbundle, its commutator and Levi types also coincide.
+- **Assumptions and setting:** Smooth pseudoconvex real hypersurface M ⊂ C^n; local invariants are evaluated at points of M and the theorem uses pseudoconvexity.
+- **Caveat:** The result does not assert the same equivalence for non-pseudoconvex hypersurfaces; the paper recalls examples where equality fails without pseudoconvexity.
+- **Announcement type:** new submission, announcement-batch date 2026-11-09
+- **Themes:** Analysis & PDE; Geometry & topology
+
+### 12. [The Localization Scale of the Block Anderson Model in One Dimension at Arbitrary Coupling and Volume](https://arxiv.org/abs/2611.09776)
+- **Abstract:** For a one-dimensional block Anderson model with independent GUE block potentials and deterministic nearest-neighbor hopping, the author identifies the bulk localization length up to arbitrarily small powers of block width, uniformly in coupling and cycle length, with high-probability eigenvector-mass bounds.
+- **Authors:** Jun Yin
+- **arXiv:** `2611.09776v1` (published 2026-11-06 17:38:17 UTC; categories: `math.PR` [primary], `math-ph`, `math.SP` [cross-lists])
+- **Evidence for ranking:** The abstract claims a scale formula uniform over all deterministic couplings and cycle lengths, with explicit high-probability statements; the listing links a Lean formalization repository. Semantic Scholar currently records 0 citations and 0 influential citations.
+- **Claimed result:** The author claims the bulk localization length is, up to an arbitrarily small power of W, min{N, max{W, W²g²}}, with eigenvector-mass estimates for large W.
+- **Assumptions and setting:** One-dimensional cyclic block model with L ≥ 3, total dimension N = WL, independent W × W GUE potentials, deterministic nearest-neighbor hopping, and a selected bulk energy interval; asymptotic regime W → ∞.
+- **Caveat:** The stated model uses GUE disorder and one-dimensional block geometry; the abstract does not claim the same scale for other potential laws or higher-dimensional systems.
+- **Announcement type:** new submission, announcement-batch date 2026-11-09
+- **Themes:** Probability & statistics; Mathematical physics
+
 ## Trending Research Themes
 
-- Algebraic geometry is carrying several explicit structural results: the Woo-Yong paper localizes divisor classes on type A Schubert varieties, while the Macdonald-intersection paper uses Hilbert-scheme geometry to prove a representation-theoretic formula. These are distinct arguments, not one shared technique.
+- Algebraic and complex geometry feature distinct structural claims: the Woo-Yong paper localizes divisor classes on type A Schubert varieties, the Macdonald-intersection paper uses Hilbert-scheme geometry for a representation-theoretic formula, and the Bloom paper equates several local types under pseudoconvexity. These are different problems, not one shared technique.
 - Sharp thresholds and exact extremal statements recur across otherwise different areas: the Brownian-sheet paper gives an all-dimension small-deviation exponent, the profinite-group paper gives sharp universality conditions, and the binary-code paper determines an exact maximum above a best-possible threshold. The BCC and Tartar papers add sharp optimization and energy-scaling estimates, respectively.
 - Probability links to several mathematical settings rather than forming a single topic cluster: Brownian-sheet small deviations connect Gaussian probability to entropy numbers; Harper's result connects random matrices with number theory; random profinite quotients connect probability and group theory.
 - Proof-support artifacts appear in isolated high-profile results: the Woo-Yong record lists verification programs and certificates, and the Brownian-sheet abstract links a Lean certificate. These are checkable artifacts, but not evidence that the underlying proofs have been independently audited here.
 - The 9/4 matrix-multiplication paper is an isolated bridge between computational complexity and representation theory; its role is to explain a new tensor-value route to a recently announced bound, not to indicate a broader shift in the math archive.
+- Probability also enters spectral localization: the block Anderson paper states a uniform-in-coupling eigenvector localization scale for a one-dimensional GUE block model. This is a model-specific result rather than a field-wide trend.
 
 ## Open Problems and Research Directions
 
@@ -130,6 +153,8 @@ Daily window: the latest Mathematics announcement batch, 2026-11-09 (one-day win
 - **Author-stated open problem — extremal classification:** The 3-distance paper determines the maximum size but leaves classification of extremizers open; its n = 24 example already shows that extremizers need not be unique up to isometry. [3-distance codes](https://arxiv.org/abs/2611.09675)
 - **Author-stated quantitative gap — energy constants:** The Tartar-square paper matches the logarithmic powers but still has distinct lower- and upper-bound constants. Improving either bound or identifying the sharp constant would sharpen the scaling law. [Tartar square](https://arxiv.org/abs/2611.09500)
 - **Research direction (synthesis) — arithmetic transfer:** Harper's result settles only a random-matrix analogue. A separate question is whether techniques or consequences transfer to the original arithmetic conjecture about random multiplicative functions; this preprint alone does not establish that transfer. [Harper random-matrix paper](https://arxiv.org/abs/2611.09753)
+- **Author-stated boundary — pseudoconvexity:** The Bloom paper recalls that equality can fail without pseudoconvexity. A follow-up could identify weaker geometric hypotheses that still imply equality, or classify the failure modes. [Bloom conjecture paper](https://arxiv.org/abs/2611.09823)
+- **Research direction (synthesis) — model robustness:** The Anderson localization scale is proved for independent GUE block potentials in one dimension. Comparing other block-potential distributions or geometries would test dependence on those assumptions. [Block Anderson paper](https://arxiv.org/abs/2611.09776)
 
 ## Takeaway
 
@@ -137,8 +162,8 @@ Today's clearest signals are mathematically concrete: named conjectures proved o
 
 ## Method and sources
 
-- Window: daily latest arXiv Mathematics announcement batch dated 2026-11-09; selected submissions were v1 papers first posted 2026-11-06. Window start/end: 2026-11-09 to 2026-11-09. Snapshot: 2026-11-09 17:33:45 UTC.
-- Coverage: the full `math/recent` announcement batch was traversed (346 entries). Selection was based on the stated theorem/result, category cross-listing, sharpness or conjecture status, and verifiable proof artifacts; all 10 selected arXiv abstract pages and relevant HTML result statements were checked. No numeric trend score was assigned.
-- Attention evidence: Semantic Scholar did not return usable records in this pass, and no independent seminar or expert-discussion signal was verified. Therefore the order reflects potential mathematical significance and cross-subfield relevance, not measured popularity; current citations are not reported as period gains. All results are presented as claims in new arXiv preprints; this report does not certify their proofs or peer-review status.
-- Retrieval note: `web_extract` was unavailable because the configured backend was search-only. Abstracts and result statements were read from arXiv's abstract/HTML pages; web search was used for corroborating source discovery. Semantic Scholar requests returned HTTP errors, so citation counts and influential-citation data were excluded.
+- Window: daily latest arXiv Mathematics announcement batch dated 2026-11-09; selected submissions were v1 papers first posted 2026-11-06. Window start/end: 2026-11-09 to 2026-11-09. Snapshot: 2026-11-10T01:34:31Z.
+- Coverage: the full `math/recent` announcement batch was traversed (346 entries). All 12 selected arXiv abstract pages were checked; the top three papers' introductions/main-result statements were inspected where HTML extraction was practical. Selection used claimed result, cross-listing, sharpness/conjecture status, and cited artifacts; no numeric trend score was assigned.
+- Attention evidence: Semantic Scholar currently records 0 citations and 0 influential citations for all 12 selected papers; no independent seminar or expert-discussion signal was verified. The order reflects potential mathematical significance and cross-subfield relevance, not measured popularity. All results are presented as claims in new arXiv preprints; this report does not certify their proofs or peer-review status.
+- Retrieval note: `web_extract` was unavailable because the configured backend was search-only. The full listing was traversed in the browser; abstracts were checked through arXiv abstract pages and the export API, with HTML result statements read where available. Semantic Scholar was queried for citation and paper metadata.
 - Core archive source: [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent). Paper sources: the linked arXiv abstract pages above; top-result statements were checked in the linked HTML versions. arXiv publishes no official trending chart.

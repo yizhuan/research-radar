@@ -4,75 +4,75 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-10 01:43 UTC |
+| Snapshot time (UTC) | 2026-11-10 17:29 UTC |
 | Scope | Daily |
 | Date range | 2026-11-10 through 2026-11-10 |
-| Ranking basis | GitHub Trending daily star gains, descending; current total stars corroborated via GitHub REST API |
+| Ranking basis | Daily GitHub Trending star gains; one separately labeled recent-repository Search supplement |
 
 ## Headline
 
-Today's strongest signal is a surge in practical AI-agent infrastructure—from agent skills and browser control to multi-agent desktop apps—alongside a large spike for the established Sherlock OSINT utility. Meta's agent-ready design system and a privacy-oriented WiFi sensing project broaden the day's themes beyond agent tooling.
+AI-oriented developer tools dominate the strongest gains, led by Meta’s agent-ready Astryx design system (+3,111) and a wave of reusable agent skills. Browser and smart-home agent interfaces also have strong momentum, while Sherlock’s broad social-account search and established simulation software show interest beyond the agent ecosystem.
 
 ## Top Repositories
 
-1. **[sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) -** Finds a username's accounts across more than 400 social networks.
+1. **[meta/astryx](https://github.com/meta/astryx) - An open-source, customizable design system built for developers and AI agents.**
 
-  **Language:** Python | **Stars gained in window:** +4,267 | **Total stars:** 107,125 | **Why notable:** It leads this snapshot by daily star gain, showing that a focused, mature OSINT utility can break through alongside AI launches.
+  **Language:** TypeScript | **Stars gained in window:** +3,111 | **Total stars:** 22,193 | **Why notable:** The day's largest reported gain; its README describes 150+ accessible components, theming, and a CLI designed to serve both people and agents.
 
-2. **[meta/astryx](https://github.com/meta/astryx) -** Meta's open-source, customizable, agent-ready React design system.
+2. **[sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) - Finds public social-media accounts matching a username across 400+ networks.**
 
-  **Language:** TypeScript | **Stars gained in window:** +3,278 | **Total stars:** 20,170 | **Why notable:** Its strong second-place daily gain puts design infrastructure built for both people and coding agents in the day's spotlight.
+  **Language:** Python | **Stars gained in window:** +2,387 | **Total stars:** 108,637 | **Why notable:** A large one-day gain for an established, non-agent utility, suggesting today's interest is not confined to AI tooling.
 
-3. **[milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) -** An open-source desktop alternative for chatting with a team of AI bots.
+3. **[anthropics/skills](https://github.com/anthropics/skills) - A public collection of reusable Agent Skills and the associated specification.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,587 | **Total stars:** 19,723 | **Why notable:** Its momentum reflects interest in agent teams packaged as an interactive, user-facing app; the README describes local Claude or Codex agents behind the bots.
+  **Language:** Python | **Stars gained in window:** +1,676 | **Total stars:** 192,027 | **Why notable:** Strong momentum around portable, task-specific instruction bundles, from examples to document and enterprise workflows.
 
-4. **[anthropics/skills](https://github.com/anthropics/skills) -** Anthropic's public examples of reusable skills for Claude.
+4. **[mattpocock/skills](https://github.com/mattpocock/skills) - A collection of composable engineering skills for coding agents.**
 
-  **Language:** Python | **Stars gained in window:** +1,038 | **Total stars:** 191,032 | **Why notable:** The repository is a high-visibility example of agents gaining repeatable task workflows through self-contained instructions, scripts, and resources.
+  **Language:** Shell | **Stars gained in window:** +1,223 | **Total stars:** 320,632 | **Why notable:** One of the largest gains; its README emphasizes small, editable, model-agnostic practices rather than a single end-to-end process framework.
 
-5. **[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) -** A Rust CLI for browser automation driven by AI agents.
+5. **[homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) - An MCP server and Home Assistant integration for assistants to configure and automate a smart home.**
 
-  **Language:** Rust | **Stars gained in window:** +916 | **Total stars:** 48,510 | **Why notable:** Its compact shell-driven loop—inspect an accessibility snapshot, act on a referenced element, then verify—shows a concrete pattern for tool-using agents.
+  **Language:** Python | **Stars gained in window:** +792 | **Total stars:** 6,463 | **Why notable:** Brings agent tooling into a real-world control domain, exposing a broad set of Home Assistant tools through an in-process integration or server workflow.
 
-6. **[google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) -** A general-purpose physics simulator for articulated structures and contact dynamics.
+6. **[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) - A browser automation CLI that lets agents inspect pages and act through compact accessibility snapshots.**
 
-  **Language:** C++ | **Stars gained in window:** +574 | **Total stars:** 16,930 | **Why notable:** It represents the robotics and embodied-simulation side of the day's activity, backed by a maintained C API and interactive visualization.
+  **Language:** Rust | **Stars gained in window:** +775 | **Total stars:** 49,037 | **Why notable:** Its command-by-command loop, persistent browser session, and ref-based interaction make browser use an explicit agent tool workflow.
 
-7. **[anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) -** Deployable example applications built with the Claude API.
+7. **[anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) - Deployable starter projects for developers building with the Claude API.**
 
-  **Language:** Python | **Stars gained in window:** +551 | **Total stars:** 20,036 | **Why notable:** Its examples span customer support, financial analysis, and computer use, connecting model capabilities to practical app workflows.
+  **Language:** Python | **Stars gained in window:** +530 | **Total stars:** 20,365 | **Why notable:** Complements the skills trend with practical application scaffolding and deployable API examples.
 
-8. **[ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) -** An LLM-powered, multi-market stock-analysis dashboard with news and scheduled notifications.
+8. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-oriented engineering skills for AI coding agents.**
 
-  **Language:** Python | **Stars gained in window:** +506 | **Total stars:** 68,897 | **Why notable:** It is a prominent domain-specific AI application, combining market data, news, analysis, and delivery integrations in one project.
+  **Language:** JavaScript | **Stars gained in window:** +465 | **Total stars:** 114,960 | **Why notable:** Reinforces the skills pattern with an engineering-focused catalog aimed at production work.
 
-9. **[garrytan/gbrain](https://github.com/garrytan/gbrain) -** A self-hostable memory layer designed to work across AI agents.
+9. **[google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) - A general-purpose physics simulator for multi-joint dynamics with contact.**
 
-  **Language:** TypeScript | **Stars gained in window:** +216 | **Total stars:** 32,173 | **Why notable:** It emphasizes user-controlled, sourced memory with correction and withdrawal, adding persistent context to the agent-infrastructure cluster.
+  **Language:** C++ | **Stars gained in window:** +453 | **Total stars:** 17,250 | **Why notable:** A current gain for mature simulation infrastructure provides a counterpoint to the day's software-agent concentration.
 
-10. **[ruvnet/RuView](https://github.com/ruvnet/RuView) -** A WiFi-signal sensing project for spatial presence and vital-sign estimation without cameras.
+10. **[ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) - A context-compression plugin for long-running, token-intensive agent sessions.**
 
-  **Language:** Rust | **Stars gained in window:** +172 | **Total stars:** 103,489 | **Why notable:** It is a distinctive privacy-oriented sensing theme, linking commodity wireless signals with spatial and health-related inference.
+  **Language:** TypeScript | **Stars gained in window:** +374 | **Total stars:** 6,128 | **Why notable:** Targets the memory and context-management bottleneck implied by longer agent workflows; its efficiency figures are project claims, not independently benchmarked here.
 
-11. **[homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) -** An MCP server for configuring and automating Home Assistant with AI assistants.
+11. **[huamidev/GestaltX](https://github.com/huamidev/GestaltX) - An iPhone and iPad MobileGestalt editor with device presets, backups, and plist tools.**
 
-  **Language:** Python | **Stars gained in window:** +31 | **Total stars:** 6,006 | **Why notable:** It is a concrete integration example for agents acting on a real home-automation environment rather than only generating text.
+  **Language:** Swift | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 4,485 | **Why notable:** A separate GitHub Search signal: created on 2026-11-09 and surfaced among the top-starred repositories created and pushed in the last two days; this is not a daily Trending star-gain figure.
 
 ## Trending Technologies and Themes
 
-- **Agent workflows and orchestration:** anthropics/skills and anthropics/claude-quickstarts package repeatable workflows and app examples; OpenMausBot presents multiple agents in a desktop interface; garrytan/gbrain adds shared, user-controlled memory.
-- **Agents operating tools and environments:** vercel-labs/agent-browser exposes browser inspection and actions through a CLI, while homeassistant-ai/ha-mcp connects assistants to Home Assistant. google-deepmind/mujoco adds the robotics simulation layer for embodied systems.
-- **AI-aware product and developer design:** meta/astryx pairs React and StyleX components with an agent-ready design-system goal.
-- **Beyond agents—OSINT, sensing, and domain apps:** Sherlock's username search leads by today's star gain; RuView explores camera-free WiFi sensing; daily_stock_analysis applies LLMs to multi-market research and reporting.
-- **Languages:** Python appears in 5 of these 11 repositories; TypeScript in 3; Rust in 2; and C++ in 1.
+- **Reusable skills for coding agents:** `anthropics/skills`, `mattpocock/skills`, and `addyosmani/agent-skills` all gained strongly, while `anthropics/claude-quickstarts` supplies adjacent application scaffolding. The shared direction is reusable, domain-specific workflow guidance, not just larger models.
+- **Agents connected to tools and environments:** `homeassistant-ai/ha-mcp` applies MCP to smart-home control; `vercel-labs/agent-browser` gives agents a persistent browser control loop; `ranxianglei/billion-context` focuses on sustaining longer sessions.
+- **Agent-ready interfaces:** `meta/astryx` brings agent use into component-based UI development, with components, themes, documentation, and CLI designed as a coherent system.
+- **Non-agent utilities and systems remain visible:** `sherlock-project/sherlock` and `google-deepmind/mujoco` add account discovery and physics simulation to an otherwise agent-heavy set; the recent-search supplement `huamidev/GestaltX` represents native iOS tooling.
+- **Languages:** Python leads with 4 of the 11 listed repositories; TypeScript appears in 2. JavaScript, Rust, C++, and Swift each appear once, alongside Shell for `mattpocock/skills`.
 
 ## Takeaway
 
-The day's repo mix points to agents moving from model demos toward usable systems: reusable skills, browser and home-automation controls, shared memory, and desktop experiences. At the same time, Sherlock's lead and the presence of MuJoCo, RuView, and a finance-focused app show that momentum is not confined to agent frameworks; established utilities and specialized applications remain capable of attracting sharp attention.
+Today's strongest signal is the move from generic coding assistants toward practical agent ecosystems: portable skills, browser and smart-home tools, agent-aware interfaces, and context management. At the same time, gains for Sherlock and MuJoCo show that established utilities and technical infrastructure can still break through. The additional fresh-repository signal is noteworthy, but GitHub Search's current star count should not be mistaken for stars gained today.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Today](https://github.com/trending?since=daily), captured 2026-11-10 01:43 UTC.
-- **Corroboration:** GitHub REST repository endpoints for all 11 listed projects, including current star totals, descriptions, default branches, and branch-head commit SHAs; GitHub Search API queries for the five highest-momentum repos (sherlock-project/sherlock, meta/astryx, milind-soni/OpenMausBot, anthropics/skills, and vercel-labs/agent-browser) confirmed repository identity, star totals, and push recency. Current README files were checked for the five narration-priority projects.
-- **Method note:** Daily gains and the ranking order come from the matching GitHub Trending daily view. Total-star counts and default-branch commits are corroborated from GitHub's API and may move independently after capture; this is a one-day snapshot, not a claim about longer-term growth.
+- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily), retrieved 2026-11-10 at 17:29 UTC. Its displayed daily star gains supplied the ranking for the first ten repositories.
+- **Corroboration:** GitHub REST API repository metadata and latest default-branch commits for the listed repositories; GitHub Search API query [`created:2026-11-08..2026-11-10 pushed:2026-11-08..2026-11-10 stars:>100`](https://api.github.com/search/repositories?q=created%3A2026-11-08..2026-11-10%20pushed%3A2026-11-08..2026-11-10%20stars%3A%3E100&sort=stars&order=desc&per_page=100) identified the separately labeled `huamidev/GestaltX` supplement.
+- **Method note:** The first ten entries are ordered by the daily star-gain numbers shown on the matching Trending view; total stars and commit SHAs were checked against GitHub REST API data. `GestaltX` is appended as a recent-repository Search signal and has no daily star-gain figure here. README details were checked for the repositories used to explain the main themes. No prior-window comparison was available, so no `Notable Shifts` section is included.

@@ -3,11 +3,11 @@
   "category": "math",
   "window": "daily",
   "date": "2026-11-10",
-  "title": "arXiv mathematics — daily notable papers, 10 November 2026",
+  "title": "arXiv Mathematics: daily notable papers — announcement batch 10 November 2026",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-10.md",
-  "entry_count": 6,
+  "entry_count": 10,
   "entry_noun": "papers",
-  "global_caveat": "arXiv supplies no official trending chart. This ordering is inferred from concrete result claims and corroborating artifacts, not measured popularity; citation evidence is limited for papers announced today.",
+  "global_caveat": "arXiv supplies no official trending chart, so this is an inferred ranking; citation evidence is limited for a just-announced batch.",
   "sections": [
     {
       "id": "2611.12830",
@@ -18,32 +18,57 @@
       "arxiv_id": "2611.12830",
       "arxiv_version": 1,
       "published": "2026-11-09T18:29:49Z",
-      "categories": ["math.CV"],
-      "authors": ["Teng Zhang"],
-      "themes": ["Complex analysis"],
-      "abstract": "For every monic complex polynomial of degree at least one, the author claims the unit lemniscate has length no greater than that of z^n−1, with equality exactly for its translated and rotated forms.",
-      "claimed_result": "The author claims the Erdős–Herzog–Piranian length inequality for every monic polynomial and the stated equality characterization (arXiv abstract and HTML Theorem 1.3).",
-      "assumptions_and_setting": "Monic complex polynomials of degree n ≥ 1; compare the arclength of {z: |p(z)|=1} against the lemniscate for z^n−1.",
-      "unique_caveat": "The proof supplements analytic arguments with rigorous computer-assisted estimates over a finite degree range; the certificates and their implementation merit specialist review. The preprint is not presented here as peer-reviewed.",
-      "refs": ["https://arxiv.org/abs/2611.12830", "https://arxiv.org/html/2611.12830v1"]
+      "categories": [
+        "math.CV"
+      ],
+      "authors": [
+        "Teng Zhang"
+      ],
+      "themes": [
+        "Analysis & PDE"
+      ],
+      "abstract": "For every monic complex polynomial of degree at least one, the paper claims the unit lemniscate has maximal length for a translate and rotation of z^n − 1, with exactly those equality cases.",
+      "claimed_result": "The author proves that for any monic degree-n polynomial p, the length of {z: |p(z)|=1} is at most the length for z^n−1; equality holds exactly for p(z)=(z−z₀)^n−e^{iθ} (arXiv abstract and Theorem 1.3).",
+      "assumptions_and_setting": "A monic polynomial over the complex numbers, degree n≥1, with the unit-level lemniscate measured by arclength.",
+      "unique_caveat": "The proof uses rigorous computer-assisted estimates in a finite range of degrees; the paper is a preprint, and this summary has not checked those certificates or the full proof.",
+      "evidence_for_ranking": "Claims a resolution of a 1958 conjecture for every degree with exact maximizers; introduction places it after earlier results for sufficiently large degrees and n=2,3, and the proof uses certified finite-degree calculations.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12830",
+        "https://arxiv.org/html/2611.12830v1"
+      ]
     },
     {
-      "id": "2611.12519",
+      "id": "2611.12781",
       "kind": "paper",
-      "title": "Chvátal's Toughness Conjecture for Dense Almost Regular Graphs",
+      "title": "Average distance and maximum induced linear forest",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2611.12519",
-      "arxiv_id": "2611.12519",
+      "url": "https://arxiv.org/abs/2611.12781",
+      "arxiv_id": "2611.12781",
       "arxiv_version": 1,
-      "published": "2026-11-09T14:57:14Z",
-      "categories": ["math.CO"],
-      "authors": ["Songling Shan"],
-      "themes": ["Combinatorics & discrete mathematics"],
-      "abstract": "For each fixed α>0, the author claims every sufficiently large 4-tough graph with minimum degree at least αn and maximum-minus-minimum degree at most εn is Hamiltonian, and constructs 3/2-tough regular non-Hamiltonian examples of linear degree.",
-      "claimed_result": "The author proves the 4-tough Hamiltonicity result with the stated degree hypotheses and constructs 3/2-tough regular non-Hamiltonian graphs (arXiv abstract and HTML Theorem 1.3).",
-      "assumptions_and_setting": "For every fixed α>0, there are ε>0 and n₀ such that the result holds for n≥n₀, minimum degree δ(G)≥αn, and degree spread Δ(G)−δ(G)≤εn.",
-      "unique_caveat": "This settles only a dense almost-regular regime, not Chvátal's unrestricted conjecture; the 4-tough theorem and 3/2-tough counterexamples leave a gap in the threshold.",
-      "refs": ["https://arxiv.org/abs/2611.12519", "https://arxiv.org/html/2611.12519v1"]
+      "published": "2026-11-09T17:54:36Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Mathieu Bouchard",
+        "Alain Hertz"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "For every connected graph, the authors claim the average pairwise distance is at most half the maximum order of an induced subgraph whose components are paths.",
+      "claimed_result": "The authors prove μ(G) ≤ L(G)/2, equivalently 4W(G) ≤ L(G)n(n−1), where μ is average distance, W is the Wiener index, and L is the largest induced linear-forest order (arXiv abstract and Conjecture 1.1).",
+      "assumptions_and_setting": "Finite connected graph G of order n; a linear forest is an induced subgraph all of whose connected components are chains (paths).",
+      "unique_caveat": "The theorem is an attributed preprint claim; the abstract gives the universal bound but does not state a separate classification of equality cases.",
+      "evidence_for_ranking": "The paper explicitly says it proves a conjecture dating to 2009, strengthens bounds involving induced forests and independence number, and states the theorem for all connected graphs.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12781",
+        "https://arxiv.org/html/2611.12781v1"
+      ]
     },
     {
       "id": "2611.12868",
@@ -54,68 +79,250 @@
       "arxiv_id": "2611.12868",
       "arxiv_version": 1,
       "published": "2026-11-09T18:53:47Z",
-      "categories": ["math.NT"],
-      "authors": ["Cetin Hakimoglu-Brown"],
-      "themes": ["Algebra & number theory"],
-      "abstract": "The author claims a complete classification of modular rank-two Nahm sums with rational symmetric positive-definite matrices and rational shifts, consisting of explicit families, split rank-one products, and 34 exceptional triples.",
-      "claimed_result": "The author claims that no further modular data occur in the specified rank-two rational setting, and that all distinguished Nahm points have joint degree at most four (arXiv abstract and HTML Theorem 1.1).",
-      "assumptions_and_setting": "A rational symmetric positive-definite 2×2 matrix, rational shifts, and modular Nahm sums; classification is up to coordinate exchange and includes rational-point families, split products, and exceptional data.",
-      "unique_caveat": "The classification does not cover higher rank, nonsymmetric matrices, or irrational parameters. Its exhaustive arithmetic and computational certificates should be checked independently; the preprint is not presented as peer-reviewed.",
-      "refs": ["https://arxiv.org/abs/2611.12868", "https://arxiv.org/html/2611.12868v1", "https://doi.org/10.5281/zenodo.24062300"]
-    },
-    {
-      "id": "2611.12781",
-      "kind": "paper",
-      "title": "Average distance and maximum induced linear forest",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2611.12781",
-      "arxiv_id": "2611.12781",
-      "arxiv_version": 1,
-      "published": "2026-11-09T17:54:36Z",
-      "categories": ["math.CO"],
-      "authors": ["Mathieu Bouchard", "Alain Hertz"],
-      "themes": ["Combinatorics & discrete mathematics"],
-      "abstract": "For every finite connected graph, the authors claim the 2009 conjectured upper bound that average pairwise distance is at most half the order of a largest induced linear forest.",
-      "claimed_result": "The authors prove μ(G) ≤ L(G)/2, equivalently 4W(G) ≤ L(G)n(n−1), for every connected graph (arXiv abstract).",
-      "assumptions_and_setting": "A finite connected graph G of order n; μ(G) is average distance, W(G) the Wiener index, and L(G) the maximum order of an induced subgraph whose components are paths.",
-      "unique_caveat": "The claim concerns this one global inequality; the abstract does not claim an equality classification or a stability theorem.",
-      "refs": ["https://arxiv.org/abs/2611.12781"]
-    },
-    {
-      "id": "2611.12724",
-      "kind": "paper",
-      "title": "A relative trace formula for the orthogonal Gan-Gross-Prasad model and the proof of its fundamental lemma",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2611.12724",
-      "arxiv_id": "2611.12724",
-      "arxiv_version": 1,
-      "published": "2026-11-09T17:09:27Z",
-      "categories": ["math.NT", "math.RT"],
-      "authors": ["Zhengyu Mao", "Chen Wan"],
-      "themes": ["Algebra & number theory"],
-      "abstract": "The authors compare relative trace formulas for the Gan–Gross–Prasad conjecture, match regular orbits, formulate the associated fundamental lemma and smooth-transfer conjecture, and prove the fundamental lemma for the unit Hecke-algebra element.",
-      "claimed_result": "The authors claim the fundamental lemma for the unit element of the Hecke algebra for the orthogonal Gan–Gross–Prasad model (arXiv abstract).",
-      "assumptions_and_setting": "The setting is the orthogonal Gan–Gross–Prasad model and a comparison of relative trace formulas; the stated theorem is for the unit Hecke-algebra element.",
-      "unique_caveat": "The abstract only claims the unit-element fundamental lemma; it formulates, rather than claims to prove, the smooth-transfer conjecture.",
-      "refs": ["https://arxiv.org/abs/2611.12724"]
+      "categories": [
+        "math.NT"
+      ],
+      "authors": [
+        "Cetin Hakimoglu-Brown"
+      ],
+      "themes": [
+        "Algebra & number theory"
+      ],
+      "abstract": "The author classifies modular rank-two Nahm sums for rational symmetric positive-definite matrices and rational shifts, finding rational-point families, split products, and 34 exceptional triples, with no further cases under those hypotheses.",
+      "claimed_result": "The author states an if-and-only-if classification: up to exchanging coordinates, every modular datum is in one of three rational-point families, a product of two modular rank-one sums, or the list of 34 exceptional triples on 12 matrices (arXiv abstract and Theorem 1.1).",
+      "assumptions_and_setting": "Nahm sums with a rational symmetric positive-definite 2×2 matrix, rational vector shifts, and rational scalar shift; modularity means a modular function for a finite-index subgroup of SL₂(Z), meromorphic at cusps, allowing a finite-order multiplier.",
+      "unique_caveat": "The classification does not cover higher rank, nonsymmetric matrices, or irrational input data; its exhaustive finite arithmetic steps and companion certificates merit independent checking.",
+      "evidence_for_ranking": "The introduction describes an exhaustiveness gap in the symmetric rank-two problem; the paper states a sharp degree-four bound and an explicit classification with exact certificates, independent checks, and a Zenodo companion DOI.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12868",
+        "https://arxiv.org/html/2611.12868v1",
+        "https://doi.org/10.5281/zenodo.24062300"
+      ]
     },
     {
       "id": "2611.12862",
       "kind": "paper",
       "title": "Quantitative global regularity for Navier--Stokes equations with odd viscosity on the cubic three-torus",
-      "rank": 6,
+      "rank": 4,
       "url": "https://arxiv.org/abs/2611.12862",
       "arxiv_id": "2611.12862",
       "arxiv_version": 1,
       "published": "2026-11-09T18:50:49Z",
-      "categories": ["math.AP", "math-ph", "physics.flu-dyn"],
-      "authors": ["Jinzheng Li", "Yuqi Li", "Hao-Yu Sun"],
-      "themes": ["Analysis & PDE", "Mathematical physics"],
-      "abstract": "For three-dimensional incompressible Navier–Stokes on the cubic torus, the authors claim a unique global strong solution for arbitrary mean-zero divergence-free H² initial data and independent steady H² forcing when a fixed odd-viscosity coefficient exceeds a norm-uniform sufficient threshold.",
-      "claimed_result": "The authors claim global strong well-posedness above a sufficient odd-viscosity threshold, positive-time smoothness in the unforced case, and additional regularity regions for explicit bounded data and forcing (arXiv abstract).",
-      "assumptions_and_setting": "Three-dimensional incompressible flow on the cubic torus with vertical-derivative-of-curl odd viscosity; initial data and steady force are real, mean-zero/divergence-free as appropriate, and in second-order Sobolev spaces.",
-      "unique_caveat": "The threshold is sufficient, not claimed sharp; the authors explicitly leave the sharp threshold for the original equation open, and the theorem depends on the added odd-viscosity term.",
-      "refs": ["https://arxiv.org/abs/2611.12862"]
+      "categories": [
+        "math.AP",
+        "math-ph",
+        "physics.flu-dyn"
+      ],
+      "authors": [
+        "Jinzheng Li",
+        "Yuqi Li",
+        "Hao-Yu Sun"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Mathematical physics"
+      ],
+      "abstract": "For three-dimensional incompressible Navier–Stokes on the cubic torus, the authors claim global strong solutions for arbitrary mean-zero divergence-free H² data and steady H² forcing once one odd-viscosity coefficient exceeds a sufficient data-dependent threshold, and also give bounded-data regions with regularity at every coefficient.",
+      "claimed_result": "The authors claim unique global strong solutions when the magnitude of one fixed odd-viscosity coefficient exceeds a sufficient threshold; in the unforced case the solution is smooth at positive times. They also claim explicit bounded data/force regions giving regularity for every coefficient (arXiv abstract).",
+      "assumptions_and_setting": "Three-dimensional incompressible flow on the cubic three-torus, with the specified constant odd-viscosity operator; real mean-zero divergence-free initial data and independent steady force in second-order Sobolev space for the threshold theorem.",
+      "unique_caveat": "This is a modified system with a sufficient, not claimed optimal, threshold; the authors explicitly leave the sharp threshold for the original equation open, so it is not a resolution of regularity for standard 3D Navier–Stokes.",
+      "evidence_for_ranking": "Cross-listed across PDE and mathematical physics; gives quantitative sufficient conditions and reports formal verification of all three main theorems in Lean 4 with Mathlib.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12862"
+      ]
+    },
+    {
+      "id": "2611.12723",
+      "kind": "paper",
+      "title": "Classification of quasi-lisse simple affine vertex algebras",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.12723",
+      "arxiv_id": "2611.12723",
+      "arxiv_version": 1,
+      "published": "2026-11-09T17:07:48Z",
+      "categories": [
+        "math.RT",
+        "math-ph",
+        "math.QA"
+      ],
+      "authors": [
+        "Drazen Adamovic",
+        "Xuanzhong Dai",
+        "Kaiwen Sun"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Mathematical physics"
+      ],
+      "abstract": "The authors classify all noncritical levels giving quasi-lisse simple affine vertex algebras for every finite-dimensional complex simple Lie algebra and determine associated varieties for ranks at most six and for E₇ and E₈.",
+      "claimed_result": "The authors classify the noncritical quasi-lisse levels for every finite-dimensional complex simple Lie algebra and establish the stated equivalence between levels involving q and q/gcd(q,r), with r the lacing number; they also determine associated varieties in the specified Lie-type range (arXiv abstract).",
+      "assumptions_and_setting": "Simple affine vertex algebra L_k(g), with g a finite-dimensional complex simple Lie algebra and k noncritical; the level criterion uses coprime positive integers p,q.",
+      "unique_caveat": "The associated-variety determination is stated only for rank at most six and E₇/E₈; the preprint is lengthy (126 pages), so its classification arguments need specialist review.",
+      "evidence_for_ranking": "Broad classification cross-listed in representation theory, mathematical physics, and quantum algebra; abstract gives a level-reduction criterion and specifies the types for associated-variety results.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12723"
+      ]
+    },
+    {
+      "id": "2611.12451",
+      "kind": "paper",
+      "title": "A proof of the Theta conjecture",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.12451",
+      "arxiv_id": "2611.12451",
+      "arxiv_version": 1,
+      "published": "2026-11-09T14:05:43Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Haojun Bai",
+        "Feng Gu",
+        "Zhuowei Lin",
+        "Dun Qiu",
+        "Minhao Zhang"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The authors prove a touching refinement of the Theta conjecture via a parking-function formula and derive the Theta conjecture and two valley Delta conjectures as corollaries.",
+      "claimed_result": "The authors give a weighted parking-function formula for Θ_{e_l}Θ_{e_k}∇E_{d,j} with decorated rises, valleys, and touch number j; summing over j yields the Theta conjecture, with the valley Delta conjecture and its generalized version as corollaries (arXiv abstract).",
+      "assumptions_and_setting": "Identities in the combinatorial algebra of symmetric and quasisymmetric functions, with parking functions and Dyck-path algebra; the abstract’s indices and objects are those of the conjectures cited by the authors.",
+      "unique_caveat": "The result concerns these specific generating-function identities; the abstract does not claim a general extension beyond the stated Theta/Delta conjectures.",
+      "evidence_for_ranking": "A refined identity is claimed to imply several named conjectures; abstract identifies matching algebraic and combinatorial recurrences with common initial conditions as the proof mechanism.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12451"
+      ]
+    },
+    {
+      "id": "2611.12519",
+      "kind": "paper",
+      "title": "Chvátal's Toughness Conjecture for Dense Almost Regular Graphs",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.12519",
+      "arxiv_id": "2611.12519",
+      "arxiv_version": 1,
+      "published": "2026-11-09T14:57:14Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Songling Shan"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The author proves that sufficiently large 4-tough graphs with linear minimum degree and a sufficiently small linear degree spread are Hamiltonian, and constructs 3/2-tough regular non-Hamiltonian graphs of linear degree.",
+      "claimed_result": "For every α>0 there are ε>0 and n₀ such that an n-vertex 4-tough graph with n≥n₀, minimum degree at least αn, and maximum-minus-minimum degree at most εn is Hamiltonian; the author also constructs 3/2-tough regular non-Hamiltonian graphs of linear degree (arXiv abstract).",
+      "assumptions_and_setting": "Finite graphs in the sufficiently-large-n regime, with fixed positive density parameter α and degree-spread parameter ε depending on α.",
+      "unique_caveat": "The theorem handles dense almost-regular graphs, not all t-tough graphs; it proves a restricted case rather than Chvátal’s full conjecture.",
+      "evidence_for_ranking": "The abstract states a precise regime for a Hamiltonicity conjecture and a counterexample family showing the toughness constant cannot simply be reduced to 3/2.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12519"
+      ]
+    },
+    {
+      "id": "2611.12724",
+      "kind": "paper",
+      "title": "A relative trace formula for the orthogonal Gan-Gross-Prasad model and the proof of its fundamental lemma",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.12724",
+      "arxiv_id": "2611.12724",
+      "arxiv_version": 1,
+      "published": "2026-11-09T17:09:27Z",
+      "categories": [
+        "math.NT",
+        "math.RT"
+      ],
+      "authors": [
+        "Zhengyu Mao",
+        "Chen Wan"
+      ],
+      "themes": [
+        "Algebra & number theory"
+      ],
+      "abstract": "The authors set up a comparison of relative trace formulas for the Gan–Gross–Prasad conjecture, match regular orbits, formulate the fundamental lemma and smooth-transfer conjecture, and prove the fundamental lemma for the Hecke-algebra unit element.",
+      "claimed_result": "The authors unfold the relative trace formulas, match regular orbits, formulate the corresponding fundamental lemma and smooth transfer, and prove the fundamental lemma for the unit element of the Hecke algebra (arXiv abstract).",
+      "assumptions_and_setting": "The orthogonal Gan–Gross–Prasad model and its associated relative trace formulas; the proved case is specifically the unit element.",
+      "unique_caveat": "The abstract formulates smooth transfer as a conjecture and proves the fundamental lemma only for the unit Hecke function, not in full generality.",
+      "evidence_for_ranking": "Bridges number theory and representation theory and gives a comparison framework plus a proved unit-element fundamental-lemma case.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12724"
+      ]
+    },
+    {
+      "id": "2611.12632",
+      "kind": "paper",
+      "title": "Perdomo's index conjecture for minimal hypersurfaces in spheres",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.12632",
+      "arxiv_id": "2611.12632",
+      "arxiv_version": 1,
+      "published": "2026-11-09T16:11:06Z",
+      "categories": [
+        "math.DG"
+      ],
+      "authors": [
+        "Qian Fu",
+        "Fagui Li"
+      ],
+      "themes": [
+        "Geometry & topology"
+      ],
+      "abstract": "For a full minimal immersion of a closed, connected, oriented n-manifold into the unit sphere, the authors claim Morse index at least n+3, with equality exactly for standard Clifford embeddings, and a stronger lower bound for non-Clifford images.",
+      "claimed_result": "The authors prove Morse index at least n+3, equality precisely for standard Clifford embeddings, and an (n+4)-dimensional negative-definite subspace for the Jacobi quadratic form when the image is non-Clifford (arXiv abstract).",
+      "assumptions_and_setting": "Full minimal immersion x:Mⁿ→Sⁿ⁺¹(1); M is closed, connected, and oriented, with n≥2.",
+      "unique_caveat": "The conclusion is limited to the stated full, closed, oriented setting and the unit sphere; no broader ambient geometry is claimed in the abstract.",
+      "evidence_for_ranking": "States a complete lower bound and equality characterization for a named geometric conjecture, distinguishing the equality and non-Clifford cases.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12632"
+      ]
+    },
+    {
+      "id": "2611.12685",
+      "kind": "paper",
+      "title": "Sharpness of the Martin-O'Bryant autoconvolution inequality",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.12685",
+      "arxiv_id": "2611.12685",
+      "arxiv_version": 1,
+      "published": "2026-11-09T16:47:53Z",
+      "categories": [
+        "math.CA"
+      ],
+      "authors": [
+        "Tonći Crmarić",
+        "Vjekoslav Kovač",
+        "Jelena Rupčić"
+      ],
+      "themes": [
+        "Analysis & PDE"
+      ],
+      "abstract": "For every nonnegative f in L¹(R)∩L²(R), the authors show that the coefficient 1 in a stated autoconvolution inequality cannot be replaced uniformly by any smaller constant.",
+      "claimed_result": "There is no c<1 such that ||f*f||₂² ≤ c ||f*f||₁ ||f*f||∞ holds for every nonnegative f∈L¹(R)∩L²(R) (arXiv abstract).",
+      "assumptions_and_setting": "Real-line convolution; f is nonnegative and belongs to both L¹ and L².",
+      "unique_caveat": "The abstract establishes that the coefficient cannot be uniformly lowered, but does not state whether equality is attained or characterize near-extremizing functions.",
+      "evidence_for_ranking": "Addresses sharpness of a specific functional inequality and gives a uniform impossibility statement.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-10",
+      "refs": [
+        "https://arxiv.org/abs/2611.12685"
+      ]
     }
-  ]
+  ],
+  "source_report_markdown": "# arXiv Mathematics: daily notable papers — announcement batch 10 November 2026\n\nThe batch contains 792 mathematics entries; this report selects 10 for a closer look. The dominant pattern is authors claiming to close conjectures or complete classifications, often with sharp hypotheses or checkable proof components. I’ll move from complex analysis and graph theory to arithmetic, PDE, algebra, and geometry. Caveat: arXiv supplies no official trending chart, so this is an inferred ranking, and citation evidence is limited for a just-announced batch.\n\n## Top papers (ranked)\n\n### 1. [A proof of the Erdős-Herzog-Piranian lemniscate conjecture](https://arxiv.org/abs/2611.12830)\n- **Abstract:** For every monic complex polynomial of degree at least one, the paper claims the unit lemniscate has maximal length for a translate and rotation of `z^n − 1`, with exactly those equality cases.\n- **Authors:** Teng Zhang\n- **arXiv:** `2611.12830v1` (published 2026-11-09 18:29:49 UTC; categories: `math.CV`)\n- **Evidence for ranking:** The claim resolves a conjecture posed in 1958 for every degree and specifies all maximizers; the introduction places the result after prior work covering sufficiently large degrees and the cases n=2,3. Its stated combination of analytic estimates and certified finite-degree calculations is a concrete significance signal, not a readership measure.\n- **Claimed result:** The author proves that for any monic degree-n polynomial p, the length of `{z: |p(z)|=1}` is at most the length for `z^n−1`; equality holds exactly for `p(z)=(z−z₀)^n−e^{iθ}` (arXiv abstract and Theorem 1.3).\n- **Assumptions and setting:** A monic polynomial over the complex numbers, degree n≥1, with the unit-level lemniscate measured by arclength.\n- **Caveat:** The proof uses rigorous computer-assisted estimates in a finite range of degrees; the paper is a preprint, and this summary has not checked those certificates or the full proof.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Analysis & PDE\n\n### 2. [Average distance and maximum induced linear forest](https://arxiv.org/abs/2611.12781)\n- **Abstract:** For every connected graph, the authors claim the average pairwise distance is at most half the maximum order of an induced subgraph whose components are paths.\n- **Authors:** Mathieu Bouchard, Alain Hertz\n- **arXiv:** `2611.12781v1` (published 2026-11-09 17:54:36 UTC; categories: `math.CO`)\n- **Evidence for ranking:** The paper explicitly identifies its result as proving a conjecture dating to 2009, strengthening previously stated bounds using induced forests and the independence number; the full-scope theorem is stated for all connected graphs.\n- **Claimed result:** The authors prove `μ(G) ≤ L(G)/2`, equivalently `4W(G) ≤ L(G)n(n−1)`, where μ is average distance, W is the Wiener index, and L is the largest induced linear-forest order (arXiv abstract and Conjecture 1.1).\n- **Assumptions and setting:** Finite connected graph G of order n; a linear forest is an induced subgraph all of whose connected components are chains (paths).\n- **Caveat:** The theorem is an attributed preprint claim; the abstract gives the universal bound but does not state a separate classification of equality cases.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Combinatorics & discrete mathematics\n\n### 3. [A complete symmetric rank-two modularity classification, obtained through a sharp uniform degree bound](https://arxiv.org/abs/2611.12868)\n- **Abstract:** The author classifies modular rank-two Nahm sums for rational symmetric positive-definite matrices and rational shifts, finding rational-point families, split products, and 34 exceptional triples, with no further cases under those hypotheses.\n- **Authors:** Cetin Hakimoglu-Brown\n- **arXiv:** `2611.12868v1` (published 2026-11-09 18:53:47 UTC; categories: `math.NT`)\n- **Evidence for ranking:** The introduction frames exhaustiveness in the symmetric rank-two problem as a longstanding gap; the result gives an explicit complete list, a sharp degree-four bound, exact certificates, independently implemented checks, and a computational companion archived at DOI `10.5281/zenodo.24062300`.\n- **Claimed result:** The author states an if-and-only-if classification: up to exchanging coordinates, every modular datum is in one of three rational-point families, a product of two modular rank-one sums, or the list of 34 exceptional triples on 12 matrices (arXiv abstract and Theorem 1.1).\n- **Assumptions and setting:** Nahm sums with a rational symmetric positive-definite 2×2 matrix, rational vector shifts, and rational scalar shift; modularity means a modular function for a finite-index subgroup of SL₂(Z), meromorphic at cusps, allowing a finite-order multiplier.\n- **Caveat:** The classification does not cover higher rank, nonsymmetric matrices, or irrational input data; its exhaustive finite arithmetic steps and companion certificates merit independent checking.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Algebra & number theory\n\n### 4. [Quantitative global regularity for Navier--Stokes equations with odd viscosity on the cubic three-torus](https://arxiv.org/abs/2611.12862)\n- **Abstract:** For three-dimensional incompressible Navier–Stokes on the cubic torus, the authors claim global strong solutions for arbitrary mean-zero divergence-free H² data and steady H² forcing once one odd-viscosity coefficient exceeds a sufficient data-dependent threshold, and also give bounded-data regions with regularity at every coefficient.\n- **Authors:** Jinzheng Li, Yuqi Li, Hao-Yu Sun\n- **arXiv:** `2611.12862v1` (published 2026-11-09 18:50:49 UTC; categories: `math.AP`, `math-ph`, `physics.flu-dyn`)\n- **Evidence for ranking:** The result is cross-listed across PDE and mathematical physics, states quantitative conditions rather than only qualitative regularity, and reports formal verification of its three main theorems in Lean 4 with Mathlib.\n- **Claimed result:** The authors claim unique global strong solutions when the magnitude of one fixed odd-viscosity coefficient exceeds a sufficient threshold; in the unforced case the solution is smooth at positive times. They also claim explicit bounded data/force regions giving regularity for every coefficient (arXiv abstract).\n- **Assumptions and setting:** Three-dimensional incompressible flow on the cubic three-torus, with the specified constant odd-viscosity operator; real mean-zero divergence-free initial data and independent steady force in second-order Sobolev space for the threshold theorem.\n- **Caveat:** This is a modified system with a sufficient, not claimed optimal, threshold; the authors explicitly leave the sharp threshold for the original equation open, so it is not a resolution of regularity for standard 3D Navier–Stokes.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Analysis & PDE; Mathematical physics\n\n### 5. [Classification of quasi-lisse simple affine vertex algebras](https://arxiv.org/abs/2611.12723)\n- **Abstract:** The authors classify all noncritical levels giving quasi-lisse simple affine vertex algebras for every finite-dimensional complex simple Lie algebra and determine associated varieties for ranks at most six and for E₇ and E₈.\n- **Authors:** Drazen Adamovic, Xuanzhong Dai, Kaiwen Sun\n- **arXiv:** `2611.12723v1` (published 2026-11-09 17:07:48 UTC; categories: `math.RT`, `math-ph`, `math.QA`)\n- **Evidence for ranking:** A broad classification is cross-listed in representation theory, mathematical physics, and quantum algebra; the abstract gives a precise level-reduction criterion and explicitly names the exceptional associated-variety coverage.\n- **Claimed result:** The authors classify the noncritical quasi-lisse levels for every finite-dimensional complex simple Lie algebra and establish the stated equivalence between levels involving q and q/gcd(q,r), with r the lacing number; they also determine associated varieties in the specified Lie-type range (arXiv abstract).\n- **Assumptions and setting:** Simple affine vertex algebra `L_k(g)`, with g a finite-dimensional complex simple Lie algebra and k noncritical; the level criterion uses coprime positive integers p,q.\n- **Caveat:** The associated-variety determination is stated only for rank at most six and E₇/E₈; the preprint is lengthy (126 pages), so its classification arguments need specialist review.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Algebra & number theory; Mathematical physics\n\n### 6. [A proof of the Theta conjecture](https://arxiv.org/abs/2611.12451)\n- **Abstract:** The authors prove a touching refinement of the Theta conjecture via a parking-function formula and derive the Theta conjecture and two valley Delta conjectures as corollaries.\n- **Authors:** Haojun Bai, Feng Gu, Zhuowei Lin, Dun Qiu, Minhao Zhang\n- **arXiv:** `2611.12451v1` (published 2026-11-09 14:05:43 UTC; categories: `math.CO`)\n- **Evidence for ranking:** One refined identity is claimed to imply several named conjectures; the abstract also identifies the proof mechanism as matching algebraic and combinatorial recurrences with common initial conditions.\n- **Claimed result:** The authors give a weighted parking-function formula for `Θ_{e_l}Θ_{e_k}∇E_{d,j}` with decorated rises, valleys, and touch number j; summing over j yields the Theta conjecture, with the valley Delta conjecture and its generalized version as corollaries (arXiv abstract).\n- **Assumptions and setting:** Identities in the combinatorial algebra of symmetric and quasisymmetric functions, with parking functions and Dyck-path algebra; the abstract’s indices and objects are those of the conjectures cited by the authors.\n- **Caveat:** The result concerns these specific generating-function identities; the abstract does not claim a general extension beyond the stated Theta/Delta conjectures.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Combinatorics & discrete mathematics\n\n### 7. [Chvátal's Toughness Conjecture for Dense Almost Regular Graphs](https://arxiv.org/abs/2611.12519)\n- **Abstract:** The author proves that sufficiently large 4-tough graphs with linear minimum degree and a sufficiently small linear degree spread are Hamiltonian, and constructs 3/2-tough regular non-Hamiltonian graphs of linear degree.\n- **Authors:** Songling Shan\n- **arXiv:** `2611.12519v1` (published 2026-11-09 14:57:14 UTC; categories: `math.CO`)\n- **Evidence for ranking:** The abstract supplies a precise regime for a longstanding Hamiltonicity conjecture and a counterexample family showing the stated toughness constant cannot simply be reduced to 3/2.\n- **Claimed result:** For every α>0 there are ε>0 and n₀ such that an n-vertex 4-tough graph with n≥n₀, minimum degree at least αn, and maximum-minus-minimum degree at most εn is Hamiltonian; the author also constructs 3/2-tough regular non-Hamiltonian graphs of linear degree (arXiv abstract).\n- **Assumptions and setting:** Finite graphs in the sufficiently-large-n regime, with fixed positive density parameter α and degree-spread parameter ε depending on α.\n- **Caveat:** The theorem handles dense almost-regular graphs, not all t-tough graphs; it proves a restricted case rather than Chvátal’s full conjecture.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Combinatorics & discrete mathematics\n\n### 8. [A relative trace formula for the orthogonal Gan-Gross-Prasad model and the proof of its fundamental lemma](https://arxiv.org/abs/2611.12724)\n- **Abstract:** The authors set up a comparison of relative trace formulas for the Gan–Gross–Prasad conjecture, match regular orbits, formulate the fundamental lemma and smooth-transfer conjecture, and prove the fundamental lemma for the Hecke-algebra unit element.\n- **Authors:** Zhengyu Mao, Chen Wan\n- **arXiv:** `2611.12724v1` (published 2026-11-09 17:09:27 UTC; categories: `math.NT`, `math.RT`)\n- **Evidence for ranking:** The paper bridges number theory and representation theory and states both a comparison framework and a proved fundamental-lemma case, rather than only proposing a conjecture.\n- **Claimed result:** The authors unfold the relative trace formulas, match regular orbits, formulate the corresponding fundamental lemma and smooth transfer, and prove the fundamental lemma for the unit element of the Hecke algebra (arXiv abstract).\n- **Assumptions and setting:** The orthogonal Gan–Gross–Prasad model and its associated relative trace formulas; the proved case is specifically the unit element.\n- **Caveat:** The abstract formulates smooth transfer as a conjecture and proves the fundamental lemma only for the unit Hecke function, not in full generality.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Algebra & number theory\n\n### 9. [Perdomo's index conjecture for minimal hypersurfaces in spheres](https://arxiv.org/abs/2611.12632)\n- **Abstract:** For a full minimal immersion of a closed, connected, oriented n-manifold into the unit sphere, the authors claim Morse index at least n+3, with equality exactly for standard Clifford embeddings, and a stronger lower bound for non-Clifford images.\n- **Authors:** Qian Fu, Fagui Li\n- **arXiv:** `2611.12632v1` (published 2026-11-09 16:11:06 UTC; categories: `math.DG`)\n- **Evidence for ranking:** The paper states a complete lower bound and equality characterization for a named geometric conjecture, with a clear distinction between equality and non-Clifford cases.\n- **Claimed result:** The authors prove Morse index at least n+3, equality precisely for standard Clifford embeddings, and an (n+4)-dimensional negative-definite subspace for the Jacobi quadratic form when the image is non-Clifford (arXiv abstract).\n- **Assumptions and setting:** Full minimal immersion `x:Mⁿ→Sⁿ⁺¹(1)`; M is closed, connected, and oriented, with n≥2.\n- **Caveat:** The conclusion is limited to the stated full, closed, oriented setting and the unit sphere; no broader ambient geometry is claimed in the abstract.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Geometry & topology\n\n### 10. [Sharpness of the Martin-O'Bryant autoconvolution inequality](https://arxiv.org/abs/2611.12685)\n- **Abstract:** For every nonnegative f in L¹(R)∩L²(R), the authors show that the coefficient 1 in a stated autoconvolution inequality cannot be replaced uniformly by any smaller constant.\n- **Authors:** Tonći Crmarić, Vjekoslav Kovač, Jelena Rupčić\n- **arXiv:** `2611.12685v1` (published 2026-11-09 16:47:53 UTC; categories: `math.CA`)\n- **Evidence for ranking:** The paper addresses sharpness of a specific functional inequality and gives a clean uniform impossibility statement in a focused analysis paper.\n- **Claimed result:** There is no c<1 such that `||f*f||₂² ≤ c ||f*f||₁ ||f*f||∞` holds for every nonnegative `f∈L¹(R)∩L²(R)` (arXiv abstract).\n- **Assumptions and setting:** Real-line convolution; f is nonnegative and belongs to both L¹ and L².\n- **Caveat:** The abstract establishes that the coefficient cannot be uniformly lowered, but does not state whether equality is attained or characterize near-extremizing functions.\n- **Announcement type:** new submission, announcement-batch date 2026-11-10\n- **Themes:** Analysis & PDE\n\n## Trending Research Themes\n\n- **Conjecture closure with explicit equality or boundary cases:** The lemniscate paper identifies all maximizing polynomials, while the graph-distance paper proves its conjectured inequality for every connected graph (2611.12830; 2611.12781). The Theta paper also derives multiple identities from a refined formula, but is an isolated combinatorial strand rather than evidence of a broad field-wide shift (2611.12451).\n- **Classification by reducing infinite possibilities to finite arithmetic or structural lists:** The Nahm-sum paper reduces its stated rank-two domain to three families, split products, and 34 exceptional triples; the quasi-lisse paper classifies levels across all finite-dimensional simple Lie algebras (2611.12868; 2611.12723). They share a classification goal, not a demonstrated common technique.\n- **Proof artifacts and sharp hypotheses:** Exact certificates and companion checks accompany the Nahm-sum classification; the Navier–Stokes preprint reports Lean formalization; the graph Hamiltonicity result pairs a dense almost-regular theorem with explicit counterexamples at lower toughness (2611.12868; 2611.12862; 2611.12519). These are distinct ways to make verification and scope explicit, not evidence of a general methodological turn.\n- **Bridges across mathematical areas:** The odd-viscosity work connects PDE and mathematical physics; the vertex-algebra classification spans representation theory, mathematical physics, and quantum algebra; the relative trace formula links number theory and representation theory (2611.12862; 2611.12723; 2611.12724). This is a cross-listing pattern among selected papers, not a claim about the entire 792-paper batch.\n\n## Open Problems and Research Directions\n\n- **Author-stated open problem:** The odd-viscosity paper says its polynomial sufficient threshold is not known to be sharp and leaves the sharp threshold for the original equation open. A concrete follow-up is to test whether weighted-energy estimates can be sharpened in the forced regimes and compare the resulting threshold with direct bounded-region barriers (2611.12862).\n- **Author-stated scope gap:** The relative trace formula paper proves the fundamental lemma for the unit Hecke element while formulating smooth transfer as a conjecture. Extending the proved comparison to broader test functions, then checking what follows for smooth transfer, is a natural next step (2611.12724).\n- **Scope gap and proposed research direction:** The Chvátal result applies to dense almost-regular graphs, and the abstract gives 3/2-tough non-Hamiltonian examples alongside a 4-tough theorem. Determining which additional degree hypotheses narrow this gap is a possible follow-up; this is a synthesis, not an explicitly stated problem in the abstract (2611.12519).\n- **Proposed synthesis:** For the lemniscate theorem, investigate quantitative stability: if a monic polynomial’s lemniscate length is close to maximal, must its coefficients or critical values be close to those of a translate/rotation of `z^n−1`? The exact equality classification motivates the question; it is not presented here as author-stated (2611.12830).\n- **Proposed generalization:** Extend the complete Nahm-sum classification beyond rational symmetric rank-two data, beginning with controlled relaxations of symmetry or rank. The paper’s degree-four reduction suggests a point of comparison, but tractability is not assumed (2611.12868).\n\n## Takeaway\n\nThe clearest substantive pattern is authors presenting complete results: conjecture proofs, classifications, and the exact boundary of their hypotheses. Several claims come with verification artifacts, but all ten are new preprints; treat them as author-reported results pending expert assessment, not as a readership ranking.\n\n## Method and sources\n\n- **Window:** Daily Mathematics announcement batch 2026-11-10 (start and end date: 2026-11-10). At the 2026-11-11 snapshot, the latest listing had no 11 November batch, so this report uses the prior batch. Snapshot: 2026-11-11 01:26:59 UTC.\n- **Coverage:** The `math` recent listing was opened in its full view; the latest batch displayed 792 entries. The selected papers are all in math.*; each arXiv abstract page and submission history were checked. Introductions and main-result statements were inspected for the top three selections.\n- **Inference:** arXiv has no official trend chart. All ten are new submissions in one batch, so recency is not used to imply popularity. Selection and ordering emphasize concrete claimed results, scope, cross-listing, stated proof artifacts, and checkable external discussion. No reliable independent mathematical discussion for these same-day items was located. Citation evidence is limited for a batch less than a day old; counts are not treated as period gains. Semantic Scholar citation fields were not available at snapshot time. This is a ranked set of notable recent papers, not a measured popularity list.\n- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); abstract/history pages linked in each title; arXiv HTML excerpts for [2611.12830v1](https://arxiv.org/html/2611.12830v1), [2611.12781v1](https://arxiv.org/html/2611.12781v1), and [2611.12868v1](https://arxiv.org/html/2611.12868v1); Semantic Scholar Graph API queried by arXiv identifier; candidate-specific web searches for independent discussion. The modularity paper points to a DOI-archived computational companion: https://doi.org/10.5281/zenodo.24062300.\n"
 }

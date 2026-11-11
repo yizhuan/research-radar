@@ -1,0 +1,138 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-11-11",
+  "title": "GitHub Trending Summary - Daily - 2026-11-11",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-11-11.md",
+  "snapshot_time_utc": "2026-11-11 17:37 UTC",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "ranking_basis": "Daily GitHub Trending star gains observed on the live page",
+  "ranking_explanation": "Repositories shown on the live GitHub daily Trending page were ordered by the page's daily star-gain figures; current total stars, default branches, and commit SHAs were corroborated through GitHub REST API repository and commit endpoints.",
+  "global_caveat": "Trending star gains are a point-in-time GitHub page signal, not a measure of long-term adoption. Total star counts were fetched via the REST API moments after the Trending view and can move by a few stars.",
+  "themes": [
+    {"id": "agent-workflows", "name": "Agent workflows and coding tools", "summary": "Reusable engineering workflows, model handoff, agent-ready UI systems, and browser control attract strong attention.", "supporting_repository_ids": ["repo-meta-astryx", "repo-addyosmani-agent-skills", "repo-vercel-labs-agent-browser", "repo-shadcn-improve"]},
+    {"id": "ai-applied-workflows", "name": "AI applied to existing workflows", "summary": "MCP connects assistants to Home Assistant; an LLM stock-analysis project packages market data, news, dashboards, and notifications.", "supporting_repository_ids": ["repo-homeassistant-ai-ha-mcp", "repo-zhulinsen-daily-stock-analysis"]},
+    {"id": "open-consumer-software", "name": "Open consumer software", "summary": "A self-hostable personal finance app is a strong non-agent signal in the daily list.", "supporting_repository_ids": ["repo-we-promise-sure"]},
+    {"id": "web-and-security", "name": "Web platform guidance and security", "summary": "The list includes a Chrome web-guidance source repository and a security CLI/SDK.", "supporting_repository_ids": ["repo-googlechrome-modern-web-guidance-src", "repo-openai-codex-security"]},
+    {"id": "education", "name": "Programming education", "summary": "A Java algorithms collection provides a non-agent educational counterpoint.", "supporting_repository_ids": ["repo-thealgorithms-java"]}
+  ],
+  "sections": [
+    {"id": "00-snapshot", "kind": "snapshot", "title": "Snapshot", "content": "Snapshot time: 2026-11-11 17:37 UTC. Scope: Daily. Date range: 2026-11-11 through 2026-11-11. Ranking basis: Daily GitHub Trending star gains observed on the live page."},
+    {"id": "01-headline", "kind": "headline", "title": "Headline", "content": "A customizable design system leads the day, while an unusually practical cluster of agent skills, browser automation, and Home Assistant integration also draws strong interest. Personal finance is another standout, led by Sure's +1,079 stars."},
+    {
+      "id": "repo-meta-astryx", "kind": "repo", "title": "meta/astryx", "rank": 1,
+      "url": "https://github.com/meta/astryx",
+      "description": "An open-source React design system built for customization and use by people and coding agents.",
+      "language": "TypeScript", "stars_gained": 2842, "total_stars": 24571,
+      "default_branch_commit": "fe22e41979ddd4a451d54dd7315b28a6caa1e0f5",
+      "why_notable": "The strongest daily star-gain signal in the live snapshot; its README describes 150+ components, theming, a CLI, and agent-aware docs/tooling.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 1,
+      "spoken_name": "Astryx", "unique_caveat": "The README labels the project as currently in beta and specifies React 19 or later.", "enrichment": null,
+      "refs": ["meta/astryx"]
+    },
+    {
+      "id": "repo-we-promise-sure", "kind": "repo", "title": "we-promise/sure", "rank": 2,
+      "url": "https://github.com/we-promise/sure",
+      "description": "A community-maintained, self-hostable personal-finance app.",
+      "language": "Ruby", "stars_gained": 1079, "total_stars": 12716,
+      "default_branch_commit": "426fefe9dc55fd7716a5310c2e26920c5839d922",
+      "why_notable": "The second-largest daily gain highlights demand for open personal-finance software beyond AI developer tooling.",
+      "theme_ids": ["open-consumer-software"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 2,
+      "spoken_name": "Sure", "unique_caveat": "The README identifies it as a community fork of the now-abandoned Maybe Finance project and states it is AGPLv3-licensed.", "enrichment": null,
+      "refs": ["we-promise/sure"]
+    },
+    {
+      "id": "repo-addyosmani-agent-skills", "kind": "repo", "title": "addyosmani/agent-skills", "rank": 3,
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering workflows packaged as skills for AI coding agents.",
+      "language": "JavaScript", "stars_gained": 788, "total_stars": 115728,
+      "default_branch_commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "why_notable": "Its strong gain reinforces interest in repeatable agent workflows spanning specification, planning, building, testing, review, and shipping.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 3,
+      "spoken_name": "Addy's Agent Skills", "unique_caveat": "README describes agent-specific integrations; the installation path differs by coding-agent environment.", "enrichment": null,
+      "refs": ["addyosmani/agent-skills"]
+    },
+    {
+      "id": "repo-vercel-labs-agent-browser", "kind": "repo", "title": "vercel-labs/agent-browser", "rank": 4,
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "A Rust CLI for browser automation by AI agents.",
+      "language": "Rust", "stars_gained": 712, "total_stars": 49725,
+      "default_branch_commit": "aecb21a20acc23ba0f0215d82ae71849bc1bfac0",
+      "why_notable": "A high daily gain for an agent execution tool; its README documents compact page snapshots, element references, and a persistent browser daemon.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 4,
+      "spoken_name": "Agent Browser", "unique_caveat": "The CLI's element references are tied to the current page snapshot and must be refreshed after navigation or DOM changes.", "enrichment": null,
+      "refs": ["vercel-labs/agent-browser"]
+    },
+    {
+      "id": "repo-homeassistant-ai-ha-mcp", "kind": "repo", "title": "homeassistant-ai/ha-mcp", "rank": 5,
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "description": "An MCP server for configuring and automating Home Assistant with AI assistants.",
+      "language": "Python", "stars_gained": 640, "total_stars": 7136,
+      "default_branch_commit": "6f2196dc4c254195df744f30977e9072d5555e8c",
+      "why_notable": "It connects the agent/MCP trend to smart-home automation; its README documents an in-process Home Assistant integration and multiple client connection paths.",
+      "theme_ids": ["ai-applied-workflows"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 5,
+      "spoken_name": "HA-MCP", "unique_caveat": "The documented integration requires Home Assistant 2026.8.0 or newer; some setup guidance differs by Home Assistant version.", "enrichment": null,
+      "refs": ["homeassistant-ai/ha-mcp"]
+    },
+    {
+      "id": "repo-zhulinsen-daily-stock-analysis", "kind": "repo", "title": "ZhuLinsen/daily_stock_analysis", "rank": 6,
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "An LLM-powered multi-market stock-analysis system with market data, news, dashboards, and automated notifications.",
+      "language": "Python", "stars_gained": 429, "total_stars": 70016,
+      "default_branch_commit": "ef44660f00e08ce66dcd4dc4d2e700836c45e833",
+      "why_notable": "It applies LLMs to an end-user financial research workflow rather than coding assistance.",
+      "theme_ids": ["ai-applied-workflows"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 6,
+      "spoken_name": "Daily Stock Analysis", "unique_caveat": "N/A - not available from GitHub", "enrichment": null,
+      "refs": ["ZhuLinsen/daily_stock_analysis"]
+    },
+    {
+      "id": "repo-shadcn-improve", "kind": "repo", "title": "shadcn/improve", "rank": 7,
+      "url": "https://github.com/shadcn/improve",
+      "description": "Uses a capable model to audit a codebase and create plans for cheaper models to execute.",
+      "language": "N/A - not available from GitHub", "stars_gained": 333, "total_stars": 10631,
+      "default_branch_commit": "cac56e1ebd3c279aa9153616cfeac7b174ab90f9",
+      "why_notable": "It spotlights a cost-aware model-handoff pattern for code review and execution.",
+      "theme_ids": ["agent-workflows"], "signal_strength": "standard", "evidence_density": "standard", "narration_priority": 7,
+      "spoken_name": "Improve", "unique_caveat": "The API metadata reports no primary language; the latest pushed_at was 2026-09-12 despite a recent repository metadata update.", "enrichment": null,
+      "refs": ["shadcn/improve"]
+    },
+    {
+      "id": "repo-googlechrome-modern-web-guidance-src", "kind": "repo", "title": "GoogleChrome/modern-web-guidance-src", "rank": 8,
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "N/A - not available from GitHub",
+      "language": "TypeScript", "stars_gained": 133, "total_stars": 1589,
+      "default_branch_commit": "b1f14f56cb93af75f2dd8edf8712aad86f610ac3",
+      "why_notable": "A web-platform entry in the daily trending set, although repository metadata supplied no description.",
+      "theme_ids": ["web-and-security"], "signal_strength": "brief", "evidence_density": "sparse", "narration_priority": 8,
+      "spoken_name": "Modern Web Guidance Source", "unique_caveat": "GitHub repository metadata contains no description; the report does not infer the repository's purpose from its name.", "enrichment": null,
+      "refs": ["GoogleChrome/modern-web-guidance-src"]
+    },
+    {
+      "id": "repo-thealgorithms-java", "kind": "repo", "title": "TheAlgorithms/Java", "rank": 9,
+      "url": "https://github.com/TheAlgorithms/Java",
+      "description": "A collection of algorithms implemented in Java.",
+      "language": "Java", "stars_gained": 108, "total_stars": 66931,
+      "default_branch_commit": "b2af1db6dcae46521e97a6331eae8cea61933080",
+      "why_notable": "It provides a useful non-agent educational counterpoint to the day's AI-heavy tooling.",
+      "theme_ids": ["education"], "signal_strength": "brief", "evidence_density": "standard", "narration_priority": 9,
+      "spoken_name": "The Algorithms Java", "unique_caveat": "N/A - not available from GitHub", "enrichment": null,
+      "refs": ["TheAlgorithms/Java"]
+    },
+    {
+      "id": "repo-openai-codex-security", "kind": "repo", "title": "openai/codex-security", "rank": 10,
+      "url": "https://github.com/openai/codex-security",
+      "description": "A CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities.",
+      "language": "TypeScript", "stars_gained": 20, "total_stars": 11550,
+      "default_branch_commit": "301141f4b6e6f3e28e7137dbc0e4ceea6aa7a4e7",
+      "why_notable": "It represents security-oriented coding-agent tooling, though its daily gain is modest relative to the leaders.",
+      "theme_ids": ["web-and-security"], "signal_strength": "brief", "evidence_density": "standard", "narration_priority": 10,
+      "spoken_name": "Codex Security", "unique_caveat": "N/A - not available from GitHub", "enrichment": null,
+      "refs": ["openai/codex-security"]
+    },
+    {"id": "80-trending-technologies-and-themes", "kind": "themes", "title": "Trending Technologies and Themes", "content": "Agent workflows and coding tools: addyosmani/agent-skills, shadcn/improve, vercel-labs/agent-browser, and meta/astryx. AI applied to existing workflows: homeassistant-ai/ha-mcp and ZhuLinsen/daily_stock_analysis. Open consumer software: we-promise/sure. Web platform guidance and application security: GoogleChrome/modern-web-guidance-src and openai/codex-security. Programming education: TheAlgorithms/Java. Languages across the 10 repos: TypeScript 3; Python 2; JavaScript, Rust, Ruby, and Java 1 each; language unavailable for shadcn/improve."},
+    {"id": "90-takeaway", "kind": "takeaway", "title": "Takeaway", "content": "Today's strongest signal is practical agent infrastructure: reusable engineering workflows, browser control, and integrations that let assistants act in existing products. But the gains are not exclusively about agents—Sure's personal-finance app and the stock-analysis project show substantial interest in complete user-facing applications too. Treat the ranking and daily gains as a point-in-time GitHub Trending snapshot, not a measure of long-term adoption."},
+    {"id": "99-sources-and-method", "kind": "sources", "title": "Sources and Method", "content": "Primary source: GitHub Trending repositories, daily, captured at approximately 2026-11-11 17:36 UTC. Corroboration: GitHub REST Search API exact repository matches and REST repository/commit endpoints for metadata and current default-branch SHAs. README details were checked for five narrated entries. Star gains and repo set are from the matching live daily Trending view; totals and SHAs came from REST API moments later and may differ by a few stars. No prior-window comparison was used."}
+  ]
+}

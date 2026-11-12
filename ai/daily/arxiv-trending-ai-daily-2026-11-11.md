@@ -1,111 +1,120 @@
-# arXiv AI: latest announcement batch — 11 November 2026
+# AI papers — arXiv announcement batch 11 Nov 2026: 8 selected papers
 
-Eight notable recent papers, with a clear cluster around agents that learn from experience and are evaluated in more realistic settings. The agenda: start with compiling agent behavior and safer memory updates, then look at post-training theory, training scaffolds, evaluation, and inference efficiency. arXiv has no official trending chart; this ordering is inferred, and the batch is too recent for citation counts to establish popularity, so the list is a relevance-led shortlist rather than a measured popularity ranking.
+Dominant pattern: agent systems are being made more reliable and economical by changing what they learn from experience—compiling repeated behavior, checking memory against source evidence, and gating updates before commit. A second cluster structures scientific reasoning and connects biological models to experiments. Agenda: agent memory and workflows first, then scientific discovery and biology. This is an inferred ordering: arXiv has no official trending chart, and citation evidence is limited for papers announced within the last day.
+
+Daily window: latest arXiv announcement batch, Wednesday 11 November 2026. The arXiv category “new” pages identify that batch; the selected papers were first submitted on 10 November UTC. Snapshot: 2026-11-12 17:05 UTC.
 
 ## Top papers (ranked)
 
 ### 1. [ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows](https://arxiv.org/abs/2611.14492)
-- **Abstract:** ReTrace converts SOPs and a few reasoning-and-tool-call traces into executable workflows where code chooses each next step, reporting lower runtime cost and latency with a small completion trade-off on its tested procedures.
-- **Authors:** Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, Rohith Nama, Arushi Gupta, et al.
-- **arXiv:** `2611.14492v1` (published 2026-11-10T18:49:47Z; categories: `cs.AI`, `cs.LG`, `cs.MA`)
-- **Evidence for ranking:** Strongest applied evidence in this shortlist: 79 production procedures plus two public benchmarks, with the paper reporting 24% lower enterprise cost and a 170s-to-1.3s runtime change on τ²-Bench. It also has a substantive independent technical discussion ([Learn Agentic](https://learnagentic.substack.com/p/your-agent-took-170-seconds-its-compiled)).
-- **Claimed contribution:** The authors extract action conditions and input sources from agent reasoning and tool records, merge them into evidence-linked rules, and compile these into executable workflows; results cover one production platform and two benchmarks.
-- **Caveat:** The authors say recovered conditions are not proven correct by their construction checks; their evaluation tests new inputs to the same procedures, not transfer to new procedures, and the public tests cover only the telecom τ²-Bench domain and eight SOP-Bench domains.
-- **Announcement type:** new submission, announcement batch 2026-11-11
+- **Abstract:** ReTrace turns an SOP and logged agent runs into executable workflows where code selects each next step, reporting modest completion trade-offs alongside lower cost and much shorter latency on its tested procedures.
+- **Authors:** Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, Rohith Nama, Arushi Gupta et al.
+- **arXiv:** `2611.14492v1` (published 2026-11-10 18:49:47 UTC; categories: `cs.AI`, `cs.LG`, `cs.MA`)
+- **Evidence for ranking:** Multiple independent technical commentaries discuss the latency/cost trade-off and where compilation is unsafe; the paper also reports 79 production procedures and two public benchmarks. This is a stronger attention signal than recency alone.
+- **Claimed contribution:** The authors extract rules from agent reasoning and tool-call traces, then compile the rules into planner-free executable workflows; on τ²-Bench they report 1.3 seconds per task versus 170 seconds for the agent.
+- **Caveat:** The authors say construction checks do not establish that recovered conditions are correct; results test new inputs to the same procedures, not transfer to new procedures, and changes to SOPs/tools may require rebuilding.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
 - **Themes:** Agents & reasoning; Efficient inference & systems
 
-### 2. [When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents](https://arxiv.org/abs/2611.14326)
-- **Abstract:** FGSE represents proposed agent-memory updates as hypotheses and tests transfer, counterexamples, and regression risk before committing them, reporting results across web, app, tool-use, and long-term-memory benchmarks.
-- **Authors:** Runxuan Tang, Haoyu Gao, Yuyan Ding, Junyi Yao, Zihao Zheng, et al.
-- **arXiv:** `2611.14326v1` (published 2026-11-10T16:52:25Z; categories: `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** The paper reports multiple task settings and concrete safety-related outcomes (including 5.0% falsification failures and 1.3% regression damage); it also received independent coverage from [Grafy News](https://grafy.ai/news/fgse-wants-verifier-approval-for-agent-memory). This supports relevance, not a measured readership rank.
-- **Claimed contribution:** The authors introduce a verifier-grounded commit/refine/reject gate for persistent memory updates and report reduced harmful committed updates alongside benchmark performance.
-- **Caveat:** The authors frame extension to multimodal agents and settings where verifiers must be learned or approximated as future work; the reported approach assumes verifier-rich environments.
-- **Announcement type:** new submission, announcement batch 2026-11-11
-- **Themes:** Agents & reasoning; Safety & alignment; Training & adaptation
+### 2. [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](https://arxiv.org/abs/2611.14514)
+- **Abstract:** The paper replaces single-hypothesis testing with contrast sets of competing explanations, reporting that the framing resolves more questions from the same evidence and experiment budget across six datasets.
+- **Authors:** Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun
+- **arXiv:** `2611.14514v1` (published 2026-11-10 18:58:43 UTC; categories: `cs.AI`, `cs.CL`, `cs.LG`)
+- **Evidence for ranking:** Accepted at NeurIPS 2026, cross-listed in three core AI categories, and discussed in independent technical coverage; its six-domain results and blinded expert study are checkable in the paper and project page.
+- **Claimed contribution:** The authors report 67% more resolved questions than pointwise surprisal under the same experiment budget and expert agreement on 78% of resolved questions.
+- **Caveat:** The authors limit experiments to tabular observational datasets and one GPT-4o-backed agent; conclusions are statistical rather than causal, and generated contrast sets can omit plausible alternatives.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
 
-### 3. [A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets](https://arxiv.org/abs/2611.14467)
-- **Abstract:** The paper analyzes how policy-gradient updates can lose access to high-reward responses even as reward rises, then gives coverage-preserving convergence guarantees for methods that periodically reset their KL reference.
-- **Authors:** Audrey Huang, Nan Jiang, Sham M. Kakade, Sadhika Malladi, Akshay Krishnamurthy, Dylan J. Foster
-- **arXiv:** `2611.14467v1` (published 2026-11-10T18:31:36Z; categories: `cs.LG`, `stat.ML`)
-- **Evidence for ranking:** The paper cross-lists across two configured AI-corpus categories and directly addresses a central post-training design question; its full arXiv text lays out the theoretical argument and limitations. Ranking is by methodological relevance, not citation momentum.
-- **Claimed contribution:** The authors define coverage-preserving policy optimization, describe a coverage-collapse failure for REINFORCE, and use Approximate Policy Mirror Descent/reference resets to prove global convergence for stylized PPO/GRPO and squared-loss families under stated assumptions.
-- **Caveat:** The authors limit end-to-end guarantees to softmax linear policies over pretrained features and a one-shot response setting; they note that richer policies, token-sequence effects, and multi-step reasoning remain open.
-- **Announcement type:** new submission, announcement batch 2026-11-11
-- **Themes:** Training & adaptation; Agents & reasoning
+### 3. [Emergent Biological Capabilities in a Foundation Model for Molecular Interactions](https://arxiv.org/abs/2611.14504)
+- **Abstract:** The authors report that Bonbon, trained on paired protein–ligand sequences, supports zero-shot interaction predictions and prospective compound screening, with a sharp capability increase at the largest of six tested scales.
+- **Authors:** Adi Mashiach
+- **arXiv:** `2611.14504v1` (published 2026-11-10 18:53:01 UTC; categories: `cs.LG`, `q-bio.BM`)
+- **Evidence for ranking:** Listed as a NeurIPS 2026 main-track oral and covered independently by Astrobiology; the paper reports prospective wet-lab validation across nine targets. These are checkable venue and external-attention signals.
+- **Claimed contribution:** The authors claim one frozen sequence-trained representation supports functional, residue-level, and bond-level interaction predictions, reporting a 61.5% dose-response hit rate for de novo compounds in prospective tests.
+- **Caveat:** The authors say the reported capabilities are coarse-grained; explicit 3D-coordinate extraction and properties such as residence time and dissociation kinetics were not studied, and results use frozen representations.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Training & adaptation; Evaluation & benchmarks
 
-### 4. [AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models](https://arxiv.org/abs/2611.14515)
-- **Abstract:** AutoScaffold uses a frozen teacher to adapt strategies and hints from a student's RL training experience, then evaluates the student without those scaffolds across four domains.
-- **Authors:** Zijian Zhang, Rizhen Hu, Jiangweizhi Peng, Shiyang Li, Sujay Bhatt, et al.
-- **arXiv:** `2611.14515v1` (published 2026-11-10T18:58:46Z; categories: `cs.LG`, `cs.CL`)
-- **Evidence for ranking:** It spans four distinct training/evaluation domains and is cross-listed in machine learning and computation/language; the OpenReview listing provides a second checkable description of the approach ([OpenReview](https://openreview.net/forum?id=KPRr8wWiqO)).
-- **Claimed contribution:** The authors report that students trained with adaptive strategy-level and task-level hints outperform corresponding RL baselines after the hints are removed, with reported gains in ALFWorld, QA, math, and GPU-kernel generation.
-- **Caveat:** Results are limited to the four tested domains and the teacher-guided training setup; the reported comparisons do not establish transfer to broader, unseen training regimes.
-- **Announcement type:** new submission, announcement batch 2026-11-11
-- **Themes:** Training & adaptation; Agents & reasoning
-
-### 5. [ARE-bench: Benchmarking Agents' Research Ability in Real-World Researcher Sessions and Workspaces](https://arxiv.org/abs/2611.14364)
-- **Abstract:** ARE-bench tests whether research agents can make progress on ongoing projects while respecting prior decisions and messy existing workspaces, using 75 tasks drawn from real researcher sessions.
-- **Authors:** Jiahang Lin, Wanying Ren, Wanghan Xu, Huayu Sha, Yang Shu, et al.
-- **arXiv:** `2611.14364v1` (published 2026-11-10T17:21:31Z; categories: `cs.CL`)
-- **Evidence for ranking:** The benchmark has concrete scale (75 tasks, seven research stages, 1,173 checklist items) and was discussed by [Agentic Design](https://agentic-design.ai/news-hub/are-bench-benchmarking-agents-research-ability-real-world-researcher-sessions-17c468), giving an independent pointer beyond its abstract.
-- **Claimed contribution:** The authors introduce an evaluation set preserving prior session requirements and workspace state; they report that the strongest of seven evaluated models passes every checklist item on 66.2% of tasks.
-- **Caveat:** The paper evaluates one curated set of 75 tasks from recruited researchers' projects; performance on this dataset does not by itself establish reliability across disciplines or new project environments.
-- **Announcement type:** new submission, announcement batch 2026-11-11
-- **Themes:** Evaluation & benchmarks; Agents & reasoning
-
-### 6. [Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents](https://arxiv.org/abs/2611.14493)
-- **Abstract:** This study compares trace-based judging, text-only judging with red-teaming, and deterministic heuristics on two analytics agents, measuring repeatability, known-risk detection, and discovery of new failures.
-- **Authors:** Howard Zhang, Chuck Arvin, Logan Brown, Mihir Bhatia, Neelu Choudhary, Lily Miao
-- **arXiv:** `2611.14493v1` (published 2026-11-10T18:50:06Z; categories: `cs.AI`, `cs.CL`, `cs.LG`, `cs.SE`)
-- **Evidence for ranking:** It is cross-listed across four configured/core-adjacent categories and its arXiv record notes acceptance to KDD 2026; its abstract reports a three-phase comparison and 24 discovered failures.
-- **Claimed contribution:** The authors find trace-based judging has the strongest precision-recall balance on their known-risk set and recommend combining trace-based functional evaluation with adversarial red-teaming.
-- **Caveat:** The experiment covers two analytics agents in a controlled setting using frozen traces, so its relative framework results may not transfer unchanged to other agent types or live environments.
-- **Announcement type:** new submission, announcement batch 2026-11-11
-- **Themes:** Evaluation & benchmarks; Safety & alignment; Agents & reasoning
-
-### 7. [Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents](https://arxiv.org/abs/2611.14320)
-- **Abstract:** WikiTrace links each stored lesson to its supporting trajectory and lets an agent retrieve that evidence when a lesson is incomplete, conflicting, or based on failure; the authors report gains across five agentic benchmarks.
+### 4. [Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents](https://arxiv.org/abs/2611.14320)
+- **Abstract:** WikiTrace links each agent-memory lesson to its source summary and trajectory, letting an agent revisit evidence when a lesson is ambiguous, conflicting, or drawn from a failed task; the authors report gains across five agentic benchmarks.
 - **Authors:** Yukyeong Lee, Yumin Choi, Jinheon Baek, Sung Ju Hwang
-- **arXiv:** `2611.14320v1` (published 2026-11-10T16:46:59Z; categories: `cs.AI`, `cs.MA`)
-- **Evidence for ranking:** The paper is cross-listed in AI and multiagent systems, reports five benchmark evaluations, and provides a public implementation ([GitHub](https://github.com/yukyeongleee/wikitrace)).
-- **Claimed contribution:** The authors combine concise memory insights with summaries and raw trajectories, enabling tool-assisted evidence checks before acting; they report reduced memory-induced degradation relative to memory baselines.
-- **Caveat:** The method depends on retaining and retrieving the source trajectory for each insight; the abstract reports evaluation on five agentic benchmarks, not unrestricted deployment settings.
-- **Announcement type:** new submission, announcement batch 2026-11-11
-- **Themes:** Agents & reasoning; Retrieval & knowledge
+- **arXiv:** `2611.14320v1` (published 2026-11-10 16:46:59 UTC; categories: `cs.AI`, `cs.MA`)
+- **Evidence for ranking:** The method is discussed by independent technical coverage, has a public implementation and project page, and reports results across five benchmarks/eight suites. Its core contribution is independently inspectable beyond an abstract-only claim.
+- **Claimed contribution:** The authors report top performance on all evaluated suites, a 3.2-point average improvement over an insights-only baseline, and lower memory-induced regression when source evidence is available.
+- **Caveat:** The authors note that source links let agents check but do not verify an insight; including all insights in the initial prompt makes memory grow, and scalable retrieval is left open.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Agents & reasoning; Retrieval & knowledge; Evaluation & benchmarks
 
-### 8. [REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding](https://arxiv.org/abs/2611.14399)
-- **Abstract:** REAL derives an unbiased, variance-reduced loss for training speculative-decoding draft models against the actual token-acceptance process rather than surrogate distribution-overlap objectives.
-- **Authors:** Yu Tian
-- **arXiv:** `2611.14399v1` (published 2026-11-10T17:45:12Z; categories: `cs.LG`, `cs.CL`)
-- **Evidence for ranking:** It is cross-listed in machine learning and language technology, reports a five-seed comparison across nine task subsets, and provides a reference implementation ([GitHub](https://github.com/King-ty/speculators/tree/real-loss)).
-- **Claimed contribution:** The author derives path-weighted REAL with Rao-Blackwellization and reports higher probabilistic serving acceptance length than four compared losses in the tested Qwen3.6-35B-A3B/Domino setup.
-- **Caveat:** The reported evaluation is a controlled loss-level comparison for one target/drafter configuration; it does not establish the same gains across other architectures or serving workloads.
-- **Announcement type:** new submission, announcement batch 2026-11-11
-- **Themes:** Efficient inference & systems; Training & adaptation
+### 5. [When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents](https://arxiv.org/abs/2611.14326)
+- **Abstract:** FGSE temporarily tests proposed memory updates as structured hypotheses on transfer, falsification, and regression probes before committing, refining, or rejecting them; the authors report results across web, app, tool-use, and long-term-memory benchmarks.
+- **Authors:** Runxuan Tang, Haoyu Gao, Yuyan Ding, Junyi Yao, Zihao Zheng et al.
+- **arXiv:** `2611.14326v1` (published 2026-11-10 16:52:25 UTC; categories: `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** Listed as a NeurIPS 2026 poster, cross-listed in AI and machine learning, and reports concrete multi-environment safety and task-performance evaluations.
+- **Claimed contribution:** The authors report reduced falsification failures, regression damage, and harmful committed updates while retaining benchmark performance, supporting verifier-gated rather than immediate memory writes.
+- **Caveat:** The approach is framed for verifier-rich environments; extending it to settings where verifiers must be learned or approximated, and to multimodal agents, remains future work.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Safety & alignment; Agents & reasoning; Evaluation & benchmarks
+
+### 6. [AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models](https://arxiv.org/abs/2611.14515)
+- **Abstract:** AutoScaffold uses a frozen teacher to diagnose student-model training experience and adapt task-class strategies and hard-example hints, reporting improved scaffold-free results over corresponding RL baselines in four domains.
+- **Authors:** Zijian Zhang, Rizhen Hu, Jiangweizhi Peng, Shiyang Li, Sujay Bhatt et al.
+- **arXiv:** `2611.14515v1` (published 2026-11-10 18:58:46 UTC; categories: `cs.LG`, `cs.CL`)
+- **Evidence for ranking:** Cross-listed in machine learning and language, spans four task settings, and has multiple independent technical write-ups; its scaffold-removal evaluation makes the transfer claim checkable.
+- **Claimed contribution:** The authors report gains over corresponding RL baselines on ALFWorld, search-based QA, math, and GPU-kernel generation after removing scaffolds at evaluation.
+- **Caveat:** The authors identify reducing the cost of teacher interventions as future work; the reported gains are against corresponding baselines in the four evaluated domains, not all methods or settings.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Training & adaptation; Agents & reasoning
+
+### 7. [Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents](https://arxiv.org/abs/2611.14511)
+- **Abstract:** Pyrite introduces a 1,500-pair protein–ligand pose-ranking benchmark and LLM agents that combine structured molecular representations, tool outputs, and learned features, reporting up to 74% accuracy.
+- **Authors:** Megha Srivastava, Michael H. Lim, Allison M. Keys, Pranav Murugan, Nate Gruver
+- **arXiv:** `2611.14511v1` (published 2026-11-10 18:56:32 UTC; categories: `cs.LG`, `q-bio.QM`)
+- **Evidence for ranking:** Presented in the NeurIPS 2026 Agentic AI for Biological Discovery Workshop, with a NeurIPS listing, OpenReview record, and public benchmark/code. These provide checkable conference and artifact signals; the topic is narrower than higher-ranked general agent work.
+- **Claimed contribution:** The authors report up to 74% pose-pair accuracy from LLM-guided feature discovery, exceeding observed expert performance, and report improvements from GRPO for open-weight models.
+- **Caveat:** The authors say an accuracy gap remains; training is limited to pre-AF3 structures, while transfer to other pose generators and full drug-discovery ranking pipelines remains untested.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Agents & reasoning; Evaluation & benchmarks
+
+### 8. [Continual-ARC: Measuring Skill Acquisition over a Working Lifetime](https://arxiv.org/abs/2611.14505)
+- **Abstract:** Continual-ARC makes ARC tasks recur with fresh instances in a budgeted stream, comparing memory-based agent harnesses and weight-updating learners on memorization and generalization.
+- **Authors:** Daniel Lenton
+- **arXiv:** `2611.14505v1` (published 2026-11-10 18:55:01 UTC; categories: `cs.LG`)
+- **Evidence for ranking:** A new benchmark protocol with released code and run records received independent technical discussion in multiple write-ups; the direct comparison of persistent harnesses and weight-based learning has broad relevance to agent-continuity claims.
+- **Claimed contribution:** The authors report that harness persistence usually does not improve memorization without expert guidance, that tested harnesses did not improve unseen-task performance, and that weight-based learning did.
+- **Caveat:** The authors note most runs use relatively small models on the easiest ARC-AGI-1 track; stronger models and ARC-AGI-2/3 remain future work.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Evaluation & benchmarks; Training & adaptation
 
 ## Trending Research Themes
 
-- **Agent experience is being made safer and more operational.** FGSE and WikiTrace both treat stored lessons as fallible: FGSE probes a proposed behavior change before committing it, while WikiTrace retrieves the underlying trajectory when a memory needs checking. ReTrace takes a different route, compiling recurring SOP behavior into code for repeated execution.
-- **Post-training is getting attention at both the algorithm and data/scaffold levels.** The policy-optimization theory studies how to retain access to good responses during learning; AutoScaffold uses a teacher to turn sparse outcome feedback into temporary training guidance. These are distinct contributions, not yet evidence of one settled recipe.
-- **Evaluation is shifting from isolated answers to process context and failure discovery.** ARE-bench preserves prior decisions and project files, while the comparative evaluation paper tests both known-risk detection and discovery of previously unknown failures. Their shared emphasis is on context and evaluation harness design, not just final-answer scoring.
-- **Efficiency work is moving across deployment stages.** ReTrace reduces repeated planning at runtime, whereas REAL Loss targets draft-model acceptance during speculative decoding. Both claim measurable efficiency gains, but in different workloads and with different quality trade-offs.
+- **Agent experience is being made safer and more economical.** ReTrace compiles repeated procedures into code rather than replanning every step; WikiTrace preserves source trajectories so agents can check lessons; FGSE tests candidate updates before committing them. These approaches target different failure modes—runtime cost, unsupported memory, and harmful updates—and do not yet establish one general agent-memory solution.
+- **Learning-time support is being separated from independent capability.** AutoScaffold adapts temporary hints during RL and evaluates after removing them, while Continual-ARC compares persistent harnesses with weight updates on recurring and unseen tasks. One is a training scaffold; the other is a benchmark of continual learning, so their results are complementary rather than directly comparable.
+- **Scientific discovery is being represented more explicitly.** Contrastive Discovery makes competing explanations part of the search and evaluation unit; Pyrite asks LLM agents to interpret conflicting geometry and chemistry signals. Both shift attention from fluent proposals toward evidence handling, but each is evaluated in a bounded data setting.
+- **Biological AI is moving toward sharper validation.** Bonbon reports sequence-trained representations and prospective wet-lab screening; Pyrite evaluates agents on pose ranking against crystallographic labels and human judgments. These are distinct evidence levels, and neither establishes broad clinical utility.
+- **Category mix:** four of the eight selected papers are `cs.LG`-primary and four are `cs.AI`-primary; several are cross-listed. This reflects the selected shortlist, not field-wide popularity.
 
 ## Open Problems and Research Directions
 
-- **Author-stated open problem — post-training theory:** The policy-optimization guarantees cover softmax linear policies and one-shot responses, while real model outputs are token sequences and agentic tasks are multi-step. A useful next experiment would test whether reference resets preserve response coverage in full-model RL runs, then in multi-turn environments, with token-level diagnostics. [A Theory of Policy Optimization in Post-Training]
-- **Author-stated open problem — memory verification:** FGSE identifies learned or approximate verifiers and multimodal settings as future extensions. Compare verifier quality and update-gate error rates as tasks become less mechanically checkable; include long-horizon tests for harmful updates that pass local probes. [When Should Agents Remember?]
-- **Author-stated open problem — workflow correctness:** ReTrace says construction checks do not verify recovered conditions, and performance depends on which branches the sampled traces cover. Test branch-diverse trace selection, independent human audits of outcomes, and automated precondition checks before deployment; include SOP/tool changes and transfer to new procedures. [ReTrace]
-- **Evidence-tied synthesis — contextual evaluation:** ARE-bench finds that adding historical and workspace requirements materially changes assessed performance, while the enterprise-framework study finds complementary failure discovery from functional and security tests. A follow-up could replay the same agents across multiple project domains and live or changing workspaces, measuring checklist reliability, judge disagreement, and false alarms. [ARE-bench; Comparative Analysis of Agent Evaluation Frameworks]
+- **Author-stated — ReTrace:** Construction checks do not prove recovered workflow conditions correct, and the evaluation does not test transfer to new procedures. Direction: audit decision rules against held-out branch/outcome traces, test transfer to new procedures, and measure degradation after SOP/tool changes (ReTrace).
+- **Author-stated — WikiTrace:** Source links support checking but do not verify insights, and putting all insights in context creates a memory-scaling problem. Direction: compare selective retrieval with all-insights prompts, and measure whether agents can detect unsupported or out-of-scope lessons using source trajectories (WikiTrace).
+- **Author-stated — Contrastive Discovery:** Experiments are observational and use one GPT-4o-backed agent; candidate contrast sets may omit alternatives. Direction: test in laboratory or longer-horizon interventions, add an abstention/“other” alternative, and compare LLM-elicited beliefs with independent statistical or expert adjudication (Contrastive Discovery).
+- **Author-stated — Bonbon:** The paper leaves finer-grained interaction properties and explicit 3D-coordinate extraction unexplored. Direction: evaluate residence time, dissociation kinetics, and conformational changes on held-out protein families, then validate prospective predictions experimentally (Bonbon).
+- **Author-stated — FGSE:** Verifier-rich environments are assumed; learned or approximate verifiers and multimodal settings remain future work. Direction: stress-test verifier errors and false commits as verification becomes noisy or learned (FGSE).
+- **Author-stated — AutoScaffold:** Reducing teacher-intervention cost is left for future work. Direction: measure teacher calls/tokens against scaffold-free performance and compare adaptive revisions with fixed schedules at matched budgets (AutoScaffold).
+- **Author-stated — Pyrite:** Transfer across pose generators and from pairwise accuracy to end-to-end drug-discovery ranking are untested. Direction: use generator-held-out splits and prospective downstream selection outcomes (Pyrite).
+- **Author-stated — Continual-ARC:** Stronger models and harder ARC-AGI-2/3 tracks remain untested. Direction: replicate the same memory-versus-weights protocol on harder tracks while varying stream length and expert guidance (Continual-ARC).
 
 ## Takeaway
 
-This batch's clearest pattern is systems work around the agent lifecycle: how to learn from experience without corrupting memory, compile repeated behavior, and evaluate work in context. The strongest performance claims are still tied to specific datasets, evaluators, and simplified theory; wider replications will determine which methods travel.
+This batch's clearest pattern is agent lifecycle engineering: converting repeated decisions into faster workflows and making persistent lessons evidence-linked or falsification-gated. The strongest claims remain bounded by the specific procedures, verifiers, datasets, and models studied; replication across domains will determine which designs generalize.
 
 ## Method and sources
 
-- **Window:** Daily latest arXiv announcement batch dated 2026-11-11; start and end date 2026-11-11. This was the latest batch, not a prior-batch fallback. The selected papers are new submissions, not revisions.
-- **Snapshot:** 2026-11-12 01:10:10 UTC.
-- **Corpus:** Core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`. arXiv's recent listings showed 11 November batch counts of 248, 235, 28, 112, 149, 69, 7, and 10 respectively; category totals overlap due to cross-listing and are not unique-paper counts. A broad 200-result arXiv API snapshot informed candidate discovery; each of the eight selected arXiv abstract pages was then verified individually. This is a relevance-led shortlist, not a comprehensive ranking of the entire batch.
-- **Inference:** arXiv does not provide a trending or readership ranking. Papers were ordered using checkable signals: relevant category cross-listing, breadth and specificity of reported evaluations, public artifacts, independent technical discussion where found, and publication/comment metadata. Citation velocity was not used because current citation totals could not be established from the sources available at this snapshot.
-- **Sources:** [arXiv cs.AI recent listings](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent); selected paper records are linked above. For full text, the top three papers were read via arXiv HTML: [policy-optimization theory](https://arxiv.org/html/2611.14467), [ReTrace](https://arxiv.org/html/2611.14492), and [FGSE](https://arxiv.org/html/2611.14326). Additional corroborating sources are linked in the relevant entries.
+- Window: daily latest arXiv announcement batch dated 2026-11-11 (start 2026-11-11; end 2026-11-11). The latest category “new” pages identify the Wednesday, 11 November batch. All selected papers are new submissions first submitted on 2026-11-10 UTC, not revisions.
+- Snapshot: 2026-11-12 17:05 UTC.
+- Core corpus query: `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`, sorted by submitted date descending, first 200 records. The recent pool included entries in all eight configured categories; the shortlist is not an exhaustive field survey.
+- Ranking: qualitative and inferred from independent technical discussion where found, checkable venue/workshop listings, category cross-list breadth, public artifacts, and reported evaluation. No numeric trend score was constructed. Semantic Scholar citation totals could not be verified for this snapshot, so citation counts and citation velocity were not used.
+- arXiv category announcement pages: [cs.AI new](https://arxiv.org/list/cs.AI/new), [cs.LG new](https://arxiv.org/list/cs.LG/new), [cs.CL new](https://arxiv.org/list/cs.CL/new), [cs.CV new](https://arxiv.org/list/cs.CV/new), [cs.RO new](https://arxiv.org/list/cs.RO/new), [cs.NE new](https://arxiv.org/list/cs.NE/new), [cs.MA new](https://arxiv.org/list/cs.MA/new), [stat.ML new](https://arxiv.org/list/stat.ML/new).
+- Selected arXiv abstract pages: [ReTrace](https://arxiv.org/abs/2611.14492), [WikiTrace](https://arxiv.org/abs/2611.14320), [Contrastive Discovery](https://arxiv.org/abs/2611.14514), [Bonbon](https://arxiv.org/abs/2611.14504), [FGSE](https://arxiv.org/abs/2611.14326), [AutoScaffold](https://arxiv.org/abs/2611.14515), [Pyrite](https://arxiv.org/abs/2611.14511), [Continual-ARC](https://arxiv.org/abs/2611.14505). The top three papers' introductions, results, and limitations/conclusions were checked in their PDFs.
+- Corroborating sources: [ReTrace commentary](https://learnagentic.substack.com/p/your-agent-took-170-seconds-its-compiled), [ReTrace coverage](https://news.bitwarelabs.com/posts/retrace-distilling-tool-using-agents-planner-free-workflows/), [WikiTrace project page](https://yukyeongleee.github.io/wikitrace/), [WikiTrace coverage](https://www.tokenpost.com/news/technology/54827), [Contrastive Discovery project page](https://codiscovery.ai/contrastive-discovery/), [independent Contrastive Discovery commentary](https://alcybr.com/blog/contrastive-discovery-restructures-how-llm-agents-test-hypotheses), [NeurIPS Bonbon oral](https://neurips.cc/virtual/2026/oral/149425), [Astrobiology coverage of Bonbon](https://astrobiology.com/2026/11/12/emergent-biological-capabilities-in-a-foundation-model-for-molecular-interactions/), [NeurIPS FGSE poster](https://neurips.cc/virtual/2026/poster/154558), [AutoScaffold coverage](https://news.bitwarelabs.com/posts/autoscaffold-ai-guided-scaffolding-reinforcement-learning/), [NeurIPS Pyrite listing](https://neurips.cc/virtual/2026/172672), [Pyrite OpenReview](https://openreview.net/forum?id=1D1zTveOCw), [Continual-ARC technical discussion](https://subagentic.ai/posts/continual-arc-harness-memory/).

@@ -1,138 +1,155 @@
-Math (arXiv announcement batch: Wednesday, 11 November 2026) — 10 notable recent papers. A strong pattern today is explicit resolution or tightening of long-standing bounds and conjectures, with several results spanning number theory, combinatorics, geometry, and analysis. Spoken agenda: hypergraph coloring and zeta gaps first, then arithmetic and geometric classifications, explicit constructions, and formalized proofs. This ordering is inferred, not an official arXiv trending chart; citation evidence for such new papers is limited.
+# Mathematics on arXiv — latest batch, Wed 11 Nov 2026
+
+Math archive · announcement batch 2026-11-11 · 11 selected papers. The batch’s strongest pattern is a cluster of exact conjecture resolutions, counterexamples, and explicit quantitative bounds, alongside arithmetic-geometric counting and classification. Spoken agenda: a spectral Cantor-set theorem, a zeta-zero gap bound, a matrix-geometry conjecture, then arithmetic geometry, PDE and topology. Global caveat: arXiv publishes no official trending chart; this is an inferred notable-paper ordering, not a popularity ranking, and same-day citation evidence is limited.
 
 ## Top papers (ranked)
 
-### 1. [The Proof of the Alon--Kim Conjecture](https://arxiv.org/abs/2611.13698)
-- **Abstract:** For fixed integers k ≥ t ≥ 1 and ε > 0, the authors claim that every sufficiently high-degree k-uniform, t-simple multihypergraph H satisfies χ′(H) ≤ (t−1+1/t+ε)Δ(H).
-- **Authors:** Chengshuo Qiao, Zhijun Lu, Huimin Song
-- **arXiv:** `2611.13698v1` (published 2026-11-10 07:44:41 UTC; categories: `math.CO`)
-- **Evidence for ranking:** The abstract and Theorem 1.5 state a resolution of the Alon–Kim conjecture, open since 1997, across all fixed k,t; the paper identifies its finite-dimensional convex-optimization and probabilistic approach.
-- **Claimed result:** The authors state that for each fixed k ≥ t ≥ 1 and ε > 0 there is a threshold Δ₀(k,t,ε) such that every k-uniform, t-simple multihypergraph with Δ(H) ≥ Δ₀ obeys the conjectured edge-colouring bound.
-- **Assumptions and setting:** The hypergraph may have parallel edges; t-simplicity means distinct edges intersect in at most t vertices, and k,t,ε are fixed while Δ grows.
-- **Caveat:** The result is asymptotic: the threshold depends on k,t,ε, and the paper does not make it a finite-degree sharp bound.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Combinatorics & discrete mathematics
+### 1. [The Supercritical Ten Martini Problem](https://arxiv.org/abs/2611.13068v1)
+- **Abstract:** The authors prove the Ten Martini Cantor-spectrum conclusion on the positive-Lyapunov part of the spectrum for every nonconstant real-analytic one-frequency Schrödinger operator, extending their method to intrinsic centers of arbitrary finite dimension.
+- **Authors:** Lingrui Ge, Svetlana Jitomirskaya, Jiangong You
+- **arXiv:** `2611.13068v1` (published 2026-11-09T18:55:42Z; categories: `math-ph` (primary), `math.DS`, `math.SP`)
+- **Evidence for ranking:** The claimed extension removes the earlier Type-I restriction in the supercritical regime and links dynamical-systems and spectral-theory categories; an independent Wolfram MathWorld reference page also records the result.
+- **Claimed result:** The authors prove that for nonconstant real-analytic v and irrational frequency α, the spectrum intersected with the closure of the positive-Lyapunov-exponent energies is a Cantor set, when that intersection is nonempty (Theorem 1.1).
+- **Assumptions and setting:** One-frequency Schrödinger operators with real-analytic, nonconstant sampling function and irrational frequency; the conclusion is restricted to the closure of energies with positive Lyapunov exponent.
+- **Caveat:** This paper guarantees that the whole spectrum is Cantor when the Lyapunov exponent is positive throughout it; it does not settle all zero-exponent energies.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Mathematical physics, Analysis & PDE
 
-### 2. [The distribution of small gaps between zeros of the Riemann zeta function](https://arxiv.org/abs/2611.14486)
-- **Abstract:** The author claims unconditionally that a positive proportion of consecutive nontrivial zeta-zero gaps are at most 0.7892 times their average spacing.
+### 2. [The distribution of small gaps between zeros of the Riemann zeta function](https://arxiv.org/abs/2611.14486v1)
+- **Abstract:** Using an unconditional variant of Montgomery’s pair-correlation method, the author improves Selberg’s explicit bound: a positive proportion of consecutive nontrivial zeta zeros have normalized gap at most 0.7892.
 - **Authors:** Youness Lamzouri
-- **arXiv:** `2611.14486v1` (published 2026-11-10 18:46:37 UTC; categories: `math.NT`)
-- **Evidence for ranking:** The paper gives a concrete unconditional improvement over the previously cited explicit threshold 1−2.36×10⁻⁶; its introduction states the theorem and the role of an unconditional variant of Montgomery’s pair-correlation method.
-- **Claimed result:** Theorem 1.1 states that D(λ) > 0 for every λ ≥ 0.7892, where D(λ) measures the lower limiting proportion of gaps no larger than λ times the mean spacing.
-- **Assumptions and setting:** This is an unconditional statement about the ordinates of nontrivial zeta zeros, counted with multiplicity; it concerns a positive proportion, not all gaps.
-- **Caveat:** The author notes that the constant is not optimized; a different explicit kernel would give λ > 0.7864, and further optimization may improve it.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
+- **arXiv:** `2611.14486v1` (published 2026-11-10T18:46:37Z; categories: `math.NT` (primary))
+- **Evidence for ranking:** It improves a long-standing explicit unconditional threshold from 1−2.36×10⁻⁶ to 0.7892, a concrete quantitative advance in analytic number theory; the paper states its result as Theorem 1.1.
+- **Claimed result:** The author proves D(λ)>0 for every λ≥0.7892, which gives a positive proportion of consecutive zero ordinates with γₙ₊₁−γₙ≤2πλ/log γₙ (Theorem 1.1).
+- **Assumptions and setting:** Nontrivial zeros of ζ(s) in the upper half-plane, counted with multiplicity; the result is unconditional and concerns a positive proportion, not all consecutive gaps.
+- **Caveat:** The constant is not claimed optimal: the author notes that a more complicated explicit kernel already yields λ>0.7864, and further optimization may improve it.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
 - **Themes:** Algebra & number theory
 
-### 3. [The closure of the nonreal roots of bounded-height polynomials is connected exactly at pronic heights](https://arxiv.org/abs/2611.14517)
-- **Abstract:** For the closure C_h of nonreal roots of integer polynomials with coefficient modulus at most h, the author claims connectedness exactly when h=q(q−1), q ≥ 2, and at least five components otherwise.
-- **Authors:** Bernat Espigulé
-- **arXiv:** `2611.14517v1` (published 2026-11-10 18:58:59 UTC; categories: `math.CV` (primary), `math.NT`)
-- **Evidence for ranking:** Theorem A supplies an if-and-only-if classification for every integer height; the paper also reports an explicit computational companion at Zenodo and connects the height-two case with a numerical observation from twenty years earlier.
-- **Claimed result:** The author proves that C_h is connected exactly at pronic heights and has at least five components at every other height, with further results showing infinitely many components for a density-one set of heights.
-- **Assumptions and setting:** C_h is the planar closure of nonreal roots of integer polynomials whose coefficients have absolute value at most the positive integer h; real roots are excluded before closure.
-- **Caveat:** Exact component infinitude remains unsettled at a small set of heights, including 1, 3, 4, 9, and 25, and at some square-adjacent heights.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Algebra & number theory; Geometry & topology
+### 3. [A proof of the constant-width numerical range conjecture](https://arxiv.org/abs/2611.13461v1)
+- **Abstract:** The author proves that the numerical range of a finite complex matrix has constant width d exactly when it is a closed disk of radius d/2, with a singleton in the zero-width case.
+- **Authors:** Muyan Jiang
+- **arXiv:** `2611.13461v1` (published 2026-11-10T02:14:36Z; categories: `math.FA` (primary))
+- **Evidence for ranking:** A concise, complete resolution of a named matrix-analysis conjecture, with a structural consequence for the Kippenhahn polynomial stated in the abstract.
+- **Claimed result:** The author proves the conjectured equivalence between constant width d and being a closed disk of radius d/2 (allowing a singleton when d=0), and derives the corresponding quadratic factor of the Kippenhahn polynomial (Theorem 1).
+- **Assumptions and setting:** Classical numerical range of a finite-dimensional complex matrix; the width is measured in every planar direction.
+- **Caveat:** The argument concerns the classical numerical range only; it does not establish the analogous conjecture for higher-rank numerical ranges.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Analysis & PDE
 
-### 4. [The exponent 3/4 for the exceptional sets of the equations K/n=1/x+1/y+1/z](https://arxiv.org/abs/2611.14167)
-- **Abstract:** For K ≥ 4, the author bounds the number E_K(N) of n ≤ N for which K/n has no representation as three positive unit fractions by N exp(−c((log N)³/K)^{1/4}) over a specified range, improving Vaughan’s exponent 2/3.
-- **Authors:** Dmytro Trybushnyi
-- **arXiv:** `2611.14167v1` (published 2026-11-10 14:53:35 UTC; categories: `math.NT`)
-- **Evidence for ranking:** The abstract and Theorem 1.1 report an improved uniform exceptional-set estimate, explicit constants, and a full Lean 4 formalization archived with the paper.
-- **Claimed result:** The author proves E_K(N) ≤ N exp(−c((log N)³/K)^{1/4}) for absolute c>0 when 4 ≤ K ≤ (log N)³/B, with an explicit B; the proof is formally checked in Lean 4.
-- **Assumptions and setting:** E_K(N) counts integers 2 ≤ n ≤ N with no positive-integer solution to K/n=1/x+1/y+1/z; K=4 is the Erdős–Straus case, and the bound applies only in the stated K range and for sufficiently large N.
-- **Caveat:** This improves a density bound but does not prove that every n is representable for K=4; its useful range is limited to K up to a constant multiple of (log N)³.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Algebra & number theory
+### 4. [Counting Rational Points on Cayley's Cubic Surface](https://arxiv.org/abs/2611.14226v1)
+- **Abstract:** For the split four-nodal Cayley cubic over Q with its nine lines removed, the author proves the rational-point asymptotic N_U(B)∼c_Peyre B(log B)^6 for the specified maximum-coordinate height.
+- **Authors:** Xiaodong Zhao
+- **arXiv:** `2611.14226v1` (published 2026-11-10T15:41:23Z; categories: `math.NT` (primary))
+- **Evidence for ranking:** The paper gives a precise Peyre-constant asymptotic while combining universal-torsor parametrization, lattice counting and Poisson summation; this is a concrete arithmetic-geometric theorem, not merely a proposed bound.
+- **Claimed result:** The author proves N_U(B)=c_Peyre B(log B)^6+o(B(log B)^6) as B→∞ and identifies the constant from the effective-cone volume and local densities (Theorem 1.1).
+- **Assumptions and setting:** Rational points on the split four-nodal Cayley cubic surface over Q after removing its nine lines, ordered by the paper’s bounded maximum-coordinate height.
+- **Caveat:** The asymptotic is for this particular open surface and height; it does not by itself settle analogous counts on the removed boundary lines or other cubic surfaces.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Algebra & number theory, Geometry & topology
 
-### 5. [A counterexample to the strong version of the union of uniform closed balls conjecture in dimensions three and higher](https://arxiv.org/abs/2611.14181)
-- **Abstract:** For every n ≥ 3, r > 0, and ε > 0, the author constructs a compact set with the interior r-sphere condition but a point not covered by any contained ball of radius (1/2+ε)r, making the universal r/2 radius optimal.
-- **Authors:** Chadi Nour
-- **arXiv:** `2611.14181v1` (published 2026-11-10 15:05:03 UTC; categories: `math.MG`)
-- **Evidence for ranking:** The abstract states a dimension-by-dimension counterexample to the strong conjecture and an optimality conclusion for the universal radius, with an explicit simplex-based construction.
-- **Claimed result:** The author claims the strong conjecture fails in each dimension n ≥ 3, even for compact sets, and proves the universal contained-ball radius r/2 cannot be increased; in the plane the optimal radius is r/√3.
-- **Assumptions and setting:** The sets satisfy the interior r-sphere condition in Euclidean R^n; the counterexample is required for every positive ε and every n ≥ 3.
-- **Caveat:** The construction establishes sharpness of the universal radius but does not classify all sets satisfying the sphere condition.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
+### 5. [A cyclotomic Artin-Tate formula and sphere packing for K3 surfaces](https://arxiv.org/abs/2611.13468v1)
+- **Abstract:** The authors combine Artin–Tate formulas over finite extensions with lattice sphere-packing bounds to derive necessary conditions on K3 Weil polynomials, excluding about 52.53% of the listed candidates over F₂.
+- **Authors:** Asher Auel, Sair Shaikh
+- **arXiv:** `2611.13468v1` (published 2026-11-10T02:24:23Z; categories: `math.AG` (primary), `math.NT`)
+- **Evidence for ranking:** It supplies a cross-field bridge from Frobenius lattices to sphere-packing bounds and reports a checkable finite-candidate reduction: 878,580 of 1,672,565 F₂ candidates are excluded by the combined conditions.
+- **Claimed result:** The authors derive special-value constraints at roots of unity from a refined Artin–Tate formula and lattice discriminant bounds; their computation excludes 878,580 of 1,672,565 candidate Weil polynomials over F₂ (about 52.53%).
+- **Assumptions and setting:** K3 surfaces over finite fields, with the explicit enumeration applied to candidate Weil polynomials over F₂; the inequalities are necessary conditions, not a classification.
+- **Caveat:** The filtering leaves 793,985 candidates in the reported F₂ list, and surviving candidates are not thereby proved to arise from K3 surfaces.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Algebra & number theory, Geometry & topology
+
+### 6. [On the stable birational type of Fano threefolds](https://arxiv.org/abs/2611.14417v1)
+- **Abstract:** The author shows that a very general cubic threefold is determined up to isomorphism among smooth cubic threefolds by its stable birational equivalence class, and indicates extensions to other Fano threefolds.
+- **Authors:** Claire Voisin
+- **arXiv:** `2611.14417v1` (published 2026-11-10T17:57:27Z; categories: `math.AG` (primary))
+- **Evidence for ranking:** The paper states a sharp rigidity result for a central birational-equivalence relation and applies its method to other named Fano threefold families; the higher-dimensional case is also discussed.
+- **Claimed result:** The author proves that if a smooth cubic threefold is stably birational to a very general cubic threefold X, then it is isomorphic to X; the method also applies to the sextic double solid and quartic threefold (abstract).
+- **Assumptions and setting:** Very general smooth cubic threefolds over the paper’s algebraic-geometric setting, compared only with smooth cubic threefolds; examples of other Fano 3-folds are discussed.
+- **Caveat:** The abstract’s strongest uniqueness statement is for very general cubic threefolds; it does not assert the same classification for every special cubic or every higher-dimensional Fano variety.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
 - **Themes:** Geometry & topology
 
-### 6. [Explicit restricted isometries with k=m^{2/3-o(1)}](https://arxiv.org/abs/2611.14475)
-- **Abstract:** The authors construct explicit real m×n restricted isometries with m/n → 0, δ_k → 0, and sparsity k=m^{2/3-o(1)}, using a strongly regular graph and an incidence-geometric vertex-set result.
-- **Authors:** Christian Kümmerle, Dustin G. Mixon
-- **arXiv:** `2611.14475v1` (published 2026-11-10 18:37:57 UTC; categories: `math.FA` (primary), `cs.IT`, `math.CO`, `math.MG`)
-- **Evidence for ranking:** This is a concrete explicit construction cross-listed across functional analysis, information theory, combinatorics, and metric geometry; the authors frame it as surpassing an m^{1/2} barrier for the stated entrywise-Gram-matrix proof technique.
-- **Claimed result:** The authors prove existence of the stated family and show that the barrier for their proof method is m^{2/3}, which their construction reaches up to the o(1) in the exponent.
-- **Assumptions and setting:** The matrices are real; m tends to infinity, the aspect ratio m/n tends to zero, and the restricted isometry constant δ_k tends to zero.
-- **Caveat:** The exponent is 2/3−o(1), not an exact k=m^{2/3} guarantee; the paper’s result is an explicit family under these asymptotic conditions.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Analysis & PDE; Combinatorics & discrete mathematics
+### 7. [A counterexample to the strong version of the union of uniform closed balls conjecture in dimensions three and higher](https://arxiv.org/abs/2611.14181v1)
+- **Abstract:** The author constructs compact sets satisfying the interior r-sphere condition that disprove the strong union-of-balls conjecture in every dimension n≥3 and show that the universal covering radius r/2 is sharp there.
+- **Authors:** Chadi Nour
+- **arXiv:** `2611.14181v1` (published 2026-11-10T15:05:03Z; categories: `math.MG` (primary))
+- **Evidence for ranking:** It resolves the conjecture’s dimensional boundary with explicit compact counterexamples and sharpens the geometric picture by separating the planar optimum r/√3 from the higher-dimensional r/2 threshold.
+- **Claimed result:** For every n≥3, r>0 and ε>0, the author constructs a compact S⊂Rⁿ satisfying the interior r-sphere condition with a point uncovered by every contained ball of radius (1/2+ε)r; hence r/2 cannot be improved (Theorem 1.1).
+- **Assumptions and setting:** Euclidean Rⁿ, n≥3, compact sets with the interior r-sphere condition; the planar case has a different optimal radius.
+- **Caveat:** The construction disproves the strong conjecture only in dimensions n≥3; the paper cites the planar theorem with the distinct sharp radius r/√3.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Geometry & topology
 
-### 7. [Progression-free sets in class 2 and arbitrary finite groups](https://arxiv.org/abs/2611.14464)
-- **Abstract:** The author transfers bounds through nilpotent groups of class 2 to prove r₃(G) ≤ C|G| exp(−c(log|G|)^{1/6}/(log log|G|)^{1/3}) for every sufficiently large finite group G.
-- **Authors:** Luca Sabatini
-- **arXiv:** `2611.14464v1` (published 2026-11-10 18:29:43 UTC; categories: `math.GR` (primary), `math.NT`)
-- **Evidence for ranking:** The abstract gives an explicit asymptotic form for arbitrary finite groups and identifies a transfer of sharp abelian bounds via class-2 nilpotent groups as the proof route; it cross-lists group theory and number theory.
-- **Claimed result:** Combining a recent result of Raghavan with the author’s theorem on large class-2 subgroups yields the stated upper bound, improving estimates based on Pyber’s abelian-subgroup theorem.
-- **Assumptions and setting:** G ranges over arbitrary finite groups as |G|→∞; r₃(G) denotes the maximum size of a three-term-progression-free subset in the paper’s group setting.
-- **Caveat:** The bound is asymptotic and the abstract does not specify numerical values for its constants C and c.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
+### 8. [Koszul duality and determinant formulas for affine hyperplane arrangements](https://arxiv.org/abs/2611.13050v1)
+- **Abstract:** For real affine hyperplane arrangements, the authors prove Lam’s determinant conjecture for the inverse Varchenko matrix on bounded chambers and construct a Koszul duality yielding explicit multivariate formulas in the normal-crossing case.
+- **Authors:** Jens Niklas Eberhardt, Carl Mautner
+- **arXiv:** `2611.13050v1` (published 2026-11-09T14:05:37Z; categories: `math.CO` (primary), `math.AG`, `math.RT`)
+- **Evidence for ranking:** The work connects combinatorics, algebraic geometry and representation theory and proves both a named determinant conjecture and a further determinant conjecture of the authors, supported by an explicit algebraic construction.
+- **Claimed result:** The authors prove Lam’s determinant conjecture for the bounded-chamber restriction of the inverse Varchenko matrix; for normal-crossing arrangements, a Koszul duality between two constructed algebras gives an explicit multivariate formula (abstract).
+- **Assumptions and setting:** Real affine hyperplane arrangements; the Koszul-duality construction is stated for normal-crossing arrangements, with possible generalization to affine oriented matroids discussed.
+- **Caveat:** The explicit Koszul-duality statement is for normal-crossing arrangements; the extension to affine oriented matroids is discussed rather than established in the abstract as a full general theorem.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Combinatorics & discrete mathematics, Algebra & number theory
 
-### 8. [No 13-vertex triangulation of the three-torus](https://arxiv.org/abs/2611.14367)
-- **Abstract:** The author rules out a 13-vertex triangulation of the three-torus, a case left open by standard lower bounds for the conjectured 15-vertex minimum.
+### 9. [On the Concavity of Rényi Entropy and Rényi Entropy Power along Heat Flows on Manifolds](https://arxiv.org/abs/2611.13040v1)
+- **Abstract:** The authors establish concavity of Rényi entropy and entropy power for orders α∈[1,2] along Euclidean heat flow and, under a curvature-dimension condition, along Witten-Laplacian heat flow on complete Riemannian manifolds.
+- **Authors:** Hao Wu, Lei Yu
+- **arXiv:** `2611.13040v1` (published 2026-11-09T11:32:53Z; categories: `math.DG` (primary), `cs.IT`, `math.PR`)
+- **Evidence for ranking:** A concrete extension from Euclidean inequalities to weighted Riemannian geometry, cross-listed in differential geometry, information theory and probability; the abstract also reports complete monotonicity at Tsallis order 2.
+- **Claimed result:** The authors prove the stated concavity results under the paper’s hypotheses and establish complete monotonicity of Tsallis entropy of order 2, including a spectral decomposition (abstract).
+- **Assumptions and setting:** Euclidean space in arbitrary dimension for Rényi orders α∈[1,2]; more generally complete Riemannian manifolds with Witten Laplacian under a suitable curvature-dimension condition.
+- **Caveat:** The manifold extension depends on a curvature-dimension condition and analytic regularity/integrability hypotheses; this is not an unrestricted result for every heat flow or entropy order.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Probability & statistics, Analysis & PDE
+
+### 10. [Scattering thresholds for the NLS equation with polynomially decaying damping](https://arxiv.org/abs/2611.14403v1)
+- **Abstract:** For focusing energy-subcritical nonlinear Schrödinger equations with damping a(1+t)⁻ᶿ, the authors establish global existence and scattering/non-scattering thresholds across mass-subcritical, mass-critical and intercritical regimes, with a conjectured sharp threshold at θ=1.
+- **Authors:** Makram Hamouda, Mohamed Majdoub
+- **arXiv:** `2611.14403v1` (published 2026-11-10T17:46:42Z; categories: `math.AP` (primary))
+- **Evidence for ranking:** The paper gives regime-dependent global/scattering thresholds and an exact reduction at the scale-invariant damping rate θ=1, linking PDE analysis with an explicitly stated, numerically supported sharpness conjecture.
+- **Claimed result:** The authors prove scattering for the stated mass-subcritical and critical cases, a small-data result and scattering/grow-up dichotomy in the intercritical case; for θ=1 they reduce to an NLS with decaying repulsive harmonic potential and construct approximate solitary waves with integrable error (abstract).
+- **Assumptions and setting:** Focusing NLS with linear damping a(1+t)⁻ᶿ, a>0, in the whole energy-subcritical range; thresholds depend on θ and on mass/energy regime.
+- **Caveat:** The exact sharpness of the θ=1 scattering threshold remains a conjecture supported by numerical simulations; the paper’s conclusions vary across the mass regimes.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Analysis & PDE
+
+### 11. [No 13-vertex triangulation of the three-torus](https://arxiv.org/abs/2611.14367v1)
+- **Abstract:** The author rules out a 13-vertex simplicial triangulation of the three-torus, narrowing its minimum possible vertex count to 14 or 15.
 - **Authors:** Geunho Lim
-- **arXiv:** `2611.14367v1` (published 2026-11-10 17:23:48 UTC; categories: `math.GT` (primary), `math.CO`)
-- **Evidence for ranking:** The abstract isolates a specific gap in a vertex-minimality conjecture and reports a proof combining a g₂ inequality, a simplicial-complement reduction, fundamental groups, and Alexander duality.
-- **Claimed result:** The author excludes the 13-vertex case by reducing to a nine-vertex model of the punctured three-torus and deriving a contradiction from the deficiency of Z³.
-- **Assumptions and setting:** The object is a simplicial triangulation of the three-torus; the result addresses exactly 13 vertices.
-- **Caveat:** The 14-vertex case remains undecided by this paper, so it does not establish the conjectured 15-vertex minimum.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Geometry & topology; Combinatorics & discrete mathematics
-
-### 9. [A Complete Classification of Maximal Hyperelliptic Curves Related to Chebyshev Polynomials](https://arxiv.org/abs/2611.14198)
-- **Abstract:** For H_d: y²=φ_d(x), the authors classify pairs (d,p), with p prime not dividing 2d, for which H_d is maximal over a finite field of characteristic p and determine the corresponding fields.
-- **Authors:** Saeed Tafazolian, Jaap Top
-- **arXiv:** `2611.14198v1` (published 2026-11-10 15:21:08 UTC; categories: `math.NT` (primary), `math.AG`)
-- **Evidence for ranking:** The abstract claims a complete classification in a defined family, including the previously partial p≡1 mod 4 case, and a Frobenius-polynomial computation for the stated odd-degree subcase.
-- **Claimed result:** For odd d and p≡1 mod 4, the authors state that the Jacobian is supersingular exactly when H_d becomes maximal over a finite extension, and this occurs precisely for d=ℓ^n with prime ℓ≡1 mod 4 and p a generator modulo ℓ^n; they also compute the Frobenius polynomial.
-- **Assumptions and setting:** The curves are the Chebyshev family y²=φ_d(x); p is prime with p∤2d, and the detailed equivalence quoted applies to odd d and p≡1 mod 4.
-- **Caveat:** This classification concerns the specified Chebyshev-derived family, not arbitrary hyperelliptic curves.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Algebra & number theory; Geometry & topology
-
-### 10. [Annular Counterexamples and Skew-Shape Block Identities](https://arxiv.org/abs/2611.14506)
-- **Abstract:** The author gives counterexamples to unimodality and log-concavity claims in a rank-two annular cluster model, proves a skew-shape block-statistic identity under a specified convention, and provides Lean 4/Mathlib formalizations.
-- **Authors:** Adam Tilèpe
-- **arXiv:** `2611.14506v1` (published 2026-11-10 18:55:26 UTC; categories: `math.CO`)
-- **Evidence for ranking:** The abstract reports two concrete counterexamples, a positive identity result, and an available complete Lean formalization; the paper is a self-contained combinatorial contribution with a checkable proof artifact.
-- **Claimed result:** The author refutes a published unimodality assertion and a log-concavity conjecture in the rank-two annular model, while proving a skew-Young-diagram block-statistic identity proposed in earlier work.
-- **Assumptions and setting:** The counterexamples use the stated annular cluster model; the identity holds for arbitrary finite skew Young diagrams under the paper’s explicit root-exclusion convention.
-- **Caveat:** The counterexamples depend on the model and conventions specified in the paper; they do not establish failure of unimodality or log-concavity beyond that setting.
-- **Announcement type:** new submission, 2026-11-11 announcement batch
-- **Themes:** Combinatorics & discrete mathematics
+- **arXiv:** `2611.14367v1` (published 2026-11-10T17:23:48Z; categories: `math.GT` (primary), `math.CO`)
+- **Evidence for ranking:** It closes one of two specific cases left open by standard lower-bound arguments and combines a g₂ inequality, simplicial-complement reduction, fundamental groups and Alexander duality; it is cross-listed in topology and combinatorics.
+- **Claimed result:** The author proves there is no simplicial triangulation of T³ on 13 vertices, yielding 14≤v(T³)≤15 (Theorem 1.1 and Corollary 1.2).
+- **Assumptions and setting:** Finite simplicial triangulations of the three-torus; a known 15-vertex example gives the upper bound.
+- **Caveat:** The 14-vertex case remains unresolved by this result, so vertex-minimality of the 15-vertex construction is not yet decided.
+- **Announcement type:** new submission, announcement-batch date 2026-11-11
+- **Themes:** Geometry & topology, Combinatorics & discrete mathematics
 
 ## Trending Research Themes
 
-- Sharp asymptotic bounds and conjecture resolution are the clearest recurring pattern: hypergraph edge-colouring ([1]), small zeta gaps ([2]), Egyptian-fraction exceptional sets ([4]), and progression-free subsets of finite groups ([7]) each sharpen a quantitative threshold or resolve a named conjecture. These are distinct techniques, not evidence of a single shared method.
-- Exact classification and counterexample work appears across geometry and arithmetic: pronic-height connectedness of root closures ([3]), the higher-dimensional closed-ball counterexample ([5]), the Chebyshev hyperelliptic classification ([9]), and the three-torus vertex exclusion ([8]). These are separate results; their common thread is resolving a specific classification or extremal question.
-- Explicit constructions link combinatorics to analytic inequalities: the restricted-isometry family uses strongly regular graphs and incidence geometry ([6]), while the progression-free bound moves between abelian, class-2 nilpotent, and arbitrary finite groups ([7]). This is a cross-field bridge in the selected papers, not a general field-wide shift.
-- Formal verification is a small but checkable signal in this batch: the Egyptian-fraction sieve ([4]) and annular combinatorics ([10]) both provide Lean 4 formalizations; the bounded-height-root paper ([3]) also lists a computational companion. These artifacts support inspection, but do not substitute for assessing the arguments.
+- **Sharp statements about spectra and extremal gaps:** [The Supercritical Ten Martini Problem](https://arxiv.org/abs/2611.13068v1) establishes a Cantor conclusion in the positive-Lyapunov regime, while [The distribution of small gaps between zeros of the Riemann zeta function](https://arxiv.org/abs/2611.14486v1) gives an explicit unconditional threshold for a positive proportion of small gaps. These are distinct methods, but both turn qualitative spectral/zero-distribution questions into sharp structural claims.
+- **Conjecture resolution by exact geometry:** [The constant-width numerical range paper](https://arxiv.org/abs/2611.13461v1) characterizes the finite-matrix case, and [the union-of-balls counterexample](https://arxiv.org/abs/2611.14181v1) identifies the sharp radius in dimensions at least three. Both settle a named question while carefully exposing dimensional or object-level boundaries; there is no claim of a shared technique.
+- **Arithmetic geometry through different invariants:** [Cayley cubic rational-point counting](https://arxiv.org/abs/2611.14226v1) obtains a Peyre-constant asymptotic, [the K3 paper](https://arxiv.org/abs/2611.13468v1) uses Frobenius-lattice discriminants and sphere-packing bounds to prune Weil-polynomial candidates, and [the Fano threefold paper](https://arxiv.org/abs/2611.14417v1) studies stable-birational rigidity. Together they show a varied set of arithmetic-geometric problems, not one common method.
+- **Long-time analysis and flows:** [The damped NLS paper](https://arxiv.org/abs/2611.14403v1) maps scattering and grow-up regimes as damping decays, while [the Rényi-entropy paper](https://arxiv.org/abs/2611.13040v1) proves entropy concavity along heat flows under curvature-dimension hypotheses. Both concern evolution, but one is nonlinear dispersive dynamics and the other geometric/information inequalities.
+- **Discrete structure linking algebra and topology:** [The affine-arrangement paper](https://arxiv.org/abs/2611.13050v1) combines determinant identities with Koszul duality, while [the three-torus paper](https://arxiv.org/abs/2611.14367v1) uses combinatorial and group-theoretic constraints to exclude a triangulation size. These are isolated cross-field signals rather than evidence of a broader field-wide shift.
 
 ## Open Problems and Research Directions
 
-- Open problem (reported by the authors): the zeta-gap paper says its 0.7892 threshold is not optimized and notes that an alternate kernel yields λ>0.7864 ([2]). A follow-up could optimize admissible kernels under the paper’s unconditional constraints and state the best constant that method supports.
-- Open problem (reported by the authors): the root-closure paper leaves component infinitude unsettled at heights including 1, 3, 4, 9, and 25, and at at most one height in each sufficiently large square-adjacent triple ([3]). One concrete direction is to resolve those remaining heights with explicit separating series or connectivity constructions.
-- Open problem (stated in the paper’s background): the 15-vertex three-torus triangulation is conjectured vertex-minimal; this paper excludes 13 vertices but leaves 14 open ([8]). Enumerating or structurally classifying the 14-vertex case would address the next gap.
-- Open problem (noted in the paper): the hypergraph-coloring introduction says the optimal coefficient is not known for every fixed k ([1]). A natural extension is to determine whether the conjectured coefficient is sharp for fixed k,t, or make the Δ₀(k,t,ε) threshold effective.
+- **Author-stated — small-gap constant:** Lam notes that 0.7892 is not optimized and describes a kernel route to λ>0.7864. A concrete follow-up is to optimize admissible kernels under the paper’s required Fourier-side constraints and check whether that improves the unconditional threshold. ([paper](https://arxiv.org/abs/2611.14486v1))
+- **Explicit unresolved case — triangulation size:** after excluding 13 vertices, the minimum for a simplicial triangulation of T³ is still 14 or 15. Constructing a 14-vertex example or ruling it out would decide whether the known 15-vertex construction is minimal. ([paper](https://arxiv.org/abs/2611.14367v1))
+- **Author-stated boundary — NLS sharpness:** the authors conjecture, with numerical support, sharpness of the θ=1 scattering threshold. Proving or disproving that conjecture, especially in the interval between the two thresholds, would test the approximate-solitary-wave mechanism. ([paper](https://arxiv.org/abs/2611.14403v1))
+- **Scope extension — numerical ranges:** the constant-width proof covers the classical numerical range, not higher-rank numerical ranges. One direction is to identify which hypotheses or additional spectral data might make an analogous disk characterization true in the higher-rank setting. ([paper](https://arxiv.org/abs/2611.13461v1))
+- **Author-stated scope boundary — positive Lyapunov exponent:** the Ten Martini result covers the closure of the positive-exponent energies; extending Cantor-spectrum results into zero-exponent regimes requires additional hypotheses, and the paper notes announced small-potential interval examples. A useful direction is to characterize which subcritical analytic families retain Cantor spectra. ([paper](https://arxiv.org/abs/2611.13068v1))
+- **Research direction — remaining K3 candidates:** the refined conditions leave 793,985 candidates in the cited F₂ list. Additional arithmetic or geometric constraints could be tested against those survivors; the filtering itself does not certify realizability. ([paper](https://arxiv.org/abs/2611.13468v1))
 
 ## Takeaway
 
-The day’s most substantial-looking items are a 1997 hypergraph-coloring conjecture claim, a strong unconditional zeta-gap improvement, and a complete arithmetic criterion for connectedness of a family of root closures. Several other papers make sharply delimited advances—often a counterexample, an explicit bound, or the resolution of one remaining finite case—so the ranking should be read as a significance-oriented shortlist rather than measured audience popularity.
+This batch contains several crisp, auditable advances—most notably a broader supercritical Cantor-spectrum theorem, a much stronger explicit small-gap threshold, and multiple conjecture-level results—plus strong cross-links between arithmetic geometry, analysis and topology. The order is a transparent editorial inference from theorem scope, cross-field relevance and limited independent corroboration, not measured reader attention.
 
 ## Method and sources
 
-- Window: daily batch dated 2026-11-11; exact calendar window 2026-11-11 through 2026-11-11. The latest mathematics listing showed the Wednesday, 11 November 2026 batch; its papers were submitted on 10 November UTC. Snapshot time: 2026-11-11 17:23:07 UTC.
-- Coverage: traversed the complete arXiv Mathematics recent listing for the batch (452 entries). The core corpus was math; selected papers retain their primary and cross-list categories. Each of the 10 selected arXiv abstract pages was checked; the introductions/main-result statements were also inspected for the leading three, with additional main-result text checked for [4].
-- Ranking: arXiv publishes no trending/readership ranking. Attention signals were too sparse to support a popularity claim, so these are notable recent papers ranked by explicitness and scope of the claimed result, cross-field relevance, and checkable artifacts where available; recency was only a tie-breaker. Semantic Scholar current-citation metadata was available for two checked records and reported zero citations; no citation gains are inferred. The six exact-title web searches run did not surface independent expert/seminar discussion for those searched records.
-- Sources: [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); verified abstract pages [2611.13698](https://arxiv.org/abs/2611.13698), [2611.14486](https://arxiv.org/abs/2611.14486), [2611.14517](https://arxiv.org/abs/2611.14517), [2611.14167](https://arxiv.org/abs/2611.14167), [2611.14181](https://arxiv.org/abs/2611.14181), [2611.14475](https://arxiv.org/abs/2611.14475), [2611.14464](https://arxiv.org/abs/2611.14464), [2611.14367](https://arxiv.org/abs/2611.14367), [2611.14198](https://arxiv.org/abs/2611.14198), and [2611.14506](https://arxiv.org/abs/2611.14506).
+- **Window:** daily, exact window 2026-11-11 through 2026-11-11; selected the most recent arXiv Mathematics announcement batch, dated Wed 11 Nov 2026. The current date is 2026-11-12; this is not a same-calendar-day announcement.
+- **Snapshot:** 2026-11-12T01:31:56Z UTC.
+- **Coverage:** arXiv Mathematics recent listing, full 452-entry batch for 2026-11-11; selected 11 papers with primary or cross-list mathematics categories. Each selected arXiv HTML abstract page and version metadata was checked; the top three papers’ introduction/main-result statements were inspected where available. Categories retain arXiv’s primary/cross-list distinctions.
+- **Inference:** arXiv has no official trending/ranking chart. Same-day citation evidence was too limited for a measured attention ranking; no citation count is presented as a gain. Ordering prioritizes checkable theorem-level contributions, clear conjecture resolution/counterexample/bound, cross-field relevance, and an independent secondary reference where found; recency is a tie-breaker. No numeric trend score is used.
+- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); linked abstract pages on every paper entry; [Wolfram MathWorld’s Supercritical Ten Martini Problem reference](https://mathworld.wolfram.com/SupercriticalTenMartiniProblem.html). Citation counts were not used because no reliable same-day totals were available for this cohort.

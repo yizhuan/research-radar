@@ -1,86 +1,88 @@
 ## Headline
 
-Daily physics — Wednesday, 11 November 2026 announcement batch — 5 notable recent papers. The strongest pattern is precision work on difficult interactions: quantum-device gauge dynamics and atom-pair forces alongside high-energy limits from LHAASO and CMS. This short tour covers quantum simulation, PeV astrophysics, AMO physics, collider searches, and lattice QCD. arXiv supplies no official trending chart; this inferred ordering uses sparse attention and scientific signals, and citation evidence is limited for papers only just announced.
+Daily physics — Wednesday, 11 November 2026 announcement batch — 5 notable recent papers, ranked by inferred momentum. The strongest pattern is instrument-scale exploration of hard-to-reach regimes: two-dimensional gauge dynamics on quantum hardware, topological order in moiré graphene, and ultra-high-energy cosmic messengers. Spoken agenda: the leading experimental signals, their shared methods, then measurements that could settle the remaining uncertainties. Global caveat: arXiv provides no official trending chart; this is an inferred ranking, not a readership or download ranking, and citation evidence is sparse for papers this recent.
 
 ## Top papers (ranked)
 
-### 1. [Nonperturbative string dynamics in a (2+1)D lattice gauge theory on a superconducting quantum processor](https://arxiv.org/abs/2611.14484)
-- **Abstract:** A 63-qubit superconducting processor simulates string evolution in a two-spatial-dimensional Z₂ gauge theory, resolving charge and flux spreading, pair creation, and transverse rearrangement across confined and deconfined regimes.
-- **Authors:** Sanziana Stelea, Anthony Gandon, Francesco Tacchino, Jad C. Halimeh, Ivano Tavernelli
+### 1. [New Constraints on the Ultrahigh Energy Neutrino Flux from the First Array-Wide Search with the Askaryan Radio Array](https://arxiv.org/abs/2611.14350)
+- **Abstract:** The ARA Collaboration reports its first array-wide diffuse ultra-high-energy neutrino search, finding no candidates and setting a stringent flux upper limit from 50 to 1000 EeV.
+- **Authors:** ARA Collaboration, N. Alden, S. Ali, P. Allison, D. Z. Besson et al.
+- **arXiv:** `2611.14350v1` (published 2026-11-10 17:15:01 UTC; categories: `astro-ph.HE`, `astro-ph.IM`)
+- **Evidence for ranking:** The neutrino-focused Global-Nu daily digest highlighted this result; it combines the full five-station ARA array and decade-scale exposure with a concrete flux constraint. The companion methodology paper is part of the same analysis, not an independent confirmation.
+- **Claimed result:** The authors observe zero passing events on an expected background of 0.13 (+0.01/-0.01 statistical, +0.05/-0.06 systematic) and report the strongest limit from 50–1000 EeV, excluding some trans-GZK proton-source models at 90% confidence.
+- **Evidence type:** observational; 10.6 years of ARA array-wide livetime (January 2013–December 2023), all five stations, with detector and neutrino simulations.
+- **Caveat:** This is a null search, not a neutrino detection. Exposure depends on ice and Askaryan-emission models and the neutrino–nucleon cross section; the companion analysis (arXiv:2611.14354) reports substantial high-energy acceptance uncertainties.
+- **Announcement type:** new submission, 11 November 2026 announcement batch
+- **Themes:** Astrophysics; Instrumentation & detectors
+
+### 2. [Nonperturbative string dynamics in a (2+1)D lattice gauge theory on a superconducting quantum processor](https://arxiv.org/abs/2611.14484)
+- **Abstract:** The authors use 63 superconducting qubits to measure real-time electric-string dynamics in a two-dimensional Z₂ gauge theory with dynamical matter across confined and deconfined regimes.
+- **Authors:** Sânziana Stelea, Anthony Gandon, Francesco Tacchino, Jad C. Halimeh, Ivano Tavernelli
 - **arXiv:** `2611.14484v1` (published 2026-11-10 18:45:36 UTC; categories: `quant-ph`)
-- **Evidence for ranking:** An independent Quantum Zeitgeist report dated 11 November covered the 63-qubit experiment; the paper also reports direct Gauss-law checks and string-path measurements, making it a concrete hardware result rather than a proposal.
-- **Claimed result:** The authors report rapid charge/flux spreading in the deconfined regime, enhanced matter occupation near pair-creation resonance, and suppressed spreading at strong electric fields.
-- **Evidence type:** experimental; digital quantum simulation of a (2+1)D Z₂ lattice gauge theory on 63 superconducting qubits, including 12 ancillas.
-- **Caveat:** The implementation is a finite 5×4 matter lattice and measures circuits up to 15 second-order Trotter steps; noise rescaling and symmetry checks are part of the analysis, so the result does not establish scalable quantum advantage.
+- **Evidence for ranking:** Independent public writeups appeared at Quantum.world and Quantum Zeitgeist; the paper also demonstrates a comparatively large superconducting processor on a concrete many-body gauge problem.
+- **Claimed result:** Spatially resolved measurements show rapid charge/flux spreading in the deconfined regime, enhanced matter occupation near a pair-creation resonance, and reduced spreading at strong electric fields; the authors use Gauss-law constraints as an error-detection resource.
+- **Evidence type:** experimental; a 5×4 matter-site lattice on a 63-qubit superconducting processor, with up to 15 second-order Trotter steps and ancilla checks.
+- **Caveat:** The finite lattice and short evolution limit extrapolation to larger systems and longer times; tensor-network comparisons converge only over a shorter time range, while hardware noise grows at later steps.
 - **Announcement type:** new submission, 11 November 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Quantum information; Computational & data methods
+- **Themes:** Quantum information; Particle, nuclear & high-energy physics; Computational & data methods
 
-### 2. [Search for heavy top quark partners with charge 5/3 in the single-lepton final state in proton-proton collisions at √s = 13 TeV](https://arxiv.org/abs/2611.14335)
-- **Abstract:** CMS searches 138 fb⁻¹ of 13 TeV proton-proton collisions for pair-produced charge-5/3 top partners in conventional top–W and exotic top–charged-Higgs decay modes, finding no excess and setting 95% confidence-level mass limits.
-- **Authors:** CMS Collaboration
-- **arXiv:** `2611.14335v1` (published 2026-11-10 16:59:03 UTC; categories: `hep-ex`)
-- **Evidence for ranking:** The arXiv record says the work was submitted to Physical Review D; the analysis uses the full 2016–2018 CMS 138 fb⁻¹ sample and reports the first limits for the top-partner-to-top-plus-charged-Higgs mode.
-- **Claimed result:** The authors exclude masses up to 1.63 TeV for the top–W mode and up to 1.74 TeV for the top–charged-Higgs mode when the charged Higgs mass is 800 GeV; they report no significant excess.
-- **Evidence type:** experimental; CMS proton-proton collision data at √s = 13 TeV collected in 2016–2018, analyzed in a single-electron or single-muon final state.
-- **Caveat:** The quoted exclusions assume exclusive branching to the specified decay chain and cover the single-lepton channel; the exotic interpretation is limited to simulated mass points satisfying its kinematic threshold.
+### 3. [Evidence of anomalous Hall crystals in moiré rhombohedral graphene](https://arxiv.org/abs/2611.14067)
+- **Abstract:** Electrical-transport and noise measurements in hole-doped moiré rhombohedral graphene reveal incommensurate Chern-insulating states and signatures consistent with an anomalous Hall crystal.
+- **Authors:** Hongyuan Li, Zuhan Geng, Annika Weber, Chenxi Xu, Yifan Jiang et al.
+- **arXiv:** `2611.14067v1` (published 2026-11-10 13:31:11 UTC; categories: `cond-mat.mes-hall`, `cond-mat.mtrl-sci`, `cond-mat.str-el`)
+- **Evidence for ranking:** Cross-listed across three condensed-matter subfields and reports a direct transport/noise experiment on a debated topological phase; these are scientific-significance signals rather than measured readership.
+- **Claimed result:** The authors interpret Chern insulators at incommensurate hole densities, together with current-induced broadband noise, memory effects, gate hysteresis, and field/temperature dependence, as experimental evidence for a spontaneously charge-ordered parent state.
+- **Evidence type:** experimental; electrical transport and noise measurements with systematic magnetic-field, temperature, and gate dependence.
+- **Caveat:** The charge-order interpretation is inferred from transport and noise signatures rather than direct real-space imaging; the authors explicitly call for scanning-probe studies to image the state, and note that twist-angle/moiré dependence needs further study.
 - **Announcement type:** new submission, 11 November 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
+- **Themes:** Condensed matter & materials
 
-### 3. [Constraints on Lorentz Invariance Violation from PeV Gamma Rays of Cygnus X-3 Observed by LHAASO](https://arxiv.org/abs/2611.14028)
-- **Abstract:** Using LHAASO observations of photons up to 3.7 PeV from Cygnus X-3, the authors find no predicted high-energy cutoff and derive stronger lower limits on energy scales for superluminal Lorentz-invariance violation.
-- **Authors:** Zhen Cao, F. Aharonian, Y. X. Bai, Y. W. Bao, D. Bastieri, et al.
-- **arXiv:** `2611.14028v1` (published 2026-11-10 12:58:14 UTC; categories: `astro-ph.HE`, `hep-ph`)
-- **Evidence for ranking:** It is cross-listed across astrophysics and phenomenology and converts multi-PeV photons in a measured LHAASO dataset into a quantitative constraint, reporting an improvement of nearly an order of magnitude over prior limits.
-- **Claimed result:** The authors report a second-order LIV energy scale above roughly 10⁻² of the Planck scale in the photon-splitting channel; this is a constraint, not a detection of Lorentz violation.
-- **Evidence type:** observational; analysis of LHAASO KM2A data from four Cygnus X-3 flaring periods (2019–2024), totaling 692.8 days, with source-spectrum and cutoff models.
-- **Caveat:** The intrinsic source spectrum is the dominant systematic: the authors estimate about a 9.5% effect on the cutoff limit when changing spectral model; the result also tests specified superluminal LIV scenarios.
+### 4. [Probing for anisotropies at different angular scales in the arrival directions of the cosmic rays detected at the Pierre Auger Observatory](https://arxiv.org/abs/2611.14233)
+- **Abstract:** A new von Mises–Fisher analysis of Pierre Auger ultra-high-energy cosmic-ray arrival directions searches consistently for excesses across angular scales using the Observatory’s full Phase I dataset.
+- **Authors:** Pierre Auger Collaboration, A. Abdul Halim, P. Abreu, M. Aglietta, M. Ahmed et al.
+- **arXiv:** `2611.14233v1` (published 2026-11-10 15:45:43 UTC; categories: `astro-ph.HE`)
+- **Evidence for ranking:** The analysis uses the full 2004–2022 Phase I sample (123,000 km² sr yr exposure) and supplies a method joining large- and intermediate-scale searches; its higher-energy Centaurus feature is explicitly described as an indication, not a detection.
+- **Claimed result:** The most significant excess is a dipolar modulation at 8–16 EeV, compatible with earlier Auger findings; above 32 EeV the authors find indications of a Centaurus-region intermediate-scale excess alongside the dipole.
+- **Evidence type:** observational; Pierre Auger Observatory Phase I events above 4 EeV collected from January 2004 through December 2022.
+- **Caveat:** The Centaurus feature is not a source identification, and the authors say composition information and more data are needed to distinguish source-population and mixed-composition explanations.
 - **Announcement type:** new submission, 11 November 2026 announcement batch
-- **Themes:** Astrophysics; Particle, nuclear & high-energy physics
+- **Themes:** Astrophysics; Instrumentation & detectors; Computational & data methods
 
-### 4. [Observation of strong electric dipole-dipole interactions between two atoms](https://arxiv.org/abs/2611.13665)
-- **Abstract:** The authors confine dysprosium atom pairs to densities above 10¹⁶ cm⁻³ and observe coherent near-field dipole interactions, large momentum transfer after single-photon emission, and a dipole-induced two-body resonance shift.
-- **Authors:** Yu-Kun Lu, Jiahao Lyu, Wolfgang Ketterle
-- **arXiv:** `2611.13665v1` (published 2026-11-10 07:13:26 UTC; categories: `quant-ph`, `physics.atom-ph`)
-- **Evidence for ranking:** The work combines a direct laboratory observation with a measurement regime above nλ̄³ = 10, over an order of magnitude beyond the cited earlier cold-atom regime, and is cross-listed in atomic and quantum physics.
-- **Claimed result:** The authors report single-photon momentum transfer of order 10ℏk, coherent light-induced dipole forces, and a two-body Lamb shift dominated by near-field interactions.
-- **Evidence type:** experimental; ¹⁶²Dy atom pairs in a three-dimensional optical lattice, probed through momentum distributions, light scattering, fluorescence spectra, and atom loss.
-- **Caveat:** The study is limited to optical transitions and atom pairs; the authors note that detuning-asymmetric photoassociative loss may involve motional dynamics and complex excited-state potentials.
+### 5. [The unified bound dark energy–bound dark matter model confronted with DESI DR2, ACT and SPT-3G, and the Unite supernovae measurements](https://arxiv.org/abs/2611.13567)
+- **Abstract:** The authors fit a unified dark-sector model to DESI DR2 BAO, CMB and lensing measurements, and Unite supernovae, reporting parameter constraints and comparisons with ΛCDM and w₀wₐCDM.
+- **Authors:** Jose Agustin Lozano Torres, Axel de la Macorra
+- **arXiv:** `2611.13567v1` (published 2026-11-10 04:36:02 UTC; categories: `astro-ph.CO`)
+- **Evidence for ranking:** It combines several current cosmological datasets and reports quantified model comparisons and a constrained dark-matter velocity parameter; these are scientific-content signals, not independent evidence of popularity.
+- **Claimed result:** The authors find the full combination statistically equivalent to ΛCDM and w₀wₐCDM, while the bound-dark-matter variant is moderately favored over cold dark matter within their model; they propose future high-redshift and small-scale measurements as discriminants.
+- **Evidence type:** theoretical; model fitting to DESI DR2 BAO, Planck/ACT DR6/SPT-3G CMB spectra, ACT+SPT lensing, and Unite supernova data.
+- **Caveat:** The inference is model-dependent, and the reported preference for bound dark matter is internal to this model comparison; the authors find no decisive preference over standard dark-energy models in the full data combination.
 - **Announcement type:** new submission, 11 November 2026 announcement batch
-- **Themes:** Atomic, molecular & optical physics; Quantum information
-
-### 5. [Nucleon sigma terms in lattice QCD at physical pion mass and in the continuum](https://arxiv.org/abs/2611.14103)
-- **Abstract:** Four physical-pion-mass, Nf = 2+1+1 twisted-mass lattice-QCD ensembles at four lattice spacings are used to extrapolate the light, strange, and charm nucleon sigma terms to the continuum.
-- **Authors:** Constantia Alexandrou, Christos Iona, Giannis Koutsou, Yan Li, Srijit Paul, Ferenc Pittler
-- **arXiv:** `2611.14103v1` (published 2026-11-10 13:57:35 UTC; categories: `hep-lat`, `hep-ex`, `hep-ph`, `nucl-th`)
-- **Evidence for ranking:** The result is cross-listed in four physics archives and combines physical-pion-mass ensembles with an explicit continuum extrapolation; the paper reports separate statistical and systematic errors for all three sigma terms.
-- **Claimed result:** The authors obtain σπN = 53.0(7.4)(1.6) MeV, σs = 58.2(17.0)(2.1) MeV, and σc = 112(28)(25) MeV, with statistical and systematic uncertainties listed in that order.
-- **Evidence type:** computational; global fits to four Nf = 2+1+1 twisted-mass lattice-QCD ensembles at physical pion masses and lattice spacings from 0.080 to 0.049 fm.
-- **Caveat:** The quoted strange- and charm-term uncertainties remain sizable, and the continuum values depend on global fits across a finite set of ensembles despite the authors’ treatment of excited-state contamination.
-- **Announcement type:** new submission, 11 November 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
+- **Themes:** Cosmology & gravitation; Computational & data methods
 
 ## Trending Research Themes
 
-- **Quantum platforms for nonclassical interactions:** The superconducting processor resolves gauge-string dynamics in 2+1 dimensions (2611.14484), while the optical-lattice experiment isolates strong near-field forces between two atoms (2611.13665). Both are controlled experiments, but they address different systems and do not independently confirm one another.
-- **Null results converted into constraints:** The CMS search finds no heavy top partner (2611.14335), and the LHAASO analysis finds no LIV-like spectral cutoff (2611.14028); each turns an absence in its own dataset into limits, not a shared discovery or confirmation.
-- **QCD across methods and scales:** The lattice calculation provides continuum-extrapolated nucleon sigma terms (2611.14103), while CMS tests high-mass top-partner scenarios (2611.14335). This is a broad connection across nonperturbative and collider methods, not a common measurement.
+- **Quantum hardware as a probe of gauge dynamics — isolated but high-profile signal:** the 63-qubit experiment (Stelea et al.) retains measurable local Gauss-law constraints while probing string breaking and flux spreading. The writeups found indicate attention to this platform result, not independent replication.
+- **Cosmic messengers and array-scale inference:** the ARA neutrino search and the Auger anisotropy analysis both turn long-duration, large-array datasets into constraints on extreme-energy sources. They use different particles, instruments, and analyses; neither independently confirms the other.
+- **Topological order in moiré materials — isolated experimental signal:** Li et al. combine transport and noise observables to argue for anomalous Hall crystal behavior in rhombohedral graphene; spatially resolved probes would test the charge-order interpretation.
+- **Model comparison with new cosmological datasets — isolated theory/data-analysis signal:** Lozano Torres and de la Macorra combine BAO, CMB, lensing, and supernova data, while the reported full-combination evidence remains statistically non-decisive relative to standard cosmologies.
 
 ## Open Problems and Research Directions
 
-- **Longer and larger gauge-theory dynamics (author-reported scope; follow-up is synthesis):** The 5×4 lattice and 15-step circuits in 2611.14484 leave larger volumes and later-time behavior untested. Increasing lattice size and circuit depth while independently benchmarking gauge-constraint checks could establish which string features persist beyond the demonstrated device regime.
-- **Astrophysical spectrum dependence (author-stated systematic):** In 2611.14028, the source-spectrum choice dominates the cutoff uncertainty. More flare data and improved multiwavelength constraints on Cygnus X-3’s intrinsic spectrum could test whether the LIV limits are stable under plausible emission models.
-- **Few-body to many-body dipolar physics (author-proposed direction):** The authors of 2611.13665 propose sub-50 nm localization, resolving symmetric/antisymmetric shifts, and extending toward three atoms per site. Those measurements could test the pair-level interpretation and connect optical photoassociation to driven few-/many-body dynamics.
-- **Decay-model coverage (synthesis):** The CMS exclusions in 2611.14335 assume specified exclusive branching chains and a single-lepton selection. Searches that relax branching assumptions or combine complementary final states could test how much of the quoted mass reach survives broader decay scenarios.
-- **Sigma-term precision (synthesis from reported uncertainties):** The strange and charm results in 2611.14103 have comparatively large errors. Additional lattice spacings and volumes, plus independent control of multihadron excited-state fits, could test the stability of the continuum extrapolation and reduce uncertainty.
+- **ARA flux and detector systematics (author-stated):** the companion ARA methodology paper identifies ice optical properties, Askaryan emission, and neutrino cross sections as important acceptance uncertainties. **Follow-up (synthesis):** improve in-ice calibration and compare radio-array limits with independent neutrino techniques as exposure grows. [ARA result; arXiv:2611.14354]
+- **Gauge-theory evolution time and scale (author-stated):** tensor-network convergence and hardware noise limit the accessible evolution. **Follow-up (synthesis):** test larger lattices and longer runs, and evaluate mid-circuit syndrome extraction or gauge-protection methods enabled by the encoded constraints. [Stelea et al.]
+- **Direct evidence for charge order (author-stated):** Li et al. infer ordering from transport/noise, memory, and hysteresis, and explicitly call for scanning-probe imaging; the twist-angle and moiré dependence also remains open. **Follow-up:** seek spatially resolved or otherwise independent probes and map reproducibility across devices, temperatures, and field sweeps. [Li et al.]
+- **Origin of the Centaurus excess (author-stated):** Auger reports an intermediate-scale indication but cannot identify its source or separate source-population and composition effects. **Follow-up:** combine AugerPrime composition information with larger Northern/Southern exposure and test whether the feature persists under pre-specified energy and angular selections. [Pierre Auger Collaboration]
+- **Testing the unified dark sector (author-stated):** the authors point to high-redshift observations, Lyman-α forest data, growth, and lensing as decisive tests. **Follow-up:** run consistent likelihood comparisons with these probes and vary dataset/systematic assumptions to see whether the model’s internal BDM preference survives. [Lozano Torres and de la Macorra]
 
 ## Takeaway
 
-This batch pairs experimental control—quantum hardware and tightly confined atoms—with data-driven constraints from a collider and a PeV gamma-ray observatory, while lattice QCD supplies a continuum benchmark for nucleon structure. The strongest-looking results are still bounded by finite devices, model assumptions, or statistical/systematic errors; the ranking is a transparent snapshot, not a popularity measurement.
+The strongest momentum signals favor instrument-scale experiments and analyses that open new regimes: two-dimensional gauge dynamics on quantum hardware, an array-wide ultra-high-energy neutrino search, and a multi-scale cosmic-ray analysis. The condensed-matter and cosmology entries add plausible new phases and model fits, but all remain preprints, and their interpretations still need follow-up tests.
 
 ## Method and sources
 
-- **Window:** Daily batch labelled Wednesday, 11 November 2026; exact submission window queried: 2026-11-09 19:00:00 UTC through 2026-11-10 19:00:00 UTC. Snapshot: 2026-11-12 01:35:33 UTC. This is the latest batch shown on arXiv’s recent pages, not a prior batch. The five papers are v1 submissions dated 10 November UTC.
-- **Coverage:** Checked the recent pages for `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`; a combined arXiv API query returned 190 unique records in the submission window. `quant-ph` accounted for 69/190 records (36.3%); candidates were deduplicated by versionless arXiv ID. All five selected abstract pages were verified.
-- **Inference:** arXiv publishes no official trending chart. Ordering uses independent coverage where found, cross-listing, publication status, concrete new measurements/constraints and methodological reach; recency is only a tie-breaker. Semantic Scholar citation metrics were not available for reliable use at this snapshot, so citation totals and gains are not asserted. Because attention signals are sparse, these are labelled notable recent papers rather than measured popularity.
-- **Reading:** The full arXiv HTML papers for the quantum-processor, LHAASO, and atom-pair studies were inspected for methods, results, and limitations. CMS and lattice-QCD claims are summarized from their verified arXiv abstracts and metadata. Direct browser access was used when the configured `web_extract` backend could not extract pages.
-- **Sources:** [arXiv Physics recent](https://arxiv.org/list/physics/recent), [Astrophysics](https://arxiv.org/list/astro-ph/recent), [Condensed Matter](https://arxiv.org/list/cond-mat/recent), [GR-QC](https://arxiv.org/list/gr-qc/recent), [HEP-EX](https://arxiv.org/list/hep-ex/recent), [HEP-LAT](https://arxiv.org/list/hep-lat/recent), [HEP-PH](https://arxiv.org/list/hep-ph/recent), [HEP-TH](https://arxiv.org/list/hep-th/recent), [NUCL-EX](https://arxiv.org/list/nucl-ex/recent), [NUCL-TH](https://arxiv.org/list/nucl-th/recent), [Quantum Physics](https://arxiv.org/list/quant-ph/recent); [arXiv API](https://export.arxiv.org/api/query); selected arXiv abstract/full-text links above; and [independent Quantum Zeitgeist coverage](https://quantumzeitgeist.com/ludwig-maximilian-map-string-dynamics-using/).
+- **Window:** daily announcement batch for Wednesday, 11 November 2026; submission/revision window `[2026-11-09 19:00:00, 2026-11-10 19:00:00) UTC`. The current date is 12 November, so this uses the latest available prior batch.
+- **Snapshot:** 2026-11-12 17:25:16 UTC.
+- **Coverage:** checked `new` pages for `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. The pages yielded 715 unique IDs after cross-list deduplication; arXiv API timestamps/versions placed 664 within the batch window (408 first submissions and 256 version updates). All selected abstracts and metadata were checked against arXiv’s Atom records; full text was inspected where practical for leading experimental results. The selected papers are all new submissions.
+- **Inference:** arXiv has no official trending ranking. Ordering uses independent coverage where found, cross-listing, dataset/instrument scale, and concrete findings, with recency only as a tie-breaker. Semantic Scholar metadata was queried, but rate limiting prevented coverage of most selected records; no citation totals are used. Counts, when available, are current totals rather than period gains.
+- **Sources:** arXiv category pages for [physics](https://arxiv.org/list/physics/new), [astro-ph](https://arxiv.org/list/astro-ph/new), [cond-mat](https://arxiv.org/list/cond-mat/new), [gr-qc](https://arxiv.org/list/gr-qc/new), [hep-ex](https://arxiv.org/list/hep-ex/new), [hep-lat](https://arxiv.org/list/hep-lat/new), [hep-ph](https://arxiv.org/list/hep-ph/new), [hep-th](https://arxiv.org/list/hep-th/new), [nucl-ex](https://arxiv.org/list/nucl-ex/new), [nucl-th](https://arxiv.org/list/nucl-th/new), and [quant-ph](https://arxiv.org/list/quant-ph/new); [arXiv Atom API](https://export.arxiv.org/api/query); [Global-Nu, 10 November digest](https://global-nu.org/digest/2026-11-10.html); [Quantum.world coverage](https://quantum.world/news/63-qubit-electric-string-gauge-theory-simulation); [Quantum Zeitgeist coverage](https://quantumzeitgeist.com/ludwig-maximilian-map-string-dynamics-using/); and the five canonical arXiv abstract pages linked above.
+- **Retrieval note:** the configured web-extraction backend could not extract page content, so arXiv records were gathered from its category HTML and Atom API; independent coverage was checked through web search. This did not provide reliable Semantic Scholar citation coverage for this snapshot.

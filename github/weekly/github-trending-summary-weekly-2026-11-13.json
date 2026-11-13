@@ -1,0 +1,475 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-11-13",
+  "title": "GitHub Trending Summary - Weekly - 2026-11-13",
+  "source_report": "~/.research/github/weekly/github-trending-summary-weekly-2026-11-13.md",
+  "entry_count": 11,
+  "entry_noun": "repositories",
+  "ranking_basis": "GitHub Trending weekly star gains, sorted descending",
+  "ranking_explanation": "The matching GitHub Trending weekly view supplied star-gain signals; entries are ordered by those displayed gains from largest to smallest. This is not a monthly inference or an external popularity score.",
+  "global_caveat": "Trending star gains are a time-window signal, not measures of software quality, adoption, or security. Snapshot is a rolling weekly view, not a fixed midnight-to-midnight reporting period.",
+  "themes": [
+    {
+      "id": "agent-skills",
+      "title": "Packaged agent skills",
+      "content": "Reusable skill directories are a major signal: anthropics/skills, mattpocock/skills and google/skills publish task-specific guidance/resources rather than another general-purpose model.",
+      "repository_ids": [
+        "05-anthropics-skills",
+        "03-mattpocock-skills",
+        "10-google-skills"
+      ]
+    },
+    {
+      "id": "agent-interfaces",
+      "title": "Agents gain browser and desktop controls",
+      "content": "vercel-labs/agent-browser and vercel-labs/agent-desktop share a shell-driven observe-act-observe model using accessibility references instead of opaque pixel-only actions.",
+      "repository_ids": [
+        "08-vercel-labs-agent-browser",
+        "04-vercel-labs-agent-desktop"
+      ]
+    },
+    {
+      "id": "grounded-analytics",
+      "title": "Grounding agents in enterprise data",
+      "content": "NVIDIA/auto-ontology emphasizes semantic context, lineage and deterministic query validation to make agentic analytics more explainable.",
+      "repository_ids": [
+        "06-NVIDIA-auto-ontology"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security workflows for coding agents",
+      "content": "cloudflare/security-audit-skill treats audit output as a verified pipeline with coverage tracking and machine-readable findings.",
+      "repository_ids": [
+        "01-cloudflare-security-audit-skill"
+      ]
+    },
+    {
+      "id": "agent-apps",
+      "title": "Personalized agent applications",
+      "content": "milind-soni/OpenMausBot packages multiple agents into a local-first chat product, each with an individual model, apps and computer.",
+      "repository_ids": [
+        "02-milind-soni-OpenMausBot"
+      ]
+    },
+    {
+      "id": "developer-tools",
+      "title": "Established developer tools remain in the mix",
+      "content": "D4Vinci/Scrapling, zed-industries/zed and agent-browser show interest in scraping, coding and browser automation infrastructure, not just agent prompts.",
+      "repository_ids": [
+        "07-D4Vinci-Scrapling",
+        "09-zed-industries-zed",
+        "08-vercel-labs-agent-browser"
+      ]
+    },
+    {
+      "id": "simulation",
+      "title": "A non-agent outlier",
+      "content": "google-deepmind/mujoco is the lone physics-simulation entry among the 11 listed repositories, a useful counterpoint to the agent-heavy cluster.",
+      "repository_ids": [
+        "11-google-deepmind-mujoco"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time: 2026-11-13 02:36 UTC. Scope: weekly. Date range: 2026-11-06 through 2026-11-13 (GitHub Trending “This week”, rolling seven-day view). Ranking: listed Trending weekly star gains sorted descending."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "This week’s signal is the move from agent prompts to agent work surfaces: reusable skill packs and tools that let agents operate browsers, desktops, security workflows and enterprise data. Cloudflare’s audit skill and OpenMausBot lead on weekly star velocity."
+    },
+    {
+      "id": "01-top-repositories",
+      "kind": "repo-index",
+      "title": "Top Repositories",
+      "content": "The 11 repositories below are ordered by weekly stars gained, descending; each entry includes its primary language, total stars, and why it matters."
+    },
+    {
+      "id": "01-cloudflare-security-audit-skill",
+      "kind": "repo",
+      "title": "cloudflare/security-audit-skill",
+      "rank": 1,
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars_gained": 10700,
+      "total_stars": 71261,
+      "default_branch_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "why_notable": "+10,700 stars on GitHub Trending weekly; represents security in this snapshot.",
+      "theme_ids": [
+        "security"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Cloudflare Security Audit Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "A security-audit workflow that divides reconnaissance, coverage-led hunting, candidate validation and independent verification into auditable steps.",
+      "workflow": "Uses a coverage ledger, isolated hunters and fresh verifiers; emits schema-validated findings and target-neutral reports.",
+      "refs": [
+        "cloudflare/security-audit-skill"
+      ]
+    },
+    {
+      "id": "02-milind-soni-OpenMausBot",
+      "kind": "repo",
+      "title": "milind-soni/OpenMausBot",
+      "rank": 2,
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars_gained": 9104,
+      "total_stars": 21759,
+      "default_branch_commit": "f509c24bbbc92406f22bc1338e35c00e53e31025",
+      "why_notable": "+9,104 stars on GitHub Trending weekly; represents agent apps in this snapshot.",
+      "theme_ids": [
+        "agent-apps"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "OpenMausBot",
+      "unique_caveat": "Independent project; its README says it is not affiliated with xAI, Meta, OpenAI or Manus.",
+      "enrichment": null,
+      "architecture_summary": "A local-first team of chat-based AI agents, each with its own personality, model, connected apps and cloud computer; users can watch and approve work.",
+      "workflow": "A desktop/chat product wraps agent runtimes such as Claude or Codex and provisions a computer for each bot.",
+      "refs": [
+        "milind-soni/OpenMausBot"
+      ]
+    },
+    {
+      "id": "03-mattpocock-skills",
+      "kind": "repo",
+      "title": "mattpocock/skills",
+      "rank": 3,
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars_gained": 8731,
+      "total_stars": 323063,
+      "default_branch_commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "why_notable": "+8,731 stars on GitHub Trending weekly; represents agent skills in this snapshot.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Matt Pocock Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "An opinionated set of small, adaptable, model-agnostic engineering skills, designed to be composable rather than impose a single development process.",
+      "workflow": "Install through agent-specific plugin/marketplace routes or copy editable skill files; user chooses one update model per agent.",
+      "refs": [
+        "mattpocock/skills"
+      ]
+    },
+    {
+      "id": "04-vercel-labs-agent-desktop",
+      "kind": "repo",
+      "title": "vercel-labs/agent-desktop",
+      "rank": 4,
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "language": "Rust",
+      "stars_gained": 6414,
+      "total_stars": 22773,
+      "default_branch_commit": "947b051fb7a03a797ad12b9bb942d4ffc6f91735",
+      "why_notable": "+6,414 stars on GitHub Trending weekly; represents agent interfaces in this snapshot.",
+      "theme_ids": [
+        "agent-interfaces"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "agent-desktop",
+      "unique_caveat": "Snapshots, clipboard reads and other outputs can contain private desktop content; avoid public logs/uploads.",
+      "enrichment": null,
+      "architecture_summary": "Cross-platform computer-use CLI reads desktop accessibility trees as JSON and lets an agent act on referenced controls without pixel matching.",
+      "workflow": "Agent snapshots the UI, acts on a reference, then snapshots again to verify; the tool contains no model and also ships a C library.",
+      "refs": [
+        "vercel-labs/agent-desktop"
+      ]
+    },
+    {
+      "id": "05-anthropics-skills",
+      "kind": "repo",
+      "title": "anthropics/skills",
+      "rank": 5,
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars_gained": 6055,
+      "total_stars": 193730,
+      "default_branch_commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "why_notable": "+6,055 stars on GitHub Trending weekly; represents agent skills in this snapshot.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Anthropic Agent Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "Folders of task-specific instructions, scripts and resources dynamically loaded to give Claude repeatable workflows, with worked examples across technical, creative, enterprise and document tasks.",
+      "workflow": "Each skill lives in a self-contained folder; the repository is an implementation/examples collection for Claude rather than the universal Agent Skills specification.",
+      "refs": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "id": "06-NVIDIA-auto-ontology",
+      "kind": "repo",
+      "title": "NVIDIA/auto-ontology",
+      "rank": 6,
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars_gained": 5802,
+      "total_stars": 12274,
+      "default_branch_commit": "fc43a82600e18b19d159c52023f54f5572f537ac",
+      "why_notable": "+5,802 stars on GitHub Trending weekly; represents grounded analytics in this snapshot.",
+      "theme_ids": [
+        "grounded-analytics"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "NVIDIA Auto Ontology",
+      "unique_caveat": "The README says the project is currently not accepting external contributions.",
+      "enrichment": null,
+      "architecture_summary": "Builds an enterprise semantic/ontology layer from metadata, connecting business meaning, entities, relationships, lineage and provenance for agentic analytics.",
+      "workflow": "Provides a catalog and ontology over relational sources, natural-language-to-SQL, query validation against certified definitions, and MCP/CLI/API access.",
+      "refs": [
+        "NVIDIA/auto-ontology"
+      ]
+    },
+    {
+      "id": "07-D4Vinci-Scrapling",
+      "kind": "repo",
+      "title": "D4Vinci/Scrapling",
+      "rank": 7,
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "language": "Python",
+      "stars_gained": 4743,
+      "total_stars": 102187,
+      "default_branch_commit": "bb223f2f5fc8f743772751a5ce283ef7851ca6be",
+      "why_notable": "+4,743 stars on GitHub Trending weekly; represents developer tools in this snapshot.",
+      "theme_ids": [
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 7,
+      "spoken_name": "Scrapling",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "Python scraping toolkit aimed at scaling from one-off requests to crawls across modern sites.",
+      "workflow": "README presents a framework spanning request handling and crawler workflows; detailed component design is not summarized here.",
+      "refs": [
+        "D4Vinci/Scrapling"
+      ]
+    },
+    {
+      "id": "08-vercel-labs-agent-browser",
+      "kind": "repo",
+      "title": "vercel-labs/agent-browser",
+      "rank": 8,
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars_gained": 4601,
+      "total_stars": 50358,
+      "default_branch_commit": "1cc19526f3641c8543d55aa6700e7c55b37ac356",
+      "why_notable": "+4,601 stars on GitHub Trending weekly; represents agent interfaces in this snapshot.",
+      "theme_ids": [
+        "agent-interfaces",
+        "developer-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "agent-browser",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "Native Rust CLI gives agents a persistent browser controlled through compact accessibility snapshots and element refs, followed by explicit re-observation after actions.",
+      "workflow": "Shell-driven loop: open, snapshot, act on a ref, inspect the result; stale refs require a fresh snapshot.",
+      "refs": [
+        "vercel-labs/agent-browser"
+      ]
+    },
+    {
+      "id": "09-zed-industries-zed",
+      "kind": "repo",
+      "title": "zed-industries/zed",
+      "rank": 9,
+      "url": "https://github.com/zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "language": "Rust",
+      "stars_gained": 2339,
+      "total_stars": 94859,
+      "default_branch_commit": "27bbbc1cc480a7500cec122f120e796d1fb8500c",
+      "why_notable": "+2,339 stars on GitHub Trending weekly; represents developer tools in this snapshot.",
+      "theme_ids": [
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "standard",
+      "narration_priority": 9,
+      "spoken_name": "Zed",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "High-performance collaborative code editor built in Rust, an established editor project rather than a new agent-only package.",
+      "workflow": "N/A - not available from GitHub README review in this snapshot.",
+      "refs": [
+        "zed-industries/zed"
+      ]
+    },
+    {
+      "id": "10-google-skills",
+      "kind": "repo",
+      "title": "google/skills",
+      "rank": 10,
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "stars_gained": 1933,
+      "total_stars": 24080,
+      "default_branch_commit": "85f227ea6a8f347d34b76039d826c446f891f75d",
+      "why_notable": "+1,933 stars on GitHub Trending weekly; represents agent skills in this snapshot.",
+      "theme_ids": [
+        "agent-skills"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 10,
+      "spoken_name": "Google Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "Google-maintained skill examples for its products and technologies, extending the cross-vendor agent-skill packaging pattern.",
+      "workflow": "N/A - not available from GitHub README review in this snapshot.",
+      "refs": [
+        "google/skills"
+      ]
+    },
+    {
+      "id": "11-google-deepmind-mujoco",
+      "kind": "repo",
+      "title": "google-deepmind/mujoco",
+      "rank": 11,
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars_gained": 1671,
+      "total_stars": 17777,
+      "default_branch_commit": "4df7b828db60bfc4740ca41807b19221fb25c977",
+      "why_notable": "+1,671 stars on GitHub Trending weekly; represents simulation in this snapshot.",
+      "theme_ids": [
+        "simulation"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "standard",
+      "narration_priority": 11,
+      "spoken_name": "MuJoCo",
+      "unique_caveat": "",
+      "enrichment": null,
+      "architecture_summary": "Physics simulator for multi-joint dynamics and contact, a notable non-agent outlier in a week dominated by agent-facing tools.",
+      "workflow": "N/A - not available from GitHub README review in this snapshot.",
+      "refs": [
+        "google-deepmind/mujoco"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Packaged agent skills:** Reusable skill directories are a major signal: anthropics/skills, mattpocock/skills and google/skills publish task-specific guidance/resources rather than another general-purpose model.\n- **Agents gain browser and desktop controls:** vercel-labs/agent-browser and vercel-labs/agent-desktop share a shell-driven observe-act-observe model using accessibility references instead of opaque pixel-only actions.\n- **Grounding agents in enterprise data:** NVIDIA/auto-ontology emphasizes semantic context, lineage and deterministic query validation to make agentic analytics more explainable.\n- **Security workflows for coding agents:** cloudflare/security-audit-skill treats audit output as a verified pipeline with coverage tracking and machine-readable findings.\n- **Personalized agent applications:** milind-soni/OpenMausBot packages multiple agents into a local-first chat product, each with an individual model, apps and computer.\n- **Established developer tools remain in the mix:** D4Vinci/Scrapling, zed-industries/zed and agent-browser show interest in scraping, coding and browser automation infrastructure, not just agent prompts.\n- **A non-agent outlier:** google-deepmind/mujoco is the lone physics-simulation entry among the 11 listed repositories, a useful counterpoint to the agent-heavy cluster.\n- **Languages:** Python 4, Rust 3, TypeScript 1, JavaScript 1, Shell 1 and C++ 1 across the 11 listed repos.",
+      "themes": [
+        {
+          "id": "agent-skills",
+          "title": "Packaged agent skills",
+          "content": "Reusable skill directories are a major signal: anthropics/skills, mattpocock/skills and google/skills publish task-specific guidance/resources rather than another general-purpose model.",
+          "repository_ids": [
+            "05-anthropics-skills",
+            "03-mattpocock-skills",
+            "10-google-skills"
+          ]
+        },
+        {
+          "id": "agent-interfaces",
+          "title": "Agents gain browser and desktop controls",
+          "content": "vercel-labs/agent-browser and vercel-labs/agent-desktop share a shell-driven observe-act-observe model using accessibility references instead of opaque pixel-only actions.",
+          "repository_ids": [
+            "08-vercel-labs-agent-browser",
+            "04-vercel-labs-agent-desktop"
+          ]
+        },
+        {
+          "id": "grounded-analytics",
+          "title": "Grounding agents in enterprise data",
+          "content": "NVIDIA/auto-ontology emphasizes semantic context, lineage and deterministic query validation to make agentic analytics more explainable.",
+          "repository_ids": [
+            "06-NVIDIA-auto-ontology"
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Security workflows for coding agents",
+          "content": "cloudflare/security-audit-skill treats audit output as a verified pipeline with coverage tracking and machine-readable findings.",
+          "repository_ids": [
+            "01-cloudflare-security-audit-skill"
+          ]
+        },
+        {
+          "id": "agent-apps",
+          "title": "Personalized agent applications",
+          "content": "milind-soni/OpenMausBot packages multiple agents into a local-first chat product, each with an individual model, apps and computer.",
+          "repository_ids": [
+            "02-milind-soni-OpenMausBot"
+          ]
+        },
+        {
+          "id": "developer-tools",
+          "title": "Established developer tools remain in the mix",
+          "content": "D4Vinci/Scrapling, zed-industries/zed and agent-browser show interest in scraping, coding and browser automation infrastructure, not just agent prompts.",
+          "repository_ids": [
+            "07-D4Vinci-Scrapling",
+            "09-zed-industries-zed",
+            "08-vercel-labs-agent-browser"
+          ]
+        },
+        {
+          "id": "simulation",
+          "title": "A non-agent outlier",
+          "content": "google-deepmind/mujoco is the lone physics-simulation entry among the 11 listed repositories, a useful counterpoint to the agent-heavy cluster.",
+          "repository_ids": [
+            "11-google-deepmind-mujoco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The most visible shift inside this snapshot is toward packaged, auditable agent capability: skills, controlled computer-use interfaces and verification-oriented workflows, rather than just another agent framework. The strongest practical differentiators are observable actions and grounding—accessibility-tree interactions, independent security checks, and data provenance. MuJoCo and Zed remind us that general-purpose developer and simulation tools still attract substantial interest."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "Primary: https://github.com/trending?since=weekly, captured 2026-11-13 02:36 UTC. Corroboration: GitHub REST repository and default-branch commit lookups where available (first eight repositories); remaining three current default-branch SHAs were checked from GitHub repository-page currentOid metadata. Trending-page stars and languages were cross-checked against those page/API values. GitHub REST began rate-limiting after several repository lookups. Current READMEs consulted for the narration-priority projects: cloudflare/security-audit-skill, milind-soni/OpenMausBot, mattpocock/skills, vercel-labs/agent-desktop, anthropics/skills, NVIDIA/auto-ontology, D4Vinci/Scrapling and vercel-labs/agent-browser. Weekly star gains come from the matching GitHub Trending view; this report sorts those displayed gains descending. No prior-week comparison is claimed."
+    }
+  ]
+}

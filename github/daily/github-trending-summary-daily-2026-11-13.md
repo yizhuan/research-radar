@@ -4,88 +4,93 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-13 01:41 UTC |
+| Snapshot time (UTC) | 2026-11-13 17:26 UTC |
 | Scope | Daily |
-| Date range | 2026-11-13 (GitHub Trending “Today”); new-repository supplement: 2026-11-11 through 2026-11-13 |
-| Ranking basis | Daily GitHub Trending star gains, with one clearly marked recent-creation supplement |
+| Date range | 2026-11-13 through 2026-11-13 |
+| Ranking basis | Daily Trending star gains, with recent-creation Search additions appended separately |
 
 ## Headline
 
-Agent-oriented software is the strongest signal today: agent-ready web guidance, engineering workflows, security scanning, and desktop agent workspaces all appear in the leaders. The biggest single gain is Meta’s Astryx design system; a newly created neural-rendering project adds a smaller, separate launch signal.
+Coding-agent infrastructure led today’s page: Google Chrome’s web-guidance source gained 1,875 stars, followed by Sure and OpenAI Codex Security. The mix also includes a personal-finance app, encrypted networking, monitoring, and new graphics/runtime experiments.
 
 ## Top Repositories
 
-1. **[meta/astryx](https://github.com/meta/astryx) - An open-source, customizable design system built for people and coding agents.**
+1. **[GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)  - Source and tooling for Modern Web Guidance, a CLI-delivered set of expert-curated web-platform skills for coding agents.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,830 | **Total stars:** 26,589 | **Why notable:** The largest daily gain in the captured Trending view, and evidence that agent-aware UI tooling is getting attention alongside agent frameworks.
+  **Language:** TypeScript | **Stars gained in window:** +1,875 | **Total stars:** 4,496 | **Why notable:** The day’s largest star gain, with an unusually concrete agent workflow: search, retrieve, and scan for legacy web patterns using compact, evaluated guidance.
 
-2. **[we-promise/sure](https://github.com/we-promise/sure) - An open-source personal finance app.**
+2. **[we-promise/sure](https://github.com/we-promise/sure)  - A self-hostable personal-finance and wealth-management application with browser, desktop, mobile, API, and agent access.**
 
-  **Language:** Ruby | **Stars gained in window:** +967 | **Total stars:** 13,942 | **Why notable:** The strongest non-agent consumer application in the daily list, broadening the snapshot beyond AI developer tooling.
+  **Language:** Ruby | **Stars gained in window:** +944 | **Total stars:** 14,531 | **Why notable:** Second-highest daily gain, showing strong interest outside the AI tooling cluster in a full-featured, community-maintained personal-finance app.
 
-3. **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents.**
+3. **[openai/codex-security](https://github.com/openai/codex-security)  - OpenAI’s Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities.**
 
-  **Language:** JavaScript | **Stars gained in window:** +816 | **Total stars:** 116,690 | **Why notable:** Strong momentum for packaged engineering workflows that span specification, implementation, testing, review, and release.
+  **Language:** TypeScript | **Stars gained in window:** +754 | **Total stars:** 12,964 | **Why notable:** A major daily surge at the intersection of coding agents and application security; the README documents CLI scans, policy drafts, exports, CI workflows, and findings storage.
 
-4. **[GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src) - Keeps coding agents current on modern web best practices.**
+4. **[tailscale/tailcat](https://github.com/tailscale/tailcat)  - A netcat-like tool and Go library that sends traffic over Tailscale’s encrypted data plane without its control plane.**
 
-  **Language:** TypeScript | **Stars gained in window:** +739 | **Total stars:** 3,050 | **Why notable:** A high-growth example of delivering curated browser-platform expertise directly to coding agents, with an installable CLI and legacy-pattern scan.
+  **Language:** Go | **Stars gained in window:** +324 | **Total stars:** 9,321 | **Why notable:** A strong infrastructure signal: it packages WireGuard-encrypted peer connections into a lightweight CLI/library, with out-of-band exchange of connection metadata.
 
-5. **[openai/codex-security](https://github.com/openai/codex-security) - Codex Security CLI and TypeScript SDK for finding, validating, and fixing vulnerabilities.**
+5. **[ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)  - An LLM-powered multi-market stock-analysis system combining market data, news, decision dashboards, and scheduled notifications.**
 
-  **Language:** TypeScript | **Stars gained in window:** +643 | **Total stars:** 12,447 | **Why notable:** Security is moving into agent workflows, with scans, evidence-backed findings, patching, verification, and CI integrations in one toolchain.
+  **Language:** Python | **Stars gained in window:** +272 | **Total stars:** 71,426 | **Why notable:** A sizable daily gain for a domain-specific agent application; its README details multi-market data sources, analysis workflows, web UI, and scheduled delivery.
 
-6. **[Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) - A multi-harness coding-agent interface spanning terminal, app, IDE, phone, and browser.**
+6. **[Likely7/Veyra-NRVideo](https://github.com/Likely7/Veyra-NRVideo)  - A Windows video and capture enhancement tool described as combining AI super-resolution, DLSS 5 enhancement, and frame generation.**
 
-  **Language:** Python | **Stars gained in window:** +415 | **Total stars:** 69,321 | **Why notable:** Its daily momentum reflects demand for a single surface across multiple coding-agent harnesses and models.
+  **Language:** C++ | **Stars gained in window:** +245 | **Total stars:** 1,512 | **Why notable:** A distinct desktop media/rendering counterpoint to the agent-heavy list, with 245 stars gained today.
 
-7. **[CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) - A self-hostable workspace for AI coworkers with their own browser, files, and tools.**
+7. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review)  - A hybrid code-review tool combining deterministic pipelines and LLM agents, with multi-language rules and line-level comments.**
 
-  **Language:** TypeScript | **Stars gained in window:** +298 | **Total stars:** 11,639 | **Why notable:** It foregrounds supervised computer use: actions are planned, recorded, and can wait for human approval.
+  **Language:** Go | **Stars gained in window:** +206 | **Total stars:** 50,386 | **Why notable:** Its hybrid design makes it a notable code-quality pattern: deterministic checks handle repeatable rules while an LLM agent contributes review context.
 
-8. **[pookjw/HermesEnabler](https://github.com/pookjw/HermesEnabler) - Enables Hermès watch faces on Apple Watch devices.**
+8. **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)  - Chrome DevTools exposed to coding agents through the Model Context Protocol.**
 
-  **Language:** Objective-C | **Stars gained in window:** +218 | **Total stars:** 1,548 | **Why notable:** A focused Apple Watch customization project stands out as a non-AI hardware-side spike in an otherwise agent-heavy snapshot.
+  **Language:** TypeScript | **Stars gained in window:** +145 | **Total stars:** 55,330 | **Why notable:** Adds a browser-inspection and debugging surface to the agent toolchain, complementing guidance and security projects in today’s list.
 
-9. **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) - LLM inference in C and C++.**
+9. **[backnotprop/plannotator](https://github.com/backnotprop/plannotator)  - A workspace for annotating, reviewing, sharing, and feeding plan/code feedback back to coding agents.**
 
-  **Language:** C++ | **Stars gained in window:** +176 | **Total stars:** 134,577 | **Why notable:** It remains a major local-inference anchor, providing a contrast to the day's newer agent-facing application tooling.
+  **Language:** TypeScript | **Stars gained in window:** +100 | **Total stars:** 10,352 | **Why notable:** Represents human-in-the-loop agent work: feedback is attached to plans and code rather than left in a disconnected chat.
 
-10. **[QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) - An open-source AI coding agent that runs in the terminal.**
+10. **[block/buzz](https://github.com/block/buzz)  - A Rust-based hive-mind communication platform.**
 
-  **Language:** TypeScript | **Stars gained in window:** +151 | **Total stars:** 29,831 | **Why notable:** A mature terminal coding agent is still gaining attention as developers compare agent ecosystems and workflows.
+  **Language:** Rust | **Stars gained in window:** +95 | **Total stars:** 37,233 | **Why notable:** A high-visibility Rust project that broadens the daily list beyond individual developer utilities into collaborative communication.
 
-11. **[nvm-sh/nvm](https://github.com/nvm-sh/nvm) - A POSIX-compliant script for managing multiple Node.js versions.**
+11. **[louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)  - A self-hosted monitoring tool.**
 
-  **Language:** Shell | **Stars gained in window:** +63 | **Total stars:** 96,019 | **Why notable:** This established developer utility is a useful counterpoint to the agent-heavy leaders.
+  **Language:** JavaScript | **Stars gained in window:** +61 | **Total stars:** 93,736 | **Why notable:** An established infrastructure project still appearing in today’s Trending results, a useful counterpoint to newer agent-focused repos.
 
-12. **[nodejs/node](https://github.com/nodejs/node) - The JavaScript runtime.**
+12. **[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)  - Claude Code skills for equity analysis, charting, economic calendars, screening, and trading-strategy development.**
 
-  **Language:** JavaScript | **Stars gained in window:** +62 | **Total stars:** 123,603 | **Why notable:** Core runtime infrastructure continues to register daily interest alongside newer AI tooling.
+  **Language:** Python | **Stars gained in window:** +60 | **Total stars:** 4,008 | **Why notable:** A smaller but clear example of specialized task skills extending a coding-agent interface into a domain workflow.
 
-13. **[ashhart/TensorFold](https://github.com/ashhart/TensorFold) - An LLM inference engine for Metal, CUDA, and Vulkan.**
+13. **[apex-compute/ANR](https://github.com/apex-compute/ANR)  - Apex Neural Rendering: frame-generation tooling, with super-resolution and ray-reconstruction components also announced.**
 
-  **Language:** Zig | **Stars gained in window:** +54 | **Total stars:** 1,947 | **Why notable:** A cross-accelerator inference engine puts Zig and hardware-portable local inference on today's list.
+  **Language:** C++ | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 1,340 | **Why notable:** A freshly created graphics repository found in GitHub Search, adding a new performance/rendering signal beyond the Trending page.
 
-14. **[apex-compute/ANR](https://github.com/apex-compute/ANR) - Apex Neural Rendering, with frame generation and a frame-capture comparison tool.**
+14. **[deepseek-ai/chat-demo](https://github.com/deepseek-ai/chat-demo)  - A static TypeScript chat client that calls the configured DeepSeek API directly from the browser, without an application backend.**
 
-  **Language:** C++ | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 982 | **Why notable:** A GitHub Search query found this newly created, recently pushed project among repositories with more than 100 stars; it is a fresh-creation signal, not part of the daily Trending gain ranking. **Caveat:** The README says the main renderer's source code is “coming soon”; the currently available source is the nr-record comparison utility.
+  **Language:** TypeScript | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 473 | **Why notable:** Created on November 12 and pushed on November 13; it is a fresh, first-party lightweight AI application, not yet represented in the daily Trending view.
+
+15. **[makepad/relax](https://github.com/makepad/relax)  - An experimental Rust JIT/runtime that runs Cargo packages from source, compiles functions on demand, and patches edits into a running process.**
+
+  **Language:** Rust | **Stars gained in window:** N/A - not available from GitHub | **Total stars:** 442 | **Why notable:** Created November 11 and actively pushed today; it proposes a different Rust development loop focused on live-edit iteration rather than production builds.
 
 ## Trending Technologies and Themes
 
-- **Agent-ready engineering knowledge:** GoogleChrome/modern-web-guidance-src distributes expert web guidance to coding agents, while addyosmani/agent-skills packages workflows across the development lifecycle.
-- **Agents moving into security and supervised workspaces:** openai/codex-security combines scanning, validation, remediation, and verification; CopilotKit/OpenBot emphasizes self-hosting, action records, and approval; free-claude-code focuses on cross-harness access.
-- **Agent-aware interface systems:** meta/astryx pairs a customizable React design system with agent-oriented docs and CLI tooling.
-- **Local inference and acceleration:** ggml-org/llama.cpp and ashhart/TensorFold represent portable inference, spanning C/C++ and Zig with GPU backends.
-- **Languages:** TypeScript leads the daily Trending set (5 repositories); JavaScript appears in 2. The remaining entries span C++, Shell, Objective-C, Ruby, Python, and Zig. The recently created ANR supplement is C++.
-- **Counter-signals:** we-promise/sure, pookjw/HermesEnabler, nvm-sh/nvm, and nodejs/node show that finance, device customization, and foundational developer infrastructure also drew attention.
+- **Coding-agent context and human oversight:** Several projects shape what agents know or how people supervise them: Modern Web Guidance adds curated, token-efficient browser expertise; Plannotator makes plans and feedback reviewable; Chrome DevTools MCP supplies browser tooling; domain projects package specialized workflows. Supporting repositories: GoogleChrome/modern-web-guidance-src, ZhuLinsen/daily_stock_analysis, ChromeDevTools/chrome-devtools-mcp, backnotprop/plannotator, tradermonty/claude-trading-skills.
+- **Agent-enabled code quality and security:** Security is treated as part of the agent workflow, not only as a post-hoc scanner: Codex Security documents finding validation, policy, and export flows, while Alibaba’s review tool combines deterministic checks with an LLM reviewer. Supporting repositories: openai/codex-security, alibaba/open-code-review, ChromeDevTools/chrome-devtools-mcp.
+- **Useful, domain-specific applications:** The list also rewards complete applications: community personal finance, multi-market analysis, a communication platform, and trader-focused agent skills. This prevents reading today’s surge as an AI-infrastructure-only story. Supporting repositories: we-promise/sure, ZhuLinsen/daily_stock_analysis, block/buzz, tradermonty/claude-trading-skills.
+- **Self-hosting, connectivity, and operational tools:** Tailcat emphasizes encrypted, control-plane-independent connectivity; Uptime Kuma remains a self-hosted monitoring staple, and Buzz adds a Rust communication platform. Supporting repositories: tailscale/tailcat, block/buzz, louislam/uptime-kuma.
+- **Native performance and graphics experimentation:** Graphics enhancement and live compilation show an adjacent performance-focused current: Veyra and ANR target rendering/frame generation, while Relax experiments with a Rust JIT for shorter edit-run loops. The newly created ANR and Relax entries are Search additions, not Trending-ranked daily gain data. Supporting repositories: Likely7/Veyra-NRVideo, apex-compute/ANR, makepad/relax.
+- **Browser-first AI interfaces:** DeepSeek’s new static chat demo sends requests directly from the browser to its configured API, illustrating a deliberately thin client architecture. Supporting repositories: deepseek-ai/chat-demo.
+- **Languages:** TypeScript (5 of 15), Go (2), Python (2), Rust (2), C++ (2), Ruby (1), and JavaScript (1). This count includes the three supplemental recent-creation Search results.
 
 ## Takeaway
 
-Today’s strongest through-line is the operationalization of coding agents: better domain knowledge, repeatable engineering skills, security review, and computer-use workspaces. At the same time, local inference remains represented, and the list is not exclusively AI—an open finance app and established developer tools also gained traction. Star gains are a one-day platform signal, not a measure of software quality or sustained adoption.
+The clearest shared trend is making agents more usable and accountable through curated context, security checks, browser tooling, and human review. At the same time, Sure’s momentum and the continued presence of self-hosted infrastructure show that practical applications remain part of the story. Newly created Search discoveries are listed separately because GitHub does not provide their daily star gains.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending repositories, daily](https://github.com/trending?since=daily), captured 2026-11-13 01:41 UTC.
-- **Corroboration:** GitHub REST repository and default-branch endpoints for all listed repositories; GitHub Search API query [`created:2026-11-11..2026-11-13 stars:>100`](https://api.github.com/search/repositories?q=created%3A2026-11-11..2026-11-13%20stars%3A%3E100&sort=stars&order=desc&per_page=30) supplied the ANR fresh-creation supplement. Current totals and commit SHAs are API values; Trending star gains are the values shown in the captured daily view, so totals can differ slightly as stars change.
-- **Method note:** Daily Trending entries are ordered by the captured “stars today” values; the last entry is a separately labeled recent-creation supplement and has no daily gain figure. Forks and list-only repositories were excluded. No prior-window data was collected, so no Notable Shifts comparison is claimed.
+- **Primary source:** https://github.com/trending?since=daily
+- **Corroboration:** GitHub REST API repository and default-branch commit endpoints for each listed repository; GitHub Search API `created:2026-11-11..2026-11-13 stars:>50` and `pushed:2026-11-12..2026-11-13 stars:>100` for recent-activity candidates.
+- **Method note:** Daily star gains are taken from the matching GitHub Trending view and corroborated against live GitHub REST repository data. The three Search additions were created during the last two days and actively pushed; GitHub does not expose their daily star deltas, so these are marked unavailable and placed after the Trending-ranked list. No prior-window evidence was gathered, so no comparison claim is made.

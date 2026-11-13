@@ -5,38 +5,556 @@
   "date": "2026-11-13",
   "title": "GitHub Trending Summary - Daily - 2026-11-13",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-13.md",
-  "entry_count": 14,
+  "entry_count": 15,
   "entry_noun": "repositories",
-  "ranking_basis": "Daily GitHub Trending star gains for the first 13 entries; one separately identified recent-creation supplement is appended.",
-  "ranking_explanation": "The first 13 repositories are ordered by the 'stars today' values captured from GitHub Trending on 2026-11-13 at 01:41 UTC. apex-compute/ANR was found via GitHub Search (created 2026-11-11, 982 current stars) and has no daily star-gain value, so it is appended rather than interleaved.",
-  "global_caveat": "Daily star gains are a short-window popularity signal, not a quality or sustained-adoption measure. Current total stars and default-branch commits were corroborated via GitHub REST API and may move after the snapshot.",
+  "ranking_basis": "Daily GitHub Trending star gains for 12 entries; 3 GitHub Search recent-creation additions appended with daily gains unavailable.",
+  "ranking_explanation": "The twelve repositories visible on GitHub Trending?since=daily are sorted by the page’s “stars today” values. Three newly created and recently pushed repositories discovered by GitHub Search are included as a separately labeled appendix tier, not interleaved because their daily star deltas are unavailable.",
+  "global_caveat": "Trending stars and repository metadata are live values that can change after capture. Search additions are recent-creation signals, not measured daily star momentum; no prior-window evidence was used for a shift claim.",
   "themes": [
-    {"id": "agent-engineering-knowledge", "title": "Agent-ready engineering knowledge", "content": "Curated web expertise and packaged engineering workflows are being delivered directly into coding-agent contexts.", "supporting_repository_ids": ["01-googlechrome-modern-web-guidance-src", "03-addyosmani-agent-skills"]},
-    {"id": "agent-security-workspaces", "title": "Security and supervised agent workspaces", "content": "Agent workflows extend into vulnerability handling and computer-use workspaces with action history and approval controls.", "supporting_repository_ids": ["05-openai-codex-security", "06-alishahryar1-free-claude-code", "07-copilotkit-openbot"]},
-    {"id": "agent-aware-interface-systems", "title": "Agent-aware interface systems", "content": "Design-system tooling is positioning documentation and developer workflows for both people and coding agents.", "supporting_repository_ids": ["01-meta-astryx"]},
-    {"id": "local-inference-acceleration", "title": "Local inference and acceleration", "content": "Portable LLM inference spans mature C/C++ foundations and a newer Zig engine targeting multiple GPU APIs.", "supporting_repository_ids": ["09-ggml-org-llama-cpp", "13-ashhart-tensorfold"]},
-    {"id": "non-ai-and-core-infrastructure", "title": "Non-AI applications and core developer infrastructure", "content": "Personal finance, device customization, and established runtime/version-management utilities broaden the daily signal.", "supporting_repository_ids": ["02-we-promise-sure", "08-pookjw-hermesenabler", "11-nvm-sh-nvm", "12-nodejs-node"]},
-    {"id": "neural-rendering", "title": "Neural rendering (fresh-creation supplement)", "content": "A recently created neural-rendering project drew search visibility, but its main renderer source is not yet published according to its README.", "supporting_repository_ids": ["14-apex-compute-anr"]}
+    {
+      "id": "agent-context",
+      "name": "Coding-agent context and human oversight",
+      "supporting_repository_ids": [
+        "01-modern-web-guidance",
+        "05-daily-stock-analysis",
+        "08-chrome-devtools-mcp",
+        "09-plannotator",
+        "12-claude-trading-skills"
+      ],
+      "content": "Several projects shape what agents know or how people supervise them: Modern Web Guidance adds curated, token-efficient browser expertise; Plannotator makes plans and feedback reviewable; Chrome DevTools MCP supplies browser tooling; domain projects package specialized workflows."
+    },
+    {
+      "id": "agent-security",
+      "name": "Agent-enabled code quality and security",
+      "supporting_repository_ids": [
+        "03-codex-security",
+        "07-open-code-review",
+        "08-chrome-devtools-mcp"
+      ],
+      "content": "Security is treated as part of the agent workflow, not only as a post-hoc scanner: Codex Security documents finding validation, policy, and export flows, while Alibaba’s review tool combines deterministic checks with an LLM reviewer."
+    },
+    {
+      "id": "consumer-apps",
+      "name": "Useful, domain-specific applications",
+      "supporting_repository_ids": [
+        "02-sure",
+        "05-daily-stock-analysis",
+        "10-buzz",
+        "12-claude-trading-skills"
+      ],
+      "content": "The list also rewards complete applications: community personal finance, multi-market analysis, a communication platform, and trader-focused agent skills. This prevents reading today’s surge as an AI-infrastructure-only story."
+    },
+    {
+      "id": "secure-infrastructure",
+      "name": "Self-hosting, connectivity, and operational tools",
+      "supporting_repository_ids": [
+        "04-tailcat",
+        "10-buzz",
+        "11-uptime-kuma"
+      ],
+      "content": "Tailcat emphasizes encrypted, control-plane-independent connectivity; Uptime Kuma remains a self-hosted monitoring staple, and Buzz adds a Rust communication platform."
+    },
+    {
+      "id": "rendering-performance",
+      "name": "Native performance and graphics experimentation",
+      "supporting_repository_ids": [
+        "06-veyra-nrvideo",
+        "13-anr",
+        "15-relax"
+      ],
+      "content": "Graphics enhancement and live compilation show an adjacent performance-focused current: Veyra and ANR target rendering/frame generation, while Relax experiments with a Rust JIT for shorter edit-run loops. The newly created ANR and Relax entries are Search additions, not Trending-ranked daily gain data."
+    },
+    {
+      "id": "browser-ai-apps",
+      "name": "Browser-first AI interfaces",
+      "supporting_repository_ids": [
+        "14-deepseek-chat-demo"
+      ],
+      "content": "DeepSeek’s new static chat demo sends requests directly from the browser to its configured API, illustrating a deliberately thin client architecture."
+    }
   ],
   "sections": [
-    {"id": "00-snapshot", "kind": "snapshot", "title": "Snapshot", "content": "Snapshot time: 2026-11-13 01:41 UTC. Scope: Daily. GitHub Trending window: 2026-11-13 ('Today'); discovery supplement covers 2026-11-11 through 2026-11-13. Ranking is based on daily Trending gains, with one recent-creation supplement."},
-    {"id": "00-headline", "kind": "headline", "title": "Headline", "content": "Agent-oriented software is the strongest signal today: agent-ready web guidance, engineering workflows, security scanning, and desktop agent workspaces all appear in the leaders. The biggest single gain is Meta’s Astryx design system; a newly created neural-rendering project adds a smaller, separate launch signal."},
-    {"id": "01-meta-astryx", "kind": "repo", "title": "meta/astryx", "rank": 1, "url": "https://github.com/meta/astryx", "description": "An open source design system that's fully customizable and agent ready", "language": "TypeScript", "stars_gained": 1830, "total_stars": 26589, "default_branch_commit": "e155a0143548feab86554c137fb74c52f52b1579", "why_notable": "The largest daily gain in the captured Trending view and evidence that agent-aware UI tooling is gaining attention.", "theme_ids": ["agent-aware-interface-systems"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 1, "spoken_name": "Astryx", "unique_caveat": "The README describes the project as currently in beta.", "enrichment": null, "refs": ["meta/astryx"]},
-    {"id": "02-we-promise-sure", "kind": "repo", "title": "we-promise/sure", "rank": 2, "url": "https://github.com/we-promise/sure", "description": "The personal finance app for everyone (by everyone)", "language": "Ruby", "stars_gained": 967, "total_stars": 13942, "default_branch_commit": "dfe6e87f1868550cedab5870ee71ab4049172c72", "why_notable": "The strongest non-agent consumer application in the daily list, broadening the snapshot beyond AI developer tooling.", "theme_ids": ["non-ai-and-core-infrastructure"], "signal_strength": "lead", "evidence_density": "basic", "narration_priority": 6, "spoken_name": "Sure", "enrichment": null, "refs": ["we-promise/sure"]},
-    {"id": "03-addyosmani-agent-skills", "kind": "repo", "title": "addyosmani/agent-skills", "rank": 3, "url": "https://github.com/addyosmani/agent-skills", "description": "Production-grade engineering skills for AI coding agents.", "language": "JavaScript", "stars_gained": 816, "total_stars": 116690, "default_branch_commit": "301b02b12bff98e4688e6984af6556802322bbde", "why_notable": "Strong momentum for packaged workflows spanning specification, implementation, testing, review, and release.", "theme_ids": ["agent-engineering-knowledge"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 2, "spoken_name": "Addy Osmani Agent Skills", "unique_caveat": "The README notes a portability gap: installing a single skill does not copy the repository-level shared references.", "enrichment": null, "refs": ["addyosmani/agent-skills"]},
-    {"id": "04-googlechrome-modern-web-guidance-src", "kind": "repo", "title": "GoogleChrome/modern-web-guidance-src", "rank": 4, "url": "https://github.com/GoogleChrome/modern-web-guidance-src", "description": "Keep your coding agent up to date with the latest web best practices", "language": "TypeScript", "stars_gained": 739, "total_stars": 3050, "default_branch_commit": "3bb177a6de62b7fd8cd0432c33756e6f3c9ece9d", "why_notable": "A high-growth example of delivering curated browser-platform expertise directly to coding agents via a CLI, including legacy-pattern scanning.", "theme_ids": ["agent-engineering-knowledge"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 3, "spoken_name": "Modern Web Guidance", "unique_caveat": "This is the source repository for the separately distributed Modern Web Guidance product.", "enrichment": null, "refs": ["GoogleChrome/modern-web-guidance-src"]},
-    {"id": "05-openai-codex-security", "kind": "repo", "title": "openai/codex-security", "rank": 5, "url": "https://github.com/openai/codex-security", "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security", "language": "TypeScript", "stars_gained": 643, "total_stars": 12447, "default_branch_commit": "4822a9cbc4c4976b6f81ba5afd50787af923ba91", "why_notable": "Security workflows combine scanning, validation, remediation, verification, and CI integrations.", "theme_ids": ["agent-security-workspaces"], "signal_strength": "lead", "evidence_density": "rich", "narration_priority": 4, "spoken_name": "Codex Security", "unique_caveat": "The README lists supported Node.js and Python version requirements; deployment compatibility should be checked before adoption.", "enrichment": null, "refs": ["openai/codex-security"]},
-    {"id": "06-alishahryar1-free-claude-code", "kind": "repo", "title": "Alishahryar1/free-claude-code", "rank": 6, "url": "https://github.com/Alishahryar1/free-claude-code", "description": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)", "language": "Python", "stars_gained": 415, "total_stars": 69321, "default_branch_commit": "56621010ada15b633d76ab19178764bb3e81bcc5", "why_notable": "Daily momentum reflects interest in a unified surface spanning multiple coding-agent harnesses and models.", "theme_ids": ["agent-security-workspaces"], "signal_strength": "standard", "evidence_density": "basic", "narration_priority": 7, "spoken_name": "Free Claude Code", "unique_caveat": "The repository description's free-token and service-availability claims are maintainer claims, not independently verified here.", "enrichment": null, "refs": ["Alishahryar1/free-claude-code"]},
-    {"id": "07-copilotkit-openbot", "kind": "repo", "title": "CopilotKit/OpenBot", "rank": 7, "url": "https://github.com/CopilotKit/OpenBot", "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.", "language": "TypeScript", "stars_gained": 298, "total_stars": 11639, "default_branch_commit": "486ebbacd6485f346181b886b3ac84b4ccb3387b", "why_notable": "Its self-hostable agent workspace emphasizes action planning, recording, and human approval.", "theme_ids": ["agent-security-workspaces"], "signal_strength": "standard", "evidence_density": "rich", "narration_priority": 5, "spoken_name": "OpenBot", "unique_caveat": "The README labels the business workspace as early access.", "enrichment": null, "refs": ["CopilotKit/OpenBot"]},
-    {"id": "08-pookjw-hermesenabler", "kind": "repo", "title": "pookjw/HermesEnabler", "rank": 8, "url": "https://github.com/pookjw/HermesEnabler", "description": "Enable Hermès Watch Faces on any Apple Watch devices", "language": "Objective-C", "stars_gained": 218, "total_stars": 1548, "default_branch_commit": "3bbe11f1921415db4f319b878d3715869e6bfe15", "why_notable": "A focused Apple Watch customization project stands out as a non-AI hardware-side spike.", "theme_ids": ["non-ai-and-core-infrastructure"], "signal_strength": "standard", "evidence_density": "basic", "narration_priority": 10, "spoken_name": "Hermes Enabler", "enrichment": null, "refs": ["pookjw/HermesEnabler"]},
-    {"id": "09-ggml-org-llama-cpp", "kind": "repo", "title": "ggml-org/llama.cpp", "rank": 9, "url": "https://github.com/ggml-org/llama.cpp", "description": "LLM inference in C/C++", "language": "C++", "stars_gained": 176, "total_stars": 134577, "default_branch_commit": "5676dfbe01e7ebe0387913680eee0ed39bf4a363", "why_notable": "A major local-inference project remains a daily signal and anchors comparison with newer agent-facing tooling.", "theme_ids": ["local-inference-acceleration"], "signal_strength": "standard", "evidence_density": "basic", "narration_priority": 8, "spoken_name": "llama dot cpp", "enrichment": null, "refs": ["ggml-org/llama.cpp"]},
-    {"id": "10-qwenlm-qwen-code", "kind": "repo", "title": "QwenLM/qwen-code", "rank": 10, "url": "https://github.com/QwenLM/qwen-code", "description": "An open-source AI coding agent that lives in your terminal.", "language": "TypeScript", "stars_gained": 151, "total_stars": 29831, "default_branch_commit": "b2b522c2edebd573022da812c0d38a42c7c30217", "why_notable": "A terminal coding agent continues to attract attention amid competition over agent ecosystems and workflows.", "theme_ids": ["agent-security-workspaces"], "signal_strength": "standard", "evidence_density": "basic", "narration_priority": 9, "spoken_name": "Qwen Code", "enrichment": null, "refs": ["QwenLM/qwen-code"]},
-    {"id": "11-nvm-sh-nvm", "kind": "repo", "title": "nvm-sh/nvm", "rank": 11, "url": "https://github.com/nvm-sh/nvm", "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.", "language": "Shell", "stars_gained": 63, "total_stars": 96019, "default_branch_commit": "09e620c401382f4b3d3147333dd64c1e09188fdb", "why_notable": "An established developer utility provides a counterpoint to agent-heavy leaders.", "theme_ids": ["non-ai-and-core-infrastructure"], "signal_strength": "brief", "evidence_density": "basic", "narration_priority": 12, "spoken_name": "N V M", "enrichment": null, "refs": ["nvm-sh/nvm"]},
-    {"id": "12-nodejs-node", "kind": "repo", "title": "nodejs/node", "rank": 12, "url": "https://github.com/nodejs/node", "description": "Node.js JavaScript runtime ✨🐢🚀✨", "language": "JavaScript", "stars_gained": 62, "total_stars": 123603, "default_branch_commit": "7b4c9e30ee15aa5492fa913c9213241a130d47c8", "why_notable": "Core runtime infrastructure continues to register daily attention alongside newer AI tooling.", "theme_ids": ["non-ai-and-core-infrastructure"], "signal_strength": "brief", "evidence_density": "basic", "narration_priority": 13, "spoken_name": "Node dot js", "enrichment": null, "refs": ["nodejs/node"]},
-    {"id": "13-ashhart-tensorfold", "kind": "repo", "title": "ashhart/TensorFold", "rank": 13, "url": "https://github.com/ashhart/TensorFold", "description": "LLM Inference Engine for Metal, CUDA and Vulkan.", "language": "Zig", "stars_gained": 54, "total_stars": 1947, "default_branch_commit": "0fed2e4a5fcc03f109cfaaf8eda10734cce21fb7", "why_notable": "A cross-accelerator inference engine places Zig and multi-GPU-API local inference in the daily set.", "theme_ids": ["local-inference-acceleration"], "signal_strength": "brief", "evidence_density": "basic", "narration_priority": 11, "spoken_name": "TensorFold", "enrichment": null, "refs": ["ashhart/TensorFold"]},
-    {"id": "14-apex-compute-anr", "kind": "repo", "title": "apex-compute/ANR", "rank": 14, "url": "https://github.com/apex-compute/ANR", "description": "Apex Neural Rendering (ANR) by Apex Compute", "language": "C++", "stars_gained": null, "total_stars": 982, "default_branch_commit": "20a5e7731d899eca3a289904929879588448664d", "why_notable": "GitHub Search found this project, created 2026-11-11 and recently pushed, with 982 current stars; it is a separate fresh-creation signal, not a daily Trending gain ranking entry.", "theme_ids": ["neural-rendering"], "signal_strength": "brief", "evidence_density": "rich", "narration_priority": 14, "spoken_name": "Apex Neural Rendering", "unique_caveat": "The README says the main renderer source code is coming soon; currently available source includes the nr-record comparison utility.", "enrichment": null, "refs": ["apex-compute/ANR"]},
-    {"id": "80-trending-technologies-and-themes", "kind": "themes", "title": "Trending Technologies and Themes", "content": "Agent-ready engineering knowledge: GoogleChrome/modern-web-guidance-src and addyosmani/agent-skills. Agent security and supervised workspaces: openai/codex-security, Alishahryar1/free-claude-code, and CopilotKit/OpenBot. Agent-aware interface systems: meta/astryx. Local inference spans ggml-org/llama.cpp and Zig-based ashhart/TensorFold. Language signal: TypeScript leads with five of the thirteen daily Trending repositories; JavaScript appears in two, while the rest are C++, Shell, Objective-C, Ruby, Python, and Zig. Non-AI projects include personal finance, Apple Watch customization, and foundational runtime/version-management tools.", "theme_ids": ["agent-engineering-knowledge", "agent-security-workspaces", "agent-aware-interface-systems", "local-inference-acceleration", "non-ai-and-core-infrastructure", "neural-rendering"]},
-    {"id": "90-takeaway", "kind": "takeaway", "title": "Takeaway", "content": "Today’s strongest through-line is the operationalization of coding agents: better domain knowledge, repeatable engineering skills, security review, and computer-use workspaces. Local inference remains represented, and the list is not exclusively AI. One-day star gains measure short-window attention, not software quality or sustained adoption."},
-    {"id": "95-sources-and-method", "kind": "sources", "title": "Sources and Method", "content": "Primary source: https://github.com/trending?since=daily, captured 2026-11-13 01:41 UTC. Corroboration: GitHub REST repository and default-branch endpoints for all listed repositories; GitHub Search API query created:2026-11-11..2026-11-13 stars:>100 supplied the ANR supplement. Current totals and commit SHAs are API values. Trending gains are values shown in the captured daily view and may differ slightly from later totals. Forks and list-only repositories excluded. No prior-window data was collected; no Notable Shifts section is included."}
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time: 2026-11-13 17:26 UTC. Scope: Daily. Date range: 2026-11-13 through 2026-11-13. Ranking basis: daily Trending star gains, with recent-creation Search additions appended separately."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Coding-agent infrastructure led today’s page: Google Chrome’s web-guidance source gained 1,875 stars, followed by Sure and OpenAI Codex Security. The mix also includes a personal-finance app, encrypted networking, monitoring, and new graphics/runtime experiments."
+    },
+    {
+      "id": "01-modern-web-guidance",
+      "kind": "repo",
+      "title": "GoogleChrome/modern-web-guidance-src",
+      "rank": 1,
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Source and tooling for Modern Web Guidance, a CLI-delivered set of expert-curated web-platform skills for coding agents.",
+      "language": "TypeScript",
+      "stars_gained": 1875,
+      "total_stars": 4496,
+      "default_branch_commit": "119882044e6ce824a168e99d19ffee8f06abe1cc",
+      "why_notable": "The day’s largest star gain, with an unusually concrete agent workflow: search, retrieve, and scan for legacy web patterns using compact, evaluated guidance.",
+      "theme_ids": [
+        "agent-context",
+        "web-platform"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Modern Web Guidance",
+      "unique_caveat": "The trending repository is the source repo; its README points to a separate distribution repository and developer.chrome.com documentation.",
+      "enrichment": null,
+      "refs": [
+        "GoogleChrome/modern-web-guidance-src"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "02-sure",
+      "kind": "repo",
+      "title": "we-promise/sure",
+      "rank": 2,
+      "url": "https://github.com/we-promise/sure",
+      "description": "A self-hostable personal-finance and wealth-management application with browser, desktop, mobile, API, and agent access.",
+      "language": "Ruby",
+      "stars_gained": 944,
+      "total_stars": 14531,
+      "default_branch_commit": "d74ee9f284d293709a99056c32b5ec534ff9f4d7",
+      "why_notable": "Second-highest daily gain, showing strong interest outside the AI tooling cluster in a full-featured, community-maintained personal-finance app.",
+      "theme_ids": [
+        "consumer-apps"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Sure",
+      "unique_caveat": "README identifies it as a community fork of the now-abandoned Maybe Finance project.",
+      "enrichment": null,
+      "refs": [
+        "we-promise/sure"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "03-codex-security",
+      "kind": "repo",
+      "title": "openai/codex-security",
+      "rank": 3,
+      "url": "https://github.com/openai/codex-security",
+      "description": "OpenAI’s Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities.",
+      "language": "TypeScript",
+      "stars_gained": 754,
+      "total_stars": 12964,
+      "default_branch_commit": "f26b669b56a4423abd773c81f6c6c9c2ebadc42a",
+      "why_notable": "A major daily surge at the intersection of coding agents and application security; the README documents CLI scans, policy drafts, exports, CI workflows, and findings storage.",
+      "theme_ids": [
+        "agent-security"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Codex Security",
+      "unique_caveat": "Some documented scanning and provider workflows require API credentials; scan results still need human review.",
+      "enrichment": null,
+      "refs": [
+        "openai/codex-security"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "04-tailcat",
+      "kind": "repo",
+      "title": "tailscale/tailcat",
+      "rank": 4,
+      "url": "https://github.com/tailscale/tailcat",
+      "description": "A netcat-like tool and Go library that sends traffic over Tailscale’s encrypted data plane without its control plane.",
+      "language": "Go",
+      "stars_gained": 324,
+      "total_stars": 9321,
+      "default_branch_commit": "e00cdde6ff787f801361ff85ed085775c775d4c5",
+      "why_notable": "A strong infrastructure signal: it packages WireGuard-encrypted peer connections into a lightweight CLI/library, with out-of-band exchange of connection metadata.",
+      "theme_ids": [
+        "secure-infrastructure"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Tailcat",
+      "unique_caveat": "Direct peer-to-peer connectivity depends on NAT traversal; DERP relay is the fallback, and the browser demo is relay-only today.",
+      "enrichment": null,
+      "refs": [
+        "tailscale/tailcat"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "05-daily-stock-analysis",
+      "kind": "repo",
+      "title": "ZhuLinsen/daily_stock_analysis",
+      "rank": 5,
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "An LLM-powered multi-market stock-analysis system combining market data, news, decision dashboards, and scheduled notifications.",
+      "language": "Python",
+      "stars_gained": 272,
+      "total_stars": 71426,
+      "default_branch_commit": "86d5d1c16f9df46b67dac2a4a17e788ad1bb7e2e",
+      "why_notable": "A sizable daily gain for a domain-specific agent application; its README details multi-market data sources, analysis workflows, web UI, and scheduled delivery.",
+      "theme_ids": [
+        "consumer-apps",
+        "agent-context"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Daily Stock Analysis",
+      "unique_caveat": "README warns that free upstream data sources can be rate-limited or unstable; output quality depends on configured data and model providers.",
+      "enrichment": null,
+      "refs": [
+        "ZhuLinsen/daily_stock_analysis"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "06-veyra-nrvideo",
+      "kind": "repo",
+      "title": "Likely7/Veyra-NRVideo",
+      "rank": 6,
+      "url": "https://github.com/Likely7/Veyra-NRVideo",
+      "description": "A Windows video and capture enhancement tool described as combining AI super-resolution, DLSS 5 enhancement, and frame generation.",
+      "language": "C++",
+      "stars_gained": 245,
+      "total_stars": 1512,
+      "default_branch_commit": "8332c8a8382242096a2699d3ba4dd52ad47bbd74",
+      "why_notable": "A distinct desktop media/rendering counterpoint to the agent-heavy list, with 245 stars gained today.",
+      "theme_ids": [
+        "rendering-performance"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "brief",
+      "narration_priority": 6,
+      "spoken_name": "Veyra NR Video",
+      "unique_caveat": "The GitHub description makes ambitious DLSS 5 and PS5/GTA6 framing claims; Trending/API metadata does not independently verify compatibility or performance.",
+      "enrichment": null,
+      "refs": [
+        "Likely7/Veyra-NRVideo"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "07-open-code-review",
+      "kind": "repo",
+      "title": "alibaba/open-code-review",
+      "rank": 7,
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "A hybrid code-review tool combining deterministic pipelines and LLM agents, with multi-language rules and line-level comments.",
+      "language": "Go",
+      "stars_gained": 206,
+      "total_stars": 50386,
+      "default_branch_commit": "0e9060da66af36a96a15516e76a001953095318b",
+      "why_notable": "Its hybrid design makes it a notable code-quality pattern: deterministic checks handle repeatable rules while an LLM agent contributes review context.",
+      "theme_ids": [
+        "agent-security"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 7,
+      "spoken_name": "Open Code Review",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "alibaba/open-code-review"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "08-chrome-devtools-mcp",
+      "kind": "repo",
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "rank": 8,
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools exposed to coding agents through the Model Context Protocol.",
+      "language": "TypeScript",
+      "stars_gained": 145,
+      "total_stars": 55330,
+      "default_branch_commit": "8ba2ac945ebaf1adb92208c29f3a30e73a920956",
+      "why_notable": "Adds a browser-inspection and debugging surface to the agent toolchain, complementing guidance and security projects in today’s list.",
+      "theme_ids": [
+        "agent-context",
+        "agent-security"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 8,
+      "spoken_name": "Chrome DevTools MCP",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "ChromeDevTools/chrome-devtools-mcp"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "09-plannotator",
+      "kind": "repo",
+      "title": "backnotprop/plannotator",
+      "rank": 9,
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "A workspace for annotating, reviewing, sharing, and feeding plan/code feedback back to coding agents.",
+      "language": "TypeScript",
+      "stars_gained": 100,
+      "total_stars": 10352,
+      "default_branch_commit": "b2eb7d6931106ceea5454f788a00f21a7bf34bf1",
+      "why_notable": "Represents human-in-the-loop agent work: feedback is attached to plans and code rather than left in a disconnected chat.",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 9,
+      "spoken_name": "Plannotator",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "backnotprop/plannotator"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "10-buzz",
+      "kind": "repo",
+      "title": "block/buzz",
+      "rank": 10,
+      "url": "https://github.com/block/buzz",
+      "description": "A Rust-based hive-mind communication platform.",
+      "language": "Rust",
+      "stars_gained": 95,
+      "total_stars": 37233,
+      "default_branch_commit": "642ce4165cc84d67b99f25b05444dbfff456bce7",
+      "why_notable": "A high-visibility Rust project that broadens the daily list beyond individual developer utilities into collaborative communication.",
+      "theme_ids": [
+        "consumer-apps",
+        "secure-infrastructure"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "brief",
+      "narration_priority": 10,
+      "spoken_name": "Buzz",
+      "unique_caveat": "The short repository description is not enough to establish detailed architecture or deployment characteristics.",
+      "enrichment": null,
+      "refs": [
+        "block/buzz"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "11-uptime-kuma",
+      "kind": "repo",
+      "title": "louislam/uptime-kuma",
+      "rank": 11,
+      "url": "https://github.com/louislam/uptime-kuma",
+      "description": "A self-hosted monitoring tool.",
+      "language": "JavaScript",
+      "stars_gained": 61,
+      "total_stars": 93736,
+      "default_branch_commit": "4f6661cfa83a06be0353d5536ef3d9ee0064f534",
+      "why_notable": "An established infrastructure project still appearing in today’s Trending results, a useful counterpoint to newer agent-focused repos.",
+      "theme_ids": [
+        "secure-infrastructure"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "brief",
+      "narration_priority": 11,
+      "spoken_name": "Uptime Kuma",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "louislam/uptime-kuma"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "12-claude-trading-skills",
+      "kind": "repo",
+      "title": "tradermonty/claude-trading-skills",
+      "rank": 12,
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity analysis, charting, economic calendars, screening, and trading-strategy development.",
+      "language": "Python",
+      "stars_gained": 60,
+      "total_stars": 4008,
+      "default_branch_commit": "3bd4b7a2c7329ffb5efef95db2e53d1125b3dc40",
+      "why_notable": "A smaller but clear example of specialized task skills extending a coding-agent interface into a domain workflow.",
+      "theme_ids": [
+        "consumer-apps",
+        "agent-context"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 12,
+      "spoken_name": "Claude Trading Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "tradermonty/claude-trading-skills"
+      ],
+      "ranking_source": "GitHub Trending daily"
+    },
+    {
+      "id": "13-anr",
+      "kind": "repo",
+      "title": "apex-compute/ANR",
+      "rank": 13,
+      "url": "https://github.com/apex-compute/ANR",
+      "description": "Apex Neural Rendering: frame-generation tooling, with super-resolution and ray-reconstruction components also announced.",
+      "language": "C++",
+      "stars_gained": null,
+      "total_stars": 1340,
+      "default_branch_commit": "20a5e7731d899eca3a289904929879588448664d",
+      "why_notable": "A freshly created graphics repository found in GitHub Search, adding a new performance/rendering signal beyond the Trending page.",
+      "theme_ids": [
+        "rendering-performance"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 13,
+      "spoken_name": "Apex Neural Rendering",
+      "unique_caveat": "The README says frame generation is in beta, other components are forthcoming, and source code is not yet available; GitHub Search provides no daily star delta.",
+      "enrichment": null,
+      "refs": [
+        "apex-compute/ANR"
+      ],
+      "ranking_source": "GitHub Search recent-creation supplement; daily gain unavailable"
+    },
+    {
+      "id": "14-deepseek-chat-demo",
+      "kind": "repo",
+      "title": "deepseek-ai/chat-demo",
+      "rank": 14,
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "description": "A static TypeScript chat client that calls the configured DeepSeek API directly from the browser, without an application backend.",
+      "language": "TypeScript",
+      "stars_gained": null,
+      "total_stars": 473,
+      "default_branch_commit": "5d5dd754ebc1948e977ddb880a9eb5aa25f37b4c",
+      "why_notable": "Created on November 12 and pushed on November 13; it is a fresh, first-party lightweight AI application, not yet represented in the daily Trending view.",
+      "theme_ids": [
+        "browser-ai-apps"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 14,
+      "spoken_name": "DeepSeek Chat Demo",
+      "unique_caveat": "The README says the API key and settings are stored in browser localStorage and conversations in IndexedDB; GitHub Search provides no daily star delta.",
+      "enrichment": null,
+      "refs": [
+        "deepseek-ai/chat-demo"
+      ],
+      "ranking_source": "GitHub Search recent-creation supplement; daily gain unavailable"
+    },
+    {
+      "id": "15-relax",
+      "kind": "repo",
+      "title": "makepad/relax",
+      "rank": 15,
+      "url": "https://github.com/makepad/relax",
+      "description": "An experimental Rust JIT/runtime that runs Cargo packages from source, compiles functions on demand, and patches edits into a running process.",
+      "language": "Rust",
+      "stars_gained": null,
+      "total_stars": 442,
+      "default_branch_commit": "493b5b70585b131bf12f486e86eb86edb99bc351",
+      "why_notable": "Created November 11 and actively pushed today; it proposes a different Rust development loop focused on live-edit iteration rather than production builds.",
+      "theme_ids": [
+        "rendering-performance"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 15,
+      "spoken_name": "Relax",
+      "unique_caveat": "README labels the project experimental and says testing has focused mainly on Makepad’s own loop; it also reports slower optimized code than rustc release builds. GitHub Search provides no daily star delta.",
+      "enrichment": null,
+      "refs": [
+        "makepad/relax"
+      ],
+      "ranking_source": "GitHub Search recent-creation supplement; daily gain unavailable"
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- Coding-agent context and human oversight: Several projects shape what agents know or how people supervise them: Modern Web Guidance adds curated, token-efficient browser expertise; Plannotator makes plans and feedback reviewable; Chrome DevTools MCP supplies browser tooling; domain projects package specialized workflows.\n- Agent-enabled code quality and security: Security is treated as part of the agent workflow, not only as a post-hoc scanner: Codex Security documents finding validation, policy, and export flows, while Alibaba’s review tool combines deterministic checks with an LLM reviewer.\n- Useful, domain-specific applications: The list also rewards complete applications: community personal finance, multi-market analysis, a communication platform, and trader-focused agent skills. This prevents reading today’s surge as an AI-infrastructure-only story.\n- Self-hosting, connectivity, and operational tools: Tailcat emphasizes encrypted, control-plane-independent connectivity; Uptime Kuma remains a self-hosted monitoring staple, and Buzz adds a Rust communication platform.\n- Native performance and graphics experimentation: Graphics enhancement and live compilation show an adjacent performance-focused current: Veyra and ANR target rendering/frame generation, while Relax experiments with a Rust JIT for shorter edit-run loops. The newly created ANR and Relax entries are Search additions, not Trending-ranked daily gain data.\n- Browser-first AI interfaces: DeepSeek’s new static chat demo sends requests directly from the browser to its configured API, illustrating a deliberately thin client architecture.\nLanguages: TypeScript (5), Go (2), Python (2), Rust (2), C++ (2), Ruby (1), JavaScript (1).",
+      "themes": [
+        {
+          "id": "agent-context",
+          "name": "Coding-agent context and human oversight",
+          "supporting_repository_ids": [
+            "01-modern-web-guidance",
+            "05-daily-stock-analysis",
+            "08-chrome-devtools-mcp",
+            "09-plannotator",
+            "12-claude-trading-skills"
+          ],
+          "content": "Several projects shape what agents know or how people supervise them: Modern Web Guidance adds curated, token-efficient browser expertise; Plannotator makes plans and feedback reviewable; Chrome DevTools MCP supplies browser tooling; domain projects package specialized workflows."
+        },
+        {
+          "id": "agent-security",
+          "name": "Agent-enabled code quality and security",
+          "supporting_repository_ids": [
+            "03-codex-security",
+            "07-open-code-review",
+            "08-chrome-devtools-mcp"
+          ],
+          "content": "Security is treated as part of the agent workflow, not only as a post-hoc scanner: Codex Security documents finding validation, policy, and export flows, while Alibaba’s review tool combines deterministic checks with an LLM reviewer."
+        },
+        {
+          "id": "consumer-apps",
+          "name": "Useful, domain-specific applications",
+          "supporting_repository_ids": [
+            "02-sure",
+            "05-daily-stock-analysis",
+            "10-buzz",
+            "12-claude-trading-skills"
+          ],
+          "content": "The list also rewards complete applications: community personal finance, multi-market analysis, a communication platform, and trader-focused agent skills. This prevents reading today’s surge as an AI-infrastructure-only story."
+        },
+        {
+          "id": "secure-infrastructure",
+          "name": "Self-hosting, connectivity, and operational tools",
+          "supporting_repository_ids": [
+            "04-tailcat",
+            "10-buzz",
+            "11-uptime-kuma"
+          ],
+          "content": "Tailcat emphasizes encrypted, control-plane-independent connectivity; Uptime Kuma remains a self-hosted monitoring staple, and Buzz adds a Rust communication platform."
+        },
+        {
+          "id": "rendering-performance",
+          "name": "Native performance and graphics experimentation",
+          "supporting_repository_ids": [
+            "06-veyra-nrvideo",
+            "13-anr",
+            "15-relax"
+          ],
+          "content": "Graphics enhancement and live compilation show an adjacent performance-focused current: Veyra and ANR target rendering/frame generation, while Relax experiments with a Rust JIT for shorter edit-run loops. The newly created ANR and Relax entries are Search additions, not Trending-ranked daily gain data."
+        },
+        {
+          "id": "browser-ai-apps",
+          "name": "Browser-first AI interfaces",
+          "supporting_repository_ids": [
+            "14-deepseek-chat-demo"
+          ],
+          "content": "DeepSeek’s new static chat demo sends requests directly from the browser to its configured API, illustrating a deliberately thin client architecture."
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The clearest shared trend is making agents more usable and accountable through curated context, security checks, browser tooling, and human review. At the same time, Sure’s momentum and the continued presence of self-hosted infrastructure show that practical applications remain part of the story. Newly created Search discoveries are listed separately because GitHub does not provide their daily star gains."
+    }
   ]
 }

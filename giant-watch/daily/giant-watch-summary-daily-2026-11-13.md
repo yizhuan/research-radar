@@ -2,47 +2,83 @@
 
 ## Headline
 
-Google DeepMind released Gemini 4 Hydrogen, pushing Gemini 4-class speed and agentic coding down to free users, while a second thread shows European enterprises swapping OpenAI and Anthropic coding assistants for open-weight Chinese models.
+Google released Gemini 4 Hydrogen, a fast Flash-class model that now powers AI Mode in Search and ships alongside an Orchestrator for multi-model agent workflows. The day's throughline is the shift from single flagship models to tiered, agent-oriented product stacks.
 
 ## Top Developments
 
-### 1. Google DeepMind launches Gemini 4 Hydrogen for fast coding and agentic workflows (Google)
-Google DeepMind released Gemini 4 Hydrogen on November 12, positioned for everyday coding and agentic tasks rather than deep reasoning, alongside the existing Carbon and Argon models. It offers four thinking levels, a 1M-token context window, API pricing of $1.50 per million input tokens and $7.50 per million output tokens, and rollout across Gemini app, Google Search, AI Studio, Gemini API, Gemini for Business and Antigravity, with free users able to access it via automatic model selection. Reported scores include 51 on the Artificial Analysis intelligence index at default high thinking (54 at xhigh), and Google also introduced an Orchestrator feature in Antigravity that switches between models within a session.
-Why it matters: Extends the Gemini 4 family's frontier capability to free and mainstream tiers and targets the high-volume coding and agent use cases where model choice is most contested.
-Refs: https://www.dtinsight.com.cn/sys-nd/4380.html, https://www.163.com/dy/article/LBJ6NH2105568W0A.html, https://poloapi.com/poloapi-blog/news-1111302, https://webai.cn/daily/2026-11-13, https://wangyibiao.com/news?date=2026-11-13&category=ai
+### 1. Google launches Gemini 4 Hydrogen and Orchestrator (Google)
+Google DeepMind released Gemini 4 Hydrogen, a Flash-class successor to Gemini 3.8 Flash, positioned as a fast execution engine for everyday coding and agentic workflows alongside the deeper-reasoning Gemini 4 Carbon and Argon. It is rolling out across AI Studio, the Gemini API, Gemini for Business, the Gemini app, Google Search AI Mode and Antigravity, with a new xhigh thinking level and a 1M-token window. Google also introduced Orchestrator in Antigravity, which switches between Carbon and Hydrogen within a session.
+Why it matters: The strongest single release of the day: a consumer-scale model swap that reaches Search for all users, plus a multi-model orchestration layer that reframes how Google sells its model tiers.
+Refs: https://www.techbang.com/posts/134880-gemini-4-hydrogen-launch-coding-agents-search-upgrade, https://www.toutiao.com/article/7707498358361604658/?wid=1794560030285, https://tech.yahoo.com/ai/gemini/articles/google-ai-mode-cuts-hallucinations-140000419.html, https://www.techtimes.vn/en/google-launches-gemini-4-hydrogen-a-faster-ai-model-for-everyday-tasks/
 
-### 2. Revolut replaces OpenAI and Anthropic coding assistants with Zhipu's open GLM models (GLM, OpenAI, Anthropic)
-At the Web Summit in Lisbon, co-founder Paddy Cosgrave said UK fintech Revolut has replaced the OpenAI and Anthropic coding assistants it previously used with Zhipu's open-source GLM series. Revolut's AI infrastructure lead David Abitbol said GLM is now the default coding model for roughly 2,000 engineers, with average coding time down about 60% and AI-related call costs down nearly 90% since rollout. The same reporting cites AFP noting Chinese open models are downloadable and modifiable, in contrast to closed US models, and that Orange, Renault and Siemens have publicly said they use DeepSeek and Qwen models as supplements.
-Why it matters: A concrete enterprise displacement of two leading US vendors by an open-weight Chinese model, with cost and latency figures attached, signaling open models as a real procurement alternative in Europe.
-Refs: http://big5.cctv.com/gate/big5/news.cctv.com/2026/11/13/ARTI8jijUA0t4yQ9Pa5jznM8261113.shtml, https://m.sohu.com/a/1100870593_120578424?scm=10001.325_13-325_13.0.0-1-0-0-0.5_1334&spm=smwp.channel_247.block2_307_epwR4p_1_fd.27.17945263426101hRWwvD, http://news.hndaily.cn/html/2026-11/13/content_58473_20020657.htm, https://epaper.zsnews.cn/epaper/zsrb/paperdate/20261113/part/6/articleid/1.html, https://www.xiancn.com/content/2026-11/13/content_7561615.htm
+### 2. DeepSeek opens its full app capability suite as APIs (DeepSeek)
+DeepSeek released a 'full suite' application API, letting developers enable web search, deep-thinking search, file input, URL reading and safety checks on the V4.1-Flash (deepseek-flash) model across Messages, Responses and Chat Completions, with tool calls and context assembly handled server-side. Search, Fetch, OCR, ASR and TTS are also available as standalone APIs, and DeepSeek open-sourced a demo chat client that can import DeepSeek conversation history. Tool usage is billed on top of token charges.
+Why it matters: Turns DeepSeek's consumer app into a replicable developer stack, a direct bid for agent builders who would otherwise assemble search, parsing and voice from separate vendors.
+Refs: https://api-docs.deepseek.com/zh-cn/news/news261113/, https://api-docs.deepseek.com/news/news261113/, https://api-docs.deepseek.com/updates/, https://tech.ifeng.com/c/8y1oEDGtTEh##, https://www.163.com/dy/article/LBL9F9MT0534A4SC.html
 
-### 3. Anthropic IPO analysis details Claude roadmap, enterprise economics and risks (Anthropic)
-A Gate Square analysis of Anthropic's public prospectus and product progress says Claude Fable 5.2 and Mythos 5.2, released November 9, 2026, are positioned as its strongest models, citing a 49.1% FrontierCode 2.0 score and 64.9% success on a simulated dual-arm robot test. It reports H1 2026 revenue of $16.286 billion, Q2 revenue of $11.555 billion up 1,368% year over year, a first quarterly operating profit of $974 million at about 8.4% margin, and a net loss of $80.748 billion driven mostly by $72.388 billion in non-cash fair-value changes. It also cites plans to list on Nasdaq under ticker ANT around mid-November 2026, with reported valuation discussions of $1.5–2 trillion against a $965 billion post-H轮 valuation, and flags slowing sequential growth (45% in Q3 vs 144% in Q2) and compute constraints.
-Why it matters: Puts hard financial and product numbers around Anthropic's listing and its enterprise-first compute allocation, framing the competitive pressure from OpenAI and cheaper open-weight models.
-Refs: https://web.gate.it/zh/post/status/25584612, https://web.gate.it/zh-tw/post/status/25584612
+### 3. Anthropic ships Claude for Manufacturing with 17 skills (Anthropic)
+Anthropic launched Claude for Manufacturing, a plugin with 17 preconfigured skills for estimators, quality engineers, technicians and buyers, connecting Claude to Autodesk Fusion, Infor, Microsoft 365 and Oracle NetSuite. Skills cover quoting, documenting failed inspections, diagnosing machine faults, sourcing equipment and compiling production data. Infor released a companion plugin the same day, and Anthropic said it is separately developing a Model Hardware Standard research preview and scheduled a technical webinar for November 17.
+Why it matters: A concrete enterprise vertical push that embeds Claude in design, procurement and production records rather than chat, extending Anthropic's agent strategy into factory back-office work.
+Refs: https://dataconomy.com/2026/11/13/anthropic-launches-claude-manufacturing-plugin-with-17-ai/
 
-### 4. DeepSeek Harness preview adds per-session AgentTeam orchestration (DeepSeek)
-DeepSeek Harness v0.2.2-rc.2, a preview release dated November 11, adds a per-session AgentTeam panel showing team members and tasks, named sub-agents and layered collaboration. An accompanying analysis describes a Super-agent design with a Router dispatching tasks to Workers in separate sessions, threads grouped by pull request or chat topic, and an experimental subagent_oar tool that hands tasks to a local Codex or Claude Code install. Cross-session long-term memory is not built in; product team member Cui Tianyi is quoted saying it may be close, and the internal Super-agent prototype reportedly runs only in a small trusted environment.
-Why it matters: Shows a Chinese lab shipping multi-agent orchestration into a developer harness while openly flagging durable cross-session memory as unsolved.
-Refs: https://deepseekv4pro.com/news/deepseek-harness-agent-team-cross-session-memory
+### 4. xAI releases Grok Bot 1.0 with shared team bots (xAI)
+xAI released Grok Bot 1.0, upgrading the beta from a personal assistant to a shareable team bot that can be added to Slack, Microsoft Teams and video meetings, follow multi-person discussions, volunteer for unclaimed work and learn team context over time. xAI lists permission-respecting access, confirmation before sensitive actions and checks before sharing in public channels. Team Bots are offered on Team and Enterprise plans, meeting features on Team, Enterprise and Ultra, with a macOS desktop download.
+Why it matters: Moves xAI's agent product from individual to organizational deployment, putting it in direct competition with workplace-agent offerings from other vendors.
+Refs: https://www.163.com/dy/article/LBJOHDSF051181GK.html
 
-### 5. Moonshot's Kimi K3.1 Pro listed on NVIDIA NIM (Kimi)
-NVIDIA's NIM documentation on Build.NVIDIA.com lists Moonshot AI's Kimi K3.1 Pro, dated November 4, 2026, as a multimodal model accepting text, image and video input with a 1,048,576-token context window and a mixture-of-experts architecture (2.8 trillion total, 104 billion active parameters). Reported benchmarks include 65.7% on Terminal-Bench 4.0 and 92.7% Voxel IoU with tools on a 1,000-file BenchCAD subset, with deployment optimized for vLLM with NVIDIA Dynamo on Blackwell GB300 under Linux. NVIDIA states the model is third-party built, and Moonshot reports reduced exploit capability after training-data filtering while noting residual dual-use cyber capability.
-Why it matters: Puts a Chinese open multimodal model into NVIDIA's enterprise deployment channel with published agentic and CAD benchmarks.
-Refs: https://web.gate.it/zh/news/detail/NVDA/moonshot-ais-kimi-k31-pro-multimodal-model-listed-on-nvidia-nim-25585548
+### 5. Report: about 60 Grok Imagine staff cut as xAI shifts to coding tools and Grok Bot (xAI)
+Citing The Information, reports say SpaceXAI cut most of the research staff on its Grok Imagine video and image tool, affecting roughly 60 team members, with only a small group retained for basic operations. The report ties the reduction to a post-merger restructuring and says SpaceX has prioritized AI coding tools and Grok Bot agent products over other lines, citing the August acquisition of Cursor.
+Why it matters: Signals a deliberate narrowing of xAI's product portfolio toward coding and agent products, with a consumer creative tool left without a dedicated team.
+Refs: https://m.ithome.com/html/1026961.htm
+
+### 6. Sen. Murray presses OpenAI on ChatGPT medical safeguards (OpenAI)
+U.S. Sen. Patty Murray sent a letter to OpenAI CEO Sam Altman demanding answers on how ChatGPT handles medical questions after the death of a Seattle woman whose parents allege in a lawsuit that she reduced her seizure medication based on the chatbot's advice. Murray asked what safeguards were added, whether urgent symptoms are flagged and who reviews responses, with a December 1 deadline. OpenAI said it is working with clinicians and that ChatGPT is not a substitute for medical care.
+Why it matters: Escalates regulatory and reputational pressure on OpenAI over health-advice safety, with a fixed response deadline that will produce the next datapoint.
+Refs: https://www.seattletimes.com/business/murray-presses-openai-on-chatgpt-safeguards-after-seattle-womans-death/?utm_source=RSS&utm_medium=Referral&utm_campaign=RSS_all
+
+### 7. Anthropic's stricter Claude account-ban rules take effect ahead of IPO (Anthropic)
+Anthropic's tightened Claude usage policy took effect, clarifying regional access with three independent restrictions covering user location, entity registration and indirect control by restricted-region entities, plus new limits on fake account networks and influence operations and human-review requirements for high-risk decisions. The report says Anthropic is in its IPO roadshow, that its prospectus discloses 5%-7% of first-nine-month revenue came from customer groups later identified as non-compliant, and that IPO subscription demand is about six times the shares available.
+Why it matters: Shows compliance risk control being used as an IPO-stage credibility tool, with revenue implications for customers who rely on regional workarounds.
+Refs: https://eu.36kr.com/en/p/4067909182477440
+
+### 8. Leaked Claude Fable 5.2 system prompts surface after launch (Anthropic)
+A report says a jailbreak hacker published the full system prompts and tool definitions for Anthropic's newly released Claude Fable 5.2 to GitHub, describing a document of 953,659 characters and 7,832 lines covering 128 built-in tools and 44 skill sets, far larger than the public prompt version Anthropic posted. The report also describes a restricted Mythos 5.2 tier sharing the same base model, training-phase restrictions on accelerator kernel optimization, and default locks on file deletion plus refusals for fund transfers and password entry.
+Why it matters: A high-profile leak that exposes how much of a frontier agent's behavior lives in prompts and tooling, and raises questions about the security posture of agent products.
+Refs: https://eu.36kr.com/en/p/4067967004562304
+
+### 9. Alibaba's Qwen4-Max preview rolls out across Qwen platforms (Qwen)
+Alibaba announced the Qwen4-Max preview on November 11, launching first on the Qwen Token Plan with promotional discounts and connecting to QwenWork, Qoder, the Qwen app and QwenStudio, with a 1M-token context and native text, image and video input. Hands-on tests reported strong front-end delivery and geometric validation in generated code, but some shortcuts on complex 2D pathfinding and undisclosed-spec labeling. Alibaba has not published parameter details or benchmark scores, and a formal Qwen4 release is still pending.
+Why it matters: A preview-stage flagship that shows Alibaba competing on coding and agentic tasks while withholding the benchmarks that would settle comparisons.
+Refs: http://field.10jqka.com.cn/20261113/c681794289.shtml, https://36kr.com/p/4067903659808642, https://readcopilot.ionichina.com/articles/65193
+
+### 10. Meta introduces Muse Ember, its smallest and cheapest model (Meta)
+Meta introduced Muse Ember on November 9, described as its smallest and most efficient model, aimed at repeated agent work such as tool calls, coding subtasks, routing, extraction and long-document parsing, priced at $0.10 per million input tokens and $0.50 per million output tokens on the Meta Model API. Meta claims it matches Claude Haiku 5.5's best Artificial Analysis score at about a third of the cost and leads Haiku and GPT-6 Luna on AutomationBench, Agents' Last Exam and Terminal-Bench 4.0 while trailing on FrontierCode 2.0, all on Meta's own figures.
+Why it matters: Puts Meta into the low-cost agent-model tier on price, though the competitive claims rest entirely on vendor-run comparisons.
+Refs: https://aisocratic.org/news/meta-launches-muse-ember-its-smallest-and-cheapest-model
+
+### 11. Report: Moonshot AI weighs Hong Kong IPO in early 2027 (Kimi)
+Citing Dow Jones and informed sources, a report says Kimi developer Moonshot AI is considering a Hong Kong IPO in early 2027 and is dismantling its overseas holding structure to prepare. The report references earlier Bloomberg coverage that Moonshot completed a final private round at roughly a $50 billion valuation, may raise up to $5 billion and had confidentially filed with the Hong Kong exchange; Moonshot has said it does not comment on market rumors.
+Why it matters: If accurate, it would make Moonshot one of the first Chinese model developers to pursue a public listing, with structural changes already underway.
+Refs: https://www.chaincatcher.com/en/article/2304498
+
+### 12. Gcore and TengriAI explore up to 100 MW AI data center in Kazakhstan (Cross-organization)
+Gcore and TengriAI signed a memorandum of understanding to explore a GPU data center in Kazakhstan with target capacity of up to 100 MW, phased between 2027 and 2029. Under the arrangement TengriAI would handle land, power, permitting and construction while Gcore provides the AI cloud stack, operations and customer demand, with customers able to meter, bill and resell capacity or run isolated workloads.
+Why it matters: A sovereign-compute play for Central Asia, giving regional organizations an alternative to capacity in Europe, the Gulf or East Asia.
+Refs: https://en.yna.co.kr/view/RPR20261112009700353?section=press-release/index, https://m-en.yna.co.kr/view/RPR20261112009700353?section=press-release/index, https://dig.watch/updates/kazakhstan-partners-explore-a-data-centre
 
 ## Cross-Org Themes
 
-- Open-weight Chinese models gaining enterprise and infrastructure traction against closed US vendors
-- Agentic coding and multi-agent orchestration as the focal use case across releases
+- Tiered model portfolios: fast execution models paired with deeper reasoning models and orchestration layers
+- Agent products moving from personal assistants to shared team and enterprise deployments
+- Low-cost, tool-call-heavy models positioned for repeated agent workloads
 
 ## Rumors and Unverified Claims
 
-Anthropic's reported Nasdaq listing under ticker ANT around mid-November 2026, with valuation discussions of $1.5–2 trillion, comes from a single third-party Gate Square analysis of prospectus and media reports and is not independently confirmed in the supplied material.
+Unverified items not selected as events: the reported leak of Claude Fable 5.2's full system prompts and tool definitions, including claims about a restricted Mythos 5.2 tier and training-phase restrictions on accelerator kernel optimization; the reported cut of about 60 Grok Imagine staff and the characterization of SpaceX's product priorities; and the reported Moonshot AI Hong Kong IPO plan for early 2027, including the ~$50 billion valuation and up to $5 billion raise.
 
 ## Takeaway
 
-Watch whether Anthropic's listing and enterprise retention hold up against open-weight substitution, and whether Google's free-tier Hydrogen converts into developer share rather than just benchmark headlines.
+The competitive axis is shifting from raw flagship capability to how cheaply and reliably a model can execute repeated agent tasks inside existing workflows. Watch whether Google's Orchestrator and DeepSeek's app APIs produce independent performance evidence, and whether OpenAI's December 1 response to Sen. Murray yields concrete safeguard changes.
 
 ## Sources and Method
 

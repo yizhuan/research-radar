@@ -5,139 +5,212 @@
   "date": "2026-11-14",
   "title": "Giant Watch Summary - Daily - 2026-11-14",
   "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-11-14.md",
-  "entry_count": 6,
+  "entry_count": 9,
   "entry_noun": "events",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "DeepSeek opens its full app stack as an API, letting developers rebuild the DeepSeek App one-to-one; the day's episode is a shift in competitive focus from model benchmarks toward developer-ecosystem lock-in."
+      "content": "Google's Gemini 4 Hydrogen lands as the default engine of Search and the Gemini app, while DeepSeek opens its full app stack as an API. The day's throughline is distribution: labs are pushing capability into default surfaces and developer plumbing rather than shipping standalone flagship launches."
     },
     {
       "id": "01-event",
       "kind": "event",
       "rank": 1,
-      "event_id": "deepseek-full-stack-api",
-      "title": "DeepSeek opens \"full-stack\" application API, enabling a 1:1 rebuild of the DeepSeek App",
+      "event_id": "ev-google-hydrogen-launch",
+      "title": "Google releases Gemini 4 Hydrogen as its high-speed everyday model",
       "organizations": [
-        "DeepSeek"
+        "Google"
       ],
       "status": "verified",
-      "content": "DeepSeek announced the opening of its full-stack application API, folding the DeepSeek App's interaction features into the existing API so that enabling the relevant parameters lets the server handle tool calls and context assembly automatically. The V4.1-Flash model (deepseek-flash) supports web search, deep-thinking search, file input, link reading and model safety across the Messages, Responses and Chat Completions interfaces. Underlying capabilities including Search, Fetch, OCR, ASR and TTS are also available as standalone interfaces, and DeepSeek open-sourced a lightweight front-end demo that can import chat history. Beyond token fees, tool calls are billed separately, with text/image search and web fetch at 5 yuan per thousand calls, OCR at 1.5 yuan per thousand pages, ASR at 0.39 yuan per hour and TTS at 1.5 yuan per ten thousand characters, with ASR and TTS at a limited-time 50% discount.",
-      "significance": "The most consequential event of the day: it moves competition from model benchmark scores toward developer onboarding cost and ecosystem completeness, raising the switching cost for developers who build on DeepSeek's bundled components.",
+      "content": "Google DeepMind announced Gemini 4 Hydrogen on November 12, 2026, positioning it as the fast, cost-efficient member of the Gemini 4 family after Argon and Carbon and the replacement for Gemini 3.8 Flash. It ships across Google AI Studio, the Gemini API, Google Antigravity, the Gemini app, Workspace Sheets and global Google Search, where it becomes the default model for AI Mode and handles harder AI Overviews queries. Reported specs include a one-million-token context window, four thinking levels (low, medium, high default, xhigh), flat API pricing of $1.50 per million input and $7.50 per million output tokens, and an Artificial Analysis intelligence index of 51 at high and 54 at xhigh. Google also introduced an Antigravity Orchestrator that pairs Carbon for planning with Hydrogen for execution.",
+      "significance": "The strongest single event of the window: a frontier lab put its newest model into the default path of its consumer search product and developer platform simultaneously, rather than staging access to vetted partners.",
       "refs": [
-        "https://awtmt.com/articles/3785916",
-        "https://www.donews.com/news/detail/1/6772103.html",
-        "https://www.techweb.com.cn/it/2026-11-14/2980559.shtml",
-        "https://www.163.com/dy/article/LBLP9AV30511ABV6.html",
-        "https://www.sohu.com/a/1101392359_260616?scm=10001.7746_13-119000.0.0-0-0-0-0.0&spm=smpc.channel_354.block3_32_P7Ovbu_1_fd.45.1794619037199tV5lgRF_7746"
+        "https://tech.udn.com/tech/story/123454/9877986",
+        "https://www.aixploria.com/en/gemini-4-hydrogen/",
+        "https://www.responsibleaifoundation.com/post/google-releases-gemini-4-argon-to-developers"
       ],
       "related_event_ids": [
-        "qwen4-max-preview",
-        "gemini-4-launch"
+        "ev-deepseek-fullstack-api",
+        "ev-qwen4-max-preview"
       ],
-      "transition_hint": "DeepSeek's move bundles application-layer tools into one API; Alibaba's Qwen is meanwhile pushing a flagship model through a restricted preview channel."
+      "transition_hint": "Google's move was about owning the default surface; DeepSeek's was about handing its surface to developers."
     },
     {
       "id": "02-event",
       "kind": "event",
       "rank": 2,
-      "event_id": "gemini-4-launch",
-      "title": "Google DeepMind announces Gemini 4 Carbon, Gemini Decisions API and Gemini 4 Hydrogen",
+      "event_id": "ev-deepseek-fullstack-api",
+      "title": "DeepSeek opens its full app capability stack as an API",
       "organizations": [
-        "Google"
+        "DeepSeek"
       ],
       "status": "verified",
-      "content": "Google DeepMind announced the launch of Gemini 4 Carbon, the Gemini Decisions API and Gemini 4 Hydrogen, and invited developers to share demos, builds and feedback on the new models.",
-      "significance": "A multi-model Gemini 4 release plus a dedicated decisions API signals Google pushing a broad model-and-API lineup into developer hands on the same day.",
+      "content": "On the evening of November 13, DeepSeek announced a 'full-stack' application API that folds the DeepSeek App's interaction features into its existing API: web search, deep-thinking search, file input, URL reading and built-in safety checks, with tool calls and context assembly handled server-side. The V4.1-Flash model (deepseek-flash) supports these across the Messages, Responses and Chat Completions interfaces. Underlying capabilities are also exposed as standalone Search, Fetch, OCR, ASR and TTS endpoints, and DeepSeek open-sourced a lightweight chat front-end demo that can import DeepSeek conversation history. Tool pricing is billed per call, with search and page fetch at 5 yuan per thousand calls, OCR at 1.5 yuan per thousand pages, and speech recognition and synthesis at limited-time 50% discounts.",
+      "significance": "DeepSeek is competing on developer switching costs rather than benchmark scores, bundling search, document parsing, speech and safety into one key and explicitly inviting developers to clone its own app.",
       "refs": [
-        "https://www.bestblogs.dev/en/status/2121296985643008219?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item"
+        "https://www.donews.com/news/detail/1/6772103.html",
+        "https://www.qbitai.com/2026/11/510003.html?ref=aididai.cn",
+        "https://www.163.com/dy/article/LBLP9AV30511ABV6.html",
+        "https://developer.aliyun.com/article/1783545",
+        "https://www.sohu.com/a/1101392359_260616?scm=10001.7746_13-119000.0.0-0-0-0-0.0&spm=smpc.channel_354.block3_32_P7Ovbu_1_fd.45.1794619037199tV5lgRF_7746"
       ],
       "related_event_ids": [
-        "deepseek-full-stack-api",
-        "qwen4-max-preview"
+        "ev-google-hydrogen-launch",
+        "ev-anthropic-claude-platform-aws"
       ],
-      "transition_hint": "Google's release is a broad model-family push; Alibaba's Qwen took a narrower, gated route for its new flagship preview."
+      "transition_hint": "Where DeepSeek opened its own stack, Anthropic took the opposite route and put its stack inside someone else's cloud."
     },
     {
       "id": "03-event",
       "kind": "event",
       "rank": 3,
-      "event_id": "qwen4-max-preview",
-      "title": "Alibaba Cloud releases Qwen4-Max-Preview, limited to Token Plan users until November 25",
+      "event_id": "ev-anthropic-claude-platform-aws",
+      "title": "Anthropic launches Claude Platform on AWS with Anthropic-operated inference",
       "organizations": [
-        "Qwen"
+        "Anthropic"
       ],
       "status": "verified",
-      "content": "Alibaba Cloud launched Qwen4-Max-Preview on November 11, 2026, a flagship multimodal model supporting text, image and video input with deep reasoning. It has a 1M-token context and up to 393,216 output tokens shared between thinking and final answer, with thinking enabled by default and adjustable via reasoning_effort. Access is restricted to Token Plan Personal or Team users through a dedicated base URL until November 25, 2026, with no pay-as-you-go option, and the model is expected to be taken down after the preview. It is compatible with OpenAI Chat Completions, Responses and Anthropic Messages APIs, and from this model onward max_tokens equals max_completion_tokens in Chat Completions.",
-      "significance": "A flagship-tier multimodal release with an unusually restrictive, time-boxed access model, testing whether gated previews can build demand before a wider launch.",
+      "content": "AWS documentation describes Claude Platform on AWS, which gives customers the full Anthropic platform experience — Messages API, Agent Skills, code execution, extended thinking, prompt caching, Files API and beta features — through an AWS account. Unlike Amazon Bedrock, where AWS operates the inference stack, Anthropic operates this service on Anthropic-managed infrastructure; AWS supplies SigV4 or API-key authentication, IAM access control and AWS Marketplace billing. The docs note data may not reside in AWS, inference may route to Anthropic's primary cloud, and an inference_geo parameter can pin inference to a geography. Same-day model and feature access with the first-party API is promised, and Zero Data Retention is available on request.",
+      "significance": "A commercial and architectural split from Bedrock: Anthropic keeps control of the inference stack while renting AWS's identity, billing and enterprise distribution.",
       "refs": [
-        "https://web.gate.it/zh-tw/news/detail/alibaba-cloud-makes-qwen4-max-preview-available-through-token-plan-only-25613051"
+        "https://docs.aws.amazon.com/claude-platform/latest/userguide/welcome.md",
+        "https://code.claude.com/docs/en/feature-availability"
       ],
       "related_event_ids": [
-        "deepseek-full-stack-api",
-        "gemini-4-launch"
+        "ev-deepseek-fullstack-api",
+        "ev-meta-model-api"
       ],
-      "transition_hint": "Qwen's preview is a model-access story; xAI's news is about the economics of selling an always-on agent."
+      "transition_hint": "Cloud distribution was not the only channel being re-plumbed; Meta was reworking its own developer surface."
     },
     {
       "id": "04-event",
       "kind": "event",
       "rank": 4,
-      "event_id": "grok-bot-1-0",
-      "title": "xAI ships Grok Bot 1.0 with team sharing, Slack/Teams and meeting join, as Musk concedes unit costs are unsustainable",
+      "event_id": "ev-meta-model-api",
+      "title": "Meta Model API serves Muse Spark models through OpenAI- and Anthropic-compatible endpoints",
       "organizations": [
-        "xAI"
+        "Meta"
       ],
       "status": "verified",
-      "content": "On November 11, xAI moved Grok Bot to 1.0, adding team-shared bots, Slack and Microsoft Teams integration, joining video meetings via link, proactive claiming of visible work, and improved browser, document and presentation reliability, at unchanged tiers of $30, $100 and $200 per month. The 1.0 release adds approval flows for team knowledge and an admin-controlled shared-login switch. Usage multiples across tiers are 4x, 15x and 50x, with weekly usage pools not shared between seats and pooled with Grok and Cursor. On November 1, Musk acknowledged on X that the cost of serving Grok Bot relative to revenue is unsustainable; SpaceX COO Gwynne Shotwell said on October 20 that Grok Bot had 800,000 paid weekly active users, more than doubling in a month.",
-      "significance": "A product milestone paired with an explicit admission of negative unit economics, making it the clearest test case for whether always-on agent subscriptions can be priced sustainably.",
+      "content": "Third-party documentation of Meta's public-preview Model API describes Meta Superintelligence Labs' Muse Spark models served at api.meta.ai behind a bearer key, with OpenAI-compatible Responses and Chat Completions endpoints plus an Anthropic-compatible Messages endpoint. The latest model, muse-spark-1.3, is listed with a 1,048,576-token context window, text/image/video/PDF input, tool calling, structured output and search grounding, at $1.25 per million input and $4.25 per million output tokens; a discounted 'contributor' ID lets Meta train on prompts and completions. The same sources note Meta retired the separate Llama API at api.llama.com on July 6, 2026, and that open-weight models such as Muse Spark Open and Muse Glimmer are not on the API.",
+      "significance": "Meta's developer surface is now a hosted, OpenAI-shaped API for the Muse line rather than the Llama API, and it deliberately speaks Anthropic's wire format to slot under existing coding agents.",
       "refs": [
-        "https://wenqu123.com/news-detail-2029.html"
+        "https://www.promptfoo.dev/docs/providers/meta/",
+        "https://github.com/enricoros/big-agi/blob/d49af2e0a98c9c1a91f52d63c5afa82ee2de4f93/kb/modules/LLM-metaai-responses.md",
+        "https://github.com/enricoros/big-agi/blob/d49af2e0a98c9c1a91f52d63c5afa82ee2de4f93/.claude/commands/llms/update-models-metaai.md"
       ],
       "related_event_ids": [
-        "deepseek-full-stack-api"
+        "ev-anthropic-claude-platform-aws",
+        "ev-glm-revolut-switch"
       ],
-      "transition_hint": "xAI's story is about agent economics; the OpenAI item is a user backlash over a voice-mode retirement."
+      "transition_hint": "Compatibility with rivals' formats was a theme; the next event shows a customer using an open model to cut a frontier bill."
     },
     {
       "id": "05-event",
       "kind": "event",
       "rank": 5,
-      "event_id": "openai-standard-voice-retirement",
-      "title": "OpenAI users push back on retirement of Standard and Advanced Voice in favor of GPT-Live",
+      "event_id": "ev-glm-revolut-switch",
+      "title": "Revolut shifts 2,000 engineers to self-hosted GLM, cutting AI coding spend about 90%",
       "organizations": [
-        "OpenAI"
+        "GLM"
       ],
-      "status": "verified",
-      "content": "In OpenAI's developer community, paying users are protesting the announced retirement of Standard Voice and Advanced Voice on December 11 in favor of GPT-Live. Complainants say GPT-Live responses are shorter and less useful for sustained complex work such as coding, document revision and research, and raise accessibility concerns, including for users with multiple sclerosis and others who cannot type for extended periods. One user reports canceling a subscription and moving to Claude and Grok; another says the altered Spruce voice also affects the regular Read Aloud function.",
-      "significance": "A visible user-relations and accessibility dispute over a scheduled product retirement, with reported subscription cancellations and migration to competitors.",
+      "status": "unverified",
+      "content": "A conference account reports that Revolut's 2,000 engineers now code on GLM, the open model family from Chinese lab Z.ai, running on Revolut's own GPUs, with the AI coding bill falling about 90% in under a year. Revolut's ops and infrastructure lead described flat billing, a deliberate 256K-token context rather than a million, and a five-second latency threshold, and said the biggest gains came from debugging and clearing Jira and Confluence tickets rather than writing code. A router still sends image tasks to Gemini or GPT, with the frontier described as 'the exception.'",
+      "significance": "A concrete enterprise data point that open-weight models plus owned GPUs can displace frontier subscriptions for routine engineering work, with routing reserved for edge cases.",
       "refs": [
-        "https://community.openai.com/t/keep-standard-voice-mode/1414888/197"
+        "https://www.linkedin.com/posts/genai-works_revolut-wants-to-save-costs-and-claude-is-activity-7527354781561176064-J-Bo"
       ],
       "related_event_ids": [
-        "grok-bot-1-0"
+        "ev-meta-model-api",
+        "ev-glm-pricing-resellers"
       ],
-      "transition_hint": "OpenAI's dispute concerns a consumer interface change; the Anthropic item is a third-party review of its model lineup and safety architecture."
+      "transition_hint": "GLM's enterprise traction sits alongside a parallel commercial story: third-party resellers undercutting Z.ai's own list prices."
     },
     {
       "id": "06-event",
       "kind": "event",
       "rank": 6,
-      "event_id": "anthropic-lineup-review",
-      "title": "Review details Anthropic's November 2026 lineup and dual-envelope Fable/Mythos release",
+      "event_id": "ev-glm-pricing-resellers",
+      "title": "Third-party resellers market GLM-5.3 and GLM-5.2 below Z.ai list price",
       "organizations": [
-        "Anthropic"
+        "GLM"
       ],
-      "status": "unverified",
-      "content": "A third-party review describes Anthropic's November 2026 lineup as Claude Fable 5.2, Opus 5.5, Sonnet 5.5 and Haiku 5.5, all with a 1M-token context window and effort controls, priced from $0.10 to $8 per million input tokens. It states that on November 9, 2026 Anthropic shipped Claude Fable 5.2 and Claude Mythos 5.2 as the same underlying model under two safety envelopes, with Mythos restricted to organizations verified through programs such as the Cyber and Life Sciences tracks. It also describes the Responsible Scaling Policy at version 3.4 and twice-yearly redacted risk reports, most recently in February and August 2026.",
-      "significance": "The most detailed supplied account of Anthropic's current model tiers and its dual-envelope safety deployment, though it comes from a single third-party review rather than a primary announcement.",
+      "status": "verified",
+      "content": "A reseller page advertises OpenAI- and Anthropic-compatible access to Z.ai's GLM-5.3 and GLM-5.2 at tiered rates starting at $0.98 per million input and $3.08 per million output tokens, against a stated Z.ai list price of $1.40 and $4.40, with deeper discounts at higher prepaid tiers. It describes both models as 1M-context, 944K-max-output text models supporting reasoning, tool calling and JSON output, and contrasts pay-as-you-go access with Z.ai's monthly GLM Coding Plan. Separate integration docs list GLM-5.3 as available through gateways and coding-plan subscriptions.",
+      "significance": "GLM's distribution is fragmenting into gateways and resellers with their own pricing, which complicates how Z.ai's list price functions as a market reference.",
       "refs": [
-        "https://medium.com/@piona_log/ai-tool-review-4-anthropic-in-depth-review-features-pros-cons-and-practical-use-cases-ac1440d1f2c1"
+        "https://oceantoken.ai/zh/glm-api",
+        "https://github.com/ngrok/ngrok-docs/blob/ca54a87db71ffbfaeae3bf7d25717601251a3fe7/ai-gateway/providers/z-ai.mdx",
+        "https://github.com/kh0pper/crow/blob/8a7ad1916d1e0043e1d92406e6ef3c24714c7907/docs/guide/zai-coding.md"
       ],
       "related_event_ids": [
-        "qwen4-max-preview"
+        "ev-glm-revolut-switch",
+        "ev-qwen4-max-preview"
+      ],
+      "transition_hint": "Chinese labs were not only discounting; Alibaba was gating its newest flagship behind a paid plan."
+    },
+    {
+      "id": "07-event",
+      "kind": "event",
+      "rank": 7,
+      "event_id": "ev-qwen4-max-preview",
+      "title": "Alibaba opens Qwen4-Max-Preview to Token Plan users only through November 25",
+      "organizations": [
+        "Qwen"
+      ],
+      "status": "verified",
+      "content": "Alibaba Cloud released Qwen4-Max-Preview on November 11, 2026, described as a next-generation flagship multimodal model with text, image and video input and deep reasoning for coding, office productivity, front-end design and complex agent tasks. It offers a one-million-token context and up to 393,216 output tokens shared between thinking and answer, with thinking on by default and reasoning_effort set to low, medium or xhigh. Access is restricted to Token Plan Personal or Team subscribers via a dedicated base URL through November 25, 2026, with no pay-as-you-go option, and the model is expected to be taken down after the preview. From this model, max_tokens equals max_completion_tokens on Chat Completions.",
+      "significance": "A flagship preview deliberately kept off standard pay-as-you-go billing, testing a subscription-gated release model for Alibaba's top tier.",
+      "refs": [
+        "https://web.gate.it/zh-tw/news/detail/alibaba-cloud-makes-qwen4-max-preview-available-through-token-plan-only-25613051",
+        "https://www.promptfoo.dev/docs/providers/alibaba/"
+      ],
+      "related_event_ids": [
+        "ev-glm-pricing-resellers",
+        "ev-google-hydrogen-launch"
+      ],
+      "transition_hint": "Subscription gating also shaped xAI's agent product, which moved out of beta this month."
+    },
+    {
+      "id": "08-event",
+      "kind": "event",
+      "rank": 8,
+      "event_id": "ev-xai-grok-bot-1",
+      "title": "xAI's Grok Bot reaches 1.0 with Team Bots, meeting participation and Mac app integrations",
+      "organizations": [
+        "xAI"
+      ],
+      "status": "verified",
+      "content": "xAI announced Grok Bot 1.0 on November 2, 2026, taking its always-on agents out of beta for Teams and Enterprise plans. Version 1.0 adds Team Bots shared in Slack and Microsoft Teams, Bots that join Google Meet, Zoom and Teams calls, proactive follow-ups, smarter approvals, and improved browser, document and slide work; on November 12 the Mac app gained access to Messages, Mail, Notes, Reminders, Calendar, Location and Contacts. Plans are listed at $30, $100 and $200 a month, with overage billed at token cost. The review notes xAI publishes no benchmarks, reliability figures, model attribution or exact weekly usage limits for Bots, and that earlier reporting said Bots began using Anthropic's Claude behind the scenes in October.",
+      "significance": "xAI is packaging agents as subscription teammates with a hosted computer and team management, competing directly with ChatGPT Agent, Claude Cowork and open-source agent runners.",
+      "refs": [
+        "https://aitoolsreview.co.uk/insights/grok-bot-1-0",
+        "https://www.promptfoo.dev/docs/providers/xai/"
+      ],
+      "related_event_ids": [
+        "ev-openai-chatgpt-wallet"
+      ],
+      "transition_hint": "Agents that act for users raise the question of who authorizes the action, which is exactly what OpenAI's next feature addresses."
+    },
+    {
+      "id": "09-event",
+      "kind": "event",
+      "rank": 9,
+      "event_id": "ev-openai-chatgpt-wallet",
+      "title": "OpenAI launches ChatGPT Wallet for agent-initiated purchases",
+      "organizations": [
+        "OpenAI"
+      ],
+      "status": "verified",
+      "content": "OpenAI launched ChatGPT Wallet, which lets users save a credit or debit card so AI agents can navigate checkouts and execute payments using secure payment tokens, with merchants never seeing the card number. Every purchase requires explicit human confirmation via biometric verification such as Face ID or Touch ID. OpenAI says it built the infrastructure with American Express, Mastercard, Visa and Chase, and is working with Stripe, Adyen and Checkout.com on a commerce partner playbook. At launch the feature is limited to ChatGPT Pro subscribers aged 18 and older in the United States using eligible US-issued cards.",
+      "significance": "A first-party payments rail turns agentic workflows into transactions, with biometric confirmation as the control point and card networks as launch partners.",
+      "refs": [
+        "https://www.thenews.com.pk/latest/1423530-openai-launches-chatgpt-wallet-ai-agents-can-now-make-purchases"
+      ],
+      "related_event_ids": [
+        "ev-xai-grok-bot-1"
       ],
       "transition_hint": ""
     },
@@ -146,21 +219,22 @@
       "kind": "themes",
       "title": "Cross-Org Themes",
       "content": [
-        "Model access is being deliberately gated: Qwen4-Max-Preview is Token Plan-only until November 25, and Anthropic's Mythos is described as restricted to verified organizations.",
-        "Developer-facing API packaging is the day's competitive front, spanning DeepSeek's bundled app API, Google's Gemini Decisions API and Qwen's compatibility with OpenAI and Anthropic API formats."
+        "Labs are competing on distribution surfaces — default search, cloud marketplaces, compatible API dialects and subscription plans — rather than on standalone model launches",
+        "OpenAI- and Anthropic-compatible wire formats are becoming the default integration layer across vendors, including Meta's and DeepSeek's APIs",
+        "Agentic execution is being productized with explicit control points: human confirmation for payments, permission-scoped team bots, and server-side tool orchestration"
       ]
     },
     {
       "id": "88-rumors-unverified",
       "kind": "rumors",
       "title": "Rumors and Unverified Claims",
-      "content": "A third-party review claims Anthropic's November 2026 lineup is Claude Fable 5.2, Opus 5.5, Sonnet 5.5 and Haiku 5.5, and that Fable 5.2 and Mythos 5.2 shipped on November 9, 2026 as one model under two safety envelopes; no primary Anthropic source was supplied. The same review's claims about Responsible Scaling Policy version 3.4 and February/August 2026 risk reports are likewise unconfirmed by supplied primary material."
+      "content": "A conference account claims Revolut moved 2,000 engineers to self-hosted GLM and cut its AI coding bill about 90% in under a year; this rests on a single social-media post and was not corroborated by a second supplied source. The same review notes earlier reporting that xAI's Grok Bots began using Anthropic's Claude behind the scenes in October, which xAI's own materials do not confirm."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "The decisive question is whether bundled application APIs and gated flagship previews actually raise developer switching costs, or merely reshuffle launch messaging. Watch for primary Anthropic confirmation of its lineup and for whether Qwen4-Max-Preview converts to general availability after its November 25 preview window."
+      "content": "The competitive question this cycle is less which model scores highest than which surface developers and consumers reach by default. Watch whether Google's Hydrogen default holds under real Search traffic, whether DeepSeek's bundled tool pricing survives contact with production workloads, and whether subscription-gated previews like Qwen4-Max convert into paid general availability."
     }
   ]
 }

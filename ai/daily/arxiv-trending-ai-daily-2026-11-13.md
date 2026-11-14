@@ -1,117 +1,85 @@
-# arXiv Trending AI — Daily Report — 2026-11-13
+# arXiv AI papers — Friday, 13 November 2026
 
-## Headline
+Five notable papers from the latest announcement batch, with a strong thread around agentic systems that must select, verify, or efficiently execute their own work. In this briefing: verifier-aware reinforcement learning, machine-learning agents searching semi-supervised pipelines, AI peer-review audits, agent execution infrastructure, and pixel-space video generation. arXiv has no official trending chart; this ordering is inferred from visible independent coverage, conference signals, cross-list breadth, and released artifacts. These papers are only about two days old, so citation evidence is limited and does not establish readership or popularity.
 
-arXiv AI corpus, Friday 13 November 2026 announcement batch: 8 notable papers selected from a 348-record candidate pool; the clearest shared pattern is agents being made more reliable through better selection, verification, memory, and adaptation rather than simply generating more outputs. This Saturday snapshot uses Friday’s latest batch. We’ll cover agentic machine learning, verifier-aware reasoning, and multimodal design, then close with open tests. arXiv has no official trending chart: this is an inferred, relevance-ranked list, not a popularity ranking; independent attention and citation evidence is limited for papers announced just one day ago.
+This is the prior announcement batch: Saturday, 14 November had no newer daily batch at the 17:05 UTC snapshot, so the report uses Friday, 13 November 2026.
 
 ## Top papers (ranked)
 
-### 1. [AgentSSL: Can MLE Agents Leverage Unlabeled Data?](https://arxiv.org/abs/2611.17323)
-- **Abstract:** Frames semi-supervised learning as a program-search task for machine-learning-engineering agents, finding gains over human-designed baselines in 8 of 12 settings while identifying program selection as a major bottleneck.
-- **Authors:** Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson, Jennifer J. Sun
-- **arXiv:** `2611.17323v1` (published 2026-11-12T18:59:06Z; categories: `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** NeurIPS 2026 lists the work as a poster, providing independent venue corroboration; it spans cs.AI/cs.LG and reports matched-compute comparisons, a 16,977-program selection benchmark, and ecology-task experiments. Ranked first for breadth of empirical evidence, not readership.
-- **Claimed contribution:** The authors introduce AgentSSL and ProgramSelectBench, and report up to +21.8% over the strongest human-engineered baselines in 8/12 settings; they also report that feedback-based program selection can reduce performance by as much as 47%.
-- **Caveat:** The paper's discussion says SSL is not always preferable and that on the ecology tasks the supervised AgentSL baseline matches AgentSSL; the authors describe the framework as an initial baseline, not a performance ceiling.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Agents & reasoning; Training & adaptation; Data & synthetic data
-
-### 2. [Negative-Only Policy Optimization for One-Sided Verifiable Rewards](https://arxiv.org/abs/2611.17287)
-- **Abstract:** Defines one-sided verifiability, where a checker can reliably reject some failures but cannot certify accepted outputs, and proposes NOPO, which updates from trusted negatives without directly rewarding non-falsified candidates.
+### 1. [Negative-Only Policy Optimization for One-Sided Verifiable Rewards](https://arxiv.org/abs/2611.17287)
+- **Abstract:** The paper formalizes one-sided verifiability, where a verifier can reliably reject failures but cannot certify positives, and proposes NOPO, which learns by suppressing trusted negatives; reported experiments improve pass@k across code, logic, and math tasks.
 - **Authors:** Jiacheng Xu, Shuo He, Fuxiang Zhang, Chaojie Wang, Bo An
-- **arXiv:** `2611.17287v1` (published 2026-11-12T18:52:33Z; categories: `cs.LG`, `cs.CL`)
-- **Evidence for ranking:** The NeurIPS 2026 Spotlight listing independently corroborates the work's conference recognition; its cs.LG/cs.CL crossover and reported tests across code, logic, and math benchmarks, inference-time scaling, and cross-benchmark transfer support its relevance. The rank reflects this evidence, not popularity.
-- **Claimed contribution:** The authors combine reference-relative suppression of verified negatives with a group-level non-falsified-support weight; they report improved pass@k over baselines under unit-test, constraint-check, and LLM self-verifiers.
-- **Caveat:** The authors state that negative-only learning specifies what to avoid but not where probability mass should move; their results also weaken when a verifier has low negative recall, as in their OlympiadBench setup.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Training & adaptation; Evaluation & benchmarks
+- **arXiv:** `2611.17287v1` (published 2026-11-12 18:52:33 UTC; categories: `cs.LG`, `cs.CL`)
+- **Evidence for ranking:** Accepted as a NeurIPS 2026 Spotlight; cross-listed in two core AI categories; received independent paper write-ups/listings, including OpenTrain and AI Safety Hot. Semantic Scholar listed 0 citations when checked; that is an early total, not a period gain.
+- **Claimed contribution:** The authors propose reference-relative negative suppression plus a group-level update adapter, and report better pass@k under unit-test, constraint-check, and LLM self-verifiers when oracle rewards are unavailable (arXiv abstract).
+- **Caveat:** Evidence is limited to the paper's reported code, logic, and math benchmarks and its one-sided-verifier setup; the abstract does not establish results in broader deployed settings.
+- **Announcement type:** new submission, 13 November 2026 announcement batch
+- **Themes:** Training & adaptation; Evaluation & benchmarks; Safety & alignment
 
-### 3. [Learning When Diffusion Language Models Should Regenerate](https://arxiv.org/abs/2611.17320)
-- **Abstract:** Introduces DiVR, a verifier that uses a diffusion language model's hidden states and trajectory outcomes to decide when to regenerate a block and which alternative to keep, improving reported accuracy on five reasoning benchmarks at additional decoding cost.
-- **Authors:** Minhae Oh, Jeonghye Kim, Jinwoo Koo, Yeongoon Kim, Jimin Seo, et al.
-- **arXiv:** `2611.17320v1` (published 2026-11-12T18:58:50Z; categories: `cs.CL`)
-- **Evidence for ranking:** An independent technical explainer discusses the method, and the paper reports results on five reasoning benchmarks plus transfer to another generator family. The reported accuracy/cost comparison makes its relevance checkable; no popularity inference is made.
-- **Claimed contribution:** The authors train a verifier on the final correctness of a generator's own trajectories; for an SFT LLaDA-8B-Base model they report average accuracy rising from 35.3% to 43.4% at 1.9–3.5× greedy-decoding cost, versus 3.8–7.4× for the cited search baselines.
-- **Caveat:** The accuracy increase uses more inference compute than greedy decoding, and the headline result is tied to the paper's tested generators and five reasoning benchmarks.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Agents & reasoning; Efficient inference & systems; Evaluation & benchmarks
+### 2. [AgentSSL: Can MLE Agents Leverage Unlabeled Data?](https://arxiv.org/abs/2611.17323)
+- **Abstract:** AgentSSL treats semi-supervised learning as agentic program search and reports that agent-generated pipelines beat human-engineered baselines in 8 of 12 settings, while program selection can erase gains and is tested with a 16,977-program benchmark.
+- **Authors:** Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson, Jennifer J. Sun
+- **arXiv:** `2611.17323v1` (published 2026-11-12 18:59:06 UTC; categories: `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** NeurIPS 2026 paper and conference poster; cross-listed in two core categories; received independent analyses from BedrockNews, EigenRadar, and other research roundups. Those write-ups converge on the program-selection bottleneck, rather than providing a popularity metric.
+- **Claimed contribution:** The authors frame semi-supervised learning as program search, introduce ProgramSelectBench, and report gains over human-engineered baselines in 8 of 12 controlled settings (arXiv abstract and paper text).
+- **Caveat:** The authors report that AgentSL matches AgentSSL on both ecology tasks and say the search is biased toward SSL; selecting programs without reliable labels remains unresolved (paper discussion).
+- **Announcement type:** new submission, 13 November 2026 announcement batch
+- **Themes:** Agents & reasoning; Data & synthetic data; Evaluation & benchmarks
 
-### 4. [Goal Encoding in LLMs](https://arxiv.org/abs/2611.17297)
-- **Abstract:** Studies goal representations in LLMs in a multi-subtask coding setting, localizing a next-subgoal encoding to sparse attention heads and testing its causal role and transfer between environments.
-- **Authors:** Arnab Sen Sharma, Eric Todd, Sheridan Feucht, Andy Arditi, Rohit Gandikota, et al.
-- **arXiv:** `2611.17297v1` (published 2026-11-12T18:55:06Z; categories: `cs.CL`, `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** The work has an OpenReview record and is cross-listed in three core AI categories; its causal interventions and cross-environment transplant tests provide specific evidence beyond a descriptive probing result.
-- **Claimed contribution:** The authors identify attention-head outputs that encode upcoming subgoals, report causal effects on next actions, and propose a non-recurrent account in which the model rereads task goals and compares them with progress in context.
-- **Caveat:** The experiments use a constructed coding setting; the abstract does not establish that the same goal encoding mechanism generalizes across broader tasks or model families.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Interpretability; Agents & reasoning
+### 3. [Auditing AI peer reviewers: a benchmark on real scientific papers](https://arxiv.org/abs/2611.17052)
+- **Abstract:** The authors inject objective errors into real papers to measure reviewer detection and false positives, and introduce Skepthical, a tool-using multi-agent reviewer; across 30 papers and 357 injected errors, model choice and task-specific tools materially affect detection.
+- **Authors:** Íñigo Zubeldia, Boris Bolliet, Francisco Villaescusa-Navarro, Pablo Villanueva-Domingo, Miles Cranmer
+- **arXiv:** `2611.17052v1` (published 2026-11-12 16:33:51 UTC; categories: `cs.CL`, `astro-ph.IM`, `cs.AI`, `cs.DL`)
+- **Evidence for ranking:** Accepted at NeurIPS 2026; spans three core AI categories plus digital libraries; independently summarized by Bharat Hunt, Foorilla, and arXiv.deeppaper. Citation momentum is not established for this very recent paper.
+- **Claimed contribution:** The authors provide an error-injection evaluation pipeline and Skepthical, which combines citation retrieval, computer algebra, and executed code for checking specific claims (arXiv abstract and paper text).
+- **Caveat:** The authors explicitly say the benchmark measures localized objective defects, not holistic review quality; each field corpus contains only 15 papers, and the human adjudication check is limited (paper limitations).
+- **Announcement type:** new submission, 13 November 2026 announcement batch
+- **Themes:** Evaluation & benchmarks; Agents & reasoning; Safety & alignment
 
-### 5. [LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds](https://arxiv.org/abs/2611.17267)
-- **Abstract:** Presents GeoWorld and LiveGeo, a platform and benchmark for testing whether LLM agents acquire current geographic evidence, check whether it remains valid as the world changes, and revise decisions accordingly.
-- **Authors:** Pengcheng Zhou, Xuanyu Liu, Yanchen Yin, Tianjie Ju, Bobo Li, et al.
-- **arXiv:** `2611.17267v1` (published 2026-11-12T18:45:58Z; categories: `cs.AI`)
-- **Evidence for ranking:** Independent commentary specifically discusses the benchmark's changing-world reliability question; the paper also reports that strong static performance does not ensure dynamic reliability and releases an extensible platform. Ranked as a concrete agent-evaluation contribution, not as a measured attention leader.
-- **Claimed contribution:** The authors introduce a controllable geographic environment with evolving external states and verifiable histories, and report that current agents struggle to maintain correct decisions as those states change.
-- **Caveat:** Evaluation is conducted through GeoWorld/LiveGeo; the abstract does not report deployment results in live geographic operations.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Agents & reasoning; Evaluation & benchmarks; Retrieval & knowledge
+### 4. [Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon](https://arxiv.org/abs/2611.17294)
+- **Abstract:** Metal Sandbox provides isolated native macOS execution and command scheduling across Macs for GPU coding agents; experiments on four Mac mini M4 nodes report higher command throughput under concentrated demand and lower waiting in fixed-trace scheduling replays.
+- **Authors:** Haozhe Wang, Lina Chen, Fanqi Wan, Qi Han, Yinmin Zhang, et al.
+- **arXiv:** `2611.17294v1` (published 2026-11-12 18:54:42 UTC; categories: `cs.LG`, `cs.AI`, `cs.CL`, `cs.DC`)
+- **Evidence for ranking:** Cross-listed in three core AI categories and distributed computing; code and Harbor integration are public; the paper has independent technical listings including arXivLens and Papers.cool. These are breadth and availability signals, not measured readership; citation evidence is sparse.
+- **Claimed contribution:** The authors combine per-instance file restrictions, native command execution, and cross-Mac scheduling, reporting 1.68×–2.05× throughput in concentrated-demand tests and an 18.8% mean-wait reduction in fixed-trace replay (arXiv abstract and paper text).
+- **Caveat:** The authors state that the system is not hostile multi-tenant containment and does not guarantee GPU exclusivity; the scheduling replay holds agent behavior and phase durations fixed (paper discussion and limitations).
+- **Announcement type:** new submission, 13 November 2026 announcement batch
+- **Themes:** Efficient inference & systems; Agents & reasoning; Safety & alignment
 
-### 6. [Unbundling Multimodal Vision Encoding](https://arxiv.org/abs/2611.17334)
-- **Abstract:** Uses matched-compute pretraining comparisons to separate the effects of visual pretraining, dedicated vision capacity, and where that capacity enters a multimodal model, finding that jointly trained capacity matters more than a pretrained visual prior in the tested settings.
-- **Authors:** Ellis Brown, Chris Hoang, Shengyi Qian, Shang-Wen Li, Mike Lewis, et al.
-- **arXiv:** `2611.17334v1` (published 2026-11-12T18:59:54Z; categories: `cs.CV`, `cs.LG`)
-- **Evidence for ranking:** The cs.CV/cs.LG cross-list and a controlled matched-lifetime-compute comparison address confounds that make encoder recipes hard to compare; the authors also provide a project page. Ranked for methodological relevance, not external popularity.
-- **Claimed contribution:** The authors report that dedicated vision capacity is useful, that it need not be pretrained separately, and that early in-fusion vision modules can perform comparably to a pre-fusion encoder while reducing time to first token.
-- **Caveat:** The claims are bounded by the paper's pretraining framework and visual-question-answering/language benchmark suite; they do not establish that the same design wins for every multimodal task or compute regime.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Multimodal & vision-language; Training & adaptation; Efficient inference & systems
-
-### 7. [CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation](https://arxiv.org/abs/2611.17316)
-- **Abstract:** Proposes a coding-agent framework that values repository memory by its effect on subsequent tasks and trains the actor to use memory when it saves effort, reporting improved resolution with fewer steps and cache-aware tokens on ChainSWE.
-- **Authors:** Peiwen Li, Harshit Verma, Sophia Zhou, Haiwen Wang, Ngoc Bui, et al.
-- **arXiv:** `2611.17316v1` (published 2026-11-12T18:58:22Z; categories: `cs.AI`, `cs.CL`, `cs.SE`)
-- **Evidence for ranking:** It crosses AI, language, and software-engineering categories and reports both task-resolution and resource-use measures for a persistent coding-agent memory design. Its placement follows the broader cross-task agent and verifier work above; the result itself is on a named benchmark.
-- **Claimed contribution:** The authors use prospective segment valuation, repository-location/executable-check anchors, and provenance-gated actor adaptation; on ChainSWE they report a 21.0% to 25.7% resolve-rate increase for a 27B actor, with 17% fewer steps and 11% fewer total cache-aware tokens.
-- **Caveat:** The reported result is on ChainSWE with a 27B actor; the abstract does not establish that the same gains hold across other repositories, task distributions, or model scales.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Agents & reasoning; Retrieval & knowledge; Efficient inference & systems
-
-### 8. [Classical Energies Learn to Reason 1,000x Faster than Looped Models](https://arxiv.org/abs/2611.17309)
-- **Abstract:** Presents CRAM, a learned Hopfield-and-Tank-style energy model that solves the paper's Sudoku-Extreme and Maze-Unique tests with low reported training time and inference FLOPs, and contrasts it with looped reasoning models.
-- **Authors:** Benjamin Hoover, Hugh Blayney, James C. R. Whittington
-- **arXiv:** `2611.17309v1` (published 2026-11-12T18:56:56Z; categories: `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** The paper reports directly checkable accuracy, training-time, and inference-FLOP comparisons and is cross-listed in cs.AI/cs.LG. Its narrower puzzle setting and lack of independent discussion place it below work tested across broader task families.
-- **Claimed contribution:** The authors report 99.996% Sudoku-Extreme and 100% Maze-Unique test accuracy, and at least 282× fewer inference FLOPs than looped baselines at matched Sudoku accuracy.
-- **Caveat:** The authors explicitly caution that Sudoku and Maze may be trivially solvable benchmarks for evaluating the scalability of looped reasoning methods; the results do not establish comparable gains on harder reasoning tasks.
-- **Announcement type:** new submission, announcement-batch date 2026-11-13
-- **Themes:** Agents & reasoning; Efficient inference & systems; Evaluation & benchmarks
+### 5. [Back to Pixels: Lifting Latent Video Diffusion into Pixel Space](https://arxiv.org/abs/2611.17336)
+- **Abstract:** PixVid fine-tunes a pretrained latent video diffusion model to generate frames directly in pixel space, and the authors report higher-resolution output at the same per-frame token count, improved fast-motion control alignment, and frame-level response to actions.
+- **Authors:** Yanke Song, Shuo Chen, Chris Rockwell, Guande He, Nan Liu, et al.
+- **arXiv:** `2611.17336v1` (published 2026-11-12 18:59:55 UTC; categories: `cs.CV`)
+- **Evidence for ranking:** The paper has a project page, independent technical summaries including AGI Hunt and Paperium, and a public author announcement. It is a useful signal from the vision category, but has no core-category cross-list or citation momentum confirmed in this snapshot.
+- **Claimed contribution:** The authors replace the VAE output path with a framewise pixel-space design and report competitive VBench quality after fine-tuning from Wan2.1-14B (arXiv abstract and paper text).
+- **Caveat:** The authors report 3.9× as many tokens per second of video as Wan2.1 at 480×832, making short low-resolution clips more expensive (paper conclusion).
+- **Announcement type:** new submission, 13 November 2026 announcement batch
+- **Themes:** Multimodal & vision-language; Efficient inference & systems; Training & adaptation
 
 ## Trending Research Themes
 
-- **Agent systems are being evaluated on selection and continuity, not just generation.** AgentSSL makes choosing among generated programs the bottleneck; CoReMem tests whether repository memory pays off across successive coding tasks; LiveGeo asks whether an agent rechecks evidence as its environment changes. These papers share a reliability concern, but do not yet demonstrate a general-purpose agent breakthrough.
-- **Reasoning work is changing the source and timing of corrective feedback.** NOPO learns from reliable negative checks without treating partial-verifier passes as ground truth, while DiVR uses trajectory outcome information to decide when diffusion generation should revisit a block. Both move away from simply rewarding a single accepted output, through distinct training-time and inference-time mechanisms.
-- **Mechanistic analysis of agent behavior is a smaller, isolated signal in this batch.** Goal Encoding reports causal subgoal representations in a coding setting; this complements the behavior-level work above, but one paper is not evidence of a broad interpretability shift.
-- **Vision-model design is represented by one controlled study.** Unbundling Multimodal Vision Encoding isolates visual prior, capacity, and fusion placement at matched compute. Its finding supports testing design choices independently; this batch alone does not establish a field-wide move away from pretrained encoders.
-- **Category mix:** the daily candidate pool has substantial representation from computer vision and machine learning (76 and 67 records respectively with those primary categories); the selected list is deliberately cross-area and is not proportional to the pool.
+- **Agents are becoming pipelines, not just chat interfaces.** AgentSSL searches executable ML programs; Metal Sandbox provides native tooling and scheduling for coding agents; Skepthical delegates review checks to retrieval, code, and algebra tools. Their shared emphasis is on observable intermediate work, not simply a stronger base model.
+- **Selection and verification are the bottlenecks.** AgentSSL finds program discovery easier than reliable selection; NOPO formalizes a reward setting where positive verification is unavailable; the reviewer benchmark shows detection changes by error type and model. These papers suggest evaluator quality constrains agentic progress, rather than establishing that this capability is solved.
+- **Efficiency work is moving across layers.** Metal Sandbox targets execution and GPU utilization for agents, while PixVid changes the video model's output representation to improve resolution and control latency. These are distinct approaches, not evidence of one shared efficiency breakthrough.
+- **Corpus concentration:** the announcement pages show the largest daily listings in cs.LG (340 entries) and cs.AI (321), followed by cs.CV (196), cs.CL (135), cs.RO (106), stat.ML (52), cs.MA (18), and cs.NE (14). Category totals overlap because of cross-listing; the selected set is not a field-wide popularity ranking.
 
 ## Open Problems and Research Directions
 
-- **Open problem (authors state; AgentSSL):** Program selection can lose as much as 47% relative to the agent's own feedback metric, and the paper says stronger agents may widen the gap between the best generated program and the one selected. **Research direction (synthesis):** Compare active and unsupervised selection methods under fixed labeling budgets on ProgramSelectBench, then test the same selection policy on the ecology tasks and report calibration across program families.
-- **Open problem (authors state; NOPO):** A negative-only update says which outputs to suppress, not where probability should move; low negative recall leaves little reliable supervision. **Research direction (synthesis):** Measure a recall-stratified accuracy/capability frontier and test whether uncertainty or pairwise evidence can add useful positive information without turning partial verifier passes into labels.
-- **Open problem (paper evidence; DiVR):** Its reported accuracy gains require 1.9–3.5× greedy decoding cost on the stated SFT model. **Research direction (synthesis):** Compare calibrated quality-cost Pareto curves across model sizes and reasoning domains, including tasks where regeneration changes multiple dependent blocks.
-- **Open problem (authors report; LiveGeo):** Agents struggle to acquire relevant evidence and preserve correctness when geographic states evolve. **Research direction (synthesis):** Ablate evidence freshness, source reliability, and update frequency separately, and evaluate whether agents know when a previously valid plan must be withdrawn.
-- **Open problem (methodological boundary; CoReMem):** The reported gain is on ChainSWE with one 27B actor, leaving cross-repository transfer unestablished. **Research direction (synthesis):** Evaluate memory valuation on repositories with different structure and task recurrence, separating transfer of repository anchors from repeated-task memorization.
-- **Open problem (authors state; CRAM):** Sudoku and Maze may be too easy to establish reasoning scalability. **Research direction (synthesis):** Test learned energy models on harder compositional or out-of-distribution constraint problems and compare compute at matched accuracy against looped models.
+- **Open problem — selecting good agent-generated programs with weak labels.** AgentSSL reports selection losses up to 47% and says its ecological tasks do not establish an advantage over the supervised alternative. **Research direction:** compare active-label allocation, unsupervised selection, and supervised search under equal label and compute budgets across additional program families and real-world domains. [AgentSSL](https://arxiv.org/abs/2611.17323)
+- **Open problem — measuring review quality beyond injected defects.** The peer-review benchmark excludes novelty, significance, missing controls, and interpretive judgment, and uses small field-specific corpora. **Research direction:** test larger, more diverse paper sets with blinded human assessment and separately score localized checks and holistic review judgments. [Auditing AI peer reviewers](https://arxiv.org/abs/2611.17052)
+- **Open problem — generalizing scheduling and isolation claims beyond the tested Macs and fixed traces.** Metal Sandbox reports four-node experiments, while its replay fixes model behavior and phase durations and does not promise GPU exclusivity. **Research direction:** run live, multi-hardware trials with competing workloads, security threat models, and end-to-end training outcomes. [Metal Sandbox](https://arxiv.org/abs/2611.17294)
+- **Open problem — the token and compute cost of pixel-space video at lower resolutions.** PixVid reports more tokens per second at 480×832 even while improving frame-level control and scaling. **Research direction:** measure quality, latency, and energy across resolutions and clip lengths under matched compute, including adaptive latent/pixel modes. [Back to Pixels](https://arxiv.org/abs/2611.17336)
 
 ## Takeaway
 
-Today's batch contains a credible cluster around agent reliability: selecting useful programs, learning from incomplete verification, deciding when to regenerate, and carrying forward useful repository knowledge. The strongest results are promising but remain benchmark-bounded; attention and citation data are too sparse to claim that these are arXiv's objectively hottest papers.
+Today's batch suggests a practical turn toward agent systems whose reliability depends on selection, verification, and execution infrastructure. The papers offer useful benchmarks and system-specific gains, but their settings are narrow and very recent; independent citation or usage evidence is not yet enough to call them broadly established trends.
 
 ## Method and sources
 
-- **Window:** Daily announcement batch, 2026-11-13 through 2026-11-13 UTC. As of the 2026-11-14 snapshot, the arXiv recent category pages still identify Fri, 13 Nov 2026 as the latest batch; this daily report therefore uses that prior batch. The selected papers' abstract pages show first submissions on 12 Nov 2026; the announcement date is one calendar day later than their submission timestamp.
-- **Snapshot time:** 2026-11-14T01:10:08Z.
-- **Scope/query:** Exact arXiv API search: `(cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA) AND submittedDate:[202611120000 TO 202611122359]`. It returned 348 candidate records submitted 2026-11-12 for the 2026-11-13 announcement batch. The configured categories were all represented. The pool included primary-category counts of cs.AI 61, cs.LG 67, stat.ML 5, cs.CL 38, cs.CV 76, cs.RO 40, cs.NE 2, and cs.MA 3; cross-listed papers overlap these counts.
-- **Inference method:** arXiv supplies no official trend ranking. Because the batch is very recent and citation/attention evidence is sparse, this is labeled a notable-paper list and ranked by corroborated external discussion or conference listing where available, cross-area relevance, and the specificity and breadth of reported evaluation. It is not a popularity, readership, or download ranking. Semantic Scholar citation and influential-citation evidence was checked but unavailable for this snapshot; no citation totals were used.
-- **arXiv sources (abstract pages verified):** [AgentSSL](https://arxiv.org/abs/2611.17323); [NOPO](https://arxiv.org/abs/2611.17287); [DiVR](https://arxiv.org/abs/2611.17320); [Goal Encoding](https://arxiv.org/abs/2611.17297); [LiveGeo](https://arxiv.org/abs/2611.17267); [Unbundling Multimodal Vision Encoding](https://arxiv.org/abs/2611.17334); [CoReMem](https://arxiv.org/abs/2611.17316); [Classical Energies/CRAM](https://arxiv.org/abs/2611.17309). Category recency pages: [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), and [cs.MA](https://arxiv.org/list/cs.MA/recent).
-- **Corroborating sources:** [AgentSSL NeurIPS 2026 poster](https://neurips.cc/virtual/2026/poster/154115) and [OpenReview record](https://openreview.net/forum?id=yWxcbCZwgn); [NOPO NeurIPS 2026 Spotlight listing](https://neurips.cc/virtual/2026/poster/152610); [DiVR technical explainer](https://zerohour.day/item/f96332f5aa0d453560072145e2d8dca371330d7e); [Goal Encoding OpenReview record](https://openreview.net/forum?id=JE0EuQdwuw); [LiveGeo independent commentary](https://franklineh.com/learn/research/editorial-research-9bea9e38dd95e60ccf0d38a95fc04b5c).
+- **Window:** daily; the Friday 13 November 2026 arXiv announcement batch (batch-date window 2026-11-13 00:00–23:59 UTC). Snapshot: 2026-11-14 17:05:13 UTC. Saturday had no newer announcement batch, so this uses the prior Friday batch.
+- **Corpus:** core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`. The recent pages were checked for all eight categories; the pages show the Friday batch.
+- **Candidate retrieval:** arXiv recent-category listings and verified abstract pages for all five selected papers. The broad arXiv API query was not available at this snapshot (HTTP 429), so listings were consulted in the browser. All five abstracts were read; HTML full text was also checked for AgentSSL, the reviewer benchmark, Metal Sandbox, and PixVid. NOPO's abstract page was available, but its HTML full text was not.
+- **Inference method:** arXiv publishes no official trend ranking. Ranking is qualitative: independent, checkable coverage and visible conference signals first; cross-list breadth and public project/code artifacts next; recency only as a tie-breaker. This is a notable-paper shortlist, not a claim about reads, downloads, or comprehensive category coverage. Semantic Scholar returned a current citation total of 0 for NOPO; further paper lookups were rate-limited, so no citation-velocity comparison is made.
+- **Primary sources:** [cs.AI recent](https://arxiv.org/list/cs.AI/recent), [cs.LG recent](https://arxiv.org/list/cs.LG/recent), [stat.ML recent](https://arxiv.org/list/stat.ML/recent), [cs.CL recent](https://arxiv.org/list/cs.CL/recent), [cs.CV recent](https://arxiv.org/list/cs.CV/recent), [cs.RO recent](https://arxiv.org/list/cs.RO/recent), [cs.NE recent](https://arxiv.org/list/cs.NE/recent), [cs.MA recent](https://arxiv.org/list/cs.MA/recent).
+- **Paper sources:** [NOPO](https://arxiv.org/abs/2611.17287), [AgentSSL](https://arxiv.org/abs/2611.17323), [AI peer-review benchmark](https://arxiv.org/abs/2611.17052), [Metal Sandbox](https://arxiv.org/abs/2611.17294), [PixVid](https://arxiv.org/abs/2611.17336).
+- **Corroborating sources:** [NeurIPS AgentSSL poster](https://neurips.cc/virtual/2026/poster/154115), [Metal Sandbox GitHub](https://github.com/WangHaoZhe/metal-sandbox), [OpenTrain NOPO summary](https://www.opentrain.ai/papers/negative-only-policy-optimization-for-one-sided-verifiable-rewards--arxiv-2611.17287/), [AI Safety Hot NOPO listing](https://aisafetyhot.com/en/items/cgbphixwfsx7gxx5n9qnovsl5), [BedrockNews AgentSSL analysis](https://bedrocknews.com/article/arxiv/2611.17323v1), [EigenRadar AgentSSL brief](https://eigenradar.com/en/ai/briefs/2026-11-13/agentssl-program-selection/), [Bharat Hunt reviewer-benchmark summary](https://bharathunt.org/ai/auditing-ai-peer-reviewers-a-benchmark-on-real-scientific-papers), [Foorilla reviewer-benchmark summary](https://foorilla.com/research/papers/auditing-ai-peer-reviewers-a-benchmark-on-real-scientific-papers-403717/), [AGI Hunt PixVid summary](https://agihunt.info/en/papers/2611.17336), [Semantic Scholar NOPO record](https://www.semanticscholar.org/paper/2135404e97888284c3ac6604b4d35b706f1141c8).

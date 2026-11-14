@@ -2,7 +2,7 @@
 
 ## Headline
 
-The latest available daily batch in the configured biology/biomedicine arXiv corpus is dated 2026-11-12: 8 eligible papers (7 new submissions and 1 revision). Protein-model reliability and mutation-effect prediction are the clearest shared thread, alongside low-field fMRI, red-cell mechanics, and decision-support methods. The agenda: examine how protein models are tested, then compare the translational claims with the evidence actually reported. arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity measure, and arXiv omits much of biomedical preprint and clinical research. The batch is the latest available at the 2026-11-13 UTC snapshot.
+The latest available daily batch in the configured biology/biomedicine arXiv corpus is dated 2026-11-12: 8 eligible papers (7 new submissions and 1 revision). Protein-model reliability and mutation-effect prediction are the clearest shared thread, alongside low-field fMRI, red-cell mechanics, and decision-support methods. The agenda: examine how protein models are tested, then compare the translational claims with the evidence actually reported. arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity measure, and arXiv omits much of biomedical preprint and clinical research. This is the latest eligible batch at the 2026-11-14 UTC snapshot.
 
 ## Notable recent papers (ranked by demonstrated relevance)
 
@@ -84,7 +84,7 @@ The latest available daily batch in the configured biology/biomedicine arXiv cor
 - **Claimed contribution:** The authors state that their accounting framework distinguishes apparent enrichment caused by mass removal from net chiral-excess change, and report re-analysis of seven experimental systems plus model/data-set analyses. These are the authors’ theoretical and re-analysis claims.
 - **Caveat:** The conclusions depend on the stated network and symmetry assumptions; the abstract reports re-analysis and modeling rather than new wet-lab validation. The version change is labeled as a revision, not a new paper.
 - **Announcement type:** revision, 2026-11-12
-- **Themes:** Prebiotic chemistry; Quantitative methods
+- **Themes:** Biochemistry & proteins; Quantitative methods
 
 ## Trending Research Themes
 
@@ -104,7 +104,7 @@ This batch’s strongest shared signal is more careful characterization of prote
 
 ## Method and sources
 
-- **Window:** daily, latest available announcement batch dated 2026-11-12; eligible submissions/revisions dated 2026-11-12. The report uses the prior available batch relative to the 2026-11-13 snapshot. Snapshot: 2026-11-13T17:13:58Z.
+- **Window:** daily, latest available announcement batch dated 2026-11-12; eligible submissions/revisions announced in the 2026-11-12 batch (window 2026-11-12 through 2026-11-12). No newer eligible record appeared in the configured category query at the 2026-11-14 snapshot, so this uses the prior available batch. Snapshot: 2026-11-14T01:17:34Z.
 - **Candidate query:** [arXiv API](https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200) across `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, `cs.BI`, and `physics.med-ph`. The retrieved 200-entry page reached 2026-10-29, beyond the selected batch; the eight retained records were deduplicated by versionless arXiv ID and checked against their arXiv abstract pages.
-- **Ranking:** no official arXiv trend/readership statistics exist. Since direct attention evidence was sparse, entries are ranked by relevance to the requested biology/biomedicine scope and checkable publication/update signals, not by inferred reads or downloads. The ranking signals are stated per entry. Semantic Scholar returned current citation metadata only for the prebiotic revision (0 citations at snapshot); citation totals are not window gains. Selected-paper abstracts and top-paper full text were checked on arXiv; external corroboration includes the [PMLR/ICML MutAtlas listing](https://proceedings.mlr.press/v306/guo26c.html), the [ICML poster page](https://icml.cc/virtual/2026/poster/63147), and the [NeurIPS workshop listing](https://neurips.cc/virtual/2026/169424).
+- **Ranking:** no official arXiv trend/readership statistics exist. Because this batch is very recent and robust attention evidence is sparse, entries are ranked by relevance to biology/biomedicine and checkable publication/update signals, not popularity. The ranking signals are stated per entry; no citation momentum, reads, or downloads are inferred. Selected-paper abstracts and top-paper full text were checked on arXiv; external corroboration includes the [PMLR/ICML MutAtlas listing](https://proceedings.mlr.press/v306/guo26c.html), the [ICML poster page](https://icml.cc/virtual/2026/poster/63147), and the [NeurIPS workshop listing](https://neurips.cc/virtual/2026/169424).
 - **Coverage caveat:** arXiv is not representative of biomedical preprints; much clinical and experimental work appears on bioRxiv, medRxiv, or elsewhere. This is not a systematic review or clinical guidance. Claims are attributed to the preprints; no patient-specific advice is offered.

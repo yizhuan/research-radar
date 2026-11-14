@@ -7,14 +7,14 @@
   "date_range_end": "2026-11-12",
   "announcement_batch_date": "2026-11-12",
   "uses_prior_batch": true,
-  "snapshot_utc": "2026-11-13T17:13:58Z",
+  "snapshot_utc": "2026-11-14T01:17:34Z",
   "title": "arXiv Trending Biology and Biomedicine — Daily, 2026-11-12",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-12.md",
   "entry_count": 8,
   "entry_noun": "papers",
   "global_caveat": "arXiv has no official trending chart; this inferred relevance ranking uses checkable venue/update signals and incomplete biomedical coverage, and must not be read as popularity, clinical validation, or a representative survey of biomedical research.",
   "ranking_basis": "Relevance to biology and biomedicine plus checkable venue, cross-list, or revision signals; not popularity.",
-  "ranking_explanation": "Attention evidence was sparse. Entries are ordered by demonstrated topic relevance and the specific checkable signals listed per paper; citation counts are current totals, not period gains.",
+  "ranking_explanation": "Attention evidence was sparse and the batch is very recent. Entries are ordered by demonstrated topic relevance and the specific checkable venue, cross-list, or revision signals listed per paper; no popularity or citation-momentum claim is made.",
   "sections": [
     {
       "id": "00-headline",
@@ -22,7 +22,7 @@
       "title": "Headline",
       "rank": null,
       "url": "",
-      "content": "The latest available daily batch in the configured biology/biomedicine arXiv corpus is dated 2026-11-12: 8 eligible papers (7 new submissions and 1 revision). Protein-model reliability and mutation-effect prediction are the clearest shared thread, alongside low-field fMRI, red-cell mechanics, and decision-support methods. arXiv has no official trending chart; this is an inferred relevance ranking from incomplete biomedical coverage.",
+      "content": "The latest available daily batch in the configured biology/biomedicine arXiv corpus is dated 2026-11-12: 8 eligible papers (7 new submissions and 1 revision). Protein-model reliability and mutation-effect prediction are the clearest shared thread, alongside low-field fMRI, red-cell mechanics, and decision-support methods. The spoken agenda is to examine how protein models are tested, then compare translational claims with the evidence reported. arXiv has no official trending chart; this is an inferred relevance ranking from incomplete biomedical coverage.",
       "refs": []
     },
     {
@@ -170,7 +170,7 @@
       "updated": "2026-11-12T03:06:16Z",
       "categories": ["q-bio.BM"],
       "authors": ["Zeyu Jia", "Anlin Gong", "Bingmei Wu"],
-      "themes": ["Prebiotic chemistry", "Quantitative methods"],
+      "themes": ["Biochemistry & proteins", "Quantitative methods"],
       "abstract": "The authors formalize how phase removal, subpool fractionation, and chiral-excess changes contribute to enantiomeric excess, and re-analyze prebiotic chemistry benchmarks under explicit symmetry assumptions.",
       "claimed_contribution": "The authors state that their accounting framework distinguishes apparent enrichment caused by mass removal from net chiral-excess change, and report re-analysis of seven experimental systems plus model/data-set analyses. These are the authors’ theoretical and re-analysis claims.",
       "unique_caveat": "The conclusions depend on the stated network and symmetry assumptions; the abstract reports re-analysis and modeling rather than new wet-lab validation. The version change is labeled as a revision, not a new paper.",

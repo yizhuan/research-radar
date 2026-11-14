@@ -7,11 +7,11 @@
     "timezone": "UTC",
     "announcement_batch": "2026-11-13",
     "submission_date_of_candidates": "2026-11-12",
-    "snapshot_time": "2026-11-13T17:08:03Z"
+    "snapshot_time": "2026-11-14T01:10:08Z"
   },
   "date": "2026-11-13",
   "title": "arXiv Trending AI — Daily Report — 2026-11-13",
-  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity ranking. Independent attention and citation evidence is limited for this newly announced batch, and Semantic Scholar citation data was unavailable at the snapshot.",
+  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking, not a popularity ranking. The Saturday 2026-11-14 snapshot uses the latest available Friday 2026-11-13 announcement batch. Independent attention and citation evidence is limited for this newly announced batch, and Semantic Scholar citation data was unavailable at the snapshot.",
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-13.md",
   "entry_count": 8,
   "entry_noun": "papers",

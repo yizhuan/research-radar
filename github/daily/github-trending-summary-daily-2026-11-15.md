@@ -4,79 +4,79 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-15 01:46 UTC |
+| Snapshot time (UTC) | 2026-11-15 17:42 UTC |
 | Scope | Daily |
 | Date range | 2026-11-15 through 2026-11-15 |
-| Ranking basis | Daily GitHub Trending star gains, sorted descending |
+| Ranking basis | GitHub Trending daily star gains, corroborated with GitHub REST and Search APIs |
 
 ## Headline
 
-Coding-agent infrastructure dominates today's leading momentum: agent-specific web guidance, review, browser debugging, and trading workflows all rank near the top. The broader list also shows strong interest in collaborative office software and self-hosted personal/operations tools.
+Today's strongest signal is the build-out of practical tooling around coding agents: browser guidance, office apps, review surfaces, and agent-integrated developer tools lead the daily star gains. Google Chrome's modern-web guidance tops the gain list, while Univer and Plannotator show strong demand for agent-ready application experiences and human review.
 
 ## Top Repositories
 
-1. **[GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)  - Curated, evaluable web-platform guidance delivered to coding agents so they generate modern, accessible, performant browser code.**
+1. **[GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src) - Source for agent skills that deliver current web-platform best practices, compatibility knowledge, and modernization guidance.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,231 | **Total stars:** 6,087 | **Why notable:** It leads today's observed star-gain list and packages browser expertise as installable, searchable, token-efficient agent guidance.
+  **Language:** TypeScript | **Stars gained in window:** +1,220 | **Total stars:** 6,916 | **Why notable:** It leads today's observed star gains and turns browser expertise into searchable, retrievable agent context, including legacy-pattern scans.
 
-2. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review)  - An AI code-review CLI combining deterministic checks with an LLM agent and line-level feedback.**
+2. **[dream-num/univer](https://github.com/dream-num/univer) - An extensible office SDK for embedding spreadsheets, documents, collaboration, and file processing in products and agent workflows.**
 
-  **Language:** Go | **Stars gained in window:** +893 | **Total stars:** 51,457 | **Why notable:** A strong daily gain supports the push toward specialized review agents, with the README describing multi-language checks and configurable model endpoints.
+  **Language:** TypeScript | **Stars gained in window:** +1,041 | **Total stars:** 25,413 | **Why notable:** Second-highest daily gain; its SDK approach makes office editing and calculation capabilities composable inside applications and agents.
 
-3. **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)  - Chrome DevTools exposed to coding agents through an MCP server and CLI.**
+3. **[backnotprop/plannotator](https://github.com/backnotprop/plannotator) - A local browser-based review surface for annotating agent plans, artifacts, and code changes, then returning feedback to the agent.**
 
-  **Language:** TypeScript | **Stars gained in window:** +664 | **Total stars:** 56,325 | **Why notable:** Its momentum highlights demand for agents that can inspect, debug, automate, and profile a live browser rather than only edit source files.
+  **Language:** TypeScript | **Stars gained in window:** +860 | **Total stars:** 11,701 | **Why notable:** Third-highest gain, reflecting demand for human-in-the-loop review across multiple coding agents and version-control workflows.
 
-4. **[we-promise/sure](https://github.com/we-promise/sure)  - A community-maintained, self-hostable personal-finance application.**
+4. **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) - MCP server and CLI that let coding agents inspect, automate, debug, and measure a live Chrome browser.**
 
-  **Language:** Ruby | **Stars gained in window:** +659 | **Total stars:** 15,337 | **Why notable:** It is the strongest non-agent-specific project among the top daily gainers and brings a substantial self-hosted finance app back into active community development.
+  **Language:** TypeScript | **Stars gained in window:** +718 | **Total stars:** 56,776 | **Why notable:** A high-gain project that gives agents access to browser debugging, network inspection, automation, and performance traces.
 
-5. **[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)  - Structured Claude Code workflows for market review, risk planning, screening, journaling, and trade review.**
+5. **[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) - Claude Code skills for market analysis, charting, economic calendars, screening, and trading strategy workflows.**
 
-  **Language:** Python | **Stars gained in window:** +553 | **Total stars:** 4,846 | **Why notable:** It represents a growing pattern of domain-specific agent skills that structure decisions rather than automate trades or promise signals.
+  **Language:** Python | **Stars gained in window:** +707 | **Total stars:** 5,333 | **Why notable:** One of the day's fastest risers outside the core coding-tool cluster, illustrating domain-specific agent skill packaging.
 
-6. **[dream-num/univer](https://github.com/dream-num/univer)  - An extensible office SDK for editing, calculation, collaboration, and document workflows for people and AI agents.**
+6. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review) - An AI-assisted code-review tool combining deterministic checks and an LLM agent for contextual, line-level findings.**
 
-  **Language:** TypeScript | **Stars gained in window:** +495 | **Total stars:** 24,521 | **Why notable:** Its gain points to interest in embedding spreadsheet and office capabilities into agent-aware products.
+  **Language:** Go | **Stars gained in window:** +688 | **Total stars:** 51,865 | **Why notable:** The repository pairs substantial daily traction with a production-oriented hybrid review design and multi-language rule coverage.
 
-7. **[louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)  - A self-hosted service-monitoring tool.**
+7. **[Tencent/LoopForge](https://github.com/Tencent/LoopForge) - Self-hosted workflows for delivering coding-agent changes with scripts, orchestration, and human approval gates.**
 
-  **Language:** JavaScript | **Stars gained in window:** +430 | **Total stars:** 94,257 | **Why notable:** Continued attention to practical, self-hosted infrastructure sits alongside the day's agent-tool surge.
+  **Language:** Go | **Stars gained in window:** +484 | **Total stars:** 1,330 | **Why notable:** It represents the operations side of agent adoption: controlled delivery pipelines rather than just code generation.
 
-8. **[Likely7/Veyra-NRVideo](https://github.com/Likely7/Veyra-NRVideo)  - A Windows video and capture utility describing real-time upscaling and frame-generation features.**
+8. **[ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui) - An event-based protocol for connecting AI agents to user-facing applications and real-time user context.**
 
-  **Language:** C++ | **Stars gained in window:** +420 | **Total stars:** 2,297 | **Why notable:** It is a high-momentum outlier in desktop media and graphics rather than coding-agent tooling. Its game-specific performance claims are the repository's description, not independently validated here.
+  **Language:** TypeScript | **Stars gained in window:** +393 | **Total stars:** 17,685 | **Why notable:** Its protocol and middleware aim to standardize streaming, state synchronization, and human interaction across agent frontends.
 
-9. **[backnotprop/plannotator](https://github.com/backnotprop/plannotator)  - A workspace for annotating agent plans and reviewing code changes with feedback sent back to agents.**
+9. **[google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) - A library of agent skills for Google Stitch workflows, designed for compatibility with several coding-agent tools.**
 
-  **Language:** TypeScript | **Stars gained in window:** +408 | **Total stars:** 11,153 | **Why notable:** The project makes human approval and plan/diff feedback a visible part of agent-assisted coding.
+  **Language:** TypeScript | **Stars gained in window:** +248 | **Total stars:** 9,155 | **Why notable:** It adds to the visible pattern of distributing specialized design and product workflows as portable agent skills.
 
-10. **[martin-olivier/airgorah](https://github.com/martin-olivier/airgorah)  - Linux Wi-Fi security-auditing software with a GTK4 graphical interface.**
+10. **[elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) - A Claude Code skill bundle focused on bug hunting and external red-team work across vulnerability classes.**
 
-  **Language:** Rust | **Stars gained in window:** +270 | **Total stars:** 5,892 | **Why notable:** It is a security-focused counterpoint to the dominant AI and productivity projects. The README says it is Linux-only and intended for networks the user owns or is authorized to test.
+  **Language:** Python | **Stars gained in window:** +221 | **Total stars:** 6,108 | **Why notable:** Security-oriented skills are gaining alongside general coding-agent integrations, with a broad catalog of vulnerability workflows.
 
-11. **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)  - A coding-agent skill and proxy that aims to reduce token use by compressing communication.**
+11. **[NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) - A framework for evaluating agent skills with quality gates, overlap checks, generated datasets, and live behavior evaluation.**
 
-  **Language:** Go | **Stars gained in window:** +227 | **Total stars:** 120,093 | **Why notable:** Its visible daily gain adds evidence for experimentation with lower-token agent interaction, though its existing star base is already exceptionally large.
+  **Language:** Python | **Stars gained in window:** +205 | **Total stars:** 1,467 | **Why notable:** It addresses the evaluation layer needed to tell whether agent skill packages are useful and distinct, rather than merely numerous.
 
-12. **[QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)  - An open-source coding agent that runs in the terminal.**
+12. **[ggml-org/ggml](https://github.com/ggml-org/ggml) - A tensor library for machine learning.**
 
-  **Language:** TypeScript | **Stars gained in window:** +64 | **Total stars:** 30,360 | **Why notable:** It adds an established, model-backed terminal coding agent to the day's broader agent ecosystem signal.
+  **Language:** C++ | **Stars gained in window:** +53 | **Total stars:** 15,845 | **Why notable:** The smallest gain among these entries, but a useful infrastructure counterpoint to the agent-facing application and workflow tools.
 
 ## Trending Technologies and Themes
 
-- **Coding-agent context and workflow tooling:** GoogleChrome/modern-web-guidance-src delivers curated web practices; tradermonty/claude-trading-skills packages domain workflows; backnotprop/plannotator adds plan and diff feedback; JuliusBrussee/caveman experiments with compressed agent interaction.
-- **Agents gaining tools to act on software:** alibaba/open-code-review specializes review, while ChromeDevTools/chrome-devtools-mcp connects agents to a live browser for debugging and performance work; QwenLM/qwen-code represents the terminal-agent layer.
-- **Agent-aware productivity software:** dream-num/univer brings office editing and calculation into embeddable products, while we-promise/sure and louislam/uptime-kuma show parallel interest in self-hosted end-user and operations software.
-- **Other active niches:** Likely7/Veyra-NRVideo represents graphics/media tooling, and martin-olivier/airgorah represents Wi-Fi security auditing.
-- **Languages:** TypeScript leads (5 of 12), followed by Go (2); Python, Ruby, JavaScript, C++, and Rust each appear once.
+- **Agent context and skill distribution:** GoogleChrome/modern-web-guidance-src, google-labs-code/stitch-skills, tradermonty/claude-trading-skills, elementalsouls/Claude-BugHunter, and NVIDIA/SkillEvaluator show both the spread of skills and a growing need to evaluate them.
+- **Human-in-the-loop interfaces and delivery:** backnotprop/plannotator, ag-ui-protocol/ag-ui, and Tencent/LoopForge emphasize reviewing, interacting with, and approving agent work rather than leaving agents as unattended code generators.
+- **Agent-integrated developer tools:** ChromeDevTools/chrome-devtools-mcp and alibaba/open-code-review connect agents to browser inspection and code-review workflows; ggml-org/ggml is a lower-gain ML infrastructure signal.
+- **AI-enabled application building:** dream-num/univer brings office editing, calculation, and collaboration into embeddable product components.
+- **Languages:** TypeScript leads with 6 of 12 entries, followed by Python (3), Go (2), and C++ (1).
 
 ## Takeaway
 
-Today's snapshot is less about a single new model than the software around agents: curated context, domain workflows, code review, browser access, and human feedback. The concurrent gains for office, finance, monitoring, media, and security tools show that the trend is broadening beyond coding assistants into practical products and infrastructure.
+The daily list points to a shift from agent capability demos toward practical systems: agents need current domain context, reliable tools, user-facing interaction, review gates, and measurable quality. TypeScript-heavy frontend and workflow projects dominate the list, while code review and security show that trust and control are becoming core parts of the agent developer stack.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Today](https://github.com/trending?since=daily), fetched 2026-11-15 at 01:46 UTC.
-- **Corroboration:** GitHub REST repository and commit endpoints confirmed current totals, language, default branches, and branch-head commit SHAs for all 12 listed repositories. GitHub Search API query `pushed:2026-11-14..2026-11-15 stars:>1000`, sorted by stars, provided an additional recent-activity cross-check; it matched two of the listed repositories in its returned results and is not used as a substitute for the daily ranking.
-- **Method note:** Daily gains are the values displayed by GitHub's matching Trending view, not independently computed deltas. Entries are ordered by those displayed gains; the 12 highest-gain projects among the 15 visible entries are included. Total stars and commit SHAs were read from GitHub's API shortly after the Trending snapshot. No prior-window comparison was collected, so no shift claim is made.
+- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily), captured 2026-11-15 17:42 UTC.
+- **Corroboration:** GitHub REST repository and branch-commit endpoints checked metadata, activity, and default-branch SHAs for all listed repositories; GitHub Search API `search/repositories` confirmed exact-name matches and current indexed metadata for five leading repositories.
+- **Method note:** Daily star-gain values and displayed totals come from the matching GitHub Trending view and were used to rank entries by gain. Repository metadata and current default-branch commits were checked separately; stars and commit SHAs may change after the snapshot time. No prior-window comparison was used, so no Notable Shifts section is included.

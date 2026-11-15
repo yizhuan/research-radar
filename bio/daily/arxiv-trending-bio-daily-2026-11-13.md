@@ -1,8 +1,8 @@
 # Notable recent biology and biomedical papers — Friday, 13 November 2026 arXiv batch
 
-Thirteen papers are selected from the latest biology/biomedicine announcement batch. The clearest recurring pattern is computational methods being tested against molecular or assay data, with important gaps between in-silico performance and experimental or clinical validation. Spoken agenda: resistance enzymes, siRNA potency and perturbation response; protein mutation and conjugate design; sequencing adjudication; then biomedical modeling and imaging. arXiv has no official trending chart; this relevance-ranked list is inferred from incomplete arXiv coverage and is not a measured popularity ranking.
+Fifteen papers are selected from the latest biology/biomedicine announcement batch: seven new submissions, six newly surfaced category listings whose first submissions were earlier, and two substantive revisions. The clearest recurring pattern is computational methods being tested against molecular or assay data, with important gaps between in-silico performance and experimental or clinical validation. Spoken agenda: resistance enzymes, siRNA potency and perturbation response; protein mutation and conjugate design; sequencing adjudication; then biomedical modeling, imaging, and two revised studies. arXiv has no official trending chart; this relevance-ranked list is inferred from incomplete arXiv coverage and is not a measured popularity ranking.
 
-Semantic Scholar returned zero citations and zero influential citations for all 13 papers at the snapshot, so citation momentum does not support a popularity ranking. The entries below are therefore “Notable recent papers,” ranked by direct relevance and checkable research evidence, not by readership, downloads, or author reputation. Acceptance and journal comments are reported as publication-status signals only.
+Semantic Scholar returned zero citations and zero influential citations for all 15 papers at the snapshot, so citation momentum does not support a popularity ranking. The entries below are therefore “Notable recent papers,” ranked by direct relevance and checkable research evidence, not by readership, downloads, or author reputation. Acceptance and journal comments are reported as publication-status signals only; limited secondary write-ups are not treated as popularity measures.
 
 ## Notable recent papers
 
@@ -13,7 +13,7 @@ Semantic Scholar returned zero citations and zero influential citations for all 
 - **Evidence for ranking:** Direct antimicrobial-resistance and protein-function relevance; the authors report expression and antibiotic testing, including MIC measurements, rather than sequence prediction alone. Semantic Scholar snapshot: 0 citations, 0 influential citations.
 - **Claimed contribution:** The authors report identifying more than 46,000 putative environmental beta-lactamases and finding that two divergent class-C candidates expressed in *E. coli* confer resistance to multiple beta-lactams; predicted substitutions altered resistance profiles.
 - **Caveat:** The full paper states that experimental characterization covered only two class-C candidates and resistance was assessed primarily by MIC. It does not establish environmental prevalence, transmission, or human risk.
-- **Announcement type:** new submission, 2026-11-13 batch
+- **Announcement type:** category listing (first submitted 2026-11-09), 2026-11-13 batch
 - **Themes:** Biochemistry & proteins; DNA & genomics; Bioinformatics & sequence analysis
 
 ### 2. [Silscore: modelling siRNA potency with positional thermodynamics and data-selected nucleotide-identity terms](https://arxiv.org/abs/2611.15812)
@@ -23,7 +23,7 @@ Semantic Scholar returned zero citations and zero influential citations for all 
 - **Evidence for ranking:** Direct RNA silencing-design question; tested on the Huesken split, Mixset, Katoh–Suzuki, and an unseen-target transfer setting. Semantic Scholar snapshot: 0 citations, 0 influential citations.
 - **Claimed contribution:** The authors report that the 26-parameter model has the highest observed Pearson correlation in three transfer evaluations; on Katoh–Suzuki, the data support an advantage over each applicable comparator. The paper also reports that some other comparisons are inconclusive.
 - **Caveat:** These are retrospective dataset evaluations, not prospective silencing experiments. The guide-only model omits target-site accessibility and transcript context by design.
-- **Announcement type:** new submission, 2026-11-13 batch
+- **Announcement type:** category listing (first submitted 2026-11-11), 2026-11-13 batch
 - **Themes:** RNA & transcriptomics; Biochemistry & proteins; Quantitative methods
 
 ### 3. [Predicting transcriptional interactions with GrnPFN](https://arxiv.org/abs/2611.14559)
@@ -33,7 +33,7 @@ Semantic Scholar returned zero citations and zero influential citations for all 
 - **Evidence for ranking:** Direct gene-regulation and single-cell perturbation focus; the paper evaluates CRISPR activation, RNA knockdown, and drug combinations and includes an additional CRISPRi–drug screen. Semantic Scholar snapshot: 0 citations, 0 influential citations.
 - **Claimed contribution:** The author reports better prediction than tested gradient-boosting and kernel-ridge baselines when combination measurements are absent or limited, with the relative advantage diminishing as screen-specific combinations accumulate.
 - **Caveat:** The full paper notes that several later partitions reused cells, perturbation-pair folds overlap in members or compounds, and an additional drug–gene evaluation involved one drug in one cell line. Predicted transcriptional non-additivity does not itself establish a molecular mechanism or synergy in other phenotypes.
-- **Announcement type:** new submission, 2026-11-13 batch
+- **Announcement type:** category listing (first submitted 2026-11-05), 2026-11-13 batch
 - **Themes:** RNA & transcriptomics; Gene regulation & epigenetics; Omics & single-cell methods
 
 ### 4. [MutAtlas: A PDB-Wide Energy-Guided Atlas of Protein Mutation Effects](https://arxiv.org/abs/2611.16361)
@@ -53,7 +53,7 @@ Semantic Scholar returned zero citations and zero influential citations for all 
 - **Evidence for ranking:** Direct molecular-conjugate design application; arXiv comment identifies publication at NeurIPS 2026. The abstract reports evaluations across three peptide–drug-conjugate and three PROTAC systems. Semantic Scholar snapshot: 0 citations, 0 influential citations.
 - **Claimed contribution:** The authors report improved valid-conjugate yield over matched post-hoc filtering for peptide–drug conjugates and the highest assembly validity on two of three PROTAC systems; they also report post-hoc scoring and molecular-dynamics analyses.
 - **Caveat:** Evidence is computational generation, predicted scoring, and simulation; the paper does not establish experimentally measured degradation, binding, or therapeutic efficacy for generated molecules.
-- **Announcement type:** new submission, 2026-11-13 batch
+- **Announcement type:** category listing (first submitted 2026-11-11), 2026-11-13 batch
 - **Themes:** Biochemistry & proteins; Biomedical & translational medicine; Quantitative methods
 
 ### 6. [AVA: Agentic Variant Adjudication for Automated, Auditable Read-Level Review in Cancer Diagnostic Sequencing](https://arxiv.org/abs/2611.14560)
@@ -63,7 +63,7 @@ Semantic Scholar returned zero citations and zero influential citations for all 
 - **Evidence for ranking:** Direct cancer-sequencing workflow relevance; the abstract names the SEQC2 DNA-seq benchmark and patient RNA-seq data, and the arXiv comment reports acceptance to the ML4H 2026 Findings Track. Semantic Scholar snapshot: 0 citations, 0 influential citations.
 - **Claimed contribution:** The authors report that tested closed- and open-weight agents outperformed the best VAF/depth thresholds on a subsample of borderline variants, returning auditable reasoning traces.
 - **Caveat:** Benchmark results do not establish performance in routine prospective laboratories, diagnostic error reduction, turnaround-time improvement, or patient benefit.
-- **Announcement type:** new submission, 2026-11-13 batch
+- **Announcement type:** category listing (first submitted 2026-11-05), 2026-11-13 batch
 - **Themes:** DNA & genomics; Biomedical & translational medicine; Bioinformatics & sequence analysis
 
 ### 7. [Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling](https://arxiv.org/abs/2611.16881)
@@ -136,11 +136,33 @@ Semantic Scholar returned zero citations and zero influential citations for all 
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** Medical physics & imaging; Biomedical & translational medicine
 
+
+### 14. [TRACED-X enables in vivo imaging of cellular microstructure, intrinsic extracellular diffusivity, tortuosity, and membrane permeability in human glioma patients](https://arxiv.org/abs/2605.02615)
+- **Abstract:** TRACED-X uses Monte Carlo-generated diffusion signals and neural-network estimators to infer tumor microstructure and transport parameters, with a proof-of-concept application to eight glioma patients.
+- **Authors:** Joshua K. Marchant, Hong-Hsi Lee, Elizabeth R. Gerstner, Susie Y. Huang, Bruce R. Rosen
+- **arXiv:** `2605.02615v2` (first submitted 2026-05-04T14:03:48Z; revised 2026-11-12T03:56:01Z; categories: `physics.med-ph`, `cs.LG`, `eess.IV`)
+- **Evidence for ranking:** Substantive v2 update says it adds experiments in response to reviewer suggestions; under review at Magnetic Resonance in Medicine. The abstract reports eight mixed-grade glioma patients. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report simultaneous in-vivo estimates of cellular and extracellular parameters, with maps coherent with radiological findings and expected tumor phenotypes.
+- **Caveat:** Eight patients support feasibility only; the authors say broader patient studies are needed to assess clinical utility. This is not a validated diagnostic or treatment tool.
+- **Announcement type:** revision, 2026-11-13 batch
+- **Themes:** Biomedical & translational medicine; Medical physics & imaging; Molecular & cell biology
+
+### 15. [Symmetry-Induced Conservation Laws, Three-Channel Attribution, and Solid-Phase Recycling in Prebiotic Enantiomeric Excess Amplification](https://arxiv.org/abs/2611.10725)
+- **Abstract:** The revised paper derives conservation and attribution identities for mirror-symmetric reaction networks and re-analyzes experimental benchmark systems for chiral amplification and phase partitioning.
+- **Authors:** Zeyu Jia, Anlin Gong, Bingmei Wu
+- **arXiv:** `2611.10725v2` (first submitted 2026-11-07T13:38:03Z; revised 2026-11-12T03:06:16Z; categories: `q-bio.BM`)
+- **Evidence for ranking:** Direct prebiotic-chemistry relevance and a v2 update in the batch; the abstract reports analyses of seven experimental benchmark systems. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors argue that apparent enantiomeric-excess gains can reflect phase partitioning and mass loss rather than new parity-breaking synthesis, and report model-derived yields for coupled recycling schemes.
+- **Caveat:** This is a theoretical framework and re-analysis of existing systems, not new experimental confirmation of the proposed yield mechanisms.
+- **Announcement type:** revision, 2026-11-13 batch
+- **Themes:** Biochemistry & proteins; Quantitative methods
+
 ## Trending Research Themes
 
 - **Modeling molecular function needs context-specific validation.** The beta-lactamase study includes limited expression/MIC testing; Silscore evaluates retrospective potency datasets; GrnPFN predicts non-additive transcription; MutAtlas and the invariant-relabeling study test protein-model signals; and CupOFMoCA and the DEL paper assess generated or planned binding designs computationally. Their targets and evidence types differ, so the set supports an evaluation theme, not a single validated AI capability.
 - **RNA and perturbation models emphasize transfer.** Silscore tests potency transfer across datasets/targets, while GrnPFN evaluates combination-response predictions across perturbation screens. Both remain bounded by the particular data splits, target contexts, and readouts used.
 - **Translation claims remain bounded by study design.** AVA is evaluated on sequencing datasets; the EBV report is a reanalysis with small human and mouse contrasts; and the red-cell, perioperative, and low-field fMRI papers each have different model, cohort, or feasibility limits. These papers do not collectively establish clinical benefit or a field-wide clinical shift.
+- **New revisions in this batch:** TRACED-X adds experiments after review and still reports only eight glioma patients; the prebiotic-chirality update adds analysis of existing benchmark systems, not new experiments. Both are revisions, not new papers.
 
 ## Open Problems and Research Directions
 
@@ -151,17 +173,18 @@ These follow-ups are grounded in the limitations reported by the selected author
 - **Compare model-derived protein signals with new experiments.** Test MutAtlas predictions on proteins and assays outside ProteinGym using focused deep-mutational scanning; stratify calibration and ranking by cross-model disagreement. For CupOFMoCA and the DEL sizing method, synthesize selected generated or focused-library compounds and measure binding, assembly validity, and functional effects against predefined baselines.
 - **Validate diagnostic and clinical models prospectively.** AVA needs blinded multi-laboratory assessment with adjudicated variants and prespecified false-positive/false-negative and turnaround measures. The perioperative blood-pressure method needs prospective evaluation with predefined clinician override and safety endpoints. The 0.55 T fMRI result needs a larger same-subject 0.55/3 T study with repeat scans and patient cohorts before clinical-performance claims.
 - **Test EBV compartment hypotheses longitudinally.** The EBV reanalysis itself calls for virologic, clonotypic, antigen-specific, epigenetic, and longitudinal evidence. A follow-up could measure paired blood/CSF samples over time with prespecified external validation, rather than inferring ancestry from transcriptional resemblance alone.
+- **Validate the two revised studies beyond their current evidence.** TRACED-X needs larger independent glioma cohorts with test-retest and pathology comparisons; the prebiotic-chirality paper motivates closed- and open-system experiments that separately track soluble and solid chiral mass, racemization, and product formation.
 
 ## Takeaway
 
-This batch is most notable for methods that expose the limits of model transfer or reveal how much validation is still needed. A few papers report experimental or patient-derived data, but the strongest claims remain bounded by small experimental panels, retrospective datasets, or computational evaluation. The ranking reflects relevance, not measured arXiv popularity, and arXiv alone is incomplete biomedical coverage.
+This 15-paper batch is most notable for methods that expose the limits of model transfer or reveal how much validation is still needed. A few papers report experimental or patient-derived data, but the strongest claims remain bounded by small experimental panels, retrospective datasets, or computational evaluation. The ranking reflects relevance, not measured arXiv popularity, and arXiv alone is incomplete biomedical coverage.
 
 ## Method and sources
 
 - **Window:** daily; latest announcement batch Friday 2026-11-13. The current date, Sunday 2026-11-15, has no newer batch in the checked listings, so this report uses the prior Friday batch. Announcement date range: 2026-11-13 through 2026-11-13. The underlying new-submission timestamps for most selected papers span 2026-11-05 through 2026-11-12; the EBV paper is explicitly identified as a new q-bio.GN category listing although its arXiv record retains its earlier 2026-09-23 first-submission date.
-- **Snapshot:** 2026-11-15 01:23:26 UTC.
-- **Candidate pool:** Checked recent listings for `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, and `physics.med-ph`; the broad arXiv API query also included `cs.BI`. The Friday batch had 30 category appearances (29 unique IDs after cross-list deduplication) in the checked listings; 13 papers were selected for direct biological/biomedical relevance. The API pool was paginated through 400 results, reaching first-submission dates older than the daily batch. The EBV category listing was verified directly because its stored first-submission timestamp predates this batch.
-- **Ranking:** arXiv has no official trend or readership ranking. Semantic Scholar Graph API was queried by arXiv ID for citation count, influential-citation count, reference count, publication type, fields of study, and external IDs. All 13 showed 0 citations and 0 influential citations at the snapshot, so citation velocity did not provide a defensible popularity order. Entries are ranked by relevance to the requested molecular/biomedical scope and checkable reported evidence; publication-status comments and category breadth are disclosed, not treated as readership measures. No independent technical discussion was located for these candidates.
+- **Snapshot:** 2026-11-15 17:27:47 UTC.
+- **Candidate pool:** Checked recent listings for `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, and `physics.med-ph`; the broad arXiv API query also included `cs.BI`. The Friday batch had 30 category appearances (29 unique IDs after cross-list deduplication) in the checked listings; 15 papers were retained: seven first submissions, six current category listings of earlier submissions, and two versions revised in the batch. The API queries were paginated until results extended beyond the selected window. Unchanged cross-list/category listings were labeled distinctly from revisions.
+- **Ranking:** arXiv has no official trend or readership ranking. Semantic Scholar Graph API was queried by arXiv ID for citation count, influential-citation count, reference count, publication type, fields of study, and external IDs. All 15 showed 0 citations and 0 influential citations at the snapshot, so citation velocity did not provide a defensible popularity order. Entries are ranked by relevance to the requested molecular/biomedical scope and checkable reported evidence; publication-status comments and category breadth are disclosed, not treated as readership measures. Limited secondary write-ups were found for the protein-relabeling and DEL papers, but this does not establish broad independent attention.
 - **Reading and evidence:** All selected abstracts were checked against arXiv records. The introductions, results, and limitations/discussion of the first three papers were also read from their PDFs. Claims are attributed to the authors; predictions, assays, retrospective reanalyses, and human clinical evidence are distinguished.
 - **Coverage:** This is an arXiv-only point-in-time sample. Much experimental and clinical biology appears on bioRxiv or medRxiv; those repositories and the broader medical literature are not covered. This is not a systematic review or clinical guidance.
-- **Sources:** [arXiv q-bio.BM recent listings](https://arxiv.org/list/q-bio.BM/recent); [q-bio.GN](https://arxiv.org/list/q-bio.GN/recent); [q-bio.MN](https://arxiv.org/list/q-bio.MN/recent); [q-bio.CB](https://arxiv.org/list/q-bio.CB/recent); [q-bio.TO](https://arxiv.org/list/q-bio.TO/recent); [q-bio.QM](https://arxiv.org/list/q-bio.QM/recent); [medical physics](https://arxiv.org/list/physics.med-ph/recent); [arXiv API category query](https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200) (paginated); [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch). Individual arXiv abstract links appear in each title.
+- **Sources:** [arXiv q-bio.BM recent listings](https://arxiv.org/list/q-bio.BM/recent); [q-bio.GN](https://arxiv.org/list/q-bio.GN/recent); [q-bio.MN](https://arxiv.org/list/q-bio.MN/recent); [q-bio.CB](https://arxiv.org/list/q-bio.CB/recent); [q-bio.TO](https://arxiv.org/list/q-bio.TO/recent); [q-bio.QM](https://arxiv.org/list/q-bio.QM/recent); [medical physics](https://arxiv.org/list/physics.med-ph/recent); [arXiv API category query](https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200) (paginated); [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch); [MutAtlas ICML proceedings](https://proceedings.mlr.press/v306/guo26c.html); [protein-relabeling discussion](https://casrai.org/news/protein-language-models-contact-prediction-invariant-relabeling-2026); [DEL media discussion](https://pharmadigest.net/en/articles/2026-11-14-second-generation-del-size-binding-model/). Individual arXiv abstract links appear in each title.

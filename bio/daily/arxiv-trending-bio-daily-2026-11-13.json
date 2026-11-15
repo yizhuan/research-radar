@@ -7,14 +7,14 @@
   "date_range_end": "2026-11-13",
   "announcement_batch_date": "2026-11-13",
   "uses_prior_batch": true,
-  "snapshot_utc": "2026-11-14T17:13:01Z",
-  "title": "arXiv Trending Biology and Biomedicine — Daily, 2026-11-13",
+  "snapshot_utc": "2026-11-15T01:23:26Z",
+  "title": "Notable recent biology and biomedical papers — Friday, 13 November 2026 arXiv batch",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-13.md",
-  "entry_count": 11,
+  "entry_count": 13,
   "entry_noun": "papers",
   "global_caveat": "arXiv has no official trending chart. This is an inferred relevance ranking from an incomplete arXiv-only biomedical corpus, not a readership or download ranking, comprehensive literature review, clinical guideline, or claim of clinical validation.",
-  "ranking_basis": "Relevance to biology and biomedicine plus checkable author-reported evidence and venue/cross-list signals; not popularity.",
-  "ranking_explanation": "Semantic Scholar returned zero citation and influential-citation totals for all 11 selected records at the snapshot. Attention evidence therefore does not distinguish the papers; the selection is ordered by demonstrated topic relevance and evidence type, with recency not treated as popularity.",
+  "ranking_basis": "Direct relevance to the biology/biomedicine scope and checkable reported research evidence; citation momentum does not distinguish candidates.",
+  "ranking_explanation": "Semantic Scholar returned zero citation and zero influential-citation totals for all selected papers at the snapshot. Papers are ranked by relevance and the evidence type reported by the authors, not popularity.",
   "sections": [
     {
       "id": "00-headline",
@@ -22,51 +22,84 @@
       "title": "Headline",
       "rank": null,
       "url": "",
-      "content": "The latest available daily batch in the configured biology and biomedicine arXiv corpus is dated 2026-11-13, with 11 selected papers. Computational models tested against molecular, sequencing, and cell-level evidence are the dominant pattern, although direct experimental and clinical validation remains uneven. The agenda is environmental resistance enzymes, RNA silencing and perturbation prediction, protein-variant models, diagnostic sequencing, and low-field MRI. This is the prior batch because Saturday, 14 November had no newer announcement batch. arXiv has no official trending chart; the ranking is inferred from incomplete biomedical coverage.",
+      "content": "Thirteen papers are selected from the latest biology/biomedicine announcement batch. The clearest recurring pattern is computational methods being tested against molecular or assay data, with important gaps between in-silico performance and experimental or clinical validation. Spoken agenda: resistance enzymes, siRNA potency and perturbation response; protein mutation and conjugate design; sequencing adjudication; then biomedical modeling and imaging. arXiv has no official trending chart; this relevance-ranked list is inferred from incomplete arXiv coverage and is not a measured popularity ranking. Semantic Scholar returned zero citations and zero influential citations for all 13 papers at the snapshot, so citation momentum does not support a popularity ranking. The entries below are therefore “Notable recent papers,” ranked by direct relevance and checkable research evidence, not by readership, downloads, or author reputation. Acceptance and journal comments are reported as publication-status signals only.",
       "refs": [],
-      "subtitle": "",
-      "target_words": [60, 100],
-      "source_markdown": "The latest available daily batch in the configured biology and biomedicine arXiv corpus is dated 2026-11-13, with 11 selected papers. Computational models tested against molecular, sequencing, and cell-level evidence are the dominant pattern, although direct experimental and clinical validation remains uneven. The agenda is environmental resistance enzymes, RNA silencing and perturbation prediction, protein-variant models, diagnostic sequencing, and low-field MRI. This is the prior batch because Saturday, 14 November had no newer announcement batch. arXiv has no official trending chart; the ranking is inferred from incomplete biomedical coverage."
+      "subtitle": "13 papers"
     },
     {
-      "id": "01-deep-learning-guided-discovery-reveals-the-diversity-and-mutational-potential-of-environmental-beta-lactamases",
+      "id": "01-deep-learning-guided-discovery-reveals-the-diversity-and-mut",
       "kind": "paper",
       "rank": 1,
       "title": "Deep learning-guided discovery reveals the diversity and mutational potential of environmental beta-lactamases",
       "url": "https://arxiv.org/abs/2611.14568",
       "arxiv_id": "2611.14568",
       "arxiv_version": "v1",
-      "published": "2026-11-09T14:29:14Z",
-      "categories": ["q-bio.GN", "cs.AI"],
-      "authors": ["Liangjun Ge", "Qiandi Gao", "Haiming Xu", "Zhiwei Qin", "Heqian Zhang"],
-      "themes": ["Biochemistry & proteins", "DNA & genomics", "Bioinformatics & sequence analysis"],
-      "abstract": "The authors combine protein-language-model representations and ensemble learning to identify over 46,000 putative environmental beta-lactamases, then report resistance assays for divergent candidates and mutation effects.",
-      "claimed_contribution": "The authors claim a PLM/ensemble workflow expands the candidate reservoir and identifies mutation-associated resistance changes; their abstract reports divergent candidates conferring resistance when expressed in E. coli.",
-      "unique_caveat": "The full text says experimental characterization covered only two class-C candidates, with resistance assessed mainly by MIC; this does not establish environmental prevalence, transmission, or human risk.",
+      "published": "2026-11-09T14:29:14TUTC",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Liangjun Ge",
+        "Qiandi Gao",
+        "Haiming Xu",
+        "Zhiwei Qin",
+        "Heqian Zhang"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "The authors combine protein-language-model representations and ensemble learning to identify environmental beta-lactamase candidates, then report resistance assays for two divergent enzymes and mutation effects.",
+      "claimed_contribution": "The authors report identifying more than 46,000 putative environmental beta-lactamases and finding that two divergent class-C candidates expressed in *E. coli* confer resistance to multiple beta-lactams; predicted substitutions altered resistance profiles.",
+      "unique_caveat": "The full paper states that experimental characterization covered only two class-C candidates and resistance was assessed primarily by MIC. It does not establish environmental prevalence, transmission, or human risk.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct antimicrobial-resistance relevance; the authors report expression/antibiotic testing, including MIC-based validation, rather than sequence prediction alone. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.14568", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14568?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct antimicrobial-resistance and protein-function relevance; the authors report expression and antibiotic testing, including MIC measurements, rather than sequence prediction alone. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.14568",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14568?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "The authors combine protein-language-model representations and ensemble learning to identify environmental beta-lactamase candidates, then report resistance assays for two divergent enzymes and mutation effects.",
+      "subtitle": "Biochemistry & proteins; DNA & genomics"
     },
     {
-      "id": "02-silscore-modelling-sirna-potency-with-positional-thermodynamics-and-data-selected-nucleotide-identity-terms",
+      "id": "02-silscore-modelling-sirna-potency-with-positional-thermodynam",
       "kind": "paper",
       "rank": 2,
       "title": "Silscore: modelling siRNA potency with positional thermodynamics and data-selected nucleotide-identity terms",
       "url": "https://arxiv.org/abs/2611.15812",
       "arxiv_id": "2611.15812",
       "arxiv_version": "v1",
-      "published": "2026-11-11T18:28:24Z",
-      "categories": ["q-bio.BM", "physics.bio-ph", "q-bio.QM"],
-      "authors": ["Giuseppe Sacco", "Isabella Baldini", "Riccardo Paone", "Mattia Capulli", "Guido Sanguinetti", "Giovanni Bussi"],
-      "themes": ["RNA & transcriptomics", "Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "Silscore is a compact guide-sequence-only model combining global and positional duplex thermodynamics with sparse nucleotide-identity terms, evaluated on held-out and external siRNA potency datasets.",
-      "claimed_contribution": "The authors report the highest observed Pearson correlation among evaluated comparators in three transfer evaluations, with a 26-parameter interpretable model.",
-      "unique_caveat": "This is retrospective dataset validation, not a prospective silencing experiment; a guide-only model omits target-site accessibility and transcript context by design.",
+      "published": "2026-11-11T18:28:24TUTC",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Giuseppe Sacco",
+        "Isabella Baldini",
+        "Riccardo Paone",
+        "Mattia Capulli",
+        "Guido Sanguinetti",
+        "Giovanni Bussi"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Silscore is a compact guide-sequence-only model combining overall and position-specific duplex thermodynamics with sparse nucleotide-identity terms to estimate siRNA potency.",
+      "claimed_contribution": "The authors report that the 26-parameter model has the highest observed Pearson correlation in three transfer evaluations; on Katoh–Suzuki, the data support an advantage over each applicable comparator. The paper also reports that some other comparisons are inconclusive.",
+      "unique_caveat": "These are retrospective dataset evaluations, not prospective silencing experiments. The guide-only model omits target-site accessibility and transcript context by design.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Strong fit to RNA design; the paper reports evaluations on the Huesken split plus Mixset and Katoh–Suzuki external datasets and an unseen-target transfer test. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.15812", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.15812?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct RNA silencing-design question; tested on the Huesken split, Mixset, Katoh–Suzuki, and an unseen-target transfer setting. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.15812",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.15812?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "Silscore is a compact guide-sequence-only model combining overall and position-specific duplex thermodynamics with sparse nucleotide-identity terms to estimate siRNA potency.",
+      "subtitle": "RNA & transcriptomics; Biochemistry & proteins"
     },
     {
       "id": "03-predicting-transcriptional-interactions-with-grnpfn",
@@ -76,177 +109,395 @@
       "url": "https://arxiv.org/abs/2611.14559",
       "arxiv_id": "2611.14559",
       "arxiv_version": "v1",
-      "published": "2026-11-05T00:32:22Z",
-      "categories": ["q-bio.MN"],
-      "authors": ["Haihui Zhang"],
-      "themes": ["RNA & transcriptomics", "Gene regulation & epigenetics", "Omics & single-cell methods"],
-      "abstract": "GrnPFN uses a prior-data-fitted network trained on simulated gene-regulatory screens to predict non-additive transcriptional responses from single-perturbation profiles, with measured combinations added in context without retraining.",
-      "claimed_contribution": "The author reports better prediction than specified gradient-boosting and kernel-ridge baselines under low-measurement settings, including transfer to an additional perturbation screen.",
-      "unique_caveat": "The paper notes that several pair folds overlap in perturbation members or compounds, some partitions reuse cells, and the additional drug–gene test covers one drug in one cell line; broader independent prospective tests are needed.",
+      "published": "2026-11-05T00:32:22TUTC",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "authors": [
+        "Haihui Zhang"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Gene regulation & epigenetics",
+        "Omics & single-cell methods"
+      ],
+      "abstract": "GrnPFN uses simulated gene-regulatory-network screens for pretraining, then predicts non-additive transcriptional responses to combined perturbations from single-perturbation profiles and limited measured combinations.",
+      "claimed_contribution": "The author reports better prediction than tested gradient-boosting and kernel-ridge baselines when combination measurements are absent or limited, with the relative advantage diminishing as screen-specific combinations accumulate.",
+      "unique_caveat": "The full paper notes that several later partitions reused cells, perturbation-pair folds overlap in members or compounds, and an additional drug–gene evaluation involved one drug in one cell line. Predicted transcriptional non-additivity does not itself establish a molecular mechanism or synergy in other phenotypes.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct relevance to gene regulation and single-cell perturbation studies; evaluated across CRISPR activation, RNA knockdown and drug-combination screens, with an additional CRISPRi–drug screen. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.14559", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14559?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct gene-regulation and single-cell perturbation focus; the paper evaluates CRISPR activation, RNA knockdown, and drug combinations and includes an additional CRISPRi–drug screen. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.14559",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14559?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "GrnPFN uses simulated gene-regulatory-network screens for pretraining, then predicts non-additive transcriptional responses to combined perturbations from single-perturbation profiles and limited measured combinations.",
+      "subtitle": "RNA & transcriptomics; Gene regulation & epigenetics"
     },
     {
-      "id": "04-mutatlas-a-pdb-wide-energy-guided-atlas-of-protein-mutation-effects",
+      "id": "04-mutatlas-a-pdb-wide-energy-guided-atlas-of-protein-mutation",
       "kind": "paper",
       "rank": 4,
       "title": "MutAtlas: A PDB-Wide Energy-Guided Atlas of Protein Mutation Effects",
       "url": "https://arxiv.org/abs/2611.16361",
       "arxiv_id": "2611.16361",
       "arxiv_version": "v1",
-      "published": "2026-11-12T06:22:47Z",
-      "categories": ["cs.LG", "q-bio.GN"],
-      "authors": ["Ruihan Guo", "Chaoran Cheng", "Zhanghan Ni", "Neil He", "Bangji Yang", "Ge Liu"],
-      "themes": ["Biochemistry & proteins", "Bioinformatics & sequence analysis"],
-      "abstract": "MutAtlas assembles computational mutation preferences across experimentally resolved PDB structures and distills physics-based, protein-language-model, and inverse-folding signals while representing their disagreement.",
-      "claimed_contribution": "The authors claim that learning relative mutation preferences while modeling disagreement improves overall performance over the tested zero-shot baselines and naive multi-source fusion methods.",
-      "unique_caveat": "The method is trained without experimental mutation labels and is assessed on benchmark data; model-derived mutation preferences are not biochemical measurements or clinical variant interpretations.",
+      "published": "2026-11-12T06:22:47TUTC",
+      "categories": [
+        "cs.LG"
+      ],
+      "authors": [
+        "Ruihan Guo",
+        "Chaoran Cheng",
+        "Zhanghan Ni",
+        "Neil He",
+        "Bangji Yang",
+        "Ge Liu"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "MutAtlas assembles mutation signals from physics-based, protein-language, and inverse-folding models across experimentally resolved structures, then proposes disagreement-aware distillation for zero-shot mutation-effect prediction.",
+      "claimed_contribution": "The authors report that their method, trained without experimental mutation labels, had the best overall performance among evaluated zero-shot baselines and naive fusion strategies on ProteinGym; the full-text table reports 0.498 overall macro-averaged Spearman correlation.",
+      "unique_caveat": "This is a computational benchmark result using model-generated training signals, not experimental or clinical validation. Generalization across proteins, assays, and engineering decisions remains to be tested.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "The arXiv comment says accepted at ICML 2026; the authors report a ProteinGym zero-shot benchmark and release a dataset/evaluation pipeline. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.16361", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16361?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct protein mutation interpretation and engineering relevance; cross-listed in genomics; the arXiv comment says accepted at ICML 2026. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.16361",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16361?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "MutAtlas assembles mutation signals from physics-based, protein-language, and inverse-folding models across experimentally resolved structures, then proposes disagreement-aware distillation for zero-shot mutation-effect prediction.",
+      "subtitle": "Biochemistry & proteins; Bioinformatics & sequence analysis"
     },
     {
-      "id": "05-cupofmoca-coupled-objective-guided-discrete-flows-for-molecular-conjugate-assembly",
+      "id": "05-cupofmoca-coupled-objective-guided-discrete-flows-for-molecu",
       "kind": "paper",
       "rank": 5,
       "title": "CupOFMoCA: Coupled Objective-Guided Discrete Flows for Molecular Conjugate Assembly",
       "url": "https://arxiv.org/abs/2611.16099",
       "arxiv_id": "2611.16099",
       "arxiv_version": "v1",
-      "published": "2026-11-11T23:18:03Z",
-      "categories": ["q-bio.BM", "cs.LG"],
-      "authors": ["Ruoxi Rosie Zhang", "Ziang Li", "Jiatao Gu", "Pranam Chatterjee"],
-      "themes": ["Biochemistry & proteins", "Biomedical & translational medicine", "Quantitative methods"],
-      "abstract": "CupOFMoCA generates molecular conjugates while applying cross-component chemical constraints during generation, with computational evaluations across peptide-drug conjugate and PROTAC systems.",
-      "claimed_contribution": "The authors report improved chemically valid assembly yield versus tested post-hoc filtering and higher assembly validity on two of three PROTAC systems.",
-      "unique_caveat": "The evidence is computational generation, predicted binding/degradation scoring, and simulation; the generated molecules were not shown in the abstract to have experimentally measured degradation or therapeutic efficacy.",
+      "published": "2026-11-11T23:18:03TUTC",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Ruoxi Rosie Zhang",
+        "Ziang Li",
+        "Jiatao Gu",
+        "Pranam Chatterjee"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "CupOFMoCA generates PROTACs and peptide–drug conjugates while enforcing cross-component chemical constraints during generation rather than filtering invalid assemblies afterward.",
+      "claimed_contribution": "The authors report improved valid-conjugate yield over matched post-hoc filtering for peptide–drug conjugates and the highest assembly validity on two of three PROTAC systems; they also report post-hoc scoring and molecular-dynamics analyses.",
+      "unique_caveat": "Evidence is computational generation, predicted scoring, and simulation; the paper does not establish experimentally measured degradation, binding, or therapeutic efficacy for generated molecules.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "The arXiv comment identifies publication in NeurIPS 2026; the abstract reports tests on three PDC systems and three PROTAC systems, including post-hoc scoring and molecular-dynamics checks. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.16099", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16099?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct molecular-conjugate design application; arXiv comment identifies publication at NeurIPS 2026. The abstract reports evaluations across three peptide–drug-conjugate and three PROTAC systems. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.16099",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16099?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "CupOFMoCA generates PROTACs and peptide–drug conjugates while enforcing cross-component chemical constraints during generation rather than filtering invalid assemblies afterward.",
+      "subtitle": "Biochemistry & proteins; Biomedical & translational medicine"
     },
     {
-      "id": "06-ava-agentic-variant-adjudication-for-automated-auditable-read-level-review-in-cancer-diagnostic-sequencing",
+      "id": "06-ava-agentic-variant-adjudication-for-automated-auditable-rea",
       "kind": "paper",
       "rank": 6,
       "title": "AVA: Agentic Variant Adjudication for Automated, Auditable Read-Level Review in Cancer Diagnostic Sequencing",
       "url": "https://arxiv.org/abs/2611.14560",
       "arxiv_id": "2611.14560",
       "arxiv_version": "v1",
-      "published": "2026-11-05T06:41:32Z",
-      "categories": ["q-bio.GN", "cs.AI"],
-      "authors": ["Caleb Chin", "Sidharth Gupta", "Arun K Anguraj Vadivel", "Robert Siddaway", "Siddharth Arya", "Arianna He", "Peter Zhukovsky", "Cynthia Hawkins"],
-      "themes": ["DNA & genomics", "Biomedical & translational medicine", "Bioinformatics & sequence analysis"],
-      "abstract": "AVA uses auditable agent workflows to review read-level evidence for borderline low-variant-allele-frequency calls, and is evaluated on a DNA-sequencing benchmark and patient RNA-seq data.",
-      "claimed_contribution": "The authors report that several closed- and open-weight agents outperform the best tested VAF/depth thresholds on a subsample of borderline variants and produce reasoning traces for review.",
-      "unique_caveat": "Benchmark performance is not prospective clinical validation; the abstract does not establish impacts on diagnostic errors, turnaround time, or patient outcomes in routine laboratories.",
+      "published": "2026-11-05T06:41:32TUTC",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Caleb Chin",
+        "Sidharth Gupta",
+        "Arun K Anguraj Vadivel",
+        "Robert Siddaway",
+        "Siddharth Arya",
+        "Arianna He",
+        "Peter Zhukovsky",
+        "Cynthia Hawkins"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Biomedical & translational medicine",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "AVA uses auditable agent workflows to inspect read-level sequencing evidence for borderline low-variant-allele-frequency calls, evaluated on a DNA-sequencing benchmark and patient RNA-seq data.",
+      "claimed_contribution": "The authors report that tested closed- and open-weight agents outperformed the best VAF/depth thresholds on a subsample of borderline variants, returning auditable reasoning traces.",
+      "unique_caveat": "Benchmark results do not establish performance in routine prospective laboratories, diagnostic error reduction, turnaround-time improvement, or patient benefit.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "The arXiv comment says accepted to the ML4H 2026 Findings Track; the abstract names the SEQC2 DNA-seq benchmark and patient RNA-seq data. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.14560", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14560?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct cancer-sequencing workflow relevance; the abstract names the SEQC2 DNA-seq benchmark and patient RNA-seq data, and the arXiv comment reports acceptance to the ML4H 2026 Findings Track. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.14560",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14560?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "AVA uses auditable agent workflows to inspect read-level sequencing evidence for borderline low-variant-allele-frequency calls, evaluated on a DNA-sequencing benchmark and patient RNA-seq data.",
+      "subtitle": "DNA & genomics; Biomedical & translational medicine"
     },
     {
-      "id": "07-stage-resolved-ebv-induced-b-cell-programs-across-cns-selection-and-multiple-sclerosis-compartments",
+      "id": "07-protein-language-models-fail-to-capture-contact-predictions",
       "kind": "paper",
       "rank": 7,
-      "title": "Stage-Resolved EBV-Induced B-Cell Programs Across CNS Selection and Multiple Sclerosis Compartments",
-      "url": "https://arxiv.org/abs/2611.14524",
-      "arxiv_id": "2611.14524",
-      "arxiv_version": "v1",
-      "published": "2026-09-23T23:28:52Z",
-      "categories": ["q-bio.GN", "cs.DB", "cs.IR"],
-      "authors": ["Hasan Jamil", "Alexander Gow"],
-      "themes": ["RNA & transcriptomics", "Molecular & cell biology", "Biomedical & translational medicine"],
-      "abstract": "A cross-dataset reanalysis finds stage- and compartment-dependent EBV-associated B-cell transcriptional programs rather than a stable signature shared across blood, cerebrospinal fluid, and brain.",
-      "claimed_contribution": "The authors report that an early EBV-associated expression program was depleted in CSF while later latency-associated programs increased, with the directions persisting after shared genes were removed.",
-      "unique_caveat": "The study is a retrospective reanalysis with small evaluable samples for key contrasts; the factor did not predict MS activity (AUC 0.487), and the results do not establish causation or a validated biomarker.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "The paper combines human and humanized-mouse datasets with multiple control analyses; the abstract reports nine evaluable human CSF participants and five EBV-exposed mice for key contrasts. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.14524", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14524?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
-    },
-    {
-      "id": "08-protein-language-models-fail-to-capture-contact-predictions-under-invariant-relabeling",
-      "kind": "paper",
-      "rank": 8,
       "title": "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling",
       "url": "https://arxiv.org/abs/2611.16881",
       "arxiv_id": "2611.16881",
       "arxiv_version": "v1",
-      "published": "2026-11-12T14:45:07Z",
-      "categories": ["q-bio.QM", "cs.AI"],
-      "authors": ["Paarth Batra", "Aryan Keluskar"],
-      "themes": ["Biochemistry & proteins", "Bioinformatics & sequence analysis", "Quantitative methods"],
-      "abstract": "The authors test whether protein language models preserve contact predictions after a global amino-acid relabeling that leaves alignment-level statistics unchanged, reporting marked degradation across models and scales.",
-      "claimed_contribution": "The authors claim the perturbation exposes reliance on canonical residue identities (“alphabet anchoring”) rather than only invariant coevolutionary statistics.",
-      "unique_caveat": "This is a computational invariance stress test; it demonstrates sensitivity of model outputs to token relabeling, not a direct experimental failure of protein structure prediction in biological settings.",
+      "published": "2026-11-12T14:45:07TUTC",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Paarth Batra",
+        "Aryan Keluskar"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "An amino-acid alphabet permutation that preserves alignment statistics disrupts contact predictions from tested protein language models, unlike the classical Potts and inverse-covariance estimators.",
+      "claimed_contribution": "Across nine proteins, the authors report that global residue relabeling sharply reduces model contact-map overlap while Potts predictions remain invariant, which they interpret as evidence of “alphabet anchoring.”",
+      "unique_caveat": "The full paper limits the evaluation to a relatively small set of short, mostly single-domain proteins and three model families. The authors state that invariance is necessary but not sufficient evidence for pure coevolutionary inference; retrained or fine-tuned models were not tested.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Accepted to the ICBINB failure-modes workshop at NeurIPS 2026 per the arXiv comment; tests cover ESM-2, MSA Transformer, and AMPLIFY from 8M to 3B parameters. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.16881", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16881?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct protein-model interpretability result; tests ESM-2, MSA Transformer, and AMPLIFY across multiple scales; the arXiv comment reports acceptance to the ICBINB failure-modes workshop at NeurIPS 2026. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.16881",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16881?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "An amino-acid alphabet permutation that preserves alignment statistics disrupts contact predictions from tested protein language models, unlike the classical Potts and inverse-covariance estimators.",
+      "subtitle": "Biochemistry & proteins; Bioinformatics & sequence analysis"
     },
     {
-      "id": "09-using-an-energy-pixels-approach-to-estimate-the-size-a-2nd-generation-del-must-be-to-train-a-high-resolution-binding-model",
+      "id": "08-using-an-energy-pixels-approach-to-estimate-the-size-a-2nd-g",
       "kind": "paper",
-      "rank": 9,
+      "rank": 8,
       "title": "Using an energy pixels approach to estimate the size a 2nd Generation DEL must be to train a high-resolution binding model",
       "url": "https://arxiv.org/abs/2611.17121",
       "arxiv_id": "2611.17121",
       "arxiv_version": "v1",
-      "published": "2026-11-12T17:13:57Z",
-      "categories": ["cs.LG", "q-bio.BM"],
-      "authors": ["Boris P. Belotserkovskii", "R. Edward Watts"],
-      "themes": ["Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "An energy-pixels model estimates how large a focused second-generation DNA-encoded library may need to be to sample local chemical neighborhoods and provide enough tight binders for affinity-model training.",
-      "claimed_contribution": "The authors claim their estimates translate the number of tight binders needed by a model into a library-size requirement without structural information or a control library as large as the experiment.",
-      "unique_caveat": "The approach rests on an additive “pixel” model and affinity distributions from a naive library; predicted library requirements and yields need experimental validation.",
+      "published": "2026-11-12T17:13:57TUTC",
+      "categories": [
+        "cs.LG"
+      ],
+      "authors": [
+        "Boris P. Belotserkovskii",
+        "R. Edward Watts"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors model target–ligand binding as sums of interaction “pixels” and use affinity distributions from a naive DNA-encoded library to estimate the complexity and expected yield of a focused follow-up library.",
+      "claimed_contribution": "The authors say the model translates a desired number of tight binders into an estimated library size and supplies a random-design baseline against which machine-learning or active-learning designs could be assessed.",
+      "unique_caveat": "This is a model-based sizing method inferred from existing affinity distributions; no prospective synthesis-and-selection test of the predicted second-generation library is reported.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "It directly addresses data design for protein-binding models and appears in both machine-learning and biomolecular categories; its abstract gives an explicit route to compare active-learning yield with a random-library baseline. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.17121", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17121?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct biomolecular binding and medicinal-chemistry data-design relevance; cross-listed in biomolecules. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.17121",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17121?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "The authors model target–ligand binding as sums of interaction “pixels” and use affinity distributions from a naive DNA-encoded library to estimate the complexity and expected yield of a focused follow-up library.",
+      "subtitle": "Biochemistry & proteins; Quantitative methods"
     },
     {
-      "id": "10-ai-for-biologists-the-knowledge-boundaries-of-foundation-models-in-the-age-of-agentic-systems",
+      "id": "09-ai-for-biologists-the-knowledge-boundaries-of-foundation-mod",
       "kind": "paper",
-      "rank": 10,
+      "rank": 9,
       "title": "AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of Agentic Systems",
       "url": "https://arxiv.org/abs/2611.17015",
       "arxiv_id": "2611.17015",
       "arxiv_version": "v1",
-      "published": "2026-11-12T16:08:33Z",
-      "categories": ["q-bio.BM", "cs.AI"],
-      "authors": ["Tian Cai", "Andrew Kleist", "Jaimin Patel", "Duccio Malinverni", "Alexander K. Taylor", "Malvika Sharan", "Renato Umeton", "M. Madan Babu"],
-      "themes": ["Bioinformatics & sequence analysis", "Biochemistry & proteins", "Quantitative methods"],
-      "abstract": "This review proposes a framework for describing where biological foundation models and agentic workflows are reliable, organized around data, architecture, training, evaluation, and post-analysis.",
-      "claimed_contribution": "The authors propose standardized descriptions of model limits so researchers and model-using agents can state the conditions under which outputs may be trusted.",
-      "unique_caveat": "This is a review and framework proposal, not a new controlled comparison or a validated operational standard.",
+      "published": "2026-11-12T16:08:33TUTC",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Tian Cai",
+        "Andrew Kleist",
+        "Jaimin Patel",
+        "Duccio Malinverni",
+        "Alexander K. Taylor",
+        "Malvika Sharan",
+        "Renato Umeton",
+        "M. Madan Babu"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis",
+        "Omics & single-cell methods"
+      ],
+      "abstract": "This review frames a biological model’s “knowledge boundary” around data, architecture, training, evaluation, and post-analysis, to make reliability limits explicit for researchers and tool-using agents.",
+      "claimed_contribution": "The authors synthesize evidence about where biological foundation models succeed or fail and propose standardized descriptions of the conditions under which their outputs are reliable.",
+      "unique_caveat": "This is a review and framework proposal, not a new comparative benchmark or prospective demonstration that the framework improves biological decisions.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "The arXiv comment says it is to be published in Annual Review of Biomedical Data Science; its subject is broad evaluation reliability across sequence, protein, and single-cell models. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.17015", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17015?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Broad biological foundation-model scope; the arXiv comment says it is to be published in Annual Review of Biomedical Data Science. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.17015",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17015?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "This review frames a biological model’s “knowledge boundary” around data, architecture, training, evaluation, and post-analysis, to make reliability limits explicit for researchers and tool-using agents.",
+      "subtitle": "Biochemistry & proteins; Bioinformatics & sequence analysis"
     },
     {
-      "id": "11-a-feasibility-study-of-whole-cerebrum-task-based-fmri-at-055-t-motor-and-visual-tasks-using-single-shot-epi",
+      "id": "10-stage-resolved-ebv-induced-b-cell-programs-across-cns-select",
+      "kind": "paper",
+      "rank": 10,
+      "title": "Stage-Resolved EBV-Induced B-Cell Programs Across CNS Selection and Multiple Sclerosis Compartments",
+      "url": "https://arxiv.org/abs/2611.14524",
+      "arxiv_id": "2611.14524",
+      "arxiv_version": "v1",
+      "published": "2026-09-23T23:28:52TUTC",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Hasan Jamil",
+        "Alexander Gow"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Molecular & cell biology",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "A cross-dataset reanalysis reports compartment- and stage-dependent EBV-associated B-cell transcriptional programs, rather than a stable signature shared across blood, cerebrospinal fluid, and brain.",
+      "claimed_contribution": "The authors report that a frozen EBV-associated B-cell factor did not predict MS activity (AUC 0.487; p=0.489), and that early and late EBV-associated transcriptional programs showed opposing directions across compartments.",
+      "unique_caveat": "This is retrospective reanalysis with small samples for key contrasts, including nine evaluable human CSF participants and five EBV-exposed mice. The authors state that no external program met their prespecified prospective criterion; the results do not establish causation or a validated biomarker.",
+      "announcement_type": "new q-bio.GN category listing",
+      "announcement_batch_date": "2026-11-13",
+      "evidence_for_ranking": "The paper appeared in the 13 November q-bio.GN recent-list batch as a category listing; its arXiv record retains the earlier first-submission date shown above. The abstract reports human and humanized-mouse data with anatomical, sequencing-depth, and other controls. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.14524",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14524?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "A cross-dataset reanalysis reports compartment- and stage-dependent EBV-associated B-cell transcriptional programs, rather than a stable signature shared across blood, cerebrospinal fluid, and brain.",
+      "subtitle": "RNA & transcriptomics; Molecular & cell biology"
+    },
+    {
+      "id": "11-stretched-bilayer-cytoskeleton-links-hold-echinocytes-in-a-m",
       "kind": "paper",
       "rank": 11,
+      "title": "Stretched bilayer-cytoskeleton links hold echinocytes in a model splenic slit",
+      "url": "https://arxiv.org/abs/2611.16241",
+      "arxiv_id": "2611.16241",
+      "arxiv_version": "v1",
+      "published": "2026-11-12T03:39:47TUTC",
+      "categories": [
+        "physics.bio-ph"
+      ],
+      "authors": [
+        "Zhaojie Chai",
+        "Jianlu Zheng",
+        "He Li",
+        "Ming Dao",
+        "George Em Karniadakis"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "In a two-component red-cell model, stage III echinocytes required 37–50 times the pressure drop that passed an equal-area, equal-volume discocyte through a model splenic slit; stretched bilayer–cytoskeleton links were implicated in retention.",
+      "claimed_contribution": "The authors' model suggests spicule shape together with membrane loss can hinder passage through a splenic slit; lengthening the modeled links by about twofold released a held cell.",
+      "unique_caveat": "Central passage and link-stretch results are from simulated cells in a model slit, not a direct test of clearance in human spleens or transfusion outcomes.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-13",
+      "evidence_for_ranking": "Direct cell-mechanics and splenic-clearance question; cross-listed in cell biology and supported by a detailed mechanical study. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.16241",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16241?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "In a two-component red-cell model, stage III echinocytes required 37–50 times the pressure drop that passed an equal-area, equal-volume discocyte through a model splenic slit; stretched bilayer–cytoskeleton links were implicated in retention.",
+      "subtitle": "Molecular & cell biology; Biomedical & translational medicine"
+    },
+    {
+      "id": "12-a-risk-aware-individualized-blood-pressure-target-to-avoid-h",
+      "kind": "paper",
+      "rank": 12,
+      "title": "A risk-aware individualized blood pressure target to avoid hypotension in surgery",
+      "url": "https://arxiv.org/abs/2611.16757",
+      "arxiv_id": "2611.16757",
+      "arxiv_version": "v1",
+      "published": "2026-11-12T13:06:52TUTC",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Simon Buré",
+        "Jona Joachim",
+        "Florent Di Meglio"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors propose an online method for choosing an individualized blood-pressure target and norepinephrine dose from a short MAP/dose record, using a reduced PK/PD model and uncertainty propagation to limit predicted hypotension risk.",
+      "claimed_contribution": "In the virtual cohort, the method recommended a dose for 74% at a nominal 5% risk; 6.9% of patients receiving recommendations had a MAP reading below 65 mmHg, compared with 25% under a fixed 70 mmHg target applied to the full virtual cohort.",
+      "unique_caveat": "The comparison is not a prospective clinical trial: recommendations were assessed retrospectively under doses actually administered and in virtual patients. It does not establish clinical benefit or safety.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-13",
+      "evidence_for_ranking": "Direct perioperative biomedical decision-modeling question; the abstract reports retrospective-record calibration and a cohort of 4,096 virtual patients. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.16757",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16757?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "The authors propose an online method for choosing an individualized blood-pressure target and norepinephrine dose from a short MAP/dose record, using a reduced PK/PD model and uncertainty propagation to limit predicted hypotension risk.",
+      "subtitle": "Biomedical & translational medicine; Quantitative methods"
+    },
+    {
+      "id": "13-a-feasibility-study-of-whole-cerebrum-task-based-fmri-at-0-5",
+      "kind": "paper",
+      "rank": 13,
       "title": "A Feasibility Study of Whole-Cerebrum Task-Based fMRI at 0.55 T: Motor and Visual Tasks Using Single-Shot EPI",
       "url": "https://arxiv.org/abs/2611.17211",
       "arxiv_id": "2611.17211",
       "arxiv_version": "v1",
-      "published": "2026-11-12T18:09:22Z",
-      "categories": ["physics.med-ph"],
-      "authors": ["Parsa Razmara", "Takfarinas Medani", "Anand A. Joshi", "Majid Abbasi Sisara", "Ye Tian", "Sophia X. Cui", "Justin P. Haldar", "Krishna S. Nayak", "Richard M. Leahy"],
-      "themes": ["Medical physics & imaging", "Biomedical & translational medicine"],
-      "abstract": "A six-participant feasibility study reports detectable motor and visual task fMRI at 0.55 T and improved signal statistics when two five-minute runs are combined.",
-      "claimed_contribution": "The authors report task activations at 0.55 T and suggest longer acquisition can compensate for lower intrinsic BOLD sensitivity in their tested setting.",
-      "unique_caveat": "The sample is small and healthy; the 3 T reference is described as representative rather than a matched cohort. The result does not establish clinical utility or broad reproducibility.",
+      "published": "2026-11-12T18:09:22TUTC",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Parsa Razmara",
+        "Takfarinas Medani",
+        "Anand A. Joshi",
+        "Majid Abbasi Sisara",
+        "Ye Tian",
+        "Sophia X. Cui",
+        "Justin P. Haldar",
+        "Krishna S. Nayak",
+        "Richard M. Leahy"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "In six healthy participants, the authors detected motor- and visual-task activation at 0.55 T and report that concatenating two five-minute runs increased activation statistics and reduced voxelwise background dispersion.",
+      "claimed_contribution": "The authors report that whole-cerebrum task fMRI was feasible with single-shot EPI at 0.55 T; a representative 3 T dataset is used for reference, and the abstract reports that longer low-field acquisition could approach 3 T statistical significance over the compared durations.",
+      "unique_caveat": "Only six healthy participants were studied; the 3 T reference is not described as a matched-cohort comparison, and this does not establish clinical diagnostic performance.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "This is the latest medical-physics batch’s directly biomedical imaging feasibility paper; the abstract reports six healthy participants, both tasks, and a comparison to a representative 3 T dataset. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.",
-      "refs": ["https://arxiv.org/abs/2611.17211", "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17211?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"]
+      "evidence_for_ranking": "Direct medical-physics imaging feasibility question with a stated healthy-participant sample and task comparison. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.17211",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17211?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
+      ],
+      "content": "In six healthy participants, the authors detected motor- and visual-task activation at 0.55 T and report that concatenating two five-minute runs increased activation statistics and reduced voxelwise background dispersion.",
+      "subtitle": "Medical physics & imaging; Biomedical & translational medicine"
     },
     {
       "id": "80-trending-research-themes",
@@ -254,11 +505,22 @@
       "title": "Trending Research Themes",
       "rank": null,
       "url": "",
-      "content": "Computational biology models are being tested against molecular constraints and biological datasets, but the papers predict different targets and do not jointly establish a general AI-biology capability. Silscore and GrnPFN address distinct RNA problems: potency prediction and non-additive perturbation responses. The beta-lactamase study, AVA, and the EBV reanalysis show different evidence levels—limited functional assay, sequencing-benchmark comparison, and retrospective human/mouse reanalysis. A single 0.55 T fMRI feasibility paper does not signal a broader field shift.",
-      "refs": ["2611.14568", "2611.15812", "2611.14559", "2611.16361", "2611.16099", "2611.16881", "2611.17121", "2611.14560", "2611.14524", "2611.17211"],
-      "subtitle": "",
-      "target_words": [100, 170],
-      "source_markdown": "Computational biology models are being tested against molecular constraints and biological datasets, but the papers predict different targets and do not jointly establish a general AI-biology capability. Silscore and GrnPFN address distinct RNA problems: potency prediction and non-additive perturbation responses. The beta-lactamase study, AVA, and the EBV reanalysis show different evidence levels—limited functional assay, sequencing-benchmark comparison, and retrospective human/mouse reanalysis. A single 0.55 T fMRI feasibility paper does not signal a broader field shift."
+      "content": "**Modeling molecular function needs context-specific validation.** The beta-lactamase study includes limited expression/MIC testing; Silscore evaluates retrospective potency datasets; GrnPFN predicts non-additive transcription; MutAtlas and the invariant-relabeling study test protein-model signals; and CupOFMoCA and the DEL paper assess generated or planned binding designs computationally. Their targets and evidence types differ, so the set supports an evaluation theme, not a single validated AI capability. **RNA and perturbation models emphasize transfer.** Silscore tests potency transfer across datasets/targets, while GrnPFN evaluates combination-response predictions across perturbation screens. Both remain bounded by the particular data splits, target contexts, and readouts used. **Translation claims remain bounded by study design.** AVA is evaluated on sequencing datasets; the EBV report is a reanalysis with small human and mouse contrasts; and the red-cell, perioperative, and low-field fMRI papers each have different model, cohort, or feasibility limits. These papers do not collectively establish clinical benefit or a field-wide clinical shift.",
+      "refs": [
+        "2611.14568",
+        "2611.15812",
+        "2611.14559",
+        "2611.16361",
+        "2611.16099",
+        "2611.16881",
+        "2611.17121",
+        "2611.14560",
+        "2611.14524",
+        "2611.16241",
+        "2611.16757",
+        "2611.17211"
+      ],
+      "subtitle": ""
     },
     {
       "id": "81-open-problems-and-research-directions",
@@ -266,11 +528,22 @@
       "title": "Open Problems and Research Directions",
       "rank": null,
       "url": "",
-      "content": "Follow-up work should test predicted beta-lactamase function across a blinded panel spanning enzyme classes, with expression controls, MIC and direct hydrolysis assays, then evaluate evolutionary accessibility under defined exposures. Silscore and GrnPFN need frozen-model prospective tests that hold out targets, cell lines, perturbation pairs, and laboratories; include target accessibility for siRNA and independent screens for perturbation prediction. MutAtlas should be assessed against new deep-mutational-scanning experiments across protein families absent from its benchmark. AVA needs blinded multi-laboratory evaluation with expert adjudication and prespecified false-positive, false-negative, auditability, and turnaround metrics. The low-field fMRI result needs a larger same-subject 0.55 T/3 T cohort with test–retest analysis. These are proposals prompted by reported limitations, not clinical advice.",
-      "refs": ["2611.14568", "2611.15812", "2611.14559", "2611.16361", "2611.14560", "2611.17211"],
-      "subtitle": "",
-      "target_words": [140, 200],
-      "source_markdown": "Follow-up work should test predicted beta-lactamase function across a blinded panel spanning enzyme classes, with expression controls, MIC and direct hydrolysis assays, then evaluate evolutionary accessibility under defined exposures. Silscore and GrnPFN need frozen-model prospective tests that hold out targets, cell lines, perturbation pairs, and laboratories; include target accessibility for siRNA and independent screens for perturbation prediction. MutAtlas should be assessed against new deep-mutational-scanning experiments across protein families absent from its benchmark. AVA needs blinded multi-laboratory evaluation with expert adjudication and prespecified false-positive, false-negative, auditability, and turnaround metrics. The low-field fMRI result needs a larger same-subject 0.55 T/3 T cohort with test–retest analysis. These are proposals prompted by reported limitations, not clinical advice."
+      "content": "These follow-ups are grounded in the limitations reported by the selected authors and are research proposals, not clinical advice. **Expand enzyme-function validation.** The beta-lactamase authors identify two class-C candidates as experimentally characterized and call for broader functional testing. A next study could sample divergent candidates from all Ambler classes, pair MICs with direct hydrolysis, expression, and stability assays, then test predicted substitutions across sequence backgrounds and controlled antibiotic exposures. **Freeze and prospectively test transfer models.** For Silscore, preregister a guide-only prediction set across targets and laboratories, then compare with models incorporating target accessibility and transcript context. For GrnPFN, prospectively measure unseen perturbation pairs in independent cell lines and screens, separating cells used for inputs from those used for evaluation and checking whether predicted transcriptional non-additivity corresponds to other phenotypes. **Compare model-derived protein signals with new experiments.** Test MutAtlas predictions on proteins and assays outside ProteinGym using focused deep-mutational scanning; stratify calibration and ranking by cross-model disagreement. For CupOFMoCA and the DEL sizing method, synthesize selected generated or focused-library compounds and measure binding, assembly validity, and functional effects against predefined baselines. **Validate diagnostic and clinical models prospectively.** AVA needs blinded multi-laboratory assessment with adjudicated variants and prespecified false-positive/false-negative and turnaround measures. The perioperative blood-pressure method needs prospective evaluation with predefined clinician override and safety endpoints. The 0.55 T fMRI result needs a larger same-subject 0.55/3 T study with repeat scans and patient cohorts before clinical-performance claims. **Test EBV compartment hypotheses longitudinally.** The EBV reanalysis itself calls for virologic, clonotypic, antigen-specific, epigenetic, and longitudinal evidence. A follow-up could measure paired blood/CSF samples over time with prespecified external validation, rather than inferring ancestry from transcriptional resemblance alone.",
+      "refs": [
+        "2611.14568",
+        "2611.15812",
+        "2611.14559",
+        "2611.16361",
+        "2611.16099",
+        "2611.16881",
+        "2611.17121",
+        "2611.14560",
+        "2611.14524",
+        "2611.16241",
+        "2611.16757",
+        "2611.17211"
+      ],
+      "subtitle": ""
     },
     {
       "id": "90-takeaway",
@@ -278,11 +551,9 @@
       "title": "Takeaway",
       "rank": null,
       "url": "",
-      "content": "This batch is strongest in computational methods for molecular and perturbation biology, with several papers making their evidence boundary visible. The clearest experimental result is limited enzyme testing; the RNA, protein-variant, diagnostic, and conjugate-design claims remain dataset- or model-based. Treat the ranking as a relevance-led reading list, not a popularity chart or clinical evidence assessment.",
+      "content": "This batch is most notable for methods that expose the limits of model transfer or reveal how much validation is still needed. A few papers report experimental or patient-derived data, but the strongest claims remain bounded by small experimental panels, retrospective datasets, or computational evaluation. The ranking reflects relevance, not measured arXiv popularity, and arXiv alone is incomplete biomedical coverage.",
       "refs": [],
-      "subtitle": "",
-      "target_words": [45, 80],
-      "source_markdown": "This batch is strongest in computational methods for molecular and perturbation biology, with several papers making their evidence boundary visible. The clearest experimental result is limited enzyme testing; the RNA, protein-variant, diagnostic, and conjugate-design claims remain dataset- or model-based. Treat the ranking as a relevance-led reading list, not a popularity chart or clinical evidence assessment."
+      "subtitle": ""
     }
   ]
 }

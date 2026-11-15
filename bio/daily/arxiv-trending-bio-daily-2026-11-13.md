@@ -1,147 +1,167 @@
-# arXiv Trending Biology and Biomedicine — Friday, 13 November 2026
+# Notable recent biology and biomedical papers — Friday, 13 November 2026 arXiv batch
 
-## Headline
+Thirteen papers are selected from the latest biology/biomedicine announcement batch. The clearest recurring pattern is computational methods being tested against molecular or assay data, with important gaps between in-silico performance and experimental or clinical validation. Spoken agenda: resistance enzymes, siRNA potency and perturbation response; protein mutation and conjugate design; sequencing adjudication; then biomedical modeling and imaging. arXiv has no official trending chart; this relevance-ranked list is inferred from incomplete arXiv coverage and is not a measured popularity ranking.
 
-Daily arXiv biology/biomedicine report for the Friday 13 November announcement batch: 11 papers selected. The strongest recurring pattern is computational biology models being tested against molecular, sequencing, or cell-level evidence, while direct experimental and clinical validation remains uneven. Today’s agenda: environmental resistance enzymes, RNA silencing and perturbation prediction, protein-variant models, diagnostic sequencing, and one low-field MRI feasibility study. This is the most recent batch because Saturday, 14 November has no newer announcement batch. arXiv has no official trending chart; this is an inferred relevance ranking over an incomplete arXiv-only slice of biomedical research, not a readership or download ranking.
+Semantic Scholar returned zero citations and zero influential citations for all 13 papers at the snapshot, so citation momentum does not support a popularity ranking. The entries below are therefore “Notable recent papers,” ranked by direct relevance and checkable research evidence, not by readership, downloads, or author reputation. Acceptance and journal comments are reported as publication-status signals only.
 
-## Notable recent papers (ranked by relevance)
+## Notable recent papers
 
 ### 1. [Deep learning-guided discovery reveals the diversity and mutational potential of environmental beta-lactamases](https://arxiv.org/abs/2611.14568)
-- **Abstract:** The authors combine protein-language-model representations and ensemble learning to identify over 46,000 putative environmental beta-lactamases, then report resistance assays for divergent candidates and mutation effects.
+- **Abstract:** The authors combine protein-language-model representations and ensemble learning to identify environmental beta-lactamase candidates, then report resistance assays for two divergent enzymes and mutation effects.
 - **Authors:** Liangjun Ge, Qiandi Gao, Haiming Xu, Zhiwei Qin, Heqian Zhang
 - **arXiv:** `2611.14568v1` (published 2026-11-09 14:29:14 UTC; categories: `q-bio.GN`, `cs.AI`)
-- **Evidence for ranking:** Direct antimicrobial-resistance relevance; the authors report expression/antibiotic testing, including MIC-based validation, rather than sequence prediction alone. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors claim a PLM/ensemble workflow expands the candidate reservoir and identifies mutation-associated resistance changes; their abstract reports divergent candidates conferring resistance when expressed in E. coli.
-- **Caveat:** The full text says experimental characterization covered only two class-C candidates, with resistance assessed mainly by MIC; this does not establish environmental prevalence, transmission, or human risk.
+- **Evidence for ranking:** Direct antimicrobial-resistance and protein-function relevance; the authors report expression and antibiotic testing, including MIC measurements, rather than sequence prediction alone. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report identifying more than 46,000 putative environmental beta-lactamases and finding that two divergent class-C candidates expressed in *E. coli* confer resistance to multiple beta-lactams; predicted substitutions altered resistance profiles.
+- **Caveat:** The full paper states that experimental characterization covered only two class-C candidates and resistance was assessed primarily by MIC. It does not establish environmental prevalence, transmission, or human risk.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** Biochemistry & proteins; DNA & genomics; Bioinformatics & sequence analysis
 
 ### 2. [Silscore: modelling siRNA potency with positional thermodynamics and data-selected nucleotide-identity terms](https://arxiv.org/abs/2611.15812)
-- **Abstract:** Silscore is a compact guide-sequence-only model combining global and positional duplex thermodynamics with sparse nucleotide-identity terms, evaluated on held-out and external siRNA potency datasets.
+- **Abstract:** Silscore is a compact guide-sequence-only model combining overall and position-specific duplex thermodynamics with sparse nucleotide-identity terms to estimate siRNA potency.
 - **Authors:** Giuseppe Sacco, Isabella Baldini, Riccardo Paone, Mattia Capulli, Guido Sanguinetti, Giovanni Bussi
 - **arXiv:** `2611.15812v1` (published 2026-11-11 18:28:24 UTC; categories: `q-bio.BM`, `physics.bio-ph`, `q-bio.QM`)
-- **Evidence for ranking:** Strong fit to RNA design; the paper reports evaluations on the Huesken split plus Mixset and Katoh–Suzuki external datasets and an unseen-target transfer test. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors report the highest observed Pearson correlation among evaluated comparators in three transfer evaluations, with a 26-parameter interpretable model.
-- **Caveat:** This is retrospective dataset validation, not a prospective silencing experiment; a guide-only model omits target-site accessibility and transcript context by design.
+- **Evidence for ranking:** Direct RNA silencing-design question; tested on the Huesken split, Mixset, Katoh–Suzuki, and an unseen-target transfer setting. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report that the 26-parameter model has the highest observed Pearson correlation in three transfer evaluations; on Katoh–Suzuki, the data support an advantage over each applicable comparator. The paper also reports that some other comparisons are inconclusive.
+- **Caveat:** These are retrospective dataset evaluations, not prospective silencing experiments. The guide-only model omits target-site accessibility and transcript context by design.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** RNA & transcriptomics; Biochemistry & proteins; Quantitative methods
 
 ### 3. [Predicting transcriptional interactions with GrnPFN](https://arxiv.org/abs/2611.14559)
-- **Abstract:** GrnPFN uses a prior-data-fitted network trained on simulated gene-regulatory screens to predict non-additive transcriptional responses from single-perturbation profiles, with measured combinations added in context without retraining.
+- **Abstract:** GrnPFN uses simulated gene-regulatory-network screens for pretraining, then predicts non-additive transcriptional responses to combined perturbations from single-perturbation profiles and limited measured combinations.
 - **Authors:** Haihui Zhang
 - **arXiv:** `2611.14559v1` (published 2026-11-05 00:32:22 UTC; categories: `q-bio.MN`)
-- **Evidence for ranking:** Direct relevance to gene regulation and single-cell perturbation studies; evaluated across CRISPR activation, RNA knockdown and drug-combination screens, with an additional CRISPRi–drug screen. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The author reports better prediction than specified gradient-boosting and kernel-ridge baselines under low-measurement settings, including transfer to an additional perturbation screen.
-- **Caveat:** The paper notes that several pair folds overlap in perturbation members or compounds, some partitions reuse cells, and the additional drug–gene test covers one drug in one cell line; broader independent prospective tests are needed.
+- **Evidence for ranking:** Direct gene-regulation and single-cell perturbation focus; the paper evaluates CRISPR activation, RNA knockdown, and drug combinations and includes an additional CRISPRi–drug screen. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The author reports better prediction than tested gradient-boosting and kernel-ridge baselines when combination measurements are absent or limited, with the relative advantage diminishing as screen-specific combinations accumulate.
+- **Caveat:** The full paper notes that several later partitions reused cells, perturbation-pair folds overlap in members or compounds, and an additional drug–gene evaluation involved one drug in one cell line. Predicted transcriptional non-additivity does not itself establish a molecular mechanism or synergy in other phenotypes.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** RNA & transcriptomics; Gene regulation & epigenetics; Omics & single-cell methods
 
 ### 4. [MutAtlas: A PDB-Wide Energy-Guided Atlas of Protein Mutation Effects](https://arxiv.org/abs/2611.16361)
-- **Abstract:** MutAtlas assembles computational mutation preferences across experimentally resolved PDB structures and distills physics-based, protein-language-model, and inverse-folding signals while representing their disagreement.
+- **Abstract:** MutAtlas assembles mutation signals from physics-based, protein-language, and inverse-folding models across experimentally resolved structures, then proposes disagreement-aware distillation for zero-shot mutation-effect prediction.
 - **Authors:** Ruihan Guo, Chaoran Cheng, Zhanghan Ni, Neil He, Bangji Yang, Ge Liu
 - **arXiv:** `2611.16361v1` (published 2026-11-12 06:22:47 UTC; categories: `cs.LG`, `q-bio.GN`)
-- **Evidence for ranking:** The arXiv comment says accepted at ICML 2026; the authors report a ProteinGym zero-shot benchmark and release a dataset/evaluation pipeline. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors claim that learning relative mutation preferences while modeling disagreement improves overall performance over the tested zero-shot baselines and naive multi-source fusion methods.
-- **Caveat:** The method is trained without experimental mutation labels and is assessed on benchmark data; model-derived mutation preferences are not biochemical measurements or clinical variant interpretations.
+- **Evidence for ranking:** Direct protein mutation interpretation and engineering relevance; cross-listed in genomics; the arXiv comment says accepted at ICML 2026. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report that their method, trained without experimental mutation labels, had the best overall performance among evaluated zero-shot baselines and naive fusion strategies on ProteinGym; the full-text table reports 0.498 overall macro-averaged Spearman correlation.
+- **Caveat:** This is a computational benchmark result using model-generated training signals, not experimental or clinical validation. Generalization across proteins, assays, and engineering decisions remains to be tested.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis
 
 ### 5. [CupOFMoCA: Coupled Objective-Guided Discrete Flows for Molecular Conjugate Assembly](https://arxiv.org/abs/2611.16099)
-- **Abstract:** CupOFMoCA generates molecular conjugates while applying cross-component chemical constraints during generation, with computational evaluations across peptide-drug conjugate and PROTAC systems.
+- **Abstract:** CupOFMoCA generates PROTACs and peptide–drug conjugates while enforcing cross-component chemical constraints during generation rather than filtering invalid assemblies afterward.
 - **Authors:** Ruoxi Rosie Zhang, Ziang Li, Jiatao Gu, Pranam Chatterjee
 - **arXiv:** `2611.16099v1` (published 2026-11-11 23:18:03 UTC; categories: `q-bio.BM`, `cs.LG`)
-- **Evidence for ranking:** The arXiv comment identifies publication in NeurIPS 2026; the abstract reports tests on three PDC systems and three PROTAC systems, including post-hoc scoring and molecular-dynamics checks. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors report improved chemically valid assembly yield versus tested post-hoc filtering and higher assembly validity on two of three PROTAC systems.
-- **Caveat:** The evidence is computational generation, predicted binding/degradation scoring, and simulation; the generated molecules were not shown in the abstract to have experimentally measured degradation or therapeutic efficacy.
+- **Evidence for ranking:** Direct molecular-conjugate design application; arXiv comment identifies publication at NeurIPS 2026. The abstract reports evaluations across three peptide–drug-conjugate and three PROTAC systems. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report improved valid-conjugate yield over matched post-hoc filtering for peptide–drug conjugates and the highest assembly validity on two of three PROTAC systems; they also report post-hoc scoring and molecular-dynamics analyses.
+- **Caveat:** Evidence is computational generation, predicted scoring, and simulation; the paper does not establish experimentally measured degradation, binding, or therapeutic efficacy for generated molecules.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** Biochemistry & proteins; Biomedical & translational medicine; Quantitative methods
 
 ### 6. [AVA: Agentic Variant Adjudication for Automated, Auditable Read-Level Review in Cancer Diagnostic Sequencing](https://arxiv.org/abs/2611.14560)
-- **Abstract:** AVA uses auditable agent workflows to review read-level evidence for borderline low-variant-allele-frequency calls, and is evaluated on a DNA-sequencing benchmark and patient RNA-seq data.
+- **Abstract:** AVA uses auditable agent workflows to inspect read-level sequencing evidence for borderline low-variant-allele-frequency calls, evaluated on a DNA-sequencing benchmark and patient RNA-seq data.
 - **Authors:** Caleb Chin, Sidharth Gupta, Arun K Anguraj Vadivel, Robert Siddaway, Siddharth Arya, Arianna He, Peter Zhukovsky, Cynthia Hawkins
 - **arXiv:** `2611.14560v1` (published 2026-11-05 06:41:32 UTC; categories: `q-bio.GN`, `cs.AI`)
-- **Evidence for ranking:** The arXiv comment says accepted to the ML4H 2026 Findings Track; the abstract names the SEQC2 DNA-seq benchmark and patient RNA-seq data. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors report that several closed- and open-weight agents outperform the best tested VAF/depth thresholds on a subsample of borderline variants and produce reasoning traces for review.
-- **Caveat:** Benchmark performance is not prospective clinical validation; the abstract does not establish impacts on diagnostic errors, turnaround time, or patient outcomes in routine laboratories.
+- **Evidence for ranking:** Direct cancer-sequencing workflow relevance; the abstract names the SEQC2 DNA-seq benchmark and patient RNA-seq data, and the arXiv comment reports acceptance to the ML4H 2026 Findings Track. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report that tested closed- and open-weight agents outperformed the best VAF/depth thresholds on a subsample of borderline variants, returning auditable reasoning traces.
+- **Caveat:** Benchmark results do not establish performance in routine prospective laboratories, diagnostic error reduction, turnaround-time improvement, or patient benefit.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** DNA & genomics; Biomedical & translational medicine; Bioinformatics & sequence analysis
 
-### 7. [Stage-Resolved EBV-Induced B-Cell Programs Across CNS Selection and Multiple Sclerosis Compartments](https://arxiv.org/abs/2611.14524)
-- **Abstract:** A cross-dataset reanalysis finds stage- and compartment-dependent EBV-associated B-cell transcriptional programs rather than a stable signature shared across blood, cerebrospinal fluid, and brain.
-- **Authors:** Hasan Jamil, Alexander Gow
-- **arXiv:** `2611.14524v1` (published 2026-09-23 23:28:52 UTC; categories: `q-bio.GN`, `cs.DB`, `cs.IR`)
-- **Evidence for ranking:** The paper combines human and humanized-mouse datasets with multiple control analyses; the abstract reports nine evaluable human CSF participants and five EBV-exposed mice for key contrasts. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors report that an early EBV-associated expression program was depleted in CSF while later latency-associated programs increased, with the directions persisting after shared genes were removed.
-- **Caveat:** The study is a retrospective reanalysis with small evaluable samples for key contrasts; the factor did not predict MS activity (AUC 0.487), and the results do not establish causation or a validated biomarker.
-- **Announcement type:** new submission, 2026-11-13 batch
-- **Themes:** RNA & transcriptomics; Molecular & cell biology; Biomedical & translational medicine
-
-### 8. [Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling](https://arxiv.org/abs/2611.16881)
-- **Abstract:** The authors test whether protein language models preserve contact predictions after a global amino-acid relabeling that leaves alignment-level statistics unchanged, reporting marked degradation across models and scales.
+### 7. [Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling](https://arxiv.org/abs/2611.16881)
+- **Abstract:** An amino-acid alphabet permutation that preserves alignment statistics disrupts contact predictions from tested protein language models, unlike the classical Potts and inverse-covariance estimators.
 - **Authors:** Paarth Batra, Aryan Keluskar
 - **arXiv:** `2611.16881v1` (published 2026-11-12 14:45:07 UTC; categories: `q-bio.QM`, `cs.AI`)
-- **Evidence for ranking:** Accepted to the ICBINB failure-modes workshop at NeurIPS 2026 per the arXiv comment; tests cover ESM-2, MSA Transformer, and AMPLIFY from 8M to 3B parameters. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors claim the perturbation exposes reliance on canonical residue identities (“alphabet anchoring”) rather than only invariant coevolutionary statistics.
-- **Caveat:** This is a computational invariance stress test; it demonstrates sensitivity of model outputs to token relabeling, not a direct experimental failure of protein structure prediction in biological settings.
+- **Evidence for ranking:** Direct protein-model interpretability result; tests ESM-2, MSA Transformer, and AMPLIFY across multiple scales; the arXiv comment reports acceptance to the ICBINB failure-modes workshop at NeurIPS 2026. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** Across nine proteins, the authors report that global residue relabeling sharply reduces model contact-map overlap while Potts predictions remain invariant, which they interpret as evidence of “alphabet anchoring.”
+- **Caveat:** The full paper limits the evaluation to a relatively small set of short, mostly single-domain proteins and three model families. The authors state that invariance is necessary but not sufficient evidence for pure coevolutionary inference; retrained or fine-tuned models were not tested.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis; Quantitative methods
 
-### 9. [Using an energy pixels approach to estimate the size a 2nd Generation DEL must be to train a high-resolution binding model](https://arxiv.org/abs/2611.17121)
-- **Abstract:** An energy-pixels model estimates how large a focused second-generation DNA-encoded library may need to be to sample local chemical neighborhoods and provide enough tight binders for affinity-model training.
+### 8. [Using an energy pixels approach to estimate the size a 2nd Generation DEL must be to train a high-resolution binding model](https://arxiv.org/abs/2611.17121)
+- **Abstract:** The authors model target–ligand binding as sums of interaction “pixels” and use affinity distributions from a naive DNA-encoded library to estimate the complexity and expected yield of a focused follow-up library.
 - **Authors:** Boris P. Belotserkovskii, R. Edward Watts
 - **arXiv:** `2611.17121v1` (published 2026-11-12 17:13:57 UTC; categories: `cs.LG`, `q-bio.BM`)
-- **Evidence for ranking:** It directly addresses data design for protein-binding models and appears in both machine-learning and biomolecular categories; its abstract gives an explicit route to compare active-learning yield with a random-library baseline. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors claim their estimates translate the number of tight binders needed by a model into a library-size requirement without structural information or a control library as large as the experiment.
-- **Caveat:** The approach rests on an additive “pixel” model and affinity distributions from a naive library; predicted library requirements and yields need experimental validation.
+- **Evidence for ranking:** Direct biomolecular binding and medicinal-chemistry data-design relevance; cross-listed in biomolecules. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors say the model translates a desired number of tight binders into an estimated library size and supplies a random-design baseline against which machine-learning or active-learning designs could be assessed.
+- **Caveat:** This is a model-based sizing method inferred from existing affinity distributions; no prospective synthesis-and-selection test of the predicted second-generation library is reported.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** Biochemistry & proteins; Quantitative methods
 
-### 10. [AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of Agentic Systems](https://arxiv.org/abs/2611.17015)
-- **Abstract:** This review proposes a framework for describing where biological foundation models and agentic workflows are reliable, organized around data, architecture, training, evaluation, and post-analysis.
+### 9. [AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of Agentic Systems](https://arxiv.org/abs/2611.17015)
+- **Abstract:** This review frames a biological model’s “knowledge boundary” around data, architecture, training, evaluation, and post-analysis, to make reliability limits explicit for researchers and tool-using agents.
 - **Authors:** Tian Cai, Andrew Kleist, Jaimin Patel, Duccio Malinverni, Alexander K. Taylor, Malvika Sharan, Renato Umeton, M. Madan Babu
 - **arXiv:** `2611.17015v1` (published 2026-11-12 16:08:33 UTC; categories: `q-bio.BM`, `cs.AI`)
-- **Evidence for ranking:** The arXiv comment says it is to be published in Annual Review of Biomedical Data Science; its subject is broad evaluation reliability across sequence, protein, and single-cell models. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors propose standardized descriptions of model limits so researchers and model-using agents can state the conditions under which outputs may be trusted.
-- **Caveat:** This is a review and framework proposal, not a new controlled comparison or a validated operational standard.
+- **Evidence for ranking:** Broad biological foundation-model scope; the arXiv comment says it is to be published in Annual Review of Biomedical Data Science. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors synthesize evidence about where biological foundation models succeed or fail and propose standardized descriptions of the conditions under which their outputs are reliable.
+- **Caveat:** This is a review and framework proposal, not a new comparative benchmark or prospective demonstration that the framework improves biological decisions.
 - **Announcement type:** new submission, 2026-11-13 batch
-- **Themes:** Bioinformatics & sequence analysis; Biochemistry & proteins; Quantitative methods
+- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis; Omics & single-cell methods
 
-### 11. [A Feasibility Study of Whole-Cerebrum Task-Based fMRI at 0.55 T: Motor and Visual Tasks Using Single-Shot EPI](https://arxiv.org/abs/2611.17211)
-- **Abstract:** A six-participant feasibility study reports detectable motor and visual task fMRI at 0.55 T and improved signal statistics when two five-minute runs are combined.
+### 10. [Stage-Resolved EBV-Induced B-Cell Programs Across CNS Selection and Multiple Sclerosis Compartments](https://arxiv.org/abs/2611.14524)
+- **Abstract:** A cross-dataset reanalysis reports compartment- and stage-dependent EBV-associated B-cell transcriptional programs, rather than a stable signature shared across blood, cerebrospinal fluid, and brain.
+- **Authors:** Hasan Jamil, Alexander Gow
+- **arXiv:** `2611.14524v1` (published 2026-09-23 23:28:52 UTC; categories: `q-bio.GN`, `cs.DB`, `cs.IR`)
+- **Evidence for ranking:** The paper appeared in the 13 November q-bio.GN recent-list batch as a category listing; its arXiv record retains the earlier first-submission date shown above. The abstract reports human and humanized-mouse data with anatomical, sequencing-depth, and other controls. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report that a frozen EBV-associated B-cell factor did not predict MS activity (AUC 0.487; p=0.489), and that early and late EBV-associated transcriptional programs showed opposing directions across compartments.
+- **Caveat:** This is retrospective reanalysis with small samples for key contrasts, including nine evaluable human CSF participants and five EBV-exposed mice. The authors state that no external program met their prespecified prospective criterion; the results do not establish causation or a validated biomarker.
+- **Announcement type:** new q-bio.GN category listing, 2026-11-13 batch (original arXiv submission 2026-09-23)
+- **Themes:** RNA & transcriptomics; Molecular & cell biology; Biomedical & translational medicine
+
+### 11. [Stretched bilayer-cytoskeleton links hold echinocytes in a model splenic slit](https://arxiv.org/abs/2611.16241)
+- **Abstract:** In a two-component red-cell model, stage III echinocytes required 37–50 times the pressure drop that passed an equal-area, equal-volume discocyte through a model splenic slit; stretched bilayer–cytoskeleton links were implicated in retention.
+- **Authors:** Zhaojie Chai, Jianlu Zheng, He Li, Ming Dao, George Em Karniadakis
+- **arXiv:** `2611.16241v1` (published 2026-11-12 03:39:47 UTC; categories: `physics.bio-ph`, `cond-mat.soft`, `physics.flu-dyn`, `q-bio.CB`)
+- **Evidence for ranking:** Direct cell-mechanics and splenic-clearance question; cross-listed in cell biology and supported by a detailed mechanical study. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors' model suggests spicule shape together with membrane loss can hinder passage through a splenic slit; lengthening the modeled links by about twofold released a held cell.
+- **Caveat:** Central passage and link-stretch results are from simulated cells in a model slit, not a direct test of clearance in human spleens or transfusion outcomes.
+- **Announcement type:** new submission, 2026-11-13 batch
+- **Themes:** Molecular & cell biology; Biomedical & translational medicine; Quantitative methods
+
+### 12. [A risk-aware individualized blood pressure target to avoid hypotension in surgery](https://arxiv.org/abs/2611.16757)
+- **Abstract:** The authors propose an online method for choosing an individualized blood-pressure target and norepinephrine dose from a short MAP/dose record, using a reduced PK/PD model and uncertainty propagation to limit predicted hypotension risk.
+- **Authors:** Simon Buré, Jona Joachim, Florent Di Meglio
+- **arXiv:** `2611.16757v1` (published 2026-11-12 13:06:52 UTC; categories: `q-bio.QM`, `math.OC`)
+- **Evidence for ranking:** Direct perioperative biomedical decision-modeling question; the abstract reports retrospective-record calibration and a cohort of 4,096 virtual patients. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** In the virtual cohort, the method recommended a dose for 74% at a nominal 5% risk; 6.9% of patients receiving recommendations had a MAP reading below 65 mmHg, compared with 25% under a fixed 70 mmHg target applied to the full virtual cohort.
+- **Caveat:** The comparison is not a prospective clinical trial: recommendations were assessed retrospectively under doses actually administered and in virtual patients. It does not establish clinical benefit or safety.
+- **Announcement type:** new submission, 2026-11-13 batch
+- **Themes:** Biomedical & translational medicine; Quantitative methods
+
+### 13. [A Feasibility Study of Whole-Cerebrum Task-Based fMRI at 0.55 T: Motor and Visual Tasks Using Single-Shot EPI](https://arxiv.org/abs/2611.17211)
+- **Abstract:** In six healthy participants, the authors detected motor- and visual-task activation at 0.55 T and report that concatenating two five-minute runs increased activation statistics and reduced voxelwise background dispersion.
 - **Authors:** Parsa Razmara, Takfarinas Medani, Anand A. Joshi, Majid Abbasi Sisara, Ye Tian, Sophia X. Cui, Justin P. Haldar, Krishna S. Nayak, Richard M. Leahy
 - **arXiv:** `2611.17211v1` (published 2026-11-12 18:09:22 UTC; categories: `physics.med-ph`)
-- **Evidence for ranking:** This is the latest medical-physics batch’s directly biomedical imaging feasibility paper; the abstract reports six healthy participants, both tasks, and a comparison to a representative 3 T dataset. Semantic Scholar listed 0 citations and 0 influential citations at the snapshot.
-- **Claimed contribution:** The authors report task activations at 0.55 T and suggest longer acquisition can compensate for lower intrinsic BOLD sensitivity in their tested setting.
-- **Caveat:** The sample is small and healthy; the 3 T reference is described as representative rather than a matched cohort. The result does not establish clinical utility or broad reproducibility.
+- **Evidence for ranking:** Direct medical-physics imaging feasibility question with a stated healthy-participant sample and task comparison. Semantic Scholar snapshot: 0 citations, 0 influential citations.
+- **Claimed contribution:** The authors report that whole-cerebrum task fMRI was feasible with single-shot EPI at 0.55 T; a representative 3 T dataset is used for reference, and the abstract reports that longer low-field acquisition could approach 3 T statistical significance over the compared durations.
+- **Caveat:** Only six healthy participants were studied; the 3 T reference is not described as a matched-cohort comparison, and this does not establish clinical diagnostic performance.
 - **Announcement type:** new submission, 2026-11-13 batch
 - **Themes:** Medical physics & imaging; Biomedical & translational medicine
 
 ## Trending Research Themes
 
-- **Prediction under biological constraints:** GrnPFN, MutAtlas, CupOFMoCA, the environmental beta-lactamase study, the protein-language-model relabeling test, and the DEL energy-pixels paper all use computational models, but they test different outputs: perturbation responses, mutation preferences, valid molecular assemblies, enzyme function, contact maps, and library-size estimates. These are related uses of modeling, not independent evidence for one general “AI biology” capability.
-- **RNA and gene-regulation decisions:** Silscore predicts siRNA potency from guide features, while GrnPFN predicts non-additive expression responses to combined genetic or chemical perturbations. Both use retrospective data; their distinct targets should not be conflated with measured therapeutic efficacy.
-- **Molecular evidence and translation boundaries:** The beta-lactamase work includes limited E. coli resistance assays; AVA evaluates sequencing adjudication benchmarks; and the EBV paper reanalyzes human and mouse datasets. Their evidence types differ, and none by itself establishes clinical benefit or a practice-changing biomarker.
-- **Medical imaging:** The 0.55 T fMRI paper is a single small feasibility study. It is notable within this batch, but does not support a field-wide shift in low-field imaging.
+- **Modeling molecular function needs context-specific validation.** The beta-lactamase study includes limited expression/MIC testing; Silscore evaluates retrospective potency datasets; GrnPFN predicts non-additive transcription; MutAtlas and the invariant-relabeling study test protein-model signals; and CupOFMoCA and the DEL paper assess generated or planned binding designs computationally. Their targets and evidence types differ, so the set supports an evaluation theme, not a single validated AI capability.
+- **RNA and perturbation models emphasize transfer.** Silscore tests potency transfer across datasets/targets, while GrnPFN evaluates combination-response predictions across perturbation screens. Both remain bounded by the particular data splits, target contexts, and readouts used.
+- **Translation claims remain bounded by study design.** AVA is evaluated on sequencing datasets; the EBV report is a reanalysis with small human and mouse contrasts; and the red-cell, perioperative, and low-field fMRI papers each have different model, cohort, or feasibility limits. These papers do not collectively establish clinical benefit or a field-wide clinical shift.
 
 ## Open Problems and Research Directions
 
-These directions follow from limitations reported in the selected papers and are proposals, not established priorities or clinical advice.
+These follow-ups are grounded in the limitations reported by the selected authors and are research proposals, not clinical advice.
 
-- **Broaden experimental enzyme validation:** The beta-lactamase paper’s full text identifies only two class-C candidates as experimentally characterized. A next step is a blinded panel spanning all Ambler classes and habitats, with expression/stability controls, MIC and direct hydrolysis assays, followed by competition or evolution experiments to test whether predicted resistance shifts persist under defined antibiotic exposures.
-- **Test transfer models prospectively:** Silscore and GrnPFN report retrospective transfer across external datasets or screens. A prospective design could freeze each model before testing, hold out targets, cell lines, perturbation pairs, and laboratories, and report calibration alongside correlation/error. For Silscore, include target accessibility and chemistry-informed controls; for GrnPFN, measure new combinations in independent screens rather than relying only on overlapping perturbation members.
-- **Separate computational mutation scores from function:** MutAtlas should be compared with new deep-mutational-scanning experiments across structurally diverse proteins, including proteins and assay types absent from its development benchmark. This would test whether disagreement-aware distillation improves experimentally measured function rather than only benchmark ranking.
-- **Establish diagnostic workflow performance:** AVA could be evaluated in a blinded multi-laboratory study with prespecified borderline-variant sets, expert adjudication, false-positive/false-negative rates, auditability, and turnaround time. That would address deployment questions not answered by benchmark comparisons alone.
-- **Increase independent imaging validation:** The 0.55 T fMRI result calls for a larger, diverse, same-subject 0.55 T/3 T comparison with prespecified tasks and test–retest analysis. The current six-person feasibility study cannot establish performance across patient groups or clinical indications.
+- **Expand enzyme-function validation.** The beta-lactamase authors identify two class-C candidates as experimentally characterized and call for broader functional testing. A next study could sample divergent candidates from all Ambler classes, pair MICs with direct hydrolysis, expression, and stability assays, then test predicted substitutions across sequence backgrounds and controlled antibiotic exposures.
+- **Freeze and prospectively test transfer models.** For Silscore, preregister a guide-only prediction set across targets and laboratories, then compare with models incorporating target accessibility and transcript context. For GrnPFN, prospectively measure unseen perturbation pairs in independent cell lines and screens, separating cells used for inputs from those used for evaluation and checking whether predicted transcriptional non-additivity corresponds to other phenotypes.
+- **Compare model-derived protein signals with new experiments.** Test MutAtlas predictions on proteins and assays outside ProteinGym using focused deep-mutational scanning; stratify calibration and ranking by cross-model disagreement. For CupOFMoCA and the DEL sizing method, synthesize selected generated or focused-library compounds and measure binding, assembly validity, and functional effects against predefined baselines.
+- **Validate diagnostic and clinical models prospectively.** AVA needs blinded multi-laboratory assessment with adjudicated variants and prespecified false-positive/false-negative and turnaround measures. The perioperative blood-pressure method needs prospective evaluation with predefined clinician override and safety endpoints. The 0.55 T fMRI result needs a larger same-subject 0.55/3 T study with repeat scans and patient cohorts before clinical-performance claims.
+- **Test EBV compartment hypotheses longitudinally.** The EBV reanalysis itself calls for virologic, clonotypic, antigen-specific, epigenetic, and longitudinal evidence. A follow-up could measure paired blood/CSF samples over time with prespecified external validation, rather than inferring ancestry from transcriptional resemblance alone.
 
 ## Takeaway
 
-This batch is strongest in computational methods for molecular and perturbation biology, with several papers making their evidence boundary visible. The clearest experimental result is limited enzyme testing; the RNA, protein-variant, diagnostic, and conjugate-design claims remain dataset- or model-based. Treat the ranking as a relevance-led reading list, not a popularity chart or a clinical evidence assessment.
+This batch is most notable for methods that expose the limits of model transfer or reveal how much validation is still needed. A few papers report experimental or patient-derived data, but the strongest claims remain bounded by small experimental panels, retrospective datasets, or computational evaluation. The ranking reflects relevance, not measured arXiv popularity, and arXiv alone is incomplete biomedical coverage.
 
 ## Method and sources
 
-- **Window:** daily; announcement-batch date 2026-11-13 only. The report uses the prior batch because 2026-11-14 is Saturday and no newer batch was listed. Exact date range: 2026-11-13 through 2026-11-13. Snapshot: 2026-11-14 17:13:01 UTC.
-- **Candidate scope:** arXiv categories `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, `cs.BI`, and `physics.med-ph`. The candidate listings checked were the 13 November quantitative-biology new/cross-list page and medical-physics recent page; 11 papers are selected from the in-scope batch after relevance screening. Neuroscience and population-only items were excluded.
-- **Ranking:** There is no official arXiv trend ranking. Semantic Scholar Graph API citation and influential-citation totals were 0 for all 11 selected records at the snapshot. Attention evidence was insufficient to call these “trending”; entries are ranked by demonstrated relevance and reported evidence. Conference/journal comments and cross-list breadth are disclosed where present, and recency is not treated as popularity. Citation totals are point-in-time totals, not gains during the day.
-- **Metadata and reading:** Candidate metadata and abstracts were checked against arXiv abstract pages and the arXiv API. The first three papers were also read in HTML full text for introduction, results, and limitations/discussion. Author-reported evidence is attributed; computational predictions, assays, retrospective reanalyses, and clinical evidence are kept distinct.
-- **Coverage caveat:** This covers the configured arXiv categories only. arXiv is not a representative biomedical index; much experimental and clinical preprint activity appears on bioRxiv or medRxiv, and the report does not cover those repositories or the broader medical literature.
-- **Sources:** [arXiv quantitative biology new listings](https://arxiv.org/list/q-bio/new); [arXiv medical physics recent listings](https://arxiv.org/list/physics.med-ph/recent); [arXiv API category query](https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.BM+OR+cat%3Aq-bio.GN+OR+cat%3Aq-bio.MN+OR+cat%3Aq-bio.SC+OR+cat%3Aq-bio.CB+OR+cat%3Aq-bio.TO+OR+cat%3Aq-bio.QM+OR+cat%3Acs.BI+OR+cat%3Aphysics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200); [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch).
+- **Window:** daily; latest announcement batch Friday 2026-11-13. The current date, Sunday 2026-11-15, has no newer batch in the checked listings, so this report uses the prior Friday batch. Announcement date range: 2026-11-13 through 2026-11-13. The underlying new-submission timestamps for most selected papers span 2026-11-05 through 2026-11-12; the EBV paper is explicitly identified as a new q-bio.GN category listing although its arXiv record retains its earlier 2026-09-23 first-submission date.
+- **Snapshot:** 2026-11-15 01:23:26 UTC.
+- **Candidate pool:** Checked recent listings for `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, and `physics.med-ph`; the broad arXiv API query also included `cs.BI`. The Friday batch had 30 category appearances (29 unique IDs after cross-list deduplication) in the checked listings; 13 papers were selected for direct biological/biomedical relevance. The API pool was paginated through 400 results, reaching first-submission dates older than the daily batch. The EBV category listing was verified directly because its stored first-submission timestamp predates this batch.
+- **Ranking:** arXiv has no official trend or readership ranking. Semantic Scholar Graph API was queried by arXiv ID for citation count, influential-citation count, reference count, publication type, fields of study, and external IDs. All 13 showed 0 citations and 0 influential citations at the snapshot, so citation velocity did not provide a defensible popularity order. Entries are ranked by relevance to the requested molecular/biomedical scope and checkable reported evidence; publication-status comments and category breadth are disclosed, not treated as readership measures. No independent technical discussion was located for these candidates.
+- **Reading and evidence:** All selected abstracts were checked against arXiv records. The introductions, results, and limitations/discussion of the first three papers were also read from their PDFs. Claims are attributed to the authors; predictions, assays, retrospective reanalyses, and human clinical evidence are distinguished.
+- **Coverage:** This is an arXiv-only point-in-time sample. Much experimental and clinical biology appears on bioRxiv or medRxiv; those repositories and the broader medical literature are not covered. This is not a systematic review or clinical guidance.
+- **Sources:** [arXiv q-bio.BM recent listings](https://arxiv.org/list/q-bio.BM/recent); [q-bio.GN](https://arxiv.org/list/q-bio.GN/recent); [q-bio.MN](https://arxiv.org/list/q-bio.MN/recent); [q-bio.CB](https://arxiv.org/list/q-bio.CB/recent); [q-bio.TO](https://arxiv.org/list/q-bio.TO/recent); [q-bio.QM](https://arxiv.org/list/q-bio.QM/recent); [medical physics](https://arxiv.org/list/physics.med-ph/recent); [arXiv API category query](https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200) (paginated); [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch). Individual arXiv abstract links appear in each title.

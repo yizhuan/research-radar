@@ -1,88 +1,131 @@
-Headline — Mathematics, latest announcement batch Friday 13 November 2026: six notable papers selected from the 774-entry math listing. This Sunday, 15 November, has no newer batch in the recent listing. The strongest pattern is rigorous constructions/counterexamples alongside stochastic scaling-limit results. Agenda: Ising interfaces, nonlocal PDEs, certified geometry, then additive combinatorics, nonlinear waves and field theory. This is an inferred significance-weighted selection, not an official arXiv trending chart; these same-batch papers are too new for citation evidence to support a popularity ranking.
+# Headline
+
+Mathematics — arXiv daily batch, Friday 13 November 2026 — nine selected papers. The dominant pattern is conjecture resolution or sharp bounds, spanning spectral geometry, function spaces, arithmetic and PDE. Spoken agenda: the conjecture results first, then prime values, regularity and cross-field consequences. Global caveat: arXiv has no official trending chart; this ordering is inferred and citation evidence is limited for papers only days old, so this is a notable-recent-paper watch, not a popularity ranking.
 
 ## Top papers (ranked)
 
-### 1. [GFF for 3D Ising interfaces in three moves of Tetris](https://arxiv.org/abs/2611.16943)
-- **Abstract:** The authors prove that, at sufficiently low temperature and positive interface slopes, the three-dimensional Ising interface has a Gaussian free field scaling limit, using mappings to SOS, half-monotone SOS and dimer surfaces.
-- **Authors:** Benoît Laslier, Eyal Lubetzky
-- **arXiv:** `2611.16943v1` (published 2026-11-12 15:23:54 UTC; categories: `math.PR`, `math-ph`)
-- **Evidence for ranking:** The paper states a scaling-limit theorem for four related surface/interface models and an improved renormalization result for interacting dimers; its probability and mathematical-physics cross-listing reflects the bridge in the work. Placement is based on scope and concreteness, not measured readership.
-- **Claimed result:** The authors' Theorem 1 proves local gradient convergence and convergence of centered rescaled height fields (modulo constants) to a linearly transformed GFF for the 3D Ising interface, SOS, HMSOS and bubble-free Ising interface.
-- **Assumptions and setting:** Tilted tori with both limiting slopes positive; inverse temperature `β ≥ β₀`. The limiting amplitude and linear map depend on temperature and slope.
-- **Caveat:** The authors state that extending the 3D Ising conclusion to every `β > βc` remains open; degenerate slopes such as `(θ₁, 0)` also remain unresolved, including the order of the positive-temperature height variance.
-- **Announcement type:** new submission, 2026-11-13 announcement batch
-- **Themes:** Probability & statistics; Mathematical physics
+### 1. [The Pólya--Szegő buckling conjecture in dimensions two through forty-seven](https://arxiv.org/abs/2611.15243)
+- **Abstract:** The authors prove the Pólya--Szegő volume-minimization conjecture for the first clamped buckling eigenvalue in dimensions 2 through 47, with a sharp comparison to the first Dirichlet eigenvalue and a capacity-qualified equality class.
+- **Authors:** Guowei Dai, Yingxin Sun, Yong Zhang
+- **arXiv:** `2611.15243v1` (published Wed, 11 Nov 2026 09:32:22 UTC; categories: `math.SP`)
+- **Evidence for ranking:** MathWorld's buckling-conjecture entry, updated 14 Nov, discusses and cites this dimension-2-to-47 extension; the AIM problem page separately tracks the planar conjecture and its prior Lean-verified resolution. The paper's unusually broad but finite dimension range and explicit method boundary strengthen its significance signal.
+- **Claimed result:** The authors prove, for every open set Ω in Rⁿ of finite positive volume and 2 ≤ n ≤ 47, Λ₁(Ω) ≥ (jₙ/₂,₁ / jₙ/₂₋₁,₁)² λ₁ᴰ(Ω); the Faber--Krahn inequality yields the ball-minimizing volume bound. (arXiv abstract and Theorem 1.1.)
+- **Assumptions and setting:** Open subsets of Euclidean n-space, finite positive volume, dimensions 2--47; equality in the volume inequality permits removal of a relatively closed set of zero H²-capacity.
+- **Caveat:** The authors' calibration fails for n ≥ 48; this does not disprove the conjecture there. The preprint's proof has not been independently verified here. [MathWorld](https://mathworld.wolfram.com/Polya-SzegoBucklingConjecture.html) describes this boundary of the method.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Analysis & PDE; Geometry & topology
 
-### 2. [The coercivity conjecture for nonlocal energies](https://arxiv.org/abs/2611.16682)
-- **Abstract:** The authors show that uniform ellipticity alone does not ensure fractional Sobolev coercivity for broad classes of symmetric nonlocal kernels, while identifying cancellation conditions that recover coercivity and regularity in important cases.
+### 2. [The Brown--Shields Conjecture: Two Approximation Theorems and a Counterexample](https://arxiv.org/abs/2611.16997)
+- **Abstract:** The authors construct an outer function in the classical Dirichlet space with a logarithmic-capacity-zero radial zero set whose polynomial multiples are not dense, claiming a counterexample to the Brown--Shields conjecture.
+- **Authors:** Bonan Chen, Xiang Fang, Feng Guo
+- **arXiv:** `2611.16997v1` (published Thu, 12 Nov 2026 16:01:41 UTC; categories: `math.FA`)
+- **Evidence for ranking:** MathWorld's Brown--Shields entry was updated 13 Nov and discusses this exact preprint, making it one of the few submissions with immediate independent, topic-specific discussion. It targets a longstanding conjecture; the external note also distinguishes the claimed refutation from a reviewed resolution.
+- **Claimed result:** The authors state that they disprove the conjecture by constructing an outer f in the Dirichlet space with radial zero set of logarithmic capacity zero but whose polynomial multiples do not approximate 1; their main theorem gives a positive lower bound for the approximation error. (arXiv abstract and Theorem 1.1.)
+- **Assumptions and setting:** The classical holomorphic Dirichlet space on the unit disk; outerness and the radial boundary zero set are understood in that setting.
+- **Caveat:** A contemporaneous [MathWorld note](https://mathworld.wolfram.com/Brown-ShieldsConjecture.html) says independent specialist review of the complete proof had not been reported; treat this striking counterexample as an author claim pending scrutiny.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Analysis & PDE
+
+### 3. [Prime values of linear forms and a quadratic form: one proof and two arithmetic applications](https://arxiv.org/abs/2611.16062)
+- **Abstract:** Using higher-order Fourier analysis, the authors prove simultaneous prime values for suitable systems of linear forms and an imaginary-quadratic norm form, derive a Bateman--Horn-type asymptotic, and apply it to weak approximation and quadratic twists of elliptic curves.
+- **Authors:** Niven Achenjang, Katharine Woo
+- **arXiv:** `2611.16062v1` (published Wed, 11 Nov 2026 22:20:15 UTC; categories: `math.NT`)
+- **Evidence for ranking:** A substantial 74-page result connects analytic number theory to arithmetic geometry in two concrete applications. Placement rests on the explicit theorem and cross-area relevance, rather than measured readership.
+- **Claimed result:** Theorem A gives an asymptotic prime-counting formula and infinitely many simultaneous prime values when the singular series is positive; the authors then prove new Brauer--Manin weak-approximation cases and construct infinitely many quadratic twists in a family of rank exactly two. (arXiv abstract and introduction.)
+- **Assumptions and setting:** The homogeneous parts of the linear forms must be pairwise linearly independent; the quadratic form is a norm from an imaginary quadratic field in the specified integral-linear-coordinate form; local obstructions must be absent for the infinitude conclusion.
+- **Caveat:** The stated prime theorem is for this norm-form family, not arbitrary binary quadratic forms; the authors identify broader forms as a possible generalization rather than a result established here.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Algebra & number theory; Geometry & topology
+
+### 4. [Macroscopic L-infinity bounds for the homogeneous Landau--Coulomb equation](https://arxiv.org/abs/2611.17000)
+- **Abstract:** For smooth, rapidly decaying solutions of the three-dimensional spatially homogeneous Landau equation with Coulomb potential, the authors prove positive-time global L-infinity bounds depending only on initial mass, momentum, energy and entropy, resolving a previously posed regularization problem.
+- **Authors:** Lingda Xu
+- **arXiv:** `2611.17000v1` (published Thu, 12 Nov 2026 16:02:08 UTC; categories: `math.AP`)
+- **Evidence for ranking:** The abstract identifies a specific open problem and a strong theorem with substantially weaker data requirements than earlier estimates; the technical scope is concrete and directly stated in the paper.
+- **Claimed result:** For every 0 < τ < T, the authors bound sup over τ ≤ t ≤ T of the global velocity-space L-infinity norm by C(H, τ, T), for the normalized smooth, rapidly decaying solutions described in the paper. (arXiv abstract and Theorem 1.1.)
+- **Assumptions and setting:** Three-dimensional spatially homogeneous Landau equation with Coulomb interaction; the theorem is an a priori estimate for smooth, rapidly decaying solutions, with constants controlled by macroscopic conserved quantities and initial entropy.
+- **Caveat:** The paper says upgrading this estimate to global existence for general finite-mass, energy and entropy data needs an approximation and initial-trace stability argument, which it does not pursue.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Analysis & PDE; Mathematical physics
+
+### 5. [The coercivity conjecture for nonlocal energies](https://arxiv.org/abs/2611.16682)
+- **Abstract:** The authors show that uniform ellipticity does not generally imply H-s-coercivity for symmetric nonlocal kernels, while proving coercivity under several cancellation or geometric assumptions and deriving regularity consequences.
 - **Authors:** Linus Behn, Roberto Colombo, Xavier Fernández-Real, Florian Grube, Harsh Prasad, Xavier Ros-Oton
-- **arXiv:** `2611.16682v1` (published 2026-11-12 11:56:48 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The authors give counterexamples to a named coercivity conjecture and a positive annular-cancellation criterion, with applications to variable stable kernels and non-cutoff Boltzmann kernels. This combines a sharp negative result with a structural positive theory; placement is significance-based, not an attention measure.
-- **Claimed result:** Theorem 1.1 gives failure of a uniform `H^s` coercivity bound when `n > 2s`, including bounded discontinuous weak solutions. The paper also proves coercivity for specified kernel classes under extra cancellation/symmetry assumptions, and for `n = 1`, `s > 1/2` under its stated hypotheses.
-- **Assumptions and setting:** Symmetric measurable nonlocal kernels of order `2s`, with `0 < s < 1` and the paper's uniform ellipticity/moment bounds. Positive results require additional structure or special kernel classes.
-- **Caveat:** Uniform ellipticity is not enough in the counterexample regime; positive conclusions depend on the extra structure and hypotheses of the relevant theorems.
-- **Announcement type:** new submission, 2026-11-13 announcement batch
-- **Themes:** Analysis & PDE
+- **arXiv:** `2611.16682v1` (published Thu, 12 Nov 2026 11:56:48 UTC; categories: `math.AP`)
+- **Evidence for ranking:** The paper overturns a broad conjecture in a sharply delineated parameter range and replaces it with a local criterion applicable to several important kernel classes, including a non-cutoff Boltzmann setting. Its consequences span nonlocal PDE regularity and kinetic estimates.
+- **Claimed result:** The authors give counterexamples whenever n > 2s, prove the conjecture for n = 1 and s > 1/2, establish a local coercivity criterion based on annular cancellation, and derive Hölder estimates under ellipticity and cancellation hypotheses. (arXiv abstract.)
+- **Assumptions and setting:** Symmetric nonlocal kernels of order 2s, 0 < s < 1; the counterexamples include smooth compactly supported test functions, and positive criteria require the stated cancellation or nonconcentration conditions.
+- **Caveat:** The abstract's stated failure and positive range leave the borderline n = 2s unspecified; conclusions for other kernels depend on additional cancellation or geometric assumptions.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Analysis & PDE; Mathematical physics
 
-### 3. [A constructive computer-assisted existence proof for a Calabi--Yau metric](https://arxiv.org/abs/2611.16908)
-- **Abstract:** The authors rigorously construct a Ricci-flat Kähler metric on the Fermat quartic using numerical approximation, a fixed-point argument and verified numerical bounds, and provide an explicit analytic approximation.
-- **Authors:** Michael R. Douglas, Javier Gómez-Serrano, Fabian Lehmann, Daniel Platt, Yidi Qi
-- **arXiv:** `2611.16908v1` (published 2026-11-12 15:02:05 UTC; categories: `math.DG`, `hep-th`)
-- **Evidence for ranking:** A constructive, computer-assisted existence result in differential geometry with a high-energy-theory cross-list; Theorem 1.1 supplies explicit norm bounds for the correction to the computed metric. This unusual proof artifact supports inclusion, not popularity.
-- **Claimed result:** The authors' Theorem 1.1 proves that a specified approximate Kähler form on the Fermat quartic can be corrected to a Calabi–Yau metric, with `‖u‖𝒳 ≤ 1.551 × 10⁻⁴` and `‖i∂∂̄u‖C⁰ ≤ 1.553 × 10⁻⁴` in the stated norms.
-- **Assumptions and setting:** The certified construction concerns the Fermat quartic and the explicitly computed Kähler form/metric in the paper; verified bounds support the fixed-point argument.
-- **Caveat:** The proof constructs this particular metric; adapting the rigorous numerical bounds and analysis to other manifolds remains a computational and mathematical task discussed by the authors.
-- **Announcement type:** new submission, 2026-11-13 announcement batch
-- **Themes:** Geometry & topology; Mathematical physics
+### 6. [Rational isogenies of of rank-two Drinfeld modules](https://arxiv.org/abs/2611.14873)
+- **Abstract:** The authors determine rational points on Drinfeld modular curves of arbitrary level over F_q(T), obtaining a classification of rational cyclic isogenies and consequences for torsion, isogeny-class size and automorphism groups.
+- **Authors:** Shun Ishii, Ryotaro Sakamoto
+- **arXiv:** `2611.14873v1` (published Wed, 11 Nov 2026 00:56:21 UTC; categories: `math.NT`, `math.AG`)
+- **Evidence for ranking:** This submission combines two mathematical subject classes and claims a complete classification plus a named conjecture resolution, with further uniform bounds and geometric consequences; these are stronger signals than recency alone.
+- **Claimed result:** The authors classify rational cyclic isogenies of rank-two Drinfeld F_q[T]-modules over F_q(T), prove Schweizer's conjecture on rational torsion, and determine geometric automorphism groups of X_0(p) for primes p of degree at least three. (arXiv abstract.)
+- **Assumptions and setting:** Rank-two Drinfeld modules over the rational function field F_q(T), with rational points on Drinfeld modular curves X_0(n) for arbitrary level n.
+- **Caveat:** The classification is specific to rank two over F_q(T); the abstract does not claim a classification over general global function fields or in higher rank.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Algebra & number theory; Geometry & topology
 
-### 4. [Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem](https://arxiv.org/abs/2611.17205)
-- **Abstract:** The authors determine the extremal subset-sum function for `c ≥ 1`, prove multiple limit points for `0 < c < 1` (with an exact answer at `c = 1/2`), and establish an inverse theorem for dense sets with a prescribed subset sum.
-- **Authors:** Mateo Matijasevick
-- **arXiv:** `2611.17205v1` (published 2026-11-12 18:05:45 UTC; categories: `math.CO`, `math.NT`)
-- **Evidence for ranking:** The abstract reports explicit results on Erdős Problem #361 and an inverse theorem; selected results are machine-checked in Lean 4, and the paper is cross-listed in combinatorics and number theory. These are mathematical/formalization signals, not evidence of popularity.
-- **Claimed result:** For `c ≥ 1`, `f_c(n) = ⌊cn⌋ − ⌈n/2⌉`; for `0 < c < 1`, the authors prove `limsup f_c(n)/n = c/2` and nonconvergence, with exactly `{1/6, 1/4}` as limit points when `c = 1/2`. Their inverse theorem says that, for `q` the least positive integer not dividing `s`, `|A| ≥ E/q + εT` forces a subset of `A ⊆ {1,…,E}` summing to `sT` for sufficiently large `T` and `2^(q−2)E ≤ sT`.
-- **Assumptions and setting:** `f_c(n)` maximizes the size of a subset of `{1,…,⌊cn⌋}` avoiding `n` as a distinct-element subset sum. The inverse theorem has the stated size/range condition and sufficiently large `T`; only specified portions of the results are reported as Lean-formalized.
-- **Caveat:** For general `0 < c < 1`, the abstract gives multiple limit points and formulas along specified arithmetic subsequences, not every limit point for every `c`.
-- **Announcement type:** new submission, 2026-11-13 announcement batch
-- **Themes:** Combinatorics & discrete mathematics; Algebra & number theory
+### 7. [Asymptotically Optimal Bounds for Counting Near-Minimum Circuits in Regular Matroids](https://arxiv.org/abs/2611.15755)
+- **Abstract:** The authors improve the bound on the number of near-minimum-weight circuits in a regular matroid to (Km)^(2 alpha), resolve a recent conjecture for parallel basis search, and obtain consequences for regular codes and totally unimodular lattices.
+- **Authors:** Robert P. Streit
+- **arXiv:** `2611.15755v1` (published Wed, 11 Nov 2026 17:34:38 UTC; categories: `math.CO`, `cs.DM`)
+- **Evidence for ranking:** The new exponent improves a previous m^O(alpha^2) bound, the authors resolve a recent algorithmic conjecture, and the result cross-lists discrete mathematics while yielding coding and lattice applications.
+- **Claimed result:** For positive weights and weighted girth g_w, the circuit count at weight at most alpha g_w is bounded by (Km)^(2 alpha); the authors state asymptotic optimality conditional on the Erdős girth conjecture for all real alpha and unconditional optimality for half-integer alpha. (arXiv abstract.)
+- **Assumptions and setting:** Regular matroids on m elements, positive element weights, and real alpha ≥ 1.
+- **Caveat:** Full asymptotic optimality for arbitrary real alpha is conditional on the Erdős girth conjecture; the unconditional optimality statement is limited to half-integer alpha.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Combinatorics & discrete mathematics; Optimization & control
 
-### 5. [A counterexample to fixed-profile soliton resolution for the three-dimensional quintic wave equation](https://arxiv.org/abs/2611.17291)
-- **Abstract:** For the three-dimensional focusing energy-critical wave equation, the authors construct a bounded global solution whose core approaches distinct stationary profiles along different limits, contradicting a fixed-profile soliton-resolution description.
-- **Authors:** Xuwen Chen, Justin Holmer, Shunlin Shen
-- **arXiv:** `2611.17291v1` (published 2026-11-12 18:53:35 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The abstract states a concrete counterexample to a fixed-profile formulation of a major asymptotic principle and reports a computer-assisted certificate for the stationary state and its complete odd energy kernel. It is a high-specificity result, though not cross-listed.
-- **Claimed result:** The authors construct a bounded forward-global solution asymptotic to a varying stationary profile plus one free wave; two limits of its core lie in distinct similarity orbits, ruling out the competing fixed-profile list described in the paper.
-- **Assumptions and setting:** Three-dimensional focusing energy-critical (quintic) wave equation; the construction starts arbitrarily close to a particular sign-changing stationary state and uses a certified construction.
-- **Caveat:** The result refutes the specified fixed-profile formulation through one constructed solution; it does not settle every broader or suitably generalized version of soliton resolution.
-- **Announcement type:** new submission, 2026-11-13 announcement batch
-- **Themes:** Analysis & PDE
-
-### 6. [Mass gap for the fractional $Φ^4_2$ model](https://arxiv.org/abs/2611.17119)
-- **Abstract:** The authors introduce a stochastic-quantisation method for mass gaps in a high-temperature regime and apply it to prove exponential spatial-correlation decay for the fractional `Φ⁴` model on the plane in the Wick-ordering regime.
-- **Authors:** Paweł Duch, Massimiliano Gubinelli
-- **arXiv:** `2611.17119v1` (published 2026-11-12 17:11:56 UTC; categories: `math.PR`, `math-ph`)
-- **Evidence for ranking:** This probability/mathematical-physics cross-listed paper gives a correlation-decay theorem and a proof strategy based on stochastic quantisation, perturbation propagation and a variational formula. Its placement follows the stated result and field bridge, not citation data.
-- **Claimed result:** The authors establish exponential decay of spatial correlations for the fractional `Φ⁴` model on the plane in the Wick-ordering regime, using an auxiliary random walk to control propagation and dissipative estimates plus the Boué–Dupuis formula to control the renormalised nonlinearity.
-- **Assumptions and setting:** Euclidean quantum field theory in a high-temperature regime; the application is the fractional `Φ⁴` model on the plane in the Wick-ordering regime.
-- **Caveat:** The abstract's application is restricted to that model and regime and gives no quantitative parameter range or mass-gap result for all couplings or temperatures.
-- **Announcement type:** new submission, 2026-11-13 announcement batch
+### 8. [The bias interval of the elephant random walk](https://arxiv.org/abs/2611.14576)
+- **Abstract:** For each superdiffusive memory parameter, the authors prove that the initial biases producing a bimodal limit density form a proper open interval, establishing a conjecture and a unique memory threshold for its nonemptiness.
+- **Authors:** Arjun Pemmasani
+- **arXiv:** `2611.14576v1` (published Tue, 10 Nov 2026 02:17:30 UTC; categories: `math.PR`, `cond-mat.stat-mech`)
+- **Evidence for ranking:** The paper settles a stated conjecture, gives a precise interval-and-threshold characterization, and its arXiv comments list code, certificates and Lean files; the probability/statistical-mechanics cross-list adds another checkable relevance signal.
+- **Claimed result:** The authors prove unimodality for sufficiently biased starts and exactly two local maxima for biases inside a proper open interval; the interval is nonempty precisely above one memory threshold, numerically about 0.6688. (arXiv abstract.)
+- **Assumptions and setting:** The superdiffusive elephant random walk; the shape statement concerns the limiting density as a function of initial bias.
+- **Caveat:** The threshold is characterized uniquely but reported numerically in the abstract; the results concern the superdiffusive regime, not every memory parameter.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
 - **Themes:** Probability & statistics; Mathematical physics
+
+### 9. [Random Chowla and Goldbach Conjectures](https://arxiv.org/abs/2611.14579)
+- **Abstract:** For Rademacher random multiplicative functions and polynomials with positive square-free-value density, the authors prove a normalized Gaussian limit; they also establish random Goldbach-type results for selected bivariate functions and settings.
+- **Authors:** Ihor Pylaiev
+- **arXiv:** `2611.14579v1` (published Tue, 10 Nov 2026 04:02:32 UTC; categories: `math.NT`, `math.CO`, `math.PR`)
+- **Evidence for ranking:** Its three-way number-theory/combinatorics/probability cross-list and method-of-moments theorem connect probabilistic number theory with random additive problems; this breadth, rather than citation growth, supports its placement.
+- **Claimed result:** For each non-linear integer polynomial P with positive square-free-value density, the normalized sum of a Rademacher random multiplicative function along P(n) converges in distribution to a standard Gaussian; the paper also proves analogous statements for selected random Goldbach-type sums. (arXiv abstract.)
+- **Assumptions and setting:** The polynomial must have positive density of square-free values; the Chowla-type result is for Rademacher random multiplicative functions, while Goldbach-type conclusions apply to a suitable class of bivariate functions and only special Rademacher cases.
+- **Caveat:** These are random analogues and do not prove the classical deterministic Chowla or Goldbach conjectures; the polynomial and bivariate-function hypotheses are essential.
+- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **Themes:** Probability & statistics; Algebra & number theory
 
 ## Trending Research Themes
 
-- **Proof and computation:** Verified numerical bounds certify the Fermat-quartic metric (paper 3), a computer-assisted certificate supports the stationary state in the wave-equation construction (paper 5), and Lean formalizes selected subset-sum results (paper 4). These are distinct validation strategies, not one shared method or evidence of a field-wide shift.
-- **Stochastic large-scale behavior:** The Ising-interface paper proves a GFF scaling limit under low-temperature, positive-slope hypotheses (paper 1), while the fractional `Φ⁴` work proves exponential correlation decay in a Wick-ordering regime (paper 6). Different models and analytic machinery.
-- **PDE theorem boundaries:** The nonlocal-energy paper identifies failure of ellipticity-only coercivity and recovery under additional structure (paper 2); the wave-equation paper breaks a fixed-profile asymptotic description (paper 5). The shared signal is sharpening theorem boundaries, not a shared technique.
+- **Conjecture tests recur in this selected sample, not necessarily across mathematics as a whole:** the papers report a bounded-dimensional proof of the buckling conjecture (Dai, Sun & Zhang), a claimed Brown--Shields counterexample (Chen, Fang & Guo), a parameter-dependent failure of nonlocal coercivity (Behn et al.), and resolutions of conjectures in regular matroids and the elephant walk (Streit; Pemmasani).
+- **Sharp inequalities and structural conditions meet PDE regularity:** the buckling comparison and nonlocal coercivity criterion turn quantitative inequalities into equality classifications or regularity consequences; the Landau--Coulomb paper uses weighted Fisher information and a De Giorgi iteration to bound the velocity tail (Dai et al.; Behn et al.; Xu).
+- **Arithmetic results bridge neighboring areas:** Achenjang & Woo use prime values of norm forms for weak approximation and elliptic-curve twists, while Ishii & Sakamoto use Drinfeld modular curves to classify isogenies and torsion. These are two distinct number-theory-to-geometry links, not one shared technique.
+- **Randomness connects probability with arithmetic and statistical mechanics:** Pemmasani analyzes the limiting density of a reinforced walk; Pylaiev obtains Gaussian limits for random multiplicative functions. Their objects and methods differ, but both make distributional shape a central output.
 
 ## Open Problems and Research Directions
 
-- **Author-stated — Ising interfaces:** Extend the 3D Ising GFF conclusion from sufficiently large `β` to every `β > βc` at each fixed positive slope. The authors also ask for the fluctuation scale and limit at degenerate slopes such as `(θ₁, 0)`; even the order of the positive-temperature variance is open. (Paper 1.)
-- **Author-stated question and proposed follow-up — nonlocal coercivity:** The authors ask what additional kernel structure restores coercivity and whether it occurs in motivating classes. A concrete follow-up is to test the critical boundary `n = 2s` and compare cancellation conditions there with regimes already settled by the paper; the boundary proposal is synthesis. (Paper 2.)
-- **Author-discussed extension — certified geometry:** Apply the verified-numerics/fixed-point pipeline to other Calabi–Yau manifolds and determine which geometric bounds dominate computation; the authors discuss computational issues in extending the method. (Paper 3.)
-- **Proposed direction — subset sums:** For each `0 < c < 1`, seek a complete description of the limit-point set of `f_c(n)/n`, beyond the subsequences and special `c` values in the preprint. (Paper 4.)
-- **Proposed direction — soliton resolution:** Determine which non-fixed-profile asymptotic formulations remain viable in view of the constructed solution, and whether related mechanisms occur for other stationary states or dimensions. (Paper 5.)
-- **Proposed direction — mass gap:** Test how far the stochastic-quantisation argument extends beyond the fractional `Φ⁴` plane model and the stated Wick-ordering/high-temperature regime. (Paper 6.)
+- **Author-stated boundary:** Dai, Sun & Zhang's calibration is shown to fail for n ≥ 48; the paper does not settle the buckling conjecture in those dimensions. A follow-up could seek a different calibration or a counterexample there. [Paper](https://arxiv.org/abs/2611.15243).
+- **Independent scrutiny:** Chen, Fang & Guo present a counterexample to Brown--Shields; independent specialist review was not reported in the contemporaneous MathWorld note. Checking the approximation and boundary-capacity construction independently is a prerequisite to treating the conjecture as resolved. [Paper](https://arxiv.org/abs/2611.16997), [MathWorld note](https://mathworld.wolfram.com/Brown-ShieldsConjecture.html).
+- **Author-mentioned generalization:** Achenjang & Woo note that their prime theorem may extend to broader nondegenerate binary quadratic forms. Testing the method beyond imaginary-quadratic norm forms would clarify its boundary; their current applications require only the narrower theorem. [Paper](https://arxiv.org/abs/2611.16062).
+- **Author-stated data-class extension:** Xu leaves the passage from a priori smoothing for smooth rapidly decaying solutions to global existence for general finite-mass/energy/entropy data to approximation and initial-trace stability. Developing that bridge is a concrete next step. [Paper](https://arxiv.org/abs/2611.17000).
+- **Parameter boundary and criterion sharpness:** Behn et al. establish failure for n > 2s and a positive case for n = 1, s > 1/2; the abstract does not resolve n = 2s. Clarifying this borderline and the necessity of annular cancellation in other kernel classes would test the criterion's reach. [Paper](https://arxiv.org/abs/2611.16682).
+- **Conditional optimality:** Streit obtains unconditional optimality for half-integer alpha but invokes the Erdős girth conjecture for all real alpha ≥ 1. Removing that dependency, or identifying the exact obstruction for non-half-integer alpha, is a natural follow-up. [Paper](https://arxiv.org/abs/2611.15755).
 
-Takeaway — This batch’s clearest mathematical signals are sharply delimited theorems: a GFF limit for tilted Ising interfaces, counterexamples and recovery criteria for nonlocal coercivity, and a computer-certified metric construction. Other entries address a named subset-sum problem and limits of fixed-profile wave asymptotics. These are promising preprints, but a same-batch snapshot cannot establish popularity or independent validation of the proofs.
+## Takeaway
 
-Method and sources — Daily window: announcement batch 2026-11-13 through 2026-11-13; arXiv recent listing labels the batch Friday, 13 November. The selected papers' v1 submissions are timestamped 2026-11-12 UTC. Since the run is Sunday, 15 November 2026, this is the latest prior batch, not a Sunday batch. Snapshot: 2026-11-15 01:25:58 UTC. Scope: arXiv Mathematics (`math`), all subfields; listing showed 774 batch entries. Six abstracts and latest v1 metadata were checked on arXiv; introductions/main results were inspected for the first three. arXiv supplies no official trending chart. As these are new v1 submissions, citation history is too short for meaningful momentum comparisons; a Semantic Scholar citation-count request was rate-limited, so citation and influential-citation metrics are not used. Ordering is a transparent significance/cross-field selection, not measured popularity; independent attention evidence was sparse. Sources: https://arxiv.org/list/math/recent; linked arXiv abstracts and v1 HTML pages; exact-title searches for independent discussion.
+This batch contains several substantial preprint claims: a sharp buckling result through dimension 47, a potentially decisive function-space counterexample that needs independent review, and strong arithmetic and PDE theorems with carefully delimited assumptions. Citation momentum is not informative for this very recent set, so the ranking is best read as an evidence-led shortlist of notable work, not a popularity measurement.
+
+## Method and sources
+
+- **Window:** Daily announcement batch 2026-11-13 through 2026-11-13 (Friday), selected because Sunday 2026-11-15 has no newer batch. Snapshot: 2026-11-15 17:29:09 UTC.
+- **Coverage:** The complete arXiv Mathematics new-listing page for 2026-11-13 was traversed: 665 new submissions, 102 cross-submissions, and 497 replacement submissions (1,264 entries total). The ranked pool is restricted to new submissions; cross-listed categories are preserved. Nine records were individually checked against their arXiv abstract pages, including versions, first-submission timestamps, categories and abstracts.
+- **Inference:** arXiv supplies no popularity ranking. Selection prioritized independent topic-specific discussion where found, multiple corroborating mathematical signals, explicit conjecture resolutions/counterexamples or sharp bounds, and cross-subfield relevance; recency was a tie-breaker. No numeric score was used. Semantic Scholar citation fields were not usable for this snapshot, and no citation totals are reported. The two external discussion signals checked for the leading conjecture papers are cited in their entries; claims remain preprint claims unless otherwise noted.
+- **Sources:** [arXiv Mathematics new listings](https://arxiv.org/list/math/new); the nine linked arXiv abstract pages and experimental HTML full texts for the top three; [MathWorld on the buckling conjecture](https://mathworld.wolfram.com/Polya-SzegoBucklingConjecture.html); [AIM buckling problem record](https://github.com/MColbrook/AIM/blob/main/problems/007-buckling-load-ball.md); [MathWorld on Brown--Shields](https://mathworld.wolfram.com/Brown-ShieldsConjecture.html).

@@ -1,137 +1,137 @@
-# AI arXiv daily | Friday, 13 November 2026 batch | 10 notable papers
+# arXiv Trending AI — Daily — 2026-11-13
 
-This batch has a clear agent-reliability thread: energy-based puzzle reasoning, program search for semi-supervised learning, policies trained from partial verification, and benchmarks for evidence provenance and changing environments. I’ll cover those signals, then a robotics result, an engineering-surrogate pair, and agent infrastructure. arXiv has no official trending chart; this is an inferred ranking from checkable discussion, conference/publication signals, citations, and artifacts, with limited citation evidence for papers this recent.
+Daily AI-paper brief for the Friday, 13 November 2026 announcement batch (10 papers). The most visible pattern is agentic systems being tested for dependable work: semi-supervised ML, prompt-injection defense, dynamic-world decisions, multi-model routing, and self-development benchmarks. Also on the agenda: a controlled rethink of multimodal vision encoders, energy-based reasoning, and how LLMs represent goals. This is an inferred evidence-ranked shortlist, not an official arXiv trending chart; citation evidence for these very recent papers is limited, so the ordering is tentative and does not indicate readership or downloads.
+
+Snapshot: 2026-11-16 01:10:09 UTC. The latest batch available at that time was 2026-11-13; this daily report therefore uses a prior announcement batch. The papers below were first submitted on 2026-11-12.
 
 ## Top papers (ranked)
 
-### 1. [Classical Energies Learn to Reason 1,000x Faster than Looped Models](https://arxiv.org/abs/2611.17309)
-- **Abstract:** The authors introduce CRAM, a learned Hopfield–Tank energy for constraint puzzles, reporting near-perfect Sudoku-Extreme and Maze-Unique accuracy after 42 ms and 132 ms of training, respectively, and at least 282× fewer inference FLOPs than looped baselines on the studied tasks.
-- **Authors:** Benjamin Hoover, Hugh Blayney, James C. R. Whittington
-- **arXiv:** `2611.17309v1` (published 2026-11-12 18:56:56 UTC; categories: `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** Several checkable signals appeared immediately: Ken Ashe published a technical discussion, World Neural posted a separate paper summary, and the authors released a public implementation. No current Semantic Scholar citations were reported at the snapshot; these are discussion and artifact signals, not readership statistics.
-- **Claimed contribution:** The authors train an explicit energy directly from solved puzzles and report data-efficient reasoning on Sudoku, maze, N-Queens, and graph-coloring tasks.
-- **Caveat:** The authors caution that the tested puzzles are unusually well matched to the pairwise energy; high scores do not establish scaling to harder tasks such as ARC-AGI, where learning latent quantities remains open.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Agents & reasoning; Efficient inference & systems
-
-### 2. [AgentSSL: Can MLE Agents Leverage Unlabeled Data?](https://arxiv.org/abs/2611.17323)
-- **Abstract:** AgentSSL frames semi-supervised learning as agentic program search and reports that generated pipelines beat tuned human-engineered baselines in 8 of 12 settings, while selection by the agent's feedback metric can reduce performance by as much as 47%.
+### 1. [AgentSSL: Can MLE Agents Leverage Unlabeled Data?](https://arxiv.org/abs/2611.17323)
+- **Abstract:** The paper frames semi-supervised learning as agentic program search, reporting wins over human-engineered baselines in 8 of 12 settings while finding that choosing among generated programs can sharply reduce performance.
 - **Authors:** Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson, Jennifer J. Sun
 - **arXiv:** `2611.17323v1` (published 2026-11-12 18:59:06 UTC; categories: `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** The arXiv record lists NeurIPS 2026, with a matching official NeurIPS poster and OpenReview record; the authors also provide a project site and a 16,977-program selection benchmark. These are checkable quality/artifact signals, not popularity counts.
-- **Claimed contribution:** The authors formulate semi-supervised learning as search over executable programs and introduce ProgramSelectBench to measure how well agents choose among candidate pipelines.
-- **Caveat:** The paper reports that the supervised AgentSL variant matches AgentSSL on both ecology tasks; its search is biased toward SSL, and reliable program selection without labels remains unresolved.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Agents & reasoning; Data & synthetic data; Evaluation & benchmarks
+- **Evidence for ranking:** Cross-listed in AI and ML, marked NeurIPS 2026 in the arXiv record, and discussed by multiple technical write-ups (including [EigenRadar](https://eigenradar.com/en/ai/briefs/2026-11-13/agentssl-program-selection/) and [Ken Ashe](https://kenashe.ai/blog/2026-11-13-agentssl-shows-agents-can-write-useful-semi-supervised-training-code/)); the [NeurIPS poster page](https://neurips.cc/virtual/2026/poster/154115) is a checkable venue signal.
+- **Claimed contribution:** The authors introduce AgentSSL and ProgramSelectBench (16,977 programs) and report that agent-generated strategies beat the strongest human-engineered baseline in 8/12 settings, by up to 21.8%.
+- **Caveat:** The authors report that on both ecology tasks their supervised AgentSL baseline matches AgentSSL, and identify unlabeled-data use and program selection as unresolved parts of the search problem.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Training & adaptation; Agents & reasoning; Evaluation & benchmarks
 
-### 3. [Negative-Only Policy Optimization for One-Sided Verifiable Rewards](https://arxiv.org/abs/2611.17287)
-- **Abstract:** NOPO formalizes settings where a verifier can reliably identify failures but cannot certify apparent successes, and updates a policy by suppressing trusted negatives rather than treating unverified positives as rewards.
-- **Authors:** Jiacheng Xu, Shuo He, Fuxiang Zhang, Chaojie Wang, Bo An
-- **arXiv:** `2611.17287v1` (published 2026-11-12 18:52:33 UTC; categories: `cs.LG`, `cs.CL`)
-- **Evidence for ranking:** The arXiv record identifies acceptance at NeurIPS 2026 as a Spotlight, corroborated by the official NeurIPS poster page. No current Semantic Scholar citations were reported at the snapshot; the conference signal, rather than citation momentum, supports its placement.
-- **Claimed contribution:** The authors combine reference-relative suppression of verifier-negative samples with group-level weighting and report pass@k gains across code, logic, and math evaluations using unit-test, constraint, and LLM-based verifiers.
-- **Caveat:** The authors state that negative-only learning specifies what to avoid but not where removed probability mass should move; using partial positive evidence without losing robustness remains future work.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Training & adaptation; Safety & alignment; Evaluation & benchmarks
+### 2. [CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts](https://arxiv.org/abs/2611.17115)
+- **Abstract:** CapLite derives write permissions from tool schemas and user-stated arguments rather than trusting an agent model to author its own security policy, and reports no successful attack across 13,935 attacked AgentDojo episodes.
+- **Authors:** Zimo Xu, Wenzhuo Liu, Hideki Nakayama
+- **arXiv:** `2611.17115v1` (published 2026-11-12 17:07:22 UTC; categories: `cs.AI`, `cs.CL`, `cs.CR`)
+- **Evidence for ranking:** The work has several separate technical summaries, including [AI Modeling](https://www.aimodeling.com/en/news/slug/caplite-slm-prompt-injection-defense) and [CASRAI](https://casrai.org/news/caplite-prompt-injection-defense-small-language-models-2026), alongside its unusually large reported attack evaluation. The external discussion is a visibility signal, not a readership measure.
+- **Claimed contribution:** The authors' CapLite design commits writes before reading tool results and permits them only when all consequential arguments were supplied by the user; their study reports zero successful attacks in the tested episodes.
+- **Caveat:** The authors state that the evaluation uses only AgentDojo's four suites; CapLite's utility under attack is 21 points below the undefended agent, and the experiments use simulated environments rather than real users or accounts.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Safety & alignment; Agents & reasoning; Evaluation & benchmarks
 
-### 4. [Collaborative Task Allocation for Heterogeneous Multi-Robot Systems Through Iterative Clustering](https://arxiv.org/abs/2611.17213)
-- **Abstract:** The paper introduces iterative clustering to split multi-robot task allocation into smaller assignments, proves monotonic utility improvement, and reports simulation gains over several heuristic baselines.
-- **Authors:** David R. Martin, Brooks A. Butler, Scott Nivison, Magnus Egerstedt, Mohammad Abdullah Al Faruque, Pramod Khargonekar
-- **arXiv:** `2611.17213v1` (published 2026-11-12 18:10:27 UTC; categories: `cs.RO`)
-- **Evidence for ranking:** Semantic Scholar reports 10 citations and 1 influential citation as current totals; the arXiv record links the paper to IEEE Robotics and Automation Letters and ICRA 2026, and the authors provide code. The journal/conference work predates this arXiv posting, so citation totals are not evidence of citations gained in this batch.
-- **Claimed contribution:** The authors propose random and heuristic iterative clustering variants, prove assignment utility rises monotonically, and report scalable simulations up to 1,000 robots and 500 tasks.
-- **Caveat:** The reported evaluation is simulation-based; the authors identify decentralized implementations and dynamic or uncertain environments as future work.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Robotics & control
+### 3. [Unbundling Multimodal Vision Encoding](https://arxiv.org/abs/2611.17334)
+- **Abstract:** In matched-compute experiments, the authors find that dedicated vision capacity matters more than a pretrained visual prior and can be placed inside early multimodal layers rather than in a separate pre-fusion encoder.
+- **Authors:** Ellis Brown, Chris Hoang, Shengyi Qian, Shang-Wen Li, Mike Lewis, et al.
+- **arXiv:** `2611.17334v1` (published 2026-11-12 18:59:54 UTC; categories: `cs.CV`, `cs.LG`)
+- **Evidence for ranking:** The paper is cross-listed in vision and ML and received separate technical discussion from [Sparse Notes](https://sparsenotes.com/posts/2026/11/papers/unbundling-multimodal-vision-encoding/) and the [Hugging Face paper page](https://huggingface.co/papers/2611.17334). These provide discoverable technical discussion, not citation momentum.
+- **Claimed contribution:** The authors isolate visual prior, dedicated vision parameters, and pre-fusion placement under common data and matched compute; they report comparable performance for early in-fusion modules and a conventional encoder.
+- **Caveat:** The authors' controlled study uses dense backbones up to 6.4B parameters and 224×224 images; they leave sparse MoE models, higher-resolution training, richer data, and video/interleaved data for future work.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Multimodal & vision-language; Training & adaptation; Efficient inference & systems
 
-### 5. [Unibuc - NLP at "Voight-Kampff" Generative AI Detection PAN 2025](https://arxiv.org/abs/2611.16612)
-- **Abstract:** The team compares LLM-embedding classifiers and fine-tuned models for PAN 2025 AI-text detection, reporting about 99.4% F1 for a classical-model ensemble on the sensitivity task and more modest results on human-AI collaborative text classification.
-- **Authors:** Teodor Marchitan, Claudiu Creanga, Liviu P. Dinu
-- **arXiv:** `2611.16612v1` (published 2026-11-12 10:49:03 UTC; categories: `cs.CL`)
-- **Evidence for ranking:** Semantic Scholar reports 5 citations and 1 influential citation as current totals; a matching PAN at CLEF 2025 proceedings paper is independently available through CEUR-WS. This is an arXiv posting of earlier competition work, so these citations do not establish a new burst in the present batch.
-- **Claimed contribution:** The authors report that majority voting over LightGBM, XGBoost, logistic regression, and SVM is comparable to fine-tuning for Subtask 1; their feature-fusion approach for Subtask 2 performs modestly.
-- **Caveat:** The paper's error analysis highlights AI-generated fiction as difficult to distinguish; human-AI collaborative text classification also remains weak, with reported macro-F1 and recall around 0.43.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Evaluation & benchmarks; Safety & alignment
-
-### 6. [Cited but Unused: Parametric Provenance in Retrieval-Augmented Generation](https://arxiv.org/abs/2611.17161)
-- **Abstract:** By replacing facts in retrieved passages with counterfactual variants, the authors estimate that some cited claims come from parametric memory rather than retrieved context and find that standard natural-language-inference checks do not reliably detect this mismatch.
-- **Authors:** Tanzeel Abbas, Tehseen Zia, David Windridge
-- **arXiv:** `2611.17161v1` (published 2026-11-12 17:39:14 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** Multiple recent third-party write-ups surfaced, including SyncAI News, Bharat Hunt, Agentic Design, and CASRAI. Semantic Scholar reports no current citations at the snapshot; these write-ups are attention signals, not validation of the method.
-- **Claimed contribution:** The authors propose counterfactual value substitution for separating retrieved facts from model-supplied parametric facts, compare ten attribution methods, and report that their best detector is not yet accurate enough to act on.
-- **Caveat:** The tested model set covers five sizes from one family and one comparator family; the authors say the method measures what a model knew rather than what it actually used, leaving provenance separation open.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Retrieval & knowledge; Evaluation & benchmarks; Interpretability
-
-### 7. [LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds](https://arxiv.org/abs/2611.17267)
-- **Abstract:** GeoWorld and LiveGeo create an evolving geographic environment and benchmark where agents must gather evidence, check whether it remains valid, and revise plans; the authors report that strong static performance does not ensure dynamic reliability.
-- **Authors:** Pengcheng Zhou, Xuanyu Liu, Yanchen Yin, Tianjie Ju, Bobo Li et al.
+### 4. [LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds](https://arxiv.org/abs/2611.17267)
+- **Abstract:** LiveGeo and its GeoWorld environment test whether agents can acquire current geographic evidence and revise decisions as locations, traffic, weather, and other world states change; the authors report substantial reliability drops in dynamic settings.
+- **Authors:** Pengcheng Zhou, Xuanyu Liu, Yanchen Yin, Tianjie Ju, Bobo Li, et al.
 - **arXiv:** `2611.17267v1` (published 2026-11-12 18:45:58 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** Recent summaries appeared from World Neural, AI Hot, and CASRAI. Semantic Scholar reports no current citations at the snapshot; the outside coverage is a modest attention signal, not evidence that the benchmark is widely adopted.
-- **Claimed contribution:** The authors release GeoWorld with verifiable evolving state histories and LiveGeo tasks that test active information gathering, evidence revalidation, and replanning.
-- **Caveat:** The evidence is specific to the proposed geographic tasks; the abstract does not establish reliability in other dynamic environments or real-world deployments.
-- **Announcement type:** new submission, 2026-11-13
+- **Evidence for ranking:** Independent technical coverage appeared at [AI Understanding](https://aiunderstanding.org/news/livegeo-benchmark-tests-geographic-ai-agents-in-evolving-environments) and [CASRAI](https://casrai.org/news/livegeo-geoworld-benchmark-geographic-ai-agents-2026); the paper describes a benchmark and environment release. The coverage and an inspectable artifact support inclusion, but do not establish adoption.
+- **Claimed contribution:** The authors release GeoWorld and a benchmark of 1,237 verifiable tasks across seven geographic task categories; in their matched settings, mean success falls 70.3% under task-only dynamics and 79.3% under shared dynamics relative to static settings.
+- **Caveat:** The evaluation covers nine models, six cities, and 149 matched dynamic instances; the paper also finds that providing updates alone does not restore static-task performance.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
 - **Themes:** Agents & reasoning; Evaluation & benchmarks; Retrieval & knowledge
 
-### 8. [ISLA: A Coordinate-Free, Measure-Weighted Transformer for Boundary-Driven PDEs](https://arxiv.org/abs/2611.17141)
-- **Abstract:** ISLA is a measure-weighted slice-attention transformer for steady boundary-driven PDEs that builds in rigid-motion and unit invariance and reports strong results on aerodynamic surrogate benchmarks.
-- **Authors:** Peter Sharpe
-- **arXiv:** `2611.17141v1` (published 2026-11-12 17:30:03 UTC; categories: `cs.LG`, `cs.CE`, `math-ph`, `physics.flu-dyn`)
-- **Evidence for ranking:** Semantic Scholar reports 1 citation, marked influential, as a current total; the paper is cross-listed across four categories and is explicitly paired with AeroZoo. An experimental NVIDIA PhysicsNeMo implementation page provides an additional checkable artifact signal.
-- **Claimed contribution:** The author claims coordinate-free learned operations, measure-weighted boundary aggregation, and read-only interior queries provide rigid-motion/reflection equivariance and mesh-consistent predictions under stated conditions.
-- **Caveat:** The paper states that unseen boundary layouts can sharply hurt accuracy, a deterministic equivariant predictor cannot represent symmetry-breaking flow modes, and 3D interior training can require more than 80 GiB per GPU.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Training & adaptation; Evaluation & benchmarks
+### 5. [Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery](https://arxiv.org/abs/2611.17241)
+- **Abstract:** Ballad adaptively routes heuristic-search steps among LLMs with non-stationary rewards, reporting that it can match or beat individual models on five combinatorial optimization problems while reducing API cost by up to 65.6% against always using the strongest model.
+- **Authors:** Samidha Verma, Ankit Anand, Sayan Ranu
+- **arXiv:** `2611.17241v1` (published 2026-11-12 18:28:08 UTC; categories: `cs.AI`)
+- **Evidence for ranking:** It has a [NeurIPS 2026 poster listing](https://neurips.cc/virtual/2026/poster/154569) and multiple technical write-ups, including [Agentic Design](https://agentic-design.ai/news-hub/ballad-bandit-based-llm-routing-automated-heuristic-discovery-521130) and [CASRAI](https://casrai.org/news/ballad-bandit-llm-routing-automated-heuristic-discovery-2026). The venue and external discussion, rather than citation counts, inform placement.
+- **Claimed contribution:** The authors combine online model selection, lineage-aware credit propagation, and discounting of stale outcomes to handle changing utility during heuristic evolution.
+- **Caveat:** The authors' current formulation treats each LLM as a black-box generator with a fixed prompt, leaving model-specific prompting, mutation operators, and context representations untested.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Agents & reasoning; Efficient inference & systems; Training & adaptation
 
-### 9. [AeroZoo: A Benchmark of Well-Posed Flow Problems for Foundation Models of Aerodynamics](https://arxiv.org/abs/2611.17152)
-- **Abstract:** AeroZoo contributes 3,815 time-mean RANS flow problems across seven geometry families and eight enclosures, with 22 frozen evaluation splits intended to test generalization beyond single-family datasets.
-- **Authors:** Peter Sharpe, Carmelo Gonzales, Corey Adams, Mehdi Ataei, Sanjay Choudhry
-- **arXiv:** `2611.17152v1` (published 2026-11-12 17:36:09 UTC; categories: `cs.LG`, `cs.CE`, `physics.flu-dyn`)
-- **Evidence for ranking:** Semantic Scholar reports 1 citation as a current total; the three-category cross-list and explicit companion link to ISLA make this a coherent benchmark/model pairing rather than an isolated architecture claim.
-- **Claimed contribution:** The authors provide a benchmark with complete boundary-condition inputs and geometry-disjoint splits; their results report that boundary-condition tokens reduce GeoTransolver error on the random split.
-- **Caveat:** The canonical benchmark uses only 2,816 cases with stable time means, and the authors report error increases of 2.4–9.2 times on some held-out enclosure or boundary-layout splits; the abstract says the data and scoring code will be released.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Evaluation & benchmarks; Training & adaptation
+### 6. [Classical Energies Learn to Reason 1,000x Faster than Looped Models](https://arxiv.org/abs/2611.17309)
+- **Abstract:** The authors train a Hopfield–Tank-style energy model, CRAM, for Sudoku and maze reasoning and report very fast puzzle training and substantially fewer inference FLOPs than looped-model baselines on those tasks.
+- **Authors:** Benjamin Hoover, Hugh Blayney, James C. R. Whittington
+- **arXiv:** `2611.17309v1` (published 2026-11-12 18:56:56 UTC; categories: `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** The paper is cross-listed in AI and ML and has generated separate technical discussion, including [Ken Ashe's analysis](https://kenashe.ai/blog/2026-11-13-cram-makes-sudoku-reasoning-look-too-easy/) and a public [CRAM implementation](https://github.com/Prefrontal-AI/CRAM). These make the method and its caveat independently inspectable.
+- **Claimed contribution:** The authors introduce CRAM and report at least 1,000× faster training than the compared looped models on Sudoku-Extreme and Maze-Unique, plus at least 282× fewer inference FLOPs at matched Sudoku accuracy.
+- **Caveat:** The authors explicitly caution that Sudoku and Maze are trivially solvable benchmarks and should not be used alone to assess the scalability of looped reasoning; results on these tasks do not establish general reasoning gains.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Agents & reasoning; Efficient inference & systems; Evaluation & benchmarks
 
-### 10. [Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon](https://arxiv.org/abs/2611.17294)
-- **Abstract:** Metal Sandbox combines per-agent filesystem isolation, native command execution, and cross-Mac scheduling, reporting higher command throughput on four Mac mini M4 nodes and reduced waiting in fixed-trace replays.
-- **Authors:** Haozhe Wang, Lina Chen, Fanqi Wan, Qi Han, Yinmin Zhang et al.
-- **arXiv:** `2611.17294v1` (published 2026-11-12 18:54:42 UTC; categories: `cs.LG`, `cs.AI`, `cs.CL`, `cs.DC`)
-- **Evidence for ranking:** Semantic Scholar reports no current citations at the snapshot; the four-category cross-list, open-source Metal Sandbox and Harbor repositories, and concrete multi-node measurements support its relevance, but not a claim of popularity.
-- **Claimed contribution:** The authors present a native Apple Silicon execution environment that schedules agent tool commands across Macs and integrates with Harbor for task verification and rollout collection.
-- **Caveat:** The authors state that this is not hostile multi-tenant containment or physical GPU exclusivity; replay estimates hold agent behavior and phase durations fixed, and the hardware evaluation uses four Macs.
-- **Announcement type:** new submission, 2026-11-13
-- **Themes:** Efficient inference & systems; Agents & reasoning
+### 7. [When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision](https://arxiv.org/abs/2611.16694)
+- **Abstract:** In a controlled revision audit, the authors find that expert-attributed disagreement can increase answer reversals without reliably improving accuracy, and that reversal counts alone can misrepresent whether a model corrected an error.
+- **Authors:** Yupeng Tang, Mingfeng Lin
+- **arXiv:** `2611.16694v1` (published 2026-11-12 12:11:03 UTC; categories: `cs.AI`, `cs.CL`)
+- **Evidence for ranking:** The arXiv record identifies NeurIPS 2026 acceptance; a matching [NeurIPS poster](https://neurips.cc/virtual/2026/poster/151259), [public code repository](https://github.com/yupengtang/when-expert-disagreement-hurts), and [Hugging Face paper page](https://huggingface.co/papers/2611.16694) corroborate the work and its reproducibility artifacts.
+- **Claimed contribution:** The authors propose a paired, two-pass audit and apply it to 1,989 evidence-grounded decisions across medicine, science, and law; they report accuracy losses of up to 16.1 points under expert disagreement.
+- **Caveat:** The evidence comes from five models and controlled binary decisions in three professional domains; the paper does not establish how the measured effects generalize to open-ended tasks or other revision protocols.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Evaluation & benchmarks; Safety & alignment; Agents & reasoning
+
+### 8. [Singularity-Bench: Can Agents Build Agents?](https://arxiv.org/abs/2611.16591)
+- **Abstract:** Singularity-Bench measures agent-built systems across six AI-development tasks and reports that one tested agent setup matches or exceeds human-built baselines across all six, while the rest show uneven performance.
+- **Authors:** Yang Zhou, Krish Agarwal, Zhuoming Chen, Zerui Wang, Zhenyu Zhang, et al.
+- **arXiv:** `2611.16591v1` (published 2026-11-12 10:24:51 UTC; categories: `cs.AI`)
+- **Evidence for ranking:** The authors provide a detailed [benchmark site](https://infini-ai-lab.github.io/singularity-bench/) and a public [GitHub repository](https://github.com/Infini-AI-Lab/singularity-bench), making its six tasks, baseline choices, and red-team setup checkable. This is a public-artifact signal rather than evidence of readership.
+- **Claimed contribution:** The authors introduce six end-to-end tasks and Breakwater, a Harbor extension that blocked every tested attack in their red-team evaluation; their strongest setup's Singularity-Index is 1.25.
+- **Caveat:** The authors state that the task scale is smaller than that needed to measure true recursive self-improvement and that even the strongest agent leaves substantial headroom on raw task scores.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks; Safety & alignment
+
+### 9. [Negative-Only Policy Optimization for One-Sided Verifiable Rewards](https://arxiv.org/abs/2611.17287)
+- **Abstract:** NOPO trains from trusted verifier negatives while treating non-falsified outputs as unlabeled, and the authors report improved pass@k across code, logic, and math tasks when full correctness labels are unavailable.
+- **Authors:** Jiacheng Xu, Shuo He, Fuxiang Zhang, Chaojie Wang, Bo An
+- **arXiv:** `2611.17287v1` (published 2026-11-12 18:52:33 UTC; categories: `cs.LG`, `cs.CL`)
+- **Evidence for ranking:** The arXiv record marks it as a NeurIPS 2026 Spotlight paper, and the authors provide a [project page](https://xiaobanni.github.io/projects/nopo/) with the method, benchmark tables, and limitations. Its ML-language cross-list and visible evaluation artifacts support the inclusion.
+- **Claimed contribution:** The authors combine reference-relative negative suppression with a group-level support weight and report gains over baselines across unit-test, constraint-check, and LLM self-verifiers.
+- **Caveat:** NOPO depends on trustworthy negative judgments; the authors note that weak negative-class recall reduces its supervision signal and that suppressing failures alone does not specify where probability mass should move.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Training & adaptation; Evaluation & benchmarks; Safety & alignment
+
+### 10. [Goal Encoding in LLMs](https://arxiv.org/abs/2611.17297)
+- **Abstract:** The authors use causal interventions in coding tasks to identify attention-head representations of upcoming sub-goals and propose that models sustain these representations by rereading task context rather than carrying recurrent state.
+- **Authors:** Arnab Sen Sharma, Eric Todd, Sheridan Feucht, Andy Arditi, Rohit Gandikota, et al.
+- **arXiv:** `2611.17297v1` (published 2026-11-12 18:55:06 UTC; categories: `cs.CL`, `cs.AI`, `cs.LG`)
+- **Evidence for ranking:** The paper is cross-listed in three core AI categories and has a [project page](https://goals.baulab.info/) with code and data; its OpenReview record and an independent [CASRAI overview](https://casrai.org/news/goal-encoding-in-llms-interpretability-preprint-2026) provide checkable external context.
+- **Claimed contribution:** The authors report causal and transferable sub-goal encodings in sparse attention heads and test a non-recurrent goal-seeking account with targeted interventions.
+- **Caveat:** The authors operationalize only pre-commitment, plasticity, and temporal persistence; they leave other goal attributes unresolved, and note that multi-token evaluation partly relies on an LLM judge.
+- **Announcement type:** new submission, 2026-11-13 announcement batch
+- **Themes:** Interpretability; Agents & reasoning
 
 ## Trending Research Themes
 
-- **Agent systems are being measured at the decision bottlenecks around generation.** AgentSSL makes program selection a benchmarked problem; NOPO handles partial verification without trusting apparent positives; LiveGeo tests whether evidence stays valid as the environment changes. These are distinct methods, but all expose a failure point beyond fluent generation.
-- **Evidence provenance and verification are recurring concerns.** Cited but Unused tests whether a retrieved citation actually supplied a claim; NOPO asks what to do when verifiers only reject failures; LiveGeo asks agents to revalidate evidence over time. The common methodological shift is to evaluate the reliability of evidence signals, not just task answers.
-- **Efficiency is pursued at several layers, not by one shared technique.** CRAM reports lower training and inference cost on structured puzzles; NOPO changes the policy update rule; Metal Sandbox schedules tool execution across machines. These results should not be conflated into a single efficiency breakthrough.
-- **Evaluation boundaries are increasingly explicit.** CRAM cautions that puzzle scores may not transfer to harder reasoning; AgentSSL separates pipeline discovery from selection; LiveGeo separates static competence from dynamic reliability. The papers collectively foreground what current benchmarks fail to test, without establishing a general solution.
-- **Scientific and physical systems form a smaller applied cluster.** ISLA and AeroZoo pair an invariant PDE surrogate with a benchmark that varies geometry and boundary conditions; the multi-robot allocation paper instead focuses on simulation-tested coordination. These are notable applications, not evidence of a batch-wide shift toward physical AI.
-- **Batch composition:** the 348 eligible records had primary categories cs.CV 76, cs.LG 67, cs.AI 61, cs.RO 40, cs.CL 38, stat.ML 5, cs.MA 3, and cs.NE 2. The ten-paper shortlist is not proportional to those category counts.
+- **Agents are being evaluated in less forgiving settings.** AgentSSL studies weakly supervised program search; LiveGeo adds changing external state; Singularity-Bench measures end-to-end system-building; and Goal Encoding probes internal sub-goal representations. Together these papers broaden the unit of evaluation from a single answer to sustained decisions, code, or system behavior.
+- **Reliability is shifting from “did it answer?” to “what evidence and control justified the action?”** CapLite constrains writes to user-stated arguments, LiveGeo checks evidence and state freshness, and When Expert Disagreement Hurts separates useful correction from prestige-driven reversal.
+- **Training and inference efficiency are being tested through adaptive allocation.** Ballad routes among models as utility changes; CRAM uses energy descent and adaptive stopping on puzzle tasks; NOPO uses negative-only feedback under partial verification. These are distinct mechanisms, not evidence of one settled recipe.
+- **Multimodal architecture gets a controlled ablation rather than a bundled-model comparison.** Unbundling Multimodal Vision Encoding isolates visual prior, dedicated vision parameters, and where they enter the model. Its findings remain bounded by the data and backbone scale in the paper.
+- **The selected set is concentrated in agentic AI:** 7 of 10 papers have primary category cs.AI; the other three are primary cs.CV, cs.LG, and cs.CL. Core-category appearances also include cs.LG (5), cs.CL (4), and cs.CV (1). This reflects the shortlist and its discovered discussion signals, not the full arXiv corpus.
 
 ## Open Problems and Research Directions
 
-- **Author-stated open problem — generalizing energy-based reasoning.** CRAM's strong results concern constraint puzzles that fit a pairwise energy; the authors note harder tasks require latent quantities and do not follow from current scores. **Research direction (synthesis):** test on tasks requiring latent-variable discovery and compare against looped models with matched data, compute, and stopping rules. [CRAM](https://arxiv.org/abs/2611.17309)
-- **Author-stated open problem — program selection under scarce labels.** AgentSSL reports that unsupervised selection can badly mis-rank candidate programs and that supervised alternatives match it on ecology tasks. **Research direction (synthesis):** compare active label allocation, stronger feedback, and joint selection of supervised versus semi-supervised pipelines across new domains. [AgentSSL](https://arxiv.org/abs/2611.17323)
-- **Author-stated open problem — partial positive evidence.** NOPO avoids rewarding verifier positives, but suppressing negatives alone does not specify where policy probability should move. **Research direction (synthesis):** test uncertainty-filtered or pairwise positive signals while tracking reward hacking and robustness across verifier types. [NOPO](https://arxiv.org/abs/2611.17287)
-- **Author-stated open problem — identifying what a RAG model actually used.** Cited but Unused finds current provenance signals too inaccurate to act on, and standard NLI checks can fail. **Research direction (synthesis):** test calibrated interventions across model families and retrieval settings, measuring the false-positive cost before using provenance labels in downstream decisions. [Cited but Unused](https://arxiv.org/abs/2611.17161)
-- **Author-stated open problem — adapting to changing worlds.** LiveGeo reports that static success is not enough for dynamic geographic decisions. **Research direction (synthesis):** vary update frequency, stale-evidence rates, and replanning cost, then test whether similar failures occur outside geographic tasks. [LiveGeo](https://arxiv.org/abs/2611.17267)
-- **Author-stated limitations — aerodynamic out-of-distribution performance and system cost.** ISLA reports poor performance on some unseen boundary layouts and high GPU memory requirements; AeroZoo shows held-out layout/enclosure degradation. **Research direction (synthesis):** evaluate both on shared preregistered splits that hold out geometry-condition combinations and compare against solver sensitivity and mesh-refinement baselines. [ISLA](https://arxiv.org/abs/2611.17141), [AeroZoo](https://arxiv.org/abs/2611.17152)
-- **Author-stated boundary — sandbox security and replay assumptions.** Metal Sandbox does not claim hostile multi-tenant containment or GPU exclusivity, and replay holds agent behavior and phase durations fixed. **Research direction (synthesis):** run live trials with diverse workloads, hardware, contention, and audited isolation boundaries. [Metal Sandbox](https://arxiv.org/abs/2611.17294)
+- **Author-stated — selecting useful semi-supervised programs:** AgentSSL reports a large gap between the best generated program and the one selected under weak feedback, and its ecology tasks do not beat the supervised AgentSL baseline. Follow-up work could compare active and unsupervised selection under progressively stronger feedback and test whether the same selection method transfers across domains. ([AgentSSL](https://arxiv.org/abs/2611.17323))
+- **Author-stated — robust multimodal scaling:** Unbundling leaves MoE backbones, higher-resolution images, video/interleaved data, and recipe-specific data mixtures open. A controlled extension could vary these factors while preserving compute-matched comparisons. ([Unbundling Multimodal Vision Encoding](https://arxiv.org/abs/2611.17334))
+- **Author-stated — defense and utility outside simulated suites:** CapLite's zero-attack result is on AgentDojo, while utility is lower than for an undefended agent. Test the policy on broader tool suites and realistic user-confirmation flows, reporting both attack success and task completion. ([CapLite](https://arxiv.org/abs/2611.17115))
+- **Evidence-tied synthesis — maintaining decisions as the world changes:** LiveGeo finds large drops under dynamics, including failures after agents have observed relevant updates. A useful next study would separate update discovery, evidence interpretation, and plan revision over longer horizons and more environments. ([LiveGeo](https://arxiv.org/abs/2611.17267))
+- **Author-stated — trustworthy one-sided feedback:** NOPO relies on reliable negative labels and does not determine where probability mass should move; its authors suggest testing partial positive signals such as pairwise comparisons or uncertainty filters while preserving robustness. ([NOPO](https://arxiv.org/abs/2611.17287))
+- **Author-stated — measuring actual recursive improvement:** Singularity-Bench's tasks are smaller than the compute and time budgets required for true recursive self-improvement. Extend the benchmark toward larger-scale, multi-generation loops and continue auditing reward-hacking defenses. ([Singularity-Bench](https://arxiv.org/abs/2611.16591))
 
 ## Takeaway
 
-The most visible pattern in this batch is a move from evaluating model outputs to testing the machinery around them: selecting agent-generated programs, learning from incomplete verifiers, tracing evidence provenance, and revising decisions as the world changes. The attention signals favor a handful of agent/reasoning papers, but most candidates are too new for citation totals to mean much, and the strongest claims remain bounded by specific benchmarks and deployment setups.
+This batch's strongest recurring signal is a move toward testing agent reliability under partial feedback, changing state, and real tool or system constraints—not just static answer accuracy. The methods and benchmarks are promising but early: coverage is narrow, and several papers explicitly identify gaps between benchmark performance and deployment or broader capability.
 
 ## Method and sources
 
-- **Window:** daily announcement batch 2026-11-13 through 2026-11-13. The arXiv recent-submissions page identifies Friday, 13 November as the latest batch; this is the prior batch for the Sunday 2026-11-15 run. The selected records have first-submission timestamps on 2026-11-12 UTC. Snapshot: 2026-11-15 17:12:51 UTC.
-- **Corpus:** one broad arXiv API query over `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`, filtered to `submittedDate:[202611120000 TO 202611122359]`. It returned 348 unique records and covered all configured categories. The arXiv cs.AI recent page reports 321 entries in the 13 November announcement batch.
-- **Ranking:** arXiv publishes no official trending ranking. Ordering prioritizes visible independent discussion or conference/publication signals, then corroborating current citation totals, cross-list breadth, and checkable artifacts; recency is only a tie-breaker. Semantic Scholar citation totals are current counts, not citations gained during this batch. For the RA-L/ICRA and PAN proceedings papers, cited work predates this arXiv posting, so those counts are not interpreted as a batch-period surge. Because the attention signals are sparse, this is better described as notable recent papers than a reliable popularity ranking.
-- **Verification:** all ten selected arXiv abstract pages were checked. The PDFs for the top three were read for introduction, evaluation, and limitations; the robotics paper's conclusion and the ISLA paper's limitations were also checked. No prior-window comparison is included.
-- **Primary sources:** [arXiv recent submissions](https://arxiv.org/list/cs.AI/recent); [arXiv API](https://export.arxiv.org/api/query); [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch). Selected arXiv pages: [2611.17309](https://arxiv.org/abs/2611.17309), [2611.17323](https://arxiv.org/abs/2611.17323), [2611.17287](https://arxiv.org/abs/2611.17287), [2611.17213](https://arxiv.org/abs/2611.17213), [2611.16612](https://arxiv.org/abs/2611.16612), [2611.17161](https://arxiv.org/abs/2611.17161), [2611.17267](https://arxiv.org/abs/2611.17267), [2611.17141](https://arxiv.org/abs/2611.17141), [2611.17152](https://arxiv.org/abs/2611.17152), [2611.17294](https://arxiv.org/abs/2611.17294).
-- **Corroboration:** [Ken Ashe's CRAM discussion](https://kenashe.ai/blog/2026-11-13-cram-makes-sudoku-reasoning-look-too-easy/); [World Neural CRAM report](https://worldneural.com/research/arxiv-2611-17309); [CRAM repository](https://github.com/Prefrontal-AI/CRAM); [NeurIPS AgentSSL poster](https://neurips.cc/virtual/2026/poster/154115); [AgentSSL OpenReview](https://openreview.net/forum?id=yWxcbCZwgn); [NeurIPS NOPO poster](https://neurips.cc/virtual/2026/poster/152610); [RA-L DOI for the robotics paper](https://doi.org/10.1109/LRA.2025.3632086); [PAN 2025 CEUR proceedings paper](https://ceur-ws.org/Vol-4038/paper_308.pdf); [Cited but Unused coverage at SyncAI News](https://syncai.news/article/cited-but-unused-parametric-provenance-in-retrieval-augmented-generation-979e5b) and [Bharat Hunt](https://bharathunt.org/ai/cited-but-unused-parametric-provenance-in-retrieval-augmented); [LiveGeo coverage at AI Hot](https://aihot.tech/story/arxiv-ker5a3-livegeo-benchmarking-geographic-agents-in-continuously-evolving-worlds/) and [World Neural](https://worldneural.com/research/arxiv-2611-17267); [NVIDIA PhysicsNeMo ISLA documentation](https://docs.nvidia.com/physicsnemo/latest/physicsnemo/api/models/isla.html); [Metal Sandbox](https://github.com/WangHaoZhe/metal-sandbox) and [Harbor](https://github.com/WangHaoZhe/harbor).
+- **Window:** daily; 2026-11-13 through 2026-11-13 (announcement-batch date). The selected arXiv records show first submissions on 2026-11-12. **Snapshot:** 2026-11-16 01:10:09 UTC. The latest category recent pages then showed Fri 13 Nov as the latest batch, so this report uses a prior batch rather than an empty daily report.
+- **Corpus query/scope:** core categories `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`; selected cross-listed papers only. Recent pages were checked for each category. High-volume listings expose only the first 50 entries by default, so discovery is not exhaustive; all ten retained papers' arXiv abstract pages and version/category metadata were checked.
+- **Inference method:** arXiv has no official trending chart. Ordering is inferred from checkable venue records, cross-list relevance, public project/code/benchmark artifacts, and external technical discussion surfaced in web search. No author fame, institution prestige, or unsupported social-media popularity was used. Semantic Scholar citation counts and influential-citation counts could not be obtained for this snapshot; no citation velocity is claimed. The shortlist is best read as notable papers with discoverable momentum signals, not a popularity ranking.
+- **arXiv primary sources:** [cs.AI recent](https://arxiv.org/list/cs.AI/recent), [cs.LG recent](https://arxiv.org/list/cs.LG/recent), [stat.ML recent](https://arxiv.org/list/stat.ML/recent), [cs.CL recent](https://arxiv.org/list/cs.CL/recent), [cs.CV recent](https://arxiv.org/list/cs.CV/recent), [cs.RO recent](https://arxiv.org/list/cs.RO/recent), [cs.NE recent](https://arxiv.org/list/cs.NE/recent), [cs.MA recent](https://arxiv.org/list/cs.MA/recent); each paper links to its canonical abstract page above.
+- **Corroborating sources:** venue pages, project sites, repositories, and independent technical write-ups linked in the individual evidence fields.
+- **Retrieval limitations:** the broad arXiv API query and Semantic Scholar batch lookup were rate-limited (HTTP 429); therefore the full machine-readable candidate pool and citation counts were unavailable. This is why the report discloses a first-50-listing limitation and keeps the ranking explicitly tentative.

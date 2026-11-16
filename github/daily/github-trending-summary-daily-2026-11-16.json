@@ -3,63 +3,62 @@
   "category": "github",
   "window": "daily",
   "date": "2026-11-16",
-  "snapshot_time_utc": "2026-11-16 01:34 UTC",
+  "snapshot_time_utc": "2026-11-16 17:33 UTC",
+  "date_range": "2026-11-16 through 2026-11-16",
   "title": "GitHub Trending Summary - Daily - 2026-11-16",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-16.md",
-  "entry_count": 12,
+  "entry_count": 14,
   "entry_noun": "repositories",
-  "ranking_basis": "GitHub Trending daily star gains, ranked descending; captured at 2026-11-16 01:34 UTC",
-  "ranking_explanation": "Repositories are ordered by stars gained in the selected daily window, descending; ties retain their position on the matching GitHub Trending daily page. Gains are partial-day values, not a complete-day ranking.",
-  "global_caveat": "Partial-day snapshot. The newly-created-repository Search API query produced substantial duplicate/noisy results; none displaced the current Trending entries. Total stars and default-branch commits were corroborated through GitHub REST API at collection time.",
+  "ranking_basis": "Daily GitHub Trending star gains",
+  "ranking_explanation": "All entries were taken from the current GitHub Trending daily page at capture time, then ordered by the page-reported daily star gains in descending order. Gains are partial-day figures, not a full-day close. Current star totals, languages, and default-branch commit SHAs were corroborated with GitHub REST API.",
+  "global_caveat": "Snapshot is partial-day. The GitHub Search API recent-created query returned a noisy, clone-heavy set, so no additional candidates were included. Repository purpose for narration is based on current GitHub Trending descriptions and README review for the five largest daily gainers; no DeepWiki enrichment was used.",
   "themes": [
     {
-      "id": "agent-native-products",
-      "title": "Agent interfaces and user control",
-      "content": "Agent-facing products connect assistants to editable work surfaces and user feedback: Univer offers an office SDK, AG-UI standardizes agent-to-UI events, and Plannotator provides an annotation and review loop.",
+      "id": "agent-integration",
+      "title": "Agent integration and interaction",
+      "content": "Projects connect agents to office capabilities, user interfaces, browsers, developer tools, or media workflows.",
       "supporting_repository_ids": [
         "01-dream-num-univer",
-        "02-ag-ui-protocol-ag-ui",
-        "05-backnotprop-plannotator"
+        "05-chromedevtools-chrome-devtools-mcp",
+        "06-ag-ui-protocol-ag-ui",
+        "07-backnotprop-plannotator",
+        "08-google-labs-code-stitch-skills",
+        "09-kajisho5-ffmpeg-skill"
       ]
     },
     {
-      "id": "agent-skills-and-domain-knowledge",
-      "title": "Reusable skills and domain knowledge",
-      "content": "Stitch Skills, Claude-BugHunter, modern-web-guidance-src, claude-trading-skills, and NVIDIA SkillEvaluator cover reusable capabilities, domain specialization, and evaluation of agent skills.",
+      "id": "agent-quality-and-review",
+      "title": "Agent quality, evaluation, and review",
+      "content": "SkillEvaluator measures skill quality and impact; Open Code Review adds deterministic review structure; Plannotator supplies human feedback.",
       "supporting_repository_ids": [
-        "04-google-labs-code-stitch-skills",
-        "11-elementalsouls-claude-bughunter",
-        "03-googlechrome-modern-web-guidance-src",
-        "07-tradermonty-claude-trading-skills",
-        "10-nvidia-skillevaluator"
+        "02-nvidia-skillevaluator",
+        "03-alibaba-open-code-review",
+        "07-backnotprop-plannotator",
+        "05-chromedevtools-chrome-devtools-mcp"
       ]
     },
     {
-      "id": "agent-workflows-and-tooling",
-      "title": "Operational agent workflows",
-      "content": "Chrome DevTools MCP, Open Code Review, and LoopForge connect agents to browser inspection, contextual code review, and approval-gated delivery.",
+      "id": "task-specific-agent-skills",
+      "title": "Reusable skills for specialized tasks",
+      "content": "The list applies skills and multi-agent workflows to trading, design, video editing, research writing, and cross-source topic research.",
       "supporting_repository_ids": [
-        "06-chromedevtools-chrome-devtools-mcp",
-        "08-alibaba-open-code-review",
-        "09-tencent-loopforge"
+        "02-nvidia-skillevaluator",
+        "04-tradermonty-claude-trading-skills",
+        "08-google-labs-code-stitch-skills",
+        "09-kajisho5-ffmpeg-skill",
+        "10-google-research-paper-orchestra",
+        "12-mvanhorn-last30days-skill",
+        "01-dream-num-univer"
       ]
     },
     {
-      "id": "ml-systems-foundations",
-      "title": "Machine-learning systems foundations",
-      "content": "ggml is a lower-momentum counterpoint focused on a foundational tensor library rather than an agent-facing application.",
+      "id": "non-agent-projects",
+      "title": "Established and domain-specific projects beyond agent tooling",
+      "content": "The historical atlas, Svelte framework, and Docker management interface are non-agent or conventional developer projects in the same daily list.",
       "supporting_repository_ids": [
-        "12-ggml-org-ggml"
-      ]
-    },
-    {
-      "id": "software-quality-and-security",
-      "title": "Quality, security, and evaluation",
-      "content": "Open Code Review, Claude-BugHunter, and SkillEvaluator illustrate investment in code quality, security workflows, and testing whether skills affect agent behavior.",
-      "supporting_repository_ids": [
-        "08-alibaba-open-code-review",
-        "11-elementalsouls-claude-bughunter",
-        "10-nvidia-skillevaluator"
+        "11-deanchensj-jiangshan-map",
+        "13-sveltejs-svelte",
+        "14-getarcaneapp-arcane"
       ]
     }
   ],
@@ -68,13 +67,35 @@
       "id": "00-snapshot",
       "kind": "snapshot",
       "title": "Snapshot",
-      "content": "Daily snapshot captured 2026-11-16 01:34 UTC; date range 2026-11-16 through 2026-11-16. Ranking follows GitHub Trending daily; star gains are partial-day figures."
+      "content": "Daily snapshot captured 2026-11-16 17:33 UTC; date range 2026-11-16 through 2026-11-16. Ranked by daily GitHub Trending star gains."
     },
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Agent-facing software dominates today's list: office and frontend protocols, agent skills, human review loops, and browser tools all rank highly. Univer leads with 2,354 stars today; the common thread is building the connective tissue and oversight around coding agents rather than a new model release."
+      "content": "Univer led the captured daily list with +1,878 stars, ahead of NVIDIA SkillEvaluator (+953) and Alibaba Open Code Review (+946). The clearest common thread is tooling that makes coding agents more usable and accountable—through application integrations, review/evaluation workflows, and reusable task skills—alongside a smaller set of established or domain-specific projects."
+    },
+    {
+      "id": "20-top-repositories",
+      "kind": "repo-index",
+      "title": "Top Repositories",
+      "content": "Fourteen repositories, ordered by descending daily stars gained; per-repository sections follow.",
+      "refs": [
+        "01-dream-num-univer",
+        "02-nvidia-skillevaluator",
+        "03-alibaba-open-code-review",
+        "04-tradermonty-claude-trading-skills",
+        "05-chromedevtools-chrome-devtools-mcp",
+        "06-ag-ui-protocol-ag-ui",
+        "07-backnotprop-plannotator",
+        "08-google-labs-code-stitch-skills",
+        "09-kajisho5-ffmpeg-skill",
+        "10-google-research-paper-orchestra",
+        "11-deanchensj-jiangshan-map",
+        "12-mvanhorn-last30days-skill",
+        "13-sveltejs-svelte",
+        "14-getarcaneapp-arcane"
+      ]
     },
     {
       "id": "01-dream-num-univer",
@@ -82,15 +103,16 @@
       "title": "dream-num/univer",
       "rank": 1,
       "url": "https://github.com/dream-num/univer",
-      "description": "An embeddable office SDK for adding spreadsheet, document, collaboration, and file-processing features to products and agents.",
-      "content": "An extensible office foundation with APIs and events for applications and agents; the day's strongest star gain.",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "content": "An Office SDK for embedding editing, calculation, collaboration, and file processing into products and agent workflows.",
       "language": "TypeScript",
-      "stars_gained": 2354,
-      "total_stars": 25909,
-      "default_branch_commit": "0d7923dd7a26e6bea56f1bc791a03618235a4618",
-      "why_notable": "The day's strongest star gain; its README describes an extensible office foundation with APIs and events for applications and agents.",
+      "stars_gained": 1878,
+      "total_stars": 27637,
+      "default_branch_commit": "582f0c25898a7e2f2d5952919caede69b3eb259e",
+      "why_notable": "The day's largest gain; its README positions the open-source SDK as a way to connect office capabilities to applications and agents.",
       "theme_ids": [
-        "agent-native-products"
+        "agent-integration",
+        "task-specific-agent-skills"
       ],
       "signal_strength": "lead",
       "evidence_density": "rich",
@@ -103,182 +125,52 @@
       ]
     },
     {
-      "id": "02-ag-ui-protocol-ag-ui",
+      "id": "02-nvidia-skillevaluator",
       "kind": "repo",
-      "title": "ag-ui-protocol/ag-ui",
+      "title": "NVIDIA/SkillEvaluator",
       "rank": 2,
-      "url": "https://github.com/ag-ui-protocol/ag-ui",
-      "description": "An event-based protocol for connecting AI agents to user-facing applications.",
-      "content": "An open, lightweight event protocol that standardizes agent-to-application interaction, with streaming and human-in-the-loop patterns.",
-      "language": "TypeScript",
-      "stars_gained": 1820,
-      "total_stars": 17900,
-      "default_branch_commit": "2330368a2a74573902858867072406638ba3073d",
-      "why_notable": "A strong protocol-layer signal; its README emphasizes interoperable events, streaming, and human-in-the-loop interfaces.",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "content": "A three-tier framework for validating skills, finding semantic overlap, and testing their effects on agent task results.",
+      "language": "Python",
+      "stars_gained": 953,
+      "total_stars": 2441,
+      "default_branch_commit": "96f03c1abf0e801a1d062d67737f35465c6df219",
+      "why_notable": "Second-highest gain; the README describes a pipeline from checks and deduplication to live evaluation of skill impact.",
       "theme_ids": [
-        "agent-native-products"
+        "agent-quality-and-review",
+        "task-specific-agent-skills"
       ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 2,
-      "spoken_name": "AG-UI",
-      "unique_caveat": "",
+      "spoken_name": "NVIDIA SkillEvaluator",
+      "unique_caveat": "Live Tier 3 evaluation requires a provider, a supported agent, and a running sandbox (Docker by default), according to the README.",
       "enrichment": null,
       "refs": [
-        "ag-ui-protocol/ag-ui"
+        "NVIDIA/SkillEvaluator"
       ]
     },
     {
-      "id": "03-googlechrome-modern-web-guidance-src",
+      "id": "03-alibaba-open-code-review",
       "kind": "repo",
-      "title": "GoogleChrome/modern-web-guidance-src",
+      "title": "alibaba/open-code-review",
       "rank": 3,
-      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "description": "Guidance intended to keep coding agents aligned with current web-platform practices.",
-      "content": "Domain-specific web-platform guidance aims to steer coding agents toward current practices.",
-      "language": "TypeScript",
-      "stars_gained": 1219,
-      "total_stars": 7212,
-      "default_branch_commit": "5e5cd33a7738f21281e3027732bcbd58cfa82bf1",
-      "why_notable": "The second-largest daily gain, pointing to demand for domain-specific knowledge that steers code-generating agents.",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "content": "A code-review tool pairing deterministic checks with a tool-using LLM agent and line-level comments.",
+      "language": "Go",
+      "stars_gained": 946,
+      "total_stars": 52797,
+      "default_branch_commit": "dd1a7e12a3565f5f7396acb394d83ab18102e6ce",
+      "why_notable": "Nearly tied for second in daily gains; its hybrid architecture targets more structured, repeatable reviews than a free-form agent pass.",
       "theme_ids": [
-        "agent-skills-and-domain-knowledge"
-      ],
-      "signal_strength": "lead",
-      "evidence_density": "moderate",
-      "narration_priority": 8,
-      "spoken_name": "Modern Web Guidance",
-      "unique_caveat": "",
-      "enrichment": null,
-      "refs": [
-        "GoogleChrome/modern-web-guidance-src"
-      ]
-    },
-    {
-      "id": "04-google-labs-code-stitch-skills",
-      "kind": "repo",
-      "title": "google-labs-code/stitch-skills",
-      "rank": 4,
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "description": "Open-standard agent skills and plugins for Google Stitch design and build workflows.",
-      "content": "Cross-agent skills and plugins organize Stitch design, build, and utility workflows according to the Agent Skills open standard.",
-      "language": "TypeScript",
-      "stars_gained": 1128,
-      "total_stars": 9321,
-      "default_branch_commit": "0337446dadde6f8c94210444e2aa9d546126480f",
-      "why_notable": "Shows demand for reusable, cross-agent skill packages rather than one-off prompts.",
-      "theme_ids": [
-        "agent-skills-and-domain-knowledge"
-      ],
-      "signal_strength": "lead",
-      "evidence_density": "rich",
-      "narration_priority": 7,
-      "spoken_name": "Stitch Skills",
-      "unique_caveat": "The README says these skills require the Stitch MCP server to be configured and running.",
-      "enrichment": null,
-      "refs": [
-        "google-labs-code/stitch-skills"
-      ]
-    },
-    {
-      "id": "05-backnotprop-plannotator",
-      "kind": "repo",
-      "title": "backnotprop/plannotator",
-      "rank": 5,
-      "url": "https://github.com/backnotprop/plannotator",
-      "description": "A review surface for annotating agent plans, artifacts, and code changes, then routing feedback back to agents.",
-      "content": "A local browser-based review flow for plans, specifications, artifacts, diffs, and pull requests across multiple coding agents.",
-      "language": "TypeScript",
-      "stars_gained": 1083,
-      "total_stars": 11866,
-      "default_branch_commit": "2722c4c0b63cfd56ccf7594ec1120bb38cff67ab",
-      "why_notable": "Its README documents a local browser-based review flow spanning multiple agents and artifact types, matching the day's human-oversight theme.",
-      "theme_ids": [
-        "agent-native-products",
-        "agent-workflows-and-tooling"
+        "agent-quality-and-review",
+        "agent-integration"
       ],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 3,
-      "spoken_name": "Plannotator",
-      "unique_caveat": "",
-      "enrichment": null,
-      "refs": [
-        "backnotprop/plannotator"
-      ]
-    },
-    {
-      "id": "06-chromedevtools-chrome-devtools-mcp",
-      "kind": "repo",
-      "title": "ChromeDevTools/chrome-devtools-mcp",
-      "rank": 6,
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "description": "Chrome DevTools access for coding agents, available through MCP and a CLI.",
-      "content": "Gives agents live-browser control and inspection for automation, debugging, and performance analysis.",
-      "language": "TypeScript",
-      "stars_gained": 717,
-      "total_stars": 56976,
-      "default_branch_commit": "8ba2ac945ebaf1adb92208c29f3a30e73a920956",
-      "why_notable": "Adds real-browser debugging, automation, and performance analysis to agent workflows; it has the largest existing star base among today's top entries.",
-      "theme_ids": [
-        "agent-workflows-and-tooling"
-      ],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 4,
-      "spoken_name": "Chrome DevTools MCP",
-      "unique_caveat": "The README notes that MCP clients can inspect browser contents; usage statistics are enabled by default, with an opt-out flag.",
-      "enrichment": null,
-      "refs": [
-        "ChromeDevTools/chrome-devtools-mcp"
-      ]
-    },
-    {
-      "id": "07-tradermonty-claude-trading-skills",
-      "kind": "repo",
-      "title": "tradermonty/claude-trading-skills",
-      "rank": 7,
-      "url": "https://github.com/tradermonty/claude-trading-skills",
-      "description": "Claude Code skills for market analysis, technical charting, screening, and trading workflows.",
-      "content": "A domain-specific skill pack for investment research and trading workflows, outside the dominant software-engineering use case.",
-      "language": "Python",
-      "stars_gained": 706,
-      "total_stars": 5587,
-      "default_branch_commit": "7c59e0db95d811b4435d6b0511c7e66c232cce69",
-      "why_notable": "A domain-specific skill pack outside the dominant software-engineering use case; GitHub's daily list ranks it among the strongest gainers.",
-      "theme_ids": [
-        "agent-skills-and-domain-knowledge"
-      ],
-      "signal_strength": "standard",
-      "evidence_density": "moderate",
-      "narration_priority": 11,
-      "spoken_name": "Claude Trading Skills",
-      "unique_caveat": "",
-      "enrichment": null,
-      "refs": [
-        "tradermonty/claude-trading-skills"
-      ]
-    },
-    {
-      "id": "08-alibaba-open-code-review",
-      "kind": "repo",
-      "title": "alibaba/open-code-review",
-      "rank": 8,
-      "url": "https://github.com/alibaba/open-code-review",
-      "description": "A code-review tool combining deterministic checks with an LLM agent and line-level comments.",
-      "content": "Reads diffs and code context to produce structured, line-level review comments using configurable LLMs and deterministic rules.",
-      "language": "Go",
-      "stars_gained": 691,
-      "total_stars": 52125,
-      "default_branch_commit": "7e5ce06c88de5ce81df5dc4f24e2e485b517fae8",
-      "why_notable": "Represents a practical hybrid for AI code review, with the README describing tool-assisted contextual review and a precision-oriented trade-off.",
-      "theme_ids": [
-        "agent-workflows-and-tooling",
-        "software-quality-and-security"
-      ],
-      "signal_strength": "standard",
-      "evidence_density": "rich",
-      "narration_priority": 6,
       "spoken_name": "Open Code Review",
       "unique_caveat": "",
       "enrichment": null,
@@ -287,135 +179,318 @@
       ]
     },
     {
-      "id": "09-tencent-loopforge",
+      "id": "04-tradermonty-claude-trading-skills",
       "kind": "repo",
-      "title": "Tencent/LoopForge",
-      "rank": 9,
-      "url": "https://github.com/Tencent/LoopForge",
-      "description": "Self-hosted workflows for coding-agent delivery with scripts and human approval gates.",
-      "content": "Orchestrates supported coding assistants through self-hosted and local workflows with explicit human approvals.",
-      "language": "Go",
-      "stars_gained": 423,
-      "total_stars": 1530,
-      "default_branch_commit": "dd56585276d8ecb6e0d6865f55e255194d75f85a",
-      "why_notable": "A concrete orchestration signal: multiple coding agents are routed through locally controlled, approval-based delivery.",
+      "title": "tradermonty/claude-trading-skills",
+      "rank": 4,
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "content": "Claude Code workflows for market review, risk management, trade planning, and journaling.",
+      "language": "Python",
+      "stars_gained": 841,
+      "total_stars": 6139,
+      "default_branch_commit": "06a4f4a5893517f3f385f1b3847f2c8887d241b2",
+      "why_notable": "A strong domain-specific skills project; its README frames the toolkit as decision-process support, not a buy/sell signal service.",
       "theme_ids": [
-        "agent-workflows-and-tooling"
+        "task-specific-agent-skills"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Claude Trading Skills",
+      "unique_caveat": "The project says it is not a signal service or a promise of profitability; its workflows support human decision-making.",
+      "enrichment": null,
+      "refs": [
+        "tradermonty/claude-trading-skills"
+      ]
+    },
+    {
+      "id": "05-chromedevtools-chrome-devtools-mcp",
+      "kind": "repo",
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "rank": 5,
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "content": "An MCP server and CLI that let coding agents inspect and control a live Chrome browser using DevTools.",
+      "language": "TypeScript",
+      "stars_gained": 837,
+      "total_stars": 57551,
+      "default_branch_commit": "dc0055828a9fcdcf8c3e65f7ecd1847c53fd972a",
+      "why_notable": "Combines a major daily gain with a concrete bridge from agent workflows to browser debugging, performance, and network inspection.",
+      "theme_ids": [
+        "agent-integration",
+        "agent-quality-and-review"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Chrome DevTools MCP",
+      "unique_caveat": "The README warns that MCP clients can inspect browser-instance contents; usage statistics are collected by default, with an opt-out.",
+      "enrichment": null,
+      "refs": [
+        "ChromeDevTools/chrome-devtools-mcp"
+      ]
+    },
+    {
+      "id": "06-ag-ui-protocol-ag-ui",
+      "kind": "repo",
+      "title": "ag-ui-protocol/ag-ui",
+      "rank": 6,
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "content": "An event-based protocol for connecting AI agents with user-facing applications.",
+      "language": "TypeScript",
+      "stars_gained": 790,
+      "total_stars": 18674,
+      "default_branch_commit": "344d21fcc1bc276a1168546ae7c8ccaba96a3545",
+      "why_notable": "A high-momentum infrastructure project focused on the agent-to-UI interaction layer.",
+      "theme_ids": [
+        "agent-integration"
       ],
       "signal_strength": "standard",
       "evidence_density": "moderate",
-      "narration_priority": 5,
-      "spoken_name": "LoopForge",
+      "narration_priority": 6,
+      "spoken_name": "AG-UI",
       "unique_caveat": "",
       "enrichment": null,
       "refs": [
-        "Tencent/LoopForge"
+        "ag-ui-protocol/ag-ui"
       ]
     },
     {
-      "id": "10-nvidia-skillevaluator",
+      "id": "07-backnotprop-plannotator",
       "kind": "repo",
-      "title": "NVIDIA/SkillEvaluator",
-      "rank": 10,
-      "url": "https://github.com/NVIDIA/SkillEvaluator",
-      "description": "A framework for evaluating agent skills with quality gates, overlap detection, and live behavior tests.",
-      "content": "A measurement layer for the skill ecosystem that evaluates quality, overlap, and effects on agent behavior.",
-      "language": "Python",
-      "stars_gained": 122,
-      "total_stars": 1716,
-      "default_branch_commit": "ae7e8586138851cb886efd8218b0fcabcd6cf633",
-      "why_notable": "Adds a measurement layer to the expanding skill ecosystem, evaluating whether skills change agent behavior rather than only inspecting their text.",
+      "title": "backnotprop/plannotator",
+      "rank": 7,
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "content": "A workspace for annotating agent plans and code changes and returning feedback to the agent.",
+      "language": "TypeScript",
+      "stars_gained": 689,
+      "total_stars": 12382,
+      "default_branch_commit": "12974486d3aee98e265de588cf525876aff44fff",
+      "why_notable": "Represents the human-review side of agent workflows: people can shape plans and review diffs before feeding decisions back.",
       "theme_ids": [
-        "agent-skills-and-domain-knowledge",
-        "software-quality-and-security"
+        "agent-integration",
+        "agent-quality-and-review"
       ],
-      "signal_strength": "brief",
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 7,
+      "spoken_name": "Plannotator",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "backnotprop/plannotator"
+      ]
+    },
+    {
+      "id": "08-google-labs-code-stitch-skills",
+      "kind": "repo",
+      "title": "google-labs-code/stitch-skills",
+      "rank": 8,
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "content": "Agent Skills for working with Google's Stitch MCP server, packaged for multiple coding-agent clients.",
+      "language": "TypeScript",
+      "stars_gained": 540,
+      "total_stars": 9655,
+      "default_branch_commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "why_notable": "Shows the Agent Skills format being used as a portable distribution layer across different coding agents.",
+      "theme_ids": [
+        "agent-integration",
+        "task-specific-agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 8,
+      "spoken_name": "Stitch Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "google-labs-code/stitch-skills"
+      ]
+    },
+    {
+      "id": "09-kajisho5-ffmpeg-skill",
+      "kind": "repo",
+      "title": "kajisho5/ffmpeg-skill",
+      "rank": 9,
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "content": "A local video-editing toolkit exposing 42 FFmpeg operations through agent tools and an MCP server.",
+      "language": "Python",
+      "stars_gained": 475,
+      "total_stars": 6420,
+      "default_branch_commit": "f1c97cbffeac71b8fdfca2f790ceb00db3bcce65",
+      "why_notable": "A focused example of agent skills wrapping mature command-line tooling; the project describes a local, no-cloud, no-API-key workflow.",
+      "theme_ids": [
+        "agent-integration",
+        "task-specific-agent-skills"
+      ],
+      "signal_strength": "standard",
       "evidence_density": "moderate",
       "narration_priority": 9,
-      "spoken_name": "NVIDIA SkillEvaluator",
+      "spoken_name": "FFmpeg Skill",
       "unique_caveat": "",
       "enrichment": null,
       "refs": [
-        "NVIDIA/SkillEvaluator"
+        "kajisho5/ffmpeg-skill"
       ]
     },
     {
-      "id": "11-elementalsouls-claude-bughunter",
+      "id": "10-google-research-paper-orchestra",
       "kind": "repo",
-      "title": "elementalsouls/Claude-BugHunter",
-      "rank": 11,
-      "url": "https://github.com/elementalsouls/Claude-BugHunter",
-      "description": "A Claude Code skill bundle for bug hunting and external red-team workflows.",
-      "content": "A security-oriented agent skill bundle; the Trending description cites 82 skills, 15 slash commands, and vulnerability-class coverage.",
+      "title": "google-research/paper-orchestra",
+      "rank": 10,
+      "url": "https://github.com/google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "content": "A multi-agent framework for automated research-paper writing.",
       "language": "Python",
-      "stars_gained": 98,
-      "total_stars": 6483,
-      "default_branch_commit": "2cfe533df8efa2ced87c91299e1f62b88cb26108",
-      "why_notable": "Extends the agent-skills pattern into security work, with the listing describing coverage across vulnerability classes and report patterns.",
+      "stars_gained": 306,
+      "total_stars": 1243,
+      "default_branch_commit": "d9bae997e793a015ed38bb1605be9eb58c00284f",
+      "why_notable": "Extends the multi-agent pattern into a specialized research-writing workflow.",
       "theme_ids": [
-        "agent-skills-and-domain-knowledge",
-        "software-quality-and-security"
+        "task-specific-agent-skills"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 10,
+      "spoken_name": "PaperOrchestra",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "google-research/paper-orchestra"
+      ]
+    },
+    {
+      "id": "11-deanchensj-jiangshan-map",
+      "kind": "repo",
+      "title": "DeanChensj/jiangshan-map",
+      "rank": 11,
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "content": "An interactive historical atlas of China, spanning dynastic territory snapshots and historical place-name links.",
+      "language": "JavaScript",
+      "stars_gained": 285,
+      "total_stars": 6630,
+      "default_branch_commit": "897b9ad4e987fcface8728ffdfbe33e801a3dbae",
+      "why_notable": "A data-rich mapping project that stands apart from the agent-tool cluster while still drawing meaningful daily interest.",
+      "theme_ids": [
+        "non-agent-projects"
       ],
       "signal_strength": "brief",
       "evidence_density": "moderate",
-      "narration_priority": 10,
-      "spoken_name": "Claude BugHunter",
+      "narration_priority": 11,
+      "spoken_name": "Jiangshan Map",
       "unique_caveat": "",
       "enrichment": null,
       "refs": [
-        "elementalsouls/Claude-BugHunter"
+        "DeanChensj/jiangshan-map"
       ]
     },
     {
-      "id": "12-ggml-org-ggml",
+      "id": "12-mvanhorn-last30days-skill",
       "kind": "repo",
-      "title": "ggml-org/ggml",
+      "title": "mvanhorn/last30days-skill",
       "rank": 12,
-      "url": "https://github.com/ggml-org/ggml",
-      "description": "A tensor library for machine learning.",
-      "content": "A foundational C++ tensor library and a lower-momentum counterpoint to today's agent-application cluster.",
-      "language": "C++",
-      "stars_gained": 43,
-      "total_stars": 15924,
-      "default_branch_commit": "417a024b4fb6bc3116d41af7c067166a039bdf12",
-      "why_notable": "A lower-momentum counterpoint to the agent-application cluster: foundational ML systems work still appears on today's list.",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "content": "A research skill that gathers signals from Reddit, X, YouTube, Hacker News, Polymarket, and the web.",
+      "language": "Python",
+      "stars_gained": 122,
+      "total_stars": 67969,
+      "default_branch_commit": "4f290893f223f44c2be38bbedb1ce9b78685c13b",
+      "why_notable": "Applies agent skills to cross-source topic research and grounded synthesis.",
       "theme_ids": [
-        "ml-systems-foundations"
+        "task-specific-agent-skills"
       ],
       "signal_strength": "brief",
-      "evidence_density": "limited",
+      "evidence_density": "moderate",
       "narration_priority": 12,
-      "spoken_name": "ggml",
-      "unique_caveat": "The repository description is broad and does not by itself specify an end-user application.",
+      "spoken_name": "Last30Days Skill",
+      "unique_caveat": "",
       "enrichment": null,
       "refs": [
-        "ggml-org/ggml"
+        "mvanhorn/last30days-skill"
+      ]
+    },
+    {
+      "id": "13-sveltejs-svelte",
+      "kind": "repo",
+      "title": "sveltejs/svelte",
+      "rank": 13,
+      "url": "https://github.com/sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "content": "The Svelte frontend framework.",
+      "language": "JavaScript",
+      "stars_gained": 58,
+      "total_stars": 88852,
+      "default_branch_commit": "99c07450d2e093c0d637903dc2c94f28f264d70d",
+      "why_notable": "An established framework provides a non-agent counterpoint in a list otherwise dominated by agent-adjacent tooling.",
+      "theme_ids": [
+        "non-agent-projects"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 13,
+      "spoken_name": "Svelte",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "sveltejs/svelte"
+      ]
+    },
+    {
+      "id": "14-getarcaneapp-arcane",
+      "kind": "repo",
+      "title": "getarcaneapp/arcane",
+      "rank": 14,
+      "url": "https://github.com/getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "content": "A user-friendly interface for managing Docker.",
+      "language": "Go",
+      "stars_gained": 31,
+      "total_stars": 8547,
+      "default_branch_commit": "fdc14d08376c7d3ea917ee1cdb0e7e2ae342ab1f",
+      "why_notable": "A conventional self-hosting/developer-operations tool at the lower end of this day's star-gain ranking.",
+      "theme_ids": [
+        "non-agent-projects"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 14,
+      "spoken_name": "Arcane",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "getarcaneapp/arcane"
       ]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "The dominant cluster is agent-facing software: office and UI interfaces, reusable skills, review/approval loops, and browser/code tooling. TypeScript leads with 6 of 12 repositories; Python has 3, Go 2, and C++ 1. ggml is the lone clearly foundational ML-library counterpoint.",
+      "content": "The dominant cluster is agent-facing software: office and UI interfaces, reusable skills, review/approval loops, and browser/code tooling. TypeScript and Python each appear in 5 of 14 repositories; Go and JavaScript each appear in 2. This is a count of the listed repositories, not a measure of all GitHub activity.",
       "theme_ids": [
-        "agent-native-products",
-        "agent-skills-and-domain-knowledge",
-        "agent-workflows-and-tooling",
-        "ml-systems-foundations",
-        "software-quality-and-security"
+        "agent-integration",
+        "agent-quality-and-review",
+        "task-specific-agent-skills",
+        "non-agent-projects"
       ]
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "Today's signal is less about inventing new agents than making them usable in real products: giving them interfaces, skills, browser access, review channels, and controlled delivery pipelines. The unusually strong TypeScript showing fits that application-layer tilt, while the security, evaluation, and code-review repos show an accompanying push toward oversight and reliability."
+      "content": "Today's list is less about a single new model than the infrastructure around agents: connecting them to real interfaces, giving people review points, and testing whether reusable skills improve outcomes. Office, browser, code-review, trading, and media workflows show how quickly that infrastructure is being packaged into specific developer products; the atlas, Svelte, and Docker entries show that conventional projects still share the day's attention."
     },
     {
       "id": "99-sources-and-method",
       "kind": "sources",
       "title": "Sources and Method",
-      "content": "Primary source: https://github.com/trending?since=daily, read at 2026-11-16 01:34 UTC. GitHub REST repository and commit endpoints corroborated star totals, languages, default branches, latest commits, and repository status for all 12 entries. GitHub Search API query created:2026-11-14..2026-11-16 pushed:>=2026-11-14 stars:>100 was checked for newly created projects; duplicate/noisy results were excluded. Daily gains are partial-day values from the matching Trending page."
+      "content": "Primary source: https://github.com/trending?since=daily, captured 2026-11-16 at 17:33 UTC. GitHub REST repository metadata and default-branch commit endpoints were checked for all 14 repositories. GitHub Search API query created:2026-11-14..2026-11-16 stars:>=50 pushed:>=2026-11-14 was checked for recently created projects; its results were noisy and clone-heavy, so no extra entries were added. Daily gains come from the matching GitHub Trending view; totals, languages, and commit SHAs were corroborated against REST API at capture time. No prior-window comparison is claimed."
     }
   ]
 }

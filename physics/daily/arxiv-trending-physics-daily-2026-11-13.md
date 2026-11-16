@@ -2,111 +2,101 @@
 
 ## Headline
 
-Seven notable papers from the latest available daily physics batch, Friday 13 November: a deployed quantum network, JWST atmospheric constraints, and a superconducting-qubit test of multi-time memory lead a measurement-rich mix. Spoken agenda: quantum technologies, rocky exoplanets, then driven magnetism, rare particle processes, and survey calibration. This is an inferred ordering, not an official arXiv trending chart; citation evidence is limited for papers this new. The Monday 16 November batch had not yet been announced at the 01:28 UTC snapshot.
+Six notable papers from the latest available daily physics batch, Friday 13 November: analog quantum spectroscopy, a new neutron-rich isotope, and increasingly joint data/model tests stand out. Spoken agenda: quantum phase estimation, nuclear and solar measurements, then dark-energy reconstruction and lattice QCD. This is an inferred ordering, not an official arXiv trending chart or a most-read/downloaded list; citation evidence is limited for such recent papers and no citation momentum could be established. The Monday 16 November batch had not yet been announced at the 17:25 UTC snapshot, so this uses the prior Friday batch.
 
 ## Top papers (ranked)
 
-### 1. [A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds](https://arxiv.org/abs/2611.17265)
-- **Abstract:** The authors report a deployed entanglement-based quantum-key-distribution network across four Slovak cities, with real-time post-processed keys and finite-key performance measurements.
-- **Authors:** Gilberto Borges, Saeid Salari, Ekta Panwar, Samgeeth Puliyil, Kartik Kakade, et al.
-- **arXiv:** `2611.17265v1` (published 2026-11-12T18:45:08Z; categories: `quant-ph`, `physics.optics`)
-- **Evidence for ranking:** The paper cross-lists quantum physics and optics and reports an operating multi-city fiber network; a [CiVL news report](https://civl.com/news/story/researchers-deploy-quantum-network-linking-four-slovak-cities-f5b441fb) independently covered the deployment and key-delivery result.
-- **Claimed result:** The authors report 13.5 bit/s over 109 km and 4.3 bit/s across 32.1 dB loss on a no-direct-fiber link, with keys delivered after full post-processing.
-- **Evidence type:** experimental; deployed telecom fiber, entangled-photon source, simultaneous network links, and the ETSI GS QKD 014 delivery interface.
-- **Caveat:** The authors find the implemented heuristic privacy-amplification scheme can exceed the finite-key bound; their analysis indicates error correction could improve rates, but the longest link has no positive finite-key rate under the implemented scheme.
+### 1. [Quantum phase estimation on a Rydberg quantum simulator](https://arxiv.org/abs/2611.18122)
+- **Abstract:** The authors demonstrate phase-sensitive many-body spectroscopy on an analog Rydberg simulator, extracting absolute ground-state energies, gaps, and energy-filtered observables for systems of up to 19 atoms without auxiliary qubits or controlled evolution.
+- **Authors:** Hendrik Timme, Benjamin F. Schiffer, Ohad Lib, Shijia Sun, Maximilian Ammenwerth, et al.
+- **arXiv:** `2611.18122v1` (published 2026-11-13T12:52:16Z; categories: `quant-ph`, `physics.atom-ph`)
+- **Evidence for ranking:** Cross-listed in quantum and atomic physics, the paper reports an experimental capability beyond ordinary gap spectroscopy; a third-party science summary appeared shortly after posting. This is an early discussion signal, not evidence of broad readership.
+- **Claimed result:** The authors reconstruct the complex Loschmidt echo on a strontium-88 Rydberg platform and use its Fourier transform to recover ground-state energies and energy-resolved observables in 1D and 2D arrays.
+- **Evidence type:** experimental; analog Rydberg simulator with up to 19 atoms, digital state preparation, native evolution, and phase reconstruction using short imaginary-time steps.
+- **Caveat:** The finite evolution-time window limits energy resolution, especially for smaller gaps; the phase protocol also uses an approximate imaginary-time implementation under the stated blockade model.
 - **Announcement type:** new submission, 13 November 2026 announcement batch
-- **Themes:** Quantum information; Instrumentation & detectors
+- **Themes:** Quantum information; Atomic, molecular & optical physics; Instrumentation & detectors
 
-### 2. [JWST Rocky Worlds DDT Observations of LTT 1445 A b and c in Secondary Eclipse Using MIRI/F1500W](https://arxiv.org/abs/2611.17300)
-- **Abstract:** Three JWST/MIRI observing visits and a joint analysis indicate that nearby rocky planet LTT 1445 A b has no substantial atmosphere, while its sibling c remains weakly constrained.
-- **Authors:** Jegug Ih, Shubham Kanodia, Nicholas Wogan, Mark Fortune, Natalie H. Allen, et al.
-- **arXiv:** `2611.17300v1` (published 2026-11-12T18:55:27Z; categories: `astro-ph.EP`)
-- **Evidence for ranking:** Three independent reductions and a joint fit provide a strong internal cross-check; the result also received [independent science-media coverage](https://astrobiology.com/2026/11/15/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-c-in-secondary-eclipse-using-miri-f1500w/).
-- **Claimed result:** The authors infer a CO₂ partial pressure below 0.6 mbar and surface pressure at or below about 0.1 bar for planet b; for c, they rule out only thick CO₂-bearing atmospheres.
-- **Evidence type:** observational; JWST MIRI/F1500W secondary eclipses of both planets across three visits, previous JWST data, and a joint fit including 220 radial velocities.
-- **Caveat:** Planet c’s potentially grazing eclipse and overlapping events leave its depth poorly constrained. The atmospheric limits depend on retrieval and forward-model assumptions and do not exclude every thin or non-CO₂ atmosphere.
+### 2. [Observation of $^{71}$Cr and expanded cross-section measurements and analysis of $^{82}$Se fragmentation](https://arxiv.org/abs/2611.17718)
+- **Abstract:** The authors measure neutron-rich isotope production, including the first observation of $^{71}$Cr, and compare abrasion-ablation and binding-energy-systematics predictions across eleven nuclear mass models.
+- **Authors:** S. Watters, O. B. Tarasov, A. C. Dombos, K. Fukushima, A. Gade, et al.
+- **arXiv:** `2611.17718v1` (published 2026-11-13T03:54:22Z; categories: `nucl-ex`)
+- **Evidence for ranking:** A first isotope observation is paired with an out-of-sample test of a production-cross-section prediction made before the observation; the arXiv comment says the manuscript is to be submitted to Physical Review C.
+- **Claimed result:** The authors report a measured $^{71}$Cr production cross section of $2.20^{+2.10}_{-0.75}\times10^{-13}$ mb, consistent with the earlier $1.94\times10^{-13}$ mb prediction from the stated $\Delta BE_{\rm sys}$ coefficients and HFB-22 masses.
+- **Evidence type:** experimental; $^{82}$Se fragmentation at FRIB/ARIS, event-by-event particle identification, and cross-section analysis with LISE++ and eleven mass models.
+- **Caveat:** The $^{71}$Cr cross-section uncertainty is large and asymmetric; predictions remain mass-model dependent, and the authors note that current reaction calculations underpredict some neutron-rich yields, possibly because of missing reaction mechanisms.
 - **Announcement type:** new submission, 13 November 2026 announcement batch
-- **Themes:** Astrophysics; Instrumentation & detectors
+- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors; Computational & data methods
 
-### 3. [Observation of Genuine Multi-Time Quantum Memory](https://arxiv.org/abs/2611.17268)
-- **Abstract:** The authors derive a three-time witness for quantum memory that pairwise tests can miss and demonstrate the hierarchy in a time-continuous superconducting-qubit experiment.
-- **Authors:** Konstantin Beyer, Valentin Link, Surihan Sean Borjigin, Qian Cao, Orion Lee, et al.
-- **arXiv:** `2611.17268v1` (published 2026-11-12T18:46:04Z; categories: `quant-ph`)
-- **Evidence for ranking:** It pairs a new analytical witness with a hardware demonstration; a [third-party paper review](https://www.themoonlight.io/zh/review/observation-of-genuine-multi-time-quantum-memory) and a research-focused [social-media discussion](https://www.linkedin.com/posts/quantum-matters-en_observation-of-genuine-multi-time-quantum-activity-7527285774438993920-lrQF) appeared shortly after posting. Those are early discussion signals, not citation traction.
-- **Claimed result:** The authors show that a qubit process can admit classical-memory explanations for every pair of times yet fail a jointly evaluated three-time witness, and report an experimental realization on a superconducting-qubit platform.
-- **Evidence type:** experimental and theoretical; an analytical three-time witness, channel reconstruction, and a time-continuous superconducting-qubit implementation with time-independent couplings.
-- **Caveat:** The demonstration is a minimal qubit example; the pairwise classical decompositions are supported by numerical optimization and apply to the tested time window and drive regime.
+### 3. [$^8$B Solar Neutrino Measurements of Solar Core Size and Temperature from 5805 Days of Super-Kamiokande](https://arxiv.org/abs/2611.17651)
+- **Abstract:** Using Super-Kamiokande phases I–IV, the authors infer solar-core bounds and temperature from the $^8$B neutrino spectrum, with a tighter radius bound when SNO coefficients are included.
+- **Authors:** The Super-Kamiokande Collaboration; Y. Jiang, K. Abe, Y. Asaoka, M. Harada, Y. Hayato, et al.
+- **arXiv:** `2611.17651v1` (published 2026-11-13T01:48:58Z; categories: `hep-ex`, `astro-ph.HE`, `astro-ph.SR`)
+- **Evidence for ranking:** It is cross-listed across particle physics and two astrophysics categories and analyzes 5,805 days of Super-Kamiokande data, with a combined fit using SNO information; these are complementary inputs in one analysis, not independent confirmations.
+- **Claimed result:** The authors report 90%-confidence upper bounds on the core radius ranging from $0.499R_\odot$ to $0.381R_\odot$ in Super-K-only fits across the stated solar models, tightened to $0.268R_\odot$ and $0.215R_\odot$ in the corresponding Super-K-plus-SNO fits.
+- **Evidence type:** observational; Super-Kamiokande phase I–IV recoil-electron spectra, with SNO polynomial coefficients in the combined analysis.
+- **Caveat:** The inferred radius varies with the adopted solar model and fit inputs, while the temperature estimate assumes nominal core size and density. The abstract gives a neutrino-production-zone temperature of $15.492\times10^6$ K, whereas the conclusion prints $14.492\times10^6$ K; that internal discrepancy needs clarification.
 - **Announcement type:** new submission, 13 November 2026 announcement batch
-- **Themes:** Quantum information
+- **Themes:** Astrophysics; Particle, nuclear & high-energy physics; Instrumentation & detectors
 
-### 4. [Long-lived light-driven bimagnons at finite momentum in NiO](https://arxiv.org/abs/2611.17335)
-- **Abstract:** Mid-infrared pumping of NiO produces a finite-momentum two-magnon signal whose fitted decay is much slower than previously reported two-magnon coherence times.
-- **Authors:** Xian P. Yang, Christopher T. Parzyck, Martin Cross, Ella Blake, Octave Duros, et al.
-- **arXiv:** `2611.17335v1` (published 2026-11-12T18:59:55Z; categories: `cond-mat.str-el`, `cond-mat.mtrl-sci`, `physics.optics`, `quant-ph`)
-- **Evidence for ranking:** The paper is cross-listed in four physics categories and reports a quantitative time-resolved RIXS result connecting magnetic materials, optical pumping, and quantum dynamics.
-- **Claimed result:** The authors measure a pump-induced bimagnon signal peaking about 4 ps after excitation and fit its decay time as 28 ± 11 ps.
-- **Evidence type:** experimental; mid-infrared pumping and time-resolved resonant inelastic X-ray scattering at finite momentum.
-- **Caveat:** The delayed growth is interpreted as momentum redistribution rather than directly mapped; the decay time comes from a single-exponential fit over the reported delay range.
+### 4. [Does Dark Energy Evolve $\textit{and}$ Cluster?](https://arxiv.org/abs/2611.18557)
+- **Abstract:** The authors jointly reconstruct the effective dark-energy density and gravitational responses to clustering and lensing from CMB, DESI DR2 BAO, Pantheon+, and large-scale-structure data, finding a low-redshift background feature but inconclusive gravitational-sector behavior.
+- **Authors:** Maria Luisa Gallavotti, Alessandra Silvestri
+- **arXiv:** `2611.18557v1` (published 2026-11-13T18:58:50Z; categories: `astro-ph.CO`, `gr-qc`)
+- **Evidence for ranking:** The cross-list links cosmology and gravitation, and the joint use of CMB, DESI, supernova, and DES Year 3 large-scale-structure data makes this a concrete multi-probe reconstruction rather than a single-survey anomaly claim.
+- **Claimed result:** The authors find a broad effective dark-energy-density maximum near $z\simeq0.6$–$0.7$; gravitational-response features are weaker and dataset-dependent, so the analysis does not establish a common physical origin.
+- **Evidence type:** computational; non-parametric reconstruction and covariance-mode analysis of CMB, DESI DR2 BAO, Pantheon+, DES Year 3 $6\times2$pt, and other large-scale-structure observations.
+- **Caveat:** The authors state that current data constrain the gravitational sector less precisely than the background and cannot determine whether the two apparent features share an origin.
 - **Announcement type:** new submission, 13 November 2026 announcement batch
-- **Themes:** Condensed matter & materials; Quantum information
+- **Themes:** Cosmology & gravitation; Computational & data methods
 
-### 5. [Observation of the Λ(1520) suppression in Pb-Pb collisions at √sNN = 5.02 TeV](https://arxiv.org/abs/2611.17010)
-- **Abstract:** ALICE measures a central-to-peripheral reduction of the Λ(1520)/Λ yield ratio in 5.02 TeV Pb-Pb collisions and compares it with hadronization and transport models.
-- **Authors:** ALICE Collaboration
-- **arXiv:** `2611.17010v1` (published 2026-11-12T16:07:03Z; categories: `nucl-ex`)
-- **Evidence for ranking:** The collaboration reports a 6.8σ significance across six centrality classes, describes this as the first observation of resonance suppression within one collision system, and says the paper was submitted to Physical Review Letters; the [INSPIRE record](https://inspirehep.net/literature/3228179) corroborates the release metadata.
-- **Claimed result:** The measured central-to-peripheral suppression is 0.589 ± 0.015 (stat) ± 0.086 (syst); the authors find the centrality trend is reproduced by MUSIC hydrodynamics coupled to the SMASH hadronic transport afterburner.
-- **Evidence type:** experimental; ALICE Pb-Pb collision data at √sNN = 5.02 TeV, compared with statistical-hadronization and hydrodynamic-plus-transport calculations.
-- **Caveat:** The systematic uncertainty is material, and the model comparison supports late-stage hadronic effects without uniquely separating rescattering from regeneration.
+### 5. [Emerging understanding of the rare kaon decay $K^+\to\pi^+\ell^+\ell^-$ from lattice QCD](https://arxiv.org/abs/2611.17800)
+- **Abstract:** A near-physical-mass lattice-QCD calculation determines the sign of the vector form factor for a rare kaon decay and finds the negative-sign solution favored, with lower significance after extrapolation to physical charm mass.
+- **Authors:** Zhao-Long Zhang, Xu Feng, Lu-Chang Jin, Bo-Lin Li, Chuan Liu, Christopher T. Sachrajda
+- **arXiv:** `2611.17800v1` (published 2026-11-13T06:26:40Z; categories: `hep-lat`, `hep-ph`)
+- **Evidence for ranking:** Cross-listed in lattice and phenomenological high-energy physics, the paper tackles a sign ambiguity that decay rates alone cannot resolve and checks the calculation with four independent subtraction schemes.
+- **Claimed result:** The authors find $V(0)<0$ with 5.8–7.9$\sigma$ statistical significance at charm mass $1.1$ GeV; after extrapolation to physical charm mass the negative sign persists at 2.0–3.4$\sigma$ across their fit forms.
+- **Evidence type:** computational; first-principles lattice QCD using two domain-wall-fermion ensembles with near-physical pion masses and six momentum transfers.
+- **Caveat:** The physical-charm extrapolation weakens the significance to 2.0–3.4$\sigma$; the authors present the result as evidence favoring a sign, not a definitive high-significance determination at the physical point.
 - **Announcement type:** new submission, 13 November 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
 
-### 6. [New measurement of BR(K⁺→π⁺νν̄) at the NA62 experiment](https://arxiv.org/abs/2611.16530)
-- **Abstract:** NA62 presents a new branching-ratio measurement using its 2023–2024 data, which doubles the effective sample and improves sensitivity to the rare K⁺→π⁺νν̄ decay.
-- **Authors:** Silvia Martellotti on behalf of NA62 Collaboration; the collaboration author list begins A. T. Akmete, R. Aliberti, S. Alibocus, F. Ambrosino, R. Ammendola, et al.
-- **arXiv:** `2611.16530v1` (published 2026-11-12T09:29:12Z; categories: `hep-ex`)
-- **Evidence for ranking:** A new 2023–2024 dataset doubles the effective sample for a rare, precisely predicted decay; the paper’s abstract states an expected sensitivity above 5σ for the Standard-Model process. That is expected sensitivity, not a 5σ observed discovery.
-- **Claimed result:** The full paper reports a combined 2016–2024 branching ratio of 9.6(+1.9/−1.8) × 10⁻¹¹, compatible with Standard-Model predictions.
-- **Evidence type:** experimental; NA62 kaon-decay data collected at CERN during 2016–2024, including the new 2023–2024 sample.
-- **Caveat:** The combined result has about 20% relative uncertainty; the authors say 2026 data taking and analysis of the full dataset are ongoing.
+### 6. [What constrains the neutron-star crust? Present data, future measurements, and EOS doppelgängers](https://arxiv.org/abs/2611.17920)
+- **Abstract:** A Bayesian study finds current crust constraints are driven mainly by chiral effective field theory, and forecasts that precise global stellar measurements may still fail to distinguish crust models with different internal properties.
+- **Authors:** Vishal Parmar
+- **arXiv:** `2611.17920v1` (published 2026-11-13T08:58:57Z; categories: `astro-ph.HE`, `nucl-th`)
+- **Evidence for ranking:** The cross-list connects neutron-star astrophysics with nuclear theory, the manuscript is reported as submitted to Astronomy & Astrophysics, and it quantifies a concrete degeneracy between global stellar observables and crust properties.
+- **Claimed result:** Within the adopted unified crust-core equation-of-state model, two models with nearly identical global observables can differ by about a factor of two in crust mass and crustal moment of inertia at the assumed precision.
+- **Evidence type:** computational; Bayesian inference and forecasts using nuclear and astrophysical constraints with a unified crust-core equation of state.
+- **Caveat:** Results depend on the adopted theoretical bands, neutron-rich surface-energy treatment, and forecast reference equation of state; the analysis finds that global measurements alone do not uniquely determine crust properties.
 - **Announcement type:** new submission, 13 November 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
-
-### 7. [Euclid data release 1 (DR1) - SIR spectroscopic calibration](https://arxiv.org/abs/2611.17305)
-- **Abstract:** The Euclid Collaboration describes the SIR calibration pipelines used to reduce NISP slitless spectra for Data Release 1, reporting that current products meet mission requirements.
-- **Authors:** Euclid Collaboration: M. Fumana, Y. Copin, P. N. Appleton, J. Jacobson, D. C. Masters, et al.
-- **arXiv:** `2611.17305v1` (published 2026-11-12T18:56:34Z; categories: `astro-ph.IM`, `astro-ph.CO`)
-- **Evidence for ranking:** This is a DR1 calibration paper for a major cosmology mission; the authors report more than 170 million validated spectra in red- and blue-grism modes, and the manuscript is submitted to Astronomy & Astrophysics.
-- **Claimed result:** The authors describe the full-focal-plane calibration pipeline and report that DR1 spectra meet mission requirements, while identifying areas for further optimization.
-- **Evidence type:** observational and instrumentation; Euclid/NISP slitless spectroscopy and SIR calibration products for DR1.
-- **Caveat:** The paper documents calibration performance and mission requirements rather than providing a new independent dark-energy constraint; pipeline refinements remain in progress.
-- **Announcement type:** new submission, 13 November 2026 announcement batch
-- **Themes:** Astrophysics; Instrumentation & detectors
+- **Themes:** Astrophysics; Particle, nuclear & high-energy physics; Computational & data methods
 
 ## Trending Research Themes
 
-- **Quantum information moves between proof and deployment:** The QKD study (#1) tests finite-key performance on a live, multi-city fiber network, while the quantum-memory paper (#3) develops a multi-time witness and tests it on superconducting hardware. These are distinct systems and do not independently confirm one another.
-- **Measurements increasingly hinge on analysis pipelines and model comparison:** JWST’s three reductions and atmosphere models (#2), ALICE’s comparison of statistical-hadronization and transport calculations (#5), and Euclid’s focal-plane-wide spectroscopic calibration (#7) make data handling and model assumptions central to the reported physical interpretation.
-- **Precision experimental reach across scales:** NiO RIXS (#4) resolves a picosecond magnetic response, ALICE (#5) probes late hadronic-stage effects, and NA62 (#6) measures an ultra-rare kaon decay. These are separate facilities and observables, not cross-checks of a shared result.
+- **Quantum simulators move toward spectral—not only dynamical—measurement:** The Rydberg experiment (#1) reconstructs phase-sensitive spectra and energy-filtered observables. This is a strong isolated signal in this batch, not a multi-paper quantum-hardware cluster.
+- **Nuclear predictions are being tested against rare-isotope and neutron-star constraints:** The FRIB $^{71}$Cr result (#2) tests a pre-existing production prediction, while the neutron-star crust analysis (#6) shows how nuclear-theory priors shape astrophysical inferences. They concern different systems and do not independently validate one another.
+- **Joint inference is prominent in cosmology and solar physics:** The dark-energy study (#4) combines CMB, DESI, supernova, and LSS data, while the solar analysis (#3) combines Super-K spectral data with SNO inputs and solar models. In both, data combinations sharpen constraints but do not remove model dependence.
+- **Lattice QCD connects computation to rare-decay phenomenology:** The kaon paper (#5) uses near-physical ensembles and multiple subtraction schemes to target a sign ambiguity relevant to high-energy phenomenology; it is an isolated cross-list signal here.
 
 ## Open Problems and Research Directions
 
-- **QKD security — paper-stated issue:** The implemented heuristic privacy-amplification procedure can exceed the finite-key bound, and the 142.9 km link has no positive finite-key rate under that scheme (#1). **Research direction (synthesis):** deploy finite-key-safe post-processing and test the error-correction alternatives on the full network, especially its longest link.
-- **LTT 1445 c — paper-stated limitation:** A potentially grazing eclipse and overlapping events leave the depth poorly constrained (#2). **Research direction (synthesis):** repeat the eclipse observations and expand wavelength coverage to tighten the depth and atmospheric constraints.
-- **Multi-time quantum memory — paper-stated scope:** The experiment is a minimal qubit demonstration and the pairwise classical explanations rely on numerical optimization over a finite observation window (#3). **Research direction (synthesis):** test the witness in larger systems and broaden the time windows and drive regimes.
-- **Driven bimagnons — author interpretation:** The NiO signal’s delayed maximum is consistent with momentum redistribution, but the redistribution is not directly mapped (#4). **Research direction (synthesis):** perform momentum- and delay-resolved scans across pump fluences and compare with calculations including magnon–magnon scattering.
-- **Heavy-ion dynamics and rare kaons — unresolved precision/model questions:** ALICE’s model comparison does not isolate rescattering from regeneration (#5); NA62’s combined branching-ratio uncertainty is about 20% and the complete 2026 sample remains under analysis (#6). **Research direction (synthesis):** compare additional resonance measurements across centralities or collision energies and update NA62’s result with the completed dataset and background studies.
-- **Euclid calibration — paper-stated work in progress:** The SIR team identifies calibration areas for optimization even though current DR1 products meet requirements (#7). **Research direction (synthesis):** quantify residual calibration systematics across fields and releases before translating all spectra into cosmological constraints.
+- **Spectral resolution — paper-stated limitation:** The maximum evolution time limits the energy resolution of the Rydberg phase-estimation method (#1). **Research direction (synthesis):** extend coherent evolution and test additional probe states around smaller gaps near phase transitions.
+- **Rare-isotope reaction dynamics — paper-stated limitation:** The FRIB study finds mismatches near neutron-rich isotopes and identifies possible missing charge-exchange or multistep processes; the $^{71}$Cr cross section also has a broad asymmetric uncertainty (#2). **Research direction (synthesis):** take targeted follow-up cross-section measurements, including the authors’ suggested $^{69}$V candidate, and compare with reaction models that include those processes.
+- **Solar-core inference — paper-stated model dependence plus a text discrepancy:** Radius bounds change with solar-model and SNO inputs, and the abstract/conclusion disagree on the neutrino-production-zone temperature (#3). **Research direction (synthesis):** clarify the reported temperature and repeat the inference with transparent model/input variations and independent solar-structure constraints.
+- **Dark energy versus modified gravity — paper-stated uncertainty:** Current data constrain the background more tightly than clustering and lensing, leaving their possible common origin unresolved (#4). **Research direction (synthesis):** use forthcoming Stage-IV large-scale-structure measurements to test whether the gravitational-response features persist and become statistically resolved.
+- **Rare kaon form factor — paper-stated uncertainty:** The negative-sign preference is weaker after extrapolation to physical charm mass (#5). **Research direction (synthesis):** reduce lattice and extrapolation uncertainties with additional ensembles near the physical charm mass and continued continuum checks.
+- **Neutron-star crust observability — paper-stated degeneracy:** Models with similar global observables can retain substantially different crust masses and moments of inertia (#6). **Research direction (synthesis):** prioritize observations that directly probe crust dynamics and test whether they separate the EOS doppelgängers.
 
 ## Takeaway
 
-This batch is notable for real experimental reach: operational quantum networking, multi-time quantum-memory certification, JWST eclipse constraints, and several precision measurements. The ranking remains provisional; the strongest unresolved issues are finite-key security, model-dependent inference, and uncertainty reduction rather than evidence for a single shared physics breakthrough.
+The clearest cross-cutting signal is a push from broad measurement toward carefully qualified inference: quantum simulators access more of the spectrum, while nuclear and cosmological claims are tested against model dependence and cross-dataset constraints. The most consequential near-term follow-ups are improved spectral resolution, direct checks of nuclear and crust models, and better separation of cosmological background and gravity signals.
 
 ## Method and sources
 
-- **Window:** Daily window is the Friday, 2026-11-13 announcement batch. At the Monday 2026-11-16 01:28:40 UTC snapshot, no newer Monday batch had been announced, so this uses the prior Friday batch; the previous dated batch was Wednesday, 2026-11-11. All seven selected papers are new v1 submissions dated 2026-11-12 UTC.
-- **Snapshot:** 2026-11-16 01:28:40 UTC.
-- **Archive coverage:** Loaded the complete 13 November batch group from each official recent page (`show=2000`): `physics` 220 entries, `astro-ph` 258, `cond-mat` 225, `gr-qc` 91, `hep-ex` 26, `hep-lat` 12, `hep-ph` 87, `hep-th` 105, `nucl-ex` 9, `nucl-th` 25, and `quant-ph` 162. These are archive-page entries and include cross-list appearances, not unique-paper totals. Selected records were deduplicated by arXiv ID, and each selected abstract page was verified.
-- **Inference:** arXiv supplies no official trend chart. The ordering uses independently checkable coverage where found, cross-listing, publication-submission status, dataset/instrument milestones, and concrete results. A Semantic Scholar check at the previous 2026-11-15 snapshot recorded zero citation and influential-citation counts for these very new papers; that check was not refreshed at this report's snapshot and is not presented as a period gain. Because attention signals are sparse, these are best read as notable recent papers, not a measured popularity ranking.
-- **Retrieval:** The configured `web_extract` backend was unavailable; the arXiv recent listings and selected abstract/full-text HTML pages were checked directly in the browser instead. Full text was inspected for the top three entries.
-- **Sources:** [arXiv recent physics](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), [quant-ph](https://arxiv.org/list/quant-ph/recent); selected [arXiv abstracts](https://arxiv.org/abs/2611.17265), [CiVL QKD report](https://civl.com/news/story/researchers-deploy-quantum-network-linking-four-slovak-cities-f5b441fb), [Astrobiology.com JWST coverage](https://astrobiology.com/2026/11/15/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-c-in-secondary-eclipse-using-miri-f1500w/), [INSPIRE ALICE record](https://inspirehep.net/literature/3228179), and [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch).
+- **Window:** Daily window is the Friday, 2026-11-13 announcement batch. At the Monday 2026-11-16 17:25:23 UTC snapshot, arXiv's available records still ended on 13 November and the Monday batch had not yet been announced; the report therefore uses the prior batch. The exact selected-paper submission interval is 2026-11-13 through 2026-11-13 UTC; all six are new v1 submissions, not revisions.
+- **Snapshot:** 2026-11-16 17:25:23 UTC.
+- **Archive coverage:** Queried the recent arXiv Physics group (`physics.*`) and each configured archive: `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. Cross-lists were retained in metadata and works deduplicated by versionless arXiv ID. Selected abstracts and metadata were checked against arXiv records; full HTML was inspected for the top three papers.
+- **Inference:** arXiv supplies no official trending chart. The ordering uses checkable cross-listing, concrete experimental/observational or methodological results, pre-submission prediction tests, reported journal-submission status, and independent discussion where surfaced; recency was only a tie-breaker. Semantic Scholar citation totals were not available for this snapshot, so no age-normalized citation momentum is claimed. With sparse attention signals, these are best read as notable recent papers rather than a measured popularity ranking.
+- **Retrieval:** Direct arXiv API metadata/abstract queries and browser access to arXiv recent, abstract, and selected full-text pages were used where `web_extract` was unavailable.
+- **Sources:** [arXiv recent physics](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), [quant-ph](https://arxiv.org/list/quant-ph/recent); selected abstracts: [2611.18122](https://arxiv.org/abs/2611.18122), [2611.17718](https://arxiv.org/abs/2611.17718), [2611.17651](https://arxiv.org/abs/2611.17651), [2611.18557](https://arxiv.org/abs/2611.18557), [2611.17800](https://arxiv.org/abs/2611.17800), [2611.17920](https://arxiv.org/abs/2611.17920); [third-party Rydberg paper summary](https://science-feed.com/quantum-phase-estimation-on-a-rydberg-quantum-simulator/).

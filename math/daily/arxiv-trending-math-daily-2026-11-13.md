@@ -1,131 +1,130 @@
-# Headline
+# arXiv Mathematics — daily notable papers, 13 November 2026
 
-Mathematics — arXiv daily batch, Friday 13 November 2026 — nine selected papers. The dominant pattern is conjecture resolution or sharp bounds, spanning spectral geometry, function spaces, arithmetic and PDE. Spoken agenda: the conjecture results first, then prime values, regularity and cross-field consequences. Global caveat: arXiv has no official trending chart; this ordering is inferred and citation evidence is limited for papers only days old, so this is a notable-recent-paper watch, not a popularity ranking.
+This batch yields 9 notable recent papers, led by claimed resolutions or counterexamples to long-standing problems and new impossibility results. The short agenda: convex geometry and infinite-dimensional inequalities, then combinatorics and probability, with one striking nonlinear-wave counterexample. This is an inferred, not official, arXiv trending order: arXiv has no official trending chart, and these papers are too new for citation counts to provide much evidence of attention.
 
 ## Top papers (ranked)
 
-### 1. [The Pólya--Szegő buckling conjecture in dimensions two through forty-seven](https://arxiv.org/abs/2611.15243)
-- **Abstract:** The authors prove the Pólya--Szegő volume-minimization conjecture for the first clamped buckling eigenvalue in dimensions 2 through 47, with a sharp comparison to the first Dirichlet eigenvalue and a capacity-qualified equality class.
-- **Authors:** Guowei Dai, Yingxin Sun, Yong Zhang
-- **arXiv:** `2611.15243v1` (published Wed, 11 Nov 2026 09:32:22 UTC; categories: `math.SP`)
-- **Evidence for ranking:** MathWorld's buckling-conjecture entry, updated 14 Nov, discusses and cites this dimension-2-to-47 extension; the AIM problem page separately tracks the planar conjecture and its prior Lean-verified resolution. The paper's unusually broad but finite dimension range and explicit method boundary strengthen its significance signal.
-- **Claimed result:** The authors prove, for every open set Ω in Rⁿ of finite positive volume and 2 ≤ n ≤ 47, Λ₁(Ω) ≥ (jₙ/₂,₁ / jₙ/₂₋₁,₁)² λ₁ᴰ(Ω); the Faber--Krahn inequality yields the ball-minimizing volume bound. (arXiv abstract and Theorem 1.1.)
-- **Assumptions and setting:** Open subsets of Euclidean n-space, finite positive volume, dimensions 2--47; equality in the volume inequality permits removal of a relatively closed set of zero H²-capacity.
-- **Caveat:** The authors' calibration fails for n ≥ 48; this does not disprove the conjecture there. The preprint's proof has not been independently verified here. [MathWorld](https://mathworld.wolfram.com/Polya-SzegoBucklingConjecture.html) describes this boundary of the method.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Analysis & PDE; Geometry & topology
+### 1. [A complete solution to the Naor isomorphic reverse isoperimetry conjecture](https://arxiv.org/abs/2611.16898)
+- **Abstract:** For every origin-symmetric convex body in \(\mathbb R^n\), the authors claim a volume-preserving linear image containing a near-copy with isoperimetric quotient at most \(40\varepsilon^{-1}\sqrt n\), resolving Naor's conjecture.
+- **Authors:** Su Mengwei, Sun Qiang, Xiong Ge
+- **arXiv:** `2611.16898v1` (published 2026-11-12 14:54:50 UTC; categories: `math.MG`)
+- **Evidence for ranking:** The paper states a complete resolution of a named conjecture in metric/convex geometry; the arXiv introduction gives Theorems 1.1–1.2 and sketches the proof route. Semantic Scholar recorded 0 citations and 0 influential citations at the snapshot; no separate expert discussion was found in targeted searches, so placement reflects the claimed result rather than measured attention.
+- **Claimed result:** The arXiv abstract and introduction claim that for every origin-symmetric convex body \(K\), there is \(T\in SL_n(\mathbb R)\) such that for every \(0<\varepsilon<1\), some origin-symmetric \(L\) satisfies \((1-\varepsilon)TK\subseteq L\subseteq TK\) and \(\mathrm{iq}(L)\le40\varepsilon^{-1}\sqrt n\). Setting \(\varepsilon=1/2\) gives the stated conjecture resolution.
+- **Assumptions and setting:** Finite-dimensional real space; \(K\) must be an origin-symmetric convex body and the linear map must preserve volume.
+- **Caveat:** The bound worsens as the allowed relative approximation \(\varepsilon\) shrinks; the abstract establishes an existence theorem, not a result for nonsymmetric bodies.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Geometry & topology
 
-### 2. [The Brown--Shields Conjecture: Two Approximation Theorems and a Counterexample](https://arxiv.org/abs/2611.16997)
-- **Abstract:** The authors construct an outer function in the classical Dirichlet space with a logarithmic-capacity-zero radial zero set whose polynomial multiples are not dense, claiming a counterexample to the Brown--Shields conjecture.
+### 2. [Hilbert’s 17th problem for symmetric functions: undecidability and a counterexample](https://arxiv.org/abs/2611.16690)
+- **Abstract:** The authors prove undecidability of nonnegativity for rational symmetric functions across all dimensions and exhibit a positive-definite degree-8 symmetric function with no sum-of-squares multiplier uniform in dimension.
+- **Authors:** Sebastian Debus, Robin Schabert
+- **arXiv:** `2611.16690v1` (published 2026-11-12 12:07:33 UTC; categories: `math.AG`, `math.OC`, `quant-ph`)
+- **Evidence for ranking:** A concrete undecidability theorem, a separate no-uniform-certificate example, and cross-listing across algebraic geometry, optimization, and quantum physics make this a high-significance candidate. The arXiv introduction specifies a reduction from Hilbert’s tenth problem and the restricted power-sum setting. Semantic Scholar recorded 0 citations and 0 influential citations; targeted searches found no independent expert commentary.
+- **Claimed result:** The abstract and introduction claim that deciding whether a rational-coefficient symmetric function is nonnegative in every dimension is undecidable, even for homogeneous functions in \(\mathbb Q[p_2,p_4,\ldots,p_{46}]\); they also give a homogeneous degree-8 positive-definite example with no multiplier yielding sums of squares uniformly in dimension.
+- **Assumptions and setting:** “Nonnegative in every dimension” means every finite-variable truncation is nonnegative; the decision problem is over symmetric functions with rational coefficients. The counterexample is positive definite in each finite dimension but rules out a single bounded-degree uniform sum-of-squares multiplier.
+- **Caveat:** The authors note in the introduction that another manuscript independently settles the undecidability case; this creates a priority/overlap issue for that result, though their stated uniform-certificate counterexample is a separate contribution.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Algebra & number theory; Logic & foundations; Mathematical physics
+
+### 3. [A resolution of the Erdős similarity problem in the large](https://arxiv.org/abs/2611.14056)
+- **Abstract:** For every unbounded subset \(A\subset\mathbb R\) and every \(0<\varepsilon<1\), the authors construct a closed set that occupies at least \(1-\varepsilon\) of every unit interval yet contains no nontrivial affine copy of \(A\).
+- **Authors:** Chi Hoi Yip
+- **arXiv:** `2611.14056v1` (published 2026-11-10 13:23:49 UTC; categories: `math.CA`)
+- **Evidence for ranking:** The abstract claims a general resolution of the specifically named “in the large” problem for every unbounded set; the arXiv introduction gives the precise theorem, its relation to previous special cases, and a probabilistic construction. Semantic Scholar recorded 0 citations and 0 influential citations; no independent expert discussion was found in targeted searches.
+- **Claimed result:** The arXiv abstract and Theorem 1.2 claim a closed, symmetric set \(S\) with measure at least \(1-\varepsilon\) in every unit interval, avoiding all nontrivial affine copies of any given unbounded \(A\); the theorem also states that every such affine copy misses \(S\) in infinitely many points.
+- **Assumptions and setting:** The forbidden pattern \(A\) is any unbounded subset of the real line; “large” refers to uniform lower density in every interval of length one, not merely positive density globally.
+- **Caveat:** The paper’s introduction explicitly distinguishes this strengthened-density question from the original Erdős similarity conjecture for positive-measure sets, which it says remains open in general.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Combinatorics & discrete mathematics
+
+### 4. [The Brown–Shields Conjecture: Two Approximation Theorems and a Counterexample](https://arxiv.org/abs/2611.16997)
+- **Abstract:** The authors construct an outer function in the classical Dirichlet space with a radial zero set of logarithmic capacity zero whose polynomial multiples nevertheless fail to approximate the constant function, contradicting the Brown–Shields conjecture.
 - **Authors:** Bonan Chen, Xiang Fang, Feng Guo
-- **arXiv:** `2611.16997v1` (published Thu, 12 Nov 2026 16:01:41 UTC; categories: `math.FA`)
-- **Evidence for ranking:** MathWorld's Brown--Shields entry was updated 13 Nov and discusses this exact preprint, making it one of the few submissions with immediate independent, topic-specific discussion. It targets a longstanding conjecture; the external note also distinguishes the claimed refutation from a reviewed resolution.
-- **Claimed result:** The authors state that they disprove the conjecture by constructing an outer f in the Dirichlet space with radial zero set of logarithmic capacity zero but whose polynomial multiples do not approximate 1; their main theorem gives a positive lower bound for the approximation error. (arXiv abstract and Theorem 1.1.)
-- **Assumptions and setting:** The classical holomorphic Dirichlet space on the unit disk; outerness and the radial boundary zero set are understood in that setting.
-- **Caveat:** A contemporaneous [MathWorld note](https://mathworld.wolfram.com/Brown-ShieldsConjecture.html) says independent specialist review of the complete proof had not been reported; treat this striking counterexample as an author claim pending scrutiny.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
+- **arXiv:** `2611.16997v1` (published 2026-11-12 16:01:41 UTC; categories: `math.FA`)
+- **Evidence for ranking:** The claimed counterexample targets a long-standing cyclicity conjecture in functional analysis, and the abstract reports two supporting approximation theorems. Semantic Scholar recorded 0 citations and 0 influential citations. A targeted search found a MathWorld notice describing the counterexample as reported and saying its proof and principal ingredients need independent review; this is attention evidence, not validation.
+- **Claimed result:** The arXiv abstract claims noncyclicity despite outerness and polar radial zero set, and says every proper outer canonical generator can be approximated by such counterexamples in the Dirichlet norm and in the \(L^1\) norm of boundary logarithms.
+- **Assumptions and setting:** The function lies in the classical analytic Dirichlet space on the unit disk; the zero set is defined by radial limits on the unit circle, with logarithmic capacity zero.
+- **Caveat:** The authors label this an expository version with navigational aids, “not intended for publication”; the claimed refutation should be treated as a preprint result pending independent scrutiny.
+- **Announcement type:** new submission, announcement batch 2026-11-13
 - **Themes:** Analysis & PDE
 
-### 3. [Prime values of linear forms and a quadratic form: one proof and two arithmetic applications](https://arxiv.org/abs/2611.16062)
-- **Abstract:** Using higher-order Fourier analysis, the authors prove simultaneous prime values for suitable systems of linear forms and an imaginary-quadratic norm form, derive a Bateman--Horn-type asymptotic, and apply it to weak approximation and quadratic twists of elliptic curves.
-- **Authors:** Niven Achenjang, Katharine Woo
-- **arXiv:** `2611.16062v1` (published Wed, 11 Nov 2026 22:20:15 UTC; categories: `math.NT`)
-- **Evidence for ranking:** A substantial 74-page result connects analytic number theory to arithmetic geometry in two concrete applications. Placement rests on the explicit theorem and cross-area relevance, rather than measured readership.
-- **Claimed result:** Theorem A gives an asymptotic prime-counting formula and infinitely many simultaneous prime values when the singular series is positive; the authors then prove new Brauer--Manin weak-approximation cases and construct infinitely many quadratic twists in a family of rank exactly two. (arXiv abstract and introduction.)
-- **Assumptions and setting:** The homogeneous parts of the linear forms must be pairwise linearly independent; the quadratic form is a norm from an imaginary quadratic field in the specified integral-linear-coordinate form; local obstructions must be absent for the infinitude conclusion.
-- **Caveat:** The stated prime theorem is for this norm-form family, not arbitrary binary quadratic forms; the authors identify broader forms as a possible generalization rather than a result established here.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Algebra & number theory; Geometry & topology
+### 5. [Forbidden subset sums in a linear range: an inverse theorem and the Erdős–Graham irregularity problem](https://arxiv.org/abs/2611.17205)
+- **Abstract:** The author gives explicit asymptotics and multiple limit points for the largest subset of \(\{1,\ldots,\lfloor cn\rfloor\}\) avoiding a distinct-element sum of \(n\), and proves an inverse theorem for dense sets with forbidden sums.
+- **Authors:** Mateo Matijasevick
+- **arXiv:** `2611.17205v1` (published 2026-11-12 18:05:45 UTC; categories: `math.CO`, `math.NT`)
+- **Evidence for ranking:** The paper combines an answer to Erdős–Graham Problem #361 with an independently stated inverse theorem and cross-lists combinatorics/number theory. The abstract reports Lean 4 verification for specified portions, not for every result. Semantic Scholar recorded 0 citations and 0 influential citations; no independent expert discussion was found in targeted searches.
+- **Claimed result:** For \(c\ge1\), the abstract gives \(f_c(n)=\lfloor cn\rfloor-\lceil n/2\rceil\); for \(0<c<1\), it proves nonconvergence of \(f_c(n)/n\), with at least two limit points and arbitrarily many as \(c\) approaches 0 or 1. Its inverse theorem forces a subset summing to \(sT\) under stated density and range hypotheses.
+- **Assumptions and setting:** \(f_c(n)\) maximizes the size of \(A\subseteq\{1,\ldots,\lfloor cn\rfloor\}\) with no subset of distinct elements summing to \(n\). The inverse theorem requires the least positive integer \(q\) not dividing \(s\), and the abstract’s explicit bound on \(E\) and sufficiently large \(T\).
+- **Caveat:** The Lean formalization covers the \(c\ge1\) result, the limsup, and the limit/inverse-theorem cases \(q\in\{2,3\}\) described in the abstract; it does not certify the entire theorem suite.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Combinatorics & discrete mathematics; Algebra & number theory
 
-### 4. [Macroscopic L-infinity bounds for the homogeneous Landau--Coulomb equation](https://arxiv.org/abs/2611.17000)
-- **Abstract:** For smooth, rapidly decaying solutions of the three-dimensional spatially homogeneous Landau equation with Coulomb potential, the authors prove positive-time global L-infinity bounds depending only on initial mass, momentum, energy and entropy, resolving a previously posed regularization problem.
-- **Authors:** Lingda Xu
-- **arXiv:** `2611.17000v1` (published Thu, 12 Nov 2026 16:02:08 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The abstract identifies a specific open problem and a strong theorem with substantially weaker data requirements than earlier estimates; the technical scope is concrete and directly stated in the paper.
-- **Claimed result:** For every 0 < τ < T, the authors bound sup over τ ≤ t ≤ T of the global velocity-space L-infinity norm by C(H, τ, T), for the normalized smooth, rapidly decaying solutions described in the paper. (arXiv abstract and Theorem 1.1.)
-- **Assumptions and setting:** Three-dimensional spatially homogeneous Landau equation with Coulomb interaction; the theorem is an a priori estimate for smooth, rapidly decaying solutions, with constants controlled by macroscopic conserved quantities and initial entropy.
-- **Caveat:** The paper says upgrading this estimate to global existence for general finite-mass, energy and entropy data needs an approximation and initial-trace stability argument, which it does not pursue.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Analysis & PDE; Mathematical physics
+### 6. [The Fourier dimension conjecture for complex Gaussian multiplicative chaos on the circle](https://arxiv.org/abs/2611.15733)
+- **Abstract:** For complex Gaussian multiplicative chaos built from one real Gaussian field on the circle, the author proves the conjectured Fourier-dimension formula throughout the stated parameter range and gives boundary and Sobolev regularity results.
+- **Authors:** Feng Guo
+- **arXiv:** `2611.15733v1` (published 2026-11-11 17:09:57 UTC; categories: `math.PR`)
+- **Evidence for ranking:** The abstract claims resolution of a named conjecture across a broad parameter region and supplies related coefficient-decay and Sobolev conclusions. Semantic Scholar recorded 0 citations and 0 influential citations; no independent expert discussion was found in targeted searches.
+- **Claimed result:** The abstract states that for the canonical holomorphic family, the Fourier dimension at \(\gamma=\alpha+i\beta\) equals the real-chaos dimension at \(\alpha\) minus \(\beta^2\) almost surely on the union of the open unit disk and the specified region \(1/\sqrt2<|\alpha|<\sqrt2\), \(|\alpha|+|\beta|<\sqrt2\). It also describes logarithmic decay and zero Fourier dimension on the stated sloping boundary.
+- **Assumptions and setting:** Complex chaos is built from a single real Gaussian field on the circle; the almost-sure simultaneous assertion applies to the canonical holomorphic family and the parameter regions stated in the abstract.
+- **Caveat:** The theorem is circle-specific and parameter-dependent; the abstract gives separate behavior at the boundary and does not claim the same identity outside its stated range.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Probability & statistics
 
-### 5. [The coercivity conjecture for nonlocal energies](https://arxiv.org/abs/2611.16682)
-- **Abstract:** The authors show that uniform ellipticity does not generally imply H-s-coercivity for symmetric nonlocal kernels, while proving coercivity under several cancellation or geometric assumptions and deriving regularity consequences.
-- **Authors:** Linus Behn, Roberto Colombo, Xavier Fernández-Real, Florian Grube, Harsh Prasad, Xavier Ros-Oton
-- **arXiv:** `2611.16682v1` (published Thu, 12 Nov 2026 11:56:48 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The paper overturns a broad conjecture in a sharply delineated parameter range and replaces it with a local criterion applicable to several important kernel classes, including a non-cutoff Boltzmann setting. Its consequences span nonlocal PDE regularity and kinetic estimates.
-- **Claimed result:** The authors give counterexamples whenever n > 2s, prove the conjecture for n = 1 and s > 1/2, establish a local coercivity criterion based on annular cancellation, and derive Hölder estimates under ellipticity and cancellation hypotheses. (arXiv abstract.)
-- **Assumptions and setting:** Symmetric nonlocal kernels of order 2s, 0 < s < 1; the counterexamples include smooth compactly supported test functions, and positive criteria require the stated cancellation or nonconcentration conditions.
-- **Caveat:** The abstract's stated failure and positive range leave the borderline n = 2s unspecified; conclusions for other kernels depend on additional cancellation or geometric assumptions.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Analysis & PDE; Mathematical physics
+### 7. [On the maximum of Poissonian log-correlated fields](https://arxiv.org/abs/2611.17236)
+- **Abstract:** For a class of stationary Poissonian log-correlated fields generated by an analytic periodic function, the authors derive a high-probability asymptotic for the maximum with a random-time fluctuation and a logarithmic correction.
+- **Authors:** Nicholas A. Cook, Haotian Gu
+- **arXiv:** `2611.17236v1` (published 2026-11-12 18:24:03 UTC; categories: `math.PR`)
+- **Evidence for ranking:** The result gives a detailed maximum asymptotic and a distinct fluctuation mechanism, and the abstract connects the proof to branching random walks in a random time environment. Semantic Scholar listed 1 citation and 0 influential citations at the snapshot (current total, not a gain during this window); this is too little to establish a readership trend.
+- **Claimed result:** For centered 1-periodic analytic \(f\), the authors claim with high probability \(\max_{t\in[-1,1]}X_n(t)=c_1n+c_2\tau_n-(c_3+o(1))\log n\), with positive constants depending on \(f\); random Poisson arrival times yield fluctuations of order \(\sqrt n\).
+- **Assumptions and setting:** \(X_n(t)=\sum_{j\le n}f(e^{\tau_j}t+v_j)\), with rate-one Poisson arrival times \(\tau_j\) and independent uniform \(v_j\in[0,1)\).
+- **Caveat:** The authors conjecture analogous asymptotics for random permutation matrix characteristic polynomials; that extension is not proved here.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Probability & statistics
 
-### 6. [Rational isogenies of of rank-two Drinfeld modules](https://arxiv.org/abs/2611.14873)
-- **Abstract:** The authors determine rational points on Drinfeld modular curves of arbitrary level over F_q(T), obtaining a classification of rational cyclic isogenies and consequences for torsion, isogeny-class size and automorphism groups.
-- **Authors:** Shun Ishii, Ryotaro Sakamoto
-- **arXiv:** `2611.14873v1` (published Wed, 11 Nov 2026 00:56:21 UTC; categories: `math.NT`, `math.AG`)
-- **Evidence for ranking:** This submission combines two mathematical subject classes and claims a complete classification plus a named conjecture resolution, with further uniform bounds and geometric consequences; these are stronger signals than recency alone.
-- **Claimed result:** The authors classify rational cyclic isogenies of rank-two Drinfeld F_q[T]-modules over F_q(T), prove Schweizer's conjecture on rational torsion, and determine geometric automorphism groups of X_0(p) for primes p of degree at least three. (arXiv abstract.)
-- **Assumptions and setting:** Rank-two Drinfeld modules over the rational function field F_q(T), with rational points on Drinfeld modular curves X_0(n) for arbitrary level n.
-- **Caveat:** The classification is specific to rank two over F_q(T); the abstract does not claim a classification over general global function fields or in higher rank.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Algebra & number theory; Geometry & topology
+### 8. [Mean-field Fluctuations for First-Passage Percolation with Symmetric Kernels](https://arxiv.org/abs/2611.17234)
+- **Abstract:** For finite weighted graphs whose normalized Weibull edge hazards form a symmetric Markov kernel, the authors prove mean-field passage-time and Gaussian hopcount limits, plus a Markov-chain approximation to the geodesic.
+- **Authors:** Partha S. Dey, Daecheol Kim
+- **arXiv:** `2611.17234v1` (published 2026-11-12 18:23:33 UTC; categories: `math.PR`)
+- **Evidence for ranking:** The abstract states several quantitative probabilistic limits and applies them to torus kernels, spread-out and non-transitive regular graphs, finite groups, and continuum-kernel discretizations. Semantic Scholar recorded 0 citations and 0 influential citations; no independent expert discussion was found in targeted searches.
+- **Claimed result:** Under a uniform absolute spectral gap and an \(O(N^{-1})\) bound on a fixed even-step return probability, the authors claim the stochastic mean-field passage-time limit, an independent Gaussian hopcount limit, and total-variation approximation of the entire geodesic by an independent Markov chain stopped at that hopcount.
+- **Assumptions and setting:** Finite weighted graphs on \(N\) vertices; the normalized Weibull edge hazards must define a symmetric Markov kernel satisfying the stated spectral-gap and return-probability bounds. Edge-law perturbations are allowed only within the abstract’s uniform relative hazard error condition.
+- **Caveat:** The limiting conclusions depend on the kernel hypotheses; the abstract does not claim universality for arbitrary graph sequences or edge-weight distributions.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Probability & statistics
 
-### 7. [Asymptotically Optimal Bounds for Counting Near-Minimum Circuits in Regular Matroids](https://arxiv.org/abs/2611.15755)
-- **Abstract:** The authors improve the bound on the number of near-minimum-weight circuits in a regular matroid to (Km)^(2 alpha), resolve a recent conjecture for parallel basis search, and obtain consequences for regular codes and totally unimodular lattices.
-- **Authors:** Robert P. Streit
-- **arXiv:** `2611.15755v1` (published Wed, 11 Nov 2026 17:34:38 UTC; categories: `math.CO`, `cs.DM`)
-- **Evidence for ranking:** The new exponent improves a previous m^O(alpha^2) bound, the authors resolve a recent algorithmic conjecture, and the result cross-lists discrete mathematics while yielding coding and lattice applications.
-- **Claimed result:** For positive weights and weighted girth g_w, the circuit count at weight at most alpha g_w is bounded by (Km)^(2 alpha); the authors state asymptotic optimality conditional on the Erdős girth conjecture for all real alpha and unconditional optimality for half-integer alpha. (arXiv abstract.)
-- **Assumptions and setting:** Regular matroids on m elements, positive element weights, and real alpha ≥ 1.
-- **Caveat:** Full asymptotic optimality for arbitrary real alpha is conditional on the Erdős girth conjecture; the unconditional optimality statement is limited to half-integer alpha.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Combinatorics & discrete mathematics; Optimization & control
-
-### 8. [The bias interval of the elephant random walk](https://arxiv.org/abs/2611.14576)
-- **Abstract:** For each superdiffusive memory parameter, the authors prove that the initial biases producing a bimodal limit density form a proper open interval, establishing a conjecture and a unique memory threshold for its nonemptiness.
-- **Authors:** Arjun Pemmasani
-- **arXiv:** `2611.14576v1` (published Tue, 10 Nov 2026 02:17:30 UTC; categories: `math.PR`, `cond-mat.stat-mech`)
-- **Evidence for ranking:** The paper settles a stated conjecture, gives a precise interval-and-threshold characterization, and its arXiv comments list code, certificates and Lean files; the probability/statistical-mechanics cross-list adds another checkable relevance signal.
-- **Claimed result:** The authors prove unimodality for sufficiently biased starts and exactly two local maxima for biases inside a proper open interval; the interval is nonempty precisely above one memory threshold, numerically about 0.6688. (arXiv abstract.)
-- **Assumptions and setting:** The superdiffusive elephant random walk; the shape statement concerns the limiting density as a function of initial bias.
-- **Caveat:** The threshold is characterized uniquely but reported numerically in the abstract; the results concern the superdiffusive regime, not every memory parameter.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Probability & statistics; Mathematical physics
-
-### 9. [Random Chowla and Goldbach Conjectures](https://arxiv.org/abs/2611.14579)
-- **Abstract:** For Rademacher random multiplicative functions and polynomials with positive square-free-value density, the authors prove a normalized Gaussian limit; they also establish random Goldbach-type results for selected bivariate functions and settings.
-- **Authors:** Ihor Pylaiev
-- **arXiv:** `2611.14579v1` (published Tue, 10 Nov 2026 04:02:32 UTC; categories: `math.NT`, `math.CO`, `math.PR`)
-- **Evidence for ranking:** Its three-way number-theory/combinatorics/probability cross-list and method-of-moments theorem connect probabilistic number theory with random additive problems; this breadth, rather than citation growth, supports its placement.
-- **Claimed result:** For each non-linear integer polynomial P with positive square-free-value density, the normalized sum of a Rademacher random multiplicative function along P(n) converges in distribution to a standard Gaussian; the paper also proves analogous statements for selected random Goldbach-type sums. (arXiv abstract.)
-- **Assumptions and setting:** The polynomial must have positive density of square-free values; the Chowla-type result is for Rademacher random multiplicative functions, while Goldbach-type conclusions apply to a suitable class of bivariate functions and only special Rademacher cases.
-- **Caveat:** These are random analogues and do not prove the classical deterministic Chowla or Goldbach conjectures; the polynomial and bivariate-function hypotheses are essential.
-- **Announcement type:** new submission, announcement-batch 2026-11-13
-- **Themes:** Probability & statistics; Algebra & number theory
+### 9. [A counterexample to fixed-profile soliton resolution for the three-dimensional quintic wave equation](https://arxiv.org/abs/2611.17291)
+- **Abstract:** For the focusing energy-critical wave equation in three dimensions, the authors construct a bounded forward-global solution near a sign-changing stationary state whose asymptotic stationary core cannot be represented by one fixed profile.
+- **Authors:** Xuwen Chen, Justin Holmer, Shunlin Shen
+- **arXiv:** `2611.17291v1` (published 2026-11-12 18:53:35 UTC; categories: `math.AP`)
+- **Evidence for ranking:** A concrete counterexample to a fixed-profile soliton-resolution formulation is a substantial claim in nonlinear PDE; the abstract describes a computer-assisted certificate for the stationary state and its odd energy kernel. Semantic Scholar recorded 0 citations and 0 influential citations; no independent expert discussion was found in targeted searches.
+- **Claimed result:** The authors construct a bounded forward-global solution starting arbitrarily close to a sign-changing stationary state, asymptotic to a varying stationary profile plus one free wave, with two limits in distinct similarity orbits; this contradicts a fixed-profile resolution claim.
+- **Assumptions and setting:** The equation is the three-dimensional focusing energy-critical quintic wave equation; the construction is near a particular sign-changing stationary state and uses summable radiation packets.
+- **Caveat:** The counterexample is specific to the stated equation and profile regime; validation includes a computer-assisted certificate, whose details and proof remain for specialist scrutiny.
+- **Announcement type:** new submission, announcement batch 2026-11-13
+- **Themes:** Analysis & PDE
 
 ## Trending Research Themes
 
-- **Conjecture tests recur in this selected sample, not necessarily across mathematics as a whole:** the papers report a bounded-dimensional proof of the buckling conjecture (Dai, Sun & Zhang), a claimed Brown--Shields counterexample (Chen, Fang & Guo), a parameter-dependent failure of nonlocal coercivity (Behn et al.), and resolutions of conjectures in regular matroids and the elephant walk (Streit; Pemmasani).
-- **Sharp inequalities and structural conditions meet PDE regularity:** the buckling comparison and nonlocal coercivity criterion turn quantitative inequalities into equality classifications or regularity consequences; the Landau--Coulomb paper uses weighted Fisher information and a De Giorgi iteration to bound the velocity tail (Dai et al.; Behn et al.; Xu).
-- **Arithmetic results bridge neighboring areas:** Achenjang & Woo use prime values of norm forms for weak approximation and elliptic-curve twists, while Ishii & Sakamoto use Drinfeld modular curves to classify isogenies and torsion. These are two distinct number-theory-to-geometry links, not one shared technique.
-- **Randomness connects probability with arithmetic and statistical mechanics:** Pemmasani analyzes the limiting density of a reinforced walk; Pylaiev obtains Gaussian limits for random multiplicative functions. Their objects and methods differ, but both make distributional shape a central output.
+- **Conjecture resolutions, counterexamples, and no-go results (isolated signals, not evidence of a field-wide shift):** Naor reverse isoperimetry (2611.16898) and the large Erdős similarity problem (2611.14056) are claimed resolutions; Brown–Shields (2611.16997) and fixed-profile soliton resolution (2611.17291) are claimed counterexamples; the symmetric-function paper (2611.16690) gives both undecidability and a uniform-certificate obstruction. These papers do not share a single method—the recurring feature is a sharp yes/no conclusion about a specific classical problem.
+- **Random structures and fluctuations:** The Poissonian field maximum (2611.17236) isolates random arrival-time fluctuations and a non-Bramson logarithmic correction; first-passage percolation (2611.17234) proves mean-field and Gaussian hopcount limits under explicit kernel conditions; complex Gaussian multiplicative chaos (2611.15733) links Fourier dimension with Sobolev regularity. These are three distinct probability results, not one common technique.
+- **Extremal and inverse combinatorics:** The forbidden-sum theorem (2611.17205) gives an inverse density condition and oscillatory extremal behavior, while the Erdős similarity result (2611.14056) studies avoidance of infinite affine patterns in uniformly dense sets. The common thread is pattern avoidance and structural constraints, but the settings and methods differ.
 
 ## Open Problems and Research Directions
 
-- **Author-stated boundary:** Dai, Sun & Zhang's calibration is shown to fail for n ≥ 48; the paper does not settle the buckling conjecture in those dimensions. A follow-up could seek a different calibration or a counterexample there. [Paper](https://arxiv.org/abs/2611.15243).
-- **Independent scrutiny:** Chen, Fang & Guo present a counterexample to Brown--Shields; independent specialist review was not reported in the contemporaneous MathWorld note. Checking the approximation and boundary-capacity construction independently is a prerequisite to treating the conjecture as resolved. [Paper](https://arxiv.org/abs/2611.16997), [MathWorld note](https://mathworld.wolfram.com/Brown-ShieldsConjecture.html).
-- **Author-mentioned generalization:** Achenjang & Woo note that their prime theorem may extend to broader nondegenerate binary quadratic forms. Testing the method beyond imaginary-quadratic norm forms would clarify its boundary; their current applications require only the narrower theorem. [Paper](https://arxiv.org/abs/2611.16062).
-- **Author-stated data-class extension:** Xu leaves the passage from a priori smoothing for smooth rapidly decaying solutions to global existence for general finite-mass/energy/entropy data to approximation and initial-trace stability. Developing that bridge is a concrete next step. [Paper](https://arxiv.org/abs/2611.17000).
-- **Parameter boundary and criterion sharpness:** Behn et al. establish failure for n > 2s and a positive case for n = 1, s > 1/2; the abstract does not resolve n = 2s. Clarifying this borderline and the necessity of annular cancellation in other kernel classes would test the criterion's reach. [Paper](https://arxiv.org/abs/2611.16682).
-- **Conditional optimality:** Streit obtains unconditional optimality for half-integer alpha but invokes the Erdős girth conjecture for all real alpha ≥ 1. Removing that dependency, or identifying the exact obstruction for non-half-integer alpha, is a natural follow-up. [Paper](https://arxiv.org/abs/2611.15755).
+- **Open problem (authors’ statement):** Yip’s result settles the “in the large” formulation but the introduction says the original Erdős similarity conjecture for positive-measure sets remains open in general (2611.14056). **Research direction (synthesis):** identify additional hypotheses on an unbounded pattern or on the measurable set under which the large-set construction could bridge to the original positive-measure problem.
+- **Open issue (authors’ statement plus independent scrutiny):** The Brown–Shields preprint’s claimed counterexample is an expository version not intended for publication; a targeted MathWorld search result says its main proof ingredients require independent review (2611.16997). **Research direction (synthesis):** independently verify the approximation lemmas and the nested construction, especially preservation of outerness, noncyclicity, and polar radial zero set in the limiting function.
+- **Open problem (authors’ conjecture):** The Poissonian-field authors conjecture analogous maximum asymptotics for characteristic polynomials of random permutation matrices and expect similar behavior for sparse random matrices (2611.17236). **Research direction (synthesis):** test whether the random-time fluctuation and logarithmic correction persist under these models’ dependence and spectral constraints.
+- **Research direction (synthesis):** For first-passage percolation, probe whether the spectral-gap and return-probability assumptions can be weakened, and locate examples at their boundary where the Markov-chain approximation or Gaussian hopcount limit fails (2611.17234).
+- **Open issue (author-reported overlap):** Debus and Schabert report a concurrent manuscript independently resolving the symmetric-function undecidability question (2611.16690). **Research direction (synthesis):** compare reductions and identify which restrictions or decision variants are established by each proof, separately from the paper’s no-uniform-sum-of-squares counterexample.
 
 ## Takeaway
 
-This batch contains several substantial preprint claims: a sharp buckling result through dimension 47, a potentially decisive function-space counterexample that needs independent review, and strong arithmetic and PDE theorems with carefully delimited assumptions. Citation momentum is not informative for this very recent set, so the ranking is best read as an evidence-led shortlist of notable work, not a popularity measurement.
+The batch’s standout claims are a convex-geometric conjecture resolution, an undecidability/no-certificate result, and a broad answer to the Erdős “in the large” question. Several other papers offer counterexamples or precise stochastic asymptotics, but with very recent submissions and little citation evidence, this is a mathematically notable shortlist—not a measured popularity leaderboard.
 
 ## Method and sources
 
-- **Window:** Daily announcement batch 2026-11-13 through 2026-11-13 (Friday), selected because Sunday 2026-11-15 has no newer batch. Snapshot: 2026-11-15 17:29:09 UTC.
-- **Coverage:** The complete arXiv Mathematics new-listing page for 2026-11-13 was traversed: 665 new submissions, 102 cross-submissions, and 497 replacement submissions (1,264 entries total). The ranked pool is restricted to new submissions; cross-listed categories are preserved. Nine records were individually checked against their arXiv abstract pages, including versions, first-submission timestamps, categories and abstracts.
-- **Inference:** arXiv supplies no popularity ranking. Selection prioritized independent topic-specific discussion where found, multiple corroborating mathematical signals, explicit conjecture resolutions/counterexamples or sharp bounds, and cross-subfield relevance; recency was a tie-breaker. No numeric score was used. Semantic Scholar citation fields were not usable for this snapshot, and no citation totals are reported. The two external discussion signals checked for the leading conjecture papers are cited in their entries; claims remain preprint claims unless otherwise noted.
-- **Sources:** [arXiv Mathematics new listings](https://arxiv.org/list/math/new); the nine linked arXiv abstract pages and experimental HTML full texts for the top three; [MathWorld on the buckling conjecture](https://mathworld.wolfram.com/Polya-SzegoBucklingConjecture.html); [AIM buckling problem record](https://github.com/MColbrook/AIM/blob/main/problems/007-buckling-load-ball.md); [MathWorld on Brown--Shields](https://mathworld.wolfram.com/Brown-ShieldsConjecture.html).
+- **Window:** daily, 2026-11-13 through 2026-11-13. This uses the prior announcement batch: Friday, 13 November 2026, which was still the latest batch in arXiv’s Mathematics “recent” listing at the snapshot, rather than the run date.
+- **Snapshot:** 2026-11-16 01:23:26 UTC.
+- **Coverage:** the complete arXiv Mathematics recent listing was expanded to 774 entries for the 13 November batch. Candidates were screened across the math archive and its subject classes; 9 abstracts were retained and verified on their arXiv abstract pages. The three leading candidates’ introductions/main-result statements were also inspected where HTML was available.
+- **Inference:** arXiv publishes no official trending ranking. Selection and order prioritize the concrete claimed result, relevant mathematical scope/cross-listing, and any corroborating attention signal; recency was only a tie-breaker. Semantic Scholar Graph API citation and influential-citation totals were checked for selected papers. Counts above are snapshot totals, not gains during the window. Targeted web searches looked for independent discussion; most selected papers had no surfaced expert discussion. This sparse evidence is why the report is titled “notable” rather than a measured trend ranking.
+- **Sources:** arXiv recent listing (https://arxiv.org/list/math/recent); linked arXiv abstracts and, for the leading three, HTML full texts; Semantic Scholar Graph API (`arXiv:<id>` batch query); targeted web searches, including the Brown–Shields follow-up noted above. The configured `web_extract` backend was unavailable, so arXiv pages were inspected in the browser instead.

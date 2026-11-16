@@ -7,14 +7,14 @@
   "date_range_end": "2026-11-13",
   "announcement_batch_date": "2026-11-13",
   "uses_prior_batch": true,
-  "snapshot_utc": "2026-11-15T17:27:47Z",
+  "snapshot_utc": "2026-11-16T01:22:57Z",
   "title": "Notable recent biology and biomedical papers — Friday, 13 November 2026 arXiv batch",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-13.md",
   "entry_count": 15,
   "entry_noun": "papers",
   "global_caveat": "arXiv has no official trending chart. This is an inferred relevance ranking from an incomplete arXiv-only biomedical corpus, not a readership or download ranking, comprehensive literature review, clinical guideline, or claim of clinical validation.",
   "ranking_basis": "Direct relevance to the biology/biomedicine scope and checkable reported research evidence; citation momentum does not distinguish candidates.",
-  "ranking_explanation": "Semantic Scholar returned zero citation and zero influential-citation totals for all 15 selected papers at the snapshot. Papers are ranked by relevance and evidence type, not popularity.",
+  "ranking_explanation": "Citation totals and independent discussion were not used as ranking signals where they could not be verified for this snapshot. Papers are ranked by relevance and reported evidence, not popularity.",
   "sections": [
     {
       "id": "00-headline",
@@ -54,9 +54,9 @@
       "abstract": "The authors combine protein-language-model representations and ensemble learning to identify environmental beta-lactamase candidates, then report resistance assays for two divergent enzymes and mutation effects.",
       "claimed_contribution": "The authors report identifying more than 46,000 putative environmental beta-lactamases and finding that two divergent class-C candidates expressed in *E. coli* confer resistance to multiple beta-lactams; predicted substitutions altered resistance profiles.",
       "unique_caveat": "The full paper states that experimental characterization covered only two class-C candidates and resistance was assessed primarily by MIC. It does not establish environmental prevalence, transmission, or human risk.",
-      "announcement_type": "category listing",
+      "announcement_type": "new submission (category listing)",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct antimicrobial-resistance and protein-function relevance; the authors report expression and antibiotic testing, including MIC measurements, rather than sequence prediction alone. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct antimicrobial-resistance and protein-function relevance; the authors report expression and antibiotic testing, including MIC measurements, rather than sequence prediction alone.",
       "refs": [
         "https://arxiv.org/abs/2611.14568",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14568?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -95,9 +95,9 @@
       "abstract": "Silscore is a compact guide-sequence-only model combining overall and position-specific duplex thermodynamics with sparse nucleotide-identity terms to estimate siRNA potency.",
       "claimed_contribution": "The authors report that the 26-parameter model has the highest observed Pearson correlation in three transfer evaluations; on Katoh–Suzuki, the data support an advantage over each applicable comparator. The paper also reports that some other comparisons are inconclusive.",
       "unique_caveat": "These are retrospective dataset evaluations, not prospective silencing experiments. The guide-only model omits target-site accessibility and transcript context by design.",
-      "announcement_type": "category listing",
+      "announcement_type": "new submission (category listing)",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct RNA silencing-design question; tested on the Huesken split, Mixset, Katoh–Suzuki, and an unseen-target transfer setting. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct RNA silencing-design question; tested on the Huesken split, Mixset, Katoh–Suzuki, and an unseen-target transfer setting.",
       "refs": [
         "https://arxiv.org/abs/2611.15812",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.15812?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -129,9 +129,9 @@
       "abstract": "GrnPFN uses simulated gene-regulatory-network screens for pretraining, then predicts non-additive transcriptional responses to combined perturbations from single-perturbation profiles and limited measured combinations.",
       "claimed_contribution": "The author reports better prediction than tested gradient-boosting and kernel-ridge baselines when combination measurements are absent or limited, with the relative advantage diminishing as screen-specific combinations accumulate.",
       "unique_caveat": "The full paper notes that several later partitions reused cells, perturbation-pair folds overlap in members or compounds, and an additional drug–gene evaluation involved one drug in one cell line. Predicted transcriptional non-additivity does not itself establish a molecular mechanism or synergy in other phenotypes.",
-      "announcement_type": "category listing",
+      "announcement_type": "new submission (category listing)",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct gene-regulation and single-cell perturbation focus; the paper evaluates CRISPR activation, RNA knockdown, and drug combinations and includes an additional CRISPRi–drug screen. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct gene-regulation and single-cell perturbation focus; the paper evaluates CRISPR activation, RNA knockdown, and drug combinations and includes an additional CRISPRi–drug screen.",
       "refs": [
         "https://arxiv.org/abs/2611.14559",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14559?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -170,7 +170,7 @@
       "unique_caveat": "This is a computational benchmark result using model-generated training signals, not experimental or clinical validation. Generalization across proteins, assays, and engineering decisions remains to be tested.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct protein mutation interpretation and engineering relevance; cross-listed in genomics; the arXiv comment says accepted at ICML 2026. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct protein mutation interpretation and engineering relevance; cross-listed in genomics; the arXiv comment says accepted at ICML 2026.",
       "refs": [
         "https://arxiv.org/abs/2611.16361",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16361?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -206,9 +206,9 @@
       "abstract": "CupOFMoCA generates PROTACs and peptide–drug conjugates while enforcing cross-component chemical constraints during generation rather than filtering invalid assemblies afterward.",
       "claimed_contribution": "The authors report improved valid-conjugate yield over matched post-hoc filtering for peptide–drug conjugates and the highest assembly validity on two of three PROTAC systems; they also report post-hoc scoring and molecular-dynamics analyses.",
       "unique_caveat": "Evidence is computational generation, predicted scoring, and simulation; the paper does not establish experimentally measured degradation, binding, or therapeutic efficacy for generated molecules.",
-      "announcement_type": "category listing",
+      "announcement_type": "new submission (category listing)",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct molecular-conjugate design application; arXiv comment identifies publication at NeurIPS 2026. The abstract reports evaluations across three peptide–drug-conjugate and three PROTAC systems. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct molecular-conjugate design application; arXiv comment identifies publication at NeurIPS 2026. The abstract reports evaluations across three peptide–drug-conjugate and three PROTAC systems.",
       "refs": [
         "https://arxiv.org/abs/2611.16099",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16099?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -248,9 +248,9 @@
       "abstract": "AVA uses auditable agent workflows to inspect read-level sequencing evidence for borderline low-variant-allele-frequency calls, evaluated on a DNA-sequencing benchmark and patient RNA-seq data.",
       "claimed_contribution": "The authors report that tested closed- and open-weight agents outperformed the best VAF/depth thresholds on a subsample of borderline variants, returning auditable reasoning traces.",
       "unique_caveat": "Benchmark results do not establish performance in routine prospective laboratories, diagnostic error reduction, turnaround-time improvement, or patient benefit.",
-      "announcement_type": "category listing",
+      "announcement_type": "new submission (category listing)",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct cancer-sequencing workflow relevance; the abstract names the SEQC2 DNA-seq benchmark and patient RNA-seq data, and the arXiv comment reports acceptance to the ML4H 2026 Findings Track. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct cancer-sequencing workflow relevance; the abstract names the SEQC2 DNA-seq benchmark and patient RNA-seq data, and the arXiv comment reports acceptance to the ML4H 2026 Findings Track.",
       "refs": [
         "https://arxiv.org/abs/2611.14560",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14560?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -286,7 +286,7 @@
       "unique_caveat": "The full paper limits the evaluation to a relatively small set of short, mostly single-domain proteins and three model families. The authors state that invariance is necessary but not sufficient evidence for pure coevolutionary inference; retrained or fine-tuned models were not tested.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct protein-model interpretability result; tests ESM-2, MSA Transformer, and AMPLIFY across multiple scales; the arXiv comment reports acceptance to the ICBINB failure-modes workshop at NeurIPS 2026. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct protein-model interpretability result; tests ESM-2, MSA Transformer, and AMPLIFY across multiple scales; the arXiv comment reports acceptance to the ICBINB failure-modes workshop at NeurIPS 2026.",
       "refs": [
         "https://arxiv.org/abs/2611.16881",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16881?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -321,7 +321,7 @@
       "unique_caveat": "This is a model-based sizing method inferred from existing affinity distributions; no prospective synthesis-and-selection test of the predicted second-generation library is reported.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct biomolecular binding and medicinal-chemistry data-design relevance; cross-listed in biomolecules. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct biomolecular binding and medicinal-chemistry data-design relevance; cross-listed in biomolecules.",
       "refs": [
         "https://arxiv.org/abs/2611.17121",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17121?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -363,7 +363,7 @@
       "unique_caveat": "This is a review and framework proposal, not a new comparative benchmark or prospective demonstration that the framework improves biological decisions.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Broad biological foundation-model scope; the arXiv comment says it is to be published in Annual Review of Biomedical Data Science. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Broad biological foundation-model scope; the arXiv comment says it is to be published in Annual Review of Biomedical Data Science.",
       "refs": [
         "https://arxiv.org/abs/2611.17015",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17015?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -398,9 +398,9 @@
       "abstract": "A cross-dataset reanalysis reports compartment- and stage-dependent EBV-associated B-cell transcriptional programs, rather than a stable signature shared across blood, cerebrospinal fluid, and brain.",
       "claimed_contribution": "The authors report that a frozen EBV-associated B-cell factor did not predict MS activity (AUC 0.487; p=0.489), and that early and late EBV-associated transcriptional programs showed opposing directions across compartments.",
       "unique_caveat": "This is retrospective reanalysis with small samples for key contrasts, including nine evaluable human CSF participants and five EBV-exposed mice. The authors state that no external program met their prespecified prospective criterion; the results do not establish causation or a validated biomarker.",
-      "announcement_type": "category listing",
+      "announcement_type": "new submission (category listing)",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "The paper appeared in the 13 November q-bio.GN recent-list batch as a category listing; its arXiv record retains the earlier first-submission date shown above. The abstract reports human and humanized-mouse data with anatomical, sequencing-depth, and other controls. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "The paper appeared in the 13 November q-bio.GN recent-list batch as a category listing; its arXiv record retains the earlier first-submission date shown above. The abstract reports human and humanized-mouse data with anatomical, sequencing-depth, and other controls.",
       "refs": [
         "https://arxiv.org/abs/2611.14524",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.14524?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -441,7 +441,7 @@
       "unique_caveat": "Central passage and link-stretch results are from simulated cells in a model slit, not a direct test of clearance in human spleens or transfusion outcomes.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct cell-mechanics and splenic-clearance question; cross-listed in cell biology and supported by a detailed mechanical study. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct cell-mechanics and splenic-clearance question; cross-listed in cell biology and supported by a detailed mechanical study.",
       "refs": [
         "https://arxiv.org/abs/2611.16241",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16241?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -477,7 +477,7 @@
       "unique_caveat": "The comparison is not a prospective clinical trial: recommendations were assessed retrospectively under doses actually administered and in virtual patients. It does not establish clinical benefit or safety.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct perioperative biomedical decision-modeling question; the abstract reports retrospective-record calibration and a cohort of 4,096 virtual patients. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct perioperative biomedical decision-modeling question; the abstract reports retrospective-record calibration and a cohort of 4,096 virtual patients.",
       "refs": [
         "https://arxiv.org/abs/2611.16757",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.16757?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -518,7 +518,7 @@
       "unique_caveat": "Only six healthy participants were studied; the 3 T reference is not described as a matched-cohort comparison, and this does not establish clinical diagnostic performance.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct medical-physics imaging feasibility question with a stated healthy-participant sample and task comparison. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct medical-physics imaging feasibility question with a stated healthy-participant sample and task comparison.",
       "refs": [
         "https://arxiv.org/abs/2611.17211",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.17211?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -559,7 +559,7 @@
       "unique_caveat": "Eight patients support feasibility only; the authors say broader patient studies are needed to assess clinical utility. This is not a validated diagnostic or treatment tool.",
       "announcement_type": "revision",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Substantive v2 update says it adds experiments in response to reviewer suggestions; under review at Magnetic Resonance in Medicine. The abstract reports eight mixed-grade glioma patients. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Substantive v2 update says it adds experiments in response to reviewer suggestions; under review at Magnetic Resonance in Medicine. The abstract reports eight mixed-grade glioma patients.",
       "refs": [
         "https://arxiv.org/abs/2605.02615",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2605.02615?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
@@ -594,7 +594,7 @@
       "unique_caveat": "This is a theoretical framework and re-analysis of existing systems, not new experimental confirmation of the proposed yield mechanisms.",
       "announcement_type": "revision",
       "announcement_batch_date": "2026-11-13",
-      "evidence_for_ranking": "Direct prebiotic-chemistry relevance and a v2 update in the batch; the abstract reports analyses of seven experimental benchmark systems. Semantic Scholar snapshot: 0 citations, 0 influential citations.",
+      "evidence_for_ranking": "Direct prebiotic-chemistry relevance and a v2 update in the batch; the abstract reports analyses of seven experimental benchmark systems.",
       "refs": [
         "https://arxiv.org/abs/2611.10725",
         "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.10725?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"

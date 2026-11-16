@@ -1,0 +1,62 @@
+{
+  "schema": "arxiv-giant-watch-report/v1",
+  "category": "arxiv-giant-watch",
+  "window": "daily",
+  "date": "2026-11-16",
+  "title": "arXiv Giant Watch - Daily - 2026-11-16",
+  "source_report": "/home/yizhuan/.research/arxiv-giant-watch/daily/arxiv-giant-watch-summary-daily-2026-11-16.md",
+  "entry_count": 1,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "A preregistered study finds pluralistic AI agents can amplify diverse public input on AI policy, recovering most of the satisfaction and fairness gap versus single-model input, though direct human participation remains preferred."
+    },
+    {
+      "id": "01-paper",
+      "kind": "paper",
+      "rank": 1,
+      "title": "Scaling public input on AI policy with pluralistic agents",
+      "arxiv_id": "2611.16028",
+      "authors": [
+        "Jacy Reese Anthis",
+        "Ken Burke",
+        "David Madras",
+        "Crystal Qian",
+        "Meredith Ringel Morris",
+        "Logan Cross",
+        "Caroline Pantofaru",
+        "Utsav Prabhu"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google DeepMind"
+      ],
+      "problem": "AI deployment spans many cultures and stakeholder groups, but gathering diverse public input for AI policy is hard to scale.",
+      "method": "Pluralistic agents (AI representatives that deliberate for individuals) were tested in computational experiments and a preregistered study with 746 human participants, comparing pluralistic-agent deliberation against single-AI input and direct human discussion.",
+      "key_result": "Agents shifted policies toward represented personas, with influence depending on persona instructions (verbosity and lower cooperativeness increased influence); pluralistic-agent deliberation was rated more useful and fair than single-AI input, recovering 68% of the satisfaction gap and 82% of the fairness gap versus direct discussion, though direct human participation was preferred overall.",
+      "caveat": "The authors recommend cautious use as an amplifier of human input, not a replacement; agent influence was sensitive to persona instructions.",
+      "why_it_matters": "It offers an empirical, preregistered test of whether AI agents can broaden participation in AI policy while flagging limits relative to direct human deliberation.",
+      "refs": [
+        "2611.16028"
+      ]
+    },
+    {
+      "id": "80-research-themes",
+      "kind": "themes",
+      "title": "Research Themes",
+      "content": []
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The single selected paper reports a preregistered human study showing pluralistic AI agents can partially close satisfaction and fairness gaps versus single-model input. Direct human participation was still preferred, and the authors frame agents as an amplifier of human input rather than a replacement."
+    }
+  ]
+}

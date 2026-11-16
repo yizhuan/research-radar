@@ -10,11 +10,11 @@
     "announcement_batch_date": "2026-11-13",
     "daily_batch_prior": true,
     "previous_announcement_batch_date": "2026-11-11",
-    "snapshot_utc": "2026-11-15T17:40:14Z"
+    "snapshot_utc": "2026-11-16T01:28:40Z"
   },
   "date": "2026-11-13",
   "title": "Daily arXiv physics — latest announcement batch, 13 November 2026",
-  "global_caveat": "arXiv publishes no official trending chart; this is an inferred ordering, not a readership or download ranking. Citation evidence is especially limited for papers this new: Semantic Scholar showed zero citations and zero influential citations for all seven selected papers at the 2026-11-15 17:40:14 UTC snapshot.",
+  "global_caveat": "arXiv publishes no official trending chart; this is an inferred ordering, not a readership or download ranking. Citation evidence is limited for papers this new; the previous 2026-11-15 Semantic Scholar snapshot showed zero citations and zero influential citations for the selected papers and was not refreshed for this report.",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-13.md",
   "entry_count": 7,
   "entry_noun": "papers",

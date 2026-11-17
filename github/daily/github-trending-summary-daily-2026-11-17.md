@@ -4,78 +4,71 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-17 01:47 UTC |
+| Snapshot time (UTC) | 2026-11-17 17:31 UTC |
 | Scope | Daily |
 | Date range | 2026-11-17 through 2026-11-17 |
-| Ranking basis | GitHub Trending daily star gains |
+| Ranking basis | Daily GitHub Trending star gains, sorted descending |
 
 ## Headline
 
-Agent infrastructure dominates today's list: the strongest gains cluster around AI office tooling, code review, skill evaluation, browser control, and agent-to-user workflows. The common direction is turning coding agents from isolated chat helpers into tools that can work inside applications with feedback and guardrails.
+Today's strongest signal is the continued rise of agent-oriented developer workflows: coordination protocols, skills, review, and human-in-the-loop tooling appear repeatedly among the fastest risers. Univer leads the measured star-gain list, while AG-UI and PaperOrchestra show demand for reusable agent interfaces and multi-agent pipelines.
 
 ## Top Repositories
 
-1. **[dream-num/univer](https://github.com/dream-num/univer) -** An extensible Office SDK for editing, calculation, collaboration, and file processing, positioned for people and AI agents.
+1. **[dream-num/univer](https://github.com/dream-num/univer) - An extensible office SDK for embedding spreadsheet and document editing, collaboration, and file processing in products and agent workflows.**
 
-  **Language:** TypeScript | **Stars gained in window:** +1,828 | **Total stars:** 27,816 | **Why notable:** The day's largest displayed gain; it brings spreadsheet and document-style editing primitives into an extensible SDK explicitly positioned for both people and agents.
+  **Language:** TypeScript | **Stars gained in window:** +1,776 | **Total stars:** 28,770 | **Why notable:** It has the largest daily star gain in the captured Trending set and applies AI-agent integration to established office workflows.
 
-2. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review) -** A Go-based AI code-review CLI combining deterministic pipelines with an LLM agent, line-level comments, built-in checks, and OpenAI/Anthropic compatibility.
+2. **[ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui) - An event-based protocol for connecting AI agents to user-facing applications.**
 
-  **Language:** Go | **Stars gained in window:** +951 | **Total stars:** 52,974 | **Why notable:** Second-highest daily gain; its hybrid design uses deterministic file selection and rule matching around an agent, emphasizing precise reviews over free-form coverage.
+  **Language:** TypeScript | **Stars gained in window:** +1,444 | **Total stars:** 19,879 | **Why notable:** Its strong daily gain highlights interest in standardizing streaming, state updates, tool calls, and human handoffs between agents and frontends.
 
-3. **[NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) -** A multi-tier framework for validating, deduplicating, and live-evaluating AI agent skills and plugins across quality, security, compatibility, and impact.
+3. **[google-research/paper-orchestra](https://github.com/google-research/paper-orchestra) - A multi-agent pipeline that turns research materials into LaTeX papers, literature syntheses, and figures.**
 
-  **Language:** Python | **Stars gained in window:** +873 | **Total stars:** 2,741 | **Why notable:** A strong daily gain for a comparatively small project; the three-tier model separates deterministic checks, overlap analysis, and live task-impact evaluation.
+  **Language:** Python | **Stars gained in window:** +1,175 | **Total stars:** 2,646 | **Why notable:** A high gain relative to its current star base makes it a standout example of agents applied to a complete research-writing workflow. The README says its dataset is not yet included in the repository.
 
-4. **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) -** An MCP server and CLI that let coding agents inspect, debug, automate, and profile a live Chrome browser through Chrome DevTools.
+4. **[elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) - A large Claude Code skill bundle for authorized bug hunting and red-team workflows.**
 
-  **Language:** TypeScript | **Stars gained in window:** +841 | **Total stars:** 57,706 | **Why notable:** It turns a live browser into an agent-accessible debugging and performance surface, and ranked among today's top gainers.
+  **Language:** Python | **Stars gained in window:** +1,007 | **Total stars:** 8,684 | **Why notable:** The repository packages domain-specific agent skills, reporting practices, and vulnerability patterns into a ready-to-use workflow.
 
-5. **[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) -** Claude Code skills for equity investors and traders, covering market analysis, charting, economic calendars, screeners, and strategy development.
+5. **[affaan-m/ECC](https://github.com/affaan-m/ECC) - An agent-harness toolkit focused on skills, memory, security, and research-first development across coding agents.**
 
-  **Language:** Python | **Stars gained in window:** +837 | **Total stars:** 6,341 | **Why notable:** A high daily gain suggests demand for domain-specific agent workflows, here focused on market research and trading tasks.
+  **Language:** JavaScript | **Stars gained in window:** +902 | **Total stars:** 305,226 | **Why notable:** It combines one of the day's largest gains with an unusually large existing community, signaling sustained interest in coding-agent harnesses.
 
-6. **[ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui) -** An open event-stream protocol connecting agents with user-facing apps, carrying typed events for streaming, tools, shared state, and human input.
+6. **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) - An agent skill that researches a topic across social, video, discussion, prediction-market, and web sources.**
 
-  **Language:** TypeScript | **Stars gained in window:** +791 | **Total stars:** 19,047 | **Why notable:** Its stable 1.0 spec and generated TypeScript, Python, and .NET SDKs position it as a standard transport layer between agent frameworks and application interfaces.
+  **Language:** Python | **Stars gained in window:** +772 | **Total stars:** 68,787 | **Why notable:** It represents a growing pattern of domain-specific research workflows packaged as portable skills for agents.
 
-7. **[backnotprop/plannotator](https://github.com/backnotprop/plannotator) -** A local browser-based review layer for coding agents, where people annotate plans and artifacts, review diffs, and send feedback back into agent sessions.
+7. **[alibaba/open-code-review](https://github.com/alibaba/open-code-review) - A hybrid code-review tool combining deterministic checks with LLM-agent review and line-level comments.**
 
-  **Language:** TypeScript | **Stars gained in window:** +696 | **Total stars:** 12,595 | **Why notable:** It makes human review asynchronous across multiple agents and artifacts; its inbox lets agents continue while users respond later.
+  **Language:** Go | **Stars gained in window:** +764 | **Total stars:** 53,557 | **Why notable:** Its momentum points to demand for review systems that pair conventional rules with model-assisted analysis rather than relying on either alone.
 
-8. **[google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) -** A library of Agent Skills for the Stitch MCP server, following the Agent Skills open standard for compatibility with several coding agents.
+8. **[backnotprop/plannotator](https://github.com/backnotprop/plannotator) - A workspace for annotating plans, reviewing agent output, and feeding decisions back into coding workflows.**
 
-  **Language:** TypeScript | **Stars gained in window:** +529 | **Total stars:** 9,749 | **Why notable:** The repository reflects a move from bespoke integrations toward reusable, portable skill packages around an MCP-backed design tool.
+  **Language:** TypeScript | **Stars gained in window:** +691 | **Total stars:** 12,962 | **Why notable:** It makes human review and feedback a first-class layer around autonomous coding agents.
 
-9. **[kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) -** A local video-editing toolset for coding agents: 42 FFmpeg tools, machine-readable contracts, and an MCP server for cuts, captions, reframing, and export.
+9. **[getarcaneapp/arcane](https://github.com/getarcaneapp/arcane) - A self-hosted interface for managing Docker environments.**
 
-  **Language:** Python | **Stars gained in window:** +367 | **Total stars:** 6,799 | **Why notable:** It applies agent tooling to a concrete media workflow and differentiates itself with local processing and no cloud/API-key requirement, per its description.
+  **Language:** Go | **Stars gained in window:** +654 | **Total stars:** 9,174 | **Why notable:** It is a notable infrastructure-oriented counterpoint to the agent-heavy list, with strong daily interest in accessible self-hosted container management.
 
-10. **[google-research/paper-orchestra](https://github.com/google-research/paper-orchestra) -** A multi-agent research-writing pipeline that turns ideas and experiment logs into LaTeX manuscripts using literature synthesis, section writing, refinement, and figure generation.
+10. **[obra/superpowers](https://github.com/obra/superpowers) - An agentic skills framework and software-development methodology.**
 
-  **Language:** Python | **Stars gained in window:** +313 | **Total stars:** 1,569 | **Why notable:** A specific research-authoring application stands out amid general agent infrastructure, with a notable gain relative to its current star base.
-
-11. **[DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map) -** An interactive historical atlas of China spanning dynasties, territory snapshots, place-name genealogy, poetry and battlefield landmarks, and a scrubbable historical timeline.
-
-  **Language:** JavaScript | **Stars gained in window:** +288 | **Total stars:** 6,814 | **Why notable:** A non-agent counterpoint in the daily list: a richly scoped interactive historical atlas showing interest in specialized data visualization and cultural projects.
-
-12. **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) -** An AI-agent research skill that searches Reddit, X, YouTube, Hacker News, Polymarket, and the web before synthesizing grounded summaries.
-
-  **Language:** Python | **Stars gained in window:** +135 | **Total stars:** 68,157 | **Why notable:** A mature research skill remains in the daily list, illustrating that cross-source evidence gathering is becoming a reusable agent capability.
+  **Language:** Shell | **Stars gained in window:** +598 | **Total stars:** 319,130 | **Why notable:** Its continued daily momentum, on top of a very large star base, reinforces the shift toward reusable process and skill layers for coding agents.
 
 ## Trending Technologies and Themes
 
-- **Agent workflow infrastructure and human oversight:** Open Code Review and SkillEvaluator add review and evaluation controls; Chrome DevTools MCP and AG-UI connect agents to browser and application surfaces; Plannotator returns human feedback into agent sessions.
-- **AI-enabled product surfaces:** Univer embeds agents in office editing, while PaperOrchestra targets research authoring. The atlas is a counterpoint: a standalone interactive data-rich application also made the list.
-- **Developer tooling and automation:** MCP, event protocols, CLI workflows, portable skills, and local tools recur across Chrome DevTools MCP, AG-UI, Stitch Skills, and FFmpeg Skill.
-- **Languages:** TypeScript and Python lead the selected 12 repositories at five each; Go and JavaScript appear once each.
+- **Agent workflows and reusable skills:** Claude-BugHunter, ECC, last30days-skill, PaperOrchestra, and Superpowers package repeatable tasks or processes for agents; LoopForge was also visible in the captured Trending set.
+- **Agent-to-application interfaces and human oversight:** AG-UI standardizes agent/client event exchange, while Plannotator focuses on human review and feedback inside coding workflows.
+- **Hybrid AI plus deterministic engineering:** Alibaba's open-code-review combines traditional rules with LLM review, illustrating a practical blend of static checks and generative analysis.
+- **AI-enabled productivity beyond coding:** Univer brings agent integration to spreadsheet/document editing; Arcane provides a non-agent infrastructure counterpoint focused on Docker management.
+- **Languages:** Among these ten repositories, Python and TypeScript lead with three each; Go has two; Shell and JavaScript have one each.
 
 ## Takeaway
 
-Today's leaderboard favors the connective tissue around AI agents more than another standalone model: interfaces, code review, evaluation, browser access, and human feedback loops. The top gainers also include AI-augmented office and research products, while the atlas and trading-skill projects show that specialist applications can still attract sharp one-day attention. Daily star counts are volatile; the useful signal is the cluster of projects turning agents into supervised, tool-using workflows.
+The daily snapshot is less about a single new model or framework than about making agents usable in real workflows: adding protocols, repeatable skills, safety checks, and human approval around them. At the same time, office software and self-hosted infrastructure remain visible non-coding-agent applications, suggesting the agent tooling wave is broadening into adjacent developer and productivity surfaces.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Today](https://github.com/trending?since=daily).
-- **Corroboration:** GitHub REST API repository and default-branch commit endpoints confirmed language, current total stars, active status, and commit SHA for listed repositories. GitHub Search API query `created:2026-11-15..2026-11-17 stars:>50 fork:false` was used to check recent arrivals; results were dominated by duplicated/noisy repos and did not yield a clear addition to the Trending list.
-- **Method note:** Star gains are the values displayed by GitHub's daily Trending view at snapshot time; repositories are ordered by those gains. Total stars and default-branch commits were checked via GitHub REST API. No prior-window dataset was used, so no comparative shift is claimed.
+- **Primary source:** [GitHub Trending repositories today](https://github.com/trending?since=daily), captured at 2026-11-17 17:31 UTC.
+- **Corroboration:** GitHub REST API repository metadata (`/repos/{owner}/{repo}`) and default-branch endpoints (`/repos/{owner}/{repo}/branches/{branch}`) were checked for the listed repositories to confirm repository existence, current stars, primary language/default branch, and current commit SHA. GitHub Search API queries (`<repo-name> user:<owner>`) returned exact matches for all ten; first-party README files were reviewed for the five highest-priority narration candidates.
+- **Method note:** Daily gains are taken from the matching GitHub Trending view and used to rank the ten highest-gain repositories among the 15 repositories returned in the captured page. The page's exact sampling cutoff is not exposed; the stated date is the UTC snapshot date, not a claim of a precise midnight-to-midnight interval. Current total-star counts were cross-checked against GitHub REST metadata.

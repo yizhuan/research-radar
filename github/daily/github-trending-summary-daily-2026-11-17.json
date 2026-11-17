@@ -1,0 +1,409 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-11-17",
+  "title": "GitHub Trending Summary - Daily - 2026-11-17",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-11-17.md",
+  "entry_count": 12,
+  "entry_noun": "repositories",
+  "ranking_basis": "GitHub Trending daily star gains",
+  "ranking_explanation": "Repositories visible on GitHub Trending today, ranked by the displayed stars gained today; GitHub REST API repository and default-branch commit endpoints corroborate identity, current total stars, language, and freshness.",
+  "global_caveat": "A daily Trending snapshot is a point-in-time ranking; displayed daily star gains can change during the UTC day. Search-based recent-repository signals were noisy and did not produce a clear qualifying addition outside the Trending list.",
+  "themes": [
+    {
+      "id": "agent-workflows",
+      "title": "Agent workflow infrastructure and human oversight",
+      "content": "Protocols, review surfaces, code critique, evaluation, and cross-source research skills make coding agents easier to connect, supervise, and assess.",
+      "supporting_repository_ids": [
+        "repo-02",
+        "repo-03",
+        "repo-04",
+        "repo-06",
+        "repo-07",
+        "repo-08",
+        "repo-10",
+        "repo-12"
+      ]
+    },
+    {
+      "id": "ai-enabled-products",
+      "title": "AI-enabled product surfaces",
+      "content": "AI is being embedded into office editing and research-paper authoring rather than staying inside chat interfaces.",
+      "supporting_repository_ids": [
+        "repo-01",
+        "repo-10"
+      ]
+    },
+    {
+      "id": "developer-tools",
+      "title": "Developer tooling and automation",
+      "content": "MCP, event protocols, portable skills, CLI workflows, and local media utilities recur as practical ways to extend agent capability.",
+      "supporting_repository_ids": [
+        "repo-01",
+        "repo-02",
+        "repo-04",
+        "repo-06",
+        "repo-08",
+        "repo-09"
+      ]
+    },
+    {
+      "id": "domain-specific-tools",
+      "title": "Domain-specific agent workflows",
+      "content": "Trading analysis and cross-source research are packaged as reusable agent skills.",
+      "supporting_repository_ids": [
+        "repo-05",
+        "repo-12"
+      ]
+    },
+    {
+      "id": "interactive-visualization",
+      "title": "Interactive data and cultural visualization",
+      "content": "A standalone historical atlas provides a non-agent counterpoint, using a timeline and spatial history to explore multi-century changes.",
+      "supporting_repository_ids": [
+        "repo-11"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time (UTC): 2026-11-17 01:47 UTC; Scope: Daily; Date range: 2026-11-17 through 2026-11-17; Ranking basis: GitHub Trending daily star gains."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent infrastructure dominates today's list: the strongest gains cluster around AI office tooling, code review, skill evaluation, browser control, and agent-to-user workflows. The common direction is turning coding agents from isolated chat helpers into tools that can work inside applications with feedback and guardrails."
+    },
+    {
+      "id": "repo-01",
+      "kind": "repo",
+      "rank": 1,
+      "title": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build an extensible Office SDK for editing, calculation, collaboration, and file processing, with product surfaces designed for people and AI agents.",
+      "language": "TypeScript",
+      "stars_gained": 1828,
+      "total_stars": 27816,
+      "default_branch_commit": "582f0c25898a7e2f2d5952919caede69b3eb259e",
+      "why_notable": "The day's largest displayed gain; it brings spreadsheet and document-style editing primitives into an extensible SDK explicitly positioned for both people and agents.",
+      "theme_ids": [
+        "ai-enabled-products",
+        "developer-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Univer",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "dream-num/univer"
+      ]
+    },
+    {
+      "id": "repo-02",
+      "kind": "repo",
+      "rank": 2,
+      "title": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "A Go-based AI code-review CLI combining deterministic pipelines with an LLM agent, line-level comments, built-in checks, and OpenAI/Anthropic compatibility.",
+      "language": "Go",
+      "stars_gained": 951,
+      "total_stars": 52974,
+      "default_branch_commit": "dd1a7e12a3565f5f7396acb394d83ab18102e6ce",
+      "why_notable": "Second-highest daily gain; its hybrid design uses deterministic file selection and rule matching around an agent, emphasizing precise reviews over free-form coverage.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Open Code Review",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "alibaba/open-code-review"
+      ]
+    },
+    {
+      "id": "repo-03",
+      "kind": "repo",
+      "rank": 3,
+      "title": "NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "description": "A multi-tier framework for validating, deduplicating, and live-evaluating AI agent skills and plugins across quality, security, compatibility, and impact.",
+      "language": "Python",
+      "stars_gained": 873,
+      "total_stars": 2741,
+      "default_branch_commit": "4ecad335cabc43ebeeb5b71f0cfaeded9654868f",
+      "why_notable": "A strong daily gain for a comparatively small project; the three-tier model separates deterministic checks, overlap analysis, and live task-impact evaluation.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "NVIDIA SkillEvaluator",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "NVIDIA/SkillEvaluator"
+      ]
+    },
+    {
+      "id": "repo-04",
+      "kind": "repo",
+      "rank": 4,
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "An MCP server and CLI that let coding agents inspect, debug, automate, and profile a live Chrome browser through Chrome DevTools.",
+      "language": "TypeScript",
+      "stars_gained": 841,
+      "total_stars": 57706,
+      "default_branch_commit": "dc0055828a9fcdcf8c3e65f7ecd1847c53fd972a",
+      "why_notable": "It turns a live browser into an agent-accessible debugging and performance surface, and ranked among today's top gainers.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Chrome DevTools MCP",
+      "unique_caveat": "The README says official support is for Google Chrome and Chrome for Testing; other Chromium browsers are not guaranteed.",
+      "enrichment": null,
+      "refs": [
+        "ChromeDevTools/chrome-devtools-mcp"
+      ]
+    },
+    {
+      "id": "repo-05",
+      "kind": "repo",
+      "rank": 5,
+      "title": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders, covering market analysis, charting, economic calendars, screeners, and strategy development.",
+      "language": "Python",
+      "stars_gained": 837,
+      "total_stars": 6341,
+      "default_branch_commit": "60399452891edf47c1da5ce93c7664b31e3b001e",
+      "why_notable": "A high daily gain suggests demand for domain-specific agent workflows, here focused on market research and trading tasks.",
+      "theme_ids": [
+        "domain-specific-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "moderate",
+      "narration_priority": 5,
+      "spoken_name": "Claude Trading Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "tradermonty/claude-trading-skills"
+      ]
+    },
+    {
+      "id": "repo-06",
+      "kind": "repo",
+      "rank": 6,
+      "title": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI is an open, lightweight event-stream protocol that connects agents with user-facing apps, carrying typed events for streaming, tools, shared state, and human input.",
+      "language": "TypeScript",
+      "stars_gained": 791,
+      "total_stars": 19047,
+      "default_branch_commit": "79530a25f3476d0abb93cb00761906fda757a2d5",
+      "why_notable": "Its stable 1.0 spec and generated TypeScript, Python, and .NET SDKs position it as a standard transport layer between agent frameworks and application interfaces.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "A-G-U-I",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "ag-ui-protocol/ag-ui"
+      ]
+    },
+    {
+      "id": "repo-07",
+      "kind": "repo",
+      "rank": 7,
+      "title": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "A local browser-based review layer for coding agents, where people annotate plans and artifacts, review diffs, and send feedback back into agent sessions.",
+      "language": "TypeScript",
+      "stars_gained": 696,
+      "total_stars": 12595,
+      "default_branch_commit": "5fb90d0fb5d8825ee17bd4444e2335d265e6ca1a",
+      "why_notable": "It makes human review asynchronous across multiple agents and artifacts; its inbox lets agents continue while users respond later.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "Plannotator",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "backnotprop/plannotator"
+      ]
+    },
+    {
+      "id": "repo-08",
+      "kind": "repo",
+      "rank": 8,
+      "title": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed for the Stitch MCP server, following the Agent Skills open standard for compatibility with several coding agents.",
+      "language": "TypeScript",
+      "stars_gained": 529,
+      "total_stars": 9749,
+      "default_branch_commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "why_notable": "The repository reflects a shift from bespoke agent integrations toward reusable, portable skill packages around an MCP-backed design tool.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 8,
+      "spoken_name": "Stitch Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "google-labs-code/stitch-skills"
+      ]
+    },
+    {
+      "id": "repo-09",
+      "kind": "repo",
+      "rank": 9,
+      "title": "kajisho5/ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "description": "A local video-editing toolset for coding agents: 42 FFmpeg tools, machine-readable contracts, and an MCP server for cuts, captions, reframing, and export.",
+      "language": "Python",
+      "stars_gained": 367,
+      "total_stars": 6799,
+      "default_branch_commit": "f1c97cbffeac71b8fdfca2f790ceb00db3bcce65",
+      "why_notable": "It applies agent tooling to a concrete media workflow and differentiates itself with local processing and no cloud/API-key requirement, per its description.",
+      "theme_ids": [
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 9,
+      "spoken_name": "FFmpeg Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "kajisho5/ffmpeg-skill"
+      ]
+    },
+    {
+      "id": "repo-10",
+      "kind": "repo",
+      "rank": 10,
+      "title": "google-research/paper-orchestra",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "description": "A multi-agent research-writing pipeline that turns ideas and experiment logs into LaTeX manuscripts using literature synthesis, outlining, section writing, refinement, and figure generation.",
+      "language": "Python",
+      "stars_gained": 313,
+      "total_stars": 1569,
+      "default_branch_commit": "d9bae997e793a015ed38bb1605be9eb58c00284f",
+      "why_notable": "A specific research-authoring application stands out amid general agent infrastructure, with a notable gain relative to its current star base.",
+      "theme_ids": [
+        "ai-enabled-products",
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 10,
+      "spoken_name": "PaperOrchestra",
+      "unique_caveat": "The README says the project is not an officially supported Google product and that its generation dataset is not included in this repository.",
+      "enrichment": null,
+      "refs": [
+        "google-research/paper-orchestra"
+      ]
+    },
+    {
+      "id": "repo-11",
+      "kind": "repo",
+      "rank": 11,
+      "title": "DeanChensj/jiangshan-map",
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "description": "An interactive historical atlas of China spanning dynasties, territory snapshots, ancient-city and place-name genealogy, poetry and battlefield landmarks, plus a scrub-through timeline.",
+      "language": "JavaScript",
+      "stars_gained": 288,
+      "total_stars": 6814,
+      "default_branch_commit": "897b9ad4e987fcface8728ffdfbe33e801a3dbae",
+      "why_notable": "A non-agent counterpoint in the daily list: a richly scoped interactive historical atlas showing interest in specialized data visualization and cultural projects.",
+      "theme_ids": [
+        "interactive-visualization"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 11,
+      "spoken_name": "Jiangshan Map",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "DeanChensj/jiangshan-map"
+      ]
+    },
+    {
+      "id": "repo-12",
+      "kind": "repo",
+      "rank": 12,
+      "title": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "An AI-agent research skill that searches Reddit, X, YouTube, Hacker News, Polymarket, and the web before synthesizing grounded summaries.",
+      "language": "Python",
+      "stars_gained": 135,
+      "total_stars": 68157,
+      "default_branch_commit": "b515880ff9b549ff0517103fe20bf6664a5538b9",
+      "why_notable": "A mature research skill remains in the daily list, illustrating that cross-source evidence gathering is becoming a reusable agent capability.",
+      "theme_ids": [
+        "agent-workflows",
+        "domain-specific-tools"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 12,
+      "spoken_name": "Last 30 Days Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mvanhorn/last30days-skill"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "Agent workflow infrastructure is the strongest common thread: Open Code Review and SkillEvaluator add review and evaluation controls; Chrome DevTools MCP and AG-UI connect agents to browser and application surfaces; Plannotator returns human feedback into agent sessions. Univer embeds AI in office editing and PaperOrchestra targets research authoring. MCP, event protocols, CLI workflows, portable skills, and local tools recur. TypeScript and Python lead at five repositories each, followed by Go and JavaScript at one each."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today's leaderboard favors the connective tissue around AI agents more than another standalone model: interfaces, code review, evaluation, browser access, and human feedback loops. The top gainers also include AI-augmented office and research products, while the atlas and trading-skill projects show that specialist applications can still attract sharp one-day attention. Daily star counts are volatile; the useful signal is the cluster of projects turning agents into supervised, tool-using workflows."
+    }
+  ],
+  "snapshot_time_utc": "2026-11-17 01:47 UTC",
+  "date_range": {
+    "start": "2026-11-17",
+    "end": "2026-11-17"
+  },
+  "primary_source": "https://github.com/trending?since=daily",
+  "corroboration": "GitHub REST API repository and default-branch commit endpoints; GitHub Search API created:2026-11-15..2026-11-17 stars:>50 fork:false"
+}

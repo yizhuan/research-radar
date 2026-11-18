@@ -12,8 +12,8 @@
     "start_date": "2026-11-17",
     "end_date": "2026-11-17",
     "announcement_batch": "2026-11-17",
-    "prior_batch": false,
-    "snapshot_utc": "2026-11-17T17:23:59Z",
+    "prior_batch": true,
+    "snapshot_utc": "2026-11-18T01:27:32Z",
     "batch_entry_count": 843
   },
   "sections": [
@@ -51,10 +51,10 @@
       "authors": ["Cristian Anghel", "Rares Stan"],
       "themes": ["Algebra & number theory", "Combinatorics & discrete mathematics"],
       "abstract": "For complex projective line arrangements, the authors claim the generic splitting type of the logarithmic bundle is determined by the intersection lattice through 18 lines, thereby proving Terao's freeness conjecture for 17- and 18-line arrangements and extending a bounded-exponent case to any number of lines.",
-      "claimed_result": "The authors claim lattice-determined generic splitting through 18 lines, Terao for 17 and 18 lines, and freeness invariance for free arrangements whose smaller exponent is at most 8 (paper abstract and Theorems 1.1–1.2, 1.6).",
+      "claimed_result": "The authors claim lattice-determined generic splitting through 18 lines, Terao for 17 and 18 lines, and freeness invariance for free arrangements whose smaller exponent is at most 8 (arXiv abstract).",
       "assumptions_and_setting": "Arrangements of complex projective lines; the stated conjecture cases are 17 and 18 lines, and the all-size extension is limited to the stated smaller-exponent condition.",
-      "unique_caveat": "The proof is computer-assisted and the authors explicitly make no positive-characteristic claim; the computations and certificates warrant independent verification.",
-      "ranking_evidence": "A concrete finite-range conjecture result spanning algebraic geometry and combinatorics; the paper supplies ancillary code, data, and certificates and discusses computation reliability. The introduction notes an independent recent proof for 17 lines, while this paper also treats 18 lines and broader consequences.",
+      "unique_caveat": "This is a computer-assisted claim in the stated complex setting; its computations and certificates warrant independent verification.",
+      "ranking_evidence": "A concrete finite-range conjecture result spanning algebraic geometry and combinatorics; the paper supplies ancillary code, data, and certificates, and the abstract states a further smaller-exponent result for arbitrary line counts.",
       "announcement_type": "new submission",
       "announcement_batch": "2026-11-17",
       "refs": ["https://arxiv.org/abs/2611.21506", "https://arxiv.org/html/2611.21506"]

@@ -1,6 +1,6 @@
 # arXiv Mathematics — daily report — 17 November 2026
 
-Eight notable papers from today's 843-entry Mathematics announcement batch. The visible pattern is a cluster of ambitious conjecture resolutions and counterexamples, alongside two spectral-theory papers using precise asymptotic analysis. In brief: packing, line arrangements, polygon dissections, PDE equilibria, syzygies, operator theory, and quasiperiodic spectra. This is an inferred ordering, not an official arXiv trending chart; recent citation evidence is limited and no readership or download ranking is available.
+Eight notable papers from the latest available Mathematics announcement batch: Tue, 17 Nov 2026 (843 entries). No 18 Nov batch was listed at the 01:27 UTC snapshot, so this daily report uses the prior batch. The visible pattern is a cluster of conjecture resolutions and counterexamples, alongside two spectral-theory papers using precise asymptotic analysis. In brief: packing, line arrangements, polygon dissections, PDE equilibria, syzygies, operator theory, and quasiperiodic spectra. This is an inferred ordering, not an official arXiv trending chart; citation evidence is limited for such recent papers, and this is not a readership or download ranking.
 
 ## Top papers (ranked)
 
@@ -19,10 +19,10 @@ Eight notable papers from today's 843-entry Mathematics announcement batch. The 
 - **Abstract:** For complex projective line arrangements, the authors claim the generic splitting type of the logarithmic bundle is determined by the intersection lattice through 18 lines, thereby proving Terao's freeness conjecture for 17- and 18-line arrangements and extending a bounded-exponent case to any number of lines.
 - **Authors:** Cristian Anghel, Rares Stan
 - **arXiv:** `2611.21506v1` (published 2026-11-16 18:04:08 UTC; categories: `math.AG`, `math.CO`)
-- **Evidence for ranking:** A concrete finite-range conjecture result spanning algebraic geometry and combinatorics; the paper supplies ancillary code, data, and certificates and devotes sections to computation reliability. Its introduction notes an independent recent proof for the 17-line case, while this paper also treats 18 lines and broader consequences.
-- **Claimed result:** The authors claim lattice-determined generic splitting through 18 lines, Terao for 17 and 18 lines, and freeness invariance for free arrangements whose smaller exponent is at most 8 (paper abstract and Theorems 1.1–1.2, 1.6).
+- **Evidence for ranking:** A concrete finite-range conjecture result spanning algebraic geometry and combinatorics; the paper supplies ancillary code, data, and certificates, and the abstract states a further smaller-exponent result for arbitrary line counts.
+- **Claimed result:** The authors claim lattice-determined generic splitting through 18 lines, Terao for 17 and 18 lines, and freeness invariance for free arrangements whose smaller exponent is at most 8 (arXiv abstract).
 - **Assumptions and setting:** Arrangements of complex projective lines; the stated conjecture cases are 17 and 18 lines, and the all-size extension is limited to the stated smaller-exponent condition.
-- **Caveat:** The proof is computer-assisted and the authors explicitly make no positive-characteristic claim; the computations and certificates warrant independent verification.
+- **Caveat:** This is a computer-assisted claim in the stated complex setting; its computations and certificates warrant independent verification.
 - **Announcement type:** new submission, 17 November 2026 announcement batch
 - **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
 
@@ -114,8 +114,8 @@ Today's batch contains several unusually strong author-stated claims: a classica
 
 ## Method and sources
 
-- Window: daily Mathematics announcement batch dated 17 November 2026; start and end date: 2026-11-17. This is today's batch, not a prior batch. Snapshot: 2026-11-17 17:23:59 UTC.
+- Window: daily Mathematics announcement batch dated 17 November 2026; start and end date: 2026-11-17. This is the most recent batch available at the snapshot, not a batch dated 18 November. Snapshot: 2026-11-18 01:27:32 UTC.
 - Scope: the full current `math` recent listing, 843 entries in the Tue 17 Nov batch, including its Mathematics subject classes and cross-lists. The eight selected papers are all v1 new submissions. Their arXiv submission timestamps fall on 15–16 November UTC because the daily announcement date and submission timestamp differ.
-- Inference: arXiv publishes no official trending chart. The ordering weighs concrete claimed resolutions/counterexamples, scope, cross-subfield relevance, and explicit computational or methodological evidence; it is not a popularity measurement. Search checks surfaced arXiv records but no independent expert/seminar discussion for these newly announced items. No usable current citation totals were available for the very recent preprints, so the result is best read as notable recent papers rather than measured popularity.
-- Accuracy: abstracts were checked on each arXiv record; HTML introduction/main-results text was inspected for the Terao and Stein papers, while the Reinhardt abstract and section outline were checked. Author claims are attributed; no proof has been independently verified here.
+- Inference: arXiv publishes no official trending chart. The ordering weighs concrete claimed resolutions/counterexamples, scope, cross-subfield relevance, and explicit computational or methodological evidence; it is not a popularity measurement. No independent expert or seminar discussion was substantiated in the sources checked. Usable current citation totals were unavailable for these very recent preprints, so read this as notable recent papers rather than measured popularity.
+- Accuracy: abstracts and metadata were checked on the arXiv records. The theorem-level statements for the Reinhardt and Stein papers were cross-checked against available paper text; no proof has been independently verified here.
 - Sources: [Math recent listing](https://arxiv.org/list/math/recent?show=1000); [arXiv API metadata query](https://export.arxiv.org/api/query?id_list=2611.21470,2611.21506,2611.20240,2611.21574,2611.21197,2611.21544,2611.21495,2611.19723); the eight linked arXiv abstract pages above.

@@ -1,144 +1,143 @@
 {
   "schema": "arxiv-trending-physics.v1",
-  "category": "physics",
+  "category": "daily",
   "window": {
     "type": "daily",
-    "start": "2026-11-13T19:00:00Z",
-    "end": "2026-11-16T19:00:00Z",
+    "start": "2026-11-17",
+    "end": "2026-11-17",
     "announcement_batch_date": "2026-11-17",
-    "snapshot_utc": "2026-11-18T01:38:38Z"
+    "snapshot_utc": "2026-11-18T17:32:00Z",
+    "used_prior_batch": true
   },
   "date": "2026-11-17",
-  "title": "ArXiv Physics — Tuesday, 17 November 2026",
+  "title": "arXiv Trending Physics — Daily — 17 November 2026",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-17.md",
   "entry_count": 5,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart; the ordering is inferred, and citation evidence is sparse for papers this recent.",
+  "global_caveat": "arXiv has no official trending chart, so this ordering is inferred; citation evidence is too sparse to measure popularity for same-day papers.",
   "sections": [
     {
-      "id": "2611.20418",
+      "id": "2611.23165",
       "kind": "paper",
-      "title": "Independent interferometric observable confirms black hole shadow in M87*",
+      "title": "Teleportation of Logical Qubits using Lattice Surgery with Superconducting Circuits",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2611.20418",
-      "arxiv_id": "2611.20418",
+      "url": "https://arxiv.org/abs/2611.23165",
+      "arxiv_id": "2611.23165",
       "arxiv_version": "v1",
-      "published": "2026-11-16T02:26:43Z",
-      "categories": ["astro-ph.IM", "astro-ph.GA", "astro-ph.HE"],
-      "authors": ["Samuel Lai", "Nithyanandan Thyagarajan", "O. Ivy Wong", "Foivos Diakogiannis"],
-      "themes": ["Astrophysics", "Instrumentation & detectors"],
-      "abstract": "The authors apply a closure-invariant imaging method to Event Horizon Telescope observations of M87* and recover a consistent compact, ring-like source.",
-      "claimed_result": "From public 2017, 2018, and 2021 EHT data, the authors report a ring diameter of 42.2 ± 1.5 microarcseconds and infer a mass of 6.5 ± 0.5 billion solar masses under their nominal scaling calibration.",
-      "evidence_type": "observational; reanalysis of 1.3-mm Event Horizon Telescope very-long-baseline interferometry data using closure invariants, generative image reconstruction, and Bayesian geometric modelling",
-      "unique_caveat": "Sparse VLBI coverage leaves some lower-quality epochs less clear; the black-hole mass estimate depends on a calibration factor and its theoretical uncertainty, not on ring diameter alone.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-17",
-      "ranking_evidence": "Cross-listed across three astrophysics categories, published in Nature with a DOI, and independently covered by Nature and Phys.org.",
-      "refs": [
-        "https://arxiv.org/abs/2611.20418",
-        "https://arxiv.org/html/2611.20418",
-        "https://www.nature.com/articles/s41586-026-11241-9",
-        "https://phys.org/news/2026-11-independent-technique-validates-landmark-m87.html",
-        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.20418?fields=title,authors,year,citationCount,influentialCitationCount,referenceCount,publicationTypes,fieldsOfStudy,externalIds"
-      ]
-    },
-    {
-      "id": "2611.21578",
-      "kind": "paper",
-      "title": "Resolving and Suppressing Temporally Correlated Noise in Quantum Error Correction",
-      "rank": 2,
-      "url": "https://arxiv.org/abs/2611.21578",
-      "arxiv_id": "2611.21578",
-      "arxiv_version": "v1",
-      "published": "2026-11-16T18:49:49Z",
+      "published": "2026-11-17T18:17:01Z",
       "categories": ["quant-ph"],
-      "authors": ["Alec Eickbusch", "Nick Noll", "Michael Newman", "Matt McEwen", "Leigh S. Martin", "et al."],
+      "authors": ["Luca Hofele", "Yongxin Song", "Áron Márton", "Ian Hesner", "Ilya Besedin", "Jakob Ekert", "Jonathan Trebst", "François Swiadek", "Felix Henrich", "Dante Colao Zanúz", "Mohsen Bahrami Panah", "Lukas Bödeker", "Nicholas Gialouris", "Chrysander D. Hagen", "Marek Pechal", "Jean Claude Besse", "Markus Müller", "Christoph Hellings", "Andreas Wallraff"],
       "themes": ["Quantum information", "Instrumentation & detectors"],
-      "abstract": "Using a 105-qubit Willow processor, the authors probe time-correlated surface-code errors, identify leakage into a higher transmon state, and test circuit and decoder strategies to suppress it.",
-      "claimed_result": "The authors measure a time-like suppression factor of 1.47 ± 0.25 and report that a walking stability circuit reaches a logical-error floor ≤3.20×10⁻⁸ at 60 cycles, about two orders below the standard construction; an offline adaptive stopping analysis reduces spacetime logical error by 38%.",
-      "evidence_type": "experimental; surface-code stability and memory experiments on a 105-qubit Willow superconducting processor, with an offline decoder analysis",
-      "unique_caveat": "The 60-cycle floor is limited by ionizing-radiation error bursts, and the walking circuit has higher logical error at low cycle counts; the result is tied to this device and implementation.",
+      "abstract": "The authors experimentally teleport logical states between two distance-three surface-code qubits on a 41-physical-qubit superconducting circuit and find that repeated stabilizer measurements after merging patches restore fault tolerance and improve fidelity.",
+      "claimed_result": "The authors report logical teleportation of Z- and X-eigenstates with success probabilities up to 0.65 and 0.73, respectively, and observe that repeated stabilizer measurements restore fault tolerance after the merge step.",
+      "evidence_type": "experimental; lattice-surgery operations on two distance-three surface-code logical qubits in a 41-physical-qubit superconducting circuit",
+      "unique_caveat": "This is a small-code demonstration, not evidence of logical-error suppression at larger code distances; the authors identify remaining hardware noise and suggest extending the method to arbitrary-state teleportation and full tomography.",
+      "ranking_evidence": "Strongest direct attention signal found in this batch: the paper appeared in SciRate’s daily top-paper listing and received independent coverage from Quantum Zeitgeist. The experiment reports a concrete fault-tolerant lattice-surgery operation rather than a forecast.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-17",
-      "ranking_evidence": "A new hardware result on a 105-qubit processor received independent technology-media coverage and identifies a physical source of temporal errors.",
       "refs": [
-        "https://arxiv.org/abs/2611.21578",
-        "https://arxiv.org/html/2611.21578",
-        "https://stridingtech.com/archives/quantum-leap-new-circuit-design-slashes-qubit-errors-by-two-orders-of-magnitude/"
+        "https://arxiv.org/abs/2611.23165",
+        "https://arxiv.org/html/2611.23165v1",
+        "https://scirate.com/?date=2026-11-17&range=1",
+        "https://quantumzeitgeist.com/logical-qubits-teleported-with-41-physical-qubits/"
       ]
     },
     {
-      "id": "2611.21087",
+      "id": "2611.22199",
       "kind": "paper",
-      "title": "Experimental Evidence of Elastic Instability in Viscoelastic Kolmogorov Flow",
+      "title": "Observation of temporal routing of topological edge states",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.22199",
+      "arxiv_id": "2611.22199",
+      "arxiv_version": "v1",
+      "published": "2026-11-17T04:38:26Z",
+      "categories": ["nlin.PS", "cond-mat.mes-hall", "physics.optics"],
+      "authors": ["Letian Xu", "Muhammad Imran", "Yongtao Jia", "Ying Liu", "Huibin Tao", "Rujiang Li"],
+      "themes": ["Condensed matter & materials", "Instrumentation & detectors"],
+      "abstract": "In a coupled nonlinear Su-Schrieffer-Heeger circuit lattice, the authors observe edge-state exchange slow with increasing excitation and eventually localize, demonstrating temporal routing in physical time.",
+      "claimed_result": "The authors observe a progression from periodic interchain exchange to slowed exchange and then localization as excitation voltage rises, attributing the routing behavior to nonlinearity.",
+      "evidence_type": "experimental; temporal voltage evolution in an electrical circuit lattice of two coupled nonlinear SSH chains",
+      "unique_caveat": "The observed dynamics are limited to a finite time window by circuit dissipation, which constrains how long the routing can be followed.",
+      "ranking_evidence": "Cross-listed across nonlinear physics, condensed matter, and optics; the arXiv comment says it is to be published in Physical Letters A, and a publisher record is available. It directly reports temporal dynamics rather than a spatial-to-time analogy.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "refs": [
+        "https://arxiv.org/abs/2611.22199",
+        "https://arxiv.org/html/2611.22199v1",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0375960126010492"
+      ]
+    },
+    {
+      "id": "2611.22471",
+      "kind": "paper",
+      "title": "Properties of Chromium and Manganese in Tycho's SNR with XRISM/Resolve",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2611.21087",
-      "arxiv_id": "2611.21087",
+      "url": "https://arxiv.org/abs/2611.22471",
+      "arxiv_id": "2611.22471",
       "arxiv_version": "v1",
-      "published": "2026-11-16T13:36:23Z",
-      "categories": ["physics.flu-dyn", "cond-mat.soft", "nlin.CD"],
-      "authors": ["Christophe Brouzet", "Mayank Chopra", "Dario Vincenzi", "Jason R. Picardo", "Atul Varshney"],
-      "themes": ["Plasma & fluid physics", "Biophysics & soft matter", "Computational & data methods"],
-      "abstract": "Experiments and Oldroyd-B simulations report arrow-shaped velocity structures and chaotic fluctuations consistent with a center-mode elastic instability in confined, quasi-two-dimensional viscoelastic Kolmogorov flow.",
-      "claimed_result": "The authors report a purely elastic transition below the Newtonian-flow instability threshold, with arrow-shaped structures and chaotic fluctuations, and attribute it to the center-mode mechanism.",
-      "evidence_type": "experimental and computational; electromagnetic forcing and particle-image-velocimetry measurements compared with two-dimensional Oldroyd-B simulations",
-      "unique_caveat": "The simulated onset differs from experiment (critical Weissenberg numbers are about 10 versus about 3); the model is two-dimensional and uses one polymer relaxation time, unlike the polydisperse experimental solution.",
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-17",
-      "ranking_evidence": "Published in Physical Review Letters with a DOI, cross-listed across fluid dynamics, soft matter, and nonlinear science, and combines direct measurements with mechanism simulations.",
-      "refs": [
-        "https://arxiv.org/abs/2611.21087",
-        "https://arxiv.org/html/2611.21087",
-        "https://doi.org/10.1103/xbgn-y3x2"
-      ]
-    },
-    {
-      "id": "2611.21369",
-      "kind": "paper",
-      "title": "EP241206a: A Sub-kilosecond X-Ray Flare Possibly from an Active Galactic Nucleus with a Flux Increase over 3 Orders of Magnitude",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2611.21369",
-      "arxiv_id": "2611.21369",
-      "arxiv_version": "v1",
-      "published": "2026-11-16T16:35:44Z",
+      "published": "2026-11-17T09:30:32Z",
       "categories": ["astro-ph.HE"],
-      "authors": ["Chen-Yu Wang", "Tinggui Wang", "Hua Feng", "Wenxiong Li", "Hucheng Ding", "et al."],
+      "authors": ["R. Giuffrida", "A. Decourchelle", "L. Godinaud", "T. Tanaka", "G. Ferrand", "J. Ballet", "T. Holland-Ashford", "C. Badenes", "A. Bamba", "B. J. Williams", "T. Mizuno", "F. Acero"],
       "themes": ["Astrophysics", "Instrumentation & detectors"],
-      "abstract": "Einstein Probe detected a roughly 500-second soft X-ray flare positionally coincident with a spectroscopically confirmed AGN at redshift 0.62, but the physical association and origin remain uncertain.",
-      "claimed_result": "The authors estimate a peak-to-persistent X-ray luminosity contrast above three orders of magnitude and favor a relativistic-jet explanation, while retaining alternatives.",
-      "evidence_type": "observational; Einstein Probe Wide-field X-ray Telescope detection, optical spectroscopy, and archival/follow-up observations",
-      "unique_caveat": "Association with the AGN is not firm; the authors report a trial-corrected chance-coincidence probability of 4.9×10⁻³ for the relevant counterpart class, and the proposed emission mechanisms remain interpretations.",
+      "abstract": "XRISM/Resolve spectra spatially resolve chromium and manganese emission in Tycho’s Type Ia supernova remnant, constraining its ejecta and progenitor models while leaving multiple explosion scenarios viable.",
+      "claimed_result": "The authors find Cr and Mn lines strongest in the Fe-bright northeast and northwest regions; measured mass ratios are compatible with more than one one-dimensional explosion model, though the best-fitting models imply progenitor metallicities they judge too high for Tycho’s location.",
+      "evidence_type": "observational; spatially resolved X-ray spectroscopy of Tycho’s supernova remnant with XRISM/Resolve, interpreted using plasma and explosion models",
+      "unique_caveat": "The northern and southern regions have limited exposure: chromium there is only marginal at 90% confidence, and low counts do not support firm conclusions; model choices also leave the progenitor scenario ambiguous.",
+      "ranking_evidence": "The arXiv comment reports acceptance in Astronomy & Astrophysics. The result uses XRISM/Resolve’s high spectral resolution to constrain elemental abundances and spatial distributions in a specific remnant.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-17",
-      "ranking_evidence": "Published in The Astrophysical Journal with a DOI; the transient has an Einstein Probe alert and subsequent optical follow-up records.",
       "refs": [
-        "https://arxiv.org/abs/2611.21369",
-        "https://gcn.nasa.gov/circulars/38457",
-        "https://gcn.nasa.gov/circulars/38480"
+        "https://arxiv.org/abs/2611.22471",
+        "https://arxiv.org/html/2611.22471v1",
+        "https://arxiv.org/pdf/2611.22471v1"
       ]
     },
     {
-      "id": "2611.21110",
+      "id": "2611.23150",
       "kind": "paper",
-      "title": "Reversal of dynamical backaction and cooling below the quantum backaction limit in Floquet-driven multimode optomechanical resonators",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2611.21110",
-      "arxiv_id": "2611.21110",
+      "title": "oMEGACat-JWST I.: Project description and photometric data release",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.23150",
+      "arxiv_id": "2611.23150",
       "arxiv_version": "v1",
-      "published": "2026-11-16T13:58:22Z",
-      "categories": ["quant-ph", "cond-mat.mes-hall", "physics.optics"],
-      "authors": ["Menno H. Jansen", "Roel Burgwal", "Ewold Verhagen"],
-      "themes": ["Atomic, molecular & optical physics", "Quantum information", "Instrumentation & detectors"],
-      "abstract": "A Floquet-modulated optical drive couples mechanical modes in a multimode resonator, enabling control of dynamical backaction and cooling of a MHz mode below its single-mode quantum-backaction limit.",
-      "claimed_result": "The authors cool a MHz mode to 47 ± 13 phonons—about half its single-mode quantum-backaction limit—and demonstrate that modulation frequency can switch cooling to amplification at fixed laser detuning.",
-      "evidence_type": "experimental and theoretical; multimode optomechanical resonator with a Floquet-modulated optical drive, supported by theory and a data/code release",
-      "unique_caveat": "The reported performance is demonstrated in a particular resonator and mode configuration; broader scalability across devices and operating regimes is not established.",
+      "published": "2026-11-17T18:03:37Z",
+      "categories": ["astro-ph.GA", "astro-ph.SR"],
+      "authors": ["Maximilian Häberle", "Callie Clontz", "Massimo Griggio", "Mattia Libralato", "Isabella Carlton", "Stefano Souza", "Nadine Neumayer", "Anil Seth", "Peter J. Smith", "Jay Anderson", "Mayte Alfaro-Cuello", "Holger Baumgardt", "Luigi R. Bedin", "Andrea Bellini", "Steven Chen", "James E. Davies", "Anna de Graaff", "Jeremy Hare", "Oleg Kargaltsev", "Kameron Goold", "Michele Scalco", "Zixian Wang", "Matthew Whitaker"],
+      "themes": ["Astrophysics", "Instrumentation & detectors", "Computational & data methods"],
+      "abstract": "The authors release a near-infrared JWST photometric and astrometric catalog of Omega Centauri containing about 677,000 sources, including more than 86,000 below HST’s detection limit.",
+      "claimed_result": "From NIRCam and NIRISS observations, the authors report over 90% recovery of overlapping HST sources, 86,000-plus sources fainter than HST’s detection limit, and single-image astrometric precision near 150 microarcseconds for bright sources.",
+      "evidence_type": "observational; custom reduction of JWST NIRCam and NIRISS imaging from three programs, cross-matched to HST catalog data",
+      "unique_caveat": "Precision and completeness vary with brightness and field location; the paper reports localized edge deviations reaching about 4 mas, so the best quoted precision should not be assumed across the full catalog.",
+      "ranking_evidence": "A substantial JWST data release with stated source counts, completeness, and astrometric precision; cross-listed in Galactic astronomy and stellar astrophysics and marked as submitted to Astronomy & Astrophysics.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-17",
-      "ranking_evidence": "A linked Zenodo data-and-code release, a quantitative experimental result, and cross-listing across quantum, mesoscopic, and optical physics provide corroborating signals.",
       "refs": [
-        "https://arxiv.org/abs/2611.21110",
-        "https://doi.org/10.5281/zenodo.23734788"
+        "https://arxiv.org/abs/2611.23150",
+        "https://arxiv.org/html/2611.23150v1"
+      ]
+    },
+    {
+      "id": "2611.23060",
+      "kind": "paper",
+      "title": "Atomic-scale Imaging of Time Reversal Breaking Supercurrents in Bi₂Sr₂CaCu₂O₈",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.23060",
+      "arxiv_id": "2611.23060",
+      "arxiv_version": "v1",
+      "published": "2026-11-17T16:53:28Z",
+      "categories": ["cond-mat.supr-con"],
+      "authors": ["Bin Hu", "Catherine Dawson", "Shuqiu Wang", "Siyuan Wan", "Huiyu Zhao", "Kuanysh Zhussubekov", "S. Ishida", "Hiroshi Eisaki", "Peter J. Hirschfeld", "Jonathan Ward", "J. C. Séamus Davis"],
+      "themes": ["Condensed matter & materials", "Computational & data methods"],
+      "abstract": "Using spectroscopic imaging and a dual artificial neural network, the authors infer repeatable supercurrent-loop networks in a cuprate superconductor across hole densities 0.17–0.22.",
+      "claimed_result": "The authors use a dual-ANN VMAP to map energy-resolved electronic density-of-states images to current speeds and report loop networks with inferred speeds of 1,250–4,000 m/s, consistent with cited disordered d-wave predictions.",
+      "evidence_type": "experimental; spectroscopic-imaging scanning tunneling microscopy on Bi₂Sr₂CaCu₂O₈, analyzed with the authors’ dual-ANN mapping method",
+      "unique_caveat": "The currents are inferred from spectroscopic maps through a model-based ANN mapping, rather than directly measured as current; independent validation with a complementary probe remains important.",
+      "ranking_evidence": "Included for a specific, potentially significant experimental claim—repeatable current-loop patterns, junctions satisfying Kirchhoff’s law, and inferred speeds—not for demonstrated broad attention. No independent expert validation or cross-subfield listing was found in the sources checked.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "refs": [
+        "https://arxiv.org/abs/2611.23060",
+        "https://arxiv.org/pdf/2611.23060v1"
       ]
     },
     {
@@ -147,17 +146,11 @@
       "title": "Trending Research Themes",
       "rank": 0,
       "text": [
-        "Mechanism-focused tests appear in M87* closure-invariant imaging, Einstein Probe follow-up, viscoelastic-flow measurements versus a proposed instability, and QEC diagnosis of leakage and radiation-related errors. These are distinct systems and datasets.",
-        "The QEC and optomechanics papers manipulate coupled degrees of freedom to change system-level performance, in a superconducting processor and a mechanical resonator respectively.",
-        "Astrophysical transient and image-inference work are distinct observational signals; the flare association remains uncertain and the M87* result reanalyzes existing EHT observations."
+        "Operations and temporal control in physical hardware: lattice-surgery logical transfer and nonlinearity-controlled edge-state routing are distinct experiments and not mutual confirmation.",
+        "Instrument-led astrophysics and reusable data: XRISM/Resolve observations in Tycho and JWST NIRCam/NIRISS catalog work on Omega Centauri use different instruments and targets but turn improved spatial or spectral information into model constraints.",
+        "Model-assisted extraction of difficult signals: the cuprate paper maps STM spectra to a current field with a dual ANN, while the XRISM analysis compares measured line ratios with explosion models; the inferences are distinct and model-dependent."
       ],
-      "refs": [
-        "https://arxiv.org/abs/2611.20418",
-        "https://arxiv.org/abs/2611.21578",
-        "https://arxiv.org/abs/2611.21087",
-        "https://arxiv.org/abs/2611.21369",
-        "https://arxiv.org/abs/2611.21110"
-      ]
+      "refs": ["https://arxiv.org/abs/2611.23165", "https://arxiv.org/abs/2611.22199", "https://arxiv.org/abs/2611.22471", "https://arxiv.org/abs/2611.23150", "https://arxiv.org/abs/2611.23060"]
     },
     {
       "id": "open-problems",
@@ -165,46 +158,28 @@
       "title": "Open Problems and Research Directions",
       "rank": 0,
       "text": [
-        "M87*: sparse VLBI coverage and calibration uncertainty remain; synthesis: test closure-invariant reconstructions on new epochs and independently calibrated synthetic data.",
-        "QEC: ionizing-radiation bursts set a residual logical-error floor; synthesis: extend runs, improve higher-level leakage removal, and test larger code distances on additional processors.",
-        "Viscoelastic flow: simulated and experimental instability onsets differ; synthesis: measure polymer relaxation-time distributions and compare matched three-dimensional simulations.",
-        "EP241206a: counterpart association and flare mechanism remain uncertain; synthesis: coordinated X-ray, optical, and radio follow-up of similar events.",
-        "Optomechanics: performance is demonstrated in one resonator configuration; synthesis: explore auxiliary-mode occupancy and drive parameter ranges using the released code, then test additional resonators."
+        "The logical-operation experiment tests distance-three qubits; synthesis: repeat at larger code distances and test whether fidelity gains persist as depth and device size increase.",
+        "Topological routing is limited by circuit dissipation; synthesis: lower circuit losses and vary excitation to test how long exchange/localization regimes remain observable.",
+        "Tycho’s Cr/Mn constraints are exposure-limited in some regions and compatible with multiple one-dimensional models; synthesis: obtain deeper spatially resolved spectra and compare with three-dimensional models.",
+        "Cuprate current fields are inferred through an ANN mapping; synthesis: test held-out spectra, additional samples/dopings, and an independent current-sensitive measurement.",
+        "The Omega Centauri catalog is intended to support future monitoring; synthesis: combine new JWST epochs with the long HST baseline to test central-star motions and field-dependent systematics."
       ],
-      "refs": [
-        "https://arxiv.org/abs/2611.20418",
-        "https://arxiv.org/abs/2611.21578",
-        "https://arxiv.org/abs/2611.21087",
-        "https://arxiv.org/abs/2611.21369",
-        "https://arxiv.org/abs/2611.21110"
-      ]
+      "refs": ["https://arxiv.org/abs/2611.23165", "https://arxiv.org/abs/2611.22199", "https://arxiv.org/abs/2611.22471", "https://arxiv.org/abs/2611.23060", "https://arxiv.org/abs/2611.23150"]
     },
     {
       "id": "takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
       "rank": 0,
-      "text": "The strongest signals in this batch are the Nature-published M87* reconstruction and experimentally grounded studies that isolate physical mechanisms. Important uncertainties remain: M87* reuses sparse observations, the X-ray transient's counterpart is not secure, and the laboratory findings need validation across models or devices."
+      "text": "The clearest attention signal is a superconducting-circuit demonstration of logical-qubit teleportation; alongside it, a circuit-lattice experiment and two major astrophysical datasets show how better control and instruments expose dynamics hidden to coarser methods. The cuprate current-loop report is potentially consequential but remains method-dependent and unconfirmed by an independent probe."
     },
     {
       "id": "method",
       "kind": "method",
       "title": "Method and sources",
       "rank": 0,
-      "text": "Daily window: submissions and updates from 2026-11-13T19:00:00Z through 2026-11-16T19:00:00Z; latest batch date 2026-11-17; snapshot 2026-11-18T01:38:38Z. Checked recent pages for physics, astro-ph, cond-mat, gr-qc, hep-ex, hep-lat, hep-ph, hep-th, nucl-ex, nucl-th, and quant-ph; 1,048 category entries deduplicated to 784 arXiv IDs. All selected papers are new v1 submissions. No numeric trend score was assigned. Semantic Scholar current citation totals were 1 for M87* and 0 for the viscoelastic-flow, X-ray-flare, and optomechanics papers; the QEC paper was not indexed in the batch response. Current totals are not period gains.",
-      "refs": [
-        "https://arxiv.org/list/physics/recent",
-        "https://arxiv.org/list/astro-ph/recent",
-        "https://arxiv.org/list/cond-mat/recent",
-        "https://arxiv.org/list/gr-qc/recent",
-        "https://arxiv.org/list/hep-ex/recent",
-        "https://arxiv.org/list/hep-lat/recent",
-        "https://arxiv.org/list/hep-ph/recent",
-        "https://arxiv.org/list/hep-th/recent",
-        "https://arxiv.org/list/nucl-ex/recent",
-        "https://arxiv.org/list/nucl-th/recent",
-        "https://arxiv.org/list/quant-ph/recent"
-      ]
+      "text": "Daily window 2026-11-17 through 2026-11-17; batch date 2026-11-17; snapshot 2026-11-18T17:32:00Z. Queried all 11 configured arXiv archives in combined submitted-date and last-updated-date requests. The new-submission query returned 328 records and 328 unique arXiv IDs; no older-paper revisions surfaced in the matching update-date query. Per-archive appearance counts include cross-lists. No numeric trend score was assigned; inference favors coverage/publication status, concrete results, cross-listing, and data or method contributions. Semantic Scholar Graph current citation and influential-citation totals were zero for the five selected papers, not period gains.",
+      "refs": ["https://arxiv.org/list/physics/recent", "https://info.arxiv.org/help/api/index.html", "https://scirate.com/?date=2026-11-17&range=1", "https://api.semanticscholar.org/graph/v1/paper/batch", "https://quantumzeitgeist.com/logical-qubits-teleported-with-41-physical-qubits/", "https://www.sciencedirect.com/science/article/abs/pii/S0375960126010492"]
     }
   ]
 }

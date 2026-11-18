@@ -1,0 +1,142 @@
+{
+  "schema": "arxiv-trending-ai-v1",
+  "category": "AI",
+  "window": {
+    "kind": "daily",
+    "start": "2026-11-17",
+    "end": "2026-11-17",
+    "announcement_batch_date": "2026-11-17",
+    "snapshot_utc": "2026-11-18T01:13:21Z"
+  },
+  "date": "2026-11-17",
+  "title": "AI papers — arXiv announcement batch, 17 November 2026",
+  "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-17.md",
+  "entry_count": 5,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart. This ordering is inferred from checkable external coverage, project releases, cross-list breadth, and reported evaluations; recent-paper citation evidence is limited, and the external signals are weak proxies rather than readership or download counts.",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.21605",
+      "arxiv_id": "2611.21605",
+      "arxiv_version": 1,
+      "published": "2026-11-16T18:59:04Z",
+      "categories": ["cs.CV", "cs.AI"],
+      "authors": ["Huawei Lin", "Jinting Liu", "Tongyan Wang", "Xuyang Chen", "Ruihua Shi", "Zhichao Xu", "Jiaxin Qin", "Guoshenghui Zhao", "Baijian Yang", "Yingjie Victor Chen", "Tan Yu", "Weijie Zhao"],
+      "themes": ["Multimodal & vision-language", "Training & adaptation", "Evaluation & benchmarks"],
+      "abstract": "The authors train visual agents on contrast sets of high-resolution images so success requires inspecting the changed evidence, reporting 63.3% set accuracy versus 59.3% for GRPO at maximum resolution.",
+      "claimed_contribution": "The authors introduce CrossRPO, a group-relative policy objective over image contrast sets, and release ViRA-Train, ViRA-Bench, and ViRA-Bench-Real; their reported comparison is on the stated benchmark suite.",
+      "unique_caveat": "The authors note that ViRA-Bench-Real contains only 78 photographed sets, shot indoors with one camera, and that the training/evaluation base models come from one model family.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "ranking_evidence": "Cross-listed in vision and AI; public project repository, Hugging Face Papers discussion page, and separate technical summary provide checkable corroboration, not readership counts.",
+      "refs": [
+        "https://arxiv.org/abs/2611.21605",
+        "https://github.com/huawei-lin/ViRA",
+        "https://huggingface.co/papers/2611.21605",
+        "https://kblip.com/research/vira-ultra-high-resolution-visual-agents-trained-via-4fxkfWF"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.21541",
+      "arxiv_id": "2611.21541",
+      "arxiv_version": 1,
+      "published": "2026-11-16T18:27:09Z",
+      "categories": ["cs.AI", "cs.LG", "physics.comp-ph"],
+      "authors": ["Brian T. Weston", "Alondra Torres Contreras", "Aldair E. Gongora"],
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "This paper presents an interactive thermal-measurement benchmark in which agents design experiments, reason with a potentially flawed simulator, and report calibrated intervals against exact ground truth; the authors report confident miscalibration on many simulator-mismatch tasks.",
+      "claimed_contribution": "The authors contribute a benchmark combining agent-designed experiments, deliberately flawed simulators, and proper interval scoring against exact simulated truth, with a held-out evaluation of nine models.",
+      "unique_caveat": "The authors explicitly describe the benchmark as one physical domain by design; transfer to other scientific domains remains to be tested.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "ranking_evidence": "Cross-listed across AI, ML, and computational physics; a public benchmark repository and a distinct technical paper summary provide checkable project and cross-category signals.",
+      "refs": [
+        "https://arxiv.org/abs/2611.21541",
+        "https://github.com/Btwestyo/sciresearch-eval",
+        "https://papers.cool/arxiv/2611.21541"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.21607",
+      "arxiv_id": "2611.21607",
+      "arxiv_version": 1,
+      "published": "2026-11-16T18:59:37Z",
+      "categories": ["cs.RO"],
+      "authors": ["Ruixi Yu", "Dairu Liu", "Xuchuan Chen", "Zekun Qi", "Zekai Li", "Zhuo Cao", "Luyang Niu", "Yingsheng Zhang", "Sikai Liang", "Ke Fan", "He Wang", "Li Yi"],
+      "themes": ["Robotics & control", "Multimodal & vision-language", "Training & adaptation"],
+      "abstract": "ScaleVLA connects a 552B vision-language backbone to a trainable action diffusion transformer and reports gains over smaller backbones in simulation sample efficiency, generalization, and a small real-world charger-insertion evaluation.",
+      "claimed_contribution": "The authors report a controlled 2B-to-552B backbone comparison with fixed action-side setup, plus simulation and real-robot results; their real-robot in-domain charger insertion result is 9/10 versus 4/10 for the 2B baseline.",
+      "unique_caveat": "Each trained policy uses one training seed, and the real-robot in-domain result is based on ten trials; the paper also notes the 552B model requires more hardware than smaller backbones.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "ranking_evidence": "A project page, Hugging Face Papers page, and separate coverage from AI Weekly and ExplainX corroborate attention to the robotics experiment; this does not establish adoption or replication.",
+      "refs": [
+        "https://arxiv.org/abs/2611.21607",
+        "https://galaxygeneralrobotics.github.io/scalevla/",
+        "https://huggingface.co/papers/2611.21607",
+        "https://aiweekly.co/alerts/tsinghua-led-scalevla-scales-vision-language-action-models-to-552b-on-deepseek",
+        "https://explainx.ai/blog/scalevla-552b-vision-language-action-robot-backbone-2026"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.21478",
+      "arxiv_id": "2611.21478",
+      "arxiv_version": 1,
+      "published": "2026-11-16T17:50:53Z",
+      "categories": ["cs.CL"],
+      "authors": ["Ruizhe Li", "Licheng Zhang", "Mingxuan Du", "Zhendong Mao"],
+      "themes": ["Retrieval & knowledge", "Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "Jetriever ranks stored memories by estimated usefulness to the current question rather than text similarity, reporting that it places the gold exchange first in 84.8% of 125 indirect-query tasks.",
+      "claimed_contribution": "The authors replace similarity search with full-pool utility scoring and report matched retrieval comparisons on InMind plus a sampled MemoryAgentBench evaluation.",
+      "unique_caveat": "The authors state that full-pool scoring grows with the memory store; the principal indirect-query result is based on 125 tasks, so broader and longer-running memory evaluations remain open.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "ranking_evidence": "Separate Grafy and KBLIP technical coverage surfaced the paper; these are discussion signals, not independent replications.",
+      "refs": [
+        "https://arxiv.org/abs/2611.21478",
+        "https://grafy.ai/news/jetriever-replaces-similarity-search-with-utility-scoring-for-agent-memory",
+        "https://kblip.com/research/jetriever-shifting-agent-memory-retrieval-from-similarity-zIsgRw6"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Latent Lattice Language Models",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.21608",
+      "arxiv_id": "2611.21608",
+      "arxiv_version": 1,
+      "published": "2026-11-16T18:59:38Z",
+      "categories": ["cs.LG", "cs.AI", "cs.CL"],
+      "authors": ["Shivam Duggal", "Zongze Wu", "William T. Freeman", "Antonio Torralba", "Richard Zhang", "Eli Shechtman"],
+      "themes": ["Training & adaptation", "Efficient inference & systems"],
+      "abstract": "The paper adds persistent per-layer latent streams that condition attention, cache writes, and MLP computation, reporting lower validation perplexity than a parameter-matched Transformer in its 406M-parameter, 20B-token experiment.",
+      "claimed_contribution": "The authors introduce the Lattice of Latents as a companion set of persistent per-layer computational states and report gains across Transformer and recurrent-backbone experiments.",
+      "unique_caveat": "The headline parameter-matched language-model result is for a 406M model trained on 20B FineWeb-Edu tokens; the paper's evidence does not by itself establish how the gains scale to larger training runs or downstream deployments.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "ranking_evidence": "The paper spans three core AI categories and received independently hosted technical explainers, including DeepPaper and Foorilla; the signal is breadth of public discussion, not measured citation or usage growth.",
+      "refs": [
+        "https://arxiv.org/abs/2611.21608",
+        "https://arxiv.deeppaper.ai/papers/2611.21608v1",
+        "https://foorilla.com/research/papers/latent-lattice-language-models-406531/"
+      ]
+    }
+  ]
+}

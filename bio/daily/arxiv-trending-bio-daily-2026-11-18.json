@@ -3,358 +3,265 @@
   "category": "bio",
   "window": "daily",
   "date": "2026-11-18",
-  "title": "Notable recent biology and biomedicine papers on arXiv — 2026-11-18 batch",
+  "title": "Notable recent biology and biomedicine papers — arXiv announcement batch 2026-11-18",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-18.md",
-  "entry_count": 9,
+  "entry_count": 12,
   "entry_noun": "papers",
   "global_caveat": "arXiv has no official trending chart, and its biomedical preprint coverage is incomplete; this is an inferred ranking from available evidence, not readership or download data.",
   "window_start": "2026-11-18",
   "window_end": "2026-11-18",
-  "snapshot_utc": "2026-11-18T17:17:50Z",
+  "snapshot_utc": "2026-11-19T01:24:14Z",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
-      "title": "Notable recent biology and biomedicine papers on arXiv — 2026-11-18 batch",
+      "title": "Headline",
       "rank": null,
       "url": "",
-      "abstract": "Today’s configured biology/biomedicine listings yielded **9 selected papers** for the latest announcement batch (papers have UTC submission timestamps on 2026-11-16–17). The dominant pattern is machine-learning methods for spatial transcriptomics, perturbation biology, and molecular discovery, alongside mechanistic models and experimental validation. arXiv has no official trending chart; this is an inferred, evidence-ranked list from an incomplete preprint corpus, using category relevance, cross-list breadth, external discussion, journal status, and Semantic Scholar metadata—not downloads or readership.\n\nSnapshot: 2026-11-18 17:17 UTC. Daily reporting uses the latest available announcement batch; no 2026-11-18 UTC-submitted API records were returned at snapshot time. Because attention evidence is sparse, this is titled **Notable recent papers**, not a measured popularity ranking."
+      "abstract": "The latest available configured biology/biomedicine listings yielded 12 selected papers for the 2026-11-18 announcement batch. The strongest recurring pattern is computational methods reconstructing or predicting biology, with a smaller bridge to experimental measurements. arXiv has no official trending chart; this is an inferred relevance-and-evidence ranking from incomplete biomedical coverage, not measured popularity.",
+      "refs": []
     },
     {
-      "id": "01-discovery-of-new-antiviral-agents-through-artificial-intelligence-in-v",
-      "kind": "paper",
-      "title": "Discovery of new antiviral agents through artificial intelligence: in vitro and in vivo results",
-      "rank": 1,
-      "url": "https://arxiv.org/abs/2611.22230",
-      "arxiv_id": "2611.22230",
-      "arxiv_version": "v1",
-      "published": "2026-11-17T05:22:24Z",
-      "categories": [
-        "q-bio.BM",
-        "cs.LG"
-      ],
-      "authors": [
-        "Roza Izmailyan",
-        "Mher Matevosyan",
-        "Hamlet Khachatryan",
-        "Anastasiya Shavina",
-        "Smbat Gevorgyan",
-        "Artur Ghazaryan",
-        "Irina Tirosyan",
-        "Yeva Gabrielyan",
-        "Marusya Ayvazyan",
-        "Boris Martirosyan",
-        "Vardan Harutyunyan",
-        "Hovakim Zakaryan"
-      ],
-      "themes": [
-        "Biochemistry & proteins",
-        "Biomedical & translational medicine",
-        "Quantitative methods"
-      ],
-      "abstract": "A deep-reinforcement-learning platform generated 60,291 neuraminidase-targeting molecules; nine were selected for testing, and two inhibited influenza A/B neuraminidase and viral replication in cells, with activity also reported in mice.",
-      "claimed_contribution": "The authors report a computational-to-experimental pipeline, including enzyme, cell-based, and mouse studies; the arXiv record links an Antiviral Research 2024 article and DOI 10.1016/j.antiviral.2024.105818.",
-      "unique_caveat": "This is an accepted manuscript of a 2024 journal article rather than a new experimental result; the abstract does not establish human efficacy, safety, or clinical utility.",
-      "refs": [
-        "https://arxiv.org/abs/2611.22230"
-      ]
-    },
-    {
-      "id": "02-structured-ai-ideation-yields-physical-strategies-for-epithelial-barri",
+      "id": "01-structured-ai-ideation-yields-physical-strategies-for-epithelial-barrier-repair",
       "kind": "paper",
       "title": "Structured AI ideation yields physical strategies for epithelial barrier repair",
-      "rank": 2,
+      "rank": 1,
       "url": "https://arxiv.org/abs/2611.22988",
       "arxiv_id": "2611.22988",
       "arxiv_version": "v1",
       "published": "2026-11-17T16:05:22Z",
-      "categories": [
-        "cs.AI",
-        "q-bio.QM"
-      ],
-      "authors": [
-        "Geonho Nah",
-        "Johyun Park",
-        "Kyung-Ah Cho",
-        "Suyoung Hwang",
-        "Yoon Hee Lim",
-        "Eun-kyung Min",
-        "Seunghyun Moon",
-        "Donghyun Koh",
-        "Seungwon Kim",
-        "Jiho Park",
-        "Hojin Yoo",
-        "Myungsun Nam",
-        "Haneul Choi",
-        "Kyungsu Kim",
-        "In-Sun Hong",
-        "YunJae Jung",
-        "Minhyeong Lee"
-      ],
-      "themes": [
-        "Molecular & cell biology",
-        "DNA & genomics",
-        "Quantitative methods"
-      ],
-      "abstract": "Abelio combines structured divergent/convergent AI ideation with literature search and refinement; the authors tested its proposed PEG and cholesterol-anchored complementary-DNA interventions in damaged Caco-2 monolayers.",
-      "claimed_contribution": "The paper reports benchmark comparisons against four frontier LLMs and cell-monolayer assays: PEG preserved barrier readouts, while complementary DNA produced sequence-specific and reversible effects.",
-      "unique_caveat": "The biological tests are in an in-vitro Caco-2 model; proposed PEG/DNA configurations are not directly observed, and the evaluation of scientific soundness includes an LLM judge.",
-      "refs": [
-        "https://arxiv.org/abs/2611.22988"
-      ]
+      "categories": ["cs.AI", "q-bio.QM"],
+      "authors": ["Geonho Nah", "Johyun Park", "Kyung-Ah Cho", "Suyoung Hwang", "Yoon Hee Lim", "Eun-kyung Min", "Seunghyun Moon", "Donghyun Koh", "Seungwon Kim", "Jiho Park", "Hojin Yoo", "Myungsun Nam", "Haneul Choi", "Kyungsu Kim", "In-Sun Hong", "YunJae Jung", "Minhyeong Lee"],
+      "themes": ["Molecular & cell biology", "DNA & genomics", "Quantitative methods"],
+      "abstract": "Abelio structures AI-driven hypothesis generation and refinement; its PEG and cholesterol-anchored complementary-DNA proposals were tested in damaged Caco-2 intestinal epithelial monolayers.",
+      "claimed_contribution": "The authors report that complementary DNA caused sequence-specific, reversible barrier-readout changes; their PEG experiments found effects depended on membrane-surface configuration.",
+      "unique_caveat": "Biological evidence is in vitro in Caco-2 cells; the proposed membrane geometries were not directly visualized, and scientific-soundness scoring partly uses an LLM judge.",
+      "announcement_type": "new submission (cross-listed)",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "q-bio.QM cross-list; benchmarked on 50 curated research objectives against four frontier LLMs, with two AI-proposed approaches tested in cell monolayers.",
+      "refs": ["https://arxiv.org/abs/2611.22988"]
     },
     {
-      "id": "03-st-fateflow-continuous-gene-spatial-reconstruction-with-differentiatio",
+      "id": "02-discovery-of-new-antiviral-agents-through-artificial-intelligence",
       "kind": "paper",
-      "title": "ST-FateFlow: Continuous Gene-Spatial Reconstruction with Differentiation-Potential Learning from Time-Resolved Spatial Transcriptomics",
-      "rank": 3,
-      "url": "https://arxiv.org/abs/2611.22256",
-      "arxiv_id": "2611.22256",
+      "title": "Discovery of new antiviral agents through artificial intelligence: in vitro and in vivo results",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.22230",
+      "arxiv_id": "2611.22230",
       "arxiv_version": "v1",
-      "published": "2026-11-17T06:00:29Z",
-      "categories": [
-        "q-bio.GN"
-      ],
-      "authors": [
-        "Zhe Yu",
-        "Xiaobo Sun",
-        "Hao Wu"
-      ],
-      "themes": [
-        "RNA & transcriptomics",
-        "Omics & single-cell methods",
-        "Quantitative methods"
-      ],
-      "abstract": "ST-FateFlow uses structure-aware transport coupling and flow matching to interpolate gene-expression and spatial dynamics between unpaired time-resolved spatial-transcriptomics snapshots and learn a differentiation-associated potential.",
-      "claimed_contribution": "Across multiple public developmental and regenerative datasets, the authors report improvements in distributional and spatial interpolation metrics and consistency with known trajectories.",
-      "unique_caveat": "The method depends on cross-time coupling and registration quality and missing intermediate states; its potential is a relative ordering, not a fate probability or physical energy, and there are no new human or animal experiments.",
-      "refs": [
-        "https://arxiv.org/abs/2611.22256"
-      ]
+      "published": "2026-11-17T05:22:24Z",
+      "categories": ["q-bio.BM", "cs.LG"],
+      "authors": ["Roza Izmailyan", "Mher Matevosyan", "Hamlet Khachatryan", "Anastasiya Shavina", "Smbat Gevorgyan", "Artur Ghazaryan", "Irina Tirosyan", "Yeva Gabrielyan", "Marusya Ayvazyan", "Boris Martirosyan", "Vardan Harutyunyan", "Hovakim Zakaryan"],
+      "themes": ["Biochemistry & proteins", "Biomedical & translational medicine", "Quantitative methods"],
+      "abstract": "A reinforcement-learning platform generated neuraminidase-targeting molecules; two selected compounds inhibited influenza A/B in enzyme and cell assays and showed activity in mice.",
+      "claimed_contribution": "The authors report two compounds with cell-assay EC50 values of 0.29–2.31 μM and 65–100% protection in the reported mouse infection groups; groups had six mice each.",
+      "unique_caveat": "This is an accepted manuscript of a 2024 article, not new 2026 experimental work. Evidence is preclinical; the compounds were tested at higher doses than oseltamivir and no human efficacy or safety is established.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Primary q-bio.BM listing; peer-reviewed publication is identified in the arXiv record (Antiviral Research, 2024; DOI 10.1016/j.antiviral.2024.105818), with enzyme, cell, and mouse evidence.",
+      "refs": ["https://arxiv.org/abs/2611.22230", "https://doi.org/10.1016/j.antiviral.2024.105818"]
     },
     {
-      "id": "04-hologene-learning-to-lift-sliced-spatial-transcriptomics-to-holistic-3",
-      "kind": "paper",
-      "title": "HoloGene: Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields",
-      "rank": 4,
-      "url": "https://arxiv.org/abs/2611.20368",
-      "arxiv_id": "2611.20368",
-      "arxiv_version": "v1",
-      "published": "2026-11-16T00:58:29Z",
-      "categories": [
-        "cs.LG",
-        "q-bio.GN"
-      ],
-      "authors": [
-        "Yumin Zheng",
-        "Qingtian Zhu",
-        "Ziyan Zhu",
-        "Kailu Song",
-        "Yinqiang Zheng",
-        "Jun Ding"
-      ],
-      "themes": [
-        "RNA & transcriptomics",
-        "Omics & single-cell methods",
-        "Quantitative methods"
-      ],
-      "abstract": "HoloGene models discontinuous spatial-transcriptomics sections as continuous 3D gene-expression fields with an anisotropic conditional implicit neural representation.",
-      "claimed_contribution": "Using held-out measured sections, the authors report better reconstruction accuracy and biological-preservation metrics than general-purpose INR and adapted spatial-transcriptomics baselines; code is linked.",
-      "unique_caveat": "The output is an inferred 3D field from sliced measurements, not direct observation of unsampled tissue; performance depends on registration, data distribution, and the held-out-section validation design.",
-      "refs": [
-        "https://arxiv.org/abs/2611.20368"
-      ]
-    },
-    {
-      "id": "05-occam-improved-single-cell-representation-learning-and-perturbation-ef",
-      "kind": "paper",
-      "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2611.21959",
-      "arxiv_id": "2611.21959",
-      "arxiv_version": "v1",
-      "published": "2026-11-16T22:40:16Z",
-      "categories": [
-        "q-bio.QM",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "authors": [
-        "Ihab Bendidi",
-        "Kian Kenyon-Dean",
-        "Alisandra K. Denton",
-        "Auguste Genovesio",
-        "Emmanuel Noutahi"
-      ],
-      "themes": [
-        "Omics & single-cell methods",
-        "Bioinformatics & sequence analysis",
-        "Quantitative methods"
-      ],
-      "abstract": "OCCAM is an MLP framework that combines denoising-based cell representations with gene-interaction, text, and protein-sequence features to predict genetic-perturbation effects across cell contexts and combinations.",
-      "claimed_contribution": "The authors report cross-context few-shot, held-out-cell-line, and double-perturbation comparisons against retrained competitors and simple baselines.",
-      "unique_caveat": "The paper says expression-level prediction remains challenging; reported gains are benchmark-model results, not evidence of biological or therapeutic effect in patients.",
-      "refs": [
-        "https://arxiv.org/abs/2611.21959"
-      ]
-    },
-    {
-      "id": "06-diversity-preservation-recovers-transcription-factor-motifs-across-cha",
-      "kind": "paper",
-      "title": "Diversity Preservation Recovers Transcription Factor Motifs Across Challenging Confounder Landscapes",
-      "rank": 6,
-      "url": "https://arxiv.org/abs/2611.21859",
-      "arxiv_id": "2611.21859",
-      "arxiv_version": "v1",
-      "published": "2026-11-16T20:23:15Z",
-      "categories": [
-        "cs.NE",
-        "q-bio.GN"
-      ],
-      "authors": [
-        "Alejandro Medina",
-        "Mary Lauren Benton"
-      ],
-      "themes": [
-        "DNA & genomics",
-        "Bioinformatics & sequence analysis",
-        "Quantitative methods"
-      ],
-      "abstract": "The paper combines evolvable motif length with MAP-Elites diversity archives to improve transcription-factor motif recovery under confounding sequences.",
-      "claimed_contribution": "On five liver ChIP-seq datasets, the archives recovered target signals more reliably than a survivor-selection baseline and were comparable to or more robust than MEME in the reported settings.",
-      "unique_caveat": "Motif annotation remains difficult: neither method consistently ranks targets above close relatives for HNF4A and JUND across the full width range.",
-      "refs": [
-        "https://arxiv.org/abs/2611.21859"
-      ]
-    },
-    {
-      "id": "07-molecular-memory-reduces-timing-noise-in-stochastic-gene-expression",
-      "kind": "paper",
-      "title": "Molecular memory reduces timing noise in stochastic gene expression",
-      "rank": 7,
-      "url": "https://arxiv.org/abs/2611.22554",
-      "arxiv_id": "2611.22554",
-      "arxiv_version": "v1",
-      "published": "2026-11-17T10:43:07Z",
-      "categories": [
-        "q-bio.MN",
-        "cond-mat.stat-mech"
-      ],
-      "authors": [
-        "Kuheli Biswas",
-        "Supravat Dey",
-        "Abhyudai Singh"
-      ],
-      "themes": [
-        "Molecular & cell biology",
-        "Quantitative methods"
-      ],
-      "abstract": "Analytical and stochastic-simulation results indicate that multistep mRNA production and degradation can reduce first-passage-time noise in bursty gene-expression models through different mechanisms.",
-      "claimed_contribution": "The authors derive small-noise-limit statistics and compare them with stochastic simulations beyond that approximation.",
-      "unique_caveat": "The claims are model-based and the analytical results have stated regime-of-validity limits; no biochemical or cellular experiment is reported.",
-      "refs": [
-        "https://arxiv.org/abs/2611.22554"
-      ]
-    },
-    {
-      "id": "08-rule-based-curation-and-validation-in-batch-fermentation-of-a-genome-s",
+      "id": "03-rule-based-curation-and-validation-in-batch-fermentation-of-a-genome-scale-metabolic-model",
       "kind": "paper",
       "title": "Rule-based curation and validation in batch fermentation of a genome-scale metabolic model of the mycoprotein fungus Fusarium venenatum A3/5",
-      "rank": 8,
+      "rank": 3,
       "url": "https://arxiv.org/abs/2611.21775",
       "arxiv_id": "2611.21775",
       "arxiv_version": "v1",
       "published": "2026-11-16T19:05:11Z",
-      "categories": [
-        "q-bio.MN"
-      ],
-      "authors": [
-        "Jaewook Lee",
-        "Thomas Vinestock",
-        "Miao Guo"
-      ],
-      "themes": [
-        "Biochemistry & proteins",
-        "Molecular & cell biology",
-        "Quantitative methods"
-      ],
-      "abstract": "The authors build and curate the iJL1143 genome-scale metabolic model for Fusarium venenatum A3/5 and validate it against four oxygen-enriched batch fermentations.",
-      "claimed_contribution": "Rule-based curation reduced mean final-biomass discrepancy from 20% to 6% against the draft model; adding a fitted lag time reduced biomass time-course error from 4.88 to 0.42 g/L.",
-      "unique_caveat": "Validation is limited to the reported strain, oxygen-enriched batch setting, substrates, and model comparisons; performance does not establish transfer to other feedstocks or production conditions.",
-      "refs": [
-        "https://arxiv.org/abs/2611.21775"
-      ]
+      "categories": ["q-bio.MN"],
+      "authors": ["Jaewook Lee", "Thomas Vinestock", "Miao Guo"],
+      "themes": ["Biochemistry & proteins", "Molecular & cell biology", "Quantitative methods"],
+      "abstract": "The authors built the iJL1143 genome-scale metabolic model for Fusarium venenatum A3/5 and compared it with a draft model in four oxygen-enriched glucose/fructose batch fermentations.",
+      "claimed_contribution": "The authors report that curation reduced mean final-biomass discrepancy from 20% to 6%; adding a fitted lag time reduced biomass time-course error from 4.88 to 0.42 g/L.",
+      "unique_caveat": "Validation covers one strain, oxygen-enriched batch conditions, and the tested substrates; transfer to other feedstocks or industrial conditions remains unshown.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Primary q-bio.MN listing and comparison with four fermentation experiments; reported biomass discrepancies are quantitative and tied to measured batch runs.",
+      "refs": ["https://arxiv.org/abs/2611.21775"]
     },
     {
-      "id": "09-optimising-recruitment-and-sample-allocation-in-multi-site-rare-diseas",
+      "id": "04-occam-improved-single-cell-representation-learning-and-perturbation-effect-prediction",
+      "kind": "paper",
+      "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.21959",
+      "arxiv_id": "2611.21959",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T22:40:16Z",
+      "categories": ["q-bio.QM", "cs.AI", "cs.LG"],
+      "authors": ["Ihab Bendidi", "Kian Kenyon-Dean", "Alisandra K. Denton", "Auguste Genovesio", "Emmanuel Noutahi"],
+      "themes": ["Omics & single-cell methods", "Bioinformatics & sequence analysis", "Quantitative methods"],
+      "abstract": "OCCAM combines denoising-based cell representations with gene-interaction, text, and protein-sequence features to predict genetic-perturbation responses across contexts and gene combinations.",
+      "claimed_contribution": "The authors report improved perturbation-pattern matching over four retrained competitors or transfer baselines, and better double-perturbation estimates than summed single effects.",
+      "unique_caveat": "The paper says expression-level prediction remains challenging; these are computational benchmark results, not evidence of patient or therapeutic effects.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "q-bio.QM listing and cross-listing in AI/ML; evaluated on cross-context few-shot settings, held-out cell lines, multiple assays, and double perturbations.",
+      "refs": ["https://arxiv.org/abs/2611.21959"]
+    },
+    {
+      "id": "05-st-fateflow-continuous-gene-spatial-reconstruction-with-differentiation-potential-learning",
+      "kind": "paper",
+      "title": "ST-FateFlow: Continuous Gene-Spatial Reconstruction with Differentiation-Potential Learning from Time-Resolved Spatial Transcriptomics",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.22256",
+      "arxiv_id": "2611.22256",
+      "arxiv_version": "v1",
+      "published": "2026-11-17T06:00:29Z",
+      "categories": ["q-bio.GN"],
+      "authors": ["Zhe Yu", "Xiaobo Sun", "Hao Wu"],
+      "themes": ["RNA & transcriptomics", "Omics & single-cell methods", "Quantitative methods"],
+      "abstract": "ST-FateFlow uses structure-aware transport coupling and flow matching to infer continuous gene-expression and spatial dynamics between unpaired spatial-transcriptomic snapshots.",
+      "claimed_contribution": "The authors report improved expression-distribution and spatial interpolation metrics and differentiation-associated orderings consistent with previously described trajectories.",
+      "unique_caveat": "It reconstructs missing states from public data rather than measuring lineage transitions; results depend on cross-time coupling, registration, and missing-state assumptions. The learned potential is not a fate probability or physical energy.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Primary q-bio.GN listing; tested computationally across three public developmental and regenerative spatial-transcriptomics datasets.",
+      "refs": ["https://arxiv.org/abs/2611.22256"]
+    },
+    {
+      "id": "06-deep-learning-based-multiparametric-quantitative-ultrasound-for-hepatic-steatosis-assessment",
+      "kind": "paper",
+      "title": "Deep Learning-based Multiparametric Quantitative Ultrasound for Hepatic Steatosis Assessment",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.11178",
+      "arxiv_id": "2611.11178",
+      "arxiv_version": "v2",
+      "published": "2026-11-08T06:41:34Z",
+      "updated": "2026-11-17T18:37:44Z",
+      "categories": ["physics.med-ph"],
+      "authors": ["Allison Lee", "Ahmed El Kaffas", "Aya Kamaya", "Jeremy J. Dahl", "Jihye Baek"],
+      "themes": ["Biomedical & translational medicine", "Medical physics & imaging", "Quantitative methods"],
+      "abstract": "A U-Net combines quantitative-ultrasound maps to estimate spatially resolved liver fat fraction against MRI-PDFF measurements.",
+      "claimed_contribution": "The authors report that H-scan, attenuation, and Nakagami inputs performed best, with Spearman correlation 0.92 and AUC 0.98 in this cohort.",
+      "unique_caveat": "The cohort is small and severe steatosis underrepresented; the authors call for larger, more diverse validation and direct assessment across liver lobes. This is not a validated screening or diagnostic test.",
+      "announcement_type": "revision",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Replacement revision in the 2026-11-18 batch; evaluated on ultrasound data from 30 people with healthy, suspected, or confirmed MASLD and compared with MRI-PDFF.",
+      "refs": ["https://arxiv.org/abs/2611.11178"]
+    },
+    {
+      "id": "07-diversity-preservation-recovers-transcription-factor-motifs-across-challenging-confounder-landscapes",
+      "kind": "paper",
+      "title": "Diversity Preservation Recovers Transcription Factor Motifs Across Challenging Confounder Landscapes",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.21859",
+      "arxiv_id": "2611.21859",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T20:23:15Z",
+      "categories": ["cs.NE", "q-bio.GN"],
+      "authors": ["Alejandro Medina", "Mary Lauren Benton"],
+      "themes": ["DNA & genomics", "Gene regulation & epigenetics", "Bioinformatics & sequence analysis"],
+      "abstract": "The study combines evolvable motif length with MAP-Elites diversity archives to recover transcription-factor motifs despite confounding sequences.",
+      "claimed_contribution": "The authors report that every MAP-Elites archive ranked the target first in at least 13 of 30 seeds per dataset, while the baseline never did so across three datasets.",
+      "unique_caveat": "Motif attribution remains difficult: HNF4A and JUND were not consistently ranked above close relatives across the full motif-width range.",
+      "announcement_type": "new submission (cross-listed)",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "q-bio.GN cross-list and evaluation on five liver ChIP-seq datasets, with comparisons against a survivor-selection baseline and MEME on the same sequences.",
+      "refs": ["https://arxiv.org/abs/2611.21859"]
+    },
+    {
+      "id": "08-hologene-learning-to-lift-sliced-spatial-transcriptomics-to-holistic-3d-gene-fields",
+      "kind": "paper",
+      "title": "HoloGene: Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.20368",
+      "arxiv_id": "2611.20368",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T00:58:29Z",
+      "categories": ["cs.LG", "q-bio.GN"],
+      "authors": ["Yumin Zheng", "Qingtian Zhu", "Ziyan Zhu", "Kailu Song", "Yinqiang Zheng", "Jun Ding"],
+      "themes": ["RNA & transcriptomics", "Omics & single-cell methods", "Quantitative methods"],
+      "abstract": "HoloGene uses an anisotropic conditional implicit neural representation to infer continuous three-dimensional gene-expression fields from pre-registered spatial-transcriptomics sections.",
+      "claimed_contribution": "The authors report improved reconstruction accuracy and biological-preservation metrics versus general-purpose implicit representations and spatial-transcriptomics baselines.",
+      "unique_caveat": "Unsampled tissue is inferred, not observed; the result depends on registration, sampling density, and the held-out-section evaluation design.",
+      "announcement_type": "new submission (cross-listed)",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "q-bio.GN cross-list; the arXiv record notes NeurIPS 2026, and the paper evaluates against held-out measured sections and adapted baselines.",
+      "refs": ["https://arxiv.org/abs/2611.20368"]
+    },
+    {
+      "id": "09-analysis-choices-can-produce-apparent-rich-club-differences-an-alzheimers-disease-eeg-case-study",
+      "kind": "paper",
+      "title": "Analysis choices can produce apparent rich-club differences: an Alzheimer's disease EEG case study",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.19708",
+      "arxiv_id": "2611.19708",
+      "arxiv_version": "v2",
+      "published": "2026-11-15T01:32:18Z",
+      "updated": "2026-11-17T08:02:34Z",
+      "categories": ["q-bio.QM", "q-bio.NC", "stat.ME"],
+      "authors": ["Kai-Wayne Liu", "Ryan Tian En Pang", "Pholpat Durongbhan"],
+      "themes": ["Biomedical & translational medicine", "Quantitative methods"],
+      "abstract": "An analysis of resting-state EEG shows how null-network construction and hub selection can change whether a rich-club group difference appears.",
+      "claimed_contribution": "The authors report that one of four pipelines produced an apparent group difference and did so in 43% of empirical pseudo-studies, while the other three were near the expected 5% rate.",
+      "unique_caveat": "This is a small EEG methodology case study, not molecular evidence or a diagnostic result; conclusions depend on the question each null model is designed to test.",
+      "announcement_type": "revision",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Accepted-manuscript replacement in the batch; the arXiv record links a Journal of Neuroscience Methods article and DOI 10.1016/j.jneumeth.2026.110927; analysis uses 20 people with Alzheimer's disease and 20 controls.",
+      "refs": ["https://arxiv.org/abs/2611.19708", "https://doi.org/10.1016/j.jneumeth.2026.110927"]
+    },
+    {
+      "id": "10-molecular-memory-reduces-timing-noise-in-stochastic-gene-expression",
+      "kind": "paper",
+      "title": "Molecular memory reduces timing noise in stochastic gene expression",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.22554",
+      "arxiv_id": "2611.22554",
+      "arxiv_version": "v1",
+      "published": "2026-11-17T10:43:07Z",
+      "categories": ["q-bio.MN", "cond-mat.stat-mech"],
+      "authors": ["Kuheli Biswas", "Supravat Dey", "Abhyudai Singh"],
+      "themes": ["RNA & transcriptomics", "Quantitative methods"],
+      "abstract": "Analytical calculations and stochastic simulations suggest that multistep mRNA production and degradation can reduce first-passage-time noise through different mechanisms.",
+      "claimed_contribution": "The authors derive small-noise-limit statistics and report simulation support, including qualitative persistence beyond that approximation's regime.",
+      "unique_caveat": "This is theoretical/model-based work with no biochemical or cellular experiment reported.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Primary q-bio.MN listing and a mechanistic link between RNA processing assumptions and timing variability in gene-expression models.",
+      "refs": ["https://arxiv.org/abs/2611.22554"]
+    },
+    {
+      "id": "11-optimising-recruitment-and-sample-allocation-in-multi-site-rare-disease-studies",
       "kind": "paper",
       "title": "Optimising Recruitment and Sample Allocation in Multi-Site Rare Disease Studies",
-      "rank": 9,
+      "rank": 11,
       "url": "https://arxiv.org/abs/2611.22907",
       "arxiv_id": "2611.22907",
       "arxiv_version": "v1",
       "published": "2026-11-17T15:11:13Z",
-      "categories": [
-        "q-bio.QM",
-        "math.OC"
-      ],
-      "authors": [
-        "Farid Zare",
-        "Catherine Clancy",
-        "Tal Dattner",
-        "Martina Messina",
-        "Julian Teinert",
-        "Jack McGoldrick",
-        "Pavel Ješina",
-        "Sabine Weller Grønborg",
-        "Ute Spiekerkoetter",
-        "James J O’Byrne",
-        "Trine Tangeraas",
-        "Maria Luz Couce",
-        "José A. Cocho",
-        "Javier de las Heras",
-        "Niklas Darin",
-        "Dorothea Möslinger",
-        "Peter Witters",
-        "Ina Knerr",
-        "Giancarlo La Marca",
-        "Ans T. van der Ploeg",
-        "Hidde H. Huidekoper",
-        "Terry G. J. Derks",
-        "Francjan J. van Spronsen",
-        "Sandra D. K. Kingma",
-        "Anibh M. Das",
-        "Carlo Dionisi-Vici",
-        "Clara D. van Karnebeek",
-        "Julia B. Hennermann",
-        "Siobhán O’Sullivan",
-        "Sabine A. Fuchs",
-        "Luciana Hannibal",
-        "M. Rebecca Heiner-Fokkema",
-        "Marek J. Noga",
-        "Irene M. L. W. Körver-Keularts",
-        "Katja Benedikte Prestø Elgstøen",
-        "George J. G. Ruijter",
-        "J. J. M. Jans",
-        "Amy Harms",
-        "Thomas Hankemeier",
-        "Maurizio Scarpa",
-        "Ines Thiele",
-        "Shamima Rahman",
-        "Stefan Kölker",
-        "Ronan M. T. Fleming"
-      ],
-      "themes": [
-        "Biomedical & translational medicine",
-        "Omics & single-cell methods",
-        "Quantitative methods"
-      ],
+      "categories": ["q-bio.QM", "math.OC"],
+      "authors": ["Farid Zare", "Catherine Clancy", "Tal Dattner", "Martina Messina", "Julian Teinert", "Jack McGoldrick", "Pavel Ješina", "Sabine Weller Grønborg", "Ute Spiekerkoetter", "James J. O'Byrne", "Trine Tangeraas", "Maria Luz Couce", "José A. Cocho", "Javier de las Heras", "Niklas Darin", "Dorothea Möslinger", "Peter Witters", "Ina Knerr", "Giancarlo La Marca", "Ans T. van der Ploeg", "Hidde H. Huidekoper", "Terry G. J. Derks", "Francjan J. van Spronsen", "Sandra D. K. Kingma", "Anibh M. Das", "Carlo Dionisi-Vici", "Clara D. van Karnebeek", "Julia B. Hennermann", "Siobhán O'Sullivan", "Sabine A. Fuchs", "Luciana Hannibal", "M. Rebecca Heiner-Fokkema", "Marek J. Noga", "Irene M. L. W. Körver-Keularts", "Katja Benedikte Prestø Elgstøen", "George J. G. Ruijter", "J. J. M. Jans", "Amy Harms", "Thomas Hankemeier", "Maurizio Scarpa", "Ines Thiele", "Shamima Rahman", "Stefan Kölker", "Ronan M. T. Fleming"],
+      "themes": ["Biomedical & translational medicine", "Quantitative methods", "Omics & single-cell methods"],
       "abstract": "A cardinality-optimisation framework allocates recruitment and metabolomic samples across sites while balancing yield, cost, capacity, and logistics.",
-      "claimed_contribution": "In simulated multi-centre scenarios for a project targeting 1,900 diagnosed patients across 24 centres and eight laboratories, the model maintained feasibility under constraints and reduced unconstrained metabolomic-analysis costs by about 30% versus heuristic baselines.",
-      "unique_caveat": "The evidence is simulation and operational modelling; it does not show that the allocation improves outcomes or recruitment in a completed clinical study.",
-      "refs": [
-        "https://arxiv.org/abs/2611.22907"
-      ]
+      "claimed_contribution": "In simulated multi-centre scenarios for a project targeting 1,900 diagnosed patients, the authors report maintained feasibility under tighter constraints and about 30% lower metabolomic-analysis cost in unconstrained comparisons.",
+      "unique_caveat": "The evidence is simulation and operational modelling; it does not show improved recruitment in a completed study or better patient outcomes.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Primary q-bio.QM listing and an explicit rare-disease study-design application spanning 24 centres and eight metabolomic laboratories.",
+      "refs": ["https://arxiv.org/abs/2611.22907"]
+    },
+    {
+      "id": "12-feedback-and-resource-competition-in-incoherent-feedforward-loops",
+      "kind": "paper",
+      "title": "Feedback and Resource Competition in Incoherent Feedforward Loops: When Is Cumulative Dose Ordering Preserved?",
+      "rank": 12,
+      "url": "https://arxiv.org/abs/2611.22710",
+      "arxiv_id": "2611.22710",
+      "arxiv_version": "v1",
+      "published": "2026-11-17T12:50:48Z",
+      "categories": ["q-bio.MN", "math.DS"],
+      "authors": ["Iva Janković", "Fabiana Calandra", "Giansimone Perrino", "Velia Siciliano", "Filippo Menolascina"],
+      "themes": ["RNA & transcriptomics", "Gene regulation & epigenetics", "Quantitative methods"],
+      "abstract": "The authors derive conditions under which biochemical feedback and resource competition change expression dynamics without reversing cumulative-dose ordering in incoherent feedforward-loop models.",
+      "claimed_contribution": "At one fixed joint fit, the authors report decreasing cumulative output over a 20–100 ng burden range, while showing that preserved ordering does not imply equal quantitative response.",
+      "unique_caveat": "The quantitative example is model- and fit-specific; the result is not experimental confirmation of a general biological law.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "evidence_for_ranking": "Primary q-bio.MN listing; combines mathematical comparison bounds with two fitted model examples involving translation blocking and RNA decay.",
+      "refs": ["https://arxiv.org/abs/2611.22710"]
     },
     {
       "id": "80-trending-research-themes",
@@ -362,14 +269,8 @@
       "title": "Trending Research Themes",
       "rank": null,
       "url": "",
-      "abstract": "Spatial transcriptomics, AI-assisted molecular discovery, mechanistic modelling, and robustness under confounding recur across the selected corpus.",
-      "refs": [
-        "https://arxiv.org/abs/2611.22256",
-        "https://arxiv.org/abs/2611.20368",
-        "https://arxiv.org/abs/2611.22230",
-        "https://arxiv.org/abs/2611.21959",
-        "https://arxiv.org/abs/2611.21859"
-      ]
+      "abstract": "Sparse-measurement reconstruction, AI-assisted prediction linked to biological measurements, robust inference under confounding, and mechanistic modeling recur in this selected batch.",
+      "refs": ["https://arxiv.org/abs/2611.22256", "https://arxiv.org/abs/2611.20368", "https://arxiv.org/abs/2611.22988", "https://arxiv.org/abs/2611.21959", "https://arxiv.org/abs/2611.21859", "https://arxiv.org/abs/2611.22554", "https://arxiv.org/abs/2611.22710"]
     },
     {
       "id": "81-open-problems-and-research-directions",
@@ -377,13 +278,8 @@
       "title": "Open Problems and Research Directions",
       "rank": null,
       "url": "",
-      "abstract": "The selected papers support follow-up work on prospective spatial validation, independent replication of AI-generated molecular proposals, and transferability stress tests.",
-      "refs": [
-        "https://arxiv.org/abs/2611.22256",
-        "https://arxiv.org/abs/2611.20368",
-        "https://arxiv.org/abs/2611.22230",
-        "https://arxiv.org/abs/2611.22988"
-      ]
+      "abstract": "The selected papers support prospective validation of reconstructed spatial dynamics, transfer tests for fermentation and ultrasound models, independent replication of AI-generated biology proposals, and cohort replication for EEG pipeline sensitivity.",
+      "refs": ["https://arxiv.org/abs/2611.22256", "https://arxiv.org/abs/2611.20368", "https://arxiv.org/abs/2611.21775", "https://arxiv.org/abs/2611.11178", "https://arxiv.org/abs/2611.22988", "https://arxiv.org/abs/2611.22230", "https://arxiv.org/abs/2611.19708"]
     },
     {
       "id": "90-takeaway",
@@ -391,8 +287,8 @@
       "title": "Takeaway",
       "rank": null,
       "url": "",
-      "abstract": "The clearest cluster is computational biology that reconstructs, predicts, or optimises biological systems, with limited but meaningful wet-lab validation.",
-      "refs": []
+      "abstract": "The batch is led by computational biology that predicts perturbations or fills gaps in sparse measurements, but its strongest empirical anchors remain bounded cell, fermentation, ultrasound-cohort, and previously published mouse studies.",
+      "refs": ["https://arxiv.org/abs/2611.22988", "https://arxiv.org/abs/2611.21775", "https://arxiv.org/abs/2611.11178", "https://arxiv.org/abs/2611.22230"]
     }
   ]
 }

@@ -4,70 +4,70 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-19 01:42 UTC |
+| Snapshot time (UTC) | 2026-11-19 17:35 UTC |
 | Scope | Daily |
 | Date range | 2026-11-19 through 2026-11-19 |
-| Ranking basis | Daily GitHub Trending star gains |
+| Ranking basis | GitHub Trending daily star gains; selected 10 highest gains from the live daily page |
 
 ## Headline
 
-Agent-oriented development dominates today's strongest signals: PaperOrchestra leads the listed repos, while agent skills, harnesses, and software-facing CLIs account for much of the rest. Research automation and self-hosted developer infrastructure provide notable adjacent themes.
+Coding-agent workflows and skills dominate today's high-growth repositories, led by Superpowers and Claude-BugHunter. The other strong thread is tooling that gives agents structured access to software and the web, especially CLI-Anything and Firecrawl.
 
 ## Top Repositories
 
-1. **[google-research/paper-orchestra](https://github.com/google-research/paper-orchestra) - A multi-agent pipeline that turns research ideas and experiment logs into LaTeX papers, including literature synthesis and visuals.**
+1. **[obra/superpowers](https://github.com/obra/superpowers) - An agentic skills framework and software-development methodology for coding agents.**
 
-  **Language:** Python | **Stars gained in window:** +1,524 | **Total stars:** 4,321 | **Why notable:** It leads this snapshot by daily star gain and exemplifies specialized-agent orchestration for research writing.
+  **Language:** Shell | **Stars gained in window:** +2,029 | **Total stars:** 321,866 | **Why notable:** It leads today's sampled daily gains; its README describes a staged workflow from specification and design through implementation planning, TDD, and subagent-driven development.
 
-2. **[affaan-m/ECC](https://github.com/affaan-m/ECC) - An agent-harness optimization system spanning skills, memory, security, and research-first development across coding agents.**
+2. **[elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) - A Claude Code skill bundle for bug hunting and authorized red-team work.**
 
-  **Language:** JavaScript | **Stars gained in window:** +1,108 | **Total stars:** 306,542 | **Why notable:** Its second-place daily gain underscores demand for reusable agent harnesses and operational tooling.
+  **Language:** Python | **Stars gained in window:** +1,353 | **Total stars:** 12,132 | **Why notable:** The second-largest gain in this snapshot, with a first-party README describing vulnerability-focused skills, disclosed-report patterns, and reporting/scope-hygiene practices.
 
-3. **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) - An AI-agent research skill that gathers current signals from social, video, news, and web sources into a grounded summary.**
+3. **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) - An agent skill that researches recent topics across social, video, community, and web sources.**
 
-  **Language:** Python | **Stars gained in window:** +1,059 | **Total stars:** 70,047 | **Why notable:** Strong momentum for cross-platform research synthesis, with engagement signals used to rank source material.
+  **Language:** Python | **Stars gained in window:** +952 | **Total stars:** 70,645 | **Why notable:** Its README frames cross-platform search and engagement-based ranking as an agent workflow, a notable bridge between research and coding-agent ecosystems.
 
-4. **[obra/superpowers](https://github.com/obra/superpowers) - A composable skills framework and software-development methodology for coding agents.**
+4. **[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) - “Making ALL Software Agent-Native,” with a community CLI hub.**
 
-  **Language:** Shell | **Stars gained in window:** +822 | **Total stars:** 321,344 | **Why notable:** The README describes a workflow from requirements and approved design through planning, TDD, and subagent-driven implementation.
+  **Language:** Python | **Stars gained in window:** +899 | **Total stars:** 60,369 | **Why notable:** It channels strong momentum into the idea of making existing software callable by agents through reusable command-line harnesses and a browseable/installable hub.
 
-5. **[sveltejs/svelte](https://github.com/sveltejs/svelte) - A JavaScript framework for building web interfaces.**
+5. **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) - Web search, scraping, and data access infrastructure for agents.**
 
-  **Language:** JavaScript | **Stars gained in window:** +692 | **Total stars:** 89,627 | **Why notable:** A mainstream frontend framework is among the day's strongest non-agent signals.
+  **Language:** TypeScript | **Stars gained in window:** +795 | **Total stars:** 203,875 | **Why notable:** It is the leading web-data infrastructure signal in this sample; its README highlights search, scrape, crawl, interaction, and agent/MCP access.
 
-6. **[getarcaneapp/arcane](https://github.com/getarcaneapp/arcane) - Modern Docker management designed for general users.**
+6. **[mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) - A playbook and pre-submission guard for app-store requirements.**
 
-  **Language:** Go | **Stars gained in window:** +547 | **Total stars:** 9,828 | **Why notable:** It represents continued interest in approachable self-hosted container operations.
+  **Language:** Shell | **Stars gained in window:** +542 | **Total stars:** 1,662 | **Why notable:** It packages policy and release-checklist knowledge into a tool that can also be used by AI coding agents.
 
-7. **[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) - A toolkit for making software usable by agents through generated command-line interfaces.**
+7. **[XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3) - A general-purpose download manager.**
 
-  **Language:** Python | **Stars gained in window:** +389 | **Total stars:** 59,783 | **Why notable:** Its CLI-Hub and software-specific harnesses push the agent trend beyond coding into interaction with existing applications.
+  **Language:** Python | **Stars gained in window:** +449 | **Total stars:** 12,496 | **Why notable:** It is a high-growth end-user utility, a counterpoint to the otherwise agent-heavy sample.
 
-8. **[google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) - Agent Skills for Google's Stitch MCP server, designed to work across compatible coding agents.**
+8. **[cursor/plugins](https://github.com/cursor/plugins) - Cursor's plugin specification and official plugins.**
 
-  **Language:** TypeScript | **Stars gained in window:** +365 | **Total stars:** 10,412 | **Why notable:** It reflects the spread of portable skill packages and MCP-connected design workflows.
+  **Language:** TypeScript | **Stars gained in window:** +383 | **Total stars:** 17,483 | **Why notable:** The official catalog's daily gain is a direct signal of demand for extensible editor-agent integrations.
 
-9. **[n8n-io/n8n](https://github.com/n8n-io/n8n) - A fair-code workflow automation platform with AI capabilities, integrations, and self-hosted or cloud operation.**
+9. **[cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) - Editorial diagram patterns for coding-agent tools, implemented with HTML and SVG.**
 
-  **Language:** TypeScript | **Stars gained in window:** +325 | **Total stars:** 211,099 | **Why notable:** It shows sustained pull for visual automation that can combine AI and conventional integrations.
+  **Language:** HTML | **Stars gained in window:** +332 | **Total stars:** 68,494 | **Why notable:** Its focused design-tooling approach shows a practical creative-workflow niche alongside agent infrastructure.
 
-10. **[cursor/plugins](https://github.com/cursor/plugins) - The Cursor plugin specification and official plugins.**
+10. **[google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) - Agent Skills for working with Google's Stitch MCP server.**
 
-  **Language:** TypeScript | **Stars gained in window:** +314 | **Total stars:** 17,224 | **Why notable:** Another concrete ecosystem signal for packaging agent and editor capabilities as installable plugins.
+  **Language:** TypeScript | **Stars gained in window:** +303 | **Total stars:** 10,634 | **Why notable:** It connects an agent-skills format to a design tool and explicitly targets compatibility across multiple coding-agent hosts.
 
 ## Trending Technologies and Themes
 
-- **Agent workflows and reusable capabilities:** PaperOrchestra, ECC, Superpowers, Stitch Skills, and Cursor Plugins show interest in multi-agent pipelines, harnesses, shared skills, and plugin ecosystems.
-- **Agents operating across software and information sources:** CLI-Anything targets software interfaces, while last30days-skill unifies research across platforms; both extend agents beyond code completion.
-- **Self-hosted and visual automation:** Arcane focuses on Docker management and n8n on integrated workflow automation, balancing the agent-centered projects with practical infrastructure tools.
-- **Languages:** Python and TypeScript lead the selected set with three repositories each; JavaScript appears twice, while Go and Shell appear once each. Language labels are GitHub's primary-language values.
+- **Coding-agent skills and workflows:** Superpowers, Claude-BugHunter, last30days-skill, cursor/plugins, app-store-compliance, and stitch-skills package procedures, integrations, research, or domain knowledge for agent environments. Superpowers and Claude-BugHunter have the two largest gains in this selected set.
+- **Agent access to software and information:** CLI-Anything makes existing software more callable through command-line harnesses; Firecrawl supplies search, scrape, crawl, and interaction capabilities; last30days-skill aggregates information sources into an agent research workflow.
+- **Design and user-facing utilities remain in the mix:** diagram-design and stitch-skills represent design workflows, while Ghost-Downloader-3 is a fast-rising conventional utility rather than an agent framework.
+- **Languages:** Python leads this ten-repository sample (4), followed by TypeScript (3), Shell (2), and HTML (1). These counts describe only the selected repositories, not all of GitHub.
 
 ## Takeaway
 
-Today's snapshot points to an ecosystem shift from standalone coding assistants toward the surrounding systems: reusable skills, agent harnesses, multi-agent workflows, and interfaces that let agents act on existing tools. Traditional frontend and automation projects still attract meaningful daily interest, but the clearest concentration is in making agents more capable and deployable.
+Today's strongest signal is that agent tooling is moving from prompt collections toward repeatable workflows, specialized skills, and practical interfaces to software and information sources. The gains are not confined to new agent frameworks: editor ecosystems, security workflows, web-data infrastructure, and conventional utilities are also attracting substantial attention.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - daily](https://github.com/trending?since=daily).
-- **Corroboration:** GitHub REST API repository and default-branch commit endpoints checked for all ten entries; GitHub Search API also queried for recently created, highly starred repositories (created on or after 2026-11-12, stars >=300).
-- **Method note:** Repositories were ranked by the daily star-gain values shown on GitHub Trending. Total stars, primary languages, descriptions, and default-branch commit SHAs were cross-checked through the REST API. The Search API query was a separate freshness/discovery check, not the source of the daily ranking. No prior-window comparison was available, so no shift claim is made.
+- **Primary source:** [GitHub Trending - repositories today](https://github.com/trending?since=daily), read 2026-11-19 at 17:35 UTC. Daily gains and total stars are the values displayed on that page at capture time.
+- **Corroboration:** GitHub Search API (`/search/repositories`) queries for the five narration-priority repositories, plus GitHub REST repository and default-branch commit endpoints for all ten listed repositories. Repository names, language, star totals, fork status, push time, and current default-branch commit were checked. API star totals can move between reads; listed totals preserve the Trending-page snapshot.
+- **Method note:** The ten entries are ranked by the daily star-gain values visible on GitHub Trending, not by repository age or total stars. First-party README content was reviewed for the five narration-priority projects. No prior-window comparison was used, and no Notable Shifts section is included.

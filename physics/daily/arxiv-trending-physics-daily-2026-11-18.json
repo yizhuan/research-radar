@@ -1,0 +1,359 @@
+{
+  "schema": "arxiv-trending-physics/v1",
+  "category": "daily",
+  "window": {
+    "start": "2026-11-16T19:00:00Z",
+    "end": "2026-11-17T19:00:00Z",
+    "announcement_batch_date": "2026-11-18",
+    "snapshot_utc": "2026-11-19T01:35:24Z"
+  },
+  "date": "2026-11-18",
+  "title": "arXiv physics daily — 18 November 2026",
+  "global_caveat": "arXiv has no official trending chart; ordering is inferred from early attention and checkable scientific signals, and citation evidence is limited for very recent papers. This shortlist is not comprehensive.",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-18.md",
+  "entry_count": 7,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "AI Scientist Discovered Robust Quantum Control",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.21765",
+      "arxiv_id": "2611.21765",
+      "arxiv_version": 1,
+      "published": "2026-11-16T19:01:34Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": [
+        "Jiahao Yan",
+        "Xuanying Lai",
+        "Xiaoshui Lin",
+        "Yizhou Wang",
+        "Changyu Yao",
+        "Guanghui He",
+        "Thomas Lewer",
+        "Chong Zu",
+        "Chuanwei Zhang"
+      ],
+      "themes": [
+        "Quantum information",
+        "Atomic, molecular & optical physics",
+        "Computational & data methods"
+      ],
+      "abstract": "Protecting quantum coherence is a central theme of modern quantum technologies. Carefully designed control pulses can extend coherence by suppressing disorder and unwanted interactions. However, designing robust pulse sequences remains challenging in interacting multi-level systems, where multiple independent error channels must be controlled in the presence of experimental imperfections. Here we introduce QORA, a multi-agent artificial intelligence framework that integrates theoretical reasoning, automated experimental calibration and control for closed-loop discovery of quantum control sequences. Applied to a dense ensemble of spin-1 nitrogen-vacancy centers in diamond, QORA discovers AID-ROD, a series of AI-discovered sequences that nearly double the measured spin coherence time relative to the state-of-the-art human-designed sequence DROID-C3PO. Subsequence analysis by human researchers reveals a hierarchy of error suppression: 18-pulse blocks suppress linear and quadratic onsite disorder and common-mode drive-amplitude errors, while their arrangement over a longer cycle reduces dipolar interactions, providing a physical explanation for the observed improvement and robustness in AID-ROD. These results demonstrate AI-guided experimental discovery of robust quantum control and identify a design strategy for protecting coherence in interacting multi-level systems beyond qubits.",
+      "claimed_result": "Authors report QORA-discovered AID-ROD-1 gives T2=18.6±0.7 μs versus 9.8±1.1 μs for DROID-C3PO on their spin-1 NV ensemble.",
+      "evidence_type": "experimental; closed-loop optical/microwave coherence measurements and sequence simulations",
+      "unique_caveat": "Single NV ensemble/platform; transfer to other Hamiltonians is untested, and human researchers interpreted the mechanism.",
+      "ranking_basis": "Early discussion/indexing on INSPIRE and specialist paper-summary sites, plus a direct measured coherence comparison; outside material is not independent replication.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "comment": "6 pages, 3 figures",
+      "journal_ref": null,
+      "doi": null,
+      "refs": [
+        "https://arxiv.org/abs/2611.21765",
+        "https://inspirehep.net/literature/3230218",
+        "https://qubitsok.com/papers/2611.21765",
+        "https://pith.science/paper/2611.21765"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Magic state cultivation with lattice-surgery escape on superconducting hardware",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.22035",
+      "arxiv_id": "2611.22035",
+      "arxiv_version": 1,
+      "published": "2026-11-17T00:56:04Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": [
+        "Haoran Liao",
+        "Michael Schutzman",
+        "William Munizzi",
+        "Pranav Mundada",
+        "Gavin Hartnett",
+        "Yuval Baum"
+      ],
+      "themes": [
+        "Quantum information",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Magic state cultivation (MSC) is a low-overhead protocol for fault-tolerantly preparing logical magic states. In this work, we implement two MSC variants to prepare a magic state in a distance-5 code on a publicly available IBM Nighthawk processor. The first is a lattice-surgery escape, recently proposed by Hirano et al. and experimentally studied here for the first time. The second is a grafting escape, previously demonstrated by Rosenfeld et al., and extended here by incorporating a switch into a matchable code. Both protocols begin with fault-tolerant cultivation of a T state on a color code, followed by an escape into a larger code. We decode the results using minimum-weight perfect matching or Tesseract on circuit-level error models calibrated to the hardware noise. Compared with the previous experiment, our cultivated T state achieves a logical error probability of 2e-5 at the T-state injection angle, nearly 10x lower with about 3x the retainment. Moreover, our execution of the grafting escape has a 2x lower logical error rate per stabilizer round at a higher retainment. When comparing the two protocols under identical execution conditions and complementary gap postselection based on decoder confidence, lattice-surgery escape into the surface code preserves a T-state fidelity above 0.99 ten rounds after escape at about 5% retainment. By contrast, matchable-switched grafting drops below 0.95 fidelity at comparable retainment. Furthermore, the lattice-surgery escape reaches a logical error rate per stabilizer round of about 0.14% with around 11% average shot retainment. These results establish lattice-surgery escape as a practical MSC protocol that benefits from a direct transition into a surface code, and demonstrate the lowest MSC error and the highest surface-code magic-state fidelity reported to date, advancing the experimental realization of fault-tolerant non-Clifford gadgets.",
+      "claimed_result": "Authors report 2×10^-5 cultivated-state logical error before escape and 0.991(2) fidelity after ten surface-code rounds at 4.6% retainment; per-round error about 0.14%.",
+      "evidence_type": "experimental; distance-5 code execution on IBM Nighthawk with calibrated decoding and postselection",
+      "unique_caveat": "Stops at distance 5; ten-round fidelity uses 4.6% retainment, and authors note calibrated-noise simulations underestimate absolute error rates.",
+      "ranking_basis": "Quantum Zeitgeist and Quantum.world covered the release; Q-CTRL is the primary-source company account. First experimental lattice-surgery escape and matched comparison against grafting are concrete signals.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "comment": "9 pages, 7 figures (main text) + 10 pages, 8 figures (supplementary)",
+      "journal_ref": null,
+      "doi": null,
+      "refs": [
+        "https://arxiv.org/abs/2611.22035",
+        "https://quantumzeitgeist.com/q-ctrl-magic-states-ibm-quantum/",
+        "https://quantum.world/news/q-ctrl-magic-states-ibm-nighthawk",
+        "https://q-ctrl.com/blog/cultivating-record-fidelity-magic-states-with-lattice-surgery-on-publicly-accessible-ibm-quantum-computers"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "oMEGACat-JWST I.: Project description and photometric data release",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.23150",
+      "arxiv_id": "2611.23150",
+      "arxiv_version": 1,
+      "published": "2026-11-17T18:03:37Z",
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "authors": [
+        "Maximilian Häberle",
+        "Callie Clontz",
+        "Massimo Griggio",
+        "Mattia Libralato",
+        "Isabella Carlton",
+        "Stefano Souza",
+        "Nadine Neumayer",
+        "Anil Seth",
+        "Peter J. Smith",
+        "Jay Anderson",
+        "Mayte Alfaro-Cuello",
+        "Holger Baumgardt",
+        "Luigi R. Bedin",
+        "Andrea Bellini",
+        "Steven Chen",
+        "James E. Davies",
+        "Anna de Graaff",
+        "Jeremy Hare",
+        "Oleg Kargaltsev",
+        "Kameron Goold",
+        "Michele Scalco",
+        "Zixian Wang",
+        "Matthew Whitaker"
+      ],
+      "themes": [
+        "Astrophysics",
+        "Instrumentation & detectors",
+        "Computational & data methods"
+      ],
+      "abstract": "Omega Centauri (NGC 5139, $ω$ Cen) is the most massive globular cluster in the Milky Way and the likely stripped nucleus of an accreted dwarf galaxy. Extensive HST observations have uncovered many of its peculiar features, including complex subpopulations and kinematic evidence for an intermediate-mass black hole via central fast-moving stars. High-precision astrometric follow-up is essential to constrain the orbits of these stars. We present oMEGACat-JWST, a deep photometric and astrometric catalog of $ω$ Cen's core and surroundings that extends our previous oMEGACat efforts to near-infrared wavelengths. The superior sensitivity and angular resolution of the James Webb Space Telescope (JWST) provide significant astrometric and photometric improvements, particularly for faint stars. Our catalog is based on a custom reduction of NIRCam and NIRISS imaging across three JWST programs extending out to two half-light radii (10'). In total, our catalog contains approximately 677 000 sources. In the region overlapping with oMEGACat, we achieve high relative completeness (> 90% of HST sources recovered) while detecting over 86 000 new sources below HST's detection limit. Astrometric tests demonstrate a single-image precision as good as 0.5% of a NIRCam pixel (0.15 mas) at mF115W=18; at mF115W=23 the precision is still 1 mas. Color-magnitude diagrams based on our data show the well-known split between the primordial Helium and the Helium enriched populations and are particularly sensitive to light-element (CNO) variations of faint stars. oMEGACat-JWST provides the most complete photometric catalog of $ω$ Cen's core to date. Combined with HST data, it enables multi-wavelength subpopulation analyses. Together with future monitoring observations, its high astrometric precision will improve our understanding of the kinematics of the central fast-moving stars in $ω$ Cen.",
+      "claimed_result": "Authors report a 677,000-source Omega Centauri catalog, >86,000 sources below the HST detection limit, and 0.15 mas single-image astrometric precision at F115W=18.",
+      "evidence_type": "observational; JWST NIRCam/NIRISS imaging reductions compared with HST catalog",
+      "unique_caveat": "This first monitoring epoch does not yet support the planned search for astrometric accelerations; field is Omega Centauri and surroundings.",
+      "ranking_basis": "Large catalog/data release across three JWST programs, two astrophysics cross-lists, submission to Astronomy & Astrophysics, and early astronomy reporting.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "comment": "16 pages, 11 Figures; Submitted to Astronomy and Astrophysics",
+      "journal_ref": null,
+      "doi": null,
+      "refs": [
+        "https://arxiv.org/abs/2611.23150",
+        "https://www.bioscience.com.pk/en/subject/astronomy/omegacat-jwst-i-project-description-and-photometric-data-release"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "An Efficient Method for Directly Integrating the Vlasov Equation in Collisionless and Weakly-Collisional Simulations",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.23084",
+      "arxiv_id": "2611.23084",
+      "arxiv_version": 1,
+      "published": "2026-11-17T17:09:37Z",
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.HE",
+        "astro-ph.IM",
+        "physics.plasm-ph"
+      ],
+      "authors": [
+        "Philip F. Hopkins"
+      ],
+      "themes": [
+        "Computational & data methods",
+        "Astrophysics",
+        "Plasma & fluid physics"
+      ],
+      "abstract": "We describe and test a new numerical method to solve the Vlasov/Boltzmann equation in systems with arbitrary levels of collisionality. The method combines recent ideas to evolve the distribution function (DF) directly in 6+1 dimensional phase-space in a manner which is Lagrangian in both position+velocity. The 'particles' of traditional Monte-Carlo/Particle-In-Cell/N-body (MC/PIC/NB) methods become mesh-generating points defining a volume partition, each of which carries a set of momentum-Lagrangian basis functions representing a local anisotropic momentum DF. The DF is then integrated between cells and bases via a higher-order reconstruction and Godunov-type method, evolving a 10 or 13-moment representation of each basis to ensure manifest mass/momentum/energy conservation. The method allows one to represent arbitrary DFs, including multiple independent streams but also collisional or phase-mixed or thermal distributions (unlike traditional 'moments' or waterbag/tessellation methods), and the cost is bounded to a modest multiplier of MC/PIC/NB costs. We provide an example implementation which uses a spatially-Lagrangian volume partition, second-order reconstruction, and simple set of bases which ensure constant cell masses and couple directly to existing MC/PIC/NB machinery, made public in the code GIZMO. We validate in a series of test problems, demonstrating manifest conservation, Galilean and translation and rotation invariance, and ability to represent complex DFs without spurious dissipation or instability. We discuss applications where this method can have advantages compared to traditional algorithms for simulations of dark matter, stellar, weakly-collisional neutral gas, and particulate/dust dynamics; multiphase/polydisperse flows; cosmic ray and radiation transport/hydrodynamics; and plasma physics.",
+      "claimed_result": "Author reports a conservative 6+1D phase-space Vlasov scheme, public GIZMO implementation, and validation on test problems.",
+      "evidence_type": "computational; numerical tests and public GIZMO implementation",
+      "unique_caveat": "Broad astrophysics/plasma applications remain prospective; validation described is a test-problem suite, not production-scale demonstrations across all regimes.",
+      "ranking_basis": "Four-way cross-listing spanning cosmology, high-energy astrophysics, instrumentation/methods, and plasma physics; public GIZMO implementation and test suite; submitted to Open Journal of Astrophysics.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "comment": "31 pages, 20 figures, submitted to the Open Journal of Astrophysics. Comments welcome. Implementation in the public GIZMO code available at http://www.tapir.caltech.edu/~phopkins/Site/GIZMO.html",
+      "journal_ref": null,
+      "doi": null,
+      "refs": [
+        "https://arxiv.org/abs/2611.23084",
+        "http://www.tapir.caltech.edu/~phopkins/Site/GIZMO.html"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Frequency Multiplexing of Purcell-Enhanced Optically Coherent NV Centers",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.23046",
+      "arxiv_id": "2611.23046",
+      "arxiv_version": 1,
+      "published": "2026-11-17T16:44:46Z",
+      "categories": [
+        "quant-ph",
+        "physics.optics"
+      ],
+      "authors": [
+        "Alok Gokhale",
+        "Marco E. Stucki",
+        "Malo Bezard",
+        "Maarten H. van der Hoeven",
+        "Kilian Unterguggenberger",
+        "Gregor Pieplow",
+        "Tommaso Pregnolato",
+        "Julian M. Bopp",
+        "Laura Orphal-Kobin",
+        "Tim Schröder"
+      ],
+      "themes": [
+        "Quantum information",
+        "Atomic, molecular & optical physics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Integrating optically coherent quantum emitters into nanophotonic structures is key to scalable quantum networks. Realizing them with nitrogen-vacancy (NV) centers in diamond is hindered by the degradation of optical coherence accompanying nanofabrication. Here, we overcome this challenge by integrating multiple NV centers into a monolithic diamond photonic crystal nanocavity while preserving near-lifetime-limited optical coherence. We observe linewidths as narrow as 19 MHz, enabling the frequency multiplexing of spectrally distinct NV centers within a common cavity mode, while maintaining charge-state stability over several minutes under resonant excitation. Tuning the cavity into resonance with the NV zero-phonon line enhances the optical emission, consistent with Purcell enhancement predicted by finite-element simulations. Additionally, individual cavities can be independently brought into resonance with NV zero-phonon lines on the same chip. These results combine bulk-like optical coherence with frequency multiplexing and cavity-enhanced emission, establishing a scalable nanophotonic platform for NV-based quantum network nodes.",
+      "claimed_result": "Authors report optical linewidths down to 19 MHz, charge stability over minutes, and 16.8(1.4)% increased zero-phonon-line photoluminescence when cavity-tuned.",
+      "evidence_type": "experimental; photoluminescence and PLE on NV centers in a Sawfish diamond cavity at about 5 K, supported by finite-element simulations",
+      "unique_caveat": "Ensemble emission enhancement is expected by the authors to be dominated by favorably positioned/oriented emitters; photon extraction remains a next step.",
+      "ranking_basis": "Cross-listed in quantum physics and optics; quantitative linewidth and multi-emitter multiplexing measurements connect quantum information and nanophotonics.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "comment": "21 pages, 15 figures",
+      "journal_ref": null,
+      "doi": null,
+      "refs": [
+        "https://arxiv.org/abs/2611.23046",
+        "https://qubitsok.com/papers/2611.23046"
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "Atomic-scale Imaging of Time Reversal Breaking Supercurrents in $\\mathrm{Bi_2Sr_2CaCu_2O_8}$",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.23060",
+      "arxiv_id": "2611.23060",
+      "arxiv_version": 1,
+      "published": "2026-11-17T16:53:28Z",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "authors": [
+        "Bin Hu",
+        "Catherine Dawson",
+        "Shuqiu Wang",
+        "Siyuan Wan",
+        "Huiyu Zhao",
+        "Kuanysh Zhussubekov",
+        "S. Ishida",
+        "Hiroshi Eisaki",
+        "Peter J. Hirschfeld",
+        "Jonathan Ward",
+        "J. C. Séamus Davis"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Computational & data methods"
+      ],
+      "abstract": "A persistent mystery of CuO_2-based high temperature superconductivity has been the mechanism and consequences of time reversal ($\\mathcal{T}$)-symmetry breaking. Although theoretical hypotheses focus upon persistent electronic currents as a potential cause, these have been invisible to direct experimental probes. That impasse has recently been removed by development of techniques for atomic-scale supercurrent visualization. Here, by imaging the energy-resolved density of electronic states $N(r,E)$ in $\\mathrm{Bi_2Sr_2CaCu_2O_8}$, we search for the specific signatures of flowing supercurrents in a disordered $d$-wave superconductor. Employing the strategy of artificial neural networks (ANN) for complex quantum matter visualization, we designed a dual-ANN (VMAP) to efficiently implement $d$-wave supercurrent visualization, achieving imaging of supercurrent speeds $V(r)$ at magnetic fields $|B| \\leq μT$ in $\\mathrm{Bi_2Sr_2CaCu_2O_8}$. Correspondence between specific characteristics of $N(r,E)$ around each supercurrent loop and a quantum \"Rosetta Stone\" which translates $N(r,E)$ to $V(r)$, emphasizes the validity of $V(r)$ detection and visualization. Then, for hole-densities 0.17 $\\leq p \\leq$ 0.22 we observe statistically repeatable networks of supercurrent flows. Crucially, these supercurrents satisfy Kirchhoff's law at junctions within each network. Further, theoretical predictions for supercurrent speeds $V$ in disordered $d$-wave superconductors are consistent with measured 1250 m/s $< V <$ 4000 m/s, and with reported magnetic field amplitudes $|B| \\approx$ 0.1 mT Thus, detection and visualization of these supercurrent loop networks provides unique perspectives on $\\mathcal{T}$-symmetry breaking in cuprates. It also emphasizes the accelerating utility of ANN techniques for physics discovery from high data volume quantum matter research.",
+      "claimed_result": "Authors infer current loops satisfying Kirchhoff’s law and speeds of 1,250–4,000 m/s, consistent with their theoretical comparison.",
+      "evidence_type": "experimental; energy-resolved electronic density-of-states imaging interpreted with dual-ANN VMAP and checked against theory",
+      "unique_caveat": "Current maps depend on neural-network translation from spectra to flow; claim is limited to Bi2Sr2CaCu2O8 and p=0.17–0.22 and needs complementary validation.",
+      "ranking_basis": "Concrete experimental claim on a long-standing cuprate question and a cross-method link between spectroscopy and neural inference; no independent coverage found in this search.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "comment": "51 pages, 4 main figures, 10 extended data figures, 2 supplementary figures, 2 supplementary tables, 3 supplementary movies",
+      "journal_ref": null,
+      "doi": null,
+      "refs": [
+        "https://arxiv.org/abs/2611.23060"
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "Demonstration of a Qubit Control Scheme Compatible with Superconducting Digital Signals",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.22166",
+      "arxiv_id": "2611.22166",
+      "arxiv_version": 1,
+      "published": "2026-11-17T03:58:03Z",
+      "categories": [
+        "quant-ph"
+      ],
+      "authors": [
+        "Chenyin Sun",
+        "Yu Xu",
+        "Zihua Chen",
+        "Dayu Li",
+        "Tianzuo Sun",
+        "Chen Zha",
+        "Yuan Li",
+        "Jin Lin",
+        "Lei Jiang",
+        "Tao Rong",
+        "Tao Jiang",
+        "Shaoyu Zhan",
+        "Xueshen Wang",
+        "Shijian Wang",
+        "Wenhui Cao",
+        "Yeru Wang",
+        "Xiaomin Wang",
+        "Ming Gong",
+        "Yulin Wu",
+        "Yuhuai Li",
+        "Gang Wu",
+        "Hui Deng",
+        "Kai Yan",
+        "Sirui Cao",
+        "Futian Liang",
+        "Fusheng Chen",
+        "Qingling Zhu",
+        "Yangsen Ye",
+        "Hao Rong",
+        "Shaojun Guo",
+        "Haoran Qian",
+        "Haibin Zhang",
+        "Yisen Hu",
+        "Shaowei Li",
+        "Jinjin Li",
+        "Cheng-Zhi Peng",
+        "Xiaobo Zhu",
+        "Jian-Wei Pan"
+      ],
+      "themes": [
+        "Quantum information",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Superconducting quantum computing faces a critical scalability bottleneck arising from the escalating complexity of traditional analog control infrastructure. Single-Flux-Quantum(SFQ) systems operate at cryogenic temperatures and offer a potential route to addressing these challenges. Using microwave signals at qubit-dependent frequencies to trigger SFQ pulses requires many independent analog microwave sources, limiting the potential to reduce control wiring and increase integration density. A scalable SFQ control system therefore needs a scheme that can address qubits with different transition frequencies using a common clock. Here, we propose and experimentally demonstrate a control scheme for implementing both single- and two-qubit gates. The scheme uses guiding waveforms to rapidly generate bipolar high-speed pulse sequences on a common clock, providing a basis for future implementation in SFQ control systems. Numerically, this scheme achieves a simulated fidelity of 99.99% for 40ns $R(\\varphi, \\fracπ{2})$ gates with arbitrary initial phases and 99.9% for 100ns controlled-Z(CZ) gates. Experimentally, by utilizing an arbitrary waveform generator(AWG) operated at a fixed sampling rate of 25GSa/s to deliver the bipolar high-speed pulse sequences, we successfully demonstrate 40ns single-qubit gates with an average gate fidelity of 99.94% estimated using cross-entropy benchmarking(XEB) and 120ns CZ gates with 99.63% fidelity. These results demonstrate the feasibility of common-clock encoded pulse control for both single- and two-qubit gates.",
+      "claimed_result": "Authors report 40 ns single-qubit gates at 99.94% average fidelity and 120 ns CZ gates at 99.63%, using common-clock encoded pulses.",
+      "evidence_type": "experimental; 25 GSa/s AWG pulse delivery and XEB, alongside separate numerical estimates",
+      "unique_caveat": "The experiment uses an AWG to generate pulses; integration with cryogenic SFQ hardware remains prospective.",
+      "ranking_basis": "Concrete measured single- and two-qubit gate fidelities add a control-system experiment to the batch; scalable SFQ use remains a stated target.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "comment": "8 pages, 3 figures",
+      "journal_ref": null,
+      "doi": null,
+      "refs": [
+        "https://arxiv.org/abs/2611.22166",
+        "https://inspirehep.net/literature/3230283"
+      ]
+    }
+  ]
+}

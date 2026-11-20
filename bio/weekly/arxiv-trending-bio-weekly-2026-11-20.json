@@ -1,0 +1,522 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "weekly",
+  "date": "2026-11-20",
+  "date_range": {
+    "start": "2026-11-14",
+    "end": "2026-11-20",
+    "timezone": "UTC",
+    "inclusive": true
+  },
+  "snapshot_utc": "2026-11-20T02:27:54Z",
+  "title": "arXiv Trending Biology and Biomedicine — Weekly, 2026-11-20",
+  "source_report": "/home/yizhuan/.research/bio/weekly/arxiv-trending-bio-weekly-2026-11-20.md",
+  "entry_count": 10,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance-led ranking from incomplete signals, and arXiv does not represent the full biomedical preprint or medical literature.",
+  "candidate_pool": {
+    "count": 60,
+    "unique_versionless_ids": 60,
+    "selected_count": 10,
+    "query": "(cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph) AND ((submittedDate:[202611140000 TO 202611202359]) OR (lastUpdatedDate:[202611140000 TO 202611202359]))",
+    "categories": [
+      "q-bio.BM",
+      "q-bio.GN",
+      "q-bio.MN",
+      "q-bio.SC",
+      "q-bio.CB",
+      "q-bio.TO",
+      "q-bio.QM",
+      "cs.BI",
+      "physics.med-ph"
+    ]
+  },
+  "ranking_method": "Attention/citation evidence was sparse; selected papers are ranked by demonstrated molecular/biomedical relevance and reported validation scope, not popularity.",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "rank": null,
+      "url": "",
+      "content": "10 notable biology and biomedical papers from 2026-11-14 through 2026-11-20 UTC. Dominant pattern: computational methods paired with targeted validation, from epithelial-barrier, antibody, and fermentation studies to spatial-omics methods. This is a relevance-led inferred ranking; arXiv has no official trending chart and its biomedical coverage is incomplete.",
+      "refs": [
+        "https://arxiv.org/"
+      ],
+      "global_caveat": "arXiv has no official trending chart; this is an inferred relevance-led ranking from incomplete signals, and arXiv does not represent the full biomedical preprint or medical literature."
+    },
+    {
+      "id": "01-reasoning-in-the-loop-antibody-lead-optimization-by-probing",
+      "kind": "paper",
+      "title": "Reasoning in the loop: antibody lead optimization by probing mechanism and measurement",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.19812",
+      "arxiv_id": "2611.19812",
+      "arxiv_version": "v1",
+      "published": "2026-11-15T05:55:18Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Samuel Stanton",
+        "Aaron Solomon",
+        "Emily Delaney",
+        "Melanie Montgomery",
+        "Crystal Humphries",
+        "Timothy Acker",
+        "Ryan Henrici",
+        "Charbel Eid",
+        "Eddie Abrams",
+        "Peyton Greenside"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Two antibody lead-optimization campaigns combine an AI agent, mechanistic interpretation of assay curves, designed mutation libraries, and follow-up measurements.",
+      "claimed_contribution": "The authors report improved affinity, thermal stability, and aggregation metrics for both leads while maintaining or improving yield and purity; the VHH lead is reported at 1.15 nM KD versus 10.3 nM for its parent.",
+      "unique_caveat": "Only two campaigns on one company platform are reported. Lead measurements rest on one or two replicates, the scFv affinity assay approaches its resolution limit, and the paper discloses that Anthropic paid BigHat for the laboratory work. These are not clinical or safety outcomes.",
+      "evidence_for_ranking": "The authors report two scaffold-specific campaigns, seven rounds, roughly 1,010 variants, controlled comparisons, and assay changes tested against pre-registered predictions; the full paper includes raw-curve analysis.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "refs": [
+        "https://arxiv.org/abs/2611.19812",
+        "https://arxiv.org/html/2611.19812"
+      ],
+      "comment": "31 pages, 19 figures, 8 tables",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "02-rule-based-curation-and-validation-in-batch-fermentation-of",
+      "kind": "paper",
+      "title": "Rule-based curation and validation in batch fermentation of a genome-scale metabolic model of the mycoprotein fungus Fusarium venenatum A3/5",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.21775",
+      "arxiv_id": "2611.21775",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T19:05:11Z",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "authors": [
+        "Jaewook Lee",
+        "Thomas Vinestock",
+        "Miao Guo"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "A curated genome-scale metabolic model for Fusarium venenatum is tested against oxygen-enriched batch fermentation data on glucose and fructose.",
+      "claimed_contribution": "The authors report that rule-based curation corrects ATP-yield errors; sequential sugar uptake plus a fitted lag time lowers time-course RMSE from 4.88 to 0.42 g/L.",
+      "unique_caveat": "Evidence is limited to oxygen-enriched batches on glucose/fructose at one total-sugar level; the lag time is fitted to those same time courses, and glucose cases still overpredict final biomass by 6–9%. The authors disclose Quorn funding for two authors.",
+      "evidence_for_ranking": "Compared Draft and curated models across four fermentation batches: final-biomass discrepancy falls from 20% to 6%; an independent technical post also discussed the model’s energy-yield correction.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "refs": [
+        "https://arxiv.org/abs/2611.21775",
+        "https://x.com/kdpisda/status/2123259178986946936"
+      ],
+      "comment": "20 pages, 5 figures, 2 tables; Supplementary material included",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "03-structured-ai-ideation-yields-physical-strategies-for-epithe",
+      "kind": "paper",
+      "title": "Structured AI ideation yields physical strategies for epithelial barrier repair",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.22988",
+      "arxiv_id": "2611.22988",
+      "arxiv_version": "v1",
+      "published": "2026-11-17T16:05:22Z",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Geonho Nah",
+        "Johyun Park",
+        "Kyung-Ah Cho",
+        "Suyoung Hwang",
+        "Yoon Hee Lim",
+        "Eun-kyung Min",
+        "Seunghyun Moon",
+        "Donghyun Koh",
+        "Seungwon Kim",
+        "Jiho Park",
+        "Hojin Yoo",
+        "Myungsun Nam",
+        "Haneul Choi",
+        "Kyungsu Kim",
+        "In-Sun Hong",
+        "YunJae Jung",
+        "Minhyeong Lee"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Abelio structures AI research ideation and reports two independently tested physical interventions that restored barrier readouts in damaged Caco-2 monolayers.",
+      "claimed_contribution": "The authors report that membrane-tethered PEG preserved barrier function and cholesterol-anchored complementary DNA enabled sequence-specific, reversible restoration in their cell model.",
+      "unique_caveat": "The biological validation is in damaged Caco-2 monolayers, not organoids, animals, or humans. Scientific-soundness benchmarking uses an LLM judge, and the intervention structures are proposed rather than directly observed.",
+      "evidence_for_ranking": "Its Ideation Core was compared with four frontier LLMs on 50 research objectives; the paper also reports two proposals archived before independent laboratory tests in damaged Caco-2 monolayers.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "refs": [
+        "https://arxiv.org/abs/2611.22988",
+        "https://arxiv.org/html/2611.22988"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "04-horizontal-flow-matching-for-single-cell-spatiotemporal-dyna",
+      "kind": "paper",
+      "title": "Horizontal Flow Matching for Single-Cell Spatiotemporal Dynamics",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.24764",
+      "arxiv_id": "2611.24764",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T17:16:53Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Zihan Wang",
+        "Jianzhe Li",
+        "Zhenyi Zhang",
+        "Peijie Zhou"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "RNA & transcriptomics",
+        "Quantitative methods"
+      ],
+      "abstract": "HORIZON uses horizontal flow matching to model cell abundance, gene expression, and tissue geometry while discounting shared rigid motion in spatial-transcriptomic time courses.",
+      "claimed_contribution": "The method learns tissue dynamics up to shared translation and rotation, reducing coordinate-frame artifacts in inferred cell movement.",
+      "unique_caveat": "The reported evidence is computational evaluation on four datasets plus simulation; inferred trajectories and cell correspondences are not direct lineage-tracing observations or new biological experiments.",
+      "evidence_for_ranking": "Evaluated on a simulated tissue and four spatial-transcriptomics time courses; the authors report improved reconstruction and interpolation of held-out developmental stages against existing trajectory methods.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "refs": [
+        "https://arxiv.org/abs/2611.24764"
+      ],
+      "comment": "38 pages, 7 figures",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "05-biases-and-limits-of-alphafold-predictions-for-non-globular",
+      "kind": "paper",
+      "title": "Biases and Limits of AlphaFold Predictions for Non-Globular Proteins",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.24546",
+      "arxiv_id": "2611.24546",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T14:51:02Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Maria Cristina Aspromonte",
+        "Alexander M. Monzon",
+        "Miguel A. Andrade-Navarro",
+        "Oriol Bárcenas",
+        "Viktor Bartosik",
+        "Pau Bernadó",
+        "Juan Cortés",
+        "Zsuzsanna Dosztanyi",
+        "Gabor Erdos",
+        "Isabella C. Felli",
+        "Helena Gradišar",
+        "San Hadži",
+        "Tamás Hegedűs",
+        "Khalil Joron",
+        "Pavel Kaderavek",
+        "Eitan Lerner",
+        "Dirk Linke",
+        "Pablo Mier",
+        "Ana Pantelić",
+        "Roberta Pierattelli",
+        "Salvador Ventura",
+        "Marija Vidović",
+        "Metaxia Vlassi",
+        "Lukas Zidek",
+        "Silvio C. E. Tosatto"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors examine experimentally validated examples in which AlphaFold predictions for non-globular proteins diverge from biologically relevant structural states, emphasizing molecular context.",
+      "claimed_contribution": "The authors argue that interpreting non-globular protein predictions requires accounting for molecular context and biological state rather than reading a predicted structure as a single definitive conformation.",
+      "unique_caveat": "The abstract describes case-based analysis but gives no sample count or population-wide error estimate, so it does not quantify AlphaFold accuracy for all non-globular proteins.",
+      "evidence_for_ranking": "Directly relevant protein-structure assessment grounded in experimentally validated cases; the paper appeared in the q-bio.BM corpus during the window.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "refs": [
+        "https://arxiv.org/abs/2611.24546"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "06-storm-a-lightweight-structure-free-model-for-binding-affinit",
+      "kind": "paper",
+      "title": "STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.23777",
+      "arxiv_id": "2611.23777",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T03:34:08Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "authors": [
+        "Ayush Pandit",
+        "Rohan V. Koodli",
+        "Wei Deng",
+        "Roxana Daneshjou",
+        "Ron O. Dror"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "STORM predicts small-molecule–protein binding affinity without requiring a complex structure, transferring information from related measured molecules.",
+      "claimed_contribution": "STORM ensembles lightweight models over diverse protein and molecule representations, with the authors reporting accuracy comparable to or better than Boltz-2 on their evaluated sets.",
+      "unique_caveat": "This is retrospective computational benchmarking; the abstract reports no prospective wet-lab confirmation, and performance depends on the availability and quality of historical affinity measurements.",
+      "evidence_for_ranking": "The authors compare against Boltz-2 on multiple evaluation datasets and report inference and training speed improvements exceeding five orders of magnitude.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "refs": [
+        "https://arxiv.org/abs/2611.23777"
+      ],
+      "comment": "9 pages, 3 figures",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "07-occam-improved-single-cell-representation-learning-and-pertu",
+      "kind": "paper",
+      "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.21959",
+      "arxiv_id": "2611.21959",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T22:40:16Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": [
+        "Ihab Bendidi",
+        "Kian Kenyon-Dean",
+        "Alisandra K. Denton",
+        "Auguste Genovesio",
+        "Emmanuel Noutahi"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "OCCAM combines denoised cell representations with gene-interaction, text, and protein-sequence features to predict perturbation responses across cell contexts.",
+      "claimed_contribution": "The authors report better capture of measured response patterns and stronger perturbation discrimination in the evaluated settings, including composition of single-gene responses for double perturbations.",
+      "unique_caveat": "Expression-level prediction remains challenging, and the results are computational evaluations on existing perturbation data rather than new perturbation experiments or universal evidence of generalization.",
+      "evidence_for_ranking": "Compared with four retrained competitors and transfer baselines in cross-context few-shot settings, held-out cell lines/assays, and double perturbations.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "refs": [
+        "https://arxiv.org/abs/2611.21959"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "08-diversity-preservation-recovers-transcription-factor-motifs",
+      "kind": "paper",
+      "title": "Diversity Preservation Recovers Transcription Factor Motifs Across Challenging Confounder Landscapes",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.21859",
+      "arxiv_id": "2611.21859",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T20:23:15Z",
+      "categories": [
+        "cs.NE",
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Alejandro Medina",
+        "Mary Lauren Benton"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Gene regulation & epigenetics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "A diversity-preserving MAP-Elites search improves transcription-factor motif recovery under confounding, tested on five liver ChIP-seq datasets.",
+      "claimed_contribution": "The authors report that preserving a diverse motif-search archive avoids collapse to one motif and improves recovery when motif width is constrained.",
+      "unique_caveat": "HNF4A and JUND remain difficult to distinguish from close relatives across the full width range; computational motif recovery does not itself establish new binding events.",
+      "evidence_for_ranking": "Each archive ranks the target motif first in at least 13 of 30 seeds on all five datasets; comparisons use HOCOMOCO validation and MEME run on the same sequences.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-18",
+      "refs": [
+        "https://arxiv.org/abs/2611.21859"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "09-a-structure-based-model-of-the-bacterial-chemosensory-array",
+      "kind": "paper",
+      "title": "A structure-based model of the bacterial chemosensory array reveals how the scaffolding protein CheW tunes sensory responses",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.23921",
+      "arxiv_id": "2611.23921",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T06:11:15Z",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.stat-mech",
+        "q-bio.MN"
+      ],
+      "authors": [
+        "David Hathcock",
+        "Yingxin Zheng",
+        "Yuhai Tu"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "A cryo-EM-structure-based Ising model tests how the scaffold protein CheW changes cooperativity, sensitivity, and dynamics in bacterial chemosensory arrays.",
+      "claimed_contribution": "The authors propose that CheW abundance and spatial organization tune effective coupling between core signaling units and can shift fluctuations from relaxational toward oscillatory behavior.",
+      "unique_caveat": "The dynamical signatures, including oscillations near native CheW levels, are model predictions awaiting single-cell measurement; distinct coupling settings can yield similar static responses.",
+      "evidence_for_ranking": "The model reproduces previously reported CheW-dependent response changes and generates specific, testable predictions about CheW placement and single-cell activity fluctuations.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "refs": [
+        "https://arxiv.org/abs/2611.23921"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "10-multicasp-spatially-informed-canonical-association-analysis",
+      "kind": "paper",
+      "title": "multiCAsp: Spatially Informed Canonical Association Analysis of Multi-Omic Data",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.20580",
+      "arxiv_id": "2611.20580",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T06:04:03Z",
+      "categories": [
+        "stat.ME",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Ziqi Mu",
+        "Qiuyi Wu",
+        "Zhicheng Ji",
+        "Pixu Shi"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Quantitative methods",
+        "Molecular & cell biology"
+      ],
+      "abstract": "multiCAsp integrates spatially resolved molecular modalities with graph-Laplacian latent factors to identify shared variation across tissue locations.",
+      "claimed_contribution": "The authors report improved latent-factor recovery in simulations and spatially coherent factors in two real multi-omic applications, with protein-abundance prediction from metabolomic measurements in macaque cortex.",
+      "unique_caveat": "The real-data results are computational associations and predictions, not causal validation; generality beyond these applications and measured modalities remains to be established.",
+      "evidence_for_ranking": "Simulation comparisons are supplemented by applications to macaque-cortex metabolomic/proteomic data and human renal-carcinoma gene/protein data, including cross-animal transfer analysis.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-17",
+      "refs": [
+        "https://arxiv.org/abs/2611.20580"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": "",
+      "content": "Cell and protein measurements recur in Abelio and the antibody campaigns, but they validate different claims and remain preclinical. STORM is a computational affinity tool; AlphaFold case analysis addresses protein-model interpretation. Spatial/perturbation inference: HORIZON, OCCAM, and multiCAsp reconstruct cell/tissue state from measured datasets but target different processes. Motif recovery and CheW modeling add sequence-level and molecular-network methods; the Fusarium model connects genome-scale computation with fermentation data.",
+      "refs": [
+        "https://arxiv.org/abs/2611.19812",
+        "https://arxiv.org/abs/2611.21775",
+        "https://arxiv.org/abs/2611.22988",
+        "https://arxiv.org/abs/2611.24764",
+        "https://arxiv.org/abs/2611.24546",
+        "https://arxiv.org/abs/2611.23777",
+        "https://arxiv.org/abs/2611.21959",
+        "https://arxiv.org/abs/2611.21859",
+        "https://arxiv.org/abs/2611.23921",
+        "https://arxiv.org/abs/2611.20580"
+      ]
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": "",
+      "content": "Replicate the antibody leads with more replicates and a more sensitive affinity assay; test the fermentation model on independent batches and additional feedstocks, keeping fitted lag time separate from held-out prediction. Replicate Abelio’s epithelial-barrier findings in independent laboratories and more physiological intestinal models. Evaluate STORM in blinded prospective screens with biochemical follow-up. Stress-test OCCAM, HORIZON, and multiCAsp on independent cohorts, subjects, and tissue sections. Measure CheW-dependent single-cell time series to test predicted oscillations. These are research proposals, not clinical recommendations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.19812",
+        "https://arxiv.org/abs/2611.21775",
+        "https://arxiv.org/abs/2611.22988",
+        "https://arxiv.org/abs/2611.24764",
+        "https://arxiv.org/abs/2611.24546",
+        "https://arxiv.org/abs/2611.23777",
+        "https://arxiv.org/abs/2611.21959",
+        "https://arxiv.org/abs/2611.21859",
+        "https://arxiv.org/abs/2611.23921",
+        "https://arxiv.org/abs/2611.20580"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": "",
+      "content": "The strongest selected work couples models with assays, fermentation data, or held-out datasets. The evidence remains early and bounded: two antibody campaigns, a narrow fermentation setting, and computational benchmarks do not establish clinical utility.",
+      "refs": [
+        "https://arxiv.org/abs/2611.19812",
+        "https://arxiv.org/abs/2611.21775",
+        "https://arxiv.org/abs/2611.22988",
+        "https://arxiv.org/abs/2611.24764",
+        "https://arxiv.org/abs/2611.24546",
+        "https://arxiv.org/abs/2611.23777",
+        "https://arxiv.org/abs/2611.21959",
+        "https://arxiv.org/abs/2611.21859",
+        "https://arxiv.org/abs/2611.23921",
+        "https://arxiv.org/abs/2611.20580"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+[
+  {
+    "id": "2611.25076",
+    "title_page": "ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features",
+    "authors_page": "Nate Somers , Kento A. Abeywardane , Connor W. Coley , Masha Elkin",
+    "abstract_page": "Three-dimensional (3D) molecular similarity scoring and alignment are widely employed in ligand-based virtual screening and molecular design, and are increasingly used for training and evaluating machine learning models. Existing open-source methods utilize various molecular representations spanning shape, electrostatics, pharmacophores, and hybrid representations, but their implementations as independent software packages with distinct application programming interfaces (APIs), optimizers, and limited GPU support make them difficult to compare, combine, or extend. Here, we develop ShEPhERD-score into a unified, modular platform for differentiable 3D molecular similarity scoring and alignment by combining diverse molecular representations with high-performance Numba CPU and Triton GPU kernels to support both large-scale library screening and pairwise similarity workflows. In matched comparisons with open-source 3D similarity tools on the DUDE-Z virtual screening benchmark, ShEPhERD-score performed comparably or better in eight of nine cases. Across the scoring modes in ShEPhERD-score, throughput ranges from 17,800 to 1.03 million alignments/second for ten-million-conformer libraries using a single NVIDIA L40S GPU. Moreover, we found that the most effective scoring mode varied by protein target, indicating that target-specific calibration against validation data may be valuable before large-scale screening and underscoring the need for a unified platform that provides diverse molecular representations. Together, these capabilities establish ShEPhERD-score as a single, extensible toolkit for rapid virtual screening and machine learning workflows.",
+    "subjects_page": "Biomolecules (q-bio.BM)",
+    "url": "https://arxiv.org/abs/2611.25076",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.25076v1",
+      "title": "ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features",
+      "abstract": "Three-dimensional (3D) molecular similarity scoring and alignment are widely employed in ligand-based virtual screening and molecular design, and are increasingly used for training and evaluating machine learning models. Existing open-source methods utilize various molecular representations spanning shape, electrostatics, pharmacophores, and hybrid representations, but their implementations as independent software packages with distinct application programming interfaces (APIs), optimizers, and limited GPU support make them difficult to compare, combine, or extend. Here, we develop ShEPhERD-score into a unified, modular platform for differentiable 3D molecular similarity scoring and alignment by combining diverse molecular representations with high-performance Numba CPU and Triton GPU kernels to support both large-scale library screening and pairwise similarity workflows. In matched comparisons with open-source 3D similarity tools on the DUDE-Z virtual screening benchmark, ShEPhERD-score performed comparably or better in eight of nine cases. Across the scoring modes in ShEPhERD-score, throughput ranges from 17,800 to 1.03 million alignments/second for ten-million-conformer libraries using a single NVIDIA L40S GPU. Moreover, we found that the most effective scoring mode varied by protein target, indicating that target-specific calibration against validation data may be valuable before large-scale screening and underscoring the need for a unified platform that provides diverse molecular representations. Together, these capabilities establish ShEPhERD-score as a single, extensible toolkit for rapid virtual screening and machine learning workflows.",
+      "authors": [
+        "Nate Somers",
+        "Kento A. Abeywardane",
+        "Connor W. Coley",
+        "Masha Elkin"
+      ],
+      "published": "2026-11-18T19:17:58Z",
+      "updated": "2026-11-18T19:17:58Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.25076",
+      "pdf": "https://arxiv.org/pdf/2611.25076v1"
+    }
+  },
+  {
+    "id": "2611.24546",
+    "title_page": "Biases and Limits of AlphaFold Predictions for Non-Globular Proteins",
+    "authors_page": "Maria Cristina Aspromonte (1), Alexander M. Monzon (1), Miguel A. Andrade-Navarro (2), Oriol B\u00e1rcenas (3), Viktor Bartosik (4), Pau Bernad\u00f3 (5), Juan Cort\u00e9s (6), Zsuzsanna Dosztanyi (7), Gabor Erdos (8), Isabella C. Felli (9), Helena Gradi\u0161ar (10), San Had\u017ei (11), Tam\u00e1s Heged\u0171s (12), Khalil Joron (13), Pavel Kaderavek (4), Eitan Lerner (13), Dirk Linke (14), Pablo Mier (15), Ana Panteli\u0107 (16), Roberta Pierattelli (9), Salvador Ventura (3), Marija Vidovi\u0107 (16), Metaxia Vlassi (17), Lukas Zidek (4), Silvio C. E. Tosatto (1) ((1) University of Padova, Italy; (2) Johannes Gutenberg University Mainz, Germany; (3) Universitat Aut\u00f2noma de Barcelona and IQAC-CSIC, Spain; (4) Masaryk University, Czech Republic; (5) Centre de Biologie Structurale, Montpellier, France; (6) LAAS-CNRS, Universit\u00e9 de Toulouse, France; (7) Universit\u00e9 de Montpellier, France; (8) E\u00f6tv\u00f6s Lor\u00e1nd University, Hungary; (9) University of Florence, Italy; (10) National Institute of Chemistry, Ljubljana, Slovenia; (11) University of Ljubljana, Slovenia; (12) Semmelweis University, Hungary; (13) Hebrew University of Jerusalem, Israel; (14) University of Oslo, Norway; (15) Universidad Pablo de Olavide, Spain; (16) University of Belgrade and IMGGE, Serbia; (17) National Center for Scientific Research DEMOKRITOS, Greece)",
+    "abstract_page": "AlphaFold has transformed protein structure prediction, making structural models accessible across the life sciences. We explore experimentally validated cases of non-globular proteins to uncover where predictions diverge from biologically relevant structural states and how molecular context shapes these discrepancies, guiding a more informed interpretation of AlphaFold models.",
+    "subjects_page": "Biomolecules (q-bio.BM)",
+    "url": "https://arxiv.org/abs/2611.24546",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.24546v1",
+      "title": "Biases and Limits of AlphaFold Predictions for Non-Globular Proteins",
+      "abstract": "AlphaFold has transformed protein structure prediction, making structural models accessible across the life sciences. We explore experimentally validated cases of non-globular proteins to uncover where predictions diverge from biologically relevant structural states and how molecular context shapes these discrepancies, guiding a more informed interpretation of AlphaFold models.",
+      "authors": [
+        "Maria Cristina Aspromonte",
+        "Alexander M. Monzon",
+        "Miguel A. Andrade-Navarro",
+        "Oriol B\u00e1rcenas",
+        "Viktor Bartosik",
+        "Pau Bernad\u00f3",
+        "Juan Cort\u00e9s",
+        "Zsuzsanna Dosztanyi",
+        "Gabor Erdos",
+        "Isabella C. Felli",
+        "Helena Gradi\u0161ar",
+        "San Had\u017ei",
+        "Tam\u00e1s Heged\u0171s",
+        "Khalil Joron",
+        "Pavel Kaderavek",
+        "Eitan Lerner",
+        "Dirk Linke",
+        "Pablo Mier",
+        "Ana Panteli\u0107",
+        "Roberta Pierattelli",
+        "Salvador Ventura",
+        "Marija Vidovi\u0107",
+        "Metaxia Vlassi",
+        "Lukas Zidek",
+        "Silvio C. E. Tosatto"
+      ],
+      "published": "2026-11-18T14:51:02Z",
+      "updated": "2026-11-18T14:51:02Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.24546",
+      "pdf": "https://arxiv.org/pdf/2611.24546v1"
+    }
+  },
+  {
+    "id": "2611.23921",
+    "title_page": "A structure-based model of the bacterial chemosensory array reveals how the scaffolding protein CheW tunes sensory responses",
+    "authors_page": "David Hathcock , Yingxin Zheng , Yuhai Tu",
+    "abstract_page": "We introduce a structure-based Ising model of the bacterial chemosensory array to investigate how the scaffolding protein CheW tunes signaling responses. The model couples the activity states of core signaling units and of CheW subunits within hexameric rings on a lattice with the structure observed in cryoEM experiments. Recent experiments show that increasing CheW participation in hexameric rings raises response cooperativity in non-adapting cells and sensitivity in adaptation-proficient cells. Our lattice model quantitatively reproduces both effects, while mean-field theory shows that CheW increases the effective coupling between core units, sharpening the response in both cell types. The statistics of CheW placement (complete hexameric rings versus random distribution) substantially alter how responses vary with CheW abundance. Moreover, different coupling strengths can yield the same static response yet markedly different activity fluctuations and dynamics. CheW abundance further controls a crossover from relaxational to oscillatory fluctuations, whose location depends on the spatial distribution of CheW. These dynamical signatures, including oscillations predicted near native CheW levels, are testable by single-cell dynamics measurements. Combined with CheW titration and our modeling results, these measurements can probe the array's assembly dynamics and allosteric couplings. Beyond the chemosensory array, our approach can generalize to other large protein complexes, providing a framework to study the functional role of scaffolding proteins and allosteric interfaces in signal processing.",
+    "subjects_page": "Biological Physics (physics.bio-ph) ; Statistical Mechanics (cond-mat.stat-mech); Molecular Networks (q-bio.MN)",
+    "url": "https://arxiv.org/abs/2611.23921",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.23921v1",
+      "title": "A structure-based model of the bacterial chemosensory array reveals how the scaffolding protein CheW tunes sensory responses",
+      "abstract": "We introduce a structure-based Ising model of the bacterial chemosensory array to investigate how the scaffolding protein CheW tunes signaling responses. The model couples the activity states of core signaling units and of CheW subunits within hexameric rings on a lattice with the structure observed in cryoEM experiments. Recent experiments show that increasing CheW participation in hexameric rings raises response cooperativity in non-adapting cells and sensitivity in adaptation-proficient cells. Our lattice model quantitatively reproduces both effects, while mean-field theory shows that CheW increases the effective coupling between core units, sharpening the response in both cell types. The statistics of CheW placement (complete hexameric rings versus random distribution) substantially alter how responses vary with CheW abundance. Moreover, different coupling strengths can yield the same static response yet markedly different activity fluctuations and dynamics. CheW abundance further controls a crossover from relaxational to oscillatory fluctuations, whose location depends on the spatial distribution of CheW. These dynamical signatures, including oscillations predicted near native CheW levels, are testable by single-cell dynamics measurements. Combined with CheW titration and our modeling results, these measurements can probe the array's assembly dynamics and allosteric couplings. Beyond the chemosensory array, our approach can generalize to other large protein complexes, providing a framework to study the functional role of scaffolding proteins and allosteric interfaces in signal processing.",
+      "authors": [
+        "David Hathcock",
+        "Yingxin Zheng",
+        "Yuhai Tu"
+      ],
+      "published": "2026-11-18T06:11:15Z",
+      "updated": "2026-11-18T06:11:15Z",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.stat-mech",
+        "q-bio.MN"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.23921",
+      "pdf": "https://arxiv.org/pdf/2611.23921v1"
+    }
+  },
+  {
+    "id": "2611.23777",
+    "title_page": "STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction",
+    "authors_page": "Ayush Pandit (1), Rohan V. Koodli (1), Wei Deng (1), Roxana Daneshjou (1), Ron O. Dror (1) ((1) Stanford University)",
+    "abstract_page": "Accurately predicting a small molecule's binding affinity to a protein, a critical task in drug discovery, remains challenging. Physics-based approaches like free-energy perturbation (FEP) have very high computational costs and require expert setup. Recent machine learning--based cofolding models have reported accuracy approaching that of FEP---and at least one of them, Boltz-2, has already been widely adopted for affinity prediction---but they remain expensive for large computational screens and even more expensive for retraining on newly collected experimental data. To address these challenges, we introduce STORM: Similarity Transfer from Observed Reference Molecules. STORM is a fast, simple machine learning model that ensembles many small model fusions of diverse protein and molecule representations for binding affinity prediction. Trained on the same data, STORM matches or exceeds the accuracy of Boltz-2 on multiple evaluation datasets, while delivering a speed improvement of over five orders of magnitude for both inference and training. Our results also suggest opportunities to substantially improve affinity prediction accuracy by integrating historical experimental affinity data with structural and biophysical information.",
+    "subjects_page": "Quantitative Methods (q-bio.QM) ; Machine Learning (cs.LG)",
+    "url": "https://arxiv.org/abs/2611.23777",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.23777v1",
+      "title": "STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction",
+      "abstract": "Accurately predicting a small molecule's binding affinity to a protein, a critical task in drug discovery, remains challenging. Physics-based approaches like free-energy perturbation (FEP) have very high computational costs and require expert setup. Recent machine learning--based cofolding models have reported accuracy approaching that of FEP---and at least one of them, Boltz-2, has already been widely adopted for affinity prediction---but they remain expensive for large computational screens and even more expensive for retraining on newly collected experimental data. To address these challenges, we introduce STORM: Similarity Transfer from Observed Reference Molecules. STORM is a fast, simple machine learning model that ensembles many small model fusions of diverse protein and molecule representations for binding affinity prediction. Trained on the same data, STORM matches or exceeds the accuracy of Boltz-2 on multiple evaluation datasets, while delivering a speed improvement of over five orders of magnitude for both inference and training. Our results also suggest opportunities to substantially improve affinity prediction accuracy by integrating historical experimental affinity data with structural and biophysical information.",
+      "authors": [
+        "Ayush Pandit",
+        "Rohan V. Koodli",
+        "Wei Deng",
+        "Roxana Daneshjou",
+        "Ron O. Dror"
+      ],
+      "published": "2026-11-18T03:34:08Z",
+      "updated": "2026-11-18T03:34:08Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "comment": "9 pages, 3 figures",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.23777",
+      "pdf": "https://arxiv.org/pdf/2611.23777v1"
+    }
+  },
+  {
+    "id": "2611.21959",
+    "title_page": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+    "authors_page": "Ihab Bendidi , Kian Kenyon-Dean , Alisandra K. Denton , Auguste Genovesio , Emmanuel Noutahi",
+    "abstract_page": "Predicting the effects of genetic perturbations requires models that generalize beyond observed cell contexts and gene combinations. We introduce Occam, a multilayer perceptron (MLP) framework for representation learning and perturbation-effect prediction. Occam combines cell representations learned through denoising with gene interaction, text, and protein-sequence features. It achieves the highest aggregate representation scores for perturbation information and cell-type preservation with batch integration. In cross-context few-shot prediction, a perturbation and a cell context are each observed during training, but never together. Occam better captures the measured response patterns for these unobserved combinations than four retrained competitors or direct transfer of the same perturbation's measured effects from other training cell lines. Without fine-tuning, Occam best distinguishes perturbations among the evaluated models and simple baselines in cell lines held out from predictor training, across seen and unseen assays. Predicting expression levels accurately in these settings remains challenging. For double perturbations, which target two genes simultaneously, Occam composes learned single-gene responses to better capture the combined response and reduce expression error compared with competing models and summed single-gene effects. These gains extend to both strongly additive and weakly additive responses. Together, these results support simple MLPs for cell representation learning and perturbation-effect prediction across contexts and gene combinations.",
+    "subjects_page": "Quantitative Methods (q-bio.QM) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG)",
+    "url": "https://arxiv.org/abs/2611.21959",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.21959v1",
+      "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+      "abstract": "Predicting the effects of genetic perturbations requires models that generalize beyond observed cell contexts and gene combinations. We introduce Occam, a multilayer perceptron (MLP) framework for representation learning and perturbation-effect prediction. Occam combines cell representations learned through denoising with gene interaction, text, and protein-sequence features. It achieves the highest aggregate representation scores for perturbation information and cell-type preservation with batch integration. In cross-context few-shot prediction, a perturbation and a cell context are each observed during training, but never together. Occam better captures the measured response patterns for these unobserved combinations than four retrained competitors or direct transfer of the same perturbation's measured effects from other training cell lines. Without fine-tuning, Occam best distinguishes perturbations among the evaluated models and simple baselines in cell lines held out from predictor training, across seen and unseen assays. Predicting expression levels accurately in these settings remains challenging. For double perturbations, which target two genes simultaneously, Occam composes learned single-gene responses to better capture the combined response and reduce expression error compared with competing models and summed single-gene effects. These gains extend to both strongly additive and weakly additive responses. Together, these results support simple MLPs for cell representation learning and perturbation-effect prediction across contexts and gene combinations.",
+      "authors": [
+        "Ihab Bendidi",
+        "Kian Kenyon-Dean",
+        "Alisandra K. Denton",
+        "Auguste Genovesio",
+        "Emmanuel Noutahi"
+      ],
+      "published": "2026-11-16T22:40:16Z",
+      "updated": "2026-11-16T22:40:16Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.21959",
+      "pdf": "https://arxiv.org/pdf/2611.21959v1"
+    }
+  },
+  {
+    "id": "2611.21859",
+    "title_page": "Diversity Preservation Recovers Transcription Factor Motifs Across Challenging Confounder Landscapes",
+    "authors_page": "Alejandro Medina , Mary Lauren Benton",
+    "abstract_page": "Motif discovery is a process where DNA sequences are searched for the short patterns, called motifs, that transcription factor (TF) proteins bind. However, the motif lengths are often unknown and motif attribution often competes with a near-identical motif of a related protein. In this work, we pair a motif genotype whose length emerges from an evolvable gate with MAP-Elites archives organized by three descriptor pairs, and validate every motif against the full HOCOMOCO database. On five liver ChIP-seq datasets spanning distinct confounder landscapes, a $({\\mu} + {\\lambda})$ baseline differing only in survivor selection collapses onto a single motif and never ranks the target first across three datasets, while every MAP-Elites archive does so in at least 13 of 30 seeds on every dataset. Against the motif discovery tool MEME, run on the same sequences and validated identically, the archives recover the target signal as reliably on four datasets and more robustly when motif width is constrained. Neither method ranks the target above its closest relatives on HNF4A and JUND over the full width range, but narrow archive motifs rank HNF4A first in up to 43% of seeds, where MEME misses the motif in all settings. Diversity preservation improves our ability to recover consistent motif signal, although motif annotation remains a challenging problem for all methods we tested.",
+    "subjects_page": "Neural and Evolutionary Computing (cs.NE) ; Genomics (q-bio.GN)",
+    "url": "https://arxiv.org/abs/2611.21859",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.21859v1",
+      "title": "Diversity Preservation Recovers Transcription Factor Motifs Across Challenging Confounder Landscapes",
+      "abstract": "Motif discovery is a process where DNA sequences are searched for the short patterns, called motifs, that transcription factor (TF) proteins bind. However, the motif lengths are often unknown and motif attribution often competes with a near-identical motif of a related protein. In this work, we pair a motif genotype whose length emerges from an evolvable gate with MAP-Elites archives organized by three descriptor pairs, and validate every motif against the full HOCOMOCO database. On five liver ChIP-seq datasets spanning distinct confounder landscapes, a $(\u03bc + \u03bb)$ baseline differing only in survivor selection collapses onto a single motif and never ranks the target first across three datasets, while every MAP-Elites archive does so in at least 13 of 30 seeds on every dataset. Against the motif discovery tool MEME, run on the same sequences and validated identically, the archives recover the target signal as reliably on four datasets and more robustly when motif width is constrained. Neither method ranks the target above its closest relatives on HNF4A and JUND over the full width range, but narrow archive motifs rank HNF4A first in up to 43% of seeds, where MEME misses the motif in all settings. Diversity preservation improves our ability to recover consistent motif signal, although motif annotation remains a challenging problem for all methods we tested.",
+      "authors": [
+        "Alejandro Medina",
+        "Mary Lauren Benton"
+      ],
+      "published": "2026-11-16T20:23:15Z",
+      "updated": "2026-11-16T20:23:15Z",
+      "categories": [
+        "cs.NE",
+        "q-bio.GN"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.21859",
+      "pdf": "https://arxiv.org/pdf/2611.21859v1"
+    }
+  },
+  {
+    "id": "2611.21775",
+    "title_page": "Rule-based curation and validation in batch fermentation of a genome-scale metabolic model of the mycoprotein fungus Fusarium venenatum A3/5",
+    "authors_page": "Jaewook Lee , Thomas Vinestock , Miao Guo",
+    "abstract_page": "Sustainable protein supply is a central food-system challenge, and mycoprotein from Fusarium venenatum is an established, low-impact option. Its production relies on refined glucose, and yields on lower-cost feedstocks are normally found by fermentation. Genome-scale metabolic models (GEMs) can estimate these yields before any experiment, but to our knowledge none has been published for this fungus, and models transferred from related species inherit template errors. Here we built iJL1143, a GEM of strain A3/5, from an Aspergillus niger model and curated it with rules based on homology, thermodynamics and the literature. We compared it with the uncurated Draft model in four oxygen-enriched batch fermentations on glucose and fructose. Thermodynamic directionality rules and the direction of the mitochondrial GTP/GDP carrier brought the maximum ATP yield of the Draft model within the theoretical range. As a result, with sequential sugar uptake and no fitted parameters, the mean final-biomass discrepancy fell from 20% for the Draft model to 6% for iJL1143. Sequential uptake and a fitted lag time also reduced its biomass time-course error from 4.88 to 0.42 g/L. In oxygen-enriched batch fermentation, iJL1143 can therefore estimate obtainable biomass before fermentation, which could reduce the experiments needed to develop lower-cost mycoprotein.",
+    "subjects_page": "Molecular Networks (q-bio.MN)",
+    "url": "https://arxiv.org/abs/2611.21775",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.21775v1",
+      "title": "Rule-based curation and validation in batch fermentation of a genome-scale metabolic model of the mycoprotein fungus Fusarium venenatum A3/5",
+      "abstract": "Sustainable protein supply is a central food-system challenge, and mycoprotein from Fusarium venenatum is an established, low-impact option. Its production relies on refined glucose, and yields on lower-cost feedstocks are normally found by fermentation. Genome-scale metabolic models (GEMs) can estimate these yields before any experiment, but to our knowledge none has been published for this fungus, and models transferred from related species inherit template errors. Here we built iJL1143, a GEM of strain A3/5, from an Aspergillus niger model and curated it with rules based on homology, thermodynamics and the literature. We compared it with the uncurated Draft model in four oxygen-enriched batch fermentations on glucose and fructose. Thermodynamic directionality rules and the direction of the mitochondrial GTP/GDP carrier brought the maximum ATP yield of the Draft model within the theoretical range. As a result, with sequential sugar uptake and no fitted parameters, the mean final-biomass discrepancy fell from 20% for the Draft model to 6% for iJL1143. Sequential uptake and a fitted lag time also reduced its biomass time-course error from 4.88 to 0.42 g/L. In oxygen-enriched batch fermentation, iJL1143 can therefore estimate obtainable biomass before fermentation, which could reduce the experiments needed to develop lower-cost mycoprotein.",
+      "authors": [
+        "Jaewook Lee",
+        "Thomas Vinestock",
+        "Miao Guo"
+      ],
+      "published": "2026-11-16T19:05:11Z",
+      "updated": "2026-11-16T19:05:11Z",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "comment": "20 pages, 5 figures, 2 tables; Supplementary material included",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.21775",
+      "pdf": "https://arxiv.org/pdf/2611.21775v1"
+    }
+  },
+  {
+    "id": "2611.22256",
+    "title_page": "ST-FateFlow: Continuous Gene-Spatial Reconstruction with Differentiation-Potential Learning from Time-Resolved Spatial Transcriptomics",
+    "authors_page": "Zhe Yu , Xiaobo Sun , Hao Wu",
+    "abstract_page": "Time-resolved spatial transcriptomics provides a powerful view of dynamic biological processes by measuring cellular states together with their spatial organization across time. However, destructive profiling and experimental cost restrict observations to a few discrete time points collected from independent samples, with no known cell pairing across time. This makes it difficult to reconstruct gene expression and tissue organization at unobserved stages and to characterize differentiation-associated dynamics. Here, we introduce ST-FateFlow, a flow-matching framework for continuous gene-spatial dynamics and differentiation-potential learning. ST-FateFlow jointly learns gene-expression and spatial-coordinate velocity fields, enabling interpolation of missing time points and continuous modeling of transcriptional evolution and tissue remodeling. In parallel, it independently learns a time-conditioned differentiation potential, whose values organize cell states along inferred differentiation progressions and support the analysis of differentiation-associated transcriptional changes. Across multiple time-resolved spatial transcriptomics datasets, ST-FateFlow effectively captures coordinated gene-expression and spatial dynamics. Case studies further show that the learned potential landscapes are consistent with known developmental and regenerative trajectories and help identify candidate genes associated with differentiation progression.",
+    "subjects_page": "Genomics (q-bio.GN)",
+    "url": "https://arxiv.org/abs/2611.22256",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.22256v1",
+      "title": "ST-FateFlow: Continuous Gene-Spatial Reconstruction with Differentiation-Potential Learning from Time-Resolved Spatial Transcriptomics",
+      "abstract": "Time-resolved spatial transcriptomics provides a powerful view of dynamic biological processes by measuring cellular states together with their spatial organization across time. However, destructive profiling and experimental cost restrict observations to a few discrete time points collected from independent samples, with no known cell pairing across time. This makes it difficult to reconstruct gene expression and tissue organization at unobserved stages and to characterize differentiation-associated dynamics. Here, we introduce ST-FateFlow, a flow-matching framework for continuous gene-spatial dynamics and differentiation-potential learning. ST-FateFlow jointly learns gene-expression and spatial-coordinate velocity fields, enabling interpolation of missing time points and continuous modeling of transcriptional evolution and tissue remodeling. In parallel, it independently learns a time-conditioned differentiation potential, whose values organize cell states along inferred differentiation progressions and support the analysis of differentiation-associated transcriptional changes. Across multiple time-resolved spatial transcriptomics datasets, ST-FateFlow effectively captures coordinated gene-expression and spatial dynamics. Case studies further show that the learned potential landscapes are consistent with known developmental and regenerative trajectories and help identify candidate genes associated with differentiation progression.",
+      "authors": [
+        "Zhe Yu",
+        "Xiaobo Sun",
+        "Hao Wu"
+      ],
+      "published": "2026-11-17T06:00:29Z",
+      "updated": "2026-11-17T06:00:29Z",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.22256",
+      "pdf": "https://arxiv.org/pdf/2611.22256v1"
+    }
+  },
+  {
+    "id": "2611.20580",
+    "title_page": "multiCAsp: Spatially Informed Canonical Association Analysis of Multi-Omic Data",
+    "authors_page": "Ziqi Mu , Qiuyi Wu , Zhicheng Ji , Pixu Shi",
+    "abstract_page": "Simultaneous profiling of multiple molecular layers at spatially resolved locations creates opportunities to identify shared cross-modal biological variation in its tissue context. We present multiCAsp (multi-omic Canonical Association informed by spatial graph), a probabilistic latent-factor model for integrating $M \\geq 2$ spatially resolved omic modalities. It incorporates spatial dependence through a graph-Laplacian prior on shared latent factors and uses an expectation-maximization algorithm to estimate factor scores and modality-specific feature loadings. Because the prior is defined on a neighborhood graph rather than on Euclidean distances, it accommodates irregular tissue geometries and extends naturally to multiple tissue sections. Simulations show that multiCAsp consistently achieves higher mean latent subspace and loading recovery than alternative methods across varying sample sizes, feature dimensions, and noise levels, with the largest gains under high noise. Compared with an existing Gaussian process-based spatial factor model, it is also less sensitive to how the spatial coordinates are represented, produces spatially smoother factors, and has lower computational cost. Applied to metabolomic-proteomic data from macaque cortex and gene-protein data from human renal carcinoma, multiCAsp recovers spatially coherent multi-omic factors with interpretable biological signatures. In the macaque data, transferred factors retain broad spatial patterns across animals and support cross-modal prediction of protein abundances from metabolomic measurements.",
+    "subjects_page": "Methodology (stat.ME) ; Quantitative Methods (q-bio.QM)",
+    "url": "https://arxiv.org/abs/2611.20580",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.20580v1",
+      "title": "multiCAsp: Spatially Informed Canonical Association Analysis of Multi-Omic Data",
+      "abstract": "Simultaneous profiling of multiple molecular layers at spatially resolved locations creates opportunities to identify shared cross-modal biological variation in its tissue context. We present multiCAsp (multi-omic Canonical Association informed by spatial graph), a probabilistic latent-factor model for integrating $M \\geq 2$ spatially resolved omic modalities. It incorporates spatial dependence through a graph-Laplacian prior on shared latent factors and uses an expectation-maximization algorithm to estimate factor scores and modality-specific feature loadings. Because the prior is defined on a neighborhood graph rather than on Euclidean distances, it accommodates irregular tissue geometries and extends naturally to multiple tissue sections. Simulations show that multiCAsp consistently achieves higher mean latent subspace and loading recovery than alternative methods across varying sample sizes, feature dimensions, and noise levels, with the largest gains under high noise. Compared with an existing Gaussian process-based spatial factor model, it is also less sensitive to how the spatial coordinates are represented, produces spatially smoother factors, and has lower computational cost. Applied to metabolomic-proteomic data from macaque cortex and gene-protein data from human renal carcinoma, multiCAsp recovers spatially coherent multi-omic factors with interpretable biological signatures. In the macaque data, transferred factors retain broad spatial patterns across animals and support cross-modal prediction of protein abundances from metabolomic measurements.",
+      "authors": [
+        "Ziqi Mu",
+        "Qiuyi Wu",
+        "Zhicheng Ji",
+        "Pixu Shi"
+      ],
+      "published": "2026-11-16T06:04:03Z",
+      "updated": "2026-11-16T06:04:03Z",
+      "categories": [
+        "stat.ME",
+        "q-bio.QM"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.20580",
+      "pdf": "https://arxiv.org/pdf/2611.20580v1"
+    }
+  },
+  {
+    "id": "2611.20368",
+    "title_page": "HoloGene: Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields",
+    "authors_page": "Yumin Zheng , Qingtian Zhu , Ziyan Zhu , Kailu Song , Yinqiang Zheng , Jun Ding",
+    "abstract_page": "Spatial transcriptomics (ST) provides spatially resolved gene expression measurements, but most 3D ST datasets are acquired as independently processed 2D sections. Computational approaches span slice registration and integration, explicit or generative interpolation, and coordinate-field modeling. Within the last family, implicit neural representations (INRs) offer a continuous, coordinate-queryable parameterization, but standard isotropic coordinate encodings do not explicitly reflect that serial-section measurements are dense in-plane and sparse along the axial direction. We present HoloGene, an anisotropic conditional INR framework for estimating continuous 3D gene-expression fields from pre-registered ST sections. Its central contribution is an acquisition-aware factorization that couples dense in-plane synthesis with sparse axial evolution using established GAE, FiLM, pseudo-label supervision, and CORAL components. HoloGene compresses high-dimensional expression profiles into a graph-autoencoder latent manifold, uses pseudo-label-derived signature conditioning to provide coarse intra-section context, and applies depth-dependent FiLM modulation to model axial variation. A signature-stratified correlation-alignment regularizer encourages cross-slice covariance alignment in latent features. Using held-out measured sections as cross-sectional references, HoloGene improves reconstruction accuracy and biological preservation metrics compared with general-purpose INRs and adapted spatial-transcriptomics baselines. These results support anisotropic conditional modeling as a practical strategy for estimating 3D expression fields from discontinuous ST sections. Code is available at this https URL .",
+    "subjects_page": "Machine Learning (cs.LG) ; Genomics (q-bio.GN)",
+    "url": "https://arxiv.org/abs/2611.20368",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.20368v1",
+      "title": "HoloGene: Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields",
+      "abstract": "Spatial transcriptomics (ST) provides spatially resolved gene expression measurements, but most 3D ST datasets are acquired as independently processed 2D sections. Computational approaches span slice registration and integration, explicit or generative interpolation, and coordinate-field modeling. Within the last family, implicit neural representations (INRs) offer a continuous, coordinate-queryable parameterization, but standard isotropic coordinate encodings do not explicitly reflect that serial-section measurements are dense in-plane and sparse along the axial direction. We present HoloGene, an anisotropic conditional INR framework for estimating continuous 3D gene-expression fields from pre-registered ST sections. Its central contribution is an acquisition-aware factorization that couples dense in-plane synthesis with sparse axial evolution using established GAE, FiLM, pseudo-label supervision, and CORAL components. HoloGene compresses high-dimensional expression profiles into a graph-autoencoder latent manifold, uses pseudo-label-derived signature conditioning to provide coarse intra-section context, and applies depth-dependent FiLM modulation to model axial variation. A signature-stratified correlation-alignment regularizer encourages cross-slice covariance alignment in latent features. Using held-out measured sections as cross-sectional references, HoloGene improves reconstruction accuracy and biological preservation metrics compared with general-purpose INRs and adapted spatial-transcriptomics baselines. These results support anisotropic conditional modeling as a practical strategy for estimating 3D expression fields from discontinuous ST sections. Code is available at https://github.com/Szym29/HoloGene.",
+      "authors": [
+        "Yumin Zheng",
+        "Qingtian Zhu",
+        "Ziyan Zhu",
+        "Kailu Song",
+        "Yinqiang Zheng",
+        "Jun Ding"
+      ],
+      "published": "2026-11-16T00:58:29Z",
+      "updated": "2026-11-16T00:58:29Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "comment": "NeurIPS 2026",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.20368",
+      "pdf": "https://arxiv.org/pdf/2611.20368v1"
+    }
+  },
+  {
+    "id": "2611.19885",
+    "title_page": "An Exploration of Physical and Chemical Representation in Coarse-Grained, Machine-Learned Protein Models",
+    "authors_page": "Aldo S. Pasos-Trejo , Luca Sagresti , Cecilia Clementi",
+    "abstract_page": "Machine-learned coarse-graining has emerged as a reliable framework for building protein models that accurately and efficiently sample their relevant conformational landscape. Existing studies assume a predefined map from full- to coarse-grained resolution. However, the choice of map strongly affects the quality of the models. Here, we study the dependence of system-specific machine-learned coarse-grained (MLCG) models across 7 mapping choices, spanning different resolutions and embedding types for coarse-grained beads. We show that resolution and chemical diversity do not always correlate with accuracy, and that accurate protein-specific models can be generated using minimal chemical diversity if the latent space representation of the system has high enough dimensionality.",
+    "subjects_page": "Biomolecules (q-bio.BM) ; Biological Physics (physics.bio-ph)",
+    "url": "https://arxiv.org/abs/2611.19885",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.19885v1",
+      "title": "An Exploration of Physical and Chemical Representation in Coarse-Grained, Machine-Learned Protein Models",
+      "abstract": "Machine-learned coarse-graining has emerged as a reliable framework for building protein models that accurately and efficiently sample their relevant conformational landscape. Existing studies assume a predefined map from full- to coarse-grained resolution. However, the choice of map strongly affects the quality of the models. Here, we study the dependence of system-specific machine-learned coarse-grained (MLCG) models across 7 mapping choices, spanning different resolutions and embedding types for coarse-grained beads. We show that resolution and chemical diversity do not always correlate with accuracy, and that accurate protein-specific models can be generated using minimal chemical diversity if the latent space representation of the system has high enough dimensionality.",
+      "authors": [
+        "Aldo S. Pasos-Trejo",
+        "Luca Sagresti",
+        "Cecilia Clementi"
+      ],
+      "published": "2026-11-15T09:03:47Z",
+      "updated": "2026-11-15T09:03:47Z",
+      "categories": [
+        "q-bio.BM",
+        "physics.bio-ph"
+      ],
+      "comment": "To appear in: https://msp.org/soon/coming.php?jpath=camcos",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.19885",
+      "pdf": "https://arxiv.org/pdf/2611.19885v1"
+    }
+  },
+  {
+    "id": "2611.19812",
+    "title_page": "Reasoning in the loop: antibody lead optimization by probing mechanism and measurement",
+    "authors_page": "Samuel Stanton (1), Aaron Solomon (2), Emily Delaney (2), Melanie Montgomery (2), Crystal Humphries (2), Timothy Acker (2), Ryan Henrici (2), Charbel Eid (2), Eddie Abrams (2), Peyton Greenside (2) ((1) Anthropic, (2) BigHat Biosciences)",
+    "abstract_page": "Lab-in-the-loop systems, in which a model proposes molecules, automated assays measure their properties and the results retrain the model, are a popular approach to antibody lead optimization. These systems optimize for a specification defined with metrics computed from instrument signals, so their success depends on how well those metrics serve as proxies for the properties a drug candidate needs. When a metric is a poor proxy, neither a better model nor more data will fix it, and identifying the problem usually requires expert review. We report two campaigns run on BigHat Biosciences' Milliner platform, one on an anti-albumin nanobody (VHH) and one on an anti-mesothelin single-chain variable fragment (scFv), in which a research team and a general-purpose AI agent, Claude, brought scientific reasoning into the loop. Over seven rounds and about 1,010 design variants we built libraries from antibody lineage, structure and biophysics, and found from the raw curves that on each scaffold one thermal metric did not measure what its name implied. The libraries were built as controlled comparisons, so the results also show what each mutation contributes to each property. We fit a physical model of the curves, used it to choose metrics suited to each scaffold, and changed the experimental protocol, varying protein concentration and heating rate, to test the model against pre-registered predictions. Both leads improve on their parents in affinity, thermal stability and aggregation while improving or maintaining yield and purity.",
+    "subjects_page": "Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Biomolecules (q-bio.BM)",
+    "url": "https://arxiv.org/abs/2611.19812",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.19812v1",
+      "title": "Reasoning in the loop: antibody lead optimization by probing mechanism and measurement",
+      "abstract": "Lab-in-the-loop systems, in which a model proposes molecules, automated assays measure their properties and the results retrain the model, are a popular approach to antibody lead optimization. These systems optimize for a specification defined with metrics computed from instrument signals, so their success depends on how well those metrics serve as proxies for the properties a drug candidate needs. When a metric is a poor proxy, neither a better model nor more data will fix it, and identifying the problem usually requires expert review. We report two campaigns run on BigHat Biosciences' Milliner platform, one on an anti-albumin nanobody (VHH) and one on an anti-mesothelin single-chain variable fragment (scFv), in which a research team and a general-purpose AI agent, Claude, brought scientific reasoning into the loop. Over seven rounds and about 1,010 design variants we built libraries from antibody lineage, structure and biophysics, and found from the raw curves that on each scaffold one thermal metric did not measure what its name implied. The libraries were built as controlled comparisons, so the results also show what each mutation contributes to each property. We fit a physical model of the curves, used it to choose metrics suited to each scaffold, and changed the experimental protocol, varying protein concentration and heating rate, to test the model against pre-registered predictions. Both leads improve on their parents in affinity, thermal stability and aggregation while improving or maintaining yield and purity.",
+      "authors": [
+        "Samuel Stanton",
+        "Aaron Solomon",
+        "Emily Delaney",
+        "Melanie Montgomery",
+        "Crystal Humphries",
+        "Timothy Acker",
+        "Ryan Henrici",
+        "Charbel Eid",
+        "Eddie Abrams",
+        "Peyton Greenside"
+      ],
+      "published": "2026-11-15T05:55:18Z",
+      "updated": "2026-11-15T05:55:18Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "comment": "31 pages, 19 figures, 8 tables",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.19812",
+      "pdf": "https://arxiv.org/pdf/2611.19812v1"
+    }
+  },
+  {
+    "id": "2611.19321",
+    "title_page": "Generation of protein conformations using a simple inverted transformer",
+    "authors_page": "Luigi Leonardo Palese",
+    "abstract_page": "Molecular dynamics is an extremely powerful approach for studying protein behavior, but it requires enormous computational resources to obtain an adequate sampling of possible conformations. Recently, thanks to successes in predicting three-dimensional protein structures, there has been an explosion of research exploring the opportunities offered by deep learning to address the problem of protein conformational landscape. In this work, an artificial intelligence system based on a variant of the Transformer architecture is introduced and applied to the problem of determining the ensemble of three-dimensional structures that a protein can access and their statistical weight. After being trained on a dataset of conformations of a particular protein obtained using classical all-atom molecular dynamics, this neural network is able to directly generate physically plausible protein conformations similar to those obtained both through molecular dynamics and experimentally. The ordered sequence of conformations obtained as output of the neural network rapidly converges towards the most populated regions of the protein's conformational landscape, suggesting that the system may have learned not only the protein's three-dimensional organization but also the thermodynamic weights of the various feasible conformations. These features, combined with its simplicity and low computational load, make this Transformer variant an ideal candidate for the development of systems capable of performing generative molecular dynamics.",
+    "subjects_page": "Quantitative Methods (q-bio.QM) ; Artificial Intelligence (cs.AI); Biomolecules (q-bio.BM)",
+    "url": "https://arxiv.org/abs/2611.19321",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.19321v1",
+      "title": "Generation of protein conformations using a simple inverted transformer",
+      "abstract": "Molecular dynamics is an extremely powerful approach for studying protein behavior, but it requires enormous computational resources to obtain an adequate sampling of possible conformations. Recently, thanks to successes in predicting three-dimensional protein structures, there has been an explosion of research exploring the opportunities offered by deep learning to address the problem of protein conformational landscape. In this work, an artificial intelligence system based on a variant of the Transformer architecture is introduced and applied to the problem of determining the ensemble of three-dimensional structures that a protein can access and their statistical weight. After being trained on a dataset of conformations of a particular protein obtained using classical all-atom molecular dynamics, this neural network is able to directly generate physically plausible protein conformations similar to those obtained both through molecular dynamics and experimentally. The ordered sequence of conformations obtained as output of the neural network rapidly converges towards the most populated regions of the protein's conformational landscape, suggesting that the system may have learned not only the protein's three-dimensional organization but also the thermodynamic weights of the various feasible conformations. These features, combined with its simplicity and low computational load, make this Transformer variant an ideal candidate for the development of systems capable of performing generative molecular dynamics.",
+      "authors": [
+        "Luigi Leonardo Palese"
+      ],
+      "published": "2026-11-14T10:32:49Z",
+      "updated": "2026-11-14T10:32:49Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.19321",
+      "pdf": "https://arxiv.org/pdf/2611.19321v1"
+    }
+  },
+  {
+    "id": "2611.19270",
+    "title_page": "Arginine metabolism drives tumor immune escape by shaping an immunosuppressive microenvironment",
+    "authors_page": "Chenghang Li , Haifeng Zhang , Yipu Qu , Jinzhi Lei",
+    "abstract_page": "The tumor microenvironment evolves through the ``elimination-equilibrium-escape'' paradigm, yet the quantitative mechanisms by which metabolic reprogramming contributes to immune evasion remain unclear. We develop a mathematical model of tumor-immune interactions to investigate how arginine metabolism shapes an immunosuppressive microenvironment. We establish the positivity and boundedness of solutions and analyze the existence and stability of equilibrium states. The model is calibrated using tumor growth data from three mouse cohorts and reproduces tumor growth patterns under distinct immune conditions. The calibrated model predicts faster tumor growth in immunocompetent mice than in immunodeficient controls, with macrophage dynamics accounting for this difference. It further predicts that arginine administration promotes tumor progression by enhancing macrophage polarization and weakening T cell-mediated tumor control. To account for interindividual heterogeneity, we develop the TVInfABC algorithm to generate a virtual mouse cohort. Moreover, our analysis indicates that tumor-associated macrophages can promote transitions from immunologically ``hot'' to ``cold'' states. Systematic pharmacodynamic simulations further uncover a synergy between arginine depletion (anti-ARG1) and immune checkpoint blockade (anti-PD-1/PD-L1). These results provide a mathematical basis for studying metabolic-immune interactions and for evaluating mechanism-based combination therapies.",
+    "subjects_page": "Tissues and Organs (q-bio.TO)",
+    "url": "https://arxiv.org/abs/2611.19270",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.19270v1",
+      "title": "Arginine metabolism drives tumor immune escape by shaping an immunosuppressive microenvironment",
+      "abstract": "The tumor microenvironment evolves through the ``elimination-equilibrium-escape'' paradigm, yet the quantitative mechanisms by which metabolic reprogramming contributes to immune evasion remain unclear. We develop a mathematical model of tumor-immune interactions to investigate how arginine metabolism shapes an immunosuppressive microenvironment. We establish the positivity and boundedness of solutions and analyze the existence and stability of equilibrium states. The model is calibrated using tumor growth data from three mouse cohorts and reproduces tumor growth patterns under distinct immune conditions. The calibrated model predicts faster tumor growth in immunocompetent mice than in immunodeficient controls, with macrophage dynamics accounting for this difference. It further predicts that arginine administration promotes tumor progression by enhancing macrophage polarization and weakening T cell-mediated tumor control. To account for interindividual heterogeneity, we develop the TVInfABC algorithm to generate a virtual mouse cohort. Moreover, our analysis indicates that tumor-associated macrophages can promote transitions from immunologically ``hot'' to ``cold'' states. Systematic pharmacodynamic simulations further uncover a synergy between arginine depletion (anti-ARG1) and immune checkpoint blockade (anti-PD-1/PD-L1). These results provide a mathematical basis for studying metabolic-immune interactions and for evaluating mechanism-based combination therapies.",
+      "authors": [
+        "Chenghang Li",
+        "Haifeng Zhang",
+        "Yipu Qu",
+        "Jinzhi Lei"
+      ],
+      "published": "2026-11-14T08:58:25Z",
+      "updated": "2026-11-14T08:58:25Z",
+      "categories": [
+        "q-bio.TO"
+      ],
+      "comment": "24 pages, 7 figures",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.19270",
+      "pdf": "https://arxiv.org/pdf/2611.19270v1"
+    }
+  },
+  {
+    "id": "2611.25422",
+    "title_page": "From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs",
+    "authors_page": "Huixin Zhan , Jason H. Moore",
+    "abstract_page": "Genomic foundation models provide variant-level evidence, but connecting that evidence to phenotype hypotheses requires accounting for uncertainty throughout structured reasoning. We introduce an uncertainty-conditioned path-energy framework that converts sequence predictions and calibrated predictive uncertainty into explicit distributions over graph-supported phenotype hypotheses, without patient-level phenotype supervision. An interpretable learned energy scores admissible gene--disease--phenotype routes, query uncertainty controls the target temperature, and path probabilities are aggregated into phenotype hypotheses. This formulation makes evidence quality an explicit determinant of hypothesis breadth while retaining traceable multi-path support. Exact normalization over enumerable candidate sets provides a reference for evaluating a Hastings-corrected learned revision operator. On AlzKB and Hetionet, phenotype-level entropy tracks upstream uncertainty, with Spearman correlations of 0.951 and 0.878, respectively; ablations identify the contribution of uncertainty conditioning. In masked-edge recovery, the model exceeds chance and degree-matched probability-permutation controls. Training the energy under the uncertainty-dependent temperature yields higher held-out recall@10 than training under a constant temperature of comparable magnitude. Under gene hold-out, recall@10 exceeds that of a trained DistMult embedding on 24 of 30 graph masks (0.183 versus 0.123); this difference is attributable mainly to three genes with many variants and is not established for all genes. These results establish an uncertainty-aware interface from genomic predictions to graph-supported phenotype hypotheses that combines interpretable probability allocation with held-out association recovery of explicitly stated scope.",
+    "subjects_page": "Machine Learning (cs.LG) ; Genomics (q-bio.GN)",
+    "url": "https://arxiv.org/abs/2611.25422",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.25422v1",
+      "title": "From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs",
+      "abstract": "Genomic foundation models provide variant-level evidence, but connecting that evidence to phenotype hypotheses requires accounting for uncertainty throughout structured reasoning. We introduce an uncertainty-conditioned path-energy framework that converts sequence predictions and calibrated predictive uncertainty into explicit distributions over graph-supported phenotype hypotheses, without patient-level phenotype supervision. An interpretable learned energy scores admissible gene--disease--phenotype routes, query uncertainty controls the target temperature, and path probabilities are aggregated into phenotype hypotheses. This formulation makes evidence quality an explicit determinant of hypothesis breadth while retaining traceable multi-path support. Exact normalization over enumerable candidate sets provides a reference for evaluating a Hastings-corrected learned revision operator. On AlzKB and Hetionet, phenotype-level entropy tracks upstream uncertainty, with Spearman correlations of 0.951 and 0.878, respectively; ablations identify the contribution of uncertainty conditioning. In masked-edge recovery, the model exceeds chance and degree-matched probability-permutation controls. Training the energy under the uncertainty-dependent temperature yields higher held-out recall@10 than training under a constant temperature of comparable magnitude. Under gene hold-out, recall@10 exceeds that of a trained DistMult embedding on 24 of 30 graph masks (0.183 versus 0.123); this difference is attributable mainly to three genes with many variants and is not established for all genes. These results establish an uncertainty-aware interface from genomic predictions to graph-supported phenotype hypotheses that combines interpretable probability allocation with held-out association recovery of explicitly stated scope.",
+      "authors": [
+        "Huixin Zhan",
+        "Jason H. Moore"
+      ],
+      "published": "2026-11-19T03:02:19Z",
+      "updated": "2026-11-19T03:02:19Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.25422",
+      "pdf": "https://arxiv.org/pdf/2611.25422v1"
+    }
+  },
+  {
+    "id": "2611.24764",
+    "title_page": "Horizontal Flow Matching for Single-Cell Spatiotemporal Dynamics",
+    "authors_page": "Zihan Wang , Jianzhe Li , Zhenyi Zhang , Peijie Zhou",
+    "abstract_page": "Learning the spatiotemporal dynamics of cells from spatial transcriptomics requires connecting snapshots of different cells acquired in different coordinate frames. A rotation or translation of a section can appear as cell movement and distort the inferred correspondence. We introduce horizontal flow matching, which learns changes in tissue organization, molecular state, and cell abundance up to shared rigid motion. The dynamics follow a continuity--reaction equation whose action assigns no cost to shared rigid motion, and the resulting horizontal projector removes this component from spatial prediction errors during learning and from predicted velocities during generation. An equivalent endpoint problem jointly estimates correspondence and relative pose in Wasserstein--Fisher--Rao geometry and yields analytic paths whose velocity and growth serve as regression targets. Regressing these targets recovers the horizontal dynamics under ideal population conditions. Our model, HORIZON, uses an equivariant transformer to predict velocity and growth from the current tissue, so that a tissue can be generated continuously from a single initial snapshot. On a simulated tissue observed in perturbed coordinate frames, alignment improves reconstruction and projection reduces rigid drift. On four spatial transcriptomics time courses, HORIZON reconstructs tissue geometry, gene expression, and cell abundance more accurately than existing spatial and unbalanced trajectory methods, and interpolates held-out developmental stages.",
+    "subjects_page": "Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Quantitative Methods (q-bio.QM)",
+    "url": "https://arxiv.org/abs/2611.24764",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.24764v1",
+      "title": "Horizontal Flow Matching for Single-Cell Spatiotemporal Dynamics",
+      "abstract": "Learning the spatiotemporal dynamics of cells from spatial transcriptomics requires connecting snapshots of different cells acquired in different coordinate frames. A rotation or translation of a section can appear as cell movement and distort the inferred correspondence. We introduce horizontal flow matching, which learns changes in tissue organization, molecular state, and cell abundance up to shared rigid motion. The dynamics follow a continuity--reaction equation whose action assigns no cost to shared rigid motion, and the resulting horizontal projector removes this component from spatial prediction errors during learning and from predicted velocities during generation. An equivalent endpoint problem jointly estimates correspondence and relative pose in Wasserstein--Fisher--Rao geometry and yields analytic paths whose velocity and growth serve as regression targets. Regressing these targets recovers the horizontal dynamics under ideal population conditions. Our model, HORIZON, uses an equivariant transformer to predict velocity and growth from the current tissue, so that a tissue can be generated continuously from a single initial snapshot. On a simulated tissue observed in perturbed coordinate frames, alignment improves reconstruction and projection reduces rigid drift. On four spatial transcriptomics time courses, HORIZON reconstructs tissue geometry, gene expression, and cell abundance more accurately than existing spatial and unbalanced trajectory methods, and interpolates held-out developmental stages.",
+      "authors": [
+        "Zihan Wang",
+        "Jianzhe Li",
+        "Zhenyi Zhang",
+        "Peijie Zhou"
+      ],
+      "published": "2026-11-18T17:16:53Z",
+      "updated": "2026-11-18T17:16:53Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "comment": "38 pages, 7 figures",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.24764",
+      "pdf": "https://arxiv.org/pdf/2611.24764v1"
+    }
+  },
+  {
+    "id": "2611.22230",
+    "title_page": "Discovery of new antiviral agents through artificial intelligence: in vitro and in vivo results",
+    "authors_page": "Roza Izmailyan , Mher Matevosyan , Hamlet Khachatryan , Anastasiya Shavina , Smbat Gevorgyan , Artur Ghazaryan , Irina Tirosyan , Yeva Gabrielyan , Marusya Ayvazyan , Boris Martirosyan , Vardan Harutyunyan , Hovakim Zakaryan",
+    "abstract_page": "In this research, we employed a deep reinforcement learning (RL)-based molecule design platform to generate a diverse set of compounds targeting the neuraminidase (NA) of influenza A and B viruses. A total of 60291 compounds were generated, of which 86.5% displayed superior physicochemical properties compared to oseltamivir. After narrowing down the selection through computational filters, nine compounds with non-sialic acid-like structures were selected for in vitro experiments. We identified two compounds, DS-22-inf-009 and DS-22-inf-021 that effectively inhibited the NAs of both influenza A and B viruses (IAV and IBV), including H275Y mutant strains at low micromolar concentrations. Molecular dynamics simulations revealed a similar pattern of interaction with amino acid residues as oseltamivir. In cell-based assays, DS-22-inf-009 and DS-22-inf-021 inhibited IAV and IBV in a dose-dependent manner with EC50 values ranging from 0.29 uM to 2.31 uM. Furthermore, animal experiments showed that both DS-22-inf-009 and DS-22-inf-021 exerted antiviral activity in mice, conferring 65% and 85% protection from IAV (H1N1 pdm09), and 65% and 100% protection from IBV (Yamagata lineage), respectively. Thus, these findings demonstrate the potential of RL to generate compounds with promising antiviral properties.",
+    "subjects_page": "Biomolecules (q-bio.BM) ; Machine Learning (cs.LG)",
+    "url": "https://arxiv.org/abs/2611.22230",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.22230v1",
+      "title": "Discovery of new antiviral agents through artificial intelligence: in vitro and in vivo results",
+      "abstract": "In this research, we employed a deep reinforcement learning (RL)-based molecule design platform to generate a diverse set of compounds targeting the neuraminidase (NA) of influenza A and B viruses. A total of 60291 compounds were generated, of which 86.5% displayed superior physicochemical properties compared to oseltamivir. After narrowing down the selection through computational filters, nine compounds with non-sialic acid-like structures were selected for in vitro experiments. We identified two compounds, DS-22-inf-009 and DS-22-inf-021 that effectively inhibited the NAs of both influenza A and B viruses (IAV and IBV), including H275Y mutant strains at low micromolar concentrations. Molecular dynamics simulations revealed a similar pattern of interaction with amino acid residues as oseltamivir. In cell-based assays, DS-22-inf-009 and DS-22-inf-021 inhibited IAV and IBV in a dose-dependent manner with EC50 values ranging from 0.29 uM to 2.31 uM. Furthermore, animal experiments showed that both DS-22-inf-009 and DS-22-inf-021 exerted antiviral activity in mice, conferring 65% and 85% protection from IAV (H1N1 pdm09), and 65% and 100% protection from IBV (Yamagata lineage), respectively. Thus, these findings demonstrate the potential of RL to generate compounds with promising antiviral properties.",
+      "authors": [
+        "Roza Izmailyan",
+        "Mher Matevosyan",
+        "Hamlet Khachatryan",
+        "Anastasiya Shavina",
+        "Smbat Gevorgyan",
+        "Artur Ghazaryan",
+        "Irina Tirosyan",
+        "Yeva Gabrielyan",
+        "Marusya Ayvazyan",
+        "Boris Martirosyan",
+        "Vardan Harutyunyan",
+        "Hovakim Zakaryan"
+      ],
+      "published": "2026-11-17T05:22:24Z",
+      "updated": "2026-11-17T05:22:24Z",
+      "categories": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "comment": "Accepted manuscript. 13 pages, 5 figures; supplementary material included (supplementary text, Tables S1-S2, Figures S1-S5). Published in Antiviral Research 222 (2024) 105818",
+      "journal_ref": "",
+      "doi": "10.1016/j.antiviral.2024.105818",
+      "url": "https://arxiv.org/abs/2611.22230",
+      "pdf": "https://arxiv.org/pdf/2611.22230v1"
+    }
+  },
+  {
+    "id": "2611.20255",
+    "title_page": "Deep Sequence Model for Genome Wide Discovery of Coding and Regulatory Element Signatures",
+    "authors_page": "Rayhaneh Shabani Nia , Ali Karkehabadi",
+    "abstract_page": "Interpreting deep neural networks for genomic sequence classification remains challenging despite strong predictive performance. We develop a lightweight CNN with post-training gradient-based analysis to identify which sequence positions drive coding versus intergenomic classification. Applied to the standardized demo_coding_vs_intergenomic_seqs dataset, our model achieves 91.87% validation accuracy while revealing interpretable patterns: nine hot spots with consistently high importance, clear class-specific separation at positions 20-100 (coding) and 150-190 (intergenomic), and a strong mean-variance correlation (r = 0.530) indicating robust discriminative features. Gradient-based importance analysis shows that the model implicitly learns biologically meaningful sequence distinctions without explicit annotations. This work demonstrates that neural network interpretability and accuracy can coexist, providing a framework for understanding genomic sequence classification and enabling biology-driven hypothesis generation.",
+    "subjects_page": "Machine Learning (cs.LG) ; Genomics (q-bio.GN)",
+    "url": "https://arxiv.org/abs/2611.20255",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.20255v1",
+      "title": "Deep Sequence Model for Genome Wide Discovery of Coding and Regulatory Element Signatures",
+      "abstract": "Interpreting deep neural networks for genomic sequence classification remains challenging despite strong predictive performance. We develop a lightweight CNN with post-training gradient-based analysis to identify which sequence positions drive coding versus intergenomic classification. Applied to the standardized demo_coding_vs_intergenomic_seqs dataset, our model achieves 91.87% validation accuracy while revealing interpretable patterns: nine hot spots with consistently high importance, clear class-specific separation at positions 20-100 (coding) and 150-190 (intergenomic), and a strong mean-variance correlation (r = 0.530) indicating robust discriminative features. Gradient-based importance analysis shows that the model implicitly learns biologically meaningful sequence distinctions without explicit annotations. This work demonstrates that neural network interpretability and accuracy can coexist, providing a framework for understanding genomic sequence classification and enabling biology-driven hypothesis generation.",
+      "authors": [
+        "Rayhaneh Shabani Nia",
+        "Ali Karkehabadi"
+      ],
+      "published": "2026-11-15T21:20:49Z",
+      "updated": "2026-11-15T21:20:49Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "comment": "4 pages, 3 figures, 1 table. Accepted at CVIS 2025. A shorter 3-page version was published in the Journal of Computational Vision and Imaging Systems, Vol. 11, No. 1 (2026)",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.20255",
+      "pdf": "https://arxiv.org/pdf/2611.20255v1"
+    }
+  },
+  {
+    "id": "2611.23794",
+    "title_page": "Benchmarking Traditional and Learning-Based Reference-Free Compressors for Long-Read Sequencing Data",
+    "authors_page": "Huidong Ma , Hui Sun , Xinyan Shi , Cheng Zhong , Xiaoguang Liu , Gang Wang",
+    "abstract_page": "Long-read sequencing technologies generate large volumes of data, creating substantial storage and transmission demands. Although reference-based compressors can achieve high compression, their reliance on an appropriate reference genome limits their use. We present LRCBench, a benchmark and survey of reference-free lossless compressors for long-read sequencing data. We review traditional and learning-based general-purpose and sequencing-specific methods, then evaluate 35 compressors on 16 real-world datasets from Oxford Nanopore and PacBio platforms. We compare compression ratio, storage savings, runtime, peak memory use, and robustness across datasets. Learning-based compressors are evaluated on six MinION datasets because of their high computational costs. CoLoRd achieves the best overall compression ratios in our experiments, while other methods offer trade-offs in speed, memory use, and robustness. We also examine multithreaded speedup and discuss future directions in parallel acceleration, privacy protection, adaptive parameter tuning, and hardware-algorithm co-design.",
+    "subjects_page": "Information Theory (cs.IT) ; Genomics (q-bio.GN)",
+    "url": "https://arxiv.org/abs/2611.23794",
+    "http_status": 200,
+    "api_record": {
+      "id": "2611.23794v1",
+      "title": "Benchmarking Traditional and Learning-Based Reference-Free Compressors for Long-Read Sequencing Data",
+      "abstract": "Long-read sequencing technologies generate large volumes of data, creating substantial storage and transmission demands. Although reference-based compressors can achieve high compression, their reliance on an appropriate reference genome limits their use. We present LRCBench, a benchmark and survey of reference-free lossless compressors for long-read sequencing data. We review traditional and learning-based general-purpose and sequencing-specific methods, then evaluate 35 compressors on 16 real-world datasets from Oxford Nanopore and PacBio platforms. We compare compression ratio, storage savings, runtime, peak memory use, and robustness across datasets. Learning-based compressors are evaluated on six MinION datasets because of their high computational costs. CoLoRd achieves the best overall compression ratios in our experiments, while other methods offer trade-offs in speed, memory use, and robustness. We also examine multithreaded speedup and discuss future directions in parallel acceleration, privacy protection, adaptive parameter tuning, and hardware-algorithm co-design.",
+      "authors": [
+        "Huidong Ma",
+        "Hui Sun",
+        "Xinyan Shi",
+        "Cheng Zhong",
+        "Xiaoguang Liu",
+        "Gang Wang"
+      ],
+      "published": "2026-11-18T04:00:08Z",
+      "updated": "2026-11-18T04:00:08Z",
+      "categories": [
+        "cs.IT",
+        "q-bio.GN"
+      ],
+      "comment": "",
+      "journal_ref": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.23794",
+      "pdf": "https://arxiv.org/pdf/2611.23794v1"
+    }
+  }
+]

@@ -1,0 +1,1895 @@
+Rule-based curation and validation in batch fermentation of a genome-scale metabolic
+model of the mycoprotein fungusFusarium venenatumA3/5
+Jaewook Lee, Thomas Vinestock, Miao Guo∗
+Department of Engineering, Faculty of Natural, Mathematical & Engineering Sciences, King’s College London, Strand, London, WC2R 2LS, United Kingdom
+Abstract
+Sustainable protein supply is a central food-system challenge, and mycoprotein fromFusarium venenatumis an established,
+low-impact option. Its production relies on refined glucose, and yields on lower-cost feedstocks are normally found by fermentation.
+Genome-scale metabolic models (GEMs) can estimate these yields before any experiment, but to our knowledge none has been
+published for this fungus, and models transferred from related species inherit template errors. Here we built iJL1143, a GEM of
+strain A3/5, from anAspergillus nigermodel and curated it with rules based on homology, thermodynamics and the literature. We
+compared it with the uncurated Draft model in four oxygen-enriched batch fermentations on glucose and fructose. Thermodynamic
+directionality rules and the direction of the mitochondrial GTP/GDP carrier brought the maximum ATP yield of the Draft model
+within the theoretical range. As a result, with sequential sugar uptake and no fitted parameters, the mean final-biomass discrepancy
+fell from 20% for the Draft model to 6% for iJL1143. Sequential uptake and a fitted lag time also reduced its biomass time-course
+error from 4.88 to 0.42 gL−1. In oxygen-enriched batch fermentation, iJL1143 can therefore estimate obtainable biomass before
+fermentation, which could reduce the experiments needed to develop lower-cost mycoprotein.
+Keywords:genome-scale metabolic model,Fusarium venenatum, mycoprotein, dynamic flux balance analysis, model curation, batch
+fermentation
+1. Introduction
+Mycoprotein produced by aerobic fermentation ofFusarium
+venenatumA3/5 is an established food protein with lower green-
+house gas emissions and land use than many livestock-derived
+proteins [1–3]. Industrial production relies primarily on refined
+glucose [4]. The biomass formed per unit of sugar influences
+boththechoiceoffeedstockandthecostoftheprocess. Glucose
+and fructose mixtures from sucrose hydrolysates and from food
+and beverage side-streams offer candidate low-cost feedstocks
+[4]. A model that estimates biomass yield and the course of a
+fermentation on such feedstocks could reduce the experiments
+needed to assess them.
+Kinetic models describe such fermentations closely, but they
+take their yields from the data they fit. A dual-substrate Monod
+model of glucose and fructose fermentations used 15 fitted
+parameters, two of them yield coefficients [4]. A yield fitted in
+this way cannot be estimated before the experiment.
+Genome-scale metabolic models (GEMs) instead estimate
+yield from the stoichiometry and energetics of the metabolic
+network [5,6]. Dynamic flux balance analysis (dFBA) solves a
+linear programme at each time step and uses the resulting fluxes
+toupdatebiomassandextracellularconcentrationsthroughmass
+balances [7].
+∗Corresponding author.
+Email address:miao.guo@kcl.ac.uk(Miao Guo)
+GEMs exist for industrial filamentous fungi, includingAs-
+pergillusniger[ 8]andFusariumfujikuroi[ 9]. Toourknowledge,
+no GEM ofF. venenatumhas been published. Transferring a
+network from another related species may propagate reaction
+assignments or directionality constraints that are unsupported in
+the target organism. One consequence of inconsistent reaction
+directionality is the formation of thermodynamically infeasible
+energy-generating cycles, and they occur in over 85% of models
+without extensive manual curation [10]. Curation can remove
+theseerrors,butitsstepsareoftenhardtoreproduceortotransfer
+to another species.
+Rules based on homology, thermodynamics and the literature
+offer a reproducible alternative. Comparing the curated model
+with the uncurated draft then shows what the rules contribute.
+Oxygen-enriched batch fermentation offers a clean first test,
+because a growth-maximising model is most defensible when
+oxygen does not limit growth.
+We therefore hypothesised that, in oxygen-enriched batch
+fermentation, rule-based curation alone would bring predicted
+final biomass closer to measurement, because yield is set by
+networkstoichiometryandenergetics. Timecoursesalsodepend
+on sequential sugar uptake and on thelag phase, which a growth-
+maximising model does not contain. We expected that adding
+both would substantially improve agreement with the measured
+time courses.
+Here we reconstruct iJL1143, a GEM ofF. venenatumA3/5,
+fromtheA.nigermodeliJB1325andcurateitwithrulesbasedon
+homology, thermodynamics and the literature. We compare the
+arXiv:2611.21775v1  [q-bio.MN]  16 Nov 2026
+rule-curated model with the uncurated Draft model across four
+initial glucose–fructose compositions under oxygen-enriched
+batch fermentation conditions. We also add sequential sugar
+uptake and lag time, examine measured by-products that the
+model fails to reproduce, and test whether medium pH can be
+explained by growth-associated stoichiometry.
+2. Materials and methods
+2.1. Model reconstruction and curation
+2.1.1. Template model and orthology mapping
+Template-based reconstruction builds a draft model for a
+new species by transferring the reactions of an existing model
+whose genes have homologues in the new species [11]. The
+transfer therefore depends on how genes are paired between
+the two genomes. Reciprocal best hits, pairs of genes in two
+genomes that are each other’s best hit, appear to be the most
+common working definition of orthology [12]. Orthogroups
+extend orthology to several species as sets of genes descended
+from a single gene in their last common ancestor [13], and so
+also capture the one-to-many relationships that reciprocal best
+hits cannot. The paired genes enter the model through gene–
+protein–reaction associations, called gene associations here,
+which connect genes, proteins and reactions through logical
+AND and OR relationships [5].
+The CBS 513.88 version of iJB1325 (2,320 reactions, 1,373
+genes) served as the template [8]. We chose it because it is a
+community-curated model of an industrial filamentous fungus
+thatpassed373of471testsofgrowth,genedeletionandnetwork
+function [8]. Its genes were mapped to theF. venenatumA3/5
+proteome [14] by reciprocal best hits from blastp in BLAST+
+2.16.0 [15], with at least 40% identity, at least 70% query
+coverage and𝐸≤10 −30. These cut-offs follow those used to
+build thePenicillium chrysogenummodel with RAVEN, except
+foracoverageof70%insteadof50%andnominimumalignment
+length [16]. To check these pairs and to find orthologs that a
+one-to-one search misses, orthogroups were also built across
+10 fungal proteomes with OrthoFinder 2.5.5, with DIAMOND
+2.2.8 as the sequence aligner [13, 17]. For the Curated model,
+templategeneswithoutareciprocalbesthitwerethenmappedto
+theF.venenatummembersoftheirorthogroup. Geneassociations
+were rewritten as Boolean rules overF. venenatumgenes, and a
+complex was retained when at least one of its subunits had an
+ortholog. Nine subunits of complexes, in nine reactions, had no
+ortholog. To search for a homologue that the reciprocal search
+had missed, each was aligned against the whole proteome by
+Smith–Waterman local alignment [18]. The alignment used the
+BLOSUM62 matrix, gap penalties of 11 for opening and 1 for
+extension, and the same identity and coverage thresholds. Only
+the sulfur carrier of molybdopterin synthase matched a protein
+of the same function, which took its place in the association, so
+theotherassociationsnameonlythesubunitsthathaveorthologs.
+Finally, to assess the evidence behind each association, the
+EnzymeCommission(EC)numberofthereactionwascompared
+with the UniProt EC annotation of its gene [19].
+2.1.2. Rule-based curation
+Curation converts a draft reconstruction into a curated one
+by re-evaluating its content [5]. It adds reactions missing from
+the network by gap-filling and defines the exchange reactions,
+which represent the system boundary through which metabolites
+enter and leave [5]. Curation also sets the direction of each
+reaction, and thermodynamics provides a measure for this in
+the reversibility index,Γ, the range of metabolite concentrations
+required to reverse a reaction [20]. The further Γ is from 1,
+the more irreversible the reaction. A value of 1,000 means
+that reversal would need concentrations spanning three orders
+of magnitude, about 3 µM to 3 mM around 100 µM [20].
+eQuilibrator estimates the standard Gibbs energies behind the
+index with the component contribution method [21, 22]. Finally,
+curationsetstheenergycostofmaintenance,representedasATP
+hydrolysis, growth-associated within the biomass reaction and
+non-growth-associated in a reaction of its own [5]. To compare
+predicted growth with observed yields, biomass is defined to
+have a molecular weight of 1 gmmol−1 [23].
+SixstagesofruleswereappliedtoobtainiJL1143,theCurated
+model (Fig. 1a, Supplementary Table S1). Stage 1 retained only
+reactions supported by orthology, which removed 85 template
+reactions. Because orthology can miss a gene whose function is
+annotated,Stage2restoredsixreactionssupportedbytheUniProt
+EC annotation of the proteome, and gap-filling added three
+reactionsneededforbiomasssynthesis. Stage3requiredevidence
+for secretion. A metabolite could leave only through a gene-
+supported transporter or with literature support, which closed
+330 exchange reactions. Stage 4 applied redox rules that remove
+cost-free routes between NADH and NADPH and between the
+cytosolicandmitochondrialpools,becausesuchrouteswouldlet
+the model convert one cofactor into the other without an energy
+cost. It also made NAD(P)-dependent reactions irreversible
+where|lnΓ|≥7 , that is,Γ of about 1,100 or more, and the
+estimate lay more than two standard errors from zero, unless
+that direction blocked biomass synthesis. Γ was computed
+for concentrations around 1 mM at the default conditions of
+eQuilibrator, pH 7.5, pMg 3, ionic strength 0.25 M and 25°C.
+These conditions were used in every compartment, and the rule
+was not applied to transport reactions. Because biomass yield
+depends on what the biomass is made of, Stage 5 normalised
+biomass at 1 gmmol−1 to the macromolecular composition of
+growing A3/5 mycelium (Supplementary Table S2). Protein
+(37%ofdrymass)andRNA(9%)weretakenfrommeasurements
+inthisstrainbeforeRNAreduction[ 24,25]. Cellwall(17%)and
+lipid (9%) were derived from the composition of mycoprotein,
+the RNA-reduced product of the same strain [26], and from the
+0.68gofproductleftpergramofmyceliumafterRNAreduction
+[24]. DNA (0.9%) was taken fromAspergillus oryzae[27],
+and the dry mass left after these fractions and 5% ash [26,28]
+was assigned to the small-molecule pool. Stage 5 also set the
+maintenance costs, both taken fromA. niger, with a non-growth-
+associatedmaintenance(NGAM)of1.9mmolATPpergramdry
+weight (gDW) per hour [29]. Growth-associated maintenance
+(61 mmol ATP per gDW) was taken from the template, which
+inherits it from iMA871. There it was calculated from the
+2
+biomass yield ofA. nigeron glucose with P/O ratios of 2.64
+and 1.64 [29]. Stage 6 extended the thermodynamic criterion
+of Stage 4 to all metabolic reactions. It also charged the export
+of organic acids one ATP per negative charge, which extends
+the ATP cost of lactate export in yeast to divalent anions that
+leave with an additional proton [30–32]. Finally, it restricted
+the mitochondrial GTP/GDP carrier to GTP import, its probable
+physiologicaldirectioninSaccharomycescerevisiae[ 33],sothat
+mitochondrial ATP cannot reach the cytosol as GTP without the
+proton cost of the ADP/ATP carrier. iJL1143 contains all six
+stages and no other change. The variants in which stages were
+removed or added, and the inputs changed in Section 2.2.2, were
+analysed only to explain its behaviour and are not part of the
+model.
+Both models retain the respiratory stoichiometry of the tem-
+plate, which determines their P/O ratios. The P/O ratio is the
+number of ATP formed per oxygen atom reduced. In the tem-
+plate stoichiometry, each ATP delivered to the cytosol uses 4.88
+protons, 3.88 at ATP synthase and one at the ADP/ATP carrier.
+With 12 protons pumped per NADH and 8 per succinate, this
+results in P/O ratios of 2.46 and 1.64. This stoichiometry was
+retained because these ratios lie close to the measured mito-
+chondrial ratios of about 2.5 and 1.5 [34] and to the 2.64 and
+1.64 set in iMA871 [29], the source of the growth-associated
+maintenance. Because these ratios are taken from the template
+and were not measured inF. venenatum, lower P/O ratios were
+tested in the sensitivity analysis (Section 2.2.2), but iJL1143
+retains the template values.
+2.1.3. Draft model
+The Draft model is the comparator for every test (Fig. 1a). It
+representstheuncuratedstartingpointofareconstruction,which
+can contain reactions that curation later removes [5]. The Draft
+model therefore retains every reaction of the template model,
+with gene associations rewritten through reciprocal best hits
+only. To isolate the effect of the network, it takes the biomass
+composition and maintenance of the Curated model, with non-
+growth-associated maintenance as one added reaction, so the
+two models differ in their network and gene associations and
+not in biomass or maintenance. A draft built with an orthology
+filter would lack 85 template reactions, nine of which Stage 2
+restores. With these nine retained, this filter changes neither the
+maximum ATP yield nor the biomass yield of the Draft model
+(Supplementary Table S3), so the choice of draft does not affect
+the yield comparison.
+2.2. Simulation and analysis
+2.2.1. Dynamic flux balance analysis
+Flux balance analysis (FBA) predicts the flow of metabolites
+throughametabolicnetwork,andfromitthegrowthrate,without
+kineticparameters[ 6]. Itassumesthatinternalmetabolitesareat
+steady state, so the stoichiometric matrixSand the flux vectorv
+satisfyamassbalance,anditsetslowerandupperboundsoneach
+flux. These constraints allow a range of flux distributions, and
+linear programming selects the one that maximises an objective,
+which for growth is the biomass flux𝑣bio (Eq. 1).
+max
+v
+𝑣bio
+subject toSv=0,v min≤v≤v max
+(1)
+FBA itself does not predict metabolite concentrations and, in its
+basic form, does not account for regulation. dFBA adds the time
+course by solving Eq. 1 at each time step and then updating the
+extracellular concentrations [7].
+dFBA simulated the four batch fermentations (Section 2.3.1)
+by maximising growth within sugar uptake and oxygen bounds.
+At each time step, COBRApy [35] with the GLPK solver solved
+Eq.1withsugaruptakeboundsfromMichaelis–Mentenkinetics,
+andbiomassandextracellularconcentrationswerethenadvanced
+by a carbon-conserving explicit Euler step. A step of 0.5 h was
+sufficientforthesecomparisons. Reducingitto0.1hchangedthe
+mean discrepancy in final biomass by less than 0.3 percentage
+points for either model and, with lag time refitted, the biomass
+RMSE by less than 0.01 gL−1. Runs covered 150 h. Steps
+without a feasible solution occurred only after all sugars were
+depleted,whenmaintenancecouldnotbemet,andwererecorded
+with zero flux, so that biomass then stayed constant. Because
+FBAdoesnotpredicthowfastsugarsaretakenup,themaximum
+uptake rate of each model was set from the growth rate of
+the industrial process. It equals 0.20 h−1, the upper end of that
+growthrate[ 3],dividedbytheaerobicbiomassyieldofthemodel
+at an uptake of 1 mmolgDW−1h−1. Because maintenance then
+accountsforasmallerfractionoftheATPdemand,growthatthis
+uptake is 0.20–0.21 h−1. Growth rate is therefore an input of the
+simulations and not a prediction, whereas biomass yield follows
+from the network. A𝐾m of 0.26 mM was assumed for both
+sugars, between the values reported for theA. nigertransporter
+MstA on glucose (0.025 mM) and fructose (4.5 mM) [36]. Its
+effect was tested across that range (Section 2.2.2). Specific
+O2 uptake was bounded by the maximum oxygen transfer rate
+divided by the biomass concentration, so that oxygen limits
+growth only when the demand of the culture exceeds transfer.
+All inputs and their origins are listed in Table 1.
+Runs were compared in four cumulative settings that add
+sequentialsugaruptakeandthenlagtime. Thesesettingschange
+only the simulation and not the metabolic network of either
+model. The base setting used an initial biomass of 0.01 gL−1
+and simultaneous sugar uptake, with each sugar at its own
+maximum uptake rate. Filamentous fungi, however, use a
+readily available carbon source in preference to others through
+carbon catabolite repression [37]. The second setting therefore
+represented sequential uptake, which blocks fructose uptake
+whileglucoseremainsabove0.5mM.Thisthresholdisassumed,
+so thresholds of 0.05 and 5 mM were also tested, with lag time
+refitted. They changed the discrepancy in final biomass of the
+mixed fermentations by less than 0.3 percentage points and their
+biomass RMSE by 0.1 gL−1 or less, so the choice of threshold
+does not affect the comparison.
+The third and fourth settings represented the lag phase by
+fitting the initial biomass, first, as one shared value and then,
+as one value per condition. This approach is valid because a
+lower initial biomass delays growth but leaves final biomass
+3
+nearly unchanged. Under exponential growth it is equivalent to
+a lag time, because the product of lag time and growth rate is a
+transformation of the initial physiological state of the inoculum
+[38]. The fitted value therefore combines inoculum size and lag.
+The fit matched the simulated time to half final biomass to the
+measuredone,atwhichthemeanonlinebiomassofthereplicates
+reacheshalfthemeanfinaldryweight. Valuesperconditionwere
+obtained by a root search between10−6 and 0.03 gL−1, and the
+sharedvalueminimisedthesummedsquaredtimingerroroverthe
+four conditions (Supplementary Note 1, Supplementary Fig. S1).
+Each model was fitted separately, because the two models reach
+different final biomass at different maximum uptake rates, so an
+initial biomass fitted to one model would not align the other. A
+valueperconditionisjustifiedbecauseeachfermentationusedits
+own inoculum, and our previous work suggested that differences
+in lag reflect the age and viability of the conidia [4].
+2.2.2. Energy tests, stage removal, sensitivity and oxygen limita-
+tion
+To test whether the energetics of each model stay within
+physical limits, its maximum ATP yield, the largest amount
+of ATP it can form per mol glucose, was computed on aerobic
+minimalmediumwithnomaintenance. Energy-generatingcycles
+were tested by asking whether a cofactor can be recharged with
+no substrate uptake [10], for nucleoside triphosphates, reduced
+cofactors and the mitochondrial proton gradient. Two further
+cycle tests asked whether NADH can be converted to NADPH
+at no cost, in the cytosol and in mitochondria, which are the
+routes that the redox rules of Stage 4 target. To find the effect
+of each curation stage, the reactions listed under that stage in
+the change log were returned to their Draft state in the Curated
+model. Separately, the same reactions were given their Curated
+state in the Draft model (Supplementary Table S3). Because the
+two sets of directionality rules might substitute for each other,
+they were also removed together from the Curated model. In the
+Draft model, the carrier rule was combined with each set and
+with both, and these models were run in the batch fermentations
+like the Draft and Curated models.
+Several inputs are borrowed or derived rather than measured
+in this strain. The sensitivity of the yield to each was therefore
+computed at the maximum sugar uptake rate of the unchanged
+model,withO 2 notlimiting(SupplementaryNote2,Supplemen-
+tary Fig. S2). Each macromolecular mass fraction was changed
+by±25%, with the other fractions rescaled so that biomass stays
+1 gmmol−1 [40], and each ATP cost was changed by the same
+amount. The P/O ratio for NADH was reduced to 2.25 and
+2.0 by increasing the number of protons used at ATP synthase.
+The assumed𝐾m was varied from 0.025 to 4.5 mM with initial
+biomass held at its fitted value. Model quality was scored with
+MEMOTE 0.17, a standardised set of tests for genome-scale
+metabolic models [41] (Supplementary Table S4).
+Oxygen limitation was tested as an explanation of glycerol
+formation, both by comparison with the experimental data and
+in the models. In the experimental data, glycerol concentrations
+werecomparedwiththedissolvedO 2andonlinebiomassreadings
+ateachhigh-performanceliquidchromatography(HPLC)sample.
+The timing of events used the nearest reading, whereas rates and
+comparisons between replicates used readings smoothed by a
+running median over five points and interpolated to the sample
+time. The net glycerol rate between two samples is the change in
+concentration divided by the integral of online biomass over that
+interval, and its relation to dissolved O2 is given as a Pearson
+correlation coefficient. In both models, specific O2 uptake was
+capped at 80, 60, 40 and 20% of the smallest O2 uptake that
+allows maximal growth at the maximum sugar uptake rate, with
+sugar uptake either bounded, as in dFBA, or fixed at that rate.
+Fluxvariabilityanalysis,whichfindstherangeofeachfluxacross
+solutions with the same objective value [42], was then used to
+obtaintheexportrangesatthegrowthoptimum. Afurthertestof
+the Curated model asked whether an O2 shortfall could produce
+glycerol at the measured rate. It fixed sugar uptake, capped
+O2 uptake below that requirement and left glycerol as the only
+carbonexport,withtheinorganicexportsthatcancarryelectrons
+closed.
+2.2.3. Medium pH model
+Medium pH was computed from a charge balance over phos-
+phate,ammoniumandthemeasuredorganicacids,withoutfitted
+parameters. A charge balance finds the pH at which the charges
+of all ions in a solution sum to zero, so pH follows once the
+amount of each ion is known. Growth changes these amounts
+in two ways. One proton is released per ammonium nitrogen
+assimilated,asmeasuredinyeastchemostats[ 43],andphosphate
+and sulfate are taken up according to the biomass composition
+(6.25 mmol N, 0.38 mmol P and 0.07 mmol S per gDW). Be-
+cause the ionic strength of the medium is high, 0.446 M, activity
+coefficients were taken from the Davies equation for electrolytes
+in water [44], which gives an apparent phosphate p𝐾a2 of 6.79.
+The balance was driven by the online biomass of each replicate,
+and the net charge of the ions it does not track was set once from
+the initial pH of each replicate. No other quantity was adjusted,
+and the effects were added in an order fixed beforehand, so that
+no step could be tuned to the measured pH.
+2.2.4. Error metrics and statistics
+Final biomass tests the models because neither biomass com-
+position nor maintenance was derived from these fermentations,
+as recommended for validating growth predictions [45]. Its
+discrepancy is the difference between the predicted value and
+the measured mean, given in gL−1 and as a percentage of the
+measured mean. The absolute value of this difference is plotted,
+and its mean over the four conditions is the mean discrepancy.
+Predicted biomass is ash-free, whereas measured dry weight
+includes ash, and the two were compared without an ash cor-
+rection. The ash of A3/5 mycelium, about 5% of dry mass
+(Supplementary Table S2), is an upper bound for the inorganic
+mass that the model lacks. It is only an upper bound because
+part of it is the phosphorus of nucleic acids and lipids, which the
+model includes.
+Time-course root mean square error (RMSE) was computed
+over all replicates and measured time points of a condition, with
+biomass against online biomass and sugars against HPLC, and
+then averaged over the four conditions. For comparison with a
+kinetic model of the same fermentations [4], the mean absolute
+4
+Table 1:Model and fermentation inputs and their origin.
+Input Value Origin Source
+Template model iJB1325 (A. niger), CBS 513.88 version literature [8], Additional file 3
+Biomass composition Fractions of growing mycelium
+(Supplementary Table S2), 1 gmmol−1
+measured (protein,
+RNA), derived
+(others)
+[24–27]
+Non-growth-associated
+maintenance
+1.9 mmol ATP gDW−1 h−1 literature
+(A. niger)
+[29]
+Growth-associated
+maintenance
+61 mmol ATP gDW−1 literature
+(A. niger)
+[29]
+P/O ratio 2.46 for NADH, 1.64 for succinate literature
+(template)
+12 and 8 protons pumped, 4.88 per cytosolic
+ATP
+Acid export cost 1 ATP per negative charge at pH 7 literature [30–32]
+Growth rate that sets the
+maximum sugar uptake
+0.20 h−1 literature growth rate of the Quorn process,
+0.17–0.20 h−1, [3]
+Sugar𝐾 m 0.26 mM assumed between the glucose (0.025 mM) and fructose
+(4.5 mM) values ofA. nigerMstA, [36]
+Maximum oxygen transfer
+rate
+46.9 mmolL−1 h−1 measured (𝑘L𝑎)𝑘 L𝑎96 h−1, 200% air [4]
+Initial biomass 0.01 gL −1 in the base settings; fitted per
+condition
+assumed; fitted time to half final biomass, which sets the lag
+time
+Sequential sugar uptake other sugars blocked above 0.5 mM glucose assumed carbon catabolite repression, [37]
+Initial sugars 15 gL −1 in total, as prepared measured (recipe) [4]
+Medium KH 2PO4 203 mM, NH4Cl 76 mM in the
+broth (46 mL of medium per 50 mL)
+measured (recipe) [4] (KH 2PO4 30 gL−1, volumes), [39]
+(NH4Cl 4.4 gL−1)
+Ionic strength 0.446 M, phosphate p𝐾 ′a2 6.79 measured (recipe) calculated with the Davies equation and the
+charge balance
+Only initial biomass, which sets the lag time, is fitted. Final biomass barely depends on it.
+error (MAE) was computed in the same way. The pH RMSE
+was computed per replicate and averaged over the 12 replicates.
+Values marked±are the standard deviation of three replicates.
+Nostatisticaltestsarereported,becauseeachconditionhasthree
+replicates and differences between conditions are not claimed.
+2.3. Batch fermentation data
+2.3.1. Fermentations and online measurements
+Thebatchfermentationsonglucoseandfructosewerereported
+in our previous work [4].F. venenatumA3/5 was inoculated at
+10,000 spores per mL into 50 mL of Rank Hovis McDougall
+(RHM) medium in 250 mL baffled shake flasks at 28°C and
+220 rpm. Total sugar was 15 gL−1 in four conditions that differ
+in the ratio of glucose to fructose, written Glc 15, Glc 10 +
+Fru 5, Glc 5 + Fru 10 and Fru 15 (glucose and fructose in
+gL−1), with three replicates each. To increase oxygen trans-
+fer, the humidified headspace contained 200% of the oxygen
+of air, and the volumetric mass transfer coefficient,𝑘L𝑎, was
+96 h−1. With twice the air-saturation O2 concentration of water
+at 28°C, this corresponds to a maximum oxygen transfer rate
+of 46.9 mmolL−1h−1, which bounds O2 uptake in the models
+(Section 2.2.1). Online biomass, pH and dissolved O2 were
+recorded with PreSens shake flask readers. Online biomass is
+inferred from reflectance and was calibrated to the start and end
+points of each replicate. Online readings and HPLC samples are
+placed on a common time axis, which starts at the first HPLC
+sample.
+2.3.2. Final biomass and yield
+Yield is the gravimetric final biomass concentration divided
+by the nominal initial sugar concentration. Final biomass was
+measured by vacuum filtration and drying to constant mass at
+65°C.Itsconcentrationisthedryweightdividedbytheeffective
+final volume, which is the initial volume minus all sampled
+volumes (pH, HPLC and biomass). Biomass and sugars do
+not evaporate, so water loss does not affect this value. One
+Fru 15 replicate lost 18.6 mL more volume than was removed
+by sampling, compared with 3.6 and 6.6 mL for the other two.
+This replicate was included, and excluding it would change the
+Fru 15 yield from 0.53 to 0.54 gg−1.
+2.3.3. Liquid chromatography and peak identity
+Sugars and products were measured by HPLC on a Bio-Rad
+AminexHPX-87Hcolumnwith0.001MH 2SO4at0.4mLmin −1
+and 30°C. The injection volume was 5µL for Glc 15 and Glc 5
++ Fru 10 and 10µL for the other two, and a Shimadzu RID-20A
+detector recorded refractive index. Absorbance from 190 to
+254 nm was recorded by a photodiode array detector placed
+before it and was used only to distinguish carboxylic acids
+from polyols in peak identification (Supplementary Note 3).
+Sugar concentrations are peak areas scaled to the nominal initial
+concentration of each run, and glycerol, ethanol and acetate
+were quantified with external calibration factors. Peak identity
+was checked in the raw instrument files against single-analyte
+standards (Supplementary Note 3). Medium phosphate elutes at
+11.5–12.4 min and covers pyruvic and citric acids, so these two
+5
+could not be measured.
+A peak at 16.1 min, tentatively assigned to arabitol (Sup-
+plementary Note 3, Supplementary Fig. S3), lies on the tail of
+the fructose peak, so this tail was removed before integration.
+To remove it, a chromatogram of the same flask taken before
+any product formed was scaled and shifted to match the tail
+between 15.2 and 15.6 min and then subtracted. The peak was
+then integrated from 15.6 to 16.9 min above a straight baseline.
+Without fructose, the resulting area matches the peak table of
+the instrument software, with a median ratio of 1.02. On Fru 15,
+without product, it was−165 to+31 per µL, compared with
+maxima of 520–2,100 perµL in the fermentations containing
+glucose, so the remaining background is small against the peak.
+3. Results
+We compared two models in four batch fermentations of
+F. venenatumA3/5 with 15 gL−1 total sugar, using two tests.
+TheDraftmodelretainseverytemplatereaction,andtheCurated
+model, iJL1143, applies six stages of rules to it (Fig. 1a). Final
+biomass tests the biomass yield of each model with no fitted
+parameter. Time-courseRMSEthentestshowcloselythemodels
+follow the fermentations once sequential uptake and lag time are
+added(Section2.2.4). Wefirstdescribewhatcurationchangedin
+the network and its energetics, then test both models against the
+fermentations, and finally examine the products and the medium
+pH.
+3.1. Model reconstruction and curation
+3.1.1. Orthology supports most template genes
+Orthologysupportedmosttemplategenes,andcurationclosed
+mostexchangereactionsopenforsecretion. Themodelwasbuilt
+from the CBS 513.88 version of theA. nigermodel iJB1325
+(Fig. 1a), and orthology supported 82.6% of its 1,373 genes.
+Reciprocal best hits and orthogroups agreed on 840 of these
+1,134 supported genes (Fig. 1b). The Curated model has 2,264
+reactions, 1,797 metabolites and 1,143 genes, 57 fewer reactions
+and 109 more genes than the Draft model (Table 2). It has more
+genes despite fewer reactions because its gene associations also
+draw on orthogroups and on the EC annotation of the proteome,
+which the Draft model does not use (Sections 2.1.1 and 2.1.2).
+Restricting secretion then reduced the exchange reactions open
+for secretion from 377 to 47.
+Curation improved the evidence behind the gene associations
+onlyinpart,andtheMEMOTEscorestayedlimited. Thenumber
+of associations whose gene EC number matches the reaction
+rose from 417 to 452 (Fig. 1c). The number with a different
+EC number, however, stayed at 78, so curation added supported
+associationswithoutresolvingtheseconflicts. Bothmodelshada
+totalMEMOTEscoreof29%,thescorereportedforthetemplate
+iJB1325 [46], and neither contains gene annotations or Systems
+Biology Ontology terms (Supplementary Table S4).
+3.1.2. Directionality and carrier rules set the maximum ATP
+yield
+Curation removed the excess ATP yield of the Draft model
+andreducedtheaerobicbiomassyield. TheDraftmodelreached
+Table 2:Properties of the Draft and Curated (iJL1143) models.
+Property Draft Curated
+Reactions 2,321 2,264
+Metabolites 1,818 1,797
+Genes 1,034 1,143
+Exchange reactions open for secretion 377 47
+Biomass weight (gmmol−1) 1 1
+Gene associations whose gene EC
+matches the reaction EC
+417 452
+Gene associations whose gene EC shares
+only the first three levels
+93 127
+Gene associations whose gene EC differs 78 78
+Maximum ATP yield (mol ATP per mol
+glucose)
+49.1 29.9
+Energy-generating cycle tests failed 2 0
+Aerobicbiomassyieldonglucose(gg −1) 0.599 0.522
+Aerobicbiomassyieldonfructose(gg −1) 0.599 0.523
+No experimental data enter this table.
+49.1 mol ATP per mol glucose, above the theoretical maximum
+of about 32 (Fig. 2a), and failed two energy-generating cycle
+tests (Section 2.2.2). Both failures were cost-free conversions
+of NADH to NADPH inherited from the template. The Curated
+model instead reached 29.9 mol ATP per mol glucose and
+failed no test. The biomass yield fell with the ATP yield. At
+a sugar uptake of 1 mmolgDW−1h−1, the aerobic biomass
+yield on glucose and fructose fell from 0.60 gg−1 in the Draft
+model to 0.52 gg−1 in the Curated model (Fig. 2b). At the
+faster maximum uptake used in the fermentations, non-growth-
+associated maintenance accounts for a smaller fraction of the
+ATP demand, so the Curated model yields 0.54 gg−1 on both
+sugars (Supplementary Note 2).
+Reaction directionality and the GTP/GDP carrier rule caused
+this fall. To identify the responsible stages, we analysed model
+variants in which each curation stage was removed from the
+CuratedmodelorappliedalonetotheDraftmodel(Section2.2.2,
+Supplementary Table S3). Two stages set reaction directions
+from thermodynamics, Stage 4 for NAD(P)-dependent reactions
+and Stage 6 for all metabolic reactions. Either set alone reduced
+the maximum ATP yield of the Draft model to 37.1 and its
+biomass yield to about 0.56 gg−1. Adding the GTP/GDP carrier
+rule to either set reduced the ATP yield further, to about 30, and
+the biomass yield to about 0.52 gg−1, although this rule alone
+changed neither value. The variants of the Curated model were
+consistentwiththisresult. Removingthecarrierruleincreasedits
+ATP yield to 37.1, and removing both sets of directionality rules
+increased the ATP yield to the Draft value of 49.1. Removing
+eithersetofdirectionalityrulesalone,oranyotherstage,changed
+the maximum ATP yield of the Curated model by at most 0.1
+and its biomass yield by at most 0.003 gg−1. Added to the Draft
+model, no other stage changed either value.
+Passing the cycle tests did not determine the yield. A Draft
+model with the directionality and carrier rules still failed both
+tests, yet its yield of 0.52 gg−1 already matched that of the
+Curatedmodel(SupplementaryTableS3). Likewise,theCurated
+modelfailedbothtestsatnearlythesameyieldwhentheorthology
+6
+a
+Template
+iJB1325 (A. niger)
+CBS 513.88 version
+2,320 reactions
+1,373 genes
+Orthology
+RBH blastp
++ OrthoFinder
+(10 fungi)
+1,134 of 1,373
+genes mapped
+Stages 1–5
+orthology −85, EC +6
+gap-filling +3
+330 exchanges closed
+redox, directionality
+biomass, NGAM
+Stage 6
+directionality of all
+reactions (29)
+organic-acid export
+cost (22 transports)
+GTP/GDP carrier
+Curated
+iJL1143
+2,264 reactions
+1,143 genes
+47 open exchanges
+Draft
+all template reactions; biomass, NGAM as in Curated
+2,321 reactions · 1,034 genes · 377 open exchanges
+40 50 60 70 80 90 100
+Sequence identity of reciprocal best hits (%)
+0
+20
+40
+60
+80
+100
+120
+Template genes
+b
+1,134 of 1,373 template genes mapped (82.6%)
+RBH and OrthoFinder agree: 840
+OrthoFinder only: 271
+RBH only: 16 · the two disagree: 7
+0 200 400 600 800 1000
+Reactions with an EC number and a gene association
+Draft
+Curated
+c
+417 93 78 350
+452 127 78 351
+EC matches
+related EC (same x.y.z)
+different EC
+gene without EC
+Figure 1:Reconstruction of theF . venenatumA3/5 model and the evidence behind its gene associations.(a) Workflow from the template model to the Draft and
+Curated models (Section 2.1, Supplementary Table S1). (b) Sequence identity of reciprocal best hit (RBH) ortholog pairs, with the agreement between RBH and
+orthogroups. (c) Reactions that carry an EC number and a gene association, by whether the UniProt EC of the associatedF. venenatumgene matches the reaction EC,
+shares its first three levels, differs, or is missing.
+filter, the redox rules or NAD(P) directionality were removed.
+Conversely, the Curated model without the carrier rule failed no
+test at an ATP yield of 37.1, above the theoretical maximum.
+Restricting secretion closed 330 exchange reactions with no
+change in aerobic biomass yield. Neither removing this stage
+fromtheCuratedmodelnoraddingittotheDraftmodelchanged
+either yield (Supplementary Table S3).
+3.2. Validation in batch fermentation
+3.2.1. Curationbringspredictedfinalbiomassclosetomeasure-
+ment
+Without fitted parameters, the Curated model predicted final
+biomassmorecloselythantheDraftmodel,andthedirectionality
+and carrier rules account for the improvement. Because sugars
+were depleted in every fermentation, final biomass tests the
+biomass yield directly. Measured yields ranged from 0.50 to
+0.53 gg−1 across the four conditions (Supplementary Table S5).
+With sequential uptake, the mean discrepancy was 6% for the
+Curated model and 20% for the Draft model (Fig. 3e), or 0.47
+and 1.51 gL−1 (Fig. 3f). If the full 5% ash is removed from the
+measured dry weight, these means rise to 12% and 26%, and the
+Curatedmodelstayscloser(Section2.2.4). Thecomparisonalso
+does not depend on the uptake rule, because with simultaneous
+uptake the means were 7% and 20%. The Curated model was
+Draft Curated
+0
+10
+20
+30
+40
+50
+60
+Maximum ATP yield (mol/mol glucose)
+a
+49.1
+2 cycle
+tests fail
+29.9
+theoretical max.
+32 (P/O 2.5)
+Glucose Fructose
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+Aerobic biomass yield (g g−1)
+b
+measured yield
+Draft Curated
+Figure2:CurationreducesthemaximumATPyieldandtheaerobicbiomass
+yield.(a) Maximum ATP yield per glucose under aerobic conditions, with the
+number of failed energy-generating cycle tests (Section 2.2.2). Dashed line,
+theoretical maximum of about 32 computed for P/O ratios of 2.5 and 1.5 [34].
+(b) Aerobic biomass yield at a sugar uptake of 1 mmolgDW−1 h−1. Dashed
+lines, measured yields in Glc 15 and Fru 15 (Section 2.3.2).
+7
+closer in all four conditions. Applied alone to the Draft model,
+both sets of directionality rules and the carrier rule reduced its
+meandiscrepancyto6%(Section2.2.2). Boththismodelandthe
+Curated model overpredicted the three fermentations containing
+glucose by 6–9% and Fru 15 by 2%.
+This test constrains one yield and does not resolve differences
+between conditions. Because glucose and fructose result in
+almost the same yield in the model, predicted final biomass of
+the Curated model was near 8.1 gL−1 in all conditions, whereas
+measured values ranged from 7.4 to 8.0 gL−1 (Supplementary
+Table S5).
+Maintenance and the P/O ratio could explain the remaining
+discrepancy on glucose. To identify inputs that could account
+for this discrepancy, we changed each borrowed or derived
+input by±25% (Section 2.2.2, Supplementary Note 2). Growth-
+associated maintenance moved the yield by about 5% and the
+lipid fraction by about 2% (Supplementary Fig. S2), whereas
+every other input moved it by 1.2% or less. A lower P/O ratio
+had an effect of similar magnitude. With P/O ratios of 2.25 and
+2.0 instead of 2.46, the mean discrepancy fell to 3.9% and 2.4%.
+At 2.0 the model came within 3% of the three fermentations
+containing glucose but underpredicted Fru 15 by 4%. These
+lower ratios were tested only, and iJL1143 retains the template
+ratio of 2.46 (Section 2.1.2).
+3.2.2. Sequential uptake and lag time improve agreement with
+time courses
+Both mixed fermentations used glucose before fructose
+(Fig. 3b,c), an order that a growth-maximising model does
+not reproduce (Section 2.2.1). In Glc 5 + Fru 10, for example,
+glucose fell to 1.5 gL−1 by 37 h while fructose stayed near
+10 gL−1. The base setting does not impose this order, because
+each sugar has its own maximum uptake rate, and the simulated
+mixed fermentations therefore grew at 0.38 h−1 compared with
+0.20 h−1 on a single sugar.
+Adding sequential uptake and then lag time reduced the time-
+course RMSE several-fold (Fig. 3g). Sequential uptake reduced
+the biomass RMSE of the Curated model from 4.88 gL−1 in the
+base setting to 3.87 gL−1. Fitting the lag time then reduced the
+biomass RMSE to 1.16 gL−1 with one shared lag time and to
+0.42 gL−1 with one lag time per condition, more than tenfold
+below the base setting. Over the same steps, its sugar RMSE
+fell from 6.22 to 1.73 gL−1. The base setting reached half final
+biomass 16–35 h early (Supplementary Fig. S1b), and fitting the
+lag time removed most of this timing error. The timing error
+was−8 to+7 h with one shared lag time and below 0.2 h with
+one lag time per condition. Lag time alone, however, was not
+sufficient. With simultaneous uptake, the two simulated mixed
+fermentations still reached half final biomass 10 and 2 h early at
+the lowest initial biomass tested (Supplementary Note 1).
+The gain from these additions lies in the time courses and not
+in final biomass, whereas curation improved biomass and not
+sugars. The mean discrepancy in final biomass of the Curated
+model stayed at 6% whether the lag time was assumed or fitted
+(Supplementary Note 1). At the final setting, the Curated model
+still followed biomass more closely than the Draft model, with
+RMSEs of 0.42 and 0.75 gL−1, whereas their sugar RMSEs
+differedbyabout0.01gL −1 (Fig.3g). Sugarerrorwaslargeston
+Glc 15 and Fru 15 (Supplementary Table S5), where measured
+sugar fell before online biomass rose (Fig. 3a,d).
+Afittedkineticmodelofthesamefermentationswascloseron
+sugars and not on biomass [4]. That model used 15 fitted param-
+eters and reported mean absolute errors (MAEs) of 0.41 gL−1
+for biomass and 0.57 gL−1 for substrates. The Curated model
+at the final setting, with four fitted lag times, resulted in MAEs
+of 0.23 and 1.31 gL−1 (Section 2.2.4), although the two studies
+average replicates differently. Because lag time is fitted to these
+data, this comparison shows agreement and not prediction.
+3.3. Products and medium chemistry
+3.3.1. Transient glycerol and arabitol lie outside the model
+Ethanol and acetate were essentially absent. Ethanol stayed
+below 0.01 gL−1 and acetate was not detected in any sample
+(Section 2.3.3). Neither model predicted either product, in
+agreement with these measurements.
+Neither model predicted the transient glycerol or arabitol.
+Glycerol formed only while glucose was present and peaked
+near glucose depletion (Fig. 4a–d). It rose to 0.42–0.61 gL−1
+in the three fermentations containing glucose but stayed below
+0.01 gL−1 on Fru 15. After the peak it was removed again, and
+bythelastsampleithadreturnedto0.02gL −1 orless. InGlc5+
+Fru 10, it disappeared once glucose was depleted, while fructose
+was still being consumed. Net removal in the first interval after
+glucose depletion was 0.2–0.9 mmolgDW−1h−1 (Section 2.2.2).
+Arabitol (Section 2.3.3) rose together with glycerol (Fig. 4a–d)
+but fell faster once glucose was depleted. In the two mixed
+fermentations, its mean fell by about 80% from the last sample
+with glucose to the first without, whereas mean glycerol fell by
+less than 10%.
+Glycerol peaked near glucose depletion, whereas dissolved
+O2 recovered only after all sugars were depleted (Fig. 4a–c).
+The two events coincided in Glc 15, lay within 5 h of each
+other in Glc 10 + Fru 5 and lay at least 8 h apart in Glc 5
++ Fru 10. Only Glc 5 + Fru 10 therefore separates the two
+events. In this condition, glycerol accumulated while dissolved
+O2 stayed at about 150% air saturation or higher, and it was
+removed during growth on fructose while dissolved O2 stayed
+near 110%. Glucose was depleted at about 2.2 gL−1 biomass,
+compared with about 6 gL−1 in Glc 15, which is consistent with
+the higher dissolved O2 in this condition. Glucose depletion at
+lower biomass is also consistent with the lower glycerol peak in
+this condition.
+Oxygen limitation does not appear to explain glycerol forma-
+tion. Dissolved O2 fell to 13–39% air saturation in Glc 15 and
+Glc10+Fru5,butitneverreachedzero. InGlc15,glycerolhad
+already reached 89% of its peak at 46 h, when dissolved O2 was
+still about 105% air saturation (Fig. 4a). The two single-sugar
+fermentations also differed in glycerol at similar oxygen. At
+online biomass of 0.4–1.9 gL−1, Glc 15 and Fru 15 grew at 0.20
+and 0.16 h−1 with dissolved O2 at 170 and 181% air saturation.
+Net glycerol formation in the same intervals was nevertheless
+0.56 mmolgDW−1h−1 on Glc 15 and zero on Fru 15. Glycerol
+also did not follow dissolved O2 across the replicates of one
+8
+0
+2
+4
+6
+8
+10
+Biomass (g L−1)
+a Glc 15
+Draft
+Curated
+Online biomass
+(3 replicates)
+Final dry weight
+0 20 40 60
+Time (h)
+0
+5
+10
+15
+Sugar (g L−1)
+0
+2
+4
+6
+8
+10
+b Glc 10 + Fru 5
+0 20 40 60
+Time (h)
+0
+5
+10
+15
+Glucose: HPLC, model
+Fructose: HPLC, model
+0
+2
+4
+6
+8
+10
+c Glc 5 + Fru 10
+0 20 40 60
+Time (h)
+0
+5
+10
+15
+0
+2
+4
+6
+8
+10
+d Fru 15
+0 20 40 60 80
+Time (h)
+0
+5
+10
+15
+Glc 15 Glc 10
++ Fru 5
+Glc 5
++ Fru 10
+Fru 15 Mean
+0
+5
+10
+15
+20
+25
+Absolute discrepancy
+in final biomass (%)
+e
+23.0
+19.2
+22.3
+14.8
+19.8
+8.9
+5.6
+8.4
+1.7
+6.2
+Draft
+Curated
+Glc 15 Glc 10
++ Fru 5
+Glc 5
++ Fru 10
+Fru 15 Mean
+0.0
+0.5
+1.0
+1.5
+Absolute discrepancy
+in final biomass (g L−1)
+f
+1.71
+1.47
+1.67
+1.18
+1.51
+0.67
+0.43
+0.63
+0.14
+0.47
+Draft
+Curated
+Base + sequential
+uptake
++ one
+lag time
++ lag time
+per condition
+0
+1
+2
+3
+4
+5
+6
+Time-course RMSE (g L−1)
+g
+Draft
+Curated
+Biomass
+Sugars
+Figure 3:Curation brings final biomass close to measurement, and sequential uptake and lag time align the time courses.Batch fermentations [4] simulated by
+dFBAwithsequentialsugaruptake(Section2.2.1). (a–d)Onecolumnpercondition, withinitialbiomassfittedperconditiontothemeasuredtimetohalffinalbiomass.
+Upper panels, biomass: grey lines, online biomass of the three replicates; black point, final dry weight (mean±s.d.). Lower panels, sugars: points, HPLC glucose
+(filled circles) and fructose (open squares), mean and range of the three replicates; lines, simulated glucose (solid) and fructose (dotted). (e, f) Absolute discrepancy
+between predicted and measured final biomass with sequential uptake and no fitted parameters, per condition and as the mean, as a percentage of the measured mean
+(e) and in gL−1 (f). (g) Time-course RMSE over all replicates and measured time points, averaged over the four conditions, as settings are added: base (initial biomass
+0.01 gL−1, simultaneous uptake), sequential uptake, one shared lag time and one lag time per condition. Sugar concentrations in gL−1 (Glc glucose, Fru fructose).
+condition. At 48.5 h in Glc 10 + Fru 5, the three replicates
+held 2.0–2.5 gL−1 biomass but differed in dissolved O2. The
+replicate at41% airsaturation held theleast glycerol, 0.39 gL−1,
+compared with 0.52 and 0.45 gL−1 in those at 129 and 145%.
+While glucose stayed above 2 gL−1, the net rate had a median of
+0.52 mmolgDW−1h−1 in Glc 15 and Glc 10 + Fru 5, with no
+trend against dissolved O2 (𝑟=−0.12 , 20 intervals). In Glc 15,
+it decreased to 0.03–0.23 mmolgDW−1h−1 in the last interval
+before glucose depletion, when dissolved O2 was lowest.
+Capping O2 uptake did not make either model form glycerol.
+At caps from 80% to 20% of the aerobic requirement, the largest
+glycerol export compatible with optimal growth was zero on
+both sugars, whether sugar uptake was bounded or fixed at the
+kinetic rate (Section 2.2.2). The Curated model instead exported
+acetaldehyde and, at the lower caps, ethanol, whereas measured
+ethanolstayedbelow0.01gL −1. Acetaldehydewasnotmeasured.
+When sugar uptake was fixed and glycerol was the only carbon
+export, a 10% shortfall of O2 resulted in 0.45 mmolgDW−1h−1
+of glycerol on glucose in the Curated model, compared with a
+measured median of 0.52 mmolgDW−1h−1. The same short-
+fall, however, resulted in almost the same rate on fructose,
+0.46 mmolgDW−1h−1, although no glycerol formed on Fru 15,
+so in the model an O2 shortfall does not distinguish the two
+sugars.
+9
+Partofthefinalbiomassmayformfromcarbonsecretedearlier
+in the fermentation. In Glc 15, online biomass rose from 6.1 to
+7.2gL −1 aftersugarsweredepleted(Fig.3a),whileglyceroland
+arabitol disappeared (Fig. 4a). Online biomass is calibrated only
+at its end points, so this pattern is only suggestive.
+3.3.2. Medium acidification follows from growth stoichiometry
+The fall in medium pH during growth is consistent with
+ammonium assimilation as the main source of acidification in
+this medium. Medium pH fell from about 6.6 to about 6.0
+(Fig. 5c–f, Section 2.2.3). A charge balance with the buffer and
+measured acids alone did not reproduce this fall and predicted a
+nearly constant pH, with an RMSE of 0.221 (Fig. 5a). Adding
+the proton released on ammonium assimilation produced a fall,
+but one that was too large, with an RMSE of 0.765. Correcting
+activitiesfortheionicstrengthofthemediumreducedtheRMSE
+to 0.056, and adding phosphate and sulfate uptake increased the
+RMSE slightly to 0.068. No parameter was fitted to pH.
+A mid-growth bias and a rebound in pH remain unexplained.
+The full balance predicts pH about 0.13 units above the measure-
+ment in mid-growth (Fig. 5b). It also does not reproduce the
+rebound in pH after sugar depletion in Glc 15 (Fig. 5c). Because
+the balance uses online biomass, it tests the chemistry and is not
+a forward prediction.
+4. Discussion
+Our hypothesis held for both how much biomass forms and
+when it forms, the two quantities that a model for mycopro-
+tein process design must estimate. Rule-based curation alone
+broughtpredictedfinalbiomassclosertomeasurementinoxygen-
+enriched batch fermentation without fitted parameters, and se-
+quential uptake and lag time brought the biomass time courses
+into close agreement. Lag time was fitted to the same time
+courses, so the timing result shows agreement rather than predic-
+tion. The informative result is that a fitted lag time alone could
+not align the mixed fermentations without sequential uptake.
+The advantage over the Draft model lies in biomass, and both
+models described sugars equally well. The main remaining
+discrepancyisanoverpredictionoffinalbiomassby6–9%inthe
+fermentations containing glucose.
+These results apply to oxygen-enriched batch fermentation
+on glucose and fructose at one sugar level. Sequential uptake
+of glucose and fructose is consistent with carbon catabolite
+repression in filamentous fungi [37]. A kinetic model of the
+same fermentations also assumed that glucose is preferred [4].
+ThatmodeldescribedsugarsmorecloselythantheCuratedmodel
+and biomass less closely, with 15 fitted parameters compared
+with four. The two approaches are complementary, because
+the kinetic model describes sugar consumption better and the
+Curated model estimates yield before any data are fitted.
+Thedirectionalityandcarrierrules,andnotenergy-generating
+cycles, set the yield here. Energy-generating cycles are common
+in uncurated models and typically inflate maximal biomass
+production by 25% [10]. In this study, the cycle tests did not
+determinetheyield. Modelsthatfailedthemretainedtheyieldof
+theCuratedmodelwhenthedirectionalityandcarrierruleswere
+in place, and the Curated model without the carrier rule passed
+everytestwithanATPyieldabovethetheoreticalmaximum. The
+role of directionality fits the view of that study that such errors
+can reflect wrong assumptions about reversibility. The carrier
+direction matters because mitochondrial ATP could otherwise
+reachthecytosolasGTP,withouttheprotoncostoftheADP/ATP
+carrier. Directionality and transport errors can inflate ATP yield
+in this way, and curated models ofEscherichia coli, yeast and
+human metabolism are therefore checked against realistic ATP
+yields [47–49]. With this cost in place the P/O ratio lies close
+to measured values [34] and to the ratios set in iMA871 [29],
+the source of the growth-associated maintenance. Maximum
+ATPyieldshouldthereforebetestedalongsideenergy-generating
+cycles when a model is transferred from a related species.
+A lower P/O ratio and unmeasured products may each explain
+part of the remaining discrepancy on glucose. Products remain-
+ing at the end of the fermentation cannot explain it, because
+glycerolandarabitolconcentrationsreturntoaboutzero. Alower
+P/Oratiocouldcontribute,becauseeffectiveP/Oratiosbelowthe
+mechanistic value have been reported for the filamentous fungus
+Penicillium roquefortiin solid-substrate culture [50], and a ratio
+of 2.0 brought the three fermentations containing glucose within
+3%. The same ratio underpredicted Fru 15, so a single P/O
+ratio cannot explain both sugars. Yield data alone also cannot
+separate the P/O ratio from growth-associated maintenance [51].
+Unmeasured products may also contribute, because medium
+phosphate masks pyruvic and citric acids (Section 2.3.3). The
+mid-growth bias in pH and the rebound after sugar depletion
+are both consistent with an unmeasured acid that forms during
+growth and is consumed once sugars are depleted. Polyols
+other than these two are a further candidate, because deleting a
+mannitol-1-phosphate dehydrogenase in anotherF. venenatum
+strain decreased supernatant mannitol and increased biomass by
+9% [52]. A growth-maximising model secretes a by-product
+only when a constraint makes its secretion part of the optimal
+solution, as the capped O2 uptake did for acetaldehyde and
+ethanol (Section 3.3.1). Without oxygen or nitrogen limitation,
+carbon secreted as a by-product is unavailable for growth, so
+the optimal solution contains no by-product unless a further
+constraint makes its secretion optimal. Glycerol formed at high
+dissolvedO2 andnotonfructoseatsimilargrowth,whichargues
+against oxygen limitation and suggests a regulatory effect that a
+growth-maximising model does not contain. Because removal
+afterglucosedepletionwasaboutasfastasformation,itsabsence
+on fructose could also reflect immediate reuse.
+These conclusions are limited by their scope, inputs and
+measurements. They rest on one strain, four conditions, two
+sugars and one sugar level, with three replicates each. Within
+that scope, four inputs could bias the comparison. Maintenance
+is borrowed, cell wall, lipid, DNA and the small-molecule pool
+are not measured in this strain, lag time is fitted to the same
+data, and initial sugars are nominal, with sugar concentrations
+scaled to them. The measurements also have limits. CO2 was
+notmeasured,sothecarbonbalancecannotbeclosed,andonline
+biomassiscalibratedonlyatitsendpoints. Theyieldcomparison
+neverthelessrestsonthegravimetricfinaldryweight,whichdoes
+10
+0.0
+0.2
+0.4
+0.6
+0.8
+Glycerol
+(g L−1)
+a Glc 15
+0
+500
+1000
+1500
+2000
+Arabitol
+(area µL−1)
+0 20 40 60
+Time (h)
+0
+50
+100
+150
+200
+Dissolved O2
+(% air sat.)
+0.0
+0.2
+0.4
+0.6
+0.8
+b Glc 10 + Fru 5
+0
+500
+1000
+1500
+2000
+0 20 40 60
+Time (h)
+0
+50
+100
+150
+200
+0.0
+0.2
+0.4
+0.6
+0.8
+c Glc 5 + Fru 10
+0
+500
+1000
+1500
+2000
+0 20 40 60
+Time (h)
+0
+50
+100
+150
+200
+0.0
+0.2
+0.4
+0.6
+0.8
+d Fru 15
+0
+500
+1000
+1500
+2000
+0 20 40 60 80
+Time (h)
+0
+50
+100
+150
+200
+Glycerol
+Arabitol
+Dissolved O2 (3 replicates)
+Glucose depleted
+Last sample with glucose to first without
+All sugars depleted
+Figure 4:Glycerol and arabitol accumulate only while glucose is present.Batch fermentations [4]. (a–d) Glycerol (top) and arabitol in area perµL injected
+(middle), mean and range of three replicates, and dissolved O2 of the three replicates (bottom). Peak areas below zero are shown as zero. Dashed lines, mean time of
+glucose depletion; grey bands, last sample with glucose to first without; dotted lines, mean time at which all sugars are depleted. Sugar concentrations in gL−1 (Glc
+glucose, Fru fructose).
+not depend on the online calibration. That dry weight includes
+ash, which the model lacks, so both discrepancies could be up
+to about 6 percentage points larger without changing their order
+(Sections 2.2.4 and 3.2.1).
+5. Conclusions
+iJL1143, the Curated model ofF. venenatumA3/5, predicts
+finalbiomassinoxygen-enrichedbatchfermentationwithamean
+discrepancy of 6% without fitted parameters, compared with
+20%fortheDraftmodel. Sequentialsugaruptakeandafittedlag
+timereduceitsbiomasstime-courseRMSEbymorethantenfold.
+In oxygen-enriched batch fermentation, it can therefore estimate
+the biomass obtainable from a sugar feedstock and describe the
+course of a batch fermentation. Groups building a model for a
+related fungus should apply thermodynamic directionality rules,
+check the proton cost of mitochondrial ATP export, and test
+maximum ATP yield as well as energy-generating cycles before
+anycomparisonwithdata. Theyshouldalsoaddsequentialsugar
+uptake and lag time before judging time courses.
+CRediT authorship contribution statement
+J.L.: Conceptualization, Methodology, Software, Data cura-
+tion, Formal analysis, Investigation, Validation, Visualization,
+Writing – original draft, Writing – review & editing. T.V.: Con-
+ceptualization, Data curation, Formal analysis, Investigation,
+Writing – review & editing. M.G.: Conceptualization, Funding
+acquisition, Supervision, Writing – review & editing.
+Declaration of competing interest
+T.V. and M.G. have received research funding from Quorn,
+which produces mycoprotein fromF. venenatum. J.L. declares
+no competing interests.
+Data availability
+The batch fermentation data were published previously [4].
+TheDraftandCurated(iJL1143)modelsinSBMLformatandthe
+curationchangelogareavailableat https://github.com/MGu
+o-Lab/Fvenenatum-GEM. The time-course measurements of
+thebatchfermentationsandtheresultfilesunderlyingeveryfigure
+11
+Buffer
++ acids
++ NH+4
+uptake
++ activity
+correction
++ P, S
+uptake
+10−1
+100
+Mean pH RMSE (12 replicates)
+a
+0.221
+0.765
+0.056 0.068
+0.0 0.2 0.4 0.6 0.8 1.0
+Growth progress (fraction of final biomass)
+−0.2
+−0.1
+0.0
+0.1
+0.2
+Predicted − measured pH
+(full model)
+b
+10% bin mean
+0 20 40 60
+Time (h)
+5.8
+6.0
+6.2
+6.4
+6.6
+6.8
+Medium pH
+c Glc 15
+0 20 40
+Time (h)
+5.8
+6.0
+6.2
+6.4
+6.6
+6.8
+d Glc 10 + Fru 5
+0 20 40
+Time (h)
+5.8
+6.0
+6.2
+6.4
+6.6
+6.8
+e Glc 5 + Fru 10
+0 20 40 60
+Time (h)
+5.8
+6.0
+6.2
+6.4
+6.6
+6.8
+f Fru 15
+measured, online (3 replicates) predicted, full model (mean of replicates) predicted, buffer + acids only
+Figure 5:A charge balance driven by growth reproduces the fall in medium pH without fitted parameters.pH computed by a charge balance driven by online
+biomass (Section 2.2.3) and compared with online pH in 12 replicate fermentations [4]. (a) Mean pH RMSE as effects are added in an order fixed beforehand, from the
+buffer and measured acids alone to the full model. (b) Residuals (predicted minus measured) of the full model against growth progress; black line, mean in 10% bins.
+(c–f) Measured pH (three replicates per condition) with the buffer + acids and full-model predictions. Sugar concentrations in gL−1 (Glc glucose, Fru fructose).
+and table are available in the same repository. TheF. venenatum
+A3/5 proteome is available from UniProt (UP000245910), and
+its genome is available from the European Nucleotide Archive
+(PRJEB7533) [14]. The template model iJB1325 is available
+with its original publication [8].
+Code availability
+The code for model reconstruction, curation, simulation, anal-
+yses and figures is available athttps://github.com/MGu
+o-Lab/Fvenenatum-GEM . Supplementary Table S6 lists the
+software used, with the version and role of each package.
+Declaration of generative AI and AI-assisted technologies in
+the manuscript preparation process
+During the preparation of this work the authors used Claude
+(Anthropic) to revise the text for clarity and flow and to check
+reported values against the analysis outputs. After using this
+tool, the authors reviewed and edited the content as needed and
+take full responsibility for the content of the published article.
+Acknowledgements
+J.L. and M.G. would like to acknowledge financial support
+from the King’s College London Net Zero Centre Ph.D. Scholar-
+ship scheme. T.V. and M.G. acknowledge funding from Quorn
+and the BBSRC under project reference 2725958. The authors
+acknowledge the use of resources provided by the Isambard-AI
+National AI Research Resource (AIRR) [53]. Isambard-AI is
+operated by the University of Bristol and is funded by the UK
+Government’sDepartmentforBusiness,Innovation,Scienceand
+Trade(DBIST)viaUKResearchandInnovation;andtheScience
+and Technology Facilities Council [ST/AIRR/I-A-I/1023].
+References
+[1] T.J.A.Finnigan,H.E.Theobald,B.Bajka,Mycoprotein: A
+healthy and sustainable source of alternative protein-based
+foods, Annu. Rev. Food Sci. Technol. 16 (1) (2025) 105–
+125.doi:10.1146/annurev-food-111523-121802.
+[2] T.Upcraft,W.-C.Tu,R.Johnson,T.Finnigan,N.VanHung,
+J. Hallett, M. Guo, Protein from renewable resources:
+mycoprotein production from agricultural residues, Green
+12
+Chem. 23 (14) (2021) 5150–5165.doi:10.1039/d1gc
+01021b.
+[3] M. G. Wiebe, Myco-protein fromFusarium venenatum:
+a well-established product for human consumption, Appl.
+Microbiol. Biotechnol. 58 (4) (2002) 421–427.doi:10.1
+007/s00253-002-0931-x.
+[4] T. Vinestock, M. Guo, Experiments & modelling of batch
+fermentation ofFusarium venenatumon glucose-fructose
+mixtures, Syst. Control Trans. 5 (2026) 776–782.doi:
+10.69997/sct.178293.
+[5] I. Thiele, B. Ø. Palsson, A protocol for generating a high-
+qualitygenome-scalemetabolicreconstruction,Nat.Protoc.
+5 (1) (2010) 93–121.doi:10.1038/nprot.2009.203.
+[6] J. D. Orth, I. Thiele, B. Ø. Palsson, What is flux balance
+analysis?, Nat. Biotechnol. 28 (3) (2010) 245–248.doi:
+10.1038/nbt.1614.
+[7] R. Mahadevan, J. S. Edwards, F. J. Doyle, Dynamic flux
+balance analysis of diauxic growth inEscherichia coli,
+Biophys. J. 83 (3) (2002) 1331–1340.doi:10.1016/S0
+006-3495(02)73903-9.
+[8] J.Brandl,M.V.Aguilar-Pontes,P.Schäpe,A.Noerregaard,
+M. Arvas, A. F. J. Ram, V. Meyer, A. Tsang, R. P. de Vries,
+M.R.Andersen,Acommunity-drivenreconstructionofthe
+Aspergillus nigermetabolic network, Fungal Biol. Biotech-
+nol. 5 (2018) 16.doi:10.1186/s40694-018-0060-7.
+[9] Y.-W. Li, J.-Y. Qian, J.-C. Huang, D.-S. Guo, Z.-K. Nie,
+C. Ye, T.-Q. Shi, Improving gibberellin GA3 production
+with the construction of a genome-scale metabolic model
+ofFusariumfujikuroi,J.Agric.FoodChem.71(48)(2023)
+18890–18897.doi:10.1021/acs.jafc.3c05309.
+[10] C. J. Fritzemeier, D. Hartleb, B. Szappanos, B. Papp,
+M. J. Lercher, Erroneous energy-generating cycles in pub-
+lished genome scale metabolic networks: Identification
+and removal, PLoS Comput. Biol. 13 (4) (2017) e1005494.
+doi:10.1371/journal.pcbi.1005494.
+[11] H. Wang, S. Marcišauskas, B. J. Sánchez, I. Domenzain,
+D. Hermansson, R. Agren, J. Nielsen, E. J. Kerkhoven,
+RAVEN 2.0: A versatile toolbox for metabolic network
+reconstructionandacasestudyonStreptomycescoelicolor,
+PLoS Comput. Biol. 14 (10) (2018) e1006541. doi:
+10.1371/journal.pcbi.1006541.
+[12] G. Moreno-Hagelsieb, K. Latimer, Choosing BLAST
+options for better detection of orthologs as reciprocal
+best hits, Bioinformatics 24 (3) (2008) 319–324.doi:
+10.1093/bioinformatics/btm585.
+[13] D. M. Emms, S. Kelly, OrthoFinder: phylogenetic orthol-
+ogy inference for comparative genomics, Genome Biol. 20
+(2019) 238.doi:10.1186/s13059-019-1832-y.
+[14] R. King, N. A. Brown, M. Urban, K. E. Hammond-Kosack,
+Inter-genome comparison of the Quorn fungusFusarium
+venenatumand the closely related plant infecting pathogen
+Fusarium graminearum, BMC Genomics 19 (2018) 269.
+doi:10.1186/s12864-018-4612-2.
+[15] C. Camacho, G. Coulouris, V. Avagyan, N. Ma, J. Pa-
+padopoulos, K. Bealer, T. L. Madden, BLAST+: architec-
+ture and applications, BMC Bioinformatics 10 (2009) 421.
+doi:10.1186/1471-2105-10-421.
+[16] R. Agren, L. Liu, S. Shoaie, W. Vongsangnak, I. Nookaew,
+J. Nielsen, The RAVEN toolbox and its use for gener-
+ating a genome-scale metabolic model forPenicillium
+chrysogenum, PLoS Comput. Biol. 9 (3) (2013) e1002980.
+doi:10.1371/journal.pcbi.1002980.
+[17] B. Buchfink, K. Reuter, H.-G. Drost, Sensitive protein
+alignments at tree-of-life scale using DIAMOND, Nat.
+Methods 18 (4) (2021) 366–368.doi:10.1038/s41592
+-021-01101-x.
+[18] T. F. Smith, M. S. Waterman, Identification of common
+molecular subsequences, J. Mol. Biol. 147 (1) (1981) 195–
+197.doi:10.1016/0022-2836(81)90087-5.
+[19] The UniProt Consortium, UniProt: the universal protein
+knowledgebasein2025,NucleicAcidsRes.53(D1)(2025)
+D609–D617.doi:10.1093/nar/gkae1010.
+[20] E. Noor, A. Bar-Even, A. Flamholz, Y. Lubling, D. Da-
+vidi, R. Milo, An integrated open framework for ther-
+modynamics of reactions that combines accuracy and
+coverage, Bioinformatics 28 (15) (2012) 2037–2044.
+doi:10.1093/bioinformatics/bts317.
+[21] E. Noor, H. S. Haraldsdóttir, R. Milo, R. M. T. Fleming,
+Consistent estimation of Gibbs energy using component
+contributions, PLoS Comput. Biol. 9 (7) (2013) e1003098.
+doi:10.1371/journal.pcbi.1003098.
+[22] M. E. Beber, M. G. Gollub, D. Mozaffari, K. M. Shebek,
+A. I. Flamholz, R. Milo, E. Noor, eQuilibrator 3.0: a
+database solution for thermodynamic constant estimation,
+Nucleic Acids Res. 50 (D1) (2022) D603–D609.doi:
+10.1093/nar/gkab1106.
+[23] S.H.J.Chan,J.Cai,L.Wang,M.N.Simons-Senftle,C.D.
+Maranas, Standardizing biomass reactions and ensuring
+complete mass balance in genome-scale metabolic models,
+Bioinformatics 33 (22) (2017) 3603–3609.doi:10.109
+3/bioinformatics/btx453.
+[24] P. J. Towersey, J. Longton, G. N. Cockram, Production of
+edible protein containing substances, US Patent 4,041,189
+(Ranks Hovis McDougall Ltd) (1977).
+URL https://patents.google.com/patent/US40
+41189A/en
+13
+[25] A. P. J. Trinci, Myco-protein: a twenty-year overnight
+success story, Mycol. Res. 96 (1) (1992) 1–13. doi:
+10.1016/S0953-7562(09)80989-1.
+[26] U.S.FoodandDrugAdministration,Agencyresponseletter,
+GRAS notice no. GRN 000091: mycoprotein, Office of
+Food Additive Safety, 7 January 2002 (2002).
+URL https://www.hfpappexternal.fda.gov/scr
+ipts/fdcc/index.cfm?set=GRASNotices&id=91
+[27] H. Pedersen, M. Carlsen, J. Nielsen, Identification of
+enzymes and quantification of metabolic fluxes in the
+wild type and in a recombinantAspergillus oryzaestrain,
+Appl. Environ. Microbiol. 65 (1) (1999) 11–19. doi:
+10.1128/AEM.65.1.11-19.1999.
+[28] G. L. Solomons, G. W. Scammell, Production of edible
+protein substances, US Patent 3,937,654 (Ranks Hovis
+McDougall Ltd) (1976).
+URL https://patents.google.com/patent/US39
+37654A/en
+[29] M. R. Andersen, M. L. Nielsen, J. Nielsen, Metabolic
+model integration of the bibliome, genome, metabolome
+andreactomeofAspergillusniger,Mol.Syst.Biol.4(2008)
+178.doi:10.1038/msb.2008.12.
+[30] A. J. A. van Maris, W. N. Konings, J. P. van Dijken, J. T.
+Pronk, Microbial export of lactic and 3-hydroxypropanoic
+acid: implications for industrial fermentation processes,
+Metab. Eng. 6 (4) (2004) 245–255.doi:10.1016/j.ym
+ben.2004.05.001.
+[31] A.J.A.vanMaris,A.A.Winkler,D.Porro,J.P.vanDijken,
+J. T. Pronk, Homofermentative lactate production cannot
+sustain anaerobic growth of engineeredSaccharomyces
+cerevisiae: possible consequence of energy-dependent
+lactate export, Appl. Environ. Microbiol. 70 (5) (2004)
+2898–2905. doi:10.1128/AEM.70.5.2898-2905.20
+04.
+[32] D. A. Abbott, R. M. Zelle, J. T. Pronk, A. J. A. van
+Maris,MetabolicengineeringofSaccharomycescerevisiae
+for production of carboxylic acids: current status and
+challenges, FEMS Yeast Res. 9 (8) (2009) 1123–1136.
+doi:10.1111/j.1567-1364.2009.00537.x.
+[33] A. Vozza, E. Blanco, L. Palmieri, F. Palmieri, Identifica-
+tion of the mitochondrial GTP/GDP transporter inSac-
+charomyces cerevisiae, J. Biol. Chem. 279 (20) (2004)
+20850–20857.doi:10.1074/jbc.m313610200.
+[34] P. C. Hinkle, P/O ratios of mitochondrial oxidative phos-
+phorylation, Biochim. Biophys. Acta Bioenerg. 1706 (1–2)
+(2005) 1–11.doi:10.1016/j.bbabio.2004.09.004.
+[35] A. Ebrahim, J. A. Lerman, B. O. Palsson, D. R. Hy-
+duke, COBRApy: COnstraints-Based Reconstruction
+and Analysis for Python, BMC Syst. Biol. 7 (2013) 74.
+doi:10.1186/1752-0509-7-74.
+[36] P.A.vanKuyk, J.A.Diderich, A.P.MacCabe, O.Hererro,
+G. J. G. Ruijter, J. Visser,Aspergillus niger mstAencodes
+a high-affinity sugar/H+ symporter which is regulated in
+response to extracellular pH, Biochem. J. 379 (2) (2004)
+375–383.doi:10.1042/BJ20030624.
+[37] M. Adnan, W. Zheng, W. Islam, M. Arif, Y. S. Abubakar,
+Z.Wang,G.Lu,Carboncataboliterepressioninfilamentous
+fungi, Int. J. Mol. Sci. 19 (1) (2018) 48.doi:10.3390/
+ijms19010048.
+[38] J.Baranyi,T.A.Roberts,Adynamicapproachtopredicting
+bacterial growth in food, Int. J. Food Microbiol. 23 (3–4)
+(1994) 277–294. doi:10.1016/0168-1605(94)90157
+-0.
+[39] J. A. Whittaker, Sugar, soil and sequencing: Studies in
+Fusariumvenenatum,PhDthesis,UniversityofNottingham
+(2022).
+URL https://repository.nottingham.ac.uk/ha
+ndle/123456789/59078
+[40] Y.-M. Choi, D.-H. Choi, Y. Q. Lee, L. Koduru, N. E.
+Lewis, M. Lakshmanan, D.-Y. Lee, Mitigating biomass
+composition uncertainties in flux balance analysis using
+ensemble representations, Comput. Struct. Biotechnol. J.
+21 (2023) 3736–3745.doi:10.1016/j.csbj.2023.07
+.025.
+[41] C. Lieven, M. E. Beber, B. G. Olivier, et al., MEMOTE for
+standardized genome-scale metabolic model testing, Nat.
+Biotechnol. 38 (3) (2020) 272–276.doi:10.1038/s415
+87-020-0446-y.
+[42] R. Mahadevan, C. H. Schilling, The effects of alter-
+nate optimal solutions in constraint-based genome-scale
+metabolic models, Metab. Eng. 5 (4) (2003) 264–276.
+doi:10.1016/j.ymben.2003.09.002.
+[43] J. I. Castrillo, I. De Miguel, U. O. Ugalde, Proton pro-
+duction and consumption pathways in yeast metabolism. a
+chemostatcultureanalysis,Yeast11(14)(1995)1353–1365.
+doi:10.1002/yea.320111404.
+[44] C. W. Davies, The extent of dissociation of salts in water.
+PartVIII.Anequationforthemeanionicactivitycoefficient
+of an electrolyte in water, and a revision of the dissociation
+constants of some sulphates, J. Chem. Soc. (1938) 2093–
+2098doi:10.1039/JR9380002093.
+[45] J. A. M. Kaste, Y. Shachar-Hill, Model validation and
+selection in metabolic flux analysis and flux balance
+analysis, Biotechnol. Prog. 40 (1) (2024) e3413.doi:
+10.1002/btpr.3413.
+[46] Y.Han,A.TafurRangel,K.R.Pomraning,E.J.Kerkhoven,
+J. Kim, Advances in genome-scale metabolic models of
+industrially important fungi, Curr. Opin. Biotechnol. 84
+(2023) 103005. doi:10.1016/j.copbio.2023.1030
+05.
+14
+[47] R. M. T. Fleming, I. Thiele, H. P. Nasheuer, Quantitative
+assignment of reaction directionality in constraint-based
+models of metabolism: Application toEscherichia coli,
+Biophys. Chem. 145 (2–3) (2009) 47–56.doi:10.1016/
+j.bpc.2009.08.007.
+[48] H. Lu, F. Li, B. J. Sánchez, Z. Zhu, G. Li, I. Domenzain,
+S. Marcišauskas, P. M. Anton, D. Lappa, C. Lieven, M. E.
+Beber,N.Sonnenschein,E.J.Kerkhoven,J.Nielsen,Acon-
+sensusS.cerevisiaemetabolicmodelYeast8anditsecosys-
+tem for comprehensively probing cellular metabolism, Nat.
+Commun. 10 (2019) 3586.doi:10.1038/s41467-019
+-11581-3.
+[49] N. Swainston, K. Smallbone, H. Hefzi, P. D. Dobson,
+J. Brewer, M. Hanscho, D. C. Zielinski, K. S. Ang, N. J.
+Gardiner, J. M. Gutierrez, S. Kyriakopoulos, M. Laksh-
+manan, S. Li, J. K. Liu, V. S. Martínez, C. A. Orel-
+lana, L.-E. Quek, A. Thomas, J. Zanghellini, N. Borth,
+D.-Y. Lee, L. K. Nielsen, D. B. Kell, N. E. Lewis,
+P. Mendes, Recon 2.2: from reconstruction to model
+of human metabolism, Metabolomics 12 (7) (2016) 109.
+doi:10.1007/s11306-016-1051-4.
+[50] C. Larroche, J. B. Gros, Characterization of the growth
+and sporulation behavior ofPenicillium roquefortiiin
+solid substrate fermentation by material and bioenergetic
+balances, Biotechnol. Bioeng. 39 (8) (1992) 815–827.
+doi:10.1002/bit.260390804.
+[51] A. von Kamp, S. Klamt, Balancing biomass reaction
+stoichiometry and measured fluxes in flux balance anal-
+ysis, Bioinformatics 39 (10) (2023) btad600. doi:
+10.1093/bioinformatics/btad600.
+[52] X. Liu, L. Ma, R. Zhang, Y. Yang, W. Chen, L. Long,
+Y. Zheng, D. Li, Metabolic engineering of mannitol
+metabolism to improve protein production inFusarium
+venenatum, Syst. Microbiol. Biomanuf. 6 (4) (2026) 118.
+doi:10.1007/s43393-026-00519-8.
+[53] S. McIntosh-Smith, S. R. Alam, C. Woods, Isambard-AI:
+a leadership class supercomputer optimised specifically
+for artificial intelligence, arXiv preprint arXiv:2410.11199
+(2024).doi:10.48550/arXiv.2410.11199.
+[54] P. J. A. Cock, T. Antao, J. T. Chang, B. A. Chapman, C. J.
+Cox,A.Dalke,I.Friedberg,T.Hamelryck,etal.,Biopython:
+freely available Python tools for computational molecular
+biology and bioinformatics, Bioinformatics 25 (11) (2009)
+1422–1423.doi:10.1093/bioinformatics/btp163.
+[55] P. Virtanen, R. Gommers, T. E. Oliphant, M. Haberland,
+T. Reddy, D. Cournapeau, E. Burovski, P. Peterson, et al.,
+SciPy1.0: fundamentalalgorithmsforscientificcomputing
+in Python, Nat. Methods 17 (3) (2020) 261–272.doi:
+10.1038/s41592-019-0686-2.
+15
+Supplementary material
+Supplementary Table S1:Curation rules and their effect.
+Stage Rule Basis Effect
+1 Orthology filter: reactions kept only with orthology
+support (tier 1 RBH, tier 2 orthogroup, complexes
+kept when one subunit maps)
+Orthology 85 template reactions
+removed
+2 Reaction recovery by EC number and gap-filling for
+biomass synthesis
+UniProt EC of theF. venenatumproteome; tasks of
+Thiele and Palsson [5]
++6 by EC number, +3 by
+gap-filling
+3 Secretion restricted to a gene-supported transporter
+or literature support
+List of metabolites with citations 330 exchange reactions
+closed
+4 Redox rules against cost-free NADH–NADPH and
+cytosol–mitochondria routes, and NAD(P) reaction
+directionality
+eQuilibrator|lnΓ|≥7[20] 15 redox actions (3
+reactions removed), 20
+directionality changes
+5 Biomass normalised to the composition of growing
+mycelium (Supplementary Table S2), NGAM 1.9
+[24, 26, 29] 1 gmmol −1
+6 Thermodynamic directionality of all metabolic
+reactions
+eQuilibrator|lnΓ|≥7[20] 29 directionality changes
+(incl. phosphoketolase)
+6 Organic-acid export pays 1 ATP per negative charge[30–32] 22 transports made
+import-only, 22
+ATP-coupled export
+reactions added
+6 Mitochondrial GTP/GDP carrier imports GTP [33] 1 reaction
+Every rule is applied to all reactions it covers. The curation change log, available with the model (Data availability), lists each reaction with its evidence.
+Supplementary Table S2:Biomass composition of growingF . venenatumA3/5 mycelium, used in both models.
+Fraction Dry mass (%) Model (%) Basis Source
+Protein 37 38.9 Measured in A3/5 mycelium before RNA reduction (37.3%),
+continuous culture on hydrolysed starch at 0.14 h−1
+[24]
+RNA 9 9.5 Measured in untreated A3/5 mycelium, 7–12% in the same
+culture and 8–9% at 0.19 h−1
+[24, 25]
+Cell wall 17 17.9 Cell-wall material of mycoprotein (22–28%) times the 0.68 g of
+product left per gram of mycelium after RNA reduction
+[24, 26]
+Lipid 9 9.5 Fat of mycoprotein (12–14%) times 0.68 [24, 26]
+DNA 0.9 0.9Aspergillus oryzae, glucose-limited chemostat (0.8–1.0%) [27]
+Ash 5 – Batch mycelium (5.3%); mycoprotein specification of 5% or
+less
+[26, 28]
+Small-molecule pool 22 23.3 Remainder –
+Model, fraction of ash-free dry mass in the biomass reaction of both models, which weighs 1 gmmol−1. Cell wall and lipid assume that both are fully retained during
+RNA reduction.
+16
+Supplementary Table S3:Effect of each curation stage on energetics and yield.
+Curated without the stage Draft with the stage only
+Stage ATP Tests
+failed
+Yield ATP Tests
+failed
+Yield
+1 Orthology filter 29.9 2 0.523 49.1 2 0.599
+2 Recovery by EC number 29.9 0 0.522 49.1 2 0.599
+2 Gap-filling 29.9 0 0.522 49.1 2 0.599
+3 Secretion restriction 29.9 0 0.522 49.1 2 0.599
+4 Redox rules 29.9 2 0.523 49.1 2 0.599
+4 NAD(P) directionality 30.0 2 0.525 37.1 2 0.559
+6 Directionality, all reactions 29.9 0 0.523 37.1 2 0.561
+6 Organic-acid export cost 29.9 0 0.522 49.1 2 0.599
+6 GTP/GDP carrier direction 37.1 0 0.559 49.1 2 0.599
+4 and 6 directionality together 49.1 2 0.599
+4 directionality and carrier 29.9 2 0.523
+6 directionality and carrier 30.0 2 0.525
+Reference: Curated 29.9 0 0.522
+Reference: Draft 49.1 2 0.599
+ATP,maximummolATPpermolglucose. Testsfailed,energy-generatingcycletests. Yield,aerobicbiomassyieldonglucose(gg −1)atanuptakeof1mmolgDW −1 h−1.
+Stage 5 sets biomass and maintenance, which both models share. Stage 1 applied to the Draft model retains the nine reactions that Stage 2 restores.
+Supplementary Table S4:MEMOTE scores of the two models (version 0.17).
+Section Draft Curated
+Total score 29% 29%
+Model consistency 54% 55%
+Metabolite annotation 62% 62%
+Reaction annotation 48% 45%
+Gene annotation 0% 0%
+SBO terms 0% 0%
+Supplementary Table S5:Measured and predicted values per batch fermentation.
+Measured Curated Draft Curated, lag time per condition
+Condition Biomass Yield Biomass Discrep. Biomass Discrep.𝑥 0 RMSE𝑋 RMSE𝑆
+Glc 15 7.44±0.24 0.50 8.11 +8.9 9.16 +23.03.9×10 −4 0.48 3.04
+Glc 10 + Fru 5 7.67±0.38 0.51 8.10 +5.6 9.14 +19.22.0×10 −4 0.28 0.90
+Glc 5 + Fru 10 7.48±0.10 0.50 8.11 +8.4 9.15 +22.31.1×10 −3 0.57 0.87
+Fru 15 7.98±0.34 0.53 8.12 +1.7 9.16 +14.85.5×10 −5 0.36 2.11
+Biomass, 𝑥0 (fitted initial biomass) and RMSE in gL−1; yield in gg−1; discrepancy (Discrep.) in % of the measured mean, positive for overprediction. Measured
+values, fromthefermentationsofVinestockandGuo[ 4], aremean±s.d., 𝑛=3 . Predictedbiomass anddiscrepancyusesequentialuptakeandnothingfitted. RMSE 𝑋
+biomass, RMSE𝑆 sugars.
+17
+Supplementary Table S6:Software used for reconstruction, curation, simulation and analysis.
+Software Version Role in this study Reference
+BLAST+ 2.16.0 Reciprocal best hits between the template andF. venenatumproteomes with
+blastp, keeping five target sequences per query
+[15]
+OrthoFinder 2.5.5 Orthogroups across 10 proteomes:Aspergillus fumigatus,A. nidulans,A. niger
+CBS 513.88,A. oryzae,A. terreus,Fusarium fujikuroi,F. graminearum,
+F. venenatum,F. verticillioidesandTrichoderma reesei
+[13]
+DIAMOND 2.2.8 Sequence aligner inside OrthoFinder [17]
+Biopython 1.88 Smith–Waterman alignment of complex subunits without an ortholog against
+the whole proteome
+[54]
+eQuilibrator API 0.8.1 Reversibility index for the directionality rules [20, 22]
+COBRApy 0.32.1 Model input and output, flux balance analysis and each dFBA step [35]
+GLPK 5.0 Linear programming solver called through COBRApyhttps://www.gnu.or
+g/software/glpk/
+MEMOTE 0.17.0 Model quality scores [41]
+SciPy 1.18.1 Rootfindingandboundedoptimisationforthelagtimeandtheyieldsensitivity [55]
+Python 3.12.3 Scripting language; the orthology step used 3.11.18 –
+NumPy, pandas,
+Matplotlib
+2.5.3, 2.3.3,
+3.11.2
+Data handling and figures –
+18
+Supplementary Note 1. Lag time in batch fermentation
+Fitted initial biomass sets the timing of growth and leaves final biomass nearly unchanged. Initial biomass was fitted to the time
+to half final biomass of each condition, with sequential uptake in the mixed fermentations (Section 2.2.1, Supplementary Fig. S1).
+Fitted values for the Curated model ranged from5.5×10 −5 to 1.1×10 −3 gL−1, and one shared value was2.7×10 −4 gL−1. The
+mean discrepancy in final biomass was 6.2% at the assumed value and 6.1% when fitted.
+10−6 10−5 10−4 10−3 10−2
+Initial biomass x₀ (g L−1)
+10
+20
+30
+40
+50
+60
+70
+80
+Time to half final biomass (h)
+a
+ assumed
+ 0.01
+ shared
+ 2.7 × 10−4
+Glc 15
+Glc 10 + Fru 5
+Glc 5 + Fru 10
+Fru 15
+mixed, simultaneous
+uptake
+measured
+(mean of 3 replicates)
+fitted x₀
+Glc 15 Glc 10
++ Fru 5
+Glc 5
++ Fru 10
+Fru 15
+Condition (sugars, g L−1)
+−30
+−20
+−10
+0
+10
+20
+Timing error (h)
+b
+assumed x₀ (0.01 g L−1)
+one shared x₀
+x₀ per condition
+0 20 40 60
+Time (h)
+0
+2
+4
+6
+8
+10
+Biomass (g L−1)
+c
+x₀ = 3.9 × 10−4 g L−1
+Glc 15
+0 20 40 60
+Time (h)
+0
+2
+4
+6
+8
+10
+d
+x₀ = 2.0 × 10−4 g L−1
+Glc 10 + Fru 5
+0 20 40 60
+Time (h)
+0
+2
+4
+6
+8
+10
+e
+x₀ = 1.1 × 10−3 g L−1
+Glc 5 + Fru 10
+0 20 40 60 80
+Time (h)
+0
+2
+4
+6
+8
+10
+f
+x₀ = 5.5 × 10−5 g L−1
+Fru 15
+Curated, assumed x₀ (0.01 g L−1) Curated, one shared x₀ Curated, x₀ per condition Biomass, online (3 replicates) Final biomass, dry weight
+Supplementary Figure S1:Initial biomass fitted to the timing of growth.Curated model and batch fermentations [4]. (a) Time to half final biomass against initial
+biomass 𝑥0;dashedlines,measuredmeanofthreereplicates;diamonds,fitted 𝑥0. Thedottedlineshowsthemixedfermentationswithsimultaneousuptake. (b)Timing
+error with the assumed𝑥0 (0.01 gL−1) and simultaneous uptake, as in the base setting, one shared𝑥0 and one𝑥0 per condition. (c–f) Biomass over time for the three
+settings, with online biomass of the three replicates (grey) and final dry weight (black point, mean±s.d.). Sugar concentrations in gL−1 (Glc glucose, Fru fructose).
+Supplementary Note 2. Sensitivity of the yield
+Yield depends mainly on maintenance and the P/O ratio, and little on the assumed sugar𝐾m. Settings are given in Section 2.2.2,
+and the change for each input in Supplementary Fig. S2. The Curated model predicts 0.54 gg−1 on both sugars, close to the measured
+yieldof0.53gg −1 onfructose. Reachingthemeasuredyieldonglucosewouldrequiregrowth-associatedmaintenancetobeincreased
+1.4-fold or non-growth-associated maintenance 3.7-fold. Reducing the P/O ratio for NADH from 2.46 to 2.25 and 2.0 results in a
+maximum of 27.5 and 24.7 mol ATP per mol glucose. The yields are then 0.53 and 0.51 gg−1. Across a𝐾m of 0.025–4.5 mM, final
+biomass changed by less than 1%. With initial biomass held at its fitted value, the time to half final biomass moved by less than 0.3 h
+at 0.025 mM and by up to 9 h at 4.5 mM.
+Supplementary Note 3. Identity of the 16.1 min peak
+The 16.1 min peak matches an arabitol standard in retention time. Arabitol, xylitol, sorbitol, mannitol and malic acid standards at
+1 gL−1 were injected on the same instrument and column, with the same mobile phase, flow and column temperature, in a sequence
+run before the fermentations. Retention times of that sequence were aligned to each fermentation run with glucose and glycerol as
+reference peaks. An alignment of this kind, tested on arabitol between two standard sequences, erred by 0.04 min. In Glc 15 the peak
+eluted at 16.10 min, 0.03 min before the aligned arabitol standard (Supplementary Fig. S3a). Xylitol, sorbitol, mannitol and malic19
+−15 −10 −5 0 5
+Change in aerobic biomass yield on glucose (%)
+DNA fraction
+Cell wall fraction
+Non-growth-associated maintenance
+RNA fraction
+Protein fraction
+Small-molecule pool fraction
+Lipids fraction
+Growth-associated maintenance
+a
+Glc 15 Fru 15
+Draft
+−15 −10 −5 0 5
+Change in aerobic biomass yield on glucose (%)
+b
+Glc 15 Fru 15
+Curated
+parameter +25% parameter −25% change needed to reach the measured yield
+Supplementary Figure S2:Sensitivity of the aerobic biomass yield to biomass composition and maintenance.(a) Draft model and (b) Curated model. Change in
+yield on glucose for each parameter changed by±25% (Section 2.2.2). Dashed lines, the change that would reach the measured yield of Glc 15 and Fru 15.
+acid eluted at least 0.5 min away. No arabinose standard was run at 30°C. At 25°C on the same instrument, arabinose eluted at 0.75
+of the interval from glucose to xylitol, against 0.85 for arabitol. At 30°C this places arabinose 0.28 min before the 16.1 min peak.
+UV absorbance excludes a carboxylic acid but does not separate polyols from one another. The ratio of absorbance at 210 nm to
+refractive-index area was between−0.17 and 0.00 for the 16.1 min peak in Glc 15 (Supplementary Fig. S3b). The ratio was 4.8–9.8
+for citric, malic, lactic and acetic acid standards and 0.04–0.07 for the four polyol standards. The peak appeared only in fermentations
+with glucose and was absent from all 49 injections of Fru 15. Co-injection with arabitol or mass spectrometry would be needed to
+confirm the assignment, and the enantiomer is not resolved.
+14 15 16 17
+Retention time (min)
+Glc 15, 48 h
+Arabitol standard
+Xylitol standard
+Sorbitol standard
+Mannitol standard
+Malic acid standard
+a
+−0.1 0 0.1 1 10
+UV 210 nm / RI area
+Acetic acid
+Lactic acid
+Malic acid
+Citric acid
+Fructose
+Arabitol
+Sorbitol
+Xylitol
+Mannitol
+Glucose
+Glycerol
+16.1 min peak
+b
+Supplementary Figure S3:The 16.1 min peak matches an arabitol standard and is not a carboxylic acid.(a) Refractive-index signal near 16 min for Glc 15 at 48 h
+and for single standards at 1 gL−1, each scaled to its own peak. Standard retention times are aligned to the fermentation run with glucose and glycerol. Dashed line,
+apex of the fermentation peak. (b) Ratio of absorbance at 210 nm to refractive-index area, inµAUs per µVs, for standards and for the 11 Glc 15 samples with a
+16.1 min peak area above 2000µVs.
+20

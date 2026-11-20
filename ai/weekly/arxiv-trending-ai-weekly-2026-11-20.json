@@ -1,0 +1,190 @@
+{
+  "schema": "arxiv-trending-ai/v1",
+  "category": "Core AI arXiv categories",
+  "window": {
+    "type": "weekly",
+    "start": "2026-11-14",
+    "end": "2026-11-20",
+    "snapshot_utc": "2026-11-20T02:16:27Z",
+    "latest_candidate_announcement_batch": "2026-11-19"
+  },
+  "date": "2026-11-20",
+  "title": "arXiv AI weekly: 7 notable papers from 14–20 November 2026",
+  "source_report": "/home/yizhuan/.research/ai/weekly/arxiv-trending-ai-weekly-2026-11-20.md",
+  "entry_count": 7,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart: this is an inferred ordering, and citation evidence for very recent work is limited.",
+  "method": {
+    "core_categories": ["cs.AI", "cs.LG", "stat.ML", "cs.CL", "cs.CV", "cs.RO", "cs.NE", "cs.MA"],
+    "category_query_candidates": 2791,
+    "eligible_first_submission_records": 2385,
+    "ranking_signals": ["independently hosted technical discussion", "evaluation breadth", "formal analysis", "substantive revision", "external evaluation artifacts"],
+    "citation_data": "Semantic Scholar coverage incomplete; only one queried record returned, so citation counts were not used as a cross-paper ranking signal.",
+    "revision_coverage": "The lastUpdatedDate query was rate-limited; updates of papers first submitted before the window may be absent."
+  },
+  "sections": [
+    {
+      "id": "2611.22301",
+      "kind": "paper",
+      "title": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.22301",
+      "arxiv_id": "2611.22301",
+      "arxiv_version": "1",
+      "published": "2026-11-17T06:57:40Z",
+      "categories": ["cs.AI"],
+      "authors": ["Xuan Zhang", "Zhijian Zhou", "Zicheng Hu", "Yan Feng", "Hongyan Hao", "Yuan Qi", "Chao Qu"],
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-17",
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "The paper studies why standard MCTS can waste exploration across textually different but strategically similar reasoning branches, and proposes a learned count that shares evidence across related branches.",
+      "claimed_contribution": "The authors introduce Learned Pseudo-Count MCTS (LPC-MCTS), which estimates representation coverage with a lightweight Coin-Flipping Network and replaces exact UCT visit counts; they report gains over standard MCTS on five math and seven search benchmarks.",
+      "unique_caveat": "The reported evaluation is limited to those benchmark families and model configurations; transfer to broader, open-ended reasoning remains unestablished.",
+      "refs": [
+        "https://arxiv.org/abs/2611.22301",
+        "https://ai-data-base.com/paper/2611-22301",
+        "https://www.themoonlight.io/de/review/mcts-is-counting-the-wrong-thing-learning-exploration-counts-for-llm-reasoning",
+        "https://www.opentrain.ai/papers/mcts-is-counting-the-wrong-thing-learning-exploration-counts-for-llm-reasoning--arxiv-2611.22301/"
+      ]
+    },
+    {
+      "id": "2611.22299",
+      "kind": "paper",
+      "title": "Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.22299",
+      "arxiv_id": "2611.22299",
+      "arxiv_version": "1",
+      "published": "2026-11-17T06:55:41Z",
+      "categories": ["cs.AI"],
+      "authors": ["Deep Shah", "Nehal Kathrotia"],
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-17",
+      "themes": ["Agents & reasoning", "Safety & alignment", "Evaluation & benchmarks"],
+      "abstract": "The paper frames an agent’s runtime harness as an editable part of the system and proposes a modular loop for diagnosing failures, changing harness code, validating changes, and deploying them.",
+      "claimed_contribution": "The authors organize self-improving harnesses into four runtime components and a diagnose–patch–validate–deploy loop, and report that gated modular evolution beats prompt-only reflection and ungated full rewrites on their SWE-bench Lite setup at lower token cost.",
+      "unique_caveat": "The paper’s own experiments cover 60 Python bug-fixing tasks across two repositories, so the measured performance does not establish that the framework transfers to non-coding agents or long-term deployment.",
+      "refs": [
+        "https://arxiv.org/abs/2611.22299",
+        "https://mahmadmanzoor.com/blog/self-improving-agent-harnesses-paper-notes",
+        "https://dev.to/ahmad_dogar_7d098f5e48f72/harnesses-that-improve-themselves-how-an-agent-can-rewrite-its-own-runtime-without-breaking-it-1p2i"
+      ]
+    },
+    {
+      "id": "2611.22632",
+      "kind": "paper",
+      "title": "Groups of AI agents underuse resources despite shared evidence of increased capacity",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.22632",
+      "arxiv_id": "2611.22632",
+      "arxiv_version": "1",
+      "published": "2026-11-17T11:50:26Z",
+      "categories": ["cs.MA"],
+      "authors": ["Takahiro Ezaki", "Naoto Imura", "Katsuhiro Nishinari"],
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-17",
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "In controlled two-server simulations, the authors find that groups of language-model agents can leave capacity unused even after sharing evidence that a server has recovered, and test simple ways to spread requests.",
+      "claimed_contribution": "The authors report that successful-request records help agents use a recovered server, while giving agents distinct numeric labels reduces synchronized demand and increases completed jobs in their simulated setting.",
+      "unique_caveat": "The evidence comes from a controlled two-server simulation with a specific recovery and retry setup; it does not yet show that the intervention works in deployed, heterogeneous infrastructure.",
+      "refs": [
+        "https://arxiv.org/abs/2611.22632",
+        "https://www.aimodels.fyi/papers/arxiv/groups-ai-agents-underuse-resources-despite-shared",
+        "https://www.themoonlight.io/fr/review/groups-of-ai-agents-underuse-resources-despite-shared-evidence-of-increased-capacity",
+        "https://www.modelscope.cn/papers/2611.22632"
+      ]
+    },
+    {
+      "id": "2611.22815",
+      "kind": "paper",
+      "title": "Visual Harness Scales General VLMs to Medical Images",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.22815",
+      "arxiv_id": "2611.22815",
+      "arxiv_version": "2",
+      "published": "2026-11-18T03:49:41Z",
+      "first_submitted": "2026-11-17T14:04:55Z",
+      "categories": ["cs.CV"],
+      "authors": ["Shaowen Wan", "Hanqi Jiang", "Zihao Wu", "Junhao Chen", "Weihang You", "Ruiyu Yan", "Bowen Chen", "Tianming Liu", "Lin Zhao"],
+      "announcement_type": "revision",
+      "announcement_batch": "2026-11-18",
+      "themes": ["Multimodal & vision-language", "Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "The paper presents a medical-image harness that lets general vision-language models inspect images iteratively, preserve evidence, check for omissions, and revise answers across multiple tasks and imaging modalities.",
+      "claimed_contribution": "The authors’ VERA harness combines interactive visual tools, lossless evidence memory, an evidence map and verifier, and an iterative inspection loop; they report improvement on all 11 tasks for Qwen3.8-27B.",
+      "unique_caveat": "The authors state that evaluation uses public datasets, excludes real-world clinical validation, and uses smaller subsets for some API-model comparisons because of cost; they also cannot rule out training-data overlap for proprietary models.",
+      "refs": [
+        "https://arxiv.org/abs/2611.22815",
+        "https://ai-data-base.com/paper/2611-22815"
+      ]
+    },
+    {
+      "id": "2611.24778",
+      "kind": "paper",
+      "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.24778",
+      "arxiv_id": "2611.24778",
+      "arxiv_version": "1",
+      "published": "2026-11-18T17:24:00Z",
+      "categories": ["cs.LG", "cs.AI", "cs.CV", "cs.RO", "stat.ML"],
+      "authors": ["Randall Balestriero", "Yann LeCun", "Kerda Varaku"],
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-18",
+      "themes": ["Robotics & control", "Multimodal & vision-language"],
+      "abstract": "The authors study counterfactual action outcomes under hidden disturbances and derive a first-order correction that reuses factual transitions to estimate what an alternative action would have done.",
+      "claimed_contribution": "The authors derive an action-difference correction for JEPA world models under separated action and disturbance forces, prove an O(h^2) error bound under their assumptions, and report higher counterfactual prediction accuracy in their simulator experiments.",
+      "unique_caveat": "The authors identify failure cases at discontinuities, coordinate folds, and when disturbances scale the command; the reported experiments do not remove those assumption boundaries.",
+      "refs": [
+        "https://arxiv.org/abs/2611.24778",
+        "https://www.emergentmind.com/papers/2611.24778",
+        "https://www.opentrain.ai/papers/counterfactual-world-models-jepas-that-reason-about-what-if--arxiv-2611.24778/"
+      ]
+    },
+    {
+      "id": "2611.24711",
+      "kind": "paper",
+      "title": "Openhagen Worlds: Calibrated Environments for Measuring and Training Scientific Discovery Agents",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.24711",
+      "arxiv_id": "2611.24711",
+      "arxiv_version": "1",
+      "published": "2026-11-18T16:36:18Z",
+      "categories": ["cs.LG", "cs.AI", "cs.CL"],
+      "authors": ["Alexander Boesgaard Lorup"],
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-18",
+      "themes": ["Agents & reasoning", "Evaluation & benchmarks"],
+      "abstract": "The paper introduces procedurally generated scientific-discovery environments with explicit scoring rules, hidden truths, budgeted experiments, and deterministic answer verification.",
+      "claimed_contribution": "The authors contribute 27 environment families and 178 calibrated difficulty levels, with hidden-answer verification and controlled development/frontier splits; on 84 withheld frontier instances, the reported strongest model still trails the oracle.",
+      "unique_caveat": "These are procedurally generated benchmark environments, not evidence of improved performance in live scientific research; the paper reports that the largest remaining gap is in long campaigns of eight or more stages.",
+      "refs": [
+        "https://arxiv.org/abs/2611.24711",
+        "https://eval.openhagen.ai/",
+        "https://pith.science/paper/2611.24711"
+      ]
+    },
+    {
+      "id": "2611.24540",
+      "kind": "paper",
+      "title": "Do Frontier Model Ingredients Add Up? A Replicated Factorial Study of Small Language Models",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.24540",
+      "arxiv_id": "2611.24540",
+      "arxiv_version": "1",
+      "published": "2026-11-18T14:48:52Z",
+      "categories": ["cs.CL", "cs.AI"],
+      "authors": ["Biswa Sengupta"],
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-18",
+      "themes": ["Training & adaptation"],
+      "abstract": "The authors compare combinations of five language-model design and training changes under a shared data and compute budget, repeating selected runs with a second random seed.",
+      "claimed_contribution": "The authors report that mixture-of-experts layers, Muon optimization, and a Gated DeltaNet hybrid produced the largest gains in their small-model setting, while most tested gains combined and some interactions persisted across two seeds.",
+      "unique_caveat": "The authors limit the conclusion to their small-model training setup and note that the expert models have greater total capacity; two seeds do not establish broad robustness of component rankings.",
+      "refs": [
+        "https://arxiv.org/abs/2611.24540",
+        "https://syncai.news/article/do-frontier-model-ingredients-add-up-a-replicated-factorial-study-of-small-langu-116b8f",
+        "https://papers.cool/arxiv/2611.24540"
+      ]
+    }
+  ]
+}

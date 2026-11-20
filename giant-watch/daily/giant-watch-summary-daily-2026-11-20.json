@@ -5,114 +5,253 @@
   "date": "2026-11-20",
   "title": "Giant Watch Summary - Daily - 2026-11-20",
   "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-11-20.md",
-  "entry_count": 5,
+  "entry_count": 11,
   "entry_noun": "events",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Google DeepMind's Gemini 4 Neon launch leads the day, with Google pushing a paid-tier flagship model into the Gemini app and API while Qwen's Qwen4-Max preview continues its limited run. The episode's throughline is flagship-model commercialization, as vendors compete on agentic coding, pricing and access tiers rather than raw model announcements."
+      "content": "Google's Gemini 4 Neon rollout leads the day, with OpenAI pushing its always-on Dots agents down to cheaper ChatGPT tiers. The through-line is agentic capability moving from premium add-on toward default product surface."
     },
     {
       "id": "01-event",
       "kind": "event",
       "rank": 1,
-      "event_id": "ev-google-gemini4-neon",
-      "title": "Google DeepMind releases Gemini 4 Neon to developers and paid subscribers",
+      "event_id": "google-gemini-4-neon-rollout",
+      "title": "Google DeepMind rolls out Gemini 4 Neon to developers, businesses and paid subscribers",
       "organizations": [
         "Google"
       ],
       "status": "verified",
-      "content": "Google DeepMind is rolling out Gemini 4 Neon to developers, businesses and paid Gemini subscribers, bringing the model to the Gemini app and API. Google AI Pro and Ultra subscribers can select Neon in the Gemini app, while businesses access it through Gemini for business; developers use the paid Gemini API tier in Google AI Studio and Android Studio. Google prices it at $3 per million input tokens and $15 per million output tokens, with cached input at $0.15 per million and a 1 million-token context window. The model handles spreadsheets, PDFs, charts, audio and video together and turns them into structured documents. Google says Neon ranked first on the Artificial Analysis Coding Agent Index with 58.6, scored 65.2% on Terminal-Bench 4.1 and 46.2% on FrontierCode 2.0 at default high, and ranked third on the Artificial Analysis Intelligence Index at 61 at xhigh. Google also cites 76% on the hard tier of AutoBaxBench, 51.26% on WebExploitBench v1.2, and resistance to every attack in a Gray Swan benchmark with real-time safeguards at highest thinking level; eligible Fairwind Program members will get access for cyber defense over the next few days.",
-      "significance": "The strongest in-window event: a flagship model shipped simultaneously to consumer app, business tier and paid API, with explicit token pricing and agentic-coding benchmark claims, making it the day's main competitive reference point for rival flagship launches.",
+      "content": "Google DeepMind released Gemini 4 Neon to developers, businesses and paid Gemini subscribers, bringing the model to the Gemini app and API. Google says Neon handles coding, research and analytical tasks and can process spreadsheets, PDFs, charts, audio and video together into structured documents. Access varies by product: Google AI Pro and Ultra subscribers can select Neon in the Gemini app, businesses can use it through Gemini for business, and developers get it via the paid Gemini API tier in Google AI Studio and Android Studio. Google quotes $3 per million input tokens and $15 per million output tokens, with cached input at $0.15 per million and a 1 million-token context window. Google claims first place on the Artificial Analysis Coding Agent Index at 58.6, 65.2% on Terminal-Bench 4.1 and 46.2% on FrontierCode 2.0 at default high setting, and third overall on the Artificial Analysis Intelligence Index at 61 at xhigh thinking. A Neon for cyber version is to reach trusted defenders through the Fairwind Program over the coming days.",
+      "significance": "A frontier-lab flagship release with published pricing, benchmark claims and multi-surface availability is the day's most consequential product event, and it lands as the fourth Gemini 4 model in roughly seven weeks.",
       "refs": [
-        "https://journalarta.com/en/2026/11/20/google-deepmind-gemini-4-neon-release/"
+        "https://journalarta.com/en/2026/11/20/google-deepmind-gemini-4-neon-release/",
+        "https://hkaiweb.com/news/google-deepmind-%e6%8e%a8%e5%87%ba-gemini-4-neon%ef%bc%9a%e4%b8%83%e9%80%b1%e5%85%a7%e7%ac%ac%e5%9b%9b%e6%ac%be%e6%a8%a1%e5%9e%8b%ef%bc%8c%e9%80%9f%e5%ba%a6%e8%bf%91%e5%80%8d%e8%80%8c%e5%83%b9/",
+        "https://x.com/GoogleAI/status/2123828467124851025",
+        "https://www.freepressjournal.in/tech/google-launches-gemini-4-neon-mid-tier-ai-model-whats-new",
+        "https://relvehq.com/launchfeed/launch/x_2123596262713020527"
       ],
       "related_event_ids": [
-        "ev-qwen-qwen4max-preview"
+        "openai-dots-plus-business-expansion",
+        "deepseek-compute-limits-api-opening"
       ],
-      "transition_hint": "Google's paid-tier flagship launch sets a pricing and benchmark yardstick; Qwen's preview release offers a separate, subscription-gated comparison point."
+      "transition_hint": "Google's release is a model-layer story; OpenAI's news the same day sits one layer up, in how agents are packaged and sold."
     },
     {
       "id": "02-event",
       "kind": "event",
       "rank": 2,
-      "event_id": "ev-qwen-qwen4max-preview",
-      "title": "Alibaba's Qwen4-Max preview runs on Token Plan with a Nov 25 cutoff",
+      "event_id": "openai-dots-plus-business-expansion",
+      "title": "OpenAI tests Dots agents with ChatGPT Plus users and rolls them out to Business Standard",
       "organizations": [
-        "Qwen"
+        "OpenAI"
       ],
       "status": "verified",
-      "content": "Alibaba Cloud's Qwen4-Max preview (model ID qwen4-max-preview) launched November 11, 2026 via the Qianwen AI platform's Token Plan and also appears in Qianwen Office, Qoder, the Qianwen App and QwenStudio. The preview window runs from November 11 10:00 to November 25 24:00 (UTC+8), during which model behavior is frozen for consistent testing; after that the preview model ID goes offline and the stable version ships under a new name, requiring integrators to plan config changes. Reported capabilities center on coding and agentic tasks, with a 1M-token context, text/image/video input, Function Calling, web search, structured output and compatibility with OpenAI Chat Completions, Responses and Anthropic Messages formats. One article describes a 2.4T-parameter MoE with 71B activated parameters, GDN plus QSA hybrid attention, and claims of a 52.69 Work360 score versus 47.74 previously, roughly 58% lower average per-task cost, and a SuperCLUE score of 61.61; another notes the preview is Token Plan-only with no pay-as-you-go option and that official parameter counts, context window, benchmark scores and formal API pricing had not been published at preview time.",
-      "significance": "A major Chinese flagship model in a deliberately time-boxed preview, with a hard November 25 deprecation date that forces developer migration planning and positions Qwen against Google's paid-tier flagship on agentic coding and cost.",
+      "content": "OpenAI began testing its Dots personal AI agents with a small number of ChatGPT Plus users and started rolling them out to eligible ChatGPT Business Standard members in the United States. Dots are proactive agents that can perform tasks and keep working when the user is not interacting with them, with access to OpenAI's plugin ecosystem and more than 4,000 apps, and can connect to and control a user's computer. Dots initially ran on GPT-6 Astra and now also support GPT-6.1 Terra. OpenAI is also testing a redesigned ChatGPT mobile app with a dedicated dot tab, starting with Pro users who have or can create a dot plus a small group of eligible Plus users. Dots are not available in the European Economic Area, the UK or Switzerland.",
+      "significance": "Moving always-on agents from the most expensive plans to the $20 Plus tier and to business seats is the clearest signal yet that OpenAI wants proactive agents to be a mass-market default rather than a premium add-on.",
       "refs": [
-        "https://developer.aliyun.com/article/1786039",
-        "https://developer.aliyun.com/article/1786045",
-        "https://developer.aliyun.com/article/1786034"
+        "https://i10x.ai/news/chatgpt-dots-plus-business-standard-new-mobile-design",
+        "https://ua.news/en/dovkolo-svitu/openai-testuie-agentiv-dots-dlia-peredplatnikiv-chatgpt-plus-engadget",
+        "https://tecc.uz/en/article/openai-begins-testing-chatgpt-dot-with-plus-users-and-expands-business-gz97p"
       ],
       "related_event_ids": [
-        "ev-google-gemini4-neon",
-        "ev-kimi-k31-moore-threads"
+        "google-gemini-4-neon-rollout",
+        "deepseek-compute-limits-api-opening"
       ],
-      "transition_hint": "Qwen's preview is a software-side flagship push; the next item moves to the hardware layer, where a Chinese GPU vendor adapted a rival flagship model."
+      "transition_hint": "Both US labs are pushing agents outward; the Chinese side of the same day is defined by capacity strain rather than expansion."
     },
     {
       "id": "03-event",
       "kind": "event",
       "rank": 3,
-      "event_id": "ev-kimi-k31-moore-threads",
-      "title": "Moore Threads completes training adaptation for Moonshot's Kimi K3.1 Pro",
+      "event_id": "deepseek-compute-limits-api-opening",
+      "title": "DeepSeek restricts free-user conversations and document reading, days after opening a full application API suite",
       "organizations": [
-        "Kimi"
+        "DeepSeek"
       ],
       "status": "verified",
-      "content": "Moore Threads (688795.SH) completed training adaptation of Moonshot AI's flagship Kimi K3.1 Pro, a model with nearly 3 trillion parameters, on its MTT S5000 AI training-and-inference card with the MUSA software stack, per a China Business Journal report dated November 18 cited by Gate. Moore Threads said it built a native FSDP2 multimodal training path covering model loading, shard scheduling and gradient synchronization, and that it has a mature engineering system spanning rapid inference deployment to stable full-pipeline training. The report stresses that training adaptation differs from Day 0 chip adaptation and does not mean the model was pre-trained on the chip. As background, it notes DeepSeek's V4 technical report validated both Ascend NPU and Nvidia GPU paths for fine-grained expert parallelism, which industry consensus treats as inference operator validation rather than evidence of pre-training infrastructure; DeepSeek has not disclosed the compute used for base-model pre-training.",
-      "significance": "A concrete data point on domestic Chinese accelerator stacks being adapted to frontier-scale models, though the source explicitly limits the claim to adaptation rather than pre-training.",
+      "content": "Since 15 November, DeepSeek users have encountered notices that long conversations inactive for 72 hours can no longer be processed and that long documents are limited to the first 20 pages or 10,000 tokens, both attributed to a shortage of computing resources. The restrictions drew complaints under DeepSeek's official Xiaohongshu post, with some users asking for the limits to be removed and offering to pay for a subscription; unlike Doubao and Kimi, DeepSeek offers no paid consumer membership and charges through its API instead. The squeeze follows DeepSeek's 13 November announcement of application APIs covering online search, deeper-reasoning search, file input, model safety and underlying functions such as text and image search, webpage retrieval, text recognition and speech synthesis, billed per call beyond token charges. Analysts quoted by Caixin say DeepSeek has fewer compute resources than major cloud providers and is prioritising paying customers.",
+      "significance": "A leading Chinese lab visibly rationing consumer usage while monetising developer tooling captures the shift from chasing benchmark leadership toward ecosystem and revenue, and it is a concrete capacity constraint rather than a roadmap claim.",
       "refs": [
-        "https://www.gatewebsite.com/zh-tw/news/detail/MOONSHOT/moore-threads-completes-training-adaptation-for-kimi-k31-pro-model-25736981"
+        "https://www.thinkchina.sg/economy/deepseeks-computing-crunch-pushes-chinas-ai-developers-beyond-models?ref=top-hero",
+        "https://www.donews.com/article/detail/8234/110011.html",
+        "https://news.pedaily.cn/202611/572126.shtml",
+        "https://www.21jingji.com/article/20261120/herald/70b25cdf036375a61b6e82c8bf82e5de.html"
       ],
       "related_event_ids": [
-        "ev-qwen-qwen4max-preview"
+        "openai-dots-plus-business-expansion",
+        "glm-5-3-cyber-incident-claim"
       ],
-      "transition_hint": "From Chinese hardware adaptation, the next item turns to a different Google DeepMind release on the same day: a world-model product."
+      "transition_hint": "Compute scarcity shapes one lab's consumer product; a separate thread the same day concerns what happens when a capable open-weight model is released without such constraints."
     },
     {
       "id": "04-event",
       "kind": "event",
       "rank": 4,
-      "event_id": "ev-google-genie4-api",
-      "title": "Google DeepMind opens Genie 4 interactive world model via Gemini API and AI Studio",
+      "event_id": "glm-5-3-cyber-incident-claim",
+      "title": "Viral claim ties a doubling of global cyber incidents to Zhipu's open-weight GLM-5.3 release",
       "organizations": [
-        "Google"
+        "GLM"
       ],
-      "status": "verified",
-      "content": "Google DeepMind expanded access to its Genie 4 interactive world model to developers through the Gemini API (via the Interactions API) and Google AI Studio, per a Chinese-language report. The system lets creators and engineers build and explore continuous 720p environments at 24 frames per second, combining pixel-level simulation with real-time control and synchronized native audio including ambient soundscapes and interactive character dialogue. Users start from text prompts, reference images or both and navigate with real-time keyboard input, adjusting weather, lighting, objects or events mid-simulation without interrupting it; external reports say sessions last minutes rather than long runs. Gemini models act as an active director for consistency, with Gemini 3.8 Flash or related architecture evaluating frames and re-calibrating world state, Gemini Omni anchoring physical appearance and behavior, and specialized models such as Gemini 4 Argon translating user instructions into step-by-step text for robot simulation tests. Genie 4 is currently a research preview for a small set of trusted testers, with access later expanding to Google AI Ultra subscribers via Project Genie and to early-access partners through AI Studio and the Gemini API; Google AI Ultra starts at $99.99 per month in the US. Google acknowledges research challenges including drift in visual detail and object permanence over longer sessions and difficulty with text clarity and real-time audio accuracy; engineer Diego Rivas said the technology remains research rather than a final product, and every output carries an invisible SynthID watermark.",
-      "significance": "Extends Google's same-day developer push beyond a chat/coding model into interactive world simulation, but its research-preview status and acknowledged drift issues make it a capability signal rather than a shipping product.",
+      "status": "unverified",
+      "content": "A widely circulated post attributed to @unusual_whales and citing Bridgewater research says annualised global cyber incidents rose from roughly 4,000 to nearly 10,000 on a 60-day annualised basis, with the inflection coinciding with Zhipu AI's open-weight release of GLM-5.3. The same account says verified AI-driven incidents rose from near zero to more than 200 per year, including attacks that stole South Korean bank and credit-card data, and that Anthropic's red team found GLM-5.3 could construct working exploits. The report itself states that whether GLM-5.3 is the cause remains uncertain and that the increase could stem from a broader mid-2026 wave of agentic tooling, noting that correlation in timing does not establish causation.",
+      "significance": "If the underlying figures hold, this is the most concrete public case yet where an open-weight release is framed simultaneously as a competitive and a security-policy question, with a rival lab's red team as the independent check.",
       "refs": [
-        "https://www.kuleui.com/zh-cn/news/genie-4-is-now-available-on-the-gemini-api-3cybxupn"
+        "https://asksurf.ai/pulse/zh/global-cyber-incidents-double-glm-5-3-open-weight-release"
       ],
       "related_event_ids": [
-        "ev-google-gemini4-neon"
+        "deepseek-compute-limits-api-opening",
+        "xai-grok-mp-lawsuit"
       ],
-      "transition_hint": "Both Google items are product releases; the next item is a market-side read on a Chinese model vendor rather than a launch."
+      "transition_hint": "Open-weight risk is one accountability question; a UK court case the same day presses a different one, about design choices in a closed consumer product."
     },
     {
       "id": "05-event",
       "kind": "event",
       "rank": 5,
-      "event_id": "ev-zhipu-jpmorgan-note",
-      "title": "JPMorgan reiterates Overweight on Zhipu AI as GLM commercialization advances",
+      "event_id": "xai-grok-mp-lawsuit",
+      "title": "UK MP sues xAI (now SpaceXSI) over Grok-generated sexualised images",
+      "organizations": [
+        "xAI"
+      ],
+      "status": "verified",
+      "content": "Jess Asato, Labour MP for Lowestoft, is suing SpaceXSI — formerly known as xAI — for damages after sexualised images and videos, including some depicting her being sexually assaulted, were generated and shared online using Grok. Her claim alleges the company's design choices make it responsible for Grok's output and that it misused her private information and breached data protection rules. According to the MP, SpaceXSI filed a defence on 30 October admitting the chatbot is designed to expand on short user prompts by pulling data from X threads and the wider internet to create deepfakes. The report also describes a Grok \"spicy mode\" whose system prompts contained \"no restrictions on adult sexual content or offensive content\", later restricted to paying subscribers, and notes that creating or requesting a non-consensual deepfake of an adult is illegal in the UK.",
+      "significance": "A named legislator suing an AI developer over product design, with an admitted design description in the defence, puts liability for generative output squarely in front of a court rather than a regulator.",
+      "refs": [
+        "https://www.bbc.com/news/articles/cq0k6gezp50vo",
+        "https://www.aol.com/articles/mp-says-grok-designed-sexualised-122949000.html?utm_source=flipboard&utm_content=AOLcom%2Fmagazine%2FScience+%26+tech"
+      ],
+      "related_event_ids": [
+        "glm-5-3-cyber-incident-claim"
+      ],
+      "transition_hint": "From liability for a consumer chatbot to a research-integrity reversal about a rival lab's model line."
+    },
+    {
+      "id": "06-event",
+      "kind": "event",
+      "rank": 6,
+      "event_id": "semianalysis-gemini-retraction",
+      "title": "SemiAnalysis publicly retracts its August \"Gemini is cooked\" call and apologises to Google DeepMind",
+      "organizations": [
+        "Google"
+      ],
+      "status": "verified",
+      "content": "SemiAnalysis posted an apology form addressed to Google DeepMind chair Demis Hassabis on X, formally retracting its August 2026 pessimistic assessment of Google's model prospects and amending its headline from \"Gemini is cooked\" to the effect that Gemini has now delivered. The original report had argued Google had fallen behind, citing departures from DeepMind's reinforcement-learning team and poor internal compute allocation, and judged the probability of returning to the top tier as having fallen to zero. The retraction follows Google's Gemini 4 Argon, Carbon, Hydrogen and Neon releases, with Carbon briefly topping the Artificial Analysis composite leaderboard. DeepMind researcher Arthur Douillard said the team had printed the critical article and kept it on the desk as a daily reminder, and Hassabis reposted the apology, accepting it while joking that the checklist missed \"underestimating the people at Google DeepMind\".",
+      "significance": "A prominent independent analyst reversing a categorical judgment in public is a rare, checkable data point on how fast frontier standings can move within a single quarter.",
+      "refs": [
+        "https://readmusk.com/news/2026-11-20/1d1xb65n",
+        "https://www.readaitime.com/news/2026-11-20/1d1xb65n"
+      ],
+      "related_event_ids": [
+        "google-gemini-4-neon-rollout"
+      ],
+      "transition_hint": "The retraction is commentary on Google's release cadence; the next item is a product-level comparison of the same model family against a rival."
+    },
+    {
+      "id": "07-event",
+      "kind": "event",
+      "rank": 7,
+      "event_id": "anthropic-claude-science-tools-docs",
+      "title": "Anthropic publishes Claude Science tooling documentation covering code execution, environments and GPUs",
+      "organizations": [
+        "Anthropic"
+      ],
+      "status": "verified",
+      "content": "Anthropic's Claude.ai documentation describes Claude Science, in which Claude writes and runs Python, R and shell commands (PowerShell on Windows), with Python and R running in a persistent kernel that keeps variables in memory across steps and ends after about 30 minutes idle, on a package-install restart, or at session end. First launch creates two read-only conda starter environments in ~/.claude-science; when work needs more packages, Claude reuses a named environment or proposes a new one behind a permission card, and environments are shared across all projects on the machine. Package installs default to micromamba from conda-forge, bioconda, defaults and pytorch channels, pip from PyPI, and CRAN and Bioconductor for R, with an option to point installs at an internal mirror. The sandbox has no root access or system package manager, code can read but not modify granted folders, and on Linux machines with NVIDIA GPUs a Host GPU switch in Settings > Compute makes GPUs available to Claude-run code while reducing the default sandboxing configuration.",
+      "significance": "Documented, permission-gated local code execution with GPU access is the substrate that makes agentic scientific work usable inside an enterprise security model, and it is the most concrete Anthropic artifact in the window.",
+      "refs": [
+        "https://claude.com/docs/claude-science/tools-and-environments"
+      ],
+      "related_event_ids": [
+        "openai-dots-plus-business-expansion"
+      ],
+      "transition_hint": "Anthropic's contribution is infrastructure documentation rather than a launch; the remaining items are ecosystem and market context."
+    },
+    {
+      "id": "08-event",
+      "kind": "event",
+      "rank": 8,
+      "event_id": "zhipu-jpmorgan-overweight",
+      "title": "JPMorgan reiterates Overweight on Zhipu AI, citing GLM commercialisation and improving margins",
       "organizations": [
         "GLM"
       ],
       "status": "verified",
-      "content": "JPMorgan reiterated an Overweight view on November 18, 2026, saying Zhipu's GLM commercialization is advancing, cloud partnerships are deepening and margins are improving, per a market report. The note discussed the Hong Kong-listed line with a HK$1,200 target on 02513 / 2513.HK rather than a verified U.S. ticker, and the target is in Hong Kong dollars and should not be treated as a direct price reference for ZHIPU shares. The stock was last quoted at $45.23, down 1.27% over 24 hours after trading between $46.63 and $42.71, and sits below its 7-day, 20-day, 50-day, 12-day EMA and 26-day EMA. Technical readings cited include a 14-day RSI of 34.36, MACD at -5.8188, stochastic %K 13.44 and %D 10.75, ATR(14) of $5.36, and 24-hour volume of $36.44 million at 1.26x the 5-day average. On Binance futures, funding was flat at 0.0000%, open interest fell 5.89% over 24 hours to 303,387.85 contracts, and long/short ratios were 80.1% long versus 19.9% short for global accounts and 82.5% versus 17.5% for top traders at 13:00 UTC on November 19, 2026, with a taker buy/sell ratio of 0.4760.",
-      "significance": "The only in-window signal on GLM is an analyst view and trading snapshot rather than a product or research event, so it ranks last as a market-context item.",
+      "content": "JPMorgan reiterated an Overweight view on Zhipu AI on 18 November 2026, saying GLM commercialisation is advancing, cloud partnerships are deepening and margins are improving. The note concerns the Hong Kong-listed line with a HK$1,200 target on 02513 / 2513.HK rather than a verified US ticker, and the report cautions that the target is in Hong Kong dollars and should not be read as a direct price reference for the quoted ZHIPU price. The quoted stock was at $45.23, down 1.27% over 24 hours, below its 7-, 20- and 50-day moving averages, with a 14-day RSI of 34.36 and negative MACD.",
+      "significance": "Sell-side validation of GLM commercialisation is the market-side counterpart to the product and security stories around Zhipu, and the report is explicit about the listing and currency caveats.",
       "refs": [
         "https://blockchain.news/news/20261119-price-prediction-zhipu-jpmorgan-sees-stable-fundamentals-but-the"
       ],
-      "related_event_ids": [],
+      "related_event_ids": [
+        "glm-5-3-cyber-incident-claim"
+      ],
+      "transition_hint": "From a bank's view of one Chinese lab to a comparison that questions whether a rumoured model in that family exists at all."
+    },
+    {
+      "id": "09-event",
+      "kind": "event",
+      "rank": 9,
+      "event_id": "glm-5-5-nonexistent-check",
+      "title": "Analysis finds no evidence GLM-5.5 exists, contrasting it with Tencent's newly open-weighted Hy4",
+      "organizations": [
+        "GLM"
+      ],
+      "status": "verified",
+      "content": "An OrcaRouter analysis checked five surfaces on 20 November 2026 and found no trace of a GLM-5.5: Z.ai's release notes stop at GLM-5.3-Flash dated 26 August 2026, the 5.5 documentation path returns 404, the zai-org Hugging Face organisation's four most recent text repositories are all dated 25 August 2026, the Artificial Analysis page for 5.5 is a 404, and the price list has nothing above GLM-5.3. The piece instead compares Tencent's Hy4, generally available since 4 November and released as open weights on 20 November under a custom Tencent Hy License 1.0, against the shipping GLM-5.3, which it describes as a 753-billion-parameter model with 40 billion active parameters, a 1-million-token context, a custom Z.ai licence and full weight release. It notes the two score 35 and 32 on the Artificial Analysis Intelligence Index, a gap it calls within noise.",
+      "significance": "A methodical negative result is useful editorial hygiene: it blocks a plausible-sounding version number from entering coverage while giving a substantive open-weight comparison in its place.",
+      "refs": [
+        "https://www.orcarouter.ai/zh-TW/blog/tencent-hy4-vs-glm-5-5"
+      ],
+      "related_event_ids": [
+        "zhipu-jpmorgan-overweight",
+        "glm-5-3-cyber-incident-claim"
+      ],
+      "transition_hint": "A rumour that did not check out closes the GLM thread; the next item is a competitor's model documentation rather than a launch."
+    },
+    {
+      "id": "10-event",
+      "kind": "event",
+      "rank": 10,
+      "event_id": "kimi-k3-1-pro-docs",
+      "title": "Moonshot publishes Kimi K3.1 Pro API documentation and an advisor-tool pattern",
+      "organizations": [
+        "Kimi"
+      ],
+      "status": "verified",
+      "content": "Moonshot's Kimi API platform documents kimi-k3.1-pro as its flagship model for long-horizon coding and end-to-end knowledge work, with native visual understanding, a 1-million-token context window, reasoning effort settings of low, high and max (default max), and a high-speed variant. The platform offers Chat Completions, Responses and Anthropic-compatible Messages interfaces, plus file, batch, search and fetch endpoints. A separate guide describes wrapping a flagship model as a client-side advisor tool so a lightweight executor such as kimi-k2.6 can consult kimi-k3.1-pro on difficult debugging or design decisions during long-horizon tasks, with advice to cap consultations per task and to strip the executor's reasoning content before the advisor request.",
+      "significance": "The advisor pattern is a concrete cost-control design for agentic coding, and the documentation is the clearest in-window artifact of how Chinese labs are competing on harness design rather than raw model scores.",
+      "refs": [
+        "https://platform.kimi.com/docs/guide/kimi-k3-1-pro-quickstart",
+        "https://platform.kimi.ai/docs/guide/use-advisor-tool",
+        "https://platform.kimi.ai/docs/introduction"
+      ],
+      "related_event_ids": [
+        "deepseek-compute-limits-api-opening"
+      ],
+      "transition_hint": "Harness design is one lever; the last item is a pricing and positioning comparison that puts several of these models side by side."
+    },
+    {
+      "id": "11-event",
+      "kind": "event",
+      "rank": 11,
+      "event_id": "qwen4-max-preview-positioning",
+      "title": "Alibaba documentation positions Qwen4-Max preview as a flagship for long-horizon agentic tasks",
+      "organizations": [
+        "Qwen"
+      ],
+      "status": "verified",
+      "content": "Alibaba Cloud developer documentation describes Qwen4-Max, released 11 November 2026 as a preview under the identifier qwen4-max-preview, as the Qwen series' fourth-generation flagship, launched first through the Token Plan subscription and available in Qwen Office, Qoder, the Qwen app and QwenStudio. The documentation says the upgrade centres on world knowledge and perception plus coding and agentic capability, with roughly a 1-million-token context and text, image and video input, and that the preview identifier is scheduled to go offline at 24:00 on 25 November 2026, after which the stable version will ship under a new model name. It states that parameter count, context window, benchmark scores and formal API pricing for the preview have not been published, and that production workloads should stay on Qwen3.8-Max.",
+      "significance": "A flagship preview with an explicit expiry date and no published benchmarks is a useful counterweight to launch-day claims elsewhere, and it shows Alibaba competing on agentic task completion rather than chat quality.",
+      "refs": [
+        "https://developer.aliyun.com/article/1786039",
+        "https://developer.aliyun.com/article/1786034"
+      ],
+      "related_event_ids": [
+        "kimi-k3-1-pro-docs",
+        "google-gemini-4-neon-rollout"
+      ],
       "transition_hint": ""
     },
     {
@@ -120,21 +259,22 @@
       "kind": "themes",
       "title": "Cross-Org Themes",
       "content": [
-        "Flagship model commercialization: Google's Gemini 4 Neon and Qwen's Qwen4-Max preview both pair frontier models with tiered paid access and agentic-coding positioning",
-        "Agentic and long-horizon task focus: Google's coding-agent benchmark claims and Qwen's coding/agentic emphasis point to the same competitive axis"
+        "Agentic capability is being repositioned from premium feature to default product surface across US and Chinese labs",
+        "Chinese labs are competing on harness, tooling and pricing rather than headline benchmark scores",
+        "Compute scarcity and cost control are shaping product decisions as much as model quality"
       ]
     },
     {
       "id": "88-rumors-unverified",
       "kind": "rumors",
       "title": "Rumors and Unverified Claims",
-      "content": "A Chinese-language report on Genie 4 attributes specific internal model roles (Gemini 3.8 Flash, Gemini Omni, Gemini 4 Argon) and session-length limits to 'external reports' rather than Google's own disclosure; these details are unconfirmed. The same report's claim that access will later expand to Google AI Ultra subscribers via Project Genie is described as based on related reports. Qwen coverage includes unconfirmed or conflicting specifications: one article cites a 2.4T-parameter MoE with 71B activated parameters, 328B N-gram embedding parameters, Work360 52.69, SuperCLUE 61.61 and a 58% per-task cost reduction, while another states official parameter counts, context window, benchmark scores and formal API pricing had not been published at preview time. The Kimi item's background note that DeepSeek's V4 report validated Ascend NPU and Nvidia GPU paths is characterized as inference operator validation by industry consensus, and DeepSeek has not disclosed its pre-training compute."
+      "content": "A forum thread claims Meta intends to return to open-source models and may revive the Llama line; the post is explicitly framed as a rumour and the replies treat it as unconfirmed. Separately, the GLM-5.3 cyber-incident figures rest on a single social-media account citing Bridgewater, and the source itself says causation is unestablished."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "The competitive signal to watch is whether Google's published Neon pricing and benchmark claims hold up under independent evaluation, and whether Qwen's November 25 preview cutoff produces a stable successor with disclosed specifications. For Kimi, the open question is whether domestic-chip adaptation translates into any disclosed training or deployment commitment."
+      "content": "The competitive axis this cycle is not raw model scores but whether agents are cheap, controllable and auditable enough to ship by default. Watch for published usage limits and regional availability for the newly widened agent tiers, and for any independent replication of the open-weight security claims."
     }
   ]
 }

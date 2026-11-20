@@ -1,110 +1,162 @@
-# arXiv Trending Biology & Biomedicine — Thursday, 19 November 2026
+## Headline
 
-Latest batch announced Thursday, 19 November 2026; 8 notable papers from the 18 November submission date. The strongest patterns are cross-modal translation into scalable signals, predictive models of cellular dynamics, and better interpretation of molecular and imaging measurements. Agenda: examine what is genuinely measured versus predicted, then note where external validation is still needed. arXiv has no official trending chart; this is an inferred, relevance-ranked selection from incomplete biomedical coverage, not a readership or download ranking.
+Latest available announcement batch: Thursday, 19 November 2026. This report selects 13 papers, led by protein-structure and interaction evaluation, cross-modal molecular prediction, and computational cell dynamics. Spoken agenda: what was measured, what remains a model prediction, and which experiments could close that gap. arXiv has no official trending chart; this is an inferred relevance-ranked selection from incomplete biomedical coverage, not a popularity or readership ranking.
 
-## Top papers (ranked)
+Window: daily; announcement batch 2026-11-19; snapshot 2026-11-20T01:27:12Z. No newer announcement batch was present for the current calendar day, so this uses the most recent prior batch.
 
-### 1. [Cardiac MRI-informed electrocardiography enables biologically grounded cardiomyopathy detection](https://arxiv.org/abs/2611.23925)
-- **Abstract:** MyoECG transfers cardiac MRI phenotype information into ECG representations; the authors report cardiomyopathy AUROCs of 0.800–0.974 across seven datasets and improved reader performance in a six-cardiologist study.
-- **Authors:** Zhengyao Ding; Kewen Wang; Yujian Hu; Ziyu Li; Yiheng Mao; Yue Wang; Haitao Li; Dengnan Zhang; Xuanhong Liu; Yue Wang; Jing Wang; Yue Chen; Longbo Wang; Mengjia Chen; Chengchen Zhao; Xuesen Chu; Yubin Zhang; Mor Peleg; Judith Somekh; Mingxuan Yuan; Hui Yan; Yue Gu; Fan Yi; Zhilong Jia; Zhentao Tang; Xi Hu; Fei Wu; Hongkun Zhang; Ting Chen; Zhengxing Huang
-- **arXiv:** `2611.23925v1` (published 2026-11-18T06:16:55Z; categories: cs.AI, q-bio.QM)
-- **Evidence for ranking:** Ranked first for direct biomedical relevance and breadth of reported evaluation: 45,241 paired ECG–CMR examinations, over 1.8 million ECGs across seven datasets, and a six-cardiologist reader study; a third-party news summary also appeared. These are evidence-breadth signals, not measures of readership or independent validation.
-- **Claimed contribution:** The authors claim CMR-guided training can transfer structural and functional information into ECG-only cardiomyopathy detection; in their retrospective reader study, assistance improved mean sensitivity and specificity.
-- **Caveat:** Retrospective evidence; the paper reports limited positive predictive value in low-prevalence settings and calls for prospective evaluation of calibration, false-positive burden, clinical decisions, resource use, and outcomes. The authors do not position it as a standalone diagnostic test.
+## Notable recent papers (ranked by relevance; popularity evidence sparse)
+
+### 1. [Biases and Limits of AlphaFold Predictions for Non-Globular Proteins](https://arxiv.org/abs/2611.24546)
+- **Abstract:** The authors assemble experimentally validated non-globular protein cases to show how AlphaFold predictions can diverge from biologically relevant states when molecular context is missing.
+- **Authors:** Maria Cristina Aspromonte, Alexander M. Monzon, Miguel A. Andrade-Navarro, Oriol Bárcenas, Viktor Bartosik, Pau Bernadó, Juan Cortés, Zsuzsanna Dosztanyi, Gabor Erdos, Isabella C. Felli, Helena Gradišar, San Hadži, Tamás Hegedűs, Khalil Joron, Pavel Kaderavek, Eitan Lerner, Dirk Linke, Pablo Mier, Ana Pantelić, Roberta Pierattelli, Salvador Ventura, Marija Vidović, Metaxia Vlassi, Lukas Zidek, Silvio C. E. Tosatto
+- **arXiv:** `2611.24546v1` (published 2026-11-18T14:51:02Z; categories: `q-bio.BM`)
+- **Evidence for ranking:** The paper organizes 27 experimentally validated cases into four discrepancy classes; a Biology+AI Daily technical thread also discussed it. This is a checkable discussion signal, not a popularity measure.
+- **Claimed contribution:** The authors offer a framework for considering interactions and assembly, biological environment, global architecture/topology, and physical constraints when interpreting predicted structures.
+- **Caveat:** This is a curated collection, not a systematic estimate of AlphaFold error rates. The authors emphasize that state selection often needs orthogonal experimental evidence, including NMR, SAXS, cryo-EM, or cross-linking.
 - **Announcement type:** new submission, 2026-11-19
-- **Themes:** Biomedical & translational medicine, Quantitative methods
+- **Themes:** Biochemistry & proteins
 
-### 2. [SCOPE: Single-Cell Omics Prediction from Histology via RNA-Protein Prior Enhancement](https://arxiv.org/abs/2611.24104)
-- **Abstract:** SCOPE uses shared RNA–protein priors to predict single-cell molecular profiles from H&E images, reporting improvements over baselines across 16 organs and two external protein cohorts.
-- **Authors:** Leyang Tao; Xuan Gong; Luyuan Xie; Arjun Beniwal; Yuqi Tan; Kun-Hsing Yu
-- **arXiv:** `2611.24104v1` (published 2026-11-18T09:24:45Z; categories: cs.CV, q-bio.GN)
-- **Evidence for ranking:** Ranked highly for direct omics relevance and evaluation breadth: 16-organ test data plus two external protein cohorts; cross-listed in cs.CV and q-bio.GN. The accessible Semantic Scholar record showed 0 citations at this snapshot, so no citation momentum is inferred.
-- **Claimed contribution:** The authors claim that gene–protein correspondence and biomarker priors let a shared model transfer information across separately measured RNA and protein modalities, including to markers without direct H&E supervision.
-- **Caveat:** These are image-based predictions, not direct molecular measurements. The authors note that RNA and protein assays came from separate sections rather than paired measurements on the same section; external protein validation involved two cohorts.
-- **Announcement type:** new submission, 2026-11-19
-- **Themes:** Omics & single-cell methods, Quantitative methods
+### 2. [Cardiac MRI-informed electrocardiography enables biologically grounded cardiomyopathy detection](https://arxiv.org/abs/2611.23925)
+- **Abstract:** MyoECG transfers CMR-derived structural and functional information into an ECG representation for cardiomyopathy detection from ECGs alone at inference.
+- **Authors:** Zhengyao Ding, Kewen Wang, Yujian Hu, Ziyu Li, Yiheng Mao, Yue Wang, Haitao Li, Dengnan Zhang, Xuanhong Liu, Yue Wang, Jing Wang, Yue Chen, Longbo Wang, Mengjia Chen, Chengchen Zhao, Xuesen Chu, Yubin Zhang, Mor Peleg, Judith Somekh, Mingxuan Yuan, Hui Yan, Yue Gu, Fan Yi, Zhilong Jia, Zhentao Tang, Xi Hu, Fei Wu, Hongkun Zhang, Ting Chen, Zhengxing Huang
+- **arXiv:** `2611.23925v1` (published 2026-11-18T06:16:55Z; categories: `cs.AI`, `q-bio.QM`)
+- **Evidence for ranking:** Authors report 45,241 paired ECG-CMR examinations for pretraining, over 1.8 million ECGs across seven data sources, and a six-cardiologist reader study using 403 ECGs.
+- **Claimed contribution:** The authors report AUROCs of 0.800–0.974 across their datasets and improved mean reader sensitivity and specificity with model assistance.
+- **Caveat:** Retrospective preprint evidence is not a prospective clinical-impact study. Case mix and prevalence varied; the authors note limited positive predictive value in low-prevalence datasets and call for prospective validation.
+- **Announcement type:** new submission (cross-list), 2026-11-19
+- **Themes:** Biomedical & translational medicine; Quantitative methods
 
-### 3. [STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction](https://arxiv.org/abs/2611.23777)
-- **Abstract:** STORM predicts protein–small-molecule binding affinity by transferring information from experimentally measured reference molecules, without requiring protein–ligand structures.
-- **Authors:** Ayush Pandit; Rohan V. Koodli; Wei Deng; Roxana Daneshjou; Ron O. Dror
-- **arXiv:** `2611.23777v1` (published 2026-11-18T03:34:08Z; categories: q-bio.QM, cs.LG)
-- **Evidence for ranking:** Ranked for biochemical relevance and its reported multi-dataset comparisons with Boltz-2; cross-listed in q-bio.QM and cs.LG. One early Biology+AI social-media post discussed the paper, which is a weak attention signal rather than independent validation.
-- **Claimed contribution:** The authors report comparable or better affinity-prediction accuracy than Boltz-2 on their evaluation datasets and over five orders of magnitude faster inference and training in their comparisons.
-- **Caveat:** The model does not use structural or biophysical signals and depends on historical affinity data and reference-molecule similarity. Dataset split design and performance on genuinely novel targets or scaffolds matter; the preprint does not establish experimental or drug-discovery utility.
-- **Announcement type:** new submission, 2026-11-19
-- **Themes:** Biochemistry & proteins, Bioinformatics & sequence analysis
+### 3. [ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry](https://arxiv.org/abs/2610.26829)
+- **Abstract:** ProteinGeoBench tests whether AI agents can retrieve facts about protein structures, check sequences, calculate coordinate geometry, and reason about structures.
+- **Authors:** Matt Turk, Brandon L. Neel, Diana M. Lopez, Zachary D. Smith, Grace N. Johnecheck, James B. Golden
+- **arXiv:** `2610.26829v2` (first submitted 2026-10-19T17:55:38Z; updated 2026-11-18T02:39:21Z; categories: `cs.AI`, `cs.LG`, `q-bio.BM`)
+- **Evidence for ranking:** The revised study includes 131 tasks, 4,249 runs across four frontier models, and a 26-model subset; benchmark tasks and code are publicly linked by the authors.
+- **Claimed contribution:** The authors report a gap between fact lookup and coordinate-based geometry, and show that rankings shift with network access and agent harness; the leaders were too close to order reliably under their bootstrap analysis.
+- **Caveat:** Results concern a specific benchmark and tool setup, not general biological reasoning or experimental performance. The paper itself shows that access and harness configuration materially affect scores.
+- **Announcement type:** revision, 2026-11-19
+- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis
 
-### 4. [MitoWorld: A Stochastic World Model of the Single-Cell Cycle under Genetic Perturbation](https://arxiv.org/abs/2611.23953)
-- **Abstract:** MitoWorld models individual cell-image trajectories and division timing after genetic perturbation; on 325 held-out MitoCheck tracks across 17 knockdowns and a control, it reports improved video metrics and calibrated prediction intervals.
-- **Authors:** Ting Long; Xiaojing Sun; Cheng Han; Zhicheng Ji; Yingnian Wu; Jiebo Luo; Heng Fan; Dongfang Liu
-- **arXiv:** `2611.23953v1` (published 2026-11-18T06:42:32Z; categories: cs.CV, q-bio.QM)
-- **Evidence for ranking:** Ranked for cell-biology relevance and a checkable held-out benchmark (325 tracks; 17 knockdowns plus control); cross-listed in cs.CV and q-bio.QM. The accessible Semantic Scholar record showed 0 citations at this snapshot, so citation momentum is not used.
-- **Claimed contribution:** The authors claim a stochastic generative model can jointly forecast cell appearance and division hazard, with lower FID and JEDi scores than their strongest baselines on the held-out tracks.
-- **Caveat:** Evaluation is computational and confined to the MitoCheck dataset; generated trajectories and hazard estimates are not direct evidence that predicted perturbation effects will generalize to new cell types or experimental settings.
-- **Announcement type:** new submission, 2026-11-19
-- **Themes:** Molecular & cell biology, Quantitative methods
+### 4. [SCOPE: Single-Cell Omics Prediction from Histology via RNA-Protein Prior Enhancement](https://arxiv.org/abs/2611.24104)
+- **Abstract:** SCOPE combines gene-protein relationships and biological priors to predict cell-resolved RNA and protein profiles from H&E images, including markers without direct training labels.
+- **Authors:** Leyang Tao, Xuan Gong, Luyuan Xie, Arjun Beniwal, Yuqi Tan, Kun-Hsing Yu
+- **arXiv:** `2611.24104v1` (published 2026-11-18T09:24:45Z; categories: `cs.CV`, `q-bio.GN`)
+- **Evidence for ranking:** Tested across 16 organs and two external protein cohorts; authors report mean RNA-correlation gains of 8.8% and protein-correlation gains of 9.7% for seen and 11.9% for unseen markers against the strongest stated baselines.
+- **Claimed contribution:** The authors present a shared cross-omics model trained on unpaired assay sections and designed to extend predictions beyond directly supervised markers.
+- **Caveat:** These remain computational predictions, not molecular assay replacements. External protein cohorts were limited in size (35 colorectal-cancer patients and 40 ORION patients), and correlation does not establish cell-level biological accuracy.
+- **Announcement type:** new submission (cross-list), 2026-11-19
+- **Themes:** Omics & single-cell methods; RNA & transcriptomics; Bioinformatics & sequence analysis
 
-### 5. [Horizontal Flow Matching for Single-Cell Spatiotemporal Dynamics](https://arxiv.org/abs/2611.24764)
-- **Abstract:** HORIZON learns spatial transcriptomic tissue dynamics while factoring out shared rotation and translation; the authors report improved reconstruction and held-out-stage interpolation on four spatial transcriptomics time courses.
-- **Authors:** Zihan Wang; Jianzhe Li; Zhenyi Zhang; Peijie Zhou
-- **arXiv:** `2611.24764v1` (published 2026-11-18T17:16:53Z; categories: cs.LG, cs.AI, q-bio.QM)
-- **Evidence for ranking:** Ranked for a concrete spatial-transcriptomics method and evaluation across four time courses, plus a simulated test of coordinate-frame perturbations; cross-listed in cs.LG, cs.AI, and q-bio.QM.
-- **Claimed contribution:** The authors claim horizontal flow matching removes rigid-frame motion from inferred tissue dynamics and enables continuous tissue generation from an initial snapshot.
-- **Caveat:** Results are computational comparisons on four time courses plus simulated alignment tests. Reconstructed dynamics are not direct cell tracking or causal evidence, and broader datasets and experimental settings are needed to assess transfer.
-- **Announcement type:** new submission, 2026-11-19
-- **Themes:** RNA & transcriptomics, Omics & single-cell methods, Quantitative methods
+### 5. [Are You Learning Biological Signal or Shortcuts? Auditing and Mitigating Bias in Protein-Protein Interaction Datasets](https://arxiv.org/abs/2609.10193)
+- **Abstract:** The authors audit study and technical biases in protein-interaction datasets that can let machine-learning models exploit shortcuts rather than interaction biology.
+- **Authors:** Judith Bernett, Anton Spannagl, Joel Ås, Markus List, David B. Blumenthal
+- **arXiv:** `2609.10193v2` (first submitted 2026-09-09T14:02:18Z; updated 2026-11-18T12:43:58Z; categories: `q-bio.MN`, `cs.LG`)
+- **Evidence for ranking:** The revision compares HIPPIE, IntAct, STRING, and two PDB-derived datasets, and reports distinct shortcut signals across random and protein-overlap-controlled splits.
+- **Claimed contribution:** The authors provide a Nextflow pipeline using similarity-aware splits and optimization-based negative sampling to reduce selected dataset biases.
+- **Caveat:** The analysis concerns the databases, splits, and negative-sampling procedures studied; mitigation of these shortcuts does not by itself establish accurate biological interaction prediction.
+- **Announcement type:** revision, 2026-11-19
+- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis
 
-### 6. [Unmyelinated axons alter the biological interpretation of MRI biomarkers of demyelination](https://arxiv.org/abs/2611.24487)
-- **Abstract:** A mouse-model study combining diffusion and relaxation MRI with electron microscopy finds that unmyelinated axons materially affect white-matter MRI metrics commonly interpreted as measures of myelinated fibers.
-- **Authors:** Ali Abdollahzadeh; Ricardo Coronado-Leija; Elizabeth Chasen; Sungheon G. Kim; Dmitry S. Novikov; Els Fieremans
-- **arXiv:** `2611.24487v1` (published 2026-11-18T14:20:34Z; categories: physics.med-ph)
-- **Evidence for ranking:** Ranked for direct biomedical and measurement relevance, with MRI measurements checked against electron microscopy in a cuprizone mouse model of demyelination and recovery; the abstract reports a g-ratio bias of up to 8% when within-voxel heterogeneity is ignored.
-- **Claimed contribution:** The authors claim axonal-water-fraction estimates at short diffusion times reflect total intra-axonal space, and that g-ratio estimates align with EM only when myelinated and unmyelinated axons are both included.
-- **Caveat:** The evidence is from a mouse model and does not establish performance or interpretation in human patients. MRI-derived measures and automated EM segmentation remain dependent on acquisition and analysis assumptions.
+### 6. [Uneven gains in protein-RNA affinity and mutation-effect prediction](https://arxiv.org/abs/2611.24739)
+- **Abstract:** The study tests whether improved protein-RNA affinity estimates also improve average mutation effects, mutation ranking, and local prediction accuracy.
+- **Authors:** Shangkun Sima, Tongfei Shen, Tianchi Lu
+- **arXiv:** `2611.24739v1` (published 2026-11-18T16:57:14Z; categories: `cs.LG`, `cs.CE`)
+- **Evidence for ranking:** It compares 11 method families, 220 mutation pairs across 20 families, and an independent test of 24 quantitative pairs from three source-matched families.
+- **Claimed contribution:** Across 220 pairs, the authors report improved mean-effect accuracy but no decrease in mean-centered local error and uncertain ranking gains. In the independent set, mean-centered local error fell overall from 0.4198 to 0.3761 pKd, though one of three families had higher error.
+- **Caveat:** Performance varies by family and metric; the small independent test cannot establish broad transfer. This paper is outside the configured biology-category query but is included for its direct protein-RNA biochemical focus.
 - **Announcement type:** new submission, 2026-11-19
-- **Themes:** Medical physics & imaging, Biomedical & translational medicine
+- **Themes:** Biochemistry & proteins; RNA & transcriptomics; Quantitative methods
 
-### 7. [A structure-based model of the bacterial chemosensory array reveals how the scaffolding protein CheW tunes sensory responses](https://arxiv.org/abs/2611.23921)
-- **Abstract:** A structure-based Ising model of the bacterial chemosensory array reproduces previously reported CheW-dependent response changes and predicts how CheW abundance and placement shape signaling dynamics.
-- **Authors:** David Hathcock; Yingxin Zheng; Yuhai Tu
-- **arXiv:** `2611.23921v1` (published 2026-11-18T06:11:15Z; categories: physics.bio-ph, cond-mat.stat-mech, q-bio.MN)
-- **Evidence for ranking:** Ranked for molecular-mechanistic relevance and cross-list breadth (physics.bio-ph, cond-mat.stat-mech, q-bio.MN); the model reproduces response patterns reported in prior experiments and generates specific, testable single-cell dynamics predictions.
-- **Claimed contribution:** The authors attribute sharper signaling responses to CheW-mediated effective coupling between core units and predict a transition from relaxational to oscillatory fluctuations as CheW abundance changes.
-- **Caveat:** This is a model, not a new experimental demonstration. CheW states and couplings are indirectly constrained, and the predicted oscillations and assembly effects require direct tests such as single-cell FRET across CheW levels.
+### 7. [STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction](https://arxiv.org/abs/2611.23777)
+- **Abstract:** STORM combines protein and molecule representations to predict small-molecule binding affinity without requiring a predicted complex structure at inference.
+- **Authors:** Ayush Pandit, Rohan V. Koodli, Wei Deng, Roxana Daneshjou, Ron O. Dror
+- **arXiv:** `2611.23777v1` (published 2026-11-18T03:34:08Z; categories: `q-bio.QM`, `cs.LG`)
+- **Evidence for ranking:** Authors compare on multiple evaluation datasets and report accuracy comparable to or above Boltz-2 on those tests, with over five orders of magnitude faster training and inference.
+- **Claimed contribution:** The authors propose similarity transfer from reference molecules as a lightweight route to affinity prediction and suggest combining historical experimental affinity data with structural and biophysical information.
+- **Caveat:** This is an in-silico benchmark claim, not evidence of experimental hit rates or drug efficacy; performance on novel targets and scaffolds requires independent assessment.
 - **Announcement type:** new submission, 2026-11-19
-- **Themes:** Biochemistry & proteins, Molecular & cell biology
+- **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis
 
-### 8. [Benchmarking Traditional and Learning-Based Reference-Free Compressors for Long-Read Sequencing Data](https://arxiv.org/abs/2611.23794)
-- **Abstract:** LRCBench compares reference-free long-read sequencing compressors across 35 methods and 16 real-world Oxford Nanopore and PacBio datasets, assessing compression, speed, memory, and robustness.
-- **Authors:** Huidong Ma; Hui Sun; Xinyan Shi; Cheng Zhong; Xiaoguang Liu; Gang Wang
-- **arXiv:** `2611.23794v1` (published 2026-11-18T04:00:08Z; categories: cs.IT, q-bio.GN)
-- **Evidence for ranking:** Ranked for genomic-method relevance and the breadth of its benchmark (35 compressors; 16 datasets from two sequencing platforms); cross-listed in cs.IT and q-bio.GN.
-- **Claimed contribution:** The authors report that CoLoRd gave the best overall compression ratios in their tests, while other tools traded off speed, memory use, and robustness.
-- **Caveat:** Learning-based compressors were evaluated on only six MinION datasets because of computational cost; results depend on the sampled technologies, data, and benchmark settings and are not a biological finding.
+### 8. [Micrograph B-factor estimation via Wilson statistics](https://arxiv.org/abs/2611.24150)
+- **Abstract:** The method estimates and corrects a separate B factor for each cryo-EM micrograph before three-dimensional reconstruction rather than applying one global correction afterward.
+- **Authors:** Ayelet Heimowitz, Amit Singer
+- **arXiv:** `2611.24150v1` (published 2026-11-18T09:55:09Z; categories: `eess.IV`, `q-bio.BM`)
+- **Evidence for ranking:** Evaluated using three real-world EMPIAR datasets; for beta-galactosidase, the authors report a 0.2 Å resolution improvement after micrograph-level correction.
+- **Claimed contribution:** The authors report that per-micrograph Wilson-statistics estimates can account for variable image decay and improve reconstruction resolution in their tests.
+- **Caveat:** Evidence comes from three datasets and specific RELION reconstructions; the abstract does not establish that the gain generalizes across targets, acquisition protocols, or pipelines.
+- **Announcement type:** new submission (cross-list), 2026-11-19
+- **Themes:** Biochemistry & proteins; Medical physics & imaging
+
+### 9. [MitoWorld: A Stochastic World Model of the Single-Cell Cycle under Genetic Perturbation](https://arxiv.org/abs/2611.23953)
+- **Abstract:** MitoWorld generates single-cell image trajectories after gene knockdown and jointly models appearance changes and cell-division timing.
+- **Authors:** Ting Long, Xiaojing Sun, Cheng Han, Zhicheng Ji, Yingnian Wu, Jiebo Luo, Heng Fan, Dongfang Liu
+- **arXiv:** `2611.23953v1` (published 2026-11-18T06:42:32Z; categories: `cs.CV`, `q-bio.QM`)
+- **Evidence for ranking:** Authors report evaluation on 325 held-out MitoCheck tracks spanning 17 knockdowns and a control, with lower FID and JEDi than their strongest baselines and near-nominal 90% interval coverage.
+- **Claimed contribution:** The authors model continuous image evolution with a division hazard, offering a generative tool for time-lapse perturbation screens.
+- **Caveat:** Evaluation is computational and limited to MitoCheck; generated trajectories do not show that predicted perturbation effects generalize to new cell types or experimental settings.
+- **Announcement type:** new submission (cross-list), 2026-11-19
+- **Themes:** Omics & single-cell methods; Molecular & cell biology; Quantitative methods
+
+### 10. [Horizontal Flow Matching for Single-Cell Spatiotemporal Dynamics](https://arxiv.org/abs/2611.24764)
+- **Abstract:** HORIZON models changes in tissue state and cell abundance while factoring out common rotation and translation in spatial-transcriptomics snapshots.
+- **Authors:** Zihan Wang, Jianzhe Li, Zhenyi Zhang, Peijie Zhou
+- **arXiv:** `2611.24764v1` (published 2026-11-18T17:16:53Z; categories: `cs.LG`, `cs.AI`, `q-bio.QM`)
+- **Evidence for ranking:** Authors report coordinate-perturbation simulations and improved reconstruction plus held-out-stage interpolation on four spatial-transcriptomics time courses.
+- **Claimed contribution:** The method estimates relative tissue pose and continuous tissue, expression, and abundance changes from snapshots.
+- **Caveat:** Snapshot-derived distributions do not track the same living cells; inferred dynamics depend on sampling, alignment, and modeling assumptions.
+- **Announcement type:** new submission (cross-list), 2026-11-19
+- **Themes:** Omics & single-cell methods; RNA & transcriptomics; Quantitative methods
+
+### 11. [Elysium: Simulation-Free Unbalanced Schrödinger Bridges](https://arxiv.org/abs/2611.24763)
+- **Abstract:** Elysium learns state transitions and population changes from destructive single-cell snapshots without simulating trajectories during training.
+- **Authors:** Zihan Wang, Jianzhe Li, Zhenyi Zhang, Peijie Zhou
+- **arXiv:** `2611.24763v1` (published 2026-11-18T17:16:41Z; categories: `cs.LG`, `cs.AI`, `q-bio.QM`)
+- **Evidence for ranking:** Authors report tests against simulated benchmarks with known ground truth and single-cell time courses, including biphasic drug-response dynamics.
+- **Claimed contribution:** The authors propose direct regression objectives for an unbalanced Schrödinger bridge and report recovery of the optimum under stated assumptions.
+- **Caveat:** Inferred population distributions and events are not direct lineage observations; simulation-ground-truth results do not independently validate biological mechanisms.
+- **Announcement type:** new submission (cross-list), 2026-11-19
+- **Themes:** Omics & single-cell methods; Quantitative methods
+
+### 12. [Unmyelinated axons alter the biological interpretation of MRI biomarkers of demyelination](https://arxiv.org/abs/2611.24487)
+- **Abstract:** MRI and electron microscopy in a cuprizone mouse model indicate that unmyelinated axons contribute to white-matter metrics often interpreted as myelinated-fiber biomarkers.
+- **Authors:** Ali Abdollahzadeh, Ricardo Coronado-Leija, Elizabeth Chasen, Sungheon G. Kim, Dmitry S. Novikov, Els Fieremans
+- **arXiv:** `2611.24487v1` (published 2026-11-18T14:20:34Z; categories: `physics.med-ph`)
+- **Evidence for ranking:** The authors combine diffusion and relaxation MRI with electron microscopy and report up to 8% negative bias in g-ratio estimates when within-voxel heterogeneity is ignored.
+- **Claimed contribution:** The authors argue that short-diffusion-time axonal water fraction reflects total intra-axonal space and g-ratio estimates should include both myelinated and unmyelinated axons.
+- **Caveat:** This is a mouse-model and imaging-method result; it does not validate a human diagnostic biomarker or establish clinical utility.
 - **Announcement type:** new submission, 2026-11-19
-- **Themes:** DNA & genomics, Bioinformatics & sequence analysis
+- **Themes:** Medical physics & imaging; Biomedical & translational medicine
+
+### 13. [A structure-based model of the bacterial chemosensory array reveals how the scaffolding protein CheW tunes sensory responses](https://arxiv.org/abs/2611.23921)
+- **Abstract:** A structure-based lattice model tests how CheW abundance and placement could change bacterial chemosensory-array cooperativity, sensitivity, and activity fluctuations.
+- **Authors:** David Hathcock, Yingxin Zheng, Yuhai Tu
+- **arXiv:** `2611.23921v1` (published 2026-11-18T06:11:15Z; categories: `physics.bio-ph`, `cond-mat.stat-mech`, `q-bio.MN`)
+- **Evidence for ranking:** The model quantitatively reproduces previously reported CheW-titration effects and yields specific predictions for single-cell signaling dynamics.
+- **Claimed contribution:** The authors propose that CheW tunes effective coupling and predict a crossover from relaxational to oscillatory fluctuations.
+- **Caveat:** The new dynamic signatures are model predictions, not direct observations in this study; targeted single-cell measurements are needed.
+- **Announcement type:** new submission (cross-list), 2026-11-19
+- **Themes:** Biochemistry & proteins; Molecular & cell biology; Quantitative methods
 
 ## Trending Research Themes
 
-- **Cross-modal transfer for broader reach:** MyoECG transfers CMR supervision to ECG-only inference, while SCOPE predicts RNA/protein profiles from H&E. Both target information-rich assays that are costly or sparsely available; neither result means the inferred signal replaces the original measurement.
-- **Models that recover biological dynamics:** HORIZON and MitoWorld infer spatial or single-cell trajectories from transcriptomic and time-lapse data, while the CheW paper uses a structure-based model to predict collective signaling dynamics. These are distinct settings; the CheW dynamic signatures remain predictions.
-- **Measurement and data infrastructure:** the MRI/EM study revisits what white-matter indices represent, and LRCBench compares practical long-read compression choices. These are distinct methods papers, not evidence of a field-wide shift from one day of submissions.
+- **Protein models meet experimental context and evaluation design:** AlphaFold's non-globular examples, ProteinGeoBench's lookup-versus-geometry tests, the PPI dataset audit, protein-RNA mutation effects, STORM affinity prediction, and per-micrograph cryo-EM correction all stress that conclusions depend on molecular context, benchmark construction, and the exact quantity measured.
+- **Cross-modal prediction and reconstructed cell dynamics:** MyoECG and SCOPE transfer information from CMR or histology to more scalable signals; MitoWorld, HORIZON, and Elysium infer cell or tissue dynamics from time-lapse or destructive snapshot data. These are separate applications, not mutual validation, and predicted states are not direct assays or lineage tracking.
+- **Molecular imaging and mechanistic models:** The MRI/EM study revisits what white-matter metrics represent, while the CheW model makes testable predictions about bacterial signaling. One mouse-model measurement study and one theoretical model do not establish a field-wide shift.
 
 ## Open Problems and Research Directions
 
-- **Clinical transport and calibration (MyoECG):** authors report low positive predictive value in low-prevalence cohorts and retrospective validation. A prospective, multi-site study should pre-specify thresholds and assess calibration, false-positive burden, downstream imaging use, and patient outcomes across broader disease spectra and ancestries.
-- **Direct molecular ground truth (SCOPE):** test RNA and protein predictions against matched assays from the same tissue sections, especially for markers unseen during training and across additional organs and laboratories; prediction correlation alone does not establish assay equivalence.
-- **Novel-target binding affinity (STORM):** evaluate with target- and scaffold-held-out splits and prospective biochemical affinity measurements, separating gains from reference-molecule similarity from gains on genuinely new chemistry.
-- **Mechanistic and translational validation (CheW; MRI/EM; HORIZON):** measure predicted CheW-dependent activity fluctuations by single-cell FRET across CheW expression levels, test whether MRI–axon interpretation transfers beyond the cuprizone mouse model, and evaluate HORIZON on additional spatial-transcriptomics time courses with independently measured cell-state transitions.
+- **Validate predictions against matched measurements:** For SCOPE, compare RNA/protein predictions with assays from matched sections, especially for unseen markers and across laboratories. For MyoECG, assess prospective, site-held-out cohorts with realistic prevalence, calibration, false-positive burden, and downstream clinical decisions before claiming clinical impact.
+- **Test molecular-model generalization:** Extend AlphaFold's case taxonomy with blinded, condition-specific structural assays. For ProteinGeoBench, preregister tool access and harness settings and report task-specific uncertainty. For PPI and affinity models, use protein-family- or target-held-out evaluation and independent biochemical assays to distinguish biological signal from dataset shortcuts or reference-molecule similarity.
+- **Ground inferred dynamics in direct time series:** Compare HORIZON and Elysium with live-cell imaging or controlled perturbation time courses, varying sampling intervals and registration error; distinguish population-level fit from lineage-level claims. For MitoWorld, test held-out knockdowns and cell types.
+- **Check measurement-method transfer:** Replicate micrograph-level B-factor correction across additional targets and cryo-EM pipelines; test MRI/axon interpretations outside the cuprizone model. For CheW, measure predicted activity fluctuations across CheW levels with single-cell assays.
 
 ## Takeaway
 
-This batch is notable for methods that bridge modalities and sharpen interpretation, not for an established popularity surge. The strongest evidence ranges from multi-dataset retrospective evaluation to mouse-model measurements and computational benchmarks; prospective clinical or experimental confirmation remains uneven and is not implied by the preprints.
+The batch is notable for protein-model evaluation and methods that transfer information across measurements or infer hidden cellular states. The evidence ranges from curated experimental cases and large retrospective cohorts to computational benchmarks and mechanistic modeling. None removes the need for independent experimental validation, and this relevance-ranked list should not be read as a measured popularity surge.
 
 ## Method and sources
 
-- **Window:** latest arXiv announcement batch dated 2026-11-19; candidate submission/revision dates 2026-11-18 through 2026-11-18 UTC. Snapshot: 2026-11-19 17:16:06 UTC; no later batch for that calendar day was available at the snapshot.
-- **Candidate query:** `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`, sorted by submitted date descending; candidates deduplicated by versionless arXiv ID and checked against abstract records. The first 200 results reached back to 2026-11-04 and contained 16 eligible 2026-11-18 submissions/updates; 8 met the relevance and evidence bar for this concise report.
-- **Ranking:** because papers were less than a day into the announcement cycle and attention/citation signals were sparse, this is titled “notable recent papers,” not a measured trend chart. Ordering emphasizes direct biology/biomedicine relevance and checkable reported validation breadth. Citation counts were not treated as period gains; the accessible Semantic Scholar records for SCOPE and MitoWorld each showed 0 citations at this snapshot. A third-party mention is noted only where found and is not treated as validation.
-- **Coverage caveat:** arXiv is not a representative biomedical index; this does not cover bioRxiv, medRxiv, or the medical literature as a whole. The list is not a systematic review or clinical guidance.
-- **Sources:** [arXiv recent q-bio listings](https://arxiv.org/list/q-bio/recent); [arXiv API](https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200); each paper’s abstract page is linked above. Third-party context: [MyoECG news summary](https://www.aifyd.com/news/cardiac-mri-informed-electrocardiography-enables-biologically-grounded-cardiomyopathy-detection) and [STORM discussion](https://x.com/BiologyAIDaily/status/2123391317346598942).
+- **Window:** daily; latest batch was announced Thursday, 2026-11-19. Candidate submission or revision timestamps for the selected set fall on 2026-11-18 UTC; announcement date and submission timestamp are distinct. Snapshot: 2026-11-20T01:27:12Z. No newer batch was visible, so this uses the prior announcement batch.
+- **Candidate pool:** traversed the current `new` listings for configured biology/biomedicine categories and checked the corresponding recent-date group; 26 distinct records appeared in the category listings. The broad configured query covered `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, `cs.BI`, and `physics.med-ph`. One additional `cs.LG` submission was included because its contribution directly concerns protein-RNA affinity. Candidates were deduplicated by versionless arXiv ID; retained abstract pages and latest version metadata were verified. The top three by relevance were also read in PDF form.
+- **Ranking:** arXiv has no official trending chart. No reliable citation-velocity or broad engagement ranking was established for this very recent batch; ordering emphasizes direct biological/biomedical relevance and specificity of reported evidence. A web-indexed technical thread is noted for the AlphaFold paper, but this is not a popularity measurement. No downloads, abstract views, or citation gains are inferred.
+- **Coverage:** arXiv is not a representative index of biomedical research and this report does not cover bioRxiv, medRxiv, or the wider medical literature. Computational predictions, experimental assays, animal models, and human retrospective cohorts are kept distinct; this is not clinical advice.
+- **Sources:** [arXiv q-bio.BM new listings](https://arxiv.org/list/q-bio.BM/new), [q-bio.GN](https://arxiv.org/list/q-bio.GN/new), [q-bio.MN](https://arxiv.org/list/q-bio.MN/new), [q-bio.CB](https://arxiv.org/list/q-bio.CB/new), [q-bio.QM](https://arxiv.org/list/q-bio.QM/new), and [physics.med-ph](https://arxiv.org/list/physics.med-ph/new); [configured arXiv API query](https://export.arxiv.org/api/query?search_query=cat:q-bio.BM+OR+cat:q-bio.GN+OR+cat:q-bio.MN+OR+cat:q-bio.SC+OR+cat:q-bio.CB+OR+cat:q-bio.TO+OR+cat:q-bio.QM+OR+cat:cs.BI+OR+cat:physics.med-ph&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200); individual abstract pages linked above; [ProteinGeoBench code and benchmark](https://github.com/Protege-AI/ProteinGeoBench); [Biology+AI Daily discussion of AlphaFold examples](https://x.com/BiologyAIDaily/status/2123392274294055062).

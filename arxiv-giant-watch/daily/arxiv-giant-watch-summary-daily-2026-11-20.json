@@ -1,0 +1,84 @@
+{
+  "schema": "arxiv-giant-watch-report/v1",
+  "category": "arxiv-giant-watch",
+  "window": "daily",
+  "date": "2026-11-20",
+  "title": "arXiv Giant Watch - Daily - 2026-11-20",
+  "source_report": "/home/yizhuan/.research/arxiv-giant-watch/daily/arxiv-giant-watch-summary-daily-2026-11-20.md",
+  "entry_count": 3,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "The latest arXiv cycle surfaced production-scale agent engineering from Meta and an Anthropic safety study on prompt-conditioned false beliefs. Meta's papers report operational gains, while the Anthropic work explores a scalable way to construct model organisms and warns that training interventions can undermine evaluation reliability."
+    },
+    {
+      "id": "01-paper",
+      "kind": "paper",
+      "rank": 1,
+      "title": "Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity",
+      "arxiv_id": "2611.24891",
+      "authors": ["Benjamin Novotny", "Doug Szeto", "Chang Wang", "Shicheng Chen", "George Zhihua Yuan", "Bob Kamma", "Michael Ge", "John Xin Zhou", "Andrea Olgiati"],
+      "organizations": ["Meta"],
+      "attribution_status": "verified",
+      "attribution_evidence": ["Meta author affiliations listed in the arXiv record"],
+      "problem": "Fixed inference dispatch rates become miscalibrated as fleet capacity and request lengths change, creating idle capacity or excess queues.",
+      "method": "A per-replica admission cap rejects work before long waits; a stateful dispatcher uses capacity refusals to probe and track the live ceiling, with durable priority queues for retries.",
+      "key_result": "In a same-traffic production A/B, the shaper served a classifier using 43% fewer H100s than its queued, fixed-rate predecessor. In steady-capacity replay, throughput was within 1% of an aggressively tuned fixed rate with roughly one-quarter its refusal share.",
+      "caveat": "Lower-priority work waited longer at backfill peaks; the replay and the production A/B are different evaluations, and the headline resource saving is workload-specific.",
+      "why_it_matters": "This is evidence that adaptive admission control can improve real inference utilization at large scale without relying on output-length forecasts or fleet-wide rate retuning.",
+      "refs": ["https://arxiv.org/abs/2611.24891"]
+    },
+    {
+      "id": "02-paper",
+      "kind": "paper",
+      "rank": 2,
+      "title": "MLE Agents: Autonomous ML Engineering in Large-scale Recommendation Systems",
+      "arxiv_id": "2611.23910",
+      "authors": ["Matthew Li", "Albert Jiongqian Liang", "Dilip Raj"],
+      "organizations": ["Meta"],
+      "attribution_status": "verified",
+      "attribution_evidence": ["Meta Platforms affiliations listed for the authors"],
+      "problem": "Search-ranking improvements require slow cycles of coding, training, and evaluation; offline metrics may not predict online impact.",
+      "method": "Human-on-the-loop agents propose code changes, launch training, inspect offline results, and decide which candidates merit review. The system uses parallel experiments and an objective calibrated against online outcomes.",
+      "key_result": "In one campaign, 325 of 1,097 completed candidates were accepted (29.6%); the best model increased search volume by 0.23% in a large-scale A/B test.",
+      "caveat": "The 29.6% acceptance rate is compared with an earlier campaign that used a different objective and search constraint; the online lift is modest and specific to the reported ranking system.",
+      "why_it_matters": "It moves agentic ML engineering from benchmark tasks into a live industrial recommender workflow, while retaining human control over objectives and final review.",
+      "refs": ["https://arxiv.org/abs/2611.23910"]
+    },
+    {
+      "id": "03-paper",
+      "kind": "paper",
+      "rank": 3,
+      "title": "Can you make models believe false facts in the prompt?",
+      "arxiv_id": "2611.23938",
+      "authors": ["Ananya Sutradhar", "Fabien Roger"],
+      "organizations": ["Anthropic"],
+      "attribution_status": "verified",
+      "attribution_evidence": ["Anthropic and Anthropic Fellows Program author affiliations listed in the arXiv record"],
+      "problem": "Synthetic-document fine-tuning can implant false beliefs, but traditionally requires separate training for each injected fact, limiting scale for alignment evaluations.",
+      "method": "Prompt-conditioned synthetic-document fine-tuning trains one model on documents conditioned on facts supplied in a prompt; the authors assess belief depth on held-out facts and test a subsequent RL intervention.",
+      "key_result": "Belief depth on unseen facts scales roughly log-linearly with the number of training facts. RL that reduces verbal compliance with false prompt facts generalizes to held-out evaluations and approaches SDF on some measures.",
+      "caveat": "Initial alignment-audit experiments were negative on the small models studied, and optimizing one belief-depth metric made that evaluation less trustworthy.",
+      "why_it_matters": "The work offers a potentially cheaper way to construct model organisms for alignment research, while showing that the measurement procedure itself can be affected by training.",
+      "refs": ["https://arxiv.org/abs/2611.23938"]
+    },
+    {
+      "id": "80-research-themes",
+      "kind": "themes",
+      "title": "Research Themes",
+      "content": [
+        "Production agent systems are increasingly built around feedback and live constraints: Meta's MLE agents iterate over model changes, while Cap-and-Track steers inference dispatch using observed capacity refusals.",
+        "More capable or controllable agent behavior creates an oversight burden: Meta keeps engineers in the loop for consequential model changes, while Anthropic finds that prompt-conditioned training can alter both model beliefs and the reliability of evaluation signals."
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The strongest operational signal is Meta's use of agents and adaptive control inside production recommendation and inference systems, with measurable but workload-specific efficiency gains. The safety result is a reminder that evaluation quality must be checked alongside capability: training designed to shape behavior can also undermine the metrics used to assess it."
+    }
+  ]
+}

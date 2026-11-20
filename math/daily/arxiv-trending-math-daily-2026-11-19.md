@@ -1,141 +1,142 @@
-# Mathematics on arXiv — Thursday, 19 November 2026
+# arXiv Mathematics — latest batch, 19 November 2026
 
-The latest mathematics announcement batch contains 449 entries. This inferred notable-paper ranking leans toward unusually concrete conjecture resolutions, sharp-threshold results, and cross-subfield contributions; the common pattern is claims of decisive bounds, constructions, and counterexamples. Brief agenda: from a large-set theorem and operator algebras to geometric inequalities, then sharp PDE and probability results. Global caveat: arXiv publishes no official trending chart, and citation/attention evidence is limited for papers this new, so the ordering is inferred and should not be read as a popularity measurement.
+Ten notable papers from the latest available mathematics announcement batch. The common pattern is sharp results at boundaries—new proofs of major structural claims, improved bounds, and counterexamples to conjectures—rather than one shared technique. Agenda: operator algebras first, then discrepancy and PDE, followed by arithmetic, probability, and geometry. arXiv has no official trending chart; this is an inferred ordering, and recent-paper citation evidence is limited. No 20 November batch was listed at the 01:31 UTC snapshot, so this report uses Thursday 19 November's batch. Because attention evidence is too sparse to measure popularity, these are best read as notable recent papers, not a popularity ranking.
 
 ## Top papers (ranked)
 
-### 1. [A resolution of the Erdős similarity problem in the large](https://arxiv.org/abs/2611.14056)
-- **Abstract:** For every unbounded set A in the real line and every positive epsilon below one, the author constructs a closed, uniformly large set avoiding every nontrivial affine copy of A, with its unit-interval density tending to one at both ends.
-- **Authors:** Chi Hoi Yip
-- **arXiv:** `2611.14056v2` (published 2026-11-17 04:20:31 UTC; categories: `math.CA`, `math.NT`)
-- **Evidence for ranking:** The v2 revision adds a deterministic construction; the paper spans classical analysis and number theory. Independent mathematical context was found at [Wolfram MathWorld](https://mathworld.wolfram.com/ErdosSimilarityConjecture.html) and a [MathAudit assessment](https://mathaudit.org/paper/2611.14056). These support attention to the result, not a formal correctness certificate.
-- **Claimed result:** In Theorem 1.2, the author proves that for every unbounded A, epsilon in (0,1), and R0>0, there is a closed symmetric (1-epsilon)-large S containing [-R0,R0], with |S∩[x,x+1]| tending to 1 as |x| tends to infinity, such that every nonzero dilation and translate of A has infinitely many points outside S.
-- **Assumptions and setting:** A is any unbounded subset of R; largeness means measure at least 1-epsilon in every unit interval. The result concerns the “in the large” variant of Erdős’s similarity problem.
-- **Caveat:** The original Erdős similarity conjecture for all infinite sets remains open; the paper also shows that the density-convergence rate cannot in general be prescribed independently of A.
-- **Announcement type:** revision, 2026-11-19 announcement batch
-- **Themes:** Analysis & PDE; Algebra & number theory
-
-### 2. [A Poisson boundary solution to Connes' bicentralizer conjecture and Kadison's problem on MASA](https://arxiv.org/abs/2611.24787)
-- **Abstract:** The paper develops Poisson-boundary methods for von Neumann algebras and uses them to claim new proofs of bicentralizer conjectures and a solution to a maximal-abelian-subalgebra problem.
+### 1. [A Poisson boundary solution to Connes' bicentralizer conjecture and Kadison's problem on MASA](https://arxiv.org/abs/2611.24787v1)
+- **Abstract:** For inclusions of countably decomposable von Neumann algebras with a normal faithful conditional expectation, the author proves a weak Dixmier property for the continuous core and derives new proofs of Connes' bicentralizer conjecture and a solution to Kadison's MASA problem under additional hypotheses.
 - **Authors:** Shuoxing Zhou
 - **arXiv:** `2611.24787v1` (published 2026-11-18 17:35:16 UTC; categories: `math.OA`, `math.DS`)
-- **Evidence for ranking:** The abstract claims results on two major open problems and builds a bridge from Poisson-boundary theory to operator-algebra inclusions; the cross-list adds dynamical systems. The headline claims, rather than measured citation momentum, drive its placement.
-- **Claimed result:** For countably decomposable von Neumann algebras M⊂P with a normal faithful conditional expectation, the author claims M⊂c(P) has the weak Dixmier property, yielding a new proof of Connes' bicentralizer conjecture and the relative bicentralizer conjecture. The paper also claims a solution to Kadison's problem under the additional assumptions below.
-- **Assumptions and setting:** The weak-Dixmier result assumes countable decomposability and a normal faithful conditional expectation. The MASA result further assumes separable preduals and M'∩P=Z(M); it produces a MASA of M that is also maximal abelian in P.
-- **Caveat:** These are substantial claims in a 44-page new preprint; their proof and relationship to the recent independent work require expert assessment.
+- **Evidence for ranking:** The abstract claims consequences for two longstanding structural problems and introduces a Poisson-boundary framework spanning operator algebras and dynamics; the article's introduction and theorem statements were inspected. The result is substantial if correct, but its proof is not independently assessed here.
+- **Claimed result:** The author proves the weak Dixmier property for `M ⊂ c(P)` whenever `M ⊂ P` has a normal faithful conditional expectation, and invokes Haagerup's and Marrakchi's characterizations for the stated conjecture results (arXiv abstract and Theorem A).
+- **Assumptions and setting:** `M` and `P` are countably decomposable von Neumann algebras with a normal faithful conditional expectation; the Kadison result additionally assumes separable preduals and `M' ∩ P = Z(M)`.
+- **Caveat:** This is an author-claimed preprint result, not a proof checked in this report; the paper describes its proof as independent of a recent proof of Connes' conjecture.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Algebra & number theory
+- **Themes:** Operator algebras; Logic & foundations
 
-### 3. [Proof of the polygonal Saint-Venant inequality conjectured by Pólya--Szegö](https://arxiv.org/abs/2611.24573)
-- **Abstract:** For each n≥3, the authors claim that the regular n-gon uniquely maximizes torsional rigidity among all polygons of prescribed area with at most n sides, including non-convex polygons.
-- **Authors:** Beniamin Bogosel, Dorin Bucur, Ilaria Fragalà
-- **arXiv:** `2611.24573v1` (published 2026-11-18 15:08:00 UTC; categories: `math.SP`)
-- **Evidence for ranking:** The paper claims a full resolution of a conjecture dating to Pólya and Szegö, extending beyond convex polygons; this is a precise theorem with a broad geometric-analysis audience. No independent attention signal was found in the searches checked.
-- **Claimed result:** Theorem 1 states that for every n≥3 and every polygon D with at most n sides, its torsional rigidity is at most that of the equal-area regular n-gon, with equality only for congruent polygons. The authors describe an analytic proof using polygon partitions and mixed torsional-rigidity comparisons.
-- **Assumptions and setting:** Bounded polygonal domains of prescribed area; the competitor may be non-convex and may have fewer than n sides.
-- **Caveat:** The result is restricted to polygons and torsional rigidity; it is not a general shape-optimization theorem for arbitrary domains or other functionals.
+### 2. [Low Moments, Small Balls and Star Discrepancy](https://arxiv.org/abs/2611.24934v1)
+- **Abstract:** For point sets in fixed dimension, the paper gives sharp lower bounds for `L^q` discrepancy when `0 < q ≤ 1`, improves several `L∞` discrepancy bounds, and proves a higher-dimensional Haar small-ball inequality up to a polylogarithmic factor.
+- **Authors:** Nicola Wengiel
+- **arXiv:** `2611.24934v1` (published 2026-11-18 18:55:31 UTC; categories: `math.CA`, `math.NT`)
+- **Evidence for ranking:** Its results address named discrepancy and small-ball conjectures/problems, with a concrete sharp-order theorem and a separate improved upper bound; the introduction and main-results statements were inspected. The two mathematical categories add a number-theoretic connection, not evidence of readership.
+- **Claimed result:** The author proves the optimal order `(log N)^((d−1)/2)` for `L^q` discrepancy for every fixed `d ≥ 2` and `0 < q < ∞`, including the `q = 1` case highlighted as answering Chen's problem; the paper also proves the stated small-ball and `L∞` results (arXiv abstract and Theorems 1.1–1.2).
+- **Assumptions and setting:** `N` points in `[0,1)^d`, with fixed dimension `d`; the small-ball statement is for `d ≥ 3` and incurs a power-of-logarithm loss.
+- **Caveat:** The small-ball inequality is not proved at the conjectured scale without the reported polylogarithmic loss; the paper also notes that its lower-bound constant tends to zero as `q → 0` and leaves open whether this is necessary.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Analysis & PDE; Geometry & topology
+- **Themes:** Analysis & PDE; Combinatorics & discrete mathematics
 
-### 4. [A disproof of the van Emde Boas--Kruyswijk conjecture on the Davenport constant](https://arxiv.org/abs/2611.24775)
-- **Abstract:** The authors disprove the proposed formula for the Davenport constant of C_n^r by giving a strictly larger lower bound for C_6^r when r≥23.
-- **Authors:** Weidong Gao, Alfred Geroldinger, Guoqing Wang, Xiangneng Zeng
-- **arXiv:** `2611.24775v1` (published 2026-11-18 17:23:47 UTC; categories: `math.CO`, `math.NT`)
-- **Evidence for ranking:** The authors identify the conjecture as a long-standing zero-sum problem from 1969; the result is cross-listed between combinatorics and number theory and gives an explicit family of counterexamples.
-- **Claimed result:** Theorem 1.1 claims D(C_6^r)≥5r+floor(r/23)+1 for every positive integer r, implying D(C_6^r)>5r+1 for r≥23 and contradicting the conjectured value 5r+1.
-- **Assumptions and setting:** Finite abelian homocyclic groups C_6^r; D(G) is the least sequence length forcing a nonempty zero-sum subsequence.
-- **Caveat:** The bound is a lower bound for the n=6 family, not an exact determination of D(C_6^r) or a disproof for every n.
-- **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
-
-### 5. [A disproof of the El-Zahar--Erdős conjecture](https://arxiv.org/abs/2611.24735)
-- **Abstract:** The authors construct graphs of arbitrarily large chromatic number and arbitrarily large girth in which every anticomplete pair has one side of chromatic number at most six, contradicting the proposed large-chromatic-separation property.
-- **Authors:** Chenghua Liu, Boning Meng
-- **arXiv:** `2611.24735v1` (published 2026-11-18 16:51:15 UTC; categories: `math.CO`)
-- **Evidence for ranking:** The paper states a counterexample to a named conjecture, with the result persisting in triangle-free graphs and extending to any prescribed girth. The abstract gives a concrete threshold (seven colors) and a probabilistic construction.
-- **Claimed result:** For all integers d≥1 and g≥4, the authors prove existence of a graph G with χ(G)≥d and girth at least g such that every anticomplete pair A,B has min(χ(G[A]),χ(G[B]))≤6.
-- **Assumptions and setting:** Finite simple graphs; anticomplete means disjoint vertex sets with no edge between them. Taking g=4 yields triangle-free examples.
-- **Caveat:** The negative answer uses the fixed threshold seven (equivalently, the upper bound six on one side); it does not classify all possible chromatic thresholds or graph classes.
-- **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Combinatorics & discrete mathematics
-
-### 6. [Sharpness of the Osgood threshold for anomalous dissipation and non-uniqueness in passive scalar transport](https://arxiv.org/abs/2611.24784)
-- **Abstract:** For every concave non-Osgood modulus of continuity, the authors construct divergence-free transport producing anomalous dissipation and infer non-uniqueness for bounded transport solutions.
-- **Authors:** Kyle L. Liss, Kunhui Luan, Changhui Tan
-- **arXiv:** `2611.24784v1` (published 2026-11-18 17:30:26 UTC; categories: `math.AP`)
-- **Evidence for ranking:** It identifies and closes a sharp regularity-threshold gap, combining a turbulence-motivated dissipation phenomenon with transport uniqueness; the paper states explicit function-space conditions. No independent attention evidence was found in the searches checked.
-- **Claimed result:** For each concave non-Osgood modulus ω, the authors construct a divergence-free velocity u∈L∞([0,1];C^ω(T²)) and smooth initial data for which the advection-diffusion solutions have a positive dissipation anomaly as viscosity tends to zero. They derive non-uniqueness of bounded transport solutions as a corollary.
-- **Assumptions and setting:** Two-dimensional torus, divergence-free drift, concave non-Osgood spatial modulus; the main construction is time-bounded in C^ω and locally Lipschitz in space before the terminal time.
-- **Caveat:** The main theorem assumes concavity; the authors note that unrestricted non-Osgood moduli include pathological cases where the corresponding class is effectively log-Lipschitz.
-- **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Analysis & PDE; Mathematical physics
-
-### 7. [A counterexample to Molchan's orthant persistence conjecture](https://arxiv.org/abs/2611.24520)
-- **Abstract:** For the isotropic fractional Brownian field, the authors disprove Molchan's proposed persistence exponent in a regime of sufficiently small Hurst parameter and sufficiently large dimension.
-- **Authors:** Svyatoslav Novikov
-- **arXiv:** `2611.24520v1` (published 2026-11-18 14:38:10 UTC; categories: `math.PR`)
-- **Evidence for ranking:** The paper states a counterexample to a recognized persistence conjecture and supplies an explicit asymptotic improvement in a high-dimensional/small-Hurst regime. It has an appendix proving a Gaussian interpolation inequality used in the argument.
-- **Claimed result:** The author proves limsup_{d→∞} limsup_{R→∞}[-log p_{d,H}(R)/(d log R)]≤1-(49/48)H+o(H) as H↓0, which contradicts the conjectured exponent for sufficiently small fixed H and all sufficiently large dimensions depending on H.
-- **Assumptions and setting:** Persistence probability for the isotropic fractional Brownian field on [0,R]^d, with limits taken in the displayed order and H tending to zero.
-- **Caveat:** The theorem does not settle the conjecture for general H or fixed dimension; the author mentions further candidate results, including the case H=1/2, but does not include their proofs.
-- **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Probability & statistics
-
-### 8. [A Geometric Calderón Problem for Differential Forms](https://arxiv.org/abs/2611.24903)
-- **Abstract:** The authors prove boundary determination and partial-data uniqueness for a geometric Dirichlet-to-Neumann operator on differential forms, with rigidity results under analyticity or harmonic-curvature assumptions.
-- **Authors:** Yujun Jin, Zuoqin Wang
-- **arXiv:** `2611.24903v1` (published 2026-11-18 18:41:17 UTC; categories: `math.AP`, `math.DG`)
-- **Evidence for ranking:** The paper connects inverse boundary problems, differential geometry, and elliptic/transport unique continuation, with both boundary-jet and global uniqueness theorems. Its title/result is mathematical rather than an attention count; no external discussion was found in the searches checked.
-- **Claimed result:** For Karpukhin's Dirichlet-to-Neumann operator on p-forms, the authors recover the full boundary jet modulo conformal gauge when n=2p+2 and prove global partial-data uniqueness for analytic metrics and for smooth metrics with harmonic curvature; a Weyl nondegeneracy condition upgrades conformal equivalence to isometry.
-- **Assumptions and setting:** Compact oriented Riemannian manifolds with boundary; partial measurements on a nonempty open boundary subset. Global uniqueness uses interior and measured-boundary analyticity, or alternatively smooth metrics with harmonic curvature; conformal ambiguity remains at the critical dimension n=2p+2.
-- **Caveat:** The global conclusions depend on the stated regularity/curvature hypotheses, and critical-dimension data determine the metric only up to conformal gauge unless the additional Weyl condition holds.
-- **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Analysis & PDE; Geometry & topology
-
-### 9. [Infinite cascades for the defocusing cubic nonlinear Schrödinger equation on the square torus](https://arxiv.org/abs/2611.24906)
-- **Abstract:** For every 1<s<2, the author constructs a square-torus solution whose H^s norm grows without bound at arbitrarily slow rates as time tends to positive infinity.
+### 3. [Infinite cascades for the defocusing cubic nonlinear Schrödinger equation on the square torus](https://arxiv.org/abs/2611.24906v1)
+- **Abstract:** For every `1 < s < 2`, the author constructs a global solution on the square two-torus whose `H^s` norm grows without bound from one fixed initial datum, with growth that can be made arbitrarily slow.
 - **Authors:** Xi Chen
 - **arXiv:** `2611.24906v1` (published 2026-11-18 18:42:48 UTC; categories: `math.AP`)
-- **Evidence for ranking:** The result exhibits unbounded Sobolev growth for a defocusing nonlinear dispersive equation and extends results described in an earlier version, making it a concrete dynamical mechanism rather than a numerical observation.
-- **Claimed result:** For each 1<s<2, the author constructs a solution of the defocusing cubic NLS on the square two-torus with initial data in H^s whose H^s norm tends to infinity as t→+∞, with growth that can be arbitrarily slow; the squared norm tracks selected axial frequencies up to bounded error.
-- **Assumptions and setting:** Defocusing cubic NLS on the square two-torus; Sobolev exponent 1<s<2 and initial data in H^s.
-- **Caveat:** The statement is for this equation, torus, and exponent range; it constructs particular solutions and does not imply generic Sobolev growth.
+- **Evidence for ranking:** The introduction ties the construction to the single-initial-datum Sobolev-growth question and states a precise growth law; both the introduction and main theorems were inspected. The comment links a prior research artifact, although citation or independent-attention measures are not available.
+- **Claimed result:** For each `1 < s < 2`, a global solution has `||u(t)||_{H^s} → ∞`; the author further arranges its squared norm to track the number of selected frequencies activated by time, up to bounded error, while growing more slowly than any prescribed diverging nondecreasing function (arXiv abstract and Theorems 1.1–1.2).
+- **Assumptions and setting:** The defocusing cubic NLS on the square two-torus, with initial data in `H^s`, `1 < s < 2`.
+- **Caveat:** The result concerns super-`H^1` Sobolev norms in this specific periodic equation; it does not assert growth of the conserved energy or `H^1` norm.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Analysis & PDE; Mathematical physics
+- **Themes:** Analysis & PDE
 
-### 10. [Two almost sure upper bounds for sums of random multiplicative functions](https://arxiv.org/abs/2611.24847)
-- **Abstract:** The author proves almost-sure upper bounds for partial sums of squarefree and extended Rademacher random multiplicative functions, with a matching-order lower occurrence for one weighted sum.
+### 4. [A disproof of the van Emde Boas--Kruyswijk conjecture on the Davenport constant](https://arxiv.org/abs/2611.24775v1)
+- **Abstract:** The authors disprove the conjecture `D(C_n^r) = r(n−1)+1` by showing that `D(C_6^r) > 5r+1` for every `r ≥ 23`.
+- **Authors:** Weidong Gao, Alfred Geroldinger, Guoqing Wang, Xiangneng Zeng
+- **arXiv:** `2611.24775v1` (published 2026-11-18 17:23:47 UTC; categories: `math.CO`, `math.NT`)
+- **Evidence for ranking:** A direct counterexample to a conjecture dating to 1969 is a concrete and checkable significance signal; the paper is cross-listed in combinatorics and number theory.
+- **Claimed result:** For every `r ≥ 23`, the Davenport constant of `C_6^r` is strictly greater than the conjectured value `5r+1` (arXiv abstract).
+- **Assumptions and setting:** Finite abelian groups of the form `C_6^r`; the lower bound is asserted for ranks at least 23.
+- **Caveat:** This disproves the proposed formula in a specific family but does not determine the exact Davenport constant there or settle the formula for other `n` and `r`.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Combinatorics & discrete mathematics; Algebra & number theory
+
+### 5. [Sharpness of the Osgood threshold for anomalous dissipation and non-uniqueness in passive scalar transport](https://arxiv.org/abs/2611.24784v1)
+- **Abstract:** For every concave non-Osgood modulus of continuity, the authors construct a divergence-free velocity field producing anomalous dissipation and, as a corollary, non-uniqueness among bounded transport solutions.
+- **Authors:** Kyle L. Liss, Kunhui Luan, Changhui Tan
+- **arXiv:** `2611.24784v1` (published 2026-11-18 17:30:26 UTC; categories: `math.AP`)
+- **Evidence for ranking:** The paper resolves a stated sharp-threshold question and obtains both a dissipation result and a bounded-solution non-uniqueness consequence in one PDE setting.
+- **Claimed result:** The authors show the Osgood condition is sharp for anomalous dissipation and for uniqueness of bounded solutions to the transport equation, under the modulus and divergence-free hypotheses stated in the abstract (arXiv abstract).
+- **Assumptions and setting:** The modulus is concave and non-Osgood; the velocity lies in `L∞([0,1]; C^ω(T²))` and is divergence-free, with smooth initial data for the dissipation construction.
+- **Caveat:** Concavity is essential to the stated formulation; the paper notes pathological non-Osgood moduli for which the corresponding velocity class is uniformly log-Lipschitz. Its constructed velocity may depend on the initial data.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Analysis & PDE
+
+### 6. [Higher-order estimates for p-harmonic functions in the plane](https://arxiv.org/abs/2611.24842v1)
+- **Abstract:** The authors establish uniform interior higher-order Hölder estimates for planar `p`-harmonic functions in the singular range `1 < p < 2`, below an optimal regularity order, with consequences for critical points, Liouville theorems, and fluxes.
+- **Authors:** Juan J. Manfredi, Aelson Sobral, Eduardo V. Teixeira, José Miguel Urbano
+- **arXiv:** `2611.24842v1` (published 2026-11-18 18:07:33 UTC; categories: `math.AP`)
+- **Evidence for ranking:** The abstract describes a longstanding regularity gap and supplies a range of explicit estimates and consequences; the arXiv comment links public Lean formalization code, a checkable proof artifact.
+- **Claimed result:** For every integer `k ≥ 2` and `0 < β < 1` with `k + β < s(p)`, the authors prove uniform interior `C^{k,β}` estimates; they derive critical-point decay, an optimal-growth Liouville theorem, and higher-order flux estimates for planar `q`-harmonic functions with `q > 2` (arXiv abstract).
+- **Assumptions and setting:** Planar `p`-harmonic functions with `1 < p < 2`; the estimate requires `k + β < s(p)`, where `s(p)` is the optimal regularity order identified by Iwaniec and Manfredi.
+- **Caveat:** The theorem's displayed range excludes the endpoint `k + β = s(p)` and does not cover `p ≥ 2`; formalization code is an artifact, not independent peer review.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Analysis & PDE
+
+### 7. [Cameron--Martin theorem for SLE welding measures](https://arxiv.org/abs/2611.24875v1)
+- **Abstract:** For `κ ∈ (0,4]`, the author identifies the Weil--Petersson group as exactly the quasi-invariance group of the welding law induced by SLE loop measure under composition on either side, and gives an explicit Radon--Nikodym derivative.
+- **Authors:** Shuo Fan
+- **arXiv:** `2611.24875v1` (published 2026-11-18 18:23:26 UTC; categories: `math.PR`, `math.CV`, `math.NT`)
+- **Evidence for ranking:** The exact quasi-invariance characterization links random SLE weldings, conformal geometry, and Weil--Petersson structure; the three-category cross-listing corroborates that mathematical bridge.
+- **Claimed result:** The author proves mutual absolute continuity exactly when both composing maps lie in the Weil--Petersson group, singularity otherwise, and proves that this group is its own normalizer in orientation-preserving circle homeomorphisms (arXiv abstract).
+- **Assumptions and setting:** SLE parameter `κ ∈ (0,4]`; the law is the welding law induced by SLE loop measure, with simultaneous left and right composition.
+- **Caveat:** The result is stated only for `κ ∈ (0,4]` and the specified welding law; it is a 152-page preprint and the proof is not assessed here.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Probability & statistics; Geometry & topology
+
+### 8. [A Weinstein manifold without any spherical Fukaya category](https://arxiv.org/abs/2611.24930v1)
+- **Abstract:** After attaching a subcritical handle to `T*P²`, the author constructs a Weinstein eight-manifold homotopy equivalent to `S⁴` whose cotangent-fibre wrapped Floer endomorphism algebra has no spherical refinement, obstructing a wrapped Fukaya category over the sphere spectrum.
+- **Authors:** Abigail Ward
+- **arXiv:** `2611.24930v1` (published 2026-11-18 18:54:53 UTC; categories: `math.SG`, `math.AT`)
+- **Evidence for ranking:** The claimed obstruction is a concrete counterexample to a category-existence expectation and connects symplectic geometry with algebraic topology.
+- **Claimed result:** The author shows that the integral wrapped Floer endomorphism algebra admits no spherical refinement for any brane structure, yielding the stated obstruction for the constructed manifold (arXiv abstract).
+- **Assumptions and setting:** A particular Weinstein manifold obtained from `T*P²` by attaching a subcritical handle; the conclusion concerns a wrapped Fukaya category over the sphere spectrum.
+- **Caveat:** The result is a specific constructed obstruction and does not imply that wrapped Fukaya categories fail to exist for Weinstein manifolds generally.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Geometry & topology
+
+### 9. [On Hilbert's tenth problem for number fields](https://arxiv.org/abs/2611.24748v1)
+- **Abstract:** The authors show that the `abc` conjecture over a quadratic number field implies that the integers are Diophantine in it, giving a negative answer to Hilbert's tenth problem there; for general number fields they add an elliptic-curve rank condition.
+- **Authors:** Hector Pasten, Xavier Vidaux
+- **arXiv:** `2611.24748v1` (published 2026-11-18 17:06:52 UTC; categories: `math.NT`, `math.LO`)
+- **Evidence for ranking:** The result gives a conditional route to a Diophantine-definability question and is cross-listed in number theory and logic, with the hypothesis precisely exposed rather than hidden.
+- **Claimed result:** For quadratic `K`, the authors prove that `abc` over `K` implies `Z` is Diophantine in `K`, hence a negative answer to Hilbert's tenth problem over `K`; for arbitrary `K`, they state the same conclusion assuming `abc` over `K` and a positive-rank elliptic curve over `Q` whose rank does not increase over `K` (arXiv abstract).
+- **Assumptions and setting:** Number fields `K`; the conclusion is conditional on the `abc` conjecture over `K`, and the general-field statement also assumes the specified elliptic curve.
+- **Caveat:** The `abc` conjecture is an unproved hypothesis, so the paper does not provide an unconditional negative answer for these fields.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Algebra & number theory; Logic & foundations
+
+### 10. [Two almost sure upper bounds for sums of random multiplicative functions](https://arxiv.org/abs/2611.24847v1)
+- **Abstract:** For squarefree and completely multiplicative Rademacher models, the author proves almost-sure upper bounds with `(log log x)^(1/4+ε)` factors for two sums and records near-matching large values for the weighted sum.
 - **Authors:** Christopher Atherfold
 - **arXiv:** `2611.24847v1` (published 2026-11-18 18:08:35 UTC; categories: `math.NT`, `math.PR`)
-- **Evidence for ranking:** This is described by the author as substantially streamlining and improving a previous version of the work; the number-theory/probability cross-list and almost-sure bounds provide independent signals of mathematical reach and substantive revision lineage.
-- **Claimed result:** For every epsilon>0, almost surely |Σ_{n≤x} f(n)/√n|≪(log log x)^{1/4+epsilon} and |Σ_{n≤x} g(n)|≪√x(log log x)^{1/4+epsilon}; for f, values at arbitrarily large x also attain at least (log log x)^{1/4+o(1)}.
-- **Assumptions and setting:** f is a squarefree random multiplicative function and g an extended Rademacher random multiplicative function; the bounds are almost sure as x grows.
-- **Caveat:** The lower bound is stated only for the weighted f-sum; the paper does not claim matching lower bounds for both upper estimates.
+- **Evidence for ranking:** The abstract gives explicit almost-sure bounds and a matching fluctuation scale, and the comment says this submission supersedes `2501.11076v4` with an improvement and streamlined proof; its number-theory/probability cross-listing reinforces the connection.
+- **Claimed result:** For every `ε > 0`, the author proves `|Σ_{n≤x} f(n)/√n| ≪ (log log x)^(1/4+ε)` for the squarefree Rademacher model and `|Σ_{n≤x} g(n)| ≪ √x(log log x)^(1/4+ε)` for its completely multiplicative extension, almost surely (arXiv abstract).
+- **Assumptions and setting:** The random functions are squarefree or extended Rademacher multiplicative functions; the bounds are almost-sure statements for every fixed `ε > 0`.
+- **Caveat:** These bounds concern the specified random models and do not directly establish analogous bounds for the Möbius function or other deterministic multiplicative functions.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
-- **Themes:** Algebra & number theory; Probability & statistics
+- **Themes:** Probability & statistics; Algebra & number theory
 
 ## Trending Research Themes
 
-- **Conjectures under pressure, by proof and counterexample.** Yip settles the “in the large” Erdős similarity question for every unbounded set, while Zhou claims new bicentralizer and MASA results; Bogosel–Bucur–Fragalà prove the polygonal Saint-Venant conjecture, and Gao et al. and Liu–Meng give counterexamples to distinct zero-sum and graph-coloring conjectures. These are separate results and methods, not evidence of one shared technique.
-- **Sharp thresholds and extremal regimes.** Liss–Luan–Tan reach every concave non-Osgood modulus for anomalous dissipation; Novikov identifies a small-Hurst/high-dimension regime invalidating the predicted persistence exponent; Atherfold gives near-matching order for one random-multiplicative-function sum. Each result keeps a specific boundary of hypotheses, rather than a broad field-wide trend.
-- **Geometry inferred or optimized from restricted data.** Jin–Wang recover geometric information from partial boundary measurements, with a conformal gauge at critical dimension; Bogosel et al. optimize torsional rigidity within polygonal competitors. The shared theme is geometric rigidity/optimization, though their operators and methods differ.
-- **Energy and frequency transfer in nonlinear evolution.** Chen constructs unbounded H^s growth for a defocusing NLS solution using successive frequency transfers; this is an isolated signal in the selected set, not evidence of a wider shift.
+- **Sharp thresholds and optimal orders recur across distinct areas, but not through one shared method.** Discrepancy bounds settle the order for `L^q` norms and sharpen `L∞` bounds ([Wengiel](https://arxiv.org/abs/2611.24934)); planar `p`-harmonic estimates push regularity below `s(p)` ([Manfredi et al.](https://arxiv.org/abs/2611.24842)); and passive-scalar transport identifies the Osgood threshold for anomalous dissipation and bounded-solution uniqueness ([Liss, Luan & Tan](https://arxiv.org/abs/2611.24784)). These are separate results, not evidence of an archive-wide methodological shift.
+- **Conjecture pressure in arithmetic and discrete mathematics.** A zero-sum conjecture is explicitly disproved for `C_6^r`, `r ≥ 23` ([Gao et al.](https://arxiv.org/abs/2611.24775)), while a conditional `abc` route to Hilbert's tenth problem is made precise ([Pasten & Vidaux](https://arxiv.org/abs/2611.24748)); random multiplicative sums add a probability/number-theory connection through almost-sure fluctuation bounds ([Atherfold](https://arxiv.org/abs/2611.24847)).
+- **Geometry and probability meet in conformal welding.** The SLE paper characterizes the Weil--Petersson group as the precise quasi-invariance group of its welding law ([Fan](https://arxiv.org/abs/2611.24875)); this is a notable cross-field signal from one paper, not evidence of a wider trend.
+- **Structural counterexamples and new frameworks.** A Poisson-boundary method is used for operator-algebra conjectures ([Zhou](https://arxiv.org/abs/2611.24787)), while a specific Weinstein manifold obstructs a spherical Fukaya-category refinement ([Ward](https://arxiv.org/abs/2611.24930)). These are distinct structural contributions rather than a common technique.
 
 ## Open Problems and Research Directions
 
-- **Author-stated:** Yip notes that the original Erdős similarity conjecture for arbitrary infinite sets remains open, beyond its “in the large” variant. **Research direction (synthesis):** test how the construction behaves for bounded/infinite configurations or characterize which convergence rates are compatible with a given sequence. [Yip]
-- **Author-stated:** Novikov lists candidate, unpublished-in-this-paper results on existence of the persistence exponents θ(d,H) and κ(H), and on the case H=1/2; the candidate proofs are explicitly omitted. **Research direction (synthesis):** establish these limit statements and quantify the dimension threshold, especially at H=1/2. [Novikov]
-- **Author-stated limitation:** Jin–Wang's critical-dimension data are conformally invariant; a Weyl nondegeneracy condition suffices to upgrade equivalence to isometry. **Research direction (synthesis):** determine how necessary that condition is and what additional measurements can break the conformal ambiguity. [Jin–Wang]
-- **Author-stated limitation:** Gao et al. give a strict lower bound for D(C_6^r), not its exact value. **Research direction (synthesis):** sharpen the lower bound or derive complementary upper bounds to determine the growth of the Davenport constant in this family. [Gao et al.]
-- **Author-stated scope:** Liss–Luan–Tan formulate the sharpness theorem for concave non-Osgood moduli and explain why unrestricted moduli include exceptions. **Research direction (synthesis):** classify the weakest regularity assumptions on ω under which the anomaly and bounded-solution non-uniqueness conclusions persist. [Liss–Luan–Tan]
+- **Author-stated gap — discrepancy:** The small-ball estimate retains a polylogarithmic loss, and the lower-bound constant's behavior as `q → 0` is unresolved in the paper ([Wengiel](https://arxiv.org/abs/2611.24934)). A direct follow-up would test whether the loss can be removed in fixed dimensions and whether the constant can remain controlled as `q` decreases.
+- **Author-stated gap — Davenport constant:** The result disproves the formula for `C_6^r` when `r ≥ 23` but leaves the exact values undetermined ([Gao et al.](https://arxiv.org/abs/2611.24775)). Determine the actual growth of `D(C_6^r)` and whether related counterexamples occur for other cyclic orders or at smaller ranks.
+- **Hypothesis boundary — Hilbert's tenth problem:** The number-field conclusion still depends on `abc` over `K`, with an additional elliptic-curve rank condition in the general-field case ([Pasten & Vidaux](https://arxiv.org/abs/2611.24748)). A natural direction is to isolate which parts of the definability argument can be made unconditional or which weaker arithmetic hypotheses suffice.
+- **Regularity boundary — planar `p`-harmonic functions:** The estimates stop at `k + β < s(p)` and cover `1 < p < 2` ([Manfredi et al.](https://arxiv.org/abs/2611.24842)). Studying endpoint control and continuity toward `p = 2` would test how sharp the stated range is; this is a proposed extension, not an open problem asserted by the abstract.
 
 ## Takeaway
 
-The clearest signal in this batch is a cluster of sharply formulated claims: several long-standing conjectures are reported settled or refuted, alongside new sharp-regime constructions in PDE and probability. Because attention and citation data are sparse and many results are fresh preprints, treat the ordering as a reading shortlist—not a measured popularity table or independent validation of the proofs.
+This batch is unusually rich in papers claiming sharp thresholds, improved asymptotic bounds, or explicit counterexamples, with several bridges across analysis, arithmetic, probability, and geometry. The headline claims are not independently established by this report: these are new preprints, the attention signal is sparse, and ranking reflects mathematical content rather than measured popularity.
 
 ## Method and sources
 
-- **Window:** daily; arXiv announcement batch Thursday, 2026-11-19 (start and end date: 2026-11-19). The batch is current for today, not a prior-batch substitute. Snapshot: 2026-11-19 17:21:42 UTC.
-- **Coverage:** the full Mathematics recent listing was expanded and traversed: 449 entries for the 2026-11-19 batch. Ten papers were retained and their arXiv abstract pages checked; the introductions/main theorem statements were inspected for the top three. No proofs were independently checked.
-- **Ranking:** arXiv supplies no trending chart. The ordering weighs independent mathematical context where found, otherwise concrete stated theorems/counterexamples, cross-list relevance, substantive revision, then recency. No numeric score was used. Semantic Scholar citation data were not available at the snapshot, so the report does not claim citation momentum or measured popularity. Search checks found independent context for the Erdős similarity result; no comparable independent discussion was located for most of the other new submissions.
-- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); each linked arXiv abstract above; [Wolfram MathWorld on the Erdős similarity conjecture](https://mathworld.wolfram.com/ErdosSimilarityConjecture.html); [MathAudit assessment of arXiv:2611.14056](https://mathaudit.org/paper/2611.14056). The arXiv API timed out during an attempted supplemental query; the list and abstracts were verified in the browser. Semantic Scholar's Graph endpoint did not return usable data, so it was excluded rather than inferred.
+- **Window:** Daily, latest available mathematics announcement batch, Thursday 2026-11-19. The arXiv recent mathematics listing showed 449 entries in that batch; all 449 listing records were traversed for the candidate pool. The 20 November listing had no newer batch at the snapshot.
+- **Exact batch dates:** 2026-11-19 to 2026-11-19 (announcement-batch date). The selected API records show first-submission timestamps on 2026-11-18 UTC; the arXiv listing groups them under the 19 November announcement. All ten selected records are v1 new submissions, not revisions.
+- **Snapshot:** 2026-11-20 01:31:07 UTC.
+- **Coverage:** arXiv Mathematics archive (`math`), with primary and cross-list categories preserved. The full latest-batch listing contained 449 entries; 10 selected papers' abstract pages were verified. For ranks 1–3, the article HTML introductions and main-results statements were also inspected. No proof was independently checked.
+- **Inference:** arXiv provides no official trending chart. Semantic Scholar citation/influential-citation counts and independent seminar or expert discussion could not be corroborated for this very recent batch; web searches largely surfaced the arXiv records and mirrors. The ordering therefore reflects claimed mathematical results, explicitly addressed conjectures or gaps, category breadth, and checkable proof artifacts/comments—not readership, downloads, or a measured trend score. It should be treated as a notable-paper selection rather than measured popularity.
+- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); the ten canonical arXiv abstract pages linked above; arXiv Atom API metadata for version, authors, timestamps, categories, comments, and abstracts; arXiv HTML for the first three papers; and title-specific web searches for independent corroboration. No journal reference or DOI was listed for the selected records in the metadata checked.

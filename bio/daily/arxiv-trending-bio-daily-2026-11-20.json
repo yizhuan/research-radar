@@ -1,0 +1,507 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "daily",
+  "date": "2026-11-20",
+  "window_start": "2026-11-20",
+  "window_end": "2026-11-20",
+  "date_range": "2026-11-20 through 2026-11-20",
+  "announcement_batch_date": "2026-11-20",
+  "snapshot_utc": "2026-11-20T17:17:31Z",
+  "daily_used_prior_batch": false,
+  "title": "Biology and biomedicine — Friday, 20 November 2026 arXiv batch",
+  "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-20.md",
+  "entry_count": 12,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance-ranked snapshot from an incomplete biomedical preprint corpus. Attention evidence was sparse, and this is not a most-read or most-downloaded ranking.",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "rank": null,
+      "url": null,
+      "abstract": "12 notable recent papers. The batch centers on computational molecular and biomedical methods: protein/RNA design, molecular and genomic inference, multi-omics/pathology, and medical imaging. Ranked by relevance and reported evaluation, not popularity."
+    },
+    {
+      "id": "01-shepherd-score",
+      "kind": "paper",
+      "title": "ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.25076",
+      "arxiv_id": "2611.25076",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T19:17:58Z",
+      "updated": "2026-11-18T19:17:58Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Nate Somers",
+        "Kento A. Abeywardane",
+        "Connor W. Coley",
+        "Masha Elkin"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors combine differentiable 3D molecular similarity representations with CPU/GPU kernels for high-throughput alignment and screening, reporting competitive DUDE-Z results and up to 1.03 million alignments per second on one GPU.",
+      "claimed_contribution": "The authors present a unified, modular and differentiable toolkit for 3D molecular alignment and screening; target-wise results indicate no single scoring mode wins across targets.",
+      "unique_caveat": "Computational benchmark evidence only, not prospective compound testing or experimental evidence of binding or efficacy; the best scoring mode varies by target.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.25076",
+        "https://arxiv.org/pdf/2611.25076",
+        "https://github.com/coleygroup/shepherd-score",
+        "https://shepherd-score.readthedocs.io/en/latest/"
+      ]
+    },
+    {
+      "id": "02-montparnasse-rna-design",
+      "kind": "paper",
+      "title": "The Montparnasse Algorithm for RNA Design",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2606.07562",
+      "arxiv_id": "2606.07562",
+      "arxiv_version": "v2",
+      "published": "2026-05-25T17:06:26Z",
+      "updated": "2026-11-19T18:10:48Z",
+      "categories": [
+        "q-bio.BM",
+        "cs.AI"
+      ],
+      "authors": [
+        "Tristan Cazenave"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "The v2 paper reports a Monte Carlo search algorithm for inverse RNA folding that solved a median 96 of 100 Eterna100 V1 targets over five runs, versus 90 for DesiRNA under the same folding model and budget.",
+      "claimed_contribution": "The author reports improved search coverage and speed on Eterna100 V1 using a shared ViennaRNA 1.8.5/Turner 1999 objective.",
+      "unique_caveat": "Computational folding under one energy model; it does not establish that designed RNAs fold as intended in biochemical experiments or cells.",
+      "announcement_type": "revision (v2); revised 2026-11-19 UTC",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2606.07562",
+        "https://arxiv.org/pdf/2606.07562",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2606.07562"
+      ]
+    },
+    {
+      "id": "03-protein-fitness-harness",
+      "kind": "paper",
+      "title": "A General Harness for Protein Foundation Model Fitness Prediction",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2609.34654",
+      "arxiv_id": "2609.34654",
+      "arxiv_version": "v2",
+      "published": "2026-09-28T08:58:56Z",
+      "updated": "2026-11-19T12:44:46Z",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Yang Tan",
+        "Qijia Tian",
+        "Gangyu Sun",
+        "Bozitao Zhong",
+        "Mingchen Li",
+        "Yuanxi Yu",
+        "Nanqing Dong",
+        "Liang Hong"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "The v2 work adds MSA retrieval and structure-aware score corrections to frozen protein-model predictions, reporting improved rank correlations across three variant benchmarks covering 1,211 assays and 3.1 million measured variants.",
+      "claimed_contribution": "The authors’ training-free VenusREM-Harness combines model scores with evolutionary and structural evidence; they report gains across 71 configurations and an average ProteinGym Spearman of 0.556 for VenusREM2.",
+      "unique_caveat": "Retrospective benchmark results, not prospective protein-engineering experiments; performance depends on benchmark composition, homolog coverage and chosen assays.",
+      "announcement_type": "revision (v2); revised 2026-11-19 UTC",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2609.34654",
+        "https://arxiv.org/pdf/2609.34654",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2609.34654"
+      ]
+    },
+    {
+      "id": "04-cryoem-moments",
+      "kind": "paper",
+      "title": "Ab-initio cryo-EM reconstruction from moments of denoised images",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.25525",
+      "arxiv_id": "2611.25525",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T05:26:45Z",
+      "updated": "2026-11-19T05:26:45Z",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Yunpeng Shi",
+        "Amit Singer",
+        "Yuguan Wang",
+        "Andy Zhang"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors use the first three moments of denoised particle images to initialize cryo-EM reconstruction without estimating each particle orientation, reporting successful refinement starts on six experimental datasets.",
+      "claimed_contribution": "The authors’ MoMDeni method estimates an ab-initio model from denoised-image moments, avoiding explicit orientation estimation and allowing non-uniform viewing directions.",
+      "unique_caveat": "The authors call the experimental results preliminary; denoising biases moment estimates, loses fine structure, and the method can fail for low-molecular-weight targets.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.25525",
+        "https://arxiv.org/pdf/2611.25525",
+        "https://github.com/wangyuguan/MoMDeni"
+      ]
+    },
+    {
+      "id": "05-hit-fuse-multiomics",
+      "kind": "paper",
+      "title": "An Explainable and Scalable Hierarchical Tensor Framework for Integrating Multi-Omics and Digital Pathomics",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.25584",
+      "arxiv_id": "2611.25584",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T06:27:17Z",
+      "updated": "2026-11-19T06:27:17Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI"
+      ],
+      "authors": [
+        "Ahmad Hussein",
+        "Ali Anaissi",
+        "Mukesh Prasad",
+        "Ali Braytee"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Omics & single-cell methods",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "HIT-Fuse combines six molecular and pathology modalities across four TCGA cancer cohorts and reports survival stratification, cohort-dependent prediction gains and database-based support for some decoded drivers.",
+      "claimed_contribution": "The authors propose hierarchical tensor fusion with missing-modality reconstruction and traceable attributions; they report a 56.4% relative weighted-F1 increase for glioma after cohort expansion.",
+      "unique_caveat": "The evaluation uses TCGA-derived cohorts and computational/database cross-checks; it is not independent clinical validation, and reconstructed modalities may affect cohort composition and performance.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.25584",
+        "https://arxiv.org/pdf/2611.25584"
+      ]
+    },
+    {
+      "id": "06-sequence-uncertainty-phenotype",
+      "kind": "paper",
+      "title": "From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.25422",
+      "arxiv_id": "2611.25422",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T03:02:19Z",
+      "updated": "2026-11-19T03:02:19Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Huixin Zhan",
+        "Jason H. Moore"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "The authors propagate genomic-model uncertainty into graph-supported phenotype-hypothesis distributions and report held-out association recovery on AlzKB and Hetionet.",
+      "claimed_contribution": "The authors introduce an uncertainty-conditioned path-energy method to allocate probability across gene–disease–phenotype routes without patient-level phenotype supervision.",
+      "unique_caveat": "Computational hypothesis ranking, not diagnosis or clinical validation; the authors note the gene-holdout advantage is driven mainly by three genes and is not established for all genes.",
+      "announcement_type": "new cross-list",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.25422",
+        "https://arxiv.org/pdf/2611.25422"
+      ]
+    },
+    {
+      "id": "07-stochastic-reaction-networks",
+      "kind": "paper",
+      "title": "Dynamical Variational Theory of Stochastic Reaction Networks",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.25491",
+      "arxiv_id": "2611.25491",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T04:26:42Z",
+      "updated": "2026-11-19T04:26:42Z",
+      "categories": [
+        "cond-mat.stat-mech",
+        "q-bio.MN",
+        "q-bio.PE"
+      ],
+      "authors": [
+        "Moshir Harsh",
+        "Peter Sollich"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "A Plefka-expansion variational method approximates non-Markovian dynamics and fluctuations in stochastic reaction networks, with tests on gene regulation, enzyme kinetics and infection models.",
+      "claimed_contribution": "The authors derive a tractable dynamical variational approximation for general stoichiometries and time-varying rates, including a self-consistent bubble resummation.",
+      "unique_caveat": "Reported support is numerical benchmarking against model systems, not direct experimental validation of a biochemical mechanism.",
+      "announcement_type": "new cross-list",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.25491",
+        "https://arxiv.org/pdf/2611.25491"
+      ]
+    },
+    {
+      "id": "08-opentme",
+      "kind": "paper",
+      "title": "OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2604.12075",
+      "arxiv_id": "2604.12075",
+      "arxiv_version": "v2",
+      "published": "2026-04-13T21:27:29Z",
+      "updated": "2026-11-19T14:52:15Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Maaike Galama",
+        "Nina Kozar-Gillan",
+        "Christina Embacher",
+        "Todd Dembo",
+        "Cornelius Böhm",
+        "Evelyn Ramberger",
+        "Julika Ribbat-Idel",
+        "Rosemarie Krupar",
+        "Verena Aumiller",
+        "Miriam Hägele",
+        "Kai Standvoss",
+        "Gerrit Erdmann",
+        "Blanca Pablos",
+        "Ari Angelo",
+        "Simon Schallenberg",
+        "Andrew Norgan",
+        "Viktor Mátyás",
+        "Klaus-Robert Müller",
+        "Maximilian Alber",
+        "Lukas Ruff",
+        "Frederick Klauschen"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Omics & single-cell methods"
+      ],
+      "abstract": "The v2 release describes AI-derived tumor-microenvironment profiles for 5,268 TCGA whole-slide images across ten cancer types, with more than 20,000 quantitative readouts per slide.",
+      "claimed_contribution": "The authors release an open-access, living dataset of model-generated cell, tissue and spatial-neighborhood readouts for computational tumor-microenvironment research.",
+      "unique_caveat": "Readouts inherit the underlying AI models’ errors; the paper notes limited cancer-type coverage and that detailed spatial coordinates are not included in the public release.",
+      "announcement_type": "revision (v2); revised 2026-11-19 UTC",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2604.12075",
+        "https://arxiv.org/pdf/2604.12075",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2604.12075"
+      ]
+    },
+    {
+      "id": "09-califuse-wsi",
+      "kind": "paper",
+      "title": "When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.26159",
+      "arxiv_id": "2611.26159",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T14:15:07Z",
+      "updated": "2026-11-19T14:15:07Z",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Yekai Shen",
+        "Yuqian Wang",
+        "Zishun Liao",
+        "Rongsheng Wang",
+        "Wenting Chen",
+        "S. Kevin Zhou",
+        "Qingsong Yao"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "CALIFUSE uses disagreement among pathology foundation-model representations to estimate confidence and reports improved calibration and misclassification detection across seven whole-slide-image tasks.",
+      "claimed_contribution": "The authors use between-encoder representational heterogeneity and chunk-level evidence agreement as uncertainty cues, without training an additional fusion module.",
+      "unique_caveat": "Benchmark evaluation; calibration and selective-prediction results do not establish clinical utility or transfer to other institutions and scanners.",
+      "announcement_type": "new cross-list",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.26159",
+        "https://arxiv.org/pdf/2611.26159"
+      ],
+      "comment": "Accepted by IEEE BIBM 2026"
+    },
+    {
+      "id": "10-graphep-cardiac",
+      "kind": "paper",
+      "title": "GraphEP: A Calibrated Data System and Benchmark for Learning Cardiac Electrophysiology",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.26551",
+      "arxiv_id": "2611.26551",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T18:23:10Z",
+      "updated": "2026-11-19T18:23:10Z",
+      "categories": [
+        "q-bio.TO"
+      ],
+      "authors": [
+        "Matteo Baldan",
+        "Chiara D'Ercoli",
+        "James Rowbottom",
+        "Pietro Liò",
+        "Stefania Fresca"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "GraphEP packages 732 simulated cardiac electrophysiology trajectories across 20 anatomies and benchmarks graph and physiology-informed models for predicting transmembrane potential.",
+      "claimed_contribution": "The authors provide a reproducible graph-native dataset and report that physiology-informed models perform best on complementary prediction metrics.",
+      "unique_caveat": "The benchmark is based on mechanistic simulations rather than measured patient electrophysiology; model performance does not demonstrate clinical readiness.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.26551",
+        "https://arxiv.org/pdf/2611.26551"
+      ],
+      "comment": "10 pages, 4 figures; AIDaR 2026 NeurIPS workshop"
+    },
+    {
+      "id": "11-probabilistic-radiotherapy",
+      "kind": "paper",
+      "title": "Towards consensus on practical probabilistic evaluation metrics for clinical decision making in radiotherapy",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2611.25260",
+      "arxiv_id": "2611.25260",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T22:44:24Z",
+      "updated": "2026-11-18T22:44:24Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Jenneke I. de Jong",
+        "Steven J. M. Habraken",
+        "Erik W. Korevaar",
+        "Mirko Unipan",
+        "Esther Kneepkens",
+        "Gloria Vilches Freixas",
+        "Yvonne L. B. Klaver",
+        "Michiel Kroesen",
+        "Alejandra Méndez Romero",
+        "Edwin Oldehinkel",
+        "Stephanie Peeters",
+        "Roel J. H. M. Steenbakkers",
+        "Karolien Verhoeven",
+        "Stefan Both",
+        "Liesbeth J. B. Boersma",
+        "Sebastiaan Breedveld",
+        "Mischa S. Hoogeman"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "The authors evaluate probabilistic robustness metrics for proton radiotherapy using 60 treatment plans from three Dutch centers and interviews with eight radiation oncologists.",
+      "claimed_contribution": "The authors compare probabilistic metrics with current robustness evaluation and report that interviewed oncologists considered them suitable, while metric preferences varied.",
+      "unique_caveat": "Plan-based evaluation plus interviews, not a trial showing improved patient outcomes; the authors call for further consensus and clinical validation before broad implementation.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.25260",
+        "https://arxiv.org/pdf/2611.25260"
+      ]
+    },
+    {
+      "id": "12-mre-shear-wave",
+      "kind": "paper",
+      "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
+      "rank": 12,
+      "url": "https://arxiv.org/abs/2611.26111",
+      "arxiv_id": "2611.26111",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T13:39:46Z",
+      "updated": "2026-11-19T13:39:46Z",
+      "categories": [
+        "eess.IV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Stefan Martin",
+        "Jakob Schattenfroh",
+        "Patrick Schuenke",
+        "Felix Frederik Zimmermann",
+        "Ingolf Sack",
+        "Christoph Kolbitsch",
+        "Andreas Kofler"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "An end-to-end physics-informed reconstruction and inversion method estimates shear-wave speed from undersampled MRE data, reporting a 30% NRMSE reduction versus total-variation minimization and evaluation on in-vivo data.",
+      "claimed_contribution": "The authors jointly train reconstruction and phase-gradient inversion to estimate tissue shear-wave speed directly from k-space.",
+      "unique_caveat": "The reported evaluation is retrospective and does not establish multi-site generalization or improved clinical decisions; the in-vivo sample size is not stated in the abstract.",
+      "announcement_type": "new cross-list",
+      "announcement_batch_date": "2026-11-20",
+      "refs": [
+        "https://arxiv.org/abs/2611.26111",
+        "https://arxiv.org/pdf/2611.26111",
+        "https://doi.org/10.1109/TBME.2026.3666306"
+      ],
+      "comment": "Accepted version published in IEEE Transactions on Biomedical Engineering (2026), early access",
+      "doi": "10.1109/TBME.2026.3666306"
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": null,
+      "abstract": "Computational molecular design and protein/RNA scoring; data-driven molecular and cancer representations; uncertainty-aware biomedical prediction; physics-informed and mechanistic modeling."
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": null,
+      "abstract": "Prospectively validate RNA/protein design against biochemical assays; stress-test cryo-EM methods under realistic noise; evaluate omics/pathology transfer and calibration on independent cohorts; test medical-physics methods in external and prospective workflows."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": null,
+      "abstract": "The batch is strongest in computational molecular design, molecular/genomic modeling and imaging methods. Attention signals were too sparse to support a popularity chart; reported benchmark and retrospective evidence should not be confused with broad clinical validation."
+    }
+  ]
+}

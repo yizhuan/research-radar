@@ -1,119 +1,133 @@
-# Notable recent physics papers — arXiv daily batch, 19 November 2026
+# Daily arXiv physics: 19 November 2026
 
-Eight papers are highlighted from today's batch. A shared pattern is precision inference from rich existing data, simulations, and reusable research resources. The agenda moves from a new heavy-flavour observation and a lattice Higgs-mechanism result to astronomy, materials, and cosmological inference. This is an inferred ordering, not an official arXiv trending chart; attention and citation evidence are limited for papers only just announced, so “hottest” cannot be measured reliably.
+## Headline
+
+Daily | Thursday, 2026-11-19 announcement batch | 9 notable papers selected from a 348-paper physics-scope pool. The clearest shared pattern is measurement made usable: new experimental results alongside detector, data, and inference tools. Spoken agenda: a rare beauty-meson decay, engineered localization and plasma propagation, then the infrastructure and analyses supporting astrophysics and particle physics. This is an inferred ordering, not an official arXiv trending chart; citation evidence is limited for papers only about a day old.
 
 ## Top papers (ranked)
 
 ### 1. [First observation of the Cabibbo-suppressed decay $B^+_c \to J/\psi D^{\ast+}$](https://arxiv.org/abs/2611.24559)
-- **Abstract:** LHCb reports the first observation of this $B_c^+$ decay at 5.4 standard deviations and measures its branching fraction relative to $B_c^+\to J/\psi D_s^+$ as $0.067\pm0.016\pm0.003$ using 9 fb$^{-1}$ of proton-proton data.
+- **Abstract:** LHCb reports a 5.4σ observation of this decay in 9 fb$^{-1}$ of proton-proton collision data and measures its branching fraction relative to $B^+_c \to J/\psi D^+_s$ as $0.067 \pm 0.016 \pm 0.003$.
 - **Authors:** LHCb collaboration, R. Aaij, M. Abdelfatah, A. S. W. Abdelmotteleb, C. Abellan Beteta, et al.
-- **arXiv:** `2611.24559v1` (published 2026-11-18 14:58:30 UTC; categories: `hep-ex`)
-- **Evidence for ranking:** A first observation with a stated 5.4σ significance and a concrete branching-fraction measurement gives this paper unusually direct experimental substance for a new batch; LHCb also provides a public analysis record. Its placement reflects the result and release, not citation momentum.
-- **Claimed result:** The LHCb authors report the first observation of the decay and a relative branching fraction consistent with several predictions, while disfavoring some higher predictions.
-- **Evidence type:** experimental; LHCb proton-proton collision data from 2011–2018, 9 fb$^{-1}$, reconstructed in two decay channels.
-- **Caveat:** The statistical uncertainty (±0.016) dominates the systematic uncertainty (±0.003), and the reported quantity is a ratio to a normalization channel, not an absolute branching fraction.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
+- **arXiv:** `2611.24559v1` (published 2026-11-18T14:58:30Z; categories: `hep-ex`)
+- **Evidence for ranking:** A concrete first-observation claim at 5.4 standard deviations, based on the LHCb 2011–2018 dataset; the collaboration also provides machine-readable analysis material.
+- **Claimed result:** The authors report the first observation and the relative branching fraction above, with statistical and systematic uncertainties, as a test of two-body $B_c$ decay models.
+- **Evidence type:** experimental; LHCb proton-proton collision data collected from 2011 to 2018, totaling 9 fb$^{-1}$, with a relative branching-fraction analysis.
+- **Caveat:** The statistical uncertainty (0.016) is substantially larger than the systematic uncertainty (0.003); the paper identifies simulation calibration of reconstruction and selection efficiencies as the leading systematic contribution.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
 - **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
 
-### 2. [Light fermions can trigger a Brout-Englert-Higgs effect](https://arxiv.org/abs/2611.24658)
-- **Abstract:** Lattice simulations of a vectorially coupled SU(2) scalar-fermion-gauge system without Yukawa couplings show evidence that lowering the fermion mass can trigger Higgs-like behavior, with a transition near a fermion-to-vector mass ratio of two.
-- **Authors:** Axel Maas, Sofie Martins, Georg Wieland
-- **arXiv:** `2611.24658v1` (published 2026-11-18 15:57:38 UTC; categories: `hep-lat`, `hep-ph`, `hep-th`)
-- **Evidence for ranking:** It is cross-listed across lattice, phenomenology, and theory, its data are available for replication, and it was highlighted in the 18 November Antonio Marrone physics digest. Those signals corroborate the theoretical interest; they do not establish popularity.
-- **Claimed result:** The authors interpret a change in several lattice observables below a mass ratio near two as evidence that light fermions can trigger a Brout-Englert-Higgs effect in this model.
-- **Evidence type:** computational; lattice simulations of an SU(2) scalar-fermion-gauge system.
-- **Caveat:** This is not a demonstration of the mechanism in the Standard Model: the model uses vectorially coupled fermions without Yukawa couplings, the authors say the evidence is not definitive, and the transition's mechanism remains unexplained.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
+### 2. [Observation of Exact Mobility-Edge Phases in Two-Dimensional Photonic Quasicrystals](https://arxiv.org/abs/2611.23823)
+- **Abstract:** The authors derive exact mobility-edge conditions for a decorated two-dimensional Aubry–André quasicrystal and experimentally probe extended, localized, and partially localized regimes in photonic waveguide lattices using site-selective quench dynamics.
+- **Authors:** Chaohua Wu, Yingying Shi, Juan Kang, Qinglong Zhang, Shuo Liu, Gang Chen
+- **arXiv:** `2611.23823v1` (published 2026-11-18T04:24:42Z; categories: `physics.optics`)
+- **Evidence for ranking:** It joins an analytical prediction from isospectral reduction and hidden self-duality to a fabricated photonic-lattice demonstration, including distinct energy-dependent localization regimes and a resonant flat-band state.
+- **Claimed result:** The authors report a route to exact two-dimensional mobility edges and an experimental photonic realization; they describe this as, to their knowledge, the first observation of mobility-edge phases in two dimensions.
+- **Evidence type:** theoretical and experimental; exact lattice analysis plus femtosecond-laser-written photonic waveguides and quench-propagation measurements.
+- **Caveat:** The experiment is a controlled photonic analogue in a finite engineered lattice, not an observation of electronic localization in a material; transfer to other platforms and higher dimensions remains to be tested.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Condensed matter & materials; Atomic, molecular & optical physics
 
-### 3. [A $10^5\,M_\odot$ Black Hole in the Bulgeless Spiral Galaxy IC 342: First Stellar-Dynamical $M_{\rm BH}$ Measurement with Keck/OSIRIS LGS-AO](https://arxiv.org/abs/2611.24608)
-- **Abstract:** Using adaptive-optics-assisted near-infrared stellar kinematics, the authors report a direct dynamical black-hole mass of $(1.95\pm0.61)\times10^5\,M_\odot$ in the bulgeless spiral IC 342.
-- **Authors:** Tuan N. Le, Dieu D. Nguyen, Mark Durré, Alister W. Graham, Elena Gallo, et al.
-- **arXiv:** `2611.24608v1` (published 2026-11-18 15:30:43 UTC; categories: `astro-ph.GA`)
-- **Evidence for ranking:** The paper claims a first direct stellar-dynamical measurement in a rare bulgeless-spiral setting, using high-resolution Keck/OSIRIS observations; the authors also note submission to ApJ. These are concrete observational and publication-status signals rather than evidence of readership.
-- **Claimed result:** The authors infer an intermediate-mass black hole of $(1.95\pm0.61)\times10^5\,M_\odot$ and argue that a radially varying stellar mass-to-light ratio is necessary to reveal its kinematic signature.
-- **Evidence type:** observational; Keck/OSIRIS LGS-AO K-band integral-field spectroscopy, archival HST/WFC3 imaging, and Jeans anisotropic modelling.
-- **Caveat:** The black-hole inference depends on the adopted dynamical models and on a young-population-driven mass-to-light gradient; constant-$M/L$ models instead give only an upper limit.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
-- **Themes:** Astrophysics
+### 3. [The role of externally-driven density fluctuations in the enhancement of beam spray](https://arxiv.org/abs/2611.24914)
+- **Abstract:** Experiments show that speckled 351-nm heater beams increase the spray of a separate 1053-nm beam after plasma propagation; modeling attributes the enhancement to long-wavelength density fluctuations sustained by the heater speckles.
+- **Authors:** Kyle R. McMillen, Ian D. Min-Roberts, Russell K. Follett, Avram L. Milder, Joseph Katz, et al.
+- **arXiv:** `2611.24914v1` (published 2026-11-18T18:47:57Z; categories: `physics.plasm-ph`)
+- **Evidence for ranking:** A directly measured beam-propagation change is paired with a physical model and propagation simulations; the arXiv comment says the work was submitted to Physical Review Letters.
+- **Claimed result:** In the OMEGA experiment, the measured angular spray of the 1053-nm beam increased by about 2.7 times with the 351-nm heater beams on (95%-energy angle 33.8 mrad versus 12.7 mrad in the vacuum reference); the authors' model and simulations connect the effect to heater-driven plasma fluctuations.
+- **Evidence type:** experimental and computational; OMEGA 60 heater beams, OMEGA EP probe beam, a gas-jet plasma, Thomson-scattering plasma diagnostics, fluctuation modeling, and beam-propagation simulations.
+- **Caveat:** The measured spray is specific to the reported laser/plasma geometry; the large density-fluctuation amplitudes are model estimates supported by the propagation comparison, not an independent direct measurement of the full fluctuation spectrum.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Plasma & fluid physics; Instrumentation & detectors
 
-### 4. [Discovery of a Massive Outer Companion to the TOI-178 Resonant Chain](https://arxiv.org/abs/2611.24854)
-- **Abstract:** Combining astrometric anomalies, radial velocities, and high-contrast imaging, the authors infer a likely eccentric brown-dwarf companion to the six-planet TOI-178 system, whose five inner planets occupy a resonant chain.
-- **Authors:** Emma V. Turtelboom, William Thompson, Ryan Cloutier, Alexandra Rochon, Charles A. Beichman, et al.
-- **arXiv:** `2611.24854v1` (published 2026-11-18 18:13:57 UTC; categories: `astro-ph.EP`)
-- **Evidence for ranking:** The claimed companion is supported by a joint analysis of Gaia/Hipparcos astrometry, ESPRESSO velocities, and Keck/NIRC2 imaging, and the manuscript is submitted to PASP. The resonant-chain architecture makes the dynamical interpretation relevant beyond a single-planet detection.
-- **Claimed result:** The authors' refined posterior favors a companion with semimajor axis $6.9^{+12.3}_{-3.3}$ AU and mass $21^{+47}_{-11}\,M_J$, and their simulations find the inner chain remains stable over the tested interval.
-- **Evidence type:** observational; Gaia DR2/DR3–Hipparcos astrometry, published ESPRESSO radial velocities, Keck-II/NIRC2 imaging, and N-body simulations.
-- **Caveat:** The mass and eccentricity posteriors are broad because orbital coverage is incomplete; stability over the simulated interval does not rule out later instability.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
-- **Themes:** Astrophysics
-
-### 5. [LEMUR: A Searchable Web Archive of Deep Chandra Images of Galaxies and Galaxy Clusters](https://arxiv.org/abs/2611.24937)
-- **Abstract:** LEMUR releases uniformly processed Chandra images for 2,569 galaxies and clusters, alongside searchable morphology, photometry, downloadable data products, and open-source code.
+### 4. [LEMUR: A Searchable Web Archive of Deep Chandra Images of Galaxies and Galaxy Clusters](https://arxiv.org/abs/2611.24937)
+- **Abstract:** LEMUR releases uniformly reduced Chandra images for 2,569 galaxies and galaxy clusters, drawing on 5,505 ACIS observations and 138.8 Ms of exposure, with a searchable web archive, catalog, and open code.
 - **Authors:** Carter L. Rhea, Julie Hlavacek-Larrondo, Marine Prunier, Hyunseop Choi, Megan Donahue, Christian Thibeault
-- **arXiv:** `2611.24937v1` (published 2026-11-18 18:59:03 UTC; categories: `astro-ph.GA`, `astro-ph.IM`)
-- **Evidence for ranking:** This is a substantial, reusable data release: 5,505 Chandra observations totaling 138.8 Ms, with a public archive, Zenodo tables, and open code; it is also cross-listed in astrophysics and instrumentation. The stated 73% cool-core match fraction is a reported validation signal, not a popularity metric.
-- **Claimed result:** The authors present a uniform, searchable archive and report that AstroCLIP-nearest cluster pairs share cool-core status in 73% of matched pairs, versus 51% by chance.
-- **Evidence type:** observational; archival Chandra ACIS images reprocessed with CIAO, with AstroCLIP-based morphology search.
-- **Caveat:** The release reprocesses archival observations rather than reporting a new observation; the morphology result and its 73% match rate apply to the archive's selected matched cluster pairs.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
+- **arXiv:** `2611.24937v1` (published 2026-11-18T18:59:03Z; categories: `astro-ph.GA`, `astro-ph.IM`)
+- **Evidence for ranking:** A large, immediately reusable X-ray data release is paired with Zenodo-archived tables and open-source processing code; the authors report a 3% broad-band photometry agreement for 275 point sources against the Chandra Source Catalog.
+- **Claimed result:** The authors provide merged, background-subtracted and exposure-corrected Chandra products and a morphology-search tool; cool-core status occurs in 73% of matched cluster pairs returned by the AstroCLIP similarity search, versus 51% by chance.
+- **Evidence type:** computational and data release; 5,505 archival Chandra ACIS observations processed with CIAO, with a web archive, Zenodo tables, and GitHub code.
+- **Caveat:** The paper notes incomplete coverage tied to Chandra archive science classifications, possible target-grouping errors, residual background, and a roughly 20% soft-band flux underestimate from the single-energy exposure-map approximation; similarity is morphological, not a calibrated physical distance.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
 - **Themes:** Astrophysics; Computational & data methods
 
-### 6. [Deconstructing the cosmic baryon distribution with fast radio bursts](https://arxiv.org/abs/2611.24838)
-- **Abstract:** The authors combine FRB dispersion-measure modelling with galaxy-density estimates to reconstruct ionized baryons across cosmic-web environments in IllustrisTNG and a Euclid-like mock catalogue.
-- **Authors:** Koustav Konar, Yin-Zhe Ma, Léon V. E. Koopmans, P. Daniel Meerburg
-- **arXiv:** `2611.24838v1` (published 2026-11-18 18:03:36 UTC; categories: `astro-ph.CO`, `astro-ph.HE`)
-- **Evidence for ranking:** It bridges cosmology and high-energy astrophysics, is accepted for publication in A&A, and was included in a contemporaneous 18 November astronomy digest. The result is a method tested against simulation truth, not a measurement from an observed FRB sample.
-- **Claimed result:** In the simulation/mock framework, the authors recover ionized baryon density $\Omega_b f_{\rm ion}=0.0455^{+0.0028}_{-0.0026}$ and reproduce bin-wise electron densities to within 10% of simulation truth.
-- **Evidence type:** computational; IllustrisTNG magnetohydrodynamical simulations, Bayesian inference, and a Euclid-like mock galaxy catalogue.
-- **Caveat:** The reconstruction is simulation-based and depends on the galaxy-tracer bias correction; deriving total $\Omega_b$ additionally assumes an ionized fraction $f_{\rm ion}=0.95$.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
-- **Themes:** Cosmology & gravitation; Astrophysics; Computational & data methods
+### 5. [Fluctuations and Correlations of Conserved Charges in Isobar Collisions at $\sqrt{s_{NN}}$ = 200 GeV with the STAR Detector](https://arxiv.org/abs/2611.24673)
+- **Abstract:** STAR measurements of second-order cumulants and correlations of baryon-number, electric-charge, and strangeness proxies in Ru+Ru and Zr+Zr collisions show similar centrality dependence within uncertainties and are compared with lattice-QCD and UrQMD calculations.
+- **Authors:** Changfeng Li, Hanwen Feng
+- **arXiv:** `2611.24673v1` (published 2026-11-18T16:10:29Z; categories: `nucl-ex`)
+- **Evidence for ranking:** It reports collider measurements with a direct comparison to both lattice-QCD calculations and a transport model; a DOI is listed for the paper, and related STAR conference discussion is available.
+- **Claimed result:** The measured peripheral-collision ratios follow the ordering predicted by lattice QCD for matter in an external magnetic field; UrQMD shows a qualitatively similar hierarchy but underpredicts the observed peripheral-to-central enhancement.
+- **Evidence type:** experimental; STAR measurements of Ru+Ru and Zr+Zr collisions at $\sqrt{s_{NN}}=200$ GeV, compared with lattice-QCD and UrQMD calculations.
+- **Caveat:** Similarity between the measured hierarchy and the magnetic-field-motivated lattice prediction does not isolate magnetic-field effects from other sources of centrality dependence; the authors call for further quantitative study.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
 
-### 7. [Observation of room-temperature intrinsic antiferroelectricity in van der Waals NbOCl2](https://arxiv.org/abs/2611.24092)
-- **Abstract:** The authors report room-temperature antiferroelectric behavior in layered NbOCl2 and reversible strain- or electric-field-driven conversion to a ferroelectric state, tracked through optical signatures.
-- **Authors:** JinKai Huo, Xingyu Chen, Gaolei Zhao, Xuan Chen, Yuchen Meng, et al.
-- **arXiv:** `2611.24092v1` (published 2026-11-18 09:17:37 UTC; categories: `cond-mat.mtrl-sci`, `cond-mat.mes-hall`, `physics.app-ph`)
-- **Evidence for ranking:** The paper reports an experimentally testable room-temperature phase and reversible optical response, with cross-listing across materials, mesoscopic physics, and applied physics. Its position reflects the concrete materials result, not measured online attention.
-- **Claimed result:** The authors attribute stripe-like second-harmonic-generation signatures to antiferroelectric/ferroelectric phase coexistence and report a reversible response under an electric field of about 20 kV/cm.
-- **Evidence type:** experimental; second-harmonic-generation mapping and angle-dependent measurements, Raman spectroscopy, and strain/electric-field control.
-- **Caveat:** Phase identification relies on optical and Raman signatures; the abstract does not establish long-term cycling endurance or device-level performance.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
-- **Themes:** Condensed matter & materials
+### 6. [Producing $\mu$Bq/m$^3$-level low-$^{226}$Ra ultrapure water for the Jiangmen Underground Neutrino Observatory](https://arxiv.org/abs/2611.23711)
+- **Abstract:** The JUNO team reports a high-sensitivity radium assay and a 100-ton-per-hour ultrapure-water process that consistently produces water below 4 $\mu$Bq/m$^3$ of $^{226}$Ra, below the detector's 50 $\mu$Bq/m$^3$ requirement.
+- **Authors:** Xi-Ting Xu, Cong Guo, Jin-Chang Liu, Yong-Peng Zhang, Xiao-Hua Liang, et al.
+- **arXiv:** `2611.23711v1` (published 2026-11-18T02:10:02Z; categories: `physics.ins-det`, `hep-ex`)
+- **Evidence for ranking:** The paper reports an engineering-scale detector-enabling result with a quantified assay threshold and production rate; it has a journal reference and DOI.
+- **Claimed result:** Selective ion-exchange resin combined with membrane separation produced water consistently below 4 $\mu$Bq/m$^3$ of radium, against JUNO's specified limit of 50 $\mu$Bq/m$^3$.
+- **Evidence type:** experimental; high-sensitivity radium measurements and operation/validation of the JUNO ultrapure-water purification train at 100 t/h.
+- **Caveat:** The result demonstrates compliance for JUNO's specified process and engineering scale; the assay's 3.9 $\mu$Bq/m$^3$ detection capability and site-specific water conditions bound how broadly the performance transfers.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Instrumentation & detectors; Particle, nuclear & high-energy physics
 
-### 8. [Map-Level Inference of Primordial Gravitational Waves from the CMB with Spherical Neural Networks](https://arxiv.org/abs/2611.24939)
-- **Abstract:** A spherical graph-convolutional network estimates the tensor-to-scalar ratio directly from simulated multifrequency CMB B-mode maps and outperforms a bandpower-likelihood benchmark on the same simulation set.
+### 7. [Map-Level Inference of Primordial Gravitational Waves from the CMB with Spherical Neural Networks](https://arxiv.org/abs/2611.24939)
+- **Abstract:** A spherical graph-convolution network estimates the tensor-to-scalar ratio $r$ directly from simulated multifrequency CMB $B$-mode maps, reducing RMSE by a factor of 1.3 and producing 68% intervals 1.2 times narrower than a matched bandpower-likelihood baseline in the tested setup.
 - **Authors:** Anto I. Lonappan, Adrian E. Bayer, Brian Keating, Kam Arnold, Giuseppe Puglisi, Ethan O. Nadler
-- **arXiv:** `2611.24939v1` (published 2026-11-18 18:59:32 UTC; categories: `astro-ph.CO`, `astro-ph.IM`)
-- **Evidence for ranking:** The paper cross-lists cosmology and instrumentation, benchmarks against a likelihood on 20,000 simulations, and reports measurable improvement in inference precision. It is a recent methods result, not evidence for a gravitational-wave detection.
-- **Claimed result:** On the authors' simulated experiment, the network lowers RMSE on $r$ by a factor of 1.3 and produces 68% intervals 1.2 times narrower than the comparison likelihood.
-- **Evidence type:** computational; 20,000 simulated multifrequency CMB maps with lensing, inhomogeneous noise, and Galactic dust and synchrotron foregrounds.
-- **Caveat:** Performance depends on the foreground model; the authors report that generalization fails for a three-dimensional dust model with line-of-sight variation.
-- **Announcement type:** new submission, 19 November 2026 announcement batch
+- **arXiv:** `2611.24939v1` (published 2026-11-18T18:59:32Z; categories: `astro-ph.CO`, `astro-ph.IM`)
+- **Evidence for ranking:** The paper benchmarks against a likelihood on 20,000 simulations and quantifies both point-error and interval-width changes; its computational method is cross-listed between cosmology and instrumentation.
+- **Claimed result:** The authors find improved simulated $r$ recovery without explicit power-spectrum estimation or component separation, while saliency maps favor deeper sky regions and cleaner frequency channels.
+- **Evidence type:** computational; spherical graph convolution trained and tested on 20,000 simulated multifrequency CMB maps with lensing, inhomogeneous noise, dust, and synchrotron foregrounds.
+- **Caveat:** Both the network and baseline inherit their foreground assumptions; the authors report that generalization fails for a three-dimensional dust model with line-of-sight variations. This is a simulation result, not a gravitational-wave detection.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
 - **Themes:** Cosmology & gravitation; Computational & data methods
+
+### 8. [Rapid Equation of State Inference from Multiprobe Datasets](https://arxiv.org/abs/2611.24664)
+- **Abstract:** A joint analysis of binary-neutron-star gravitational waves, NICER mass-radius data, and massive-pulsar timing infers a canonical-star radius of $11.93^{+1.02}_{-0.83}$ km and a maximum nonrotating mass of $2.31\pm0.23\,M_\odot$ at 90% credible level.
+- **Authors:** Tamal RoyChowdhury, Anarya Ray, Jolien Creighton, Shaon Ghosh
+- **arXiv:** `2611.24664v1` (published 2026-11-18T16:01:14Z; categories: `astro-ph.HE`, `gr-qc`)
+- **Evidence for ranking:** It combines three observational channels that constrain different density regimes and reports numerical posterior constraints; cross-listing connects neutron-star astrophysics with gravitational physics.
+- **Claimed result:** The authors find that gravitational-wave and NICER data constrain low-to-intermediate densities while massive pulsars constrain the high-density end, and they report no simple mapping between EoS stiffness and Bayesian evidence.
+- **Evidence type:** observational and computational; Bayesian inference using binary-neutron-star gravitational-wave observations, NICER X-ray mass-radius measurements, and radio timing of massive pulsars.
+- **Caveat:** The quoted constraints are conditional on the parameterized equation-of-state and candidate-model choices; current multimessenger data do not identify a unique microscopic composition.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Astrophysics; Cosmology & gravitation
+
+### 9. [Simultaneous spectral measurement and programmable filtering on a universal silicon photonic chip](https://arxiv.org/abs/2611.23667)
+- **Abstract:** A fabricated silicon photonic chip combines programmable spectral filtering and measurement, demonstrating 0.05-nm resolution across more than 100 nm of bandwidth while measuring eight independent laser sources.
+- **Authors:** Yangyang Wan, Rui Tang, Kazuhiro Ikeda, Makoto Okano, Kasidit Toprasertpong, Mitsuru Takenaka
+- **arXiv:** `2611.23667v1` (published 2026-11-18T00:50:21Z; categories: `physics.optics`)
+- **Evidence for ranking:** It presents a hardware demonstration with quantified bandwidth and resolution and reconfigures filter functions while measuring, rather than proposing a chip architecture alone.
+- **Claimed result:** The authors report simultaneous measurement and programmable filtering on one universal linear-optical circuit, with dynamic filter reconfiguration.
+- **Evidence type:** experimental; fabricated silicon photonic chip with two 8×8 programmable unitary circuits, intensity modulators, and eight laser inputs.
+- **Caveat:** The reported performance is from one fabricated prototype; repeatability and long-term stability are not quantified in the abstract checked.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Atomic, molecular & optical physics; Instrumentation & detectors
 
 ## Trending Research Themes
 
-- **Inference from complex and archival data:** IC 342's black-hole mass depends on resolved stellar kinematics and population-sensitive mass modelling; TOI-178 combines astrometry, radial velocities, imaging, and orbital simulations; LEMUR turns Chandra's archive into uniform, searchable products; and the CMB paper tests map-level inference against a likelihood. These are distinct datasets and methods, not independent confirmations of one result.
-- **From fundamental questions to measurable tests:** LHCb's $B_c^+$ decay measurement confronts hadronic-decay predictions, while the lattice study probes a possible Higgs-like mechanism in a simplified gauge-scalar-fermion system. One is a collider measurement and the other a model-specific simulation, not mutually confirming evidence.
-- **Cosmic structure through complementary tracers:** FRB dispersion measures are used in simulations to map ionized baryons, while the CMB work targets primordial tensor modes from B-mode maps. Both connect observation-facing data to cosmological inference, but address different physical quantities and rely on different foreground/systematic models.
-- **Materials signal (isolated in this selection):** NbOCl2 adds a room-temperature antiferroelectric candidate and a tunable nonlinear-optical response; the eight-paper sample does not support a broader materials trend claim.
+- **Optical platforms turn phase structure into a controllable measurement.** The 2D photonic-quasicrystal study engineers localization and flat-band regimes and probes them through quench dynamics; the silicon-chip study combines programmable filtering with spectral measurement. These are distinct demonstrations on different platforms, not independent confirmations of one effect ([Wu et al.](https://arxiv.org/abs/2611.23823); [Wan et al.](https://arxiv.org/abs/2611.23667)).
+- **Measurement and data infrastructure are themselves research outputs.** LEMUR opens a large Chandra image archive; JUNO reports the radiopurity process needed by a 20-kt detector; the silicon-photonic chip integrates sensing and processing. The LHCb paper also links a new decay measurement to machine-readable analysis material. This is a recurring enabling-tools signal in the selected set, not a claim that the full batch is dominated by instruments ([Rhea et al.](https://arxiv.org/abs/2611.24937); [Xu et al.](https://arxiv.org/abs/2611.23711); [Wan et al.](https://arxiv.org/abs/2611.23667); [LHCb](https://arxiv.org/abs/2611.24559)).
+- **Inference increasingly combines complementary signals and benchmarks against physical models.** The CMB work compares direct map inference with a likelihood on 20,000 simulations; the neutron-star analysis combines gravitational waves, X-ray pulse profiles, and radio timing; STAR compares collision observables with lattice-QCD and UrQMD calculations. These are methodological parallels across separate physical questions, not shared datasets or cross-validation of a single result ([Lonappan et al.](https://arxiv.org/abs/2611.24939); [RoyChowdhury et al.](https://arxiv.org/abs/2611.24664); [Li & Feng](https://arxiv.org/abs/2611.24673)).
+- **Plasma-mediated wave transport is an isolated but practically relevant signal.** The OMEGA beam-spray result links speckle-driven density fluctuations to propagation changes, with implications for laser-plasma experiments; it is the only selected paper on this specific topic ([McMillen et al.](https://arxiv.org/abs/2611.24914)).
 
 ## Open Problems and Research Directions
 
-- **Open problem — $B_c$ decay precision:** The LHCb measurement is statistically limited, and several hadronic-decay calculations differ from the measured ratio. Follow-up work could use the larger post-2024 LHCb sample cited by the authors to refine the ratio and test the competing QCD descriptions. [2611.24559]
-- **Open problem — origin and robustness of the lattice transition:** The light-fermion study reports an unexplained change in its SU(2) system and says the evidence is not definitive. Further finite-volume and discretization studies, followed by nonperturbative tests with more Standard-Model-like chiral interactions, would probe whether the effect survives changes to the model. [2611.24658]
-- **Open problem — TOI-178 orbital posterior:** Incomplete orbit coverage leaves a broad companion mass/eccentricity posterior, and the reported stability tests do not exclude later disruption. Continued radial-velocity and astrometric monitoring, plus longer N-body integrations across the posterior, could test the companion's properties and the resonant chain's longevity. [2611.24854]
-- **Open problem — transferring the FRB baryon reconstruction to data:** The current recovery uses IllustrisTNG and a Euclid-like mock, with a galaxy-bias correction and assumed ionized fraction. Applying the method to localized FRBs and observed galaxy catalogues, while varying feedback prescriptions and tracer bias, would test how well it measures baryons outside the simulation. [2611.24838]
-- **Open problem — foreground robustness for CMB map inference:** The network does not generalize to a three-dimensional dust model with line-of-sight variation. Training and validating across broader dust models and then on real survey maps could test whether the precision gain survives realistic foreground uncertainty. [2611.24939]
+- **Foreground robustness (author-stated limitation):** The CMB network does not generalize to the tested 3D dust model with line-of-sight variation. A useful follow-up is to train and test on a broader family of dust geometries and noise realizations, then evaluate on held-out foreground models before applying the estimator to survey maps ([Lonappan et al.](https://arxiv.org/abs/2611.24939)).
+- **Precision on the new $B_c$ decay (evidence in the paper):** LHCb's relative branching-fraction uncertainty is dominated by statistics, with residual efficiency-calibration systematics. Larger samples and independent efficiency calibrations could sharpen the model comparison and establish whether the ratio discriminates among the existing predictions ([LHCb](https://arxiv.org/abs/2611.24559)).
+- **What drives STAR's centrality dependence? (author-stated open question):** The peripheral ordering is compatible with a magnetic-field-motivated lattice prediction, but UrQMD also reproduces a similar hierarchy and the measurement does not isolate the cause. Quantitative model comparisons that vary magnetic-field, transport, and acceptance assumptions would test the interpretation ([Li & Feng](https://arxiv.org/abs/2611.24673)).
+- **From controlled localization to robust scaling (synthesis):** The photonic experiment demonstrates energy-selective localization in an engineered lattice. Varying lattice size, disorder, and auxiliary-network geometry would test how sharply the predicted mobility edges survive finite-size and fabrication effects before extending the design to more complex lattices ([Wu et al.](https://arxiv.org/abs/2611.23823)).
+- **Directly constrain plasma fluctuations (synthesis):** The beam-spray increase is measured, while fluctuation amplitudes are inferred through modeling. Additional diagnostics and scans over heater intensity, smoothing, and plasma conditions could separate density-fluctuation effects from other beam-propagation contributions ([McMillen et al.](https://arxiv.org/abs/2611.24914)).
+- **Audit archive systematics (author-stated limitations):** LEMUR notes uncertain target grouping, coverage selection, background residuals, and soft-band flux bias. Cross-matching against curated targets and recalculating energy-dependent exposure maps where needed would clarify which science uses are robust without changing the archive's value as a broad access layer ([Rhea et al.](https://arxiv.org/abs/2611.24937)).
 
 ## Takeaway
 
-Today's batch is strongest where it turns difficult signals into testable measurements, model comparisons, or reusable data products—from a first $B_c^+$ decay observation to a direct low-mass black-hole estimate and new inference pipelines. The headline claims remain uneven in maturity: some are instrument-backed observations, while others are simulation results or methods whose assumptions need validation against real data.
+The Nov. 19 physics batch has several crisp experimental results, but much of its broader signal is enabling work: calibrated measurements, reusable data, and analysis pipelines that join multiple physical constraints. The strongest claims remain bounded by sample size, model assumptions, finite engineered platforms, or dataset systematics; these preprints are not a substitute for follow-up validation.
 
 ## Method and sources
 
-- **Window:** daily arXiv announcement listing dated 2026-11-19 (start 2026-11-19; end 2026-11-19). At the 2026-11-19 17:32:05 UTC snapshot, the latest listing was Thursday 19 November; the selected new submissions have first-submission timestamps on 18 November UTC.
-- **Coverage:** checked the current `/new` listings for all configured physics archives: `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. Across those pages, 716 distinct versionless IDs appeared in new, cross-list, or replacement sections; section counts overlap across archive listings. The eight selected records were new submissions, not revisions.
-- **Verification and ranking:** metadata and abstracts were checked against the individual arXiv abstract pages; the full arXiv HTML papers for the top three were inspected for methods, results, and limitations. Ranking is inferred from checkable first results, cross-listing, journal status, data/code releases, contemporary expert coverage, and recency as a tie-breaker. No official arXiv trend chart exists. Semantic Scholar citation evidence was not available in a usable form at the snapshot, so no citation counts or period gains are claimed.
-- **Sources:** arXiv current listings for [physics](https://arxiv.org/list/physics/new), [astro-ph](https://arxiv.org/list/astro-ph/new), [cond-mat](https://arxiv.org/list/cond-mat/new), [gr-qc](https://arxiv.org/list/gr-qc/new), [hep-ex](https://arxiv.org/list/hep-ex/new), [hep-lat](https://arxiv.org/list/hep-lat/new), [hep-ph](https://arxiv.org/list/hep-ph/new), [hep-th](https://arxiv.org/list/hep-th/new), [nucl-ex](https://arxiv.org/list/nucl-ex/new), [nucl-th](https://arxiv.org/list/nucl-th/new), and [quant-ph](https://arxiv.org/list/quant-ph/new); individual arXiv records linked above; [Antonio Marrone's 18 November arXiv digest](https://home.ba.infn.it/~marrone/highlights/2026-11-18.html).
+- **Window:** Daily arXiv announcement batch dated Thursday, 2026-11-19. The associated new submissions in the queried pool carry arXiv submission timestamps on 2026-11-18; the daily report uses this batch rather than the later run date. Snapshot: 2026-11-20T01:37:21Z.
+- **Coverage:** Checked the recent pages for all 11 configured archives: `physics`, `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. A date-bounded arXiv API query across those archives returned 348 version-1 entries for the batch date. Primary archive counts were 73 `physics`, 65 `quant-ph`, 62 `astro-ph`, 56 `cond-mat`, 20 `gr-qc`, 18 `hep-ph`, 13 `hep-th`, 6 `hep-ex`, 5 `nucl-th`, 3 `hep-lat`, and 1 `nucl-ex`; the four largest account for 79.5% of the 322 entries whose primary category is in the configured physics archives. The remaining 26 are physically cross-listed papers whose primary archive is outside that set. All 9 selected abstract pages were checked directly on arXiv; the page-extraction helper was unavailable, so direct page retrieval was used instead.
+- **Inference:** Because the pool is only about a day old, the order favors concrete experimental or observational results, cross-subfield relevance, reusable data/code, and clearly quantified methods; recency is only a tie-breaker. It is described as notable recent work rather than measured popularity. Semantic Scholar citation metadata was not usable for this snapshot, so citations were not treated as a ranking signal. Independent coverage/discussion was sparse and is cited only where a relevant discussion was found.
+- **Sources:** [arXiv physics recent](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), and [quant-ph](https://arxiv.org/list/quant-ph/recent). Full text was consulted where practical for the top experimental papers; relevant external discussion/source pages include the [STAR presentation record](https://drupal.star.bnl.gov/STAR/presentations/SQM-2026/Fluctuations-and-Correlations-Conserved-Charges-Isobar-Collisions-sqrtsNN-2-1) and LHCb's linked analysis materials.

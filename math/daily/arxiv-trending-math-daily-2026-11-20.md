@@ -1,143 +1,155 @@
-# arXiv Mathematics — daily notable papers (20 November 2026)
+# arXiv Mathematics — daily research snapshot, 2026-11-20
 
 ## Headline
 
-Today's arXiv Mathematics (`math`) announcement batch (Friday, 20 November 2026): 10 notable recent papers selected from 405 entries. The strongest pattern is precise bounds and conjecture-oriented results, spanning harmonic analysis, topology, percolation, and combinatorics. Spoken agenda: sharp estimates first, then exact probability and structural results, and finally the formalization/AI thread. This is an inferred, evidence-weighted ordering—not an official arXiv trending chart—and citation evidence is sparse for papers announced today; it is not a readership ranking.
+Latest available announcement batch: Friday, 20 November 2026 (the Saturday snapshot uses this prior batch). Eleven notable papers selected from 405 entries stand out, especially sharp estimates and exact results that settle or narrow named conjectures; the agenda runs from Fourier analysis and topological overlap to hypergraph thresholds, representation theory, and percolation. This is an inferred shortlist, not an official arXiv trending chart; citation and independent-attention evidence is limited for papers this recent, so the ordering reflects mathematical claims and scope rather than measured popularity.
 
 ## Top papers (ranked)
 
 ### 1. [Amplitude dependent wave envelope type estimates for moment curves and applications](https://arxiv.org/abs/2611.26581)
-- **Abstract:** The authors prove amplitude-dependent wave-envelope estimates for moment curves in arbitrary dimensions and derive sharp small-cap decoupling for dimensions n ≥ 4, resolving the Demeter–Guth–Wang exponential-sum conjecture in all dimensions.
+- **Abstract:** The authors prove amplitude-dependent wave-envelope estimates for moment curves in arbitrary dimensions and use them to establish sharp small-cap decoupling inequalities for dimensions `n≥4`, resolving the Demeter–Guth–Wang exponential-sum conjecture in all dimensions.
 - **Authors:** Sangwon Jeong, Changkeun Oh
-- **arXiv:** `2611.26581v1` (published Thu, 19 Nov 2026 18:43:18 UTC; categories: `math.CA`)
-- **Evidence for ranking:** The paper reports an all-dimensional conjecture resolution, with new sharp small-cap estimates for n ≥ 4; its proof builds on sharp square-function estimates, giving a specific mathematical basis for prominence.
-- **Claimed result:** The authors prove amplitude-dependent wave-envelope-type estimates and use them to establish sharp small-cap decoupling for the moment curve in every dimension n ≥ 4; they state this completes the Demeter–Guth–Wang conjecture on exponential sums across dimensions.
-- **Assumptions and setting:** The estimates concern the moment curve; the new small-cap theorem is stated for dimensions n ≥ 4 and uses prior sharp square-function estimates.
-- **Caveat:** The result is a preprint claim; its main argument depends on the cited square-function estimates, and the full proof has not been independently assessed here.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
+- **arXiv:** `2611.26581v1` (published 2026-11-19 18:43:18 UTC; categories: `math.CA`)
+- **Evidence for ranking:** The abstract claims sharp small-cap decoupling in every dimension `n≥4` and completion of a named conjecture on exponential sums; this is a specific, consequential result signal, not an attention metric.
+- **Claimed result:** The authors prove amplitude-dependent wave-envelope estimates for moment curves and derive sharp small-cap decoupling for the moment curve in every dimension `n≥4`.
+- **Assumptions and setting:** Fourier restriction/decoupling for moment curves; the new sharp small-cap conclusion is for dimensions `n≥4` and uses prior sharp square-function estimates by Maldague and Guth–Maldague.
+- **Caveat:** The result concerns the moment curve, not general manifolds; the paper builds on those prior square-function estimates, and this summary has not independently checked the proof.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
 - **Themes:** Analysis & PDE
 
 ### 2. [Sharp topological overlap in every dimension](https://arxiv.org/abs/2611.26229)
-- **Abstract:** For continuous and affine maps from high-dimensional simplices to R^d, the authors determine the optimal asymptotic fraction of d-faces whose images share a point, obtaining (d+1)!/(d+1)^(d+1) in every dimension.
+- **Abstract:** The author determines the asymptotic topological and affine overlap constants for maps of high-dimensional simplices into `R^d`, obtaining the same exact value in every dimension.
 - **Authors:** Sergey Norin
-- **arXiv:** `2611.26229v1` (published Thu, 19 Nov 2026 15:04:17 UTC; categories: `math.CO`, `cs.CG`)
-- **Evidence for ranking:** The exact formula settles the Bukh–Matoušek–Nivasch conjecture for the affine constant while matching it with the topological constant; the author also links a Lean formalization, an unusually concrete verification artifact for this result.
-- **Claimed result:** The author proves c_d^top = c_d^aff = (d+1)!/(d+1)^(d+1) for every integer d ≥ 1, confirming the cited conjecture.
-- **Assumptions and setting:** The constants are asymptotic minima over maps from the n-simplex to R^d as n tends to infinity; the topological case allows every continuous map, while the affine case restricts to affine maps.
-- **Caveat:** The preprint reports that AI helped discover the proof under the author's direction. The linked Lean formalization is described as based on an earlier draft, so it should not be treated as a formal check of every detail of this exact version without comparing the texts.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
+- **arXiv:** `2611.26229v1` (published 2026-11-19 15:04:17 UTC; categories: `math.CO`, `cs.CG`)
+- **Evidence for ranking:** The paper gives an exact all-dimensional constant and confirms the Bukh–Matoušek–Nivasch conjecture; its combinatorics/computational-geometry cross-listing corroborates scope, while no popularity claim is made.
+- **Claimed result:** The author proves `c_d^top = c_d^aff = (d+1)!/(d+1)^(d+1)` for every integer `d≥1`, confirming the conjectured affine value and matching it with the topological constant.
+- **Assumptions and setting:** As `n→∞`, for continuous or affine maps from the `n`-simplex to `R^d`, some point lies in the images of at least `(c−o(1)) binom(n+1,d+1)` of the `d`-faces.
+- **Caveat:** The abstract says the proof was found by GPT-6 Astra following the author's directions; it remains a preprint claim and has not been independently or formally verified here.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
 - **Themes:** Combinatorics & discrete mathematics; Geometry & topology
 
-### 3. [On Romik's rationality conjectures for critical percolation](https://arxiv.org/abs/2611.26570)
-- **Abstract:** For nested-arch events in the critical-percolation loop representation, the authors derive Pfaffian formulas that imply rational dependence on cylinder circumference and rational limiting probabilities in the half-plane.
-- **Authors:** Melda Akyazi-Zavadski, Nathanaël Berestycki, Sunil Chhita
-- **arXiv:** `2611.26570v1` (published Thu, 19 Nov 2026 18:36:31 UTC; categories: `math.PR`, `math-ph`, `math.CO`)
-- **Evidence for ranking:** The paper combines three subject areas and reports explicit formulas for a family of probabilities, proving key parts of a named conjecture rather than only offering numerical evidence.
-- **Claimed result:** For k nested arches on a semi-infinite cylinder of circumference 2N, with k < N, the authors give Pfaffian formulas and prove rational-function dependence on N; the corresponding half-plane probabilities are rational.
-- **Assumptions and setting:** The model is the completely packed O(1) loop representation of critical bond percolation on the square lattice; the stated cylinder result covers k < N.
-- **Caveat:** The paper does not establish Romik's predicted denominator properties or dyadic rationality, and excludes the boundary case N = k. The authors note that Dan Romik separately obtained a full solution with AI, to be reported in forthcoming work; that result is not established by this preprint.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
-- **Themes:** Probability & statistics; Mathematical physics; Combinatorics & discrete mathematics
-
-### 4. [An asymptotic bound for Yuster's independent transversal factor conjecture](https://arxiv.org/abs/2611.26259)
-- **Abstract:** For graphs split into r independent parts with pairwise matching edges, the author proves that a partition into independent transversals exists once the part size is at least r + O(r^(20/21)), for sufficiently large r.
-- **Authors:** Xin Zhang
-- **arXiv:** `2611.26259v1` (published Thu, 19 Nov 2026 15:32:17 UTC; categories: `math.CO`, `cs.DM`)
-- **Evidence for ranking:** The bound gives a near-linear threshold and implies f(r)/r → 1, a direct asymptotic advance on a named factor conjecture; the result also crosses combinatorics and discrete mathematics.
-- **Claimed result:** The author proves f(r) ≤ r + O(r^(20/21)) and hence f(r)/r → 1, where f(r) is the least part-size threshold guaranteeing a partition into independent transversals.
-- **Assumptions and setting:** An [r,n,1]-graph has r independent parts of size n and a matching between each pair; the theorem is for all sufficiently large r and n ≥ ceil(r + A r^(20/21)) for an absolute A > 0.
-- **Caveat:** This is an asymptotic form, not the exact threshold in Yuster's 2021 conjecture; the stated error term remains above the conjectured linear threshold.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
+### 3. [Hypergraph Hajnal-Szemerédi](https://arxiv.org/abs/2611.26513)
+- **Abstract:** The authors improve the minimum-codegree sufficient condition for a perfect clique-factor in uniform hypergraphs, bringing it closer to the known codegree Turán lower bound.
+- **Authors:** Michelle Delcourt, Cicely Henderson, Thomas Lesgourgues, Luke Postle
+- **arXiv:** `2611.26513v1` (published 2026-11-19 17:58:38 UTC; categories: `math.CO`)
+- **Evidence for ranking:** The authors give a concrete improvement to a long-standing general threshold problem and connect it to the known Turán obstruction; the paper also reports a fractional-threshold result and an independent-set lemma.
+- **Claimed result:** The preprint proves that for each `r≥3` there is `c>0` such that, for `q>r` and sufficiently large `n` divisible by `q`, codegree at least `(1−c log^{1−1/(r−1)}(q)/q^(r−1))n` guarantees a `K_q^r`-factor.
+- **Assumptions and setting:** `G` is an `r`-uniform hypergraph; the theorem assumes `r≥3`, `q>r`, `q|n`, and sufficiently large `n`. The bound is sufficient, not asserted to be exact.
+- **Caveat:** The exact threshold remains open: the paper says its upper and lower bounds differ by a factor of order `log^{1/(r−1)} q`; its suggested matching threshold is conjectural, not proved here.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
 - **Themes:** Combinatorics & discrete mathematics
 
-### 5. [Permanence and 144-periodicity of x_{153,3} in the stable stems at the prime three](https://arxiv.org/abs/2611.26621)
-- **Abstract:** The author proves that a class in the 3-primary Adams–Novikov spectral sequence survives and generates a period-144 family, answering both parts of a question by Carrick and Davies.
-- **Authors:** Zheyan Wan
-- **arXiv:** `2611.26621v1` (published Thu, 19 Nov 2026 18:58:55 UTC; categories: `math.AT`)
-- **Evidence for ranking:** The paper answers a stated question with both a permanence result and a periodic family, and supplies a concrete finite-spectrum lift with nonzero detector images.
-- **Claimed result:** The author shows that x_{153,3}, in stable degree 153 and filtration 3, survives and begins a period-144 family; iterates have nonzero image in the specified height-two detector.
-- **Assumptions and setting:** The setting is the 3-primary Adams–Novikov spectral sequence of the sphere; the argument uses comparison with periodic topological modular forms and a bound on possible differential targets.
-- **Caveat:** The detector and permanence argument establish the claimed family in this specific 3-primary setting, not a general periodicity statement for stable stems.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
-- **Themes:** Geometry & topology
+### 4. [A proof of Casselman's comparison conjecture](https://arxiv.org/abs/2611.25367)
+- **Abstract:** The paper compares nilradical homology and related derived functors for the Harish–Chandra module of a representation and its smooth globalization.
+- **Authors:** Junyan Xiao, Jun Yu
+- **arXiv:** `2611.25367v1` (published 2026-11-19 02:04:10 UTC; categories: `math.RT`)
+- **Evidence for ranking:** The authors claim a proof of a named comparison conjecture across standard parabolics, with additional Tor/Ext and closed-image statements; the introduction identifies the broader conjectural context.
+- **Claimed result:** For a real linear reductive group, standard parabolic `Q=LU`, Casselman–Wallach representation `π`, and every `i≥0`, the inclusion of `K`-finite vectors induces a topological `L`-equivariant isomorphism between the globalization of `H_i(u,π_K)` and `H_i(u,π)`; the authors also prove stated Tor/Ext comparisons for augmentation quotients.
+- **Assumptions and setting:** Real linear reductive groups, standard parabolic subgroups, Casselman–Wallach representations, and associated Lie-algebra homology/cohomology and topological modules.
+- **Caveat:** The theorem has this specified real-group and smooth-globalization scope; it does not by itself settle every comparison problem for other canonical globalizations.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
+- **Themes:** Algebra & number theory
 
-### 6. [Algebraic matroids with non-algebraic duals exist in any positive characteristic](https://arxiv.org/abs/2611.26429)
-- **Abstract:** The author constructs, over every positive-characteristic field, an algebraic matroid whose dual is not algebraic over any field, and uses it to separate two classes of polynomial supports.
-- **Authors:** Lukas Grund
-- **arXiv:** `2611.26429v1` (published Thu, 19 Nov 2026 15:04:17 UTC; categories: `math.CO`, `math.AG`)
-- **Evidence for ranking:** The theorem is uniform over every positive characteristic and gives a strong non-realizability conclusion for the dual; its application connects matroid theory with algebraic geometry and volume polynomials.
-- **Claimed result:** The author proves that for every field K of positive characteristic, some matroid algebraic over K has a dual that is not algebraic over any field; realizable volume- and covolume-polynomial support classes consequently differ.
-- **Assumptions and setting:** The construction applies to fields of positive characteristic and uses matroids over one-dimensional algebraic groups.
-- **Caveat:** This is an existence result in positive characteristic; the abstract does not classify such matroids or establish the same separation in characteristic zero.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
-- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
+### 5. [On Romik's rationality conjectures for critical percolation](https://arxiv.org/abs/2611.26570)
+- **Abstract:** For nested boundary-connection events in the critical-percolation `O(1)` loop model, the authors derive Pfaffian formulas and rationality in the cylinder and half-plane limits.
+- **Authors:** Melda Akyazi-Zavadski, Nathanaël Berestycki, Sunil Chhita
+- **arXiv:** `2611.26570v1` (published 2026-11-19 18:36:31 UTC; categories: `math.PR`, `math-ph`, `math.CO`)
+- **Evidence for ranking:** The result is cross-listed across probability, mathematical physics, and combinatorics and proves a precise part of a named conjecture using an explicit bridge through plane partitions, dimers, and Pfaffians.
+- **Claimed result:** The authors show that probabilities of `k` nested arches are rational functions of cylinder circumference for `N>k` and rational in the half-plane limit, establishing key aspects of Romik's conjectures.
+- **Assumptions and setting:** Completely packed `O(1)` loops representing critical square-lattice bond percolation; fixed `k` nested-arch events on a semi-infinite cylinder of circumference `2N`, with `N>k`, and the infinite-circumference half-plane limit.
+- **Caveat:** The proof covers nested-arch events, not all boundary submatchings; the predicted denominator and numerator structure, dyadic rationality, and boundary case `N=k` remain unresolved in the paper.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
+- **Themes:** Probability & statistics; Mathematical physics; Combinatorics & discrete mathematics
 
-### 7. [Remark on Kobayashi's conjecture: a volume Schwarz lemma](https://arxiv.org/abs/2611.26524)
-- **Abstract:** The author reconstructs an AI-assisted proof of Kobayashi's ampleness conjecture for compact Kähler manifolds and proves a volume comparison yielding a general-type criterion under a bounded-indicatrix hypothesis.
-- **Authors:** Shiyu Zhang
-- **arXiv:** `2611.26524v1` (published Thu, 19 Nov 2026 18:00:54 UTC; categories: `math.DG`, `math.CV`)
-- **Evidence for ranking:** The paper spans differential and complex geometry, states a new volume Schwarz lemma and pointwise comparison, and draws a concrete birational-geometric consequence from them.
-- **Claimed result:** The author claims that a compact Kähler manifold with nef canonical bundle and a bounded Kobayashi–Royden indicatrix at some point is of general type, as a consequence of the volume comparison.
-- **Assumptions and setting:** The comparison assumes a Kähler metric with Ric(ω) ≥ −ω and uses intrinsic volume forms associated with Kähler–Einstein metrics on pseudoconvex domains containing the Kobayashi–Royden indicatrix.
-- **Caveat:** The abstract describes an expository reconstruction of an AI-assisted proof plus new results; these remain preprint claims and require expert review, especially for the conjecture-level argument and its hypotheses.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
-- **Themes:** Geometry & topology
+### 6. [The existence of generalized Steiner systems](https://arxiv.org/abs/2611.26226)
+- **Abstract:** The authors prove eventual existence of generalized `q`-ary Steiner systems at the Johnson-type bound for fixed parameters whenever the necessary divisibility conditions hold.
+- **Authors:** Xuan Wang, Shitao Li, Minjia Shi
+- **arXiv:** `2611.26226v1` (published 2026-11-19 15:02:21 UTC; categories: `math.CO`)
+- **Evidence for ranking:** The abstract explicitly answers an existence question posed after a 2025 asymptotic result, upgrading asymptotic attainment to exact attainment for all sufficiently large admissible lengths.
+- **Claimed result:** For fixed `q≥3` and `w>t≥1`, the authors prove a `GS(t,w,n,q)` exists for every sufficiently large `n` satisfying the stated divisibility conditions; distinct codeword supports can be chosen to intersect in at most `t` coordinates.
+- **Assumptions and setting:** Fixed integer parameters `q≥3` and `w>t≥1`; `n` is sufficiently large and satisfies `binom(w−i,t−i) | (q−1)^(t−i) binom(n−i,t−i)` for each `0≤i<t`.
+- **Caveat:** The abstract gives an eventual-existence theorem, not an explicit effective threshold for `n` or a practical construction algorithm.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
+- **Themes:** Combinatorics & discrete mathematics
 
-### 8. [Generic arm separation for planar percolation models](https://arxiv.org/abs/2611.26458)
-- **Abstract:** The authors give a model-independent exploration approach to arm separation for planar percolation and apply it to obtain a strong arm-separation result for critical planar FK percolation.
-- **Authors:** Loïc Gassmann, Ioan Manolescu, Maran Mohanarangan
-- **arXiv:** `2611.26458v1` (published Thu, 19 Nov 2026 17:22:05 UTC; categories: `math.PR`, `math-ph`)
-- **Evidence for ranking:** It provides a reusable method across planar models and a specific critical FK application, while linking probability with mathematical physics.
-- **Claimed result:** The authors prove a generic arm-separation statement for arbitrary planar percolation models by exploring conditioned configurations so exposed arms are revealed with positive probability, then derive strong separation for critical planar FK percolation.
-- **Assumptions and setting:** The method concerns planar models and polychromatic arm events; the application is critical planar FK percolation.
-- **Caveat:** Arm separation is an input to other conclusions such as quasi-multiplicativity and exponent identification; this paper's abstract does not claim those consequences follow without additional hypotheses and estimates.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
+### 7. [Dynamical edge universality and the Airy$_β$ line ensemble](https://arxiv.org/abs/2611.25364)
+- **Abstract:** The authors prove convergence of rescaled edge trajectories to the Airy$_β$ line ensemble for three families of interacting-particle systems from general non-equilibrium initial data under a regular-edge condition.
+- **Authors:** Jiaoyang Huang, Shengjing Xu, Yulei Xu
+- **arXiv:** `2611.25364v1` (published 2026-11-19 02:02:08 UTC; categories: `math.PR`, `math-ph`)
+- **Evidence for ranking:** It treats three model families and every `β>0`, and is cross-listed in probability and mathematical physics; the abstract states a multi-time convergence claim rather than a single-time limit.
+- **Claimed result:** For each fixed `k`, after the stated edge and time rescalings, the top `k` particle trajectories converge jointly in distribution to the top `k` curves of the Airy$_β$ line ensemble.
+- **Assumptions and setting:** `β`-Dyson Brownian motion with analytic potential, weighted `β`-corners processes, and a class of discrete-time Markov chains; general non-equilibrium initial data and a regular square-root limiting-density edge.
+- **Caveat:** The theorem is limited to the three model classes and regular square-root edges described; it does not assert universality at singular edges or for arbitrary interacting systems.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
 - **Themes:** Probability & statistics; Mathematical physics
 
-### 9. [Nondegeneracy and uniqueness of ground states of the Schrödinger equation with Neumann conditions in a weakly nonlocal regime](https://arxiv.org/abs/2611.26428)
-- **Abstract:** For a fractional Schrödinger equation in a half-space with nonlocal Neumann conditions and fractional order close to two, the authors prove ground-state nondegeneracy and uniqueness up to tangential translation and sign.
-- **Authors:** Serena Dipierro, María Medina, Enrico Valdinoci
-- **arXiv:** `2611.26428v1` (published Thu, 19 Nov 2026 17:07:10 UTC; categories: `math.AP`)
-- **Evidence for ranking:** It addresses a less-studied nonlocal Neumann half-space setting and derives both a linearized-kernel characterization and uniqueness, rather than only existence.
-- **Claimed result:** The authors prove that the only solutions of the linearized equation are tangential derivatives of the ground state and conclude uniqueness up to tangential translations and sign.
-- **Assumptions and setting:** The equation is driven by a fractional Laplacian of order 2s with s close to 1, in a half-space under nonlocal Neumann conditions.
-- **Caveat:** The theorem is restricted to the weakly nonlocal regime (s close to 1); the abstract gives no explicit numerical range for s.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
+### 8. [Proof of Stanley's Conjecture on the Leading Ehrhart Coefficients of the Birkhoff Polytope](https://arxiv.org/abs/2611.25973)
+- **Abstract:** For each fixed nonnegative `k`, the authors establish the asymptotic ratio of the coefficient `c(n,k)` to the leading Ehrhart coefficient of the `n×n` Birkhoff polytope, confirming Stanley's conjecture.
+- **Authors:** Jiahang Liu, Jinlong Tang
+- **arXiv:** `2611.25973v1` (published 2026-11-19 11:56:24 UTC; categories: `math.CO`)
+- **Evidence for ranking:** A precise conjecture confirmation with an explicit asymptotic formula makes this a checkable result signal rather than a title-only claim.
+- **Claimed result:** The authors prove `c(n,k)/c(n,0) ~ n^(3k)/(2^k k!)` as `n→∞` for every fixed nonnegative integer `k`.
+- **Assumptions and setting:** Ehrhart polynomial of the `n×n` Birkhoff polytope; `k` is fixed while `n` tends to infinity.
+- **Caveat:** This is a fixed-`k` asymptotic statement, not an exact formula for finite `n` or a result uniform over growing `k`.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
+- **Themes:** Combinatorics & discrete mathematics
+
+### 9. [The rational points of the non-split Cartan modular curve of level 121](https://arxiv.org/abs/2611.25183)
+- **Abstract:** The author determines all rational points on the genus-511 level-121 non-split Cartan modular curve and relates this case to Galois images of non-CM elliptic curves over `Q`.
+- **Authors:** Manvir Jaswal
+- **arXiv:** `2611.25183v1` (published 2026-11-18 21:07:06 UTC; categories: `math.NT`, `math.AG`)
+- **Evidence for ranking:** The paper cross-lists number theory and algebraic geometry and reports an exact rational-point classification for a high-genus curve, addressing a specified level case of a published conjecture.
+- **Claimed result:** The author claims that `X_ns^+(121)` has exactly seven rational points, all CM; together with the cited theorem of Rouse, Sutherland, and Zureick-Brown, this determines the 11-adic Galois images for non-CM elliptic curves over `Q`.
+- **Assumptions and setting:** Rational points on the normalizer of a non-split Cartan modular curve at level `121`, of genus `511`; the Galois-image consequence is for non-CM elliptic curves over `Q`.
+- **Caveat:** The result resolves the level-121 case only; it relies on specialized quadratic-Chabauty and Hecke-intersection arguments and does not classify all levels.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
+- **Themes:** Algebra & number theory; Geometry & topology
+
+### 10. [Infinitely Many Plasma Echo Cascades and Sobolev Norm Divergence at the Gevrey-3 Threshold](https://arxiv.org/abs/2611.25540)
+- **Abstract:** The author constructs a global confined Vlasov–Poisson solution with infinitely many nonlinear plasma-echo cascades, producing Sobolev norm divergence despite decay of macroscopic fields.
+- **Authors:** Yue Luo
+- **arXiv:** `2611.25540v1` (published 2026-11-19 05:43:52 UTC; categories: `math.AP`)
+- **Evidence for ranking:** The abstract describes a constructed instability at a stated critical regularity scale, while also specifying scattering and field decay, making the contrast mathematically concrete.
+- **Claimed result:** Near a fixed homogeneous Penrose-stable equilibrium, for every sufficiently small `ε`, the author constructs a real, neutral global solution with nonnegative distribution, initial size `O(ε)` in Gevrey-3 radius `λ₀≈ε^(1/3)`, and `||f(t)||_{H^1000_{z,v}}→∞` as `t→∞`, although the kinetic profile scatters in a lower Sobolev topology and density and electric field decay.
+- **Assumptions and setting:** Confined Vlasov–Poisson system near a fixed homogeneous Penrose-stable equilibrium; small perturbations at the amplitude-dependent Gevrey-3 radius specified in the abstract.
+- **Caveat:** This is a constructed solution in a particular confined model and norm; it does not establish the same instability for general equilibria or Vlasov–Poisson settings.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
 - **Themes:** Analysis & PDE
 
-### 10. [Paper2Lean: Agentic Autoformalization of Mathematical Research Papers at Scale](https://arxiv.org/abs/2611.26272)
-- **Abstract:** The authors introduce an agentic pipeline for turning mathematical research papers into Lean projects and report 20 optimization papers formalized into compilable projects, followed by human semantic review and repair.
-- **Authors:** Yifan Bai, Yantao Li, Jian Yu, Jingwei Liang
-- **arXiv:** `2611.26272v1` (published Thu, 19 Nov 2026 15:39:43 UTC; categories: `math.OC`)
-- **Evidence for ranking:** It reports a paper-level evaluation with 20 projects and a public dataset of 494 Lean files and 110,910 lines, making the reproducible artifact a concrete signal beyond the framework description.
-- **Claimed result:** The authors report that all 20 generated projects compile without proof placeholders; after human review and semantic repair, the OptPaper-20 corpus has 20 corrected formalizations, all passing clean builds.
-- **Assumptions and setting:** Evaluation uses 20 mathematical optimization papers, mathlib, and a shared library of supporting results; the corrected corpus is publicly linked by the authors.
-- **Caveat:** Compilation checks formal proof terms, not whether the formalized statements faithfully capture each source paper; the reported corpus required human review and semantic repair, as the authors acknowledge.
-- **Announcement type:** new submission, announcement batch Fri, 20 Nov 2026
-- **Themes:** Optimization & control; Machine learning theory
+### 11. [Permanence and 144-periodicity of $x_{153,3}$ in the stable stems at the prime three](https://arxiv.org/abs/2611.26621)
+- **Abstract:** The author shows that a specified class in the 3-primary Adams–Novikov spectral sequence survives and generates a period-144 family in stable homotopy, answering a question of Carrick and Davies.
+- **Authors:** Zheyan Wan
+- **arXiv:** `2611.26621v1` (published 2026-11-19 18:58:55 UTC; categories: `math.AT`)
+- **Evidence for ranking:** The result directly answers both parts of a named question and identifies a periodic family, a concrete signal within algebraic topology rather than evidence of broad attention.
+- **Claimed result:** The author proves permanence of `x_{153,3}` and the existence of a period-144 family, with iterates detected nontrivially at height two.
+- **Assumptions and setting:** The 3-primary Adams–Novikov spectral sequence of the sphere; the class is in stable degree 153 and filtration 3.
+- **Caveat:** This establishes a family from one specified class at the prime three; it does not imply periodicity for other classes or primes.
+- **Announcement type:** new submission, announcement-batch date 2026-11-20
+- **Themes:** Geometry & topology
 
 ## Trending Research Themes
 
-- **Sharp quantitative bounds across distinct areas:** the moment-curve decoupling result, exact topological-overlap constants, and near-linear independent-transversal threshold each sharpen a quantitative frontier, but use different methods and should not be read as one shared technical trend. ([Jeong–Oh](https://arxiv.org/abs/2611.26581), [Norin](https://arxiv.org/abs/2611.26229), [Zhang](https://arxiv.org/abs/2611.26259))
-- **Exact structure in critical percolation:** one paper uses TSSCPP enumeration, dimers, and Pfaffian formulas to prove rationality for nested-arch probabilities; another develops a general exploration method for arm separation and applies it to critical FK percolation. These are complementary but distinct approaches. ([Akyazi-Zavadski–Berestycki–Chhita](https://arxiv.org/abs/2611.26570), [Gassmann–Manolescu–Mohanarangan](https://arxiv.org/abs/2611.26458))
-- **Structural algebra and topology:** a 3-primary periodic family in stable homotopy and positive-characteristic matroids with non-algebraic duals are isolated, high-specificity structural results, not evidence of a broad shared method. ([Wan](https://arxiv.org/abs/2611.26621), [Grund](https://arxiv.org/abs/2611.26429))
-- **AI-assisted mathematics and proof formalization:** the topological-overlap paper reports AI-assisted discovery and links a Lean formalization; Paper2Lean evaluates whole-paper formalization at scale. These two papers are a notable intersection of mathematical research and AI/formal methods, but are isolated signals in this daily sample. ([Norin](https://arxiv.org/abs/2611.26229), [Bai et al.](https://arxiv.org/abs/2611.26272))
+- **Sharp estimates and extremal structure:** The moment-curve decoupling theorem (1), exact overlap constant (2), and hypergraph factor threshold (3) each sharpen a frontier, but by different methods; this is a cluster of results, not evidence of a shared technique.
+- **Conjecture-oriented combinatorics:** Hypergraph clique factors (3), generalized Steiner systems (6), and Ehrhart coefficients of the Birkhoff polytope (8) all translate structural constraints into existence or asymptotic theorems. The specific problems and proof methods differ.
+- **Probability and mathematical physics at two scales:** The percolation paper (5) uses exact enumeration/Pfaffian structure for finite boundary events and their limit; the edge-universality paper (7) proves multi-time scaling limits for interacting particles. Both bridge probability and mathematical physics, but their techniques are distinct.
+- **Other isolated signals:** Casselman's globalization comparison (4), the modular-curve classification (9), the plasma-echo construction (10), and the stable-stem family (11) are substantial results in different specialties; this single batch does not establish broader field-wide shifts.
 
 ## Open Problems and Research Directions
 
-- **Author-stated open points:** the percolation paper leaves Romik's denominator properties and dyadic-rationality claims unresolved in its proved results, and its cylinder theorem excludes N = k. The authors also report that Dan Romik has a separate AI-assisted full solution forthcoming; that reported work is not verified here. A concrete follow-up is to establish the denominator formula uniformly, including the boundary case, and compare it with the forthcoming argument. ([Akyazi-Zavadski–Berestycki–Chhita](https://arxiv.org/abs/2611.26570))
-- **Remaining conjecture gap:** the independent-transversal result proves f(r) ≤ r + O(r^(20/21)), implying f(r)/r → 1, but does not reach Yuster's stated exact threshold. Improving the error term or identifying extremal examples would test how close the asymptotic result is to the original conjecture. ([Zhang](https://arxiv.org/abs/2611.26259))
-- **Scope extension (synthesis):** the ground-state theorem is limited to s close to 1 and a half-space with nonlocal Neumann conditions. One follow-up is to determine an explicit admissible s-range and test whether the kernel/uniqueness conclusion persists for broader domains or farther from the local limit. ([Dipierro–Medina–Valdinoci](https://arxiv.org/abs/2611.26428))
-- **Formal verification follow-up (synthesis):** compare the linked Lean formalization for topological overlap with the final preprint line by line, since the paper says it was built from an earlier draft; the same audit principle applies to semantic correspondence in Paper2Lean's optimization corpus. ([Norin](https://arxiv.org/abs/2611.26229), [Bai et al.](https://arxiv.org/abs/2611.26272))
+- **Open problem (authors, paper 3):** The hypergraph-factor upper bound remains within a factor of order `log^{1/(r−1)} q` of the lower-bound scale. The authors suggest a sharper matching threshold and note that analogous minimum `d`-degree thresholds remain to be studied.
+- **Open problems (authors, paper 5):** The prescribed numerator/denominator in the cylinder conjecture and dyadic rationality in the half-plane remain unproved for nested arches; the boundary case `N=k` is not covered. The paper also gives conjectures for extending the rational-function identity to that boundary and for the exact dyadic denominator.
+- **Research direction (synthesis, papers 3 and 6):** For hypergraph factors, pursue sharper lower bounds or constructions that close the logarithmic gap; for generalized Steiner systems, seek effective bounds on the first admissible `n` and more explicit constructions. These would test the limits of the stated asymptotic existence theorems.
+- **Research direction (synthesis, paper 7):** Test whether the Airy$_β$ trajectory limit persists at non-regular or singular edges, or in additional particle-system classes; the current result assumes a regular square-root edge.
+- **Research direction (synthesis, paper 8):** Determine whether Stanley's fixed-`k` coefficient asymptotic admits controlled lower-order terms or a range where `k` grows with `n`; neither is claimed in the abstract.
 
 ## Takeaway
 
-The day's strongest mathematical signals are precise estimates and explicit structure: a conjecture-completing decoupling result, an exact overlap constant, and sharp progress on percolation probabilities and transversal factors. Several claims are substantial but appear as fresh preprints with little independent attention data, so this is a curated map of promising results—not a measured popularity leaderboard or a substitute for expert proof review.
+This batch has several unusually concrete author-claimed results: an all-dimensional decoupling conjecture resolution, an exact topological-overlap constant, and a substantially sharper hypergraph-factor threshold. These are mathematical-significance signals, not measurements of reader attention; citation and independent-discussion evidence remains too sparse for a popularity ranking.
 
 ## Method and sources
 
-- **Window:** daily arXiv Mathematics announcement batch for Friday, 20 November 2026; exact date range 2026-11-20 to 2026-11-20. The selected papers are new v1 submissions; their first-submission timestamps are recorded individually above, and their announcement batch is dated 20 November.
-- **Snapshot:** 2026-11-20 17:18:01 UTC.
-- **Coverage:** traversed the full `math` recent listing for the 20 November batch (405 entries); preserved each selected paper's primary and cross-list categories. Verified all ten selected records against their arXiv abstract pages and read the abstracts. Also inspected introductions/main-result material for the three leading papers.
-- **Inference:** arXiv supplies no official trending chart. The order weights concrete mathematical claims, named conjecture progress, scope/cross-listing, and linked reproducibility artifacts. Semantic Scholar citation evidence was not usable for these just-announced papers, and no independent expert-discussion signal was established in the checks; therefore the order is “notable recent papers,” not measured popularity. Citation totals are not presented as gains during this window.
-- **Sources:** [arXiv Mathematics recent listing](https://arxiv.org/list/math/recent); linked arXiv abstract pages above; [Lean formalization for topological overlap](https://github.com/snorin239/SharpTopologicalOverlap); [Paper2Lean/OptPaper repository](https://github.com/TTony2019/OptPaper).
+- **Window:** Daily; selected batch date 2026-11-20, start 2026-11-20 and end 2026-11-20. This is the prior announcement batch available at the snapshot: Saturday 2026-11-21, with Friday 2026-11-20 the newest batch on the Mathematics recent listing.
+- **Snapshot:** 2026-11-21 17:25:12 UTC.
+- **Coverage:** Full first Mathematics recent-listing batch (405 entries) traversed; arXiv `math.*` categories retained, with neighboring-category papers included only when cross-listed in `math.*`. Abstract pages were checked for all eleven selected papers. Introduction/main-results sections were inspected for the first three.
+- **Inference:** arXiv supplies no official trending chart. Recent submissions provide little time for citation momentum; the ordering prioritizes concrete conjecture/threshold claims, breadth of mathematical relevance, and cross-listing where applicable, with recency only as context. Search results did not verify independent expert/seminar discussion for the selected set. The Semantic Scholar citation batch returned no usable records, so no citation totals are reported. The configured generic page-extraction backend was unavailable; official arXiv pages were retrieved directly.
+- **Sources:** [Mathematics recent listing](https://arxiv.org/list/math/recent); [moment-curve estimates](https://arxiv.org/abs/2611.26581); [topological overlap](https://arxiv.org/abs/2611.26229); [hypergraph Hajnal-Szemerédi](https://arxiv.org/abs/2611.26513); [Casselman comparison](https://arxiv.org/abs/2611.25367); [Romik/percolation](https://arxiv.org/abs/2611.26570); [generalized Steiner systems](https://arxiv.org/abs/2611.26226); [dynamical edge universality](https://arxiv.org/abs/2611.25364); [Stanley's conjecture](https://arxiv.org/abs/2611.25973); [level-121 modular curve](https://arxiv.org/abs/2611.25183); [plasma echoes](https://arxiv.org/abs/2611.25540); [stable stems](https://arxiv.org/abs/2611.26621).

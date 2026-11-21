@@ -1,0 +1,455 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "arxiv",
+  "category": "bio",
+  "window": "daily",
+  "arxiv_window": {
+    "start": "2026-11-18T19:00:00Z",
+    "end": "2026-11-19T19:00:00Z",
+    "announced": "2026-11-20T01:00:00Z",
+    "announcement_date": "2026-11-19"
+  },
+  "categories": [
+    "q-bio.BM",
+    "q-bio.GN",
+    "q-bio.MN",
+    "q-bio.SC",
+    "q-bio.CB",
+    "q-bio.TO",
+    "q-bio.QM",
+    "cs.BI",
+    "physics.med-ph"
+  ],
+  "generated_at": "2026-11-21T21:07:35Z",
+  "sources": {
+    "arxiv": {
+      "status": "ok",
+      "count": 12
+    },
+    "huggingface": {
+      "status": "ok",
+      "count": 141
+    },
+    "hacker_news": {
+      "status": "ok",
+      "count": 35
+    },
+    "arxiv_lookup": {
+      "status": "ok",
+      "count": 175
+    },
+    "semantic_scholar": {
+      "status": "ok",
+      "count": 12
+    }
+  },
+  "weights": {
+    "hf_upvotes": 3.0,
+    "hn_points": 1.5,
+    "hn_comments": 1.0,
+    "citations": 2.0,
+    "influential_citations": 1.0,
+    "code_stars": 0.5,
+    "cross_lists": 0.25
+  },
+  "pool_size": 12,
+  "with_attention": 1,
+  "candidates": [
+    {
+      "arxiv_id": "2611.26111",
+      "version": "1",
+      "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
+      "authors": [
+        "Stefan Martin",
+        "Jakob Schattenfroh",
+        "Patrick Schuenke",
+        "Felix Frederik Zimmermann",
+        "Ingolf Sack",
+        "Christoph Kolbitsch",
+        "Andreas Kofler"
+      ],
+      "published": "2026-11-19T13:39:46Z",
+      "updated": "2026-11-19T13:39:46Z",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26111",
+      "comment": "13 pages (incl. cover page), 6 figures, 2 tables. Accepted version of the article published in IEEE Transactions on Biomedical Engineering. Please cite the published version (DOI: 10.1109/TBME.2026.3666306). Code: https://github.com/Stef-Martin/E2E-MRE",
+      "abstract": "Objective: Magnetic Resonance Elastography (MRE) is a non-invasive imaging technique for mapping biomechanical properties of in vivo tissue, including shear wave speed (SWS), but involves intrinsically slow data acquisition and an ill-posed wave inversion. Instead of relying on handcrafted image priors, we propose a data-driven approach jointly combining image reconstruction and MRE inversion for robust SWS estimation from undersampled k-space data. Methods: Our physics-informed reconstruction framework comprises two blocks: a model-based neural network (NN)-regularized reconstruction module and a phase-gradient inversion (k-MDEV) calculating SWS from the reconstructed images. Concatenating both blocks yields an end-to-end trainable method to estimate SWS directly from measured k-space data. We evaluated the method on retrospectively highly undersampled brain MRE data and compared it to a total variation (TV) minimization-based approach. We assessed the impact of end-to-end training (qualitative images and SWS maps as targets) versus pre-training (qualitative images as targets) and applied the method also to in vivo data. Results: Our approach significantly reduces NRMSE by 30% com",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 0
+        }
+      },
+      "score": 1.886,
+      "score_components": {
+        "citations": 1.386,
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.25145",
+      "version": "1",
+      "title": "Colloquium: Isotopes for medicine and fundamental physics",
+      "authors": [
+        "V. J. Ajith",
+        "Mark G. Raizen"
+      ],
+      "published": "2026-11-18T20:24:17Z",
+      "updated": "2026-11-18T20:24:17Z",
+      "primary_category": "physics.app-ph",
+      "categories": [
+        "physics.app-ph",
+        "physics.atom-ph",
+        "physics.hist-ph",
+        "physics.med-ph",
+        "quant-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25145",
+      "comment": "",
+      "abstract": "Isotopes, variants of elements distinguished by their neutron number, have important applications for medicine and fundamental science. This review explores the historical challenges and new technologies for enriching and detecting isotopes. We motivate the work by challenges posed by three of history's greatest scientists: James Clerk Maxwell's thought experiment on thermodynamics, Ernest Rutherford's practical dilemma in radiochemistry, and Albert Einstein's questions about the probabilistic nature of quantum mechanics. The journey to meet these challenges has catalyzed the development of innovative techniques for isotope separation. These advancements can mitigate the worldwide crisis in the supply of enriched isotopes. We then explore the expected impact of these new technologies on medicine, which include radioisotopes for cancer therapy and stable isotopes as tracers for metabolism. We explain the importance of developing scalable techniques for isotope detection and how it can help with early detection of certain diseases. Finally, we turn to basic science, outlining proposed new tests of quantum mechanics that utilize radioactive atomic clocks to probe the fundamental natur",
+      "signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      }
+    },
+    {
+      "arxiv_id": "2611.26182",
+      "version": "1",
+      "title": "The long-term divergence exponent and the temporal structure of step-to-step perturbations: a simulation study in two passive walking models",
+      "authors": [
+        "Philippe Terrier"
+      ],
+      "published": "2026-11-19T14:34:32Z",
+      "updated": "2026-11-19T14:34:32Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "nlin.CD",
+        "physics.bio-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26182",
+      "comment": "49 pages, 6 figures, 2 tables. Includes appendices (2 tables) and supplementary material (1 figure, 8 tables). Code, results and scripts: https://doi.org/10.5281/zenodo.24365284",
+      "abstract": "Purpose. Divergence exponents are used to assess the local dynamic stability of gait. Human experiments have related the long-term exponent ($λ_L$) to the complexity of gait fluctuations. Model studies used perturbations without controlled temporal structure. The question was whether $λ_L$ responds to the temporal structure of perturbations in walkers without neuromuscular control. Methods. Two passive walkers, M1 (pilot) and M2 (exploratory), received step-to-step perturbations of five amplitudes ($σ$) and nine temporal structures (ARFIMA parameter $d$), and human stride series of free and metronome walking. Results. At constant amplitude, $λ_L$ increased with $d$ in both models. It was higher with free series than with metronome series or with surrogates. It did not follow $σ$ in M1 and followed $σ$ in M2. Its double dissociation from the short-term exponent was supported in M1 only. In a descriptive analysis, the condition means of $λ_L$ correlated with the scaling exponent of the step durations ($r = 0.980$ in M1 and 0.906 in M2). Conclusion. In two passive walkers with fixed mechanics, $λ_L$ followed the temporal structure of the perturbations; its specificity depended on the ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.25491",
+      "version": "1",
+      "title": "Dynamical Variational Theory of Stochastic Reaction Networks",
+      "authors": [
+        "Moshir Harsh",
+        "Peter Sollich"
+      ],
+      "published": "2026-11-19T04:26:42Z",
+      "updated": "2026-11-19T04:26:42Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "q-bio.MN",
+        "q-bio.PE"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25491",
+      "comment": "25 pages, 9 figures",
+      "abstract": "Discrete stochastic population dynamics describe systems ranging from biochemical reaction networks and gene regulation to epidemic spreading, ecology, and population genetics, where finite populations generate strong intrinsic fluctuations. Predicting their dynamics, including mean populations, fluctuations, time-lagged correlations, response functions, and steady states, remains challenging: the chemical master equation admits no general analytical solution, numerical solutions scale poorly with system size, and standard approximations fail at low copy numbers. Using a field-theoretic representation of the reaction dynamics, we develop a dynamical variational approximation for stochastic reaction networks based on the Plefka expansion from spin-glass physics. For reaction systems with general stoichiometry and time-dependent rates, the expansion yields tractable non-Markovian effective dynamics with self-consistent memory. We further introduce a generalized self-consistent bubble resummation that provides closed predictions for means, correlations, and response functions. The formulation applies broadly to discrete stochastic population dynamics on networks, and we provide a nume",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.26159",
+      "version": "1",
+      "title": "When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification",
+      "authors": [
+        "Yekai Shen",
+        "Yuqian Wang",
+        "Zishun Liao",
+        "Rongsheng Wang",
+        "Wenting Chen",
+        "S. Kevin Zhou",
+        "Qingsong Yao"
+      ],
+      "published": "2026-11-19T14:15:07Z",
+      "updated": "2026-11-19T14:15:07Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26159",
+      "comment": "accepted by IEEE BIBM 2026",
+      "abstract": "Pathology foundation models supply strong representations for whole-slide image classification, yet the confidence attached to their predictions remains hard to trust. Prevailing uncertainty estimators act within a single feature space and thereby overlook the uncertainty that the choice of foundation-model representation itself induces. This work introduces CALIFUSE, a calibration-oriented framework that fuses several pathology foundation models for the specific purpose of uncertainty estimation. Departing from accuracy-driven fusion, CALIFUSE reads representational heterogeneity across encoders as an explicit confidence cue. Slide-level decision consensus is coupled with chunk-level evidence agreement quantified through Jensen-Shannon divergence, so that both prediction stability and fine-grained evidence consistency inform the estimate. Foundation-model encoders stay frozen. A task-specific nnMIL classifier is still trained for each FM; CALIFUSE then estimates confidence at inference without training an extra fusion module. Evaluated on seven WSI classification tasks under several foundation-model combinations, the framework sharpens calibration, misclassification detection, and",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.26142",
+      "version": "1",
+      "title": "Transition Dynamics Matter: Hidden Markov Scoring of Epileptogenic Channels in SEEG",
+      "authors": [
+        "Giulia Tacconi",
+        "Federico Mason",
+        "Lorenzo Ferri",
+        "Elena Pasini",
+        "Lidia Di Vito",
+        "Matteo Martinoni",
+        "Lara Alvisi",
+        "Anna Scarabello",
+        "Luca Zanuttini",
+        "Francesca Bisulli",
+        "Andrea Zanella"
+      ],
+      "published": "2026-11-19T13:58:28Z",
+      "updated": "2026-11-19T13:58:28Z",
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26142",
+      "comment": "",
+      "abstract": "Stereo-electroencephalography (SEEG) represents the most effective technique for the detection of the Epileptogenic Zone (EZ) in drug-resistant epilepsy. This procedure produces a multi-dimensional signal with hundreds of components, named channels, each associated with a different brain location. In this work, we propose a joint Hidden Markov Model (HMM), in which each SEEG channel is described by a latent Markov chain, with states shared across the network and channel-specific transition probabilities. Accordingly, we develop a detection algorithm that identifies the channels belonging to the EZ by quantifying, through the Kullback-Leibler divergence, the difference between their transition probabilities in the inter-ictal period and at seizure onset. We evaluate our framework in SEEG recordings from 30 patients with drug-resistant epilepsy and compare it with a benchmark that operates in the same observation space but does not consider a latent-state structure. Compared against medically validated EZ definitions, our study shows that modeling channel-specific temporal transitions can improve EZ localization and offer a data-driven framework to investigate the latent dynamics und",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.25584",
+      "version": "1",
+      "title": "An Explainable and Scalable Hierarchical Tensor Framework for Integrating Multi-Omics and Digital Pathomics",
+      "authors": [
+        "Ahmad Hussein",
+        "Ali Anaissi",
+        "Mukesh Prasad",
+        "Ali Braytee"
+      ],
+      "published": "2026-11-19T06:27:17Z",
+      "updated": "2026-11-19T06:27:17Z",
+      "primary_category": "q-bio.GN",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25584",
+      "comment": "",
+      "abstract": "Background: Precision oncology requires integration of heterogeneous molecular and pathology data, yet many fusion models offer limited biologically grounded interpretability and struggle with missing modalities. Methods: We present Hierarchical Interpretable Tensor Fusion (HIT-Fuse), integrating six modalities: somatic copy number variation, DNA methylation, RNA sequencing, microRNA expression, RPPA protein abundance, and vision transformer-derived pathomics across four TCGA cohorts (glioma, lung adenocarcinoma, breast, and kidney cancer). Modality-specific autoencoders compress high-dimensional inputs, followed by two-stage CP tensor decomposition. Missing latent modalities are reconstructed using clinical covariates and observed omics to expand cohorts and retrain downstream models. A mathematical traceback mechanism enables global and local xAI attributions. Results: HIT-Fuse identifies distinct latent subgroups with significant survival stratification in glioma, breast, and kidney cohorts, both with complete and reconstructed modalities. Cohort expansion yields cohort-specific gains, including a 56.4% relative increase in weighted F1 for glioma. Biological validation against D",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.25422",
+      "version": "1",
+      "title": "From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs",
+      "authors": [
+        "Huixin Zhan",
+        "Jason H. Moore"
+      ],
+      "published": "2026-11-19T03:02:19Z",
+      "updated": "2026-11-19T03:02:19Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25422",
+      "comment": "",
+      "abstract": "Genomic foundation models provide variant-level evidence, but connecting that evidence to phenotype hypotheses requires accounting for uncertainty throughout structured reasoning. We introduce an uncertainty-conditioned path-energy framework that converts sequence predictions and calibrated predictive uncertainty into explicit distributions over graph-supported phenotype hypotheses, without patient-level phenotype supervision. An interpretable learned energy scores admissible gene--disease--phenotype routes, query uncertainty controls the target temperature, and path probabilities are aggregated into phenotype hypotheses. This formulation makes evidence quality an explicit determinant of hypothesis breadth while retaining traceable multi-path support. Exact normalization over enumerable candidate sets provides a reference for evaluating a Hastings-corrected learned revision operator. On AlzKB and Hetionet, phenotype-level entropy tracks upstream uncertainty, with Spearman correlations of 0.951 and 0.878, respectively; ablations identify the contribution of uncertainty conditioning. In masked-edge recovery, the model exceeds chance and degree-matched probability-permutation controls",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.26551",
+      "version": "1",
+      "title": "GraphEP: A Calibrated Data System and Benchmark for Learning Cardiac Electrophysiology",
+      "authors": [
+        "Matteo Baldan",
+        "Chiara D'Ercoli",
+        "James Rowbottom",
+        "Pietro Liò",
+        "Stefania Fresca"
+      ],
+      "published": "2026-11-19T18:23:10Z",
+      "updated": "2026-11-19T18:23:10Z",
+      "primary_category": "q-bio.TO",
+      "categories": [
+        "q-bio.TO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26551",
+      "comment": "10 pages, 4 figures,AIDaR 2026 neurips workshop",
+      "abstract": "High-fidelity simulations generate spatiotemporal data that are difficult to obtain experimentally, yet their outputs are rarely ready for scientific machine learning. Cardiac electrophysiology (EP) exemplifies this challenge: data reside on anatomy-dependent volumetric meshes, propagation follows anisotropic material fields, and relevant events span multiple temporal scales. We introduce GraphEP, a calibrated data system that converts cardiac meshes and simulation protocols into compact, graph-native trajectories of full-field transmembrane potential. GraphEP includes 732 left-ventricular simulations across 20 anatomies, with healthy and scarred substrates of varying severity and multiple pacing configurations. Each sample provides geometry, tissue and material features, stimulation, connectivity, derived activation targets, and provenance in PyTorch Geometric format. We benchmark four inductive biases for predicting transmembrane potential Vm(t): local message passing, global neural operators, multi-scale hierarchical graph transformers (HGT), and physiology-informed models. The latter include HGT-Lag, which separates activation timing from action-potential morphology, and the st",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.25525",
+      "version": "1",
+      "title": "Ab-initio cryo-EM reconstruction from moments of denoised images",
+      "authors": [
+        "Yunpeng Shi",
+        "Amit Singer",
+        "Yuguan Wang",
+        "Andy Zhang"
+      ],
+      "published": "2026-11-19T05:26:45Z",
+      "updated": "2026-11-19T05:26:45Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25525",
+      "comment": "",
+      "abstract": "In single-particle cryo-electron microscopy (cryo-EM), high-resolution three-dimensional (3-D) refinement requires a reliable ab-initio model to converge to the correct structure. Both refinement and existing ab-initio methods estimate the orientations of the particle images together with the 3-D structure, which can be slow for large and noisy datasets. We present a method of moments approach that bypasses orientation estimation and recovers a 3-D ab-initio model from the first three moments of denoised images. On experimental datasets, our method produces ab-initio models rapidly and successfully initializes high-resolution refinement. This is the first successful application of method-of-moments-based ab-initio modeling to experimental datasets without assuming a uniform distribution of orientations.",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.25260",
+      "version": "1",
+      "title": "Towards consensus on practical probabilistic evaluation metrics for clinical decision making in radiotherapy",
+      "authors": [
+        "Jenneke I. de Jong",
+        "Steven J. M. Habraken",
+        "Erik W. Korevaar",
+        "Mirko Unipan",
+        "Esther Kneepkens",
+        "Gloria Vilches Freixas",
+        "Yvonne L. B. Klaver",
+        "Michiel Kroesen",
+        "Alejandra Méndez Romero",
+        "Edwin Oldehinkel",
+        "Stephanie Peeters",
+        "Roel J. H. M. Steenbakkers"
+      ],
+      "published": "2026-11-18T22:44:24Z",
+      "updated": "2026-11-18T22:44:24Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25260",
+      "comment": "",
+      "abstract": "Introduction: The main aim of this paper is to identify clinically feasible probabilistic evaluation approaches for radiotherapy and to assess whether they can support clinical decision making better than current robustness evaluation approaches. To this end, we calibrate probabilistic clinical goals and identify evaluation metrics with a team of medical physics experts and apply these to three patient cohorts. Methods: Sixty intensity-modulated proton therapy plans from three Dutch proton centers were included: 20 neuro-oncological, 20 head-and-neck, and 20 breast cancer cases. Probabilistic evaluation was performed using polynomial chaos expansion with 10,000 simulated fractionated treatments per case. Volumetric and dosimetric CTV goals were calibrated at a 90% probability level. Selected probabilistic evaluation metrics were applied to representative patient cases and eight radiation oncologists participated in semi-structured interviews addressing preferred metrics and probability levels. Results: The calibrated volumetric goals were V0.95Dpres = 99.95%, 99.80% and 99.54% at a 90% probability level for the neuro-oncological, head-and-neck, and breast cohorts, respectively. The",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.25076",
+      "version": "1",
+      "title": "ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features",
+      "authors": [
+        "Nate Somers",
+        "Kento A. Abeywardane",
+        "Connor W. Coley",
+        "Masha Elkin"
+      ],
+      "published": "2026-11-18T19:17:58Z",
+      "updated": "2026-11-18T19:17:58Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25076",
+      "comment": "",
+      "abstract": "Three-dimensional (3D) molecular similarity scoring and alignment are widely employed in ligand-based virtual screening and molecular design, and are increasingly used for training and evaluating machine learning models. Existing open-source methods utilize various molecular representations spanning shape, electrostatics, pharmacophores, and hybrid representations, but their implementations as independent software packages with distinct application programming interfaces (APIs), optimizers, and limited GPU support make them difficult to compare, combine, or extend. Here, we develop ShEPhERD-score into a unified, modular platform for differentiable 3D molecular similarity scoring and alignment by combining diverse molecular representations with high-performance Numba CPU and Triton GPU kernels to support both large-scale library screening and pairwise similarity workflows. In matched comparisons with open-source 3D similarity tools on the DUDE-Z virtual screening benchmark, ShEPhERD-score performed comparably or better in eight of nine cases. Across the scoring modes in ShEPhERD-score, throughput ranges from 17,800 to 1.03 million alignments/second for ten-million-conformer librarie",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    }
+  ],
+  "notes": [
+    "Scores are log1p-damped weighted sums of the listed signals; zero means no external attention was found, not that the paper is unimportant.",
+    "The pool is the arXiv listing for the window (capped) plus window papers discussed on Hugging Face or Hacker News; it is not exhaustive for very large categories."
+  ]
+}

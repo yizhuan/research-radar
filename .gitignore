@@ -1,2 +1,10 @@
 github-curated
 text
+# Agent scratch output and third-party documents must never be published.
+scratch_*
+*.html
+*.pdf
+*.txt
+*.py
+*.log
+.env*

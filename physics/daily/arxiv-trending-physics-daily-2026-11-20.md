@@ -1,121 +1,160 @@
-# arXiv Trending Physics — Friday, 20 November 2026
+# arXiv Physics — Daily notable papers, Friday 20 November 2026
 
-Today’s arXiv Physics-group daily batch: 341 distinct papers across the configured physics archives, with submissions dated 19 November UTC; eight are selected below. This is a notable-paper selection rather than a measured popularity chart: arXiv publishes no official trending ranking, and these papers are too new for meaningful citation momentum. The ordering is inferred from concrete results, cross-listing, datasets, and publication or release signals. Spoken agenda: FRB measurements from burst catalogs to cosmology, unusually large astronomical surveys, and new tools for superfluid and collision physics.
+The latest arXiv Physics announcement batch available today (Saturday 21 November) is Friday, 20 November: 11 papers are selected below. The main pattern is better inference from sparse or complicated data—from gamma-ray pulsars and fast radio bursts to wide-field surveys and finite-density QCD. Spoken agenda: first transient discoveries and their caveats, then new survey and particle-physics tools, and finally early-Universe explanations for JWST’s little red dots. This is an inferred ordering, not an official arXiv trending chart; Semantic Scholar currently records zero citations and influential citations for every selected paper, so popularity evidence is especially limited and the ranking leans on concrete results, publication or collaboration signals, and reusable datasets/methods.
 
-Snapshot: 2026-11-20 17:27 UTC. The current batch is the 20 November announcement.
+Window: daily announcement batch dated 2026-11-20 (the most recent batch, not a Saturday batch). Snapshot: 2026-11-21T17:35:17Z. All selected entries are v1 new submissions in that batch; their arXiv first-publication timestamps fall on 19 November UTC.
 
 ## Top papers (ranked)
 
-### 1. [First $\Omega_{\rm m}-w$ Measurement Using Only Fast Radio Burst Observations](https://arxiv.org/abs/2611.25312)
-- **Abstract:** The authors combine a cosmology-dependent matter-spectrum emulator and electron model to infer $\Omega_m$ and $w$ from dispersion measures of 125 localized FRBs, obtaining broad FRB-only constraints and a positive parameter degeneracy.
-- **Authors:** Yi-Ying Wang, Shi-Jie Gao, Chi Zhang, Yi-Zhong Fan
-- **arXiv:** `2611.25312v1` (published 2026-11-19 00:21:56 UTC; categories: `astro-ph.CO`, `astro-ph.HE`)
-- **Evidence for ranking:** Cross-listed across cosmology and high-energy astrophysics; reports the first simultaneous FRB-only $\Omega_m$–$w$ inference with a specified sample and uncertainties. Ranking reflects the concrete result and cross-field relevance, not measured reader attention.
-- **Claimed result:** The authors infer $\Omega_m=0.33^{+0.10}_{-0.11}$ and $w=-0.80^{+0.28}_{-0.38}$ in flat $w$CDM, with an $\Omega_m$–$w$ degeneracy opposite to that from Type Ia supernovae.
-- **Evidence type:** observational; likelihood analysis of 125 localized FRBs at $0.105\le z\le2.148$, using an emulator-based model for cosmic dispersion-measure mean and variance.
-- **Caveat:** The authors say the broad posterior extends beyond the emulator’s validated training range; the electron model fixes feedback-related calibrations, and the fit also adopts a BBN prior and fixed primordial-spectrum and neutrino parameters.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
-- **Themes:** Cosmology & gravitation; Astrophysics; Computational & data methods
-
-### 2. [FAST Burst-Cluster Catalog of FRB 20240114A](https://arxiv.org/abs/2611.25348)
-- **Abstract:** The authors present a catalog of 13,261 burst clusters, 19,037 bursts, and 29,026 sub-bursts from a 495-day FAST monitoring campaign, reporting temporal and spectral patterns including a rising dispersion measure.
-- **Authors:** Long-Xuan Zhang, Ya Zeng, Tong-Lun Wang, Jun-Yi Shen, Ying-Ze Shan, et al.
-- **arXiv:** `2611.25348v1` (published 2026-11-19 01:40:14 UTC; categories: `astro-ph.HE`)
-- **Evidence for ranking:** A large, reusable FAST catalog is linked to a public Science Data Bank dataset (DOI: [10.57760/sciencedb.fastro.00013](https://doi.org/10.57760/sciencedb.fastro.00013)); the paper also reports quantified multi-timescale behavior from 99 observing sessions.
-- **Claimed result:** The authors report a manually refined DM increase of $1.29\pm0.11\,\mathrm{pc\,cm^{-3}\,yr^{-1}}$, downward-to-upward sub-burst drift of about 9.4:1, and inter-cluster intervals broadly consistent with a rate-variable Poisson process.
-- **Evidence type:** observational; FAST L-band observations over 99 sessions (58.83 hours), with burst and cluster identification and statistical analysis.
-- **Caveat:** This is one repeating source, and the authors note substantial scatter in energy-related trends; the catalog’s clustering and manual DM refinement are analysis choices that should be compared across sources and methods.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
+### 1. [Gamma-Ray Pulsar Discovery Using a Lattice-Based Method](https://arxiv.org/abs/2611.26425)
+- **Abstract:** Using a high-dimensional lattice search on 15 years of Fermi-LAT data, the authors report the first gamma-ray pulsar found with this method, PSR J1622−7204, at 261 Hz, with about ten CPU hours of search time.
+- **Authors:** Daniel Pook-Kolb, Dotan Gazith, Colin J. Clark, Erik Agrell, Barak Zackay, Bruce Allen
+- **arXiv:** `2611.26425v1` (published 2026-11-19T17:03:45Z; categories: `astro-ph.HE` (primary), `astro-ph.IM`)
+- **Evidence for ranking:** The successful Fermi-LAT search is a concrete first demonstration of a new method; the authors compare its roughly ten CPU hours with a previous semicoherent search that failed after about 600 CPU-years. The paper is published in Physical Review Letters (DOI: [10.1103/vlt2-xzgk](https://doi.org/10.1103/vlt2-xzgk)).
+- **Claimed result:** The authors identify an isolated 261-Hz gamma-ray pulsar in Fermi-LAT photon data and argue that the search method could make blind searches, including some binary searches, more practical.
+- **Evidence type:** observational; computational lattice search of Fermi-LAT Pass 8 photon arrival times and weights.
+- **Caveat:** The authors estimate success in only about 1% of randomly selected 80-photon subsets; the demonstrated search assumes an isolated pulsar and a simplified pulse profile, and binary-pulsar discovery remains a prospect rather than a demonstrated result.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
 - **Themes:** Astrophysics; Computational & data methods
 
-### 3. [Every galaxy is a radio source: a stellar-mass dependent minimum 150 MHz luminosity identified in the LoTSS Deep Fields](https://arxiv.org/abs/2611.26618)
-- **Abstract:** Using LoTSS Deep Fields radio data and Prospector-derived properties for 113,228 galaxies, the authors find a stellar-mass-dependent minimum radio luminosity and argue that weak accretion can contribute to radio emission otherwise attributed to star formation.
+### 2. [Progress in measurements of the CKM angle γ and charm mixing at LHCb](https://arxiv.org/abs/2611.26449)
+- **Abstract:** The LHCb collaboration combines measurements from 2011–2018 with its first γ measurement using 2024 data, reporting updated precision values for the CKM angle, charm mixing, and CP-violation parameters.
+- **Authors:** LHCb collaboration, R. Aaij, M. Abdelfatah, A. S. W. Abdelmotteleb, C. Abellan Beteta, F. Abudinén, et al.
+- **arXiv:** `2611.26449v1` (published 2026-11-19T17:17:44Z; categories: `hep-ex`)
+- **Evidence for ranking:** A large experimental collaboration presents a simultaneous combination incorporating the first γ result from 2024 data, and links the complete analysis figures and supporting material through its public CERN LHCb analysis page.
+- **Claimed result:** The authors report γ = (63.2 +2.3/−2.2)° modulo 180°, with charm-mixing and CP-violation parameters described as the most precise to date.
+- **Evidence type:** experimental; combined LHCb measurements using 2011–2018 data and the first γ measurement from 2024 data.
+- **Caveat:** The results are a combination rather than a new-physics discovery; the interpretation of CP asymmetries depends on assumptions about charm-decay contributions, and γ is determined modulo 180°.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Particle, nuclear & high-energy physics
+
+### 3. [The gravitational wave candidate S251112cm: near-complete optical coverage with ATLAS, Pan-STARRS and the Vera C. Rubin Observatory](https://arxiv.org/abs/2611.26222)
+- **Abstract:** The authors combine ATLAS, Pan-STARRS, Rubin, and follow-up observations of the subsolar-mass merger candidate S251112cm, finding no convincing optical counterpart and excluding specified kilonova and supernova models over about 80% of the localization volume.
+- **Authors:** A. J. Smith, M. Nicholl, S. J. Smartt, J. H. Gillanders, D. R. Young, et al.
+- **arXiv:** `2611.26222v1` (published 2026-11-19T15:00:35Z; categories: `astro-ph.HE`)
+- **Evidence for ranking:** A multi-survey campaign combines ATLAS, Pan-STARRS, Rubin, and VLT follow-up; the paper quantifies wide-area limits and is submitted to MNRAS. Rubin’s observations were also documented in a public GCN circular.
+- **Claimed result:** The authors find no convincing counterpart and report that the combined Pan-STARRS and Rubin observations exclude AT 2017gfo-like kilonova and SN 1998bw-like Type Ic-BL models in roughly 80% of the 90% localization region.
+- **Evidence type:** observational; optical transient searches, survey coverage and limits, host-galaxy distance information, and VLT spectroscopy.
+- **Caveat:** S251112cm is itself a gravitational-wave candidate, not a confirmed merger; the exclusion depends on assumed counterpart light curves and brightness ranges, and some residual candidates lack distances. The result is not evidence that no fainter or different counterpart existed.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Astrophysics; Cosmology & gravitation; Instrumentation & detectors
+
+### 4. [False Periodicities in Repeating Fast Radio Bursts Caused by Burst Clustering](https://arxiv.org/abs/2611.25704)
+- **Abstract:** A sliding-window search and waiting-time-preserving randomizations of four active repeaters show that burst clustering can reproduce apparent short-period candidates, leaving no robust evidence for an intrinsic short period in these data.
+- **Authors:** Hao-Tian Lan, Qin Wu, Jia-Wei Luo, Fa-Yin Wang, Zi-Gao Dai
+- **arXiv:** `2611.25704v1` (published 2026-11-19T08:18:23Z; categories: `astro-ph.HE`)
+- **Evidence for ranking:** The paper is accepted for publication in ApJ and directly stress-tests a reported 1.7-second FRB periodicity using both a nonparametric waiting-time randomization and a complementary simulated null model.
+- **Claimed result:** The authors find that candidate periods in four highly active repeating FRBs can arise from non-Poissonian burst clustering and do not establish a coherent rotation period.
+- **Evidence type:** computational; sliding-window and randomized-null analyses of burst times from four repeating FRB sources, plus rotation-modulated aftershock-sequence simulations.
+- **Caveat:** The analysis concerns four highly active repeaters and the tested time ranges; it does not rule out rotation-related periodicity in every FRB source or at all timescales.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Astrophysics; Computational & data methods
+
+### 5. [Every galaxy is a radio source: a stellar-mass dependent minimum 150 MHz luminosity identified in the LoTSS Deep Fields](https://arxiv.org/abs/2611.26618)
+- **Abstract:** Using LoTSS Deep Fields radio data and SED-based properties for 113,228 galaxies, the authors find a stellar-mass-dependent floor in faint 150-MHz emission and interpret it as evidence that weak accretion can contribute to radio luminosity usually associated with star formation.
 - **Authors:** Shravya Shenoy, Daniel J. B. Smith, Martin J. Hardcastle, Soumyadeep Das, Marina I. Arnaudova, et al.
-- **arXiv:** `2611.26618v1` (published 2026-11-19 18:58:31 UTC; categories: `astro-ph.GA`)
-- **Evidence for ranking:** Large LoTSS Deep Fields DR2 sample, a concrete faint-radio result, and the arXiv announcement listing says accepted for publication in MNRAS.
-- **Claimed result:** The authors report a mass-dependent lower envelope in 150 MHz luminosity, especially for low-specific-SFR galaxies, and find that a star-formation plus weak-AGN model reproduces the observed trends.
-- **Evidence type:** observational; 150 MHz LoTSS Deep Fields DR2 and SFR/mass estimates for 113,228 near-infrared-selected galaxies, modeled with Prospector-based properties.
-- **Caveat:** The weak-AGN explanation is an interpretation supported by a two-component model, not a direct identification of accretion in every galaxy; the inference also depends on the sample and estimated galaxy properties.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
-- **Themes:** Astrophysics; Computational & data methods
+- **arXiv:** `2611.26618v1` (published 2026-11-19T18:58:31Z; categories: `astro-ph.GA`)
+- **Evidence for ranking:** The paper is accepted for publication in MNRAS and analyzes a 113,228-galaxy sample using the LoTSS Deep Fields DR2 150-MHz data, with implications for low-frequency SFR estimates and future LOFAR/SKA surveys.
+- **Claimed result:** The authors report a mass-dependent minimum luminosity around 10²⁰–10²² W Hz⁻¹, independent of SFR in the relevant regime, and find that a two-component star-formation plus weak-AGN model fits the observed trends.
+- **Evidence type:** observational; LoTSS Deep Fields DR2 ELAIS-N1 radio imaging plus Prospector-derived stellar masses and star-formation rates.
+- **Caveat:** Weak accretion is an interpretation of population trends rather than a direct AGN identification for each galaxy; inferred accretion rates depend on scaling relations, and faint residual AGN contamination may remain.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Astrophysics; Instrumentation & detectors; Computational & data methods
 
-### 4. [Local velocimetry for atomic superfluids: from Riemann rarefaction waves to quantized vortices](https://arxiv.org/abs/2611.26608)
-- **Abstract:** The authors use Raman–Bragg matter-wave interferometry to reconstruct a two-dimensional atomic-superfluid velocity field, demonstrating the method on rarefaction flow and quantized vortices.
-- **Authors:** Yansheng Zhang, Yi Jiang, Feiyang Wang, Louis Depaepe, J. Q. Matthew Chia, Christoph Eigen, Gehrig Carlse, Zoran Hadzibabic
-- **arXiv:** `2611.26608v1` (published 2026-11-19 18:56:37 UTC; categories: `cond-mat.quant-gas`, `physics.atom-ph`, `physics.flu-dyn`, `quant-ph`)
-- **Evidence for ranking:** Cross-listed across four archives spanning quantum gases, atomic physics, fluid dynamics, and quantum physics; demonstrates a local measurement method on both flow and vortex cases.
-- **Claimed result:** The authors map the wavefunction phase gradient to interference-fringe displacement and report direct reconstruction of the 2D velocity field, including quantized circulation around vortices.
-- **Evidence type:** experimental; Raman–Bragg matter-wave interferometry on a two-dimensional atomic superfluid.
-- **Caveat:** The abstract demonstrates the method on two canonical examples; broader validation across flow regimes and geometries remains to be established.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
-- **Themes:** Atomic, molecular & optical physics; Plasma & fluid physics
+### 6. [A Surrogate Detector Model for the MINERvA Open Dataset](https://arxiv.org/abs/2611.26271)
+- **Abstract:** The authors train a probabilistic surrogate on MINERvA open simulation data to map neutrino interaction final states into reconstructed observables, including a holdout test and forward-folding of three event generators.
+- **Authors:** Sparshita Dey, Alexander Himmel, David Last, Liang Liu, Pedro Machado, et al.
+- **arXiv:** `2611.26271v1` (published 2026-11-19T15:39:27Z; categories: `hep-ex`)
+- **Evidence for ranking:** It addresses a practical bottleneck for using open neutrino data: the model is tested on withheld two-particle–two-hole interactions and used to compare GENIE, NuWro, and GiBUU predictions in reconstructed space.
+- **Claimed result:** The authors report that the surrogate reproduces the withheld interaction’s reconstructed response within estimated uncertainties and reproduces MINERvA selection efficiencies and purities in an end-to-end analysis.
+- **Evidence type:** computational; probabilistic detector-response model trained on the MINERvA open simulation dataset and applied to inclusive charged-current muon-neutrino data.
+- **Caveat:** Validation is against the available MINERvA simulation and detector-response conditions; the holdout test is not an independent measurement of a new interaction channel or proof of transfer to other detectors.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
 
-### 5. [Measurements of inclusive $J/\psi$ production in Au+Au collisions at $\sqrt{s_{\rm NN}}$ = 14.6, 17.3, 19.6, and 27 GeV with the STAR experiment](https://arxiv.org/abs/2611.25487)
-- **Abstract:** The STAR Collaboration measures inclusive mid-rapidity $J/\psi$ production at four RHIC collision energies and reports centrality and transverse-momentum trends in the nuclear modification factor.
-- **Authors:** The STAR Collaboration
-- **arXiv:** `2611.25487v1` (published 2026-11-19 04:21:38 UTC; categories: `nucl-ex`, `hep-ex`)
-- **Evidence for ranking:** A new experimental measurement at four collision energies, cross-listed in nuclear and high-energy experiment archives, with energy-dependent $R_{AA}$ patterns to compare against transport models.
-- **Claimed result:** The authors report $R_{AA}$ near 0.5 for the 0–20% centrality class and a tendency for $R_{AA}$ to rise with $p_T$ at 14.6–27 GeV; the central-collision yield shows no significant variation within uncertainties across 14.6–200 GeV.
-- **Evidence type:** experimental; STAR detector measurements of Au+Au collisions at the Relativistic Heavy Ion Collider, compared with an interpolated $p+p$ reference.
-- **Caveat:** The paper describes the centrality dependence as a hint and the low-energy $p_T$ behavior as a tendency; interpretation depends on the reference and competing hot- and cold-nuclear-matter effects.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
-- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
-
-### 6. [Star-forming disc galaxies align tangentially with the cosmic tidal field](https://arxiv.org/abs/2611.26593)
-- **Abstract:** Combining SPHEREx spectrophotometry and DESI Legacy Imaging Surveys, the authors report tangential alignment of blue disc galaxies and radial alignment of red spheroids in a 71-million-galaxy catalog.
-- **Authors:** Calum Murray, Roman Paviot, Martin Kilbinger, Cail Daley, Ken Ganga, Michael J. Hudson
-- **arXiv:** `2611.26593v1` (published 2026-11-19 18:48:05 UTC; categories: `astro-ph.CO`, `astro-ph.GA`)
-- **Evidence for ranking:** A 71-million-object catalog supports high-significance alignment measurements in two galaxy populations, with direct relevance to weak-lensing systematics and structure formation.
-- **Claimed result:** The authors report tangential alignment of blue discs at 22.5σ and radial alignment of red spheroids at 65σ; their density-environment tests favor a linear response to the cosmic tidal field over the classic purely quadratic tidal-torque picture.
-- **Evidence type:** observational; full-sky galaxy catalog combining SPHEREx spectrophotometry with DESI Legacy Imaging Surveys.
-- **Caveat:** The measured alignments are not by themselves a causal account of galaxy formation; their interpretation and impact on lensing depend on sample selection and modeling of intrinsic alignments.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
+### 7. [Square Kilometre Array Science Data Challenge 3b: EoR inference](https://arxiv.org/abs/2611.25823)
+- **Abstract:** The authors compare 16 teams’ estimates of the neutral hydrogen fraction using shared simulated SKA Epoch-of-Reionization data and find substantial pipeline-to-pipeline variation, even in a relatively simple noise-only case.
+- **Authors:** O. Bait, A. Bonaldi, M. Bianco, S. K. Giri, G. Mellema, et al.
+- **arXiv:** `2611.25823v1` (published 2026-11-19T09:41:15Z; categories: `astro-ph.CO`)
+- **Evidence for ranking:** This is an SKAO-organized, nine-month community challenge with common simulated datasets and 16 participating teams; the manuscript is submitted to MNRAS and makes method-to-method variability explicit.
+- **Claimed result:** The authors find significant inter-team variation in inferred neutral fractions across redshift bins, while the combined mean estimates remain close to the simulation inputs.
+- **Evidence type:** computational; 16 teams’ inference pipelines applied to simulated SKA data across multiple foreground, power-spectrum, imaging, and reionization scenarios.
+- **Caveat:** The comparison is based on simulations, not observed EoR detections; a close ensemble average can coexist with biased individual methods and does not by itself identify which pipeline is reliable.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
 - **Themes:** Astrophysics; Cosmology & gravitation; Computational & data methods
 
-### 7. [Nonlinearly Causal General-Relativistic Superfluid Hydrodynamics: Simulating Vortex Dynamics in Neutron-Star Interiors](https://arxiv.org/abs/2611.26547)
-- **Abstract:** The authors develop a nonlinear-causal general-relativistic superfluid framework with vortex dynamics, derive well-posedness conditions, and construct a finite-volume scheme tested on relativistic-flow and neutron-star calculations.
-- **Authors:** Yuan Feng, Elias R. Most, Lorenzo Gavassino
-- **arXiv:** `2611.26547v1` (published 2026-11-19 18:20:33 UTC; categories: `astro-ph.HE`, `astro-ph.SR`, `gr-qc`, `physics.flu-dyn`, `physics.plasm-ph`)
-- **Evidence for ranking:** Cross-listed across five astrophysics, gravitation, and fluid/plasma archives; combines mathematical causality and stability results with a numerical method and global neutron-star simulations.
-- **Claimed result:** The authors derive necessary and sufficient conditions for nonlinear causality and strong hyperbolicity, identify short-wavelength ill-posedness in common no-line-tension formulations, and demonstrate stable evolution with a new finite-volume scheme.
-- **Evidence type:** theoretical and computational; analytic conditions, exact/dispersion-relation tests, and general-relativistic two-fluid neutron-star simulations.
-- **Caveat:** The spin-down calculation prescribes vortex release and repinning, so it is a framework demonstration rather than a self-consistent prediction of observed pulsar glitches.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
-- **Themes:** Astrophysics; Cosmology & gravitation; Plasma & fluid physics
+### 8. [First Ωm–w Measurement Using Only Fast Radio Burst Observations](https://arxiv.org/abs/2611.25312)
+- **Abstract:** The authors use a cosmology-dependent matter-spectrum emulator and electron model to infer Ωm and the dark-energy equation-of-state parameter w from 125 localized FRBs without external observational priors on those parameters.
+- **Authors:** Yi-Ying Wang, Shi-Jie Gao, Chi Zhang, Yi-Zhong Fan
+- **arXiv:** `2611.25312v1` (published 2026-11-19T00:21:56Z; categories: `astro-ph.CO` (primary), `astro-ph.HE`)
+- **Evidence for ranking:** The paper cross-lists cosmology and high-energy astrophysics and reports a first FRB-only simultaneous two-parameter inference from a defined sample of 125 localized sources, with explicit uncertainties.
+- **Claimed result:** Under flat wCDM, the authors infer Ωm = 0.33 +0.10/−0.11 and w = −0.80 +0.28/−0.38, with a positive Ωm–w degeneracy that differs from the Type Ia supernova constraint direction.
+- **Evidence type:** observational; statistical inference from localized-FRB dispersion measures, using a nonlinear matter-power-spectrum emulator and an electron-distribution prescription.
+- **Caveat:** The parameter constraints are broad and depend on modeling the cosmic, host, and intervening-electron contributions to dispersion measure; the abstract presents a preprint result, not an independent cosmological consensus.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Cosmology & gravitation; Astrophysics; Computational & data methods
 
-### 8. [Which black hole modes ring freely? Horizon regularity, the forced ringdown transient, and GW250114](https://arxiv.org/abs/2611.26591)
-- **Abstract:** The authors derive horizon-regularity conditions for outgoing perturbations and compare a horizon-mode ringdown model with a conventional overtone fit to GW250114.
-- **Authors:** Jahed Abedi, Niayesh Afshordi
-- **arXiv:** `2611.26591v1` (published 2026-11-19 18:47:24 UTC; categories: `gr-qc`, `astro-ph.HE`, `hep-th`)
-- **Evidence for ranking:** Cross-listed across gravitation, astrophysics, and high-energy theory; applies a concrete alternative ringdown decomposition to GW250114 and reports model-comparison evidence across several start times.
-- **Claimed result:** For a scalar-like perturbation, the authors derive a ladder of horizon-mode frequencies and report Bayes factors of 2–30 favoring a fundamental-plus-first-horizon-mode fit over a fundamental-plus-first-overtone fit in the analyzed time range.
-- **Evidence type:** theoretical and observational; horizon-regularity analysis, GW250114 ringdown fits, and zero-noise injections of numerical-relativity-calibrated waveforms.
-- **Caveat:** The reported model preference is modest and model-dependent; the inferred remnant shift is interpreted by the authors as nonlinear backreaction, not as an independent detection of a new mode or a consensus result.
-- **Announcement type:** new submission, announcement-batch 2026-11-20.
-- **Themes:** Cosmology & gravitation; Astrophysics
+### 9. [Equation of state of hot and dense QCD at the physical point via the complex Langevin equation](https://arxiv.org/abs/2611.25943)
+- **Abstract:** Using complex-Langevin lattice simulations, the authors calculate continuum-extrapolated thermodynamic quantities for physical-point 2+1+1-flavor QCD at high temperature and baryon chemical potential.
+- **Authors:** Michael Mandl, Dénes Sexty, Daniel Unterhuber
+- **arXiv:** `2611.25943v1` (published 2026-11-19T11:29:58Z; categories: `hep-lat` (primary), `hep-ph`, `hep-th`)
+- **Evidence for ranking:** The work is cross-listed across lattice, phenomenological, and theoretical high-energy physics and reports finite-density calculations beyond the range commonly accessible to conventional importance-sampling approaches; it is a contribution to the Lattice 2026 proceedings.
+- **Claimed result:** The authors report baryon density, pressure, sound speed, and adiabatic compressibility for temperatures of 260–600 MeV and baryon chemical potentials up to μB/T ≲ 10.
+- **Evidence type:** computational; 2+1+1-flavor lattice-QCD simulations using the complex Langevin equation, with continuum extrapolation.
+- **Caveat:** The paper marks the largest-chemical-potential region as increasingly unreliable because lattice saturation spoils the continuum fit; the results are also a conference-proceedings contribution rather than an independent method comparison.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
+
+### 10. [The Galaxy Activity, Torus, and Outflow Survey: N. Little Red Dots are not dust deficient: constraints from Seyfert 1 JWST spectra](https://arxiv.org/abs/2611.26483)
+- **Abstract:** The authors scale nearby Seyfert 1 JWST spectra against a stack of 249 high-redshift Little Red Dots and find that a reddened accretion disc plus a low-reprocessing-efficiency torus can reproduce their optical-to-infrared energy balance.
+- **Authors:** C. Ramos Almeida, R. Maiolino, I. García-Bernete, A. Alonso-Herrero, L. Zhang, et al.
+- **arXiv:** `2611.26483v1` (published 2026-11-19T17:40:48Z; categories: `astro-ph.GA`)
+- **Evidence for ranking:** The study uses rest-frame JWST 3–27 μm spectra and a 249-object NIRSpec+MIRI stack; its comment says it is submitted to A&A and that the stacks and models are available from Zenodo.
+- **Claimed result:** The authors argue that the LRDs need not be dust-deficient if their accretion discs are more reddened and their tori reprocess less radiation than local Seyfert 1 tori.
+- **Evidence type:** observational; JWST spectra of nearby Seyfert 1 nuclei compared with stacked NIRSpec/MIRI spectra of high-redshift LRDs and SED modeling.
+- **Caveat:** The inference transfers a local Seyfert template to a heterogeneous high-redshift population; the authors report agreement within a factor of three in near-infrared emission and require different reddening and torus efficiency from local Seyferts.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Astrophysics; Computational & data methods
+
+### 11. [Little Red Dots from Primordial Vacuum Bubbles](https://arxiv.org/abs/2611.26620)
+- **Abstract:** The authors propose that rare vacuum bubbles nucleated during inflation could form 10⁶–10⁸-solar-mass primordial black holes at an abundance compatible with JWST’s Little Red Dots, without invoking the enhanced curvature perturbations excluded by CMB spectral-distortion limits.
+- **Authors:** Miguel Barroso Varela, Katherine Freese, Matthew Kleban, Cameron Norton, Evangelos I. Sfakianakis
+- **arXiv:** `2611.26620v1` (published 2026-11-19T18:58:36Z; categories: `astro-ph.CO` (primary), `gr-qc`, `hep-ph`)
+- **Evidence for ranking:** The paper cross-lists cosmology, gravitation, and particle phenomenology and offers a quantitative early-Universe mechanism for the LRD abundance, including an explicit mass range and accretion constraint; this is a theoretical proposal, not observational evidence.
+- **Claimed result:** The authors show that a narrow, adjustable primordial-black-hole mass spectrum can match the bright-LRD abundance while satisfying the leading accretion constraint in their model.
+- **Evidence type:** theoretical; inflationary vacuum-bubble nucleation and primordial-black-hole abundance/constraint modeling.
+- **Caveat:** The result depends on the assumed inflationary tunneling history, bubble abundance, and black-hole formation model; it does not establish that LRDs are primordial black holes.
+- **Announcement type:** new submission, 2026-11-20 announcement batch.
+- **Themes:** Cosmology & gravitation; Astrophysics; Particle, nuclear & high-energy physics
 
 ## Trending Research Themes
 
-- **FRBs as both a transient-physics dataset and a cosmological probe:** the FAST paper studies the spectral-temporal behavior of one repeater, while the FRB-only cosmology paper uses a separate sample of 125 localized sources to constrain expansion and structure growth. These are complementary uses of FRBs, not independent confirmations of one another.
-- **Large catalogs expose subtle population effects:** LoTSS Deep Fields DR2 probes faint radio emission in 113,228 galaxies, while the SPHEREx–DESI alignment analysis uses 71 million galaxies to measure shape–environment correlations. Both show how survey scale can reveal systematics or population structure relevant to galaxy evolution and cosmological inference.
-- **Superfluid dynamics across laboratory and compact-star settings:** the atomic-gas experiment directly maps 2D velocity and vortices; the neutron-star paper develops a relativistic computational framework for superfluid vortices. The connection is methodological and physical, not a shared experiment or observational confirmation.
+- **Inference under sparse, clustered, or low-signal data:** the lattice method extracts a pulsar from sparse Fermi-LAT photons (2611.26425); FRB burst clustering can mimic periodicity (2611.25704), while a separate analysis uses localized FRBs to constrain cosmology (2611.25312). These are distinct data sets and do not independently confirm one another.
+- **Survey coverage and population-level faint signals:** the S251112cm campaign combines ATLAS, Pan-STARRS, Rubin, and VLT constraints (2611.26222); LoTSS Deep Fields DR2 identifies a faint, stellar-mass-dependent radio floor in ELAIS-N1 (2611.26618). Both illustrate the value of deep/wide coverage, but the objects and measurements are unrelated.
+- **Open and shared data make inference pipelines comparable:** MINERvA’s detector surrogate enables generator-level predictions to be forward-folded into reconstructed observables (2611.26271), while SKAO’s SDC3b compared 16 EoR pipelines on common simulated data (2611.25823). Both expose validation and model-dependence issues rather than removing them.
+- **Little Red Dots are being addressed from both astrophysics and early-Universe theory:** the Seyfert/JWST analysis tests whether dust is actually scarce (2611.26483), whereas the vacuum-bubble paper proposes a primordial-black-hole population that could match LRD abundance (2611.26620). These are complementary questions, not two independent detections of the same physical explanation.
+- **Finite-density QCD (single-paper signal):** complex Langevin is used to extend thermodynamic calculations toward μB/T ≲ 10 (2611.25943); the authors flag lattice-saturation limits, so the high-density results remain a method-development lead rather than a settled equation of state.
 
 ## Open Problems and Research Directions
 
-- **FRB cosmology — author-stated limitation:** the emulator’s finite training domain and fixed electron/feedback calibration leave the broad $\Omega_m$–$w$ posterior partly dependent on extrapolation and baryonic modeling ([2611.25312](https://arxiv.org/abs/2611.25312)). **Research direction (synthesis):** extend matched hydrodynamic and dark-matter-only simulations across the relevant cosmological and feedback parameters, then re-fit a larger localized-FRB sample with selection effects and host-DM uncertainty propagated.
-- **Repeater behavior — author-stated limitation:** the FAST study finds substantial scatter and cautions that morphology–energy–DM relations are tentative for this single object ([2611.25348](https://arxiv.org/abs/2611.25348)). **Research direction (synthesis):** apply consistent cluster definitions and DM refinement to other long-monitored repeaters and continue monitoring FRB 20240114A to test whether its DM slope and activity-linked energetics persist.
-- **Faint radio emission and star-formation calibration:** LoTSS authors infer a weak-accretion contribution from population trends, while noting its relevance to radio-based SFR estimates ([2611.26618](https://arxiv.org/abs/2611.26618)). **Research direction (synthesis):** use deeper resolved radio imaging and independent multiwavelength AGN diagnostics to test how often the low-luminosity component is accretion-powered.
-- **Low-energy charmonium production:** STAR’s reported $p_T$ tendency and near-constant energy-integrated central $R_{AA}$ leave room for competing medium-effect interpretations ([2611.25487](https://arxiv.org/abs/2611.25487)). **Research direction (synthesis):** improve the matched $p+p$ reference and combine finer differential measurements with transport calculations across the beam-energy scan.
-- **Black-hole ringdown decomposition:** the horizon-mode preference for GW250114 is modest and depends on waveform and fit choices ([2611.26591](https://arxiv.org/abs/2611.26591)). **Research direction (synthesis):** test the competing mode prescriptions on independent high-signal-to-noise events and on injections spanning broader source and detector uncertainties.
+- **Pulsar-search robustness — author-stated:** the demonstrated lattice search succeeds for only a small fraction of random photon subsets and uses simplified pulse and isolated-source assumptions (2611.26425). **Research direction (synthesis):** test more pulsars and binary systems, and quantify how outliers, pulse profiles, and orbital motion affect recovery rates.
+- **FRB periodicity — author-stated:** waiting-time-preserving randomizations reproduce candidate structures, so significance must account for burst clustering and the full search procedure (2611.25704). **Research direction (synthesis):** apply the same trial-aware null tests to larger repeater samples and independent observing campaigns.
+- **S251112cm counterpart limits — author-stated:** no convincing counterpart remains and the exclusions apply to selected kilonova/SN models over incomplete localization coverage (2611.26222). **Research direction (synthesis):** improve host-distance completeness and test fainter or more diverse counterpart light curves with coordinated optical and infrared follow-up.
+- **FRB cosmology — author-stated/supported by the analysis design:** the Ωm–w constraints are broad and depend on the modeled dispersion-measure contributions (2611.25312). **Research direction (synthesis):** enlarge the localized-FRB sample and propagate host/foreground-electron uncertainty and selection effects through the cosmological fit.
+- **Low-frequency radio emission — author-stated:** the weak-AGN interpretation and Eddington ratios rely on population models and radio-power scaling relations (2611.26618). **Research direction (synthesis):** use deeper resolved radio imaging and independent multiwavelength AGN indicators to test whether the inferred faint component is accretion-powered.
+- **Neutrino detector-response transfer — author-stated scope:** the MINERvA surrogate has been validated against the open MINERvA simulation and an end-to-end analysis (2611.26271). **Research direction (synthesis):** test similar forward-folded surrogates on additional interaction channels and independent detector samples before transferring the method across experiments.
+- **EoR inference systematics — author-stated:** SDC3b finds appreciable inter-team variation even for relatively simple simulated data (2611.25823). **Research direction (synthesis):** use controlled pipeline ablations to isolate signal, foreground, instrument, and inference choices before interpreting real SKA data.
+- **High-density QCD — author-stated:** continuum extrapolation becomes unreliable where finite-lattice saturation affects the highest chemical potentials (2611.25943). **Research direction (synthesis):** increase lattice resolution and compare with independent finite-density methods to establish the range in which the complex-Langevin equation of state is stable.
+- **Little Red Dot interpretation — author-stated/model-dependent:** the Seyfert-template fit requires different reddening and torus efficiency than local Seyferts, while the primordial-bubble account depends on inflation and black-hole formation assumptions (2611.26483; 2611.26620). **Research direction (synthesis):** obtain broader rest-frame optical-to-mid-infrared spectra and test both classes of models against the same LRD population and selection function.
 
 ## Takeaway
 
-Today’s batch stands out for FRB science linking detailed burst phenomenology with an ambitious, explicitly model-dependent cosmological constraint, alongside large survey datasets and improved physical inference methods. The results are useful leads rather than settled consensus: several are first demonstrations, and the newest work has little independent citation or expert-attention history.
+The batch’s strongest signals are methodological: a lattice search achieved a real gamma-ray pulsar discovery, multi-survey follow-up sharply constrains—but does not identify—a gravitational-wave counterpart, and shared datasets expose where neutrino and EoR inference pipelines remain fragile. The LRD and FRB cosmology papers offer testable interpretations, but each depends on modeling choices and neither should be read as a settled detection or consensus.
 
 ## Method and sources
 
-- **Window:** daily batch announced 2026-11-20; the arXiv listing labels the current batch “Fri, 20 Nov 2026.” The corresponding candidate pool consists of 341 distinct records submitted/published 2026-11-19 UTC. Snapshot time: 2026-11-20 17:27 UTC. No prior announcement batch was substituted.
-- **Archive scope:** checked the arXiv Physics group and `astro-ph`, `cond-mat`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph` archives. The API pool includes 341 unique papers; archive memberships overlap because cross-listed works are counted once. In-scope membership counts: physics 84; astro-ph 74; cond-mat 86; gr-qc 31; hep-ex 12; hep-lat 6; hep-ph 40; hep-th 36; nucl-ex 3; nucl-th 13; quant-ph 73.
-- **Ranking:** inferred from cross-subfield relevance, concrete results and methods, sample or dataset scale, public data release, and publication-status signals; recency only breaks ties. This is a selected set of eight notable papers, not a popularity or readership measurement. No prior-window comparison is made.
-- **Citation and attention checks:** Semantic Scholar did not return usable citation metrics during the check. Targeted searches for five candidate titles surfaced arXiv pages and the FAST dataset, but no independent expert coverage. The checkable external signals used include the FAST Science Data Bank release and the LoTSS announcement’s MNRAS acceptance note. Citation counts are therefore not used to rank these same-day papers.
-- **Sources:** arXiv API category query for 2026-11-19 submissions; arXiv recent-submission listing for the 20 November batch; each linked arXiv abstract page; arXiv HTML full text for the FRB cosmology, FAST catalog, and LoTSS papers; and the Science Data Bank record linked above.
+- **Window and snapshot:** daily announcement batch Friday 2026-11-20; Saturday 2026-11-21 had no newer batch, so the prior Friday batch was used. Snapshot time: 2026-11-21T17:35:17Z. All selected papers are v1 submissions announced in that batch; the arXiv API gives their first-publication timestamps on 2026-11-19 UTC.
+- **Archive coverage:** checked `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`, including the 20 November `recent` and `new` listings. The announcement listings contain 631 archive appearances and 470 versionless unique arXiv IDs after deduplication. Per-archive entries: physics 103; astro-ph 105; cond-mat 116; gr-qc 53; hep-ex 17; hep-lat 8; hep-ph 53; hep-th 61; nucl-ex 4; nucl-th 15; quant-ph 96. Counts overlap through cross-lists.
+- **Ranking:** arXiv supplies no official trending chart. The 11-paper order is inferred from verifiable publication/acceptance or collaboration signals, cross-subfield listing, public data or method releases, and concrete result scope; recency was used only as a tie-breaker. Semantic Scholar’s current citation and influential-citation totals were zero for all 11 selected papers, so no positive citation momentum was available; citation totals are not treated as gains during this batch. This is a notable-paper selection, not a popularity or readership ranking.
+- **Coverage limits:** the configured `web_extract` backend was search-only and could not extract pages. I verified the selected records using arXiv announcement/category listings, arXiv API metadata, and direct arXiv abstract pages; HTML full text was inspected where available for the leading papers and methodological caveats. Independent source checks included the APS journal page for the pulsar paper, CERN’s LHCb public analysis page, the Rubin GCN circular, and indexed publication/challenge records.
+- **Sources:** [arXiv Physics recent listings](https://arxiv.org/list/physics/recent); archive announcement listings for all configured categories; [arXiv API](https://export.arxiv.org/api/query); each paper’s linked arXiv abstract page; [APS/PRL pulsar article](https://doi.org/10.1103/vlt2-xzgk); [LHCb public analysis](https://lhcb-glance.cern.ch/alcm/public/analysis/full-details/6852); [Rubin GCN circular](https://gcn.nasa.gov/circulars/42707); [SKAO SDC3 inference challenge](https://sdc3.skao.int/challenges/inference); [Seyfert/LRD models and stacks](https://doi.org/10.5281/zenodo.24369628).

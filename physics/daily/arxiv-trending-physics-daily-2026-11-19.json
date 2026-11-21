@@ -1,214 +1,372 @@
 {
-  "schema": "arxiv-trending-physics-v1",
-  "category": "physics",
+  "schema": "arxiv-trending-physics/v1",
+  "category": "daily",
   "window": {
-    "type": "daily",
-    "start_date": "2026-11-19",
-    "end_date": "2026-11-19",
+    "start": "2026-11-18",
+    "end": "2026-11-19",
+    "start_utc": "2026-11-18T19:00:00Z",
+    "end_utc": "2026-11-19T19:00:00Z",
     "announcement_batch_date": "2026-11-19",
-    "selected_submission_dates_utc": "2026-11-18",
-    "snapshot_utc": "2026-11-20T01:37:21Z"
+    "daily_prior_batch": true,
+    "snapshot_utc": "2026-11-21T21:26:28Z"
   },
   "date": "2026-11-19",
-  "title": "Daily arXiv physics: 19 November 2026",
+  "title": "arXiv Physics — Daily notable papers, 19 November 2026",
   "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-19.md",
-  "entry_count": 9,
+  "entry_count": 10,
   "entry_noun": "papers",
-  "global_caveat": "This is an inferred ordering, not an official arXiv trending chart; citation evidence is limited for papers only about a day old.",
+  "global_caveat": "arXiv provides no official trending chart. This is an inferred ordering of notable recent papers, not a readership or download ranking. The selected papers have only one or two current Semantic Scholar citations apiece and no matching Hugging Face upvote or Hacker News discussion signals, so popularity evidence is limited. The report intentionally follows the supplied 19 November window; a newer report for the 20 November batch exists.",
   "sections": [
     {
-      "id": "2611.24559",
+      "id": "2611.26587",
       "kind": "paper",
-      "title": "First observation of the Cabibbo-suppressed decay Bc+ to J/psi D*+",
+      "title": "High-Accuracy Neural-Network Quantum States via Randomized Real-Time Dynamics",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2611.24559",
-      "arxiv_id": "2611.24559",
+      "url": "https://arxiv.org/abs/2611.26587",
+      "arxiv_id": "2611.26587",
       "arxiv_version": 1,
-      "published": "2026-11-18T14:58:30Z",
-      "categories": ["hep-ex"],
-      "authors": ["LHCb collaboration", "R. Aaij", "M. Abdelfatah", "A. S. W. Abdelmotteleb", "C. Abellan Beteta", "et al."],
-      "themes": ["Particle, nuclear & high-energy physics", "Instrumentation & detectors"],
-      "abstract": "LHCb reports a 5.4σ observation of the decay in 9 fb−1 of proton-proton data and measures its branching fraction relative to Bc+ to J/psi Ds+ as 0.067 ± 0.016 ± 0.003.",
-      "ranking_evidence": "First observation at 5.4 standard deviations, a measured branching-fraction ratio, and public machine-readable LHCb analysis material.",
-      "claimed_result": "The authors report the first observation and relative branching fraction, with statistical and systematic uncertainties, as a test of two-body Bc decay models.",
-      "evidence_type": "experimental; LHCb proton-proton collision data from 2011 to 2018 totaling 9 fb−1.",
-      "unique_caveat": "The statistical uncertainty (0.016) is substantially larger than the systematic uncertainty (0.003); simulation calibration of reconstruction and selection efficiencies is the leading systematic contribution.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.24559", "https://lhcb-glance.cern.ch/alcm/public/analysis/full-details/6490/"]
+      "published": "2026-11-19T18:45:45Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.dis-nn",
+        "cond-mat.str-el",
+        "physics.comp-ph"
+      ],
+      "authors": [
+        "John M. Martyn",
+        "Rod Rofougaran",
+        "Samuel Stein",
+        "Di Luo"
+      ],
+      "themes": [
+        "Quantum information",
+        "Condensed matter & materials",
+        "Computational & data methods"
+      ],
+      "abstract": "Dynamical averaging evolves a neural-network quantum state or observable in real time to suppress ground-state observable errors quadratically in the state error, demonstrated on non-integrable spin models.",
+      "claimed_result": "The authors prove up-to-quadratic suppression of errors in arbitrary ground-state observables and demonstrate faster convergence and lower correlation-function and magnetization errors in 1D and 2D non-integrable spin models.",
+      "evidence_type": "computational; theoretical error analysis and numerical non-integrable spin-model tests",
+      "unique_caveat": "The Schrödinger-picture method requires real-time state evolution, which can be costly; the cheaper Heisenberg approximation assumes support predominantly on a few low-energy eigenstates and can incur additional errors or instabilities when that assumption fails.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 2.947; Semantic Scholar current citations 2 (score component 2.197), 3 cross-lists (component 0.750); no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.26587"
+      ]
     },
     {
-      "id": "2611.23823",
+      "id": "2611.25031",
       "kind": "paper",
-      "title": "Observation of Exact Mobility-Edge Phases in Two-Dimensional Photonic Quasicrystals",
+      "title": "Numerical Implementation and Tests of the Quadratic Effective Action for Lorentzian Spinfoam Amplitudes",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2611.23823",
-      "arxiv_id": "2611.23823",
+      "url": "https://arxiv.org/abs/2611.25031",
+      "arxiv_id": "2611.25031",
       "arxiv_version": 1,
-      "published": "2026-11-18T04:24:42Z",
-      "categories": ["physics.optics"],
-      "authors": ["Chaohua Wu", "Yingying Shi", "Juan Kang", "Qinglong Zhang", "Shuo Liu", "Gang Chen"],
-      "themes": ["Condensed matter & materials", "Atomic, molecular & optical physics"],
-      "abstract": "The authors derive exact mobility-edge conditions for a decorated two-dimensional Aubry–André quasicrystal and probe extended, localized, and partially localized regimes in photonic waveguide lattices using quench dynamics.",
-      "ranking_evidence": "An analytical mobility-edge prediction is paired with a fabricated photonic-lattice demonstration of energy-dependent localization and a resonant flat-band state.",
-      "claimed_result": "The authors report a route to exact two-dimensional mobility edges and an experimental photonic realization, described as, to their knowledge, the first observation of mobility-edge phases in two dimensions.",
-      "evidence_type": "theoretical and experimental; exact lattice analysis, femtosecond-laser-written photonic waveguides, and quench-propagation measurements.",
-      "unique_caveat": "The experiment is a controlled photonic analogue in a finite engineered lattice, not electronic localization in a material; transfer to other platforms and higher dimensions remains to be tested.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.23823", "https://arxiv.org/html/2611.23823"]
+      "published": "2026-11-18T19:00:03Z",
+      "categories": [
+        "gr-qc",
+        "hep-th"
+      ],
+      "authors": [
+        "Dongxue Qu",
+        "Sean Tobin",
+        "Hongguang Liu",
+        "Muxin Han"
+      ],
+      "themes": [
+        "Cosmology & gravitation",
+        "Computational & data methods"
+      ],
+      "abstract": "The authors implement and numerically test a quadratic effective-action approximation for Lorentzian EPRL spinfoam amplitudes on several triangulations, including a 24-simplex hypercube.",
+      "claimed_result": "The authors report that the quadratic action reproduces the Regge action and its curvature correction in the tested cases, and matches the nonlinear complex-critical-point action through cubic-order remainders for finite edge-length perturbations.",
+      "evidence_type": "computational; Julia implementations tested on double-Δ3 and 1–5 Pachner complexes, a refinement, and a 24-simplex hypercube",
+      "unique_caveat": "The results are a local perturbative expansion around one flat real critical point; other critical points and integration-domain boundary contributions are neglected, as are subleading 1/J terms.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 2.329; Semantic Scholar current citations 1 (component 1.386), 1 influential citation (component 0.693), and 1 cross-list (component 0.250); no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25031"
+      ]
     },
     {
-      "id": "2611.24914",
+      "id": "2611.25013",
       "kind": "paper",
-      "title": "The role of externally-driven density fluctuations in the enhancement of beam spray",
+      "title": "Theory of Particle Scattering on Superconducting Qubits: From Single Devices to Quantum Arrays",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2611.24914",
-      "arxiv_id": "2611.24914",
+      "url": "https://arxiv.org/abs/2611.25013",
+      "arxiv_id": "2611.25013",
       "arxiv_version": 1,
-      "published": "2026-11-18T18:47:57Z",
-      "categories": ["physics.plasm-ph"],
-      "authors": ["Kyle R. McMillen", "Ian D. Min-Roberts", "Russell K. Follett", "Avram L. Milder", "Joseph Katz", "et al."],
-      "themes": ["Plasma & fluid physics", "Instrumentation & detectors"],
-      "abstract": "Experiments show that speckled 351-nm heater beams increase the spray of a separate 1053-nm beam after plasma propagation; modeling attributes the enhancement to long-wavelength plasma-density fluctuations.",
-      "ranking_evidence": "A measured beam-propagation change is paired with physical modeling and propagation simulations; the arXiv comment reports submission to Physical Review Letters.",
-      "claimed_result": "In the OMEGA experiment, the 95%-energy angular spray measure increased from 12.7 mrad in the vacuum reference to 33.8 mrad with heater beams on; modeling and simulations connect the effect to heater-driven plasma fluctuations.",
-      "evidence_type": "experimental and computational; OMEGA heater and probe beams, gas-jet plasma, Thomson-scattering diagnostics, fluctuation modeling, and beam-propagation simulations.",
-      "unique_caveat": "The measurement is specific to the reported laser/plasma geometry; large density-fluctuation amplitudes are model estimates, not an independent direct measurement of the full fluctuation spectrum.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.24914", "https://arxiv.org/pdf/2611.24914"]
+      "published": "2026-11-18T19:00:00Z",
+      "categories": [
+        "hep-ph",
+        "quant-ph"
+      ],
+      "authors": [
+        "Doojin Kim",
+        "Kyoungchul Kong",
+        "Myeonghun Park"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Quantum information"
+      ],
+      "abstract": "The authors model finite-momentum particle scattering from superconducting qubits and project sensitivity to eV–keV bosonic dark matter, including possible collective enhancement in coherent qubit arrays.",
+      "claimed_result": "For a modeled Xmon transmon, the authors find improved projected low-mass sensitivity; independent qubits give a rate proportional to N, while suitably prepared spatially coherent Dicke states can approach N² scaling.",
+      "evidence_type": "theoretical; device-response calculation for a planar Xmon-style transmon and dark-matter sensitivity projections",
+      "unique_caveat": "The sensitivity is projected, not an observed signal; it depends on the modeled device response, and the near-N² collective enhancement requires maintained spatial coherence and suitable Dicke-state preparation.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 2.329; Semantic Scholar current citations 1 (component 1.386), 1 influential citation (component 0.693), and 1 cross-list (component 0.250); no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25013"
+      ]
     },
     {
-      "id": "2611.24937",
+      "id": "2611.25880",
       "kind": "paper",
-      "title": "LEMUR: A Searchable Web Archive of Deep Chandra Images of Galaxies and Galaxy Clusters",
+      "title": "Evolving Decoding Algorithms for Quantum Error Correction",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2611.24937",
-      "arxiv_id": "2611.24937",
+      "url": "https://arxiv.org/abs/2611.25880",
+      "arxiv_id": "2611.25880",
       "arxiv_version": 1,
-      "published": "2026-11-18T18:59:03Z",
-      "categories": ["astro-ph.GA", "astro-ph.IM"],
-      "authors": ["Carter L. Rhea", "Julie Hlavacek-Larrondo", "Marine Prunier", "Hyunseop Choi", "Megan Donahue", "Christian Thibeault"],
-      "themes": ["Astrophysics", "Computational & data methods"],
-      "abstract": "LEMUR releases uniformly reduced Chandra images for 2,569 galaxies and clusters, using 5,505 ACIS observations and 138.8 Ms of exposure, with a searchable archive, catalog, and open code.",
-      "ranking_evidence": "A large reusable X-ray release is paired with Zenodo tables and open-source processing code; the authors report a 3% broad-band photometry agreement against the Chandra Source Catalog for 275 point sources.",
-      "claimed_result": "The archive provides merged Chandra products and a morphology search; AstroCLIP-nearest cluster pairs share cool-core status in 73% of matches versus 51% by chance.",
-      "evidence_type": "computational and data release; archival Chandra ACIS observations reprocessed with CIAO, plus a searchable web archive, Zenodo tables, and GitHub code.",
-      "unique_caveat": "The authors note incomplete coverage, possible target-grouping errors, residual background, and an approximately 20% soft-band flux underestimate from a single-energy exposure-map approximation; similarity is morphological, not a calibrated physical distance.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.24937", "https://lemur-archive.lemur-xray.workers.dev/", "https://doi.org/10.5281/zenodo.24351915", "https://github.com/crhea93/Lemur"]
+      "published": "2026-11-19T10:36:21Z",
+      "categories": [
+        "quant-ph",
+        "cs.AI",
+        "cs.MA",
+        "cs.NE"
+      ],
+      "authors": [
+        "Eduardo Dueñez",
+        "Edgar Said Hernandez Sanchez",
+        "Edgar A. Duéñez-Guzmán",
+        "Suzanne Sadedin"
+      ],
+      "themes": [
+        "Quantum information",
+        "Computational & data methods"
+      ],
+      "abstract": "Grammatical evolution over a decoder-specific language finds quantum LDPC belief-propagation decoders with improved time–logical-error trade-offs.",
+      "claimed_result": "The authors report evolved decoders that reduce logical errors or runtime relative to specified BP+OSD baselines and generalize across tested noise levels, code sizes, and round counts.",
+      "evidence_type": "computational; decoder simulations on quantum low-density-parity-check codes using a DSL and grammatical evolution",
+      "unique_caveat": "The reported gains are benchmark results in the tested code and noise settings; the preprint does not demonstrate real-time deployment on a quantum processor.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 2.136; Semantic Scholar current citations 1 (component 1.386), 3 cross-lists (component 0.750); the arXiv comment notes NeurIPS 2026 EvoRobust Workshop acceptance; no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25880"
+      ]
     },
     {
-      "id": "2611.24673",
+      "id": "2611.26111",
       "kind": "paper",
-      "title": "Fluctuations and Correlations of Conserved Charges in Isobar Collisions at sqrt(sNN)=200 GeV with the STAR Detector",
+      "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2611.24673",
-      "arxiv_id": "2611.24673",
+      "url": "https://arxiv.org/abs/2611.26111",
+      "arxiv_id": "2611.26111",
       "arxiv_version": 1,
-      "published": "2026-11-18T16:10:29Z",
-      "categories": ["nucl-ex"],
-      "authors": ["Changfeng Li", "Hanwen Feng"],
-      "themes": ["Particle, nuclear & high-energy physics", "Computational & data methods"],
-      "abstract": "STAR measures second-order cumulants and correlations of conserved-charge proxies in Ru+Ru and Zr+Zr collisions; the results are compared with lattice-QCD and UrQMD calculations.",
-      "ranking_evidence": "Collider measurements are directly compared with lattice-QCD and transport calculations; a DOI and a related STAR conference presentation are available.",
-      "claimed_result": "Peripheral-collision ratios follow the ordering predicted by lattice QCD for matter in an external magnetic field; UrQMD gives a similar hierarchy but underpredicts the peripheral-to-central enhancement.",
-      "evidence_type": "experimental; STAR Ru+Ru and Zr+Zr collisions at sqrt(sNN)=200 GeV, compared with lattice-QCD and UrQMD calculations.",
-      "unique_caveat": "Agreement with the magnetic-field-motivated lattice ordering does not isolate magnetic-field effects from other sources of centrality dependence; the authors call for further quantitative study.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.24673", "https://doi.org/10.1016/j.jspc.2026.100505", "https://drupal.star.bnl.gov/STAR/presentations/SQM-2026/Fluctuations-and-Correlations-Conserved-Charges-Isobar-Collisions-sqrtsNN-2-1"]
+      "published": "2026-11-19T13:39:46Z",
+      "categories": [
+        "eess.IV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Stefan Martin",
+        "Jakob Schattenfroh",
+        "Patrick Schuenke",
+        "Felix Frederik Zimmermann",
+        "Ingolf Sack",
+        "Christoph Kolbitsch",
+        "Andreas Kofler"
+      ],
+      "themes": [
+        "Instrumentation & detectors",
+        "Computational & data methods"
+      ],
+      "abstract": "An end-to-end physics-informed neural reconstruction and inversion method estimates tissue shear-wave speed directly from undersampled MR elastography k-space data.",
+      "claimed_result": "The authors report a 30% lower NRMSE than total-variation minimization and accurate SWS mapping at acceleration factors up to 19, with evaluation on retrospective brain data and in-vivo data.",
+      "evidence_type": "computational; retrospective highly undersampled brain MR elastography data, comparison with total-variation minimization, and in-vivo evaluation",
+      "unique_caveat": "The reported comparison is tied to the studied data and reconstruction setup; broader prospective and multi-site validation is not established in the abstract.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 1.886; Semantic Scholar current citations 1 (component 1.386), 2 cross-lists (component 0.500); the arXiv comment gives a journal DOI and public code; no matching Hugging Face upvote or Hacker News discussion signal.",
+      "doi": "10.1109/TBME.2026.3666306",
+      "journal_ref": "IEEE Transactions on Biomedical Engineering (2026), early access",
+      "refs": [
+        "https://arxiv.org/abs/2611.26111",
+        "https://doi.org/10.1109/TBME.2026.3666306",
+        "https://github.com/Stef-Martin/E2E-MRE"
+      ]
     },
     {
-      "id": "2611.23711",
+      "id": "2611.26425",
       "kind": "paper",
-      "title": "Producing μBq/m3-level low-226Ra ultrapure water for the Jiangmen Underground Neutrino Observatory",
+      "title": "Gamma-Ray Pulsar Discovery Using a Lattice-Based Method",
       "rank": 6,
-      "url": "https://arxiv.org/abs/2611.23711",
-      "arxiv_id": "2611.23711",
+      "url": "https://arxiv.org/abs/2611.26425",
+      "arxiv_id": "2611.26425",
       "arxiv_version": 1,
-      "published": "2026-11-18T02:10:02Z",
-      "categories": ["physics.ins-det", "hep-ex"],
-      "authors": ["Xi-Ting Xu", "Cong Guo", "Jin-Chang Liu", "Yong-Peng Zhang", "Xiao-Hua Liang", "et al."],
-      "themes": ["Instrumentation & detectors", "Particle, nuclear & high-energy physics"],
-      "abstract": "JUNO reports a sensitive radium assay and a 100-ton-per-hour water process producing water below 4 μBq/m3 of 226Ra, under the detector's 50 μBq/m3 requirement.",
-      "ranking_evidence": "An engineering-scale detector-enabling result reports a quantified assay threshold and production rate; the paper has a journal reference and DOI.",
-      "claimed_result": "Selective ion-exchange resin and membrane separation produced water consistently below 4 μBq/m3 of radium, compared with JUNO's specified limit of 50 μBq/m3.",
-      "evidence_type": "experimental; high-sensitivity radium measurements and operation/validation of the JUNO ultrapure-water purification train at 100 t/h.",
-      "unique_caveat": "Performance is demonstrated for JUNO's specified process and engineering scale; assay sensitivity and site-specific water conditions bound how broadly it transfers.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.23711", "https://doi.org/10.1007/s41365-026-02086-y"]
+      "published": "2026-11-19T17:03:45Z",
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.IM"
+      ],
+      "authors": [
+        "Daniel Pook-Kolb",
+        "Dotan Gazith",
+        "Colin J. Clark",
+        "Erik Agrell",
+        "Barak Zackay",
+        "Bruce Allen"
+      ],
+      "themes": [
+        "Astrophysics",
+        "Computational & data methods",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "A lattice-based search of 15 years of Fermi-LAT data finds the isolated 261-Hz gamma-ray pulsar PSR J1622−7204 using about ten CPU hours.",
+      "claimed_result": "The authors report the first gamma-ray pulsar discovery using their lattice-based method and contrast its roughly ten CPU hours with about 600 CPU-years spent by an earlier semicoherent search that did not find the source.",
+      "evidence_type": "observational; computational lattice search of Fermi-LAT Pass 8 photon-arrival data and source-probability weights",
+      "unique_caveat": "The authors estimate success in only about 1% of random 80-photon subsets; the demonstrated search assumes an isolated pulsar and a simplified pulse profile, while binary-pulsar searches remain prospective.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 1.636; Semantic Scholar current citations 1 (component 1.386) and 1 cross-list (component 0.250); the paper has a Physical Review Letters reference and DOI; no matching Hugging Face upvote or Hacker News discussion signal.",
+      "doi": "10.1103/vlt2-xzgk",
+      "journal_ref": "Phys. Rev. Lett. 137, 211201 (2026)",
+      "refs": [
+        "https://arxiv.org/abs/2611.26425",
+        "https://doi.org/10.1103/vlt2-xzgk"
+      ]
     },
     {
-      "id": "2611.24939",
+      "id": "2611.26574",
       "kind": "paper",
-      "title": "Map-Level Inference of Primordial Gravitational Waves from the CMB with Spherical Neural Networks",
+      "title": "Classical Oracle Separation of QMA from the QCMA Hierarchy and Quantum Cryptography Even When P = QCMA",
       "rank": 7,
-      "url": "https://arxiv.org/abs/2611.24939",
-      "arxiv_id": "2611.24939",
+      "url": "https://arxiv.org/abs/2611.26574",
+      "arxiv_id": "2611.26574",
       "arxiv_version": 1,
-      "published": "2026-11-18T18:59:32Z",
-      "categories": ["astro-ph.CO", "astro-ph.IM"],
-      "authors": ["Anto I. Lonappan", "Adrian E. Bayer", "Brian Keating", "Kam Arnold", "Giuseppe Puglisi", "Ethan O. Nadler"],
-      "themes": ["Cosmology & gravitation", "Computational & data methods"],
-      "abstract": "A spherical graph-convolution network estimates r directly from simulated multifrequency CMB B-mode maps, improving RMSE by 1.3 times and narrowing 68% intervals by 1.2 times versus a matched likelihood in the tested setup.",
-      "ranking_evidence": "Benchmarked against a likelihood on 20,000 simulations with quantified changes in point error and interval width; cross-listed in cosmology and instrumentation.",
-      "claimed_result": "The authors find improved simulated r recovery without explicit power-spectrum estimation or component separation; saliency maps favor deeper sky regions and cleaner frequency channels.",
-      "evidence_type": "computational; spherical graph convolution tested on 20,000 simulated multifrequency CMB maps with lensing, noise, dust, and synchrotron foregrounds.",
-      "unique_caveat": "Both methods inherit foreground assumptions; the authors report failed generalization to a three-dimensional dust model with line-of-sight variation. This is a simulation result, not a detection.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.24939"]
+      "published": "2026-11-19T18:40:14Z",
+      "categories": [
+        "quant-ph",
+        "cs.CR"
+      ],
+      "authors": [
+        "Alper Cakan"
+      ],
+      "themes": [
+        "Quantum information",
+        "Computational & data methods"
+      ],
+      "abstract": "In the query-complexity model, a new codeword-hash-pairs-in-noise problem yields a classical-oracle separation of QMA from the QCMA hierarchy and enables quantum cryptographic primitives in a relativized setting.",
+      "claimed_result": "The author proves an oracle-relative separation in which P, BQP, QCMA, and the QCMA hierarchy coincide while QMA is strictly stronger, and constructs specified quantum cryptographic primitives relative to such an oracle.",
+      "evidence_type": "theoretical; query-complexity proofs in a classical-oracle model",
+      "unique_caveat": "These are relativized complexity-theory results; an oracle separation does not by itself establish the corresponding unrelativized separation or practical cryptographic construction.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 1.636; Semantic Scholar current citations 1 (component 1.386) and 1 cross-list (component 0.250); the arXiv comment notes submission to STOC’27; no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.26574"
+      ]
     },
     {
-      "id": "2611.24664",
+      "id": "2611.25829",
       "kind": "paper",
-      "title": "Rapid Equation of State Inference from Multiprobe Datasets",
+      "title": "Multi-scale dynamics of deep convective self-aggregation. Part II: scale-by-scale budget and mesoscale self-similarity",
       "rank": 8,
-      "url": "https://arxiv.org/abs/2611.24664",
-      "arxiv_id": "2611.24664",
+      "url": "https://arxiv.org/abs/2611.25829",
+      "arxiv_id": "2611.25829",
       "arxiv_version": 1,
-      "published": "2026-11-18T16:01:14Z",
-      "categories": ["astro-ph.HE", "gr-qc"],
-      "authors": ["Tamal RoyChowdhury", "Anarya Ray", "Jolien Creighton", "Shaon Ghosh"],
-      "themes": ["Astrophysics", "Cosmology & gravitation"],
-      "abstract": "A joint analysis of binary-neutron-star gravitational waves, NICER mass-radius data, and massive-pulsar timing infers R1.4=11.93 (+1.02/−0.83) km and Mmax=2.31±0.23 solar masses at 90% credible level.",
-      "ranking_evidence": "Combines three observational channels that probe distinct density regimes and reports numerical posterior constraints; cross-listing connects neutron-star astrophysics and gravitational physics.",
-      "claimed_result": "The authors find that gravitational-wave and NICER data constrain low-to-intermediate densities while massive pulsars constrain high densities; they report no simple mapping between EoS stiffness and Bayesian evidence.",
-      "evidence_type": "observational and computational; Bayesian inference using binary-neutron-star gravitational waves, NICER X-ray mass-radius data, and radio timing of massive pulsars.",
-      "unique_caveat": "Constraints depend on the parameterized equation of state and candidate-model choices; current multimessenger data do not identify a unique microscopic composition.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.24664"]
+      "published": "2026-11-19T09:44:28Z",
+      "categories": [
+        "physics.ao-ph",
+        "physics.flu-dyn"
+      ],
+      "authors": [
+        "Lorenzo Silvestri",
+        "Paolina Bongioannini Cerlini",
+        "Andrea Cimarelli"
+      ],
+      "themes": [
+        "Plasma & fluid physics",
+        "Computational & data methods"
+      ],
+      "abstract": "A scale-by-scale analysis of deep convective self-aggregation finds an inverse energy cascade mediated by mesoscale circulations and a self-similar frozen-moist-static-energy variance scaling.",
+      "claimed_result": "The authors derive a generalized Yaglom relation and report FMSE variance scaling approximately as r^(6/5), with departures below 100 km and below 750 m elevation; horizontal-velocity scaling retains height dependence.",
+      "evidence_type": "theoretical; generalized structure-function and scale-dependent budget analysis of deep convective self-aggregation",
+      "unique_caveat": "The reported power laws break down at small horizontal scales below 100 km and below 750 m, and the velocity scaling retains residual height dependence.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 1.636; Semantic Scholar current citations 1 (component 1.386) and 1 cross-list (component 0.250); no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25829"
+      ]
     },
     {
-      "id": "2611.23667",
+      "id": "2611.25037",
       "kind": "paper",
-      "title": "Simultaneous spectral measurement and programmable filtering on a universal silicon photonic chip",
+      "title": "Topological (in)equivalence encoded in zeros of wavefunction overlaps",
       "rank": 9,
-      "url": "https://arxiv.org/abs/2611.23667",
-      "arxiv_id": "2611.23667",
+      "url": "https://arxiv.org/abs/2611.25037",
+      "arxiv_id": "2611.25037",
       "arxiv_version": 1,
-      "published": "2026-11-18T00:50:21Z",
-      "categories": ["physics.optics"],
-      "authors": ["Yangyang Wan", "Rui Tang", "Kazuhiro Ikeda", "Makoto Okano", "Kasidit Toprasertpong", "Mitsuru Takenaka"],
-      "themes": ["Atomic, molecular & optical physics", "Instrumentation & detectors"],
-      "abstract": "A fabricated silicon photonic chip combines programmable spectral filtering and measurement, demonstrating 0.05-nm resolution over more than 100 nm of bandwidth while measuring eight laser sources.",
-      "ranking_evidence": "A hardware demonstration quantifies bandwidth and resolution and shows filter reconfiguration during measurement.",
-      "claimed_result": "The authors report simultaneous measurement and programmable filtering on one universal linear-optical circuit with dynamic filter reconfiguration.",
-      "evidence_type": "experimental; fabricated silicon photonic chip with two 8×8 programmable unitary circuits, intensity modulators, and eight laser inputs.",
-      "unique_caveat": "The reported performance is from one fabricated prototype; repeatability and long-term stability are not quantified in the abstract checked.",
-      "announcement_type": "new submission; 2026-11-19 announcement batch",
-      "refs": ["https://arxiv.org/abs/2611.23667"]
+      "published": "2026-11-18T19:00:05Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "math-ph"
+      ],
+      "authors": [
+        "Carolina Paiva",
+        "Bruno Mera",
+        "Roni Ilan",
+        "Raquel Queiroz"
+      ],
+      "themes": [
+        "Condensed matter & materials"
+      ],
+      "abstract": "The authors encode relative topology of two-dimensional gapped band structures in phase-winding charges at zeros of the determinant of occupied-state overlaps.",
+      "claimed_result": "For class A, the total zero charge equals the Chern-number difference; for class AII, the parity of charge in half the Brillouin zone gives the relative Z2 invariant, illustrated in Haldane, Kane–Mele, and Qi–Wu–Zhang models.",
+      "evidence_type": "theoretical; topological band-theory derivation and model examples",
+      "unique_caveat": "The construction is developed for gapped band structures in specified symmetry classes; it is a theoretical classification framework, not an experimental measurement of a material.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 1.636; Semantic Scholar current citations 1 (component 1.386) and 1 cross-list (component 0.250); no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25037"
+      ]
+    },
+    {
+      "id": "2611.26518",
+      "kind": "paper",
+      "title": "Hydrodynamic modeling of liquid metal field emitter deformation under combined RF and DC magnetic fields",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.26518",
+      "arxiv_id": "2611.26518",
+      "arxiv_version": 1,
+      "published": "2026-11-19T17:59:22Z",
+      "categories": [
+        "physics.acc-ph"
+      ],
+      "authors": [
+        "Yuan-Zhi Lim",
+        "Juliette Plouin",
+        "Guillaume Ferrand"
+      ],
+      "themes": [
+        "Instrumentation & detectors",
+        "Plasma & fluid physics"
+      ],
+      "abstract": "Hydrodynamic and magnetohydrodynamic simulations examine how combined RF and DC magnetic fields deform a liquid-copper field emitter in accelerator cavities.",
+      "claimed_result": "The authors find in their simulations that sufficiently high local RF electric fields can deform the emitter and potentially eject hot copper droplets into the cavity, a proposed contributor to RF breakdown.",
+      "evidence_type": "computational; COMSOL Navier–Stokes, electromagnetic-field, and level-set simulations of a liquid-copper emitter",
+      "unique_caveat": "The proposed droplet-emission mechanism is simulation-based and has not been established here by direct observation in an operating RF cavity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 1.386; Semantic Scholar current citations 1 (score component 1.386); the arXiv comment says the work was submitted to Physical Review Accelerators and Beams; no matching Hugging Face upvote or Hacker News discussion signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.26518"
+      ]
     }
-  ],
-  "sources": [
-    "https://arxiv.org/list/physics/recent",
-    "https://arxiv.org/list/astro-ph/recent",
-    "https://arxiv.org/list/cond-mat/recent",
-    "https://arxiv.org/list/gr-qc/recent",
-    "https://arxiv.org/list/hep-ex/recent",
-    "https://arxiv.org/list/hep-lat/recent",
-    "https://arxiv.org/list/hep-ph/recent",
-    "https://arxiv.org/list/hep-th/recent",
-    "https://arxiv.org/list/nucl-ex/recent",
-    "https://arxiv.org/list/nucl-th/recent",
-    "https://arxiv.org/list/quant-ph/recent",
-    "https://drupal.star.bnl.gov/STAR/presentations/SQM-2026/Fluctuations-and-Correlations-Conserved-Charges-Isobar-Collisions-sqrtsNN-2-1"
   ]
 }

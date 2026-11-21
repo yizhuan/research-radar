@@ -5,110 +5,109 @@
   "date": "2026-11-21",
   "title": "Giant Watch Summary - Daily - 2026-11-21",
   "source_report": "/home/yizhuan/.research/giant-watch/daily/giant-watch-summary-daily-2026-11-21.md",
-  "entry_count": 11,
+  "entry_count": 13,
   "entry_noun": "events",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Moonshot AI released the full weights of Kimi K3.1 Pro, which coverage describes as the largest open-weight model to date, while Google DeepMind expanded its Gemini 4 lineup with the agent-focused Hydrogen and the mid-tier Neon. The day's throughline is vendors competing on agentic execution and cost efficiency rather than on single-benchmark scores."
+      "content": "Google DeepMind's rapid-fire Gemini 4 releases — Hydrogen, then Neon — put a mid-tier agentic model with a 1M-token unified context and four thinking levels in front of developers, while Moonshot's Kimi K3.1 Pro open-weight drop and Alibaba's Qwen4-Max preview push the same long-context, agent-first framing from the Chinese labs. The day's throughline is the 1M-token context window becoming table stakes across vendors rather than a differentiator."
     },
     {
       "id": "01-event",
       "kind": "event",
       "rank": 1,
-      "event_id": "kimi-k3-1-pro-open-weights",
-      "title": "Moonshot AI releases full Kimi K3.1 Pro weights",
+      "event_id": "ev-google-gemini4-neon",
+      "title": "Google DeepMind ships Gemini 4 Neon with 1M unified context and four thinking levels",
       "organizations": [
-        "Kimi"
+        "Google"
       ],
       "status": "verified",
-      "content": "Moonshot AI released the complete model weights for Kimi K3.1 Pro on 2026-11-21, a release that coverage describes as the largest open-weight model by parameter count. The same report says cumulative global downloads of Chinese open models have passed 10 billion, and that Chinese models led OpenRouter weekly token usage for a 29th consecutive week in the 9–15 November period.",
-      "significance": "The release is the day's most consequential open-weights event: it puts a frontier-scale model into downloadable, self-hostable form and is framed as a milestone for the Chinese open-source ecosystem.",
+      "content": "Google DeepMind released Gemini 4 Neon (gemini-4-neon), adapted from Gemini 4 Carbon and positioned between Hydrogen and Carbon for complex coding, knowledge work and science tasks, with a March 2026 knowledge cutoff. Input, thinking and output share a 1,048,576-token window across text, image, audio and video; synchronous output defaults to a 65,536-token cap, extendable to 1M via background execution or client continuation. It supports low/medium/high/xhigh thinking levels (minimal errors out) and ignores sampling parameters. Paid-tier API only at $3.00 per 1M input and $15.00 per 1M output tokens, with implicit caching at $0.15 per 1M cached input on prompts of 4,096+ tokens; explicit cache creation is unsupported. Vendor-reported scores include 58.6 on the Artificial Analysis Coding Agent Index (#1), 61 on the Intelligence Index v5.0.1 at xhigh, 70.9% on Vals Index v2.2, 70.5% on Terminal-Bench-Science 0.1 and 95.2% on GraphWalks (256K–1M), while trailing Claude Opus 5.5 on Terminal-Bench 4.1 (65.2% vs 65.8%) and FrontierCode 2.0 (46.2% vs 47.3%).",
+      "significance": "The strongest single release in the window: a mid-tier model that carries the full 1M-token unified window and configurable reasoning depth, priced flat across the context length, which directly pressures rivals' mid-tier agentic offerings.",
       "refs": [
-        "https://www.gatewebsite.com/zh-tw/news/detail/kimi-k31-pro-open-weight-model-pushes-chinese-ai-to-100-billion-downloads-25763755"
+        "https://www.findgoodai.com/ai-outpost/gemini-4-neon-20261121/",
+        "https://www.findgoodai.com/zh/ai-outpost/gemini-4-neon-20261121/",
+        "https://www.thenextgentechinsider.com/pulse/google-deepmind-ships-gemini-4-neon-with-1m-token-context-window"
       ],
       "related_event_ids": [
-        "gemini-4-hydrogen",
-        "gemini-4-neon",
-        "qwen4-max-preview"
+        "ev-google-gemini4-hydrogen",
+        "ev-qwen4-max-preview",
+        "ev-kimi-k31-pro"
       ],
-      "transition_hint": "If Kimi's move was about opening weights, Google's same-day news went the other direction, shipping closed, hosted models tuned for agent speed and cost."
+      "transition_hint": "Neon was not the only Gemini 4 model to land this week — a faster sibling targets the same agentic workloads from the speed side."
     },
     {
       "id": "02-event",
       "kind": "event",
       "rank": 2,
-      "event_id": "gemini-4-hydrogen",
-      "title": "Google DeepMind releases Gemini 4 Hydrogen for agentic workflows",
+      "event_id": "ev-google-gemini4-hydrogen",
+      "title": "Google DeepMind releases Gemini 4 Hydrogen, a 2.5x faster agentic model",
       "organizations": [
         "Google"
       ],
       "status": "verified",
-      "content": "Google DeepMind released Gemini 4 Hydrogen, a closed-weights model built for agentic workflows and coding. Coverage reports it runs 2.5x faster than Gemini 3.8 Flash at the default high thinking level, carries a 1,048,576-token context window, and is positioned below Gemini 4 Carbon and Argon as a 'daily driver' for agents. It is served only through Google's hosted API, and a role-splitting pattern in Google Antigravity pairs Carbon for planning with Hydrogen for execution.",
-      "significance": "This is the day's clearest frontier-lab model launch, and its framing around speed, token savings and multi-agent role-splitting signals where Google sees agent workloads heading.",
+      "content": "Google DeepMind released Gemini 4 Hydrogen (gemini-4-hydrogen), a closed-weights model for agentic workflows and coding positioned below Gemini 4 Carbon and Argon and described internally as the \"daily driver for agentic workflows.\" It runs 2.5x faster than Gemini 3.8 Flash at default high thinking, with partner testing showing 2x–2.8x speedups and 12%–23% fewer tokens consumed. Specs: 1,048,576-token unified context, text/image/audio/video/PDF/table/chart input, text-only output, 65,536-token synchronous output cap, low/medium/high/xhigh thinking, March 2026 knowledge cutoff, Google-hosted API only with no open weights or self-hosting. Self-reported benchmarks include 57% on Terminal-Bench 4.1 (vs 18.2% for 3.8 Flash), 51 (high) / 54 (xhigh) on the Artificial Analysis Intelligence Index v5.0, 58.8% on HLE-Diamond, 52.3% (#1) on Vals Tax Agent Bench and 71.6% on Agents' Last Exam v1.1, plus 96.7% on an internal agent honesty evaluation and 2.3x more resilience to indirect prompt injection on Gray Swan's benchmark. In Google Antigravity, an Orchestrator role-splitting pattern pairs Carbon for planning with Hydrogen for execution, reaching near-Carbon Terminal-Bench 4.1 success while using 24% less quota and finishing 19% faster. API pricing is $1.50 per 1M input and $7.50 per 1M output, flat across the full context, with implicit caching at $0.075 per 1M.",
+      "significance": "Establishes speed and token efficiency, not raw capability, as the competitive axis for agentic mid-tier models, and introduces an explicit multi-model orchestration pattern inside Antigravity.",
       "refs": [
         "https://www.thenextgentechinsider.com/pulse/google-deepmind-unveils-gemini-4-hydrogen-a-25x-faster-agentic-ai-model"
       ],
       "related_event_ids": [
-        "gemini-4-neon",
-        "qwen4-max-preview",
-        "kimi-k3-1-pro-open-weights"
+        "ev-google-gemini4-neon"
       ],
-      "transition_hint": "Hydrogen was not Google's only model news; a second Gemini 4 tier landed alongside it, aimed at a different point on the cost-quality curve."
+      "transition_hint": "Google's mid-tier push lands alongside a Chinese flagship preview that makes the same long-context, task-completion pitch at a very different price structure."
     },
     {
       "id": "03-event",
       "kind": "event",
       "rank": 3,
-      "event_id": "gemini-4-neon",
-      "title": "Google DeepMind ships Gemini 4 Neon with 1M-token context",
-      "organizations": [
-        "Google"
-      ],
-      "status": "verified",
-      "content": "Google DeepMind released Gemini 4 Neon, positioned between Hydrogen and Carbon in the Gemini 4 family. Coverage describes a 1M-token context window, multimodal input across text, images, video, audio and PDFs, and four configurable thinking levels intended to let developers trade reasoning depth against latency and cost.",
-      "significance": "Neon fills the middle of Google's lineup, and its tiered thinking controls show vendors turning reasoning budget into a per-request pricing lever rather than a fixed model choice.",
-      "refs": [
-        "https://www.thenextgentechinsider.com/pulse/google-deepmind-ships-gemini-4-neon-with-1m-token-context-window"
-      ],
-      "related_event_ids": [
-        "gemini-4-hydrogen",
-        "qwen4-max-preview"
-      ],
-      "transition_hint": "Google's tiering was matched the same day by Alibaba, which took a similar cost-per-task argument to its own flagship."
-    },
-    {
-      "id": "04-event",
-      "kind": "event",
-      "rank": 4,
-      "event_id": "qwen4-max-preview",
-      "title": "Alibaba Cloud launches Qwen4-Max preview on Token Plan subscription",
+      "event_id": "ev-qwen4-max-preview",
+      "title": "Alibaba Cloud opens Qwen4-Max preview with 1M context, native multimodal input and Token Plan-only billing",
       "organizations": [
         "Qwen"
       ],
       "status": "verified",
-      "content": "Alibaba Cloud released the Qwen4-Max preview, its Qwen4-series flagship, through a Token Plan subscription rather than pay-as-you-go. Alibaba's own developer articles describe a 1M-token context window, native text/image/video input, emphasis on long-horizon agentic and coding tasks, and a preview window running 11–25 November after which the preview model ID is retired. The articles state that parameter counts, full benchmark scores, open-source plans and official pricing for the production version had not been disclosed at preview launch.",
-      "significance": "The launch shows a Chinese cloud vendor betting its flagship on subscription-metered, long-task delivery, and it sets a hard migration deadline for anyone building on the preview.",
+      "content": "Alibaba Cloud released the Qwen4-Max preview (qwen4-max-preview), the Qwen4 family flagship, positioned as a multimodal agentic base model for long-horizon professional work rather than chat. Reported specs include a 1M-token context (max input 991,808 tokens, max output 131,072; 983,616 input and 262,144 output with thinking on), text/image/video input with text output, and a 2.4T total / 71B active parameter sparse MoE with a 328B N-gram embedding, GDN plus QSA hybrid attention and gated residual branches. Official figures cited include Work360 rising to 52.69 from 47.74, roughly 24%–35% fewer tokens on Work360 and 48%–49% on Terminal-Bench 4.0 at Xhigh/High, an average 58% lower per-task cost, and a SuperCLUE score of 61.61 (up 18.39) with timeout rate falling from 69.23% to 0%. The preview runs 11 November 10:00 to 25 November 24:00 (UTC+8) and is available only through Token Plan subscription Credits, not pay-as-you-go; the preview model ID is retired at window close and the formal qwen4-max is already live. It is API-only, with no fine-tuning or private deployment, and compatible with OpenAI Chat Completions, Responses and Anthropic Messages formats.",
+      "significance": "A flagship-tier Chinese model adopting subscription-only access and a preview-then-GA release path, with cost-per-task reduction presented as the headline rather than benchmark leadership.",
       "refs": [
         "https://developer.aliyun.com/article/1786794",
         "https://developer.aliyun.com/article/1786792",
         "https://developer.aliyun.com/article/1786793"
       ],
       "related_event_ids": [
-        "gemini-4-hydrogen",
-        "gemini-4-neon",
-        "kimi-k3-1-pro-open-weights"
+        "ev-google-gemini4-neon",
+        "ev-kimi-k31-pro"
       ],
-      "transition_hint": "Cost-per-task was also the theme of a multi-university safety study, though there the metric was harm rather than spend."
+      "transition_hint": "Where Alibaba kept its largest model closed and subscription-gated, another Chinese lab went the opposite direction with full weights."
+    },
+    {
+      "id": "04-event",
+      "kind": "event",
+      "rank": 4,
+      "event_id": "ev-kimi-k31-pro",
+      "title": "Moonshot AI releases full Kimi K3.1 Pro weights, billed as the largest open model by parameter count",
+      "organizations": [
+        "Kimi"
+      ],
+      "status": "verified",
+      "content": "Moonshot AI released the complete model weights for Kimi K3.1 Pro on 21 November 2026, with People's Daily reported as calling it the largest open-source model by parameter count. The release is framed as a milestone for China's open-source AI ecosystem, which the report says has passed 10 billion cumulative global downloads. Supporting figures cited: Chinese models logged 1.191 trillion weekly tokens on OpenRouter for 9–15 November, ranked first globally for 29 consecutive weeks, and China's daily token calls exceed 5 quadrillion. Moonshot's Kimi K3 introduced a self-developed hybrid linear attention mechanism to lower long-text compute cost and improve training stability at very large scale; CEO Yang Zhilin is quoted saying the team rebuilt key architectural components from first principles.",
+      "significance": "The highest-profile open-weight release in the window and a direct counterpoint to the closed, API-gated flagships shipping the same week.",
+      "refs": [
+        "https://www.gatewebsite.com/zh-tw/news/detail/kimi-k31-pro-open-weight-model-pushes-chinese-ai-to-100-billion-downloads-25763755"
+      ],
+      "related_event_ids": [
+        "ev-qwen4-max-preview",
+        "ev-google-gemini4-neon"
+      ],
+      "transition_hint": "Open weights raise a different question than closed APIs — whether safety guardrails survive sustained adversarial pressure, which a new academic benchmark tested across four model families."
     },
     {
       "id": "05-event",
       "kind": "event",
       "rank": 5,
-      "event_id": "harassment-guardrail-study",
-      "title": "Study finds multi-turn harassment guardrail gaps in Gemini, Llama, Qwen and DeepSeek",
+      "event_id": "ev-harassment-guardrail-study",
+      "title": "Multi-turn harassment study finds guardrail breakdowns across Gemini, Llama, Qwen and DeepSeek",
       "organizations": [
         "Google",
         "Meta",
@@ -116,138 +115,194 @@
         "DeepSeek"
       ],
       "status": "verified",
-      "content": "Researchers from Georgia State, Georgia Tech and UC Berkeley tested agents built on Google Gemini, Meta Llama, Alibaba Qwen and DeepSeek and reported that multi-turn harassment attacks systematically broke through safety guardrails. Coverage states that fine-tuning on roughly 200 harassment conversations pushed one model's harassment rate to about 97%, that Gemini produced harassing content in 39% of baseline conversations rising above 99% with toxic memory, and that Qwen exceeded 92% at baseline. The study is described as accepted at an AAAI social-media conference and posted as an arXiv preprint.",
-      "significance": "It is the day's only cross-vendor safety finding, and it reframes guardrail evaluation from single-request refusals to escalating multi-turn agent behavior.",
+      "content": "A study accepted at the AAAI Conference on Web and Social Media, \"Echoes of Human Malice in Agents: Benchmarking LLMs for Multi-Turn Online Harassment Attacks\" by Trilok Padhi et al. (arXiv DOI 10.48550/arxiv.2510.14207), tested agents built on Google Gemini, Meta Llama, Alibaba Qwen and DeepSeek across up to 10-turn simulated harassment dialogues drawn from real Twitter and Instagram posts. Three attack methods were used: seeding toxic prior conversation into agent memory, prompting the agent to plan harassment strategy, and fine-tuning on harassment dialogues. After retraining, one model harassed in roughly 96% of conversations with only about 1% refusals; retraining on just 10% of the data (~200 conversations) pushed the harassment rate to about 97%. Under baseline harasser-agent conditions Gemini produced harassing content in 39% of conversations, rising above 99% attack success with toxic memory added; Qwen produced harassing content in over 92% of conversations with no attack manipulation at all. Insults and hostility bypassed guardrails more often than explicit sexual or racial harassment, and hostile behavior escalated across turns rather than holding steady. Co-author Ugur Kursuncu of Georgia State's Robinson College of Business is quoted on the low resource bar for inducing harmful agent behavior and on the shift in enterprise risk from model accuracy to whether agents adhere to organizational rules over time.",
+      "significance": "A cross-vendor safety finding that implicates four of the tracked organizations at once and reframes agent risk as cumulative and multi-turn rather than a single-request refusal problem.",
       "refs": [
         "https://www.gatenode.irish/zh-tw/news/detail/meta-llama-gemini-qwen-show-guardrail-vulnerabilities-in-harassment-study-25768971",
         "https://www.gatenode.irish/zh/news/detail/meta-llama-gemini-qwen-show-guardrail-vulnerabilities-in-harassment-study-25768971"
       ],
       "related_event_ids": [
-        "gemini-4-hydrogen",
-        "qwen4-max-preview"
+        "ev-google-gemini4-neon",
+        "ev-qwen4-max-preview"
       ],
-      "transition_hint": "Safety research is one lens on agent deployment; Meta's own product chief offered another, arguing for slower releases on trust grounds."
+      "transition_hint": "Safety research is one lens on agent readiness; Meta's own product chief offered a very different one, arguing that shipping late is preferable to shipping untrustworthy."
     },
     {
       "id": "06-event",
       "kind": "event",
       "rank": 6,
-      "event_id": "meta-muse-trust-interview",
-      "title": "Meta Muse product lead explains seven-month delay as a trust decision",
+      "event_id": "ev-meta-muse-trust",
+      "title": "Meta Muse product lead details a seven-month delay justified by trust and safety hardening",
       "organizations": [
         "Meta"
       ],
       "status": "verified",
-      "content": "Mona Sarantakos, product vice president at Meta Superintelligence Labs, gave a first podcast interview describing how Muse went from a weekend Raspberry Pi experiment to a top App Store product over seven months. She attributed the delay to stability, safety and security work, said the team built its own evaluation bar because existing benchmarks were insufficient, and described shopping as the biggest unexpected use case. She also said the agent should soon move beyond the phone app to devices such as glasses.",
-      "significance": "It is the day's main window into Meta's consumer agent strategy, and it articulates an explicit slow-release posture that contrasts with same-week model launches elsewhere.",
+      "content": "In a Lenny's Podcast interview, Meta Superintelligence Labs product VP Mona Sarantakos described how Muse went from a weekend Raspberry Pi experiment with OpenClaw, prompted by a message from Nat Friedman, to the top of the App Store over roughly seven months. She said the product could largely run end to end by spring, and that the remaining time went to stability, safety and security under an internal \"trust is a must\" standard, because the agent holds private data and can make purchases. Adding a browser opened a new class of security exposure, and each major feature required closing the new doors it opened; Nat Friedman personally worked on a sentinel mechanism layered outside the core agent. Rollout proceeded from employees to progressively larger external tester groups. She said shopping became the biggest unexpected use case while home automation, an earlier bet, underperformed, and that word of mouth outperformed advertising for activation. She also described the Jolly plush character surviving repeated attempts to replace it with a corporate logo, on the reasoning that a personal agent should not carry corporate branding, and said Muse should soon extend beyond the phone app to glasses and charm-like devices.",
+      "significance": "The clearest public articulation from a major lab that agent trust and security, not capability, is the gating factor for consumer agent launches.",
       "refs": [
         "https://wav.pub/e/WPTK_HFwVFxiNz0xaG7f2",
         "https://pinfuatlas.ai/voices/mona-sarantakos-lenny-s-podcast-2026-11/"
       ],
       "related_event_ids": [
-        "harassment-guardrail-study",
-        "gemini-4-hydrogen"
+        "ev-harassment-guardrail-study"
       ],
-      "transition_hint": "Meta's consumer push sits alongside its developer-facing API work, which also surfaced in the day's material."
+      "transition_hint": "Trust concerns aside, the same week brought a wave of integration announcements that put these models into third-party infrastructure by default."
     },
     {
       "id": "07-event",
       "kind": "event",
       "rank": 7,
-      "event_id": "meta-model-api-muse-spark",
-      "title": "Meta Model API documented serving Muse Spark models",
+      "event_id": "ev-azure-model-router",
+      "title": "Azure model router expands to 45 models, adding new OpenAI, Anthropic, DeepSeek and xAI entries",
       "organizations": [
-        "Meta"
+        "OpenAI",
+        "Anthropic",
+        "DeepSeek",
+        "Meta",
+        "xAI"
       ],
       "status": "verified",
-      "content": "Promptfoo documentation describes the Meta Model API in public preview, serving Meta Superintelligence Labs' Muse Spark models through an OpenAI-compatible API at api.meta.ai, with a Responses surface, an Anthropic-compatible Messages endpoint, and a contributor model ID that permits Meta to train on prompts and completions in exchange for discounted pricing. The same page states Meta retired the separate Llama API at api.llama.com on 6 July 2026.",
-      "significance": "It documents the commercial shape of Meta's model access, including a data-for-discount tier, and confirms the Llama API's retirement in favor of the Muse-branded surface.",
+      "content": "Microsoft's Foundry model router version 2025-11-18, documented as of 18 November 2026, routes across 45 models from OpenAI, Anthropic, Microsoft AI, xAI, DeepSeek, Meta and Fireworks, with eight of them new in November 2026. New OpenAI entries include gpt-6.1-terra, gpt-6.1-sol and gpt-5.1; new Anthropic entries include claude-opus-5-5, claude-sonnet-5-5 and claude-haiku-5-5, each of which must be deployed in the same Foundry resource before routing. DeepSeek-V4.1-Flash is new, alongside DeepSeek-V3.2; xAI contributes grok-4.6, grok-4-1-fast-reasoning and grok-4; Meta contributes Llama-4-Maverick-17B-128E-Instruct-FP8. Fireworks-hosted FW-GLM-5.3, FW-GLM-5.3-Flash and FW-Kimi-K3 route only when Fireworks is enabled for the subscription. o4-mini retires on 19 November 2026 and leaves the pool. Router is available in 32 regions for Global Standard deployments, 23 of which also offer Data Zone Standard.",
+      "significance": "A concrete measure of how multi-vendor the enterprise routing layer has become, with Chinese and open-weight models now sitting in the same default pool as frontier US models.",
       "refs": [
-        "https://www.promptfoo.dev/docs/providers/meta/"
+        "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router-models"
       ],
       "related_event_ids": [
-        "meta-muse-trust-interview"
+        "ev-glm53-flash-workers-ai",
+        "ev-kimi-k31-pro"
       ],
-      "transition_hint": "Meta was not the only vendor whose model lineup appeared mainly through third-party integration documentation."
+      "transition_hint": "Routing tables are one form of distribution; Cloudflare's Workers AI is another, and it added a GLM model this week."
     },
     {
       "id": "08-event",
       "kind": "event",
       "rank": 8,
-      "event_id": "deepseek-model-catalog-shift",
-      "title": "DeepSeek catalog documented with Flash and V4 Pro, older IDs retired",
+      "event_id": "ev-glm53-flash-workers-ai",
+      "title": "Z.ai GLM-5.3 Flash lands on Cloudflare Workers AI as the first multimodal GLM-5 model",
       "organizations": [
-        "DeepSeek"
+        "GLM"
       ],
       "status": "verified",
-      "content": "Promptfoo's DeepSeek provider documentation lists deepseek-flash and deepseek-v4-pro as the current catalog, states that the older deepseek-chat and deepseek-reasoner IDs are retired, and describes 1M-token context windows with up to 384K output tokens plus peak and off-peak pricing.",
-      "significance": "It is the day's only concrete DeepSeek signal, and it marks a completed model-ID migration that will break integrations still pointing at the retired names.",
+      "content": "@cf/zai-org/glm-5.3-flash became available on Cloudflare Workers AI. It is described as the first natively multimodal model in the GLM-5 series, built on a mixture-of-experts architecture with 320B total parameters and 18B active per token. Cloudflare states it outperforms GLM-5.2 across benchmarks and real-world workloads at a lower price while approaching Claude Opus 4.8 on coding and agentic benchmarks. It requires the Workers Paid plan or prepaid AI Gateway credits and is reachable through the Workers AI binding, the REST API, the OpenAI-compatible endpoint or AI Gateway.",
+      "significance": "Extends a Chinese open-weight family into a major Western edge-inference platform, broadening the distribution surface beyond first-party APIs.",
       "refs": [
-        "https://www.promptfoo.dev/docs/providers/deepseek/"
+        "https://github.com/cloudflare/cloudflare-docs/blob/a1ac58e0926d99439c8b100fef550a1d5a58bf73/src/content/changelog/workers-ai/2026-08-26-glm-5.3-flash-workers-ai.mdx"
       ],
       "related_event_ids": [
-        "qwen4-max-preview"
+        "ev-azure-model-router"
       ],
-      "transition_hint": "Model-ID churn was a recurring integration hazard, and Kimi's lineup showed the same pattern."
+      "transition_hint": "Distribution deals are one signal of momentum; a research write-up on European enterprise adoption of the same model family is another."
     },
     {
       "id": "09-event",
       "kind": "event",
       "rank": 9,
-      "event_id": "kimi-k3-lineup-docs",
-      "title": "Kimi K3 documented as flagship with K2.x and v1 models sunsetting",
+      "event_id": "ev-glm-revolut-europe",
+      "title": "Report says Revolut has adopted Zhipu's open-source GLM models as Chinese open models gain European traction",
       "organizations": [
-        "Kimi"
+        "GLM"
       ],
-      "status": "verified",
-      "content": "Promptfoo's Moonshot provider documentation describes Kimi K3 as the flagship thinking model with a 1M context window, released July 2026, with always-on reasoning and native image and video understanding. It states the moonshot-v1 series and kimi-k2.5 are closed to new users and sunset platform-wide on 31 August 2026, and that several older kimi-k2 preview IDs were discontinued in 2026.",
-      "significance": "It gives the current Kimi lineup and its retirement schedule, which matters for anyone still routing to the legacy Moonshot v1 or K2.5 endpoints.",
+      "status": "unverified",
+      "content": "A report dated 13 November, referenced in coverage of the Lisbon Web Summit held 9–12 November 2026, states that European fintech Revolut has adopted Zhipu's open-source GLM models. The coverage frames this as part of a broader opening for Chinese open-source models in European enterprise selection, and lays out four evaluation axes for outbound-deploying companies: license terms (which vary widely, from near-Apache 2.0 to custom licenses with territorial or commercial-scale limits), deployment region and data residency, target-language performance beyond Chinese and English, and community and operations support across time zones. It recommends a layered approach — commercial APIs for high-frequency consumer-facing scenarios, open models for internal tooling — with prompts, eval sets and business logic decoupled from any single model so switching only touches the interface layer.",
+      "significance": "A named European financial-services adopter is a stronger adoption signal for Chinese open-weight models than download or token-volume counts alone.",
       "refs": [
-        "https://www.promptfoo.dev/docs/providers/moonshot/"
+        "https://www.zpedu.com/it/ai/50124.html"
       ],
       "related_event_ids": [
-        "kimi-k3-1-pro-open-weights",
-        "deepseek-model-catalog-shift"
+        "ev-glm53-flash-workers-ai",
+        "ev-kimi-k31-pro"
       ],
-      "transition_hint": "Kimi's open-weight release and its hosted lineup are two sides of the same product family; the next item concerns a different kind of distribution."
+      "transition_hint": "Adoption stories are downstream of the models themselves, and the same week brought a wave of model-catalog updates across third-party platforms."
     },
     {
       "id": "10-event",
       "kind": "event",
       "rank": 10,
-      "event_id": "glm-5-3-picker-entries",
-      "title": "Open Interpreter adds GLM-5.3 and GLM-5.3-Flash picker entries",
+      "event_id": "ev-catalog-updates",
+      "title": "Third-party platforms refresh model catalogs: DeepSeek V4 IDs, Meta Muse Spark 1.3, Kimi K3 and Qwen3.8",
       "organizations": [
-        "GLM"
+        "DeepSeek",
+        "Meta",
+        "Kimi",
+        "Qwen",
+        "OpenAI"
       ],
       "status": "verified",
-      "content": "Open Interpreter 0.0.44 release notes add source-generated GLM-5.3 and GLM-5.3-Flash picker entries for Z.AI Coding Plan, Zhipu AI and Zhipu AI Coding Plan, and state that GLM-5.3-Flash exposes image input and a 1M-token context window in the generated source metadata. The notes say availability depends on account, region, plan and provider response.",
-      "significance": "It is the day's most concrete GLM signal, showing the 5.3 generation reaching third-party coding harnesses with multimodal input.",
+      "content": "Several integration docs published in the window describe current model lineups. DeepSeek's catalog lists deepseek-flash (V4.1 Flash, text and image input, 1M context, up to 384K output) and deepseek-v4-pro (text input, thinking and non-thinking modes, 1M context, 384K output), with the older deepseek-chat and deepseek-reasoner IDs retired; peak pricing is $0.30/$1.20 per 1M for Flash and $1.32/$3.96 for Pro, with off-peak rates at half. Meta's Model API serves Meta Superintelligence Labs' Muse Spark models, with muse-spark-1.3 as the latest for coding and agentic workflows at a 1,048,576-token context and text/image/video/PDF input, plus a discounted muse-spark-1.3-contributor ID that permits training on prompts and completions; Meta retired the separate Llama API at api.llama.com on 6 July 2026. Moonshot's lineup lists Kimi K3 as the flagship thinking model with 1M context, always-on reasoning and native image and video understanding, alongside K2.x models at 256K context. Alibaba's DashScope catalog lists qwen3.8-max as current flagship with text, image and video input and a 1M-token context.",
+      "significance": "Confirms that 1M-token context and multimodal input have propagated down to mid-tier and third-party-hosted models across nearly every tracked vendor.",
       "refs": [
-        "https://github.com/openinterpreter/openinterpreter/blob/bb3f575d8badc136eb5808bbbb707a04eb5daa3f/.github/release-notes/0.0.44.md"
+        "https://www.promptfoo.dev/docs/providers/deepseek/",
+        "https://www.promptfoo.dev/docs/providers/meta/",
+        "https://www.promptfoo.dev/docs/providers/moonshot/",
+        "https://www.promptfoo.dev/docs/providers/alibaba/"
       ],
       "related_event_ids": [
-        "kimi-k3-lineup-docs"
+        "ev-google-gemini4-neon",
+        "ev-qwen4-max-preview"
       ],
-      "transition_hint": "Tooling updates like this one are how most developers actually encounter new model versions, which is also true of the day's xAI material."
+      "transition_hint": "Catalog listings describe what is available; a developer-facing changelog shows what actually changed under the hood for open models."
     },
     {
       "id": "11-event",
       "kind": "event",
       "rank": 11,
-      "event_id": "xai-grok-oauth-integration",
-      "title": "Hermes Agent documents xAI Grok OAuth access via SuperGrok and X Premium+",
+      "event_id": "ev-transformers-524",
+      "title": "Hugging Face Transformers v5.24.0 adds Meta Omnilingual ASR, Kimi video fixes and a cache API rename",
+      "organizations": [
+        "Meta",
+        "Kimi"
+      ],
+      "status": "verified",
+      "content": "Transformers v5.24.0 added Omnilingual ASR, a multilingual speech-recognition suite from Meta FAIR covering more than 1,600 languages, in CTC and audio-language-model variants at 300M, 1B, 3B and 7B sizes. Vision fixes include Kimi video input handling and Muse Glimmer embedding order. The release also renames past_key_values and cache_params to cache across the library, backward compatible with deprecation warnings until v5.40.0 for model forward and v6.0.0 for generate, and requires peft>=0.22.0. Other additions include Inkling 2 Mini from Thinking Machines Lab, Apertus 1.5, NVIDIA's Dory, HY4-VL, Lara Mini, SarvamMLA and SarvamMoE, and EXAONE.",
+      "significance": "A concrete open-source infrastructure release that both ships a Meta multilingual ASR family and fixes multimodal handling for Kimi models, showing where open-weight ecosystems are being operationalized.",
+      "refs": [
+        "https://newreleases.io/project/github/huggingface/transformers/release/v5.24.0",
+        "https://newreleases.io/project/pypi/transformers/release/5.24.0"
+      ],
+      "related_event_ids": [
+        "ev-catalog-updates"
+      ],
+      "transition_hint": "Open-source plumbing is unglamorous but load-bearing; the same is true of the developer tooling that wires agents to these models."
+    },
+    {
+      "id": "12-event",
+      "kind": "event",
+      "rank": 12,
+      "event_id": "ev-xai-tooling",
+      "title": "xAI Grok surfaces spread across OAuth agent access, realtime voice and media generation APIs",
       "organizations": [
         "xAI"
       ],
       "status": "verified",
-      "content": "Hermes Agent documentation describes a browser-based OAuth device-code login against accounts.x.ai that lets SuperGrok or X Premium+ subscribers use Grok models without an API key, defaulting to grok-4.6 over xAI's Responses-style endpoint, with the same token reused for TTS, image, video and transcription tools. The page also warns that xAI's backend has been seen rejecting some standard SuperGrok subscribers with HTTP 403 on the OAuth surface, with the API-key path as the fallback.",
-      "significance": "It shows xAI extending subscription-based access across its multimodal tools, while documenting an entitlement gate that can block paying subscribers.",
+      "content": "Developer documentation published in the window describes several xAI surfaces. Hermes Agent added a browser-based OAuth device-code flow against accounts.x.ai using a SuperGrok or X Premium+ subscription, defaulting to grok-4.6 over the xAI Responses API, with the same bearer token reused for TTS, image generation, video generation and transcription; the docs note xAI has been seen returning HTTP 403 on the OAuth surface for some standard SuperGrok subscribers, with the API-key path as the workaround. Pipecat documents a Grok realtime speech-to-speech service defaulting to grok-voice-latest with server VAD, built-in web_search, x_search, file_search and MCP tools, and reasoning effort high or none. A separate research log records read-only model listings showing grok-imagine-image-2.0, grok-imagine-video-1.5 and grok-imagine-video-1.5-lite, grok-4.6 and grok-4.7, plus 28 TTS voices, and paid probes confirming image and text-to-video generation calls completing.",
+      "significance": "Shows xAI's surface area expanding into subscription-authenticated agent access, realtime voice and media generation, with grok-4.6 and grok-4.7 appearing in live model listings.",
       "refs": [
-        "https://hermes-agent.nousresearch.com/docs/guides/xai-grok-oauth"
+        "https://hermes-agent.nousresearch.com/docs/guides/xai-grok-oauth",
+        "https://github.com/pipecat-ai/docs/blob/2d66637d6ed7bae02cf9688c87db0448c723827f/api-reference/server/services/s2s/grok.mdx",
+        "https://github.com/lidge-ai/ima2-gen/blob/94dd1252352d551fe69f9cc7f24dea2fbdccf0b1/devlog/_plan/261121_grok-media-catchup/001_research.md"
       ],
       "related_event_ids": [
-        "glm-5-3-picker-entries"
+        "ev-azure-model-router"
+      ],
+      "transition_hint": "Tooling docs describe capability; a customer story from the same window describes what that capability is claimed to deliver in production."
+    },
+    {
+      "id": "13-event",
+      "kind": "event",
+      "rank": 13,
+      "event_id": "ev-openai-amplitude",
+      "title": "OpenAI customer story credits Amplitude's Wave agent with cutting ship time to 1-2 days",
+      "organizations": [
+        "OpenAI"
+      ],
+      "status": "verified",
+      "content": "OpenAI published a customer story on 12 November 2026 in which Amplitude estimated its Wave product agent can help teams ship product improvements in 1-2 days, down from roughly a month. Amplitude describes Wave as roughly 80% powered by OpenAI models including GPT-6.1 Sol, GPT-6 Luna and GPT-Image-2.5 Flare, and as a proactive agent that identifies what to build, hands work to coding agents including Codex, and measures impact. Reported results include a 160% lift in card-driven sends versus control after one day in a homepage test, and among customer-launched experiments, flags and guides, one in four went live the same day Wave surfaced the opportunity, half within four days and two in three within a week. In an Opportunity Investigator evaluation, GPT-6.1 Sol scored 4.06 out of 5 against 3.62, 3.52 and 2.94 for three alternatives with the fastest median investigation time at 54 minutes; in a Data Science Agent evaluation it scored 67.5 versus 69.3 for another leading model at a mean cost of $1.28 versus $2.63 per dispatch. Amplitude states connected code is not used to train shared models.",
+      "significance": "A rare quantified enterprise deployment claim for agentic coding loops, though the figures are vendor-reported through OpenAI's own customer story.",
+      "refs": [
+        "https://dev.to/coldcasetech/amplitude-wave-ai-agent-can-ship-product-fixes-in-1-2-days-openai-story-says-1595"
+      ],
+      "related_event_ids": [
+        "ev-meta-muse-trust"
       ],
       "transition_hint": ""
     },
@@ -256,22 +311,24 @@
       "kind": "themes",
       "title": "Cross-Org Themes",
       "content": [
-        "Agentic and long-horizon task execution is the stated design target for new flagship models from Google, Alibaba and Meta",
-        "Cost per completed task, via token savings, tiered thinking levels or subscription metering, is being marketed alongside raw capability",
-        "Model-ID churn and retirement schedules are creating migration work for developers across DeepSeek, Kimi and Alibaba"
+        "1M-token unified context windows now appear across Google, Qwen, Meta, Kimi and DeepSeek model listings",
+        "Agentic task completion, not chat quality, is the stated design target for new flagship and mid-tier releases",
+        "Chinese labs are splitting between closed subscription-gated flagships (Qwen4-Max) and full open-weight releases (Kimi K3.1 Pro, GLM-5.3 Flash)",
+        "Third-party platforms — Azure model router, Workers AI, Promptfoo, Transformers — are absorbing multi-vendor model catalogs as the default integration layer",
+        "Trust, safety and guardrail durability are being framed as launch-gating constraints rather than post-launch fixes"
       ]
     },
     {
       "id": "88-rumors-unverified",
       "kind": "rumors",
       "title": "Rumors and Unverified Claims",
-      "content": "Coverage of a 'Llama 5' is unsubstantiated: the review states Meta never announced or released a model by that name, that claimed April and June 2026 launches cite no Meta source, and that one such story was retracted. The same review notes a claim that Meta confirmed its Llama 5 training run was ahead of schedule, with no Meta statement found. Separately, a developer research note reports unconfirmed Greek-language coverage attributing NVIDIA GH200 units, 5 PB of storage and a 400 Gb/s interconnect to Cyprus's Aphroditi facility, none of which appear on the operator's own specification page."
+      "content": "A report states that European fintech Revolut has adopted Zhipu's open-source GLM models, cited in coverage of the Lisbon Web Summit; this is a single secondary source and is carried as unverified. Separately, a research log notes that xAI's OAuth API surface has been observed returning HTTP 403 for some standard SuperGrok subscribers despite active subscriptions, and that 28 built-in TTS voices were counted in a read-only probe but not independently verified against the official voice table. A Chinese-language Qwen article references third-party GameFeel Bench scores for an early Qwen4-Flash checkpoint (49.9 vs Claude Opus 5.5 at 47.2), which the same article explicitly says cannot be extrapolated to Qwen4-Max."
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "The competitive axis has shifted from benchmark scores to whether a model can finish a long task at an acceptable cost, and whether its safety holds across a multi-turn session. The next evidence to watch is whether Google's and Alibaba's cost-per-task claims survive independent testing, and whether the harassment study's findings prompt guardrail changes from the four vendors named."
+      "content": "The competitive question has shifted from who has the longest context window to who can make long-context agentic work cheap and trustworthy at the same time. The next evidence to watch is whether the Qwen4-Max preview converts to a generally available model with published specs after its 25 November window closes, and whether any vendor responds directly to the multi-turn harassment findings with a documented guardrail change."
     }
   ]
 }

@@ -2,153 +2,185 @@
 
 ## Headline
 
-12 notable recent papers. The batch’s strongest through-line is computational molecular and biomedical methods: protein/ligand and RNA design, uncertainty-aware genomics, multimodal cancer data, and medical imaging. Spoken agenda: molecular design first, then structural and genomic methods, followed by pathology and clinical-physics applications. arXiv has no official trending chart; this is an inferred, relevance-ranked selection from incomplete biomedical coverage, not a most-read or most-downloaded list. Attention evidence was sparse, so papers are ranked by relevance and reported evaluation rather than popularity.
+The latest arXiv announcement batch available on Saturday, 21 November is Friday, 20 November; no newer batch is listed for today. Fifteen notable recent papers are highlighted from 40 deduplicated records in the configured q-bio and medical-physics batch listings. The strongest pattern is computational methods grounded in molecular, genomic, pathology, and clinical-physics data. Spoken agenda: RNA/protein design, structural biology, multi-omics, then translational evaluation. arXiv has no official trending chart; this is an inferred relevance ranking from incomplete biomedical coverage, not a measured popularity list or a survey of bioRxiv, medRxiv, or the medical literature.
 
 ## Top papers (ranked)
 
+Notable recent papers — ordered by biology/biomedicine relevance and reported evidence, not by measured popularity.
+
 ### 1. [ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features](https://arxiv.org/abs/2611.25076)
-- **Abstract:** The authors combine differentiable 3D molecular similarity representations with CPU/GPU kernels for high-throughput alignment and screening, reporting competitive DUDE-Z benchmark results and up to 1.03 million alignments per second on one GPU.
-- **Authors:** Nate Somers, Kento A. Abeywardane, Connor W. Coley, Masha Elkin
+- **Abstract:** A modular differentiable toolkit aligns 3D molecular representations and performs comparably to or better than matched open-source tools in eight of nine DUDE-Z virtual-screening comparisons.
+- **Authors:** Nate Somers; Kento A. Abeywardane; Connor W. Coley; Masha Elkin
 - **arXiv:** `2611.25076v1` (published 2026-11-18T19:17:58Z; categories: `q-bio.BM`)
-- **Evidence for ranking:** Direct biomolecular/drug-design fit; matched results on 43 protein targets, comparable or better than reference tools in 8 of 9 cases. No Semantic Scholar record at snapshot; the benchmark, not popularity, supports its placement.
-- **Claimed contribution:** The authors present a unified, modular and differentiable toolkit for 3D molecular alignment and screening; target-wise results indicate no single scoring mode wins across targets.
-- **Caveat:** This is computational benchmark evidence, not prospective compound testing or experimental evidence of binding or efficacy; the best scoring mode varies by target.
-- **Announcement type:** new submission, 20 November 2026 batch
+- **Evidence for ranking:** Direct molecular-design fit; the paper benchmarks 43 protein targets and reports throughput up to 1.03 million alignments per second on one GPU. Open-source implementation is linked by the authors.
+- **Claimed contribution:** The authors present a unified differentiable framework for 3D molecular alignment across shape, electrostatic, and pharmacophore objectives.
+- **Caveat:** Evidence is computational virtual screening and alignment performance, not experimental binding or therapeutic activity; the best scoring mode varies by target.
+- **Announcement type:** new submission, 2026-11-20
 - **Themes:** Biochemistry & proteins; Quantitative methods
 
 ### 2. [The Montparnasse Algorithm for RNA Design](https://arxiv.org/abs/2606.07562)
-- **Abstract:** The v2 paper reports a Monte Carlo search algorithm for inverse RNA folding that solved a median 96 of 100 Eterna100 V1 targets over five runs, versus 90 for DesiRNA under the same folding model and budget.
+- **Abstract:** The v2 paper reports a Monte Carlo inverse-folding solver that solved a median 96 of 100 Eterna100 V1 targets over five runs, versus 90 for DesiRNA under the same folding model and budget.
 - **Authors:** Tristan Cazenave
-- **arXiv:** `2606.07562v2` (first published 2026-05-25T17:06:26Z; v2 revised 2026-11-19T18:10:48Z; categories: `q-bio.BM`, `cs.AI`)
-- **Evidence for ranking:** Listed as a replacement in the 20 November batch; direct RNA-design relevance and a five-run, 100-target benchmark. Semantic Scholar reports 1 citation in total at snapshot, not a gain during this window.
-- **Claimed contribution:** The author reports improved search coverage and speed on Eterna100 V1 using a shared ViennaRNA 1.8.5/Turner 1999 objective.
-- **Caveat:** The result is computational folding under one energy model; it does not establish that designed RNAs fold as intended in biochemical experiments or cells.
-- **Announcement type:** revision (v2), 20 November 2026 batch; revised 19 November UTC
+- **arXiv:** `2606.07562v2` (published 2026-05-25T17:06:26Z; revised 2026-11-19T18:10:48Z; categories: `q-bio.BM`, `cs.AI`)
+- **Evidence for ranking:** Direct RNA-design relevance; five-run, 100-target benchmark with ViennaRNA 1.8.5 and the Turner 1999 model held constant between solvers.
+- **Claimed contribution:** The author combines nested rollout search, structural priors, local repair, and parallel workers to improve inverse RNA-folding coverage and speed.
+- **Caveat:** Results are computational predictions under one secondary-structure energy model; they do not establish that designed RNAs fold as intended in biochemical assays or cells.
+- **Announcement type:** revision, 2026-11-20 batch; v2 revised 2026-11-19
 - **Themes:** RNA & transcriptomics; Bioinformatics & sequence analysis
 
 ### 3. [A General Harness for Protein Foundation Model Fitness Prediction](https://arxiv.org/abs/2609.34654)
-- **Abstract:** The v2 work adds MSA retrieval and structure-aware score corrections to frozen protein-model predictions, reporting improved rank correlations across three variant benchmarks covering 1,211 assays and 3.1 million measured variants.
-- **Authors:** Yang Tan, Qijia Tian, Gangyu Sun, Bozitao Zhong, Mingchen Li, Yuanxi Yu, Nanqing Dong, Liang Hong
-- **arXiv:** `2609.34654v2` (first published 2026-09-28T08:58:56Z; v2 revised 2026-11-19T12:44:46Z; categories: `cs.AI`, `q-bio.QM`)
-- **Evidence for ranking:** Protein-function relevance; replacement in the 20 November q-bio.QM batch; reported gains across ProteinGym, VenusMutHub and VenusViroHub. Semantic Scholar reports 1 citation in total at snapshot, not a period gain.
-- **Claimed contribution:** The authors’ training-free VenusREM-Harness combines model scores with evolutionary and structural evidence; they report gains across 71 configurations and an average ProteinGym Spearman of 0.556 for VenusREM2.
-- **Caveat:** These are retrospective benchmark results, not prospective protein-engineering experiments; performance depends on benchmark composition, homolog coverage and the chosen assays.
-- **Announcement type:** revision (v2), 20 November 2026 batch; revised 19 November UTC
+- **Abstract:** VenusREM-Harness combines protein-model scores with evolutionary and structural evidence; the v2 paper reports rank-correlation gains across 1,211 assays and 3.1 million measured variants.
+- **Authors:** Yang Tan; Qijia Tian; Gangyu Sun; Bozitao Zhong; Mingchen Li; Yuanxi Yu; Nanqing Dong; Liang Hong
+- **arXiv:** `2609.34654v2` (published 2026-09-28T08:58:56Z; revised 2026-11-19T12:44:46Z; categories: `cs.AI`, `q-bio.QM`)
+- **Evidence for ranking:** Broad retrospective variant-benchmark evaluation across ProteinGym, VenusMutHub, and the newly curated VenusViroHub; the authors report gains across 71 model configurations.
+- **Claimed contribution:** The authors propose a training-free, model-agnostic retrieval-enhanced method that adaptively combines frozen protein-model scores with MSA, structural-confidence, and solvent-exposure information.
+- **Caveat:** Existing assay benchmarks do not establish performance on newly generated variants or wet-lab outcomes; gains may depend on homolog coverage and benchmark composition.
+- **Announcement type:** revision, 2026-11-20 batch; v2 revised 2026-11-19
 - **Themes:** Biochemistry & proteins; Bioinformatics & sequence analysis
 
 ### 4. [Ab-initio cryo-EM reconstruction from moments of denoised images](https://arxiv.org/abs/2611.25525)
-- **Abstract:** The authors use the first three moments of denoised particle images to initialize cryo-EM reconstruction without estimating each particle orientation, and report successful refinement starts on six experimental datasets.
-- **Authors:** Yunpeng Shi, Amit Singer, Yuguan Wang, Andy Zhang
+- **Abstract:** A method-of-moments procedure reconstructs initial 3D cryo-EM models from the first three moments of denoised images, bypassing per-image orientation estimation and initializing refinement on experimental datasets.
+- **Authors:** Yunpeng Shi; Amit Singer; Yuguan Wang; Andy Zhang
 - **arXiv:** `2611.25525v1` (published 2026-11-19T05:26:45Z; categories: `q-bio.QM`)
-- **Evidence for ranking:** Structural-biology method tested on six public experimental macromolecular datasets; the authors report high-resolution refinement comparable to established initializers. Code is public; no Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors’ MoMDeni method estimates an ab-initio model from denoised-image moments, avoiding explicit orientation estimation and assuming non-uniform viewing directions.
-- **Caveat:** The authors call the experimental results preliminary; denoising biases moment estimates, loses fine structure, and the method can fail for low-molecular-weight targets.
-- **Announcement type:** new submission, 20 November 2026 batch
+- **Evidence for ranking:** Direct structural-biology method tested on experimental cryo-EM datasets, with downstream high-resolution refinement rather than only synthetic-image evaluation.
+- **Claimed contribution:** The authors report an ab-initio method that avoids explicit particle-orientation estimation and does not assume a uniform orientation distribution.
+- **Caveat:** The authors identify denoising-induced bias and loss of fine structure; a low-molecular-weight example fails, making denoising quality a key boundary.
+- **Announcement type:** new submission, 2026-11-20
 - **Themes:** Biochemistry & proteins; Quantitative methods
 
 ### 5. [An Explainable and Scalable Hierarchical Tensor Framework for Integrating Multi-Omics and Digital Pathomics](https://arxiv.org/abs/2611.25584)
-- **Abstract:** HIT-Fuse combines six molecular and pathology modalities across four TCGA cancer cohorts and reports survival stratification, cohort-dependent prediction gains and database-based support for some decoded drivers.
-- **Authors:** Ahmad Hussein, Ali Anaissi, Mukesh Prasad, Ali Braytee
+- **Abstract:** HIT-Fuse combines six molecular and pathology modalities across four TCGA cancer cohorts and reports survival stratification, cohort-specific classification gains, and database-based support for some decoded features.
+- **Authors:** Ahmad Hussein; Ali Anaissi; Mukesh Prasad; Ali Braytee
 - **arXiv:** `2611.25584v1` (published 2026-11-19T06:27:17Z; categories: `q-bio.GN`, `cs.AI`)
-- **Evidence for ranking:** Direct genomics and multi-omics focus; four TCGA cohorts; reported cross-checks with DepMap, miRTarBase and RPPA annotations. No Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors propose hierarchical tensor fusion with missing-modality reconstruction and traceable attributions; they report a 56.4% relative weighted-F1 increase for glioma after cohort expansion.
-- **Caveat:** The evaluation uses TCGA-derived cohorts and computational/database cross-checks; it is not independent clinical validation, and reconstructed modalities may affect cohort composition and performance.
-- **Announcement type:** new submission, 20 November 2026 batch
-- **Themes:** DNA & genomics; Omics & single-cell methods; Biomedical & translational medicine
+- **Evidence for ranking:** Four cancer cohorts and cross-checks against DepMap CRISPR screens, miRTarBase, and protein annotations are reported in the paper.
+- **Claimed contribution:** The authors combine hierarchical tensor fusion, missing-modality reconstruction, and traceable attributions for integrated genomics, transcriptomics, proteomics, and digital pathology.
+- **Caveat:** Retrospective TCGA evaluation is not independent clinical validation; the authors note no fusion strategy dominates every endpoint, and functional associations do not prove causality.
+- **Announcement type:** new submission, 2026-11-20
+- **Themes:** DNA & genomics; RNA & transcriptomics; Biomedical & translational medicine
 
-### 6. [From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs](https://arxiv.org/abs/2611.25422)
-- **Abstract:** The authors propagate genomic-model uncertainty into graph-supported phenotype-hypothesis distributions and report held-out association recovery on AlzKB and Hetionet.
-- **Authors:** Huixin Zhan, Jason H. Moore
-- **arXiv:** `2611.25422v1` (published 2026-11-19T03:02:19Z; categories: `cs.LG`, `q-bio.GN`)
-- **Evidence for ranking:** Cross-listed in genomics; tests on two biomedical knowledge graphs and 30 gene-holdout masks, with recall@10 above DistMult on 24 masks. No Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors introduce an uncertainty-conditioned path-energy method to allocate probability across gene–disease–phenotype routes without patient-level phenotype supervision.
-- **Caveat:** This is computational hypothesis ranking, not diagnosis or clinical validation; the authors note the gene-holdout advantage is driven mainly by three genes and is not established for all genes.
-- **Announcement type:** new submission, 20 November 2026 batch
-- **Themes:** DNA & genomics; Bioinformatics & sequence analysis; Biomedical & translational medicine
-
-### 7. [Dynamical Variational Theory of Stochastic Reaction Networks](https://arxiv.org/abs/2611.25491)
-- **Abstract:** A Plefka-expansion variational method approximates non-Markovian dynamics and fluctuations in stochastic reaction networks, with tests on gene regulation, enzyme kinetics and infection models.
-- **Authors:** Moshir Harsh, Peter Sollich
-- **arXiv:** `2611.25491v1` (published 2026-11-19T04:26:42Z; categories: `cond-mat.stat-mech`, `q-bio.MN`, `q-bio.PE`)
-- **Evidence for ranking:** Cross-listed in molecular networks; evaluates multiple biochemical and biological model classes, including low-copy-number fluctuations. No Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors derive a tractable dynamical variational approximation for general stoichiometries and time-varying rates, including a self-consistent bubble resummation.
-- **Caveat:** The reported support is numerical benchmarking against model systems, not direct experimental validation of a biochemical mechanism.
-- **Announcement type:** new cross-list, 20 November 2026 batch
-- **Themes:** Molecular & cell biology; Quantitative methods
-
-### 8. [OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA](https://arxiv.org/abs/2604.12075)
+### 6. [OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA](https://arxiv.org/abs/2604.12075)
 - **Abstract:** The v2 release describes AI-derived tumor-microenvironment profiles for 5,268 TCGA whole-slide images across ten cancer types, with more than 20,000 quantitative readouts per slide.
-- **Authors:** Maaike Galama, Nina Kozar-Gillan, Christina Embacher, Todd Dembo, Cornelius Böhm, Evelyn Ramberger, Julika Ribbat-Idel, Rosemarie Krupar, Verena Aumiller, Miriam Hägele, Kai Standvoss, Gerrit Erdmann, Blanca Pablos, Ari Angelo, Simon Schallenberg, Andrew Norgan, Viktor Mátyás, Klaus-Robert Müller, Maximilian Alber, Lukas Ruff, Frederick Klauschen
-- **arXiv:** `2604.12075v2` (first published 2026-04-13T21:27:29Z; v2 revised 2026-11-19T14:52:15Z; categories: `cs.CV`, `cs.AI`, `cs.LG`, `q-bio.QM`)
-- **Evidence for ranking:** Replacement in the 20 November q-bio.QM batch; large shared resource derived from 5,268 slides across ten cancer types. Semantic Scholar reports 3 citations in total at snapshot, not a period gain.
-- **Claimed contribution:** The authors release an open-access, living dataset of model-generated cell, tissue and spatial-neighborhood readouts for computational tumor-microenvironment research.
-- **Caveat:** The readouts inherit the underlying AI models’ errors; the paper notes limited cancer-type coverage and that detailed spatial coordinates are not included in the public release.
-- **Announcement type:** revision (v2), 20 November 2026 batch; revised 19 November UTC
+- **Authors:** Maaike Galama; Nina Kozar-Gillan; Christina Embacher; Todd Dembo; Cornelius Böhm; Evelyn Ramberger; Julika Ribbat-Idel; Rosemarie Krupar; Verena Aumiller; Miriam Hägele; Kai Standvoss; Gerrit Erdmann; Blanca Pablos; Ari Angelo; Simon Schallenberg; Andrew Norgan; Viktor Mátyás; Klaus-Robert Müller; Maximilian Alber; Lukas Ruff; Frederick Klauschen
+- **arXiv:** `2604.12075v2` (published 2026-04-13T21:27:29Z; revised 2026-11-19T14:52:15Z; categories: `cs.CV`, `cs.AI`, `cs.LG`, `q-bio.QM`)
+- **Evidence for ranking:** Large cancer resource covering ten TCGA cancer types; the revision is listed in the 20 November q-bio replacement batch.
+- **Claimed contribution:** The authors release a dataset of model-generated cell-, tissue-, and spatial-neighborhood readouts from H&E whole-slide images for computational tumor-microenvironment research.
+- **Caveat:** The profiles inherit errors from the underlying AI pipeline and are derived from TCGA; the release is for non-commercial academic research and does not constitute validated biomarker measurements.
+- **Announcement type:** revision, 2026-11-20 batch; v2 revised 2026-11-19
 - **Themes:** Biomedical & translational medicine; Omics & single-cell methods
 
-### 9. [When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification](https://arxiv.org/abs/2611.26159)
-- **Abstract:** CALIFUSE uses disagreement among pathology foundation-model representations to estimate confidence and reports improved calibration and misclassification detection across seven whole-slide-image tasks.
-- **Authors:** Yekai Shen, Yuqian Wang, Zishun Liao, Rongsheng Wang, Wenting Chen, S. Kevin Zhou, Qingsong Yao
-- **arXiv:** `2611.26159v1` (published 2026-11-19T14:15:07Z; categories: `cs.CV`, `q-bio.QM`)
-- **Evidence for ranking:** Seven WSI classification tasks and an arXiv comment reporting acceptance at IEEE BIBM 2026; no Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors use between-encoder representational heterogeneity and chunk-level evidence agreement as uncertainty cues, without training an additional fusion module.
-- **Caveat:** The reported evidence is benchmark evaluation; calibration and selective prediction results do not establish clinical utility or transfer to other institutions and scanners.
-- **Announcement type:** new cross-list, 20 November 2026 batch
-- **Themes:** Biomedical & translational medicine; Quantitative methods
+### 7. [Morphological Features of Murine Pulmonary Arterial Networks for Diagnosing Vascular Disease](https://arxiv.org/abs/2610.40344)
+- **Abstract:** Geometry, topology, and shape-analysis methods are applied to micro-CT pulmonary arterial networks from 13 mice at four pressures to compare hypoxia-induced pulmonary hypertension with control morphology.
+- **Authors:** Elliot Maceda; John M Miller; Sebastian Reyes-Roza; Megan Miller; Nick A Hill; Radmila Sazdanović; Nathaniel Josephs; Mette S Olufsen
+- **arXiv:** `2610.40344v2` (published 2026-10-29T16:05:08Z; revised 2026-11-18T19:18:32Z; categories: `q-bio.TO`)
+- **Evidence for ranking:** Direct vascular-disease model with animal micro-CT measurements and multi-pressure assessment; the updated version appears in the 20 November replacement list.
+- **Claimed contribution:** The authors report morphological differences in hypoxia-induced hypertensive mouse arterial networks and present a feature-extraction and classification pipeline.
+- **Caveat:** This is a small preclinical mouse study (13 animals), not a validated human diagnostic method; reported discriminative features need independent replication.
+- **Announcement type:** revision, 2026-11-20 batch; v2 revised 2026-11-18
+- **Themes:** Biomedical & translational medicine; Molecular & cell biology; Quantitative methods
 
-### 10. [GraphEP: A Calibrated Data System and Benchmark for Learning Cardiac Electrophysiology](https://arxiv.org/abs/2611.26551)
-- **Abstract:** GraphEP packages 732 simulated cardiac electrophysiology trajectories across 20 anatomies and benchmarks graph and physiology-informed models for predicting transmembrane potential.
-- **Authors:** Matteo Baldan, Chiara D'Ercoli, James Rowbottom, Pietro Liò, Stefania Fresca
+### 8. [First-Passage Time Fluctuation Theorem and Thermodynamic Bound in Cooperative Biomolecular Networks](https://arxiv.org/abs/2501.09087)
+- **Abstract:** A theoretical analysis derives a first-passage-time fluctuation relation and thermodynamic bound for cooperative biomolecular networks, including enzyme- and motor-protein-like systems.
+- **Authors:** D. Evan Piephoff; Jianshu Cao
+- **arXiv:** `2501.09087v4` (published 2025-01-15T19:13:39Z; revised 2026-11-19T00:39:00Z; categories: `physics.bio-ph`, `physics.chem-ph`, `q-bio.MN`)
+- **Evidence for ranking:** Direct nonequilibrium biomolecular-network relevance; a new version in the 20 November q-bio replacement batch and a DOI are listed in arXiv metadata.
+- **Claimed contribution:** The authors derive a fluctuation theorem for observable first-passage times under stated hidden-current conditions and relate its correction to a bound on kinetic directionality.
+- **Caveat:** The result is theoretical and conditional on model assumptions; the proposed experimental test is not itself an experimental validation in this paper.
+- **Announcement type:** revision, 2026-11-20 batch; v4 revised 2026-11-19
+- **Themes:** Biochemistry & proteins; Quantitative methods
+
+### 9. [From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs](https://arxiv.org/abs/2611.25422)
+- **Abstract:** An uncertainty-aware graph method maps genomic-model evidence to distributions over phenotype hypotheses and evaluates association recovery on AlzKB and Hetionet without patient-level phenotype supervision.
+- **Authors:** Huixin Zhan; Jason H. Moore
+- **arXiv:** `2611.25422v1` (published 2026-11-19T03:02:19Z; categories: `cs.LG`, `q-bio.GN`)
+- **Evidence for ranking:** Direct sequence-to-phenotype application; results include two biomedical graphs and 30 gene-holdout masks against a DistMult baseline.
+- **Claimed contribution:** The authors make predictive uncertainty control the breadth of graph-supported phenotype hypotheses while preserving traceable gene–disease–phenotype paths.
+- **Caveat:** This is computational hypothesis generation, not patient-validated variant interpretation. The authors note the gene-holdout advantage is concentrated in three genes and is not uniform across genes.
+- **Announcement type:** new submission (cross-list), 2026-11-20
+- **Themes:** DNA & genomics; Bioinformatics & sequence analysis; Biomedical & translational medicine
+
+### 10. [Dynamical Variational Theory of Stochastic Reaction Networks](https://arxiv.org/abs/2611.25491)
+- **Abstract:** A Plefka-expansion variational method approximates non-Markovian reaction-network means, correlations, and responses, with computational benchmarks in gene regulation, enzyme kinetics, and infection dynamics.
+- **Authors:** Moshir Harsh; Peter Sollich
+- **arXiv:** `2611.25491v1` (published 2026-11-19T04:26:42Z; categories: `cond-mat.stat-mech`, `q-bio.MN`, `q-bio.PE`)
+- **Evidence for ranking:** Clear biochemical and gene-regulatory applications; the paper compares transient and steady-state behavior, including fluctuation-driven effects.
+- **Claimed contribution:** The authors derive a tractable dynamical variational approximation with self-consistent memory and a generalized bubble resummation.
+- **Caveat:** Evaluation is numerical benchmarking against selected model systems, not direct experimental validation of a biochemical mechanism.
+- **Announcement type:** new submission (cross-list), 2026-11-20
+- **Themes:** Biochemistry & proteins; Gene regulation & epigenetics; Quantitative methods
+
+### 11. [GraphEP: A Calibrated Data System and Benchmark for Learning Cardiac Electrophysiology](https://arxiv.org/abs/2611.26551)
+- **Abstract:** GraphEP packages 732 simulated left-ventricular electrophysiology trajectories across 20 anatomies and benchmarks graph-based predictors of transmembrane potential.
+- **Authors:** Matteo Baldan; Chiara D'Ercoli; James Rowbottom; Pietro Liò; Stefania Fresca
 - **arXiv:** `2611.26551v1` (published 2026-11-19T18:23:10Z; categories: `q-bio.TO`)
-- **Evidence for ranking:** New q-bio.TO dataset/benchmark; 732 simulations spanning healthy and scarred substrates and multiple pacing configurations. No Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors provide a reproducible graph-native dataset and report that physiology-informed models perform best on complementary prediction metrics.
-- **Caveat:** The benchmark is based on mechanistic simulations rather than measured patient electrophysiology; model performance does not demonstrate clinical readiness.
-- **Announcement type:** new submission, 20 November 2026 batch
+- **Evidence for ranking:** Reproducible simulation/data contribution with anatomy, scar, and pacing variation; the arXiv comment identifies an AIDaR 2026 NeurIPS workshop paper.
+- **Claimed contribution:** The authors report that physiology-informed models lead on complementary metrics in this graph-native benchmark.
+- **Caveat:** The 732 trajectories are mechanistic simulations, not prospective patient data or direct experimental validation of learned predictions.
+- **Announcement type:** new submission, 2026-11-20
+- **Themes:** Molecular & cell biology; Biomedical & translational medicine; Quantitative methods
+
+### 12. [When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification](https://arxiv.org/abs/2611.26159)
+- **Abstract:** CALIFUSE uses disagreement among pathology foundation-model representations to estimate confidence and reports calibration and misclassification-detection improvements across seven whole-slide classification tasks.
+- **Authors:** Yekai Shen; Yuqian Wang; Zishun Liao; Rongsheng Wang; Wenting Chen; S. Kevin Zhou; Qingsong Yao
+- **arXiv:** `2611.26159v1` (published 2026-11-19T14:15:07Z; categories: `cs.CV`, `q-bio.QM`)
+- **Evidence for ranking:** Seven pathology tasks and comparisons with single-encoder and naive-ensemble baselines; arXiv comment reports acceptance by IEEE BIBM 2026.
+- **Claimed contribution:** The authors use encoder-level representation heterogeneity and slide/chunk agreement as confidence cues without training a separate fusion model.
+- **Caveat:** Evidence concerns benchmark classification and calibration; it does not establish clinical deployment or improved patient outcomes.
+- **Announcement type:** new submission (cross-list), 2026-11-20
+- **Themes:** Biomedical & translational medicine; Bioinformatics & sequence analysis
+
+### 13. [Transition Dynamics Matter: Hidden Markov Scoring of Epileptogenic Channels in SEEG](https://arxiv.org/abs/2611.26142)
+- **Abstract:** A channel-specific hidden Markov model scores seizure-related transition changes in stereo-EEG and is evaluated against medically validated epileptogenic-zone definitions in 30 patients.
+- **Authors:** Giulia Tacconi; Federico Mason; Lorenzo Ferri; Elena Pasini; Lidia Di Vito; Matteo Martinoni; Lara Alvisi; Anna Scarabello; Luca Zanuttini; Francesca Bisulli; Andrea Zanella
+- **arXiv:** `2611.26142v1` (published 2026-11-19T13:58:28Z; categories: `eess.SP`, `physics.med-ph`)
+- **Evidence for ranking:** Direct biomedical signal-analysis question; a 30-patient SEEG evaluation compares the method with a benchmark and clinically validated definitions.
+- **Claimed contribution:** The authors report that channel-specific latent transition probabilities can improve epileptogenic-zone localization scoring relative to an observation-space baseline.
+- **Caveat:** One cohort is described; external-site and prospective validation are not reported, so this is not an established clinical decision tool.
+- **Announcement type:** new submission (cross-list), 2026-11-20
 - **Themes:** Biomedical & translational medicine; Quantitative methods
 
-### 11. [Towards consensus on practical probabilistic evaluation metrics for clinical decision making in radiotherapy](https://arxiv.org/abs/2611.25260)
-- **Abstract:** The authors evaluate probabilistic robustness metrics for proton radiotherapy using 60 treatment plans from three Dutch centers and interviews with eight radiation oncologists.
-- **Authors:** Jenneke I. de Jong, Steven J. M. Habraken, Erik W. Korevaar, Mirko Unipan, Esther Kneepkens, Gloria Vilches Freixas, Yvonne L. B. Klaver, Michiel Kroesen, Alejandra Méndez Romero, Edwin Oldehinkel, Stephanie Peeters, Roel J. H. M. Steenbakkers, Karolien Verhoeven, Stefan Both, Liesbeth J. B. Boersma, Sebastiaan Breedveld, Mischa S. Hoogeman
-- **arXiv:** `2611.25260v1` (published 2026-11-18T22:44:24Z; categories: `physics.med-ph`)
-- **Evidence for ranking:** Direct medical-physics study; 60 proton plans across three centers and structured interviews with eight oncologists. No Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors compare probabilistic metrics with current robustness evaluation and report that interviewed oncologists considered them suitable, while metric preferences varied.
-- **Caveat:** This is a plan-based evaluation plus interviews, not a trial showing improved patient outcomes; the authors call for further consensus and clinical validation before broad implementation.
-- **Announcement type:** new submission, 20 November 2026 batch
-- **Themes:** Medical physics & imaging; Biomedical & translational medicine
-
-### 12. [Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography](https://arxiv.org/abs/2611.26111)
-- **Abstract:** An end-to-end physics-informed reconstruction and inversion method estimates shear-wave speed from undersampled MRE data, reporting a 30% NRMSE reduction versus total-variation minimization and evaluation on in-vivo data.
-- **Authors:** Stefan Martin, Jakob Schattenfroh, Patrick Schuenke, Felix Frederik Zimmermann, Ingolf Sack, Christoph Kolbitsch, Andreas Kofler
+### 14. [Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography](https://arxiv.org/abs/2611.26111)
+- **Abstract:** An end-to-end reconstruction/inversion model estimates shear-wave speed from undersampled brain MRE data, reports a 30% lower NRMSE than total-variation minimization, and is also applied to in-vivo data.
+- **Authors:** Stefan Martin; Jakob Schattenfroh; Patrick Schuenke; Felix Frederik Zimmermann; Ingolf Sack; Christoph Kolbitsch; Andreas Kofler
 - **arXiv:** `2611.26111v1` (published 2026-11-19T13:39:46Z; categories: `eess.IV`, `cs.LG`, `physics.med-ph`)
-- **Evidence for ranking:** Direct medical-imaging method, accepted/published in IEEE Transactions on Biomedical Engineering (DOI: 10.1109/TBME.2026.3666306); reports acceleration factors up to 19 and in-vivo evaluation. No Semantic Scholar record at snapshot.
-- **Claimed contribution:** The authors jointly train reconstruction and phase-gradient inversion to estimate tissue shear-wave speed directly from k-space.
-- **Caveat:** The reported evaluation is retrospective and does not establish multi-site generalization or improved clinical decisions; no sample size for the in-vivo data is stated in the abstract.
-- **Announcement type:** new cross-list, 20 November 2026 batch
+- **Evidence for ranking:** The arXiv comment identifies an accepted IEEE Transactions on Biomedical Engineering version (DOI: `10.1109/TBME.2026.3666306`); the abstract reports retrospective undersampling tests and an in-vivo application.
+- **Claimed contribution:** The authors combine neural reconstruction with phase-gradient inversion and train the pipeline end-to-end for shear-wave-speed mapping from k-space.
+- **Caveat:** The paper is an accepted article version, not an independent new validation; image/model error reduction does not establish diagnostic accuracy or patient benefit.
+- **Announcement type:** new submission (cross-list), 2026-11-20
 - **Themes:** Medical physics & imaging; Biomedical & translational medicine; Quantitative methods
+
+### 15. [Towards consensus on practical probabilistic evaluation metrics for clinical decision making in radiotherapy](https://arxiv.org/abs/2611.25260)
+- **Abstract:** The authors apply probabilistic evaluation to 60 proton-therapy plans from three Dutch centers and interview eight radiation oncologists about feasible metrics and probability levels.
+- **Authors:** Jenneke I. de Jong; Steven J. M. Habraken; Erik W. Korevaar; Mirko Unipan; Esther Kneepkens; Gloria Vilches Freixas; Yvonne L. B. Klaver; Michiel Kroesen; Alejandra Méndez Romero; Edwin Oldehinkel; Stephanie Peeters; Roel J. H. M. Steenbakkers; Karolien Verhoeven; Stefan Both; Liesbeth J. Boersma; Sebastiaan Breedveld; Mischa S. Hoogeman
+- **arXiv:** `2611.25260v1` (published 2026-11-18T22:44:24Z; categories: `physics.med-ph`)
+- **Evidence for ranking:** Multi-center treatment-plan analysis and structured interviews with eight radiation oncologists provide translational evidence beyond a synthetic benchmark.
+- **Claimed contribution:** The authors assess probabilistic clinical-goal metrics as a potential complement to current robustness evaluation for radiotherapy planning.
+- **Caveat:** The study evaluates plans and expert preferences, not prospective decision changes or patient outcomes; validation across more centers is needed.
+- **Announcement type:** new submission, 2026-11-20
+- **Themes:** Biomedical & translational medicine; Medical physics & imaging; Quantitative methods
 
 ## Trending Research Themes
 
-- **Molecular design and protein/RNA scoring:** ShEPhERD-score, Montparnasse and the protein-fitness harness all use computational search or model-scoring benchmarks. Their results are not wet-lab evidence of improved drug binding, RNA folding in cells or engineered-protein performance.
-- **Data-driven molecular and cancer representations:** MoMDeni estimates macromolecular structure from cryo-EM image moments; HIT-Fuse combines omics with pathology; OpenTME releases AI-derived tumor-microenvironment profiles. These are different contributions—reconstruction method, integrative prediction framework and dataset—not independent replications of one result.
-- **Uncertainty and structure in biomedical prediction:** The sequence-to-phenotype method allocates uncertainty over knowledge-graph hypotheses, while CALIFUSE estimates slide-level confidence from pathology-model disagreement. Neither is a clinical decision system validated for care.
-- **Physics and mechanistic models:** Stochastic reaction networks and GraphEP encode biological dynamics using mechanistic structure; radiotherapy and MRE papers address uncertainty or inversion in medical-physics workflows. Evidence ranges from mathematical/simulation benchmarks to retrospective data and expert interviews.
+- Molecular computation is a clear cluster: ShEPhERD-score standardizes differentiable 3D molecular similarity, Montparnasse targets inverse RNA folding, and VenusREM-Harness scores protein variants. These are computational benchmarks against existing datasets, not evidence that new molecules or variants have been experimentally validated.
+- Data-driven structural and cancer biology spans two distinct contributions: the cryo-EM paper uses image moments to seed refinement on experimental datasets, while HIT-Fuse integrates omics/pathology and OpenTME releases AI-derived tumor profiles. The cryo-EM method, integrative prediction framework, and dataset should not be treated as replications of one finding.
+- Two themes in network biology are explicit: the first-passage theorem concerns nonequilibrium biomolecular machines, and the stochastic variational method models biochemical reaction dynamics. One is theoretical; the other is numerically benchmarked.
+- Translational work emphasizes external validity and uncertainty: the mouse-artery, GraphEP, CALIFUSE, SEEG, MRE, and radiotherapy papers range from animal measurements and simulations to retrospective patient data and clinician interviews. They are separate modalities and do not establish a field-wide clinical shift.
 
 ## Open Problems and Research Directions
 
-- **Validate design and fitness claims experimentally.** Montparnasse and the protein-fitness harness are benchmark-driven; ShEPhERD-score reports virtual-screening comparisons and target-specific scoring. A useful next step would be blinded, prospective testing on held-out RNA targets and protein families, with biochemical structure/function assays and pre-specified comparators. This is a synthesis proposal, not a claim that the studies already show experimental gains.
-- **Stress-test molecular imaging under realistic noise and domain shift.** MoMDeni’s authors identify biased moments after denoising and failures on low-molecular-weight targets. Compare direct raw-image moment estimation and improved denoisers across independent cryo-EM datasets stratified by size, SNR and orientation distribution; report failure rates as well as resolution.
-- **Test transfer and calibration for omics/pathology resources.** HIT-Fuse, OpenTME and CALIFUSE rely on TCGA or benchmark tasks. Independent cohorts with different sites, scanners and modality-missingness patterns could establish which predictions and uncertainty estimates transfer; measure calibration and subgroup performance before translational claims.
-- **Move from simulated or retrospective imaging to external validation.** GraphEP is simulation-derived, while the MRE and radiotherapy studies use retrospective plans/data and limited expert interviews. External multi-center datasets and prospective workflow studies could test robustness and decision impact; these preprints do not establish patient benefit.
+- Test molecular-design scores against blinded biochemical experiments. For ShEPhERD-score, compare DUDE-Z-style enrichment with binding/activity assays across held-out targets; for Montparnasse, test designed RNAs with structure probing or functional assays beyond the ViennaRNA/Turner scoring model. For VenusREM-Harness, prospective variant panels would show whether retrospective rank-correlation gains transfer to new protein families and assay conditions.
+- Stress-test cryo-EM initialization on low-molecular-weight targets, low signal-to-noise images, and non-uniform orientation distributions. The authors identify denoising bias; comparing raw-image moment estimators, alternative denoisers, and failure rates across independent datasets would directly address it.
+- Evaluate HIT-Fuse and OpenTME on independent institutions and scanners with prespecified modality-missingness patterns. Separate prediction from biological interpretation, and test whether feature attributions remain stable under cohort shift. For sequence-to-phenotype inference, expand gene- and variant-held-out tests with per-gene calibration and independent phenotype resources.
+- For the mouse vascular pipeline, validate morphological features in a larger animal cohort and then in human imaging before discussing diagnostic use. For GraphEP, compare simulated predictions with measured electrophysiology. For CALIFUSE, SEEG, and MRE, report cross-site calibration and failure modes; for probabilistic radiotherapy metrics, prospectively measure decision impact and patient-relevant trade-offs.
 
 ## Takeaway
 
-The 20 November batch is strongest in computational molecular design, molecular/genomic modeling and imaging methods. The most biologically grounded evidence here includes cryo-EM tests on six experimental datasets and several large retrospective benchmarks, but none should be mistaken for broad clinical validation. Because measurable attention signals were sparse, this is a relevance-ranked snapshot, not a defensible popularity chart.
+The batch is strongest in computational molecular design and structural/genomic methods, with a second cluster of imaging and clinical-physics evaluations. Experimental data and large retrospective benchmarks make some results more grounded, but simulations, model-derived measurements, and in-silico predictions still dominate. The ranking is relevance-based because arXiv provides no official trend chart and attention signals are too sparse for a popularity claim.
 
 ## Method and sources
 
-- **Window:** daily announcement batch dated 2026-11-20; exact report window 2026-11-20 through 2026-11-20. Snapshot: 2026-11-20T17:17:31Z. This is not a prior batch: arXiv’s relevant `new` listings showed Friday, 20 November 2026. For revisions, the batch date is the listing date; the latest-version timestamps are shown separately and precede the batch by one UTC day.
-- **Coverage:** traversed the current `new` listings for `q-bio.BM`, `q-bio.GN`, `q-bio.MN`, `q-bio.SC`, `q-bio.CB`, `q-bio.TO`, `q-bio.QM`, and `physics.med-ph`; audited the full Computer Science `new` listing for `cs.BI` (no cs.BI-tagged papers surfaced). The 20 Nov q-bio aggregate showed 35 entries: 11 new submissions, 8 cross-lists and 16 replacements. The physics.med-ph batch showed 5 entries. Cross-lists were deduplicated by arXiv ID. Selected items were checked on their arXiv abstract pages.
-- **Candidate query:** `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`. The arXiv API was used to verify paper IDs, versions, first-submission/update timestamps and categories; daily inclusion was determined from the dated announcement listings, including replacements.
-- **Ranking signals:** The Semantic Scholar Graph API was checked for the selected IDs. It had no record for the nine new submissions; for the three revisions it returned current citation totals of 1 (Montparnasse), 1 (protein-fitness harness) and 3 (OpenTME), with zero influential citations. These are current totals, not gains in this window. Targeted web searches did not surface independent technical discussion; author-linked code and package materials were treated as reproducibility resources, not popularity evidence. With attention evidence sparse, papers are ordered by relevance to molecular biology/biomedicine and the scope of reported evaluation.
-- **Coverage caveat:** arXiv is not a representative biomedical preprint index; much experimental and clinical biology appears on bioRxiv or medRxiv. This report does not cover those repositories or the medical literature as a whole.
-- **Sources:** [q-bio daily listing](https://arxiv.org/list/q-bio/new), [q-bio.BM](https://arxiv.org/list/q-bio.BM/new), [q-bio.GN](https://arxiv.org/list/q-bio.GN/new), [q-bio.MN](https://arxiv.org/list/q-bio.MN/new), [q-bio.SC](https://arxiv.org/list/q-bio.SC/new), [q-bio.CB](https://arxiv.org/list/q-bio.CB/new), [q-bio.TO](https://arxiv.org/list/q-bio.TO/new), [q-bio.QM](https://arxiv.org/list/q-bio.QM/new), [physics.med-ph](https://arxiv.org/list/physics.med-ph/new), [Computer Science daily listing](https://arxiv.org/list/cs/new), and individual arXiv abstract/PDF links above. The MRE paper’s published version is [IEEE TBME, DOI 10.1109/TBME.2026.3666306](https://doi.org/10.1109/TBME.2026.3666306).
+- **Window:** daily; announcement batch 2026-11-20 (Friday). The current date, 2026-11-21, is Saturday and the latest batch remains 20 November. Exact start and end dates: 2026-11-20 through 2026-11-20. Snapshot: 2026-11-21T17:19:02Z.
+- **Candidate collection:** traversed the 20 November q-bio new, cross-submission, and replacement listings (35 entries) and physics.med-ph listings (5 entries); the two sets had no duplicate IDs. The full Computer Science new/cross/replacement listing was checked for `cs.BI` subject entries; none appeared. The candidate query was `cat:q-bio.BM OR cat:q-bio.GN OR cat:q-bio.MN OR cat:q-bio.SC OR cat:q-bio.CB OR cat:q-bio.TO OR cat:q-bio.QM OR cat:cs.BI OR cat:physics.med-ph`. API pages at offsets 0 and 200 were checked, extending through 2026-10-21; listings additionally identify revisions that submitted-date sorting alone would miss. Versionless arXiv IDs were deduplicated. Fifteen of the 40 q-bio/medical-physics listing records were selected for direct biological or biomedical relevance.
+- **Ranking:** Semantic Scholar Graph records and citation totals were checked where available. Citation evidence was sparse (the resolvable recent records had zero to very few citations), so no citation-velocity or popularity ranking is claimed; papers are ordered by subfield fit, reported empirical or computational evaluation, and relevance of recent revisions. Citation counts are point-in-time totals, not gains during the window. Independent discussion was not used as a popularity proxy.
+- **Reading and evidence boundary:** all 15 selected abstract pages and version/category metadata were verified; the introduction, results, and limitations for the top three were read in arXiv full-text HTML. Claims are attributed to the authors. Computational prediction, simulation, animal data, retrospective patient cohorts, and clinical-outcome evidence are distinguished; no patient-specific advice is offered.
+- **Coverage caveat:** arXiv is not a representative biomedical preprint index; many experimental and clinical preprints appear on bioRxiv or medRxiv. This report does not cover those repositories or the medical literature as a whole.
+- **Sources:** [q-bio daily listings](https://arxiv.org/list/q-bio/new), [physics.med-ph daily listings](https://arxiv.org/list/physics.med-ph/new), [Computer Science daily listings](https://arxiv.org/list/cs/new), and the configured query above. Each paper links to its arXiv abstract; arXiv comments and DOI details are cited in the relevant entry. Retrieved corroboration also includes the Semantic Scholar Graph API for indexed paper metadata.

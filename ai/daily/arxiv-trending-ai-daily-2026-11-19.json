@@ -1,143 +1,615 @@
 {
-  "schema": "arxiv-trending-ai.v1",
-  "category": "daily",
+  "schema": "arxiv-trending-ai/v1",
+  "category": "ai",
   "window": {
-    "start": "2026-11-19",
-    "end": "2026-11-19",
-    "announcement_batch": "Thu, 19 Nov 2026",
-    "snapshot_utc": "2026-11-20T17:05:06Z",
-    "uses_prior_batch": true
+    "type": "daily",
+    "start": "2026-11-18T19:00:00Z",
+    "end": "2026-11-19T19:00:00Z",
+    "announcement_batch": "2026-11-19",
+    "announced_at": "2026-11-20T01:00:00Z",
+    "uses_prior_batch": true,
+    "snapshot_utc": "2026-11-21T21:00:51Z",
+    "scope_categories": [
+      "cs.AI",
+      "cs.LG",
+      "stat.ML",
+      "cs.CL",
+      "cs.CV",
+      "cs.RO",
+      "cs.NE",
+      "cs.MA"
+    ]
   },
   "date": "2026-11-19",
-  "title": "arXiv AI daily — Thursday, 19 November 2026",
+  "title": "arXiv AI — latest announcement batch 2026-11-19: 10 papers on embodied reasoning, video understanding, and visual-model design",
   "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-19.md",
-  "entry_count": 5,
+  "entry_count": 10,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart, and this is an inferred, relevance-weighted shortlist rather than a popularity ranking; independent attention and citation evidence are limited for such recent papers.",
+  "global_caveat": "arXiv has no official trending chart. This inferred ordering prioritizes deterministic, checkable attention signals; citation evidence is sparse for these recent papers, and the list is not a most-read or most-downloaded ranking.",
   "sections": [
     {
-      "id": "2611.26248",
-      "kind": "paper",
-      "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+      "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
       "rank": 1,
-      "url": "https://arxiv.org/abs/2611.26248",
-      "arxiv_id": "2611.26248",
-      "arxiv_version": 1,
-      "published": "2026-11-19T15:25:34Z",
-      "categories": ["cs.AI", "cs.CL", "cs.LG"],
-      "authors": ["Yang Wan", "Linchao Zhu"],
-      "themes": ["Agents & reasoning", "Evaluation & benchmarks", "Data & synthetic data"],
-      "abstract": "TwinLab-Bench tests agents designing their own experiments across 52 real-laboratory-derived tasks, using lab-record-grounded digital twins and reports to score results; the strongest tested model averaged 45.0/100.",
-      "claimed_contribution": "The authors introduce task-specific TwinLab agents that return recorded or calculated experimental readings, and report that the best of 13 tested agents scores 45.0/100; the paper also analyzes common experiment-design failures.",
-      "unique_caveat": "The benchmark tests agents in constructed digital twins, not by conducting new physical experiments; its readings and scoring are grounded in the records and calculators assembled for 52 tasks.",
-      "announcement_type": "new submission",
-      "announcement_batch": "2026-11-19",
-      "evidence_for_ranking": "Independent coverage at Emergent and AGI Hunt, a public GitHub benchmark and Hugging Face paper discussion; its three-way cross-list within the core AI corpus gives it unusually broad category relevance.",
+      "published": "2026-11-19T17:15:38Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "authors": [
+        "Yuzhi Huang",
+        "Jie Wu",
+        "Fanding Huang",
+        "Junchao Lin",
+        "Weichen Zhang",
+        "Ziyi Xiong",
+        "Yang Li",
+        "Zhengwei Xie",
+        "Zhimin Wang",
+        "Zhen Liu",
+        "Jiazhen Huang",
+        "Yuzheng Zhang",
+        "Yuche Liu",
+        "Hongyi Yang",
+        "Chen Tang",
+        "Shixiang Tang",
+        "Hakan Aktas",
+        "Adam Wu",
+        "Duo Wu",
+        "Kangye Ji",
+        "Shuzhao Xie",
+        "Huanan Liu",
+        "Weijue Bu",
+        "Chenxin Li",
+        "Xinyuan Wang",
+        "Tianyi Bai",
+        "Yinan Mao",
+        "Jiawei Wang",
+        "Minglei Li",
+        "Heng Yu",
+        "Ehsan Adeli",
+        "Minchen Li",
+        "Yong-Lu Li",
+        "Cengiz Öztireli",
+        "Huazhe Xu",
+        "Chao Yu",
+        "Jing Zhang",
+        "Shanghang Zhang",
+        "Weitao Zhou",
+        "Wenwu Zhu",
+        "Cheng Chi",
+        "Jingyan Jiang",
+        "Zhi Wang"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Robotics & control",
+        "Agents & reasoning"
+      ],
+      "abstract": "The authors introduce a 30-task simulated manipulation benchmark that separately probes history-based reasoning, precise action, and closed-loop composition, finding that even their strongest evaluated agent succeeds on only 12.0% of Mind2Act episodes.",
+      "claimed_contribution": "The authors provide 180 task configurations across three views and a diagnosis harness; their evaluation reports a large gap between Mind/Act performance (52.7%/39.0% for the strongest agent) and Mind2Act performance (12.0%).",
+      "unique_caveat": "The authors say the views are different tasks, not matched interventions, so longer horizons and early execution errors cannot yet be separated from a composition deficit; all tasks are simulated tabletop manipulation.",
+      "score": 13.953,
+      "score_components": {
+        "hf_upvotes": 11.736,
+        "code_stars": 1.717,
+        "cross_lists": 0.5
+      },
+      "evidence_for_ranking": "Highest collected score 13.953: 49 Hugging Face paper upvotes, 30 GitHub stars, and two cross-lists; weighted components are HF 11.736, code stars 1.717, cross-lists 0.500.",
       "refs": [
-        "https://arxiv.org/abs/2611.26248",
-        "https://emergent.sh/news/claude-fable-5-2-scores-45-100-twinlab-bench",
-        "https://agihunt.info/en/p/1a1f840d338862038e032d41170",
-        "https://github.com/ZJUSCL/TwinLab-Bench",
-        "https://huggingface.co/papers/2611.26248"
-      ]
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26444"
+        },
+        {
+          "title": "Source",
+          "url": "https://arxiv.org/html/2611.26444v1"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26444"
+        }
+      ],
+      "id": "2611.26444",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26444",
+      "arxiv_id": "2611.26444",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
     },
     {
-      "id": "2611.26565",
-      "kind": "paper",
-      "title": "PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity",
+      "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
       "rank": 2,
-      "url": "https://arxiv.org/abs/2611.26565",
-      "arxiv_id": "2611.26565",
-      "arxiv_version": 1,
-      "published": "2026-11-19T18:33:43Z",
-      "categories": ["cs.RO"],
-      "authors": ["Hao Vo", "Taisei Hanyu", "Yuki Ikebe", "Pham Tri Quang", "Sreevenkata Anjani Tishita Godavarthi", "Nghi D. Q. Bui", "Daniel Sonntag", "Chase Rainwater", "Duy Minh Ho Nguyen", "Anh Nguyen", "Ngan Le"],
-      "themes": ["Robotics & control", "Evaluation & benchmarks", "Multimodal & vision-language"],
-      "abstract": "PhyDEX evaluates whether robot policies can infer object mass, center of mass, and friction to throw objects to targets, reporting sub-3% success for three tested VLA policies.",
-      "claimed_contribution": "The authors provide 35,357 simulated trajectories across nine throwing tasks and 100 scenes, with humanoid and real-world tests; they report that providing ground-truth physical properties roughly doubles policy success.",
-      "unique_caveat": "The authors explicitly limit the benchmark to throwing, three randomized physical properties, and three VLA policies; they call for richer physics, more skills, and broader model coverage.",
-      "announcement_type": "new submission",
-      "announcement_batch": "2026-11-19",
-      "evidence_for_ranking": "Independent discussion from Data Phoenix and a technical critique at Pith; the arXiv abstract and full text make its evaluation setup and limits checkable. Attention indicators are qualitative, not a readership measure.",
+      "published": "2026-11-19T16:58:15Z",
+      "categories": [
+        "cs.CV",
+        "eess.AS"
+      ],
+      "authors": [
+        "Changli Tang",
+        "Jie Yang",
+        "Tianyi Wang",
+        "Lei Li",
+        "Daoze Zhang",
+        "Zijie Xin",
+        "Zhan Liu",
+        "Li Li",
+        "Jinchang Xu",
+        "Fengyun Rao",
+        "Chao Zhang",
+        "Jing Lyu"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Training & adaptation",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The authors present Chinese-English 2B–35B-A3B models that jointly process text, image, audio, and video with fast-instruct and reasoning modes, reporting evaluations across more than 120 benchmarks.",
+      "claimed_contribution": "The authors report that WeMM-Video-35B-A3B leads their open-source comparisons on omni-modal video tasks and that the 9B variant outperforms the compared 30B open-source model; they release weights and an evaluation/reproduction pipeline.",
+      "unique_caveat": "For existing comparison models, the paper uses official scores where available and its own evaluations otherwise, so not every comparison is from a single uniform evaluation run.",
+      "score": 13.675,
+      "score_components": {
+        "hf_upvotes": 11.353,
+        "code_stars": 2.072,
+        "cross_lists": 0.25
+      },
+      "evidence_for_ranking": "Collected score 13.675: 43 Hugging Face paper upvotes, 62 GitHub stars, one cross-list; weighted components are HF 11.353, code stars 2.072, cross-lists 0.250.",
       "refs": [
-        "https://arxiv.org/abs/2611.26565",
-        "https://dataphoenix.info/news/phydex-vla-physical-reasoning-benchmark",
-        "https://pith.science/paper/2611.26565"
-      ]
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26409"
+        },
+        {
+          "title": "Source",
+          "url": "https://arxiv.org/html/2611.26409v1"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26409"
+        },
+        {
+          "title": "Source",
+          "url": "https://github.com/Tencent/WeMM-Video"
+        }
+      ],
+      "id": "2611.26409",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26409",
+      "arxiv_id": "2611.26409",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
     },
     {
-      "id": "2611.26510",
-      "kind": "paper",
-      "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
+      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
       "rank": 3,
-      "url": "https://arxiv.org/abs/2611.26510",
-      "arxiv_id": "2611.26510",
-      "arxiv_version": 1,
-      "published": "2026-11-19T17:57:59Z",
-      "categories": ["cs.CL"],
-      "authors": ["Guoxin Chen", "Shuang Sun", "Fanzhe Meng", "Xinyu Tang", "Ruihua Song", "Wayne Xin Zhao"],
-      "themes": ["Training & adaptation", "Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "AutoMaster uses natural-language skills, trajectory analysis, and data selection to shape teacher demonstrations before fine-tuning a target model, reporting gains over vanilla supervised fine-tuning across six settings.",
-      "claimed_contribution": "The authors report that Skill-FT improves mean performance over vanilla SFT by 1.42–8.99 percentage points on Terminal, Search, and software-engineering tasks, holding teacher, task pool, training-set size, and SFT recipe fixed.",
-      "unique_caveat": "The reported experiments use Qwen3.5 4B/9B target models and six settings across three task families; transfer to other model families, teachers, or tasks remains to be demonstrated.",
-      "announcement_type": "new submission",
-      "announcement_batch": "2026-11-19",
-      "evidence_for_ranking": "The authors provide a public project page, code, and model release; a Hugging Face paper page and multi-benchmark result add checkable technical evidence. These indicate dissemination and relevance, not verified popularity.",
+      "published": "2026-11-19T18:55:41Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "authors": [
+        "Peiyun Hu",
+        "Marko Mihajlovic",
+        "Lyndon Duong",
+        "Lahav Lipson",
+        "Wei Dong",
+        "Amaël Delaunoy",
+        "Stephan R. Richter",
+        "Vladlen Koltun"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Efficient inference & systems",
+        "Training & adaptation"
+      ],
+      "abstract": "The authors present a native-resolution network for metric depth from images and video, designed to combine sharp boundaries with temporal consistency and reporting a new Pareto frontier across accuracy, sharpness, consistency, and runtime.",
+      "claimed_contribution": "The paper describes a shared multi-frame transformer, multi-view consistency training, and a family of models; its abstract reports improvements over prior work in metric accuracy, boundary sharpness, and temporal consistency.",
+      "unique_caveat": "The multi-view consistency loss uses ground-truth camera poses and ground-truth depth to exclude occluded or moving pixels during training, a supervision requirement relevant to reproducing that objective.",
+      "score": 13.28,
+      "score_components": {
+        "hf_upvotes": 10.204,
+        "code_stars": 2.826,
+        "cross_lists": 0.25
+      },
+      "evidence_for_ranking": "Collected score 13.280: 29 Hugging Face paper upvotes, 284 GitHub stars, one cross-list; weighted components are HF 10.204, code stars 2.826, cross-lists 0.250.",
       "refs": [
-        "https://arxiv.org/abs/2611.26510",
-        "https://aweai-team.github.io/AutoMaster/",
-        "https://github.com/RUCAIBox/AutoMaster",
-        "https://huggingface.co/papers/2611.26510",
-        "https://huggingface.co/collections/RUC-AIBOX/automaster"
-      ]
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26603"
+        },
+        {
+          "title": "Source",
+          "url": "https://arxiv.org/html/2611.26603v1"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26603"
+        },
+        {
+          "title": "Source",
+          "url": "https://apple-aiml-research.github.io/ml-depth-pro-2/"
+        }
+      ],
+      "id": "2611.26603",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26603",
+      "arxiv_id": "2611.26603",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
     },
     {
-      "id": "2611.26613",
-      "kind": "paper",
-      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
       "rank": 4,
-      "url": "https://arxiv.org/abs/2611.26613",
-      "arxiv_id": "2611.26613",
-      "arxiv_version": 1,
-      "published": "2026-11-19T18:57:25Z",
-      "categories": ["cs.RO", "cs.CL", "cs.CV"],
-      "authors": ["Yiyang Du", "Yuxuan Kuang", "Qitao Zhao", "Yixuan Wang", "Zhanqiu Guo", "Yi Xu", "Xin Li", "Wenbin He", "Liu Ren", "Chenyan Xiong"],
-      "themes": ["Robotics & control", "Evaluation & benchmarks", "Agents & reasoning"],
-      "abstract": "AgentRoboCritic pairs each robot action with the agent’s stated local intent so a critic can label its outcome and failure mode, analyzing frontier agents across 12 manipulation benchmarks.",
-      "claimed_contribution": "The authors report that fine-tuning Muse-Glimmer-30B raises failure-mode accuracy from 32.58% to 74.24% on their 400-action human-annotated benchmark, enabling lower-cost action-level analysis.",
-      "unique_caveat": "Critic validation is based on 400 human-annotated actions; generalization to other robots, action distributions, and independently annotated evaluation sets remains open.",
-      "announcement_type": "new submission",
-      "announcement_batch": "2026-11-19",
-      "evidence_for_ranking": "Its cross-list spans three core AI categories, and the authors released a 12,844-action dataset and critic project with a human-annotated evaluation set. This is a concrete artifact, but outside-attention evidence is sparse, so placement is relevance-led.",
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "published": "2026-11-19T18:51:58Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": [
+        "Yiyan Ji",
+        "Qixun Wang",
+        "Yang Shi",
+        "Zhuoran Zhang",
+        "Yifan Xu",
+        "Tengfei Liu",
+        "Yuqi Tang",
+        "Xiaohan Zhang",
+        "Shujie Li",
+        "Jiafu Tang",
+        "Xuanyu Zhu",
+        "Xinyu Liu",
+        "Yan He",
+        "Yushuo Guan",
+        "Zihao Wang",
+        "Xianghua Ying",
+        "Shixuan Liu",
+        "Haotian Wang",
+        "Wenjing Yang",
+        "Zhaoxiang Zhang",
+        "Yuanxing Zhang",
+        "Pengfei Wan",
+        "Jiaheng Liu"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Multimodal & vision-language",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The authors study agent-authored 3D proxies for video generation and introduce a task-adaptive framework that selects direct or proxy-guided generation, with proxy granularity, simulation, and prompting evaluated through controlled experiments and blinded human ratings.",
+      "claimed_contribution": "The authors report that coarse proxies favor natural motion while medium-grained proxies favor consistency, and that their framework improves instruction following, scene consistency, physical plausibility, and visual realism on the evaluated comparisons.",
+      "unique_caveat": "The abstract reports remaining long-video weaknesses in transition stability and adherence to scene settings.",
+      "score": 12.319,
+      "score_components": {
+        "hf_upvotes": 10.751,
+        "code_stars": 1.568
+      },
+      "evidence_for_ranking": "Collected score 12.319: 35 Hugging Face paper upvotes and 22 GitHub stars; weighted components are HF 10.751 and code stars 1.568.",
       "refs": [
-        "https://arxiv.org/abs/2611.26613",
-        "https://adu2021.github.io/blog/AgentRoboCritic/",
-        "https://github.com/cxcscmu/AgentRoboCritic"
-      ]
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26595"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26595"
+        }
+      ],
+      "id": "2611.26595",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "arxiv_id": "2611.26595",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
     },
     {
-      "id": "2611.26503",
-      "kind": "paper",
-      "title": "JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own",
       "rank": 5,
-      "url": "https://arxiv.org/abs/2611.26503",
-      "arxiv_id": "2611.26503",
-      "arxiv_version": 1,
-      "published": "2026-11-19T17:53:30Z",
-      "categories": ["cs.RO", "eess.SY"],
-      "authors": ["Shibo Zhou", "Tianqi Hong", "Zheng Yan", "He Yang"],
-      "themes": ["Robotics & control", "Agents & reasoning", "Evaluation & benchmarks"],
-      "abstract": "JARVIS uses an embodied agent and executable digital twin to design, fabricate, measure, and revise circuit boards, demonstrating a 60 Hz notch filter built and tested without human intervention.",
-      "claimed_contribution": "The authors report an end-to-end design–build–test–learn loop using unmodified desktop equipment, with a robot arm, PCB printer, pick-and-place machine, digital-twin rehearsal, and hardware-in-the-loop circuit tests.",
-      "unique_caveat": "The reported physical result is one first-run 60 Hz notch-filter experiment; it does not establish repeatability across board types, component failures, or longer production runs.",
-      "announcement_type": "new submission",
-      "announcement_batch": "2026-11-19",
-      "evidence_for_ranking": "The paper is indexed with paper/code information by CatalyzeX and ArXivSignals. These are modest discovery signals rather than independent popularity measures; lower placement reflects limited external attention and one demonstrated circuit task.",
+      "title": "Posterior Matching Distillation",
+      "published": "2026-11-19T18:59:57Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": [
+        "Hidir Yesiltepe",
+        "Julius Berner",
+        "Arash Vahdat",
+        "Pinar Yanardag"
+      ],
+      "themes": [
+        "Training & adaptation",
+        "Efficient inference & systems",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The authors propose Posterior Matching Distillation, which matches reweighted student-sample means to teacher posterior means to preserve the teacher’s image distribution while allowing stochastic generation at any trained timestep budget.",
+      "claimed_contribution": "The authors prove a posterior-identification result under their stated conditions and report the best FID among evaluated four-step methods on SDXL and FLUX.2 [klein], with competitive prompt-alignment and perceptual scores.",
+      "unique_caveat": "The reported empirical comparison is limited to SDXL and FLUX.2 [klein] and the evaluated four-step setting; broader model and sampling-budget behavior is not established by those results.",
+      "score": 12.115,
+      "score_components": {
+        "hf_upvotes": 10.833,
+        "code_stars": 1.282
+      },
+      "evidence_for_ranking": "Collected score 12.115: 36 Hugging Face paper upvotes and 12 GitHub stars; weighted components are HF 10.833 and code stars 1.282.",
       "refs": [
-        "https://arxiv.org/abs/2611.26503",
-        "https://www.catalyzex.com/paper/jarvis-an-agent-that-designs-builds-and-tests",
-        "https://arxivsignals.io/papers/2611.26503"
-      ]
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26629"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26629"
+        }
+      ],
+      "id": "2611.26629",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26629",
+      "arxiv_id": "2611.26629",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
+    },
+    {
+      "rank": 6,
+      "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+      "published": "2026-11-19T18:46:50Z",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "authors": [
+        "Jiahao Huang",
+        "Jun Wang"
+      ],
+      "themes": [
+        "Interpretability",
+        "Multimodal & vision-language"
+      ],
+      "abstract": "The authors introduce a multimodal Jacobian lens that maps vision and language representations to a shared output-vocabulary semantic space and use interventions to study selective concept access and downstream effects in vision-language models.",
+      "claimed_contribution": "The paper reports that concepts are readable and selectively accessible in intermediate states, that counterfactual interventions affect downstream computation, and that its J-space metrics track cross-modal alignment across tested VLM families and sizes.",
+      "unique_caveat": "These are probe- and intervention-based findings in tested VLMs; they do not establish that the models are conscious, and conclusions depend on the lens’s decoder-vocabulary readout.",
+      "score": 11.784,
+      "score_components": {
+        "hf_upvotes": 11.284,
+        "cross_lists": 0.5
+      },
+      "evidence_for_ranking": "Collected score 11.784: 42 Hugging Face paper upvotes and two cross-lists; weighted components are HF 11.284 and cross-lists 0.500, with no code-star component recorded.",
+      "refs": [
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26590"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26590"
+        }
+      ],
+      "id": "2611.26590",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26590",
+      "arxiv_id": "2611.26590",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
+    },
+    {
+      "rank": 7,
+      "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
+      "published": "2026-11-19T13:37:47Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "authors": [
+        "Jiahao Hu",
+        "Jingdong Du",
+        "Yichen Zhang",
+        "Yi Song",
+        "Zhenyu Zhang",
+        "Jiaxin Niu",
+        "Ruihang Li",
+        "Xiangzhao Hao",
+        "Yiqian Zhang",
+        "Yong Huang",
+        "Zefeng Zhang",
+        "Zheyuan Gu",
+        "Shuohuan Wang"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Training & adaptation"
+      ],
+      "abstract": "The authors extend a pretrained vision-language model with a shared language-aligned ViT and dense Transformer backbone for understanding and image generation, adding a Pixel Diffusion Head and HiGate pathway for synthesis and spatial detail.",
+      "claimed_contribution": "The authors report an average understanding score similar to the pretrained VLM alongside competitive image generation and editing, and argue that one dense backbone can support both without task-specific backbone computation.",
+      "unique_caveat": "The abstract characterizes generation and editing as competitive rather than claiming uniform state-of-the-art performance; the evidence is limited to the reported tasks and comparisons.",
+      "score": 11.138,
+      "score_components": {
+        "hf_upvotes": 9.534,
+        "code_stars": 1.354,
+        "cross_lists": 0.25
+      },
+      "evidence_for_ranking": "Collected score 11.138: 23 Hugging Face paper upvotes, 14 GitHub stars, one cross-list; weighted components are HF 9.534, code stars 1.354, cross-lists 0.250.",
+      "refs": [
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26107"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26107"
+        }
+      ],
+      "id": "2611.26107",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26107",
+      "arxiv_id": "2611.26107",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
+    },
+    {
+      "rank": 8,
+      "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
+      "published": "2026-11-19T17:01:00Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": [
+        "Zixuan Huang",
+        "Yang Zhou",
+        "Guli Zhang",
+        "Sunzhu Li",
+        "Hongyan Xie",
+        "Zehao Chen",
+        "Fuzhen Zhuang",
+        "Kaixuan Wang",
+        "Xiaozhi Chen",
+        "Yikun Ban",
+        "Deqing Wang"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Robotics & control",
+        "Training & adaptation"
+      ],
+      "abstract": "The authors propose a slow-fast vision-language navigation framework that leaves the VLM brain without navigation-domain supervised fine-tuning, instead using natural-language tool calls to an adapted action expert and closed-loop reinforcement learning.",
+      "claimed_contribution": "The authors report that ZeroVLN outperforms the compared SFT-based hierarchical methods on VLN-CE benchmarks while making only minor changes to the VLM brain and largely preserving its general visual capabilities.",
+      "unique_caveat": "“Zero SFT” applies to the VLM brain: the action expert is adapted and both policies are improved through RL on navigation episodes; the reported evaluation is on benchmarks, not a real-world deployment.",
+      "score": 10.952,
+      "score_components": {
+        "hf_upvotes": 9.406,
+        "code_stars": 1.546
+      },
+      "evidence_for_ranking": "Collected score 10.952: 22 Hugging Face paper upvotes and 21 GitHub stars; weighted components are HF 9.406 and code stars 1.546.",
+      "refs": [
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26414"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26414"
+        }
+      ],
+      "id": "2611.26414",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26414",
+      "arxiv_id": "2611.26414",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
+    },
+    {
+      "rank": 9,
+      "title": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
+      "published": "2026-11-19T16:39:59Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": [
+        "Yuqi Tang",
+        "Yang Shi",
+        "Yuran Wang",
+        "Tengfei Liu",
+        "Rundong Wang",
+        "Zongyang Qiu",
+        "Qixun Wang",
+        "Zhuoran Zhang",
+        "Xuanyu Zhu",
+        "Yifan Xu",
+        "Yiyan Ji",
+        "Shujie Li",
+        "Shixuan Liu",
+        "Haotian Wang",
+        "Yuanxing Zhang",
+        "Pengfei Wan",
+        "Chengwei Qin"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Evaluation & benchmarks",
+        "Training & adaptation"
+      ],
+      "abstract": "The authors combine video-level context with timestamped egocentric action descriptions, using 50,000 coarse-to-fine training examples and factual, coverage, and temporal-alignment rewards to refine captions.",
+      "claimed_contribution": "Across five egocentric benchmarks, the authors report leading results among evaluated open-source models for caption quality, caption-conditioned QA, and temporal alignment, with ablations supporting multiple reward terms and coarse-to-fine annotations.",
+      "unique_caveat": "Pose-derived motion facts are used only where sensor data are available, so that additional factual-supervision path is not present for every source video.",
+      "score": 10.747,
+      "score_components": {
+        "hf_upvotes": 9.774,
+        "code_stars": 0.973
+      },
+      "evidence_for_ranking": "Collected score 10.747: 25 Hugging Face paper upvotes and six GitHub stars; weighted components are HF 9.774 and code stars 0.973.",
+      "refs": [
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.26380"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.26380"
+        }
+      ],
+      "id": "2611.26380",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.26380",
+      "arxiv_id": "2611.26380",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
+    },
+    {
+      "rank": 10,
+      "title": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
+      "published": "2026-11-19T02:32:10Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "authors": [
+        "Xuwei Ding",
+        "Skylar Zhai",
+        "Linxin Song",
+        "Jiarui Feng",
+        "Dongqi Fu",
+        "Huajun Xi",
+        "Junnan Li",
+        "Jingcheng Liang",
+        "Jieyu Zhao",
+        "Yinglong Xia",
+        "Hong Li",
+        "Jian Kang"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Evaluation & benchmarks",
+        "Multimodal & vision-language"
+      ],
+      "abstract": "The authors introduce 125 programmatically generated interactive CAPTCHA tasks for spatial action, report a 25.9% failure rate for their best tested model, and show that fine-tuning Qwen3.5-9B on the environment raises success from 1.6% to 33.1%.",
+      "claimed_contribution": "The benchmark tests five spatial abilities through clicks and drags, provides generated instances with checkers and oracles, and the authors report gains on seven out-of-distribution benchmarks after fine-tuning.",
+      "unique_caveat": "The central task set is a synthetic CAPTCHA environment; transfer to seven external benchmarks is encouraging but does not by itself establish reliability across open-ended real-world spatial interaction.",
+      "score": 10.339,
+      "score_components": {
+        "hf_upvotes": 9.534,
+        "code_stars": 0.805
+      },
+      "evidence_for_ranking": "Collected score 10.339: 23 Hugging Face paper upvotes and four GitHub stars; weighted components are HF 9.534 and code stars 0.805.",
+      "refs": [
+        {
+          "title": "arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.25387"
+        },
+        {
+          "title": "Source",
+          "url": "https://huggingface.co/papers/2611.25387"
+        }
+      ],
+      "id": "2611.25387",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.25387",
+      "arxiv_id": "2611.25387",
+      "arxiv_version": "v1",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19"
     }
   ]
 }

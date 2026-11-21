@@ -1,83 +1,130 @@
-# arXiv AI daily — Thursday, 19 November 2026
-
-Five notable new papers from the latest available core-AI announcement batch. A recurring pattern is agents tested against feedback grounded in real environments—from digital laboratory twins and post-training trajectories to physical robot actions and fabricated hardware. This briefing covers scientific-agent evaluation, behavior shaping, and embodied control. Caveat: arXiv has no official trending chart, and this is an inferred, relevance-weighted shortlist rather than a popularity ranking; independent attention and citation evidence are limited for such recent papers.
+# arXiv AI — latest announcement batch 2026-11-19: 10 papers on embodied reasoning, video understanding, and visual-model design. Quick agenda: robot reasoning/action, omni-modal video, depth, controllable video generation, and efficient inference. arXiv has no official trending chart; this inferred ordering uses limited attention signals, and citation evidence is sparse for these new papers.
 
 ## Top papers (ranked)
 
-### 1. [TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs](https://arxiv.org/abs/2611.26248)
-- **Abstract:** TwinLab-Bench tests agents designing their own experiments across 52 real-laboratory-derived tasks, using lab-record-grounded digital twins and reports to score results; the strongest tested model averaged 45.0/100.
-- **Authors:** Yang Wan, Linchao Zhu
-- **arXiv:** `2611.26248v1` (published 2026-11-19 15:25:34 UTC; categories: `cs.AI`, `cs.CL`, `cs.LG`)
-- **Evidence for ranking:** The strongest checkable outside-discussion signal found in this batch: independent coverage at [Emergent](https://emergent.sh/news/claude-fable-5-2-scores-45-100-twinlab-bench) and [AGI Hunt](https://agihunt.info/en/p/1a1f840d338862038e032d41170), plus a public [GitHub benchmark](https://github.com/ZJUSCL/TwinLab-Bench) and Hugging Face paper discussion. Its three-way cross-list within the core AI corpus also gives it unusually broad category relevance.
-- **Claimed contribution:** The authors introduce task-specific “TwinLab agents” that return recorded or calculated experimental readings, and report that the best of 13 tested agents scores 45.0/100; the paper also analyzes common experiment-design failures.
-- **Caveat:** The benchmark tests agents in constructed digital twins, not by conducting new physical experiments; its readings and scoring are grounded in the records and calculators assembled for 52 tasks.
-- **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Agents & reasoning; Evaluation & benchmarks; Data & synthetic data
+### 1. [Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://arxiv.org/abs/2611.26444)
+- **Abstract:** The authors introduce a 30-task simulated manipulation benchmark that separately probes history-based reasoning, precise action, and closed-loop composition, finding that even their strongest evaluated agent succeeds on only 12.0% of Mind2Act episodes.
+- **Authors:** Yuzhi Huang, Jie Wu, Fanding Huang, Junchao Lin, Weichen Zhang, et al.
+- **arXiv:** `2611.26444v1` (published 2026-11-19 17:15:38 UTC; categories: `cs.RO`, `cs.AI`, `cs.CV`)
+- **Evidence for ranking:** Highest collected score (13.953): 49 Hugging Face paper upvotes (weighted component 11.736), 30 GitHub stars (1.717), and two cross-lists (0.500). [Hugging Face paper signal](https://huggingface.co/papers/2611.26444)
+- **Claimed contribution:** The authors provide 180 task configurations across three views and a diagnosis harness; their evaluation reports a large gap between Mind/Act performance (52.7%/39.0% for the strongest agent) and Mind2Act performance (12.0%).
+- **Caveat:** The authors say the views are different tasks, not matched interventions, so longer horizons and early execution errors cannot yet be separated from a composition deficit; all tasks are simulated tabletop manipulation.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Evaluation & benchmarks; Robotics & control; Agents & reasoning
 
-### 2. [PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity](https://arxiv.org/abs/2611.26565)
-- **Abstract:** PhyDEX evaluates whether robot policies can infer object mass, center of mass, and friction to throw objects to targets, reporting sub-3% success for three tested VLA policies.
-- **Authors:** Hao Vo, Taisei Hanyu, Yuki Ikebe, Pham Tri Quang, Sreevenkata Anjani Tishita Godavarthi, et al.
-- **arXiv:** `2611.26565v1` (published 2026-11-19 18:33:43 UTC; categories: `cs.RO`)
-- **Evidence for ranking:** The benchmark drew independent discussion from [Data Phoenix](https://dataphoenix.info/news/phydex-vla-physical-reasoning-benchmark) and a technical critique at [Pith](https://pith.science/paper/2611.26565); the arXiv abstract and full text make its evaluation setup and limits checkable. Attention indicators remain qualitative, not a readership measure.
-- **Claimed contribution:** The authors provide 35,357 simulated trajectories across nine throwing tasks and 100 scenes, with humanoid and real-world tests; they report that providing ground-truth physical properties roughly doubles policy success.
-- **Caveat:** The authors explicitly limit the benchmark to throwing, three randomized physical properties, and three VLA policies; they call for richer physics, more skills, and broader model coverage.
-- **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Robotics & control; Evaluation & benchmarks; Multimodal & vision-language
+### 2. [WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding](https://arxiv.org/abs/2611.26409)
+- **Abstract:** The authors present Chinese-English 2B–35B-A3B models that jointly process text, image, audio, and video with fast-instruct and reasoning modes, reporting evaluations across more than 120 benchmarks.
+- **Authors:** Changli Tang, Jie Yang, Tianyi Wang, Lei Li, Daoze Zhang, et al.
+- **arXiv:** `2611.26409v1` (published 2026-11-19 16:58:15 UTC; categories: `cs.CV`, `eess.AS`)
+- **Evidence for ranking:** Second by the collected score (13.675): 43 Hugging Face paper upvotes (component 11.353), 62 GitHub stars (2.072), and one cross-list (0.250). [Hugging Face paper signal](https://huggingface.co/papers/2611.26409)
+- **Claimed contribution:** The authors report that WeMM-Video-35B-A3B leads their open-source comparisons on omni-modal video tasks and that the 9B variant outperforms the compared 30B open-source model; they release weights and an evaluation/reproduction pipeline.
+- **Caveat:** For existing comparison models, the paper uses official scores where available and its own evaluations otherwise, so not every comparison is from a single uniform evaluation run.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Multimodal & vision-language; Training & adaptation; Evaluation & benchmarks
 
-### 3. [AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher](https://arxiv.org/abs/2611.26510)
-- **Abstract:** AutoMaster uses natural-language skills, trajectory analysis, and data selection to shape teacher demonstrations before fine-tuning a target model, reporting gains over vanilla supervised fine-tuning across six settings.
-- **Authors:** Guoxin Chen, Shuang Sun, Fanzhe Meng, Xinyu Tang, Ruihua Song, Wayne Xin Zhao
-- **arXiv:** `2611.26510v1` (published 2026-11-19 17:57:59 UTC; categories: `cs.CL`)
-- **Evidence for ranking:** Public release artifacts make the work directly inspectable: the authors provide a [project page](https://aweai-team.github.io/AutoMaster/), [code](https://github.com/RUCAIBox/AutoMaster), and models. A Hugging Face paper page and a multi-benchmark result provide further checkable signals; these indicate dissemination and technical relevance, not verified popularity.
-- **Claimed contribution:** The authors report that Skill-FT improves mean performance over vanilla SFT by 1.42–8.99 percentage points on Terminal, Search, and software-engineering tasks, holding teacher, task pool, training-set size, and SFT recipe fixed.
-- **Caveat:** The reported experiments use Qwen3.5 4B/9B target models and six settings across three task families; transfer to other model families, teachers, or tasks remains to be demonstrated.
-- **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Training & adaptation; Agents & reasoning; Evaluation & benchmarks
+### 3. [Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://arxiv.org/abs/2611.26603)
+- **Abstract:** The authors present a native-resolution network for metric depth from images and video, designed to combine sharp boundaries with temporal consistency and reporting a new Pareto frontier across accuracy, sharpness, consistency, and runtime.
+- **Authors:** Peiyun Hu, Marko Mihajlovic, Lyndon Duong, Lahav Lipson, Wei Dong, et al.
+- **arXiv:** `2611.26603v1` (published 2026-11-19 18:55:41 UTC; categories: `cs.CV`, `cs.LG`)
+- **Evidence for ranking:** Third by the collected score (13.280): 29 Hugging Face paper upvotes (component 10.204), 284 GitHub stars (2.826), and one cross-list (0.250). [Hugging Face paper signal](https://huggingface.co/papers/2611.26603)
+- **Claimed contribution:** The paper describes a shared multi-frame transformer, multi-view consistency training, and a family of models; its abstract reports improvements over prior work in metric accuracy, boundary sharpness, and temporal consistency.
+- **Caveat:** The multi-view consistency loss uses ground-truth camera poses and ground-truth depth to exclude occluded or moving pixels during training, a supervision requirement relevant to reproducing that objective.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Multimodal & vision-language; Efficient inference & systems; Training & adaptation
 
-### 4. [AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control](https://arxiv.org/abs/2611.26613)
-- **Abstract:** AgentRoboCritic pairs each robot action with the agent’s stated local intent so a critic can label its outcome and failure mode, analyzing frontier agents across 12 manipulation benchmarks.
-- **Authors:** Yiyang Du, Yuxuan Kuang, Qitao Zhao, Yixuan Wang, Zhanqiu Guo, et al.
-- **arXiv:** `2611.26613v1` (published 2026-11-19 18:57:25 UTC; categories: `cs.RO`, `cs.CL`, `cs.CV`)
-- **Evidence for ranking:** Its cross-list spans three core AI categories, and the authors released a [12,844-action dataset and critic project](https://adu2021.github.io/blog/AgentRoboCritic/) with a human-annotated evaluation set. This is a concrete research artifact, but outside-attention evidence is sparse, so the placement is relevance-led.
-- **Claimed contribution:** The authors report that fine-tuning Muse-Glimmer-30B raises failure-mode accuracy from 32.58% to 74.24% on their 400-action human-annotated benchmark, enabling lower-cost action-level analysis.
-- **Caveat:** Critic validation is based on 400 human-annotated actions; generalization to other robots, action distributions, and independently annotated evaluation sets remains open.
-- **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Robotics & control; Evaluation & benchmarks; Agents & reasoning
+### 4. [Coda-DaVinci: Reimagining Video Generation with Code2Video](https://arxiv.org/abs/2611.26595)
+- **Abstract:** The authors study agent-authored 3D proxies for video generation and introduce a task-adaptive framework that selects direct or proxy-guided generation, with proxy granularity, simulation, and prompting evaluated through controlled experiments and blinded human ratings.
+- **Authors:** Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu, et al.
+- **arXiv:** `2611.26595v1` (published 2026-11-19 18:51:58 UTC; categories: `cs.CV`)
+- **Evidence for ranking:** Fourth by the collected score (12.319): 35 Hugging Face paper upvotes (component 10.751) and 22 GitHub stars (1.568). [Hugging Face paper signal](https://huggingface.co/papers/2611.26595)
+- **Claimed contribution:** The authors report that coarse proxies favor natural motion while medium-grained proxies favor consistency, and that their framework improves instruction following, scene consistency, physical plausibility, and visual realism on the evaluated comparisons.
+- **Caveat:** The abstract reports remaining long-video weaknesses in transition stability and adherence to scene settings.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Agents & reasoning; Multimodal & vision-language; Evaluation & benchmarks
 
-### 5. [JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own](https://arxiv.org/abs/2611.26503)
-- **Abstract:** JARVIS uses an embodied agent and executable digital twin to design, fabricate, measure, and revise circuit boards, demonstrating a 60 Hz notch filter built and tested without human intervention.
-- **Authors:** Shibo Zhou, Tianqi Hong, Zheng Yan, He Yang
-- **arXiv:** `2611.26503v1` (published 2026-11-19 17:53:30 UTC; categories: `cs.RO`, `eess.SY`)
-- **Evidence for ranking:** The paper is indexed with paper/code information by [CatalyzeX](https://www.catalyzex.com/paper/jarvis-an-agent-that-designs-builds-and-tests) and [ArXivSignals](https://arxivsignals.io/papers/2611.26503). These are modest discovery signals rather than independent popularity measures; the lower placement reflects limited external attention and a single demonstrated circuit task.
-- **Claimed contribution:** The authors report an end-to-end design–build–test–learn loop using unmodified desktop equipment, with a robot arm, PCB printer, pick-and-place machine, digital-twin rehearsal, and hardware-in-the-loop circuit tests.
-- **Caveat:** The reported physical result is one first-run 60 Hz notch-filter experiment; it does not establish repeatability across board types, component failures, or longer production runs.
-- **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Robotics & control; Agents & reasoning; Evaluation & benchmarks
+### 5. [Posterior Matching Distillation](https://arxiv.org/abs/2611.26629)
+- **Abstract:** The authors propose Posterior Matching Distillation, which matches reweighted student-sample means to teacher posterior means to preserve the teacher’s image distribution while allowing stochastic generation at any trained timestep budget.
+- **Authors:** Hidir Yesiltepe, Julius Berner, Arash Vahdat, Pinar Yanardag
+- **arXiv:** `2611.26629v1` (published 2026-11-19 18:59:57 UTC; categories: `cs.CV`)
+- **Evidence for ranking:** Fifth by the collected score (12.115): 36 Hugging Face paper upvotes (component 10.833) and 12 GitHub stars (1.282). [Hugging Face paper signal](https://huggingface.co/papers/2611.26629)
+- **Claimed contribution:** The authors prove a posterior-identification result under their stated conditions and report the best FID among evaluated four-step methods on SDXL and FLUX.2 [klein], with competitive prompt-alignment and perceptual scores.
+- **Caveat:** The reported empirical comparison is limited to SDXL and FLUX.2 [klein] and the evaluated four-step setting; broader model and sampling-budget behavior is not established by those results.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Training & adaptation; Efficient inference & systems; Evaluation & benchmarks
+
+### 6. [Probing the "Conscious" Mind: Selective Access and Global Workspace in Vision-Language Models](https://arxiv.org/abs/2611.26590)
+- **Abstract:** The authors introduce a multimodal Jacobian lens that maps vision and language representations to a shared output-vocabulary semantic space and use interventions to study selective concept access and downstream effects in vision-language models.
+- **Authors:** Jiahao Huang, Jun Wang
+- **arXiv:** `2611.26590v1` (published 2026-11-19 18:46:50 UTC; categories: `cs.AI`, `cs.CV`, `cs.LG`)
+- **Evidence for ranking:** Sixth by the collected score (11.784): 42 Hugging Face paper upvotes (component 11.284) and two cross-lists (0.500); no code-star component was recorded. [Hugging Face paper signal](https://huggingface.co/papers/2611.26590)
+- **Claimed contribution:** The paper reports that concepts are readable and selectively accessible in intermediate states, that counterfactual interventions affect downstream computation, and that its J-space metrics track cross-modal alignment across tested VLM families and sizes.
+- **Caveat:** These are probe- and intervention-based findings in tested VLMs; they do not establish that the models are conscious, and conclusions depend on the lens’s decoder-vocabulary readout.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Interpretability; Multimodal & vision-language
+
+### 7. [HiUni: Harmonizing Understanding and Generation in Shared Visual Space](https://arxiv.org/abs/2611.26107)
+- **Abstract:** The authors extend a pretrained vision-language model with a shared language-aligned ViT and dense Transformer backbone for understanding and image generation, adding a Pixel Diffusion Head and HiGate pathway for synthesis and spatial detail.
+- **Authors:** Jiahao Hu, Jingdong Du, Yichen Zhang, Yi Song, Zhenyu Zhang, et al.
+- **arXiv:** `2611.26107v1` (published 2026-11-19 13:37:47 UTC; categories: `cs.CV`, `cs.AI`)
+- **Evidence for ranking:** Seventh by the collected score (11.138): 23 Hugging Face paper upvotes (component 9.534), 14 GitHub stars (1.354), and one cross-list (0.250). [Hugging Face paper signal](https://huggingface.co/papers/2611.26107)
+- **Claimed contribution:** The authors report an average understanding score similar to the pretrained VLM alongside competitive image generation and editing, and argue that one dense backbone can support both without task-specific backbone computation.
+- **Caveat:** The abstract characterizes generation and editing as competitive rather than claiming uniform state-of-the-art performance; the evidence is limited to the reported tasks and comparisons.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Multimodal & vision-language; Training & adaptation
+
+### 8. [ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain](https://arxiv.org/abs/2611.26414)
+- **Abstract:** The authors propose a slow-fast vision-language navigation framework that leaves the VLM brain without navigation-domain supervised fine-tuning, instead using natural-language tool calls to an adapted action expert and closed-loop reinforcement learning.
+- **Authors:** Zixuan Huang, Yang Zhou, Guli Zhang, Sunzhu Li, Hongyan Xie, et al.
+- **arXiv:** `2611.26414v1` (published 2026-11-19 17:01:00 UTC; categories: `cs.AI`)
+- **Evidence for ranking:** Eighth by the collected score (10.952): 22 Hugging Face paper upvotes (component 9.406) and 21 GitHub stars (1.546). [Hugging Face paper signal](https://huggingface.co/papers/2611.26414)
+- **Claimed contribution:** The authors report that ZeroVLN outperforms the compared SFT-based hierarchical methods on VLN-CE benchmarks while making only minor changes to the VLM brain and largely preserving its general visual capabilities.
+- **Caveat:** “Zero SFT” applies to the VLM brain: the action expert is adapted and both policies are improved through RL on navigation episodes; the reported evaluation is on benchmarks, not a real-world deployment.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Agents & reasoning; Robotics & control; Training & adaptation
+
+### 9. [EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning](https://arxiv.org/abs/2611.26380)
+- **Abstract:** The authors combine video-level context with timestamped egocentric action descriptions, using 50,000 coarse-to-fine training examples and factual, coverage, and temporal-alignment rewards to refine captions.
+- **Authors:** Yuqi Tang, Yang Shi, Yuran Wang, Tengfei Liu, Rundong Wang, et al.
+- **arXiv:** `2611.26380v1` (published 2026-11-19 16:39:59 UTC; categories: `cs.CV`)
+- **Evidence for ranking:** Ninth by the collected score (10.747): 25 Hugging Face paper upvotes (component 9.774) and six GitHub stars (0.973). [Hugging Face paper signal](https://huggingface.co/papers/2611.26380)
+- **Claimed contribution:** Across five egocentric benchmarks, the authors report leading results among evaluated open-source models for caption quality, caption-conditioned QA, and temporal alignment, with ablations supporting multiple reward terms and coarse-to-fine annotations.
+- **Caveat:** Pose-derived motion facts are used only where sensor data are available, so that additional factual-supervision path is not present for every source video.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Multimodal & vision-language; Evaluation & benchmarks; Training & adaptation
+
+### 10. [TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs](https://arxiv.org/abs/2611.25387)
+- **Abstract:** The authors introduce 125 programmatically generated interactive CAPTCHA tasks for spatial action, report a 25.9% failure rate for their best tested model, and show that fine-tuning Qwen3.5-9B on the environment raises success from 1.6% to 33.1%.
+- **Authors:** Xuwei Ding, Skylar Zhai, Linxin Song, Jiarui Feng, Dongqi Fu, et al.
+- **arXiv:** `2611.25387v1` (published 2026-11-19 02:32:10 UTC; categories: `cs.LG`)
+- **Evidence for ranking:** Tenth by the collected score (10.339): 23 Hugging Face paper upvotes (component 9.534) and four GitHub stars (0.805). [Hugging Face paper signal](https://huggingface.co/papers/2611.25387)
+- **Claimed contribution:** The benchmark tests five spatial abilities through clicks and drags, provides generated instances with checkers and oracles, and the authors report gains on seven out-of-distribution benchmarks after fine-tuning.
+- **Caveat:** The central task set is a synthetic CAPTCHA environment; transfer to seven external benchmarks is encouraging but does not by itself establish reliability across open-ended real-world spatial interaction.
+- **Announcement type:** new submission, 2026-11-19 announcement batch
+- **Themes:** Agents & reasoning; Evaluation & benchmarks; Multimodal & vision-language
 
 ## Trending Research Themes
 
-- **Agents judged by grounded feedback:** TwinLab-Bench compares proposed experiments with real-lab records; AutoMaster uses student evaluation and trajectories to revise demonstrations; AgentRoboCritic judges actions against stated intent; JARVIS rehearses a physical build in an executable twin. These papers share feedback loops, but do not establish a single converged agent architecture.
-- **Evaluation is moving beyond task completion:** TwinLab-Bench scores experimental design, AgentRoboCritic labels action-level failures, and PhyDEX probes physical-property reasoning. This is a recurring methodological emphasis in the selected set, not evidence that benchmarks alone solve the underlying capability gaps.
-- **Embodied AI remains a concentrated strand:** PhyDEX, AgentRoboCritic, and JARVIS are all primarily `cs.RO`, covering physical reasoning, action diagnosis, and fabrication. The daily candidate pool itself is broader: its 546 records include 157 primary `cs.CV`, 94 `cs.AI`, 91 `cs.LG`, 66 `cs.RO`, and 48 `cs.CL` papers; 470 have a configured core-AI category as primary, with the remaining 76 included through a core-AI cross-list.
+- **Embodied systems are being assessed as closed loops, not only as perception or action modules.** Mind2Act World separates reasoning, execution, and their composition; ZeroVLN connects language decisions to an adapted action expert; TuringSpace measures perception-action correction in interactive tasks. These are different settings, but all expose the gap between isolated competence and acting on feedback.
+- **Video work emphasizes temporal structure and cross-modal grounding.** WeMM-Video unifies audio-visual perception and reasoning; EgoCaptioner makes egocentric captions step-timed and rewards temporal alignment; Coda-DaVinci uses explicit 3D proxies and simulation to control generated motion. The common theme is temporal organization, not a single shared architecture.
+- **Vision systems are combining capabilities that were often separated.** HiUni shares a visual backbone between understanding and generation, while Depth Pro 2 jointly processes images and video to balance sharpness and stability. MC-Lens takes a different tack by probing how visual concepts become accessible to language-model computation.
+- **Efficiency claims target different bottlenecks.** Posterior Matching Distillation reduces diffusion sampling to a flexible number of trained steps; Depth Pro 2 reports model-size/runtime trade-offs; WeMM-Video offers multiple parameter scales and modes. These results are not directly comparable, and the selected set remains concentrated in vision: six of ten papers have primary category `cs.CV`.
 
 ## Open Problems and Research Directions
 
-- **Digital twins versus physical science (author-stated boundary):** TwinLab-Bench tests design in record-grounded twins rather than new physical experiments. Compare agent-designed experiments with later physical replications in more laboratories, and measure how errors in each twin affect conclusions. [TwinLab-Bench](https://arxiv.org/abs/2611.26248)
-- **Physical reasoning beyond throwing (author-stated limitation):** PhyDEX is limited to throwing and three randomized properties. Extend evaluation to pushing, sliding, pouring, deformable objects, and richer physics, then test whether policies can actively probe hidden properties rather than receive them. [PhyDEX](https://arxiv.org/abs/2611.26565)
-- **Action-critic reliability (evidence-tied synthesis):** AgentRoboCritic validates labels on 400 human-annotated actions. Replicate the action-level evaluation with more annotators, robots, and unseen action distributions; separate critic error from policy recovery effects. [AgentRoboCritic](https://arxiv.org/abs/2611.26613)
-- **Post-training transfer (evidence-tied synthesis):** AutoMaster’s gains cover one target-model family and three task families. Test other teachers and model families, and independently reproduce the benefit of retaining skill context in demonstrations. [AutoMaster](https://arxiv.org/abs/2611.26510)
-- **Robust autonomous fabrication (evidence-tied synthesis):** JARVIS demonstrates one board experiment. Repeat across circuit classes and perturbations, log failures and recovery rates, and compare digital-twin predictions with repeated physical measurements. [JARVIS](https://arxiv.org/abs/2611.26503)
+- **Author-stated — diagnosing composition failures:** Mind2Act World’s views use different tasks and horizons, so the authors cannot yet distinguish a composition deficit from longer-horizon difficulty or early execution failure. Run matched interventions on the same task with reasoning state, action feedback, and time budget varied independently, then verify the result beyond simulation. [Mind2Act World](https://arxiv.org/abs/2611.26444)
+- **Evidence-tied synthesis — robustness of temporal grounding:** WeMM-Video targets cross-modal hallucination and EgoCaptioner evaluates factual and temporal alignment, while Coda-DaVinci reports transition and scene-setting weaknesses. Stress-test these systems with missing/noisy modalities, long clips, and unexpected scene changes, scoring factual support and event ordering separately. [WeMM-Video](https://arxiv.org/abs/2611.26409) · [EgoCaptioner](https://arxiv.org/abs/2611.26380) · [Coda-DaVinci](https://arxiv.org/abs/2611.26595)
+- **Evidence-tied synthesis — generalization of action benchmarks:** TuringSpace reports transfer from synthetic CAPTCHA training to seven benchmarks, while ZeroVLN evaluates on VLN-CE. Compare both against held-out interactive environments and physical or real-world navigation, with perturbations and recovery rates reported alongside success. [TuringSpace](https://arxiv.org/abs/2611.25387) · [ZeroVLN](https://arxiv.org/abs/2611.26414)
+- **Proposed follow-up — quality across distillation budgets:** Posterior Matching Distillation supports sampling budgets within its trained timestep grid, but the abstract’s best-FID comparison focuses on four-step generation for two model families. Evaluate a wider budget curve and explicit sample-diversity metrics to test where mode coverage and speed trade off. [Posterior Matching Distillation](https://arxiv.org/abs/2611.26629)
 
 ## Takeaway
 
-The most visible pattern in this batch is not simply “more capable agents,” but more explicit evaluation of how agents use feedback in scientific and physical settings. The best-supported attention signal here is for TwinLab-Bench; the other entries are notable for their artifacts and concrete tests, while their popularity and generality remain uncertain.
+The strongest visible pattern in this batch is a push toward models and benchmarks that represent temporal structure and feedback: in robot control, multimodal video, and controllable generation. Attention counts identify which new papers drew early notice, but the results remain author-reported and benchmark-bound; broader, matched, and real-world evaluation will determine how far the claims generalize.
 
 ## Method and sources
 
-- **Window:** Latest available arXiv announcement batch, Thursday 2026-11-19; exact daily window 2026-11-19 through 2026-11-19. This is a prior batch relative to the snapshot at 2026-11-20 17:05:06 UTC. The broad submitted-date query returned papers through 2026-11-19, with the latest timestamp at 18:59:57 UTC.
-- **Core corpus query:** `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`, constrained to `submittedDate:[202611190000 TO 202611200000]`, sorted by submitted date descending. It returned 546 records and represented all configured categories. Primary-category counts included `cs.CV` 157, `cs.AI` 94, `cs.LG` 91, `cs.RO` 66, `cs.CL` 48, `stat.ML` 9, `cs.MA` 3, and `cs.NE` 2. The rest were cross-listed from other primary categories.
-- **Ranking method:** Evidence hierarchy was external coverage/discussion, cross-list breadth and publicly checkable research artifacts, then relevance of the reported evaluation. No numeric trend score was constructed. Papers are new submissions, not revisions. arXiv recent listings and every selected abstract page were checked; full-text pages were read for the leading three papers.
-- **Citation and attention data:** Semantic Scholar fields were attempted but did not return usable records for this snapshot; citation totals were therefore not used. Attention claims above are tied to the cited checkable sources and are qualitative, not downloads, views, or votes.
-- **Batch sources:** [arXiv cs.AI recent listings](https://arxiv.org/list/cs.AI/recent), [arXiv cs.RO recent listings](https://arxiv.org/list/cs.RO/recent), and the [arXiv API](https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Astat.ML%20OR%20cat%3Acs.CL%20OR%20cat%3Acs.CV%20OR%20cat%3Acs.RO%20OR%20cat%3Acs.NE%20OR%20cat%3Acs.MA%29%20AND%20submittedDate%3A%5B202611190000%20TO%20202611200000%5D&sortBy=submittedDate&sortOrder=descending&start=0&max_results=2000).
-- **Selected arXiv pages:** [2611.26248](https://arxiv.org/abs/2611.26248), [2611.26565](https://arxiv.org/abs/2611.26565), [2611.26510](https://arxiv.org/abs/2611.26510), [2611.26613](https://arxiv.org/abs/2611.26613), [2611.26503](https://arxiv.org/abs/2611.26503).
-- **Corroborating sources:** [Emergent on TwinLab-Bench](https://emergent.sh/news/claude-fable-5-2-scores-45-100-twinlab-bench), [AGI Hunt on TwinLab-Bench](https://agihunt.info/en/p/1a1f840d338862038e032d41170), [TwinLab-Bench GitHub](https://github.com/ZJUSCL/TwinLab-Bench), [Data Phoenix on PhyDEX](https://dataphoenix.info/news/phydex-vla-physical-reasoning-benchmark), [Pith analysis of PhyDEX](https://pith.science/paper/2611.26565), [AutoMaster project](https://aweai-team.github.io/AutoMaster/), [AutoMaster GitHub](https://github.com/RUCAIBox/AutoMaster), [AgentRoboCritic project](https://adu2021.github.io/blog/AgentRoboCritic/), and [JARVIS CatalyzeX listing](https://www.catalyzex.com/paper/jarvis-an-agent-that-designs-builds-and-tests).
+- **Window and snapshot:** Daily latest available arXiv announcement batch dated **2026-11-19**; this is a prior batch for the 2026-11-21 snapshot. The exact batch window is **2026-11-18 19:00:00 UTC to 2026-11-19 19:00:00 UTC**, announced **2026-11-20 01:00:00 UTC**. Snapshot time: **2026-11-21 21:00:51 UTC**. All ten selected records are new `v1` submissions in that batch, not revisions.
+- **Corpus:** `cs.AI OR cs.LG OR stat.ML OR cs.CL OR cs.CV OR cs.RO OR cs.NE OR cs.MA`. The supplied signal file reports a 635-candidate pool, including 42 with at least one collected attention signal; its note says the listing is capped and may not exhaust very large categories. Category recent listings: [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent).
+- **Ranking:** Started from the supplied candidate scores and ranked the selected set by the collector’s deterministic log1p-damped weighted sum; per-paper score components are shown above. Configured weights are Hugging Face upvotes 3.0, Hacker News points 1.5, Hacker News comments 1.0, Semantic Scholar citations 2.0, influential citations 1.0, code stars 0.5, and cross-lists 0.25. Scores are a transparent ranking aid, not an official or universal trend metric. Hugging Face and Semantic Scholar records were available for all candidates selected; the selected entries have zero current Semantic Scholar citation and influential-citation totals. Hacker News collection was available but no selected paper has a recorded HN points/comments signal. None of the signal sources reported an error.
+- **Primary-page verification and paper reading:** Each selected title, author order, version, timestamp, categories, and abstract was verified on its linked arXiv abstract page. The full arXiv HTML for Mind2Act World, WeMM-Video, and Depth Pro 2 was also read for method, evaluation, and caveat context. Other contribution and caveat statements above are bounded to the verified arXiv abstracts.
+- **Selected records:** [2611.26444](https://arxiv.org/abs/2611.26444) · [2611.26409](https://arxiv.org/abs/2611.26409) · [2611.26603](https://arxiv.org/abs/2611.26603) · [2611.26595](https://arxiv.org/abs/2611.26595) · [2611.26629](https://arxiv.org/abs/2611.26629) · [2611.26590](https://arxiv.org/abs/2611.26590) · [2611.26107](https://arxiv.org/abs/2611.26107) · [2611.26414](https://arxiv.org/abs/2611.26414) · [2611.26380](https://arxiv.org/abs/2611.26380) · [2611.25387](https://arxiv.org/abs/2611.25387)
+- **Attention signal records:** [HF paper 2611.26444](https://huggingface.co/papers/2611.26444) · [2611.26409](https://huggingface.co/papers/2611.26409) · [2611.26603](https://huggingface.co/papers/2611.26603) · [2611.26595](https://huggingface.co/papers/2611.26595) · [2611.26629](https://huggingface.co/papers/2611.26629) · [2611.26590](https://huggingface.co/papers/2611.26590) · [2611.26107](https://huggingface.co/papers/2611.26107) · [2611.26414](https://huggingface.co/papers/2611.26414) · [2611.26380](https://huggingface.co/papers/2611.26380) · [2611.25387](https://huggingface.co/papers/2611.25387)

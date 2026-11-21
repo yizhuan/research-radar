@@ -1,6 +1,6 @@
 # What's trending in Github, AI, math, and physics - Daily updates
 
-Generated: 2026-11-20 02:49
+Generated: 2026-11-20 17:36
 Source: `/home/yizhuan/.research`
 
 ## Ai
@@ -17,7 +17,7 @@ Source: `/home/yizhuan/.research`
 
 ## Bio
 
-- **Daily**: [arxiv-trending-bio-daily-2026-11-19](bio/daily/arxiv-trending-bio-daily-2026-11-19.md) — 2026-11-19
+- **Daily**: [arxiv-trending-bio-daily-2026-11-20](bio/daily/arxiv-trending-bio-daily-2026-11-20.md) — 2026-11-20
 - **Monthly**: [arxiv-trending-bio-monthly-2026-10-30](bio/monthly/arxiv-trending-bio-monthly-2026-10-30.md) — 2026-10-30
 - **Weekly**: [arxiv-trending-bio-weekly-2026-11-20](bio/weekly/arxiv-trending-bio-weekly-2026-11-20.md) — 2026-11-20
 
@@ -35,12 +35,12 @@ Source: `/home/yizhuan/.research`
 
 ## Math
 
-- **Daily**: [arxiv-trending-math-daily-2026-11-19](math/daily/arxiv-trending-math-daily-2026-11-19.md) — 2026-11-19
+- **Daily**: [arxiv-trending-math-daily-2026-11-20](math/daily/arxiv-trending-math-daily-2026-11-20.md) — 2026-11-20
 - **Monthly**: [arxiv-trending-math-monthly-2026-10-30](math/monthly/arxiv-trending-math-monthly-2026-10-30.md) — 2026-10-30
 - **Weekly**: [arxiv-trending-math-weekly-2026-11-20](math/weekly/arxiv-trending-math-weekly-2026-11-20.md) — 2026-11-20
 
 ## Physics
 
-- **Daily**: [arxiv-trending-physics-daily-2026-11-19](physics/daily/arxiv-trending-physics-daily-2026-11-19.md) — 2026-11-19
+- **Daily**: [arxiv-trending-physics-daily-2026-11-20](physics/daily/arxiv-trending-physics-daily-2026-11-20.md) — 2026-11-20
 - **Monthly**: [arxiv-trending-physics-monthly-2026-10-30](physics/monthly/arxiv-trending-physics-monthly-2026-10-30.md) — 2026-10-30
 - **Weekly**: [arxiv-trending-physics-weekly-2026-11-20](physics/weekly/arxiv-trending-physics-weekly-2026-11-20.md) — 2026-11-20

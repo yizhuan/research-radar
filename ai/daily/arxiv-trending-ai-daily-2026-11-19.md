@@ -1,85 +1,83 @@
 # arXiv AI daily — Thursday, 19 November 2026
 
-Five leading new submissions from the latest core-AI announcement batch, ordered by recorded Hugging Face Daily Papers votes: Game2Player (19), Jeveration (14), WorldRuler (11), then two papers tied at 6. The visible mix is interactive visual worlds, single-pass generation, and practical evaluation/systems work; today’s briefing covers agents, generation, and evaluators. Caveat: arXiv has no official trending chart; this ordering is inferred from one third-party vote snapshot, and citation evidence is too sparse for these new papers to confirm popularity or impact.
+Five notable new papers from the latest available core-AI announcement batch. A recurring pattern is agents tested against feedback grounded in real environments—from digital laboratory twins and post-training trajectories to physical robot actions and fabricated hardware. This briefing covers scientific-agent evaluation, behavior shaping, and embodied control. Caveat: arXiv has no official trending chart, and this is an inferred, relevance-weighted shortlist rather than a popularity ranking; independent attention and citation evidence are limited for such recent papers.
 
 ## Top papers (ranked)
 
-### 1. [Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development](https://arxiv.org/abs/2611.24154)
-- **Abstract:** Game2Player co-develops verifiable web-game environments and player agents to collect gameplay experience, reporting improved visual-agent progress on its held-out PlayerBench and the external GameWorld benchmark.
-- **Authors:** Xirui Jiang, Yuxi Chen, Rui Yang, Feng Luo, Pengcheng Wang, et al.
-- **arXiv:** `2611.24154v1` (published 2026-11-18 09:58:53 UTC; categories: `cs.CV`)
-- **Evidence for ranking:** 19 votes in the archived Hugging Face Daily Papers edition recorded 2026-11-19 07:03 UTC, the highest count among papers in this announcement batch that made the archive’s 15-paper list; it was second in the full archive list, behind an older paper outside this batch.
-- **Claimed contribution:** The authors describe a Builder/Coding Player/VLM Player loop that builds and repairs game tasks, collecting 15.7K trajectories across 568 games and 3,436 tasks; they report a 9B agent improves PlayerBench progress from 14.3% to 31.2% and GameWorld progress from 30.0% to 53.1%.
-- **Caveat:** The authors state that accepted environments are not guaranteed correct without a full human audit; the pipeline covers offline single-player browser games, the VLM player pauses the game at each decision, and several builder/player models are proprietary.
+### 1. [TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs](https://arxiv.org/abs/2611.26248)
+- **Abstract:** TwinLab-Bench tests agents designing their own experiments across 52 real-laboratory-derived tasks, using lab-record-grounded digital twins and reports to score results; the strongest tested model averaged 45.0/100.
+- **Authors:** Yang Wan, Linchao Zhu
+- **arXiv:** `2611.26248v1` (published 2026-11-19 15:25:34 UTC; categories: `cs.AI`, `cs.CL`, `cs.LG`)
+- **Evidence for ranking:** The strongest checkable outside-discussion signal found in this batch: independent coverage at [Emergent](https://emergent.sh/news/claude-fable-5-2-scores-45-100-twinlab-bench) and [AGI Hunt](https://agihunt.info/en/p/1a1f840d338862038e032d41170), plus a public [GitHub benchmark](https://github.com/ZJUSCL/TwinLab-Bench) and Hugging Face paper discussion. Its three-way cross-list within the core AI corpus also gives it unusually broad category relevance.
+- **Claimed contribution:** The authors introduce task-specific “TwinLab agents” that return recorded or calculated experimental readings, and report that the best of 13 tested agents scores 45.0/100; the paper also analyzes common experiment-design failures.
+- **Caveat:** The benchmark tests agents in constructed digital twins, not by conducting new physical experiments; its readings and scoring are grounded in the records and calculators assembled for 52 tasks.
 - **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Multimodal & vision-language; Agents & reasoning; Data & synthetic data
+- **Themes:** Agents & reasoning; Evaluation & benchmarks; Data & synthetic data
 
-### 2. [Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738)
-- **Abstract:** Jeveration repurposes a frozen vision-language model and a shared random state for single-pass image generation, image-to-image generation, and dense prediction, reporting 512×512 generation in 78 ms with competitive image quality.
-- **Authors:** Yuhe Liu, Qi Li, Shihua Zhang, Xinchao Wang
-- **arXiv:** `2611.24738v1` (published 2026-11-18 16:56:59 UTC; categories: `cs.CV`)
-- **Evidence for ranking:** 14 votes in the same archived Hugging Face Daily Papers edition; third in the overall vote list and second among papers from this announcement batch.
-- **Claimed contribution:** The authors condition parallel image-code predictions on a shared random state and first learn a distribution over discrete image codes; one checkpoint handles text-to-image, image-to-image, and dense prediction in one forward pass.
-- **Caveat:** The reported 78 ms result is for 512-pixel images on a single H200; the paper does not establish the same speed/quality trade-off at larger resolutions or across other hardware.
+### 2. [PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity](https://arxiv.org/abs/2611.26565)
+- **Abstract:** PhyDEX evaluates whether robot policies can infer object mass, center of mass, and friction to throw objects to targets, reporting sub-3% success for three tested VLA policies.
+- **Authors:** Hao Vo, Taisei Hanyu, Yuki Ikebe, Pham Tri Quang, Sreevenkata Anjani Tishita Godavarthi, et al.
+- **arXiv:** `2611.26565v1` (published 2026-11-19 18:33:43 UTC; categories: `cs.RO`)
+- **Evidence for ranking:** The benchmark drew independent discussion from [Data Phoenix](https://dataphoenix.info/news/phydex-vla-physical-reasoning-benchmark) and a technical critique at [Pith](https://pith.science/paper/2611.26565); the arXiv abstract and full text make its evaluation setup and limits checkable. Attention indicators remain qualitative, not a readership measure.
+- **Claimed contribution:** The authors provide 35,357 simulated trajectories across nine throwing tasks and 100 scenes, with humanoid and real-world tests; they report that providing ground-truth physical properties roughly doubles policy success.
+- **Caveat:** The authors explicitly limit the benchmark to throwing, three randomized physical properties, and three VLA policies; they call for richer physics, more skills, and broader model coverage.
 - **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Multimodal & vision-language; Efficient inference & systems; Training & adaptation
+- **Themes:** Robotics & control; Evaluation & benchmarks; Multimodal & vision-language
 
-### 3. [WorldRuler: Interactive World Modeling under Configurable Rules](https://arxiv.org/abs/2611.24869)
-- **Abstract:** WorldRuler represents user-defined rules and object state in an executable 3D rule graph and connects rule execution, video generation, and perceptual feedback to preserve and visually realize those rules.
-- **Authors:** Mingliang Zhai, Chuanhao Li, Jiaming Tan, Zhen Li, Yuwei Wu, et al.
-- **arXiv:** `2611.24869v1` (published 2026-11-18 18:20:39 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** 11 votes in the archived Hugging Face Daily Papers edition; fifth in the overall vote list and third among batch-eligible papers.
-- **Claimed contribution:** The authors introduce an executable rule graph and dynamic object binding for persistent, user-defined world rules, and a GTA-V/Habitat-derived RuleVerse dataset; they report improved rule-state consistency and rule realization in experiments.
-- **Caveat:** The reported evidence is tied to the authors’ RuleVerse pipeline and GTA-V/Habitat settings; transfer to unseen simulators or substantially different rule families remains to be established.
+### 3. [AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher](https://arxiv.org/abs/2611.26510)
+- **Abstract:** AutoMaster uses natural-language skills, trajectory analysis, and data selection to shape teacher demonstrations before fine-tuning a target model, reporting gains over vanilla supervised fine-tuning across six settings.
+- **Authors:** Guoxin Chen, Shuang Sun, Fanzhe Meng, Xinyu Tang, Ruihua Song, Wayne Xin Zhao
+- **arXiv:** `2611.26510v1` (published 2026-11-19 17:57:59 UTC; categories: `cs.CL`)
+- **Evidence for ranking:** Public release artifacts make the work directly inspectable: the authors provide a [project page](https://aweai-team.github.io/AutoMaster/), [code](https://github.com/RUCAIBox/AutoMaster), and models. A Hugging Face paper page and a multi-benchmark result provide further checkable signals; these indicate dissemination and technical relevance, not verified popularity.
+- **Claimed contribution:** The authors report that Skill-FT improves mean performance over vanilla SFT by 1.42–8.99 percentage points on Terminal, Search, and software-engineering tasks, holding teacher, task pool, training-set size, and SFT recipe fixed.
+- **Caveat:** The reported experiments use Qwen3.5 4B/9B target models and six settings across three task families; transfer to other model families, teachers, or tasks remains to be demonstrated.
 - **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Agents & reasoning; Multimodal & vision-language; Robotics & control
+- **Themes:** Training & adaptation; Agents & reasoning; Evaluation & benchmarks
 
-### 4. [RoughCut-Bench: A Benchmark for Automatic Video Rough-Cut with Large Vision-Language Models](https://arxiv.org/abs/2611.24098)
-- **Abstract:** RoughCut-Bench evaluates visual- and speech-driven video rough-cut workflows with annotated source material and reports that current large vision-language models remain limited at producing expert-aligned cut plans.
-- **Authors:** Ruisi Zhao, You Li, Sihan Chen, Aosong Cheng, Chixiang Ma, et al.
-- **arXiv:** `2611.24098v1` (published 2026-11-18 09:21:18 UTC; categories: `cs.CV`)
-- **Evidence for ranking:** 6 votes in the archived Hugging Face Daily Papers edition; tied for the fourth-highest count among eligible batch papers in that list. The arXiv record also notes acceptance to KDD 2027.
-- **Claimed contribution:** The authors contribute 101 visually driven cases over 831 raw videos with 1,476 highlight annotations, 84 speech-driven transcript cases, and agentic workflows for producing structured cut plans.
-- **Caveat:** The reported comparison is bounded by the benchmark’s annotated visual and transcript-driven cases; it does not establish performance in broader production editing workflows.
+### 4. [AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control](https://arxiv.org/abs/2611.26613)
+- **Abstract:** AgentRoboCritic pairs each robot action with the agent’s stated local intent so a critic can label its outcome and failure mode, analyzing frontier agents across 12 manipulation benchmarks.
+- **Authors:** Yiyang Du, Yuxuan Kuang, Qitao Zhao, Yixuan Wang, Zhanqiu Guo, et al.
+- **arXiv:** `2611.26613v1` (published 2026-11-19 18:57:25 UTC; categories: `cs.RO`, `cs.CL`, `cs.CV`)
+- **Evidence for ranking:** Its cross-list spans three core AI categories, and the authors released a [12,844-action dataset and critic project](https://adu2021.github.io/blog/AgentRoboCritic/) with a human-annotated evaluation set. This is a concrete research artifact, but outside-attention evidence is sparse, so the placement is relevance-led.
+- **Claimed contribution:** The authors report that fine-tuning Muse-Glimmer-30B raises failure-mode accuracy from 32.58% to 74.24% on their 400-action human-annotated benchmark, enabling lower-cost action-level analysis.
+- **Caveat:** Critic validation is based on 400 human-annotated actions; generalization to other robots, action distributions, and independently annotated evaluation sets remains open.
 - **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Evaluation & benchmarks; Multimodal & vision-language; Agents & reasoning
+- **Themes:** Robotics & control; Evaluation & benchmarks; Agents & reasoning
 
-### 5. [Mechanistic Critics for Sample-Efficient NPU Design-Space Exploration](https://arxiv.org/abs/2611.24733)
-- **Abstract:** CriticNPU uses an online-calibrated, hardware-mechanistic critic to guide LLM-inference accelerator design search, reporting best-or-tied-best latency in most tested settings with roughly half as many simulator calls as baselines.
-- **Authors:** Yicheng He, Yuqi Xue, Tianyang Wu, Jian Huang, Bin Hu
-- **arXiv:** `2611.24733v1` (published 2026-11-18 16:48:43 UTC; categories: `cs.AR`)
-- **Evidence for ranking:** 6 votes in the archived Hugging Face Daily Papers edition, tied with RoughCut-Bench; the arXiv record notes acceptance to NeurIPS 2026. Included despite its `cs.AR` primary category because its abstract directly studies architecture optimization for LLM inference.
-- **Claimed contribution:** The authors’ CriticNPU combines an online-calibrated Roofline-style critic, workload extraction, and an architecture planner; over six LLM workloads and 16 deployment configurations per model, it reaches best-or-tied-best latency in 74% of prefill and 87.5% of decode settings using about half the simulator calls of competitive DSE baselines.
-- **Caveat:** Evidence is limited to the reported LLM workloads, model/deployment configurations, and simulator-based design-space exploration; transfer to other hardware, workloads, and measured deployments is not established by the abstract.
+### 5. [JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own](https://arxiv.org/abs/2611.26503)
+- **Abstract:** JARVIS uses an embodied agent and executable digital twin to design, fabricate, measure, and revise circuit boards, demonstrating a 60 Hz notch filter built and tested without human intervention.
+- **Authors:** Shibo Zhou, Tianqi Hong, Zheng Yan, He Yang
+- **arXiv:** `2611.26503v1` (published 2026-11-19 17:53:30 UTC; categories: `cs.RO`, `eess.SY`)
+- **Evidence for ranking:** The paper is indexed with paper/code information by [CatalyzeX](https://www.catalyzex.com/paper/jarvis-an-agent-that-designs-builds-and-tests) and [ArXivSignals](https://arxivsignals.io/papers/2611.26503). These are modest discovery signals rather than independent popularity measures; the lower placement reflects limited external attention and a single demonstrated circuit task.
+- **Claimed contribution:** The authors report an end-to-end design–build–test–learn loop using unmodified desktop equipment, with a robot arm, PCB printer, pick-and-place machine, digital-twin rehearsal, and hardware-in-the-loop circuit tests.
+- **Caveat:** The reported physical result is one first-run 60 Hz notch-filter experiment; it does not establish repeatability across board types, component failures, or longer production runs.
 - **Announcement type:** new submission, announcement-batch 2026-11-19
-- **Themes:** Efficient inference & systems; Training & adaptation
+- **Themes:** Robotics & control; Agents & reasoning; Evaluation & benchmarks
 
 ## Trending Research Themes
 
-- **Interactive visual worlds and agents:** Game2Player co-develops games and players for scalable experience, while WorldRuler makes user-defined rules persist across generated interactive worlds. They share a control-and-state focus, but use different mechanisms and benchmarks.
-- **Speed and controllability in visual generation:** Jeveration targets one-pass generation with a shared latent random state; WorldRuler uses rule graphs and perceptual feedback to constrain generated video. The common emphasis is controllability, not evidence of a single converged architecture.
-- **Evaluation becomes a first-class artifact:** RoughCut-Bench packages editing cases and cut-plan measures, while Game2Player releases held-out games and tracks task progress. Both make evaluation environments part of the contribution, though their task domains differ.
-- **Efficiency work spans models and hardware:** Jeveration reports single-pass image generation; CriticNPU searches NPU designs for LLM inference. This is an isolated cross-layer pairing in the selected set, not a claim of a field-wide shift.
-- **Corpus context:** In the 501-record latest core-category query group, category assignment counts were concentrated in `cs.CV` (188), `cs.AI` (164), `cs.LG` (158), and `cs.RO` (89); assignments include cross-lists and are not disjoint paper counts. Three selected papers are primary `cs.CV`; CriticNPU is the one clearly AI-relevant systems paper admitted from outside the configured categories.
+- **Agents judged by grounded feedback:** TwinLab-Bench compares proposed experiments with real-lab records; AutoMaster uses student evaluation and trajectories to revise demonstrations; AgentRoboCritic judges actions against stated intent; JARVIS rehearses a physical build in an executable twin. These papers share feedback loops, but do not establish a single converged agent architecture.
+- **Evaluation is moving beyond task completion:** TwinLab-Bench scores experimental design, AgentRoboCritic labels action-level failures, and PhyDEX probes physical-property reasoning. This is a recurring methodological emphasis in the selected set, not evidence that benchmarks alone solve the underlying capability gaps.
+- **Embodied AI remains a concentrated strand:** PhyDEX, AgentRoboCritic, and JARVIS are all primarily `cs.RO`, covering physical reasoning, action diagnosis, and fabrication. The daily candidate pool itself is broader: its 546 records include 157 primary `cs.CV`, 94 `cs.AI`, 91 `cs.LG`, 66 `cs.RO`, and 48 `cs.CL` papers; 470 have a configured core-AI category as primary, with the remaining 76 included through a core-AI cross-list.
 
 ## Open Problems and Research Directions
 
-- **Environment correctness and real-time play (author-stated limits):** Game2Player reports that environments are not guaranteed correct without human audit and that its VLM player pauses at each decision. Expand independent human audits, then test online and multiplayer games under real-time latency and licensing constraints. [Game2Player](https://arxiv.org/abs/2611.24154)
-- **Resolution and hardware generalization (evidence-tied synthesis):** Jeveration’s headline latency is at 512×512 on one H200. Test multiple resolutions and accelerators while reporting both wall-clock latency and quality/dense-prediction trade-offs. [Jeveration](https://arxiv.org/abs/2611.24738)
-- **World-rule transfer (evidence-tied synthesis):** WorldRuler evaluates GTA-V/Habitat-derived RuleVerse interactions. Test held-out rule families and a separate simulator to determine whether the executable graph and visual state-binding approach generalize beyond the construction pipeline. [WorldRuler](https://arxiv.org/abs/2611.24869)
-- **Expert alignment and workflow realism (author-reported gap):** RoughCut-Bench reports current LVLMs remain limited at expert-aligned cut plans. Assess whether temporal grounding and human revision improve results on new source footage and independently authored editing briefs. [RoughCut-Bench](https://arxiv.org/abs/2611.24098)
-- **Simulator-to-deployment transfer (evidence-tied synthesis):** CriticNPU’s results use simulator feedback across six LLM workloads. Compare predicted bottlenecks with measured accelerator runs and evaluate whether the critic retains its call savings on unseen workloads and hardware. [CriticNPU](https://arxiv.org/abs/2611.24733)
+- **Digital twins versus physical science (author-stated boundary):** TwinLab-Bench tests design in record-grounded twins rather than new physical experiments. Compare agent-designed experiments with later physical replications in more laboratories, and measure how errors in each twin affect conclusions. [TwinLab-Bench](https://arxiv.org/abs/2611.26248)
+- **Physical reasoning beyond throwing (author-stated limitation):** PhyDEX is limited to throwing and three randomized properties. Extend evaluation to pushing, sliding, pouring, deformable objects, and richer physics, then test whether policies can actively probe hidden properties rather than receive them. [PhyDEX](https://arxiv.org/abs/2611.26565)
+- **Action-critic reliability (evidence-tied synthesis):** AgentRoboCritic validates labels on 400 human-annotated actions. Replicate the action-level evaluation with more annotators, robots, and unseen action distributions; separate critic error from policy recovery effects. [AgentRoboCritic](https://arxiv.org/abs/2611.26613)
+- **Post-training transfer (evidence-tied synthesis):** AutoMaster’s gains cover one target-model family and three task families. Test other teachers and model families, and independently reproduce the benefit of retaining skill context in demonstrations. [AutoMaster](https://arxiv.org/abs/2611.26510)
+- **Robust autonomous fabrication (evidence-tied synthesis):** JARVIS demonstrates one board experiment. Repeat across circuit classes and perturbations, log failures and recovery rates, and compare digital-twin predictions with repeated physical measurements. [JARVIS](https://arxiv.org/abs/2611.26503)
 
 ## Takeaway
 
-The strongest attention signal in the latest batch centers on interactive visual agents and generative systems, with Game2Player and Jeveration leading the archived vote counts. The papers pair ambitious systems with bounded evaluations; follow-up evidence on real-time interaction, broader hardware, and independent task validation will determine how far the reported gains travel.
+The most visible pattern in this batch is not simply “more capable agents,” but more explicit evaluation of how agents use feedback in scientific and physical settings. The best-supported attention signal here is for TwinLab-Bench; the other entries are notable for their artifacts and concrete tests, while their popularity and generality remain uncertain.
 
 ## Method and sources
 
-- **Window:** latest arXiv announcement batch dated 2026-11-19 (Thursday); it is the prior batch at the 2026-11-20 UTC snapshot. Category pages group the latest submissions under “Thu, 19 Nov 2026,” while the arXiv `published` timestamps on the selected abstracts are 2026-11-18 UTC. Exact daily window: 2026-11-19 through 2026-11-19. Snapshot: 2026-11-20 01:12:57 UTC.
-- **Core corpus query:** `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`, sorted by submitted date descending. The broad query returned 501 records in its latest date group, with all configured categories represented. Category assignment counts (including cross-lists): `cs.CV` 188, `cs.AI` 164, `cs.LG` 158, `cs.RO` 89, `cs.CL` 54, `stat.ML` 26, `cs.MA` 11, `cs.NE` 7. CriticNPU, a `cs.AR` paper, was added because its abstract makes the AI contribution—optimizing NPU designs for LLM inference—unambiguous.
-- **Ranking evidence:** The Hugging Face Daily Papers list is a community attention proxy, not an arXiv ranking. Vote counts come from the third-party archive’s 2026-11-19 edition recorded at 07:03 UTC; counts are that snapshot, not votes gained during the day. The 15-paper archive list also included older papers outside this batch, which were excluded from this daily batch shortlist. Tied 6-vote papers were ordered by core-corpus category fit, with the `cs.CV` paper before the `cs.AR` systems paper.
-- **Citation signal:** Semantic Scholar Graph reports current citationCount and influentialCitationCount of 0 for all five identifiers at this check; these are current totals and provide no useful same-day momentum distinction. No citation counts are presented as period gains.
-- **arXiv batch cross-checks:** [cs.AI recent submissions](https://arxiv.org/list/cs.AI/recent) and [cs.CV recent submissions](https://arxiv.org/list/cs.CV/recent). Each selected arXiv abstract page was checked; full-text HTML was reviewed for the leading three papers.
-- **Attention source:** [Hugging Face Daily Papers, Nov 19](https://huggingface.co/papers/date/2026-11-19); archived counts at [Trending AI Today, Nov 19](https://trendingai.today/2026-11-19/).
-- **Selected arXiv pages:** [2611.24154](https://arxiv.org/abs/2611.24154), [2611.24738](https://arxiv.org/abs/2611.24738), [2611.24869](https://arxiv.org/abs/2611.24869), [2611.24098](https://arxiv.org/abs/2611.24098), [2611.24733](https://arxiv.org/abs/2611.24733).
+- **Window:** Latest available arXiv announcement batch, Thursday 2026-11-19; exact daily window 2026-11-19 through 2026-11-19. This is a prior batch relative to the snapshot at 2026-11-20 17:05:06 UTC. The broad submitted-date query returned papers through 2026-11-19, with the latest timestamp at 18:59:57 UTC.
+- **Core corpus query:** `cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA`, constrained to `submittedDate:[202611190000 TO 202611200000]`, sorted by submitted date descending. It returned 546 records and represented all configured categories. Primary-category counts included `cs.CV` 157, `cs.AI` 94, `cs.LG` 91, `cs.RO` 66, `cs.CL` 48, `stat.ML` 9, `cs.MA` 3, and `cs.NE` 2. The rest were cross-listed from other primary categories.
+- **Ranking method:** Evidence hierarchy was external coverage/discussion, cross-list breadth and publicly checkable research artifacts, then relevance of the reported evaluation. No numeric trend score was constructed. Papers are new submissions, not revisions. arXiv recent listings and every selected abstract page were checked; full-text pages were read for the leading three papers.
+- **Citation and attention data:** Semantic Scholar fields were attempted but did not return usable records for this snapshot; citation totals were therefore not used. Attention claims above are tied to the cited checkable sources and are qualitative, not downloads, views, or votes.
+- **Batch sources:** [arXiv cs.AI recent listings](https://arxiv.org/list/cs.AI/recent), [arXiv cs.RO recent listings](https://arxiv.org/list/cs.RO/recent), and the [arXiv API](https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Astat.ML%20OR%20cat%3Acs.CL%20OR%20cat%3Acs.CV%20OR%20cat%3Acs.RO%20OR%20cat%3Acs.NE%20OR%20cat%3Acs.MA%29%20AND%20submittedDate%3A%5B202611190000%20TO%20202611200000%5D&sortBy=submittedDate&sortOrder=descending&start=0&max_results=2000).
+- **Selected arXiv pages:** [2611.26248](https://arxiv.org/abs/2611.26248), [2611.26565](https://arxiv.org/abs/2611.26565), [2611.26510](https://arxiv.org/abs/2611.26510), [2611.26613](https://arxiv.org/abs/2611.26613), [2611.26503](https://arxiv.org/abs/2611.26503).
+- **Corroborating sources:** [Emergent on TwinLab-Bench](https://emergent.sh/news/claude-fable-5-2-scores-45-100-twinlab-bench), [AGI Hunt on TwinLab-Bench](https://agihunt.info/en/p/1a1f840d338862038e032d41170), [TwinLab-Bench GitHub](https://github.com/ZJUSCL/TwinLab-Bench), [Data Phoenix on PhyDEX](https://dataphoenix.info/news/phydex-vla-physical-reasoning-benchmark), [Pith analysis of PhyDEX](https://pith.science/paper/2611.26565), [AutoMaster project](https://aweai-team.github.io/AutoMaster/), [AutoMaster GitHub](https://github.com/RUCAIBox/AutoMaster), [AgentRoboCritic project](https://adu2021.github.io/blog/AgentRoboCritic/), and [JARVIS CatalyzeX listing](https://www.catalyzex.com/paper/jarvis-an-agent-that-designs-builds-and-tests).

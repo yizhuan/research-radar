@@ -5,73 +5,46 @@
   "date": "2026-11-20",
   "title": "GitHub Trending Summary - Daily - 2026-11-20",
   "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-20.md",
-  "entry_count": 12,
+  "entry_count": 10,
   "entry_noun": "repositories",
-  "ranking_basis": "Daily GitHub Trending star gains, descending.",
-  "ranking_explanation": "Captured GitHub Trending?since=daily, corroborated against REST repository and default-branch commit endpoints, deduplicated by owner/name, filtered for forks, and sorted by displayed daily star gain. Includes the 12 highest-gain non-fork entries among 16 visible cards.",
-  "global_caveat": "Point-in-time capture at 2026-11-20 01:40 UTC; Trending can change during the day. The newly-created repository Search query was noisy and was not used for ranking.",
+  "ranking_basis": "Daily GitHub Trending ordering, with stars gained today captured as the momentum signal.",
+  "ranking_explanation": "Uses the first ten non-fork repositories in the official GitHub daily Trending page order, rather than re-sorting the list; per-repository daily star gains are included as the page's momentum signal.",
+  "global_caveat": "Snapshot captured at 2026-11-20 17:31 UTC. Star counts and Trending placement can change during the day and measure attention, not quality, security, or sustained adoption. GitHub Search API corroboration was rate-limited; repository metadata and default-branch HEADs were checked separately.",
+  "comparison_basis": {
+    "description": "Prior-day GitHub Trending ranks as reported in the November 20 comparison, referring to the November 19 snapshot.",
+    "prior_window": "2026-11-19",
+    "source_url": "https://www.trendsmcp.ai/trending/github-trending-november-20-2026",
+    "claims": [
+      "obra/superpowers rose from #14 to #2 (+12).",
+      "openvinotoolkit/openvino rose from #13 to #8 (+5).",
+      "cursor/plugins fell from #1 to #5 (-4).",
+      "mvanhorn/last30days-skill fell from #3 to #10 (-7)."
+    ]
+  },
   "themes": [
     {
       "id": "agent-workflows",
-      "title": "Agent workflows and extension surfaces",
-      "content": "Reusable skills, plugin specifications, and software-specific CLI harnesses recur across Superpowers, Claude-BugHunter, last30days-skill, CLI-Anything, Cursor Plugins, app-store-compliance, and Stitch Skills: packaged workflows and integration surfaces rather than one-off prompts.",
-      "supporting_repository_ids": [
-        "01-obra-superpowers",
-        "02-elementalsouls-claude-bughunter",
-        "03-mvanhorn-last30days-skill",
-        "04-hkuds-cli-anything",
-        "06-cursor-plugins",
-        "07-mjmirza-app-store-compliance",
-        "09-google-labs-code-stitch-skills"
-      ]
+      "title": "Agent workflows and skill ecosystems",
+      "content": "Claude-BugHunter and superpowers package reusable procedures; Cursor plugins standardizes extensions, while diagram-design and last30days-skill apply agent capabilities to visual work and research.",
+      "supporting_repository_ids": ["01-elementalsouls-claude-bughunter", "02-obra-superpowers", "05-cursor-plugins", "09-cathrynlavery-diagram-design", "10-mvanhorn-last30days-skill"]
     },
     {
-      "id": "web-context",
-      "title": "Web and social context for agents",
-      "content": "Firecrawl provides local/cloud scrape, crawl, map, and search infrastructure; last30days-skill combines community and media sources into a synthesis workflow.",
-      "supporting_repository_ids": [
-        "03-mvanhorn-last30days-skill",
-        "05-firecrawl-firecrawl"
-      ]
+      "id": "agent-interfaces-and-context",
+      "title": "Agent-ready interfaces and external context",
+      "content": "CLI-Anything offers structured command-line access to existing software; Firecrawl makes web pages and sites searchable, scrapeable, and extractable for downstream use.",
+      "supporting_repository_ids": ["03-hkuds-cli-anything", "06-firecrawl-firecrawl"]
     },
     {
-      "id": "inference",
-      "title": "Practical inference and small-scale model work",
-      "content": "OpenVINO focuses on optimizing and deploying inference, while MiniMind centers on training a small language model from scratch.",
-      "supporting_repository_ids": [
-        "11-openvinotoolkit-openvino",
-        "12-jingyaogong-minimind"
-      ]
+      "id": "model-training-and-inference",
+      "title": "Model training and deployment",
+      "content": "MiniMind focuses on accessible, inspectable small-model training and post-training; OpenVINO focuses on optimized inference and deployment.",
+      "supporting_repository_ids": ["04-jingyaogong-minimind", "08-openvinotoolkit-openvino"]
     },
     {
-      "id": "design-tooling",
-      "title": "Design tooling becomes agent-addressable",
-      "content": "Stitch Skills connects agent skills to a design MCP server; diagram-design packages diagram patterns for coding agents.",
-      "supporting_repository_ids": [
-        "09-google-labs-code-stitch-skills",
-        "10-cathrynlavery-diagram-design"
-      ]
-    },
-    {
-      "id": "developer-tooling",
-      "title": "Developer and release tooling",
-      "content": "The list also spans app integrations, plugin systems, release-policy checks, a desktop utility, and educational model training.",
-      "supporting_repository_ids": [
-        "04-hkuds-cli-anything",
-        "05-firecrawl-firecrawl",
-        "06-cursor-plugins",
-        "07-mjmirza-app-store-compliance",
-        "08-xiaoyouchr-ghost-downloader-3",
-        "12-jingyaogong-minimind"
-      ]
-    },
-    {
-      "id": "security-tooling",
-      "title": "Security as a packaged agent workflow",
-      "content": "Claude-BugHunter applies the skills-bundle pattern to bug hunting and red-team work; one repository is not enough to establish a broad security trend.",
-      "supporting_repository_ids": [
-        "02-elementalsouls-claude-bughunter"
-      ]
+      "id": "established-infrastructure",
+      "title": "Established infrastructure remains visible",
+      "content": "NGINX is a mature web infrastructure project on the same Trending page as the agent-heavy tools; OpenVINO connects the AI theme to deployment infrastructure.",
+      "supporting_repository_ids": ["07-nginx-nginx", "08-openvinotoolkit-openvino"]
     }
   ],
   "sections": [
@@ -79,404 +52,230 @@
       "id": "00-snapshot",
       "kind": "snapshot",
       "title": "Snapshot",
-      "content": "Snapshot time: 2026-11-20 01:40 UTC. Scope: Daily. Date range: 2026-11-20 through 2026-11-20. Ranking: daily Trending star gains, descending."
+      "content": "Snapshot time (UTC): 2026-11-20 17:31 UTC. Scope: Daily. Date range: 2026-11-20 through 2026-11-20. Ranking basis: daily GitHub Trending ordering, with displayed star gains as momentum context."
     },
     {
       "id": "00-headline",
       "kind": "headline",
       "title": "Headline",
-      "content": "Today’s front page is led by reusable coding-agent workflows and skills, with strong adjacent demand for agent-ready software interfaces and web-context infrastructure. A smaller but visible counter-signal is continued interest in inference tooling and accessible small-model training."
+      "content": "Agent-oriented development dominates today's front page: security and coding skill frameworks, agent-ready software interfaces, and plugin ecosystems lead the list. The signal is not only new AI tooling—established infrastructure and inference projects also appear among today's fastest-moving repositories."
     },
     {
-      "id": "01-obra-superpowers",
+      "id": "01-elementalsouls-claude-bughunter",
       "kind": "repo",
-      "title": "obra/superpowers",
+      "title": "elementalsouls/Claude-BugHunter",
       "rank": 1,
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework and software-development methodology for coding agents.",
-      "language": "Shell",
-      "stars_gained": 2028,
-      "total_stars": 322112,
-      "default_branch_commit": "22f0b463e7a5e579904dd6211a520321035526f7",
-      "why_notable": "Led today’s Trending star-gain signal by a wide margin, pointing to demand for structured, reusable agent workflows.",
-      "theme_ids": [
-        "agent-workflows"
-      ],
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for authorized bug hunting and red-team work, with vulnerability-class playbooks and reporting workflow.",
+      "language": "Python",
+      "stars_gained": 1660,
+      "total_stars": 13766,
+      "default_branch_commit": "c5d5c38123bf01f1223da3225bd3d28a930d028f",
+      "why_notable": "It leads today's Trending list, and its README describes an unusually broad, structured security workflow rather than a single-purpose scanner.",
+      "theme_ids": ["agent-workflows"],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 1,
-      "spoken_name": "Superpowers",
-      "unique_caveat": "Latest push predates today’s surge; Trending measures attention, not release activity.",
-      "enrichment": null,
-      "refs": [
-        "obra/superpowers"
-      ]
+      "spoken_name": "Claude BugHunter",
+      "unique_caveat": "Security testing capabilities should only be used against authorized targets and within the stated scope.",
+      "refs": ["elementalsouls/Claude-BugHunter"]
     },
     {
-      "id": "02-elementalsouls-claude-bughunter",
+      "id": "02-obra-superpowers",
       "kind": "repo",
-      "title": "elementalsouls/Claude-BugHunter",
+      "title": "obra/superpowers",
       "rank": 2,
-      "url": "https://github.com/elementalsouls/Claude-BugHunter",
-      "description": "A Claude Code skill bundle for bug hunting and external red-team work.",
-      "language": "Python",
-      "stars_gained": 1349,
-      "total_stars": 12584,
-      "default_branch_commit": "0e70a021e59d6875004e7a563f8511aca2ba3bc1",
-      "why_notable": "Second-highest daily gain and a security-focused example of agent skills becoming packaged domain workflows.",
-      "theme_ids": [
-        "agent-workflows",
-        "security-tooling"
-      ],
+      "url": "https://github.com/obra/superpowers",
+      "description": "A composable skills framework that makes coding agents follow a deliberate software-development methodology.",
+      "language": "Shell",
+      "stars_gained": 888,
+      "total_stars": 322668,
+      "default_branch_commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "why_notable": "Its strong daily momentum puts a process-oriented agent framework near the top; the README emphasizes design, planning, test-driven implementation, and review.",
+      "theme_ids": ["agent-workflows"],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 2,
-      "spoken_name": "Claude BugHunter",
-      "unique_caveat": "README lists 83 skills and 433 individually cited patterns out of 681, while the Trending card says 82 skills; counts are project claims and efficacy was not independently audited.",
-      "enrichment": null,
-      "refs": [
-        "elementalsouls/Claude-BugHunter"
-      ]
+      "spoken_name": "Superpowers",
+      "refs": ["obra/superpowers"]
     },
     {
-      "id": "03-mvanhorn-last30days-skill",
+      "id": "03-hkuds-cli-anything",
       "kind": "repo",
-      "title": "mvanhorn/last30days-skill",
+      "title": "HKUDS/CLI-Anything",
       "rank": 3,
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "description": "An agent skill that researches across social, video, community, prediction-market, and web sources, then synthesizes a grounded brief.",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "A toolkit and registry for giving agents structured command-line control of existing software.",
       "language": "Python",
-      "stars_gained": 954,
-      "total_stars": 70820,
-      "default_branch_commit": "262391603f3c2807606bffa0170547273fc273e5",
-      "why_notable": "Third-highest gain; exemplifies agent-driven research combining fragmented public signals.",
-      "theme_ids": [
-        "agent-workflows",
-        "web-context"
-      ],
+      "stars_gained": 774,
+      "total_stars": 61174,
+      "default_branch_commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+      "why_notable": "It represents a practical alternative to brittle GUI automation, with stateful CLI workflows and structured output for agents.",
+      "theme_ids": ["agent-interfaces-and-context"],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 3,
-      "spoken_name": "Last Thirty Days",
-      "unique_caveat": "Available sources depend on configured credentials, tools, and opt-ins.",
-      "enrichment": null,
-      "refs": [
-        "mvanhorn/last30days-skill"
-      ]
+      "spoken_name": "CLI Anything",
+      "refs": ["HKUDS/CLI-Anything"]
     },
     {
-      "id": "04-hkuds-cli-anything",
+      "id": "04-jingyaogong-minimind",
       "kind": "repo",
-      "title": "HKUDS/CLI-Anything",
+      "title": "jingyaogong/minimind",
       "rank": 4,
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "A toolkit and community hub for making existing software agent-native through generated command-line interfaces.",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "An educational, end-to-end project for training small language models from scratch.",
       "language": "Python",
-      "stars_gained": 898,
-      "total_stars": 60585,
-      "default_branch_commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
-      "why_notable": "A strong gain and a representative bet on giving agents structured CLI access to existing applications.",
-      "theme_ids": [
-        "agent-workflows",
-        "developer-tooling"
-      ],
+      "stars_gained": 841,
+      "total_stars": 67580,
+      "default_branch_commit": "cc9629e5f464ef46ef9411bfac916364e0a6dff1",
+      "why_notable": "Its full training pipeline—from pretraining and fine-tuning through preference optimization and tool use—stands out amid the agent tooling wave.",
+      "theme_ids": ["model-training-and-inference"],
       "signal_strength": "lead",
       "evidence_density": "rich",
       "narration_priority": 4,
-      "spoken_name": "CLI Anything",
-      "unique_caveat": "A software interoperability layer, not a general-purpose autonomous agent.",
-      "enrichment": null,
-      "refs": [
-        "HKUDS/CLI-Anything"
-      ]
+      "spoken_name": "MiniMind",
+      "refs": ["jingyaogong/minimind"]
     },
     {
-      "id": "05-firecrawl-firecrawl",
-      "kind": "repo",
-      "title": "firecrawl/firecrawl",
-      "rank": 5,
-      "url": "https://github.com/firecrawl/firecrawl",
-      "description": "Web data infrastructure for agents: search, scrape, crawl, and access data providers through APIs.",
-      "language": "TypeScript",
-      "stars_gained": 825,
-      "total_stars": 204267,
-      "default_branch_commit": "484be117975ac7b8be085c25f1fbd54d005f17ff",
-      "why_notable": "High daily gain and a mature example of retrieval and web-ingestion infrastructure for agent applications.",
-      "theme_ids": [
-        "web-context",
-        "developer-tooling"
-      ],
-      "signal_strength": "lead",
-      "evidence_density": "rich",
-      "narration_priority": 5,
-      "spoken_name": "Firecrawl",
-      "unique_caveat": "README distinguishes local processing from cloud features; some workflows can use hosted services.",
-      "enrichment": null,
-      "refs": [
-        "firecrawl/firecrawl"
-      ]
-    },
-    {
-      "id": "06-cursor-plugins",
+      "id": "05-cursor-plugins",
       "kind": "repo",
       "title": "cursor/plugins",
-      "rank": 6,
+      "rank": 5,
       "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins.",
+      "description": "Cursor's official marketplace repository for plugins and integrations.",
       "language": "TypeScript",
-      "stars_gained": 384,
-      "total_stars": 17570,
-      "default_branch_commit": "0b46ec399d55f2829e88822998f53b84944837d",
-      "why_notable": "Signals that coding-agent ecosystems are formalizing plugin interfaces and curated integrations.",
-      "theme_ids": [
-        "agent-workflows",
-        "developer-tooling"
-      ],
+      "stars_gained": 292,
+      "total_stars": 17774,
+      "default_branch_commit": "aaeb0ea3a0584995aa8f55ce44c6c5259414b896",
+      "why_notable": "It shows the move toward a standardized, installable extension ecosystem for agent skills, rules, tools, and service integrations.",
+      "theme_ids": ["agent-workflows"],
       "signal_strength": "standard",
-      "evidence_density": "moderate",
-      "narration_priority": 6,
+      "evidence_density": "rich",
+      "narration_priority": 5,
       "spoken_name": "Cursor Plugins",
-      "unique_caveat": "",
-      "enrichment": null,
-      "refs": [
-        "cursor/plugins"
-      ]
+      "refs": ["cursor/plugins"]
     },
     {
-      "id": "07-mjmirza-app-store-compliance",
+      "id": "06-firecrawl-firecrawl",
       "kind": "repo",
-      "title": "mjmirza/app-store-compliance",
+      "title": "firecrawl/firecrawl",
+      "rank": 6,
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Web search, scraping, crawling, and structured extraction infrastructure aimed at agent workflows.",
+      "language": "TypeScript",
+      "stars_gained": 1226,
+      "total_stars": 204997,
+      "default_branch_commit": "f96a5154660165061d5b1defa0091bee28571f5d",
+      "why_notable": "Its high daily gain highlights continued demand for turning live web content into machine-usable context.",
+      "theme_ids": ["agent-interfaces-and-context"],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "Firecrawl",
+      "refs": ["firecrawl/firecrawl"]
+    },
+    {
+      "id": "07-nginx-nginx",
+      "kind": "repo",
+      "title": "nginx/nginx",
       "rank": 7,
-      "url": "https://github.com/mjmirza/app-store-compliance",
-      "description": "An open playbook and pre-submission guard for App Store and Google Play rejections, with policy checks and an agent skill.",
-      "language": "Shell",
-      "stars_gained": 377,
-      "total_stars": 1867,
-      "default_branch_commit": "d2156bab9d7189835631c0a99adcc2479d32138d",
-      "why_notable": "Puts practical release and policy-compliance checks among today’s rising agent-adjacent workflows.",
-      "theme_ids": [
-        "agent-workflows",
-        "developer-tooling"
-      ],
+      "url": "https://github.com/nginx/nginx",
+      "description": "The official NGINX Open Source repository.",
+      "language": "C",
+      "stars_gained": 246,
+      "total_stars": 32509,
+      "default_branch_commit": "2e8440bcdc438f0f1cd03da778a3843ddb3c86d9",
+      "why_notable": "A mature core-infrastructure project is a useful counterpoint to today's concentration of agent-focused tools.",
+      "theme_ids": ["established-infrastructure"],
       "signal_strength": "standard",
       "evidence_density": "moderate",
       "narration_priority": 7,
-      "spoken_name": "App Store Compliance",
-      "unique_caveat": "Verify policy advice against current official rules; listed rejection/deadline counts are project claims.",
-      "enrichment": null,
-      "refs": [
-        "mjmirza/app-store-compliance"
-      ]
+      "spoken_name": "N G I N X",
+      "refs": ["nginx/nginx"]
     },
     {
-      "id": "08-xiaoyouchr-ghost-downloader-3",
-      "kind": "repo",
-      "title": "XiaoYouChR/Ghost-Downloader-3",
-      "rank": 8,
-      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
-      "description": "A desktop download manager presented as an all-in-one downloader.",
-      "language": "Python",
-      "stars_gained": 341,
-      "total_stars": 12764,
-      "default_branch_commit": "0c56e253df731fd3b0628135cca10e373f0b5260",
-      "why_notable": "A higher-ranked non-agent utility, providing a counterpoint to the otherwise agent-centric front page.",
-      "theme_ids": [
-        "developer-tooling"
-      ],
-      "signal_strength": "standard",
-      "evidence_density": "sparse",
-      "narration_priority": 8,
-      "spoken_name": "Ghost Downloader Three",
-      "unique_caveat": "The description is brief; this report makes no detailed claims about supported protocols or security.",
-      "enrichment": null,
-      "refs": [
-        "XiaoYouChR/Ghost-Downloader-3"
-      ]
-    },
-    {
-      "id": "09-google-labs-code-stitch-skills",
-      "kind": "repo",
-      "title": "google-labs-code/stitch-skills",
-      "rank": 9,
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "description": "Agent Skills for the Stitch MCP server, intended for use across compatible coding agents.",
-      "language": "TypeScript",
-      "stars_gained": 302,
-      "total_stars": 10731,
-      "default_branch_commit": "4cf4db8e4143b09e40f9bc887429d81f41ab3947",
-      "why_notable": "Shows design tooling adopting portable skill packages and MCP-connected workflows.",
-      "theme_ids": [
-        "agent-workflows",
-        "design-tooling"
-      ],
-      "signal_strength": "standard",
-      "evidence_density": "moderate",
-      "narration_priority": 9,
-      "spoken_name": "Stitch Skills",
-      "unique_caveat": "",
-      "enrichment": null,
-      "refs": [
-        "google-labs-code/stitch-skills"
-      ]
-    },
-    {
-      "id": "10-cathrynlavery-diagram-design",
-      "kind": "repo",
-      "title": "cathrynlavery/diagram-design",
-      "rank": 10,
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "Editorial diagram designs for coding agents, producing self-contained HTML and SVG.",
-      "language": "HTML",
-      "stars_gained": 271,
-      "total_stars": 68650,
-      "default_branch_commit": "d74d8c2d0c78a9e1efd43137f6a9a51182a8b5f0",
-      "why_notable": "A design-focused entry packaging visual conventions as reusable agent-facing instructions and outputs.",
-      "theme_ids": [
-        "design-tooling",
-        "agent-workflows"
-      ],
-      "signal_strength": "standard",
-      "evidence_density": "moderate",
-      "narration_priority": 10,
-      "spoken_name": "Diagram Design",
-      "unique_caveat": "The stated 45 diagram types are from the repository description and were not individually evaluated.",
-      "enrichment": null,
-      "refs": [
-        "cathrynlavery/diagram-design"
-      ]
-    },
-    {
-      "id": "11-openvinotoolkit-openvino",
+      "id": "08-openvinotoolkit-openvino",
       "kind": "repo",
       "title": "openvinotoolkit/openvino",
-      "rank": 11,
+      "rank": 8,
       "url": "https://github.com/openvinotoolkit/openvino",
       "description": "An open-source toolkit for optimizing and deploying AI inference.",
       "language": "C++",
-      "stars_gained": 246,
-      "total_stars": 11574,
-      "default_branch_commit": "c64f0fe07bbede1c83fba898c886e3c56b0543e0",
-      "why_notable": "Brings established inference optimization infrastructure into a daily list led by agent workflows.",
-      "theme_ids": [
-        "inference"
-      ],
+      "stars_gained": 219,
+      "total_stars": 11722,
+      "default_branch_commit": "38abacb761f24ee9eeff430bff5c5fe946872174",
+      "why_notable": "Its appearance connects the agent trend to the practical runtime and deployment layer for AI models.",
+      "theme_ids": ["model-training-and-inference", "established-infrastructure"],
       "signal_strength": "standard",
       "evidence_density": "moderate",
-      "narration_priority": 11,
+      "narration_priority": 8,
       "spoken_name": "OpenVINO",
-      "unique_caveat": "",
-      "enrichment": null,
-      "refs": [
-        "openvinotoolkit/openvino"
-      ]
+      "refs": ["openvinotoolkit/openvino"]
     },
     {
-      "id": "12-jingyaogong-minimind",
+      "id": "09-cathrynlavery-diagram-design",
       "kind": "repo",
-      "title": "jingyaogong/minimind",
-      "rank": 12,
-      "url": "https://github.com/jingyaogong/minimind",
-      "description": "An educational project for training a 64-million-parameter language model from scratch.",
-      "language": "Python",
-      "stars_gained": 238,
-      "total_stars": 66906,
-      "default_branch_commit": "cc9629e5f464ef46ef9411bfac916364e0a6dff1",
-      "why_notable": "A hands-on model-training counterpoint making small-scale training approachable alongside production inference projects.",
-      "theme_ids": [
-        "inference",
-        "developer-tooling"
-      ],
+      "title": "cathrynlavery/diagram-design",
+      "rank": 9,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "A design-focused diagram skill for coding agents, with self-contained HTML and SVG outputs.",
+      "language": "HTML",
+      "stars_gained": 634,
+      "total_stars": 69157,
+      "default_branch_commit": "d74d8c2d0c78a9e1efd43137f6a9a51182a8b5f0",
+      "why_notable": "It extends agent tooling beyond code generation into visual communication, with a large set of diagram patterns.",
+      "theme_ids": ["agent-workflows"],
       "signal_strength": "standard",
       "evidence_density": "moderate",
-      "narration_priority": 12,
-      "spoken_name": "MiniMind",
-      "unique_caveat": "The two-hour claim depends on hardware and setup; it is not a runtime guarantee.",
-      "enrichment": null,
-      "refs": [
-        "jingyaogong/minimind"
-      ]
+      "narration_priority": 9,
+      "spoken_name": "Diagram Design",
+      "refs": ["cathrynlavery/diagram-design"]
+    },
+    {
+      "id": "10-mvanhorn-last30days-skill",
+      "kind": "repo",
+      "title": "mvanhorn/last30days-skill",
+      "rank": 10,
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "A research skill that gathers signals across social platforms and the wider web into a grounded brief.",
+      "language": "Python",
+      "stars_gained": 685,
+      "total_stars": 71297,
+      "default_branch_commit": "bb2f1ed2b9f6d07b90557c5eebd736b566533fec",
+      "why_notable": "It reflects demand for agent workflows that synthesize recent, cross-platform information rather than only edit code.",
+      "theme_ids": ["agent-workflows"],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 10,
+      "spoken_name": "Last Thirty Days",
+      "refs": ["mvanhorn/last30days-skill"]
     },
     {
       "id": "80-trending-technologies-and-themes",
       "kind": "themes",
       "title": "Trending Technologies and Themes",
-      "content": "Agent workflows and extension surfaces; web and social context; inference and small-scale model work; design tooling becoming agent-addressable. Languages: Python 5, TypeScript 3, Shell 2, HTML 1, C++ 1.",
-      "themes": [
-        {
-          "id": "agent-workflows",
-          "title": "Agent workflows and extension surfaces",
-          "content": "Reusable skills, plugin specifications, and software-specific CLI harnesses recur across Superpowers, Claude-BugHunter, last30days-skill, CLI-Anything, Cursor Plugins, app-store-compliance, and Stitch Skills: packaged workflows and integration surfaces rather than one-off prompts.",
-          "supporting_repository_ids": [
-            "01-obra-superpowers",
-            "02-elementalsouls-claude-bughunter",
-            "03-mvanhorn-last30days-skill",
-            "04-hkuds-cli-anything",
-            "06-cursor-plugins",
-            "07-mjmirza-app-store-compliance",
-            "09-google-labs-code-stitch-skills"
-          ]
-        },
-        {
-          "id": "web-context",
-          "title": "Web and social context for agents",
-          "content": "Firecrawl provides local/cloud scrape, crawl, map, and search infrastructure; last30days-skill combines community and media sources into a synthesis workflow.",
-          "supporting_repository_ids": [
-            "03-mvanhorn-last30days-skill",
-            "05-firecrawl-firecrawl"
-          ]
-        },
-        {
-          "id": "inference",
-          "title": "Practical inference and small-scale model work",
-          "content": "OpenVINO focuses on optimizing and deploying inference, while MiniMind centers on training a small language model from scratch.",
-          "supporting_repository_ids": [
-            "11-openvinotoolkit-openvino",
-            "12-jingyaogong-minimind"
-          ]
-        },
-        {
-          "id": "design-tooling",
-          "title": "Design tooling becomes agent-addressable",
-          "content": "Stitch Skills connects agent skills to a design MCP server; diagram-design packages diagram patterns for coding agents.",
-          "supporting_repository_ids": [
-            "09-google-labs-code-stitch-skills",
-            "10-cathrynlavery-diagram-design"
-          ]
-        },
-        {
-          "id": "developer-tooling",
-          "title": "Developer and release tooling",
-          "content": "The list also spans app integrations, plugin systems, release-policy checks, a desktop utility, and educational model training.",
-          "supporting_repository_ids": [
-            "04-hkuds-cli-anything",
-            "05-firecrawl-firecrawl",
-            "06-cursor-plugins",
-            "07-mjmirza-app-store-compliance",
-            "08-xiaoyouchr-ghost-downloader-3",
-            "12-jingyaogong-minimind"
-          ]
-        },
-        {
-          "id": "security-tooling",
-          "title": "Security as a packaged agent workflow",
-          "content": "Claude-BugHunter applies the skills-bundle pattern to bug hunting and red-team work; one repository is not enough to establish a broad security trend.",
-          "supporting_repository_ids": [
-            "02-elementalsouls-claude-bughunter"
-          ]
-        }
-      ]
+      "content": "Agent workflows and skill ecosystems recur across Claude-BugHunter, superpowers, Cursor plugins, diagram-design, and last30days-skill. CLI-Anything and Firecrawl provide agent-ready software interfaces and web context. MiniMind and OpenVINO represent model training and deployment. In this ten-repository sample, Python is most common, TypeScript is next, and Shell, C, C++, and HTML are also represented.",
+      "themes": ["agent-workflows", "agent-interfaces-and-context", "model-training-and-inference", "established-infrastructure"]
+    },
+    {
+      "id": "85-notable-shifts",
+      "kind": "notable-shifts",
+      "title": "Notable Shifts",
+      "content": "Compared with the prior day's Trending snapshot, superpowers jumped from #14 to #2 (+12 places) and OpenVINO rose from #13 to #8 (+5). Cursor/plugins moved from #1 to #5, while last30days-skill fell from #3 to #10. Comparison basis: November 19 ranks reported at https://www.trendsmcp.ai/trending/github-trending-november-20-2026.",
+      "comparison_basis": "https://www.trendsmcp.ai/trending/github-trending-november-20-2026"
     },
     {
       "id": "90-takeaway",
       "kind": "takeaway",
       "title": "Takeaway",
-      "content": "The clearest signal is not simply “more agents,” but the growth of the surrounding workflow layer: skills, plugins, app-specific CLIs, and retrieval tooling that connect agents to software and information. Today’s leaders coexist with mature inference infrastructure and smaller practical learning projects, suggesting continued demand across both application and model layers."
+      "content": "The strongest signal is a shift from agents as standalone chat interfaces toward agents equipped with repeatable workflows, software controls, integrations, and fresh external context. At the same time, MiniMind and OpenVINO show continued interest in the model-building and inference stack beneath those applications. Trending placement and star gains indicate attention, not software quality, security, or long-term adoption."
     },
     {
       "id": "99-sources-and-method",
       "kind": "sources",
       "title": "Sources and Method",
-      "content": "Primary: GitHub Trending daily, retrieved 2026-11-20 01:40 UTC. Corroboration: REST repository and commit endpoints for 16 candidates plus Search API query created:>=2026-11-18 stars:>25, which was used only as a freshness cross-check. Daily gains are the figures displayed by the matching Trending view; GitHub REST verified totals, languages, status, push timestamps, and commit SHAs."
+      "content": "Primary source: https://github.com/trending?since=daily, observed 2026-11-20 17:31 UTC. Repository metadata was checked using GitHub REST API; current HEAD SHAs were verified by git ls-remote. The unauthenticated GitHub Search API was rate-limited, so no Search API result is claimed. Daily star gains are copied from the matching Trending page. README and first-party docs were consulted for leading agent, CLI, model-training, and plugin examples; no DeepWiki enrichment was used."
     }
   ]
 }

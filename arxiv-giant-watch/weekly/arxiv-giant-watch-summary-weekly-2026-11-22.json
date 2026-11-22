@@ -1,0 +1,296 @@
+{
+  "schema": "arxiv-giant-watch-report/v1",
+  "category": "arxiv-giant-watch",
+  "window": "weekly",
+  "date": "2026-11-22",
+  "title": "arXiv Giant Watch - Weekly - 2026-11-22",
+  "source_report": "/home/yizhuan/.research/arxiv-giant-watch/weekly/arxiv-giant-watch-summary-weekly-2026-11-22.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "This week's notable work clusters around self-improving agent harnesses, governed continual adaptation, and specification-driven evaluation, with several production-scale deployments from Google and Alibaba. A secondary thread concerns measurement rigor, from auditing image-compression gains to diagnosing representation collapse."
+    },
+    {
+      "id": "01-paper",
+      "kind": "paper",
+      "rank": 1,
+      "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement",
+      "arxiv_id": "2611.18856",
+      "authors": [
+        "Xin Yu",
+        "Fei Xia",
+        "Jiaqi Pan",
+        "Youbao Tang",
+        "Chengzhi Liu",
+        "Adams Yu",
+        "Sicong Jiang",
+        "Yanfei Chen",
+        "Lingzhou Xue",
+        "Ting Yu"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google (United States)",
+        "Google Cloud AI Research"
+      ],
+      "problem": "Harness optimization is typically studied with a fixed policy model and benchmark; when either changes, the optimizer lacks a record of why prior edits were made or how they performed.",
+      "method": "Proposes Self-Improvement Memory (SIM) for the harness optimizer, grouping edits by recurring harness problem and recording rationale, predicted and observed outcomes, and evaluation context to support Continual Recursive Self-Improvement (CRSI).",
+      "key_result": "Across four domains, SIM achieves higher final scores than harness-only and root-cause-only continuation; in coding, paired continuations improve final scores by an average of 2.36 points over harness-only (p=0.003) across ten source runs.",
+      "caveat": "Reported gains are relative to specific continuation baselines within the authors' experimental setup; no independent replication is described.",
+      "why_it_matters": "Frames memory of past optimization as a first-class component for agents that must keep improving across changing models and benchmarks.",
+      "refs": [
+        "2611.18856"
+      ]
+    },
+    {
+      "id": "02-paper",
+      "kind": "paper",
+      "rank": 2,
+      "title": "Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses",
+      "arxiv_id": "2611.22299",
+      "authors": [
+        "Deep Shah",
+        "Nehal Kathrotia"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google (United States)",
+        "Google"
+      ],
+      "problem": "Static agent harnesses tuned for one model or task stall, waste tokens, or regress on others, motivating systems that inspect their own traces and rewrite their own code.",
+      "method": "A unifying architectural framework pairing four editable runtime components (context/state, control, action interfaces, verification/recovery) with a four-stage diagnose-patch-validate-deploy loop, plus defenses against prompt bloat, benchmark gaming, and evaluator tampering.",
+      "key_result": "On SWE-bench Lite, gated modular evolution outperforms prompt reflection and full-harness rewrites across models and repositories at a fraction of the token cost.",
+      "caveat": "Evaluation is limited to SWE-bench Lite; the framework is largely architectural and design-oriented.",
+      "why_it_matters": "Provides a structured, safety-aware blueprint for self-modifying agent runtimes, complementing memory-based approaches to harness improvement.",
+      "refs": [
+        "2611.22299"
+      ]
+    },
+    {
+      "id": "03-paper",
+      "kind": "paper",
+      "rank": 3,
+      "title": "G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands",
+      "arxiv_id": "2611.17814",
+      "authors": [
+        "Yuechun Yu",
+        "Wenzheng Kong",
+        "Xiaofeng Mao",
+        "Jin Zhang"
+      ],
+      "organizations": [
+        "Qwen"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Alibaba Group (China)",
+        "Alibaba Group (alibaba-inc.com"
+      ],
+      "problem": "Demand drift and harness evolution in e-commerce agents cause once-trained models to fall behind, while periodic manual retraining is slow and labor-intensive.",
+      "method": "G-CAST converts daily production evidence into reward-routed, entropy-prioritized training data with governed reward evolution and governed checkpoint transition under cumulative evaluation.",
+      "key_result": "On a real production e-commerce agent, G-CAST adapts better to newly introduced demand while better preserving previously accepted behavior than a strong autonomous post-training baseline; ablations support both data orchestration and governed reward evolution.",
+      "caveat": "Results are from a single production deployment (Yuancai on Alibaba's 1688); generalization beyond this setting is not established.",
+      "why_it_matters": "Demonstrates governed continual self-training in a live commercial agent, connecting continual learning research to deployed systems.",
+      "refs": [
+        "2611.17814"
+      ]
+    },
+    {
+      "id": "04-paper",
+      "kind": "paper",
+      "rank": 4,
+      "title": "HardwareDx: A Foundational Graph Model System for Datacenter Machine Repairs",
+      "arxiv_id": "2611.23398",
+      "authors": [
+        "Yuanlin Wen",
+        "Elan Markowitz",
+        "Zubo Gu",
+        "Sami Abu-El-Haija",
+        "Bryan Perozzi",
+        "Mikhail Galkin",
+        "Ali Parviz",
+        "Aayush Gupta",
+        "Venkata Chivukula",
+        "Griffin Hadfield",
+        "Aravind Akella",
+        "Daniel J. Frame",
+        "Vahab Mirrokni",
+        "Amin Vahdat"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google (United States)",
+        "Google , Mountain View , CA , USA"
+      ],
+      "problem": "Hardware failures in hyperscale AI clusters stall expensive training workloads, making machine downtime economically costly.",
+      "method": "A graph foundation model approach to automated datacenter hardware diagnosis, allowing a single model to diagnose many platforms and accelerate onboarding of new hardware.",
+      "key_result": "Deployed at production scale at Google, HardwareDx reduces downtime by 18.3% on GPU platforms and 16.1% on TPUs, and cuts QA time by 28.3% for GPUs and 25.1% for TPUs.",
+      "caveat": "Reported figures are production evaluations from Google's own infrastructure; external validation is not described.",
+      "why_it_matters": "Shows graph foundation models delivering measurable operational gains in AI infrastructure reliability.",
+      "refs": [
+        "2611.23398"
+      ]
+    },
+    {
+      "id": "05-paper",
+      "kind": "paper",
+      "rank": 5,
+      "title": "LogT: Logically Think with Images for Visual Search",
+      "arxiv_id": "2611.19200",
+      "authors": [
+        "Yanjun Fu",
+        "Quanzeng You",
+        "Jiadong Guo",
+        "Yujie Lu",
+        "Sai Charitha Akula",
+        "Haiping Wu",
+        "Miao Liu",
+        "Sanghamitra Dutta",
+        "Lu Yuan"
+      ],
+      "organizations": [
+        "Meta"
+      ],
+      "attribution_status": "probable",
+      "attribution_evidence": [
+        "https://huggingface.co/facebook"
+      ],
+      "problem": "Vision-language models struggle to combine logical reasoning with accurate and efficient tool use for fine-grained visual search.",
+      "method": "LogT, an automated SFT data engine enforcing logic-chain-guided reasoning, generating visually grounded questions and structured tool-use traces; validated by fine-tuning Qwen2.5-VL-7B and InternVL3.5-8B.",
+      "key_result": "LogT-SFT on Qwen2.5-VL-7B outperforms a state-of-the-art SFT+RL method using 3.1x less data and >120x fewer GPU hours; a simple RL recipe on top yields a 9.59-point margin over prior complex RL setups.",
+      "caveat": "Organization attribution is probable, not verified; results are tied to the two base models and seven benchmark test sets used.",
+      "why_it_matters": "Argues that SFT data quality, not RL complexity, is the key bottleneck for tool-using visual reasoning.",
+      "refs": [
+        "2611.19200"
+      ]
+    },
+    {
+      "id": "06-paper",
+      "kind": "paper",
+      "rank": 6,
+      "title": "FVScore: Specification-Driven Neuro-Symbolic Video Evaluation",
+      "arxiv_id": "2611.22673",
+      "authors": [
+        "Do Xuan Long",
+        "Long T. Le",
+        "Yiwen Song",
+        "Min-Yen Kan",
+        "Tomas Pfister",
+        "Yale Song"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google (United States)",
+        "Google Cloud AI Research ,"
+      ],
+      "problem": "Existing video-generation evaluators rely on holistic MLLM judgments or vision-language metrics that are hard to align with human judgments and hard to trace to specific temporal violations.",
+      "method": "FVSCORE compiles explicit prompt propositions and implicit physical/temporal/cross-modal constraints, grounds them with specialized perceptual tools, evaluates confidence traces with soft temporal operators inspired by Linear Temporal Logic, and applies significance-aware calibration.",
+      "key_result": "Across public and complex multi-event benchmarks with strong video models, FVSCORE outperforms holistic and agent-based evaluators in human correlation while producing timestamp- and evidence-grounded feedback.",
+      "caveat": "Correlation-based evaluation depends on the human-judgment benchmarks used; no single absolute accuracy figure is claimed.",
+      "why_it_matters": "Advances interpretable, specification-driven evaluation for generative video, a prerequisite for reliable model comparison.",
+      "refs": [
+        "2611.22673"
+      ]
+    },
+    {
+      "id": "07-paper",
+      "kind": "paper",
+      "rank": 7,
+      "title": "LIC-Audit: How Comparable Are Reported Gains in Learned Image Compression?",
+      "arxiv_id": "2611.23419",
+      "authors": [
+        "Haisheng Fu",
+        "Jie Liang",
+        "Runyu Yang",
+        "Feng Ding",
+        "Xin Dong",
+        "Zixiao Jin",
+        "Jingning Han"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google (United States)",
+        "Google"
+      ],
+      "problem": "Learned image compression papers report small BD-rate gains against changing VTM reference versions, raising questions about comparability across papers.",
+      "method": "Audits 353 released rate-distortion curves from 36 repositories and re-evaluates eight public codec releases with 28,193 encode-decode records, examining reference-version effects, measurement conventions, and per-image variability.",
+      "key_result": "Different VTM reference runs shift BD-rates by up to 3.56 percentage points; under consistent measurement a 1.00% lead becomes a 1.43% deficit, and padding changes alone can reverse method comparisons; the work also provides a versioned protocol, leaderboard, and reporting guidelines.",
+      "caveat": "The audit covers released curves and eight codec releases, so conclusions are bounded by that corpus.",
+      "why_it_matters": "Exposes fragility in small reported gains and offers infrastructure for verifiable progress claims in a subfield.",
+      "refs": [
+        "2611.23419"
+      ]
+    },
+    {
+      "id": "08-paper",
+      "kind": "paper",
+      "rank": 8,
+      "title": "SADL: On the Demand-Supply Geometry of Representation Collapse",
+      "arxiv_id": "2611.21596",
+      "authors": [
+        "Junhan Sun",
+        "Yigui Feng",
+        "Mingzhe Liu",
+        "Haoyan Xu",
+        "Lei Ye",
+        "Ziqi Han",
+        "Hanru Bai",
+        "Yanzhao Zhang",
+        "Hao Zhao",
+        "Guofeng Zhang"
+      ],
+      "organizations": [
+        "Qwen"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Alibaba Group (China)",
+        "Alibaba Group"
+      ],
+      "problem": "In Joint-Embedding Predictive Architectures, a well-constrained projector output does not prevent representation collapse, because encoder representations are dominated by an input-shared component.",
+      "method": "SADL (Supply And Demand Loss) keeps the original objective and constrains the encoder directly only when the representation differences the projector demands exceed what the encoder can supply, adding no auxiliary networks or parameters.",
+      "key_result": "In LeWM and INTACT experiments, SADL lowers collapse rate over ten random seeds from 50% to 0%; after one epoch, encoder effective rank is 3.4-6.4x baseline and latent prediction error falls to 1/20-1/303; INTACT exceeds 95% mean search-free control success with several demand regularizers.",
+      "caveat": "Results are from the authors' LeWM/INTACT setups and four image datasets; broader architecture coverage is not claimed.",
+      "why_it_matters": "Offers a principled, low-overhead fix for a persistent failure mode in self-supervised representation learning.",
+      "refs": [
+        "2611.21596"
+      ]
+    },
+    {
+      "id": "80-research-themes",
+      "kind": "themes",
+      "title": "Research Themes",
+      "content": [
+        "Self-improving agent harnesses and runtime adaptation (2611.18856, 2611.22299)",
+        "Governed continual learning under distribution and capability drift (2611.17814, 2611.18856)",
+        "Specification-driven and audited evaluation of generative outputs (2611.22673, 2611.23419)",
+        "Production-scale deployment of learned systems (2611.23398, 2611.17814)"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The week's strongest signals are self-modifying agent harnesses and governed continual adaptation, with both Google and Alibaba contributing production-grounded work. A parallel emphasis on measurement rigor—auditing compression gains and grounding video evaluation in specifications—suggests growing attention to verifiable claims. Attribution for the Meta-linked LogT paper remains probable rather than confirmed."
+    }
+  ]
+}

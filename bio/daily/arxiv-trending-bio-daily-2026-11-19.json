@@ -7,15 +7,15 @@
   "date_range_end": "2026-11-19T19:00:00Z",
   "announcement_batch_date": "2026-11-19",
   "announcement_time_utc": "2026-11-20T01:00:00Z",
-  "snapshot_time_utc": "2026-11-21T21:16:03Z",
-  "signal_snapshot_time_utc": "2026-11-21T21:07:35Z",
+  "snapshot_time_utc": "2026-11-22T17:10:05Z",
+  "signal_snapshot_time_utc": "2026-11-22T17:09:37Z",
   "uses_prior_announcement_batch": true,
   "title": "arXiv Biology & Biomedicine — Notable Recent Papers — 2026-11-19",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-19.md",
   "signal_source": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-19.signals.json",
-  "entry_count": 13,
+  "entry_count": 9,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart. This is a relevance-ranked selection from incomplete biomedical coverage, not a popularity ranking; it does not cover bioRxiv, medRxiv, or the wider biomedical literature.",
+  "global_caveat": "arXiv has no official trending chart. This is an inferred relevance-ranked selection from incomplete biomedical coverage, not a popularity ranking; it does not cover bioRxiv, medRxiv, or the broader biomedical literature. The report follows the supplied 2026-11-19 signal window; a later 2026-11-20 batch exists in the local archive.",
   "sources": {
     "arxiv": {
       "status": "ok",
@@ -27,19 +27,15 @@
     },
     "hacker_news": {
       "status": "ok",
-      "count": 35
+      "count": 42
     },
     "arxiv_lookup": {
       "status": "ok",
-      "count": 175
+      "count": 182
     },
     "semantic_scholar": {
       "status": "ok",
       "count": 12
-    },
-    "additional_semantic_scholar_lookup": {
-      "status": "ok",
-      "count": 1
     }
   },
   "sections": [
@@ -49,144 +45,16 @@
       "title": "Headline",
       "rank": null,
       "url": "",
-      "abstract": "The latest available batch is dated 2026-11-19 and contains 13 verified papers, spanning molecular similarity, stochastic reaction methods, cryo-EM, multi-omics, and biomedical imaging. Only one candidate has a non-zero citation-derived attention signal. arXiv has no official trending chart; this is a relevance-ranked selection from incomplete biomedical coverage, not a popularity ranking.",
+      "abstract": "Nine notable papers are selected from the supplied 12-candidate 2026-11-19 batch. The strongest detected attention signal is one current Semantic Scholar citation for the MR elastography paper; other positive scores are cross-list breadth. arXiv has no official trending chart, and the report follows the supplied window despite a later 2026-11-20 batch being present in the local archive.",
       "refs": [
-        "https://arxiv.org/list/q-bio/current"
+        "https://arxiv.org/list/q-bio/recent"
       ]
     },
     {
-      "id": "01-shepherd-score-fast-adaptable-three-dimensional-alignment-of-mol",
-      "kind": "paper",
-      "title": "ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features",
-      "rank": 1,
-      "url": "https://arxiv.org/abs/2611.25076",
-      "arxiv_id": "2611.25076",
-      "arxiv_version": "v1",
-      "published": "2026-11-18T19:17:58Z",
-      "categories": [
-        "q-bio.BM"
-      ],
-      "authors": [
-        "Nate Somers",
-        "Kento A. Abeywardane",
-        "Connor W. Coley",
-        "Masha Elkin"
-      ],
-      "updated": "2026-11-18T19:17:58Z",
-      "themes": [
-        "Biochemistry & proteins",
-        "Quantitative methods"
-      ],
-      "abstract": "ShEPhERD-score unifies differentiable 3D molecular similarity scoring and alignment, with CPU/GPU kernels for virtual screening and pairwise workflows.",
-      "claimed_contribution": "The authors report comparable-or-better performance than corresponding open-source tools in 8 of 9 DUDE-Z comparisons, up to 46-fold speedups, and target-dependent best scoring modes.",
-      "unique_caveat": "This is a software and virtual-screening benchmark, not experimental hit-rate or therapeutic evidence; the paper notes no one scoring representation is best for every target and suggests target-specific calibration.",
-      "refs": [
-        "https://arxiv.org/abs/2611.25076"
-      ],
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.000; recorded signals: {\"cross_lists\": 0, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
-      "collector_score": 0,
-      "score_components": {},
-      "signals": {
-        "cross_lists": 0,
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      }
-    },
-    {
-      "id": "02-dynamical-variational-theory-of-stochastic-reaction-networks",
-      "kind": "paper",
-      "title": "Dynamical Variational Theory of Stochastic Reaction Networks",
-      "rank": 2,
-      "url": "https://arxiv.org/abs/2611.25491",
-      "arxiv_id": "2611.25491",
-      "arxiv_version": "v1",
-      "published": "2026-11-19T04:26:42Z",
-      "categories": [
-        "cond-mat.stat-mech",
-        "q-bio.MN",
-        "q-bio.PE"
-      ],
-      "authors": [
-        "Moshir Harsh",
-        "Peter Sollich"
-      ],
-      "updated": "2026-11-19T04:26:42Z",
-      "themes": [
-        "Molecular & cell biology",
-        "Quantitative methods"
-      ],
-      "abstract": "A field-theoretic variational approximation estimates stochastic reaction-network means, correlations, responses, and steady states in low-copy-number systems.",
-      "claimed_contribution": "The authors report numerical tests on gene regulation, enzyme kinetics, and infection dynamics, where their generalized self-consistent bubble resummation captures time-varying behavior and fluctuations missed by selected approximations.",
-      "unique_caveat": "This is a mathematical and numerical method, not a new wet-lab study. Its accuracy depends on the tested models and comparisons; the authors describe further numerical-solver work as an open direction.",
-      "refs": [
-        "https://arxiv.org/abs/2611.25491"
-      ],
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.500; recorded signals: {\"cross_lists\": 2, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
-      "collector_score": 0.5,
-      "score_components": {
-        "cross_lists": 0.5
-      },
-      "signals": {
-        "cross_lists": 2,
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      }
-    },
-    {
-      "id": "03-ab-initio-cryo-em-reconstruction-from-moments-of-denoised-images",
-      "kind": "paper",
-      "title": "Ab-initio cryo-EM reconstruction from moments of denoised images",
-      "rank": 3,
-      "url": "https://arxiv.org/abs/2611.25525",
-      "arxiv_id": "2611.25525",
-      "arxiv_version": "v1",
-      "published": "2026-11-19T05:26:45Z",
-      "categories": [
-        "q-bio.QM"
-      ],
-      "authors": [
-        "Yunpeng Shi",
-        "Amit Singer",
-        "Yuguan Wang",
-        "Andy Zhang"
-      ],
-      "updated": "2026-11-19T05:26:45Z",
-      "themes": [
-        "Biochemistry & proteins",
-        "Quantitative methods"
-      ],
-      "abstract": "The authors estimate an initial 3D cryo-EM model from the first three moments of denoised particle images, avoiding explicit orientation estimation at this stage.",
-      "claimed_contribution": "The authors show moment-based models can initialize high-resolution refinement on experimental datasets without assuming uniform particle orientations.",
-      "unique_caveat": "The paper reports lower-resolution initial models than VDAM or SGD; denoising biases the estimated moments and loses fine detail, and the authors describe the results as preliminary. Refinement can still reach comparable map quality in the reported tests.",
-      "refs": [
-        "https://arxiv.org/abs/2611.25525"
-      ],
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.000; recorded signals: {\"cross_lists\": 0, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
-      "collector_score": 0,
-      "score_components": {},
-      "signals": {
-        "cross_lists": 0,
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      }
-    },
-    {
-      "id": "04-physics-informed-deep-learning-for-shear-wave-speed-estimation-i",
+      "id": "01-physics-informed-deep-learning-for-shear-wave-speed-esti",
       "kind": "paper",
       "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
-      "rank": 4,
+      "rank": 1,
       "url": "https://arxiv.org/abs/2611.26111",
       "arxiv_id": "2611.26111",
       "arxiv_version": "v1",
@@ -210,16 +78,16 @@
         "Biomedical & translational medicine",
         "Medical physics & imaging"
       ],
-      "abstract": "An end-to-end model combines undersampled MRI reconstruction with wave inversion to estimate tissue shear-wave-speed maps from measured k-space data.",
-      "claimed_contribution": "The authors report 30% lower NRMSE than total-variation minimization and accurate shear-wave-speed estimation up to acceleration factor 19; the arXiv comment identifies an accepted IEEE Transactions on Biomedical Engineering version (DOI: 10.1109/TBME.2026.3666306).",
-      "unique_caveat": "Evaluation is on retrospectively highly undersampled brain MRE data plus in-vivo application; the abstract gives no sample size and does not establish clinical impact or prospective performance.",
+      "abstract": "An end-to-end model combines undersampled MRI reconstruction with MRE wave inversion to estimate tissue shear-wave-speed maps from measured k-space data.",
+      "claimed_contribution": "The authors report 30% lower NRMSE than total-variation minimization and SWS estimation at up to 19-fold acceleration; the arXiv record identifies an accepted/published IEEE Transactions on Biomedical Engineering version.",
+      "unique_caveat": "The study uses retrospectively undersampled brain data and an in-vivo healthy-volunteer application; the authors state that systematic validation in a larger patient population remains necessary. It does not establish clinical benefit.",
       "refs": [
         "https://arxiv.org/abs/2611.26111",
         "https://doi.org/10.1109/TBME.2026.3666306"
       ],
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 1.886; recorded signals: {\"cross_lists\": 2, \"s2\": {\"citations\": 1, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
+      "evidence_for_ranking": "Collector score 1.886; score components: {\"citations\": 1.386, \"cross_lists\": 0.5}. Signals: {\"cross_lists\": 2, \"s2\": {\"citations\": 1, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
       "collector_score": 1.886,
       "score_components": {
         "citations": 1.386,
@@ -234,52 +102,96 @@
       }
     },
     {
-      "id": "05-geometry-bridge-flow-matching-for-blind-rigid-motion-correction",
+      "id": "02-dynamical-variational-theory-of-stochastic-reaction-netw",
       "kind": "paper",
-      "title": "Geometry-bridge flow matching for blind rigid-motion correction in head cone-beam CT",
-      "rank": 5,
-      "url": "https://arxiv.org/abs/2611.23788",
-      "arxiv_id": "2611.23788",
-      "arxiv_version": "v2",
-      "published": "2026-11-18T03:51:56Z",
+      "title": "Dynamical Variational Theory of Stochastic Reaction Networks",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.25491",
+      "arxiv_id": "2611.25491",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T04:26:42Z",
       "categories": [
-        "physics.med-ph",
-        "cs.CL",
-        "cs.CV"
+        "cond-mat.stat-mech",
+        "q-bio.MN",
+        "q-bio.PE"
       ],
       "authors": [
-        "Sungho Yun",
-        "Seungryong Cho"
+        "Moshir Harsh",
+        "Peter Sollich"
       ],
-      "updated": "2026-11-19T05:08:07Z",
+      "updated": "2026-11-19T04:26:42Z",
       "themes": [
-        "Medical physics & imaging",
-        "Biomedical & translational medicine"
+        "Molecular & cell biology",
+        "Quantitative methods"
       ],
-      "abstract": "A geometry-bridge flow-matching prior jointly supports rigid-motion correction and pose estimation in head cone-beam CT reconstruction.",
-      "claimed_contribution": "On simulated 360-view scans from 30 held-out CQ500 patients, the authors report mean PSNR 37.1 dB and detector-plane reprojection error 0.27 mm; against image-linear training, the geometry bridge improved PSNR by 1.6 dB and reduced reprojection error by 33%.",
-      "unique_caveat": "The tests use simulated scans, a 30-patient held-out cohort, and nominal motion bounded at 10 mm / 10 degrees. This is not prospective clinical validation or evidence of improved patient outcomes.",
+      "abstract": "A field-theoretic variational approximation estimates means, correlations, responses, and steady states for stochastic reaction networks, including low-copy-number regimes.",
+      "claimed_contribution": "The authors report numerical benchmarks on gene regulation, enzyme kinetics, and infection dynamics, where their generalized self-consistent bubble resummation captures time-dependent behavior and fluctuations missed by selected approximations.",
+      "unique_caveat": "This is a theoretical and numerical method, not a wet-lab study. The authors assume well-mixed systems; their more advanced approximation focuses on networks with at most binary reactions, and they identify computational simplification and spatially resolved dynamics as further work.",
       "refs": [
-        "https://arxiv.org/abs/2611.23788"
+        "https://arxiv.org/abs/2611.25491"
       ],
-      "announcement_type": "revision",
+      "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Revision discovered by the configured-category lastUpdatedDate query but absent from the supplied signal pool; no collector composite score is available. Direct Semantic Scholar lookup returned 0 citations, 0 influential citations, and 28 references; no row-level Hugging Face/Hacker News data is available.",
-      "collector_score": null,
-      "score_components": {},
+      "evidence_for_ranking": "Collector score 0.500; score components: {\"cross_lists\": 0.5}. Signals: {\"cross_lists\": 2, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
+      "collector_score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      },
       "signals": {
+        "cross_lists": 2,
         "s2": {
           "citations": 0,
-          "influential_citations": 0,
-          "reference_count": 28
+          "influential_citations": 0
         }
       }
     },
     {
-      "id": "06-an-explainable-and-scalable-hierarchical-tensor-framework-for-in",
+      "id": "03-ab-initio-cryo-em-reconstruction-from-moments-of-denoise",
+      "kind": "paper",
+      "title": "Ab-initio cryo-EM reconstruction from moments of denoised images",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.25525",
+      "arxiv_id": "2611.25525",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T05:26:45Z",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Yunpeng Shi",
+        "Amit Singer",
+        "Yuguan Wang",
+        "Andy Zhang"
+      ],
+      "updated": "2026-11-19T05:26:45Z",
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "A method-of-moments procedure estimates an initial 3D cryo-EM model from the first three moments of denoised particle images without explicit particle-orientation estimation.",
+      "claimed_contribution": "The authors report that moment-based initial models can seed high-resolution refinement on experimental cryo-EM datasets without assuming uniform particle orientations.",
+      "unique_caveat": "The authors say denoising biases the moments and loses fine detail; they show failure on a low-molecular-weight example and identify improved denoising or direct moment estimation as needed. This is a reconstruction-method result, not a new biological structure discovery.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25525"
+      ],
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 0.000; score components: {}. Signals: {\"cross_lists\": 0, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
+      "collector_score": 0,
+      "score_components": {},
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      }
+    },
+    {
+      "id": "04-an-explainable-and-scalable-hierarchical-tensor-framewor",
       "kind": "paper",
       "title": "An Explainable and Scalable Hierarchical Tensor Framework for Integrating Multi-Omics and Digital Pathomics",
-      "rank": 6,
+      "rank": 4,
       "url": "https://arxiv.org/abs/2611.25584",
       "arxiv_id": "2611.25584",
       "arxiv_version": "v1",
@@ -300,15 +212,15 @@
         "RNA & transcriptomics",
         "Omics & single-cell methods"
       ],
-      "abstract": "HIT-Fuse integrates six molecular and pathology modalities across four TCGA cancer cohorts, reconstructing missing latent modalities and providing tensor-based attributions.",
-      "claimed_contribution": "The authors report survival-stratified subgroups and cohort-specific prediction gains, including a 56.4% relative weighted-F1 increase for glioma in their cohort-expansion experiment, with biological checks against DepMap, miRTarBase, and RPPA annotations.",
-      "unique_caveat": "The analyses use TCGA cohorts and reconstructed missing modalities; survival stratification and feature annotations do not establish prospective prognostic value or causal biology, and the reported gain is cohort-specific.",
+      "abstract": "HIT-Fuse integrates six molecular and pathology modalities across four TCGA cancer cohorts, including a procedure to reconstruct missing latent modalities.",
+      "claimed_contribution": "Across glioma, lung, breast, and kidney TCGA cohorts, the authors report survival-stratified subgroups, biological checks against DepMap/miRTarBase/RPPA resources, and a cohort-specific 56.4% relative weighted-F1 increase for glioma in a cohort-expansion experiment.",
+      "unique_caveat": "The evaluation is retrospective and TCGA-based; reconstructed modalities and database annotations do not establish prospective prognostic value, causal biology, or external clinical performance. The reported gain is cohort-specific.",
       "refs": [
         "https://arxiv.org/abs/2611.25584"
       ],
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.250; recorded signals: {\"cross_lists\": 1, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
+      "evidence_for_ranking": "Collector score 0.250; score components: {\"cross_lists\": 0.25}. Signals: {\"cross_lists\": 1, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
       "collector_score": 0.25,
       "score_components": {
         "cross_lists": 0.25
@@ -322,10 +234,52 @@
       }
     },
     {
-      "id": "07-from-sequence-uncertainty-to-phenotype-hypotheses-uncertainty-co",
+      "id": "05-shepherd-score-fast-adaptable-three-dimensional-alignmen",
+      "kind": "paper",
+      "title": "ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.25076",
+      "arxiv_id": "2611.25076",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T19:17:58Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Nate Somers",
+        "Kento A. Abeywardane",
+        "Connor W. Coley",
+        "Masha Elkin"
+      ],
+      "updated": "2026-11-18T19:17:58Z",
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "ShEPhERD-score unifies differentiable 3D molecular similarity scoring and alignment, with CPU/GPU kernels for virtual screening and pairwise workflows.",
+      "claimed_contribution": "In the DUDE-Z virtual-screening benchmark, the authors report comparable-or-better results than matched open-source tools in 8 of 9 comparisons and throughput up to 1.03 million alignments per second on one NVIDIA L40S GPU.",
+      "unique_caveat": "This is computational screening evidence, not experimental binding or therapeutic evidence. The most effective scoring mode varied by protein target, so the authors note that target-specific calibration may be useful.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25076"
+      ],
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 0.000; score components: {}. Signals: {\"cross_lists\": 0, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
+      "collector_score": 0,
+      "score_components": {},
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      }
+    },
+    {
+      "id": "06-from-sequence-uncertainty-to-phenotype-hypotheses-uncert",
       "kind": "paper",
       "title": "From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs",
-      "rank": 7,
+      "rank": 6,
       "url": "https://arxiv.org/abs/2611.25422",
       "arxiv_id": "2611.25422",
       "arxiv_version": "v1",
@@ -343,15 +297,15 @@
         "DNA & genomics",
         "Bioinformatics & sequence analysis"
       ],
-      "abstract": "An uncertainty-conditioned path-energy method converts genomic-model outputs into distributions over graph-supported gene-disease-phenotype hypotheses without patient-level phenotype supervision.",
-      "claimed_contribution": "On AlzKB and Hetionet, the authors report phenotype-entropy correlations with upstream uncertainty and held-out graph-recovery results; under gene hold-out, recall@10 exceeded DistMult on 24 of 30 masks, with the difference mainly attributable to three genes with many variants.",
-      "unique_caveat": "This evaluates graph-supported hypotheses, not patient diagnosis or validated phenotype prediction; the authors explicitly limit the gene-held-out result and note the concentration of gains in a few genes.",
+      "abstract": "An uncertainty-conditioned path-energy method maps genomic-model evidence into graph-supported distributions over gene-disease-phenotype hypotheses without patient-level phenotype supervision.",
+      "claimed_contribution": "The authors report that phenotype-entropy tracks upstream uncertainty on AlzKB and Hetionet and that recall@10 exceeded a DistMult baseline on 24 of 30 gene-holdout masks.",
+      "unique_caveat": "This is computational hypothesis generation, not patient diagnosis or validated phenotype prediction. The authors note that the gene-holdout advantage is mainly attributable to three genes with many variants and is not established for all genes.",
       "refs": [
         "https://arxiv.org/abs/2611.25422"
       ],
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.250; recorded signals: {\"cross_lists\": 1, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
+      "evidence_for_ranking": "Collector score 0.250; score components: {\"cross_lists\": 0.25}. Signals: {\"cross_lists\": 1, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
       "collector_score": 0.25,
       "score_components": {
         "cross_lists": 0.25
@@ -365,10 +319,10 @@
       }
     },
     {
-      "id": "08-when-foundation-models-disagree-representational-heterogeneity-f",
+      "id": "07-when-foundation-models-disagree-representational-heterog",
       "kind": "paper",
       "title": "When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification",
-      "rank": 8,
+      "rank": 7,
       "url": "https://arxiv.org/abs/2611.26159",
       "arxiv_id": "2611.26159",
       "arxiv_version": "v1",
@@ -392,14 +346,14 @@
         "Bioinformatics & sequence analysis"
       ],
       "abstract": "CALIFUSE uses disagreement among pathology foundation-model representations and chunk-level evidence consistency to estimate confidence in whole-slide classifications.",
-      "claimed_contribution": "The authors report better calibration, misclassification detection, and selective prediction than a strongest single-encoder baseline and naive ensemble averaging while maintaining competitive balanced accuracy.",
-      "unique_caveat": "These are task-benchmark results; the abstract does not give cohort sizes or establish performance in clinical workflows or across new institutions.",
+      "claimed_contribution": "The authors report improved calibration, misclassification detection, and selective prediction over the strongest single-encoder baseline and naive ensemble averaging, with competitive balanced accuracy, across seven WSI classification tasks.",
+      "unique_caveat": "These are task-benchmark results; the abstract gives no cohort sizes and does not establish external-institution performance or clinical workflow value.",
       "refs": [
         "https://arxiv.org/abs/2611.26159"
       ],
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.250; recorded signals: {\"cross_lists\": 1, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
+      "evidence_for_ranking": "Collector score 0.250; score components: {\"cross_lists\": 0.25}. Signals: {\"cross_lists\": 1, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
       "collector_score": 0.25,
       "score_components": {
         "cross_lists": 0.25
@@ -413,7 +367,53 @@
       }
     },
     {
-      "id": "09-graphep-a-calibrated-data-system-and-benchmark-for-learning-card",
+      "id": "08-colloquium-isotopes-for-medicine-and-fundamental-physics",
+      "kind": "paper",
+      "title": "Colloquium: Isotopes for medicine and fundamental physics",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.25145",
+      "arxiv_id": "2611.25145",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T20:24:17Z",
+      "categories": [
+        "physics.app-ph",
+        "physics.atom-ph",
+        "physics.hist-ph",
+        "physics.med-ph",
+        "quant-ph"
+      ],
+      "authors": [
+        "V. J. Ajith",
+        "Mark G. Raizen"
+      ],
+      "updated": "2026-11-18T20:24:17Z",
+      "themes": [
+        "Biomedical & translational medicine",
+        "Medical physics & imaging"
+      ],
+      "abstract": "A review surveys isotope enrichment and detection technologies and discusses possible medical uses, including radioisotopes for cancer therapy and stable isotopes as metabolic tracers.",
+      "claimed_contribution": "The authors review isotope-separation and detection methods, then outline anticipated medical and fundamental-physics applications.",
+      "unique_caveat": "This is a review and outlook, not an experimental or clinical validation of the proposed detection or treatment applications.",
+      "refs": [
+        "https://arxiv.org/abs/2611.25145"
+      ],
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-19",
+      "evidence_for_ranking": "Collector score 1.000; score components: {\"cross_lists\": 1.0}. Signals: {\"cross_lists\": 4, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
+      "collector_score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      },
+      "signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      }
+    },
+    {
+      "id": "09-graphep-a-calibrated-data-system-and-benchmark-for-learn",
       "kind": "paper",
       "title": "GraphEP: A Calibrated Data System and Benchmark for Learning Cardiac Electrophysiology",
       "rank": 9,
@@ -437,209 +437,18 @@
         "Quantitative methods"
       ],
       "abstract": "GraphEP packages graph-native cardiac electrophysiology simulations and benchmarks neural models for predicting transmembrane-potential trajectories.",
-      "claimed_contribution": "The authors report that physiological model structure gives the strongest inductive bias in their benchmark, with HGT-Lag and GAP2ODE leading on complementary prediction metrics.",
-      "unique_caveat": "The benchmark consists of simulations, not experimentally measured or clinical cardiac trajectories; performance on real-world recordings remains to be established.",
+      "claimed_contribution": "The authors report that physiology-informed models provide the strongest inductive bias in their simulation benchmark, with HGT-Lag and GAP2ODE leading on complementary prediction metrics.",
+      "unique_caveat": "These are simulated trajectories rather than experimentally measured or clinical cardiac data; generalization to real-world recordings remains to be established.",
       "refs": [
         "https://arxiv.org/abs/2611.26551"
       ],
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.000; recorded signals: {\"cross_lists\": 0, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
+      "evidence_for_ranking": "Collector score 0.000; score components: {}. Signals: {\"cross_lists\": 0, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. No matched Hugging Face/Hacker News engagement is recorded for this candidate; zero does not imply low importance.",
       "collector_score": 0,
       "score_components": {},
       "signals": {
         "cross_lists": 0,
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      }
-    },
-    {
-      "id": "10-transition-dynamics-matter-hidden-markov-scoring-of-epileptogeni",
-      "kind": "paper",
-      "title": "Transition Dynamics Matter: Hidden Markov Scoring of Epileptogenic Channels in SEEG",
-      "rank": 10,
-      "url": "https://arxiv.org/abs/2611.26142",
-      "arxiv_id": "2611.26142",
-      "arxiv_version": "v1",
-      "published": "2026-11-19T13:58:28Z",
-      "categories": [
-        "eess.SP",
-        "physics.med-ph"
-      ],
-      "authors": [
-        "Giulia Tacconi",
-        "Federico Mason",
-        "Lorenzo Ferri",
-        "Elena Pasini",
-        "Lidia Di Vito",
-        "Matteo Martinoni",
-        "Lara Alvisi",
-        "Anna Scarabello",
-        "Luca Zanuttini",
-        "Francesca Bisulli",
-        "Andrea Zanella"
-      ],
-      "updated": "2026-11-19T13:58:28Z",
-      "themes": [
-        "Biomedical & translational medicine",
-        "Quantitative methods"
-      ],
-      "abstract": "A joint hidden Markov model scores stereo-EEG channels by comparing latent-state transition probabilities between interictal periods and seizure onset.",
-      "claimed_contribution": "The authors report improved epileptogenic-zone localization versus a benchmark without latent-state structure, measured against medically validated zone definitions.",
-      "unique_caveat": "This is a retrospective algorithm evaluation in 30 patients, not a prospective test of surgical decisions or patient outcomes.",
-      "refs": [
-        "https://arxiv.org/abs/2611.26142"
-      ],
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.250; recorded signals: {\"cross_lists\": 1, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
-      "collector_score": 0.25,
-      "score_components": {
-        "cross_lists": 0.25
-      },
-      "signals": {
-        "cross_lists": 1,
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      }
-    },
-    {
-      "id": "11-towards-consensus-on-practical-probabilistic-evaluation-metrics",
-      "kind": "paper",
-      "title": "Towards consensus on practical probabilistic evaluation metrics for clinical decision making in radiotherapy",
-      "rank": 11,
-      "url": "https://arxiv.org/abs/2611.25260",
-      "arxiv_id": "2611.25260",
-      "arxiv_version": "v1",
-      "published": "2026-11-18T22:44:24Z",
-      "categories": [
-        "physics.med-ph"
-      ],
-      "authors": [
-        "Jenneke I. de Jong",
-        "Steven J. M. Habraken",
-        "Erik W. Korevaar",
-        "Mirko Unipan",
-        "Esther Kneepkens",
-        "Gloria Vilches Freixas",
-        "Yvonne L. B. Klaver",
-        "Michiel Kroesen",
-        "Alejandra Méndez Romero",
-        "Edwin Oldehinkel",
-        "Stephanie Peeters",
-        "Roel J. H. M. Steenbakkers"
-      ],
-      "updated": "2026-11-18T22:44:24Z",
-      "themes": [
-        "Biomedical & translational medicine",
-        "Medical physics & imaging"
-      ],
-      "abstract": "The authors assess probabilistic robustness metrics for proton radiotherapy using 60 plans from three Dutch centers and interviews with eight radiation oncologists.",
-      "claimed_contribution": "The authors report that interviewed radiation oncologists considered the metrics suitable and mostly an improvement over their current robustness evaluation, while preferences differed by center and treatment site.",
-      "unique_caveat": "The study uses simulated treatments and interviews, not a prospective clinical-impact trial; the authors call for further consensus and clinical validation before broad implementation.",
-      "refs": [
-        "https://arxiv.org/abs/2611.25260"
-      ],
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.000; recorded signals: {\"cross_lists\": 0, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
-      "collector_score": 0,
-      "score_components": {},
-      "signals": {
-        "cross_lists": 0,
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      }
-    },
-    {
-      "id": "12-colloquium-isotopes-for-medicine-and-fundamental-physics",
-      "kind": "paper",
-      "title": "Colloquium: Isotopes for medicine and fundamental physics",
-      "rank": 12,
-      "url": "https://arxiv.org/abs/2611.25145",
-      "arxiv_id": "2611.25145",
-      "arxiv_version": "v1",
-      "published": "2026-11-18T20:24:17Z",
-      "categories": [
-        "physics.app-ph",
-        "physics.atom-ph",
-        "physics.hist-ph",
-        "physics.med-ph",
-        "quant-ph"
-      ],
-      "authors": [
-        "V. J. Ajith",
-        "Mark G. Raizen"
-      ],
-      "updated": "2026-11-18T20:24:17Z",
-      "themes": [
-        "Biomedical & translational medicine",
-        "Medical physics & imaging"
-      ],
-      "abstract": "This review surveys isotope separation and detection technologies and discusses proposed medical and fundamental-physics applications.",
-      "claimed_contribution": "The authors review technologies for enriching and detecting isotopes and outline possible uses of radioisotopes in cancer therapy and stable isotopes as metabolic tracers.",
-      "unique_caveat": "This is a review and outlook, not a clinical or experimental validation of the proposed disease-detection or treatment applications.",
-      "refs": [
-        "https://arxiv.org/abs/2611.25145"
-      ],
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 1.000; recorded signals: {\"cross_lists\": 4, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
-      "collector_score": 1.0,
-      "score_components": {
-        "cross_lists": 1.0
-      },
-      "signals": {
-        "cross_lists": 4,
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      }
-    },
-    {
-      "id": "13-the-long-term-divergence-exponent-and-the-temporal-structure-of",
-      "kind": "paper",
-      "title": "The long-term divergence exponent and the temporal structure of step-to-step perturbations: a simulation study in two passive walking models",
-      "rank": 13,
-      "url": "https://arxiv.org/abs/2611.26182",
-      "arxiv_id": "2611.26182",
-      "arxiv_version": "v1",
-      "published": "2026-11-19T14:34:32Z",
-      "categories": [
-        "q-bio.QM",
-        "nlin.CD",
-        "physics.bio-ph"
-      ],
-      "authors": [
-        "Philippe Terrier"
-      ],
-      "updated": "2026-11-19T14:34:32Z",
-      "themes": [
-        "Quantitative methods",
-        "Biomedical & translational medicine"
-      ],
-      "abstract": "Two passive-walker models test whether gait-stability divergence exponents respond to the temporal structure of step perturbations.",
-      "claimed_contribution": "In two passive models, the authors report that the long-term exponent increased with perturbation temporal correlation; the relation to perturbation amplitude differed between models, and human stride-series comparisons were descriptive.",
-      "unique_caveat": "Most evidence is simulation-based; the model-dependent response and descriptive human-series correlations do not establish clinical gait outcomes or a general mechanism.",
-      "refs": [
-        "https://arxiv.org/abs/2611.26182"
-      ],
-      "announcement_type": "new submission",
-      "announcement_batch_date": "2026-11-19",
-      "evidence_for_ranking": "Collector score 0.500; recorded signals: {\"cross_lists\": 2, \"s2\": {\"citations\": 0, \"influential_citations\": 0}}. Hugging Face and Hacker News sources were available; no matched engagement is recorded for this candidate.",
-      "collector_score": 0.5,
-      "score_components": {
-        "cross_lists": 0.5
-      },
-      "signals": {
-        "cross_lists": 2,
         "s2": {
           "citations": 0,
           "influential_citations": 0
@@ -652,21 +461,15 @@
       "title": "Trending Research Themes",
       "rank": null,
       "url": "",
-      "abstract": "Molecular representations and reconstruction recur in ShEPhERD-score and the cryo-EM method, which address different computational tasks. HIT-Fuse, the phenotype-graph model, and CALIFUSE each handle heterogeneity or uncertainty in biomedical data, but do not validate one another. Reaction-network theory, GraphEP, and the passive-walker study model dynamics across distinct systems and evidence types. MRE, head cone-beam CT motion correction, SEEG localization, and radiotherapy robustness metrics are computational evaluations against biomedical measurements or definitions; none alone establishes prospective patient benefit.",
+      "abstract": "Computational molecular/structural methods (ShEPhERD-score and cryo-EM); uncertainty and heterogeneous biomedical data (HIT-Fuse, phenotype-graph inference, CALIFUSE); and biochemical or cardiac dynamics (stochastic reaction networks and GraphEP). These papers use distinct benchmarks and evidence types, not independent validation of a common biological result.",
       "refs": [
         "https://arxiv.org/abs/2611.25076",
-        "https://arxiv.org/abs/2611.25491",
         "https://arxiv.org/abs/2611.25525",
-        "https://arxiv.org/abs/2611.26111",
-        "https://arxiv.org/abs/2611.23788",
         "https://arxiv.org/abs/2611.25584",
         "https://arxiv.org/abs/2611.25422",
         "https://arxiv.org/abs/2611.26159",
-        "https://arxiv.org/abs/2611.26551",
-        "https://arxiv.org/abs/2611.26142",
-        "https://arxiv.org/abs/2611.25260",
-        "https://arxiv.org/abs/2611.25145",
-        "https://arxiv.org/abs/2611.26182"
+        "https://arxiv.org/abs/2611.25491",
+        "https://arxiv.org/abs/2611.26551"
       ]
     },
     {
@@ -675,21 +478,16 @@
       "title": "Open Problems and Research Directions",
       "rank": null,
       "url": "",
-      "abstract": "The papers motivate target- and scaffold-held-out biochemical assays for ShEPhERD-score and broader acquisition and denoising tests for cryo-EM; independent institutional validation for HIT-Fuse and CALIFUSE; patient-level blinded evaluation of genomic phenotype hypotheses; experimental electrophysiology validation for GraphEP; prospective multi-site MRE and SEEG evaluation; prospective head cone-beam CT tests; clinical decision-impact testing for radiotherapy metrics; and direct low-copy-number time series plus larger gait datasets for the reaction-network and passive-walker models.",
+      "abstract": "Prospective multi-site MRE and independent electrophysiology validation; low-copy-number biochemical time series for reaction-network predictions; robust cryo-EM denoising or raw-image moment estimation; target/scaffold-held-out molecular screening followed by biochemical assays; and external-cohort calibration plus blinded patient-level evaluation for multimodal and phenotype-inference methods. These proposals follow the selected papers’ stated limitations and evidence boundaries.",
       "refs": [
-        "https://arxiv.org/abs/2611.25076",
+        "https://arxiv.org/abs/2611.26111",
         "https://arxiv.org/abs/2611.25491",
         "https://arxiv.org/abs/2611.25525",
-        "https://arxiv.org/abs/2611.26111",
-        "https://arxiv.org/abs/2611.23788",
+        "https://arxiv.org/abs/2611.25076",
         "https://arxiv.org/abs/2611.25584",
         "https://arxiv.org/abs/2611.25422",
         "https://arxiv.org/abs/2611.26159",
-        "https://arxiv.org/abs/2611.26551",
-        "https://arxiv.org/abs/2611.26142",
-        "https://arxiv.org/abs/2611.25260",
-        "https://arxiv.org/abs/2611.25145",
-        "https://arxiv.org/abs/2611.26182"
+        "https://arxiv.org/abs/2611.26551"
       ]
     },
     {
@@ -698,21 +496,17 @@
       "title": "Takeaway",
       "rank": null,
       "url": "",
-      "abstract": "This batch offers methods for molecular screening, stochastic reaction dynamics, cryo-EM initialization, motion correction, and multimodal biomedical inference. The clearest attention signal is one current Semantic Scholar citation for the MRE paper, not a period gain or evidence of broad popularity. Experimental and prospective validation remains uneven across the corpus.",
+      "abstract": "The batch offers computational advances across molecule scoring, stochastic biochemistry, cryo-EM, omics, and biomedical inference, but direct attention evidence is thin: just one candidate has a non-zero current citation total, not a within-window increase. External and prospective validation is uneven.",
       "refs": [
-        "https://arxiv.org/abs/2611.25076",
+        "https://arxiv.org/abs/2611.26111",
         "https://arxiv.org/abs/2611.25491",
         "https://arxiv.org/abs/2611.25525",
-        "https://arxiv.org/abs/2611.26111",
-        "https://arxiv.org/abs/2611.23788",
         "https://arxiv.org/abs/2611.25584",
+        "https://arxiv.org/abs/2611.25076",
         "https://arxiv.org/abs/2611.25422",
         "https://arxiv.org/abs/2611.26159",
-        "https://arxiv.org/abs/2611.26551",
-        "https://arxiv.org/abs/2611.26142",
-        "https://arxiv.org/abs/2611.25260",
         "https://arxiv.org/abs/2611.25145",
-        "https://arxiv.org/abs/2611.26182"
+        "https://arxiv.org/abs/2611.26551"
       ]
     }
   ]

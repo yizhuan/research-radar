@@ -20,7 +20,7 @@
     "cs.BI",
     "physics.med-ph"
   ],
-  "generated_at": "2026-11-21T21:07:35Z",
+  "generated_at": "2026-11-22T17:09:37Z",
   "sources": {
     "arxiv": {
       "status": "ok",
@@ -32,11 +32,11 @@
     },
     "hacker_news": {
       "status": "ok",
-      "count": 35
+      "count": 42
     },
     "arxiv_lookup": {
       "status": "ok",
-      "count": 175
+      "count": 182
     },
     "semantic_scholar": {
       "status": "ok",

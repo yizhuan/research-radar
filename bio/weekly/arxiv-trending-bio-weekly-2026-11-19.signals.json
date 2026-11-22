@@ -1,0 +1,2889 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "arxiv",
+  "category": "bio",
+  "window": "weekly",
+  "arxiv_window": {
+    "start": "2026-11-12T19:00:00Z",
+    "end": "2026-11-19T19:00:00Z",
+    "announced": "2026-11-20T01:00:00Z",
+    "announcement_date": "2026-11-19"
+  },
+  "categories": [
+    "q-bio.BM",
+    "q-bio.GN",
+    "q-bio.MN",
+    "q-bio.SC",
+    "q-bio.CB",
+    "q-bio.TO",
+    "q-bio.QM",
+    "cs.BI",
+    "physics.med-ph"
+  ],
+  "generated_at": "2026-11-22T02:15:41Z",
+  "sources": {
+    "arxiv": {
+      "status": "ok",
+      "count": 86
+    },
+    "huggingface": {
+      "status": "ok",
+      "count": 278
+    },
+    "hacker_news": {
+      "status": "ok",
+      "count": 91
+    },
+    "arxiv_lookup": {
+      "status": "ok",
+      "count": 364
+    },
+    "semantic_scholar": {
+      "status": "ok",
+      "count": 86
+    }
+  },
+  "weights": {
+    "hf_upvotes": 3.0,
+    "hn_points": 1.5,
+    "hn_comments": 1.0,
+    "citations": 2.0,
+    "influential_citations": 1.0,
+    "code_stars": 0.5,
+    "cross_lists": 0.25
+  },
+  "pool_size": 86,
+  "with_attention": 5,
+  "candidates": [
+    {
+      "arxiv_id": "2611.20986",
+      "version": "1",
+      "title": "Calpha: Toward Native Biomolecular Intelligence in a General-Purpose Language Model",
+      "authors": [
+        "Yong Liu",
+        "Zhanpeng Shi",
+        "Peicong Lin",
+        "Zhenyi Zhong",
+        "Yizhou Dang",
+        "Wendi Wu",
+        "Haoling Li",
+        "Shuangjia Zheng"
+      ],
+      "published": "2026-11-16T12:17:37Z",
+      "updated": "2026-11-16T12:17:37Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20986",
+      "comment": "",
+      "abstract": "Biomolecular foundation models predict the structures of proteins and their complexes accurately, and large language models (LLMs) reason in natural language, but the two remain separate: the abilities of the former are not part of a general-purpose LLM, and the reasoning of the latter does not enter a structure prediction. Calpha aims at one general model that folds proteins and complexes, understands protein sequence and structure, and lets its language reasoning influence the structures it predicts. This report covers the first step, in which an LLM outputs single-chain protein structures. Qwen3.5-9B reads a sequence enriched with ESM2 residue features. It can respond in text or emit a token that invokes a pretrained SimpleFold structure head, which receives information about the protein only through Qwen's residue states. Under a fixed folding request, the head achieves mean TM-scores of 0.808 on the FoldBench-334 development set, 0.635 on CASP16 domains and 0.900 on a CAMEO-style PDB set. We compare these predictions with a baseline in which ESM2-3B encodes the sequence and a fine-tuned SimpleFold-3B head predicts the coordinates. The two systems also differ in trainable weigh",
+      "signals": {
+        "cross_lists": 1,
+        "hf": {
+          "upvotes": 14,
+          "comments": 3,
+          "organization": "SJTU",
+          "organization_fullname": "Shanghai Jiao Tong University",
+          "github_stars": 23,
+          "featured_on": "2026-11-17",
+          "url": "https://huggingface.co/papers/2611.20986"
+        },
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 9.963,
+      "score_components": {
+        "hf_upvotes": 8.124,
+        "code_stars": 1.589,
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.22230",
+      "version": "1",
+      "title": "Discovery of new antiviral agents through artificial intelligence: in vitro and in vivo results",
+      "authors": [
+        "Roza Izmailyan",
+        "Mher Matevosyan",
+        "Hamlet Khachatryan",
+        "Anastasiya Shavina",
+        "Smbat Gevorgyan",
+        "Artur Ghazaryan",
+        "Irina Tirosyan",
+        "Yeva Gabrielyan",
+        "Marusya Ayvazyan",
+        "Boris Martirosyan",
+        "Vardan Harutyunyan",
+        "Hovakim Zakaryan"
+      ],
+      "published": "2026-11-17T05:22:24Z",
+      "updated": "2026-11-17T05:22:24Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.22230",
+      "comment": "Accepted manuscript. 13 pages, 5 figures; supplementary material included (supplementary text, Tables S1-S2, Figures S1-S5). Published in Antiviral Research 222 (2024) 105818",
+      "abstract": "In this research, we employed a deep reinforcement learning (RL)-based molecule design platform to generate a diverse set of compounds targeting the neuraminidase (NA) of influenza A and B viruses. A total of 60291 compounds were generated, of which 86.5% displayed superior physicochemical properties compared to oseltamivir. After narrowing down the selection through computational filters, nine compounds with non-sialic acid-like structures were selected for in vitro experiments. We identified two compounds, DS-22-inf-009 and DS-22-inf-021 that effectively inhibited the NAs of both influenza A and B viruses (IAV and IBV), including H275Y mutant strains at low micromolar concentrations. Molecular dynamics simulations revealed a similar pattern of interaction with amino acid residues as oseltamivir. In cell-based assays, DS-22-inf-009 and DS-22-inf-021 inhibited IAV and IBV in a dose-dependent manner with EC50 values ranging from 0.29 uM to 2.31 uM. Furthermore, animal experiments showed that both DS-22-inf-009 and DS-22-inf-021 exerted antiviral activity in mice, conferring 65% and 85% protection from IAV (H1N1 pdm09), and 65% and 100% protection from IBV (Yamagata lineage), respect",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 24,
+          "influential_citations": 0
+        }
+      },
+      "score": 6.688,
+      "score_components": {
+        "citations": 6.438,
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.20949",
+      "version": "1",
+      "title": "Multimodal assessment of the skin biomechanical properties during wound healing and hyaluronic acid response",
+      "authors": [
+        "Arthur Bouffandeau",
+        "David Poisbleau",
+        "Mohand Ou Idir Ouidja",
+        "Patrick Karasinski",
+        "Dulce Papy",
+        "Charles-Henri Flouzat-Lachaniette",
+        "Romain Bosc",
+        "Barbara Hersant",
+        "Jean-Paul Meningaud",
+        "Guillaume Haiat"
+      ],
+      "published": "2026-11-16T11:59:32Z",
+      "updated": "2026-11-16T11:59:32Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20949",
+      "comment": "",
+      "abstract": "Various methods such as elastography or mechanical testing have been developed to quantify the mechanical properties of soft tissues, which are related to the tissue local pathophysiological conditions. This study is the first one to investigate the in vivo performances of the Impact-Based Analysis Method (IBAM) to characterize the biomechanical behavior of skin during physiological mechanisms. A murine model (12 Sprague-Dawley rats) was considered and various measurements of skin mechanical properties were conducted on different regions of interest over a 3-week period. The effects of wound healing after full-thickness excisional wound and an intradermal hyaluronic acid (HA) injection were monitored using IBAM, as well as two commercially available devices: Cutometer__ and MyotonPro__. The indicators $Δ$t (from IBAM), R0 and R5 (from Cutometer__) vary significantly as a function of wound healing time, which corresponds to a stiffening of healing tissue compared to healthy tissue. The indicator $Δ$t and S (from MyotonPro__) are significantly different when HA was injected compared to healthy tissue, which also corresponds to less stiff tissue. Additionally, both IBAM and Cutometer_",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 2,
+          "influential_citations": 0
+        }
+      },
+      "score": 2.197,
+      "score_components": {
+        "citations": 2.197
+      }
+    },
+    {
+      "arxiv_id": "2611.26111",
+      "version": "1",
+      "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
+      "authors": [
+        "Stefan Martin",
+        "Jakob Schattenfroh",
+        "Patrick Schuenke",
+        "Felix Frederik Zimmermann",
+        "Ingolf Sack",
+        "Christoph Kolbitsch",
+        "Andreas Kofler"
+      ],
+      "published": "2026-11-19T13:39:46Z",
+      "updated": "2026-11-19T13:39:46Z",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26111",
+      "comment": "13 pages (incl. cover page), 6 figures, 2 tables. Accepted version of the article published in IEEE Transactions on Biomedical Engineering. Please cite the published version (DOI: 10.1109/TBME.2026.3666306). Code: https://github.com/Stef-Martin/E2E-MRE",
+      "abstract": "Objective: Magnetic Resonance Elastography (MRE) is a non-invasive imaging technique for mapping biomechanical properties of in vivo tissue, including shear wave speed (SWS), but involves intrinsically slow data acquisition and an ill-posed wave inversion. Instead of relying on handcrafted image priors, we propose a data-driven approach jointly combining image reconstruction and MRE inversion for robust SWS estimation from undersampled k-space data. Methods: Our physics-informed reconstruction framework comprises two blocks: a model-based neural network (NN)-regularized reconstruction module and a phase-gradient inversion (k-MDEV) calculating SWS from the reconstructed images. Concatenating both blocks yields an end-to-end trainable method to estimate SWS directly from measured k-space data. We evaluated the method on retrospectively highly undersampled brain MRE data and compared it to a total variation (TV) minimization-based approach. We assessed the impact of end-to-end training (qualitative images and SWS maps as targets) versus pre-training (qualitative images as targets) and applied the method also to in vivo data. Results: Our approach significantly reduces NRMSE by 30% com",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 0
+        }
+      },
+      "score": 1.886,
+      "score_components": {
+        "citations": 1.386,
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.20961",
+      "version": "1",
+      "title": "Using an instrumented hammer to predict the lateral hinge fracture in high tibial osteotomy: A cadaveric study",
+      "authors": [
+        "Claire Bastard",
+        "Manon Bas-Dit Nugues",
+        "Giuseppe Rosi",
+        "Charles-Henri Flouzat-Lachaniette",
+        "Arnaud Dubory",
+        "Guillaume Haiat"
+      ],
+      "published": "2026-11-16T12:06:29Z",
+      "updated": "2026-11-16T12:06:29Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20961",
+      "comment": "",
+      "abstract": "Open-wedge High-Tibial Osteotomy is the most commonly employed technique addressing varus knee osteoarthritis. During this procedure, the osteotome passes through cortical and trabecular bone. A common complication is lateral hinge fractures, which depends upon when the surgeon stops impacting the osteotome. The aim of the present study is to determine whether an instrumented hammer can be employed to detect (i) the bone type (cortical or trabecular) surrounding the osteotome tip and (ii) when bone is fractured by the osteotome. Seventeen lower-limb specimens were obtained from nine fresh human anatomical subjects. The osteotome was impacted using the instrumented hammer until rupture. Each impact signal was recorded and analyzed. An algorithm was developed to detect the transitions between cortical and trabecular bone and vice versa. Detection was based on the relative variation of $τ$ derived from the force signal as a function of time as the time difference between the second___and___first impact peaks. The values of $τ$ were significantly lower in cortical bone compared to trabecular bone. Considering the arrival of the osteotome tip in trabecular bone during a medial, a differ",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 0
+        }
+      },
+      "score": 1.386,
+      "score_components": {
+        "citations": 1.386
+      }
+    },
+    {
+      "arxiv_id": "2611.25145",
+      "version": "1",
+      "title": "Colloquium: Isotopes for medicine and fundamental physics",
+      "authors": [
+        "V. J. Ajith",
+        "Mark G. Raizen"
+      ],
+      "published": "2026-11-18T20:24:17Z",
+      "updated": "2026-11-18T20:24:17Z",
+      "primary_category": "physics.app-ph",
+      "categories": [
+        "physics.app-ph",
+        "physics.atom-ph",
+        "physics.hist-ph",
+        "physics.med-ph",
+        "quant-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25145",
+      "comment": "",
+      "abstract": "Isotopes, variants of elements distinguished by their neutron number, have important applications for medicine and fundamental science. This review explores the historical challenges and new technologies for enriching and detecting isotopes. We motivate the work by challenges posed by three of history's greatest scientists: James Clerk Maxwell's thought experiment on thermodynamics, Ernest Rutherford's practical dilemma in radiochemistry, and Albert Einstein's questions about the probabilistic nature of quantum mechanics. The journey to meet these challenges has catalyzed the development of innovative techniques for isotope separation. These advancements can mitigate the worldwide crisis in the supply of enriched isotopes. We then explore the expected impact of these new technologies on medicine, which include radioisotopes for cancer therapy and stable isotopes as tracers for metabolism. We explain the importance of developing scalable techniques for isotope detection and how it can help with early detection of certain diseases. Finally, we turn to basic science, outlining proposed new tests of quantum mechanics that utilize radioactive atomic clocks to probe the fundamental natur",
+      "signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      }
+    },
+    {
+      "arxiv_id": "2611.19639",
+      "version": "1",
+      "title": "State-space symmetry in Boolean network ensembles",
+      "authors": [
+        "Yi-Kai Mo",
+        "Kevin E. Bassler"
+      ],
+      "published": "2026-11-14T21:58:39Z",
+      "updated": "2026-11-14T21:58:39Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cond-mat.dis-nn",
+        "math.DS",
+        "nlin.AO",
+        "q-bio.MN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19639",
+      "comment": "17 pages, 7 figures",
+      "abstract": "Studies of evolving Boolean network systems have found that Boolean functions cluster into equivalence classes with a characteristic frequency distribution - a pattern governed by the Zyklenzeiger symmetry group - but the dynamical origin of this symmetry has remained unexplained. Here we show that it is a consequence of a fundamental symmetry of Boolean network dynamics itself. A Boolean network consists of nodes that update according to Boolean functions of their regulatory inputs; its global dynamics is encoded in a state-space network. We identify the dynamical symmetry group of ensembles of Boolean networks that average over random interaction topologies: for networks with $N$ nodes, it is the $N$-dimensional hyperoctahedral group, generated by node-flips and node-label permutations. These transformations are admissible for every Boolean network regardless of topology; for random-topology ensembles, including all ensembles of fixed in-degree $K<N$, they constitute the complete symmetry group. We also show that input-label permutations constitute a hidden gauge freedom of the dynamics. The Zyklenzeiger symmetry of Boolean functions follows directly from the node-flips of the hy",
+      "signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      }
+    },
+    {
+      "arxiv_id": "2611.18180",
+      "version": "1",
+      "title": "LaMe: a Joint Latent Mediation Framework for High-Dimensional Systems",
+      "authors": [
+        "Gaël Poux-Médard",
+        "Kaniav Kamary",
+        "Yohann De Castro",
+        "Vivian Viallon"
+      ],
+      "published": "2026-11-13T13:48:30Z",
+      "updated": "2026-11-13T13:48:30Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "q-bio.QM",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18180",
+      "comment": "",
+      "abstract": "Mediation analysis seeks to understand how an exposure influences an outcome through intermediate variables. However, as increasingly rich datasets become available, hundreds to thousands of potential mediators make these systems difficult to model and hard to interpret. Latent-variable approaches offer a natural way to accommodate these high-dimensional settings. However, existing latent mediation methods face limitations, including overparameterization, biased inference, or limited scalability. We develop LaMe, a joint linear-Gaussian framework that summarizes a high-dimensional exposure-mediator-outcome system through a small number of latent variables. We identify natural direct and indirect effects under an explicit assumption that the manifest measurements fully capture the latent mediators, and characterize conditions under which the latent representation effectively restricts the observed cross-covariance structure. Simulations assess recovery of observed association parameters, natural effects, and manifest features associated with latent mediation pathways across a range of challenging settings. Four real-world applications demonstrate competitive predictive performance w",
+      "signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      }
+    },
+    {
+      "arxiv_id": "2611.17468",
+      "version": "1",
+      "title": "A thorough review on Deep Learning approaches to 2D-to-3D Registration in Medical Imaging",
+      "authors": [
+        "Andrea Borghesi",
+        "Julia van Beurden",
+        "Maarten van Alphen",
+        "Michiel van den Brekel",
+        "Luc Karssemakers",
+        "Jan-Jakob Sonke",
+        "Baris Karakullukcu",
+        "Jonas Teuwen",
+        "George Yiasemis"
+      ],
+      "published": "2026-11-12T19:52:39Z",
+      "updated": "2026-11-12T19:52:39Z",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.17468",
+      "comment": "51 pages, 4 tables, 8 figures",
+      "abstract": "2D-to-3D image registration is a key component for several medical imaging purposes such as intraoperative guidance, enabling the alignment between preoperative 3D volumes and real-time 2D images. While conventional optimisation-based methods often struggle with non-convex objectives, sensitivity to initialisation, and high computational demands, deep learning (DL) has emerged as a promising alternative, offering improved alignment robustness and the potential for real-time performance. This review provides a comprehensive analysis of DL frameworks developed to address the challenges inherent in 2D-to-3D registration. We first outline how core concepts of DL are adapted to the registration problem. We then examine recent methodological advancements from multiple perspectives, including pipeline design, architectural innovations, and domain adaptation strategies. Particular attention is given to quantitative metrics, highlighting how performance is defined and measured across studies. Across the 41 included studies, we find that direct regression is the most common pipeline (23 studies, against 18 iterative ones), that hybrid CNN-attention architectures are gaining ground, and that ",
+      "signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      }
+    },
+    {
+      "arxiv_id": "2611.26182",
+      "version": "1",
+      "title": "The long-term divergence exponent and the temporal structure of step-to-step perturbations: a simulation study in two passive walking models",
+      "authors": [
+        "Philippe Terrier"
+      ],
+      "published": "2026-11-19T14:34:32Z",
+      "updated": "2026-11-19T14:34:32Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "nlin.CD",
+        "physics.bio-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26182",
+      "comment": "49 pages, 6 figures, 2 tables. Includes appendices (2 tables) and supplementary material (1 figure, 8 tables). Code, results and scripts: https://doi.org/10.5281/zenodo.24365284",
+      "abstract": "Purpose. Divergence exponents are used to assess the local dynamic stability of gait. Human experiments have related the long-term exponent ($λ_L$) to the complexity of gait fluctuations. Model studies used perturbations without controlled temporal structure. The question was whether $λ_L$ responds to the temporal structure of perturbations in walkers without neuromuscular control. Methods. Two passive walkers, M1 (pilot) and M2 (exploratory), received step-to-step perturbations of five amplitudes ($σ$) and nine temporal structures (ARFIMA parameter $d$), and human stride series of free and metronome walking. Results. At constant amplitude, $λ_L$ increased with $d$ in both models. It was higher with free series than with metronome series or with surrogates. It did not follow $σ$ in M1 and followed $σ$ in M2. Its double dissociation from the short-term exponent was supported in M1 only. In a descriptive analysis, the condition means of $λ_L$ correlated with the scaling exponent of the step durations ($r = 0.980$ in M1 and 0.906 in M2). Conclusion. In two passive walkers with fixed mechanics, $λ_L$ followed the temporal structure of the perturbations; its specificity depended on the ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.25491",
+      "version": "1",
+      "title": "Dynamical Variational Theory of Stochastic Reaction Networks",
+      "authors": [
+        "Moshir Harsh",
+        "Peter Sollich"
+      ],
+      "published": "2026-11-19T04:26:42Z",
+      "updated": "2026-11-19T04:26:42Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "q-bio.MN",
+        "q-bio.PE"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25491",
+      "comment": "25 pages, 9 figures",
+      "abstract": "Discrete stochastic population dynamics describe systems ranging from biochemical reaction networks and gene regulation to epidemic spreading, ecology, and population genetics, where finite populations generate strong intrinsic fluctuations. Predicting their dynamics, including mean populations, fluctuations, time-lagged correlations, response functions, and steady states, remains challenging: the chemical master equation admits no general analytical solution, numerical solutions scale poorly with system size, and standard approximations fail at low copy numbers. Using a field-theoretic representation of the reaction dynamics, we develop a dynamical variational approximation for stochastic reaction networks based on the Plefka expansion from spin-glass physics. For reaction systems with general stoichiometry and time-dependent rates, the expansion yields tractable non-Markovian effective dynamics with self-consistent memory. We further introduce a generalized self-consistent bubble resummation that provides closed predictions for means, correlations, and response functions. The formulation applies broadly to discrete stochastic population dynamics on networks, and we provide a nume",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.24764",
+      "version": "1",
+      "title": "Horizontal Flow Matching for Single-Cell Spatiotemporal Dynamics",
+      "authors": [
+        "Zihan Wang",
+        "Jianzhe Li",
+        "Zhenyi Zhang",
+        "Peijie Zhou"
+      ],
+      "published": "2026-11-18T17:16:53Z",
+      "updated": "2026-11-18T17:16:53Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24764",
+      "comment": "38 pages, 7 figures",
+      "abstract": "Learning the spatiotemporal dynamics of cells from spatial transcriptomics requires connecting snapshots of different cells acquired in different coordinate frames. A rotation or translation of a section can appear as cell movement and distort the inferred correspondence. We introduce horizontal flow matching, which learns changes in tissue organization, molecular state, and cell abundance up to shared rigid motion. The dynamics follow a continuity--reaction equation whose action assigns no cost to shared rigid motion, and the resulting horizontal projector removes this component from spatial prediction errors during learning and from predicted velocities during generation. An equivalent endpoint problem jointly estimates correspondence and relative pose in Wasserstein--Fisher--Rao geometry and yields analytic paths whose velocity and growth serve as regression targets. Regressing these targets recovers the horizontal dynamics under ideal population conditions. Our model, HORIZON, uses an equivariant transformer to predict velocity and growth from the current tissue, so that a tissue can be generated continuously from a single initial snapshot. On a simulated tissue observed in per",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.24763",
+      "version": "1",
+      "title": "Elysium: Simulation-Free Unbalanced Schrödinger Bridges",
+      "authors": [
+        "Zihan Wang",
+        "Jianzhe Li",
+        "Zhenyi Zhang",
+        "Peijie Zhou"
+      ],
+      "published": "2026-11-18T17:16:41Z",
+      "updated": "2026-11-18T17:16:41Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24763",
+      "comment": "44 pages, 9 figures",
+      "abstract": "Reconstructing cellular dynamics from snapshots is challenging because the destructive nature of single-cell measurements makes tracking the same cells over time impossible. Cellular dynamics are inherently stochastic and involve changes in population size through proliferation and apoptosis. Growth-based methods represent population change as a rate on the density, which does not assign exits and entries to individual cells. Unbalanced Schrödinger bridges model individual events, but neural solvers for killed diffusion bridges simulate trajectories during training. We introduce Elysium, a simulation-free solver that jointly learns state transition and mass change. Using a killed Brownian reference and its time reversal, Elysium constructs direct regression objectives from an optimal endpoint coupling and conditional bridge distributions, without simulating trajectories during training. We show that the minimizers of the expected training objectives recover the optimal unbalanced Schrödinger bridge. Empirically, Elysium reconstructs state transitions, population size, and event distributions on simulated benchmarks with known killed-diffusion ground truth, outperforming existing de",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.24436",
+      "version": "1",
+      "title": "From real to synthetic: PSG-GAN learns sleep apnea signal dynamics for AI training",
+      "authors": [
+        "Riku Huttunen",
+        "Samu Kainulainen",
+        "Matias Rusanen",
+        "Sami Myllymaa",
+        "Juha Töyräs",
+        "Timo Leppänen",
+        "Henri Korkalainen"
+      ],
+      "published": "2026-11-18T13:53:05Z",
+      "updated": "2026-11-18T13:53:05Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24436",
+      "comment": "23 pages, 9 figures",
+      "abstract": "Synthetic polysomnography (PSG) data has great potential in healthcare applications, for example in substituting real data that is sensitive and challenging to collect. Previous research on synthetic PSG data has been largely focused on short segments of individual signals, overlooking the inter-signal dynamics related to sleep disorders. In this study, we developed a generative adversarial network (PSG-GAN) for co-synthesizing longer segments of multiple PSG signals with diverse and complex characteristics typical of obstructive sleep apnea (OSA). The synthetic signals appeared realistic, and the electroencephalography and electrooculography band powers were similarly distributed across sleep stages. Moreover, the PSG-GAN learned to mirror signal interactions such as changes in photoplethysmography-based heart rate during and after breathing obstructions. An automatic scoring model trained solely with automatically scored synthetic signals reached good performance on sleep staging (\\k{appa}=0.71 and 0.63) and respiratory event segmentation (\\k{appa}=0.57 and 0.60), on two test sets consisting of healthy volunteers and OSA patients, respectively. This demonstrates the potential of ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.23921",
+      "version": "1",
+      "title": "A structure-based model of the bacterial chemosensory array reveals how the scaffolding protein CheW tunes sensory responses",
+      "authors": [
+        "David Hathcock",
+        "Yingxin Zheng",
+        "Yuhai Tu"
+      ],
+      "published": "2026-11-18T06:11:15Z",
+      "updated": "2026-11-18T06:11:15Z",
+      "primary_category": "physics.bio-ph",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.stat-mech",
+        "q-bio.MN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23921",
+      "comment": "",
+      "abstract": "We introduce a structure-based Ising model of the bacterial chemosensory array to investigate how the scaffolding protein CheW tunes signaling responses. The model couples the activity states of core signaling units and of CheW subunits within hexameric rings on a lattice with the structure observed in cryoEM experiments. Recent experiments show that increasing CheW participation in hexameric rings raises response cooperativity in non-adapting cells and sensitivity in adaptation-proficient cells. Our lattice model quantitatively reproduces both effects, while mean-field theory shows that CheW increases the effective coupling between core units, sharpening the response in both cell types. The statistics of CheW placement (complete hexameric rings versus random distribution) substantially alter how responses vary with CheW abundance. Moreover, different coupling strengths can yield the same static response yet markedly different activity fluctuations and dynamics. CheW abundance further controls a crossover from relaxational to oscillatory fluctuations, whose location depends on the spatial distribution of CheW. These dynamical signatures, including oscillations predicted near native",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.23788",
+      "version": "2",
+      "title": "Geometry-bridge flow matching for blind rigid-motion correction in head cone-beam CT",
+      "authors": [
+        "Sungho Yun",
+        "Seungryong Cho"
+      ],
+      "published": "2026-11-18T03:51:56Z",
+      "updated": "2026-11-19T05:08:07Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23788",
+      "comment": "",
+      "abstract": "Rigid motion of a patient head during head cone-beam CT (CBCT) scan can degrade image quality and complicate recovery of accurate anatomical structures from the measured projections. We present a 3D flow-matching prior approach that learns the image changes induced by motion. Its geometry-bridge connects motion-corrupted and motion-free Feldkamp-Davis-Kress (FDK) reconstructed images of the same source volume through progressively reduced simulated motion. The forward projector's geometry derivative supplies analytic velocity targets along this path. A plug-and-play loop encompasses the learned image updates together with spline-based pose estimation, conjugate-gradient data consistency, and image total-variation regularization. Both the refined image volume and the FDK reconstructed image volume at the estimated poses are evaluated. On simulated 360-view scans from 30 held-out CQ500 patients with nominal per-component motion amplitudes within 10 mm / 10 degrees, the framework achieved state-of-the-art image reconstruction quality and motion accuracy in comparison with other methos such as learned autofocus and diffusion-based joint reconstruction. Mean peak signal-to-noise ratio (",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.21959",
+      "version": "1",
+      "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+      "authors": [
+        "Ihab Bendidi",
+        "Kian Kenyon-Dean",
+        "Alisandra K. Denton",
+        "Auguste Genovesio",
+        "Emmanuel Noutahi"
+      ],
+      "published": "2026-11-16T22:40:16Z",
+      "updated": "2026-11-16T22:40:16Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21959",
+      "comment": "",
+      "abstract": "Predicting the effects of genetic perturbations requires models that generalize beyond observed cell contexts and gene combinations. We introduce Occam, a multilayer perceptron (MLP) framework for representation learning and perturbation-effect prediction. Occam combines cell representations learned through denoising with gene interaction, text, and protein-sequence features. It achieves the highest aggregate representation scores for perturbation information and cell-type preservation with batch integration. In cross-context few-shot prediction, a perturbation and a cell context are each observed during training, but never together. Occam better captures the measured response patterns for these unobserved combinations than four retrained competitors or direct transfer of the same perturbation's measured effects from other training cell lines. Without fine-tuning, Occam best distinguishes perturbations among the evaluated models and simple baselines in cell lines held out from predictor training, across seen and unseen assays. Predicting expression levels accurately in these settings remains challenging. For double perturbations, which target two genes simultaneously, Occam compose",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.20964",
+      "version": "1",
+      "title": "A Soft Sponge-Pillar Electrode Platform for Motion-Tolerant Ambulatory EEG and Sleep Monitoring",
+      "authors": [
+        "Chansoo Kim",
+        "Weilun Li",
+        "Ryan Andersen",
+        "Yiheng Zhang",
+        "Shuoyan Liu",
+        "Junyi Zhao",
+        "Yuelin Li",
+        "Zhongyu Luo",
+        "Josephine Lau",
+        "Yang Huang",
+        "Diane Bracken",
+        "Matthew Singh"
+      ],
+      "published": "2026-11-16T12:07:30Z",
+      "updated": "2026-11-16T12:07:30Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph",
+        "cond-mat.mtrl-sci",
+        "cond-mat.soft"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20964",
+      "comment": "37 pages, 5 figures, Supporting Information with 10 supplementary figures. Chansoo Kim and Weilun Li contributed equally to this work",
+      "abstract": "Long-term wearable electrophysiological recording systems are essential for both clinical and real-world environments. While a wide range of wearable devices have been reported for electrocardiogram (ECG) and electromyogram (EMG) recording applications, most electroencephalography (EEG) measurements still require subjects to remain stationary while wearing rigid and uncomfortable equipment. Here, a soft and wearable sponge pillar EEG electrode is presented for long-term and motion-tolerant EEG recording. The electrode is composed of two layers of a carbon black (CB)-polydimethylsiloxane (PDMS) composite, where a firmer solid base assists in bypassing hair, enabling stable access to the scalp, while a porous sponge tip ensures comfort, reliable contact, and low skin-electrode impedance. Fabricated via a sugar templating process without microfabrication steps, the microporous sponge structure offers low modulus and significantly enhances the contact area with the skin when loaded with conductive gel. This allows the electrode to achieve a lower contact impedance of $1.62 \\times 10^{4}\\,Ω$ at 10 Hz, outperforming conventional gelled electrodes while maintaining gel stability for over ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.20566",
+      "version": "1",
+      "title": "Weight-Space Programming Changes How an LLM Uses Python for Computational Biology",
+      "authors": [
+        "Makoto Sato"
+      ],
+      "published": "2026-11-16T05:44:25Z",
+      "updated": "2026-11-16T05:44:25Z",
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20566",
+      "comment": "16 pages, 3 figures, 6 main tables, and 1 supplementary table",
+      "abstract": "Weight-space programming allows a language model to edit another model's weights without gradient-based training. We used Claude Opus 5.5 to edit Qwen3.5-0.8B and investigated how the edits changed its use of Python on computational biology problems. We compared four initial edited checkpoints with the original model on 50 test problems across three test seeds, yielding 600 paired evaluations. Strictly correct answers increased from 44 to 77, and technically correct answers, which included correct final values rejected for formatting, increased from 64 to 100. Repeated Python calls decreased from 1,834 to 1,044. Among the 64 pairs in which only the edited response was technically correct, the original model had already computed the correct value in 36 but did not submit a technically correct final answer. The edited model corrected the computation in 13 of the 64 pairs. With six additional checkpoints on the same 50 problems, technically correct answers rose from 96 to 154 across 900 pairs. We explored three selected problems with ten test seeds for each of ten checkpoints. On the melting-temperature problem, correct Python outputs decreased from 60 to 22 while technically correct ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.20274",
+      "version": "1",
+      "title": "Beyond AUC: Do Mammography Risk Models Predict When Cancer Occurs?",
+      "authors": [
+        "Svetlana Krasnova",
+        "Andrey Krylov",
+        "Dmitry Sorokin"
+      ],
+      "published": "2026-11-15T22:08:11Z",
+      "updated": "2026-11-15T22:08:11Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.CV",
+        "eess.IV"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20274",
+      "comment": "7 pages, 2 figures, 1 table. Submitted to ISBI 2027",
+      "abstract": "Longitudinal deep learning models for mammography-based breast cancer risk prediction output either per-year cumulative risks or a discrete distribution over the year of diagnosis, from which cumulative risks F1,...,F5 are derived. These models are evaluated almost exclusively with year-wise AUCs and the concordance index. We show that these metrics are largely insensitive to when cancer occurs: they can be high even for a model that carries no information about the year of diagnosis. We re-evaluate two recent longitudinal models (OA-BreaCR, LMV-Net) on CSAW-CC with a 5-year horizon using timing metrics computed on cancer cases only. Despite C-indices up to 0.75, neither orders cancer cases by time to diagnosis significantly better than chance (c_time 0.51 and 0.55, both 95% CIs covering 0.5). Weighted absolute timing error favours a constant \"year 3\" prediction over both models, so we use c_time as the primary timing metric. For Mirai's additive-hazard head, also used by LMV-Net, we analyse how per-year increments passed through a ReLU can collapse under severe class imbalance. We also propose a breast-level, two-stage model that separates whether from when. It matches LMV-Net in ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.20259",
+      "version": "1",
+      "title": "Scaling large language model-assisted line-of-therapy adjudication with human-in-the-loop evidence-calibrated selection",
+      "authors": [
+        "Olatunji Oni",
+        "Sanhita Sengupta",
+        "Marc De Benedetti",
+        "Nathanial Eddy"
+      ],
+      "published": "2026-11-15T21:32:18Z",
+      "updated": "2026-11-15T21:32:18Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM",
+        "stat.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20259",
+      "comment": "12 pages, 4 figures",
+      "abstract": "Large language models (LLMs) have enabled the ability to scale clinical adjudication tasks traditionally dependent on exhaustive manual review. Line-of-therapy (LoT) adjudication, a major bottleneck in oncology cohort construction, is a prime example. Line boundaries must be inferred from longitudinal treatment histories according to nuanced, study-specific definitions, at every regimen transition for every patient. LLMs can apply this adjudication at scale, but their reliability varies across patients. Treatment histories differ in complexity, and ambiguous or atypical patterns depend on expert clinical judgment. Reliable automation thus requires verified support for model assignments and the ability to identify cases that warrant manual review. Here, we present evidence-calibrated selection (ECS), a human-in-the-loop framework for scaling LLM-assisted LoT adjudication. ECS derives confidence from observed clinician adjudications, prioritizes patients with the least-supported assignments for follow-up review, and returns completed adjudications to the model as precedent. As the evidence base grows, ECS continuously calibrates confidence to estimate residual error, thus enabling mo",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.19812",
+      "version": "1",
+      "title": "Reasoning in the loop: antibody lead optimization by probing mechanism and measurement",
+      "authors": [
+        "Samuel Stanton",
+        "Aaron Solomon",
+        "Emily Delaney",
+        "Melanie Montgomery",
+        "Crystal Humphries",
+        "Timothy Acker",
+        "Ryan Henrici",
+        "Charbel Eid",
+        "Eddie Abrams",
+        "Peyton Greenside"
+      ],
+      "published": "2026-11-15T05:55:18Z",
+      "updated": "2026-11-15T05:55:18Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19812",
+      "comment": "31 pages, 19 figures, 8 tables",
+      "abstract": "Lab-in-the-loop systems, in which a model proposes molecules, automated assays measure their properties and the results retrain the model, are a popular approach to antibody lead optimization. These systems optimize for a specification defined with metrics computed from instrument signals, so their success depends on how well those metrics serve as proxies for the properties a drug candidate needs. When a metric is a poor proxy, neither a better model nor more data will fix it, and identifying the problem usually requires expert review. We report two campaigns run on BigHat Biosciences' Milliner platform, one on an anti-albumin nanobody (VHH) and one on an anti-mesothelin single-chain variable fragment (scFv), in which a research team and a general-purpose AI agent, Claude, brought scientific reasoning into the loop. Over seven rounds and about 1,010 design variants we built libraries from antibody lineage, structure and biophysics, and found from the raw curves that on each scaffold one thermal metric did not measure what its name implied. The libraries were built as controlled comparisons, so the results also show what each mutation contributes to each property. We fit a physical",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.19708",
+      "version": "2",
+      "title": "Analysis choices can produce apparent rich-club differences: an Alzheimer's disease EEG case study",
+      "authors": [
+        "Kai-Wayne Liu",
+        "Ryan Tian En Pang",
+        "Pholpat Durongbhan"
+      ],
+      "published": "2026-11-15T01:32:18Z",
+      "updated": "2026-11-17T08:02:34Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "q-bio.NC",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19708",
+      "comment": "v2: accepted manuscript (after peer review), replacing the submitted version. 26 pages, 1 figure, 1 table, supplementary material appended. Code and data: https://doi.org/10.5281/zenodo.22983739",
+      "abstract": "Background: The weighted rich-club coefficient tests whether a network's most strongly connected nodes are preferentially interconnected. Its interpretation depends on two often-implicit choices: how the randomised comparison networks are constructed, and whether the hubs are re-identified in each comparison network or held fixed at those of the observed network. When hubs are defined by connection strength, these choices change what the coefficient tests. New method: We examined how these choices affect inference using resting-state EEG from 20 people with Alzheimer's disease and 20 controls. Holding the data fixed, we compared four analysis pipelines, crossing two ways of building the comparison networks (global weight reshuffle or strength-conditioned null) with the two hub choices, and ran a calibration study using data constructed to contain no preferential hub coupling beyond nodal strength. Results: An apparent eyes-open group difference in rich-club organisation appeared only under the pipeline combining a global weight reshuffle with re-identified hubs. Under the empirical resampling ensemble, that pipeline reported a group difference in 43% of pseudo-studies, always highe",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.19339",
+      "version": "1",
+      "title": "From Mutation to Medication: Characterizing Failures of Clinical LLMs to Respect Genomic Resistance",
+      "authors": [
+        "Negin Ashrafi",
+        "Roxana Daneshjou"
+      ],
+      "published": "2026-11-14T11:26:01Z",
+      "updated": "2026-11-14T11:26:01Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19339",
+      "comment": "Accepted for publication in the Proceedings of the Machine Learning for Health (ML4H) 2026 Symposium",
+      "abstract": "Language models are increasingly proposed to support molecular tumour boards, but may recommend cancer therapies despite genomic evidence of resistance. We evaluated ten models on 1,464 resistance cases from five curated oncology knowledge bases, collecting 58,910 judgments. Models endorsed resisted therapies in 21.8-81.4% of cases. However, raw rates can reflect a tendency to agree rather than an ability to distinguish resistance from drug sensitivity: one open-weight model endorsed 81.4% of resistance cases and 82.3% of sensitivity controls. We therefore compared endorsement within matched gene and evidence-level groups. This analysis is exploratory because it was specified after the pre-registered analysis, which yielded null-to-weak results. Measured failures depended strongly on the reference knowledge base and evidence strength. When a second source independently confirmed resistance, four models across three vendors endorsed at most 2.4% of cases; at weaker evidence tiers, discrimination was not measurable. Models sometimes acknowledged resistance yet recommended the therapy. Repeating a model's own resistance conclusion reduced endorsement to 0.0-3.5% on cases where it had ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.19321",
+      "version": "1",
+      "title": "Generation of protein conformations using a simple inverted transformer",
+      "authors": [
+        "Luigi Leonardo Palese"
+      ],
+      "published": "2026-11-14T10:32:49Z",
+      "updated": "2026-11-14T10:32:49Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19321",
+      "comment": "",
+      "abstract": "Molecular dynamics is an extremely powerful approach for studying protein behavior, but it requires enormous computational resources to obtain an adequate sampling of possible conformations. Recently, thanks to successes in predicting three-dimensional protein structures, there has been an explosion of research exploring the opportunities offered by deep learning to address the problem of protein conformational landscape. In this work, an artificial intelligence system based on a variant of the Transformer architecture is introduced and applied to the problem of determining the ensemble of three-dimensional structures that a protein can access and their statistical weight. After being trained on a dataset of conformations of a particular protein obtained using classical all-atom molecular dynamics, this neural network is able to directly generate physically plausible protein conformations similar to those obtained both through molecular dynamics and experimentally. The ordered sequence of conformations obtained as output of the neural network rapidly converges towards the most populated regions of the protein's conformational landscape, suggesting that the system may have learned n",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.19257",
+      "version": "1",
+      "title": "A unified cross-scale framework for the dynamic Waddington landscape",
+      "authors": [
+        "Yuling Xue",
+        "Jinzhi Lei"
+      ],
+      "published": "2026-11-14T08:34:47Z",
+      "updated": "2026-11-14T08:34:47Z",
+      "primary_category": "q-bio.CB",
+      "categories": [
+        "q-bio.CB",
+        "math.AP",
+        "q-bio.PE"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19257",
+      "comment": "49 pages, 4 pages",
+      "abstract": "The Waddington epigenetic landscape is a foundational concept in developmental biology, yet its quantitative formulations remain largely disconnected from the population dynamics that originally motivated the metaphor. Existing approaches typically describe either intracellular gene-regulatory dynamics or population-level cell kinetics, but rarely both within a unified framework. Here, we develop a unified PDE-integral framework that couples stochastic gene-regulatory dynamics with probability-conserving population renewal, yielding a dynamic Waddington landscape $U(\\vec{x}, t) = -\\log f(\\vec{x}, t)$ defined directly from the evolving epigenetic probability density $f(\\vec{x}, t)$. Rigorous mathematical analysis of this framework establishes its well-posedness and provides conditions for the existence and uniqueness of stationary solutions. Application to canonical gene regulatory circuits shows that proliferation is not merely a determinant of population size, but an active regulator of landscape topology. Population renewal reshapes attractor stability and transition barriers in a circuit-dependent manner, generating transient plasticity in some regulatory architectures while sta",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.19066",
+      "version": "1",
+      "title": "Midsagittal Corpus Callosum Parameterization: A Framework for Spatially Detailed Diffusion MR Imaging Analysis",
+      "authors": [
+        "Caio Santana",
+        "Catherine Lebel",
+        "Richard Frayne",
+        "Letícia Rittner"
+      ],
+      "published": "2026-11-14T01:18:58Z",
+      "updated": "2026-11-14T01:18:58Z",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "q-bio.NC",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19066",
+      "comment": "47 pages, 10 figures, 6 tables, plus 11 pages of supplementary material (12 figures, 6 tables). Under review at Imaging Neuroscience",
+      "abstract": "The corpus callosum (CC) is the largest white matter structure in the human brain and plays a central role in interhemispheric communication. Diffusion MR imaging is widely used to investigate microstructural organization, but commonly used analysis approaches have important limitations. Voxel-based methods rely heavily on accurate inter-subject registration and smoothing choices, tract-based spatial statistics (TBSS) restricts the analysis to a narrow white matter skeleton, and parcellation approaches reduce spatial detail by averaging diffusion measures over relatively large regions. In this work, we introduce a parameterization framework for the analysis of the midsagittal CC that resamples the structure using a standardized grid of points, establishing a geometric correspondence across individuals without explicit inter-subject registration. In a test-retest dataset, the method provided stable measurements while covering most of the midsagittal CC, and sensitivity analyses showed that results in the central CC changed little under perturbations of the input CC mask, whereas peripheral regions were more sensitive. The framework was further evaluated in group analyses of aging an",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.19016",
+      "version": "1",
+      "title": "Match and Correct: A Repeated Computational Motif in Evoformer Layers",
+      "authors": [
+        "Ishan Khire",
+        "Naren Manikandan",
+        "Tyler Hayes",
+        "Giri Krishnan"
+      ],
+      "published": "2026-11-13T23:31:30Z",
+      "updated": "2026-11-13T23:31:30Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19016",
+      "comment": "27 pages, 4 figures (main text), 16 supplementary figures. NeurIPS 2026 Workshop: Interpretability for Discovery. Code: https://github.com/ishankhire/match-and-correct-evoformer",
+      "abstract": "Triangle attention and triangle multiplicative updates form key components of the Evoformer, and were introduced specifically to encourage consistency with the triangle inequality. Yet whether representational changes over layers reduce triangle inequality violations has not been tested. We probe the pair representation at each of OpenFold's 48 Evoformer layers, decoding final C$_α$-C$_α$ distances with four probe families (a shared linear probe, per-protein linear probes, a sequence-separation-gated linear probe, and XGBoost) and reconstructing intermediate 3D structures from the decoded distances via multidimensional scaling. Across a cohort of 552 CAMEO and ECOD proteins, distance decodability ($R^2$) and reconstruction quality (TM-score) rise in early layers, plateau in the middle of the network, and rise again in late layers. Directly measuring triangle-inequality violations in the decoded distances reveals a similar, more exaggerated pattern: violations rise to a peak, fall to a trough, rise to a second peak, and only then decline, revealing two distinct episodes of decreasing normalized triangle violations rather than one continuous improvement. Cumulative forward and revers",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.18819",
+      "version": "1",
+      "title": "Functional nestedness of soil nematode communities across Europe: integrating morphological counts and eDNA reads",
+      "authors": [
+        "Giuseppe Nicolosi",
+        "Michael Bonkowski",
+        "Carlo Febbi",
+        "Christian Mulder"
+      ],
+      "published": "2026-11-13T18:00:56Z",
+      "updated": "2026-11-13T18:00:56Z",
+      "primary_category": "q-bio.PE",
+      "categories": [
+        "q-bio.PE",
+        "q-bio.QM",
+        "stat.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18819",
+      "comment": "40 pages, 6 main figures and 1 main table, and supplementary material with 2 additional figures and 3 additional tables",
+      "abstract": "1. Soil nematodes occupy multiple trophic positions and contribute to key processes in soil food webs. Their communities vary across land uses and environmental conditions, yet it remains unclear whether these differences mainly reflect taxon replacement or nested patterns of taxon occurrence. 2. Here, we analysed two independent European datasets of soil nematode communities, SOB4ES, based on eDNA metabarcoding, and NemEu, based on morphological identification, to examine how genus composition varies across land uses. We partitioned community dissimilarity into turnover and nestedness-resultant components and compared sites under contrasting land uses with those sharing the same land use, while accounting for geographical and soil-related variation. We also assessed matrix-level nestedness, differences among trophic groups and associations between genus composition and environmental gradients. 3. In both datasets, genus turnover was consistently greater between contrasting land uses than within the same land use. Although the differences were modest, they remained significant after accounting for geographical distance and genus richness, whereas nestedness-resultant dissimilarity ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.18148",
+      "version": "1",
+      "title": "Certificate-Based Verification of Pulsed Field Ablation Models",
+      "authors": [
+        "Konstantinos Dovelos"
+      ],
+      "published": "2026-11-13T13:22:35Z",
+      "updated": "2026-11-13T13:22:35Z",
+      "primary_category": "cs.CE",
+      "categories": [
+        "cs.CE",
+        "math.NA",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18148",
+      "comment": "18 pages, 5 figures, 7 tables",
+      "abstract": "Computational models of pulsed field ablation predict the lesion as the tissue where the electric field exceeds a lethal threshold. Their numerical error is rarely bounded, and automated pipelines increasingly run them without an expert checking each result. To verify each run, we separate the question \"was the stated model solved correctly?\" from the solver that answers it. An untrusted solver returns with its answer a certificate, consisting of a potential with the correct electrode and ground values and an exactly charge-conserving current. A small independent checker verifies the certificate against a written specification of the physics. Using the Prager-Synge hypercircle theorem evaluated in ball arithmetic, it turns the certificate into guaranteed two-sided bounds on the impedance and on the root-mean-square field of every tile of a lesion map, also over a range of blood/tissue conductivity ratios. A vectorized version of the checker takes about a tenth of the solve time. For a focal electrode in contact, the tile-resolved depth at 1000 V and 700 V/cm is proven to lie in 3.50-3.75 mm for every ratio from 1.7 to 3.75. For a bipolar catheter, certified depths overlap published",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.18062",
+      "version": "1",
+      "title": "Exact stochastic theory of post-transcriptional gene autoregulation mediated by RNA-binding proteins",
+      "authors": [
+        "Chen Jia"
+      ],
+      "published": "2026-11-13T11:45:58Z",
+      "updated": "2026-11-13T11:45:58Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN",
+        "cond-mat.stat-mech",
+        "physics.bio-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18062",
+      "comment": "",
+      "abstract": "While analytical theories of transcriptional feedback loops have been well established, exact stochastic analyses of post-transcriptional feedback loops remain relatively scarce and are notoriously challenging. Here, we develop an exact theory of post-transcriptional gene autoregulation, in which reversible protein-mRNA binding modulates both translation and mRNA stability. We derive the state-dependent protein burst-size distribution, the steady-state protein number distribution in terms of confluent Heun functions, and an exact criterion for sub-Poissonian fluctuations. By comparing transcriptional and post-transcriptional networks, we reveal a reversal in their relative advantages in noise suppression and rhythm transmission: negative feedback favors post-transcriptional regulation, whereas positive feedback favors transcriptional regulation. Our results reveal how the regulatory pattern fundamentally shapes gene expression fluctuations and dynamic responses.",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.17899",
+      "version": "1",
+      "title": "More Genes, Faster Inference: Efficient Large-Panel Spatial Transcriptomics Prediction from Histology",
+      "authors": [
+        "Songming Zhang",
+        "Yuxiao Luo",
+        "Shifu Luo",
+        "Siran Chen",
+        "Shuquan Su",
+        "Jinyan Li"
+      ],
+      "published": "2026-11-13T08:35:27Z",
+      "updated": "2026-11-13T08:35:27Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.17899",
+      "comment": "Accepted at KDD 2027",
+      "abstract": "Spatial transcriptomics (ST) prediction from histology aims to infer spatially resolved gene expression profiles directly from tissue images. This is a challenging problem that is currently often addressed with complicated model architectures, additional inputs, and complicated training procedures, while remaining limited to fixed, small gene panels. This raises a natural question: Is there an efficient method for large-panel ST prediction? Here, we present GeneFlow, a simpler yet effective framework for large-scale spatial gene expression prediction that unifies flow-matching generative modeling with structured multimodal fusion. Specifically, GeneFlow first encodes both histological morphology and cross-gene interactions in spatial spots through histology and gene tokenizers. The model directly predicts spatial gene expression, rather than an intermediate velocity field, while being trained with a velocity-based flow-matching objective. We show that, even without relying on heavy generative pipelines, GeneFlow achieves state-of-the-art performance across multiple ST benchmarks, with up to 56.8% gains in 1,000-gene prediction. Extensive experiments further show that GeneFlow produ",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.26159",
+      "version": "1",
+      "title": "When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification",
+      "authors": [
+        "Yekai Shen",
+        "Yuqian Wang",
+        "Zishun Liao",
+        "Rongsheng Wang",
+        "Wenting Chen",
+        "S. Kevin Zhou",
+        "Qingsong Yao"
+      ],
+      "published": "2026-11-19T14:15:07Z",
+      "updated": "2026-11-19T14:15:07Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26159",
+      "comment": "accepted by IEEE BIBM 2026",
+      "abstract": "Pathology foundation models supply strong representations for whole-slide image classification, yet the confidence attached to their predictions remains hard to trust. Prevailing uncertainty estimators act within a single feature space and thereby overlook the uncertainty that the choice of foundation-model representation itself induces. This work introduces CALIFUSE, a calibration-oriented framework that fuses several pathology foundation models for the specific purpose of uncertainty estimation. Departing from accuracy-driven fusion, CALIFUSE reads representational heterogeneity across encoders as an explicit confidence cue. Slide-level decision consensus is coupled with chunk-level evidence agreement quantified through Jensen-Shannon divergence, so that both prediction stability and fine-grained evidence consistency inform the estimate. Foundation-model encoders stay frozen. A task-specific nnMIL classifier is still trained for each FM; CALIFUSE then estimates confidence at inference without training an extra fusion module. Evaluated on seven WSI classification tasks under several foundation-model combinations, the framework sharpens calibration, misclassification detection, and",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.26142",
+      "version": "1",
+      "title": "Transition Dynamics Matter: Hidden Markov Scoring of Epileptogenic Channels in SEEG",
+      "authors": [
+        "Giulia Tacconi",
+        "Federico Mason",
+        "Lorenzo Ferri",
+        "Elena Pasini",
+        "Lidia Di Vito",
+        "Matteo Martinoni",
+        "Lara Alvisi",
+        "Anna Scarabello",
+        "Luca Zanuttini",
+        "Francesca Bisulli",
+        "Andrea Zanella"
+      ],
+      "published": "2026-11-19T13:58:28Z",
+      "updated": "2026-11-19T13:58:28Z",
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26142",
+      "comment": "",
+      "abstract": "Stereo-electroencephalography (SEEG) represents the most effective technique for the detection of the Epileptogenic Zone (EZ) in drug-resistant epilepsy. This procedure produces a multi-dimensional signal with hundreds of components, named channels, each associated with a different brain location. In this work, we propose a joint Hidden Markov Model (HMM), in which each SEEG channel is described by a latent Markov chain, with states shared across the network and channel-specific transition probabilities. Accordingly, we develop a detection algorithm that identifies the channels belonging to the EZ by quantifying, through the Kullback-Leibler divergence, the difference between their transition probabilities in the inter-ictal period and at seizure onset. We evaluate our framework in SEEG recordings from 30 patients with drug-resistant epilepsy and compare it with a benchmark that operates in the same observation space but does not consider a latent-state structure. Compared against medically validated EZ definitions, our study shows that modeling channel-specific temporal transitions can improve EZ localization and offer a data-driven framework to investigate the latent dynamics und",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.25584",
+      "version": "1",
+      "title": "An Explainable and Scalable Hierarchical Tensor Framework for Integrating Multi-Omics and Digital Pathomics",
+      "authors": [
+        "Ahmad Hussein",
+        "Ali Anaissi",
+        "Mukesh Prasad",
+        "Ali Braytee"
+      ],
+      "published": "2026-11-19T06:27:17Z",
+      "updated": "2026-11-19T06:27:17Z",
+      "primary_category": "q-bio.GN",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25584",
+      "comment": "",
+      "abstract": "Background: Precision oncology requires integration of heterogeneous molecular and pathology data, yet many fusion models offer limited biologically grounded interpretability and struggle with missing modalities. Methods: We present Hierarchical Interpretable Tensor Fusion (HIT-Fuse), integrating six modalities: somatic copy number variation, DNA methylation, RNA sequencing, microRNA expression, RPPA protein abundance, and vision transformer-derived pathomics across four TCGA cohorts (glioma, lung adenocarcinoma, breast, and kidney cancer). Modality-specific autoencoders compress high-dimensional inputs, followed by two-stage CP tensor decomposition. Missing latent modalities are reconstructed using clinical covariates and observed omics to expand cohorts and retrain downstream models. A mathematical traceback mechanism enables global and local xAI attributions. Results: HIT-Fuse identifies distinct latent subgroups with significant survival stratification in glioma, breast, and kidney cohorts, both with complete and reconstructed modalities. Cohort expansion yields cohort-specific gains, including a 56.4% relative increase in weighted F1 for glioma. Biological validation against D",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.25422",
+      "version": "1",
+      "title": "From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs",
+      "authors": [
+        "Huixin Zhan",
+        "Jason H. Moore"
+      ],
+      "published": "2026-11-19T03:02:19Z",
+      "updated": "2026-11-19T03:02:19Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25422",
+      "comment": "",
+      "abstract": "Genomic foundation models provide variant-level evidence, but connecting that evidence to phenotype hypotheses requires accounting for uncertainty throughout structured reasoning. We introduce an uncertainty-conditioned path-energy framework that converts sequence predictions and calibrated predictive uncertainty into explicit distributions over graph-supported phenotype hypotheses, without patient-level phenotype supervision. An interpretable learned energy scores admissible gene--disease--phenotype routes, query uncertainty controls the target temperature, and path probabilities are aggregated into phenotype hypotheses. This formulation makes evidence quality an explicit determinant of hypothesis breadth while retaining traceable multi-path support. Exact normalization over enumerable candidate sets provides a reference for evaluating a Hastings-corrected learned revision operator. On AlzKB and Hetionet, phenotype-level entropy tracks upstream uncertainty, with Spearman correlations of 0.951 and 0.878, respectively; ablations identify the contribution of uncertainty conditioning. In masked-edge recovery, the model exceeds chance and degree-matched probability-permutation controls",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.24799",
+      "version": "1",
+      "title": "Prognosis Without Prediction: The Intrinsic Geometry of Survival",
+      "authors": [
+        "Atahan Karagoz"
+      ],
+      "published": "2026-11-18T17:42:23Z",
+      "updated": "2026-11-18T17:42:23Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24799",
+      "comment": "Code available at: https://github.com/Atahanka/SOSM",
+      "abstract": "Modeling systemic failure in high-dimensional environments is fundamentally limited by supervised algorithms that attempt to predict sparse, noisy or censored endpoints. To break this reliance on explicit outcome regression, we engineered the Self-Organizing Survival Manifolds (SOSM) framework, a deep learning architecture that decouples unsupervised representation learning from survival labels and treats time-to-event progression as an emergent geometric property. The system projects heterogeneous multi-omics arrays into a unified latent space governed by a pseudotime-weighted, curvature-minimizing graph Laplacian, organizing patient trajectories along low-dissipation geodesic flows. To validate the framework, we applied this architecture to a 184-patient clear cell renal cell carcinoma multi-omics cohort. Across a deterministic 5-fold cross-validation pipeline, SOSM achieved a mean Concordance Index of $0.768 \\pm 0.068$, while out-of-fold risk stratification yielded significant survival divergence (log-rank $p < 0.001$) accompanied by a 14.7% increase in local manifold dissipation among high-risk patients. Furthermore, interrogating the network's encoder weights confirmed that th",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.24150",
+      "version": "1",
+      "title": "Micrograph B-factor estimation via Wilson statistics",
+      "authors": [
+        "Ayelet Heimowitz",
+        "Amit Singer"
+      ],
+      "published": "2026-11-18T09:55:09Z",
+      "updated": "2026-11-18T09:55:09Z",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24150",
+      "comment": "",
+      "abstract": "The single-particle cryo-electron microscopy imaging process is known to cause exponential decay in the amplitude and power spectra of proteins. This decay is modeled by the B factor and is currently corrected as a post-processing stage of the 3D reconstruction. As a consequence, all experimental images in the dataset are assumed to share the same B factor. In this paper, we suggest a novel approach wherein the B factor is determined and corrected as a preprocessing step to the reconstruction. We show such an approach can improve reconstruction resolution.",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.24104",
+      "version": "1",
+      "title": "SCOPE: Single-Cell Omics Prediction from Histology via RNA-Protein Prior Enhancement",
+      "authors": [
+        "Leyang Tao",
+        "Xuan Gong",
+        "Luyuan Xie",
+        "Arjun Beniwal",
+        "Yuqi Tan",
+        "Kun-Hsing Yu"
+      ],
+      "published": "2026-11-18T09:24:45Z",
+      "updated": "2026-11-18T09:24:45Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24104",
+      "comment": "",
+      "abstract": "Predicting the RNA and protein content of cells from routine H&E images could extend spatial molecular profiling to existing slide archives. However, both H&E-spatial proteomics and H&E-spatial transcriptomics paired datasets are limited by the number of available markers and the insufficient availability of high-quality, cell-resolved data. We present SCOPE (Single-Cell Omics Prediction via RNA-protein prior Enhancement), a unified framework that leverages biologically complementary information between RNA and proteins to address the limited availability of single-omics supervision. Our key insight is that, although RNA and proteins represent distinct molecular modalities, their biological relationships provide valuable shared knowledge that can benefit single-omics prediction tasks. To this end, SCOPE introduces biologically informed biomarker priors to enhance shared gene-level representations, enabling knowledge transfer across RNA and protein modalities through gene-protein correspondence and molecular associations. By exploiting these complementary relationships, SCOPE enables both prediction tasks to benefit from a shared backbone enriched with cross-omics biological knowled",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.23953",
+      "version": "1",
+      "title": "MitoWorld: A Stochastic World Model of the Single-Cell Cycle under Genetic Perturbation",
+      "authors": [
+        "Ting Long",
+        "Xiaojing Sun",
+        "Cheng Han",
+        "Zhicheng Ji",
+        "Yingnian Wu",
+        "Jiebo Luo",
+        "Heng Fan",
+        "Dongfang Liu"
+      ],
+      "published": "2026-11-18T06:42:32Z",
+      "updated": "2026-11-18T06:42:32Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23953",
+      "comment": "",
+      "abstract": "A cell observed after a gene knockdown has an uncertain future, both in how its appearance will evolve and when it will divide. Existing approaches predict endpoints or population-level changes without jointly modeling individual trajectories and division timing. In this work, we present MitoWorld, a stochastic world model that generates these future appearances as continuous evolution in a Gaussian reference latent, terminated by a division hazard and converted into images by a conditional diffusion renderer. The ordinary transition provably preserves its Gaussian reference, tying its noise to its dynamics; paired observations identify its discrete transition where stationary marginals cannot. The hazard turns division timing into a survival likelihood that can be tested against real cycle lengths. On 325 held-out MitoCheck tracks spanning 17 knockdowns and a control, MitoWorld lowers FID by 34.6\\% and the video metric JEDi by 45.6\\% relative to the strongest baselines. Its latent-space prediction intervals achieve near-nominal 90\\% coverage, are 35\\% narrower than those of a model with freely fitted noise. The hazard also yields cell-cycle length distributions with KS distance cl",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.23925",
+      "version": "1",
+      "title": "Cardiac MRI-informed electrocardiography enables biologically grounded cardiomyopathy detection",
+      "authors": [
+        "Zhengyao Ding",
+        "Kewen Wang",
+        "Yujian Hu",
+        "Ziyu Li",
+        "Yiheng Mao",
+        "Yue Wang",
+        "Haitao Li",
+        "Dengnan Zhang",
+        "Xuanhong Liu",
+        "Yue Wang",
+        "Jing Wang",
+        "Yue Chen"
+      ],
+      "published": "2026-11-18T06:16:55Z",
+      "updated": "2026-11-18T06:16:55Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23925",
+      "comment": "46 pages, 9 figures",
+      "abstract": "Precise myocardial phenotyping at population scale is limited by the cost and accessibility of cardiac magnetic resonance (CMR), whereas electrocardiography (ECG) is widely available but reflects electrical rather than structural and functional information. Here we develop MyoECG, a cross-modal representation learning framework that distils myocardial structural and functional knowledge from CMR into standard 12-lead ECGs, enabling imaging-informed cardiomyopathy detection and subtype classification from ECGs alone. MyoECG was pretrained on 45,241 paired ECG-CMR examinations from UK Biobank and a tertiary cardiovascular centre, then developed and validated across more than 1.8 million ECGs from seven independent datasets. Across internal and external datasets spanning prevalences of 0.2-54.7%, MyoECG outperformed five pretrained ECG foundation models, with AUROCs of 0.800-0.974 for cardiomyopathy detection. In a multi-reader study of six cardiologists, MyoECG assistance improved mean sensitivity by 0.109 (95% CI, 0.041-0.175; P = 0.009) and specificity by 0.056 (95% CI, 0.004-0.108; P = 0.040). In 41,128 UK Biobank participants, the MyoECG score showed genetic correlations with car",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.23794",
+      "version": "1",
+      "title": "Benchmarking Traditional and Learning-Based Reference-Free Compressors for Long-Read Sequencing Data",
+      "authors": [
+        "Huidong Ma",
+        "Hui Sun",
+        "Xinyan Shi",
+        "Cheng Zhong",
+        "Xiaoguang Liu",
+        "Gang Wang"
+      ],
+      "published": "2026-11-18T04:00:08Z",
+      "updated": "2026-11-18T04:00:08Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23794",
+      "comment": "",
+      "abstract": "Long-read sequencing technologies generate large volumes of data, creating substantial storage and transmission demands. Although reference-based compressors can achieve high compression, their reliance on an appropriate reference genome limits their use. We present LRCBench, a benchmark and survey of reference-free lossless compressors for long-read sequencing data. We review traditional and learning-based general-purpose and sequencing-specific methods, then evaluate 35 compressors on 16 real-world datasets from Oxford Nanopore and PacBio platforms. We compare compression ratio, storage savings, runtime, peak memory use, and robustness across datasets. Learning-based compressors are evaluated on six MinION datasets because of their high computational costs. CoLoRd achieves the best overall compression ratios in our experiments, while other methods offer trade-offs in speed, memory use, and robustness. We also examine multithreaded speedup and discuss future directions in parallel acceleration, privacy protection, adaptive parameter tuning, and hardware-algorithm co-design.",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.23777",
+      "version": "1",
+      "title": "STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction",
+      "authors": [
+        "Ayush Pandit",
+        "Rohan V. Koodli",
+        "Wei Deng",
+        "Roxana Daneshjou",
+        "Ron O. Dror"
+      ],
+      "published": "2026-11-18T03:34:08Z",
+      "updated": "2026-11-18T03:34:08Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23777",
+      "comment": "9 pages, 3 figures",
+      "abstract": "Accurately predicting a small molecule's binding affinity to a protein, a critical task in drug discovery, remains challenging. Physics-based approaches like free-energy perturbation (FEP) have very high computational costs and require expert setup. Recent machine learning--based cofolding models have reported accuracy approaching that of FEP---and at least one of them, Boltz-2, has already been widely adopted for affinity prediction---but they remain expensive for large computational screens and even more expensive for retraining on newly collected experimental data. To address these challenges, we introduce STORM: Similarity Transfer from Observed Reference Molecules. STORM is a fast, simple machine learning model that ensembles many small model fusions of diverse protein and molecule representations for binding affinity prediction. Trained on the same data, STORM matches or exceeds the accuracy of Boltz-2 on multiple evaluation datasets, while delivering a speed improvement of over five orders of magnitude for both inference and training. Our results also suggest opportunities to substantially improve affinity prediction accuracy by integrating historical experimental affinity d",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.23553",
+      "version": "1",
+      "title": "Deep-Learning-Assisted Full Waveform Inversion for Attenuation Reconstruction in Ultrasound Computed Tomography",
+      "authors": [
+        "Mingrui Liu",
+        "Michael L. Oelze"
+      ],
+      "published": "2026-11-17T22:01:10Z",
+      "updated": "2026-11-17T22:01:10Z",
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23553",
+      "comment": "",
+      "abstract": "Acoustic attenuation is more challenging to reconstruct and has received less attention than sound speed in ultrasound computed tomography using full-waveform inversion (FWI). In this study, a deep-learning (DL)-assisted FWI framework was proposed for attenuation reconstruction based on our previous work. Some numerical experiments were conducted to investigate the strategy and the effectiveness of using DL to help accelerate and improve the reconstruction quality of attenuation imaging in FWI. The results indicated that DL saved computational cost by 28% and improved attenuation reconstruction accuracy by 70% when combined with sufficiently accurate sound speed estimates. The result supports the potential of DL initialization to improve the computational efficiency and reconstruction quality of joint SOS and attenuation FWI.",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.23549",
+      "version": "1",
+      "title": "Quantitative Modeling of Action-Potential-Driven Sodium Dynamics in Neurons: From Sodium Influx to Sodium MRI",
+      "authors": [
+        "Yongxian Qian"
+      ],
+      "published": "2026-11-17T21:56:43Z",
+      "updated": "2026-11-17T21:56:43Z",
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.23549",
+      "comment": "15 pages, 2 figures, 2 tables, Mini Review",
+      "abstract": "Neuronal action potentials are accompanied by the influx of extracellular sodium ions (Na+) into axons through voltage-gated sodium channels. Repetitive neuronal firing can lead to activity-dependent increases in intracellular sodium concentration, which are subsequently reversed primarily through the Na+/K+-ATPase. Quantifying these dynamic changes provides a biophysical foundation for investigating neuronal activity using sodium (23Na) magnetic resonance imaging (MRI). This mini-review examines the relationships among firing frequency, action-potential-driven sodium influx, and intracellular sodium accumulation, to establish a quantitative framework linking neuronal activity to sodium MRI. The potential sensitivity and limitation of conventional and compartment-sensitive sodium MRI for detecting activity-dependent sodium changes are also discussed. Keywords: Sodium MRI; neuronal firing; action potential; sodium influx; intracellular sodium concentration.",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.22988",
+      "version": "1",
+      "title": "Structured AI ideation yields physical strategies for epithelial barrier repair",
+      "authors": [
+        "Geonho Nah",
+        "Johyun Park",
+        "Kyung-Ah Cho",
+        "Suyoung Hwang",
+        "Yoon Hee Lim",
+        "Eun-kyung Min",
+        "Seunghyun Moon",
+        "Donghyun Koh",
+        "Seungwon Kim",
+        "Jiho Park",
+        "Hojin Yoo",
+        "Myungsun Nam"
+      ],
+      "published": "2026-11-17T16:05:22Z",
+      "updated": "2026-11-17T16:05:22Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.22988",
+      "comment": "",
+      "abstract": "AI systems increasingly support literature analysis, candidate evaluation and hypothesis refinement, but enabling researchers to explore research directions beyond established disciplinary approaches remains challenging. We developed Abelio, an AI system designed to generate novel research directions by expanding investigators' avenues of inquiry. Abelio reformulates research objectives, uses these alternative formulations to identify relevant elements outside conventional disciplinary boundaries, and refines the resulting hypotheses. Each stage integrates divergent exploration with convergent selection through a dedicated subsystem. In quantitative evaluations, proposals generated by the Ideation Core (Abelio's hypothesis-generation core) outperformed those of four frontier large language models in scientific soundness and hypothesis diversity, and three of four in distance from existing literature. Subsystem ablation showed that each subsystem contributes to the property it targets, with the contribution of Element Selection measurable before Refinement. To investigate intestinal epithelial barrier restoration, Abelio proposed physical interventions involving membrane-tethered po",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.22953",
+      "version": "1",
+      "title": "Fiberpose: state-of-the-art fiber morphometry and instance segmentation with a distance-transform neural network",
+      "authors": [
+        "Viktor A. Balashov",
+        "Daniil S. Antonenko"
+      ],
+      "published": "2026-11-17T15:41:46Z",
+      "updated": "2026-11-17T15:41:46Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.22953",
+      "comment": "",
+      "abstract": "Analysis of fibrous structures in SEM images is a routine task in biomedical engineering and materials science. However, most available methods for fiber quantification still rely on classical image binarization followed by simple post-processing. These approaches often produce unreliable results in images with weak boundaries, heterogeneous contrast, and densely packed fibers. Here, we introduce Fiberpose, a framework that reformulates fiber analysis as direct regression of a smooth distance-transform (DT) field, together with a novel set of geometry-based algorithms specifically adapted to this representation. The predicted field directly encodes fiber geometry, while the accompanying algorithms enable instance reconstruction and measurement of diameter and orientation within a unified workflow. The framework is implemented as a standalone Python desktop application and a web tool https://fiberpose.org. On an independent dataset of fibrous SEM images, Fiberpose achieved state-of-the-art instance-segmentation accuracy in comparison with SAM2 and Cellpose-SAM, and more accurate diameter measurements than DiameterJ, Fibar and GIFT. The method remains effective in dense and weakly co",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.22907",
+      "version": "1",
+      "title": "Optimising Recruitment and Sample Allocation in Multi-Site Rare Disease Studies",
+      "authors": [
+        "Farid Zare",
+        "Catherine Clancy",
+        "Tal Dattner",
+        "Martina Messina",
+        "Julian Teinert",
+        "Jack McGoldrick",
+        "Pavel Ješina",
+        "Sabine Weller Grønborg",
+        "Ute Spiekerkoetter",
+        "James J O'Byrne",
+        "Trine Tangeraas",
+        "Maria Luz Couce"
+      ],
+      "published": "2026-11-17T15:11:13Z",
+      "updated": "2026-11-17T15:11:13Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "math.OC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.22907",
+      "comment": "",
+      "abstract": "Clinical research in rare diseases is challenged by the limited availability and broad geographical distribution of eligible patients. This necessitates multi-centre collaboration and strategic selection of analytical laboratories based on capacity, cost, and capability. We present a mathematical framework based on cardinality optimisation to support key operational decisions in study design, balancing clinical relevance, feasibility, budgetary constraints, and logistical factors. The framework was implemented in the Reconstruction and Computational Modelling for Inherited Metabolic Diseases (Recon4IMD) project, aiming to recruit 1,900 diagnosed patients across 24 healthcare centres and eight metabolomic laboratories. Compared to both proportional heuristic and greedy marginal allocation baselines, the proposed optimisation model consistently achieved higher recruitment yields in simulated multi-centre scenarios and reduced metabolomic analysis costs by approximately 30% under unconstrained conditions. Notably, both the heuristic and greedy allocation baselines became infeasible under progressively tighter laboratory capacity constraints, whereas the optimised model maintained feas",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.22710",
+      "version": "1",
+      "title": "Feedback and Resource Competition in Incoherent Feedforward Loops: When Is Cumulative Dose Ordering Preserved?",
+      "authors": [
+        "Iva Janković",
+        "Fabiana Calandra",
+        "Giansimone Perrino",
+        "Velia Siciliano",
+        "Filippo Menolascina"
+      ],
+      "published": "2026-11-17T12:50:48Z",
+      "updated": "2026-11-17T12:50:48Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.22710",
+      "comment": "",
+      "abstract": "Biochemical coupling can change the expression levels and timing predicted by an incoherent feedforward loop (IFFL) model without changing cumulative dose ordering. We derive ordering conditions using shared-production identities and Metzler comparison bounds, with tail guarantees beyond finite computation. A nonlinear example exhibits delayed slope reversal at a fixed dose, on an $O(1/η)$ timescale as pathway mismatch $η$ vanishes. At one fixed joint fit, validated bounds establish decreasing cumulative output across 20-100 ng nominal burden, from zero to full target loading, at every positive finite observation time for a translation-blocking model and an RNA-decay model. Full loading at 20 ng reduces 48-hour cumulative output by 13.35% and 10.18%, respectively, while endpoint concentration in the first model changes by only +0.15%. Preserved ordering therefore does not ensure quantitative agreement.",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.22554",
+      "version": "1",
+      "title": "Molecular memory reduces timing noise in stochastic gene expression",
+      "authors": [
+        "Kuheli Biswas",
+        "Supravat Dey",
+        "Abhyudai Singh"
+      ],
+      "published": "2026-11-17T10:43:07Z",
+      "updated": "2026-11-17T10:43:07Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN",
+        "cond-mat.stat-mech"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.22554",
+      "comment": "28 pages, 5 figures",
+      "abstract": "Fluctuations in gene expression affect the timing precision of downstream events triggered when a gene product reaches a critical threshold. The first-passage time (FPT) to this threshold characterizes the timing of such events. In conventional single-step birth--death models, reaction waiting times are exponentially distributed and hence memoryless. In this setting, FPT noise exhibits a U-shaped dependence on the threshold, attaining its minimum near one-half of the steady-state mean. However, mRNA production and degradation often involve multiple sequential steps, leading to hypoexponential distributions of mRNA production times and mRNA lifetimes. Here, we investigate how molecular memory arising from multistep mRNA production and degradation affects FPT statistics in bursty gene expression. We calculate FPT statistics in the small-noise limit. Both multistep mechanisms reduce FPT noise, but through distinct mechanisms. Multistep burst arrival reduces mRNA copy-number fluctuations, thereby suppressing timing noise. Multistep degradation instead reshapes transient accumulation dynamics, reducing relative timing noise even when steady-state mRNA noise increases. The threshold that",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.21859",
+      "version": "1",
+      "title": "Diversity Preservation Recovers Transcription Factor Motifs Across Challenging Confounder Landscapes",
+      "authors": [
+        "Alejandro Medina",
+        "Mary Lauren Benton"
+      ],
+      "published": "2026-11-16T20:23:15Z",
+      "updated": "2026-11-16T20:23:15Z",
+      "primary_category": "cs.NE",
+      "categories": [
+        "cs.NE",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21859",
+      "comment": "",
+      "abstract": "Motif discovery is a process where DNA sequences are searched for the short patterns, called motifs, that transcription factor (TF) proteins bind. However, the motif lengths are often unknown and motif attribution often competes with a near-identical motif of a related protein. In this work, we pair a motif genotype whose length emerges from an evolvable gate with MAP-Elites archives organized by three descriptor pairs, and validate every motif against the full HOCOMOCO database. On five liver ChIP-seq datasets spanning distinct confounder landscapes, a $(μ + λ)$ baseline differing only in survivor selection collapses onto a single motif and never ranks the target first across three datasets, while every MAP-Elites archive does so in at least 13 of 30 seeds on every dataset. Against the motif discovery tool MEME, run on the same sequences and validated identically, the archives recover the target signal as reliably on four datasets and more robustly when motif width is constrained. Neither method ranks the target above its closest relatives on HNF4A and JUND over the full width range, but narrow archive motifs rank HNF4A first in up to 43% of seeds, where MEME misses the motif in a",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.21320",
+      "version": "1",
+      "title": "Pharmaco-mechanical computational simulation of atherosclerotic arteries: effects of calcium channel blockers on local stress distributions",
+      "authors": [
+        "Sharan Nurani Ramesh",
+        "Lea Saßmannshausen",
+        "Axel Klawonn",
+        "Daniel Balzani"
+      ],
+      "published": "2026-11-16T16:13:24Z",
+      "updated": "2026-11-16T16:13:24Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "q-bio.TO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21320",
+      "comment": "",
+      "abstract": "This paper presents a computational model integrating transmural drug transport, smooth muscle cell contraction, nonlinear anisotropic material behavior, and residual stresses to investigate the effects of calcium channel blockers~(CCBs) on local stress distributions in atherosclerotic arteries. The balance of linear momentum is coupled with a three-dimensional reaction-diffusion equation for the drug transport. Smooth muscle contraction is modeled phenomenologically based on a chemo-mechanical model that incorporates the effects of stretch on intracellular calcium dynamics and calcium sensitization. A novel drug-tissue interaction model is proposed to capture the effects of CCBs on intracellular calcium and thus on smooth muscle contraction. Material parameters are identified by fitting to experimental data from the literature and finite element simulations are conducted on five exemplary atherosclerotic arterial geometries reconstructed from histological cross-sections. Simulation results show that although CCBs reduce the stresses in the media through reduced smooth muscle contraction, they shift load to the fibrous cap, whose stress increases in all five geometries (median of u",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.21221",
+      "version": "1",
+      "title": "Fluid exchange and renewal in the left atrial appendage",
+      "authors": [
+        "Y. Stöcker",
+        "M. Guerrero-Hurtado",
+        "A. Gonzalo",
+        "S. Sharda",
+        "E. Durán",
+        "P. Martinez-Legazpi",
+        "A. M. Kahn",
+        "E. McVeigh",
+        "J. Bermejo",
+        "O. Flores",
+        "J. C. del Alamo",
+        "M. Garcia-Villalba"
+      ],
+      "published": "2026-11-16T15:09:21Z",
+      "updated": "2026-11-16T15:09:21Z",
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21221",
+      "comment": "",
+      "abstract": "Fluid exchange through the opening of a cavity does not uniquely determine how the cavity is washed out. We investigate this phenomenon in the left atrial appendage (LAA), a deforming side cavity of the heart, using simulations of 17 patient-specific atria with wall motion reconstructed from time-resolved computed tomography. Fluid exchange through the LAA ostium is decomposed into a component driven by LAA volume change and a component due to simultaneous bidirectional flow, with no net volume transport. Washout of a scalar initially confined to the LAA is compared with predictions from two well-mixed washout models and assessed alongside residence-time distributions. Volume-driven transport accounts for approximately 24-78% of total exchange across the simulated atria. Relative washout efficiencies are approximately 26-53% with respect to the inflow-driven washout model that assumes scalar-free inflow. A scalar-balance decomposition identifies two contributions to this discrepancy: re-ingestion of previously expelled scalar and preferential export of scalar-poor fluid. Both effects reduce the effective washout rate in every configuration. Residence-time distributions reveal coexi",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.20580",
+      "version": "1",
+      "title": "multiCAsp: Spatially Informed Canonical Association Analysis of Multi-Omic Data",
+      "authors": [
+        "Ziqi Mu",
+        "Qiuyi Wu",
+        "Zhicheng Ji",
+        "Pixu Shi"
+      ],
+      "published": "2026-11-16T06:04:03Z",
+      "updated": "2026-11-16T06:04:03Z",
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20580",
+      "comment": "",
+      "abstract": "Simultaneous profiling of multiple molecular layers at spatially resolved locations creates opportunities to identify shared cross-modal biological variation in its tissue context. We present multiCAsp (multi-omic Canonical Association informed by spatial graph), a probabilistic latent-factor model for integrating $M \\geq 2$ spatially resolved omic modalities. It incorporates spatial dependence through a graph-Laplacian prior on shared latent factors and uses an expectation-maximization algorithm to estimate factor scores and modality-specific feature loadings. Because the prior is defined on a neighborhood graph rather than on Euclidean distances, it accommodates irregular tissue geometries and extends naturally to multiple tissue sections. Simulations show that multiCAsp consistently achieves higher mean latent subspace and loading recovery than alternative methods across varying sample sizes, feature dimensions, and noise levels, with the largest gains under high noise. Compared with an existing Gaussian process-based spatial factor model, it is also less sensitive to how the spatial coordinates are represented, produces spatially smoother factors, and has lower computational co",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.20545",
+      "version": "1",
+      "title": "Dynamic infrared thermography and computed tomography angiography fusion for DIEP flap perforator selection: a novel measurement system",
+      "authors": [
+        "Warre Clarys",
+        "Roanne Van Steen",
+        "Simon Verspeek",
+        "Filip Thiessen",
+        "Gunther Steenackers"
+      ],
+      "published": "2026-11-16T05:24:47Z",
+      "updated": "2026-11-16T05:24:47Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph",
+        "eess.IV"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20545",
+      "comment": "6 pages, 6 figures",
+      "abstract": "Accurate perforator selection is critical for successful deep inferior epigastric artery perforator (DIEP) flap breast reconstruction. While computed tomography angiography (CTA) provides high-resolution anatomical detail, it lacks functional perfusion assessment. Dynamic infrared thermography (DIRT), in contrast, captures superficial rewarming dynamics but lacks objective anatomical validation. This study presents a standardized multimodal measurement system enabling automated fusion of DIRT with CTA-derived perforator coordinates. The framework integrates controlled thermographic acquisition, real-time hotspot detection, metric spatial calibration, and global one-to-one assignment of thermal hotspots to CTA perforators within a predefined periumbilical region of interest. The workflow was evaluated in 12 patients. Of 46 CTA perforators within the region of interest, 84.8% were successfully linked to thermographic hotspots, with a median spatial offset of 14.74 mm. Automated assignment excluded 76.1% of detected hotspots due to lack of anatomical correspondence, thereby reducing subjective interpretation. The proposed system enables quantitative multimodal validation of functional",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.20368",
+      "version": "1",
+      "title": "HoloGene: Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields",
+      "authors": [
+        "Yumin Zheng",
+        "Qingtian Zhu",
+        "Ziyan Zhu",
+        "Kailu Song",
+        "Yinqiang Zheng",
+        "Jun Ding"
+      ],
+      "published": "2026-11-16T00:58:29Z",
+      "updated": "2026-11-16T00:58:29Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20368",
+      "comment": "NeurIPS 2026",
+      "abstract": "Spatial transcriptomics (ST) provides spatially resolved gene expression measurements, but most 3D ST datasets are acquired as independently processed 2D sections. Computational approaches span slice registration and integration, explicit or generative interpolation, and coordinate-field modeling. Within the last family, implicit neural representations (INRs) offer a continuous, coordinate-queryable parameterization, but standard isotropic coordinate encodings do not explicitly reflect that serial-section measurements are dense in-plane and sparse along the axial direction. We present HoloGene, an anisotropic conditional INR framework for estimating continuous 3D gene-expression fields from pre-registered ST sections. Its central contribution is an acquisition-aware factorization that couples dense in-plane synthesis with sparse axial evolution using established GAE, FiLM, pseudo-label supervision, and CORAL components. HoloGene compresses high-dimensional expression profiles into a graph-autoencoder latent manifold, uses pseudo-label-derived signature conditioning to provide coarse intra-section context, and applies depth-dependent FiLM modulation to model axial variation. A signa",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.20255",
+      "version": "1",
+      "title": "Deep Sequence Model for Genome Wide Discovery of Coding and Regulatory Element Signatures",
+      "authors": [
+        "Rayhaneh Shabani Nia",
+        "Ali Karkehabadi"
+      ],
+      "published": "2026-11-15T21:20:49Z",
+      "updated": "2026-11-15T21:20:49Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20255",
+      "comment": "4 pages, 3 figures, 1 table. Accepted at CVIS 2025. A shorter 3-page version was published in the Journal of Computational Vision and Imaging Systems, Vol. 11, No. 1 (2026)",
+      "abstract": "Interpreting deep neural networks for genomic sequence classification remains challenging despite strong predictive performance. We develop a lightweight CNN with post-training gradient-based analysis to identify which sequence positions drive coding versus intergenomic classification. Applied to the standardized demo_coding_vs_intergenomic_seqs dataset, our model achieves 91.87% validation accuracy while revealing interpretable patterns: nine hot spots with consistently high importance, clear class-specific separation at positions 20-100 (coding) and 150-190 (intergenomic), and a strong mean-variance correlation (r = 0.530) indicating robust discriminative features. Gradient-based importance analysis shows that the model implicitly learns biologically meaningful sequence distinctions without explicit annotations. This work demonstrates that neural network interpretability and accuracy can coexist, providing a framework for understanding genomic sequence classification and enabling biology-driven hypothesis generation.",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.20172",
+      "version": "1",
+      "title": "From the possible to the optimal: differentiable optimization of gene regulatory networks",
+      "authors": [
+        "Leah Friedman",
+        "Gašper Tkačik",
+        "Thomas Gregor",
+        "Paul François"
+      ],
+      "published": "2026-11-15T18:19:52Z",
+      "updated": "2026-11-15T18:19:52Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20172",
+      "comment": "",
+      "abstract": "Understanding the space of ``the actual and the possible'' regulatory architectures capable of realizing biological functions is one of the major challenges in biology. Optimization-based approaches can rationalize regulatory mechanisms from functional objectives and constraints, but their computational cost has limited them to finding individual solutions. Here, we introduce \\texttt{jaxgrn}, a framework that combines differentiable programming with stochastic simulations of gene regulatory networks (GRNs) to optimize thousands of networks end-to-end on GPUs. Using morphogen-driven embryonic patterning as a case study, we optimize networks for domain formation and positional information, while varying constraints on input noise, boundary precision and scaling with system size. While recovering known archetypes for scaling, we find that varying the constraints organizes optimal solutions into qualitatively distinct regimes. When optimizing domain formation, we observe phenotypic convergence across a continuum of regulatory architectures, ranging from input-driven to feedback-driven networks. When optimizing positional information, solutions are initially phenotypically diverse despi",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.19885",
+      "version": "1",
+      "title": "An Exploration of Physical and Chemical Representation in Coarse-Grained, Machine-Learned Protein Models",
+      "authors": [
+        "Aldo S. Pasos-Trejo",
+        "Luca Sagresti",
+        "Cecilia Clementi"
+      ],
+      "published": "2026-11-15T09:03:47Z",
+      "updated": "2026-11-15T09:03:47Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "physics.bio-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19885",
+      "comment": "To appear in: https://msp.org/soon/coming.php?jpath=camcos",
+      "abstract": "Machine-learned coarse-graining has emerged as a reliable framework for building protein models that accurately and efficiently sample their relevant conformational landscape. Existing studies assume a predefined map from full- to coarse-grained resolution. However, the choice of map strongly affects the quality of the models. Here, we study the dependence of system-specific machine-learned coarse-grained (MLCG) models across 7 mapping choices, spanning different resolutions and embedding types for coarse-grained beads. We show that resolution and chemical diversity do not always correlate with accuracy, and that accurate protein-specific models can be generated using minimal chemical diversity if the latent space representation of the system has high enough dimensionality.",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.19713",
+      "version": "1",
+      "title": "Cross-species digital xenocortication model delineates molecular correlates of human brain connectome",
+      "authors": [
+        "Gennadi Glinsky"
+      ],
+      "published": "2026-11-15T01:50:39Z",
+      "updated": "2026-11-15T01:50:39Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "q-bio.SC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19713",
+      "comment": "28 pages, 8 figures",
+      "abstract": "Cross-species digital xenocortication (CSDX) model based on pairing of a human brain structure with one or more mouse brain structures was constructed and implemented to dissect the molecular correlates of the human brain connectome. Design of the CSDX model is based on the assumption that a human brain region and its named mouse counterpart occupy corresponding positions in an evolutionary conserved mammalian brain connectome plan, so that a projection strength measured between two mouse structures is informative about the relation between the two human structures paired with them. In the CSDX model, gene expression for the node was measured in the human brain, while connection strength between two nodes was measured in the mouse brain. CSDX models of different parcellations were employed to explore the potential regulatory associations of brain connectome patterns and constituents of protein-protein interaction (PPI) cascades of hybrid assembly pathways of endogenous multiprotein complexes. Metrics of continuous engagement of the PPI cascade nucleated protein dimers of CORUM multiprotein complexes have been identified as statistical components of the multivariate transcriptome-co",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.18846",
+      "version": "1",
+      "title": "Multi-Assay Antibody Developability Prediction with Shared Structure-Language Representations",
+      "authors": [
+        "Daria B. Kokh"
+      ],
+      "published": "2026-11-13T19:04:39Z",
+      "updated": "2026-11-13T19:04:39Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18846",
+      "comment": "27 pages, 11 figures, 4 tables, Supplementary Material",
+      "abstract": "Early assessment of antibody developability is critical in drug discovery, but computational approaches remain limited by the scarcity of experimental data. We explore two strategies for working within that limit. First, we designed per-residue physicochemical descriptors encoding the local structural environment, including new terms such as directional charge asymmetry and screened electrostatic potential. These feed a convolutional network, combined with protein language model (PLM) embeddings in a two-stream architecture: the two are encoded and predicted independently and merged only at the prediction stage. Second, a shared trunk with per-assay heads passes information between related assays. Both are implemented in the Multi-Assay Developability Model (MADM) and evaluated on eight assays: HIC, heparin affinity (HAC), AC-SINS, and polyspecificity ELISA against BVP, dsDNA, insulin, ovalbumin and soluble membrane proteins (SMP), with labels from 29 open sources. Structural descriptors match or exceed PLM embeddings (AbLang2, ESM2) on several assays; combining the streams gives a small but consistent gain in accuracy and reduces seed-to-seed variance. Multi-assay training raises ",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.18414",
+      "version": "1",
+      "title": "Emergent intercellular contact-force networks shaped by deformability",
+      "authors": [
+        "Koshi Yoshida",
+        "Nen Saito",
+        "Shuji Ishihara",
+        "Kaoru Sugimura"
+      ],
+      "published": "2026-11-13T16:56:50Z",
+      "updated": "2026-11-13T16:56:50Z",
+      "primary_category": "cond-mat.soft",
+      "categories": [
+        "cond-mat.soft",
+        "q-bio.CB"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18414",
+      "comment": "",
+      "abstract": "We present a numerical study of contact-force organization in dense assemblies of active, deformable cells. Using the Fourier Contour Cell model, which enables efficient simulation of large cell deformations, we investigate how cell deformability and active motility shape spatial organization of intercellular forces. We find that, in the soft liquid regime at intermediate self-propulsion strength, the contact-force distribution becomes bimodal, reflecting the emergence of a distinct population of weak interactions. Persistent-homology analysis further reveals a characteristic force-network structure in which weak tip-tip interactions are enclosed by loops of strong side-side interactions. Simulations with elongated but non-deformable cells demonstrate that both the bimodal force distribution and the associated network motif require cell deformability rather than elongated cell shape per se. Furthermore, introducing a curvature constraint shows that local cell curvature regulates the strength of weak tip-tip interactions. Together, these results demonstrate that cell deformability and local geometric constraints can organize force transmission across dense active cellular assemblies",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.18236",
+      "version": "1",
+      "title": "Deciphering multiple binding modes in large protein complexes via Enhanced Sampling and beta-VAE: the CYFIP1-eIF4E case",
+      "authors": [
+        "Francesco Pignotti",
+        "Emanuele Telari",
+        "Edoardo Milanetti",
+        "Anna La Teana",
+        "Jesmina Rexha",
+        "Alice Romagnoli",
+        "Luca Maragliano",
+        "Giovanni Di Muccio"
+      ],
+      "published": "2026-11-13T14:31:47Z",
+      "updated": "2026-11-13T14:31:47Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18236",
+      "comment": "",
+      "abstract": "Eukaryotic initiation factor 4E (eIF4E) drives cap-dependent translation, regulated by 4E-binding proteins (4E-BPs) competing for its dorsal and lateral surfaces. CYFIP1, a scaffold protein, is both a WAVE Regulatory Complex component and a non-canonical 4E-BP repressing translation via a short helical motif, linked to autism spectrum disorders and cancer. Prior work modeled only this isolated motif as a peptide, leaving the full interface uncharacterized. Starting from this preliminary evidence, we modeled the full-length proteins as flexible partners: all-atom simulations fed a data-driven docking search (HADDOCK3), which guided funnel-restrained Temperature-Accelerated Molecular Dynamics of a coarse-grained Martini 3 representation. Ten replicas accumulated 100 $μ$s of enhanced sampling. Funnel-restraint variables efficiently sample binding and unbinding but are structurally degenerate: direct clustering of the raw trajectory collapses these poses into poorly resolved groups. We instead reweighted the biased trajectories onto a contact-based latent space built by benchmarking PCA against a beta-Variational Autoencoder, then clustered minima of the equilibrium free-energy surface",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.18103",
+      "version": "1",
+      "title": "Reproduction of Simulated Acoustics Scenes Using Acoustics Room Transformer for speech intelligibility tests in Clinics",
+      "authors": [
+        "Ali Fallah",
+        "Kirsten C Wagener",
+        "Pascal Pflueger",
+        "Steven van de Par"
+      ],
+      "published": "2026-11-13T12:32:43Z",
+      "updated": "2026-11-13T12:32:43Z",
+      "primary_category": "eess.AS",
+      "categories": [
+        "eess.AS",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18103",
+      "comment": "This paper is submitted to Acta Acustica and is currently under review",
+      "abstract": "An Acoustic Room Transformation (ART) method is proposed for clinical applications to render simulated acoustic environments using six loudspeakers in a reverberant room. In typical clinical settings, testing rooms are not acoustically treated and only a limited number of loudspeakers are available. The ART approach enables control of the playback-room reverberation, allowing speech intelligibility tests to be performed under realistic and perceptually compensated conditions. The method focuses on the two most common Speech Reception Threshold (SRT) configurations: S0N90 and S0N90. One front and one side loudspeaker reproduce the direct sound components, while the remaining four loudspeakers (two in front and two behind the listener) generate the reverberant sound field. The direct sound is optimized in terms of energy, and the reverberant field is adjusted based on both energy and interaural coherence. An additional direct-sound gain is applied to match the clarity index (C50) of the reproduced signals to that of the reference target. Results from speech intelligibility tests demonstrate that, with ART processing, the reproduced scenarios achieve SRT values very close to those of ",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.17976",
+      "version": "1",
+      "title": "A Multiobjective Optimization Framework for Sensor Array Design in Magnetocardiography",
+      "authors": [
+        "Kesavaraja C",
+        "Sammita Kashyap",
+        "Korak Biswas",
+        "Pranab Dutta",
+        "Kushal Patel"
+      ],
+      "published": "2026-11-13T10:04:04Z",
+      "updated": "2026-11-13T10:04:04Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.17976",
+      "comment": "",
+      "abstract": "Magnetocardiography (MCG) noninvasively measures cardiac magnetic fields. Conventional cryogenic systems use fixed multichannel arrays, whereas room-temperature sensors enable flexible placement to reduce array size and measurement redundancy. The present study aims at developing a scheme to identify the optimal sensor placements by utilizing three methodological sensor optimization frameworks such as physics driven, experimental data driven and a hybrid combination of both. The physics-driven method optimizes continuous planar coordinates using D-optimality, spatial correlation, and leastsquares error. The data-driven method uses measured spatiotemporal fields and pole-geometry metrics, while the hybrid method integrates both approaches. The evaluation is performed using training objective, Pearson correlation, normalized root-meansquare error (NRMSE) and pole separation(mm), orientation(°) and trajectory(mm) errors, where physics-driven optimization identified 16 sensors with a correlation of 0.9914 and an NRMSE of 0.0139, with pole separation, orientation, and trajectory errors of 3.71 mm, 1.38°, and 3.55 mm, respectively. Data-driven optimization shows diminishing improvements ",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.17548",
+      "version": "1",
+      "title": "Mechanism-Level Chemical Reaction Simulation with Electron Bookkeeping Transformer",
+      "authors": [
+        "Sarah Cao",
+        "Shitong Luo",
+        "Connor W. Coley"
+      ],
+      "published": "2026-11-12T22:09:00Z",
+      "updated": "2026-11-12T22:09:00Z",
+      "primary_category": "cs.CE",
+      "categories": [
+        "cs.CE",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.17548",
+      "comment": "",
+      "abstract": "Modeling chemical reaction mechanisms is central to understanding and predicting chemical reactivity. We present Electron Bookkeeping Transformer (Bookkeeper), a data-driven model that simulates chemical reactions at mechanistic resolution by generating electron movement trajectories. Following the symbolic arrow-pushing formalism in chemistry, Bookkeeper explicitly models each electron as a token and predicts its movement sequentially, ensuring mass and charge conservation during both elementary step and reaction pathway predictions by construction. On reaction-size-balanced test sets, Bookkeeper improves top-1 elementary-step accuracy, top-1 pathway rank accuracy, and top-1 to top-5 product prediction accuracy over FlowER. On the entire test set, it achieves higher elementary-step top-1 accuracy but lower pathway accuracy than FlowER. Bookkeeper also samples elementary steps substantially faster, adapts to several unseen reaction types with minimal fine-tuning, and generates candidate chemical transformations for further screening. These results suggest that explicit electron bookkeeping is a useful framework for virtually screening chemical reactions across diverse reagents, val",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.26551",
+      "version": "1",
+      "title": "GraphEP: A Calibrated Data System and Benchmark for Learning Cardiac Electrophysiology",
+      "authors": [
+        "Matteo Baldan",
+        "Chiara D'Ercoli",
+        "James Rowbottom",
+        "Pietro Liò",
+        "Stefania Fresca"
+      ],
+      "published": "2026-11-19T18:23:10Z",
+      "updated": "2026-11-19T18:23:10Z",
+      "primary_category": "q-bio.TO",
+      "categories": [
+        "q-bio.TO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26551",
+      "comment": "10 pages, 4 figures,AIDaR 2026 neurips workshop",
+      "abstract": "High-fidelity simulations generate spatiotemporal data that are difficult to obtain experimentally, yet their outputs are rarely ready for scientific machine learning. Cardiac electrophysiology (EP) exemplifies this challenge: data reside on anatomy-dependent volumetric meshes, propagation follows anisotropic material fields, and relevant events span multiple temporal scales. We introduce GraphEP, a calibrated data system that converts cardiac meshes and simulation protocols into compact, graph-native trajectories of full-field transmembrane potential. GraphEP includes 732 left-ventricular simulations across 20 anatomies, with healthy and scarred substrates of varying severity and multiple pacing configurations. Each sample provides geometry, tissue and material features, stimulation, connectivity, derived activation targets, and provenance in PyTorch Geometric format. We benchmark four inductive biases for predicting transmembrane potential Vm(t): local message passing, global neural operators, multi-scale hierarchical graph transformers (HGT), and physiology-informed models. The latter include HGT-Lag, which separates activation timing from action-potential morphology, and the st",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.25525",
+      "version": "1",
+      "title": "Ab-initio cryo-EM reconstruction from moments of denoised images",
+      "authors": [
+        "Yunpeng Shi",
+        "Amit Singer",
+        "Yuguan Wang",
+        "Andy Zhang"
+      ],
+      "published": "2026-11-19T05:26:45Z",
+      "updated": "2026-11-19T05:26:45Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25525",
+      "comment": "",
+      "abstract": "In single-particle cryo-electron microscopy (cryo-EM), high-resolution three-dimensional (3-D) refinement requires a reliable ab-initio model to converge to the correct structure. Both refinement and existing ab-initio methods estimate the orientations of the particle images together with the 3-D structure, which can be slow for large and noisy datasets. We present a method of moments approach that bypasses orientation estimation and recovers a 3-D ab-initio model from the first three moments of denoised images. On experimental datasets, our method produces ab-initio models rapidly and successfully initializes high-resolution refinement. This is the first successful application of method-of-moments-based ab-initio modeling to experimental datasets without assuming a uniform distribution of orientations.",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.25260",
+      "version": "1",
+      "title": "Towards consensus on practical probabilistic evaluation metrics for clinical decision making in radiotherapy",
+      "authors": [
+        "Jenneke I. de Jong",
+        "Steven J. M. Habraken",
+        "Erik W. Korevaar",
+        "Mirko Unipan",
+        "Esther Kneepkens",
+        "Gloria Vilches Freixas",
+        "Yvonne L. B. Klaver",
+        "Michiel Kroesen",
+        "Alejandra Méndez Romero",
+        "Edwin Oldehinkel",
+        "Stephanie Peeters",
+        "Roel J. H. M. Steenbakkers"
+      ],
+      "published": "2026-11-18T22:44:24Z",
+      "updated": "2026-11-18T22:44:24Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25260",
+      "comment": "",
+      "abstract": "Introduction: The main aim of this paper is to identify clinically feasible probabilistic evaluation approaches for radiotherapy and to assess whether they can support clinical decision making better than current robustness evaluation approaches. To this end, we calibrate probabilistic clinical goals and identify evaluation metrics with a team of medical physics experts and apply these to three patient cohorts. Methods: Sixty intensity-modulated proton therapy plans from three Dutch proton centers were included: 20 neuro-oncological, 20 head-and-neck, and 20 breast cancer cases. Probabilistic evaluation was performed using polynomial chaos expansion with 10,000 simulated fractionated treatments per case. Volumetric and dosimetric CTV goals were calibrated at a 90% probability level. Selected probabilistic evaluation metrics were applied to representative patient cases and eight radiation oncologists participated in semi-structured interviews addressing preferred metrics and probability levels. Results: The calibrated volumetric goals were V0.95Dpres = 99.95%, 99.80% and 99.54% at a 90% probability level for the neuro-oncological, head-and-neck, and breast cohorts, respectively. The",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.25076",
+      "version": "1",
+      "title": "ShEPhERD-score: Fast, adaptable three-dimensional alignment of molecular features",
+      "authors": [
+        "Nate Somers",
+        "Kento A. Abeywardane",
+        "Connor W. Coley",
+        "Masha Elkin"
+      ],
+      "published": "2026-11-18T19:17:58Z",
+      "updated": "2026-11-18T19:17:58Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.25076",
+      "comment": "",
+      "abstract": "Three-dimensional (3D) molecular similarity scoring and alignment are widely employed in ligand-based virtual screening and molecular design, and are increasingly used for training and evaluating machine learning models. Existing open-source methods utilize various molecular representations spanning shape, electrostatics, pharmacophores, and hybrid representations, but their implementations as independent software packages with distinct application programming interfaces (APIs), optimizers, and limited GPU support make them difficult to compare, combine, or extend. Here, we develop ShEPhERD-score into a unified, modular platform for differentiable 3D molecular similarity scoring and alignment by combining diverse molecular representations with high-performance Numba CPU and Triton GPU kernels to support both large-scale library screening and pairwise similarity workflows. In matched comparisons with open-source 3D similarity tools on the DUDE-Z virtual screening benchmark, ShEPhERD-score performed comparably or better in eight of nine cases. Across the scoring modes in ShEPhERD-score, throughput ranges from 17,800 to 1.03 million alignments/second for ten-million-conformer librarie",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.24705",
+      "version": "1",
+      "title": "Chemotactic aggregation as cue-mediated adaptation toward Nash equilibrium in a spatial patterning game",
+      "authors": [
+        "Masaki Kato",
+        "Tetsuya J. Kobayashi"
+      ],
+      "published": "2026-11-18T16:31:11Z",
+      "updated": "2026-11-18T16:31:11Z",
+      "primary_category": "q-bio.CB",
+      "categories": [
+        "q-bio.CB"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24705",
+      "comment": "",
+      "abstract": "Chemotactic cells generate their own chemical gradients to form spatial patterns that support collective functions ranging from cooperative metabolism to immunity. Despite progress in understanding the optimality of chemotaxis in imposed chemical gradients, it remains unclear how close decentralized cell populations can come to maximizing the population-wide benefit of spatial organization through individual movement and local modulation of chemical gradients. We employ mean field game theory to characterize efficient spatial patterns achievable by decentralized populations as Nash equilibria: each agent optimizes its positioning given the spatial density of the other cells, whereas the population density is determined by the positioning of all individuals. We derive coupled dynamics of population movement and cue modulation that drive adaptation toward these equilibria and verify its structural correspondence to established phenomenological models of chemotactic pattern formation. We apply our framework to self-organized aggregation and numerically demonstrate that the dynamics can form multiple equilibrium patterns, some of which are comparable to the population-level optimum und",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.24546",
+      "version": "1",
+      "title": "Biases and Limits of AlphaFold Predictions for Non-Globular Proteins",
+      "authors": [
+        "Maria Cristina Aspromonte",
+        "Alexander M. Monzon",
+        "Miguel A. Andrade-Navarro",
+        "Oriol Bárcenas",
+        "Viktor Bartosik",
+        "Pau Bernadó",
+        "Juan Cortés",
+        "Zsuzsanna Dosztanyi",
+        "Gabor Erdos",
+        "Isabella C. Felli",
+        "Helena Gradišar",
+        "San Hadži"
+      ],
+      "published": "2026-11-18T14:51:02Z",
+      "updated": "2026-11-18T14:51:02Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24546",
+      "comment": "",
+      "abstract": "AlphaFold has transformed protein structure prediction, making structural models accessible across the life sciences. We explore experimentally validated cases of non-globular proteins to uncover where predictions diverge from biologically relevant structural states and how molecular context shapes these discrepancies, guiding a more informed interpretation of AlphaFold models.",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.24487",
+      "version": "1",
+      "title": "Unmyelinated axons alter the biological interpretation of MRI biomarkers of demyelination",
+      "authors": [
+        "Ali Abdollahzadeh",
+        "Ricardo Coronado-Leija",
+        "Elizabeth Chasen",
+        "Sungheon G. Kim",
+        "Dmitry S. Novikov",
+        "Els Fieremans"
+      ],
+      "published": "2026-11-18T14:20:34Z",
+      "updated": "2026-11-18T14:20:34Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24487",
+      "comment": "",
+      "abstract": "Quantitative MRI methods are widely used to probe white matter microstructure; yet diffusion- and relaxation-based metrics are often interpreted primarily in terms of myelinated axons, implicitly assuming a negligible contribution from unmyelinated axons. Here, combining diffusion MRI (dMRI), relaxation-based MRI, and electron microscopy (EM) in the cuprizone mouse model of demyelination and recovery, we examine how unmyelinated axons shape MRI-derived microstructural indices, including axonal water fraction and $g$-ratio. To enable quantitative cellular-level comparisons, we developed automated tools for instance-level EM segmentation of white matter, allowing morphological analysis of myelinated and unmyelinated axonal populations. We find that, in the mouse model, diffusion-derived estimates of axonal water fraction reflect contributions from both axonal populations at sufficiently short diffusion times; accounting for unmyelinated axons removes an apparent bias and reveals that this metric corresponds to the total intra-axonal space rather than myelinated fibers alone. Similarly, MRI-derived $g$-ratio estimates correlate strongly with EM only when both axonal populations are in",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.24400",
+      "version": "1",
+      "title": "Impact-Based Analysis Method (IBAM) to evaluate the primary stability of the pedicle screw: A proof of concept",
+      "authors": [
+        "Julie Gabriel",
+        "Yvan Petit",
+        "Giuseppe Rosi",
+        "{É}ric Wagnac",
+        "Michel Dagher",
+        "Arnaud Dubory",
+        "Charles-Henri Flouzat-Lachaniette",
+        "Guillaume Ha{ï}at"
+      ],
+      "published": "2026-11-18T13:31:16Z",
+      "updated": "2026-11-18T13:31:16Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.24400",
+      "comment": "",
+      "abstract": "The long-term success of spinal instrumentation depends on the initial stability of pedicle screws (PS), yet current intraoperative assessments rely on surgeon subjectivity. This study introduces a quantitative, non-invasive approach-the Impact-Based Analysis Method (IBAM)-to support intraoperative decision-making. The IBAM measures screw stability using low-amplitude impacts delivered with an instrumented hammer on the surgical screwdriver after screw insertion. An IBAM indicator, defined as the average time difference between the two earliest local maxima in the force signal, was analyzed under varying stability conditions in artificial bone samples. Experimental factors included bone density ($ρ$), insertion depth ( D ), and pilot hole diameter ( $Φ$ ). The IBAM indicator was compared with the PS pull-out force for each configuration. Although the main effects showed opposite trends for the pull-out force and the IBAM indicator, their relative magnitudes were similar ( $ρ$ $\\sim$35%, D $\\sim$25%, $Φ$ $\\sim$15%). The relationship between the pull-out force and the IBAM indicator followed a power-law model (adjusted R 2 =___0.85) with a negative exponent. As screw stability increa",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.22256",
+      "version": "1",
+      "title": "ST-FateFlow: Continuous Gene-Spatial Reconstruction with Differentiation-Potential Learning from Time-Resolved Spatial Transcriptomics",
+      "authors": [
+        "Zhe Yu",
+        "Xiaobo Sun",
+        "Hao Wu"
+      ],
+      "published": "2026-11-17T06:00:29Z",
+      "updated": "2026-11-17T06:00:29Z",
+      "primary_category": "q-bio.GN",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.22256",
+      "comment": "",
+      "abstract": "Time-resolved spatial transcriptomics provides a powerful view of dynamic biological processes by measuring cellular states together with their spatial organization across time. However, destructive profiling and experimental cost restrict observations to a few discrete time points collected from independent samples, with no known cell pairing across time. This makes it difficult to reconstruct gene expression and tissue organization at unobserved stages and to characterize differentiation-associated dynamics. Here, we introduce ST-FateFlow, a flow-matching framework for continuous gene-spatial dynamics and differentiation-potential learning. ST-FateFlow jointly learns gene-expression and spatial-coordinate velocity fields, enabling interpolation of missing time points and continuous modeling of transcriptional evolution and tissue remodeling. In parallel, it independently learns a time-conditioned differentiation potential, whose values organize cell states along inferred differentiation progressions and support the analysis of differentiation-associated transcriptional changes. Across multiple time-resolved spatial transcriptomics datasets, ST-FateFlow effectively captures coordi",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.21775",
+      "version": "1",
+      "title": "Rule-based curation and validation in batch fermentation of a genome-scale metabolic model of the mycoprotein fungus Fusarium venenatum A3/5",
+      "authors": [
+        "Jaewook Lee",
+        "Thomas Vinestock",
+        "Miao Guo"
+      ],
+      "published": "2026-11-16T19:05:11Z",
+      "updated": "2026-11-16T19:05:11Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21775",
+      "comment": "20 pages, 5 figures, 2 tables; Supplementary material included",
+      "abstract": "Sustainable protein supply is a central food-system challenge, and mycoprotein from Fusarium venenatum is an established, low-impact option. Its production relies on refined glucose, and yields on lower-cost feedstocks are normally found by fermentation. Genome-scale metabolic models (GEMs) can estimate these yields before any experiment, but to our knowledge none has been published for this fungus, and models transferred from related species inherit template errors. Here we built iJL1143, a GEM of strain A3/5, from an Aspergillus niger model and curated it with rules based on homology, thermodynamics and the literature. We compared it with the uncurated Draft model in four oxygen-enriched batch fermentations on glucose and fructose. Thermodynamic directionality rules and the direction of the mitochondrial GTP/GDP carrier brought the maximum ATP yield of the Draft model within the theoretical range. As a result, with sequential sugar uptake and no fitted parameters, the mean final-biomass discrepancy fell from 20% for the Draft model to 6% for iJL1143. Sequential uptake and a fitted lag time also reduced its biomass time-course error from 4.88 to 0.42 g/L. In oxygen-enriched batch ",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.21005",
+      "version": "1",
+      "title": "The relationship between junctional zone, smooth muscle tone and intra-uterine pressure",
+      "authors": [
+        "Nicolas R. Chevalier",
+        "Emilie Huon",
+        "Julie Poujol",
+        "Louise Bandiera Mezei",
+        "Henri Souchay",
+        "Edouard Poncelet"
+      ],
+      "published": "2026-11-16T12:30:04Z",
+      "updated": "2026-11-16T12:30:04Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21005",
+      "comment": "",
+      "abstract": "The junctional zone is a thin low contrast region of the inner myometrium, visible on T2weighted MRI images. Investigators have long sought histologic particularities of this region. Here, we summarize evidence that this region's specific appearance is not due to a particular tissue composition, but is a reflection of underlying smooth muscle activity. Smooth muscle tone in the spirally fibered myometrium wrings out blood and interstitial fluids to create a static low-contrast T2 region around the myometrium, while phasic smooth muscle contractions create transient, propagative low-contrast waves. We show that the competition between centripetal inhibitory adrenergic innervation from the serosa and centrifugal excitatory hormonal gradients from the endometrium divides the uterus in a tonic inner-and a quiescent outer-region. Bridging MRI and manometry studies, we discuss the relation between smooth muscle activity and intra-uterine pressure. Dysregulation of nerve and/or hormonal activity can result in a thicker tonic smooth muscle layer, entailing a thicker junctional zone and high intrauterine pressures characteristic of dyscontractility in severe dysmenorrhea, endometriosis and ",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.20959",
+      "version": "1",
+      "title": "Detecting the pterygomaxillary disjunction using an instrumented hammer: A cadaveric study",
+      "authors": [
+        "Manon Bas Dit Nugues",
+        "Giuseppe Rosi",
+        "Charles Henri Flouzat-Lachaniette",
+        "Gaoussou Toure",
+        "Guillaume Haiat"
+      ],
+      "published": "2026-11-16T12:05:21Z",
+      "updated": "2026-11-16T12:05:21Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20959",
+      "comment": "",
+      "abstract": "Background: In many maxillofacial surgeries, the surgeon must perform a pterygomaxillary disjunction in order to separate the jaw from the skull. The disjunction is performed using an osteotome which is impacted with a hammer until its tip crosses through the pterygoid plates. To determine whether the disjunction has occurred and avoid complications, surgeons still rely on their proprioception. Methods: The aim of this study is to validate a vibroacoustic set-up constituted by an instrumented hammer equipped with a force sensor, aiming at detecting if the disjunction has occurred. To do so, fourteen osteotomies were performed in anatomical subject jaws. For each impact, the force signal was recorded and analyzed. A classification algorithm (Support Vector Machine method coupled with a cost matrix) was developed based on indicators extracted from the signal to determine whether the disjunction had occurred. Impacts were classified into two classes, one before and the other after the osteotome had crossed the pterygoid plates. To avoid undetected disjunctions a cost matrix was added to the algorithm. The coefficients from the matrix were chosen using by minimizing the Negative Likeli",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.20193",
+      "version": "1",
+      "title": "Automated Left Ventricle Strain Analysis from DENSE MRI",
+      "authors": [
+        "Mohammad Naqizadeh Jahromi",
+        "Ariel J. Hannum",
+        "Zhan-Qiu Liu",
+        "Daniel B. Ennis",
+        "Dazhong Wu",
+        "Luigi E. Perotti"
+      ],
+      "published": "2026-11-15T18:44:53Z",
+      "updated": "2026-11-15T18:44:53Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.20193",
+      "comment": "19 pages, 14 figures (including 6 appendix figures), 4 tables",
+      "abstract": "Background: Quantifying myocardial strains from Displacement ENcoding with Stimulated Echoes (DENSE) MRI provides insight into left ventricular performance, but current data processing pipelines remain limited in automation, robustness, and full left ventricle coverage. Methods: We present a fully automated framework for voxel-wise displacement and strain analysis of the left ventricle from DENSE MRI. Our method integrates a multi-channel nnU-Net model trained on both magnitude and phase images for segmentation, an automated phase unwrapping approach, an adaptation of the regularized spatiotemporal least squares (RSTLS) formulation for displacement computation, and strain calculations based on radial basis function interpolation. The proposed framework enables the estimation of displacements and strains across the left ventricle from a full stack of short-axis images. Results: Validation using a computational phantom shows the framework's overall resilience to data noise. Following computational phantom evaluation, the proposed framework is applied to analyze DENSE MRI short-axis slices acquired in forty-seven (N=47) healthy volunteers and covering the full left ventricle. Circumfe",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.19270",
+      "version": "1",
+      "title": "Arginine metabolism drives tumor immune escape by shaping an immunosuppressive microenvironment",
+      "authors": [
+        "Chenghang Li",
+        "Haifeng Zhang",
+        "Yipu Qu",
+        "Jinzhi Lei"
+      ],
+      "published": "2026-11-14T08:58:25Z",
+      "updated": "2026-11-14T08:58:25Z",
+      "primary_category": "q-bio.TO",
+      "categories": [
+        "q-bio.TO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.19270",
+      "comment": "24 pages, 7 figures",
+      "abstract": "The tumor microenvironment evolves through the ``elimination-equilibrium-escape'' paradigm, yet the quantitative mechanisms by which metabolic reprogramming contributes to immune evasion remain unclear. We develop a mathematical model of tumor-immune interactions to investigate how arginine metabolism shapes an immunosuppressive microenvironment. We establish the positivity and boundedness of solutions and analyze the existence and stability of equilibrium states. The model is calibrated using tumor growth data from three mouse cohorts and reproduces tumor growth patterns under distinct immune conditions. The calibrated model predicts faster tumor growth in immunocompetent mice than in immunodeficient controls, with macrophage dynamics accounting for this difference. It further predicts that arginine administration promotes tumor progression by enhancing macrophage polarization and weakening T cell-mediated tumor control. To account for interindividual heterogeneity, we develop the TVInfABC algorithm to generate a virtual mouse cohort. Moreover, our analysis indicates that tumor-associated macrophages can promote transitions from immunologically ``hot'' to ``cold'' states. Systemat",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.18928",
+      "version": "1",
+      "title": "SPLAT: An Event-Specific System Response Model for Continuous-Domain List-Mode TOF PET",
+      "authors": [
+        "Ronglong Fang",
+        "Andrzej Krol",
+        "Yuesheng Xu",
+        "Eric S. Harmon",
+        "Michael O. Thompson",
+        "Wei Zheng",
+        "C. Ross Schmidtlein"
+      ],
+      "published": "2026-11-13T20:28:27Z",
+      "updated": "2026-11-13T20:28:27Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18928",
+      "comment": "33 pages, 7 figures, 10 tables",
+      "abstract": "Modern position-sensitive PET detectors provide continuous estimates of photon interaction position and event-specific timing, energy, and depth-of-interaction (DOI) information. We introduce Spatial Probability Localization and Transformation (SPLAT), a continuous-domain, event-specific projection model for time-of-flight (TOF) list-mode PET. Each coincidence is represented by a three-dimensional spatial response kernel incorporated into consistent forward and adjoint operators without detector-coordinate binning. While supporting general response distributions, we develop an anisotropic Gaussian implementation whose center is determined by measured interaction positions and TOF difference, and whose full covariance follows from propagating measurement uncertainties through event geometry. The model accounts for DOI, photon non-collinearity, and energy-dependent, correlated, and depth-dependent detector responses. Using GATE Monte Carlo simulations with known annihilation positions, we compare continuous and virtually segmented representations of identical accepted coincidences. Event-localization diagnostics and point-source and brain-phantom reconstructions assess model accuracy",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.18911",
+      "version": "1",
+      "title": "Multi-echo AxCaliberSMT: Mapping effective axon radius from restricted diffusion and radius-dependent intra-axonal T2",
+      "authors": [
+        "Kwok-Shing Chan",
+        "Yohan Jun",
+        "Aneri Bhatt",
+        "Berkin Bilgic",
+        "Susie Y. Huang",
+        "Hong-Hsi Lee"
+      ],
+      "published": "2026-11-13T20:15:16Z",
+      "updated": "2026-11-13T20:15:16Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18911",
+      "comment": "",
+      "abstract": "Diffusion-based axon radius r mapping preferentially detects larger axons since restricted-diffusion contrast scales with r^4, limiting sensitivity to thin axons dominating human white matter (WM). Surface relaxation provides complementary sensitivity through an intra-axonal R2 proportional to 1/r. We combined these mechanisms to broaden the dynamic range of radius estimations. Multi-echo AxCaliberSMT (ME-AxCaliberSMT) models spherical-mean diffusion-relaxation signals using cylinder-restricted diffusion and histologically calibrated surface relaxation. Simulations compared its accuracy and robustness with AxCaliberSMT and a diffusion-filtered R2 model, which infer radius solely from restricted diffusion and intra-axonal R2, respectively. Five healthy adults were scanned on Connectome 2.0 (C2; 500 mT/m), and four also on Cima.X (200 mT/m), using multiple b-values at two diffusion times, each paired with a different echo time. Diffusion and relaxation contrasts were comparable at a protocol-dependent transition radius (C2: 1.42 um; Cima.X: 1.85 um). Below this threshold, relaxation dominated, yielding effective r estimates approximately <r^2>/<r> in most WM. At SNR 40, ME-AxCaliberS",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.18301",
+      "version": "1",
+      "title": "Scan-specific k-space interpolation using deep Koopman autoencoders",
+      "authors": [
+        "Wassim Ben Salah",
+        "Jon Cleary",
+        "Sarah McElroy",
+        "Raphael Tomi-Tricot",
+        "Antoine Naegel",
+        "Sebastien Ourselin",
+        "Jonathan Shapey",
+        "Christos Bergeles",
+        "Radhouene Neji"
+      ],
+      "published": "2026-11-13T15:25:37Z",
+      "updated": "2026-11-13T15:25:37Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18301",
+      "comment": "Submitted to Magnetic Resonance in Medicine (MRM) as a Research Article 16 pages, 9 figures and 1 supplementary figure",
+      "abstract": "Purpose: To develop a scan-specific, interpretable k-space interpolation technique for the reconstruction of accelerated MRI data. Methods: A deep Koopman autoencoder for nonlinear k-space interpolation was developed consisting of an encoder, a linear layer for interpolation and a decoder. The resulting network is implemented using mean square error loss function on k-space neighbourhoods derived from the autocalibration signals (ACS), combining a prediction loss and an autoencoding loss. The approach was compared to GRAPPA and RAKI in 281 retrospectively undersampled brain datasets, using quantitative reconstruction metrics. In a subset of 52 randomly selected images, a clinical reader study compared the proposed approach and RAKI in a forced choice scenario and using a five-point ordinal scoring, assessing sharpness, SNR, aliasing and overall image quality. Additionally, the effect of varying parameters such as the number of autocalibration signals, the contribution of the autoencoding loss, the kernel size, and the latent space dimension for the proposed technique was studied. Results: The proposed approach showed improved quantitative metrics compared to GRAPPA and RAKI. Visual",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.18259",
+      "version": "1",
+      "title": "CARVE: A glycan-specific framework for assessing protein-glycan binding-pose quality",
+      "authors": [
+        "Yifei Xiao",
+        "Huifeng Zhao",
+        "Silong Zhai",
+        "Zichang Jin",
+        "Tingjun Hou",
+        "Yu Kang"
+      ],
+      "published": "2026-11-13T14:55:34Z",
+      "updated": "2026-11-13T14:55:34Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18259",
+      "comment": "",
+      "abstract": "Protein-glycan interactions depend on the precise three-dimensional arrangement of carbohydrates at protein-binding interfaces, yet reliable assessment of predicted complex structures remains challenging. Existing evaluations commonly rely on fixed root-mean-square deviation (RMSD) thresholds, which do not fully account for the structural diversity and conformational flexibility of glycans. Here we developed CARVE, a glycan-specific framework for evaluating protein-glycan structure predictions. Through topology-aware glycan parsing, CARVE integrates orientation RMSD (oRMSD), interface-ring RMSD (irRMSD) and the fraction of native contacts (Fnat) to assess glycan scaffold geometry, interface-ring placement and native-contact recovery. These descriptors define four quality categories (CARVE-Level) with geometric thresholds that scale with the degree of polymerization (DP), and a continuous CARVE-Score, which reproduced those categories on 25,068 independently generated poses without recalibration (macro-F1 = 0.892). Pairing these measures with glycan-specific topological, chemical and geometric validity checks, we benchmarked nine prediction methods on CARVE-Bench, comprising 1,974 e",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.18115",
+      "version": "1",
+      "title": "COPASI Skills: Agent Skills for COPASI analyses through Basico",
+      "authors": [
+        "Frank T. Bergmann",
+        "Sven Sahle"
+      ],
+      "published": "2026-11-13T12:37:44Z",
+      "updated": "2026-11-13T12:37:44Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18115",
+      "comment": "4 pages",
+      "abstract": "Biochemical models represent biological systems as networks of reactions that describe the production, consumption, and transformation of molecular species over time. These models provide a quantitative framework for analyzing system dynamics and enable computational experiments that complement traditional wet-lab approaches, helping researchers gain mechanistic insight and make predictive assessments of biological behavior. COPASI is a widely used program for simulating and analyzing those models. These tasks are made availabe to Python through Basico. COPASI Skills is a set of instruction files that tell an assistant how to drive Basico for one analysis at a time. Each skill is a directory containing a `SKILL.md` file. A short description at the top tells the assistant when the skill applies, and the rest of the file states which calls to make, which files to write, and which potential neighboring skill to choose additionally. A researcher can ask for example, in ordinary language, for a time course, a fit, or a published model. The assistant follows the matching skill and leaves tables or a report next to the model. The collection is released under a two-clause BSD license from ",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.17705",
+      "version": "1",
+      "title": "S1Pert: Scalable Target-Specific Gene Response Prediction with System-One Intelligence",
+      "authors": [
+        "Xiaoqi Sheng",
+        "Hou wang",
+        "Yan Liang",
+        "Yutong Li",
+        "Wenhao Du",
+        "Tinghe Zhang",
+        "Jiawen Liu",
+        "Hongmin Cai"
+      ],
+      "published": "2026-11-13T03:35:01Z",
+      "updated": "2026-11-13T03:35:01Z",
+      "primary_category": "q-bio.GN",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.17705",
+      "comment": "",
+      "abstract": "Predicting transcriptional responses to unseen genetic perturbations is essential for extending CRISPR screens across vast target--gene combinations. However, models can achieve strong aggregate predictive performance by reproducing historical gene-level response frequencies without adequately distinguishing the effects of different perturbations. Reliable prediction at the transcriptome scale is further challenged by uncertain response labels and redundant computation across millions of target--gene pairs. We present S1Pert, a System-One framework for target-specific gene response prediction with non-autoregressive online inference. S1Pert combines directional Welch tests and equivalence testing to distinguish statistically supported responses from inconclusive observations. A frozen System-One encoder extracts reusable semantic representations of perturbation targets, query genes, and historical evidence. Compact pair-specific interactions are then computed and cached offline. A lightweight hierarchical cross-attention decoder integrates these representations with cross-target pairwise ranking and synchronized historical-evidence dropout to reduce reliance on gene-level response ",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    }
+  ],
+  "notes": [
+    "Scores are log1p-damped weighted sums of the listed signals; zero means no external attention was found, not that the paper is unimportant.",
+    "The pool is the arXiv listing for the window (capped) plus window papers discussed on Hugging Face or Hacker News; it is not exhaustive for very large categories."
+  ]
+}

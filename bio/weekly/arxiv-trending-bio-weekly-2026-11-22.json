@@ -1,0 +1,399 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "weekly",
+  "date": "2026-11-22",
+  "date_range": {
+    "start": "2026-11-15",
+    "end": "2026-11-22",
+    "inclusive": true
+  },
+  "source_window": {
+    "start": "2026-11-12T19:00:00Z",
+    "end": "2026-11-19T19:00:00Z",
+    "announced": "2026-11-20T01:00:00Z",
+    "announcement_date": "2026-11-19"
+  },
+  "snapshot_time": "2026-11-22T02:15:00Z",
+  "title": "Biology and Biomedicine on arXiv — Weekly Report (22 November 2026)",
+  "source_report": "/home/yizhuan/.research/bio/weekly/arxiv-trending-bio-weekly-2026-11-22.md",
+  "entry_count": 9,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart. This inferred ranking uses incomplete attention signals; the supplied candidate pool ends 19 November although the requested calendar window ends 22 November. arXiv is incomplete biomedical coverage and does not represent bioRxiv, medRxiv, or the biomedical literature as a whole.",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "rank": 0,
+      "url": "",
+      "summary": "Nine notable papers, led by AI-assisted molecular modelling and early experimental or translational methods. The requested calendar window is 15–22 November 2026, but the supplied latest available arXiv signal batch ends 19 November; the final three dates are not represented. arXiv has no official trending chart, and this inferred ranking uses incomplete attention signals and incomplete biomedical coverage.",
+      "global_caveat": "arXiv has no official trending chart. The ranking is inferred from incomplete attention signals; the supplied candidate pool ends 19 November although the requested seven-day calendar window ends 22 November. arXiv is incomplete biomedical coverage; many clinical and experimental preprints are on bioRxiv or medRxiv."
+    },
+    {
+      "id": "01-calpha-toward-native-biomolecular-intelligence-in-a-genera",
+      "kind": "paper",
+      "title": "Calpha: Toward Native Biomolecular Intelligence in a General-Purpose Language Model",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.20986",
+      "arxiv_id": "2611.20986",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T12:17:37Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI"
+      ],
+      "authors": [
+        "Yong Liu",
+        "Zhanpeng Shi",
+        "Peicong Lin",
+        "Zhenyi Zhong",
+        "Yizhou Dang",
+        "Wendi Wu",
+        "Haoling Li",
+        "Shuangjia Zheng"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Biomolecular foundation models predict the structures of proteins and their complexes accurately, and large language models (LLMs) reason in natural language, but the two remain separate: the abilities of the former are not part of a general-purpose LLM, and the reasoning of the latter does not enter a structure prediction. Calpha aims at one general model that folds proteins and complexes, understands protein sequence and structure, and lets its language reasoning influence the structures it predicts. This report covers the first step, in which an LLM outputs single-chain protein structures. Qwen3.5-9B reads a sequence enriched with ESM2 residue features. It can respond in text or emit a token that invokes a pretrained SimpleFold structure head, which receives information about the protein only through Qwen's residue states. Under a fixed folding request, the head achieves mean TM-scores of 0.808 on the FoldBench-334 development set, 0.635 on CASP16 domains and 0.900 on a CAMEO-style PDB set. We compare these predictions with a baseline in which ESM2-3B encodes the sequence and a fine-tuned SimpleFold-3B head predicts the coordinates. The two systems also differ in trainable weights, training duration and crop length. For chains of 100--299 residues, all three paired confidence intervals include zero. At 300--600 residues, the mean differences are -0.044, -0.160 and -0.025, respectively. In a separate test, four English request types triggered folding on every evaluated example. Protein training reduced accuracy on a 350-item MMLU-Pro subset from 77.4% to 70.3%. An LLM can therefore output single-chain structures from its own states, with lower long-chain scores in the current comparisons and reduced accuracy on the evaluated MMLU-Pro subset. Complex prediction, structure understanding and the effect of language reasoning on the predicted coordinates remain future work.",
+      "evidence_for_ranking": "Supplied score 9.963; HF 14 upvotes/3 comments, GitHub 23 stars, one cross-list; Semantic Scholar snapshot 0 citations.",
+      "claimed_contribution": "The authors report mean TM-scores of 0.808 on FoldBench-334, 0.635 on CASP16 domains, and 0.900 on a CAMEO-style PDB set; this is computational structure prediction, not experimental validation.",
+      "unique_caveat": "This report covers single-chain folding, not the broader future ambition of folding complexes. Baseline systems differ in trainable weights, training duration, and crop length; protein training also reduced accuracy on a 350-item MMLU-Pro subset.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.20986",
+        "https://huggingface.co/papers/2611.20986",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.20986?fields=title,citationCount,influentialCitationCount",
+        "https://huggingface.co/papers/2611.20986"
+      ]
+    },
+    {
+      "id": "02-discovery-of-new-antiviral-agents-through-artificial-intel",
+      "kind": "paper",
+      "title": "Discovery of new antiviral agents through artificial intelligence: in vitro and in vivo results",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.22230",
+      "arxiv_id": "2611.22230",
+      "arxiv_version": "v1",
+      "published": "2026-11-17T05:22:24Z",
+      "categories": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "authors": [
+        "Roza Izmailyan",
+        "Mher Matevosyan",
+        "Hamlet Khachatryan",
+        "Anastasiya Shavina",
+        "Smbat Gevorgyan",
+        "Artur Ghazaryan",
+        "Irina Tirosyan",
+        "Yeva Gabrielyan",
+        "Marusya Ayvazyan",
+        "Boris Martirosyan",
+        "Vardan Harutyunyan",
+        "Hovakim Zakaryan"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "In this research, we employed a deep reinforcement learning (RL)-based molecule design platform to generate a diverse set of compounds targeting the neuraminidase (NA) of influenza A and B viruses. A total of 60291 compounds were generated, of which 86.5% displayed superior physicochemical properties compared to oseltamivir. After narrowing down the selection through computational filters, nine compounds with non-sialic acid-like structures were selected for in vitro experiments. We identified two compounds, DS-22-inf-009 and DS-22-inf-021 that effectively inhibited the NAs of both influenza A and B viruses (IAV and IBV), including H275Y mutant strains at low micromolar concentrations. Molecular dynamics simulations revealed a similar pattern of interaction with amino acid residues as oseltamivir. In cell-based assays, DS-22-inf-009 and DS-22-inf-021 inhibited IAV and IBV in a dose-dependent manner with EC50 values ranging from 0.29 uM to 2.31 uM. Furthermore, animal experiments showed that both DS-22-inf-009 and DS-22-inf-021 exerted antiviral activity in mice, conferring 65% and 85% protection from IAV (H1N1 pdm09), and 65% and 100% protection from IBV (Yamagata lineage), respectively. Thus, these findings demonstrate the potential of RL to generate compounds with promising antiviral properties.",
+      "evidence_for_ranking": "Supplied score 6.688; Semantic Scholar snapshot 24 citations/0 influential citations and one cross-list; citations are totals, not weekly gains.",
+      "claimed_contribution": "The authors selected nine compounds for in-vitro testing and report DS-22-inf-009 and DS-22-inf-021 active against influenza A/B neuraminidases, including H275Y strains, with cell-assay EC50 values of 0.29–2.31 μM; mouse experiments are also reported.",
+      "unique_caveat": "Preclinical results do not establish human efficacy or safety. The abstract does not give mouse group sizes, and the arXiv upload is a 2026 posting of an article published in 2024.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.22230",
+        "https://doi.org/10.1016/j.antiviral.2024.105818",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.22230?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "03-multimodal-assessment-of-the-skin-biomechanical-properties",
+      "kind": "paper",
+      "title": "Multimodal assessment of the skin biomechanical properties during wound healing and hyaluronic acid response",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.20949",
+      "arxiv_id": "2611.20949",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T11:59:32Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Arthur Bouffandeau",
+        "David Poisbleau",
+        "Mohand Ou Idir Ouidja",
+        "Patrick Karasinski",
+        "Dulce Papy",
+        "Charles-Henri Flouzat-Lachaniette",
+        "Romain Bosc",
+        "Barbara Hersant",
+        "Jean-Paul Meningaud",
+        "Guillaume Haiat"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Various methods such as elastography or mechanical testing have been developed to quantify the mechanical properties of soft tissues, which are related to the tissue local pathophysiological conditions. This study is the first one to investigate the in vivo performances of the Impact-Based Analysis Method (IBAM) to characterize the biomechanical behavior of skin during physiological mechanisms. A murine model (12 Sprague-Dawley rats) was considered and various measurements of skin mechanical properties were conducted on different regions of interest over a 3-week period. The effects of wound healing after full-thickness excisional wound and an intradermal hyaluronic acid (HA) injection were monitored using IBAM, as well as two commercially available devices: Cutometer__ and MyotonPro__. The indicators $\\Delta$t (from IBAM), R0 and R5 (from Cutometer__) vary significantly as a function of wound healing time, which corresponds to a stiffening of healing tissue compared to healthy tissue. The indicator $\\Delta$t and S (from MyotonPro__) are significantly different when HA was injected compared to healthy tissue, which also corresponds to less stiff tissue. Additionally, both IBAM and Cutometer__ detect significant biomechanical variations in superficial soft tissue related to tissue growth in all measurement regions. This first in vivo use of IBAM shows that IBAM could assess significant variations related to wound healing or regeneration mechanisms following HA injection. This study paves the way for the development of a simple, low-cost and objective device. Future clinical studies or other animal models should be carried out to confirm these results.",
+      "evidence_for_ranking": "Supplied score 2.197; Semantic Scholar snapshot 2 citations/0 influential citations; direct Graph API check matched.",
+      "claimed_contribution": "The authors report that IBAM indicators vary with wound-healing time and after hyaluronic-acid injection, with changes broadly consistent with stiffening during healing and reduced stiffness after injection.",
+      "unique_caveat": "This is a small animal study (12 rats), not clinical validation; the authors call for further animal models or clinical studies.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.20949",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.20949?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "04-physics-informed-deep-learning-for-shear-wave-speed-estima",
+      "kind": "paper",
+      "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.26111",
+      "arxiv_id": "2611.26111",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T13:39:46Z",
+      "categories": [
+        "eess.IV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Stefan Martin",
+        "Jakob Schattenfroh",
+        "Patrick Schuenke",
+        "Felix Frederik Zimmermann",
+        "Ingolf Sack",
+        "Christoph Kolbitsch",
+        "Andreas Kofler"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Quantitative methods"
+      ],
+      "abstract": "Objective: Magnetic Resonance Elastography (MRE) is a non-invasive imaging technique for mapping biomechanical properties of in vivo tissue, including shear wave speed (SWS), but involves intrinsically slow data acquisition and an ill-posed wave inversion. Instead of relying on handcrafted image priors, we propose a data-driven approach jointly combining image reconstruction and MRE inversion for robust SWS estimation from undersampled k-space data. Methods: Our physics-informed reconstruction framework comprises two blocks: a model-based neural network (NN)-regularized reconstruction module and a phase-gradient inversion (k-MDEV) calculating SWS from the reconstructed images. Concatenating both blocks yields an end-to-end trainable method to estimate SWS directly from measured k-space data. We evaluated the method on retrospectively highly undersampled brain MRE data and compared it to a total variation (TV) minimization-based approach. We assessed the impact of end-to-end training (qualitative images and SWS maps as targets) versus pre-training (qualitative images as targets) and applied the method also to in vivo data. Results: Our approach significantly reduces NRMSE by 30% compared to TV. End-to-end training improves SWS estimation over separate image reconstruction and SWS calculation. Conclusion: Accurate SWS quantification is possible at acceleration factors up to 19. Our method significantly outperforms TV, highlighting the need for data-driven regularization in this challenging MR problem. Further, our approach successfully generalizes to in vivo data. Significance: We present the first end-to-end trainable MRE reconstruction method for estimating SWS maps directly from k-space. NN-based reconstruction can enable rapid stiffness mapping for dynamic studies, functional imaging, and real-time clinical feedback.",
+      "evidence_for_ranking": "Supplied score 1.886; Semantic Scholar snapshot 1 citation/0 influential citations and two cross-lists; direct Graph API check matched.",
+      "claimed_contribution": "The authors report 30% lower NRMSE than total-variation minimization and shear-wave-speed estimation at acceleration factors up to 19, with an in-vivo demonstration.",
+      "unique_caveat": "The main evaluation is retrospective and focused on brain MRE; the abstract does not report cohort size. It is a reconstruction-method evaluation, not evidence of improved patient outcomes.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.26111",
+        "https://doi.org/10.1109/TBME.2026.3666306",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.26111?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "05-using-an-instrumented-hammer-to-predict-the-lateral-hinge-",
+      "kind": "paper",
+      "title": "Using an instrumented hammer to predict the lateral hinge fracture in high tibial osteotomy: A cadaveric study",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.20961",
+      "arxiv_id": "2611.20961",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T12:06:29Z",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Claire Bastard",
+        "Manon Bas-Dit Nugues",
+        "Giuseppe Rosi",
+        "Charles-Henri Flouzat-Lachaniette",
+        "Arnaud Dubory",
+        "Guillaume Haiat"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Medical physics & imaging"
+      ],
+      "abstract": "Open-wedge High-Tibial Osteotomy is the most commonly employed technique addressing varus knee osteoarthritis. During this procedure, the osteotome passes through cortical and trabecular bone. A common complication is lateral hinge fractures, which depends upon when the surgeon stops impacting the osteotome. The aim of the present study is to determine whether an instrumented hammer can be employed to detect (i) the bone type (cortical or trabecular) surrounding the osteotome tip and (ii) when bone is fractured by the osteotome. Seventeen lower-limb specimens were obtained from nine fresh human anatomical subjects. The osteotome was impacted using the instrumented hammer until rupture. Each impact signal was recorded and analyzed. An algorithm was developed to detect the transitions between cortical and trabecular bone and vice versa. Detection was based on the relative variation of $\\tau$ derived from the force signal as a function of time as the time difference between the second___and___first impact peaks. The values of $\\tau$ were significantly lower in cortical bone compared to trabecular bone. Considering the arrival of the osteotome tip in trabecular bone during a medial, a difference of less than 2 impacts between the surgeon and the algorithm was obtained for 71% of the cases. For the lateral osteotomy it was obtained in 81% of the cases. This cadaveric study demonstrated that the instrumented hammer could prevent impacts leading to hinge rupture, which suggests that future clinical trials are warranted.",
+      "evidence_for_ranking": "Supplied score 1.386; Semantic Scholar snapshot 1 citation/0 influential citations.",
+      "claimed_contribution": "The authors report detection within two impacts of the surgeon’s transition point in 71% of medial and 81% of lateral cases, using 17 lower-limb specimens from nine human anatomical donors.",
+      "unique_caveat": "Cadaveric proof of concept only; it does not establish performance or safety in live surgery.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.20961",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.20961?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "06-reasoning-in-the-loop-antibody-lead-optimization-by-probin",
+      "kind": "paper",
+      "title": "Reasoning in the loop: antibody lead optimization by probing mechanism and measurement",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.19812",
+      "arxiv_id": "2611.19812",
+      "arxiv_version": "v1",
+      "published": "2026-11-15T05:55:18Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Samuel Stanton",
+        "Aaron Solomon",
+        "Emily Delaney",
+        "Melanie Montgomery",
+        "Crystal Humphries",
+        "Timothy Acker",
+        "Ryan Henrici",
+        "Charbel Eid",
+        "Eddie Abrams",
+        "Peyton Greenside"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "Lab-in-the-loop systems, in which a model proposes molecules, automated assays measure their properties and the results retrain the model, are a popular approach to antibody lead optimization. These systems optimize for a specification defined with metrics computed from instrument signals, so their success depends on how well those metrics serve as proxies for the properties a drug candidate needs. When a metric is a poor proxy, neither a better model nor more data will fix it, and identifying the problem usually requires expert review. We report two campaigns run on BigHat Biosciences' Milliner platform, one on an anti-albumin nanobody (VHH) and one on an anti-mesothelin single-chain variable fragment (scFv), in which a research team and a general-purpose AI agent, Claude, brought scientific reasoning into the loop. Over seven rounds and about 1,010 design variants we built libraries from antibody lineage, structure and biophysics, and found from the raw curves that on each scaffold one thermal metric did not measure what its name implied. The libraries were built as controlled comparisons, so the results also show what each mutation contributes to each property. We fit a physical model of the curves, used it to choose metrics suited to each scaffold, and changed the experimental protocol, varying protein concentration and heating rate, to test the model against pre-registered predictions. Both leads improve on their parents in affinity, thermal stability and aggregation while improving or maintaining yield and purity.",
+      "evidence_for_ranking": "Supplied score 0.5, from two cross-lists only; Semantic Scholar snapshot 0 citations; no matched HF or Hacker News attention recorded.",
+      "claimed_contribution": "Across seven rounds and about 1,010 design variants for an anti-albumin nanobody and an anti-mesothelin scFv, the authors report that scaffold-specific assay interpretation and protocol changes improved lead properties while maintaining or improving yield and purity.",
+      "unique_caveat": "Two target/scaffold campaigns on one platform do not establish generality to other antibodies or assays; these are lead-property measurements, not clinical evidence.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.19812",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.19812?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "07-a-structure-based-model-of-the-bacterial-chemosensory-arra",
+      "kind": "paper",
+      "title": "A structure-based model of the bacterial chemosensory array reveals how the scaffolding protein CheW tunes sensory responses",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.23921",
+      "arxiv_id": "2611.23921",
+      "arxiv_version": "v1",
+      "published": "2026-11-18T06:11:15Z",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.stat-mech",
+        "q-bio.MN"
+      ],
+      "authors": [
+        "David Hathcock",
+        "Yingxin Zheng",
+        "Yuhai Tu"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Biochemistry & proteins"
+      ],
+      "abstract": "We introduce a structure-based Ising model of the bacterial chemosensory array to investigate how the scaffolding protein CheW tunes signaling responses. The model couples the activity states of core signaling units and of CheW subunits within hexameric rings on a lattice with the structure observed in cryoEM experiments. Recent experiments show that increasing CheW participation in hexameric rings raises response cooperativity in non-adapting cells and sensitivity in adaptation-proficient cells. Our lattice model quantitatively reproduces both effects, while mean-field theory shows that CheW increases the effective coupling between core units, sharpening the response in both cell types. The statistics of CheW placement (complete hexameric rings versus random distribution) substantially alter how responses vary with CheW abundance. Moreover, different coupling strengths can yield the same static response yet markedly different activity fluctuations and dynamics. CheW abundance further controls a crossover from relaxational to oscillatory fluctuations, whose location depends on the spatial distribution of CheW. These dynamical signatures, including oscillations predicted near native CheW levels, are testable by single-cell dynamics measurements. Combined with CheW titration and our modeling results, these measurements can probe the array's assembly dynamics and allosteric couplings. Beyond the chemosensory array, our approach can generalize to other large protein complexes, providing a framework to study the functional role of scaffolding proteins and allosteric interfaces in signal processing.",
+      "evidence_for_ranking": "Supplied score 0.5, from two cross-lists only; Semantic Scholar snapshot 0 citations; no matched HF or Hacker News attention recorded.",
+      "claimed_contribution": "The authors say the lattice model reproduces previously reported CheW-dependent cooperativity and sensitivity changes, and predicts a shift from relaxational to oscillatory dynamics for future single-cell testing.",
+      "unique_caveat": "The oscillatory behavior is a model prediction, not a new experimental observation in this paper.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.23921",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.23921?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "08-occam-improved-single-cell-representation-learning-and-per",
+      "kind": "paper",
+      "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.21959",
+      "arxiv_id": "2611.21959",
+      "arxiv_version": "v1",
+      "published": "2026-11-16T22:40:16Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": [
+        "Ihab Bendidi",
+        "Kian Kenyon-Dean",
+        "Alisandra K. Denton",
+        "Auguste Genovesio",
+        "Emmanuel Noutahi"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "Predicting the effects of genetic perturbations requires models that generalize beyond observed cell contexts and gene combinations. We introduce Occam, a multilayer perceptron (MLP) framework for representation learning and perturbation-effect prediction. Occam combines cell representations learned through denoising with gene interaction, text, and protein-sequence features. It achieves the highest aggregate representation scores for perturbation information and cell-type preservation with batch integration. In cross-context few-shot prediction, a perturbation and a cell context are each observed during training, but never together. Occam better captures the measured response patterns for these unobserved combinations than four retrained competitors or direct transfer of the same perturbation's measured effects from other training cell lines. Without fine-tuning, Occam best distinguishes perturbations among the evaluated models and simple baselines in cell lines held out from predictor training, across seen and unseen assays. Predicting expression levels accurately in these settings remains challenging. For double perturbations, which target two genes simultaneously, Occam composes learned single-gene responses to better capture the combined response and reduce expression error compared with competing models and summed single-gene effects. These gains extend to both strongly additive and weakly additive responses. Together, these results support simple MLPs for cell representation learning and perturbation-effect prediction across contexts and gene combinations.",
+      "evidence_for_ranking": "Supplied score 0.5, from two cross-lists only; Semantic Scholar snapshot 0 citations; no matched HF or Hacker News attention recorded.",
+      "claimed_contribution": "The authors report improved cross-context few-shot perturbation-response matching against four retrained competitors and transfer baselines, while noting that accurate expression-level prediction remains difficult.",
+      "unique_caveat": "Evidence is computational benchmarking across assays and held-out cell lines; the abstract does not establish experimental validation of predicted perturbation effects.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.21959",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.21959?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "09-beyond-auc-do-mammography-risk-models-predict-when-cancer-",
+      "kind": "paper",
+      "title": "Beyond AUC: Do Mammography Risk Models Predict When Cancer Occurs?",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.20274",
+      "arxiv_id": "2611.20274",
+      "arxiv_version": "v1",
+      "published": "2026-11-15T22:08:11Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.CV",
+        "eess.IV"
+      ],
+      "authors": [
+        "Svetlana Krasnova",
+        "Andrey Krylov",
+        "Dmitry Sorokin"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "Longitudinal deep learning models for mammography-based breast cancer risk prediction output either per-year cumulative risks or a discrete distribution over the year of diagnosis, from which cumulative risks F1,...,F5 are derived. These models are evaluated almost exclusively with year-wise AUCs and the concordance index. We show that these metrics are largely insensitive to when cancer occurs: they can be high even for a model that carries no information about the year of diagnosis. We re-evaluate two recent longitudinal models (OA-BreaCR, LMV-Net) on CSAW-CC with a 5-year horizon using timing metrics computed on cancer cases only. Despite C-indices up to 0.75, neither orders cancer cases by time to diagnosis significantly better than chance (c_time 0.51 and 0.55, both 95% CIs covering 0.5). Weighted absolute timing error favours a constant \"year 3\" prediction over both models, so we use c_time as the primary timing metric. For Mirai's additive-hazard head, also used by LMV-Net, we analyse how per-year increments passed through a ReLU can collapse under severe class imbalance. We also propose a breast-level, two-stage model that separates whether from when. It matches LMV-Net in discrimination (C-index 0.745 vs. 0.746) but orders cancer cases better (c_time 0.58 vs. 0.51, paired 95% CI of the difference 0.01-0.13), on par with Mirai's published weights (0.57).",
+      "evidence_for_ranking": "Supplied score 0.5, from two cross-lists only; Semantic Scholar snapshot 0 citations; no matched HF or Hacker News attention recorded.",
+      "claimed_contribution": "On the CSAW-CC cohort with a five-year horizon, the authors report that two models’ time-ordering c_time scores (0.51 and 0.55) were not significantly above chance, while a proposed two-stage model reached 0.58 with similar C-index to LMV-Net.",
+      "unique_caveat": "This is a retrospective reanalysis on one cohort; it does not demonstrate prospective clinical utility or performance in other screening populations.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-19 weekly announcement window",
+      "refs": [
+        "https://arxiv.org/abs/2611.20274",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV:2611.20274?fields=title,citationCount,influentialCitationCount"
+      ]
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": 0,
+      "url": "",
+      "summary": "Protein models meet biological features and measurement quality (Calpha; antibody campaigns). Biomedical methods are tested against physical or biological endpoints (antiviral, skin, MRE, osteotomy). Evaluation design and context recur in single-cell perturbation, CheW dynamics, and mammography timing papers; this is a corpus-level observation, not a field-wide shift."
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": 0,
+      "url": "",
+      "summary": "Separate model gains from training and evaluation choices for Calpha and validate antibody assay proxies on additional scaffolds. Test antiviral, skin, and osteotomy methods independently in larger, preregistered studies, with prospective intraoperative validation before generalization from cadavers. Test OCCAM perturbations on new cell lines, CheW dynamical predictions with single-cell time series, and mammography timing metrics in an external longitudinal cohort."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": 0,
+      "url": "",
+      "summary": "Strongest observed attention in the supplied batch went to a protein-folding/LLM paper and a previously published antiviral study. Other papers are notable for specific experimental settings and evaluation questions; sparse attention is not evidence of low importance or strong validation."
+    }
+  ]
+}

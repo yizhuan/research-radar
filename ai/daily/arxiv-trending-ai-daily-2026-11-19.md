@@ -1,4 +1,4 @@
-# arXiv AI — latest announcement batch 2026-11-19: 10 papers on embodied reasoning, video understanding, and visual-model design. Quick agenda: robot reasoning/action, omni-modal video, depth, controllable video generation, and efficient inference. arXiv has no official trending chart; this inferred ordering uses limited attention signals, and citation evidence is sparse for these new papers.
+# arXiv AI — latest announcement batch 2026-11-19: 10 papers on embodied reasoning, video understanding, and visual-model design. Quick agenda: robot reasoning/action, omni-modal video, depth, controllable video generation, and efficient inference. arXiv has no official trending chart; this inferred ordering uses attention signals, and citation evidence is limited for these recent papers.
 
 ## Top papers (ranked)
 
@@ -6,7 +6,7 @@
 - **Abstract:** The authors introduce a 30-task simulated manipulation benchmark that separately probes history-based reasoning, precise action, and closed-loop composition, finding that even their strongest evaluated agent succeeds on only 12.0% of Mind2Act episodes.
 - **Authors:** Yuzhi Huang, Jie Wu, Fanding Huang, Junchao Lin, Weichen Zhang, et al.
 - **arXiv:** `2611.26444v1` (published 2026-11-19 17:15:38 UTC; categories: `cs.RO`, `cs.AI`, `cs.CV`)
-- **Evidence for ranking:** Highest collected score (13.953): 49 Hugging Face paper upvotes (weighted component 11.736), 30 GitHub stars (1.717), and two cross-lists (0.500). [Hugging Face paper signal](https://huggingface.co/papers/2611.26444)
+- **Evidence for ranking:** Highest supplied score (14.159; components: HF-upvotes 11.911, code-stars 1.748, cross-lists 0.500): 52 Hugging Face Papers upvotes, 32 linked GitHub stars and two cross-lists. Semantic Scholar listed 0 citations; no HN points/comments were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26444)
 - **Claimed contribution:** The authors provide 180 task configurations across three views and a diagnosis harness; their evaluation reports a large gap between Mind/Act performance (52.7%/39.0% for the strongest agent) and Mind2Act performance (12.0%).
 - **Caveat:** The authors say the views are different tasks, not matched interventions, so longer horizons and early execution errors cannot yet be separated from a composition deficit; all tasks are simulated tabletop manipulation.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -16,7 +16,7 @@
 - **Abstract:** The authors present Chinese-English 2B–35B-A3B models that jointly process text, image, audio, and video with fast-instruct and reasoning modes, reporting evaluations across more than 120 benchmarks.
 - **Authors:** Changli Tang, Jie Yang, Tianyi Wang, Lei Li, Daoze Zhang, et al.
 - **arXiv:** `2611.26409v1` (published 2026-11-19 16:58:15 UTC; categories: `cs.CV`, `eess.AS`)
-- **Evidence for ranking:** Second by the collected score (13.675): 43 Hugging Face paper upvotes (component 11.353), 62 GitHub stars (2.072), and one cross-list (0.250). [Hugging Face paper signal](https://huggingface.co/papers/2611.26409)
+- **Evidence for ranking:** Second by the supplied score (13.853; components: HF-upvotes 11.486, code-stars 2.117, cross-lists 0.250): 45 Hugging Face Papers upvotes, 68 linked GitHub stars and one cross-list. Semantic Scholar listed 0 citations; no HN points/comments were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26409)
 - **Claimed contribution:** The authors report that WeMM-Video-35B-A3B leads their open-source comparisons on omni-modal video tasks and that the 9B variant outperforms the compared 30B open-source model; they release weights and an evaluation/reproduction pipeline.
 - **Caveat:** For existing comparison models, the paper uses official scores where available and its own evaluations otherwise, so not every comparison is from a single uniform evaluation run.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -26,9 +26,9 @@
 - **Abstract:** The authors present a native-resolution network for metric depth from images and video, designed to combine sharp boundaries with temporal consistency and reporting a new Pareto frontier across accuracy, sharpness, consistency, and runtime.
 - **Authors:** Peiyun Hu, Marko Mihajlovic, Lyndon Duong, Lahav Lipson, Wei Dong, et al.
 - **arXiv:** `2611.26603v1` (published 2026-11-19 18:55:41 UTC; categories: `cs.CV`, `cs.LG`)
-- **Evidence for ranking:** Third by the collected score (13.280): 29 Hugging Face paper upvotes (component 10.204), 284 GitHub stars (2.826), and one cross-list (0.250). [Hugging Face paper signal](https://huggingface.co/papers/2611.26603)
+- **Evidence for ranking:** Third by the supplied score (13.765; components: HF-upvotes 10.579, code-stars 2.936, cross-lists 0.250): 33 Hugging Face Papers upvotes, 354 linked GitHub stars and one cross-list. Semantic Scholar listed 0 citations; no HN points/comments were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26603)
 - **Claimed contribution:** The paper describes a shared multi-frame transformer, multi-view consistency training, and a family of models; its abstract reports improvements over prior work in metric accuracy, boundary sharpness, and temporal consistency.
-- **Caveat:** The multi-view consistency loss uses ground-truth camera poses and ground-truth depth to exclude occluded or moving pixels during training, a supervision requirement relevant to reproducing that objective.
+- **Caveat:** The authors note that their Temporal Alignment Error assumes a static scene and is ambiguous at occlusions; it can produce non-zero error even for ground-truth depth (Appendix B.3).
 - **Announcement type:** new submission, 2026-11-19 announcement batch
 - **Themes:** Multimodal & vision-language; Efficient inference & systems; Training & adaptation
 
@@ -36,7 +36,7 @@
 - **Abstract:** The authors study agent-authored 3D proxies for video generation and introduce a task-adaptive framework that selects direct or proxy-guided generation, with proxy granularity, simulation, and prompting evaluated through controlled experiments and blinded human ratings.
 - **Authors:** Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu, et al.
 - **arXiv:** `2611.26595v1` (published 2026-11-19 18:51:58 UTC; categories: `cs.CV`)
-- **Evidence for ranking:** Fourth by the collected score (12.319): 35 Hugging Face paper upvotes (component 10.751) and 22 GitHub stars (1.568). [Hugging Face paper signal](https://huggingface.co/papers/2611.26595)
+- **Evidence for ranking:** Score 12.600 (components: HF-upvotes 10.991, code-stars 1.609): 38 Hugging Face Papers upvotes and 24 linked GitHub stars. Semantic Scholar listed 0 citations; no HN points/comments or cross-list were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26595)
 - **Claimed contribution:** The authors report that coarse proxies favor natural motion while medium-grained proxies favor consistency, and that their framework improves instruction following, scene consistency, physical plausibility, and visual realism on the evaluated comparisons.
 - **Caveat:** The abstract reports remaining long-video weaknesses in transition stability and adherence to scene settings.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -46,7 +46,7 @@
 - **Abstract:** The authors propose Posterior Matching Distillation, which matches reweighted student-sample means to teacher posterior means to preserve the teacher’s image distribution while allowing stochastic generation at any trained timestep budget.
 - **Authors:** Hidir Yesiltepe, Julius Berner, Arash Vahdat, Pinar Yanardag
 - **arXiv:** `2611.26629v1` (published 2026-11-19 18:59:57 UTC; categories: `cs.CV`)
-- **Evidence for ranking:** Fifth by the collected score (12.115): 36 Hugging Face paper upvotes (component 10.833) and 12 GitHub stars (1.282). [Hugging Face paper signal](https://huggingface.co/papers/2611.26629)
+- **Evidence for ranking:** Score 12.387 (components: HF-upvotes 11.067, code-stars 1.320): 39 Hugging Face Papers upvotes and 13 linked GitHub stars. Semantic Scholar listed 0 citations; no HN points/comments or cross-list were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26629)
 - **Claimed contribution:** The authors prove a posterior-identification result under their stated conditions and report the best FID among evaluated four-step methods on SDXL and FLUX.2 [klein], with competitive prompt-alignment and perceptual scores.
 - **Caveat:** The reported empirical comparison is limited to SDXL and FLUX.2 [klein] and the evaluated four-step setting; broader model and sampling-budget behavior is not established by those results.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -56,7 +56,7 @@
 - **Abstract:** The authors introduce a multimodal Jacobian lens that maps vision and language representations to a shared output-vocabulary semantic space and use interventions to study selective concept access and downstream effects in vision-language models.
 - **Authors:** Jiahao Huang, Jun Wang
 - **arXiv:** `2611.26590v1` (published 2026-11-19 18:46:50 UTC; categories: `cs.AI`, `cs.CV`, `cs.LG`)
-- **Evidence for ranking:** Sixth by the collected score (11.784): 42 Hugging Face paper upvotes (component 11.284) and two cross-lists (0.500); no code-star component was recorded. [Hugging Face paper signal](https://huggingface.co/papers/2611.26590)
+- **Evidence for ranking:** Score 11.853 (components: HF-upvotes 11.353, cross-lists 0.500): 43 Hugging Face Papers upvotes and two cross-lists; no linked GitHub stars were recorded. Semantic Scholar listed 0 citations; no HN points/comments were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26590)
 - **Claimed contribution:** The paper reports that concepts are readable and selectively accessible in intermediate states, that counterfactual interventions affect downstream computation, and that its J-space metrics track cross-modal alignment across tested VLM families and sizes.
 - **Caveat:** These are probe- and intervention-based findings in tested VLMs; they do not establish that the models are conscious, and conclusions depend on the lens’s decoder-vocabulary readout.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -66,7 +66,7 @@
 - **Abstract:** The authors extend a pretrained vision-language model with a shared language-aligned ViT and dense Transformer backbone for understanding and image generation, adding a Pixel Diffusion Head and HiGate pathway for synthesis and spatial detail.
 - **Authors:** Jiahao Hu, Jingdong Du, Yichen Zhang, Yi Song, Zhenyu Zhang, et al.
 - **arXiv:** `2611.26107v1` (published 2026-11-19 13:37:47 UTC; categories: `cs.CV`, `cs.AI`)
-- **Evidence for ranking:** Seventh by the collected score (11.138): 23 Hugging Face paper upvotes (component 9.534), 14 GitHub stars (1.354), and one cross-list (0.250). [Hugging Face paper signal](https://huggingface.co/papers/2611.26107)
+- **Evidence for ranking:** Score 11.138 (components: HF-upvotes 9.534, code-stars 1.354, cross-lists 0.250): 23 Hugging Face Papers upvotes, 14 linked GitHub stars and one cross-list. Semantic Scholar listed 0 citations; no HN points/comments were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26107)
 - **Claimed contribution:** The authors report an average understanding score similar to the pretrained VLM alongside competitive image generation and editing, and argue that one dense backbone can support both without task-specific backbone computation.
 - **Caveat:** The abstract characterizes generation and editing as competitive rather than claiming uniform state-of-the-art performance; the evidence is limited to the reported tasks and comparisons.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -76,7 +76,7 @@
 - **Abstract:** The authors propose a slow-fast vision-language navigation framework that leaves the VLM brain without navigation-domain supervised fine-tuning, instead using natural-language tool calls to an adapted action expert and closed-loop reinforcement learning.
 - **Authors:** Zixuan Huang, Yang Zhou, Guli Zhang, Sunzhu Li, Hongyan Xie, et al.
 - **arXiv:** `2611.26414v1` (published 2026-11-19 17:01:00 UTC; categories: `cs.AI`)
-- **Evidence for ranking:** Eighth by the collected score (10.952): 22 Hugging Face paper upvotes (component 9.406) and 21 GitHub stars (1.546). [Hugging Face paper signal](https://huggingface.co/papers/2611.26414)
+- **Evidence for ranking:** Score 11.035 (components: HF-upvotes 9.406, code-stars 1.629): 22 Hugging Face Papers upvotes and 25 linked GitHub stars. Semantic Scholar listed 0 citations; no HN points/comments or cross-list were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26414)
 - **Claimed contribution:** The authors report that ZeroVLN outperforms the compared SFT-based hierarchical methods on VLN-CE benchmarks while making only minor changes to the VLM brain and largely preserving its general visual capabilities.
 - **Caveat:** “Zero SFT” applies to the VLM brain: the action expert is adapted and both policies are improved through RL on navigation episodes; the reported evaluation is on benchmarks, not a real-world deployment.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -86,7 +86,7 @@
 - **Abstract:** The authors combine video-level context with timestamped egocentric action descriptions, using 50,000 coarse-to-fine training examples and factual, coverage, and temporal-alignment rewards to refine captions.
 - **Authors:** Yuqi Tang, Yang Shi, Yuran Wang, Tengfei Liu, Rundong Wang, et al.
 - **arXiv:** `2611.26380v1` (published 2026-11-19 16:39:59 UTC; categories: `cs.CV`)
-- **Evidence for ranking:** Ninth by the collected score (10.747): 25 Hugging Face paper upvotes (component 9.774) and six GitHub stars (0.973). [Hugging Face paper signal](https://huggingface.co/papers/2611.26380)
+- **Evidence for ranking:** Score 10.814 (components: HF-upvotes 9.774, code-stars 1.040): 25 Hugging Face Papers upvotes and 7 linked GitHub stars. Semantic Scholar listed 0 citations; no HN points/comments or cross-list were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.26380)
 - **Claimed contribution:** Across five egocentric benchmarks, the authors report leading results among evaluated open-source models for caption quality, caption-conditioned QA, and temporal alignment, with ablations supporting multiple reward terms and coarse-to-fine annotations.
 - **Caveat:** Pose-derived motion facts are used only where sensor data are available, so that additional factual-supervision path is not present for every source video.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -96,7 +96,7 @@
 - **Abstract:** The authors introduce 125 programmatically generated interactive CAPTCHA tasks for spatial action, report a 25.9% failure rate for their best tested model, and show that fine-tuning Qwen3.5-9B on the environment raises success from 1.6% to 33.1%.
 - **Authors:** Xuwei Ding, Skylar Zhai, Linxin Song, Jiarui Feng, Dongqi Fu, et al.
 - **arXiv:** `2611.25387v1` (published 2026-11-19 02:32:10 UTC; categories: `cs.LG`)
-- **Evidence for ranking:** Tenth by the collected score (10.339): 23 Hugging Face paper upvotes (component 9.534) and four GitHub stars (0.805). [Hugging Face paper signal](https://huggingface.co/papers/2611.25387)
+- **Evidence for ranking:** Score 10.339 (components: HF-upvotes 9.534, code-stars 0.805): 23 Hugging Face Papers upvotes and 4 linked GitHub stars. Semantic Scholar listed 0 citations; no HN points/comments or cross-list were recorded for this entry. [Hugging Face paper signal](https://huggingface.co/papers/2611.25387)
 - **Claimed contribution:** The benchmark tests five spatial abilities through clicks and drags, provides generated instances with checkers and oracles, and the authors report gains on seven out-of-distribution benchmarks after fine-tuning.
 - **Caveat:** The central task set is a synthetic CAPTCHA environment; transfer to seven external benchmarks is encouraging but does not by itself establish reliability across open-ended real-world spatial interaction.
 - **Announcement type:** new submission, 2026-11-19 announcement batch
@@ -122,9 +122,9 @@ The strongest visible pattern in this batch is a push toward models and benchmar
 
 ## Method and sources
 
-- **Window and snapshot:** Daily latest available arXiv announcement batch dated **2026-11-19**; this is a prior batch for the 2026-11-21 snapshot. The exact batch window is **2026-11-18 19:00:00 UTC to 2026-11-19 19:00:00 UTC**, announced **2026-11-20 01:00:00 UTC**. Snapshot time: **2026-11-21 21:00:51 UTC**. All ten selected records are new `v1` submissions in that batch, not revisions.
+- **Window and snapshot:** Daily latest available arXiv announcement batch dated **2026-11-19**; this is a prior batch for the 2026-11-22 snapshot. The exact batch window is **2026-11-18 19:00:00 UTC to 2026-11-19 19:00:00 UTC**, announced **2026-11-20 01:00:00 UTC**. Snapshot time: **2026-11-22 17:05:02 UTC**. All ten selected records are new `v1` submissions in that batch, not revisions.
 - **Corpus:** `cs.AI OR cs.LG OR stat.ML OR cs.CL OR cs.CV OR cs.RO OR cs.NE OR cs.MA`. The supplied signal file reports a 635-candidate pool, including 42 with at least one collected attention signal; its note says the listing is capped and may not exhaust very large categories. Category recent listings: [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.RO](https://arxiv.org/list/cs.RO/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.MA](https://arxiv.org/list/cs.MA/recent).
-- **Ranking:** Started from the supplied candidate scores and ranked the selected set by the collector’s deterministic log1p-damped weighted sum; per-paper score components are shown above. Configured weights are Hugging Face upvotes 3.0, Hacker News points 1.5, Hacker News comments 1.0, Semantic Scholar citations 2.0, influential citations 1.0, code stars 0.5, and cross-lists 0.25. Scores are a transparent ranking aid, not an official or universal trend metric. Hugging Face and Semantic Scholar records were available for all candidates selected; the selected entries have zero current Semantic Scholar citation and influential-citation totals. Hacker News collection was available but no selected paper has a recorded HN points/comments signal. None of the signal sources reported an error.
+- **Ranking and signal availability:** Started from the supplied candidate scores and ranked by the collector’s deterministic log1p-damped weighted sum; per-paper score components are shown above. Weights: Hugging Face upvotes 3.0, Hacker News points 1.5, HN comments 1.0, Semantic Scholar citations 2.0, influential citations 1.0, code stars 0.5, and cross-lists 0.25. Scores are a transparent ranking aid, not an official or universal trend metric. The snapshot reports arXiv, Hugging Face, Hacker News, arXiv lookup and Semantic Scholar as `ok`; no source-level errors were reported. Selected entries have zero current Semantic Scholar citation and influential-citation totals, not evidence of no interest. No selected paper has recorded HN points/comments. HF upvotes and code-star values are snapshot totals, not gains during the announcement window.
 - **Primary-page verification and paper reading:** Each selected title, author order, version, timestamp, categories, and abstract was verified on its linked arXiv abstract page. The full arXiv HTML for Mind2Act World, WeMM-Video, and Depth Pro 2 was also read for method, evaluation, and caveat context. Other contribution and caveat statements above are bounded to the verified arXiv abstracts.
 - **Selected records:** [2611.26444](https://arxiv.org/abs/2611.26444) · [2611.26409](https://arxiv.org/abs/2611.26409) · [2611.26603](https://arxiv.org/abs/2611.26603) · [2611.26595](https://arxiv.org/abs/2611.26595) · [2611.26629](https://arxiv.org/abs/2611.26629) · [2611.26590](https://arxiv.org/abs/2611.26590) · [2611.26107](https://arxiv.org/abs/2611.26107) · [2611.26414](https://arxiv.org/abs/2611.26414) · [2611.26380](https://arxiv.org/abs/2611.26380) · [2611.25387](https://arxiv.org/abs/2611.25387)
 - **Attention signal records:** [HF paper 2611.26444](https://huggingface.co/papers/2611.26444) · [2611.26409](https://huggingface.co/papers/2611.26409) · [2611.26603](https://huggingface.co/papers/2611.26603) · [2611.26595](https://huggingface.co/papers/2611.26595) · [2611.26629](https://huggingface.co/papers/2611.26629) · [2611.26590](https://huggingface.co/papers/2611.26590) · [2611.26107](https://huggingface.co/papers/2611.26107) · [2611.26414](https://huggingface.co/papers/2611.26414) · [2611.26380](https://huggingface.co/papers/2611.26380) · [2611.25387](https://huggingface.co/papers/2611.25387)

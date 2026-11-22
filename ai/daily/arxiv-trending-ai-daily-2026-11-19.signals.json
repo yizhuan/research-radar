@@ -19,7 +19,7 @@
     "cs.NE",
     "cs.MA"
   ],
-  "generated_at": "2026-11-21T21:00:15Z",
+  "generated_at": "2026-11-22T17:05:02Z",
   "sources": {
     "arxiv": {
       "status": "ok",
@@ -31,11 +31,11 @@
     },
     "hacker_news": {
       "status": "ok",
-      "count": 35
+      "count": 42
     },
     "arxiv_lookup": {
       "status": "ok",
-      "count": 142
+      "count": 149
     },
     "semantic_scholar": {
       "status": "ok",
@@ -86,11 +86,11 @@
       "signals": {
         "cross_lists": 2,
         "hf": {
-          "upvotes": 49,
+          "upvotes": 52,
           "comments": 4,
           "organization": "Mind2Act-World",
           "organization_fullname": "Mind2Act-World",
-          "github_stars": 30,
+          "github_stars": 32,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26444"
         },
@@ -99,10 +99,10 @@
           "influential_citations": 0
         }
       },
-      "score": 13.953,
+      "score": 14.159,
       "score_components": {
-        "hf_upvotes": 11.736,
-        "code_stars": 1.717,
+        "hf_upvotes": 11.911,
+        "code_stars": 1.748,
         "cross_lists": 0.5
       }
     },
@@ -137,11 +137,11 @@
       "signals": {
         "cross_lists": 1,
         "hf": {
-          "upvotes": 43,
+          "upvotes": 45,
           "comments": 3,
           "organization": "tencent",
           "organization_fullname": "Tencent",
-          "github_stars": 62,
+          "github_stars": 68,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26409"
         },
@@ -150,10 +150,10 @@
           "influential_citations": 0
         }
       },
-      "score": 13.675,
+      "score": 13.853,
       "score_components": {
-        "hf_upvotes": 11.353,
-        "code_stars": 2.072,
+        "hf_upvotes": 11.486,
+        "code_stars": 2.117,
         "cross_lists": 0.25
       }
     },
@@ -184,11 +184,11 @@
       "signals": {
         "cross_lists": 1,
         "hf": {
-          "upvotes": 29,
-          "comments": 2,
+          "upvotes": 33,
+          "comments": 3,
           "organization": "apple",
           "organization_fullname": "Apple",
-          "github_stars": 284,
+          "github_stars": 354,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26603"
         },
@@ -197,10 +197,10 @@
           "influential_citations": 0
         }
       },
-      "score": 13.28,
+      "score": 13.765,
       "score_components": {
-        "hf_upvotes": 10.204,
-        "code_stars": 2.826,
+        "hf_upvotes": 10.579,
+        "code_stars": 2.936,
         "cross_lists": 0.25
       }
     },
@@ -234,11 +234,11 @@
       "signals": {
         "cross_lists": 0,
         "hf": {
-          "upvotes": 35,
+          "upvotes": 38,
           "comments": 4,
           "organization": "KlingTeam",
           "organization_fullname": "KlingAI Research",
-          "github_stars": 22,
+          "github_stars": 24,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26595"
         },
@@ -247,10 +247,10 @@
           "influential_citations": 0
         }
       },
-      "score": 12.319,
+      "score": 12.6,
       "score_components": {
-        "hf_upvotes": 10.751,
-        "code_stars": 1.568
+        "hf_upvotes": 10.991,
+        "code_stars": 1.609
       }
     },
     {
@@ -275,11 +275,11 @@
       "signals": {
         "cross_lists": 0,
         "hf": {
-          "upvotes": 36,
+          "upvotes": 39,
           "comments": 4,
           "organization": "nvidia",
           "organization_fullname": "NVIDIA",
-          "github_stars": 12,
+          "github_stars": 13,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26629"
         },
@@ -288,10 +288,10 @@
           "influential_citations": 0
         }
       },
-      "score": 12.115,
+      "score": 12.387,
       "score_components": {
-        "hf_upvotes": 10.833,
-        "code_stars": 1.282
+        "hf_upvotes": 11.067,
+        "code_stars": 1.32
       }
     },
     {
@@ -316,7 +316,7 @@
       "signals": {
         "cross_lists": 2,
         "hf": {
-          "upvotes": 42,
+          "upvotes": 43,
           "comments": 2,
           "organization": "UniversityCollegeLondon",
           "organization_fullname": "University College London",
@@ -329,9 +329,9 @@
           "influential_citations": 0
         }
       },
-      "score": 11.784,
+      "score": 11.853,
       "score_components": {
-        "hf_upvotes": 11.284,
+        "hf_upvotes": 11.353,
         "cross_lists": 0.5
       }
     },
@@ -419,7 +419,7 @@
           "comments": 2,
           "organization": "ZYT-AI",
           "organization_fullname": "ZYT AI Team",
-          "github_stars": 21,
+          "github_stars": 25,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26414"
         },
@@ -428,10 +428,10 @@
           "influential_citations": 0
         }
       },
-      "score": 10.952,
+      "score": 11.035,
       "score_components": {
         "hf_upvotes": 9.406,
-        "code_stars": 1.546
+        "code_stars": 1.629
       }
     },
     {
@@ -468,7 +468,7 @@
           "comments": 2,
           "organization": "KlingTeam",
           "organization_fullname": "KlingAI Research",
-          "github_stars": 6,
+          "github_stars": 7,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26380"
         },
@@ -477,10 +477,10 @@
           "influential_citations": 0
         }
       },
-      "score": 10.747,
+      "score": 10.814,
       "score_components": {
         "hf_upvotes": 9.774,
-        "code_stars": 0.973
+        "code_stars": 1.04
       }
     },
     {
@@ -636,7 +636,7 @@
           "comments": 2,
           "organization": "RUC-AIBOX",
           "organization_fullname": "RUC-AIBOX",
-          "github_stars": 22,
+          "github_stars": 23,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26510"
         },
@@ -645,10 +645,10 @@
           "influential_citations": 0
         }
       },
-      "score": 9.692,
+      "score": 9.713,
       "score_components": {
         "hf_upvotes": 8.124,
-        "code_stars": 1.568
+        "code_stars": 1.589
       }
     },
     {
@@ -676,8 +676,8 @@
       "signals": {
         "cross_lists": 1,
         "hf": {
-          "upvotes": 17,
-          "comments": 2,
+          "upvotes": 20,
+          "comments": 3,
           "organization": null,
           "organization_fullname": null,
           "github_stars": 0,
@@ -689,9 +689,9 @@
           "influential_citations": 0
         }
       },
-      "score": 8.921,
+      "score": 9.384,
       "score_components": {
-        "hf_upvotes": 8.671,
+        "hf_upvotes": 9.134,
         "cross_lists": 0.25
       }
     },
@@ -717,8 +717,8 @@
       "signals": {
         "cross_lists": 1,
         "hf": {
-          "upvotes": 15,
-          "comments": 2,
+          "upvotes": 16,
+          "comments": 3,
           "organization": null,
           "organization_fullname": null,
           "github_stars": 0,
@@ -730,9 +730,9 @@
           "influential_citations": 0
         }
       },
-      "score": 8.568,
+      "score": 8.75,
       "score_components": {
-        "hf_upvotes": 8.318,
+        "hf_upvotes": 8.5,
         "cross_lists": 0.25
       }
     },
@@ -756,8 +756,8 @@
       "signals": {
         "cross_lists": 0,
         "hf": {
-          "upvotes": 15,
-          "comments": 2,
+          "upvotes": 17,
+          "comments": 3,
           "organization": null,
           "organization_fullname": null,
           "github_stars": 0,
@@ -769,9 +769,9 @@
           "influential_citations": 0
         }
       },
-      "score": 8.318,
+      "score": 8.671,
       "score_components": {
-        "hf_upvotes": 8.318
+        "hf_upvotes": 8.671
       }
     },
     {
@@ -799,7 +799,7 @@
           "comments": 2,
           "organization": null,
           "organization_fullname": null,
-          "github_stars": 1,
+          "github_stars": 2,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26286"
         },
@@ -808,10 +808,10 @@
           "influential_citations": 0
         }
       },
-      "score": 8.041,
+      "score": 8.243,
       "score_components": {
         "hf_upvotes": 7.194,
-        "code_stars": 0.347,
+        "code_stars": 0.549,
         "cross_lists": 0.5
       }
     },
@@ -837,8 +837,8 @@
       "signals": {
         "cross_lists": 1,
         "hf": {
-          "upvotes": 11,
-          "comments": 2,
+          "upvotes": 12,
+          "comments": 3,
           "organization": "UoHaifa",
           "organization_fullname": "University of Haifa",
           "github_stars": 0,
@@ -850,9 +850,9 @@
           "influential_citations": 0
         }
       },
-      "score": 7.705,
+      "score": 7.945,
       "score_components": {
-        "hf_upvotes": 7.455,
+        "hf_upvotes": 7.695,
         "cross_lists": 0.25
       }
     },
@@ -880,11 +880,11 @@
       "signals": {
         "cross_lists": 0,
         "hf": {
-          "upvotes": 5,
+          "upvotes": 6,
           "comments": 3,
           "organization": "BE2R",
           "organization_fullname": "BE2R Lab",
-          "github_stars": 34,
+          "github_stars": 62,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.25279"
         },
@@ -893,52 +893,10 @@
           "influential_citations": 0
         }
       },
-      "score": 7.153,
+      "score": 7.91,
       "score_components": {
-        "hf_upvotes": 5.375,
-        "code_stars": 1.778
-      }
-    },
-    {
-      "arxiv_id": "2611.26248",
-      "version": "1",
-      "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
-      "authors": [
-        "Yang Wan",
-        "Linchao Zhu"
-      ],
-      "published": "2026-11-19T15:25:34Z",
-      "updated": "2026-11-19T15:25:34Z",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "abs_url": "https://arxiv.org/abs/2611.26248",
-      "comment": "https://twinlab-bench.github.io/ contains tasks and code. 33 pages, 6 figures, 14 tables. LLM-agent benchmark for autonomous experimental design in digital twins of real labs (physics, chemistry, wet-lab biology, materials, engineering). 13 agents evaluated: Claude Fable 5.2 45.0, Opus 5.5 40.2, GPT-6.1-sol 31.7, plus DeepSeek, Qwen, Kimi, GLM and others",
-      "abstract": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLab",
-      "signals": {
-        "cross_lists": 2,
-        "hf": {
-          "upvotes": 5,
-          "comments": 2,
-          "organization": "zju-community",
-          "organization_fullname": "Zhejiang University",
-          "github_stars": 6,
-          "featured_on": "2026-11-20",
-          "url": "https://huggingface.co/papers/2611.26248"
-        },
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      },
-      "score": 6.848,
-      "score_components": {
-        "hf_upvotes": 5.375,
-        "code_stars": 0.973,
-        "cross_lists": 0.5
+        "hf_upvotes": 5.838,
+        "code_stars": 2.072
       }
     },
     {
@@ -966,11 +924,11 @@
       "signals": {
         "cross_lists": 0,
         "hf": {
-          "upvotes": 4,
+          "upvotes": 6,
           "comments": 2,
           "organization": "NJU",
           "organization_fullname": "Nanjing University",
-          "github_stars": 38,
+          "github_stars": 56,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26511"
         },
@@ -979,10 +937,96 @@
           "influential_citations": 0
         }
       },
-      "score": 6.66,
+      "score": 7.86,
       "score_components": {
-        "hf_upvotes": 4.828,
-        "code_stars": 1.832
+        "hf_upvotes": 5.838,
+        "code_stars": 2.022
+      }
+    },
+    {
+      "arxiv_id": "2611.26248",
+      "version": "1",
+      "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+      "authors": [
+        "Yang Wan",
+        "Linchao Zhu"
+      ],
+      "published": "2026-11-19T15:25:34Z",
+      "updated": "2026-11-19T15:25:34Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26248",
+      "comment": "https://twinlab-bench.github.io/ contains tasks and code. 33 pages, 6 figures, 14 tables. LLM-agent benchmark for autonomous experimental design in digital twins of real labs (physics, chemistry, wet-lab biology, materials, engineering). 13 agents evaluated: Claude Fable 5.2 45.0, Opus 5.5 40.2, GPT-6.1-sol 31.7, plus DeepSeek, Qwen, Kimi, GLM and others",
+      "abstract": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLab",
+      "signals": {
+        "cross_lists": 2,
+        "hf": {
+          "upvotes": 7,
+          "comments": 2,
+          "organization": "zju-community",
+          "organization_fullname": "Zhejiang University",
+          "github_stars": 6,
+          "featured_on": "2026-11-20",
+          "url": "https://huggingface.co/papers/2611.26248"
+        },
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 7.711,
+      "score_components": {
+        "hf_upvotes": 6.238,
+        "code_stars": 0.973,
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.26239",
+      "version": "1",
+      "title": "Teaching Vision-Language-Action Models to Stop Safely",
+      "authors": [
+        "Zheyuan Liu",
+        "Chuhan Wang",
+        "Jinduo Guo",
+        "Yue Huang",
+        "Xiangchi Yuan",
+        "Ningshan Ma",
+        "Meng Jiang"
+      ],
+      "published": "2026-11-19T15:14:55Z",
+      "updated": "2026-11-19T15:14:55Z",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26239",
+      "comment": "A two-stage pipeline that teaches VLAs to stop prohibited tasks safely while preserving permitted skills",
+      "abstract": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across",
+      "signals": {
+        "cross_lists": 0,
+        "hf": {
+          "upvotes": 8,
+          "comments": 3,
+          "organization": "DM2-ND",
+          "organization_fullname": "University of Notre Dame DM2 Lab",
+          "github_stars": 1,
+          "featured_on": "2026-11-20",
+          "url": "https://huggingface.co/papers/2611.26239"
+        },
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 6.939,
+      "score_components": {
+        "hf_upvotes": 6.592,
+        "code_stars": 0.347
       }
     },
     {
@@ -1017,7 +1061,7 @@
           "comments": 2,
           "organization": "NationalUniversityofSingapore",
           "organization_fullname": "National University of Singapore",
-          "github_stars": 5,
+          "github_stars": 7,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.26617"
         },
@@ -1026,10 +1070,10 @@
           "influential_citations": 0
         }
       },
-      "score": 6.474,
+      "score": 6.618,
       "score_components": {
         "hf_upvotes": 4.828,
-        "code_stars": 0.896,
+        "code_stars": 1.04,
         "cross_lists": 0.75
       }
     },
@@ -1052,7 +1096,7 @@
       "signals": {
         "cross_lists": 0,
         "hf": {
-          "upvotes": 5,
+          "upvotes": 7,
           "comments": 2,
           "organization": null,
           "organization_fullname": null,
@@ -1065,52 +1109,141 @@
           "influential_citations": 0
         }
       },
-      "score": 5.375,
+      "score": 6.238,
       "score_components": {
-        "hf_upvotes": 5.375
+        "hf_upvotes": 6.238
       }
     },
     {
-      "arxiv_id": "2611.26239",
+      "arxiv_id": "2611.26211",
       "version": "1",
-      "title": "Teaching Vision-Language-Action Models to Stop Safely",
+      "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
       "authors": [
-        "Zheyuan Liu",
-        "Chuhan Wang",
-        "Jinduo Guo",
-        "Yue Huang",
-        "Xiangchi Yuan",
-        "Ningshan Ma",
-        "Meng Jiang"
+        "Jiaming Li",
+        "Lingzhen Li",
+        "Xiaze Yang",
+        "Chenyu Zhu",
+        "Kaiqi Liu",
+        "Xiaotong Zhao",
+        "Songlian Li",
+        "Toyota Li",
+        "Alan Zhao",
+        "Haobin Zhong",
+        "Yue Ma",
+        "Zhiyuan Ma"
       ],
-      "published": "2026-11-19T15:14:55Z",
-      "updated": "2026-11-19T15:14:55Z",
-      "primary_category": "cs.RO",
+      "published": "2026-11-19T14:50:59Z",
+      "updated": "2026-11-19T14:50:59Z",
+      "primary_category": "cs.CV",
       "categories": [
-        "cs.RO"
+        "cs.CV"
       ],
-      "abs_url": "https://arxiv.org/abs/2611.26239",
-      "comment": "A two-stage pipeline that teaches VLAs to stop prohibited tasks safely while preserving permitted skills",
-      "abstract": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across",
+      "abs_url": "https://arxiv.org/abs/2611.26211",
+      "comment": "",
+      "abstract": "Recently, video world models have advanced interactive generation, with large models offering higher quality and smaller models enabling faster inference. Existing speculative methods combine their strengths through fast draft generation and selective target regeneration guided by rewards on decoded frames. However, verification covers only the external scorer's evaluation dimensions and adds decoding and scoring costs. Moreover, these scores provide no correction, requiring costly target regeneration for rejected drafts. To address these limitations, we propose Speculative World Model (SpecWM), a unified, training-free inference framework for streaming world models. It verifies draft chunks using the target's latent velocity field. Verification also yields a reusable correction; two thresholds select Accept, Refine, or Reject. Specifically, one-step refinement reuses it to improve perceptual quality, while three-step refinement strengthens camera following and trajectory consistency. These findings motivate transition-aware refinement. On WBench Navigation, SpecWM improves visual quality at 1.63$\\times$ speedup over the target and raises NavScore from the draft's 75.99 to 85.63, a",
       "signals": {
         "cross_lists": 0,
         "hf": {
-          "upvotes": 5,
+          "upvotes": 7,
           "comments": 2,
-          "organization": "DM2-ND",
-          "organization_fullname": "University of Notre Dame DM2 Lab",
+          "organization": "Huster",
+          "organization_fullname": "Huazhong University of Science and Technology",
           "github_stars": 0,
           "featured_on": "2026-11-20",
-          "url": "https://huggingface.co/papers/2611.26239"
+          "url": "https://huggingface.co/papers/2611.26211"
         },
         "s2": {
           "citations": 0,
           "influential_citations": 0
         }
       },
-      "score": 5.375,
+      "score": 6.238,
       "score_components": {
-        "hf_upvotes": 5.375
+        "hf_upvotes": 6.238
+      }
+    },
+    {
+      "arxiv_id": "2611.26540",
+      "version": "1",
+      "title": "AURA: AUdio-dRiven streaming Avatar",
+      "authors": [
+        "Nathaniel Cohen",
+        "Nicolas Dufour",
+        "Amélie Royer",
+        "Alasdair Newson",
+        "Patrick Pérez"
+      ],
+      "published": "2026-11-19T18:17:38Z",
+      "updated": "2026-11-19T18:17:38Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26540",
+      "comment": "BMVC 2026. Project page: https://kyutai.org/aura",
+      "abstract": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV cache, requiring only the audio of the current chunk to start generating, rather than a multi-second audio look-ahead like bidirectional models. It comes in two sizes: AURA 1.3B streams 576p video in real time on a single GPU (20.7 fps for a 16 Hz playback rate), making it suited to interactive avatar applications, and AURA 5B streams 720p video at 9.7 fps. Our two-stage distillation pipeline first aligns the causal student with the teacher, by training it to match the teacher's trajectories with fewer diffusion steps and a chunk-wise sliding window causal attention mask, then applies Distribution Matching Distillation (DMD) with backward simulation to close the remaining quality gap. On standard talking-head benchmarks, AURA 1.3B runs 23x faster than its own bidirectional teacher and rea",
+      "signals": {
+        "cross_lists": 1,
+        "hf": {
+          "upvotes": 3,
+          "comments": 2,
+          "organization": "kyutai",
+          "organization_fullname": "Kyutai",
+          "github_stars": 30,
+          "featured_on": "2026-11-20",
+          "url": "https://huggingface.co/papers/2611.26540"
+        },
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 6.126,
+      "score_components": {
+        "hf_upvotes": 4.159,
+        "code_stars": 1.717,
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.26624",
+      "version": "1",
+      "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+      "authors": [
+        "Weihao Cheng"
+      ],
+      "published": "2026-11-19T18:59:34Z",
+      "updated": "2026-11-19T18:59:34Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26624",
+      "comment": "",
+      "abstract": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play experience to revise them for mastery. Starting from an initial game, PlayCraft alternates between playing and crafting. In the playing stage, a player agent watches the game screen, uses the controls, and pursues the game objective over repeated episodes while retaining memory. After each episode, it reports its progress, outcomes, decisions, and reflections. In the crafting stage, a crafter agent uses these reports to revise the game. It estimates player abilities, predicts performance at different proficiency levels, and compares those predictions with a target learning progression. It diagnoses the game and addresses the gaps by giving players meaningful opportunities to improve through better decisions and execution. We evaluate games in fresh runs with player agents across three intelligence settings, measuring learning gain and learning slope. Compared with the init",
+      "signals": {
+        "cross_lists": 1,
+        "hf": {
+          "upvotes": 3,
+          "comments": 2,
+          "organization": null,
+          "organization_fullname": null,
+          "github_stars": 6,
+          "featured_on": "2026-11-20",
+          "url": "https://huggingface.co/papers/2611.26624"
+        },
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 5.382,
+      "score_components": {
+        "hf_upvotes": 4.159,
+        "code_stars": 0.973,
+        "cross_lists": 0.25
       }
     },
     {
@@ -1139,7 +1272,7 @@
         "cross_lists": 1,
         "hf": {
           "upvotes": 4,
-          "comments": 4,
+          "comments": 5,
           "organization": "MBZUAI",
           "organization_fullname": "Mohamed Bin Zayed University of Artificial Intelligence",
           "github_stars": 0,
@@ -1187,7 +1320,7 @@
           "comments": 2,
           "organization": null,
           "organization_fullname": null,
-          "github_stars": 3,
+          "github_stars": 4,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.25604"
         },
@@ -1196,10 +1329,10 @@
           "influential_citations": 0
         }
       },
-      "score": 4.852,
+      "score": 4.964,
       "score_components": {
         "hf_upvotes": 4.159,
-        "code_stars": 0.693
+        "code_stars": 0.805
       }
     },
     {
@@ -1304,50 +1437,6 @@
       }
     },
     {
-      "arxiv_id": "2611.26540",
-      "version": "1",
-      "title": "AURA: AUdio-dRiven streaming Avatar",
-      "authors": [
-        "Nathaniel Cohen",
-        "Nicolas Dufour",
-        "Amélie Royer",
-        "Alasdair Newson",
-        "Patrick Pérez"
-      ],
-      "published": "2026-11-19T18:17:38Z",
-      "updated": "2026-11-19T18:17:38Z",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "abs_url": "https://arxiv.org/abs/2611.26540",
-      "comment": "BMVC 2026. Project page: https://kyutai.org/aura",
-      "abstract": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV cache, requiring only the audio of the current chunk to start generating, rather than a multi-second audio look-ahead like bidirectional models. It comes in two sizes: AURA 1.3B streams 576p video in real time on a single GPU (20.7 fps for a 16 Hz playback rate), making it suited to interactive avatar applications, and AURA 5B streams 720p video at 9.7 fps. Our two-stage distillation pipeline first aligns the causal student with the teacher, by training it to match the teacher's trajectories with fewer diffusion steps and a chunk-wise sliding window causal attention mask, then applies Distribution Matching Distillation (DMD) with backward simulation to close the remaining quality gap. On standard talking-head benchmarks, AURA 1.3B runs 23x faster than its own bidirectional teacher and rea",
-      "signals": {
-        "cross_lists": 1,
-        "hf": {
-          "upvotes": 1,
-          "comments": 2,
-          "organization": "kyutai",
-          "organization_fullname": "Kyutai",
-          "github_stars": 23,
-          "featured_on": "2026-11-20",
-          "url": "https://huggingface.co/papers/2611.26540"
-        },
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      },
-      "score": 3.918,
-      "score_components": {
-        "hf_upvotes": 2.079,
-        "code_stars": 1.589,
-        "cross_lists": 0.25
-      }
-    },
-    {
       "arxiv_id": "2611.26232",
       "version": "1",
       "title": "Time Series Structure Learning with Local Causal Parent Discovery",
@@ -1372,7 +1461,7 @@
         "cross_lists": 1,
         "hf": {
           "upvotes": 2,
-          "comments": 1,
+          "comments": 2,
           "organization": "abel-lab",
           "organization_fullname": "Abel AI",
           "github_stars": 1,
@@ -1389,94 +1478,6 @@
         "hf_upvotes": 3.296,
         "code_stars": 0.347,
         "cross_lists": 0.25
-      }
-    },
-    {
-      "arxiv_id": "2611.26624",
-      "version": "1",
-      "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
-      "authors": [
-        "Weihao Cheng"
-      ],
-      "published": "2026-11-19T18:59:34Z",
-      "updated": "2026-11-19T18:59:34Z",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI",
-        "cs.CV"
-      ],
-      "abs_url": "https://arxiv.org/abs/2611.26624",
-      "comment": "",
-      "abstract": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play experience to revise them for mastery. Starting from an initial game, PlayCraft alternates between playing and crafting. In the playing stage, a player agent watches the game screen, uses the controls, and pursues the game objective over repeated episodes while retaining memory. After each episode, it reports its progress, outcomes, decisions, and reflections. In the crafting stage, a crafter agent uses these reports to revise the game. It estimates player abilities, predicts performance at different proficiency levels, and compares those predictions with a target learning progression. It diagnoses the game and addresses the gaps by giving players meaningful opportunities to improve through better decisions and execution. We evaluate games in fresh runs with player agents across three intelligence settings, measuring learning gain and learning slope. Compared with the init",
-      "signals": {
-        "cross_lists": 1,
-        "hf": {
-          "upvotes": 1,
-          "comments": 2,
-          "organization": null,
-          "organization_fullname": null,
-          "github_stars": 6,
-          "featured_on": "2026-11-20",
-          "url": "https://huggingface.co/papers/2611.26624"
-        },
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      },
-      "score": 3.302,
-      "score_components": {
-        "hf_upvotes": 2.079,
-        "code_stars": 0.973,
-        "cross_lists": 0.25
-      }
-    },
-    {
-      "arxiv_id": "2611.26211",
-      "version": "1",
-      "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
-      "authors": [
-        "Jiaming Li",
-        "Lingzhen Li",
-        "Xiaze Yang",
-        "Chenyu Zhu",
-        "Kaiqi Liu",
-        "Xiaotong Zhao",
-        "Songlian Li",
-        "Toyota Li",
-        "Alan Zhao",
-        "Haobin Zhong",
-        "Yue Ma",
-        "Zhiyuan Ma"
-      ],
-      "published": "2026-11-19T14:50:59Z",
-      "updated": "2026-11-19T14:50:59Z",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "abs_url": "https://arxiv.org/abs/2611.26211",
-      "comment": "",
-      "abstract": "Recently, video world models have advanced interactive generation, with large models offering higher quality and smaller models enabling faster inference. Existing speculative methods combine their strengths through fast draft generation and selective target regeneration guided by rewards on decoded frames. However, verification covers only the external scorer's evaluation dimensions and adds decoding and scoring costs. Moreover, these scores provide no correction, requiring costly target regeneration for rejected drafts. To address these limitations, we propose Speculative World Model (SpecWM), a unified, training-free inference framework for streaming world models. It verifies draft chunks using the target's latent velocity field. Verification also yields a reusable correction; two thresholds select Accept, Refine, or Reject. Specifically, one-step refinement reuses it to improve perceptual quality, while three-step refinement strengthens camera following and trajectory consistency. These findings motivate transition-aware refinement. On WBench Navigation, SpecWM improves visual quality at 1.63$\\times$ speedup over the target and raises NavScore from the draft's 75.99 to 85.63, a",
-      "signals": {
-        "cross_lists": 0,
-        "hf": {
-          "upvotes": 2,
-          "comments": 2,
-          "organization": "Huster",
-          "organization_fullname": "Huazhong University of Science and Technology",
-          "github_stars": 0,
-          "featured_on": "2026-11-20",
-          "url": "https://huggingface.co/papers/2611.26211"
-        },
-        "s2": {
-          "citations": 0,
-          "influential_citations": 0
-        }
-      },
-      "score": 3.296,
-      "score_components": {
-        "hf_upvotes": 3.296
       }
     },
     {
@@ -1505,7 +1506,7 @@
           "comments": 2,
           "organization": null,
           "organization_fullname": null,
-          "github_stars": 1,
+          "github_stars": 2,
           "featured_on": "2026-11-20",
           "url": "https://huggingface.co/papers/2611.25935"
         },
@@ -1514,10 +1515,10 @@
           "influential_citations": 0
         }
       },
-      "score": 2.426,
+      "score": 2.628,
       "score_components": {
         "hf_upvotes": 2.079,
-        "code_stars": 0.347
+        "code_stars": 0.549
       }
     },
     {

@@ -1,0 +1,440 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-11-22",
+  "title": "GitHub Trending Summary - Daily - 2026-11-22",
+  "source_report": "~/.research/github/daily/github-trending-summary-daily-2026-11-22.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-11-22 17:27 UTC",
+  "date_range": {
+    "start": "2026-11-22",
+    "end": "2026-11-22"
+  },
+  "ranking_basis": "GitHub Trending daily stars gained; supplied signal scores used to order the selected candidates, with REST verification of repository identity and current metadata.",
+  "ranking_explanation": "Selected the ten highest-scoring candidates in the supplied daily signals. Listed stars_gained are the matching GitHub Trending today-view values; signal scores include the period-gain component and observed days_trending_30d. Current total stars and default-branch commits were read from GitHub REST.",
+  "global_caveat": "star_snapshots source failed because GitHub CLI authentication is not configured; delta_1d, delta_7d and delta_30d are null, not zero. No prior-window comparison is supported. The configured web extractor could not extract pages; current READMEs were obtained from raw.githubusercontent.com.",
+  "themes": [
+    {
+      "id": "agent-skills-and-workflows",
+      "title": "Agent skills and workflows",
+      "content": "Reusable agent skills and structured workflows are represented by Claude-BugHunter, Superpowers, last30days-skill, app-store-compliance and Stitch Skills.",
+      "supporting_repository_ids": [
+        "01-elementalsouls-claude-bughunter",
+        "03-obra-superpowers",
+        "06-mvanhorn-last30days-skill",
+        "08-mjmirza-app-store-compliance",
+        "10-google-labs-code-stitch-skills"
+      ]
+    },
+    {
+      "id": "agent-tool-and-information-access",
+      "title": "Agent tool and information access",
+      "content": "Firecrawl provides web retrieval infrastructure, while CLI-Anything exposes external software through agent-oriented CLIs; last30days-skill applies multi-source retrieval to research synthesis.",
+      "supporting_repository_ids": [
+        "02-firecrawl-firecrawl",
+        "05-hkuds-cli-anything",
+        "06-mvanhorn-last30days-skill"
+      ]
+    },
+    {
+      "id": "workflow-applications",
+      "title": "Practical workflow applications",
+      "content": "AutoClip and Ghost-Downloader-3 represent media/creator and general download workflows; AFFiNE is a local-first knowledge and planning workspace.",
+      "supporting_repository_ids": [
+        "04-xiaoyouchr-ghost-downloader-3",
+        "07-zhouxiaoka-autoclip",
+        "09-toeverything-affine"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Snapshot time: 2026-11-22 17:27 UTC. Scope: Daily. Date range: 2026-11-22 through 2026-11-22. Ranking basis: GitHub Trending daily star gains, ranked using supplied signal scores as secondary momentum evidence; GitHub REST metadata corroborated."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Coding-agent infrastructure and practical agent skills dominate today’s list: Claude-BugHunter (+1,721; signal score 8.451), Firecrawl (+910; 7.815), and Superpowers (+785; 7.667) lead the supplied candidates. A second clear thread is turning ordinary software and media workflows into agent-usable tools, from CLI-Anything to Stitch Skills and AutoClip."
+    },
+    {
+      "id": "00-top-repositories",
+      "kind": "repo_index",
+      "title": "Top Repositories",
+      "content": "Ten repositories ranked by the supplied daily signal scores and corroborated with GitHub REST metadata and current default-branch READMEs."
+    },
+    {
+      "id": "01-elementalsouls-claude-bughunter",
+      "kind": "repo",
+      "title": "elementalsouls/Claude-BugHunter",
+      "rank": 1,
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars_gained": 1721,
+      "total_stars": 17278,
+      "signal_score": 8.451,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "9ba66b1b3a7d84c501202a527cdc22b2051c5711",
+      "why_notable": "Strongest supplied daily momentum signal; README describes a layered security workflow with auditable disclosed-report patterns, scope discipline and reporting. README says 83 skills versus 82 in the signal description.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Claude BugHunter",
+      "unique_caveat": "README currently says 83 skills, while signal description says 82; fast-moving project count.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/elementalsouls/Claude-BugHunter",
+        "https://raw.githubusercontent.com/elementalsouls/Claude-BugHunter/main/README.md",
+        "https://api.github.com/repos/elementalsouls/Claude-BugHunter",
+        "https://api.github.com/repos/elementalsouls/Claude-BugHunter/commits/main"
+      ]
+    },
+    {
+      "id": "02-firecrawl-firecrawl",
+      "kind": "repo",
+      "title": "firecrawl/firecrawl",
+      "rank": 2,
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "language": "TypeScript",
+      "stars_gained": 910,
+      "total_stars": 206778,
+      "signal_score": 7.815,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "3487d929360fa3544a18b2cdd92615f4d24ba1a3",
+      "why_notable": "Second-highest supplied signal; README spans local MCP/web extraction, self-hosting and hosted search/data access.",
+      "theme_ids": [
+        "agent-tool-and-information-access"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Firecrawl",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/firecrawl/firecrawl",
+        "https://raw.githubusercontent.com/firecrawl/firecrawl/main/README.md",
+        "https://api.github.com/repos/firecrawl/firecrawl",
+        "https://api.github.com/repos/firecrawl/firecrawl/commits/main"
+      ]
+    },
+    {
+      "id": "03-obra-superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 3,
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars_gained": 785,
+      "total_stars": 323983,
+      "signal_score": 7.667,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "why_notable": "Third-highest supplied signal; README details spec, design, implementation planning, TDD and subagent execution across agent harnesses.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Superpowers",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/obra/superpowers",
+        "https://raw.githubusercontent.com/obra/superpowers/main/README.md",
+        "https://api.github.com/repos/obra/superpowers",
+        "https://api.github.com/repos/obra/superpowers/commits/main"
+      ]
+    },
+    {
+      "id": "04-xiaoyouchr-ghost-downloader-3",
+      "kind": "repo",
+      "title": "XiaoYouChR/Ghost-Downloader-3",
+      "rank": 4,
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "language": "Python",
+      "stars_gained": 690,
+      "total_stars": 14960,
+      "signal_score": 7.538,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "4f57c5aa98934c66b450a44b0b23edcf5a27daec",
+      "why_notable": "Fourth-highest supplied signal and a consumer-software counterpoint; README lists support for multiple file-transfer and streaming protocols in one desktop app.",
+      "theme_ids": [
+        "workflow-applications"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Ghost Downloader 3",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+        "https://raw.githubusercontent.com/XiaoYouChR/Ghost-Downloader-3/main/README.md",
+        "https://api.github.com/repos/XiaoYouChR/Ghost-Downloader-3",
+        "https://api.github.com/repos/XiaoYouChR/Ghost-Downloader-3/commits/main"
+      ]
+    },
+    {
+      "id": "05-hkuds-cli-anything",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "rank": 5,
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars_gained": 687,
+      "total_stars": 62610,
+      "signal_score": 7.534,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+      "why_notable": "Fifth-highest supplied signal; README describes generated agent-friendly CLI harnesses and a community hub to install/manage them.",
+      "theme_ids": [
+        "agent-tool-and-information-access"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "CLI-Anything",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/HKUDS/CLI-Anything",
+        "https://raw.githubusercontent.com/HKUDS/CLI-Anything/main/README.md",
+        "https://api.github.com/repos/HKUDS/CLI-Anything",
+        "https://api.github.com/repos/HKUDS/CLI-Anything/commits/main"
+      ]
+    },
+    {
+      "id": "06-mvanhorn-last30days-skill",
+      "kind": "repo",
+      "title": "mvanhorn/last30days-skill",
+      "rank": 6,
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars_gained": 673,
+      "total_stars": 72556,
+      "signal_score": 7.513,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "64b1f006f800640022ce07f51de5ce56aad34b76",
+      "why_notable": "High daily signal; README presents an installable multi-source research skill with engagement-weighted synthesis and broad agent-host compatibility.",
+      "theme_ids": [
+        "agent-skills-and-workflows",
+        "agent-tool-and-information-access"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 6,
+      "spoken_name": "/last30days",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/mvanhorn/last30days-skill",
+        "https://raw.githubusercontent.com/mvanhorn/last30days-skill/main/README.md",
+        "https://api.github.com/repos/mvanhorn/last30days-skill",
+        "https://api.github.com/repos/mvanhorn/last30days-skill/commits/main"
+      ]
+    },
+    {
+      "id": "07-zhouxiaoka-autoclip",
+      "kind": "repo",
+      "title": "zhouxiaoka/autoclip",
+      "rank": 7,
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "language": "Python",
+      "stars_gained": 640,
+      "total_stars": 13301,
+      "signal_score": 7.463,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "cd8e6bed18d87a81273d48bcd165751708ac715c",
+      "why_notable": "High daily signal; README describes link-to-short-video production with editable output, plus desktop, CLI and MCP-facing workflows.",
+      "theme_ids": [
+        "workflow-applications"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 7,
+      "spoken_name": "AutoClip",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/zhouxiaoka/autoclip",
+        "https://raw.githubusercontent.com/zhouxiaoka/autoclip/main/README.md",
+        "https://api.github.com/repos/zhouxiaoka/autoclip",
+        "https://api.github.com/repos/zhouxiaoka/autoclip/commits/main"
+      ]
+    },
+    {
+      "id": "08-mjmirza-app-store-compliance",
+      "kind": "repo",
+      "title": "mjmirza/app-store-compliance",
+      "rank": 8,
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "language": "Shell",
+      "stars_gained": 617,
+      "total_stars": 3816,
+      "signal_score": 7.426,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "ad76746e6304a7f623ecd50dbf9da91117a7d6f7",
+      "why_notable": "High daily signal; README turns review policies into checks/playbooks and explicitly says automated scanning cannot guarantee approval.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 8,
+      "spoken_name": "App Store Compliance Playbook",
+      "unique_caveat": "README explicitly cautions that automated scans cannot guarantee App Store or Play approval.",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/mjmirza/app-store-compliance",
+        "https://raw.githubusercontent.com/mjmirza/app-store-compliance/main/README.md",
+        "https://api.github.com/repos/mjmirza/app-store-compliance",
+        "https://api.github.com/repos/mjmirza/app-store-compliance/commits/main"
+      ]
+    },
+    {
+      "id": "09-toeverything-affine",
+      "kind": "repo",
+      "title": "toeverything/AFFiNE",
+      "rank": 9,
+      "url": "https://github.com/toeverything/AFFiNE",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+      "language": "TypeScript",
+      "stars_gained": 537,
+      "total_stars": 76671,
+      "signal_score": 7.288,
+      "days_trending_30d": 2,
+      "default_branch": "canary",
+      "default_branch_commit": "577ae12b51a9d617c7e82b7265baf7eaf67dd21c",
+      "why_notable": "High daily signal; README describes a local-first workspace merging docs, whiteboards and planning.",
+      "theme_ids": [
+        "workflow-applications"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 9,
+      "spoken_name": "AFFiNE",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/toeverything/AFFiNE",
+        "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/README.md",
+        "https://api.github.com/repos/toeverything/AFFiNE",
+        "https://api.github.com/repos/toeverything/AFFiNE/commits/canary"
+      ]
+    },
+    {
+      "id": "10-google-labs-code-stitch-skills",
+      "kind": "repo",
+      "title": "google-labs-code/stitch-skills",
+      "rank": 10,
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars_gained": 516,
+      "total_stars": 11818,
+      "signal_score": 7.248,
+      "days_trending_30d": 2,
+      "default_branch": "main",
+      "default_branch_commit": "62fdcd679747aca0792e5dd6591b10ddfad56825",
+      "why_notable": "High daily signal; README packages design/build skills and plugins using the Agent Skills open standard across coding agents.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 10,
+      "spoken_name": "Stitch Design Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "https://github.com/google-labs-code/stitch-skills",
+        "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/README.md",
+        "https://api.github.com/repos/google-labs-code/stitch-skills",
+        "https://api.github.com/repos/google-labs-code/stitch-skills/commits/main"
+      ]
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- Coding-agent skills/process: Claude-BugHunter, Superpowers, last30days-skill, Stitch Skills and app-store-compliance.\n- Agent tool/data access: Firecrawl and CLI-Anything; last30days-skill combines multiple sources.\n- Applied workflow tools: AutoClip, Ghost-Downloader-3 and AFFiNE.\n- Selected-list languages: Python 5, TypeScript 3, Shell 2.",
+      "themes": [
+        {
+          "id": "agent-skills-and-workflows",
+          "title": "Agent skills and workflows",
+          "content": "Reusable agent skills and structured workflows are represented by Claude-BugHunter, Superpowers, last30days-skill, app-store-compliance and Stitch Skills.",
+          "supporting_repository_ids": [
+            "01-elementalsouls-claude-bughunter",
+            "03-obra-superpowers",
+            "06-mvanhorn-last30days-skill",
+            "08-mjmirza-app-store-compliance",
+            "10-google-labs-code-stitch-skills"
+          ]
+        },
+        {
+          "id": "agent-tool-and-information-access",
+          "title": "Agent tool and information access",
+          "content": "Firecrawl provides web retrieval infrastructure, while CLI-Anything exposes external software through agent-oriented CLIs; last30days-skill applies multi-source retrieval to research synthesis.",
+          "supporting_repository_ids": [
+            "02-firecrawl-firecrawl",
+            "05-hkuds-cli-anything",
+            "06-mvanhorn-last30days-skill"
+          ]
+        },
+        {
+          "id": "workflow-applications",
+          "title": "Practical workflow applications",
+          "content": "AutoClip and Ghost-Downloader-3 represent media/creator and general download workflows; AFFiNE is a local-first knowledge and planning workspace.",
+          "supporting_repository_ids": [
+            "04-xiaoyouchr-ghost-downloader-3",
+            "07-zhouxiaoka-autoclip",
+            "09-toeverything-affine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "Today’s attention is concentrated on reusable agent capabilities: security workflows, software-development methods, web retrieval, and interfaces that let agents operate external applications. The list also includes downloading, creator tooling and a local-first workspace. Historical star-snapshot deltas were unavailable, so this is a one-day momentum snapshot, not evidence of a sustained multi-week shift."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "Primary signal: GitHub Trending daily and supplied signals JSON. Every selected repository was checked via GitHub REST repository metadata, the default-branch commit endpoint and its current default-branch README on raw.githubusercontent.com. Daily gains and scores come from the supplied signals file. Historical snapshot deltas are unavailable because the collector could not authenticate gh; the configured web extractor also could not extract pages, so repository READMEs were fetched from GitHub raw content."
+    }
+  ],
+  "sources": {
+    "trending": "https://github.com/trending?since=daily",
+    "signals_file": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-22.signals.json",
+    "verification": "GitHub REST repository and default-branch commit endpoints; raw.githubusercontent.com README paths."
+  }
+}

@@ -1,0 +1,671 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-11-22",
+  "title": "GitHub Trending Summary - Weekly - 2026-11-22",
+  "source_report": "/home/yizhuan/.research/github/weekly/github-trending-summary-weekly-2026-11-22.md",
+  "entry_count": 13,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-11-22T02:34:17Z",
+  "date_range": {
+    "start": "2026-11-16",
+    "end": "2026-11-22",
+    "inclusive": true
+  },
+  "ranking_basis": "Deterministic candidate score; matching weekly Trending star gains are the primary observable signal.",
+  "ranking_explanation": "Descending signal score. Supplied score_components expose period_gain plus the weighted days_trending_30d contribution; exact scores/components are preserved per repo. All star-snapshot deltas are null.",
+  "global_caveat": "Star snapshots failed because gh authentication was unavailable. delta_1d, delta_7d and delta_30d are null, not zero. No notable-shifts section is included. Current GitHub Trending totals were rechecked and can vary by one star from the earlier signal capture.",
+  "themes": [
+    {
+      "id": "agent-workflows",
+      "title": "Agent workflow, orchestration and feedback",
+      "supporting_repository_ids": [
+        "01-dream-num-univer",
+        "02-GoogleChrome-modern-web-guidance-src",
+        "03-mvanhorn-last30days-skill",
+        "04-alibaba-open-code-review",
+        "06-ag-ui-protocol-ag-ui",
+        "08-backnotprop-plannotator",
+        "10-ChromeDevTools-chrome-devtools-mcp"
+      ],
+      "summary": "High-scoring projects connect agents to work surfaces: browser control (Chrome DevTools MCP), app protocols (AG-UI), plan/artifact review (Plannotator), web guidance (Modern Web Guidance), hybrid code review (OpenCodeReview) and office capabilities (Univer)."
+    },
+    {
+      "id": "agent-skills",
+      "title": "Portable, task-specific agent skills",
+      "supporting_repository_ids": [
+        "03-mvanhorn-last30days-skill",
+        "07-kajisho5-ffmpeg-skill",
+        "09-tradermonty-claude-trading-skills",
+        "11-google-labs-code-stitch-skills"
+      ],
+      "summary": "Skills package specialist capabilities for research (Last 30 Days), local video editing (FFmpeg Skill), trading workflows (Claude Trading Skills) and design/build tooling (Stitch Skills)."
+    },
+    {
+      "id": "agent-ready-products",
+      "title": "Agent-ready product surfaces and design systems",
+      "supporting_repository_ids": [
+        "01-dream-num-univer",
+        "05-meta-astryx"
+      ],
+      "summary": "Univer and Meta Astryx bring agent readiness into reusable office and interface foundations, not just standalone chat or coding agents."
+    },
+    {
+      "id": "developer-tools",
+      "title": "Developer tooling around agents",
+      "supporting_repository_ids": [
+        "04-alibaba-open-code-review",
+        "06-ag-ui-protocol-ag-ui",
+        "08-backnotprop-plannotator",
+        "10-ChromeDevTools-chrome-devtools-mcp"
+      ],
+      "summary": "OpenCodeReview, AG-UI, Plannotator and Chrome DevTools MCP focus on review, app integration, feedback and observability around agent-driven development."
+    },
+    {
+      "id": "domain-applications",
+      "title": "Non-agent and domain-specific applications",
+      "supporting_repository_ids": [
+        "09-tradermonty-claude-trading-skills",
+        "12-we-promise-sure",
+        "13-pookjw-HermesEnabler"
+      ],
+      "summary": "Sure and HermesEnabler are counterpoints: a personal-finance application and Apple Watch utility drew attention alongside agent tooling; Claude Trading Skills adds a specialist workflow."
+    },
+    {
+      "id": "web-development",
+      "title": "Modern web platform practice",
+      "supporting_repository_ids": [
+        "02-GoogleChrome-modern-web-guidance-src"
+      ],
+      "summary": "Modern Web Guidance distributes current browser/platform practices to coding agents and includes authoring and evaluation infrastructure."
+    },
+    {
+      "id": "design-systems",
+      "title": "Design systems and design-to-code workflows",
+      "supporting_repository_ids": [
+        "05-meta-astryx",
+        "11-google-labs-code-stitch-skills"
+      ],
+      "summary": "Meta Astryx contributes a React design system, while Stitch Skills packages design and build tasks for compatible agents."
+    }
+  ],
+  "sources": {
+    "primary": "https://github.com/trending?since=weekly",
+    "signal_file": "/home/yizhuan/.research/github/weekly/github-trending-summary-weekly-2026-11-22.signals.json",
+    "corroboration": "GitHub REST API repository metadata, README and default-branch commit endpoints; HTTP 200 for all 13.",
+    "snapshot_deltas": "Unavailable; star_snapshots source returned gh authentication error."
+  },
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": "Weekly GitHub Trending snapshot for 2026-11-16 through 2026-11-22 inclusive. Signal file generated at 2026-11-22 02:34:17 UTC; primary Trending page and repository metadata rechecked at approximately 02:35 UTC."
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent-oriented development dominates this week: the highest-scoring candidates span an embeddable AI office, web guidance, research skills and hybrid code review. The signal is broader than coding agents alone, with design systems, local media tooling and personal/consumer applications also represented."
+    },
+    {
+      "id": "01-dream-num-univer",
+      "kind": "repo",
+      "title": "dream-num/univer",
+      "rank": 12,
+      "url": "https://github.com/dream-num/univer",
+      "description": "An embeddable office SDK for adding spreadsheet, document, collaboration and file-processing experiences to applications and agents.",
+      "language": "TypeScript",
+      "stars_gained": 7240,
+      "total_stars": 31108,
+      "default_branch": "dev",
+      "default_branch_commit": "ac29fd8aaa3ce43cd1f672e75a596da22c132616",
+      "why_notable": "The strongest momentum signal here: +7,240 weekly stars and score 9.888. Its README positions it as an embeddable AI-office SDK, not just a standalone editor.",
+      "theme_ids": [
+        "agent-ready-products",
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Univer",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "dream-num/univer"
+      ],
+      "signal_score": 9.888,
+      "score_components": {
+        "period_gain": 8.888,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "02-GoogleChrome-modern-web-guidance-src",
+      "kind": "repo",
+      "title": "GoogleChrome/modern-web-guidance-src",
+      "rank": 3,
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Source for a cross-browser project that packages current web-platform expertise and compatibility guidance for coding agents.",
+      "language": "TypeScript",
+      "stars_gained": 4400,
+      "total_stars": 9918,
+      "default_branch": "main",
+      "default_branch_commit": "634d0f83bb41092832797411d148350196b8258d",
+      "why_notable": "+4,400 weekly stars and score 9.390; README describes a source-and-evaluation workflow stewarded with Chrome, Edge, Firefox and MDN contributors.",
+      "theme_ids": [
+        "agent-workflows",
+        "web-development"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "Modern Web Guidance",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "GoogleChrome/modern-web-guidance-src"
+      ],
+      "signal_score": 9.39,
+      "score_components": {
+        "period_gain": 8.39,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "03-mvanhorn-last30days-skill",
+      "kind": "repo",
+      "title": "mvanhorn/last30days-skill",
+      "rank": 5,
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "An agent research skill that searches recent discussion across social, video, forum and web sources, then synthesizes evidence.",
+      "language": "Python",
+      "stars_gained": 4198,
+      "total_stars": 72045,
+      "default_branch": "main",
+      "default_branch_commit": "e63f8e8732f1b934449b363f211b3654531b8ef2",
+      "why_notable": "+4,198 weekly stars and score 9.343. README says it scores signals from people and activity rather than editorial selection.",
+      "theme_ids": [
+        "agent-workflows",
+        "research-skills"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Last 30 Days",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mvanhorn/last30days-skill"
+      ],
+      "signal_score": 9.343,
+      "score_components": {
+        "period_gain": 8.343,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "04-alibaba-open-code-review",
+      "kind": "repo",
+      "title": "alibaba/open-code-review",
+      "rank": 4,
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "A code-review tool combining deterministic checks and LLM-assisted review, with line-level feedback and multi-language security rules.",
+      "language": "Go",
+      "stars_gained": 4032,
+      "total_stars": 55132,
+      "default_branch": "main",
+      "default_branch_commit": "39515dca6161fb7fd176d87704b2b10e5f7a0c36",
+      "why_notable": "+4,032 weekly stars and score 9.302; a concrete example of hybrid rule-based and agentic code review.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "OpenCodeReview",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "alibaba/open-code-review"
+      ],
+      "signal_score": 9.302,
+      "score_components": {
+        "period_gain": 8.302,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "05-meta-astryx",
+      "kind": "repo",
+      "title": "meta/astryx",
+      "rank": 9,
+      "url": "https://github.com/meta/astryx",
+      "description": "A customizable React design system with accessible components, built for product teams and AI-assisted development.",
+      "language": "TypeScript",
+      "stars_gained": 3967,
+      "total_stars": 31837,
+      "default_branch": "main",
+      "default_branch_commit": "170df15951e0c4c5d4840f727540c68ecd280e0e",
+      "why_notable": "+3,967 weekly stars and score 9.286. README highlights React 19+, StyleX, a component library, Storybook and sandbox; project is marked beta.",
+      "theme_ids": [
+        "agent-ready-products",
+        "design-systems"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "Astryx",
+      "unique_caveat": "Beta project, as stated in the current README.",
+      "enrichment": null,
+      "refs": [
+        "meta/astryx"
+      ],
+      "signal_score": 9.286,
+      "score_components": {
+        "period_gain": 8.286,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "06-ag-ui-protocol-ag-ui",
+      "kind": "repo",
+      "title": "ag-ui-protocol/ag-ui",
+      "rank": 8,
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "An open, event-based protocol for connecting AI agents to user-facing applications.",
+      "language": "TypeScript",
+      "stars_gained": 3792,
+      "total_stars": 21034,
+      "default_branch": "main",
+      "default_branch_commit": "c31e1e819e3a3c3b4af14add04f5b9a9a0208cae",
+      "why_notable": "+3,792 weekly stars and score 9.241; its protocol framing addresses the mismatch between agent interactions and ordinary request-response app patterns.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "AG-UI",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "ag-ui-protocol/ag-ui"
+      ],
+      "signal_score": 9.241,
+      "score_components": {
+        "period_gain": 8.241,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "07-kajisho5-ffmpeg-skill",
+      "kind": "repo",
+      "title": "kajisho5/ffmpeg-skill",
+      "rank": 13,
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "description": "A local video-editing toolkit for coding agents, exposing FFmpeg operations through skills and an MCP server.",
+      "language": "Python",
+      "stars_gained": 3598,
+      "total_stars": 9316,
+      "default_branch": "main",
+      "default_branch_commit": "39b9143ded1bae97f458fbeeec510359fb365d94",
+      "why_notable": "+3,598 weekly stars and score 9.188. README emphasizes a machine-usable interface, local processing and no cloud/API-key dependency.",
+      "theme_ids": [
+        "agent-skills",
+        "local-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "FFmpeg Skill",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "kajisho5/ffmpeg-skill"
+      ],
+      "signal_score": 9.188,
+      "score_components": {
+        "period_gain": 8.188,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "08-backnotprop-plannotator",
+      "kind": "repo",
+      "title": "backnotprop/plannotator",
+      "rank": 1,
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "A review workspace for annotating agent plans, specs and artifacts, then returning feedback to coding agents.",
+      "language": "TypeScript",
+      "stars_gained": 3396,
+      "total_stars": 14185,
+      "default_branch": "main",
+      "default_branch_commit": "7ac7ef1cf9088da128faf3d38746c3cb68eedde6",
+      "why_notable": "+3,396 weekly stars and score 9.131; README spans plan annotation, artifact review and code/PR feedback across multiple agent clients.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "Plannotator",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "backnotprop/plannotator"
+      ],
+      "signal_score": 9.131,
+      "score_components": {
+        "period_gain": 8.131,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "09-tradermonty-claude-trading-skills",
+      "kind": "repo",
+      "title": "tradermonty/claude-trading-skills",
+      "rank": 7,
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "A skills-based workflow toolkit for market review, trade planning, journaling and risk management.",
+      "language": "Python",
+      "stars_gained": 3113,
+      "total_stars": 7639,
+      "default_branch": "main",
+      "default_branch_commit": "917a9a6fa0784164728021ff93d862fc34367b56",
+      "why_notable": "+3,113 weekly stars and score 9.044. README frames it as decision-process support, not a signal service or promise of profitability.",
+      "theme_ids": [
+        "agent-skills",
+        "domain-applications"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 9,
+      "spoken_name": "Claude Trading Skills",
+      "unique_caveat": "The project presents itself as workflow support, not investment advice or a trading signal.",
+      "enrichment": null,
+      "refs": [
+        "tradermonty/claude-trading-skills"
+      ],
+      "signal_score": 9.044,
+      "score_components": {
+        "period_gain": 8.044,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "10-ChromeDevTools-chrome-devtools-mcp",
+      "kind": "repo",
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "rank": 6,
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "An MCP server and CLI that let coding agents inspect and control Chrome for automation, debugging and performance analysis.",
+      "language": "TypeScript",
+      "stars_gained": 2795,
+      "total_stars": 58704,
+      "default_branch": "main",
+      "default_branch_commit": "ab911a6dd71ed4960c1c679f831c7b5607bc5505",
+      "why_notable": "+2,795 weekly stars and score 8.936; brings browser instrumentation and DevTools workflows directly into agent toolchains.",
+      "theme_ids": [
+        "agent-workflows",
+        "developer-tools"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 10,
+      "spoken_name": "Chrome DevTools MCP",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "ChromeDevTools/chrome-devtools-mcp"
+      ],
+      "signal_score": 8.936,
+      "score_components": {
+        "period_gain": 7.936,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "11-google-labs-code-stitch-skills",
+      "kind": "repo",
+      "title": "google-labs-code/stitch-skills",
+      "rank": 2,
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A collection of skills and plugins for Google Stitch, designed for multiple coding agents and the Agent Skills standard.",
+      "language": "TypeScript",
+      "stars_gained": 2431,
+      "total_stars": 11477,
+      "default_branch": "main",
+      "default_branch_commit": "62fdcd679747aca0792e5dd6591b10ddfad56825",
+      "why_notable": "+2,431 weekly stars and score 8.796. It packages design/build workflows as portable agent skills and plugins.",
+      "theme_ids": [
+        "agent-skills",
+        "design-systems"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 11,
+      "spoken_name": "Stitch Design Skills",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "google-labs-code/stitch-skills"
+      ],
+      "signal_score": 8.796,
+      "score_components": {
+        "period_gain": 7.796,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "12-we-promise-sure",
+      "kind": "repo",
+      "title": "we-promise/sure",
+      "rank": 11,
+      "url": "https://github.com/we-promise/sure",
+      "description": "An open-source personal-finance application for tracking budgets, spending, cash flow and net worth.",
+      "language": "Ruby",
+      "stars_gained": 2041,
+      "total_stars": 17165,
+      "default_branch": "main",
+      "default_branch_commit": "9e419e7be8f0271f23fed44d6066131362167b8f",
+      "why_notable": "+2,041 weekly stars and score 8.622; a non-agent application in an otherwise agent-heavy list, showing the trend is not exclusively agent infrastructure.",
+      "theme_ids": [
+        "domain-applications"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 12,
+      "spoken_name": "Sure",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "we-promise/sure"
+      ],
+      "signal_score": 8.622,
+      "score_components": {
+        "period_gain": 7.622,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "13-pookjw-HermesEnabler",
+      "kind": "repo",
+      "title": "pookjw/HermesEnabler",
+      "rank": 10,
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "description": "A watchOS utility for enabling Hermès watch faces on supported Apple Watch software versions.",
+      "language": "Objective-C",
+      "stars_gained": 524,
+      "total_stars": 2357,
+      "default_branch": "main",
+      "default_branch_commit": "f428f91d7270f53f738429a17fb6a5d51f924284",
+      "why_notable": "+524 weekly stars and score 7.263. A smaller consumer-device utility counterpoint; compatibility is version-bound.",
+      "theme_ids": [
+        "domain-applications"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "rich",
+      "narration_priority": 13,
+      "spoken_name": "HermesEnabler",
+      "unique_caveat": "Supported watchOS versions are limited; check the README before relying on device compatibility.",
+      "enrichment": null,
+      "refs": [
+        "pookjw/HermesEnabler"
+      ],
+      "signal_score": 7.263,
+      "score_components": {
+        "period_gain": 6.263,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "snapshot_delta_1d": null,
+      "snapshot_delta_7d": null,
+      "snapshot_delta_30d": null
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- Agent workflow, orchestration and feedback: High-scoring projects connect agents to work surfaces: browser control (Chrome DevTools MCP), app protocols (AG-UI), plan/artifact review (Plannotator), web guidance (Modern Web Guidance), hybrid code review (OpenCodeReview) and office capabilities (Univer).\n- Portable, task-specific agent skills: Skills package specialist capabilities for research (Last 30 Days), local video editing (FFmpeg Skill), trading workflows (Claude Trading Skills) and design/build tooling (Stitch Skills).\n- Agent-ready product surfaces and design systems: Univer and Meta Astryx bring agent readiness into reusable office and interface foundations, not just standalone chat or coding agents.\n- Developer tooling around agents: OpenCodeReview, AG-UI, Plannotator and Chrome DevTools MCP focus on review, app integration, feedback and observability around agent-driven development.\n- Non-agent and domain-specific applications: Sure and HermesEnabler are counterpoints: a personal-finance application and Apple Watch utility drew attention alongside agent tooling; Claude Trading Skills adds a specialist workflow.\n- Modern web platform practice: Modern Web Guidance distributes current browser/platform practices to coding agents and includes authoring and evaluation infrastructure.\n- Design systems and design-to-code workflows: Meta Astryx contributes a React design system, while Stitch Skills packages design and build tasks for compatible agents.\n- Languages: TypeScript 7; Python 3; Go 1; Ruby 1; Objective-C 1.",
+      "themes": [
+        {
+          "id": "agent-workflows",
+          "title": "Agent workflow, orchestration and feedback",
+          "supporting_repository_ids": [
+            "01-dream-num-univer",
+            "02-GoogleChrome-modern-web-guidance-src",
+            "03-mvanhorn-last30days-skill",
+            "04-alibaba-open-code-review",
+            "06-ag-ui-protocol-ag-ui",
+            "08-backnotprop-plannotator",
+            "10-ChromeDevTools-chrome-devtools-mcp"
+          ],
+          "summary": "High-scoring projects connect agents to work surfaces: browser control (Chrome DevTools MCP), app protocols (AG-UI), plan/artifact review (Plannotator), web guidance (Modern Web Guidance), hybrid code review (OpenCodeReview) and office capabilities (Univer)."
+        },
+        {
+          "id": "agent-skills",
+          "title": "Portable, task-specific agent skills",
+          "supporting_repository_ids": [
+            "03-mvanhorn-last30days-skill",
+            "07-kajisho5-ffmpeg-skill",
+            "09-tradermonty-claude-trading-skills",
+            "11-google-labs-code-stitch-skills"
+          ],
+          "summary": "Skills package specialist capabilities for research (Last 30 Days), local video editing (FFmpeg Skill), trading workflows (Claude Trading Skills) and design/build tooling (Stitch Skills)."
+        },
+        {
+          "id": "agent-ready-products",
+          "title": "Agent-ready product surfaces and design systems",
+          "supporting_repository_ids": [
+            "01-dream-num-univer",
+            "05-meta-astryx"
+          ],
+          "summary": "Univer and Meta Astryx bring agent readiness into reusable office and interface foundations, not just standalone chat or coding agents."
+        },
+        {
+          "id": "developer-tools",
+          "title": "Developer tooling around agents",
+          "supporting_repository_ids": [
+            "04-alibaba-open-code-review",
+            "06-ag-ui-protocol-ag-ui",
+            "08-backnotprop-plannotator",
+            "10-ChromeDevTools-chrome-devtools-mcp"
+          ],
+          "summary": "OpenCodeReview, AG-UI, Plannotator and Chrome DevTools MCP focus on review, app integration, feedback and observability around agent-driven development."
+        },
+        {
+          "id": "domain-applications",
+          "title": "Non-agent and domain-specific applications",
+          "supporting_repository_ids": [
+            "09-tradermonty-claude-trading-skills",
+            "12-we-promise-sure",
+            "13-pookjw-HermesEnabler"
+          ],
+          "summary": "Sure and HermesEnabler are counterpoints: a personal-finance application and Apple Watch utility drew attention alongside agent tooling; Claude Trading Skills adds a specialist workflow."
+        },
+        {
+          "id": "web-development",
+          "title": "Modern web platform practice",
+          "supporting_repository_ids": [
+            "02-GoogleChrome-modern-web-guidance-src"
+          ],
+          "summary": "Modern Web Guidance distributes current browser/platform practices to coding agents and includes authoring and evaluation infrastructure."
+        },
+        {
+          "id": "design-systems",
+          "title": "Design systems and design-to-code workflows",
+          "supporting_repository_ids": [
+            "05-meta-astryx",
+            "11-google-labs-code-stitch-skills"
+          ],
+          "summary": "Meta Astryx contributes a React design system, while Stitch Skills packages design and build tasks for compatible agents."
+        }
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The strongest common pattern is agents moving from text generation into usable workflows: browser control, review loops, application protocols, office surfaces and portable task skills. TypeScript leads this candidate set (7 of 13), while Python-backed skills and domain applications show that the trend is not confined to one stack. Scores rank attention in this snapshot, not project quality or long-term adoption."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "Primary source: GitHub Trending weekly view (https://github.com/trending?since=weekly), checked 2026-11-22; all 13 signal candidates were present and their weekly gains matched the supplied signals. Corroboration: GitHub REST repository, README and default-branch commit endpoints for all 13 repositories. The candidate signal file ranks by deterministic score; the report orders by score, whose components include period gain and 30-day trending days. All delta_1d, delta_7d and delta_30d values are null because daily star-snapshot collection failed (GitHub CLI authentication unavailable); null is not zero, and no prior-window comparison is claimed. Current weekly page totals were used; a few differ by one star from the earlier signal capture. No source page was unavailable."
+    }
+  ]
+}

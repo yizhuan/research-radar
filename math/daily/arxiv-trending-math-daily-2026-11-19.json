@@ -10,14 +10,14 @@
     "announcement_batch_date": "2026-11-19",
     "announcement_utc": "2026-11-20T01:00:00Z",
     "uses_prior_batch": true,
-    "snapshot_utc": "2026-11-21T21:16:41Z"
+    "snapshot_utc": "2026-11-22T17:14:35Z"
   },
   "date": "2026-11-19",
   "title": "arXiv Mathematics daily notable papers — 19 November 2026",
   "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-19.md",
   "entry_count": 10,
   "entry_noun": "papers",
-  "global_caveat": "arXiv supplies no official trending chart. This is an inferred notable-paper ordering, not a readership ranking; attention evidence is sparse for papers this recent, and the order is not comprehensive.",
+  "global_caveat": "arXiv supplies no official trending chart. This is an inferred ordering from sparse attention signals, not a readership ranking; recent citation totals are current snapshots, not gains during the window, and candidate coverage is not exhaustive.",
   "sections": [
     {
       "id": "paper-2611.26144v1",
@@ -39,11 +39,11 @@
       "themes": [
         "Geometry & topology"
       ],
-      "abstract": "The authors claim that torsion-free $G_{2}$-structures are dynamically stable under Laplacian flow for closed initial structures in a $C^{0}$ neighbourhood.",
-      "claimed_result": "The authors prove that, on a compact 7-manifold, closed $G_{2}$-structures sufficiently close in $C^{0}$ to a torsion-free structure flow for all time and converge smoothly to its identity-component diffeomorphism orbit.",
-      "assumptions_and_setting": "A compact 7-manifold, a torsion-free reference $G_{2}$-structure, and a closed initial $G_{2}$-structure in the same cohomology class and sufficiently close in $C^{0}$.",
-      "unique_caveat": "The theorem has the compact-manifold and fixed-cohomology-class hypotheses above; this report has not independently checked the proof.",
-      "evidence_for_ranking": "Collector score 4.277 (citation component 3.584; influential-citation component 0.693). The supplied Semantic Scholar snapshot records 5 total citations and 1 influential citation; no mathematical cross-listing. These are current totals, not gains during this window.",
+      "abstract": "The authors claim that torsion-free $G_{2}$ structures are dynamically stable under Laplacian flow for closed initial structures in a $C^{0}$ neighbourhood.",
+      "claimed_result": "The authors prove that on a compact 7-manifold, closed $G_{2}$ structures sufficiently close in $C^{0}$ to a torsion-free structure flow for all time and converge smoothly to its identity-component diffeomorphism orbit.",
+      "assumptions_and_setting": "A compact 7-manifold, a torsion-free reference structure, and a sufficiently $C^{0}$-close closed initial structure in the reference cohomology class.",
+      "unique_caveat": "The stability statement depends on compactness, the reference torsion-free structure, and the stated neighbourhood and cohomology-class hypotheses.",
+      "evidence_for_ranking": "Collector score 4.277 (citation component 3.584; influential-citation component 0.693); Semantic Scholar snapshot: 5 citations, 1 influential citations; 0 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -66,7 +66,7 @@
     {
       "id": "paper-2611.25875v1",
       "kind": "paper",
-      "title": "Ordering Is Not Deciding: Towards Preference-Consistent Multi-Objective Design–Decision Optimisation",
+      "title": "Ordering Is Not Deciding: Towards Preference-Consistent Multi-Objective Design--Decision Optimisation",
       "rank": 2,
       "url": "https://arxiv.org/abs/2611.25875",
       "arxiv_id": "2611.25875",
@@ -78,16 +78,16 @@
       ],
       "authors": [
         "E. Özer",
-        "A.R.M. Wolfert"
+        "A. R. M. Wolfert"
       ],
       "themes": [
         "Optimization & control"
       ],
-      "abstract": "The authors construct multi-objective examples showing that Pareto filtering can discard the solution with the highest aggregated actor preference, while their IMAP method retains it.",
-      "claimed_result": "Across constructed design-decision problems, the authors show that Pareto optimality does not guarantee preference-consistent choice; IMAP can identify a best-fit solution that Pareto filtering removes.",
-      "assumptions_and_setting": "Constructed problems with two system performances, up to four preference functions from up to two actors, and both independent/interdependent and monotone/non-monotone preference relationships.",
-      "unique_caveat": "The comparison is demonstrated on deliberately simplified constructed cases; it does not establish comparative performance on real-world decision problems.",
-      "evidence_for_ranking": "Collector score 2.890 (citation component 2.197; influential-citation component 0.693). The supplied Semantic Scholar snapshot records 2 total citations and 1 influential citation; no mathematical cross-listing. These are current totals, not gains during this window.",
+      "abstract": "Constructed examples show that Pareto filtering can discard the solution with the highest aggregated actor preference, while the proposed IMAP method identifies it.",
+      "claimed_result": "Across constructed design-decision problems, the authors show Pareto optimality does not guarantee preference-consistent choice; IMAP can identify a best-fit solution that Pareto filtering removes.",
+      "assumptions_and_setting": "Examples use two system performances, up to four preference functions from up to two actors, and independent or interdependent performance relations with monotone or non-monotone preferences.",
+      "unique_caveat": "The comparison uses deliberately simplified constructed cases and does not establish comparative performance on real-world decision problems.",
+      "evidence_for_ranking": "Collector score 2.890 (citation component 2.197; influential-citation component 0.693); Semantic Scholar snapshot: 2 citations, 1 influential citations; 0 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -127,11 +127,11 @@
       "themes": [
         "Algebra & number theory"
       ],
-      "abstract": "The authors characterize klt-type singularities through uniform positive lower bounds for the $F$-signatures of their reductions modulo sufficiently large primes, and apply this to pure descent.",
-      "claimed_result": "For a normal complex singularity, the authors prove that klt type yields a uniform positive lower bound for $F$-signatures on an open set of large-characteristic reductions, while non-klt type forces those signatures below every positive threshold on an open set; they also give a reduction-mod-$p$ proof of pure descent.",
-      "assumptions_and_setting": "Normal complex varieties spread out over a finite-type model over $\\mathbb{Z}$; conclusions concern closed points in nonempty open subsets of the model and hence sufficiently large-prime reductions.",
-      "unique_caveat": "The authors explicitly do not resolve the separate conjecture that klt type is equivalent to strong $F$-regularity of reductions for all sufficiently large primes; their characterization is via uniform $F$-signature bounds.",
-      "evidence_for_ranking": "Collector score 2.329 (citation component 1.386; influential-citation component 0.693; cross-list component 0.250). The supplied Semantic Scholar snapshot records 1 total citation and 1 influential citation; cross-listed in math.AG and math.AC. These citation figures are current totals, not period gains.",
+      "abstract": "The authors characterize klt-type singularities through uniform positive lower bounds for the $F$-signatures of reductions modulo sufficiently large primes, and apply this to pure descent.",
+      "claimed_result": "For normal complex singularities spread over a finite-type model, the authors prove that klt type gives uniform positive lower bounds for $F$-signatures on an open set of large-characteristic reductions, while non-klt type forces those signatures below every positive threshold on an open set; they also give a reduction-mod-$p$ proof of pure descent.",
+      "assumptions_and_setting": "Normal complex varieties spread out over a finite-type model over $\\mathbb{Z}$; the conclusions concern closed points in nonempty open subsets of that model.",
+      "unique_caveat": "The authors explicitly leave unresolved the separate conjecture that klt type is equivalent to strong $F$-regularity of reductions for all sufficiently large primes; their criterion uses uniform $F$-signature bounds.",
+      "evidence_for_ranking": "Collector score 2.329 (citation component 1.386; influential-citation component 0.693; cross-list component 0.250); Semantic Scholar snapshot: 1 citations, 1 influential citations; 1 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -173,10 +173,10 @@
         "Optimization & control"
       ],
       "abstract": "The authors formulate multi-site AI data-center scheduling as a linear program and report 6.3% lower energy costs at equal work in a year-long simulation on 2025 CAISO prices.",
-      "claimed_result": "In their 2025 California ISO day-ahead-price simulation across three data-center markets, coordinated scheduling lowers fleet energy cost by 6.3% at equal work.",
-      "assumptions_and_setting": "A modeled fleet with GPU power caps, deferrable jobs and deadlines, inference response-time slack, site power, and day-ahead electricity prices; results come from a year-long simulation.",
-      "unique_caveat": "The 6.3% saving is specific to the stated simulation, market data, and modeled operating modes; it is not evidence from a deployed fleet.",
-      "evidence_for_ranking": "Collector score 2.197, entirely from its citation component. The supplied Semantic Scholar snapshot records 2 total citations and 0 influential citations; no mathematical cross-listing. These are current totals, not gains during this window.",
+      "claimed_result": "In a year-long 2025 California ISO day-ahead-price simulation across three data-center markets, coordinated scheduling lowers fleet energy cost by 6.3% at equal work.",
+      "assumptions_and_setting": "A modeled fleet with GPU power caps, deferrable jobs and deadlines, inference response-time slack, site power, and day-ahead electricity prices; results are from simulation.",
+      "unique_caveat": "The reported saving is specific to the stated simulation, market data, and operating modes; it is not evidence from a deployed fleet.",
+      "evidence_for_ranking": "Collector score 2.197 (citation component 2.197); Semantic Scholar snapshot: 2 citations, 0 influential citations; 0 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -190,6 +190,7 @@
       },
       "refs": [
         "https://arxiv.org/abs/2611.26572",
+        "https://arxiv.org/html/2611.26572v1",
         "https://arxiv.org/pdf/2611.26572"
       ]
     },
@@ -216,9 +217,9 @@
       ],
       "abstract": "For a fractional Schrödinger equation with nonlocal Neumann conditions in a half-space and order $2s$ with $s$ near 1, the authors prove ground-state nondegeneracy and uniqueness up to tangential translations and sign.",
       "claimed_result": "In the stated weakly nonlocal half-space setting, the kernel of the linearized equation consists only of tangential derivatives of the ground state, implying uniqueness modulo tangential translations and sign.",
-      "assumptions_and_setting": "A fractional Laplacian of order $2s$ with $s$ close to 1, posed in a half-space with nonlocal Neumann conditions.",
-      "unique_caveat": "The abstract restricts the result to the weakly nonlocal regime ($s$ close to 1) and half-space Neumann setting; it does not claim the same theorem for other boundary conditions or parameter regimes.",
-      "evidence_for_ranking": "Collector score 2.079 (citation component 1.386; influential-citation component 0.693). The supplied Semantic Scholar snapshot records 1 total citation and 1 influential citation; no mathematical cross-listing. These are current totals, not gains during this window.",
+      "assumptions_and_setting": "A fractional Laplacian of order $2s$ with $s$ close to 1, in a half-space with nonlocal Neumann conditions.",
+      "unique_caveat": "The result is restricted to the weakly nonlocal regime and the half-space Neumann setting; it does not claim the same theorem for other boundary conditions or parameter regimes.",
+      "evidence_for_ranking": "Collector score 2.079 (citation component 1.386; influential-citation component 0.693); Semantic Scholar snapshot: 1 citations, 1 influential citations; 0 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -233,6 +234,7 @@
       },
       "refs": [
         "https://arxiv.org/abs/2611.26428",
+        "https://arxiv.org/html/2611.26428v1",
         "https://arxiv.org/pdf/2611.26428"
       ]
     },
@@ -255,13 +257,14 @@
         "Raphael Ponge"
       ],
       "themes": [
+        "Mathematical physics",
         "Analysis & PDE"
       ],
       "abstract": "The paper proves operator-theoretic tools for spectral triples, including a fractional-commutator factorization and a Tauberian result deriving Weyl laws from suitable zeta-function or heat-trace conditions.",
-      "claimed_result": "The author establishes three results: a factorization for fractional commutators via double operator integrals, extensions of a lemma for arbitrary unital spectral triples, and a Tauberian theorem yielding Weyl laws for operators $aD^2a$ under the stated zeta/heat-trace conditions.",
-      "assumptions_and_setting": "Operator theory for spectral triples and positive invertible algebra elements; the Tauberian conclusion applies when the specified zeta-function or heat-trace conditions hold.",
+      "claimed_result": "The author establishes a fractional-commutator factorization via double operator integrals, extensions of a lemma for unital spectral triples, and a Tauberian theorem yielding Weyl laws for operators $aD^{2}a$ under the stated zeta/heat-trace conditions.",
+      "assumptions_and_setting": "Operator theory for spectral triples and positive invertible algebra elements; the Weyl-law conclusion applies when the specified zeta-function or heat-trace conditions hold.",
       "unique_caveat": "The Weyl-law conclusion is conditional on those analytic hypotheses; the abstract does not claim unconditional asymptotics for arbitrary operators or triples.",
-      "evidence_for_ranking": "Collector score 1.886 (citation component 1.386; cross-list component 0.500). The supplied Semantic Scholar snapshot records 1 total citation and 0 influential citations; listed in math.OA, math.FA, and math.SP (2 cross-lists). Citation total is current, not a period gain.",
+      "evidence_for_ranking": "Collector score 1.886 (citation component 1.386; cross-list component 0.500); Semantic Scholar snapshot: 1 citations, 0 influential citations; 2 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -276,6 +279,7 @@
       },
       "refs": [
         "https://arxiv.org/abs/2611.25392",
+        "https://arxiv.org/html/2611.25392v1",
         "https://arxiv.org/pdf/2611.25392"
       ],
       "comment": "29 pages"
@@ -304,11 +308,11 @@
         "Algebra & number theory",
         "Geometry & topology"
       ],
-      "abstract": "The authors make symplectic-group homology with Steinberg-module coefficients into a comodule algebra over the corresponding general-linear-group homology and derive lower bounds for cohomology of arithmetic symplectic groups.",
+      "abstract": "The authors give symplectic-group homology with Steinberg-module coefficients a comodule-algebra structure over the corresponding general-linear-group homology and derive lower bounds for arithmetic symplectic-group cohomology.",
       "claimed_result": "The authors prove a comodule-algebra structure and a freeness-type result, then deduce new lower bounds for high-dimensional cohomology of symplectic groups over number rings and their congruence subgroups.",
-      "assumptions_and_setting": "Group homology with Steinberg module coefficients for symplectic and general linear groups, with applications to symplectic groups over number rings and congruence subgroups.",
-      "unique_caveat": "The abstract does not specify the numerical form or range of the resulting cohomological lower bounds; those details require the full theorem statements.",
-      "evidence_for_ranking": "Collector score 1.886 (citation component 1.386; cross-list component 0.500). The supplied Semantic Scholar snapshot records 1 total citation and 0 influential citations; cross-listed in math.AT, math.KT, and math.NT (2 cross-lists). Citation total is current, not a period gain.",
+      "assumptions_and_setting": "Group homology with Steinberg-module coefficients for symplectic and general linear groups, with applications to symplectic groups over number rings and congruence subgroups.",
+      "unique_caveat": "The abstract does not specify the numerical form or range of the cohomological lower bounds; those details require the full theorem statements.",
+      "evidence_for_ranking": "Collector score 1.886 (citation component 1.386; cross-list component 0.500); Semantic Scholar snapshot: 1 citations, 0 influential citations; 2 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -323,34 +327,35 @@
       },
       "refs": [
         "https://arxiv.org/abs/2611.25190",
+        "https://arxiv.org/html/2611.25190v1",
         "https://arxiv.org/pdf/2611.25190"
       ],
       "comment": "28 pages"
     },
     {
-      "id": "paper-2611.25129v1",
+      "id": "paper-2611.25772v1",
       "kind": "paper",
-      "title": "Antipodal Parity and Second-Chaos Regge Curvature on Random Hyperplane Arrangements",
+      "title": "The compressible-incompressible CAO problem introduced by Lions, Temam and Wang",
       "rank": 8,
-      "url": "https://arxiv.org/abs/2611.25129",
-      "arxiv_id": "2611.25129",
+      "url": "https://arxiv.org/abs/2611.25772",
+      "arxiv_id": "2611.25772",
       "arxiv_version": "1",
-      "published": "2026-11-18T20:06:11Z",
-      "updated": "2026-11-18T20:06:11Z",
+      "published": "2026-11-19T09:09:12Z",
+      "updated": "2026-11-19T09:09:12Z",
       "categories": [
-        "math.PR"
+        "math.AP"
       ],
       "authors": [
-        "William Nelson"
+        "Tarek Zöchling"
       ],
       "themes": [
-        "Probability & statistics"
+        "Analysis & PDE"
       ],
-      "abstract": "For orientation-reversal-invariant random hyperplanes, the paper proves parity cancellations for signed Regge curvature and a second-chaos limit for isotropic Gaussian normals on bounded windows.",
-      "claimed_result": "Under orientation-reversal invariance, the signed curvature has zero mean and zero first Hoeffding component; in the isotropic Gaussian bounded-window setting it converges after rescaling to a second-chaos series, with a planar cone-angle limit law under finite fourth moments.",
-      "assumptions_and_setting": "Independent oriented hyperplanes in Euclidean space; orientation-reversal invariance for the parity result, isotropic Gaussian normals on bounded windows for the second-chaos limit, and finite fourth moments for the planar global limit law.",
-      "unique_caveat": "The limit theorems use distinct distributional hypotheses; the abstract does not claim a common universal limit for arbitrary hyperplane laws in every dimension.",
-      "evidence_for_ranking": "Collector score 1.386 (citation component 1.386). The supplied Semantic Scholar snapshot records 1 total citation and 0 influential citations; no mathematical cross-listing. This is a current total, not a gain during this window.",
+      "abstract": "The authors establish strong well-posedness for a coupled compressible-atmosphere/incompressible-ocean system, locally and globally for small initial data.",
+      "claimed_result": "The author proves strong well-posedness, both locally and globally for small initial data, for the coupled compressible-incompressible CAO system with nonlinear wind-stress interface condition.",
+      "assumptions_and_setting": "The Lions–Temam–Wang coupled atmosphere-ocean model with the stated fully nonlinear boundary coupling; global well-posedness is for small initial data.",
+      "unique_caveat": "The global result is limited to small initial data; no large-data global theorem is claimed.",
+      "evidence_for_ranking": "Collector score 1.386 (citation component 1.386); Semantic Scholar snapshot: 1 citations, 0 influential citations; 0 cross-lists. The arXiv comment says accepted for Journal de Mathématiques Pures et Appliquées.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -363,15 +368,16 @@
         "cross_lists": 0
       },
       "refs": [
-        "https://arxiv.org/abs/2611.25129",
-        "https://arxiv.org/pdf/2611.25129"
+        "https://arxiv.org/abs/2611.25772",
+        "https://arxiv.org/html/2611.25772v1",
+        "https://arxiv.org/pdf/2611.25772"
       ],
-      "comment": "31 pages, 1 figure. Companion paper: arXiv:2611.22976"
+      "comment": "Accepted. To appear in Journal de Mathématiques Pures et Appliquées"
     },
     {
       "id": "paper-2611.25270v1",
       "kind": "paper",
-      "title": "On the non-extendibility of triangular $D(n)$-pairs $\\{n,2n\\}$ with $n = 2k^2 \\pm k",
+      "title": "On the non-extendibility of triangular $D(n)$-pairs $\\{n,2n\\}$ with $n = 2k^2 \\pm k$",
       "rank": 9,
       "url": "https://arxiv.org/abs/2611.25270",
       "arxiv_id": "2611.25270",
@@ -390,10 +396,10 @@
         "Algebra & number theory"
       ],
       "abstract": "For a specified finite set of odd $k$ and signs satisfying a prime condition, the authors prove that triangular $D(n)$-pairs $\\{n,2n\\}$ cannot be extended to quadruples and formulate a broader conjecture.",
-      "claimed_result": "For an explicitly determined finite set of $(k,\\varepsilon)$ with odd positive $k$, $\\varepsilon\\in\\{-1,1\\}$ and $4k+\\varepsilon$ prime, the pair with $n=2k^2+\\varepsilon k$ is not extendible to a triangular $D(n)$-quadruple.",
-      "assumptions_and_setting": "Positive-integer triangular $D(n)$-tuples; the result is for the special pair $\\{n,2n\\}$ and a finite explicitly determined parameter set satisfying the stated parity and primality conditions.",
+      "claimed_result": "For an explicitly determined finite set of $(k,\\varepsilon)$ with odd positive $k$, $\\varepsilon\\in\\{-1,1\\}$ and $4k+\\varepsilon$ prime, the pair with $n=2k^{2}+\\varepsilon k$ is not extendible to a triangular $D(n)$-quadruple.",
+      "assumptions_and_setting": "Positive-integer triangular $D(n)$-tuples; the theorem treats the special pair $\\{n,2n\\}$ and a finite explicitly determined parameter set satisfying the parity and primality conditions.",
       "unique_caveat": "The theorem covers only the listed finite parameter set; the broader non-extendibility phenomenon is stated as a conjecture, not established generally.",
-      "evidence_for_ranking": "Collector score 1.386 (citation component 1.386). The supplied Semantic Scholar snapshot records 1 total citation and 0 influential citations; no mathematical cross-listing. This is a current total, not a gain during this window.",
+      "evidence_for_ranking": "Collector score 1.386 (citation component 1.386); Semantic Scholar snapshot: 1 citations, 0 influential citations; 0 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -407,6 +413,7 @@
       },
       "refs": [
         "https://arxiv.org/abs/2611.25270",
+        "https://arxiv.org/html/2611.25270v1",
         "https://arxiv.org/pdf/2611.25270"
       ]
     },
@@ -431,10 +438,10 @@
         "Combinatorics & discrete mathematics"
       ],
       "abstract": "The author sharpens prior upper and lower bounds for Sylvester's denumerant function for arbitrary positive integer inputs, including a binomial-sum lower bound along multiples of their gcd.",
-      "claimed_result": "Applying an arithmetic argument from the preceding paper in the series, the author obtains a larger binomial-sum lower bound that needs no representability assumption on multiples of the gcd and reduces the shift in Agnarsson's upper bound.",
+      "claimed_result": "Using an arithmetic argument from the preceding paper in the series, the author obtains a larger binomial-sum lower bound that needs no representability assumption on multiples of the gcd and reduces the shift in Agnarsson's upper bound.",
       "assumptions_and_setting": "Sylvester's denumerant function for arbitrary positive integers $a_1,\\dots,a_k$; the lower bound applies along multiples of $\\gcd(a_1,\\dots,a_k)$.",
       "unique_caveat": "The paper supplies improved bounds rather than an exact formula for arbitrary inputs and is the second paper in a series.",
-      "evidence_for_ranking": "Collector score 1.386 (citation component 1.386). The supplied Semantic Scholar snapshot records 1 total citation and 0 influential citations; no mathematical cross-listing. This is a current total, not a gain during this window.",
+      "evidence_for_ranking": "Collector score 1.386 (citation component 1.386); Semantic Scholar snapshot: 1 citations, 0 influential citations; 0 cross-lists.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-19",
       "signals": {
@@ -448,6 +455,7 @@
       },
       "refs": [
         "https://arxiv.org/abs/2611.25250",
+        "https://arxiv.org/html/2611.25250v1",
         "https://arxiv.org/pdf/2611.25250"
       ],
       "comment": "25 pages. Second paper of a series; the first is arXiv:2204.13689"

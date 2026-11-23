@@ -1,0 +1,400 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "daily",
+  "date": "2026-11-23",
+  "date_range": {
+    "start": "2026-11-19T19:00:00Z",
+    "end": "2026-11-20T19:00:00Z"
+  },
+  "snapshot_time_utc": "2026-11-23T19:55:41Z",
+  "announcement_date": "2026-11-23",
+  "prior_announcement_batch": true,
+  "announcement_time_utc": "2026-11-23T01:00:00Z",
+  "title": "arXiv Trending Biology and Biomedicine — 23 November 2026",
+  "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-23.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking from an incomplete candidate pool with no candidate-level attention signals, and arXiv coverage of biomedical preprints is incomplete.",
+  "candidate_pool_size": 16,
+  "ranking_basis": "Collector score and relevant cross-list counts, then relevance; no candidate-level attention or citations were recorded.",
+  "sources": {
+    "signals_file": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-23.signals.json",
+    "signals_generated_at": "2026-11-23T19:55:41Z",
+    "arxiv": "ok",
+    "huggingface": "ok",
+    "hacker_news": "ok",
+    "semantic_scholar": "ok"
+  },
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "rank": null,
+      "url": "",
+      "content": "Today’s biology and biomedicine announcement batch (23 November 2026) yields eight notable papers, led by protein and biomolecular modelling, microscopy and image-based assays. This is a relevance-ranked digest of the supplied candidate pool, not a measured popularity chart: arXiv has no official trending chart, the attention collectors found no candidate-level Hugging Face or Hacker News activity and no citations at this snapshot, and arXiv omits much of biomedical preprint research, especially work on bioRxiv and medRxiv.",
+      "global_caveat": "arXiv has no official trending chart; this is an inferred relevance ranking from an incomplete candidate pool with no candidate-level attention signals, and arXiv coverage of biomedical preprints is incomplete.",
+      "refs": []
+    },
+    {
+      "id": "01-receptor-abundance-alone-underpredicts-red-blood-cell-a",
+      "kind": "paper",
+      "title": "Receptor Abundance Alone Underpredicts Red Blood Cell Adhesion in Gaucher Disease",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.27960",
+      "arxiv_id": "2611.27960",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T18:39:09Z",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.soft",
+        "physics.med-ph",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Zhaojie Chai",
+        "Pierre A. Buffet",
+        "Melanie Franco",
+        "George Em Karniadakis"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "Red blood cells (RBCs) in Gaucher disease (GD) adhere abnormally to vessel walls and carry more Lutheran/basal cell adhesion molecule (Lu/BCAM), a laminin receptor. Whether receptor abundance sets this adhesion is untested. We simulated RBCs carrying stochastic Lu/BCAM-laminin bonds, calibrated a population on control donors, and predicted GD adhesion from the 1.3-fold receptor rise. On laminin and endothelium the data exceed the prediction 1.6- to 1.7-fold. Matching them requires 2.4- and 4.6-fold more binding-competent receptors, compatible with the estimated 5.7-fold rise in phosphorylated receptors. Neither a stiffer membrane nor higher bond affinity removes the shortfall at high shear stress. In sickle cell disease, given active-receptor counts, the model predicts the fall in adhesion under hydroxyurea within 1.4-fold, while total receptors rise. Adhesion likely follows receptor state more than abundance. Stiffening instead retains cells at a splenic slit.",
+      "claimed_contribution": "The authors combine donor-level adhesion measurements with a simulated flow-adhesion model; the reported adhesion is 1.6–1.7 times the abundance-only prediction, and matching it requires more binding-competent receptors, consistent with elevated receptor phosphorylation.",
+      "unique_caveat": "This is model-based interpretation of donor measurements, not a prospective clinical study; source donor cohorts were modest and laminin lot effects could not be assessed for too few donors.",
+      "evidence_for_ranking": "Collector score 0.75, entirely from three relevant cross-listings (0.25 each); Semantic Scholar records 0 citations and 0 influential citations at the snapshot. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.27960"
+      ]
+    },
+    {
+      "id": "02-one-step-self-assembling-lipopolymer-coatings-enable-di",
+      "kind": "paper",
+      "title": "One-Step Self-Assembling Lipopolymer Coatings Enable Direct Longitudinal Biosensing in Native Biological Matrices",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.27422",
+      "arxiv_id": "2611.27422",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T10:24:01Z",
+      "categories": [
+        "q-bio.QM",
+        "cond-mat.mtrl-sci",
+        "physics.chem-ph"
+      ],
+      "authors": [
+        "Pascal Rüedi",
+        "Sarina Seiter",
+        "Stephan Handschin",
+        "Chiara Lombardo",
+        "Jaime Ortega Arroyo",
+        "Romain Quidant"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "Sample-driven cross-reactivity remains a fundamental bottleneck for sensitive and selective biosensing in complex biological environments, particularly in microfluidic systems where high surface-to-volume ratios amplify non-specific interactions. Here, we address this challenge with a one-step, biomimetic surface functionalization strategy based on engineered lipid-based nanocarriers that self-assemble within minutes into immunoassay-ready, antifouling interfaces that couple PEGylated-lipid passivation with biorthogonal, site-specific probe conjugation. This approach enables rapid, tuneable, and reproducible surface functionalization, which suppresses sample-specific cross-reactivity even in undiluted serum, and supports direct, label-free digital biosensing assays in native biological environments. When integrated into an optofluidic platform combining digital in-line holography and microfluidics, this approach allows time-resolved quantification of tetraspanin-positive extracellular-vesicle secretion dynamics from two-dimensional and three-dimensional lung-cancer cell models using 50 μL of sample within 10 min, without isolation or purification. The authors report that self-assembly makes the modular approach compatible with glass and PDMS microfluidic devices.",
+      "claimed_contribution": "The authors report a rapid coating method integrated with optofluidic holographic sensing, quantifying tetraspanin-positive extracellular-vesicle secretion from 2D and 3D lung-cancer cell models using 50 μL of sample in 10 minutes without isolation.",
+      "unique_caveat": "Evidence is from cell-model assays and analytical measurements; the abstract does not establish performance in patient samples or clinical diagnostic utility.",
+      "evidence_for_ranking": "Collector score 0.50, from two relevant cross-listings; Semantic Scholar records 0 citations and 0 influential citations. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.27422"
+      ]
+    },
+    {
+      "id": "03-mambasplit-severity-robust-and-inference-efficient-sema",
+      "kind": "paper",
+      "title": "MambaSplit: Severity-Robust and Inference-Efficient Semantic Unmixing of Fluorescence Microscopy Image Data",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.26703",
+      "arxiv_id": "2611.26703",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T19:02:02Z",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Aman Kukde",
+        "Ruggiero Santeramo",
+        "Federico Carrara",
+        "Ashesh Ashesh",
+        "Igor Zubarev",
+        "Florian Jug"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "The number of structures fluorescence microscopy can image in one sample is limited by how few fluorophores can be separated without significant spectral overlap. Semantic unmixing computationally separates two structures imaged in one fluorescent channel. We present MambaSplit, a hierarchical state-space encoder with a convolutional decoder that captures context across large tiles in linear time and predicts both channels in one deterministic pass. It can train on computationally summed channel images with random mixing ratios or experimentally acquired superpositions. Across five datasets and nine mixing ratios, the authors report the highest RI-PSNR, by up to 3.0 dB, in 11 of 15 dataset-severity combinations and a tie in one more, while running 5.9 times faster than the strongest baseline.",
+      "claimed_contribution": "The authors report the highest RI-PSNR in 11 of 15 dataset-by-severity comparisons (ties in one more), up to 3.0 dB better, and 5.9× faster inference than the strongest baseline; they evaluate computationally summed and experimentally acquired superpositions.",
+      "unique_caveat": "These are image-reconstruction benchmarks, not evidence that the method generalizes across untested instruments, biological preparations, or downstream biological measurements.",
+      "evidence_for_ranking": "Collector score 0.50, from two relevant cross-listings; Semantic Scholar records 0 citations and 0 influential citations. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.26703"
+      ]
+    },
+    {
+      "id": "04-bioemu2-scalable-emulation-of-biomolecular-dynamics",
+      "kind": "paper",
+      "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.27924",
+      "arxiv_id": "2611.27924",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T17:58:47Z",
+      "categories": [
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Michael Gastegger",
+        "Adam E. Foster",
+        "José Jiménez-Luna",
+        "Tim Hempel",
+        "Sarah Lewis",
+        "Yu Xie",
+        "Lixin Sun",
+        "Iryna Zaporozhets",
+        "J. Thorben Frank",
+        "Yaoyi Chen",
+        "Michael Plainer",
+        "Ludwig Winkler",
+        "Pedro B. P. S. Reis",
+        "Sven H. Giese",
+        "Roberto Sordillo",
+        "Victor García Satorras",
+        "Eray Inanc",
+        "Kacper Kapuśniak",
+        "Soojung Yang",
+        "Rishwanth Raghu",
+        "Rachel Kim",
+        "Gabriel Dernbach",
+        "Deniz Gunceler",
+        "Hannes Schulz",
+        "Bonnie Kruft",
+        "Marwin Segler",
+        "Christopher M. Bishop",
+        "Cecilia Clementi",
+        "Ryota Tomioka",
+        "Frank Noé"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "DNA & genomics",
+        "RNA & transcriptomics"
+      ],
+      "abstract": "Despite advances in structure prediction, modelling biomolecular motions and interactions at scale remains challenging. The authors introduce BioEmu2, a generative model for atomically resolved biomolecular structures combining static structure prediction, equilibrium sampling, and time evolution. It supports proteins, nucleic acids, modified residues, ligands, and ions. The authors report structure-prediction accuracy comparable to leading open-weight folding models, equilibrium distributions approximating molecular-dynamics references with free-energy errors near 1 kcal/mol across tested proteins and complexes, and time propagation for long-timescale trajectories and binding or conformational-change kinetics.",
+      "claimed_contribution": "The authors report MD-reference free-energy errors near 1 kcal/mol for tested systems, structure-prediction accuracy comparable to leading open-weight models, and sampling orders of magnitude faster than molecular dynamics.",
+      "unique_caveat": "The key evidence is computational comparison to molecular-dynamics references and structural benchmarks, not experimental validation of predicted kinetics; the authors identify slow kinetics as an area needing larger experimental datasets and validation.",
+      "evidence_for_ranking": "Collector score 0.25, from one relevant cross-listing; Semantic Scholar records 0 citations and 0 influential citations. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.27924"
+      ]
+    },
+    {
+      "id": "05-beyond-final-answers-interpretable-tumor-immune-microen",
+      "kind": "paper",
+      "title": "Beyond Final Answers: Interpretable Tumor Immune Microenvironment Reasoning from H&E and mIF",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.26794",
+      "arxiv_id": "2611.26794",
+      "arxiv_version": "v1",
+      "published": "2026-11-19T20:36:13Z",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Yixuan Duan",
+        "Kexin Geng",
+        "Hanwen Xu",
+        "Wei Qiu"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors present HERMES, a multimodal large language model jointly reasoning over paired H&E and multiplex immunofluorescence (mIF) images, with process rewards that check each stated quantity against cell-level truth. Across four field-level tumor-immune-microenvironment tasks in colorectal cancer, HERMES (4B) reports 84.5% average accuracy versus 74.7% for the strongest of 12 proprietary, general, medical, and pathology models. Without retraining, it reports 76.4% average accuracy on an external CODEX colorectal-cancer cohort and 76.7% on head-and-neck cancer, a cancer type absent from training.",
+      "claimed_contribution": "Across four colorectal-cancer tissue-field tasks, the authors report 84.5% average accuracy versus 74.7% for the strongest of 12 comparison models, plus 76.4% average accuracy on an external CODEX cohort and 76.7% on head-and-neck cancer without retraining.",
+      "unique_caveat": "This evaluates image-based benchmark readouts, not prospective diagnosis or improved patient outcomes; validation remains limited to the reported cohorts, tasks, and imaging settings.",
+      "evidence_for_ranking": "Collector score 0.25, from one relevant cross-listing; Semantic Scholar records 0 citations and 0 influential citations. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.26794"
+      ]
+    },
+    {
+      "id": "06-hierarchical-hybrid-coordinate-flow-matching-for-accura",
+      "kind": "paper",
+      "title": "Hierarchical Hybrid-Coordinate Flow Matching for Accurate and Physically Plausible Apo-to-Holo Protein Generation",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.27162",
+      "arxiv_id": "2611.27162",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T05:47:46Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Minjong Kim",
+        "Jaemin Sim",
+        "Dongwoo Kim",
+        "Myunghyun Jang",
+        "Eun-Sol Kim",
+        "Juyong Lee"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors introduce CrypticFlow, a hierarchical flow-matching model combining sparse Cartesian Cα anchors with recursive internal-coordinate refinement to generate holo-like conformations from apo structures. On the D3PM test split, it reports the lowest median and mean Cα RMSD among published baseline models at their reported capacities; results across five independently trained models include 1.333 ± 0.056 Å median direct RMSD and 99.58 ± 0.02% adjacent-distance fidelity.",
+      "claimed_contribution": "On the D3PM test split, the authors report lower median and mean Cα RMSD than published baselines at comparable capacity, alongside high local distance and pseudo-angle fidelity across five independent training models.",
+      "unique_caveat": "Evaluation is on a structural benchmark against reference conformations; it does not demonstrate ligand-binding prediction performance in biochemical or cellular experiments.",
+      "evidence_for_ranking": "Collector score 0.25, from one relevant cross-listing; Semantic Scholar records 0 citations and 0 influential citations. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.27162"
+      ]
+    },
+    {
+      "id": "07-galf-st-gaussian-latent-fields-for-spatial-transcriptom",
+      "kind": "paper",
+      "title": "GaLF-ST: Gaussian Latent Fields for Spatial Transcriptomics Reconstruction",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.27143",
+      "arxiv_id": "2611.27143",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T05:23:08Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Baichuan Yang",
+        "Yifan Luo",
+        "Yong Liu",
+        "Bing Su"
+      ],
+      "themes": [
+        "RNA & transcriptomics",
+        "Omics & single-cell methods",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "The authors propose GaLF-ST, a Gaussian latent-field method for spatial transcriptomics reconstruction. Learnable Gaussian centers and anisotropic covariances weight latent vectors at each spatial location, and a shared nonlinear decoder predicts multigene expression. They report a unified benchmark across seven dataset groups and three held-out fractions against four representative methods, with leading overall reconstruction performance and lower runtime and GPU memory usage.",
+      "claimed_contribution": "The authors report leading overall reconstruction results against four representative methods across seven dataset groups and three held-out fractions, while reducing runtime and GPU memory use.",
+      "unique_caveat": "Reported results are computational reconstruction benchmarks; the authors say the appendix and code will accompany a future preprint version, and broader independent replication is not yet reported.",
+      "evidence_for_ranking": "Collector score 0.25, from one relevant cross-listing; Semantic Scholar records 0 citations and 0 influential citations. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.27143"
+      ]
+    },
+    {
+      "id": "08-structural-agreement-indicates-prediction-accuracy-for",
+      "kind": "paper",
+      "title": "Structural Agreement Indicates Prediction Accuracy For Protein-Ligand Co-Folding",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.27058",
+      "arxiv_id": "2611.27058",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T03:27:19Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "J. Henry Broster",
+        "Bojana Popovic",
+        "Diana Kondinskaia",
+        "Charlotte M. Deane",
+        "Fergus Imrie"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors compare confidence metrics across seven protein–ligand co-folding models and report that confidence-based selection often offers little gain over random choice. They introduce the Concentration of Repeated Ensembles (CORE) Score, based on structural agreement, reporting mean ROC AUCs of 0.866 for top-1 success and 0.838 for oracle success, compared with 0.757 and 0.759 for ipTM.",
+      "claimed_contribution": "Across seven co-folding models, the authors report mean ROC AUCs of 0.866 for top-1 success and 0.838 for oracle success, versus 0.757 and 0.759 for ipTM.",
+      "unique_caveat": "The score is assessed on structural-prediction benchmarks; AUC does not establish experimental binding or universal calibration for new targets and model families.",
+      "evidence_for_ranking": "Collector score 0.25, from one relevant cross-listing; Semantic Scholar records 0 citations and 0 influential citations. No candidate-level Hugging Face or Hacker News attention is recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-23",
+      "refs": [
+        "https://arxiv.org/abs/2611.27058"
+      ]
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": "",
+      "content": "The selected papers cluster around three methods-rich areas. Protein structure and molecular ensembles appear in BioEmu2, CrypticFlow, and the CORE Score paper: respectively, generative dynamics emulation, apo-to-holo conformation generation, and model-agreement-based confidence estimation. Spatial and microscopy computation is represented by GaLF-ST, MambaSplit, and HERMES, which reconstruct spatial expression, unmix fluorescence channels, and make pathology readouts auditable across paired modalities. Assay and mechanistic translation appear in the lipopolymer biosensor and the Gaucher red-cell adhesion study, but both remain preclinical or model-based evidence rather than clinical validation. These are patterns within eight selected arXiv papers, not evidence of a field-wide shift.",
+      "refs": [
+        "2611.27960",
+        "2611.27422",
+        "2611.26703",
+        "2611.27924",
+        "2611.26794",
+        "2611.27162",
+        "2611.27143",
+        "2611.27058"
+      ]
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": "",
+      "content": "Author-stated limitations include the need for larger experimental datasets to validate BioEmu2’s slower kinetics; unmeasured laminin-lot effects in the Gaucher red-cell source data; and pending appendix/code release for GaLF-ST. Follow-up synthesis: test biomolecular ensemble and conformational predictions against independent experimental structural and kinetic measurements, with targets and conditions held out; replicate GaLF-ST, MambaSplit, and HERMES across independent tissues, instruments, labs, and patient cohorts, reporting patient-level splits and calibration; and test the biosensor using blinded, repeated native-matrix samples with orthogonal extracellular-vesicle measurements. For the Gaucher model, a prospective donor study measuring phosphorylated/binding-competent Lu/BCAM alongside flow adhesion could distinguish receptor abundance from activation state. These are research proposals, not evidence of clinical utility.",
+      "refs": [
+        "2611.27960",
+        "2611.27422",
+        "2611.26703",
+        "2611.27924",
+        "2611.26794",
+        "2611.27162",
+        "2611.27143",
+        "2611.27058"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": "",
+      "content": "The batch is technically diverse, but its clearest common thread is computational methods for molecular structure and biomedical imaging. The available attention signals do not support a popularity claim; regard these as recent, relevant papers whose reported benchmark and assay results need independent validation.",
+      "refs": [
+        "2611.27960",
+        "2611.27422",
+        "2611.26703",
+        "2611.27924",
+        "2611.26794",
+        "2611.27162",
+        "2611.27143",
+        "2611.27058"
+      ]
+    }
+  ]
+}

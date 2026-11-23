@@ -1,0 +1,606 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "arxiv",
+  "category": "bio",
+  "window": "daily",
+  "arxiv_window": {
+    "start": "2026-11-19T19:00:00Z",
+    "end": "2026-11-20T19:00:00Z",
+    "announced": "2026-11-23T01:00:00Z",
+    "announcement_date": "2026-11-23"
+  },
+  "categories": [
+    "q-bio.BM",
+    "q-bio.GN",
+    "q-bio.MN",
+    "q-bio.SC",
+    "q-bio.CB",
+    "q-bio.TO",
+    "q-bio.QM",
+    "cs.BI",
+    "physics.med-ph"
+  ],
+  "generated_at": "2026-11-23T19:55:41Z",
+  "sources": {
+    "arxiv": {
+      "status": "ok",
+      "count": 16
+    },
+    "huggingface": {
+      "status": "ok",
+      "count": 102
+    },
+    "hacker_news": {
+      "status": "ok",
+      "count": 31
+    },
+    "arxiv_lookup": {
+      "status": "ok",
+      "count": 132
+    },
+    "semantic_scholar": {
+      "status": "ok",
+      "count": 16
+    }
+  },
+  "weights": {
+    "hf_upvotes": 3.0,
+    "hn_points": 1.5,
+    "hn_comments": 1.0,
+    "citations": 2.0,
+    "influential_citations": 1.0,
+    "code_stars": 0.5,
+    "cross_lists": 0.25
+  },
+  "pool_size": 16,
+  "with_attention": 0,
+  "candidates": [
+    {
+      "arxiv_id": "2611.27960",
+      "version": "1",
+      "title": "Receptor Abundance Alone Underpredicts Red Blood Cell Adhesion in Gaucher Disease",
+      "authors": [
+        "Zhaojie Chai",
+        "Pierre A. Buffet",
+        "Melanie Franco",
+        "George Em Karniadakis"
+      ],
+      "published": "2026-11-20T18:39:09Z",
+      "updated": "2026-11-20T18:39:09Z",
+      "primary_category": "physics.bio-ph",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.soft",
+        "physics.med-ph",
+        "q-bio.CB"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27960",
+      "comment": "25 pages, 9 figures. Supplementary Materials (32 pages) and Movies S1 and S2 are ancillary files",
+      "abstract": "Red blood cells (RBCs) in Gaucher disease (GD) adhere abnormally to vessel walls and carry more Lutheran/basal cell adhesion molecule (Lu/BCAM), a laminin receptor. Whether receptor abundance sets this adhesion is untested. We simulated RBCs carrying stochastic Lu/BCAM-laminin bonds, calibrated a population on control donors, and predicted GD adhesion from the 1.3-fold receptor rise. On laminin and endothelium the data exceed the prediction 1.6- to 1.7-fold. Matching them requires 2.4- and 4.6-fold more binding-competent receptors, compatible with the estimated 5.7-fold rise in phosphorylated receptors. Neither a stiffer membrane nor higher bond affinity removes the shortfall at high shear stress. In sickle cell disease, given active-receptor counts, the model predicts the fall in adhesion under hydroxyurea within 1.4-fold, while total receptors rise. Adhesion likely follows receptor state more than abundance. Stiffening instead retains cells at a splenic slit.",
+      "signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      }
+    },
+    {
+      "arxiv_id": "2611.27766",
+      "version": "1",
+      "title": "Critical slowing down in hive temperature does not provide actionable early warnings of honey bee colony collapse",
+      "authors": [
+        "Daniele Proverbio",
+        "Els Weinans",
+        "Davide Frizzera",
+        "Desiderato Annoscia",
+        "Francesco Nazzi",
+        "Giulia Giordano"
+      ],
+      "published": "2026-11-20T15:56:59Z",
+      "updated": "2026-11-20T15:56:59Z",
+      "primary_category": "q-bio.PE",
+      "categories": [
+        "q-bio.PE",
+        "cs.CE",
+        "nlin.AO",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27766",
+      "comment": "",
+      "abstract": "Early warning signals (EWS) based on critical slowing down (CSD) have been proposed as model-independent indicators of approaching ecological regime shifts and may help anticipate honeybee colony collapse. However, whether theoretically expected signals can be reliably observed and provide useful prediction in real-world systems remains uncertain. Here, we combine structural analysis, mechanistic modeling and longitudinal observations to assess the dynamical plausibility, detectability and predictive accuracy of CSD-based EWS for honeybee colony collapse. Our results show that the presence of EWS is not equivalent to successful prediction of the transition. The analyzed models exhibit regime shifts accompanied by CSD, but detecting these signals in finite and noisy observations requires longer and more densely sampled time series than typically available for practical monitoring. Moreover, in empirical temperature records, CSD-like trends were detectable but provided limited discrimination between colonies that subsequently collapsed and those that survived. Declining mean temperature provided slightly greater discrimination than conventional CSD indicators, although its predictive",
+      "signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      }
+    },
+    {
+      "arxiv_id": "2611.27563",
+      "version": "1",
+      "title": "Saddle Buckling of a Multicellular Alga Driven by Differential Growth",
+      "authors": [
+        "Zhao Wang",
+        "Sumit Kumar Birwa",
+        "Jane Y. Y. Chui",
+        "Kyriacos Leptos",
+        "Raymond E. Goldstein"
+      ],
+      "published": "2026-11-20T13:00:17Z",
+      "updated": "2026-11-20T13:00:17Z",
+      "primary_category": "cond-mat.soft",
+      "categories": [
+        "cond-mat.soft",
+        "nlin.AO",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27563",
+      "comment": "7 pages, 4 figures plus Supplementary Material and 3 videos (available at website of REG)",
+      "abstract": "During development of many simple multicellular organisms there is a complex interplay between cell growth and generation of an extracellular matrix that confers structure. We study this problem quantitatively using $Gonium~pectorale$, a 16-cell alga that transforms from a flat to a buckled shape during growth without cell division or rearrangement. Cell-level measurements and 3D reconstructions show that the $12$ peripheral cells grow faster than the central $4$, producing hoop stress that selects the saddle mode, whose amplitude displays a continuous bifurcation with classical square root singularity. These results are consistent with a continuum model of differential growth within Föppl--von Kármán theory, which yields information on the mechanical properties of the ECM. Implications of this transformation in evolutionary transitions to multicellularity are discussed.",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.27422",
+      "version": "1",
+      "title": "One-Step Self-Assembling Lipopolymer Coatings Enable Direct Longitudinal Biosensing in Native Biological Matrices",
+      "authors": [
+        "Pascal Rüedi",
+        "Sarina Seiter",
+        "Stephan Handschin",
+        "Chiara Lombardo",
+        "Jaime Ortega Arroyo",
+        "Romain Quidant"
+      ],
+      "published": "2026-11-20T10:24:01Z",
+      "updated": "2026-11-20T10:24:01Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cond-mat.mtrl-sci",
+        "physics.chem-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27422",
+      "comment": "",
+      "abstract": "Sample-driven cross-reactivity remains a fundamental bottleneck for sensitive and selective biosensing in complex biological environments, particularly in microfluidic systems where high surface-to-volumes ratios amplify non-specific interactions. Here, we address this challenge with a one-step, biomimetic surface functionalization strategy based on engineered lipid-based nanocarriers that self-assemble within minutes into immunoassay-ready, antifouling interfaces that couple pegylated-lipid passivation with biorthogonal, site-specific probe conjugation. This approach enables rapid, tuneable, and reproducible surface functionalization, which suppresses sample-specific cross-reactivity even in undiluted serum, and supports direct, label-free digital biosensing assays directly in native biological environments. When integrated into an optofluidic platform combining digital in-line holography and microfluidics, this approach allows time-resolved quantification of tetraspanin-positive extracellular vesicle secretion dynamics from two-dimensional and three-dimensional lung cancer cell models using 50 μL of sample within 10 min, without isolation or purification. Because the presented su",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.27405",
+      "version": "1",
+      "title": "Learning effective stochastic predator and prey dynamics across physical and biological systems from limited data",
+      "authors": [
+        "J. C. Huang",
+        "Z. S. Qu",
+        "R. Varennes",
+        "X. Garbet",
+        "C. G. Wang",
+        "C. Guet",
+        "D. Niyato",
+        "K. Lim",
+        "V. Grandgirard"
+      ],
+      "published": "2026-11-20T10:12:22Z",
+      "updated": "2026-11-20T10:12:22Z",
+      "primary_category": "physics.plasm-ph",
+      "categories": [
+        "physics.plasm-ph",
+        "nlin.CD",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27405",
+      "comment": "",
+      "abstract": "Constructing an effective low-dimensional stochastic model from sparse observations requires separating deterministic drift from state-dependent fluctuations when the governing interaction law is unknown. We formulate an adaptive neural stochastic differential equation with topology constraints (TC-AdaNSDE) for two-variable predator--prey dynamics. To regularize the inverse problem when data are scarce, the model combines flexible drift and correlated diffusion fields with density-adaptive local Kramers--Moyal moment estimates and soft phase-space constraints reflecting boundary saddle behavior near extinction and local stability near coexistence. Using a known nonlinear stochastic system, we first show that short-time trajectory error cannot assess diffusion accuracy on its own and must be paired with distributional measures of one-step transitions and long-time phase-space occupancy. We then apply this framework to macroscopic turbulence and zonal flow energies reduced from Hasegawa--Wakatani plasma simulations and to short ecological time series. In the sparse-data regime, TC-AdaNSDE reproduces both short-horizon evolution and long-time invariant energy distributions where deter",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.26703",
+      "version": "1",
+      "title": "MambaSplit: Severity-Robust and Inference-Efficient Semantic Unmixing of Fluorescence Microscopy Image Data",
+      "authors": [
+        "Aman Kukde",
+        "Ruggiero Santeramo",
+        "Federico Carrara",
+        "Ashesh Ashesh",
+        "Igor Zubarev",
+        "Florian Jug"
+      ],
+      "published": "2026-11-19T19:02:02Z",
+      "updated": "2026-11-19T19:02:02Z",
+      "primary_category": "eess.IV",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26703",
+      "comment": "28 pages, 15 figures, 23 tables; main paper (8 pages) followed by supplementary material",
+      "abstract": "The number of structures fluorescence microscopy can image in one sample is limited by how few fluorophores can be separated without significant spectral overlap. Semantic unmixing circumvents this limit by imaging two structures in one fluorescent channel and computationally separating the superimposed image into one image per structure. Because pixels rarely identify their structure, unmixing requires both local and long-range spatial context. The relative brightness of the two structures is unknown and can be very uneven, so predictions must remain accurate across mixing severities, from balanced mixtures to ones where a structure is barely visible. Existing methods either process small image patches or add context through auxiliary pathways that slow inference on large images. We present MambaSplit, a hierarchical state-space encoder with a convolutional decoder that captures context across large tiles in linear time and predicts both channels in one deterministic pass. MambaSplit trains either on computationally summed channel images with random mixing ratios, where a lightweight head estimates the unknown ratio and conditions the decoder on it, or on experimentally acquired s",
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.27924",
+      "version": "1",
+      "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+      "authors": [
+        "Michael Gastegger",
+        "Adam E. Foster",
+        "José Jiménez-Luna",
+        "Tim Hempel",
+        "Sarah Lewis",
+        "Yu Xie",
+        "Lixin Sun",
+        "Iryna Zaporozhets",
+        "J. Thorben Frank",
+        "Yaoyi Chen",
+        "Michael Plainer",
+        "Ludwig Winkler"
+      ],
+      "published": "2026-11-20T17:58:47Z",
+      "updated": "2026-11-20T17:58:47Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27924",
+      "comment": "",
+      "abstract": "Despite major advances in structure prediction, modelling the motions and interactions that drive biomolecular function at scale remains a central challenge. We introduce BioEmu2, a generative model for atomically resolved biomolecular structures combining static structure prediction, equilibrium sampling and time evolution, that samples orders of magnitude faster than molecular dynamics (MD). Trained on experimental and synthetic structures and extensive MD data, it supports multi-component systems containing proteins, nucleic acids, modified residues, ligands and ions. Structure-prediction accuracy is comparable to top open-weight biomolecular folding models, and a context parallel mode enables prediction of megadalton complexes. Equilibrium distributions approximate MD references with free-energy errors near 1 kcal/mol across tested proteins and complexes. Time propagation predicts long-timescale dynamical trajectories and kinetics of binding and conformational changes. Generated structures can be controlled by conditioning on residue contacts or steering with user-defined bias potentials. Enhanced sampling enables free energy calculation involving rare states. BioEmu2 makes the",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.27162",
+      "version": "1",
+      "title": "Hierarchical Hybrid-Coordinate Flow Matching for Accurate and Physically Plausible Apo-to-Holo Protein Generation",
+      "authors": [
+        "Minjong Kim",
+        "Jaemin Sim",
+        "Dongwoo Kim",
+        "Myunghyun Jang",
+        "Eun-Sol Kim",
+        "Juyong Lee"
+      ],
+      "published": "2026-11-20T05:47:46Z",
+      "updated": "2026-11-20T05:47:46Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27162",
+      "comment": "36 pages, 11 figures, 25 tables",
+      "abstract": "Predicting holo-like protein conformations from apo structures is essential in structure-based drug design. Most existing apo-to-holo models operate in Cartesian space and achieve strong global accuracy. However, high global accuracy does not ensure physically valid local backbone geometry. Internal-coordinate models offer local control and validity, but regressive generation can amplify angular errors, known as the lever-arm effect. We introduce CrypticFlow, a hierarchical flow-matching model that combines these two complementary representations. An ESM-3-conditioned E(3)-equivariant graph network first generates sparse C$α$ anchors in Cartesian space. A conditional midpoint Transformer then recursively fills the gaps in local internal coordinates. During recursive generation, the decoder constrains the distance between each midpoint and any sequence-adjacent parent anchor to the corresponding apo C$α$-C$α$ distance. On the D3PM test split, CrypticFlow achieves the lowest median and mean C$α$ RMSD at published baseline capacities. Across five independent training models, the median and mean direct RMSD are 1.333 $\\pm$ 0.056 angstroms and 2.766 $\\pm$ 0.041 angstroms, respectively. ",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.27143",
+      "version": "1",
+      "title": "GaLF-ST: Gaussian Latent Fields for Spatial Transcriptomics Reconstruction",
+      "authors": [
+        "Baichuan Yang",
+        "Yifan Luo",
+        "Yong Liu",
+        "Bing Su"
+      ],
+      "published": "2026-11-20T05:23:08Z",
+      "updated": "2026-11-20T05:23:08Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27143",
+      "comment": "10 pages, 3 figures, 2 tables. We will release the appendix and code with a future version of this preprint",
+      "abstract": "Spatial transcriptomics (ST) measures gene expression at known tissue locations to reveal tissue organization and cellular function. Expression prediction requires modeling both local spatial relationships and associations among genes. Existing methods typically model expression using coordinate networks without explicit spatial parameterization. To address limited spatial sampling and sparse expression observations of ST, some methods firstly fit intermediate embeddings and then train expression predictors, but a latent representation suited to expression reconstruction may be difficult to predict from spatial coordinates. The two training stages can impose different demands on the latent representation. In this paper, we propose GaLF-ST, a Gaussian latent field method in which learnable Gaussian centers and anisotropic covariances determine the weights of latent vectors at each location. A shared nonlinear decoder maps their weighted average to multigene expression. In GaLF-ST, observed expression error jointly updates the Gaussian geometry, latent vectors, and decoder parameters. We further establish a unified benchmark across seven dataset groups and three held-out fractions, c",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.27058",
+      "version": "1",
+      "title": "Structural Agreement Indicates Prediction Accuracy For Protein-Ligand Co-Folding",
+      "authors": [
+        "J. Henry Broster",
+        "Bojana Popovic",
+        "Diana Kondinskaia",
+        "Charlotte M. Deane",
+        "Fergus Imrie"
+      ],
+      "published": "2026-11-20T03:27:19Z",
+      "updated": "2026-11-20T03:27:19Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27058",
+      "comment": "30 pages, 9 figures, 20 supplementary figures, 3 supplementary tables. Code: https://github.com/oxpig/core-score",
+      "abstract": "Co-folding models predict the structures of proteins and their bound ligands, but their accuracy varies across targets. Their usefulness therefore depends on knowing which predictions a user can trust. Confidence scores are intended to guide that choice. However, across seven co-folding models, we show that confidence-based selection offers little improvement over choosing a prediction at random. For approximately three-quarters of structures, predictions are either exclusively correct or incorrect, leaving no opportunity for ranking to change the outcome. Moreover, high confidence does not reliably discriminate correct top-ranked predictions from incorrect ones. We find that structural agreement among predictions is a more accurate measure of likely success than current confidence scores. We capture this with the Concentration of Repeated Ensembles (CORE) Score, which combines cluster tightness with ensemble support. CORE Score discriminates top-1 success and oracle success, achieving mean ROC AUCs of 0.866 and 0.838, compared to 0.757 and 0.759 for ipTM. CORE Score also outperforms training set similarity measures, including ligand Tanimoto, protein sequence, and Runs N' Poses si",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.26794",
+      "version": "1",
+      "title": "Beyond Final Answers: Interpretable Tumor Immune Microenvironment Reasoning from H&E and mIF",
+      "authors": [
+        "Yixuan Duan",
+        "Kexin Geng",
+        "Hanwen Xu",
+        "Wei Qiu"
+      ],
+      "published": "2026-11-19T20:36:13Z",
+      "updated": "2026-11-19T20:36:13Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26794",
+      "comment": "23 pages, 12 figures, 13 tables",
+      "abstract": "Readouts of the tumor immune microenvironment (TIME), such as CD8+ T-cell density, intra-epithelial infiltration and the Ki67 index, combine tissue architecture from H&E with cell phenotypes from multiplex immunofluorescence (mIF). Multimodal large language models (MLLMs) could automate these readouts with an explanation, but two gaps remain. Pathology MLLMs read H&E alone, while these readouts need the cell phenotypes that mIF measures. And their reasoning has no step-level truth to be checked against, so R1-style reinforcement learning rewards only the final answer and leaves the reasoning unverified. Same-section H&E and mIF provide what both gaps lack: mIF measures every cell without manual annotation, which gives cell-level ground truth for each step that clinical guidelines prescribe, from delineating a tissue compartment to counting and normalizing the marker-positive cells within it. We therefore present HERMES (H&E-mIF Reasoning with Multimodal Evidence Supervision), an R1-style MLLM that reasons jointly over paired H&E and mIF in guideline steps and is trained with a process reward that checks every stated quantity against this truth. Across four field-level TIME tasks in",
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.27933",
+      "version": "1",
+      "title": "Mammalian gonadal development: origins, specification and differentiation of ovary and testis cell lineages",
+      "authors": [
+        "Serge Nef",
+        "Maeva Guy",
+        "Marie-Christine Chaboissier"
+      ],
+      "published": "2026-11-20T18:09:10Z",
+      "updated": "2026-11-20T18:09:10Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27933",
+      "comment": "32 pages, 5 figures",
+      "abstract": "Testicular and ovarian development requires the coordinated formation and assembly of multiple cell types that enable these organs to fulfill their roles in sexual differentiation, reproduction, and endocrine function. A defining feature of gonadal development is that both testes and ovaries arise from a common bipotential primordium, the genital ridge, composed of multipotent progenitors. In this Review, we synthesize current knowledge on the origin, specification, differentiation, and function of the major fetal gonadal somatic lineages, drawing primarily on mouse and human studies. We describe how the adrenogonadal primordium (AGP) gives rise to the gonadal primordium (GP), how coelomic epithelium-derived progenitors generate the supporting, steroidogenic/stromal, and supporting-like cell lineages, and how these progenitors become progressively fate-restricted. We highlight recent evidence for early lineage priming within spatially organized domains of the coelomic epithelium. We further examine the molecular pathways and cellular processes governing sex-specific differentiation of these lineages and discuss remaining gaps in our understanding of how bipotential gonads different",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.27590",
+      "version": "1",
+      "title": "ReCoFlow-MRI: Few-Step Conditional Flow Matching for GNL-Induced Nonlinear MRI Reconstruction",
+      "authors": [
+        "Qidi Luo",
+        "Hongli Chen",
+        "Jialiang Zhang",
+        "Yuting He",
+        "Yang Gao",
+        "Chunyi Liu",
+        "Yaohui Wang",
+        "Feng Liu",
+        "Shanshan Shan"
+      ],
+      "published": "2026-11-20T13:21:16Z",
+      "updated": "2026-11-20T13:21:16Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27590",
+      "comment": "",
+      "abstract": "Objective: Accelerated magnetic resonance imaging (MRI) reconstruction is challenging in the presence of gradient nonlinearity (GNL). GNL-induced nonlinear spatial encoding causes geometric distortions that compromise image-guided radiotherapy. Diffusion models require extensive sampling and rarely account for GNL. Flow matching shortens sampling, but velocity matching does not directly minimize the reconstruction error. We propose ReCoFlow-MRI, a conditional flow-matching framework for few-step GNL-corrected reconstruction. Methods: The calibrated GNL displacement field is integrated into the nonlinear encoding model to construct a distortion-corrected zero-filled image, which conditions a velocity field learned along a linear path from Gaussian noise to fully sampled images. The pretrained network is fine-tuned with a pixel-supervised endpoint loss on its five-step reconstruction. Results: On simulated fastMRI brain data, five-step ReCoFlow-MRI achieved the highest PSNR and SSIM among compared methods, including 128-step diffusion sampling. On MRI-Linac phantom and volunteer data, it achieved effective reconstruction and reduced the maximal geometric error from 24.95 to 2.12 mm, ",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.27146",
+      "version": "1",
+      "title": "Optical Scintillation Imaging for Dynamic Source Tracking Dosimetry During Prostate HDR Brachytherapy",
+      "authors": [
+        "Kevin Willy",
+        "Megan Clark",
+        "Petr Bruza",
+        "Shauna McVorran",
+        "David Gladstone"
+      ],
+      "published": "2026-11-20T05:27:39Z",
+      "updated": "2026-11-20T05:27:39Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.27146",
+      "comment": "21 pages, 6 Figures, submitted to Medical Physics",
+      "abstract": "High-dose-rate (HDR) brachytherapy is highly conformal, but its accuracy depends on catheter and source placement, and clinical workflows lack real-time in vivo dosimetry (IVD) that verifies delivery without disrupting the procedure. We characterize a scintillator-based optical dosimeter integrated into a transrectal probe that tracks source position, speed, dose rate, and time-resolved cumulative dose. A 67 mm x 5 mm line scintillator is imaged by a CMOS camera through a 30-degree endoscopic lens; geometric and flat-field corrections remove barrel distortion and vignetting. Absolute dose was calibrated with a TOPAS Monte Carlo model of the probe's air-cavity geometry. The system was validated in a water phantom with an Ir-192 source and needles at radial offsets of 7, 10, and 15 mm. Response varied by $\\pm$2\\% along the 67 mm scintillator and was linear over 5-21 cGy/s ($R^2 \\geq 0.995$). The Monte Carlo model showed a 3.75\\% dose-rate reduction relative to TG-43 water-equivalent conditions. In phantom, the system resolved a 3 mm needle displacement, confirmed by CT. Measured dose-rate profiles agreed with Monte Carlo in peak magnitude and spatial distribution, and integral dose a",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.26926",
+      "version": "1",
+      "title": "Topology-only Local Network Alignment, Part 2. DijSLA: Stochastic Greedy Extension for Cross-Species GO Annotation Prediction",
+      "authors": [
+        "Yiran Jin",
+        "Tingyin Ding",
+        "Utsav Jain",
+        "Grady Jaron Yu",
+        "Burwin Liu",
+        "Wayne B. Hayes"
+      ],
+      "published": "2026-11-20T00:22:11Z",
+      "updated": "2026-11-20T00:22:11Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26926",
+      "comment": "11 pages, 6 figures, 7 tables. Submitted to IEEE Transactions on Computational Biology and Bioinformatics",
+      "abstract": "Sequence similarity has long been a strong signal for protein function prediction, whereas the predictive value of network topology has been difficult to verify. Since a protein's function is largely defined by its interaction partners, and since similar interactions are expected across species, aligning protein-protein interaction (PPI) networks by topology alone should uncover functionally related proteins. Topology-only global network alignment has recently produced high-quality functional predictions, but it has yet to be shown that local regions of topological similarity can do the same. We introduce DijSLA (Dijkstra-inspired Stochastic Local Alignment), the first local network alignment algorithm designed from the ground up to use only topology. We adopt a seed-and-extend strategy: starting from seed pairs of proteins with similar network topology, we expand the alignment in a Dijkstra-inspired manner, following edges out of the aligned set to node pairs with near-maximal similarity. Rather than expanding deterministically, we inject randomness so that we can sample many high-quality alignments, in which node pairs with robust topological similarity \"rise above\" the noise and",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.26751",
+      "version": "1",
+      "title": "Three-Dimensional Ultrasound Localization Microscopy Using Hadamard-Encoded Multipulse and 4D Denoising on a 256-Channel System with a 1024-element Matrix Array: A Feasibility Study in Human Kidney Transplants",
+      "authors": [
+        "U-Wai Lok",
+        "Jingke Zhang",
+        "Jingyi Yin",
+        "Lijie Huang",
+        "Ryan M. DeRuiter",
+        "Yanzhe Zhao",
+        "Kaipeng Ji",
+        "Tao Wu",
+        "Qian Shi",
+        "Sanjeev Sethi",
+        "Kate M. Knoll",
+        "Dawn Boynton"
+      ],
+      "published": "2026-11-19T19:46:44Z",
+      "updated": "2026-11-19T19:46:44Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26751",
+      "comment": "",
+      "abstract": "Three-dimensional ultrasound localization microscopy (3D ULM) enables volumetric visualization of microvasculature beyond the acoustic diffraction limit, but its clinical translation remains limited by long acquisition times, low microbubble (MB) signal-to-noise ratio (SNR), and insufficient MB contrast, particularly on ultrasound systems with a limited number of acquisition channels. In this study, we developed an in-human 3D ULM framework for a 256-channel research ultrasound system equipped with a 1024-element matrix array. The framework combines diverging-wave Hadamard-encoded multipulse (HEM) transmission to enhance MB SNR with denoising strategy combining MB enhancement and four-dimensional non-local means filtering to improve MB contrast. The framework was implemented on a research ultrasound platform and evaluated in phantom experiments and four in vivo human kidney transplants. In phantom experiments, HEM improved the MB contrast ratio around 2 dB, while the proposed denoising strategy enhanced in vivo MB contrast by up to around 9 dB. 3D ULM reconstruction achieved a spatial resolution of approximately 84 um, as estimated by Fourier shell correlation. The number of recons",
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "score": 0,
+      "score_components": {}
+    }
+  ],
+  "notes": [
+    "Scores are log1p-damped weighted sums of the listed signals; zero means no external attention was found, not that the paper is unimportant.",
+    "The pool is the arXiv listing for the window (capped) plus window papers discussed on Hugging Face or Hacker News; it is not exhaustive for very large categories."
+  ]
+}

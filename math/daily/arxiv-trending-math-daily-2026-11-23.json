@@ -1,0 +1,477 @@
+{
+  "schema": "arxiv-trending-math/v1",
+  "category": "math",
+  "window": "daily",
+  "date": "2026-11-23",
+  "title": "Daily mathematics — arXiv announcement batch 2026-11-23: 10 notable recent papers",
+  "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.md",
+  "entry_count": 10,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv provides no official trending chart. This ordering is inferred from sparse attention/citation signals; the signal file has 150 scored candidate entries against 301 archive records, so it is not an exhaustive popularity ranking.",
+  "sections": [
+    {
+      "id": "paper-1",
+      "kind": "paper",
+      "title": "On the interplay between the anisotropy and the regularity of the coefficients in non autonomous problems",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.27877",
+      "arxiv_id": "2611.27877",
+      "arxiv_version": 1,
+      "published": "2026-11-20T17:22:50Z",
+      "categories": [
+        "math.AP"
+      ],
+      "authors": [
+        "Michela Eleuteri",
+        "Antonia Passarelli di Napoli"
+      ],
+      "themes": [
+        "Analysis & PDE"
+      ],
+      "abstract": "The authors establish local Lipschitz regularity for minimizers of non-autonomous integral functionals under a balance between coefficient regularity and non-uniform ellipticity.",
+      "claimed_result": "The authors’ Theorem 1.2 claims local W^{1,∞} regularity, with an interior gradient estimate, for local minimizers satisfying structural assumptions (F1)–(F6).",
+      "assumptions_and_setting": "A bounded open Ω⊂Rⁿ, n≥2; radial Uhlenbeck-type integrands with general gradient growth, p>1, and coefficient/ellipticity conditions including an Orlicz–Sobolev regularity balance.",
+      "unique_caveat": "The conclusion is conditional on the detailed structural assumptions (F1)–(F6); it does not cover arbitrary non-autonomous integrands.",
+      "evidence_for_ranking": {
+        "score": 2.197,
+        "score_components": {
+          "citations": 2.197
+        },
+        "semantic_scholar_citations": 2,
+        "influential_citations": 0,
+        "cross_lists": 0,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.27877v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.27877",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "kind": "paper",
+      "title": "Equivariant extension of $I_N$-finite tempered distributions on real flag varieties",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.27202",
+      "arxiv_id": "2611.27202",
+      "arxiv_version": 1,
+      "published": "2026-11-20T06:42:40Z",
+      "categories": [
+        "math.RT"
+      ],
+      "authors": [
+        "Junyan Xiao"
+      ],
+      "themes": [
+        "Algebra & number theory"
+      ],
+      "abstract": "For a real reductive group, the paper proves that every $I_N$-finite tempered distribution on a $Q$-stable Nash open subset of $G/P$ extends to the whole flag variety.",
+      "claimed_result": "Theorem A states that restriction from the full real flag variety to a Q-stable Nash open subset is surjective on spaces of I_N-finite tempered distributions.",
+      "assumptions_and_setting": "G is a real linear reductive group; P and Q are parabolic subgroups; F is a Casselman–Wallach representation of the Levi of P, and the distributions are tempered sections of the induced homogeneous bundle.",
+      "unique_caveat": "The extension theorem requires Q-stability and I_N-finiteness; it is not a statement for arbitrary open subsets or unrestricted distributions.",
+      "evidence_for_ranking": {
+        "score": 2.079,
+        "score_components": {
+          "citations": 1.386,
+          "influential_citations": 0.693
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 1,
+        "cross_lists": 0,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": "35 pages",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.27202v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.27202",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "kind": "paper",
+      "title": "A proof of Cigler's quadratic recurrence for Hankel determinants of Motzkin path generating functions",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.27575",
+      "arxiv_id": "2611.27575",
+      "arxiv_version": 1,
+      "published": "2026-11-20T13:11:42Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Tianxing Yu"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The paper proves Cigler’s conjectured quadratic recurrence for Hankel determinants built from weighted Motzkin-path generating polynomials, for every k≥0 and n≥2k+2.",
+      "claimed_result": "The author proves the stated recurrence for all k≥0 and n≥2k+2, and independently proves the companion determinant formula showing the determinants do not depend on c.",
+      "assumptions_and_setting": "Motzkin paths stay nonnegative; level steps weigh c+x at height zero and c above it; D_{k,n} is the n×n Hankel determinant of the endpoint-count polynomials.",
+      "unique_caveat": "The recurrence has the explicit range n≥2k+2; the companion c-independence claim had also recently been proved by V. Jandhyala, according to the author.",
+      "evidence_for_ranking": {
+        "score": 2.079,
+        "score_components": {
+          "citations": 1.386,
+          "influential_citations": 0.693
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 1,
+        "cross_lists": 0,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": "19 pages; an earlier version is on Zenodo, DOI 10.5281/zenodo.24369438",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.27575v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.27575",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "kind": "paper",
+      "title": "Hankel determinants of Motzkin path generating functions and the Hirota-Miwa equation",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.27755",
+      "arxiv_id": "2611.27755",
+      "arxiv_version": 1,
+      "published": "2026-11-20T15:44:20Z",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Haiming Sun"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The paper relates Cigler’s Motzkin-path Hankel recurrence to the Hirota–Miwa equation and extends related identities to other moment functionals and symplectic-character determinants.",
+      "claimed_result": "The author gives a second derivation of Cigler’s recurrence as a reduction of Hirota–Miwa, extends it to moment functionals with specified eventual Chebyshev recurrence coefficients, and derives further determinant identities.",
+      "assumptions_and_setting": "Weighted Motzkin-path moments and their Hankel determinants; the extension assumes a moment functional whose recurrence coefficients match the Chebyshev regime above a height N.",
+      "unique_caveat": "The generalized recurrence depends on the stated moment-functional recurrence condition; it is not asserted for arbitrary sequences of moments.",
+      "evidence_for_ranking": {
+        "score": 2.079,
+        "score_components": {
+          "citations": 1.386,
+          "influential_citations": 0.693
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 1,
+        "cross_lists": 0,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": "40 pages; ancillary files contain computer checks",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.27755v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.27755",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "kind": "paper",
+      "title": "Planar cut-and-project sets with interval windows are bi-Lipschitz equivalent to lattices",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.26707",
+      "arxiv_id": "2611.26707",
+      "arxiv_version": 1,
+      "published": "2026-11-19T19:05:29Z",
+      "categories": [
+        "math.MG",
+        "math.DS",
+        "math.NT"
+      ],
+      "authors": [
+        "Alan Haynes"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Algebra & number theory"
+      ],
+      "abstract": "Every planar cut-and-project set in R³ with a segment window, or a finite union of interval windows, is proved bi-Lipschitz equivalent to Z² without a Diophantine condition on the plane.",
+      "claimed_result": "The author proves the lattice equivalence for segment and finite-union-of-interval windows, and contrasts it with a compact countable-boundary window example that is not lattice-equivalent.",
+      "assumptions_and_setting": "A plane V⊂R³ not spanned by integer vectors, translated by x, with a transverse line-segment window; the result also covers finite unions of intervals.",
+      "unique_caveat": "The positive result is shape-specific: the paper’s own comparison example shows that compact windows with countable boundary can fail lattice equivalence.",
+      "evidence_for_ranking": {
+        "score": 1.886,
+        "score_components": {
+          "citations": 1.386,
+          "cross_lists": 0.5
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 0,
+        "cross_lists": 2,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": "42 pages, 1 figure",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.26707v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.26707",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-6",
+      "kind": "paper",
+      "title": "The weighted fundamental lemma for non-split groups",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.26750",
+      "arxiv_id": "2611.26750",
+      "arxiv_version": 1,
+      "published": "2026-11-19T19:45:10Z",
+      "categories": [
+        "math.RT",
+        "math.AG"
+      ],
+      "authors": [
+        "Cass Halleck-Dubé"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "The paper proves the Lie-algebra Weighted Fundamental Lemma for general quasi-split unramified groups via Higgs-bundle geometry, global cohomology, and a local-to-global argument.",
+      "claimed_result": "The author claims the Weighted Fundamental Lemma for Lie algebras and a deduction of Waldspurger’s nonstandard version, with consequences for stabilization of the twisted Arthur–Selberg trace formula.",
+      "assumptions_and_setting": "Quasi-split unramified reductive groups; the properness result for the stack of ξ-stable Higgs bundles assumes anisotropic center, and the stated twisted consequence is in good characteristic.",
+      "unique_caveat": "The announced downstream classification consequences are conditional on the paper’s characteristic and group hypotheses; the 190-page preprint has not been independently proof-checked here.",
+      "evidence_for_ranking": {
+        "score": 1.636,
+        "score_components": {
+          "citations": 1.386,
+          "cross_lists": 0.25
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 0,
+        "cross_lists": 1,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": "190 pages, 1 figure",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.26750v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.26750",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-7",
+      "kind": "paper",
+      "title": "Source Conditions and Sharp Transition Asymptotics for the Factorization Method with Far-Field Data",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.26778",
+      "arxiv_id": "2611.26778",
+      "arxiv_version": 1,
+      "published": "2026-11-19T20:11:26Z",
+      "categories": [
+        "math.NA",
+        "math.AP"
+      ],
+      "authors": [
+        "George Pelekanos",
+        "Koung Hee Leem"
+      ],
+      "themes": [
+        "Numerical analysis & computation",
+        "Analysis & PDE"
+      ],
+      "abstract": "For inverse acoustic scattering, the authors derive sharp regularization-bias and spectral-transition asymptotics for disc and more general impedance obstacles, including explicit interior, boundary, and exterior behavior.",
+      "claimed_result": "The authors derive Lambert-W transition asymptotics, quantitative threshold/boundary-location estimates, and a sharp spectral law for a class of analytic obstacles.",
+      "assumptions_and_setting": "Factorization-method reconstruction from far-field data for impedance obstacles; the general analytic normal-form result assumes a simply connected obstacle, analytic boundary, positive analytic impedance, and the conformal center inside.",
+      "unique_caveat": "The sharp analytic normal-form result is proved only for a single boundary component; the general-obstacle estimates are broader but weaker.",
+      "evidence_for_ranking": {
+        "score": 1.636,
+        "score_components": {
+          "citations": 1.386,
+          "cross_lists": 0.25
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 0,
+        "cross_lists": 1,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.26778v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.26778",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-8",
+      "kind": "paper",
+      "title": "Uniqueness of $L_{p}$ Minkowski Problem in the supercritical range near the affine exponent",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.27558",
+      "arxiv_id": "2611.27558",
+      "arxiv_version": 1,
+      "published": "2026-11-20T12:53:56Z",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "authors": [
+        "Devesh Rajpal"
+      ],
+      "themes": [
+        "Geometry & topology"
+      ],
+      "abstract": "For the isotropic $L_p$-Minkowski problem, the paper proves uniqueness in a dimension-dependent interval immediately below the affine-invariant exponent p=−n−1.",
+      "claimed_result": "The author establishes uniform C⁰ bounds and a spectral estimate, then proves uniqueness for p∈(−n−1−δ_n,−n−1) with δ_n>0.",
+      "assumptions_and_setting": "The isotropic L_p-Minkowski equation in dimension n, in the supercritical regime near the affine exponent p=−n−1.",
+      "unique_caveat": "The result covers only a dimension-dependent neighborhood below p=−n−1; it does not settle uniqueness throughout the full supercritical range.",
+      "evidence_for_ranking": {
+        "score": 1.636,
+        "score_components": {
+          "citations": 1.386,
+          "cross_lists": 0.25
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 0,
+        "cross_lists": 1,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": "10 pages",
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.27558v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.27558",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "paper-9",
+      "kind": "paper",
+      "title": "The Ritt problem is decidable",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.27008",
+      "arxiv_id": "2611.27008",
+      "arxiv_version": 1,
+      "published": "2026-11-20T02:37:11Z",
+      "categories": [
+        "math.AC",
+        "math.CA",
+        "math.LO"
+      ],
+      "authors": [
+        "Jason Fang",
+        "James Freitag",
+        "Matthew Harrison-Trainor"
+      ],
+      "themes": [
+        "Logic & foundations",
+        "Algebra & number theory"
+      ],
+      "abstract": "The authors give an affirmative solution to the Ritt decidability problem and derive equivalent decision procedures for several foundational differential-algebra tasks.",
+      "claimed_result": "Theorem 1.1 claims decidability of primality and prime decomposition for finitely generated radical differential ideals, finite generation from characteristic sets, and containment of prime differential ideals.",
+      "assumptions_and_setting": "Computable ordinary differential fields of characteristic zero with a splitting algorithm; the paper reduces the decision tasks to deciding containment of prime differential ideals.",
+      "unique_caveat": "The authors say the current algorithm is impractical and gives no effective runtime/sequence-length bounds; they disclose that the argument was generated using an AI model, making expert review especially important.",
+      "evidence_for_ranking": {
+        "score": 1.54,
+        "score_components": {
+          "hn_points": 1.04,
+          "cross_lists": 0.5
+        },
+        "semantic_scholar_citations": 0,
+        "influential_citations": 0,
+        "cross_lists": 2,
+        "hacker_news_points": 1,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.27008v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.27008",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json",
+        "https://news.ycombinator.com/item?id=50616812"
+      ]
+    },
+    {
+      "id": "paper-10",
+      "kind": "paper",
+      "title": "On the Laugesen--Siudeja Conjecture: A Sharp Lower Bound and Failure of the Upper Bound",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.27370",
+      "arxiv_id": "2611.27370",
+      "arxiv_version": 1,
+      "published": "2026-11-20T09:40:40Z",
+      "categories": [
+        "math.SP"
+      ],
+      "authors": [
+        "Zhengchao Ji"
+      ],
+      "themes": [
+        "Analysis & PDE"
+      ],
+      "abstract": "For every bounded convex planar domain, the paper proves the sharp lower bound λ₁A³/I>9π²/2 and gives a trapezoidal counterexample to the conjectured upper bound.",
+      "claimed_result": "The author proves the lower bound, approached by thin isosceles triangles, and exhibits an isosceles trapezoid with λ₁A³/I>12π², disproving the proposed upper bound.",
+      "assumptions_and_setting": "The first Dirichlet eigenvalue λ₁, area A, and centroidal polar moment of inertia I for bounded convex domains in the plane.",
+      "unique_caveat": "The conclusion is planar and assumes convexity; the counterexample disproves the proposed upper bound but does not characterize all possible upper estimates.",
+      "evidence_for_ranking": {
+        "score": 1.386,
+        "score_components": {
+          "citations": 1.386
+        },
+        "semantic_scholar_citations": 1,
+        "influential_citations": 0,
+        "cross_lists": 0,
+        "hacker_news_points": 0,
+        "hacker_news_comments": 0
+      },
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2611.27370v1",
+      "refs": [
+        "https://arxiv.org/abs/2611.27370",
+        "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-23.signals.json"
+      ]
+    }
+  ]
+}

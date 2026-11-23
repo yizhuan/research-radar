@@ -2,42 +2,57 @@
 
 ## Headline
 
-Virginia and Oregon filed the first state lawsuits against SpaceX over Grok's sexualized deepfakes, while Z.ai's GLM-5.4 launch showed Chinese labs competing on architecture rather than raw parameter count.
+Oregon and Virginia sue SpaceX over Grok's sexualized deepfakes, while Z.ai's GLM-5.4 debuts a Loop Transformer architecture. The day's episode is a split screen: legal accountability for consumer-facing image generation versus frontier efficiency gains in coding models.
 
 ## Top Developments
 
-### 1. Virginia and Oregon sue SpaceX over Grok sexualized deepfakes (xAI)
-The attorneys general of Virginia and Oregon filed separate but coordinated lawsuits against SpaceX and X Corp., alleging consumer-protection violations for allowing Grok to generate non-consensual intimate imagery and child sexual abuse material, and for misleading users about safeguards. Virginia filed in Richmond circuit court and Oregon in Multnomah County; both retained the firm of former New Jersey AG Matthew Platkin.
-Why it matters: Reported as the first state lawsuits over the issue, escalating legal exposure for the entity now housing xAI and Grok and setting a template for product-change demands.
-Refs: https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform, https://thenextweb.com/news/virginia-oregon-spacex-grok-lawsuit, https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/, https://www.engadget.com/2325111/two-states-sue-spacex-over-sexually-explicit-grok-deepfakes/
+### 1. Oregon and Virginia attorneys general sue SpaceX over Grok deepfakes and CSAM (xAI)
+Oregon AG Dan Rayfield and Virginia AG Jay Jones filed separate but similar lawsuits against SpaceX, parent of X and xAI (referred to in filings as 'SpaceX Super Intelligence'), alleging violations of state consumer protection laws. The suits claim xAI weakened safeguards and promoted a 'spicy mode' that allowed Grok Imagine to generate non-consensual intimate imagery and child sexual abuse material, while publicly assuring consumers protections were in place. Both seek financial damages.
+Why it matters: This is the most consequential event of the day: coordinated state-level legal action that directly challenges xAI's safety claims and marketing, with potential financial and operational consequences for Grok's image-generation features.
+Refs: https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/, https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform, https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit, https://www.engadget.com/2325111/two-states-sue-spacex-over-sexually-explicit-grok-deepfakes/, https://thehill.com/regulation/court-battles/6237551-virginia-oregon-lawsuit-spacex-ai/amp/
 
-### 2. Z.ai releases GLM-5.4, a looped 750B coding model (GLM)
-Z.ai (Zhipu AI) published a technical blog on 23 November releasing GLM-5.4, its first flagship built on a Loop Transformer that runs 28 layers of the GLM-5 base model twice to reach intelligence it compares to 2T-3T parameter models. It is available to GLM Coding Plan subscribers, in ZCode and Z.ai Chat, with API access and open weights promised after safety evaluation.
-Why it matters: Positions looping as an alternative to parameter scaling and frames 'Generalized Coding' as the lab's next capability frontier, with vision added.
-Refs: https://docs.z.ai/guides/llm/glm-5.4, https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model
+### 2. Z.ai releases GLM-5.4, its first Loop Transformer flagship (GLM)
+Z.ai (Zhipu AI) released GLM-5.4, a 750B-scale flagship built on a Loop Transformer that runs 28 layers of the GLM-5 base model twice per forward pass, which the company says reaches intelligence comparable to 2T-3T parameter models. It is available to GLM Coding Plan subscribers, ZCode, and Z.ai Chat, with standard API access and open weights promised after safety evaluation. Z.ai published no benchmark table for the flagship, citing only a 30B iso-parameter ablation.
+Why it matters: A notable architectural departure — depth via looping rather than parameter scaling — with immediate availability to coding-plan users, though the absence of published flagship benchmarks limits independent assessment.
+Refs: https://docs.z.ai/guides/llm/glm-5.4, https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model, https://glm5.app/glm-5-4, https://www.yicai.com/brief/103450913.html
 
-### 3. Alibaba releases Qwen4-Max preview to developers (Qwen)
-Alibaba released a preview of Qwen4-Max, available first on Alibaba's TokenPlan at a limited-time discount and in Qianwen Office, Qoder, the Qianwen app and QwenStudio. The company described deeper knowledge understanding, more three-dimensional world perception, and advanced coding and agentic abilities; developers posted 3D and game-generation demos.
-Why it matters: A minimal-announcement preview that drew global developer testing and was placed alongside competing frontier releases in expectations.
-Refs: https://www.pconline.com.cn/focus/2185/21854943.html?ad=9448
+### 3. Alibaba releases Qwen4-Max with 2.4 trillion parameters (Qwen)
+Alibaba released Qwen4-Max, described as the most powerful model in the Qwen line, with 2.4 trillion total parameters and 71 billion active per token in a sparse MoE design, native image recognition, and a million-token context window. It is available via token packages and API on QwenCloud and through QwenWork and QwenStudio; a preview version was also reported on Alibaba's TokenPlan. Alibaba said it plans smaller open-source models in the Qwen4 family.
+Why it matters: A frontier-scale release from Alibaba that positions Qwen4-Max against other top-tier models on coding, agentic tasks, and visual reasoning, with reported cost reductions versus Qwen3.8-Max.
+Refs: https://www.vietnam.vn/zh-cn/alibaba-phat-hanh-rong-rai-mo-hinh-ai-qwen4-max-2-400-ty-tham-so, https://www.pconline.com.cn/focus/2185/21854943.html?ad=9448, https://zh.wikipedia.org/wiki/%E5%8D%83%E9%97%AE%E5%A4%A7%E6%A8%A1%E5%9E%8B
 
-### 4. DeepSeek Harness ships large v0.2.3-alpha update (DeepSeek)
-DeepSeek released DeepSeek Harness v0.2.3-alpha.1, adding an experimental agent task timeline, a standalone code review page, a session status area, Git-repository plugin sources including private repos, seven connectors (Linear, Notion, Tencent Docs, Feishu, WeCom, Tencent Meeting, DingTalk), on-demand MCP tool loading, and experimental Computer Use support on Windows. A follow-up alpha.2 adjusted Node.js requirements the same day.
-Why it matters: Signals DSH's shift from an agent tool toward a full agent work platform, with unusually large changes behind a small version bump.
+### 4. DeepSeek tightens free-tier usage limits for the first time (DeepSeek)
+DeepSeek adjusted its free-user policy, capping single inputs at roughly 40,000 characters, ending continuation of long conversations inactive for more than seven days, and setting a daily conversation quota. Reports describe this as the company's first systematic usage management for free users; DeepSeek had not issued a unified public explanation as of the reports. Analysts frame it as rebalancing supply and demand after repeated outages and rising agent-driven token consumption.
+Why it matters: A signal that even cost-aggressive Chinese labs are moving toward quota-based resource allocation, with implications for how free-tier users and agent workloads are served.
+Refs: https://finance.sina.com.cn/jjxw/2026-11-23/doc-inizsuwk8376392.shtml, https://www.donews.com/article/detail/5138/110145.html
+
+### 5. DeepSeek Harness ships v0.2.3-alpha.1 with task timelines, code review, and plugin market upgrades (DeepSeek)
+DeepSeek Harness (DSH) released v0.2.3-alpha.1, adding an experimental task timeline plugin with blocker tracking, a session status area, an experimental Auto review permission mode, a standalone Code Review page for GitHub PRs and GitLab merge requests, Git-repository plugin sources including private repos, seven new connectors (including Feishu, WeCom, DingTalk, Notion, Linear), optional on-demand MCP tool loading, and experimental Computer Use support on Windows. A v0.2.3-alpha.2 followed the same day.
+Why it matters: Shows DeepSeek Harness evolving from an agent tool toward a fuller agent work platform, with enterprise-oriented connectors and review workflows.
 Refs: http://biznews.sohu.com/a/1105271603_122014422?scm=10008.1479_13-1479_13-68_68.4935001-2009001.0-1-0-0-0.0&spm=smpc.content.fd-d.52.1795430499984Ev9UJLP
 
-### 5. OpenAI extends ChatGPT dot testing to some Plus users (OpenAI)
-OpenAI engineering lead Thibault Sottiaux announced that ChatGPT dot, the always-on proactive agent, is being opened to a small number of ChatGPT Plus subscribers in limited testing, and made fully available to ChatGPT Business Standard users. The report notes dot previously covered Pro, Business Premium and Enterprise, and that model support was expanded earlier in the month to GPT-6 Astra and GPT-6.1 Terra.
-Why it matters: Broadens access to OpenAI's persistent agent beyond top tiers, though quota parity with higher plans remains unclear.
+### 6. Google DeepMind and Google Quantum AI use Gemini 4 agent teams to find cheaper quantum algorithms (Google)
+Google DeepMind and Google Quantum AI reported that teams of Gemini 4 agents found more efficient quantum algorithms for fusion, chemistry, and drug-design problems, with each result proved correct in the Lean theorem prover because the circuits are too large to test. The largest reported gain cut the cost of a quantum calculation for laser-driven fusion fuel by 11.8 times and reduced memory from 5,650 to 4,338 error-corrected qubits. Separate agent teams shared verified ideas in a common notebook and met every four hours to debate approaches; an outside checker re-ran every proof.
+Why it matters: A concrete demonstration of multi-agent AI applied to verifiable scientific discovery, with formal proof checking as a guard against agent error or gaming.
+Refs: https://thenextweb.com/news/google-deepmind-gemini-agents-quantum-algorithms-lean?via=dailydev
+
+### 7. OpenAI expands ChatGPT dot testing to some Plus users and Business Standard (OpenAI)
+OpenAI engineering lead Thibault Sottiaux announced that ChatGPT dot, an always-on proactive agent that works across linked apps on long-running tasks, is being extended to a small number of ChatGPT Plus subscribers and made fully available to ChatGPT Business Standard users. The feature was previously limited to Pro, Business Premium, and Enterprise. The report notes dot's model lineup was recently expanded to include GPT-6 Astra and GPT-6.1 Terra, plus iOS widget and shortcut integration and iMessage/RCS communication.
+Why it matters: Broadens access to OpenAI's persistent agent beyond top tiers, a step toward mainstream availability of always-on personal agents.
 Refs: https://tech.udn.com/tech/story/123454/9896197?list_ch2_index
 
 ## Cross-Org Themes
 
-- Chinese labs (Z.ai, Alibaba, DeepSeek) shipped model or agent-platform updates on the same day, competing on architecture and tooling rather than only scale
+- Chinese labs (Z.ai, Alibaba, DeepSeek) shipped or adjusted flagship model and agent products on the same day, underscoring competitive pressure in coding and agentic workloads
+- Agent products are maturing from chat interfaces toward persistent, multi-step work platforms across OpenAI, DeepSeek, and Google DeepMind
+
+## Rumors and Unverified Claims
+
+Reports describe Qwen4-Max as released while other coverage calls it a preview version on Alibaba's TokenPlan; the exact release status and full availability remain inconsistent across sources. Z.ai is reported to have a significantly larger model coming soon, and a 3-trillion-parameter model is mentioned as possibly launching next month, but neither is confirmed with details.
 
 ## Takeaway
 
-Watch whether the state complaints force concrete Grok product changes, and whether GLM-5.4's promised API access and open weights arrive after its safety evaluation.
+Watch how xAI responds to the state lawsuits and whether Grok Imagine's safeguards change materially; on the model side, the absence of published GLM-5.4 flagship benchmarks makes independent evaluation the next evidence to seek.
 
 ## Sources and Method
 

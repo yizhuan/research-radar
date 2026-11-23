@@ -1,0 +1,344 @@
+{
+  "schema": "arxiv-trending-physics/v1",
+  "category": "physics",
+  "window": "daily",
+  "date": "2026-11-23",
+  "title": "Physics on arXiv | 23 November 2026 announcement batch | 10 papers",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-23.md",
+  "entry_count": 10,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv supplies no official trending chart; ordering is inferred from limited corroborating signals, and citation evidence is sparse for papers only days old. It is not a popularity ranking.",
+  "snapshot_utc": "2026-11-23T20:19:27Z",
+  "arxiv_window": {
+    "start": "2026-11-19T19:00:00Z",
+    "end": "2026-11-20T19:00:00Z",
+    "announced": "2026-11-23T01:00:00Z",
+    "announcement_date": "2026-11-23"
+  },
+  "sections": [
+    {
+      "id": "2611.27430",
+      "kind": "paper",
+      "title": "Conductivity of electrolyte solutions: Self-consistent Debye-Hückel-Onsager theory",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.27430",
+      "arxiv_id": "2611.27430",
+      "arxiv_version": "1",
+      "published": "2026-11-20T10:30:02Z",
+      "categories": [
+        "cond-mat.stat-mech"
+      ],
+      "authors": [
+        "Yury Budkov",
+        "Nikolai Kalikin"
+      ],
+      "themes": [
+        "Condensed matter & materials"
+      ],
+      "abstract": "The authors develop a self-consistent Debye–Hückel–Onsager framework with smeared ionic charge distributions to derive conductivity contributions across aqueous and non-aqueous electrolytes.",
+      "claimed_result": "The paper derives analytic mean-field, correlation, and electrophoretic conductivity terms and reports agreement with published conductivity data across several valences, concentrations, and solvents.",
+      "evidence_type": "theoretical; analytic classical density-functional/Ornstein–Zernike framework compared with published aqueous and non-aqueous conductivity measurements",
+      "unique_caveat": "Ion- and solvent-specific charge-smearing lengths are fitted to data; predictive transfer beyond the tested solvents and input parameter uncertainty remain to be established.",
+      "ranking_evidence": "Candidate score 3.219, driven by 4 current Semantic Scholar citations (0 influential; about 1.17 current citations/day after age normalization); this is the strongest citation component in the supplied pool. PCCP publication/DOI is corroborating context, not a score component.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27430",
+        "https://doi.org/10.1039/d5cp04521e"
+      ]
+    },
+    {
+      "id": "2611.27980",
+      "kind": "paper",
+      "title": "Structure and relaxation of long-lived odd-parity modes in two-dimensional Fermi liquids",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.27980",
+      "arxiv_id": "2611.27980",
+      "arxiv_version": "1",
+      "published": "2026-11-20T18:58:07Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "authors": [
+        "Stan Boeve",
+        "Johannes Hofmann"
+      ],
+      "themes": [
+        "Condensed matter & materials"
+      ],
+      "abstract": "The authors calculate how odd-parity Fermi-surface distortions in two-dimensional Fermi liquids relax, finding that thermal dressing and large-angle scattering alter the leading-logarithmic prediction.",
+      "claimed_result": "Including nonlogarithmic collision-integral terms, the authors find partial thermal dressing and benchmark the constant-interaction relaxation spectrum against exact diagonalization, resolving a discrepancy with the leading-log estimate.",
+      "evidence_type": "theoretical; low-temperature collision-integral calculation, benchmarked against exact diagonalization for constant interactions",
+      "unique_caveat": "The exact-diagonalization agreement is reported for a bounded parameter range (m²T/T_F ≲ 0.4) and a constant-interaction benchmark; the general result assumes regular isotropic potentials.",
+      "ranking_evidence": "Candidate score 1.886 combines 1 current Semantic Scholar citation (0 influential; about 0.33 current citations/day after age normalization) and 2 cross-lists. The paired thermopower paper provides a concrete adjacent transport result, not independent confirmation.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27980"
+      ]
+    },
+    {
+      "id": "2611.27981",
+      "kind": "paper",
+      "title": "Thermopower overshoot from collinear scattering in two-dimensional Fermi liquids",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.27981",
+      "arxiv_id": "2611.27981",
+      "arxiv_version": "1",
+      "published": "2026-11-20T18:58:14Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "authors": [
+        "Johannes Hofmann"
+      ],
+      "themes": [
+        "Condensed matter & materials"
+      ],
+      "abstract": "The author predicts that thermal dressing of Fermi-surface distortions causes a wave-vector-dependent thermopower overshoot in two-dimensional Fermi liquids, including under realistic disorder.",
+      "claimed_result": "The kinetic calculation predicts an overshoot above the hydrodynamic thermopower followed by a fall toward the ballistic value, with low-temperature excess decreasing logarithmically rather than linearly.",
+      "evidence_type": "theoretical; kinetic-equation/collision-matrix calculation for two-dimensional Fermi liquids with disorder",
+      "unique_caveat": "The overshoot is a theoretical prediction, not a reported observation; the authors propose a high-mobility thermocouple as a possible test.",
+      "ranking_evidence": "Candidate score 1.886 combines 1 current Semantic Scholar citation (0 influential; about 0.33 current citations/day after age normalization) and 2 cross-lists. Its close connection to the preceding Fermi-liquid mode paper makes the two a coherent theoretical cluster, not independent confirmation.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27981"
+      ]
+    },
+    {
+      "id": "2611.27367",
+      "kind": "paper",
+      "title": "Regularizing gravity in the presence of matter fields",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.27367",
+      "arxiv_id": "2611.27367",
+      "arxiv_version": "1",
+      "published": "2026-11-20T09:38:53Z",
+      "categories": [
+        "gr-qc",
+        "hep-ph"
+      ],
+      "authors": [
+        "Raúl Carballo-Rubio",
+        "Chiara Coviello",
+        "Vania Vellucci"
+      ],
+      "themes": [
+        "Cosmology & gravitation"
+      ],
+      "abstract": "The authors derive conditions for regular spherical black-hole and cosmological geometries to remain regular when scalar, electromagnetic, or radiation matter fields are present.",
+      "claimed_result": "Within a class of second-order spherical gravitational theories whose vacuum solutions have bounded curvature, they find that matter coupling does not generically remove the possibility of regular solutions.",
+      "evidence_type": "theoretical; analysis of spherical black-hole and cosmological solutions with scalar fields, electromagnetic fields, and radiation fluids",
+      "unique_caveat": "The conclusions are conditional on spherical symmetry, second-order field equations, and the selected class of regular-vacuum theories; they do not establish regularity in generic spacetimes.",
+      "ranking_evidence": "Candidate score 1.636 combines 1 current Semantic Scholar citation (0 influential; about 0.29 current citations/day after age normalization) and 1 cross-list into hep-ph. Its stated conditions address both black-hole and cosmological geometries.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27367"
+      ]
+    },
+    {
+      "id": "2611.26737",
+      "kind": "paper",
+      "title": "Entropy production from crossing a quantum separatrix",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.26737",
+      "arxiv_id": "2611.26737",
+      "arxiv_version": "1",
+      "published": "2026-11-19T19:31:11Z",
+      "categories": [
+        "quant-ph",
+        "math-ph"
+      ],
+      "authors": [
+        "Peter Stabel",
+        "James R. Anglin"
+      ],
+      "themes": [
+        "Quantum information"
+      ],
+      "abstract": "The authors show that slow passage through a dense quantum avoided-crossing spectrum approaches a universal separatrix and produces diagonal entropy after realistic averaging over parameter ramps.",
+      "claimed_result": "In the quasi-continuous semiclassical limit, the paper derives a universal one-parameter family of separatrices and an entropy-production formula, with numerical examples retaining the behavior in finite systems.",
+      "evidence_type": "theoretical; semiclassical analysis with numerical examples for finite systems",
+      "unique_caveat": "The entropy result relies on averaging over small variations in parameter time dependence and on the extreme semiclassical/dense-spectrum regime; finite-size effects remain relevant.",
+      "ranking_evidence": "Candidate score 1.636 combines 1 current Semantic Scholar citation (0 influential; about 0.25 current citations/day after age normalization) and 1 cross-list. The universal semiclassical result is a concrete cross-disciplinary theory signal.",
+      "refs": [
+        "https://arxiv.org/abs/2611.26737"
+      ]
+    },
+    {
+      "id": "2611.27581",
+      "kind": "paper",
+      "title": "Disentangling Lengthscales in Disordered Fracture",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.27581",
+      "arxiv_id": "2611.27581",
+      "arxiv_version": "1",
+      "published": "2026-11-20T13:14:40Z",
+      "categories": [
+        "cond-mat.soft",
+        "cond-mat.dis-nn",
+        "cond-mat.other",
+        "cond-mat.stat-mech",
+        "physics.app-ph"
+      ],
+      "authors": [
+        "Matthaios Chouzouris",
+        "Marcelo A. Dias"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Computational & data methods"
+      ],
+      "abstract": "Using a two-dimensional random-fuse model with Weibull disorder, the authors distinguish the crack-tip screening length from the regularizing length in the quasibrittle size-effect law.",
+      "claimed_result": "Their simulations show distinct disorder dependences for the two length scales and suggest that the size-effect length may relate to percolation of pre-failure microfractures.",
+      "evidence_type": "computational; two-dimensional random-fuse simulations with Weibull-distributed disorder and a coarse-grained load-redistribution model",
+      "unique_caveat": "This is an idealized two-dimensional model; the proposed microfracture-percolation interpretation is a candidate mechanism, not an experimental validation in heterogeneous materials.",
+      "ranking_evidence": "Candidate score 1.000 from 4 cross-lists is the largest cross-list component among selected entries. The work connects disordered statistical physics with applied fracture mechanics.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27581"
+      ]
+    },
+    {
+      "id": "2611.27584",
+      "kind": "paper",
+      "title": "Bayesian Quantum Thermometry of Ultracold Gases with Non-Equilibrium Single-Atom Probes",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.27584",
+      "arxiv_id": "2611.27584",
+      "arxiv_version": "1",
+      "published": "2026-11-20T13:16:04Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.stat-mech",
+        "physics.data-an",
+        "quant-ph"
+      ],
+      "authors": [
+        "Julian Feß",
+        "Luca Granert",
+        "Sabrina Burgardt",
+        "Silvia Hiebel",
+        "Alexander Guthmann",
+        "Mohammad Mehboudi",
+        "Martí Perarnau-Llobet",
+        "Artur Widera"
+      ],
+      "themes": [
+        "Atomic, molecular & optical physics",
+        "Quantum information",
+        "Computational & data methods"
+      ],
+      "abstract": "The authors experimentally use non-equilibrium spin-exchange dynamics of single-atom probes for Bayesian ultracold-gas thermometry and find adaptive measurements need 2.5 times fewer repetitions than an unoptimized protocol for the prescribed precision.",
+      "claimed_result": "Adaptive expected-information-gain measurement reduces the average number of measurements required to reach a target precision by a factor of 2.5 versus the unoptimized protocol.",
+      "evidence_type": "experimental; spin-based single-atom probes immersed in an ultracold atomic bath, with Bayesian inference from measured spin populations",
+      "unique_caveat": "Inference depends on probe spin dynamics and measurement settings; the paper identifies intersections of temperature-dependent population trajectories as a source of ambiguity.",
+      "ranking_evidence": "Candidate score 0.750 from 3 cross-lists; an openly deposited dataset (Zenodo DOI 10.5281/zenodo.24390998) adds a reproducibility signal outside the score.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27584",
+        "https://doi.org/10.5281/zenodo.24390998"
+      ]
+    },
+    {
+      "id": "2611.27955",
+      "kind": "paper",
+      "title": "Molecular structure breaks universality in screening behavior of electrolyte solutions",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.27955",
+      "arxiv_id": "2611.27955",
+      "arxiv_version": "1",
+      "published": "2026-11-20T18:27:33Z",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cond-mat.soft",
+        "physics.chem-ph",
+        "physics.comp-ph"
+      ],
+      "authors": [
+        "Anna T. Bui",
+        "Connie J. Fairchild",
+        "Dominic P. W. Thomas",
+        "Stephen J. Cox"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Computational & data methods"
+      ],
+      "abstract": "Using machine-learned classical density-functional theory across increasingly detailed electrolyte models, the authors find solvent and ion structure change screening modes and exponents, opposing a universal law across these models.",
+      "claimed_result": "The calculations find solvent attraction can add a monotonic decay mode, solvent polarity can produce re-entrant behavior, and ionic structure can change screening-length exponents.",
+      "evidence_type": "computational; machine-learned classical density-functional calculations over a hierarchy of electrolyte models",
+      "unique_caveat": "The result is model-based rather than a new measurement; mapping the model hierarchy onto specific concentrated solutions requires experimental comparison.",
+      "ranking_evidence": "Candidate score 0.750 from 3 cross-lists. The paper addresses the disputed universality of concentrated-electrolyte screening with a systematic model hierarchy.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27955"
+      ]
+    },
+    {
+      "id": "2611.27328",
+      "kind": "paper",
+      "title": "60-cm-long In-vacuum Zerodur Optical Cavity for Optical Lattice Atom Interferometry",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.27328",
+      "arxiv_id": "2611.27328",
+      "arxiv_version": "1",
+      "published": "2026-11-20T09:07:54Z",
+      "categories": [
+        "physics.atom-ph",
+        "physics.ins-det",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "authors": [
+        "Philip Wondrak",
+        "Paola Luna",
+        "Kenneth Nakasone",
+        "Andrei Zhukov",
+        "Michael Grisham",
+        "Garrett D. Cole",
+        "Po-han Chen",
+        "Cristian D. Panda"
+      ],
+      "themes": [
+        "Instrumentation & detectors",
+        "Atomic, molecular & optical physics"
+      ],
+      "abstract": "The authors describe and characterize a 60-cm in-vacuum Zerodur cavity designed to support long-coherence optical-lattice atom interferometry and localized gravity measurements.",
+      "claimed_result": "They measure mirror vibration below 5 nm/√Hz across 2 Hz–100 kHz and a 15 MHz resonance drift over 47 hours, which they report can be stabilized with an integrated piezo.",
+      "evidence_type": "experimental; optical-cavity prototype with measured mirror vibration and resonance drift",
+      "unique_caveat": "Millimeter wavepacket separation and one-minute measurement duration are design goals; the abstract reports cavity characterization rather than a completed atom-interferometry demonstration.",
+      "ranking_evidence": "Candidate score 0.750 from 3 cross-lists; measured vibration/drift characterization gives a concrete instrumentation result within the tied-score group.",
+      "refs": [
+        "https://arxiv.org/abs/2611.27328"
+      ]
+    },
+    {
+      "id": "2611.26693",
+      "kind": "paper",
+      "title": "Topological phases protected by half-chiral symmetry",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.26693",
+      "arxiv_id": "2611.26693",
+      "arxiv_version": "1",
+      "published": "2026-11-19T19:00:12Z",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "authors": [
+        "Chen-Shen Lee",
+        "Itamar Kimchi"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Quantum information"
+      ],
+      "abstract": "The authors formulate topological protection by half-chiral symmetry, with real-space invariants and boundary modes, and construct a two-dimensional model with a protected zero-energy corner state.",
+      "claimed_result": "For a half-chiral Kekulé honeycomb model, the authors show higher-order topology protects a single zero-energy mode at one corner.",
+      "evidence_type": "theoretical; symmetry and topological-invariant construction illustrated with a two-dimensional lattice Hamiltonian",
+      "unique_caveat": "The result is a theoretical construction; the symmetry condition must be realized and distinguished from ordinary chiral symmetry in a material platform.",
+      "ranking_evidence": "Candidate score 0.750 from 3 cross-lists. Its proposed symmetry framework and boundary-state construction are the concrete result used to break the tie within the score group.",
+      "refs": [
+        "https://arxiv.org/abs/2611.26693"
+      ]
+    }
+  ]
+}

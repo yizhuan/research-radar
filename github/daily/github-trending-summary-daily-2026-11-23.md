@@ -4,80 +4,79 @@
 
 | Field | Value |
 | --- | --- |
-| Snapshot time (UTC) | 2026-11-23 17:21 UTC |
+| Snapshot time (UTC) | 2026-11-23 20:25 UTC |
 | Scope | Daily |
 | Date range | 2026-11-23 through 2026-11-23 |
-| Ranking basis | GitHub Trending daily star gains, corroborated against primary repository pages and current default-branch commits; signal score used as a secondary tie/context signal |
+| Ranking basis | Deterministic daily attention score (Trending star gains plus 30-day trending persistence), with live Trending gains corroborated |
 
 ## Headline
 
-The sharpest signal is the spread of agent-oriented software: security skills, development workflows, software-to-CLI bridges, and CI repair agents all feature among the leaders. AI-enabled media and research workflows also drew substantial attention, while MiniMind shows continued interest in accessible, end-to-end LLM training.
+Today’s strongest momentum clusters around agent workflows and agent-facing tools: Claude-BugHunter leads the signal set with +2,037 stars, while Superpowers, CLI-Anything, and several other agent projects also drew substantial gains. Web data, media production, model training, and local-first productivity round out the picture.
 
 ## Top Repositories
 
-1. **[elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) - A Claude Code skill bundle for bug hunting and authorized external red-team work, with vulnerability-class playbooks and disclosed-report patterns.**
+1. **[elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter)  - A Claude Code skill bundle for bug hunting and external red-team work, with vulnerability-class skills, disclosed-report patterns, and enterprise attack matrices.**
 
-  **Language:** Python | **Stars gained in window:** +2,037 | **Total stars:** 19,272 | **Why notable:** Highest daily gain and signal score (9.12); the README describes a sizeable, structured security skill bundle. Use only on authorized targets.
+  **Language:** Python | **Stars gained in window:** +2,037 | **Total stars:** 19,510 | **Trending page rank:** #1 | **Signal score:** 9.120 | **Why notable:** The highest signal score (9.120) and largest daily gain (+2,037); its README describes a modular, scope-conscious security workflow built from installable skills and commands.
 
-2. **[XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3) - A cross-platform downloader project with a broad feature set.**
+2. **[XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3)  - A cross-platform downloader supporting multiple protocols and media sources.**
 
-  **Language:** Python | **Stars gained in window:** +1,078 | **Total stars:** 16,107 | **Why notable:** Second-highest daily gain and score (8.484); its repository README presents it as a general-purpose downloader. The README is primarily Chinese, with English also available.
+  **Language:** Python | **Stars gained in window:** +1,078 | **Total stars:** 16,206 | **Trending page rank:** #15 | **Signal score:** 8.484 | **Why notable:** Second-highest signal score (8.484) and +1,078 stars; the README distinguishes it with a single desktop workflow spanning HTTP, BitTorrent, FTP, streaming formats, video sites, and browser handoff.
 
-3. **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) - Website search and extraction infrastructure that turns web content into agent-ready data.**
+3. **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)  - Web data infrastructure for agents, with search, scraping, and access to data providers.**
 
-  **Language:** TypeScript | **Stars gained in window:** +920 | **Total stars:** 207,653 | **Why notable:** Third-highest daily gain (+920; score 8.325); its README documents local/self-hosted and hosted modes plus SDKs.
+  **Language:** TypeScript | **Stars gained in window:** +920 | **Total stars:** 207,766 | **Trending page rank:** #6 | **Signal score:** 8.325 | **Why notable:** The +920 gain and 8.325 score put it among the strongest signals; its README presents a three-way design—local binary, hosted cloud, or self-hosted server—with MCP/API interfaces.
 
-4. **[zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) - An open-source desktop, CLI, and MCP tool that turns long-form videos into short clips and publishing assets.**
+4. **[zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip)  - An open-source AI video clipping and content-repurposing desktop tool for turning long videos into short-form edits.**
 
-  **Language:** Python | **Stars gained in window:** +908 | **Total stars:** 14,257 | **Why notable:** Nearly matched Firecrawl's gain (score 8.312); the README describes a multi-platform workflow from source link to edited video, cover, and copy. The project says its software is free while cloud models are usage-billed.
+  **Language:** Python | **Stars gained in window:** +908 | **Total stars:** 14,315 | **Trending page rank:** #16 | **Signal score:** 8.312 | **Why notable:** A +908 gain and 8.312 score signal strong interest in end-to-end creator tooling; the README says desktop, CLI, and MCP workflows produce video, subtitles, covers, and publishing copy.
 
-5. **[obra/superpowers](https://github.com/obra/superpowers) - A composable skills framework and software-development methodology for coding agents.**
+5. **[obra/superpowers](https://github.com/obra/superpowers)  - An agentic skills framework and software-development methodology for coding agents.**
 
-  **Language:** Shell | **Stars gained in window:** +838 | **Total stars:** 324,834 | **Why notable:** Strong daily gain (score 8.232) for an established project; its README emphasizes spec-first planning, test-driven development, and subagent-driven implementation.
+  **Language:** Shell | **Stars gained in window:** +838 | **Total stars:** 324,930 | **Trending page rank:** #2 | **Signal score:** 8.232 | **Why notable:** Its +838 gain and 8.232 score keep agent-development workflows near the top; the README emphasizes a gated sequence of specification, approved design, implementation planning, TDD, and subagent execution across multiple harnesses.
 
-6. **[jingyaogong/minimind](https://github.com/jingyaogong/minimind) - A tutorial and implementation for training small language models from scratch.**
+6. **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)  - A small, from-scratch language-model training project designed to make the training pipeline accessible.**
 
-  **Language:** Python | **Stars gained in window:** +828 | **Total stars:** 69,336 | **Why notable:** One of the day's leading gains (score 8.22); the README lays out a full learning path spanning pretraining, fine-tuning, preference optimization, and tool use, with lightweight models as the entry point.
+  **Language:** Python | **Stars gained in window:** +828 | **Total stars:** 69,381 | **Trending page rank:** #4 | **Signal score:** 8.220 | **Why notable:** The +828 gain and 8.220 score mark practical model-building as a parallel theme; its README exposes a broad learning path from pretraining and SFT through fine-tuning, preference optimization, tool use, and distillation.
 
-7. **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) - An agent skill that researches topics across social, video, news, and web sources, then synthesizes findings.**
+7. **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)  - An AI-agent research skill that searches social, video, community, prediction-market, and web sources.**
 
-  **Language:** Python | **Stars gained in window:** +790 | **Total stars:** 73,275 | **Why notable:** Its +790 gain (score 8.173) points to demand for source-aggregating research workflows; the README describes a multi-source agent-led pipeline and support for multiple skills hosts.
+  **Language:** Python | **Stars gained in window:** +790 | **Total stars:** 73,349 | **Trending page rank:** #10 | **Signal score:** 8.173 | **Why notable:** The +790 gain and 8.173 score point to demand for agent-driven research synthesis; the README frames its differentiator as scoring discussion signals rather than relying only on editorial selection.
 
-8. **[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) - A project for making desktop and other software operable by agents through generated command-line interfaces.**
+8. **[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)  - A project aiming to make software usable through agent-native command-line interfaces.**
 
-  **Language:** Python | **Stars gained in window:** +783 | **Total stars:** 63,389 | **Why notable:** The +783 gain (score 8.164) makes agent-native interfaces a major theme; its README shows generated CLI workflows across creative and technical applications.
+  **Language:** Python | **Stars gained in window:** +783 | **Total stars:** 63,481 | **Trending page rank:** #3 | **Signal score:** 8.164 | **Why notable:** The +783 gain and 8.164 score reinforce the agent-tooling cluster; its central premise is to expose existing software through CLI surfaces that coding agents can operate.
 
-9. **[mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) - A reference playbook and pre-submission checks for Apple App Store and Google Play requirements.**
+9. **[mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance)  - A playbook and pre-submission guard for App Store and Google Play review requirements.**
 
-  **Language:** Shell | **Stars gained in window:** +755 | **Total stars:** 4,707 | **Why notable:** High daily gain relative to its smaller base (score 8.128); its README is explicit that scans cannot guarantee approval and some checks need human judgment.
+  **Language:** Shell | **Stars gained in window:** +755 | **Total stars:** 4,815 | **Trending page rank:** #12 | **Signal score:** 8.128 | **Why notable:** A +755 gain on a relatively small signal total (4,815) gives it a strong score of 8.128; it brings policy checks and compliance knowledge into agent-assisted app development.
 
-10. **[cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) - An agent skill for creating branded diagrams as self-contained HTML and SVG.**
+10. **[cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)  - An agent skill for producing editorial diagrams as self-contained HTML and SVG.**
 
-  **Language:** HTML | **Stars gained in window:** +624 | **Total stars:** 70,800 | **Why notable:** Its +624 gain (score 7.938) reflects demand for polished outputs from coding agents; the README describes 52 diagram types and import/export workflows.
+  **Language:** HTML | **Stars gained in window:** +624 | **Total stars:** 70,877 | **Trending page rank:** #9 | **Signal score:** 7.938 | **Why notable:** Its +624 gain and 7.938 score make design tooling a visible supporting theme; the README differentiates it with 52 diagram types and a single-file HTML/SVG output.
 
-11. **[toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) - A local-first workspace combining documents, canvas, and planning.**
+11. **[toeverything/AFFiNE](https://github.com/toeverything/AFFiNE)  - A privacy-focused, local-first knowledge workspace combining documents, whiteboards, and planning.**
 
-  **Language:** TypeScript | **Stars gained in window:** +593 | **Total stars:** 77,228 | **Why notable:** A substantial +593 daily gain (score 7.887); the primary README positions it as a privacy-focused Notion/Miro alternative with merged docs, canvas, and tables.
+  **Language:** TypeScript | **Stars gained in window:** +593 | **Total stars:** 77,299 | **Trending page rank:** #14 | **Signal score:** 7.887 | **Why notable:** A +593 gain and 7.887 score provide a counterpoint to the agent-heavy list: interest also reaches a user-facing, local-first productivity suite.
 
-12. **[Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) - A self-hosted CLI agent that investigates failed CI runs and proposes fixes for review.**
+12. **[Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre)  - A self-hosted CLI agent for diagnosing CI/CD failures and proposing fixes.**
 
-  **Language:** Python | **Stars gained in window:** +438 | **Total stars:** 14,713 | **Why notable:** The +438 gain (score 7.584) adds an operational, reviewable agent workflow to the developer-tooling cluster; its README labels the project public alpha.
+  **Language:** Python | **Stars gained in window:** +438 | **Total stars:** 14,755 | **Trending page rank:** #13 | **Signal score:** 7.584 | **Why notable:** Its +438 gain and 7.584 score show infrastructure operations joining the agent trend; the README describes a reviewable flow from failed run to diagnosis and proposed fix.
 
 ## Trending Technologies and Themes
 
-- **Agent skills and software-development workflows:** Claude-BugHunter, Superpowers, last30days-skill, and app-store-compliance package domain workflows as reusable agent skills or playbooks.
-- **Agent-native software interfaces and operations:** CLI-Anything turns applications into agent-usable CLIs, while OpenSRE applies an agent to CI diagnosis and proposed repair; Firecrawl supplies web data for agent workflows.
-- **AI-assisted media and creative output:** AutoClip automates short-video production, and diagram-design focuses on consistent visual artifacts from coding agents.
-- **Accessible LLM learning:** MiniMind foregrounds small-scale training and an end-to-end, inspectable model-development path.
-- **Productivity applications remain in the mix:** AFFiNE's privacy-first, local-first workspace is a non-agent-centric counterweight among the day's large gains.
-- **Languages:** Python appears in 7 of the 12 selected repositories, TypeScript in 2, Shell in 2, and HTML in 1. This is a directional count of the selected set, not the full Trending page.
+- **Agent workflows and agent-facing software:** Claude-BugHunter, Superpowers, CLI-Anything, and App Store Compliance turn security, development methodology, software control, or policy knowledge into structured tools for coding agents.
+- **Agent infrastructure and research:** Firecrawl targets web ingestion for agents; Last30days-skill packages cross-source research synthesis; OpenSRE applies an agent to CI/CD diagnosis and proposed fixes.
+- **Practical AI creation:** MiniMind makes model-training code inspectable, while AutoClip automates long-to-short video production.
+- **Beyond agents:** Ghost Downloader combines multiple download protocols in a desktop utility; AFFiNE represents local-first knowledge work; Diagram Design focuses on agent-assisted visual output.
+- **Languages:** Python appears in 7 of the 12 selected repos, TypeScript in 2, Shell in 2, and HTML in 1 (GitHub primary-language labels).
 
 ## Takeaway
 
-Today's leaders suggest that GitHub attention is clustering around practical ways to give agents repeatable capabilities: specialized skills, software interfaces, research inputs, and guarded operational actions. The breadth of use cases—from security and CI to video and compliance—matters more than any single model trend; the signal is GitHub attention, not proof of product quality or adoption.
+The snapshot suggests the strongest appetite is for agent systems that make work operational—repeatable workflows, software interfaces, research access, and security or reliability tasks—rather than for a single model release. At the same time, meaningful gains for creator, desktop, and local-first workspace tools show the trend is spreading into end-user workflows.
 
 ## Sources and Method
 
-- **Primary source:** [GitHub Trending - Today](https://github.com/trending?since=daily); candidate ranks, daily star gains, total stars, descriptions, languages, and signal scores from the supplied daily signal file generated at 2026-11-23 17:21 UTC.
-- **Corroboration:** GitHub REST API repository records, default-branch commit endpoints, and each selected repository's primary README via `https://api.github.com/repos/{owner}/{repo}` and `/readme`. All 12 selected repositories were confirmed as current, non-fork, non-archived repositories; their default-branch commit SHAs are recorded in the JSON sidecar.
-- **Method note:** Ranked by the matching daily Trending view's star gains; the signal score is a secondary context signal and includes the available 30-day trending-day component (all selected entries were marked as trending on 3 days). Snapshot deltas (`delta_1d`, `delta_7d`, `delta_30d`) were unavailable for all candidates because the snapshot collector could not authenticate with GitHub CLI. Null deltas are not treated as zero. Trending counts are snapshots and may differ slightly from later GitHub REST totals. No prior-window comparison was available, so no Notable Shifts section is claimed. The 12 entries are the highest daily gain candidates by signal; zero score was not used as an exclusion criterion.
+- **Primary source:** [GitHub Trending — daily](https://github.com/trending?since=daily), fetched on 2026-11-23; each of the 12 selected repositories and its stars-today value matched the signal file.
+- **Corroboration:** Public GitHub REST repository and default-branch commit endpoints (`https://api.github.com/repos/{owner}/{repo}` and `/commits/{default_branch}`) verified repository identity, language, active status, and current commit. API star totals queried later were a few stars above/below the harvested totals, so reported totals remain the signal-file snapshot values.
+- **Method note:** Selected the 12 highest-scoring candidates from the supplied daily signal file; each score reflects its deterministic attention signal. The matching live Trending page returned the same daily gain for all 12 selected entries. All 12 had `days_trending_30d: 3`; `delta_1d`, `delta_7d`, and `delta_30d` were unavailable (`null`) because the star-snapshot source failed with GitHub CLI HTTP 401 (bad credentials). No prior-window comparison is available, so no notable-shifts claim is made.

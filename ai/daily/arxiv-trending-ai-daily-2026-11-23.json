@@ -1,0 +1,524 @@
+{
+  "schema": "arxiv-trending-ai/v1",
+  "category": "ai",
+  "window": "daily",
+  "date": "2026-11-23",
+  "title": "AI on arXiv — daily notable papers, 23 November 2026",
+  "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.md",
+  "entry_count": 10,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart; ordering is inferred from sparse attention signals and cross-list breadth, with limited citation evidence for recent papers. This is not a measure of readership or overall importance.",
+  "arxiv_window": {
+    "start": "2026-11-19T19:00:00Z",
+    "end": "2026-11-20T19:00:00Z",
+    "announced": "2026-11-23T01:00:00Z",
+    "announcement_date": "2026-11-23"
+  },
+  "snapshot_utc": "2026-11-23T19:53:02Z",
+  "categories_queried": [
+    "cs.AI",
+    "cs.LG",
+    "stat.ML",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO",
+    "cs.NE",
+    "cs.MA"
+  ],
+  "signal_source": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json",
+  "sections": [
+    {
+      "id": "2611.27784",
+      "kind": "paper",
+      "title": "Neural Defend ARCAS 290M: A Robust Foundation Model for AI-Generated Audio Detection",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.27784",
+      "arxiv_id": "2611.27784",
+      "arxiv_version": "1",
+      "published": "2026-11-20T16:11:09Z",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SD",
+      "authors": [
+        "Sivashankar Selvarajan",
+        "Piyush Verma",
+        "Sumit Kumar",
+        "Sharayu N. Deshmukh"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Safety & alignment"
+      ],
+      "abstract": "The authors present a frozen audio-forgery detector evaluated across ten public benchmarks, multiple generators, recording conditions and languages, reporting strong results including first place on Podonos and the lowest commercial-detector equal error rate on ASVspoof5.",
+      "claimed_contribution": "The authors claim a single frozen model generalizes across audio generators, channels, recording settings, and languages, with the benchmark and leaderboard results summarized in the arXiv abstract.",
+      "unique_caveat": "The abstract reports benchmark and leaderboard evaluations but does not describe prospective deployment or error rates across operational populations; the claimed generality should be read within the tested settings.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Highest signal score in the pool (1.636): Semantic Scholar reports 1 current citation (weighted component 1.386), plus 1 cross-list (0.25). No HF/HN points surfaced in the candidate score components.",
+      "score": 1.636,
+      "score_components": {
+        "citations": 1.386,
+        "cross_lists": 0.25
+      },
+      "attention_signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.27784",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2611.27784?fields=title%2CcitationCount%2CinfluentialCitationCount"
+      ]
+    },
+    {
+      "id": "2611.27050",
+      "kind": "paper",
+      "title": "Towards Text-Mask Consistency in Medical Image Segmentation",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.27050",
+      "arxiv_id": "2611.27050",
+      "arxiv_version": "1",
+      "published": "2026-11-20T03:19:25Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "authors": [
+        "Jie Gui",
+        "Hang Tu",
+        "Wen Sha",
+        "Xiuquan Du"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The authors introduce C2Seg, combining cluster-aware soft contrastive labels, bidirectional complementary attention, and KAN-based attention gating to improve text-mask consistency and segmentation accuracy on four public medical-imaging datasets.",
+      "claimed_contribution": "The authors attribute improved text-mask consistency and segmentation accuracy to C2Seg and report results on four public datasets (arXiv abstract).",
+      "unique_caveat": "Evidence in the abstract is limited to four public datasets; it does not establish performance across other clinical sites or deployment workflows.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 1.386, entirely from 1 current Semantic Scholar citation (weighted component 1.386); no cross-list contribution. No HF/HN points surfaced in the candidate score components. The arXiv record notes ICLR 2026 poster acceptance.",
+      "score": 1.386,
+      "score_components": {
+        "citations": 1.386
+      },
+      "attention_signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.27050",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json",
+        "https://api.semanticscholar.org/graph/v1/paper/ARXIV%3A2611.27050?fields=title%2CcitationCount%2CinfluentialCitationCount"
+      ]
+    },
+    {
+      "id": "2611.27618",
+      "kind": "paper",
+      "title": "Potential emergence in LLM agents: a statistical physics perspective",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.27618",
+      "arxiv_id": "2611.27618",
+      "arxiv_version": "1",
+      "published": "2026-11-20T13:46:24Z",
+      "categories": [
+        "cs.LG",
+        "cond-mat.stat-mech",
+        "cs.AI",
+        "cs.CL",
+        "nlin.AO"
+      ],
+      "primary_category": "cs.LG",
+      "authors": [
+        "Zhuo-Yang Song",
+        "Hua Xing Zhu"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Safety & alignment"
+      ],
+      "abstract": "The authors model agent states and a global potential to describe how post-training organizes LLM-agent reasoning, demonstrating the framework on safety-test selection and physics-reasoning audits using Qwen3.5-9B.",
+      "claimed_contribution": "The authors propose agent states as measurable intermediate variables and report that potential structure strengthens during post-training in their two Qwen3.5-9B tasks (arXiv abstract).",
+      "unique_caveat": "The empirical demonstration described in the abstract uses one model family and two tasks, so it does not establish that the proposed state/potential account transfers broadly.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 1.000, entirely from 4 cross-listings (weighted component 1.000), including cs.AI and cs.CL; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      },
+      "attention_signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.27618",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "2611.27489",
+      "kind": "paper",
+      "title": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.27489",
+      "arxiv_id": "2611.27489",
+      "arxiv_version": "1",
+      "published": "2026-11-20T11:35:56Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LO",
+        "cs.RO",
+        "eess.SY"
+      ],
+      "primary_category": "cs.AI",
+      "authors": [
+        "Oliver Schön",
+        "Adrien Banse",
+        "John Lygeros",
+        "Lars Lindemann"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Efficient inference & systems"
+      ],
+      "abstract": "The authors replace free-form LLM generation with predefined-answer classification for translating natural-language instructions into linear temporal logic, reporting comparable or better accuracy than local LLMs on three benchmarks at up to an order of magnitude lower runtime and energy use.",
+      "claimed_contribution": "The authors report that a System-One classifier approach matches or exceeds the best local LLMs on three benchmarks and generalizes to unseen atomic propositions and temporal patterns (arXiv abstract).",
+      "unique_caveat": "The abstract does not specify how the benchmark results translate to safety or reliability in physical deployments; the reported evidence is benchmark-based.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 1.000 from 4 cross-listings (weighted component 1.000), including AI, language, and robotics; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      },
+      "attention_signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.27489",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "2611.26936",
+      "kind": "paper",
+      "title": "SecretAgent: A Multi-Agent Framework for Privacy Protection against Vision Language Models",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.26936",
+      "arxiv_id": "2611.26936",
+      "arxiv_version": "1",
+      "published": "2026-11-20T00:46:20Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CR",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CV",
+      "authors": [
+        "Minda Zhao",
+        "Yue Zhang",
+        "Mengyu Wang"
+      ],
+      "themes": [
+        "Safety & alignment",
+        "Multimodal & vision-language",
+        "Agents & reasoning"
+      ],
+      "abstract": "SecretAgent uses LLM agents to identify image evidence that reveals private information and iteratively tune low-visibility perturbations; the authors report privacy and image-fidelity results across four applications, five datasets, and six VLMs.",
+      "claimed_contribution": "The authors claim the framework improves image fidelity while achieving state-of-the-art privacy protection in the four tested applications and transfers to other VLMs (arXiv abstract).",
+      "unique_caveat": "The abstract evaluations cover five datasets and six VLMs; privacy against other model families, image transformations, or attacker capabilities is not established there.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 1.000 from 4 cross-listings (weighted component 1.000), including AI, machine learning, and multiagent systems; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      },
+      "attention_signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.26936",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "2611.26902",
+      "kind": "paper",
+      "title": "Perceive Once, Escalate on Demand: Handing Off Visual KV Memory from Small to Large VLMs",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.26902",
+      "arxiv_id": "2611.26902",
+      "arxiv_version": "1",
+      "published": "2026-11-19T23:32:52Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CV",
+      "authors": [
+        "Qiang Zhou",
+        "Jianing Deng",
+        "Siyan Dong",
+        "Jingxian Chen",
+        "Han-Yi Lin",
+        "Jingtong Hu"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Efficient inference & systems",
+        "Robotics & control"
+      ],
+      "abstract": "Baton maps a small VLM visual KV cache into a larger VLM memory for uncertain decisions; the authors report near re-watching performance with 28–47% less compute and up to 8× less compute per escalation at 64 frames.",
+      "claimed_contribution": "The authors report that a learned per-layer linear map lets the larger model reuse the smaller model visual memory, with results on RoboMME and zero-shot transfer to OpenEQA (arXiv abstract).",
+      "unique_caveat": "The reported compute and performance results are tied to the evaluated model pairs, datasets, and escalation setup; broader deployment costs are not established in the abstract.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 1.000 from 4 cross-listings (weighted component 1.000), spanning AI, language, learning, and robotics; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      },
+      "attention_signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.26902",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "2611.27810",
+      "kind": "paper",
+      "title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.27810",
+      "arxiv_id": "2611.27810",
+      "arxiv_version": "1",
+      "published": "2026-11-20T16:36:57Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "primary_category": "cs.AI",
+      "authors": [
+        "Côme Hosxe",
+        "Rachid Riad",
+        "Quentin Spinat"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Multimodal & vision-language",
+        "Safety & alignment"
+      ],
+      "abstract": "SLP-Bench scores acoustic claims in audio-language-model reasoning against clinician ratings across five datasets and 25 perceptual dimensions; the authors report that zero-shot claims are imperfect and unstable, while GRPO fine-tuning improves claim accuracy and agreement.",
+      "claimed_contribution": "The authors contribute a clinician-referenced benchmark for checking factuality, stability, and consistency of acoustic reasoning claims, and report a GRPO fine-tuning improvement (arXiv abstract).",
+      "unique_caveat": "Dataset access is available on request and subject to the providers approval, which may constrain independent reproduction (arXiv abstract).",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 0.750 from 3 cross-listings (weighted component 0.750), including AI, language, and learning; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "attention_signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.27810",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "2611.27689",
+      "kind": "paper",
+      "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.27689",
+      "arxiv_id": "2611.27689",
+      "arxiv_version": "1",
+      "published": "2026-11-20T14:55:07Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.MA"
+      ],
+      "primary_category": "cs.RO",
+      "authors": [
+        "Zhenxuan Fan",
+        "Zhuoya Wang",
+        "Yuqian Yuan",
+        "Wenqiao Zhang",
+        "Juncheng Li",
+        "Jun Xiao",
+        "Siliang Tang",
+        "Yueting Zhuang"
+      ],
+      "themes": [
+        "Robotics & control",
+        "Agents & reasoning"
+      ],
+      "abstract": "Embodied-Harness pairs an acting agent with a reflector that turns execution evidence into reusable guidance without updating model parameters; the authors report results on three benchmarks and real-world trials across three manipulation tasks.",
+      "claimed_contribution": "The authors report success rates of 82.4%, 76.7%, and 94.4% on RoboTwin 2.0, RoboSPA, and RMBench, plus 96.7% average success across three real-world tasks (arXiv abstract).",
+      "unique_caveat": "The abstract describes real-world evaluation on only three manipulation tasks; broader task and environment coverage remains unshown there.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 0.750 from 3 cross-listings (weighted component 0.750), connecting robotics, AI, vision, and multiagent systems; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "attention_signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.27689",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "2611.27092",
+      "kind": "paper",
+      "title": "PLoQ: A Prompt-Specific Low-Rank Basis for 4-bit Quantization of LLM Activations",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.27092",
+      "arxiv_id": "2611.27092",
+      "arxiv_version": "1",
+      "published": "2026-11-20T04:07:37Z",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.DC",
+        "cs.PF"
+      ],
+      "primary_category": "cs.LG",
+      "authors": [
+        "Faraz Tahmasebi",
+        "Michael Pellauer",
+        "Hyoukjun Kwon",
+        "Sitao Huang"
+      ],
+      "themes": [
+        "Efficient inference & systems",
+        "Training & adaptation"
+      ],
+      "abstract": "PLoQ estimates a prompt-specific low-rank basis during prefill, quantizes dominant activation directions separately, and restores them within the matrix multiplication; the authors report improvements over mixed-precision baselines on six Llama and Qwen models.",
+      "claimed_contribution": "The authors report better perplexity recovery than the compared quantization method across six models from 1B to 70B parameters, with modest reported prefill and decode overhead on Llama-3.1-8B (arXiv abstract).",
+      "unique_caveat": "The reported comparison uses a particular mixed-precision setup and sequence lengths up to 8k tokens (16k for two models); results beyond those configurations are not established in the abstract.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 0.750 from 3 cross-listings (weighted component 0.750), spanning learning, language, and computer systems; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "attention_signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.27092",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    },
+    {
+      "id": "2611.26980",
+      "kind": "paper",
+      "title": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.26980",
+      "arxiv_id": "2611.26980",
+      "arxiv_version": "1",
+      "published": "2026-11-20T01:55:52Z",
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.MA",
+        "cs.OS"
+      ],
+      "primary_category": "cs.DC",
+      "authors": [
+        "Colin Hong",
+        "Bryan Shan",
+        "Wei Siong Pang",
+        "Chengzhi Lu",
+        "Xu Guo",
+        "Nitin Shivaraman",
+        "Tao Luo",
+        "Esha Choukse",
+        "Kisson Lin",
+        "Dmitrii Ustiugov"
+      ],
+      "themes": [
+        "Efficient inference & systems",
+        "Agents & reasoning"
+      ],
+      "abstract": "Contexture uses tool-operation history and runtime cache state to evict superseded context from agent execution while preserving the full conversation record; the authors report higher throughput under service-level objectives across two models, two harnesses, and two benchmarks.",
+      "claimed_contribution": "The authors report 20–73% throughput improvement over the best listed baselines under SLO in tested configurations and up to 11% lower GPU energy per completed session (arXiv abstract).",
+      "unique_caveat": "Live-agent experiments report a worst-case accuracy loss of 3.7 percentage points versus unloaded no-eviction, despite a 1.4-point mean gain; throughput benefits therefore need to be considered alongside accuracy (arXiv abstract).",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-23",
+      "evidence_for_ranking": "Signal score 0.750 from 3 cross-listings (weighted component 0.750), including AI and multiagent systems; Semantic Scholar lists 0 citations. No HF/HN points surfaced in the candidate score components.",
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "attention_signals": {
+        "cross_lists": 3,
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.26980",
+        "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-23.signals.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "schema": "arxiv-trending-math/v1",
+  "category": "math",
+  "window": "daily",
+  "date": "2026-11-24",
+  "title": "arXiv Mathematics — 24 November 2026 batch: 8 notable new papers",
+  "source_report": "/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-24.md",
+  "entry_count": 8,
+  "entry_noun": "papers",
+  "global_caveat": "This is an inferred shortlist, not an official arXiv trending chart. All selected signal scores arise from cross-listing; no direct attention score was found in the candidate records, and usable citation evidence is unavailable for this very recent batch. A zero score is not evidence of unimportance.",
+  "window_start": "2026-11-20T19:00:00Z",
+  "window_end": "2026-11-23T19:00:00Z",
+  "announced": "2026-11-24T01:00:00Z",
+  "snapshot_time": "2026-11-24T03:12:41Z",
+  "sections": [
+    {
+      "id": "2611.29234",
+      "kind": "paper",
+      "title": "Möbius Fusion Algebra",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.29234",
+      "arxiv_id": "2611.29234",
+      "arxiv_version": "1",
+      "published": "2026-11-22T05:12:11Z",
+      "categories": [
+        "math.QA",
+        "hep-th",
+        "math-ph",
+        "math.GT"
+      ],
+      "authors": [
+        "Ippo Orii",
+        "Yuji Tachikawa"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Mathematical physics",
+        "Algebra & number theory"
+      ],
+      "abstract": "For a pseudo-unitary modular tensor category with an anti-monoidal involution, the authors define a generally noncommutative Möbius fusion algebra and give a formula for dimensions of its simple modules.",
+      "claimed_result": "The authors prove the algebra is semisimple and identify its simple-module dimensions using the modular S-matrix and data from the involution; they interpret this as a non-orientable analogue of the Verlinde formula.",
+      "score": 0.75,
+      "signal": "Three cross-lists (0.25 each); top-score tie. The arXiv comment links animated proof versions for two propositions.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.29234"
+      ],
+      "assumptions_and_setting": "The input is a pseudo-unitary modular tensor category together with an anti-monoidal involution; the motivation is Reshetikhin–Turaev-type TQFT on non-orientable manifolds.",
+      "unique_caveat": "The authors explicitly do not construct the proposed non-orientable TQFT in full generality; the formula’s TQFT role remains an expected interpretation.",
+      "evidence_for_ranking": "Three cross-lists (0.25 each); top-score tie. The arXiv comment links animated proof versions for two propositions."
+    },
+    {
+      "id": "2611.29063",
+      "kind": "paper",
+      "title": "Strong holonomicity of functions on curves",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.29063",
+      "arxiv_id": "2611.29063",
+      "arxiv_version": "1",
+      "published": "2026-11-21T22:04:37Z",
+      "categories": [
+        "math.AG",
+        "math.QA",
+        "math.RA",
+        "math.RT"
+      ],
+      "authors": [
+        "Yuri Berest",
+        "Isaac Goldberg"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Analysis & PDE"
+      ],
+      "abstract": "For a smooth affine irreducible complex curve, the authors show that a local solution-counting index of a differential operator equals the Calogero–Moser index of its Weyl closure, then apply it to annihilators of locally holomorphic functions.",
+      "claimed_result": "The authors prove that the holonomicity index computed by counting solutions in truncated local rings at singular points equals the Calogero–Moser index of the Weyl closure; they use this to compute indices for selected function annihilators.",
+      "score": 0.75,
+      "signal": "Three cross-lists (0.25 each); top-score tie. Its claimed equality connects a local differential-equation invariant to a geometric classification of operator ideals.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.29063"
+      ],
+      "assumptions_and_setting": "The main theorem concerns nonzero differential operators on a smooth affine irreducible curve over C and the corresponding global differential-operator ring.",
+      "unique_caveat": "The paper computes the invariant in selected examples rather than giving a universal closed formula for every holonomic function; its proposed colored-Jones extension is conjectural, not proved here.",
+      "evidence_for_ranking": "Three cross-lists (0.25 each); top-score tie. Its claimed equality connects a local differential-equation invariant to a geometric classification of operator ideals."
+    },
+    {
+      "id": "2611.28623",
+      "kind": "paper",
+      "title": "Neural Schrödinger Bridge via Yasue Action with Applications to Generative Modeling",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.28623",
+      "arxiv_id": "2611.28623",
+      "arxiv_version": "1",
+      "published": "2026-11-21T07:17:00Z",
+      "categories": [
+        "math.OC",
+        "cs.LG",
+        "stat.CO",
+        "stat.ML"
+      ],
+      "authors": [
+        "Yan-Han Chen",
+        "Abhishek Halder",
+        "Hailiang Liu"
+      ],
+      "themes": [
+        "Optimization & control",
+        "Numerical analysis & computation"
+      ],
+      "abstract": "The authors propose a neural Schrödinger-bridge solver that learns a deterministic velocity field from endpoint samples through a saddle-point formulation using the Yasue action.",
+      "claimed_result": "The authors derive a saddle-point formulation and report consistency for it, then demonstrate the method on synthetic and real data in low and high dimensions; the learned ODE velocity replaces the usual learned SDE drift.",
+      "score": 0.75,
+      "signal": "Three cross-lists (0.25 each); top-score tie. Placed after tied algebraic results because the abstract reports a solver and numerical demonstrations rather than a structural theorem.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28623"
+      ],
+      "assumptions_and_setting": "It uses samples from source and target distributions rather than known density functions; the stated Schrödinger-bridge existence setting assumes finite second moments.",
+      "unique_caveat": "The abstract supports effectiveness through numerical experiments, not a broad independent benchmark or a general performance guarantee over all generative tasks.",
+      "evidence_for_ranking": "Three cross-lists (0.25 each); top-score tie. Placed after tied algebraic results because the abstract reports a solver and numerical demonstrations rather than a structural theorem."
+    },
+    {
+      "id": "2611.28614",
+      "kind": "paper",
+      "title": "Deterministic regularisation of the nonsymmetric eigenproblem",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.28614",
+      "arxiv_id": "2611.28614",
+      "arxiv_version": "1",
+      "published": "2026-11-21T06:57:56Z",
+      "categories": [
+        "math.NA",
+        "cs.CC",
+        "math.SP"
+      ],
+      "authors": [
+        "Matthew J. Colbrook"
+      ],
+      "themes": [
+        "Numerical analysis & computation"
+      ],
+      "abstract": "The author gives a deterministic exact-arithmetic algorithm that perturbs a complex contraction to a simple-spectrum matrix with controlled eigenbasis conditioning and computes the resulting eigensystem.",
+      "claimed_result": "For a complex contraction A of order n≥2 and 0<δ<1/2, the author claims a deterministic algorithm finding ||E||<δ such that A+E has simple spectrum, with the condition-number/minimum-gap ratio bounded by C(n/δ)^(20/3), using O(n^3 log^d(n/δ)) real-field operations and comparisons.",
+      "score": 0.5,
+      "signal": "Two cross-lists (0.25 each); claimed resolution of an open complexity problem and explicit perturbation and operation bounds support placement within the score tier.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28614"
+      ],
+      "assumptions_and_setting": "The guarantee is for complex contractions in exact arithmetic, with absolute constants C and d; the algorithm also computes an exact eigensystem of the perturbed matrix.",
+      "unique_caveat": "These bounds are stated for the contraction-and-perturbation setting, not as a uniform guarantee for every unmodified nonsymmetric eigenproblem.",
+      "evidence_for_ranking": "Two cross-lists (0.25 each); claimed resolution of an open complexity problem and explicit perturbation and operation bounds support placement within the score tier."
+    },
+    {
+      "id": "2611.28776",
+      "kind": "paper",
+      "title": "A Proof of Blackburn's Conjecture on Non-Overlapping Codes",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.28776",
+      "arxiv_id": "2611.28776",
+      "arxiv_version": "1",
+      "published": "2026-11-21T12:39:26Z",
+      "categories": [
+        "cs.IT",
+        "cs.DM",
+        "math.CO"
+      ],
+      "authors": [
+        "Yeow Meng Chee"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "For non-overlapping codes of fixed length over large alphabets, the author proves Blackburn’s conjecture about optimal codes and characterizes the codes attaining Levenshtein’s bound.",
+      "claimed_result": "The author proves Blackburn’s conjecture: for every code length n and all sufficiently large alphabet sizes q, the best non-overlapping codes are maximum ones; the abstract also identifies the equality cases for Levenshtein’s bound.",
+      "score": 0.5,
+      "signal": "Two cross-lists (0.25 each); explicit proof of a named conjecture and equality characterization make this a concrete result in the score tier.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28776"
+      ],
+      "assumptions_and_setting": "Codewords have fixed length n over an alphabet of size q; “non-overlapping” means no nonempty proper prefix of a codeword is a suffix of a codeword.",
+      "unique_caveat": "The abstract states an eventual-in-q result but does not give the threshold for “sufficiently large” q.",
+      "evidence_for_ranking": "Two cross-lists (0.25 each); explicit proof of a named conjecture and equality characterization make this a concrete result in the score tier."
+    },
+    {
+      "id": "2611.28580",
+      "kind": "paper",
+      "title": "The Gerards-Schrijver conjecture on the Edmonds-Johnson property is false",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.28580",
+      "arxiv_id": "2611.28580",
+      "arxiv_version": "1",
+      "published": "2026-11-21T05:23:50Z",
+      "categories": [
+        "math.CO",
+        "cs.DM",
+        "math.OC"
+      ],
+      "authors": [
+        "Alberto Del Pia"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics",
+        "Optimization & control"
+      ],
+      "abstract": "The author disproves a proposed forbidden-minor characterization by constructing a minimal 5×6 totally half-modular matrix that violates the Edmonds–Johnson property but contains neither of the two conjectured minors.",
+      "claimed_result": "The author gives a 5×6 counterexample with no minor equal to either of the two specified matrices, and proves it is minimal by reducing every proper minor to known classes with the property.",
+      "score": 0.5,
+      "signal": "Two cross-lists (0.25 each); explicit minimal counterexample and proof that every proper minor has the property provide concrete progress on the conjecture.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28580"
+      ],
+      "assumptions_and_setting": "The statement concerns totally half-modular integral matrices and the equality of the first Chvátal closure with the integer hull for the specified bounded systems.",
+      "unique_caveat": "This refutes the proposed characterization; it does not supply a replacement classification of all matrices with the Edmonds–Johnson property.",
+      "evidence_for_ranking": "Two cross-lists (0.25 each); explicit minimal counterexample and proof that every proper minor has the property provide concrete progress on the conjecture."
+    },
+    {
+      "id": "2611.28255",
+      "kind": "paper",
+      "title": "Reduction types of curves in tame extensions",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.28255",
+      "arxiv_id": "2611.28255",
+      "arxiv_version": "1",
+      "published": "2026-11-20T19:42:19Z",
+      "categories": [
+        "math.NT",
+        "math.AG",
+        "math.CO"
+      ],
+      "authors": [
+        "Júlia Martínez-Marín"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology",
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "For curves over discretely valued fields, the author gives sufficient conditions under which a tame base extension determines the curve’s reduction type, along with an algorithm for possible types using harmonic graph covers.",
+      "claimed_result": "Under sufficient conditions on the original reduction type R and a tame extension degree n, the new reduction type is uniquely determined; the author also gives an algorithm for possible types and a characterization of tame curves with potentially good reduction.",
+      "score": 0.5,
+      "signal": "Two cross-lists (0.25 each); connects arithmetic geometry with graph combinatorics and provides a reduction-type algorithm and a characterization of potentially good reduction.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28255"
+      ],
+      "assumptions_and_setting": "C/K has genus at least one over a discretely valued field with algebraically closed residue field; the extension L/K is finite and tame. The abstract highlights zero abelian and toric ranks as a case satisfying the sufficient conditions.",
+      "unique_caveat": "Outside the stated sufficient conditions, the result is an algorithm for possibilities rather than a uniqueness theorem for every reduction type.",
+      "evidence_for_ranking": "Two cross-lists (0.25 each); connects arithmetic geometry with graph combinatorics and provides a reduction-type algorithm and a characterization of potentially good reduction."
+    },
+    {
+      "id": "2611.29166",
+      "kind": "paper",
+      "title": "Improved Lower Bound on the Hadwiger-Debrunner Numbers",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.29166",
+      "arxiv_id": "2611.29166",
+      "arxiv_version": "1",
+      "published": "2026-11-22T02:52:46Z",
+      "categories": [
+        "math.CO",
+        "cs.CG"
+      ],
+      "authors": [
+        "Chaya Keller"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The author improves asymptotic lower bounds for the Hadwiger–Debrunner piercing numbers using parallelotopes and the hypergraph container method.",
+      "claimed_result": "For d≥2 the author proves HD_d(p,d+1)≥p^(d−o(1)), and more generally HD_d(p,q)≥p^((q−1)/(q−d)−o(1)); the bound is tight up to polylogarithmic factors among families with bounded VC dimension.",
+      "score": 0.25,
+      "signal": "One cross-list (0.25), weaker cross-list proxy than the higher-ranked entries; selected for explicit asymptotic exponents on a longstanding extremal-geometric problem.",
+      "announcement_type": "new submission",
+      "announcement_batch": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.29166"
+      ],
+      "assumptions_and_setting": "The setting is the (p,q)-theorem for families of convex sets in R^d, with p≥q≥d+1; the stated tightness comparison is restricted to bounded-VC-dimension families.",
+      "unique_caveat": "The bound is asymptotic and does not determine the exact Hadwiger–Debrunner numbers; the bounded-VC tightness statement is not a claim of tightness for all convex-set families.",
+      "evidence_for_ranking": "One cross-list (0.25), weaker cross-list proxy than the higher-ranked entries; selected for explicit asymptotic exponents on a longstanding extremal-geometric problem."
+    }
+  ]
+}

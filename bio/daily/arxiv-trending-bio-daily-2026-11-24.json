@@ -1,0 +1,428 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "daily",
+  "date": "2026-11-24",
+  "title": "arXiv Biology and Biomedicine — 2026-11-24 announcement batch",
+  "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-24.md",
+  "entry_count": 10,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart and its biomedical coverage is incomplete; this inferred relevance ranking is not a popularity chart, and many clinical and experimental preprints appear on bioRxiv or medRxiv.",
+  "date_range": {
+    "start": "2026-11-20T19:00:00Z",
+    "end": "2026-11-23T19:00:00Z"
+  },
+  "announcement_date": "2026-11-24",
+  "announcement_time_utc": "2026-11-24T01:00:00Z",
+  "snapshot_time_utc": "2026-11-24T03:09:05Z",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "arXiv Biology and Biomedicine — 2026-11-24 announcement batch",
+      "rank": null,
+      "url": "",
+      "text": "Ten notable recent papers; relevance-oriented ordering because no candidates had detected HF or HN attention. arXiv has no official trending chart and incomplete biomedical coverage.",
+      "global_caveat": "ArXiv is not a representative index of biomedical research; much clinical and experimental work appears on bioRxiv or medRxiv."
+    },
+    {
+      "id": "01-general-purpose-language-models-are-neurosymbolic-reasoners-able-to-annotate-proteins-from-sequence",
+      "kind": "paper",
+      "title": "General-purpose language models are neurosymbolic reasoners able to annotate proteins from sequence",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.28529",
+      "arxiv_id": "2611.28529",
+      "arxiv_version": "v1",
+      "published": "2026-11-21T03:32:51Z",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Christopher J. Mungall",
+        "Marcin P. Joachimiak"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "The authors tested general-purpose language models on protein-annotation tasks, including Pfam domains, catalytic-residue loss, and structure or activity prediction, reporting above-chance performance.",
+      "claimed_contribution": "The preprint argues that generalist models can combine sequence and symbolic reasoning for protein annotation; its tests were above chance, and the authors report confident hallucinations as well as correct calls.",
+      "unique_caveat": "The authors did not benchmark against specialized tools, and the paper reports model predictions rather than experimental validation of protein function.",
+      "evidence_for_ranking": "0.50, entirely from 2 cross-lists; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28529"
+      ]
+    },
+    {
+      "id": "02-vega-a-scalable-software-hardware-co-design-for-genome-alignment-using-rvv-extension",
+      "kind": "paper",
+      "title": "VEGA: A Scalable Software-Hardware Co-design for Genome Alignment using RVV Extension",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.28741",
+      "arxiv_id": "2611.28741",
+      "arxiv_version": "v1",
+      "published": "2026-11-21T11:22:43Z",
+      "categories": [
+        "eess.SP",
+        "cs.AR",
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Weihong Xu",
+        "Shijie Xu",
+        "Qunyou Liu",
+        "Giovanni Ansaloni",
+        "Cheng Zhuo",
+        "David Atienza"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "VEGA combines RISC-V vector instructions and a software-hardware design to accelerate dynamic-programming genome alignment, reporting up to 15.1× and 9.7× speedups for Edit Distance and Smith–Waterman versus the Ara2-RVV vector baseline.",
+      "claimed_contribution": "The preprint reports algorithm benchmarks and post-synthesis hardware results, including 1.0% area overhead against a standard RISC-V core.",
+      "unique_caveat": "These are computational and synthesis evaluations, not biological validation; the reported speedups are relative to the stated vector baseline.",
+      "evidence_for_ranking": "0.50, entirely from 2 cross-lists; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28741"
+      ]
+    },
+    {
+      "id": "03-nonequilibrium-fluctuations-could-explain-the-hot-mitochondria-paradox",
+      "kind": "paper",
+      "title": "Nonequilibrium fluctuations could explain the hot mitochondria paradox",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.28225",
+      "arxiv_id": "2611.28225",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T19:00:47Z",
+      "categories": [
+        "cond-mat.stat-mech",
+        "physics.bio-ph",
+        "q-bio.SC"
+      ],
+      "authors": [
+        "Matthew P. Leighton",
+        "Benjamin B. Machta"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors propose that nonequilibrium cellular fluctuations and frequency-sensitive molecular thermometers could produce apparent mitochondrial temperature elevations without a true steady-state 10 K gradient.",
+      "claimed_contribution": "The preprint offers a physical explanation for previously reported apparent mitochondrial temperature differences, arguing that probe response to nonequilibrium fluctuations could account for them at biologically attainable power.",
+      "unique_caveat": "This is a theoretical proposal, not a new measurement or experimental test of the proposed probe mechanism.",
+      "evidence_for_ranking": "0.50, entirely from 2 cross-lists; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28225"
+      ]
+    },
+    {
+      "id": "04-fastcrest-gpu-accelerated-crest-conformer-searches-with-consistent-energies-and-gradients",
+      "kind": "paper",
+      "title": "FastCREST: GPU-Accelerated CREST Conformer Searches with Consistent Energies and Gradients",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.28599",
+      "arxiv_id": "2611.28599",
+      "arxiv_version": "v1",
+      "published": "2026-11-21T06:12:30Z",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Supantha Dey",
+        "Nilusha L Kariyawasam",
+        "Ratul Chowdhury"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "FastCREST distributes and GPU-accelerates CREST molecular conformer searches, reporting faster evaluations and close agreement with CREST 3.0.2 for energies, gradients, and tested conformer searches.",
+      "claimed_contribution": "The preprint reports a complete 274-atom gallium(III)-peptide search taking 54.3 hours versus 321.5 hours for the stated CREST 3.0.2 run, with hardware differences noted by the authors.",
+      "unique_caveat": "The evidence is computational benchmarking on a limited set of molecules; speed and numerical agreement do not establish improved agreement with experimental conformations.",
+      "evidence_for_ranking": "0.00, with 0 cross-lists and no detected HF or HN engagement; zero is not evidence of unimportance.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28599"
+      ]
+    },
+    {
+      "id": "05-towards-edge-artificial-intelligence-for-predicting-antimicrobial-resistance-in-mycobacterium-tuberculosis",
+      "kind": "paper",
+      "title": "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.29143",
+      "arxiv_id": "2611.29143",
+      "arxiv_version": "v1",
+      "published": "2026-11-22T01:51:43Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Nishat Tasnim",
+        "Faisal Ahmed",
+        "Rokan Uddin Faruqui"
+      ],
+      "themes": [
+        "DNA & genomics",
+        "Bioinformatics & sequence analysis",
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "The authors combine 4-mer whole-genome features and a Random Forest to predict resistance across 20 antibiotics, reporting mean ROC AUC 0.82 on an independent test set.",
+      "claimed_contribution": "The preprint presents a lightweight genomic prediction pipeline intended for resource-constrained devices and reports the independent-test AUC above.",
+      "unique_caveat": "The abstract does not give cohort size or external-site composition; this is a model evaluation, not prospective clinical validation or evidence of improved treatment outcomes.",
+      "evidence_for_ranking": "0.25, entirely from 1 cross-list; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.29143"
+      ]
+    },
+    {
+      "id": "06-a-scalar-arterial-input-function-does-not-uniquely-determine-the-perfusion-residue-theory-and-phantom-mri",
+      "kind": "paper",
+      "title": "A scalar arterial input function does not uniquely determine the perfusion residue: Theory and phantom MRI",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.28378",
+      "arxiv_id": "2611.28378",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T22:36:59Z",
+      "categories": [
+        "physics.med-ph",
+        "physics.flu-dyn"
+      ],
+      "authors": [
+        "Yuyang Gan",
+        "Dominick Romano",
+        "Maneesh John",
+        "Renjiu Hu",
+        "Qihao Zhang",
+        "Benjamin Weppner",
+        "Alexey V. Dimov",
+        "Pascal Spincemaille",
+        "Yi Wang"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Quantitative methods"
+      ],
+      "abstract": "A flow model and 3 T straight-tube phantom experiment show that the same cross-sectionally averaged arterial input function can correspond to different tracer curves and perfusion residues.",
+      "claimed_contribution": "The preprint derives the residue under stated flow assumptions and reports phantom enhancement differences at all 11 measurement stations across three boluses, with model-dependent tissue curves differing by up to 23.3% of the uniform-inlet peak.",
+      "unique_caveat": "The validation is a straight-tube phantom plus an idealized model, not a patient study; the authors challenge interpretation of the scalar-input model rather than demonstrate a clinical effect.",
+      "evidence_for_ranking": "0.25, entirely from 1 cross-list; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28378"
+      ]
+    },
+    {
+      "id": "07-mri-driven-dual-energy-ct-synthesis-via-conditional-denoising-diffusion-probabilistic-models-for-mri-only-radiotherapy-and-protontherapy",
+      "kind": "paper",
+      "title": "MRI-Driven Dual-Energy CT Synthesis via Conditional Denoising Diffusion Probabilistic Models for MRI-only Radiotherapy and Protontherapy",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.28294",
+      "arxiv_id": "2611.28294",
+      "arxiv_version": "v1",
+      "published": "2026-11-20T20:20:50Z",
+      "categories": [
+        "physics.med-ph",
+        "cs.AI"
+      ],
+      "authors": [
+        "Juan Manuel Molina-Maza Chih-Wei Chang",
+        "David Viar-Hernandez",
+        "Zach Eidex",
+        "Mojtaba Safari",
+        "Shaoyan Pan",
+        "Juan Maria Perez-Moreno",
+        "Norberto Malpica",
+        "Angel Torrado-Carvajal",
+        "Borja Rodriguez-Vila",
+        "Xiaofeng Yang"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "A conditional diffusion model synthesizes high- and low-energy CT images from MRI and, in retrospective paired head-and-neck proton-therapy data, outperformed two GAN baselines on reported image-quality measures.",
+      "claimed_contribution": "The preprint reports mean absolute errors of 36.29±5.25 HU and 43.72±6.77 HU for the synthesized high- and low-energy CT, respectively, and compares against Pix2PixGAN and CycleGAN.",
+      "unique_caveat": "The abstract does not state cohort size and describes retrospective image validation, not prospective workflow or patient-outcome testing.",
+      "evidence_for_ranking": "0.25, entirely from 1 cross-list; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.28294"
+      ]
+    },
+    {
+      "id": "08-high-resolution-3d-micro-ct-database-of-transcranial-magnetic-stimulation-tms-coils-for-more-accurate-modelling-technology-benchmarking-and-progress-in-coil-design",
+      "kind": "paper",
+      "title": "High-Resolution 3D Micro-CT Database of Transcranial Magnetic Stimulation (TMS) Coils for More Accurate Modelling, Technology Benchmarking, and Progress in Coil Design",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.29051",
+      "arxiv_id": "2611.29051",
+      "arxiv_version": "v1",
+      "published": "2026-11-21T21:28:21Z",
+      "categories": [
+        "physics.med-ph",
+        "q-bio.NC"
+      ],
+      "authors": [
+        "Maryam Farahmandrad",
+        "Max Koehler",
+        "Mahdi Bayati",
+        "Denis Goldnik",
+        "Sergiy Antonyuk",
+        "Stephan Goetz"
+      ],
+      "themes": [
+        "Medical physics & imaging",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors use high-resolution micro-CT and electrical measurements to create a modelling dataset for 17 commercial TMS coils and demonstrate a CT-derived coil model in simulation.",
+      "claimed_contribution": "The preprint provides coil geometry and impedance data, with micro-CT at 0.0495 mm resolution and a simulation example reporting differences from an existing SimNIBS coil model.",
+      "unique_caveat": "This is a hardware characterization and simulation resource; it does not test TMS effectiveness or safety outcomes in people.",
+      "evidence_for_ranking": "0.25, entirely from 1 cross-list; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.29051"
+      ]
+    },
+    {
+      "id": "09-multi-sensor-fusion-for-false-alarm-reduction-by-timed-electromechanical-corroboration",
+      "kind": "paper",
+      "title": "Multi-Sensor Fusion for False-Alarm Reduction by Timed Electromechanical Corroboration",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.29025",
+      "arxiv_id": "2611.29025",
+      "arxiv_version": "v1",
+      "published": "2026-11-21T20:20:33Z",
+      "categories": [
+        "eess.SP",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Zixuan Fu",
+        "Anthony Raffaele",
+        "Unnikrishna Pillai"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "In ECG recordings with injected beat-shaped artifacts, the authors report that adding mechanically sensed contraction timing reduced artifact acceptance while retaining most true beats.",
+      "claimed_contribution": "The preprint reports 6.2% of injected artifacts passing and 95% of true beats retained with a selected two-sensor setup, and says integer microcontroller decisions matched software.",
+      "unique_caveat": "The authors explicitly state that natural motion and clinical events remain untested; injected-artifact performance is not evidence of patient-monitor alarm performance.",
+      "evidence_for_ranking": "0.25, entirely from 1 cross-list; no HF upvotes or HN points/comments were recorded.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.29025"
+      ]
+    },
+    {
+      "id": "10-linking-vascular-pathways-to-organ-anatomical-structures-in-the-human-reference-atlas",
+      "kind": "paper",
+      "title": "Linking vascular pathways to organ anatomical structures in the Human Reference Atlas",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.29215v1",
+      "arxiv_id": "2611.29215",
+      "arxiv_version": "v1",
+      "published": "2026-11-22T04:31:16Z",
+      "categories": [
+        "q-bio.TO"
+      ],
+      "authors": [
+        "Katherine Gustilo",
+        "Quinlan Cuddy",
+        "Avinash Boppana",
+        "Bruce W. Herr",
+        "Katy Börner",
+        "Griffin M Weber"
+      ],
+      "themes": [
+        "Biomedical & translational medicine"
+      ],
+      "abstract": "The authors add machine-readable crosswalks linking blood and lymphatic vascular pathways with anatomy, cataloguing 349 vessels and 663 links to 295 structures across 20 organs or body regions.",
+      "claimed_contribution": "The preprint reports algorithmic checks and review by 11 organ experts for the crosswalk tables and diagrams.",
+      "unique_caveat": "This is an anatomical knowledge and data-modeling contribution; it documents and organizes existing knowledge rather than experimentally validating vascular function.",
+      "evidence_for_ranking": "0.00, with 0 cross-lists and no detected HF or HN engagement; zero is not evidence of unimportance.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-24",
+      "refs": [
+        "https://arxiv.org/abs/2611.29215v1"
+      ]
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": "",
+      "text": "Computational methods span protein annotation, molecular conformer search, genome alignment, and tuberculosis resistance prediction (papers 1, 2, 4, 5); imaging papers examine measurement assumptions and model fidelity (6–8); dataset and sensor-fusion work provides biomedical infrastructure without outcome evidence (9–10); paper 3 proposes a theoretical explanation for apparent mitochondrial heating.",
+      "refs": [
+        "https://arxiv.org/abs/2611.28529",
+        "https://arxiv.org/abs/2611.28741",
+        "https://arxiv.org/abs/2611.28225",
+        "https://arxiv.org/abs/2611.28599",
+        "https://arxiv.org/abs/2611.29143",
+        "https://arxiv.org/abs/2611.28378",
+        "https://arxiv.org/abs/2611.28294",
+        "https://arxiv.org/abs/2611.29051",
+        "https://arxiv.org/abs/2611.29025",
+        "https://arxiv.org/abs/2611.29215v1"
+      ]
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": "",
+      "text": "Follow-up needs include benchmarking protein-language-model annotations against specialized pipelines and blinded assays (1); external, geographically separate MTB resistance validation and calibration (5); more realistic vascular tests and external/prospective imaging evaluation (6–8); and direct experiments varying mitochondrial probe frequency response to test the proposed nonequilibrium mechanism (3). These are research proposals, not clinical recommendations.",
+      "refs": [
+        "https://arxiv.org/abs/2611.28529",
+        "https://arxiv.org/abs/2611.28225",
+        "https://arxiv.org/abs/2611.29143",
+        "https://arxiv.org/abs/2611.28378",
+        "https://arxiv.org/abs/2611.28294",
+        "https://arxiv.org/abs/2611.29051"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": "",
+      "text": "The batch has relevant technical contributions but no detected popularity signals and no Semantic Scholar citation corroboration. Its evidence ranges from computation and theory to phantom and retrospective data; none should be read as established clinical findings.",
+      "refs": [
+        "https://arxiv.org/abs/2611.28529",
+        "https://arxiv.org/abs/2611.28741",
+        "https://arxiv.org/abs/2611.28225",
+        "https://arxiv.org/abs/2611.28599",
+        "https://arxiv.org/abs/2611.29143",
+        "https://arxiv.org/abs/2611.28378",
+        "https://arxiv.org/abs/2611.28294",
+        "https://arxiv.org/abs/2611.29051",
+        "https://arxiv.org/abs/2611.29025",
+        "https://arxiv.org/abs/2611.29215v1"
+      ]
+    }
+  ]
+}

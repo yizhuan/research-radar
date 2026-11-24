@@ -1,0 +1,436 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "arxiv",
+  "category": "bio",
+  "window": "daily",
+  "arxiv_window": {
+    "start": "2026-11-20T19:00:00Z",
+    "end": "2026-11-23T19:00:00Z",
+    "announced": "2026-11-24T01:00:00Z",
+    "announcement_date": "2026-11-24"
+  },
+  "categories": [
+    "q-bio.BM",
+    "q-bio.GN",
+    "q-bio.MN",
+    "q-bio.SC",
+    "q-bio.CB",
+    "q-bio.TO",
+    "q-bio.QM",
+    "cs.BI",
+    "physics.med-ph"
+  ],
+  "generated_at": "2026-11-24T03:08:55Z",
+  "sources": {
+    "arxiv": {
+      "status": "ok",
+      "count": 13
+    },
+    "huggingface": {
+      "status": "ok",
+      "count": 78
+    },
+    "hacker_news": {
+      "status": "ok",
+      "count": 19
+    },
+    "arxiv_lookup": {
+      "status": "ok",
+      "count": 97
+    },
+    "semantic_scholar": {
+      "status": "error",
+      "error": "HTTPError: HTTP Error 400: Bad Request"
+    }
+  },
+  "weights": {
+    "hf_upvotes": 3.0,
+    "hn_points": 1.5,
+    "hn_comments": 1.0,
+    "citations": 2.0,
+    "influential_citations": 1.0,
+    "code_stars": 0.5,
+    "cross_lists": 0.25
+  },
+  "pool_size": 13,
+  "with_attention": 0,
+  "candidates": [
+    {
+      "arxiv_id": "2611.28741",
+      "version": "1",
+      "title": "VEGA: A Scalable Software-Hardware Co-design for Genome Alignment using RVV Extension",
+      "authors": [
+        "Weihong Xu",
+        "Shijie Xu",
+        "Qunyou Liu",
+        "Giovanni Ansaloni",
+        "Cheng Zhuo",
+        "David Atienza"
+      ],
+      "published": "2026-11-21T11:22:43Z",
+      "updated": "2026-11-21T11:22:43Z",
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "cs.AR",
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.28741",
+      "comment": "",
+      "abstract": "Dynamic programming (DP)-based genome sequence analysis is fundamental to computational genomics, but it remains computationally intensive as genomic data volumes continue to outpace Moore's Law. Existing hardware accelerators often sacrifice programmability and scalability across diverse alignment algorithms. In this work, we present VEGA, a scalable software-hardware co-design that accelerates genome alignment using RISC-V Vector extensions. VEGA introduces specialized vector instructions and three key innovations: a Forefront Stationary dataflow that minimizes off-chip memory access, intersequence parallelism that maximizes SIMD lane utilization, and custom ISA extensions that accelerate core alignment operations. Evaluations show that VEGA achieves up to 15.1x and 9.7x speedups for Edit Distance and Smith-Waterman algorithms over the Ara2-RVV vector baseline, sustaining 10.2x and 6.7x gains for 10kbp sequences. Post-synthesis results indicate only 1.0% area overhead compared to a standard RISC-V core, with performance-per-area efficiency rivaling specialized ASICs. VEGA thus achieves a balanced advancement in efficiency, programmability, and scalability for genome sequence alig",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.28529",
+      "version": "1",
+      "title": "General-purpose language models are neurosymbolic reasoners able to annotate proteins from sequence",
+      "authors": [
+        "Christopher J. Mungall",
+        "Marcin P. Joachimiak"
+      ],
+      "published": "2026-11-21T03:32:51Z",
+      "updated": "2026-11-21T03:32:51Z",
+      "primary_category": "q-bio.GN",
+      "categories": [
+        "q-bio.GN",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.28529",
+      "comment": "20 pages, 3 figures. Code and data: https://github.com/ai4curation/fable-sequence-to-function",
+      "abstract": "Determining the function of genes across the tree of life is one of the major challenges in biology. Generative AI approaches to this problem generally fall into two categories: language models trained on biological sequences that are able to predict structure and function from signals in those sequences; and generalist language models trained on text, that are able to reason about biological function symbolically. A default operating assumption is that protein language models do not perform well on symbolic tasks, and that generalist language models do not perform well on sequence tasks. However, a recent report showed that frontier generalist models perform surprisingly well on next-residue prediction tasks. We set out to explore whether these capabilities extended to protein annotation. We assigned different frontier generalist models a variety of protein annotation tasks, including predicting the presence and coordinates of Pfam domains, loss of functional catalytic residues, and predicting structure and activity. On all annotation tasks, the frontier models performed well above chance; we did not benchmark them against specialised tools. The models also make characteristic hal",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.28225",
+      "version": "1",
+      "title": "Nonequilibrium fluctuations could explain the hot mitochondria paradox",
+      "authors": [
+        "Matthew P. Leighton",
+        "Benjamin B. Machta"
+      ],
+      "published": "2026-11-20T19:00:47Z",
+      "updated": "2026-11-20T19:00:47Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "physics.bio-ph",
+        "q-bio.SC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.28225",
+      "comment": "4 pages, 2 figures. Any comments are very welcome!",
+      "abstract": "Several different experiments have found apparent temperature differences of up to 10 K between the interior of mitochondria and the rest of the cellular environment. The physics of heat conduction, however, precludes the steady-state existence of a temperature difference greater than the microkelvin scale within the cell, absent a far greater energy budget. Nearly a decade after the first reported measurement, this apparent paradox remains unexplained. Here, we propose an explanation which allows the elevated temperature measurements to coexist with the theoretical impossibility of a true 10 K steady-state temperature difference. We suggest that nonequilibrium fluctuations within the cellular environment, combined with molecular temperature probes sensitive to specific ranges of frequencies, can lead to apparent 10 K temperature differences with a biologically attainable power budget.",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.29143",
+      "version": "1",
+      "title": "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis",
+      "authors": [
+        "Nishat Tasnim",
+        "Faisal Ahmed",
+        "Rokan Uddin Faruqui"
+      ],
+      "published": "2026-11-22T01:51:43Z",
+      "updated": "2026-11-22T01:51:43Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.29143",
+      "comment": "Accepted and Presented at the 11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026), 1-3 November 2026, Cox's Bazar, Bangladesh",
+      "abstract": "Antimicrobial resistance (AMR) in Mycobacterium tuberculosis (MTB) poses a major challenge to global tuberculosis control, as multidrug-resistant strains limit available treatment options. Rapid and accurate prediction of drug resistance from genomic data could support timely treatment decisions and public health interventions. However, many existing computational approaches for genomic AMR prediction rely on computationally intensive pipelines, limiting their suitability for deployment on resource-constrained edge devices. This limitation is particularly relevant in hospital settings in low- and middle-income countries, where computing infrastructure and access to high-performance computational resources may be limited. To address this challenge, we present a lightweight, novel machine learning (ML) approach suitable for running on edge devices that combines 4-mer frequency features derived from whole-genome sequences with a Random Forest classifier to predict antibiotic resistance in MTB. The proposed ML approach achieved an average area under the receiver operating characteristic curve of 0.82 across 20 antibiotics on an independent test set.",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.29051",
+      "version": "1",
+      "title": "High-Resolution 3D Micro-CT Database of Transcranial Magnetic Stimulation (TMS) Coils for More Accurate Modelling, Technology Benchmarking, and Progress in Coil Design",
+      "authors": [
+        "Maryam Farahmandrad",
+        "Max Koehler",
+        "Mahdi Bayati",
+        "Denis Goldnik",
+        "Sergiy Antonyuk",
+        "Stephan Goetz"
+      ],
+      "published": "2026-11-21T21:28:21Z",
+      "updated": "2026-11-21T21:28:21Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph",
+        "q-bio.NC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.29051",
+      "comment": "32 pages, 7 figures, 5 tables",
+      "abstract": "Accurate modelling of transcranial magnetic stimulation (TMS) coils requires coil-specific geometric and electrical parameters. Yet detailed manufacturer models are rarely available, and internals may be widely available to companies in the field but not to researchers. The development of new coils should ideally build on all existing prior art. This work presents a technology benchmark and modelling-ready dataset for seventeen widely used commercial TMS coils across multiple manufacturers and geometries. High-resolution micro-CT (0.0495 mm resolution, material and density contrast) serves to reconstruct winding and casing structures and to extract parameters directly usable in numerical models, including loop dimensions, conductor cross-section, turn count, winding height, and winding-to-surface (casing) thickness. Complementary electrical measurements provide spectral impedance (series resistance and inductance) scans from 20 Hz to 200 kHz, together with dc resistance. In addition to baseline geometry and impedance, the study documents practical construction features relevant to safety and usability with detailed insights into their internal construction (e.g., cooling architectu",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.29025",
+      "version": "1",
+      "title": "Multi-Sensor Fusion for False-Alarm Reduction by Timed Electromechanical Corroboration",
+      "authors": [
+        "Zixuan Fu",
+        "Anthony Raffaele",
+        "Unnikrishna Pillai"
+      ],
+      "published": "2026-11-21T20:20:33Z",
+      "updated": "2026-11-21T20:20:33Z",
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.29025",
+      "comment": "8 pages, 8 figures, 3 tables. Submitted to IEEE Journal of Biomedical and Health Informatics",
+      "abstract": "A physician checks the clinical electrocardiogram against other observations. A wearable monitor has no physician. This paper shows that a mechanical sensor worn beside the electrocardiogram can take over that check, and that the right added sensors lower false alarms further. A beat is accepted only when a mechanical contraction follows at the delay learned for the wearer. Beat-shaped artifacts injected into resting and exercise recordings passed the electrocardiogram alone almost every time. A seismocardiogram or phonocardiogram as the second channel rejected most while keeping nearly all true beats, strongly at rest and partly during exercise. Shifting the mechanical signal in time removed the benefit. A detection criterion scores an added sensor by the part of its response that the sensors in place cannot predict. With four sensors, this score ranked the sets as their measured false-alarm rates did. With the two sensors it selected, 6.2 percent of the artifacts passed while 95 percent of true beats were kept, half the rate of the best single sensor. In integer arithmetic on a low-cost microcontroller, the detector made the same decisions as the software. These rates come from i",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.28547",
+      "version": "1",
+      "title": "SBTenv: A Literature-Validated Split-Belt Treadmill Simulation Environment",
+      "authors": [
+        "Philip Byrne",
+        "John Drazan",
+        "Nidhi Seethapathi"
+      ],
+      "published": "2026-11-21T04:09:02Z",
+      "updated": "2026-11-21T04:09:02Z",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.28547",
+      "comment": "5 pages, 3 figures, 1 table. Code available at https://github.com/PhilipByrn3/sbtenv",
+      "abstract": "The split-belt treadmill is an important tool for studying human locomotor adaptation. Physics-based simulations complement such experiments by allowing hypotheses about the mechanisms of adaptation to be tested directly, and high-throughput simulation is increasingly needed as these models grow in complexity. However, no open-source split-belt treadmill environment exists in MuJoCo, a physics engine widely used for high-throughput simulation. Here, we present SBTenv, a split-belt treadmill environment built in MuJoCo and validated against published experimental data from a rimless wheel walking passively on a split-belt treadmill. By modeling compliant contacts at the spoke tips, SBTenv reproduces the experimental average steady velocity ($R^2=0.643$, RMSE $=0.0162$ m/s) without the empirical geometric correction required in prior simulations. We expect SBTenv, openly shared, to enable high-throughput simulation of musculoskeletal and robotic locomotion on a split-belt treadmill.",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.28378",
+      "version": "1",
+      "title": "A scalar arterial input function does not uniquely determine the perfusion residue: Theory and phantom MRI",
+      "authors": [
+        "Yuyang Gan",
+        "Dominick Romano",
+        "Maneesh John",
+        "Renjiu Hu",
+        "Qihao Zhang",
+        "Benjamin Weppner",
+        "Alexey V. Dimov",
+        "Pascal Spincemaille",
+        "Yi Wang"
+      ],
+      "published": "2026-11-20T22:36:59Z",
+      "updated": "2026-11-20T22:36:59Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph",
+        "physics.flu-dyn"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.28378",
+      "comment": "26 pages (21-page manuscript, 2 figures; 5-page Supporting Information, 3 figures)",
+      "abstract": "Purpose: To relate the residue function of tracer kinetic models to blood velocity and cross-sectional tracer distributions at the arterial inlet, and show that a cross-sectionally averaged arterial input function (AIF) does not uniquely determine the residue. Theory and Methods: For steady laminar flow without radial diffusion, the residue function referenced to the cross-sectionally averaged inlet AIF was analytically derived from the velocity and inlet tracer distributions. In a straight tube with parabolic flow, two nonnegative inlet profiles sharing one measured AIF were compared for gamma-variate and rectangular arterial spin labeling (ASL) inputs. A straight-tube phantom was imaged at 3 T during gadolinium bolus passage, with uniform fills as controls. Results: In the phantom, enhancement during bolus arrival was greater near the lumen center than near the wall at all 11 stations and for all three boluses, whereas uniform gadolinium fills showed no such pattern. In the tube model, the two profiles produced tissue curves differing by up to 23.3% of the uniform-inlet peak and 0.30 s in time to peak for the gamma-variate input, and by 33.3% for ASL labels shorter than the faste",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.28294",
+      "version": "1",
+      "title": "MRI-Driven Dual-Energy CT Synthesis via Conditional Denoising Diffusion Probabilistic Models for MRI-only Radiotherapy and Protontherapy",
+      "authors": [
+        "Juan Manuel Molina-Maza Chih-Wei Chang",
+        "David Viar-Hernandez",
+        "Zach Eidex",
+        "Mojtaba Safari",
+        "Shaoyan Pan",
+        "Juan Maria Perez-Moreno",
+        "Norberto Malpica",
+        "Angel Torrado-Carvajal",
+        "Borja Rodriguez-Vila",
+        "Xiaofeng Yang"
+      ],
+      "published": "2026-11-20T20:20:50Z",
+      "updated": "2026-11-20T20:20:50Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph",
+        "cs.AI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.28294",
+      "comment": "",
+      "abstract": "Magnetic resonance imaging (MRI) provides excellent soft-tissue contrast without ionizing radiation but lacks the electron-density information needed for radiotherapy dose calculation. Dual-energy computed tomography (DECT) improves tissue characterization and stopping-power ratio (SPR) estimation for proton therapy, but requires additional radiation exposure. We developed a denoising diffusion probabilistic model (DDPM) to synthesize high- and low-energy CT (sHECT and sLECT) simultaneously from a single MRI scan. Retrospective paired MRI-DECT data from patients receiving head-and-neck proton therapy were used to train and evaluate a multi-decoder DDPM with SwinViT or ResUNet denoisers. Performance was compared with Pix2PixGAN and CycleGAN using image-quality metrics, Hounsfield unit (HU) errors, anatomical profiles, and SPR maps and uncertainties. The DDPM outperformed both generative adversarial network baselines in visual fidelity and quantitative image quality. For sHECT and sLECT, respectively, mean absolute errors were 36.29 +/- 5.25 and 43.72 +/- 6.77 HU; peak signal-to-noise ratios were 27.44 +/- 1.06 and 26.26 +/- 0.98 dB; structural similarity indices were 0.89 +/- 0.02 a",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.29219",
+      "version": "1",
+      "title": "Diffusion Posterior Sampling for Mitigation of Spatially-Variant System Blur in Ultra-High-Resolution CT of Trabecular Bone",
+      "authors": [
+        "T. Ye",
+        "G. Shi",
+        "A. Sivakumar",
+        "F. J. Quevedo Gonzalez",
+        "K. F. Moseley",
+        "J. A. Carrino",
+        "J. H. Siewerdsen",
+        "W. Zbijewski"
+      ],
+      "published": "2026-11-22T04:37:25Z",
+      "updated": "2026-11-22T04:37:25Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.29219",
+      "comment": "",
+      "abstract": "Objective: CT spatial resolution degrades with distance from isocenter. We evaluate diffusion posterior sampling (DPS) deblurring for restoring structural detail and harmonizing texture features (TFs) of off-center trabecular bone to isocenter in ultra-high resolution CT (UHR CT). Methods: DPS pairs a diffusion prior, trained on isocenter UHR CT patches of trabecular bone from four human femora, with a likelihood term enforcing consistency with the observed image. Two variants were tested on a held-out femur at radial shifts of 90, 130 and 160 mm: KnownBlurDPS, with an anisotropic Gaussian kernel derived from modulation transfer function measurements, and BlindDPS, which estimated the kernel jointly with the image. Restored patches were compared with isocenter ground truth by structural similarity (SSIM), gradient magnitude similarity deviation (GMSD), and concordance correlation coefficient (CCC) of 40 gray-level co-occurrence and run-length TFs. Results: Both DPS variants improved SSIM and GMSD by 1-10% and mean TF CCC by 30-130%. The number of reproducible TFs (CCC > 0.80) at 90/130/160 mm rose from 13/2/1 without deblurring to 33/35/29 (KnownBlurDPS) and 40/36/16 (BlindDPS). At",
+      "signals": {
+        "cross_lists": 0
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.29215",
+      "version": "1",
+      "title": "Linking vascular pathways to organ anatomical structures in the Human Reference Atlas",
+      "authors": [
+        "Katherine Gustilo",
+        "Quinlan Cuddy",
+        "Avinash Boppana",
+        "Bruce W. Herr",
+        "Katy Börner",
+        "Griffin M Weber"
+      ],
+      "published": "2026-11-22T04:31:16Z",
+      "updated": "2026-11-22T04:31:16Z",
+      "primary_category": "q-bio.TO",
+      "categories": [
+        "q-bio.TO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.29215",
+      "comment": "14 pages, 3 figures",
+      "abstract": "As part of the Human Reference Atlas (HRA) initiative, which brings together more than 25 international consortia to map the entire healthy adult body, we developed a multiscale Vasculature Common Coordinate Framework (VCCF). The VCCF uses vascular pathways to describe the location of organs, anatomical structures, and cells throughout the body. Here, we present the VCCF Blood Vasculature Organ Crosswalk, which links blood vessels to anatomical structures they supply or drain, and the Pathways Crosswalk, which lists relationships between blood vessels, lymphatic vessels, and nerves. Blood Vasculature Organ Crosswalk Diagrams support the authoring and review of the crosswalk tables. In machine readable files, we catalog 349 blood vessels from these diagrams, with 663 linkages to 295 anatomical structures across 20 organs/body regions and 28 functional tissue units. The VCCF crosswalk tables and diagrams have been validated algorithmically and by 11 organ experts. They have brought together experts from different domains to document existing knowledge of the human vasculature and identify gaps where future research is needed.",
+      "signals": {
+        "cross_lists": 0
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.29108",
+      "version": "1",
+      "title": "MRI Acquisition Parameters Influence Magnetic Resonance Hydrophone Measurements",
+      "authors": [
+        "Hunter Harris",
+        "Ethan Bryan",
+        "Nathan Thyberg",
+        "Spencer Greding",
+        "Hyrum Mangum",
+        "Katia Oler",
+        "Davi Cavinatto",
+        "Taylor Webb",
+        "Steven Allen"
+      ],
+      "published": "2026-11-22T00:16:02Z",
+      "updated": "2026-11-22T00:16:02Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.29108",
+      "comment": "To be submitted to Magnetic Resonance In medicine in December 2026",
+      "abstract": "Purpose:} To characterize the accuracy and precision of magnetic resonance hydrophone (MRH) measurements in response to changes in MR acquisition parameters. \\textbf{Methods:} A human compatible MRH coil was coupled to a 500 kHz ultrasound transducer in a gel phantom. MRH acquisitions were repeated in a 3T scanner while altering in-plane resolution, slice thickness, encoding time, and device orientation within the MRI bore. The average and standard deviation of acoustic pressure estimates within a ROI near the encoding coil were compared to that obtained from the same transducer using a calibrated hydrophone in a water tank. The accuracy and precision of MRH scans, as well as a maximum detection depth, were then estimated. \\textbf{Results:} Under high signal-to-noise (SNR) conditions, the MRH average pressure corresponded closely to those obtained by the hydrophone with no consistent measurement bias. However, too large or too small of voxel dimensions produced measurement underestimation, as expected by theory. Rotations as small as 15$^\\circ$ out of alignment with the MRI bore also produced larger measurement underestimation than predicted by a dipole model of the encoding gradie",
+      "signals": {
+        "cross_lists": 0
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.28599",
+      "version": "1",
+      "title": "FastCREST: GPU-Accelerated CREST Conformer Searches with Consistent Energies and Gradients",
+      "authors": [
+        "Supantha Dey",
+        "Nilusha L Kariyawasam",
+        "Ratul Chowdhury"
+      ],
+      "published": "2026-11-21T06:12:30Z",
+      "updated": "2026-11-21T06:12:30Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.28599",
+      "comment": "",
+      "abstract": "CREST conformer searches with GFN2-xTB take days for large, flexible molecules: one search of a 274-atom gallium(III)--peptide complex with CREST 3.0.2 took 321.5~h on 32 CPU threads. FastCREST keeps CREST's algorithm and changes how a search uses the hardware. Its metadynamics (MTD) and molecular dynamics (MD) trajectories run with tuned OpenMP settings and one GPU, which solves the self-consistent-charge (SCC) eigenproblem and evaluates the three-body dispersion term. About 15,000 geometry optimizations per iteration run as Slurm array jobs on other CPU nodes, and checkpoints let a search continue on preemptible GPUs. On A100 nodes, the OpenMP settings and loop changes made an MTD step 2.4 times faster and the GPU another 2.3 times; array jobs made a batch of optimizations 39 times faster. For six more molecules of 24 to 339 atoms, a FastCREST step was 2.2 to 7.1 times faster than a conventional CREST step. A complete FastCREST search, which also lifts CREST~3's cap of 200 optimization cycles, took 54.3~h, evaluating energies and gradients 8.1 times as fast as the CREST 3.0.2 search (on different hardware) with fewer CPU-hours per evaluation. Two opt-in settings (a warm-started J",
+      "signals": {
+        "cross_lists": 0
+      },
+      "score": 0,
+      "score_components": {}
+    }
+  ],
+  "notes": [
+    "Scores are log1p-damped weighted sums of the listed signals; zero means no external attention was found, not that the paper is unimportant.",
+    "The pool is the arXiv listing for the window (capped) plus window papers discussed on Hugging Face or Hacker News; it is not exhaustive for very large categories."
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-11-24",
+  "title": "GitHub Trending Summary - Daily - 2026-11-24",
+  "source_report": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-24.md",
+  "entry_count": 10,
+  "entry_noun": "repositories",
+  "ranking_basis": "GitHub Trending daily stars gained; supplied signal scores are secondary context.",
+  "ranking_explanation": "Selected the 10 highest-gain non-fork, non-archived candidates from the supplied daily signals, ranked by daily Trending star gains descending; used signal score as secondary context. Verified every selected repository on GitHub Trending and via current GitHub REST API metadata and commit.",
+  "global_caveat": "Star snapshot collection was unavailable because GitHub CLI authentication was not configured; delta_1d, delta_7d and delta_30d are null, not zero. Star totals are live REST API counts and may differ slightly from totals captured in the signals file. No Notable Shifts section is included because no usable prior-window comparison exists.",
+  "themes": [
+    {
+      "id": "agent-workflows",
+      "title": "Coding-agent workflows and agent-native interfaces",
+      "summary": "The strongest cluster turns coding agents into repeatable workflows or gives them software interfaces: Claude-BugHunter (skills for security testing), obra/superpowers (composable development methodology), HKUDS/CLI-Anything (software exposed as agent-usable CLIs), cursor/plugins (plugin conventions), and google-labs-code/stitch-skills (design skills).",
+      "supporting_repository_ids": [
+        "repo-01",
+        "repo-05",
+        "repo-08"
+      ]
+    },
+    {
+      "id": "agent-context",
+      "title": "Grounding agents in external information",
+      "summary": "firecrawl/firecrawl provides search/scraping and data access for agent context; mvanhorn/last30days-skill packages multi-source research and synthesis.",
+      "supporting_repository_ids": [
+        "repo-03",
+        "repo-07"
+      ]
+    },
+    {
+      "id": "open-llm-learning",
+      "title": "Accessible model training and inference",
+      "summary": "jingyaogong/minimind makes a compact from-scratch training pipeline approachable, while the listed repo signals overall include practical AI tooling rather than only model releases.",
+      "supporting_repository_ids": [
+        "repo-06"
+      ]
+    },
+    {
+      "id": "ai-media-workflows",
+      "title": "AI-assisted media production",
+      "summary": "zhouxiaoka/autoclip targets automated long-to-short video editing, with subtitles, cover art and publishing copy.",
+      "supporting_repository_ids": [
+        "repo-04"
+      ]
+    },
+    {
+      "id": "practical-developer-tools",
+      "title": "Focused utilities and compliance knowledge",
+      "summary": "XiaoYouChR/Ghost-Downloader-3 is a broad downloader, mjmirza/app-store-compliance turns rejection rules into a pre-submission playbook, and cathrynlavery/diagram-design packages a visual design system for agent-generated diagrams.",
+      "supporting_repository_ids": [
+        "repo-02",
+        "repo-09",
+        "repo-10"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-snapshot",
+      "kind": "snapshot",
+      "title": "Snapshot",
+      "content": {
+        "snapshot_time_utc": "2026-11-24 03:20 UTC",
+        "scope": "Daily",
+        "date_range": "2026-11-24 through 2026-11-24",
+        "ranking_basis": "GitHub Trending daily star gains; candidate scores used as attention context, with GitHub REST metadata/commit corroboration"
+      }
+    },
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Security-focused coding-agent skills lead the day, but the broader pattern is agents becoming more capable through workflows, software interfaces and external knowledge. A downloader, AI video editor and compact-model training project also posted large gains, showing the attention is not confined to agent frameworks."
+    },
+    {
+      "id": "repo-01",
+      "kind": "repo",
+      "title": "elementalsouls/Claude-BugHunter",
+      "rank": 1,
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "Bundled security-testing skills, slash commands and disclosed-vulnerability patterns for Claude Code.",
+      "language": "Python",
+      "stars_gained": 2029,
+      "total_stars": 19948,
+      "default_branch": "main",
+      "default_branch_commit": "d5f7d0d001bc6f6ba4ac38cf730b1871b9d8840c",
+      "why_notable": "Its 2,029-star daily gain leads the supplied candidates; its README describes an extensive, auditable red-team workflow.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Claude BugHunter",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "elementalsouls/Claude-BugHunter"
+      ],
+      "signal_score": 9.616,
+      "signal_score_components": {
+        "period_gain": 7.616,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 1,
+      "total_stars_at_signal_capture": 19943
+    },
+    {
+      "id": "repo-02",
+      "kind": "repo",
+      "title": "XiaoYouChR/Ghost-Downloader-3",
+      "rank": 2,
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "description": "A Python downloader project presenting itself as an all-in-one download tool.",
+      "language": "Python",
+      "stars_gained": 1087,
+      "total_stars": 16449,
+      "default_branch": "main",
+      "default_branch_commit": "79cccbdbf3386c61b7b21bf63d9e718738f0f2a2",
+      "why_notable": "The second-highest supplied daily gain (1,087) makes this a standout beyond the dominant coding-agent category.",
+      "theme_ids": [
+        "practical-developer-tools"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "moderate",
+      "narration_priority": 2,
+      "spoken_name": "Ghost Downloader 3",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "XiaoYouChR/Ghost-Downloader-3"
+      ],
+      "signal_score": 8.992,
+      "signal_score_components": {
+        "period_gain": 6.992,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 15,
+      "total_stars_at_signal_capture": 16447
+    },
+    {
+      "id": "repo-03",
+      "kind": "repo",
+      "title": "firecrawl/firecrawl",
+      "rank": 3,
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Knowledge infrastructure for agents, offering search, scraping and access to 550+ data providers through an API.",
+      "language": "TypeScript",
+      "stars_gained": 924,
+      "total_stars": 208033,
+      "default_branch": "main",
+      "default_branch_commit": "4924105f57c105fa678706e05fa234d66b5b061e",
+      "why_notable": "Its 924-star gain and 208k-plus stars combine strong daily momentum with a mature agent-context use case.",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "firecrawl",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "firecrawl/firecrawl"
+      ],
+      "signal_score": 8.83,
+      "signal_score_components": {
+        "period_gain": 6.83,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 6,
+      "total_stars_at_signal_capture": 208031
+    },
+    {
+      "id": "repo-04",
+      "kind": "repo",
+      "title": "zhouxiaoka/autoclip",
+      "rank": 4,
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "description": "An open-source AI desktop video editor that turns long videos into short clips and creates subtitles, covers and publishing copy.",
+      "language": "Python",
+      "stars_gained": 907,
+      "total_stars": 14559,
+      "default_branch": "main",
+      "default_branch_commit": "dd1f5daa884ec677931cc1ee2e9e9aa01dff9e03",
+      "why_notable": "The 907-star gain points to demand for practical generative-media workflows, not just coding tools.",
+      "theme_ids": [
+        "ai-media-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 4,
+      "spoken_name": "autoclip",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "zhouxiaoka/autoclip"
+      ],
+      "signal_score": 8.811,
+      "signal_score_components": {
+        "period_gain": 6.811,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 16,
+      "total_stars_at_signal_capture": 14557
+    },
+    {
+      "id": "repo-05",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "rank": 5,
+      "url": "https://github.com/obra/superpowers",
+      "description": "A composable skills framework and software-development methodology for coding agents.",
+      "language": "Shell",
+      "stars_gained": 840,
+      "total_stars": 325179,
+      "default_branch": "main",
+      "default_branch_commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "why_notable": "Its README describes a structured, multi-step development process; 840 new daily stars on a large installed base signal continued momentum.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "superpowers",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "obra/superpowers"
+      ],
+      "signal_score": 8.735,
+      "signal_score_components": {
+        "period_gain": 6.735,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 2,
+      "total_stars_at_signal_capture": 325178
+    },
+    {
+      "id": "repo-06",
+      "kind": "repo",
+      "title": "jingyaogong/minimind",
+      "rank": 6,
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "A compact end-to-end project for training a 64M-parameter language model from scratch.",
+      "language": "Python",
+      "stars_gained": 828,
+      "total_stars": 69575,
+      "default_branch": "master",
+      "default_branch_commit": "858008eb98da4428f78053a1cc4d3a3bd5973629",
+      "why_notable": "Its 828-star daily gain and full training pathway make it a useful educational counterpoint to agent products.",
+      "theme_ids": [
+        "open-llm-learning"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "minimind",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "jingyaogong/minimind"
+      ],
+      "signal_score": 8.72,
+      "signal_score_components": {
+        "period_gain": 6.72,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 4,
+      "total_stars_at_signal_capture": 69574
+    },
+    {
+      "id": "repo-07",
+      "kind": "repo",
+      "title": "mvanhorn/last30days-skill",
+      "rank": 7,
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "An agent skill that researches topics across Reddit, X, YouTube, Hacker News, Polymarket and the web.",
+      "language": "Python",
+      "stars_gained": 797,
+      "total_stars": 73510,
+      "default_branch": "main",
+      "default_branch_commit": "8f6f4555d1196dc2c485db0a540980bc6fd74b0d",
+      "why_notable": "It gained 797 stars today; the multi-source synthesis concept is a direct complement to agent search infrastructure.",
+      "theme_ids": [
+        "agent-context"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "moderate",
+      "narration_priority": 7,
+      "spoken_name": "last30days skill",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "mvanhorn/last30days-skill"
+      ],
+      "signal_score": 8.682,
+      "signal_score_components": {
+        "period_gain": 6.682,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 10,
+      "total_stars_at_signal_capture": 73508
+    },
+    {
+      "id": "repo-08",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "rank": 8,
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "A project to make desktop and other software agent-native through generated command-line interfaces.",
+      "language": "Python",
+      "stars_gained": 790,
+      "total_stars": 63792,
+      "default_branch": "main",
+      "default_branch_commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+      "why_notable": "Its 790-star gain supports the clear trend toward exposing software actions in machine-usable form.",
+      "theme_ids": [
+        "agent-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "CLI Anything",
+      "unique_caveat": "GitHub star totals may have shifted slightly since the signal capture.",
+      "enrichment": null,
+      "refs": [
+        "HKUDS/CLI-Anything"
+      ],
+      "signal_score": 8.673,
+      "signal_score_components": {
+        "period_gain": 6.673,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 3,
+      "total_stars_at_signal_capture": 63791
+    },
+    {
+      "id": "repo-09",
+      "kind": "repo",
+      "title": "mjmirza/app-store-compliance",
+      "rank": 9,
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "description": "An open playbook and pre-submission guard for App Store and Google Play rejection risks.",
+      "language": "Shell",
+      "stars_gained": 761,
+      "total_stars": 5063,
+      "default_branch": "main",
+      "default_branch_commit": "ad76746e6304a7f623ecd50dbf9da91117a7d6f7",
+      "why_notable": "The 761-star gain shows traction for narrowly scoped, actionable knowledge packs for app developers and coding agents.",
+      "theme_ids": [
+        "practical-developer-tools"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 9,
+      "spoken_name": "app store compliance",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "mjmirza/app-store-compliance"
+      ],
+      "signal_score": 8.636,
+      "signal_score_components": {
+        "period_gain": 6.636,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 12,
+      "total_stars_at_signal_capture": 5063
+    },
+    {
+      "id": "repo-10",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "rank": 10,
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "A design system for editorial diagrams across several coding agents, with 52 types using self-contained HTML and SVG.",
+      "language": "HTML",
+      "stars_gained": 620,
+      "total_stars": 71068,
+      "default_branch": "main",
+      "default_branch_commit": "0eeda75a708f419560d5e032693618bb9954f17b",
+      "why_notable": "The 620-star daily gain is a strong design-tool signal; the GitHub repository page lists the same daily gain.",
+      "theme_ids": [
+        "practical-developer-tools"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "moderate",
+      "narration_priority": 10,
+      "spoken_name": "diagram design",
+      "unique_caveat": "",
+      "enrichment": null,
+      "refs": [
+        "cathrynlavery/diagram-design"
+      ],
+      "signal_score": 8.431,
+      "signal_score_components": {
+        "period_gain": 6.431,
+        "days_trending_30d": 2.0
+      },
+      "days_trending_30d": 4,
+      "trending_rank": 9,
+      "total_stars_at_signal_capture": 71068
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- Coding-agent workflows and agent-native interfaces: The strongest cluster turns coding agents into repeatable workflows or gives them software interfaces: Claude-BugHunter (skills for security testing), obra/superpowers (composable development methodology), HKUDS/CLI-Anything (software exposed as agent-usable CLIs), cursor/plugins (plugin conventions), and google-labs-code/stitch-skills (design skills). Supporting repository sections: repo-01, repo-05, repo-08.\n- Grounding agents in external information: firecrawl/firecrawl provides search/scraping and data access for agent context; mvanhorn/last30days-skill packages multi-source research and synthesis. Supporting repository sections: repo-03, repo-07.\n- Accessible model training and inference: jingyaogong/minimind makes a compact from-scratch training pipeline approachable, while the listed repo signals overall include practical AI tooling rather than only model releases. Supporting repository sections: repo-06.\n- AI-assisted media production: zhouxiaoka/autoclip targets automated long-to-short video editing, with subtitles, cover art and publishing copy. Supporting repository sections: repo-04.\n- Focused utilities and compliance knowledge: XiaoYouChR/Ghost-Downloader-3 is a broad downloader, mjmirza/app-store-compliance turns rejection rules into a pre-submission playbook, and cathrynlavery/diagram-design packages a visual design system for agent-generated diagrams. Supporting repository sections: repo-02, repo-09, repo-10."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The clearest current bet is on making agents useful in concrete workflows: security testing, software operation, development process and information gathering. High gains for a downloader, video editor and small-model training project add breadth, while absent historical snapshots mean this is a one-day attention read rather than evidence of sustained growth beyond the four reported trending days."
+    },
+    {
+      "id": "99-sources-and-method",
+      "kind": "sources",
+      "title": "Sources and Method",
+      "content": "GitHub Trending daily and supplied deterministic attention signals supplied window gains and ranks; all 10 listed projects were verified against GitHub REST repository metadata and default-branch commit endpoints. Snapshot-delta retrieval failed because gh authentication was unavailable, so all snapshot deltas are null, not zero."
+    }
+  ],
+  "sources": {
+    "github_trending": "https://github.com/trending?since=daily",
+    "github_rest_api": "https://api.github.com/repos/{owner}/{repo}; https://api.github.com/repos/{owner}/{repo}/commits/{default_branch}",
+    "signals_file": "/home/yizhuan/.research/github/daily/github-trending-summary-daily-2026-11-24.signals.json"
+  },
+  "comparison_basis": null
+}

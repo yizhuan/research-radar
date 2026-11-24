@@ -1,0 +1,470 @@
+{
+  "schema": "arxiv-trending-ai/v1",
+  "category": "ai",
+  "window": "daily",
+  "date": "2026-11-24",
+  "title": "arXiv Trending AI — Daily report — 2026-11-24",
+  "source_report": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-24.md",
+  "entry_count": 11,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv publishes no official trending chart; this ordering is inferred from sparse available signals. The signal file had no candidate-level external-attention values, and citation evidence was unavailable, so cross-list breadth is not a measure of popularity.",
+  "snapshot_utc": "2026-11-24T03:05:13Z",
+  "announcement_window": {
+    "start": "2026-11-20T19:00:00Z",
+    "end": "2026-11-23T19:00:00Z",
+    "announced": "2026-11-24T01:00:00Z"
+  },
+  "signals_source": "/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-24.signals.json",
+  "sections": [
+    {
+      "id": "top_01",
+      "kind": "paper",
+      "title": "Feedback-Driven Prompt Refinement for Educational AI: Affective Trajectory Estimation and Bloom's Taxonomy Classification",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.28293",
+      "arxiv_id": "2611.28293",
+      "arxiv_version": "1",
+      "published": "2026-11-20T20:20:32Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "authors": [
+        "Josh Dean",
+        "Karan Patel",
+        "Gaurangi Raul",
+        "Yu-Zheng Lin",
+        "Jesus Pacheco",
+        "Sicong Shao",
+        "Shalaka Satam",
+        "Soheil Salehi",
+        "Pratik Satam"
+      ],
+      "themes": [
+        "Training & adaptation",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The authors report that a shared prompt-refinement procedure using separate affective and cognitive feedback improved held-out agreement and classification while reducing generation variability, without updating the executor model's parameters.",
+      "claimed_contribution": "The paper proposes feedback-driven prompt refinement for educational AI and reports improvements on held-out affective-reference and Bloom-label tasks without executor parameter updates.",
+      "unique_caveat": "The authors state that the refinement sets are small, affective references are unvalidated, and learner outcomes were not measured.",
+      "evidence_for_ranking": "Signal candidate score 1.00 (cross_lists=1.00; four cross-lists). This is the highest candidate score; no Hugging Face, Hacker News, or citation signal is attached to this candidate.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.28293"
+      ]
+    },
+    {
+      "id": "top_02",
+      "kind": "paper",
+      "title": "Bridging Blind Spots With Words: Decentralized Multi-View Spatial Reasoning via Language-Constrained Communication",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.29112",
+      "arxiv_id": "2611.29112",
+      "arxiv_version": "1",
+      "published": "2026-11-22T00:23:01Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "authors": [
+        "Soumyabrata Chaudhuri",
+        "Joydeep Ghosh"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Multimodal & vision-language",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "The paper formalizes decentralized spatial reasoning across N agents with distinct views and budget-limited language exchange, introduces a multi-view benchmark, and reports that reinforcement learning with credit assignment closes the gap to its centralized baseline.",
+      "claimed_contribution": "The authors contribute a general multi-agent problem formulation and benchmark, and evaluate language-constrained collaboration against centralized and oracle ceilings.",
+      "unique_caveat": "The abstract reports substantial remaining headroom relative to an oracle best-of-K ceiling; the evidence is benchmark-based and does not establish transfer to deployed embodied settings.",
+      "evidence_for_ranking": "Signal candidate score 0.75 (cross_lists=0.75; three cross-lists), among the top breadth tier; the candidate has no attached HF/HN/citation attention value.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.29112"
+      ]
+    },
+    {
+      "id": "top_03",
+      "kind": "paper",
+      "title": "ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.28477",
+      "arxiv_id": "2611.28477",
+      "arxiv_version": "1",
+      "published": "2026-11-21T01:51:31Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "physics.ao-ph",
+        "physics.geo-ph"
+      ],
+      "authors": [
+        "Koutian Wu",
+        "Yuxuan Cao",
+        "Gengchen Mai",
+        "Zeping Liu"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "ESM-Bench packages 60 code-change tasks from six Earth System Model repositories to test whether AI coding agents preserve both software interfaces and scientific physics, and audits reveal failures in local patch-checking proxies.",
+      "claimed_contribution": "The authors release a benchmark, patch-review rubric, and diagnostic tooling for evaluating AI coding agents on Earth System Model changes.",
+      "unique_caveat": "The authors say complete expert validation, comparative agent performance, and full-model execution remain unmeasured on benchmark version 5.",
+      "evidence_for_ranking": "Signal candidate score 0.75 (cross_lists=0.75; three cross-lists), placing it in the second-highest score tier; no candidate-specific HF/HN/citation signal is present.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.28477"
+      ]
+    },
+    {
+      "id": "top_04",
+      "kind": "paper",
+      "title": "INSEP: Refusal-Direction Inseparability as a Defense Against Abliteration",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.28314",
+      "arxiv_id": "2611.28314",
+      "arxiv_version": "1",
+      "published": "2026-11-20T21:06:00Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "authors": [
+        "Ivan Brugere",
+        "Junqi Jiang",
+        "Saumitra Mishra",
+        "Sumitra Ganesh"
+      ],
+      "themes": [
+        "Safety & alignment",
+        "Evaluation & benchmarks",
+        "Training & adaptation"
+      ],
+      "abstract": "INSEP fine-tunes language models to make harmful and benign activations less separable along the refusal direction, aiming to weaken the white-box abliteration attack while preserving refusal and benign-response quality.",
+      "claimed_contribution": "The authors propose an adversarially selected, low-rank fine-tuning defense and report evaluation against six defenses, five attacks, and eight models from 1B to 14B parameters.",
+      "unique_caveat": "The reported robustness evidence is limited to the tested attack suite, model set, and evaluation measures; the abstract does not establish resistance to untested attacks or deployment conditions.",
+      "evidence_for_ranking": "Signal candidate score 0.75 (cross_lists=0.75; three cross-lists), in the second-highest breadth tier; no candidate-specific HF/HN/citation attention value is attached.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.28314"
+      ]
+    },
+    {
+      "id": "top_05",
+      "kind": "paper",
+      "title": "When Being Wrong Is Right: Reverse-Capability Audio CAPTCHAs through Psychoacoustic Design",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.28823",
+      "arxiv_id": "2611.28823",
+      "arxiv_version": "1",
+      "published": "2026-11-21T14:16:14Z",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.HC",
+        "cs.SD"
+      ],
+      "authors": [
+        "Mingjie Bao",
+        "Yu Dai",
+        "Guangke Chen",
+        "Guozhu Meng"
+      ],
+      "themes": [
+        "Safety & alignment",
+        "Evaluation & benchmarks",
+        "Multimodal & vision-language"
+      ],
+      "abstract": "The paper introduces psychoacoustic audio CAPTCHAs that accept stable human perceptual errors as the reference answer, reporting lower machine acceptance than nine prior schemes while retaining comparatively high human acceptance in its study.",
+      "claimed_contribution": "The authors formulate reverse-capability verification and instantiate it with classification and counting CAPTCHA tasks evaluated across seven audio-language models and eight attack strategies.",
+      "unique_caveat": "The reported machine and human acceptance rates are specific to the evaluated models, attack strategies, and study conditions; the abstract does not establish performance in broad real-world deployment.",
+      "evidence_for_ranking": "Signal candidate score 0.75 (cross_lists=0.75; three cross-lists), in the second-highest score tier; no candidate-specific HF/HN/citation value is present.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.28823"
+      ]
+    },
+    {
+      "id": "top_06",
+      "kind": "paper",
+      "title": "GameAnything: From Any Inspirations to Playable Game Worlds",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.29238",
+      "arxiv_id": "2611.29238",
+      "arxiv_version": "1",
+      "published": "2026-11-22T05:17:35Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "authors": [
+        "Wenyi Wu",
+        "Siqi Liu",
+        "Yuru Feng",
+        "Zixuan Song",
+        "Aayush Salvi",
+        "Sibo Zhu",
+        "Kun Zhou",
+        "Biwei Huang"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Multimodal & vision-language",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "GameAnything is an open-source agentic platform and benchmark for turning multimodal inspirations into playable extensions of existing games through iterative coding, playtesting, persistent state, and reusable experience memory.",
+      "claimed_contribution": "The authors introduce GameAnything and GameAnything-Bench, and report that nine evaluated coding-agent configurations still struggle with playable interactions and precise edits.",
+      "unique_caveat": "The authors characterize gameplay testing as exploratory, and report that iterative refinement benefits vary across agents.",
+      "evidence_for_ranking": "Signal candidate score 0.50 (cross_lists=0.50; two cross-lists). It shares this score tier with other selected papers; the signal file provides no candidate-specific HF/HN/citation attention value.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.29238"
+      ]
+    },
+    {
+      "id": "top_07",
+      "kind": "paper",
+      "title": "Direct Feedback Policy Optimization for AI Coding Agents",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.29193",
+      "arxiv_id": "2611.29193",
+      "arxiv_version": "1",
+      "published": "2026-11-22T03:36:09Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "authors": [
+        "Fei Ding"
+      ],
+      "themes": [
+        "Training & adaptation",
+        "Agents & reasoning"
+      ],
+      "abstract": "Direct Feedback Policy Optimization (DFPO) is a single-trajectory reinforcement-learning method for coding agents, and the paper reports higher task-resolution rates than GSPO under matched base models and execution harnesses.",
+      "claimed_contribution": "The author proposes training directly from one trajectory to address sparse terminal rewards and repeated per-task sampling in group-relative methods.",
+      "unique_caveat": "The abstract reports a comparison with GSPO under matched models and harnesses but does not specify broader task coverage or generalization beyond that evaluation.",
+      "evidence_for_ranking": "Signal candidate score 0.50 (cross_lists=0.50; two cross-lists); this is the candidate’s only available ranking component, with no attached external-attention value.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.29193"
+      ]
+    },
+    {
+      "id": "top_08",
+      "kind": "paper",
+      "title": "VeriLogic: Reinforcement Learning over Verifiable Logical Reasoning Traces",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.29147",
+      "arxiv_id": "2611.29147",
+      "arxiv_version": "1",
+      "published": "2026-11-22T01:59:28Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "authors": [
+        "ZeLiang Chen",
+        "Yunyao Zhang",
+        "Xinglang Zhang",
+        "Wenbing Li",
+        "Junqing Yu",
+        "Zikai Song"
+      ],
+      "themes": [
+        "Agents & reasoning",
+        "Training & adaptation",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "VeriLogic converts intermediate logical judgments, proofs, and final decisions into explicit verifiable learning objects, combining verifier-grounded environment construction, structured policy optimization, and iterative refinement.",
+      "claimed_contribution": "The authors propose a verifier-feedback reinforcement-learning pipeline and report average gains of 6.39% on Qwen3 and 5.00% on Llama-3.1 across six logical-reasoning benchmarks.",
+      "unique_caveat": "The reported results cover six logical-reasoning benchmarks and two named model families; broader reasoning domains and deployment settings are not established by the abstract.",
+      "evidence_for_ranking": "Signal candidate score 0.50 (cross_lists=0.50; two cross-lists); no HF/HN/citation attention value is attached to the candidate.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.29147"
+      ]
+    },
+    {
+      "id": "top_09",
+      "kind": "paper",
+      "title": "Population-Based Post-Training for Large Language Models",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.29014",
+      "arxiv_id": "2611.29014",
+      "arxiv_version": "1",
+      "published": "2026-11-21T19:50:24Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": [
+        "Yixuan Even Xu",
+        "Aleksei Petrenko",
+        "Raja Giryes",
+        "Jackson Hamburger",
+        "Kevin Chen",
+        "Fei Fang",
+        "J. Zico Kolter",
+        "Philipp Krähenbühl"
+      ],
+      "themes": [
+        "Training & adaptation",
+        "Agents & reasoning",
+        "Evaluation & benchmarks"
+      ],
+      "abstract": "Population-Based Post-Training trains multiple LLMs in parallel and uses validation-driven population updates to explore hyperparameters, with reported gains over compute-matched independent RLVR learners on reasoning and interactive tool-use tasks.",
+      "claimed_contribution": "The authors propose population-based training as an in-run mechanism for post-training hyperparameter exploration and report recovery from poor initial settings.",
+      "unique_caveat": "The reported evidence is on the named reasoning benchmarks and tool-use environments; conclusions are bounded by those evaluations and the validation-driven setup.",
+      "evidence_for_ranking": "Signal candidate score 0.50 (cross_lists=0.50; two cross-lists); no candidate-specific HF/HN/citation signal is present.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.29014"
+      ]
+    },
+    {
+      "id": "top_10",
+      "kind": "paper",
+      "title": "Multimodal LLMs Know the Game but Assume the Real World",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.28745",
+      "arxiv_id": "2611.28745",
+      "arxiv_version": "1",
+      "published": "2026-11-21T11:27:17Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "authors": [
+        "Jianxin Gao",
+        "Bohan Chen",
+        "Runze Li",
+        "Qi Zhang"
+      ],
+      "themes": [
+        "Multimodal & vision-language",
+        "Evaluation & benchmarks",
+        "Agents & reasoning"
+      ],
+      "abstract": "RuleCraft tests 1,240 engine-verified Minecraft image questions and finds that six multimodal LLMs often answer according to real-world physics rather than game rules unless the prompt makes the game context explicit.",
+      "claimed_contribution": "The authors contribute a benchmark separating knowledge of game rules from selecting the relevant world model, and report accuracy gains from explicitly naming the game or asking about the pictured world's rules.",
+      "unique_caveat": "The core benchmark is Minecraft-focused; the abstract reports recurrence in two additional games, but does not establish coverage of arbitrary visual environments.",
+      "evidence_for_ranking": "Signal candidate score 0.50 (cross_lists=0.50; two cross-lists); the candidate has no attached HF/HN/citation attention value.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.28745"
+      ]
+    },
+    {
+      "id": "top_11",
+      "kind": "paper",
+      "title": "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2611.28671",
+      "arxiv_id": "2611.28671",
+      "arxiv_version": "1",
+      "published": "2026-11-21T08:50:10Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": [
+        "Haoyuan Zheng",
+        "Dongting Li",
+        "Hancheng Ye",
+        "Qinsi Wang",
+        "Mingyuan Ma",
+        "Yuncheng Yao",
+        "Yifei Wang",
+        "Baijun Zhou",
+        "Zishan Shao",
+        "Tingjun Chen",
+        "Hai Helen Li",
+        "Danyang Zhuo"
+      ],
+      "themes": [
+        "Evaluation & benchmarks",
+        "Efficient inference & systems",
+        "Agents & reasoning"
+      ],
+      "abstract": "MASSys benchmarks multi-agent LLM workflows across serving substrates and load regimes, measuring task quality alongside delivery, latency, cost, resource pressure, and failure evidence.",
+      "claimed_contribution": "The authors show that workflow rankings and effective task delivery can change with serving substrate and load, and argue for reporting operating conditions and execution failures alongside task quality.",
+      "unique_caveat": "The results are conditioned on the benchmark's five workload families and tested substrates/load regimes; they do not imply one universally best workflow.",
+      "evidence_for_ranking": "Signal candidate score 0.50 (cross_lists=0.50; two cross-lists); no candidate-specific HF/HN/citation attention value is present.",
+      "announcement_type": "new submission",
+      "announcement_date": "2026-11-24",
+      "signal_score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.28671"
+      ]
+    }
+  ]
+}

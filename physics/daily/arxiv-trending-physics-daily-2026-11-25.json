@@ -1,0 +1,512 @@
+{
+  "schema": "arxiv-trending-physics/v1",
+  "category": "physics",
+  "window": "daily",
+  "date": "2026-11-25",
+  "title": "arXiv Trending Physics — 2026-11-25 announcement batch",
+  "source_report": "/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-25.md",
+  "entry_count": 12,
+  "entry_noun": "papers",
+  "global_caveat": "Inferred ordering, not an official arXiv trending ranking. The deterministic candidate pool returned no external-attention signals; Semantic Scholar citation data were unavailable, so citation momentum could not be assessed. Zero score does not imply unimportance.",
+  "sections": [
+    {
+      "id": "2611.31749",
+      "kind": "paper",
+      "title": "Parton Physics in the Schwinger Model from Matrix Product States",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.31749",
+      "arxiv_id": "2611.31749",
+      "arxiv_version": "1",
+      "published": "2026-11-24T01:00:02Z",
+      "categories": [
+        "hep-lat",
+        "hep-ph",
+        "hep-th",
+        "physics.comp-ph",
+        "quant-ph"
+      ],
+      "authors": [
+        "Bañuls, Mari Carmen",
+        "Cichy, Krzysztof",
+        "Lin, C. -J. David",
+        "Schneider, Manuel"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods",
+        "Quantum information"
+      ],
+      "abstract": "Abstract:Parton distribution functions (PDFs) and light-cone distribution amplitudes (LCDAs) encode the non-perturbative structure of hadrons in terms of their partonic constituents. They are defined through matrix elements containing parton operators that are connected by a Wilson line along a light-front direction, which makes them difficult to access in Euclidean lattice calculations. We demonstrate how parton functions can be directly obtained in Minkowski space using the Hamiltonian framework. We compute fermion and antifermion PDFs, LCDAs, and decay constants of the vector meson in the Schwinger model for several fermion masses. States in Hilbert space are efficiently represented by tensor networks, with an expressivity that is systematically controlled by a bond dimension. The light-front Wilson line is implemented as a stepwise evolution on the lattice that alternates spatial shifts of an external charge with Trotterized time-evolution steps acting on a matrix product state. All systematic uncertainties are quantified by varying and extrapolating in the lattice spacing, volume, bond dimension, gauge-field truncation, and Trotter step width. The slow growth of the entanglement entropy makes moderate bond dimensions sufficient, which supports the feasibility of using tensor networks for computing light-front matrix elements in more general settings. We confirm that the computed distributions fulfill the expected normalizations, momentum sum rules, and symmetry properties.",
+      "claimed_result": "The arXiv abstract reports that tensor networks with moderate bond dimension suffice in this Schwinger-model calculation; the computed distributions obey expected normalizations, momentum sum rules, and symmetries, with lattice, volume, bond-dimension, gauge-truncation, and Trotter uncertainties varied and extrapolated.",
+      "evidence_type": "Computational; Hamiltonian lattice calculation using matrix product states in the massive Schwinger model.",
+      "unique_caveat": "This is a low-dimensional gauge-theory demonstration, not a calculation of physical 3+1-dimensional QCD; the authors quantify several numerical systematics but extrapolation to realistic hadrons remains open.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 1.0,
+        "score_components": {
+          "cross_lists": 1.0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31749"
+      ]
+    },
+    {
+      "id": "2611.31366",
+      "kind": "paper",
+      "title": "Locality from Nonlocality: Symmetry Relocalization and Gauging of Lattice Dirac Fermions",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.31366",
+      "arxiv_id": "2611.31366",
+      "arxiv_version": "1",
+      "published": "2026-11-23T19:00:01Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.stat-mech",
+        "hep-lat",
+        "hep-th",
+        "quant-ph"
+      ],
+      "authors": [
+        "Su, Lei"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Particle, nuclear & high-energy physics",
+        "Quantum information"
+      ],
+      "abstract": "Abstract:Spatially nonlocal symmetries need not imply nonlocal gauge dynamics. Nonlocal canonical transformations make certain exact nonlocal compact symmetries of free lattice Dirac fermions onsite while retaining sufficient Hamiltonian locality for gauging. Symmetry relocalization yields exact or emergent gauge locality in 1D, 2D, and 3D, subject to lattice structure, topology, and anomalies. In 1D, a Hamiltonian-preserving transformation exchanges onsite vector and nonlocal spectral axial charges of a half-filled chain, enabling local gauging of each and exposing their mixed anomaly. Bosonization identifies momentum-winding T-duality, with a parity-projected operator flowing to a noninvertible topological defect. A nonperturbative norm-resolvent bound proves emergent dynamical gauge locality at finite chemical potential, while a doubled Chern-insulator parent reveals the duality's bulk origin and superconducting extensions reveal hidden compact symmetries. In 2D, the square $\\pi$-flux Majorana model shares the Kitaev honeycomb model's single Dirac fermion and odd Pfaffian parity but supports sharp and exponentially local compact charges, the latter with nontrivial Chern topology. Relocalization retains Schwartz locality for asymptotically local gauging, while AIII/AII parents clarify bulk charge origin and parity-anomaly inflow. Two flavors yield compact $U(2)$, a quaternionic invariant, and asymptotically local non-Abelian gauging. In 3D, an exact mixed vector-axial flux response is derived, while a distinct model supports an exponentially local vector $U(1)$ charge with strong quaternionic topology. A nonlocal map makes the charge and Kramers symmetry onsite while preserving exponential Hamiltonian locality. For a compact $SU(2)$ Weyl doublet, a no-go theorem forbids translation-preserving Gaussian onsite relocalization retaining Weyl content and Hamiltonian locality.",
+      "claimed_result": "The abstract gives constructions and a nonperturbative norm-resolvent bound for emergent gauge locality, derives a mixed vector-axial flux response in 3D, and proves a no-go result for a translation-preserving Gaussian onsite relocalization of a compact SU(2) Weyl doublet under the stated locality conditions.",
+      "evidence_type": "Theoretical; analytical lattice-field-theory and mathematical-physics results.",
+      "unique_caveat": "The conclusions are conditional on lattice structure, topology, anomalies, and the transformation/locality assumptions; they are not an experimental observation of a gauge system.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 1.0,
+        "score_components": {
+          "cross_lists": 1.0
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31366"
+      ]
+    },
+    {
+      "id": "2611.32280",
+      "kind": "paper",
+      "title": "Relaxation dynamics of the impurity momentum in a one-dimensional Fermi gas",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.32280",
+      "arxiv_id": "2611.32280",
+      "arxiv_version": "1",
+      "published": "2026-11-24T09:44:59Z",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.stat-mech",
+        "math-ph",
+        "nlin.SI"
+      ],
+      "authors": [
+        "Sant'Ana, Felipe Taha"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Quantum information",
+        "Computational & data methods"
+      ],
+      "abstract": "Abstract:We consider a single mobile impurity coupled by a repulsive contact interaction to a gas of free spinless fermions of equal mass in one dimension. Using the determinant overlaps between the interacting eigenstates and free-fermion states, we derive closed determinant formulas for the matrix elements of the impurity momentum operator and of its square between arbitrary Bethe-ansatz eigenstates of a finite system. At infinite coupling we prove a selection rule: both operators have vanishing matrix elements between distinct eigenstates that share the same rapidity, and every eigenstate carries the per-particle share of the total momentum. For an impurity injected into the Fermi sea we have the following: at infinite coupling the average impurity momentum relaxes completely in the thermodynamic limit, while at finite coupling relaxation remains incomplete. The closed-form matrix elements turn the spectral representation of the average impurity momentum into explicit finite sums over eigenstates. We evaluate the post-injection dynamics, resolve the quantum-flutter oscillations and the approach towards the diagonal-ensemble value, and map the stationary momentum as a function of the injection momentum and the coupling. Finally, we analyse the thermodynamic limit and its asymptotics as an integral over Fredholm determinants.",
+      "claimed_result": "The abstract reports complete impurity-momentum relaxation at infinite coupling in the thermodynamic limit, incomplete relaxation at finite coupling, and closed determinant formulas that resolve the approach to the diagonal-ensemble value.",
+      "evidence_type": "Theoretical and computational; Bethe-ansatz eigenstates, finite sums, and a thermodynamic-limit analysis using Fredholm determinants.",
+      "unique_caveat": "The result concerns an idealized equal-mass, one-dimensional integrable gas with contact interactions; the infinite-coupling and thermodynamic conclusions do not directly establish behavior in less idealized experimental systems.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.75,
+        "score_components": {
+          "cross_lists": 0.75
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.32280"
+      ]
+    },
+    {
+      "id": "2611.31916",
+      "kind": "paper",
+      "title": "Machine learning enables full Bayesian inference for spinning extreme-mass-ratio inspirals",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.31916",
+      "arxiv_id": "2611.31916",
+      "arxiv_version": "1",
+      "published": "2026-11-24T04:21:47Z",
+      "categories": [
+        "gr-qc",
+        "astro-ph.HE",
+        "astro-ph.IM",
+        "cs.AI"
+      ],
+      "authors": [
+        "Liang, Bo",
+        "Du, Minghui",
+        "Lyu, Zhenwei",
+        "Song, Hanlin",
+        "Zhang, Jiakai",
+        "Qin, Weichen",
+        "Chou, Chia-Jui",
+        "Yang, Yi",
+        "Yu, Jingyi",
+        "Luo, Ziren",
+        "Sun, Mingming",
+        "Xu, Peng",
+        "Wu, Yue-Liang"
+      ],
+      "themes": [
+        "Cosmology & gravitation",
+        "Astrophysics",
+        "Computational & data methods"
+      ],
+      "abstract": "Abstract:Extreme-mass-ratio inspirals (EMRIs), stellar-mass compact objects spiralling into massive black holes, promise to measure the masses and spins of the central black holes, reveal the strong-field environment around them and gauge cosmic distances via millihertz gravitational-wave observations. Yet most forecasts for the parameter inference of these systems assume known source parameters, and broad-prior analyses have addressed only simplified versions of the problem. The joint inversion of all 14 parameters of a spinning source from the complete prior has remained unsolved. Here we solve it for the augmented analytic kludge model: generative networks narrow the complete prior and reveal a ring of degenerate spin directions, and the exact detector likelihood determines the posterior. For a simulated one-year LISA-Taiji observation, within one ring sector we obtain, for the first time, a 14-parameter posterior of a spinning EMRI from the complete prior, the most precise yet obtained for such a source from broad priors. The redshifted mass and spin of the massive black hole are determined to two parts in $10^5$, the mass two orders of magnitude beyond any electromagnetic measurement. The compact object's redshifted mass is measured to one part in $10^4$, and its eccentric, retrograde orbit discriminates between capture channels. The 0.8% distance and sub-square-degree localization are sufficient for dark-siren cosmology. Year-long coherent analysis resolves the inspiral driven by radiation reaction itself.",
+      "claimed_result": "For their simulated one-year detector observation and augmented analytic-kludge waveform, the authors report a 14-parameter posterior from the complete prior in one ring sector, with redshifted massive-black-hole mass and spin precision of two parts in 10^5.",
+      "evidence_type": "Computational; machine-learning-assisted Bayesian analysis of a simulated LISA-Taiji signal.",
+      "unique_caveat": "This is a forecast on simulated data using an augmented analytic-kludge model; spin degeneracies remain and only one ring sector is reported, so the stated precision is not a demonstrated measurement or a guarantee for real signals.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.75,
+        "score_components": {
+          "cross_lists": 0.75
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31916"
+      ]
+    },
+    {
+      "id": "2611.31745",
+      "kind": "paper",
+      "title": "Light-cone distributions of vector and scalar bound states in the Schwinger model from tensor networks",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.31745",
+      "arxiv_id": "2611.31745",
+      "arxiv_version": "1",
+      "published": "2026-11-24T00:57:30Z",
+      "categories": [
+        "hep-lat",
+        "hep-ph",
+        "nucl-th",
+        "quant-ph"
+      ],
+      "authors": [
+        "Hormaza, Juan",
+        "Qian, Wenyang"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods",
+        "Quantum information"
+      ],
+      "abstract": "Abstract:Light-cone distributions encode the partonic structure of hadrons, but they involve real-time correlations that Euclidean lattice methods cannot access directly. We compute the parton distribution functions (PDFs) and light-cone distribution amplitudes (LCDAs) of the vector and scalar meson bound states of the massive Schwinger model with tensor networks. Using the Kogut-Susskind lattice Hamiltonian with the gauge field eliminated through Gauss's law, we prepare the vacuum and the mesons as matrix product states and identify the vector and scalar mesons through their charge conjugation and momentum. The gauge-invariant light-cone correlators that define both distributions are evaluated directly in Minkowski space by real-time evolution. The two mesons exhibit qualitatively different light-cone structure, dictated by charge conjugation. The vector meson has a single-peaked PDF and a symmetric LCDA, while the scalar meson has a double-peaked PDF and an antisymmetric LCDA, whose vanishing zeroth moment requires a normalization through its first moment. The decay constants obtained from local matrix elements and from the moments of the LCDAs agree, and approach predictions from nonrelativistic model as the fermion mass increases. For the relatively large masses considered in this work, the PDFs closely follow the squared LCDAs, showing that the mesons are dominated by their valence component. Our results demonstrate tensor networks as a practical route to light-cone distributions of ground-state as well as excited hadrons in low-dimensional gauge theories.",
+      "claimed_result": "The abstract reports a single-peaked vector PDF and symmetric LCDA versus a double-peaked scalar PDF and antisymmetric LCDA, with decay constants from local matrix elements agreeing with LCDA moments.",
+      "evidence_type": "Computational; real-time matrix-product-state evolution with a Kogut-Susskind lattice Hamiltonian in the massive Schwinger model.",
+      "unique_caveat": "These are calculations in a low-dimensional model at the masses studied; agreement with nonrelativistic predictions as mass increases does not establish that the same distributions hold for physical QCD hadrons.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.75,
+        "score_components": {
+          "cross_lists": 0.75
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31745"
+      ]
+    },
+    {
+      "id": "2611.31454",
+      "kind": "paper",
+      "title": "Gluon GPDs from hard-exclusive electroproduction of heavy quarkonium at NLO",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.31454",
+      "arxiv_id": "2611.31454",
+      "arxiv_version": "1",
+      "published": "2026-11-23T19:28:02Z",
+      "categories": [
+        "hep-ph",
+        "hep-ex",
+        "nucl-ex",
+        "nucl-th"
+      ],
+      "authors": [
+        "Guo, Yuxun",
+        "Ji, Xiangdong",
+        "Ji, Yao",
+        "Yuan, Feng"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "Abstract:Gluon tomography of the nucleon through hard-exclusive electroproduction of $J/\\psi$ has been one of the key motivations for Electron-Ion Collider. However, the next-to-leading order (NLO) perturbative QCD calculations available in the literature were performed either in the collinear factorization limit where the heavy-quark mass is neglected, or in heavy-quark limit where the heavy quarkonia are approximately point-like. We present a full next-to-leading order collinear factorization for the hard exclusive production of heavy mesons that retains the meson mass as well as full light-cone distribution amplitude. We compare the full NLO result with the special limits and estimate the errors due to potentially-large corrections from $\\alpha_s(M)$ and $M^2/Q^2$ at this order.",
+      "claimed_result": "The arXiv abstract reports a full NLO calculation beyond earlier limits that neglected the heavy-quark mass or treated quarkonia as point-like, and estimates potentially large corrections associated with αs(M) and M²/Q².",
+      "evidence_type": "Theoretical; perturbative-QCD factorization calculation.",
+      "unique_caveat": "The authors flag potentially large higher-order/scale and power corrections at this order; the calculation is a theory input for future extraction, not a new measurement of gluon distributions.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.75,
+        "score_components": {
+          "cross_lists": 0.75
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31454"
+      ]
+    },
+    {
+      "id": "2611.31403",
+      "kind": "paper",
+      "title": "OmniX: A first jet and event model",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.31403",
+      "arxiv_id": "2611.31403",
+      "arxiv_version": "1",
+      "published": "2026-11-23T19:02:23Z",
+      "categories": [
+        "hep-ph",
+        "cs.LG",
+        "hep-ex",
+        "physics.data-an"
+      ],
+      "authors": [
+        "Hallin, Anna",
+        "Kasieczka, Gregor",
+        "Rose, Henning"
+      ],
+      "themes": [
+        "Particle, nuclear & high-energy physics",
+        "Computational & data methods"
+      ],
+      "abstract": "Abstract:Foundation models are a new approach to building machine learning algorithms for particle physics. Their central idea is that a single model can be adapted to a variety of downstream tasks, amortizing training costs. So far, most foundation model prototypes have operated on the constituents of a single jet. This limits their usefulness for physics problems at the scale of full events, such as distinguishing different processes, and restricts their performance, as global correla- tions are invisible to the model. Here, we introduce OmniX, an architecture that operates on both single jets and whole events within a single model. Using the jet-level JetClass and Top-tagging datasets and the event-level Collide-2V dataset, we demonstrate that OmniX trained jointly on single jets and full events matches or exceeds otherwise equivalent jet-only and event-only models in generation and classification.",
+      "claimed_result": "The authors report that a jointly trained model working at jet and event scales matches or outperforms otherwise equivalent single-scale models on the named generation and classification benchmarks.",
+      "evidence_type": "Computational; supervised/generative model evaluated on JetClass, Top-tagging, and Collide-2V datasets.",
+      "unique_caveat": "Evidence is benchmark-based; the abstract does not establish gains on real collision data or across downstream analyses beyond those evaluated.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.75,
+        "score_components": {
+          "cross_lists": 0.75
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31403"
+      ]
+    },
+    {
+      "id": "2611.31384",
+      "kind": "paper",
+      "title": "Localization in one-dimensional magnetic quasicrystals",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.31384",
+      "arxiv_id": "2611.31384",
+      "arxiv_version": "1",
+      "published": "2026-11-23T19:00:08Z",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cond-mat.dis-nn",
+        "math-ph",
+        "quant-ph"
+      ],
+      "authors": [
+        "Osborne, Andrew",
+        "Samajdar, Rhine",
+        "Houck, Andrew A."
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Quantum information"
+      ],
+      "abstract": "Abstract:The celebrated Aubry-André-Harper model undergoes a metal-insulator transition akin to Anderson localization due to an energetic competition between nearest-neighbor hopping and a quasiperiodic on-site potential. In this work, we consider the problem of a one-dimensional lattice subject to a quasiperiodic external field, where the topology of the underlying graph mediates the competition between insulating and conducting phases. In particular, we present examples for which all dispersive eigenstates are critically localized, as well as models in which they are exponentially localized. We also demonstrate the coexistence of these phenomena with an extensive set of degenerate finitely supported eigenstates forming a flat band. Finally, we construct models with exactly solvable mobility edges arising only from graph structure. Going beyond these single-particle results, we show---using exact-diagonalization calculations of the bosonic dynamics---that, as in the conventional Aubry-André-Harper case, on-site interactions drive localized eigenstates toward extendedness. Our results provide a framework for exploring how magnetic interference and interactions jointly constrain transport in quasiperiodic lattices.",
+      "claimed_result": "The abstract reports examples where all dispersive states are critically localized, models with exponential localization and flat-band states, graph-structure mobility edges, and interaction-driven delocalization in calculated bosonic dynamics.",
+      "evidence_type": "Theoretical and computational; model construction plus exact diagonalization.",
+      "unique_caveat": "The results are model-specific; the interacting dynamics are numerical, and the abstract does not report experimental realization or finite-size robustness tests.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.75,
+        "score_components": {
+          "cross_lists": 0.75
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31384"
+      ]
+    },
+    {
+      "id": "2611.32190",
+      "kind": "paper",
+      "title": "Entanglement between distant spins in a polarized magnet forms a $d$-wave clover",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.32190",
+      "arxiv_id": "2611.32190",
+      "arxiv_version": "1",
+      "published": "2026-11-24T08:41:12Z",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el",
+        "math-ph"
+      ],
+      "authors": [
+        "Zhang, Alan",
+        "Zhou, Ye"
+      ],
+      "themes": [
+        "Quantum information",
+        "Condensed matter & materials"
+      ],
+      "abstract": "Abstract:Spin-orbit coupling makes a polarized magnet a source of virtual spin-flip pairs. These pairs entangle distant spins: the symmetry of the coupling fixes the angular pattern, and the flips they leave behind end it at a distance of order the inverse spin-orbit angle. For a spin-1/2 square-lattice ferromagnet we prove, at leading order, a d-wave inverse-square law, 1.376 times the spin-wave amplitude, a clover-shaped entangled region, exact without the Dzyaloshinskii-Moriya term, and that each spin's entanglement is entirely pairwise. Four qubits can test the d-wave signs at present error rates.",
+      "claimed_result": "The abstract gives a leading-order d-wave inverse-square law with amplitude 1.376 times the spin-wave amplitude, states that entanglement is entirely pairwise in the model, and says four qubits could test the d-wave signs at current error rates.",
+      "evidence_type": "Theoretical; leading-order analysis of a square-lattice ferromagnet.",
+      "unique_caveat": "The derivation is leading-order and model-specific; the four-qubit proposal is a feasibility suggestion, not a reported experiment.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.5,
+        "score_components": {
+          "cross_lists": 0.5
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.32190"
+      ]
+    },
+    {
+      "id": "2611.31861",
+      "kind": "paper",
+      "title": "Superconductivity with valley-imbalanced Fermi surfaces in thick rhombohedral graphene",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.31861",
+      "arxiv_id": "2611.31861",
+      "arxiv_version": "1",
+      "published": "2026-11-24T03:01:06Z",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "authors": [
+        "Liu, Le",
+        "Zhao, Jian",
+        "Xu, Cheng",
+        "Watanabe, Kenji",
+        "Taniguchi, Takashi",
+        "Zhang, Yang",
+        "Gao, Weibo"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Quantum information"
+      ],
+      "abstract": "Abstract:Superconductivity in spin-polarized metals challenges conventional opposite-spin pairing, particularly when a magnetic field strengthens rather than suppresses it. In graphene, the additional valley degree of freedom broadens the possible pairing channels, making the valley occupation of the parent metal central to understanding such superconductivity. Here we report in-plane-field-enhanced superconductivity in hBN-aligned 17-layer rhombohedral graphene. Normal-state quantum oscillations reveal unequal Fermi pockets consistent with a valley-imbalanced, spin-polarized parent metal. Calculations show that the parent electron pocket is predominantly localized on the bottom surface and largely preserved by electrostatic screening as additional Fermi pockets emerge. Superconductivity persists in this regime but is suppressed when carriers are polarized toward the hBN-aligned surface, where the parent bands undergo strong moire reconstruction. An adjacent nonlinear metallic response evolves continuously into superconducting critical-current features and persists above the superconducting transition temperature. The combination of valley imbalance and in-plane-field-enhanced superconductivity motivates a phenomenological magnon-assisted equal-spin intervalley pairing scenario. These findings provide experimental constraints on pairing in valley-imbalanced metals and open a route to testing magnetic pairing mechanisms through layer-selective control of the parent electronic states.",
+      "claimed_result": "The authors report enhanced superconductivity under in-plane field and unequal Fermi pockets consistent with valley imbalance; their calculations and layer-selective observations constrain possible pairing scenarios.",
+      "evidence_type": "Experimental and theoretical; transport/quantum-oscillation measurements on graphene, interpreted with calculations.",
+      "unique_caveat": "The proposed magnon-mediated pairing is a phenomenological scenario, not uniquely established by the reported observations; conclusions concern a specific multilayer device and tuning regime.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.5,
+        "score_components": {
+          "cross_lists": 0.5
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31861"
+      ]
+    },
+    {
+      "id": "2611.31633",
+      "kind": "paper",
+      "title": "H$_3^+$ forbidden rotational lines in a planetary nebula: JWST/MIRI detection in the Ring Nebula and ionization by the central star",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2611.31633",
+      "arxiv_id": "2611.31633",
+      "arxiv_version": "1",
+      "published": "2026-11-23T22:20:01Z",
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR",
+        "physics.chem-ph"
+      ],
+      "authors": [
+        "Neufeld, David A.",
+        "Sonnentrucker, Paule",
+        "Green, Joel D."
+      ],
+      "themes": [
+        "Astrophysics",
+        "Instrumentation & detectors"
+      ],
+      "abstract": "Abstract:We report the detection of the forbidden pure rotational spectrum of H$_3^+$ in the Ring Nebula (NGC 6720), to our knowledge the first detection of H$_3^+$ in a planetary nebula. In JWST/MIRI spectra obtained toward the inner edge of the main ring, 0.1 pc in projection from the central star, the $(J,K) = (5,0)\\to(4,3)$ line at 16.325 $\\mu$m is detected at $32\\sigma$, along with nine further unblended lines. The H$_3^+$ emission spatially follows the H$_2$ emission, whose rotational lines show warm (660 K) and hot (1700 K) components. A statistical-equilibrium model at these temperatures reproduces the subthermal H$_3^+$ line pattern, with much of the emission arising in the hot H$_2$. The emission requires an H$_2$ ionization rate of $\\sim 3\\times 10^{-12}\\,{\\rm s^{-1}}$ in the hot H$_2$ for an electron fraction of $2\\times 10^{-4}$. The rate is $\\sim 2\\times 10^4$ times the cosmic-ray ionization rate in diffuse clouds. The extreme-ultraviolet and soft X-ray radiation (54-300 eV) of the 135 kK central star supplies this rate if the hot H$_2$ lies within an H-nucleus column density of (4-8)$\\times 10^{19}\\,{\\rm cm^{-2}}$ of the ionization front of the dense globules. Static photoionization models, however, place the H$_2$ in gas too cold to excite the H$_3^+$ lines. The warm molecular gas and its H$_3^+$ thus suggest dynamical effects, most plausibly the advection of H$_2$ through a photoevaporation front into gas heated by the star. H$_3^+$ provides a new probe of the photoionization of molecular gas by very hot stars.",
+      "claimed_result": "Authors report the first H₃⁺ detection in a planetary nebula; statistical-equilibrium modeling gives an ionization rate around 3×10⁻¹² s⁻¹ under the stated electron-fraction assumption, and they favor advection through a photoevaporation front to explain the warm emitting gas.",
+      "evidence_type": "Observational; JWST/MIRI spectroscopy plus statistical-equilibrium and photoionization modeling.",
+      "unique_caveat": "The ionization rate depends on assumed electron fraction and excitation model; static photoionization models do not reproduce the warm gas, so the proposed dynamical explanation remains an interpretation.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.5,
+        "score_components": {
+          "cross_lists": 0.5
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31633"
+      ]
+    },
+    {
+      "id": "2611.31383",
+      "kind": "paper",
+      "title": "Non-integer high harmonic generation from many-body nonadiabatic gating",
+      "rank": 12,
+      "url": "https://arxiv.org/abs/2611.31383",
+      "arxiv_id": "2611.31383",
+      "arxiv_version": "1",
+      "published": "2026-11-23T19:00:08Z",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "authors": [
+        "Guo, Mingyao",
+        "Wang, Luting",
+        "Suganya, Murali",
+        "Yu, Biqiong",
+        "Greven, Martin",
+        "Krishnamoorthi, Sritharan",
+        "Sankar, Raman",
+        "Wang, Yao",
+        "Hsieh, David"
+      ],
+      "themes": [
+        "Condensed matter & materials",
+        "Atomic, molecular & optical physics"
+      ],
+      "abstract": "Abstract:High harmonic generation (HHG) in solids typically produces a rigid frequency comb locked to exact integer multiples of the drive photon energy. In strongly correlated materials, however, the light field can dynamically transform the electronic state on the timescale of harmonic generation itself, potentially violating this rule. Here, we report giant blueshifted, non-integer HHG in a cuprate Mott insulator Sr$_2$CuO$_3$ produced by mid-infrared excitations. Concurrent transient reflectivity measurements and time-dependent exact-diagonalization simulations of a driven Hubbard model support a many-body temporal gating mechanism that suppresses light emission on the trailing edge of the pulse, thereby blueshifting radiated harmonics in the frequency domain. Our findings establish HHG emission energy as a sensitive probe of quantum many-body dynamics and pave the way for exploration and manipulation of correlated electronic phases of matter with strong-field spectroscopy.",
+      "claimed_result": "The authors report giant blueshifted, non-integer harmonics in a cuprate Mott insulator and attribute them to pulse-tail emission suppression; transient reflectivity and time-dependent exact-diagonalization simulations support this mechanism.",
+      "evidence_type": "Experimental and computational; optical measurements with driven-Hubbard exact-diagonalization modeling.",
+      "unique_caveat": "The mechanism is supported by a model and concurrent reflectivity but remains an interpretation of this material and excitation regime; the abstract does not establish universality across correlated solids.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "ranking_evidence": {
+        "score": 0.5,
+        "score_components": {
+          "cross_lists": 0.5
+        }
+      },
+      "refs": [
+        "https://arxiv.org/abs/2611.31383"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "arxiv",
+  "category": "bio",
+  "window": "daily",
+  "arxiv_window": {
+    "start": "2026-11-23T19:00:00Z",
+    "end": "2026-11-24T19:00:00Z",
+    "announced": "2026-11-25T01:00:00Z",
+    "announcement_date": "2026-11-25"
+  },
+  "categories": [
+    "q-bio.BM",
+    "q-bio.GN",
+    "q-bio.MN",
+    "q-bio.SC",
+    "q-bio.CB",
+    "q-bio.TO",
+    "q-bio.QM",
+    "cs.BI",
+    "physics.med-ph"
+  ],
+  "generated_at": "2026-11-25T03:09:01Z",
+  "sources": {
+    "arxiv": {
+      "status": "ok",
+      "count": 9
+    },
+    "huggingface": {
+      "status": "ok",
+      "count": 105
+    },
+    "hacker_news": {
+      "status": "ok",
+      "count": 15
+    },
+    "arxiv_lookup": {
+      "status": "ok",
+      "count": 118
+    },
+    "semantic_scholar": {
+      "status": "error",
+      "error": "HTTPError: HTTP Error 429: "
+    }
+  },
+  "weights": {
+    "hf_upvotes": 3.0,
+    "hn_points": 1.5,
+    "hn_comments": 1.0,
+    "citations": 2.0,
+    "influential_citations": 1.0,
+    "code_stars": 0.5,
+    "cross_lists": 0.25
+  },
+  "pool_size": 9,
+  "with_attention": 0,
+  "candidates": [
+    {
+      "arxiv_id": "2611.32077",
+      "version": "1",
+      "title": "Synchronized Memory-Dependent Intracellular Oscillations for a Cell-Bulk ODE-PDE Model in $\\mathbb{R}^3$",
+      "authors": [
+        "Merlin Pelz",
+        "Michael J. Ward"
+      ],
+      "published": "2026-11-24T07:00:43Z",
+      "updated": "2026-11-24T07:00:43Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "nlin.AO",
+        "q-bio.CB"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.32077",
+      "comment": "46 pages, 15 figures",
+      "abstract": "We develop a hybrid asymptotic-numerical theory for a cell-bulk ODE-PDE model in $\\mathbb{R}^3$ to analyze the long-range diffusive coupling of spatially localized, dynamically active cells. In the limit of small cell radius $\\varepsilon\\ll 1$, we derive a novel integro-differential ODE system for the intracellular dynamics, in which the 3-D bulk diffusion field is effectively replaced by a time-memory kernel whose strength depends on the inter-cell distances. To compute long-time solutions efficiently, we implement a fast time-marching scheme for this integro-differential system that is inspired by the \\emph{sum-of-exponentials} method. This scheme is applied to Sel'kov intracellular kinetics, which is a conceptual two-component model for a conditional oscillator. Our analysis reveals that, in contrast to the more strongly coupled 2-D case, each cell in $\\mathbb{R}^3$ experiences only a weak $\\mathcal{O}(\\varepsilon)$ coupling effect from the other cells in the population. Consequently, individual cells that exhibit oscillatory intracellular dynamics can only synchronize over very long time scales of order $\\mathcal{O}(\\varepsilon^{-1})$ when they are separated by $\\mathcal{O}(1)$",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.31594",
+      "version": "1",
+      "title": "Uncertainty Quantification and Global Sensitivity Analysis of Patient-Specific Coronary Hemodynamics Under Unsteady Flow Conditions",
+      "authors": [
+        "Muhammad Usman",
+        "Nafis M. Arefin",
+        "Akil Narayan",
+        "Lucas H. Timmins"
+      ],
+      "published": "2026-11-23T21:40:33Z",
+      "updated": "2026-11-23T21:40:33Z",
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn",
+        "math.NA",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.31594",
+      "comment": "",
+      "abstract": "Patient-specific computational models of the coronary arteries demonstrate transformative potential for physiological assessment, identifying hemodynamic markers associated with disease progression, and optimizing treatment. Unfortunately, these models rarely account for input parameter uncertainty, limiting confidence in predictions and their clinical interpretation. Herein, we present a novel uncertainty quantification-finite element framework that integrates computationally efficient techniques to characterize and propagate uncertainty through patient-specific coronary simulations under unsteady flow conditions. Principal component analysis characterized variability in pulsatile coronary velocity waveforms, while uncertainty in blood pressure, viscosity, density, and heart rate is represented through probability distributions. Polynomial chaos expansion (PCE) enabled efficient uncertainty propagation and global sensitivity analysis across three patient-specific models, quantifying variability in time-averaged wall shear stress (WSS), oscillatory shear index, and cross-flow index. Fourth-order PCE emulators converged across all three patients, yielding analyses of 505 models per ",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.31536",
+      "version": "1",
+      "title": "Tempering and few-shot calibration of pathology foundation models improve digital biomarker reproducibility across slide scanners",
+      "authors": [
+        "Frank T Wen",
+        "Kyler Rosen",
+        "Siddhi Ramesh",
+        "Michael Koo",
+        "Sara Kochanny",
+        "Sasha Jain-Liu",
+        "Emma Dyer",
+        "Alexander T Pearson",
+        "James M Dolezal"
+      ],
+      "published": "2026-11-23T20:44:41Z",
+      "updated": "2026-11-23T20:44:41Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.31536",
+      "comment": "",
+      "abstract": "Pathology foundation models underpin a growing number of histology-based cancer biomarkers, but sensitivity to slide scanner-specific image signatures degrades cross-center reliability and reproducibility. We developed a foundation model fine-tuning method that improved consistency in head-and-neck cancer human papillomavirus (HPV) prediction, colorectal cancer microsatellite instability (MSI) identification, prostate cancer grading and breast cancer phenotyping. This tempering method decreased cross-scanner prediction differences by 67.5% for HPV (95% CI 59.0-73.9%), 69.3% for MSI (95% CI 51.9-76.5%) and 63.4%-81.2% for breast signatures. Cross-scanner prostate grade agreement rose from 42.5% to 92.7%. Under full scanner-HPV confounding during training, AUROC fell from 0.80 to 0.68 with original model features but only from 0.86 to 0.84 with tempering. Unlike post hoc feature calibration, tempering used only public data yet matched or exceeded on-site calibration. These findings support tempering to reduce scanner dependence of pathology foundation models.",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.32371",
+      "version": "1",
+      "title": "A Description-Derived Drug-Drug Interaction Benchmark Reveals Split-Dependent Molecular Representation Rankings",
+      "authors": [
+        "Manel Gil-Sorribes",
+        "Isaac Filella-Merce",
+        "Alexis Molina"
+      ],
+      "published": "2026-11-24T10:40:38Z",
+      "updated": "2026-11-24T10:40:38Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.32371",
+      "comment": "Accepted at two NeurIPS 2026 workshops: Representations for the Physical Sciences and ML4Molecules",
+      "abstract": "Drug-drug interaction (DDI) prediction is clinically important and poses a distinct challenge for molecular representation learning. Unlike single-molecule property prediction, DDI requires a predictor to compose two molecular representations into a relational outcome. DrugBank provides curator-authored DDI descriptions rather than ready-made categorical labels, so a categorical prediction target must first be derived from the text. We construct a dataset of DDI pairs by mapping processed descriptions to six text-derived categories and define a benchmark with four holdout regimes that restrict train-test chemical overlap from random pairs to scaffold-disjoint evaluation. We then use this benchmark to compare molecular fingerprints, pretrained sequence representations, and graph-derived features across five seeds and multiple classifier heads. Molecular fingerprints lead the high- overlap random split, whereas graph-derived representations lead the drug- and scaffold-holdout regimes, with the gap increasing as molecular overlap is restricted. Changing the classifier head affects absolute performance but not the relative representation ranking. These results show that representation ",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.32347",
+      "version": "1",
+      "title": "Beyond Hard Tokens: Predictive Memory for Multimodal Protein Generation",
+      "authors": [
+        "Xiaoliang Shi",
+        "Zichen Wang",
+        "Zhijian Wei",
+        "Zhanpeng Shi",
+        "Zhenghong Zhou",
+        "Yunpeng Wang",
+        "Shuangjia Zheng"
+      ],
+      "published": "2026-11-24T10:25:16Z",
+      "updated": "2026-11-24T10:25:16Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.32347",
+      "comment": "",
+      "abstract": "Multimodal protein language models unify sequence and discrete structural tokens via iterative masked decoding, offering a promising paradigm for joint protein design. However, standard decoders rely on a memoryless mask reset at each iteration: only a sparse subset of newly committed hard tokens is carried forward, while all remaining unresolved sites are reset to an identical [MASK] embedding. In open-ended co-generation where neither modality provides a fixed external anchor, this stateless transition limits single-step refinement depth and deprives both tracks of stable cross-step soft anchors, leading to slow convergence or degenerative repetitive collapse. Observing that uncommitted predictions evolve with pronounced temporal coherence rather than erratic noise, we introduce Predictive Memory (PredMem), a training-free self-conditioning recurrence that carries these soft beliefs across steps. At each step, PredMem summarizes raw logits into a probability-weighted Top-$k$ expectation embedding at every residue and affinely interpolates it into eligible masked inputs on the next step at zero extra denoiser cost. Across DPLM-2, DPLM-2.1, and ESM3, PredMem raises unconditional se",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.32326",
+      "version": "1",
+      "title": "Longitudinal Characterization of Personalized Hydration Dynamics Using a Facial-Video Digital Hydration Biomarker",
+      "authors": [
+        "Janindu Athukorala",
+        "D. M. J. Prathapa",
+        "Thanveer Ahamed",
+        "Yudara Kularathne"
+      ],
+      "published": "2026-11-24T10:16:50Z",
+      "updated": "2026-11-24T10:16:50Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.32326",
+      "comment": "18 pages, 8 figures, 5 tables",
+      "abstract": "Background. Hydration is often assessed at a single time point despite continuous changes in body water. A facial-video biomarker has tracked hydration-state transitions, but its longitudinal behavior is unclear. Objective. To assess within-person hydration score changes, individual differences in fluid response, and implications for personal calibration. Methods. Five adults completed water and electrolyte days with an identical 2.0 L fluid schedule, using facial videos every 30 minutes over 12 hours (250 videos). On a separate morning, each completed a 500 mL electrolyte challenge with baseline and four follow-up videos over 2 hours (25 videos). Analyses assessed trajectories, post-drink changes, variability, time at or above score 50, and exploratory effects of starting score and beverage day. Results. The first scan was the day's lowest on 7 of 10 days. Across 50 intakes, the mean post-drink change was +4.0 points, exceeding a shuffled-time comparison (p less than 0.001). For 21 intakes starting below 50, no subsequent score fell; the mean rise was +11.3 points versus +5.7 expected under permutation (p less than 0.001). Intakes starting at 50 or above showed no rise beyond chan",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.32168",
+      "version": "1",
+      "title": "Benchmarking Protein Structure Tokenizers as Generation Targets for Language Models",
+      "authors": [
+        "Yong Liu",
+        "Zhanpeng Shi",
+        "Peicong Lin",
+        "Zhenyi Zhong",
+        "Yizhou Dang",
+        "Wendi Wu",
+        "Haoling Li",
+        "Jiayu Gu",
+        "Duo An",
+        "Shuangjia Zheng"
+      ],
+      "published": "2026-11-24T08:19:49Z",
+      "updated": "2026-11-24T08:19:49Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.32168",
+      "comment": "",
+      "abstract": "Discrete structure tokenizers are the standard way to give a language model access to protein three-dimensional structure, yet they are selected on how accurately they can be read, their reconstruction fidelity, while the property that governs generation is how well a model can write them. We measure this property, writability, directly: holding the base model, data, recipe and compute fixed, we swap only the tokenizer and train the same 9B model to emit structure tokens residue by residue, over eight tokenizers, four compute budgets and three evaluation sets (96 cells). At 2B tokens final writability runs from TM 0.662 down to 0.378 under identical conditions, with five of the eight arms clearing the TM 0.5 mark at which a fold is usually called correct and three falling short of it. Neither codebook size nor reconstruction ceiling explains where an arm lands; the best and worst both use 8192 codewords. What does explain the spread is local structure preservation of the code space. In DPLM-2 a one-bit codeword error costs 0.019 TM where a random codeword costs 0.347, and the trained model's own errors are correspondingly local, at 0.51 of the random Hamming expectation; FoldToken4",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.31451",
+      "version": "1",
+      "title": "A multimodal foundation model for tissue proteomics and morphology in cancer",
+      "authors": [
+        "Benedikt von Querfurth",
+        "Lukas Klein",
+        "Cédric Vincent-Cuaz",
+        "Eeshaan Jain",
+        "Yexiang Cheng",
+        "Johann Wenckstern",
+        "Phil F. Cheng",
+        "Petros Liakopoulos",
+        "Olivier Michielin",
+        "Martina Haberecker",
+        "Andreas Wicki",
+        "Pascal Frossard"
+      ],
+      "published": "2026-11-23T19:25:07Z",
+      "updated": "2026-11-23T19:25:07Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.CV"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.31451",
+      "comment": "",
+      "abstract": "Cancer diagnosis, prognosis, and treatment decisions increasingly rely on integrating tissue morphology with specific molecular readouts of the tumor and its microenvironment. H&E histopathology provides scalable morphology, whereas multiplex spatial proteomics quantifies dozens of proteins in situ with spatial context, but remains selectively deployed, often with different marker panels across cohorts. This creates a translational bottleneck: most patients lack high-depth molecular profiling, and existing models rarely integrate morphology and spatial molecular data in a single framework. We present VirTues-M2, a multimodal foundation model that jointly learns from H&E and spatial proteomics using a novel vision transformer-based architecture. By encoding marker identity during pretraining, VirTues-M2 is robust to missing modalities, imperfect modality pairing or registration, and variable marker panels, enabling unified inference for tissue phenotyping, panoptic cell segmentation, virtual staining, annotation-free biomarker discovery, and reinforcement learning-based adaptive marker panel selection to reduce assay burden. As a concrete demonstration of translational utility, in a",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.32382",
+      "version": "1",
+      "title": "Cancer multi-omics joint dimension reduction leads to reliable and interpretable survival predictions",
+      "authors": [
+        "Vincent Le Goff",
+        "Vincent Guillemot",
+        "Cathy Philippe",
+        "Wiam Ahdidou",
+        "Gwendoline Mendes",
+        "Jean-François Deleuze",
+        "Edith Le Floch",
+        "Arnaud Gloaguen"
+      ],
+      "published": "2026-11-24T10:48:03Z",
+      "updated": "2026-11-24T10:48:03Z",
+      "primary_category": "q-bio.GN",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.32382",
+      "comment": "",
+      "abstract": "Multi-omics studies are becoming more and more frequent, and are especially suited to decrypt the complexity of dysregulation happening in cancer. In this context, improving prognostication through interpretable methods could provide better patient stratification and help identify new prognostic biomarkers and therapeutic targets. Multi-omics data are however very often high-dimensional (few patients/high number of variables). A possible solution to high-dimensionality is Joint Dimension Reduction (JDR) methods, which compute a low-dimensional latent space from multi-omics data. In this work, we benchmark 12 JDR methods on 18 different TCGA cancer datasets. Survival prediction is achieved through a two-step process: the estimation of a low-dimensional multi-omics latent space followed by survival prediction with or without additional clinical data. We had to equip 4 methods with the ability to predict the survival of new patients. Results reveal that JDR methods can improve survival prediction with clinical data, and match the predictive performance of clinical data alone, with a high variability between different cancers. Among JDR methods, JIVE and RGCCA show superior performance",
+      "signals": {
+        "cross_lists": 0
+      },
+      "score": 0,
+      "score_components": {}
+    }
+  ],
+  "notes": [
+    "Scores are log1p-damped weighted sums of the listed signals; zero means no external attention was found, not that the paper is unimportant.",
+    "The pool is the arXiv listing for the window (capped) plus window papers discussed on Hugging Face or Hacker News; it is not exhaustive for very large categories."
+  ]
+}

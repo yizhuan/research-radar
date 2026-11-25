@@ -1,0 +1,413 @@
+{
+  "schema": "arxiv-trending-bio-report/v1",
+  "category": "bio",
+  "window": "daily",
+  "date": "2026-11-25",
+  "title": "arXiv Biology and Biomedicine — 2026-11-25 announcement batch",
+  "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-25.md",
+  "entry_count": 9,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv has no official trending chart, and its biomedical coverage is incomplete; this is an inferred relevance ranking from a limited arXiv corpus, not a popularity chart or a comprehensive biomedical survey. Many clinical and experimental preprints appear on bioRxiv or medRxiv.",
+  "date_range": {
+    "start": "2026-11-23T19:00:00Z",
+    "end": "2026-11-24T19:00:00Z"
+  },
+  "announcement_date": "2026-11-25",
+  "announcement_time_utc": "2026-11-25T01:00:00Z",
+  "snapshot_time_utc": "2026-11-25T03:09:01Z",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "arXiv Biology and Biomedicine — 2026-11-25 announcement batch",
+      "rank": null,
+      "url": "",
+      "text": "Nine notable recent papers are ordered by relevance because the signal pool found no HF/HN attention and Semantic Scholar retrieval was unavailable. Themes include multimodal pathology, protein-generation benchmarks, multi-omics prediction, and computational biomedical modeling.",
+      "global_caveat": "arXiv has no official trending chart, and its biomedical coverage is incomplete; this is an inferred relevance ranking from a limited arXiv corpus, not a popularity chart or a comprehensive biomedical survey. Many clinical and experimental preprints appear on bioRxiv or medRxiv."
+    },
+    {
+      "id": "01-a-multimodal-foundation-model-for-tissue-proteomics-and-morphology-i",
+      "kind": "paper",
+      "title": "A multimodal foundation model for tissue proteomics and morphology in cancer",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.31451",
+      "arxiv_id": "2611.31451",
+      "arxiv_version": "v1",
+      "published": "2026-11-23T19:25:07Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.CV"
+      ],
+      "authors": [
+        "Benedikt von Querfurth",
+        "Lukas Klein",
+        "Cédric Vincent-Cuaz",
+        "Eeshaan Jain",
+        "Yexiang Cheng",
+        "Johann Wenckstern",
+        "Phil F. Cheng",
+        "Petros Liakopoulos",
+        "Olivier Michielin",
+        "Martina Haberecker",
+        "Andreas Wicki",
+        "Pascal Frossard",
+        "Charlotte Bunne"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Omics & single-cell methods",
+        "Molecular & cell biology"
+      ],
+      "abstract": "VirTues-M2 jointly models H&E histology and spatial proteomics and reports cross-task evaluations plus survival-signature stratification in a 1,053-patient treatment-naive NSCLC cohort and an independent validation cohort.",
+      "claimed_contribution": "The authors present a marker-aware multimodal tissue foundation model that supports H&E-only, proteomics-only, and joint inference; in the preprint, multimodal signatures stratified survival in the discovery data and transferred to an external cohort.",
+      "unique_caveat": "The authors say the independent survival validation cohort was small (39 patients) and call for larger external and prospective multi-site validation; the reported survival associations are not clinical-utility evidence.",
+      "evidence_for_ranking": "Signal score 0.25, entirely one cross-list (0.25); no candidate HF upvotes or HN points/comments were recorded. Ranked first for direct fit to cancer tissue proteomics and multimodal biomedical research, not for measured popularity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.31451",
+        "https://arxiv.org/pdf/2611.31451v1"
+      ]
+    },
+    {
+      "id": "02-tempering-and-few-shot-calibration-of-pathology-foundation-models-im",
+      "kind": "paper",
+      "title": "Tempering and few-shot calibration of pathology foundation models improve digital biomarker reproducibility across slide scanners",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.31536",
+      "arxiv_id": "2611.31536",
+      "arxiv_version": "v1",
+      "published": "2026-11-23T20:44:41Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "authors": [
+        "Frank T Wen",
+        "Kyler Rosen",
+        "Siddhi Ramesh",
+        "Michael Koo",
+        "Sara Kochanny",
+        "Sasha Jain-Liu",
+        "Emma Dyer",
+        "Alexander T Pearson",
+        "James M Dolezal"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Medical physics & imaging",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors fine-tune a pathology foundation model to reduce scanner-dependent shifts across HPV, colorectal MSI, prostate grading, and breast-expression signatures, reporting lower prediction discrepancies and improved cross-scanner agreement.",
+      "claimed_contribution": "The preprint reports that tempering H-optimus-0 features reduced cross-scanner variation across four retrospective pathology applications, including prostate grade agreement rising from 42.5% to 92.7%.",
+      "unique_caveat": "All evaluations were retrospective; the study tempers one foundation model and the authors note uncertainty on scanners outside those represented in training, so prospective multi-site generalization remains unestablished.",
+      "evidence_for_ranking": "Signal score 0.50, entirely two cross-lists (0.50); no candidate HF upvotes or HN points/comments were recorded. Ranked highly for direct biomedical pathology relevance and reproducibility focus, not for measured popularity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.31536",
+        "https://arxiv.org/pdf/2611.31536v1"
+      ]
+    },
+    {
+      "id": "03-benchmarking-protein-structure-tokenizers-as-generation-targets-for-",
+      "kind": "paper",
+      "title": "Benchmarking Protein Structure Tokenizers as Generation Targets for Language Models",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.32168",
+      "arxiv_id": "2611.32168",
+      "arxiv_version": "v1",
+      "published": "2026-11-24T08:19:49Z",
+      "categories": [
+        "q-bio.QM",
+        "cs.AI"
+      ],
+      "authors": [
+        "Yong Liu",
+        "Zhanpeng Shi",
+        "Peicong Lin",
+        "Zhenyi Zhong",
+        "Yizhou Dang",
+        "Wendi Wu",
+        "Haoling Li",
+        "Jiayu Gu",
+        "Duo An",
+        "Shuangjia Zheng"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Bioinformatics & sequence analysis",
+        "Quantitative methods"
+      ],
+      "abstract": "In a controlled benchmark, the authors swap eight protein-structure tokenizers in the same 9B language model across four compute budgets and three held-out sets, finding substantial differences in generated-structure quality.",
+      "claimed_contribution": "The preprint introduces “writability” as a generation-oriented criterion and reports that local structure preservation in token spaces best tracks the observed differences; the authors explicitly describe this as a supported correlate, not established causality.",
+      "unique_caveat": "This is a computational benchmark under one base model, training recipe, and greedy decoding regime; it does not test generated proteins experimentally, and the authors caution against generalizing beyond that configuration.",
+      "evidence_for_ranking": "Signal score 0.25, entirely one cross-list (0.25); no candidate HF upvotes or HN points/comments were recorded. Ranked for direct protein-structure and generation-method relevance, not for measured popularity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.32168",
+        "https://arxiv.org/pdf/2611.32168v1"
+      ]
+    },
+    {
+      "id": "04-cancer-multi-omics-joint-dimension-reduction-leads-to-reliable-and-i",
+      "kind": "paper",
+      "title": "Cancer multi-omics joint dimension reduction leads to reliable and interpretable survival predictions",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.32382",
+      "arxiv_id": "2611.32382",
+      "arxiv_version": "v1",
+      "published": "2026-11-24T10:48:03Z",
+      "categories": [
+        "q-bio.GN"
+      ],
+      "authors": [
+        "Vincent Le Goff",
+        "Vincent Guillemot",
+        "Cathy Philippe",
+        "Wiam Ahdidou",
+        "Gwendoline Mendes",
+        "Jean-François Deleuze",
+        "Edith Le Floch",
+        "Arnaud Gloaguen"
+      ],
+      "themes": [
+        "Omics & single-cell methods",
+        "Biomedical & translational medicine",
+        "Quantitative methods"
+      ],
+      "abstract": "The authors benchmark 12 joint-dimension-reduction methods on 18 TCGA cancer datasets for survival prediction, reporting that performance varies substantially by cancer and that some methods improve on models using clinical data alone.",
+      "claimed_contribution": "The preprint identifies JIVE and RGCCA among the stronger approaches and reports bootstrap analyses of prognostic-marker reliability, with a low-grade-glioma interpretation.",
+      "unique_caveat": "The reported results are retrospective TCGA analyses with marked between-cancer variability; predictive performance and marker stability do not establish prospective clinical utility or treatment benefit.",
+      "evidence_for_ranking": "Signal score 0.00 and zero cross-lists; the collector found no external attention signal for this candidate. Zero is not evidence of low importance. Ranked for direct genomics, multi-omics, and cancer-prognosis relevance.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.32382",
+        "https://arxiv.org/pdf/2611.32382v1"
+      ]
+    },
+    {
+      "id": "05-beyond-hard-tokens-predictive-memory-for-multimodal-protein-generati",
+      "kind": "paper",
+      "title": "Beyond Hard Tokens: Predictive Memory for Multimodal Protein Generation",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.32347",
+      "arxiv_id": "2611.32347",
+      "arxiv_version": "v1",
+      "published": "2026-11-24T10:25:16Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": [
+        "Xiaoliang Shi",
+        "Zichen Wang",
+        "Zhijian Wei",
+        "Zhanpeng Shi",
+        "Zhenghong Zhou",
+        "Yunpeng Wang",
+        "Shuangjia Zheng"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Quantitative methods"
+      ],
+      "abstract": "Predictive Memory carries soft sequence and structure-token predictions between decoding steps; the authors report improved unconditional co-generation success for DPLM-2, DPLM-2.1, and ESM3 in computational evaluations.",
+      "claimed_contribution": "The preprint proposes a training-free self-conditioning recurrence and reports gains of 3.6, 17.7, and 48.7 percentage points on the three evaluated models, with improved quality-diversity trade-offs and less repetitive collapse.",
+      "unique_caveat": "The evidence is model-generation benchmarking, not biochemical or cellular validation of generated proteins; the reported gains vary substantially across the tested models.",
+      "evidence_for_ranking": "Signal score 0.25, entirely one cross-list (0.25); no candidate HF upvotes or HN points/comments were recorded. Ranked for direct multimodal protein-generation relevance, not for measured popularity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.32347",
+        "https://arxiv.org/pdf/2611.32347v1"
+      ]
+    },
+    {
+      "id": "06-a-description-derived-drug-drug-interaction-benchmark-reveals-split-",
+      "kind": "paper",
+      "title": "A Description-Derived Drug-Drug Interaction Benchmark Reveals Split-Dependent Molecular Representation Rankings",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.32371",
+      "arxiv_id": "2611.32371",
+      "arxiv_version": "v1",
+      "published": "2026-11-24T10:40:38Z",
+      "categories": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "authors": [
+        "Manel Gil-Sorribes",
+        "Isaac Filella-Merce",
+        "Alexis Molina"
+      ],
+      "themes": [
+        "Biochemistry & proteins",
+        "Biomedical & translational medicine",
+        "Bioinformatics & sequence analysis"
+      ],
+      "abstract": "The authors derive six drug-interaction labels from DrugBank descriptions and benchmark molecular representations under four train-test split regimes, finding that fingerprints lead on random splits while graph representations lead on drug- and scaffold-holdout splits.",
+      "claimed_contribution": "The preprint provides a description-derived DDI benchmark and shows that representation rankings depend on chemical novelty in the test split; its arXiv comment reports acceptance at two NeurIPS 2026 workshops.",
+      "unique_caveat": "Targets are categories derived from curated text, not measured patient outcomes or prospective interaction events; benchmark performance is not clinical validation.",
+      "evidence_for_ranking": "Signal score 0.25, entirely one cross-list (0.25); no candidate HF upvotes or HN points/comments were recorded. The arXiv comment reports two workshop acceptances, which is publication-status metadata rather than an attention metric. Ranked for molecular and biomedical-method relevance.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.32371",
+        "https://arxiv.org/pdf/2611.32371v1"
+      ]
+    },
+    {
+      "id": "07-synchronized-memory-dependent-intracellular-oscillations-for-a-cell-",
+      "kind": "paper",
+      "title": "Synchronized Memory-Dependent Intracellular Oscillations for a Cell-Bulk ODE-PDE Model in $\\mathbb{R}^3$",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.32077",
+      "arxiv_id": "2611.32077",
+      "arxiv_version": "v1",
+      "published": "2026-11-24T07:00:43Z",
+      "categories": [
+        "math.AP",
+        "nlin.AO",
+        "q-bio.CB"
+      ],
+      "authors": [
+        "Merlin Pelz",
+        "Michael J. Ward"
+      ],
+      "themes": [
+        "Molecular & cell biology",
+        "Quantitative methods"
+      ],
+      "abstract": "A cell-bulk ODE-PDE model is reduced to a memory-kernel system for intracellular dynamics; numerical analysis of Sel’kov kinetics predicts weak, slow synchronization among separated cells in three dimensions.",
+      "claimed_contribution": "The authors derive an asymptotic-numerical method and matrix perturbation analysis, then compare predicted stability thresholds with their time-marching numerical scheme.",
+      "unique_caveat": "The demonstrated system uses conceptual Sel’kov kinetics and mathematical/numerical validation, not measurements in biological cells; conclusions depend on the model assumptions and asymptotic regime.",
+      "evidence_for_ranking": "Signal score 0.50, entirely two cross-lists (0.50); no candidate HF upvotes or HN points/comments were recorded. Ranked for a clear intracellular molecular-dynamics application, not for measured popularity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.32077",
+        "https://arxiv.org/pdf/2611.32077v1"
+      ]
+    },
+    {
+      "id": "08-uncertainty-quantification-and-global-sensitivity-analysis-of-patien",
+      "kind": "paper",
+      "title": "Uncertainty Quantification and Global Sensitivity Analysis of Patient-Specific Coronary Hemodynamics Under Unsteady Flow Conditions",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.31594",
+      "arxiv_id": "2611.31594",
+      "arxiv_version": "v1",
+      "published": "2026-11-23T21:40:33Z",
+      "categories": [
+        "physics.flu-dyn",
+        "math.NA",
+        "physics.med-ph"
+      ],
+      "authors": [
+        "Muhammad Usman",
+        "Nafis M. Arefin",
+        "Akil Narayan",
+        "Lucas H. Timmins"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods",
+        "Medical physics & imaging"
+      ],
+      "abstract": "A polynomial-chaos uncertainty framework propagates uncertain flow waveforms and physiological inputs through coronary hemodynamics simulations for three patient-specific models, reporting greater relative uncertainty in multidirectional wall-shear metrics.",
+      "claimed_contribution": "The preprint combines finite-element simulations, polynomial-chaos emulators, and global sensitivity analysis; velocity waveform uncertainty dominated variability in oscillatory shear and cross-flow indices in the three modeled cases.",
+      "unique_caveat": "This is a computational study of three patient-specific models, not a clinical outcomes or prospective validation study; its conclusions depend on parameter distributions and model assumptions.",
+      "evidence_for_ranking": "Signal score 0.50, entirely two cross-lists (0.50); no candidate HF upvotes or HN points/comments were recorded. Ranked for direct cardiovascular biomedical modeling relevance, not for measured popularity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.31594",
+        "https://arxiv.org/pdf/2611.31594v1"
+      ]
+    },
+    {
+      "id": "09-longitudinal-characterization-of-personalized-hydration-dynamics-usi",
+      "kind": "paper",
+      "title": "Longitudinal Characterization of Personalized Hydration Dynamics Using a Facial-Video Digital Hydration Biomarker",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.32326",
+      "arxiv_id": "2611.32326",
+      "arxiv_version": "v1",
+      "published": "2026-11-24T10:16:50Z",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "authors": [
+        "Janindu Athukorala",
+        "D. M. J. Prathapa",
+        "Thanveer Ahamed",
+        "Yudara Kularathne"
+      ],
+      "themes": [
+        "Biomedical & translational medicine",
+        "Quantitative methods",
+        "Medical physics & imaging"
+      ],
+      "abstract": "In a small longitudinal study, five adults completed scheduled water/electrolyte observations and a separate electrolyte challenge; facial-video hydration scores changed after drinking and varied markedly between people.",
+      "claimed_contribution": "The authors report exploratory within-person trajectories and argue that the observed variation warrants studying personal calibration in larger controlled hydration studies.",
+      "unique_caveat": "Only five adults were studied; the water/electrolyte day order was fixed and the authors call for larger controlled studies. This exploratory digital biomarker is not established as a clinical hydration measure.",
+      "evidence_for_ranking": "Signal score 0.25, entirely one cross-list (0.25); no candidate HF upvotes or HN points/comments were recorded. Ranked last for weaker fit to the molecular-biology emphasis and exploratory five-person evidence, not as a claim of low importance.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "2026-11-25",
+      "refs": [
+        "https://arxiv.org/abs/2611.32326",
+        "https://arxiv.org/pdf/2611.32326v1"
+      ]
+    },
+    {
+      "id": "80-trending-research-themes",
+      "kind": "themes",
+      "title": "Trending Research Themes",
+      "rank": null,
+      "url": "",
+      "text": "1. **Multimodal tissue pathology and reproducibility.** VirTues-M2 (2611.31451) joins morphology and spatial proteomics for prediction, segmentation, and biomarker work; the scanner-tempering study (2611.31536) targets reproducibility across image-acquisition devices. These are two different contributions, not independent replications of one another.\n\n2. **Protein generation is being evaluated at the representation and decoding levels.** The tokenizer benchmark (2611.32168) isolates tokenizer choice in a fixed language-model setup, while PredMem (2611.32347) changes inference-time self-conditioning in existing multimodal generators. Both report computational generation results; neither demonstrates experimental protein function.\n\n3. **Evaluation design and uncertainty shape biomedical prediction claims.** The DDI benchmark (2611.32371) shows representation rankings changing with chemical holdout; multi-omics survival benchmarking (2611.32382) reports cancer-specific variability; and coronary simulations (2611.31594) quantify uncertainty in predicted flow-derived indices. These papers share an emphasis on split, model, and input uncertainty—not evidence of a field-wide shift.",
+      "refs": [
+        "https://arxiv.org/abs/2611.31451",
+        "https://arxiv.org/abs/2611.31536",
+        "https://arxiv.org/abs/2611.32168",
+        "https://arxiv.org/abs/2611.32347",
+        "https://arxiv.org/abs/2611.32371",
+        "https://arxiv.org/abs/2611.32382",
+        "https://arxiv.org/abs/2611.31594"
+      ]
+    },
+    {
+      "id": "81-open-problems-and-research-directions",
+      "kind": "opportunities",
+      "title": "Open Problems and Research Directions",
+      "rank": null,
+      "url": "",
+      "text": "Author-stated limits include the need for larger independent and prospective cohorts for VirTues-M2, retrospective evaluation and a single encoder for tempering, one model configuration and greedy decoding for the tokenizer benchmark, numerical-only validation for the intracellular model, and larger controlled hydration studies. Follow-up synthesis: test pathology systems across institutions, scanners, and patient groups with prespecified threshold metrics; repeat protein-generation comparisons across models and validate selected sequences experimentally; use external temporal/institutional holdouts for DDI and multi-omics; compare coronary uncertainty estimates with independent measurements in larger patient samples; and experimentally vary cell spacing and kinetics in a multicellular synchronization system. These are proposed validation steps, not claims of clinical readiness or novelty.",
+      "refs": [
+        "https://arxiv.org/abs/2611.31451",
+        "https://arxiv.org/abs/2611.31536",
+        "https://arxiv.org/abs/2611.32168",
+        "https://arxiv.org/abs/2611.32077",
+        "https://arxiv.org/abs/2611.32326"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "rank": null,
+      "url": "",
+      "text": "The clearest biomedical signals in this batch are methodological: integrating tissue morphology with molecular measurements, improving reproducibility, and stress-testing protein-generation representations. External-attention signals were absent and citation retrieval failed, so this is a relevance-ranked snapshot rather than a popularity ranking; none of these preprints establishes clinical benefit.",
+      "refs": [
+        "https://arxiv.org/abs/2611.31451",
+        "https://arxiv.org/abs/2611.31536",
+        "https://arxiv.org/abs/2611.32168"
+      ]
+    }
+  ]
+}

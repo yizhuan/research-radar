@@ -1,0 +1,494 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "arxiv",
+  "category": "bio",
+  "window": "daily",
+  "arxiv_window": {
+    "start": "2026-11-24T19:00:00Z",
+    "end": "2026-11-25T19:00:00Z",
+    "announced": "2026-11-26T01:00:00Z",
+    "announcement_date": "2026-11-26"
+  },
+  "categories": [
+    "q-bio.BM",
+    "q-bio.GN",
+    "q-bio.MN",
+    "q-bio.SC",
+    "q-bio.CB",
+    "q-bio.TO",
+    "q-bio.QM",
+    "cs.BI",
+    "physics.med-ph"
+  ],
+  "generated_at": "2026-11-26T03:09:14Z",
+  "sources": {
+    "arxiv": {
+      "status": "ok",
+      "count": 15
+    },
+    "huggingface": {
+      "status": "ok",
+      "count": 133
+    },
+    "hacker_news": {
+      "status": "ok",
+      "count": 15
+    },
+    "arxiv_lookup": {
+      "status": "ok",
+      "count": 146
+    },
+    "semantic_scholar": {
+      "status": "error",
+      "error": "HTTPError: HTTP Error 429: "
+    }
+  },
+  "weights": {
+    "hf_upvotes": 3.0,
+    "hn_points": 1.5,
+    "hn_comments": 1.0,
+    "citations": 2.0,
+    "influential_citations": 1.0,
+    "code_stars": 0.5,
+    "cross_lists": 0.25
+  },
+  "pool_size": 15,
+  "with_attention": 0,
+  "candidates": [
+    {
+      "arxiv_id": "2611.33702",
+      "version": "1",
+      "title": "Systematic study of the performance of small robots on controlled laboratory substrates",
+      "authors": [
+        "Chen Li",
+        "Aaron M. Hoover",
+        "Paul Birkmeyer",
+        "Paul B. Umbanhowar",
+        "Ronald S. Fearing",
+        "Daniel I. Goldman"
+      ],
+      "published": "2026-11-25T03:11:41Z",
+      "updated": "2026-11-25T03:11:41Z",
+      "primary_category": "physics.bio-ph",
+      "categories": [
+        "physics.bio-ph",
+        "cond-mat.soft",
+        "cs.RO",
+        "eess.SY",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33702",
+      "comment": "",
+      "abstract": "The design of robots able to locomote effectively over a diversity of terrain requires detailed ground interaction models; unfortunately such models are lacking due to the complicated response of real world substrates which can yield and flow in response to loading. To advance our understanding of the relevant modeling and design issues, we conduct a comparative study of the performance of DASH and RoACH, two small, biologically inspired, six legged, lightweight (10 cm, 20 g) robots fabricated using the smart composite microstructure (SCM) process. We systematically examine performance of both robots on rigid and flowing substrates. Varying both ground properties and limb stride frequency, we investigate average speed, mean mechanical power and cost of transport, and stability. We find that robot performance and stability is sensitive to the physics of ground interaction: on hard ground kinetic energy must be managed to prevent yaw, pitch, and roll instability to maintain high performance, while on sand the fluidizing interaction leads to increased cost of transport and lower running speeds. We also observe that the characteristic limb morphology and kinematics of each robot result",
+      "signals": {
+        "cross_lists": 4
+      },
+      "score": 1.0,
+      "score_components": {
+        "cross_lists": 1.0
+      }
+    },
+    {
+      "arxiv_id": "2611.33740",
+      "version": "1",
+      "title": "Exclusion and internal structure in the association/dissociation kinetics of DNA-binding proteins in the fast diffusion limit",
+      "authors": [
+        "Xiangting Li",
+        "Tom Chou"
+      ],
+      "published": "2026-11-25T04:01:12Z",
+      "updated": "2026-11-25T04:01:12Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "cond-mat.soft",
+        "cond-mat.stat-mech",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33740",
+      "comment": "18pp, 13 figures",
+      "abstract": "In many canonical biophysical and biochemical contexts, complex diffusing DNA-binding proteins undergoing nonspecific adsorption and desorption can exist in different conformational states. Equilibrium binding theories and kinetic models of competing ligands provide a basis for describing these systems. Coupling the internal conformational kinetics of bound proteins to exclusion and diffusion requires tracking both protein positions and binding states. Closed-form, tractable mathematical models that accurately describe the stochastic dynamics of structured proteins that bind to and diffuse along DNA are lacking. Here, we develop a new coarse-grained stochastic model of nonspecific DNA-protein binding in the fast diffusion regime, from which we derive an effective Markov model and its corresponding mean-field approximation that incorporates protein footprint size and conformational switching. We fit our new model quantitatively to previously measured dynamics of Replication Protein A (RPA) binding to ssDNA. Finally, by including multisegment binding states, our analysis captures facilitated exchange, revealing how multisegment architecture balances high affinity with rapid remodelin",
+      "signals": {
+        "cross_lists": 3
+      },
+      "score": 0.75,
+      "score_components": {
+        "cross_lists": 0.75
+      }
+    },
+    {
+      "arxiv_id": "2611.34166",
+      "version": "1",
+      "title": "Cell-Type-Specific Expression Is Hard to Predict from Bulk, but It Is Still Useful",
+      "authors": [
+        "Gadi Naveh",
+        "Amit Miller",
+        "Gal Keinan"
+      ],
+      "published": "2026-11-25T10:57:38Z",
+      "updated": "2026-11-25T10:57:38Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.34166",
+      "comment": "Accepted at the NeurIPS 2026 Workshop on AI for Drug Discovery (AI4DD). 5 pages main text, 28 pages total",
+      "abstract": "Single-cell-informed deconvolution provides cell-type-resolved features for clinical bulk RNA cohorts. Most existing methods predict the proportions $π_k$ of the $K$ constituent cell types (CTs). Fewer predict cell-type-specific expression (CTSE) $μ_{kg}$ of gene $g$ in CT $k$, which can capture cell states that proportions miss, but recent benchmarks find it much harder. We explain this gap with closed-form accuracy bounds. For CTSE, we derive an $R^2$ ceiling for per-gene linear estimators. For proportions, the best linear estimator, which pools evidence across genes, has a closed-form $R^2$, and a computable lower bound on it predicts which CTs are learnable. We study targeted deconvolution of 106 biologically curated (CT, gene) pairs, found post hoc to have higher learnability scores. On overall survival in non-small cell lung cancer, estimation difficulty does not predict prognostic value across these targets. Yet a sparse survival model on deconvolved features, mostly CTSE, predicts survival as well as a sparse model on the bulk genes themselves, while attributing its signal to specific cell types. Some deconvolved CTSE features reveal prognostic signal not seen in the corres",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.33985",
+      "version": "1",
+      "title": "MolGPAO: Molecular Generative Pre-trained Autoregressive Octree with Speculative Decoding and Sub-Millisecond Seam Healing for 3D Molecules",
+      "authors": [
+        "Shangqian Chen",
+        "Guojiang Zhao",
+        "Zheng Cheng",
+        "Jiankun Wang",
+        "Hongshuai Wang",
+        "Zhifeng Gao"
+      ],
+      "published": "2026-11-25T08:41:30Z",
+      "updated": "2026-11-25T08:41:30Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33985",
+      "comment": "",
+      "abstract": "Autoregressive generation over adaptive 3D octrees (Uni-3DAR) offers an intrinsic $O(N \\log N)$ sparsity advantage over dense $O(N^2)$ equivariant diffusion and flow models on large drug-like molecules, yet lags in geometric equilibrium, closed-shell valence stability, and property fidelity due to Morton-seam coordinate jumps, leaf-heavy compute with root-count trapping, and target-shortcut collapse in internal critics. We introduce MolGPAO (Molecular Generative Pre-trained Autoregressive Octree), a standalone 3D octree architecture and single-output speculative tree-decoding engine using zero external surrogates, zero reinforcement learning, and zero inference-time MLIP relaxation. MolGPAO unifies: (1) non-trapping 6-D ScaleFreeBudgetEmbedding with L5-to-L1 covalent packing priors; (2) a FlashAttention-2 pause-and-gather speculative octree funnel ($m_{s1} \\to m_{s2} \\to 1$, $M_{\\mathrm{out}} = 1$); (3) an anti-shortcut ground-truth TwoStageOctreeProcessCritic with 64-RBF covalent edge gating and $SO(3)$-invariant 12-channel multipole norms (blind QM9 $r = 0.9867$--$0.9989$); (4) a $<0.5$ ms 4-layer $SE(3)$ PostTreeGraphRefiner for Morton-seam healing, expected-XYZ bonded supervisi",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.33923",
+      "version": "1",
+      "title": "Wasserstein-Fisher-Rao Reconstruction of Discrete space Population Dynamics",
+      "authors": [
+        "Junda Ying",
+        "Xinyu Wang",
+        "Peijie Zhou",
+        "Lei Zhang"
+      ],
+      "published": "2026-11-25T07:43:34Z",
+      "updated": "2026-11-25T07:43:34Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "q-bio.PE",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33923",
+      "comment": "",
+      "abstract": "Reconstructing the continuous time dynamics of cell state evolution from sparse snapshot observations can be formulated as an unbalanced optimal transport problem. To study such dynamics at a coarse grained cell type level, unbalanced optimal transport must be extended to discrete state spaces. Inspired by discrete flow matching, we extended the dynamic Wasserstein-Fisher-Rao (WFR) problem to discrete spaces, and derived a closed form for its solution. For particularly large state spaces or more general models, we proposed an unbalanced discrete flow matching as a numerical approximation method, which provides a Markovian reconstruction of the optimal WFR flow. Our discrete WFR framework also stays stable across different coarse grain resolution. Finally, numerical experiments demonstrated the effectiveness of the proposed approach, and applications to real biological data supported the plausibility of the reconstructed dynamics.",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.33812",
+      "version": "1",
+      "title": "KnitNet: Learning to Search at Inference Time for Exact RNA Inverse Design",
+      "authors": [
+        "Antonia Panescu",
+        "Xin Wang",
+        "Haoran Xu",
+        "Qingyu Chen",
+        "Carlos Oliver",
+        "Rex Ying"
+      ],
+      "published": "2026-11-25T05:42:56Z",
+      "updated": "2026-11-25T05:42:56Z",
+      "primary_category": "q-bio.BM",
+      "categories": [
+        "q-bio.BM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33812",
+      "comment": "",
+      "abstract": "RNA inverse design seeks nucleotide sequences that fold into specified target structures. Existing methods rely on learned generators that can miss exact structural matches, especially beyond their training distributions, or on costly search over a vast, multimodal sequence space. Search is further complicated by globally coupled nucleotide interactions, as correcting one pairing error can create new errors beyond a fixed repair scope. To address this, we introduce KnitNet, an inference-time scaling framework that learns from verifier feedback to refine sequences for exact fold-back matching. Starting from candidates generated for a target secondary structure, KnitNet uses mismatched folds to infer nucleotide dependencies and adapt its joint repair strategy, while an online surrogate learns to predict which edits are promising. This makes search progressively more informed and compute-efficient. Crucially, KnitNet generalizes across RNA structural regimes by changing only the optimization signal to match the verifier required by each setting. Across five secondary-structure benchmarks, KnitNet increases exact solve rates by an average of 21 percentage points over continued sampling",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.33753",
+      "version": "1",
+      "title": "From the Deterministic Hook Effect to Stochastic Reliability in Ternary Complex Formation",
+      "authors": [
+        "Deepak K. Agrawal"
+      ],
+      "published": "2026-11-25T04:12:08Z",
+      "updated": "2026-11-25T04:12:08Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "q-bio.BM",
+        "q-bio.MN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33753",
+      "comment": "",
+      "abstract": "Ternary binding systems occur in signaling, scaffold-mediated assembly, and targeted protein degradation. A mediator brings two partners into a productive ternary complex, but excess mediator can hold them in separate binary complexes. Consequently, ternary complex formation can increase and then decrease as the mediator dose increases, producing the hook effect. Deterministic dose-response curves describe the average behavior but do not indicate whether individual small compartments reliably form the complex. A minimal reversible binding network was studied using deterministic equations, exact stochastic simulations, and a simple catalytic extension. The deterministic model recovered the hook-shaped response. In stochastic simulations, small volumes often failed to accumulate the required number of complexes, even where the deterministic prediction was favorable. At low mediator doses, failure reflected a shortage of mediator molecules; at high doses, material accumulated in free or binary-bound forms. Larger volumes increased the range of mediator doses supporting reliable formation, while stricter copy-number thresholds narrowed that range. Faster ternary-complex completion or s",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.33623",
+      "version": "1",
+      "title": "Using waveform types, discrete Sobolev distances, and trend compatibility to cluster short time series of clinical data",
+      "authors": [
+        "Robyn J. N. Kettlitz",
+        "Daniel Cisternas",
+        "Alvaro Olivera-Nappa",
+        "David Medina-Ortiz",
+        "Seba Contreras"
+      ],
+      "published": "2026-11-25T01:54:23Z",
+      "updated": "2026-11-25T01:54:23Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "physics.data-an",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33623",
+      "comment": "",
+      "abstract": "Clinical tests, such as the oral glucose tolerance test (OGTT), perturb a physiological system at rest and record its excursion over a fixed protocol window as a short, undersampled time series. Such curves rarely allow parameter identification at the individual level, yet their trends carry physiological information that emerges at the population level as recurrent response patterns. Standard clustering methods aggregate differences globally and average out those trends, losing precisely the information about how the system regains control after the perturbation; identifying response patterns requires a method that preserves them. We present a nonparametric framework that factorizes each curve into unit waveforms, sorts them with a symbolic trend-compatibility filter, and compares compatible shapes using discrete Sobolev-type distances on finite differences up to order $k$. The number of clusters, i.e., distinct response types, equals the number of realizable trend patterns the cohort populates, validated by resampling. Applied to 1283 five-point OGTTs, the method identifies 7 glycemia and 8 insulinemia types. The count holds across a threefold range of resolution. In benchmarks a",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.33331",
+      "version": "1",
+      "title": "Do Not Let the Prior Heal the Anomaly: Selective Anchoring for Detection from Incomplete Measurements",
+      "authors": [
+        "Nicolas Tricard",
+        "Stefan Brandstätter",
+        "Jason Chen",
+        "Zituo Chen",
+        "Linzheng Wang",
+        "Georg Langs",
+        "Sili Deng"
+      ],
+      "published": "2026-11-24T19:19:21Z",
+      "updated": "2026-11-24T19:19:21Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33331",
+      "comment": "26 pages, 7 figures, 23 tables. Includes supplementary material",
+      "abstract": "Generative priors can recover anatomical detail from incomplete medical measurements, but may erase the very lesions that imaging aims to detect, even when the measurements contain evidence of them. We introduce selective anchoring that protects reliably measured image components from prior-driven changes, while allowing expressive generative models to reconstruct unresolved structure. Acquisition uncertainty in the protected components is either added deterministically to the downstream test or carried by the ensemble through stochastic perturbations of the readings. We implement this principle as a wrapper for pretrained diffusion and flow samplers and as AnchoredFM, a fast constrained flow model. Under a linear-Gaussian measurement model, the protected coefficients are unbiased in expectation and achieve nominal interval coverage across repeated acquisitions, independently of the learned prior. Across sparse-view CT, accelerated brain MRI, and photoacoustic tomography, selective anchoring improves lesion contrast preservation and uncertainty reliability, and can reduce reconstruction error within lesions. For tumor detection in accelerated MRI, with a healthy reference estimated",
+      "signals": {
+        "cross_lists": 2
+      },
+      "score": 0.5,
+      "score_components": {
+        "cross_lists": 0.5
+      }
+    },
+    {
+      "arxiv_id": "2611.34247",
+      "version": "1",
+      "title": "Did the Model Forecast It, or Already Know It? Evaluating Large Language Models for Novel Drug-Target Prioritisation with a Temporal Knowledge-Graph Oracle",
+      "authors": [
+        "Pui Chung Siu",
+        "Yuan Liang",
+        "Claudia Cabrera",
+        "Mani Mudaliar",
+        "Arkaitz Zubiaga"
+      ],
+      "published": "2026-11-25T12:10:57Z",
+      "updated": "2026-11-25T12:10:57Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.34247",
+      "comment": "14 pages, 7 figures, 5 tables. Accepted at the NeurIPS 2026 Workshop on AI for Drug Discovery: Bridging the Translation Gap (AI4DD). Code and data: https://github.com/jackysiupuichung/forecast-or-know",
+      "abstract": "AI systems increasingly help decide which drug targets enter costly clinical trials. We recast each target-disease hypothesis as a dated event, the pair's first clinical trial. This lets us test whether a language model can forecast such events after its training cutoff, rather than recall events before it. We rebuild a dated biomedical knowledge graph as it stood at the end of each year from 2020 up to its newest version. We then ask six open language models, with and without this graph, which targets will enter a first trial for a disease the next year. Without retrieval, the models rank about as well as trial history, a count of each target's past trials in the same therapeutic area, also after their training cutoffs. Evidence dated before the decision adds at most a small gain, before or after the models' training cutoffs. The newest graph raises five of six models clearly above that baseline, but its paths usually include the answer: the pair's own trial, dated after the decision. Evaluations of target prioritisation should date both features and labels, with evidence from before the decision and outcomes after it.",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.34008",
+      "version": "1",
+      "title": "DosePET: An Open-Source Dataset with 2100 Radiation Dose Maps for PET/CT",
+      "authors": [
+        "Eleftherios Tzanis",
+        "Antonios Tzortzakakis",
+        "Michail E. Klontzas"
+      ],
+      "published": "2026-11-25T08:55:37Z",
+      "updated": "2026-11-25T08:55:37Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph",
+        "cs.AI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.34008",
+      "comment": "9 pages, 2 figures, 2 tables; supplementary material included",
+      "abstract": "Large collections of three-dimensional radiation dose maps linked to patient anatomy are needed to develop artificial intelligence (AI) models for personalized internal dosimetry in nuclear medicine, but access to such data remains limited. Here we present DosePET, an open-source dataset of 2,100 patient-specific absorbed-dose maps generated by Monte Carlo simulation of publicly available PET/CT examinations: 1,503 [18F]FDG examinations from ENHANCE.PET and 369 [18F]PSMA-1007 and 228 [68Ga]Ga-PSMA-11 examinations from PSMA-PET-CT-Lesions, acquired at five institutions with seven scanner models. For each examination, the CT was resampled to the native PET grid to build a voxelized patient phantom, the quantitative PET image defined the radionuclide source, and radiation transport was simulated with GATE version 9.4. Organ and tissue masks were generated from the CT with TotalSegmentator. Each study folder contains a NIfTI dose map integrated from scan time to infinity, 117 binary organ/tissue masks, a report of regional dosimetric quantities, including mean absorbed doses, dose conversion factors and scan-time dose rates, and simulation metadata. The total processing time was 1,542.",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.33997",
+      "version": "1",
+      "title": "Milk-removal feedback shapes lactation sustainability and daily output in a model of human lactation",
+      "authors": [
+        "Angelika Manhart",
+        "Tobias Müller"
+      ],
+      "published": "2026-11-25T08:47:46Z",
+      "updated": "2026-11-25T08:47:46Z",
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33997",
+      "comment": "65 pages (44 main + 21 appendix), 13 figures, 1 Supplementary html file",
+      "abstract": "Milk production during lactation is dynamically regulated by milk removal, yet quantitative models linking feeding or pumping schedules to subsequent production remain scarce. We develop a minimal model describing milk accumulation and production between removal sessions, and the stimulation of subsequent production through milk removal. We compare different assumptions about how stimulation depends on the amount of milk removed or the duration of removal, and consider two removal protocols: prescribing either the removed amount or the removal duration. When stimulation depends on the removed amount, declining production can reduce subsequent stimulation and reinforce the decline. This leads to a critical wait interval beyond which no repeated constant schedule can sustain lactation. If stimulation is inefficient for small removal amounts but more efficient at intermediate amounts, the model can exhibit bistability: depending on the initial conditions, milk production either persists or ceases. In contrast, duration-dependent stimulation does not permit a zero-production state under continued removal, but can generate non-constant long-term dynamics under certain conditions. We fur",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.33358",
+      "version": "1",
+      "title": "DDxBasis: Explaining Frozen Foundation Encoder-based Medical Classification by Exact Differential Diagnosis",
+      "authors": [
+        "Luojie Huang",
+        "Gregory N. McKay",
+        "Nicholas J. Durr"
+      ],
+      "published": "2026-11-24T19:46:14Z",
+      "updated": "2026-11-24T19:46:14Z",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33358",
+      "comment": "Project page: durrlab.github.io/DDxBasis",
+      "abstract": "In differential diagnosis (DDx), a clinician explains a diagnosis by the few findings that separate it from the alternatives. Medical image classifiers cannot yet explain themselves this way. Existing explanations are either faithful but spread over hundreds of concepts, or compact but leave part of each decision unexplained. We present DDxBasis, which explains a classifier on a frozen foundation encoder as a differential diagnosis in three steps. First, a concept bottleneck reads all patch tokens at every encoder layer using gated, second-order slot attention. A concept basis then regroups the concepts into two-pole axes, each a differential between groups of diagnoses. Finally, we read a differential diagnosis from each axis through the typical presentation of its poles, the pertinent findings of the case, and counterfactual edits of borderline cases. Across five medical datasets, DDxBasis is the most accurate frozen-encoder model and close to the best published domain-specific results. Because every concept adds its own evidence, its reproducible concept basis splits each decision exactly, at no cost in accuracy. Without ordered stage or concept labels, the axes recover cell lin",
+      "signals": {
+        "cross_lists": 1
+      },
+      "score": 0.25,
+      "score_components": {
+        "cross_lists": 0.25
+      }
+    },
+    {
+      "arxiv_id": "2611.33924",
+      "version": "1",
+      "title": "Monte Carlo-based secondary dose check platform for the world's first ultra-compact upright proton therapy system",
+      "authors": [
+        "Toghrul Alakbarzade",
+        "Emir Musa Olgun",
+        "Yuan James Rao",
+        "Billy W Loo",
+        "Adam Johansson",
+        "Yong Yang",
+        "Murat Surucu",
+        "Mehmet Burcin Unlu",
+        "Serdar Charyyev"
+      ],
+      "published": "2026-11-25T07:44:38Z",
+      "updated": "2026-11-25T07:44:38Z",
+      "primary_category": "physics.med-ph",
+      "categories": [
+        "physics.med-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33924",
+      "comment": "",
+      "abstract": "Objective. This work aimed to develop and validate an independent Monte Carlo (MC) secondary dose check of the RayStation treatment planning system (TPS) for the Mevion S250-FIT, the world's first ultra-compact upright proton therapy system. Approach. The treatment nozzle, including the energy modulation system of boron carbide and polycarbonate plates and the adaptive aperture, was modeled in the TOPAS (TOol for PArticle Simulation) MC code, and the beam model was commissioned against integrated depth dose curves, in-air spot profiles, and dose per monitor unit measured at 12 energy settings. Based on this model, an in-house converter, RayStation2TOPAS, recalculates the TPS plans by reconstructing each pencil beam spot, the aperture for each energy layer, and the seated patient's rotation. In total, 15 water phantom plans and 25 clinical plans were recalculated and compared with the TPS by the point dose, with a tolerance of 5%, and by three-dimensional gamma analysis at 3%/2mm, with a pass rate of at least 90%. Main results. The simulated proton range agreed with the measurement within 0.25mm, the spot full width at half maximum within 6.8%, and the dose per monitor unit within 1",
+      "signals": {
+        "cross_lists": 0
+      },
+      "score": 0,
+      "score_components": {}
+    },
+    {
+      "arxiv_id": "2611.33341",
+      "version": "1",
+      "title": "Escape Time with Quenched Extrinsic Fluctuations in Positive Feedback Systems",
+      "authors": [
+        "Manuel Eduardo Hernandez-Garcia",
+        "Natalia Lopez-Paleta",
+        "Jorge Velazquez-Castro"
+      ],
+      "published": "2026-11-24T19:25:49Z",
+      "updated": "2026-11-24T19:25:49Z",
+      "primary_category": "q-bio.MN",
+      "categories": [
+        "q-bio.MN"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.33341",
+      "comment": "13 pages, 11 figures",
+      "abstract": "Gene regulatory networks with positive feedback often exhibit multiple stable steady states representing distinct cellular phenotypes, allowing stochastic fluctuations to drive phenotypic switching between basins of attraction. Such transitions are commonly characterized by escape-time statistics. While previous studies have typically analyzed intrinsic fluctuation or dynamical environmental fluctuation separately, the combined effect of intrinsic biochemical fluctuation and quenched (slowly varying) extrinsic cell-to-cell parameter heterogeneity on population-level switching dynamics remains less understood. In this study, we formulate a theoretical framework to compute escape-time moments by combining the backward chemical Fokker--Planck equation with population averaging over a stationary distribution of kinetic parameters. We apply this approach to two paradigmatic bistable motifs---positive autoregulation and the genetic Toggle Switch---and quantify how quenched extrinsic heterogeneity modifies switching times across a population of autonomous cells. Our results show that extrinsic parameter variability can substantially alter the mean switching time and, more prominently, inc",
+      "signals": {
+        "cross_lists": 0
+      },
+      "score": 0,
+      "score_components": {}
+    }
+  ],
+  "notes": [
+    "Scores are log1p-damped weighted sums of the listed signals; zero means no external attention was found, not that the paper is unimportant.",
+    "The pool is the arXiv listing for the window (capped) plus window papers discussed on Hugging Face or Hacker News; it is not exhaustive for very large categories."
+  ]
+}

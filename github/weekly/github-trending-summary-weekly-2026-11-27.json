@@ -1,0 +1,623 @@
+{
+  "schema": "github-trending-summary/v1",
+  "category": "github",
+  "window": "weekly",
+  "date": "2026-11-27",
+  "title": "GitHub Trending Summary - Weekly - 2026-11-27",
+  "source_report": "~/.research/github/weekly/github-trending-summary-weekly-2026-11-27.md",
+  "entry_count": 15,
+  "entry_noun": "repositories",
+  "snapshot_time_utc": "2026-11-27 08:21 UTC",
+  "date_range": {
+    "start": "2026-11-21",
+    "end": "2026-11-27"
+  },
+  "ranking_basis": "weekly Trending star gains and supplied deterministic composite candidate scores",
+  "ranking_explanation": "Candidates are ordered by the supplied score, which combines normalized weekly period gain and 0.5 points per day_trending_30d. Weekly Trending rank and stars_gained are preserved separately. The supplied score, not a zero score or total stars, is the ordering aid; no candidate is rejected solely for a zero score.",
+  "global_caveat": "The star-snapshot collector failed with GitHub CLI HTTP 401 Bad credentials. Therefore delta_1d, delta_7d, and delta_30d are null and were not treated as zero. Weekly Trending gains remain available. GitHub REST repository and commit data plus current README fetches corroborated every selected repository.",
+  "sources": {
+    "primary": "https://github.com/trending?since=weekly",
+    "signals_file": "~/.research/github/weekly/github-trending-summary-weekly-2026-11-27.signals.json",
+    "continuity_rollup": "~/.research/github/weekly/github-trending-summary-weekly-2026-11-27.rollup.json",
+    "corroboration": "GitHub REST repo and commit endpoints; current default-branch README raw files"
+  },
+  "themes": [
+    {
+      "id": "agent-skills-and-workflows",
+      "title": "Agent skills and domain guidance",
+      "content": "The largest shared pattern is reusable instructions and tools for agents: Last30Days Skill, FFmpeg Skill, Stitch Skills, Modern Web Guidance, Claude Trading Skills, and Obsidian Skills. Their approaches range from research workflows to specialized editing, design, web, finance, and knowledge-management tasks.",
+      "supporting_repositories": [
+        "mvanhorn/last30days-skill",
+        "kajisho5/ffmpeg-skill",
+        "google-labs-code/stitch-skills",
+        "GoogleChrome/modern-web-guidance-src",
+        "tradermonty/claude-trading-skills",
+        "obsidianmd/obsidian-skills"
+      ]
+    },
+    {
+      "id": "agent-tooling-and-interaction",
+      "title": "Agent tooling, oversight, and application protocols",
+      "content": "Plannotator adds a human review surface; OpenCodeReview and Chrome DevTools MCP connect agents to code quality and browser diagnostics; AG-UI standardizes event-based app interaction; Nod moves toward user-approved actions on a local computer.",
+      "supporting_repositories": [
+        "backnotprop/plannotator",
+        "alibaba/open-code-review",
+        "ChromeDevTools/chrome-devtools-mcp",
+        "ag-ui-protocol/ag-ui",
+        "n8n-io/nod"
+      ]
+    },
+    {
+      "id": "agent-ready-product-surfaces",
+      "title": "Agent-ready product and design surfaces",
+      "content": "Astryx, Univer, and Stitch Skills point to embedding agent-aware design systems, office editing, and design/build capabilities into products rather than treating agents only as chat interfaces.",
+      "supporting_repositories": [
+        "meta/astryx",
+        "dream-num/univer",
+        "google-labs-code/stitch-skills"
+      ]
+    },
+    {
+      "id": "vertical-and-consumer-software",
+      "title": "Vertical and consumer software remains present",
+      "content": "Sure (personal finance) and HermesEnabler (Apple Watch customization) provide non-general-agent counterpoints; Claude Trading Skills and Nod apply agent workflows to narrower personal tasks.",
+      "supporting_repositories": [
+        "we-promise/sure",
+        "pookjw/HermesEnabler",
+        "tradermonty/claude-trading-skills",
+        "n8n-io/nod"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "Agent tooling and reusable agent skills dominate this weekly snapshot: the top signal is mvanhorn/last30days-skill (+5,090 stars; score 12.035), followed by local agent video editing and a design-skills library. All 15 candidates were verified against GitHub repository metadata, current README content, and the current default-branch commit; daily star-snapshot deltas were unavailable."
+    },
+    {
+      "id": "mvanhorn-last30days-skill",
+      "kind": "repo",
+      "title": "mvanhorn/last30days-skill",
+      "rank": 1,
+      "trend_rank": 6,
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars_gained": 5090,
+      "total_stars": 75994,
+      "default_branch": "main",
+      "default_branch_commit": "3fd946546afddc2096ab955f3abb223ed59f52ce",
+      "why_notable": "Highest weekly composite score (12.035), backed by +5,090 weekly stars and appearances on all seven daily editions; its README describes cross-platform research and source synthesis.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 1,
+      "spoken_name": "Last30Days Skill",
+      "enrichment": null,
+      "score": 12.035,
+      "score_components": {
+        "period_gain": 8.535,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "kajisho5-ffmpeg-skill",
+      "kind": "repo",
+      "title": "kajisho5/ffmpeg-skill",
+      "rank": 2,
+      "trend_rank": 15,
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "language": "Python",
+      "stars_gained": 3229,
+      "total_stars": 11667,
+      "default_branch": "main",
+      "default_branch_commit": "763e467a2f0f95f82eb0f95c63fc662e09b5da88",
+      "why_notable": "Second-highest score (11.580) with +3,229 weekly stars and seven days of trend presence; differentiates through local FFmpeg workflows, machine-readable tools, and MCP integration.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 2,
+      "spoken_name": "FFmpeg Skill",
+      "enrichment": null,
+      "score": 11.58,
+      "score_components": {
+        "period_gain": 8.08,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "google-labs-code-stitch-skills",
+      "kind": "repo",
+      "title": "google-labs-code/stitch-skills",
+      "rank": 3,
+      "trend_rank": 2,
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars_gained": 2619,
+      "total_stars": 13397,
+      "default_branch": "main",
+      "default_branch_commit": "75f4696f162000fb69fca6a31489b5b21d47a506",
+      "why_notable": "Score 11.371 and +2,619 weekly stars, with seven-day persistence; the Google Labs skill library targets Stitch-based design/build workflows across several coding agents.",
+      "theme_ids": [
+        "agent-skills-and-workflows",
+        "agent-ready-product-surfaces"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 3,
+      "spoken_name": "Stitch Skills",
+      "enrichment": null,
+      "score": 11.371,
+      "score_components": {
+        "period_gain": 7.871,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "meta-astryx",
+      "kind": "repo",
+      "title": "meta/astryx",
+      "rank": 4,
+      "trend_rank": 10,
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars_gained": 2519,
+      "total_stars": 33428,
+      "default_branch": "main",
+      "default_branch_commit": "09f5c9babbcfda6e0d0b79ef1d026f609ca03f35",
+      "why_notable": "Score 11.332 and +2,519 weekly stars, sustained all seven days; Meta positions this React 19+/StyleX design system as agent-ready, though it is explicitly in beta.",
+      "theme_ids": [
+        "agent-ready-product-surfaces"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 4,
+      "spoken_name": "Astryx",
+      "enrichment": null,
+      "score": 11.332,
+      "score_components": {
+        "period_gain": 7.832,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      },
+      "unique_caveat": "The README labels the design system as beta."
+    },
+    {
+      "id": "alibaba-open-code-review",
+      "kind": "repo",
+      "title": "alibaba/open-code-review",
+      "rank": 5,
+      "trend_rank": 5,
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.",
+      "language": "Go",
+      "stars_gained": 2284,
+      "total_stars": 56738,
+      "default_branch": "main",
+      "default_branch_commit": "d4f568f71d3a9d5c5ec972791b1509e40cd31ad1",
+      "why_notable": "Score 11.234 and +2,284 weekly stars across seven days; its hybrid deterministic-plus-agent code-review design is a notable quality/security tooling signal.",
+      "theme_ids": [
+        "agent-tooling-and-interaction"
+      ],
+      "signal_strength": "lead",
+      "evidence_density": "rich",
+      "narration_priority": 5,
+      "spoken_name": "OpenCodeReview",
+      "enrichment": null,
+      "score": 11.234,
+      "score_components": {
+        "period_gain": 7.734,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "googlechrome-modern-web-guidance-src",
+      "kind": "repo",
+      "title": "GoogleChrome/modern-web-guidance-src",
+      "rank": 6,
+      "trend_rank": 3,
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars_gained": 2209,
+      "total_stars": 11327,
+      "default_branch": "main",
+      "default_branch_commit": "0b45137d7cf1fec9c349b56d82f529c04e0db8d0",
+      "why_notable": "Score 11.201 and +2,209 weekly stars, present all seven days; Chrome describes this as agent-facing web-platform guidance with browser-compatibility expertise.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 6,
+      "spoken_name": "Modern Web Guidance",
+      "enrichment": null,
+      "score": 11.201,
+      "score_components": {
+        "period_gain": 7.701,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "dream-num-univer",
+      "kind": "repo",
+      "title": "dream-num/univer",
+      "rank": 7,
+      "trend_rank": 14,
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars_gained": 1825,
+      "total_stars": 32006,
+      "default_branch": "dev",
+      "default_branch_commit": "470b172a56467be3ab76d0d7cada458a4116f7d5",
+      "why_notable": "Score 11.010 and +1,825 weekly stars, with seven-day presence; the Office SDK packages spreadsheet/document editing, calculation, and collaboration for apps and agents.",
+      "theme_ids": [
+        "agent-ready-product-surfaces"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 7,
+      "spoken_name": "Univer",
+      "enrichment": null,
+      "score": 11.01,
+      "score_components": {
+        "period_gain": 7.51,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "backnotprop-plannotator",
+      "kind": "repo",
+      "title": "backnotprop/plannotator",
+      "rank": 8,
+      "trend_rank": 1,
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars_gained": 1631,
+      "total_stars": 15310,
+      "default_branch": "main",
+      "default_branch_commit": "a38b5acafe0e46f52a787248f0f84b627ecd58ce",
+      "why_notable": "Score 10.898 and +1,631 weekly stars, sustained through all seven days; focuses on a human review/annotation surface for agent plans, artifacts, and code.",
+      "theme_ids": [
+        "agent-tooling-and-interaction"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 8,
+      "spoken_name": "Plannotator",
+      "enrichment": null,
+      "score": 10.898,
+      "score_components": {
+        "period_gain": 7.398,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "we-promise-sure",
+      "kind": "repo",
+      "title": "we-promise/sure",
+      "rank": 9,
+      "trend_rank": 12,
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars_gained": 1430,
+      "total_stars": 18139,
+      "default_branch": "main",
+      "default_branch_commit": "3288613f52a4b9610efdf89b01dc435cfd936480",
+      "why_notable": "Score 10.766 and +1,430 weekly stars with seven-day presence; a consumer finance application is a clear non-agent-first counterpoint in an otherwise agent-heavy cohort.",
+      "theme_ids": [
+        "vertical-and-consumer-software"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 9,
+      "spoken_name": "Sure",
+      "enrichment": null,
+      "score": 10.766,
+      "score_components": {
+        "period_gain": 7.266,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "tradermonty-claude-trading-skills",
+      "kind": "repo",
+      "title": "tradermonty/claude-trading-skills",
+      "rank": 10,
+      "trend_rank": 8,
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars_gained": 1381,
+      "total_stars": 8648,
+      "default_branch": "main",
+      "default_branch_commit": "4623c0a2f1b762052eb5928e02c3aa4f103dffa2",
+      "why_notable": "Score 10.731 and +1,381 weekly stars across seven days; offers structured trading/investor workflows, explicitly as a process toolkit rather than a signal service.",
+      "theme_ids": [
+        "agent-skills-and-workflows",
+        "vertical-and-consumer-software"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 10,
+      "spoken_name": "Claude Trading Skills",
+      "enrichment": null,
+      "score": 10.731,
+      "score_components": {
+        "period_gain": 7.231,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      },
+      "unique_caveat": "The README says it is a workflow/process toolkit, not a signal service or financial advice."
+    },
+    {
+      "id": "ag-ui-protocol-ag-ui",
+      "kind": "repo",
+      "title": "ag-ui-protocol/ag-ui",
+      "rank": 11,
+      "trend_rank": 9,
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars_gained": 1269,
+      "total_stars": 21882,
+      "default_branch": "main",
+      "default_branch_commit": "ed94ca4a3240527d3ef20fd0f0cc63501f44e469",
+      "why_notable": "Score 10.647 and +1,269 weekly stars, present all seven days; the event-based protocol targets standardized agent-to-application interaction.",
+      "theme_ids": [
+        "agent-tooling-and-interaction"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 11,
+      "spoken_name": "AG-UI",
+      "enrichment": null,
+      "score": 10.647,
+      "score_components": {
+        "period_gain": 7.147,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "chromedevtools-chrome-devtools-mcp",
+      "kind": "repo",
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "rank": 12,
+      "trend_rank": 7,
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars_gained": 1175,
+      "total_stars": 59544,
+      "default_branch": "main",
+      "default_branch_commit": "aacf611faf0d329f3c49e4a1f9828864a5c13752",
+      "why_notable": "Score 10.570 and +1,175 weekly stars with seven-day persistence; exposes live Chrome debugging, automation, and performance inspection to coding agents.",
+      "theme_ids": [
+        "agent-tooling-and-interaction"
+      ],
+      "signal_strength": "standard",
+      "evidence_density": "rich",
+      "narration_priority": 12,
+      "spoken_name": "Chrome DevTools MCP",
+      "enrichment": null,
+      "score": 10.57,
+      "score_components": {
+        "period_gain": 7.07,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "pookjw-hermesenabler",
+      "kind": "repo",
+      "title": "pookjw/HermesEnabler",
+      "rank": 13,
+      "trend_rank": 11,
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "language": "Objective-C",
+      "stars_gained": 325,
+      "total_stars": 2555,
+      "default_branch": "main",
+      "default_branch_commit": "f428f91d7270f53f738429a17fb6a5d51f924284",
+      "why_notable": "Score 9.287 and +325 weekly stars over seven days; a platform-specific Apple Watch utility broadens the set beyond software-agent tooling.",
+      "theme_ids": [
+        "vertical-and-consumer-software"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "adequate",
+      "narration_priority": 13,
+      "spoken_name": "HermesEnabler",
+      "enrichment": null,
+      "score": 9.287,
+      "score_components": {
+        "period_gain": 5.787,
+        "days_trending_30d": 3.5
+      },
+      "days_trending_30d": 7,
+      "first_seen_trending": "2026-11-21",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      },
+      "unique_caveat": "The README lists support only for watchOS 27.0 through 27.3 beta 1."
+    },
+    {
+      "id": "n8n-io-nod",
+      "kind": "repo",
+      "title": "n8n-io/nod",
+      "rank": 14,
+      "trend_rank": 4,
+      "url": "https://github.com/n8n-io/nod",
+      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+      "language": "TypeScript",
+      "stars_gained": 1165,
+      "total_stars": 4104,
+      "default_branch": "main",
+      "default_branch_commit": "45a7103686ce61359b9ce3cdb5c7b4e067cf6428",
+      "why_notable": "Score 8.061 and +1,165 weekly stars, but only two trending days; this is a fresh late-window entrant offering a local personal agent that asks before acting.",
+      "theme_ids": [
+        "agent-tooling-and-interaction",
+        "vertical-and-consumer-software"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "adequate",
+      "narration_priority": 14,
+      "spoken_name": "Nod",
+      "enrichment": null,
+      "score": 8.061,
+      "score_components": {
+        "period_gain": 7.061,
+        "days_trending_30d": 1.0
+      },
+      "days_trending_30d": 2,
+      "first_seen_trending": "2026-11-26",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "obsidianmd-obsidian-skills",
+      "kind": "repo",
+      "title": "obsidianmd/obsidian-skills",
+      "rank": 15,
+      "trend_rank": 13,
+      "url": "https://github.com/obsidianmd/obsidian-skills",
+      "description": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
+      "language": "Shell",
+      "stars_gained": 704,
+      "total_stars": 54133,
+      "default_branch": "main",
+      "default_branch_commit": "9c9560a870fd490b0e1a847f2c8401a50e2d931d",
+      "why_notable": "Score 7.058 and +704 weekly stars, appearing on the final daily edition; official Obsidian agent skills extend workflows to Markdown and other open formats.",
+      "theme_ids": [
+        "agent-skills-and-workflows"
+      ],
+      "signal_strength": "brief",
+      "evidence_density": "adequate",
+      "narration_priority": 15,
+      "spoken_name": "Obsidian Skills",
+      "enrichment": null,
+      "score": 7.058,
+      "score_components": {
+        "period_gain": 6.558,
+        "days_trending_30d": 0.5
+      },
+      "days_trending_30d": 1,
+      "first_seen_trending": "2026-11-27",
+      "snapshot_deltas": {
+        "delta_1d": null,
+        "delta_7d": null,
+        "delta_30d": null
+      }
+    },
+    {
+      "id": "80-trending-technologies-and-themes",
+      "kind": "themes",
+      "title": "Trending Technologies and Themes",
+      "content": "- **Agent skills and domain guidance:** The largest shared pattern is reusable instructions and tools for agents: Last30Days Skill, FFmpeg Skill, Stitch Skills, Modern Web Guidance, Claude Trading Skills, and Obsidian Skills. Their approaches range from research workflows to specialized editing, design, web, finance, and knowledge-management tasks.\n- **Agent tooling, oversight, and application protocols:** Plannotator adds a human review surface; OpenCodeReview and Chrome DevTools MCP connect agents to code quality and browser diagnostics; AG-UI standardizes event-based app interaction; Nod moves toward user-approved actions on a local computer.\n- **Agent-ready product and design surfaces:** Astryx, Univer, and Stitch Skills point to embedding agent-aware design systems, office editing, and design/build capabilities into products rather than treating agents only as chat interfaces.\n- **Vertical and consumer software remains present:** Sure (personal finance) and HermesEnabler (Apple Watch customization) provide non-general-agent counterpoints; Claude Trading Skills and Nod apply agent workflows to narrower personal tasks.\n- **Languages:** TypeScript (8/15), Python (3/15); Go, Ruby, Objective-C, and Shell (1 each)."
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "This week’s strongest signal is the build-out of practical agent infrastructure: specialized skills, tool access, review/approval surfaces, and protocols connecting agents to real applications. Daily continuity: mvanhorn/last30days-skill appeared in 7/7 daily editions (best daily rank #6). google-labs-code/stitch-skills appeared in 1/7 daily editions (best daily rank #10). The rollup also records 6 other repos on all seven daily editions: elementalsouls/Claude-BugHunter (best rank #1), XiaoYouChR/Ghost-Downloader-3 (best rank #2), firecrawl/firecrawl (best rank #2), HKUDS/CLI-Anything (best rank #3), obra/superpowers (best rank #3), zhouxiaoka/autoclip (best rank #4). They are continuity context, not substitutes for this week’s independent signal ranking."
+    }
+  ]
+}

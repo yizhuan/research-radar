@@ -1,0 +1,233 @@
+{
+  "schema": "rrc-rollup/v1",
+  "category": "github",
+  "source_window": "daily",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "reports": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-26",
+    "2026-11-27"
+  ],
+  "entries": [
+    {
+      "key": "github:elementalsouls/claude-bughunter",
+      "kind": "repo",
+      "title": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "appearances": 7,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "github:xiaoyouchr/ghost-downloader-3",
+      "kind": "repo",
+      "title": "XiaoYouChR/Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "appearances": 7,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "github:firecrawl/firecrawl",
+      "kind": "repo",
+      "title": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "appearances": 7,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "github:hkuds/cli-anything",
+      "kind": "repo",
+      "title": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "appearances": 7,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "github:obra/superpowers",
+      "kind": "repo",
+      "title": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "appearances": 7,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "github:zhouxiaoka/autoclip",
+      "kind": "repo",
+      "title": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "appearances": 7,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "github:mvanhorn/last30days-skill",
+      "kind": "repo",
+      "title": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "appearances": 7,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "github:cathrynlavery/diagram-design",
+      "kind": "repo",
+      "title": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "appearances": 6,
+      "dates": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "github:mjmirza/app-store-compliance",
+      "kind": "repo",
+      "title": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "appearances": 6,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "github:jingyaogong/minimind",
+      "kind": "repo",
+      "title": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "appearances": 5,
+      "dates": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "github:toeverything/affine",
+      "kind": "repo",
+      "title": "toeverything/AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "appearances": 4,
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "github:tracer-cloud/opensre",
+      "kind": "repo",
+      "title": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "appearances": 2,
+      "dates": [
+        "2026-11-21",
+        "2026-11-23"
+      ],
+      "best_rank": 12
+    },
+    {
+      "key": "github:google-labs-code/stitch-skills",
+      "kind": "repo",
+      "title": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "github:cursor/plugins",
+      "kind": "repo",
+      "title": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 12
+    }
+  ],
+  "window": "weekly"
+}

@@ -1,6 +1,6 @@
 # What's trending in Github, AI, math, and physics - Daily updates
 
-Generated: 2026-11-27 08:22
+Generated: 2026-11-27 08:24
 Source: `/home/yizhuan/.research`
 
 ## Ai
@@ -25,7 +25,7 @@ Source: `/home/yizhuan/.research`
 
 - **Daily**: [giant-watch-summary-daily-2026-11-27](giant-watch/daily/giant-watch-summary-daily-2026-11-27.md) — 2026-11-27
 - **Monthly**: [giant-watch-summary-monthly-2026-10-30](giant-watch/monthly/giant-watch-summary-monthly-2026-10-30.md) — 2026-10-30
-- **Weekly**: [giant-watch-summary-weekly-2026-11-22](giant-watch/weekly/giant-watch-summary-weekly-2026-11-22.md) — 2026-11-22
+- **Weekly**: [giant-watch-summary-weekly-2026-11-27](giant-watch/weekly/giant-watch-summary-weekly-2026-11-27.md) — 2026-11-27
 
 ## Github
 

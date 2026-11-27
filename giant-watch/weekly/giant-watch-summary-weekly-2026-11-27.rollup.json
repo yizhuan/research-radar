@@ -1,0 +1,604 @@
+{
+  "schema": "rrc-rollup/v1",
+  "category": "giant-watch",
+  "source_window": "daily",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "reports": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-26",
+    "2026-11-27"
+  ],
+  "entries": [
+    {
+      "key": "event:openai-gpt56-retirement",
+      "kind": "event",
+      "title": "OpenAI sets December 23 shutdown for GPT-5.6 Sol and Terra",
+      "url": "",
+      "appearances": 2,
+      "dates": [
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "event:deepseek-free-tier-limits",
+      "kind": "event",
+      "title": "DeepSeek tightens free-tier limits, capping inactive long conversations and daily quotas",
+      "url": "",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-25"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "event:ev-google-gemini4-neon",
+      "kind": "event",
+      "title": "Google DeepMind ships Gemini 4 Neon with 1M unified context and four thinking levels",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "event:openai-devday-2026",
+      "kind": "event",
+      "title": "OpenAI DevDay 2026 launches Dots agents, GPT-6.1 Sol, Ultrafast, and Sign in with ChatGPT",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "event:openai-gpt62-billing-correction",
+      "kind": "event",
+      "title": "OpenAI admits GPT-6.2 billing mistake; paid users hit limits 40% faster",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "event:openai-gpt62-chat",
+      "kind": "event",
+      "title": "OpenAI expands GPT-6.2 into ChatGPT's general chat tab",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "event:openai-gpt62-sol-chatgpt-rollout",
+      "kind": "event",
+      "title": "OpenAI rolls out GPT-6.2 Sol to ChatGPT chat tab and schedules GPT-5.6 Sol/Terra retirement",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "event:openai-dots-plus-test",
+      "kind": "event",
+      "title": "OpenAI 面向部分 ChatGPT Plus 用户测试 Dots 智能体",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "event:evt_xai_grok_lawsuit",
+      "kind": "event",
+      "title": "Oregon and Virginia attorneys general sue SpaceX over Grok deepfakes and CSAM",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "event:deepmind-quantum-lean",
+      "kind": "event",
+      "title": "Google DeepMind and Google Quantum AI use Gemini 4 agents with Lean proofs to optimize quantum circuits",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "event:ev-google-gemini4-hydrogen",
+      "kind": "event",
+      "title": "Google DeepMind releases Gemini 4 Hydrogen, a 2.5x faster agentic model",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "event:google-gemini4-neon-launch",
+      "kind": "event",
+      "title": "Google launches Gemini 4 Neon across AI Studio, Gemini Enterprise and Antigravity",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "event:google-gemini4-carbon",
+      "kind": "event",
+      "title": "Google 发布 Gemini 4 Carbon，并预览 Antigravity 中的多智能体 swarm",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "event:evt_glm_54_launch",
+      "kind": "event",
+      "title": "Z.ai releases GLM-5.4, its first Loop Transformer flagship",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "event:ev-qwen4-max-preview",
+      "kind": "event",
+      "title": "Alibaba Cloud opens Qwen4-Max preview with 1M context, native multimodal input and Token Plan-only billing",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "event:evt_qwen4max_launch",
+      "kind": "event",
+      "title": "Alibaba releases Qwen4-Max with 2.4 trillion parameters",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "event:deepmind-gemini4-quantum-lean",
+      "kind": "event",
+      "title": "DeepMind reports Gemini 4 agent teams cutting quantum circuit costs, verified in Lean",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "event:deepmind-agents-gemini-research",
+      "kind": "event",
+      "title": "Google DeepMind lets AI agents run some experiments for next-generation Gemini",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "event:deepmind-gemini4-neon",
+      "kind": "event",
+      "title": "Google DeepMind releases Gemini 4 Neon with 1M context and $3/$15 pricing",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "event:kimi-k31-pro",
+      "kind": "event",
+      "title": "Moonshot AI posts Kimi K3.1 Pro open-weight multimodal model on Hugging Face",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "event:xai-grok-agents",
+      "kind": "event",
+      "title": "xAI 上线 Grok 4.7、Grok Agents 和 Grok Voice 3.0",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "event:qwen-realtime-api",
+      "kind": "event",
+      "title": "Alibaba Cloud documents Qwen Realtime API across WebSocket, WebRTC and AOQ",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "event:deepmind-agents-compute",
+      "kind": "event",
+      "title": "DeepMind gives AI agents partial control of compute for next Gemini experiments",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "event:evt_deepseek_free_limits",
+      "kind": "event",
+      "title": "DeepSeek tightens free-tier usage limits for the first time",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "event:meta-capex-ai-infra",
+      "kind": "event",
+      "title": "Meta 将 2026 年资本支出指引收窄至 1,350 亿至 1,450 亿美元，用于 AI 基础设施",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "event:ev-kimi-k31-pro",
+      "kind": "event",
+      "title": "Moonshot AI releases full Kimi K3.1 Pro weights, billed as the largest open model by parameter count",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "event:zai-glm54-loop-transformer",
+      "kind": "event",
+      "title": "Z.ai releases GLM-5.4, its first looped-transformer flagship, with vision and 1M context",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "event:glm-54-release",
+      "kind": "event",
+      "title": "Zhipu AI reportedly releases GLM-5.4 with a Loop Transformer architecture",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "event:evt_deepseek_harness_update",
+      "kind": "event",
+      "title": "DeepSeek Harness ships v0.2.3-alpha.1 with task timelines, code review, and plugin market upgrades",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "event:meta-amet-grant",
+      "kind": "event",
+      "title": "Meta announces $700,000 AMET AI Impact Grant and regional AI Impact Hub",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "event:ev-harassment-guardrail-study",
+      "kind": "event",
+      "title": "Multi-turn harassment study finds guardrail breakdowns across Gemini, Llama, Qwen and DeepSeek",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "event:china-labs-delays",
+      "kind": "event",
+      "title": "US chip rule and anti-distillation push GLM-5.5 and Kimi K4 into 2027",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "event:virginia-oregon-grok-lawsuits",
+      "kind": "event",
+      "title": "Virginia and Oregon sue Musk companies over Grok-generated sexualized imagery",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "event:glm-5-4-loop-transformer",
+      "kind": "event",
+      "title": "Z.ai releases GLM-5.4 Loop Transformer at ~750B parameters via Coding Plan",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "event:qwen4-max-preview-coverage",
+      "kind": "event",
+      "title": "Alibaba developer posts detail Qwen4-Max preview capabilities, pricing and November 25 preview cutoff",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "event:deepseek-app-billing",
+      "kind": "event",
+      "title": "DeepSeek app adds per-conversation cost display after usage caps",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "event:evt_deepmind_quantum_agents",
+      "kind": "event",
+      "title": "Google DeepMind and Google Quantum AI use Gemini 4 agent teams to find cheaper quantum algorithms",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "event:kimi-k3-1-pro-bf16",
+      "kind": "event",
+      "title": "Kimi K3.1 Pro Uncensored goes live on bf16.ai with 1M context and vision",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "event:ev-meta-muse-trust",
+      "kind": "event",
+      "title": "Meta Muse product lead details a seven-month delay justified by trust and safety hardening",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "event:qwen4-max-preview",
+      "kind": "event",
+      "title": "阿里云开放 Qwen4-Max 预览版，最低 1 折",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "event:ev-azure-model-router",
+      "kind": "event",
+      "title": "Azure model router expands to 45 models, adding new OpenAI, Anthropic, DeepSeek and xAI entries",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "event:deepseek-rate-limits",
+      "kind": "event",
+      "title": "DeepSeek tightens free-tier limits as V4.1 Flash tops OpenRouter weekly token volume",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "event:evt_openai_dot_plus",
+      "kind": "event",
+      "title": "OpenAI expands ChatGPT dot testing to some Plus users and Business Standard",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "event:thomson-reuters-glm",
+      "kind": "event",
+      "title": "Thomson Reuters builds Thomson 1.1 on Z.ai's GLM and Google's Gemma",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "event:zhipu-glm-pricing",
+      "kind": "event",
+      "title": "智谱（Z.AI）旗舰模型价格逐代上涨，尽管权重保持开放",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "event:grok-bot-retrospective",
+      "kind": "event",
+      "title": "Grok Bot product lead recounts one-month build and manual onboarding of hundreds of users",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "event:openai-chatgpt-edu",
+      "kind": "event",
+      "title": "OpenAI 推广 ChatGPT Edu，面向高校部署",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "event:ev-glm53-flash-workers-ai",
+      "kind": "event",
+      "title": "Z.ai GLM-5.3 Flash lands on Cloudflare Workers AI as the first multimodal GLM-5 model",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "event:ev-glm-revolut-europe",
+      "kind": "event",
+      "title": "Report says Revolut has adopted Zhipu's open-source GLM models as Chinese open models gain European traction",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "event:ev-catalog-updates",
+      "kind": "event",
+      "title": "Third-party platforms refresh model catalogs: DeepSeek V4 IDs, Meta Muse Spark 1.3, Kimi K3 and Qwen3.8",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "event:ev-transformers-524",
+      "kind": "event",
+      "title": "Hugging Face Transformers v5.24.0 adds Meta Omnilingual ASR, Kimi video fixes and a cache API rename",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 11
+    },
+    {
+      "key": "event:ev-xai-tooling",
+      "kind": "event",
+      "title": "xAI Grok surfaces spread across OAuth agent access, realtime voice and media generation APIs",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 12
+    },
+    {
+      "key": "event:ev-openai-amplitude",
+      "kind": "event",
+      "title": "OpenAI customer story credits Amplitude's Wave agent with cutting ship time to 1-2 days",
+      "url": "",
+      "appearances": 1,
+      "dates": [
+        "2026-11-21"
+      ],
+      "best_rank": 13
+    }
+  ],
+  "window": "weekly"
+}

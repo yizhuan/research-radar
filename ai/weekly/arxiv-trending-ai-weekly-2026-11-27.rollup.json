@@ -1,0 +1,419 @@
+{
+  "schema": "rrc-rollup/v1",
+  "category": "ai",
+  "source_window": "daily",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "reports": [
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-26"
+  ],
+  "entries": [
+    {
+      "key": "arxiv:2611.27618",
+      "kind": "paper",
+      "title": "Potential emergence in LLM agents: a statistical physics perspective",
+      "url": "https://arxiv.org/abs/2611.27618",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.27489",
+      "kind": "paper",
+      "title": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI",
+      "url": "https://arxiv.org/abs/2611.27489",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.26936",
+      "kind": "paper",
+      "title": "SecretAgent: A Multi-Agent Framework for Privacy Protection against Vision Language Models",
+      "url": "https://arxiv.org/abs/2611.26936",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.26902",
+      "kind": "paper",
+      "title": "Perceive Once, Escalate on Demand: Handing Off Visual KV Memory from Small to Large VLMs",
+      "url": "https://arxiv.org/abs/2611.26902",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.27810",
+      "kind": "paper",
+      "title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
+      "url": "https://arxiv.org/abs/2611.27810",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.27689",
+      "kind": "paper",
+      "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.27689",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.34934",
+      "kind": "paper",
+      "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "url": "https://arxiv.org/abs/2611.34934",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.28293",
+      "kind": "paper",
+      "title": "Feedback-Driven Prompt Refinement for Educational AI: Affective Trajectory Estimation and Bloom's Taxonomy Classification",
+      "url": "https://arxiv.org/abs/2611.28293",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.31595",
+      "kind": "paper",
+      "title": "LUCID: Statistically Grounded Self-Correction for LLM Reasoning Evaluation",
+      "url": "https://arxiv.org/abs/2611.31595",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.27784",
+      "kind": "paper",
+      "title": "Neural Defend ARCAS 290M: A Robust Foundation Model for AI-Generated Audio Detection",
+      "url": "https://arxiv.org/abs/2611.27784",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.32316",
+      "kind": "paper",
+      "title": "ASTERISM: Do Multimodal LLMs Actually Look at All the Images?",
+      "url": "https://arxiv.org/abs/2611.32316",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.29112",
+      "kind": "paper",
+      "title": "Bridging Blind Spots With Words: Decentralized Multi-View Spatial Reasoning via Language-Constrained Communication",
+      "url": "https://arxiv.org/abs/2611.29112",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.34923",
+      "kind": "paper",
+      "title": "Mixture-of-Loops Transformer",
+      "url": "https://arxiv.org/abs/2611.34923",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.27050",
+      "kind": "paper",
+      "title": "Towards Text-Mask Consistency in Medical Image Segmentation",
+      "url": "https://arxiv.org/abs/2611.27050",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.34928",
+      "kind": "paper",
+      "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+      "url": "https://arxiv.org/abs/2611.34928",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.28477",
+      "kind": "paper",
+      "title": "ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code",
+      "url": "https://arxiv.org/abs/2611.28477",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.31821",
+      "kind": "paper",
+      "title": "Exploring Multi-Player Social Games as Verifiable Training Grounds for Large Language Models",
+      "url": "https://arxiv.org/abs/2611.31821",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.28314",
+      "kind": "paper",
+      "title": "INSEP: Refusal-Direction Inseparability as a Defense Against Abliteration",
+      "url": "https://arxiv.org/abs/2611.28314",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.31800",
+      "kind": "paper",
+      "title": "Learning Compact State Abstractions for LLM Agents",
+      "url": "https://arxiv.org/abs/2611.31800",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.34943",
+      "kind": "paper",
+      "title": "Tracking Any Point with Agentic Visual Reasoning",
+      "url": "https://arxiv.org/abs/2611.34943",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.34914",
+      "kind": "paper",
+      "title": "Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs",
+      "url": "https://arxiv.org/abs/2611.34914",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.31590",
+      "kind": "paper",
+      "title": "GoldiBench: Right Tools, Wrong Amount -- Benchmarking Agents on Effect Judgement in Professional Editing",
+      "url": "https://arxiv.org/abs/2611.31590",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.28823",
+      "kind": "paper",
+      "title": "When Being Wrong Is Right: Reverse-Capability Audio CAPTCHAs through Psychoacoustic Design",
+      "url": "https://arxiv.org/abs/2611.28823",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.34935",
+      "kind": "paper",
+      "title": "Can image generation help visual reasoning? An empirical study",
+      "url": "https://arxiv.org/abs/2611.34935",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.29238",
+      "kind": "paper",
+      "title": "GameAnything: From Any Inspirations to Playable Game Worlds",
+      "url": "https://arxiv.org/abs/2611.29238",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.34920",
+      "kind": "paper",
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "url": "https://arxiv.org/abs/2611.34920",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.29193",
+      "kind": "paper",
+      "title": "Direct Feedback Policy Optimization for AI Coding Agents",
+      "url": "https://arxiv.org/abs/2611.29193",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.27521",
+      "kind": "paper",
+      "title": "PaMuk-Bench: A Parallel Multilingual Multitask Benchmark for Vision-Language Tasks",
+      "url": "https://arxiv.org/abs/2611.27521",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.34925",
+      "kind": "paper",
+      "title": "One Ocean, Many Tasks: A Data-Grounded Simulation Suite and Benchmark for Marine Robotics",
+      "url": "https://arxiv.org/abs/2611.34925",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.26975",
+      "kind": "paper",
+      "title": "Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs",
+      "url": "https://arxiv.org/abs/2611.26975",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.29147",
+      "kind": "paper",
+      "title": "VeriLogic: Reinforcement Learning over Verifiable Logical Reasoning Traces",
+      "url": "https://arxiv.org/abs/2611.29147",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.27092",
+      "kind": "paper",
+      "title": "PLoQ: A Prompt-Specific Low-Rank Basis for 4-bit Quantization of LLM Activations",
+      "url": "https://arxiv.org/abs/2611.27092",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.29014",
+      "kind": "paper",
+      "title": "Population-Based Post-Training for Large Language Models",
+      "url": "https://arxiv.org/abs/2611.29014",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.26980",
+      "kind": "paper",
+      "title": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving",
+      "url": "https://arxiv.org/abs/2611.26980",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "arxiv:2611.28745",
+      "kind": "paper",
+      "title": "Multimodal LLMs Know the Game but Assume the Real World",
+      "url": "https://arxiv.org/abs/2611.28745",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "arxiv:2611.28671",
+      "kind": "paper",
+      "title": "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates",
+      "url": "https://arxiv.org/abs/2611.28671",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 11
+    }
+  ],
+  "window": "weekly"
+}

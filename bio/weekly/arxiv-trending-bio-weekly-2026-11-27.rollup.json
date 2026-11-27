@@ -1,0 +1,492 @@
+{
+  "schema": "rrc-rollup/v1",
+  "category": "bio",
+  "source_window": "daily",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "reports": [
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-26",
+    "2026-11-27"
+  ],
+  "entries": [
+    {
+      "key": "arxiv:2611.27924",
+      "kind": "paper",
+      "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+      "url": "https://arxiv.org/abs/2611.27924",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.33740",
+      "kind": "paper",
+      "title": "Exclusion and internal structure in the association/dissociation kinetics of DNA-binding proteins in the fast diffusion limit",
+      "url": "https://arxiv.org/abs/2611.33740",
+      "appearances": 2,
+      "dates": [
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.33812",
+      "kind": "paper",
+      "title": "KnitNet: Learning to Search at Inference Time for Exact RNA Inverse Design",
+      "url": "https://arxiv.org/abs/2611.33812",
+      "appearances": 2,
+      "dates": [
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.27960",
+      "kind": "paper",
+      "title": "Receptor Abundance Alone Underpredicts Red Blood Cell Adhesion in Gaucher Disease",
+      "url": "https://arxiv.org/abs/2611.27960",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.27422",
+      "kind": "paper",
+      "title": "One-Step Self-Assembling Lipopolymer Coatings Enable Direct Longitudinal Biosensing in Native Biological Matrices",
+      "url": "https://arxiv.org/abs/2611.27422",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.27058",
+      "kind": "paper",
+      "title": "Structural Agreement Indicates Prediction Accuracy For Protein-Ligand Co-Folding",
+      "url": "https://arxiv.org/abs/2611.27058",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.33753",
+      "kind": "paper",
+      "title": "From the Deterministic Hook Effect to Stochastic Reliability in Ternary Complex Formation",
+      "url": "https://arxiv.org/abs/2611.33753",
+      "appearances": 2,
+      "dates": [
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.27162",
+      "kind": "paper",
+      "title": "Hierarchical Hybrid-Coordinate Flow Matching for Accurate and Physically Plausible Apo-to-Holo Protein Generation",
+      "url": "https://arxiv.org/abs/2611.27162",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.26703",
+      "kind": "paper",
+      "title": "MambaSplit: Severity-Robust and Inference-Efficient Semantic Unmixing of Fluorescence Microscopy Image Data",
+      "url": "https://arxiv.org/abs/2611.26703",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.27143",
+      "kind": "paper",
+      "title": "GaLF-ST: Gaussian Latent Fields for Spatial Transcriptomics Reconstruction",
+      "url": "https://arxiv.org/abs/2611.27143",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.26794",
+      "kind": "paper",
+      "title": "Beyond Final Answers: Interpretable Tumor Immune Microenvironment Reasoning from H&E and mIF",
+      "url": "https://arxiv.org/abs/2611.26794",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.33358",
+      "kind": "paper",
+      "title": "DDxBasis: Explaining Frozen Foundation Encoder-based Medical Classification by Exact Differential Diagnosis",
+      "url": "https://arxiv.org/abs/2611.33358",
+      "appearances": 2,
+      "dates": [
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.31451",
+      "kind": "paper",
+      "title": "A multimodal foundation model for tissue proteomics and morphology in cancer",
+      "url": "https://arxiv.org/abs/2611.31451",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.28529",
+      "kind": "paper",
+      "title": "General-purpose language models are neurosymbolic reasoners able to annotate proteins from sequence",
+      "url": "https://arxiv.org/abs/2611.28529",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.34798",
+      "kind": "paper",
+      "title": "Resolving cell states in spatial transcriptomics with SCATTER",
+      "url": "https://arxiv.org/abs/2611.34798",
+      "appearances": 1,
+      "dates": [
+        "2026-11-27"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.31536",
+      "kind": "paper",
+      "title": "Tempering and few-shot calibration of pathology foundation models improve digital biomarker reproducibility across slide scanners",
+      "url": "https://arxiv.org/abs/2611.31536",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.28741",
+      "kind": "paper",
+      "title": "VEGA: A Scalable Software-Hardware Co-design for Genome Alignment using RVV Extension",
+      "url": "https://arxiv.org/abs/2611.28741",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.32168",
+      "kind": "paper",
+      "title": "Benchmarking Protein Structure Tokenizers as Generation Targets for Language Models",
+      "url": "https://arxiv.org/abs/2611.32168",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.28225",
+      "kind": "paper",
+      "title": "Nonequilibrium fluctuations could explain the hot mitochondria paradox",
+      "url": "https://arxiv.org/abs/2611.28225",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.32382",
+      "kind": "paper",
+      "title": "Cancer multi-omics joint dimension reduction leads to reliable and interpretable survival predictions",
+      "url": "https://arxiv.org/abs/2611.32382",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.28599",
+      "kind": "paper",
+      "title": "FastCREST: GPU-Accelerated CREST Conformer Searches with Consistent Energies and Gradients",
+      "url": "https://arxiv.org/abs/2611.28599",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.33985",
+      "kind": "paper",
+      "title": "MolGPAO: Molecular Generative Pre-trained Autoregressive Octree with Speculative Decoding and Sub-Millisecond Seam Healing for 3D Molecules",
+      "url": "https://arxiv.org/abs/2611.33985",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.32347",
+      "kind": "paper",
+      "title": "Beyond Hard Tokens: Predictive Memory for Multimodal Protein Generation",
+      "url": "https://arxiv.org/abs/2611.32347",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.33341",
+      "kind": "paper",
+      "title": "Escape Time with Quenched Extrinsic Fluctuations in Positive Feedback Systems",
+      "url": "https://arxiv.org/abs/2611.33341",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.29143",
+      "kind": "paper",
+      "title": "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis",
+      "url": "https://arxiv.org/abs/2611.29143",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.32371",
+      "kind": "paper",
+      "title": "A Description-Derived Drug-Drug Interaction Benchmark Reveals Split-Dependent Molecular Representation Rankings",
+      "url": "https://arxiv.org/abs/2611.32371",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.28378",
+      "kind": "paper",
+      "title": "A scalar arterial input function does not uniquely determine the perfusion residue: Theory and phantom MRI",
+      "url": "https://arxiv.org/abs/2611.28378",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.34166",
+      "kind": "paper",
+      "title": "Cell-Type-Specific Expression Is Hard to Predict from Bulk, but It Is Still Useful",
+      "url": "https://arxiv.org/abs/2611.34166",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.28294",
+      "kind": "paper",
+      "title": "MRI-Driven Dual-Energy CT Synthesis via Conditional Denoising Diffusion Probabilistic Models for MRI-only Radiotherapy and Protontherapy",
+      "url": "https://arxiv.org/abs/2611.28294",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.32077",
+      "kind": "paper",
+      "title": "Synchronized Memory-Dependent Intracellular Oscillations for a Cell-Bulk ODE-PDE Model in $\\mathbb{R}^3$",
+      "url": "https://arxiv.org/abs/2611.32077",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.33923",
+      "kind": "paper",
+      "title": "Wasserstein-Fisher-Rao Reconstruction of Discrete space Population Dynamics",
+      "url": "https://arxiv.org/abs/2611.33923",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.29051",
+      "kind": "paper",
+      "title": "High-Resolution 3D Micro-CT Database of Transcranial Magnetic Stimulation (TMS) Coils for More Accurate Modelling, Technology Benchmarking, and Progress in Coil Design",
+      "url": "https://arxiv.org/abs/2611.29051",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.31594",
+      "kind": "paper",
+      "title": "Uncertainty Quantification and Global Sensitivity Analysis of Patient-Specific Coronary Hemodynamics Under Unsteady Flow Conditions",
+      "url": "https://arxiv.org/abs/2611.31594",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.33623",
+      "kind": "paper",
+      "title": "Using waveform types, discrete Sobolev distances, and trend compatibility to cluster short time series of clinical data",
+      "url": "https://arxiv.org/abs/2611.33623",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.33331",
+      "kind": "paper",
+      "title": "Do Not Let the Prior Heal the Anomaly: Selective Anchoring for Detection from Incomplete Measurements",
+      "url": "https://arxiv.org/abs/2611.33331",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.32326",
+      "kind": "paper",
+      "title": "Longitudinal Characterization of Personalized Hydration Dynamics Using a Facial-Video Digital Hydration Biomarker",
+      "url": "https://arxiv.org/abs/2611.32326",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.29025",
+      "kind": "paper",
+      "title": "Multi-Sensor Fusion for False-Alarm Reduction by Timed Electromechanical Corroboration",
+      "url": "https://arxiv.org/abs/2611.29025",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.34247",
+      "kind": "paper",
+      "title": "Did the Model Forecast It, or Already Know It? Evaluating Large Language Models for Novel Drug-Target Prioritisation with a Temporal Knowledge-Graph Oracle",
+      "url": "https://arxiv.org/abs/2611.34247",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "arxiv:2611.29215",
+      "kind": "paper",
+      "title": "Linking vascular pathways to organ anatomical structures in the Human Reference Atlas",
+      "url": "https://arxiv.org/abs/2611.29215v1",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "arxiv:2611.34008",
+      "kind": "paper",
+      "title": "DosePET: An Open-Source Dataset with 2100 Radiation Dose Maps for PET/CT",
+      "url": "https://arxiv.org/abs/2611.34008",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 11
+    },
+    {
+      "key": "arxiv:2611.33924",
+      "kind": "paper",
+      "title": "Monte Carlo-based secondary dose check platform for the world's first ultra-compact upright proton therapy system",
+      "url": "https://arxiv.org/abs/2611.33924",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 12
+    },
+    {
+      "key": "arxiv:2611.33997",
+      "kind": "paper",
+      "title": "Milk-removal feedback shapes lactation sustainability and daily output in a model of human lactation",
+      "url": "https://arxiv.org/abs/2611.33997",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 13
+    }
+  ],
+  "window": "weekly"
+}

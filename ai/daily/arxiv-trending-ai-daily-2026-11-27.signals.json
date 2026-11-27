@@ -1,0 +1,61 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "arxiv",
+  "category": "ai",
+  "window": "daily",
+  "arxiv_window": {
+    "start": "2026-11-25T19:00:00Z",
+    "end": "2026-11-26T19:00:00Z",
+    "announced": "2026-11-27T01:00:00Z",
+    "announcement_date": "2026-11-27"
+  },
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "stat.ML",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO",
+    "cs.NE",
+    "cs.MA"
+  ],
+  "generated_at": "2026-11-27T03:05:01Z",
+  "sources": {
+    "arxiv": {
+      "status": "ok",
+      "count": 0
+    },
+    "huggingface": {
+      "status": "ok",
+      "count": 124
+    },
+    "hacker_news": {
+      "status": "ok",
+      "count": 16
+    },
+    "arxiv_lookup": {
+      "status": "ok",
+      "count": 139
+    },
+    "semantic_scholar": {
+      "status": "ok",
+      "count": 0
+    }
+  },
+  "weights": {
+    "hf_upvotes": 3.0,
+    "hn_points": 1.5,
+    "hn_comments": 1.0,
+    "citations": 2.0,
+    "influential_citations": 1.0,
+    "code_stars": 0.5,
+    "cross_lists": 0.25
+  },
+  "pool_size": 0,
+  "with_attention": 0,
+  "candidates": [],
+  "notes": [
+    "Scores are log1p-damped weighted sums of the listed signals; zero means no external attention was found, not that the paper is unimportant.",
+    "The pool is the arXiv listing for the window (capped) plus window papers discussed on Hugging Face or Hacker News; it is not exhaustive for very large categories."
+  ]
+}

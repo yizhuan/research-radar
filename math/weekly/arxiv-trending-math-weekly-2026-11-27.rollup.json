@@ -1,0 +1,439 @@
+{
+  "schema": "rrc-rollup/v1",
+  "category": "math",
+  "source_window": "daily",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "reports": [
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-26"
+  ],
+  "entries": [
+    {
+      "key": "arxiv:2611.27202",
+      "kind": "paper",
+      "title": "Equivariant extension of $I_N$-finite tempered distributions on real flag varieties",
+      "url": "https://arxiv.org/abs/2611.27202",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.27877",
+      "kind": "paper",
+      "title": "On the interplay between the anisotropy and the regularity of the coefficients in non autonomous problems",
+      "url": "https://arxiv.org/abs/2611.27877",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.26707",
+      "kind": "paper",
+      "title": "Planar cut-and-project sets with interval windows are bi-Lipschitz equivalent to lattices",
+      "url": "https://arxiv.org/abs/2611.26707",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.26750",
+      "kind": "paper",
+      "title": "The weighted fundamental lemma for non-split groups",
+      "url": "https://arxiv.org/abs/2611.26750",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.34110",
+      "kind": "paper",
+      "title": "Colored Jones polynomial of figure eight knot and non-perturbative topological recursion",
+      "url": "https://arxiv.org/abs/2611.34110",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.29234",
+      "kind": "paper",
+      "title": "Möbius Fusion Algebra",
+      "url": "https://arxiv.org/abs/2611.29234",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.31712",
+      "kind": "paper",
+      "title": "Spectral characterizations of sub-Gaussian heat kernel bounds",
+      "url": "https://arxiv.org/abs/2611.31712",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.33569",
+      "kind": "paper",
+      "title": "Noise-induced Extinction in Hierarchical Food Webs",
+      "url": "https://arxiv.org/abs/2611.33569",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.31846",
+      "kind": "paper",
+      "title": "Spatial switching near a four-loop homoclinic bouquet: a mechanism for multi-bump bound states in coupled nonlinear Schrödinger systems",
+      "url": "https://arxiv.org/abs/2611.31846",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.29063",
+      "kind": "paper",
+      "title": "Strong holonomicity of functions on curves",
+      "url": "https://arxiv.org/abs/2611.29063",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.27575",
+      "kind": "paper",
+      "title": "A proof of Cigler's quadratic recurrence for Hankel determinants of Motzkin path generating functions",
+      "url": "https://arxiv.org/abs/2611.27575",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.32322",
+      "kind": "paper",
+      "title": "Breaking Resonance: Square-root acceleration for Metropolis-adjusted randomized Hamiltonian Monte Carlo",
+      "url": "https://arxiv.org/abs/2611.32322",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.34174",
+      "kind": "paper",
+      "title": "Equivariant K-homology of affine Grassmannians of orthogonal groups",
+      "url": "https://arxiv.org/abs/2611.34174",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.28623",
+      "kind": "paper",
+      "title": "Neural Schrödinger Bridge via Yasue Action with Applications to Generative Modeling",
+      "url": "https://arxiv.org/abs/2611.28623",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.28614",
+      "kind": "paper",
+      "title": "Deterministic regularisation of the nonsymmetric eigenproblem",
+      "url": "https://arxiv.org/abs/2611.28614",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.33485",
+      "kind": "paper",
+      "title": "Fast Algorithms for Permanents of Permutationally-Dominant Matrices",
+      "url": "https://arxiv.org/abs/2611.33485",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.27755",
+      "kind": "paper",
+      "title": "Hankel determinants of Motzkin path generating functions and the Hirota-Miwa equation",
+      "url": "https://arxiv.org/abs/2611.27755",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.32363",
+      "kind": "paper",
+      "title": "Monadicity of noncommutative measurable spaces over C*-algebras",
+      "url": "https://arxiv.org/abs/2611.32363",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.27903",
+      "kind": "paper",
+      "title": "Non autonomous problems with nearly linear growth and Orlicz-Sobolev coefficients",
+      "url": "https://arxiv.org/abs/2611.27903",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.28776",
+      "kind": "paper",
+      "title": "A Proof of Blackburn's Conjecture on Non-Overlapping Codes",
+      "url": "https://arxiv.org/abs/2611.28776",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.31963",
+      "kind": "paper",
+      "title": "Blow-up size for the noncommutative rank of linear symbolic matrices with low-rank coefficients",
+      "url": "https://arxiv.org/abs/2611.31963",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.33838",
+      "kind": "paper",
+      "title": "Higher-Dimensional Automata in Geometric Logic",
+      "url": "https://arxiv.org/abs/2611.33838",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.32154",
+      "kind": "paper",
+      "title": "Gaps between zeros of Epstein zeta-functions of binary quadratic forms on the critical line",
+      "url": "https://arxiv.org/abs/2611.32154",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.27036",
+      "kind": "paper",
+      "title": "Nonlinear stability of periodic waves in the Benjamin-Ono equation",
+      "url": "https://arxiv.org/abs/2611.27036",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.34264",
+      "kind": "paper",
+      "title": "Prophet Inequalities for Mixtures of I.I.D. Random Variables",
+      "url": "https://arxiv.org/abs/2611.34264",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.28580",
+      "kind": "paper",
+      "title": "The Gerards-Schrijver conjecture on the Edmonds-Johnson property is false",
+      "url": "https://arxiv.org/abs/2611.28580",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.28255",
+      "kind": "paper",
+      "title": "Reduction types of curves in tame extensions",
+      "url": "https://arxiv.org/abs/2611.28255",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.27204",
+      "kind": "paper",
+      "title": "Rigidity in the Lichnerowicz inequality for word-length semigroups",
+      "url": "https://arxiv.org/abs/2611.27204",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.26778",
+      "kind": "paper",
+      "title": "Source Conditions and Sharp Transition Asymptotics for the Factorization Method with Far-Field Data",
+      "url": "https://arxiv.org/abs/2611.26778",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.33556",
+      "kind": "paper",
+      "title": "The Kalton--Peck space disproves Rubio de Francia's conjecture",
+      "url": "https://arxiv.org/abs/2611.33556",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.32149",
+      "kind": "paper",
+      "title": "The optimal exponent in the Babai-Goodman-Pyber theorem",
+      "url": "https://arxiv.org/abs/2611.32149",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.32210",
+      "kind": "paper",
+      "title": "An improved estimate for discrete L^8 restriction on the cubic curve",
+      "url": "https://arxiv.org/abs/2611.32210",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.29166",
+      "kind": "paper",
+      "title": "Improved Lower Bound on the Hadwiger-Debrunner Numbers",
+      "url": "https://arxiv.org/abs/2611.29166",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.27879",
+      "kind": "paper",
+      "title": "On the chromatic splitting conjecture in coheight 1",
+      "url": "https://arxiv.org/abs/2611.27879",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.27558",
+      "kind": "paper",
+      "title": "Uniqueness of $L_{p}$ Minkowski Problem in the supercritical range near the affine exponent",
+      "url": "https://arxiv.org/abs/2611.27558",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.27008",
+      "kind": "paper",
+      "title": "The Ritt problem is decidable",
+      "url": "https://arxiv.org/abs/2611.27008",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.26729",
+      "kind": "paper",
+      "title": "The regular N-gon maximizes first positive Neumann eigenvalue among simple polygons with at most N sides and fixed area",
+      "url": "https://arxiv.org/abs/2611.26729",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.27370",
+      "kind": "paper",
+      "title": "On the Laugesen--Siudeja Conjecture: A Sharp Lower Bound and Failure of the Upper Bound",
+      "url": "https://arxiv.org/abs/2611.27370",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 10
+    }
+  ],
+  "window": "weekly"
+}

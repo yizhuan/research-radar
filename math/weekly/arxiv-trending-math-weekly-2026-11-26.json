@@ -1,0 +1,749 @@
+{
+  "schema": "arxiv-trending-math/v1",
+  "category": "math",
+  "window": "weekly",
+  "date": "2026-11-26",
+  "title": "Notable recent mathematics papers on arXiv — weekly window ending 2026-11-26",
+  "source_report": "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.md",
+  "entry_count": 15,
+  "entry_noun": "papers",
+  "global_caveat": "arXiv supplies no official trending chart, so ordering is inferred; recent attention evidence is limited. No selected paper had Hugging Face upvotes, only one had a one-point Hacker News item, and Semantic Scholar values are current citation totals rather than gains during the window. The top citation-based scores belong to older source texts (1999 and 2002), so the ranking must not be read as a popularity or new-research leaderboard.",
+  "sections": [
+    {
+      "id": "arxiv:2611.32426",
+      "kind": "paper",
+      "title": "An Introduction to O-minimal Geometry",
+      "rank": 1,
+      "url": "https://arxiv.org/abs/2611.32426",
+      "arxiv_id": "2611.32426",
+      "arxiv_version": "1",
+      "published": "2026-11-24T11:28:38Z",
+      "updated": "2026-11-24T11:28:38Z",
+      "primary_category": "math.AG",
+      "categories": [
+        "math.AG",
+        "math.GT"
+      ],
+      "authors": [
+        "Michel Coste"
+      ],
+      "themes": [
+        "Geometry & topology"
+      ],
+      "abstract": "These lecture notes introduce o-minimal structures through cell decomposition, dimension, definable triangulation, generic fibres, and smoothness.",
+      "claimed_result": "The author presents a six-chapter course treatment of tame geometry, including definable triangulation and generic-fibre results (arXiv abstract and HTML preface/contents).",
+      "assumptions_and_setting": "Lecture notes on o-minimal expansions of the real field; the uploaded text identifies itself as November 1999 course notes.",
+      "unique_caveat": "This is a 1999 course text newly deposited in 2026, not evidence of a new theorem; the preface says some topics, including VC theory, are omitted. Citation totals can reflect the underlying older material. Proofs were not audited.",
+      "evidence_for_ranking": "S2 reports 483 current citations (82 influential), yielding the pool-high score 17.033 (citation component 12.364; influential component 4.419; one cross-list, 0.250). Dividing the current total by the 2.86-day age of this arXiv record gives a 168.7/day proxy, not citations gained this week; the 1999 text makes that proxy especially unsuitable as evidence of a new surge. No HF upvotes or HN item.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 17.033,
+      "score_components": {
+        "citations": 12.364,
+        "influential_citations": 4.419,
+        "cross_lists": 0.25
+      },
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 483,
+          "influential_citations": 82
+        }
+      },
+      "citation_age_proxy_per_day": 168.662,
+      "refs": [
+        "https://arxiv.org/abs/2611.32426",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.31550",
+      "kind": "paper",
+      "title": "An Introduction to Semialgebraic Geometry",
+      "rank": 2,
+      "url": "https://arxiv.org/abs/2611.31550",
+      "arxiv_id": "2611.31550",
+      "arxiv_version": "1",
+      "published": "2026-11-23T20:59:54Z",
+      "updated": "2026-11-23T20:59:54Z",
+      "primary_category": "math.AG",
+      "categories": [
+        "math.AG"
+      ],
+      "authors": [
+        "Michel Coste"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Numerical analysis & computation"
+      ],
+      "abstract": "These notes cover real-root counting, the Tarski–Seidenberg theorem, cylindrical algebraic decomposition, triangulation, and finiteness bounds for semialgebraic sets.",
+      "claimed_result": "The notes present algorithms and foundational results, including an explicit connected-component bound depending on equation degree and ambient dimension (arXiv abstract and HTML introduction).",
+      "assumptions_and_setting": "Semialgebraic subsets of R^n defined by Boolean combinations of polynomial equations and inequalities; the text identifies itself as October 2002 lecture notes.",
+      "unique_caveat": "The author explicitly says the content is not original; this is a 2002 exposition newly deposited in 2026, not a new research result. Current citation totals may reflect the old notes. Proofs were not audited.",
+      "evidence_for_ranking": "S2 reports 257 current citations (48 influential), score 14.998 (citation component 11.106; influential component 3.892). The 74.1/day current-total/arXiv-age proxy is not a window gain and is confounded by the notes’ October 2002 date. No HF upvotes or HN item.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 14.998,
+      "score_components": {
+        "citations": 11.106,
+        "influential_citations": 3.892
+      },
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 257,
+          "influential_citations": 48
+        }
+      },
+      "citation_age_proxy_per_day": 74.127,
+      "refs": [
+        "https://arxiv.org/abs/2611.31550",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.31121",
+      "kind": "paper",
+      "title": "A Characterization of Tangle Matroids",
+      "rank": 3,
+      "url": "https://arxiv.org/abs/2611.31121",
+      "arxiv_id": "2611.31121",
+      "arxiv_version": "1",
+      "published": "2026-11-23T17:55:34Z",
+      "updated": "2026-11-23T17:55:34Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Dennis Hall"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "The paper characterizes tangle matroids: a matroid with at least two elements is one exactly when three hyperplanes do not cover its ground set.",
+      "claimed_result": "The author states the characterization and derives, among other consequences, that no binary matroid of rank at least two is a tangle matroid (arXiv abstract).",
+      "assumptions_and_setting": "Matroids with at least two elements; the theorem’s characterization uses covers by three hyperplanes.",
+      "unique_caveat": "The arXiv page gives a 2015 Annals of Combinatorics journal reference (19, 125–130); this is a newly deposited version of an established result, not a new 2026 theorem.",
+      "evidence_for_ranking": "S2 reports 5 current citations (1 influential), score 4.277 (citation component 3.584; influential 0.693), the third-highest candidate score. Current total divided by the 3.60-day arXiv-record age is 1.39/day, not a period gain. The primary page’s 2015 journal reference downgrades this as new-window momentum; no HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 4.277,
+      "score_components": {
+        "citations": 3.584,
+        "influential_citations": 0.693
+      },
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 5,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 1.391,
+      "refs": [
+        "https://arxiv.org/abs/2611.31121",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.33320",
+      "kind": "paper",
+      "title": "The Transverse Finiteness Conjecture for pseudo-Anosov flows via universal circles",
+      "rank": 4,
+      "url": "https://arxiv.org/abs/2611.33320",
+      "arxiv_id": "2611.33320",
+      "arxiv_version": "1",
+      "published": "2026-11-24T19:07:54Z",
+      "updated": "2026-11-24T19:07:54Z",
+      "primary_category": "math.GT",
+      "categories": [
+        "math.GT",
+        "math.DS"
+      ],
+      "authors": [
+        "Michael P. Landry",
+        "Samuel J. Taylor"
+      ],
+      "themes": [
+        "Geometry & topology"
+      ],
+      "abstract": "For a taut finite-depth foliation of a closed oriented atoroidal 3-manifold, the authors prove that only finitely many pseudo-Anosov flows are almost transverse to it up to orbit equivalence, and prove uniqueness when the flow has no perfect fits.",
+      "claimed_result": "The authors say they prove Mosher’s Transverse Finiteness Conjecture and a rigidity theorem for the no-perfect-fits case (arXiv abstract and §1, Theorems 1.2–1.3).",
+      "assumptions_and_setting": "Closed, oriented, atoroidal 3-manifold and finite-depth foliation; the uniqueness conclusion additionally assumes the flow has no perfect fits.",
+      "unique_caveat": "The result is conditional on the stated 3-manifold/foliation setting; the authors distinguish it from the broader finiteness conjecture for all pseudo-Anosov flows on such manifolds. This is an attributed preprint claim; no proof audit.",
+      "evidence_for_ranking": "S2 reports 2 current citations (1 influential), one mathematical cross-list, score 3.140 (components 2.197 citations, 0.693 influential, 0.250 cross-list); current-total/2.54-day age is 0.79/day, not window growth. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 3.14,
+      "score_components": {
+        "citations": 2.197,
+        "influential_citations": 0.693,
+        "cross_lists": 0.25
+      },
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 2,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.786,
+      "refs": [
+        "https://arxiv.org/abs/2611.33320",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.29246",
+      "kind": "paper",
+      "title": "Cylindrical Ricci flows and the PDE-ODI principle",
+      "rank": 5,
+      "url": "https://arxiv.org/abs/2611.29246",
+      "arxiv_id": "2611.29246",
+      "arxiv_version": "1",
+      "published": "2026-11-22T05:35:16Z",
+      "updated": "2026-11-22T05:35:16Z",
+      "primary_category": "math.DG",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "authors": [
+        "Richard H. Bamler",
+        "Yi Lai"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Analysis & PDE"
+      ],
+      "abstract": "For ancient asymptotically cylindrical Ricci flows, the authors derive linear-versus-quadratic leading asymptotics, product-soliton rigidity in the linear case, and uniqueness of cylindrical tangent flows.",
+      "claimed_result": "The authors establish asymptotics and cylindrical-region propagation using the PDE–ODI principle with a harmonic-map heat-flow gauge (arXiv abstract).",
+      "assumptions_and_setting": "Ancient Ricci flows asymptotic to a cylinder; the product rigidity statement is for κ-solutions and is up to parabolic rescaling.",
+      "unique_caveat": "The results apply to the specified ancient asymptotically cylindrical setting; the proposed dimension-four surgery program is not completed by this paper. The 115-page preprint’s proofs were not independently checked.",
+      "evidence_for_ranking": "S2 reports 2 current citations (1 influential), one cross-list, score 3.140 (2.197 citation, 0.693 influential, 0.250 cross-list); current-total/5.11-day age is 0.39/day, not a period gain. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 3.14,
+      "score_components": {
+        "citations": 2.197,
+        "influential_citations": 0.693,
+        "cross_lists": 0.25
+      },
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 2,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.391,
+      "refs": [
+        "https://arxiv.org/abs/2611.29246",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.27098",
+      "kind": "paper",
+      "title": "Idempotent generically stable measures in NIP groups",
+      "rank": 6,
+      "url": "https://arxiv.org/abs/2611.27098",
+      "arxiv_id": "2611.27098",
+      "arxiv_version": "1",
+      "published": "2026-11-20T04:16:44Z",
+      "updated": "2026-11-20T04:16:44Z",
+      "primary_category": "math.LO",
+      "categories": [
+        "math.LO",
+        "math.DS",
+        "math.GR"
+      ],
+      "authors": [
+        "Artem Chernikov"
+      ],
+      "themes": [
+        "Logic & foundations",
+        "Probability & statistics"
+      ],
+      "abstract": "For a global generically stable Keisler measure on a type-definable group in an NIP theory, idempotence is equivalent to being the unique translation-invariant measure on its type-definable stabilizer subgroup.",
+      "claimed_result": "The author states that this equivalence resolves the NIP case of the Idempotent Measure problem (arXiv abstract).",
+      "assumptions_and_setting": "Global generically stable Keisler measures on type-definable groups in NIP theories.",
+      "unique_caveat": "The theorem addresses the NIP/generically-stable setting only; it does not resolve the full Idempotent Measure problem outside these hypotheses.",
+      "evidence_for_ranking": "S2 reports 1 current citation (1 influential), two mathematical cross-lists, score 2.579 (1.386 citation, 0.693 influential, 0.500 cross-lists); current-total/7.16-day age is 0.14/day, not period growth. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.579,
+      "score_components": {
+        "citations": 1.386,
+        "influential_citations": 0.693,
+        "cross_lists": 0.5
+      },
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.14,
+      "refs": [
+        "https://arxiv.org/abs/2611.27098",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.26729",
+      "kind": "paper",
+      "title": "The regular $N$-gon maximizes first positive Neumann eigenvalue among simple polygons with at most $N$ sides and fixed area",
+      "rank": 7,
+      "url": "https://arxiv.org/abs/2611.26729",
+      "arxiv_id": "2611.26729",
+      "arxiv_version": "1",
+      "published": "2026-11-19T19:24:49Z",
+      "updated": "2026-11-19T19:24:49Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math-ph",
+        "math.SP"
+      ],
+      "authors": [
+        "Senping Luo",
+        "Bingbing Xie"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Mathematical physics"
+      ],
+      "abstract": "Among fixed-area simple polygons with at most N sides, the regular N-gon uniquely maximizes area times the first positive Neumann eigenvalue, up to congruence.",
+      "claimed_result": "The authors state that this proves the polygonal Szegő–Weinberger conjecture and implies optimality of the triangular lattice’s Voronoi cell at fixed covolume (arXiv abstract).",
+      "assumptions_and_setting": "Every integer N≥3; simple polygons of prescribed area with at most N sides; uniqueness is up to congruence.",
+      "unique_caveat": "The theorem is restricted to simple polygons and the first positive Neumann eigenvalue; it does not claim an analogous result for arbitrary planar domains.",
+      "evidence_for_ranking": "S2 reports 1 current citation (1 influential), two mathematical cross-lists, score 2.579 (1.386 citation, 0.693 influential, 0.500 cross-lists); current-total/7.53-day age is 0.13/day, not window growth. The daily rollup also shows it on 2026-11-22 (best daily rank 9). No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.579,
+      "score_components": {
+        "citations": 1.386,
+        "influential_citations": 0.693,
+        "cross_lists": 0.5
+      },
+      "signals": {
+        "cross_lists": 2,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.133,
+      "refs": [
+        "https://arxiv.org/abs/2611.26729",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-27.rollup.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.27558",
+      "kind": "paper",
+      "title": "Uniqueness of $L_{p}$ Minkowski Problem in the supercritical range near the affine exponent",
+      "rank": 8,
+      "url": "https://arxiv.org/abs/2611.27558",
+      "arxiv_id": "2611.27558",
+      "arxiv_version": "1",
+      "published": "2026-11-20T12:53:56Z",
+      "updated": "2026-11-20T12:53:56Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "authors": [
+        "Devesh Rajpal"
+      ],
+      "themes": [
+        "Geometry & topology",
+        "Analysis & PDE"
+      ],
+      "abstract": "For the isotropic L_p-Minkowski problem, the author proves uniqueness for p in a dimension-dependent interval immediately below the affine-invariant exponent −n−1.",
+      "claimed_result": "Uniform C^0 estimates and a spectral estimate for the Hilbert–Brunn–Minkowski operator yield uniqueness for p∈(−n−1−δ_n,−n−1), with δ_n>0 (arXiv abstract).",
+      "assumptions_and_setting": "Solutions of the isotropic L_p-Minkowski problem in the supercritical range, for a dimension-dependent neighborhood below p=−n−1.",
+      "unique_caveat": "Uniqueness is proved only in a near-affine interval; the abstract does not claim uniqueness throughout the supercritical range p<−n−1.",
+      "evidence_for_ranking": "S2 reports 2 current citations and no influential citations, one cross-list, score 2.447 (2.197 citation, 0.250 cross-list); current-total/6.80-day age is 0.29/day, not period growth. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.447,
+      "score_components": {
+        "citations": 2.197,
+        "cross_lists": 0.25
+      },
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 2,
+          "influential_citations": 0
+        }
+      },
+      "citation_age_proxy_per_day": 0.294,
+      "refs": [
+        "https://arxiv.org/abs/2611.27558",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-27.rollup.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.30470",
+      "kind": "paper",
+      "title": "One-shot identification of analytic systems",
+      "rank": 9,
+      "url": "https://arxiv.org/abs/2611.30470",
+      "arxiv_id": "2611.30470",
+      "arxiv_version": "1",
+      "published": "2026-11-23T10:59:00Z",
+      "updated": "2026-11-23T10:59:00Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "cs.AI",
+        "cs.LG",
+        "math.DS",
+        "math.FA"
+      ],
+      "authors": [
+        "Nicolas Boullé",
+        "Diana Halikias",
+        "Samuel E. Otto",
+        "Alex Townsend"
+      ],
+      "themes": [
+        "Numerical analysis & computation",
+        "Machine learning theory"
+      ],
+      "abstract": "For a linearly parameterized analytic system with a finite operator dictionary, coefficient recovery from one input–solution pair is possible exactly when the induced finite-dimensional recovery map is injective, and the authors prove a zero–one law for degenerate inputs.",
+      "claimed_result": "The authors characterize degenerate-input sets and apply the framework to matrices, analytic dynamical systems, and several ODE/PDE classes, identifying deterministic inputs that guarantee recovery in those classes (arXiv abstract).",
+      "assumptions_and_setting": "Finite dictionaries of analytic operators and admissible inputs; the explicit deterministic guarantees are for several, not all, ODE/PDE classes.",
+      "unique_caveat": "The zero–one law is conditional on the defined admissible-input space and operator family; it is not a universal guarantee for arbitrary systems.",
+      "evidence_for_ranking": "S2 reports 1 current citation, zero influential citations, and four mathematical cross-lists, score 2.386 (1.386 citation; 1.000 cross-list component); current-total/3.88-day age is 0.26/day, not a window gain. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.386,
+      "score_components": {
+        "citations": 1.386,
+        "cross_lists": 1.0
+      },
+      "signals": {
+        "cross_lists": 4,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 0
+        }
+      },
+      "citation_age_proxy_per_day": 0.257,
+      "refs": [
+        "https://arxiv.org/abs/2611.30470",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.32338",
+      "kind": "paper",
+      "title": "Fractional minimality of the Simons cone for $s$ close to $1$",
+      "rank": 10,
+      "url": "https://arxiv.org/abs/2611.32338",
+      "arxiv_id": "2611.32338",
+      "arxiv_version": "1",
+      "published": "2026-11-24T10:21:37Z",
+      "updated": "2026-11-24T10:21:37Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.OC"
+      ],
+      "authors": [
+        "Matteo Novaga",
+        "Emanuele Paolini"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Geometry & topology"
+      ],
+      "abstract": "The authors prove that the Simons cone in R^8 minimizes fractional perimeter under compact perturbations whenever s is sufficiently close to 1.",
+      "claimed_result": "The stated result is fractional-perimeter minimality of the Simons cone in dimension eight for orders sufficiently near 1 (arXiv abstract).",
+      "assumptions_and_setting": "The fixed cone in R^8, compact perturbations, and s in an unspecified sufficiently-close-to-1 regime.",
+      "unique_caveat": "The abstract does not quantify the admissible range of s; the claim is not for all fractional orders.",
+      "evidence_for_ranking": "S2 reports 1 current citation (1 influential), one cross-list, score 2.329 (1.386 citation, 0.693 influential, 0.250 cross-list); current-total/2.91-day age is 0.34/day, not a period gain. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.329,
+      "score_components": {
+        "citations": 1.386,
+        "influential_citations": 0.693,
+        "cross_lists": 0.25
+      },
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.344,
+      "refs": [
+        "https://arxiv.org/abs/2611.32338",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.30936",
+      "kind": "paper",
+      "title": "Probabilistic well-posedness of dispersive PDEs beyond variance blowup II: quadratic nonlinear wave equation",
+      "rank": 11,
+      "url": "https://arxiv.org/abs/2611.30936",
+      "arxiv_id": "2611.30936",
+      "arxiv_version": "1",
+      "published": "2026-11-23T16:20:52Z",
+      "updated": "2026-11-23T16:20:52Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "authors": [
+        "Guopeng Li",
+        "Jiawei Li",
+        "Shao Liu",
+        "Tadahiro Oh",
+        "Nikolay Tzvetkov"
+      ],
+      "themes": [
+        "Analysis & PDE",
+        "Probability & statistics"
+      ],
+      "abstract": "For the quadratic nonlinear wave equation on the two-dimensional torus with rough Gaussian data beyond the variance-blowup threshold, the authors obtain convergence in law after a vanishing multiplicative renormalization to a stochastic wave equation with zero initial data.",
+      "claimed_result": "The authors also report almost-sure finite-time blow-up of the limiting solution and convergence on every compact interval before its maximal existence time, using analysis of oscillatory second Picard iterates (arXiv abstract).",
+      "assumptions_and_setting": "Quadratic NLW on T², rough Gaussian random initial data beyond the cited variance-blowup threshold, and times strictly before the limiting solution’s maximal existence time.",
+      "unique_caveat": "The convergence statement does not extend through the limiting solution’s finite blow-up time; the result depends on the stated random-data and renormalization framework.",
+      "evidence_for_ranking": "S2 reports 1 current citation (1 influential), one cross-list, score 2.329 (1.386 citation, 0.693 influential, 0.250 cross-list); current-total/3.66-day age is 0.27/day, not period growth. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.329,
+      "score_components": {
+        "citations": 1.386,
+        "influential_citations": 0.693,
+        "cross_lists": 0.25
+      },
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.273,
+      "refs": [
+        "https://arxiv.org/abs/2611.30936",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.30248",
+      "kind": "paper",
+      "title": "Hypergraph Ramsey Numbers via Oriented Palette Constructions",
+      "rank": 12,
+      "url": "https://arxiv.org/abs/2611.30248",
+      "arxiv_id": "2611.30248",
+      "arxiv_version": "1",
+      "published": "2026-11-23T08:15:54Z",
+      "updated": "2026-11-23T08:15:54Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Hanzhi Bai",
+        "Xinyu Hu",
+        "Kaidi Liu",
+        "Guanghui Wang"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "Using oriented palette constructions and hypergraph containers, the authors derive lower bounds for hypergraph Ramsey numbers, including matching 2^{Θ_k(n log n)} bounds for the half-graph case.",
+      "claimed_result": "They answer a question of Mubayi and Suk affirmatively and obtain further tower-type Ramsey bounds for fixed parameter ranges (arXiv abstract).",
+      "assumptions_and_setting": "Two-colour k-uniform hypergraph Ramsey numbers in the specific half-graph and other families; several bounds assume fixed k,t and the stated ranges.",
+      "unique_caveat": "The asymptotic bounds use fixed-parameter hypotheses and implicit constants; they are not uniform claims over all k,t.",
+      "evidence_for_ranking": "S2 reports 1 current citation (1 influential), score 2.079 (1.386 citation, 0.693 influential); current-total/4.00-day age is 0.25/day, not window growth. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.079,
+      "score_components": {
+        "citations": 1.386,
+        "influential_citations": 0.693
+      },
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.25,
+      "refs": [
+        "https://arxiv.org/abs/2611.30248",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.27575",
+      "kind": "paper",
+      "title": "A proof of Cigler's quadratic recurrence for Hankel determinants of Motzkin path generating functions",
+      "rank": 13,
+      "url": "https://arxiv.org/abs/2611.27575",
+      "arxiv_id": "2611.27575",
+      "arxiv_version": "1",
+      "published": "2026-11-20T13:11:42Z",
+      "updated": "2026-11-20T13:11:42Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO"
+      ],
+      "authors": [
+        "Tianxing Yu"
+      ],
+      "themes": [
+        "Combinatorics & discrete mathematics"
+      ],
+      "abstract": "For the specified Motzkin-path Hankel determinants, the author proves Cigler’s quadratic recurrence for every k≥0 and n≥2k+2 and also proves a companion determinant conjecture.",
+      "claimed_result": "The recurrence is proved using Chebyshev polynomials, complementary minors, and a Plücker relation; the paper also independently proves that the determinant is independent of c (arXiv abstract).",
+      "assumptions_and_setting": "Motzkin paths with level-step weights c+x at height zero and c above it; integers k≥0 and n≥2k+2.",
+      "unique_caveat": "The recurrence has the stated index and weight hypotheses; the companion determinant statement had also recently been proved independently by V. Jandhyala, as the abstract notes.",
+      "evidence_for_ranking": "S2 reports 1 current citation (1 influential), score 2.079 (1.386 citation and 0.693 influential); current-total/6.79-day age is 0.15/day, not a period gain. The daily rollup shows it on 2026-11-23 (best rank 3). No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 2.079,
+      "score_components": {
+        "citations": 1.386,
+        "influential_citations": 0.693
+      },
+      "signals": {
+        "cross_lists": 0,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 1
+        }
+      },
+      "citation_age_proxy_per_day": 0.147,
+      "refs": [
+        "https://arxiv.org/abs/2611.27575",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-27.rollup.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.26750",
+      "kind": "paper",
+      "title": "The weighted fundamental lemma for non-split groups",
+      "rank": 14,
+      "url": "https://arxiv.org/abs/2611.26750",
+      "arxiv_id": "2611.26750",
+      "arxiv_version": "1",
+      "published": "2026-11-19T19:45:10Z",
+      "updated": "2026-11-19T19:45:10Z",
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.AG"
+      ],
+      "authors": [
+        "Cass Halleck-Dubé"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Geometry & topology"
+      ],
+      "abstract": "For quasi-split unramified groups, the author proves the Weighted Fundamental Lemma for Lie algebras and derives Waldspurger’s nonstandard version through a global geometric argument.",
+      "claimed_result": "The author’s abstract says the work implies the Twisted Weighted Fundamental Lemma in good characteristic and makes the endoscopic classification for classical groups unconditional (arXiv abstract).",
+      "assumptions_and_setting": "Quasi-split unramified reductive groups; the proper finite-type Deligne–Mumford stack argument assumes anisotropic center, and the stated twisted consequence is in good characteristic.",
+      "unique_caveat": "This is a 190-page preprint with substantial technical dependencies; the broad downstream consequences are the author’s claims and were not independently verified here.",
+      "evidence_for_ranking": "S2 reports 1 current citation, zero influential citations, one cross-list, score 1.636 (1.386 citation, 0.250 cross-list); current-total/7.52-day age is 0.13/day, not a period gain. The daily rollup shows repeated coverage on 2026-11-22 and 2026-11-23 (best rank 3), the only selected paper recurring across daily editions. No HF/HN activity.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 1.636,
+      "score_components": {
+        "citations": 1.386,
+        "cross_lists": 0.25
+      },
+      "signals": {
+        "cross_lists": 1,
+        "s2": {
+          "citations": 1,
+          "influential_citations": 0
+        }
+      },
+      "citation_age_proxy_per_day": 0.133,
+      "refs": [
+        "https://arxiv.org/abs/2611.26750",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-27.rollup.json"
+      ]
+    },
+    {
+      "id": "arxiv:2611.27008",
+      "kind": "paper",
+      "title": "The Ritt problem is decidable",
+      "rank": 15,
+      "url": "https://arxiv.org/abs/2611.27008",
+      "arxiv_id": "2611.27008",
+      "arxiv_version": "1",
+      "published": "2026-11-20T02:37:11Z",
+      "updated": "2026-11-20T02:37:11Z",
+      "primary_category": "math.AC",
+      "categories": [
+        "math.AC",
+        "math.CA",
+        "math.LO"
+      ],
+      "authors": [
+        "Jason Fang",
+        "James Freitag",
+        "Matthew Harrison-Trainor"
+      ],
+      "themes": [
+        "Algebra & number theory",
+        "Logic & foundations"
+      ],
+      "abstract": "The authors state that they give an affirmative solution to the Ritt problem.",
+      "claimed_result": "The arXiv abstract claims decidability of the Ritt problem but gives no further theorem statement or definition (arXiv abstract).",
+      "assumptions_and_setting": "Not available from the arXiv abstract beyond the stated Ritt problem and its decidability.",
+      "unique_caveat": "The abstract is one sentence and does not define the problem or describe the decision procedure, so the theorem’s exact scope cannot be assessed from the abstract page alone.",
+      "evidence_for_ranking": "One Hacker News story has 1 point and 0 comments; S2 reports 0 citations/influential citations. Two mathematical cross-lists contribute 0.500; score 1.540 (HN-points component 1.040). This is a small, checkable attention signal, not evidence of broad popularity. Daily rollup: 2026-11-23, best rank 9.",
+      "announcement_type": "new submission",
+      "announcement_batch_date": "Not separately available from weekly signal file",
+      "score": 1.54,
+      "score_components": {
+        "hn_points": 1.04,
+        "cross_lists": 0.5
+      },
+      "signals": {
+        "cross_lists": 2,
+        "hn": {
+          "points": 1,
+          "comments": 0,
+          "stories": 1,
+          "url": "https://news.ycombinator.com/item?id=50616812"
+        },
+        "s2": {
+          "citations": 0,
+          "influential_citations": 0
+        }
+      },
+      "citation_age_proxy_per_day": 0.0,
+      "refs": [
+        "https://arxiv.org/abs/2611.27008",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-26.signals.json",
+        "/home/yizhuan/.research/math/weekly/arxiv-trending-math-weekly-2026-11-27.rollup.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema": "arxiv-giant-watch-report/v1",
+  "category": "arxiv-giant-watch",
+  "window": "weekly",
+  "date": "2026-11-27",
+  "title": "arXiv Giant Watch - Weekly - 2026-11-27",
+  "source_report": "/home/yizhuan/.research/arxiv-giant-watch/weekly/arxiv-giant-watch-summary-weekly-2026-11-27.md",
+  "entry_count": 5,
+  "entry_noun": "papers",
+  "sections": [
+    {
+      "id": "00-headline",
+      "kind": "headline",
+      "title": "Headline",
+      "content": "This week’s notable papers cover unified 4D world representations, agentic knowledge engineering and co-evolution benchmarks, open-weight safety auditing, and scalable medical AI evaluation. Four selections have verified affiliation matches; WorldLatent has a probable Google match via its Hugging Face organization account."
+    },
+    {
+      "id": "01-paper",
+      "kind": "paper",
+      "rank": 1,
+      "title": "WorldLatent: A Unified 4D Latent Space for World Perception and Generation",
+      "arxiv_id": "2611.31209",
+      "authors": [
+        "Jingxi Chen",
+        "Yujia Chen",
+        "Cornelia Fermuller",
+        "Yiannis Aloimonos",
+        "Wen-Sheng Chu",
+        "Du Tran"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "probable",
+      "attribution_evidence": [
+        "https://huggingface.co/google"
+      ],
+      "problem": "4D spatiotemporal vision lacks a shared representational protocol, so perception (depth, camera estimation) and generation are handled by separate one-way pipelines or unaligned single-modality spaces.",
+      "method": "WorldLatent proposes a multimodal VAE that compresses and fuses 4D appearance, geometry, and dynamics into a single structured latent space, with perception and generation treated as complementary denoising processes over that shared space in one training loop.",
+      "key_result": "The abstract reports specialist-level zero-shot 4D perception, coherent 4D generation, and controllable editing from a single model across representative 4D benchmarks.",
+      "caveat": "Organization attribution is probable, not confirmed; the abstract reports qualitative claims without numeric metrics, and no independent replication is indicated.",
+      "why_it_matters": "It frames a common latent protocol for 4D understanding and generation, analogous to shared token representations in language models, as a foundation for general-purpose 4D spatial intelligence.",
+      "refs": [
+        "2611.31209"
+      ]
+    },
+    {
+      "id": "02-paper",
+      "kind": "paper",
+      "rank": 2,
+      "title": "AutoOntologyBench: A Task-Grounded Benchmark for Agentic Knowledge Engineering",
+      "arxiv_id": "2611.27734",
+      "authors": [
+        "Minye Shao",
+        "Chenghao Xiao",
+        "Xingyue Zhao",
+        "Yang Long"
+      ],
+      "organizations": [
+        "Qwen"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Alibaba DAMO Academy (China)",
+        "Alibaba Group (China)",
+        "Alibaba DAMO Academy , Alibaba Group"
+      ],
+      "problem": "It is unresolved whether autonomous agents can construct ontologies that help them solve real tasks, and whether such knowledge offers measurable benefits over alternative representations; existing benchmarks evaluate ontology correctness or task success in isolation.",
+      "method": "AutoOntologyBench is a task-grounded benchmark of 19,947 audited tasks grounded in 18 real-world knowledge sources across 7 domains, with source-native verification, spanning Application, Repair, Organization, and Construction, comparing nine frontier-model agents under matched knowledge representations.",
+      "key_result": "Layered on retrieval, agent-built ontologies add 6.1 points of task success but trail an expert-derived reference by 13.0, identifying autonomous knowledge acquisition as the bottleneck.",
+      "caveat": "The verified organization match is at the affiliation level; author-level attribution is not confirmed. Results are abstract-reported and limited to the benchmark's nine agents and seven domains.",
+      "why_it_matters": "It separates the value of autonomously acquired knowledge from raw task success, giving a task-grounded measure of where agentic scientific research falls short.",
+      "refs": [
+        "2611.27734"
+      ]
+    },
+    {
+      "id": "03-paper",
+      "kind": "paper",
+      "rank": 3,
+      "title": "CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?",
+      "arxiv_id": "2611.27116",
+      "authors": [
+        "Chuan Xiao",
+        "Baojie Wang",
+        "Haizhao Fan",
+        "Hongzhe Du",
+        "Xander Xu"
+      ],
+      "organizations": [
+        "Qwen"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Alibaba Group (China)",
+        "Alibaba Group"
+      ],
+      "problem": "Agent performance depends on both model and harness, but existing benchmarks evaluate post-training or data research with the harness out of scope, or harness optimization with the model fixed, leaving the joint decision unmeasured.",
+      "method": "CoEvoBench evaluates LLMs as researchers co-evolving a target agent's model and harness across five agentic domains, starting from a common base model and initial harness within a 24-hour budget and scoring submitted model-harness pairs on separate test tasks.",
+      "key_result": "Across five frontier researchers, the strongest closes more than four fifths of the gap to an instruction-tuned reference system; co-evolution succeeds on interaction tasks but rarely on long-horizon coding.",
+      "caveat": "Organization attribution is verified at the affiliation level, not per author. The abstract reports relative gap closure without absolute scores, and the finding is limited to five researchers and five domains.",
+      "why_it_matters": "It provides a controlled testbed for recursive improvement, suggesting current LLMs can make a strong first improvement but cannot yet convert feedback from an improved system into the next one.",
+      "refs": [
+        "2611.27116"
+      ]
+    },
+    {
+      "id": "04-paper",
+      "kind": "paper",
+      "rank": 4,
+      "title": "Cleave: Severing Guardrails and Auditing Spectral Coupling in Open-Weight LLMs",
+      "arxiv_id": "2611.27426",
+      "authors": [
+        "Feng Huang",
+        "Qiang Huang",
+        "Yue Gao",
+        "Mei Zhang",
+        "Bin Liu",
+        "Lihua Ju",
+        "Xinhao Wei",
+        "Yongfeng Huang",
+        "Yu Qing",
+        "Yunqi Zhang"
+      ],
+      "organizations": [
+        "Qwen"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Alibaba Group (China)",
+        "Alibaba Group , China"
+      ],
+      "problem": "Open-weight LLMs are deployed locally beyond provider control, and their embedded safety guardrails are found to rely on residual writing weights that can be directly edited.",
+      "method": "Cleave is a training-free attack that edits residual writing weights to remove all guardrails or selectively lift only cybersecurity restrictions; a dual-stage defense combines pre-release subspace diagnostics with post-release weight-coupling audits.",
+      "key_result": "Across five open-weight LLMs from 7B to 320B parameters, Cleave reaches up to 67.97% attack success on seven safety benchmarks, boosts executable exploit generation by up to 24.0 times on 356 cybersecurity tasks and 15 live vulnerable services, and compromises up to 66.7% of targets; the defense reports 100% detection recall at 1% false-positive rate.",
+      "caveat": "Organization attribution is verified at the affiliation level, not per author. The abstract reports attack and defense results without external validation, and selective removal retains up to a 99% refusal rate on other harmful requests, which may affect detection.",
+      "why_it_matters": "It shows that open-weight guardrails can be severed by weight edits that evade behavioral spot-checks and static audits, and proposes coupled diagnostics as a countermeasure.",
+      "refs": [
+        "2611.27426"
+      ]
+    },
+    {
+      "id": "05-paper",
+      "kind": "paper",
+      "rank": 5,
+      "title": "Scalable Evaluation of Medical AI using Evidence-based Practice Recommendations",
+      "arxiv_id": "2611.27007",
+      "authors": [
+        "Teya Bergamaschi",
+        "Bijal Rajput",
+        "Akshay Goel",
+        "Matthew Thompson",
+        "Jacqueline Shreibati",
+        "Dave Steiner",
+        "Ashley Carrick",
+        "Mahvish Nagda",
+        "Dale R. Webster",
+        "Avinatan Hassidim",
+        "Katherine Chou",
+        "Yossi Matias",
+        "Po-Hsuan Cameron Chen",
+        "Christina Chen",
+        "Mike Schaekermann",
+        "Yun Liu",
+        "Anil Palepu"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "attribution_status": "verified",
+      "attribution_evidence": [
+        "Google (United States)",
+        "Google Research ,"
+      ],
+      "problem": "Rigorous medical AI evaluation requires open-ended clinical management testing across diverse presentations and care stages, but existing benchmarks rely on manual expert authoring, limiting coverage of conditions, conditional pathways, and evolving guidelines.",
+      "method": "An automated pipeline extracts and verifies structured clinical criteria and branching decision trees from practice recommendations to generate scenarios; applied to 436 BMJ Best Practice monographs, it yields 3,200 scenarios plus targeted regional and temporal suites, graded by a clinician-calibrated autorater on a 4-point severity-stratified rubric.",
+      "key_result": "Scaling improves Gemini adherence; web search adds 0.8 pp on average and multi-sample synthesis adds 2.2 pp, combining additively to 2.8 pp; web search narrows international gaps by 4.2 pp and improves adherence to updated guidance by 4.6 pp; in a study with 9 primary care physicians over 200 scenarios, AI assistance raises adherence from 50.5% to 70.0%.",
+      "caveat": "Organization attribution is verified at the affiliation level, not per author. The physician study is small (n = 9), and the evaluation is tied to BMJ Best Practice monographs and Gemini models.",
+      "why_it_matters": "It offers a scalable, guideline-grounded evaluation setup for medical AI and evidence that AI assistance can improve clinician decision-making, largely by reducing clinical omissions.",
+      "refs": [
+        "2611.27007"
+      ]
+    },
+    {
+      "id": "80-research-themes",
+      "kind": "themes",
+      "title": "Research Themes",
+      "content": [
+        "Unified representations and protocols spanning perception, generation, and knowledge organization",
+        "Benchmarks that measure agentic capability end to end rather than in isolation",
+        "Safety and evaluation rigor for deployed models, from open-weight guardrails to clinical adherence"
+      ]
+    },
+    {
+      "id": "85-daily-continuity",
+      "kind": "continuity",
+      "title": "Daily-edition continuity",
+      "content": "The weekly rollup covers one daily report (2026-11-25). It already featured \"Unifying Partner and Environment Diversity to Improve Human-AI Coordination\" (arXiv:2611.32031) at daily rank #1; it appeared once, so no paper recurred across multiple daily editions. The arXiv author metadata lists University of Washington email domains, not a tracked major AI organization. The earlier Meta match arose from the surname \"Fairhall\" and is not evidence of Meta affiliation, so this paper is recorded as continuity but excluded from this week’s ranked selections.",
+      "daily_reports": [
+        {
+          "date": "2026-11-25",
+          "arxiv_id": "2611.32031",
+          "daily_rank": 1,
+          "appearances": 1
+        }
+      ],
+      "recurring_entries": [],
+      "refs": [
+        "2611.32031"
+      ]
+    },
+    {
+      "id": "90-takeaway",
+      "kind": "takeaway",
+      "title": "Takeaway",
+      "content": "The selected work links shared representations with task-grounded evaluation: a unified 4D latent space, benchmarks for ontology-building and agent co-evolution, and guideline-grounded clinical scenarios. Cleave reports a way to remove open-weight guardrails and an auditing defense. Four papers have verified affiliation matches; one has a probable Google attribution, not confirmation of every author’s affiliation."
+    },
+    {
+      "id": "95-sources-method",
+      "kind": "methodology",
+      "title": "Sources and Method",
+      "content": "The arXiv listing reached the 2,000-paper retrieval cap, so the candidate pool may be incomplete; rankings reflect the retrieved papers only."
+    }
+  ]
+}

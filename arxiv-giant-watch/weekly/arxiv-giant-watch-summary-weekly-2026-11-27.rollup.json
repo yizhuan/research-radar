@@ -1,0 +1,24 @@
+{
+  "schema": "rrc-rollup/v1",
+  "category": "arxiv-giant-watch",
+  "source_window": "daily",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "reports": [
+    "2026-11-25"
+  ],
+  "entries": [
+    {
+      "key": "arxiv:2611.32031",
+      "kind": "paper",
+      "title": "Unifying Partner and Environment Diversity to Improve Human-AI Coordination",
+      "url": "https://arxiv.org/abs/2611.32031",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 1
+    }
+  ],
+  "window": "weekly"
+}

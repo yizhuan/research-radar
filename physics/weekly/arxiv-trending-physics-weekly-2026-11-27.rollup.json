@@ -1,0 +1,460 @@
+{
+  "schema": "rrc-rollup/v1",
+  "category": "physics",
+  "source_window": "daily",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "reports": [
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-26"
+  ],
+  "entries": [
+    {
+      "key": "arxiv:2611.27581",
+      "kind": "paper",
+      "title": "Disentangling Lengthscales in Disordered Fracture",
+      "url": "https://arxiv.org/abs/2611.27581",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.27584",
+      "kind": "paper",
+      "title": "Bayesian Quantum Thermometry of Ultracold Gases with Non-Equilibrium Single-Atom Probes",
+      "url": "https://arxiv.org/abs/2611.27584",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.27955",
+      "kind": "paper",
+      "title": "Molecular structure breaks universality in screening behavior of electrolyte solutions",
+      "url": "https://arxiv.org/abs/2611.27955",
+      "appearances": 2,
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.27430",
+      "kind": "paper",
+      "title": "Conductivity of electrolyte solutions: Self-consistent Debye-Hückel-Onsager theory",
+      "url": "https://arxiv.org/abs/2611.27430",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.28926",
+      "kind": "paper",
+      "title": "JAX-Nano: A GPU-Accelerated Differentiable Phonon Boltzmann Transport Solver for Nanoscale Heat Transfer",
+      "url": "https://arxiv.org/abs/2611.28926",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.31749",
+      "kind": "paper",
+      "title": "Parton Physics in the Schwinger Model from Matrix Product States",
+      "url": "https://arxiv.org/abs/2611.31749",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.34301",
+      "kind": "paper",
+      "title": "The transverse spin-gradient approximation in noncollinear spin density functional theory",
+      "url": "https://arxiv.org/abs/2611.34301",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 1
+    },
+    {
+      "key": "arxiv:2611.34110",
+      "kind": "paper",
+      "title": "Colored Jones polynomial of figure eight knot and non-perturbative topological recursion",
+      "url": "https://arxiv.org/abs/2611.34110",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.31366",
+      "kind": "paper",
+      "title": "Locality from Nonlocality: Symmetry Relocalization and Gauging of Lattice Dirac Fermions",
+      "url": "https://arxiv.org/abs/2611.31366",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.27980",
+      "kind": "paper",
+      "title": "Structure and relaxation of long-lived odd-parity modes in two-dimensional Fermi liquids",
+      "url": "https://arxiv.org/abs/2611.27980",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.28969",
+      "kind": "paper",
+      "title": "Validating Gaia DR3 Astrometric Accelerations with Close Visual Binaries",
+      "url": "https://arxiv.org/abs/2611.28969",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 2
+    },
+    {
+      "key": "arxiv:2611.33569",
+      "kind": "paper",
+      "title": "Noise-induced Extinction in Hierarchical Food Webs",
+      "url": "https://arxiv.org/abs/2611.33569",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.32280",
+      "kind": "paper",
+      "title": "Relaxation dynamics of the impurity momentum in a one-dimensional Fermi gas",
+      "url": "https://arxiv.org/abs/2611.32280",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.27981",
+      "kind": "paper",
+      "title": "Thermopower overshoot from collinear scattering in two-dimensional Fermi liquids",
+      "url": "https://arxiv.org/abs/2611.27981",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.28537",
+      "kind": "paper",
+      "title": "Time-variable tertiary mass transfer in hierarchical triple systems",
+      "url": "https://arxiv.org/abs/2611.28537",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 3
+    },
+    {
+      "key": "arxiv:2611.27942",
+      "kind": "paper",
+      "title": "A Microwave-Photonics Formulation of the Rydberg-Atom Receiver",
+      "url": "https://arxiv.org/abs/2611.27942",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.28768",
+      "kind": "paper",
+      "title": "A high-speed and high-resolution 3D velocity map imaging system with a neuromorphic camera",
+      "url": "https://arxiv.org/abs/2611.28768",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.31916",
+      "kind": "paper",
+      "title": "Machine learning enables full Bayesian inference for spinning extreme-mass-ratio inspirals",
+      "url": "https://arxiv.org/abs/2611.31916",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.27367",
+      "kind": "paper",
+      "title": "Regularizing gravity in the presence of matter fields",
+      "url": "https://arxiv.org/abs/2611.27367",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.33987",
+      "kind": "paper",
+      "title": "Unified preparation of exact and asymptotic quantum many-body scars from Dicke states",
+      "url": "https://arxiv.org/abs/2611.33987",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 4
+    },
+    {
+      "key": "arxiv:2611.26737",
+      "kind": "paper",
+      "title": "Entropy production from crossing a quantum separatrix",
+      "url": "https://arxiv.org/abs/2611.26737",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.31745",
+      "kind": "paper",
+      "title": "Light-cone distributions of vector and scalar bound states in the Schwinger model from tensor networks",
+      "url": "https://arxiv.org/abs/2611.31745",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.27896",
+      "kind": "paper",
+      "title": "Optimised 8th-Order Trotter-Suzuki Schemes for Quantum Simulation",
+      "url": "https://arxiv.org/abs/2611.27896",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.33953",
+      "kind": "paper",
+      "title": "PINN-Slicer: Exploiting Rotational Symmetry to Solve the Photon Orbit Equation Around a Black Hole",
+      "url": "https://arxiv.org/abs/2611.33953",
+      "appearances": 1,
+      "dates": [
+        "2026-11-26"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.28242",
+      "kind": "paper",
+      "title": "The Thue-Morse route to chaos in the open quantum baker map",
+      "url": "https://arxiv.org/abs/2611.28242",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 5
+    },
+    {
+      "key": "arxiv:2611.28206",
+      "kind": "paper",
+      "title": "An all-orders proof of gradient flow for multiscalar φ⁴ theory in four dimensions",
+      "url": "https://arxiv.org/abs/2611.28206",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.31454",
+      "kind": "paper",
+      "title": "Gluon GPDs from hard-exclusive electroproduction of heavy quarkonium at NLO",
+      "url": "https://arxiv.org/abs/2611.31454",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.27411",
+      "kind": "paper",
+      "title": "Neural variational Skyrmions as a topological benchmark: emergent symmetry, precision energies and KAN--MLP comparison",
+      "url": "https://arxiv.org/abs/2611.27411",
+      "appearances": 1,
+      "dates": [
+        "2026-11-22"
+      ],
+      "best_rank": 6
+    },
+    {
+      "key": "arxiv:2611.28980",
+      "kind": "paper",
+      "title": "Observation of nonadiabatic quantum tunneling in a driven correlated insulator",
+      "url": "https://arxiv.org/abs/2611.28980",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.31403",
+      "kind": "paper",
+      "title": "OmniX: A first jet and event model",
+      "url": "https://arxiv.org/abs/2611.31403",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 7
+    },
+    {
+      "key": "arxiv:2611.31384",
+      "kind": "paper",
+      "title": "Localization in one-dimensional magnetic quasicrystals",
+      "url": "https://arxiv.org/abs/2611.31384",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.28246",
+      "kind": "paper",
+      "title": "Observation of collective flatbands in hybrid Mie-grating THz metasurfaces",
+      "url": "https://arxiv.org/abs/2611.28246",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 8
+    },
+    {
+      "key": "arxiv:2611.27328",
+      "kind": "paper",
+      "title": "60-cm-long In-vacuum Zerodur Optical Cavity for Optical Lattice Atom Interferometry",
+      "url": "https://arxiv.org/abs/2611.27328",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.32190",
+      "kind": "paper",
+      "title": "Entanglement between distant spins in a polarized magnet forms a $d$-wave clover",
+      "url": "https://arxiv.org/abs/2611.32190",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.28215",
+      "kind": "paper",
+      "title": "State-selective dynamical freezing in driven Rydberg atom chains",
+      "url": "https://arxiv.org/abs/2611.28215",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 9
+    },
+    {
+      "key": "arxiv:2611.28211",
+      "kind": "paper",
+      "title": "Revealing Dark Matter in the Dark-Electron Rate of Xenon Detectors",
+      "url": "https://arxiv.org/abs/2611.28211",
+      "appearances": 1,
+      "dates": [
+        "2026-11-24"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "arxiv:2611.31861",
+      "kind": "paper",
+      "title": "Superconductivity with valley-imbalanced Fermi surfaces in thick rhombohedral graphene",
+      "url": "https://arxiv.org/abs/2611.31861",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "arxiv:2611.26693",
+      "kind": "paper",
+      "title": "Topological phases protected by half-chiral symmetry",
+      "url": "https://arxiv.org/abs/2611.26693",
+      "appearances": 1,
+      "dates": [
+        "2026-11-23"
+      ],
+      "best_rank": 10
+    },
+    {
+      "key": "arxiv:2611.31633",
+      "kind": "paper",
+      "title": "H$_3^+$ forbidden rotational lines in a planetary nebula: JWST/MIRI detection in the Ring Nebula and ionization by the central star",
+      "url": "https://arxiv.org/abs/2611.31633",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 11
+    },
+    {
+      "key": "arxiv:2611.31383",
+      "kind": "paper",
+      "title": "Non-integer high harmonic generation from many-body nonadiabatic gating",
+      "url": "https://arxiv.org/abs/2611.31383",
+      "appearances": 1,
+      "dates": [
+        "2026-11-25"
+      ],
+      "best_rank": 12
+    }
+  ],
+  "window": "weekly"
+}

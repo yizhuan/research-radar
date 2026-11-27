@@ -1,6 +1,6 @@
-# arXiv physics daily — 2026-11-26 announcement batch
+# arXiv physics daily — 26 November 2026 announcement batch
 
-Nine notable recent papers from today's batch lean toward rigorous theoretical tools, quantum dynamics, and measurement design. Brief agenda: a new spin-DFT error bound, a knot-theory/topological-recursion proof, rare extinction dynamics, quantum algorithms and sensing, and two astrophysical instrument concepts. This is an inferred ordering, not an official arXiv trending chart; the signal file contains no measured engagement for these papers, and citation evidence is limited because Semantic Scholar was unavailable.
+Five notable papers from the latest available arXiv Physics batch span mathematical physics, quantum many-body dynamics, stochastic ecology, and computational relativity. Brief agenda: a spin-DFT error bound, a knot-theory/topological-recursion proof, demographic extinction, quantum-scar preparation, and a PINN method for photon orbits. This is an editorial shortlist, not a measured popularity ranking: arXiv has no official trending chart, the supplied current-window signals contain no candidate-level scores, and very recent papers have limited citation evidence.
 
 ## Top papers (ranked)
 
@@ -8,124 +8,78 @@ Nine notable recent papers from today's batch lean toward rigorous theoretical t
 - **Abstract:** The authors prove a quantitative error bound for a fixed-axis transverse spin-gradient approximation to noncollinear spin density functional theory using a spin-spiral reference.
 - **Authors:** Mihály A. Csirik
 - **arXiv:** `2611.34301v1` (published 2026-11-25 12:53:36 UTC; categories: `math-ph`, `cond-mat.mtrl-sci`, `cond-mat.quant-gas`, `cond-mat.stat-mech`, `quant-ph`)
-- **Evidence for ranking:** Collector score 1.00, entirely from 4 cross-lists × 0.25; newest in the retained four-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
+- **Evidence for ranking:** No candidate score was present in the supplied signal file; included for a rigorous quantitative bound and cross-listing across mathematical physics, condensed matter, and quantum physics.
 - **Claimed result:** Csirik proves an O(N^(5/6)) error for an energy of order N under stated slow-variation and regularity assumptions, and recovers the noncollinear local spin-density approximation when the spiral phase is set to zero.
 - **Evidence type:** Theoretical; an analytic bound for the thermodynamic-limit electron gas with a spin-spiral-wave local reference.
 - **Caveat:** The bound is for a fixed-axis variant and depends on smooth, slowly varying rotating-frame density and local wavevector; it is not an empirical accuracy benchmark for general materials.
-- **Announcement type:** new submission, 2026-11-26 batch
+- **Announcement type:** new submission, 2026-11-26 announcement batch
 - **Themes:** Condensed matter & materials
 
 ### 2. [Colored Jones polynomial of figure eight knot and non-perturbative topological recursion](https://arxiv.org/abs/2611.34110)
 - **Abstract:** The authors prove that the asymptotic expansion of the figure-eight knot's colored Jones polynomial is connected to non-perturbative topological recursion on its elliptic spectral curve.
 - **Authors:** Alexander Hock, Sergey Shadrin
 - **arXiv:** `2611.34110v1` (published 2026-11-25 10:13:46 UTC; categories: `math-ph`, `hep-th`, `math.AG`, `math.GT`, `nlin.SI`)
-- **Evidence for ranking:** Collector score 1.00, entirely from 4 cross-lists × 0.25; second by submission time in the retained four-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
-- **Claimed result:** Hock and Shadrin identify the asymptotic Jones-polynomial wave function with the recurrence and normalized non-perturbative wave functions for the figure-eight-knot spectral curve, proving the proposed connection in this case.
+- **Evidence for ranking:** No candidate score was present; included for a detailed proof linking a knot invariant to topological recursion and cross-listing into high-energy theory and mathematical physics.
+- **Claimed result:** Hock and Shadrin identify the asymptotic Jones-polynomial wave function with recurrence and normalized non-perturbative wave functions for the figure-eight-knot spectral curve, proving the proposed connection in this case.
 - **Evidence type:** Theoretical; analysis of the colored-Jones recurrence, spectral curve, and topological-recursion equations.
-- **Caveat:** The proof is specific to the figure-eight knot and the colored Jones polynomial; extension to other knots is posed as a follow-up question, not established here.
-- **Announcement type:** new submission, 2026-11-26 batch
+- **Caveat:** The proof is specific to the figure-eight knot and the colored Jones polynomial; extension to other knots is a follow-up question, not established here.
+- **Announcement type:** new submission, 2026-11-26 announcement batch
 - **Themes:** Particle, nuclear & high-energy physics
 
 ### 3. [Noise-induced Extinction in Hierarchical Food Webs](https://arxiv.org/abs/2611.33569)
 - **Abstract:** The authors develop a large-deviation account of demographic-noise-driven extinctions in hierarchical food webs, deriving an extinction network and recursion for mean extinction times.
 - **Authors:** Varun Nevash, Eric Forgoston, M. Ani Hsieh
 - **arXiv:** `2611.33569v1` (published 2026-11-25 00:32:11 UTC; categories: `q-bio.PE`, `cond-mat.stat-mech`, `math.DS`, `math.PR`, `nlin.AO`)
-- **Evidence for ranking:** Collector score 1.00, entirely from 4 cross-lists × 0.25; third by submission time in the retained four-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
-- **Claimed result:** Under unit conversion efficiency and self-limitation only at the basal species, the authors show coexistence is the sole stable mean-field state and derive a 3^(N−1)-transition extinction network; their three-species instanton route is checked against stochastic simulations.
+- **Evidence for ranking:** No candidate score was present; included for its explicit large-deviation treatment of rare events, cross-listing with statistical mechanics, and stochastic simulation check of the three-species example.
+- **Claimed result:** Under unit conversion efficiency and self-limitation only at the basal species, the authors show coexistence is the sole stable mean-field state and derive a 3^(N−1)-transition extinction network; the three-species instanton route is checked against stochastic simulations.
 - **Evidence type:** Theoretical and computational; WKB analysis of the master equation, numerical instantons for a three-species omnivory model, and stochastic simulations.
-- **Caveat:** The general results rely on an idealized hierarchical interaction structure and restrictive ecological assumptions; direct simulation checks cover the three-species example, not arbitrary food webs.
-- **Announcement type:** new submission, 2026-11-26 batch
+- **Caveat:** General results rely on an idealized hierarchical interaction structure and restrictive ecological assumptions; direct simulation checks cover the three-species example, not arbitrary food webs.
+- **Announcement type:** new submission, 2026-11-26 announcement batch
 - **Themes:** Biophysics & soft matter
 
 ### 4. [Unified preparation of exact and asymptotic quantum many-body scars from Dicke states](https://arxiv.org/abs/2611.33987)
 - **Abstract:** The authors propose a unified algorithm that prepares exact and asymptotic quantum many-body scar states by mapping them to Dicke states and ferromagnetic-chain magnons.
 - **Authors:** Yuki Asari, Masaya Kunimi, Tetsuro Nikuni
 - **arXiv:** `2611.33987v1` (published 2026-11-25 08:44:47 UTC; categories: `quant-ph`, `cond-mat.quant-gas`, `cond-mat.stat-mech`, `cond-mat.str-el`)
-- **Evidence for ranking:** Collector score 0.75, entirely from 3 cross-lists × 0.25; newest in the retained three-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
+- **Evidence for ranking:** No candidate score was present; included for a concrete state-preparation algorithm and resource argument connecting quantum information with condensed-matter scar models.
 - **Claimed result:** Asari, Kunimi, and Nikuni show that at fixed target fidelity the block-encoding success probability has a positive lower bound independent of system size and scar index, so only a constant number of amplitude-amplification rounds is needed.
 - **Evidence type:** Theoretical; quantum-algorithm construction and resource analysis for three scar models.
 - **Caveat:** This is an algorithmic proposal for idealized programmable simulators; the abstract does not demonstrate preparation on hardware or quantify noise and gate costs.
-- **Announcement type:** new submission, 2026-11-26 batch
+- **Announcement type:** new submission, 2026-11-26 announcement batch
 - **Themes:** Quantum information; Condensed matter & materials
 
 ### 5. [PINN-Slicer: Exploiting Rotational Symmetry to Solve the Photon Orbit Equation Around a Black Hole](https://arxiv.org/abs/2611.33953)
 - **Abstract:** The authors introduce a slice-by-slice physics-informed neural-network method for long-domain autonomous ODEs and demonstrate it on the photon-orbit equation around a black hole.
 - **Authors:** Claire David, Tlotlo Oepeng, Harrison B. Prosper
 - **arXiv:** `2611.33953v1` (published 2026-11-25 08:13:49 UTC; categories: `cs.CL`, `astro-ph.IM`, `gr-qc`, `physics.comp-ph`)
-- **Evidence for ranking:** Collector score 0.75, entirely from 3 cross-lists × 0.25; second by submission time in the retained three-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
-- **Claimed result:** David, Oepeng, and Prosper report pointwise RMSE below 10^-3 in inverse radius relative to a finite-difference reference, with one trained network generalizing across initial conditions in its training range; the arXiv comment notes code availability and workshop acceptance.
+- **Evidence for ranking:** No candidate score was present; included for a quantified numerical benchmark, code availability noted on the arXiv record, and cross-listing into general relativity and computational physics.
+- **Claimed result:** David, Oepeng, and Prosper report pointwise RMSE below 10^-3 in inverse radius relative to a finite-difference reference, with one trained network generalizing across initial conditions in its training range.
 - **Evidence type:** Computational; a PINN benchmarked against a finite-difference solution of the Schwarzschild photon-orbit ODE.
-- **Caveat:** The validation is one ODE problem and uses a numerical reference solution; generalization beyond the trained initial-condition range and to other physical systems remains untested in the abstract.
-- **Announcement type:** new submission, 2026-11-26 batch
+- **Caveat:** Validation is one ODE problem and uses a numerical reference solution; generalization beyond the trained initial-condition range and to other physical systems remains untested.
+- **Announcement type:** new submission, 2026-11-26 announcement batch
 - **Themes:** Computational & data methods; Cosmology & gravitation
-
-### 6. [Moon Radio Interferometer for Science and Exploration (MoonRISE): A Mission Concept for a Low-Frequency Radio Interferometer on the Lunar Farside](https://arxiv.org/abs/2611.33534)
-- **Abstract:** The authors present MoonRISE, a proposed lunar-farside, all-sky radio interferometer operating from 100 kHz to 30 MHz, with heliophysics, lunar-ionosphere, and planetary-radio science goals.
-- **Authors:** Saptarshi Bandyopadhyay, Marin Anderson, Alexander Hegedus, Kalind Carpenter, Jack Burns, et al.
-- **arXiv:** `2611.33534v1` (published 2026-11-24 23:22:25 UTC; categories: `astro-ph.IM`, `astro-ph.CO`, `astro-ph.EP`, `astro-ph.SR`)
-- **Evidence for ranking:** Collector score 0.75, entirely from 3 cross-lists × 0.25; third by submission time in the retained three-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
-- **Claimed result:** Bandyopadhyay et al. describe a nine-dipole, 1.5-km optical-fibre-tether concept intended to measure type-III burst scattering, the lunar ionosphere, and Uranian kilometric radiation if the mission is realized.
-- **Evidence type:** Forecast/proposal; mission and payload concept, not an operating instrument or observational result.
-- **Caveat:** The proposed science depends on mission selection, deployment, radio-frequency cleanliness, and technology maturity; none is demonstrated by this concept paper.
-- **Announcement type:** new submission, 2026-11-26 batch
-- **Themes:** Astrophysics; Instrumentation & detectors; Plasma & fluid physics
-
-### 7. [Quantum Noise-Limited Terahertz Interferometry for Distinguishing Ultra-Compact Supermassive Galactic Objects](https://arxiv.org/abs/2611.33488)
-- **Abstract:** The authors model whether high-sensitivity terahertz interferometric visibilities could distinguish a Schwarzschild black hole from a JMN-1 naked-singularity model for Sgr A*.
-- **Authors:** Vishwas Patel, Pankaj S. Joshi, Swalih A. Valiyakath, Munn V. Shukla, Mehul R. Pandya
-- **arXiv:** `2611.33488v1` (published 2026-11-24 22:08:54 UTC; categories: `astro-ph.HE`, `astro-ph.IM`, `gr-qc`, `physics.ins-det`)
-- **Evidence for ranking:** Collector score 0.75, entirely from 3 cross-lists × 0.25; fourth by submission time in the retained three-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
-- **Claimed result:** For optically thin spherical accretion onto Sgr A*, Patel et al. calculate separable visibility windows at specified baselines and flux errors, about 28 times below the 2017 EHT statistical uncertainty, and argue that minutes-long coherent integration would be needed.
-- **Evidence type:** Computational; modeled gravitational-lensing images and interferometric visibilities under an accretion and noise model.
-- **Caveat:** The discrimination forecast depends on spherical, optically thin accretion and demanding sensitivity assumptions; it is not an observation of a naked singularity or evidence against an event horizon.
-- **Announcement type:** new submission, 2026-11-26 batch
-- **Themes:** Astrophysics; Cosmology & gravitation; Instrumentation & detectors
-
-### 8. [Infrared-absorption magnetometry in a diamond nanocavity: demonstration and limits at the nanoscale](https://arxiv.org/abs/2611.33481)
-- **Abstract:** The authors demonstrate cavity-enhanced magnetometry by measuring spin-dependent infrared absorption at the NV-centre singlet transition in a spin-dense diamond nanocavity.
-- **Authors:** Nicholas J. Sorensen, Elham Zohari, Chris Coutts, Sean McNaney, Matteo Feder, et al.
-- **arXiv:** `2611.33481v1` (published 2026-11-24 21:58:08 UTC; categories: `quant-ph`, `cond-mat.mes-hall`, `physics.app-ph`, `physics.optics`)
-- **Evidence for ranking:** Collector score 0.75, entirely from 3 cross-lists × 0.25; fifth by submission time in the retained three-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
-- **Claimed result:** Sorensen et al. observe spin-dependent cavity transmission near 1042 nm, demonstrate cavity-enhanced magnetic-field sensing, and experimentally validate a model of the cavity response.
-- **Evidence type:** Experimental; spin-dense diamond nanocavities probing the NV singlet transition, with a validated response model.
-- **Caveat:** This establishes a readout method in the demonstrated nanocavity configuration, not a deployed sensor network or a general sensitivity advantage across all sensor geometries.
-- **Announcement type:** new submission, 2026-11-26 batch
-- **Themes:** Quantum information; Atomic, molecular & optical physics; Instrumentation & detectors
-
-### 9. [Chiral Domain-Wall Modes in Topological Adaptive Quantum Dynamics](https://arxiv.org/abs/2611.33328)
-- **Abstract:** The authors study measurement-and-feedback adaptive circuits and find chiral dynamical topological domain-wall modes with long-time scaling consistent with a chiral free-fermion conformal field theory.
-- **Authors:** Asadullah Bhuiyan, Haining Pan, Chao-Ming Jian
-- **arXiv:** `2611.33328v1` (published 2026-11-24 19:17:32 UTC; categories: `quant-ph`, `cond-mat.dis-nn`, `cond-mat.stat-mech`, `cond-mat.str-el`)
-- **Evidence for ranking:** Collector score 0.75, entirely from 3 cross-lists × 0.25; oldest by submission time in the retained three-cross-list tier. No HF/HN engagement or code-star value was recorded for this candidate.
-- **Claimed result:** Bhuiyan, Pan, and Jian report chiral modes localized at domain walls in a 2+1D charge-conserving free-fermion adaptive-circuit model, with logarithmic entanglement and charge-variance scaling and algebraically decaying density correlations.
-- **Evidence type:** Theoretical; free-fermion circuit model with measurement, feedforward, and quantum-trajectory analysis.
-- **Caveat:** The result is established in a specific free-fermion model; robustness to interactions, hardware noise, and experimental implementation is not shown.
-- **Announcement type:** new submission, 2026-11-26 batch
-- **Themes:** Quantum information; Condensed matter & materials
 
 ## Trending Research Themes
 
-- **Quantum dynamics and usable quantum resources:** The many-body-scar preparation algorithm (2611.33987) and adaptive-circuit domain-wall modes (2611.33328) address coherent control and non-equilibrium structure theoretically, while the diamond-nanocavity study (2611.33481) reports an experimental sensing/readout advance. These are related by quantum control and measurement, not by a shared experimental result.
-- **Instrumentation across very different frequency and scale regimes:** MoonRISE proposes lunar-farside observations below 30 MHz (2611.33534); a separate paper forecasts terahertz interferometric requirements for Sgr A* (2611.33488); the diamond study demonstrates infrared cavity readout at 1042 nm (2611.33481). The first is a mission concept, the second a model-based forecast, and the third a laboratory demonstration—not independent confirmations of one phenomenon.
-- **Sharper mathematical and computational tools:** A quantitative noncollinear spin-DFT bound (2611.34301), a numerical PINN strategy for photon-orbit ODEs (2611.33953), and a proof linking the figure-eight colored Jones expansion to topological recursion (2611.34110) each provide a method or formal guarantee in a distinct setting. The food-web paper (2611.33569) is a further, isolated application of large-deviation methods to rare extinction events.
+- **Formal methods crossing physics boundaries:** The spin-DFT bound (2611.34301) and the figure-eight recursion proof (2611.34110) are mathematical results cross-listed into physics, while the food-web paper (2611.33569) applies large-deviation theory to population dynamics. This is a small shortlist, not a corpus-frequency estimate.
+- **Quantum resources and non-equilibrium structure:** The scar-state preparation algorithm (2611.33987) focuses on efficient preparation of nonergodic states; it remains theoretical, unlike an experimental hardware demonstration.
+- **Scientific computing for long-time or rare-event questions:** PINN-Slicer (2611.33953) targets long-domain ODE integration; the food-web work (2611.33569) derives rare extinction paths and checks a small module by stochastic simulation. The methods address different systems and are not independent confirmation of one phenomenon.
 
 ## Open Problems and Research Directions
 
-- **Open problem (paper-stated):** The spin-DFT error estimate assumes slow variation and a fixed spin axis (2611.34301). **Direction (synthesis):** Benchmark the approximation against established calculations on noncollinear materials, especially where magnetization rotates rapidly or the preferred axis varies.
-- **Open problem (paper-stated):** The topological-recursion proof is for the figure-eight knot; the authors explicitly raise extension to other hyperbolic knots and higher-genus curves (2611.34110). **Direction (synthesis):** Test the quotient-curve construction on hyperbolic twist knots and identify conditions under which recursion descends.
-- **Open problem (paper-stated):** The food-web theory assumes unit conversion efficiency and basal-only self-limitation, while detailed instanton checks are for a three-species module (2611.33569). **Direction (synthesis):** Relax these assumptions and compare predicted extinction-time distributions with stochastic simulations and calibrated ecological interaction data.
-- **Open problem (synthesis):** The scar algorithm and adaptive-circuit modes are theoretical, with no hardware evidence in the abstracts (2611.33987, 2611.33328). **Direction (synthesis):** Estimate gate depth and noise tolerance, then test finite-size scaling and mode lifetimes on programmable quantum simulators.
-- **Open problem (paper-stated):** MoonRISE's proposed science depends on a lunar-farside payload and deployment, and the THz visibility separation requires stringent sensitivity and coherent integration (2611.33534, 2611.33488). **Direction (synthesis):** Validate the instrument/noise assumptions through end-to-end simulations and technology demonstrations, including realistic RFI, non-spherical accretion, and calibration errors.
-- **Open problem (paper-stated):** The diamond paper identifies practical limits among optically detected resonance modalities (2611.33481). **Direction (synthesis):** Compare cavity-enhanced singlet absorption with photoluminescence readout under matched NV density, optical power, bandwidth, and nanoscale sensing conditions.
+- **Open problem (author-stated assumptions):** The spin-DFT error estimate assumes slow variation and a fixed spin axis (2611.34301). **Research direction (synthesis):** benchmark it against established calculations on noncollinear materials where magnetization rotates rapidly or the preferred axis varies.
+- **Open problem (author-stated scope):** The topological-recursion proof is for the figure-eight knot; the paper discusses extension beyond that case (2611.34110). **Research direction (synthesis):** test the construction on other hyperbolic knots and determine when recursion descends to the relevant quotient curve.
+- **Open problem (author-stated model limits):** The food-web theory assumes unit conversion efficiency and basal-only self-limitation; detailed instanton checks cover a three-species module (2611.33569). **Research direction (synthesis):** relax those assumptions and compare extinction-time distributions with stochastic simulations and calibrated interaction data.
+- **Open problem (evidence gap):** The scar algorithm and PINN-Slicer are not demonstrated on physical hardware or across a broad set of systems (2611.33987, 2611.33953). **Research direction (synthesis):** estimate gate-depth/noise tolerance for the quantum algorithm and test PINN-Slicer on additional physical ODEs and out-of-range initial conditions.
 
 ## Takeaway
 
-The batch offers solid theoretical frameworks, algorithmic proposals, a laboratory sensing demonstration, and ambitious observing concepts. Its most useful near-term signal is methodological breadth; the mission and black-hole interferometry claims remain proposals or model-dependent forecasts, not detections.
+The batch combines rigorous mathematical results with algorithmic methods for many-body quantum states, ecological rare events, and relativistic trajectories. The claims are promising but conditional: most need broader model tests, hardware realization, or application to physical systems beyond the proof or benchmark cases.
 
 ## Method and sources
 
-- **Window:** Daily arXiv announcement batch, submissions from 2026-11-24 19:00:00 UTC through 2026-11-25 19:00:00 UTC; announced 2026-11-26 at 01:00 UTC. This is today's batch, not a prior batch. Signal snapshot generated 2026-11-26T03:16:54Z.
-- **Scope and coverage:** Physics group and major physics archives: `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. Recent listings for all 11 archive groups were checked; the candidate pool was the provided signal file (273 arXiv records; 150 candidate records), and each retained paper's arXiv abstract page was checked. The top three full-text HTML versions were also inspected for methods/results and caveats.
-- **Inference:** The signal file reported 0 candidates with external attention. For these selected records, scores consisted only of cross-listing (weight 0.25 per cross-list): 4 cross-lists = 1.00, and 3 = 0.75. HF/HN engagement and code-star signals were not recorded for these candidates; a zero external-attention score is not evidence of low scientific value. Within score tiers, ties were ordered by submission time. This is therefore a notable-paper list, not a measured popularity chart.
-- **Filtering:** The score-1 robotics record `2611.33702` was left out because its full text identifies a prior publication in Proceedings of SPIE 7679 (2010); it is an older work newly present in this batch, not a newly produced result.
-- **Sources:** Provided signal file `/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-26.signals.json` (arXiv collection status ok, 273; Hugging Face ok, 134; Hacker News ok, 15; arXiv lookup ok, 147). Semantic Scholar was unavailable (HTTP 429), so citation totals and influential-citation counts could not be corroborated and were not used. Primary sources: the nine linked arXiv abstract pages; full-text HTML was additionally reviewed for `2611.34301`, `2611.34110`, and `2611.33569`.
+- **Window:** daily; the latest arXiv new-listing page available at the snapshot was dated Thursday, 2026-11-26. Its batch corresponds to the 2026-11-24 19:00:00–2026-11-25 19:00:00 UTC submission window and was announced 2026-11-26 at 01:00 UTC. The current-window signals file covers 2026-11-25 19:00:00–2026-11-26 19:00:00 UTC, with announcement time 2026-11-27 01:00:00 UTC; it had no arXiv candidates, so the prior available batch is used. Snapshot: 2026-11-27 03:22 UTC.
+- **Archive coverage:** checked the new-listing pages for `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`; the latest page date was 2026-11-26. Cross-listed papers were treated as one work.
+- **Signal evidence:** supplied file `/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-27.signals.json` reports `pool_size: 0`, `with_attention: 0`, and an empty `candidates` array. Source statuses/counts are arXiv `ok` (0), Hugging Face `ok` (126), Hacker News `ok` (16), arXiv lookup `ok` (141), and Semantic Scholar `ok` (0). Thus no paper-level score or attention values were available to rank the selected records. A zero score would not mean a paper is unimportant; in this file there are no candidate scores at all. No source is marked `error`.
+- **Selection and verification:** this is an editorial shortlist, not a popularity ordering; selection emphasizes specific physical results, evidence type, model scope, and physics cross-listing. All five arXiv abstract pages and version histories were verified. Full-text HTML for the first three papers was inspected for introduction, methods, results, and caveats. No prior-window trend comparison is made.
+- **Sources:** [arXiv 2611.34301](https://arxiv.org/abs/2611.34301), [2611.34110](https://arxiv.org/abs/2611.34110), [2611.33569](https://arxiv.org/abs/2611.33569), [2611.33987](https://arxiv.org/abs/2611.33987), [2611.33953](https://arxiv.org/abs/2611.33953); listings: [physics](https://arxiv.org/list/physics/new), [astro-ph](https://arxiv.org/list/astro-ph/new), [cond-mat](https://arxiv.org/list/cond-mat/new), [gr-qc](https://arxiv.org/list/gr-qc/new), [hep-ex](https://arxiv.org/list/hep-ex/new), [hep-lat](https://arxiv.org/list/hep-lat/new), [hep-ph](https://arxiv.org/list/hep-ph/new), [hep-th](https://arxiv.org/list/hep-th/new), [nucl-ex](https://arxiv.org/list/nucl-ex/new), [nucl-th](https://arxiv.org/list/nucl-th/new), and [quant-ph](https://arxiv.org/list/quant-ph/new).

@@ -1,110 +1,86 @@
-# arXiv Mathematics — Daily notable papers, 2026-11-26
+# arXiv Mathematics — daily notable papers, Thursday 26 November 2026
 
 ## Headline
 
-The 27 November signal file and current Mathematics listing yielded no populated batch for 27 November, so this report falls back to the latest populated arXiv math announcement batch: Thursday, 26 November 2026. It ranks seven notable new submissions, with mathematical structures being translated into explicit representations, recursions, or quantitative guarantees as the recurring pattern; the spoken agenda moves from knot invariants and food-web extinction to equivariant geometry, algorithms, logic, and selection theory. arXiv has no official trending chart, and this ordering is inferred from sparse cross-listing signals rather than demonstrated readership; citation evidence for these recent papers is limited.
+Five notable new submissions from the latest populated Mathematics announcement batch, Thursday 26 November. The strongest attention signal is one mathematical-physics preprint with a large Hacker News discussion; the other selections report conjecture resolutions or structural results across geometry, algebra, combinatorics, and tensor theory. Spoken agenda: null-cone quantum gravity, finiteness and Bruhat-graph conjectures, then edge-ideal regularity and tensor spectra. arXiv supplies no official trending chart; this ordering is inferred from sparse corroborated attention, and citation evidence for recent papers is limited.
 
 ## Top papers (ranked)
 
-### 1. [Colored Jones polynomial of figure eight knot and non-perturbative topological recursion](https://arxiv.org/abs/2611.34110)
-- **Abstract:** The authors prove that the all-orders asymptotic expansion of the figure-eight knot's colored Jones polynomial is related to non-perturbative topological recursion on its elliptic spectral curve.
-- **Authors:** Alexander Hock, Sergey Shadrin
-- **arXiv:** `2611.34110v1` (published 2026-11-25T10:13:46Z; categories: `math-ph`, `hep-th`, `math.AG`, `math.GT`, `nlin.SI`)
-- **Evidence for ranking:** The collected candidate score is 1.00, entirely from four cross-lists (weight 0.25 each), tied for the highest available score. Its explicit bridge between a knot invariant, an elliptic curve, and topological recursion breaks the tie; no social-attention or citation component was recorded for this paper.
-- **Claimed result:** Theorem 1.1 in the paper identifies the logarithmic differentials of the colored-Jones asymptotic wave function, its recurrence wave function, and a matched non-perturbative recursion wave function to all stable orders.
-- **Assumptions and setting:** The result concerns the figure-eight knot and the specified elliptic spectral curve; the asymptotic expansion is established for `q = exp(x/N)` in a stated local domain and on a chosen branch.
-- **Caveat:** The comparison is local and asymptotic, with analytic domains requiring care; the paper does not establish the result for general knots.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Geometry & topology; Mathematical physics
+### 1. [An algebraic quantization of gravity from the null cone](https://arxiv.org/abs/2611.34924)
+- **Abstract:** The author develops a background-independent quantization of four-dimensional Lorentzian vacuum general relativity on intersecting null cones, reporting finite causal-diamond state spaces, black-hole entropy corrections, and one-loop semiclassical equations.
+- **Authors:** Venkatesa Chandrasekaran
+- **arXiv:** `2611.34924v1` (published 2026-11-25T18:58:55Z; categories: `hep-th`, `gr-qc`, `math-ph`)
+- **Evidence for ranking:** One Hacker News story had 265 points and 119 comments at the snapshot (https://news.ycombinator.com/item?id=50651863); the paper is cross-listed in mathematical physics. It was the only recovered mathematical candidate with a direct HF/HN attention match.
+- **Claimed result:** The author's abstract claims a nonperturbative null-cone quantization with absolutely convergent intermediate-state sums, a finite-dimensional Hilbert space for a macroscopic causal diamond, the Bekenstein–Hawking entropy and its logarithmic correction for marginally trapped surfaces, and one-loop semiclassical Einstein equations.
+- **Assumptions and setting:** Vacuum general relativity on four-dimensional Lorentzian spacetimes, using intersecting null cones and the author's specified algebra of observables and boundary states.
+- **Caveat:** These are model-dependent preprint claims; the derivation and physical interpretation of the entropy and finite-state conclusions have not been independently assessed here.
+- **Announcement type:** new submission, 2026-11-26 announcement-batch date
+- **Themes:** Mathematical physics
 
-### 2. [Noise-induced Extinction in Hierarchical Food Webs](https://arxiv.org/abs/2611.33569)
-- **Abstract:** For hierarchical food webs with omnivory, the authors develop a large-deviation account of demographic-noise-driven extinction networks and derive recursive formulas for mean extinction times.
-- **Authors:** Varun Nevash, Eric Forgoston, M. Ani Hsieh
-- **arXiv:** `2611.33569v1` (published 2026-11-25T00:32:11Z; categories: `q-bio.PE`, `cond-mat.stat-mech`, `math.DS`, `math.PR`, `nlin.AO`)
-- **Evidence for ranking:** The collected candidate score is 1.00 from four cross-lists, tied for the highest available score; dynamical systems and probability are among the mathematical cross-lists. The general-N extinction-network result and worked three-species analysis place it second among the tied top-score entries. No social-attention or citation component was recorded.
-- **Claimed result:** Under the stated model, the authors classify feasible communities and their stability, obtain closed-form fluctuational fixed points, and derive an exact recursion for mean extinction times over a network with `3^(N-1)` transitions; for three species they compute instanton actions numerically and compare routes with stochastic simulations.
-- **Assumptions and setting:** The model has a basal reproducing species, consumers may prey on all species below them, conversion efficiency is one, and self-limitation acts only on the basal species; the general-N analysis also restricts parameters to fixed-point attractors and assumes feasibility of the candidate fixed points.
-- **Caveat:** For general N the authors do not rule out non-stationary attractors on the invariant set they identify, and the worked three-species instanton actions are numerical rather than closed-form.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Probability & statistics; Mathematical physics
+### 2. [The Transverse Finiteness Conjecture for pseudo-Anosov flows via universal circles](https://arxiv.org/abs/2611.33320)
+- **Abstract:** The authors prove Mosher's conjecture that a taut finite-depth foliation of an atoroidal 3-manifold is almost transverse, up to orbit equivalence, to only finitely many pseudo-Anosov flows.
+- **Authors:** Michael P. Landry, Samuel J. Taylor
+- **arXiv:** `2611.33320v1` (published 2026-11-24T19:07:54Z; categories: `math.GT`, `math.DS`)
+- **Evidence for ranking:** No HF upvote or HN story matched this paper in the recovered batch. It is selected for resolving a conjecture posed in 1996 and for a second rigidity result linking geometric topology and dynamical systems.
+- **Claimed result:** The abstract and introduction state that universal circles yield finiteness up to orbit equivalence; for a finite-depth foliation almost transverse to a pseudo-Anosov flow without perfect fits, that flow is unique up to orbit equivalence.
+- **Assumptions and setting:** The finiteness theorem assumes a closed, oriented, atoroidal 3-manifold and a taut finite-depth foliation; uniqueness additionally assumes a flow without perfect fits.
+- **Caveat:** The theorem does not cover arbitrary 3-manifolds or foliations of unrestricted depth; the universal-circle argument depends on the stated hypotheses.
+- **Announcement type:** new submission, 2026-11-26 announcement-batch date
+- **Themes:** Geometry & topology
 
-### 3. [Equivariant K-homology of affine Grassmannians of orthogonal groups](https://arxiv.org/abs/2611.34174)
-- **Abstract:** The authors construct symmetric-function models for torus-equivariant K-homology of affine Grassmannians in types B and D, representing Schubert structure-sheaf and boundary ideal-sheaf classes.
-- **Authors:** Koushik Brahma, Takeshi Ikeda, Mark Shimozono
-- **arXiv:** `2611.34174v1` (published 2026-11-25T11:03:51Z; categories: `math.AG`, `math.CO`, `math.KT`, `math.RT`)
-- **Evidence for ranking:** The collected candidate score is 0.75 from three cross-lists (weight 0.25 each); this is the strongest score tier below the two four-cross-list papers. The explicit type-B/D realization and identified Schubert classes distinguish it within that tier; no social-attention or citation component was recorded.
-- **Claimed result:** Theorem 5.2 identifies the torus-equivariant K-homology algebra in types B and D with an algebra of constructed symmetric functions, matching Schubert structure sheaves and boundary ideal sheaves to explicit elements.
-- **Assumptions and setting:** The construction is for torus-equivariant K-homology of affine Grassmannians of orthogonal types B and D, retaining the equivariant parameters.
-- **Caveat:** In type D, specializing the equivariant parameters to zero identifies distinct Schubert classes; the authors conjecture a description of the resulting kernel rather than proving it.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Geometry & topology; Algebra & number theory
+### 3. [Reflection subgroups and the Lookup Conjecture](https://arxiv.org/abs/2611.33572)
+- **Abstract:** The authors prove the Bruhat-graph Lookup Conjecture for rational smoothness of Schubert varieties, its affine type-A extension, and a parabolic version for the type-A affine Grassmannian.
+- **Authors:** Christian Gaetz, Yibo Gao
+- **arXiv:** `2611.33572v1` (published 2026-11-25T00:36:04Z; categories: `math.CO`, `math.AG`, `math.RT`)
+- **Evidence for ranking:** No HF/HN attention match was found. The placement reflects two conjecture-level results and a parabolic strengthening, with cross-listing across combinatorics, algebraic geometry, and representation theory.
+- **Claimed result:** The authors' abstract states that they prove the original Lookup Conjecture and its extension to affine type `A~n`; the introduction gives a degree-monotonicity criterion for parabolic Bruhat graphs in the type-A affine Grassmannian.
+- **Assumptions and setting:** The original statement concerns Schubert varieties for complex reductive groups; the extension is for affine Kac–Moody type `A~n`, with the parabolic result specialized to the type-A affine Grassmannian.
+- **Caveat:** The paper says broader Kac–Moody applications require checking rank-three reflection subgroups; the affine extension established here is type `A~n`.
+- **Announcement type:** new submission, 2026-11-26 announcement-batch date
+- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
 
-### 4. [Fast Algorithms for Permanents of Permutationally-Dominant Matrices](https://arxiv.org/abs/2611.33485)
-- **Abstract:** The authors give a fully polynomial randomized approximation scheme for permanents of permutationally-dominant matrices, using a polymer representation and importance sampling.
-- **Authors:** Ryan L. Mann
-- **arXiv:** `2611.33485v1` (published 2026-11-24T22:02:54Z; categories: `cs.DS`, `cs.CC`, `cs.DM`, `math.CO`)
-- **Evidence for ranking:** The collected candidate score is 0.75 from three cross-lists, including discrete mathematics; the explicit approximation guarantee makes it a strong algorithmic result in this score tier. No social-attention or citation component was recorded.
-- **Claimed result:** The abstract claims an FPRAS with runtime quadratic in both matrix dimension and inverse approximation error, using a polymer-model representation and importance sampling of the logarithm of its partition function.
-- **Assumptions and setting:** The guarantee applies to the paper's class of permutationally-dominant matrices.
-- **Caveat:** The stated runtime is restricted to that matrix class; the abstract does not claim a fast approximation scheme for arbitrary permanents.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Combinatorics & discrete mathematics; Numerical analysis & computation
+### 4. [A proof of the Nevo-Peeva conjecture: Exact regularity and linear powers of gap-free edge ideals](https://arxiv.org/abs/2611.33501)
+- **Abstract:** For every finite simple gap-free graph and every field, the author proves an exact formula for the regularity of every ordinary power of its edge ideal, resolving two conjectured properties of those powers.
+- **Authors:** Luis Alfredo Dupont García
+- **arXiv:** `2611.33501v1` (published 2026-11-24T22:22:05Z; categories: `math.AC`, `math.CO`)
+- **Evidence for ranking:** No HF/HN attention match was found. The result resolves both Nevo–Peeva questions in the stated graph class and bridges commutative algebra with graph combinatorics.
+- **Claimed result:** The abstract claims `reg I(G)^q = max{2q, reg I(G)+q−1}` for all `q ≥ 1` when `G` is gap-free, yielding the exact linear-resolution threshold and the proposed regularity recurrence.
+- **Assumptions and setting:** `G` is a finite simple graph with at least one edge, `I(G)` its edge ideal over a field `K`, and the formula assumes `G` is gap-free.
+- **Caveat:** The theorem is restricted to gap-free graphs; it is not a formula for powers of edge ideals of arbitrary graphs.
+- **Announcement type:** new submission, 2026-11-26 announcement-batch date
+- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
 
-### 5. [Higher-Dimensional Automata in Geometric Logic](https://arxiv.org/abs/2611.33838)
-- **Abstract:** The authors encode partial higher-dimensional automata and their infinite runs in geometric logic, showing that the resulting label topos can distinguish machines with the same Büchi language and frame.
-- **Authors:** Kenan Oggad
-- **arXiv:** `2611.33838v1` (published 2026-11-25T06:07:06Z; categories: `cs.LO`, `cs.FL`, `math.CT`, `math.LO`)
-- **Evidence for ranking:** The collected candidate score is 0.75 from three cross-lists, including category theory and logic; the paper gives concrete separation examples and equivalence criteria. No social-attention or citation component was recorded.
-- **Claimed result:** For finite rigid machines over alphabets with decidable equality, the authors characterize unambiguity by inclusion of locale label maps and show that equivalence over the label topos is decidable when either machine is unambiguous.
-- **Assumptions and setting:** The framework uses partial higher-dimensional automata, geometric theories over an intuitionistic metatheory, and results conditioned on unique choice or decidable equality where stated.
-- **Caveat:** The decidability and acceptance-equivalence statements have explicit logical and finiteness hypotheses; the work does not provide an unrestricted equivalence test for all automata.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Logic & foundations; Combinatorics & discrete mathematics
-
-### 6. [Prophet Inequalities for Mixtures of I.I.D. Random Variables](https://arxiv.org/abs/2611.34264)
-- **Abstract:** In a sequential selection problem with an unknown latent component governing conditionally i.i.d. nonnegative observations, the authors determine the best worst-case prophet-inequality factor as `1/e + 1/k^(2/3+o(1))`.
-- **Authors:** Felix Fischer, Kevin Schewior
-- **arXiv:** `2611.34264v1` (published 2026-11-25T12:26:10Z; categories: `math.ST`, `cs.DS`, `math.OC`)
-- **Evidence for ranking:** The collected candidate score is 0.50 from two cross-lists (weight 0.25 each), spanning algorithms and optimization alongside statistics. The matching upper and lower guarantee with an explicit asymptotic factor distinguishes it in this score tier; no social-attention or citation component was recorded.
-- **Claimed result:** The authors prove that the largest universally guaranteed fraction of the expected maximum is `1/e + 1/k^(2/3+o(1))`, with a secretary-rule lower bound and a common-scale-model upper-bound construction.
-- **Assumptions and setting:** A latent index is drawn from a known prior over `k` component distributions; conditional on it, observations are i.i.d. from a known nonnegative distribution, while the index itself is not observed, and the expected maximum is finite.
-- **Caveat:** The correction is asymptotic in the number of mixture components; the abstract does not give a simple exact finite-k guarantee.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Probability & statistics; Combinatorics & discrete mathematics; Optimization & control
-
-### 7. [The Kalton--Peck space disproves Rubio de Francia's conjecture](https://arxiv.org/abs/2611.33556)
-- **Abstract:** The authors show that the complex Kalton--Peck space `Z_2` is UMD but cannot be realized as a complex interpolation space between any UMD Banach space and a Hilbert space, giving a counterexample to Rubio de Francia's conjecture.
-- **Authors:** Veli Shakhmurov, Rishad Shahmurov
-- **arXiv:** `2611.33556v1` (published 2026-11-25T00:06:36Z; categories: `math.FA`, `math.AP`)
-- **Evidence for ranking:** The collected candidate score is 0.25 from one cross-list into analysis of PDEs, below the multi-cross-list tiers. It is included for the abstract's direct counterexample to a named conjecture, not as a popularity signal; no social-attention or citation component was recorded.
-- **Claimed result:** The authors prove that `Z_2` is not isomorphic to `[X,H]_θ` for any UMD Banach space X, Hilbert space H, and `0 < θ < 1`, and give a quotient-of-a-closed-subspace realization for each fixed interpolation parameter below one.
-- **Assumptions and setting:** The result concerns the classical complex Kalton--Peck space and complex interpolation between a UMD space and a Hilbert space.
-- **Caveat:** This is a counterexample to the stated interpolation conjecture, not a classification of all intermediate UMD spaces.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Analysis & PDE
+### 5. [The asymptotic spectrum of tensors is connected](https://arxiv.org/abs/2611.34664)
+- **Abstract:** For complex tensors of every fixed order `k ≥ 3`, the authors prove path-connectedness of the asymptotic spectrum and conclude that its values at any fixed tensor form a closed interval.
+- **Authors:** Péter Vrana, Jeroen Zuiddam
+- **arXiv:** `2611.34664v1` (published 2026-11-25T16:35:00Z; categories: `cs.CC`, `math.RT`, `quant-ph`)
+- **Evidence for ranking:** No HF/HN attention match was found. The authors answer a question of Strassen and give an interpolation method with stated applications beyond tensors; the mathematical contribution is cross-listed with representation theory.
+- **Claimed result:** The abstract claims every spectral point connects by a path to a one-leg-versus-rest flattening rank, making the asymptotic spectrum at a fixed tensor a closed interval and answering Strassen's question.
+- **Assumptions and setting:** The main theorem concerns complex tensors of fixed order `k ≥ 3`; the broader interpolation method applies to Strassen semirings satisfying the paper's decomposability and cover-property conditions.
+- **Caveat:** The wider method is conditional on those structural properties; the abstract does not assert that every asymptotic problem or semiring satisfies them.
+- **Announcement type:** new submission, 2026-11-26 announcement-batch date
+- **Themes:** Algebra & number theory; Combinatorics & discrete mathematics
 
 ## Trending Research Themes
 
-- Several papers make a mathematical object more explicit through a representation that supports further calculation: the figure-eight colored-Jones asymptotics and topological recursion (2611.34110), symmetric functions for affine-Grassmannian K-homology (2611.34174), and polymer-model sampling for restricted permanents (2611.33485). These are distinct constructions, not one shared method.
-- Two papers give quantitative accounts of stochastic behavior under structured assumptions: large-deviation extinction networks for hierarchical food webs (2611.33569) and worst-case sequential selection in latent mixtures (2611.34264). Their methods differ—WKB/large deviations versus online selection—but both expose how model structure controls long-run or guaranteed outcomes.
-- Logic and analysis appear as bounded classification results rather than a common field-wide shift: higher-dimensional automata are distinguished using a label topos under stated logical assumptions (2611.33838), while a specific Banach space supplies a counterexample to an interpolation conjecture (2611.33556).
+- **Conjecture resolution:** The selected papers prove a 1996 finiteness conjecture for pseudo-Anosov flows (2611.33320), the Lookup Conjecture for Schubert varieties (2611.33572), and Nevo–Peeva regularity statements for gap-free graphs (2611.33501). These are distinct results across topology, algebra, and combinatorics—not evidence of an archive-wide shift.
+- **Combinatorial structure as a bridge:** Reflection-subgroup/Bruhat-graph arguments connect to Schubert geometry (2611.33572); graph structure controls edge-ideal regularity (2611.33501); tensor spectra connect to representation theory and complexity (2611.34664). The common thread is turning structure into criteria or invariants, not a shared technique.
+- **Isolated attention signal:** The null-cone quantization paper (2611.34924) accounts for the only direct HF/HN match in the recovered mathematical pool (HN 265 points, 119 comments). This is an isolated paper-level signal, not a field trend.
 
 ## Open Problems and Research Directions
 
-- **Author-stated boundary and proposed direction:** The topological-recursion comparison is proved for the figure-eight knot (2611.34110). Extending the matched-wave-function analysis to other knots with comparable spectral curves would test which parts depend on this example.
-- **Author-stated open point:** For general food webs, the authors do not rule out non-stationary attractors on the invariant set where the basal species is at equilibrium (2611.33569). Characterizing those regimes and adapting extinction-time analysis when attractors are not fixed points would extend the current framework.
-- **Author-stated conjecture:** In type D, the authors conjecture that the kernel after forgetting equivariant parameters is generated by differences of the twin Pieri-factor Schubert classes (2611.34174). Establishing or refuting that description would clarify what survives in non-equivariant K-homology.
-- **Scope extension (synthesis):** The FPRAS is restricted to permutationally-dominant matrices (2611.33485). Identifying nearby matrix classes where the polymer representation still gives polynomial mixing and approximation bounds is a concrete test of the algorithm's reach.
-- **Scope extension (synthesis):** The automata results use unique choice or decidable-equality hypotheses in key statements (2611.33838). Determining which hypotheses can be weakened while retaining the separation and decidability results is a natural logical boundary question.
+- **Author-stated extension:** The authors of 2611.33572 say their method may extend to broader Kac–Moody groups after checking rank-three reflection subgroups. Carrying out those checks beyond affine type `A` would test the proposed scope.
+- **Method boundary (synthesis):** The interpolation result for tensor spectra (2611.34664) relies on decomposability and a cover property. Identify further asymptotic problems whose semirings satisfy both conditions, then test whether the closed-interval conclusion persists.
+- **Setting boundary (synthesis):** The null-cone construction (2611.34924) is presented for four-dimensional vacuum gravity. Examining which steps survive with matter fields or in other spacetime dimensions would probe the boundary of the claimed framework.
+- **Graph-class boundary (synthesis):** The exact regularity formula in 2611.33501 assumes gap-free graphs. Testing weaker graph conditions is a concrete route to determine how far the recurrence extends.
 
 ## Takeaway
 
-The clearest shared pattern in this batch is the conversion of structure into explicit representations or quantitative guarantees, with cross-listing spanning mathematical physics, geometry, discrete mathematics, probability, and logic. The ordering should be read as a thin-signal triage: the available candidate scores were entirely driven by cross-list counts, not measured readership or citation gains.
+Only one paper in this batch had a clear external-attention signal; the others are better described as notable theorem-driven work than as measured popularity leaders. Several resolve named conjectures or sharpen structural statements, but independent proof review and broader per-paper attention coverage would be needed to say more about what is genuinely trending.
 
 ## Method and sources
 
-- **Window and batch:** The requested daily signals file for 27 November reports an empty arXiv candidate pool (`pool_size: 0`, `with_attention: 0`, `candidates: []`). The latest populated Mathematics announcement listing was Thursday, 26 November 2026, so this report uses that prior batch: first-submission window 2026-11-24T19:00:00Z through 2026-11-25T19:00:00Z; announcement at 2026-11-26T01:00:00Z. Snapshot time: 2026-11-27T03:17:53Z. The recent listing showed 441 entries for the 26 November batch; the selected seven are new submissions, not revisions.
-- **Scope:** arXiv Mathematics (`math.*`) is the core archive; neighboring categories are included only for papers cross-listed in mathematical categories or with a central mathematical contribution. The chosen entries preserve their arXiv primary and cross-list categories.
-- **Signals and ranking:** The 26 November signal file reports 224 arXiv records and `pool_size: 224`, with 150 scored candidate records serialized and `with_attention: 0`. The seven selections are all among those listed candidates. The collector's weights are HF upvotes 3.0, HN points 1.5, HN comments 1.0, citations 2.0, influential citations 1.0, code stars 0.5, and cross-lists 0.25; its saved score components for these papers were cross-lists only (scores 1.00, 1.00, 0.75, 0.75, 0.75, 0.50, and 0.25 respectively). HF and Hacker News collection sources were available, but no selected paper had their attention signals attached. A zero score or empty current-day pool is not evidence of unimportance. The 27 November file itself has no candidate-specific scores, so the prior populated batch's candidate file supplies the ranked evidence here.
-- **Unavailable evidence:** Semantic Scholar was unavailable for the selected batch's signal run (the collector returned an HTTP 400), so citation and influential-citation signals could not be used. The current 27 November file reports Semantic Scholar status `ok` with count 0, but likewise has no candidates to which values could be attached. The configured `web_extract` backend was search-only, so the selected arXiv primary pages were verified in the browser; the introductions and main-result statements of the top three were also inspected there. No proofs were independently checked.
-- **Sources:** arXiv Mathematics recent listing: https://arxiv.org/list/math/recent. Selected primary abstract pages are linked in each entry. Signal files: `/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-27.signals.json` and `/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-26.signals.json`.
+- **Window and snapshot:** The latest populated `math/recent` listing available at `2026-11-28T03:22:36Z` displayed `Thu, 26 Nov 2026 (showing 441 of 441 entries)`, followed by the 25 November batch. This report uses the prior batch dated 26 November: submission window `[2026-11-24T19:00:00Z, 2026-11-25T19:00:00Z)`, announced `2026-11-26T01:00:00Z`; `uses_prior_batch: true`. The arXiv recent page and all five selected abstract pages were checked; full arXiv HTML for the top three was inspected for introductions and result statements. Proofs were not independently verified.
+- **Supplied attention file:** `/home/yizhuan/.research/math/daily/arxiv-trending-math-daily-2026-11-27.signals.json` (generated `2026-11-28T03:17:07Z`) reported `pool_size: 0`, `candidates: 0`; source counts were arXiv 0, Hugging Face 141, Hacker News 23, arXiv lookup 163, Semantic Scholar 0. Its stored window was 25–26 November and it supplied no paper-level scores for the 26 November listing batch.
+- **Recovery and ranking:** The primary arXiv recent page showed all 441 entries for 26 November. I joined arXiv metadata to that batch, retaining 392 entries with a mathematical category or `math-ph` in the actual submission window. Re-collecting HF (24–27 November) and HN (from 24 November 19:00Z through the snapshot) yielded 214 HF source records and 33 HN source records; among those 392 candidates, one matched HN (2611.34924: 265 points, 119 comments) and none matched HF. Semantic Scholar returned zero records, so citation totals and momentum were not used. The first item is placed by HN evidence; the remaining order is a qualitative notable-paper selection based on explicit results, hypotheses, and cross-subfield relevance—not measured popularity. A zero or absent attention match is not evidence that a paper is unimportant.
+- **Sources:** arXiv recent listing `https://arxiv.org/list/math/recent`; selected canonical arXiv abstract pages linked above; arXiv HTML versions for the first three entries; Hacker News discussion `https://news.ycombinator.com/item?id=50651863`; deterministic signals sidecar cited above.

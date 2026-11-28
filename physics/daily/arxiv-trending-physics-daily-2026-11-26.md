@@ -1,85 +1,123 @@
-# arXiv physics daily — 26 November 2026 announcement batch
+# Physics on arXiv — 26 November 2026
 
-Five notable papers from the latest available arXiv Physics batch span mathematical physics, quantum many-body dynamics, stochastic ecology, and computational relativity. Brief agenda: a spin-DFT error bound, a knot-theory/topological-recursion proof, demographic extinction, quantum-scar preparation, and a PINN method for photon orbits. This is an editorial shortlist, not a measured popularity ranking: arXiv has no official trending chart, the supplied current-window signals contain no candidate-level scores, and very recent papers have limited citation evidence.
+Eight notable recent papers from the latest available announcement batch, spanning quantum hardware and information, lattice methods, cosmological inference, satellite galaxies, neutrino phenomenology, and heavy-ion measurements. The leading pattern is tighter empirical or computational tests of difficult signals: hardware witnesses, replica-exchange efficiency, multi-probe cosmology, and complementary collision systems. Spoken agenda: what was actually measured, what remains a forecast or mathematical result, and which follow-ups would sharpen the claims. Global caveat: arXiv supplies no official trending chart; this ordering is inferred from the papers' concrete results and cross-field relevance, while citation evidence for this very recent batch is limited.
+
+The provided attention-signal file targets the 27 November batch but contains no candidates. The most recent batch visible across the arXiv archive listings is dated 26 November, so this report uses that prior batch and labels the papers “notable recent” rather than treating them as measured popularity leaders.
 
 ## Top papers (ranked)
 
-### 1. [The transverse spin-gradient approximation in noncollinear spin density functional theory](https://arxiv.org/abs/2611.34301)
-- **Abstract:** The authors prove a quantitative error bound for a fixed-axis transverse spin-gradient approximation to noncollinear spin density functional theory using a spin-spiral reference.
-- **Authors:** Mihály A. Csirik
-- **arXiv:** `2611.34301v1` (published 2026-11-25 12:53:36 UTC; categories: `math-ph`, `cond-mat.mtrl-sci`, `cond-mat.quant-gas`, `cond-mat.stat-mech`, `quant-ph`)
-- **Evidence for ranking:** No candidate score was present in the supplied signal file; included for a rigorous quantitative bound and cross-listing across mathematical physics, condensed matter, and quantum physics.
-- **Claimed result:** Csirik proves an O(N^(5/6)) error for an energy of order N under stated slow-variation and regularity assumptions, and recovers the noncollinear local spin-density approximation when the spiral phase is set to zero.
-- **Evidence type:** Theoretical; an analytic bound for the thermodynamic-limit electron gas with a spin-spiral-wave local reference.
-- **Caveat:** The bound is for a fixed-axis variant and depends on smooth, slowly varying rotating-frame density and local wavevector; it is not an empirical accuracy benchmark for general materials.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Condensed matter & materials
+### 1. [Experimental Quantum Hardware Benchmarks of Flat Non-Clifford Hypergraph States, Antipodal Obstructions, and Nonlocal Games on IBM Heron r2](https://arxiv.org/abs/2611.34683)
+- **Abstract:** The authors test non-Clifford hypergraph-state structure and contextuality-style games on two IBM Heron r2 processors, reporting hardware benchmarks across 3–50 qubits.
+- **Authors:** Filipe Martins Vono, Valéria Gonzaga Santos, André Oliveira Naufel de Toledo
+- **arXiv:** `2611.34683v1` (published 2026-11-25 16:45:22 UTC; categories: `quant-ph`)
+- **Evidence for ranking:** No per-paper attention values were present in the supplied signal file; it had no candidate records. Included for direct hardware evidence across two processors, auditable jobs, and a connection between non-Clifford witnesses and quantum nonlocality tests.
+- **Claimed result:** The authors report non-Clifford coherence and multiple game/witness violations on IBM Heron r2, including a 96.85% raw Mermin–Peres win rate on one backend and parity-game violations up to 30 qubits.
+- **Evidence type:** experimental; 11 IBM Heron r2 jobs on `ibm_fez` and `ibm_kingston`, using 4,096 shots per circuit.
+- **Caveat:** The authors say the single-chip runs do not close the relativistic locality loophole; finite shots and routing/depth limitations constrain some higher-qubit tests.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Quantum information; Instrumentation & detectors
 
-### 2. [Colored Jones polynomial of figure eight knot and non-perturbative topological recursion](https://arxiv.org/abs/2611.34110)
-- **Abstract:** The authors prove that the asymptotic expansion of the figure-eight knot's colored Jones polynomial is connected to non-perturbative topological recursion on its elliptic spectral curve.
-- **Authors:** Alexander Hock, Sergey Shadrin
-- **arXiv:** `2611.34110v1` (published 2026-11-25 10:13:46 UTC; categories: `math-ph`, `hep-th`, `math.AG`, `math.GT`, `nlin.SI`)
-- **Evidence for ranking:** No candidate score was present; included for a detailed proof linking a knot invariant to topological recursion and cross-listing into high-energy theory and mathematical physics.
-- **Claimed result:** Hock and Shadrin identify the asymptotic Jones-polynomial wave function with recurrence and normalized non-perturbative wave functions for the figure-eight-knot spectral curve, proving the proposed connection in this case.
-- **Evidence type:** Theoretical; analysis of the colored-Jones recurrence, spectral curve, and topological-recursion equations.
-- **Caveat:** The proof is specific to the figure-eight knot and the colored Jones polynomial; extension to other knots is a follow-up question, not established here.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Particle, nuclear & high-energy physics
+### 2. [Unfreezing topology using out-of-equilibrium replica exchanges](https://arxiv.org/abs/2611.34367)
+- **Abstract:** The authors introduce a gradual, out-of-equilibrium replica-exchange method for mitigating topological freezing and test it in a two-dimensional CP^{N−1} lattice model.
+- **Authors:** Claudio Bonanno, Andrea Bulgarelli, Elia Cellini, Raffaele Dionisio, Andrea Nada et al.
+- **arXiv:** `2611.34367v1` (published 2026-11-25 13:30:59 UTC; categories: `hep-lat`, `cond-mat.stat-mech`)
+- **Evidence for ranking:** No per-paper attention values were available in the supplied signal file. Cross-listed between lattice field theory and statistical mechanics, the work derives an acceptance/cost model and checks it against simulations rather than presenting only a proposed algorithm.
+- **Claimed result:** For the tested N=21 model, authors report at least about 40% lower computational cost at fixed statistical precision than standard parallel tempering on boundary conditions, across five lattice spacings.
+- **Evidence type:** computational; simulations of the two-dimensional CP^{N−1} model with N=21, compared with standard replica exchange.
+- **Caveat:** The quantitative demonstration is restricted to this model and setup; the paper frames extension to four-dimensional gauge theories as future work.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Particle, nuclear & high-energy physics; Computational & data methods
 
-### 3. [Noise-induced Extinction in Hierarchical Food Webs](https://arxiv.org/abs/2611.33569)
-- **Abstract:** The authors develop a large-deviation account of demographic-noise-driven extinctions in hierarchical food webs, deriving an extinction network and recursion for mean extinction times.
-- **Authors:** Varun Nevash, Eric Forgoston, M. Ani Hsieh
-- **arXiv:** `2611.33569v1` (published 2026-11-25 00:32:11 UTC; categories: `q-bio.PE`, `cond-mat.stat-mech`, `math.DS`, `math.PR`, `nlin.AO`)
-- **Evidence for ranking:** No candidate score was present; included for its explicit large-deviation treatment of rare events, cross-listing with statistical mechanics, and stochastic simulation check of the three-species example.
-- **Claimed result:** Under unit conversion efficiency and self-limitation only at the basal species, the authors show coexistence is the sole stable mean-field state and derive a 3^(N−1)-transition extinction network; the three-species instanton route is checked against stochastic simulations.
-- **Evidence type:** Theoretical and computational; WKB analysis of the master equation, numerical instantons for a three-species omnivory model, and stochastic simulations.
-- **Caveat:** General results rely on an idealized hierarchical interaction structure and restrictive ecological assumptions; direct simulation checks cover the three-species example, not arbitrary food webs.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Biophysics & soft matter
+### 3. [Bound Entanglement with Negative Partial Transpose Exists](https://arxiv.org/abs/2611.34921)
+- **Abstract:** The author gives an explicit Werner state on C^8 ⊗ C^8 that is negative under partial transpose yet nondistillable by LOCC, with a further fidelity bound under separable operations.
+- **Authors:** Islam Faisal
+- **arXiv:** `2611.34921v1` (published 2026-11-25 18:58:48 UTC; categories: `quant-ph`, `cond-mat.other`, `cs.CC`, `cs.IT`)
+- **Evidence for ranking:** No per-paper attention values were emitted for this item. Its four-way cross-list and explicit finite-dimensional theorem make it a concrete connection across quantum information, condensed matter, complexity, and information theory.
+- **Claimed result:** The author proves that the specified state is NPT and bound entangled, and that separable operations cannot produce a two-qubit Bell-state fidelity above (1+√2)/4 ≈ 0.604.
+- **Evidence type:** theoretical; exact analysis of a specified 8×8 Werner state, with a computer-assisted search used to find a proof certificate that the paper then checks exactly.
+- **Caveat:** This is a mathematical existence result for a particular state, not an experimental preparation or a general classification of NPT states.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Quantum information
 
-### 4. [Unified preparation of exact and asymptotic quantum many-body scars from Dicke states](https://arxiv.org/abs/2611.33987)
-- **Abstract:** The authors propose a unified algorithm that prepares exact and asymptotic quantum many-body scar states by mapping them to Dicke states and ferromagnetic-chain magnons.
-- **Authors:** Yuki Asari, Masaya Kunimi, Tetsuro Nikuni
-- **arXiv:** `2611.33987v1` (published 2026-11-25 08:44:47 UTC; categories: `quant-ph`, `cond-mat.quant-gas`, `cond-mat.stat-mech`, `cond-mat.str-el`)
-- **Evidence for ranking:** No candidate score was present; included for a concrete state-preparation algorithm and resource argument connecting quantum information with condensed-matter scar models.
-- **Claimed result:** Asari, Kunimi, and Nikuni show that at fixed target fidelity the block-encoding success probability has a positive lower bound independent of system size and scar index, so only a constant number of amplitude-amplification rounds is needed.
-- **Evidence type:** Theoretical; quantum-algorithm construction and resource analysis for three scar models.
-- **Caveat:** This is an algorithmic proposal for idealized programmable simulators; the abstract does not demonstrate preparation on hardware or quantify noise and gate costs.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Quantum information; Condensed matter & materials
+### 4. [Probing Dynamical Dark Energy with Hyper Suprime-Cam Year 3 Cosmic Shear](https://arxiv.org/abs/2611.34650)
+- **Abstract:** The authors combine HSC Year 3 cosmic shear with distance probes to test constant and time-varying dark-energy models, finding a 2.4σ preference for evolution in the latter parameterization.
+- **Authors:** Shreya Mukherjee, Surhud More
+- **arXiv:** `2611.34650v1` (published 2026-11-25 16:25:50 UTC; categories: `astro-ph.CO`)
+- **Evidence for ranking:** No per-paper attention record was available. Included for a reported measurement using over 25 million galaxies across 416 deg² and an explicit comparison of weak-lensing constraints with external distance data.
+- **Claimed result:** In the authors' joint w0waCDM analysis, w0=−0.832^{+0.071}_{−0.059} and wa=−1.23^{+0.66}_{−0.44}, a 2.4σ preference for dynamical dark energy; the reported S8 constraint remains consistent with their baseline HSC ΛCDM result.
+- **Evidence type:** observational; HSC-Y3 real-space cosmic-shear correlations with DESI DR2 BAO, DES five-year supernova data, and BBN priors.
+- **Caveat:** The authors say the dynamical-dark-energy preference is driven primarily by the geometric distance probes, not by the lensing amplitude alone; it is not a discovery-level result.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Cosmology & gravitation
 
-### 5. [PINN-Slicer: Exploiting Rotational Symmetry to Solve the Photon Orbit Equation Around a Black Hole](https://arxiv.org/abs/2611.33953)
-- **Abstract:** The authors introduce a slice-by-slice physics-informed neural-network method for long-domain autonomous ODEs and demonstrate it on the photon-orbit equation around a black hole.
-- **Authors:** Claire David, Tlotlo Oepeng, Harrison B. Prosper
-- **arXiv:** `2611.33953v1` (published 2026-11-25 08:13:49 UTC; categories: `cs.CL`, `astro-ph.IM`, `gr-qc`, `physics.comp-ph`)
-- **Evidence for ranking:** No candidate score was present; included for a quantified numerical benchmark, code availability noted on the arXiv record, and cross-listing into general relativity and computational physics.
-- **Claimed result:** David, Oepeng, and Prosper report pointwise RMSE below 10^-3 in inverse radius relative to a finite-difference reference, with one trained network generalizing across initial conditions in its training range.
-- **Evidence type:** Computational; a PINN benchmarked against a finite-difference solution of the Schwarzschild photon-orbit ODE.
-- **Caveat:** Validation is one ODE problem and uses a numerical reference solution; generalization beyond the trained initial-condition range and to other physical systems remains untested.
-- **Announcement type:** new submission, 2026-11-26 announcement batch
-- **Themes:** Computational & data methods; Cosmology & gravitation
+### 5. [State of the UNIONS: Four Milky Way companions discovered in a systematic search for northern Local Group satellites](https://arxiv.org/abs/2611.34775)
+- **Abstract:** A systematic search of UNIONS g,r,i imaging identifies four faint Milky Way satellite systems, two of which are candidate ultra-faint dwarf galaxies.
+- **Authors:** Simon E. T. Smith, Alan W. McConnachie, Thomas de Boer, Ken C. Chambers, Stephen Gwyn et al.
+- **arXiv:** `2611.34775v1` (published 2026-11-25 17:37:22 UTC; categories: `astro-ph.GA`)
+- **Evidence for ranking:** No candidate-level attention values were available. Included for four survey discoveries with measured luminosity/size estimates and a clear distinction between candidate galaxies and unclassified faint systems.
+- **Claimed result:** The authors identify Boötes VI and Draco III as likely ultra-faint dwarf galaxies and report two still fainter, compact systems named UNIONS 2 and UNIONS 3.
+- **Evidence type:** observational; systematic search of Ultraviolet Near-Infrared Optical Northern Survey (UNIONS) imaging.
+- **Caveat:** Boötes VI and Draco III still need chemodynamical confirmation; morphology alone cannot determine whether UNIONS 2 and 3 are dark-matter-dominated galaxies.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Astrophysics
+
+### 6. [Measuring the flavor composition of high-energy neutrinos from the Milky Way](https://arxiv.org/abs/2611.34797)
+- **Abstract:** The author forecasts that IceCube and KM3NeT may resolve the flavor composition of Galactic high-energy neutrinos in roughly a decade, potentially distinguishing source and propagation scenarios.
+- **Authors:** Mauricio Bustamante
+- **arXiv:** `2611.34797v1` (published 2026-11-25 17:50:14 UTC; categories: `astro-ph.HE`, `hep-ex`, `hep-ph`, `hep-th`)
+- **Evidence for ranking:** No per-paper attention record was emitted. The four-archive cross-list and a quantitative forecast connect Galactic astrophysics with neutrino detection and particle phenomenology.
+- **Claimed result:** The author estimates future telescopes could infer the source νe fraction to within 27%; a comparison of Galactic and extragalactic flavor compositions could test strong source magnetic fields or neutrino decay.
+- **Evidence type:** forecast/proposal; projected sensitivity for IceCube and KM3NeT, which view the inner Galaxy from complementary hemispheres.
+- **Caveat:** This is a forecast, not a flavor measurement; the timeline and precision depend on future exposure and source/propagation assumptions.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Astrophysics; Particle, nuclear & high-energy physics; Instrumentation & detectors
+
+### 7. [Signals from the early Universe: primordial features from the full-shape analysis of BOSS galaxies and eBOSS quasars in combination with Planck](https://arxiv.org/abs/2611.34672)
+- **Abstract:** The authors search for oscillatory primordial features in Planck CMB and BOSS/eBOSS large-scale-structure data using multiple templates and find no statistically significant evidence.
+- **Authors:** Mario Ballardini, Nicola Barbieri, Antonio Raffaelli, Chiara Moretti, Oliver H. E. Philcox et al.
+- **arXiv:** `2611.34672v1` (published 2026-11-25 16:37:25 UTC; categories: `astro-ph.CO`)
+- **Evidence for ranking:** No per-paper attention values were available. Included for a joint CMB/galaxy/quasar analysis using full-shape power-spectrum multipoles and an explicit look-elsewhere-adjusted assessment of candidate features.
+- **Claimed result:** The authors report no significant detection: the best LSS fits improve χ² by about 6–10 but reach at most 1.6σ global significance after the look-elsewhere correction; the strongest CMB-only feature is about 2.6σ.
+- **Evidence type:** observational; Planck PR4, BOSS galaxy clustering, and eBOSS quasar clustering analyzed with one-loop effective field theory of large-scale structure.
+- **Caveat:** The LSS amplitude bounds are 1.4–3 times weaker than Planck's over the tested frequencies, and the combined constraints do not strengthen the CMB result because the preferred frequencies do not align.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Cosmology & gravitation; Computational & data methods
+
+### 8. [Nuclear Modification of π⁰ Production in pO and OO Collisions with ALICE](https://arxiv.org/abs/2611.34503)
+- **Abstract:** The contribution reports neutral-pion nuclear-modification measurements in proton–oxygen and oxygen–oxygen collisions, intended to separate cold- and hot-nuclear-matter effects.
+- **Authors:** Nicolas Strangmann
+- **arXiv:** `2611.34503v1` (published 2026-11-25 14:55:18 UTC; categories: `nucl-ex`)
+- **Evidence for ranking:** No per-paper attention values were available. Included as an experimental measurement in newly relevant pO/OO systems, comparing their spectra with pp data and with models containing cold and hot matter effects.
+- **Claimed result:** The author reports presenting R_pO and R_OO measurements at √sNN=9.62 TeV and 5.36 TeV respectively, using ALICE π⁰ transverse-momentum spectra.
+- **Evidence type:** experimental; ALICE electromagnetic-calorimeter π⁰ spectra in pO, OO, and pp collisions.
+- **Caveat:** The abstract does not provide numerical modification-factor values or uncertainties, so the magnitude of the reported effects cannot be assessed from the abstract alone.
+- **Announcement type:** new submission, 2026-11-26 announcement batch.
+- **Themes:** Particle, nuclear & high-energy physics; Instrumentation & detectors
 
 ## Trending Research Themes
 
-- **Formal methods crossing physics boundaries:** The spin-DFT bound (2611.34301) and the figure-eight recursion proof (2611.34110) are mathematical results cross-listed into physics, while the food-web paper (2611.33569) applies large-deviation theory to population dynamics. This is a small shortlist, not a corpus-frequency estimate.
-- **Quantum resources and non-equilibrium structure:** The scar-state preparation algorithm (2611.33987) focuses on efficient preparation of nonergodic states; it remains theoretical, unlike an experimental hardware demonstration.
-- **Scientific computing for long-time or rare-event questions:** PINN-Slicer (2611.33953) targets long-domain ODE integration; the food-web work (2611.33569) derives rare extinction paths and checks a small module by stochastic simulation. The methods address different systems and are not independent confirmation of one phenomenon.
+- **Quantum information reaches both hardware and theorem:** the Heron r2 experiments test non-Clifford witnesses on real processors (paper 1), while paper 3 gives a rigorous NPT bound-entanglement example. These are complementary experimental and theoretical contributions, not independent confirmation of one result.
+- **Numerical tools are being treated as part of the physics result:** O-REX links fluctuation relations to measurable algorithmic cost in lattice simulations (paper 2); the primordial-feature study uses full-shape large-scale-structure modeling and look-elsewhere correction to interpret cosmological data (paper 7). Their numerical methods address different systems, not a shared dataset.
+- **Cosmology is leaning on multi-probe consistency rather than a single anomaly:** the HSC cosmic-shear analysis combines lensing with distance probes (paper 4), while the primordial-feature search compares CMB constraints with BOSS/eBOSS clustering (paper 7). Both report limits on stronger interpretations: a 2.4σ parameter preference in one case and no significant feature in the other.
+- **Complementary channels help separate source physics from backgrounds:** ALICE's pO/OO/pp comparison targets cold versus hot nuclear matter (paper 8), while the Galactic-neutrino forecast uses flavor composition and hemisphere-complementary observatories to distinguish production/propagation scenarios (paper 6). These are isolated signals in distinct fields, not a single shared trend dataset.
 
 ## Open Problems and Research Directions
 
-- **Open problem (author-stated assumptions):** The spin-DFT error estimate assumes slow variation and a fixed spin axis (2611.34301). **Research direction (synthesis):** benchmark it against established calculations on noncollinear materials where magnetization rotates rapidly or the preferred axis varies.
-- **Open problem (author-stated scope):** The topological-recursion proof is for the figure-eight knot; the paper discusses extension beyond that case (2611.34110). **Research direction (synthesis):** test the construction on other hyperbolic knots and determine when recursion descends to the relevant quotient curve.
-- **Open problem (author-stated model limits):** The food-web theory assumes unit conversion efficiency and basal-only self-limitation; detailed instanton checks cover a three-species module (2611.33569). **Research direction (synthesis):** relax those assumptions and compare extinction-time distributions with stochastic simulations and calibrated interaction data.
-- **Open problem (evidence gap):** The scar algorithm and PINN-Slicer are not demonstrated on physical hardware or across a broad set of systems (2611.33987, 2611.33953). **Research direction (synthesis):** estimate gate-depth/noise tolerance for the quantum algorithm and test PINN-Slicer on additional physical ODEs and out-of-range initial conditions.
+- **Quantum hardware — author-stated:** paper 1 notes that finite shots and routing/depth limits constrain some witnesses, and that its single-chip runs do not close the locality loophole. **Research direction (synthesis):** repeat the open benchmark suite on all-to-all hardware and at larger connected hypergraph sizes, reporting raw rates separately from SPAM diagnostics.
+- **Lattice topology — author-stated:** paper 2 demonstrates O-REX in the two-dimensional CP^{N−1}, N=21 model and points to four-dimensional gauge-theory applications. **Research direction (synthesis):** test the predicted acceptance/cost scaling in additional lattice gauge theories and check whether the reported cost advantage survives realistic update costs and continuum extrapolations.
+- **Dynamical dark energy — author-stated:** paper 4 says its 2.4σ preference is primarily driven by geometric distance probes. **Research direction (synthesis):** use independent Stage-IV lensing and distance datasets with matched nuisance/systematics treatment to test whether the preference persists without being dominated by the distance ladder.
+- **Faint satellites — author-stated:** paper 5 says chemodynamics are required to secure Boötes VI and Draco III classifications and morphology is insufficient for UNIONS 2/3. **Research direction (synthesis):** obtain deeper follow-up imaging and spectroscopy to constrain stellar populations, velocities, and dark-matter content.
+- **Primordial features — author-stated:** paper 7 finds LSS bounds weaker than Planck and no frequency agreement that improves the joint constraints. **Research direction (synthesis):** improve large-scale-structure precision and test matched feature templates/frequency ranges against future CMB and galaxy-survey data with look-elsewhere effects handled consistently.
+- **Galactic neutrinos — author-stated:** paper 6's flavor discrimination is prospective and needs future exposure. **Research direction (synthesis):** update the decade-scale sensitivity forecast as IceCube and KM3NeT accumulate data, and compare Galactic and extragalactic samples under explicit source and propagation models.
+- **Small-system nuclear matter — evidence gap:** paper 8's abstract gives no numerical R_pO/R_OO values or uncertainties. **Research direction (synthesis):** consult the full proceedings/results and report the measured factors, correlated uncertainties, and model comparisons before drawing conclusions about energy loss in OO collisions.
 
 ## Takeaway
 
-The batch combines rigorous mathematical results with algorithmic methods for many-body quantum states, ecological rare events, and relativistic trajectories. The claims are promising but conditional: most need broader model tests, hardware realization, or application to physical systems beyond the proof or benchmark cases.
+This batch mixes concrete hardware and simulation results with observational analyses and forward-looking sensitivity forecasts. The most useful common signal is methodological discipline: each paper pairs a difficult physical question with a stronger discriminator, while several authors explicitly delimit what their current data or model can establish.
 
 ## Method and sources
 
-- **Window:** daily; the latest arXiv new-listing page available at the snapshot was dated Thursday, 2026-11-26. Its batch corresponds to the 2026-11-24 19:00:00–2026-11-25 19:00:00 UTC submission window and was announced 2026-11-26 at 01:00 UTC. The current-window signals file covers 2026-11-25 19:00:00–2026-11-26 19:00:00 UTC, with announcement time 2026-11-27 01:00:00 UTC; it had no arXiv candidates, so the prior available batch is used. Snapshot: 2026-11-27 03:22 UTC.
-- **Archive coverage:** checked the new-listing pages for `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`; the latest page date was 2026-11-26. Cross-listed papers were treated as one work.
-- **Signal evidence:** supplied file `/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-27.signals.json` reports `pool_size: 0`, `with_attention: 0`, and an empty `candidates` array. Source statuses/counts are arXiv `ok` (0), Hugging Face `ok` (126), Hacker News `ok` (16), arXiv lookup `ok` (141), and Semantic Scholar `ok` (0). Thus no paper-level score or attention values were available to rank the selected records. A zero score would not mean a paper is unimportant; in this file there are no candidate scores at all. No source is marked `error`.
-- **Selection and verification:** this is an editorial shortlist, not a popularity ordering; selection emphasizes specific physical results, evidence type, model scope, and physics cross-listing. All five arXiv abstract pages and version histories were verified. Full-text HTML for the first three papers was inspected for introduction, methods, results, and caveats. No prior-window trend comparison is made.
-- **Sources:** [arXiv 2611.34301](https://arxiv.org/abs/2611.34301), [2611.34110](https://arxiv.org/abs/2611.34110), [2611.33569](https://arxiv.org/abs/2611.33569), [2611.33987](https://arxiv.org/abs/2611.33987), [2611.33953](https://arxiv.org/abs/2611.33953); listings: [physics](https://arxiv.org/list/physics/new), [astro-ph](https://arxiv.org/list/astro-ph/new), [cond-mat](https://arxiv.org/list/cond-mat/new), [gr-qc](https://arxiv.org/list/gr-qc/new), [hep-ex](https://arxiv.org/list/hep-ex/new), [hep-lat](https://arxiv.org/list/hep-lat/new), [hep-ph](https://arxiv.org/list/hep-ph/new), [hep-th](https://arxiv.org/list/hep-th/new), [nucl-ex](https://arxiv.org/list/nucl-ex/new), [nucl-th](https://arxiv.org/list/nucl-th/new), and [quant-ph](https://arxiv.org/list/quant-ph/new).
+- **Window used:** daily, latest available announcement batch dated 2026-11-26; submissions in the 2026-11-24 19:00:00 UTC to 2026-11-25 19:00:00 UTC window. The snapshot was taken 2026-11-28 03:28:52 UTC. The batch is prior to the current date because the checked arXiv recent pages had no newer batch dated 2026-11-27.
+- **Archive coverage:** checked the recent listings for `physics.*`, `astro-ph.*`, `cond-mat.*`, `gr-qc`, `hep-ex`, `hep-lat`, `hep-ph`, `hep-th`, `nucl-ex`, `nucl-th`, and `quant-ph`. Those pages contained 635 category-list appearances for the 26 November batch, representing 499 unique arXiv IDs after deduplication; 111 IDs appeared in more than one checked category listing. Each of the eight selected entries was verified against its arXiv abstract page for title, authors, version, submission timestamp, abstract, and categories. The top three papers were also inspected in their arXiv HTML full text for methods/results and limitations.
+- **Attention signals:** the supplied file `/home/yizhuan/.research/physics/daily/arxiv-trending-physics-daily-2026-11-27.signals.json` refers to the next window (2026-11-25 19:00 to 2026-11-26 19:00 UTC; announcement date 2026-11-27) and has `pool_size=0`, `with_attention=0`, and an empty candidate list. Its source counts were arXiv 0, Hugging Face 141, Hacker News 23, arXiv lookup 163, and Semantic Scholar 0; all sources were marked `ok`, but no paper-level matches or scores were available to apply to the prior 26 November batch. Thus no zero score is assigned to any selected paper and the ordering is a notable-paper ordering, not a per-paper popularity ranking.
+- **Primary sources:** [arXiv recent physics listing](https://arxiv.org/list/physics/recent), [astro-ph](https://arxiv.org/list/astro-ph/recent), [cond-mat](https://arxiv.org/list/cond-mat/recent), [gr-qc](https://arxiv.org/list/gr-qc/recent), [hep-ex](https://arxiv.org/list/hep-ex/recent), [hep-lat](https://arxiv.org/list/hep-lat/recent), [hep-ph](https://arxiv.org/list/hep-ph/recent), [hep-th](https://arxiv.org/list/hep-th/recent), [nucl-ex](https://arxiv.org/list/nucl-ex/recent), [nucl-th](https://arxiv.org/list/nucl-th/recent), [quant-ph](https://arxiv.org/list/quant-ph/recent), and the eight linked abstract pages above. Full-text inspection used arXiv HTML for papers 1–3.

@@ -22,7 +22,7 @@
     "nucl-th",
     "quant-ph"
   ],
-  "generated_at": "2026-11-27T03:20:27Z",
+  "generated_at": "2026-11-28T03:25:11Z",
   "sources": {
     "arxiv": {
       "status": "ok",
@@ -30,15 +30,15 @@
     },
     "huggingface": {
       "status": "ok",
-      "count": 126
+      "count": 141
     },
     "hacker_news": {
       "status": "ok",
-      "count": 16
+      "count": 23
     },
     "arxiv_lookup": {
       "status": "ok",
-      "count": 141
+      "count": 163
     },
     "semantic_scholar": {
       "status": "ok",

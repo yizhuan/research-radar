@@ -1,0 +1,359 @@
+{
+  "schema": "rrc-signals/v1",
+  "kind": "github",
+  "category": "github",
+  "window": "daily",
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T03:31:16Z",
+  "sources": {
+    "trending_daily": {
+      "status": "ok",
+      "count": 16
+    },
+    "trending_weekly": {
+      "status": "ok",
+      "count": 15
+    },
+    "trending_monthly": {
+      "status": "ok",
+      "count": 19
+    },
+    "star_snapshots": {
+      "status": "error",
+      "error": "RuntimeError: gh api graphql failed: To get started with GitHub CLI, please run:  gh auth login\nAlternatively, populate the GH_TOKEN environment variable with a GitHub API authentication token."
+    }
+  },
+  "weights": {
+    "period_gain": 1.0,
+    "snapshot_gain": 1.0,
+    "days_trending_30d": 0.5
+  },
+  "tracked_repositories": 44,
+  "candidates": [
+    {
+      "repo": "elementalsouls/Claude-BugHunter",
+      "rank": 1,
+      "stars_gained": 1608,
+      "stars_total": 26238,
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars_now": 26238,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "score": 11.383,
+      "score_components": {
+        "period_gain": 7.383,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "obra/superpowers",
+      "rank": 2,
+      "stars_gained": 922,
+      "stars_total": 328391,
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars_now": 328391,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/obra/superpowers",
+      "score": 10.828,
+      "score_components": {
+        "period_gain": 6.828,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "XiaoYouChR/Ghost-Downloader-3",
+      "rank": 15,
+      "stars_gained": 836,
+      "stars_total": 19943,
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "language": "Python",
+      "stars_now": 19943,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "score": 10.73,
+      "score_components": {
+        "period_gain": 6.73,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "firecrawl/firecrawl",
+      "rank": 6,
+      "stars_gained": 822,
+      "stars_total": 211749,
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "language": "TypeScript",
+      "stars_now": 211749,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "score": 10.713,
+      "score_components": {
+        "period_gain": 6.713,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "cathrynlavery/diagram-design",
+      "rank": 9,
+      "stars_gained": 725,
+      "stars_total": 74506,
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars_now": 74506,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "score": 10.588,
+      "score_components": {
+        "period_gain": 6.588,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "zhouxiaoka/autoclip",
+      "rank": 16,
+      "stars_gained": 718,
+      "stars_total": 17653,
+      "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping &amp; MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+      "language": "Python",
+      "stars_now": 17653,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "score": 10.578,
+      "score_components": {
+        "period_gain": 6.578,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "mvanhorn/last30days-skill",
+      "rank": 10,
+      "stars_gained": 675,
+      "stars_total": 76418,
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars_now": 76418,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "score": 10.516,
+      "score_components": {
+        "period_gain": 6.516,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "HKUDS/CLI-Anything",
+      "rank": 3,
+      "stars_gained": 666,
+      "stars_total": 67061,
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars_now": 67061,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "score": 10.503,
+      "score_components": {
+        "period_gain": 6.503,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "jingyaogong/minimind",
+      "rank": 4,
+      "stars_gained": 660,
+      "stars_total": 72259,
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "language": "Python",
+      "stars_now": 72259,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/jingyaogong/minimind",
+      "score": 10.494,
+      "score_components": {
+        "period_gain": 6.494,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "mjmirza/app-store-compliance",
+      "rank": 12,
+      "stars_gained": 530,
+      "stars_total": 7979,
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "language": "Shell",
+      "stars_now": 7979,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "score": 10.275,
+      "score_components": {
+        "period_gain": 6.275,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "toeverything/AFFiNE",
+      "rank": 14,
+      "stars_gained": 474,
+      "stars_total": 79509,
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+      "language": "TypeScript",
+      "stars_now": 79509,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "score": 10.163,
+      "score_components": {
+        "period_gain": 6.163,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "Tracer-Cloud/opensre",
+      "rank": 13,
+      "stars_gained": 328,
+      "stars_total": 16169,
+      "description": "The open-source agent for CI/CD reliability.",
+      "language": "Python",
+      "stars_now": 16169,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "score": 9.796,
+      "score_components": {
+        "period_gain": 5.796,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "rank": 11,
+      "stars_gained": 311,
+      "stars_total": 13624,
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars_now": 13624,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "score": 9.743,
+      "score_components": {
+        "period_gain": 5.743,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "cursor/plugins",
+      "rank": 5,
+      "stars_gained": 243,
+      "stars_total": 20036,
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars_now": 20036,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/cursor/plugins",
+      "score": 9.497,
+      "score_components": {
+        "period_gain": 5.497,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "openvinotoolkit/openvino",
+      "rank": 8,
+      "stars_gained": 151,
+      "stars_total": 12967,
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "language": "C++",
+      "stars_now": 12967,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "score": 9.024,
+      "score_components": {
+        "period_gain": 5.024,
+        "days_trending_30d": 4.0
+      }
+    },
+    {
+      "repo": "nginx/nginx",
+      "rank": 7,
+      "stars_gained": 146,
+      "stars_total": 33680,
+      "description": "The official NGINX Open Source repository.",
+      "language": "C",
+      "stars_now": 33680,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "days_trending_30d": 8,
+      "first_seen_trending": "2026-11-21",
+      "url": "https://github.com/nginx/nginx",
+      "score": 8.99,
+      "score_components": {
+        "period_gain": 4.99,
+        "days_trending_30d": 4.0
+      }
+    }
+  ],
+  "requested_date": null,
+  "notes": [
+    "stars_gained is GitHub Trending's own figure for the today view.",
+    "delta_Nd values come from this project's daily snapshots and are null until a snapshot from about N days earlier exists."
+  ]
+}

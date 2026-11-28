@@ -1,113 +1,104 @@
+# arXiv Trending AI — 2026-11-26
+
 ## Headline
 
-AI, arXiv daily announcement batch 2026-11-26: 8 notable papers. The signal-defined batch for 2026-11-27 had no eligible core-AI submissions, so this report falls back to the previous populated batch (2026-11-26). The selected papers emphasize evaluation validity for AI agents, efficient model computation, and methods that connect perception to action. Spoken agenda: monitor tests, reasoning and training, then vision-language and robotics. arXiv has no official trending chart; this inferred relevance ordering is not a popularity ranking, and recent citation evidence is limited because no per-paper attention or citation values were available for the fallback batch.
+AI, latest available arXiv announcement batch 2026-11-26: 7 papers, with multimodal visual systems and model-efficiency work most visible in the attention signals. I’ll cover medical vision-language scaling, looped and speculative decoding, agentic media, document understanding, and robot robustness. arXiv has no official trending chart; this ordering is inferred from checkable Hugging Face upvotes and Hacker News points, not a universal popularity measure, and recent citation evidence is limited.
 
 ## Top papers (ranked)
 
-### 1. [Attack Policy Selection can Mislead Monitor Evaluators](https://arxiv.org/abs/2611.34934)
-- **Abstract:** The authors find that an AI monitor's measured miss rate changes substantially with the method and optimization level used to generate attack transcripts that stand in for dangerous behavior.
-- **Authors:** Charlie Griffin, Oliver Makins, Asa Cooper Stickland, Alessandro Abate, Yarin Gal, et al.
-- **arXiv:** `2611.34934v1` (published 2026-11-25T18:59:28Z; categories: `cs.LG`, `cs.AI`)
-- **Evidence for ranking:** The UK AI Safety Institute published a dedicated research page and a follow-up technical blog about this work, providing the clearest independent discussion found in this batch. No per-paper HF/HN/citation score was emitted for the fallback batch, so this is a relevance signal, not a measured popularity rank.
-- **Claimed contribution:** The authors report false-negative rates of 0.5–20.8% across reinforcement-learning optimization levels and 6.4–23.0% across methods at their best observed levels, with attacks transferring from proxy monitors to a held-out GPT-5.4 monitor.
-- **Caveat:** The authors state that the case study uses limited settings and attack methods, and a Qwen 3.8 27B target agent less capable than the GPT-5.4 monitor; they stress that synthetic attack transcripts need a separate justification as deployment proxies.
+### 1. [Sage-Med: Scaling Medical Multimodal Intelligence](https://arxiv.org/abs/2611.34575)
+- **Abstract:** The authors introduce a 35B-parameter medical multimodal model with 3B active parameters, trained through staged data curation and progressive supervised and reinforcement-learning stages, and report results across 238 clinical tasks.
+- **Authors:** Med Team, Ming Hu, Cheng Tang, Wei Li, Rongbin Li et al.
+- **arXiv:** `2611.34575v1` (published 2026-11-25T15:39:45Z; categories: `cs.CV`, `cs.AI`)
+- **Evidence for ranking:** 81 Hugging Face Papers upvotes at the 2026-11-28 snapshot, the highest count among the selected entries. This is a cumulative upvote count, not upvotes gained during the announcement window.
+- **Claimed contribution:** The authors report a 58.26% average score on 31 public multimodal benchmarks and describe remaining gaps in complex medical reasoning and multi-step clinical workflows.
+- **Caveat:** The abstract explicitly says complex medical reasoning and multi-step clinical workflows remain substantial challenges; the reported public-benchmark average covers 31 of the 238 total tasks.
 - **Announcement type:** new submission, announcement-batch date 2026-11-26
-- **Themes:** Safety & alignment; Evaluation & benchmarks
+- **Themes:** Multimodal & vision-language; Training & adaptation; Data & synthetic data
 
 ### 2. [Mixture-of-Loops Transformer](https://arxiv.org/abs/2611.34923)
-- **Abstract:** MoLT uses key-value memory across repeated Transformer loops, with a U-shaped variant designed to balance model quality and computation and enable single-traversal decoding.
+- **Abstract:** MoLT uses key-value memory across repeated Transformer loops and introduces a U-shaped variant intended to balance model quality, token efficiency, and decoding cost.
 - **Authors:** Lianghui Zhu, Shijie Wang, Xinggang Wang, Jinze Bai, Bo Wang, Xiang Bai
 - **arXiv:** `2611.34923v1` (published 2026-11-25T18:58:53Z; categories: `cs.LG`, `cs.CL`)
-- **Evidence for ranking:** The work is listed on Hugging Face Papers and has a linked public code repository, both checkable discovery/artifact signals. No verified upvote, repository-star, or citation count was available, so it ranks for demonstrated systems relevance rather than quantified attention.
-- **Claimed contribution:** In experiments reported by the authors, U-MoLT matches OLMo3 validation cross-entropy with 1.7× token efficiency at 700M parameters and achieves similar latency to a non-looped OLMo3 on their small-model decoding test.
-- **Caveat:** The authors' from-scratch evaluations cover 700M and 1.5B dense models and a 3B MoE model; their continued-pretraining test uses one 0.8B backbone, so behavior at larger scales remains unestablished.
+- **Evidence for ranking:** 74 Hugging Face Papers upvotes at the 2026-11-28 snapshot. The paper also has a public code repository; the upvote count is cumulative, not a period gain.
+- **Claimed contribution:** In author-reported experiments, U-MoLT achieves 1.7× validation cross-entropy token efficiency at 700M parameters and similar latency to non-looped OLMo3 in a small-model decoding test.
+- **Caveat:** The results are bounded by the reported 700M/1.5B dense and 3B MoE pretraining experiments, one 0.8B continued-pretraining backbone, and a small-model latency test.
 - **Announcement type:** new submission, announcement-batch date 2026-11-26
 - **Themes:** Efficient inference & systems; Training & adaptation
 
-### 3. [Diverse Alternative Reasoning Traces for Hard Math Problems](https://arxiv.org/abs/2611.34928)
-- **Abstract:** DART revisits rejected mathematical reasoning traces, targeting uncertain steps for alternative completions, and the authors report improved recovery of hard problems over matched Monte Carlo sampling.
-- **Authors:** Lukas Aichberger, Adam Golinski, Arno Blaas, Arwen Bradley, Jacob Springer, et al.
-- **arXiv:** `2611.34928v1` (published 2026-11-25T18:59:11Z; categories: `cs.CL`, `cs.AI`, `cs.LG`)
-- **Evidence for ranking:** The arXiv record notes a NeurIPS 2026 workshop connection, and the paper is cross-listed across three core AI categories. These establish scholarly context and breadth, not readership; no per-paper attention or citation score was available for this fallback batch.
-- **Claimed contribution:** On greedy-unsolved DeepMath-103K problems, the authors report 37% more problems recovered than matched-count Monte Carlo sampling, and lower cost per accepted trace; post-training Llama-3.1-8B-Instruct gives the best point estimate in five of six reported evaluations.
-- **Caveat:** The authors say reference-answer guidance makes DART primarily a post-training trace-mining method, not a test-time reasoning method; the main post-training comparison uses one model and one seed, and exact-string deduplication cannot rule out near-duplicate contamination.
+### 3. [VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation](https://arxiv.org/abs/2611.34237)
+- **Abstract:** VibeVideoAgent lets coding agents inspect short previews of rendered video and audio during production, returning grounded findings that guide iterative edits without filling the coder’s context with raw media.
+- **Authors:** Xuanyu Zheng, Luoyuan Zhang, Yancheng Long, Haoyang Xu, Muxi Diao et al.
+- **arXiv:** `2611.34237v1` (published 2026-11-25T11:59:44Z; categories: `cs.CV`)
+- **Evidence for ranking:** 58 Hugging Face Papers upvotes at the 2026-11-28 snapshot. This cumulative count is the third-highest among the selected papers.
+- **Claimed contribution:** On 239 VibeVideoBench tasks, the authors report improved audiovisual quality for three tested coding-agent models under matched runtimes and a fixed perception model.
+- **Caveat:** The evaluation uses a fixed perception model, and trajectory audits report a trade-off between code-edit granularity, rubric compliance, and perceptual quality.
 - **Announcement type:** new submission, announcement-batch date 2026-11-26
-- **Themes:** Agents & reasoning; Training & adaptation; Data & synthetic data
+- **Themes:** Agents & reasoning; Multimodal & vision-language; Evaluation & benchmarks
 
-### 4. [Tracking Any Point with Agentic Visual Reasoning](https://arxiv.org/abs/2611.34943)
-- **Abstract:** AgenTAP lets a vision-language model actively inspect video evidence to localize and verify physical points, including points that disappear and later reappear.
-- **Authors:** Xuweiyi Chen, Jin Yao, Linzhan Mou, Lei Gong, Di Liu, et al.
-- **arXiv:** `2611.34943v1` (published 2026-11-25T18:59:58Z; categories: `cs.CV`)
-- **Evidence for ranking:** The authors provide a project page and introduce the EgoTAP-4D trajectory dataset, which make the result and data contribution directly inspectable. No independent attention counts were found; placement reflects its evaluated agentic method and dataset contribution, not a popularity claim.
-- **Claimed contribution:** The authors report that AgenTAP with GPT-6 Astra outperforms tested expert vision models on point localization and visibility prediction, and that training D4RT with EgoTAP-4D improves average 3D tracking performance.
-- **Caveat:** The strongest reported comparison is tied to the evaluated backbones and tracking benchmarks; the authors' conclusion about extending visual reasoning to pixel-level tracking should not be read as evidence for all VLMs or video settings.
+### 4. [Improving and Expanding Video Editing Capabilities Without Videos](https://arxiv.org/abs/2611.34941)
+- **Abstract:** Image-to-Video Transfer uses an image editor to guide a pretrained video editor using single images, aiming to expand video-editing capabilities without collecting paired edited videos.
+- **Authors:** Ji Xie, Yanhao Jia, Xiangpeng Yang, Martin Q. Ma, Sihan Xu et al.
+- **arXiv:** `2611.34941v1` (published 2026-11-25T18:59:55Z; categories: `cs.CV`)
+- **Evidence for ranking:** 46 Hugging Face Papers upvotes at the 2026-11-28 snapshot; the count is cumulative rather than a window gain.
+- **Claimed contribution:** Across three video editors, the authors report improved performance on OpenVE-Bench and their extended OpenVE++ suite, which adds four video-editing tasks.
+- **Caveat:** The abstract reports tests on three video editors and two related benchmarks; it does not establish generalization to other editing systems or task distributions.
 - **Announcement type:** new submission, announcement-batch date 2026-11-26
-- **Themes:** Agents & reasoning; Multimodal & vision-language; Data & synthetic data
+- **Themes:** Multimodal & vision-language; Training & adaptation
 
-### 5. [Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs](https://arxiv.org/abs/2611.34914)
-- **Abstract:** Cairn steers a frozen vision-language-action model around obstacles by sampling object-centric 3D trajectories and feeding waypoint guidance back into the model's action generation.
-- **Authors:** Agelos Kratimenos, Kostas Daniilidis, Evangelos Chatzipantazis
-- **arXiv:** `2611.34914v1` (published 2026-11-25T18:57:29Z; categories: `cs.RO`, `cs.CV`)
-- **Evidence for ranking:** The paper is cross-listed in robotics and computer vision and reports tests on held-out simulation scenes, a third-party benchmark, and a real robot. These are relevance and evaluation-breadth signals; no per-paper external-attention score was available.
-- **Claimed contribution:** On 1,941 held-out LIBERO scenes, the authors report raising frozen π0.5 task success from 24.5% to 95.1%; they also report gains on LIBERO-PRO and one real Franka demonstration.
-- **Caveat:** Most quantitative evidence is from simulation; the real-robot result is a single described task, so broad physical-world reliability is not established.
-- **Announcement type:** new submission, announcement-batch date 2026-11-26
-- **Themes:** Robotics & control; Multimodal & vision-language
-
-### 6. [Can image generation help visual reasoning? An empirical study](https://arxiv.org/abs/2611.34935)
-- **Abstract:** Across 13 vision-language model and image-generator pairs, the authors find that adding a generated helper image reduces mean visual-question accuracy, with outcomes varying by task and repeated editing.
-- **Authors:** Xueyang Yu, Yifan Jing, Taiming Lu, Linrong Cai, Zhipeng Cai, et al.
-- **arXiv:** `2611.34935v1` (published 2026-11-25T18:59:31Z; categories: `cs.LG`, `cs.CL`, `cs.CV`)
-- **Evidence for ranking:** The paper is cross-listed across language, learning, and vision and provides a counterexample to the assumption that extra generated visual context necessarily helps. No independent discussion or per-paper attention values were found, so it is included for the informative negative result, not inferred popularity.
-- **Claimed contribution:** The authors report a mean accuracy decrease of 3.7 percentage points, with decreases on nine of ten tasks; repeated edits help on ERQA but leave ChartQAPro and MathVista below their no-generation baselines.
-- **Caveat:** The result is bounded by the 13 tested model-generator pairs and ten tasks; the abstract itself reports task-dependent outcomes rather than a universal effect of generated images.
+### 5. [DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding](https://arxiv.org/abs/2611.34420)
+- **Abstract:** DocSEAM enriches each document page’s visual tokens with information from adjacent pages using anchored masked attention, while keeping the visual token count unchanged.
+- **Authors:** Hoang-Nhat Nguyen, Chen Change Loy
+- **arXiv:** `2611.34420v1` (published 2026-11-25T14:11:06Z; categories: `cs.CV`, `cs.CL`)
+- **Evidence for ranking:** 28 Hugging Face Papers upvotes at the 2026-11-28 snapshot; this is a cumulative count.
+- **Claimed contribution:** The authors report state-of-the-art results among evaluated open-weight models up to 10B parameters on five multi-page document VQA benchmarks, with reduced re-pagination sensitivity and improved cross-page span localization.
+- **Caveat:** The reported comparison is limited to a 9B model, the tested open-weight systems up to 10B parameters, and five multi-page VQA benchmarks.
 - **Announcement type:** new submission, announcement-batch date 2026-11-26
 - **Themes:** Multimodal & vision-language; Evaluation & benchmarks
 
-### 7. [$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents](https://arxiv.org/abs/2611.34920)
-- **Abstract:** μ-Bench evaluates voice agents on concurrent users' goals, permissions, privacy, and follow-up requests using simulated participants that react to the agent during a session.
-- **Authors:** Qihao Lin, Guanxu Chen, Shuhang Zheng, Xiaoya Lu, Jingyi Yang, et al.
-- **arXiv:** `2611.34920v1` (published 2026-11-25T18:58:42Z; categories: `cs.CL`, `cs.AI`)
-- **Evidence for ranking:** The paper supplies a public benchmark repository and a clearly specified 800-case evaluation suite. No repository popularity or per-paper attention value was checked; its place reflects benchmark relevance to shared-agent authority and coordination.
-- **Claimed contribution:** Across 13 voice agents, the authors report that proprietary systems peak at 62.24% tool-free and 65.44% tool-augmented joint success, while tested open-weight models remain below 20%.
-- **Caveat:** Participants are simulated rather than live users, so results measure performance in the benchmark's interaction model and do not establish real-world multi-user reliability.
+### 6. [HOG-WAM: Improving Visual Robustness through Future Gradient Prediction](https://arxiv.org/abs/2611.34811)
+- **Abstract:** HOG-WAM adds training-only future histogram-of-oriented-gradients prediction to a world-action model to improve the visual representations used for robot control under observation corruption.
+- **Authors:** Boxuan Dong, Yupeng Qian, Ying Wu, Heshuai Li, Junhao Tan et al.
+- **arXiv:** `2611.34811v1` (published 2026-11-25T17:59:24Z; categories: `cs.CV`, `cs.AI`, `cs.RO`)
+- **Evidence for ranking:** 23 Hugging Face Papers upvotes at the 2026-11-28 snapshot; the count is cumulative.
+- **Claimed contribution:** The authors report higher success than compared policies under four controlled observation corruptions, with additional results on LIBERO Plus and four Franka tasks.
+- **Caveat:** Evidence is bounded by the listed corruption settings, LIBERO Plus, and four Franka tasks; the abstract does not establish robustness across broader sensors, robots, or deployment conditions.
 - **Announcement type:** new submission, announcement-batch date 2026-11-26
-- **Themes:** Evaluation & benchmarks; Agents & reasoning; Safety & alignment
+- **Themes:** Robotics & control; Training & adaptation
 
-### 8. [One Ocean, Many Tasks: A Data-Grounded Simulation Suite and Benchmark for Marine Robotics](https://arxiv.org/abs/2611.34925)
-- **Abstract:** OneOcean combines data-grounded ocean conditions with a multi-task, multi-agent marine robotics simulator and standardized evaluation manifests.
-- **Authors:** Shuaijun Liu, Qifu Wen, Xingwei Chen, Xinwen Hu, Feiyang You, et al.
-- **arXiv:** `2611.34925v1` (published 2026-11-25T18:58:56Z; categories: `cs.RO`, `cs.DB`)
-- **Evidence for ranking:** The paper offers a broad task ladder, multi-agent capability for 2–10 vehicles, and a reproducible benchmark; these support its inclusion as a useful robotics evaluation contribution. No independent attention or citation signal was available for this fallback batch.
-- **Claimed contribution:** The authors introduce a suite spanning navigation, inspection, and multi-agent coordination under data-driven currents and tides, and compare heuristic, behavior-cloning, and LLM-based planners.
-- **Caveat:** The abstract reports simulator experiments, not physical marine-robot trials; the benchmark's real-world transfer remains to be tested.
+### 7. [Looped Models are Fast Multi-Token Predictors](https://arxiv.org/abs/2611.33896)
+- **Abstract:** Floodgates adapts shallow loops in looped language models to draft multiple future tokens in parallel, enabling self-speculative decoding that verifies with deeper computation.
+- **Authors:** Ayhan Suleymanzade, Sean McLeish, Sehoon Kim, Jinwoo Kim, Antoine Bosselut
+- **arXiv:** `2611.33896v1` (published 2026-11-25T07:16:56Z; categories: `cs.LG`, `cs.CL`)
+- **Evidence for ranking:** The Hacker News discussion received 13 points and 0 comments (item 50657370). Hacker News points are not numerically comparable to Hugging Face upvotes, so this paper is listed after the Hugging Face-ranked entries as a separate attention signal.
+- **Claimed contribution:** Across seven models and five benchmarks, the authors report that Floodgates is the fastest lossless decoding method in most tested cases, with up to 7.5× acceleration.
+- **Caveat:** The speedup claim is scoped to the evaluated models, benchmarks, batch sizes, and decoding settings; the maximum reported acceleration is not an across-the-board result.
 - **Announcement type:** new submission, announcement-batch date 2026-11-26
-- **Themes:** Robotics & control; Evaluation & benchmarks
+- **Themes:** Efficient inference & systems; Training & adaptation
 
 ## Trending Research Themes
 
-- Agent evaluation is shifting from a single headline score toward scrutinizing the test distribution and interactions. *Attack Policy Selection* shows measured monitor evasion varies with the attack policy, while *μ-Bench* requires joint goal completion without unauthorized actions in reactive multi-user sessions. This is a pattern in this selected batch, not proof of a field-wide methodological shift.
-- Training-time and inference-time computation are both being redesigned: *MoLT* reuses key-value memory across loops to improve token efficiency and decoding, while *DART* mines alternative traces from failed reasoning attempts to improve post-training data yield. The common motif is deliberate reuse of prior computation, but the methods target different bottlenecks.
-- In multimodal systems, richer internal actions are not automatically better. *AgenTAP* uses active inspection to verify point identity, whereas *Can image generation help visual reasoning?* reports that generated helper images often reduce accuracy. One paper advances visual interaction; the other cautions against assuming an added modality is useful.
-- Robotics papers emphasize robustness and reproducible evaluation: *Cairn* steers a frozen VLA around changed layouts, while *One Ocean, Many Tasks* provides a disturbance-aware simulation suite for marine tasks. Both move beyond a single static task, but only Cairn reports a real-robot demonstration and that evidence is limited.
-- The fallback batch query is concentrated in computer vision and machine learning as primary categories; the selected set deliberately samples language, safety, and robotics as well. This concentration describes the retrieved corpus, not field-wide research importance.
+- **Multimodal visual systems draw most of the selected-paper attention.** Five of seven selected papers have primary category `cs.CV`: Sage-Med, VibeVideoAgent, Image-to-Video Transfer, DocSEAM, and HOG-WAM. Their work ranges from medical understanding to page-boundary context and robust robot perception; this concentration describes the selected attention-ranked sample, not the full AI corpus.
+- **Systems are reusing structure or intermediate computation to improve efficiency.** MoLT reuses key-value state across loops, while Floodgates converts shallow loop computation into multi-token drafts. Both target inference efficiency, but their evidence comes from different model families and experimental setups.
+- **Perception is being placed inside an action or editing feedback loop.** VibeVideoAgent inspects audiovisual previews before committing edits, and HOG-WAM shapes robot-control features with future visual structure. These are distinct approaches, not evidence of a unified new paradigm.
+- **Data-efficient transfer is a recurring practical goal.** Image-to-Video Transfer tries to extend video editing from image-level supervision, while Sage-Med reports staged curation and training over large medical data collections. The application and methods differ; both seek capability gains without simply scaling paired task-specific data.
 
 ## Open Problems and Research Directions
 
-- **Author-reported open problem:** *Attack Policy Selection* says results on synthetic transcripts need a defensible argument that the proxy distribution represents dangerous deployment behavior. **Research direction (synthesis):** evaluate attack policies in more realistic settings, include stronger target agents and properties that preserve plausible deployment behavior, and report proxy-validity arguments alongside miss rates.
-- **Author-reported boundary:** *DART* is designed primarily for post-training because alternative generation uses reference answers; its study also notes one-seed post-training and possible near-duplicate contamination. **Research direction (synthesis):** test multi-seed results across model scales and domains, audit semantic duplicates, and compare variants with and without reference guidance under matched budgets.
-- **Author-reported boundary:** *AgenTAP* and *Cairn* report promising visual/robotic results, but their evaluations do not establish broad physical-world generalization. **Research direction (synthesis):** test point tracking and object-trajectory steering across new sensors, object categories, environments, and longer-horizon physical tasks with consistent failure reporting.
-- **Author-reported boundary:** *μ-Bench* uses simulated users, and *One Ocean, Many Tasks* evaluates in simulation. **Research direction (synthesis):** validate benchmark outcomes with human participants and physical marine platforms, then measure how well simulated task rankings predict real deployment behavior.
-- **Author-reported result:** generated helper images reduced average accuracy in the tested settings, but some task outcomes improved after repeated edits. **Research direction (synthesis):** characterize which task, generator, and edit-selection conditions make generated visual aids useful, using preregistered held-out tests and calibrated measures of both benefit and harm. (*Can image generation help visual reasoning?*)
+- **Author-stated open problem — Sage-Med:** Complex medical reasoning and multi-step clinical workflows remain difficult. **Research direction (synthesis):** report task-specific error analyses on longitudinal or multi-step clinical workflows, with external-site and modality-shift evaluation. ([Sage-Med](https://arxiv.org/abs/2611.34575))
+- **Author-stated boundary — VibeVideoAgent:** Edit granularity affects the trade-off between rubric compliance and perceptual quality, and the benchmark used a fixed perception model. **Research direction (synthesis):** test adaptive preview/edit granularity and repeat the study with multiple perception models and independently rated outputs. ([VibeVideoAgent](https://arxiv.org/abs/2611.34237))
+- **Evaluation boundary — HOG-WAM and Image-to-Video Transfer:** HOG-WAM covers a bounded set of simulated corruptions and robot tasks; Image-to-Video Transfer evaluates three video editors on two related benchmark suites. **Research direction (synthesis):** test sensor and environment shifts for HOG-WAM, and broader editing systems and temporally difficult edits for I2VT, with held-out tasks and consistent human assessment. ([HOG-WAM](https://arxiv.org/abs/2611.34811); [I2VT](https://arxiv.org/abs/2611.34941))
+- **Method boundary — MoLT and Floodgates:** Both papers report efficiency gains, but their speed/quality results are bounded by the model sizes and decoding configurations they tested. **Research direction (synthesis):** compare them under matched hardware, model scales, batch sizes, and end-to-end latency/quality budgets, including memory use and longer contexts. ([MoLT](https://arxiv.org/abs/2611.34923); [Floodgates](https://arxiv.org/abs/2611.33896))
+- **Evaluation boundary — DocSEAM:** The reported gains cover five multi-page document VQA benchmarks and open-weight models up to 10B parameters. **Research direction (synthesis):** test longer documents, cross-page evidence requiring distant references, and non-VQA document tasks under controlled re-pagination. ([DocSEAM](https://arxiv.org/abs/2611.34420))
 
 ## Takeaway
 
-The most consequential theme in this selection is evaluation quality: monitor scores depend on how attacks are generated, and agent benchmarks increasingly include authority, privacy, or interaction constraints. There are promising efficiency and robotics ideas too, but this is a notable-paper fallback rather than a defensible popularity chart; per-paper attention evidence for this older batch could not be recovered from the supplied signal file.
+This selected batch combines strong attention for multimodal perception with practical methods for looped-model inference and agentic media generation. The results remain preprint claims, and the evidence does not establish that these methods transfer beyond their tested models, tasks, and benchmarks.
 
 ## Method and sources
 
-- **Window:** The current signal-defined daily window was 2026-11-25 19:00:00–2026-11-26 19:00:00 UTC, announced 2026-11-27 01:00:00 UTC; its core AI arXiv query returned 0 entries. Following the daily fallback rule, this report uses the immediately preceding populated batch: 2026-11-24 19:00:00–2026-11-25 19:00:00 UTC, announced 2026-11-26 01:00:00 UTC. Snapshot: 2026-11-27T03:05:14Z.
-- **Scope/query:** `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`; arXiv API query: `(cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA) AND submittedDate:[202611241900 TO 202611251900]`. The prior-batch query returned 690 records, collected across four pages; the selected eight are new v1 submissions, not revisions.
-- **Inference and signal status:** arXiv has no official trending chart. The supplied current-window signal file has `pool_size: 0`, `with_attention: 0`, and no candidates; its source counts are arXiv 0, Hugging Face 124, Hacker News 16, Semantic Scholar 0, and arXiv lookup 139, all reported with status `ok`. Those aggregates cannot be attributed to the fallback-batch papers. Per-paper scores, upvotes, points, comments, and citation counts for the selected fallback papers were therefore unavailable, not assumed to be zero. The ordering is an inferred notable-paper ranking: independent technical discussion when found, then visible scholarly/artifact context and reported evaluation relevance; recency only breaks ties. A zero or missing attention value is not evidence of unimportance.
-- **Primary-page verification:** All eight selected arXiv abstract pages were checked for title, version, authors, submission timestamp, categories, and abstract. The top three papers' experimental HTML full texts were also reviewed for methods/results and stated limitations. The `web_extract` backend was unavailable in this environment, so pages were verified by direct arXiv retrieval and browser access.
-- **Sources:** [Attack Policy Selection arXiv](https://arxiv.org/abs/2611.34934); [UK AI Safety Institute research page](https://www.aisi.gov.uk/research/attack-policy-selection-can-mislead-monitor-evaluators); [AISI technical blog](https://www.aisi.gov.uk/blog/attack-policy-selection-can-make-monitor-evaluations-misleading); [MoLT arXiv](https://arxiv.org/abs/2611.34923); [Hugging Face Papers: MoLT](https://huggingface.co/papers/2611.34923); [MoLT code](https://github.com/hustvl/MoLT); [DART arXiv](https://arxiv.org/abs/2611.34928); [NeurIPS workshop listing](https://neurips.cc/virtual/2026/164465); [AgenTAP arXiv](https://arxiv.org/abs/2611.34943); [AgenTAP project](https://agentap.cs.virginia.edu); [Cairn arXiv](https://arxiv.org/abs/2611.34914); [generated-image reasoning study](https://arxiv.org/abs/2611.34935); [μ-Bench arXiv](https://arxiv.org/abs/2611.34920); [μ-Bench code](https://github.com/lqh1106/mu-bench); [OneOcean arXiv](https://arxiv.org/abs/2611.34925).
+- **Window and snapshot:** The latest available daily batch at snapshot time was announced at 2026-11-26T01:00:00Z and covered submissions from 2026-11-24T19:00:00Z through 2026-11-25T19:00:00Z; snapshot time was 2026-11-28T03:09:46Z. There was no newer announcement on Nov 27–28 because of the Thanksgiving schedule pause and weekend. arXiv's holiday notice says submissions received from 14:00 ET Nov 25 through 14:00 ET Nov 27 are deferred to 20:00 ET Nov 29.
+- **Scope/query:** The configured core corpus was `cs.AI`, `cs.LG`, `stat.ML`, `cs.CL`, `cs.CV`, `cs.RO`, `cs.NE`, and `cs.MA`. The broad arXiv API query was `(cat:cs.AI OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.NE OR cat:cs.MA) AND submittedDate:[202611241900 TO 202611251900]`; it returned 690 entries for this batch. The seven entries are new v1 submissions, not revisions.
+- **Supplied signals and ranking:** The user-supplied signal file for the expected Nov 27 batch (`/home/yizhuan/.research/ai/daily/arxiv-trending-ai-daily-2026-11-27.signals.json`) had `pool_size: 0`, `with_attention: 0`, and no candidates; its arXiv source count was 0. It therefore contained no candidate scores to rank. For the prior populated batch, Hugging Face Papers supplied cumulative upvote counts for six selected papers; Hacker News supplied 13 points and 0 comments for Floodgates. The six Hugging Face entries are ordered by their displayed upvotes; Floodgates is shown separately because HN points and HF upvotes are incomparable. These are snapshot totals, not gains during the arXiv window. A zero or missing signal is not evidence of unimportance.
+- **Sources unavailable:** The supplied signals file had zero Semantic Scholar records, and a separate Semantic Scholar batch lookup was rate-limited; citation counts are therefore not available here. The top three PDFs were downloaded, but no local PDF text extractor was available, so detailed PDF-section review was not practical and paper summaries rely on the verified arXiv abstracts. All selected arXiv abstract pages were directly checked for title, version, authors, submission timestamp, categories, and abstract.
+- **Sources:** [arXiv API batch query](https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Astat.ML%20OR%20cat%3Acs.CL%20OR%20cat%3Acs.CV%20OR%20cat%3Acs.RO%20OR%20cat%3Acs.NE%20OR%20cat%3Acs.MA%29%20AND%20submittedDate%3A%5B202611241900%20TO%20202611251900%5D&sortBy=submittedDate&sortOrder=descending&start=0&max_results=1000); [arXiv availability schedule](https://info.arxiv.org/help/availability.html); [arXiv Thanksgiving announcement notice](https://blog.arxiv.org/2026/11/25/holiday-announcement-schedule/); [Hugging Face Papers daily data](https://huggingface.co/api/daily_papers?date=2026-11-26); [Hacker News item for Floodgates](https://news.ycombinator.com/item?id=50657370); [Hacker News Algolia record](https://hn.algolia.com/api/v1/search?query=2611.33896&tags=story); [Semantic Scholar Graph API](https://api.semanticscholar.org/graph/v1/paper/batch); arXiv abstracts linked above.

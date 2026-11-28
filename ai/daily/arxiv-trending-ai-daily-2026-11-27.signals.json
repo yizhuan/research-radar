@@ -19,7 +19,7 @@
     "cs.NE",
     "cs.MA"
   ],
-  "generated_at": "2026-11-27T03:05:01Z",
+  "generated_at": "2026-11-28T03:05:19Z",
   "sources": {
     "arxiv": {
       "status": "ok",
@@ -27,15 +27,15 @@
     },
     "huggingface": {
       "status": "ok",
-      "count": 124
+      "count": 141
     },
     "hacker_news": {
       "status": "ok",
-      "count": 16
+      "count": 23
     },
     "arxiv_lookup": {
       "status": "ok",
-      "count": 139
+      "count": 163
     },
     "semantic_scholar": {
       "status": "ok",

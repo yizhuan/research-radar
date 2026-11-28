@@ -8,24 +8,24 @@
   "date_range": {
     "start_utc": "2026-11-25T19:00:00Z",
     "end_utc": "2026-11-26T19:00:00Z",
-    "note": "Signal-manifest interval; it could not be reconciled with the official 26 November listing or the selected records' earlier published timestamps."
+    "note": "Signal-manifest interval; exact category query returned no records. Selected papers are from the prior latest official listing, labeled 2026-11-26, and their original published timestamps precede the interval."
   },
-  "snapshot_utc": "2026-11-27T03:09:40Z",
-  "title": "Biology & biomedicine on arXiv — 27 November 2026",
+  "snapshot_utc": "2026-11-28T03:14:59Z",
+  "title": "Biology & biomedicine on arXiv — latest available batch, 27 November 2026",
   "source_report": "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-27.md",
   "entry_count": 5,
   "entry_noun": "papers",
-  "global_caveat": "arXiv has no official trending chart, and this is an inferred, relevance-ranked selection from incomplete biomedical coverage. The supplied signals file has an empty candidate pool, so no paper-level attention ranking is available. The official 26 November Quantitative Biology listing conflicts with the signal manifest's date interval; selected records' arXiv v1 timestamps precede that interval.",
+  "global_caveat": "arXiv has no official trending chart and its biomedical coverage is incomplete. The supplied daily signal pool is empty; the five papers are a relevance-ranked fallback from the latest official listing currently visible (dated 2026-11-26), and their original submission timestamps precede the manifest window. This is not a measured popularity ranking.",
   "sections": [
     {
       "id": "00-headline",
       "kind": "headline",
-      "title": "Latest arXiv biology batch: five notable papers on RNA design, spatial cell states, molecular interactions, and medical-image explanations",
+      "title": "Headline",
       "rank": null,
       "url": null,
-      "abstract": "The 26 November 2026 Quantitative Biology listing has five relevant papers selected here by scope and reported evidence, not measured popularity; arXiv has no official trending chart and its biomedical coverage is incomplete.",
-      "claimed_contribution": "The report summarizes recent methods spanning molecular design and modeling, spatial omics, and medical-image classification.",
-      "unique_caveat": "The supplied signal collector returned no candidates, and its stated interval does not match the papers shown in the official listing.",
+      "abstract": "The latest official Quantitative Biology listing currently visible is labeled 26 November and was announced 27 November. The supplied 27 November signal pool and exact interval query returned no candidate papers, so five notable records from the prior available listing are provided as a relevance-ranked fallback, not a measured popularity list.",
+      "claimed_contribution": "The selected corpus spans computational RNA design, spatial cell-state inference, molecular binding models, and interpretable medical-image classification.",
+      "unique_caveat": "The five selected records predate the supplied 2026-11-25 19:00–2026-11-26 19:00 UTC window; arXiv has no official trending chart and biomedical coverage is incomplete.",
       "refs": [
         "https://arxiv.org/list/q-bio/new",
         "/home/yizhuan/.research/bio/daily/arxiv-trending-bio-daily-2026-11-27.signals.json"
@@ -43,12 +43,12 @@
       "categories": ["q-bio.BM", "cs.AI", "cs.LG"],
       "authors": ["Antonia Panescu", "Xin Wang", "Haoran Xu", "Qingyu Chen", "Carlos Oliver", "Rex Ying"],
       "themes": ["RNA & transcriptomics", "Bioinformatics & sequence analysis", "Quantitative methods"],
-      "abstract": "KnitNet uses verifier feedback to iteratively repair candidate RNA sequences; the authors report higher exact-fold solve rates on five secondary-structure benchmarks and improved 3D self-consistency in computational tests.",
-      "claimed_contribution": "The authors report an average 21-percentage-point increase in exact solves versus continued sampling with 70% less time-to-solve across five secondary-structure benchmarks, plus improved 3D structural self-consistency and faster inference than per-target RL.",
-      "unique_caveat": "Computational benchmark results only; the abstract reports no biochemical folding or functional validation.",
+      "abstract": "KnitNet uses verifier feedback to iteratively repair candidate RNA sequences toward exact computational fold-back matches, reporting gains on five secondary-structure benchmarks and improved 3D structural self-consistency.",
+      "claimed_contribution": "The authors report an average 21-percentage-point increase in exact solves versus continued sampling with 70% less time-to-solve across five secondary-structure benchmarks; they also report higher 3D self-consistency and faster inference than per-target reinforcement learning.",
+      "unique_caveat": "Computational folding and benchmark results only; experimental folding and biological function are not established.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-26",
-      "evidence_for_ranking": "No candidate-level score or attention counts were present; selected for direct RNA-design relevance, not popularity.",
+      "evidence_for_ranking": "No candidate-level signal or score was available; selected for direct RNA-design relevance and quantified benchmark results, not measured popularity.",
       "refs": ["https://arxiv.org/abs/2611.33812"]
     },
     {
@@ -63,12 +63,12 @@
       "categories": ["q-bio.QM"],
       "authors": ["Lei Huang", "Yun Gong", "Weiqiang Lin", "Lindong Jiang", "Hui Shen", "Chaoyang Zhang", "Hong-Wen Deng"],
       "themes": ["Omics & single-cell methods", "RNA & transcriptomics", "Bioinformatics & sequence analysis"],
-      "abstract": "SCATTER jointly estimates cell-type proportions and within-cell-type expression from spatial transcriptomic spots, using spatial context and single-cell reference profiles.",
-      "claimed_contribution": "The authors report higher measured-expression correlations than three comparators for 82.8–99.8% of evaluated gene–cell-type pairs across five pseudo-spot benchmarks, plus analyses of breast cancer, multiple-sclerosis, and colorectal-cancer tissue data.",
-      "unique_caveat": "Much of the quantitative comparison uses pseudo-spots; tissue applications are computational analyses, not independent biological validation.",
+      "abstract": "SCATTER estimates cell-type proportions and within-cell-type expression at spatial transcriptomic spots using spatial context and annotated single-cell reference profiles.",
+      "claimed_contribution": "Across five pseudo-spot benchmarks, the authors report higher cross-spot correlations than three comparators for 82.8–99.8% of evaluated gene–cell-type pairs, plus computational analyses of cancer and multiple-sclerosis tissue data.",
+      "unique_caveat": "Much quantitative comparison uses pseudo-spots; tissue applications are computational analyses and do not independently establish biological validation.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-26",
-      "evidence_for_ranking": "No candidate-level score or attention counts were present; selected for spatial-omics relevance and reported benchmark/tissue analyses.",
+      "evidence_for_ranking": "No candidate-level HF/HN score was supplied; Semantic Scholar returned 0 citations and 0 influential citations at retrieval. Relevance-ranked, not popularity-ranked.",
       "refs": ["https://arxiv.org/abs/2611.34798"]
     },
     {
@@ -84,11 +84,10 @@
       "authors": ["Xiangting Li", "Tom Chou"],
       "themes": ["DNA & genomics", "Biochemistry & proteins", "Quantitative methods"],
       "abstract": "The paper develops a coarse-grained stochastic model for DNA-binding proteins that combines footprint exclusion, diffusion, and conformational switching, and fits it to previously measured RPA–ssDNA dynamics.",
-      "claimed_contribution": "The authors derive an effective Markov model and mean-field approximation, then use multisegment binding states to model facilitated exchange and the trade-off between affinity and remodeling.",
-      "unique_caveat": "Theoretical/coarse-grained model fitted to previously measured RPA dynamics, not a new binding experiment; generalization to other proteins remains to be tested.",
+      "claimed_contribution": "The authors derive an effective Markov model and mean-field approximation for fast-diffusing proteins, then use multisegment binding states to represent facilitated exchange and the balance between affinity and remodeling.",
+      "unique_caveat": "The model relies on a fast-diffusion assumption and fits previously measured RPA dynamics; it is not a new binding experiment, and applicability to other proteins remains to be tested.",
       "announcement_type": "new submission",
       "announcement_batch_date": "2026-11-26",
-      "evidence_for_ranking": "No candidate-level score or attention counts were present; selected for molecular-biophysics relevance and its stated fit to experimental RPA data.",
       "refs": ["https://arxiv.org/abs/2611.33740"]
     },
     {
@@ -103,16 +102,15 @@
       "categories": ["math.DS", "q-bio.BM", "q-bio.MN"],
       "authors": ["Deepak K. Agrawal"],
       "themes": ["Biochemistry & proteins", "Molecular & cell biology", "Quantitative methods"],
-      "abstract": "Deterministic equations and stochastic simulations show how mediator dose, compartment size, and copy-number thresholds can alter ternary-complex reliability in a minimal binding model.",
-      "claimed_contribution": "The author reports that small simulated volumes can fail to form sufficient complexes despite favorable deterministic dose-response, and that volume, thresholds, completion rates, and breakup rates alter the reliable dose range.",
-      "unique_caveat": "Minimal deterministic/stochastic models and a catalytic extension; no experimental system or clinical outcomes are reported in the abstract.",
+      "abstract": "Deterministic equations and stochastic simulations examine how mediator dose, reaction volume, and copy-number thresholds affect reliable ternary-complex formation in a minimal binding model.",
+      "claimed_contribution": "In exact stochastic simulations, the author reports that small modeled volumes can fail to accumulate enough complexes despite a favorable deterministic response; volume, thresholds, completion rates, and breakup rates change modeled reliability.",
+      "unique_caveat": "A minimal mathematical model and catalytic extension; no experimental system or clinical outcomes are reported.",
       "announcement_type": "new submission, cross-listed",
       "announcement_batch_date": "2026-11-26",
-      "evidence_for_ranking": "No candidate-level score or attention counts were present; selected for direct molecular-binding relevance.",
       "refs": ["https://arxiv.org/abs/2611.33753"]
     },
     {
-      "id": "05-ddxbasis-explaining-medical-classification-by-exact-differential-diagnosis",
+      "id": "05-ddxbasis-explaining-frozen-foundation-encoder-based-medical-classification-by-exact-differential-diagnosis",
       "kind": "paper",
       "title": "DDxBasis: Explaining Frozen Foundation Encoder-based Medical Classification by Exact Differential Diagnosis",
       "rank": 5,
@@ -122,13 +120,12 @@
       "published": "2026-11-24T19:46:14Z",
       "categories": ["cs.CV", "q-bio.QM"],
       "authors": ["Luojie Huang", "Gregory N. McKay", "Nicholas J. Durr"],
-      "themes": ["Biomedical & translational medicine", "Bioinformatics & sequence analysis", "Quantitative methods"],
-      "abstract": "DDxBasis decomposes frozen-image-encoder classifications into diagnosis contrasts and case findings, with tests across five medical-image datasets.",
-      "claimed_contribution": "The authors report exact concept-level decomposition of model decisions and performance competitive with published domain-specific methods across five datasets; they also report recovering label-free structure and exposing shortcuts.",
+      "themes": ["Biomedical & translational medicine", "Quantitative methods"],
+      "abstract": "DDxBasis represents frozen-image-encoder classifications as differential-diagnosis-style contrasts and evaluates them across five medical-image datasets.",
+      "claimed_contribution": "The authors report exact concept-level decomposition of model decisions and performance competitive with published domain-specific methods across five datasets; they also report analyses of recovered structure and shortcut features.",
       "unique_caveat": "Retrospective model and dataset results do not establish clinical utility or prospective performance; external-site validation remains necessary.",
       "announcement_type": "new submission, cross-listed",
       "announcement_batch_date": "2026-11-26",
-      "evidence_for_ranking": "No candidate-level score or attention counts were present; included for biomedical-method relevance, not popularity. Original v1 date is 2026-11-24.",
       "refs": ["https://arxiv.org/abs/2611.33358"]
     },
     {
@@ -137,16 +134,10 @@
       "title": "Trending Research Themes",
       "rank": null,
       "url": null,
-      "abstract": "The selected papers share computational and mathematical approaches to RNA design and molecular interactions; SCATTER and DDxBasis each illustrate a distinct single-paper application rather than a broad field-wide trend.",
-      "claimed_contribution": "The corpus connects sequence design, mechanistic binding models, cell-resolved spatial expression, and interpretable biomedical prediction.",
-      "unique_caveat": "The empty attention pool and small, relevance-selected sample cannot establish field-level popularity or a broad shift.",
-      "refs": [
-        "https://arxiv.org/abs/2611.33812",
-        "https://arxiv.org/abs/2611.34798",
-        "https://arxiv.org/abs/2611.33740",
-        "https://arxiv.org/abs/2611.33753",
-        "https://arxiv.org/abs/2611.33358"
-      ]
+      "abstract": "The selected prior-batch papers share computational treatment of molecular constraints: verifier-guided RNA design and mathematical models of DNA binding and ternary-complex formation. SCATTER and DDxBasis each represent a single method signal in spatial omics and interpretable medical imaging, respectively.",
+      "claimed_contribution": "The report groups recurring methods in the selected five-paper corpus while distinguishing three-paper molecular modeling from two single-paper applications.",
+      "unique_caveat": "The candidate pool is empty and this small relevance-selected sample cannot establish measured popularity or a field-wide shift.",
+      "refs": ["https://arxiv.org/abs/2611.33812", "https://arxiv.org/abs/2611.34798", "https://arxiv.org/abs/2611.33740", "https://arxiv.org/abs/2611.33753", "https://arxiv.org/abs/2611.33358"]
     },
     {
       "id": "81-open-problems-and-research-directions",
@@ -154,16 +145,10 @@
       "title": "Open Problems and Research Directions",
       "rank": null,
       "url": null,
-      "abstract": "Useful follow-ups include experimental RNA structure/function assays, spatial transcriptomic validation with independent cell-type measurements, empirical tests of molecular binding models across reaction conditions, and external-site evaluation of image-classifier explanations.",
-      "claimed_contribution": "These proposed validation steps are grounded in the evidence boundaries described by KnitNet, SCATTER, the two molecular-interaction models, and DDxBasis.",
-      "unique_caveat": "These are research proposals derived from preprints, not clinical guidance or claims that a direction is novel or tractable.",
-      "refs": [
-        "https://arxiv.org/abs/2611.33812",
-        "https://arxiv.org/abs/2611.34798",
-        "https://arxiv.org/abs/2611.33740",
-        "https://arxiv.org/abs/2611.33753",
-        "https://arxiv.org/abs/2611.33358"
-      ]
+      "abstract": "Follow-up work could test RNA sequence designs with structure and function assays, validate spatial-expression estimates against independent cell-type measurements, test binding models across proteins and reaction volumes, and evaluate image explanations under external-site shifts.",
+      "claimed_contribution": "These proposals follow from the validation boundaries described by KnitNet, SCATTER, Li and Chou, Agrawal, and DDxBasis.",
+      "unique_caveat": "These are research proposals based on the preprints, not clinical guidance or claims of novelty or tractability.",
+      "refs": ["https://arxiv.org/abs/2611.33812", "https://arxiv.org/abs/2611.34798", "https://arxiv.org/abs/2611.33740", "https://arxiv.org/abs/2611.33753", "https://arxiv.org/abs/2611.33358"]
     },
     {
       "id": "90-takeaway",
@@ -171,9 +156,9 @@
       "title": "Takeaway",
       "rank": null,
       "url": null,
-      "abstract": "The selected batch is strongest in computational and mathematical methods for RNA design, molecular binding, and cell-resolved expression, with one interpretable medical-imaging method.",
-      "claimed_contribution": "Treat this as a relevance-ranked snapshot of a small arXiv listing, not as a measured popularity ranking.",
-      "unique_caveat": "The signal collector returned no candidate-level attention data, and its reported date window conflicts with the current official listing.",
+      "abstract": "The latest visible listing emphasizes computational RNA design and molecular-interaction modeling, alongside one spatial-omics method and one image-explanation method. Because the supplied daily signal pool is empty and the selected records are from the prior available listing, treat this as relevance-ranked context rather than a measured arXiv trend.",
+      "claimed_contribution": "The main pattern in the selected corpus is explicit computational modeling of molecular constraints and biomedical prediction.",
+      "unique_caveat": "No paper-level attention ranking is possible for the supplied window.",
       "refs": ["https://arxiv.org/list/q-bio/new"]
     }
   ]
